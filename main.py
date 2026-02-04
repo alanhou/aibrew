@@ -30,6 +30,93 @@ def get_hn_top_stories(limit=5):
         print(f"Error fetching HN stories: {e}")
         return []
 
+def get_github_trending(limit=5):
+    """Fetches trending repositories from GitHub."""
+    print(f"📡 Fetching top {limit} trending repos from GitHub...")
+    from bs4 import BeautifulSoup
+
+    repos = []
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
+    try:
+        # Fetch daily trending
+        response = requests.get("https://github.com/trending", headers=headers, timeout=15)
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        for article in soup.select('article.Box-row')[:limit]:
+            # Extract repo name
+            h2 = article.select_one('h2 a')
+            if not h2:
+                continue
+            repo_path = h2.get('href', '').strip('/')
+            if not repo_path:
+                continue
+
+            # Extract description
+            desc_elem = article.select_one('p')
+            description = desc_elem.get_text(strip=True) if desc_elem else ""
+
+            # Extract stars today
+            stars_today = ""
+            stars_elem = article.select_one('span.d-inline-block.float-sm-right')
+            if stars_elem:
+                stars_today = stars_elem.get_text(strip=True)
+
+            # Extract language
+            lang_elem = article.select_one('span[itemprop="programmingLanguage"]')
+            language = lang_elem.get_text(strip=True) if lang_elem else "Unknown"
+
+            repos.append({
+                'title': repo_path,
+                'url': f"https://github.com/{repo_path}",
+                'description': description,
+                'language': language,
+                'stars_today': stars_today,
+                'source': 'github_trending'
+            })
+
+        print(f"✅ Found {len(repos)} trending repos")
+        return repos
+    except Exception as e:
+        print(f"Error fetching GitHub trending: {e}")
+        return []
+
+def get_github_fast_moving(limit=5):
+    """Fetches fast-moving repos using GitHub Search API (most stars in last 7 days)."""
+    print(f"📡 Fetching top {limit} fast-moving repos from GitHub...")
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)',
+        'Accept': 'application/vnd.github.v3+json'
+    }
+
+    # Search for repos created in last 7 days, sorted by stars
+    week_ago = (datetime.datetime.now() - datetime.timedelta(days=7)).strftime('%Y-%m-%d')
+
+    try:
+        response = requests.get(
+            f"https://api.github.com/search/repositories?q=created:>{week_ago}&sort=stars&order=desc&per_page={limit}",
+            headers=headers,
+            timeout=15
+        )
+        data = response.json()
+
+        repos = []
+        for item in data.get('items', [])[:limit]:
+            repos.append({
+                'title': item['full_name'],
+                'url': item['html_url'],
+                'description': item.get('description', '') or '',
+                'language': item.get('language', 'Unknown') or 'Unknown',
+                'stars': item.get('stargazers_count', 0),
+                'source': 'github_fast_moving'
+            })
+
+        print(f"✅ Found {len(repos)} fast-moving repos")
+        return repos
+    except Exception as e:
+        print(f"Error fetching GitHub fast-moving repos: {e}")
+        return []
+
 def fetch_github_readme(url):
     """Fetches README content from GitHub repository using raw API."""
     match = re.match(r'https?://github\.com/([^/]+)/([^/]+)/?', url)
@@ -85,9 +172,9 @@ def fetch_article_content(url):
 def summarize_bilingual(title, content):
     """Asks Claude to summarize the content."""
     content_snippet = content[:12000] # Truncate to save tokens
-    
+
     system_prompt = """
-    You are an expert tech editor for a bilingual blog. 
+    You are an expert tech editor for a bilingual blog.
     1. Analyze the content.
     2. Output a summary in English and Chinese.
     3. STRICTLY use Markdown formatting.
@@ -95,7 +182,7 @@ def summarize_bilingual(title, content):
        ### [English Title]
        * Bullet point 1
        * Bullet point 2
-       
+
        ### [Chinese Title]
        * Chinese Bullet point 1
        * Chinese Bullet point 2
@@ -117,33 +204,88 @@ def summarize_bilingual(title, content):
         print(f"AI Generation Error: {e}")
         return None
 
-def save_to_markdown(summaries, processed_urls):
+def summarize_github_repo(repo_info, readme_content):
+    """Summarizes a GitHub repository with its metadata."""
+    content_snippet = readme_content[:10000] if readme_content else ""
+
+    system_prompt = """
+    You are an expert tech editor for a bilingual blog covering GitHub repositories.
+    1. Analyze the repository information and README.
+    2. Output a concise summary in English and Chinese.
+    3. STRICTLY use Markdown formatting.
+    4. Highlight: what it does, key features, why it's trending/notable.
+    5. Structure:
+       ### [Repo Name] - [Brief English Description]
+       * What it does
+       * Key features
+       * Why it's notable
+
+       ### [Repo Name] - [Brief Chinese Description]
+       * 功能介绍
+       * 主要特点
+       * 为何值得关注
+    """
+
+    metadata = f"""
+Repository: {repo_info['title']}
+Language: {repo_info.get('language', 'Unknown')}
+Description: {repo_info.get('description', 'No description')}
+"""
+    if repo_info.get('stars_today'):
+        metadata += f"Stars Today: {repo_info['stars_today']}\n"
+    if repo_info.get('stars'):
+        metadata += f"Total Stars: {repo_info['stars']}\n"
+
+    user_prompt = f"{metadata}\n\nREADME Content:\n{content_snippet}"
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.3
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"AI Generation Error: {e}")
+        return None
+
+def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries):
     """Saves to _posts/ folder with Jekyll Frontmatter. Appends if file exists."""
 
     today = datetime.datetime.now()
-    date_filename = today.strftime("%Y-%m-%d") # Format: 2026-02-04
+    date_filename = today.strftime("%Y-%m-%d")
     display_date = today.strftime("%B %d, %Y")
 
-    # Jekyll requires posts to be in a specific folder structure
     output_dir = "_posts"
     os.makedirs(output_dir, exist_ok=True)
     filename = f"{output_dir}/{date_filename}-daily-ai-digest.md"
 
-    # Check if file already exists (for appending)
     if os.path.exists(filename):
         # Append new content to existing file
         with open(filename, "a", encoding="utf-8") as f:
-            for summary in summaries:
-                f.write(summary + "\n\n---\n\n")
-        print(f"✅ Appended {len(summaries)} new articles to: {filename}")
+            if hn_summaries:
+                for summary in hn_summaries:
+                    f.write(summary + "\n\n---\n\n")
+            if github_trending_summaries:
+                f.write("\n## 🔥 GitHub Trending / GitHub 热门项目\n\n---\n\n")
+                for summary in github_trending_summaries:
+                    f.write(summary + "\n\n---\n\n")
+            if github_fast_summaries:
+                f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
+                for summary in github_fast_summaries:
+                    f.write(summary + "\n\n---\n\n")
+        total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries)
+        print(f"✅ Appended {total} new articles to: {filename}")
     else:
-        # Create new file with frontmatter
         frontmatter = f"""---
 layout: post
 title: "Daily Tech Digest: {display_date}"
 date: {date_filename}
-categories: [AI, News]
-tags: [HackerNews, Bilingual]
+categories: [AI, News, GitHub]
+tags: [HackerNews, GitHub, Trending, Bilingual]
 author: "AI Editor"
 ---
 
@@ -151,11 +293,23 @@ author: "AI Editor"
 *Generated by AI, Curated for Developers.*
 
 ---
+
+## 📰 Hacker News Highlights / 黑客新闻精选
+
+---
 """
         with open(filename, "w", encoding="utf-8") as f:
             f.write(frontmatter)
-            for summary in summaries:
+            for summary in hn_summaries:
                 f.write(summary + "\n\n---\n\n")
+            if github_trending_summaries:
+                f.write("\n## 🔥 GitHub Trending / GitHub 热门项目\n\n---\n\n")
+                for summary in github_trending_summaries:
+                    f.write(summary + "\n\n---\n\n")
+            if github_fast_summaries:
+                f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
+                for summary in github_fast_summaries:
+                    f.write(summary + "\n\n---\n\n")
         print(f"✅ Created new post: {filename}")
 
 def get_processed_urls():
@@ -170,8 +324,9 @@ def get_processed_urls():
     processed = set()
     with open(filename, "r", encoding="utf-8") as f:
         content = f.read()
-        # Extract URLs from "Read Original" links
+        # Extract URLs from "Read Original" and "View Repository" links
         urls = re.findall(r'\[Read Original / 阅读原文\]\((https?://[^\)]+)\)', content)
+        urls += re.findall(r'\[View Repository / 查看仓库\]\((https?://[^\)]+)\)', content)
         processed.update(urls)
     return processed
 
@@ -181,9 +336,9 @@ if __name__ == "__main__":
     processed_urls = get_processed_urls()
     print(f"📋 Already processed {len(processed_urls)} URLs today")
 
-    stories = get_hn_top_stories(limit=10)  # Fetch more to account for skips
-    blog_content = []
-    new_urls = []
+    # --- Hacker News ---
+    stories = get_hn_top_stories(limit=10)
+    hn_content = []
 
     for story in stories:
         url = story['url']
@@ -191,21 +346,65 @@ if __name__ == "__main__":
             print(f"⏭️ Skipping (already processed): {story['title']}")
             continue
 
-        print(f"Processing: {story['title']}")
+        print(f"Processing HN: {story['title']}")
         html_content, title = fetch_article_content(url)
 
         if html_content:
             summary = summarize_bilingual(title, html_content)
             if summary:
                 formatted = f"{summary}\n\n**[Read Original / 阅读原文]({url})**"
-                blog_content.append(formatted)
-                new_urls.append(url)
+                hn_content.append(formatted)
+                processed_urls.add(url)
 
-        # Stop after getting 5 new articles
-        if len(blog_content) >= 5:
+        if len(hn_content) >= 3:
             break
 
-    if blog_content:
-        save_to_markdown(blog_content, new_urls)
+    # --- GitHub Trending ---
+    trending_repos = get_github_trending(limit=5)
+    github_trending_content = []
+
+    for repo in trending_repos:
+        url = repo['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {repo['title']}")
+            continue
+
+        print(f"Processing Trending: {repo['title']}")
+        readme_content, _ = fetch_github_readme(url)
+        summary = summarize_github_repo(repo, readme_content)
+
+        if summary:
+            formatted = f"{summary}\n\n**[View Repository / 查看仓库]({url})**"
+            github_trending_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(github_trending_content) >= 3:
+            break
+
+    # --- GitHub Fast-Moving ---
+    fast_repos = get_github_fast_moving(limit=5)
+    github_fast_content = []
+
+    for repo in fast_repos:
+        url = repo['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {repo['title']}")
+            continue
+
+        print(f"Processing Fast-Moving: {repo['title']}")
+        readme_content, _ = fetch_github_readme(url)
+        summary = summarize_github_repo(repo, readme_content)
+
+        if summary:
+            formatted = f"{summary}\n\n**[View Repository / 查看仓库]({url})**"
+            github_fast_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(github_fast_content) >= 2:
+            break
+
+    # --- Save Results ---
+    if hn_content or github_trending_content or github_fast_content:
+        save_to_markdown(hn_content, github_trending_content, github_fast_content)
     else:
         print("ℹ️ No new content to add")
