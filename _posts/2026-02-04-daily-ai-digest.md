@@ -206,3 +206,510 @@ To provide you with an accurate bilingual summary of the CraftPlan project, I wo
 
 ---
 
+### DIY Pico Balloon: High-Altitude Adventure on a Budget
+
+* **What are Pico Balloons?** Superpressure balloons that float indefinitely in the stratosphere, can last months, potentially circumnavigate the globe, and cost about as much as a fancy dinner (~$50-60 total)
+* **Ultra-Lightweight Design:** Payloads weigh only 12-30 grams, lifted by Mylar party balloons filled with helium; light enough to avoid aircraft regulations and restrictions
+* **WSPR Tracking System:** Uses amateur radio network (Weak Signal Propagation Reporter) developed by Nobel Prize winner Joseph Taylor Jr., enabling global tracking without satellites through volunteer ham radio operators
+* **Raspberry Pi Pico Build:** Based on $4 Raspberry Pi Pico with Jetpack WSPR Tracker daughterboard containing GPS receiver and transmitter; total component cost breakdown includes custom boards ($39 for 5), solar modules ($14), balloon ($5), and helium ($10)
+* **Solar-Powered Operation:** Two lightweight solar panels power the tracker (batteries would freeze at stratospheric temperatures of -51°C); system powers down at night and restarts at sunrise
+* **FCC Compliance Challenge:** Author added antenna traps (inductors with capacitors) to suppress spurious harmonic emissions from the Si5351A oscillator, adding only 0.3 grams while meeting 43dB suppression requirements
+* **Real-World Results:** First balloon reached halfway across Atlantic before failing; second was never heard from; third successfully crossed Iberian Peninsula and reached Mediterranean at 12km altitude
+* **Lessons Learned:** Winter launch timing (just after solstice) resulted in marginal solar power due to low sun angle; horizontal solar panel orientation may need reconsideration for better performance
+* **License Requirement:** General-class ham radio license needed to transmit on long-distance telemetry bands
+
+---
+
+### DIY 皮克气球：低成本高空探险
+
+* **什么是皮克气球？** 超压气球可在平流层中无限期漂浮，持续数月，可能环绕地球，总成本约50-60美元（相当于一顿高档晚餐的价格）
+* **超轻量化设计：** 有效载荷仅重12-30克，由充氦气的聚酯薄膜派对气球提升；重量轻到足以避开飞机法规和限制
+* **WSPR追踪系统：** 使用由诺贝尔奖得主约瑟夫·泰勒开发的业余无线电网络（弱信号传播报告器），通过志愿业余无线电爱好者实现无需卫星的全球追踪
+* **树莓派Pico构建：** 基于4美元的树莓派Pico配合Jetpack WSPR追踪器子板（含GPS接收器和发射器）；总成本包括定制电路板（5块39美元）、太阳能模块（14美元）、气球（5美元）和氦气（10美元）
+* **太阳能供电运行：** 两块轻型太阳能电池板为追踪器供电（电池在-51°C的平流层温度下会冻结）；系统夜间关闭，日出后重启
+* **FCC合规挑战：** 作者添加了天线陷波器（电感器配电容器）以抑制Si5351A振荡器的杂散谐波发射，仅增加0.3克重量即满足43分贝抑制要求
+* **实际测试结果：** 第一个气球到达大西洋中途后失联；第二个发射后再无音讯；第三个成功穿越伊比利亚半岛，到达地中海上空12公里高度
+* **经验教训：** 冬季发射时机（冬至后）导致太阳能功率不足，因太阳角度低；水平太阳能板方向可能需要重新考虑以提高性能
+* **许可证要求：** 需要通用级业余无线电执照才能在远距离遥测频段上发射信号
+
+**[Read Original / 阅读原文](https://spectrum.ieee.org/explore-stratosphere-diy-pico-balloon)**
+
+---
+
+### The World's Largest Zip Tie: 47 Inches Long, $75, and Built for Heavy-Duty Jobs
+
+* **Supersized DIY Tool**: Cable Tie Link has created what it claims is the world's largest and strongest zip tie, measuring 47 inches (nearly 4 feet) long with an oversized locking mechanism capable of holding up to 2,000 pounds
+* **More Than Just Length**: Unlike typical long zip ties used for cable bundling, this product is cartoonishly thick with an upscaled design, making it substantially stronger than conventional options
+* **DIY Culture Reference**: The article notes that zip ties, along with duct tape and WD-40, form the "DIY trifecta" for quick fixes, with even NASA's Mars Perseverance rover using them
+* **Questionable Practicality**: While marketed for industrial use, garages, shops, events, and creative builds, the author questions practical applications since regular zip ties' versatility comes from fitting into tight spaces
+* **Premium Pricing**: Available for $75 each, with bulk options at $799.99 for a 12-pack or $1,699.99 for a 25-pack—positioning it as either a specialized industrial tool or an oversized novelty item
+
+### 世界最大扎带:长47英寸,售价75美元,专为重型作业打造
+
+* **超大型DIY工具**: Cable Tie Link公司推出了号称世界上最大最强的扎带,长度达47英寸(近4英尺),配备超大锁定机制,承重能力高达2000磅
+* **不仅仅是长度**: 与用于捆扎电缆的普通长扎带不同,这款产品异常粗壮,采用放大设计,强度远超传统产品
+* **DIY文化背景**: 文章指出扎带与胶带、WD-40并称"DIY三件套",用于快速修复,连NASA的火星毅力号探测器都在使用扎带
+* **实用性存疑**: 虽然宣传适用于工业、车库、商店、活动和创意项目,但作者质疑其实际应用场景,因为普通扎带的多功能性正是源于能够塞入狭小空间的特点
+* **高端定价**: 单个售价75美元,12个装799.99美元,25个装1699.99美元——定位为专业工业工具或超大型新奇商品
+
+**[Read Original / 阅读原文](https://www.thedrive.com/news/youll-have-that-on-those-big-jobs-the-worlds-largest-zip-tie-is-nearly-4-feet-long-and-75)**
+
+---
+
+### Introducing Deno Sandbox: Secure Execution for LLM-Generated Code
+
+* **The Problem**: Deno Deploy customers are building platforms where LLM-generated code runs immediately without human review, requiring API keys and network access - creating security risks beyond traditional plugin sandboxing
+* **Lightweight MicroVMs**: Deno Sandbox provides Linux microVMs in the Deno Deploy cloud that boot in under a second, accessible via JavaScript/Python SDKs, SSH, HTTP, or VS Code
+* **Secret Protection**: Secrets never enter the sandbox environment - code only sees placeholders that materialize into real keys only when making requests to approved hosts, preventing exfiltration attacks
+* **Network Egress Control**: Restrict which hosts the sandbox can communicate with using allowlist configuration, with requests to unlisted hosts blocked at the VM boundary
+* **Defense in Depth**: Implements outbound proxy (similar to coder/httpjail) for policy enforcement, with plans to add analytics and programmatic hooks for request inspection
+* **Sandbox to Production**: Deploy code directly from sandbox to Deno Deploy with `sandbox.deploy()` - no rebuilding, no re-authentication, just one call to production-ready serverless deployment
+* **Combined Security**: For JavaScript/TypeScript, combine with Deno's `--allow-net` flag for VM-level network restrictions plus runtime-level permissions
+
+---
+
+### Deno Sandbox 介绍:为 LLM 生成代码提供安全执行环境
+
+* **问题背景**: Deno Deploy 客户正在构建平台,让 LLM 生成的代码无需人工审查即可立即运行,需要 API 密钥和网络访问权限 - 这带来了超越传统插件沙箱的安全风险
+* **轻量级微虚拟机**: Deno Sandbox 在 Deno Deploy 云中提供 Linux 微虚拟机,启动时间不到一秒,可通过 JavaScript/Python SDK、SSH、HTTP 或 VS Code 访问
+* **密钥保护**: 密钥永远不会进入沙箱环境 - 代码只能看到占位符,只有在向已批准的主机发出请求时才会转换为真实密钥,防止数据泄露攻击
+* **网络出口控制**: 使用白名单配置限制沙箱可以通信的主机,对未列出主机的请求在虚拟机边界处被阻止
+* **纵深防御**: 通过出站代理(类似 coder/httpjail)实现策略执行,计划添加分析功能和程序化钩子用于请求检查
+* **沙箱到生产环境**: 使用 `sandbox.deploy()` 直接从沙箱部署代码到 Deno Deploy - 无需重新构建、无需重新认证,一次调用即可部署到生产就绪的无服务器环境
+* **组合安全**: 对于 JavaScript/TypeScript,结合 Deno 的 `--allow-net` 标志实现虚拟机级网络限制加运行时级权限的双重防护
+
+**[Read Original / 阅读原文](https://deno.com/blog/introducing-deno-sandbox)**
+
+---
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+---
+
+### Claude-Mem - Persistent Memory System for Claude Code
+
+**What it does:**
+Claude-Mem is a plugin for Claude Code that automatically captures everything Claude does during coding sessions, compresses it using AI (via Claude's agent-sdk), and intelligently injects relevant context back into future sessions. It acts as a persistent memory layer that survives across session restarts, enabling Claude to maintain continuity of knowledge about your projects.
+
+**Key features:**
+* **Automatic Context Capture** - Records all tool usage, observations, and actions without manual intervention
+* **AI-Powered Compression** - Uses Claude's agent-sdk to generate semantic summaries of sessions
+* **Progressive Disclosure** - 3-layer search workflow (index → timeline → full details) saves ~10x tokens
+* **Hybrid Search** - Combines SQLite FTS5 full-text search with Chroma vector database for semantic queries
+* **MCP Search Tools** - 4 tools (`search`, `timeline`, `get_observations`, `__IMPORTANT`) for intelligent memory retrieval
+* **Web Viewer UI** - Real-time memory stream at http://localhost:37777 with observation citations
+* **Privacy Controls** - `<private>` tags exclude sensitive content from storage
+* **Lifecycle Hooks** - 5 hooks (SessionStart, UserPromptSubmit, PostToolUse, Stop, SessionEnd) capture context at key moments
+* **Beta Features** - Experimental "Endless Mode" available via version switching
+
+**Why it's notable:**
+* **Trending Fast** - 1,730 stars today, featured on TrendShift
+* **Solves Context Loss** - Addresses the fundamental problem of AI coding assistants losing context between sessions
+* **Token Efficient** - Progressive disclosure pattern dramatically reduces token costs while maintaining context quality
+* **Production Ready** - v6.5.0 with comprehensive documentation, 27 language translations, and active development
+* **Architectural Innovation** - Sophisticated hook-based architecture with worker service, SQLite + Chroma hybrid storage
+* **Developer Experience** - One-command installation via Claude Code plugin marketplace, automatic operation
+* **Community Momentum** - Has its own cryptocurrency token ($CMEM on Solana), indicating strong community engagement
+
+---
+
+### Claude-Mem - Claude Code 持久化记忆系统
+
+**功能介绍:**
+Claude-Mem 是 Claude Code 的插件,可自动捕获 Claude 在编码会话期间执行的所有操作,使用 AI(通过 Claude 的 agent-sdk)进行压缩,并智能地将相关上下文注入到未来的会话中。它充当持久化记忆层,在会话重启后仍然保留,使 Claude 能够保持对项目知识的连续性。
+
+**主要特点:**
+* **自动上下文捕获** - 无需手动干预即可记录所有工具使用、观察和操作
+* **AI 驱动的压缩** - 使用 Claude 的 agent-sdk 生成会话的语义摘要
+* **渐进式披露** - 3 层搜索工作流(索引 → 时间线 → 完整详情)节省约 10 倍 token
+* **混合搜索** - 结合 SQLite FTS5 全文搜索和 Chroma 向量数据库进行语义查询
+* **MCP 搜索工具** - 4 个工具(`search`、`timeline`、`get_observations`、`__IMPORTANT`)用于智能记忆检索
+* **Web 查看器界面** - 在 http://localhost:37777 提供实时记忆流和观察引用
+* **隐私控制** - `<private>` 标签可排除敏感内容的存储
+* **生命周期钩子** - 5 个钩子(SessionStart、UserPromptSubmit、PostToolUse、Stop、SessionEnd)在关键时刻捕获上下文
+* **Beta 功能** - 通过版本切换可使用实验性"无尽模式"
+
+**为何值得关注:**
+* **快速流行** - 今日获得 1,730 星标,在 TrendShift 上精选
+* **解决上下文丢失** - 解决了 AI 编码助手在会话之间丢失上下文的根本问题
+* **Token 高效** - 渐进式披露模式在保持上下文质量的同时大幅降低 token 成本
+* **生产就绪** - v6.5.0 版本,配有全面文档、27 种语言翻译和活跃开发
+* **架构创新** - 采用复杂的基于钩子的架构,配备 worker 服务、SQLite + Chroma 混合存储
+* **开发者体验** - 通过 Claude Code 插件市场一键安装,自动运行
+* **社区动力** - 拥有自己的加密货币代币(Solana 上的 $CMEM),表明社区参与度很高
+
+**[View Repository / 查看仓库](https://github.com/thedotmack/claude-mem)**
+
+---
+
+### review-prompts - AI-Powered Code Review Prompts for Linux Kernel and systemd
+
+**What it does:**
+* Provides specialized AI review prompts designed for Linux kernel and systemd development workflows
+* Integrates with Claude Code and other AI tools to automate code review processes
+* Offers context-aware skills that automatically load when working in kernel or systemd project trees
+
+**Key features:**
+* **Quick-access slash commands**: `/kreview`, `/kdebug`, `/kverify` for kernel; `/systemd-review`, `/systemd-debug`, `/systemd-verify` for systemd
+* **Automatic context loading**: Skills detect your working directory and load appropriate subsystem-specific knowledge
+* **Structured workflows**: Separate review, debug, and verify commands for systematic code analysis
+* **Domain-specific patterns**: Bug pattern documentation and subsystem files for targeted reviews
+* **Easy installation**: Simple setup scripts for kernel-only, systemd-only, or both configurations
+* **Semcode integration**: Works best with Facebook's semcode for fast semantic code navigation
+
+**Why it's notable:**
+* Addresses the complex code review needs of critical system software (Linux kernel and systemd)
+* Gained 54 stars today, showing strong community interest in AI-assisted code review
+* Provides production-ready prompts for real-world open source development
+* Bridges the gap between AI tools and established development protocols in systems programming
+* Offers reusable patterns that can be adapted for other large-scale C projects
+
+---
+
+### review-prompts - 面向 Linux 内核和 systemd 的 AI 代码审查提示工具
+
+**功能介绍:**
+* 为 Linux 内核和 systemd 开发工作流提供专业的 AI 审查提示
+* 与 Claude Code 等 AI 工具集成，实现代码审查流程自动化
+* 提供上下文感知技能，在内核或 systemd 项目树中工作时自动加载相关内容
+
+**主要特点:**
+* **快捷斜杠命令**: 内核使用 `/kreview`、`/kdebug`、`/kverify`；systemd 使用 `/systemd-review`、`/systemd-debug`、`/systemd-verify`
+* **自动上下文加载**: 技能文件检测工作目录并加载相应的子系统专业知识
+* **结构化工作流**: 分离的审查、调试和验证命令，实现系统化代码分析
+* **领域特定模式**: 提供 bug 模式文档和子系统文件，支持针对性审查
+* **简易安装**: 提供简单的安装脚本，支持仅内核、仅 systemd 或两者同时安装
+* **Semcode 集成**: 与 Facebook 的 semcode 配合使用，实现快速语义代码导航
+
+**为何值得关注:**
+* 针对关键系统软件（Linux 内核和 systemd）的复杂代码审查需求
+* 今日获得 54 个 star，显示社区对 AI 辅助代码审查的强烈兴趣
+* 为真实开源开发场景提供生产就绪的提示模板
+* 在系统编程领域架起 AI 工具与既定开发协议之间的桥梁
+* 提供可复用的模式，可适配到其他大型 C 语言项目
+
+**[View Repository / 查看仓库](https://github.com/masoncl/review-prompts)**
+
+---
+
+### openai/skills - Official Skills Catalog for OpenAI Codex
+
+**What it does:**
+* Provides a centralized repository of reusable "skills" (packaged instructions, scripts, and resources) that AI agents like OpenAI Codex can discover and execute
+* Enables developers to write task-specific capabilities once and deploy them across different AI agent implementations
+* Offers three tiers of skills: system (auto-installed), curated (verified), and experimental (community-contributed)
+
+**Key features:**
+* **Plug-and-play architecture**: Skills are self-contained folders with instructions and resources that agents can automatically discover
+* **Easy installation**: Built-in `$skill-installer` command for adding curated and experimental skills
+* **Open standard**: Based on the [Agent Skills open standard](https://agentskills.io) for cross-platform compatibility
+* **Tiered catalog**: System skills (pre-installed), curated skills (quality-verified), and experimental skills (cutting-edge)
+* **Flexible deployment**: Install by name, folder path, or direct GitHub URL
+
+**Why it's notable:**
+* **Official OpenAI release**: First-party skills catalog from the creators of Codex, signaling OpenAI's commitment to extensible AI agents
+* **Ecosystem foundation**: Establishes a standardized way to share and distribute AI agent capabilities, similar to package managers for code
+* **Rapid adoption**: 377 stars in one day indicates strong developer interest in extending Codex capabilities
+* **"Write once, use everywhere" philosophy**: Promotes reusability and standardization across AI agent platforms
+* **Bridges AI and traditional development**: Makes AI agent capabilities as shareable and modular as software libraries
+
+---
+
+### openai/skills - OpenAI Codex 官方技能目录
+
+**功能介绍:**
+* 为 OpenAI Codex 等 AI 代理提供可重复使用的"技能"（打包的指令、脚本和资源）的集中式存储库
+* 使开发者能够编写一次特定任务的能力，并在不同的 AI 代理实现中部署使用
+* 提供三个层级的技能：系统级（自动安装）、精选级（已验证）和实验级（社区贡献）
+
+**主要特点:**
+* **即插即用架构**: 技能是包含指令和资源的独立文件夹，代理可以自动发现
+* **便捷安装**: 内置 `$skill-installer` 命令用于添加精选和实验性技能
+* **开放标准**: 基于 [Agent Skills 开放标准](https://agentskills.io)，实现跨平台兼容
+* **分层目录**: 系统技能（预装）、精选技能（质量验证）和实验技能（前沿探索）
+* **灵活部署**: 支持按名称、文件夹路径或 GitHub URL 直接安装
+
+**为何值得关注:**
+* **OpenAI 官方发布**: 来自 Codex 创建者的第一方技能目录，表明 OpenAI 对可扩展 AI 代理的承诺
+* **生态系统基础**: 建立了共享和分发 AI 代理能力的标准化方式，类似于代码的包管理器
+* **快速采用**: 单日获得 377 星标，显示开发者对扩展 Codex 能力的强烈兴趣
+* **"一次编写，随处使用"理念**: 促进 AI 代理平台间的可重用性和标准化
+* **连接 AI 与传统开发**: 使 AI 代理能力像软件库一样可共享和模块化
+
+**[View Repository / 查看仓库](https://github.com/openai/skills)**
+
+---
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+---
+
+### nanobot - Ultra-Lightweight Personal AI Assistant in Just 4,000 Lines of Code
+
+**What it does:**
+* A minimalist personal AI assistant inspired by Clawdbot, delivering full agent functionality with 99% less code (~4,000 lines vs. 430k+ lines)
+* Provides conversational AI capabilities through multiple channels (CLI, Telegram, WhatsApp) with tool execution, memory, and scheduled tasks
+* Supports multiple LLM providers (OpenRouter, Anthropic, OpenAI, Groq, Gemini) and local models via vLLM
+* Offers built-in skills for real-time market analysis, software development, daily routine management, and knowledge assistance
+
+**Key features:**
+* **Extreme simplicity**: Clean, readable codebase designed for research and easy modification
+* **Multi-channel support**: Chat via command line, Telegram bot, or WhatsApp with voice transcription (via Groq Whisper)
+* **Flexible deployment**: Install via PyPI, uv, source, or Docker; supports both cloud and local LLM models
+* **Rich tooling**: Built-in web search (Brave API), cron scheduling, persistent memory, and extensible skills system
+* **Quick setup**: Get started in 2 minutes with `nanobot onboard` and simple JSON configuration
+* **Modular architecture**: Well-organized components (agent loop, tools, channels, providers, session management)
+
+**Why it's notable:**
+* **Research-friendly design**: The intentionally minimal codebase (99% smaller than alternatives) makes it ideal for AI agent research and experimentation
+* **Rapid adoption**: Gained 4,574 stars quickly, indicating strong community interest in lightweight AI assistant frameworks
+* **Production-ready**: Despite its small size, includes enterprise features like Docker support, scheduled tasks, multi-provider LLM support, and persistent memory
+* **Active development**: Recently launched (Feb 2025) with clear roadmap for multi-modal support, long-term memory, and additional integrations
+* **Low barrier to entry**: One-click deployment and comprehensive documentation make it accessible to developers of all levels
+
+---
+
+### nanobot - 仅用 4,000 行代码实现的超轻量级个人 AI 助手
+
+**功能介绍:**
+* 受 Clawdbot 启发的极简个人 AI 助手，用 99% 更少的代码（约 4,000 行 vs. 430k+ 行）实现完整的智能体功能
+* 通过多种渠道（命令行、Telegram、WhatsApp）提供对话式 AI 能力，支持工具执行、记忆和定时任务
+* 支持多个大语言模型提供商（OpenRouter、Anthropic、OpenAI、Groq、Gemini）以及通过 vLLM 运行本地模型
+* 内置技能包括实时市场分析、软件开发、日常事务管理和知识助手
+
+**主要特点:**
+* **极致简洁**: 清晰易读的代码库，专为研究和轻松修改而设计
+* **多渠道支持**: 通过命令行、Telegram 机器人或 WhatsApp 聊天，支持语音转录（通过 Groq Whisper）
+* **灵活部署**: 可通过 PyPI、uv、源码或 Docker 安装；同时支持云端和本地大语言模型
+* **丰富工具**: 内置网络搜索（Brave API）、定时任务、持久化记忆和可扩展的技能系统
+* **快速启动**: 使用 `nanobot onboard` 和简单的 JSON 配置，2 分钟即可开始使用
+* **模块化架构**: 组织良好的组件（智能体循环、工具、渠道、提供商、会话管理）
+
+**为何值得关注:**
+* **研究友好设计**: 极简的代码库（比同类产品小 99%）使其成为 AI 智能体研究和实验的理想选择
+* **快速采用**: 迅速获得 4,574 个星标，表明社区对轻量级 AI 助手框架有强烈兴趣
+* **生产就绪**: 尽管体积小，但包含企业级功能，如 Docker 支持、定时任务、多提供商 LLM 支持和持久化记忆
+* **积极开发**: 最近发布（2025 年 2 月），有清晰的路线图，计划支持多模态、长期记忆和更多集成
+* **低门槛**: 一键部署和全面的文档使各个水平的开发者都能轻松上手
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/nanobot)**
+
+---
+
+### NanoClaw - A Minimalist Personal Claude Assistant Running in Secure Containers
+
+**What it does**
+* Runs Claude AI as a personal assistant accessible via WhatsApp, executing in isolated Linux containers (Apple Container on macOS, Docker on Linux)
+* Provides scheduled tasks, web access, and per-group isolated contexts with their own memory and filesystem
+* Enables natural language interaction for automation tasks like daily briefings, git reviews, and pipeline overviews
+
+**Key features**
+* **Radical simplicity**: Single Node.js process, handful of files, understandable in 8 minutes vs. OpenClaw's 52+ modules
+* **Security by isolation**: Agents run in actual OS-level containers with filesystem isolation, not application-level permission checks
+* **AI-native workflow**: Setup, debugging, and customization all handled through Claude Code conversations—no config files or dashboards
+* **Skills-based extensibility**: Contributors add `/add-telegram` or `/add-slack` skills that transform your fork, not bloated features in the base code
+* **Fork-and-customize philosophy**: Built for one user's exact needs; you fork it and have Claude Code modify it for yours
+
+**Why it's notable**
+* Addresses growing concerns about running complex AI agents with life access—prioritizes understandability and security over feature completeness
+* Represents a counter-movement to framework bloat: "customization = code changes" instead of configuration sprawl
+* Leverages Claude Code as the "best harness" for AI agents, making the tool itself AI-native in its operation and maintenance
+* 4,300+ stars in short time suggests strong demand for transparent, auditable AI assistant solutions
+* Innovative contribution model: skills that teach Claude how to transform installations, keeping base minimal while enabling unlimited customization
+
+---
+
+### NanoClaw - 运行在安全容器中的极简个人 Claude 助手
+
+**功能介绍**
+* 将 Claude AI 作为个人助手运行在隔离的 Linux 容器中（macOS 使用 Apple Container，Linux 使用 Docker），通过 WhatsApp 访问
+* 提供定时任务、网页访问和按群组隔离的上下文，每个群组拥有独立的内存和文件系统
+* 支持自然语言交互实现自动化任务，如每日简报、Git 历史回顾、销售管道概览等
+
+**主要特点**
+* **极致简洁**：单个 Node.js 进程，少量文件，8 分钟即可理解全部代码，而 OpenClaw 有 52+ 个模块
+* **隔离式安全**：代理运行在真实的操作系统级容器中，具有文件系统隔离，而非应用层权限检查
+* **AI 原生工作流**：安装、调试、定制全部通过与 Claude Code 对话完成——无需配置文件或监控面板
+* **基于技能的扩展性**：贡献者添加 `/add-telegram` 或 `/add-slack` 等技能来转换你的分支，而非在基础代码中堆砌功能
+* **分支定制哲学**：为单一用户的确切需求而构建；你 fork 后让 Claude Code 修改成符合你的需求
+
+**为何值得关注**
+* 解决了运行复杂 AI 代理访问个人生活数据的安全担忧——优先考虑可理解性和安全性而非功能完整性
+* 代表了对抗框架臃肿的反向运动："定制 = 代码修改"而非配置文件泛滥
+* 利用 Claude Code 作为 AI 代理的"最佳工具链"，使工具本身在操作和维护上都是 AI 原生的
+* 短时间内获得 4,300+ 星标，表明市场对透明、可审计的 AI 助手解决方案有强烈需求
+* 创新的贡献模式：技能教会 Claude 如何转换安装，保持基础代码最小化的同时实现无限定制可能
+
+**[View Repository / 查看仓库](https://github.com/gavrielc/nanoclaw)**
+
+---
+
+
+## 🎬 YouTube Tech Videos / YouTube 技术视频
+
+---
+
+### 🎬 AI Powered Agencies
+
+**Channel:** Y Combinator
+
+* **What the video covers:** This video explores how artificial intelligence is fundamentally transforming the traditional agency business model, enabling agencies to leverage AI software internally to deliver completed work rather than just providing labor hours.
+
+* **Key topics discussed:** 
+  - The shift from traditional labor-intensive agency models to AI-powered service delivery
+  - How AI enables agencies to achieve higher profit margins by automating workflows
+  - The transformation of agencies from service providers to software-enhanced businesses
+  - Strategic advantages of integrating AI tools into agency operations
+
+* **Why it's worth watching:** Essential viewing for agency owners, entrepreneurs, and business strategists looking to understand how AI is reshaping professional services. The video provides insights from Y Combinator's perspective on building scalable, high-margin agency businesses in the AI era.
+
+---
+
+### 🎬 AI 驱动的代理机构
+
+**频道:** Y Combinator
+
+* **视频内容概述:** 本视频探讨了人工智能如何从根本上改变传统代理机构的商业模式，使代理机构能够在内部利用 AI 软件交付完成的工作，而不仅仅是提供劳动力时间。
+
+* **主要话题:**
+  - 从传统劳动密集型代理模式向 AI 驱动服务交付的转变
+  - AI 如何通过自动化工作流程帮助代理机构实现更高的利润率
+  - 代理机构从服务提供商向软件增强型企业的转型
+  - 将 AI 工具整合到代理运营中的战略优势
+
+* **为何值得观看:** 对于代理机构所有者、创业者和商业战略家来说，这是必看内容，帮助理解 AI 如何重塑专业服务行业。视频从 Y Combinator 的视角提供了在 AI 时代构建可扩展、高利润率代理业务的见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pOZi4PKW54M)**
+
+---
+
+### 🎬 To understand what AI can do, we have to first understand what it CAN'T do.
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This video explores the boundaries and limitations of AI technology, using Shopify's "AI-first" policy as a case study to examine when and how AI should be applied in problem-solving scenarios.
+
+* **Key topics discussed:**
+  - The limitations and constraints of current AI capabilities
+  - Shopify's "AI-first" approach and its implications for engineering practices
+  - Critical thinking about when AI is (and isn't) the right tool for the job
+  - Understanding AI's strengths and weaknesses to make better technical decisions
+  - Practical considerations for implementing AI in real-world development workflows
+
+* **Why it's worth watching:** This video provides essential perspective for developers and tech professionals navigating the AI hype cycle. Rather than blindly adopting AI everywhere, it teaches viewers to think critically about AI's actual capabilities versus its limitations, helping them make more informed decisions about when to leverage AI tools effectively. The real-world example from Shopify offers practical insights into how major tech companies are approaching AI integration.
+
+---
+
+### 🎬 要理解AI能做什么，我们首先要理解它不能做什么
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 本视频探讨了AI技术的边界和局限性，以Shopify的"AI优先"政策为案例，研究在解决问题时应该何时以及如何应用AI。
+
+* **主要话题:**
+  - 当前AI能力的限制和约束条件
+  - Shopify的"AI优先"方法及其对工程实践的影响
+  - 批判性思考何时AI是（或不是）合适的工具
+  - 理解AI的优势和劣势以做出更好的技术决策
+  - 在实际开发工作流程中实施AI的实用考虑因素
+
+* **为何值得观看:** 本视频为在AI热潮中的开发者和技术专业人士提供了重要视角。它教导观众批判性地思考AI的实际能力与局限性，而不是盲目地在所有场景中采用AI，帮助他们在何时有效利用AI工具方面做出更明智的决策。来自Shopify的真实案例提供了关于大型科技公司如何处理AI集成的实用见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aokdrllzkFQ)**
+
+---
+
+### 🎬 Will AI replace jobs?
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** This episode explores the critical question of whether artificial intelligence will replace human jobs in the workforce, examining both the threats and opportunities that AI presents to various industries and professions.
+
+* **Key topics discussed:** The future of work in an AI-driven economy, which job sectors are most vulnerable to automation, the potential for AI to create new job categories, strategies for workers to adapt and remain relevant, and the balance between technological advancement and employment security.
+
+* **Why it's worth watching:** As AI technology rapidly advances, understanding its impact on employment is crucial for professionals across all industries. This podcast provides valuable insights for anyone concerned about career planning, workforce development, or navigating the changing landscape of work in the age of artificial intelligence.
+
+---
+
+### 🎬 AI会取代人类工作吗？
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 本期节目探讨了人工智能是否会取代人类工作这一关键问题，深入分析了AI对各行各业和职业带来的威胁与机遇。
+
+* **主要话题:** AI驱动经济下的工作未来、哪些职业领域最容易被自动化取代、AI创造新工作类别的潜力、工作者如何适应并保持竞争力，以及技术进步与就业安全之间的平衡。
+
+* **为何值得观看:** 随着AI技术的快速发展，了解其对就业的影响对各行各业的专业人士都至关重要。本播客为关注职业规划、劳动力发展或在人工智能时代应对工作环境变化的人士提供了宝贵见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tYjCtCCgIYc)**
+
+---
+
+### 🎬 Subscribe for more coding tips⬆️ #code #coding
+
+**Channel:** code with sweety
+
+* **What the video covers:** This is a channel promotional video encouraging viewers to subscribe for coding content and tips to improve their programming skills.
+
+* **Key topics discussed:** 
+  - Invitation to join a coding community
+  - Promise of coding tips and skill enhancement content
+  - Channel subscription call-to-action
+
+* **Why it's worth watching:** If you're looking to improve your coding abilities and want to be part of an active coding community, this channel offers regular coding tips and educational content. Ideal for beginners and intermediate programmers seeking consistent learning resources.
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️ #code #coding
+
+**频道:** code with sweety
+
+* **视频内容概述:** 这是一个频道推广视频，鼓励观众订阅以获取编程内容和技巧，提升编程能力。
+
+* **主要话题:**
+  - 邀请加入编程社区
+  - 承诺提供编程技巧和技能提升内容
+  - 频道订阅号召
+
+* **为何值得观看:** 如果你想提升编程能力并希望成为活跃编程社区的一员，该频道提供定期的编程技巧和教育内容。适合寻求持续学习资源的初学者和中级程序员。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8acMWF6m3-s)**
+
+---
+
+### 🎬 ClawdBot Full Tutorial for Beginners: How to Use & Set up ClawdBot (Openclaw)
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** This tutorial provides a comprehensive beginner's guide to ClawdBot (Openclaw), walking through the complete setup process and demonstrating how to use this AI automation tool effectively.
+
+* **Key topics discussed:**
+  - Step-by-step installation and configuration of ClawdBot
+  - Understanding the Openclaw interface and features
+  - Practical use cases and workflow automation examples
+  - Best practices for getting started with the tool
+
+* **Why it's worth watching:** Perfect for beginners looking to leverage AI automation without coding experience. Mikey No Code specializes in making complex tools accessible, offering clear instructions that help users quickly implement ClawdBot into their daily workflows. Ideal for anyone interested in AI-powered productivity tools and automation.
+
+---
+
+### 🎬 ClawdBot 完整新手教程：如何使用和设置 ClawdBot (Openclaw)
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 本教程为初学者提供了 ClawdBot (Openclaw) 的全面指南，详细演示了完整的设置过程以及如何有效使用这款 AI 自动化工具。
+
+* **主要话题:**
+  - ClawdBot 的分步安装和配置流程
+  - 了解 Openclaw 界面和功能特性
+  - 实用案例和工作流程自动化示例
+  - 入门最佳实践指南
+
+* **为何值得观看:** 非常适合希望在无需编程经验的情况下使用 AI 自动化的初学者。Mikey No Code 专注于将复杂工具简单化，提供清晰的说明帮助用户快速将 ClawdBot 应用到日常工作流程中。对于任何对 AI 驱动的生产力工具和自动化感兴趣的人来说都是理想选择。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=a63dUwXUgDo)**
+
+---
+
