@@ -131,6 +131,137 @@ def get_github_fast_moving(limit=5):
         print(f"Error fetching GitHub fast-moving repos: {e}")
         return []
 
+def get_huggingface_trending(limit=3):
+    """Fetches trending models from Hugging Face Hub."""
+    print(f"📡 Fetching top {limit} trending models from Hugging Face...")
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
+    try:
+        response = requests.get(
+            "https://huggingface.co/api/models",
+            params={'sort': 'trending', 'limit': limit * 2},
+            headers=headers,
+            timeout=15
+        )
+        data = response.json()
+
+        models = []
+        for item in data[:limit]:
+            models.append({
+                'title': item.get('id', ''),
+                'url': f"https://huggingface.co/{item.get('id', '')}",
+                'description': item.get('description', '') or item.get('cardData', {}).get('description', '') or '',
+                'downloads': item.get('downloads', 0),
+                'likes': item.get('likes', 0),
+                'pipeline_tag': item.get('pipeline_tag', 'Unknown'),
+                'source': 'huggingface_model'
+            })
+
+        print(f"✅ Found {len(models)} trending models")
+        return models
+    except Exception as e:
+        print(f"Error fetching Hugging Face models: {e}")
+        return []
+
+def get_huggingface_spaces(limit=2):
+    """Fetches trending Spaces from Hugging Face Hub."""
+    print(f"📡 Fetching top {limit} trending Spaces from Hugging Face...")
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
+    try:
+        response = requests.get(
+            "https://huggingface.co/api/spaces",
+            params={'sort': 'trending', 'limit': limit * 2},
+            headers=headers,
+            timeout=15
+        )
+        data = response.json()
+
+        spaces = []
+        for item in data[:limit]:
+            spaces.append({
+                'title': item.get('id', ''),
+                'url': f"https://huggingface.co/spaces/{item.get('id', '')}",
+                'description': item.get('description', '') or item.get('cardData', {}).get('description', '') or '',
+                'likes': item.get('likes', 0),
+                'sdk': item.get('sdk', 'Unknown'),
+                'source': 'huggingface_space'
+            })
+
+        print(f"✅ Found {len(spaces)} trending Spaces")
+        return spaces
+    except Exception as e:
+        print(f"Error fetching Hugging Face Spaces: {e}")
+        return []
+
+def fetch_huggingface_readme(model_id):
+    """Fetches README/model card from Hugging Face."""
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
+    try:
+        # Try to fetch the model card / README
+        raw_url = f"https://huggingface.co/{model_id}/raw/main/README.md"
+        response = requests.get(raw_url, headers=headers, timeout=10)
+        if response.status_code == 200 and len(response.text) > 100:
+            return response.text
+    except:
+        pass
+    return None
+
+def summarize_huggingface_item(item_info, readme_content=None):
+    """Summarizes a Hugging Face model or Space."""
+    content_snippet = readme_content[:8000] if readme_content else ""
+
+    is_space = item_info.get('source') == 'huggingface_space'
+    item_type = "Space" if is_space else "Model"
+
+    system_prompt = f"""
+    You are an expert AI/ML editor for a bilingual blog covering Hugging Face {item_type}s.
+    1. Analyze the {item_type.lower()} information and README if available.
+    2. Output a concise summary in English and Chinese.
+    3. STRICTLY use Markdown formatting.
+    4. Highlight: what it does, use cases, why it's trending.
+    5. Structure:
+       ### 🤗 [{item_type} Name] - [Brief English Description]
+       * What it does
+       * Key features/capabilities
+       * Why it's notable
+
+       ### 🤗 [{item_type} Name] - [Brief Chinese Description]
+       * 功能介绍
+       * 主要特点
+       * 为何值得关注
+    """
+
+    metadata = f"""
+{item_type}: {item_info['title']}
+Description: {item_info.get('description', 'No description')}
+"""
+    if item_info.get('pipeline_tag'):
+        metadata += f"Task: {item_info['pipeline_tag']}\n"
+    if item_info.get('sdk'):
+        metadata += f"SDK: {item_info['sdk']}\n"
+    if item_info.get('downloads'):
+        metadata += f"Downloads: {item_info['downloads']:,}\n"
+    if item_info.get('likes'):
+        metadata += f"Likes: {item_info['likes']:,}\n"
+
+    user_prompt = f"{metadata}\n\nREADME Content:\n{content_snippet}" if content_snippet else metadata
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.3
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"AI Generation Error: {e}")
+        return None
+
 def get_youtube_channel_videos(channels, limit=3):
     """Fetches latest videos from specified YouTube channels (handles or IDs)."""
     if not YOUTUBE_API_KEY:
@@ -554,10 +685,12 @@ Description: {repo_info.get('description', 'No description')}
         print(f"AI Generation Error: {e}")
         return None
 
-def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries, youtube_summaries=None):
+def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries, youtube_summaries=None, huggingface_summaries=None):
     """Saves to _posts/ folder with Jekyll Frontmatter. Appends if file exists."""
     if youtube_summaries is None:
         youtube_summaries = []
+    if huggingface_summaries is None:
+        huggingface_summaries = []
 
     today = datetime.datetime.now()
     date_filename = today.strftime("%Y-%m-%d")
@@ -572,7 +705,8 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
     total_trending = len(github_trending_summaries)
     total_fast = len(github_fast_summaries)
     total_youtube = len(youtube_summaries)
-    description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects, {total_youtube} YouTube videos. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目，{total_youtube}个YouTube视频。"
+    total_hf = len(huggingface_summaries)
+    description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects, {total_youtube} YouTube videos, {total_hf} Hugging Face models. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目，{total_youtube}个YouTube视频，{total_hf}个Hugging Face模型。"
 
     if os.path.exists(filename):
         # Append new content to existing file
@@ -588,11 +722,15 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
                 f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
                 for summary in github_fast_summaries:
                     f.write(summary + "\n\n---\n\n")
+            if huggingface_summaries:
+                f.write("\n## 🤗 Hugging Face Trending / Hugging Face 热门\n\n---\n\n")
+                for summary in huggingface_summaries:
+                    f.write(summary + "\n\n---\n\n")
             if youtube_summaries:
                 f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n---\n\n")
                 for summary in youtube_summaries:
                     f.write(summary + "\n\n---\n\n")
-        total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries) + len(youtube_summaries)
+        total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries) + len(youtube_summaries) + len(huggingface_summaries)
         print(f"✅ Appended {total} new articles to: {filename}")
     else:
         frontmatter = f"""---
@@ -600,17 +738,17 @@ layout: post
 title: "Daily Tech Digest: {display_date}"
 date: {date_filename}
 description: "{description}"
-categories: [AI, News, GitHub, YouTube]
-tags: [HackerNews, GitHub, Trending, YouTube, Bilingual]
+categories: [AI, News, GitHub, YouTube, HuggingFace]
+tags: [HackerNews, GitHub, Trending, YouTube, HuggingFace, Bilingual]
 author: "AI Editor"
 ---
 
 ## Daily Trends / 每日动态
 *Generated by AI, Curated for Developers.*
 
-Today's highlights include top stories from Hacker News, trending GitHub repositories, fast-moving new projects, and tech videos from YouTube.
+Today's highlights include top stories from Hacker News, trending GitHub repositories, fast-moving new projects, Hugging Face models, and tech videos from YouTube.
 
-今日精选包括黑客新闻热门文章、GitHub 热门仓库、快速崛起的新项目以及 YouTube 技术视频。
+今日精选包括黑客新闻热门文章、GitHub 热门仓库、快速崛起的新项目、Hugging Face 模型以及 YouTube 技术视频。
 
 ---
 
@@ -630,6 +768,10 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
                 f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
                 for summary in github_fast_summaries:
                     f.write(summary + "\n\n---\n\n")
+            if huggingface_summaries:
+                f.write("\n## 🤗 Hugging Face Trending / Hugging Face 热门\n\n---\n\n")
+                for summary in huggingface_summaries:
+                    f.write(summary + "\n\n---\n\n")
             if youtube_summaries:
                 f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n---\n\n")
                 for summary in youtube_summaries:
@@ -648,10 +790,11 @@ def get_processed_urls():
     processed = set()
     with open(filename, "r", encoding="utf-8") as f:
         content = f.read()
-        # Extract URLs from "Read Original", "View Repository", and "Watch Video" links
+        # Extract URLs from all link types
         urls = re.findall(r'\[Read Original / 阅读原文\]\((https?://[^\)]+)\)', content)
         urls += re.findall(r'\[View Repository / 查看仓库\]\((https?://[^\)]+)\)', content)
         urls += re.findall(r'\[Watch Video / 观看视频\]\((https?://[^\)]+)\)', content)
+        urls += re.findall(r'\[View on Hugging Face / 在 Hugging Face 查看\]\((https?://[^\)]+)\)', content)
         processed.update(urls)
     return processed
 
@@ -733,6 +876,49 @@ if __name__ == "__main__":
         if len(github_fast_content) >= 2:
             break
 
+    # --- Hugging Face Trending Models ---
+    huggingface_content = []
+    trending_models = get_huggingface_trending(limit=3)
+
+    for model in trending_models:
+        url = model['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {model['title']}")
+            continue
+
+        print(f"Processing HF Model: {model['title']}")
+        readme_content = fetch_huggingface_readme(model['title'])
+        summary = summarize_huggingface_item(model, readme_content)
+
+        if summary:
+            formatted = f"{summary}\n\n**[View on Hugging Face / 在 Hugging Face 查看]({url})**"
+            huggingface_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(huggingface_content) >= 3:
+            break
+
+    # --- Hugging Face Trending Spaces ---
+    trending_spaces = get_huggingface_spaces(limit=2)
+
+    for space in trending_spaces:
+        url = space['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {space['title']}")
+            continue
+
+        print(f"Processing HF Space: {space['title']}")
+        readme_content = fetch_huggingface_readme(f"spaces/{space['title']}")
+        summary = summarize_huggingface_item(space, readme_content)
+
+        if summary:
+            formatted = f"{summary}\n\n**[View on Hugging Face / 在 Hugging Face 查看]({url})**"
+            huggingface_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(huggingface_content) >= 5:  # 3 models + 2 spaces = 5 total
+            break
+
     # --- YouTube Channel Videos ---
     youtube_content = []
     channel_videos = get_youtube_channel_videos(YOUTUBE_CHANNELS, limit=3)
@@ -781,7 +967,7 @@ if __name__ == "__main__":
             break
 
     # --- Save Results ---
-    if hn_content or github_trending_content or github_fast_content or youtube_content:
-        save_to_markdown(hn_content, github_trending_content, github_fast_content, youtube_content)
+    if hn_content or github_trending_content or github_fast_content or youtube_content or huggingface_content:
+        save_to_markdown(hn_content, github_trending_content, github_fast_content, youtube_content, huggingface_content)
     else:
         print("ℹ️ No new content to add")
