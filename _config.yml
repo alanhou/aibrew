@@ -1,0 +1,16 @@
+title: "Bilingual AI Trends"
+description: "Daily summaries of Hacker News and AI trends in English and Chinese."
+author: "AI Editor"
+email: your-email@example.com
+
+# URL Settings (Leave empty for now, GitHub populates this automatically)
+url: "" 
+baseurl: "" 
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
