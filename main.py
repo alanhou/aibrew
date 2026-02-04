@@ -837,7 +837,7 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
         print(f"✅ Created new post: {filename}")
 
 def get_processed_urls():
-    """Returns set of URLs already processed today."""
+    """Returns set of URLs already processed today (excludes title-only summaries for re-processing)."""
     today = datetime.datetime.now()
     date_filename = today.strftime("%Y-%m-%d")
     filename = f"_posts/{date_filename}-daily-ai-digest.md"
@@ -848,13 +848,51 @@ def get_processed_urls():
     processed = set()
     with open(filename, "r", encoding="utf-8") as f:
         content = f.read()
-        # Extract URLs from all link types
-        urls = re.findall(r'\[Read Original / 阅读原文\]\((https?://[^\)]+)\)', content)
-        urls += re.findall(r'\[View Repository / 查看仓库\]\((https?://[^\)]+)\)', content)
-        urls += re.findall(r'\[Watch Video / 观看视频\]\((https?://[^\)]+)\)', content)
-        urls += re.findall(r'\[View on Hugging Face / 在 Hugging Face 查看\]\((https?://[^\)]+)\)', content)
-        processed.update(urls)
+
+        # Find all article blocks and check if they're title-only
+        # Title-only blocks are marked with <!-- [Title-Only] --> and should be re-processed
+        blocks = content.split('---')
+        for block in blocks:
+            # Skip title-only blocks - they should be re-fetched
+            if '<!-- [Title-Only] -->' in block:
+                continue
+
+            # Extract URLs from fully processed entries
+            urls = re.findall(r'\[Read Original / 阅读原文\]\((https?://[^\)]+)\)', block)
+            urls += re.findall(r'\[View Repository / 查看仓库\]\((https?://[^\)]+)\)', block)
+            urls += re.findall(r'\[Watch Video / 观看视频\]\((https?://[^\)]+)\)', block)
+            urls += re.findall(r'\[View on Hugging Face / 在 Hugging Face 查看\]\((https?://[^\)]+)\)', block)
+            processed.update(urls)
+
     return processed
+
+def remove_title_only_entries(url):
+    """Remove title-only entries for a URL so they can be replaced with full content."""
+    today = datetime.datetime.now()
+    date_filename = today.strftime("%Y-%m-%d")
+    filename = f"_posts/{date_filename}-daily-ai-digest.md"
+
+    if not os.path.exists(filename):
+        return
+
+    with open(filename, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Split by --- and filter out title-only blocks containing this URL
+    parts = content.split('\n---\n')
+    filtered_parts = []
+    removed = False
+
+    for part in parts:
+        if '<!-- [Title-Only] -->' in part and url in part:
+            print(f"🔄 Removing title-only entry for re-processing: {url}")
+            removed = True
+            continue
+        filtered_parts.append(part)
+
+    if removed:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write('\n---\n'.join(filtered_parts))
 
 # --- MAIN EXECUTION ---
 if __name__ == "__main__":
@@ -876,16 +914,22 @@ if __name__ == "__main__":
         html_content, title = fetch_article_content(url)
 
         if html_content:
+            # Remove any existing title-only entry for this URL
+            remove_title_only_entries(url)
             summary = summarize_bilingual(title, html_content)
+            if summary:
+                formatted = f"{summary}\n\n**[Read Original / 阅读原文]({url})**"
+                hn_content.append(formatted)
+                processed_urls.add(url)
         else:
             # Fallback: use HN title when content fetch fails
+            # Mark with [Title-Only] so it can be re-processed later
             print(f"📝 Using title-only summary for: {story['title']}")
             summary = summarize_from_title(story['title'], url)
-
-        if summary:
-            formatted = f"{summary}\n\n**[Read Original / 阅读原文]({url})**"
-            hn_content.append(formatted)
-            processed_urls.add(url)
+            if summary:
+                formatted = f"<!-- [Title-Only] -->\n{summary}\n\n**[Read Original / 阅读原文]({url})**"
+                hn_content.append(formatted)
+                processed_urls.add(url)
 
         if len(hn_content) >= 3:
             break
