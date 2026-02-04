@@ -544,6 +544,52 @@ def fetch_github_readme(url):
             pass
     return None, None
 
+def fetch_from_rss(url):
+    """Try to fetch article content from site's RSS feed."""
+    from urllib.parse import urlparse
+
+    parsed = urlparse(url)
+    base_url = f"{parsed.scheme}://{parsed.netloc}"
+
+    # Common RSS feed paths
+    feed_paths = ['/feed', '/rss', '/feed.xml', '/rss.xml', '/atom.xml', '/blog/feed', '/blog/rss']
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
+    for feed_path in feed_paths:
+        try:
+            feed_url = base_url + feed_path
+            response = requests.get(feed_url, headers=headers, timeout=10)
+            if response.status_code == 200 and ('<rss' in response.text or '<feed' in response.text):
+                # Parse RSS/Atom feed to find matching article
+                import xml.etree.ElementTree as ET
+                root = ET.fromstring(response.text)
+
+                # Handle RSS format
+                for item in root.findall('.//item'):
+                    link = item.find('link')
+                    if link is not None and url in link.text:
+                        title = item.find('title')
+                        # Try content:encoded first, then description
+                        content = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
+                        if content is None:
+                            content = item.find('description')
+                        if content is not None and content.text:
+                            title_text = title.text if title is not None else ''
+                            return content.text, title_text
+
+                # Handle Atom format
+                for entry in root.findall('.//{http://www.w3.org/2005/Atom}entry'):
+                    link = entry.find('{http://www.w3.org/2005/Atom}link')
+                    if link is not None and url in link.get('href', ''):
+                        title = entry.find('{http://www.w3.org/2005/Atom}title')
+                        content = entry.find('{http://www.w3.org/2005/Atom}content')
+                        if content is not None and content.text:
+                            title_text = title.text if title is not None else ''
+                            return content.text, title_text
+        except:
+            continue
+    return None, None
+
 def fetch_article_content(url):
     """Downloads the article and extracts the main text body."""
     # Handle GitHub URLs specially - fetch README directly
@@ -552,18 +598,30 @@ def fetch_article_content(url):
         if content:
             return content, title
 
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
         response = requests.get(url, headers=headers, timeout=10)
         doc = Document(response.text)
         summary = doc.summary()
-        # Check if content is too short or looks like an error page
-        if len(summary) < 500:
-            print(f"⚠️ Content too short for {url}, skipping")
+
+        # Check if content looks like a Cloudflare/JS challenge page
+        if 'Enable JavaScript' in response.text or 'Just a moment' in response.text or len(summary) < 500:
+            print(f"⚠️ Page blocked or too short, trying RSS feed for {url}")
+            rss_content, rss_title = fetch_from_rss(url)
+            if rss_content and len(rss_content) > 200:
+                print(f"✅ Found content via RSS feed")
+                return rss_content, rss_title
             return None, None
+
         return summary, doc.title()
     except Exception as e:
         print(f"⚠️ Failed to fetch {url}: {e}")
+        # Try RSS as fallback
+        rss_content, rss_title = fetch_from_rss(url)
+        if rss_content:
+            print(f"✅ Found content via RSS feed")
+            return rss_content, rss_title
         return None, None
 
 def summarize_bilingual(title, content):
