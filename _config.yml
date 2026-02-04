@@ -4,13 +4,14 @@ author: "AI Editor"
 email: your-email@example.com
 
 # URL Settings (Leave empty for now, GitHub populates this automatically)
-url: "" 
-baseurl: "" 
+url: ""
+baseurl: ""
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
