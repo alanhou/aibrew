@@ -1151,3 +1151,284 @@ Claude-Mem 是 Claude Code 的插件,可自动捕获 Claude 在编码会话期�
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=WwdIYp5fuxY)**
 
+### Mistral AI Releases Voxtral Transcribe 2: Next-Generation Speech-to-Text Models
+
+* **Two new models launched**: Voxtral Mini Transcribe V2 for batch transcription and Voxtral Realtime for live applications, with Realtime available as open-weights under Apache 2.0 license
+* **Ultra-low latency**: Voxtral Realtime achieves sub-200ms transcription delay using novel streaming architecture, enabling real-time voice agents and conversational AI
+* **Industry-leading accuracy**: Voxtral Mini Transcribe V2 achieves ~4% word error rate on FLEURS benchmark, outperforming GPT-4o mini, Gemini 2.5 Flash, Assembly Universal, and Deepgram Nova
+* **Best price-performance**: Priced at $0.003/min for batch and $0.006/min for realtime—processing 3x faster than ElevenLabs Scribe v2 at one-fifth the cost
+* **Enterprise features**: Includes speaker diarization, context biasing (up to 100 custom terms), word-level timestamps, and support for audio files up to 3 hours long
+* **Multilingual support**: Native support for 13 languages including English, Chinese, Hindi, Spanish, Arabic, French, Portuguese, Russian, German, Japanese, Korean, Italian, and Dutch
+* **Edge deployment**: 4B parameter footprint enables efficient on-device processing for privacy-sensitive applications with GDPR and HIPAA compliance
+* **Audio playground**: New Mistral Studio interface allows instant testing with up to 10 audio files (mp3, wav, m4a, flac, ogg up to 1GB each)
+* **Use cases**: Meeting intelligence, voice agents, contact center automation, live subtitling, and compliance documentation
+* **Availability**: API access via Mistral Studio, Le Chat integration, and open-weights model on Hugging Face
+
+---
+
+### Mistral AI 发布 Voxtral Transcribe 2：下一代语音转文本模型
+
+* **推出两款新模型**：Voxtral Mini Transcribe V2 用于批量转录，Voxtral Realtime 用于实时应用，Realtime 以 Apache 2.0 许可证开源权重
+* **超低延迟**：Voxtral Realtime 采用新颖的流式架构，实现低至 200 毫秒以下的转录延迟，支持实时语音代理和对话式 AI
+* **行业领先准确率**：Voxtral Mini Transcribe V2 在 FLEURS 基准测试中实现约 4% 的词错误率，超越 GPT-4o mini、Gemini 2.5 Flash、Assembly Universal 和 Deepgram Nova
+* **最佳性价比**：批量转录定价 $0.003/分钟，实时转录 $0.006/分钟——处理速度比 ElevenLabs Scribe v2 快 3 倍，成本仅为其五分之一
+* **企业级功能**：包括说话人分离、上下文偏置（最多 100 个自定义术语）、词级时间戳，支持最长 3 小时音频文件
+* **多语言支持**：原生支持 13 种语言，包括英语、中文、印地语、西班牙语、阿拉伯语、法语、葡萄牙语、俄语、德语、日语、韩语、意大利语和荷兰语
+* **边缘部署**：40 亿参数规模支持高效设备端处理，适用于隐私敏感应用，符合 GDPR 和 HIPAA 合规要求
+* **音频测试平台**：全新 Mistral Studio 界面支持即时测试，可上传最多 10 个音频文件（支持 mp3、wav、m4a、flac、ogg 格式，单个文件最大 1GB）
+* **应用场景**：会议智能分析、语音助手、呼叫中心自动化、实时字幕生成、合规文档记录
+* **获取方式**：通过 Mistral Studio API 访问，集成至 Le Chat，开源模型可在 Hugging Face 下载
+
+**[Read Original / 阅读原文](https://mistral.ai/news/voxtral-transcribe-2)**
+
+<!-- [Title-Only] -->
+### Attention at Constant Cost per Token via Symmetry-Aware Taylor Approximation
+
+**Note: This introduction is based solely on the title, as the article content could not be fetched.**
+
+* **What this article likely covers:** This appears to be a research paper proposing a novel method to optimize the attention mechanism in transformer models. The key innovation seems to be achieving constant computational cost per token (O(1) complexity) rather than the typical quadratic cost (O(n²)) of standard attention. The approach likely uses Taylor series approximation combined with symmetry properties to approximate the attention computation more efficiently while maintaining accuracy.
+
+* **Why it might be interesting to readers:** 
+  - Addresses one of the biggest computational bottlenecks in large language models and transformers
+  - Could enable processing of much longer sequences without exponential cost increases
+  - May have significant implications for making AI models more efficient and accessible
+  - Represents potential breakthrough in scaling transformer architectures
+  - Relevant for anyone working with LLMs, NLP, or efficient deep learning
+
+---
+
+### 通过对称感知泰勒近似实现每个Token恒定成本的注意力机制
+
+**注意：本简介仅基于标题推测，因为无法获取文章内容。**
+
+* **根据标题推测的文章内容简介：** 这似乎是一篇研究论文，提出了一种优化Transformer模型中注意力机制的新方法。其核心创新点可能是实现了每个token的恒定计算成本（O(1)复杂度），而不是标准注意力机制的二次方成本（O(n²)）。该方法可能利用泰勒级数近似结合对称性特性，以更高效的方式近似注意力计算，同时保持准确性。
+
+* **为何值得关注：**
+  - 解决了大型语言模型和Transformer中最大的计算瓶颈之一
+  - 可能使处理更长序列成为可能，而不会导致成本指数级增长
+  - 对提高AI模型的效率和可访问性具有重要意义
+  - 代表了Transformer架构扩展方面的潜在突破
+  - 对从事大语言模型、自然语言处理或高效深度学习的研究者和工程师具有重要参考价值
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2602.00294)**
+
+### A Sane But Extremely Bullish Case for Clawdbot/OpenClaw
+
+**Summary of Brandon Wang's Experience with AI Automation**
+
+* **Context**: Author presents a measured, practical perspective on Clawdbot (OpenClaw) amid extreme discourse, sharing real-world use cases that transformed his daily workflow
+* **Message Management**: Automated text message monitoring every 15 minutes to detect promises and create calendar events, auto-generate meeting invites, and prevent double-booking
+* **Daily Preparation**: Receives 8pm summaries of next day's meetings to mentally prepare and manage introvert energy
+* **Group Chat Digests**: Daily summaries of high-volume WhatsApp/Signal groups (100+ messages) to stay informed without overwhelm
+* **Smart Price Monitoring**: 30+ active price alerts with complex reasoning (e.g., hotel rooms without pullout beds in shared spaces, analyzing listing photos)
+* **Universal Tracking**: Replaced specialized apps (Flighty, Parcel) with Clawdbot for package and flight monitoring via simple text commands
+* **Household Management**: Automated freezer inventory via photos, smart grocery list management that deduplicates and combines ingredients from recipes
+* **Restaurant Booking**: Automated Resy/OpenTable availability checking across multiple dates
+* **Key Insight**: The author evolved from lukewarm skepticism to dependency, finding practical automation that bridges gaps in existing tools (especially text messaging vs email)
+
+---
+
+### 关于 Clawdbot/OpenClaw 的理性但极度看涨观点
+
+**Brandon Wang 的 AI 自动化实践总结**
+
+* **背景**：作者在极端讨论中提出了一个务实的 Clawdbot（OpenClaw）使用视角，分享了改变其日常工作流程的真实案例
+* **消息管理**：每15分钟自动监控短信，检测承诺并创建日历事件，自动生成会议邀请，防止时间冲突
+* **每日准备**：每晚8点接收次日会议摘要，帮助内向者提前做好心理准备和管理精力
+* **群聊摘要**：每日总结高流量 WhatsApp/Signal 群组（100+条消息），在不被淹没的情况下保持信息同步
+* **智能价格监控**：设置30多个价格提醒，具备复杂推理能力（如：酒店房间不能有共享空间的折叠床，分析房源照片）
+* **通用追踪**：用 Clawdbot 替代专业应用（Flighty、Parcel），通过简单文本命令追踪包裹和航班
+* **家庭管理**：通过照片自动化冰柜库存管理，智能购物清单可去重并合并食谱中的食材
+* **餐厅预订**：自动检查 Resy/OpenTable 多个日期的可用性
+* **核心洞察**：作者从温和怀疑转变为依赖，发现了弥补现有工具差距的实用自动化（尤其是短信与电子邮件之间的差距）
+
+**[Read Original / 阅读原文](https://brandon.wang/2026/clawdbot)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### Tirith - Terminal Security Guard Against Homograph Attacks and Malicious Commands
+
+**What it does**
+* Intercepts and analyzes terminal commands before execution to detect security threats that browsers catch but terminals don't
+* Blocks homograph attacks (visually identical URLs using Cyrillic/Greek characters that resolve to malicious servers)
+* Warns about dangerous patterns like `curl | bash` pipe-to-shell commands and ANSI injection attacks
+* Operates as a shell hook with sub-millisecond overhead, completely invisible during normal usage
+
+**Key features**
+* **30 detection rules across 7 categories**: homograph attacks, terminal injection, pipe-to-shell, dotfile attacks, insecure transport, ecosystem threats, and credential exposure
+* **Multi-shell support**: Works with zsh, bash, fish, and PowerShell through preexec hooks
+* **100% local analysis**: No network calls, no telemetry, no cloud dependency—works completely offline
+* **Flexible policy system**: YAML-based configuration with allowlists, severity overrides, and per-command bypass options
+* **Safe script execution**: `tirith run` command downloads scripts to temp files, shows SHA256 hashes, and requires manual review before execution
+* **Comprehensive tooling**: Includes `check`, `score`, `diff`, `receipt`, and `doctor` commands for analysis and auditing
+
+**Why it's notable**
+* Addresses a critical security gap: terminals render Unicode and ANSI escapes without validation, making them vulnerable to attacks that modern browsers already prevent
+* Gained 1,100+ stars by solving a real problem developers face daily—distinguishing between legitimate installation commands and sophisticated phishing attempts
+* Written in Rust for performance and safety, with extensive package manager support (Homebrew, npm, cargo, apt, dnf, AUR, Scoop, Chocolatey, asdf, Nix)
+* Privacy-focused design: never modifies commands, never sends data externally, and maintains only local audit logs with redacted information
+* Dual-licensed (AGPL-3.0/Commercial) making it accessible for both open-source and enterprise use cases
+
+---
+
+### Tirith - 终端安全卫士：防御同形异义攻击和恶意命令
+
+**功能介绍**
+* 在命令执行前拦截并分析终端命令，检测浏览器能捕获但终端无法识别的安全威胁
+* 阻止同形异义攻击（使用西里尔/希腊字符伪装成合法 URL 但实际指向恶意服务器）
+* 对危险模式发出警告，如 `curl | bash` 管道执行命令和 ANSI 注入攻击
+* 作为 shell 钩子运行，延迟低于毫秒级，正常使用时完全透明
+
+**主要特点**
+* **7 大类别 30 条检测规则**：同形异义攻击、终端注入、管道执行、点文件攻击、不安全传输、生态系统威胁和凭证泄露
+* **多 shell 支持**：通过 preexec 钩子支持 zsh、bash、fish 和 PowerShell
+* **100% 本地分析**：无网络调用、无遥测、无云依赖——完全离线工作
+* **灵活的策略系统**：基于 YAML 的配置，支持白名单、严重性覆盖和单命令绕过选项
+* **安全脚本执行**：`tirith run` 命令将脚本下载到临时文件，显示 SHA256 哈希值，执行前需要手动审查
+* **全面的工具集**：包含 `check`、`score`、`diff`、`receipt` 和 `doctor` 命令用于分析和审计
+
+**为何值得关注**
+* 解决关键安全缺口：终端在渲染 Unicode 和 ANSI 转义序列时不进行验证，容易受到现代浏览器已能防御的攻击
+* 凭借解决开发者日常面临的真实问题获得 1,100+ 星标——区分合法安装命令和复杂的钓鱼攻击
+* 使用 Rust 编写以确保性能和安全性，支持广泛的包管理器（Homebrew、npm、cargo、apt、dnf、AUR、Scoop、Chocolatey、asdf、Nix）
+* 注重隐私的设计：从不修改命令、从不对外发送数据，仅维护包含脱敏信息的本地审计日志
+* 双重许可（AGPL-3.0/商业许可），适用于开源和企业使用场景
+
+**[View Repository / 查看仓库](https://github.com/sheeki03/tirith)**
+
+
+## 🎬 YouTube Tech Videos / YouTube 技术视频
+
+### 🎬 How a colleague helped Santosh realize he was performing at a higher level at work than his title
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This video tells the story of Santosh, a Senior Engineer who discovered he was already performing at a Staff Engineer level through an unexpected colleague introduction. It explores the moment of realization when external recognition helped him understand his actual impact and capabilities at work.
+
+* **Key topics discussed:**
+  - The gap between job titles and actual performance levels
+  - How external perspective can reveal your true professional standing
+  - Recognition of work that exceeds current role expectations
+  - Career progression and self-awareness in tech roles
+  - The importance of advocating for appropriate titles that match responsibilities
+
+* **Why it's worth watching:** This is an inspiring and relatable story for software engineers who may be undervaluing their contributions or unsure about their career progression. It highlights the importance of recognizing when you've outgrown your current title and provides motivation to seek appropriate recognition and advancement. Perfect for anyone navigating career growth in tech.
+
+---
+
+### 🎬 同事如何帮助 Santosh 意识到他的工作表现已超越职位级别
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 本视频讲述了 Santosh 的故事，他是一名高级工程师，通过同事的一次意外介绍，发现自己实际上已经在以资深工程师的水平工作。视频探讨了外部认可如何帮助他理解自己在工作中的真实影响力和能力的顿悟时刻。
+
+* **主要话题:**
+  - 职位头衔与实际工作表现之间的差距
+  - 外部视角如何揭示你真正的职业水平
+  - 对超出当前角色期望的工作的认可
+  - 科技行业的职业发展和自我认知
+  - 争取与职责相匹配的适当职位的重要性
+
+* **为何值得观看:** 这是一个鼓舞人心且引起共鸣的故事，适合那些可能低估自己贡献或对职业发展方向不确定的软件工程师。它强调了认识到自己已经超越当前职位的重要性，并激励人们寻求适当的认可和晋升。非常适合在科技行业中探索职业成长的任何人。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Sk72ZCDAEsk)**
+
+### 🎬 These 3 MoltBot Security Issues Could Let Hackers Access Your Computer
+
+**Channel:** Varun Mayya
+
+* **What the video covers:** This video exposes three critical security vulnerabilities in MoltBot, an AI automation tool, that could potentially allow hackers to gain unauthorized access to users' computers.
+
+* **Key topics discussed:** 
+  - Specific security flaws in MoltBot's architecture
+  - How these vulnerabilities could be exploited by malicious actors
+  - Potential risks to user data and system integrity
+  - Security implications for AI-powered automation tools
+
+* **Why it's worth watching:** Essential viewing for anyone using MoltBot or similar AI automation tools. The video provides crucial security awareness about potential risks in emerging AI technologies and helps users understand how to protect their systems from exploitation.
+
+---
+
+### 🎬 MoltBot 的三个安全漏洞可能让黑客访问你的电脑
+
+**频道:** Varun Mayya
+
+* **视频内容概述:** 该视频揭露了 AI 自动化工具 MoltBot 中的三个严重安全漏洞，这些漏洞可能允许黑客未经授权访问用户的计算机。
+
+* **主要话题:**
+  - MoltBot 架构中的具体安全缺陷
+  - 恶意行为者如何利用这些漏洞
+  - 对用户数据和系统完整性的潜在风险
+  - AI 驱动自动化工具的安全影响
+
+* **为何值得观看:** 对于使用 MoltBot 或类似 AI 自动化工具的用户来说，这是必看内容。视频提供了关于新兴 AI 技术潜在风险的重要安全意识，帮助用户了解如何保护系统免受攻击。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0TKl2skt4sk)**
+
+### 🎬 Stop Paying For AI! Google's Free Tools Are INSANE
+
+**Channel:** WsCube Tech
+
+* **What the video covers:** This video explores Google's suite of free AI tools that can replace expensive paid alternatives, demonstrating how users can leverage these powerful resources without spending money on premium AI subscriptions.
+
+* **Key topics discussed:** 
+  - Overview of Google's free AI tools and platforms
+  - Practical demonstrations of AI capabilities available at no cost
+  - Comparison between paid AI services and Google's free alternatives
+  - How to access and utilize these tools for various tasks
+  - AI marketing automation possibilities using free Google tools
+
+* **Why it's worth watching:** Perfect for budget-conscious professionals, marketers, and tech enthusiasts who want to harness AI power without the hefty subscription fees. The video provides actionable insights into maximizing free resources that many users might not know exist, potentially saving hundreds of dollars annually while maintaining productivity and innovation.
+
+---
+
+### 🎬 停止为AI付费！谷歌的免费工具太疯狂了
+
+**频道:** WsCube Tech
+
+* **视频内容概述:** 本视频深入介绍了谷歌提供的免费AI工具套件，展示如何使用这些强大的免费资源来替代昂贵的付费AI服务，让用户无需花钱订阅高级AI工具。
+
+* **主要话题:**
+  - 谷歌免费AI工具和平台的全面概览
+  - 免费AI功能的实际演示和应用
+  - 付费AI服务与谷歌免费替代方案的对比分析
+  - 如何访问和使用这些工具完成各种任务
+  - 使用谷歌免费工具实现AI营销自动化的可能性
+
+* **为何值得观看:** 非常适合预算有限的专业人士、营销人员和科技爱好者，帮助他们在不支付高额订阅费的情况下利用AI的强大功能。视频提供了关于如何最大化利用许多用户可能不知道的免费资源的实用见解，每年可能节省数百美元，同时保持生产力和创新能力。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b7_ePM7E8Vk)**
+
+### 🎬 Clawdbot / OpenClaw / Moltbot Install Guide on Windows for Beginners
+
+**Channel:** Mike Chong
+
+* **What the video covers:** This tutorial provides a comprehensive step-by-step guide for installing Moltbot (previously known as Clawdbot) natively on Windows operating systems, specifically designed for users with little to no technical experience.
+
+* **Key topics discussed:**
+  * Complete installation process for Moltbot/Clawdbot/OpenClaw on Windows
+  * Beginner-friendly walkthrough with detailed instructions
+  * Native Windows installation (no virtual machines or emulators required)
+  * Troubleshooting common installation issues
+
+* **Why it's worth watching:** Perfect for beginners who want to get started with Moltbot but feel intimidated by technical setup processes. The video breaks down each installation step clearly, making it accessible even for those without prior experience in software installation or development tools.
+
+---
+
+### 🎬 Clawdbot / OpenClaw / Moltbot Windows 安装指南（新手教程）
+
+**频道:** Mike Chong
+
+* **视频内容概述:** 本教程提供了在 Windows 系统上原生安装 Moltbot（前身为 Clawdbot）的完整分步指南，专为技术经验较少或零基础的用户设计。
+
+* **主要话题:**
+  * Moltbot/Clawdbot/OpenClaw 在 Windows 上的完整安装流程
+  * 适合初学者的详细操作演示
+  * Windows 原生安装方法（无需虚拟机或模拟器）
+  * 常见安装问题的故障排除
+
+* **为何值得观看:** 非常适合想要开始使用 Moltbot 但对技术设置过程感到困惑的初学者。视频清晰地分解了每个安装步骤，即使是没有软件安装或开发工具经验的用户也能轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0KUYLdjqG2k)**
+
