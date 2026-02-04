@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests openai beautifulsoup4 readability-lxml
+          pip install requests openai beautifulsoup4 readability-lxml youtube-transcript-api
 
       - name: Run AI Generator
         env:
