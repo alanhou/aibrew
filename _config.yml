@@ -11,6 +11,10 @@ baseurl: "/aibrew"
 markdown: kramdown
 remote_theme: jekyll/minima
 
+# Show excerpts on home page
+show_excerpts: true
+excerpt_separator: "---"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
