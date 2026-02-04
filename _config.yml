@@ -3,9 +3,9 @@ description: "Daily summaries of Hacker News and AI trends in English and Chines
 author: "AI Editor"
 email: your-email@example.com
 
-# URL Settings (Leave empty for now, GitHub populates this automatically)
-url: ""
-baseurl: ""
+# URL Settings for GitHub Pages
+url: "https://alanhou.github.io"
+baseurl: "/aibrew"
 
 # Build settings
 markdown: kramdown
