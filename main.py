@@ -399,6 +399,42 @@ def summarize_bilingual(title, content):
         print(f"AI Generation Error: {e}")
         return None
 
+def summarize_from_title(title, url):
+    """Creates a brief summary based only on the article title when content is unavailable."""
+    system_prompt = """
+    You are an expert tech editor for a bilingual blog.
+    The article content could not be fetched, but you have the title from Hacker News.
+    Based on the title alone, provide a brief introduction about what this article likely covers.
+    Be honest that this is based on the title only.
+
+    1. Output in English and Chinese.
+    2. STRICTLY use Markdown formatting.
+    3. Structure:
+       ### [Title]
+       * Brief description of what this article likely covers based on the title
+       * Why it might be interesting to readers
+
+       ### [Chinese Title or Translation]
+       * 根据标题推测的文章内容简介
+       * 为何值得关注
+    """
+
+    user_prompt = f"Article Title: {title}\nURL: {url}"
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.3
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"AI Generation Error: {e}")
+        return None
+
 def summarize_github_repo(repo_info, readme_content):
     """Summarizes a GitHub repository with its metadata."""
     content_snippet = readme_content[:10000] if readme_content else ""
@@ -569,10 +605,15 @@ if __name__ == "__main__":
 
         if html_content:
             summary = summarize_bilingual(title, html_content)
-            if summary:
-                formatted = f"{summary}\n\n**[Read Original / 阅读原文]({url})**"
-                hn_content.append(formatted)
-                processed_urls.add(url)
+        else:
+            # Fallback: use HN title when content fetch fails
+            print(f"📝 Using title-only summary for: {story['title']}")
+            summary = summarize_from_title(story['title'], url)
+
+        if summary:
+            formatted = f"{summary}\n\n**[Read Original / 阅读原文]({url})**"
+            hn_content.append(formatted)
+            processed_urls.add(url)
 
         if len(hn_content) >= 3:
             break
