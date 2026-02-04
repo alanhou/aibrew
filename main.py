@@ -9,6 +9,20 @@ from readability import Document
 API_KEY = os.environ.get("LLM_API_KEY")
 BASE_URL = os.environ.get("LLM_BASE_URL") # Change if using a different provider
 MODEL_NAME = os.environ.get("LLM_MODEL_NAME")
+YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY")
+
+# YouTube channels to fetch videos from (handles like @fireship or channel IDs)
+YOUTUBE_CHANNELS = [
+    "@Fireship",
+    "@freecodecamp",
+    "@AndrejKarpathy",
+    "@LennysPodcast",
+    "@lexfridman",
+    "@baoyu_",
+    "@AI-qb8eh",
+    "@ycombinator",
+    "@DwarkeshPatel"
+]
 
 if not API_KEY:
     raise ValueError("API Key not found! Set LLM_API_KEY in GitHub Secrets.")
@@ -116,6 +130,187 @@ def get_github_fast_moving(limit=5):
     except Exception as e:
         print(f"Error fetching GitHub fast-moving repos: {e}")
         return []
+
+def get_youtube_channel_videos(channels, limit=3):
+    """Fetches latest videos from specified YouTube channels (handles or IDs)."""
+    if not YOUTUBE_API_KEY:
+        print("⚠️ YOUTUBE_API_KEY not set, skipping YouTube channel videos")
+        return []
+
+    print(f"📡 Fetching videos from {len(channels)} YouTube channels...")
+    videos = []
+
+    # Get videos published in last 48 hours
+    published_after = (datetime.datetime.utcnow() - datetime.timedelta(hours=48)).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+    for channel in channels:
+        # Resolve handle to channel ID if needed
+        if channel.startswith('@'):
+            channel_id = resolve_youtube_handle(channel)
+            if not channel_id:
+                print(f"⚠️ Could not resolve handle {channel}")
+                continue
+        else:
+            channel_id = channel
+
+        try:
+            response = requests.get(
+                "https://www.googleapis.com/youtube/v3/search",
+                params={
+                    'key': YOUTUBE_API_KEY,
+                    'channelId': channel_id,
+                    'part': 'snippet',
+                    'order': 'date',
+                    'type': 'video',
+                    'publishedAfter': published_after,
+                    'maxResults': 3
+                },
+                timeout=15
+            )
+            data = response.json()
+
+            for item in data.get('items', []):
+                snippet = item['snippet']
+                video_id = item['id']['videoId']
+                videos.append({
+                    'title': snippet['title'],
+                    'url': f"https://www.youtube.com/watch?v={video_id}",
+                    'channel': snippet['channelTitle'],
+                    'description': snippet['description'],
+                    'published_at': snippet['publishedAt'],
+                    'source': 'youtube_channel'
+                })
+        except Exception as e:
+            print(f"Error fetching videos from channel {channel}: {e}")
+
+    # Sort by published date and limit
+    videos.sort(key=lambda x: x['published_at'], reverse=True)
+    print(f"✅ Found {len(videos[:limit])} recent channel videos")
+    return videos[:limit]
+
+def resolve_youtube_handle(handle):
+    """Resolves a YouTube handle (@username) to a channel ID."""
+    if not YOUTUBE_API_KEY:
+        return None
+
+    # Remove @ if present
+    handle = handle.lstrip('@')
+
+    try:
+        response = requests.get(
+            "https://www.googleapis.com/youtube/v3/channels",
+            params={
+                'key': YOUTUBE_API_KEY,
+                'forHandle': handle,
+                'part': 'id'
+            },
+            timeout=15
+        )
+        data = response.json()
+        items = data.get('items', [])
+        if items:
+            return items[0]['id']
+    except Exception as e:
+        print(f"Error resolving handle {handle}: {e}")
+    return None
+
+def get_youtube_trending_tech(limit=3):
+    """Fetches trending tech/programming videos from YouTube."""
+    if not YOUTUBE_API_KEY:
+        print("⚠️ YOUTUBE_API_KEY not set, skipping YouTube trending")
+        return []
+
+    print(f"📡 Fetching top {limit} trending tech videos from YouTube...")
+
+    # Search for videos from last 7 days
+    published_after = (datetime.datetime.utcnow() - datetime.timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+    keywords = ["programming tutorial", "tech news", "coding", "AI machine learning"]
+    videos = []
+
+    for keyword in keywords:
+        try:
+            response = requests.get(
+                "https://www.googleapis.com/youtube/v3/search",
+                params={
+                    'key': YOUTUBE_API_KEY,
+                    'q': keyword,
+                    'part': 'snippet',
+                    'order': 'viewCount',
+                    'type': 'video',
+                    'publishedAfter': published_after,
+                    'maxResults': 5,
+                    'relevanceLanguage': 'en'
+                },
+                timeout=15
+            )
+            data = response.json()
+
+            for item in data.get('items', []):
+                snippet = item['snippet']
+                video_id = item['id']['videoId']
+                video_url = f"https://www.youtube.com/watch?v={video_id}"
+
+                # Avoid duplicates
+                if any(v['url'] == video_url for v in videos):
+                    continue
+
+                videos.append({
+                    'title': snippet['title'],
+                    'url': video_url,
+                    'channel': snippet['channelTitle'],
+                    'description': snippet['description'],
+                    'published_at': snippet['publishedAt'],
+                    'source': 'youtube_trending'
+                })
+        except Exception as e:
+            print(f"Error searching YouTube for '{keyword}': {e}")
+
+    print(f"✅ Found {len(videos[:limit])} trending tech videos")
+    return videos[:limit]
+
+def summarize_youtube_video(video_info):
+    """Summarizes a YouTube video based on title and description."""
+    system_prompt = """
+    You are an expert tech editor for a bilingual blog covering YouTube tech videos.
+    1. Analyze the video information.
+    2. Output a concise summary in English and Chinese.
+    3. STRICTLY use Markdown formatting.
+    4. Highlight: what the video covers, key topics, why it's worth watching.
+    5. Structure:
+       ### 🎬 [Video Title]
+       **Channel:** [Channel Name]
+       * What the video covers
+       * Key topics discussed
+       * Why it's worth watching
+
+       ### 🎬 [Video Title in Chinese or keep original]
+       **频道:** [Channel Name]
+       * 视频内容概述
+       * 主要话题
+       * 为何值得观看
+    """
+
+    user_prompt = f"""
+Video Title: {video_info['title']}
+Channel: {video_info['channel']}
+Description: {video_info['description']}
+Published: {video_info['published_at']}
+"""
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            temperature=0.3
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"AI Generation Error: {e}")
+        return None
 
 def fetch_github_readme(url):
     """Fetches README content from GitHub repository using raw API."""
@@ -252,8 +447,10 @@ Description: {repo_info.get('description', 'No description')}
         print(f"AI Generation Error: {e}")
         return None
 
-def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries):
+def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries, youtube_summaries=None):
     """Saves to _posts/ folder with Jekyll Frontmatter. Appends if file exists."""
+    if youtube_summaries is None:
+        youtube_summaries = []
 
     today = datetime.datetime.now()
     date_filename = today.strftime("%Y-%m-%d")
@@ -267,7 +464,8 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
     total_hn = len(hn_summaries)
     total_trending = len(github_trending_summaries)
     total_fast = len(github_fast_summaries)
-    description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目。"
+    total_youtube = len(youtube_summaries)
+    description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects, {total_youtube} YouTube videos. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目，{total_youtube}个YouTube视频。"
 
     if os.path.exists(filename):
         # Append new content to existing file
@@ -283,7 +481,11 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
                 f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
                 for summary in github_fast_summaries:
                     f.write(summary + "\n\n---\n\n")
-        total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries)
+            if youtube_summaries:
+                f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n---\n\n")
+                for summary in youtube_summaries:
+                    f.write(summary + "\n\n---\n\n")
+        total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries) + len(youtube_summaries)
         print(f"✅ Appended {total} new articles to: {filename}")
     else:
         frontmatter = f"""---
@@ -291,17 +493,17 @@ layout: post
 title: "Daily Tech Digest: {display_date}"
 date: {date_filename}
 description: "{description}"
-categories: [AI, News, GitHub]
-tags: [HackerNews, GitHub, Trending, Bilingual]
+categories: [AI, News, GitHub, YouTube]
+tags: [HackerNews, GitHub, Trending, YouTube, Bilingual]
 author: "AI Editor"
 ---
 
 ## 📅 Daily Trends / 每日动态
 *Generated by AI, Curated for Developers.*
 
-Today's highlights include top stories from Hacker News, trending GitHub repositories, and fast-moving new projects.
+Today's highlights include top stories from Hacker News, trending GitHub repositories, fast-moving new projects, and tech videos from YouTube.
 
-今日精选包括黑客新闻热门文章、GitHub 热门仓库以及快速崛起的新项目。
+今日精选包括黑客新闻热门文章、GitHub 热门仓库、快速崛起的新项目以及 YouTube 技术视频。
 
 ---
 
@@ -321,6 +523,10 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
                 f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n---\n\n")
                 for summary in github_fast_summaries:
                     f.write(summary + "\n\n---\n\n")
+            if youtube_summaries:
+                f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n---\n\n")
+                for summary in youtube_summaries:
+                    f.write(summary + "\n\n---\n\n")
         print(f"✅ Created new post: {filename}")
 
 def get_processed_urls():
@@ -335,9 +541,10 @@ def get_processed_urls():
     processed = set()
     with open(filename, "r", encoding="utf-8") as f:
         content = f.read()
-        # Extract URLs from "Read Original" and "View Repository" links
+        # Extract URLs from "Read Original", "View Repository", and "Watch Video" links
         urls = re.findall(r'\[Read Original / 阅读原文\]\((https?://[^\)]+)\)', content)
         urls += re.findall(r'\[View Repository / 查看仓库\]\((https?://[^\)]+)\)', content)
+        urls += re.findall(r'\[Watch Video / 观看视频\]\((https?://[^\)]+)\)', content)
         processed.update(urls)
     return processed
 
@@ -414,8 +621,49 @@ if __name__ == "__main__":
         if len(github_fast_content) >= 2:
             break
 
+    # --- YouTube Channel Videos ---
+    youtube_content = []
+    channel_videos = get_youtube_channel_videos(YOUTUBE_CHANNELS, limit=3)
+
+    for video in channel_videos:
+        url = video['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {video['title']}")
+            continue
+
+        print(f"Processing YouTube Channel: {video['title']}")
+        summary = summarize_youtube_video(video)
+
+        if summary:
+            formatted = f"{summary}\n\n**[Watch Video / 观看视频]({url})**"
+            youtube_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(youtube_content) >= 3:
+            break
+
+    # --- YouTube Trending Tech ---
+    trending_videos = get_youtube_trending_tech(limit=5)
+
+    for video in trending_videos:
+        url = video['url']
+        if url in processed_urls:
+            print(f"⏭️ Skipping (already processed): {video['title']}")
+            continue
+
+        print(f"Processing YouTube Trending: {video['title']}")
+        summary = summarize_youtube_video(video)
+
+        if summary:
+            formatted = f"{summary}\n\n**[Watch Video / 观看视频]({url})**"
+            youtube_content.append(formatted)
+            processed_urls.add(url)
+
+        if len(youtube_content) >= 5:  # 3 channel + 2 trending = 5 total
+            break
+
     # --- Save Results ---
-    if hn_content or github_trending_content or github_fast_content:
-        save_to_markdown(hn_content, github_trending_content, github_fast_content)
+    if hn_content or github_trending_content or github_fast_content or youtube_content:
+        save_to_markdown(hn_content, github_trending_content, github_fast_content, youtube_content)
     else:
         print("ℹ️ No new content to add")
