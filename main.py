@@ -518,6 +518,7 @@ def fetch_github_readme(url):
     """Fetches README content from GitHub repository using raw API."""
     match = re.match(r'https?://github\.com/([^/]+)/([^/]+)/?', url)
     if not match:
+        print(f"⚠️ Could not parse GitHub URL: {url}")
         return None, None
     owner, repo = match.groups()
     repo = repo.split('#')[0].split('?')[0]  # Remove fragments/query params
@@ -531,17 +532,21 @@ def fetch_github_readme(url):
         try:
             response = requests.get(raw_url, headers=headers, timeout=10)
             if response.status_code == 200 and len(response.text) > 100:
+                print(f"✅ Fetched README from {raw_url}")
                 return response.text, f"{owner}/{repo}"
-        except:
+        except Exception as e:
             pass
         # Try master branch as fallback
         raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/master/{readme}"
         try:
             response = requests.get(raw_url, headers=headers, timeout=10)
             if response.status_code == 200 and len(response.text) > 100:
+                print(f"✅ Fetched README from {raw_url}")
                 return response.text, f"{owner}/{repo}"
-        except:
+        except Exception as e:
             pass
+
+    print(f"⚠️ Could not find README for {owner}/{repo}")
     return None, None
 
 def fetch_from_rss(url):
@@ -597,6 +602,9 @@ def fetch_article_content(url):
         content, title = fetch_github_readme(url)
         if content:
             return content, title
+        # Don't try to parse GitHub HTML - it won't work
+        print(f"⚠️ Could not fetch README for GitHub repo: {url}")
+        return None, None
 
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
 
@@ -697,6 +705,9 @@ def summarize_from_title(title, url):
 
 def summarize_github_repo(repo_info, readme_content):
     """Summarizes a GitHub repository with its metadata."""
+    if not readme_content or len(readme_content) < 100:
+        print(f"⚠️ No README content for {repo_info['title']}, using metadata only")
+
     content_snippet = readme_content[:10000] if readme_content else ""
 
     system_prompt = """
@@ -705,7 +716,8 @@ def summarize_github_repo(repo_info, readme_content):
     2. Output a concise summary in English and Chinese.
     3. STRICTLY use Markdown formatting.
     4. Highlight: what it does, key features, why it's trending/notable.
-    5. Structure:
+    5. If README content is missing or empty, base your summary on the metadata only.
+    6. Structure:
        ### [Repo Name] - [Brief English Description]
        * What it does
        * Key features
