@@ -1,21 +1,111 @@
-title: "Bilingual AI Trends"
-description: "Daily summaries of Hacker News and AI trends in English and Chinese."
-author: "AI Editor"
-email: your-email@example.com
+theme: jekyll-theme-chirpy
 
-# URL Settings for GitHub Pages
+lang: en
+
+timezone: Asia/Shanghai
+
+title: AIBrew
+
+tagline: Daily AI & Tech Digest in English and Chinese
+
+description: >-
+  Bilingual daily digest of Hacker News, GitHub trending, Hugging Face models, and YouTube tech videos.
+
 url: "https://alanhou.github.io"
 baseurl: "/aibrew"
 
-# Build settings
-markdown: kramdown
-remote_theme: jekyll/minima
+github:
+  username: alanhou
 
-# Show excerpts on home page
-show_excerpts: true
-excerpt_separator: "---"
+social:
+  name: AIBrew
+  email:
+  links:
+    - https://github.com/alanhou/aibrew
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-remote-theme
+# Web Analytics - leave empty to disable
+google_analytics:
+  id:
+
+theme_mode: # [light | dark]
+
+# The CDN endpoint for media resources
+cdn:
+
+avatar:
+
+toc: true
+
+comments:
+  provider: # [disqus | utterances | giscus]
+
+# Self-hosted static assets
+assets:
+  self_host:
+    enabled: false
+
+pwa:
+  enabled: true
+
+paginate: 10
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    block:
+      line_numbers: true
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _tabs
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - main.py
+  - __pycache__
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
