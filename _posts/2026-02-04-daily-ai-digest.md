@@ -713,3 +713,441 @@ Claude-Mem 是 Claude Code 的插件,可自动捕获 Claude 在编码会话期�
 
 ---
 
+### Ghidra MCP Server: AI-Powered Reverse Engineering Bridge
+
+* **Production-ready MCP server** connecting Ghidra's reverse engineering capabilities with AI tools (Claude, etc.) via Model Context Protocol
+* **110 comprehensive tools** covering function analysis, decompilation, memory mapping, data structures, cross-references, and batch operations
+* **Cross-binary documentation system** using SHA-256 function hashing to propagate analysis across binary versions
+* **Multi-transport support** with stdio (for AI tools) and SSE (for web clients), plus automated build-test-deploy pipeline
+* **Requirements**: Java 21 LTS, Maven 3.9+, Ghidra 12.0.2, Python 3.8+ with 14 Ghidra JAR dependencies (~37MB)
+* **Architecture**: Python MCP bridge translates protocol to HTTP REST calls to Ghidra plugin (localhost:8080)
+* **Key features**: Real-time analysis, atomic transactions, 93% API call reduction via batching, 70+ automation scripts
+* **Installation**: Clone repo → install Python deps → copy Ghidra libs → build with Maven → deploy to Ghidra Extensions
+* **Usage**: Start MCP bridge (stdio/SSE), launch Ghidra, load binary, enable "Tools > GhidraMCP > Start MCP Server"
+* **API categories**: Core ops, function analysis, memory/data, cross-binary docs, data types, symbols, renaming, type system, script management, multi-program support, analysis tools
+
+### Ghidra MCP 服务器：AI 驱动的逆向工程桥接工具
+
+* **生产级 MCP 服务器**，通过模型上下文协议将 Ghidra 逆向工程能力与 AI 工具（Claude 等）连接
+* **110 个综合工具**，涵盖函数分析、反编译、内存映射、数据结构、交叉引用和批量操作
+* **跨二进制文档系统**，使用 SHA-256 函数哈希在不同二进制版本间传播分析结果
+* **多传输支持**，包括 stdio（用于 AI 工具）和 SSE（用于 Web 客户端），以及自动化构建-测试-部署流程
+* **环境要求**：Java 21 LTS、Maven 3.9+、Ghidra 12.0.2、Python 3.8+，需要 14 个 Ghidra JAR 依赖（约 37MB）
+* **架构设计**：Python MCP 桥接器将协议转换为 HTTP REST 调用，连接到 Ghidra 插件（localhost:8080）
+* **核心特性**：实时分析、原子事务、通过批处理减少 93% API 调用、70+ 自动化脚本
+* **安装步骤**：克隆仓库 → 安装 Python 依赖 → 复制 Ghidra 库 → Maven 构建 → 部署到 Ghidra 扩展目录
+* **使用方法**：启动 MCP 桥接器（stdio/SSE）、启动 Ghidra、加载二进制文件、启用"工具 > GhidraMCP > 启动 MCP 服务器"
+* **API 分类**：核心操作、函数分析、内存/数据、跨二进制文档、数据类型、符号、重命名、类型系统、脚本管理、多程序支持、分析工具
+
+**[Read Original / 阅读原文](https://github.com/bethington/ghidra-mcp)**
+
+<!-- [Title-Only] -->
+### Brazilian Micro-SaaS Map
+
+**Note: This introduction is based solely on the title, as the article content could not be fetched.**
+
+* This article likely presents a curated collection or visual map of micro-SaaS (Software as a Service) businesses operating in or originating from Brazil. It probably showcases small-scale SaaS companies, solo founders, or bootstrapped projects that serve niche markets within the Brazilian tech ecosystem.
+
+* **Why it might be interesting to readers:**
+  - Provides insight into Brazil's growing startup and SaaS ecosystem
+  - Offers inspiration for aspiring micro-SaaS founders looking for niche opportunities
+  - May reveal market gaps and successful business models in Latin America
+  - Could serve as a networking resource for connecting with Brazilian SaaS entrepreneurs
+  - Demonstrates the global nature of the micro-SaaS movement beyond Silicon Valley
+
+---
+
+### 巴西微型 SaaS 地图
+
+**注意：由于无法获取文章内容，以下介绍仅基于标题推测。**
+
+* 这篇文章可能展示了一个精心策划的巴西微型 SaaS（软件即服务）企业的集合或可视化地图。它很可能展示了在巴西运营或起源于巴西的小规模 SaaS 公司、独立创始人或自力更生的项目，这些项目服务于巴西科技生态系统中的细分市场。
+
+* **为何值得关注：**
+  - 深入了解巴西不断增长的创业和 SaaS 生态系统
+  - 为有志于创建微型 SaaS 的创业者提供灵感，帮助发现细分市场机会
+  - 可能揭示拉丁美洲市场的空白和成功的商业模式
+  - 可作为与巴西 SaaS 企业家建立联系的网络资源
+  - 展示了微型 SaaS 运动在硅谷之外的全球化特征
+
+**[Read Original / 阅读原文](https://saas-map.ssr.trapiche.cloud/)**
+
+### The Mathematics of Tuning Systems
+
+**Summary of John Baez's exploration of musical tuning systems and their mathematical foundations**
+
+* **Core Concept**: Tuning systems determine frequency ratios between pitches in a scale, with different musical styles requiring different mathematical approaches to tuning
+* **Piano Keyboard Structure**: The 12-note pattern (7 white keys + 5 black keys) is musically significant, not arbitrary, forming three nested scales (5-note, 7-note, and 12-note)
+* **12-Tone Equal Temperament**: The dominant system since ~1850, dividing octaves into 12 equal parts where each note is 2^(1/12) times the previous note's frequency
+* **Why 12 Notes?**: The number 12 provides the best approximation to the crucial 3/2 frequency ratio (the "fifth") among scales with fewer than 29 notes
+* **Pythagorean Tuning**: An earlier system using only rational numbers built from powers of 2 and 3, seeking perfect 3/2 ratios for fifths
+* **The Pythagorean Comma**: The unavoidable discrepancy (≈1.0136) that arises because (3/2)^12 ≠ 2^7, creating a "lump in the carpet"
+* **The Tritone ("Devil in Music")**: The problematic interval halfway through the scale, mathematically related to √2 being irrational
+* **Wolf Fifth**: In Pythagorean tuning, one fifth sounds noticeably dissonant due to where the Pythagorean comma is placed
+* **Historical Evolution**: As thirds became more important in 1300s music, Pythagorean tuning's complex fractions (like 81/64 instead of 5/4) became problematic
+
+### 调音系统的数学原理
+
+**John Baez对音乐调音系统及其数学基础的探索总结**
+
+* **核心概念**:调音系统决定音阶中音高之间的频率比,不同的音乐风格需要不同的数学调音方法
+* **钢琴键盘结构**:12音符模式(7个白键+5个黑键)具有音乐意义而非任意设计,形成三个嵌套音阶(5音、7音和12音)
+* **十二平均律**:自1850年左右以来的主导系统,将八度音程分为12个相等部分,每个音符是前一个音符频率的2^(1/12)倍
+* **为什么是12个音符?**:在少于29个音符的音阶中,12提供了对关键的3/2频率比("五度音")的最佳近似
+* **毕达哥拉斯调音**:早期系统,仅使用由2和3的幂次构建的有理数,追求五度音的完美3/2比率
+* **毕达哥拉斯音差**:不可避免的差异(≈1.0136),因为(3/2)^12 ≠ 2^7,在调音中产生"地毯上的凸起"
+* **三全音("音乐中的魔鬼")**:音阶中间的问题音程,在数学上与√2是无理数相关
+* **狼五度**:在毕达哥拉斯调音中,由于毕达哥拉斯音差的位置,有一个五度音听起来明显不和谐
+* **历史演变**:随着三度音在14世纪音乐中变得更重要,毕达哥拉斯调音的复杂分数(如81/64而非5/4)成为问题
+
+**[Read Original / 阅读原文](https://math.ucr.edu/home/baez/tuning_talk/)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### Claude Code PM - AI-Powered Project Management System for Parallel Development
+
+**What it does:**
+* Transforms Product Requirements Documents (PRDs) into executable GitHub issues through a structured 5-phase workflow
+* Enables multiple AI agents to work in parallel on different tasks using Git worktrees
+* Maintains full traceability from requirements to production code with persistent context across sessions
+* Integrates deeply with GitHub Issues as a single source of truth for team collaboration
+
+**Key features:**
+* **Spec-driven development**: "No vibe coding" - every line traces back to documented specifications
+* **Parallel execution**: Multiple Claude Code agents work simultaneously on decomposed tasks within the same issue
+* **Comprehensive command system**: 30+ commands covering PRD creation, epic planning, task decomposition, and GitHub synchronization
+* **Human-AI collaboration**: Seamless handoffs between AI agents and human developers through GitHub's native interface
+* **Context preservation**: Specialized agents maintain project context across sessions using structured `.claude/` directory architecture
+
+**Why it's notable:**
+* **Velocity multiplier**: Transforms sequential development into parallel streams (e.g., 3 issues → 12 parallel work streams)
+* **Battle-tested system**: Production-proven workflow that eliminates context loss, requirement drift, and invisible progress
+* **Team scalability**: Breaks AI-assisted development out of silos, enabling distributed teams and multiple Claude instances to collaborate
+* **384 stars in one day**: Rapid adoption signals strong demand for structured AI development workflows
+* **Open collaboration protocol**: Not just a tool but a methodology for human-AI teamwork at scale
+
+---
+
+### Claude Code PM - 基于 AI 的并行开发项目管理系统
+
+**功能介绍:**
+* 通过结构化的 5 阶段工作流将产品需求文档(PRD)转化为可执行的 GitHub Issues
+* 使用 Git worktrees 实现多个 AI 代理并行处理不同任务
+* 从需求到生产代码保持完整的可追溯性,跨会话保持持久化上下文
+* 深度集成 GitHub Issues 作为团队协作的单一事实来源
+
+**主要特点:**
+* **规范驱动开发**: "拒绝凭感觉编码" - 每行代码都可追溯到文档化的规范
+* **并行执行**: 多个 Claude Code 代理在同一 issue 内同时处理分解后的任务
+* **全面的命令系统**: 30+ 条命令覆盖 PRD 创建、史诗规划、任务分解和 GitHub 同步
+* **人机协作**: 通过 GitHub 原生界面实现 AI 代理与人类开发者之间的无缝交接
+* **上下文保留**: 专用代理通过结构化的 `.claude/` 目录架构跨会话维护项目上下文
+
+**为何值得关注:**
+* **速度倍增器**: 将串行开发转变为并行流(例如:3 个 issues → 12 个并行工作流)
+* **实战验证系统**: 经生产环境验证的工作流,消除上下文丢失、需求漂移和进度不透明问题
+* **团队可扩展性**: 打破 AI 辅助开发的孤岛,使分布式团队和多个 Claude 实例能够协作
+* **单日获得 384 星**: 快速采用表明市场对结构化 AI 开发工作流的强烈需求
+* **开放协作协议**: 不仅是工具,更是大规模人机团队协作的方法论
+
+**[View Repository / 查看仓库](https://github.com/automazeio/ccpm)**
+
+### Superpowers - An Agentic Skills Framework for AI Coding Agents
+
+**What it does**
+* Provides a complete software development workflow system for AI coding agents (Claude Code, Codex, OpenCode)
+* Transforms how AI agents approach coding by enforcing structured processes instead of jumping straight into implementation
+* Guides agents through brainstorming → design approval → planning → subagent-driven development → testing → code review → merging
+* Enables autonomous development sessions where Claude can work for hours without deviating from the approved plan
+
+**Key features**
+* **Composable Skills Library**: 15+ pre-built skills covering testing (TDD), debugging (systematic root-cause analysis), collaboration (brainstorming, planning, code review), and git workflows (worktrees, branch management)
+* **Subagent-Driven Development**: Dispatches fresh subagents per task with two-stage review (spec compliance + code quality)
+* **Enforced TDD Workflow**: RED-GREEN-REFACTOR cycle that literally deletes code written before tests
+* **Automatic Skill Activation**: Skills trigger automatically based on context - agents check for relevant workflows before any task
+* **Human-in-the-Loop Checkpoints**: Design approval, batch execution reviews, and merge decisions keep humans in control
+* **Plugin System**: Easy installation via Claude Code marketplace; manual setup for Codex/OpenCode
+
+**Why it's notable**
+* **Viral Growth**: 998 stars in a single day indicates massive developer interest in structured AI agent workflows
+* **Solves Real Pain Points**: Addresses common AI coding failures (skipping tests, poor planning, context drift) with mandatory processes
+* **Production-Ready Methodology**: Emphasizes YAGNI, DRY, and evidence-based verification over agent "claims"
+* **Extensible Architecture**: Developers can write custom skills following the `writing-skills` guide
+* **Battle-Tested Philosophy**: Built on decades of software engineering best practices (TDD, systematic debugging, code review)
+* **Multi-Platform Support**: Works across major AI coding platforms with platform-specific installation guides
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+**功能介绍**
+* 为 AI 编码代理（Claude Code、Codex、OpenCode）提供完整的软件开发工作流系统
+* 改变 AI 代理的编码方式，强制执行结构化流程而非直接开始实现
+* 引导代理完成：头脑风暴 → 设计审批 → 规划 → 子代理驱动开发 → 测试 → 代码审查 → 合并
+* 支持自主开发会话，Claude 可以连续工作数小时而不偏离已批准的计划
+
+**主要特点**
+* **可组合技能库**：15+ 个预构建技能，涵盖测试（TDD）、调试（系统化根因分析）、协作（头脑风暴、规划、代码审查）和 Git 工作流（worktrees、分支管理）
+* **子代理驱动开发**：为每个任务分派新的子代理，进行两阶段审查（规范合规性 + 代码质量）
+* **强制 TDD 工作流**：RED-GREEN-REFACTOR 循环，会直接删除在测试之前编写的代码
+* **自动技能激活**：技能根据上下文自动触发 - 代理在执行任何任务前检查相关工作流
+* **人工检查点**：设计审批、批量执行审查和合并决策让人类保持控制权
+* **插件系统**：通过 Claude Code 市场轻松安装；Codex/OpenCode 支持手动设置
+
+**为何值得关注**
+* **病毒式增长**：单日获得 998 星标，表明开发者对结构化 AI 代理工作流有巨大需求
+* **解决实际痛点**：通过强制流程解决常见的 AI 编码失败问题（跳过测试、规划不足、上下文漂移）
+* **生产就绪方法论**：强调 YAGNI、DRY 和基于证据的验证，而非代理的"声称"
+* **可扩展架构**：开发者可以按照 `writing-skills` 指南编写自定义技能
+* **经过实战检验的理念**：基于数十年软件工程最佳实践（TDD、系统化调试、代码审查）
+* **多平台支持**：支持主流 AI 编码平台，提供针对各平台的安装指南
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### awesome-ai-research-writing - A Curated Collection of AI-Powered Academic Writing Prompts and Agent Skills
+
+* **What it does**: Provides battle-tested prompt templates and agent skills specifically designed for AI research paper writing, covering translation, polishing, logic checking, and experimental analysis scenarios.
+
+* **Key features**:
+  - **Comprehensive Prompt Library**: Ready-to-use prompts for Chinese-to-English translation, text expansion/compression, expression polishing, "AI flavor" removal, and reviewer-perspective analysis
+  - **Agent Skills Integration**: Practical tutorials and curated skills for leveraging AI agents in academic writing workflows
+  - **Production-Ready Quality**: All prompts are refined by researchers from top institutions (MSRA, ByteDance Seed, Shanghai AI Lab) and PhD students from Peking University, USTC, and Shanghai Jiao Tong University
+  - **LaTeX-Optimized**: Special attention to LaTeX formatting, character escaping, and academic writing conventions
+  - **Bilingual Support**: Handles both English and Chinese academic writing scenarios, including Word-specific optimizations
+
+* **Why it's notable**: Addresses a critical inequality in academic research—while top research groups have sophisticated prompt libraries, most researchers start from scratch. With 2,911 stars, this repository democratizes access to professional-grade AI writing tools, eliminating the need for repetitive prompt debugging and allowing researchers to focus on actual research. The prompts are meticulously designed with role definitions, constraints, execution protocols, and self-checking mechanisms to ensure publication-quality output.
+
+---
+
+### awesome-ai-research-writing - AI 驱动的学术论文写作提示词与智能体技能精选集
+
+* **功能介绍**: 提供经过实战验证的提示词模板和智能体技能，专门用于 AI 研究论文写作，涵盖翻译、润色、逻辑检查和实验分析等场景。
+
+* **主要特点**:
+  - **全面的提示词库**: 开箱即用的提示词，包括中英互译、文本扩写/缩写、表达润色、去除"AI 味"、审稿人视角分析等
+  - **智能体技能集成**: 提供实用教程和精选技能，帮助在学术写作工作流中利用 AI 智能体
+  - **生产级质量**: 所有提示词均由顶尖研究机构(微软亚洲研究院、字节跳动 Seed、上海人工智能实验室)的研究员以及北大、中科大、上交的博士生打磨
+  - **LaTeX 优化**: 特别关注 LaTeX 格式、字符转义和学术写作规范
+  - **双语支持**: 同时处理英文和中文学术写作场景,包括针对 Word 的专门优化
+
+* **为何值得关注**: 解决了学术研究中的关键不平等问题——顶尖研究组拥有完善的提示词库,而大多数研究者还在从零摸索。该项目获得 2,911 星标,将专业级 AI 写作工具普及化,消除重复调试提示词的时间浪费,让研究者专注于真正的科研工作。提示词设计精细,包含角色定义、约束条件、执行协议和自检机制,确保输出达到出版质量标准。
+
+**[View Repository / 查看仓库](https://github.com/Leey21/awesome-ai-research-writing)**
+
+### OpenClawInstaller - One-Click Deployment Tool for Private AI Assistant
+
+**What it does:**
+* Automated installer for OpenClaw, a private AI assistant that runs on your own infrastructure
+* Provides interactive configuration wizard for setting up AI models (Claude, GPT, Gemini, Ollama, etc.) and messaging channels (Telegram, Discord, WhatsApp, Feishu, WeChat, iMessage)
+* Manages the complete lifecycle: installation, configuration, service management, and monitoring
+
+**Key features:**
+* **Multi-Model Support**: Integrates with Anthropic Claude, OpenAI GPT, Google Gemini, OpenRouter, Groq, Mistral AI, and local Ollama deployments with custom API endpoint support
+* **Multi-Channel Integration**: Connects to 7+ messaging platforms including Telegram, Discord, WhatsApp, Slack, WeChat, iMessage (macOS), and Feishu
+* **Desktop GUI Alternative**: Offers OpenClaw Manager - a modern Tauri-based desktop app with real-time monitoring dashboard
+* **Advanced Capabilities**: Persistent memory across conversations/platforms, proactive notifications, custom skill system via Markdown files, remote system control
+* **One-Command Installation**: Single curl command deploys entire stack with automatic dependency detection and service startup
+* **Interactive Config Menu**: Terminal-based UI for managing AI providers, channels, testing connections, and diagnostics
+
+**Why it's notable:**
+* Simplifies complex AI assistant deployment to a single command - addresses the barrier of self-hosting personal AI agents
+* Trending with 1,146 stars due to growing demand for privacy-focused AI alternatives that don't rely on cloud services
+* Comprehensive security features (sandbox mode, permission controls, user whitelisting) with explicit warnings about system access risks
+* Supports both GUI (desktop app) and CLI workflows, catering to different user preferences
+* Active development with detailed documentation for each messaging platform integration
+* Enables "AI assistant as infrastructure" - users can run their own Claude/GPT-powered bot with full control over data and capabilities
+
+---
+
+### OpenClawInstaller - 私人 AI 助手一键部署工具
+
+**功能介绍:**
+* OpenClaw 的自动化安装程序，可在自有基础设施上运行私人 AI 助手
+* 提供交互式配置向导，用于设置 AI 模型（Claude、GPT、Gemini、Ollama 等）和消息渠道（Telegram、Discord、WhatsApp、飞书、微信、iMessage）
+* 管理完整生命周期：安装、配置、服务管理和监控
+
+**主要特点:**
+* **多模型支持**: 集成 Anthropic Claude、OpenAI GPT、Google Gemini、OpenRouter、Groq、Mistral AI 和本地 Ollama 部署，支持自定义 API 端点
+* **多渠道集成**: 连接 7+ 个消息平台，包括 Telegram、Discord、WhatsApp、Slack、微信、iMessage（macOS）和飞书
+* **桌面 GUI 替代方案**: 提供 OpenClaw Manager - 基于 Tauri 的现代桌面应用，带实时监控仪表盘
+* **高级能力**: 跨对话/平台的持久记忆、主动通知推送、通过 Markdown 文件定义的自定义技能系统、远程系统控制
+* **一键安装**: 单条 curl 命令部署整个技术栈，自动检测依赖并启动服务
+* **交互式配置菜单**: 基于终端的 UI，用于管理 AI 提供商、渠道、测试连接和诊断
+
+**为何值得关注:**
+* 将复杂的 AI 助手部署简化为单条命令 - 解决了自托管个人 AI 代理的门槛问题
+* 凭借 1,146 星标成为热门项目，反映了对注重隐私的 AI 替代方案（不依赖云服务）的需求增长
+* 全面的安全功能（沙箱模式、权限控制、用户白名单），并明确警告系统访问风险
+* 同时支持 GUI（桌面应用）和 CLI 工作流，满足不同用户偏好
+* 活跃开发，为每个消息平台集成提供详细文档
+* 实现"AI 助手即基础设施" - 用户可运行自己的 Claude/GPT 驱动机器人，完全控制数据和功能
+
+**[View Repository / 查看仓库](https://github.com/miaoxworld/OpenClawInstaller)**
+
+
+## 🎬 YouTube Tech Videos / YouTube 技术视频
+
+### 🎬 How to give your kid an unfair advantage
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** This episode explores strategic approaches to parenting in the age of AI and rapidly evolving technology, focusing on how to prepare children for future success in an uncertain world.
+
+* **Key topics discussed:** 
+  - Parenting strategies for the AI era
+  - Skills and mindsets children need for future work environments
+  - Balancing traditional education with emerging technological competencies
+  - Practical advice for giving children competitive advantages in their careers and lives
+
+* **Why it's worth watching:** Essential viewing for parents concerned about preparing their children for a future dominated by AI and automation. Lenny's Podcast brings thoughtful, research-backed insights on navigating the intersection of parenting, technology, and career development, offering actionable strategies rather than just theoretical discussion.
+
+---
+
+### 🎬 如何给你的孩子不公平的优势
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 本期节目探讨在人工智能时代的战略性育儿方法，重点关注如何让孩子为不确定世界中的未来成功做好准备。
+
+* **主要话题:**
+  - 人工智能时代的育儿策略
+  - 孩子在未来工作环境中需要的技能和思维方式
+  - 在传统教育与新兴技术能力之间取得平衡
+  - 为孩子在职业和生活中提供竞争优势的实用建议
+
+* **为何值得观看:** 对于关心如何让孩子为人工智能和自动化主导的未来做好准备的父母来说，这是必看内容。Lenny's Podcast 提供了关于育儿、技术和职业发展交叉领域的深思熟虑、有研究支持的见解，提供可操作的策略而非仅仅理论讨论。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_K7fleyVKd8)**
+
+### 🎬 OpenClaw Full Tutorial for Beginners – How to Set Up and Use OpenClaw (ClawdBot / MoltBot)
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This comprehensive tutorial introduces OpenClaw, a proactive autonomous agent and messaging gateway system. The course walks beginners through the complete setup process and demonstrates practical usage of OpenClaw, including its ClawdBot and MoltBot implementations.
+
+* **Key topics discussed:** 
+  - Understanding OpenClaw's architecture as an autonomous agent
+  - Step-by-step installation and configuration guide
+  - Setting up ClawdBot and MoltBot functionalities
+  - Messaging gateway integration and automation
+  - Practical examples and use cases for autonomous agent deployment
+
+* **Why it's worth watching:** Perfect for developers and tech enthusiasts looking to explore autonomous agent technology. FreeCodeCamp delivers a beginner-friendly, hands-on approach to understanding and implementing OpenClaw, making complex AI agent concepts accessible. Essential viewing for anyone interested in building proactive automation systems or exploring the latest in AI-powered messaging solutions.
+
+---
+
+### 🎬 OpenClaw 完整新手教程 – 如何设置和使用 OpenClaw (ClawdBot / MoltBot)
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 这个综合教程介绍了 OpenClaw，一个主动式自主代理和消息网关系统。课程为初学者详细讲解完整的设置过程，并演示 OpenClaw 的实际使用方法，包括 ClawdBot 和 MoltBot 的实现。
+
+* **主要话题:**
+  - 理解 OpenClaw 作为自主代理的架构
+  - 分步安装和配置指南
+  - 设置 ClawdBot 和 MoltBot 功能
+  - 消息网关集成和自动化
+  - 自主代理部署的实际案例和应用场景
+
+* **为何值得观看:** 非常适合想要探索自主代理技术的开发者和技术爱好者。FreeCodeCamp 提供了适合初学者的实践方法来理解和实现 OpenClaw，使复杂的 AI 代理概念变得易于理解。对于任何想要构建主动自动化系统或探索最新 AI 驱动消息解决方案的人来说，这是必看的教程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=n1sfrc-RjyM)**
+
+### 🎬 Learn coding like playing a game
+
+**Channel:** SetupsAI
+
+* **What the video covers:** This video introduces gamified approaches to learning programming, making coding education more engaging and interactive through game-like experiences.
+
+* **Key topics discussed:** 
+  - Gamification techniques for coding education
+  - Interactive learning platforms that transform programming into gameplay
+  - Methods to make coding practice more enjoyable and less intimidating for beginners
+  - Tools and resources that use game mechanics to teach development skills
+
+* **Why it's worth watching:** Perfect for beginners or anyone struggling with traditional coding tutorials. The video demonstrates how game-based learning can increase motivation, retention, and make the often-challenging journey of learning to code more accessible and fun. Ideal for educators, self-learners, and parents looking for engaging ways to introduce programming concepts.
+
+---
+
+### 🎬 像玩游戏一样学习编程
+
+**频道:** SetupsAI
+
+* **视频内容概述:** 本视频介绍了通过游戏化方式学习编程的方法，通过类似游戏的体验使编程教育变得更加有趣和互动。
+
+* **主要话题:**
+  - 编程教育的游戏化技巧
+  - 将编程转化为游戏玩法的互动学习平台
+  - 让编程练习更有趣、降低初学者门槛的方法
+  - 使用游戏机制教授开发技能的工具和资源
+
+* **为何值得观看:** 非常适合初学者或在传统编程教程中遇到困难的学习者。视频展示了基于游戏的学习如何提高学习动力和知识留存率，让学习编程这一充满挑战的过程变得更易上手且充满乐趣。对教育工作者、自学者以及希望以有趣方式引导孩子学习编程概念的家长来说都是理想选择。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YUT8BwETrTc)**
+
+### 🎬 Binary vs Fibonacci Search
+
+**Channel:** onjsdev
+
+* **What the video covers:** This video compares two search algorithms - Binary Search and Fibonacci Search - explaining how each approach works to find elements in sorted data structures.
+
+* **Key topics discussed:**
+  - Binary Search methodology: repeatedly halving the search range using division operations
+  - Fibonacci Search technique: splitting data using Fibonacci numbers instead of division
+  - Performance comparison between the two algorithms
+  - Trade-offs between computational efficiency and implementation complexity
+
+* **Why it's worth watching:** Essential for developers and computer science students who want to understand alternative search algorithms beyond the standard binary search. Particularly valuable for scenarios where division operations are costly or when optimizing search performance in specific hardware environments.
+
+---
+
+### 🎬 二分查找 vs 斐波那契查找
+
+**频道:** onjsdev
+
+* **视频内容概述:** 本视频对比了两种搜索算法——二分查找和斐波那契查找，详细解释了每种方法在有序数据结构中查找元素的工作原理。
+
+* **主要话题:**
+  - 二分查找方法：通过除法运算反复将搜索范围减半
+  - 斐波那契查找技术：使用斐波那契数列而非除法来分割数据
+  - 两种算法的性能对比
+  - 计算效率与实现复杂度之间的权衡
+
+* **为何值得观看:** 对于想要了解标准二分查找之外的替代搜索算法的开发者和计算机科学学生来说必看。特别适合在除法运算成本较高的场景，或在特定硬件环境中优化搜索性能时参考。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Qn8mFH6TipM)**
+
+### 🎬 My top 6 tips & ways of using Claude Code efficiently
+**Channel:** Academind
+
+* **What the video covers:** This tutorial focuses on optimizing your workflow with Claude Code, an agentic engineering tool. It provides practical strategies for maximizing efficiency and getting better results from the AI-powered coding assistant.
+
+* **Key topics discussed:** 
+  - Six essential tips for effective Claude Code usage
+  - Best practices for interacting with agentic engineering tools
+  - Techniques to improve code generation quality and accuracy
+  - Workflow optimization strategies for developers
+
+* **Why it's worth watching:** Whether you're new to Claude Code or already using it, this video offers actionable insights to enhance your productivity. Academind's practical approach helps developers avoid common pitfalls and leverage the tool's full potential for better coding outcomes.
+
+---
+
+### 🎬 高效使用 Claude Code 的 6 大技巧与方法
+**频道:** Academind
+
+* **视频内容概述:** 本教程重点介绍如何优化 Claude Code 的工作流程。Claude Code 是一款智能编程工具，视频提供了实用策略，帮助用户最大化效率并从这个 AI 驱动的编程助手中获得更好的结果。
+
+* **主要话题:**
+  - 高效使用 Claude Code 的六个核心技巧
+  - 与智能编程工具交互的最佳实践
+  - 提高代码生成质量和准确性的技术
+  - 面向开发者的工作流程优化策略
+
+* **为何值得观看:** 无论你是 Claude Code 的新手还是已经在使用它，这个视频都提供了可操作的见解来提升你的生产力。Academind 的实用方法帮助开发者避免常见陷阱，充分发挥工具的潜力，获得更好的编码成果。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WwdIYp5fuxY)**
+
