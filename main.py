@@ -801,25 +801,33 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
     filename = f"{output_dir}/{date_filename}-daily-ai-digest.md"
 
     if os.path.exists(filename):
+        # Read existing content to check which sections exist
+        with open(filename, "r", encoding="utf-8") as f:
+            existing_content = f.read()
+
         # Append new content to existing file
         with open(filename, "a", encoding="utf-8") as f:
             if hn_summaries:
                 for summary in hn_summaries:
                     f.write(summary + "\n\n")
             if github_trending_summaries:
-                f.write("\n## 🔥 GitHub Trending / GitHub 热门项目\n\n")
+                if "## 🔥 GitHub Trending" not in existing_content:
+                    f.write("\n## 🔥 GitHub Trending / GitHub 热门项目\n\n")
                 for summary in github_trending_summaries:
                     f.write(summary + "\n\n")
             if github_fast_summaries:
-                f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n")
+                if "## 🚀 Fast-Moving Repos" not in existing_content:
+                    f.write("\n## 🚀 Fast-Moving Repos / 快速崛起项目\n\n")
                 for summary in github_fast_summaries:
                     f.write(summary + "\n\n")
             if huggingface_summaries:
-                f.write("\n## 🤗 Hugging Face Trending / Hugging Face 热门\n\n")
+                if "## 🤗 Hugging Face Trending" not in existing_content:
+                    f.write("\n## 🤗 Hugging Face Trending / Hugging Face 热门\n\n")
                 for summary in huggingface_summaries:
                     f.write(summary + "\n\n")
             if youtube_summaries:
-                f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n")
+                if "## 🎬 YouTube Tech Videos" not in existing_content:
+                    f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n")
                 for summary in youtube_summaries:
                     f.write(summary + "\n\n")
 
