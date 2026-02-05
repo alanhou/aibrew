@@ -11,8 +11,8 @@ tagline: Daily AI & Tech Digest in English and Chinese
 description: >-
   Bilingual daily digest of Hacker News, GitHub trending, Hugging Face models, and YouTube tech videos.
 
-url: "https://alanhou.github.io"
-baseurl: "/aibrew"
+url: "https://aibrew.alanhou.org"
+baseurl: ""
 
 github:
   username: alanhou
