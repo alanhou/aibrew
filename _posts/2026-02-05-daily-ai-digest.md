@@ -532,3 +532,359 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=YUT8BwETrTc)**
 
+### Postgres Postmaster Scalability Bottleneck: A Deep Dive into High-Concurrency Connection Issues
+
+* **The Problem**: Recall.ai experienced mysterious 10-15 second delays when connecting to Postgres during peak loads, caused by the single-threaded postmaster process becoming overwhelmed
+* **Root Cause**: Postgres's postmaster process runs a single-threaded main loop that handles spawning/reaping backend connections and parallel workers - at ~1400 connections/sec on r8g.8xlarge, this saturates a single CPU core
+* **Unique Workload**: Recording millions of meetings weekly creates extreme synchronization spikes as most meetings start on the hour, causing thousands of EC2 instances to simultaneously connect to Postgres
+* **Investigation Process**: Team built a reproduction environment using Redis pub/sub to trigger synchronized connections from 3000+ EC2 instances, then profiled the postmaster using `perf`
+* **Key Finding**: The delay was caused by a combination of high connection rate AND background worker churn from parallel queries, both competing for the same single-threaded postmaster loop
+* **Optimization - Huge Pages**: Enabling Linux huge pages reduced page table entries (PTEs) that need copying during fork operations, resulting in 20% throughput improvement
+* **Solutions Implemented**: (1) Added jitter to EC2 instance connections to reduce peak connection rate, (2) Eliminated bursts of parallel queries from API servers
+* **Deeper Insight**: The real bottleneck isn't just fork overhead - it's that every postmaster operation (connections, parallel workers, signal handling) shares a fixed resource: one CPU core
+* **Broader Implication**: This explains why connection pooling is critical at scale - not just because of fork costs, but because the postmaster's single-threaded architecture creates a fundamental scalability ceiling
+
+### Postgres Postmaster 扩展性瓶颈：高并发连接问题的深度剖析
+
+* **问题描述**：Recall.ai 在峰值负载期间连接 Postgres 时遇到神秘的 10-15 秒延迟，原因是单线程的 postmaster 进程不堪重负
+* **根本原因**：Postgres 的 postmaster 进程运行单线程主循环来处理后端连接和并行工作进程的创建/回收 - 在 r8g.8xlarge 实例上约 1400 连接/秒时会耗尽单个 CPU 核心
+* **独特工作负载**：每周录制数百万次会议产生极端的同步峰值，因为大多数会议在整点开始，导致数千个 EC2 实例同时连接到 Postgres
+* **调查过程**：团队构建了复现环境，使用 Redis pub/sub 触发 3000+ EC2 实例的同步连接，然后使用 `perf` 对 postmaster 进行性能分析
+* **关键发现**：延迟是由高连接速率和并行查询产生的后台工作进程流失共同造成的，两者都在竞争同一个单线程 postmaster 循环
+* **优化 - 大页内存**：启用 Linux 大页内存减少了 fork 操作期间需要复制的页表条目（PTEs），使吞吐量提升 20%
+* **实施的解决方案**：(1) 为 EC2 实例连接添加抖动以降低峰值连接速率，(2) 消除 API 服务器的并行查询突发
+* **更深层的洞察**：真正的瓶颈不仅仅是 fork 开销 - 而是每个 postmaster 操作（连接、并行工作进程、信号处理）都共享一个固定资源：一个 CPU 核心
+* **更广泛的启示**：这解释了为什么连接池在大规模场景下至关重要 - 不仅因为 fork 成本，更因为 postmaster 的单线程架构创造了一个根本性的扩展性上限
+
+**[Read Original / 阅读原文](https://www.recall.ai/blog/postgres-postmaster-does-not-scale)**
+
+<!-- [Title-Only] -->
+### Child prodigies rarely become elite performers
+
+**Note:** *This introduction is based solely on the article title, as the full content could not be accessed.*
+
+* This article likely explores the paradox of child prodigies—individuals who demonstrate exceptional abilities at a young age—and examines why many of them fail to achieve elite status in their fields as adults. It probably discusses psychological, developmental, and environmental factors that contribute to this phenomenon, such as burnout, pressure, lack of sustained motivation, or the difference between early technical mastery and creative innovation required for adult excellence.
+
+* **Why it might be interesting to readers:** This topic challenges common assumptions about talent and success, offering insights into human development, the nature of expertise, and what truly drives long-term achievement. It's relevant for parents, educators, and anyone interested in understanding the complex relationship between early promise and sustained excellence. The article may also provide valuable lessons about nurturing talent without creating unsustainable pressure.
+
+---
+
+### 神童很少成为顶尖表演者/精英人才
+
+**说明：** *以下介绍仅基于文章标题，因无法获取完整内容。*
+
+* 这篇文章可能探讨了神童现象中的一个悖论——那些在年幼时展现出非凡能力的个体，为何在成年后很少能在其领域达到精英地位。文章很可能讨论了导致这一现象的心理、发展和环境因素，例如倦怠、压力、缺乏持续动力，或者早期技术掌握与成年后所需的创新能力之间的差异。
+
+* **为何值得关注：** 这个话题挑战了人们对天赋和成功的普遍假设，为理解人类发展、专业技能的本质以及真正驱动长期成就的因素提供了洞见。对于父母、教育工作者以及任何对早期潜力与持续卓越之间复杂关系感兴趣的人来说，这都是相关且重要的话题。文章还可能提供关于如何培养天赋而不造成不可持续压力的宝贵经验。
+
+**[Read Original / 阅读原文](https://www.economist.com/science-and-technology/2026/01/14/why-child-prodigies-rarely-become-elite-performers)**
+
+### sqldef - SQL Schema Diff and Migration Tool
+
+* **sqldef** is a CLI (Command Line Interface) tool designed for comparing and diffing two SQL database schemas
+* Enables database schema migration management using standard SQL DDL (Data Definition Language) statements
+* **Supported databases**: MySQL, MariaDB, TiDB, PostgreSQL, SQL Server, and SQLite3
+* Features an **online demo** with interactive schema comparison capabilities
+* Allows users to select different database types (MySQL, PostgreSQL, SQLite3, SQL Server) for testing
+* Includes an optional "Enable DROP" feature for managing table/column deletions during migration
+* Open-source project available on GitHub at [sqldef/sqldef](https://github.com/sqldef/sqldef)
+
+### sqldef - SQL 模式差异对比与迁移工具
+
+* **sqldef** 是一个命令行界面（CLI）工具，用于比较和对比两个 SQL 数据库模式的差异
+* 支持使用标准 SQL DDL（数据定义语言）语句管理数据库模式迁移
+* **支持的数据库**：MySQL、MariaDB、TiDB、PostgreSQL、SQL Server 和 SQLite3
+* 提供**在线演示**功能，具有交互式模式比较能力
+* 允许用户选择不同的数据库类型（MySQL、PostgreSQL、SQLite3、SQL Server）进行测试
+* 包含可选的"启用 DROP"功能，用于在迁移过程中管理表/列的删除操作
+* 开源项目，可在 GitHub 上访问：[sqldef/sqldef](https://github.com/sqldef/sqldef)
+
+**[Read Original / 阅读原文](https://sqldef.github.io/)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### ChatDev 2.0 (DevAll) - Zero-Code Multi-Agent Platform for Developing Everything
+
+**What it does:**
+* ChatDev 2.0 transforms from a software development tool into a comprehensive zero-code multi-agent orchestration platform
+* Enables users to rapidly build and execute customized multi-agent systems through simple configuration without coding
+* Supports complex scenarios including data visualization, 3D generation, deep research, and automated software development
+* Features a web-based console for seamless construction and execution of multi-agent workflows
+
+**Key features:**
+* **Zero-Code Configuration**: Define agents, workflows, and tasks through YAML configuration files with environment variable support
+* **Multi-Agent Orchestration**: Advanced collaboration patterns including MacNet (directed acyclic graphs supporting 1000+ agents), Puppeteer-style paradigm with reinforcement learning optimization
+* **Experiential Co-Learning**: Agents accumulate and share shortcut-oriented experiences to reduce errors and improve efficiency
+* **Flexible Architecture**: Python 3.12+ backend with Vue 3 frontend, managed by modern tools (uv, Vite)
+* **Legacy Support**: ChatDev 1.0 (Virtual Software Company with CEO, CTO, Programmer agents) maintained in separate branch
+* **Research-Backed**: Multiple NeurIPS-accepted papers on multi-agent collaboration, with implementations available
+
+**Why it's notable:**
+* **227 stars today** - Significant community interest in the 2.0 release (January 2026)
+* Represents a major evolution from specialized software development to general-purpose multi-agent platform
+* Backed by OpenBMB with strong academic foundation (NeurIPS publications, arxiv papers)
+* Pioneering work in LLM-powered multi-agent collaboration with innovative paradigms (MacNet, Puppeteer, Experiential Co-Learning)
+* Comprehensive ecosystem including interactive e-book on multi-agent research, SaaS platform, and extensive documentation
+* Supports diverse use cases beyond software: logical reasoning, data analysis, story generation
+* Active development with features like Docker support, Git integration, human-agent interaction modes
+
+---
+
+### ChatDev 2.0 (DevAll) - 零代码多智能体平台，开发一切
+
+**功能介绍:**
+* ChatDev 2.0 从软件开发工具演进为综合性零代码多智能体编排平台
+* 用户无需编程，通过简单配置即可快速构建和执行定制化多智能体系统
+* 支持数据可视化、3D生成、深度研究和自动化软件开发等复杂场景
+* 提供基于Web的控制台，实现多智能体工作流的无缝构建和执行
+
+**主要特点:**
+* **零代码配置**: 通过YAML配置文件定义智能体、工作流和任务，支持环境变量引用
+* **多智能体编排**: 先进的协作模式，包括MacNet（支持1000+智能体的有向无环图）、基于强化学习优化的Puppeteer范式
+* **经验协同学习**: 智能体积累和共享快捷经验，减少错误并提高效率
+* **灵活架构**: Python 3.12+后端配合Vue 3前端，使用现代工具管理（uv、Vite）
+* **传统版本支持**: ChatDev 1.0（虚拟软件公司，包含CEO、CTO、程序员等智能体）在独立分支维护
+* **学术支撑**: 多篇NeurIPS论文支持的多智能体协作研究，提供实现代码
+
+**为何值得关注:**
+* **今日获227星** - 2.0版本发布（2026年1月）引发社区强烈关注
+* 从专业软件开发工具演进为通用多智能体平台的重大跨越
+* OpenBMB支持，具有深厚学术基础（NeurIPS发表论文、arxiv预印本）
+* LLM驱动的多智能体协作领域的开创性工作，创新范式丰富（MacNet、Puppeteer、经验协同学习）
+* 完整生态系统：包括多智能体研究交互式电子书、SaaS平台和详尽文档
+* 支持软件开发之外的多样化场景：逻辑推理、数据分析、故事生成等
+* 活跃开发：Docker支持、Git集成、人机交互模式等丰富功能
+
+**[View Repository / 查看仓库](https://github.com/OpenBMB/ChatDev)**
+
+### Anki - Smart Spaced Repetition Flashcard Program
+
+**What it does:**
+* Anki is a powerful spaced repetition system (SRS) designed to help users memorize and retain information efficiently through intelligent flashcard scheduling
+* Uses scientifically-proven spaced repetition algorithms to optimize learning by showing cards at increasing intervals based on how well you remember them
+* Supports multimedia flashcards with text, images, audio, and video content
+
+**Key features:**
+* Cross-platform desktop application built with Rust for performance and reliability
+* Customizable card templates and deck organization
+* Synchronization capabilities across devices via AnkiWeb
+* Extensive add-on ecosystem for extended functionality
+* Active development with beta builds available for testing new features
+* Open-source codebase allowing community contributions
+
+**Why it's notable:**
+* One of the most popular and trusted spaced repetition tools used by millions of students, language learners, and professionals worldwide
+* Gaining 28 stars today, showing continued community interest and adoption
+* Rewritten in Rust for improved performance and maintainability
+* Long-standing project with proven effectiveness in learning and memory retention
+* Strong open-source community with comprehensive documentation for developers and contributors
+
+---
+
+### Anki - 智能间隔重复记忆卡片程序
+
+**功能介绍:**
+* Anki 是一款强大的间隔重复系统（SRS），通过智能的卡片调度算法帮助用户高效记忆和保留信息
+* 采用科学验证的间隔重复算法，根据记忆程度以递增的时间间隔显示卡片，优化学习效果
+* 支持包含文本、图片、音频和视频内容的多媒体记忆卡片
+
+**主要特点:**
+* 使用 Rust 构建的跨平台桌面应用，性能卓越且可靠
+* 可自定义卡片模板和牌组组织方式
+* 通过 AnkiWeb 实现跨设备同步功能
+* 拥有丰富的插件生态系统，可扩展更多功能
+* 持续活跃开发，提供测试版本供用户体验新特性
+* 开源代码库，欢迎社区贡献
+
+**为何值得关注:**
+* 全球数百万学生、语言学习者和专业人士信赖的最受欢迎间隔重复工具之一
+* 今日获得 28 个星标，显示持续的社区关注度和采用率
+* 使用 Rust 重写以提升性能和可维护性
+* 历史悠久的项目，在学习和记忆保持方面效果显著
+* 强大的开源社区，为开发者和贡献者提供完善的文档支持
+
+**[View Repository / 查看仓库](https://github.com/ankitects/anki)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### awesome-ai-research-writing - A Curated Collection of AI-Powered Academic Writing Prompts and Agent Skills
+
+* **What it does**: Provides battle-tested prompt templates and agent skills specifically designed for AI research paper writing, covering translation, polishing, expansion, contraction, logic checking, and experimental analysis scenarios.
+
+* **Key features**:
+  - **Comprehensive Prompt Library**: Ready-to-use prompts for Chinese-to-English/English-to-Chinese translation, text polishing (both English and Chinese papers), conciseness/expansion, "de-AI-ification", logic verification, and reviewer-perspective analysis
+  - **Agent Skills Integration**: Tutorials and curated skills for leveraging AI agents in academic writing workflows, lowering the barrier for advanced automation
+  - **Production-Ready Quality**: All prompts are refined by researchers from top institutions (MSRA, ByteDance Seed, Shanghai AI Lab) and PhD students from Peking University, USTC, and Shanghai Jiao Tong University
+  - **LaTeX & Word Optimized**: Separate workflows for LaTeX-based English papers and Word-based Chinese papers, with proper character escaping and formatting rules
+
+* **Why it's notable**:
+  - **Democratizes Academic Resources**: Addresses the inequality where top research groups have proprietary prompt libraries while most researchers start from scratch
+  - **Saves Iteration Time**: Eliminates the need to debug prompts repeatedly—copy-paste and focus on actual research instead
+  - **Trending Rapidly**: 3,100+ stars indicate strong demand for standardized AI writing workflows in academia
+  - **Practical Philosophy**: Emphasizes restraint in modifications (e.g., "only fix critical errors, don't over-edit") and natural academic tone (avoiding "AI flavor")
+
+---
+
+### awesome-ai-research-writing - AI 驱动的学术论文写作 Prompt 与 Agent Skills 精选集
+
+* **功能介绍**: 提供经过实战验证的 Prompt 模板和 Agent Skills,专门用于 AI 研究论文写作,涵盖翻译、润色、扩写、缩写、逻辑检查和实验分析等场景。
+
+* **主要特点**:
+  - **全面的 Prompt 库**: 开箱即用的中英互译、表达润色(英文/中文论文)、缩写/扩写、去 AI 味、逻辑检查、审稿人视角分析等 Prompt
+  - **Agent Skills 集成**: 提供 AI Agent 在学术写作中的使用教程和核心技能抽取,降低高级自动化的使用门槛
+  - **生产级质量**: 所有 Prompt 均由顶尖研究机构(微软亚洲研究院、字节 Seed、上海 AI Lab)研究员及北大、中科大、上交博士生打磨
+  - **LaTeX 与 Word 优化**: 针对 LaTeX 英文论文和 Word 中文论文分别提供工作流,包含正确的字符转义和格式规范
+
+* **为何值得关注**:
+  - **学术资源民主化**: 解决顶尖研究组拥有完善模板库而大多数人从零摸索的不平等现象
+  - **节省迭代时间**: 无需反复调试 Prompt——直接复制粘贴,把精力留给真正的科研
+  - **快速增长**: 3100+ Star 表明学术界对标准化 AI 写作工作流的强烈需求
+  - **实用哲学**: 强调克制修改(如"仅修复关键错误,不过度编辑")和自然学术语气(避免"AI 味")
+
+**[View Repository / 查看仓库](https://github.com/Leey21/awesome-ai-research-writing)**
+
+### PaperBanana - Automating Academic Illustration For AI Scientists
+
+**What it does:**
+* PaperBanana is a tool designed to automate the creation of academic illustrations specifically for AI research papers
+* Aims to streamline the process of generating visual content for scientific publications
+* Targets AI scientists and researchers who need to create diagrams, figures, and illustrations for their papers
+
+**Key features:**
+* Automated illustration generation for academic papers
+* Built with JavaScript for web-based accessibility
+* Upcoming release includes both code and dataset (expected in ~2 weeks from repository creation)
+* Licensed under Creative Commons Attribution-ShareAlike 4.0 International License
+
+**Why it's notable:**
+* Addresses a common pain point in academic publishing - creating high-quality illustrations is time-consuming
+* Has gained significant traction with 1,261 stars despite minimal code release, indicating strong community interest
+* Fills a niche need in the AI research community where visual communication of complex concepts is crucial
+* The promise of an accompanying dataset suggests potential for training or benchmarking illustration generation models
+
+---
+
+### PaperBanana - AI科研人员学术插图自动化工具
+
+**功能介绍：**
+* PaperBanana 是一款专为AI研究论文自动生成学术插图的工具
+* 旨在简化科学出版物视觉内容的制作流程
+* 面向需要为论文创建图表、图形和插图的AI科学家和研究人员
+
+**主要特点：**
+* 为学术论文自动生成插图
+* 使用JavaScript构建，便于网页端访问
+* 即将发布的版本包含代码和数据集（预计约2周内发布）
+* 采用知识共享署名-相同方式共享4.0国际许可协议
+
+**为何值得关注：**
+* 解决了学术出版中的常见痛点——制作高质量插图非常耗时
+* 尽管代码尚未完全发布，但已获得1,261个星标，显示出强烈的社区兴趣
+* 填补了AI研究社区的细分需求，在该领域复杂概念的可视化传达至关重要
+* 承诺提供配套数据集，暗示可能用于训练或基准测试插图生成模型
+
+**[View Repository / 查看仓库](https://github.com/dwzhu-pku/PaperBanana)**
+
+
+## 🎬 YouTube Tech Videos / YouTube 技术视频
+
+### 🎬 ClawdBot Full Tutorial for Beginners: How to Use & Set up ClawdBot (Openclaw)
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive beginner-friendly tutorial on ClawdBot (Openclaw), walking through the complete setup process and demonstrating how to use this AI automation tool effectively.
+
+* **Key topics discussed:** 
+  - Initial setup and configuration of ClawdBot/Openclaw
+  - Step-by-step walkthrough of the platform's features and interface
+  - Practical demonstrations of how to implement ClawdBot for automation tasks
+  - Best practices for beginners getting started with the tool
+
+* **Why it's worth watching:** Perfect for newcomers to ClawdBot who want a complete, hands-on guide from a no-code expert. Mikey No Code specializes in making complex tools accessible, providing clear instructions that help viewers quickly get up and running with AI-powered automation without requiring coding knowledge.
+
+---
+
+### 🎬 ClawdBot 完整新手教程：如何使用和设置 ClawdBot (Openclaw)
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 这是一个全面的 ClawdBot（Openclaw）新手教程，详细介绍了完整的设置流程，并演示如何有效使用这个 AI 自动化工具。
+
+* **主要话题:**
+  - ClawdBot/Openclaw 的初始设置和配置
+  - 平台功能和界面的逐步讲解
+  - ClawdBot 自动化任务的实际操作演示
+  - 新手入门的最佳实践方法
+
+* **为何值得观看:** 对于想要全面了解 ClawdBot 的新手来说，这是一个完美的实操指南。Mikey No Code 专注于将复杂工具简化，提供清晰的指导，帮助观众快速掌握 AI 驱动的自动化工具，无需编程知识即可上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=a63dUwXUgDo)**
+
+### 🎬 You Can Build Apps Without Coding Now with Emergent (This Changes Everything)
+
+**Channel:** Vijender Masijeevi
+
+* **What the video covers:** This video introduces Emergent, a revolutionary no-code platform that enables anyone to build functional applications without writing a single line of code. The host demonstrates how this tool democratizes app development and removes traditional coding barriers.
+
+* **Key topics discussed:**
+  - Overview of the Emergent no-code platform and its capabilities
+  - Step-by-step demonstration of building apps without coding knowledge
+  - How AI and visual development tools are transforming software creation
+  - The implications for entrepreneurs, creators, and non-technical founders
+  - Comparison with traditional coding approaches and other no-code solutions
+
+* **Why it's worth watching:** Perfect for aspiring entrepreneurs, product builders, and anyone who has ideas but lacks coding skills. The video shows how modern tools are leveling the playing field, making it possible for anyone to turn their ideas into reality. Essential viewing for understanding the future of app development and how no-code platforms are changing the tech landscape.
+
+---
+
+### 🎬 无需编码即可构建应用程序 - Emergent平台全面解析
+
+**频道:** Vijender Masijeevi
+
+* **视频内容概述:** 本视频介绍了Emergent这一革命性的无代码平台，让任何人都能在不编写任何代码的情况下构建功能完整的应用程序。主持人演示了这个工具如何让应用开发变得大众化，并打破传统编码壁垒。
+
+* **主要话题:**
+  - Emergent无代码平台的功能概览和核心能力
+  - 无需编程知识即可构建应用的分步演示
+  - AI和可视化开发工具如何改变软件创建方式
+  - 对创业者、创作者和非技术创始人的影响
+  - 与传统编码方法和其他无代码解决方案的对比
+
+* **为何值得观看:** 非常适合有抱负的创业者、产品构建者以及有想法但缺乏编程技能的人群。视频展示了现代工具如何拉平竞争环境，让任何人都能将创意变为现实。对于理解应用开发的未来以及无代码平台如何改变科技格局至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=G8ttowyUbVY)**
+
+### 🎬 These 3 MoltBot Security Issues Could Let Hackers Access Your Computer
+
+**Channel:** Varun Mayya
+
+* **What the video covers:** This video exposes three critical security vulnerabilities in MoltBot, an AI automation tool, that could potentially allow hackers to gain unauthorized access to users' computers.
+
+* **Key topics discussed:** 
+  - Specific security flaws in MoltBot's architecture
+  - How these vulnerabilities could be exploited by malicious actors
+  - Potential risks to user data and system integrity
+  - Security implications for AI-powered automation tools
+
+* **Why it's worth watching:** Essential viewing for anyone using MoltBot or similar AI automation tools. The video provides crucial security awareness about potential risks in emerging AI technologies and helps users understand how to protect their systems from exploitation.
+
+---
+
+### 🎬 MoltBot 的三个安全漏洞可能让黑客访问你的电脑
+
+**频道:** Varun Mayya
+
+* **视频内容概述:** 该视频揭露了 AI 自动化工具 MoltBot 中的三个严重安全漏洞，这些漏洞可能允许黑客未经授权访问用户的计算机。
+
+* **主要话题:**
+  - MoltBot 架构中的具体安全缺陷
+  - 恶意行为者如何利用这些漏洞
+  - 对用户数据和系统完整性的潜在风险
+  - AI 驱动自动化工具的安全影响
+
+* **为何值得观看:** 对于使用 MoltBot 或类似 AI 自动化工具的用户来说，这是必看内容。视频提供了关于新兴 AI 技术潜在风险的重要安全意识，帮助用户了解如何保护系统免受攻击。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0TKl2skt4sk)**
+
