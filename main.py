@@ -755,6 +755,36 @@ Description: {repo_info.get('description', 'No description')}
         print(f"AI Generation Error: {e}")
         return None
 
+def update_frontmatter_description(filename):
+    """Updates the description in frontmatter to reflect actual content counts."""
+    with open(filename, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Count actual items by counting the link patterns
+    total_hn = len(re.findall(r'\[Read Original / 阅读原文\]', content))
+    total_repos = len(re.findall(r'\[View Repository / 查看仓库\]', content))
+    total_hf = len(re.findall(r'\[View on Hugging Face / 在 Hugging Face 查看\]', content))
+    total_youtube = len(re.findall(r'\[Watch Video / 观看视频\]', content))
+
+    # Estimate trending vs fast-moving (trending comes first, usually 3)
+    total_trending = min(total_repos, 3)
+    total_fast = max(0, total_repos - 3)
+
+    new_description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects, {total_youtube} YouTube videos, {total_hf} Hugging Face models. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目，{total_youtube}个YouTube视频，{total_hf}个Hugging Face模型。"
+
+    # Replace the description line in frontmatter
+    content = re.sub(
+        r'description: ".*?"',
+        f'description: "{new_description}"',
+        content,
+        count=1
+    )
+
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print(f"📊 Updated description: {total_hn} HN, {total_repos} repos, {total_hf} HF, {total_youtube} YouTube")
+
 def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summaries, youtube_summaries=None, huggingface_summaries=None):
     """Saves to _posts/ folder with Jekyll Frontmatter. Appends if file exists."""
     if youtube_summaries is None:
@@ -769,14 +799,6 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
     output_dir = "_posts"
     os.makedirs(output_dir, exist_ok=True)
     filename = f"{output_dir}/{date_filename}-daily-ai-digest.md"
-
-    # Generate description for frontmatter
-    total_hn = len(hn_summaries)
-    total_trending = len(github_trending_summaries)
-    total_fast = len(github_fast_summaries)
-    total_youtube = len(youtube_summaries)
-    total_hf = len(huggingface_summaries)
-    description = f"Today's digest: {total_hn} Hacker News articles, {total_trending} GitHub trending repos, {total_fast} fast-moving projects, {total_youtube} YouTube videos, {total_hf} Hugging Face models. 今日精选：{total_hn}篇黑客新闻，{total_trending}个热门项目，{total_fast}个快速崛起项目，{total_youtube}个YouTube视频，{total_hf}个Hugging Face模型。"
 
     if os.path.exists(filename):
         # Append new content to existing file
@@ -800,13 +822,18 @@ def save_to_markdown(hn_summaries, github_trending_summaries, github_fast_summar
                 f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n")
                 for summary in youtube_summaries:
                     f.write(summary + "\n\n")
+
+        # Update the description in frontmatter to reflect total counts
+        update_frontmatter_description(filename)
+
         total = len(hn_summaries) + len(github_trending_summaries) + len(github_fast_summaries) + len(youtube_summaries) + len(huggingface_summaries)
         print(f"✅ Appended {total} new articles to: {filename}")
     else:
+        # Initial description will be updated after writing
         frontmatter = f"""---
 title: "Daily Tech Digest: {display_date}"
 date: {date_filename}
-description: "{description}"
+description: "Daily tech digest"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -843,6 +870,9 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
                 f.write("\n## 🎬 YouTube Tech Videos / YouTube 技术视频\n\n")
                 for summary in youtube_summaries:
                     f.write(summary + "\n\n")
+
+        # Update description to reflect actual counts
+        update_frontmatter_description(filename)
         print(f"✅ Created new post: {filename}")
 
 def get_processed_urls():
