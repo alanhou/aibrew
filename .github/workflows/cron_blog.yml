@@ -31,6 +31,7 @@ jobs:
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           LLM_MODEL_NAME: ${{ secrets.LLM_MODEL_NAME }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          TZ: Asia/Shanghai
         run: python main.py
 
       - name: Commit and Push changes
@@ -39,4 +40,4 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           # Check if there are changes before committing
           git add _posts/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily content update [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily content update" && git push)
