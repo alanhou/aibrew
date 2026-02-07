@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 07, 2026"
 date: 2026-02-07
-description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 17 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：17篇黑客新闻，3个热门项目，10个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1303,4 +1303,269 @@ Tirith 是一款命令行安全工具，在终端命令执行前进行拦截和�
 * **Lwt_fiber 库**：Jake Donham 的库优雅地结合了 `delimcc` 和 Lwt，为处理异步操作提供了替代方案
 
 **[Read Original / 阅读原文](https://mirageos.org/blog/delimcc-vs-lwt)**
+
+### Start All of Your Commands with a Comma
+
+* **The Problem**: Unix/Linux users who create custom scripts in `~/bin/` face naming collisions with system commands, especially on distributions like Debian/Ubuntu that package thousands of commands (21,733+ available commands)
+* **The Challenge**: Finding a prefix character that is easy to type (no Shift key), doesn't conflict with shell special characters, and won't be used by system commands
+* **The Solution**: Use a comma (`,`) as a prefix for all custom commands - it's the only unshifted character that is shell-safe, doesn't have special meaning in filenames, and will never be used by system commands
+* **Key Benefits**: 
+  - Complete separation from system commands eliminates collision risk
+  - Tab-completion makes browsing custom commands effortless (just type `,` + Tab)
+  - Easy to type without using Shift key
+  - Works reliably across all shells and tools
+* **Proven Track Record**: The author has successfully used this technique for over a decade with robust results
+
+---
+
+### 用逗号开头命名你的所有自定义命令
+
+* **问题背景**：Unix/Linux 用户在 `~/bin/` 目录中创建自定义脚本时，面临与系统命令命名冲突的风险，特别是在 Debian/Ubuntu 等发行版上（可用命令超过 21,733 个）
+* **命名挑战**：需要找到一个易于输入（无需按 Shift 键）、不与 shell 特殊字符冲突、且不会被系统命令使用的前缀字符
+* **解决方案**：使用逗号（`,`）作为所有自定义命令的前缀——这是唯一一个无需按 Shift 键、对 shell 安全、在文件名中无特殊含义、且永远不会被系统命令使用的字符
+* **核心优势**：
+  - 与系统命令完全隔离，彻底消除冲突风险
+  - Tab 自动补全让浏览自定义命令变得轻而易举（只需输入 `,` + Tab）
+  - 无需使用 Shift 键，输入便捷
+  - 在所有 shell 和工具中都能可靠运行
+* **实践验证**：作者已成功使用此技巧超过十年，效果稳定可靠
+
+**[Read Original / 阅读原文](https://rhodesmill.org/brandon/2009/commands-with-comma/)**
+
+### Welcome to the Room: Satya Nadella's Leadership Masterclass
+
+* **No More Whining**: Upon joining Microsoft's senior executive ranks, Jeffrey Snover received a transformative leadership lesson from CEO Satya Nadella—stop complaining and start manufacturing success with allocated resources
+* **Two Controls Only**: Leaders have just two levers—(1) the clarity, culture, and energy they provide their teams, and (2) resource allocation decisions
+* **Intellectual Honesty Framework**: Nadella will back bold failures only if leaders maintain: a plausible theory of success, resource allocation aligned with that theory, continuous monitoring, and pivoting when theories become implausible
+* **Beyond Conventional Wisdom**: Delivering "outsized success" requires allocating resources ahead of conventional wisdom; conventional approaches yield only conventional results
+* **Critical Self-Assessment Questions**: Leaders must ask: Does resource allocation support our success theory? What signals indicate our theory is failing? Do all the dots connect from execution to revenue? Are we manufacturing success or managing decline?
+* **Strategy vs. Dreams**: A strategy without corresponding resource reallocation is merely a dream, not an actionable plan
+* **Telemetry is Essential**: Feedback loops must be shorter than your runway—you need to detect failure while you still have resources to pivot
+* **Accountability Chain**: If your success depends on another team and they fail without you seeing it coming, you failed
+* **Clarity Over Activity**: Don't confuse being busy with making progress; leaders must provide relentless clarity, repeating the theory of success thousands of times until it sticks
+
+---
+
+### 欢迎来到这个房间：萨提亚·纳德拉的领导力大师课
+
+* **不再抱怨**：Jeffrey Snover 晋升为微软技术院士并加入高管团队时，CEO 萨提亚·纳德拉给了他一堂改变人生的领导力课程——停止抱怨，用分配的资源创造成功
+* **只有两个控制杆**：领导者只有两个杠杆——(1) 为团队提供的清晰度、文化和能量，(2) 资源分配决策
+* **智识诚实框架**：纳德拉只会在领导者保持以下条件时支持大胆的失败：拥有合理的成功理论、资源分配与理论一致、持续监控、当理论不再合理时及时调整
+* **超越传统智慧**：要实现"超常成功"，必须在传统智慧之前分配资源；传统方法只能产生传统结果
+* **关键自我评估问题**：领导者必须问：资源分配是否支持我们的成功理论？什么信号表明理论正在失败？从执行到收入的所有环节是否连贯？我们是在创造成功还是在管理衰退？
+* **战略与梦想的区别**：没有相应资源重新分配的战略只是梦想，不是可执行的计划
+* **遥测至关重要**：反馈循环必须短于你的跑道——你需要在还有资源调整方向时就发现失败
+* **责任链条**：如果你的成功依赖另一个团队，而他们失败时你没有预见到，那是你的失败
+* **清晰度胜过活动量**：不要把忙碌与进步混淆；领导者必须提供持续的清晰度，将成功理论重复成千上万次直到深入人心
+
+**[Read Original / 阅读原文](https://www.jsnover.com/blog/2026/02/01/welcome-to-the-room/)**
+
+<!-- [Title-Only] -->
+### Hackers (1995) Animated Experience
+
+**Based on the title only:**
+
+* This appears to be an interactive web experience or tribute dedicated to the 1995 cult classic film "Hackers," starring Angelina Jolie and Jonny Lee Miller. The project likely features animated elements that recreate or pay homage to the movie's iconic cyberpunk aesthetic, including its distinctive visual style, neon colors, and 90s hacker culture imagery.
+
+* **Why it might be interesting to readers:**
+  - Nostalgia factor for those who grew up in the 90s and remember the film's impact on pop culture
+  - Showcases creative web development and animation techniques
+  - Demonstrates how modern web technologies can be used to celebrate retro tech culture
+  - Appeals to both film enthusiasts and web developers interested in interactive storytelling
+  - The film "Hackers" has become increasingly relevant as a time capsule of 90s internet culture and early hacker mythology
+
+---
+
+### 《黑客》(1995) 动画体验
+
+**仅基于标题推测：**
+
+* 这似乎是一个致敬 1995 年经典邪典电影《黑客》（主演安吉丽娜·朱莉和约翰尼·李·米勒）的互动网页体验项目。该项目可能包含动画元素，重现或致敬电影标志性的赛博朋克美学，包括其独特的视觉风格、霓虹色彩和 90 年代黑客文化意象。
+
+* **为何值得关注：**
+  - 对于在 90 年代成长并记得这部电影对流行文化影响的人来说，具有怀旧价值
+  - 展示了创意网页开发和动画技术
+  - 演示了如何使用现代网页技术来致敬复古科技文化
+  - 同时吸引电影爱好者和对互动叙事感兴趣的网页开发者
+  - 电影《黑客》作为 90 年代互联网文化和早期黑客神话的时间胶囊，变得越来越具有现实意义
+
+**[Read Original / 阅读原文](https://hackers-1995.vercel.app/)**
+
+### Shannon - Fully Autonomous AI Pentester for Web Applications
+
+**What it does:**
+* Shannon is an AI-powered penetration testing tool that autonomously discovers and exploits real vulnerabilities in web applications
+* It performs white-box security testing by analyzing source code and executing live exploits through an integrated browser
+* Delivers pentester-grade reports with reproducible proof-of-concept exploits, not just vulnerability alerts
+* Handles complex authentication flows including 2FA/TOTP and OAuth automatically
+
+**Key features:**
+* **96.15% success rate** on the hint-free, source-aware XBOW benchmark
+* **Zero-intervention operation** - launch with a single command, AI handles everything from login to final report
+* **Critical OWASP coverage** - detects and validates Injection, XSS, SSRF, and Broken Authentication/Authorization vulnerabilities
+* **Code-aware dynamic testing** - analyzes source code to guide attack strategy, then executes real exploits on running applications
+* **Integrated security tools** - leverages Nmap, Subfinder, WhatWeb, and Schemathesis for comprehensive reconnaissance
+* **Parallel processing** - runs multiple vulnerability analyses concurrently for faster results
+* **Two editions**: Shannon Lite (AGPL-3.0, open source) and Shannon Pro (commercial, with advanced LLM-powered data flow analysis)
+
+**Why it's notable:**
+* Addresses the critical security gap created by rapid development cycles - teams ship code continuously but penetration tests happen once a year
+* Provides actual exploitable vulnerabilities with copy-paste PoCs, eliminating false positives that plague traditional scanners
+* Part of the broader Keygraph Security and Compliance Platform, positioning itself as "Rippling for Cybersecurity"
+* Discovered 20+ critical vulnerabilities in OWASP Juice Shop, including complete auth bypass and database exfiltration
+* Built on TypeScript with Docker containerization, powered by Anthropic's Claude AI models
+* Gaining massive traction with **3,133 stars today**, indicating strong demand for autonomous security testing solutions
+
+---
+
+### Shannon - 全自动 AI 渗透测试工具
+
+**功能介绍:**
+* Shannon 是一款 AI 驱动的渗透测试工具,能够自主发现并利用 Web 应用程序中的真实漏洞
+* 通过分析源代码并通过集成浏览器执行实时攻击,进行白盒安全测试
+* 提供渗透测试级别的报告,包含可重现的概念验证漏洞利用代码,而非仅仅是漏洞警告
+* 自动处理复杂的身份验证流程,包括双因素认证(2FA/TOTP)和 OAuth
+
+**主要特点:**
+* 在无提示、源码感知的 XBOW 基准测试中达到 **96.15% 的成功率**
+* **零人工干预** - 一条命令启动,AI 自动处理从登录到最终报告的所有环节
+* **覆盖关键 OWASP 漏洞** - 检测并验证注入、XSS、SSRF 以及身份认证/授权缺陷等漏洞
+* **代码感知动态测试** - 分析源代码指导攻击策略,然后在运行中的应用程序上执行真实攻击
+* **集成安全工具** - 利用 Nmap、Subfinder、WhatWeb 和 Schemathesis 进行全面侦察
+* **并行处理** - 同时运行多个漏洞分析以加快结果输出
+* **双版本**: Shannon Lite(AGPL-3.0 开源版)和 Shannon Pro(商业版,具备高级 LLM 驱动的数据流分析)
+
+**为何值得关注:**
+* 解决了快速开发周期带来的关键安全缺口 - 团队持续交付代码,但渗透测试一年只做一次
+* 提供真实可利用的漏洞及可复制的 PoC 代码,消除了传统扫描器常见的误报问题
+* 是 Keygraph 安全与合规平台的核心组件,定位为"网络安全领域的 Rippling"
+* 在 OWASP Juice Shop 中发现了 20 多个严重漏洞,包括完整的身份认证绕过和数据库渗出
+* 基于 TypeScript 构建,使用 Docker 容器化,由 Anthropic 的 Claude AI 模型驱动
+* **今日获得 3,133 星标**,显示出市场对自主安全测试解决方案的强劲需求
+
+**[View Repository / 查看仓库](https://github.com/KeygraphHQ/shannon)**
+
+### Heretic - Fully Automatic Censorship Removal for Language Models
+
+**What it does:**
+Heretic is a Python tool that automatically removes safety alignment (censorship) from transformer-based language models without requiring expensive retraining. It uses directional ablation ("abliteration") combined with TPE-based parameter optimization via Optuna to decensor models while preserving their intelligence and capabilities.
+
+**Key features:**
+* **Fully automatic operation** - No manual tuning or deep understanding of transformer internals required; just run a single command
+* **Superior quality** - Achieves same refusal suppression as manually-tuned abliterations but with significantly lower KL divergence (0.16 vs 0.45-1.04), indicating better preservation of original model capabilities
+* **Broad model support** - Works with most dense models, multimodal models, and several MoE architectures
+* **Built-in evaluation** - Includes tools to benchmark refusal rates and KL divergence
+* **Research features** - Optional visualization of residual vectors and geometric analysis for interpretability research
+* **Hardware optimization** - Automatically benchmarks system to determine optimal batch size (e.g., ~45 minutes for Llama-3.1-8B on RTX 3090)
+* **Easy deployment** - Save, upload to Hugging Face, or chat with decensored models directly
+
+**Why it's notable:**
+* **Trending with 61 stars today** due to its breakthrough in automated model decensoring
+* **Community validation** - Users report it produces the "best uncensored models" that maintain intelligence while removing refusals
+* **Research impact** - Combines cutting-edge abliteration techniques with automated optimization, making advanced model modification accessible to anyone
+* **Practical results** - Collection of successfully decensored models available on Hugging Face ("The Bestiary")
+* **No expertise required** - Democratizes model decensoring by eliminating need for manual parameter tuning or transformer knowledge
+
+---
+
+### Heretic - 语言模型全自动审查移除工具
+
+**功能介绍:**
+Heretic 是一个 Python 工具,可以自动移除基于 Transformer 的语言模型中的安全对齐(审查机制),无需昂贵的重新训练。它结合了方向消融("abliteration")技术和基于 Optuna 的 TPE 参数优化器,在去除审查的同时保留模型的智能和能力。
+
+**主要特点:**
+* **全自动运行** - 无需手动调参或深入理解 Transformer 内部机制,只需运行一条命令
+* **卓越质量** - 达到与手动调优相同的拒绝抑制效果,但 KL 散度显著更低(0.16 vs 0.45-1.04),表明更好地保留了原始模型能力
+* **广泛模型支持** - 适用于大多数密集模型、多模态模型和多种 MoE 架构
+* **内置评估** - 包含基准测试工具,可评估拒绝率和 KL 散度
+* **研究功能** - 可选的残差向量可视化和几何分析,用于可解释性研究
+* **硬件优化** - 自动对系统进行基准测试以确定最佳批处理大小(例如在 RTX 3090 上处理 Llama-3.1-8B 约需 45 分钟)
+* **便捷部署** - 可直接保存、上传到 Hugging Face 或与去审查模型对话测试
+
+**为何值得关注:**
+* **今日获得 61 星**,因其在自动化模型去审查方面的突破而受到关注
+* **社区验证** - 用户反馈这是"最佳去审查模型",在移除拒绝的同时保持智能
+* **研究影响** - 将前沿消融技术与自动优化相结合,让任何人都能进行高级模型修改
+* **实际成果** - 在 Hugging Face 上提供了成功去审查的模型集合("The Bestiary")
+* **零门槛使用** - 通过消除手动参数调优和 Transformer 知识需求,实现模型去审查的民主化
+
+**[View Repository / 查看仓库](https://github.com/p-e-w/heretic)**
+
+### Superpowers - An Agentic Skills Framework for AI Coding Agents
+
+**What it does**
+* Transforms AI coding agents (Claude Code, Codex, OpenCode) into disciplined software engineers by enforcing a complete development workflow
+* Prevents agents from jumping straight into code - forces them to understand requirements, design solutions, create detailed plans, and follow test-driven development
+* Enables autonomous development sessions where agents can work for hours without human intervention through subagent-driven development
+
+**Key features**
+* **Composable Skills Library**: 15+ pre-built skills covering testing (TDD), debugging (systematic root-cause analysis), collaboration (brainstorming, code review), and Git workflows (worktrees, branch management)
+* **Automatic Skill Activation**: Skills trigger contextually without manual invocation - agents automatically follow best practices
+* **Subagent-Driven Development**: Dispatches fresh subagents per task with two-stage review (spec compliance + code quality)
+* **Enforced TDD Workflow**: RED-GREEN-REFACTOR cycle that literally deletes code written before tests
+* **Structured Planning**: Breaks work into 2-5 minute tasks with exact file paths, complete code, and verification steps
+
+**Why it's notable**
+* **689 stars in one day** - addresses a critical pain point in AI-assisted development: agents that write code too quickly without proper design or testing
+* Provides a complete methodology, not just tools - transforms chaotic AI coding into disciplined software engineering
+* Works across multiple AI coding platforms (Claude Code plugin marketplace, Codex, OpenCode)
+* Philosophy emphasizes "systematic over ad-hoc" and "evidence over claims" - brings engineering rigor to AI development
+* Created by Jesse (obra), who built this as a practical solution to make AI agents actually productive for real software development
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+**功能介绍**
+* 将 AI 编码代理（Claude Code、Codex、OpenCode）转变为遵守纪律的软件工程师，强制执行完整的开发工作流
+* 防止代理直接跳入编码 - 强制它们理解需求、设计解决方案、创建详细计划并遵循测试驱动开发
+* 通过子代理驱动开发实现自主开发会话，代理可以在无人工干预的情况下工作数小时
+
+**主要特点**
+* **可组合技能库**：15+ 个预构建技能，涵盖测试（TDD）、调试（系统化根因分析）、协作（头脑风暴、代码审查）和 Git 工作流（worktrees、分支管理）
+* **自动技能激活**：技能根据上下文自动触发，无需手动调用 - 代理自动遵循最佳实践
+* **子代理驱动开发**：为每个任务分派新的子代理，进行两阶段审查（规范合规性 + 代码质量）
+* **强制 TDD 工作流**：RED-GREEN-REFACTOR 循环，会直接删除在测试之前编写的代码
+* **结构化规划**：将工作分解为 2-5 分钟的任务，包含确切的文件路径、完整代码和验证步骤
+
+**为何值得关注**
+* **单日获得 689 星** - 解决了 AI 辅助开发中的关键痛点：代理在没有适当设计或测试的情况下过快编写代码
+* 提供完整的方法论，而非仅仅是工具 - 将混乱的 AI 编码转变为有纪律的软件工程
+* 跨多个 AI 编码平台工作（Claude Code 插件市场、Codex、OpenCode）
+* 哲学强调"系统化优于临时性"和"证据优于声明" - 为 AI 开发带来工程严谨性
+* 由 Jesse (obra) 创建，作为使 AI 代理在真实软件开发中真正高效的实用解决方案
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### 🎬 The Perspective That Changes Behavior
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** This video explores how shifting one's perspective can fundamentally alter behavior patterns, particularly in professional settings. It examines the psychological mechanisms behind behavioral change and how reframing situations can lead to different outcomes.
+
+* **Key topics discussed:** 
+  - The relationship between perspective and behavior modification
+  - Leadership approaches that influence team behavior
+  - Career development through mindset shifts
+  - Practical frameworks for changing how you view challenges and opportunities
+
+* **Why it's worth watching:** For professionals, leaders, and anyone interested in personal development, this video offers actionable insights into behavioral psychology. Understanding how perspective shapes actions can be transformative for career growth, team management, and achieving professional goals. Lenny's Podcast is known for delivering high-quality content on product management, leadership, and career development.
+
+---
+
+### 🎬 改变行为的视角
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 本视频探讨了转变视角如何从根本上改变行为模式，特别是在职业环境中。它研究了行为改变背后的心理机制，以及重新框定情境如何导致不同的结果。
+
+* **主要话题:**
+  - 视角与行为改变之间的关系
+  - 影响团队行为的领导方法
+  - 通过思维转变实现职业发展
+  - 改变看待挑战和机遇方式的实用框架
+
+* **为何值得观看:** 对于职场人士、领导者以及任何对个人发展感兴趣的人来说，这个视频提供了关于行为心理学的可操作见解。理解视角如何塑造行动对于职业成长、团队管理和实现职业目标具有变革性意义。Lenny's Podcast 以提供产品管理、领导力和职业发展方面的高质量内容而闻名。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aDU95pdThA8)**
 
