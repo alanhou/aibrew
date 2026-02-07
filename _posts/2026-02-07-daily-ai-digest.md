@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 07, 2026"
 date: 2026-02-07
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -472,57 +472,6 @@ Tirith 是一款命令行安全工具，在终端命令执行前进行拦截和�
 
 ---
 
-### 🎬 完整后端开发速成课 | 从入门到进阶 | 从零学习 Node.js、Express、MongoDB
-
-**频道:** Sheryians Coding School
-
-* **视频内容概述:** 这是一个全面的后端开发教程，从系统基础知识开始，逐步深入到高级概念。涵盖了现代后端开发所需的完整技术栈，包括 Node.js 运行时、Express 框架和 MongoDB 数据库集成。
-
-* **主要话题:**
-  - 系统基础知识和后端架构
-  - Node.js 核心概念和运行环境
-  - Express.js 框架构建 Web 应用
-  - MongoDB 数据库操作与集成
-  - 从零开始的全栈后端开发工作流
-  - 从初学者到高级开发者的进阶路径
-
-* **为何值得观看:** 这是一个一站式学习资源，非常适合想要掌握后端开发而不需要在多个教程之间跳转的学习者。讲师 Ankur Prajapati 提供了结构化的学习路径，带你从零基础到掌握高级后端技能，无论是刚开始后端学习之旅的初学者，还是希望巩固 Node.js 生态系统理解的中级开发者，都能从中受益。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0IciwnJ6PJI)**
-
-### Waymo World Model: Revolutionary Autonomous Driving Simulation Technology
-
-* **Massive Real-World Experience**: Waymo Driver has completed nearly 200 million fully autonomous miles in U.S. cities, while training through billions of virtual miles in simulated environments
-* **Frontier Generative Model**: The Waymo World Model sets new standards for large-scale, hyper-realistic autonomous driving simulation, serving as a critical pillar of Waymo's demonstrably safe AI approach
-* **Built on Genie 3 Foundation**: Leverages Google DeepMind's most advanced general-purpose world model to generate photorealistic and interactive 3D environments adapted for driving scenarios
-* **Multi-Sensor Simulation**: Generates high-fidelity outputs including both camera and lidar data, transferring vast 2D video knowledge into 3D lidar outputs unique to Waymo's hardware suite
-* **Extreme Scenario Capability**: Can simulate exceedingly rare events impossible to capture at scale in reality—from tornadoes and floods to snow-covered Golden Gate Bridge and raging fires
-* **High Controllability**: Engineers can modify simulations using simple language prompts, driving inputs, and scene layouts for fine-grained control
-* **Safety-Critical Testing**: Enables testing of rare and dangerous scenarios including reckless drivers, wrong-way vehicles, and off-road incidents before encountering them on public roads
-* **Broad World Knowledge**: Unlike traditional models trained only on collected road data, Genie 3's pre-training on extremely large and diverse video datasets allows exploration of never-before-observed situations
-
-### Waymo世界模型：自动驾驶仿真技术的新前沿
-
-* **海量真实驾驶经验**：Waymo Driver已在美国城市完成近2亿英里的全自动驾驶里程，同时在虚拟环境中训练了数十亿英里
-* **前沿生成式模型**：Waymo世界模型为大规模超逼真自动驾驶仿真设立新标准，是Waymo可证明安全AI方法的关键支柱之一
-* **基于Genie 3构建**：利用Google DeepMind最先进的通用世界模型，生成适配驾驶场景的逼真交互式3D环境
-* **多传感器仿真**：生成包括摄像头和激光雷达数据在内的高保真输出，将海量2D视频知识转化为Waymo硬件套件独有的3D激光雷达输出
-* **极端场景能力**：可模拟现实中几乎不可能大规模捕捉的极罕见事件——从龙卷风、洪水到积雪覆盖的金门大桥和熊熊大火
-* **高度可控性**：工程师可使用简单的语言提示、驾驶输入和场景布局来修改仿真，实现精细控制
-* **安全关键测试**：能够在公共道路遇到之前测试罕见危险场景，包括鲁莽驾驶、逆行车辆和越野事故
-* **广泛的世界知识**：不同于仅基于收集道路数据训练的传统模型，Genie 3在超大规模多样化视频数据集上的预训练使其能够探索从未观察过的情况
-
-**[Read Original / 阅读原文](https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation)**
-
-<!-- [Title-Only] -->
-### Show HN: I spent 4 years building a UI design tool with only the features I use
-
-* **What this article likely covers (based on title only):** This appears to be a "Show HN" post where a developer is presenting Vecti, a UI design tool they've spent four years creating. The emphasis on "only the features I use" suggests this is a minimalist, opinionated design tool that focuses on essential functionality rather than feature bloat. The article likely discusses the developer's motivation for building their own tool, the specific features they prioritized, and their philosophy of simplicity over complexity in design software.
-
-* **Why it might be interesting to readers:** This is compelling for several reasons: (1) It represents a significant personal project with four years of dedication, (2) It challenges the feature-heavy approach of mainstream design tools like Figma, Sketch, or Adobe XD, (3) It offers insights into what a practicing designer/developer considers truly essential, and (4) It's a real alternative for those frustrated with bloated software. The "Show HN" format also means the creator is likely open to feedback and discussion about their design choices.
-
----
-
 ### Show HN: 我花了4年时间打造了一个只包含我常用功能的UI设计工具
 
 * **根据标题推测的文章内容简介：** 这是一篇"Show HN"（展示项目）帖子，开发者展示了他们花费四年时间创建的UI设计工具Vecti。标题中强调"只包含我常用的功能"，暗示这是一个极简主义、有明确设计理念的工具，专注于核心功能而非功能堆砌。文章可能会讨论开发者构建自己工具的动机、他们优先考虑的具体功能，以及在设计软件中追求简洁而非复杂的理念。
@@ -894,4 +843,200 @@ Tirith 是一款命令行安全工具，在终端命令执行前进行拦截和�
 * **为何值得观看:** 非常适合想要通过最新、最实用的Studio插件来优化工作流程的Roblox开发者。短视频格式让你能够快速发现可以显著改善游戏开发过程的新工具。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vRGPh_sUbTY)**
+
+### OpenCiv3: Open-Source Reimagining of Civilization III
+
+* **Project Overview**: OpenCiv3 (formerly "C7") is an open-source, cross-platform remake of Civilization III built with Godot Engine and C#, designed to modernize the classic game while removing arbitrary limits and expanding modding capabilities
+* **Current Status**: Early pre-alpha (v0.3 "Dutch" Preview 1 released December 2025) - playable but lacking many mechanics and late-game content with expected errors
+* **Key Features**: Standalone mode with placeholder graphics OR enhanced experience using original Civ3 media files; supports Windows, Linux, and Mac OS (64-bit)
+* **System Requirements**: 64-bit OS; optional but recommended local copy of Civilization III Complete (available on Steam/GOG); hardware requirements not yet defined
+* **Installation**: Platform-specific executables available; Windows auto-detects Civ3 installation via registry; Linux/Mac require `CIV3_HOME` environment variable; Mac requires security workaround using `xattr -cr` command
+* **Known Issues**: Incomplete BIQ/SAV file support, Mac crashes on new game creation (workaround: load existing save files), primitive placeholder assets in standalone mode
+* **License**: MIT License - free and open source; not affiliated with Firaxis, Atari, or other original rights holders
+
+### OpenCiv3：《文明帝国III》开源重制项目
+
+* **项目概述**：OpenCiv3（原代号"C7"）是使用 Godot 引擎和 C# 构建的《文明帝国III》开源跨平台重制版，旨在现代化经典游戏，同时移除任意限制并扩展模组功能
+* **当前状态**：早期预览版（v0.3"Dutch"预览版1于2025年12月发布）- 可玩但缺少许多机制和后期内容，可能存在错误
+* **核心特性**：独立模式配备占位图形，或使用原版文明III媒体文件获得增强体验；支持 Windows、Linux 和 Mac OS（64位）
+* **系统要求**：64位操作系统；可选但推荐本地安装《文明帝国III完整版》（Steam/GOG有售）；硬件要求尚未确定
+* **安装说明**：提供各平台专用可执行文件；Windows通过注册表自动检测文明III安装；Linux/Mac需设置 `CIV3_HOME` 环境变量；Mac需使用 `xattr -cr` 命令解除安全限制
+* **已知问题**：BIQ/SAV文件支持不完整，Mac版创建新游戏时崩溃（解决方法：加载现有存档文件），独立模式使用原始占位资源
+* **许可协议**：MIT许可证 - 自由开源软件；与Firaxis、Atari等原版权方无关联
+
+**[Read Original / 阅读原文](https://openciv3.org/)**
+
+### Waymo World Model: Revolutionary Autonomous Driving Simulation Technology
+
+* **Waymo introduces the Waymo World Model**, a frontier generative AI model that creates hyper-realistic autonomous driving simulations, enabling the Waymo Driver to practice billions of virtual miles before encountering scenarios on real roads
+* **Built on Google DeepMind's Genie 3**, the model generates photorealistic, interactive 3D environments and is specifically adapted for autonomous driving requirements
+* **Multi-sensor simulation capability**: Generates high-fidelity outputs for both camera and lidar sensors, providing comprehensive training data across multiple modalities
+* **Emergent world knowledge**: Unlike traditional models trained only on road data, it leverages Genie 3's vast pre-training on diverse videos to simulate extremely rare events (tornadoes, floods, snow in tropical cities, etc.)
+* **High controllability**: Engineers can modify simulations using simple language prompts, driving inputs, and scene layouts
+* **Extreme weather and disaster scenarios**: Can simulate conditions like snow-covered Golden Gate Bridge, tornadoes, floods, wildfires, and other rare edge cases that are nearly impossible to capture at scale in reality
+* **Critical safety component**: Simulation is one of three key pillars in Waymo's approach to demonstrably safe AI for autonomous driving
+* **Real-world impact**: The Waymo Driver has traveled nearly 200 million fully autonomous miles in actual cities, with simulation training being crucial to this achievement
+
+### Waymo世界模型:自动驾驶仿真技术的新前沿
+
+* **Waymo推出世界模型**,这是一个前沿生成式AI模型,可创建超逼真的自动驾驶仿真环境,使Waymo Driver在真实道路遇到场景之前能够练习数十亿虚拟英里
+* **基于Google DeepMind的Genie 3构建**,该模型生成逼真的交互式3D环境,并专门针对自动驾驶需求进行了优化
+* **多传感器仿真能力**:为摄像头和激光雷达传感器生成高保真输出,提供跨多种模态的全面训练数据
+* **涌现的世界知识**:与仅使用道路数据训练的传统模型不同,它利用Genie 3在各种视频上的大规模预训练来模拟极其罕见的事件(龙卷风、洪水、热带城市降雪等)
+* **高度可控性**:工程师可以使用简单的语言提示、驾驶输入和场景布局来修改仿真
+* **极端天气和灾害场景**:可以模拟雪覆盖的金门大桥、龙卷风、洪水、野火等罕见边缘情况,这些在现实中几乎不可能大规模捕获
+* **关键安全组件**:仿真是Waymo实现可证明安全AI自动驾驶方法的三大支柱之一
+* **实际影响**:Waymo Driver已在实际城市中行驶近2亿英里的全自动驾驶里程,仿真训练对这一成就至关重要
+
+**[Read Original / 阅读原文](https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation)**
+
+### BreezyBox Shell Demo for ESP32-S3: Turn Your Microcontroller into a Tiny Instant-On PC
+
+* **Project Overview**: BreezyBox transforms ESP32-S3 microcontrollers into miniature instant-on PCs with built-in shell, editor, compiler, and online app installer - similar to Raspberry Pi but without the overhead of a full OS
+* **What is BreezyBox**: A mini-shell ESP-IDF component that provides virtual terminal (vterm), current working directory (CWD) tracking, UNIX-like commands, and app installer functionality running on FreeRTOS
+* **Nostalgic DOS-Era Appeal**: ESP32-S3 offers similar resources to DOS-era PCs with modern wireless communications, forcing away code bloat while enabling elegant, lightweight computing experiences
+* **Key Features**: Includes basic vterm, file system support, familiar shell commands, and leverages existing ESP-IDF components like elf_loader with dynamic linking capabilities
+* **Demo Hardware**: This specific demo supports Waveshare ESP32-S3-Touch-LCD-7B dev board (~€40), but the BreezyBox component is adaptable to various displays and boards
+* **Easy Integration**: Can be imported with one command into ESP-IDF projects; works with basic stdio implementations, LVGL text labels for LCD output, or headless USB console setups
+* **Performance Optimization**: Includes custom font renderer achieving 30+ FPS on larger displays, though users can use standard LVGL controls for simpler implementations
+* **Open Source & Extensible**: Released under MIT License with active call for community contributions including more ELF apps, board examples, and creative use cases
+* **Contributing Opportunities**: Seeking help with testing, creating apps for the breezyapps repository, porting to different boards (including P4, C6 RISC-V), retro game ports, and cyberdeck builds
+* **Getting Started**: Fork and clone the repository, adapt to your specific board (starting options range from $10 LCD dev boards to headless setups), and explore the connected components
+
+---
+
+### BreezyBox Shell 演示项目：将 ESP32-S3 微控制器变成迷你即时启动电脑
+
+* **项目概述**：BreezyBox 将 ESP32-S3 微控制器转变为具有内置 shell、编辑器、编译器和在线应用安装器的微型即时启动电脑 - 类似树莓派但没有完整操作系统的开销
+* **BreezyBox 是什么**：一个迷你 shell ESP-IDF 组件，提供虚拟终端（vterm）、当前工作目录（CWD）跟踪、类 UNIX 命令和应用安装器功能，运行在 FreeRTOS 上
+* **怀旧的 DOS 时代魅力**：ESP32-S3 提供与 DOS 时代电脑相似的资源配置，配合现代无线通信能力，摒弃代码臃肿，实现优雅轻量的计算体验
+* **核心功能**：包含基础虚拟终端、文件系统支持、熟悉的 shell 命令，并利用现有 ESP-IDF 组件如支持动态链接的 elf_loader
+* **演示硬件**：此演示专门支持 Waveshare ESP32-S3-Touch-LCD-7B 开发板（约 40 欧元），但 BreezyBox 组件可适配各种显示屏和开发板
+* **轻松集成**：可通过一条命令导入 ESP-IDF 项目；支持基础 stdio 实现、用于 LCD 输出的 LVGL 文本标签，或无头 USB 控制台设置
+* **性能优化**：包含自定义字体渲染器，在较大显示屏上实现 30+ FPS，但用户也可使用标准 LVGL 控件实现更简单的方案
+* **开源可扩展**：采用 MIT 许可证发布，积极呼吁社区贡献，包括更多 ELF 应用、开发板示例和创意用例
+* **贡献机会**：寻求测试帮助、为 breezyapps 仓库创建应用、移植到不同开发板（包括 P4、C6 RISC-V）、复古游戏移植和赛博朋克机箱制作
+* **入门指南**：Fork 并克隆仓库，适配到您的特定开发板（起步选项从 10 美元 LCD 开发板到无头设置），探索各组件的连接方式
+
+**[Read Original / 阅读原文](https://github.com/valdanylchuk/breezydemo)**
+
+### OpenClaw-Docker-CN-IM - AI Bot Gateway for Chinese IM Platforms
+
+**What it does:**
+* Pre-configured Docker image of OpenClaw with integrated plugins for major Chinese instant messaging platforms (Feishu/Lark, DingTalk, QQ Bot, WeCom)
+* Acts as an AI bot gateway that connects multiple IM platforms to AI models (OpenAI, Claude, Gemini)
+* Enables rapid deployment of AI chatbots across Chinese enterprise communication tools
+* Includes built-in AI code assistant (OpenCode AI), browser automation (Playwright), and Chinese text-to-speech
+
+**Key features:**
+* **One-click deployment** - Docker-based setup with environment variable configuration
+* **Multi-platform support** - Simultaneous connection to Feishu, DingTalk, QQ Bot, and WeCom
+* **Dual API protocol** - Supports both OpenAI and Claude (Anthropic) API formats
+* **Token optimization** - Designed to work with AIClient-2-API for unlimited token usage
+* **Data persistence** - Configuration and workspace data stored in Docker volumes
+* **Comprehensive documentation** - Detailed setup guides for each IM platform with permission requirements
+
+**Why it's notable:**
+* Solves the complexity of integrating AI bots with Chinese IM platforms (907 stars)
+* Addresses the unique requirements of Chinese enterprise communication ecosystem
+* Pre-configured plugins eliminate tedious setup for Feishu event subscriptions, DingTalk Stream mode, etc.
+* Recommended pairing with AIClient-2-API to bypass token consumption concerns
+* Supports Gemini's 1M token context window for enhanced conversational capabilities
+
+---
+
+### OpenClaw-Docker-CN-IM - 中国IM平台AI机器人网关
+
+**功能介绍:**
+* OpenClaw的Docker整合版，预装飞书、钉钉、QQ机器人、企业微信等主流中国IM平台插件
+* 作为AI机器人网关，连接多个IM平台与AI模型（OpenAI、Claude、Gemini）
+* 快速在中国企业通讯工具上部署AI聊天机器人
+* 内置AI代码助手（OpenCode AI）、浏览器自动化（Playwright）和中文语音合成
+
+**主要特点:**
+* **开箱即用** - 基于Docker的一键部署，通过环境变量配置
+* **多平台支持** - 同时连接飞书、钉钉、QQ机器人和企业微信
+* **双协议支持** - 支持OpenAI和Claude（Anthropic）两种API格式
+* **Token优化** - 设计配合AIClient-2-API实现无限Token调用
+* **数据持久化** - 配置和工作空间数据存储在Docker卷中
+* **详尽文档** - 每个IM平台的详细配置指南，包含权限要求说明
+
+**为何值得关注:**
+* 解决了AI机器人与中国IM平台集成的复杂性（907星标）
+* 针对中国企业通讯生态系统的独特需求
+* 预配置插件消除了繁琐设置（如飞书事件订阅、钉钉Stream模式等）
+* 推荐搭配AIClient-2-API使用，彻底解决Token消耗顾虑
+* 支持Gemini的100万Token上下文窗口，增强对话能力
+
+**[View Repository / 查看仓库](https://github.com/justlovemaki/OpenClaw-Docker-CN-IM)**
+
+### 🎬 Complete Backend One Shot | Beginners to Advanced | Learn Node.js, Express, MongoDB from Scratch
+
+**Channel:** Sheryians Coding School
+
+* **What the video covers:** This comprehensive tutorial takes viewers through complete backend development, starting from system fundamentals and progressing to advanced concepts. It covers the entire stack needed for modern backend development including Node.js runtime, Express framework, and MongoDB database integration.
+
+* **Key topics discussed:** 
+  - System fundamentals and backend architecture
+  - Node.js core concepts and runtime environment
+  - Express.js framework for building web applications
+  - MongoDB database operations and integration
+  - Full-stack backend development workflow from scratch
+  - Beginner to advanced progression path
+
+* **Why it's worth watching:** This is an all-in-one resource perfect for anyone looking to master backend development without jumping between multiple tutorials. Instructor Ankur Prajapati provides a structured learning path that takes you from zero knowledge to advanced backend skills, making it ideal for beginners starting their backend journey or intermediate developers looking to solidify their understanding of the Node.js ecosystem.
+
+---
+
+### 🎬 完整后端开发速成课 | 从入门到进阶 | 从零学习 Node.js、Express、MongoDB
+
+**频道:** Sheryians Coding School
+
+* **视频内容概述:** 这是一个全面的后端开发教程，从系统基础知识开始，逐步深入到高级概念。涵盖了现代后端开发所需的完整技术栈，包括 Node.js 运行时、Express 框架和 MongoDB 数据库集成。
+
+* **主要话题:**
+  - 系统基础知识和后端架构
+  - Node.js 核心概念和运行环境
+  - Express.js 框架构建 Web 应用
+  - MongoDB 数据库操作与集成
+  - 从零开始的全栈后端开发工作流
+  - 从初学者到高级开发者的进阶路径
+
+* **为何值得观看:** 这是一个一站式学习资源，非常适合想要掌握后端开发而不需要在多个教程之间跳转的学习者。讲师 Ankur Prajapati 提供了结构化的学习路径，带你从零基础到掌握高级后端技能，无论是刚开始后端学习之旅的初学者，还是希望巩固 Node.js 生态系统理解的中级开发者，都能从中受益。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0IciwnJ6PJI)**
+
+### 🎬 Artificial Intelligence With Python And DSA Roadmap
+
+**Channel:** WebKnower
+
+* **What the video covers:** This short-form video presents a structured learning roadmap for combining Artificial Intelligence, Python programming, and Data Structures & Algorithms (DSA). It provides guidance on how to approach learning these interconnected technical skills systematically.
+
+* **Key topics discussed:** 
+  - Complete DSA roadmap for AI development
+  - Python as the foundation language for AI
+  - Integration of data structures and algorithms with AI concepts
+  - Learning path for beginners transitioning into AI
+  - Programming logic fundamentals
+
+* **Why it's worth watching:** Ideal for beginners and intermediate learners who want a clear, concise roadmap to break into AI development. The video addresses common queries about how to structure learning across Python, DSA, and AI—three critical pillars for modern tech careers. Perfect for quick reference and direction-setting in your learning journey.
+
+---
+
+### 🎬 人工智能与Python和数据结构算法学习路线图
+
+**频道:** WebKnower
+
+* **视频内容概述:** 这个短视频展示了一个结构化的学习路线图，涵盖人工智能、Python编程和数据结构与算法（DSA）的结合。它为如何系统地学习这些相互关联的技术技能提供了指导。
+
+* **主要话题:**
+  - AI开发的完整DSA路线图
+  - Python作为AI的基础编程语言
+  - 数据结构和算法与AI概念的整合
+  - 初学者过渡到AI领域的学习路径
+  - 编程逻辑基础
+
+* **为何值得观看:** 非常适合想要清晰、简洁的AI开发路线图的初学者和中级学习者。该视频解答了关于如何构建Python、DSA和AI学习结构的常见问题——这是现代科技职业的三大关键支柱。适合快速参考和确定学习方向。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=riv1sD6WXQ0)**
 
