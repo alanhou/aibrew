@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 07, 2026"
 date: 2026-02-07
-description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1231,4 +1231,76 @@ Tirith 是一款命令行安全工具，在终端命令执行前进行拦截和�
 * **为何值得观看:** 非常适合机器人爱好者、FNAF粉丝以及对电子动画感兴趣的创客。视频提供了为定制电子动画项目编程复杂运动模式的实用见解，将流行文化与实践工程相结合。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=9Ag4hsAwW5w)**
+
+### What Is Ruliology? A New Science of Simple Rules
+
+* **Ruliology defined**: The pure basic science of studying what simple rules do - exploring how systems behave when following particular sets of simple rules in the computational universe
+* **Not computer science or mathematics**: Unlike computer science (which focuses on purpose-built programs) or mathematics (which emphasizes proofs), ruliology observes what abstract rules do in their natural state
+* **A precise, reproducible science**: Rules produce the same results every time with no ambiguity - studying specific systems like cellular automata, Turing machines, and multiway string substitution systems
+* **Confronts computational irreducibility**: Many rule behaviors require irreducible computational effort to determine and may be formally undecidable, leading to constant surprises even after decades of study
+* **Foundation of complexity studies**: Ruliology examines complexity at its ultimate source, showing how complexity emerges from the simplest origins and building intuition for modeling systems
+* **Both experimental and theoretical**: Combines running programs to observe behavior (experimental) with studying completely precise, abstract computational systems (theoretical)
+* **Guided by the Principle of Computational Equivalence**: This fundamental principle shapes expectations and has been validated through discoveries like the universality of rule 110 and the 2,3 Turing machine
+* **Timeless and fundamental**: Like mathematical constructs such as the icosahedron, simple rules and their patterns (like rule 30) are foundational discoveries that remain relevant forever
+* **Methodology behind major breakthroughs**: Stephen Wolfram's 40-year practice of ruliology led to understanding complexity origins, formulating "A New Kind of Science," and launching the Wolfram Physics Project
+* **Best practices emphasize simplicity**: Good ruliology uses the most minimal rules explainable through diagrams, with explicit visualization schemes that show complete behavior without distracting elements
+
+### 什么是规则学？研究简单规则的新科学
+
+* **规则学的定义**：研究简单规则行为的纯粹基础科学——探索系统在计算宇宙中遵循特定简单规则集时的行为表现
+* **既非计算机科学也非数学**：不同于计算机科学（专注于特定目的的程序）或数学（强调证明），规则学观察抽象规则在自然状态下的表现
+* **精确且可重复的科学**：规则每次都产生相同结果，没有歧义——研究元胞自动机、图灵机和多路字符串替换系统等具体系统
+* **面对计算不可约性**：许多规则行为需要不可约的计算努力才能确定，可能在形式上不可判定，即使经过数十年研究仍不断带来惊喜
+* **复杂性研究的基础**：规则学在其最终源头研究复杂性，展示复杂性如何从最简单的起源中涌现，为系统建模建立直觉
+* **兼具实验性和理论性**：结合运行程序观察行为（实验性）与研究完全精确的抽象计算系统（理论性）
+* **由计算等价性原理指导**：这一基本原理塑造了预期，并通过规则110的通用性和2,3图灵机等发现得到验证
+* **永恒且基础**：如同正二十面体等数学构造，简单规则及其模式（如规则30）是永远保持相关性的基础性发现
+* **重大突破背后的方法论**：Stephen Wolfram 40年的规则学实践促成了对复杂性起源的理解、《一种新科学》的构想以及沃尔夫勒姆物理项目的启动
+* **最佳实践强调简洁性**：优秀的规则学使用可通过图表解释的最简规则，采用明确的可视化方案完整展示行为而不引入干扰元素
+
+**[Read Original / 阅读原文](https://writings.stephenwolfram.com/2026/01/what-is-ruliology/)**
+
+### Rare Atari Battlezone Cabinet Production Footage from 1980
+
+* **Previously unseen footage** reveals the manufacturing process of Atari's iconic *Battlezone* arcade cabinets at their Sunnyvale, California facility from late summer/early fall 1980
+* **Ed Rotberg's technical achievement**: Created a groundbreaking first-person vector tank simulation that pushed Atari's hardware to its limits, adapting technology from *Lunar Lander* and *Asteroids* into entirely new territory
+* **Innovative cabinet design**: The distinctive periscope-style viewfinder was an integral immersive feature, not just a gimmick, designed by industrial designer Mike Querio
+* **Design challenges**: Original periscope design didn't include side acrylic windows; project manager Morgan Hoff requested modifications. A removable step accommodated shorter players and reduced shipping size
+* **Production scale**: Approximately 13,000 *Battlezone* upright cabinets were manufactured between August 1980 and March 1981
+* **Manufacturing insights**: Footage shows assembly line operations, finishing touches, packing, and shipping processes at Atari's Coin-Op Manufacturing Facility
+* **Historical significance**: The cabinet became one of the most recognizable designs of the arcade golden age, with development story and physical cabinet design deeply intertwined
+
+---
+
+### 1980年雅达利《战区》街机柜生产罕见影像
+
+* **首次公开的影像**揭示了雅达利标志性《战区》街机柜的制造过程,拍摄于1980年夏末/初秋加州桑尼维尔工厂
+* **Ed Rotberg的技术成就**:创造了突破性的第一人称矢量坦克模拟游戏,将雅达利硬件推向极限,改编了《月球登陆器》和《小行星》的技术并开辟全新领域
+* **创新的机柜设计**:独特的潜望镜式取景器是核心沉浸式功能而非噱头,由工业设计师Mike Querio设计
+* **设计挑战**:原始潜望镜设计不包含侧面亚克力窗;项目经理Morgan Hoff要求添加后进行了修改。可拆卸踏板方便身材较矮的玩家使用,同时减少运输尺寸
+* **生产规模**:1980年8月至1981年3月期间,约生产了13,000台《战区》立式街机柜
+* **制造细节**:影像展示了雅达利投币游戏制造工厂的装配线操作、最后修整、包装和运输流程
+* **历史意义**:该机柜成为街机黄金时代最具辨识度的设计之一,游戏开发故事与实体机柜设计深度融合
+
+**[Read Original / 阅读原文](https://arcadeblogger.com/2026/02/02/unseen-footage-of-atari-battlezone-cabinet-production/)**
+
+### Delimited Continuations vs Lwt for Threads in MirageOS
+
+* **MirageOS Architecture**: MirageOS is a fully event-driven system without preemptive threads support, relying on event callbacks triggered by network packets, I/O, or timers
+* **Lwt Threading Library**: Uses a monadic approach with three core functions - `return` (creates thread from value), `bind` (composes future callbacks), and `run` (executes thread)
+* **Lwt Concerns**: Two main issues - existing code requires adaptation to monadic style using `return` and `bind`, and blocking points require closure allocation which impacts performance
+* **Syntax Extensions**: Lwt provides syntax extensions (`lwt`, `for_lwt`, `match_lwt` keywords) to make code more OCaml-like and reduce verbosity
+* **Delimited Continuations Alternative**: The `delimcc` library implements delimited continuations for OCaml, enabling restartable exceptions that can resume execution
+* **Lwt_fiber Library**: Jake Donham's library elegantly combines `delimcc` with Lwt, offering an alternative approach to handling asynchronous operations
+
+### MirageOS 中的限定延续与 Lwt 线程对比
+
+* **MirageOS 架构**：MirageOS 是完全事件驱动的系统，不支持抢占式线程，依赖由网络数据包、I/O 或定时器触发的事件回调
+* **Lwt 线程库**：采用单子（Monad）方法，包含三个核心函数 - `return`（从值创建线程）、`bind`（组合未来回调）和 `run`（执行线程）
+* **Lwt 的问题**：两个主要问题 - 现有代码需要适配为使用 `return` 和 `bind` 的单子风格，阻塞点需要分配闭包影响性能
+* **语法扩展**：Lwt 提供语法扩展（`lwt`、`for_lwt`、`match_lwt` 关键字），使代码更接近 OCaml 原生风格并减少冗余
+* **限定延续替代方案**：`delimcc` 库为 OCaml 实现限定延续，支持可重启异常，能够恢复执行
+* **Lwt_fiber 库**：Jake Donham 的库优雅地结合了 `delimcc` 和 Lwt，为处理异步操作提供了替代方案
+
+**[Read Original / 阅读原文](https://mirageos.org/blog/delimcc-vs-lwt)**
 
