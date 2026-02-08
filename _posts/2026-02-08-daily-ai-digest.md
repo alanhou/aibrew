@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 08, 2026"
 date: 2026-02-08
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -903,4 +903,313 @@ Heretic 是一个 Python 工具,可以自动移除基于 Transformer 的语言�
 * **为何值得观看:** 这是苹果开发者的必看视频，因为它代表了苹果生态系统中编程方式的重大转变。多个 AI 智能体协同工作的集成标志着开发者生产力工具的重大进步。开发者可以学习如何利用这些前沿的 AI 能力来加速工作流程，更高效地解决复杂问题，并在现代软件开发实践中保持领先地位。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=oV6mC8Rt1kY)**
+
+### TCC: Tiny C Compiler - A Lightweight and Fast C Compiler
+
+* **Ultra-compact size**: TCC executable is only about 100KB for x86, including C preprocessor, compiler, assembler and linker - small enough to fit on rescue disks
+* **Exceptional speed**: Compiles approximately 9 times faster than GCC, generating x86 code directly without bytecode overhead
+* **Full compatibility**: Supports any C dynamic library directly, aims for full ISO C99 compliance, and can compile itself
+* **Built-in safety features**: Includes optional memory and bound checker that can be mixed freely with standard code
+* **Direct execution**: Can compile and execute C source code directly without separate linking or assembly steps
+* **C scripting support**: Add `#!/usr/local/bin/tcc -run` as shebang to execute C files as scripts from command line
+* **Dynamic code generation**: Provides `libtcc` library for using TCC as a backend for runtime code generation
+* **Performance benchmark**: In Links Browser project test (76,936 lines), TCC compiled at 859,000 lines/second (29.6 MB/s) vs GCC's 98,000 lines/second (3.4 MB/s)
+* **Open source**: Distributed under GNU Lesser General Public License (LGPL)
+* **Created by Fabrice Bellard**: Original author no longer actively developing; community maintains through mailing list
+
+### TCC：微型 C 编译器 - 轻量级高速 C 编译器
+
+* **超小体积**：x86 版本的 TCC 可执行文件仅约 100KB，包含 C 预处理器、编译器、汇编器和链接器 - 小到可以放在救援磁盘上
+* **卓越速度**：编译速度比 GCC 快约 9 倍，直接生成 x86 代码，无字节码开销
+* **完全兼容**：直接支持任何 C 动态库，目标是完全符合 ISO C99 标准，并且可以自我编译
+* **内置安全特性**：包含可选的内存和边界检查器，边界检查代码可以与标准代码自由混合
+* **直接执行**：可以直接编译和执行 C 源代码，无需单独的链接或汇编步骤
+* **C 脚本支持**：在 C 文件首行添加 `#!/usr/local/bin/tcc -run` 即可从命令行直接执行 C 文件作为脚本
+* **动态代码生成**：提供 `libtcc` 库，可将 TCC 用作运行时代码生成的后端
+* **性能基准测试**：在 Links 浏览器项目测试中（76,936 行代码），TCC 编译速度达 859,000 行/秒（29.6 MB/秒），而 GCC 为 98,000 行/秒（3.4 MB/秒）
+* **开源项目**：采用 GNU 宽松通用公共许可证（LGPL）发布
+* **由 Fabrice Bellard 创建**：原作者不再积极开发；社区通过邮件列表维护项目
+
+**[Read Original / 阅读原文](https://bellard.org/tcc/)**
+
+### Speed Up Responses with Claude Fast Mode
+
+**Overview:**
+* Fast mode delivers faster Opus 4.6 responses at higher cost per token - same model quality with optimized API configuration for lower latency
+* Currently in research preview with 50% discount until February 16, 11:59pm PT
+* Toggle with `/fast` command in Claude Code CLI or VS Code Extension
+* Available for Pro/Max/Team/Enterprise subscription plans via extra usage only (not included in base subscription limits)
+
+**Pricing Structure:**
+* Fast mode (<200K tokens): $30 input / $150 output per MTok
+* Fast mode (>200K tokens): $60 input / $225 output per MTok
+* Compatible with 1M token extended context window
+* Billed directly to extra usage from first token, bypassing plan's included usage
+
+**How to Toggle:**
+* Type `/fast` and press Tab to toggle on/off
+* Set `"fastMode": true` in user settings file
+* Persists across sessions with `↯` icon indicator when active
+* Auto-switches to Opus 4.6 when enabled; use `/model` to change models after disabling
+
+**Best Use Cases:**
+* **Use fast mode for:** Rapid code iteration, live debugging, time-sensitive work with tight deadlines
+* **Use standard mode for:** Long autonomous tasks, batch processing, CI/CD pipelines, cost-sensitive workloads
+* Can combine with lower effort level for maximum speed on straightforward tasks
+
+**Requirements:**
+* Not available on third-party cloud providers (AWS Bedrock, Google Vertex AI, Azure Foundry)
+* Extra usage must be enabled in billing settings
+* Teams/Enterprise require admin enablement (disabled by default)
+
+**Rate Limit Handling:**
+* Separate rate limits from standard Opus 4.6
+* Auto-fallback to standard mode when limits hit (gray `↯` icon during cooldown)
+* Auto re-enables when cooldown expires or manually disable with `/fast`
+
+**Cost Optimization Tips:**
+* Enable fast mode at session start, not mid-conversation (switching mid-session charges full fast mode price for entire context)
+* Fast mode vs effort level: Fast mode = same quality + lower latency + higher cost; Lower effort = less thinking + faster response + potentially lower quality
+
+---
+
+### Claude 快速模式加速响应
+
+**概述:**
+* 快速模式以更高的每 token 成本提供更快的 Opus 4.6 响应 - 相同模型质量,采用优化的 API 配置以降低延迟
+* 目前处于研究预览阶段,2月16日太平洋时间晚上11:59前享受5折优惠
+* 在 Claude Code CLI 或 VS Code 扩展中使用 `/fast` 命令切换
+* 仅适用于 Pro/Max/Team/Enterprise 订阅计划的额外用量(不包含在基础订阅限额内)
+
+**价格结构:**
+* 快速模式(<200K tokens):输入 $30 / 输出 $150 每百万 token
+* 快速模式(>200K tokens):输入 $60 / 输出 $225 每百万 token
+* 兼容 100 万 token 扩展上下文窗口
+* 从第一个 token 开始直接计入额外用量,绕过计划包含的用量
+
+**如何切换:**
+* 输入 `/fast` 并按 Tab 键开关切换
+* 在用户设置文件中设置 `"fastMode": true`
+* 跨会话持久保存,激活时显示 `↯` 图标指示器
+* 启用时自动切换到 Opus 4.6;禁用后使用 `/model` 更改模型
+
+**最佳使用场景:**
+* **使用快速模式:** 快速代码迭代、实时调试、有紧迫截止日期的时间敏感工作
+* **使用标准模式:** 长时间自主任务、批处理、CI/CD 管道、成本敏感型工作负载
+* 可与较低努力级别结合使用,在简单任务上实现最大速度
+
+**使用要求:**
+* 不支持第三方云提供商(AWS Bedrock、Google Vertex AI、Azure Foundry)
+* 必须在账单设置中启用额外用量
+* Teams/Enterprise 需要管理员启用(默认禁用)
+
+**速率限制处理:**
+* 与标准 Opus 4.6 分开的速率限制
+* 达到限制时自动回退到标准模式(冷却期间显示灰色 `↯` 图标)
+* 冷却期结束后自动重新启用,或使用 `/fast` 手动禁用
+
+**成本优化提示:**
+* 在会话开始时启用快速模式,而非对话中途切换(中途切换会对整个上下文按快速模式全价收费)
+* 快速模式 vs 努力级别:快速模式 = 相同质量 + 更低延迟 + 更高成本;较低努力级别 = 更少思考 + 更快响应 + 复杂任务质量可能降低
+
+**[Read Original / 阅读原文](https://code.claude.com/docs/en/fast-mode)**
+
+<!-- [Title-Only] -->
+### Brookhaven Lab's RHIC Concludes 25-Year Run with Final Collisions
+
+**Based on the title alone**, this article likely covers:
+
+* The conclusion of operations at the Relativistic Heavy Ion Collider (RHIC) at Brookhaven National Laboratory after 25 years of service
+* The final particle collision experiments conducted at this major physics research facility
+* A retrospective on RHIC's contributions to nuclear physics and our understanding of quark-gluon plasma and the early universe
+* Possible implications for future research directions and what facility might continue this work
+
+**Why it might be interesting to readers:**
+
+* Marks the end of an era for a major scientific instrument that has been fundamental to particle physics research since the late 1990s
+* RHIC has been crucial in recreating conditions similar to microseconds after the Big Bang
+* Represents significant investment in scientific infrastructure and the evolution of high-energy physics research
+* May signal transitions in the field toward newer facilities or different research approaches
+
+---
+
+### 布鲁克海文国家实验室的 RHIC 完成 25 年运行，进行最后碰撞实验
+
+**仅根据标题推测**，这篇文章可能涵盖：
+
+* 布鲁克海文国家实验室的相对论重离子对撞机（RHIC）在服役 25 年后结束运行
+* 该重要物理研究设施进行的最终粒子碰撞实验
+* 回顾 RHIC 对核物理学的贡献，以及其在夸克-胶子等离子体和早期宇宙研究方面的成就
+* 未来研究方向的可能影响，以及哪些设施可能继续这项工作
+
+**为何值得关注：**
+
+* 标志着一个重要科学仪器时代的结束，该设施自 20 世纪 90 年代末以来一直是粒子物理研究的基础
+* RHIC 在重现类似大爆炸后微秒级条件方面发挥了关键作用
+* 代表了科学基础设施的重大投资以及高能物理研究的演进
+* 可能预示着该领域向更新设施或不同研究方法的转变
+
+**[Read Original / 阅读原文](https://www.hpcwire.com/off-the-wire/brookhaven-labs-rhic-concludes-25-year-run-with-final-collisions/)**
+
+### GLM-OCR - State-of-the-Art Multimodal OCR for Complex Document Understanding
+
+**What it does**
+* A multimodal OCR model built on GLM-V encoder-decoder architecture for complex document understanding
+* Performs layout analysis and text recognition on diverse document types including tables, formulas, code, and seals
+* Outputs structured results in both JSON and Markdown formats with high accuracy
+
+**Key features**
+* **Top Performance**: Achieves 94.62 on OmniDocBench V1.5 (#1 ranking), excels at formula recognition, table extraction, and information retrieval
+* **Lightweight & Fast**: Only 0.9B parameters with Multi-Token Prediction (MTP) for efficient inference via vLLM, SGLang, and Ollama
+* **Flexible Deployment**: Three options - cloud API (no GPU needed), self-hosted (vLLM/SGLang), or Apple Silicon (MLX)
+* **Developer-Friendly SDK**: Simple CLI (`glmocr parse`), Python API, and Flask service with modular architecture for customization
+* **Production-Ready**: Optimized for real-world scenarios with robust handling of complex layouts, low latency, and easy integration
+
+**Why it's notable**
+* Combines state-of-the-art accuracy with practical efficiency - rare for OCR models to excel at both
+* Fully open-sourced with comprehensive tooling (SDK, multiple deployment options, detailed documentation)
+* Integrates PP-DocLayout-V3 for advanced layout detection in a complete pipeline
+* Gaining rapid adoption (727 stars) for its balance of performance, ease of use, and deployment flexibility
+* Backed by Zhipu AI with active community support (WeChat/Discord) and cloud API availability
+
+---
+
+### GLM-OCR - 面向复杂文档理解的先进多模态OCR模型
+
+**功能介绍**
+* 基于GLM-V编码器-解码器架构的多模态OCR模型,专注复杂文档理解
+* 对表格、公式、代码、印章等多种文档类型进行版面分析和文本识别
+* 输出高精度的JSON和Markdown格式结构化结果
+
+**主要特点**
+* **顶尖性能**: 在OmniDocBench V1.5上得分94.62(排名第一),在公式识别、表格提取和信息抽取等基准测试中表现卓越
+* **轻量高效**: 仅0.9B参数,采用多令牌预测(MTP)技术,支持vLLM、SGLang和Ollama快速推理
+* **灵活部署**: 三种方式 - 云端API(无需GPU)、自托管(vLLM/SGLang)或Apple芯片(MLX)
+* **开发者友好SDK**: 简洁的CLI命令(`glmocr parse`)、Python API和Flask服务,模块化架构便于定制
+* **生产就绪**: 针对真实场景优化,稳健处理复杂版面,低延迟,易于集成到现有流程
+
+**为何值得关注**
+* 罕见地同时实现顶尖准确度和实用效率,在OCR模型中脱颖而出
+* 完全开源并配备完善工具链(SDK、多种部署选项、详细文档)
+* 集成PP-DocLayout-V3实现完整的高级版面检测流程
+* 快速获得采用(727星标),因其性能、易用性和部署灵活性的平衡而受青睐
+* 由智谱AI支持,提供活跃的社区支持(微信/Discord)和云端API服务
+
+**[View Repository / 查看仓库](https://github.com/zai-org/GLM-OCR)**
+
+### 🎬 ✨ Best Roblox Studio Plugins of 2026!? ✨
+
+**Channel:** BloxingDev
+
+* **What the video covers:** This short-form video showcases the top recommended plugins for Roblox Studio in 2026, designed to enhance game development workflow and productivity.
+
+* **Key topics discussed:** 
+  - Essential Roblox Studio plugins for developers
+  - Tools to improve coding and building efficiency
+  - Plugin recommendations for both beginner and advanced creators
+
+* **Why it's worth watching:** Perfect for Roblox developers looking to streamline their workflow with the latest and most useful Studio plugins. The short format makes it easy to quickly discover new tools that can significantly improve your game development process.
+
+---
+
+### 🎬 ✨ 2026年最佳Roblox Studio插件!? ✨
+
+**频道:** BloxingDev
+
+* **视频内容概述:** 这个短视频展示了2026年Roblox Studio最值得推荐的插件，旨在提升游戏开发工作流程和生产力。
+
+* **主要话题:**
+  - 开发者必备的Roblox Studio插件
+  - 提高编码和构建效率的工具
+  - 适合新手和高级创作者的插件推荐
+
+* **为何值得观看:** 非常适合想要通过最新、最实用的Studio插件来优化工作流程的Roblox开发者。短视频格式让你能够快速发现可以显著改善游戏开发过程的新工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vRGPh_sUbTY)**
+
+### 🎬 Artificial Intelligence With Python And DSA Roadmap
+
+**Channel:** WebKnower
+
+* **What the video covers:** This short-form video presents a structured learning roadmap for combining Artificial Intelligence, Python programming, and Data Structures & Algorithms (DSA). It provides guidance on how to approach learning these interconnected technical skills systematically.
+
+* **Key topics discussed:** 
+  - Complete DSA roadmap for AI development
+  - Python as the foundation language for AI
+  - Integration of data structures and algorithms with AI concepts
+  - Learning path for beginners transitioning into AI
+  - Programming logic fundamentals
+
+* **Why it's worth watching:** Ideal for beginners and intermediate learners who want a clear, concise roadmap to break into AI development. The video addresses common queries about how to structure learning across Python, DSA, and AI—three critical pillars for modern tech careers. Perfect for quick reference and direction-setting in your learning journey.
+
+---
+
+### 🎬 人工智能与Python和数据结构算法学习路线图
+
+**频道:** WebKnower
+
+* **视频内容概述:** 这个短视频展示了一个结构化的学习路线图，涵盖人工智能、Python编程和数据结构与算法（DSA）的结合。它为如何系统地学习这些相互关联的技术技能提供了指导。
+
+* **主要话题:**
+  - AI开发的完整DSA路线图
+  - Python作为AI的基础编程语言
+  - 数据结构和算法与AI概念的整合
+  - 初学者过渡到AI领域的学习路径
+  - 编程逻辑基础
+
+* **为何值得观看:** 非常适合想要清晰、简洁的AI开发路线图的初学者和中级学习者。该视频解答了关于如何构建Python、DSA和AI学习结构的常见问题——这是现代科技职业的三大关键支柱。适合快速参考和确定学习方向。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=riv1sD6WXQ0)**
+
+### 🎬 Vibe Coding Guide for Designers
+**Channel:** Andres The Designer
+
+* **What the video covers:** A practical guide for designers to transition from creating prototypes to shipping actual, functional user interfaces using modern AI-powered coding tools
+* **Key topics discussed:** Figma Make integration, AI coding assistants like v0, Bolt, and Replit, bridging the gap between design and development, moving beyond static mockups to production-ready code
+* **Why it's worth watching:** Essential for designers who want to expand their skillset beyond visual design, learn how to leverage AI tools to build real products, and become more autonomous in the product development process without needing deep coding expertise
+
+---
+
+### 🎬 设计师的氛围编码指南
+**频道:** Andres The Designer
+
+* **视频内容概述:** 为设计师提供实用指南，帮助他们从创建原型过渡到交付真实可用的用户界面，利用现代AI驱动的编码工具
+* **主要话题:** Figma Make集成、v0/Bolt/Replit等AI编码助手、弥合设计与开发之间的鸿沟、从静态模型到可投入生产的代码
+* **为何值得观看:** 对于想要拓展视觉设计之外技能的设计师来说必看，学习如何利用AI工具构建真实产品，在无需深厚编码专业知识的情况下在产品开发过程中变得更加自主
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bV3JILGbKfE)**
+
+### 🎬 Master AI Coding: Stop Copy-Pasting and Start Engineering (2026 Guide)
+
+**Channel:** Learn with Sumit - LWS - Bangladesh
+
+* **What the video covers:** This video addresses the critical gap between simply generating code with AI tools and actually engineering quality software. It focuses on moving beyond blind copy-pasting of AI-generated code to understanding and validating what you're implementing.
+
+* **Key topics discussed:**
+  - The difference between AI code generation and proper software engineering
+  - How to verify and validate AI-generated code for correctness
+  - Best practices for integrating AI coding tools into your development workflow
+  - Critical thinking approaches when working with AI-assisted coding
+  - Quality assurance techniques for AI-generated solutions
+
+* **Why it's worth watching:** As AI coding tools become ubiquitous in 2026, this guide is essential for developers who want to maintain code quality and truly understand their implementations. It teaches you to be an engineer who uses AI as a tool, rather than becoming dependent on copy-pasting without comprehension—a crucial skill for professional growth and building reliable software.
+
+---
+
+### 🎬 Master AI Coding: Copy-Pasting বন্ধ করে Engineering করুন (2026 Guide)
+
+**频道:** Learn with Sumit - LWS - Bangladesh
+
+* **视频内容概述:** 本视频探讨了使用AI工具生成代码与真正的软件工程之间的关键差异。重点讲解如何超越盲目复制粘贴AI生成的代码，转而理解和验证所实现的内容。
+
+* **主要话题:**
+  - AI代码生成与正规软件工程的区别
+  - 如何验证AI生成代码的正确性
+  - 将AI编码工具整合到开发工作流程的最佳实践
+  - 使用AI辅助编码时的批判性思维方法
+  - AI生成解决方案的质量保证技术
+
+* **为何值得观看:** 随着2026年AI编码工具的普及，本指南对于希望保持代码质量并真正理解其实现的开发者至关重要。它教你成为一名将AI作为工具使用的工程师，而不是依赖于不加理解的复制粘贴——这是职业成长和构建可靠软件的关键技能。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gA-4fA_7kc8)**
 
