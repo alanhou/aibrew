@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 08, 2026"
 date: 2026-02-08
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，8个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1513,4 +1513,147 @@ Heretic 是一个 Python 工具,可以自动移除基于 Transformer 的语言�
 * **为何值得关注：** 罗杰·艾伯特是历史上最具影响力的影评人之一，而《肖申克的救赎》一直被评为有史以来最伟大的电影之一（经常在IMDb Top 250中排名第一）。这篇评论深入剖析了为什么这部电影能如此深刻地引起观众共鸣，尽管它最初的票房表现不佳。对于电影爱好者来说，艾伯特的分析为理解电影制作和叙事技巧提供了宝贵的视角。这也是一份文化史料，记录了影评观点如何演变，以及某些电影如何获得永恒地位。
 
 **[Read Original / 阅读原文](https://www.rogerebert.com/reviews/great-movie-the-shawshank-redemption-1994)**
+
+### DoNotNotify Goes Open Source: Privacy Through Transparency
+
+* **DoNotNotify is now fully open source** - The complete source code is publicly available on GitHub at github.com/anujja/DoNotNotify for anyone to view, study, and contribute to
+* **Privacy commitment backed by transparency** - Built with a strong focus on privacy, the app demonstrates its trustworthiness through complete code transparency, allowing users to verify that it does exactly what it claims
+* **Community contributions welcome** - The project invites developers and users to participate by reporting bugs, suggesting new features, or submitting pull requests to improve the app for everyone
+* **Verification over trust** - Users no longer need to rely solely on the developer's promises; they can independently audit the code to ensure data privacy and security
+
+### DoNotNotify 现已开源：通过透明度保障隐私
+
+* **DoNotNotify 现已完全开源** - 完整源代码已在 GitHub 上公开发布（github.com/anujja/DoNotNotify），任何人都可以查看、学习和贡献代码
+* **以透明度支持隐私承诺** - 该应用以强大的隐私保护为核心构建，通过完全的代码透明度展示其可信度，允许用户验证应用确实如其所述运行
+* **欢迎社区贡献** - 项目邀请开发者和用户参与，通过报告错误、建议新功能或提交拉取请求来帮助改进应用
+* **验证胜于信任** - 用户不再需要仅仅依赖开发者的承诺，可以独立审查代码以确保数据隐私和安全性
+
+**[Read Original / 阅读原文](https://donotnotify.com/opensource.html)**
+
+<!-- [Title-Only] -->
+### Dave Farber has passed away
+
+**Based on the title alone:**
+
+* This article announces the passing of Dave Farber, a significant figure in the technology and internet community. Dave Farber is widely known as one of the "grandfathers of the Internet" and was instrumental in the early development of computer networking and distributed systems. He was also famous for his "Interesting People" (IP) mailing list, which became an influential forum for technology policy discussions.
+
+* This is significant to readers because it marks the loss of a pioneering figure in internet history. Those interested in the history of computing, internet governance, and the evolution of digital communications will want to pay tribute to his contributions. The announcement likely comes from the NANOG (North American Network Operators' Group) mailing list, indicating the impact he had on the networking community.
+
+---
+
+### Dave Farber 逝世
+
+**仅根据标题推测：**
+
+* 本文宣布了 Dave Farber 的逝世消息。Dave Farber 是技术和互联网社区的重要人物，被广泛誉为"互联网之祖父"之一，在早期计算机网络和分布式系统的发展中发挥了关键作用。他还因创办著名的"Interesting People"（IP）邮件列表而闻名，该列表成为技术政策讨论的重要论坛。
+
+* 这对读者具有重要意义，因为这标志着互联网历史上一位先驱人物的离世。对计算机历史、互联网治理和数字通信演变感兴趣的读者会想要缅怀他的贡献。该公告可能来自 NANOG（北美网络运营商组织）邮件列表，这表明了他对网络社区的深远影响。
+
+**[Read Original / 阅读原文](https://lists.nanog.org/archives/list/nanog@lists.nanog.org/thread/TSNPJVFH4DKLINIKSMRIIVNHDG5XKJCM/)**
+
+### Why E-Cores Make Apple Silicon Fast: The Unsung Heroes of Performance
+
+* **E-cores handle background chaos**: When you cold-start an Apple silicon Mac, E-cores immediately handle intensive background tasks (Spotlight indexing, mediaanalysisd, Time Machine backups, XProtect scans) while P-cores remain largely idle and ready for user applications
+* **Quality of Service (QoS) is the secret**: Introduced in OS X 10.10 Yosemite, QoS became crucial with Apple silicon by fundamentally separating foreground threads (run on P-cores) from background threads (restricted to E-cores only)
+* **Background threads can't hijack P-cores**: Unlike Intel Macs where background processes could bog down all cores, macOS strictly prevents background threads from running on P-cores even when they're idle, preserving performance and battery life
+* **Architecture evolution from ARM big.LITTLE**: Apple adapted ARM's big.LITTLE technology (announced 2011) first in iPhone 7 (2016), then perfected it for Macs with intelligent thread allocation based on QoS metrics
+* **Visual CPU metrics are misleading**: E-cores at 100% may run at 1/4 the frequency of P-cores at 100%, making Activity Monitor's visual comparison psychologically alarming but technically meaningless
+* **Modern software architecture embraces modularity**: Apps now break tasks into discrete background processes (2,000+ threads across 600+ processes on idle Macs), leveraging E-cores for better overall performance—M-series chips now include 4-8 E-cores (up from M1 Pro/Max's 2)
+
+### 为什么 E 核心让 Apple 芯片如此快速：性能背后的无名英雄
+
+* **E 核心处理后台混乱**：当你冷启动 Apple 芯片 Mac 时，E 核心立即处理密集的后台任务(Spotlight 索引、mediaanalysisd、Time Machine 备份、XProtect 扫描)，而 P 核心保持空闲状态，随时准备运行用户应用程序
+* **服务质量(QoS)是秘密武器**：QoS 在 OS X 10.10 Yosemite 中引入，在 Apple 芯片时代变得至关重要，它从根本上将前台线程(在 P 核心运行)与后台线程(仅限 E 核心)分离
+* **后台线程无法占用 P 核心**：与 Intel Mac 上后台进程可能拖累所有核心不同，macOS 严格禁止后台线程在 P 核心上运行，即使它们处于空闲状态，从而保护性能和电池续航
+* **源自 ARM big.LITTLE 的架构演进**：Apple 改编了 ARM 的 big.LITTLE 技术(2011年发布)，首先应用于 iPhone 7(2016年)，然后通过基于 QoS 指标的智能线程分配在 Mac 上完善
+* **视觉 CPU 指标具有误导性**：E 核心在 100% 时的运行频率可能只有 P 核心 100% 时的 1/4，使得活动监视器的视觉对比在心理上令人担忧，但技术上毫无意义
+* **现代软件架构拥抱模块化**：应用程序现在将任务分解为独立的后台进程(空闲 Mac 上有 2000+ 线程分布在 600+ 进程中)，利用 E 核心获得更好的整体性能——M 系列芯片现在包含 4-8 个 E 核心(从 M1 Pro/Max 的 2 个增加)
+
+**[Read Original / 阅读原文](https://eclecticlight.co/2026/02/08/last-week-on-my-mac-why-e-cores-make-apple-silicon-fast/)**
+
+### 🎬 The Formula for Building Resilience
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** This video explores practical frameworks and strategies for developing resilience in professional settings, offering actionable insights for navigating career challenges and setbacks.
+
+* **Key topics discussed:** The formula for building personal and professional resilience, leadership approaches to fostering resilient teams, career development strategies during difficult times, and mental frameworks for bouncing back from failures.
+
+* **Why it's worth watching:** Essential viewing for professionals at any career stage who want to develop the mental toughness and adaptability needed to thrive in today's dynamic work environment. Lenny's Podcast is known for delivering high-quality, research-backed advice from industry leaders, making this a valuable resource for anyone looking to strengthen their resilience toolkit.
+
+---
+
+### 🎬 打造韧性的公式
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 本视频探讨了在职业环境中培养韧性的实用框架和策略，为应对职业挑战和挫折提供可操作的见解。
+
+* **主要话题:** 建立个人和职业韧性的公式、培养有韧性团队的领导方法、困难时期的职业发展策略，以及从失败中恢复的心理框架。
+
+* **为何值得观看:** 对于任何职业阶段的专业人士来说都是必看内容，帮助你培养在当今动态工作环境中蓬勃发展所需的心理韧性和适应能力。Lenny's Podcast 以提供来自行业领袖的高质量、有研究支持的建议而闻名，使其成为任何想要强化韧性工具包的人的宝贵资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KrvKD_a8H9A)**
+
+### 🎬 Learn 78+ programming languages #programming #coding #study
+**Channel:** SetupsAI
+
+* **What the video covers:** This video presents a resource or method for learning over 78 different programming languages, likely showcasing a platform, tool, or comprehensive guide that enables developers to explore multiple programming languages efficiently.
+
+* **Key topics discussed:** 
+  - Multi-language learning approach
+  - Programming language diversity and selection
+  - Resources or tools for polyglot programmers
+  - Efficient learning strategies for multiple languages
+
+* **Why it's worth watching:** Ideal for developers who want to expand their programming knowledge across multiple languages, whether for career advancement, personal growth, or understanding different programming paradigms. This could be particularly valuable for software engineers looking to become more versatile or students exploring various programming options.
+
+---
+
+### 🎬 学习78+种编程语言 #编程 #代码 #学习
+**频道:** SetupsAI
+
+* **视频内容概述:** 本视频介绍了一个可以学习超过78种不同编程语言的资源或方法，可能展示了一个平台、工具或综合指南，帮助开发者高效地探索多种编程语言。
+
+* **主要话题:**
+  - 多语言学习方法
+  - 编程语言的多样性和选择
+  - 多语言程序员的资源或工具
+  - 学习多种语言的高效策略
+
+* **为何值得观看:** 非常适合希望扩展多种编程语言知识的开发者，无论是为了职业发展、个人成长还是理解不同的编程范式。对于希望提升技能多样性的软件工程师或探索各种编程选项的学生来说，这个视频特别有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EX64zlKd4Gw)**
+
+### 🎬 Creating of "Smart" NPCs in FEAR
+
+**Channel:** Geek Videos
+
+* **What the video covers:** This video explores the technical implementation behind the intelligent NPC (Non-Player Character) behavior system in the acclaimed first-person shooter game F.E.A.R. (First Encounter Assault Recon), known for having some of the most advanced enemy AI in gaming history.
+
+* **Key topics discussed:** 
+  - Goal-Oriented Action Planning (GOAP) AI architecture used in F.E.A.R.
+  - How NPCs dynamically assess situations and make tactical decisions
+  - The illusion of intelligence through coordinated behaviors and communication systems
+  - Programming techniques that made enemies appear to flank, take cover, and work as a team
+
+* **Why it's worth watching:** F.E.A.R.'s AI is legendary in game development circles for creating genuinely challenging and believable combat encounters. This video provides valuable insights into practical AI programming techniques that remain relevant for modern game developers, showing how smart design can create the perception of intelligence without requiring complex machine learning systems.
+
+---
+
+### 🎬 F.E.A.R游戏中"智能"NPC的创建
+
+**频道:** Geek Videos
+
+* **视频内容概述:** 本视频深入探讨了经典第一人称射击游戏《F.E.A.R.》（First Encounter Assault Recon）中智能NPC（非玩家角色）行为系统的技术实现。该游戏以拥有游戏史上最先进的敌人AI而闻名。
+
+* **主要话题:**
+  - F.E.A.R.中使用的目标导向行动规划（GOAP）AI架构
+  - NPC如何动态评估情况并做出战术决策
+  - 通过协调行为和通信系统创造智能的假象
+  - 使敌人能够侧翼包抄、寻找掩护和团队协作的编程技术
+
+* **为何值得观看:** F.E.A.R.的AI在游戏开发界具有传奇地位，它创造了真正具有挑战性和可信度的战斗体验。本视频为现代游戏开发者提供了实用的AI编程技术见解，展示了如何通过巧妙的设计创造智能感知，而无需复杂的机器学习系统。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=fPAM6rPEBUk)**
 
