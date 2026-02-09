@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 09, 2026"
 date: 2026-02-09
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，6个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1186,4 +1186,112 @@ LiteBox 作为微软在安全跨平台应用执行领域的解决方案而备受
 * **为何值得观看:** 本视频提供了这款备受期待的 AI 模型的独家抢先体验，展示的是实际应用而非理论讨论。非常适合内容创作者、开发者和 AI 爱好者，帮助他们在 Opus 4.6 广泛发布之前了解其在真实生产环境中的表现。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=5z4StBj9qck)**
+
+### Nobody Knows How the Whole System Works: The Paradox of Modern Technology
+
+* **LinkedIn's emergence as a tech discourse platform** has sparked important conversations about system complexity, with industry leaders Simon Wardley, Adam Jacob, and Bruce Perens debating whether we can build systems we don't fully understand
+* **Wardley warns about the dangers of AI-generated code** where developers build systems without understanding underlying mechanisms—the "magic" problem that has plagued frameworks like Ruby on Rails
+* **Jacob counters that AI is an inevitable shift** in software development that offers benefits exceeding its risks, even if it distances us further from understanding how things actually work
+* **Perens argues this scenario already exists**: modern developers are largely unaware of CPU architectures, operating systems, and other foundational layers they build upon daily
+* **MIT professor Louis Bucciarelli's 1994 insight remains prescient**: using the telephone example, he demonstrated that no single person can understand all layers of complex systems—from physics to protocols to corporate infrastructure
+* **The "What happens when you type a URL" interview question** illustrates the impossibility of complete system knowledge—from keyboard interrupts to Wi-Fi modulation schemes to transistor-level logic
+* **Brendan Gregg's interview technique** focused on finding the limits of candidates' knowledge and their honesty when reaching those limits, acknowledging that complete understanding is impossible
+* **All four perspectives are simultaneously correct**: it's dangerous to build without understanding, AI is changing development fundamentally, we're already in this situation, and complex technologies inherently exceed individual comprehension
+* **The fundamental reality**: our knowledge of complex systems will always be partial, and AI accelerates a trend that has existed throughout technological history
+
+---
+
+### 没有人知道整个系统是如何运作的：现代技术的悖论
+
+* **LinkedIn 成为技术讨论平台**引发了关于系统复杂性的重要对话，行业领袖 Simon Wardley、Adam Jacob 和 Bruce Perens 就我们是否能构建自己并不完全理解的系统展开辩论
+* **Wardley 警告 AI 生成代码的危险性**：开发者在不理解底层机制的情况下构建系统——这正是像 Ruby on Rails 这样的框架长期存在的"魔法"问题
+* **Jacob 反驳说 AI 是软件开发不可避免的转变**，其带来的好处超过风险，即使它让我们离理解事物运作方式更远
+* **Perens 认为这种情况已经存在**：现代开发者对他们每天构建所依赖的 CPU 架构、操作系统和其他基础层大多一无所知
+* **MIT 教授 Louis Bucciarelli 在 1994 年的洞察依然深刻**：通过电话的例子，他证明了没有人能理解复杂系统的所有层面——从物理学到协议再到企业基础设施
+* **"输入 URL 后会发生什么"的面试问题**说明了完整系统知识的不可能性——从键盘中断到 Wi-Fi 调制方案再到晶体管级逻辑
+* **Brendan Gregg 的面试技巧**专注于找到候选人知识的边界，以及他们在达到边界时的诚实度，承认完全理解是不可能的
+* **四种观点同时正确**：在不理解的情况下构建是危险的，AI 正在根本性地改变开发，我们已经处于这种情况，复杂技术本质上超出个人理解能力
+* **根本现实**：我们对复杂系统的知识永远是片面的，而 AI 加速了贯穿整个技术史的趋势
+
+**[Read Original / 阅读原文](https://surfingcomplexity.blog/2026/02/08/nobody-knows-how-the-whole-system-works/)**
+
+### LispE: A Modern Lisp Dialect with Functional and Array Programming Features
+
+* **Overview**: LispE (Lisp Elémentaire) is a compact, multi-platform Lisp dialect developed by NAVER that combines functional programming with array language capabilities, inspired by Paul Graham's "The Root of Lisp"
+* **Core Lisp Features**: Supports traditional Lisp operators (cons, car, cdr) with enhanced built-in types for integers, strings, and vector-like list operations
+* **Concurrency Support**: Provides thread-safe programming with `threadspace` for protected variables, `dethread` for thread declaration, and automatic thread synchronization
+* **Modern Functional Programming**: Includes composition operator (.) as an alternative to nested parentheses, powerful pattern matching with `defpat`, and data structures with pattern methods
+* **Object-Oriented Programming**: Supports class definitions with fields, methods, and dynamic field addition at runtime
+* **Array Language Capabilities**: Implements APL-style array operators, enabling complex operations like Conway's Game of Life in single expressions using Unicode operators
+* **Additional Features**: Can be used as a shell, includes an internal editor from TAMGU project, and provides precompiled binaries for Windows and Mac OS (including M1)
+* **Learning Resources**: Comprehensive wiki documentation with function index, language description, and example programs like minizork
+* **License**: Released under BSD 3-Clause License by NAVER Corp (2020-present)
+
+---
+
+### LispE：结合函数式与数组编程特性的现代 Lisp 方言
+
+* **项目概述**：LispE（Lisp Elémentaire）是 NAVER 开发的紧凑型多平台 Lisp 方言，融合了函数式编程和数组语言能力，灵感源自 Paul Graham 的《Lisp 之根》
+* **核心 Lisp 特性**：支持传统 Lisp 操作符（cons、car、cdr），并增强了整数、字符串等内置类型，列表可作为向量操作
+* **并发支持**：提供线程安全编程，通过 `threadspace` 保护变量、`dethread` 声明线程，并支持自动线程同步
+* **现代函数式编程**：包含组合操作符（.）作为嵌套括号的替代方案，强大的 `defpat` 模式匹配功能，以及支持模式方法的数据结构
+* **面向对象编程**：支持类定义，包含字段、方法，并可在运行时动态添加字段
+* **数组语言能力**：实现 APL 风格的数组操作符，支持使用 Unicode 操作符在单个表达式中完成复杂操作（如康威生命游戏）
+* **附加功能**：可用作 Shell，集成了 TAMGU 项目的内部编辑器，提供 Windows 和 Mac OS（包括 M1）的预编译二进制文件
+* **学习资源**：完整的 Wiki 文档，包含函数索引、语言描述和示例程序（如 minizork）
+* **开源协议**：采用 BSD 3-Clause 许可证，版权归 NAVER 公司所有（2020 年至今）
+
+**[Read Original / 阅读原文](https://github.com/naver/lispe)**
+
+### Cistercian Numeral Font: Medieval Number System Brought to Digital Life
+
+* **Interactive web page** that automatically converts modern numbers into medieval Cistercian numerals using a custom-designed font
+* **Cistercian numerals** were a compact numbering system used by Cistercian monks in the 13th century to represent numbers 1-9999 in a single glyph
+* The implementation uses **9,999 font ligatures** to map standard Arabic numerals to their corresponding Cistercian symbol equivalents
+* Features include **copy-paste functionality** and **searchability** (Ctrl/Cmd-F), allowing users to interact with the numerals as if they were regular text
+* Users can **type or edit text** in a normal font input area and see numbers automatically transformed into the historical notation
+* This project demonstrates creative **font engineering** and preserves historical mathematical notation in a modern, accessible format
+* Provides an educational tool for exploring **medieval mathematics** and monastic scribal traditions
+
+### 西多会数字字体：中世纪数字系统的数字化重生
+
+* **交互式网页**，使用定制设计的字体自动将现代数字转换为中世纪西多会数字
+* **西多会数字**是13世纪西多会修士使用的紧凑数字系统，可用单个字形表示1-9999的数字
+* 该实现使用**9,999个字体连字**将标准阿拉伯数字映射到相应的西多会符号
+* 功能包括**复制粘贴**和**可搜索性**（Ctrl/Cmd-F），允许用户像操作常规文本一样与数字符号交互
+* 用户可以在普通字体输入区域**输入或编辑文本**，并看到数字自动转换为历史记数法
+* 该项目展示了创意性的**字体工程**，并以现代、易用的格式保存了历史数学记数法
+* 提供了探索**中世纪数学**和修道院抄写传统的教育工具
+
+**[Read Original / 阅读原文](https://bobbiec.github.io/cistercian-font.html)**
+
+### 🎬 border-radius trick
+**Channel:** Kevin Powell
+
+* **What the video covers:** A clever CSS technique using viewport units with the `border-radius` property to create responsive rounded corners that scale with the viewport size.
+
+* **Key topics discussed:** 
+  - Practical application of viewport units (vw/vh) in CSS
+  - Using viewport units specifically for `border-radius` values
+  - When viewport units are actually useful despite their general limitations
+  - Creating fluid, responsive border radius effects
+
+* **Why it's worth watching:** Kevin Powell, a renowned CSS expert, shares a specific use case where viewport units shine. While he typically advises against viewport units, this trick demonstrates a legitimate scenario where they solve a real design problem. Perfect for developers looking to create more dynamic and responsive UI elements without relying on JavaScript or complex media queries.
+
+---
+
+### 🎬 border-radius 技巧
+**频道:** Kevin Powell
+
+* **视频内容概述:** 介绍了一个巧妙的 CSS 技巧，使用视口单位配合 `border-radius` 属性来创建随视口大小缩放的响应式圆角效果。
+
+* **主要话题:**
+  - CSS 中视口单位（vw/vh）的实际应用
+  - 专门在 `border-radius` 值中使用视口单位
+  - 尽管视口单位有局限性，但在某些场景下确实有用
+  - 创建流畅的响应式边框圆角效果
+
+* **为何值得观看:** Kevin Powell 作为知名 CSS 专家，分享了视口单位真正发挥作用的特定用例。虽然他通常不建议使用视口单位，但这个技巧展示了它们能够解决实际设计问题的合理场景。非常适合希望在不依赖 JavaScript 或复杂媒体查询的情况下创建更动态、更具响应性 UI 元素的开发者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
 
