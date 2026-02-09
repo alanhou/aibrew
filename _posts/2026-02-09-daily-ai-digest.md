@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 09, 2026"
 date: 2026-02-09
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1294,4 +1294,189 @@ LiteBox 作为微软在安全跨平台应用执行领域的解决方案而备受
 * **为何值得观看:** Kevin Powell 作为知名 CSS 专家，分享了视口单位真正发挥作用的特定用例。虽然他通常不建议使用视口单位，但这个技巧展示了它们能够解决实际设计问题的合理场景。非常适合希望在不依赖 JavaScript 或复杂媒体查询的情况下创建更动态、更具响应性 UI 元素的开发者。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
+
+### The Longest Lines of Sight on Earth: A Computational Discovery
+
+* **Record-Breaking Discovery**: Using a custom algorithm called CacheTVS, researchers exhaustively analyzed every view on Earth to identify the longest unobstructed line of sight on the planet
+* **#1 - 530km Champion**: The longest line of sight spans 530 kilometers from the Hindu Kush mountain range to Pik Dankova, representing the greatest natural view achievable on Earth
+* **#2 - Colombia's 504km Vista**: The second-longest sight line stretches 504 kilometers from Antioquia department to Pico Cristobal, Colombia's highest peak in South America
+* **#3 - Cross-Border 483km View**: The third-longest extends 483 kilometers from Mount Elbrus in Russia to the Pontic Mountains in Turkey—remarkably spanning two countries without a shared land border
+* **Massive Dataset**: The project has catalogued approximately 4.5 billion lines of sight worldwide, all available for public exploration through an interactive map at map.alltheviews.world
+* **Geographic Clustering**: Longest sight lines naturally cluster around mountain peaks and ridges, with the curated list highlighting diverse global regions
+
+---
+
+### 地球上最长视线距离：计算发现的壮观景观
+
+* **破纪录发现**：研究人员使用名为 CacheTVS 的自定义算法，详尽分析了地球上的每一个视角，以确定地球上最长的无遮挡视线距离
+* **第一名 - 530公里冠军**：最长视线距离为530公里，从兴都库什山脉延伸至丹科娃峰，代表了地球上可实现的最壮观自然景观
+* **第二名 - 哥伦比亚504公里视野**：第二长视线距离为504公里，从安蒂奥基亚省延伸至哥伦比亚最高峰克里斯托瓦尔峰
+* **第三名 - 跨境483公里景观**：第三长视线距离为483公里，从俄罗斯厄尔布鲁士山延伸至土耳其本都山脉——值得注意的是，这跨越了两个没有陆地边界的国家
+* **海量数据集**：该项目已编录全球约45亿条视线数据，所有数据均可通过 map.alltheviews.world 交互式地图供公众探索
+* **地理聚集特征**：最长视线距离自然聚集在山峰和山脊周围，精选列表突出展示了全球不同地区的代表性景观
+
+**[Read Original / 阅读原文](https://alltheviews.world)**
+
+<!-- [Title-Only] -->
+### Show HN: Browse Internet Infrastructure
+
+**Based on the title only:**
+
+* This article likely introduces WireWiki, a platform or tool that allows users to explore and visualize internet infrastructure components such as data centers, submarine cables, internet exchange points (IXPs), network routes, and connectivity between different regions and providers.
+* It might be interesting to readers because it provides transparency into the physical and logical architecture of the internet—something that's often invisible to end users. This could be valuable for network engineers, researchers, students learning about internet topology, or anyone curious about how global connectivity actually works. The "Show HN" tag suggests this is a project created by a Hacker News community member, making it particularly relevant for tech enthusiasts interested in infrastructure, networking, and open-source tools.
+
+---
+
+### Show HN: 浏览互联网基础设施
+
+**仅基于标题推测：**
+
+* 这篇文章可能介绍了 WireWiki，一个允许用户探索和可视化互联网基础设施组件的平台或工具，包括数据中心、海底光缆、互联网交换点（IXP）、网络路由以及不同地区和服务商之间的连接情况。
+* 值得关注的原因在于，它为互联网的物理和逻辑架构提供了透明度——这些通常对终端用户是不可见的。这对网络工程师、研究人员、学习互联网拓扑结构的学生，或任何对全球连接实际运作方式感到好奇的人都很有价值。"Show HN"标签表明这是 Hacker News 社区成员创建的项目，对于对基础设施、网络和开源工具感兴趣的技术爱好者尤其相关。
+
+**[Read Original / 阅读原文](https://www.wirewiki.com)**
+
+### Private Landing: Educational Authentication Reference Implementation
+
+* **Educational authentication system** built from scratch for Cloudflare Workers using TypeScript, demonstrating industry-standard security practices
+* **Standards-based design** following NIST SP 800-63B (credentials), NIST SP 800-132 (key derivation), OWASP ASVS (verification), and RFC 8725 (JWT best practices)
+* **Core security features**: PBKDF2-SHA384 password hashing with 128-bit salts, JWT dual-token pattern (15-min access + 7-day refresh), server-side sessions with device tracking, constant-time comparison, and sliding expiration
+* **Comprehensive security implementation**: HttpOnly/Secure/SameSite=Strict cookies, security headers (HSTS, CSP, CORP/COEP/COOP), timing-safe rejection, session-linked revocation, algorithm pinning
+* **250+ tests** including attack-vector suites covering JWT tampering, algorithm confusion, type confusion, unicode edge cases, and information disclosure
+* **Production-ready roadmap** with prioritized feature gaps organized by criticality (rate limiting, account lockout, CSRF protection, refresh token rotation, MFA, WebAuthn, etc.)
+* **Monorepo structure** with separate packages for core auth services, infrastructure (Turso DB), schemas (Zod validation), and Cloudflare Workers app with Hono routes
+* **AI-friendly codebase** with CLAUDE.md context file, Architecture Decision Records (ADRs), security audits, clear module boundaries, and comprehensive TypeScript types
+* **Apache-2.0 licensed** for educational use; recommends Better Auth for production applications requiring OAuth, passkeys, MFA, and rate limiting
+* **Edge-native** using Web Crypto API with no Node.js dependencies, designed specifically for Cloudflare Workers runtime
+
+### Private Landing：教育性身份验证参考实现
+
+* **教育性身份验证系统**，使用 TypeScript 为 Cloudflare Workers 从零构建，展示行业标准安全实践
+* **基于标准的设计**，遵循 NIST SP 800-63B（凭证）、NIST SP 800-132（密钥派生）、OWASP ASVS（验证）和 RFC 8725（JWT 最佳实践）
+* **核心安全特性**：使用 128 位盐的 PBKDF2-SHA384 密码哈希、JWT 双令牌模式（15 分钟访问令牌 + 7 天刷新令牌）、带设备跟踪的服务器端会话、恒定时间比较和滑动过期
+* **全面的安全实现**：HttpOnly/Secure/SameSite=Strict Cookie、安全头（HSTS、CSP、CORP/COEP/COOP）、时序安全拒绝、会话关联撤销、算法固定
+* **250+ 测试用例**，包括攻击向量测试套件，涵盖 JWT 篡改、算法混淆、类型混淆、Unicode 边缘情况和信息泄露
+* **生产就绪路线图**，按关键性组织功能缺口（速率限制、账户锁定、CSRF 保护、刷新令牌轮换、MFA、WebAuthn 等）
+* **Monorepo 结构**，包含核心认证服务、基础设施（Turso 数据库）、模式（Zod 验证）和带 Hono 路由的 Cloudflare Workers 应用的独立包
+* **AI 友好代码库**，包含 CLAUDE.md 上下文文件、架构决策记录（ADR）、安全审计、清晰的模块边界和全面的 TypeScript 类型
+* **Apache-2.0 许可**用于教育用途；推荐使用 Better Auth 用于需要 OAuth、密钥、MFA 和速率限制的生产应用
+* **边缘原生**，使用 Web Crypto API，无 Node.js 依赖，专为 Cloudflare Workers 运行时设计
+
+**[Read Original / 阅读原文](https://github.com/vhscom/private-landing)**
+
+### TradingAgents-CN - Multi-Agent LLM Chinese Financial Trading Framework
+
+**What it does:**
+* A Chinese-enhanced multi-agent AI stock analysis learning platform built on LLM technology
+* Provides systematic learning tools for stock research and strategy experimentation using AI agents
+* Supports A-shares, Hong Kong stocks, and US stocks analysis with comprehensive Chinese localization
+* Positions itself as an educational and research platform, not for live trading recommendations
+
+**Key features:**
+* **Enterprise-grade architecture**: FastAPI + Vue 3 + MongoDB + Redis stack with 10x performance improvement
+* **Multi-LLM support**: Integrates OpenAI, Google AI, DeepSeek, Alibaba Qwen, and other Chinese LLM providers
+* **Intelligent analysis**: Multi-agent system with market analysts, fundamental analysts, technical analysts, sentiment analysts, and risk managers
+* **Flexible deployment**: Three deployment options - Windows green version (easiest), Docker (production), and source code (developers)
+* **Advanced features**: Real-time progress tracking, batch analysis, stock screening, watchlist management, simulated trading, and professional report export (Markdown/Word/PDF)
+* **Data sources**: Unified management of Tushare, AkShare, and BaoStock for comprehensive market data
+* **Bug fixes**: Resolved critical issues with technical indicators, fundamental data calculations, and infinite loop problems
+
+**Why it's notable:**
+* **Rapid growth**: Gained 278 stars today, reaching 13,000+ total stars despite being maintained by a single developer
+* **Copyright controversy**: Actively fighting unauthorized commercial use by `tradingagents-ai.com` - emphasizes this is the only official version
+* **Hybrid licensing**: Apache 2.0 for core components, proprietary license for backend/frontend requiring commercial authorization
+* **v1.0.0-preview milestone**: Major architectural upgrade from Streamlit to modern FastAPI + Vue 3 stack
+* **Community-driven**: Actively recruiting test volunteers and welcoming contributions, with detailed Chinese documentation and video tutorials
+* **Educational focus**: Comprehensive learning center covering AI basics, prompt engineering, multi-agent principles, and risk awareness
+* **Based on proven research**: Built upon TauricResearch's revolutionary TradingAgents framework, adapted for Chinese market needs
+
+---
+
+### TradingAgents-CN - 基于多智能体LLM的中文金融交易框架
+
+**功能介绍:**
+* 面向中文用户的多智能体AI股票分析学习平台，基于大语言模型技术
+* 提供系统化学习工具，用于使用AI智能体进行股票研究和策略实验
+* 支持A股、港股、美股分析，完整中文本地化
+* 定位为教育研究平台，不提供实盘交易指令
+
+**主要特点:**
+* **企业级架构**: FastAPI + Vue 3 + MongoDB + Redis技术栈，性能提升10倍
+* **多LLM支持**: 集成OpenAI、Google AI、DeepSeek、阿里通义千问等国内外大模型
+* **智能分析**: 多智能体系统包含市场分析师、基本面分析师、技术分析师、情绪分析师和风险管理师
+* **灵活部署**: 三种部署方式 - Windows绿色版(最简单)、Docker版(生产环境)、源码版(开发者)
+* **高级功能**: 实时进度跟踪、批量分析、智能选股、自选股管理、模拟交易、专业报告导出(Markdown/Word/PDF)
+* **数据源**: 统一管理Tushare、AkShare、BaoStock，提供全面市场数据
+* **重大修复**: 解决技术指标计算、基本面数据错误、死循环等关键问题
+
+**为何值得关注:**
+* **快速增长**: 今日新增278星标，总星标达13,000+，由单人开发维护
+* **版权争议**: 积极打击`tradingagents-ai.com`未授权商业使用，强调这是唯一官方版本
+* **混合许可**: 核心组件采用Apache 2.0，后端/前端采用专有许可需商业授权
+* **v1.0.0-preview里程碑**: 从Streamlit重大架构升级到现代化FastAPI + Vue 3技术栈
+* **社区驱动**: 积极招募测试志愿者和欢迎贡献，提供详细中文文档和视频教程
+* **教育导向**: 全面学习中心涵盖AI基础、提示词工程、多智能体原理和风险意识
+* **基于成熟研究**: 基于TauricResearch革命性TradingAgents框架，针对中国市场需求改进
+
+**[View Repository / 查看仓库](https://github.com/hsliuping/TradingAgents-CN)**
+
+### AionUi - Free, Local, Open-Source 24/7 Cowork Platform for CLI AI Agents
+
+**What it does:**
+* Provides a unified graphical interface for command-line AI tools (Gemini CLI, Claude Code, Codex, OpenCode, Qwen Code, Goose CLI, Auggie, etc.)
+* Built-in Gemini CLI ready to use out-of-the-box with no additional installation
+* Automatically detects and integrates locally installed CLI AI tools
+* Enables 24/7 remote access via WebUI, Telegram, Lark (Feishu), and other chat platforms
+* Offers scheduled task automation, smart file management, and AI image generation
+
+**Key features:**
+* **Multi-Agent Mode**: Auto-detects CLI tools, provides unified interface with local storage and multi-session support
+* **Remote Access**: Access from any device via browser (WebUI), Telegram bot, or Lark integration with QR code/password login
+* **Scheduled Tasks**: Natural language task scheduling for automated workflows (data aggregation, report generation, file organization)
+* **Smart File Management**: AI-powered batch renaming, auto-organization, and intelligent classification
+* **Preview Panel**: Supports 9+ file formats (PDF, Word, Excel, PPT, code, Markdown, images, HTML, Diff) with real-time editing
+* **Multi-Model Support**: Works with Gemini, OpenAI, Claude, Qwen, Ollama, LM Studio, and more
+* **AI Assistants & Skills**: 10+ built-in professional assistants (Cowork, PPTX Generator, PDF to PPT, 3D Game, UI/UX Pro Max, etc.) with extensible custom skills
+* **Personalized UI**: Full CSS customization for interface styling
+* **Multi-Task Parallel Processing**: Multiple independent conversations with separate contexts
+
+**Why it's notable:**
+* **Trending rapidly** with 335 stars today - addresses major pain points of CLI AI tools (no conversation history, single-session limits, complex file operations)
+* **Free and open-source** (Apache 2.0 license) with complete local data security
+* **Cross-platform** support (macOS, Windows, Linux)
+* **Unique value proposition**: Acts as "Cowork for all CLI AI tools" - similar to how Claude Cowork enhances Claude Code, but for multiple tools
+* **Production-ready**: Includes enterprise features like scheduled automation, remote access, and chat platform integration
+* **Active development**: Multi-language support (8 languages), active community (Discord, WeChat), and comprehensive documentation
+
+---
+
+### AionUi - 免费、本地、开源的 24/7 命令行 AI 代理协作平台
+
+**功能介绍:**
+* 为命令行 AI 工具(Gemini CLI、Claude Code、Codex、OpenCode、Qwen Code、Goose CLI、Auggie 等)提供统一图形界面
+* 内置 Gemini CLI,开箱即用无需额外安装
+* 自动检测并集成本地已安装的 CLI AI 工具
+* 支持通过 WebUI、Telegram、飞书等多种方式 24/7 远程访问
+* 提供定时任务自动化、智能文件管理和 AI 图像生成功能
+
+**主要特点:**
+* **多代理模式**: 自动检测 CLI 工具,提供统一界面,支持本地存储和多会话管理
+* **远程访问**: 通过浏览器(WebUI)、Telegram 机器人或飞书集成从任何设备访问,支持二维码/密码登录
+* **定时任务**: 自然语言任务调度,实现自动化工作流(数据汇总、报告生成、文件整理)
+* **智能文件管理**: AI 驱动的批量重命名、自动整理和智能分类
+* **预览面板**: 支持 9+ 种文件格式(PDF、Word、Excel、PPT、代码、Markdown、图片、HTML、Diff),可实时编辑
+* **多模型支持**: 兼容 Gemini、OpenAI、Claude、Qwen、Ollama、LM Studio 等多种模型
+* **AI 助手与技能**: 10+ 个内置专业助手(Cowork、PPTX 生成器、PDF 转 PPT、3D 游戏、UI/UX Pro Max 等),支持自定义技能扩展
+* **个性化界面**: 完全 CSS 自定义界面样式
+* **多任务并行处理**: 支持多个独立对话,各自拥有独立上下文
+
+**为何值得关注:**
+* **快速增长** - 今日获得 335 星标,解决了 CLI AI 工具的主要痛点(无对话历史、单会话限制、复杂的文件操作)
+* **免费开源** (Apache 2.0 许可证),完全本地数据安全
+* **跨平台** 支持(macOS、Windows、Linux)
+* **独特价值主张**: 充当"所有 CLI AI 工具的 Cowork 平台" - 类似 Claude Cowork 增强 Claude Code,但适用于多种工具
+* **生产就绪**: 包含企业级功能,如定时自动化、远程访问和聊天平台集成
+* **活跃开发**: 支持多语言(8 种语言),活跃社区(Discord、微信),文档完善
+
+**[View Repository / 查看仓库](https://github.com/iOfficeAI/AionUi)**
 
