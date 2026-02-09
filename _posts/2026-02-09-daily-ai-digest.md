@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 09, 2026"
 date: 2026-02-09
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -929,4 +929,142 @@ LiteBox 作为微软在安全跨平台应用执行领域的解决方案而备受
 * **为何值得观看:** 非常适合希望扩展多种编程语言知识的开发者，无论是为了职业发展、个人成长还是理解不同的编程范式。对于希望提升技能多样性的软件工程师或探索各种编程选项的学生来说，这个视频特别有价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=EX64zlKd4Gw)**
+
+### AI Gold Rush Drives Tech Companies to Embrace 72-Hour Work Weeks
+
+* China's controversial "996" work culture (9am-9pm, 6 days a week) persists in the tech industry, though public advocacy has become more subdued
+* Baidu's former PR head Qu Jing sparked major controversy in 2024 by aggressively defending extreme work hours through social media videos
+* Qu's dismissive attitude toward employee wellbeing, exemplified by her statement "I'm not your mother, I only care about results," triggered widespread public outrage
+* Despite issuing a public apology, the backlash ultimately led to Qu Jing losing her position at Baidu
+* The incident highlights ongoing tensions between tech companies' demands for intensive work schedules and growing employee pushback against work-life balance violations
+
+### AI淘金热促使科技公司推行每周72小时工作制
+
+* 中国备受争议的"996"工作文化（早9点至晚9点，每周6天）在科技行业依然存在，尽管公开倡导者已变得更加低调
+* 百度前公关负责人曲婧在2024年通过社交媒体视频激进地为极端工作时长辩护，引发重大争议
+* 曲婧对员工福祉的轻蔑态度，特别是"我不是你妈，我只看结果"的言论，激起了广泛的公众愤怒
+* 尽管发布了公开道歉，但舆论反弹最终导致曲婧失去了在百度的职位
+* 该事件凸显了科技公司对高强度工作时间的要求与员工日益增长的反对工作生活平衡被侵犯之间的持续紧张关系
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/cvgn2k285ypo)**
+
+### New AMOS Malware Campaign Targets Mac Users Through Google Search
+
+* **Attack Vector**: Malicious links appear in Google sponsored search results, leading to fake Apple support pages on Medium, docs.google.com, and business.google.com
+* **Malware Type**: AMOS (alias SOMA) stealer delivered through obfuscated Terminal commands that users are tricked into pasting
+* **Attack Method**: Base-64 encoded commands use `curl` to download malware without quarantine protection, bypassing macOS security
+* **Malware Behavior**: Creates hidden files (.agent, .mainHelper, .pass) in Home folder, steals Documents and Notes content, stores passwords in plain text
+* **Similar to Previous Attack**: Nearly identical to ChatGPT-based attack from one month prior, using same social engineering tactics
+* **Key Warning Signs**: Obfuscated commands, base-64 encoding, use of `curl` command, requests for password and folder access permissions
+* **Protection Advice**: Distrust promoted search results, verify URL authenticity, never run Terminal commands from untrusted sources, use Link Unshortener for shortened URLs
+* **Why macOS Can't Protect**: Users are socially engineered to bypass built-in protections at each step by voluntarily executing malicious commands
+
+### 谷歌搜索再现恶意软件：新型 AMOS 窃密木马攻击 Mac 用户
+
+* **攻击途径**：恶意链接出现在谷歌赞助搜索结果中，引导至 Medium、docs.google.com 和 business.google.com 上的伪造苹果支持页面
+* **恶意软件类型**：AMOS（别名 SOMA）窃密木马，通过诱骗用户粘贴混淆的终端命令进行传播
+* **攻击手法**：使用 Base-64 编码命令，利用 `curl` 下载恶意软件以绕过隔离保护，突破 macOS 安全机制
+* **恶意行为**：在主文件夹创建隐藏文件（.agent、.mainHelper、.pass），窃取文档和备忘录内容，明文存储密码
+* **与之前攻击相似**：与一个月前基于 ChatGPT 的攻击几乎相同，使用相同的社会工程学手段
+* **关键警告信号**：混淆命令、Base-64 编码、使用 `curl` 命令、请求密码和文件夹访问权限
+* **防护建议**：不信任推广搜索结果、验证 URL 真实性、切勿运行来自不可信来源的终端命令、使用链接展开工具处理短链接
+* **macOS 无法防护的原因**：用户在每个步骤都被社会工程学手段诱骗，主动绕过系统内置保护机制并执行恶意命令
+
+**[Read Original / 阅读原文](https://eclecticlight.co/2026/01/30/more-malware-from-google-search/)**
+
+### The Art of Roads in Games: Why Most City Builders Get Road Design Wrong
+
+* **Natural patterns inspire fascination** - The author draws parallels between natural emergent patterns (ant colonies, honeycombs, leaf veins) and human-made road networks, imagining aliens discovering Earth's road systems as evidence of thoughtful design
+
+* **City builder evolution and persistent flaws** - From SimCity 2000 to Cities: Skylines 2, each game improved road systems (elevation, curves, free placement), but something always felt "off" - unrealistic sharp ramps, wobbly curves, and strange intersection radii
+
+* **The Bézier curve problem** - Most games use Bézier splines for roads, which seem intuitive but have a fatal flaw: **offset Bézier curves are not Bézier curves**. This causes geometry issues like "pinching" and self-intersection at tight angles, because real vehicles maintain constant wheel spacing
+
+* **Circle arcs as the solution** - Circular arcs preserve parallelism when offset (unlike Bézier curves) and offer computational advantages: O(1) intersection calculations vs complex polynomial root finding for Bézier curve intersections
+
+* **Clothoid curves for realism** - For high-speed roads, civil engineers use transition curves (clothoids) that gradually increase curvature, providing smooth lateral force transitions. However, they're mathematically complex, making circular arcs sufficient for urban city builders
+
+* **Building a better road system** - Motivated by curiosity and the lack of quality indie developer resources, the author created their own road system using proper engineering principles, promising technical details in a follow-up post
+
+---
+
+### 游戏中的道路艺术：为什么大多数城市建造游戏的道路设计都是错的
+
+* **自然模式引发的迷恋** - 作者将自然涌现模式（蚁穴、蜂巢、叶脉）与人造道路网络相提并论，想象外星人发现地球的道路系统会将其视为深思熟虑设计的证据
+
+* **城市建造游戏的演变与持续缺陷** - 从《模拟城市2000》到《城市：天际线2》，每款游戏都改进了道路系统（高程、曲线、自由放置），但总感觉"不对劲" - 不真实的急转弯匝道、摇摆的曲线和奇怪的交叉口半径
+
+* **贝塞尔曲线问题** - 大多数游戏使用贝塞尔样条来绘制道路，看似直观但有致命缺陷：**偏移后的贝塞尔曲线不再是贝塞尔曲线**。这会在急转弯处造成几何问题，如"收缩"和自相交，因为真实车辆需要保持恒定的轮距
+
+* **圆弧作为解决方案** - 圆弧在偏移时保持平行性（不像贝塞尔曲线），并提供计算优势：O(1)的交叉计算，而贝塞尔曲线交叉需要复杂的多项式求根
+
+* **回旋曲线实现真实感** - 对于高速道路，土木工程师使用过渡曲线（回旋线），逐渐增加曲率，提供平滑的侧向力过渡。然而，它们在数学上很复杂，使得圆弧对于城市建造游戏来说已经足够
+
+* **构建更好的道路系统** - 出于好奇心以及独立开发者缺乏优质资源的现状，作者使用适当的工程原理创建了自己的道路系统，并承诺在后续文章中分享技术细节
+
+**[Read Original / 阅读原文](https://sandboxspirit.com/blog/art-of-roads-in-games/)**
+
+### 🎬 an alternative mirror to find the bash reference manual...
+
+**Channel:** You Suck at Programming
+
+* **What the video covers:** This video provides an alternative source for accessing the Bash reference manual, offering viewers a reliable mirror site when the official documentation might be unavailable or difficult to access.
+
+* **Key topics discussed:** 
+  - Alternative mirror locations for Bash documentation
+  - How to access the Bash reference manual
+  - Resources for Bash learning and documentation
+
+* **Why it's worth watching:** Essential for developers and system administrators who need reliable access to Bash documentation. Knowing alternative sources ensures you can always reference official Bash documentation regardless of network issues or site availability. Particularly useful for those learning Bash or needing quick reference during scripting work.
+
+---
+
+### 🎬 查找 Bash 参考手册的替代镜像站...
+
+**频道:** You Suck at Programming
+
+* **视频内容概述:** 本视频介绍了访问 Bash 参考手册的替代来源，为观众提供了当官方文档不可用或难以访问时的可靠镜像站点。
+
+* **主要话题:**
+  - Bash 文档的替代镜像站位置
+  - 如何访问 Bash 参考手册
+  - Bash 学习和文档资源
+
+* **为何值得观看:** 对于需要可靠访问 Bash 文档的开发者和系统管理员来说至关重要。了解替代来源可确保无论网络问题或站点可用性如何，都能随时查阅官方 Bash 文档。对于正在学习 Bash 或在脚本编写工作中需要快速参考的人员特别有用。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ge955rbJ_EM)**
+
+### 🎬 OpenClaw Full Tutorial for Beginners – How to Set Up and Use OpenClaw (ClawdBot / MoltBot)
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This comprehensive tutorial introduces OpenClaw, a proactive autonomous agent and messaging gateway system. The course walks beginners through the complete setup process and demonstrates practical usage of OpenClaw, including its ClawdBot and MoltBot implementations.
+
+* **Key topics discussed:** 
+  - Understanding OpenClaw's architecture as an autonomous agent
+  - Step-by-step installation and configuration guide
+  - Setting up ClawdBot and MoltBot functionalities
+  - Messaging gateway integration and automation
+  - Practical examples and use cases for autonomous agent deployment
+
+* **Why it's worth watching:** Perfect for developers and tech enthusiasts looking to explore autonomous agent technology. FreeCodeCamp delivers a beginner-friendly, hands-on approach to understanding and implementing OpenClaw, making complex AI agent concepts accessible. Essential viewing for anyone interested in building proactive automation systems or exploring the latest in AI-powered messaging solutions.
+
+---
+
+### 🎬 OpenClaw 完整新手教程 – 如何设置和使用 OpenClaw (ClawdBot / MoltBot)
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 这个综合教程介绍了 OpenClaw，一个主动式自主代理和消息网关系统。课程为初学者详细讲解完整的设置过程，并演示 OpenClaw 的实际使用方法，包括 ClawdBot 和 MoltBot 的实现。
+
+* **主要话题:**
+  - 理解 OpenClaw 作为自主代理的架构
+  - 分步安装和配置指南
+  - 设置 ClawdBot 和 MoltBot 功能
+  - 消息网关集成和自动化
+  - 自主代理部署的实际案例和应用场景
+
+* **为何值得观看:** 非常适合想要探索自主代理技术的开发者和技术爱好者。FreeCodeCamp 提供了适合初学者的实践方法来理解和实现 OpenClaw，使复杂的 AI 代理概念变得易于理解。对于任何想要构建主动自动化系统或探索最新 AI 驱动消息解决方案的人来说，这是必看的教程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=n1sfrc-RjyM)**
 
