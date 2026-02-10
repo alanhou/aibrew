@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 11, 2026"
 date: 2026-02-11
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -467,4 +467,239 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * **为何值得观看:** 非常适合想要探索自主代理技术的开发者和技术爱好者。FreeCodeCamp 提供了适合初学者的实践方法来理解和实现 OpenClaw，使复杂的 AI 代理概念变得易于理解。对于任何想要构建主动自动化系统或探索最新 AI 驱动消息解决方案的人来说，这是必看的教程。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=n1sfrc-RjyM)**
+
+<!-- [Title-Only] -->
+### Toyotas and Terrorists: "Why are ISIS's trucks better than ours?"
+
+*Note: This analysis is based solely on the title, as the article content could not be fetched.*
+
+* This article likely explores a provocative question raised by American military personnel: why terrorist organizations like ISIS have been so successful using commercial Toyota trucks, while military forces struggle with more expensive, specialized vehicles. The piece probably examines the reliability, maintainability, and tactical advantages of simple, off-the-shelf vehicles versus complex military equipment.
+
+* Why it might be interesting to readers: This touches on fundamental questions about military procurement, the value of simplicity versus sophistication in combat vehicles, and how non-state actors have leveraged commercial technology effectively. It likely challenges assumptions about military superiority and raises questions about cost-effectiveness in defense spending. The comparison between Toyota's legendary reliability and military vehicle performance could reveal insights about engineering philosophy, supply chain logistics, and the real-world demands of conflict zones.
+
+---
+
+### 丰田与恐怖分子："为什么ISIS的卡车比我们的更好用？"
+
+*注：本分析仅基于标题，因无法获取文章内容。*
+
+* 这篇文章可能探讨了美国军方人员提出的一个尖锐问题：为什么像ISIS这样的恐怖组织使用商用丰田卡车如此成功，而军方却在使用更昂贵的专用车辆时遇到困难。文章很可能分析了简单的商用车辆相比复杂军用装备在可靠性、维护性和战术优势方面的表现。
+
+* 为何值得关注：这触及了军事采购的根本问题，探讨了战斗车辆中简单性与复杂性的价值对比，以及非国家行为体如何有效利用商业技术。文章可能挑战了关于军事优势的假设，并引发了对国防开支成本效益的质疑。丰田传奇般的可靠性与军用车辆性能的对比，可能揭示了工程理念、供应链物流以及冲突地区实际需求方面的深刻见解。
+
+**[Read Original / 阅读原文](https://www.airuniversity.af.edu/Wild-Blue-Yonder/Articles/Article-Display/Article/3600155/toyotas-and-terrorists-why-are-isiss-trucks-better-than-ours-said-the-american/)**
+
+### AI Singularity Prediction: A Mathematical Analysis of the "Tuesday Hypothesis"
+
+* Author uses hyperbolic modeling (not exponential) to predict AI singularity with millisecond precision
+* Five key metrics analyzed: MMLU scores, tokens per dollar, frontier release intervals, arXiv "emergent" papers, and Copilot code share
+* Hyperbolic growth model chosen because it reaches infinity at finite time, unlike exponentials which approach infinity only as t→∞
+* Mathematical formula: x(t) = k/(t_s - t) + c, where denominator approaches zero at singularity point
+* Core argument: AI progress shows supralinear dynamics through positive feedback loops (better AI → better AI research tools → better AI)
+* Data normalized to [0,1] range; tokens per dollar log-transformed due to five orders of magnitude span
+* Author acknowledges the approach is "unhinged" but proceeds with rigorous mathematical modeling
+* Distinguishes between polynomial (never reaches infinity), exponential (reaches infinity at t=∞), and hyperbolic (finite singularity) growth patterns
+
+### AI奇点预测：对"星期二假说"的数学分析
+
+* 作者使用双曲线模型（非指数模型）预测AI奇点，精确到毫秒级
+* 分析五个关键指标：MMLU分数、每美元token数、前沿发布间隔、arXiv"涌现"论文数和Copilot代码占比
+* 选择双曲线增长模型因其在有限时间内达到无穷大，而指数函数仅在t→∞时趋近无穷
+* 数学公式：x(t) = k/(t_s - t) + c，其中分母在奇点时趋近于零
+* 核心论点：AI进步通过正反馈循环展现超线性动力学（更好的AI→更好的AI研究工具→更好的AI）
+* 数据归一化至[0,1]区间；每美元token数经对数变换，因原始值跨越五个数量级
+* 作者承认该方法"疯狂"但仍进行严格数学建模
+* 区分多项式（永不达到无穷）、指数（在t=∞时达到无穷）和双曲线（有限奇点）三种增长模式
+
+**[Read Original / 阅读原文](https://campedersen.com/singularity)**
+
+### My Journey: Switching to Linux and Starting Self-Hosting
+
+* Switched to Linux in 2023 after discovering tech YouTubers like Luke Smith and Mental Outlaw
+* Started with Debian 11 on a desktop (i5 10400, RTX 3050, 16GB RAM) previously running Windows 10
+* Solved gaming compatibility issues using QEMU/KVM with GPU passthrough to run Windows VM undetected by anti-cheat software
+* Key motivations: hands-on learning, ownership, privacy, and minimal resource consumption
+* Migrated personal website from Vercel/Next.js to self-hosted Hugo on a VPS (AMD EPYC 8-core, 32GB RAM)
+* Learned system administration tools: Nginx, Certbot, GitHub Actions, Systemd, SSH, firewall configuration, and Crowdsec for security
+* Built home server starting with Raspberry Pi 4 (8GB RAM) running Syncthing and PiHole for file sync and ad-blocking
+* Upgraded to Proxmox VE on repurposed desktop (i5 12400, 32GB RAM) with LXC containers and VMs
+* Implemented remote access via Wireguard VPN with dynamic DNS using ddclient
+* Recently deployed SearXNG as personal search engine on VPS
+* Future plans: explore more Linux distros (Debian, Arch, Nix) and contribute to open source projects
+
+### 我的 Linux 迁移与自托管之旅
+
+* 2023年受 Luke Smith 和 Mental Outlaw 等科技 YouTuber 影响,全面转向 Linux
+* 从 Debian 11 开始,在台式机上运行(i5 10400、RTX 3050、16GB 内存),此前使用 Windows 10
+* 通过 QEMU/KVM 配合 GPU 直通技术运行 Windows 虚拟机,解决游戏反作弊软件兼容性问题
+* 核心动机:实践学习、系统所有权、隐私保护和最小资源占用
+* 将个人网站从 Vercel/Next.js 迁移到自托管的 Hugo,部署在 VPS 上(AMD EPYC 8核、32GB 内存)
+* 学习系统管理工具:Nginx、Certbot、GitHub Actions、Systemd、SSH、防火墙配置和 Crowdsec 安全防护
+* 从树莓派 4(8GB 内存)开始搭建家庭服务器,运行 Syncthing 文件同步和 PiHole 广告拦截
+* 升级到 Proxmox VE,在改造的旧台式机上运行(i5 12400、32GB 内存),使用 LXC 容器和虚拟机
+* 通过 Wireguard VPN 实现远程访问,使用 ddclient 配置动态 DNS
+* 最近在 VPS 上部署了 SearXNG 个人搜索引擎
+* 未来计划:探索更多 Linux 发行版(Debian、Arch、Nix),并为开源项目做出贡献
+
+**[Read Original / 阅读原文](https://hazemkrimi.tech/blog/linux-self-hosting-journey/)**
+
+### GitHub Agentic Workflows - AI-Powered Automation for GitHub Actions
+
+* **What it does**: Enables developers to write AI agent workflows in natural language markdown that execute within GitHub Actions, automating repository tasks through conversational instructions rather than traditional code.
+
+* **Key features**: 
+  - Natural language workflow definitions in markdown format
+  - Multi-layered security architecture with sandboxed execution, read-only defaults, and human approval gates
+  - Integration with GitHub Actions infrastructure
+  - Companion tools including Agent Workflow Firewall for network control and MCP Gateway for protocol routing
+  - Safe-outputs system for controlled write operations
+
+* **Why it's notable**: This represents GitHub's official entry into agentic AI automation, combining the familiarity of GitHub Actions with AI agents while prioritizing security through comprehensive guardrails. With 499 stars today, it's gaining rapid traction as developers explore AI-native workflow automation. The project bridges the gap between traditional CI/CD and autonomous AI agents, though it requires careful supervision and comes with explicit security warnings.
+
+---
+
+### GitHub Agentic Workflows - GitHub Actions 的 AI 智能工作流
+
+* **功能介绍**: 允许开发者用自然语言 Markdown 编写 AI 智能体工作流,并在 GitHub Actions 中执行,通过对话式指令而非传统代码来自动化仓库任务。
+
+* **主要特点**:
+  - 使用 Markdown 格式的自然语言定义工作流
+  - 多层安全架构,包括沙箱执行、默认只读权限和人工审批关卡
+  - 与 GitHub Actions 基础设施深度集成
+  - 配套工具包括用于网络控制的 Agent Workflow Firewall 和用于协议路由的 MCP Gateway
+  - 通过 safe-outputs 系统实现受控的写入操作
+
+* **为何值得关注**: 这是 GitHub 官方进军智能体 AI 自动化领域的重要项目,将 GitHub Actions 的成熟生态与 AI 智能体结合,同时通过全面的安全防护措施优先保障安全性。今日获得 499 星标,开发者对 AI 原生工作流自动化的探索热情高涨。该项目在传统 CI/CD 与自主 AI 智能体之间架起桥梁,但需要谨慎监督使用,项目明确提示了安全风险。
+
+**[View Repository / 查看仓库](https://github.com/github/gh-aw)**
+
+### Compound Engineering Plugin - AI-Powered Development Workflow That Gets Better Over Time
+
+* What it does: Official Claude Code plugin marketplace featuring the Compound Engineering Plugin, a comprehensive workflow system that transforms how developers plan, execute, review, and document their work. Includes experimental converters for OpenCode and Codex compatibility.
+
+* Key features: Four-stage workflow (`/workflows:plan`, `/workflows:work`, `/workflows:review`, `/workflows:compound`) that emphasizes 80% planning/review and 20% execution; cross-platform CLI tool for converting plugins between Claude Code, OpenCode, and Codex formats; personal config sync capabilities; worktree-based task execution with multi-agent code review system.
+
+* Why it's notable: Inverts traditional development by making each engineering cycle compound knowledge rather than accumulate technical debt. With 406 stars today, it's gaining traction for its philosophy that future work should become easier, not harder—achieved through thorough planning, rigorous review, and systematic knowledge codification. Built by Every Inc, backed by real-world usage articles explaining their AI-assisted development approach.
+
+---
+
+### Compound Engineering Plugin - 让开发工作持续复利增长的 AI 工作流插件
+
+* 功能介绍: Claude Code 官方插件市场,核心是 Compound Engineering Plugin——一套完整的开发工作流系统,改变开发者规划、执行、审查和记录工作的方式。包含实验性的 OpenCode 和 Codex 格式转换器。
+
+* 主要特点: 四阶段工作流(`/workflows:plan`、`/workflows:work`、`/workflows:review`、`/workflows:compound`),强调 80% 规划/审查、20% 执行的比例;跨平台 CLI 工具可在 Claude Code、OpenCode 和 Codex 之间转换插件;支持个人配置同步;基于 worktree 的任务执行和多智能体代码审查系统。
+
+* 为何值得关注: 颠覆传统开发模式,通过每个工程周期复利积累知识而非累积技术债务。今日获得 406 星,因其"让未来工作更轻松而非更困难"的理念受到关注——通过深度规划、严格审查和系统化知识沉淀实现。由 Every Inc 开发,配有真实使用案例文章阐述其 AI 辅助开发方法论。
+
+**[View Repository / 查看仓库](https://github.com/EveryInc/compound-engineering-plugin)**
+
+### The Vibe Companion - Web UI for Claude Code CLI
+
+* What it does: Transforms Claude Code from a terminal-only tool into a browser-based interface by reverse-engineering its hidden WebSocket protocol. Lets you run Claude Code sessions directly in your browser without needing API keys—just your existing Claude Code subscription.
+
+* Key features: Multiple concurrent sessions with independent processes and settings; real-time token-by-token streaming; visual tool call approval with syntax highlighting; hierarchical subagent tracking; four permission modes from auto-approve to manual; session persistence with auto-recovery; environment profiles for per-project configuration. Built with Bun, Hono, React 19, and Tailwind v4.
+
+* Why it's notable: Solves major pain points of the Claude Code CLI (single session limitation, no visual feedback, context loss on crashes) through clever protocol reverse-engineering. The team documented the entire undocumented WebSocket protocol (13 control subtypes, NDJSON format) and built a production-ready web layer on top. One-command setup (`bunx the-vibe-companion`) makes it instantly accessible. Represents a significant UX improvement for AI coding assistants, especially for mobile/browser workflows.
+
+---
+
+### The Vibe Companion - Claude Code 的 Web 界面
+
+* 功能介绍: 通过逆向工程 Claude Code 隐藏的 WebSocket 协议,将其从纯终端工具转变为浏览器界面。无需 API 密钥,直接使用现有的 Claude Code 订阅即可在浏览器中运行会话。
+
+* 主要特点: 支持多个并发会话,每个会话独立进程和设置;实时逐 token 流式输出;可视化工具调用审批,带语法高亮;分层显示子代理工作流程;四种权限模式(从自动批准到手动审批);会话持久化与自动恢复;按项目存储环境配置文件。技术栈采用 Bun、Hono、React 19 和 Tailwind v4。
+
+* 为何值得关注: 通过巧妙的协议逆向工程解决了 Claude Code CLI 的核心痛点(单会话限制、无可视化反馈、崩溃丢失上下文)。团队完整记录了未公开的 WebSocket 协议(13 种控制子类型、NDJSON 格式),并在此基础上构建了生产级 Web 层。一行命令(`bunx the-vibe-companion`)即可启动,极大改善了 AI 编码助手的用户体验,特别适合移动端和浏览器工作流。
+
+**[View Repository / 查看仓库](https://github.com/The-Vibe-Company/companion)**
+
+### awesome-openclaw-usecases - A Curated Collection of Real-World AI Agent Use Cases
+
+* **What it does**: A community-driven repository showcasing practical, verified use cases for OpenClaw (formerly ClawdBot/MoltBot), an AI agent framework. It demonstrates how people integrate AI automation into their daily workflows across social media, productivity, creative projects, and research.
+
+* **Key features**: 
+  - 13+ verified use cases spanning social media management (Reddit/YouTube digests, X account analysis), productivity tools (inbox decluttering, personal CRM, health tracking), creative automation (overnight app builder, YouTube content pipeline), and research assistants (earnings tracker, knowledge base with RAG)
+  - Phone-based voice assistant integration for hands-free access
+  - Multi-channel routing across Telegram, Slack, email, and calendar
+  - Community-contributed and battle-tested implementations
+  - Security warnings and contribution guidelines emphasizing real-world validation
+
+* **Why it's notable**: Addresses the adoption gap for AI agents by focusing on practical applications rather than technical capabilities. With 1,007 stars, it's become a go-to resource for discovering how AI automation can genuinely improve daily life. The repository emphasizes verified, working solutions that contributors have used for at least a day, ensuring quality over quantity.
+
+---
+
+### awesome-openclaw-usecases - OpenClaw AI 智能体实用案例精选集
+
+* **功能介绍**: 这是一个社区驱动的仓库,展示 OpenClaw(前身为 ClawdBot/MoltBot)AI 智能体框架的实际应用案例。展示了人们如何将 AI 自动化集成到社交媒体、生产力工具、创意项目和研究工作等日常工作流程中。
+
+* **主要特点**:
+  - 13+ 个经过验证的用例,涵盖社交媒体管理(Reddit/YouTube 摘要、X 账号分析)、生产力工具(邮箱整理、个人 CRM、健康追踪)、创意自动化(夜间应用构建器、YouTube 内容流水线)和研究助手(财报追踪、RAG 知识库)
+  - 基于电话的语音助手集成,支持免提访问
+  - 跨 Telegram、Slack、邮件和日历的多渠道任务路由
+  - 社区贡献且经过实战检验的实现方案
+  - 包含安全警告和贡献指南,强调真实场景验证
+
+* **为何值得关注**: 通过聚焦实际应用而非技术能力,解决了 AI 智能体的采用瓶颈。凭借 1,007 星标,已成为发现 AI 自动化如何真正改善日常生活的首选资源。该仓库强调贡献者至少使用一天以上的经过验证的可行方案,确保质量优先于数量。
+
+**[View Repository / 查看仓库](https://github.com/hesamsheikh/awesome-openclaw-usecases)**
+
+### 🎬 Subscribe for more coding tips⬆️
+
+**Channel:** Coder Furious
+
+* This appears to be a short-form promotional video encouraging viewers to subscribe for coding content
+* Likely focuses on coding tips, exam preparation, and programming education
+* Worth watching if you're looking for quick coding insights and want to join a community focused on improving programming skills
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+
+**频道:** Coder Furious
+
+* 这是一个短视频形式的推广内容,鼓励观众订阅以获取编程相关内容
+* 可能专注于编程技巧、考试准备和编程教育
+* 如果你正在寻找快速的编程见解,并希望加入一个专注于提升编程技能的社区,值得一看
+
+---
+
+**Note:** This appears to be a promotional shorts video with limited detailed information available. The actual content may vary from this summary based on the video itself.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_81NBilEIy0)**
+
+### 🎬 Así programo las rutinas de movimiento de Foxy
+
+**Channel:** BioMakers Industries
+
+* What the video covers: A technical demonstration of programming movement routines for a Foxy animatronic character from Five Nights at Freddy's 2
+* Key topics discussed: Animatronic programming, movement sequence coding, robotics control systems, FNAF character recreation
+* Why it's worth watching: Offers a behind-the-scenes look at the technical process of bringing a popular game character to life through robotics and programming, perfect for makers, robotics enthusiasts, and FNAF fans interested in the engineering side of animatronics
+
+### 🎬 如何为 Foxy 编程动作程序
+
+**频道:** BioMakers Industries
+
+* 视频内容概述: 展示如何为《玩具熊的五夜后宫2》中的 Foxy 角色编程动作例程的技术演示
+* 主要话题: 电子动画编程、动作序列编码、机器人控制系统、FNAF 角色复刻
+* 为何值得观看: 深入了解通过机器人技术和编程将热门游戏角色变为现实的技术过程,适合创客、机器人爱好者以及对电子动画工程感兴趣的 FNAF 粉丝
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=9Ag4hsAwW5w)**
+
+### 🎬 Learn 78+ programming languages #programming #coding #study
+**Channel:** SetupsAI
+
+* What the video covers: A resource or guide showcasing how to learn over 78 different programming languages, likely presenting learning paths, tools, or platforms for polyglot programmers
+* Key topics discussed: Multi-language programming education, language learning strategies, comprehensive programming language overview, resources for mastering diverse coding languages
+* Why it's worth watching: Perfect for developers looking to expand their programming language repertoire, understand language fundamentals across different paradigms, or explore the vast landscape of programming languages beyond mainstream options
+
+---
+
+### 🎬 学习 78+ 种编程语言 #编程 #代码 #学习
+**频道:** SetupsAI
+
+* 视频内容概述: 展示如何学习超过 78 种不同编程语言的资源或指南,可能包含多语言程序员的学习路径、工具或平台
+* 主要话题: 多语言编程教育、语言学习策略、全面的编程语言概览、掌握多种编码语言的资源
+* 为何值得观看: 非常适合希望扩展编程语言技能的开发者,了解不同范式的语言基础,或探索主流选项之外的广阔编程语言领域
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EX64zlKd4Gw)**
 
