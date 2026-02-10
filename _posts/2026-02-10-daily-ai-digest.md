@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 10, 2026"
 date: 2026-02-10
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -489,4 +489,417 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * **为何值得观看:** 对于需要可靠访问 Bash 文档的开发者和系统管理员来说至关重要。了解替代来源可确保无论网络问题或站点可用性如何，都能随时查阅官方 Bash 文档。对于正在学习 Bash 或在脚本编写工作中需要快速参考的人员特别有用。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ge955rbJ_EM)**
+
+<!-- [Title-Only] -->
+### The Shadowy World of Abandoned Oil Tankers
+
+**Based on the title alone**, this BBC article likely explores:
+
+* The phenomenon of oil tankers that have been deserted or left derelict, possibly examining cases where vessels are abandoned at sea, in ports, or in international waters
+* The murky circumstances surrounding these abandonments - including potential reasons such as financial insolvency, sanctions evasion, environmental liability avoidance, or illegal operations
+* The environmental, economic, and legal challenges posed by these ghost ships, including oil spill risks, unpaid crew wages, and jurisdictional complications
+* Possible connections to "dark fleet" operations, ship-to-ship transfers, or sanctions circumvention schemes
+
+**Why it might be interesting to readers:**
+
+* Reveals a hidden aspect of global maritime trade that rarely makes headlines
+* Highlights environmental risks and potential disasters from aging, unmaintained vessels carrying hazardous cargo
+* Exposes the human cost - crews often stranded without pay or means to return home
+* Provides insight into how international regulations can be circumvented and the gaps in maritime law enforcement
+
+---
+
+### 被遗弃油轮的阴暗世界
+
+**仅根据标题推测**，这篇BBC文章可能涵盖：
+
+* 被遗弃或废弃的油轮现象，可能探讨船只在海上、港口或国际水域被遗弃的案例
+* 这些遗弃事件背后的可疑情况——包括可能的原因，如财务破产、规避制裁、逃避环境责任或非法运营
+* 这些幽灵船带来的环境、经济和法律挑战，包括漏油风险、船员工资拖欠以及管辖权复杂问题
+* 可能与"暗黑船队"运营、船对船转运或规避制裁计划的关联
+
+**为何值得关注：**
+
+* 揭示了全球海运贸易中鲜为人知的阴暗面
+* 突出了老化、缺乏维护且载有危险货物的船只带来的环境风险和潜在灾难
+* 揭露人道代价——船员常被困船上，无薪酬也无法回家
+* 深入了解国际法规如何被规避，以及海事执法中存在的漏洞
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/cddg885344do)**
+
+### What Functional Programmers Get Wrong About Systems - Key Insights
+
+* **Programs vs Systems**: Functional programming excels at reasoning about individual programs through static types and algebraic data types, but these tools don't automatically transfer to reasoning about distributed systems
+* **Every Monolith is Distributed**: Production systems with multiple servers, background workers, cron jobs, or external API calls are distributed systems, regardless of deployment architecture
+* **Correctness is Systemic**: The unit of correctness in production is not a single program but the entire set of deployments running simultaneously across different versions
+* **Multiple Versions Coexist**: During rolling deploys, blue-green deployments, or canary releases, multiple code versions run concurrently, creating compatibility challenges that type checkers cannot detect
+* **The Version Compatibility Problem**: Adding a new constructor to a sum type (e.g., adding `Refunded` to `PaymentStatus`) causes old workers to fail when encountering the new value, despite passing type checking
+* **Erlang's Solution**: The BEAM VM explicitly supports exactly two module versions simultaneously during hot upgrades, with `code_change/3` callbacks for state migration
+* **The Migration Ratchet**: Database schema changes move forward irreversibly, while code can roll back, creating untested combinations of old code with new schemas
+* **Expand-and-Contract Pattern**: Safe schema evolution requires multiple deploys (add nullable column → write to both → backfill → read from new → drop old)
+
+### 函数式程序员对系统理解的误区 - 核心要点
+
+* **程序与系统的区别**：函数式编程通过静态类型和代数数据类型在推理单个程序方面表现出色，但这些工具无法自动应用于分布式系统的推理
+* **单体也是分布式的**：拥有多台服务器、后台工作进程、定时任务或外部API调用的生产系统都是分布式系统，无论部署架构如何
+* **正确性是系统性的**：生产环境中正确性的单位不是单个程序，而是同时运行的不同版本的整个部署集合
+* **多版本共存**：在滚动部署、蓝绿部署或金丝雀发布期间，多个代码版本同时运行，产生类型检查器无法检测的兼容性挑战
+* **版本兼容性问题**：向求和类型添加新构造函数（如向`PaymentStatus`添加`Refunded`）会导致旧工作进程在遇到新值时失败，尽管通过了类型检查
+* **Erlang的解决方案**：BEAM虚拟机在热升级期间明确支持恰好两个模块版本同时运行，通过`code_change/3`回调进行状态迁移
+* **迁移棘轮机制**：数据库模式更改不可逆地向前推进，而代码可以回滚，这会创建旧代码与新模式的未测试组合
+* **扩展-收缩模式**：安全的模式演进需要多次部署（添加可空列 → 同时写入两处 → 回填 → 从新列读取 → 删除旧列）
+
+**[Read Original / 阅读原文](https://www.iankduncan.com/engineering/2026-02-09-what-functional-programmers-get-wrong-about-systems/)**
+
+### Why is the Sky Blue? - A Scientific Explanation
+
+* **The fundamental question of color**: The color of any object is determined by the wavelength of photons that travel from that object and enter our eyes
+* **Color perception nuances**: What we perceive as a single color is often actually many different wavelengths of light that our brain interprets as one unified color (e.g., turquoise can result from a single 500nm wavelength or a combination of 470nm and 540nm wavelengths)
+* **Blue light scattering**: When sunlight enters Earth's atmosphere, most colored photons pass through without interference, but blue photons have a unique tendency to scatter and ricochet extensively
+* **Atmospheric dispersion**: Blue photons disperse so widely and abundantly throughout the atmosphere that when you look at any part of a clear sky, blue photons are constantly traveling from that point directly to your eyes
+* **The simple answer**: This widespread scattering and dispersion of blue light is why the sky appears blue to our eyes
+
+### 天空为什么是蓝色的？- 科学解释
+
+* **颜色的基本问题**：任何物体的颜色都是由从该物体发出并进入我们眼睛的光子波长决定的
+* **色彩感知的细微差别**：我们感知到的单一颜色实际上往往是许多不同波长的光，我们的大脑将其解释为一种统一的颜色（例如，青绿色可以由单一的500纳米波长产生，也可以由470纳米和540纳米波长的组合产生）
+* **蓝光散射现象**：当阳光进入地球大气层时，大多数颜色的光子可以畅通无阻地穿过，但蓝色光子具有广泛散射和反弹的独特倾向
+* **大气弥散效应**：蓝色光子在大气中分散得如此广泛和丰富，以至于当你看向晴朗天空的任何部分时，蓝色光子都在不断地从那个点直接传播到你的眼睛
+* **简单的答案**：蓝光的这种广泛散射和弥散现象就是天空在我们眼中呈现蓝色的原因
+
+**[Read Original / 阅读原文](https://explainers.blog/posts/why-is-the-sky-blue/)**
+
+### TradingAgents-CN - Multi-Agent LLM Chinese Financial Trading Framework
+
+**What it does:**
+* A Chinese-enhanced multi-agent AI stock analysis learning platform built on LLM technology
+* Provides systematic learning tools for stock research and strategy experimentation using AI agents
+* Supports A-share, Hong Kong, and US stock markets with comprehensive Chinese localization
+* Positions itself as an educational and research platform, not for live trading recommendations
+
+**Key features:**
+* **v1.0.0-preview Architecture**: Complete upgrade from Streamlit to FastAPI + Vue 3, with MongoDB + Redis dual-database system delivering 10x performance improvement
+* **Enterprise-grade Capabilities**: User authentication, role management, real-time notification system (SSE+WebSocket), batch analysis, smart stock screening, watchlist management, and simulated trading
+* **Multi-LLM Integration**: Native support for OpenAI, Google AI (Gemini), DeepSeek, Alibaba Qwen, and other Chinese LLM providers with intelligent model selection
+* **Docker Multi-architecture**: Supports amd64 and ARM64 (Apple Silicon, Raspberry Pi, AWS Graviton) with automated GitHub Actions deployment
+* **Professional Reporting**: Export analysis reports in Markdown, Word, and PDF formats
+* **Critical Bug Fixes**: Resolved technical indicator calculation errors, fundamental data inaccuracies, infinite loop issues, and data consistency problems
+* **Three Deployment Options**: Green version (Windows one-click), Docker containerized deployment, and local source code installation
+
+**Why it's notable:**
+* Gained **149 stars today** and accumulated **13,000+ total stars**, demonstrating strong community interest in AI-powered financial analysis
+* Based on the revolutionary TradingAgents framework by Tauric Research, with significant Chinese market enhancements
+* Addresses the gap in Chinese-language AI financial education tools with comprehensive documentation, video tutorials, and WeChat community support
+* Hybrid licensing model: Apache 2.0 for core components, proprietary licensing for commercial use of backend/frontend
+* Active development with v2.0.0 in internal testing, recruiting volunteer testers to improve quality
+* Important copyright notice warning against unauthorized commercial use by third parties
+* Emphasizes educational purpose with clear risk disclaimers - not investment advice
+
+---
+
+### TradingAgents-CN - 基于多智能体LLM的中文金融交易框架
+
+**功能介绍:**
+* 面向中文用户的多智能体AI股票分析学习平台，基于大语言模型技术构建
+* 提供系统化学习工具，帮助用户使用AI智能体进行股票研究和策略实验
+* 支持A股、港股、美股市场，提供完整的中文本地化体验
+* 定位为教育研究平台，不提供实盘交易指令
+
+**主要特点:**
+* **v1.0.0-preview全新架构**: 从Streamlit升级到FastAPI + Vue 3架构，采用MongoDB + Redis双数据库系统，性能提升10倍
+* **企业级功能**: 用户权限管理、角色管理、实时通知系统(SSE+WebSocket)、批量分析、智能股票筛选、自选股管理、模拟交易系统
+* **多LLM提供商集成**: 原生支持OpenAI、Google AI(Gemini)、DeepSeek、阿里通义千问等国产大模型，智能模型选择
+* **Docker多架构支持**: 支持x86_64和ARM64架构(Apple Silicon、树莓派、AWS Graviton)，GitHub Actions自动化构建部署
+* **专业报告导出**: 支持Markdown、Word、PDF多格式分析报告导出
+* **重大Bug修复**: 解决技术指标计算不准确、基本面数据错误、死循环问题、数据一致性优化
+* **三种部署方式**: 绿色版(Windows一键启动)、Docker容器化部署、本地源码安装
+
+**为何值得关注:**
+* **今日获得149颗星**，累计获得**13,000+星标**，显示出AI金融分析工具的强劲社区需求
+* 基于Tauric Research的革命性TradingAgents框架，针对中国市场进行重大增强
+* 填补中文AI金融教育工具空白，提供完整文档、视频教程和微信社区支持
+* 混合许可证模式：核心组件采用Apache 2.0开源，后端/前端商业使用需授权
+* 积极开发中，v2.0.0版本正在内测，招募志愿者测试人员提升质量
+* 发布重要版权声明，警告第三方未经授权的商业使用行为
+* 强调教育目的并明确风险提示 - 不构成投资建议
+
+**[View Repository / 查看仓库](https://github.com/hsliuping/TradingAgents-CN)**
+
+### AionUi - Free, Local, Open-Source 24/7 Cowork Platform for CLI AI Agents
+
+**What it does:**
+* Provides a unified graphical interface for command-line AI tools (Gemini CLI, Claude Code, Codex, OpenCode, Qwen Code, Goose CLI, Auggie, etc.)
+* Built-in Gemini CLI ready to use out-of-the-box with no additional installation
+* Automatically detects and integrates locally installed CLI AI tools
+* Enables 24/7 remote access via WebUI, Telegram, Lark (Feishu), and other chat platforms
+* Offers scheduled task automation, smart file management, and AI image generation
+
+**Key features:**
+* **Multi-Agent Mode**: Auto-detects CLI tools, provides unified interface with local storage and multi-session support
+* **Remote Access**: Access from any device via browser (WebUI) or chat platforms (Telegram, Lark) with QR code/password login
+* **Scheduled Tasks**: Natural language task scheduling for automated workflows (data aggregation, report generation, file organization)
+* **Smart File Management**: AI-powered batch renaming, auto-organization, and intelligent classification
+* **Preview Panel**: Supports 9+ file formats (PDF, Word, Excel, PPT, code, Markdown, images, HTML, Diff) with real-time editing
+* **Multi-Model Support**: Works with Gemini, OpenAI, Claude, Qwen, Ollama, LM Studio, and more
+* **AI Assistants & Skills**: 10+ built-in professional assistants (Cowork, PPTX Generator, PDF to PPT, 3D Game, UI/UX Pro Max, etc.) with extensible custom skills
+* **Personalized UI**: Full CSS customization for interface styling
+* **Multi-Task Parallel Processing**: Multiple independent conversations with separate contexts
+
+**Why it's notable:**
+* **Trending**: Gained 673 stars today, addressing major pain points of CLI AI tools (no conversation history, single-session limits, complex file operations)
+* **Free & Open-Source**: Apache 2.0 license, completely free with local data security
+* **Cross-Platform**: Supports macOS, Windows, and Linux
+* **Comprehensive Solution**: Acts as "Cowork for all CLI AI tools" - similar to how Claude Cowork enhances Claude Code, but for multiple tools
+* **Production-Ready**: Includes enterprise features like scheduled automation, remote access, and multi-platform integration
+* **Active Development**: Multi-language support (8+ languages), active community on Discord and WeChat
+
+---
+
+### AionUi - 免费、本地、开源的 24/7 命令行 AI 代理协作平台
+
+**功能介绍:**
+* 为命令行 AI 工具（Gemini CLI、Claude Code、Codex、OpenCode、Qwen Code、Goose CLI、Auggie 等）提供统一图形界面
+* 内置 Gemini CLI，开箱即用，无需额外安装
+* 自动检测并集成本地已安装的 CLI AI 工具
+* 支持通过 WebUI、Telegram、飞书等多种方式 24/7 远程访问
+* 提供定时任务自动化、智能文件管理和 AI 图像生成功能
+
+**主要特点:**
+* **多代理模式**: 自动检测 CLI 工具，提供统一界面，支持本地存储和多会话管理
+* **远程访问**: 通过浏览器（WebUI）或聊天平台（Telegram、飞书）从任何设备访问，支持二维码/密码登录
+* **定时任务**: 自然语言任务调度，实现自动化工作流（数据汇总、报告生成、文件整理等）
+* **智能文件管理**: AI 驱动的批量重命名、自动整理和智能分类
+* **预览面板**: 支持 9+ 种文件格式（PDF、Word、Excel、PPT、代码、Markdown、图片、HTML、Diff），实时编辑
+* **多模型支持**: 兼容 Gemini、OpenAI、Claude、Qwen、Ollama、LM Studio 等多种模型
+* **AI 助手与技能**: 10+ 个内置专业助手（Cowork、PPTX 生成器、PDF 转 PPT、3D 游戏、UI/UX Pro Max 等），支持自定义技能扩展
+* **个性化界面**: 完全 CSS 自定义界面样式
+* **多任务并行处理**: 多个独立对话，各自拥有独立上下文
+
+**为何值得关注:**
+* **热门趋势**: 今日获得 673 星标，解决了 CLI AI 工具的主要痛点（无对话历史、单会话限制、复杂文件操作）
+* **免费开源**: Apache 2.0 许可证，完全免费，本地数据安全
+* **跨平台**: 支持 macOS、Windows 和 Linux
+* **全面解决方案**: 相当于"所有 CLI AI 工具的 Cowork 平台" - 类似 Claude Cowork 增强 Claude Code，但支持多种工具
+* **生产就绪**: 包含企业级功能，如定时自动化、远程访问和多平台集成
+* **活跃开发**: 支持 8+ 种语言，在 Discord 和微信上拥有活跃社区
+
+**[View Repository / 查看仓库](https://github.com/iOfficeAI/AionUi)**
+
+### Excalidraw MCP - AI-Powered Hand-Drawn Diagram Generator
+
+**What it does**
+* MCP (Model Context Protocol) server that enables AI assistants to create interactive hand-drawn style diagrams directly in chat interfaces
+* Streams Excalidraw diagrams with smooth viewport controls and fullscreen editing capabilities
+* Works seamlessly with Claude, ChatGPT, VS Code, Goose, and other MCP-compatible clients
+
+**Key features**
+* **Remote & Local deployment**: Use hosted version at Vercel or run locally via npm/extension
+* **Natural language prompts**: Simply ask "Draw a cute cat" or "Create an architecture diagram" and get instant visual results
+* **Interactive HTML interfaces**: Returns fully editable diagrams that render directly in chat, not just static images
+* **Easy integration**: Add as custom connector with single URL or install as `.mcpb` extension
+* **Open source & deployable**: Fork and deploy your own instance to Vercel in minutes
+
+**Why it's notable**
+* **Pioneering MCP Apps**: Demonstrates the power of Model Context Protocol's app extension, moving beyond text-only AI responses to interactive visual tools
+* **1000+ stars in short time**: Rapid adoption shows strong demand for visual AI capabilities
+* **Production-ready**: Hosted solution eliminates setup friction while maintaining local deployment option
+* **Developer-friendly**: Clear documentation for both users and developers wanting to build similar MCP apps
+* **Leverages Excalidraw**: Built on proven open-source whiteboard tool, ensuring quality hand-drawn aesthetics
+
+---
+
+### Excalidraw MCP - AI 驱动的手绘风格图表生成器
+
+**功能介绍**
+* MCP（模型上下文协议）服务器，使 AI 助手能够直接在聊天界面中创建交互式手绘风格图表
+* 流式传输 Excalidraw 图表，支持流畅的视口控制和全屏编辑功能
+* 无缝兼容 Claude、ChatGPT、VS Code、Goose 等支持 MCP 的客户端
+
+**主要特点**
+* **远程与本地部署**：可使用 Vercel 托管版本或通过 npm/扩展程序本地运行
+* **自然语言提示**：只需说"画一只可爱的猫"或"创建架构图"即可获得即时可视化结果
+* **交互式 HTML 界面**：返回可直接在聊天中渲染的完全可编辑图表，而非静态图片
+* **轻松集成**：通过单个 URL 添加为自定义连接器或安装 `.mcpb` 扩展
+* **开源可部署**：可 Fork 并在几分钟内将自己的实例部署到 Vercel
+
+**为何值得关注**
+* **MCP Apps 先驱**：展示了模型上下文协议应用扩展的强大能力，将 AI 响应从纯文本提升到交互式可视化工具
+* **短时间获得 1000+ 星标**：快速采用率显示了对 AI 可视化能力的强烈需求
+* **生产就绪**：托管解决方案消除了设置障碍，同时保留本地部署选项
+* **开发者友好**：为用户和想要构建类似 MCP 应用的开发者提供清晰文档
+* **基于 Excalidraw**：构建在经过验证的开源白板工具之上，确保高质量的手绘美学效果
+
+**[View Repository / 查看仓库](https://github.com/excalidraw/excalidraw-mcp)**
+
+### CodePilot - Native Desktop GUI for Claude Code Agent
+
+**What it does**
+* Provides a polished visual desktop interface for Anthropic's Claude Code CLI, replacing terminal-based interactions with a full-featured GUI
+* Enables conversational AI-powered coding through real-time streaming chat with Claude models (Opus, Sonnet, Haiku)
+* Manages coding projects with session persistence, file tree visualization, and project-aware context tracking
+
+**Key features**
+* **Session Management**: Create, rename, archive, and resume chat sessions with SQLite-backed persistence
+* **Project Context**: Live file tree viewer and preview panel showing exactly what files Claude is accessing
+* **Permission Controls**: Granular approval system for AI tool usage with multiple security modes
+* **MCP Integration**: Built-in Model Context Protocol server management supporting stdio, SSE, and HTTP transports
+* **Custom Skills**: Define reusable prompt templates as slash commands (global or per-project)
+* **Multiple Modes**: Switch between Code, Plan, and Ask interaction modes mid-conversation
+* **Token Tracking**: Real-time display of input/output tokens and estimated costs
+* **Cross-platform**: Available for macOS (universal binary), Windows, and Linux (AppImage/deb/rpm)
+
+**Why it's notable**
+* Bridges the gap between powerful CLI AI coding tools and user-friendly desktop experiences
+* Built with modern web stack (Electron + Next.js 16 + Tailwind CSS 4) making it highly maintainable and extensible
+* Addresses a real pain point: Claude Code's terminal interface lacks visual project management and session history
+* Gained 1,000+ stars quickly by solving a specific need in the AI-assisted coding workflow
+* Open-source (MIT) with comprehensive documentation and active development
+* Includes thoughtful UX details like syntax highlighting (Shiki), Markdown rendering, and dark/light themes
+
+---
+
+### CodePilot - Claude Code 原生桌面图形界面
+
+**功能介绍**
+* 为 Anthropic 的 Claude Code 命令行工具提供精美的可视化桌面界面，用图形化操作替代终端交互
+* 通过实时流式对话与 Claude 模型（Opus、Sonnet、Haiku）进行 AI 驱动的编程协作
+* 提供会话持久化、文件树可视化和项目感知上下文的项目管理功能
+
+**主要特点**
+* **会话管理**：创建、重命名、归档和恢复聊天会话，基于 SQLite 的本地持久化存储
+* **项目上下文**：实时文件树查看器和预览面板，清晰展示 Claude 正在访问的文件
+* **权限控制**：细粒度的 AI 工具使用审批系统，支持多种安全模式
+* **MCP 集成**：内置模型上下文协议服务器管理，支持 stdio、SSE 和 HTTP 传输方式
+* **自定义技能**：定义可重用的提示词模板作为斜杠命令（全局或项目级别）
+* **多种模式**：在对话中随时切换 Code、Plan 和 Ask 交互模式
+* **Token 追踪**：实时显示输入/输出 token 数量和预估成本
+* **跨平台**：支持 macOS（通用二进制）、Windows 和 Linux（AppImage/deb/rpm）
+
+**为何值得关注**
+* 在强大的 CLI AI 编程工具和友好的桌面体验之间搭建了桥梁
+* 采用现代 Web 技术栈（Electron + Next.js 16 + Tailwind CSS 4）构建，易于维护和扩展
+* 解决了实际痛点：Claude Code 的终端界面缺乏可视化项目管理和会话历史功能
+* 通过解决 AI 辅助编程工作流中的特定需求，快速获得 1000+ star
+* 开源项目（MIT 许可），文档完善，开发活跃
+* 包含贴心的用户体验细节，如语法高亮（Shiki）、Markdown 渲染和深色/浅色主题
+
+**[View Repository / 查看仓库](https://github.com/op7418/CodePilot)**
+
+### 🎬 OpenClaw Full Tutorial for Beginners – How to Set Up and Use OpenClaw (ClawdBot / MoltBot)
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** This comprehensive tutorial introduces OpenClaw, a proactive autonomous agent and messaging gateway system. The course walks beginners through the complete setup process and demonstrates practical usage of OpenClaw, including its ClawdBot and MoltBot implementations.
+
+* **Key topics discussed:** 
+  - Understanding OpenClaw's architecture as an autonomous agent
+  - Step-by-step installation and configuration guide
+  - Setting up ClawdBot and MoltBot functionalities
+  - Messaging gateway integration and automation
+  - Practical examples and use cases for autonomous agent deployment
+
+* **Why it's worth watching:** Perfect for developers and tech enthusiasts looking to explore autonomous agent technology. FreeCodeCamp delivers a beginner-friendly, hands-on approach to understanding and implementing OpenClaw, making complex AI agent concepts accessible. Essential viewing for anyone interested in building proactive automation systems or exploring the latest in AI-powered messaging solutions.
+
+---
+
+### 🎬 OpenClaw 完整新手教程 – 如何设置和使用 OpenClaw (ClawdBot / MoltBot)
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 这个综合教程介绍了 OpenClaw，一个主动式自主代理和消息网关系统。课程为初学者详细讲解完整的设置过程，并演示 OpenClaw 的实际使用方法，包括 ClawdBot 和 MoltBot 的实现。
+
+* **主要话题:**
+  - 理解 OpenClaw 作为自主代理的架构
+  - 分步安装和配置指南
+  - 设置 ClawdBot 和 MoltBot 功能
+  - 消息网关集成和自动化
+  - 自主代理部署的实际案例和应用场景
+
+* **为何值得观看:** 非常适合想要探索自主代理技术的开发者和技术爱好者。FreeCodeCamp 提供了适合初学者的实践方法来理解和实现 OpenClaw，使复杂的 AI 代理概念变得易于理解。对于任何想要构建主动自动化系统或探索最新 AI 驱动消息解决方案的人来说，这是必看的教程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=n1sfrc-RjyM)**
+
+### 🎬 Subscribe for more coding tips⬆️
+
+**Channel:** Coder Furious
+
+* **What the video covers:** A short-form promotional video encouraging viewers to subscribe for coding tips and educational content related to programming exams and question papers
+* **Key topics discussed:** Coding skill enhancement, exam preparation resources, programming education community
+* **Why it's worth watching:** Ideal for students and aspiring programmers looking for quick coding tips, exam strategies, and wanting to join a learning community focused on improving programming skills
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+
+**频道:** Coder Furious
+
+* **视频内容概述:** 一个短视频形式的推广内容，鼓励观众订阅频道以获取编程技巧和与编程考试、试卷相关的教育内容
+* **主要话题:** 编程技能提升、考试准备资源、编程教育社区
+* **为何值得观看:** 适合寻找快速编程技巧、考试策略的学生和编程初学者，帮助加入专注于提升编程技能的学习社区
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_81NBilEIy0)**
+
+### 🎬 border-radius trick
+**Channel:** Kevin Powell
+
+* **What the video covers:** A clever CSS technique using viewport units with the `border-radius` property to create responsive rounded corners that scale with the viewport size.
+
+* **Key topics discussed:** 
+  - Practical application of viewport units (vw/vh) in CSS
+  - Using viewport units specifically for `border-radius` values
+  - When viewport units are actually useful despite their general limitations
+  - Creating fluid, responsive border radius effects
+
+* **Why it's worth watching:** Kevin Powell, a renowned CSS expert, shares a specific use case where viewport units shine. While he typically advises against viewport units, this trick demonstrates a legitimate scenario where they solve a real design problem. Perfect for developers looking to create more dynamic and responsive UI elements without relying on JavaScript or complex media queries.
+
+---
+
+### 🎬 border-radius 技巧
+**频道:** Kevin Powell
+
+* **视频内容概述:** 介绍了一个巧妙的 CSS 技巧，使用视口单位配合 `border-radius` 属性来创建随视口大小缩放的响应式圆角效果。
+
+* **主要话题:**
+  - CSS 中视口单位（vw/vh）的实际应用
+  - 专门在 `border-radius` 值中使用视口单位
+  - 尽管视口单位有局限性，但在某些场景下确实有用
+  - 创建流畅的响应式边框圆角效果
+
+* **为何值得观看:** Kevin Powell 作为知名 CSS 专家，分享了视口单位真正发挥作用的特定用例。虽然他通常不建议使用视口单位，但这个技巧展示了它们能够解决实际设计问题的合理场景。非常适合希望在不依赖 JavaScript 或复杂媒体查询的情况下创建更动态、更具响应性 UI 元素的开发者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
+
+### 🎬 Meet agentic coding in Xcode | Apple Developer
+
+**Channel:** Apple Developer
+
+* **What the video covers:** This video introduces the groundbreaking agentic coding features in Xcode 26.3, demonstrating how Apple has integrated AI coding agents directly into its development environment. It showcases the seamless collaboration between multiple AI agents like OpenAI Codex and Claude Agent working together on complex coding tasks.
+
+* **Key topics discussed:**
+  - Integration of AI coding agents (OpenAI Codex, Claude Agent) into Xcode 26.3
+  - Multi-agent collaboration for solving complex programming challenges
+  - Workflow demonstrations showing how agents work together in real development scenarios
+  - New developer tools and features that leverage agentic AI capabilities
+  - Practical applications for iOS, macOS, and other Apple platform development
+
+* **Why it's worth watching:** This is a must-watch for Apple developers as it represents a major shift in how coding will be done in the Apple ecosystem. The integration of multiple AI agents working collaboratively marks a significant advancement in developer productivity tools. Developers can learn how to leverage these cutting-edge AI capabilities to accelerate their workflow, tackle complex problems more efficiently, and stay ahead of the curve in modern software development practices.
+
+---
+
+### 🎬 在 Xcode 中体验智能体编程 | Apple Developer
+
+**频道:** Apple Developer
+
+* **视频内容概述:** 本视频介绍了 Xcode 26.3 中突破性的智能体编程功能，展示了苹果如何将 AI 编程智能体直接集成到其开发环境中。视频演示了多个 AI 智能体（如 OpenAI Codex 和 Claude Agent）如何无缝协作处理复杂的编程任务。
+
+* **主要话题:**
+  - AI 编程智能体（OpenAI Codex、Claude Agent）集成到 Xcode 26.3
+  - 多智能体协作解决复杂编程挑战
+  - 真实开发场景中智能体协同工作的工作流演示
+  - 利用智能体 AI 能力的新开发工具和功能
+  - iOS、macOS 及其他苹果平台开发的实际应用
+
+* **为何值得观看:** 这是苹果开发者的必看视频，因为它代表了苹果生态系统中编程方式的重大转变。多个 AI 智能体协同工作的集成标志着开发者生产力工具的重大进步。开发者可以学习如何利用这些前沿的 AI 能力来加速工作流程，更高效地解决复杂问题，并在现代软件开发实践中保持领先地位。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oV6mC8Rt1kY)**
 
