@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 11, 2026"
 date: 2026-02-11
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -879,4 +879,65 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * 建议:升级到 GNU Inetutils 2.7-2+ 或完全禁用 telnet;网络运营商应实施 23 端口边界过滤作为行业标准
 
 **[Read Original / 阅读原文](https://www.labs.greynoise.io/grimoire/2026-02-10-telnet-falls-silent/)**
+
+<!-- [Title-Only] -->
+### Windows Notepad App Remote Code Execution Vulnerability
+
+* Based on the title, this article likely covers a critical security vulnerability (CVE-2026-20841) discovered in Windows Notepad that could allow attackers to execute arbitrary code remotely on affected systems
+* This is significant because Notepad is one of the most ubiquitous and trusted applications in Windows, present on virtually every Windows installation. A remote code execution (RCE) vulnerability in such a fundamental system component could have widespread security implications
+* Why it might be interesting to readers: This represents a serious security concern for Windows users, as attackers could potentially exploit this vulnerability through malicious files or network attacks. The CVE designation (2026) suggests this is either a recently discovered or future-dated vulnerability, making it particularly relevant for system administrators and security professionals who need to assess risk and apply patches
+
+---
+
+### Windows 记事本应用远程代码执行漏洞
+
+* 根据标题推测，本文可能介绍了在 Windows 记事本中发现的一个严重安全漏洞（CVE-2026-20841），该漏洞可能允许攻击者在受影响的系统上远程执行任意代码
+* 这个漏洞具有重要意义，因为记事本是 Windows 系统中最普遍和最受信任的应用程序之一，几乎存在于每个 Windows 安装中。在如此基础的系统组件中出现远程代码执行（RCE）漏洞可能会产生广泛的安全影响
+* 为何值得关注：这对 Windows 用户来说是一个严重的安全问题，因为攻击者可能通过恶意文件或网络攻击利用此漏洞。CVE 编号（2026）表明这可能是最近发现的或未来日期的漏洞，对于需要评估风险和应用补丁的系统管理员和安全专业人员来说尤其重要
+
+**[Read Original / 阅读原文](https://www.cve.org/CVERecord?id=CVE-2026-20841)**
+
+### The AI Vampire: How AI Productivity Tools Are Draining Developers
+
+* AI coding tools like Claude Code are delivering real 10x productivity gains, creating an "energy vampire" effect that exhausts developers
+* The value capture dilemma: working 8 hours at 10x productivity burns you out while your employer captures all gains; working 1 hour risks company failure
+* AI adoption is inherently addictive, combining dopamine hits with slot-machine-like unpredictability, leading to extreme fatigue and "nap attacks"
+* Early adopters and influencers are setting unrealistic standards, pressuring average developers to match unsustainable work patterns
+* AI-native startups are accelerating the problem, pursuing repetitive ideas while extracting maximum value from employees in a frenzied "gold rush"
+* The world is accelerating involuntarily - developers face a lose-lose situation: adopt AI and burn out, or fall behind competitors
+* Companies and executives are viewing AI productivity as a way to reduce headcount rather than improve work-life balance
+* The author acknowledges contributing to unrealistic expectations despite having 40 years of experience and unlimited resources
+
+### AI 吸血鬼:AI 生产力工具如何榨干开发者
+
+* Claude Code 等 AI 编码工具确实带来了 10 倍生产力提升,但产生了"能量吸血鬼"效应,让开发者精疲力竭
+* 价值获取困境:以 10 倍生产力工作 8 小时会让你精疲力竭,而雇主获得所有收益;只工作 1 小时则可能导致公司倒闭
+* AI 使用具有成瘾性,结合多巴胺刺激和老虎机式的不可预测性,导致极度疲劳和"突发性困倦"
+* 早期采用者和意见领袖设定了不切实际的标准,给普通开发者施加了难以维持的工作模式压力
+* AI 原生初创公司加剧了这个问题,追逐重复的创意,同时在狂热的"淘金热"中最大限度地榨取员工价值
+* 世界正在被迫加速 - 开发者面临两难境地:采用 AI 会精疲力竭,不采用则会落后于竞争对手
+* 公司和高管将 AI 生产力视为减少人员编制的方式,而非改善工作生活平衡
+* 作者承认自己也助长了不切实际的期望,尽管他拥有 40 年经验和无限资源
+
+**[Read Original / 阅读原文](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163)**
+
+### Signy: Signed URL Library for Embedded Devices
+
+* A lightweight library for generating cryptographically signed URLs on resource-constrained embedded devices
+* Enables time-limited access to private resources through asymmetric cryptography, useful for CDN content or delegated downloads
+* Uses PSA Crypto API for signing operations with device certificates
+* Signed URLs include base URL, validity timestamps, certificate, and signature components
+* Integrates with Golioth IoT platform and requires server-side verification capability
+* Available as both Zephyr module and ESP-IDF component for easy integration into embedded projects
+
+### Signy:嵌入式设备签名 URL 库
+
+* 一个轻量级库,用于在资源受限的嵌入式设备上生成加密签名的 URL
+* 通过非对称加密实现对私有资源的限时访问,适用于 CDN 内容或委托下载场景
+* 使用 PSA 加密 API 配合设备证书进行签名操作
+* 签名 URL 包含基础 URL、有效时间戳、证书和签名等组件
+* 与 Golioth 物联网平台集成,需要服务器端验证能力
+* 提供 Zephyr 模块和 ESP-IDF 组件两种形式,便于集成到嵌入式项目中
+
+**[Read Original / 阅读原文](https://github.com/golioth/signy)**
 
