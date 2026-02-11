@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 12, 2026"
 date: 2026-02-12
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -286,4 +286,230 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+<!-- [Title-Only] -->
+### The risk of a hothouse Earth trajectory
+
+**Note: This introduction is based solely on the article title, as the full content could not be accessed.**
+
+* This article likely explores the scientific concept of "hothouse Earth" - a potential climate scenario where feedback loops push global temperatures beyond a critical threshold, triggering irreversible warming even if human emissions are reduced
+* It probably discusses tipping points in Earth's climate system, such as melting ice sheets, thawing permafrost, and changes in ocean circulation that could accelerate warming
+* The piece may examine the risks and timelines associated with crossing these thresholds, and what trajectory humanity is currently on
+* Why it matters: Understanding hothouse Earth scenarios is crucial for climate policy and action. If we're approaching irreversible tipping points, it underscores the urgency of immediate emissions reductions and climate intervention strategies
+
+---
+
+### 地球"温室化"轨迹的风险
+
+**注：本简介仅基于文章标题，因无法获取完整内容。**
+
+* 这篇文章可能探讨"温室地球"的科学概念——一种潜在的气候情景，即反馈循环将全球温度推高至临界阈值之上,即使人类减少排放也会触发不可逆转的变暖
+* 文章可能讨论地球气候系统中的临界点,如冰盖融化、永久冻土解冻以及海洋环流变化等可能加速变暖的因素
+* 内容可能审视跨越这些阈值的相关风险和时间表,以及人类目前所处的轨迹
+* 为何值得关注：理解温室地球情景对气候政策和行动至关重要。如果我们正在接近不可逆转的临界点,这凸显了立即减排和气候干预策略的紧迫性
+
+**[Read Original / 阅读原文](https://www.cell.com/one-earth/fulltext/S2590-3322%2825%2900391-4)**
+
+### Fluorite Game Engine: Flutter-Integrated Console-Grade 3D Engine
+
+* **First Flutter-native console-grade game engine** - Write game code directly in Dart with full Flutter integration, using `FluoriteView` widgets for multiple 3D scene views
+* **High-performance ECS architecture** - C++-powered Entity-Component-System core optimized for embedded/low-end hardware while maintaining high-level Dart APIs
+* **Blender-integrated touch zones** - 3D artists define clickable trigger zones directly in Blender with event tags for spatial UI interactions
+* **Filament-powered rendering** - Google's Filament renderer with Vulkan support delivers console-quality visuals, physically-accurate lighting, post-processing, and custom shaders
+* **Hot Reload support** - Flutter's Hot Reload enables frame-level scene updates for rapid iteration and testing
+
+### Fluorite 游戏引擎:与 Flutter 完全集成的主机级 3D 引擎
+
+* **首个 Flutter 原生主机级游戏引擎** - 直接用 Dart 编写游戏代码,完全集成 Flutter,通过 `FluoriteView` 组件支持多个 3D 场景视图
+* **高性能 ECS 架构** - C++ 驱动的实体-组件-系统核心,针对嵌入式/低端硬件优化,同时保持高级 Dart API
+* **Blender 集成触控区域** - 3D 美术师直接在 Blender 中定义可点击触发区域和事件标签,实现空间 UI 交互
+* **Filament 渲染引擎** - 采用 Google Filament 渲染器和 Vulkan 支持,提供主机级画质、物理精确光照、后处理效果和自定义着色器
+* **热重载支持** - Flutter 热重载功能实现帧级场景更新,加速迭代和测试流程
+
+**[Read Original / 阅读原文](https://fluorite.game/)**
+
+<!-- [Title-Only] -->
+### GLM-5: From Vibe Coding to Agentic Engineering
+
+**Note:** This introduction is based solely on the article title, as the full content could not be fetched.
+
+* This article likely discusses GLM-5, which appears to be a new AI model or system that represents an evolution in AI-assisted software development. The phrase "From Vibe Coding to Agentic Engineering" suggests a transition from intuitive, exploratory coding approaches to more autonomous, agent-based engineering systems.
+
+* The article is probably interesting because it addresses the evolution of AI coding assistants - moving beyond simple code completion or "vibe-based" suggestions toward more sophisticated agentic systems that can autonomously handle complex engineering tasks. This represents a significant shift in how AI tools assist developers, potentially offering insights into the future of software development workflows and the increasing autonomy of AI coding agents.
+
+---
+
+### GLM-5：从氛围编程到智能体工程
+
+**注意：** 本简介仅基于文章标题，因为无法获取完整内容。
+
+* 这篇文章可能讨论 GLM-5，这似乎是一个新的 AI 模型或系统，代表了 AI 辅助软件开发的演进。"从氛围编程到智能体工程"这一表述暗示了从直觉性、探索性的编程方法向更自主的、基于智能体的工程系统的转变。
+
+* 这篇文章值得关注，因为它探讨了 AI 编程助手的演化——从简单的代码补全或"氛围式"建议，发展到能够自主处理复杂工程任务的更复杂的智能体系统。这代表了 AI 工具辅助开发者方式的重大转变，可能为我们提供关于软件开发工作流程未来以及 AI 编程智能体日益增强的自主性的深刻见解。
+
+**[Read Original / 阅读原文](https://z.ai/blog/glm-5)**
+
+### Chrome DevTools MCP - Browser Control for AI Coding Agents
+
+* Enables AI coding assistants (Gemini, Claude, Cursor, Copilot) to control and inspect a live Chrome browser through the Model Context Protocol (MCP)
+* Performance analysis with Chrome DevTools traces, network debugging with source-mapped stack traces, screenshots, and reliable Puppeteer-based automation
+* Gaining traction with 102 stars today as AI agents increasingly need browser automation capabilities; integrates seamlessly with 15+ popular AI coding tools including VS Code, Cursor, JetBrains, and Gemini CLI
+
+### Chrome DevTools MCP - AI 编程助手的浏览器控制工具
+
+* 让 AI 编程助手(Gemini、Claude、Cursor、Copilot)通过模型上下文协议(MCP)控制和检查实时 Chrome 浏览器
+* 提供 Chrome DevTools 性能追踪分析、带源码映射的网络调试、截图功能,以及基于 Puppeteer 的可靠自动化操作
+* 今日获得 102 星标,随着 AI 智能体对浏览器自动化需求增长而受关注;可无缝集成 VS Code、Cursor、JetBrains、Gemini CLI 等 15+ 主流 AI 编程工具
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### Compound Engineering Plugin - AI-Powered Development Workflow System
+
+* **What it does**: A Claude Code plugin marketplace that implements "compound engineering" — a development methodology where each unit of work makes future work easier through structured planning, execution, review, and knowledge capture cycles.
+
+* **Key features**: 
+  * Four-phase workflow system (Plan → Work → Review → Compound) with dedicated commands for each stage
+  * Cross-platform plugin converter supporting OpenCode, Codex, and Factory Droid formats
+  * Personal config sync for skills and MCP servers across AI coding assistants
+  * Multi-agent code review system that captures learnings for reuse
+  * Git worktree integration for isolated feature development
+
+* **Why it's notable**: Challenges traditional development by inverting the technical debt accumulation pattern — instead of codebases becoming harder to maintain over time, this system codifies knowledge and patterns to make each subsequent feature easier to build. With 270 stars today, it represents a novel approach to AI-assisted development that prioritizes planning (80%) over execution (20%), backed by Every's real-world engineering practices.
+
+---
+
+### Compound Engineering Plugin - AI 驱动的复合工程开发工作流系统
+
+* **功能介绍**: 一个 Claude Code 插件市场,实现了"复合工程"开发方法论——通过结构化的规划、执行、审查和知识沉淀循环,让每个工作单元都使后续工作变得更容易。
+
+* **主要特点**:
+  * 四阶段工作流系统(规划 → 工作 → 审查 → 复合),每个阶段都有专用命令
+  * 跨平台插件转换器,支持 OpenCode、Codex 和 Factory Droid 格式
+  * 个人配置同步功能,可在多个 AI 编码助手间同步技能和 MCP 服务器
+  * 多智能体代码审查系统,捕获经验教训供复用
+  * Git worktree 集成,实现隔离的特性开发
+
+* **为何值得关注**: 挑战传统开发模式,逆转技术债务累积规律——代码库不会随时间变得更难维护,而是通过知识和模式的编码使每个后续功能更易构建。今日获得 270 星标,代表了一种新颖的 AI 辅助开发方法,优先考虑规划(80%)而非执行(20%),基于 Every 公司的实际工程实践。
+
+**[View Repository / 查看仓库](https://github.com/EveryInc/compound-engineering-plugin)**
+
+### Awesome OpenClaw Use Cases - A Curated Collection of Real-World AI Agent Applications
+
+* **What it does**: A community-driven repository showcasing 22+ practical, verified use cases for OpenClaw (formerly ClawdBot/MoltBot), an AI agent framework. It demonstrates how people integrate autonomous AI agents into daily workflows across social media, productivity, DevOps, content creation, and research.
+
+* **Key features**: Organized into 6 categories (Social Media, Creative & Building, Infrastructure & DevOps, Productivity, Research & Learning, Finance & Trading); includes automated content digestion, multi-channel AI assistants, self-healing infrastructure, autonomous project management, and RAG-based knowledge bases; all use cases are community-tested and verified to work in production.
+
+* **Why it's notable**: Addresses the adoption gap for AI agents by focusing on practical implementation patterns rather than technical capabilities. With 1,464 stars, it's become a go-to resource for discovering how autonomous agents can genuinely improve workflows. The repository emphasizes security awareness and real-world validation, requiring contributors to submit only battle-tested solutions they've personally used.
+
+---
+
+### Awesome OpenClaw Use Cases - OpenClaw AI 智能体实战用例精选集
+
+* **功能介绍**: 社区驱动的 OpenClaw(原 ClawdBot/MoltBot)AI 智能体框架实战用例库,收录 22+ 个经过验证的真实应用场景,涵盖社交媒体、生产力工具、DevOps、内容创作和研究等领域,展示如何将自主 AI 智能体集成到日常工作流程中。
+
+* **主要特点**: 分为 6 大类别(社交媒体、创意构建、基础设施与 DevOps、生产力、研究学习、金融交易);包含自动化内容摘要、多渠道 AI 助手、自愈基础设施、自主项目管理、基于 RAG 的知识库等功能;所有用例均经社区实测并在生产环境中验证可用。
+
+* **为何值得关注**: 通过聚焦实用实现模式而非技术能力,填补了 AI 智能体应用落地的认知鸿沟。凭借 1,464 星标,已成为探索自主智能体如何真正改善工作流程的首选资源。该仓库强调安全意识和真实验证,要求贡献者仅提交个人实际使用并经过实战检验的解决方案。
+
+**[View Repository / 查看仓库](https://github.com/hesamsheikh/awesome-openclaw-usecases)**
+
+### Textream - Free macOS Teleprompter with Real-Time Speech Tracking
+
+* **What it does**: A macOS teleprompter app that displays your script in a Dynamic Island-style overlay and highlights words in real-time as you speak using on-device speech recognition. Offers three modes: word tracking (highlights as you speak), classic auto-scroll, and voice-activated scrolling.
+
+* **Key features**: On-device speech recognition with no cloud dependency, works offline in dozens of languages; Dynamic Island overlay that sits above all apps; floating window and external display/Sidecar support with mirror mode; customizable fonts (including dyslexia-friendly), colors, and scroll speeds; live waveform visualization; completely private with no data collection; URL scheme and macOS Services integration.
+
+* **Why it's notable**: Solves a real problem for content creators who need to read scripts while maintaining eye contact with cameras or audiences. The Dynamic Island UI is elegant and unobtrusive, the on-device processing ensures privacy and zero latency, and it's completely free and open-source. Perfect timing as more people create video content for streaming, podcasting, and presentations. The combination of modern macOS design patterns with practical functionality makes it stand out.
+
+---
+
+### Textream - 免费 macOS 提词器,实时语音追踪
+
+* **功能介绍**: 一款 macOS 提词器应用,以 Dynamic Island 风格的悬浮窗显示脚本,并在你说话时使用设备端语音识别实时高亮单词。提供三种模式:单词追踪(跟随语音高亮)、经典自动滚动和语音激活滚动。
+
+* **主要特点**: 设备端语音识别,无需云端,离线工作,支持数十种语言;Dynamic Island 悬浮窗置于所有应用之上;支持浮动窗口和外接显示器/Sidecar,带镜像模式;可自定义字体(包括阅读障碍友好字体)、颜色和滚动速度;实时波形可视化;完全隐私保护,无数据收集;支持 URL scheme 和 macOS 服务集成。
+
+* **为何值得关注**: 为需要在保持眼神交流的同时阅读脚本的内容创作者解决了实际问题。Dynamic Island 界面优雅且不突兀,设备端处理确保隐私和零延迟,且完全免费开源。随着越来越多人制作流媒体、播客和演示视频内容,时机恰到好处。将现代 macOS 设计模式与实用功能相结合,使其脱颖而出。
+
+**[View Repository / 查看仓库](https://github.com/f/textream)**
+
+### 🎬 The Real Reason Elon Bought Twitter
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An analysis of Elon Musk's motivations and strategic reasoning behind his controversial $44 billion acquisition of Twitter (now X)
+* Key topics discussed: The business rationale, political implications, free speech considerations, and long-term vision for transforming the platform into a broader "everything app"
+* Why it's worth watching: Offers a deeper perspective beyond mainstream narratives, examining the acquisition through multiple lenses including technology strategy, cultural influence, and Musk's broader business ecosystem
+
+### 🎬 马斯克收购推特的真正原因
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深入分析埃隆·马斯克以440亿美元收购推特(现为X)背后的动机和战略考量
+* 主要话题: 商业逻辑、政治影响、言论自由理念,以及将平台转型为综合性"超级应用"的长远愿景
+* 为何值得观看: 超越主流叙事,从技术战略、文化影响力和马斯克商业生态系统等多个角度剖析这笔收购交易
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=32h9CWjTPRQ)**
+
+### 🎬 Subscribe for more coding tips⬆️
+
+**Channel:** Coder Furious
+
+* This appears to be a short-form promotional video encouraging viewers to subscribe for coding content
+* Likely focuses on coding tips, exam preparation, and programming education
+* Worth watching if you're looking for quick coding insights and want to join a community focused on improving programming skills
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+
+**频道:** Coder Furious
+
+* 这是一个短视频形式的推广内容,鼓励观众订阅以获取编程相关内容
+* 可能专注于编程技巧、考试准备和编程教育
+* 如果你正在寻找快速的编程见解,并希望加入一个专注于提升编程技能的社区,值得一看
+
+---
+
+**Note:** This appears to be a promotional shorts video with limited detailed information available. The actual content may vary from this summary based on the video itself.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_81NBilEIy0)**
+
+### 🎬 I figured out the best way to run OpenClaw
+
+**Channel:** Matthew Berman
+
+* What the video covers: A streamlined method for setting up and running OpenClaw, an AI tool, with a simplified one-click installation process
+* Key topics discussed: OpenClaw setup optimization, installation shortcuts, practical deployment strategies for AI tools
+* Why it's worth watching: If you're interested in running OpenClaw efficiently, this video offers a time-saving approach that eliminates complex setup procedures, making it accessible even for users without extensive technical backgrounds
+
+---
+
+### 🎬 我找到了运行 OpenClaw 的最佳方法
+
+**频道:** Matthew Berman
+
+* 视频内容概述: 介绍了一种简化的 OpenClaw 设置和运行方法,通过一键安装流程大幅简化部署过程
+* 主要话题: OpenClaw 安装优化、快捷部署方案、AI 工具的实用配置策略
+* 为何值得观看: 如果你想高效运行 OpenClaw,这个视频提供了省时的方法,消除了复杂的设置步骤,即使是没有深厚技术背景的用户也能轻松上手
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GrG-dOmrLU)**
+
+### 🎬 OpenClaw 30-Second Summary
+
+**Channel:** 코딩애플 (Coding Apple)
+
+* A quick overview of OpenClaw, an AI coding tool that's making waves in the developer community
+* Covers what makes OpenClaw significant and how it's changing the coding landscape
+* Worth watching for developers curious about the latest AI-powered coding assistants and automation tools - the dramatic "humans are finished" tagline suggests this is about AI's growing capabilities in software development
+
+---
+
+### 🎬 오픈클로 30초 요약
+
+**频道:** 코딩애플 (Coding Apple)
+
+* 快速介绍 OpenClaw 这款在开发者社区引起关注的 AI 编程工具
+* 讲解 OpenClaw 的重要性以及它如何改变编程领域
+* 值得观看：适合对最新 AI 驱动的编程助手和自动化工具感兴趣的开发者 - "人类完蛋了"这个戏剧性标题暗示视频探讨 AI 在软件开发中日益增长的能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bOSK3pI7dwg)**
 
