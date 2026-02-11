@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 11, 2026"
 date: 2026-02-11
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 16 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：16篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -940,4 +940,152 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * 提供 Zephyr 模块和 ESP-IDF 组件两种形式,便于集成到嵌入式项目中
 
 **[Read Original / 阅读原文](https://github.com/golioth/signy)**
+
+<!-- [Title-Only] -->
+### Chrome extensions spying on 37M users' browsing data
+
+* Based on the title, this article likely exposes a significant privacy breach involving Chrome browser extensions that have been collecting and potentially misusing browsing data from approximately 37 million users
+* This is important because it highlights the security risks of browser extensions, which many users install without fully understanding the permissions they grant. The scale (37M users) suggests this is a widespread issue affecting a substantial portion of Chrome's user base
+* Readers should care because they may be unknowingly affected, and this serves as a critical reminder to audit installed extensions and understand what data access they're requesting
+
+### Chrome 扩展程序监视 3700 万用户的浏览数据
+
+* 根据标题推测，这篇文章可能揭露了一起重大的隐私泄露事件，涉及多个 Chrome 浏览器扩展程序，这些扩展一直在收集并可能滥用约 3700 万用户的浏览数据
+* 这个话题值得关注，因为它凸显了浏览器扩展程序的安全风险。许多用户在安装扩展时并未充分了解自己授予了哪些权限。3700 万这个规模表明这是一个影响 Chrome 大量用户群体的广泛问题
+* 读者应该关注此事，因为他们可能在不知情的情况下受到影响。这也是一个重要提醒：需要审查已安装的扩展程序，并了解它们请求访问哪些数据
+
+**[Read Original / 阅读原文](https://qcontinuum.substack.com/p/spying-chrome-extensions-287-extensions-495)**
+
+<!-- [Title-Only] -->
+### It's All a Blur
+
+* Based on the title, this article likely explores the concept of blurring - potentially in image processing, computer vision, or digital photography. It may discuss blur algorithms, their applications in privacy (like blurring faces or license plates), visual effects, or the technical challenges of implementing blur efficiently.
+* This could be interesting to readers because blur is a fundamental operation in many domains: from protecting privacy in photos, to creating depth-of-field effects, to understanding how our perception works. If written by a technical author, it might dive into the mathematics behind Gaussian blur, motion blur, or other blur techniques, making it valuable for developers working with image processing or computer graphics.
+
+### 模糊的世界
+
+* 根据标题推测,这篇文章可能探讨模糊的概念——可能涉及图像处理、计算机视觉或数字摄影领域。文章可能讨论模糊算法、其在隐私保护中的应用(如模糊人脸或车牌)、视觉效果,或高效实现模糊的技术挑战。
+* 这个话题值得关注,因为模糊是许多领域的基础操作:从照片隐私保护、创建景深效果,到理解人类感知机制。如果作者具有技术背景,文章可能深入探讨高斯模糊、运动模糊或其他模糊技术背后的数学原理,对从事图像处理或计算机图形学的开发者很有价值。
+
+**[Read Original / 阅读原文](https://lcamtuf.substack.com/p/its-all-a-blur)**
+
+### FAA Closes El Paso International Airport for 10 Days Due to Security Concerns
+
+* The Federal Aviation Administration has imposed a 10-day airspace closure around El Paso International Airport in Texas, grounding all flights
+* The temporary flight restrictions cite "special security reasons" but no additional details were provided; Mexican airspace is not affected
+* All commercial, cargo, and general aviation flights are suspended from late Tuesday through February 20
+* The closure will significantly disrupt travel in the El Paso metropolitan area, which has nearly 700,000 residents and serves as a major cross-border commerce hub with Ciudad Juarez, Mexico
+* Major airlines operating at the airport include Southwest, United, American, and Delta; travelers are advised to contact their airlines for updates
+
+### 美国联邦航空局因安全原因关闭埃尔帕索国际机场空域10天
+
+* 美国联邦航空局对德克萨斯州埃尔帕索国际机场周边空域实施为期10天的关闭措施，所有航班停飞
+* 临时飞行限制以"特殊安全原因"为由，但未提供更多细节；墨西哥领空不受影响
+* 从周二晚间至2月20日晚间，所有商业、货运和通用航空航班暂停运营
+* 此次关闭将严重影响埃尔帕索都会区的出行，该地区人口近70万，是与墨西哥华雷斯城之间重要的跨境贸易枢纽
+* 在该机场运营的主要航空公司包括西南航空、联合航空、美国航空和达美航空；建议旅客联系各自航空公司获取最新航班信息
+
+**[Read Original / 阅读原文](https://apnews.com/article/faa-el-paso-texas-air-space-closed-1f774bdfd46f5986ff0e7003df709caa)**
+
+### Microsoft PowerToys - Windows Productivity Utilities Suite
+
+* What it does: A comprehensive collection of 25+ utilities that enhance Windows functionality, including window management (FancyZones), advanced clipboard operations (Advanced Paste), quick file operations (PowerRename, Image Resizer), system customization tools (Keyboard Manager, Color Picker), and productivity boosters (PowerToys Run launcher, Text Extractor OCR, Workspaces)
+
+* Key features: Window snapping and layouts, bulk file renaming, image resizing, keyboard remapping, color picking, always-on-top windows, mouse utilities, registry editing, screen measurement, quick accent input, file preview enhancements, hosts file editing, and cross-monitor mouse control
+
+* Why it's notable: Official Microsoft open-source project with 48 stars today, actively maintained with frequent updates (v0.97.2 released Feb 2025), supports both x64 and ARM64 architectures, available through multiple installation methods (GitHub, Microsoft Store, WinGet), and provides power-user features that significantly boost Windows productivity without requiring third-party tools
+
+### Microsoft PowerToys - Windows 生产力工具套件
+
+* 功能介绍: 包含 25+ 个实用工具的综合套件,增强 Windows 功能,涵盖窗口管理(FancyZones)、高级剪贴板操作(Advanced Paste)、快速文件操作(PowerRename、Image Resizer)、系统自定义工具(Keyboard Manager、Color Picker)和生产力增强工具(PowerToys Run 启动器、Text Extractor OCR、Workspaces 工作区)
+
+* 主要特点: 窗口吸附和布局、批量文件重命名、图像调整大小、键盘重映射、颜色拾取、窗口置顶、鼠标工具、注册表编辑、屏幕测量、快速输入重音符号、文件预览增强、hosts 文件编辑和跨显示器鼠标控制
+
+* 为何值得关注: 微软官方开源项目,今日获得 48 星,积极维护并频繁更新(2025年2月发布 v0.97.2 版本),支持 x64 和 ARM64 架构,提供多种安装方式(GitHub、Microsoft Store、WinGet),为 Windows 高级用户提供显著提升生产力的功能,无需依赖第三方工具
+
+**[View Repository / 查看仓库](https://github.com/microsoft/PowerToys)**
+
+### Chrome DevTools MCP - Browser Control for AI Coding Agents
+
+* Enables AI coding assistants (Gemini, Claude, Cursor, Copilot) to control and inspect a live Chrome browser through the Model Context Protocol (MCP)
+* Performance analysis with Chrome DevTools traces, network debugging with source-mapped stack traces, screenshots, and reliable Puppeteer-based automation
+* Gaining traction with 102 stars today as AI agents increasingly need browser automation capabilities; integrates seamlessly with 15+ popular AI coding tools including VS Code, Cursor, JetBrains, and Gemini CLI
+
+### Chrome DevTools MCP - AI 编程助手的浏览器控制工具
+
+* 让 AI 编程助手(Gemini、Claude、Cursor、Copilot)通过模型上下文协议(MCP)控制和检查实时 Chrome 浏览器
+* 提供 Chrome DevTools 性能追踪分析、带源码映射的网络调试、截图功能,以及基于 Puppeteer 的可靠自动化操作
+* 今日获得 102 星标,随着 AI 智能体对浏览器自动化需求增长而受关注;可无缝集成 VS Code、Cursor、JetBrains、Gemini CLI 等 15+ 主流 AI 编程工具
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### Neko Master - Modern Network Traffic Visualization Dashboard
+
+* A self-hosted dashboard for visualizing and analyzing network traffic from gateways like OpenClash
+* Real-time monitoring with WebSocket support, traffic auditing, multi-gateway management, and SQLite-based data persistence
+* Notable for its elegant UI, Docker deployment flexibility (supports both simple HTTP polling and real-time WebSocket modes), comprehensive reverse proxy guides (Nginx/Cloudflare Tunnel), and multi-architecture support (amd64/arm64)
+
+### Neko Master - 现代化网络流量可视化仪表盘
+
+* 自托管的网络流量可视化分析工具,可连接 OpenClash 等网关进行流量监控
+* 实时监控(支持 WebSocket)、流量审计、多网关管理、SQLite 数据持久化
+* 优雅的界面设计、灵活的 Docker 部署方式(支持简单 HTTP 轮询和实时 WebSocket 两种模式)、详尽的反向代理配置指南(Nginx/Cloudflare Tunnel)、多架构支持(amd64/arm64),近千 star 表明其在网络监控可视化领域的实用性
+
+**[View Repository / 查看仓库](https://github.com/foru17/neko-master)**
+
+### 🎬 Coding is becoming calligraphy
+
+**Channel:** Lenny's Podcast
+
+* What the video covers: This video explores the evolving nature of software development in the AI era, drawing a provocative analogy between modern coding and calligraphy - a skill that has transformed from essential utility to artistic craft
+* Key topics discussed: The shift from manual coding to AI-assisted development, the concept of "vibe coding" where developers focus on high-level intent rather than syntax, and how the role of programmers is fundamentally changing as AI tools handle more implementation details
+* Why it's worth watching: Offers a thought-provoking perspective on the future of software development careers and skills, helping developers understand how to adapt and remain relevant as AI coding assistants become more sophisticated
+
+---
+
+### 🎬 编程正在变成书法
+
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 本视频探讨了AI时代软件开发的演变本质,提出了一个发人深省的类比——现代编程就像书法一样,正在从必需的实用技能转变为艺术性的工艺
+* 主要话题: 从手动编码到AI辅助开发的转变,"氛围编程"(vibe coding)概念——开发者专注于高层次意图而非语法细节,以及随着AI工具处理更多实现细节,程序员角色的根本性变化
+* 为何值得观看: 对软件开发职业和技能的未来提供了引人思考的视角,帮助开发者理解如何在AI编程助手日益成熟的环境中适应并保持竞争力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ngep42tlnlY)**
+
+### 🎬 They're Leaving Major Brands Without Money! 🤯
+
+**Channel:** Алишер | IT
+
+* What the video covers: This video explores how certain technologies or practices are disrupting major brands' revenue streams, likely focusing on smart home technology, programming solutions, or tech innovations that bypass traditional business models
+* Key topics discussed: Smart home systems, technology disruption, programming and coding techniques that enable alternatives to mainstream branded products, potential cost-saving tech solutions
+* Why it's worth watching: Offers insights into how tech-savvy individuals can leverage programming and smart home technologies to reduce dependency on expensive brand-name products, potentially saving money while maintaining functionality
+
+---
+
+### 🎬 他们让大品牌失去收入！🤯
+
+**频道:** Алишер | IT
+
+* 视频内容概述: 本视频探讨某些技术或实践如何颠覆大品牌的收入来源,可能聚焦于智能家居技术、编程解决方案或绕过传统商业模式的技术创新
+* 主要话题: 智能家居系统、技术颠覆、编程和编码技术如何实现主流品牌产品的替代方案、潜在的节省成本的技术解决方案
+* 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+### 🎬 border-radius trick
+**Channel:** Kevin Powell
+
+* What the video covers: A clever CSS technique using viewport units with border-radius to create responsive rounded corners
+* Key topics discussed: Viewport units (vw/vh) application in border-radius, when and why to use this approach despite general viewport unit limitations, practical implementation for responsive design
+* Why it's worth watching: Kevin Powell shares a specific use case where viewport units actually shine, offering a practical solution for creating fluid, scalable rounded corners that adapt smoothly to different screen sizes without media queries
+
+### 🎬 border-radius 技巧
+**频道:** Kevin Powell
+
+* 视频内容概述: 介绍一个巧妙的 CSS 技巧,使用视口单位配合 border-radius 创建响应式圆角效果
+* 主要话题: 视口单位(vw/vh)在 border-radius 中的应用、何时以及为何使用这种方法(尽管视口单位通常有局限性)、响应式设计的实际实现
+* 为何值得观看: Kevin Powell 分享了视口单位真正发挥作用的特定场景,提供了一个实用的解决方案,可以创建流畅、可缩放的圆角效果,无需媒体查询即可平滑适应不同屏幕尺寸
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
 
