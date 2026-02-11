@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 11, 2026"
 date: 2026-02-11
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -694,74 +694,6 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 
 ---
 
-### 🎬 学习 78+ 种编程语言 #编程 #代码 #学习
-**频道:** SetupsAI
-
-* 视频内容概述: 展示如何学习超过 78 种不同编程语言的资源或指南,可能包含多语言程序员的学习路径、工具或平台
-* 主要话题: 多语言编程教育、语言学习策略、全面的编程语言概览、掌握多种编码语言的资源
-* 为何值得观看: 非常适合希望扩展编程语言技能的开发者,了解不同范式的语言基础,或探索主流选项之外的广阔编程语言领域
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EX64zlKd4Gw)**
-
-### The Day Telnet Died: A 59% Global Traffic Drop Linked to Critical CVE
-
-* On January 14, 2026 at 21:00 UTC, global telnet traffic collapsed by 65% in one hour, dropping from ~74,000 to ~22,000 sessions
-* Six days later, CVE-2026-24061 was disclosed—a critical authentication bypass in GNU Inetutils telnetd allowing unauthenticated root access via `-f root` username injection
-* 18 major ASNs (Vultr, Cox, Charter, BT) went completely silent; 5 countries (Zimbabwe, Ukraine, Canada, Poland, Egypt) dropped to zero telnet traffic
-* Cloud providers (AWS +78%, Contabo +90%) were unaffected, suggesting Tier 1 transit backbone filtering rather than endpoint changes
-* Evidence points to preemptive port 23 filtering by North American backbone providers, possibly coordinated with advance CVE notification before public disclosure
-* The timing (16:00 EST maintenance window), topology (transit-dependent paths hit, peering paths spared), and sustained nature suggest infrastructure-level response
-* Post-drop traffic stabilized at ~373,000 sessions/day (59% reduction), with the filter still active as of February 10, 2026
-* CISA added CVE-2026-24061 to KEV catalog on January 26; exploitation began within hours of disclosure, peaking at ~2,600 sessions/day in early February
-* The 11-year-old vulnerability (introduced in 2015) affects embedded systems, network appliances, and legacy Linux installations still running vulnerable telnetd versions
-* Recommendation: Patch to GNU Inetutils 2.7-2+ or disable telnet entirely; network operators should implement port 23 border filtering as industry standard
-
-### Telnet 协议之死:全球流量骤降 59% 与严重 CVE 漏洞的关联
-
-* 2026年1月14日 21:00 UTC,全球 telnet 流量在一小时内暴跌 65%,从约 74,000 会话降至 22,000 会话
-* 六天后披露 CVE-2026-24061——GNU Inetutils telnetd 的严重认证绕过漏洞,攻击者通过 `-f root` 用户名注入即可获得未授权的 root 权限
-* 18 个主要 ASN(Vultr、Cox、Charter、BT)完全静默;5 个国家(津巴布韦、乌克兰、加拿大、波兰、埃及)的 telnet 流量降至零
-* 云服务商(AWS +78%、Contabo +90%)未受影响,表明是一级骨干网过滤而非终端变化
-* 证据指向北美骨干网提供商的预防性 23 端口过滤,可能在公开披露前就收到了 CVE 提前通知并协调响应
-* 时间点(美东时间 16:00 维护窗口)、拓扑结构(依赖中转路径受影响,对等互联路径幸免)和持续性质表明这是基础设施层面的响应
-* 流量下降后稳定在约 373,000 会话/天(减少 59%),截至 2026年2月10日过滤器仍在运行
-* CISA 于1月26日将 CVE-2026-24061 加入 KEV 目录;漏洞披露后数小时内即开始被利用,2月初达到峰值约 2,600 会话/天
-* 这个存在 11 年的漏洞(2015年引入)影响仍在运行易受攻击 telnetd 版本的嵌入式系统、网络设备和旧版 Linux 安装
-* 建议:升级到 GNU Inetutils 2.7-2+ 或完全禁用 telnet;网络运营商应实施 23 端口边界过滤作为行业标准
-
-**[Read Original / 阅读原文](https://www.labs.greynoise.io/grimoire/2026-02-10-telnet-falls-silent/)**
-
-### Cloudflare Security Block Notice
-
-* The page displays a Cloudflare security block message indicating access has been restricted
-* The block was triggered by a security solution protecting the website from online attacks
-* Common triggers include: submitting specific words/phrases, SQL commands, or malformed data
-* This is a standard web application firewall (WAF) response, not actual blog content
-* No substantive content available for summarization - this is an error/block page
-
-### Cloudflare 安全拦截提示
-
-* 页面显示 Cloudflare 安全拦截消息，表明访问已被限制
-* 拦截由保护网站免受在线攻击的安全解决方案触发
-* 常见触发原因包括：提交特定词语/短语、SQL 命令或格式错误的数据
-* 这是标准的 Web 应用防火墙（WAF）响应，而非实际博客内容
-* 无实质性内容可供总结 - 这是一个错误/拦截页面
-
-**[Read Original / 阅读原文](https://www.feynmanlectures.caltech.edu/)**
-
-<!-- [Title-Only] -->
-### Ex-GitHub CEO Launches a New Developer Platform for AI Agents
-
-* Based on the title, this article likely announces a new development platform specifically designed for building and deploying AI agents, created by a former GitHub CEO. The platform probably aims to provide infrastructure, tools, and services that make it easier for developers to create autonomous AI systems.
-* This is interesting because it combines leadership experience from one of the world's largest developer platforms (GitHub) with the rapidly evolving AI agent space. Readers working with AI agents, autonomous systems, or looking for better development tools in this domain would find this relevant. The GitHub connection suggests the platform may bring proven developer-experience principles to AI agent development.
-
-### 前 GitHub CEO 推出面向 AI 智能体的新开发者平台
-
-* 根据标题推测，这篇文章可能宣布了一个专门为构建和部署 AI 智能体而设计的新开发平台，由前 GitHub CEO 创建。该平台可能旨在提供基础设施、工具和服务，让开发者更容易创建自主 AI 系统。
-* 这值得关注，因为它结合了来自全球最大开发者平台之一（GitHub）的领导经验与快速发展的 AI 智能体领域。对于从事 AI 智能体、自主系统开发，或寻找该领域更好开发工具的读者来说，这很有参考价值。GitHub 的背景表明该平台可能会将经过验证的开发者体验原则带入 AI 智能体开发领域。
-
----
-
 *Note: This introduction is based solely on the article title, as the full content was not available.*
 
 **[Read Original / 阅读原文](https://entire.io/blog/hello-entire-world/)**
@@ -879,4 +811,72 @@ Vouch 是一个显式信任管理系统，要求贡献者在与项目特定部�
 * 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+### Cloudflare Security Block Notice
+
+* The page displays a Cloudflare security block message indicating access has been restricted
+* The block was triggered by a security solution protecting the website from online attacks
+* Common triggers include: submitting specific words/phrases, SQL commands, or malformed data
+* This is a standard web application firewall (WAF) response, not actual blog content
+* No substantive content available for summarization - this is an error/block page
+
+### Cloudflare 安全拦截提示
+
+* 页面显示 Cloudflare 安全拦截消息，表明访问已被限制
+* 拦截由保护网站免受在线攻击的安全解决方案触发
+* 常见触发原因包括：提交特定词语/短语、SQL 命令或格式错误的数据
+* 这是标准的 Web 应用防火墙（WAF）响应，而非实际博客内容
+* 无实质性内容可供总结 - 这是一个错误/拦截页面
+
+**[Read Original / 阅读原文](https://www.feynmanlectures.caltech.edu/)**
+
+### Behind the Scenes: Modern SMPTE 2110 Broadcast Technology at NHL Games
+
+* Father-son tour of Mobile TV Group's 45 Flex broadcast truck during St. Louis Blues hockey games, exploring digital sports production workflow
+* SMPTE 2110 IP-based broadcast system uses Evertz 5700MSC-IP Grandmaster clocks ($25-30k) with PTP (Precision Time Protocol) for synchronizing video, audio, and metadata across the network
+* Manual time setting via smartphone app suffices for single-truck operations; GPS sync only needed when coordinating multiple trucks or venues
+* Hybrid connectivity approach: fiber and Ethernet inside truck, but analog XLR audio trunks and SMPTE hybrid connectors (fiber + copper power) for external connections
+* Enterprise Center's 2016 renovation included extensive fiber infrastructure with hundreds of XLR audio patches, fiber video routing, and ruggedized SMPTE 3K.93C.Y connectors supporting up to 8K camera signals
+* Dirt and physical connector cleanliness are primary "Layer 0" challenges in live event production environments
+* Professional broadcast atmosphere characterized by structured communication, quiet professionalism, and seamless teamwork across camera operators, audio engineers, replay specialists, and production crew
+
+### 探索现代 SMPTE 2110 转播车:NHL 冰球赛事幕后技术
+
+* 父子二人参观 Mobile TV Group 的 45 Flex 转播车,深入了解圣路易斯蓝调队比赛的数字体育制作流程
+* SMPTE 2110 基于 IP 的广播系统使用 Evertz 5700MSC-IP 主时钟(价值 2.5-3 万美元),通过 PTP(精确时间协议)同步网络中的视频、音频和元数据
+* 单车作业时通过智能手机应用手动设置时间即可;仅在协调多辆转播车或多场馆时才需要 GPS 同步
+* 混合连接方式:车内使用光纤和以太网,外部连接采用模拟 XLR 音频主干线和 SMPTE 混合连接器(光纤 + 铜缆供电)
+* 企业中心 2016 年改造包括大规模光纤基础设施:数百个 XLR 音频接线、光纤视频路由,以及支持 8K 摄像机信号传输数百米的加固型 SMPTE 3K.93C.Y 连接器
+* 灰尘和物理连接器清洁度是现场活动制作环境中的主要"第 0 层"挑战
+* 专业转播氛围的特点:结构化沟通、安静的专业精神,以及摄像操作员、音频工程师、回放专家和制作团队之间的无缝协作
+
+**[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/exploring-a-modern-smpte-2110-broadcast-truck-with-my-dad/)**
+
+### The Day Telnet Died: A 59% Global Traffic Drop Linked to Critical CVE
+
+* On January 14, 2026 at 21:00 UTC, global telnet traffic collapsed by 65% in one hour, dropping from ~74,000 to ~22,000 sessions
+* Six days later, CVE-2026-24061 was disclosed—a critical authentication bypass in GNU Inetutils telnetd allowing unauthenticated root access via `-f root` username injection
+* 18 major ASNs (Vultr, Cox, Charter, BT) went completely silent; 5 countries (Zimbabwe, Ukraine, Canada, Poland, Egypt) dropped to zero telnet traffic
+* Cloud providers (AWS +78%, Contabo +90%) were unaffected, suggesting Tier 1 transit backbone filtering rather than endpoint changes
+* Evidence points to preemptive port 23 filtering by North American backbone providers, possibly coordinated with advance CVE notification before public disclosure
+* The timing (16:00 EST maintenance window), topology (transit-dependent paths hit, peering paths spared), and sustained nature suggest infrastructure-level response
+* Post-drop traffic stabilized at ~373,000 sessions/day (59% reduction), with the filter still active as of February 10, 2026
+* CISA added CVE-2026-24061 to KEV catalog on January 26; exploitation began within hours of disclosure, peaking at ~2,600 sessions/day in early February
+* The 11-year-old vulnerability (introduced in 2015) affects embedded systems, network appliances, and legacy Linux installations still running vulnerable telnetd versions
+* Recommendation: Patch to GNU Inetutils 2.7-2+ or disable telnet entirely; network operators should implement port 23 border filtering as industry standard
+
+### Telnet 协议之死:全球流量骤降 59% 与严重 CVE 漏洞的关联
+
+* 2026年1月14日 21:00 UTC,全球 telnet 流量在一小时内暴跌 65%,从约 74,000 会话降至 22,000 会话
+* 六天后披露 CVE-2026-24061——GNU Inetutils telnetd 的严重认证绕过漏洞,攻击者通过 `-f root` 用户名注入即可获得未授权的 root 权限
+* 18 个主要 ASN(Vultr、Cox、Charter、BT)完全静默;5 个国家(津巴布韦、乌克兰、加拿大、波兰、埃及)的 telnet 流量降至零
+* 云服务商(AWS +78%、Contabo +90%)未受影响,表明是一级骨干网过滤而非终端变化
+* 证据指向北美骨干网提供商的预防性 23 端口过滤,可能在公开披露前就收到了 CVE 预警通知并协调响应
+* 时间点(美东时间 16:00 维护窗口)、拓扑结构(依赖中转路径受影响,对等互联路径幸免)和持续性表明这是基础设施层面的响应
+* 流量下降后稳定在约 373,000 会话/天(减少 59%),截至 2026年2月10日过滤器仍在运行
+* CISA 于1月26日将 CVE-2026-24061 加入 KEV 目录;漏洞披露后数小时内即开始被利用,2月初达到峰值约 2,600 会话/天
+* 这个存在 11 年的漏洞(2015年引入)影响仍在运行易受攻击 telnetd 版本的嵌入式系统、网络设备和旧版 Linux 安装
+* 建议:升级到 GNU Inetutils 2.7-2+ 或完全禁用 telnet;网络运营商应实施 23 端口边界过滤作为行业标准
+
+**[Read Original / 阅读原文](https://www.labs.greynoise.io/grimoire/2026-02-10-telnet-falls-silent/)**
 
