@@ -655,6 +655,93 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
+### 🎬 OpenClaw:打破互联网的病毒式AI代理 - Peter Steinberger | Lex Fridman播客 #491
+
+**频道:** Lex Fridman
+
+* **视频内容概述:** 与OpenClaw创始人Peter Steinberger的深度对话,探讨这个成为GitHub增长最快项目的开源AI代理框架的开发历程和爆炸式增长
+* **主要话题:** OpenClaw的技术架构、构建AI代理框架的挑战、病毒式增长的故事、开源开发理念,以及自主AI代理的未来发展
+* **为何值得观看:** 从创作者本人获得构建病毒式开源AI工具的罕见见解,探索前沿AI代理技术,并提供关于AI时代开源项目管理和社区建设的宝贵经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YFjfBk8HI5o)**
+
+### 🎬 Claude Code's New Agent Teams Are Insane (Opus 4.6)
+**Channel:** Bart Slodyczka
+
+* What the video covers: An in-depth look at Claude Code's revolutionary Agent Teams feature powered by Opus 4.6, demonstrating how AI coding assistants have evolved from single-agent workflows to coordinated multi-agent systems
+* Key topics discussed: The new team lead architecture that dynamically spawns specialized sub-agents for different tasks, practical demonstrations of parallel task execution, performance comparisons with traditional single-agent approaches, and real-world coding scenarios showcasing the efficiency gains
+* Why it's worth watching: This represents a paradigm shift in AI-assisted development—instead of waiting for one agent to complete tasks sequentially, you get a coordinated team working in parallel. Essential viewing for developers interested in cutting-edge AI tooling and productivity multipliers in their coding workflow
+
+---
+
+### 🎬 Claude Code 的全新 Agent Teams 功能太疯狂了 (Opus 4.6)
+**频道:** Bart Slodyczka
+
+* 视频内容概述: 深入探讨 Claude Code 基于 Opus 4.6 推出的革命性 Agent Teams 功能,展示 AI 编码助手如何从单一代理工作流演进为协调的多代理系统
+* 主要话题: 新的团队领导架构可以动态生成专门的子代理来处理不同任务,并行任务执行的实际演示,与传统单代理方法的性能对比,以及展示效率提升的真实编码场景
+* 为何值得观看: 这代表了 AI 辅助开发的范式转变——不再需要等待单个代理按顺序完成任务,而是获得一个并行协作的团队。对于关注前沿 AI 工具和希望提升编码工作流生产力的开发者来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VWngYUC63po)**
+
+### peon-ping: Audio Notifications for Claude Code
+
+* **Problem solved**: Claude Code lacks completion/permission notifications, causing developers to lose focus and waste time checking back
+* **Solution**: Warcraft III Peon voice lines notify you when Claude Code finishes tasks or needs permission
+* **Quick setup**: One-line install script for macOS and WSL2, takes 10 seconds
+* **Smart notifications**: Different sounds for session start, task completion, permission requests, and rapid prompts (easter egg)
+* **Easy controls**: Toggle sounds via `/peon-ping-toggle` command or `peon --toggle` CLI
+* **Multiple sound packs**: 8 packs available including Warcraft III (Peon/Peasant in multiple languages), StarCraft (Kerrigan/Battlecruiser), and Red Alert 2 (Soviet Engineer)
+* **Customizable**: JSON config for volume, sound categories, pack rotation, and annoyance thresholds
+* **Additional features**: Terminal tab title updates and desktop notifications when terminal loses focus
+* **Technical implementation**: Bash hook script that monitors Claude Code events and plays audio via `afplay` (macOS) or PowerShell (WSL2)
+
+### peon-ping:Claude Code 音频通知工具
+
+* **解决的问题**:Claude Code 缺少完成/权限通知,导致开发者失去专注并浪费时间反复检查
+* **解决方案**:使用《魔兽争霸III》苦工语音提示 Claude Code 完成任务或需要权限
+* **快速安装**:macOS 和 WSL2 一行命令安装,仅需 10 秒
+* **智能通知**:会话开始、任务完成、权限请求和快速提示(彩蛋)使用不同音效
+* **便捷控制**:通过 `/peon-ping-toggle` 命令或 `peon --toggle` CLI 切换音效
+* **多种音效包**:提供 8 个音效包,包括《魔兽争霸III》(苦工/农民多语言版)、《星际争霸》(凯瑞甘/战巡舰)和《红色警戒2》(苏联工程师)
+* **可自定义**:JSON 配置文件支持音量、音效类别、音效包轮换和触发阈值设置
+* **附加功能**:终端标签标题更新,终端失焦时显示桌面通知
+* **技术实现**:Bash 钩子脚本监控 Claude Code 事件,通过 `afplay`(macOS)或 PowerShell(WSL2)播放音频
+
+**[Read Original / 阅读原文](https://github.com/tonyyont/peon-ping)**
+
+### Discord/Twitch/Kick/Snapchat Age Verifier - Technical Breakdown
+
+* Automated age verification tool that bypasses K-ID verification system used by Discord, Twitch, Kick, and Snapchat
+* Created by xyzeva and Dziurwa, building on previous work by amplitudes
+* Works globally, including for Discord's March rollout, regardless of current regional restrictions
+
+**Discord Verification Method:**
+* Inject JavaScript into Discord web console (F12 → Console)
+* Script extracts webpack modules to access Discord's API client
+* Sends POST request to `/age-verification/verify` endpoint with method 3
+* Redirects to external verification service that completes the process automatically
+
+**Other Platforms (Twitch/Kick/Snapchat):**
+* Navigate to platform's age verification page and select selfie option
+* Extract QR code URL and submit to verification tool
+
+**Technical Implementation:**
+* K-ID doesn't send actual face images to servers, only metadata about facial features
+* This privacy-focused approach creates a vulnerability - legitimate-looking metadata can be spoofed
+
+**Bypass Mechanism - Step 1 (Encryption):**
+* Reverse-engineered missing parameters: `encrypted_payload`, `auth_tag`, `timestamp`, `iv`
+* Uses AES-GCM cipher with HKDF-derived key (SHA256)
+* Key derivation: `nonce + timestamp + transaction_id`
+
+**Bypass Mechanism - Step 2 (Prediction Data):**
+* Server validates prediction arrays: `outputs`, `primaryOutputs`, `raws`
+* `outputs` and `primaryOutputs` derived from `raws` using age mapping and z-score outlier removal
+* Additional validation checks: camera device matching, state timeline consistency, specific shift amount values
+* All code is open source for transparency
+
+---
+
 ### Discord/Twitch/Kick/Snapchat 年龄验证器 - 技术解析
 
 * 自动化年龄验证工具,可绕过 Discord、Twitch、Kick 和 Snapchat 使用的 K-ID 验证系统
@@ -710,68 +797,17 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 **[Read Original / 阅读原文](https://ntietz.com/blog/using-an-engineering-notebook/)**
 
-<!-- [Title-Only] -->
-### "Nothing" is the secret to structuring your work
-
-* This article likely explores the concept of intentional emptiness or negative space in work organization and productivity. It probably discusses how deliberately leaving gaps, pauses, or unstructured time in your schedule can paradoxically improve focus, creativity, and overall work quality.
-* Why it might be interesting: The counterintuitive idea that "doing nothing" or creating space can enhance productivity challenges conventional hustle culture. Readers interested in productivity, work-life balance, or mindful work practices would find value in understanding how strategic emptiness can lead to better outcomes than constant activity.
-
-### "无为"是构建工作结构的秘诀
-
-* 这篇文章可能探讨了在工作组织和生产力中有意留白或负空间的概念。文章很可能讨论如何在日程中刻意留出空隙、停顿或非结构化时间，反而能提升专注力、创造力和整体工作质量。
-* 为何值得关注：这种"什么都不做"或创造空间反而能提升生产力的反直觉理念，挑战了传统的忙碌文化。对生产力、工作生活平衡或正念工作实践感兴趣的读者，会从理解战略性留白如何带来比持续活动更好的成果中获益。
-
-**[Read Original / 阅读原文](https://www.vangemert.dev/blog/nothing)**
-
 ### Secure OpenClaw - Personal 24/7 AI Assistant Across Messaging Platforms
 
 * A self-hosted AI assistant that runs on WhatsApp, Telegram, Signal, and iMessage, powered by Claude with full tool access, persistent memory, and 500+ app integrations via Composio
-* Multi-platform messaging support with QR-code WhatsApp setup, Telegram bot integration, Signal CLI, and iMessage (macOS); includes security allowlists, scheduled reminders, cron jobs, and Docker deployment for remote VPS hosting
-* Notable for bringing enterprise-grade AI assistant capabilities to personal messaging apps with complete privacy control, supporting both Claude Agent SDK and open-source Opencode provider, deployable on a $6/month DigitalOcean droplet
+* Key features include multi-platform messaging support, scheduled reminders, tool approval system, persistent conversation memory, Docker deployment support, and choice between Claude Agent SDK or open-source Opencode provider
+* Notable for bringing enterprise-grade AI assistant capabilities to personal messaging apps with strong security controls (allowlists for contacts/groups), easy $6/month DigitalOcean deployment, and comprehensive integration ecosystem spanning Gmail, Slack, GitHub and 500+ other services
 
 ### Secure OpenClaw - 跨消息平台的个人 24/7 AI 助手
 
-* 自托管 AI 助手,运行在 WhatsApp、Telegram、Signal 和 iMessage 上,由 Claude 驱动,具备完整工具访问权限、持久化内存和通过 Composio 集成的 500+ 应用
-* 多平台消息支持,包括二维码 WhatsApp 设置、Telegram 机器人集成、Signal CLI 和 iMessage(仅 macOS);提供安全白名单、定时提醒、定时任务和 Docker 部署以支持远程 VPS 托管
-* 值得关注的原因是将企业级 AI 助手能力引入个人消息应用,完全隐私可控,支持 Claude Agent SDK 和开源 Opencode 提供商,可部署在每月 6 美元的 DigitalOcean 云主机上
+* 一个自托管的 AI 助手,可在 WhatsApp、Telegram、Signal 和 iMessage 上运行,由 Claude 驱动,具备完整工具访问权限、持久化记忆功能,并通过 Composio 集成 500+ 个应用
+* 主要特点包括多平台消息支持、定时提醒、工具审批系统、持久化对话记忆、Docker 部署支持,以及可在 Claude Agent SDK 或开源 Opencode 提供商之间切换
+* 为何值得关注:将企业级 AI 助手能力引入个人消息应用,具有强大的安全控制(联系人/群组白名单)、简便的 DigitalOcean 部署(每月仅需 6 美元),以及涵盖 Gmail、Slack、GitHub 等 500+ 服务的全面集成生态系统
 
 **[View Repository / 查看仓库](https://github.com/ComposioHQ/secure-openclaw)**
-
-### 🎬 OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491
-
-**Channel:** Lex Fridman
-
-* **What the video covers:** An in-depth conversation with Peter Steinberger, creator of OpenClaw, discussing the development and explosive growth of this open-source AI agent framework that became GitHub's fastest-growing project
-* **Key topics discussed:** The technical architecture behind OpenClaw, challenges in building AI agent frameworks, the viral growth story, open-source development philosophy, and the future of autonomous AI agents
-* **Why it's worth watching:** Offers rare insights into building viral open-source AI tools from the creator himself, explores cutting-edge AI agent technology, and provides valuable lessons on open-source project management and community building in the AI era
-
----
-
-### 🎬 OpenClaw:打破互联网的病毒式AI代理 - Peter Steinberger | Lex Fridman播客 #491
-
-**频道:** Lex Fridman
-
-* **视频内容概述:** 与OpenClaw创始人Peter Steinberger的深度对话,探讨这个成为GitHub增长最快项目的开源AI代理框架的开发历程和爆炸式增长
-* **主要话题:** OpenClaw的技术架构、构建AI代理框架的挑战、病毒式增长的故事、开源开发理念,以及自主AI代理的未来发展
-* **为何值得观看:** 从创作者本人获得构建病毒式开源AI工具的罕见见解,探索前沿AI代理技术,并提供关于AI时代开源项目管理和社区建设的宝贵经验
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YFjfBk8HI5o)**
-
-### 🎬 Claude Code's New Agent Teams Are Insane (Opus 4.6)
-**Channel:** Bart Slodyczka
-
-* What the video covers: An in-depth look at Claude Code's revolutionary Agent Teams feature powered by Opus 4.6, demonstrating how AI coding assistants have evolved from single-agent workflows to coordinated multi-agent systems
-* Key topics discussed: The new team lead architecture that dynamically spawns specialized sub-agents for different tasks, practical demonstrations of parallel task execution, performance comparisons with traditional single-agent approaches, and real-world coding scenarios showcasing the efficiency gains
-* Why it's worth watching: This represents a paradigm shift in AI-assisted development—instead of waiting for one agent to complete tasks sequentially, you get a coordinated team working in parallel. Essential viewing for developers interested in cutting-edge AI tooling and productivity multipliers in their coding workflow
-
----
-
-### 🎬 Claude Code 的全新 Agent Teams 功能太疯狂了 (Opus 4.6)
-**频道:** Bart Slodyczka
-
-* 视频内容概述: 深入探讨 Claude Code 基于 Opus 4.6 推出的革命性 Agent Teams 功能,展示 AI 编码助手如何从单一代理工作流演进为协调的多代理系统
-* 主要话题: 新的团队领导架构可以动态生成专门的子代理来处理不同任务,并行任务执行的实际演示,与传统单代理方法的性能对比,以及展示效率提升的真实编码场景
-* 为何值得观看: 这代表了 AI 辅助开发的范式转变——不再需要等待单个代理按顺序完成任务,而是获得一个并行协作的团队。对于关注前沿 AI 工具和希望提升编码工作流生产力的开发者来说,这是必看内容
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VWngYUC63po)**
 
