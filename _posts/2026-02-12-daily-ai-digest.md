@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 12, 2026"
 date: 2026-02-12
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -506,48 +506,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### Discord/Twitch/Kick/Snapchat 年龄验证器 - 技术解析
-
-* 自动化年龄验证工具,可绕过 Discord、Twitch、Kick 和 Snapchat 使用的 K-ID 验证系统
-* 由 xyzeva 和 Dziurwa 开发,基于 amplitudes 的前期工作
-* 全球适用,包括 Discord 三月份的全球推广,不受当前地区限制影响
-
-**Discord 验证方法:**
-* 在 Discord 网页控制台注入 JavaScript 代码(F12 → Console)
-* 脚本提取 webpack 模块以访问 Discord 的 API 客户端
-* 向 `/age-verification/verify` 端点发送 POST 请求,方法参数为 3
-* 重定向到外部验证服务自动完成流程
-
-**其他平台(Twitch/Kick/Snapchat):**
-* 导航到平台的年龄验证页面并选择自拍选项
-* 提取二维码 URL 并提交到验证工具
-
-**技术实现原理:**
-* K-ID 不向服务器发送实际面部图像,仅发送面部特征元数据
-* 这种注重隐私的方法产生了漏洞 - 可以伪造看似合法的元数据
-
-**绕过机制 - 步骤1(加密):**
-* 逆向工程缺失参数:`encrypted_payload`、`auth_tag`、`timestamp`、`iv`
-* 使用 AES-GCM 加密,密钥通过 HKDF 派生(SHA256)
-* 密钥派生公式:`nonce + timestamp + transaction_id`
-
-**绕过机制 - 步骤2(预测数据):**
-* 服务器验证预测数组:`outputs`、`primaryOutputs`、`raws`
-* `outputs` 和 `primaryOutputs` 从 `raws` 派生,使用年龄映射和 z-score 离群值移除
-* 额外验证检查:摄像头设备匹配、状态时间线一致性、特定偏移量数值
-* 所有代码开源以保证透明度
-
-**[Read Original / 阅读原文](https://age-verifier.kibty.town/)**
-
-<!-- [Title-Only] -->
-### GPT-5 Outperforms Federal Judges 100% to 52% in Legal Reasoning Experiment
-
-* Based on the title, this article likely presents research comparing GPT-5's performance against federal judges in legal reasoning tasks, with GPT-5 achieving a perfect 100% accuracy rate compared to judges' 52%
-* This is significant because it suggests AI may be reaching or exceeding human expert-level performance in complex legal analysis, raising important questions about the future role of AI in the legal system, judicial decision-making, and the nature of legal reasoning itself
-* Readers interested in AI capabilities, legal tech, judicial reform, or the intersection of technology and law would find this particularly compelling, as it challenges assumptions about domains requiring human judgment
-
----
-
 ### GPT-5 在法律推理实验中以 100% 对 52% 的成绩超越联邦法官
 
 * 根据标题推测，这篇文章可能展示了一项研究，对比 GPT-5 与联邦法官在法律推理任务中的表现，GPT-5 达到了 100% 的准确率，而法官仅为 52%
@@ -663,4 +621,157 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Kevin Powell 分享了视口单位真正发挥作用的特定场景,提供了一个实用的解决方案,可以创建流畅、可缩放的圆角效果,无需媒体查询即可平滑适应不同屏幕尺寸
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
+
+### Discord/Twitch/Kick/Snapchat Age Verifier - Technical Breakdown
+
+* Automated age verification tool that bypasses K-ID verification system used by Discord, Twitch, Kick, and Snapchat
+* Created by xyzeva and Dziurwa, building on previous work by amplitudes
+* Works globally, including for Discord's March rollout, regardless of current regional restrictions
+
+**Discord Verification Method:**
+* Inject JavaScript into Discord web console (F12 → Console)
+* Script extracts webpack modules to access Discord's API client
+* Sends POST request to `/age-verification/verify` endpoint with method 3
+* Redirects to external verification service that completes the process automatically
+
+**Other Platforms (Twitch/Kick/Snapchat):**
+* Navigate to platform's age verification page and select selfie option
+* Extract QR code URL and submit to verification tool
+
+**Technical Implementation:**
+* K-ID doesn't send actual face images to servers, only metadata about facial features
+* This privacy-focused approach creates a vulnerability - legitimate-looking metadata can be spoofed
+
+**Bypass Mechanism - Step 1 (Encryption):**
+* Reverse-engineered missing parameters: `encrypted_payload`, `auth_tag`, `timestamp`, `iv`
+* Uses AES-GCM cipher with HKDF-derived key (SHA256)
+* Key derivation: `nonce + timestamp + transaction_id`
+
+**Bypass Mechanism - Step 2 (Prediction Data):**
+* Server validates prediction arrays: `outputs`, `primaryOutputs`, `raws`
+* `outputs` and `primaryOutputs` derived from `raws` using age mapping and z-score outlier removal
+* Additional validation checks: camera device matching, state timeline consistency, specific shift amount values
+* All code is open source for transparency
+
+---
+
+### Discord/Twitch/Kick/Snapchat 年龄验证器 - 技术解析
+
+* 自动化年龄验证工具,可绕过 Discord、Twitch、Kick 和 Snapchat 使用的 K-ID 验证系统
+* 由 xyzeva 和 Dziurwa 开发,基于 amplitudes 的前期工作
+* 全球适用,包括 Discord 三月份的全球推广,不受当前地区限制影响
+
+**Discord 验证方法:**
+* 在 Discord 网页控制台注入 JavaScript 代码(F12 → Console)
+* 脚本提取 webpack 模块以访问 Discord 的 API 客户端
+* 向 `/age-verification/verify` 端点发送 POST 请求,方法参数为 3
+* 重定向到外部验证服务自动完成流程
+
+**其他平台(Twitch/Kick/Snapchat):**
+* 导航到平台的年龄验证页面并选择自拍选项
+* 提取二维码 URL 并提交到验证工具
+
+**技术实现原理:**
+* K-ID 不向服务器发送实际面部图像,仅发送面部特征元数据
+* 这种注重隐私的方法产生了漏洞 - 可以伪造看似合法的元数据
+
+**绕过机制 - 步骤1(加密):**
+* 逆向工程缺失参数:`encrypted_payload`、`auth_tag`、`timestamp`、`iv`
+* 使用 AES-GCM 加密,密钥通过 HKDF 派生(SHA256)
+* 密钥派生公式:`nonce + timestamp + transaction_id`
+
+**绕过机制 - 步骤2(预测数据):**
+* 服务器验证预测数组:`outputs`、`primaryOutputs`、`raws`
+* `outputs` 和 `primaryOutputs` 从 `raws` 派生,使用年龄映射和 z-score 离群值移除
+* 额外验证检查:摄像头设备匹配、状态时间线一致性、特定偏移量数值
+* 所有代码开源以保证透明度
+
+**[Read Original / 阅读原文](https://age-verifier.kibty.town/)**
+
+### Using an Engineering Notebook: A Core Software Development Practice
+
+* **What it is**: A practice of recording detailed, real-time notes by hand while working on engineering tasks, similar to researchers' lab notebooks
+* **Key characteristics**: Detailed enough for replication, dated entries, real-time documentation, permanent append-only records, original source of information
+* **Adoption gap**: Only 25% of developers use this practice, 34% aren't even familiar with it
+* **Primary benefits**: Exceptional memory aid (both for recall and retention) and powerful tool for thinking through problems before coding
+* **How it helps thinking**: Writing by hand before coding forces deliberate thought, provides clarity, and leverages the cognitive benefits of physical writing
+* **Personal use**: Author uses it for daily work tracking and standup meetings, but not for long-term reference or sharing with others
+* **Recommendation**: Worth experimenting with format, medium, and detail level to find what works for your workflow
+
+### 使用工程笔记本：软件开发的核心实践
+
+* **定义**：在进行工程任务时，用手写方式实时记录详细笔记的实践方法，类似于研究人员的实验室笔记本
+* **核心特征**：足够详细以便他人复现、标注日期、实时记录、永久性只追加记录、作为信息的原始来源
+* **普及度低**：仅25%的开发者使用这种方法，34%的人甚至不了解它
+* **主要优势**：出色的记忆辅助工具（帮助回忆和记忆留存）以及在编码前理清思路的强大工具
+* **思维助益**：编码前手写笔记强制进行深思熟虑，提供清晰度，并利用物理书写的认知优势
+* **个人用法**：作者用于日常工作追踪和站会汇报，但不用于长期参考或与他人分享
+* **建议**：值得尝试不同的格式、媒介和详细程度，找到适合自己工作流程的方式
+
+**[Read Original / 阅读原文](https://ntietz.com/blog/using-an-engineering-notebook/)**
+
+<!-- [Title-Only] -->
+### "Nothing" is the secret to structuring your work
+
+* This article likely explores the concept of intentional emptiness or negative space in work organization and productivity. It probably discusses how deliberately leaving gaps, pauses, or unstructured time in your schedule can paradoxically improve focus, creativity, and overall work quality.
+* Why it might be interesting: The counterintuitive idea that "doing nothing" or creating space can enhance productivity challenges conventional hustle culture. Readers interested in productivity, work-life balance, or mindful work practices would find value in understanding how strategic emptiness can lead to better outcomes than constant activity.
+
+### "无为"是构建工作结构的秘诀
+
+* 这篇文章可能探讨了在工作组织和生产力中有意留白或负空间的概念。文章很可能讨论如何在日程中刻意留出空隙、停顿或非结构化时间，反而能提升专注力、创造力和整体工作质量。
+* 为何值得关注：这种"什么都不做"或创造空间反而能提升生产力的反直觉理念，挑战了传统的忙碌文化。对生产力、工作生活平衡或正念工作实践感兴趣的读者，会从理解战略性留白如何带来比持续活动更好的成果中获益。
+
+**[Read Original / 阅读原文](https://www.vangemert.dev/blog/nothing)**
+
+### Secure OpenClaw - Personal 24/7 AI Assistant Across Messaging Platforms
+
+* A self-hosted AI assistant that runs on WhatsApp, Telegram, Signal, and iMessage, powered by Claude with full tool access, persistent memory, and 500+ app integrations via Composio
+* Multi-platform messaging support with QR-code WhatsApp setup, Telegram bot integration, Signal CLI, and iMessage (macOS); includes security allowlists, scheduled reminders, cron jobs, and Docker deployment for remote VPS hosting
+* Notable for bringing enterprise-grade AI assistant capabilities to personal messaging apps with complete privacy control, supporting both Claude Agent SDK and open-source Opencode provider, deployable on a $6/month DigitalOcean droplet
+
+### Secure OpenClaw - 跨消息平台的个人 24/7 AI 助手
+
+* 自托管 AI 助手,运行在 WhatsApp、Telegram、Signal 和 iMessage 上,由 Claude 驱动,具备完整工具访问权限、持久化内存和通过 Composio 集成的 500+ 应用
+* 多平台消息支持,包括二维码 WhatsApp 设置、Telegram 机器人集成、Signal CLI 和 iMessage(仅 macOS);提供安全白名单、定时提醒、定时任务和 Docker 部署以支持远程 VPS 托管
+* 值得关注的原因是将企业级 AI 助手能力引入个人消息应用,完全隐私可控,支持 Claude Agent SDK 和开源 Opencode 提供商,可部署在每月 6 美元的 DigitalOcean 云主机上
+
+**[View Repository / 查看仓库](https://github.com/ComposioHQ/secure-openclaw)**
+
+### 🎬 OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491
+
+**Channel:** Lex Fridman
+
+* **What the video covers:** An in-depth conversation with Peter Steinberger, creator of OpenClaw, discussing the development and explosive growth of this open-source AI agent framework that became GitHub's fastest-growing project
+* **Key topics discussed:** The technical architecture behind OpenClaw, challenges in building AI agent frameworks, the viral growth story, open-source development philosophy, and the future of autonomous AI agents
+* **Why it's worth watching:** Offers rare insights into building viral open-source AI tools from the creator himself, explores cutting-edge AI agent technology, and provides valuable lessons on open-source project management and community building in the AI era
+
+---
+
+### 🎬 OpenClaw:打破互联网的病毒式AI代理 - Peter Steinberger | Lex Fridman播客 #491
+
+**频道:** Lex Fridman
+
+* **视频内容概述:** 与OpenClaw创始人Peter Steinberger的深度对话,探讨这个成为GitHub增长最快项目的开源AI代理框架的开发历程和爆炸式增长
+* **主要话题:** OpenClaw的技术架构、构建AI代理框架的挑战、病毒式增长的故事、开源开发理念,以及自主AI代理的未来发展
+* **为何值得观看:** 从创作者本人获得构建病毒式开源AI工具的罕见见解,探索前沿AI代理技术,并提供关于AI时代开源项目管理和社区建设的宝贵经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YFjfBk8HI5o)**
+
+### 🎬 Claude Code's New Agent Teams Are Insane (Opus 4.6)
+**Channel:** Bart Slodyczka
+
+* What the video covers: An in-depth look at Claude Code's revolutionary Agent Teams feature powered by Opus 4.6, demonstrating how AI coding assistants have evolved from single-agent workflows to coordinated multi-agent systems
+* Key topics discussed: The new team lead architecture that dynamically spawns specialized sub-agents for different tasks, practical demonstrations of parallel task execution, performance comparisons with traditional single-agent approaches, and real-world coding scenarios showcasing the efficiency gains
+* Why it's worth watching: This represents a paradigm shift in AI-assisted development—instead of waiting for one agent to complete tasks sequentially, you get a coordinated team working in parallel. Essential viewing for developers interested in cutting-edge AI tooling and productivity multipliers in their coding workflow
+
+---
+
+### 🎬 Claude Code 的全新 Agent Teams 功能太疯狂了 (Opus 4.6)
+**频道:** Bart Slodyczka
+
+* 视频内容概述: 深入探讨 Claude Code 基于 Opus 4.6 推出的革命性 Agent Teams 功能,展示 AI 编码助手如何从单一代理工作流演进为协调的多代理系统
+* 主要话题: 新的团队领导架构可以动态生成专门的子代理来处理不同任务,并行任务执行的实际演示,与传统单代理方法的性能对比,以及展示效率提升的真实编码场景
+* 为何值得观看: 这代表了 AI 辅助开发的范式转变——不再需要等待单个代理按顺序完成任务,而是获得一个并行协作的团队。对于关注前沿 AI 工具和希望提升编码工作流生产力的开发者来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VWngYUC63po)**
 
