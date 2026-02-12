@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 12, 2026"
 date: 2026-02-12
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -299,46 +299,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 地球"温室化"轨迹的风险
-
-**注：本简介仅基于文章标题，因无法获取完整内容。**
-
-* 这篇文章可能探讨"温室地球"的科学概念——一种潜在的气候情景，即反馈循环将全球温度推高至临界阈值之上,即使人类减少排放也会触发不可逆转的变暖
-* 文章可能讨论地球气候系统中的临界点,如冰盖融化、永久冻土解冻以及海洋环流变化等可能加速变暖的因素
-* 内容可能审视跨越这些阈值的相关风险和时间表,以及人类目前所处的轨迹
-* 为何值得关注：理解温室地球情景对气候政策和行动至关重要。如果我们正在接近不可逆转的临界点,这凸显了立即减排和气候干预策略的紧迫性
-
-**[Read Original / 阅读原文](https://www.cell.com/one-earth/fulltext/S2590-3322%2825%2900391-4)**
-
-### Fluorite Game Engine: Flutter-Integrated Console-Grade 3D Engine
-
-* **First Flutter-native console-grade game engine** - Write game code directly in Dart with full Flutter integration, using `FluoriteView` widgets for multiple 3D scene views
-* **High-performance ECS architecture** - C++-powered Entity-Component-System core optimized for embedded/low-end hardware while maintaining high-level Dart APIs
-* **Blender-integrated touch zones** - 3D artists define clickable trigger zones directly in Blender with event tags for spatial UI interactions
-* **Filament-powered rendering** - Google's Filament renderer with Vulkan support delivers console-quality visuals, physically-accurate lighting, post-processing, and custom shaders
-* **Hot Reload support** - Flutter's Hot Reload enables frame-level scene updates for rapid iteration and testing
-
-### Fluorite 游戏引擎:与 Flutter 完全集成的主机级 3D 引擎
-
-* **首个 Flutter 原生主机级游戏引擎** - 直接用 Dart 编写游戏代码,完全集成 Flutter,通过 `FluoriteView` 组件支持多个 3D 场景视图
-* **高性能 ECS 架构** - C++ 驱动的实体-组件-系统核心,针对嵌入式/低端硬件优化,同时保持高级 Dart API
-* **Blender 集成触控区域** - 3D 美术师直接在 Blender 中定义可点击触发区域和事件标签,实现空间 UI 交互
-* **Filament 渲染引擎** - 采用 Google Filament 渲染器和 Vulkan 支持,提供主机级画质、物理精确光照、后处理效果和自定义着色器
-* **热重载支持** - Flutter 热重载功能实现帧级场景更新,加速迭代和测试流程
-
-**[Read Original / 阅读原文](https://fluorite.game/)**
-
-<!-- [Title-Only] -->
-### GLM-5: From Vibe Coding to Agentic Engineering
-
-**Note:** This introduction is based solely on the article title, as the full content could not be fetched.
-
-* This article likely discusses GLM-5, which appears to be a new AI model or system that represents an evolution in AI-assisted software development. The phrase "From Vibe Coding to Agentic Engineering" suggests a transition from intuitive, exploratory coding approaches to more autonomous, agent-based engineering systems.
-
-* The article is probably interesting because it addresses the evolution of AI coding assistants - moving beyond simple code completion or "vibe-based" suggestions toward more sophisticated agentic systems that can autonomously handle complex engineering tasks. This represents a significant shift in how AI tools assist developers, potentially offering insights into the future of software development workflows and the increasing autonomy of AI coding agents.
-
----
-
 ### GLM-5：从氛围编程到智能体工程
 
 **注意：** 本简介仅基于文章标题，因为无法获取完整内容。
@@ -512,4 +472,195 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看：适合对最新 AI 驱动的编程助手和自动化工具感兴趣的开发者 - "人类完蛋了"这个戏剧性标题暗示视频探讨 AI 在软件开发中日益增长的能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=bOSK3pI7dwg)**
+
+### Discord/Twitch/Kick/Snapchat Age Verifier - Technical Breakdown
+
+* Automated age verification tool that bypasses K-ID verification system used by Discord, Twitch, Kick, and Snapchat
+* Created by xyzeva and Dziurwa, building on previous work by amplitudes
+* Works globally, including for Discord's March rollout, regardless of current regional restrictions
+
+**Discord Verification Method:**
+* Inject JavaScript into Discord web console (F12 → Console)
+* Script extracts webpack modules to access Discord's API client
+* Sends POST request to `/age-verification/verify` endpoint with method 3
+* Redirects to external verification service that completes the process automatically
+
+**Other Platforms (Twitch/Kick/Snapchat):**
+* Navigate to platform's age verification page and select selfie option
+* Extract QR code URL and submit to verification tool
+
+**Technical Implementation:**
+* K-ID doesn't send actual face images to servers, only metadata about facial features
+* This privacy-focused approach creates a vulnerability - legitimate-looking metadata can be spoofed
+
+**Bypass Mechanism - Step 1 (Encryption):**
+* Reverse-engineered missing parameters: `encrypted_payload`, `auth_tag`, `timestamp`, `iv`
+* Uses AES-GCM cipher with HKDF-derived key (SHA256)
+* Key derivation: `nonce + timestamp + transaction_id`
+
+**Bypass Mechanism - Step 2 (Prediction Data):**
+* Server validates prediction arrays: `outputs`, `primaryOutputs`, `raws`
+* `outputs` and `primaryOutputs` derived from `raws` using age mapping and z-score outlier removal
+* Additional validation checks: camera device matching, state timeline consistency, specific shift amount values
+* All code is open source for transparency
+
+---
+
+### Discord/Twitch/Kick/Snapchat 年龄验证器 - 技术解析
+
+* 自动化年龄验证工具,可绕过 Discord、Twitch、Kick 和 Snapchat 使用的 K-ID 验证系统
+* 由 xyzeva 和 Dziurwa 开发,基于 amplitudes 的前期工作
+* 全球适用,包括 Discord 三月份的全球推广,不受当前地区限制影响
+
+**Discord 验证方法:**
+* 在 Discord 网页控制台注入 JavaScript 代码(F12 → Console)
+* 脚本提取 webpack 模块以访问 Discord 的 API 客户端
+* 向 `/age-verification/verify` 端点发送 POST 请求,方法参数为 3
+* 重定向到外部验证服务自动完成流程
+
+**其他平台(Twitch/Kick/Snapchat):**
+* 导航到平台的年龄验证页面并选择自拍选项
+* 提取二维码 URL 并提交到验证工具
+
+**技术实现原理:**
+* K-ID 不向服务器发送实际面部图像,仅发送面部特征元数据
+* 这种注重隐私的方法产生了漏洞 - 可以伪造看似合法的元数据
+
+**绕过机制 - 步骤1(加密):**
+* 逆向工程缺失参数:`encrypted_payload`、`auth_tag`、`timestamp`、`iv`
+* 使用 AES-GCM 加密,密钥通过 HKDF 派生(SHA256)
+* 密钥派生公式:`nonce + timestamp + transaction_id`
+
+**绕过机制 - 步骤2(预测数据):**
+* 服务器验证预测数组:`outputs`、`primaryOutputs`、`raws`
+* `outputs` 和 `primaryOutputs` 从 `raws` 派生,使用年龄映射和 z-score 离群值移除
+* 额外验证检查:摄像头设备匹配、状态时间线一致性、特定偏移量数值
+* 所有代码开源以保证透明度
+
+**[Read Original / 阅读原文](https://age-verifier.kibty.town/)**
+
+<!-- [Title-Only] -->
+### GPT-5 Outperforms Federal Judges 100% to 52% in Legal Reasoning Experiment
+
+* Based on the title, this article likely presents research comparing GPT-5's performance against federal judges in legal reasoning tasks, with GPT-5 achieving a perfect 100% accuracy rate compared to judges' 52%
+* This is significant because it suggests AI may be reaching or exceeding human expert-level performance in complex legal analysis, raising important questions about the future role of AI in the legal system, judicial decision-making, and the nature of legal reasoning itself
+* Readers interested in AI capabilities, legal tech, judicial reform, or the intersection of technology and law would find this particularly compelling, as it challenges assumptions about domains requiring human judgment
+
+---
+
+### GPT-5 在法律推理实验中以 100% 对 52% 的成绩超越联邦法官
+
+* 根据标题推测，这篇文章可能展示了一项研究，对比 GPT-5 与联邦法官在法律推理任务中的表现，GPT-5 达到了 100% 的准确率，而法官仅为 52%
+* 这项研究意义重大，因为它表明人工智能可能正在达到甚至超越人类专家在复杂法律分析方面的水平，引发了关于 AI 在法律系统中的未来角色、司法决策以及法律推理本质的重要问题
+* 对 AI 能力、法律科技、司法改革或技术与法律交叉领域感兴趣的读者会觉得这特别引人注目，因为它挑战了关于需要人类判断力领域的假设
+
+---
+
+**Note:** This introduction is based solely on the article title, as the full content was not available. The actual research may contain important nuances, methodology details, and limitations not reflected in the title alone.
+
+**注意：** 此简介仅基于文章标题撰写，因为无法获取完整内容。实际研究可能包含标题中未体现的重要细节、方法论说明和局限性。
+
+**[Read Original / 阅读原文](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6155012)**
+
+### Fluorite Game Engine: Flutter-Integrated Console-Grade 3D Engine
+
+* **First Flutter-native console-grade game engine** - Write game code directly in Dart with full Flutter integration, using `FluoriteView` widgets for multiple 3D scene views
+* **High-performance ECS architecture** - C++-powered Entity-Component-System core optimized for embedded/low-end hardware while maintaining high-level Dart APIs
+* **Blender-integrated touch zones** - 3D artists define clickable trigger zones directly in Blender with event tags for spatial UI interactions
+* **Filament-powered rendering** - Google's Filament renderer with Vulkan support delivers console-quality visuals, physically-accurate lighting, post-processing, and custom shaders
+* **Hot Reload support** - Flutter's Hot Reload enables frame-level scene updates for rapid iteration and testing
+
+### Fluorite 游戏引擎:与 Flutter 完全集成的主机级 3D 引擎
+
+* **首个 Flutter 原生主机级游戏引擎** - 直接用 Dart 编写游戏代码,完全集成 Flutter,通过 `FluoriteView` 组件支持多个 3D 场景视图
+* **高性能 ECS 架构** - C++ 驱动的实体-组件-系统核心,针对嵌入式/低端硬件优化,同时保持高级 Dart API
+* **Blender 集成触控区域** - 3D 美术师直接在 Blender 中定义可点击触发区域和事件标签,实现空间 UI 交互
+* **Filament 渲染引擎** - 采用 Google Filament 渲染器和 Vulkan 支持,提供主机级画质、物理精确光照、后处理效果和自定义着色器
+* **热重载支持** - Flutter 热重载功能实现帧级场景更新,加速迭代和测试流程
+
+**[Read Original / 阅读原文](https://fluorite.game/)**
+
+### Clawra - Give Your OpenClaw AI Agent a Visual Personality
+
+* **What it does**: Clawra is a skill plugin for OpenClaw that enables AI agents to generate and send selfies across messaging platforms. It transforms text-based AI assistants into visually interactive companions by adding image generation capabilities with a consistent character appearance.
+
+* **Key features**: 
+  * One-command installation via `npx clawra@latest` with automatic setup
+  * Generates contextual selfies using xAI Grok Imagine through fal.ai API
+  * Two selfie modes: Mirror (full-body/outfit shots) and Direct (close-ups/locations)
+  * Works across all major platforms: Discord, Telegram, WhatsApp, Slack, Signal, MS Teams
+  * Uses a fixed reference image to maintain consistent character appearance
+  * Natural language triggers like "send a selfie" or "what are you doing?"
+
+* **Why it's notable**: With over 1,000 stars, Clawra represents an innovative approach to humanizing AI agents by adding visual interaction capabilities. It bridges the gap between text-based AI assistants and more engaging, personality-driven companions. The project showcases how AI agents can evolve beyond conversation into multi-modal experiences, making interactions feel more personal and relatable. The seamless integration with OpenClaw's ecosystem and support for multiple messaging platforms makes it particularly accessible for developers looking to enhance their AI agents.
+
+---
+
+### Clawra - 为你的 OpenClaw AI 智能体赋予视觉人格
+
+* **功能介绍**: Clawra 是 OpenClaw 的技能插件,让 AI 智能体能够在各种消息平台上生成和发送自拍照。它通过添加图像生成功能,将基于文本的 AI 助手转变为具有视觉交互能力的伴侣,并保持一致的角色外观。
+
+* **主要特点**:
+  * 通过 `npx clawra@latest` 一键安装,自动完成配置
+  * 使用 xAI Grok Imagine(通过 fal.ai API)生成情境化自拍
+  * 两种自拍模式:镜像模式(全身/服装展示)和直接模式(特写/场景照)
+  * 支持所有主流平台:Discord、Telegram、WhatsApp、Slack、Signal、MS Teams
+  * 使用固定参考图像保持角色外观一致性
+  * 支持自然语言触发,如"发张自拍"或"你在干什么?"
+
+* **为何值得关注**: Clawra 获得超过 1000 星标,代表了通过添加视觉交互能力来人性化 AI 智能体的创新方法。它弥合了基于文本的 AI 助手与更具吸引力、个性化伴侣之间的差距。该项目展示了 AI 智能体如何从单纯对话演进为多模态体验,使交互更加个性化和亲切。与 OpenClaw 生态系统的无缝集成以及对多个消息平台的支持,使其对希望增强 AI 智能体功能的开发者特别友好。
+
+**[View Repository / 查看仓库](https://github.com/SumeLabs/clawra)**
+
+### 🎬 Space Will Be the Cheapest Place to Put AI - Elon Musk
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Elon Musk discusses his vision for deploying AI infrastructure in space, arguing that orbital environments will become more cost-effective than Earth-based data centers for large-scale AI computation
+* Key topics discussed: The economics of space-based computing, energy and cooling advantages in space, launch cost reductions through SpaceX's Starship program, and the future intersection of AI development and space infrastructure
+* Why it's worth watching: Offers a unique perspective on the future of AI infrastructure from someone actively building both AI systems (xAI) and space transportation (SpaceX), providing insights into how radically reduced launch costs could transform where we deploy computational resources
+
+### 🎬 太空将成为部署AI最便宜的地方 - 埃隆·马斯克
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 埃隆·马斯克阐述了在太空部署AI基础设施的愿景,认为轨道环境将比地球上的数据中心更具成本效益,适合大规模AI计算
+* 主要话题: 太空计算的经济学、太空中的能源和冷却优势、通过SpaceX星舰计划降低发射成本,以及AI发展与太空基础设施的未来交集
+* 为何值得观看: 从同时构建AI系统(xAI)和太空运输(SpaceX)的人物视角,提供关于AI基础设施未来的独特见解,展示大幅降低的发射成本如何改变我们部署计算资源的位置
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1TXofjCaYh4)**
+
+### 🎬 They're Leaving Major Brands Without Money! 🤯
+
+**Channel:** Алишер | IT
+
+* What the video covers: This video explores how certain technologies or practices are disrupting major brands' revenue streams, likely focusing on smart home technology, programming solutions, or tech innovations that bypass traditional business models
+* Key topics discussed: Smart home systems, technology disruption, programming and coding techniques that enable alternatives to mainstream branded products, potential cost-saving tech solutions
+* Why it's worth watching: Offers insights into how tech-savvy individuals can leverage programming and smart home technologies to reduce dependency on expensive brand-name products, potentially saving money while maintaining functionality
+
+---
+
+### 🎬 他们让大品牌失去收入！🤯
+
+**频道:** Алишер | IT
+
+* 视频内容概述: 本视频探讨某些技术或实践如何颠覆大品牌的收入来源,可能聚焦于智能家居技术、编程解决方案或绕过传统商业模式的技术创新
+* 主要话题: 智能家居系统、技术颠覆、编程和编码技术如何实现主流品牌产品的替代方案、潜在的节省成本的技术解决方案
+* 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+### 🎬 border-radius trick
+**Channel:** Kevin Powell
+
+* What the video covers: A clever CSS technique using viewport units with border-radius to create responsive rounded corners
+* Key topics discussed: Viewport units (vw/vh) application in border-radius, when and why to use this approach despite general viewport unit limitations, practical implementation for responsive design
+* Why it's worth watching: Kevin Powell shares a specific use case where viewport units actually shine, offering a practical solution for creating fluid, scalable rounded corners that adapt smoothly to different screen sizes without media queries
+
+### 🎬 border-radius 技巧
+**频道:** Kevin Powell
+
+* 视频内容概述: 介绍一个巧妙的 CSS 技巧,使用视口单位配合 border-radius 创建响应式圆角效果
+* 主要话题: 视口单位(vw/vh)在 border-radius 中的应用、何时以及为何使用这种方法(尽管视口单位通常有局限性)、响应式设计的实际实现
+* 为何值得观看: Kevin Powell 分享了视口单位真正发挥作用的特定场景,提供了一个实用的解决方案,可以创建流畅、可缩放的圆角效果,无需媒体查询即可平滑适应不同屏幕尺寸
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vVJlC1rBU4E)**
 
