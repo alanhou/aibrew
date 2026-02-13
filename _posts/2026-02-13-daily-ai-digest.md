@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 13, 2026"
 date: 2026-02-13
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -425,50 +425,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Claude Opus 4.6 为 ClawdBot 和 Claude Code 带来重大升级(完整指南)
-**频道:** Alex Finn
-
-* 视频内容概述: 全面介绍新发布的 Claude Opus 4.6 模型及其与 ClawdBot 和 Claude Code 开发工具的集成方法
-* 主要话题: Claude Opus 4.6 的重大功能改进、在 ClawdBot 和 Claude Code 中实施升级的分步说明、与旧版本的性能对比
-* 为何值得观看: 对于使用 Claude 驱动的编码工具的开发者来说,这是必看内容,可以帮助他们利用最新 AI 能力来改进代码生成、调试和开发工作流程
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=iGkhfUvRV6o)**
-
-### macOS Tahoe Window Resizing Issue: Apple's Fix That Wasn't
-
-* Apple initially marked the window-resizing bug as "Resolved" in macOS 26.3 Release Candidate
-* Developer created a pixel-by-pixel scanning test app to analyze the actual changes in resize behavior
-* RC version improved corner radius handling but reduced resize area thickness from 7 to 6 pixels (14% decrease)
-* Final release of macOS 26.3 completely removed the fix, reverting to square regions
-* Apple quietly changed the issue status from "Resolved" to "Known Issue" in updated release notes
-* The saga highlights the challenge of balancing visual design with functional usability in window management
-
-### macOS Tahoe 窗口调整大小问题：苹果的修复与回退
-
-* 苹果最初在 macOS 26.3 候选版本中将窗口调整大小的 bug 标记为"已解决"
-* 开发者创建了逐像素扫描测试应用来分析调整大小行为的实际变化
-* 候选版本改进了圆角处理，但将调整大小区域厚度从 7 像素减少到 6 像素（减少 14%）
-* macOS 26.3 正式版完全移除了修复，恢复到方形区域
-* 苹果悄悄将问题状态从"已解决"改为"已知问题"
-* 这一事件凸显了在窗口管理中平衡视觉设计与功能可用性的挑战
-
-**[Read Original / 阅读原文](https://noheger.at/blog/2026/02/12/resizing-windows-on-macos-tahoe-the-saga-continues/)**
-
-<!-- [Title-Only] -->
-### GPT-5.3-Codex-Spark
-
-* Based on the title, this article likely announces OpenAI's new AI model called "GPT-5.3-Codex-Spark" - suggesting it's a specialized version focused on code generation and development tasks
-* The "Codex" naming indicates enhanced programming capabilities, while "Spark" might refer to improved speed, efficiency, or a new approach to code understanding and generation
-* This would be interesting to developers and AI enthusiasts as it represents the next evolution in AI-assisted coding tools, potentially offering better code completion, debugging assistance, and software development capabilities compared to previous versions
-
-### GPT-5.3-Codex-Spark（基于标题的推测）
-
-* 根据标题判断，这篇文章可能是 OpenAI 发布的新 AI 模型"GPT-5.3-Codex-Spark"的官方公告，专注于代码生成和开发任务
-* "Codex"命名表明其增强的编程能力，而"Spark"可能指代更快的速度、更高的效率，或是代码理解和生成的新方法
-* 对开发者和 AI 爱好者来说值得关注，因为这代表了 AI 辅助编码工具的新进化，相比之前的版本可能提供更好的代码补全、调试辅助和软件开发能力
-
----
-
 **Note:** This introduction is based solely on the article title, as the actual content could not be accessed. The real article may contain different or additional information.
 
 **注意：** 此简介仅基于文章标题撰写，因无法获取实际内容。真实文章可能包含不同或更多信息。
@@ -644,4 +600,180 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 如果你对 AI 驱动的开发工具感兴趣,这个视频展示了 AI 辅助编程领域的重大突破。多个代理同时协作的能力可能会大幅加快开发工作流程,并能处理更复杂的项目。Cole Medin 提供了实际操作演示,展现了这项技术的实用价值,对于探索 AI 编程助手的开发者来说是必看内容。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=-1K_ZWDKpU0)**
+
+### macOS Tahoe Window Resizing Issue: Apple's Fix That Wasn't
+
+* Apple initially marked the window-resizing bug as "Resolved" in macOS 26.3 Release Candidate
+* Developer created a pixel-by-pixel scanning test app to analyze the actual changes in resize behavior
+* RC version improved corner radius handling but reduced resize area thickness from 7 to 6 pixels (14% decrease)
+* Final release of macOS 26.3 completely removed the fix, reverting to square regions
+* Apple quietly changed the issue status from "Resolved" to "Known Issue" in updated release notes
+* The saga highlights the challenge of balancing visual design with functional usability in window management
+
+### macOS Tahoe 窗口调整大小问题：苹果的修复与回退
+
+* 苹果最初在 macOS 26.3 候选版本中将窗口调整大小的 bug 标记为"已解决"
+* 开发者创建了逐像素扫描测试应用来分析调整大小行为的实际变化
+* 候选版本改进了圆角处理，但将调整大小区域厚度从 7 像素减少到 6 像素（减少 14%）
+* macOS 26.3 正式版完全移除了修复，恢复到方形区域
+* 苹果悄悄将问题状态从"已解决"改为"已知问题"
+* 这一事件凸显了在窗口管理中平衡视觉设计与功能可用性的挑战
+
+**[Read Original / 阅读原文](https://noheger.at/blog/2026/02/12/resizing-windows-on-macos-tahoe-the-saga-continues/)**
+
+### Skip the Tips – Can You Escape the Tip Screen?
+
+* A free browser game challenging players to find and press the "No Tip" button while dark patterns attempt to manipulate them into tipping
+* Features over 30 deceptive UI patterns inspired by real tipping screens, including tiny buttons, guilt-trip modals, fake loading screens, and rigged sliders
+* Satirical commentary on modern tipping culture and how checkout screens have become "guilt machines"
+* Progressive difficulty with a shrinking timer that increases pressure on players
+* No downloads, sign-ups, or actual tips required – fully playable in browser
+
+### 跳过小费 – 你能逃离小费界面吗?
+
+* 一款免费浏览器游戏,挑战玩家在各种黑暗模式试图诱导付小费时找到并点击"不给小费"按钮
+* 包含超过30种受真实小费界面启发的欺骗性UI模式,包括微小按钮、道德绑架弹窗、虚假加载界面和操纵滑块
+* 对现代小费文化的讽刺,揭示结账界面如何变成"道德绑架机器"
+* 难度递增,计时器不断缩短增加玩家压力
+* 无需下载、注册或实际支付小费 – 完全在浏览器中游玩
+
+**[Read Original / 阅读原文](https://skipthe.tips/)**
+
+### AWS SDK for Go v2 - Technical Summary
+
+* Official v2 AWS SDK for Go programming language, requiring minimum Go 1.23
+* Provides modular architecture with separate packages for core SDK, configuration, and individual AWS services
+* Supports standard AWS credential and configuration loading from environment variables, shared credentials, and configuration files
+* Includes comprehensive documentation, migration guides, and API references for developers
+* Follows upstream Go release policy with additional 6-month support for deprecated versions
+* Offers multiple support channels: GitHub Discussions for Q&A, Issues for bug reports, and AWS Support tickets
+* Welcomes community contributions via pull requests under Apache 2.0 license
+* Features example code demonstrating DynamoDB client usage with context-based API calls
+* Maintained with regular updates tracked through changelog and GitHub Projects for major refactoring tasks
+
+### AWS SDK for Go v2 - 技术摘要
+
+* Go 编程语言的官方 v2 AWS SDK,最低要求 Go 1.23 版本
+* 提供模块化架构,核心 SDK、配置和各个 AWS 服务采用独立包设计
+* 支持从环境变量、共享凭证和配置文件加载标准 AWS 凭证和配置
+* 为开发者提供全面的文档、迁移指南和 API 参考资料
+* 遵循上游 Go 发布策略,并为已弃用版本提供额外 6 个月支持
+* 提供多种支持渠道:GitHub Discussions 用于问答、Issues 用于错误报告、AWS Support 工单
+* 欢迎社区通过 Apache 2.0 许可证提交拉取请求贡献代码
+* 提供示例代码演示基于上下文的 DynamoDB 客户端 API 调用
+* 通过变更日志和 GitHub Projects 跟踪重大重构任务,保持定期更新维护
+
+**[Read Original / 阅读原文](https://github.com/aws/aws-sdk-go-v2/commit/3dca5e45d5ad05460b93410087833cbaa624754e)**
+
+### 🎬 Vibe Coding A Social Network - Day 1 / 5 - Building With Zephyr #ad
+
+**Channel:** The PrimeTime
+
+* **What the video covers:** This is the first day of a 5-day live coding series where ThePrimeagen builds a social network from scratch using Zephyr (an AI-powered development tool). It's a sponsored content piece showcasing real-world application development with AI assistance.
+
+* **Key topics discussed:** 
+  - Setting up a social network project architecture
+  - Using Zephyr AI tool for accelerated development
+  - Live coding workflow and decision-making process
+  - Day 1 foundation work for the multi-day build challenge
+
+* **Why it's worth watching:** If you're curious about AI-assisted development tools in action, this series offers an unfiltered look at building a real project with modern AI coding assistants. ThePrimeagen's energetic style and practical approach make it both educational and entertaining for developers interested in productivity tools and rapid prototyping.
+
+---
+
+### 🎬 氛围编程：构建社交网络 - 第1天/共5天 - 使用 Zephyr 开发
+
+**频道:** The PrimeTime
+
+* **视频内容概述:** 这是为期5天的直播编程系列的第一天,ThePrimeagen 使用 Zephyr(一款 AI 驱动的开发工具)从零开始构建一个社交网络。这是一个赞助内容,展示了使用 AI 辅助进行实际应用开发的过程。
+
+* **主要话题:**
+  - 搭建社交网络项目架构
+  - 使用 Zephyr AI 工具加速开发
+  - 实时编码工作流程和决策过程
+  - 多日构建挑战的第一天基础工作
+
+* **为何值得观看:** 如果你对 AI 辅助开发工具的实际应用感到好奇,这个系列提供了使用现代 AI 编码助手构建真实项目的原生视角。ThePrimeagen 充满活力的风格和实用方法,使其对关注生产力工具和快速原型开发的开发者来说既有教育意义又富有娱乐性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=34lt658At0g)**
+
+### 🎬 ClawdBot Full Tutorial for Beginners: SECURE Setup Guide
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on setting up ClawdBot, focusing on secure deployment practices using a VPS (Virtual Private Server) with Hostinger
+* Key topics discussed: VPS setup and configuration, ClawdBot installation process, security best practices for bot deployment, step-by-step guidance for newcomers to bot hosting
+* Why it's worth watching: Perfect for beginners who want to learn how to properly deploy and secure a Discord bot (ClawdBot) on a VPS rather than running it locally, with practical hands-on instructions and security considerations that are often overlooked in basic tutorials
+
+### 🎬 ClawdBot 完整新手教程:安全设置指南
+**频道:** Tech With Tim
+
+* 视频内容概述: 一个全面的新手友好教程,讲解如何设置 ClawdBot,重点关注使用 Hostinger VPS(虚拟专用服务器)的安全部署实践
+* 主要话题: VPS 设置和配置、ClawdBot 安装流程、机器人部署的安全最佳实践、针对托管新手的分步指导
+* 为何值得观看: 非常适合想要学习如何在 VPS 上正确部署和保护 Discord 机器人(ClawdBot)而不是在本地运行的初学者,提供实用的动手操作说明和基础教程中经常被忽视的安全注意事项
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tnsrnsy_Lus)**
+
+### 🎬 GPT 5.3 is here and it's INSANE for Coding
+**Channel:** Matthew Berman
+
+* What the video covers: Matthew Berman explores the newly released GPT-5.3 model and its capabilities specifically for coding tasks, demonstrating real-world programming scenarios and comparing its performance to previous versions.
+
+* Key topics discussed: The video likely covers GPT-5.3's coding accuracy, speed improvements, ability to handle complex programming challenges, integration with development workflows, and practical demonstrations of the model solving actual coding problems. It may also discuss how developers can leverage this model to enhance productivity.
+
+* Why it's worth watching: If you're a developer or interested in AI-assisted coding, this video provides hands-on insights into the latest GPT model's coding capabilities. Matthew Berman is known for thorough AI model testing, making this a valuable resource for understanding whether GPT-5.3 represents a significant upgrade for programming tasks and how it might impact your development workflow.
+
+---
+
+### 🎬 GPT 5.3 来了,编程能力太疯狂了
+**频道:** Matthew Berman
+
+* 视频内容概述: Matthew Berman 深入探讨了新发布的 GPT-5.3 模型及其在编程任务中的表现,通过实际编程场景演示并与之前版本进行对比。
+
+* 主要话题: 视频可能涵盖 GPT-5.3 的代码准确性、速度提升、处理复杂编程挑战的能力、与开发工作流的集成,以及模型解决实际编码问题的实战演示。还可能讨论开发者如何利用这个模型提高生产力。
+
+* 为何值得观看: 如果你是开发者或对 AI 辅助编程感兴趣,这个视频提供了关于最新 GPT 模型编程能力的实战见解。Matthew Berman 以全面的 AI 模型测试而闻名,这使得本视频成为了解 GPT-5.3 在编程任务上是否有重大升级以及如何影响你的开发工作流程的宝贵资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QgaVA9ldrrM)**
+
+### 🎬 Agentic Coding Has A HUGE Problem
+
+**Channel:** Theo - t3․gg
+
+* What the video covers: Explores the fundamental challenges facing AI-powered agentic coding systems, particularly focusing on parallel task execution issues
+* Key topics discussed: The difficulties AI agents encounter when attempting to perform multiple coding tasks simultaneously, potential bottlenecks in current agentic workflows, and the practical limitations developers face when relying on AI coding assistants
+* Why it's worth watching: Provides critical insight into the current state of AI coding tools, helping developers understand realistic expectations and limitations when integrating agentic systems into their workflow. Essential viewing for anyone using or considering AI coding assistants.
+
+---
+
+### 🎬 智能代码助手的重大问题
+
+**频道:** Theo - t3․gg
+
+* 视频内容概述: 深入探讨 AI 驱动的智能编码系统面临的核心挑战,特别关注并行任务执行中的问题
+* 主要话题: AI 代理在同时执行多个编码任务时遇到的困难、当前智能工作流中的潜在瓶颈,以及开发者依赖 AI 编码助手时面临的实际限制
+* 为何值得观看: 为 AI 编码工具的现状提供了关键洞察,帮助开发者在将智能系统集成到工作流程时建立合理预期并了解局限性。对于正在使用或考虑使用 AI 编码助手的开发者来说是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YVq28OTPCKw)**
+
+### 🎬 Playwright CLI vs MCP - a new tool for your coding agent
+**Channel:** Playwright
+
+* What the video covers: This video introduces Playwright CLI as a new tool for coding agents and compares it with MCP (Model Context Protocol), explaining installation procedures and fundamental differences between the two approaches.
+
+* Key topics discussed: Installation guide for Playwright CLI, architectural differences between CLI and MCP implementations, token efficiency comparisons, and the specific capabilities each tool offers for browser automation in AI-assisted coding workflows.
+
+* Why it's worth watching: Essential viewing for developers integrating browser automation into AI coding agents. Understanding the trade-offs between CLI and MCP approaches helps you choose the right tool for your use case, optimize token usage, and leverage Playwright's capabilities more effectively in agent-driven development environments.
+
+---
+
+### 🎬 Playwright CLI vs MCP - 编码代理的新工具
+**频道:** Playwright
+
+* 视频内容概述: 本视频介绍了 Playwright CLI 作为编码代理的新工具,并将其与 MCP(模型上下文协议)进行对比,讲解安装流程以及两种方案的根本差异。
+
+* 主要话题: Playwright CLI 的安装指南、CLI 与 MCP 实现方式的架构差异、令牌效率对比,以及每种工具在 AI 辅助编码工作流中为浏览器自动化提供的具体功能。
+
+* 为何值得观看: 对于将浏览器自动化集成到 AI 编码代理中的开发者来说,这是必看内容。了解 CLI 和 MCP 方法之间的权衡有助于您为特定用例选择合适的工具,优化令牌使用,并在代理驱动的开发环境中更有效地利用 Playwright 的功能。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Be0ceKN81S8)**
 
