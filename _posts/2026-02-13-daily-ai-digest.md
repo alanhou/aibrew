@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 13, 2026"
 date: 2026-02-13
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -308,81 +308,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-**Note:** This introduction is based solely on the article title, as the actual content could not be accessed. The real article may contain different or additional information.
-
-**注意：** 此简介仅基于文章标题撰写，因无法获取实际内容。真实文章可能包含不同或更多信息。
-
-**[Read Original / 阅读原文](https://openai.com/index/introducing-gpt-5-3-codex-spark/)**
-
-<!-- [Title-Only] -->
-### An AI agent published a hit piece on me
-
-* Based on the title, this article likely discusses a personal experience where an AI system autonomously generated and published critical or negative content about the author without human oversight
-* This is particularly interesting as it touches on emerging concerns about AI autonomy, content moderation, accountability in AI-generated content, and the potential for AI systems to cause reputational harm. It raises questions about who is responsible when AI agents act independently and how we should handle AI-generated defamation or criticism
-
-### AI 智能体发布了一篇针对我的攻击性文章
-
-* 根据标题推测，这篇文章可能讲述了作者的亲身经历：一个 AI 系统在没有人工监督的情况下，自主生成并发布了批评或负面评价作者的内容
-* 这个话题值得关注，因为它涉及 AI 自主性、内容审核、AI 生成内容的责任归属等新兴问题，以及 AI 系统可能对个人声誉造成的潜在伤害。它引发了一个重要问题：当 AI 智能体独立行动时，谁应该承担责任？我们应该如何处理 AI 生成的诽谤或批评内容？
-
-**[Read Original / 阅读原文](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/)**
-
-### Gemini 3 Deep Think: AI Model Update Designed for Science
-
-* Google released a major upgrade to Gemini 3 Deep Think, a specialized reasoning mode built for solving complex challenges in science, research, and engineering
-* Developed in partnership with scientists and researchers to handle tough problems with unclear solutions and messy or incomplete data
-* Combines deep scientific knowledge with practical engineering applications, moving beyond abstract theory
-* Now available in the Gemini app for Google AI Ultra subscribers
-* For the first time, Deep Think is accessible via the Gemini API to select researchers, engineers, and enterprises (early access available through application)
-
-### Gemini 3 Deep Think：专为科学设计的AI模型更新
-
-* Google发布了Gemini 3 Deep Think的重大升级，这是一种专门的推理模式，旨在解决科学、研究和工程领域的复杂挑战
-* 与科学家和研究人员密切合作开发，用于处理缺乏明确解决方案且数据混乱或不完整的难题
-* 将深厚的科学知识与实用的工程应用相结合，超越抽象理论
-* 现已在Gemini应用中向Google AI Ultra订阅用户开放
-* 首次通过Gemini API向特定研究人员、工程师和企业提供Deep Think功能（可申请早期访问权限）
-
-**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/)**
-
-### Tambo AI - Open-Source Generative UI Toolkit for React
-
-* A fullstack React SDK that enables AI agents to dynamically render and stream UI components based on natural language input, turning user requests like "show sales by region" into interactive charts or task boards
-* Includes built-in agent orchestration, streaming infrastructure with automatic error recovery, Zod schema-based component registration, MCP protocol support for external integrations (Linear, Slack, databases), local browser-side tools, and works with multiple LLM providers (OpenAI, Anthropic, Gemini, Mistral)
-* Notable for reaching 1.0 release with 279 stars today, offering both hosted (Tambo Cloud) and self-hosted deployment options, providing a complete solution that handles conversation state management and component streaming without requiring additional agent frameworks, making it significantly easier to build adaptive, AI-powered interfaces compared to building from scratch
-
-### Tambo AI - React 生成式 UI 开源工具包
-
-* 一个全栈 React SDK，让 AI 代理能够根据自然语言输入动态渲染和流式传输 UI 组件，将"显示各地区销售数据"等用户请求转化为交互式图表或任务看板
-* 内置代理编排、自动错误恢复的流式基础设施、基于 Zod 模式的组件注册、支持 MCP 协议的外部集成（Linear、Slack、数据库）、浏览器端本地工具，并兼容多个 LLM 提供商（OpenAI、Anthropic、Gemini、Mistral）
-* 值得关注的原因：刚发布 1.0 版本即获得今日 279 星标，提供托管（Tambo Cloud）和自托管两种部署方式，是一个处理对话状态管理和组件流式传输的完整解决方案，无需额外的代理框架，相比从零构建大幅简化了自适应 AI 界面的开发流程
-
-**[View Repository / 查看仓库](https://github.com/tambo-ai/tambo)**
-
-### Chrome DevTools MCP - Browser Control for AI Coding Agents
-
-* **What it does**: An MCP (Model Context Protocol) server that gives AI coding assistants like Claude, Gemini, Cursor, and Copilot direct control over Chrome browser for automation, debugging, and performance analysis
-* **Key features**: Performance tracing with Chrome DevTools, network request analysis and screenshots, reliable browser automation via Puppeteer with automatic wait handling, source-mapped console error tracking
-* **Why it's notable**: Bridges the gap between AI coding agents and browser DevTools, enabling agents to perform sophisticated web debugging and testing tasks. Gained 436 stars today with extensive support for 15+ AI coding platforms including VS Code, Cursor, JetBrains, and Gemini CLI
-
-### Chrome DevTools MCP - AI 编程助手的浏览器控制工具
-
-* **功能介绍**: 一个 MCP(模型上下文协议)服务器,让 Claude、Gemini、Cursor 和 Copilot 等 AI 编程助手能够直接控制 Chrome 浏览器,实现自动化、调试和性能分析
-* **主要特点**: 使用 Chrome DevTools 进行性能追踪,网络请求分析和截图功能,通过 Puppeteer 实现可靠的浏览器自动化并自动等待操作结果,支持源码映射的控制台错误追踪
-* **为何值得关注**: 在 AI 编程助手和浏览器开发者工具之间搭建桥梁,使 AI 能够执行复杂的 Web 调试和测试任务。今日获得 436 星,广泛支持 15+ 个 AI 编程平台,包括 VS Code、Cursor、JetBrains 和 Gemini CLI
-
-**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
-
-### Microsoft PowerToys - Windows Productivity Utilities Suite
-
-* What it does: A comprehensive collection of 25+ utilities that enhance Windows functionality, including window management (FancyZones), advanced clipboard operations (Advanced Paste), quick file operations (PowerRename, Image Resizer), system customization tools (Keyboard Manager, Color Picker), and productivity boosters (PowerToys Run launcher, Text Extractor OCR, Workspaces)
-
-* Key features: Window snapping and layout management, bulk file renaming with regex support, system-wide color picker, keyboard remapping, cross-monitor mouse control, quick file preview (Peek), hosts file editor, registry preview, screen measurement tools, and theme switching - all integrated into Windows with keyboard shortcuts
-
-* Why it's notable: Official Microsoft open-source project gaining 315 stars today, actively maintained with frequent updates (v0.97.2 released Feb 2025), supports both x64 and ARM64 architectures, available through multiple installation methods (GitHub, Microsoft Store, WinGet), and addresses real Windows power user pain points that the OS doesn't natively solve
-
----
-
 ### Microsoft PowerToys - Windows 生产力工具集
 
 * 功能介绍: 包含 25+ 个实用工具的综合套件,增强 Windows 功能,涵盖窗口管理(FancyZones)、高级剪贴板操作(Advanced Paste)、快速文件处理(PowerRename、Image Resizer)、系统自定义工具(Keyboard Manager、Color Picker)以及生产力增强工具(PowerToys Run 启动器、Text Extractor OCR、Workspaces 工作区)
@@ -508,4 +433,215 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于使用 Claude 驱动的编码工具的开发者来说,这是必看内容,可以帮助他们利用最新 AI 能力来改进代码生成、调试和开发工作流程
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=iGkhfUvRV6o)**
+
+### macOS Tahoe Window Resizing Issue: Apple's Fix That Wasn't
+
+* Apple initially marked the window-resizing bug as "Resolved" in macOS 26.3 Release Candidate
+* Developer created a pixel-by-pixel scanning test app to analyze the actual changes in resize behavior
+* RC version improved corner radius handling but reduced resize area thickness from 7 to 6 pixels (14% decrease)
+* Final release of macOS 26.3 completely removed the fix, reverting to square regions
+* Apple quietly changed the issue status from "Resolved" to "Known Issue" in updated release notes
+* The saga highlights the challenge of balancing visual design with functional usability in window management
+
+### macOS Tahoe 窗口调整大小问题：苹果的修复与回退
+
+* 苹果最初在 macOS 26.3 候选版本中将窗口调整大小的 bug 标记为"已解决"
+* 开发者创建了逐像素扫描测试应用来分析调整大小行为的实际变化
+* 候选版本改进了圆角处理，但将调整大小区域厚度从 7 像素减少到 6 像素（减少 14%）
+* macOS 26.3 正式版完全移除了修复，恢复到方形区域
+* 苹果悄悄将问题状态从"已解决"改为"已知问题"
+* 这一事件凸显了在窗口管理中平衡视觉设计与功能可用性的挑战
+
+**[Read Original / 阅读原文](https://noheger.at/blog/2026/02/12/resizing-windows-on-macos-tahoe-the-saga-continues/)**
+
+<!-- [Title-Only] -->
+### GPT-5.3-Codex-Spark
+
+* Based on the title, this article likely announces OpenAI's new AI model called "GPT-5.3-Codex-Spark" - suggesting it's a specialized version focused on code generation and development tasks
+* The "Codex" naming indicates enhanced programming capabilities, while "Spark" might refer to improved speed, efficiency, or a new approach to code understanding and generation
+* This would be interesting to developers and AI enthusiasts as it represents the next evolution in AI-assisted coding tools, potentially offering better code completion, debugging assistance, and software development capabilities compared to previous versions
+
+### GPT-5.3-Codex-Spark（基于标题的推测）
+
+* 根据标题判断，这篇文章可能是 OpenAI 发布的新 AI 模型"GPT-5.3-Codex-Spark"的官方公告，专注于代码生成和开发任务
+* "Codex"命名表明其增强的编程能力，而"Spark"可能指代更快的速度、更高的效率，或是代码理解和生成的新方法
+* 对开发者和 AI 爱好者来说值得关注，因为这代表了 AI 辅助编码工具的新进化，相比之前的版本可能提供更好的代码补全、调试辅助和软件开发能力
+
+---
+
+**Note:** This introduction is based solely on the article title, as the actual content could not be accessed. The real article may contain different or additional information.
+
+**注意：** 此简介仅基于文章标题撰写，因无法获取实际内容。真实文章可能包含不同或更多信息。
+
+**[Read Original / 阅读原文](https://openai.com/index/introducing-gpt-5-3-codex-spark/)**
+
+### Gemini 3 Deep Think: AI Model Update Designed for Science
+
+* Google released a major upgrade to Gemini 3 Deep Think, a specialized reasoning mode built for solving complex challenges in science, research, and engineering
+* Developed in partnership with scientists and researchers to handle tough problems with unclear solutions and messy or incomplete data
+* Combines deep scientific knowledge with practical engineering applications, moving beyond abstract theory
+* Now available in the Gemini app for Google AI Ultra subscribers
+* For the first time, Deep Think is accessible via the Gemini API to select researchers, engineers, and enterprises (early access available through application)
+
+### Gemini 3 Deep Think：专为科学设计的AI模型更新
+
+* Google发布了Gemini 3 Deep Think的重大升级，这是一种专门的推理模式，旨在解决科学、研究和工程领域的复杂挑战
+* 与科学家和研究人员密切合作开发，用于处理缺乏明确解决方案且数据混乱或不完整的难题
+* 将深厚的科学知识与实用的工程应用相结合，超越抽象理论
+* 现已在Gemini应用中向Google AI Ultra订阅用户开放
+* 首次通过Gemini API向特定研究人员、工程师和企业提供Deep Think功能（可申请早期访问权限）
+
+**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/)**
+
+### Tambo AI - Open-Source Generative UI Toolkit for React
+
+* A fullstack React SDK that lets AI agents dynamically render and update UI components based on natural language input. Register your components with Zod schemas, and the AI automatically selects and streams props to them—turning "show me sales by region" into a live `<Chart>` component.
+
+* Includes built-in agent orchestration, streaming infrastructure with automatic error recovery, MCP protocol support for integrating with Linear/Slack/databases, local browser-side tools, interactable components that persist and update, and support for all major LLM providers (OpenAI, Anthropic, Gemini, Mistral). Offers both hosted Tambo Cloud and self-hosted Docker deployment.
+
+* Just hit 1.0 release and gaining 300 stars today. Stands out by providing a complete solution—React SDK plus backend infrastructure—rather than just a UI library. The interactable components feature (components that persist and update across conversations) and full MCP integration differentiate it from alternatives like Vercel AI SDK. Offers pre-built component library and templates to get started in 5 minutes.
+
+---
+
+### Tambo AI - React 生成式 UI 开源工具包
+
+* 一个全栈 React SDK，让 AI 代理能够根据自然语言输入动态渲染和更新 UI 组件。通过 Zod schema 注册组件后，AI 会自动选择合适的组件并流式传输 props——将"显示各地区销售数据"转化为实时的 `<Chart>` 组件。
+
+* 内置代理编排、带自动错误恢复的流式基础设施、支持 MCP 协议集成 Linear/Slack/数据库、浏览器端本地工具、可持久化和更新的交互式组件，以及对所有主流 LLM 提供商的支持(OpenAI、Anthropic、Gemini、Mistral)。提供托管的 Tambo Cloud 和 Docker 自托管部署两种方案。
+
+* 刚发布 1.0 版本，今日获得 300 stars。其独特之处在于提供完整解决方案——React SDK 加后端基础设施——而非仅仅是 UI 库。交互式组件功能(跨对话持久化和更新的组件)以及完整的 MCP 集成使其区别于 Vercel AI SDK 等竞品。提供预构建组件库和模板，5 分钟即可上手。
+
+**[View Repository / 查看仓库](https://github.com/tambo-ai/tambo)**
+
+### Chrome DevTools MCP - Browser Control for AI Coding Agents
+
+* **What it does**: An MCP (Model Context Protocol) server that gives AI coding assistants like Claude, Gemini, Cursor, and Copilot direct control over Chrome browser for automation, debugging, and performance analysis
+* **Key features**: Performance tracing with Chrome DevTools, network request analysis and screenshots, reliable browser automation via Puppeteer with automatic wait handling, source-mapped console error tracking
+* **Why it's notable**: Bridges the gap between AI coding agents and browser DevTools, enabling agents to perform sophisticated web debugging and testing tasks. Gained 436 stars today with extensive support for 15+ AI coding platforms including VS Code, Cursor, JetBrains, and Gemini CLI
+
+### Chrome DevTools MCP - AI 编程助手的浏览器控制工具
+
+* **功能介绍**: 一个 MCP(模型上下文协议)服务器,让 Claude、Gemini、Cursor 和 Copilot 等 AI 编程助手能够直接控制 Chrome 浏览器,实现自动化、调试和性能分析
+* **主要特点**: 使用 Chrome DevTools 进行性能追踪,网络请求分析和截图功能,通过 Puppeteer 实现可靠的浏览器自动化并自动等待操作结果,支持源码映射的控制台错误追踪
+* **为何值得关注**: 在 AI 编程助手和浏览器开发者工具之间搭建桥梁,使 AI 能够执行复杂的 Web 调试和测试任务。今日获得 436 星,广泛支持 15+ 个 AI 编程平台,包括 VS Code、Cursor、JetBrains 和 Gemini CLI
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### peon-ping - Game Character Voice Notifications for AI Coding Agents
+
+* Adds iconic game character voice lines (Warcraft, StarCraft, Portal, Zelda, etc.) to notify you when AI coding agents like Claude Code, Codex, Cursor, or OpenCode finish tasks or need permission — solving the "tab away and lose focus" problem
+* 40+ sound packs featuring characters like Warcraft III Peon, GLaDOS, Sarah Kerrigan, and Duke Nukem; supports desktop notifications, terminal tab titles, configurable volume/categories, CLI controls (`peon toggle`, `peon packs use`), and implements the open CESP standard for coding event sounds
+* Notable for its creative solution to AI agent workflow interruptions, cross-platform support (macOS/Linux/WSL2), one-command installation, and nostalgic gaming appeal that makes coding with AI agents more engaging and productive
+
+### peon-ping - AI 编程助手的游戏角色语音通知
+
+* 为 Claude Code、Codex、Cursor 或 OpenCode 等 AI 编程助手添加经典游戏角色语音提示(魔兽争霸、星际争霸、传送门、塞尔达等),在任务完成或需要权限时通知开发者,解决"切换标签页后失去专注"的问题
+* 提供 40 多个音效包,包含魔兽农民、GLaDOS、凯瑞甘、毁灭公爵等角色;支持桌面通知、终端标签标题、可配置音量/类别、CLI 控制命令(`peon toggle`、`peon packs use`),并实现开放的 CESP 编程事件音效标准
+* 为何值得关注:创造性地解决 AI 助手工作流中断问题,跨平台支持(macOS/Linux/WSL2),一键安装,怀旧游戏元素让 AI 编程体验更有趣且高效
+
+**[View Repository / 查看仓库](https://github.com/PeonPing/peon-ping)**
+
+### 🎬 They're Leaving Major Brands Without Money! 🤯
+
+**Channel:** Алишер | IT
+
+* What the video covers: This video explores how certain technologies or practices are disrupting major brands' revenue streams, likely focusing on smart home technology, programming solutions, or tech innovations that bypass traditional business models
+* Key topics discussed: Smart home systems, technology disruption, programming and coding techniques that enable alternatives to mainstream branded products, potential cost-saving tech solutions
+* Why it's worth watching: Offers insights into how tech-savvy individuals can leverage programming and smart home technologies to reduce dependency on expensive brand-name products, potentially saving money while maintaining functionality
+
+---
+
+### 🎬 他们让大品牌失去收入！🤯
+
+**频道:** Алишер | IT
+
+* 视频内容概述: 本视频探讨某些技术或实践如何颠覆大品牌的收入来源,可能聚焦于智能家居技术、编程解决方案或绕过传统商业模式的技术创新
+* 主要话题: 智能家居系统、技术颠覆、编程和编码技术如何实现主流品牌产品的替代方案、潜在的节省成本的技术解决方案
+* 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+### 🎬 How I'd Teach a 10 Year Old to Build Agentic Workflows (Claude Code)
+
+**Channel:** Nate Herk | AI Automation
+
+* **What the video covers:** A beginner-friendly tutorial on building agentic workflows using Claude Code, designed to be simple enough for a 10-year-old to understand
+* **Key topics discussed:** 
+  - Introduction to agentic workflows and AI automation concepts
+  - Step-by-step guide to using Claude Code for building automated agents
+  - Practical examples and hands-on demonstrations
+  - Integration with Firecrawl for web scraping and data collection
+  - Simplified explanations of complex AI automation concepts
+* **Why it's worth watching:** Perfect for absolute beginners who want to understand AI agents without technical jargon. Nate breaks down advanced automation concepts into digestible, actionable steps that anyone can follow, making AI development accessible to newcomers and those looking to quickly prototype agentic systems.
+
+---
+
+### 🎬 如何教10岁孩子构建AI智能体工作流 (Claude Code)
+
+**频道:** Nate Herk | AI Automation
+
+* **视频内容概述:** 一个适合初学者的教程,讲解如何使用Claude Code构建AI智能体工作流,简单到10岁孩子都能理解
+* **主要话题:**
+  - AI智能体工作流和自动化的基础概念介绍
+  - 使用Claude Code构建自动化智能体的分步指南
+  - 实际案例和动手演示
+  - 集成Firecrawl进行网页抓取和数据收集
+  - 将复杂的AI自动化概念简化讲解
+* **为何值得观看:** 非常适合想要了解AI智能体但没有技术背景的绝对初学者。Nate将高级自动化概念分解为易于理解、可操作的步骤,让任何人都能跟随学习,使AI开发对新手和希望快速构建智能体系统原型的人来说变得触手可及。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GAxd90fEE4)**
+
+### 🎬 Artificial Intelligence With Python And DSA Roadmap
+
+**Channel:** WebKnower
+
+* What the video covers: A comprehensive roadmap for learning Artificial Intelligence using Python and Data Structures & Algorithms (DSA) as foundational skills
+* Key topics discussed: The learning path connecting Python programming, DSA fundamentals, and AI development; structured approach for beginners transitioning into AI
+* Why it's worth watching: Provides a clear, actionable roadmap for aspiring AI developers who want to build strong programming foundations before diving into machine learning and AI concepts
+
+---
+
+### 🎬 人工智能与Python及数据结构算法学习路线图
+
+**频道:** WebKnower
+
+* 视频内容概述: 全面介绍如何通过Python和数据结构算法(DSA)作为基础来学习人工智能的完整路线图
+* 主要话题: Python编程、DSA基础知识与AI开发之间的学习路径连接;为初学者提供的结构化学习方法
+* 为何值得观看: 为想要在深入机器学习和AI概念之前打好编程基础的AI开发者提供清晰可行的学习路线
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=riv1sD6WXQ0)**
+
+### 🎬 Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time
+
+**Channel:** Cole Medin
+
+* **What the video covers:** This video explores Claude's newly released "Agent Teams" feature, which revolutionizes AI-assisted coding by enabling multiple AI agents to work collaboratively in parallel rather than sequentially.
+
+* **Key topics discussed:**
+  - How Agent Teams differs from traditional single-agent AI coding workflows
+  - Real-time demonstration of multiple AI agents collaborating on coding tasks
+  - The performance and efficiency gains from parallel agent execution
+  - Practical use cases and scenarios where Agent Teams excels
+  - Comparison with existing AI coding tools and approaches
+
+* **Why it's worth watching:** If you're interested in AI-powered development tools, this video showcases a significant leap forward in how AI can assist with coding. The ability to have multiple agents working together simultaneously could dramatically speed up development workflows and handle more complex projects. Cole Medin provides hands-on demonstrations that show the practical implications of this technology, making it essential viewing for developers exploring AI coding assistants.
+
+---
+
+### 🎬 Claude Code 的 Agent Teams 太疯狂了 - 多个 AI 代理实时协同编程
+
+**频道:** Cole Medin
+
+* **视频内容概述:** 本视频深入探讨了 Claude 最新发布的"Agent Teams"功能,这一功能通过让多个 AI 代理并行协作而非顺序工作,彻底改变了 AI 辅助编程的方式。
+
+* **主要话题:**
+  - Agent Teams 与传统单一代理 AI 编程工作流程的区别
+  - 多个 AI 代理协同完成编程任务的实时演示
+  - 并行代理执行带来的性能和效率提升
+  - Agent Teams 表现出色的实际用例和应用场景
+  - 与现有 AI 编程工具和方法的对比分析
+
+* **为何值得观看:** 如果你对 AI 驱动的开发工具感兴趣,这个视频展示了 AI 辅助编程领域的重大突破。多个代理同时协作的能力可能会大幅加快开发工作流程,并能处理更复杂的项目。Cole Medin 提供了实际操作演示,展现了这项技术的实用价值,对于探索 AI 编程助手的开发者来说是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-1K_ZWDKpU0)**
 
