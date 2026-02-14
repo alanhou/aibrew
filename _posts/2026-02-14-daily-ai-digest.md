@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 14, 2026"
 date: 2026-02-14
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 16 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：16篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -801,4 +801,176 @@ I'll analyze this content and provide summaries in both English and Chinese.
 * 为何值得观看: 学习如何将标准错误页面转变为吸引人的用户体验;对于希望为项目增添专业感的 Web 开发者来说是实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=B97rwQ2KWfU)**
+
+### Zig 0.16.0 Release: Experimental Async I/O with Stackful Coroutines
+
+* `std.Io.Evented` now supports userspace stack switching (fibers/green threads/stackful coroutines)
+* Two I/O implementations available: `std.Io.Threaded` and event-driven alternatives
+* I/O implementations can be swapped effortlessly without changing application code
+* Still experimental - requires followup work for production reliability
+* Demonstrates Zig's abstraction capability: same `app()` function works with different I/O backends
+* Example shows minimal system calls with threaded I/O (strace output included)
+* Jacob Young led the work to bring APIs up to speed for 0.16.0 release cycle
+
+### Zig 0.16.0 版本:实验性异步 I/O 与栈式协程
+
+* `std.Io.Evented` 现已支持用户空间栈切换(纤程/绿色线程/栈式协程)
+* 提供两种 I/O 实现:`std.Io.Threaded` 和事件驱动替代方案
+* I/O 实现可轻松切换,无需修改应用代码
+* 仍处于实验阶段 - 需要后续工作才能用于生产环境
+* 展示了 Zig 的抽象能力:同一个 `app()` 函数可配合不同 I/O 后端工作
+* 示例展示了线程 I/O 的最小系统调用(包含 strace 输出)
+* Jacob Young 主导了 0.16.0 版本周期的 API 更新工作
+
+**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-02-13)**
+
+### YT Media Storage: Store Files on YouTube as Lossless Video
+
+* **Core Concept**: Encodes any file into lossless video (FFV1/MKV format) that can be uploaded to YouTube, then decodes it back to the original file
+* **Fountain Codes**: Uses Wirehair fountain codes for data redundancy and error correction during encoding/decoding
+* **Encryption Support**: Optional password-based encryption using libsodium's XChaCha20-Poly1305 algorithm
+* **Dual Interface**: Provides both CLI for automation and Qt6-based GUI for user-friendly batch processing
+* **Technical Specs**: Outputs 4K resolution (3840x2160) at 30 FPS using FFV1 lossless codec in MKV container
+* **Requirements**: Built with C++23, requires CMake 3.22+, FFmpeg, libsodium, OpenMP, and Qt6
+* **Installation**: Comprehensive installation guides for Ubuntu/Debian, Fedora, Arch Linux, macOS, and Windows
+* **GUI Features**: Batch file processing, real-time progress tracking, threaded operations to keep UI responsive
+* **CI/CD**: Automated builds available through TeamCity pipeline with downloadable artifacts for CLI and GUI
+* **Open Source**: Released under GNU GPL v3 license
+
+### YT 媒体存储:将文件以无损视频形式存储到 YouTube
+
+* **核心概念**:将任何文件编码为无损视频(FFV1/MKV 格式)可上传至 YouTube,然后解码还原为原始文件
+* **喷泉码技术**:使用 Wirehair 喷泉码实现数据冗余和编解码过程中的错误修复
+* **加密支持**:可选的基于密码的加密功能,使用 libsodium 的 XChaCha20-Poly1305 算法
+* **双重界面**:提供用于自动化的命令行界面和基于 Qt6 的图形界面,支持批量处理
+* **技术规格**:输出 4K 分辨率(3840x2160)30 帧/秒,使用 FFV1 无损编解码器和 MKV 容器
+* **系统要求**:使用 C++23 构建,需要 CMake 3.22+、FFmpeg、libsodium、OpenMP 和 Qt6
+* **安装指南**:提供 Ubuntu/Debian、Fedora、Arch Linux、macOS 和 Windows 的完整安装说明
+* **图形界面功能**:批量文件处理、实时进度跟踪、多线程操作保持界面响应流畅
+* **持续集成**:通过 TeamCity 管道提供自动化构建,可下载 CLI 和 GUI 的构建产物
+* **开源项目**:采用 GNU GPL v3 许可证发布
+
+**[Read Original / 阅读原文](https://github.com/PulseBeat02/yt-media-storage)**
+
+### The Go Linker: Combining Object Files into Executables
+
+* The linker takes separately compiled package object files (.o) and combines them into a single executable
+* Four main tasks: symbol resolution, relocation, dead code elimination, and executable generation
+* Symbol resolution connects cross-file references (e.g., main.go calling fmt.Println from another package)
+* The Loader builds a global symbol index by reading all object files and following import chains
+* Dead code elimination traces from main.main to mark reachable symbols, dropping unused functions to keep binaries small
+* Relocation patches placeholder addresses with actual memory addresses after layout is determined
+* Address assignment organizes code and data into memory sections (.text for code, .rodata for constants, .data/.bss for variables)
+* The linker writes platform-specific executable formats (ELF on Linux, Mach-O on macOS, PE on Windows)
+* Special Go sections like .gopclntab contain runtime metadata for stack traces and reflection
+
+### Go 链接器:将目标文件组合成可执行文件
+
+* 链接器将单独编译的包目标文件(.o)组合成单个可执行文件
+* 四个主要任务:符号解析、重定位、死代码消除和可执行文件生成
+* 符号解析连接跨文件引用(例如 main.go 调用另一个包中的 fmt.Println)
+* 加载器通过读取所有目标文件并跟踪导入链来构建全局符号索引
+* 死代码消除从 main.main 开始追踪以标记可达符号,删除未使用的函数以保持二进制文件精简
+* 重定位在确定布局后用实际内存地址修补占位符地址
+* 地址分配将代码和数据组织到内存段(.text 用于代码,.rodata 用于常量,.data/.bss 用于变量)
+* 链接器编写特定平台的可执行文件格式(Linux 上的 ELF,macOS 上的 Mach-O,Windows 上的 PE)
+* 特殊的 Go 段如 .gopclntab 包含用于堆栈跟踪和反射的运行时元数据
+
+**[Read Original / 阅读原文](https://internals-for-interns.com/posts/the-go-linker/)**
+
+### Tambo AI - Open-Source Generative UI Toolkit for React
+
+* A fullstack React SDK that enables AI agents to dynamically render and stream UI components based on natural language input, with built-in conversation state management and agent orchestration
+* Register React components with Zod schemas, supports both one-time generative components (charts, visualizations) and persistent interactable components (task boards, shopping carts), includes MCP protocol integration for connecting to external services, local browser-based tools, streaming infrastructure with automatic error recovery, and works with multiple LLM providers (OpenAI, Anthropic, Gemini, Mistral)
+* Just launched version 1.0 with 544 stars today, offers a complete solution that eliminates the need to build custom streaming infrastructure or state management for AI-powered UIs, provides both hosted cloud backend and self-hosted Docker options, making it significantly easier to build adaptive software that responds to users with dynamic interface generation
+
+### Tambo AI - React 生成式 UI 开源工具包
+
+* 一个全栈 React SDK，使 AI 代理能够根据自然语言输入动态渲染和流式传输 UI 组件，内置对话状态管理和代理编排功能
+* 通过 Zod 模式注册 React 组件，支持一次性生成组件（图表、可视化）和持久化交互组件（任务板、购物车），集成 MCP 协议连接外部服务，支持浏览器本地工具、带自动错误恢复的流式基础设施，兼容多个 LLM 提供商（OpenAI、Anthropic、Gemini、Mistral）
+* 刚发布 1.0 版本，今日获得 544 星标，提供完整解决方案，无需构建自定义流式基础设施或 AI 驱动 UI 的状态管理，提供托管云后端和自托管 Docker 选项，大幅简化构建能够通过动态界面生成响应用户的自适应软件
+
+**[View Repository / 查看仓库](https://github.com/tambo-ai/tambo)**
+
+### Rowboat - Open-source AI Coworker with Persistent Memory
+
+* **What it does**: Rowboat is a local-first AI assistant that connects to your email and meeting notes, builds a persistent knowledge graph from your work context, and uses that accumulated memory to help you draft documents, prepare for meetings, and automate routine tasks - all running privately on your machine.
+
+* **Key features**: 
+  - Maintains an Obsidian-compatible Markdown vault as transparent "working memory" you can inspect and edit
+  - Integrates with Gmail, Google Calendar, Granola, and Fireflies to automatically build context
+  - Generates real artifacts (meeting briefs, email drafts, PDF slide decks) grounded in your historical context
+  - Background agents for automated workflows (draft replies, daily voice notes, project updates)
+  - Supports local models (Ollama, LM Studio) or hosted models with your own API keys
+  - Extensible via Model Context Protocol (MCP) to connect external tools and services
+  - Voice memo recording with automatic knowledge graph updates
+
+* **Why it's notable**: Unlike typical AI tools that search documents on-demand, Rowboat maintains long-lived, compounding knowledge that accumulates over time. With 467 stars today and Y Combinator S24 backing, it's gaining traction as a privacy-focused alternative to cloud-based AI assistants. The local-first architecture means all your data stays on your machine as plain Markdown files - no vendor lock-in, fully inspectable and editable. It's essentially giving you an AI coworker that actually remembers your work context without sending anything to the cloud.
+
+---
+
+### Rowboat - 具有持久记忆的开源 AI 协作助手
+
+* **功能介绍**: Rowboat 是一个本地优先的 AI 助手,可连接你的电子邮件和会议笔记,从工作上下文中构建持久的知识图谱,并利用这些积累的记忆帮助你起草文档、准备会议和自动化日常任务 - 所有操作都在你的本地机器上私密运行。
+
+* **主要特点**:
+  - 维护一个与 Obsidian 兼容的 Markdown 知识库作为可检查和编辑的透明"工作记忆"
+  - 集成 Gmail、Google 日历、Granola 和 Fireflies 自动构建上下文
+  - 基于历史上下文生成实际产出物(会议简报、邮件草稿、PDF 幻灯片)
+  - 后台代理实现自动化工作流(起草回复、每日语音笔记、项目更新)
+  - 支持本地模型(Ollama、LM Studio)或使用自己 API 密钥的托管模型
+  - 通过模型上下文协议(MCP)扩展连接外部工具和服务
+  - 语音备忘录录制并自动更新知识图谱
+
+* **为何值得关注**: 与按需搜索文档的典型 AI 工具不同,Rowboat 维护着随时间积累的长期复合知识。凭借今日 467 星和 Y Combinator S24 支持,它作为注重隐私的云端 AI 助手替代方案正获得关注。本地优先架构意味着所有数据都以纯 Markdown 文件形式保存在你的机器上 - 无供应商锁定,完全可检查和编辑。它本质上为你提供了一个真正记住工作上下文的 AI 同事,且无需将任何内容发送到云端。
+
+**[View Repository / 查看仓库](https://github.com/rowboatlabs/rowboat)**
+
+### MinIO - High-Performance S3-Compatible Object Storage
+
+* **What it does**: MinIO is an open-source, high-performance object storage system that provides S3-compatible APIs for storing and retrieving unstructured data. It's designed to handle AI/ML workloads, analytics pipelines, and data-intensive applications with industry-leading performance.
+
+* **Key features**: 
+  - Full S3 API compatibility for seamless integration with existing tools and workflows
+  - Optimized for AI/ML and large-scale data pipelines with exceptional throughput
+  - Source-only distribution model (no pre-compiled binaries) under AGPLv3 license
+  - Multiple deployment options: bare metal, Docker, Kubernetes (via Operator or Helm)
+  - Built-in web console for browser-based object management
+  - Erasure coding for data protection and high availability
+
+* **Why it's notable**: MinIO has transitioned to a source-only distribution model, marking a significant shift in its open-source strategy. The repository is no longer actively maintained, with users directed to AIStor Free (community edition) or AIStor Enterprise (commercial support). Despite this change, it remains trending due to its proven performance in production environments and its role as a lightweight, self-hosted alternative to cloud object storage. The AGPLv3 licensing requires careful consideration for commercial use, making it particularly relevant for organizations evaluating open-source storage solutions.
+
+---
+
+### MinIO - 高性能 S3 兼容对象存储
+
+* **功能介绍**: MinIO 是一个开源的高性能对象存储系统,提供 S3 兼容的 API 用于存储和检索非结构化数据。专为处理 AI/ML 工作负载、分析管道和数据密集型应用而设计,具有业界领先的性能表现。
+
+* **主要特点**:
+  - 完全兼容 S3 API,可无缝集成现有工具和工作流
+  - 针对 AI/ML 和大规模数据管道优化,提供卓越的吞吐量
+  - 采用纯源码分发模式(不提供预编译二进制文件),使用 AGPLv3 许可证
+  - 支持多种部署方式:裸机、Docker、Kubernetes(通过 Operator 或 Helm)
+  - 内置 Web 控制台,支持基于浏览器的对象管理
+  - 纠删码技术提供数据保护和高可用性
+
+* **为何值得关注**: MinIO 已转向纯源码分发模式,标志着其开源策略的重大转变。该仓库不再积极维护,用户被引导至 AIStor Free(社区版)或 AIStor Enterprise(商业支持版)。尽管如此,它仍因在生产环境中经过验证的性能表现而备受关注,是云对象存储的轻量级自托管替代方案。AGPLv3 许可证要求商业使用时需谨慎考虑合规性,这使其对评估开源存储解决方案的组织特别具有参考价值。
+
+**[View Repository / 查看仓库](https://github.com/minio/minio)**
+
+### 🎬 Codex reviews all of our PRs
+**Channel:** Lenny's Podcast
+
+* What the video covers: The video explores how teams are integrating OpenAI's Codex into their development workflow, specifically for automated pull request reviews
+* Key topics discussed: AI-powered code review processes, practical implementation of Codex in engineering teams, the impact on developer productivity and code quality, real-world experiences with AI code reviewers
+* Why it's worth watching: Offers practical insights into how AI is transforming software development workflows, featuring real experiences from teams using Codex for PR reviews, valuable for developers and engineering leaders considering AI integration in their processes
+
+### 🎬 Codex 审查我们所有的 PR
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨团队如何将 OpenAI 的 Codex 集成到开发工作流程中,特别是用于自动化代码审查
+* 主要话题: AI 驱动的代码审查流程、Codex 在工程团队中的实际应用、对开发者生产力和代码质量的影响、使用 AI 代码审查工具的真实经验
+* 为何值得观看: 提供了 AI 如何改变软件开发工作流程的实用见解,展示团队使用 Codex 进行 PR 审查的真实经验,对考虑在流程中集成 AI 的开发者和工程领导者很有价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=meejSpLFuOo)**
 
