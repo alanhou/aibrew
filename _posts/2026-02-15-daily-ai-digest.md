@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 15, 2026"
 date: 2026-02-15
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -289,4 +289,256 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### News Publishers Restrict Internet Archive Access Over AI Training Concerns
+
+* Major news outlets including The Guardian, New York Times, and Financial Times are limiting Internet Archive's web crawlers to prevent AI companies from accessing their content through the Wayback Machine
+* The Guardian blocks Internet Archive APIs and filters article pages from Wayback Machine while keeping homepages accessible, citing concerns about AI companies extracting structured content databases
+* 241 news sites across nine countries now explicitly block at least one Internet Archive bot, with 87% owned by USA Today Co. (Gannett), which added restrictions in 2025
+* Evidence shows Wayback Machine data was used in Google's C4 dataset for training T5 and Meta's Llama models, ranking as the 187th most-present domain out of 15 million
+* Internet Archive founder Brewster Kahle warns that limiting library access reduces public access to historical records, though the organization has implemented rate-limiting and filtering to prevent bulk downloads
+* An AI company crashed Internet Archive servers in May 2023 by sending tens of thousands of requests per second, later apologizing and donating to the nonprofit
+* Publishers use robots.txt files as "doormen" to indicate which bots are unwelcome, though these directives aren't legally binding
+
+### 新闻出版商因AI抓取担忧限制互联网档案馆访问
+
+* 包括《卫报》、《纽约时报》和《金融时报》在内的主要新闻机构正在限制互联网档案馆的网络爬虫,以防止AI公司通过时光机(Wayback Machine)访问其内容
+* 《卫报》屏蔽互联网档案馆API并过滤时光机中的文章页面,同时保留首页可访问性,理由是担心AI公司提取结构化内容数据库
+* 来自九个国家的241个新闻网站现已明确屏蔽至少一个互联网档案馆机器人,其中87%归今日美国公司(甘尼特集团)所有,该集团于2025年添加了限制措施
+* 证据显示时光机数据曾用于谷歌C4数据集,训练T5和Meta的Llama模型,在1500万个域名中排名第187位
+* 互联网档案馆创始人布鲁斯特·卡勒警告称,限制图书馆访问会减少公众获取历史记录的机会,尽管该组织已实施速率限制和过滤以防止批量下载
+* 2023年5月,一家AI公司每秒发送数万次请求导致互联网档案馆服务器崩溃,后来该公司道歉并向这家非营利组织捐款
+* 出版商使用robots.txt文件作为"门卫"来指示哪些机器人不受欢迎,尽管这些指令不具法律约束力
+
+**[Read Original / 阅读原文](https://www.niemanlab.org/2026/01/news-publishers-limit-internet-archive-access-due-to-ai-scraping-concerns/)**
+
+### Google's Gemini 3 Deep Think: Testing AI Image Generation with Pelicans on Bicycles
+
+* Google released Gemini 3 Deep Think, a new AI model designed to tackle complex challenges in science, research, and engineering
+* The author tested the model's SVG generation capabilities using their signature "pelican riding a bicycle" benchmark
+* Gemini 3 Deep Think produced an exceptionally detailed SVG illustration featuring a stylized white pelican with a magenta cap and scarf, riding a cyan bicycle on a beach with a fish in the basket
+* The model also generated highly descriptive alt text for accessibility, demonstrating attention to detail
+* A more challenging prompt requesting a California brown pelican with specific anatomical features (pouch, feathers, breeding plumage) and bicycle details (spokes, correct frame) also yielded impressive results
+* The second illustration showed a pelican-frigatebird hybrid with a bright red throat pouch in an aerodynamic racing posture, complete with accurate bicycle mechanics
+* This benchmark test suggests significant improvements in AI's ability to generate complex, detailed vector graphics with specific constraints
+
+### Google Gemini 3 Deep Think：用骑自行车的鹈鹕测试 AI 图像生成能力
+
+* Google 发布了 Gemini 3 Deep Think，这是一款旨在解决科学、研究和工程领域复杂挑战的新 AI 模型
+* 作者使用其标志性的"骑自行车的鹈鹕"基准测试了该模型的 SVG 生成能力
+* Gemini 3 Deep Think 生成了一幅极其详细的 SVG 插图，展示了一只戴着洋红色帽子和围巾的风格化白色鹈鹕，骑着青色自行车在海滩上行驶，车筐里还有一条鱼
+* 该模型还为无障碍访问生成了高度描述性的替代文本，展现了对细节的关注
+* 一个更具挑战性的提示要求生成具有特定解剖特征（喉囊、羽毛、繁殖羽）和自行车细节（辐条、正确车架）的加州褐鹈鹕，同样产生了令人印象深刻的结果
+* 第二幅插图展示了一只鹈鹕-军舰鸟混合体，具有鲜红色的喉囊，呈空气动力学竞速姿势，并配有准确的自行车机械结构
+* 这项基准测试表明，AI 在生成具有特定约束条件的复杂、详细矢量图形方面取得了显著进步
+
+**[Read Original / 阅读原文](https://simonwillison.net/2026/Feb/12/gemini-3-deep-think/)**
+
+### Hide YouTube Shorts with uBlock Origin Filter List
+
+* Maintained filter list for uBlock Origin that removes all YouTube Shorts content from your browsing experience
+* Easy installation: copy the filter list URL and paste it into uBlock Origin Dashboard > Filter lists > Import section
+* Filter list URL: `https://raw.githubusercontent.com/i5heu/ublock-hide-yt-shorts/master/list.txt`
+* Bonus feature available: separate filter list to hide YouTube comments (`comments.txt`)
+* Currently maintained by i5heu after original creator @gijsdev became inactive
+* Independent open-source project with no affiliation to Google, YouTube, or Alphabet Inc.
+* Contributions welcome via CONTRIBUTING.md guidelines
+
+### 使用 uBlock Origin 过滤列表隐藏 YouTube Shorts
+
+* 维护中的 uBlock Origin 过滤列表,可移除浏览体验中的所有 YouTube Shorts 短视频内容
+* 安装简便:复制过滤列表 URL 并粘贴到 uBlock Origin 仪表板 > 过滤列表 > 导入部分
+* 过滤列表地址:`https://raw.githubusercontent.com/i5heu/ublock-hide-yt-shorts/master/list.txt`
+* 额外功能:提供单独的过滤列表用于隐藏 YouTube 评论区(`comments.txt`)
+* 原作者 @gijsdev 停止维护后,现由 i5heu 接手维护
+* 独立开源项目,与 Google、YouTube 或 Alphabet Inc. 无任何关联
+* 欢迎通过 CONTRIBUTING.md 指南参与贡献
+
+**[Read Original / 阅读原文](https://github.com/i5heu/ublock-hide-yt-shorts/)**
+
+### MinIO - High-Performance S3-Compatible Object Storage
+
+* **What it does**: MinIO is an open-source, high-performance object storage system that provides S3-compatible APIs for storing and retrieving unstructured data. It serves as a lightweight alternative to AWS S3 for on-premises or cloud deployments.
+
+* **Key features**: 
+  - Full S3 API compatibility for seamless integration with existing tools and SDKs
+  - Optimized for AI/ML workloads and large-scale data pipelines with industry-leading performance
+  - Source-only distribution model (no pre-compiled binaries) requiring Go 1.24+ to build
+  - Embedded web console for browser-based object management
+  - Support for erasure coding, distributed deployments, and Kubernetes via Operator or Helm charts
+  - Includes MinIO Client (`mc`) for command-line operations
+
+* **Why it's notable**: MinIO has transitioned to a **source-only distribution model** for its community edition, marking a significant shift in its open-source strategy. The repository is officially **no longer maintained** as a standalone project, with users directed to **AIStor Free** (community edition) or **AIStor Enterprise** (commercial support). Despite this change, it remains trending due to its proven performance in AI/ML storage workloads and its role as the de facto standard for self-hosted S3-compatible storage. The AGPLv3 license requires careful compliance review for commercial use, making the enterprise offering attractive for production deployments.
+
+---
+
+### MinIO - 高性能 S3 兼容对象存储
+
+* **功能介绍**: MinIO 是一个开源的高性能对象存储系统,提供 S3 兼容的 API 用于存储和检索非结构化数据。它是 AWS S3 的轻量级替代方案,适用于本地部署或云环境。
+
+* **主要特点**:
+  - 完全兼容 S3 API,可无缝集成现有工具和 SDK
+  - 针对 AI/ML 工作负载和大规模数据管道进行优化,性能业界领先
+  - 采用纯源码分发模式(不提供预编译二进制文件),需要 Go 1.24+ 进行构建
+  - 内置 Web 控制台,支持浏览器管理对象
+  - 支持纠删码、分布式部署,可通过 Operator 或 Helm Charts 部署到 Kubernetes
+  - 提供 MinIO Client (`mc`) 命令行工具
+
+* **为何值得关注**: MinIO 已将其社区版转变为**纯源码分发模式**,这标志着其开源策略的重大转变。该仓库已**正式停止维护**,用户被引导至 **AIStor Free**(社区版)或 **AIStor Enterprise**(商业支持版)。尽管如此,它仍因在 AI/ML 存储工作负载中的卓越性能以及作为自托管 S3 兼容存储的事实标准而持续受到关注。AGPLv3 许可证要求商业使用时需仔细审查合规性,这使得企业版对生产部署更具吸引力。
+
+**[View Repository / 查看仓库](https://github.com/minio/minio)**
+
+### Chrome DevTools MCP - Browser Control for AI Coding Agents
+
+* An MCP (Model Context Protocol) server that gives AI coding assistants like Claude, Gemini, Cursor, and Copilot full control over Chrome browser for automation, debugging, and performance analysis
+* Leverages Chrome DevTools for performance tracing and insights, Puppeteer for reliable browser automation, network request analysis, screenshots, and console message inspection with source-mapped stack traces
+* Trending with 326 stars today as it bridges the gap between AI coding agents and browser-based development workflows, supporting 10+ popular AI coding tools with simple npx installation and comprehensive debugging capabilities
+
+### Chrome DevTools MCP - AI 编程助手的浏览器控制工具
+
+* 一个 MCP (模型上下文协议) 服务器,让 Claude、Gemini、Cursor 和 Copilot 等 AI 编程助手能够完全控制 Chrome 浏览器,实现自动化、调试和性能分析
+* 利用 Chrome DevTools 进行性能追踪和洞察,使用 Puppeteer 实现可靠的浏览器自动化,支持网络请求分析、截图和带源码映射堆栈跟踪的控制台消息检查
+* 今日获得 326 星标,因其打通了 AI 编程助手与基于浏览器的开发工作流之间的桥梁而备受关注,支持 10 多种流行 AI 编程工具,通过 npx 简单安装即可使用,提供全面的调试能力
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### TinyClaw - Multi-agent AI assistant platform with team collaboration across messaging channels
+
+* **What it does**: TinyClaw runs multiple AI agents that work together as teams, accessible 24/7 through Discord, WhatsApp, and Telegram. Each agent has specialized roles and can hand off tasks to teammates, operating in isolated workspaces with persistent conversation context.
+
+* **Key features**: Multi-agent collaboration with chain execution and fan-out patterns; supports Anthropic Claude and OpenAI models; live TUI dashboard for monitoring agent interactions; file-based message queue for reliable processing; sender pairing system for access control; runs continuously in tmux sessions; comprehensive CLI for managing agents, teams, and configurations.
+
+* **Why it's notable**: Bridges the gap between personal AI assistants and team collaboration tools by enabling multiple specialized agents to work together autonomously. The multi-channel support and 24/7 operation make it practical for real-world use, while the team visualization and isolated workspaces provide transparency and organization. With 1,315 stars, it's gaining traction as an experimental approach to orchestrating AI agents for complex workflows.
+
+---
+
+### TinyClaw - 支持团队协作的多智能体 AI 助手平台
+
+* **功能介绍**: TinyClaw 运行多个相互协作的 AI 智能体团队,可通过 Discord、WhatsApp 和 Telegram 全天候访问。每个智能体具有专门角色,能够将任务移交给队友,在隔离的工作空间中运行并保持持久的对话上下文。
+
+* **主要特点**: 支持链式执行和扇出模式的多智能体协作;兼容 Anthropic Claude 和 OpenAI 模型;实时 TUI 仪表板监控智能体交互;基于文件的消息队列确保可靠处理;发送者配对系统控制访问权限;在 tmux 会话中持续运行;全面的 CLI 管理智能体、团队和配置。
+
+* **为何值得关注**: 通过让多个专业智能体自主协作,填补了个人 AI 助手与团队协作工具之间的空白。多渠道支持和 24/7 运行使其适用于实际场景,团队可视化和隔离工作空间提供了透明度和组织性。获得 1,315 星标,作为编排 AI 智能体处理复杂工作流的实验性方案正受到关注。
+
+**[View Repository / 查看仓库](https://github.com/jlia0/tinyclaw)**
+
+### Discord ID Bypass Tool - Real-time 3D Avatar Controller for Discord Verification
+
+* **What it does**: A browser-based tool that uses rigged 3D avatars to bypass Discord's age verification selfie checks by controlling avatar head movements and mouth animations in real-time via gamepad or keyboard
+* **Key features**: Supports VRM/FBX/GLB model formats, automatic bone detection, morph target testing for facial expressions, gamepad and keyboard controls, zero installation (single HTML file), works on low-spec computers
+* **Why it's notable**: Gained 1K+ stars as a creative workaround to Discord's controversial age verification system; uses Three.js and VRM libraries to simulate realistic head movements and facial expressions; includes pre-rigged demo models and supports custom avatar imports from VRoid Hub, Mixamo, and Sketchfab
+
+---
+
+### Discord ID Bypass Tool - Discord 验证绕过工具(实时 3D 虚拟形象控制器)
+
+* **功能介绍**: 一个基于浏览器的工具,通过游戏手柄或键盘实时控制 3D 虚拟形象的头部动作和嘴部动画,用于绕过 Discord 的年龄验证自拍检查
+* **主要特点**: 支持 VRM/FBX/GLB 多种模型格式,自动骨骼检测,面部表情变形目标测试,支持游戏手柄和键盘控制,零安装(单个 HTML 文件),可在低配置电脑上运行
+* **为何值得关注**: 作为 Discord 有争议的年龄验证系统的创意解决方案获得 1000+ 星标;使用 Three.js 和 VRM 库模拟逼真的头部运动和面部表情;包含预装配的演示模型,支持从 VRoid Hub、Mixamo 和 Sketchfab 导入自定义虚拟形象
+
+**[View Repository / 查看仓库](https://github.com/promptpirate-x/discord-id-bypass-tool)**
+
+### 🎬 Why the U.S. Still Sells Chips to China - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Dario Amodei (CEO of Anthropic) discusses the complex geopolitical and economic dynamics behind U.S. semiconductor exports to China, exploring the balance between national security concerns and commercial interests in the AI chip industry.
+
+* Key topics discussed: U.S.-China tech competition, semiconductor export controls, the strategic implications of AI chip restrictions, how export policies affect both American companies and global AI development, and the challenges of implementing effective technology controls.
+
+* Why it's worth watching: Offers insider perspective from a leading AI company CEO on one of the most critical tech policy debates of our time, providing nuanced analysis beyond typical media coverage of U.S.-China tech tensions and helping viewers understand the real-world tradeoffs in semiconductor policy.
+
+---
+
+### 🎬 美国为何仍向中国出售芯片 - Dario Amodei
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: Anthropic 首席执行官 Dario Amodei 探讨美国向中国出口半导体背后复杂的地缘政治和经济动态,分析在 AI 芯片行业中国家安全关切与商业利益之间的平衡。
+
+* 主要话题: 中美科技竞争、半导体出口管制、AI 芯片限制的战略影响、出口政策如何影响美国公司和全球 AI 发展,以及实施有效技术管控的挑战。
+
+* 为何值得观看: 从领先 AI 公司 CEO 的视角深入解析当今最关键的科技政策辩论之一,提供超越主流媒体对中美科技紧张关系报道的细致分析,帮助观众理解半导体政策中的现实权衡。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=O6VmonLHeOY)**
+
+### 🎬 Coding with Opus 4.6 and Codex 5.3 is actually insane
+
+**Channel:** ForrestKnight
+
+* What the video covers: A hands-on exploration and comparison of two cutting-edge AI coding assistants - Claude Opus 4.6 and Codex 5.3 - integrated within the Zed code editor
+* Key topics discussed: Real-world coding performance, AI model capabilities for software development, practical demonstrations of both models handling coding tasks, feature comparisons, and workflow integration
+* Why it's worth watching: Provides direct, practical insights into the latest AI coding tools that are transforming developer workflows, helping viewers understand which model might best suit their coding needs and whether the hype around these tools is justified
+
+---
+
+### 🎬 使用 Opus 4.6 和 Codex 5.3 编程真的太疯狂了
+
+**频道:** ForrestKnight
+
+* 视频内容概述: 深入体验和对比两款前沿 AI 编程助手 - Claude Opus 4.6 和 Codex 5.3 在 Zed 代码编辑器中的实际表现
+* 主要话题: 真实编程场景下的性能表现、AI 模型在软件开发中的能力展示、两款模型处理编程任务的实际演示、功能对比以及工作流集成
+* 为何值得观看: 提供关于最新 AI 编程工具的直接、实用见解,这些工具正在改变开发者的工作方式,帮助观众了解哪款模型最适合自己的编程需求,以及这些工具是否名副其实
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Q2QmQTNA7vs)**
+
+### 🎬 Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time
+
+**Channel:** Cole Medin
+
+* **What the video covers:** This video explores Claude's newly released "Agent Teams" feature, which revolutionizes AI-assisted coding by enabling multiple AI agents to work collaboratively in parallel rather than sequentially.
+
+* **Key topics discussed:**
+  - How Agent Teams differs from traditional single-agent AI coding workflows
+  - Real-time demonstration of multiple AI agents collaborating on coding tasks
+  - The performance and efficiency gains from parallel agent execution
+  - Practical use cases and scenarios where Agent Teams excels
+  - Comparison with existing AI coding tools and approaches
+
+* **Why it's worth watching:** If you're interested in AI-powered development tools, this video showcases a significant leap forward in how AI can assist with coding. The ability to have multiple agents working together simultaneously could dramatically speed up development workflows and handle more complex projects. Cole Medin provides hands-on demonstrations that show the practical implications of this technology, making it essential viewing for developers exploring AI coding assistants.
+
+---
+
+### 🎬 Claude Code 的 Agent Teams 太疯狂了 - 多个 AI 代理实时协同编程
+
+**频道:** Cole Medin
+
+* **视频内容概述:** 本视频深入探讨了 Claude 最新发布的"Agent Teams"功能,这一功能通过让多个 AI 代理并行协作而非顺序工作,彻底改变了 AI 辅助编程的方式。
+
+* **主要话题:**
+  - Agent Teams 与传统单一代理 AI 编程工作流程的区别
+  - 多个 AI 代理协同完成编程任务的实时演示
+  - 并行代理执行带来的性能和效率提升
+  - Agent Teams 表现出色的实际用例和应用场景
+  - 与现有 AI 编程工具和方法的对比分析
+
+* **为何值得观看:** 如果你对 AI 驱动的开发工具感兴趣,这个视频展示了 AI 辅助编程领域的重大突破。多个代理同时协作的能力可能会大幅加快开发工作流程,并能处理更复杂的项目。Cole Medin 提供了实际操作演示,展现了这项技术的实用价值,对于探索 AI 编程助手的开发者来说是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-1K_ZWDKpU0)**
+
+### 🎬 4 Crazy AI Coding Tools You Need to Try 🤯
+
+**Channel:** Ankit Srivastava
+
+* **What the video covers:** This video showcases four innovative AI-powered coding tools that can significantly enhance developer productivity and workflow
+* **Key topics discussed:** 
+  - Cutting-edge AI coding assistants and their practical applications
+  - How these tools integrate into modern development environments
+  - Real-world demonstrations of AI-assisted coding capabilities
+  - Comparison of different AI coding tool features and use cases
+* **Why it's worth watching:** Perfect for developers looking to stay current with AI tooling trends, discover new productivity boosters, and understand how AI is transforming the coding landscape in 2026
+
+---
+
+### 🎬 4 个你必须尝试的疯狂 AI 编码工具 🤯
+
+**频道:** Ankit Srivastava
+
+* **视频内容概述:** 本视频展示了四款创新的 AI 驱动编码工具,可以显著提升开发者的生产力和工作流程
+* **主要话题:**
+  - 前沿的 AI 编码助手及其实际应用
+  - 这些工具如何集成到现代开发环境中
+  - AI 辅助编码能力的实际演示
+  - 不同 AI 编码工具功能和使用场景的对比
+* **为何值得观看:** 非常适合希望了解 AI 工具趋势、发现新的生产力提升工具,以及理解 AI 如何在 2026 年改变编码领域的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CIEs7RtIVcY)**
 
