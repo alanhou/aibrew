@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 14, 2026"
 date: 2026-02-14
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -689,4 +689,116 @@ pin: false
 * **为何值得观看:** 非常适合希望了解 AI 工具趋势、发现新的生产力提升工具,以及理解 AI 如何在 2026 年改变编码领域的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=CIEs7RtIVcY)**
+
+### SQL-Tap: Real-Time SQL Traffic Monitoring Tool
+
+* **Core Function**: Transparent proxy daemon that sits between applications and databases (PostgreSQL/MySQL), capturing and displaying all SQL queries in an interactive terminal UI without requiring code changes
+* **Installation Options**: Available via Homebrew, Go install, source build, or Docker containers with pre-configured PostgreSQL and MySQL images
+* **Quick Setup**: Three-step process - start proxy daemon on alternate port, redirect application connection, launch TUI client to view real-time query stream
+* **Proxy Daemon (sql-tapd)**: Intercepts database wire protocol traffic, supports both PostgreSQL and MySQL drivers, exposes gRPC interface for TUI clients, optional EXPLAIN support via DATABASE_URL
+* **TUI Client (sql-tap)**: Interactive terminal interface with three views (list, inspector, explain) featuring comprehensive keyboard navigation and query manipulation capabilities
+* **Key Features**: Real-time query capture, transaction tracking, prepared statement monitoring, execution time measurement, EXPLAIN/EXPLAIN ANALYZE integration, query editing and copying with parameter binding
+* **Architecture**: Wire protocol parser intercepts queries transparently, tracks execution metadata (time, rows, errors), streams events to TUI via gRPC without application-level instrumentation
+* **Keybindings**: Vim-style navigation (j/k), incremental search, transaction expand/collapse, query inspection, EXPLAIN execution, query editing and copying with multiple format options
+
+### SQL-Tap:实时 SQL 流量监控工具
+
+* **核心功能**:透明代理守护进程,位于应用程序和数据库(PostgreSQL/MySQL)之间,在交互式终端界面中捕获并显示所有 SQL 查询,无需修改代码
+* **安装方式**:支持 Homebrew、Go install、源码构建或 Docker 容器,提供预配置的 PostgreSQL 和 MySQL 镜像
+* **快速设置**:三步流程 - 在备用端口启动代理守护进程,重定向应用程序连接,启动 TUI 客户端查看实时查询流
+* **代理守护进程(sql-tapd)**:拦截数据库线协议流量,支持 PostgreSQL 和 MySQL 驱动,为 TUI 客户端提供 gRPC 接口,通过 DATABASE_URL 可选支持 EXPLAIN
+* **TUI 客户端(sql-tap)**:交互式终端界面,包含三个视图(列表、检查器、执行计划),提供全面的键盘导航和查询操作功能
+* **主要特性**:实时查询捕获、事务跟踪、预处理语句监控、执行时间测量、EXPLAIN/EXPLAIN ANALYZE 集成、查询编辑和复制(含参数绑定)
+* **架构设计**:线协议解析器透明拦截查询,跟踪执行元数据(时间、行数、错误),通过 gRPC 将事件流式传输到 TUI,无需应用层插桩
+* **快捷键操作**:Vim 风格导航(j/k)、增量搜索、事务展开/折叠、查询检查、EXPLAIN 执行、查询编辑和多格式复制
+
+**[Read Original / 阅读原文](https://github.com/mickamy/sql-tap)**
+
+I'll analyze this content and provide summaries in both English and Chinese.
+
+### Wall Street Raider: A 40-Year Journey from Harvard Law to Steam
+
+* A financial simulation game created by Michael Jenkins that was deemed "impossible to port" by multiple professional development teams over four decades
+* Jenkins, a Harvard Law graduate and tax attorney, began conceptualizing the game in 1967 as a board game but had to wait until 1983 when personal computers became available
+* The game contains 115,000 lines of BASIC code, simulates 1,600 companies, and includes complex financial instruments like stocks, bonds, derivatives, and cryptocurrency
+* Professional teams from Denver legal software companies, Disney game studios, and Commodore Computers all failed to decode or port the original code
+* In 2024, 29-year-old developer Ben Ward successfully began remaking the game after Jenkins, now 80, shared the source code
+* The game became an accidental educational tool, with players worldwide crediting it for teaching them finance and influencing their career paths
+* Jenkins developed the game solo over 34 years, writing the most complex code during late-night "fits of rationality" that even he couldn't fully understand later
+* The game features a karma system for ethical violations, 271-page manual, and toggleable antitrust regulations for "robber baron" mode
+
+### 《华尔街掠夺者》:从哈佛法学院到Steam平台的40年传奇
+
+* 一款由Michael Jenkins创作的金融模拟游戏,四十年来被多个专业开发团队认为"不可能移植"
+* Jenkins是哈佛法学院毕业生和税务律师,1967年开始构思这款桌游,但直到1983年个人电脑出现才得以实现
+* 游戏包含115,000行BASIC代码,模拟1,600家公司,涵盖股票、债券、衍生品和加密货币等复杂金融工具
+* 来自丹佛法律软件公司、迪士尼游戏工作室和Commodore电脑公司的专业团队都未能解码或移植原始代码
+* 2024年,29岁的开发者Ben Ward在现年80岁的Jenkins分享源代码后,成功开始重制游戏
+* 游戏意外成为教育工具,全球玩家称其教会了他们金融知识并影响了职业选择
+* Jenkins独自开发游戏长达34年,最复杂的代码写于深夜的"理性爆发"时刻,连他自己后来也无法完全理解
+* 游戏设有道德违规的因果系统、271页手册,以及可切换的反垄断法规以启用"强盗大亨"模式
+
+**[Read Original / 阅读原文](https://www.wallstreetraider.com/story.html)**
+
+### The Three Year Myth: Why "Wait and See" Is a Career Trap
+
+* Author reflects on job loss and identifies a recurring pattern called the "Three Year Myth" - being told to wait 2-3 years for promotions, raises, or changes that never materialize
+* The trap works by keeping employees patient and quiet while others advance, then ultimately letting them go without the promised rewards
+* Organizations deliberately delay change to preserve stability and protect those in power, even when the proposed changes have merit
+* Real-world example: Author's FinOps initiative saving millions was rejected as "inconvenient to power," only to be celebrated years later when implemented by someone else
+* Being asked to "wait" without clear context is actually a threat signal - it means you're viewed as a threat rather than an asset
+* When power structures ask you to wait, they're preserving their position at your expense and buying time to maneuver around you
+* Key lessons learned: Promotions depend on stakeholders not cycles, waiting robs you of recognition and growth, and employer loyalty is dead
+* Bottom line: Don't wait for what you've already earned - act now or move on
+
+### 三年神话:为什么"等等看"是职业陷阱
+
+* 作者在失业后反思,发现了一个反复出现的模式——"三年神话":被告知等待2-3年就能获得晋升、加薪或改变,但这些承诺从未兑现
+* 这个陷阱通过让员工保持耐心和低调来运作,而其他人却在晋升,最终在没有兑现承诺的情况下解雇员工
+* 组织故意延迟变革以维持稳定并保护当权者,即使提议的变革有价值
+* 真实案例:作者提出的财务运营(FinOps)方案能节省数百万美元,却因"对权力不便"而被拒绝,多年后由他人实施时却受到赞扬
+* 在没有明确背景的情况下被要求"等待"实际上是一个威胁信号——意味着你被视为威胁而非资产
+* 当权力结构要求你等待时,他们是在牺牲你的利益来维护自己的地位,并争取时间来绕过你
+* 关键教训:晋升取决于利益相关者而非周期,等待会剥夺你当下的认可和未来的成长,雇主忠诚度已死
+* 核心结论:不要等待你已经赚得的东西——立即行动或另谋出路
+
+**[Read Original / 阅读原文](https://green.spacedino.net/the-three-year-myth/)**
+
+### 🎬 Does AI actually make you a faster programmer? (collab with @SonarSource)
+
+**Channel:** Alberta Tech
+
+* **What the video covers:** An in-depth exploration of whether AI coding assistants genuinely improve developer productivity and speed, featuring a collaboration with SonarSource to examine real-world impacts on coding workflows
+* **Key topics discussed:** Practical testing of AI-powered coding tools, measuring actual productivity gains versus perceived benefits, code quality considerations when using AI assistance, and the balance between speed and maintainability in AI-generated code
+* **Why it's worth watching:** Provides evidence-based insights rather than hype about AI coding tools, helping developers make informed decisions about integrating AI into their workflow. The collaboration with SonarSource (a code quality platform) adds credibility by examining not just speed but also the quality of AI-assisted code
+
+---
+
+### 🎬 AI 真的能让你编程更快吗?(与 @SonarSource 合作)
+
+**频道:** Alberta Tech
+
+* **视频内容概述:** 深入探讨 AI 编程助手是否真正提高开发者的生产力和编码速度,与 SonarSource 合作研究 AI 工具对实际编码工作流程的影响
+* **主要话题:** 实际测试 AI 驱动的编码工具、衡量真实生产力提升与感知收益的对比、使用 AI 辅助时的代码质量考量,以及 AI 生成代码在速度与可维护性之间的平衡
+* **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者就是否将 AI 集成到工作流程中做出明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 辅助代码的质量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### 🎬 404 ERROR PAGE !!! #coding #programming #javascript #python
+**Channel:** Aziz Syntax
+
+* What the video covers: A tutorial on creating a custom 404 error page, likely demonstrating HTML/CSS design and potentially JavaScript interactivity
+* Key topics discussed: Web development fundamentals, error page design, user experience for broken links, front-end coding techniques
+* Why it's worth watching: Learn how to transform a standard error page into an engaging user experience; practical skill for any web developer looking to add polish to their projects
+
+---
+
+### 🎬 404 错误页面设计教程
+**频道:** Aziz Syntax
+
+* 视频内容概述: 展示如何创建自定义 404 错误页面的教程,可能包含 HTML/CSS 设计和 JavaScript 交互效果
+* 主要话题: Web 开发基础、错误页面设计、断链用户体验优化、前端编码技巧
+* 为何值得观看: 学习如何将标准错误页面转变为吸引人的用户体验;对于希望为项目增添专业感的 Web 开发者来说是实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=B97rwQ2KWfU)**
 
