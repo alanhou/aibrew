@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 14, 2026"
 date: 2026-02-14
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -612,4 +612,81 @@ pin: false
 * **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### npmx - Package Browser for the npm Registry
+
+* **npmx** is a fast, modern browser designed specifically for exploring the npm registry
+* Provides an alternative interface for browsing npm packages with improved performance and user experience
+* Independent third-party tool - not officially affiliated with npm, Inc.
+* Offers a streamlined way to search and discover JavaScript packages in the npm ecosystem
+
+### npmx - npm 注册表包浏览器
+
+* **npmx** 是一个专为浏览 npm 注册表设计的快速、现代化浏览器
+* 为浏览 npm 包提供了替代界面,具有更好的性能和用户体验
+* 独立的第三方工具 - 非 npm 公司官方产品
+* 提供了一种简化的方式来搜索和发现 npm 生态系统中的 JavaScript 包
+
+**[Read Original / 阅读原文](https://npmx.dev)**
+
+### Data Engineering for Large Language Models: Architecture, Algorithms & Practical Projects
+
+* Comprehensive open-source book covering the complete LLM data engineering pipeline from pre-training to RAG applications
+* Six-part structure with 13 chapters plus 5 hands-on projects: pre-training data cleaning, multimodal alignment, synthetic data generation, and RAG pipelines
+* Modern tech stack including Ray Data, Spark, CLIP, ColPali, and vector databases for distributed processing
+* Five end-to-end projects: Mini-C4 corpus builder, legal domain SFT, LLaVA multimodal dataset, math/code textbook synthesis, and multimodal RAG financial assistant
+* Data-Centric AI approach covering the full lifecycle: pre-training → fine-tuning → RLHF → RAG with practical code examples
+* Built with MkDocs Material, supports bilingual documentation (English/Chinese), MIT licensed with active community contributions
+
+### 《大模型数据工程:架构、算法及项目实战》
+
+* 系统性开源书籍,涵盖从预训练到RAG应用的完整LLM数据工程流水线
+* 六大部分13章+5个实战项目:预训练数据清洗、多模态对齐、合成数据生成、RAG数据流水线
+* 现代化技术栈包括Ray Data、Spark、CLIP、ColPali和向量数据库等分布式处理工具
+* 五个端到端项目:Mini-C4预训练集构建、法律领域SFT、LLaVA多模态指令集、数学/代码教科书合成、多模态RAG财报助手
+* Data-Centric AI理念贯穿全书,覆盖完整生命周期:预训练→微调→RLHF→RAG,提供可运行代码
+* 基于MkDocs Material构建,支持中英双语文档,MIT开源协议,活跃的社区贡献
+
+**[Read Original / 阅读原文](https://github.com/datascale-ai/data_engineering_book/blob/main/README_en.md)**
+
+<!-- [Title-Only] -->
+### GPT-5.2 Derives a New Result in Theoretical Physics
+
+* Based on the title, this article likely discusses how OpenAI's GPT-5.2 model has achieved a significant milestone by deriving an original result in theoretical physics - something that would traditionally require human physicists and deep domain expertise
+* This is potentially groundbreaking because it suggests AI has moved beyond pattern recognition and information synthesis to actually contributing novel insights in fundamental science. It raises important questions about AI's role in scientific discovery, the nature of creativity in research, and whether we're approaching a new era where AI systems can be genuine collaborators in advancing human knowledge at the frontier of physics
+
+### GPT-5.2 在理论物理学中推导出新结果
+
+* 根据标题推测，这篇文章可能讨论了 OpenAI 的 GPT-5.2 模型如何实现了一个重要里程碑——在理论物理学中推导出原创性结果，这通常需要人类物理学家和深厚的领域专业知识才能完成
+* 这可能具有突破性意义，因为它表明 AI 已经超越了模式识别和信息综合，实际上能够在基础科学领域贡献新颖的见解。这引发了关于 AI 在科学发现中的角色、研究创造力的本质，以及我们是否正在接近一个新时代的重要问题——在这个时代，AI 系统可以成为推进人类在物理学前沿知识的真正合作者
+
+**[Read Original / 阅读原文](https://openai.com/index/new-result-theoretical-physics/)**
+
+### 🎬 4 Crazy AI Coding Tools You Need to Try 🤯
+
+**Channel:** Ankit Srivastava
+
+* **What the video covers:** This video showcases four innovative AI-powered coding tools that can significantly enhance developer productivity and workflow
+* **Key topics discussed:** 
+  - Cutting-edge AI coding assistants and their practical applications
+  - How these tools integrate into modern development environments
+  - Real-world demonstrations of AI-assisted coding capabilities
+  - Comparison of different AI coding tool features and use cases
+* **Why it's worth watching:** Perfect for developers looking to stay current with AI tooling trends, discover new productivity boosters, and understand how AI is transforming the coding landscape in 2026
+
+---
+
+### 🎬 4 个你必须尝试的疯狂 AI 编码工具 🤯
+
+**频道:** Ankit Srivastava
+
+* **视频内容概述:** 本视频展示了四款创新的 AI 驱动编码工具,可以显著提升开发者的生产力和工作流程
+* **主要话题:**
+  - 前沿的 AI 编码助手及其实际应用
+  - 这些工具如何集成到现代开发环境中
+  - AI 辅助编码能力的实际演示
+  - 不同 AI 编码工具功能和使用场景的对比
+* **为何值得观看:** 非常适合希望了解 AI 工具趋势、发现新的生产力提升工具,以及理解 AI 如何在 2026 年改变编码领域的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CIEs7RtIVcY)**
 
