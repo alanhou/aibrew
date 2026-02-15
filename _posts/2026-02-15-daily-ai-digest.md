@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 15, 2026"
 date: 2026-02-15
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -541,4 +541,109 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 非常适合希望了解 AI 工具趋势、发现新的生产力提升工具,以及理解 AI 如何在 2026 年改变编码领域的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=CIEs7RtIVcY)**
+
+### IBM Triples Gen Z Entry-Level Hiring Despite AI Automation
+
+* IBM is tripling entry-level hiring for Gen Z workers, including software developers and roles commonly thought to be replaceable by AI
+* IBM's CHRO Nickle LaMoreaux argues companies that invest in entry-level talent now will be most successful in 3-5 years
+* Job roles are being redesigned for AI fluency: software engineers focus more on customer interaction, HR staff manage chatbot interventions rather than answering routine questions
+* AI literacy is now the fastest-growing skill in the U.S. according to LinkedIn, making Gen Z candidates with AI comfort more competitive
+* Cutting junior talent creates future mid-level manager shortages and forces costly external hiring that takes longer to adapt to company culture
+* IBM CEO Arvind Krishna committed to hiring more college graduates despite announcing layoffs in other areas to focus on AI and software growth
+* Other tech companies like Dropbox (expanding internships 25%) and Cognizant are also increasing Gen Z hiring, citing their superior AI proficiency
+* Industry trend shows 37% of organizations plan to replace early career roles with AI, but IBM is betting against this short-term cost-cutting approach
+
+### IBM 将 Z 世代入门级职位招聘增加两倍,发现 AI 应用的局限性
+
+* IBM 将 Z 世代入门级员工招聘增加三倍,包括软件开发人员和其他被认为可被 AI 取代的岗位
+* IBM 首席人力资源官 Nickle LaMoreaux 认为,现在投资入门级人才的公司将在 3-5 年内最成功
+* 工作角色正在重新设计以适应 AI 能力:软件工程师更多关注客户互动,人力资源员工管理聊天机器人干预而非回答常规问题
+* 根据 LinkedIn 数据,AI 素养现已成为美国增长最快的技能,使具备 AI 能力的 Z 世代候选人更具竞争力
+* 削减初级人才会造成未来中层管理者短缺,并迫使公司进行成本更高的外部招聘,且新员工需要更长时间适应公司文化
+* IBM CEO Arvind Krishna 承诺招聘更多大学毕业生,尽管公司在其他领域宣布裁员以专注于 AI 和软件增长
+* Dropbox(实习项目扩大 25%)和 Cognizant 等其他科技公司也在增加 Z 世代招聘,理由是他们具有更强的 AI 熟练度
+* 行业趋势显示 37% 的组织计划用 AI 取代早期职业岗位,但 IBM 正在反其道而行,不采取这种短期削减成本的方法
+
+**[Read Original / 阅读原文](https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/)**
+
+### Zvec: Alibaba's Open-Source In-Process Vector Database
+
+* Zvec is a lightweight, high-performance vector database built on Alibaba's Proxima search engine that embeds directly into applications
+* Supports both Python (3.10-3.12) and Node.js with installation via pip or npm
+* Key features include millisecond searches across billions of vectors, dense and sparse vector support, hybrid search with filters, and zero-config setup
+* Runs on Linux (x86_64, ARM64) and macOS (ARM64) platforms without requiring separate servers
+* Simple API allows creating collections, inserting documents, and querying by vector similarity in just a few lines of code
+* Production-ready with exceptional performance benchmarks and comprehensive documentation available at zvec.org
+* Active community support through Discord, X (Twitter), DingTalk, and WeChat channels
+* Open-source under Apache 2.0 license with contributions welcome via the project's Contributing Guide
+
+### Zvec:阿里巴巴开源的进程内向量数据库
+
+* Zvec 是基于阿里巴巴 Proxima 搜索引擎构建的轻量级高性能向量数据库,可直接嵌入应用程序
+* 支持 Python(3.10-3.12)和 Node.js,通过 pip 或 npm 安装
+* 核心特性包括毫秒级搜索数十亿向量、支持稠密和稀疏向量、带过滤器的混合搜索以及零配置启动
+* 运行于 Linux(x86_64、ARM64)和 macOS(ARM64)平台,无需独立服务器
+* 简洁的 API 仅需几行代码即可创建集合、插入文档并按向量相似度查询
+* 生产级就绪,具有出色的性能基准测试,完整文档见 zvec.org
+* 通过 Discord、X(Twitter)、钉钉和微信提供活跃的社区支持
+* Apache 2.0 许可证开源,欢迎通过项目贡献指南参与贡献
+
+**[Read Original / 阅读原文](https://github.com/alibaba/zvec)**
+
+<!-- [Title-Only] -->
+### Instagram's URL Blackhole
+
+* This article likely explores how Instagram handles external URLs, possibly discussing issues with link sharing, click-through rates, or how the platform may be suppressing or limiting external link visibility
+* It might be interesting to readers because it could reveal Instagram's algorithmic treatment of external content, which affects content creators, marketers, and businesses trying to drive traffic from the platform to their websites
+
+### Instagram 的 URL 黑洞
+
+* 本文可能探讨 Instagram 如何处理外部链接，讨论链接分享、点击率问题，或平台如何抑制或限制外部链接的可见性
+* 值得关注是因为它可能揭示 Instagram 算法对外部内容的处理方式，这直接影响内容创作者、营销人员和试图从该平台为其网站引流的企业
+
+---
+
+**Note:** This introduction is based solely on the article title, as the full content could not be accessed. The actual article may cover different or additional aspects of Instagram's URL handling.
+
+**注意：** 此简介仅基于文章标题，因为无法访问完整内容。实际文章可能涵盖 Instagram URL 处理的不同或更多方面。
+
+**[Read Original / 阅读原文](https://medium.com/@shredlife/instagrams-url-blackhole-c1733e081664)**
+
+### ZeroClaw - Lightweight Rust-based AI Assistant Infrastructure
+
+* A high-performance AI assistant framework written in Rust that delivers a 3.4MB binary with sub-10ms startup time, supporting 22+ AI providers (OpenRouter, Anthropic, OpenAI, Ollama, etc.) and multiple messaging channels (Telegram, Discord, Slack, WhatsApp, iMessage)
+* Trait-based architecture allowing complete swappability of providers, channels, memory backends, and tools without code changes; built-in hybrid search memory system (SQLite + FTS5 + vector embeddings); comprehensive security with pairing codes, sandboxing, allowlists, and workspace scoping; supports autonomous operation with daemon mode and periodic task execution
+* Notable for its extreme performance advantage over Node.js alternatives (8x smaller binary, 100x+ faster startup, 50x lower memory usage), zero external dependencies for core functionality, and production-ready security model that passes community security checklists while maintaining full flexibility through OpenAI-compatible API support
+
+### ZeroClaw - 轻量级 Rust AI 助手基础设施
+
+* 用 Rust 编写的高性能 AI 助手框架,提供 3.4MB 二进制文件和低于 10ms 的启动时间,支持 22+ AI 提供商(OpenRouter、Anthropic、OpenAI、Ollama 等)和多个消息渠道(Telegram、Discord、Slack、WhatsApp、iMessage)
+* 基于 trait 的架构,允许在不修改代码的情况下完全替换提供商、渠道、内存后端和工具;内置混合搜索内存系统(SQLite + FTS5 + 向量嵌入);全面的安全机制包括配对码、沙箱、白名单和工作区限定;支持守护进程模式和定期任务执行的自主运行
+* 相比 Node.js 替代方案具有极致性能优势(二进制文件小 8 倍、启动快 100 倍以上、内存占用低 50 倍),核心功能零外部依赖,通过社区安全检查清单的生产级安全模型,同时通过 OpenAI 兼容 API 支持保持完全灵活性
+
+**[View Repository / 查看仓库](https://github.com/theonlyhennygod/zeroclaw)**
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**Channel:** Payilagam
+
+* What the video covers: This tutorial explains Java Lambda Expressions using humor from popular Tamil comedian Vadivelu's "Ingu Nalla Meengal Virkappadum" comedy scene, making complex programming concepts more accessible and entertaining for Tamil-speaking audiences.
+
+* Key topics discussed: Lambda expressions in Java, functional programming concepts, syntax and implementation of lambda expressions, practical examples demonstrating how lambdas simplify code compared to traditional anonymous classes.
+
+* Why it's worth watching: Perfect for Tamil-speaking developers who want to learn Java's lambda expressions in their native language. The creative use of Vadivelu's comedy as a teaching metaphor makes this technical content engaging and memorable, helping viewers grasp functional programming concepts through cultural references they already understand.
+
+---
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**频道:** Payilagam
+
+* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
+
+* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
+
+* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
 
