@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 15, 2026"
 date: 2026-02-15
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -560,116 +560,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
-
-**频道:** Payilagam
-
-* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
-
-* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
-
-* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
-
-### Appreciation for ArchWiki Maintainers on I Love Free Software Day
-
-* Author celebrates "I Love Free Software Day" by thanking ArchWiki maintainers for their often under-recognized contributions to software freedom and documentation
-* ArchWiki serves as an invaluable resource consulted by users across different Linux distributions, not just Arch Linux users
-* The wiki provides comprehensive guides for everyday tools including email programs, editors, and window managers, often revealing features difficult to find in official documentation
-* ArchWiki consistently helps users troubleshoot GNU/Linux setup issues for personal and family use
-* Edward Snowden praised ArchWiki as one of the few remaining sources of useful information online amid declining search result quality
-* Author met with Arch Project Leader Levente and ArchWiki maintainer Ferdinand at FOSDEM 2025, presenting them with "hacker chocolate"
-* Readers are encouraged to express appreciation and consider donating to Arch Linux to support this crucial community resource
-
-### 致敬 ArchWiki 维护者——"我爱自由软件日"特辑
-
-* 作者在"我爱自由软件日"特别感谢 ArchWiki 维护者，强调文档维护者对软件自由的贡献常被低估
-* ArchWiki 是跨发行版用户的宝贵资源，不仅限于 Arch Linux 用户使用
-* 该 Wiki 为日常工具（电子邮件程序、编辑器、窗口管理器等）提供全面指南，常能发现官方文档难以找到的功能和配置技巧
-* ArchWiki 持续帮助用户解决个人及家人朋友的 GNU/Linux 系统配置问题
-* 爱德华·斯诺登称赞 ArchWiki 是互联网搜索结果质量下降时代少数仍能提供有用信息的来源之一
-* 作者在 FOSDEM 2025 会议上与 Arch 项目负责人 Levente 和 ArchWiki 维护者 Ferdinand 会面，并赠送"黑客巧克力"
-* 鼓励读者表达感谢并考虑向 Arch Linux 捐款以支持这一重要社区资源
-
-**[Read Original / 阅读原文](https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/)**
-
-### Zvec: Alibaba's Open-Source In-Process Vector Database
-
-* Zvec is a lightweight, high-performance vector database built on Alibaba's Proxima search engine that embeds directly into applications
-* Supports both Python (3.10-3.12) and Node.js with installation via pip or npm
-* Key features include millisecond searches across billions of vectors, dense and sparse vector support, hybrid search with filters, and zero-config setup
-* Runs on Linux (x86_64, ARM64) and macOS (ARM64) platforms without requiring separate servers
-* Simple API allows creating collections, inserting documents, and querying by vector similarity in just a few lines of code
-* Production-ready with exceptional performance benchmarks and comprehensive documentation available at zvec.org
-* Active community support through Discord, X (Twitter), DingTalk, and WeChat channels
-* Open-source under Apache 2.0 license with contributions welcome via the project's Contributing Guide
-
-### Zvec:阿里巴巴开源的进程内向量数据库
-
-* Zvec 是基于阿里巴巴 Proxima 搜索引擎构建的轻量级高性能向量数据库,可直接嵌入应用程序
-* 支持 Python(3.10-3.12)和 Node.js,通过 pip 或 npm 安装
-* 核心特性包括毫秒级搜索数十亿向量、支持稠密和稀疏向量、带过滤器的混合搜索以及零配置启动
-* 运行于 Linux(x86_64、ARM64)和 macOS(ARM64)平台,无需独立服务器
-* 简洁的 API 仅需几行代码即可创建集合、插入文档并按向量相似度查询
-* 生产级就绪,具有出色的性能基准测试,完整文档见 zvec.org
-* 通过 Discord、X(Twitter)、钉钉和微信提供活跃的社区支持
-* Apache 2.0 许可证开源,欢迎通过项目贡献指南参与贡献
-
-**[Read Original / 阅读原文](https://github.com/alibaba/zvec)**
-
-### 5,300-Year-Old Bow Drill Rewrites Ancient Egyptian Tool History
-
-* Researchers from Newcastle University and the Academy of Fine Arts Vienna identified the earliest known rotary metal drill from ancient Egypt, dating to the Predynastic period (late 4th millennium BCE)
-* The 63mm copper-alloy artifact was excavated a century ago from Badari cemetery but was initially misidentified as a simple awl
-* Magnification revealed distinctive wear patterns consistent with rotary drilling: fine striations, rounded edges, and curvature at the working end
-* Six coils of fragile leather thong preserved on the tool are remnants of a bowstring used to power the bow drill mechanism
-* This discovery pushes back the timeline of Egyptian rotary drilling technology by more than two millennia before previously known examples
-* Chemical analysis using pXRF revealed an unusual copper alloy containing arsenic, nickel, lead, and silver, suggesting sophisticated metallurgical knowledge
-* The alloy composition may indicate deliberate material choices and trade networks linking Egypt to the broader Eastern Mediterranean region
-* The bow drill enabled faster, more controlled drilling for woodworking, stone carving, and bead production—essential for Egyptian craftsmanship
-* This finding demonstrates how museum collections can yield major discoveries through modern re-examination techniques
-
-### 5,300年前弓钻改写古埃及工具史
-
-* 纽卡斯尔大学和维也纳美术学院研究人员确认了古埃及最早的旋转金属钻头,可追溯至前王朝时期(公元前4千年晚期)
-* 这件63毫米长的铜合金文物一个世纪前出土于巴达里墓地,但最初被误认为是简单的锥子
-* 放大检查显示出与旋转钻孔一致的独特磨损痕迹:细密条纹、圆润边缘和工作端的轻微弯曲
-* 工具上保存的六圈脆弱皮革绳是用于驱动弓钻机制的弓弦残留物
-* 这一发现将埃及旋转钻孔技术的时间线向前推进了两千多年
-* 使用便携式X射线荧光分析发现了不寻常的铜合金成分,含有砷、镍、铅和银,表明先进的冶金知识
-* 合金成分可能表明刻意的材料选择以及连接埃及与更广泛东地中海地区的贸易网络
-* 弓钻实现了更快速、更可控的钻孔,用于木工、石雕和珠饰制作——这些都是埃及工艺的核心技术
-* 这一发现证明博物馆藏品通过现代重新检验技术仍能产生重大发现
-
-**[Read Original / 阅读原文](https://www.ncl.ac.uk/press/articles/latest/2026/02/ancientegyptiandrillbit/)**
-
-### Flashpoint Archive: Preserving Web Gaming History
-
-* **Community-driven preservation project** saving games and animations from obsolete web technologies before they disappear forever
-* **Massive collection**: Over 200,000 games and animations preserved since December 2017, spanning 100+ browser plugins and web technologies
-* **Complete software suite** includes a full-featured launcher, proxy server that simulates live web environments, and secure sandbox for plugin content playback
-* **Open-source initiative** started by BlueMaxima to rescue Flash games, now expanded to cover numerous internet frameworks and standards
-* **Non-profit operation** funded through community donations, focused on making digital interactive experiences accessible for future generations
-
-### Flashpoint Archive:保存网络游戏历史
-
-* **社区驱动的保存项目**,在过时的网络技术消失之前抢救游戏和动画内容
-* **海量收藏**:自2017年12月以来已保存超过20万个游戏和动画,涵盖100多种浏览器插件和网络技术
-* **完整软件套件**包括功能齐全的启动器、模拟实时网络环境的代理服务器,以及用于插件内容安全播放的沙盒环境
-* **开源项目**由BlueMaxima发起以拯救Flash游戏,现已扩展到涵盖众多互联网框架和标准
-* **非营利运营**通过社区捐赠资助,致力于让数字互动体验为后代所用
-
-**[Read Original / 阅读原文](https://flashpointarchive.org)**
-
-<!-- [Title-Only] -->
-### Ex-Tech → Homeless in SF
-
-* Based on the title, this article likely documents a personal account of someone who transitioned from working in the tech industry to experiencing homelessness in San Francisco. The URL slug "ninety-four-degrees" suggests a specific moment or condition that may be central to the narrative.
-* This story is worth reading because it addresses the stark contrast between San Francisco's wealthy tech sector and its homelessness crisis—two realities that coexist in the same city. It offers a human perspective on economic vulnerability, the fragility of tech employment, and the challenges of surviving in one of America's most expensive cities. Personal narratives like this can illuminate systemic issues around housing affordability, mental health, job security, and social safety nets.
-
----
-
 ### 从科技行业到旧金山无家可归
 
 * 根据标题推测，这篇文章可能记录了一位从科技行业工作者沦为旧金山无家可归者的亲身经历。URL中的"ninety-four-degrees"（94度）暗示某个具体的时刻或状况可能是叙事的核心。
@@ -724,4 +614,148 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 学习如何将标准错误页面转变为吸引人的用户体验;对于希望为项目增添专业感的 Web 开发者来说是实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=B97rwQ2KWfU)**
+
+### Appreciation for ArchWiki Maintainers on I Love Free Software Day
+
+* Author celebrates "I Love Free Software Day" by thanking ArchWiki maintainers for their often under-recognized contributions to software freedom and documentation
+* ArchWiki serves as an invaluable resource consulted by users across different Linux distributions, not just Arch Linux users
+* The wiki provides comprehensive guides for everyday tools including email programs, editors, and window managers, often revealing features difficult to find in official documentation
+* ArchWiki consistently helps users troubleshoot GNU/Linux setup issues for personal and family use
+* Edward Snowden praised ArchWiki as one of the few remaining sources of useful information online amid declining search result quality
+* Author met with Arch Project Leader Levente and ArchWiki maintainer Ferdinand at FOSDEM 2025, presenting them with "hacker chocolate"
+* Readers are encouraged to express appreciation and consider donating to Arch Linux to support this crucial community resource
+
+### 致敬 ArchWiki 维护者——"我爱自由软件日"特辑
+
+* 作者在"我爱自由软件日"特别感谢 ArchWiki 维护者，强调文档维护者对软件自由的贡献常被低估
+* ArchWiki 是跨发行版用户的宝贵资源，不仅限于 Arch Linux 用户使用
+* 该 Wiki 为日常工具（电子邮件程序、编辑器、窗口管理器等）提供全面指南，常能发现官方文档难以找到的功能和配置技巧
+* ArchWiki 持续帮助用户解决个人及家人朋友的 GNU/Linux 系统配置问题
+* 爱德华·斯诺登称赞 ArchWiki 是互联网搜索结果质量下降时代少数仍能提供有用信息的来源之一
+* 作者在 FOSDEM 2025 会议上与 Arch 项目负责人 Levente 和 ArchWiki 维护者 Ferdinand 会面，并赠送"黑客巧克力"
+* 鼓励读者表达感谢并考虑向 Arch Linux 捐款以支持这一重要社区资源
+
+**[Read Original / 阅读原文](https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/)**
+
+### Flashpoint Archive: Preserving Web Gaming History
+
+* **Community-driven preservation project** saving games and animations from obsolete web technologies before they disappear forever
+* **Massive collection**: Over 200,000 games and animations preserved since December 2017, spanning 100+ browser plugins and web technologies
+* **Complete software suite** includes a full-featured launcher, proxy server that simulates live web environments, and secure sandbox for plugin content playback
+* **Open-source initiative** started by BlueMaxima to rescue Flash games, now expanded to cover numerous internet frameworks and standards
+* **Non-profit operation** funded through community donations, focused on making digital interactive experiences accessible for future generations
+
+### Flashpoint Archive:保存网络游戏历史
+
+* **社区驱动的保存项目**,在过时的网络技术消失之前抢救游戏和动画内容
+* **海量收藏**:自2017年12月以来已保存超过20万个游戏和动画,涵盖100多种浏览器插件和网络技术
+* **完整软件套件**包括功能齐全的启动器、模拟实时网络环境的代理服务器,以及用于插件内容安全播放的沙盒环境
+* **开源项目**由BlueMaxima发起以拯救Flash游戏,现已扩展到涵盖众多互联网框架和标准
+* **非营利运营**通过社区捐赠资助,致力于让数字互动体验为后代所用
+
+**[Read Original / 阅读原文](https://flashpointarchive.org)**
+
+### Two Different Tricks for Fast LLM Inference
+
+* Anthropic and OpenAI recently announced "fast mode" for their coding models, but use completely different technical approaches
+* Anthropic's fast mode delivers 2.5x speed (170 tokens/sec) using low-batch-size inference while serving the full Opus 4.6 model at 6x the cost
+* OpenAI's fast mode achieves 15x speed (1000+ tokens/sec) using massive Cerebras chips with 44GB SRAM, but requires a smaller distilled model (Spark)
+* Anthropic's approach is like a VIP bus pass - you pay for the whole batch yourself to leave immediately, maintaining full model quality
+* OpenAI's approach uses wafer-scale chips (70 square inches vs 1 square inch for H100) that fit entire models in ultra-fast SRAM memory
+* The speed-quality tradeoff matters: Spark makes more mistakes than full GPT-5.3-Codex, and fixing errors often takes longer than waiting for better responses
+* Fast inference may become a lower-level primitive in AI systems rather than the primary user-facing feature
+
+### 大语言模型快速推理的两种不同技巧
+
+* Anthropic 和 OpenAI 最近都推出了编程模型的"快速模式",但采用了完全不同的技术路线
+* Anthropic 的快速模式通过低批次推理实现 2.5 倍提速(170 tokens/秒),提供完整的 Opus 4.6 模型,但成本增加 6 倍
+* OpenAI 的快速模式使用配备 44GB SRAM 的巨型 Cerebras 芯片实现 15 倍提速(1000+ tokens/秒),但需要使用较小的蒸馏模型(Spark)
+* Anthropic 的方案类似 VIP 巴士通行证 - 你为整个批次付费以立即出发,保持完整模型质量
+* OpenAI 的方案使用晶圆级芯片(70 平方英寸 vs H100 的 1 平方英寸),将整个模型装入超高速 SRAM 内存
+* 速度与质量的权衡很重要:Spark 比完整的 GPT-5.3-Codex 更容易出错,而修复错误往往比等待更好的响应更耗时
+* 快速推理可能会成为 AI 系统的底层基础组件,而非主要的面向用户功能
+
+**[Read Original / 阅读原文](https://www.seangoedecke.com/fast-llm-inference/)**
+
+### NautilusTrader - High-Performance Algorithmic Trading Platform with Rust Core
+
+* A production-grade algorithmic trading platform that enables quantitative traders to backtest and deploy automated trading strategies with an event-driven engine. The platform bridges the gap between research/backtesting and live trading by allowing identical strategy code to run in both environments without modifications.
+
+* Core written in Rust for maximum performance with async networking via tokio, Python bindings through Cython and PyO3. Supports nanosecond-resolution backtesting with multiple venues and instruments simultaneously. Advanced order types (IOC, FOK, GTC, GTD), execution instructions (post-only, reduce-only, icebergs), and contingency orders (OCO, OUO, OTO). Asset-class-agnostic with modular adapters for any REST API or WebSocket feed. Cross-platform support (Linux, macOS, Windows) with Docker deployment. Optional Redis-backed state persistence for reliability.
+
+* Gaining traction (30 stars today) as it solves a critical pain point in quantitative trading: eliminating the need to reimplement Python backtesting strategies in C++/Java for production. The Rust core delivers C-level performance with memory and thread safety, while maintaining a Python-native interface for quant researchers. AI-first design makes it suitable for training reinforcement learning trading agents. Supports high-frequency trading across FX, equities, futures, options, crypto, DeFi, and betting markets with multi-venue capabilities for market-making and statistical arbitrage.
+
+---
+
+### NautilusTrader - 基于 Rust 核心的高性能算法交易平台
+
+* 一个生产级算法交易平台,让量化交易者能够使用事件驱动引擎对自动化交易策略进行回测,并将相同策略直接部署到实盘交易,无需修改代码。该平台解决了保持 Python 研究/回测环境与生产实盘交易环境一致性的难题。
+
+* 核心使用 Rust 编写以获得最佳性能,通过 tokio 实现异步网络,通过 Cython 和 PyO3 提供 Python 绑定。支持纳秒级分辨率回测,可同时运行多个交易所和交易品种。提供高级订单类型(IOC、FOK、GTC、GTD)、执行指令(只挂单、只减仓、冰山订单)和关联订单(OCO、OUO、OTO)。资产类别无关,通过模块化适配器可集成任何 REST API 或 WebSocket 数据源。跨平台支持(Linux、macOS、Windows),可使用 Docker 部署。可选的 Redis 状态持久化确保可靠性。
+
+* 因解决量化交易的关键痛点而受到关注(今日获得 30 星):消除了将 Python 回测策略重新实现为 C++/Java 生产代码的需求。Rust 核心提供 C 级性能和内存/线程安全性,同时为量化研究人员保持 Python 原生接口。AI 优先设计使其适合训练强化学习交易智能体。支持外汇、股票、期货、期权、加密货币、DeFi 和博彩市场的高频交易,具备多交易所能力以支持做市和统计套利策略。
+
+**[View Repository / 查看仓库](https://github.com/nautechsystems/nautilus_trader)**
+
+### gogcli - Comprehensive Google Workspace CLI Tool
+
+* A fast, script-friendly command-line interface that brings Gmail, Calendar, Drive, Contacts, Tasks, Sheets, Chat, Classroom, and more Google services directly to your terminal
+* Key features include JSON-first output for automation, multi-account support with secure credential storage (OS keyring or encrypted file), least-privilege OAuth scopes, email tracking, service account support for Workspace, and comprehensive API coverage across 15+ Google services
+* Notable for its developer-focused design with auto-refreshing tokens, headless/remote auth flows, command allowlisting for sandboxed environments, and extensive scripting capabilities - making it ideal for automation, CI/CD pipelines, and power users who prefer terminal workflows over web interfaces
+
+### gogcli - 全面的 Google Workspace 命令行工具
+
+* 一个快速、脚本友好的命令行界面,将 Gmail、日历、云端硬盘、联系人、任务、表格、聊天、课堂等 Google 服务直接带到终端
+* 主要特点包括面向自动化的 JSON 输出、支持多账户的安全凭证存储(系统钥匙串或加密文件)、最小权限 OAuth 范围、邮件追踪、Workspace 服务账户支持,以及覆盖 15+ 个 Google 服务的全面 API
+* 值得关注的原因在于其开发者导向的设计:自动刷新令牌、无头/远程认证流程、沙盒环境的命令白名单、强大的脚本能力 - 非常适合自动化、CI/CD 流水线以及偏好终端工作流而非 Web 界面的高级用户
+
+**[View Repository / 查看仓库](https://github.com/steipete/gogcli)**
+
+### GitHub Agentic Workflows (gh-aw) - AI-Powered Automation for GitHub Actions
+
+* **What it does**: Enables developers to write AI agent workflows in natural language markdown that execute within GitHub Actions, automating repository tasks through conversational instructions rather than traditional scripting.
+
+* **Key features**: 
+  - Natural language workflow definitions in markdown format
+  - Multi-layered security architecture with sandboxed execution, read-only defaults, and human approval gates
+  - Integration with GitHub Actions infrastructure
+  - Companion tools including Agent Workflow Firewall for network control and MCP Gateway for protocol routing
+  - Safe-outputs system for controlled write operations
+  - Supply chain security with SHA-pinned dependencies
+
+* **Why it's notable**: This represents GitHub's official foray into agentic AI automation, combining the power of AI agents with the reliability of GitHub Actions. With 213 stars today, it's gaining rapid attention as organizations explore AI-driven DevOps. The project prioritizes security-first design with comprehensive guardrails, addressing the critical challenge of safely deploying autonomous AI agents in production environments. It's part of GitHub Next's experimental initiatives, signaling the future direction of developer tooling.
+
+---
+
+### GitHub Agentic Workflows (gh-aw) - GitHub Actions 的 AI 智能工作流
+
+* **功能介绍**: 允许开发者用自然语言 Markdown 编写 AI 代理工作流,在 GitHub Actions 中执行,通过对话式指令而非传统脚本实现仓库任务自动化。
+
+* **主要特点**:
+  - 使用 Markdown 格式的自然语言工作流定义
+  - 多层安全架构,包括沙箱执行、默认只读权限和人工审批关卡
+  - 与 GitHub Actions 基础设施深度集成
+  - 配套工具包括用于网络控制的 Agent Workflow Firewall 和用于协议路由的 MCP Gateway
+  - 通过 safe-outputs 系统实现受控写入操作
+  - 使用 SHA 固定依赖项确保供应链安全
+
+* **为何值得关注**: 这是 GitHub 官方进军智能代理自动化领域的重要项目,将 AI 代理的能力与 GitHub Actions 的可靠性相结合。今日获得 213 星标,随着组织探索 AI 驱动的 DevOps,正快速获得关注。该项目采用安全优先的设计理念,配备全面的防护机制,解决了在生产环境中安全部署自主 AI 代理的关键挑战。作为 GitHub Next 实验性项目的一部分,它预示着开发者工具的未来发展方向。
+
+**[View Repository / 查看仓库](https://github.com/github/gh-aw)**
+
+### 🎬 Software engineers are like wizards
+**Channel:** Lenny's Podcast
+
+* The video explores the analogy between software engineers and wizards, examining how developers create seemingly magical solutions through code
+* Key topics likely include the creative problem-solving nature of engineering, the "magic" of turning abstract ideas into functional software, and how AI tools like OpenAI are transforming the developer experience
+* Worth watching for insights into the mindset and craft of software engineering, especially relevant for those interested in how AI is reshaping the profession and the parallels between coding and creative wizardry
+
+### 🎬 软件工程师就像魔法师
+**频道:** Lenny's Podcast
+
+* 视频探讨了软件工程师与魔法师之间的类比，探究开发者如何通过代码创造看似神奇的解决方案
+* 主要话题可能包括工程中的创造性问题解决、将抽象想法转化为功能软件的"魔力"，以及 OpenAI 等 AI 工具如何改变开发者体验
+* 值得观看以了解软件工程的思维方式和技艺，特别适合对 AI 如何重塑这一职业以及编程与创造性魔法之间的相似之处感兴趣的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lVDJN2GgpVA)**
 
