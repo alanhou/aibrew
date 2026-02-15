@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 15, 2026"
 date: 2026-02-15
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -643,4 +643,85 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 这一发现证明博物馆藏品通过现代重新检验技术仍能产生重大发现
 
 **[Read Original / 阅读原文](https://www.ncl.ac.uk/press/articles/latest/2026/02/ancientegyptiandrillbit/)**
+
+### Flashpoint Archive: Preserving Web Gaming History
+
+* **Community-driven preservation project** saving games and animations from obsolete web technologies before they disappear forever
+* **Massive collection**: Over 200,000 games and animations preserved since December 2017, spanning 100+ browser plugins and web technologies
+* **Complete software suite** includes a full-featured launcher, proxy server that simulates live web environments, and secure sandbox for plugin content playback
+* **Open-source initiative** started by BlueMaxima to rescue Flash games, now expanded to cover numerous internet frameworks and standards
+* **Non-profit operation** funded through community donations, focused on making digital interactive experiences accessible for future generations
+
+### Flashpoint Archive:保存网络游戏历史
+
+* **社区驱动的保存项目**,在过时的网络技术消失之前抢救游戏和动画内容
+* **海量收藏**:自2017年12月以来已保存超过20万个游戏和动画,涵盖100多种浏览器插件和网络技术
+* **完整软件套件**包括功能齐全的启动器、模拟实时网络环境的代理服务器,以及用于插件内容安全播放的沙盒环境
+* **开源项目**由BlueMaxima发起以拯救Flash游戏,现已扩展到涵盖众多互联网框架和标准
+* **非营利运营**通过社区捐赠资助,致力于让数字互动体验为后代所用
+
+**[Read Original / 阅读原文](https://flashpointarchive.org)**
+
+<!-- [Title-Only] -->
+### Ex-Tech → Homeless in SF
+
+* Based on the title, this article likely documents a personal account of someone who transitioned from working in the tech industry to experiencing homelessness in San Francisco. The URL slug "ninety-four-degrees" suggests a specific moment or condition that may be central to the narrative.
+* This story is worth reading because it addresses the stark contrast between San Francisco's wealthy tech sector and its homelessness crisis—two realities that coexist in the same city. It offers a human perspective on economic vulnerability, the fragility of tech employment, and the challenges of surviving in one of America's most expensive cities. Personal narratives like this can illuminate systemic issues around housing affordability, mental health, job security, and social safety nets.
+
+---
+
+### 从科技行业到旧金山无家可归
+
+* 根据标题推测，这篇文章可能记录了一位从科技行业工作者沦为旧金山无家可归者的亲身经历。URL中的"ninety-four-degrees"（94度）暗示某个具体的时刻或状况可能是叙事的核心。
+* 这个故事值得关注，因为它揭示了旧金山富裕的科技产业与无家可归危机之间的鲜明对比——这两种现实同时存在于同一座城市。它从人性角度展现了经济脆弱性、科技就业的不稳定性，以及在美国生活成本最高的城市之一生存的挑战。这类个人叙事能够揭示住房负担能力、心理健康、工作保障和社会安全网等系统性问题。
+
+**[Read Original / 阅读原文](https://zamoshi.substack.com/p/ninety-four-degrees)**
+
+### ROX Language Compiler: A Clarity-First Programming Language
+
+* ROX is a minimal programming language that compiles `.rox` files to C++20, then to native executables via `clang++`
+* Core philosophy: eliminate implicit behavior, hidden conversions, and syntactic tricks for direct, mechanical logic expression
+* Key principles: no implicit type conversions, no bracket indexing (except literals), no exceptions, single loop construct (`repeat`), explicit control flow only
+* Type system includes: `num` (64-bit signed int), `bool`, `float`, `char`, `string`, `none`, `list[T]`, `dictionary[K, V]`, and `rox_result[T]` for error handling
+* Error model uses explicit values (`rox_result[T]`) instead of exceptions, requiring manual checking with `isOk()`, `getValue()`, and `getError()`
+* Built-in functions: `print()`, error handling functions, and comprehensive math library for `num32`, `num`, and `float` types
+* Compilation pipeline: `.rox` → `.cc` → native binary with straightforward, readable C++ generation
+* Usage commands: `./rox run`, `./rox format`, `./rox generate`, `./rox compile`
+* Includes test suite with classic algorithms (Two Sum, Valid Parentheses, Binary Search, Kadane's Algorithm, etc.)
+* Features web playground accessible at `localhost:3000` after running `node web/server.js`
+* Project status: v0 focuses on core type system, explicit error handling, and minimal language surface; future ROX++ may add modules and expanded stdlib
+
+### ROX 语言编译器:清晰优先的编程语言
+
+* ROX 是一种极简编程语言,将 `.rox` 文件编译为 C++20,再通过 `clang++` 编译为原生可执行文件
+* 核心理念:消除隐式行为、隐藏转换和语法技巧,实现直接、机械化的逻辑表达
+* 关键原则:无隐式类型转换、无方括号索引(仅用于字面量)、无异常、单一循环结构(`repeat`)、仅显式控制流
+* 类型系统包括:`num`(64位有符号整数)、`bool`、`float`、`char`、`string`、`none`、`list[T]`、`dictionary[K, V]` 和用于错误处理的 `rox_result[T]`
+* 错误模型使用显式值(`rox_result[T]`)而非异常,需要通过 `isOk()`、`getValue()` 和 `getError()` 手动检查
+* 内置函数:`print()`、错误处理函数,以及针对 `num32`、`num` 和 `float` 类型的完整数学库
+* 编译流程:`.rox` → `.cc` → 原生二进制文件,生成简洁可读的 C++ 代码
+* 使用命令:`./rox run`、`./rox format`、`./rox generate`、`./rox compile`
+* 包含测试套件,涵盖经典算法(两数之和、有效括号、二分查找、Kadane 算法等)
+* 提供 Web 演练场,运行 `node web/server.js` 后可通过 `localhost:3000` 访问
+* 项目状态:v0 版本专注于核心类型系统、显式错误处理和最小化语言表面;未来 ROX++ 可能添加模块系统和扩展标准库
+
+**[Read Original / 阅读原文](https://github.com/taman-islam/rox)**
+
+### 🎬 404 ERROR PAGE !!! #coding #programming #javascript #python
+**Channel:** Aziz Syntax
+
+* What the video covers: A tutorial on creating a custom 404 error page, likely demonstrating HTML/CSS design and potentially JavaScript interactivity
+* Key topics discussed: Web development fundamentals, error page design, user experience for broken links, front-end coding techniques
+* Why it's worth watching: Learn how to transform a standard error page into an engaging user experience; practical skill for any web developer looking to add polish to their projects
+
+---
+
+### 🎬 404 错误页面设计教程
+**频道:** Aziz Syntax
+
+* 视频内容概述: 展示如何创建自定义 404 错误页面的教程,可能包含 HTML/CSS 设计和 JavaScript 交互效果
+* 主要话题: Web 开发基础、错误页面设计、断链用户体验优化、前端编码技巧
+* 为何值得观看: 学习如何将标准错误页面转变为吸引人的用户体验;对于希望为项目增添专业感的 Web 开发者来说是实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=B97rwQ2KWfU)**
 
