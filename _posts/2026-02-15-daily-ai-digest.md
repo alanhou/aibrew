@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 15, 2026"
 date: 2026-02-15
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -528,81 +528,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 4 个你必须尝试的疯狂 AI 编码工具 🤯
-
-**频道:** Ankit Srivastava
-
-* **视频内容概述:** 本视频展示了四款创新的 AI 驱动编码工具,可以显著提升开发者的生产力和工作流程
-* **主要话题:**
-  - 前沿的 AI 编码助手及其实际应用
-  - 这些工具如何集成到现代开发环境中
-  - AI 辅助编码能力的实际演示
-  - 不同 AI 编码工具功能和使用场景的对比
-* **为何值得观看:** 非常适合希望了解 AI 工具趋势、发现新的生产力提升工具,以及理解 AI 如何在 2026 年改变编码领域的开发者
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CIEs7RtIVcY)**
-
-### IBM Triples Gen Z Entry-Level Hiring Despite AI Automation
-
-* IBM is tripling entry-level hiring for Gen Z workers, including software developers and roles commonly thought to be replaceable by AI
-* IBM's CHRO Nickle LaMoreaux argues companies that invest in entry-level talent now will be most successful in 3-5 years
-* Job roles are being redesigned for AI fluency: software engineers focus more on customer interaction, HR staff manage chatbot interventions rather than answering routine questions
-* AI literacy is now the fastest-growing skill in the U.S. according to LinkedIn, making Gen Z candidates with AI comfort more competitive
-* Cutting junior talent creates future mid-level manager shortages and forces costly external hiring that takes longer to adapt to company culture
-* IBM CEO Arvind Krishna committed to hiring more college graduates despite announcing layoffs in other areas to focus on AI and software growth
-* Other tech companies like Dropbox (expanding internships 25%) and Cognizant are also increasing Gen Z hiring, citing their superior AI proficiency
-* Industry trend shows 37% of organizations plan to replace early career roles with AI, but IBM is betting against this short-term cost-cutting approach
-
-### IBM 将 Z 世代入门级职位招聘增加两倍,发现 AI 应用的局限性
-
-* IBM 将 Z 世代入门级员工招聘增加三倍,包括软件开发人员和其他被认为可被 AI 取代的岗位
-* IBM 首席人力资源官 Nickle LaMoreaux 认为,现在投资入门级人才的公司将在 3-5 年内最成功
-* 工作角色正在重新设计以适应 AI 能力:软件工程师更多关注客户互动,人力资源员工管理聊天机器人干预而非回答常规问题
-* 根据 LinkedIn 数据,AI 素养现已成为美国增长最快的技能,使具备 AI 能力的 Z 世代候选人更具竞争力
-* 削减初级人才会造成未来中层管理者短缺,并迫使公司进行成本更高的外部招聘,且新员工需要更长时间适应公司文化
-* IBM CEO Arvind Krishna 承诺招聘更多大学毕业生,尽管公司在其他领域宣布裁员以专注于 AI 和软件增长
-* Dropbox(实习项目扩大 25%)和 Cognizant 等其他科技公司也在增加 Z 世代招聘,理由是他们具有更强的 AI 熟练度
-* 行业趋势显示 37% 的组织计划用 AI 取代早期职业岗位,但 IBM 正在反其道而行,不采取这种短期削减成本的方法
-
-**[Read Original / 阅读原文](https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/)**
-
-### Zvec: Alibaba's Open-Source In-Process Vector Database
-
-* Zvec is a lightweight, high-performance vector database built on Alibaba's Proxima search engine that embeds directly into applications
-* Supports both Python (3.10-3.12) and Node.js with installation via pip or npm
-* Key features include millisecond searches across billions of vectors, dense and sparse vector support, hybrid search with filters, and zero-config setup
-* Runs on Linux (x86_64, ARM64) and macOS (ARM64) platforms without requiring separate servers
-* Simple API allows creating collections, inserting documents, and querying by vector similarity in just a few lines of code
-* Production-ready with exceptional performance benchmarks and comprehensive documentation available at zvec.org
-* Active community support through Discord, X (Twitter), DingTalk, and WeChat channels
-* Open-source under Apache 2.0 license with contributions welcome via the project's Contributing Guide
-
-### Zvec:阿里巴巴开源的进程内向量数据库
-
-* Zvec 是基于阿里巴巴 Proxima 搜索引擎构建的轻量级高性能向量数据库,可直接嵌入应用程序
-* 支持 Python(3.10-3.12)和 Node.js,通过 pip 或 npm 安装
-* 核心特性包括毫秒级搜索数十亿向量、支持稠密和稀疏向量、带过滤器的混合搜索以及零配置启动
-* 运行于 Linux(x86_64、ARM64)和 macOS(ARM64)平台,无需独立服务器
-* 简洁的 API 仅需几行代码即可创建集合、插入文档并按向量相似度查询
-* 生产级就绪,具有出色的性能基准测试,完整文档见 zvec.org
-* 通过 Discord、X(Twitter)、钉钉和微信提供活跃的社区支持
-* Apache 2.0 许可证开源,欢迎通过项目贡献指南参与贡献
-
-**[Read Original / 阅读原文](https://github.com/alibaba/zvec)**
-
-<!-- [Title-Only] -->
-### Instagram's URL Blackhole
-
-* This article likely explores how Instagram handles external URLs, possibly discussing issues with link sharing, click-through rates, or how the platform may be suppressing or limiting external link visibility
-* It might be interesting to readers because it could reveal Instagram's algorithmic treatment of external content, which affects content creators, marketers, and businesses trying to drive traffic from the platform to their websites
-
-### Instagram 的 URL 黑洞
-
-* 本文可能探讨 Instagram 如何处理外部链接，讨论链接分享、点击率问题，或平台如何抑制或限制外部链接的可见性
-* 值得关注是因为它可能揭示 Instagram 算法对外部内容的处理方式，这直接影响内容创作者、营销人员和试图从该平台为其网站引流的企业
-
----
-
 **Note:** This introduction is based solely on the article title, as the full content could not be accessed. The actual article may cover different or additional aspects of Instagram's URL handling.
 
 **注意：** 此简介仅基于文章标题，因为无法访问完整内容。实际文章可能涵盖 Instagram URL 处理的不同或更多方面。
@@ -646,4 +571,76 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
+
+### Appreciation for ArchWiki Maintainers on I Love Free Software Day
+
+* Author celebrates "I Love Free Software Day" by thanking ArchWiki maintainers for their often under-recognized contributions to software freedom and documentation
+* ArchWiki serves as an invaluable resource consulted by users across different Linux distributions, not just Arch Linux users
+* The wiki provides comprehensive guides for everyday tools including email programs, editors, and window managers, often revealing features difficult to find in official documentation
+* ArchWiki consistently helps users troubleshoot GNU/Linux setup issues for personal and family use
+* Edward Snowden praised ArchWiki as one of the few remaining sources of useful information online amid declining search result quality
+* Author met with Arch Project Leader Levente and ArchWiki maintainer Ferdinand at FOSDEM 2025, presenting them with "hacker chocolate"
+* Readers are encouraged to express appreciation and consider donating to Arch Linux to support this crucial community resource
+
+### 致敬 ArchWiki 维护者——"我爱自由软件日"特辑
+
+* 作者在"我爱自由软件日"特别感谢 ArchWiki 维护者，强调文档维护者对软件自由的贡献常被低估
+* ArchWiki 是跨发行版用户的宝贵资源，不仅限于 Arch Linux 用户使用
+* 该 Wiki 为日常工具（电子邮件程序、编辑器、窗口管理器等）提供全面指南，常能发现官方文档难以找到的功能和配置技巧
+* ArchWiki 持续帮助用户解决个人及家人朋友的 GNU/Linux 系统配置问题
+* 爱德华·斯诺登称赞 ArchWiki 是互联网搜索结果质量下降时代少数仍能提供有用信息的来源之一
+* 作者在 FOSDEM 2025 会议上与 Arch 项目负责人 Levente 和 ArchWiki 维护者 Ferdinand 会面，并赠送"黑客巧克力"
+* 鼓励读者表达感谢并考虑向 Arch Linux 捐款以支持这一重要社区资源
+
+**[Read Original / 阅读原文](https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/)**
+
+### Zvec: Alibaba's Open-Source In-Process Vector Database
+
+* Zvec is a lightweight, high-performance vector database built on Alibaba's Proxima search engine that embeds directly into applications
+* Supports both Python (3.10-3.12) and Node.js with installation via pip or npm
+* Key features include millisecond searches across billions of vectors, dense and sparse vector support, hybrid search with filters, and zero-config setup
+* Runs on Linux (x86_64, ARM64) and macOS (ARM64) platforms without requiring separate servers
+* Simple API allows creating collections, inserting documents, and querying by vector similarity in just a few lines of code
+* Production-ready with exceptional performance benchmarks and comprehensive documentation available at zvec.org
+* Active community support through Discord, X (Twitter), DingTalk, and WeChat channels
+* Open-source under Apache 2.0 license with contributions welcome via the project's Contributing Guide
+
+### Zvec:阿里巴巴开源的进程内向量数据库
+
+* Zvec 是基于阿里巴巴 Proxima 搜索引擎构建的轻量级高性能向量数据库,可直接嵌入应用程序
+* 支持 Python(3.10-3.12)和 Node.js,通过 pip 或 npm 安装
+* 核心特性包括毫秒级搜索数十亿向量、支持稠密和稀疏向量、带过滤器的混合搜索以及零配置启动
+* 运行于 Linux(x86_64、ARM64)和 macOS(ARM64)平台,无需独立服务器
+* 简洁的 API 仅需几行代码即可创建集合、插入文档并按向量相似度查询
+* 生产级就绪,具有出色的性能基准测试,完整文档见 zvec.org
+* 通过 Discord、X(Twitter)、钉钉和微信提供活跃的社区支持
+* Apache 2.0 许可证开源,欢迎通过项目贡献指南参与贡献
+
+**[Read Original / 阅读原文](https://github.com/alibaba/zvec)**
+
+### 5,300-Year-Old Bow Drill Rewrites Ancient Egyptian Tool History
+
+* Researchers from Newcastle University and the Academy of Fine Arts Vienna identified the earliest known rotary metal drill from ancient Egypt, dating to the Predynastic period (late 4th millennium BCE)
+* The 63mm copper-alloy artifact was excavated a century ago from Badari cemetery but was initially misidentified as a simple awl
+* Magnification revealed distinctive wear patterns consistent with rotary drilling: fine striations, rounded edges, and curvature at the working end
+* Six coils of fragile leather thong preserved on the tool are remnants of a bowstring used to power the bow drill mechanism
+* This discovery pushes back the timeline of Egyptian rotary drilling technology by more than two millennia before previously known examples
+* Chemical analysis using pXRF revealed an unusual copper alloy containing arsenic, nickel, lead, and silver, suggesting sophisticated metallurgical knowledge
+* The alloy composition may indicate deliberate material choices and trade networks linking Egypt to the broader Eastern Mediterranean region
+* The bow drill enabled faster, more controlled drilling for woodworking, stone carving, and bead production—essential for Egyptian craftsmanship
+* This finding demonstrates how museum collections can yield major discoveries through modern re-examination techniques
+
+### 5,300年前弓钻改写古埃及工具史
+
+* 纽卡斯尔大学和维也纳美术学院研究人员确认了古埃及最早的旋转金属钻头,可追溯至前王朝时期(公元前4千年晚期)
+* 这件63毫米长的铜合金文物一个世纪前出土于巴达里墓地,但最初被误认为是简单的锥子
+* 放大检查显示出与旋转钻孔一致的独特磨损痕迹:细密条纹、圆润边缘和工作端的轻微弯曲
+* 工具上保存的六圈脆弱皮革绳是用于驱动弓钻机制的弓弦残留物
+* 这一发现将埃及旋转钻孔技术的时间线向前推进了两千多年
+* 使用便携式X射线荧光分析发现了不寻常的铜合金成分,含有砷、镍、铅和银,表明先进的冶金知识
+* 合金成分可能表明刻意的材料选择以及连接埃及与更广泛东地中海地区的贸易网络
+* 弓钻实现了更快速、更可控的钻孔,用于木工、石雕和珠饰制作——这些都是埃及工艺的核心技术
+* 这一发现证明博物馆藏品通过现代重新检验技术仍能产生重大发现
+
+**[Read Original / 阅读原文](https://www.ncl.ac.uk/press/articles/latest/2026/02/ancientegyptiandrillbit/)**
 
