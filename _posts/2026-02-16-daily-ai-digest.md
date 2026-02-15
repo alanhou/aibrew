@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 16, 2026"
 date: 2026-02-16
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -309,4 +309,278 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 学习如何将标准错误页面转变为吸引人的用户体验;对于希望为项目增添专业感的 Web 开发者来说是实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=B97rwQ2KWfU)**
+
+### LT6502: A Retro 6502-Based Laptop Project
+
+* Homebrew laptop built around the classic 65C02 processor running at 8MHz with 46K RAM and BASIC in ROM
+* Features a 9" display, integrated keyboard, Compact Flash storage, and 10,000mAh battery with USB-C charging
+* Includes 65C22 VIA for timers/IO, serial console, and one internal expansion slot for future upgrades
+* Successfully assembled in a 3D-printed case with working keyboard, display, storage, and battery operation
+* Enhanced BASIC interpreter with custom graphics commands (CIRCLE, LINE, PLOT, SQUARE, ELIPSE) and file management (SAVE, LOAD, DIR)
+* Memory-mapped architecture with 48KB RAM, 512 bytes for peripherals, and 12KB ROM containing EhBASIC, eWozMon monitor, and bootstrap code
+* Active development includes expansion board work and plans to upgrade to a larger 10.1" display
+* Project demonstrates practical retro computing with modern conveniences like USB-C power and Compact Flash storage
+
+### LT6502:基于 6502 的复古笔记本电脑项目
+
+* 围绕经典 65C02 处理器构建的自制笔记本电脑,运行频率 8MHz,配备 46K RAM 和 ROM 中的 BASIC 解释器
+* 配备 9 英寸显示屏、集成键盘、Compact Flash 存储和 10,000mAh 电池,支持 USB-C 充电
+* 包含用于定时器/IO 的 65C22 VIA 芯片、串行控制台和一个内部扩展槽用于未来升级
+* 已成功组装在 3D 打印外壳中,键盘、显示屏、存储和电池运行均正常工作
+* 增强版 BASIC 解释器,带有自定义图形命令(CIRCLE、LINE、PLOT、SQUARE、ELIPSE)和文件管理功能(SAVE、LOAD、DIR)
+* 内存映射架构包含 48KB RAM、512 字节外设空间和 12KB ROM(含 EhBASIC、eWozMon 监视器和引导代码)
+* 正在开发扩展板,并计划升级到更大的 10.1 英寸显示屏
+* 该项目展示了实用的复古计算机设计,同时融入了 USB-C 供电和 Compact Flash 存储等现代便利功能
+
+**[Read Original / 阅读原文](https://github.com/TechPaula/LT6502)**
+
+### EU Bans Destruction of Unsold Clothing to Combat Waste
+
+* European Commission adopted new measures under the Ecodesign for Sustainable Products Regulation (ESPR) on February 9 to prevent destruction of unsold apparel, accessories, and footwear
+* Currently 4-9% of unsold textiles in Europe are destroyed annually before being worn, generating 5.6 million tons of CO2 emissions (equivalent to Sweden's total 2021 net emissions)
+* New rules require companies to disclose information on discarded unsold products and ban destruction of unsold clothing items
+* Delegated Act clarifies permitted exceptions (safety reasons, product damage) with national authority oversight
+* Implementing Act introduces standardized disclosure format starting February 2027
+* Companies encouraged to pursue alternatives: resale, remanufacturing, donations, or reuse instead of destruction
+* Ban applies to large companies from July 19, 2026, and medium-sized companies from 2030
+* Disclosure requirements already apply to large companies and will extend to medium-sized companies in 2030
+* In France alone, €630 million worth of unsold products are destroyed yearly; Germany discards nearly 20 million returned items annually
+* ESPR aims to make EU market products more durable, reusable, recyclable while boosting circular economy competitiveness
+
+### 欧盟禁止销毁未售出服装以应对浪费问题
+
+* 欧盟委员会于2月9日根据《可持续产品生态设计法规》(ESPR)通过新措施,防止销毁未售出的服装、配饰和鞋类
+* 目前欧洲每年有4-9%的未售出纺织品在穿着前被销毁,产生约560万吨二氧化碳排放(相当于瑞典2021年净排放总量)
+* 新规要求企业披露丢弃未售出产品的信息,并禁止销毁未售出服装产品
+* 授权法案明确了允许的例外情况(安全原因、产品损坏),由国家机构监督
+* 实施法案引入标准化披露格式,从2027年2月开始实施
+* 鼓励企业采用替代方案:转售、再制造、捐赠或重复使用,而非销毁
+* 禁令从2026年7月19日起适用于大型企业,2030年起适用于中型企业
+* 披露要求已适用于大型企业,将于2030年扩展至中型企业
+* 仅法国每年就销毁价值6.3亿欧元的未售出产品;德国每年丢弃近2000万件退货商品
+* ESPR旨在使欧盟市场产品更耐用、可重复使用、可回收,同时提升循环经济竞争力
+
+**[Read Original / 阅读原文](https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en)**
+
+### Gwtar: A New HTML Archival Format Solving the Static-Single-Efficient Trilemma
+
+* HTML archiving faces a trilemma: formats can typically achieve only 2 of 3 properties—static (self-contained), single file, and efficient (lazy-loading)
+* Gwtar (pronounced "guitar", `.gwtar.html` extension) is a new polyglot format achieving all 3 properties simultaneously
+* Structure: HTML+JavaScript header concatenated with a tarball containing the original HTML and assets
+* The JS header intercepts browser requests and converts them into HTTP range requests into the embedded tarball
+* Enables gigabyte-sized archives that only download assets when needed, while remaining a single self-contained file
+* Uses standard web browser/server functionality, making it forwards-compatible without special software requirements
+* Solves the problem where existing formats like SingleFile require downloading entire multi-hundred-megabyte files even when only viewing a small portion
+
+### Gwtar：解决静态-单文件-高效三难困境的新型HTML归档格式
+
+* HTML归档面临三难困境：现有格式通常只能实现3个属性中的2个——静态（自包含）、单文件和高效（按需加载）
+* Gwtar（发音为"guitar"，扩展名`.gwtar.html`）是一种新的多语言格式，同时实现所有3个属性
+* 结构：HTML+JavaScript头部与包含原始HTML和资源的tarball文件连接
+* JS头部拦截浏览器请求并将其转换为对嵌入式tarball的HTTP范围请求
+* 支持GB级归档文件仅在需要时下载资源，同时保持单个自包含文件
+* 使用标准Web浏览器/服务器功能，无需特殊软件即可向前兼容
+* 解决了SingleFile等现有格式需要下载整个数百MB文件的问题，即使只查看一小部分内容
+
+**[Read Original / 阅读原文](https://gwern.net/gwtar)**
+
+### GitHub Agentic Workflows (gh-aw) - AI-Powered Automation for GitHub Actions
+
+* **What it does**: Enables developers to write AI agent workflows in natural language markdown that execute within GitHub Actions, automating repository tasks through conversational instructions rather than traditional scripting.
+
+* **Key features**: 
+  - Natural language workflow definitions in markdown format
+  - Multi-layered security architecture with sandboxed execution, read-only defaults, and human approval gates
+  - Integration with GitHub Actions infrastructure
+  - Companion tools including Agent Workflow Firewall for network control and MCP Gateway for protocol routing
+  - Safe-outputs system for controlled write operations
+  - Supply chain security with SHA-pinned dependencies
+
+* **Why it's notable**: This represents GitHub's official foray into agentic AI automation, combining the power of AI agents with the reliability of GitHub Actions. With 213 stars today, it's gaining rapid attention as organizations explore AI-driven DevOps. The project prioritizes security-first design with comprehensive guardrails, addressing the critical challenge of safely deploying autonomous AI agents in production environments. It's part of GitHub Next's experimental initiatives, signaling the future direction of developer tooling.
+
+---
+
+### GitHub Agentic Workflows (gh-aw) - GitHub Actions 的 AI 智能工作流
+
+* **功能介绍**: 允许开发者用自然语言 Markdown 编写 AI 代理工作流,在 GitHub Actions 中执行,通过对话式指令而非传统脚本实现仓库任务自动化。
+
+* **主要特点**:
+  - 使用 Markdown 格式的自然语言工作流定义
+  - 多层安全架构,包括沙箱执行、默认只读权限和人工审批关卡
+  - 与 GitHub Actions 基础设施深度集成
+  - 配套工具包括用于网络控制的 Agent Workflow Firewall 和用于协议路由的 MCP Gateway
+  - 通过 safe-outputs 系统实现受控写入操作
+  - 使用 SHA 固定依赖项确保供应链安全
+
+* **为何值得关注**: 这是 GitHub 官方进军智能代理自动化领域的重要项目,将 AI 代理的能力与 GitHub Actions 的可靠性相结合。今日获得 213 星标,随着组织探索 AI 驱动的 DevOps,正快速获得关注。该项目采用安全优先的设计理念,配备全面的防护机制,解决了在生产环境中安全部署自主 AI 代理的关键挑战。作为 GitHub Next 实验性项目的一部分,它预示着开发者工具的未来发展方向。
+
+**[View Repository / 查看仓库](https://github.com/github/gh-aw)**
+
+### Chrome DevTools MCP - Browser Control for AI Coding Agents
+
+* An MCP (Model Context Protocol) server that gives AI coding assistants like Claude, Gemini, Cursor, and Copilot full control over Chrome browser for automation, debugging, and performance analysis
+* Leverages Chrome DevTools for performance tracing and insights, Puppeteer for reliable browser automation with automatic waiting, network request analysis, screenshots, and console message inspection with source-mapped stack traces
+* Trending with 353 stars today as it bridges the gap between AI coding agents and browser-based development workflows, supporting 10+ popular AI coding tools with simple npx installation and comprehensive documentation
+
+### Chrome DevTools MCP - 为 AI 编程助手提供浏览器控制能力
+
+* 一个 MCP(模型上下文协议)服务器,让 Claude、Gemini、Cursor 和 Copilot 等 AI 编程助手能够完全控制 Chrome 浏览器,实现自动化、调试和性能分析
+* 利用 Chrome DevTools 进行性能追踪和洞察,使用 Puppeteer 实现可靠的浏览器自动化(自动等待操作结果),支持网络请求分析、截图和带源码映射堆栈跟踪的控制台消息检查
+* 今日获得 353 星标,因其打通了 AI 编程助手与基于浏览器的开发工作流之间的桥梁而备受关注,支持 10 多种主流 AI 编程工具,通过 npx 简单安装并提供完善文档
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### Discord ID Bypass Tool - Real-time 3D Avatar Controller for Discord Verification
+
+* **What it does**: A browser-based tool that uses rigged 3D avatars to bypass Discord's age verification selfie checks by controlling avatar head movements and mouth animations in real-time via gamepad or keyboard
+* **Key features**: Supports VRM/FBX/GLB model formats, automatic bone detection, morph target testing for facial expressions, gamepad and keyboard controls, zero installation (single HTML file), works on low-spec computers
+* **Why it's notable**: Gained 1122 stars as a controversial workaround for Discord's Persona/k-ID verification system; includes pre-rigged models and actively maintained with updates addressing platform changes like potential blink detection tests
+
+### Discord ID Bypass Tool - Discord 验证绕过工具(实时 3D 虚拟形象控制器)
+
+* **功能介绍**: 一个基于浏览器的工具,通过游戏手柄或键盘实时控制 3D 虚拟形象的头部动作和嘴部动画,用于绕过 Discord 的年龄验证自拍检查
+* **主要特点**: 支持 VRM/FBX/GLB 模型格式,自动骨骼检测,面部表情变形目标测试,游戏手柄和键盘控制,零安装(单个 HTML 文件),可在低配置电脑上运行
+* **为何值得关注**: 作为 Discord 的 Persona/k-ID 验证系统的争议性绕过方案获得 1122 星标;包含预装配模型,并持续更新以应对平台变化(如潜在的眨眼检测测试)
+
+**[View Repository / 查看仓库](https://github.com/promptpirate-x/discord-id-bypass-tool)**
+
+### Greenlight - Pre-submission compliance scanner for the Apple App Store
+
+* What it does: Scans iOS apps (source code, privacy manifests, IPA binaries, and App Store Connect metadata) against Apple's Review Guidelines to catch rejection risks before submission. Runs entirely offline with zero uploads.
+
+* Key features: One-command preflight scan covering 30+ code patterns (private APIs, secrets, payment violations), privacy manifest validation, binary inspection, and App Store Connect metadata checks. Supports Swift, Objective-C, React Native, and Expo. Integrates with CI/CD pipelines via JSON/JUnit output. Includes Claude Code and Codex skills for AI-assisted compliance fixing.
+
+* Why it's notable: Solves a critical pain point for iOS developers by automating App Store rejection prevention. Fast (sub-second scans), comprehensive (covers metadata, code, privacy, and binaries), and developer-friendly with multiple output formats and AI assistant integrations. Built by Revyl, a mobile reliability platform.
+
+### Greenlight - Apple App Store 预提交合规扫描工具
+
+* 功能介绍:扫描 iOS 应用(源代码、隐私清单、IPA 二进制文件和 App Store Connect 元数据),对照 Apple 审核指南检测潜在拒审风险。完全离线运行,零上传。
+
+* 主要特点:一键预检扫描,覆盖 30+ 代码模式(私有 API、密钥泄露、支付违规)、隐私清单验证、二进制检查和 App Store Connect 元数据检查。支持 Swift、Objective-C、React Native 和 Expo。通过 JSON/JUnit 输出集成 CI/CD 流水线。包含 Claude Code 和 Codex 技能,实现 AI 辅助合规修复。
+
+* 为何值得关注:解决 iOS 开发者的核心痛点,自动化预防 App Store 拒审。速度快(亚秒级扫描)、覆盖全面(元数据、代码、隐私、二进制)、开发者友好(多种输出格式和 AI 助手集成)。由移动可靠性平台 Revyl 开发。
+
+**[View Repository / 查看仓库](https://github.com/RevylAI/greenlight)**
+
+### 🎬 Can We Prevent Authoritarian States From Weaponizing AI? - Dario Amodei
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Dario Amodei (CEO of Anthropic) exploring the geopolitical risks of AI development, focusing on how authoritarian regimes might exploit advanced AI systems for surveillance, control, and military applications.
+
+* Key topics discussed: AI safety governance in the context of nation-state competition; export controls and compute restrictions as policy tools; the tension between open-source AI development and national security; strategies for democratic nations to maintain technological leadership while preventing AI proliferation to authoritarian states; the role of AI companies in shaping global AI policy.
+
+* Why it's worth watching: Offers rare insights from a leading AI company CEO on one of the most critical challenges facing AI development—balancing innovation with preventing dangerous actors from accessing powerful AI capabilities. Essential viewing for anyone interested in AI policy, international security, or the future of technology governance.
+
+---
+
+### 🎬 我们能否阻止威权国家将AI武器化？- Dario Amodei 访谈
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Anthropic 首席执行官 Dario Amodei 深入探讨 AI 发展的地缘政治风险,重点关注威权政权如何利用先进 AI 系统进行监控、控制和军事应用。
+
+* 主要话题: 国家竞争背景下的 AI 安全治理;出口管制和算力限制作为政策工具;开源 AI 发展与国家安全之间的张力;民主国家在保持技术领先地位的同时防止 AI 扩散到威权国家的策略;AI 公司在塑造全球 AI 政策中的角色。
+
+* 为何值得观看: 提供了来自顶尖 AI 公司 CEO 关于 AI 发展面临的最关键挑战之一的罕见见解——如何在创新与防止危险行为者获取强大 AI 能力之间取得平衡。对于关注 AI 政策、国际安全或技术治理未来的任何人来说都是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xQjPlv2EI38)**
+
+### 🎬 Does AI actually make you a faster programmer? (collab with @SonarSource)
+
+**Channel:** Alberta Tech
+
+* **What the video covers:** An in-depth exploration of whether AI coding assistants genuinely improve developer productivity and speed, featuring a collaboration with SonarSource to examine real-world impacts on coding workflows
+* **Key topics discussed:** Practical testing of AI-powered development tools, measuring actual productivity gains versus perceived benefits, code quality considerations when using AI assistance, and the balance between speed and maintainability in AI-assisted coding
+* **Why it's worth watching:** Provides evidence-based insights rather than hype about AI coding tools, helping developers make informed decisions about integrating AI into their workflow. The collaboration with SonarSource (a code quality platform) adds credibility by examining not just speed but also the quality of AI-generated code
+
+---
+
+### 🎬 AI 真的能让你编程更快吗?(与 @SonarSource 合作)
+
+**频道:** Alberta Tech
+
+* **视频内容概述:** 深入探讨 AI 编程助手是否真正提高开发者的生产力和编码速度,与 SonarSource 合作研究 AI 工具对实际编码工作流程的影响
+* **主要话题:** 实际测试 AI 驱动的开发工具、衡量真实生产力提升与感知收益的对比、使用 AI 辅助时的代码质量考量,以及 AI 辅助编程中速度与可维护性之间的平衡
+* **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### 🎬 Coding with Opus 4.6 and Codex 5.3 is actually insane
+
+**Channel:** ForrestKnight
+
+* What the video covers: A hands-on exploration and comparison of two cutting-edge AI coding assistants - Claude Opus 4.6 and Codex 5.3 - integrated within the Zed code editor
+* Key topics discussed: Real-world coding performance, AI model capabilities for software development, practical demonstrations of both models handling coding tasks, feature comparisons, and workflow integration
+* Why it's worth watching: Provides direct, practical insights into the latest AI coding tools that are transforming developer workflows, helping viewers understand which model might best suit their coding needs and whether the hype around these tools is justified
+
+---
+
+### 🎬 使用 Opus 4.6 和 Codex 5.3 编程真的太疯狂了
+
+**频道:** ForrestKnight
+
+* 视频内容概述: 深入体验和对比两款前沿 AI 编程助手 - Claude Opus 4.6 和 Codex 5.3 在 Zed 代码编辑器中的实际表现
+* 主要话题: 真实编程场景下的性能表现、AI 模型在软件开发中的能力展示、两款模型处理编程任务的实际演示、功能对比以及工作流集成
+* 为何值得观看: 提供关于最新 AI 编程工具的直接、实用见解,这些工具正在改变开发者的工作方式,帮助观众了解哪款模型最适合自己的编程需求,以及这些工具是否名副其实
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Q2QmQTNA7vs)**
+
+### 🎬 Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time
+
+**Channel:** Cole Medin
+
+* **What the video covers:** This video explores Claude's newly released "Agent Teams" feature, which revolutionizes AI-assisted coding by enabling multiple AI agents to work collaboratively in parallel rather than sequentially.
+
+* **Key topics discussed:**
+  - How Agent Teams differs from traditional single-agent AI coding workflows
+  - Real-time demonstration of multiple AI agents collaborating on coding tasks
+  - The performance and efficiency gains from parallel agent execution
+  - Practical use cases and scenarios where Agent Teams excels
+  - Comparison with existing AI coding tools and approaches
+
+* **Why it's worth watching:** If you're interested in AI-powered development tools, this video showcases a significant leap forward in how AI can assist with coding. The ability to have multiple agents working together simultaneously could dramatically speed up development workflows and handle more complex projects. Cole Medin provides hands-on demonstrations that show the practical implications of this technology, making it essential viewing for developers exploring AI coding assistants.
+
+---
+
+### 🎬 Claude Code 的 Agent Teams 太疯狂了 - 多个 AI 代理实时协同编程
+
+**频道:** Cole Medin
+
+* **视频内容概述:** 本视频深入探讨了 Claude 最新发布的"Agent Teams"功能,这一功能通过让多个 AI 代理并行协作而非顺序工作,彻底改变了 AI 辅助编程的方式。
+
+* **主要话题:**
+  - Agent Teams 与传统单一代理 AI 编程工作流程的区别
+  - 多个 AI 代理协同完成编程任务的实时演示
+  - 并行代理执行带来的性能和效率提升
+  - Agent Teams 表现出色的实际用例和应用场景
+  - 与现有 AI 编程工具和方法的对比分析
+
+* **为何值得观看:** 如果你对 AI 驱动的开发工具感兴趣,这个视频展示了 AI 辅助编程领域的重大突破。多个代理同时协作的能力可能会大幅加快开发工作流程,并能处理更复杂的项目。Cole Medin 提供了实际操作演示,展现了这项技术的实用价值,对于探索 AI 编程助手的开发者来说是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-1K_ZWDKpU0)**
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**Channel:** Payilagam
+
+* What the video covers: This tutorial explains Java Lambda Expressions using humor from popular Tamil comedian Vadivelu's "Ingu Nalla Meengal Virkappadum" comedy scene, making complex programming concepts more accessible and entertaining for Tamil-speaking audiences.
+
+* Key topics discussed: Lambda expressions in Java, functional programming concepts, syntax and implementation of lambda expressions, practical examples demonstrating how lambdas simplify code compared to traditional anonymous classes.
+
+* Why it's worth watching: Perfect for Tamil-speaking developers who want to learn Java's lambda expressions in their native language. The creative use of Vadivelu's comedy as a teaching metaphor makes this technical content engaging and memorable, helping viewers grasp functional programming concepts through cultural references they already understand.
+
+---
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**频道:** Payilagam
+
+* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
+
+* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
+
+* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
 
