@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 17, 2026"
 date: 2026-02-17
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -259,4 +259,304 @@ I need to see the complete content to provide an accurate summary. The content a
 * 为何值得观看: NeetCode是备受信赖的编程面试准备资源,提供实用见解;本视频提供关于如何应对现代科技面试环境的最新指导,帮助你调整准备策略以适应当前市场状况
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eTY2Lwnd2fI)**
+
+### Teen Innovator Uses Origami to Design Emergency Shelters
+
+* 14-year-old Miles Wu developed a Miura-ori origami pattern variant that can hold 10,000 times its own weight, equivalent to a taxi supporting 4,000 elephants
+* Wu spent 250+ hours testing 54 different pattern variants across 108 trials using three paper types, converting his NYC living room into a lab
+* The Miura-ori fold, invented by Japanese astrophysicist Koryo Miura, uses tessellating parallelograms that can fold/unfold in one motion and has been used in spacecraft solar panels since 1995
+* Wu's innovation addresses the challenge that existing emergency shelters are typically sturdy, easy to deploy, or cost-efficient—but rarely all three
+* His research won the top $25,000 prize at the 2025 Thermo Fisher Scientific Junior Innovators Challenge, the nation's leading STEM competition for middle schoolers
+* Origami has been applied in STEM fields since the 1960s, including biomedical devices (stents, catheters) and self-assembling robots
+* Wu used computer programs to design variants, a scoring machine for precise folding, and tested patterns by placing them between guardrails and adding weights until they broke
+* The project was inspired by Hurricane Helene and California wildfires, aiming to create deployable shelters that can withstand natural disasters
+
+### 14岁少年用折纸设计应急避难所
+
+* 14岁的Miles Wu开发了一种三浦折叠(Miura-ori)变体,可承受自身重量的10,000倍,相当于一辆出租车支撑4,000头大象的重量
+* Wu花费250多小时测试了54种不同的折纸图案变体,进行了108次试验,使用三种纸张类型,将纽约市家中的客厅改造成实验室
+* 三浦折叠由日本天体物理学家三浦公亮发明,使用镶嵌平行四边形,可一次性折叠/展开,自1995年起用于航天器太阳能电池板
+* Wu的创新解决了现有应急避难所通常只具备坚固、易部署或成本效益三者之一的问题,很少同时满足三个条件
+* 他的研究赢得了2025年赛默飞世尔科技青少年创新者挑战赛25,000美元的最高奖项,这是美国中学生最重要的STEM竞赛
+* 自20世纪60年代以来,折纸已应用于STEM领域,包括生物医学设备(支架、导管)和自组装机器人
+* Wu使用计算机程序设计变体,用刻痕机精确折叠,通过将图案放置在护栏之间并添加重物直至破裂来测试强度
+* 该项目受飓风海伦和加州野火启发,旨在创建可在自然灾害中部署且能抵御恶劣环境的避难所
+
+**[Read Original / 阅读原文](https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/)**
+
+### WebMCP: JavaScript API for AI Agent Integration
+
+* New browser API enabling web apps to expose JavaScript functions as "tools" for AI agents
+* Extends Navigator interface with ModelContext for registering and managing agent-callable tools
+* Functions include natural language descriptions and structured schemas for agent invocation
+* Works as client-side Model Context Protocol (MCP) server implementation
+* Enables collaborative workflows between users and agents within web interfaces
+* Key methods: provideContext(), clearContext(), registerTool(), unregisterTool()
+* Supports browser's built-in agents, AI platforms (ChatGPT, Claude, Gemini), and assistive technologies
+* Requires secure context (HTTPS) for operation
+* Maintains shared context and user control while leveraging existing application logic
+
+### WebMCP:为 AI 代理集成提供的 JavaScript API
+
+* 新的浏览器 API,使 Web 应用能够将 JavaScript 函数作为"工具"暴露给 AI 代理
+* 通过 ModelContext 扩展 Navigator 接口,用于注册和管理可被代理调用的工具
+* 函数包含自然语言描述和结构化模式,供代理调用
+* 作为客户端模型上下文协议(MCP)服务器实现
+* 在 Web 界面内实现用户与代理之间的协作工作流
+* 核心方法:provideContext()、clearContext()、registerTool()、unregisterTool()
+* 支持浏览器内置代理、AI 平台(ChatGPT、Claude、Gemini)和辅助技术
+* 需要安全上下文(HTTPS)才能运行
+* 在利用现有应用逻辑的同时保持共享上下文和用户控制
+
+**[Read Original / 阅读原文](https://webmachinelearning.github.io/webmcp/)**
+
+### Ghidra: NSA's Open-Source Reverse Engineering Framework
+
+* **What it is**: Software reverse engineering (SRE) framework developed by the National Security Agency for analyzing compiled code across Windows, macOS, and Linux platforms
+* **Core capabilities**: Disassembly, assembly, decompilation, graphing, scripting, and hundreds of analysis features supporting various processor instruction sets and executable formats
+* **Extensibility**: Users can develop custom extensions and scripts using Java or Python, with support for both interactive and automated analysis modes
+* **Mission focus**: Built to solve scaling and teaming challenges in complex SRE efforts, particularly for malware analysis and vulnerability research
+* **Security notice**: Known vulnerabilities exist in certain versions—users should review security advisories before installation
+* **Installation requirements**: JDK 21 64-bit, with simple extraction and launch process via `ghidraRun` command
+* **Build from source**: Requires JDK 21, Gradle 8.5+, Python 3.9-3.13, and platform-specific compilers (GCC/Clang for Linux/macOS, Visual Studio 2017+ for Windows)
+* **Development options**: GhidraDev Eclipse plugin for custom scripts/extensions, or Visual Studio Code integration; advanced Ghidra development optimized for Eclipse IDE
+* **Open source contribution**: Community contributions welcome through established contributor guidelines
+
+### Ghidra:NSA 开源逆向工程框架
+
+* **项目定位**: 美国国家安全局研发的软件逆向工程(SRE)框架,用于分析 Windows、macOS 和 Linux 平台上的编译代码
+* **核心功能**: 反汇编、汇编、反编译、图形化分析、脚本编写等数百项功能,支持多种处理器指令集和可执行文件格式
+* **可扩展性**: 用户可使用 Java 或 Python 开发自定义扩展和脚本,支持交互式和自动化分析模式
+* **使命导向**: 为解决复杂 SRE 工作中的规模化和团队协作问题而构建,特别用于恶意代码分析和漏洞研究
+* **安全提示**: 某些版本存在已知安全漏洞,安装前需查阅安全公告
+* **安装要求**: JDK 21 64位,通过简单的解压和 `ghidraRun` 命令即可启动
+* **源码构建**: 需要 JDK 21、Gradle 8.5+、Python 3.9-3.13,以及平台特定编译器(Linux/macOS 用 GCC/Clang,Windows 用 Visual Studio 2017+)
+* **开发选项**: 可使用 GhidraDev Eclipse 插件或 Visual Studio Code 集成开发自定义脚本/扩展;Ghidra 核心开发针对 Eclipse IDE 优化
+* **开源贡献**: 欢迎社区通过贡献者指南参与项目改进
+
+**[Read Original / 阅读原文](https://github.com/NationalSecurityAgency/ghidra)**
+
+### gogcli - Comprehensive Google Workspace CLI Tool
+
+* **What it does**: A fast, script-friendly command-line interface that provides terminal access to Gmail, Google Calendar, Drive, Contacts, Chat, Classroom, Sheets, Docs, Slides, Forms, Tasks, Keep, and more Google services with JSON-first output for automation.
+
+* **Key features**: 
+  - Covers 15+ Google services with full CRUD operations (Gmail search/send, Calendar events, Drive file management, Sheets editing, etc.)
+  - Multiple account management with secure credential storage (OS keyring or encrypted file)
+  - Least-privilege authentication with OAuth2 and Workspace service account support
+  - Email tracking capability with Cloudflare Worker backend
+  - Script-optimized with JSON output mode and auto-refreshing tokens
+  - Command allowlist for sandboxed/agent execution environments
+
+* **Why it's notable**: With 636 stars today, gogcli stands out as a production-ready alternative to web interfaces for Google Workspace power users and automation engineers. Unlike existing tools, it combines comprehensive API coverage across multiple Google services with security-first design (keyring storage, least-privilege scopes) and developer-friendly features (JSON output, multiple accounts, headless auth flows). Perfect for DevOps workflows, CI/CD pipelines, and terminal-centric productivity setups.
+
+---
+
+### gogcli - 全面的 Google Workspace 命令行工具
+
+* **功能介绍**: 快速、脚本友好的命令行界面,在终端中访问 Gmail、Google 日历、云端硬盘、通讯录、Chat、Classroom、表格、文档、幻灯片、表单、任务、Keep 等 Google 服务,提供 JSON 优先输出以支持自动化。
+
+* **主要特点**:
+  - 覆盖 15+ 项 Google 服务,支持完整的增删改查操作(Gmail 搜索/发送、日历事件、Drive 文件管理、表格编辑等)
+  - 多账户管理,凭证安全存储(系统钥匙串或加密文件)
+  - 最小权限认证,支持 OAuth2 和 Workspace 服务账户
+  - 邮件追踪功能,配合 Cloudflare Worker 后端
+  - 脚本优化设计,提供 JSON 输出模式和自动刷新令牌
+  - 命令白名单机制,适用于沙箱/代理执行环境
+
+* **为何值得关注**: 今日获得 636 星标,gogcli 是 Google Workspace 重度用户和自动化工程师的生产级 Web 界面替代方案。与现有工具不同,它将多个 Google 服务的全面 API 覆盖与安全优先设计(钥匙串存储、最小权限范围)和开发者友好特性(JSON 输出、多账户、无头认证流程)相结合。非常适合 DevOps 工作流、CI/CD 管道和以终端为中心的生产力配置。
+
+**[View Repository / 查看仓库](https://github.com/steipete/gogcli)**
+
+### OpenClaw - Self-Hosted Personal AI Assistant Across All Your Messaging Platforms
+
+* **What it does**: OpenClaw is a self-hosted AI assistant that runs locally on your devices and integrates with all your existing messaging platforms (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Teams, and more). It provides voice interaction, a live visual canvas, and multi-agent routing through a unified gateway control plane.
+
+* **Key features**: 
+  - Multi-channel support for 10+ messaging platforms with secure DM pairing
+  - Voice Wake and Talk Mode for hands-free interaction on macOS/iOS/Android
+  - Live Canvas for agent-driven visual workspace
+  - Local-first architecture with session management and tool streaming
+  - CLI wizard for easy onboarding and daemon installation
+  - Works with Claude (Anthropic) and OpenAI models
+  - Cross-platform (macOS, Linux, Windows via WSL2)
+
+* **Why it's notable**: With 3,873 stars today, OpenClaw stands out as a privacy-focused alternative to cloud-based AI assistants. It's the "lobster way" 🦞 of having a personal AI - fully local, always-on, and integrated into your existing communication workflows. The project offers production-ready security defaults, comprehensive documentation, and a polished onboarding experience that makes self-hosting accessible to developers.
+
+---
+
+### OpenClaw - 跨平台自托管个人 AI 助手
+
+* **功能介绍**: OpenClaw 是一个在本地设备上运行的自托管 AI 助手,可集成到所有现有的消息平台(WhatsApp、Telegram、Slack、Discord、Signal、iMessage、Teams 等)。提供语音交互、实时可视化画布和通过统一网关控制平面的多代理路由功能。
+
+* **主要特点**:
+  - 支持 10 多个消息平台的多渠道集成,具备安全的 DM 配对机制
+  - Voice Wake 和 Talk Mode 实现 macOS/iOS/Android 上的免提交互
+  - Live Canvas 提供代理驱动的可视化工作空间
+  - 本地优先架构,包含会话管理和工具流式传输
+  - CLI 向导简化入门和守护进程安装
+  - 支持 Claude(Anthropic)和 OpenAI 模型
+  - 跨平台支持(macOS、Linux、Windows via WSL2)
+
+* **为何值得关注**: 今日获得 3,873 星标,OpenClaw 作为注重隐私的云端 AI 助手替代方案脱颖而出。这是"龙虾方式"🦞 的个人 AI - 完全本地化、始终在线,并集成到现有的通信工作流中。该项目提供生产级安全默认设置、全面的文档和精致的入门体验,让开发者能够轻松实现自托管。
+
+**[View Repository / 查看仓库](https://github.com/openclaw/openclaw)**
+
+### k-id-age-verifier - Automated Age Verification Bypass Tool
+
+* **What it does**: Automatically verifies accounts as adults on platforms using k-id age verification (Discord, Twitch, Kick, Quora, etc.) without manual verification
+* **Key features**: 
+  - TypeScript-based automation tool
+  - Works across multiple major platforms that use k-id verification
+  - Bypasses age verification requirements programmatically
+* **Why it's notable**: Gained significant attention (1.5k+ stars) for exposing vulnerabilities in k-id's age verification system; repository is currently outdated as k-id employees are monitoring it, with updates planned after a responsible disclosure period
+
+---
+
+### k-id-age-verifier - 自动年龄验证绕过工具
+
+* **功能介绍**: 在使用 k-id 年龄验证的平台（Discord、Twitch、Kick、Quora 等）上自动将账户验证为成年人，无需手动验证
+* **主要特点**:
+  - 基于 TypeScript 的自动化工具
+  - 支持多个使用 k-id 验证的主流平台
+  - 通过程序化方式绕过年龄验证要求
+* **为何值得关注**: 因揭露 k-id 年龄验证系统的漏洞而获得广泛关注（1500+ 星标）；由于 k-id 员工正在监控该仓库，代码暂时过期，作者计划在合理的披露期后发布修复细节
+
+**[View Repository / 查看仓库](https://github.com/xyzeva/k-id-age-verifier)**
+
+### Greenlight - Pre-submission compliance scanner for the Apple App Store
+
+* **What it does**: Scans iOS apps (source code, privacy manifests, IPA binaries, and App Store Connect metadata) against Apple's Review Guidelines to catch rejection risks before submission. Runs entirely offline with zero uploads required.
+
+* **Key features**: 
+  * Single `preflight` command runs all scanners in parallel (metadata, codescan, privacy, IPA inspection)
+  * Detects 30+ critical code patterns: private APIs, hardcoded secrets, payment violations, missing ATT, social login issues
+  * Privacy manifest validator checks Required Reason APIs and tracking SDK compliance
+  * Binary inspector analyzes IPA files for completeness and size limits
+  * Built-in Apple Review Guidelines database with search
+  * CI/CD integration with JSON/JUnit output formats
+  * Claude Code and Codex skills for AI-assisted compliance fixing
+
+* **Why it's notable**: Provides comprehensive App Store compliance checking in under a second without requiring an Apple Developer account. The tool addresses a major pain point for iOS developers by catching rejection issues early in the development cycle. With 1000+ stars, it's gaining traction as an essential pre-submission tool, especially valuable for teams using CI/CD pipelines. The AI assistant integration (Claude/Codex) enables automated compliance fixing workflows.
+
+---
+
+### Greenlight - Apple App Store 预提交合规扫描工具
+
+* **功能介绍**: 扫描 iOS 应用(源代码、隐私清单、IPA 二进制文件和 App Store Connect 元数据),对照 Apple 审核指南检测潜在的拒审风险。完全离线运行,无需上传任何文件。
+
+* **主要特点**:
+  * 单个 `preflight` 命令并行运行所有扫描器(元数据、代码扫描、隐私、IPA 检查)
+  * 检测 30+ 种关键代码模式:私有 API、硬编码密钥、支付违规、缺失 ATT、社交登录问题
+  * 隐私清单验证器检查必需原因 API 和追踪 SDK 合规性
+  * 二进制检查器分析 IPA 文件的完整性和大小限制
+  * 内置 Apple 审核指南数据库,支持搜索
+  * CI/CD 集成,支持 JSON/JUnit 输出格式
+  * 提供 Claude Code 和 Codex 技能包,实现 AI 辅助合规修复
+
+* **为何值得关注**: 在一秒内完成全面的 App Store 合规检查,无需 Apple 开发者账号。该工具解决了 iOS 开发者的主要痛点,在开发周期早期发现拒审问题。拥有 1000+ star,正成为预提交必备工具,对使用 CI/CD 流程的团队尤其有价值。AI 助手集成(Claude/Codex)支持自动化合规修复工作流。
+
+**[View Repository / 查看仓库](https://github.com/RevylAI/greenlight)**
+
+### 🎬 Can The CCP Exist After AGI - Dario Amodei
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Dario Amodei (CEO of Anthropic) exploring the geopolitical implications of Artificial General Intelligence (AGI), specifically examining how transformative AI systems might impact authoritarian governance structures like the Chinese Communist Party (CCP)
+
+* Key topics discussed: The relationship between AGI development and political systems; whether authoritarian regimes can maintain control in a post-AGI world; the tension between information control and technological advancement; potential scenarios for how AGI might reshape global power dynamics and governance models; the challenges of maintaining centralized control when AI enables unprecedented information access and individual empowerment
+
+* Why it's worth watching: This conversation tackles one of the most consequential questions at the intersection of AI development and geopolitics - how transformative AI technologies will interact with different political systems. Amodei brings unique insights as a leading AI researcher and CEO navigating these complex issues, offering perspectives on scenarios that could fundamentally reshape the 21st century global order
+
+---
+
+### 🎬 通用人工智能出现后,中共还能存在吗? - Dario Amodei
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Dario Amodei(Anthropic 首席执行官)深入探讨通用人工智能(AGI)的地缘政治影响,特别关注变革性人工智能系统如何影响中国共产党等威权治理结构
+
+* 主要话题: AGI 发展与政治制度的关系;威权政权能否在 AGI 时代后维持控制;信息控制与技术进步之间的张力;AGI 可能重塑全球权力动态和治理模式的潜在场景;当人工智能实现前所未有的信息获取和个人赋权时,维持集中控制所面临的挑战
+
+* 为何值得观看: 这场对话探讨了人工智能发展与地缘政治交汇处最重要的问题之一——变革性人工智能技术将如何与不同政治制度互动。作为领先的人工智能研究者和首席执行官,Amodei 在应对这些复杂问题时带来了独特见解,提供了可能从根本上重塑 21 世纪全球秩序的情景展望
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aLMJPs9DFXU)**
+
+### 🎬 They're Leaving Major Brands Without Money! 🤯
+
+**Channel:** Алишер | IT
+
+* What the video covers: This video explores how certain technologies or practices are disrupting major brands' revenue streams, likely focusing on smart home technology, programming solutions, or tech innovations that bypass traditional business models
+* Key topics discussed: Smart home systems, technology disruption, programming and coding techniques that enable alternatives to mainstream branded products, potential cost-saving tech solutions
+* Why it's worth watching: Offers insights into how tech-savvy individuals can leverage programming and smart home technologies to reduce dependency on expensive brand-name products, potentially saving money while maintaining functionality
+
+---
+
+### 🎬 他们让大品牌失去收入！🤯
+
+**频道:** Алишер | IT
+
+* 视频内容概述: 本视频探讨某些技术或实践如何颠覆大品牌的收入来源,可能聚焦于智能家居技术、编程解决方案或绕过传统商业模式的技术创新
+* 主要话题: 智能家居系统、技术颠覆、编程和编码技术如何实现主流品牌产品的替代方案、潜在的节省成本的技术解决方案
+* 为何值得观看: 深入了解精通技术的个人如何利用编程和智能家居技术减少对昂贵品牌产品的依赖,在保持功能性的同时节省开支
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWkN5qRk5QU)**
+
+### 🎬 I Made This Website with ZERO Coding Skills
+**Channel:** Dhruv Rathee Shorts
+
+* What the video covers: Demonstrates how to build a functional website without any programming knowledge using AI tools
+* Key topics discussed: No-code website development, AI-powered web creation tools, accessibility of web development for non-technical users
+* Why it's worth watching: Perfect for beginners who want to create websites but feel intimidated by coding; shows practical application of AI tools in real-world scenarios and proves that technical barriers to web development are rapidly disappearing
+
+---
+
+### 🎬 零编程技能制作网站
+**频道:** Dhruv Rathee Shorts
+
+* 视频内容概述: 演示如何在不具备任何编程知识的情况下,使用AI工具构建功能完整的网站
+* 主要话题: 无代码网站开发、AI驱动的网页创建工具、非技术用户也能轻松开发网站
+* 为何值得观看: 非常适合想要创建网站但对编程感到畏惧的初学者;展示了AI工具在实际场景中的应用,证明了网站开发的技术门槛正在迅速消失
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jKFOitEtR0g)**
+
+### 🎬 Does AI actually make you a faster programmer? (collab with @SonarSource)
+
+**Channel:** Alberta Tech
+
+* **What the video covers:** An in-depth exploration of whether AI coding assistants genuinely improve developer productivity and speed, featuring a collaboration with SonarSource to examine real-world impacts on coding workflows
+* **Key topics discussed:** Practical testing of AI-powered development tools, measuring actual productivity gains versus perceived benefits, code quality considerations when using AI assistance, and the balance between speed and maintainability in AI-assisted coding
+* **Why it's worth watching:** Provides evidence-based insights rather than hype about AI coding tools, helping developers make informed decisions about integrating AI into their workflow. The collaboration with SonarSource (a code quality platform) adds credibility by examining not just speed but also the quality of AI-generated code
+
+---
+
+### 🎬 AI 真的能让你编程更快吗?(与 @SonarSource 合作)
+
+**频道:** Alberta Tech
+
+* **视频内容概述:** 深入探讨 AI 编程助手是否真正提高开发者的生产力和编码速度,与 SonarSource 合作研究 AI 工具对实际编码工作流程的影响
+* **主要话题:** 实际测试 AI 驱动的开发工具、衡量真实生产力提升与感知收益的对比、使用 AI 辅助时的代码质量考量,以及 AI 辅助编程中速度与可维护性之间的平衡
+* **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### 🎬 Coding with Opus 4.6 and Codex 5.3 is actually insane
+
+**Channel:** ForrestKnight
+
+* What the video covers: A hands-on exploration and comparison of two cutting-edge AI coding assistants - Claude Opus 4.6 and Codex 5.3 - integrated within the Zed code editor
+* Key topics discussed: Real-world coding performance, AI model capabilities for software development, practical demonstrations of both models handling coding tasks, feature comparisons, and workflow integration
+* Why it's worth watching: Provides direct, practical insights into the latest AI coding tools that are transforming developer workflows, helping viewers understand which model might best suit their coding needs and whether the hype around these tools is justified
+
+---
+
+### 🎬 使用 Opus 4.6 和 Codex 5.3 编程真的太疯狂了
+
+**频道:** ForrestKnight
+
+* 视频内容概述: 深入体验和对比两款前沿 AI 编程助手 - Claude Opus 4.6 和 Codex 5.3 在 Zed 代码编辑器中的实际表现
+* 主要话题: 真实编程场景下的性能表现、AI 模型在软件开发中的能力展示、两款模型处理编程任务的实际演示、功能对比以及工作流集成
+* 为何值得观看: 提供关于最新 AI 编程工具的直接、实用见解,这些工具正在改变开发者的工作方式,帮助观众了解哪款模型最适合自己的编程需求,以及这些工具是否名副其实
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Q2QmQTNA7vs)**
 
