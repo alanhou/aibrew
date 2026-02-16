@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 16, 2026"
 date: 2026-02-16
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -847,4 +847,116 @@ Could you provide the full article content? I need the complete text to create a
 * 为何值得观看: 如果你每月在 Claude Code 上花费 200 美元,这个视频揭示了实用的替代方案,可以在不牺牲代码辅助质量的情况下大幅削减成本——对于希望优化 AI 工具支出的预算敏感型开发者和团队来说是必看内容
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=jJ9jPzPdyDg)**
+
+### Unicode MessageFormat Working Group Overview
+
+* A Unicode CLDR-TC subgroup developing an industry standard for localizable message strings
+* MessageFormat 2.0 is now a stable standard, approved by CLDR Technical Committee and recommended for implementation
+* Designed to support developers, translators, and end users with fluent messages and locale-adapted data presentation
+* Provides interoperable syntax, data model, and processing for complex features like gender, inflections, and speech
+* Some default functions and `u:` namespace items remain in Draft status, subject to feedback-driven changes
+* Welcomes all feedback: bug reports, implementation reports, feature requests, and use cases
+* Seeking participation from software developers and localization engineers with I18N/L10N experience
+* Contributors must sign CLA; employees of Unicode members should contact their representative, others can request Invited Expert status
+* Repository contents governed by Unicode Terms of Use and released under LICENSE
+
+### Unicode MessageFormat 工作组概览
+
+* Unicode CLDR-TC 的子工作组,致力于开发可本地化消息字符串的行业标准
+* MessageFormat 2.0 现已成为稳定标准,经 CLDR 技术委员会批准并推荐实施
+* 旨在为开发者、翻译人员和最终用户提供流畅的消息和本地化数据呈现支持
+* 提供可互操作的语法、数据模型和处理机制,支持性别、词形变化和语音等复杂特性
+* 部分默认函数和 `u:` 命名空间项目仍处于草案状态,可能根据反馈进行调整
+* 欢迎各类反馈:错误报告、实现报告、功能请求和使用案例
+* 寻求具有国际化(I18N)和本地化(L10N)经验的软件开发者和本地化工程师参与
+* 贡献者必须签署 CLA;Unicode 成员组织员工应联系其代表,其他人可申请特邀专家身份
+* 仓库内容受 Unicode 使用条款约束,并根据 LICENSE 发布
+
+**[Read Original / 阅读原文](https://github.com/unicode-org/message-format-wg)**
+
+<!-- [Title-Only] -->
+### Qwen3.5: Towards Native Multimodal Agents
+
+* Based on the title, this article likely announces Qwen3.5, a new version of the Qwen AI model series that focuses on native multimodal capabilities and agent functionality. It probably discusses advancements in handling multiple input types (text, images, audio, video) simultaneously and the model's ability to act as an autonomous agent that can perform tasks, use tools, and interact with environments.
+
+* This is interesting to readers because it represents a significant step toward more versatile AI systems that can understand and process information across different modalities naturally, rather than treating each input type separately. The "agent" aspect suggests the model can take actions and make decisions, which is a key development in practical AI applications. For developers and AI enthusiasts, this likely means new possibilities for building more sophisticated applications that can see, hear, read, and act in integrated ways.
+
+---
+
+### Qwen3.5：迈向原生多模态智能体
+
+* 根据标题推测，这篇文章可能发布了 Qwen3.5，这是 Qwen AI 模型系列的新版本，专注于原生多模态能力和智能体功能。文章可能讨论了在同时处理多种输入类型（文本、图像、音频、视频）方面的进展，以及该模型作为自主智能体执行任务、使用工具和与环境交互的能力。
+
+* 这对读者来说很有意义，因为它代表了向更通用 AI 系统迈出的重要一步，这些系统能够自然地理解和处理不同模态的信息，而不是分别处理每种输入类型。"智能体"方面表明该模型可以采取行动和做出决策，这是实用 AI 应用的关键发展。对于开发者和 AI 爱好者来说，这可能意味着构建更复杂应用的新可能性，这些应用可以以集成的方式看、听、读和行动。
+
+**[Read Original / 阅读原文](https://qwen.ai/blog?id=qwen3.5)**
+
+<!-- [Title-Only] -->
+### Vim-pencil: Rethinking Vim as a tool for writing
+
+* This article likely introduces vim-pencil, a Vim plugin that transforms the traditional code editor into a more writer-friendly environment. It probably discusses features like soft line wrapping, improved text formatting, and adjustments that make Vim more suitable for prose writing rather than just code.
+* Why it might be interesting: Vim is traditionally known as a programmer's editor, but this project challenges that notion by adapting its powerful editing capabilities for writers, bloggers, and anyone working with long-form text. It's a fascinating example of how developer tools can be repurposed for creative writing workflows.
+
+---
+
+### Vim-pencil：重新思考 Vim 作为写作工具
+
+* 根据标题推测，这篇文章可能介绍了 vim-pencil 插件，它将传统的代码编辑器 Vim 改造成更适合写作者使用的环境。文章可能讨论了软换行、改进的文本格式化等功能，以及如何让 Vim 更适合散文写作而非仅仅是编程。
+* 为何值得关注：Vim 传统上被视为程序员的编辑器，但这个项目挑战了这一观念，将其强大的编辑能力应用于作家、博主和任何从事长篇文本工作的人。这是一个很好的例子，展示了开发者工具如何被重新定位用于创意写作工作流程。
+
+**[Read Original / 阅读原文](https://github.com/preservim/vim-pencil)**
+
+### Zvec - Lightning-Fast In-Process Vector Database by Alibaba
+
+* **What it does**: Zvec is an embeddable vector database that runs directly inside your application without requiring separate servers. It enables millisecond-speed similarity searches across billions of vectors, built on Alibaba's production-proven Proxima search engine.
+
+* **Key features**: Supports both dense and sparse vector embeddings with multi-vector queries; hybrid search combining semantic similarity with structured filters; simple installation via pip or npm; runs on Linux (x86_64, ARM64) and macOS (ARM64); zero configuration required to get started.
+
+* **Why it's notable**: Gained 1,094 stars today due to its exceptional performance (searching billions of vectors in milliseconds), ease of use (install and search in seconds), and versatility (runs anywhere from notebooks to edge devices). It brings enterprise-grade vector search capabilities to developers without the complexity of managing separate database infrastructure.
+
+---
+
+### Zvec - 阿里巴巴开源的轻量级进程内向量数据库
+
+* **功能介绍**: Zvec 是一个可直接嵌入应用程序的向量数据库,无需独立服务器即可运行。基于阿里巴巴久经考验的 Proxima 搜索引擎构建,能在毫秒级时间内完成数十亿向量的相似度搜索。
+
+* **主要特点**: 同时支持稠密和稀疏向量嵌入,可在单次调用中执行多向量查询;混合搜索功能结合语义相似度与结构化过滤;通过 pip 或 npm 简单安装;支持 Linux (x86_64, ARM64) 和 macOS (ARM64);零配置即可启动使用。
+
+* **为何值得关注**: 今日获得 1,094 星标,因其卓越性能(毫秒级搜索数十亿向量)、极简易用性(秒级安装即搜)以及广泛适用性(可运行于笔记本、服务器、CLI 工具甚至边缘设备)而备受关注。它将企业级向量搜索能力带给开发者,无需管理复杂的独立数据库基础设施。
+
+**[View Repository / 查看仓库](https://github.com/alibaba/zvec)**
+
+### OpenClaw - Self-Hosted Personal AI Assistant Across All Your Messaging Platforms
+
+* **What it does**: OpenClaw is a self-hosted AI assistant that runs locally on your devices and integrates with all your existing messaging platforms (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Teams, and more). It provides voice interaction, a live visual canvas, and multi-agent routing through a unified gateway control plane.
+
+* **Key features**: 
+  - Multi-channel support for 10+ messaging platforms with secure DM pairing
+  - Voice Wake and Talk Mode for hands-free interaction on macOS/iOS/Android
+  - Live Canvas for agent-driven visual workspace
+  - Local-first architecture with session management and tool streaming
+  - CLI wizard for easy onboarding and daemon installation
+  - Works with Claude (Anthropic) and OpenAI models
+  - Cross-platform (macOS, Linux, Windows via WSL2)
+
+* **Why it's notable**: With 3,873 stars today, OpenClaw stands out as a privacy-focused alternative to cloud-based AI assistants. It's the "lobster way" 🦞 of having a personal AI - fully local, always-on, and integrated into your existing communication workflows. The project offers production-ready security defaults, comprehensive documentation, and a polished onboarding experience that makes self-hosting accessible to developers.
+
+---
+
+### OpenClaw - 跨平台自托管个人 AI 助手
+
+* **功能介绍**: OpenClaw 是一个在本地设备上运行的自托管 AI 助手,可集成到所有现有的消息平台(WhatsApp、Telegram、Slack、Discord、Signal、iMessage、Teams 等)。提供语音交互、实时可视化画布和通过统一网关控制平面的多代理路由功能。
+
+* **主要特点**:
+  - 支持 10 多个消息平台的多渠道集成,具备安全的 DM 配对机制
+  - Voice Wake 和 Talk Mode 实现 macOS/iOS/Android 上的免提交互
+  - Live Canvas 提供代理驱动的可视化工作空间
+  - 本地优先架构,包含会话管理和工具流式传输
+  - CLI 向导简化入门和守护进程安装
+  - 支持 Claude(Anthropic)和 OpenAI 模型
+  - 跨平台支持(macOS、Linux、Windows via WSL2)
+
+* **为何值得关注**: 今日获得 3,873 星标,OpenClaw 作为注重隐私的云端 AI 助手替代方案脱颖而出。这是"龙虾方式"🦞 的个人 AI - 完全本地化、始终在线,并集成到现有的通信工作流中。该项目提供生产级安全默认设置、全面的文档和精致的入门体验,让开发者能够轻松实现自托管。
+
+**[View Repository / 查看仓库](https://github.com/openclaw/openclaw)**
 
