@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 16, 2026"
 date: 2026-02-16
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -583,4 +583,110 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
+
+### OpenClaw Creator Joins OpenAI While Project Becomes Independent Foundation
+
+* Peter Steinberger is joining OpenAI to work on making AI agents accessible to everyone
+* OpenClaw, his viral playground project, will transition to an independent foundation structure and remain open source
+* The decision came after exploring multiple opportunities with major AI labs in San Francisco
+* OpenAI will sponsor the OpenClaw project and enable Steinberger to continue dedicating time to it
+* As a builder who already spent 13 years creating a company, Steinberger chose impact over building another large company
+* The OpenClaw foundation will support multiple models and companies, serving as a platform for people who want to own their data
+* The project's community and open-source nature will be preserved while Steinberger works at the frontier of AI research
+
+### OpenClaw 创始人加入 OpenAI，项目转型为独立基金会
+
+* Peter Steinberger 将加入 OpenAI，致力于让 AI 智能体惠及所有人
+* 他的病毒式传播项目 OpenClaw 将转型为独立基金会结构，并保持开源
+* 这一决定是在旧金山与多家主要 AI 实验室探讨各种机会后做出的
+* OpenAI 将赞助 OpenClaw 项目，并支持 Steinberger 继续投入时间开发
+* 作为已经花费 13 年创建公司的建设者，Steinberger 选择了影响力而非再建立一家大公司
+* OpenClaw 基金会将支持多种模型和公司，为希望拥有自己数据的人们提供平台
+* 项目的社区和开源特性将得到保留，同时 Steinberger 将在 AI 研究前沿工作
+
+**[Read Original / 阅读原文](https://steipete.me/posts/2026/openclaw)**
+
+I need more content to analyze. The HTML you provided only contains the title "Magnus Carlsen wins 2026 FIDE Freestyle World Championship" but no article body or details about the event.
+
+Could you provide the full article content? I need the complete text to create a meaningful summary with bullet points in both English and Chinese.
+
+**[Read Original / 阅读原文](https://www.fide.com/magnus-carlsen-wins-2026-fide-freestyle-world-championship/)**
+
+### Pink Noise May Harm Sleep Quality by Reducing REM Sleep
+
+* Penn Medicine study challenges popular sleep aid devices and apps that use pink noise
+* Pink noise at 50 decibels reduced REM sleep by nearly 19 minutes per night in healthy adults
+* REM sleep is critical for memory consolidation, emotional regulation, and brain development
+* Study tested 25 healthy adults over seven consecutive nights under various noise conditions
+* Aircraft noise reduced deep sleep (N3 stage) by about 23 minutes per night
+* Combining pink noise with aircraft noise worsened both deep sleep and REM sleep, plus increased wake time by 15 minutes
+* Earplugs effectively prevented deep sleep loss from aircraft noise and improved overall sleep quality
+* Children may be especially vulnerable as they spend more time in REM sleep than adults
+* Millions use broadband noise for sleep: white noise accounts for 3 million daily hours on Spotify alone
+* Researchers caution against broadband noise use, particularly for newborns and toddlers
+* More research needed on long-term effects, safe noise levels, and impacts on vulnerable populations
+
+### 粉红噪音可能通过减少快速眼动睡眠损害睡眠质量
+
+* 宾夕法尼亚大学医学院研究挑战了使用粉红噪音的流行助眠设备和应用
+* 50分贝的粉红噪音使健康成年人每晚快速眼动睡眠减少近19分钟
+* 快速眼动睡眠对记忆巩固、情绪调节和大脑发育至关重要
+* 研究对25名健康成年人进行了连续七晚不同噪音条件下的测试
+* 飞机噪音使深度睡眠(N3阶段)每晚减少约23分钟
+* 粉红噪音与飞机噪音结合使用时,深度睡眠和快速眼动睡眠均显著缩短,清醒时间增加15分钟
+* 耳塞有效防止了飞机噪音导致的深度睡眠损失,并改善了整体睡眠质量
+* 儿童可能特别容易受影响,因为他们的快速眼动睡眠时间比成年人更长
+* 数百万人使用宽带噪音助眠:仅Spotify上白噪音每天播放时长达300万小时
+* 研究人员警告不要使用宽带噪音,尤其是对新生儿和幼儿
+* 需要更多关于长期影响、安全噪音水平以及对脆弱人群影响的研究
+
+**[Read Original / 阅读原文](https://www.pennmedicine.org/news/pink-noise-reduces-rem-sleep-and-may-harm-sleep-quality)**
+
+### ZeroClaw - Ultra-lightweight autonomous AI assistant infrastructure in Rust
+
+* A fully autonomous AI assistant that runs on $10 hardware with <5MB RAM footprint, 3.4MB binary size, and <10ms startup time - 99% smaller and 400x faster than TypeScript alternatives
+* Trait-based architecture makes everything swappable: 22+ AI providers (OpenRouter, Anthropic, OpenAI, Ollama, etc.), 8+ messaging channels (Telegram, Discord, Slack, WhatsApp, etc.), custom SQLite-based hybrid search memory system with vector + keyword search, built-in security with pairing, sandboxing, and allowlists
+* Notable for extreme resource efficiency (runs on 0.6GHz cores), zero external dependencies for core features, production-ready security model, and true portability across ARM/x86/RISC-V - positioning itself as the lean, secure alternative to heavier AI assistant frameworks
+
+### ZeroClaw - Rust 编写的超轻量级自主 AI 助手基础设施
+
+* 完全自主的 AI 助手，可在 10 美元硬件上运行，内存占用 <5MB，二进制文件仅 3.4MB，启动时间 <10ms - 比 TypeScript 替代方案小 99%，快 400 倍
+* 基于 trait 的架构使一切可插拔：22+ AI 提供商（OpenRouter、Anthropic、OpenAI、Ollama 等），8+ 消息通道（Telegram、Discord、Slack、WhatsApp 等），基于 SQLite 的自定义混合搜索内存系统（向量 + 关键词搜索），内置配对、沙箱和白名单安全机制
+* 以极致资源效率著称（可在 0.6GHz 核心上运行），核心功能零外部依赖，生产级安全模型，真正跨 ARM/x86/RISC-V 平台可移植 - 定位为更重型 AI 助手框架的精简、安全替代方案
+
+**[View Repository / 查看仓库](https://github.com/zeroclaw-labs/zeroclaw)**
+
+### Islands Dark - A Premium Glass-Effect VSCode Theme Inspired by JetBrains
+
+* A sophisticated dark theme for Visual Studio Code that brings JetBrains' Islands Dark aesthetic to VSCode with floating glass-like panels, rounded corners, and smooth animations
+* Features deep dark canvas (#131217), glass-effect borders with directional lighting, pill-shaped UI elements, color-matched icon glow, warm syntax highlighting for multiple languages (JS/TS, Python, Go, Rust, HTML/CSS), and custom fonts (IBM Plex Mono, FiraCode Nerd Font, Bear Sans UI)
+* Notable for its polished UI customization using CSS injection via Custom UI Style extension, one-liner installation scripts for all platforms, and comprehensive visual refinements including hover effects, fade transitions, and browser-style tabs - achieving a premium IDE look that rivals commercial products
+
+### Islands Dark - 受 JetBrains 启发的高级玻璃效果 VSCode 主题
+
+* 为 Visual Studio Code 打造的精致暗色主题,将 JetBrains Islands Dark 美学带入 VSCode,具有浮动玻璃面板、圆角和流畅动画效果
+* 特点包括深色画布背景(#131217)、带方向光照的玻璃效果边框、药丸形状 UI 元素、图标颜色匹配发光效果、支持多种语言的温暖语法高亮(JS/TS、Python、Go、Rust、HTML/CSS)以及自定义字体(IBM Plex Mono、FiraCode Nerd Font、Bear Sans UI)
+* 值得关注的原因:通过 Custom UI Style 扩展使用 CSS 注入实现精美的 UI 定制,提供跨平台一键安装脚本,包含全面的视觉优化(悬停效果、淡入淡出过渡、浏览器风格标签页),打造出媲美商业产品的高级 IDE 外观
+
+**[View Repository / 查看仓库](https://github.com/bwya77/vscode-dark-islands)**
+
+### 🎬 Stop Paying Anthropic $200/month for Claude Code (Do This Instead)
+
+**Channel:** Ankita Kulkarni
+
+* What the video covers: Cost-effective alternatives to Claude Code's premium Opus 4.5/4.6 models that can save developers significant monthly expenses
+* Key topics discussed: Comparison of AI coding assistant pricing models, alternative tools and services that offer similar functionality at lower costs, strategies to reduce AI coding assistant expenses while maintaining productivity
+* Why it's worth watching: If you're spending $200/month on Claude Code, this video reveals practical alternatives that could cut your costs dramatically without sacrificing coding assistance quality—essential viewing for budget-conscious developers and teams looking to optimize their AI tooling expenses
+
+---
+
+### 🎬 停止每月向 Anthropic 支付 200 美元的 Claude Code 费用(改用这个方法)
+
+**频道:** Ankita Kulkarni
+
+* 视频内容概述: 介绍 Claude Code 高级版 Opus 4.5/4.6 模型的经济实惠替代方案,帮助开发者大幅节省月度开支
+* 主要话题: AI 编程助手定价模式对比、提供类似功能但成本更低的替代工具和服务、在保持生产力的同时降低 AI 编程助手费用的策略
+* 为何值得观看: 如果你每月在 Claude Code 上花费 200 美元,这个视频揭示了实用的替代方案,可以在不牺牲代码辅助质量的情况下大幅削减成本——对于希望优化 AI 工具支出的预算敏感型开发者和团队来说是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jJ9jPzPdyDg)**
 
