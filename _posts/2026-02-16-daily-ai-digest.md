@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 16, 2026"
 date: 2026-02-16
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -689,4 +689,65 @@ Could you provide the full article content? I need the complete text to create a
 * 为何值得观看: 如果你每月在 Claude Code 上花费 200 美元,这个视频揭示了实用的替代方案,可以在不牺牲代码辅助质量的情况下大幅削减成本——对于希望优化 AI 工具支出的预算敏感型开发者和团队来说是必看内容
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=jJ9jPzPdyDg)**
+
+<!-- [Title-Only] -->
+### Arm wants a bigger slice of the chip business
+
+* Based on the title, this article likely explores Arm Holdings' strategic ambitions to expand its market share and revenue in the semiconductor industry. It probably discusses how Arm is moving beyond its traditional licensing model to capture more value from the chip ecosystem.
+* This is interesting because Arm's architecture powers most smartphones and is increasingly important in data centers and AI. Any shift in their business strategy could reshape competitive dynamics with Intel, AMD, and other chip makers, affecting everything from device costs to innovation in computing.
+
+### Arm 想要在芯片业务中分得更大的蛋糕
+
+* 根据标题推测，这篇文章可能探讨 Arm Holdings 公司扩大其在半导体行业市场份额和收入的战略雄心。文章很可能讨论 Arm 如何超越其传统的授权模式，从芯片生态系统中获取更多价值。
+* 这值得关注，因为 Arm 架构为大多数智能手机提供动力，并且在数据中心和人工智能领域日益重要。他们商业策略的任何转变都可能重塑与英特尔、AMD 和其他芯片制造商的竞争格局，影响从设备成本到计算创新的方方面面。
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content was not available.*
+
+**[Read Original / 阅读原文](https://www.economist.com/business/2026/02/12/arm-wants-a-bigger-slice-of-the-chip-business)**
+
+### Modern CSS Code Snippets Summary
+
+* Demonstrates the evolution from traditional CSS selector syntax to modern CSS pseudo-class functions
+* Old approach: Uses comma-separated selectors (`.card h1, .card h2, .card h3, .card h4`) to target multiple heading elements
+* Modern approach: Utilizes the `:is()` pseudo-class function for more concise and maintainable code (`.card :is(h1, h2, h3, h4)`)
+* Both methods apply the same styling (`margin-bottom: 0.5em`) to heading elements within a card component
+* The `:is()` function reduces code repetition and improves readability, especially when dealing with complex selectors
+
+### 现代 CSS 代码片段总结
+
+* 展示了从传统 CSS 选择器语法到现代 CSS 伪类函数的演进
+* 旧方法：使用逗号分隔的选择器（`.card h1, .card h2, .card h3, .card h4`）来定位多个标题元素
+* 现代方法：利用 `:is()` 伪类函数实现更简洁和易维护的代码（`.card :is(h1, h2, h3, h4)`）
+* 两种方法都对卡片组件内的标题元素应用相同的样式（`margin-bottom: 0.5em`）
+* `:is()` 函数减少了代码重复，提高了可读性，特别是在处理复杂选择器时
+
+**[Read Original / 阅读原文](https://modern-css.com)**
+
+### Audio AI Rebels: How Gradium and Kyutai Are Outpacing Big Tech
+
+* Small audio AI startups like Gradium (born from open lab Kyutai) are crushing benchmarks and outperforming major labs in voice AI
+* Kyutai's 4-person team built Moshi, the first full-duplex conversational AI with 160ms response time, in just 6 months - before OpenAI's Advanced Voice Mode
+* Audio ML has historically been underfunded and overlooked compared to image and text AI, creating opportunities for focused small teams
+* Big labs considered voice a "solved problem" while projects like Meta's Seamless and Google's speech initiatives stagnated
+* The shift from research scientists to research engineers in the deep learning era enabled small teams to move fast without big lab politics
+* Audio AI requires deep domain expertise in turn-taking, backchanneling, and latency management - not just compute and data scaling
+* Gradium founders (Neil, Alex Défossez, Olivier Teboul, Laurent Mazaré) pioneered neural audio codecs at Google Brain, accidentally inventing voice cloning
+* Kyutai (funded by Eric Schmidt and French billionaires) releases open-source models that power NVIDIA PersonaPlex and Qwen3-TTS
+* Gradium bridges the gap between Kyutai's research prototypes and production-ready models for real applications
+
+### 音频AI叛军:Gradium和Kyutai如何超越科技巨头
+
+* Gradium等小型音频AI初创公司(诞生于开放实验室Kyutai)正在语音AI领域击败基准并超越大型实验室
+* Kyutai的4人团队仅用6个月就构建了Moshi——首个全双工对话AI,响应时间160毫秒,早于OpenAI的高级语音模式
+* 音频机器学习历来相比图像和文本AI资金不足且被忽视,为专注的小团队创造了机会
+* 大型实验室认为语音是"已解决的问题",而Meta的Seamless和谷歌的语音项目陷入停滞
+* 深度学习时代从研究科学家向研究工程师的转变,使小团队能够快速行动而无需应对大实验室政治
+* 音频AI需要在轮流发言、反向通道和延迟管理方面的深厚领域专业知识,而不仅仅是算力和数据规模
+* Gradium创始人(Neil、Alex Défossez、Olivier Teboul、Laurent Mazaré)在谷歌大脑开创了神经音频编解码器,意外发明了语音克隆
+* Kyutai(由Eric Schmidt和法国亿万富翁资助)发布开源模型,为NVIDIA PersonaPlex和Qwen3-TTS提供支持
+* Gradium在Kyutai的研究原型与实际应用的生产就绪模型之间架起桥梁
+
+**[Read Original / 阅读原文](https://www.amplifypartners.com/blog-posts/arming-the-rebels-with-gpus-gradium-kyutai-and-audio-ai)**
 
