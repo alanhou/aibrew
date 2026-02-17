@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 17, 2026"
 date: 2026-02-17
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -647,4 +647,103 @@ I need to see the complete content to provide an accurate summary. The content a
 * 值得关注的原因在于开创性地通过真实经济压力而非传统基准来验证 AI 的生产力,配备实时仪表板追踪,并可与 Nanobot/OpenClaw 框架集成
 
 **[View Repository / 查看仓库](https://github.com/HKUDS/ClawWork)**
+
+### Understanding ASCII's Four-Column Layout: Why CTRL+[ Equals ESC
+
+* A four-column ASCII table reveals the elegant bit-level design behind control characters and keyboard shortcuts
+* ASCII uses 7 bits: first 2 bits define the group (4 columns), last 5 bits define the character (32 rows)
+* Pressing CTRL performs a bitwise AND operation, zeroing the first 2 bits to map any character to its control equivalent
+* CTRL+[ produces ESC because both share the same 5-bit pattern (11011), differing only in their group bits
+* This explains common terminal shortcuts: ^J (newline), ^H (backspace), ^I (tab), and ^M (carriage return)
+* Upper and lowercase letters differ by a single bit, making case conversion trivial at the binary level
+* The four-column view makes ASCII's mathematical structure immediately visible, unlike traditional linear tables
+
+### 理解 ASCII 四列布局：为什么 CTRL+[ 等于 ESC
+
+* 四列 ASCII 表揭示了控制字符和键盘快捷键背后优雅的位级设计
+* ASCII 使用 7 位：前 2 位定义组别（4 列），后 5 位定义字符（32 行）
+* 按下 CTRL 键执行按位与运算，将前 2 位清零，从而将任何字符映射到其对应的控制字符
+* CTRL+[ 产生 ESC 是因为两者共享相同的 5 位模式（11011），仅在组别位上不同
+* 这解释了常见的终端快捷键：^J（换行）、^H（退格）、^I（制表符）和 ^M（回车）
+* 大小写字母仅相差一个位，使得二进制级别的大小写转换非常简单
+* 四列视图使 ASCII 的数学结构一目了然，不同于传统的线性表格
+
+**[Read Original / 阅读原文](https://garbagecollected.org/2017/01/31/four-column-ascii/)**
+
+<!-- [Title-Only] -->
+### A Deep Dive into Apple's .car File Format
+
+* This article likely provides a technical exploration of Apple's proprietary .car (compiled asset catalog) file format, which is used to package images, icons, and other visual assets in iOS and macOS applications
+* It probably covers the internal structure, binary layout, compression methods, and how developers can parse or extract resources from these files
+* Why it might be interesting: Understanding Apple's asset packaging system is valuable for reverse engineering, app analysis, security research, or building tools that work with iOS/macOS applications. It offers insights into Apple's approach to optimizing asset delivery and runtime performance
+
+---
+
+### 深入解析 Apple 的 .car 文件格式
+
+* 本文可能对 Apple 专有的 .car（编译资产目录）文件格式进行技术性探讨，该格式用于在 iOS 和 macOS 应用程序中打包图像、图标和其他视觉资源
+* 文章可能涵盖内部结构、二进制布局、压缩方法，以及开发者如何解析或提取这些文件中的资源
+* 为何值得关注：了解 Apple 的资源打包系统对逆向工程、应用分析、安全研究或构建与 iOS/macOS 应用程序配合使用的工具很有价值。它提供了对 Apple 优化资源交付和运行时性能方法的深入见解
+
+**[Read Original / 阅读原文](https://dbg.re/posts/car-file-format/)**
+
+### Dolphin Emulator - Rise of the Triforce: Summary
+
+* The early 1990s saw arcades dominating 3D gaming with cutting-edge hardware, but the 5th generation of home consoles (PlayStation, N64, Saturn) brought 3D capabilities to living rooms, diminishing arcades' technological advantage
+* By the 6th generation, arcade stalwarts like Sega faced decline - the Dreamcast failed against PlayStation 2, forcing Sega to port games to rival platforms just to survive
+* Sega partnered with Nintendo and Namco to create Triforce, a GameCube-based arcade platform designed to revitalize the arcade industry with cost-effective hardware
+* Triforce hardware consists of a stock GameCube motherboard plus two custom boards: AM-Baseboard (handles I/O and video output) and AM-Mediaboard (stores and serves game data)
+* Games were distributed via GD-ROM discs loaded into DIMM RAM (with battery backup) or Namco's 512MB NAND cartridges, both requiring security keys to run
+* The system supported JVS (JAMMA Video Standard) Type 1 and Type 3 I/O for arcade peripherals, functioning like arcade USB
+* Triforce introduced a revolutionary save card system allowing players to purchase cheap memory cards from arcade machines to save progress, preferences, and unlocks across any arcade with the same game
+
+### Dolphin 模拟器 - Triforce 的崛起:摘要
+
+* 1990年代初期,街机凭借尖端硬件主导3D游戏领域,但第五代家用主机(PlayStation、N64、Saturn)将3D功能带入客厅,削弱了街机的技术优势
+* 到第六代主机时代,世嘉等街机巨头面临衰退 - Dreamcast败给PlayStation 2,迫使世嘉将游戏移植到竞争对手平台以求生存
+* 世嘉与任天堂、南梦宫合作创建了Triforce,这是一个基于GameCube的街机平台,旨在用高性价比硬件振兴街机产业
+* Triforce硬件由标准GameCube主板加两块定制板组成:AM-Baseboard(处理输入输出和视频输出)和AM-Mediaboard(存储和提供游戏数据)
+* 游戏通过GD-ROM光盘加载到DIMM RAM(带电池备份)或南梦宫的512MB NAND卡分发,两者都需要安全密钥才能运行
+* 系统支持JVS(JAMMA视频标准)Type 1和Type 3输入输出,用于街机外设,功能类似街机USB
+* Triforce引入了革命性的存档卡系统,允许玩家从街机购买廉价记忆卡来保存进度、偏好和解锁内容,可在任何拥有相同游戏的街机上使用
+
+**[Read Original / 阅读原文](https://dolphin-emu.org/blog/2026/02/16/rise-of-the-triforce/)**
+
+### ClawWork - AI Agents That Earn Real Money Through Professional Work
+
+* An economic benchmark system that transforms AI assistants into AI coworkers by having them complete 220 real professional tasks from OpenAI's GDPVal dataset across 44 occupations
+* Agents start with $10, pay for their own token usage, earn income by completing quality work (up to $1,500+/hr for top performers), and must maintain economic solvency to survive
+* Built on lightweight Nanobot architecture with live React dashboard, supports multiple AI models competing head-to-head, and measures what matters in production: work quality, cost efficiency, and long-term survival rather than just technical benchmarks
+
+### ClawWork - 通过专业工作赚取真金白银的 AI 智能体
+
+* 一个经济基准测试系统,将 AI 助手转变为 AI 同事,让它们完成来自 OpenAI GDPVal 数据集的 220 个真实专业任务,涵盖 44 个职业领域
+* 智能体初始资金仅 $10,需自付 token 使用费用,通过高质量完成工作赚取收入(顶级表现者可达 $1,500+/小时),并必须保持经济偿付能力才能存活
+* 基于轻量级 Nanobot 架构构建,配备实时 React 仪表板,支持多个 AI 模型正面竞争,衡量生产环境中真正重要的指标:工作质量、成本效率和长期生存能力,而非仅仅技术基准
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/ClawWork)**
+
+### 🎬 Google AI Studio - Full Tutorial 2026: How To Build an App
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive tutorial on using Google AI Studio to build applications in 2026, demonstrating the platform's capabilities and workflow for app development without traditional coding.
+
+* **Key topics discussed:** Google AI Studio's interface and features, step-by-step app building process, integration with AI models, no-code/low-code development techniques, and practical implementation strategies for creating functional applications.
+
+* **Why it's worth watching:** Perfect for developers and non-developers alike who want to leverage Google's AI tools for rapid app development. The tutorial provides hands-on guidance on building apps using one of Google's latest AI platforms, making it accessible for those looking to create AI-powered applications without extensive programming knowledge.
+
+---
+
+### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
+
+* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
+
+* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
 
