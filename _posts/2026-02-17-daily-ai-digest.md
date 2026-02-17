@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 17, 2026"
 date: 2026-02-17
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -559,4 +559,124 @@ I need to see the complete content to provide an accurate summary. The content a
 * 为何值得观看: 提供关于最新 AI 编程工具的直接、实用见解,这些工具正在改变开发者的工作方式,帮助观众了解哪款模型最适合自己的编程需求,以及这些工具是否名副其实
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Q2QmQTNA7vs)**
+
+<!-- [Title-Only] -->
+### Dark web agent spotted bedroom wall clue to rescue girl from abuse
+
+* This article likely covers a law enforcement investigation where an agent monitoring dark web activity identified a crucial visual clue in the background of abuse material - something visible on a bedroom wall that helped investigators locate and rescue a victim
+* This story is significant because it highlights the meticulous investigative work required in digital forensics, demonstrates how small details can lead to major breakthroughs in child protection cases, and shows the ongoing efforts to combat online exploitation through dark web monitoring
+
+### 暗网调查员通过卧室墙壁线索成功解救受虐女孩
+
+* 本文可能讲述了一起执法调查案件，调查人员在监控暗网活动时，从虐待材料的背景中发现了关键的视觉线索——卧室墙壁上的某些可见细节帮助调查人员定位并解救了受害者
+* 这个故事值得关注，因为它展示了数字取证工作中所需的细致调查能力，说明了微小细节如何能够带来重大突破，并体现了通过暗网监控打击网络剥削的持续努力
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/cx2gn239exlo)**
+
+<!-- [Title-Only] -->
+### Study: Self-generated Agent Skills are useless
+
+* This article likely presents research findings challenging the effectiveness of AI agents that autonomously generate their own skills or capabilities. The study probably examines whether agents that create and refine their own skill sets actually perform better than those with predefined or human-designed skills.
+* This is interesting because it questions a popular assumption in AI agent development - that self-improvement and autonomous skill generation lead to better performance. The provocative title suggests the research may reveal that these self-generated skills don't transfer well to real tasks, lack generalization, or fail to outperform simpler approaches. This could have significant implications for how we design and train AI agents going forward.
+
+### 研究：自生成智能体技能毫无用处
+
+* 这篇文章可能展示了一项研究成果，质疑AI智能体自主生成技能或能力的有效性。该研究很可能探讨了那些自行创建和优化技能集的智能体，是否真的比使用预定义或人工设计技能的智能体表现更好。
+* 这项研究值得关注，因为它挑战了AI智能体开发中的一个流行假设——即自我改进和自主技能生成能带来更好的性能。这个颇具争议性的标题暗示，研究可能揭示了这些自生成技能无法很好地迁移到实际任务中，缺乏泛化能力，或者未能超越更简单的方法。这对我们未来如何设计和训练AI智能体可能具有重要意义。
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2602.12670)**
+
+### AI is Destroying Open Source: The Rise of AI Slop and Its Consequences
+
+* **AI hallucinations causing real harm**: Ars Technica retracted an article after AI fabricated quotes from open source maintainer Scott Shambaugh, who was ironically being harassed by an AI agent for rejecting its low-quality code contributions
+* **Agentic AI tools flooding open source with spam**: OpenClaw and similar tools enable users to deploy AI agents that submit poor-quality pull requests and bug reports, with OpenClaw's creator now hired by OpenAI to "bring agents to everyone"
+* **Bug bounty programs collapsing**: curl maintainer Daniel Stenberg ended bug bounties after useful vulnerability reports dropped from 15% to 5% due to AI-generated spam, with submitters showing entitled attitudes focused on quick cash rather than genuine contribution
+* **GitHub forced to add PR disable feature**: The platform that popularized pull requests now offers the ability to turn them off entirely due to overwhelming AI-generated spam affecting maintainers of hundreds of projects
+* **AI code quality has plateaued**: Despite easier generation, AI code quality isn't improving like previous years, remaining "pretty good" but not production-ready without human review—a resource open source maintainers lack
+* **Hardware shortages driven by AI**: Following RAM shortages, Western Digital announced they're sold out of hard drives for all of 2026, with long-term agreements already in place for 2027-2028
+* **Echoes of crypto/NFT bubble**: The AI craze shows similar signs of reckless optimism and insane behavior, with the key question being how much damage AI companies will cause before the inevitable correction
+
+### AI 正在摧毁开源:AI 垃圾内容泛滥及其后果
+
+* **AI 幻觉造成实际伤害**:Ars Technica 撤回了一篇文章,因为 AI 捏造了开源维护者 Scott Shambaugh 的引语,而讽刺的是,他本人正因拒绝 AI 代理提交的低质量代码而遭受骚扰
+* **代理式 AI 工具用垃圾内容淹没开源社区**:OpenClaw 等工具让用户能够部署 AI 代理,提交低质量的拉取请求和错误报告,OpenClaw 的创建者现已被 OpenAI 聘用,要"让每个人都能使用代理"
+* **漏洞赏金计划崩溃**:curl 维护者 Daniel Stenberg 终止了漏洞赏金,因为有用的漏洞报告从 15% 下降到 5%,都是 AI 生成的垃圾所致,提交者态度傲慢,只关注快速赚钱而非真正贡献
+* **GitHub 被迫添加禁用 PR 功能**:这个因拉取请求而流行的平台,现在提供完全关闭该功能的选项,因为 AI 生成的垃圾内容让管理数百个项目的维护者不堪重负
+* **AI 代码质量已达瓶颈**:尽管生成更容易,但 AI 代码质量并未像前几年那样提升,仍停留在"还不错"的水平,但未经人工审查不适合生产环境——而这正是开源维护者缺乏的资源
+* **AI 驱动的硬件短缺**:继 RAM 短缺之后,西部数据宣布 2026 年全年硬盘已售罄,2027-2028 年的长期协议也已签订
+* **重现加密货币/NFT 泡沫**:AI 热潮显示出与之类似的鲁莽乐观和疯狂行为迹象,关键问题是 AI 公司在不可避免的崩盘前还会造成多少破坏
+
+**[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/)**
+
+### sql-tap - Real-time SQL Traffic Viewer with Terminal UI
+
+* **What it does**: Acts as a transparent proxy between your application and database (PostgreSQL/MySQL), capturing and displaying every SQL query in an interactive terminal interface without requiring code changes
+* **Key features**: 
+  - Wire protocol parsing for transparent query interception
+  - Real-time query monitoring with execution time, rows affected, and error tracking
+  - Interactive TUI with EXPLAIN/EXPLAIN ANALYZE support, query editing, analytics view, and transaction tracking
+  - Multiple installation options (Homebrew, Go, Docker, source)
+  - Comprehensive keybindings for navigation, search, sorting, and query inspection
+* **Why it's notable**: Provides zero-configuration database observability with 817 stars, offering developers a powerful debugging tool that requires no application modifications—just point your app to the proxy port and watch SQL traffic flow in real-time through a polished terminal interface
+
+### sql-tap - 实时 SQL 流量查看器与终端界面
+
+* **功能介绍**: 作为应用程序与数据库(PostgreSQL/MySQL)之间的透明代理,无需修改代码即可捕获并在交互式终端界面中显示每条 SQL 查询
+* **主要特点**:
+  - 通过解析数据库线协议实现透明查询拦截
+  - 实时查询监控,包含执行时间、影响行数和错误追踪
+  - 交互式终端界面支持 EXPLAIN/EXPLAIN ANALYZE、查询编辑、分析视图和事务追踪
+  - 多种安装方式(Homebrew、Go、Docker、源码编译)
+  - 完善的快捷键支持导航、搜索、排序和查询检查
+* **为何值得关注**: 获得 817 星标,提供零配置的数据库可观测性方案,开发者无需修改应用程序—只需将应用指向代理端口,即可通过精美的终端界面实时观察 SQL 流量,是强大的调试工具
+
+**[View Repository / 查看仓库](https://github.com/mickamy/sql-tap)**
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**Channel:** Payilagam
+
+* What the video covers: This tutorial explains Java Lambda Expressions using humor from popular Tamil comedian Vadivelu's "Ingu Nalla Meengal Virkappadum" comedy scene, making complex programming concepts more accessible and entertaining for Tamil-speaking audiences.
+
+* Key topics discussed: Lambda expressions in Java, functional programming concepts, syntax and implementation of lambda expressions, practical examples demonstrating how lambdas simplify code compared to traditional anonymous classes.
+
+* Why it's worth watching: Perfect for Tamil-speaking developers who want to learn Java's lambda expressions in their native language. The creative use of Vadivelu's comedy as a teaching metaphor makes this technical content engaging and memorable, helping viewers grasp functional programming concepts through cultural references they already understand.
+
+---
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**频道:** Payilagam
+
+* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
+
+* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
+
+* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
+
+### 🎬 Google AI Studio - Full Tutorial 2026: How To Build an App
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive tutorial on using Google AI Studio to build applications in 2026, demonstrating the platform's capabilities and workflow for app development without traditional coding.
+
+* **Key topics discussed:** Google AI Studio's interface and features, step-by-step app building process, integration with AI models, no-code/low-code development techniques, and practical implementation strategies for creating functional applications.
+
+* **Why it's worth watching:** Perfect for developers and non-developers alike who want to leverage Google's AI tools for rapid app development. The tutorial provides hands-on guidance on building apps using one of Google's latest AI platforms, making it accessible for those looking to create AI-powered applications without extensive programming knowledge.
+
+---
+
+### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
+
+* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
+
+* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
 
