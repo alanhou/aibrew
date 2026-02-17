@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 17, 2026"
 date: 2026-02-17
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -574,111 +574,6 @@ I need to see the complete content to provide an accurate summary. The content a
 
 ---
 
-### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
-
-**频道:** Mikey No Code
-
-* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
-
-* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
-
-* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
-
-<!-- [Title-Only] -->
-### Dark web agent spotted bedroom wall clue to rescue girl from abuse
-
-* This article likely covers a law enforcement investigation where an agent monitoring dark web activity identified a crucial visual clue in the background of abuse material - something visible on a bedroom wall that helped investigators locate and rescue a victim
-* This story is significant because it highlights the meticulous investigative work required in digital forensics, demonstrates how small details can lead to major breakthroughs in child protection cases, and shows the ongoing efforts to combat online exploitation through dark web monitoring
-
-### 暗网调查员通过卧室墙壁线索成功解救受虐女孩
-
-* 本文可能讲述了一起执法调查案件，调查人员在监控暗网活动时，从虐待材料的背景中发现了关键的视觉线索——卧室墙壁上的某些可见细节帮助调查人员定位并解救了受害者
-* 这个故事值得关注，因为它展示了数字取证工作中所需的细致调查能力，说明了微小细节如何能够带来重大突破，并体现了通过暗网监控打击网络剥削的持续努力
-
-**[Read Original / 阅读原文](https://www.bbc.com/news/articles/cx2gn239exlo)**
-
-<!-- [Title-Only] -->
-### Study: Self-generated Agent Skills are useless
-
-* This article likely presents research findings challenging the effectiveness of AI agents that autonomously generate their own skills or capabilities. The study probably examines whether agents that create and refine their own skill sets actually perform better than those with predefined or human-designed skills.
-* This is interesting because it questions a popular assumption in AI agent development - that self-improvement and autonomous skill generation lead to better performance. The provocative title suggests the research may reveal that these self-generated skills don't transfer well to real tasks, lack generalization, or fail to outperform simpler approaches. This could have significant implications for how we design and train AI agents going forward.
-
-### 研究：自生成智能体技能毫无用处
-
-* 这篇文章可能展示了一项研究成果，质疑AI智能体自主生成技能或能力的有效性。该研究很可能探讨了那些自行创建和优化技能集的智能体，是否真的比使用预定义或人工设计技能的智能体表现更好。
-* 这项研究值得关注，因为它挑战了AI智能体开发中的一个流行假设——即自我改进和自主技能生成能带来更好的性能。这个颇具争议性的标题暗示，研究可能揭示了这些自生成技能无法很好地迁移到实际任务中，缺乏泛化能力，或者未能超越更简单的方法。这对我们未来如何设计和训练AI智能体可能具有重要意义。
-
-**[Read Original / 阅读原文](https://arxiv.org/abs/2602.12670)**
-
-### AI is Destroying Open Source: The Rise of AI Slop and Its Consequences
-
-* **AI hallucinations causing real harm**: Ars Technica retracted an article after AI fabricated quotes from open source maintainer Scott Shambaugh, who was ironically being harassed by an AI agent for rejecting its low-quality code contributions
-* **Agentic AI tools flooding open source with spam**: OpenClaw and similar tools enable users to deploy AI agents that submit poor-quality pull requests and bug reports, with OpenClaw's creator now hired by OpenAI to "bring agents to everyone"
-* **Bug bounty programs collapsing**: curl maintainer Daniel Stenberg ended bug bounties after useful vulnerability reports dropped from 15% to 5% due to AI-generated spam, with submitters showing entitled attitudes focused on quick cash rather than genuine contribution
-* **GitHub forced to add PR disable feature**: The platform that popularized pull requests now offers the ability to turn them off entirely due to overwhelming AI-generated spam affecting maintainers of hundreds of projects
-* **AI code quality has plateaued**: Despite easier generation, AI code quality isn't improving like previous years, remaining "pretty good" but not production-ready without human review—a resource open source maintainers lack
-* **Hardware shortages driven by AI**: Following RAM shortages, Western Digital announced they're sold out of hard drives for all of 2026, with long-term agreements already in place for 2027-2028
-* **Echoes of crypto/NFT bubble**: The AI craze shows similar signs of reckless optimism and insane behavior, with the key question being how much damage AI companies will cause before the inevitable correction
-
-### AI 正在摧毁开源:AI 垃圾内容泛滥及其后果
-
-* **AI 幻觉造成实际伤害**:Ars Technica 撤回了一篇文章,因为 AI 捏造了开源维护者 Scott Shambaugh 的引语,而讽刺的是,他本人正因拒绝 AI 代理提交的低质量代码而遭受骚扰
-* **代理式 AI 工具用垃圾内容淹没开源社区**:OpenClaw 等工具让用户能够部署 AI 代理,提交低质量的拉取请求和错误报告,OpenClaw 的创建者现已被 OpenAI 聘用,要"让每个人都能使用代理"
-* **漏洞赏金计划崩溃**:curl 维护者 Daniel Stenberg 终止了漏洞赏金,因为有用的漏洞报告从 15% 下降到 5%,都是 AI 生成的垃圾所致,提交者态度傲慢,只关注快速赚钱而非真正贡献
-* **GitHub 被迫添加禁用 PR 功能**:这个因拉取请求而流行的平台,现在提供完全关闭该功能的选项,因为 AI 生成的垃圾内容让管理数百个项目的维护者不堪重负
-* **AI 代码质量已达瓶颈**:尽管生成更容易,但 AI 代码质量并未像前几年那样提升,仍停留在"还不错"的水平,但未经人工审查不适合生产环境——而这正是开源维护者缺乏的资源
-* **AI 驱动的硬件短缺**:继 RAM 短缺之后,西部数据宣布 2026 年全年硬盘已售罄,2027-2028 年的长期协议也已签订
-* **重现加密货币/NFT 泡沫**:AI 热潮显示出与之类似的鲁莽乐观和疯狂行为迹象,关键问题是 AI 公司在不可避免的崩盘前还会造成多少破坏
-
-**[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/)**
-
-### ClawWork - AI Agents That Earn Real Money Through Professional Work
-
-* An economic benchmark system that transforms AI assistants into AI coworkers by having them complete 220 real professional tasks from OpenAI's GDPVal dataset across 44 occupations
-* Agents start with $10, pay for their own token usage, earn income by completing quality work (top performers reach $1,500+/hr), and must maintain economic solvency to survive
-* Notable for pioneering production-focused AI validation through real economic pressure rather than traditional benchmarks, with live dashboard tracking and integration with Nanobot/OpenClaw frameworks
-
-### ClawWork - 通过专业工作赚取真金白银的 AI 智能体
-
-* 一个经济基准测试系统,将 AI 助手转变为 AI 同事,让它们完成来自 OpenAI GDPVal 数据集的 220 个真实专业任务,涵盖 44 个职业领域
-* 智能体初始资金仅 $10,需自付 token 使用成本,通过高质量完成工作赚取收入(顶级表现者可达 $1,500+/小时),必须维持经济偿付能力才能存活
-* 值得关注的原因在于开创性地通过真实经济压力而非传统基准来验证 AI 的生产力,配备实时仪表板追踪,并可与 Nanobot/OpenClaw 框架集成
-
-**[View Repository / 查看仓库](https://github.com/HKUDS/ClawWork)**
-
-### Understanding ASCII's Four-Column Layout: Why CTRL+[ Equals ESC
-
-* A four-column ASCII table reveals the elegant bit-level design behind control characters and keyboard shortcuts
-* ASCII uses 7 bits: first 2 bits define the group (4 columns), last 5 bits define the character (32 rows)
-* Pressing CTRL performs a bitwise AND operation, zeroing the first 2 bits to map any character to its control equivalent
-* CTRL+[ produces ESC because both share the same 5-bit pattern (11011), differing only in their group bits
-* This explains common terminal shortcuts: ^J (newline), ^H (backspace), ^I (tab), and ^M (carriage return)
-* Upper and lowercase letters differ by a single bit, making case conversion trivial at the binary level
-* The four-column view makes ASCII's mathematical structure immediately visible, unlike traditional linear tables
-
-### 理解 ASCII 四列布局：为什么 CTRL+[ 等于 ESC
-
-* 四列 ASCII 表揭示了控制字符和键盘快捷键背后优雅的位级设计
-* ASCII 使用 7 位：前 2 位定义组别（4 列），后 5 位定义字符（32 行）
-* 按下 CTRL 键执行按位与运算，将前 2 位清零，从而将任何字符映射到其对应的控制字符
-* CTRL+[ 产生 ESC 是因为两者共享相同的 5 位模式（11011），仅在组别位上不同
-* 这解释了常见的终端快捷键：^J（换行）、^H（退格）、^I（制表符）和 ^M（回车）
-* 大小写字母仅相差一个位，使得二进制级别的大小写转换非常简单
-* 四列视图使 ASCII 的数学结构一目了然，不同于传统的线性表格
-
-**[Read Original / 阅读原文](https://garbagecollected.org/2017/01/31/four-column-ascii/)**
-
-<!-- [Title-Only] -->
-### A Deep Dive into Apple's .car File Format
-
-* This article likely provides a technical exploration of Apple's proprietary .car (compiled asset catalog) file format, which is used to package images, icons, and other visual assets in iOS and macOS applications
-* It probably covers the internal structure, binary layout, compression methods, and how developers can parse or extract resources from these files
-* Why it might be interesting: Understanding Apple's asset packaging system is valuable for reverse engineering, app analysis, security research, or building tools that work with iOS/macOS applications. It offers insights into Apple's approach to optimizing asset delivery and runtime performance
-
----
-
 ### 深入解析 Apple 的 .car 文件格式
 
 * 本文可能对 Apple 专有的 .car（编译资产目录）文件格式进行技术性探讨，该格式用于在 iOS 和 macOS 应用程序中打包图像、图标和其他视觉资源
@@ -746,4 +641,192 @@ I need to see the complete content to provide an accurate summary. The content a
 * **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
+
+### GrapheneOS: Breaking Free from Google and Apple - A Privacy-Focused Android Alternative
+
+* Author's journey from deep Apple ecosystem integration to discovering GrapheneOS through a Samsung Galaxy Z Fold 6 rental experience
+* GrapheneOS is an open-source, privacy-focused operating system based on AOSP that eliminates Google service integration at the system level
+* Supports only Google Pixel devices (ironically) due to their Titan M security chips, Verified Boot, and other security features
+* Recommended device: Google Pixel 9a (~$450 USD) offering 7 years of support - budget-friendly entry point for testing
+* Installation requires: compatible Pixel phone, data-capable USB cable, and Windows 10/11 computer with Chromium-based browser
+* Key features: kernel hardening, sandboxed Google Play Services option, advanced privacy protections that even attracted French government concerns
+* Installation process involves factory reset, enabling developer options, OEM unlocking, and bootloader unlocking via Fastboot Mode
+* Trade-offs noted: Pixel 9a has inferior camera quality compared to iPhone 15 Pro or Galaxy Z Fold 6, but excellent battery life and performance
+
+### GrapheneOS：摆脱谷歌和苹果的隐私优先安卓替代系统
+
+* 作者从深度苹果生态系统用户，通过租用三星Galaxy Z Fold 6的体验，最终发现GrapheneOS的历程
+* GrapheneOS是基于AOSP的开源隐私操作系统，在系统层面完全消除了谷歌服务集成
+* 仅支持谷歌Pixel设备（颇具讽刺意味），因其配备Titan M安全芯片、验证启动等安全功能
+* 推荐设备：Google Pixel 9a（约450美元），提供7年支持期限——适合测试的经济型入门选择
+* 安装需求：兼容的Pixel手机、支持数据传输的USB线缆、装有Chromium浏览器的Windows 10/11电脑
+* 核心特性：内核加固、沙盒化谷歌Play服务选项、先进隐私保护（甚至引起法国政府关注）
+* 安装流程包括：恢复出厂设置、启用开发者选项、OEM解锁、通过Fastboot模式解锁引导加载程序
+* 权衡考量：Pixel 9a相机质量不如iPhone 15 Pro或Galaxy Z Fold 6，但电池续航和整体性能表现优秀
+
+**[Read Original / 阅读原文](https://blog.tomaszdunia.pl/grapheneos-eng/)**
+
+### Understanding ASCII's Four-Column Layout: Why CTRL+[ Equals ESC
+
+* A four-column ASCII table reveals the elegant bit-level design behind control characters and keyboard shortcuts
+* ASCII uses 7 bits: first 2 bits define the group (4 columns), last 5 bits define the character (32 rows)
+* Pressing CTRL performs a bitwise AND operation, zeroing the first 2 bits to map any character to its control equivalent
+* CTRL+[ produces ESC because both share the same 5-bit pattern (11011), differing only in their group bits
+* This explains common terminal shortcuts: ^J (newline), ^H (backspace), ^I (tab), and ^M (carriage return)
+* Upper and lowercase letters differ by a single bit, making case conversion trivial at the binary level
+* The four-column view makes ASCII's mathematical structure immediately visible, unlike traditional linear tables
+
+### 理解 ASCII 四列布局：为什么 CTRL+[ 等于 ESC
+
+* 四列 ASCII 表揭示了控制字符和键盘快捷键背后优雅的位级设计
+* ASCII 使用 7 位：前 2 位定义组别（4 列），后 5 位定义字符（32 行）
+* 按下 CTRL 键执行按位与运算，将前 2 位清零，从而将任何字符映射到其对应的控制字符
+* CTRL+[ 产生 ESC 是因为两者共享相同的 5 位模式（11011），仅在组别位上不同
+* 这解释了常见的终端快捷键：^J（换行）、^H（退格）、^I（制表符）和 ^M（回车）
+* 大小写字母仅相差一个位，使得二进制级别的大小写转换非常简单
+* 四列视图使 ASCII 的数学结构一目了然，不同于传统的线性表格
+
+**[Read Original / 阅读原文](https://garbagecollected.org/2017/01/31/four-column-ascii/)**
+
+### Teaching Molecules to Think: What Science Reveals About the Nature of Mind
+
+* Researchers are discovering that even simple biological systems like gene regulatory networks (GRNs) can exhibit learning and memory, challenging our understanding of what constitutes a "self" or "mind"
+* Michael Levin's team at Tufts University demonstrated that GRNs can learn through associative conditioning similar to Pavlov's dogs, adapting their behavior without physical restructuring
+* Agency and cognition aren't limited to brains - studies show slime molds, plants, single cells, and even immune systems display goal-directed behavior, learning, and memory formation
+* Using "causal emergence" measurements, researchers found that when GRNs learn, they develop higher "phi" values, indicating they function more as unified agents than collections of parts
+* This molecular-level agency could revolutionize medicine by allowing drugs to work through learned associations rather than direct chemical intervention, potentially reducing side effects and tolerance issues
+* The findings suggest agency may be fundamental to life itself, present from the molecular level up, with implications for understanding evolution and the origins of life
+
+### 教分子思考:科学揭示"心智"的本质
+
+* 研究人员发现,即使是基因调控网络(GRN)等简单生物系统也能表现出学习和记忆能力,这挑战了我们对"自我"或"心智"的理解
+* 塔夫茨大学Michael Levin团队证明,GRN可以通过类似巴甫洛夫条件反射的联想学习来改变行为,无需物理结构重组
+* 主体性和认知能力不局限于大脑——研究显示黏菌、植物、单细胞生物甚至免疫系统都表现出目标导向行为、学习和记忆形成
+* 使用"因果涌现"测量方法,研究人员发现当GRN学习时,其"phi"值会升高,表明它们更像统一主体而非部件集合
+* 这种分子层面的主体性可能革新医学,允许药物通过学习关联而非直接化学干预发挥作用,potentially减少副作用和耐药性
+* 研究结果表明主体性可能是生命的基本特征,从分子层面向上存在,对理解进化和生命起源具有重要意义
+
+**[Read Original / 阅读原文](https://www.newscientist.com/article/2513815-how-teaching-molecules-to-think-is-revealing-what-a-mind-really-is/)**
+
+### Heretic - Fully Automatic Censorship Removal for Language Models
+
+* **What it does**: Heretic automatically removes safety alignment (censorship) from transformer-based language models without expensive retraining. It uses directional ablation ("abliteration") combined with TPE-based parameter optimization to create uncensored models that retain the original model's intelligence.
+
+* **Key features**:
+  * Completely automatic operation - no manual parameter tuning or deep learning expertise required
+  * Co-minimizes refusals and KL divergence to preserve model capabilities
+  * Supports most dense models, multimodal models, and MoE architectures
+  * Built-in evaluation and benchmarking tools
+  * Research features for interpretability analysis (residual vector plotting, geometry metrics)
+  * Model quantization support to reduce VRAM requirements
+  * Simple CLI: `pip install heretic-llm && heretic <model-name>`
+
+* **Why it's notable**: Heretic achieves state-of-the-art results that rival or exceed manually-tuned abliterations by human experts. For example, on Gemma-3-12B, it matches the refusal suppression of expert abliterations (3/100 refusals) while achieving 3-6x lower KL divergence (0.16 vs 0.45-1.04), indicating significantly less damage to the model's original capabilities. The community has created over 1,000 models using Heretic, with users praising the quality of outputs. Processing takes ~45 minutes for an 8B model on RTX 3090.
+
+---
+
+### Heretic - 语言模型全自动审查移除工具
+
+* **功能介绍**: Heretic 可自动移除基于 Transformer 的语言模型中的安全对齐(审查机制),无需昂贵的后训练。它结合方向消融("abliteration")技术和基于 TPE 的参数优化器,创建保留原始模型智能的无审查模型。
+
+* **主要特点**:
+  * 完全自动化操作 - 无需手动调参或深度学习专业知识
+  * 同时最小化拒绝率和 KL 散度以保留模型能力
+  * 支持大多数密集模型、多模态模型和 MoE 架构
+  * 内置评估和基准测试工具
+  * 研究功能支持可解释性分析(残差向量可视化、几何度量)
+  * 支持模型量化以降低显存需求
+  * 简单的命令行操作:`pip install heretic-llm && heretic <模型名>`
+
+* **为何值得关注**: Heretic 实现了媲美甚至超越人类专家手动调优的最先进结果。例如在 Gemma-3-12B 上,它达到了与专家消融相同的拒绝抑制效果(3/100 拒绝率),但 KL 散度降低了 3-6 倍(0.16 vs 0.45-1.04),表明对模型原始能力的损害显著更小。社区已使用 Heretic 创建了超过 1,000 个模型,用户对输出质量给予高度评价。在 RTX 3090 上处理 8B 模型约需 45 分钟。
+
+**[View Repository / 查看仓库](https://github.com/p-e-w/heretic)**
+
+### Seerr - Open-Source Media Request Manager for Jellyfin, Plex, and Emby
+
+* **What it does**: Seerr is a free, open-source application that manages media requests for your personal media library. It acts as a bridge between users and your media server (Jellyfin, Plex, or Emby), allowing users to request movies and TV shows through an intuitive interface. It integrates with automation tools like Sonarr and Radarr to automatically download and organize requested content.
+
+* **Key features**: 
+  - Full integration with Jellyfin, Emby, and Plex including user authentication and import
+  - Customizable request system for movies and individual TV show seasons
+  - Simple request management UI for quick approvals
+  - Granular permission system for user access control
+  - Library scanning to track already-available content
+  - Support for PostgreSQL and SQLite databases
+  - Multiple notification agents
+  - Mobile-friendly responsive design
+  - Watchlist and blocklist functionality
+  - Migration support from Overseerr and Jellyseerr
+
+* **Why it's notable**: Seerr gained 283 stars today as it represents a unified successor to both Overseerr and Jellyseerr, consolidating the best features of both projects into a single, actively maintained solution. It's particularly valuable for home media server enthusiasts who want to provide a Netflix-like request experience for family and friends, with seamless integration into existing media automation workflows. The project's open-source nature and active community support make it an attractive choice for self-hosted media management.
+
+---
+
+### Seerr - Jellyfin、Plex 和 Emby 的开源媒体请求管理器
+
+* **功能介绍**: Seerr 是一款免费开源的应用程序,用于管理个人媒体库的内容请求。它充当用户与媒体服务器(Jellyfin、Plex 或 Emby)之间的桥梁,允许用户通过直观的界面请求电影和电视剧。它与 Sonarr 和 Radarr 等自动化工具集成,可自动下载和整理请求的内容。
+
+* **主要特点**:
+  - 与 Jellyfin、Emby 和 Plex 完全集成,包括用户认证和导入
+  - 可自定义的电影和单集电视剧季度请求系统
+  - 简洁的请求管理界面,可快速批准请求
+  - 细粒度权限系统,控制用户访问
+  - 媒体库扫描功能,追踪已有内容
+  - 支持 PostgreSQL 和 SQLite 数据库
+  - 多种通知代理支持
+  - 移动端友好的响应式设计
+  - 观看列表和黑名单功能
+  - 支持从 Overseerr 和 Jellyseerr 迁移
+
+* **为何值得关注**: Seerr 今日获得 283 星标,因为它是 Overseerr 和 Jellyseerr 两个项目的统一继承者,将两者的最佳功能整合到一个积极维护的解决方案中。对于希望为家人和朋友提供类似 Netflix 请求体验的家庭媒体服务器爱好者来说,它特别有价值,可无缝集成到现有的媒体自动化工作流程中。该项目的开源特性和活跃的社区支持使其成为自托管媒体管理的理想选择。
+
+**[View Repository / 查看仓库](https://github.com/seerr-team/seerr)**
+
+### Superpowers - An Agentic Skills Framework for AI-Powered Software Development
+
+* **What it does**: Superpowers transforms coding agents (like Claude Code, Codex, OpenCode) into disciplined software engineers by providing a complete development workflow built on composable "skills" that automatically trigger at the right moments—from brainstorming and design validation to test-driven development and code review.
+
+* **Key features**: 
+  - **Structured workflow**: Enforces a 7-phase development cycle (brainstorming → git worktrees → planning → subagent execution → TDD → code review → branch completion)
+  - **Subagent-driven development**: Dispatches fresh AI agents per task with two-stage review (spec compliance, then code quality), enabling autonomous work for hours
+  - **Mandatory TDD**: Enforces RED-GREEN-REFACTOR cycle—write failing test, watch it fail, write minimal code, pass test, commit (deletes code written before tests)
+  - **Rich skills library**: 15+ skills covering testing, debugging (systematic 4-phase root cause analysis), collaboration, and meta-development
+  - **Multi-platform support**: Plugin system for Claude Code, manual setup for Codex/OpenCode
+
+* **Why it's notable**: With 725 stars today, Superpowers addresses a critical gap in AI coding—preventing agents from jumping straight into code without understanding requirements. It enforces software engineering best practices (YAGNI, DRY, evidence-based verification) that agents typically skip, turning them from code generators into systematic developers. The subagent architecture allows Claude to work autonomously for extended periods while maintaining quality through structured reviews.
+
+---
+
+### Superpowers - AI 编程助手的技能框架与软件开发方法论
+
+* **功能介绍**: Superpowers 将编程 AI 助手(如 Claude Code、Codex、OpenCode)转变为遵循纪律的软件工程师,通过可组合的"技能"提供完整的开发工作流,这些技能会在恰当时机自动触发——从头脑风暴、设计验证到测试驱动开发和代码审查。
+
+* **主要特点**:
+  - **结构化工作流**: 强制执行 7 阶段开发周期(头脑风暴 → git 工作树 → 规划 → 子代理执行 → TDD → 代码审查 → 分支完成)
+  - **子代理驱动开发**: 为每个任务分派全新 AI 代理,进行两阶段审查(规范合规性,然后代码质量),实现数小时自主工作
+  - **强制 TDD**: 执行"红-绿-重构"循环——编写失败测试、观察失败、编写最小代码、通过测试、提交(删除测试前编写的代码)
+  - **丰富的技能库**: 15+ 项技能涵盖测试、调试(系统化 4 阶段根因分析)、协作和元开发
+  - **多平台支持**: Claude Code 插件系统,Codex/OpenCode 手动配置
+
+* **为何值得关注**: 今日获得 725 星标,Superpowers 填补了 AI 编程的关键空白——防止 AI 在不理解需求的情况下直接编写代码。它强制执行 AI 通常会跳过的软件工程最佳实践(YAGNI、DRY、基于证据的验证),将 AI 从代码生成器转变为系统化开发者。子代理架构允许 Claude 长时间自主工作,同时通过结构化审查保持质量。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### 🎬 CEOs aren't there to be liked
+**Channel:** Lenny's Podcast
+
+* What the video covers: This video explores the reality of CEO leadership, challenging the common misconception that being liked is a primary goal for chief executives
+* Key topics discussed: The distinction between being respected versus being liked in leadership roles, the tough decisions CEOs must make that may be unpopular, and how effective leadership often requires prioritizing company success over personal popularity
+* Why it's worth watching: Essential viewing for aspiring leaders and anyone interested in understanding what effective executive leadership actually requires - it provides a realistic perspective on the trade-offs and responsibilities that come with top leadership positions
+
+---
+
+### 🎬 CEO 不是为了被喜欢而存在
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 本视频探讨了 CEO 领导力的现实,挑战了"被喜欢是首席执行官主要目标"这一常见误解
+* 主要话题: 领导角色中"被尊重"与"被喜欢"的区别,CEO 必须做出的可能不受欢迎的艰难决策,以及有效的领导力往往需要将公司成功置于个人受欢迎程度之上
+* 为何值得观看: 对于有抱负的领导者和任何想了解有效高管领导力实际要求的人来说,这是必看内容 - 它提供了关于高层领导职位所需权衡和责任的现实视角
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SElFGCZj-tk)**
 
