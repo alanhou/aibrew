@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 17, 2026"
 date: 2026-02-17
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -550,15 +550,41 @@ I need to see the complete content to provide an accurate summary. The content a
 
 ---
 
-### 🎬 使用 Opus 4.6 和 Codex 5.3 编程真的太疯狂了
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
 
-**频道:** ForrestKnight
+**频道:** Payilagam
 
-* 视频内容概述: 深入体验和对比两款前沿 AI 编程助手 - Claude Opus 4.6 和 Codex 5.3 在 Zed 代码编辑器中的实际表现
-* 主要话题: 真实编程场景下的性能表现、AI 模型在软件开发中的能力展示、两款模型处理编程任务的实际演示、功能对比以及工作流集成
-* 为何值得观看: 提供关于最新 AI 编程工具的直接、实用见解,这些工具正在改变开发者的工作方式,帮助观众了解哪款模型最适合自己的编程需求,以及这些工具是否名副其实
+* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Q2QmQTNA7vs)**
+* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
+
+* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
+
+### 🎬 Google AI Studio - Full Tutorial 2026: How To Build an App
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive tutorial on using Google AI Studio to build applications in 2026, demonstrating the platform's capabilities and workflow for app development without traditional coding.
+
+* **Key topics discussed:** Google AI Studio's interface and features, step-by-step app building process, integration with AI models, no-code/low-code development techniques, and practical implementation strategies for creating functional applications.
+
+* **Why it's worth watching:** Perfect for developers and non-developers alike who want to leverage Google's AI tools for rapid app development. The tutorial provides hands-on guidance on building apps using one of Google's latest AI platforms, making it accessible for those looking to create AI-powered applications without extensive programming knowledge.
+
+---
+
+### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
+
+* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
+
+* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
 
 <!-- [Title-Only] -->
 ### Dark web agent spotted bedroom wall clue to rescue girl from abuse
@@ -608,75 +634,17 @@ I need to see the complete content to provide an accurate summary. The content a
 
 **[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/)**
 
-### sql-tap - Real-time SQL Traffic Viewer with Terminal UI
+### ClawWork - AI Agents That Earn Real Money Through Professional Work
 
-* **What it does**: Acts as a transparent proxy between your application and database (PostgreSQL/MySQL), capturing and displaying every SQL query in an interactive terminal interface without requiring code changes
-* **Key features**: 
-  - Wire protocol parsing for transparent query interception
-  - Real-time query monitoring with execution time, rows affected, and error tracking
-  - Interactive TUI with EXPLAIN/EXPLAIN ANALYZE support, query editing, analytics view, and transaction tracking
-  - Multiple installation options (Homebrew, Go, Docker, source)
-  - Comprehensive keybindings for navigation, search, sorting, and query inspection
-* **Why it's notable**: Provides zero-configuration database observability with 817 stars, offering developers a powerful debugging tool that requires no application modifications—just point your app to the proxy port and watch SQL traffic flow in real-time through a polished terminal interface
+* An economic benchmark system that transforms AI assistants into AI coworkers by having them complete 220 real professional tasks from OpenAI's GDPVal dataset across 44 occupations
+* Agents start with $10, pay for their own token usage, earn income by completing quality work (top performers reach $1,500+/hr), and must maintain economic solvency to survive
+* Notable for pioneering production-focused AI validation through real economic pressure rather than traditional benchmarks, with live dashboard tracking and integration with Nanobot/OpenClaw frameworks
 
-### sql-tap - 实时 SQL 流量查看器与终端界面
+### ClawWork - 通过专业工作赚取真金白银的 AI 智能体
 
-* **功能介绍**: 作为应用程序与数据库(PostgreSQL/MySQL)之间的透明代理,无需修改代码即可捕获并在交互式终端界面中显示每条 SQL 查询
-* **主要特点**:
-  - 通过解析数据库线协议实现透明查询拦截
-  - 实时查询监控,包含执行时间、影响行数和错误追踪
-  - 交互式终端界面支持 EXPLAIN/EXPLAIN ANALYZE、查询编辑、分析视图和事务追踪
-  - 多种安装方式(Homebrew、Go、Docker、源码编译)
-  - 完善的快捷键支持导航、搜索、排序和查询检查
-* **为何值得关注**: 获得 817 星标,提供零配置的数据库可观测性方案,开发者无需修改应用程序—只需将应用指向代理端口,即可通过精美的终端界面实时观察 SQL 流量,是强大的调试工具
+* 一个经济基准测试系统,将 AI 助手转变为 AI 同事,让它们完成来自 OpenAI GDPVal 数据集的 220 个真实专业任务,涵盖 44 个职业领域
+* 智能体初始资金仅 $10,需自付 token 使用成本,通过高质量完成工作赚取收入(顶级表现者可达 $1,500+/小时),必须维持经济偿付能力才能存活
+* 值得关注的原因在于开创性地通过真实经济压力而非传统基准来验证 AI 的生产力,配备实时仪表板追踪,并可与 Nanobot/OpenClaw 框架集成
 
-**[View Repository / 查看仓库](https://github.com/mickamy/sql-tap)**
-
-### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
-
-**Channel:** Payilagam
-
-* What the video covers: This tutorial explains Java Lambda Expressions using humor from popular Tamil comedian Vadivelu's "Ingu Nalla Meengal Virkappadum" comedy scene, making complex programming concepts more accessible and entertaining for Tamil-speaking audiences.
-
-* Key topics discussed: Lambda expressions in Java, functional programming concepts, syntax and implementation of lambda expressions, practical examples demonstrating how lambdas simplify code compared to traditional anonymous classes.
-
-* Why it's worth watching: Perfect for Tamil-speaking developers who want to learn Java's lambda expressions in their native language. The creative use of Vadivelu's comedy as a teaching metaphor makes this technical content engaging and memorable, helping viewers grasp functional programming concepts through cultural references they already understand.
-
----
-
-### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
-
-**频道:** Payilagam
-
-* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
-
-* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
-
-* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
-
-### 🎬 Google AI Studio - Full Tutorial 2026: How To Build an App
-
-**Channel:** Mikey No Code
-
-* **What the video covers:** A comprehensive tutorial on using Google AI Studio to build applications in 2026, demonstrating the platform's capabilities and workflow for app development without traditional coding.
-
-* **Key topics discussed:** Google AI Studio's interface and features, step-by-step app building process, integration with AI models, no-code/low-code development techniques, and practical implementation strategies for creating functional applications.
-
-* **Why it's worth watching:** Perfect for developers and non-developers alike who want to leverage Google's AI tools for rapid app development. The tutorial provides hands-on guidance on building apps using one of Google's latest AI platforms, making it accessible for those looking to create AI-powered applications without extensive programming knowledge.
-
----
-
-### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
-
-**频道:** Mikey No Code
-
-* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
-
-* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
-
-* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
+**[View Repository / 查看仓库](https://github.com/HKUDS/ClawWork)**
 
