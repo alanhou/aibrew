@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 18, 2026"
 date: 2026-02-18
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -326,4 +326,254 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 ### 🎬 2026年的
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eTY2Lwnd2fI)**
+
+### Claude Sonnet 4.6: Anthropic's Most Capable Mid-Tier Model Yet
+
+* Sonnet 4.6 represents a comprehensive upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design capabilities
+* Now the default model for Free and Pro plans on claude.ai and Claude Cowork, maintaining the same pricing as Sonnet 4.5 ($3/$15 per million tokens)
+* Features a 1M token context window in beta, capable of holding entire codebases, lengthy contracts, or dozens of research papers
+* Developers prefer Sonnet 4.6 over its predecessor by a wide margin (70% preference rate), and even prefer it to Opus 4.5 (59% of the time)
+* Delivers Opus-class performance on real-world office tasks at a more accessible price point
+* Shows major improvements in computer use capabilities, achieving near-human-level performance on tasks like navigating spreadsheets and filling multi-step web forms
+* Demonstrates steady progress on OSWorld benchmark over 16 months, with the model interacting with computers through virtual mouse and keyboard like a human would
+* Enhanced resistance to prompt injection attacks compared to Sonnet 4.5, performing similarly to Opus 4.6 in safety evaluations
+* Users report better instruction following, less overengineering, fewer hallucinations, and more consistent multi-step task completion
+* Excels at long-horizon planning, as demonstrated in Vending-Bench Arena where it developed sophisticated business strategies
+* Produces notably more polished visual outputs with better layouts, animations, and design sensibility
+* Safety evaluations describe it as having "a broadly warm, honest, prosocial, and at times funny character" with strong safety behaviors
+
+### Claude Sonnet 4.6:Anthropic 迄今最强大的中端模型
+
+* Sonnet 4.6 在编码、计算机使用、长上下文推理、智能体规划、知识工作和设计等方面实现全面升级
+* 现已成为 claude.ai 和 Claude Cowork 免费版和专业版的默认模型,定价与 Sonnet 4.5 保持一致(每百万 token $3/$15)
+* 配备 100 万 token 上下文窗口(测试版),可容纳完整代码库、冗长合同或数十篇研究论文
+* 开发者对 Sonnet 4.6 的偏好率大幅领先前代版本(70%),甚至超过 Opus 4.5(59%)
+* 以更实惠的价格提供 Opus 级别的性能,特别是在实际办公任务中
+* 计算机使用能力大幅提升,在导航电子表格和填写多步骤网页表单等任务上接近人类水平
+* 在 16 个月内于 OSWorld 基准测试中稳步进步,模型像人类一样通过虚拟鼠标和键盘与计算机交互
+* 相比 Sonnet 4.5 增强了对提示注入攻击的抵抗力,安全评估表现与 Opus 4.6 相当
+* 用户反馈显示更好的指令遵循能力、更少的过度工程化、更少的幻觉以及更一致的多步骤任务完成
+* 擅长长期规划,在 Vending-Bench Arena 中展示了复杂的商业策略制定能力
+* 生成的视觉输出明显更精致,布局、动画和设计感更佳
+* 安全评估描述其具有"广泛温暖、诚实、亲社会且时而幽默的特性",具备强大的安全行为表现
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/claude-sonnet-4-6)**
+
+### AsteroidOS 2.0 Released - Major Open-Source Smartwatch OS Update
+
+* AsteroidOS 2.0 brings significant improvements including Always-on-Display, expanded watch support, new launcher styles, customizable quick settings, and major UI performance enhancements
+* Design improvements feature a redesigned QuickPanel with customizable toggles and shortcuts, seven new app launcher styles, enhanced wallpaper and watchface galleries with performance optimizations
+* New and updated apps include Nightstand mode for bedside clock functionality, Diamonds game (2048-style), redesigned Weather and Timer apps, and a new Flashlight app
+* Visual enhancements include new "breathing" background animations, triangulated wallpapers, animated boot splash, support for flat-tyre round screens, and improved calculator layout
+* System improvements include Noto Sans font supporting 49 languages (20+ new), Twemoji color emoji, customizable vibration patterns, and refined UI elements
+* Performance upgrades deliver optimized rendering for smoother animations, battery life improvements, and numerous stability fixes
+* Expanded device support adds 15 new watch models including Fossil Gen 4/5/6, Huawei Watch 1/2, various Ticwatch models, and others, with 5 watches moved to "Experimental" category
+* Notable technical achievement: Samsung Gear 2 is the first watch running on mainline Linux kernel without libhybris; Asus Zenwatch 2 has basic mainline kernel support
+* New feature matrix page provides detailed support levels for each watch model
+
+### AsteroidOS 2.0 发布 - 开源智能手表操作系统重大更新
+
+* AsteroidOS 2.0 带来重大改进,包括息屏显示、扩展手表支持、新启动器样式、可自定义快速设置和重大 UI 性能提升
+* 设计改进包括重新设计的快捷面板(可自定义开关和快捷方式)、七种新应用启动器样式、增强的壁纸和表盘画廊(含性能优化)
+* 新增和更新的应用包括床头时钟模式、Diamonds 游戏(2048 风格)、重新设计的天气和计时器应用,以及新的手电筒应用
+* 视觉增强包括新的"呼吸"背景动画、三角化壁纸、动画启动画面、支持平底圆形屏幕和改进的计算器布局
+* 系统改进包括支持 49 种语言的 Noto Sans 字体(新增 20+ 种)、Twemoji 彩色表情、可自定义振动模式和精致的 UI 元素
+* 性能升级提供优化渲染以实现更流畅的动画、电池续航改进和大量稳定性修复
+* 扩展设备支持新增 15 款手表型号,包括 Fossil Gen 4/5/6、华为手表 1/2、多款 Ticwatch 型号等,5 款手表移至"实验性"类别
+* 重要技术成就:三星 Gear 2 是首款运行主线 Linux 内核且无需 libhybris 的手表;华硕 Zenwatch 2 具有基本的主线内核支持
+* 新的功能矩阵页面提供每款手表型号的详细支持级别
+
+**[Read Original / 阅读原文](https://asteroidos.org/news/2-0-release/index.html)**
+
+### Using go fix to Modernize Go Code
+
+* Go 1.26 introduces a completely rewritten `go fix` command that automatically identifies and applies code improvements using modern language features
+* Run `go fix ./...` to update all packages, or use `-diff` flag to preview changes before applying them
+* The tool includes dozens of "modernizers" that replace outdated patterns with newer idioms (e.g., replacing `interface{}` with `any`, using `strings.Cut` instead of `strings.Index`)
+* Key modernizers include: `minmax` (using min/max functions), `rangeint` (range-over-int loops), and `stringscut` (simplified string operations)
+* Go 1.26's new `new(expr)` feature allows initializing pointers with values directly, eliminating helper functions like `newInt`
+* The `newexpr` fixer automatically replaces helper function patterns with direct `new()` calls across entire codebases
+* Modernizers only apply fixes to files requiring appropriate Go versions (via go.mod or build constraints)
+* Running `go fix` multiple times can reveal synergistic improvements as one modernization creates opportunities for others
+* Best practice: run from clean git state and apply prolific fixers as separate commits for easier code review
+* For cross-platform projects, run with different GOOS/GOARCH values for comprehensive coverage
+
+### 使用 go fix 现代化 Go 代码
+
+* Go 1.26 引入了完全重写的 `go fix` 命令,可自动识别并应用代码改进,利用现代语言特性
+* 运行 `go fix ./...` 更新所有包,或使用 `-diff` 标志在应用前预览更改
+* 该工具包含数十个"现代化器",将过时模式替换为新习惯用法(如将 `interface{}` 替换为 `any`,使用 `strings.Cut` 代替 `strings.Index`)
+* 主要现代化器包括:`minmax`(使用 min/max 函数)、`rangeint`(整数范围循环)和 `stringscut`(简化字符串操作)
+* Go 1.26 的新 `new(expr)` 特性允许直接用值初始化指针,消除了像 `newInt` 这样的辅助函数
+* `newexpr` 修复器自动将辅助函数模式替换为整个代码库中的直接 `new()` 调用
+* 现代化器仅对需要适当 Go 版本的文件应用修复(通过 go.mod 或构建约束)
+* 多次运行 `go fix` 可以发现协同改进,因为一个现代化会为其他现代化创造机会
+* 最佳实践:从干净的 git 状态运行,并将高产修复器作为单独提交以便于代码审查
+* 对于跨平台项目,使用不同的 GOOS/GOARCH 值运行以获得全面覆盖
+
+**[Read Original / 阅读原文](https://go.dev/blog/gofix)**
+
+### gogcli - Comprehensive Google Workspace CLI Tool
+
+* A fast, script-friendly command-line interface that brings Gmail, Calendar, Drive, Contacts, Tasks, Sheets, Docs, Slides, Forms, Chat, Classroom, Keep, and more Google services directly to your terminal
+* Key features include JSON-first output for automation, multi-account management with secure credential storage (OS keyring or encrypted file), least-privilege OAuth scopes, email tracking, service account support with domain-wide delegation, and comprehensive API coverage across 15+ Google services
+* Notable for its developer-focused design with auto-refreshing tokens, headless/remote authentication flows, command allowlisting for sandboxed environments, and extensive scripting capabilities - making it ideal for automation, CI/CD pipelines, and power users who prefer terminal workflows over web interfaces
+
+### gogcli - 全面的 Google Workspace 命令行工具
+
+* 一个快速、脚本友好的命令行界面,将 Gmail、日历、云端硬盘、通讯录、任务、表格、文档、幻灯片、表单、聊天、课堂、Keep 等 Google 服务直接带到终端
+* 主要特点包括面向自动化的 JSON 输出、支持多账户管理和安全凭证存储(系统钥匙串或加密文件)、最小权限 OAuth 范围、邮件追踪、支持服务账户的域范围委派,以及覆盖 15+ 个 Google 服务的全面 API 支持
+* 值得关注的原因在于其开发者导向的设计:自动刷新令牌、无头/远程认证流程、用于沙盒环境的命令白名单,以及强大的脚本能力 - 非常适合自动化、CI/CD 流水线和偏好终端工作流而非 Web 界面的高级用户
+
+**[View Repository / 查看仓库](https://github.com/steipete/gogcli)**
+
+### Zvec - Lightweight In-Process Vector Database for Lightning-Fast Similarity Search
+
+* An embeddable vector database that runs directly inside applications without separate servers, built on Alibaba's production-proven Proxima search engine for millisecond-level searches across billions of vectors
+* Supports both dense and sparse vectors with hybrid search capabilities (combining semantic similarity with structured filters), multi-vector queries, and simple Python/Node.js APIs that work in notebooks, servers, CLI tools, and edge devices
+* Gaining rapid traction with 1,473 stars today due to its zero-config simplicity, exceptional performance benchmarks, cross-platform support (Linux x64/ARM64, macOS ARM64), and ability to deliver production-grade vector search without infrastructure overhead
+
+### Zvec - 轻量级进程内向量数据库,实现闪电般快速的相似度搜索
+
+* 可直接嵌入应用程序内部运行的向量数据库,无需独立服务器,基于阿里巴巴久经考验的 Proxima 搜索引擎构建,能在毫秒级时间内搜索数十亿向量
+* 同时支持稠密和稀疏向量,具备混合搜索能力(语义相似度与结构化过滤结合)、多向量查询,提供简洁的 Python/Node.js API,可在笔记本、服务器、命令行工具和边缘设备上运行
+* 凭借零配置的简洁性、卓越的性能基准测试、跨平台支持(Linux x64/ARM64、macOS ARM64)以及无需基础设施开销即可提供生产级向量搜索的能力,今日获得 1,473 星标,热度迅速攀升
+
+**[View Repository / 查看仓库](https://github.com/alibaba/zvec)**
+
+### ClawWork - AI Coworker Economic Survival Benchmark
+
+* An economic simulation framework that transforms AI assistants into AI coworkers by testing their ability to complete real professional tasks, earn income, and maintain financial solvency
+* Uses 220 real-world tasks from OpenAI's GDPVal dataset spanning 44 occupations across manufacturing, finance, healthcare, and professional services; agents start with $10, pay for every token used, and must earn money by completing quality work
+* Notable for pioneering production-focused AI evaluation through economic pressure rather than traditional benchmarks - top agents achieve $1,500+/hour equivalent earnings, features live dashboard tracking real-time performance, and integrates with Nanobot/OpenClaw for drop-in deployment
+
+### ClawWork - AI 同事经济生存基准测试
+
+* 一个经济模拟框架,通过测试 AI 完成真实专业任务、赚取收入和维持财务偿付能力,将 AI 助手转变为 AI 同事
+* 使用 OpenAI GDPVal 数据集中的 220 个真实任务,涵盖制造业、金融、医疗和专业服务等 44 个职业;智能体初始资金 10 美元,每次生成 token 都需付费,必须通过完成高质量工作赚钱
+* 值得关注的原因:开创性地通过经济压力而非传统基准测试来评估 AI 的生产能力 - 顶级智能体可达到每小时 1500 美元以上的等效收入,提供实时仪表板追踪性能表现,并可与 Nanobot/OpenClaw 集成实现即插即用部署
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/ClawWork)**
+
+### portless - Stable Named URLs for Local Development
+
+* **What it does**: Replaces numeric port numbers with stable, named `.localhost` URLs for local development servers (e.g., `http://myapp.localhost:1355` instead of `http://localhost:3000`)
+
+* **Key features**: Auto-starting proxy server that routes named subdomains to random ports; eliminates port conflicts and memorization; supports monorepo workflows with multiple services; prevents cookie/storage clashes across projects; works seamlessly with AI coding agents; simple CLI integration (`portless myapp next dev`)
+
+* **Why it's notable**: Solves a fundamental pain point in local development that affects both human developers and AI agents - port conflicts, confusing browser history, broken bookmarks, and hardcoded configuration issues. Built by Vercel Labs, it's gaining traction (868 stars) as a practical solution for modern development workflows, especially in monorepo environments where managing multiple services becomes chaotic with traditional port-based approaches.
+
+---
+
+### portless - 本地开发的稳定命名 URL 工具
+
+* **功能介绍**: 将数字端口号替换为稳定的命名 `.localhost` URL,用于本地开发服务器(例如 `http://myapp.localhost:1355` 而非 `http://localhost:3000`)
+
+* **主要特点**: 自动启动的代理服务器,将命名子域名路由到随机端口;消除端口冲突和记忆负担;支持多服务 monorepo 工作流;防止项目间 cookie/存储冲突;与 AI 编码助手无缝协作;简单的 CLI 集成(`portless myapp next dev`)
+
+* **为何值得关注**: 解决了本地开发中影响人类开发者和 AI 助手的根本痛点 - 端口冲突、混乱的浏览器历史、失效的书签以及硬编码配置问题。由 Vercel Labs 开发,作为现代开发工作流的实用解决方案正在获得关注(868 星标),特别适合 monorepo 环境中管理多个服务时传统基于端口方式带来的混乱场景。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/portless)**
+
+### 🎬 How Claude Code Was Actually Developed - Dario Amodei
+
+**Channel:** Dwarkesh Patel
+
+* **What the video covers:** An in-depth discussion with Anthropic CEO Dario Amodei about the development process behind Claude Code, revealing the technical decisions, challenges, and innovations that went into building Anthropic's coding assistant.
+
+* **Key topics discussed:** The architectural choices for Claude Code, how Anthropic approached code generation differently from competitors, the role of constitutional AI in coding contexts, training methodologies specific to programming tasks, and the balance between capability and safety in developer tools.
+
+* **Why it's worth watching:** Offers rare insider perspective from Anthropic's leadership on how a major AI coding tool was built from the ground up. Valuable for developers interested in AI-assisted coding, ML engineers curious about training approaches for code models, and anyone following the competitive landscape of AI development tools. Dario's technical depth combined with strategic insights makes this essential viewing for understanding the current state and future direction of AI coding assistants.
+
+---
+
+### 🎬 Claude Code 的实际开发过程 - Dario Amodei 访谈
+
+**频道:** Dwarkesh Patel
+
+* **视频内容概述:** Anthropic 首席执行官 Dario Amodei 深入讨论 Claude Code 的开发过程,揭示了构建 Anthropic 编码助手背后的技术决策、挑战和创新。
+
+* **主要话题:** Claude Code 的架构选择、Anthropic 如何以不同于竞争对手的方式处理代码生成、宪法式 AI 在编码场景中的作用、针对编程任务的特定训练方法,以及开发者工具中能力与安全性之间的平衡。
+
+* **为何值得观看:** 提供了来自 Anthropic 领导层关于如何从零开始构建主要 AI 编码工具的罕见内部视角。对于对 AI 辅助编码感兴趣的开发者、好奇代码模型训练方法的机器学习工程师,以及关注 AI 开发工具竞争格局的任何人都极具价值。Dario 的技术深度结合战略洞察,使其成为理解 AI 编码助手当前状态和未来方向的必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eRov-sFcf1s)**
+
+### 🎬 How AI is breaking the SaaS business model...
+
+**Channel:** Fireship
+
+* What the video covers: An analysis of how artificial intelligence is fundamentally disrupting the traditional Software-as-a-Service (SaaS) business model that has dominated the tech industry for years
+* Key topics discussed: The shift from subscription-based software to AI-powered alternatives, how AI coding agents and automation tools are replacing traditional SaaS products, the economic implications for software companies, and what this means for the future of software development and pricing models
+* Why it's worth watching: Fireship provides sharp, concise insights into one of the most significant shifts happening in tech right now. If you're a developer, entrepreneur, or anyone interested in the software industry, understanding how AI is reshaping business models is crucial for staying ahead of the curve. The video likely explores both the opportunities and challenges this disruption creates.
+
+---
+
+### 🎬 AI 如何打破 SaaS 商业模式...
+
+**频道:** Fireship
+
+* 视频内容概述: 深入分析人工智能如何从根本上颠覆多年来主导科技行业的传统软件即服务(SaaS)商业模式
+* 主要话题: 从订阅制软件向 AI 驱动替代方案的转变,AI 编码代理和自动化工具如何取代传统 SaaS 产品,对软件公司的经济影响,以及这对软件开发和定价模式未来的意义
+* 为何值得观看: Fireship 以其精准简洁的风格,深入剖析当前科技领域最重大的变革之一。无论你是开发者、创业者,还是对软件行业感兴趣的人,理解 AI 如何重塑商业模式对于保持竞争力至关重要。视频可能探讨了这一颠覆带来的机遇与挑战。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cxcb55zr2Q8)**
+
+### 🎬 I Made This Website with ZERO Coding Skills
+**Channel:** Dhruv Rathee Shorts
+
+* What the video covers: Demonstrates how to build a functional website without any programming knowledge using AI tools
+* Key topics discussed: No-code website development, AI-powered web creation tools, accessibility of web development for non-technical users
+* Why it's worth watching: Perfect for beginners who want to create websites but feel intimidated by coding; shows practical application of AI tools in real-world scenarios and proves that technical barriers to web development are rapidly disappearing
+
+---
+
+### 🎬 零编程技能制作网站
+**频道:** Dhruv Rathee Shorts
+
+* 视频内容概述: 演示如何在不具备任何编程知识的情况下,使用AI工具构建功能完整的网站
+* 主要话题: 无代码网站开发、AI驱动的网页创建工具、非技术用户也能轻松开发网站
+* 为何值得观看: 非常适合想要创建网站但对编程感到畏惧的初学者;展示了AI工具在实际场景中的应用,证明了网站开发的技术门槛正在迅速消失
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jKFOitEtR0g)**
+
+### 🎬 Claude Opus 4.6 vs GPT 5.3 Codex: Which is better for programming? | Peter Steinberger
+
+**Channel:** Lex Clips
+
+* **What the video covers:** A comparative analysis between Claude Opus 4.6 and GPT 5.3 Codex, two advanced AI models designed for programming assistance, featuring insights from Peter Steinberger
+* **Key topics discussed:** Performance comparison of both models in real-world coding scenarios, strengths and weaknesses of each AI system for different programming tasks, practical developer experience and workflow integration
+* **Why it's worth watching:** Offers expert perspective from Peter Steinberger on choosing the right AI coding assistant, provides actionable insights for developers looking to enhance their productivity with AI tools, and delivers a balanced evaluation of cutting-edge programming AI models
+
+---
+
+### 🎬 Claude Opus 4.6 vs GPT 5.3 Codex: 哪个更适合编程? | Peter Steinberger
+
+**频道:** Lex Clips
+
+* **视频内容概述:** 深度对比 Claude Opus 4.6 和 GPT 5.3 Codex 两款先进的编程辅助 AI 模型,由 Peter Steinberger 分享专业见解
+* **主要话题:** 两款模型在实际编码场景中的性能对比、各自在不同编程任务中的优势与劣势、开发者实际使用体验和工作流集成
+* **为何值得观看:** 提供 Peter Steinberger 关于如何选择合适 AI 编程助手的专家视角,为希望通过 AI 工具提升生产力的开发者提供可操作的洞察,并对前沿编程 AI 模型进行平衡评估
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=j190mwiVlwA)**
+
+### 🎬 Does AI actually make you a faster programmer? (collab with @SonarSource)
+
+**Channel:** Alberta Tech
+
+* **What the video covers:** An in-depth exploration of whether AI coding assistants genuinely improve developer productivity and speed, featuring a collaboration with SonarSource to examine real-world impacts on coding workflows
+* **Key topics discussed:** Practical testing of AI-powered development tools, measuring actual productivity gains versus perceived benefits, code quality considerations when using AI assistance, and the balance between speed and maintainability in AI-assisted coding
+* **Why it's worth watching:** Provides evidence-based insights rather than hype about AI coding tools, helping developers make informed decisions about integrating AI into their workflow. The collaboration with SonarSource (a code quality platform) adds credibility by examining not just speed but also the quality of AI-generated code
+
+---
+
+### 🎬 AI 真的能让你编程更快吗?(与 @SonarSource 合作)
+
+**频道:** Alberta Tech
+
+* **视频内容概述:** 深入探讨 AI 编程助手是否真正提高开发者的生产力和编码速度,与 SonarSource 合作研究 AI 工具对实际编码工作流程的影响
+* **主要话题:** 实际测试 AI 驱动的开发工具、衡量真实生产力提升与感知收益的对比、使用 AI 辅助时的代码质量考量,以及 AI 辅助编程中速度与可维护性之间的平衡
+* **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
 
