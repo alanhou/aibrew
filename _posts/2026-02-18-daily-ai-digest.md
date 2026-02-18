@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 18, 2026"
 date: 2026-02-18
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -576,4 +576,122 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 提供基于证据的见解而非炒作,帮助开发者做出是否将 AI 集成到工作流程中的明智决策。与 SonarSource(代码质量平台)的合作增加了可信度,不仅关注速度,还检验 AI 生成代码的质量
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7Jj-pZpWspI)**
+
+### Waymo's Remote Assistance: Advisory Role, Not Remote Control
+
+* **No remote drivers**: Waymo's Remote Assistance (RA) provides advice to the autonomous driving system, not continuous control or monitoring
+* **Fast response times**: Median latency is 150ms for U.S. operations and 250ms internationally - comparable to human reaction time
+* **Event Response Team (ERT)**: U.S.-based specialized team handles complex situations like emergency coordination and collision protocols
+* **Rigorous vetting**: All RA agents maintain driver's licenses and undergo comprehensive background checks, drug testing, and spatial recognition assessments
+* **Scale context**: 70 RA agents worldwide support 3,000 vehicles driving 4+ million miles weekly and providing 400,000+ rides
+* **Not like aircraft dispatch**: Unlike aviation dispatch that actively monitors flights, RA only responds when the autonomous system requests information
+* **Global operations**: Expanding worldwide with both U.S.-based and international operations teams for 24/7 coverage
+
+### Waymo 远程协助系统:提供建议而非远程控制
+
+* **无远程驾驶员**:Waymo 的远程协助(RA)系统仅向自动驾驶系统提供建议,而非持续控制或监控车辆
+* **快速响应**:美国运营中心的中位延迟为 150 毫秒,国际中心为 250 毫秒——与人类反应时间相当
+* **事件响应团队(ERT)**:专门的美国团队处理复杂情况,如紧急协调和碰撞后处理
+* **严格审查**:所有 RA 人员必须持有驾照,并通过全面背景调查、药检和空间识别能力评估
+* **运营规模**:全球约 70 名 RA 人员支持 3,000 辆车队,每周行驶超 400 万英里,提供 40 万次以上乘车服务
+* **不同于航空调度**:与主动监控航班的航空调度不同,RA 仅在自动驾驶系统请求信息时响应
+* **全球运营**:在全球扩张,配备美国和国际运营团队,确保 24/7 全天候服务
+
+**[Read Original / 阅读原文](https://waymo.com/blog/?modal=short-advice-not-control-the-role-of-remote-assistance)**
+
+I need the complete content to provide an accurate summary. The text appears to be cut off mid-sentence. Could you provide the rest of the article?
+
+**[Read Original / 阅读原文](https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/rathbuns-operator.html)**
+
+### BarraCUDA: Open-Source CUDA Compiler for AMD GPUs
+
+* A standalone CUDA compiler written in 15,000 lines of C99 that compiles `.cu` files directly to AMD RDNA 3 (GFX11) machine code without LLVM or HIP translation layers
+* Features complete compilation pipeline: preprocessor → lexer → parser → semantic analysis → SSA IR (BIR) → instruction selection → register allocation → binary encoding → ELF emission
+* Supports core CUDA features including `__global__`/`__device__` qualifiers, thread/block indexing, `__shared__` memory, `__syncthreads()`, atomic operations, warp intrinsics, vector types, half precision, and cooperative groups
+* Built with zero external dependencies using simple `make` command, generates validated machine code checked against `llvm-objdump`
+* Includes comprehensive test suite with 14 test files covering 35+ kernels from basic vector addition to complex N-body simulations and tiled matrix multiplication
+* Current limitations include missing compound assignment operators, bare `unsigned` type, `const` qualifier, and 2D shared memory arrays - all planned for near-term fixes
+* Roadmap includes optimization improvements (instruction scheduling, better register allocation, constant folding) and support for additional architectures (Tenstorrent, Intel Arc, RISC-V Vector Extension)
+* Apache 2.0 licensed project by New Zealand-based developer, demonstrating that writing a GPU compiler from scratch is hard but achievable
+
+### BarraCUDA: 面向 AMD GPU 的开源 CUDA 编译器
+
+* 用 15,000 行 C99 代码编写的独立 CUDA 编译器,可将 `.cu` 文件直接编译为 AMD RDNA 3 (GFX11) 机器码,无需 LLVM 或 HIP 转换层
+* 具备完整的编译流程:预处理器 → 词法分析器 → 语法分析器 → 语义分析 → SSA 中间表示 (BIR) → 指令选择 → 寄存器分配 → 二进制编码 → ELF 生成
+* 支持核心 CUDA 特性,包括 `__global__`/`__device__` 限定符、线程/块索引、`__shared__` 内存、`__syncthreads()`、原子操作、warp 内建函数、向量类型、半精度浮点数和协作组
+* 零外部依赖,使用简单的 `make` 命令构建,生成的机器码已通过 `llvm-objdump` 验证
+* 包含全面的测试套件,14 个测试文件涵盖 35+ 个内核,从基础向量加法到复杂的 N 体模拟和分块矩阵乘法
+* 当前限制包括缺少复合赋值运算符、裸 `unsigned` 类型、`const` 限定符和二维共享内存数组 - 均已列入近期修复计划
+* 路线图包括优化改进(指令调度、更好的寄存器分配、常量折叠)以及支持更多架构(Tenstorrent、Intel Arc、RISC-V 向量扩展)
+* 采用 Apache 2.0 许可证的项目,由新西兰开发者创建,证明从零开始编写 GPU 编译器虽然困难但可以实现
+
+**[Read Original / 阅读原文](https://github.com/Zaneham/BarraCUDA)**
+
+### 🎬 Vibe Coding is a Trap (What Senior Devs See That You Don't)
+
+**Channel:** DevForge
+
+* What the video covers: This video critically examines the "vibe coding" trend, explaining why relying solely on intuition and feel-good coding practices without solid fundamentals can be detrimental to your development career
+* Key topics discussed: The pitfalls of vibe coding, the difference between senior and junior developer approaches, why structured thinking and engineering principles matter more than coding by "vibes," and how to avoid common traps that prevent career growth
+* Why it's worth watching: Essential viewing for developers who want to understand the gap between trendy coding approaches and professional software engineering practices. Offers insights into what separates senior developers from juniors and provides actionable advice on building a sustainable development career beyond surface-level trends
+
+---
+
+### 🎬 "氛围编程"是个陷阱(资深开发者看到了什么)
+
+**频道:** DevForge
+
+* 视频内容概述: 本视频深入剖析了"氛围编程"(vibe coding)这一流行趋势,解释了为什么仅凭直觉和感觉良好的编程实践而缺乏扎实基础会对开发职业生涯造成不利影响
+* 主要话题: 氛围编程的陷阱、资深与初级开发者方法的差异、为什么结构化思维和工程原则比凭"感觉"编程更重要,以及如何避免阻碍职业成长的常见误区
+* 为何值得观看: 对于想要理解流行编程方法与专业软件工程实践之间差距的开发者来说,这是必看内容。深入剖析了资深开发者与初级开发者的区别,并提供了超越表面趋势、建立可持续发展职业生涯的实用建议
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ya6520zh4pQ)**
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**Channel:** Payilagam
+
+* What the video covers: This tutorial explains Java Lambda Expressions using humor from popular Tamil comedian Vadivelu's "Ingu Nalla Meengal Virkappadum" comedy scene, making complex programming concepts more accessible and entertaining for Tamil-speaking audiences.
+
+* Key topics discussed: Lambda expressions in Java, functional programming concepts, syntax and implementation of lambda expressions, practical examples demonstrating how lambdas simplify code compared to traditional anonymous classes.
+
+* Why it's worth watching: Perfect for Tamil-speaking developers who want to learn Java's lambda expressions in their native language. The creative use of Vadivelu's comedy as a teaching metaphor makes this technical content engaging and memorable, helping viewers grasp functional programming concepts through cultural references they already understand.
+
+---
+
+### 🎬 Lambda Expression in Java Explained with Vadivelu Comedy | Java Tutorial in Tamil
+
+**频道:** Payilagam
+
+* 视频内容概述: 本教程通过泰米尔语著名喜剧演员 Vadivelu 的"Ingu Nalla Meengal Virkappadum"喜剧场景来解释 Java Lambda 表达式,为泰米尔语观众提供了一种更易理解且富有娱乐性的编程学习方式。
+
+* 主要话题: Java 中的 Lambda 表达式、函数式编程概念、Lambda 表达式的语法和实现、通过实际示例展示 Lambda 如何简化代码(相比传统匿名类)。
+
+* 为何值得观看: 非常适合想用母语学习 Java Lambda 表达式的泰米尔语开发者。创意性地运用 Vadivelu 的喜剧作为教学隐喻,使技术内容变得引人入胜且易于记忆,帮助观众通过他们熟悉的文化元素理解函数式编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KFHpwtdsk7o)**
+
+### 🎬 Google AI Studio - Full Tutorial 2026: How To Build an App
+
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive tutorial on using Google AI Studio to build applications in 2026, demonstrating the platform's capabilities and workflow for app development without traditional coding.
+
+* **Key topics discussed:** Google AI Studio's interface and features, step-by-step app building process, integration with AI models, no-code/low-code development techniques, and practical implementation strategies for creating functional applications.
+
+* **Why it's worth watching:** Perfect for developers and non-developers alike who want to leverage Google's AI tools for rapid app development. The tutorial provides hands-on guidance on building apps using one of Google's latest AI platforms, making it accessible for those looking to create AI-powered applications without extensive programming knowledge.
+
+---
+
+### 🎬 Google AI Studio - 完整教程 2026：如何构建应用程序
+
+**频道:** Mikey No Code
+
+* **视频内容概述:** 全面讲解如何使用 Google AI Studio 在 2026 年构建应用程序，展示该平台的功能和无需传统编码的应用开发工作流程。
+
+* **主要话题:** Google AI Studio 的界面和功能、分步应用构建过程、与 AI 模型的集成、无代码/低代码开发技术，以及创建功能性应用程序的实用实施策略。
+
+* **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
 
