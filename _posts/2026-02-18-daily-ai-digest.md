@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 18, 2026"
 date: 2026-02-18
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -694,4 +694,130 @@ I need the complete content to provide an accurate summary. The text appears to 
 * **为何值得观看:** 非常适合希望利用 Google AI 工具进行快速应用开发的开发者和非开发者。该教程提供了使用 Google 最新 AI 平台之一构建应用的实践指导，使那些希望在没有丰富编程知识的情况下创建 AI 驱动应用程序的人能够轻松上手。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Dem3ZSQ6RVM)**
+
+### TV's Best Drama You've Probably Never Heard Of
+
+* **Recursion as metaphor**: The show uses the computer science concept of recursion—where a function calls itself repeatedly—to describe both protagonist Cameron's journey and the series' narrative structure
+* **Constant reinvention**: Across four seasons and 10 years, *Halt and Catch Fire* features time jumps, location changes, and multiple company rises and falls, yet maintains narrative cohesion
+* **Gravitational relationships**: Despite constant change, the characters are drawn back to each other through deep connections that transcend time and space
+* **Process over results**: The show focuses on the journey rather than outcomes—characters rarely achieve their original goals, but find meaning in the work and relationships formed along the way
+* **What endures**: In an industry built on disposability and constant advancement, the series explores human connection as the one constant that persists
+* **Cyclical, not episodic**: The finale offers not a goodbye but a new beginning, emphasizing life's recursive nature—innovate, fail, learn, and start again
+* **Currently streaming on Netflix**
+
+### 你可能从未听说过的最佳电视剧
+
+* **递归作为隐喻**：该剧使用计算机科学中的递归概念——函数反复调用自身——来描述主角卡梅隆的旅程以及整部剧的叙事结构
+* **不断重塑**：《Halt and Catch Fire》跨越四季十年，包含时间跳跃、地点变化和多家公司的兴衰，但始终保持叙事连贯性
+* **引力般的关系**：尽管不断变化，角色们通过超越时空的深厚联系被拉回彼此身边
+* **过程重于结果**：该剧关注旅程而非结果——角色很少实现最初目标,但在工作和彼此相处的时刻中锻造出更伟大的东西
+* **什么能持久**：在一个建立在一次性和不断进步基础上的行业中，该剧探索人际联系作为唯一持久不变的事物
+* **循环而非片段式**：大结局不是告别而是新的开始，强调生活的递归本质——创新、失败、学习、再次开始
+* **目前在Netflix上播放**
+
+**[Read Original / 阅读原文](https://www.sceneandheardnu.com/content/halt-and-catch-fire)**
+
+### AI Productivity Paradox: Executives See Minimal Impact Despite Massive Investment
+
+* Robert Solow's 1987 "productivity paradox" is repeating with AI—despite $250 billion in corporate investments, 90% of firms report no productivity or employment impact over the past three years
+* NBER study of 6,000 executives across U.S., U.K., Germany, and Australia found two-thirds use AI only 1.5 hours per week, while 25% don't use it at all
+* Contradictory research emerges: Federal Reserve reports 1.9% productivity growth since ChatGPT's launch, while MIT's Nobel laureate Daron Acemoglu projects only 0.5% gains over a decade
+* Worker confidence in AI plummeted 18% in 2025 despite 13% increase in usage, according to ManpowerGroup's survey of 14,000 workers across 19 countries
+* Apollo chief economist Torsten Slok echoes Solow: "AI is everywhere except in the incoming macroeconomic data"—no visible impact on employment, productivity, or inflation statistics
+* Historical precedent offers hope: IT productivity slump of 1970s-80s eventually yielded 1.5% productivity growth from 1995-2005
+* Stanford economist Erik Brynjolfsson sees early reversal signs—Q4 GDP tracking 3.7% with only 181,000 job gains suggests 2.7% U.S. productivity jump
+* Key difference from IT era: fierce competition among LLM builders drives down AI tool prices, eliminating monopoly pricing power
+* IBM triples Gen Z hiring despite AI automation capabilities, recognizing need to maintain leadership pipeline
+* Future productivity depends on implementation strategy across economic sectors, not the AI products themselves
+
+### AI生产力悖论：高管未见成效，重现IT时代困局
+
+* 罗伯特·索洛1987年提出的"生产力悖论"在AI时代重演——尽管企业投资2500亿美元，90%的公司报告过去三年AI对生产力和就业无影响
+* 美国国家经济研究局对美英德澳6000名高管的研究发现：三分之二的人每周仅使用AI 1.5小时，25%完全不使用
+* 研究结果相互矛盾：美联储报告ChatGPT推出后生产力增长1.9%，而麻省理工诺奖得主阿西莫格鲁预测未来十年仅增长0.5%
+* 万宝盛华对19个国家14000名员工的调查显示：2025年AI使用率增长13%，但信心度暴跌18%
+* 阿波罗首席经济学家斯洛克呼应索洛观点："AI无处不在，但宏观经济数据中却看不到"——就业、生产力、通胀数据均无明显变化
+* 历史先例带来希望：1970-80年代IT生产力低迷最终在1995-2005年间实现1.5%的增长
+* 斯坦福经济学家布林约尔松发现逆转迹象——第四季度GDP增长3.7%但就业仅增18.1万，暗示美国生产力跃升2.7%
+* 与IT时代关键差异：大语言模型激烈竞争压低AI工具价格，消除垄断定价权
+* IBM尽管具备AI自动化能力，仍将Z世代招聘增加两倍，以维护领导力人才梯队
+* 未来生产力取决于各经济部门的实施策略，而非AI产品本身
+
+**[Read Original / 阅读原文](https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/)**
+
+### Minimal x86 Kernel Built in Zig
+
+* A bare-metal x86 kernel written entirely in Zig with zero assembly files, boots via Multiboot 1 protocol and displays colored text on VGA screen
+* Cross-compiles from any host (including Apple Silicon) using Zig's bundled LLVM, tested instantly with QEMU without needing ISO images or GRUB installation
+* Boot flow: QEMU loads ELF binary → CPU starts in 32-bit protected mode at `_start` → sets up 16 KiB stack → `kmain` clears VGA buffer and prints message → CPU halts
+* Requires only Zig 0.14.0+ and QEMU; run with `zig build` then `zig build run` or `qemu-system-i386 -kernel zig-out/bin/kernel`
+* Project structure includes build.zig (build script), linker.ld (linker script), and src/main.zig (entire kernel with Multiboot header, VGA driver, and kmain)
+* Technical highlights: targets `x86-freestanding-none`, uses Multiboot 1 protocol with 12-byte header, direct VGA memory-mapped I/O at 0xB8000, red zone and SSE/AVX disabled, Multiboot header as Zig `extern struct`
+
+### 用 Zig 构建的最小 x86 内核
+
+* 完全用 Zig 编写的裸机 x86 内核,零汇编文件,通过 Multiboot 1 协议启动并在 VGA 屏幕上显示彩色文本
+* 使用 Zig 内置的 LLVM 从任何主机(包括 Apple Silicon)交叉编译,通过 QEMU 即时测试,无需 ISO 镜像或 GRUB 安装
+* 启动流程:QEMU 加载 ELF 二进制文件 → CPU 在 `_start` 以 32 位保护模式启动 → 设置 16 KiB 栈 → `kmain` 清除 VGA 缓冲区并打印消息 → CPU 停机
+* 仅需 Zig 0.14.0+ 和 QEMU;运行 `zig build` 然后 `zig build run` 或 `qemu-system-i386 -kernel zig-out/bin/kernel`
+* 项目结构包括 build.zig(构建脚本)、linker.ld(链接器脚本)和 src/main.zig(包含 Multiboot 头、VGA 驱动和 kmain 的完整内核)
+* 技术要点:目标为 `x86-freestanding-none`,使用带 12 字节头的 Multiboot 1 协议,在 0xB8000 直接进行 VGA 内存映射 I/O,禁用红区和 SSE/AVX,Multiboot 头作为 Zig `extern struct`
+
+**[Read Original / 阅读原文](https://github.com/lopespm/zig-minimal-kernel-x86)**
+
+### React Doctor - AI-Powered React Code Diagnostics and Auto-Fix Tool
+
+**What it does:**
+React Doctor is a developer tool that enables AI coding agents to automatically diagnose and fix issues in React codebases. It acts as a bridge between your React application and AI assistants, allowing them to identify performance problems, code quality issues, and bugs, then apply fixes automatically.
+
+**Key features:**
+* AI agent integration for automated code analysis and fixes
+* Real-time React component diagnostics
+* Performance issue detection and optimization
+* Automated refactoring capabilities
+* TypeScript-first implementation for type safety
+* Seamless integration with existing React projects
+
+**Why it's notable:**
+With nearly 900 stars, React Doctor represents the emerging trend of AI-assisted development tools. It addresses a critical pain point for React developers by automating the tedious process of code review and bug fixing. As AI coding agents become more prevalent, tools like React Doctor that enable them to understand and modify React-specific patterns are becoming essential infrastructure for modern development workflows.
+
+---
+
+### React Doctor - AI 驱动的 React 代码诊断与自动修复工具
+
+**功能介绍:**
+React Doctor 是一款开发者工具,让 AI 编码代理能够自动诊断和修复 React 代码库中的问题。它充当 React 应用程序与 AI 助手之间的桥梁,使其能够识别性能问题、代码质量缺陷和 bug,然后自动应用修复方案。
+
+**主要特点:**
+* 集成 AI 代理实现自动化代码分析和修复
+* 实时 React 组件诊断
+* 性能问题检测与优化
+* 自动化重构能力
+* TypeScript 优先实现,确保类型安全
+* 与现有 React 项目无缝集成
+
+**为何值得关注:**
+拥有近 900 个星标的 React Doctor 代表了 AI 辅助开发工具的新兴趋势。它通过自动化繁琐的代码审查和 bug 修复过程,解决了 React 开发者的关键痛点。随着 AI 编码代理变得越来越普遍,像 React Doctor 这样能够理解和修改 React 特定模式的工具,正在成为现代开发工作流程中的必备基础设施。
+
+**[View Repository / 查看仓库](https://github.com/millionco/react-doctor)**
+
+### 🎬 Seminggu Ngoding Smartwatch...
+
+**Channel:** Dea Afrizal
+
+* What the video covers: A week-long journey of coding and developing custom firmware for a smartwatch, exploring its potential as a developer tool
+* Key topics discussed: Custom firmware development, automation capabilities, IoT device integration, and practical use cases for programmers using smartwatches
+* Why it's worth watching: Offers hands-on insights into smartwatch development from a programmer's perspective, demonstrating how wearable devices can be customized for developer workflows and IoT projects
+
+---
+
+### 🎬 一周智能手表编程实战
+
+**频道:** Dea Afrizal
+
+* 视频内容概述: 记录了为期一周的智能手表编程开发过程,探索其作为开发者工具的潜力,包括自定义固件开发
+* 主要话题: 自定义固件开发、自动化功能实现、物联网设备集成,以及程序员使用智能手表的实际应用场景
+* 为何值得观看: 从程序员视角提供智能手表开发的实践经验,展示如何为开发者工作流程和物联网项目定制可穿戴设备
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8fKvBT_fIh0)**
 
