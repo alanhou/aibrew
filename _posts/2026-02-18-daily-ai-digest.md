@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 18, 2026"
 date: 2026-02-18
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，10个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -875,4 +875,189 @@ React Doctor 是一款开发者工具,让 AI 编码代理能够自动诊断和�
 * **文档资源**:在 taleshape.com/shaper/docs/ 提供完整的入门和生产部署指南
 
 **[Read Original / 阅读原文](https://github.com/taleshape-com/shaper)**
+
+<!-- [Title-Only] -->
+### Terminals should generate the 256-color palette
+
+* This article likely discusses how terminal emulators handle the 256-color palette system, arguing that terminals should dynamically generate these colors rather than using fixed values
+* It probably explores the technical implementation details of terminal color systems, the limitations of current approaches, and proposes a better method for color palette generation that could improve consistency and flexibility across different terminal applications
+* Why it might be interesting: For developers who work extensively in terminal environments, understanding color palette generation could help create better terminal themes, improve readability, and ensure consistent color rendering across different systems. This is particularly relevant for those building terminal applications, color schemes, or working on terminal emulator development.
+
+---
+
+### 终端应该生成 256 色调色板
+
+* 这篇文章可能讨论终端模拟器如何处理 256 色调色板系统，主张终端应该动态生成这些颜色，而不是使用固定值
+* 文章可能探讨终端颜色系统的技术实现细节、当前方法的局限性，并提出一种更好的调色板生成方法，以提高不同终端应用程序之间的一致性和灵活性
+* 为何值得关注：对于大量使用终端环境的开发者来说，了解调色板生成机制有助于创建更好的终端主题、提高可读性，并确保不同系统间颜色渲染的一致性。这对于构建终端应用程序、配色方案或从事终端模拟器开发的人员尤其相关。
+
+**[Read Original / 阅读原文](https://gist.github.com/jake-stewart/0a8ea46159a7da2c808e5be2177e1783)**
+
+### Native FreeBSD Kerberos/LDAP Integration with FreeIPA/IDM
+
+* Uses MIT Kerberos from FreeBSD 15.0-RELEASE with lightweight nslcd daemon from net/nss-pam-ldapd package
+* Switch pkg repository from quarterly to latest and install required packages: nss-pam-ldapd, pam_mkhomedir, sudo, doas
+* Configure DNS resolution via /etc/hosts if needed, mapping FreeIPA/IDM server and FreeBSD host IPs
+* On FreeIPA/IDM server: add FreeBSD host DNS record, create host entry, generate keytab, and make it accessible via HTTP
+* On FreeBSD host: fetch keytab to /etc/krb5.keytab with proper permissions (640)
+* Add sshd user to nslcd group for keytab read access
+* Configure /etc/krb5.conf with realm LAB.ORG, KDC, and domain mappings
+* Create /usr/local/etc/nslcd.conf with LDAP URI, base DN, GSSAPI SASL authentication, and force /bin/sh shell
+* Enable and start nslcd daemon service
+* Modify /etc/nsswitch.conf to use "files ldap" for group and passwd lookups
+* Configure SSH with GSSAPI authentication settings in /etc/ssh/sshd_config
+* Add pam_mkhomedir.so to /etc/pam.d/sshd for automatic home directory creation with mode 0700
+* Configure sudo by adding user to wheel group and setting NOPASSWD in /usr/local/etc/sudoers
+* Configure doas with permit rules for root and wheel group in /usr/local/etc/doas.conf
+* Test authentication: kinit on FreeIPA server, SSH to FreeBSD host with Kerberos ticket, verify user ID and sudo access
+* Optional: silence login by creating ~/.hushlogin and removing fortune from ~/.profile
+
+### FreeBSD 原生 Kerberos/LDAP 与 FreeIPA/IDM 集成
+
+* 使用 FreeBSD 15.0-RELEASE 的 MIT Kerberos 和 net/nss-pam-ldapd 包中的轻量级 nslcd 守护进程
+* 将 pkg 仓库从 quarterly 切换到 latest,安装所需包:nss-pam-ldapd、pam_mkhomedir、sudo、doas
+* 如需要通过 /etc/hosts 配置 DNS 解析,映射 FreeIPA/IDM 服务器和 FreeBSD 主机 IP
+* 在 FreeIPA/IDM 服务器上:添加 FreeBSD 主机 DNS 记录,创建主机条目,生成 keytab,并通过 HTTP 使其可访问
+* 在 FreeBSD 主机上:获取 keytab 到 /etc/krb5.keytab 并设置适当权限(640)
+* 将 sshd 用户添加到 nslcd 组以获得 keytab 读取权限
+* 配置 /etc/krb5.conf,包含 LAB.ORG 域、KDC 和域映射
+* 创建 /usr/local/etc/nslcd.conf,配置 LDAP URI、基础 DN、GSSAPI SASL 认证,并强制使用 /bin/sh shell
+* 启用并启动 nslcd 守护进程服务
+* 修改 /etc/nsswitch.conf,对 group 和 passwd 查找使用"files ldap"
+* 在 /etc/ssh/sshd_config 中配置 SSH 的 GSSAPI 认证设置
+* 在 /etc/pam.d/sshd 中添加 pam_mkhomedir.so 以自动创建 mode 0700 的家目录
+* 配置 sudo:将用户添加到 wheel 组并在 /usr/local/etc/sudoers 中设置 NOPASSWD
+* 在 /usr/local/etc/doas.conf 中为 root 和 wheel 组配置 doas 许可规则
+* 测试认证:在 FreeIPA 服务器上 kinit,使用 Kerberos 票据 SSH 到 FreeBSD 主机,验证用户 ID 和 sudo 访问
+* 可选:通过创建 ~/.hushlogin 和从 ~/.profile 删除 fortune 来静默登录
+
+**[Read Original / 阅读原文](https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/)**
+
+### Progress Report: Linux 6.19 - Asahi Linux
+
+* DisplayPort Alt Mode via USB-C is now functional through the "fairydust" branch, enabling external display output on Apple Silicon Macs after years of development
+* Four hardware blocks (DCP, DPXBAR, ATCPHY, ACE) were reverse-engineered and integrated to achieve USB-C display output
+* Current limitations include single USB-C port support, hot-plug quirks, and color accuracy issues in some configurations
+* M3 series support is progressing with three new contributors developing devicetrees and kernel patches
+* Basic M3 functionality achieved: keyboard, touchpad, WiFi, NVMe, and USB3 working on M3 MacBook Air
+* M3 GPU requires significant reverse engineering due to architectural changes (ray tracing, mesh shaders, Dynamic Caching)
+* M3 release blocked by software rendering performance, DCP firmware changes for macOS 14, and missing features like speaker safety
+* 120 Hz display support enabled on 14" and 16" MacBook Pros starting with kernel 6.18.4
+* Solution uses static timestamp values as a workaround, enabling 120 Hz but preventing full VRR support
+* DCP driver development has been piecemeal due to complexity, time constraints, and plans for eventual Rust rewrite
+
+### 进度报告:Linux 6.19 - Asahi Linux
+
+* 通过"fairydust"分支实现了USB-C的DisplayPort Alt Mode功能,经过多年开发终于在Apple Silicon Mac上实现外接显示器输出
+* 逆向工程并集成了四个硬件模块(DCP、DPXBAR、ATCPHY、ACE)以实现USB-C显示输出
+* 当前限制包括仅支持单个USB-C端口、热插拔问题以及某些配置下的色彩准确性问题
+* M3系列支持正在推进,三位新贡献者开发了设备树和内核补丁
+* M3基础功能已实现:M3 MacBook Air上的键盘、触控板、WiFi、NVMe和USB3均可工作
+* M3 GPU因架构变化(光线追踪、网格着色器、动态缓存)需要大量逆向工程工作
+* M3发布受阻于软件渲染性能、macOS 14的DCP固件变更以及扬声器安全等缺失功能
+* 从内核6.18.4版本开始,14英寸和16英寸MacBook Pro支持120 Hz显示
+* 解决方案使用静态时间戳值作为变通方法,实现了120 Hz但无法支持完整的VRR功能
+* DCP驱动开发因复杂性、时间限制和最终用Rust重写的计划而采用了零散的开发方式
+
+**[Read Original / 阅读原文](https://asahilinux.org/2026/02/progress-report-6-19/)**
+
+### OpenCTI - Open Cyber Threat Intelligence Platform
+
+* What it does: OpenCTI is an open source platform that helps organizations manage, structure, and visualize cyber threat intelligence. It organizes both technical data (like TTPs and observables) and non-technical information (attribution, victimology) using STIX2 standards, with a modern GraphQL API and user-friendly frontend.
+
+* Key features: Built on STIX2 standards for data structuration; integrates with security tools like MISP, TheHive, and MITRE ATT&CK; supports automated imports/exports in multiple formats (CSV, STIX2 bundles); infers new relationships from existing data to extract meaningful intelligence; offers both Community (Apache 2.0) and Enterprise editions; includes cartography features and connector ecosystem for platform integrations.
+
+* Why it's notable: Gaining 282 stars today, OpenCTI addresses the critical need for centralized threat intelligence management in cybersecurity operations. Developed by Filigran, it provides a comprehensive solution that links threat data to primary sources with confidence levels and temporal tracking. The platform's ability to structure unstructured threat data and automatically infer relationships makes it valuable for security teams managing complex threat landscapes. With 3K+ Slack community members and active development, it's becoming a go-to open source CTI platform.
+
+---
+
+### OpenCTI - 开放式网络威胁情报平台
+
+* 功能介绍: OpenCTI 是一个开源平台,帮助组织管理、结构化和可视化网络威胁情报。它使用 STIX2 标准组织技术数据(如 TTP 和可观察对象)和非技术信息(归因、受害者特征),配备现代化的 GraphQL API 和用户友好的前端界面。
+
+* 主要特点: 基于 STIX2 标准进行数据结构化;与 MISP、TheHive、MITRE ATT&CK 等安全工具集成;支持多种格式(CSV、STIX2 包)的自动导入导出;从现有数据推断新关系以提取有意义的情报;提供社区版(Apache 2.0)和企业版;包含地图可视化功能和连接器生态系统实现平台集成。
+
+* 为何值得关注: 今日获得 282 星标,OpenCTI 解决了网络安全运营中集中管理威胁情报的关键需求。由 Filigran 公司开发,它提供了一个全面的解决方案,将威胁数据与原始来源关联,并标注置信度和时间追踪。该平台能够结构化非结构化威胁数据并自动推断关系,对管理复杂威胁态势的安全团队极具价值。拥有 3000+ Slack 社区成员和活跃开发,正成为首选的开源 CTI 平台。
+
+**[View Repository / 查看仓库](https://github.com/OpenCTI-Platform/opencti)**
+
+### Qwen Code - Open-Source Terminal AI Agent for Developers
+
+* **What it does**: A terminal-based AI coding assistant optimized for Qwen3-Coder that helps developers understand codebases, automate repetitive tasks, and accelerate development workflows directly from the command line.
+
+* **Key features**:
+  * Multi-protocol support with 1,000 free daily requests via Qwen OAuth, plus compatibility with OpenAI, Anthropic, and Gemini APIs
+  * Agentic workflow with built-in tools (Skills, SubAgents) for comprehensive code analysis and manipulation
+  * Terminal-first design with optional IDE integrations (VS Code, Zed, JetBrains)
+  * Co-evolving open-source framework and model that ship together
+  * Flexible authentication (OAuth or API-KEY) with extensive provider configuration options
+
+* **Why it's notable**: Gaining 82 stars today, Qwen Code stands out as a fully open-source alternative to proprietary coding assistants like GitHub Copilot or Claude Code. Its terminal-native approach appeals to CLI-focused developers, while the free OAuth tier (1,000 requests/day) and multi-provider flexibility make it accessible and cost-effective. The tight integration between the framework and Qwen3-Coder model creates a cohesive experience that evolves in tandem, offering a Claude Code-like workflow without vendor lock-in.
+
+---
+
+### Qwen Code - 开源终端 AI 编程助手
+
+* **功能介绍**: 基于终端的 AI 编程助手,专为 Qwen3-Coder 优化,帮助开发者直接在命令行中理解代码库、自动化重复任务并加速开发流程。
+
+* **主要特点**:
+  * 多协议支持,通过 Qwen OAuth 每日免费 1,000 次请求,兼容 OpenAI、Anthropic 和 Gemini API
+  * 智能体工作流,内置丰富工具(Skills、SubAgents)用于全面的代码分析和操作
+  * 终端优先设计,可选集成 IDE(VS Code、Zed、JetBrains)
+  * 开源框架与模型协同演进,同步发布更新
+  * 灵活认证方式(OAuth 或 API-KEY),支持广泛的服务商配置
+
+* **为何值得关注**: 今日获得 82 星标,Qwen Code 作为 GitHub Copilot 或 Claude Code 等专有编程助手的完全开源替代方案脱颖而出。其终端原生特性吸引注重命令行的开发者,免费 OAuth 层级(每日 1,000 次请求)和多服务商灵活性使其易于使用且成本低廉。框架与 Qwen3-Coder 模型的紧密集成创造了协同演进的一致体验,提供类似 Claude Code 的工作流程而无需供应商锁定。
+
+**[View Repository / 查看仓库](https://github.com/QwenLM/qwen-code)**
+
+### RAG_Techniques - Comprehensive Collection of Advanced Retrieval-Augmented Generation Methods
+
+* A curated repository featuring cutting-edge RAG system implementations through Jupyter notebooks, covering foundational techniques (basic RAG, chunking strategies, CSV integration) to advanced methods (agentic RAG, query transformations, hybrid search)
+* Provides practical, code-first tutorials with Google Colab integration, comprehensive documentation for each technique, and regular updates reflecting the latest RAG innovations; includes related projects on GenAI agents and prompt engineering
+* Trending with 280 stars today due to its extensive coverage of production-ready RAG patterns, active community engagement (Discord, Reddit), and sponsorship from industry leaders like Contextual AI; serves as a go-to resource for developers building accurate, context-aware AI systems that combine retrieval with generation
+
+### RAG_Techniques - 检索增强生成高级技术合集
+
+* 精选的 RAG 系统实现资源库,通过 Jupyter 笔记本展示从基础技术(基本 RAG、分块策略、CSV 集成)到高级方法(代理式 RAG、查询转换、混合搜索)的前沿技术
+* 提供实用的代码优先教程,支持 Google Colab 集成,每种技术都有完整文档,定期更新反映最新 RAG 创新;包含 GenAI 代理和提示工程相关项目
+* 今日获得 280 星标,因其广泛覆盖生产就绪的 RAG 模式、活跃的社区参与(Discord、Reddit)以及 Contextual AI 等行业领导者的赞助而备受关注;是开发者构建准确、上下文感知 AI 系统的首选资源,将检索与生成完美结合
+
+**[View Repository / 查看仓库](https://github.com/NirDiamant/RAG_Techniques)**
+
+### 🎬 Four signs a CEO is the real deal
+**Channel:** Lenny's Podcast
+
+* What the video covers: Identifies four key indicators that distinguish exceptional CEOs from average ones in the startup and tech industry
+* Key topics discussed: Leadership qualities, CEO evaluation criteria, startup management best practices, and what makes a CEO truly effective
+* Why it's worth watching: Provides actionable insights for investors, board members, employees, or aspiring leaders to assess CEO quality and understand what separates great leadership from mediocrity in high-growth companies
+
+---
+
+### 🎬 四个迹象表明CEO是真正的实力派
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 揭示四个关键指标,帮助识别初创企业和科技行业中的卓越CEO与普通CEO的区别
+* 主要话题: 领导力特质、CEO评估标准、初创企业管理最佳实践,以及真正高效CEO的特征
+* 为何值得观看: 为投资者、董事会成员、员工或有抱负的领导者提供可操作的见解,帮助评估CEO质量,理解高增长公司中优秀领导力与平庸领导力的本质差异
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ncZ_ldFgCZ8)**
+
+### 🎬 Seminggu Ngoding Smartwatch...
+**Channel:** Dea Afrizal
+
+* What the video covers: A week-long journey of coding and customizing a smartwatch, exploring its potential for developers and programmers
+* Key topics discussed: Custom firmware development, automation capabilities, IoT device integration, and practical programming applications on wearable devices
+* Why it's worth watching: Offers hands-on insights into smartwatch development from a programmer's perspective, demonstrating how wearables can be leveraged for automation and IoT projects beyond typical consumer use cases
+
+---
+
+### 🎬 一周智能手表编程实战...
+**频道:** Dea Afrizal
+
+* 视频内容概述: 记录了为期一周的智能手表编程和定制过程,探索其对开发者和程序员的潜力
+* 主要话题: 自定义固件开发、自动化功能、物联网设备集成,以及可穿戴设备上的实用编程应用
+* 为何值得观看: 从程序员视角提供智能手表开发的实践见解,展示如何将可穿戴设备用于自动化和物联网项目,超越典型的消费者使用场景
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8fKvBT_fIh0)**
 
