@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 18, 2026"
 date: 2026-02-18
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -820,4 +820,59 @@ React Doctor 是一款开发者工具,让 AI 编码代理能够自动诊断和�
 * 为何值得观看: 从程序员视角提供智能手表开发的实践经验,展示如何为开发者工作流程和物联网项目定制可穿戴设备
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8fKvBT_fIh0)**
+
+### Microsoft's AI-Generated Plagiarism: The "Continvoucly Morged" Incident
+
+* **Original Work**: In 2010, Vincent Driessen created a widely-used Git branching model diagram, meticulously designed in Apple Keynote and shared openly with source files
+* **The Discovery**: 15+ years later, Microsoft published an AI-generated version of this diagram on their Learn portal without attribution or credit
+* **Quality Degradation**: The AI reproduction was riddled with errors including the infamous "continvoucly morged" typo, missing arrows, wrong directions, and destroyed visual clarity
+* **Community Response**: The internet quickly recognized the plagiarism and called out Microsoft, turning "continvoucly morged" into a viral meme
+* **Core Issue**: Not the reuse itself (the diagram has been widely shared for years), but the careless process of running original work through AI to "wash off fingerprints" and claiming it as their own
+* **Broader Concern**: This incident highlights a troubling trend where AI is used to create degraded copies of original work, with future plagiarism potentially becoming harder to detect as AI improves
+* **Author's Request**: Simple attribution and a link back to the original, plus transparency about Microsoft's content creation process and quality control failures
+
+### 微软 AI 抄袭事件:"Continvoucly Morged" 丑闻
+
+* **原创作品**: 2010年,Vincent Driessen 创建了广泛使用的 Git 分支模型图表,在 Apple Keynote 中精心设计并开源分享
+* **事件发现**: 15年后,微软在其 Learn 门户网站发布了该图表的 AI 生成版本,没有署名或注明出处
+* **质量劣化**: AI 复制品错误百出,包括臭名昭著的 "continvoucly morged" 拼写错误、箭头缺失、方向错误,视觉清晰度完全被破坏
+* **社区反应**: 互联网迅速识别出这一抄袭行为并谴责微软,"continvoucly morged" 成为病毒式传播的梗
+* **核心问题**: 不是重用本身(该图表多年来被广泛分享),而是将原创作品通过 AI "洗掉指纹"后据为己有的粗心过程
+* **更广泛的担忧**: 这一事件凸显了一个令人不安的趋势——AI 被用来创建原创作品的劣质副本,随着 AI 技术进步,未来的抄袭可能更难被发现
+* **作者诉求**: 简单的署名和原文链接,以及微软对其内容创建流程和质量控制失败的透明说明
+
+**[Read Original / 阅读原文](https://nvie.com/posts/15-years-later/)**
+
+<!-- [Title-Only] -->
+### Terminals should generate the 256-color palette
+
+* This article likely discusses how terminal emulators handle the 256-color palette system, arguing that terminals should dynamically generate these colors rather than using fixed values
+* It's probably interesting to developers and terminal users because it addresses color consistency issues across different terminal applications, and may propose a solution for better color rendering in CLI tools and text editors
+
+### 终端应该生成 256 色调色板
+
+* 本文可能讨论终端模拟器如何处理 256 色调色板系统,主张终端应该动态生成这些颜色而不是使用固定值
+* 对开发者和终端用户来说值得关注,因为它涉及不同终端应用程序之间的颜色一致性问题,可能提出了改善 CLI 工具和文本编辑器中颜色渲染的解决方案
+
+**[Read Original / 阅读原文](https://gist.github.com/jake-stewart/0a8ea46159a7da2c808e5be2177e1783)**
+
+### Shaper: Open Source SQL-Driven Data Dashboards
+
+* **Core Technology**: SQL-driven data dashboard platform powered by DuckDB, fully open source under Mozilla Public License 2.0
+* **Quick Start**: Run instantly via Docker with a single command (`docker run --rm -it -p5454:5454 taleshape/shaper`), accessible at localhost:5454
+* **Deployment Options**: Free self-hosted solution with comprehensive getting started and production deployment guides available
+* **Business Model**: Core product is free and open source, with optional managed hosting and proactive support services available through paid plans
+* **Community & Support**: Active development with GitHub issues, discussions, and updates via BlueSky, LinkedIn, and newsletter
+* **Documentation**: Complete guides for getting started and production deployment at taleshape.com/shaper/docs/
+
+### Shaper:开源 SQL 驱动的数据仪表板
+
+* **核心技术**:基于 DuckDB 的 SQL 驱动数据仪表板平台,完全开源,采用 Mozilla Public License 2.0 许可证
+* **快速启动**:通过 Docker 一键运行(`docker run --rm -it -p5454:5454 taleshape/shaper`),在 localhost:5454 即可访问
+* **部署选项**:提供免费自托管方案,配有完整的入门指南和生产环境部署文档
+* **商业模式**:核心产品免费开源,提供可选的托管服务和主动支持的付费计划
+* **社区与支持**:活跃的开发社区,支持 GitHub issues 和讨论,通过 BlueSky、LinkedIn 和邮件订阅获取更新
+* **文档资源**:在 taleshape.com/shaper/docs/ 提供完整的入门和生产部署指南
+
+**[Read Original / 阅读原文](https://github.com/taleshape-com/shaper)**
 
