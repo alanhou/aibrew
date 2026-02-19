@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 19, 2026"
 date: 2026-02-19
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -527,4 +527,160 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 非常适合想要利用 AI 自动化但没有深厚编程知识的非技术用户。Liam Ottley 提供可操作的模板和新手友好的讲解,让每个人都能轻松使用 AI 驱动的自动化工具,每周可能节省数小时的手动工作时间。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=2bsfQThGXxc)**
+
+### Sizing Chaos: Methodology Behind U.S. Women's Apparel Size Research
+
+* Used anthropometric data from the National Center for Health Statistics (HHS) covering 2021-2023 to establish median body proportions of U.S. women
+* Analyzed waistline measurements from 3,121 women aged 20+ (pregnant women excluded), with data collected in nine-year age ranges and 465 median participants per range
+* Extrapolated measurements across percentiles (5th to 95th) to represent the full spectrum of body types within each age group
+* Compared current data with historical HHS measurements from 1988-1994 (7,410 participants) to track changes over three decades
+* Surveyed size charts from diverse U.S. apparel brands including mass market, fast fashion, premium, and luxury labels
+* Collected three key measurements (bust, waist, hip) for "regular/standard" and "plus" size ranges, excluding petite, tall, and curve lines
+* Size chart data manually captured in July 2025; brands frequently update charts without notifying shoppers
+* Referenced ASTM International's standardized sizing: 1995 version (D 5585-95) for sizes 2-20, updated in 2021 (D5585-21) to include sizes 00-20
+
+### 尺码混乱:美国女装尺码研究方法论
+
+* 使用美国国家健康统计中心(HHS)2021-2023年人体测量数据,建立美国女性身体比例中位数基准
+* 分析了3,121名20岁以上女性的腰围测量数据(排除孕妇),按九年年龄段收集,每个年龄段中位数为465名参与者
+* 通过百分位数据(第5至第95百分位)推算各年龄组所有体型的测量值
+* 将当前数据与1988-1994年HHS历史测量数据(7,410名参与者)对比,追踪三十年间的变化
+* 调查了美国多元化服装品牌的尺码表,涵盖大众市场、快时尚、高端及奢侈品牌
+* 收集"常规/标准"和"大码"尺寸范围的三项关键测量数据(胸围、腰围、臀围),不包括娇小、高挑和曲线系列
+* 尺码表数据于2025年7月手动采集;品牌经常更新尺码表但不通知消费者
+* 参考ASTM国际标准化尺码:1995年版本(D 5585-95)涵盖2-20号,2021年更新版(D5585-21)扩展至00-20号
+
+**[Read Original / 阅读原文](https://pudding.cool/2026/02/womens-sizing/)**
+
+### Ladybird Browser: A Truly Independent Web Browser
+
+* Ladybird is an independent web browser built on a novel engine based on web standards, currently in pre-alpha stage for developers only
+* Uses multi-process architecture with separate processes for UI, WebContent rendering, image decoding, and network requests for enhanced security and robustness
+* Each browser tab runs in its own sandboxed renderer process, isolating malicious content from the system
+* Core components inherited from SerenityOS include LibWeb (rendering engine), LibJS (JavaScript engine), LibWasm (WebAssembly), LibCrypto/LibTLS (security), and various media/graphics libraries
+* Cross-platform support for Linux, macOS, Windows (via WSL2), and other Unix-like systems
+* Open source project with active Discord community, comprehensive contribution guidelines, and 2-clause BSD license
+* Documentation available in the repository's Documentation folder, including build instructions and contribution guides
+
+### Ladybird 浏览器：真正独立的网页浏览器
+
+* Ladybird 是一款基于网页标准的独立浏览器，采用新颖的引擎架构，目前处于预 Alpha 阶段，仅适合开发者使用
+* 采用多进程架构，包含独立的 UI 进程、多个 WebContent 渲染进程、图像解码进程和请求服务器进程，提升安全性和稳定性
+* 每个浏览器标签页在独立的沙盒渲染进程中运行，有效隔离恶意内容对系统的影响
+* 核心组件继承自 SerenityOS，包括 LibWeb（渲染引擎）、LibJS（JavaScript 引擎）、LibWasm（WebAssembly）、LibCrypto/LibTLS（加密安全）以及各种媒体图形库
+* 跨平台支持 Linux、macOS、Windows（通过 WSL2）及其他类 Unix 系统
+* 开源项目，拥有活跃的 Discord 社区、完善的贡献指南，采用 2-clause BSD 许可证
+* 代码相关文档位于仓库的 Documentation 文件夹，包含构建说明和贡献入门指南
+
+**[Read Original / 阅读原文](https://github.com/LadybirdBrowser/ladybird/issues/933)**
+
+### Reddit Access Blocked - Network Policy Error
+
+* The request was blocked by Reddit's network policy system
+* Users need to log in or create a Reddit account to continue browsing
+* For scripts/applications, developers must register and use proper API credentials
+* User-Agent header must be unique, descriptive, and non-empty
+* Switching back to default User-Agent may resolve some blocks
+* Users can file a support ticket if they believe the block was incorrect
+* Error code provided: 019c7396-d58a-7e85-8ae5-3360332ed372
+
+### Reddit 访问被阻止 - 网络策略错误
+
+* 请求被 Reddit 的网络策略系统拦截
+* 用户需要登录或创建 Reddit 账户才能继续浏览
+* 对于脚本/应用程序，开发者必须注册并使用正确的 API 凭证
+* User-Agent 标头必须是唯一的、描述性的且非空
+* 切换回默认 User-Agent 可能解决某些拦截问题
+* 如果用户认为拦截有误，可以提交支持工单
+* 提供的错误代码：019c7396-d58a-7e85-8ae5-3360332ed372
+
+**[Read Original / 阅读原文](https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/)**
+
+### Portless - Stable Named URLs for Local Development
+
+* **What it does**: Replaces numeric port numbers with human-readable `.localhost` URLs for local development servers (e.g., `http://myapp.localhost:1355` instead of `http://localhost:3000`)
+
+* **Key features**: 
+  * Eliminates port conflicts and memorization issues
+  * Supports subdomain routing for monorepos (api.myapp, docs.myapp)
+  * Auto-starting proxy with no sudo required
+  * HTTP/2 + HTTPS support with automatic certificate generation
+  * Works seamlessly with Next.js, Vite, and other frameworks
+  * Prevents cookie/localStorage clashes between projects
+  * AI agent-friendly with predictable URLs
+
+* **Why it's notable**: Solves a fundamental pain point in local development that affects both solo developers and teams. With 1,140 stars, it's gaining traction from Vercel Labs as a practical solution to port management chaos, especially valuable for monorepos and AI coding workflows. The tool requires zero configuration changes to existing projects—just prefix your dev command with `portless <name>`.
+
+---
+
+### Portless - 本地开发的稳定命名 URL 工具
+
+* **功能介绍**: 将数字端口号替换为人类可读的 `.localhost` URL,用于本地开发服务器(例如 `http://myapp.localhost:1355` 而非 `http://localhost:3000`)
+
+* **主要特点**:
+  * 消除端口冲突和记忆端口号的问题
+  * 支持 monorepo 的子域名路由(api.myapp、docs.myapp)
+  * 代理自动启动,无需 sudo 权限
+  * 支持 HTTP/2 + HTTPS,自动生成证书
+  * 与 Next.js、Vite 等框架无缝集成
+  * 防止项目间 cookie/localStorage 冲突
+  * 提供可预测的 URL,方便 AI 代理使用
+
+* **为何值得关注**: 解决了本地开发中的核心痛点,影响个人开发者和团队协作。这个来自 Vercel Labs 的工具已获得 1,140 星标,对端口管理混乱提供了实用解决方案,特别适合 monorepo 和 AI 编码工作流。无需修改现有项目配置——只需在开发命令前加上 `portless <name>` 即可。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/portless)**
+
+### 🎬 Why Anthropic's CEO Supports AI Regulation
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An interview with Anthropic's CEO discussing the company's stance on AI regulation and governance
+* Key topics discussed: The rationale behind supporting regulatory frameworks for AI development, balancing innovation with safety, and Anthropic's perspective on responsible AI deployment
+* Why it's worth watching: Provides insider perspective from a leading AI company's CEO on the critical debate around AI regulation, offering insights into how major AI labs think about governance and safety measures
+
+### 🎬 为什么 Anthropic 首席执行官支持 AI 监管
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 采访 Anthropic 首席执行官,探讨该公司对 AI 监管和治理的立场
+* 主要话题: 支持 AI 开发监管框架的理由、如何平衡创新与安全,以及 Anthropic 对负责任 AI 部署的观点
+* 为何值得观看: 提供领先 AI 公司 CEO 对 AI 监管关键辩论的内部视角,深入了解主要 AI 实验室如何看待治理和安全措施
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=iim_cmkZE4U)**
+
+### 🎬 Claude Opus 4.6 vs GPT 5.3 Codex: Which is better for programming? | Peter Steinberger
+
+**Channel:** Lex Clips
+
+* What the video covers: A comparative analysis of two cutting-edge AI coding assistants - Claude Opus 4.6 and GPT 5.3 Codex - discussing their strengths, weaknesses, and real-world programming performance
+* Key topics discussed: Performance benchmarks for code generation, debugging capabilities, context understanding, language support differences, and practical use cases from Peter Steinberger's development experience
+* Why it's worth watching: Offers insider perspective from a seasoned developer on which AI tool delivers better results for actual coding workflows, helping developers make informed decisions about their AI coding assistant choice
+
+---
+
+### 🎬 Claude Opus 4.6 vs GPT 5.3 Codex:哪个更适合编程? | Peter Steinberger
+
+**频道:** Lex Clips
+
+* 视频内容概述: 深度对比两款前沿 AI 编程助手 - Claude Opus 4.6 和 GPT 5.3 Codex,探讨它们在实际编程场景中的优劣势和性能表现
+* 主要话题: 代码生成性能基准测试、调试能力对比、上下文理解能力、不同编程语言支持差异,以及 Peter Steinberger 在实际开发中的使用体验
+* 为何值得观看: 来自资深开发者的第一手见解,帮助程序员了解哪款 AI 工具在真实编码工作流中表现更优,为选择合适的 AI 编程助手提供决策参考
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=j190mwiVlwA)**
+
+### 🎬 Plus Two Maths | Linear Programming Short Summary | Eduport Plus Two
+**Channel:** Eduport Plus Two
+
+* What the video covers: A concise revision session on Linear Programming for Plus Two (Grade 12) mathematics students, designed as exam preparation material
+* Key topics discussed: Core concepts of Linear Programming including optimization problems, constraints, feasible regions, and solution methods typically covered in higher secondary mathematics curriculum
+* Why it's worth watching: Ideal for students preparing for board exams or model exams who need a quick, focused review of Linear Programming concepts without going through lengthy lectures; part of a structured revision series
+
+---
+
+### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
+**频道:** Eduport Plus Two
+
+* 视频内容概述: 针对 Plus Two(12年级)数学学生的线性规划简明复习课程,专为考试准备设计
+* 主要话题: 线性规划核心概念,包括优化问题、约束条件、可行域以及高中数学课程中涉及的求解方法
+* 为何值得观看: 适合准备委员会考试或模拟考试的学生快速复习线性规划概念,无需观看冗长讲座;属于系统化复习系列的一部分
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
 
