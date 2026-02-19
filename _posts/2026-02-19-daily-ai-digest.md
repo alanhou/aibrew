@@ -672,17 +672,55 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * What the video covers: A concise revision session on Linear Programming for Plus Two (Grade 12) mathematics students, designed as exam preparation material
 * Key topics discussed: Core concepts of Linear Programming including optimization problems, constraints, feasible regions, and solution methods typically covered in higher secondary mathematics curriculum
 * Why it's worth watching: Ideal for students preparing for board exams or model exams who need a quick, focused review of Linear Programming concepts without going through lengthy lectures; part of a structured revision series
+### YouTube Navigation Structure
 
----
+* Basic HTML structure of YouTube's main navigation interface
+* Contains masthead component with search functionality and menu icon
+* Primary navigation links include About, Press, Copyright, Contact, Creators, Advertise, and Developers sections
+* Secondary navigation provides access to Terms, Privacy, Policy & Safety, How YouTube Works, Test New Features, and NFL Sunday Ticket
+* Uses custom web components (ytd-app, ytd-masthead) for modular architecture
+* SVG-based menu icon with hamburger design pattern
+* Search input configured with autocomplete and spellcheck disabled for optimized user experience
 
-### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
-**频道:** Eduport Plus Two
+### YouTube 导航结构
 
-* 视频内容概述: 针对 Plus Two(12年级)数学学生的线性规划简明复习课程,专为考试准备设计
-* 主要话题: 线性规划核心概念,包括优化问题、约束条件、可行域以及高中数学课程中涉及的求解方法
-* 为何值得观看: 适合准备委员会考试或模拟考试的学生快速复习线性规划概念,无需观看冗长讲座;属于系统化复习系列的一部分
+* YouTube 主导航界面的基础 HTML 结构
+* 包含带搜索功能和菜单图标的页眉组件
+* 主导航链接包括关于、新闻、版权、联系我们、创作者、广告和开发者板块
+* 次级导航提供条款、隐私、政策与安全、YouTube 运作方式、测试新功能和 NFL Sunday Ticket 的访问入口
+* 使用自定义 Web 组件(ytd-app、ytd-masthead)实现模块化架构
+* 基于 SVG 的汉堡菜单图标设计模式
+* 搜索输入框配置为禁用自动完成和拼写检查以优化用户体验
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
+**[Read Original / 阅读原文](https://www.youtube.com/watch?v=mUmlv814aJo)**
+
+### Fifteen Years of FP64 Segmentation, and Why the Blackwell Ultra Breaks the Pattern
+
+* Nvidia deliberately weakened FP64 performance on consumer GPUs over 15 years, creating a market segmentation strategy between consumer and enterprise hardware
+* The FP64:FP32 ratio degraded from 1:8 (2010) to 1:64 (2020) on consumer GPUs, while enterprise GPUs maintained 1:2 or 1:3 ratios
+* FP64 performance on consumer GPUs grew only 9.65x (0.17 to 1.64 TFLOPS) while FP32 improved 77.63x (1.35 to 104.8 TFLOPS) from 2010 to 2025
+* Enterprise GPU prices grew from 5x to over 20x consumer prices by 2022, justified partly by strong FP64 capabilities
+* AI workloads prefer lower precision (FP16, BF16, FP8, FP4) over FP64, making consumer GPUs surprisingly capable for AI training
+* Nvidia added datacenter usage restrictions to consumer GPU EULAs in 2017 when technical segmentation became insufficient
+* FP64 emulation techniques using FP32 (Dekker's double-float from 1971) or FP8 (Ozaki scheme) can achieve higher throughput than native FP64 on consumer hardware
+* Nvidia's B300 (Blackwell Ultra) enterprise GPU breaks the pattern by dropping FP64:FP32 ratio from 1:2 to 1:64, matching consumer GPUs
+* The B300 reduces absolute FP64 performance from 37 TFLOPS (B200) to 1.2 TFLOPS, prioritizing NVFP4 tensor cores for AI workloads
+* Market segmentation is shifting from FP64 to low-precision floating point, with RTX 5090 at 1:1 FP16:FP32 versus B200 at 16:1
+
+### 十五年的FP64市场分割策略，以及Blackwell Ultra为何打破常规
+
+* Nvidia在15年间刻意削弱消费级GPU的FP64性能，在消费级和企业级硬件之间建立市场分割策略
+* 消费级GPU的FP64:FP32比率从1:8(2010年)降至1:64(2020年)，而企业级GPU保持1:2或1:3的比率
+* 从2010到2025年，消费级GPU的FP64性能仅增长9.65倍(0.17至1.64 TFLOPS)，而FP32性能提升了77.63倍(1.35至104.8 TFLOPS)
+* 到2022年，企业级GPU价格从消费级的5倍增长到20倍以上，部分原因是强大的FP64能力
+* AI工作负载更偏好低精度(FP16、BF16、FP8、FP4)而非FP64，使消费级GPU在AI训练中表现出人意料的能力
+* 当技术分割不足时，Nvidia于2017年在消费级GPU的最终用户许可协议中添加了数据中心使用限制
+* 使用FP32的FP64模拟技术(1971年Dekker的双浮点)或FP8(Ozaki方案)可在消费级硬件上实现比原生FP64更高的吞吐量
+* Nvidia的B300(Blackwell Ultra)企业级GPU打破常规，将FP64:FP32比率从1:2降至1:64，与消费级GPU持平
+* B300将绝对FP64性能从37 TFLOPS(B200)降至1.2 TFLOPS，优先考虑用于AI工作负载的NVFP4张量核心
+* 市场分割正从FP64转向低精度浮点，RTX 5090的FP16:FP32为1:1，而B200为16:1
+
+**[Read Original / 阅读原文](https://nicolasdickenmann.com/blog/the-great-fp64-divide.html)**
 
 <!-- [Title-Only] -->
 ### Anthropic Officially Bans Using Subscription Auth for Third Party Use
@@ -699,55 +737,21 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 **[Read Original / 阅读原文](https://code.claude.com/docs/en/legal-and-compliance)**
 
-### Fifteen Years of FP64 Segmentation, and Why the Blackwell Ultra Breaks the Pattern
+### 🎬 Plus Two Maths | Linear Programming Short Summary | Eduport Plus Two
+**Channel:** Eduport Plus Two
 
-* Nvidia deliberately weakened FP64 performance on consumer GPUs over 15 years, creating a market segmentation strategy between consumer and enterprise hardware
-* The FP64:FP32 ratio degraded from 1:8 (2010) to 1:64 (2020) on consumer GPUs, while enterprise GPUs maintained 1:2 or 1:3 ratios
-* FP32 performance improved 77.63x from 2010-2025, while FP64 only increased 9.65x on consumer GPUs
-* Enterprise GPU prices grew from 5x to over 20x consumer prices by 2022, justified partly by strong FP64 capabilities
-* AI workloads prefer lower precision (FP16, BF16, FP8, FP4) over FP64, making consumer GPUs surprisingly capable for AI training
-* Nvidia added datacenter usage restrictions to consumer GPU EULAs in 2017 when technical segmentation became insufficient
-* FP64 emulation techniques using FP32 (Dekker's double-float) or tensor cores (Ozaki scheme) now offer alternatives to hardware FP64
-* The Blackwell Ultra B300 breaks the pattern: enterprise FP64:FP32 ratio dropped from 1:2 to 1:64, matching consumer GPUs
-* B300 FP64 performance fell from 37 TFLOPS (B200) to 1.2 TFLOPS, prioritizing NVFP4 tensor cores for AI workloads
-* Market segmentation may be shifting from FP64 to low-precision floating point (RTX 5090: 1:1 FP16:FP32 vs B200: 16:1)
+* What the video covers: A concise revision session on Linear Programming for Plus Two (Grade 12) mathematics students, designed as exam preparation material
+* Key topics discussed: Core concepts of Linear Programming including optimization problems, constraints, feasible regions, and solution methods typically covered in higher secondary mathematics curriculum
+* Why it's worth watching: Ideal for students preparing for board exams or model exams who need a quick, focused review of Linear Programming concepts without going through lengthy lectures; part of a structured revision series
 
-### 十五年的FP64市场分割策略，以及Blackwell Ultra为何打破常规
+---
 
-* Nvidia在15年间刻意削弱消费级GPU的FP64性能，在消费级和企业级硬件之间建立市场分割策略
-* 消费级GPU的FP64:FP32比率从1:8(2010年)降至1:64(2020年)，而企业级GPU保持1:2或1:3的比率
-* 2010-2025年间，消费级GPU的FP32性能提升77.63倍，而FP64仅提升9.65倍
-* 到2022年，企业级GPU价格从消费级的5倍增长到20倍以上，部分原因是强大的FP64能力
-* AI工作负载更偏好低精度(FP16、BF16、FP8、FP4)而非FP64，使消费级GPU在AI训练中表现出人意料的能力
-* 当技术分割不足时，Nvidia在2017年在消费级GPU用户协议中增加了数据中心使用限制
-* 使用FP32的FP64模拟技术(Dekker双浮点)或张量核心(Ozaki方案)现在提供了硬件FP64的替代方案
-* Blackwell Ultra B300打破常规：企业级FP64:FP32比率从1:2降至1:64，与消费级GPU持平
-* B300的FP64性能从37 TFLOPS(B200)降至1.2 TFLOPS，优先考虑用于AI工作负载的NVFP4张量核心
-* 市场分割策略可能正从FP64转向低精度浮点(RTX 5090为1:1 FP16:FP32，而B200为16:1)
+### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
+**频道:** Eduport Plus Two
 
-**[Read Original / 阅读原文](https://nicolasdickenmann.com/blog/the-great-fp64-divide.html)**
+* 视频内容概述: 针对 Plus Two(12年级)数学学生的线性规划简明复习课程,专为考试准备设计
+* 主要话题: 线性规划核心概念,包括优化问题、约束条件、可行域以及高中数学课程中涉及的求解方法
+* 为何值得观看: 适合准备委员会考试或模拟考试的学生快速复习线性规划概念,无需观看冗长讲座;属于系统化复习系列的一部分
 
-### Choosing Between Hindley-Milner and Bidirectional Typing: A Practical Guide
-
-* The common question "HM vs Bidirectional typing?" is actually the wrong question - it creates a false dichotomy between two type systems
-* The real question language designers should ask is: "Does my language need generics?"
-* Generics require unification (the process of assigning and solving type variables), which is central to Hindley-Milner
-* Bidirectional typing is actually a superset of HM - you can implement HM with just an `infer` function, then add a `check` function to make it bidirectional
-* Bidirectional systems can use unification too - simply replace strict equality checks with unification in the `check` function
-* For general-purpose languages, generics are essential (even Go eventually added them)
-* For learning exercises or DSLs, you might skip unification to reduce complexity
-* Bottom line: If you're building HM anyway, adding bidirectional typing is trivial; bidirectional typing supports both approaches
-
-### 在 Hindley-Milner 和双向类型系统之间选择:实用指南
-
-* 常见问题"HM 还是双向类型?"其实问错了 - 这在两个类型系统之间制造了错误的二分法
-* 语言设计者应该问的真正问题是:"我的语言需要泛型吗?"
-* 泛型需要合一化(分配和求解类型变量的过程),这是 Hindley-Milner 的核心
-* 双向类型检查实际上是 HM 的超集 - 你可以用 `infer` 函数实现 HM,然后添加 `check` 函数使其成为双向的
-* 双向系统也可以使用合一化 - 只需在 `check` 函数中用合一化替换严格的相等性检查
-* 对于通用语言,泛型是必不可少的(连 Go 最终也添加了泛型)
-* 对于学习练习或领域特定语言,可以跳过合一化以降低复杂性
-* 结论:如果你要构建 HM,添加双向类型检查很简单;双向类型支持两种方法
-
-**[Read Original / 阅读原文](https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
 
