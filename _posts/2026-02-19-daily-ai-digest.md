@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 19, 2026"
 date: 2026-02-19
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -683,4 +683,71 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合准备委员会考试或模拟考试的学生快速复习线性规划概念,无需观看冗长讲座;属于系统化复习系列的一部分
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
+
+<!-- [Title-Only] -->
+### Anthropic Officially Bans Using Subscription Auth for Third Party Use
+
+* Based on the title, this article likely discusses Anthropic's new policy prohibiting users from using their Claude subscription authentication credentials (like API keys or session tokens) in third-party applications or services. This represents a significant terms-of-service change that affects how developers and users can integrate Claude into external tools.
+
+* This is important for developers and power users who may have been building custom integrations, browser extensions, or automation tools that rely on personal Claude subscriptions rather than official API access. The policy change could impact existing workflows and force users to migrate to official API plans, which typically have different pricing structures and usage limits.
+
+### Anthropic 正式禁止将订阅认证用于第三方用途
+
+* 根据标题推测,本文可能讨论 Anthropic 发布的新政策,禁止用户将其 Claude 订阅的身份验证凭据(如 API 密钥或会话令牌)用于第三方应用程序或服务。这是一项重要的服务条款变更,影响开发者和用户如何将 Claude 集成到外部工具中。
+
+* 这对那些可能一直在构建自定义集成、浏览器扩展或自动化工具的开发者和高级用户来说很重要,因为他们可能依赖个人 Claude 订阅而非官方 API 访问。此政策变更可能影响现有工作流程,并迫使用户迁移到官方 API 方案,而这些方案通常具有不同的定价结构和使用限制。
+
+**[Read Original / 阅读原文](https://code.claude.com/docs/en/legal-and-compliance)**
+
+### Fifteen Years of FP64 Segmentation, and Why the Blackwell Ultra Breaks the Pattern
+
+* Nvidia deliberately weakened FP64 performance on consumer GPUs over 15 years, creating a market segmentation strategy between consumer and enterprise hardware
+* The FP64:FP32 ratio degraded from 1:8 (2010) to 1:64 (2020) on consumer GPUs, while enterprise GPUs maintained 1:2 or 1:3 ratios
+* FP32 performance improved 77.63x from 2010-2025, while FP64 only increased 9.65x on consumer GPUs
+* Enterprise GPU prices grew from 5x to over 20x consumer prices by 2022, justified partly by strong FP64 capabilities
+* AI workloads prefer lower precision (FP16, BF16, FP8, FP4) over FP64, making consumer GPUs surprisingly capable for AI training
+* Nvidia added datacenter usage restrictions to consumer GPU EULAs in 2017 when technical segmentation became insufficient
+* FP64 emulation techniques using FP32 (Dekker's double-float) or tensor cores (Ozaki scheme) now offer alternatives to hardware FP64
+* The Blackwell Ultra B300 breaks the pattern: enterprise FP64:FP32 ratio dropped from 1:2 to 1:64, matching consumer GPUs
+* B300 FP64 performance fell from 37 TFLOPS (B200) to 1.2 TFLOPS, prioritizing NVFP4 tensor cores for AI workloads
+* Market segmentation may be shifting from FP64 to low-precision floating point (RTX 5090: 1:1 FP16:FP32 vs B200: 16:1)
+
+### 十五年的FP64市场分割策略，以及Blackwell Ultra为何打破常规
+
+* Nvidia在15年间刻意削弱消费级GPU的FP64性能，在消费级和企业级硬件之间建立市场分割策略
+* 消费级GPU的FP64:FP32比率从1:8(2010年)降至1:64(2020年)，而企业级GPU保持1:2或1:3的比率
+* 2010-2025年间，消费级GPU的FP32性能提升77.63倍，而FP64仅提升9.65倍
+* 到2022年，企业级GPU价格从消费级的5倍增长到20倍以上，部分原因是强大的FP64能力
+* AI工作负载更偏好低精度(FP16、BF16、FP8、FP4)而非FP64，使消费级GPU在AI训练中表现出人意料的能力
+* 当技术分割不足时，Nvidia在2017年在消费级GPU用户协议中增加了数据中心使用限制
+* 使用FP32的FP64模拟技术(Dekker双浮点)或张量核心(Ozaki方案)现在提供了硬件FP64的替代方案
+* Blackwell Ultra B300打破常规：企业级FP64:FP32比率从1:2降至1:64，与消费级GPU持平
+* B300的FP64性能从37 TFLOPS(B200)降至1.2 TFLOPS，优先考虑用于AI工作负载的NVFP4张量核心
+* 市场分割策略可能正从FP64转向低精度浮点(RTX 5090为1:1 FP16:FP32，而B200为16:1)
+
+**[Read Original / 阅读原文](https://nicolasdickenmann.com/blog/the-great-fp64-divide.html)**
+
+### Choosing Between Hindley-Milner and Bidirectional Typing: A Practical Guide
+
+* The common question "HM vs Bidirectional typing?" is actually the wrong question - it creates a false dichotomy between two type systems
+* The real question language designers should ask is: "Does my language need generics?"
+* Generics require unification (the process of assigning and solving type variables), which is central to Hindley-Milner
+* Bidirectional typing is actually a superset of HM - you can implement HM with just an `infer` function, then add a `check` function to make it bidirectional
+* Bidirectional systems can use unification too - simply replace strict equality checks with unification in the `check` function
+* For general-purpose languages, generics are essential (even Go eventually added them)
+* For learning exercises or DSLs, you might skip unification to reduce complexity
+* Bottom line: If you're building HM anyway, adding bidirectional typing is trivial; bidirectional typing supports both approaches
+
+### 在 Hindley-Milner 和双向类型系统之间选择:实用指南
+
+* 常见问题"HM 还是双向类型?"其实问错了 - 这在两个类型系统之间制造了错误的二分法
+* 语言设计者应该问的真正问题是:"我的语言需要泛型吗?"
+* 泛型需要合一化(分配和求解类型变量的过程),这是 Hindley-Milner 的核心
+* 双向类型检查实际上是 HM 的超集 - 你可以用 `infer` 函数实现 HM,然后添加 `check` 函数使其成为双向的
+* 双向系统也可以使用合一化 - 只需在 `check` 函数中用合一化替换严格的相等性检查
+* 对于通用语言,泛型是必不可少的(连 Go 最终也添加了泛型)
+* 对于学习练习或领域特定语言,可以跳过合一化以降低复杂性
+* 结论:如果你要构建 HM,添加双向类型检查很简单;双向类型支持两种方法
+
+**[Read Original / 阅读原文](https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/)**
 
