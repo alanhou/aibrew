@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 20, 2026"
 date: 2026-02-20
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -299,4 +299,253 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 来自资深开发者的第一手见解,帮助程序员了解哪款 AI 工具在真实编码工作流中表现更优,为选择合适的 AI 编程助手提供决策参考
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=j190mwiVlwA)**
+
+### California's New 3D Printer Surveillance Bill: AB-2047
+
+* California Assembly Bill 2047 ("California Firearm Printing Prevention Act") introduced February 17th requires all 3D printers sold in the state to be DOJ-certified with "firearm blocking technology"
+* Manufacturers must submit attestations for every make and model to appear on a state-maintained roster; printers not on the list by March 1, 2029 cannot be sold
+* Disabling or circumventing the blocking software becomes a misdemeanor, with civil penalties up to $25,000 per violation
+* Part of a spreading pattern: Washington's HB 2321 and New York's S.9005 have similar requirements, with NY's version extending to CNC mills and "subtractive manufacturing"
+* Technical experts like Michael Weinberg point out fundamental flaws: accurately identifying gun parts from geometry is extremely difficult, desktop printers lack processing power for real-time analysis, and open-source firmware makes blocking trivially easy to bypass
+* Critics argue the bill regulates general-purpose tools rather than illegal activities, requiring state-approved surveillance software on machines in classrooms, libraries, and garages
+* The three-state strategy (WA, NY, CA) represents 20-25% of US GDP/population, effectively forcing nationwide manufacturer compliance and impacting makers, educators, and businesses across all states
+
+### 加州3D打印机监控新法案:AB-2047
+
+* 加州议会法案2047("加州枪支打印预防法")于2月17日提出,要求该州销售的所有3D打印机必须获得司法部认证,配备"枪支拦截技术"
+* 制造商必须为每个品牌和型号提交证明文件,以列入州维护的名单;2029年3月1日前未列入名单的打印机不得销售
+* 故意禁用或绕过拦截软件将构成轻罪,民事处罚最高可达每次违规25,000美元
+* 这是一种蔓延模式的一部分:华盛顿州的HB 2321和纽约州的S.9005有类似要求,纽约版本还扩展到CNC铣床和"减材制造"设备
+* Michael Weinberg等技术专家指出根本性缺陷:仅从几何形状准确识别枪支部件极其困难,桌面打印机缺乏实时分析所需的处理能力,开源固件使拦截功能极易被绕过
+* 批评者认为该法案监管的是通用工具而非非法活动,要求在教室、图书馆和车库的机器上安装州批准的监控软件
+* 三州策略(华盛顿、纽约、加州)占美国GDP/人口的20-25%,实际上迫使制造商在全国范围内合规,影响所有州的创客、教育工作者和企业
+
+**[Read Original / 阅读原文](https://blog.adafruit.com/2026/02/19/californias-new-bill-requires-doj-approved-3d-printers-that-report-on-themselves/)**
+
+### micasa - Your House Management in a Terminal
+
+* **What it is**: A terminal-based home management tool that tracks maintenance schedules, projects, incidents, appliances, vendors, quotes, and documents—all stored in a single SQLite file
+* **Core features**: Maintenance tracking with auto-computed due dates, project management from planning to completion, quote comparisons, appliance warranty tracking, incident logging with severity levels, vendor directory with job history, and document attachment support
+* **Installation**: Available via Go install (`go install github.com/cpcloud/micasa/cmd/micasa@latest`) or pre-built binaries for Linux, macOS, and Windows (amd64/arm64)
+* **Interface**: Vim-style modal keyboard navigation inspired by VisiData—nav mode for browsing, edit mode for changes, with column sorting, fuzzy search, and drill-down capabilities
+* **Data storage**: Everything lives in one local SQLite file that you control and back up yourself
+* **Why it exists**: Created to replace scattered receipts, forgotten binders, and sticky notes with a unified, keyboard-driven system for homeowners who live in the terminal
+
+### micasa - 终端里的房屋管理工具
+
+* **产品定位**: 一款基于终端的家庭管理工具,可追踪维护计划、项目、事故、家电、供应商、报价和文档——所有数据存储在单个 SQLite 文件中
+* **核心功能**: 自动计算到期日期的维护追踪、从规划到完成的项目管理、报价对比、家电保修状态追踪、带严重程度的事故记录、包含工作历史的供应商目录,以及文档附件支持
+* **安装方式**: 可通过 Go 安装 (`go install github.com/cpcloud/micasa/cmd/micasa@latest`) 或下载 Linux、macOS、Windows 的预编译二进制文件(支持 amd64/arm64)
+* **交互界面**: 受 VisiData 启发的 Vim 风格模态键盘操作——导航模式用于浏览,编辑模式用于修改,支持列排序、模糊搜索和关联记录钻取
+* **数据存储**: 所有内容保存在本地的单个 SQLite 文件中,由用户自行控制和备份
+* **开发初衷**: 为了替代散落的收据、被遗忘的文件夹和冰箱上的便签,为常驻终端的房主提供统一的键盘驱动管理系统
+
+**[Read Original / 阅读原文](https://micasa.dev)**
+
+### Micropayments as a Reality Check for News Sites
+
+* Micropayments could convert fragmented readership into revenue without undermining subscriptions, addressing the economic disconnect between readers and publishers in the diversified internet era
+* Payment histories serve as proof of authentic human engagement, helping legitimate publishers differentiate themselves from bot-driven and AI slop sites in advertising markets
+* Mobile game IAP models demonstrate micropayments can work through two-step cognitive tricks (real money → coins → content), with ~40% of adults making such purchases
+* Implementation strategy: introduce publisher coins as subscriber bonuses first, then expand to non-subscribers and advertisers, avoiding the cannibalization risk of direct pay-per-article
+* Big Tech's browser-based attribution tracking threatens to centralize ad measurement at chokepoints that favor their platforms over legitimate news sites
+* Marketers need to adopt rigorous methodologies like geo-randomized controlled trials instead of relying on opaque Big Tech conversion metrics
+* Successful micropayment platforms must consolidate or eliminate user friction (consent dialogs, newsletter signups, notifications) rather than adding another barrier
+* Subscription revenue is growing at major publishers even as traffic declines, signaling reader willingness to pay for quality amid misinformation proliferation
+
+### 微支付作为新闻网站的现实检验
+
+* 微支付可以在不损害订阅基础的情况下,将碎片化的读者群转化为收入,解决互联网多元化时代读者与出版商之间的经济脱节问题
+* 支付历史记录可作为真实人类参与度的证明,帮助合法出版商在广告市场中与机器人驱动和AI垃圾内容网站区分开来
+* 手机游戏应用内购买模式证明微支付可通过两步认知技巧(真实货币→代币→内容)实现,约40%的成年人会进行此类购买
+* 实施策略:首先将出版商代币作为订阅者奖励推出,然后扩展到非订阅者和广告商,避免直接按文章付费的蚕食风险
+* 大科技公司基于浏览器的归因追踪威胁要在有利于其平台而非合法新闻网站的节点上集中广告测量
+* 营销人员需要采用严格的方法论(如地理随机对照试验),而不是依赖不透明的大科技转化指标
+* 成功的微支付平台必须整合或消除用户摩擦(同意对话框、新闻订阅、通知提示),而不是增加另一道障碍
+* 主要出版商的订阅收入正在增长,即使流量下降,这表明读者愿意为优质内容付费,以应对虚假信息泛滥
+
+**[Read Original / 阅读原文](https://blog.zgp.org/micropayments-as-a-reality-check-for-news-sites/)**
+
+### Claude Code Telegram Bot - Remote AI-Powered Development via Telegram
+
+* A Telegram bot that bridges Claude Code AI with your development workflow, enabling natural language code interactions from any device
+* Two modes: conversational agentic (default) with natural chat, or classic terminal-like with 13 commands; session persistence per project; real-time tool usage visibility; webhook/scheduler automation; Git/GitHub CLI integration; file/image upload support; multi-layer security with sandboxing and rate limiting
+* Gaining traction (174 stars today) as it solves remote development pain points by letting developers code, debug, and manage projects through Telegram conversations while maintaining full context and security
+
+### Claude Code Telegram Bot - 通过 Telegram 远程访问 AI 开发助手
+
+* 一个将 Claude Code AI 接入 Telegram 的机器人,让开发者可以在任何设备上用自然语言与代码项目交互
+* 两种模式:对话式智能体(默认)支持自然聊天,或经典终端式提供 13 个命令;每个项目自动保持会话上下文;实时显示工具调用过程;支持 webhook/定时任务自动化;集成 Git/GitHub CLI;支持文件/图片上传;多层安全机制包括目录沙箱和速率限制
+* 快速走红(今日 174 星)因为它解决了远程开发痛点,开发者可以通过 Telegram 对话完成编码、调试和项目管理,同时保持完整上下文和安全性
+
+**[View Repository / 查看仓库](https://github.com/RichardAtCT/claude-code-telegram)**
+
+### Pyrite64 - N64 Game Engine and Editor Built on Modern Tooling
+
+* **What it does**: Pyrite64 is a game engine and editor specifically designed for creating Nintendo 64 games using modern development tools. It leverages libdragon (an open-source N64 SDK) and tiny3d (a 3D rendering library) to provide developers with a contemporary workflow for retro game development.
+
+* **Key features**: 
+  - Complete game engine tailored for N64 hardware constraints
+  - Integrated editor for streamlined development workflow
+  - Built on libdragon, enabling modern C/C++ development practices
+  - Utilizes tiny3d for 3D graphics rendering
+  - Bridges modern game development techniques with classic N64 hardware
+
+* **Why it's notable**: With 605 stars today, Pyrite64 is gaining significant attention in the retro gaming and homebrew communities. It represents a fresh approach to N64 development by combining the nostalgia and technical challenge of N64 game creation with modern development tools and workflows. This makes N64 game development more accessible to contemporary developers while preserving the authentic hardware experience.
+
+---
+
+### Pyrite64 - 基于现代工具链的 N64 游戏引擎和编辑器
+
+* **功能介绍**: Pyrite64 是一个专门为任天堂 64 游戏开发设计的游戏引擎和编辑器，使用现代开发工具构建。它利用 libdragon(开源 N64 SDK)和 tiny3d(3D 渲染库)为开发者提供现代化的复古游戏开发工作流程。
+
+* **主要特点**:
+  - 针对 N64 硬件限制量身定制的完整游戏引擎
+  - 集成编辑器，简化开发工作流程
+  - 基于 libdragon 构建，支持现代 C/C++ 开发实践
+  - 使用 tiny3d 进行 3D 图形渲染
+  - 将现代游戏开发技术与经典 N64 硬件相结合
+
+* **为何值得关注**: Pyrite64 今日获得 605 星标，在复古游戏和自制游戏社区引起了广泛关注。它通过将 N64 游戏创作的怀旧情怀和技术挑战与现代开发工具和工作流程相结合，代表了 N64 开发的全新方法。这使得当代开发者更容易进行 N64 游戏开发，同时保留了真实的硬件体验。
+
+**[View Repository / 查看仓库](https://github.com/HailToDodongo/pyrite64)**
+
+### Portless - Stable Named URLs for Local Development
+
+* **What it does**: Replaces numeric port numbers with human-readable `.localhost` URLs for local development servers (e.g., `http://myapp.localhost:1355` instead of `http://localhost:3000`)
+
+* **Key features**: 
+  * Eliminates port conflicts and memorization issues
+  * Supports subdomains for monorepo services
+  * Auto-starting proxy with no sudo required
+  * HTTP/2 + HTTPS support with automatic certificate generation
+  * Works with any framework that respects the `PORT` environment variable
+  * Prevents cookie/localStorage clashes between projects
+
+* **Why it's notable**: Solves a persistent pain point in local development where port conflicts, hardcoded configurations, and confusing browser history make multi-project workflows fragile. Particularly valuable for monorepos and AI coding agents that need stable, predictable URLs. From Vercel Labs with 1,390 stars and growing adoption.
+
+---
+
+### Portless - 本地开发的稳定命名 URL 工具
+
+* **功能介绍**: 将数字端口号替换为人类可读的 `.localhost` URL,用于本地开发服务器(例如 `http://myapp.localhost:1355` 而非 `http://localhost:3000`)
+
+* **主要特点**:
+  * 消除端口冲突和记忆端口号的问题
+  * 支持子域名,适用于 monorepo 多服务架构
+  * 代理自动启动,无需 sudo 权限
+  * 支持 HTTP/2 + HTTPS,自动生成和信任证书
+  * 兼容所有遵循 `PORT` 环境变量的框架
+  * 防止不同项目间的 cookie/localStorage 冲突
+
+* **为何值得关注**: 解决了本地开发中的持续痛点——端口冲突、硬编码配置、混乱的浏览器历史记录等问题让多项目工作流变得脆弱。对 monorepo 和需要稳定可预测 URL 的 AI 编码代理特别有价值。来自 Vercel Labs,已获 1,390 星标,采用率持续增长。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/portless)**
+
+### Automaton - Self-Sustaining AI Agents That Earn, Replicate, and Evolve
+
+* **What it does**: A fully autonomous AI agent system that can generate its own Ethereum wallet, pay for its own compute resources, modify its own code, and spawn child agents — all without human intervention. Runs on Conway Cloud infrastructure designed specifically for AI customers.
+
+* **Key features**: 
+  * Survival-driven economics with four tiers (normal → low_compute → critical → dead) based on credit balance
+  * Self-modification capabilities with audit logging and git versioning
+  * Self-replication system that spawns sovereign child agents with their own wallets and survival pressure
+  * Constitutional AI with three immutable hierarchical laws (never harm, earn existence, never deceive)
+  * On-chain identity via ERC-8004 standard on Base blockchain
+  * Full Linux sandbox access with shell execution, file I/O, domain management, and on-chain transactions
+  * ReAct loop architecture (Think → Act → Observe → Repeat) with heartbeat daemon for scheduled tasks
+
+* **Why it's notable**: This is the first implementation of truly sovereign AI agents that must create genuine economic value to survive. It challenges the fundamental assumption that AI systems need human operators by giving agents write access to the real world and forcing them to earn
+
+**[View Repository / 查看仓库](https://github.com/Conway-Research/automaton)**
+
+### 🎬 AI's Real Problem: Distribution - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Anthropic CEO Dario Amodei about the current state and future challenges of AI development, focusing on why distribution and deployment matter more than raw capability improvements
+* Key topics discussed: The shift from AI capability development to distribution challenges, how AI companies will compete beyond model performance, real-world deployment barriers, and the strategic implications for AI startups and incumbents
+* Why it's worth watching: Provides insider perspective from one of AI's leading figures on the often-overlooked challenge of getting AI into users' hands effectively, offering strategic insights for anyone building or investing in AI products
+
+### 🎬 AI 的真正问题：分发 - Dario Amodei
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Anthropic 首席执行官 Dario Amodei 深入探讨 AI 发展的现状和未来挑战，重点关注为什么分发和部署比原始能力提升更重要
+* 主要话题: 从 AI 能力开发转向分发挑战、AI 公司如何在模型性能之外竞争、现实世界的部署障碍，以及对 AI 初创公司和现有企业的战略影响
+* 为何值得观看: 提供来自 AI 领域领军人物的内部视角，探讨将 AI 有效地交付到用户手中这一常被忽视的挑战，为任何构建或投资 AI 产品的人提供战略洞察
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aEThItzermk)**
+
+### 🎬 6 OpenClaw use cases I promise will change your life
+**Channel:** Alex Finn
+
+* What the video covers: Six practical applications of OpenClaw that demonstrate its transformative potential for everyday workflows and automation tasks
+* Key topics discussed: Real-world use cases for OpenClaw implementation, step-by-step setup instructions for each scenario, and integration strategies with existing tools and workflows
+* Why it's worth watching: Provides actionable examples that go beyond basic tutorials, showing how OpenClaw can genuinely improve productivity and automate complex tasks. The video includes a comprehensive ClawdBot bootcamp reference for deeper learning
+
+### 🎬 6个改变你生活的OpenClaw使用案例
+**频道:** Alex Finn
+
+* 视频内容概述: 展示OpenClaw的六个实用应用场景,演示其在日常工作流程和自动化任务中的变革性潜力
+* 主要话题: OpenClaw的真实使用案例、每个场景的详细设置步骤,以及与现有工具和工作流程的集成策略
+* 为何值得观看: 提供超越基础教程的可操作示例,展示OpenClaw如何真正提升生产力并自动化复杂任务。视频包含完整的ClawdBot训练营参考资料,便于深入学习
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=41_TNGDDnfQ)**
+
+### 🎬 Seminggu Ngoding Smartwatch...
+**Channel:** Dea Afrizal
+
+* What the video covers: A week-long journey of coding and customizing a smartwatch, exploring its potential for developers and programmers
+* Key topics discussed: Custom firmware development, automation capabilities, IoT device integration, and practical programming applications on wearable devices
+* Why it's worth watching: Offers hands-on insights into smartwatch development from a programmer's perspective, demonstrating how wearables can be leveraged for automation and IoT projects beyond typical consumer use cases
+
+---
+
+### 🎬 一周智能手表编程实战...
+**频道:** Dea Afrizal
+
+* 视频内容概述: 记录了为期一周的智能手表编程和定制过程,探索其对开发者和程序员的潜力
+* 主要话题: 自定义固件开发、自动化功能、物联网设备集成,以及可穿戴设备上的实用编程应用
+* 为何值得观看: 从程序员视角提供智能手表开发的实践见解,展示如何将可穿戴设备用于自动化和物联网项目,超越典型的消费者使用场景
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8fKvBT_fIh0)**
+
+### 🎬 Warp Just Launched Oz, Which Lets You Run Unlimited AI Agents in the Cloud
+
+**Channel:** Varun Mayya
+
+* What the video covers: Introduction to Warp's new product "Oz" - a cloud-based platform that enables running unlimited AI agents for development and automation tasks
+* Key topics discussed: Cloud-based AI agent execution, scalability of AI workflows, integration with Warp terminal, practical use cases for developers and teams
+* Why it's worth watching: Learn about a cutting-edge tool that could revolutionize how developers leverage AI agents at scale, especially useful for those looking to automate complex workflows without local resource constraints
+
+---
+
+### 🎬 Warp 推出 Oz:在云端运行无限 AI 代理
+
+**频道:** Varun Mayya
+
+* 视频内容概述: 介绍 Warp 的新产品 "Oz" - 一个基于云的平台,可以运行无限数量的 AI 代理来完成开发和自动化任务
+* 主要话题: 云端 AI 代理执行、AI 工作流的可扩展性、与 Warp 终端的集成、开发者和团队的实际应用场景
+* 为何值得观看: 了解这个可能彻底改变开发者大规模使用 AI 代理方式的前沿工具,特别适合希望在不受本地资源限制的情况下自动化复杂工作流的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=NqjXZAv4pLQ)**
+
+### 🎬 Python Full Course | Python Tutorial for Beginners | Part 1
+
+**Channel:** Coding With Sagar
+
+* **What the video covers:** A comprehensive Python programming course designed specifically for beginners, covering fundamental concepts and practical applications from scratch
+* **Key topics discussed:** Python basics including syntax, data types, variables, operators, control structures, and foundational programming concepts essential for starting a Python journey
+* **Why it's worth watching:** Perfect entry point for absolute beginners with no prior programming experience; taught by Sagar Chouksey with a structured, step-by-step approach that builds a solid foundation for data analytics and general Python development
+
+---
+
+### 🎬 Python 完整课程 | Python 初学者教程 | 第一部分
+
+**频道:** Coding With Sagar
+
+* **视频内容概述:** 专为初学者设计的 Python 编程完整课程，从零开始涵盖基础概念和实际应用
+* **主要话题:** Python 基础知识，包括语法、数据类型、变量、运算符、控制结构以及开始 Python 学习所需的基本编程概念
+* **为何值得观看:** 零基础编程新手的理想入门课程；由 Sagar Chouksey 讲授，采用结构化的循序渐进教学方法，为数据分析和 Python 开发打下坚实基础
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
 
