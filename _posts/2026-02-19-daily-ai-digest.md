@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 19, 2026"
 date: 2026-02-19
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -754,4 +754,213 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合准备委员会考试或模拟考试的学生快速复习线性规划概念,无需观看冗长讲座;属于系统化复习系列的一部分
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
+
+<!-- [Title-Only] -->
+### Don't Trust the Salt: AI Summarization, Multilingual Safety, and LLM Guardrails
+
+* This article likely explores the challenges and risks in AI-powered summarization systems, particularly focusing on multilingual contexts and the effectiveness of safety guardrails in large language models (LLMs)
+* The "salt" metaphor suggests caution about blindly trusting AI outputs - examining how summarization can introduce biases, miss nuances, or fail differently across languages
+* Probably discusses evaluation methodologies for testing LLM safety across different languages and the limitations of current guardrail systems
+* Why it might be interesting: As AI summarization becomes ubiquitous in products and workflows, understanding its failure modes - especially in non-English languages where safety mechanisms may be weaker - is critical for developers building responsible AI systems
+
+### 不要轻信"盐"：AI 摘要、多语言安全性与大语言模型护栏
+
+* 本文可能探讨 AI 驱动的摘要系统中的挑战和风险，特别关注多语言环境下的问题以及大语言模型（LLM）安全护栏的有效性
+* "盐"的隐喻提示我们不应盲目信任 AI 输出 - 文章可能剖析摘要如何引入偏见、遗漏细微差别，或在不同语言中表现出不同的失效模式
+* 可能讨论跨语言测试 LLM 安全性的评估方法，以及当前护栏系统的局限性
+* 为何值得关注：随着 AI 摘要在产品和工作流程中变得无处不在，理解其失效模式——尤其是在安全机制可能较弱的非英语语言中——对于构建负责任的 AI 系统的开发者至关重要
+
+**[Read Original / 阅读原文](https://royapakzad.substack.com/p/multilingual-llm-evaluation-to-guardrails)**
+
+### Mini Diarium: Privacy-First Cross-Platform Journaling App
+
+* Open-source encrypted journaling app built with Tauri 2, SolidJS, and Rust for Windows, macOS, and Linux
+* AES-256-GCM encryption with wrapped master key design ensures all entries are encrypted before touching disk
+* Innovative X25519 key file authentication system allows unlocking with SSH-like private key files as alternative to passwords
+* Zero network access architecture - no telemetry, analytics, or internet connectivity; all data stays local
+* Rich feature set includes calendar navigation, import/export (Mini Diary, Day One, jrnl formats), themes, automatic backups, and statistics
+* Modern tech stack: Tauri for desktop framework, SolidJS for reactive UI, Rust backend with SQLite storage, TipTap editor
+* Spiritual successor to unmaintained Mini Diary project, rebuilt from scratch with stronger encryption and contemporary dependencies
+* Multi-factor authentication support: register multiple key files or passwords, manage independently without re-encrypting entries
+* Key file authentication uses X25519 ECIES with ECDH + HKDF-SHA256 for secure master key wrapping
+* Cross-platform keyboard shortcuts for navigation, with comprehensive preferences for customization
+
+### Mini Diarium:隐私优先的跨平台日记应用
+
+* 开源加密日记应用,使用 Tauri 2、SolidJS 和 Rust 构建,支持 Windows、macOS 和 Linux
+* AES-256-GCM 加密配合包装主密钥设计,确保所有条目在写入磁盘前完成加密
+* 创新的 X25519 密钥文件认证系统,允许使用类似 SSH 的私钥文件解锁,可替代密码
+* 零网络访问架构 - 无遥测、无分析、无互联网连接;所有数据保持本地
+* 丰富功能集包括日历导航、导入/导出(支持 Mini Diary、Day One、jrnl 格式)、主题、自动备份和统计
+* 现代技术栈:Tauri 桌面框架、SolidJS 响应式 UI、Rust 后端配合 SQLite 存储、TipTap 编辑器
+* Mini Diary 项目的精神继承者,从零重建,采用更强加密和现代依赖
+* 多因素认证支持:注册多个密钥文件或密码,独立管理无需重新加密条目
+* 密钥文件认证使用 X25519 ECIES,通过 ECDH + HKDF-SHA256 实现安全的主密钥包装
+* 跨平台键盘快捷键支持导航,提供全面的偏好设置用于自定义
+
+**[Read Original / 阅读原文](https://github.com/fjrevoredo/mini-diarium)**
+
+### Bridging Elixir and Python with Oban
+
+* Oban enables seamless interoperability between Elixir and Python applications through a shared database approach
+* Both languages read/write to the same `oban_jobs` table with JSON-serialized args, making jobs language-agnostic
+* Demo app "Badge Forge" generates conference badges: Elixir enqueues jobs, Python processes them with WeasyPrint library, then sends confirmation back to Elixir
+* Each language maintains independent cluster leadership while coordinating through the jobs table
+* Worker names use string format matching the target language's fully qualified class/module names
+* Supports bidirectional job flow and real-time coordination via Postgres PubSub
+* Eliminates need for HTTP calls or separate message queue infrastructure when bridging ecosystems
+* Useful for accessing mature Python libraries (ML models, PDF rendering, audio/video tools) from Elixir apps
+
+### 使用 Oban 连接 Elixir 和 Python
+
+* Oban 通过共享数据库方式实现 Elixir 和 Python 应用之间的无缝互操作
+* 两种语言读写同一个 `oban_jobs` 表,任务参数以 JSON 格式存储,完全语言无关
+* 演示应用 "Badge Forge" 生成会议徽章:Elixir 入队任务,Python 使用 WeasyPrint 库处理,然后将确认信息发回 Elixir
+* 每种语言维护独立的集群领导权,同时通过任务表进行协调
+* Worker 名称使用字符串格式,匹配目标语言的完全限定类/模块名
+* 支持双向任务流和通过 Postgres PubSub 实现实时协调
+* 在连接不同生态系统时,无需 HTTP 调用或单独的消息队列基础设施
+* 适用于从 Elixir 应用访问成熟的 Python 库(机器学习模型、PDF 渲染、音视频工具)
+
+**[Read Original / 阅读原文](https://oban.pro/articles/bridging-with-oban)**
+
+### Superpowers - An Agentic Skills Framework for AI Coding Agents
+
+* **What it does**: A complete software development workflow system that transforms AI coding agents (Claude Code, Cursor, Codex, OpenCode) into disciplined developers. Instead of jumping straight into code, agents follow a structured process: brainstorming → design approval → implementation planning → subagent-driven development with automated testing and code review.
+
+* **Key features**: 
+  - Composable skills library covering testing (TDD), debugging (systematic root-cause analysis), collaboration (brainstorming, planning, git worktrees, code review)
+  - Subagent-driven development with two-stage review (spec compliance + code quality)
+  - Enforces RED-GREEN-REFACTOR TDD cycle, YAGNI, and DRY principles
+  - Autonomous execution for hours without deviation from approved plans
+  - Plugin marketplace support for easy installation across platforms
+
+* **Why it's notable**: Gained 886 stars today because it solves a critical problem in AI-assisted development—agents that write code too quickly without proper planning or testing. By enforcing software engineering best practices through mandatory workflows (not suggestions), it enables agents to work like disciplined senior engineers rather than enthusiastic juniors. The subagent architecture allows parallel task execution while maintaining quality through systematic reviews.
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+* **功能介绍**: 为 AI 编码代理(Claude Code、Cursor、Codex、OpenCode)提供完整的软件开发工作流系统。代理不会直接编写代码,而是遵循结构化流程:头脑风暴 → 设计审批 → 实施计划 → 子代理驱动开发,配合自动化测试和代码审查。
+
+* **主要特点**:
+  - 可组合的技能库,涵盖测试(TDD)、调试(系统化根因分析)、协作(头脑风暴、计划、git worktrees、代码审查)
+  - 子代理驱动开发,采用两阶段审查(规范合规性 + 代码质量)
+  - 强制执行 RED-GREEN-REFACTOR TDD 循环、YAGNI 和 DRY 原则
+  - 可按批准的计划自主执行数小时而不偏离
+  - 支持插件市场,可在多平台轻松安装
+
+* **为何值得关注**: 今日获得 886 星标,因为它解决了 AI 辅助开发的关键问题——代理在没有适当规划或测试的情况下过快编写代码。通过强制执行软件工程最佳实践(而非建议),使代理像资深工程师而非热情的初级开发者那样工作。子代理架构允许并行任务执行,同时通过系统化审查保持质量。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Open Mercato - AI-Supportive Enterprise CRM/ERP Framework
+
+* **What it does**: Open Mercato is a modular, production-ready platform for building enterprise-grade CRMs, ERPs, and commerce backends. It provides 80% of common business functionality out-of-the-box (customer management, sales pipelines, order management, multi-tenancy) while letting teams customize the remaining 20% for their specific needs.
+
+* **Key features**: Fully modular architecture with auto-discovery; custom entities and dynamic forms; multi-tenant SaaS-ready with hierarchical organizations; feature-based RBAC with granular permissions; built-in AI Assistant using MCP (Model Context Protocol) for schema/API discovery and execution; event-driven workflows with Redis support; modern TypeScript stack (Next.js App Router, MikroORM, Awilix DI, Zod validation).
+
+* **Why it's notable**: Positions itself as a superior alternative to Django, Retool, and other low-code platforms by offering enterprise-grade defaults with full extensibility. The "start with 80% done" philosophy bridges the buy-vs-build dilemma—teams get production-ready CRM/ERP modules immediately while retaining complete control to build custom features. The integrated AI Assistant and modular architecture make it particularly compelling for teams needing rapid deployment without vendor lock-in. Gaining traction with 56 stars today as developers seek flexible alternatives to rigid SaaS platforms.
+
+---
+
+### Open Mercato - AI 驱动的企业级 CRM/ERP 基础框架
+
+* **功能介绍**: Open Mercato 是一个模块化、生产就绪的平台,用于构建企业级 CRM、ERP 和电商后端系统。它开箱即提供 80% 的通用业务功能(客户管理、销售管道、订单管理、多租户),同时允许团队针对特定需求定制剩余 20% 的功能。
+
+* **主要特点**: 完全模块化架构,支持自动发现;自定义实体和动态表单;多租户 SaaS 架构,支持分层组织结构;基于功能的 RBAC 权限控制;内置 AI 助手,使用 MCP(模型上下文协议)进行模式/API 发现和执行;基于事件的工作流,支持 Redis;现代 TypeScript 技术栈(Next.js App Router、MikroORM、Awilix 依赖注入、Zod 验证)。
+
+* **为何值得关注**: 将自己定位为 Django、Retool 等低代码平台的优质替代方案,提供企业级默认功能的同时保持完全可扩展性。"从 80% 完成开始"的理念解决了"购买还是自建"的困境——团队可以立即获得生产就绪的 CRM/ERP 模块,同时保留构建自定义功能的完全控制权。集成的 AI 助手和模块化架构使其特别适合需要快速部署且不希望被供应商锁定的团队。今日获得 56 星,开发者正在寻求灵活的 SaaS 平台替代方案。
+
+**[View Repository / 查看仓库](https://github.com/open-mercato/open-mercato)**
+
+### Machine Learning Systems - Comprehensive Open-Source AI Engineering Textbook and Learning Platform
+
+* A complete open-source textbook teaching AI engineering principles with hands-on implementation through TinyTorch framework, hardware labs on edge devices (Arduino, Raspberry Pi), and upcoming competitive benchmarking challenges
+* Key features include multi-format access (online, PDF, EPUB), structured learning paths (READ theory → BUILD frameworks → DEPLOY on hardware), coverage from ML fundamentals to production MLOps, and practical focus on real-world constraints like memory, latency, and power
+* Notable for bridging the gap between AI research and production engineering, backed by Harvard, with MIT Press hardcopy coming 2026, and establishing "AI engineering" as a foundational discipline alongside software/computer engineering
+
+### Machine Learning Systems - 全面的开源 AI 工程教材与学习平台
+
+* 完整的开源教材,通过 TinyTorch 框架、边缘设备硬件实验(Arduino、树莓派)以及即将推出的竞赛基准挑战,教授 AI 工程原理与实践
+* 主要特点包括多格式访问(在线、PDF、EPUB)、结构化学习路径(阅读理论 → 构建框架 → 硬件部署)、涵盖从机器学习基础到生产级 MLOps 的内容,以及对内存、延迟和功耗等实际约束的实践关注
+* 值得关注的原因:弥合 AI 研究与生产工程之间的鸿沟,由哈佛大学支持,MIT 出版社将于 2026 年推出纸质版,致力于将"AI 工程"确立为与软件工程、计算机工程并列的基础学科
+
+**[View Repository / 查看仓库](https://github.com/harvard-edge/cs249r_book)**
+
+### 🎬 Prepping for interviews? Here are some practical tips to help you out.
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Practical interview preparation strategies and techniques shared by Abbey from freeCodeCamp
+* Key topics discussed: Essential tips and actionable advice for candidates preparing for technical or professional interviews
+* Why it's worth watching: freeCodeCamp consistently delivers high-quality, accessible content for developers and job seekers. Abbey's practical approach offers real-world guidance that can help you feel more confident and prepared for your next interview
+
+### 🎬 面试准备实用技巧分享
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Abbey 分享的实用面试准备策略和技巧
+* 主要话题: 为技术或职业面试做准备的关键建议和可操作的指导
+* 为何值得观看: freeCodeCamp 一直为开发者和求职者提供高质量、易于理解的内容。Abbey 的实用方法提供了真实世界的指导,帮助你在下次面试中更加自信和充分准备
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BrBMM2gIQN8)**
+
+### 🎬 Seminggu Ngoding Smartwatch...
+**Channel:** Dea Afrizal
+
+* What the video covers: A week-long journey of coding and customizing a smartwatch, exploring its potential for developers and programmers
+* Key topics discussed: Custom firmware development, automation capabilities, IoT device integration, and practical programming applications on wearable devices
+* Why it's worth watching: Offers hands-on insights into smartwatch development from a programmer's perspective, demonstrating how wearables can be leveraged for automation and IoT projects beyond typical consumer use cases
+
+---
+
+### 🎬 一周智能手表编程实战...
+**频道:** Dea Afrizal
+
+* 视频内容概述: 记录了为期一周的智能手表编程和定制过程,探索其对开发者和程序员的潜力
+* 主要话题: 自定义固件开发、自动化功能、物联网设备集成,以及可穿戴设备上的实用编程应用
+* 为何值得观看: 从程序员视角提供智能手表开发的实践见解,展示如何将可穿戴设备用于自动化和物联网项目,超越典型的消费者使用场景
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8fKvBT_fIh0)**
+
+### 🎬 Warp Just Launched Oz, Which Lets You Run Unlimited AI Agents in the Cloud
+
+**Channel:** Varun Mayya
+
+* What the video covers: Introduction to Warp's new product "Oz" - a cloud-based platform that enables running unlimited AI agents for development and automation tasks
+* Key topics discussed: Cloud-based AI agent execution, scalability of AI workflows, integration with Warp terminal, practical use cases for developers and teams
+* Why it's worth watching: Learn about a cutting-edge tool that could revolutionize how developers leverage AI agents at scale, especially useful for those looking to automate complex workflows without local resource constraints
+
+---
+
+### 🎬 Warp 推出 Oz:在云端运行无限 AI 代理
+
+**频道:** Varun Mayya
+
+* 视频内容概述: 介绍 Warp 的新产品 "Oz" - 一个基于云的平台,可以运行无限数量的 AI 代理来完成开发和自动化任务
+* 主要话题: 云端 AI 代理执行、AI 工作流的可扩展性、与 Warp 终端的集成、开发者和团队的实际应用场景
+* 为何值得观看: 了解这个可能彻底改变开发者大规模使用 AI 代理方式的前沿工具,特别适合希望在不受本地资源限制的情况下自动化复杂工作流的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=NqjXZAv4pLQ)**
+
+### 🎬 Google Anti-Gravity: How to Create a Professional App Without Coding (Complete Tutorial 2026)
+
+**Channel:** Migue Baena IA
+
+* What the video covers: A comprehensive tutorial on building professional applications without writing code, using no-code tools and automation platforms
+* Key topics discussed: No-code app development, MAKE automation platform and its new agent functionality, step-by-step app creation process for 2026
+* Why it's worth watching: Perfect for non-developers who want to create professional-grade applications, showcases modern no-code tools and automation capabilities, includes practical hands-on tutorial with current 2026 techniques
+
+---
+
+### 🎬 Google Anti-Gravity: 如何在不编程的情况下创建专业应用(2026完整教程)
+
+**频道:** Migue Baena IA
+
+* 视频内容概述: 详细教程展示如何使用无代码工具和自动化平台构建专业应用程序,无需编写代码
+* 主要话题: 无代码应用开发、MAKE自动化平台及其新的智能代理功能、2026年应用创建的分步流程
+* 为何值得观看: 非常适合想要创建专业级应用的非开发人员,展示现代无代码工具和自动化能力,包含2026年最新技术的实用操作教程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6eX3f_z3fH8)**
 
