@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 20, 2026"
 date: 2026-02-20
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -539,75 +539,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Python 完整课程 | Python 初学者教程 | 第一部分
-
-**频道:** Coding With Sagar
-
-* **视频内容概述:** 专为初学者设计的 Python 编程完整课程，从零开始涵盖基础概念和实际应用
-* **主要话题:** Python 基础知识，包括语法、数据类型、变量、运算符、控制结构以及开始 Python 学习所需的基本编程概念
-* **为何值得观看:** 零基础编程新手的理想入门课程；由 Sagar Chouksey 讲授，采用结构化的循序渐进教学方法，为数据分析和 Python 开发打下坚实基础
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
-
-### Gemini 3.1 Pro: Latest AI Model Announcement
-
-* Google is releasing Gemini 3.1 Pro in preview today, building on feedback and improvements since Gemini 3 Pro launched in November
-* The preview release aims to validate updates and advance agentic workflows before general availability
-* Gemini 3.1 Pro is rolling out in the Gemini app with higher limits for Google AI Pro and Ultra plan subscribers
-* NotebookLM now features 3.1 Pro exclusively for Pro and Ultra users
-* Developers and enterprises can access 3.1 Pro in preview through multiple platforms: Gemini API, AI Studio, Antigravity, Vertex AI, Gemini Enterprise, Gemini CLI, and Android Studio
-
-### Gemini 3.1 Pro:最新 AI 模型发布
-
-* Google 今日发布 Gemini 3.1 Pro 预览版,基于 11 月发布 Gemini 3 Pro 以来收集的反馈和改进
-* 此预览版旨在验证更新并推进智能体工作流,之后将正式发布
-* Gemini 3.1 Pro 正在 Gemini 应用中推出,为 Google AI Pro 和 Ultra 计划用户提供更高使用限额
-* NotebookLM 现已独家为 Pro 和 Ultra 用户提供 3.1 Pro 功能
-* 开发者和企业可通过多个平台访问 3.1 Pro 预览版:Gemini API、AI Studio、Antigravity、Vertex AI、Gemini Enterprise、Gemini CLI 和 Android Studio
-
-**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/)**
-
-### Weathr: Terminal Weather App with ASCII Animations
-
-* A Rust-based terminal weather application featuring real-time weather data with animated ASCII art
-* Displays dynamic weather effects including rain, snow, thunderstorms, flying airplanes, and day/night cycles
-* Uses Open-Meteo API for weather data with automatic location detection via IP
-* Multiple installation methods: Cargo, AUR (Arch Linux), Nix flake (NixOS), or build from source
-* Highly configurable via TOML config files with support for metric/imperial units and custom coordinates
-* Includes simulation mode for testing different weather conditions without real API calls
-* Privacy-conscious design allowing manual coordinate specification to avoid IP-based location detection
-* Supports accessibility features including NO_COLOR environment variable and terminal capability detection
-* Licensed under GPL-3.0-or-later with weather data from Open-Meteo (CC BY 4.0) and credited ASCII art
-
-### Weathr:终端天气应用与 ASCII 动画
-
-* 基于 Rust 的终端天气应用,具有实时天气数据和动画 ASCII 艺术效果
-* 显示动态天气效果,包括雨、雪、雷暴、飞行的飞机以及昼夜循环
-* 使用 Open-Meteo API 获取天气数据,支持通过 IP 自动检测位置
-* 多种安装方式:Cargo、AUR(Arch Linux)、Nix flake(NixOS)或从源码构建
-* 通过 TOML 配置文件高度可定制,支持公制/英制单位和自定义坐标
-* 包含模拟模式,可在不调用真实 API 的情况下测试不同天气条件
-* 注重隐私设计,允许手动指定坐标以避免基于 IP 的位置检测
-* 支持无障碍功能,包括 NO_COLOR 环境变量和终端能力检测
-* 采用 GPL-3.0-or-later 许可证,天气数据来自 Open-Meteo(CC BY 4.0),ASCII 艺术已注明出处
-
-**[Read Original / 阅读原文](https://github.com/Veirt/weathr)**
-
-<!-- [Title-Only] -->
-### US plans online portal to bypass content bans in Europe and elsewhere
-
-* Based on the title, this article likely discusses a US government initiative to create an online platform that would allow users to access content that has been banned or restricted in Europe and other regions. This could involve circumventing regional content moderation policies, censorship laws, or regulatory restrictions like the EU's Digital Services Act.
-
-* This is interesting because it touches on several critical issues: the tension between US free speech principles and European content regulation, potential diplomatic conflicts over internet governance, and the broader debate about who controls what content is accessible online. It could signal a significant shift in how the US approaches international content moderation disputes and may have implications for tech platforms operating globally.
-
-### 美国计划建立在线门户网站以绕过欧洲等地的内容禁令
-
-* 根据标题推测，这篇文章可能讨论美国政府计划创建一个在线平台，允许用户访问在欧洲和其他地区被禁止或限制的内容。这可能涉及规避区域性内容审核政策、审查法律或像欧盟《数字服务法案》这样的监管限制。
-
-* 这个话题值得关注，因为它涉及几个关键议题：美国言论自由原则与欧洲内容监管之间的紧张关系、互联网治理方面潜在的外交冲突，以及关于谁控制在线内容可访问性的更广泛辩论。这可能标志着美国处理国际内容审核争议方式的重大转变，并可能对全球运营的科技平台产生影响。
-
----
-
 *Note: This analysis is based solely on the article title, as the full content was not available.*
 
 **[Read Original / 阅读原文](https://www.reuters.com/world/us-plans-online-portal-bypass-content-bans-europe-elsewhere-2026-02-18/)**
@@ -667,4 +598,110 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你在工作中使用 Claude,这个指南将揭示如何充分发挥其潜力——将其视为协作伙伴而非简单的聊天机器人,从而彻底改变你使用 AI 辅助提高生产力的方式
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=5fJpNitnij8)**
+
+<!-- [Title-Only] -->
+### MuMu Player (NetEase) silently runs 17 reconnaissance commands every 30 minutes
+
+* Based on the title, this article likely exposes privacy and security concerns with MuMu Player, an Android emulator developed by NetEase. The piece probably documents how the software executes 17 system reconnaissance commands at regular 30-minute intervals without user knowledge or consent.
+* This is worth reading because it highlights potential spyware-like behavior in popular software. Users of MuMu Player should be aware of what data is being collected from their systems, and the tech community needs visibility into these practices to make informed decisions about software they install.
+
+---
+
+### MuMu 模拟器（网易）每 30 分钟静默运行 17 条侦察命令
+
+* 根据标题推测，这篇文章可能揭露了网易开发的 Android 模拟器 MuMu Player 存在的隐私和安全问题。文章很可能记录了该软件在用户不知情或未经同意的情况下，每隔 30 分钟执行 17 条系统侦察命令的行为。
+* 这篇文章值得关注，因为它揭示了流行软件中潜在的类间谍软件行为。MuMu 模拟器的用户应该了解他们的系统正在被收集哪些数据，技术社区也需要了解这些做法，以便在安装软件时做出明智的决策。
+
+**[Read Original / 阅读原文](https://gist.github.com/interpiduser5/547d8a7baec436f24b7cce89dd4ae1ea)**
+
+<!-- [Title-Only] -->
+### An AI Agent Published a Hit Piece on Me – The Operator Came Forward
+
+*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
+
+* This article likely documents a personal account where an AI agent (possibly an autonomous AI system or bot) generated and published critical or defamatory content about the author. The "Part 4" in the URL suggests this is part of an ongoing series. The key development appears to be that the human operator behind the AI agent has revealed themselves or come forward to explain their involvement.
+
+* This is particularly interesting because it touches on several cutting-edge issues: AI-generated content and its potential for harm, questions of accountability when AI systems produce controversial material, the blurred lines between human and AI authorship, and the ethical implications of using AI agents for content creation. The fact that the operator came forward adds a human accountability angle to what could have been purely an AI ethics story, making it relevant for discussions about transparency, responsibility, and the real-world consequences of deploying AI agents.
+
+---
+
+### AI 智能体对我发表了抨击文章——幕后操作者现身
+
+*注：由于无法获取完整内容,以下介绍仅基于文章标题*
+
+* 这篇文章很可能记录了作者的亲身经历：一个 AI 智能体(可能是自主运行的 AI 系统或机器人)生成并发布了批评或诋毁作者的内容。URL 中的"Part 4"表明这是一个系列文章的第四部分。关键进展似乎是操控该 AI 智能体的人类操作者主动现身,解释了他们的参与情况。
+
+* 这个话题特别值得关注,因为它涉及多个前沿议题：AI 生成内容及其潜在危害、当 AI 系统产生争议性内容时的责任归属问题、人类作者身份与 AI 作者身份之间的模糊界限,以及使用 AI 智能体创作内容的伦理影响。操作者主动现身这一事实为这个原本可能纯粹是 AI 伦理的故事增添了人类问责的维度,使其对于讨论透明度、责任制以及部署 AI 智能体的现实后果都具有重要意义。
+
+**[Read Original / 阅读原文](https://theshamblog.com/an-ai-agent-wrote-a-hit-piece-on-me-part-4/)**
+
+### Gemini 3.1 Pro: Latest AI Model Announcement
+
+* Google is releasing Gemini 3.1 Pro in preview today, building on feedback and improvements since Gemini 3 Pro launched in November
+* The preview release aims to validate updates and advance agentic workflows before general availability
+* Gemini 3.1 Pro is rolling out in the Gemini app with higher limits for Google AI Pro and Ultra plan subscribers
+* NotebookLM now features 3.1 Pro exclusively for Pro and Ultra users
+* Developers and enterprises can access 3.1 Pro in preview through multiple platforms: Gemini API, AI Studio, Antigravity, Vertex AI, Gemini Enterprise, Gemini CLI, and Android Studio
+
+### Gemini 3.1 Pro:最新 AI 模型发布
+
+* Google 今日发布 Gemini 3.1 Pro 预览版,基于 11 月发布 Gemini 3 Pro 以来收集的反馈和改进
+* 此预览版旨在验证更新并推进智能体工作流,之后将正式发布
+* Gemini 3.1 Pro 正在 Gemini 应用中推出,为 Google AI Pro 和 Ultra 计划用户提供更高使用限额
+* NotebookLM 现已独家为 Pro 和 Ultra 用户提供 3.1 Pro 功能
+* 开发者和企业可通过多个平台访问 3.1 Pro 预览版:Gemini API、AI Studio、Antigravity、Vertex AI、Gemini Enterprise、Gemini CLI 和 Android Studio
+
+**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/)**
+
+### visual-explainer - Agent Skill for Beautiful HTML Visualizations
+
+* Transforms terminal output (diffs, architecture diagrams, data tables) into styled, self-contained HTML pages with dark/light themes and interactive Mermaid diagrams
+* Key features: 5 slash commands (`/diff-review`, `/plan-review`, `/project-recap`, `/fact-check`, `/generate-web-diagram`), automatic table rendering for complex data, supports 11 diagram types, zero build dependencies
+* Why it's notable: Solves the "ASCII art problem" in AI coding agents—replaces unreadable terminal diagrams with presentation-ready visualizations that work with Pi, Claude Code, and other agents following the Agent Skills spec
+
+### visual-explainer - AI 代码助手的可视化技能插件
+
+* 功能介绍:将终端输出(代码差异、架构图、数据表)转换为带深色/浅色主题和交互式 Mermaid 图表的独立 HTML 页面
+* 主要特点:提供 5 个斜杠命令(`/diff-review`、`/plan-review`、`/project-recap`、`/fact-check`、`/generate-web-diagram`),自动渲染复杂表格,支持 11 种图表类型,无需构建工具
+* 为何值得关注:解决了 AI 编码助手的"ASCII 艺术问题"——用可演示级别的可视化页面替代难以阅读的终端图表,兼容 Pi、Claude Code 等遵循 Agent Skills 规范的助手
+
+**[View Repository / 查看仓库](https://github.com/nicobailon/visual-explainer)**
+
+### 🎬 Python Full Course | Python Tutorial for Beginners | Part 1
+
+**Channel:** Coding With Sagar
+
+* **What the video covers:** A comprehensive Python programming course designed specifically for beginners, covering fundamental concepts and practical applications from scratch
+* **Key topics discussed:** Python basics including syntax, data types, variables, operators, control structures, and foundational programming concepts essential for starting a Python journey
+* **Why it's worth watching:** Perfect entry point for absolute beginners with no prior programming experience; taught by Sagar Chouksey with a structured, step-by-step approach that builds a solid foundation for data analytics and general Python development
+
+---
+
+### 🎬 Python 完整课程 | Python 初学者教程 | 第一部分
+
+**频道:** Coding With Sagar
+
+* **视频内容概述:** 专为初学者设计的 Python 编程完整课程，从零开始涵盖基础概念和实际应用
+* **主要话题:** Python 基础知识，包括语法、数据类型、变量、运算符、控制结构以及开始 Python 学习所需的基本编程概念
+* **为何值得观看:** 零基础编程新手的理想入门课程；由 Sagar Chouksey 讲授，采用结构化的循序渐进教学方法，为数据分析和 Python 开发打下坚实基础
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
+
+### 🎬 Subscribe for more coding tips⬆️
+**Channel:** Decode_withme
+
+* A channel promotion video encouraging viewers to subscribe for coding content
+* Focuses on building a community for developers looking to improve their programming skills
+* Worth watching if you're interested in following a coding-focused channel that promises regular tips and tutorials to enhance your development abilities
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Decode_withme
+
+* 频道推广视频,鼓励观众订阅以获取编程内容
+* 专注于为希望提升编程技能的开发者建立社区
+* 如果你有兴趣关注一个承诺定期提供技巧和教程来提升开发能力的编程频道,值得一看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lVQTzQtP9NI)**
 
