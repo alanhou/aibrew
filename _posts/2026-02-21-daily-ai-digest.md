@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 21, 2026"
 date: 2026-02-21
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -335,4 +335,252 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 对于想要系统学习 Python 的零基础学习者来说,这是完美的起点。Sagar Chouksey 将复杂概念分解为易于理解的课程,让编程入门变得简单。该课程是完整系列的一部分,确保全面覆盖 Python 基础知识,学习路径清晰明确。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
+
+### F-Droid Weekly Update: Keep Android Open Campaign & App Updates
+
+* **Google's Android lockdown still proceeding** - Despite public perception that Google canceled restrictive plans, the August-announced changes are still scheduled; F-Droid launches banner campaign to raise awareness
+* **F-Droid Basic 2.0-alpha3 released** - New features include CSV export of installed apps, install history, mirror chooser, screenshot prevention, and Material Design 3 compliance
+* **Major app updates** - Conversations/Quicksy (2.19.10) removes Google library dependencies via IPC; Dolphin Emulator (2512) with extensive changelog; ProtonVPN (5.15.70.0) drops OpenVPN, reducing size by 40%
+* **Nextcloud ecosystem updates** - Multiple apps updated including main client (33.0.0), Notes, Talk (23.0.0); server-side Hub 26 Winter released with new features
+* **Notable updates** - Image Toolbox (3.6.1) adds AI tools; Luanti (5.15.1) fixes flickering; QUIK SMS (4.3.4) resolves message deletion bug; SimpleEmail (1.5.4) returns after 2-year hiatus
+* **Repository changes** - 5 apps removed (including Tomdroid, Tibetan Keyboard); 1 new app added (NeoDB You); 287 total apps updated this week
+
+### F-Droid 周报:保持 Android 开放运动与应用更新
+
+* **谷歌 Android 锁定计划仍在推进** - 尽管公众认为谷歌取消了限制性计划,但 8 月宣布的变更仍在进行;F-Droid 发起横幅宣传活动以提高认识
+* **F-Droid Basic 2.0-alpha3 发布** - 新功能包括已安装应用的 CSV 导出、安装历史记录、镜像选择器、截图防护以及 Material Design 3 合规性
+* **重要应用更新** - Conversations/Quicksy (2.19.10) 通过 IPC 移除谷歌库依赖;Dolphin 模拟器 (2512) 包含大量更新日志;ProtonVPN (5.15.70.0) 放弃 OpenVPN,体积减少 40%
+* **Nextcloud 生态系统更新** - 多个应用更新,包括主客户端 (33.0.0)、Notes、Talk (23.0.0);服务器端 Hub 26 Winter 发布新功能
+* **值得关注的更新** - Image Toolbox (3.6.1) 添加 AI 工具;Luanti (5.15.1) 修复闪烁问题;QUIK SMS (4.3.4) 解决消息删除 bug;SimpleEmail (1.5.4) 在 2 年后回归
+* **仓库变更** - 移除 5 个应用(包括 Tomdroid、藏文键盘);新增 1 个应用(NeoDB You);本周共更新 287 个应用
+
+**[Read Original / 阅读原文](https://f-droid.org/2026/02/20/twif.html)**
+
+### I Found a Vulnerability. They Found a Lawyer.
+
+* A diving instructor and platform engineer discovered a critical security vulnerability in a major diving insurer's member portal during a trip to Costa Rica
+* The vulnerability was shockingly simple: sequential numeric user IDs combined with a static default password that was never enforced to be changed, exposing full personal data including minors' information
+* The authentication system had no rate limiting, no account lockout, and no MFA - anyone could access accounts by guessing sequential numbers and using the default password
+* The author verified the vulnerability using a simple Selenium script, found multiple accounts (including those of 14-year-old students) still using default passwords, then immediately deleted all data
+* Following responsible disclosure practices, the author reported to CSIRT Malta (as required by Maltese law) and the organization directly, offering a 30-day embargo period
+* Instead of receiving thanks, the author received a legal threat from the organization's law firm, claiming the disclosure to authorities created "unfair liability" and that the author's actions "likely constitute a criminal offence"
+* The organization demanded the author sign a confidentiality declaration and provide passport ID, despite being the party with the security failure
+* The vulnerability has since been fixed, but the author waited 8+ months past the embargo to publish, giving the organization ample time to remediate and notify users
+
+### 我发现了一个漏洞,他们找来了律师
+
+* 一位潜水教练兼平台工程师在哥斯达黎加旅行期间,发现了一家大型潜水保险公司会员门户网站的严重安全漏洞
+* 该漏洞简单得令人震惊:顺序递增的数字用户ID加上从未强制更改的静态默认密码,暴露了包括未成年人在内的完整个人数据
+* 认证系统没有速率限制、没有账户锁定、没有多因素认证——任何人都可以通过猜测顺序数字和使用默认密码来访问账户
+* 作者使用简单的Selenium脚本验证了漏洞,发现多个账户(包括14岁学生的账户)仍在使用默认密码,随后立即删除了所有数据
+* 遵循负责任的披露实践,作者向马耳他CSIRT(按马耳他法律要求)和该组织直接报告,并提供了30天的禁令期
+* 作者非但没有收到感谢,反而收到了该组织律师事务所的法律威胁,声称向当局披露造成了"不公平的责任",并称作者的行为"可能构成刑事犯罪"
+* 该组织要求作者签署保密声明并提供护照ID,尽管他们才是存在安全漏洞的一方
+* 漏洞已被修复,但作者在禁令期后又等待了8个多月才发布,给该组织充足的时间进行修复和通知用户
+
+**[Read Original / 阅读原文](https://dixken.de/blog/i-found-a-vulnerability-they-found-a-lawyer)**
+
+### Lil' Fun Langs: A Guide to Minimal ML-Style Language Implementations
+
+* Explores ultra-compact programming language implementations, from 2-combinator Iota to 340-byte milliForth
+* Provides comprehensive feature-to-LOC breakdown for ML-style languages: basic arithmetic (~50 LOC) to advanced module systems (2000-5000 LOC)
+* Surveys 12+ minimal implementations including Hirrolot's CoC (60-80 lines for full dependent types), TinyML (<700 LOC with HM inference), and Simple-sub (500 LOC algebraic subtyping)
+* Covers essential resources: "Write You a Haskell" tutorial series, ZINC abstract machine paper, Elaboration Zoo for dependent types, and Modern Compiler Implementation in ML
+* Highlights key language features with implementation complexity: closures (~200 LOC), pattern matching (200-600 LOC), type classes (500-2000 LOC), and algebraic effects (500-1500 LOC)
+* Includes practical implementations like EYG (JSON AST-based with row polymorphism), Pico-ml (TypeScript-based WebAssembly compiler), and THIH (complete Haskell 98 type system in 429 lines)
+
+### 迷你函数式语言：ML 风格语言最小实现指南
+
+* 探索超紧凑编程语言实现，从 2 组合子的 Iota 到 340 字节的 milliForth
+* 提供 ML 风格语言功能与代码行数的全面对照：基础算术（约 50 行）到高级模块系统（2000-5000 行）
+* 调研 12+ 个最小实现，包括 Hirrolot's CoC（60-80 行实现完整依赖类型）、TinyML（<700 行含 HM 推导）和 Simple-sub（500 行代数子类型）
+* 涵盖核心资源："Write You a Haskell" 教程系列、ZINC 抽象机论文、依赖类型的 Elaboration Zoo 和《ML 现代编译器实现》
+* 标注关键语言特性的实现复杂度：闭包（约 200 行）、模式匹配（200-600 行）、类型类（500-2000 行）和代数效应（500-1500 行）
+* 包含实用实现如 EYG（基于 JSON AST 的行多态）、Pico-ml（TypeScript 实现的 WebAssembly 编译器）和 THIH（429 行完整 Haskell 98 类型系统）
+
+**[Read Original / 阅读原文](https://taylor.town/scrapscript-000)**
+
+### Superpowers - An Agentic Skills Framework for AI Coding Agents
+
+* **What it does**: A complete software development workflow system that transforms AI coding agents into disciplined developers. Instead of jumping straight into code, agents first clarify requirements, create digestible specs, build detailed implementation plans, then execute through subagent-driven development with autonomous work sessions lasting up to 2 hours.
+
+* **Key features**: 
+  - Composable skills library covering brainstorming, TDD, systematic debugging, git worktrees, code review, and subagent orchestration
+  - Enforces RED-GREEN-REFACTOR cycle and deletes code written before tests
+  - Two-stage review process (spec compliance + code quality)
+  - Supports Claude Code, Cursor, Codex, and OpenCode platforms
+  - Skills trigger automatically based on context—no manual invocation needed
+
+* **Why it's notable**: Gaining 980 stars today because it solves the "cowboy coding" problem with AI agents. Rather than letting agents write untested code haphazardly, it enforces professional software engineering practices (TDD, YAGNI, DRY) through mandatory workflows. The subagent-driven approach enables truly autonomous development while maintaining quality—a breakthrough for practical AI-assisted coding at scale.
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+* **功能介绍**: 为 AI 编码代理打造的完整软件开发工作流系统。代理不会直接开始写代码,而是先澄清需求、创建易读的规格说明、构建详细实施计划,然后通过子代理驱动开发执行,可实现长达 2 小时的自主工作。
+
+* **主要特点**:
+  - 可组合技能库,涵盖头脑风暴、TDD、系统化调试、git worktrees、代码审查和子代理编排
+  - 强制执行"红-绿-重构"循环,删除测试前编写的代码
+  - 两阶段审查流程(规格合规性 + 代码质量)
+  - 支持 Claude Code、Cursor、Codex 和 OpenCode 平台
+  - 技能根据上下文自动触发,无需手动调用
+
+* **为何值得关注**: 今日获得 980 星,因为它解决了 AI 代理"牛仔式编码"的问题。不是让代理随意编写未测试的代码,而是通过强制性工作流执行专业软件工程实践(TDD、YAGNI、DRY)。子代理驱动方法在保持质量的同时实现真正的自主开发——这是大规模实用 AI 辅助编码的突破。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Trivy - Comprehensive Security Scanner for Containers, Kubernetes, and Cloud Infrastructure
+
+* **What it does**: Trivy is an all-in-one security scanner that detects vulnerabilities, misconfigurations, secrets, and generates SBOMs (Software Bill of Materials) across multiple targets including container images, filesystems, Git repositories, VM images, and Kubernetes clusters.
+
+* **Key features**: 
+  - Multi-target scanning (containers, Kubernetes, code repos, VMs, clouds)
+  - Multiple scanner types (CVE vulnerabilities, IaC misconfigurations, secrets detection, license compliance)
+  - Easy installation via brew, Docker, or binary downloads
+  - Rich ecosystem with GitHub Actions, Kubernetes operator, and VS Code plugin integrations
+  - Supports most popular programming languages and operating systems
+
+* **Why it's notable**: With 37 stars today, Trivy stands out as a versatile, production-ready security tool from Aqua Security that consolidates multiple security scanning needs into a single CLI. Its comprehensive coverage and extensive integrations make it a go-to choice for DevSecOps teams looking to shift security left in their development pipeline.
+
+---
+
+### Trivy - 容器、Kubernetes 和云基础设施的综合安全扫描器
+
+* **功能介绍**: Trivy 是一款一体化安全扫描工具,可在容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes 集群等多个目标中检测漏洞、错误配置、敏感信息,并生成软件物料清单(SBOM)。
+
+* **主要特点**:
+  - 多目标扫描支持(容器、Kubernetes、代码仓库、虚拟机、云环境)
+  - 多种扫描类型(CVE 漏洞、基础设施即代码错误配置、密钥检测、许可证合规)
+  - 便捷安装方式(brew、Docker 或二进制文件下载)
+  - 丰富的生态系统集成(GitHub Actions、Kubernetes operator、VS Code 插件等)
+  - 支持主流编程语言和操作系统
+
+* **为何值得关注**: Trivy 今日获得 37 个 star,作为 Aqua Security 推出的多功能生产级安全工具,它将多种安全扫描需求整合到单一 CLI 中。其全面的覆盖范围和广泛的集成能力,使其成为 DevSecOps 团队在开发流程中实现安全左移的首选工具。
+
+**[View Repository / 查看仓库](https://github.com/aquasecurity/trivy)**
+
+### visual-explainer - Agent Skill for Beautiful HTML Visualizations
+
+* Transforms terminal output (diffs, architecture diagrams, data tables) into styled, self-contained HTML pages with dark/light themes and interactive Mermaid diagrams
+* Key features: 5 slash commands (`/diff-review`, `/plan-review`, `/project-recap`, `/fact-check`, `/generate-web-diagram`), automatic table rendering for complex data, supports 11 diagram types, zero build dependencies
+* Why it's notable: Solves the "ugly ASCII art" problem that plagues coding agents—generates presentation-ready visualizations with real typography, Chart.js dashboards, and zoom/pan interactions. Works with Pi, Claude Code, and other agents following the Agent Skills spec. 1,730 stars for making agent output actually readable.
+
+---
+
+### visual-explainer - AI 代理的可视化技能插件
+
+* 功能介绍:将终端输出(代码差异、架构图、数据表)转换为带深色/浅色主题和交互式 Mermaid 图表的独立 HTML 页面
+* 主要特点:提供 5 个斜杠命令(`/diff-review`、`/plan-review`、`/project-recap`、`/fact-check`、`/generate-web-diagram`),自动渲染复杂表格,支持 11 种图表类型,无需构建工具
+* 为何值得关注:解决了 AI 代理输出"丑陋 ASCII 艺术"的痛点——生成可用于演示的可视化内容,包含真实排版、Chart.js 仪表板和缩放/平移交互。兼容 Pi、Claude Code 等遵循 Agent Skills 规范的代理。1,730 星标,让 AI 输出真正可读。
+
+**[View Repository / 查看仓库](https://github.com/nicobailon/visual-explainer)**
+
+### Ars Contexta - AI-Powered Personal Knowledge System Generator
+
+* Generates a complete "second brain" knowledge management system through conversational setup with Claude Code. You describe your workflow, and it creates a personalized markdown-based vault with folder structure, processing pipeline, automation hooks, and navigation maps—all backed by 249 research claims from cognitive science and knowledge management theory.
+
+* Key features include: conversational 20-minute setup (no templates or config files), plain markdown files with wiki links (no lock-in), automated processing pipeline implementing the "6 Rs" methodology (Record, Reduce, Reflect, Reweave, Verify, Rethink), fresh context per processing phase via subagent spawning, automatic quality enforcement hooks, 10+ plugin commands plus 16 generated vault-specific commands, and optional semantic search integration.
+
+* Notable for its research-driven derivation approach—every architectural decision traces to specific cognitive science claims rather than using generic templates. The system synthesizes Zettelkasten, Cornell Note-Taking, PARA, GTD, and agent architecture patterns into a personalized knowledge system that persists across AI sessions, solving the "blank slate" problem where AI tools forget context between conversations.
+
+---
+
+### Ars Contexta - AI 驱动的个人知识系统生成器
+
+* 通过与 Claude Code 的对话式设置生成完整的"第二大脑"知识管理系统。你描述自己的工作流程,它就会创建个性化的 markdown 知识库,包含文件夹结构、处理流程、自动化钩子和导航地图——所有设计均基于认知科学和知识管理理论的 249 项研究结论。
+
+* 主要特点包括:20 分钟对话式设置(无需模板或配置文件)、纯 markdown 文件配合 wiki 链接(无锁定)、实现"6R"方法论的自动化处理流程(记录、提炼、反思、重织、验证、反思)、通过子代理生成为每个处理阶段提供新鲜上下文、自动质量检查钩子、10+ 个插件命令加 16 个生成的知识库专用命令,以及可选的语义搜索集成。
+
+* 值得关注的原因在于其研究驱动的推导方法——每个架构决策都可追溯到具体的认知科学研究,而非使用通用模板。该系统将 Zettelkasten、康奈尔笔记法、PARA、GTD 和智能体架构模式综合成个性化知识系统,在 AI 会话间持久保存,解决了 AI 工具在对话间"遗忘上下文"的空白状态问题。
+
+**[View Repository / 查看仓库](https://github.com/agenticnotetaking/arscontexta)**
+
+### 🎬 TanStack Start in 100 Seconds
+**Channel:** Fireship
+
+* What the video covers: A rapid introduction to TanStack Start, a new full-stack framework that combines the power of TanStack Router with React and Solid for building modern web applications
+* Key topics discussed: Developer experience optimization, full-stack capabilities, integration with TanStack Router, support for both React and Solid frameworks, and how it compares to other meta-frameworks
+* Why it's worth watching: Fireship's signature 100-second format delivers a quick, comprehensive overview perfect for developers who want to understand TanStack Start's core value proposition without investing hours in documentation. Ideal for staying current with the latest full-stack tooling options in the React/Solid ecosystem
+
+---
+
+### 🎬 TanStack Start 百秒速览
+**频道:** Fireship
+
+* 视频内容概述: 快速介绍 TanStack Start——一个结合 TanStack Router 与 React 和 Solid 的新型全栈框架，专为构建现代 Web 应用而设计
+* 主要话题: 开发者体验优化、全栈功能特性、与 TanStack Router 的集成方式、对 React 和 Solid 框架的支持，以及与其他元框架的对比
+* 为何值得观看: Fireship 标志性的百秒速览格式，无需花费数小时阅读文档即可快速全面了解 TanStack Start 的核心价值。非常适合希望紧跟 React/Solid 生态系统最新全栈工具动态的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1fUBWAETmkk)**
+
+### 🎬 Dario Amodei's AI Timelines
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Anthropic CEO Dario Amodei about his predictions and perspectives on artificial intelligence development timelines
+* Key topics discussed: Expected progression of AI capabilities, potential arrival of AGI (Artificial General Intelligence), scaling laws, safety considerations, and how current AI trends might unfold over the coming years
+* Why it's worth watching: Dario Amodei is one of the most influential voices in AI development, leading Anthropic (creators of Claude). His insights provide a rare window into how top AI researchers are thinking about the future trajectory of the technology, making this essential viewing for anyone interested in understanding where AI is headed and the timeframes involved
+
+### 🎬 Dario Amodei 的 AI 时间线预测
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Anthropic 首席执行官 Dario Amodei 深入探讨他对人工智能发展时间线的预测和观点
+* 主要话题: AI 能力的预期发展进程、AGI(通用人工智能)可能到来的时间、规模定律、安全考量,以及当前 AI 趋势在未来几年可能如何演变
+* 为何值得观看: Dario Amodei 是 AI 发展领域最具影响力的声音之一,他领导着 Anthropic(Claude 的创造者)。他的见解为我们提供了一个难得的窗口,了解顶尖 AI 研究人员如何思考技术的未来轨迹,对于任何想要理解 AI 发展方向和时间框架的人来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3Zx9lluQA94)**
+
+### 🎬 Subscribe for more coding tips⬆️
+**Channel:** Decode_withme
+
+* This appears to be a channel promotion video encouraging viewers to subscribe for coding content
+* Focuses on helping developers enhance their coding abilities through tips and tutorials
+* Worth watching if you're looking to join a community-focused coding channel that promises regular coding tips and skill development content
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Decode_withme
+
+* 这是一个频道推广视频,鼓励观众订阅以获取编程内容
+* 专注于通过技巧和教程帮助开发者提升编程能力
+* 如果你想加入一个以社区为中心的编程频道,承诺提供定期编程技巧和技能发展内容,值得关注
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rGJOE5rLV7U)**
+
+### 🎬 Anthropic's Full Claude Skills Guide In 22 Minutes
+
+**Channel:** Mark Kashef
+
+* What the video covers: A comprehensive walkthrough of Anthropic's official Claude Skills Guide, condensing essential techniques and best practices for working with Claude AI into a 22-minute tutorial
+* Key topics discussed: Prompt engineering strategies, Claude's capabilities and limitations, effective communication patterns with Claude, optimization techniques for better AI responses, and practical implementation tips from Anthropic's documentation
+* Why it's worth watching: This video distills Anthropic's extensive official documentation into an accessible, time-efficient format perfect for developers and AI practitioners who want to quickly master Claude's features without reading through lengthy guides. Mark Kashef's community has 800+ AI builders, indicating trusted expertise in the field.
+
+---
+
+### 🎬 Anthropic Claude 完整技能指南 22 分钟速览
+
+**频道:** Mark Kashef
+
+* 视频内容概述: 全面讲解 Anthropic 官方发布的 Claude 技能指南,将核心技术和最佳实践浓缩为 22 分钟教程
+* 主要话题: 提示词工程策略、Claude 的能力与局限性、与 Claude 有效沟通的模式、优化 AI 响应的技巧,以及 Anthropic 文档中的实用实施建议
+* 为何值得观看: 该视频将 Anthropic 冗长的官方文档精炼为易懂且高效的格式,非常适合希望快速掌握 Claude 功能的开发者和 AI 从业者,无需阅读大量指南。Mark Kashef 的社区拥有 800 多名 AI 开发者,显示其在该领域的可信专业度。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TzJecWCbex0)**
+
+### 🎬 The Hardest Lesson In Programming (I Learned Too Late)
+**Channel:** devsplate
+
+* What the video covers: The gap between following tutorials and real-world programming, exploring why code that works in guided lessons often fails when applied independently
+* Key topics discussed: The transition from tutorial-based learning to practical application, common pitfalls developers face when moving beyond structured content, and critical lessons learned through years of coding experience
+* Why it's worth watching: Addresses a universal struggle in programming education - the "tutorial hell" phenomenon where developers can follow along but struggle to build independently. Offers hard-earned insights that could save viewers years of frustration by understanding the fundamental difference between passive learning and active problem-solving
+
+### 🎬 编程中最难的一课(我学到时已太晚)
+**频道:** devsplate
+
+* 视频内容概述: 探讨跟随教程学习与实际编程之间的鸿沟,分析为什么在指导课程中有效的代码在独立应用时经常失败
+* 主要话题: 从基于教程的学习过渡到实际应用、开发者在超越结构化内容时面临的常见陷阱,以及通过多年编程经验获得的关键教训
+* 为何值得观看: 直击编程教育中的普遍难题——"教程地狱"现象,即开发者能够跟着做但难以独立构建。提供宝贵的经验洞察,通过理解被动学习与主动解决问题之间的根本差异,可为观众节省多年的挫折时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5ehBYy1xYYQ)**
 
