@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 20, 2026"
 date: 2026-02-20
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，8个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -704,4 +704,124 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 如果你有兴趣关注一个承诺定期提供技巧和教程来提升开发能力的编程频道,值得一看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lVQTzQtP9NI)**
+
+### Defer Feature Now Available in GCC and Clang Compilers
+
+* ISO Technical Specification TS 25755 for `defer` in C is complete and moving through publication procedures
+* Clang-22 now includes native `defer` support; GCC implementation is in progress
+* `defer` eliminates resource leaks and mutex deadlocks by ensuring cleanup code runs on all exit paths
+* Backward compatibility available: works with GCC-9+ and Clang-22+ using a preprocessor workaround
+* GCC fallback uses nested functions without trampolines, avoiding stack exploit risks
+* Older Clang versions lack fallback due to incompatible "blocks" extension semantics
+* Practical use cases include automatic memory deallocation and guaranteed mutex unlocking
+* Always use curly braces with `defer` to ensure GCC fallback compatibility
+
+### GCC 和 Clang 编译器现已支持 Defer 特性
+
+* C 语言 `defer` 特性的 ISO 技术规范 TS 25755 已完成，正在进行发布流程
+* Clang-22 已原生支持 `defer`；GCC 实现正在开发中
+* `defer` 通过确保清理代码在所有退出路径上执行，消除资源泄漏和互斥锁死锁问题
+* 向后兼容：通过预处理器变通方案支持 GCC-9+ 和 Clang-22+
+* GCC 回退方案使用嵌套函数但不产生跳板代码，避免栈溢出攻击风险
+* 旧版 Clang 因"blocks"扩展语义不兼容而无法提供回退支持
+* 实际应用场景包括自动内存释放和保证互斥锁解锁
+* 使用 `defer` 时必须加花括号以确保 GCC 回退方案正常工作
+
+**[Read Original / 阅读原文](https://gustedt.wordpress.com/2026/02/15/defer-available-in-gcc-and-clang/)**
+
+### Consistency Diffusion Language Models: Up to 14x Faster Inference Without Sacrificing Quality
+
+* CDLM introduces a post-training method that accelerates Diffusion Language Models (DLMs) by 4-14x while maintaining quality, addressing two key bottlenecks: KV caching incompatibility and high refinement step requirements
+* Unlike autoregressive models that generate one token at a time, DLMs iteratively refine masked sequences in parallel, but standard implementations require expensive full bidirectional attention recomputation at each step
+* The training approach uses three objectives: distillation loss for newly unmasked positions, consistency loss for temporal stability within blocks, and auxiliary masked-denoising loss to preserve reasoning capabilities
+* CDLM employs block-wise causal attention instead of full bidirectional attention, enabling exact KV caching for finalized blocks while retaining local refinement capabilities within the current block
+* Trajectory collection involves running a teacher DLM with full bidirectional attention (block size 32, 256 generation length) to create high-quality training data, then training a student model with block-causal constraints
+* Results show 4.1x-7.7x step reductions across benchmarks with minimal accuracy loss, translating to 11.2x speedup on GSM8K-CoT and 14.5x on MBPP-Instruct
+* System-level analysis reveals block-wise DLMs occupy a sweet spot between memory-bound AR models and compute-bound vanilla DLMs, achieving balanced arithmetic intensity especially at small batch sizes
+* Simply truncating refinement steps in standard DLMs causes significant accuracy degradation, demonstrating that CDLM's training-based approach is essential for stable multi-token refinement
+* The method is model-agnostic and can be applied to any block-diffusion model, with potential for further improvements when using stronger DLM teachers to train mid-scale students
+
+### 一致性扩散语言模型:推理速度提升14倍且不损失质量
+
+* CDLM提出了一种训练后加速方法,使扩散语言模型(DLM)速度提升4-14倍并保持质量,解决了两个关键瓶颈:KV缓存不兼容和高细化步骤需求
+* 与逐token生成的自回归模型不同,DLM通过并行方式迭代细化掩码序列,但标准实现需要在每步重新计算昂贵的全双向注意力
+* 训练方法使用三个目标:新解码位置的蒸馏损失、块内时间一致性损失,以及保留推理能力的辅助掩码去噪损失
+* CDLM采用块级因果注意力而非全双向注意力,为已完成的块启用精确KV缓存,同时保留当前块内的局部细化能力
+* 轨迹收集通过运行具有全双向注意力的教师DLM(块大小32,生成长度256)创建高质量训练数据,然后用块因果约束训练学生模型
+* 结果显示在各基准测试中步骤减少4.1x-7.7x且准确率损失极小,在GSM8K-CoT上实现11.2x加速,在MBPP-Instruct上实现14.5x加速
+* 系统级分析表明块级DLM处于内存受限的AR模型和计算受限的原始DLM之间的最佳位置,特别是在小批量情况下实现平衡的算术强度
+* 简单截断标准DLM的细化步骤会导致显著的准确率下降,证明CDLM基于训练的方法对于稳定的多token细化至关重要
+* 该方法与模型无关,可应用于任何块扩散模型,使用更强的DLM教师训练中等规模学生模型时有进一步改进潜力
+
+**[Read Original / 阅读原文](https://www.together.ai/blog/consistency-diffusion-language-models)**
+
+### Apple Silicon Accelerometer: Accessing Hidden Hardware Sensors
+
+* Apple Silicon Macs (M1/M2/M3/M4) contain an undocumented MEMS accelerometer managed by the Sensor Processing Unit (SPU), not exposed through any public API
+* This Python project reads raw 3-axis acceleration data at ~800Hz via IOKit HID callbacks by accessing AppleSPUHIDDevice in the IOKit registry
+* The sensor data comes as 22-byte HID reports with x/y/z coordinates as int32 little-endian values at specific byte offsets, divided by 65536 to get values in g-force
+* Requires root privileges to access IOKit HID devices on Apple Silicon, and includes a heartbeat detection demo using ballistocardiography (BCG) to detect mechanical vibrations from heartbeats
+* Experimental project tested only on MacBook Pro M3 Pro with macOS 15.6.1 - may break on future updates and is not affiliated with Apple
+
+### Apple Silicon 加速度计:访问隐藏的硬件传感器
+
+* Apple Silicon Mac(M1/M2/M3/M4)包含一个未公开的 MEMS 加速度计,由传感器处理单元(SPU)管理,未通过任何公共 API 暴露
+* 该 Python 项目通过访问 IOKit 注册表中的 AppleSPUHIDDevice,利用 IOKit HID 回调以约 800Hz 的频率读取原始三轴加速度数据
+* 传感器数据以 22 字节 HID 报告形式传输,x/y/z 坐标为特定字节偏移处的 int32 小端值,除以 65536 得到以 g 为单位的值
+* 需要 root 权限才能访问 Apple Silicon 上的 IOKit HID 设备,并包含使用心冲击描记术(BCG)检测心跳机械振动的心率检测演示
+* 实验性项目仅在 MacBook Pro M3 Pro 和 macOS 15.6.1 上测试 - 可能在未来更新中失效,且与 Apple 公司无关
+
+**[Read Original / 阅读原文](https://github.com/olvvier/apple-silicon-accelerometer)**
+
+### 🎬 100 hours of OpenClaw lessons in 35 minutes
+**Channel:** Alex Finn
+
+* What the video covers: A comprehensive deep-dive into OpenClaw, condensing 100 hours of hands-on experience into a 35-minute tutorial covering everything the creator has learned about the platform
+* Key topics discussed: Complete walkthrough of OpenClaw features, best practices, common pitfalls, and practical lessons learned from extensive usage - organized into chapters for easy navigation
+* Why it's worth watching: Saves viewers significant time by distilling months of learning into actionable insights; chapter-based structure allows developers to jump to specific topics relevant to their needs; practical, experience-based knowledge rather than just documentation review
+
+### 🎬 OpenClaw 100小时实战精华35分钟速成
+**频道:** Alex Finn
+
+* 视频内容概述: 将100小时的 OpenClaw 实战经验浓缩为35分钟的全面教程,涵盖创作者对该平台的所有知识和心得
+* 主要话题: OpenClaw 功能完整演示、最佳实践方法、常见问题解决方案、以及大量实际使用经验总结 - 按章节组织便于查找
+* 为何值得观看: 为开发者节省大量学习时间,将数月的摸索经验转化为可操作的见解;章节化结构支持快速定位到所需内容;提供基于实战的实用知识而非单纯的文档解读
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_kZCoW-Qxnc)**
+
+### 🎬 Subscribe for more coding tips⬆️
+**Channel:** Decode_withme
+
+* A channel promotion video encouraging viewers to subscribe for coding content
+* Focuses on building coding skills and joining a developer community
+* Worth watching if you're looking for a channel that offers regular coding tips and tutorials to improve your programming abilities
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Decode_withme
+
+* 频道推广视频,鼓励观众订阅以获取编程内容
+* 专注于提升编程技能和加入开发者社区
+* 如果你正在寻找一个提供定期编程技巧和教程来提高编程能力的频道,值得关注
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rGJOE5rLV7U)**
+
+### 🎬 LIVE — 12th MATHS 1 | 6.Line & Plane | 7.Linear Programming | Maha-Revision | Board Exam 2026
+
+**Channel:** Pradeep Giri 11th and 12th Academy
+
+* Comprehensive live revision session covering two critical chapters from 12th grade Mathematics: Line & Plane (Chapter 6) and Linear Programming (Chapter 7)
+* Focused exam preparation specifically designed for Board Exam 2026 students, featuring problem-solving techniques and concept clarification
+* Interactive "Maha-Revision" format led by Pradeep Giri Sir and Rahul Giri, allowing students to strengthen their understanding of analytical geometry and optimization problems before board examinations
+
+---
+
+### 🎬 直播 — 12年级数学1 | 6.直线与平面 | 7.线性规划 | 大复习 | 2026年委员会考试
+
+**频道:** Pradeep Giri 11th and 12th Academy
+
+* 全面的直播复习课程,涵盖12年级数学两个关键章节:直线与平面(第6章)和线性规划(第7章)
+* 专为2026年委员会考试学生设计的针对性备考内容,包含解题技巧和概念澄清
+* 由Pradeep Giri老师和Rahul Giri主讲的互动式"大复习"课程,帮助学生在委员会考试前巩固解析几何和优化问题的理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J2aieJAf2rM)**
 
