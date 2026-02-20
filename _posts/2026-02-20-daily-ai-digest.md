@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 20, 2026"
 date: 2026-02-20
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -548,4 +548,123 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 零基础编程新手的理想入门课程；由 Sagar Chouksey 讲授，采用结构化的循序渐进教学方法，为数据分析和 Python 开发打下坚实基础
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
+
+### Gemini 3.1 Pro: Latest AI Model Announcement
+
+* Google is releasing Gemini 3.1 Pro in preview today, building on feedback and improvements since Gemini 3 Pro launched in November
+* The preview release aims to validate updates and advance agentic workflows before general availability
+* Gemini 3.1 Pro is rolling out in the Gemini app with higher limits for Google AI Pro and Ultra plan subscribers
+* NotebookLM now features 3.1 Pro exclusively for Pro and Ultra users
+* Developers and enterprises can access 3.1 Pro in preview through multiple platforms: Gemini API, AI Studio, Antigravity, Vertex AI, Gemini Enterprise, Gemini CLI, and Android Studio
+
+### Gemini 3.1 Pro:最新 AI 模型发布
+
+* Google 今日发布 Gemini 3.1 Pro 预览版,基于 11 月发布 Gemini 3 Pro 以来收集的反馈和改进
+* 此预览版旨在验证更新并推进智能体工作流,之后将正式发布
+* Gemini 3.1 Pro 正在 Gemini 应用中推出,为 Google AI Pro 和 Ultra 计划用户提供更高使用限额
+* NotebookLM 现已独家为 Pro 和 Ultra 用户提供 3.1 Pro 功能
+* 开发者和企业可通过多个平台访问 3.1 Pro 预览版:Gemini API、AI Studio、Antigravity、Vertex AI、Gemini Enterprise、Gemini CLI 和 Android Studio
+
+**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/)**
+
+### Weathr: Terminal Weather App with ASCII Animations
+
+* A Rust-based terminal weather application featuring real-time weather data with animated ASCII art
+* Displays dynamic weather effects including rain, snow, thunderstorms, flying airplanes, and day/night cycles
+* Uses Open-Meteo API for weather data with automatic location detection via IP
+* Multiple installation methods: Cargo, AUR (Arch Linux), Nix flake (NixOS), or build from source
+* Highly configurable via TOML config files with support for metric/imperial units and custom coordinates
+* Includes simulation mode for testing different weather conditions without real API calls
+* Privacy-conscious design allowing manual coordinate specification to avoid IP-based location detection
+* Supports accessibility features including NO_COLOR environment variable and terminal capability detection
+* Licensed under GPL-3.0-or-later with weather data from Open-Meteo (CC BY 4.0) and credited ASCII art
+
+### Weathr:终端天气应用与 ASCII 动画
+
+* 基于 Rust 的终端天气应用,具有实时天气数据和动画 ASCII 艺术效果
+* 显示动态天气效果,包括雨、雪、雷暴、飞行的飞机以及昼夜循环
+* 使用 Open-Meteo API 获取天气数据,支持通过 IP 自动检测位置
+* 多种安装方式:Cargo、AUR(Arch Linux)、Nix flake(NixOS)或从源码构建
+* 通过 TOML 配置文件高度可定制,支持公制/英制单位和自定义坐标
+* 包含模拟模式,可在不调用真实 API 的情况下测试不同天气条件
+* 注重隐私设计,允许手动指定坐标以避免基于 IP 的位置检测
+* 支持无障碍功能,包括 NO_COLOR 环境变量和终端能力检测
+* 采用 GPL-3.0-or-later 许可证,天气数据来自 Open-Meteo(CC BY 4.0),ASCII 艺术已注明出处
+
+**[Read Original / 阅读原文](https://github.com/Veirt/weathr)**
+
+<!-- [Title-Only] -->
+### US plans online portal to bypass content bans in Europe and elsewhere
+
+* Based on the title, this article likely discusses a US government initiative to create an online platform that would allow users to access content that has been banned or restricted in Europe and other regions. This could involve circumventing regional content moderation policies, censorship laws, or regulatory restrictions like the EU's Digital Services Act.
+
+* This is interesting because it touches on several critical issues: the tension between US free speech principles and European content regulation, potential diplomatic conflicts over internet governance, and the broader debate about who controls what content is accessible online. It could signal a significant shift in how the US approaches international content moderation disputes and may have implications for tech platforms operating globally.
+
+### 美国计划建立在线门户网站以绕过欧洲等地的内容禁令
+
+* 根据标题推测，这篇文章可能讨论美国政府计划创建一个在线平台，允许用户访问在欧洲和其他地区被禁止或限制的内容。这可能涉及规避区域性内容审核政策、审查法律或像欧盟《数字服务法案》这样的监管限制。
+
+* 这个话题值得关注，因为它涉及几个关键议题：美国言论自由原则与欧洲内容监管之间的紧张关系、互联网治理方面潜在的外交冲突，以及关于谁控制在线内容可访问性的更广泛辩论。这可能标志着美国处理国际内容审核争议方式的重大转变，并可能对全球运营的科技平台产生影响。
+
+---
+
+*Note: This analysis is based solely on the article title, as the full content was not available.*
+
+**[Read Original / 阅读原文](https://www.reuters.com/world/us-plans-online-portal-bypass-content-bans-europe-elsewhere-2026-02-18/)**
+
+### BarraCUDA - Open-source CUDA compiler targeting AMD GPUs
+
+* **What it does**: Compiles NVIDIA CUDA `.cu` files directly to AMD RDNA 3 (GFX11) machine code without LLVM or translation layers. Written from scratch in 15,000 lines of C99, it implements a complete compilation pipeline from lexer to binary encoding.
+
+* **Key features**: Full CUDA language support (kernels, shared memory, atomics, warp intrinsics, cooperative groups), hand-written instruction selection for AMD GPUs, zero dependencies, complete C preprocessor, SSA-based IR with mem2reg optimization, validated binary encoding against llvm-objdump.
+
+* **Why it's notable**: Breaks NVIDIA's CUDA monopoly by proving GPU compiler backends can be written by hand without massive infrastructure. Challenges the assumption that CUDA requires NVIDIA hardware or complex translation layers like HIP. Plans to expand to Tenstorrent, Intel Arc, and RISC-V targets.
+
+---
+
+### BarraCUDA - 开源 CUDA 编译器,支持 AMD GPU
+
+* **功能介绍**: 将 NVIDIA CUDA `.cu` 文件直接编译为 AMD RDNA 3 (GFX11) 机器码,无需 LLVM 或转换层。用 15,000 行 C99 代码从零实现完整编译流程,从词法分析到二进制编码。
+
+* **主要特点**: 完整 CUDA 语言支持(内核、共享内存、原子操作、warp 指令、协作组),手写 AMD GPU 指令选择,零依赖,完整 C 预处理器,基于 SSA 的中间表示及 mem2reg 优化,二进制编码已通过 llvm-objdump 验证。
+
+* **为何值得关注**: 打破 NVIDIA 的 CUDA 垄断,证明无需庞大基础设施即可手写 GPU 编译器后端。挑战"CUDA 必须依赖 NVIDIA 硬件或 HIP 等复杂转换层"的假设。计划扩展支持 Tenstorrent、Intel Arc 和 RISC-V 架构。
+
+**[View Repository / 查看仓库](https://github.com/Zaneham/BarraCUDA)**
+
+### 🎬 34/50 Real World Frontend- JavaScript Is Not Needed for Scroll Animations Anymore
+
+**Channel:** Sheryians Coding School
+
+* What the video covers: Modern CSS-based scroll animations that eliminate the need for JavaScript
+* Key topics discussed: Native CSS scroll animation techniques, performance benefits, and practical implementation in real-world frontend projects
+* Why it's worth watching: Learn how to create smooth scroll animations using pure CSS, reducing JavaScript dependencies and improving page performance - essential knowledge for modern frontend developers looking to optimize their workflow
+
+---
+
+### 🎬 34/50 真实前端项目 - 滚动动画不再需要 JavaScript
+
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 介绍现代 CSS 滚动动画技术,无需使用 JavaScript 即可实现
+* 主要话题: 原生 CSS 滚动动画技巧、性能优势以及在实际前端项目中的应用
+* 为何值得观看: 学习使用纯 CSS 创建流畅的滚动动画,减少 JavaScript 依赖并提升页面性能 - 对于希望优化工作流程的现代前端开发者来说是必备知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rMS2qqYjI6Q)**
+
+### 🎬 How to Use Claude Cowork Better Than 99% of People (Full Guide)
+**Channel:** Mayank Aggarwal
+
+* What the video covers: A comprehensive guide to Claude Cowork, exploring how it represents a fundamental shift from traditional AI prompting to actual work delegation
+* Key topics discussed: Advanced techniques for leveraging Claude Cowork effectively, practical workflows that go beyond basic usage, and strategies that only 1% of users are currently implementing
+* Why it's worth watching: If you're using Claude for work, this guide reveals how to unlock its full potential by treating it as a collaborative partner rather than just a chatbot—transforming how you approach AI-assisted productivity
+
+### 🎬 如何比 99% 的人更好地使用 Claude Cowork(完整指南)
+**频道:** Mayank Aggarwal
+
+* 视频内容概述: 全面介绍 Claude Cowork 的使用方法,探讨它如何从传统的 AI 提示转变为真正的工作委派
+* 主要话题: Claude Cowork 的高级使用技巧、超越基础用法的实用工作流程,以及目前只有 1% 用户掌握的策略
+* 为何值得观看: 如果你在工作中使用 Claude,这个指南将揭示如何充分发挥其潜力——将其视为协作伙伴而非简单的聊天机器人,从而彻底改变你使用 AI 辅助提高生产力的方式
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5fJpNitnij8)**
 
