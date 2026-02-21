@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 21, 2026"
 date: 2026-02-21
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -787,4 +787,88 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **使用方法**:`cord run "目标"`启动根智能体,根据需要动态创建带依赖关系、并行执行和人机交互问题的子任务
 
 **[Read Original / 阅读原文](https://www.june.kim/cord)**
+
+### Microsoft's Revolutionary Glass Data Storage: 10,000-Year Lifespan
+
+* Microsoft Research developed Project Silica, a glass-based data storage system that can preserve information for at least 10,000 years, potentially much longer at room temperature
+* The technology uses high-energy laser bursts (quadrillionths of a second) to create nanoscale deformations in borosilicate glass (the same material used in ovenware)
+* A 12cm-wide, 2mm-thick glass square stores 4.8 terabytes of data—equivalent to approximately 2 million printed books
+* Unlike magnetic tapes and hard drives that degrade in ~10 years, glass storage is immutable once written and requires no temperature control or maintenance
+* Data is encoded through "plasma-induced nano explosions" that alter how light travels through the glass, readable via microscope
+* The system represents a practical, deployable archival solution beyond laboratory experiments, using cheaper borosilicate glass instead of fused silica
+* Tests show data survival at 290°C for 10,000 years, with exponentially longer lifespans at room temperature
+* While writing/reading requires specialized hardware and is more complex than traditional storage, the technology offers unprecedented data security and permanence
+* Published in Nature (February 18), the research builds on University of Southampton's Guinness World Record-holding laser-writing technology, prioritizing practicality and faster encoding/decoding
+
+### 微软革命性玻璃数据存储:万年寿命
+
+* 微软研究院开发了Project Silica项目,这是一种基于玻璃的数据存储系统,可以保存信息至少1万年,在室温下可能保存更久
+* 该技术使用高能激光脉冲(几千万亿分之一秒)在硼硅酸盐玻璃(与烤箱器皿相同材料)中创建纳米级变形
+* 一块12厘米宽、2毫米厚的玻璃方片可存储4.8TB数据——相当于约200万本印刷书籍
+* 与10年左右就会降解的磁带和硬盘不同,玻璃存储一旦写入即不可变,且无需温度控制或维护
+* 数据通过"等离子体诱导的纳米爆炸"编码,改变光线穿过玻璃的方式,可通过显微镜读取
+* 该系统代表了一种实用的、可部署的档案解决方案,超越了实验室阶段,使用更便宜的硼硅酸盐玻璃而非熔融石英
+* 测试显示数据在290°C下可存活1万年,在室温下寿命呈指数级延长
+* 虽然写入/读取需要专用硬件且比传统存储更复杂,但该技术提供了前所未有的数据安全性和永久性
+* 该研究发表于《自然》杂志(2月18日),基于南安普顿大学保持吉尼斯世界纪录的激光写入技术,优先考虑实用性和更快的编码/解码速度
+
+**[Read Original / 阅读原文](https://www.nature.com/articles/d41586-026-00502-2)**
+
+### Solving Computer Science's Naming Problem: Index, Count, Offset, Size
+
+* Addresses one of CS's hardest problems: naming things, specifically around indexing and off-by-one errors
+* Most bugs stem from simple typing mistakes - using wrong variable versions in shadowed/non-shadowed scopes
+* Strong static typing helps prevent bugs, but has limitations with indexing arithmetic and array bounds
+* TigerBeetle's naming convention: consistently use `count` for number of items, `index` to point to specific items
+* Core invariant: `index < count` - consistency makes wrong combinations immediately visible in code
+* For low-level byte operations: `size` = byte count, `offset` = byte-wise index (size = @sizeOf(T) * count)
+* Avoid ambiguous `length` term (Rust's str::len is byte-size, Python's len(str) is code-point count)
+* Real-world examples from NodePool and EWAH implementation demonstrate mechanical correctness through naming
+* Newtype pattern works for simple cases, but computed indexes need careful naming discipline
+
+### 解决计算机科学的命名难题:Index、Count、Offset、Size
+
+* 解决计算机科学最难问题之一:命名,特别是索引和差一错误(off-by-one)
+* 大多数bug源于简单的输入错误 - 在有/无变量遮蔽的作用域中使用错误的变量版本
+* 强静态类型有助于防止bug,但在索引运算和数组边界方面存在局限
+* TigerBeetle的命名约定:始终用`count`表示项目数量,用`index`指向特定项目
+* 核心不变式:`index < count` - 一致性使代码中的错误组合立即可见
+* 底层字节操作:`size` = 字节数,`offset` = 字节索引(size = @sizeOf(T) * count)
+* 避免使用歧义的`length`术语(Rust的str::len是字节大小,Python的len(str)是码点数量)
+* NodePool和EWAH实现的实际案例展示了通过命名实现的机械正确性
+* Newtype模式适用于简单情况,但计算索引需要严格的命名规范
+
+**[Read Original / 阅读原文](https://tigerbeetle.com/blog/2026-02-16-index-count-offset-size/)**
+
+### NullClaw - Ultra-lightweight autonomous AI assistant infrastructure in a 678 KB binary
+
+* **What it does**: A fully autonomous AI assistant infrastructure compiled to a single static binary that runs on minimal hardware ($5 boards, microcontrollers) with near-instant startup and minimal resource usage. Supports 22+ AI providers, 13 communication channels, and complete tooling for memory, security, and hardware integration.
+
+* **Key features**: 
+  - Extreme efficiency: 678 KB binary, ~1 MB RAM usage, <2 ms boot time on modern hardware
+  - Fully pluggable architecture with vtable interfaces for every subsystem (providers, channels, tools, memory, security)
+  - Production-ready security: sandboxing (Landlock/Firejail/Bubblewrap/Docker), encrypted secrets, pairing authentication, workspace isolation
+  - Hybrid memory system with SQLite-based vector search and FTS5 keyword search
+  - Cross-platform support (ARM, x86, RISC-V) with hardware peripheral integration (GPIO, Arduino, STM32)
+  - 13 communication channels including Telegram, Discord, Slack, IRC, WhatsApp, and more
+
+* **Why it's notable**: Written entirely in Zig with zero runtime dependencies, NullClaw achieves unprecedented efficiency compared to alternatives—using 5-1000x less RAM and booting 100-60000x faster than TypeScript/Python/Go competitors. It's the first truly edge-deployable autonomous AI assistant that can run on $5 hardware while maintaining enterprise-grade features. The 2,843 test suite and modular architecture make it production-ready for IoT, edge computing, and resource-constrained environments where traditional AI assistants are impractical.
+
+---
+
+### NullClaw - 超轻量级自主 AI 助手基础设施,仅 678 KB 二进制文件
+
+* **功能介绍**: 完全自主的 AI 助手基础设施,编译为单个静态二进制文件,可在最低配置硬件($5 开发板、微控制器)上运行,启动速度极快且资源占用极低。支持 22+ AI 提供商、13 个通信渠道,以及完整的内存、安全和硬件集成工具。
+
+* **主要特点**:
+  - 极致效率:678 KB 二进制文件,约 1 MB 内存占用,现代硬件上启动时间 <2 毫秒
+  - 完全可插拔架构,所有子系统(提供商、渠道、工具、内存、安全)均采用虚函数表接口
+  - 生产级安全性:沙箱隔离(Landlock/Firejail/Bubblewrap/Docker)、加密密钥、配对认证、工作区隔离
+  - 混合内存系统,基于 SQLite 的向量搜索和 FTS5 关键词搜索
+  - 跨平台支持(ARM、x86、RISC-V),集成硬件外设(GPIO、Arduino、STM32)
+  - 13 个通信渠道,包括 Telegram、Discord、Slack、IRC、WhatsApp 等
+
+* **为何值得关注**: 完全使用 Zig 编写,零运行时依赖,NullClaw 实现了前所未有的效率——相比 TypeScript/Python/Go 竞品,内存占用减少 5-1000 倍,启动速度快 100-60000 倍。这是首个真正可部署在边缘设备的自主 AI 助手,能在 $5 硬件上运行的同时保持企业级功能。2,843 个测试用例和模块化架构使其可用于物联网、边缘计算和资源受限环境,而传统 AI 助手在这些场景下无法实现。
+
+**[View Repository / 查看仓库](https://github.com/nullclaw/nullclaw)**
 
