@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 21, 2026"
 date: 2026-02-21
-description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 17 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：17篇黑客新闻，3个热门项目，11个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -871,4 +871,164 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 完全使用 Zig 编写,零运行时依赖,NullClaw 实现了前所未有的效率——相比 TypeScript/Python/Go 竞品,内存占用减少 5-1000 倍,启动速度快 100-60000 倍。这是首个真正可部署在边缘设备的自主 AI 助手,能在 $5 硬件上运行的同时保持企业级功能。2,843 个测试用例和模块化架构使其可用于物联网、边缘计算和资源受限环境,而传统 AI 助手在这些场景下无法实现。
 
 **[View Repository / 查看仓库](https://github.com/nullclaw/nullclaw)**
+
+### LinkedIn Identity Verification: What You Actually Surrendered
+
+* LinkedIn verification redirects to Persona Identities Inc., a San Francisco-based third-party company that collects extensive personal data
+* Data collected includes passport details, selfie, facial geometry biometrics, NFC chip data, national ID, behavioral patterns (hesitation/copy-paste detection), and device fingerprints
+* Persona cross-references your data against government databases, credit agencies, utility companies, and mobile providers—essentially running a background check
+* Your passport images and selfies are used as AI training data under "legitimate interest" legal basis, not explicit consent
+* 17 subprocessors handle your data: Anthropic, OpenAI, and Groqcloud perform "data extraction and analysis" on your government ID
+* All 17 subprocessors are US/Canada-based (16 US, 1 Canada, 0 EU), despite serving European users
+* US CLOUD Act allows American law enforcement to access your data regardless of physical server location (even if stored in Germany)
+* EU-US Data Privacy Framework protection is legally fragile—built on an Executive Order that can be revoked, already facing legal challenges
+* Biometric facial geometry data is permanent and irreversible—unlike passwords, you can't change your face if compromised
+* Data sharing includes LinkedIn, service providers, data partners, affiliates, potential acquirers, and law enforcement (including national security requests with gag orders)
+
+### LinkedIn 身份验证:你实际交出了什么
+
+* LinkedIn 验证会重定向到 Persona Identities Inc.(旧金山第三方公司),该公司收集大量个人数据
+* 收集的数据包括护照详情、自拍照、面部几何生物识别、NFC 芯片数据、国民身份证号、行为模式(犹豫/复制粘贴检测)和设备指纹
+* Persona 将你的数据与政府数据库、信用机构、公用事业公司和移动运营商交叉比对——本质上是进行背景调查
+* 你的护照图像和自拍照被用作 AI 训练数据,法律依据是"合法利益"而非明确同意
+* 17 家分包商处理你的数据:Anthropic、OpenAI 和 Groqcloud 对你的政府身份证件进行"数据提取和分析"
+* 全部 17 家分包商均位于美国/加拿大(16 家美国、1 家加拿大、0 家欧盟),尽管服务欧洲用户
+* 美国 CLOUD 法案允许美国执法部门访问你的数据,无论物理服务器位置在哪(即使存储在德国)
+* 欧盟-美国数据隐私框架保护在法律上很脆弱——建立在可被撤销的行政命令之上,已面临法律挑战
+* 生物识别面部几何数据是永久且不可逆的——与密码不同,如果泄露你无法更换你的脸
+* 数据共享对象包括 LinkedIn、服务提供商、数据合作伙伴、关联公司、潜在收购方和执法部门(包括附带禁言令的国家安全请求)
+
+**[Read Original / 阅读原文](https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/)**
+
+### Andrej Karpathy Discusses "Claws" - The New Layer of AI Agent Systems
+
+* Andrej Karpathy bought a Mac Mini to experiment with "Claws," a new category of AI agent systems that layer on top of LLM agents
+* Claws enhance orchestration, scheduling, context management, tool calls, and persistence beyond traditional LLM agents
+* Multiple lightweight implementations are emerging: NanoClaw (~4000 lines of code, container-based), nanobot, zeroclaw, ironclaw, and picoclaw
+* "Claw" is becoming standardized terminology for OpenClaw-like agent systems that run on personal hardware, use messaging protocols, and handle both direct instructions and scheduled tasks
+* Karpathy, known for coining terms like "vibe coding" and "agentic engineering," views Claws as an exciting evolution in the AI stack
+* The category even has an established emoji: 🦞
+
+### Andrej Karpathy 谈论"Claws"——AI 智能体系统的新层级
+
+* Andrej Karpathy 购买了 Mac Mini 来试验"Claws"，这是一种新型 AI 智能体系统，构建在 LLM 智能体之上
+* Claws 在传统 LLM 智能体基础上增强了编排、调度、上下文管理、工具调用和持久化能力
+* 多个轻量级实现正在涌现：NanoClaw（约 4000 行代码，基于容器）、nanobot、zeroclaw、ironclaw 和 picoclaw
+* "Claw"正在成为 OpenClaw 类智能体系统的标准术语，这类系统运行在个人硬件上，使用消息协议，可处理直接指令和计划任务
+* Karpathy 以创造"vibe coding"和"agentic engineering"等术语闻名，他认为 Claws 是 AI 技术栈中令人兴奋的演进
+* 该类别甚至有一个专属表情符号：🦞
+
+**[Read Original / 阅读原文](https://simonwillison.net/2026/Feb/21/claws/)**
+
+### Let's Get to Work - A Tribute to Human Labor
+
+* Every comfort and joy in our lives exists because of someone's work - from morning coffee to wedding songs, from childhood memories to modern conveniences
+* Work encompasses all forms of human effort: making, saving, breaking, and moving - the fundamental actions that build civilization
+* The reality of work includes daily struggles: endless emails, rushed meals, parking hassles, pre-performance anxiety, and physical strain from dedication
+* Work persists through all conditions - snowfall or heatwave, from stardust to sunrise - showing the relentless commitment of workers across generations
+* This is a call to action: to honor those who worked before us by showing up and contributing our own efforts to continue building the world
+
+### 让我们开始工作 - 致敬人类劳动
+
+* 我们生活中的每一份舒适和快乐都源于他人的工作 - 从早晨的咖啡到婚礼上的歌曲,从童年记忆到现代便利设施
+* 工作涵盖所有形式的人类努力:创造、保存、打破和推动 - 这些是构建文明的基本行动
+* 工作的现实包括日常挣扎:永无止境的邮件、匆忙的午餐、寻找停车位的烦恼、演出前的焦虑,以及因专注而在手指上留下的水泡
+* 工作在所有条件下持续进行 - 无论降雪还是酷暑,从星尘到日出 - 展现了几代工作者坚持不懈的奉献精神
+* 这是一个行动号召:通过展现我们自己的努力来尊重前人的工作,继续建设这个世界
+
+**[Read Original / 阅读原文](https://padlet.jobs)**
+
+### GitNexus - Code Intelligence Engine for AI Agents
+
+* Transforms any codebase into a knowledge graph that maps dependencies, call chains, clusters, and execution flows — giving AI agents complete architectural awareness to prevent missed dependencies and broken changes
+* Dual deployment: CLI + MCP server for production use with Cursor/Claude Code/Windsurf, or browser-based Web UI for quick exploration without installation
+* Exposes 7 MCP tools (hybrid search, symbol context, impact analysis, change detection, coordinated rename, Cypher queries) plus resources and prompts that let even smaller models compete with larger ones through deep structural understanding
+
+### GitNexus - AI 代码助手的智能引擎
+
+* 将任意代码库转换为知识图谱,映射依赖关系、调用链、功能集群和执行流程——为 AI 代码助手提供完整的架构感知能力,防止遗漏依赖和破坏性变更
+* 双模式部署:CLI + MCP 服务器用于 Cursor/Claude Code/Windsurf 等编辑器的生产环境,或基于浏览器的 Web UI 用于快速探索无需安装
+* 提供 7 个 MCP 工具(混合搜索、符号上下文、影响分析、变更检测、协调重命名、Cypher 查询)以及资源和提示词,让小模型通过深度结构理解也能媲美大模型
+
+**[View Repository / 查看仓库](https://github.com/abhigyanpatwari/GitNexus)**
+
+### Hugging Face Skills - Universal AI Agent Task Definitions for ML Workflows
+
+* **What it does**: Provides standardized, reusable skill definitions for AI/ML tasks like dataset creation, model training, and evaluation that work across all major coding agent tools (Claude Code, OpenAI Codex, Google Gemini CLI, Cursor)
+
+* **Key features**: 
+  * 8 pre-built skills covering HF CLI operations, dataset management, model training/fine-tuning, evaluation, paper publishing, and experiment tracking
+  * Self-contained skill folders with `SKILL.md` instructions, scripts, and resources that agents can execute
+  * Cross-platform compatibility through standardized Agent Skill format with tool-specific adapters
+  * Simple installation via plugin marketplaces or direct integration
+  * Extensible framework for creating custom skills with validation tooling
+
+* **Why it's notable**: Bridges the gap between different AI coding assistants by creating a universal skill format, making it trivial to give agents complex ML capabilities. With 246 stars today, it's gaining traction as teams look to standardize how they teach agents to handle Hugging Face workflows—from training 70B models to publishing research papers—without rewriting instructions for each tool.
+
+---
+
+### Hugging Face Skills - 通用 AI 智能体的机器学习任务定义
+
+* **功能介绍**: 为 AI/ML 任务(如数据集创建、模型训练和评估)提供标准化、可复用的技能定义,兼容所有主流编码智能体工具(Claude Code、OpenAI Codex、Google Gemini CLI、Cursor)
+
+* **主要特点**:
+  * 8 个预构建技能,涵盖 HF CLI 操作、数据集管理、模型训练/微调、评估、论文发布和实验追踪
+  * 自包含的技能文件夹,包含智能体可执行的 `SKILL.md` 指令、脚本和资源
+  * 通过标准化 Agent Skill 格式实现跨平台兼容,配备各工具专用适配器
+  * 通过插件市场或直接集成实现简单安装
+  * 可扩展框架,支持使用验证工具创建自定义技能
+
+* **为何值得关注**: 通过创建通用技能格式弥合了不同 AI 编码助手之间的鸿沟,让智能体轻松获得复杂的机器学习能力。今日获得 246 星标,随着团队寻求标准化方式来教会智能体处理 Hugging Face 工作流(从训练 70B 模型到发布研究论文),该项目正获得越来越多关注,且无需为每个工具重写指令。
+
+**[View Repository / 查看仓库](https://github.com/huggingface/skills)**
+
+### PowerShell/PowerShell - Cross-Platform Automation and Configuration Framework
+
+* **What it does**: PowerShell is a modern command-line shell, scripting language, and automation framework that runs on Windows, Linux, and macOS. It excels at handling structured data (JSON, CSV, XML), REST APIs, and object models, making system administration and automation tasks more efficient.
+
+* **Key features**:
+  - Cross-platform support (Windows, Linux, macOS)
+  - Built-in cmdlet framework for processing commands
+  - Optimized for structured data and REST API interactions
+  - Open-source with active community (Discord, IRC, Slack channels)
+  - PowerShell 7+ represents the modern evolution, separate from Windows PowerShell 5.1
+  - Comprehensive documentation and learning resources
+  - Docker container support maintained by .NET team
+
+* **Why it's notable**: This is Microsoft's official open-source PowerShell repository, representing the cross-platform future of PowerShell (7+). With 16 stars today, it continues to attract developers seeking a powerful, modern automation tool that works across all major operating systems. The project demonstrates Microsoft's commitment to open-source development with transparent governance, active community engagement through multiple channels, and extensive contribution guidelines. It's particularly valuable for DevOps engineers, system administrators, and developers who need consistent automation capabilities across different platforms.
+
+---
+
+### PowerShell/PowerShell - 跨平台自动化与配置框架
+
+* **功能介绍**: PowerShell 是一个现代化的命令行 shell、脚本语言和自动化框架,可在 Windows、Linux 和 macOS 上运行。它擅长处理结构化数据(JSON、CSV、XML)、REST API 和对象模型,使系统管理和自动化任务更加高效。
+
+* **主要特点**:
+  - 跨平台支持(Windows、Linux、macOS)
+  - 内置 cmdlet 框架用于处理命令
+  - 针对结构化数据和 REST API 交互进行优化
+  - 开源项目,拥有活跃社区(Discord、IRC、Slack 频道)
+  - PowerShell 7+ 代表现代演进版本,独立于 Windows PowerShell 5.1
+  - 完善的文档和学习资源
+  - 由 .NET 团队维护的 Docker 容器支持
+
+* **为何值得关注**: 这是微软官方的开源 PowerShell 仓库,代表着 PowerShell(7+)的跨平台未来。今日获得 16 个 star,持续吸引寻求强大现代自动化工具的开发者,该工具可在所有主流操作系统上运行。该项目展示了微软对开源开发的承诺,具有透明的治理机制、通过多个渠道进行活跃的社区互动,以及详尽的贡献指南。对于需要在不同平台上实现一致自动化能力的 DevOps 工程师、系统管理员和开发人员来说,它特别有价值。
+
+**[View Repository / 查看仓库](https://github.com/PowerShell/PowerShell)**
+
+### 🎬 Build for the models of the future
+**Channel:** Lenny's Podcast
+
+* What the video covers: This video explores strategies for building products and features designed to leverage future AI model capabilities, with a focus on practical implementation approaches including Claude Code
+* Key topics discussed: AI product development, future-proofing technical architecture, Claude Code integration, designing for evolving AI models, product strategy in the AI era
+* Why it's worth watching: Essential viewing for product managers and developers working with AI - provides forward-thinking insights on how to architect products that can scale with rapidly advancing AI capabilities rather than being locked into current limitations
+
+### 🎬 为未来模型而构建
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨如何构建能够充分利用未来AI模型能力的产品和功能,重点介绍包括Claude Code在内的实用实现方法
+* 主要话题: AI产品开发、面向未来的技术架构、Claude Code集成、为不断演进的AI模型设计、AI时代的产品策略
+* 为何值得观看: 对于从事AI相关工作的产品经理和开发者来说是必看内容 - 提供前瞻性见解,教你如何构建能够随着AI能力快速进步而扩展的产品架构,而不是被当前的技术限制所束缚
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8DxN2t1LphU)**
 
