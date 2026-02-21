@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 22, 2026"
 date: 2026-02-22
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -299,4 +299,227 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 专为2026年委员会考试学生设计的大型复习课程,由经验丰富的教师Pradeep Giri和Rahul Giri授课,提供高分值题型的全面覆盖和应试策略指导
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=J2aieJAf2rM)**
+
+I need to see the complete content to provide an accurate summary. The HTML appears to be cut off. Could you provide the full article content?
+
+**[Read Original / 阅读原文](https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/)**
+
+### What Not To Write On Your Security Clearance Form
+
+* A 12-year-old boy and his friend created an encryption code after reading a cryptography book, leading to an absurd FBI investigation in 1943 wartime America
+* The boy lost his glasses case containing the code key on a streetcar; a citizen found it and reported it to the FBI as evidence of Japanese espionage
+* The FBI spent thousands of dollars and six weeks investigating, tracing the glasses through optometrist records across San Diego, only to discover the "spy" was a child
+* Years later when applying for Naval Electronics Lab clearance, the author honestly disclosed the FBI investigation on his form, writing "I was suspected of being a Japanese spy"
+* The security officer became agitated, destroyed the form, and instructed him to resubmit without mentioning the incident, warning it would permanently block his clearance
+* The story illustrates the paradox of security clearance processes: honesty about trivial past incidents can be more damaging than omission, and bureaucratic systems lack nuance to distinguish between genuine threats and childhood misunderstandings
+
+### 安全许可表格上不该写什么
+
+* 一个12岁男孩和朋友读了密码学书籍后创建了加密代码,在1943年战时美国引发了一场荒谬的FBI调查
+* 男孩在有轨电车上丢失了装有密码钥匙的眼镜盒;一位市民发现后将其作为日本间谍证据报告给FBI
+* FBI花费数千美元和六周时间调查,通过圣地亚哥各地验光师记录追踪眼镜,最终发现这个"间谍"只是个孩子
+* 多年后申请海军电子实验室许可时,作者在表格上如实披露了FBI调查经历,写道"我曾被怀疑是日本间谍"
+* 安全官员看后非常激动,撕毁了表格,并指示他重新提交时不要提及此事,警告这会永久阻止他获得许可
+* 这个故事揭示了安全许可流程的悖论:对琐碎往事的诚实披露可能比隐瞒更具破坏性,官僚系统缺乏区分真正威胁和童年误会的细微判断能力
+
+**[Read Original / 阅读原文](https://milk.com/wall-o-shame/security_clearance.html)**
+
+<!-- [Title-Only] -->
+### Personal Statement of a CIA Analyst
+
+* Based on the title, this article likely contains a first-hand account from a CIA analyst sharing their personal experiences, perspectives, or concerns related to their work within the intelligence community. Given the URL domain "antipolygraph.org," it probably discusses issues with polygraph testing practices used in CIA security clearance processes.
+
+* This might be interesting to readers because it offers a rare insider perspective on CIA operations and security procedures. Personal statements from intelligence professionals are uncommon due to confidentiality requirements, making this potentially valuable for understanding the challenges analysts face, particularly regarding controversial screening methods like polygraph examinations that have been criticized for reliability issues.
+
+### 一位中情局分析师的个人陈述
+
+* 根据标题推测，这篇文章可能包含一位中情局分析师的第一手叙述，分享他们在情报机构工作中的个人经历、观点或担忧。考虑到网址域名"antipolygraph.org"（反测谎网），文章很可能讨论中情局安全审查流程中使用的测谎仪测试相关问题。
+
+* 这篇文章值得关注，因为它提供了罕见的情报界内部人士视角。由于保密要求，情报专业人员的个人陈述并不常见，这使得本文对于了解分析师面临的挑战具有潜在价值，特别是关于测谎检查等有争议的筛查方法——这些方法的可靠性一直受到质疑。
+
+**[Read Original / 阅读原文](https://antipolygraph.org/statements/statement-038.shtml)**
+
+### Hugging Face Skills - Universal AI Agent Task Definitions for ML Workflows
+
+* **What it does**: Provides standardized, reusable skill definitions for AI/ML tasks like dataset creation, model training, and evaluation that work across all major coding agent tools (Claude Code, OpenAI Codex, Google Gemini CLI, Cursor)
+
+* **Key features**: 
+  * 8 pre-built skills covering HF CLI operations, dataset management, model training/fine-tuning, evaluation, paper publishing, and experiment tracking
+  * Self-contained skill folders with `SKILL.md` instructions, scripts, and resources that agents can execute
+  * Cross-platform compatibility through standardized Agent Skill format with tool-specific adapters
+  * Simple installation via plugin marketplaces or direct integration
+  * Extensible framework for creating custom skills with validation tooling
+
+* **Why it's notable**: Bridges the gap between different AI coding assistants by creating a universal skill format, making it trivial to give agents complex ML capabilities. With 246 stars today, it's gaining traction as teams look to standardize how they teach agents to handle Hugging Face workflows—from training 70B models to publishing research papers—without rewriting instructions for each tool.
+
+---
+
+### Hugging Face Skills - 通用 AI 智能体的机器学习任务定义
+
+* **功能介绍**: 为 AI/ML 任务(如数据集创建、模型训练和评估)提供标准化、可复用的技能定义,兼容所有主流编码智能体工具(Claude Code、OpenAI Codex、Google Gemini CLI、Cursor)
+
+* **主要特点**:
+  * 8 个预构建技能,涵盖 HF CLI 操作、数据集管理、模型训练/微调、评估、论文发布和实验跟踪
+  * 自包含的技能文件夹,包含智能体可执行的 `SKILL.md` 指令、脚本和资源
+  * 通过标准化 Agent Skill 格式和工具特定适配器实现跨平台兼容
+  * 通过插件市场或直接集成实现简单安装
+  * 可扩展框架,支持使用验证工具创建自定义技能
+
+* **为何值得关注**: 通过创建通用技能格式弥合了不同 AI 编码助手之间的差距,让智能体轻松获得复杂的机器学习能力。今日获得 246 星标,随着团队寻求标准化方式来教会智能体处理 Hugging Face 工作流(从训练 70B 模型到发布研究论文),该项目正获得越来越多关注,且无需为每个工具重写指令。
+
+**[View Repository / 查看仓库](https://github.com/huggingface/skills)**
+
+### PowerShell - Cross-Platform Automation and Configuration Framework
+
+* **What it does**: PowerShell is a modern command-line shell, scripting language, and automation framework that runs on Windows, Linux, and macOS. It excels at handling structured data (JSON, CSV, XML), REST APIs, and object models, making system administration and automation tasks more efficient.
+
+* **Key features**:
+  - Cross-platform support (Windows, Linux, macOS)
+  - Built-in cmdlet framework for processing commands
+  - Optimized for structured data manipulation and REST API interactions
+  - Includes both interactive shell and scripting capabilities
+  - Open-source with active community (Discord, IRC, Slack channels)
+  - PowerShell 7+ represents the modern evolution, separate from Windows PowerShell 5.1
+  - Comprehensive documentation and learning resources
+  - MIT licensed with transparent governance model
+
+* **Why it's notable**: With 60 stars today, PowerShell continues to be a cornerstone tool for DevOps and system administrators. As Microsoft's flagship automation solution that went cross-platform and open-source, it bridges the gap between Windows and Unix-like systems. The project maintains strong community engagement through GitHub Discussions, multiple chat platforms, and a public dashboard tracking contributions. Its evolution from Windows-only to truly cross-platform makes it essential for modern infrastructure management.
+
+---
+
+### PowerShell - 跨平台自动化与配置框架
+
+* **功能介绍**: PowerShell 是一个现代化的命令行 shell、脚本语言和自动化框架,可在 Windows、Linux 和 macOS 上运行。它擅长处理结构化数据(JSON、CSV、XML)、REST API 和对象模型,使系统管理和自动化任务更加高效。
+
+* **主要特点**:
+  - 跨平台支持(Windows、Linux、macOS)
+  - 内置 cmdlet 框架用于处理命令
+  - 针对结构化数据操作和 REST API 交互进行优化
+  - 同时提供交互式 shell 和脚本编写能力
+  - 开源项目,拥有活跃社区(Discord、IRC、Slack 频道)
+  - PowerShell 7+ 是现代版本,独立于 Windows PowerShell 5.1
+  - 完善的文档和学习资源
+  - MIT 许可证,透明的治理模式
+
+* **为何值得关注**: 今日获得 60 stars,PowerShell 持续作为 DevOps 和系统管理员的核心工具。作为微软旗舰级自动化解决方案,它实现了跨平台开源,成功连接了 Windows 和类 Unix 系统。该项目通过 GitHub Discussions、多个聊天平台和公开的贡献追踪仪表板保持强大的社区参与度。从 Windows 专属到真正跨平台的演进,使其成为现代基础设施管理的必备工具。
+
+**[View Repository / 查看仓库](https://github.com/PowerShell/PowerShell)**
+
+### BarraCUDA - Open-source CUDA compiler targeting AMD GPUs
+
+* **What it does**: Compiles NVIDIA CUDA `.cu` files directly to AMD RDNA 3/4 GPU machine code without LLVM or HIP translation layers. Written from scratch in 15,000 lines of C99, it implements a complete compiler pipeline from lexer to ELF binary emission.
+
+* **Key features**: Supports core CUDA features including `__global__`/`__device__` qualifiers, `__shared__` memory, `__syncthreads()`, atomic operations, warp intrinsics, cooperative groups, vector types, and half precision. Includes full C preprocessor, templates, and comprehensive error recovery. Generates validated GFX11/GFX12 instruction encodings with zero decode failures.
+
+* **Why it's notable**: Breaks NVIDIA's CUDA monopoly by proving GPU compiler backends can be hand-written without massive infrastructure. No dependencies, builds with simple `make`, and challenges the assumption that CUDA requires NVIDIA hardware. Roadmap includes Tenstorrent, Intel Arc, and RISC-V targets. A technical tour de force that democratizes GPU computing.
+
+---
+
+### BarraCUDA - 面向 AMD GPU 的开源 CUDA 编译器
+
+* **功能介绍**: 将 NVIDIA CUDA `.cu` 文件直接编译为 AMD RDNA 3/4 GPU 机器码,无需 LLVM 或 HIP 转换层。用 15,000 行 C99 代码从零实现,包含从词法分析器到 ELF 二进制生成的完整编译器管道。
+
+* **主要特点**: 支持核心 CUDA 特性,包括 `__global__`/`__device__` 限定符、`__shared__` 内存、`__syncthreads()`、原子操作、warp 内建函数、协作组、向量类型和半精度浮点。提供完整 C 预处理器、模板支持和全面的错误恢复。生成经过验证的 GFX11/GFX12 指令编码,解码零失败。
+
+* **为何值得关注**: 打破 NVIDIA 的 CUDA 垄断,证明 GPU 编译器后端可以手工编写而无需庞大基础设施。零依赖,简单 `make` 即可构建,挑战了"CUDA 必须用 NVIDIA 硬件"的假设。路线图包括 Tenstorrent、Intel Arc 和 RISC-V 目标。一项让 GPU 计算民主化的技术壮举。
+
+**[View Repository / 查看仓库](https://github.com/Zaneham/BarraCUDA)**
+
+### AI Engineer Handbook - Your Complete Resource Guide for AI Engineering
+
+* A comprehensive curated collection of resources for aspiring and practicing AI engineers, covering everything from foundational learning to advanced topics
+* Key features include 25+ recommended books (top picks: Chip Huyen's "AI Engineering", "Designing Machine Learning Systems", Sebastian Raschka's "Build a Large Language Model"), extensive company directory across 10+ categories (LLM providers, frameworks, vector databases, MLOps tools), curated lists of communities, newsletters, influential blogs, seminal research papers, and YouTube creators
+* Why it's notable: This is a one-stop knowledge hub that saves countless hours of research by organizing the fragmented AI engineering ecosystem into actionable categories. With 773 stars and growing, it's becoming the go-to reference for anyone serious about staying current in AI engineering, offering both learning paths for beginners and deep resources for experienced practitioners
+
+### AI 工程师手册 - AI 工程完整资源指南
+
+* 功能介绍:为有志成为和正在从事 AI 工程的开发者提供的全面精选资源集合,涵盖从基础学习到高级主题的所有内容
+* 主要特点:包含 25+ 本推荐书籍(重点推荐:Chip Huyen 的《AI Engineering》、《Designing Machine Learning Systems》、Sebastian Raschka 的《Build a Large Language Model》),跨越 10+ 个类别的详尽公司目录(LLM 提供商、框架、向量数据库、MLOps 工具等),精选社区列表、新闻通讯、有影响力的博客、开创性研究论文以及 YouTube 创作者
+* 为何值得关注:这是一个一站式知识中心,通过将碎片化的 AI 工程生态系统整理成可操作的分类,节省了大量研究时间。拥有 773 个星标且持续增长,正在成为所有认真对待 AI 工程的人的首选参考资料,既为初学者提供学习路径,也为经验丰富的从业者提供深度资源
+
+**[View Repository / 查看仓库](https://github.com/DataExpert-io/ai-engineer-handbook)**
+
+### 🎬 The AI Coding Prediction Everyone Got Wrong - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Dario Amodei (Anthropic CEO) discusses how the AI community's predictions about AI coding capabilities have diverged from reality, examining what actually happened versus what was expected in AI-assisted software development
+* Key topics discussed: The evolution of AI coding tools, misconceptions about how AI would transform programming, the actual impact on developer workflows, and insights into where AI coding is heading based on real-world deployment data
+* Why it's worth watching: Offers a candid, insider perspective from one of AI's leading figures on the gap between hype and reality in AI coding, providing valuable context for developers and tech professionals navigating the AI tools landscape
+
+---
+
+### 🎬 AI 编程预测中所有人都错了的事 - Dario Amodei
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: Anthropic 首席执行官 Dario Amodei 探讨 AI 社区对 AI 编程能力的预测如何与现实产生偏差,分析 AI 辅助软件开发中实际发生的情况与预期的差异
+* 主要话题: AI 编程工具的演变、关于 AI 如何改变编程的误解、对开发者工作流程的实际影响,以及基于真实部署数据对 AI 编程未来方向的见解
+* 为何值得观看: 提供来自 AI 领域领军人物的坦诚内部视角,揭示 AI 编程领域炒作与现实之间的差距,为开发者和技术专业人士在 AI 工具领域中提供宝贵的参考
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=iGFyksusms0)**
+
+### 🎬 Python Full Course | Python Tutorial for Beginners | Part 1
+
+**Channel:** Coding With Sagar
+
+* **What the video covers:** This is Part 1 of a comprehensive Python tutorial series designed specifically for beginners with no prior programming experience. It introduces fundamental Python concepts and sets the foundation for learning programming.
+
+* **Key topics discussed:** Python basics including installation and setup, core syntax, variables and data types, basic operators, and introductory programming concepts. The tutorial follows a structured approach to help newcomers understand Python from the ground up.
+
+* **Why it's worth watching:** Perfect starting point for absolute beginners who want to learn Python systematically. Sagar Chouksey breaks down complex concepts into digestible lessons, making it accessible for those taking their first steps into programming. The course is part of a larger series, ensuring comprehensive coverage of Python fundamentals with a clear learning path.
+
+---
+
+### 🎬 Python 完整课程 | Python 初学者教程 | 第一部分
+
+**频道:** Coding With Sagar
+
+* **视频内容概述:** 这是专为零基础初学者设计的 Python 系列教程的第一部分。视频介绍 Python 的基础概念,为学习编程打下坚实基础。
+
+* **主要话题:** Python 基础知识,包括安装配置、核心语法、变量与数据类型、基本运算符以及入门级编程概念。教程采用结构化方式帮助新手从零开始理解 Python。
+
+* **为何值得观看:** 对于想要系统学习 Python 的零基础学习者来说,这是完美的起点。Sagar Chouksey 将复杂概念分解为易于理解的课程,让编程入门变得简单。该课程是完整系列的一部分,确保全面覆盖 Python 基础知识,学习路径清晰明确。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
+
+### 🎬 The "Game Over" Hook: The End of reCAPTCHA? AI Hits 100% Accuracy 🤖🛑
+
+**Channel:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* What the video covers: This video explores the breakthrough where AI has achieved 100% accuracy in solving reCAPTCHA challenges, potentially marking the end of this widely-used bot detection system.
+
+* Key topics discussed: The evolution of CAPTCHA technology, how AI models have advanced to bypass reCAPTCHA with perfect accuracy, implications for web security and bot prevention, and what this means for the future of human verification systems online.
+
+* Why it's worth watching: If you're interested in cybersecurity, AI capabilities, or web development, this video highlights a critical turning point where traditional security measures are being outpaced by machine learning. It raises important questions about the next generation of authentication methods and the ongoing arms race between security systems and AI.
+
+---
+
+### 🎬 "游戏结束"时刻:reCAPTCHA的终结?AI达到100%准确率 🤖🛑
+
+**频道:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* 视频内容概述: 本视频探讨了AI在破解reCAPTCHA验证码方面达到100%准确率的突破性进展,这可能标志着这一广泛使用的机器人检测系统的终结。
+
+* 主要话题: CAPTCHA技术的演变历程、AI模型如何进步到能够完美绕过reCAPTCHA、对网络安全和机器人防护的影响,以及这对未来在线人机验证系统的意义。
+
+* 为何值得观看: 如果你对网络安全、AI能力或Web开发感兴趣,这个视频展示了一个关键转折点——传统安全措施正被机器学习技术超越。它提出了关于下一代身份验证方法的重要问题,以及安全系统与AI之间持续进行的军备竞赛。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PVt9zSF8Lf4)**
+
+### 🎬 Subscribe for more coding tips⬆️
+**Channel:** Decode_withme
+
+* This appears to be a channel promotion video encouraging viewers to subscribe for coding content
+* Focuses on helping developers enhance their coding abilities through tips and tutorials
+* Worth watching if you're looking to join a community-focused coding channel that promises regular coding tips and skill development content
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Decode_withme
+
+* 这是一个频道推广视频,鼓励观众订阅以获取编程内容
+* 专注于通过技巧和教程帮助开发者提升编程能力
+* 如果你想加入一个以社区为中心的编程频道,承诺提供定期编程技巧和技能发展内容,值得关注
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rGJOE5rLV7U)**
 
