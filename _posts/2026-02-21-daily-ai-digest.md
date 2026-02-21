@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 21, 2026"
 date: 2026-02-21
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -723,4 +723,68 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望在不支付订阅费用或使用限制的情况下使用 AI 编程工具的开发者,同时完全掌控自己的数据和工作环境。对于关注代码隐私或在受限网络环境中工作的开发者尤其有价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=N7CQdYaeUEE)**
+
+### Wikipedia Blacklists Archive.today Over DDoS Attack and Content Manipulation
+
+* Wikipedia's English edition is removing Archive.today from its platform after the archive site was used to launch a DDoS attack against a blogger
+* Editors discovered Archive.today altered archived webpage snapshots to insert the targeted blogger's name, apparently motivated by a grudge over a post exposing the maintainer's use of multiple aliases
+* Wikipedia reached consensus to immediately deprecate Archive.today, add it to the spam blacklist, and remove all links citing security and reliability concerns
+* Over 695,000 Archive.today links across approximately 400,000 Wikipedia pages will need to be removed or replaced
+* The archive site, commonly used to bypass news paywalls, has attracted FBI attention with a subpoena seeking the operator's identity
+* Editors are instructed to replace Archive.today links (including domains archive.is, archive.ph, archive.fo, archive.li, archive.md, and archive.vn) with alternatives like Internet Archive, Ghostarchive, or Megalodon
+* Links can be removed when original sources remain online with identical content, or replaced with non-archived sources where archiving was merely for convenience
+
+### 维基百科封禁 Archive.today 并开始移除 69.5 万个存档链接
+
+* 维基百科英文版正在移除 Archive.today,原因是该存档网站被用于对一名博主发起 DDoS 攻击
+* 编辑发现 Archive.today 篡改了存档网页快照,插入了被攻击博主的姓名,这显然是因为该博主曾发文揭露 Archive.today 维护者使用多个化名隐藏身份而引发的报复
+* 维基百科达成共识,立即弃用 Archive.today,将其加入垃圾链接黑名单,并移除所有相关链接,理由是安全性和可靠性问题
+* 分布在约 40 万个维基百科页面上的超过 69.5 万个 Archive.today 链接需要被移除或替换
+* 该存档网站常被用于绕过新闻付费墙,FBI 已向域名注册商 Tucows 发出传票,试图查明运营者身份
+* 编辑被要求将 Archive.today 链接(包括 archive.is、archive.ph、archive.fo、archive.li、archive.md 和 archive.vn 等域名)替换为 Internet Archive、Ghostarchive 或 Megalodon 等替代方案
+* 当原始来源仍在线且内容相同时可直接移除链接,或在存档仅为便利性考虑时替换为非存档来源
+
+**[Read Original / 阅读原文](https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/)**
+
+### What is OAuth? A Simple Explanation
+
+* OAuth originated in 2006 at Twitter to solve a specific problem: enabling third-party desktop clients to access user accounts without requiring passwords, especially when implementing OpenID sign-in
+* The core concept is remarkably simple: OAuth is functionally equivalent to "magic link" authentication - sending a secret to a place only the authorized person can access, then having them prove access by showing that secret
+* OAuth has two main parts: (1) sending a multi-use secret to a known delegate with user consent, and (2) allowing that delegate to make subsequent requests on behalf of the user
+* Before OAuth, every Web 2.0 site (Flickr, AWS, Delicious) had custom, insecure solutions for delegated authentication - OAuth standardized this process
+* OpenID Connect (OIDC) is built on top of OAuth and handles the sign-in use case, demonstrating OAuth's underlying simplicity despite 19 years of accumulated specifications
+* The complexity in OAuth specifications comes from ensuring security, interoperability, and consistent implementation - the core idea remains straightforward
+* OAuth is arguably more of a framework than a rigid standard, similar to HTML, where not all implementations need every feature
+
+### 什么是 OAuth?简单解释
+
+* OAuth 起源于 2006 年的 Twitter,旨在解决一个具体问题:在实现 OpenID 登录时,让第三方桌面客户端无需密码即可访问用户账户
+* 核心概念非常简单:OAuth 在功能上等同于"魔法链接"身份验证 - 将密钥发送到只有授权人员才能访问的地方,然后让他们通过展示该密钥来证明访问权限
+* OAuth 有两个主要部分:(1)在用户同意下将多次使用的密钥发送给已知的委托方,(2)允许该委托方代表用户发起后续请求
+* 在 OAuth 之前,每个 Web 2.0 网站(Flickr、AWS、Delicious)都有自定义的、不安全的委托身份验证解决方案 - OAuth 将这一过程标准化
+* OpenID Connect (OIDC) 构建在 OAuth 之上,处理登录用例,展示了 OAuth 的底层简洁性,尽管经过 19 年积累了大量规范
+* OAuth 规范中的复杂性来自于确保安全性、互操作性和一致的实现 - 核心理念始终简单明了
+* OAuth 可以说更像是一个框架而非严格的标准,类似于 HTML,并非所有实现都需要每个功能
+
+**[Read Original / 阅读原文](https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b)**
+
+### Cord: Agent-Driven Task Decomposition Framework
+
+* **Core Problem**: Existing multi-agent frameworks (LangGraph, CrewAI, AutoGen, Swarm) require developers to predefine coordination structures, but modern LLMs are capable of dynamic task decomposition
+* **Key Innovation**: Spawn vs Fork primitives - spawned agents get clean context (like contractors), forked agents inherit all sibling results (like briefed team members)
+* **Architecture**: 5 MCP tools (spawn, fork, ask, complete, read_tree) backed by SQLite, enabling agents to build dependency trees at runtime without hardcoded workflows
+* **Validation**: 15/15 tests passed with Claude naturally understanding the protocol - it correctly chose spawn for independent research and fork for synthesis tasks without explicit instruction
+* **Implementation**: ~500 lines Python using Claude Code CLI, but the protocol is implementation-agnostic and could work with any LLM provider or coordination backend
+* **Usage**: `cord run "goal"` launches a root agent that dynamically creates subtasks with dependencies, parallelism, and human-in-the-loop questions as needed
+
+### Cord:智能体驱动的任务分解框架
+
+* **核心问题**:现有多智能体框架(LangGraph、CrewAI、AutoGen、Swarm)要求开发者预定义协调结构,但现代大语言模型已具备动态任务分解能力
+* **关键创新**:Spawn与Fork原语 - spawn智能体获得干净上下文(如外包承包商),fork智能体继承所有兄弟节点结果(如被充分告知的团队成员)
+* **架构设计**:5个MCP工具(spawn、fork、ask、complete、read_tree)基于SQLite后端,使智能体能在运行时构建依赖树而无需硬编码工作流
+* **验证测试**:15/15测试通过,Claude自然理解协议 - 无需明确指令即正确选择spawn处理独立研究任务、fork处理综合分析任务
+* **实现方式**:约500行Python代码使用Claude Code CLI,但协议本身与实现无关,可适配任何LLM提供商或协调后端
+* **使用方法**:`cord run "目标"`启动根智能体,根据需要动态创建带依赖关系、并行执行和人机交互问题的子任务
+
+**[Read Original / 阅读原文](https://www.june.kim/cord)**
 
