@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 22, 2026"
 date: 2026-02-22
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -522,4 +522,146 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 * 如果你想加入一个以社区为中心的编程频道,承诺提供定期编程技巧和技能发展内容,值得关注
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=rGJOE5rLV7U)**
+
+### A Disciplined Workflow for AI-Assisted Development
+
+* Core principle: Never let AI write code until you've reviewed and approved a written plan - this separation of planning and execution prevents wasted effort and maintains architectural control
+* Research phase: Start every task with deep codebase analysis, requiring AI to write findings into persistent markdown files (research.md) for human review before proceeding
+* Use emphatic language ("deeply", "in great details", "intricacies") to prevent AI from skimming - surface-level understanding leads to implementations that break surrounding systems
+* Planning phase: Request detailed implementation plans in markdown files with code snippets, file paths, and trade-offs - prefer custom .md files over built-in plan modes for full control
+* Share reference implementations from open source repos when possible - AI works better with concrete examples than designing from scratch
+* Annotation cycle (1-6 iterations): Add inline notes directly into the plan document to correct assumptions, reject approaches, and inject domain knowledge, then send AI back with "don't implement yet"
+* The markdown file acts as shared mutable state - you can annotate precisely where issues exist rather than explaining through chat messages
+* Request granular todo lists before implementation to track progress during long sessions
+* Implementation command: Use a refined standard prompt that encodes all requirements ("implement it all", mark completed tasks, no unnecessary comments, maintain strict typing, continuously typecheck)
+* Make implementation boring and mechanical - all creative decisions should happen during annotation cycles, not during execution
+* During implementation, shift to terse corrections (single sentences) since AI has full context from the plan
+
+### 使用 AI 辅助开发的严格工作流程
+
+* 核心原则:在审查并批准书面计划之前,绝不让 AI 编写代码 - 这种计划与执行的分离可防止浪费精力并保持架构控制
+* 研究阶段:每个任务都从深度代码库分析开始,要求 AI 将发现写入持久化的 markdown 文件(research.md)供人工审查后再继续
+* 使用强调性语言("深入地"、"详细地"、"复杂性")防止 AI 略读 - 表面理解会导致实现破坏周围系统
+* 规划阶段:在 markdown 文件中请求详细的实现计划,包含代码片段、文件路径和权衡 - 优先使用自定义 .md 文件而非内置计划模式以获得完全控制
+* 尽可能分享开源项目的参考实现 - AI 使用具体示例比从头设计效果更好
+* 注释循环(1-6 次迭代):直接在计划文档中添加内联注释来纠正假设、拒绝方案并注入领域知识,然后用"暂不实现"将 AI 送回
+* markdown 文件充当共享可变状态 - 你可以精确标注问题所在,而不是通过聊天消息解释
+* 在实现前请求细粒度待办事项列表,以便在长时间会话中跟踪进度
+* 实现命令:使用精炼的标准提示词编码所有要求("全部实现"、标记已完成任务、无不必要注释、保持严格类型、持续类型检查)
+* 让实现变得枯燥和机械化 - 所有创造性决策应在注释循环中完成,而非执行期间
+* 实现期间,转为简洁纠正(单句)因为 AI 已从计划中获得完整上下文
+
+**[Read Original / 阅读原文](https://boristane.com/blog/how-i-use-claude-code/)**
+
+### Are Compilers Deterministic?
+
+* Compilers are theoretically deterministic given complete input state (source, flags, compiler binary, environment variables, filesystem, locale, clock, kernel behavior, hardware schedule), but in practice most builds don't control all these variables
+* Author's experience at Ksplice patching live Linux kernels revealed that identical source code can produce different machine code due to register allocation, compiler pass behavior, and section layout changes—even without semantic differences
+* Three distinct concepts: deterministic compiler (same input → same output), reproducible build (independent builders create identical artifacts), and reliable toolchain (differences rarely matter functionally)
+* Compilers guarantee semantic preservation, not byte-identical output—instruction order, register choice, and inlining are implementation details as long as observable behavior matches
+* Common sources of build non-reproducibility include timestamp macros, embedded paths, locale settings, filesystem iteration order, parallel build races, build IDs, network fetches, and toolchain version differences
+* Reproducible builds movement (Debian, ~2013+) established practices: freeze toolchains, normalize environment (TZ=UTC, LC_ALL=C), set SOURCE_DATE_EPOCH, strip metadata, canonicalize paths, use hermetic containers
+* LLM-assisted coding parallels compiler determinism debate—engineering doesn't require perfect determinism, but controlled interfaces, test oracles, reproducible pipelines, and verification gates
+* Practical approach: constrain inputs, make outputs testable, gate with deterministic CI, treat stochastic generation as upstream source rather than deployment truth
+
+### 编译器是确定性的吗?
+
+* 编译器在理论上是确定性的,前提是给定完整的输入状态(源代码、编译标志、编译器二进制文件、环境变量、文件系统、区域设置、时钟、内核行为、硬件调度),但实际上大多数构建并不控制所有这些变量
+* 作者在 Ksplice 为运行中的 Linux 内核打补丁的经验表明,相同的源代码可能产生不同的机器码,原因包括寄存器分配、编译器优化过程和段布局变化——即使语义没有差异
+* 三个不同的概念:确定性编译器(相同输入→相同输出)、可重现构建(独立构建者创建相同产物)、可靠工具链(差异很少影响功能)
+* 编译器保证语义保留而非字节级相同输出——指令顺序、寄存器选择和内联是实现细节,只要可观察行为匹配即可
+* 构建不可重现的常见来源包括时间戳宏、嵌入路径、区域设置、文件系统迭代顺序、并行构建竞争、构建 ID、网络获取和工具链版本差异
+* 可重现构建运动(Debian,约 2013 年起)建立了实践方法:冻结工具链、规范化环境(TZ=UTC, LC_ALL=C)、设置 SOURCE_DATE_EPOCH、剥离元数据、规范化路径、使用密闭容器
+* LLM 辅助编码与编译器确定性辩论类似——工程不需要完美的确定性,但需要受控接口、测试预言、可重现管道和验证门控
+* 实用方法:约束输入、使输出可测试、用确定性 CI 把关、将随机生成视为上游源而非部署真相
+
+**[Read Original / 阅读原文](https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/)**
+
+### NTransformer: High-Performance LLM Inference on Consumer Hardware
+
+* C++/CUDA inference engine runs Llama 70B on single RTX 3090 (24GB VRAM) via PCIe layer streaming
+* 3-tier adaptive caching (VRAM + pinned RAM + NVMe/mmap) achieves 83x speedup over baseline mmap
+* Layer skip optimization (cosine similarity) eliminates 20/80 layers per token, reaching 0.5 tok/s for 70B Q4_K_M
+* NVMe direct I/O bypasses CPU entirely: userspace driver reads model weights directly to GPU-accessible memory
+* Zero external dependencies beyond CUDA Toolkit—no PyTorch, no cuBLAS
+* Supports GGUF quantization formats (Q4_0, Q8_0, Q4_K_M, Q5_K, Q6_K, F16, F32)
+* Self-speculative decoding uses VRAM-resident layers as draft model without extra overhead
+* Automated setup scripts handle system-level modifications (GRUB, NVIDIA DKMS patches, VFIO binding)
+* Double-buffered SLEP streaming pipeline overlaps NVMe reads, PCIe DMA, and GPU compute
+* Bottleneck is PCIe Gen3 x8 H2D bandwidth (~6.5 GB/s); Q4_K_M quantization fits 10 more layers in VRAM
+
+### NTransformer:消费级硬件上的高性能大模型推理引擎
+
+* C++/CUDA 推理引擎通过 PCIe 层流式传输在单张 RTX 3090(24GB 显存)上运行 Llama 70B
+* 三层自适应缓存(显存 + 锁页内存 + NVMe/mmap)相比基线 mmap 实现 83 倍加速
+* 层跳过优化(余弦相似度)每个 token 消除 20/80 层,70B Q4_K_M 达到 0.5 tok/s
+* NVMe 直接 I/O 完全绕过 CPU:用户态驱动直接将模型权重读取到 GPU 可访问内存
+* 除 CUDA Toolkit 外零外部依赖——无需 PyTorch、无需 cuBLAS
+* 支持 GGUF 量化格式(Q4_0、Q8_0、Q4_K_M、Q5_K、Q6_K、F16、F32)
+* 自推测解码使用显存驻留层作为草稿模型,无额外开销
+* 自动化安装脚本处理系统级修改(GRUB、NVIDIA DKMS 补丁、VFIO 绑定)
+* 双缓冲 SLEP 流式管线重叠 NVMe 读取、PCIe DMA 和 GPU 计算
+* 瓶颈为 PCIe Gen3 x8 H2D 带宽(约 6.5 GB/s);Q4_K_M 量化可在显存中多容纳 10 层
+
+**[Read Original / 阅读原文](https://github.com/xaskasdf/ntransformer)**
+
+### OpenPlanter - Recursive AI Investigation Agent for Data Analysis
+
+* What it does: An autonomous AI agent that ingests heterogeneous datasets (corporate registries, campaign finance, lobbying records, government contracts) and surfaces hidden connections through recursive analysis and entity resolution across multiple data sources.
+
+* Key features: Terminal UI with 19 specialized tools including file I/O, shell execution, web search via Exa, and recursive sub-agent delegation; supports multiple LLM providers (OpenAI GPT-5.2, Anthropic Claude Opus 4-6, OpenRouter, Cerebras, local Ollama models); headless mode for automation; session persistence and resumption; configurable recursion depth and reasoning effort.
+
+* Why it's notable: Tackles investigative journalism and compliance use cases by autonomously cross-referencing disparate datasets to find non-obvious patterns—like matching vendor payments against lobbying disclosures. The recursive architecture lets it spawn sub-agents to parallelize complex investigations, making it practical for large-scale data analysis that would be tedious manually.
+
+---
+
+### OpenPlanter - 递归式 AI 调查代理,用于数据分析
+
+* 功能介绍: 一个自主运行的 AI 代理,可摄取异构数据集(企业注册信息、竞选资金、游说披露、政府合同等),通过递归分析和跨数据源实体解析来揭示隐藏的关联关系。
+
+* 主要特点: 终端 UI 配备 19 种专用工具,包括文件读写、Shell 执行、Exa 网络搜索和递归子代理委派;支持多种大语言模型提供商(OpenAI GPT-5.2、Anthropic Claude Opus 4-6、OpenRouter、Cerebras、本地 Ollama 模型);无头模式支持自动化;会话持久化与恢复;可配置递归深度和推理强度。
+
+* 为何值得关注: 专为调查性新闻和合规场景设计,能自主交叉比对分散的数据集以发现非显性模式——例如将供应商付款与游说披露记录进行匹配。递归架构允许生成子代理并行处理复杂调查,使大规模数据分析变得实用,避免了人工操作的繁琐。
+
+**[View Repository / 查看仓库](https://github.com/ShinMegamiBoson/OpenPlanter)**
+
+### 🎬 LIVE — 12th MATHS 1 | 6.Line & Plane | 7.Linear Programming | Maha-Revision | Board Exam 2026
+
+**Channel:** Pradeep Giri 11th and 12th Academy
+
+* What the video covers: A comprehensive live revision session for 12th grade Mathematics Paper 1, focusing on two critical chapters - Line & Plane (Chapter 6) and Linear Programming (Chapter 7)
+* Key topics discussed: Three-dimensional geometry concepts including lines and planes in space, linear programming problems with optimization techniques, constraint formulation, and graphical methods for board exam preparation
+* Why it's worth watching: Targeted maha-revision (mega-revision) session specifically designed for Board Exam 2026 students, taught by experienced educators Pradeep Giri Sir and Rahul Giri, offering last-minute comprehensive coverage of high-weightage topics with exam-focused strategies
+
+---
+
+### 🎬 直播 — 12年级数学1 | 6.直线与平面 | 7.线性规划 | 大复习 | 2026年委员会考试
+
+**频道:** Pradeep Giri 11th and 12th Academy
+
+* 视频内容概述: 针对12年级数学试卷1的综合直播复习课程,重点讲解两个关键章节 - 直线与平面(第6章)和线性规划(第7章)
+* 主要话题: 三维几何概念,包括空间中的直线和平面、线性规划问题的优化技巧、约束条件的建立以及适用于委员会考试的图解法
+* 为何值得观看: 专为2026年委员会考试学生设计的大型复习课程,由经验丰富的教师Pradeep Giri和Rahul Giri授课,提供高分值题型的全面覆盖和应试策略指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J2aieJAf2rM)**
+
+### 🎬 Anthropic's Full Claude Skills Guide In 22 Minutes
+
+**Channel:** Mark Kashef
+
+* What the video covers: A comprehensive walkthrough of Anthropic's official Claude Skills Guide, condensing essential techniques and best practices for working with Claude AI into a 22-minute tutorial
+* Key topics discussed: Prompt engineering strategies, Claude's capabilities and limitations, effective communication patterns with Claude, optimization techniques for better AI responses, and practical implementation tips from Anthropic's documentation
+* Why it's worth watching: This video distills Anthropic's extensive official documentation into an accessible, time-efficient format perfect for developers and AI practitioners who want to quickly master Claude's features without reading through lengthy guides. Mark Kashef's community has 800+ AI builders, indicating trusted expertise in the field.
+
+---
+
+### 🎬 Anthropic Claude 完整技能指南 22 分钟速览
+
+**频道:** Mark Kashef
+
+* 视频内容概述: 全面讲解 Anthropic 官方发布的 Claude 技能指南,将核心技术和最佳实践浓缩为 22 分钟教程
+* 主要话题: 提示词工程策略、Claude 的能力与局限性、与 Claude 有效沟通的模式、优化 AI 响应的技巧,以及 Anthropic 文档中的实用实施建议
+* 为何值得观看: 该视频将 Anthropic 冗长的官方文档精炼为易懂且高效的格式,非常适合希望快速掌握 Claude 功能的开发者和 AI 从业者,无需阅读大量指南。Mark Kashef 的社区拥有 800 多名 AI 开发者,显示其在该领域的可信专业度。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TzJecWCbex0)**
 
