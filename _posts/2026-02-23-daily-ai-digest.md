@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 23, 2026"
 date: 2026-02-23
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -291,4 +291,264 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 专为2026年委员会考试学生设计的大型复习课程,由经验丰富的教师Pradeep Giri和Rahul Giri授课,提供高分值题型的全面覆盖和应试策略指导
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=J2aieJAf2rM)**
+
+### Building Timeframe: A Decade-Long Journey to the Perfect Family E-Paper Dashboard
+
+* Developer spent 10 years creating Timeframe, an open-source family dashboard combining calendar, weather, and smart home data on e-paper displays
+* Started with Magic Mirror prototype using LCD (too bright/hard to read), then jailbroken Kindles in laser-cut wood enclosures with Ruby on Rails backend
+* Evolved to Visionect e-paper displays (6"/10"/13" sizes) running on Raspberry Pi, updating every 5 minutes for months on single charge
+* After home destroyed in 2021 Marshall Fire, redesigned house with built-in "phone nook" for 25.3" Boox Mira Pro display with real-time updates
+* Backend migrated from Rails+database+Redis to simplified Rails app using Home Assistant as primary data source, removing 50%+ of codebase
+* Real-time status indicators show only relevant info (open doors, laundry done, dishwasher reminders) - blank display means "house is healthy"
+* Key innovation: separating device control from status display, showing contextual information only when needed
+* Project remains in development for potential market release, with ongoing work on deployment hardening
+
+### 打造 Timeframe:十年磨一剑的家庭电子墨水屏仪表板
+
+* 开发者花费 10 年时间创建 Timeframe 开源家庭仪表板,在电子墨水屏上整合日历、天气和智能家居数据
+* 从 Magic Mirror LCD 原型开始(太亮/难以阅读),然后使用越狱 Kindle 配激光切割木质外壳和 Ruby on Rails 后端
+* 演进到 Visionect 电子墨水屏显示器(6"/10"/13" 尺寸)运行在树莓派上,每 5 分钟更新一次,单次充电可用数月
+* 2021 年家园在 Marshall 大火中被毁后,重新设计房屋时内置"手机角落",配备 25.3" Boox Mira Pro 实时更新显示屏
+* 后端从 Rails+数据库+Redis 迁移到简化的 Rails 应用,使用 Home Assistant 作为主要数据源,删除 50%+ 代码
+* 实时状态指示器仅显示相关信息(门开启、洗衣完成、洗碗机提醒) - 空白显示表示"房屋状态健康"
+* 核心创新:将设备控制与状态显示分离,仅在需要时显示上下文信息
+* 项目仍在开发中以推向市场,持续进行部署加固工作
+
+**[Read Original / 阅读原文](https://hawksley.org/2026/02/17/timeframe.html)**
+
+### Shuru - Local-first MicroVM Sandbox for AI Agents
+
+* **Ephemeral Execution**: VMs boot, run commands, and tear down instantly with no persistent state - perfect for isolated, reproducible task execution
+* **Security-First Networking**: Network access is denied by default; must explicitly use `--allow-net` flag to enable internet connectivity
+* **Flexible Resource Control**: Configure CPU cores (`--cpus`), memory (`--memory`), and disk size (`--disk-size`) per execution to match workload requirements
+* **Checkpoint System**: Create named snapshots of configured environments (with dependencies installed) and restore them instantly for fast, repeatable workflows
+* **Port Forwarding via vsock**: Tunnel guest VM ports to host without requiring `--allow-net`, enabling secure local service access
+* **Alpine Linux Base**: Lightweight, minimal OS environment optimized for quick boot times and low resource overhead
+* **AI Agent Ready**: Designed specifically for safe, sandboxed execution of AI-generated code and commands
+
+### Shuru - 本地优先的 AI 代理微虚拟机沙箱
+
+* **临时执行环境**: 虚拟机启动、运行命令后立即销毁,无状态持久化 - 非常适合隔离的、可重现的任务执行
+* **安全优先的网络策略**: 默认拒绝网络访问,必须显式使用 `--allow-net` 标志才能启用互联网连接
+* **灵活的资源控制**: 可为每次执行配置 CPU 核心数(`--cpus`)、内存(`--memory`)和磁盘大小(`--disk-size`)以匹配工作负载需求
+* **检查点系统**: 创建已配置环境(已安装依赖)的命名快照,并可即时恢复以实现快速、可重复的工作流
+* **通过 vsock 的端口转发**: 无需 `--allow-net` 即可将虚拟机端口隧道到主机,实现安全的本地服务访问
+* **Alpine Linux 基础**: 轻量级、最小化的操作系统环境,针对快速启动和低资源开销进行了优化
+* **AI 代理就绪**: 专为 AI 生成代码和命令的安全沙箱执行而设计
+
+**[Read Original / 阅读原文](https://shuru.run)**
+
+### Running VS Code Remote SSH on FreeBSD via Linuxulator
+
+* Author uses VS Code but faced challenges running it on FreeBSD, particularly for remote development work
+* Remote development over NFS/SSHFS was painfully slow (5-10 minutes to open files) for SvelteKit + Go projects
+* VS Code Remote SSH extension worked surprisingly well on OpenWRT despite being unsupported
+* FreeBSD initially rejected Remote SSH with "Unsupported platform" error
+* Solution: Enable FreeBSD's Linuxulator (Linux binary compatibility layer) to run Linux VS Code server binaries
+* Setup involves enabling Linux service, installing `linux_base-rl9`, configuring custom PATH in `.bash_linux`, and modifying SSH config
+* SSH config uses `BASH_ENV` variable and `RemoteCommand` to launch Linux bash for VS Code connections
+* All VS Code extensions worked flawlessly except Rollup (solved by using WASM build via npm overrides)
+* Result is a fast, stable remote development experience that "feels like magic"
+* Demonstrates the maturity of both Linux ABI stability and FreeBSD's Linuxulator implementation
+
+### 在 FreeBSD 上通过 Linuxulator 运行 VS Code 远程 SSH
+
+* 作者使用 VS Code，但在 FreeBSD 上进行远程开发时遇到挑战
+* 通过 NFS/SSHFS 进行远程开发非常缓慢（打开文件需要 5-10 分钟），特别是对于 SvelteKit + Go 项目
+* VS Code Remote SSH 扩展在 OpenWRT 上意外运行良好，尽管官方不支持
+* FreeBSD 最初拒绝 Remote SSH，显示"不支持的平台"错误
+* 解决方案：启用 FreeBSD 的 Linuxulator（Linux 二进制兼容层）来运行 Linux 版 VS Code 服务器二进制文件
+* 设置包括启用 Linux 服务、安装 `linux_base-rl9`、在 `.bash_linux` 中配置自定义 PATH，以及修改 SSH 配置
+* SSH 配置使用 `BASH_ENV` 变量和 `RemoteCommand` 为 VS Code 连接启动 Linux bash
+* 除 Rollup 外所有 VS Code 扩展都完美运行（通过 npm overrides 使用 WASM 构建版本解决）
+* 结果是快速、稳定的远程开发体验，"感觉像魔法一样"
+* 展示了 Linux ABI 稳定性和 FreeBSD Linuxulator 实现的成熟度
+
+**[Read Original / 阅读原文](https://hayzam.com/blog/02-linuxulator-is-awesome/)**
+
+### system-prompts-and-models-of-ai-tools - Comprehensive Collection of AI Coding Assistant System Prompts
+
+* A repository containing over 30,000+ lines of leaked/extracted system prompts, internal tools, and AI model configurations from 30+ popular AI coding assistants including Cursor, Windsurf, Replit, Claude Code, Devin AI, and many others
+* Provides unprecedented transparency into how major AI development tools structure their prompts, define capabilities, set behavioral guidelines, and implement internal tooling
+* Notable for exposing the "secret sauce" behind leading AI coding assistants, gaining 914 stars today and serving as both a research resource and a security wake-up call for AI startups about protecting proprietary prompt engineering
+
+### system-prompts-and-models-of-ai-tools - AI 编程助手系统提示词大全
+
+* 收录了 30 多个主流 AI 编程助手(包括 Cursor、Windsurf、Replit、Claude Code、Devin AI 等)的系统提示词、内部工具和 AI 模型配置,超过 30,000 行代码量
+* 揭示了主流 AI 开发工具如何构建提示词、定义能力边界、设置行为准则以及实现内部工具链,提供了前所未有的透明度
+* 今日获得 914 个星标,既是研究资源也是对 AI 初创公司的安全警示,提醒他们保护专有的提示工程技术
+
+**[View Repository / 查看仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)**
+
+### Stremio Web - Modern Media Center for Streaming Entertainment
+
+* **What it does**: Stremio Web is a browser-based media center that allows users to discover, watch, and organize video content from various sources through an extensible addon system. It provides a unified interface for streaming entertainment without needing to install desktop applications.
+
+* **Key features**: 
+  - Addon-based architecture for easy content source integration
+  - Clean, modern UI with Board, Discover, and Meta Details views
+  - Cross-platform web accessibility (works in any modern browser)
+  - Built with JavaScript/Node.js for easy deployment
+  - Open-source under GPLv2 license
+
+* **Why it's notable**: With 251 stars today, Stremio Web is gaining traction as a flexible alternative to traditional streaming platforms. Its addon system gives users freedom to customize their streaming experience, while the web-based approach eliminates installation barriers. The project represents a shift toward decentralized, user-controlled media consumption.
+
+---
+
+### Stremio Web - 现代化流媒体娱乐中心
+
+* **功能介绍**: Stremio Web 是一个基于浏览器的媒体中心,用户可以通过可扩展的插件系统发现、观看和整理来自各种来源的视频内容。它提供了统一的流媒体娱乐界面,无需安装桌面应用程序。
+
+* **主要特点**:
+  - 基于插件的架构,轻松集成内容源
+  - 简洁现代的用户界面,包含看板、发现和详情视图
+  - 跨平台网页访问(支持所有现代浏览器)
+  - 使用 JavaScript/Node.js 构建,易于部署
+  - GPLv2 开源许可证
+
+* **为何值得关注**: 今日获得 251 星标,Stremio Web 作为传统流媒体平台的灵活替代方案正在崛起。其插件系统让用户自由定制流媒体体验,而基于网页的方式消除了安装障碍。该项目代表了向去中心化、用户可控的媒体消费方式的转变。
+
+**[View Repository / 查看仓库](https://github.com/Stremio/stremio-web)**
+
+### Kalshi-Polymarket-Ai-bot - AI-Powered Cross-Platform Prediction Market Arbitrage Bot
+
+* An automated arbitrage system that monitors Kalshi and Polymarket prediction markets simultaneously, detecting price discrepancies on identical events for risk-free profit opportunities
+* Hybrid Python + Rust architecture with PyO3 extension for microsecond-speed market scanning, GPT-4o AI validation to filter false positives, Kelly criterion position sizing, full API integration for both platforms (RSA auth for Kalshi, ECDSA signing for Polymarket CLOB), dry-run mode, and one-command macOS installation
+* Notable for being the only open-source arbitrage bot combining Rust performance optimization with AI-powered opportunity validation, supporting both major prediction market platforms with production-ready APIs, and providing a complete educational framework for algorithmic trading strategies (632 stars, educational/research purposes only with comprehensive financial disclaimers)
+
+---
+
+### Kalshi-Polymarket-Ai-bot - AI 驱动的跨平台预测市场套利机器人
+
+* 自动化套利系统,同时监控 Kalshi 和 Polymarket 预测市场,检测相同事件的价格差异以获取无风险套利机会
+* Python + Rust 混合架构,使用 PyO3 扩展实现微秒级市场扫描,GPT-4o AI 验证过滤误报,Kelly 准则仓位管理,完整的双平台 API 集成(Kalshi 使用 RSA 认证,Polymarket CLOB 使用 ECDSA 签名),模拟运行模式,macOS 一键安装
+* 作为唯一结合 Rust 性能优化与 AI 驱动机会验证的开源套利机器人而备受关注,支持两大主流预测市场平台的生产级 API,并提供完整的算法交易策略教育框架(632 星标,仅供教育研究用途,附带全面的金融免责声明)
+
+**[View Repository / 查看仓库](https://github.com/CraftyGeezer/Kalshi-Polymarket-Ai-bot)**
+
+### Polymarket RSI/MACD Index Trading Bot - Automated Trading for 15-Minute Prediction Markets
+
+* **What it does**: A real-time trading bot for Polymarket's 15-minute Up/Down prediction markets on crypto assets (ETH, BTC, SOL, XRP), using technical analysis indicators to automate trading decisions.
+
+* **Key features**: Implements RSI, MACD, and Momentum strategies with configurable parameters; supports both simulation mode (paper trading) and live trading mode; includes profit/loss thresholds, stop-loss protection, and CLOB API integration for order execution.
+
+* **Why it's notable**: TypeScript port of a Rust trading bot that democratizes algorithmic trading on Polymarket's short-term prediction markets. With 594 stars, it's gaining traction among traders looking to automate technical analysis strategies on decentralized prediction platforms. The dual-mode approach (simulation/live) makes it accessible for both testing and production use.
+
+---
+
+### Polymarket RSI/MACD 指数交易机器人 - 15分钟预测市场自动化交易
+
+* **功能介绍**: 针对 Polymarket 平台上加密货币(ETH、BTC、SOL、XRP)15分钟涨跌预测市场的实时交易机器人,利用技术分析指标自动执行交易决策。
+
+* **主要特点**: 实现了 RSI、MACD 和动量策略,参数可配置;支持模拟模式(纸上交易)和实盘交易模式;包含盈亏阈值、止损保护功能,并集成 CLOB API 执行订单。
+
+* **为何值得关注**: 这是 Rust 交易机器人的 TypeScript 移植版,让算法交易在 Polymarket 短期预测市场上更易实现。获得 594 星标,在寻求将技术分析策略自动化应用于去中心化预测平台的交易者中越来越受欢迎。双模式设计(模拟/实盘)使其既适合测试也适合生产环境使用。
+
+**[View Repository / 查看仓库](https://github.com/Daniel-Dias001/Polymarket-rsi-macd-index-trading-bot)**
+
+### 🎬 The Biggest AI Risk is from Government - Elon Musk
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Elon Musk discusses his perspective on AI risks, arguing that government control and regulation of AI poses a greater threat than the technology itself
+* Key topics discussed: Government overreach in AI regulation, the balance between AI safety and innovation, potential consequences of centralized AI control, and the importance of decentralized AI development
+* Why it's worth watching: Offers a contrarian view on AI safety from one of tech's most influential figures, challenging the mainstream narrative about AI risks and providing insights into the regulatory landscape that could shape AI's future
+
+---
+
+### 🎬 政府才是AI最大风险 - 埃隆·马斯克
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 埃隆·马斯克阐述了他对AI风险的看法,认为政府对AI的控制和监管比技术本身构成更大的威胁
+* 主要话题: 政府对AI监管的过度干预、AI安全与创新之间的平衡、中心化AI控制的潜在后果,以及去中心化AI发展的重要性
+* 为何值得观看: 提供了来自科技界最具影响力人物之一关于AI安全的反主流观点,挑战了关于AI风险的主流叙事,并深入探讨了可能塑造AI未来的监管格局
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=47py9dKhugs)**
+
+### 🎬 OpenClaw Use Cases that are Actually Helpful! (ClawdBot)
+
+**Channel:** Duncan Rogoff | AI Automation
+
+* What the video covers: Practical applications and setup guide for OpenClaw (ClawdBot), demonstrating real-world automation use cases that deliver tangible value
+* Key topics discussed: Implementation strategies for OpenClaw, specific automation workflows, integration techniques, and actionable examples that go beyond basic demos
+* Why it's worth watching: Duncan Rogoff breaks down OpenClaw's capabilities with hands-on examples that viewers can actually implement, focusing on use cases that solve real business problems rather than theoretical scenarios. Perfect for those looking to leverage AI automation tools effectively in their workflows.
+
+---
+
+### 🎬 OpenClaw 实用案例详解！(ClawdBot)
+
+**频道:** Duncan Rogoff | AI Automation
+
+* 视频内容概述: 展示 OpenClaw (ClawdBot) 的实际应用场景和设置指南,演示能带来实际价值的自动化用例
+* 主要话题: OpenClaw 的实施策略、具体自动化工作流程、集成技术,以及可操作的实例(超越基础演示)
+* 为何值得观看: Duncan Rogoff 通过实操案例深入讲解 OpenClaw 的功能,观众可以直接应用这些方法。视频聚焦于解决实际业务问题的用例,而非理论场景,非常适合希望在工作流程中有效利用 AI 自动化工具的用户。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LV6Juz0xcrY)**
+
+### 🎬 The "Game Over" Hook: The End of reCAPTCHA? AI Hits 100% Accuracy 🤖🛑
+
+**Channel:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* What the video covers: This video explores the breakthrough where AI has achieved 100% accuracy in solving reCAPTCHA challenges, potentially marking the end of this widely-used bot detection system.
+
+* Key topics discussed: The evolution of CAPTCHA technology, how AI models have advanced to bypass reCAPTCHA with perfect accuracy, implications for web security and bot prevention, and what this means for the future of human verification systems online.
+
+* Why it's worth watching: If you're interested in cybersecurity, AI capabilities, or web development, this video highlights a critical turning point where traditional security measures are being outpaced by machine learning. It raises important questions about the next generation of authentication methods and the ongoing arms race between security systems and AI.
+
+---
+
+### 🎬 "游戏结束"时刻:reCAPTCHA的终结?AI达到100%准确率 🤖🛑
+
+**频道:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* 视频内容概述: 本视频探讨了AI在破解reCAPTCHA验证码方面达到100%准确率的突破性进展,这可能标志着这一广泛使用的机器人检测系统的终结。
+
+* 主要话题: CAPTCHA技术的演变、AI模型如何进步到能够完美绕过reCAPTCHA、对网络安全和机器人防护的影响,以及这对未来在线人机验证系统意味着什么。
+
+* 为何值得观看: 如果你对网络安全、AI能力或Web开发感兴趣,这个视频展示了一个关键转折点——传统安全措施正被机器学习超越。它提出了关于下一代身份验证方法的重要问题,以及安全系统与AI之间持续的军备竞赛。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PVt9zSF8Lf4)**
+
+### 🎬 Claude Code Killer is here!
+
+**Channel:** Piyush Garg
+
+* What the video covers: A deep dive into Codebuff, a new AI coding tool positioned as a competitor to Claude and other AI coding assistants
+* Key topics discussed: Codebuff's features, capabilities, and how it compares to existing AI coding solutions; hands-on demonstration of the platform's coding assistance features
+* Why it's worth watching: If you're interested in AI-powered development tools, this video provides an early look at a new player in the space that claims to challenge established tools like Claude. The promotional offer (250 credits) also gives viewers a chance to try the platform themselves
+
+---
+
+### 🎬 Claude 代码杀手来了！
+
+**频道:** Piyush Garg
+
+* 视频内容概述: 深入介绍 Codebuff，一个新的 AI 编码工具，定位为 Claude 和其他 AI 编码助手的竞争对手
+* 主要话题: Codebuff 的功能特性、能力展示，以及与现有 AI 编码解决方案的对比；平台编码辅助功能的实际演示
+* 为何值得观看: 如果你对 AI 驱动的开发工具感兴趣，这个视频提供了一个新兴平台的早期体验，该平台声称能挑战 Claude 等成熟工具。视频还提供了促销优惠（250 积分），让观众有机会亲自试用该平台
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=07koWMgjj28)**
+
+### 🎬 Python Full Course | Python Tutorial for Beginners | Part 1
+
+**Channel:** Coding With Sagar
+
+* **What the video covers:** This is Part 1 of a comprehensive Python tutorial series designed specifically for beginners with no prior programming experience. It introduces fundamental Python concepts and sets the foundation for learning programming.
+
+* **Key topics discussed:** Python basics including installation and setup, core syntax, variables and data types, basic operators, and introductory programming concepts. The tutorial follows a structured approach to help newcomers understand Python from the ground up.
+
+* **Why it's worth watching:** Perfect starting point for absolute beginners who want to learn Python systematically. Sagar Chouksey breaks down complex concepts into digestible lessons, making it accessible for those taking their first steps into programming. The course is part of a larger series, ensuring comprehensive coverage of Python fundamentals with a clear learning path.
+
+---
+
+### 🎬 Python 完整课程 | Python 初学者教程 | 第一部分
+
+**频道:** Coding With Sagar
+
+* **视频内容概述:** 这是专为零基础初学者设计的 Python 系列教程的第一部分。视频介绍 Python 的基础概念,为学习编程打下坚实基础。
+
+* **主要话题:** Python 基础知识,包括安装配置、核心语法、变量与数据类型、基本运算符以及入门级编程概念。教程采用结构化方式帮助新手从零开始理解 Python。
+
+* **为何值得观看:** 对于想要系统学习 Python 的零基础学习者来说,这是完美的起点。Sagar Chouksey 将复杂概念分解为易于理解的课程,让编程入门变得简单。该课程是完整系列的一部分,确保全面覆盖 Python 基础知识,学习路径清晰明确。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
 
