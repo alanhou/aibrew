@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 22, 2026"
 date: 2026-02-22
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -664,4 +664,129 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 * 为何值得观看: 该视频将 Anthropic 冗长的官方文档精炼为易懂且高效的格式,非常适合希望快速掌握 Claude 功能的开发者和 AI 从业者,无需阅读大量指南。Mark Kashef 的社区拥有 800 多名 AI 开发者,显示其在该领域的可信专业度。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=TzJecWCbex0)**
+
+<!-- [Title-Only] -->
+### Japanese Woodblock Print Search
+
+* Based on the title, this article likely covers a searchable database or collection of Japanese woodblock prints (ukiyo-e), which are traditional Japanese art prints from the Edo period (1603-1868). The site probably allows users to browse, search, and explore these historical artworks by various criteria such as artist, subject matter, or time period.
+
+* This would be interesting to readers who appreciate Japanese art history, traditional printmaking techniques, or digital humanities projects that make cultural heritage accessible online. It's particularly relevant for art enthusiasts, researchers, and anyone curious about how technology can preserve and democratize access to historical art collections.
+
+### 日本浮世绘版画搜索
+
+* 根据标题推测，这篇文章可能介绍了一个可搜索的日本浮世绘版画数据库或收藏集。浮世绘是江户时代（1603-1868）的传统日本艺术版画。该网站可能允许用户通过艺术家、主题或时期等各种标准浏览、搜索和探索这些历史艺术作品。
+
+* 这对欣赏日本艺术史、传统版画技术，或关注数字人文项目如何让文化遗产在线可及的读者来说会很有趣。它特别适合艺术爱好者、研究人员，以及任何对技术如何保存和普及历史艺术收藏感兴趣的人。
+
+**[Read Original / 阅读原文](https://ukiyo-e.org/)**
+
+### A Botnet Accidentally Destroyed I2P (The Full Story)
+
+* On February 3, 2026, I2P anonymity network suffered a massive Sybil attack with 700,000 hostile nodes flooding the system—39 times its normal 15,000-20,000 device capacity
+* I2P has experienced annual February attacks since 2023, with previous incidents using malicious floodfill routers and remaining unattributed, leading to initial assumptions of state-sponsored operations
+* The attacker was identified as Kimwolf botnet, an IoT operation that infected millions of devices and previously executed a record 31.4 Tbps DDoS attack in December 2025
+* Kimwolf operators admitted on Discord the I2P disruption was accidental—they were attempting to use I2P as backup C2 infrastructure after researchers destroyed over 550 of their primary command servers
+* I2P development team responded within six days by releasing version 2.11.0, featuring hybrid ML-KEM plus X25519 post-quantum encryption enabled by default, making I2P among the first production anonymity networks with PQC deployment
+* The update also included enhanced Sybil attack mitigations, SAMv3 API upgrades, and infrastructure improvements
+
+### 僵尸网络意外摧毁 I2P 匿名网络(完整事件)
+
+* 2026年2月3日,I2P匿名网络遭受大规模女巫攻击,70万个恶意节点涌入系统——是其正常1.5万至2万设备容量的39倍
+* I2P自2023年起每年2月都遭受攻击,此前攻击使用恶意泛洪路由器且攻击者身份不明,最初被认为是国家支持的持续破坏行动
+* 攻击者被确认为Kimwolf僵尸网络,这是一个感染数百万物联网设备的组织,曾在2025年12月发起创纪录的31.4 Tbps DDoS攻击
+* Kimwolf操作者在Discord上承认对I2P的破坏是意外——他们在安全研究人员摧毁其550多个主要命令服务器后,试图将I2P用作备用C2基础设施
+* I2P开发团队在攻击开始后六天内发布2.11.0版本,默认启用混合ML-KEM加X25519后量子加密,使I2P成为首批部署后量子密码学的生产级匿名网络之一
+* 更新还包括增强的女巫攻击缓解措施、SAMv3 API升级和基础设施改进
+
+**[Read Original / 阅读原文](https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/)**
+
+### A Thousand-Year Journey Through English: From Modern Blog to Medieval Mystery
+
+* A linguistic experiment compresses 1,000 years of English evolution into a single fictional travel blog post about visiting the town of Wulfleet
+* The narrative begins in contemporary casual blog style (2000s LiveJournal tone) and regresses through distinct historical periods: Victorian/Georgian formal prose, 18th-century diarist style, Early Modern English with long 's' (ſ), Elizabethan English, and finally Middle English with thorn (þ) and yogh (ȝ)
+* Each section demonstrates authentic linguistic features of its era: spelling conventions, grammar structures, vocabulary, and even social attitudes (like the use of "thou" to address social inferiors)
+* The story follows a traveler who encounters increasingly sinister events, culminating in a Gothic horror scenario where he's captured and brought before a wolf-like "Master"
+* Created by Colin Gorrie, PhD linguist behind The Dead Language Society, as an educational tool to show readers exactly where historical English becomes incomprehensible to modern speakers
+* The exercise reveals that most readers can follow English back to the 18th century fairly easily, struggle with Early Modern English (1500s-1600s), and find Middle English (1100s-1400s) nearly impenetrable without training
+
+### 英语的千年时光倒流:从现代博客到中世纪之谜
+
+* 一个语言学实验将1000年的英语演变压缩进一篇虚构的旅行博客,讲述访问Wulfleet小镇的故事
+* 叙事从当代随意的博客风格(2000年代LiveJournal语调)开始,逐步倒退经历不同历史时期:维多利亚/乔治时代正式散文、18世纪日记体、带长s(ſ)的早期现代英语、伊丽莎白时代英语,最后到带刺字母(þ)和yogh(ȝ)的中古英语
+* 每个部分展示其时代的真实语言特征:拼写惯例、语法结构、词汇,甚至社会态度(如用"thou"称呼社会地位较低者)
+* 故事跟随一位旅行者遭遇越来越险恶的事件,最终演变为哥特式恐怖场景——他被抓获并带到一个狼形"主人"面前
+* 由语言学博士Colin Gorrie创作,他是《死语言协会》的作者,这是一个教育工具,用来向读者展示历史英语在何处变得难以理解
+* 这个练习揭示:大多数读者能相对轻松地理解18世纪的英语,在早期现代英语(1500-1600年代)时开始吃力,而中古英语(1100-1400年代)对未经训练的人来说几乎无法理解
+
+**[Read Original / 阅读原文](https://www.deadlanguagesociety.com/p/how-far-back-in-time-understand-english)**
+
+### 🎬 The End of Programming as we Know It
+**Channel:** NeetCode
+
+* What the video covers: Explores Tim O'Reilly's perspective on how AI and emerging technologies are fundamentally transforming the nature of programming and software development
+* Key topics discussed: The evolution of programming paradigms, AI's impact on coding practices, how developers need to adapt their skills, and what the future of software engineering might look like
+* Why it's worth watching: Provides critical insights for developers navigating the AI era, helping them understand how to stay relevant as programming tools and methodologies undergo radical transformation
+
+---
+
+### 🎬 编程的终结:我们所知的编程时代
+**频道:** NeetCode
+
+* 视频内容概述: 探讨 Tim O'Reilly 关于 AI 和新兴技术如何从根本上改变编程和软件开发本质的观点
+* 主要话题: 编程范式的演变、AI 对编码实践的影响、开发者如何调整技能,以及软件工程的未来发展方向
+* 为何值得观看: 为处于 AI 时代的开发者提供关键洞察,帮助理解如何在编程工具和方法论经历剧变时保持竞争力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7z4Nl1WjE9I)**
+
+### 🎬 Claude Code Agents Are Completely Useless
+**Channel:** Tom Delalande
+
+* What the video covers: An examination of Claude Code's attempt to build a C compiler, demonstrating the practical limitations and failures of AI code agents in real-world development scenarios
+* Key topics discussed: AI-generated code quality, the gap between what AI agents can produce versus what's actually useful, practical software engineering challenges that expose AI limitations, comparison with human-written compilers
+* Why it's worth watching: Provides a critical, reality-check perspective on AI coding tools' current capabilities, especially valuable for developers evaluating whether to integrate AI agents into their workflow or understanding their limitations in complex projects
+
+### 🎬 Claude 代码智能体完全无用
+**频道:** Tom Delalande
+
+* 视频内容概述: 深入分析 Claude Code 尝试构建 C 编译器的过程,展示 AI 代码智能体在实际开发场景中的实际局限性和失败案例
+* 主要话题: AI 生成代码的质量问题、AI 智能体产出与实用性之间的差距、暴露 AI 局限性的实际软件工程挑战、与人工编写编译器的对比
+* 为何值得观看: 对 AI 编码工具当前能力提供了批判性的现实检验视角,对于正在评估是否将 AI 智能体集成到工作流程中的开发者,或想了解其在复杂项目中局限性的人来说特别有价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2_b8HM-OfMU)**
+
+### 🎬 Plus Two Maths | Linear Programming Short Summary | Eduport Plus Two
+
+**Channel:** Eduport Plus Two
+
+* This video provides a concise revision summary of Linear Programming for Plus Two (Grade 12) mathematics students
+* Key topics include formulating linear programming problems, graphical methods for solving optimization problems, feasible regions, and finding optimal solutions
+* Worth watching for students preparing for board exams or model exams who need a quick, focused review of Linear Programming concepts before their mathematics examination
+
+---
+
+### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
+
+**频道:** Eduport Plus Two
+
+* 本视频为 Plus Two(12年级)数学学生提供线性规划的简明复习总结
+* 主要话题包括线性规划问题的建立、优化问题的图解法、可行域以及最优解的求解
+* 适合准备委员会考试或模拟考试的学生观看,为数学考试前需要快速、集中复习线性规划概念的学生提供帮助
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
+
+### 🎬 OpenClaw Tutorial for Beginners - Crash Course
+**Channel:** Adrian Twarog
+
+* What the video covers: A comprehensive beginner's guide to OpenClaw, the latest AI model agent that can be run locally on your personal computer
+* Key topics discussed: Setting up and running OpenClaw (formerly known as moltbot/clawdbot), understanding its capabilities as a local AI agent, and practical implementation steps for beginners
+* Why it's worth watching: Perfect for developers and tech enthusiasts who want to explore running AI agents locally without relying on cloud services, offering privacy and control over your AI workflows
+
+### 🎬 OpenClaw 新手教程 - 速成课程
+**频道:** Adrian Twarog
+
+* 视频内容概述: 全面介绍 OpenClaw 的新手指南,这是一款可以在个人电脑上本地运行的最新 AI 模型代理
+* 主要话题: OpenClaw(前身为 moltbot/clawdbot)的安装和运行方法、作为本地 AI 代理的功能介绍,以及面向初学者的实际操作步骤
+* 为何值得观看: 非常适合想要探索本地运行 AI 代理的开发者和技术爱好者,无需依赖云服务即可实现隐私保护和工作流程的完全控制
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=u4ydH-QvPeg)**
 
