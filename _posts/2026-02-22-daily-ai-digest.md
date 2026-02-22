@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 22, 2026"
 date: 2026-02-22
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -690,66 +690,30 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 
 ---
 
-### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
+### 🎬 Claude 代码杀手来了！
 
-**频道:** Eduport Plus Two
+**频道:** Piyush Garg
 
-* 本视频为 Plus Two(12年级)数学学生提供线性规划的简明复习总结
-* 主要话题包括线性规划问题的建立、优化问题的图解法、可行域以及最优解的求解
-* 适合准备委员会考试或模拟考试的学生观看,为数学考试前需要快速、集中复习线性规划概念的学生提供帮助
+* 视频内容概述: 深入介绍 Codebuff，一个新的 AI 编码工具，定位为 Claude 和其他 AI 编码助手的竞争对手
+* 主要话题: Codebuff 的功能特性、能力展示，以及与现有 AI 编码解决方案的对比；平台编码辅助功能的实际演示
+* 为何值得观看: 如果你对 AI 驱动的开发工具感兴趣，这个视频提供了一个新兴平台的早期体验，该平台声称能挑战 Claude 等成熟工具。视频还提供了促销优惠（250 积分），让观众有机会亲自试用该平台
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
-
-### 🎬 OpenClaw Tutorial for Beginners - Crash Course
-**Channel:** Adrian Twarog
-
-* What the video covers: A comprehensive beginner's guide to OpenClaw, the latest AI model agent that can be run locally on your personal computer
-* Key topics discussed: Setting up and running OpenClaw (formerly known as moltbot/clawdbot), understanding its capabilities as a local AI agent, and practical implementation steps for beginners
-* Why it's worth watching: Perfect for developers and tech enthusiasts who want to explore running AI agents locally without relying on cloud services, offering privacy and control over your AI workflows
-
-### 🎬 OpenClaw 新手教程 - 速成课程
-**频道:** Adrian Twarog
-
-* 视频内容概述: 全面介绍 OpenClaw 的新手指南,这是一款可以在个人电脑上本地运行的最新 AI 模型代理
-* 主要话题: OpenClaw(前身为 moltbot/clawdbot)的安装和运行方法、作为本地 AI 代理的功能介绍,以及面向初学者的实际操作步骤
-* 为何值得观看: 非常适合想要探索本地运行 AI 代理的开发者和技术爱好者,无需依赖云服务即可实现隐私保护和工作流程的完全控制
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=u4ydH-QvPeg)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=07koWMgjj28)**
 
 <!-- [Title-Only] -->
-### Japanese Woodblock Print Search
+### Back to FreeBSD: Part 1
 
-* Based on the title, this article likely covers a searchable database or collection of Japanese woodblock prints (ukiyo-e), which are traditional Japanese art prints from the Edo period (1603-1868). The site probably allows users to browse, search, and explore these historical artworks by various criteria such as artist, subject matter, or time period.
+* This article likely covers someone's experience returning to FreeBSD after using other operating systems (possibly Linux or macOS). As a "Part 1," it probably discusses the initial motivations for switching back, installation process, or first impressions of modern FreeBSD.
+* Why it might be interesting: FreeBSD is a powerful Unix-like operating system known for its stability, performance, and clean architecture. This personal journey could provide insights into FreeBSD's current state, its advantages over alternatives, and practical considerations for developers or system administrators considering a switch. The "back to" framing suggests a comparison perspective that could be valuable for those evaluating OS choices.
 
-* This would be interesting to readers who appreciate Japanese art history, traditional printmaking techniques, or digital humanities projects that make cultural heritage accessible online. It's particularly relevant for art enthusiasts, researchers, and anyone curious about how technology can preserve and democratize access to historical art collections.
+---
 
-### 日本浮世绘版画搜索
+### 重返 FreeBSD:第一部分
 
-* 根据标题推测，这篇文章可能介绍了一个可搜索的日本浮世绘版画数据库或收藏集。浮世绘是江户时代（1603-1868）的传统日本艺术版画。该网站可能允许用户通过艺术家、主题或时期等各种标准浏览、搜索和探索这些历史艺术作品。
+* 这篇文章可能讲述了作者在使用其他操作系统(可能是 Linux 或 macOS)后重新回到 FreeBSD 的经历。作为"第一部分",文章很可能讨论了重新切换的初始动机、安装过程,或对现代 FreeBSD 的初步印象。
+* 为何值得关注:FreeBSD 是一个强大的类 Unix 操作系统,以其稳定性、性能和简洁的架构而闻名。这段个人经历可以让读者了解 FreeBSD 的当前状态、相比其他系统的优势,以及开发者或系统管理员在考虑切换时的实际考量。"重返"这个表述暗示了一种对比视角,对于正在评估操作系统选择的人来说可能很有价值。
 
-* 这对欣赏日本艺术史、传统版画技术，或关注数字人文项目如何让文化遗产在线可及的读者来说会很有趣。它特别适合艺术爱好者、研究人员，以及任何对技术如何保存和普及历史艺术收藏感兴趣的人。
-
-**[Read Original / 阅读原文](https://ukiyo-e.org/)**
-
-### A Botnet Accidentally Destroyed I2P (The Full Story)
-
-* On February 3, 2026, I2P anonymity network suffered a massive Sybil attack with 700,000 hostile nodes flooding the system—39 times its normal 15,000-20,000 device capacity
-* I2P has experienced annual February attacks since 2023, with previous incidents using malicious floodfill routers and remaining unattributed, leading to initial assumptions of state-sponsored operations
-* The attacker was identified as Kimwolf botnet, an IoT operation that infected millions of devices and previously executed a record 31.4 Tbps DDoS attack in December 2025
-* Kimwolf operators admitted on Discord the I2P disruption was accidental—they were attempting to use I2P as backup C2 infrastructure after researchers destroyed over 550 of their primary command servers
-* I2P development team responded within six days by releasing version 2.11.0, featuring hybrid ML-KEM plus X25519 post-quantum encryption enabled by default, making I2P among the first production anonymity networks with PQC deployment
-* The update also included enhanced Sybil attack mitigations, SAMv3 API upgrades, and infrastructure improvements
-
-### 僵尸网络意外摧毁 I2P 匿名网络(完整事件)
-
-* 2026年2月3日,I2P匿名网络遭受大规模女巫攻击,70万个恶意节点涌入系统——是其正常1.5万至2万设备容量的39倍
-* I2P自2023年起每年2月都遭受攻击,此前攻击使用恶意泛洪路由器且攻击者身份不明,导致最初认为是国家支持的持续破坏行动
-* 攻击者被确认为Kimwolf僵尸网络,这是一个感染数百万物联网设备的组织,曾在2025年12月发起创纪录的31.4 Tbps DDoS攻击
-* Kimwolf操作者在Discord上承认对I2P的破坏是意外——他们试图将I2P用作备用C2基础设施,因为安全研究人员摧毁了他们550多个主要命令服务器
-* I2P开发团队在攻击开始后六天内发布2.11.0版本,默认启用混合ML-KEM加X25519后量子加密,使I2P成为首批部署后量子密码学的生产级匿名网络之一
-* 更新还包括增强的女巫攻击缓解措施、SAMv3 API升级和基础设施改进
-
-**[Read Original / 阅读原文](https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/)**
+**[Read Original / 阅读原文](https://hypha.pub/back-to-freebsd-part-1)**
 
 ### How Taalas "Prints" LLM onto a Chip: Revolutionary ASIC Approach to AI Inference
 
@@ -781,27 +745,143 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 
 * **最小化 RAM 使用**: 芯片仅使用少量片上 SRAM(而非外部 DRAM/HBM)用于 KV 缓存(对话上下文)和 LoRA 适配器微调
 
-* **快速定制流程**: Taalas 设计了带有通用逻辑门的基础芯片,针对不同模型只需定制顶部两层/掩模,将每个模型的开发时间缩短至 2 个月,而非从零开始构建
+* **快速定制流程**: Taalas 设计了带有通用逻辑门的基础芯片,针对不同模型仅需定制顶部两层/掩模,将每个模型的开发时间缩短至 2 个月,而非从零开始构建
 
 **[Read Original / 阅读原文](https://www.anuragk.com/blog/posts/Taalas.html)**
 
-### 🎬 Claude Code Killer is here!
+### elecxzy: A Modern, Lightweight Text Editor with Emacs Keybindings
 
-**Channel:** Piyush Garg
+* Lisp-free text editor built on Electron that recreates the Emacs experience with modern web technologies
+* Features floating minibuffer popups, distraction-free UI, and ready-to-use defaults for immediate productivity
+* Supports recursive window splitting, syntax highlighting for 10+ languages, and real-time Markdown/HTML previews
+* Uses Piece Table data structure for efficient large file handling and infinite undo history
+* Optimized Japanese IME support with dedicated focus handling (toggle with C-\ or C-])
+* Built with React, TypeScript, and Styled-components; currently in alpha stage
+* Windows binaries available on GitHub Releases; source code is private
+* FAQ addresses word wrap limitations, horizontal scrolling workarounds, and font compatibility issues
+* Inspired by GNU Emacs and xyzzy, released under MIT License
 
-* What the video covers: A deep dive into Codebuff, a new AI coding tool positioned as a competitor to Claude and other AI coding assistants
-* Key topics discussed: Codebuff's features, capabilities, and how it compares to existing AI coding solutions; hands-on demonstration of the platform's coding assistance features
-* Why it's worth watching: If you're interested in AI-powered development tools, this video provides an early look at a new player in the space that claims to challenge established tools like Claude. The promotional offer (250 credits) also gives viewers a chance to try the platform themselves
+### elecxzy:Emacs キーバインドを備えた軽量モダンエディタ
+
+* Electron ベースの Lisp 非搭載エディタで、最新 Web 技術により Emacs 体験を再構築
+* フローティングミニバッファ、ステルススクロールバー、即戦力の初期設定で導入後すぐに使用可能
+* 再帰的ウィンドウ分割、10 言語以上のシンタックスハイライト、Markdown/HTML リアルタイムプレビュー対応
+* Piece Table エンジンにより大容量ファイルと無限 Undo 履歴を高速処理
+* Web エディタの課題を解決した高精度日本語 IME 対応(C-\ または C-] で切替)
+* React、TypeScript、Styled-components で構築、現在アルファ版として開発中
+* Windows バイナリは GitHub Releases で公開、ソースコードは非公開
+* FAQ では折り返し表示非対応の理由、水平スクロール対処法、フォント互換性問題を説明
+* GNU Emacs と xyzzy にインスパイアされ、MIT ライセンスで公開
+
+**[Read Original / 阅读原文](https://github.com/kurouna/elecxzy)**
+
+### Claude Code - AI-Powered Terminal Coding Assistant
+
+* **What it does**: Claude Code is an agentic coding tool that lives in your terminal and understands your entire codebase. It helps developers code faster by executing routine tasks, explaining complex code, and handling git workflows through natural language commands. You can use it directly in your terminal, IDE, or by tagging @claude on GitHub.
+
+* **Key features**: 
+  - Natural language interface for coding tasks and codebase exploration
+  - Cross-platform support (MacOS, Linux, Windows) with multiple installation methods
+  - Plugin system for extending functionality with custom commands and agents
+  - Integrated bug reporting via `/bug` command
+  - Works seamlessly with git workflows and routine development tasks
+
+* **Why it's notable**: Gaining 500 stars today, Claude Code represents Anthropic's push into developer tooling, bringing AI assistance directly into the terminal workflow. It's notable for its agentic approach—understanding context across your entire codebase rather than just individual files—and its focus on privacy with clear data usage policies and safeguards against using feedback for model training.
 
 ---
 
-### 🎬 Claude 代码杀手来了！
+### Claude Code - 终端 AI 编程助手
 
-**频道:** Piyush Garg
+* **功能介绍**: Claude Code 是一个智能编程工具,直接运行在终端中并理解你的整个代码库。它通过自然语言命令帮助开发者更快编码,执行常规任务、解释复杂代码并处理 git 工作流。可在终端、IDE 中使用,或在 GitHub 上通过 @claude 标签调用。
 
-* 视频内容概述: 深入介绍 Codebuff，一个新的 AI 编码工具，定位为 Claude 和其他 AI 编码助手的竞争对手
-* 主要话题: Codebuff 的功能特性、能力展示，以及与现有 AI 编码解决方案的对比；平台编码辅助功能的实际演示
-* 为何值得观看: 如果你对 AI 驱动的开发工具感兴趣，这个视频提供了一个新兴平台的早期体验，该平台声称能挑战 Claude 等成熟工具。视频还提供了促销优惠（250 积分），让观众有机会亲自试用该平台
+* **主要特点**:
+  - 自然语言界面处理编码任务和代码库探索
+  - 跨平台支持(MacOS、Linux、Windows),提供多种安装方式
+  - 插件系统支持自定义命令和代理扩展功能
+  - 集成 `/bug` 命令直接报告问题
+  - 无缝集成 git 工作流和日常开发任务
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=07koWMgjj28)**
+* **为何值得关注**: 今日获得 500 星标,Claude Code 代表了 Anthropic 进军开发者工具领域的战略,将 AI 辅助直接带入终端工作流。其突出之处在于智能体方法——理解整个代码库的上下文而非单个文件——以及对隐私的重视,提供清晰的数据使用政策和保障措施,承诺不将反馈用于模型训练。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/claude-code)**
+
+### system-prompts-and-models-of-ai-tools - Comprehensive Collection of AI Coding Assistant System Prompts
+
+* A repository containing over 30,000+ lines of leaked/extracted system prompts, internal tools, and AI model configurations from 30+ popular AI coding assistants including Cursor, Windsurf, Replit, Claude Code, Devin AI, and many others
+* Provides unprecedented transparency into how major AI development tools structure their prompts, define capabilities, set behavioral guidelines, and implement internal tooling
+* Notable for exposing the "secret sauce" behind leading AI coding assistants, gaining 914 stars today and serving as both a research resource and a security wake-up call for AI startups about protecting proprietary prompt engineering
+
+### system-prompts-and-models-of-ai-tools - AI 编程助手系统提示词大全
+
+* 收录了 30 多个主流 AI 编程助手(包括 Cursor、Windsurf、Replit、Claude Code、Devin AI 等)的系统提示词、内部工具和 AI 模型配置,超过 30,000 行代码量
+* 揭示了主流 AI 开发工具如何构建提示词、定义能力边界、设置行为准则以及实现内部工具链,提供了前所未有的透明度
+* 今日获得 914 个星标,既是研究资源也是对 AI 初创公司的安全警示,提醒他们保护专有的提示工程技术
+
+**[View Repository / 查看仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)**
+
+### Stremio Web - Modern Media Center for Streaming Entertainment
+
+* **What it does**: Stremio Web is a browser-based media center that allows users to discover, watch, and organize video content from various sources through an extensible addon system. It provides a unified interface for streaming entertainment without needing to install desktop applications.
+
+* **Key features**: 
+  - Addon-based architecture for easy content source integration
+  - Clean, modern UI with Board, Discover, and Meta Details views
+  - Cross-platform web accessibility (works in any modern browser)
+  - Built with JavaScript/Node.js for easy deployment
+  - Open-source under GPLv2 license
+
+* **Why it's notable**: With 251 stars today, Stremio Web is gaining traction as a flexible alternative to traditional streaming platforms. Its addon system gives users freedom to customize their streaming experience, while the web-based approach eliminates installation barriers. The project represents a shift toward decentralized, user-controlled media consumption.
+
+---
+
+### Stremio Web - 现代化流媒体娱乐中心
+
+* **功能介绍**: Stremio Web 是一个基于浏览器的媒体中心,用户可以通过可扩展的插件系统发现、观看和整理来自各种来源的视频内容。它提供了统一的流媒体娱乐界面,无需安装桌面应用程序。
+
+* **主要特点**:
+  - 基于插件的架构,轻松集成内容源
+  - 简洁现代的用户界面,包含看板、发现和详情视图
+  - 跨平台网页访问(支持所有现代浏览器)
+  - 使用 JavaScript/Node.js 构建,易于部署
+  - GPLv2 开源许可证
+
+* **为何值得关注**: 今日获得 251 星标,Stremio Web 作为传统流媒体平台的灵活替代方案正在崛起。其插件系统让用户自由定制流媒体体验,而基于网页的方式消除了安装障碍。该项目代表了向去中心化、用户可控的媒体消费方式的转变。
+
+**[View Repository / 查看仓库](https://github.com/Stremio/stremio-web)**
+
+### 🎬 Claude Code walked so Cowork could run
+**Channel:** Lenny's Podcast
+
+* What the video covers: The evolution from Claude Code to Claude Cowork, exploring how Anthropic's AI coding assistant has advanced into a collaborative workspace tool
+* Key topics discussed: Product development journey, AI-assisted coding capabilities, team collaboration features, the transition from individual developer tools to team-oriented solutions
+* Why it's worth watching: Offers insights into how AI coding tools are evolving beyond solo development into collaborative environments, valuable for product managers, developers, and teams interested in AI-powered workflows
+
+### 🎬 Claude Code 的进化之路：从编码助手到协作平台
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨 Claude Code 如何演变为 Claude Cowork，展示 Anthropic 的 AI 编码助手如何升级为协作工作空间工具
+* 主要话题: 产品开发历程、AI 辅助编码能力、团队协作功能、从个人开发工具向团队协作解决方案的转型
+* 为何值得观看: 深入了解 AI 编码工具如何从单人开发扩展到团队协作场景，对产品经理、开发者和关注 AI 驱动工作流的团队具有参考价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yuz0NlAF5Hg)**
+
+### 🎬 OpenClaw Use Cases that are Actually Helpful! (ClawdBot)
+
+**Channel:** Duncan Rogoff | AI Automation
+
+* What the video covers: Practical applications and setup guide for OpenClaw (ClawdBot), demonstrating real-world automation use cases that deliver tangible value
+* Key topics discussed: Implementation strategies for OpenClaw, specific automation workflows, integration techniques, and actionable examples that go beyond basic demos
+* Why it's worth watching: Duncan Rogoff breaks down OpenClaw's capabilities with hands-on examples that viewers can actually implement, focusing on use cases that solve real business problems rather than theoretical scenarios. Perfect for those looking to leverage AI automation tools effectively in their workflows.
+
+---
+
+### 🎬 OpenClaw 实用案例详解！(ClawdBot)
+
+**频道:** Duncan Rogoff | AI Automation
+
+* 视频内容概述: 展示 OpenClaw (ClawdBot) 的实际应用场景和设置指南,演示能带来实际价值的自动化用例
+* 主要话题: OpenClaw 的实施策略、具体自动化工作流程、集成技术,以及可操作的实例(超越基础演示)
+* 为何值得观看: Duncan Rogoff 通过实操案例深入讲解 OpenClaw 的功能,观众可以直接应用这些方法。视频聚焦于解决实际业务问题的用例,而非理论场景,非常适合希望在工作流程中有效利用 AI 自动化工具的用户。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LV6Juz0xcrY)**
 
