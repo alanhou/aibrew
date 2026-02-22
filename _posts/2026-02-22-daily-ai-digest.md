@@ -655,80 +655,6 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 
 ---
 
-### 🎬 Anthropic Claude 完整技能指南 22 分钟速览
-
-**频道:** Mark Kashef
-
-* 视频内容概述: 全面讲解 Anthropic 官方发布的 Claude 技能指南,将核心技术和最佳实践浓缩为 22 分钟教程
-* 主要话题: 提示词工程策略、Claude 的能力与局限性、与 Claude 有效沟通的模式、优化 AI 响应的技巧,以及 Anthropic 文档中的实用实施建议
-* 为何值得观看: 该视频将 Anthropic 冗长的官方文档精炼为易懂且高效的格式,非常适合希望快速掌握 Claude 功能的开发者和 AI 从业者,无需阅读大量指南。Mark Kashef 的社区拥有 800 多名 AI 开发者,显示其在该领域的可信专业度。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TzJecWCbex0)**
-
-<!-- [Title-Only] -->
-### Japanese Woodblock Print Search
-
-* Based on the title, this article likely covers a searchable database or collection of Japanese woodblock prints (ukiyo-e), which are traditional Japanese art prints from the Edo period (1603-1868). The site probably allows users to browse, search, and explore these historical artworks by various criteria such as artist, subject matter, or time period.
-
-* This would be interesting to readers who appreciate Japanese art history, traditional printmaking techniques, or digital humanities projects that make cultural heritage accessible online. It's particularly relevant for art enthusiasts, researchers, and anyone curious about how technology can preserve and democratize access to historical art collections.
-
-### 日本浮世绘版画搜索
-
-* 根据标题推测，这篇文章可能介绍了一个可搜索的日本浮世绘版画数据库或收藏集。浮世绘是江户时代（1603-1868）的传统日本艺术版画。该网站可能允许用户通过艺术家、主题或时期等各种标准浏览、搜索和探索这些历史艺术作品。
-
-* 这对欣赏日本艺术史、传统版画技术，或关注数字人文项目如何让文化遗产在线可及的读者来说会很有趣。它特别适合艺术爱好者、研究人员，以及任何对技术如何保存和普及历史艺术收藏感兴趣的人。
-
-**[Read Original / 阅读原文](https://ukiyo-e.org/)**
-
-### A Botnet Accidentally Destroyed I2P (The Full Story)
-
-* On February 3, 2026, I2P anonymity network suffered a massive Sybil attack with 700,000 hostile nodes flooding the system—39 times its normal 15,000-20,000 device capacity
-* I2P has experienced annual February attacks since 2023, with previous incidents using malicious floodfill routers and remaining unattributed, leading to initial assumptions of state-sponsored operations
-* The attacker was identified as Kimwolf botnet, an IoT operation that infected millions of devices and previously executed a record 31.4 Tbps DDoS attack in December 2025
-* Kimwolf operators admitted on Discord the I2P disruption was accidental—they were attempting to use I2P as backup C2 infrastructure after researchers destroyed over 550 of their primary command servers
-* I2P development team responded within six days by releasing version 2.11.0, featuring hybrid ML-KEM plus X25519 post-quantum encryption enabled by default, making I2P among the first production anonymity networks with PQC deployment
-* The update also included enhanced Sybil attack mitigations, SAMv3 API upgrades, and infrastructure improvements
-
-### 僵尸网络意外摧毁 I2P 匿名网络(完整事件)
-
-* 2026年2月3日,I2P匿名网络遭受大规模女巫攻击,70万个恶意节点涌入系统——是其正常1.5万至2万设备容量的39倍
-* I2P自2023年起每年2月都遭受攻击,此前攻击使用恶意泛洪路由器且攻击者身份不明,最初被认为是国家支持的持续破坏行动
-* 攻击者被确认为Kimwolf僵尸网络,这是一个感染数百万物联网设备的组织,曾在2025年12月发起创纪录的31.4 Tbps DDoS攻击
-* Kimwolf操作者在Discord上承认对I2P的破坏是意外——他们在安全研究人员摧毁其550多个主要命令服务器后,试图将I2P用作备用C2基础设施
-* I2P开发团队在攻击开始后六天内发布2.11.0版本,默认启用混合ML-KEM加X25519后量子加密,使I2P成为首批部署后量子密码学的生产级匿名网络之一
-* 更新还包括增强的女巫攻击缓解措施、SAMv3 API升级和基础设施改进
-
-**[Read Original / 阅读原文](https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/)**
-
-### A Thousand-Year Journey Through English: From Modern Blog to Medieval Mystery
-
-* A linguistic experiment compresses 1,000 years of English evolution into a single fictional travel blog post about visiting the town of Wulfleet
-* The narrative begins in contemporary casual blog style (2000s LiveJournal tone) and regresses through distinct historical periods: Victorian/Georgian formal prose, 18th-century diarist style, Early Modern English with long 's' (ſ), Elizabethan English, and finally Middle English with thorn (þ) and yogh (ȝ)
-* Each section demonstrates authentic linguistic features of its era: spelling conventions, grammar structures, vocabulary, and even social attitudes (like the use of "thou" to address social inferiors)
-* The story follows a traveler who encounters increasingly sinister events, culminating in a Gothic horror scenario where he's captured and brought before a wolf-like "Master"
-* Created by Colin Gorrie, PhD linguist behind The Dead Language Society, as an educational tool to show readers exactly where historical English becomes incomprehensible to modern speakers
-* The exercise reveals that most readers can follow English back to the 18th century fairly easily, struggle with Early Modern English (1500s-1600s), and find Middle English (1100s-1400s) nearly impenetrable without training
-
-### 英语的千年时光倒流:从现代博客到中世纪之谜
-
-* 一个语言学实验将1000年的英语演变压缩进一篇虚构的旅行博客,讲述访问Wulfleet小镇的故事
-* 叙事从当代随意的博客风格(2000年代LiveJournal语调)开始,逐步倒退经历不同历史时期:维多利亚/乔治时代正式散文、18世纪日记体、带长s(ſ)的早期现代英语、伊丽莎白时代英语,最后到带刺字母(þ)和yogh(ȝ)的中古英语
-* 每个部分展示其时代的真实语言特征:拼写惯例、语法结构、词汇,甚至社会态度(如用"thou"称呼社会地位较低者)
-* 故事跟随一位旅行者遭遇越来越险恶的事件,最终演变为哥特式恐怖场景——他被抓获并带到一个狼形"主人"面前
-* 由语言学博士Colin Gorrie创作,他是《死语言协会》的作者,这是一个教育工具,用来向读者展示历史英语在何处变得难以理解
-* 这个练习揭示:大多数读者能相对轻松地理解18世纪的英语,在早期现代英语(1500-1600年代)时开始吃力,而中古英语(1100-1400年代)对未经训练的人来说几乎无法理解
-
-**[Read Original / 阅读原文](https://www.deadlanguagesociety.com/p/how-far-back-in-time-understand-english)**
-
-### 🎬 The End of Programming as we Know It
-**Channel:** NeetCode
-
-* What the video covers: Explores Tim O'Reilly's perspective on how AI and emerging technologies are fundamentally transforming the nature of programming and software development
-* Key topics discussed: The evolution of programming paradigms, AI's impact on coding practices, how developers need to adapt their skills, and what the future of software engineering might look like
-* Why it's worth watching: Provides critical insights for developers navigating the AI era, helping them understand how to stay relevant as programming tools and methodologies undergo radical transformation
-
----
-
 ### 🎬 编程的终结:我们所知的编程时代
 **频道:** NeetCode
 
@@ -789,4 +715,93 @@ I need to see the complete content to provide an accurate summary. The HTML appe
 * 为何值得观看: 非常适合想要探索本地运行 AI 代理的开发者和技术爱好者,无需依赖云服务即可实现隐私保护和工作流程的完全控制
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=u4ydH-QvPeg)**
+
+<!-- [Title-Only] -->
+### Japanese Woodblock Print Search
+
+* Based on the title, this article likely covers a searchable database or collection of Japanese woodblock prints (ukiyo-e), which are traditional Japanese art prints from the Edo period (1603-1868). The site probably allows users to browse, search, and explore these historical artworks by various criteria such as artist, subject matter, or time period.
+
+* This would be interesting to readers who appreciate Japanese art history, traditional printmaking techniques, or digital humanities projects that make cultural heritage accessible online. It's particularly relevant for art enthusiasts, researchers, and anyone curious about how technology can preserve and democratize access to historical art collections.
+
+### 日本浮世绘版画搜索
+
+* 根据标题推测，这篇文章可能介绍了一个可搜索的日本浮世绘版画数据库或收藏集。浮世绘是江户时代（1603-1868）的传统日本艺术版画。该网站可能允许用户通过艺术家、主题或时期等各种标准浏览、搜索和探索这些历史艺术作品。
+
+* 这对欣赏日本艺术史、传统版画技术，或关注数字人文项目如何让文化遗产在线可及的读者来说会很有趣。它特别适合艺术爱好者、研究人员，以及任何对技术如何保存和普及历史艺术收藏感兴趣的人。
+
+**[Read Original / 阅读原文](https://ukiyo-e.org/)**
+
+### A Botnet Accidentally Destroyed I2P (The Full Story)
+
+* On February 3, 2026, I2P anonymity network suffered a massive Sybil attack with 700,000 hostile nodes flooding the system—39 times its normal 15,000-20,000 device capacity
+* I2P has experienced annual February attacks since 2023, with previous incidents using malicious floodfill routers and remaining unattributed, leading to initial assumptions of state-sponsored operations
+* The attacker was identified as Kimwolf botnet, an IoT operation that infected millions of devices and previously executed a record 31.4 Tbps DDoS attack in December 2025
+* Kimwolf operators admitted on Discord the I2P disruption was accidental—they were attempting to use I2P as backup C2 infrastructure after researchers destroyed over 550 of their primary command servers
+* I2P development team responded within six days by releasing version 2.11.0, featuring hybrid ML-KEM plus X25519 post-quantum encryption enabled by default, making I2P among the first production anonymity networks with PQC deployment
+* The update also included enhanced Sybil attack mitigations, SAMv3 API upgrades, and infrastructure improvements
+
+### 僵尸网络意外摧毁 I2P 匿名网络(完整事件)
+
+* 2026年2月3日,I2P匿名网络遭受大规模女巫攻击,70万个恶意节点涌入系统——是其正常1.5万至2万设备容量的39倍
+* I2P自2023年起每年2月都遭受攻击,此前攻击使用恶意泛洪路由器且攻击者身份不明,导致最初认为是国家支持的持续破坏行动
+* 攻击者被确认为Kimwolf僵尸网络,这是一个感染数百万物联网设备的组织,曾在2025年12月发起创纪录的31.4 Tbps DDoS攻击
+* Kimwolf操作者在Discord上承认对I2P的破坏是意外——他们试图将I2P用作备用C2基础设施,因为安全研究人员摧毁了他们550多个主要命令服务器
+* I2P开发团队在攻击开始后六天内发布2.11.0版本,默认启用混合ML-KEM加X25519后量子加密,使I2P成为首批部署后量子密码学的生产级匿名网络之一
+* 更新还包括增强的女巫攻击缓解措施、SAMv3 API升级和基础设施改进
+
+**[Read Original / 阅读原文](https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/)**
+
+### How Taalas "Prints" LLM onto a Chip: Revolutionary ASIC Approach to AI Inference
+
+* **Breakthrough Performance**: Taalas released an ASIC chip running Llama 3.1 8B at 17,000 tokens/second (equivalent to 30 A4 pages per second), claiming 10x cost reduction, 10x less power consumption, and 10x faster inference than GPU-based systems
+
+* **Fixed-Function ASIC Design**: The chip is a non-rewritable Application-Specific Integrated Circuit that physically embeds one specific model's weights directly into silicon, similar to a CD-ROM or game cartridge
+
+* **GPU Memory Bottleneck Problem**: Traditional GPUs suffer from the "memory wall" - they must constantly fetch weights from VRAM, perform calculations, store intermediate results back to VRAM, and repeat this cycle through all 32 layers for each token generation
+
+* **Hardware-Embedded Weights Solution**: Taalas etches all 32 layers of Llama 3.1 sequentially onto the chip as physical transistors, eliminating memory bandwidth bottlenecks by allowing data to flow continuously through silicon via physical wires
+
+* **"Magic Multiplier" Innovation**: Taalas claims to have invented a hardware scheme that stores 4-bit data and performs multiplication using a single transistor, dramatically improving efficiency
+
+* **Minimal RAM Usage**: The chip uses small amounts of on-chip SRAM (not external DRAM/HBM) only for KV Cache (conversation context) and LoRA adapters for fine-tuning
+
+* **Rapid Customization Process**: Taalas designed a base chip with generic logic gates requiring only top two layer/mask customization for different models, reducing development time to 2 months per model instead of building from scratch
+
+### Taalas 如何将大语言模型"印刷"到芯片上:革命性的 ASIC 推理方案
+
+* **突破性性能表现**: Taalas 发布的 ASIC 芯片运行 Llama 3.1 8B 模型达到每秒 17,000 tokens(相当于每秒 30 页 A4 纸),声称相比 GPU 系统成本降低 10 倍、功耗降低 10 倍、推理速度提升 10 倍
+
+* **固定功能 ASIC 设计**: 该芯片是不可重写的专用集成电路,将特定模型的权重直接物理嵌入硅片中,类似于 CD-ROM 或游戏卡带
+
+* **GPU 内存瓶颈问题**: 传统 GPU 受困于"内存墙"——必须不断从 VRAM 获取权重、执行计算、将中间结果存回 VRAM,并在所有 32 层中重复此循环来生成每个 token
+
+* **硬件嵌入权重解决方案**: Taalas 将 Llama 3.1 的全部 32 层按顺序蚀刻到芯片上作为物理晶体管,通过物理导线让数据在硅片中连续流动,彻底消除内存带宽瓶颈
+
+* **"魔法乘法器"创新**: Taalas 声称发明了一种硬件方案,可以使用单个晶体管存储 4 位数据并执行乘法运算,大幅提升效率
+
+* **最小化 RAM 使用**: 芯片仅使用少量片上 SRAM(而非外部 DRAM/HBM)用于 KV 缓存(对话上下文)和 LoRA 适配器微调
+
+* **快速定制流程**: Taalas 设计了带有通用逻辑门的基础芯片,针对不同模型只需定制顶部两层/掩模,将每个模型的开发时间缩短至 2 个月,而非从零开始构建
+
+**[Read Original / 阅读原文](https://www.anuragk.com/blog/posts/Taalas.html)**
+
+### 🎬 Claude Code Killer is here!
+
+**Channel:** Piyush Garg
+
+* What the video covers: A deep dive into Codebuff, a new AI coding tool positioned as a competitor to Claude and other AI coding assistants
+* Key topics discussed: Codebuff's features, capabilities, and how it compares to existing AI coding solutions; hands-on demonstration of the platform's coding assistance features
+* Why it's worth watching: If you're interested in AI-powered development tools, this video provides an early look at a new player in the space that claims to challenge established tools like Claude. The promotional offer (250 credits) also gives viewers a chance to try the platform themselves
+
+---
+
+### 🎬 Claude 代码杀手来了！
+
+**频道:** Piyush Garg
+
+* 视频内容概述: 深入介绍 Codebuff，一个新的 AI 编码工具，定位为 Claude 和其他 AI 编码助手的竞争对手
+* 主要话题: Codebuff 的功能特性、能力展示，以及与现有 AI 编码解决方案的对比；平台编码辅助功能的实际演示
+* 为何值得观看: 如果你对 AI 驱动的开发工具感兴趣，这个视频提供了一个新兴平台的早期体验，该平台声称能挑战 Claude 等成熟工具。视频还提供了促销优惠（250 积分），让观众有机会亲自试用该平台
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=07koWMgjj28)**
 
