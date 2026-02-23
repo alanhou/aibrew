@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 23, 2026"
 date: 2026-02-23
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，12个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -807,4 +807,186 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合对AI发展感到不知所措的人群 - 本视频揭开AI智能体的神秘面纱,提供清晰的技术应用路线图,无需技术门槛。附赠免费AI智能体实战手册资源,助力快速学习
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ibFJ--CH3cQ)**
+
+### Ladybird Browser Adopts Rust with AI-Assisted Migration
+
+* Ladybird is transitioning from C++ to Rust for memory safety, after previously rejecting Swift due to limited C++ interop and platform support outside Apple's ecosystem
+* Initially rejected Rust in 2024 because its ownership model didn't fit well with web platform's 1990s-style OOP (garbage collection, deep inheritance), but pragmatism won out given Rust's mature ecosystem and safety guarantees
+* First migration target: LibJS JavaScript engine (lexer, parser, AST, bytecode generator) - chosen for being self-contained with extensive test262 coverage
+* AI-assisted translation using Claude Code and Codex completed ~25,000 lines of Rust in 2 weeks (vs. months manually), with human direction through hundreds of small prompts and adversarial review passes
+* Achieved zero regressions: 52,898 test262 tests and 12,461 Ladybird tests all pass with byte-for-byte identical output and no performance degradation
+* Current Rust code intentionally mimics C++ patterns (like register allocation) to ensure identical bytecode output - idiomatic Rust refactoring will come later after C++ pipeline retirement
+* C++ development continues as primary focus; Rust porting is a long-term side effort with core team coordination required to avoid wasted work
+
+### Ladybird 浏览器采用 Rust,借助 AI 完成迁移
+
+* Ladybird 正从 C++ 转向 Rust 以实现内存安全,此前曾考虑 Swift 但因 C++ 互操作性不足及 Apple 生态外平台支持有限而放弃
+* 2024 年曾因 Rust 所有权模型不适配 Web 平台的 90 年代 OOP 风格(垃圾回收、深层继承)而拒绝,但考虑到 Rust 成熟的生态系统和安全保障,最终做出务实选择
+* 首个迁移目标:LibJS JavaScript 引擎(词法分析器、解析器、AST、字节码生成器)——因其相对独立且有完善的 test262 测试覆盖
+* 使用 Claude Code 和 Codex 进行 AI 辅助翻译,通过数百个小提示进行人工引导和对抗性审查,2 周内完成约 25,000 行 Rust 代码(手动需数月)
+* 实现零回归:52,898 个 test262 测试和 12,461 个 Ladybird 测试全部通过,输出逐字节一致且无性能下降
+* 当前 Rust 代码刻意模仿 C++ 模式(如寄存器分配)以确保字节码输出一致——符合 Rust 惯用法的重构将在 C++ 管道退役后进行
+* C++ 开发仍是主要重点;Rust 移植是长期辅助工作,需与核心团队协调以避免无效劳动
+
+**[Read Original / 阅读原文](https://ladybird.org/posts/adopting-rust/)**
+
+### Elsevier Shuts Down Finance Journal Citation Cartel Led by Trinity College Professor
+
+* Elsevier retracted 12 economics papers (5,104 citations total) on Christmas Eve, all co-authored by Brian M. Lucey, a Trinity College Dublin finance professor who published 56 papers in 2025 alone—one every 6.5 days
+* Lucey served as editor while approving his own papers, bypassing peer review entirely; he was removed from 5 journal editorial boards but remains editor-in-chief at Wiley's Journal of Economic Surveys
+* The citation cartel operated through Elsevier's Finance Journals Ecosystem via two schemes: co-authorship trading (adding authors to boost networks) and citation stacking (systematically citing each other's work to inflate impact)
+* Network analysis shows citations per article jumped 103% after the ecosystem launched in 2020, with Lucey's citation profile exhibiting an exponential "J-curve"—a hallmark of citation manipulation
+* Co-conspirators include Samuel Vigne (33 co-authored papers with Lucey, removed as editor-in-chief from 2 journals) and John Goodell (68 papers in one Lucey-edited journal, 61 papers published in 2024 alone)
+* Lucey defended himself by claiming "everyone does it" and provided a list of 240 similar instances, though many were legitimate editorials rather than research papers
+* The scandal was an open secret for 5+ years on academic forums, with multiple research papers documenting the systematic manipulation using econometric analysis and graph theory
+
+### 爱思唯尔关闭由都柏林圣三一学院教授主导的金融期刊引用卡特尔
+
+* 爱思唯尔在圣诞夜撤回了12篇经济学论文(共5,104次引用),所有论文均由都柏林圣三一学院金融学教授Brian M. Lucey共同撰写,他在2025年发表了56篇论文——平均每6.5天一篇
+* Lucey在担任编辑期间批准自己的论文,完全绕过同行评审;他被5个期刊编委会除名,但仍担任Wiley《经济调查期刊》主编
+* 该引用卡特尔通过爱思唯尔的金融期刊生态系统运作,采用两种手段:共同作者交易(添加作者以扩大网络)和引用堆叠(系统性地互相引用以虚增影响力)
+* 网络分析显示,该生态系统于2020年启动后,每篇文章的引用量激增103%,Lucey的引用曲线呈现指数型"J曲线"——这是引用操纵的典型特征
+* 共谋者包括Samuel Vigne(与Lucey共同撰写33篇论文,被2个期刊主编职位除名)和John Goodell(在Lucey编辑的一个期刊上发表68篇论文,仅2024年就发表61篇)
+* Lucey辩称"每个人都这样做",并提供了240个类似案例的清单,尽管其中许多是合法的社论而非研究论文
+* 这一丑闻在学术论坛上已是公开秘密超过5年,多篇研究论文使用计量经济学分析和图论记录了这种系统性操纵行为
+
+**[Read Original / 阅读原文](https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal)**
+
+### Reddit Access Blocked - Network Policy Error
+
+* Your request was blocked by Reddit's network policy
+* You need to log in or create a Reddit account to continue browsing
+* If using scripts/applications, register with developer credentials and ensure proper User-Agent configuration
+* User-Agent must be unique, descriptive, and non-empty (try default if using alternate)
+* Contact Reddit support with your account and error code: 019c8a91-5fc3-7fb3-a742-99f6f625a2fc
+* Review Reddit's Terms of Service and API documentation for compliance
+
+### Reddit 访问被阻止 - 网络策略错误
+
+* 您的请求被 Reddit 的网络策略阻止
+* 需要登录或创建 Reddit 账户才能继续浏览
+* 如果使用脚本/应用程序，请注册开发者凭证并确保正确配置 User-Agent
+* User-Agent 必须唯一、描述性且非空（如使用备用值请尝试恢复默认）
+* 联系 Reddit 支持时请提供您的账户和错误代码：019c8a91-5fc3-7fb3-a742-99f6f625a2fc
+* 查看 Reddit 服务条款和 API 文档以确保合规
+
+**[Read Original / 阅读原文](https://old.reddit.com/r/BuyFromEU/comments/1rce0lf/hetzner_european_hosting_provider_to_increase/)**
+
+### OpenBB - Open-source financial data platform for analysts, quants, and AI agents
+
+* What it does: OpenBB provides a unified data integration layer that consolidates proprietary, licensed, and public financial data sources into a single Python-based platform. It follows a "connect once, consume everywhere" architecture, exposing data through Python APIs, REST endpoints, Excel, and MCP servers for AI agents.
+
+* Key features: Simple Python API (`pip install openbb`) for accessing equity prices, market data, and financial metrics; FastAPI server for local deployment; seamless integration with OpenBB Workspace (enterprise UI); CLI tool for command-line access; supports multiple data providers and formats; AGPLv3 licensed open-source project.
+
+* Why it's notable: Gaining 471 stars today as it bridges the gap between data engineering and financial analysis workflows. The platform's ability to serve data to both human analysts (via Workspace/Excel) and AI agents (via MCP servers) positions it well for the emerging AI-driven finance space. Strong community backing with active Discord and comprehensive documentation.
+
+---
+
+### OpenBB - 面向分析师、量化研究员和 AI 代理的开源金融数据平台
+
+* 功能介绍:OpenBB 提供统一的数据集成层,将专有、授权和公共金融数据源整合到单一的 Python 平台中。采用"一次连接,随处使用"架构,通过 Python API、REST 端点、Excel 和 MCP 服务器向 AI 代理提供数据。
+
+* 主要特点:简洁的 Python API(`pip install openbb`)可访问股票价格、市场数据和财务指标;FastAPI 服务器支持本地部署;与 OpenBB Workspace(企业级 UI)无缝集成;提供 CLI 命令行工具;支持多种数据提供商和格式;采用 AGPLv3 开源许可。
+
+* 为何值得关注:今日获得 471 星标,因其在数据工程和金融分析工作流之间搭建了桥梁。该平台能够同时为人类分析师(通过 Workspace/Excel)和 AI 代理(通过 MCP 服务器)提供数据服务,在新兴的 AI 驱动金融领域占据有利位置。拥有活跃的 Discord 社区和完善的文档支持。
+
+**[View Repository / 查看仓库](https://github.com/OpenBB-finance/OpenBB)**
+
+### Agent Skills for Context Engineering - Production-Grade Context Management for AI Agents
+
+* A comprehensive skill library teaching context engineering—the discipline of managing language model context windows through strategic curation of system prompts, tool definitions, retrieved documents, and message history to maximize agent effectiveness
+* Covers foundational skills (context fundamentals, degradation patterns, compression), architectural patterns (multi-agent systems, memory architectures, tool design, hosted agents), operational optimization (caching, evaluation, LLM-as-judge), and cognitive modeling (BDI mental states)
+* Notable for being cited in academic research as foundational work on static skill architecture, offering platform-agnostic principles that work across Claude Code, Cursor, and any agent framework, with progressive disclosure design that loads full content only when skills are activated
+
+### Agent Skills for Context Engineering - AI 智能体的生产级上下文管理
+
+* 全面的技能库,教授上下文工程——通过策略性管理系统提示、工具定义、检索文档和消息历史来管理语言模型上下文窗口的学科,以最大化智能体效能
+* 涵盖基础技能(上下文基础、退化模式、压缩)、架构模式(多智能体系统、内存架构、工具设计、托管智能体)、运营优化(缓存、评估、LLM评判)和认知建模(BDI心智状态)
+* 因被学术研究引用为静态技能架构的基础性工作而备受关注,提供跨平台通用原则(适用于 Claude Code、Cursor 及任何智能体框架),采用渐进式披露设计,仅在技能激活时加载完整内容
+
+**[View Repository / 查看仓库](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)**
+
+### prompts.chat - The World's Largest Open-Source AI Prompt Library
+
+* **What it does**: A curated collection of prompt examples for AI chat models (ChatGPT, Claude, Gemini, Llama, Mistral, etc.) that helps users discover, share, and collect effective prompts from the community. Offers self-hosting capabilities for organizations requiring complete privacy.
+
+* **Key features**: 
+  - 143k+ GitHub stars with community-contributed prompts available in multiple formats (CSV, Markdown, Hugging Face dataset)
+  - Self-hosting support with custom branding, themes, and authentication (GitHub/Google/Azure AD)
+  - Multiple integrations: CLI tool, Claude Code Plugin, and MCP Server support
+  - Free interactive prompt engineering guide with 25+ chapters covering advanced techniques
+  - Educational "Prompting for Kids" game-based learning platform for ages 8-14
+
+* **Why it's notable**: First prompt library launched in December 2022, featured in Forbes, referenced by Harvard and Columbia, with 40+ academic citations. Endorsed by AI industry leaders including OpenAI co-founders and Hugging Face CEO. Currently gaining 450 stars today, demonstrating sustained community interest in AI prompt engineering resources.
+
+---
+
+### prompts.chat - 全球最大的开源 AI 提示词库
+
+* **功能介绍**: 为 AI 聊天模型(ChatGPT、Claude、Gemini、Llama、Mistral 等)精心策划的提示词示例集合,帮助用户从社区中发现、分享和收集有效的提示词。为需要完全隐私保护的组织提供自托管功能。
+
+* **主要特点**:
+  - 拥有 143k+ GitHub 星标,社区贡献的提示词支持多种格式(CSV、Markdown、Hugging Face 数据集)
+  - 支持自托管,可自定义品牌、主题和身份验证(GitHub/Google/Azure AD)
+  - 多种集成方式:CLI 工具、Claude Code 插件和 MCP 服务器支持
+  - 免费的交互式提示词工程指南,包含 25+ 章节涵盖高级技术
+  - 面向 8-14 岁儿童的"儿童提示词"游戏化学习平台
+
+* **为何值得关注**: 2022 年 12 月推出的首个提示词库,被 Forbes 专题报道,哈佛和哥伦比亚大学引用,获得 40+ 学术引用。得到 OpenAI 联合创始人和 Hugging Face CEO 等 AI 行业领袖的认可。今日新增 450 星标,显示社区对 AI 提示词工程资源的持续关注。
+
+**[View Repository / 查看仓库](https://github.com/f/prompts.chat)**
+
+### apple-silicon-accelerometer - Access Hidden Motion Sensors in Apple Silicon MacBooks
+
+* **What it does**: Reads undocumented internal accelerometer and gyroscope data from Apple Silicon MacBook Pros via IOKit HID, exposing 3-axis acceleration, angular velocity, lid angle, and ambient light sensors that aren't available through any public API.
+
+* **Key features**: Real-time motion sensing at ~100Hz; orientation tracking using Mahony AHRS quaternion filter; experimental heartbeat detection via ballistocardiography; keyboard backlight sync with vibration intensity; clean Python implementation with isolated sensor reading logic for easy reuse.
+
+* **Why it's notable**: Reverse-engineers Apple's hidden Sensor Processing Unit (SPU) to unlock hardware capabilities Apple doesn't officially expose. Shows creative hardware hacking on modern Macs and demonstrates surprising use cases like detecting your heartbeat through wrist vibrations on the trackpad. Pure technical curiosity meets practical experimentation.
+
+---
+
+### apple-silicon-accelerometer - 读取 Apple Silicon MacBook 隐藏的运动传感器
+
+* **功能介绍**: 通过 IOKit HID 读取 Apple Silicon MacBook Pro 中未公开的内置加速度计和陀螺仪数据,获取三轴加速度、角速度、屏幕角度和环境光传感器信息,这些数据无法通过任何公开 API 访问。
+
+* **主要特点**: 实时运动感知(约 100Hz 采样率);使用 Mahony AHRS 四元数滤波器进行方向跟踪;实验性心跳检测功能(通过心冲击描记法);键盘背光随振动强度同步闪烁;简洁的 Python 实现,传感器读取逻辑独立封装便于复用。
+
+* **为何值得关注**: 逆向工程破解了苹果隐藏的传感器处理单元(SPU),解锁了苹果官方未开放的硬件能力。展示了现代 Mac 上的创造性硬件黑客技术,并演示了令人惊讶的应用场景,比如通过手腕在触控板上的振动检测心跳。纯粹的技术好奇心与实践探索的完美结合。
+
+**[View Repository / 查看仓库](https://github.com/olvvier/apple-silicon-accelerometer)**
+
+### 🎬 Don't get stuck using old models
+**Channel:** Lenny's Podcast
+
+* What the video covers: The video discusses the importance of staying current with AI models and avoiding the trap of continuing to use outdated technology in product development
+* Key topics discussed: AI model evolution, product development strategies, Claude Code implementation, keeping pace with rapidly advancing AI capabilities
+* Why it's worth watching: Essential viewing for product managers and developers working with AI - provides practical insights on when and how to upgrade AI models to maintain competitive advantage and avoid technical debt
+
+### 🎬 不要被旧模型困住
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨在产品开发中保持使用最新AI模型的重要性,避免陷入继续使用过时技术的陷阱
+* 主要话题: AI模型演进、产品开发策略、Claude Code实施、如何跟上快速发展的AI能力
+* 为何值得观看: 对于从事AI相关工作的产品经理和开发者来说是必看内容 - 提供关于何时以及如何升级AI模型的实用见解,帮助保持竞争优势并避免技术债务
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-ouT8bd9MyE)**
+
+### 🎬 How to Pass a Programming Interview in 2026
+
+**Channel:** Robert Sergeev
+
+* What the video covers: Strategies and techniques for successfully navigating programming job interviews in the current tech landscape
+* Key topics discussed: Modern interview preparation methods, common technical questions, behavioral interview approaches, and what employers are looking for in 2026
+* Why it's worth watching: Provides up-to-date insights into the evolving tech hiring process, helping developers adapt their interview skills to current market expectations and stand out among candidates
+
+### 🎬 如何通过2026年程序员面试
+
+**频道:** Robert Sergeev
+
+* 视频内容概述: 在当前技术环境中成功通过编程工作面试的策略和技巧
+* 主要话题: 现代面试准备方法、常见技术问题、行为面试技巧,以及2026年雇主对候选人的期望
+* 为何值得观看: 提供关于不断变化的技术招聘流程的最新见解,帮助开发者调整面试技能以适应当前市场期望,在候选人中脱颖而出
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=czeQfb7KOhE)**
 
