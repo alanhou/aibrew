@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 24, 2026"
 date: 2026-02-24
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -293,4 +293,219 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 专为2026年委员会考试学生设计的大型复习课程,由经验丰富的教师Pradeep Giri和Rahul Giri授课,提供高分值题型的全面覆盖和应试策略指导
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=J2aieJAf2rM)**
+
+<!-- [Title-Only] -->
+### UNIX99, a UNIX-like OS for the TI-99/4A
+
+* Based on the title, this article likely discusses a UNIX-like operating system implementation for the Texas Instruments TI-99/4A, a home computer from the early 1980s. This appears to be a hobbyist or retrocomputing project that brings UNIX concepts and functionality to vintage hardware that was never designed to run such an operating system.
+
+* This is interesting because it represents the intersection of retrocomputing enthusiasm and operating system development. The TI-99/4A was a consumer-oriented home computer with limited resources (16-bit TMS9900 CPU, typically 16KB RAM expandable to 52KB), making a UNIX implementation a significant technical challenge. Readers interested in operating system design, vintage computing, or creative programming constraints would find this fascinating as it demonstrates how modern developers are breathing new life into classic hardware with sophisticated software projects.
+
+---
+
+### UNIX99：为 TI-99/4A 开发的类 UNIX 操作系统
+
+* 根据标题推测，这篇文章可能介绍了一个为德州仪器 TI-99/4A 计算机开发的类 UNIX 操作系统。TI-99/4A 是 1980 年代初期的家用计算机，而这个项目似乎是复古计算爱好者或开发者的作品，将 UNIX 的概念和功能移植到这台从未设计用于运行此类操作系统的老式硬件上。
+
+* 这个项目值得关注，因为它体现了复古计算热情与操作系统开发的交汇。TI-99/4A 是一台面向消费者的家用计算机，硬件资源有限（16 位 TMS9900 CPU，通常配备 16KB 内存，可扩展至 52KB），在如此受限的平台上实现 UNIX 是一项重大的技术挑战。对操作系统设计、老式计算机或创意编程感兴趣的读者会发现这个项目很有意思，它展示了现代开发者如何通过复杂的软件项目为经典硬件注入新的生命力。
+
+**[Read Original / 阅读原文](https://forums.atariage.com/topic/380883-unix99-a-unix-like-os-for-the-ti-994a/)**
+
+### Americans Are Destroying Flock Surveillance Cameras
+
+* People across the U.S. are dismantling and destroying Flock surveillance cameras amid public anger over their use in aiding immigration authorities and deportations
+* Flock Safety, an Atlanta-based startup valued at $7.5 billion, operates a massive network of license plate readers that track vehicle movements nationwide
+* While Flock claims it doesn't share data directly with ICE, local police departments have been sharing their Flock access with federal authorities
+* Vandalism incidents reported across multiple states including California, Connecticut, Illinois, Virginia, and Oregon, with cameras being cut down, smashed, and spray-painted
+* According to DeFlock mapping project, approximately 80,000 Flock cameras are deployed across the United States
+* Some communities are officially ending Flock contracts, while dozens of cities have rejected the technology and some police departments have blocked federal access
+* Flock has not disclosed how many cameras have been destroyed since deployment
+
+### 美国民众正在破坏 Flock 监控摄像头
+
+* 美国各地民众正在拆除和破坏 Flock 监控摄像头,公众对这些设备协助移民执法部门进行驱逐行动感到愤怒
+* 总部位于亚特兰大的 Flock Safety 公司估值达 75 亿美元,运营着覆盖全国的大规模车牌识别网络,可追踪车辆行踪
+* 虽然 Flock 声称不直接与移民及海关执法局(ICE)共享数据,但报道显示地方警察部门一直在与联邦当局共享其 Flock 系统访问权限
+* 多个州报告了破坏事件,包括加利福尼亚、康涅狄格、伊利诺伊、弗吉尼亚和俄勒冈州,摄像头被砍倒、砸毁和喷漆
+* 根据 DeFlock 地图项目统计,全美约部署了 8 万台 Flock 摄像头
+* 一些社区正式终止与 Flock 的合同,数十个城市已拒绝该技术,部分警察部门已阻止联邦机构访问其系统
+* Flock 公司未透露自部署以来有多少摄像头被破坏
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/02/23/americans-are-destroying-flock-surveillance-cameras/)**
+
+### Car Wash Test Reveals Critical AI Reasoning Failures Across 53 Leading Models
+
+* Only 11 out of 53 AI models correctly answered a simple logic question on first attempt: "Should I walk or drive 50 meters to a car wash?" The obvious answer is drive—the car needs to be at the wash.
+* 42 models failed initially, fixating on distance efficiency rather than understanding the car itself must reach the destination.
+* Consistency testing (10 runs per model) revealed only 5 models achieved 100% accuracy: Claude Opus 4.6, Gemini 2.0 Flash Lite, Gemini 3 Flash, Gemini 3 Pro, and Grok-4.
+* GPT-5 failed 30% of the time (7/10 success rate), matching human baseline performance of 71.5% accuracy from 10,000 test subjects.
+* All Llama and Mistral models failed completely (0/10), along with 33 other models including GPT-5.1, GPT-5.2, and most Claude variants.
+* The test exposes three failure tiers: models that never succeed (33/53), inconsistent performers (15/53), and reliable reasoners (5/53).
+* Most failures stem from models prioritizing "short distance = walk" heuristics over contextual reasoning that the car must physically be present.
+* Some models like Perplexity's Sonar reached correct answers through absurd reasoning (claiming walking produces more emissions than driving due to food production energy).
+* The experiment highlights critical reliability issues for production AI systems—if 90% of models fail basic one-step logic, complex multi-step reasoning becomes highly unreliable.
+* Context engineering may help by providing structured examples that override generic heuristics with task-specific reasoning patterns.
+
+### 洗车测试揭示53个主流AI模型的严重推理缺陷
+
+* 53个AI模型中仅11个在首次测试中正确回答了简单逻辑问题:"洗车店距离50米,我应该走路还是开车去?"显而易见的答案是开车——车本身需要到达洗车店。
+* 42个模型初次失败,过度关注距离效率而未理解车辆本身必须到达目的地这一核心问题。
+* 一致性测试(每个模型运行10次)显示仅5个模型达到100%准确率:Claude Opus 4.6、Gemini 2.0 Flash Lite、Gemini 3 Flash、Gemini 3 Pro和Grok-4。
+* GPT-5失败率达30%(成功率7/10),与10,000名真人测试者71.5%的基准准确率相当。
+* 所有Llama和Mistral模型完全失败(0/10),另有33个模型包括GPT-5.1、GPT-5.2和大多数Claude变体也全部失败。
+* 测试揭示三层失败等级:从不成功的模型(33/53)、表现不稳定的模型(15/53)和可靠推理模型(5/53)。
+* 大多数失败源于模型优先采用"短距离=步行"的启发式规则,而非理解车辆必须物理存在的上下文推理。
+* 部分模型如Perplexity的Sonar通过荒谬推理得出正确答案(声称步行因食物生产能耗而比开车产生更多排放)。
+* 实验凸显生产环境AI系统的关键可靠性问题——如果90%的模型无法处理基础单步逻辑,复杂多步推理将极不可靠。
+* 上下文工程可能通过提供结构化示例来帮助覆盖通用启发式规则,转而采用特定任务的推理模式。
+
+**[Read Original / 阅读原文](https://opper.ai/blog/car-wash-test)**
+
+### Agent Skills for Context Engineering - Production-Grade Context Management for AI Agents
+
+* A comprehensive skill library teaching context engineering—the discipline of managing language model context windows through strategic curation of system prompts, tool definitions, retrieved documents, and message history to maximize agent effectiveness
+* Covers foundational skills (context fundamentals, degradation patterns, compression), architectural patterns (multi-agent systems, memory architectures, tool design, hosted agents), operational optimization (caching, evaluation, LLM-as-judge), and cognitive modeling (BDI mental states)
+* Notable for being cited in academic research as foundational work on static skill architecture, offering platform-agnostic principles that work across Claude Code, Cursor, and any agent framework, with progressive disclosure design that loads full content only when skills are activated
+
+### Agent Skills for Context Engineering - AI 智能体的生产级上下文管理
+
+* 全面的技能库,教授上下文工程——通过策略性管理系统提示、工具定义、检索文档和消息历史来管理语言模型上下文窗口的学科,以最大化智能体效能
+* 涵盖基础技能(上下文基础、退化模式、压缩)、架构模式(多智能体系统、内存架构、工具设计、托管智能体)、运营优化(缓存、评估、LLM评判)和认知建模(BDI心智状态)
+* 因被学术研究引用为静态技能架构的基础性工作而备受关注,提供跨平台通用原则(适用于 Claude Code、Cursor 及任何智能体框架),采用渐进式披露设计,仅在技能激活时加载完整内容
+
+**[View Repository / 查看仓库](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)**
+
+### prompts.chat - The World's Largest Open-Source AI Prompt Library
+
+* A curated collection of prompt examples for AI chat models (ChatGPT, Claude, Gemini, Llama, Mistral, etc.) with 143k+ GitHub stars, formerly known as "Awesome ChatGPT Prompts"
+* Key features include community-driven prompt sharing, self-hosting capabilities with custom branding and authentication, multiple integrations (CLI, Claude plugin, MCP server), an interactive prompt engineering book with 25+ chapters, and a kid-friendly learning game for ages 8-14
+* Why it's notable: First prompt library launched in December 2022, featured in Forbes, referenced by Harvard and Columbia, most liked dataset on Hugging Face with 40+ academic citations, endorsed by OpenAI co-founders and other AI industry leaders, and gaining 293 stars today as the go-to resource for prompt engineering
+
+### prompts.chat - 全球最大的开源 AI 提示词库
+
+* 功能介绍:为 AI 聊天模型(ChatGPT、Claude、Gemini、Llama、Mistral 等)精心整理的提示词示例集合,拥有 14.3 万+ GitHub 星标,前身为"Awesome ChatGPT Prompts"
+* 主要特点:社区驱动的提示词分享平台、支持自托管并可自定义品牌和身份验证、提供多种集成方式(CLI、Claude 插件、MCP 服务器)、包含 25+ 章节的交互式提示词工程教程书籍、以及面向 8-14 岁儿童的趣味学习游戏
+* 为何值得关注:2022 年 12 月推出的首个提示词库,被福布斯报道、哈佛和哥伦比亚大学引用,是 Hugging Face 上最受欢迎的数据集并获得 40+ 学术引用,得到 OpenAI 联合创始人等 AI 行业领袖的认可,今日新增 293 星标,是提示词工程领域的权威资源
+
+**[View Repository / 查看仓库](https://github.com/f/prompts.chat)**
+
+### PicoLM - Run 1B Parameter LLM on $10 Hardware with 256MB RAM
+
+* Minimal LLM inference engine written in ~2,500 lines of pure C11 that runs TinyLlama 1.1B and other LLaMA-architecture models on ultra-low-cost hardware like Raspberry Pi Zero 2W ($15) and Sipeed LicheeRV Nano ($10)
+* Zero dependencies, ~80KB binary size, only 45MB runtime RAM through memory-mapped layer streaming, supports GGUF format with K-quant quantization (Q2_K to Q6_K), SIMD acceleration (ARM NEON/x86 SSE2), multi-threaded inference, grammar-constrained JSON output for tool calling, and FP16 KV cache
+* Notable for enabling fully offline AI agents without cloud APIs or internet connectivity, achieving 1-10 tokens/sec on budget hardware, and serving as the local inference backend for PicoClaw (lightweight AI assistant in Go) - demonstrates that practical LLM inference is possible on devices costing less than a single month of cloud API fees
+
+### PicoLM - 在 256MB 内存的 10 美元开发板上运行 10 亿参数大语言模型
+
+* 用约 2,500 行纯 C11 代码编写的极简 LLM 推理引擎,可在 Raspberry Pi Zero 2W(15 美元)和 Sipeed LicheeRV Nano(10 美元)等超低成本硬件上运行 TinyLlama 1.1B 及其他 LLaMA 架构模型
+* 零依赖,二进制文件约 80KB,通过内存映射分层流式加载仅需 45MB 运行内存,支持 GGUF 格式和 K-quant 量化(Q2_K 至 Q6_K),SIMD 加速(ARM NEON/x86 SSE2),多线程推理,用于工具调用的语法约束 JSON 输出,以及 FP16 KV 缓存
+* 值得关注的原因:实现完全离线的 AI 智能体,无需云 API 或互联网连接,在低成本硬件上达到 1-10 tokens/秒的推理速度,作为 PicoClaw(Go 语言编写的轻量级 AI 助手)的本地推理后端 - 证明了在成本低于一个月云 API 费用的设备上进行实用 LLM 推理是可行的
+
+**[View Repository / 查看仓库](https://github.com/RightNow-AI/picolm)**
+
+### Kalshi-Polymarket-Ai-bot - AI-Powered Cross-Platform Prediction Market Arbitrage Bot
+
+* An automated arbitrage system that monitors Kalshi and Polymarket prediction markets simultaneously, detecting price discrepancies on identical events for risk-free profit opportunities
+* Hybrid Python + Rust architecture with PyO3 extension for microsecond-speed market scanning, GPT-4o AI validation to filter false positives, Kelly criterion position sizing, full API integration for both platforms (RSA/ECDSA auth), dry-run mode, and one-command macOS installation
+* Notable for being the only open-source Kalshi-Polymarket arbitrage bot combining Rust performance (100× faster scanning) with AI-powered opportunity validation, supporting live trading on both platforms with comprehensive safety features including demo environment support and fee-aware profit calculations
+
+### Kalshi-Polymarket-Ai-bot - AI 驱动的跨平台预测市场套利机器人
+
+* 自动化套利系统,同时监控 Kalshi 和 Polymarket 预测市场,检测相同事件的价格差异以获取无风险套利机会
+* Python + Rust 混合架构,使用 PyO3 扩展实现微秒级市场扫描,GPT-4o AI 验证过滤虚假机会,Kelly 准则仓位管理,完整的双平台 API 集成(RSA/ECDSA 认证),模拟运行模式,以及 macOS 一键安装
+* 作为 GitHub 上唯一结合 Rust 性能(扫描速度快 100 倍)与 AI 驱动机会验证的开源 Kalshi-Polymarket 套利机器人而备受关注,支持双平台实盘交易,具备完善的安全功能包括演示环境支持和手续费感知的利润计算
+
+**[View Repository / 查看仓库](https://github.com/CraftyGeezer/Kalshi-Polymarket-Ai-bot)**
+
+### 🎬 Why Anthropic Won't Outspend Its AI Rivals - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An interview with Dario Amodei, CEO of Anthropic, discussing the company's strategic approach to AI development and why they're choosing not to engage in a spending arms race with competitors like OpenAI and Google
+* Key topics discussed: Anthropic's capital allocation strategy, the economics of AI model training, the company's philosophy on sustainable scaling, competitive dynamics in the AI industry, and alternative paths to AI advancement beyond pure compute spending
+* Why it's worth watching: Provides insider perspective from one of AI's leading figures on how a major AI lab thinks about resource allocation and competition, offering a contrarian view to the "bigger is always better" narrative dominating AI development discussions
+
+### 🎬 为什么 Anthropic 不会在支出上超越其 AI 竞争对手 - Dario Amodei 访谈
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 对 Anthropic 首席执行官 Dario Amodei 的访谈,探讨该公司在 AI 开发方面的战略方法,以及为何选择不与 OpenAI 和 Google 等竞争对手进行支出军备竞赛
+* 主要话题: Anthropic 的资本配置策略、AI 模型训练的经济学、公司关于可持续扩展的理念、AI 行业的竞争动态,以及除纯计算支出之外的 AI 进步替代路径
+* 为何值得观看: 提供了 AI 领域领军人物对主要 AI 实验室如何思考资源配置和竞争的内部视角,为主导 AI 开发讨论的"越大越好"叙事提供了一个反向观点
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Er6NGbv2u-w)**
+
+### 🎬 Minecraft Devs Removing Tutorial Worlds Forever🤣
+
+**Channel:** jghgh
+
+* A comedy skit parodying Minecraft developers' decision to remove tutorial worlds
+* Satirical take on game development decisions and their impact on players
+* Worth watching for fans of Minecraft humor and gaming comedy sketches who enjoy lighthearted commentary on game updates
+
+### 🎬 Minecraft开发者永久移除教程世界🤣
+
+**频道:** jghgh
+
+* 恶搞Minecraft开发者移除教程世界决定的喜剧短剧
+* 讽刺游戏开发决策及其对玩家的影响
+* 适合喜欢Minecraft幽默和游戏喜剧短剧的观众,轻松诙谐地评论游戏更新
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_pl94Po-ZAA)**
+
+### 🎬 TanStack Start in 100 Seconds
+**Channel:** Fireship
+
+* What the video covers: A rapid introduction to TanStack Start, a new full-stack framework that combines the power of TanStack Router with React and Solid for building modern web applications
+* Key topics discussed: Developer experience optimization, full-stack capabilities, integration with TanStack Router, support for both React and Solid frameworks, and how it compares to other meta-frameworks
+* Why it's worth watching: Fireship's signature 100-second format delivers a quick, comprehensive overview perfect for developers who want to understand TanStack Start's core value proposition without investing hours in documentation. Ideal for staying current with the latest full-stack tooling options in the React/Solid ecosystem
+
+---
+
+### 🎬 TanStack Start 百秒速览
+**频道:** Fireship
+
+* 视频内容概述: 快速介绍 TanStack Start——一个结合 TanStack Router 与 React 和 Solid 的新型全栈框架，专为构建现代 Web 应用而设计
+* 主要话题: 开发者体验优化、全栈功能特性、与 TanStack Router 的集成方式、对 React 和 Solid 框架的支持，以及与其他元框架的对比
+* 为何值得观看: Fireship 标志性的百秒速览格式，无需花费数小时阅读文档即可快速全面了解 TanStack Start 的核心价值。非常适合希望紧跟 React/Solid 生态系统最新全栈工具动态的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1fUBWAETmkk)**
+
+### 🎬 What Claude Cowork Actually Does (And Why It's Different)
+
+**Channel:** Tiago Forte
+
+* What the video covers: An introduction to Claude Cowork, Anthropic's new AI collaboration tool that enables real-time co-working with AI assistance
+* Key topics discussed: How Claude Cowork differs from traditional AI chat interfaces, its unique features for collaborative work, practical use cases for productivity and knowledge work, and how it integrates into existing workflows
+* Why it's worth watching: Tiago Forte, a productivity expert known for his "Building a Second Brain" methodology, provides practical insights into leveraging this new AI tool for knowledge workers. The video includes a free guide to help viewers get started with Claude Cowork, making it actionable for anyone looking to enhance their AI-assisted workflow
+
+---
+
+### 🎬 Claude Cowork 实际功能解析(为何与众不同)
+
+**频道:** Tiago Forte
+
+* 视频内容概述: 介绍 Anthropic 推出的全新 AI 协作工具 Claude Cowork,展示其如何实现与 AI 的实时协同工作
+* 主要话题: Claude Cowork 与传统 AI 对话界面的区别、独特的协作功能、在生产力和知识工作中的实际应用场景,以及如何整合到现有工作流程中
+* 为何值得观看: 生产力专家 Tiago Forte(以"打造第二大脑"方法论闻名)提供了关于如何利用这一新 AI 工具的实用见解。视频附带免费入门指南,帮助知识工作者将 AI 辅助工作流程付诸实践
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_42sUaf037k)**
+
+### 🎬 Plus Two Maths | Linear Programming Short Summary | Eduport Plus Two
+
+**Channel:** Eduport Plus Two
+
+* This video provides a concise revision summary of Linear Programming for Plus Two (Grade 12) mathematics students
+* Key topics include formulating linear programming problems, graphical methods for solving optimization problems, feasible regions, and finding optimal solutions
+* Worth watching for students preparing for board exams or model exams who need a quick, focused review of Linear Programming concepts before their mathematics examination
+
+---
+
+### 🎬 Plus Two 数学 | 线性规划简明总结 | Eduport Plus Two
+
+**频道:** Eduport Plus Two
+
+* 本视频为 Plus Two(12年级)数学学生提供线性规划的简明复习总结
+* 主要话题包括线性规划问题的建立、优化问题的图解法、可行域以及最优解的求解
+* 适合准备委员会考试或模拟考试的学生观看,为数学考试前需要快速、集中复习线性规划概念的学生提供帮助
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aFbW7FJmWJI)**
 
