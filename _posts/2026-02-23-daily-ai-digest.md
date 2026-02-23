@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 23, 2026"
 date: 2026-02-23
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -649,4 +649,53 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 解决了 AI 辅助开发中生成界面缺乏设计美感的真实痛点;提供了一个简单实用的解决方案,可跨多个 AI 编程工具使用并立即见效
 
 **[View Repository / 查看仓库](https://github.com/Leonxlnx/taste-skill)**
+
+<!-- [Title-Only] -->
+### Freemediaheckyeah
+
+* Based on the title, this article likely covers a curated collection or directory of free media resources, tools, and services. The playful name suggests it's a comprehensive guide to accessing various types of media content without cost.
+* This might be interesting to readers who are looking for legitimate free alternatives to paid streaming services, open-source media tools, public domain content, or educational resources. It could serve as a valuable reference for discovering legal ways to access books, movies, music, software, and other digital media.
+
+### 免费媒体资源大全
+
+* 根据标题推测，这篇文章可能是一个精心整理的免费媒体资源、工具和服务目录。这个俏皮的名字暗示它是一个全面的免费媒体内容访问指南。
+* 对于寻找付费流媒体服务的合法免费替代品、开源媒体工具、公共领域内容或教育资源的读者来说，这可能很有价值。它可以作为发现合法获取书籍、电影、音乐、软件和其他数字媒体的有用参考。
+
+**[Read Original / 阅读原文](https://fmhy.net/)**
+
+### The JavaScript Oxidation Compiler
+
+* Oxc is a free and open source JavaScript compiler project
+* The project is made possible through community sponsorship
+* Brought to you by VoidZero, the team behind Vite
+* Accepts sponsorships to support ongoing development
+
+### JavaScript 氧化编译器
+
+* Oxc 是一个免费开源的 JavaScript 编译器项目
+* 该项目由社区赞助支持
+* 由 VoidZero 团队(Vite 背后的团队)开发
+* 接受赞助以支持持续开发
+
+**[Read Original / 阅读原文](https://oxc.rs/)**
+
+### How to Train Your Program Verifier: AI-Driven Formal Verification for Python
+
+* Microsoft researchers created a3-python, an AI-generated program verifier that uses barrier certificate theory to formally prove code safety
+* The tool successfully analyzed the popular "requests" Python package (183 functions, ~5000 lines), proving 179 potential bugs false and identifying 4 real bugs with 97.8% accuracy
+* Development started by prompting AI to combine Fields Medal-level mathematics with practical verification needs, leading to rediscovery of Hilbert's Stellensatz theorems
+* The system evolved from quantitative model checking (measuring "distance to safety") to barrier certificate synthesis that separates reachable states from unsafe states
+* Implementation used an agentic loop where GitHub Copilot CLI iteratively built components, tested against real codebases, and refined the verifier through thousands of iterations
+* a3-python addresses Python's verification challenge—widely used but avoided by verification tools due to complexity—by handling bytecode-level control flow, dynamic dispatch, and real bug classes like NULL_PTR and BOUNDS errors
+
+### 如何训练你的程序验证器:AI驱动的Python形式化验证
+
+* 微软研究人员创建了a3-python,这是一个AI生成的程序验证器,使用屏障证书理论来形式化证明代码安全性
+* 该工具成功分析了流行的"requests" Python包(183个函数,约5000行代码),证明179个潜在错误为误报,识别出4个真实错误,准确率达97.8%
+* 开发始于提示AI将菲尔兹奖级别的数学与实际验证需求相结合,最终重新发现了希尔伯特的Stellensatz定理
+* 系统从定量模型检查(测量"与安全的距离")演进到屏障证书综合,将可达状态与不安全状态分离
+* 实现使用了代理循环,GitHub Copilot CLI迭代构建组件,针对真实代码库测试,并通过数千次迭代改进验证器
+* a3-python解决了Python的验证挑战——广泛使用但因复杂性被验证工具回避——通过处理字节码级控制流、动态分派以及NULL_PTR和BOUNDS错误等真实错误类别
+
+**[Read Original / 阅读原文](https://risemsr.github.io/blog/2026-02-16-halleyyoung-a3/)**
 
