@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 23, 2026"
 date: 2026-02-23
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -698,4 +698,113 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * a3-python解决了Python的验证挑战——广泛使用但因复杂性被验证工具回避——通过处理字节码级控制流、动态分派以及NULL_PTR和BOUNDS错误等真实错误类别
 
 **[Read Original / 阅读原文](https://risemsr.github.io/blog/2026-02-16-halleyyoung-a3/)**
+
+<!-- [Title-Only] -->
+### Pope tells priests to use their brains, not AI, to write homilies
+
+* Based on the title, this article likely covers the Pope's directive to Catholic priests regarding the use of artificial intelligence in preparing sermons (homilies). The Pope appears to be emphasizing the importance of personal reflection, theological understanding, and human connection in religious teaching rather than relying on AI-generated content.
+
+* This is interesting because it touches on the intersection of technology and spirituality, raising questions about authenticity in religious practice. As AI tools become more prevalent in content creation, religious leaders are grappling with whether these tools can or should replace the personal, pastoral dimension of ministry. The Pope's stance suggests that homilies require human empathy, lived experience, and spiritual discernment that AI cannot replicate.
+
+---
+
+### 教皇告诉神父们用大脑而非AI撰写讲道词
+
+* 根据标题推测，这篇文章可能报道了教皇关于天主教神父在准备布道（讲道词）时使用人工智能的指示。教皇似乎强调在宗教教学中个人反思、神学理解和人际联系的重要性，而不是依赖AI生成的内容。
+
+* 这个话题值得关注，因为它涉及科技与灵性的交汇点，引发了关于宗教实践真实性的问题。随着AI工具在内容创作中越来越普遍，宗教领袖正在思考这些工具是否能够或应该取代牧灵工作中的个人化、牧养维度。教皇的立场表明，讲道词需要人类的同理心、生活经验和精神辨别力，这些是AI无法复制的。
+
+---
+
+**Note:** This analysis is based solely on the article title, as the full content was not available.
+
+**[Read Original / 阅读原文](https://www.ewtnnews.com/vatican/pope-leo-xiv-tells-priests-to-use-their-brains-not-ai-to-write-homilies)**
+
+### MicroVision's Sub-$200 Solid-State Lidar Targets Mass-Market ADAS Integration
+
+* MicroVision announces solid-state automotive lidar sensor targeting production price below $200, with long-term goal of $100 per unit—potentially making lidar accessible for mainstream advanced driver-assistance systems (ADAS) rather than just high-end autonomous vehicles
+* The Movia S uses phased-array technology with 905nm laser pulses, offering 180-degree horizontal coverage and 200-meter detection range, designed for corner mounting on vehicles
+* Lidar costs have already dropped tenfold from $80,000 (2016-2017) to $10,000-$20,000 today for mechanical units; experts believe solid-state designs could achieve another one to two orders of magnitude reduction at high manufacturing volumes
+* Solid-state lidar's narrower field of view (180° vs 360°) requires deploying 3-4 units per vehicle for full coverage, but total system cost can still undercut a single mechanical unit while adding complexity in sensor alignment, calibration, and data fusion
+* At $100-$200 price points, lidar becomes economically viable to augment existing camera and radar systems in ADAS, providing superior 3D detection and tracking capabilities rather than replacing current sensors
+* Industry challenge remains: achieving consumer-level pricing requires large, predictable demand to justify manufacturing investments for true economies of scale; competitors like Hesai, RoboSense, Luminar, and Velodyne have announced sub-$500 targets but MicroVision's sub-$200 focus is more aggressive
+* Performance evaluation gap exists—while cost targets dominate discussions, no universally adopted safety metrics directly measure sensor configuration benefits; researchers rely on perception benchmarks like mean Average Precision (mAP)
+
+### MicroVision 推出低于 200 美元的固态激光雷达,瞄准 ADAS 大规模应用
+
+* MicroVision 宣布推出固态车载激光雷达传感器,目标量产价格低于 200 美元,长期目标为每台 100 美元——这可能使激光雷达从高端自动驾驶汽车走向主流高级驾驶辅助系统(ADAS)
+* Movia S 采用相控阵技术,使用 905 纳米激光脉冲,提供 180 度水平覆盖范围和 200 米探测距离,设计用于安装在车辆四角
+* 激光雷达成本已从 2016-2017 年的 8 万美元下降十倍至目前机械式单元的 1-2 万美元;专家认为固态设计在大规模生产时可实现再降低一到两个数量级
+* 固态激光雷达视场角较窄(180° vs 360°),需要每辆车部署 3-4 个单元实现全覆盖,但总系统成本仍可低于单个机械单元,同时增加了传感器对齐、校准和数据融合的复杂性
+* 在 100-200 美元价位,激光雷达在经济上可行地增强现有 ADAS 中的摄像头和雷达系统,提供卓越的 3D 检测和跟踪能力,而非替代现有传感器
+* 行业挑战依然存在:实现消费级定价需要大规模、可预测的需求来支撑制造投资以实现真正的规模经济;Hesai、RoboSense、Luminar 和 Velodyne 等竞争对手已宣布低于 500 美元的目标,但 MicroVision 的低于 200 美元目标更为激进
+* 性能评估存在差距——虽然成本目标主导讨论,但没有普遍采用的安全指标直接衡量传感器配置的效益;研究人员依赖平均精度均值(mAP)等感知基准
+
+**[Read Original / 阅读原文](https://spectrum.ieee.org/solid-state-lidar-microvision-adas)**
+
+### 0 A.D. Release 28: "Boiorix" - Ancient Warfare Strategy Game
+
+* Wildfire Games releases version 28 of their free, open-source real-time strategy game set in ancient times
+* Named after Boiorix, king of the Cimbri Germanic tribe
+* Available for Windows, Linux, and macOS under GPL v2 and CC-BY-SA 3.0 licenses
+* Completely free with no freemium model, ads, or hidden costs
+* First release without "Alpha" label, marking matured development process
+* New playable faction: The Germans (Cimbri coalition) with semi-nomadic gameplay featuring Supply Wagons, Wagon Encampments, and unique units
+* Major technical improvements: gendered civilian models (male/female variants), direct font rendering using Freetype library for better memory management
+* Enhanced East Asian language support now built-in instead of requiring mods
+* JavaScript module support and various engine upgrades
+* Team seeking contributors for video editing, social media, web design, testing, translation, development, and art
+* Players should deactivate mods before updating to avoid conflicts
+
+### 0 A.D. 第28版："博约里克斯" - 古代战争策略游戏
+
+* Wildfire Games 发布免费开源即时战略游戏第28版,背景设定在古代
+* 以辛布里日耳曼部落国王博约里克斯命名
+* 支持 Windows、Linux 和 macOS,采用 GPL v2 和 CC-BY-SA 3.0 许可证
+* 完全免费,无内购模式、广告或隐藏费用
+* 首个去除"Alpha"标签的版本,标志着开发流程的成熟
+* 新增可玩派系:日耳曼人(辛布里联盟),半游牧玩法,配备补给车、车营地和独特单位
+* 重大技术改进:性别化平民模型(男女变体)、使用 Freetype 库直接渲染字体以优化内存管理
+* 增强东亚语言支持,现已内置无需额外模组
+* 支持 JavaScript 模块及各种引擎升级
+* 团队寻求视频编辑、社交媒体、网页设计、测试、翻译、开发和美术方面的贡献者
+* 玩家更新前应停用模组以避免冲突
+
+**[Read Original / 阅读原文](https://play0ad.com/new-release-0-a-d-release-28-boiorix/)**
+
+### Taste-Skill - AI Frontend Design Quality Controller
+
+* **What it does**: A single-file system (`SKILL.md`) that teaches AI coding assistants (Cursor, Claude, Codex) to generate modern, high-quality frontend interfaces instead of generic, boring code
+* **Key features**: Three adjustable parameters (Design Variance, Motion Intensity, Visual Density) that control layout creativity, animation complexity, and information density from 1-10 scales; zero installation complexity—just drop the file in your project and reference it
+* **Why it's notable**: Addresses a real pain point in AI-assisted development where generated UIs often lack design sophistication; provides a simple, practical solution that works across multiple AI coding tools with immediate results
+
+---
+
+### Taste-Skill - AI 前端设计品质控制器
+
+* **功能介绍**: 通过单个文件 (`SKILL.md`) 训练 AI 编程助手(Cursor、Claude、Codex)生成现代化、高质量的前端界面,避免生成平庸、千篇一律的代码
+* **主要特点**: 三个可调节参数(设计变化度、动效强度、视觉密度),通过 1-10 的刻度控制布局创意性、动画复杂度和信息密度;零安装复杂度——只需将文件放入项目并引用即可
+* **为何值得关注**: 解决了 AI 辅助开发中生成界面缺乏设计美感的真实痛点;提供了一个简单实用的解决方案,可跨多个 AI 编程工具使用并立即见效
+
+**[View Repository / 查看仓库](https://github.com/Leonxlnx/taste-skill)**
+
+### 🎬 You're Not Behind (Yet): How to Build AI Agents in 2026 (no coding)
+
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive guide to building AI agents in 2026 without any coding knowledge, making advanced AI automation accessible to non-technical users
+* Key topics discussed: No-code AI agent development platforms, practical implementation strategies, current state of AI agent technology, and actionable steps for beginners to get started with AI automation
+* Why it's worth watching: Perfect for anyone feeling overwhelmed by AI advancement - this video demystifies AI agents and provides a clear roadmap to leverage this technology without technical barriers. Includes a free AI Agents Playbook resource to accelerate your learning journey
+
+---
+
+### 🎬 你还没有落后(但要抓紧):2026年如何构建AI智能体(无需编程)
+
+**频道:** Futurepedia
+
+* 视频内容概述: 全面指导如何在2026年无需编程知识构建AI智能体,让非技术用户也能掌握先进的AI自动化技术
+* 主要话题: 无代码AI智能体开发平台、实用实施策略、AI智能体技术现状,以及初学者入门AI自动化的可行步骤
+* 为何值得观看: 非常适合对AI发展感到不知所措的人群 - 本视频揭开AI智能体的神秘面纱,提供清晰的技术应用路线图,无需技术门槛。附赠免费AI智能体实战手册资源,助力快速学习
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ibFJ--CH3cQ)**
 
