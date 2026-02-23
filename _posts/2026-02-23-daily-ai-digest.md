@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 23, 2026"
 date: 2026-02-23
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -551,4 +551,102 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 对于想要系统学习 Python 的零基础学习者来说,这是完美的起点。Sagar Chouksey 将复杂概念分解为易于理解的课程,让编程入门变得简单。该课程是完整系列的一部分,确保全面覆盖 Python 基础知识,学习路径清晰明确。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=qQEigNVHlX8)**
+
+### Google AI Ultra Account Suspensions: OpenClaw Integration Triggers Permanent Bans
+
+* Multiple paid subscribers ($249/month) report sudden account restrictions without prior warning after using OpenClaw OAuth to connect Gemini models
+* Google's support system creates a circular loop: Google Cloud Support redirects to Google One, which redirects back to Cloud Support, leaving users stranded
+* After 3+ weeks of investigation, Google confirms permanent suspension under "zero tolerance policy" for using third-party tools with Antigravity servers
+* Users locked out cannot access the in-app feedback tool to report issues, and support emails (gemini-code-assist-user-feedback, antigravity-support) go unanswered
+* Annual prepaid subscribers face potential financial loss with no refund mechanism, considering legal action against the company
+* Google's official response: Using credentials in OpenClaw violates Terms of Service as it powers "non-Antigravity products" with Antigravity servers
+* Affected users migrating to alternatives like Codex or Claude Code, with some creating new accounts as workaround
+* Community consensus: Account restoration appears impossible once suspended, representing a significant customer service failure for a trillion-dollar company
+
+### Google AI Ultra 账户封禁事件:OpenClaw 集成导致永久禁用
+
+* 多名付费订阅用户(每月 249 美元)在使用 OpenClaw OAuth 连接 Gemini 模型后,账户突然被限制且未收到任何事先警告
+* Google 的支持系统形成死循环:Google Cloud 支持让用户联系 Google One,而 Google One 又让用户联系 Cloud 支持,用户陷入困境
+* 经过 3 周以上的调查,Google 确认根据"零容忍政策"永久封禁使用第三方工具访问 Antigravity 服务器的账户
+* 用户被锁定后无法访问应用内反馈工具报告问题,发送至支持邮箱(gemini-code-assist-user-feedback、antigravity-support)的邮件也无人回复
+* 年度预付费订阅用户面临经济损失且无退款机制,考虑对公司采取法律行动
+* Google 官方回应:在 OpenClaw 中使用凭证违反服务条款,因为这是用 Antigravity 服务器为"非 Antigravity 产品"提供支持
+* 受影响用户迁移至 Codex 或 Claude Code 等替代方案,部分用户通过创建新账户作为临时解决方案
+* 社区共识:账户一旦被封禁似乎无法恢复,这代表着一家万亿美元公司的重大客户服务失败
+
+**[Read Original / 阅读原文](https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778)**
+
+### Loops - Ethical Short Video Platform
+
+* Founded on the principle that social media should serve people, not exploit them
+* An open-source alternative to commercial short-video platforms without invasive tracking or data mining
+* Focuses on radical transparency and true community governance
+* Prioritizes user privacy and experience over advertising revenue and engagement metrics
+* Provides a space for creators and visual artists to share work ethically
+
+### Loops - 道德短视频平台
+
+* 基于"社交媒体应服务于人而非剥削人"的核心理念创立
+* 开源的商业短视频平台替代方案，无侵入式追踪或数据挖掘
+* 强调彻底透明和真正的社区治理
+* 优先考虑用户隐私和体验，而非广告收入和参与度指标
+* 为创作者和视觉艺术家提供道德的作品分享空间
+
+**[Read Original / 阅读原文](https://joinloops.org/)**
+
+### CIA World Factbook Archive: Comprehensive Intelligence Data Visualization Platform
+
+* **Regional Dashboard** - Interactive globe choropleth displaying COCOM (Combatant Command) regions with capital city markers for strategic geographic analysis
+* **Timeline Map** - Animated choropleth visualization spanning 36 years of historical data with integrated time series analysis
+* **Communications Analysis** - Tracks internet, mobile, and broadband penetration indicators across countries for digital infrastructure assessment
+* **Map Compare** - Synchronized dual-map interface enabling side-by-side year-over-year comparisons
+* **COCOM Region Detail** - Regional mapping with granular country-level KPIs and performance indicators
+* **Intelligence Dossier** - ICD 203 compliant country assessments featuring comprehensive indicator coverage
+* **Global Rankings** - Sortable country rankings across any available indicator for comparative analysis
+* **Global Trends** - Worldwide indicator trend analysis across all Factbook editions
+* **Compare Countries** - Side-by-side multi-country indicator comparison tool
+* **Field Explorer** - Complete data field browser with coverage statistics and metadata
+* **Change Detection** - Year-over-year field change tracking for any country
+* **Dissolved States** - Historical archive of entities no longer included in current Factbook editions
+* **Trade Networks** - Force-directed graph visualization of global trade relationships and dependencies
+* **Organization Networks** - Interactive graph of international organization membership and affiliations
+* **Query Builder** - Custom analytical query interface across all available indicators
+* **Text Diff** - Side-by-side textual comparison with highlighted changes between editions
+
+### CIA世界概况档案:综合情报数据可视化平台
+
+* **区域仪表板** - 交互式地球等值线图,显示COCOM(联合作战司令部)区域及首都标记,用于战略地理分析
+* **时间轴地图** - 跨越36年历史数据的动画等值线图,集成时间序列分析
+* **通信分析** - 追踪各国互联网、移动和宽带渗透率指标,用于数字基础设施评估
+* **地图对比** - 同步双地图界面,支持年度对比分析
+* **COCOM区域详情** - 区域地图,包含细粒度国家级KPI和绩效指标
+* **情报档案** - 符合ICD 203标准的国家评估,涵盖全面指标
+* **全球排名** - 可按任意指标排序的国家排名,用于比较分析
+* **全球趋势** - 跨所有概况版本的全球指标趋势分析
+* **国家对比** - 多国指标并排比较工具
+* **字段浏览器** - 完整数据字段浏览器,包含覆盖统计和元数据
+* **变化检测** - 任意国家的年度字段变化追踪
+* **已解体国家** - 不再收录于当前概况版本的历史实体档案
+* **贸易网络** - 全球贸易关系和依赖关系的力导向图可视化
+* **组织网络** - 国际组织成员资格和关联关系的交互图
+* **查询构建器** - 跨所有可用指标的自定义分析查询界面
+* **文本差异** - 版本间文本并排比较,高亮显示变化内容
+
+**[Read Original / 阅读原文](https://cia-factbook-archive.fly.dev/)**
+
+### Taste-Skill - AI Frontend Design Quality Controller
+
+* **What it does**: A single-file system (`SKILL.md`) that teaches AI coding assistants (Cursor, Claude, Codex) to generate modern, high-quality frontend interfaces instead of generic, boring code
+* **Key features**: Three adjustable parameters (Design Variance, Motion Intensity, Visual Density) that control layout creativity, animation complexity, and information density from 1-10 scales; zero installation complexity—just drop the file in your project and reference it
+* **Why it's notable**: Addresses a real pain point in AI-assisted development where generated UIs often lack design sophistication; provides a simple, practical solution that works across multiple AI coding tools with immediate results
+
+---
+
+### Taste-Skill - AI 前端设计品质控制器
+
+* **功能介绍**: 通过单个文件 (`SKILL.md`) 训练 AI 编程助手(Cursor、Claude、Codex)生成现代化、高质量的前端界面,避免生成平庸、千篇一律的代码
+* **主要特点**: 三个可调节参数(设计变化度、动效强度、视觉密度),通过 1-10 的刻度控制布局创意性、动画复杂度和信息密度;零安装复杂度——只需将文件放入项目并引用即可
+* **为何值得关注**: 解决了 AI 辅助开发中生成界面缺乏设计美感的真实痛点;提供了一个简单实用的解决方案,可跨多个 AI 编程工具使用并立即见效
+
+**[View Repository / 查看仓库](https://github.com/Leonxlnx/taste-skill)**
 
