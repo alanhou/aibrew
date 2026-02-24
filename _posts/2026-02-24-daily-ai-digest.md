@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 24, 2026"
 date: 2026-02-24
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -712,4 +712,72 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于从事网络编程的开发者来说是必备知识,了解何时使用每种协议能够显著影响应用程序的性能和可靠性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=cVJRxBXgts8)**
+
+<!-- [Title-Only] -->
+### Blood test boosts Alzheimer's diagnosis accuracy to 94.5%, clinical study shows
+
+* Based on the title, this article likely discusses a breakthrough in Alzheimer's disease diagnosis through blood testing technology. The study appears to demonstrate that blood-based biomarkers can achieve 94.5% accuracy in detecting Alzheimer's, which would represent a significant improvement over traditional diagnostic methods.
+* This is potentially groundbreaking because current Alzheimer's diagnosis typically relies on expensive and invasive procedures like PET scans or spinal taps, along with cognitive assessments. A simple blood test could enable earlier detection, reduce healthcare costs, make screening more accessible, and allow patients to begin treatment sooner. The high accuracy rate suggests this could become a standard diagnostic tool in clinical practice.
+
+---
+
+### 血液检测将阿尔茨海默病诊断准确率提升至94.5%，临床研究显示
+
+* 根据标题推测，这篇文章可能介绍了通过血液检测技术诊断阿尔茨海默病的突破性进展。研究似乎表明，基于血液的生物标志物检测可以达到94.5%的准确率，这将是对传统诊断方法的重大改进。
+* 这项研究值得关注，因为目前阿尔茨海默病的诊断通常依赖于昂贵且具有侵入性的检查手段，如PET扫描或腰椎穿刺，以及认知评估。简单的血液检测可以实现更早期的发现、降低医疗成本、提高筛查的可及性，并让患者更早开始治疗。如此高的准确率表明这项技术有望成为临床实践中的标准诊断工具。
+
+**[Read Original / 阅读原文](https://medicalxpress.com/news/2026-02-blood-boosts-alzheimer-diagnosis-accuracy.html)**
+
+<!-- [Title-Only] -->
+### Terence Tao, at 8 years old (1984) [pdf]
+
+* This article likely documents early observations or assessments of Terence Tao's mathematical abilities when he was just 8 years old in 1984. Given the URL reference to SMPY (Study of Mathematically Precocious Youth), this is probably an academic paper or case study examining his exceptional mathematical talent at a very young age.
+
+* Why it might be interesting: Terence Tao went on to become one of the world's most renowned mathematicians, winning the Fields Medal in 2006. This document offers a rare glimpse into the early development of mathematical genius, providing insights into how extraordinary talent manifests in childhood and potentially what factors contribute to nurturing such abilities. It's fascinating for anyone interested in education, cognitive development, gifted education, or the nature of mathematical talent.
+
+---
+
+### 陶哲轩，8岁时的记录（1984年）[pdf]
+
+* 这篇文章很可能记录了1984年陶哲轩年仅8岁时的数学能力观察或评估。从URL中提到的SMPY（数学早慧青少年研究项目）来看，这应该是一篇学术论文或案例研究，考察他在幼年时期展现出的非凡数学天赋。
+
+* 为何值得关注：陶哲轩后来成为世界上最著名的数学家之一，并于2006年获得菲尔兹奖。这份文档提供了一个难得的机会，让我们得以窥见数学天才的早期发展过程，了解非凡才能如何在童年时期显现，以及哪些因素可能有助于培养这种能力。对于任何对教育、认知发展、资优教育或数学天赋本质感兴趣的人来说，这都是一份引人入胜的资料。
+
+**[Read Original / 阅读原文](https://gwern.net/doc/iq/high/smpy/1984-clements.pdf)**
+
+### x86CSS: A Fully Functional CPU Emulator Built Entirely in CSS
+
+* **Pure CSS Implementation** - x86CSS is a working x86 CPU emulator that runs entirely in CSS without requiring JavaScript, executing real 8086 machine code compiled from C programs using GCC
+* **Technical Architecture** - Implements the original 16-bit 8086 instruction set with most essential opcodes (ADD, MOV, JMP, CALL, etc.), uses CSS animations and style container queries for clock cycles, and supports up to 1.5kB of memory (expandable)
+* **Turing Complete Debate** - Features a JavaScript-free clock implementation that runs without user interaction, addressing criticisms that hover-based CSS computers aren't truly Turing complete
+* **Development Approach** - Creator hand-wrote CSS in Sublime Text with Python scripts for repetitive code generation, implementing instructions incrementally based on actual C program compilation needs
+* **Practical Usage** - Users can compile their own C programs using gcc-ia16 or write 8086 assembly, with build scripts provided for Linux/WSL environments; works only in Chromium-based browsers currently
+* **Philosophical Statement** - Demonstrates that CSS can function as a programming language while acknowledging the impracticality, emphasizing that "computers are made for art and fun"
+
+### x86CSS：完全用 CSS 构建的功能性 CPU 模拟器
+
+* **纯 CSS 实现** - x86CSS 是一个完全用 CSS 运行的 x86 CPU 模拟器，无需 JavaScript，可执行由 GCC 编译的真实 8086 机器码
+* **技术架构** - 实现了原始 16 位 8086 指令集的大部分核心操作码（ADD、MOV、JMP、CALL 等），使用 CSS 动画和样式容器查询实现时钟周期，支持最多 1.5kB 内存（可扩展）
+* **图灵完备性争论** - 具有无需 JavaScript 的时钟实现，无需用户交互即可运行，回应了"基于悬停的 CSS 计算机不是真正图灵完备"的批评
+* **开发方法** - 创建者在 Sublime Text 中手写 CSS，使用 Python 脚本生成重复代码，根据实际 C 程序编译需求逐步实现指令
+* **实际使用** - 用户可以使用 gcc-ia16 编译自己的 C 程序或编写 8086 汇编代码，提供了适用于 Linux/WSL 环境的构建脚本；目前仅支持基于 Chromium 的浏览器
+* **哲学表达** - 证明 CSS 可以作为编程语言使用，同时承认其不实用性，强调"计算机是为艺术和乐趣而生的"
+
+**[Read Original / 阅读原文](https://lyra.horse/x86css/)**
+
+### 🎬 Subscribe for more coding tips⬆️#trending #ai #yt #shorts #tricks #code #coding #study #fun
+**Channel:** code with sweety
+
+* This appears to be a promotional short video encouraging viewers to subscribe for coding content
+* Likely covers quick coding tips, tricks, or educational snippets in a short-form format
+* Worth watching if you're looking for bite-sized coding knowledge and want to join a community focused on improving programming skills through accessible, trending content
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** code with sweety
+
+* 这是一个推广订阅的短视频,鼓励观众订阅以获取编程内容
+* 可能涵盖快速编程技巧、窍门或教育片段,采用短视频格式
+* 如果你正在寻找简短易懂的编程知识,并希望加入一个通过热门内容提升编程技能的社区,值得一看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=U32X53WNlhw)**
 
