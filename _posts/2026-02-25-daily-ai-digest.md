@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 25, 2026"
 date: 2026-02-25
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -305,4 +305,271 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Fireship 标志性的百秒速览格式，无需花费数小时阅读文档即可快速全面了解 TanStack Start 的核心价值。非常适合希望紧跟 React/Solid 生态系统最新全栈工具动态的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=1fUBWAETmkk)**
+
+### Teaching a Dog to Code Games with AI
+
+* A developer trained their 9-pound cavapoo Momo to "code" video games by typing random keystrokes that Claude AI interprets as cryptic game design instructions
+* The system uses a Bluetooth keyboard connected to a Raspberry Pi 5, which filters keystrokes and forwards them to Claude Code via a custom Rust app called DogKeyboard
+* Games are built in Godot 4.6 with C# and take 1-2 hours from first keystroke to playable build
+* The prompt engineering trick: telling Claude it's working with an "eccentric genius game designer who speaks in cryptic riddles" rather than random input
+* Added minimum requirements checklist (working audio, WASD controls, enemies, visible player) to ensure quality output
+* Automated reward system using Aqara C1 Smart Pet Feeder controlled via Zigbee to dispense treats when Momo types enough
+* Built automated QA tools allowing Claude to screenshot and play-test its own games, fixing bugs autonomously
+* Chose Godot over Unity and Bevy because its text-based .tscn scene format lets Claude directly read and edit files
+* Hardware challenges included finding a durable keyboard (settled on Logitech Pebble Keys 2) after dogs destroyed silicone keyboards
+* Project started after the developer was laid off from Meta and had time to explore the idea
+
+### 教狗用 AI 编写游戏代码
+
+* 一位开发者训练了他 9 磅重的卡瓦普犬 Momo "编写"电子游戏，通过让它敲击键盘产生随机字符，由 Claude AI 将其解读为神秘的游戏设计指令
+* 系统使用连接到树莓派 5 的蓝牙键盘，通过名为 DogKeyboard 的自定义 Rust 应用过滤按键并转发给 Claude Code
+* 游戏在 Godot 4.6 中用 C# 构建，从首次按键到可玩版本需要 1-2 小时
+* 提示工程技巧：告诉 Claude 它正在与一位"用神秘谜语说话的古怪天才游戏设计师"合作，而非随机输入
+* 添加了最低要求清单（工作音频、WASD 控制、敌人、可见玩家角色）以确保输出质量
+* 使用通过 Zigbee 控制的 Aqara C1 智能宠物喂食器实现自动奖励系统，当 Momo 输入足够多时分发零食
+* 构建了自动化 QA 工具，让 Claude 能够截图并测试自己的游戏，自主修复 bug
+* 选择 Godot 而非 Unity 和 Bevy，因为其基于文本的 .tscn 场景格式让 Claude 可以直接读取和编辑文件
+* 硬件挑战包括寻找耐用键盘（最终选择罗技 Pebble Keys 2），此前狗狗们破坏了硅胶键盘
+* 该项目始于开发者从 Meta 被裁员后有时间探索这个想法
+
+**[Read Original / 阅读原文](https://www.calebleak.com/posts/dog-game/)**
+
+### Nearby Glasses: Privacy-Focused Smart Glasses Detection App
+
+* Open-source Android app that detects nearby smart glasses using Bluetooth Low Energy (BLE) scanning
+* Identifies devices by scanning manufacturer company IDs in BLE advertising frames (Meta, Snapchat, Luxottica)
+* Uses RSSI signal strength threshold (-75 dBm default) to determine proximity, roughly 3-15 meters depending on environment
+* Privacy-first design: no data collection, no telemetry, no ads; logs stored locally only
+* Configurable settings include RSSI threshold, notification cooldown, custom company IDs, and foreground service
+* Available on Google Play and GitHub releases; requires Bluetooth and location permissions (Android <13)
+* Developer acknowledges false positives possible (VR headsets, other devices from same manufacturers)
+* Created as response to privacy concerns around smart glasses' recording capabilities and facial recognition features
+* Features exportable debug logs and real-time scanning display for technical users
+* Uses Android Foreground Service for persistent background scanning
+
+### Nearby Glasses：注重隐私的智能眼镜检测应用
+
+* 开源安卓应用，通过蓝牙低功耗(BLE)扫描检测附近的智能眼镜
+* 通过扫描BLE广播帧中的制造商公司ID识别设备(Meta、Snapchat、Luxottica等)
+* 使用RSSI信号强度阈值(默认-75 dBm)判断距离，根据环境约为3-15米
+* 隐私优先设计：无数据收集、无遥测、无广告；日志仅本地存储
+* 可配置设置包括RSSI阈值、通知冷却时间、自定义公司ID和前台服务
+* 可在Google Play和GitHub发布页下载；需要蓝牙和位置权限(Android 13以下)
+* 开发者承认可能存在误报(VR头显、同制造商其他设备)
+* 创建目的是应对智能眼镜录制功能和面部识别功能带来的隐私担忧
+* 提供可导出的调试日志和实时扫描显示，方便技术用户使用
+* 使用Android前台服务实现持久后台扫描
+
+**[Read Original / 阅读原文](https://github.com/yjeanrenaud/yj_nearbyglasses)**
+
+<!-- [Title-Only] -->
+### Hacking an old Kindle to display bus arrival times
+
+* This article likely covers a hardware/software project that repurposes an old Kindle e-reader as a real-time bus arrival display. Based on the title, it probably details the technical process of jailbreaking or modifying the Kindle, connecting it to transit APIs, and creating a custom interface to show live bus schedules.
+* This is interesting because it demonstrates creative hardware reuse, combining IoT concepts with practical everyday utility. E-ink displays are perfect for always-on information dashboards due to their low power consumption and excellent readability. Readers interested in DIY electronics, smart home projects, or sustainable tech repurposing would find this particularly appealing.
+
+---
+
+### 改造旧 Kindle 显示公交到站时间
+
+* 根据标题推测，这篇文章可能介绍了一个将旧 Kindle 电子阅读器改造成实时公交到站信息显示屏的硬件/软件项目。内容应该包括如何破解或修改 Kindle、连接公交 API 接口，以及创建自定义界面来显示实时公交时刻表的技术细节。
+* 这个项目值得关注，因为它展示了创意性的硬件再利用，将物联网概念与日常实用功能相结合。电子墨水屏因其低功耗和出色的可读性，非常适合作为常亮信息看板。对 DIY 电子项目、智能家居或可持续技术改造感兴趣的读者会觉得特别有吸引力。
+
+---
+
+**Note:** This introduction is based solely on the article title, as the full content could not be accessed. The actual article may contain different or additional details.
+
+**[Read Original / 阅读原文](https://www.mariannefeng.com/portfolio/kindle/)**
+
+### Ladybird - A Truly Independent Web Browser Built from Scratch
+
+* **What it does**: Ladybird is a completely independent web browser with its own rendering engine built on web standards, not based on Chromium, Firefox, or WebKit. Currently in pre-alpha and aimed at developers.
+
+* **Key features**: 
+  - Multi-process architecture with sandboxed renderer processes for each tab
+  - Custom-built components including LibWeb (rendering engine), LibJS (JavaScript engine), LibWasm (WebAssembly), and LibTLS (cryptography)
+  - Out-of-process image decoding and network connections for enhanced security
+  - Cross-platform support (Linux, macOS, Windows via WSL2, and other Unix systems)
+  - Inherits core libraries from SerenityOS project
+
+* **Why it's notable**: In an era dominated by Chromium-based browsers, Ladybird represents a rare effort to build a completely independent browser engine from the ground up. With 231 stars today, it's gaining attention as a genuine alternative that doesn't rely on existing browser monopolies, offering true browser diversity for the web ecosystem.
+
+---
+
+### Ladybird - 真正独立的全新网页浏览器
+
+* **功能介绍**: Ladybird 是一款完全独立的网页浏览器,拥有基于 Web 标准构建的自研渲染引擎,不依赖 Chromium、Firefox 或 WebKit。目前处于预 Alpha 阶段,面向开发者使用。
+
+* **主要特点**:
+  - 多进程架构,每个标签页都有独立的沙箱渲染进程
+  - 自主开发的核心组件,包括 LibWeb(渲染引擎)、LibJS(JavaScript 引擎)、LibWasm(WebAssembly)和 LibTLS(加密库)
+  - 进程外图像解码和网络连接,增强安全性
+  - 跨平台支持(Linux、macOS、Windows WSL2 及其他 Unix 系统)
+  - 继承自 SerenityOS 项目的核心库
+
+* **为何值得关注**: 在 Chromium 浏览器主导的时代,Ladybird 代表了一次罕见的从零开始构建完全独立浏览器引擎的尝试。今日获得 231 个 star,作为不依赖现有浏览器垄断的真正替代方案,它为 Web 生态系统提供了真正的浏览器多样性,正在获得越来越多的关注。
+
+**[View Repository / 查看仓库](https://github.com/LadybirdBrowser/ladybird)**
+
+### system-prompts-and-models-of-ai-tools - Comprehensive Collection of AI Tool System Prompts
+
+* A massive repository containing over 30,000+ lines of system prompts, internal tools, and AI model configurations from 30+ popular AI coding assistants and tools including Cursor, Windsurf, Replit, Claude Code, Devin AI, and many others
+* Provides deep insights into how major AI development tools structure their prompts, capabilities, and internal workings - valuable for developers building AI tools or understanding how these systems operate
+* Rapidly trending with 3,612 stars today, this repository fills a unique niche by exposing the "behind-the-scenes" architecture of commercial AI tools, making it essential for AI researchers, prompt engineers, and developers interested in AI system design. Also includes security warnings for AI startups about protecting their proprietary prompts
+
+### system-prompts-and-models-of-ai-tools - AI 工具系统提示词大全
+
+* 包含超过 30,000 行代码的大型资源库,收录了 30 多个流行 AI 编程助手和工具的系统提示词、内部工具和 AI 模型配置,涵盖 Cursor、Windsurf、Replit、Claude Code、Devin AI 等主流产品
+* 深入揭示主流 AI 开发工具如何构建提示词、定义能力和内部运作机制,为开发 AI 工具或理解这些系统运行原理的开发者提供宝贵参考
+* 今日获得 3,612 个星标,快速走红。该项目通过公开商业 AI 工具的"幕后"架构填补了独特的市场空白,对 AI 研究人员、提示词工程师和对 AI 系统设计感兴趣的开发者来说是必备资源。同时也为 AI 初创公司提供了保护专有提示词的安全警示
+
+**[View Repository / 查看仓库](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)**
+
+### PicoLM - Run a 1B Parameter LLM on $10 Hardware with 256MB RAM
+
+* What it does: PicoLM is an ultra-minimal LLM inference engine written in pure C11 (~2,500 lines) that runs 1-billion parameter models like TinyLlama on extremely constrained hardware. It uses memory-mapped layer streaming to keep the 638MB model on disk while using only 45MB of RAM at runtime.
+
+* Key features: Zero dependencies (just libc/libm/libpthread), ~80KB binary size, supports GGUF format natively with K-quant compression, FP16 KV cache, Flash Attention, SIMD acceleration (ARM NEON/x86 SSE2), multi-threaded inference, grammar-constrained JSON mode for tool calling, KV cache persistence, and cross-platform support (Linux/Windows/macOS, ARM/x86/RISC-V).
+
+* Why it's notable: Achieves the impossible by running modern LLMs on devices like the $10 LicheeRV Nano and $15 Raspberry Pi Zero 2W with only 256-512MB RAM. Designed as the local inference backend for PicoClaw (an offline AI agent), it eliminates cloud dependencies, API costs, and privacy concerns. Performance ranges from 1-10 tokens/sec depending on hardware, making truly offline, private AI accessible on budget hardware.
+
+---
+
+### PicoLM - 在 256MB 内存的 10 美元开发板上运行 10 亿参数大语言模型
+
+* 功能介绍:PicoLM 是一个用纯 C11 编写的超轻量级 LLM 推理引擎(约 2,500 行代码),可在极度受限的硬件上运行 TinyLlama 等 10 亿参数模型。它使用内存映射分层流式传输技术,将 638MB 模型保留在磁盘上,运行时仅占用 45MB 内存。
+
+* 主要特点:零依赖(仅需 libc/libm/libpthread),二进制文件约 80KB,原生支持 GGUF 格式和 K-quant 量化压缩,FP16 KV 缓存,Flash Attention,SIMD 加速(ARM NEON/x86 SSE2),多线程推理,用于工具调用的语法约束 JSON 模式,KV 缓存持久化,跨平台支持(Linux/Windows/macOS,ARM/x86/RISC-V)。
+
+* 为何值得关注:在仅有 256-512MB 内存的设备(如 10 美元的 LicheeRV Nano 和 15 美元的树莓派 Zero 2W)上实现了运行现代大语言模型的壮举。作为 PicoClaw(离线 AI 代理)的本地推理后端,它消除了云依赖、API 成本和隐私顾虑。根据硬件不同,性能范围为 1-10 tokens/秒,使真正离线、私密的 AI 在廉价硬件上成为可能。
+
+**[View Repository / 查看仓库](https://github.com/RightNow-AI/picolm)**
+
+### apple-silicon-accelerometer - Access Hidden Motion Sensors in Apple Silicon MacBooks
+
+* **What it does**: Reads undocumented internal accelerometer and gyroscope data from Apple Silicon MacBook Pros via IOKit HID, bypassing the lack of public APIs. Also captures lid angle and ambient light sensor data.
+
+* **Key features**: 
+  - Direct access to MEMS IMU (believed to be Bosch BMI286) through AppleSPUHIDDevice at ~100Hz
+  - Real-time 3-axis acceleration and angular velocity readings with orientation fusion (Mahony AHRS filter)
+  - Vibration detection with keyboard backlight flash mode synced to motion intensity
+  - Experimental heartbeat detection via ballistocardiography (BCG) when wrists rest on trackpad
+  - Clean Python implementation with reusable sensor reading module
+
+* **Why it's notable**: Exposes previously inaccessible hardware sensors on modern MacBooks through reverse-engineered IOKit paths. Shows creative hardware hacking on locked-down Apple platforms. The heartbeat detection demo is a clever proof-of-concept showing the sensor's sensitivity. Requires root access and only works on M2/M3 MacBook Pros (not M1 or Intel models). 769 stars reflect strong interest in undocumented Apple hardware capabilities.
+
+---
+
+### apple-silicon-accelerometer - 读取 Apple Silicon MacBook 隐藏的运动传感器
+
+* **功能介绍**: 通过 IOKit HID 读取 Apple Silicon MacBook Pro 中未公开的内置加速度计和陀螺仪数据,绕过缺失的公开 API。同时可获取屏幕角度和环境光传感器数据。
+
+* **主要特点**:
+  - 直接访问 MEMS IMU(推测为 Bosch BMI286)通过 AppleSPUHIDDevice,采样率约 100Hz
+  - 实时读取三轴加速度和角速度,配合姿态融合算法(Mahony AHRS 滤波器)计算方向
+  - 振动检测功能,可根据运动强度实时闪烁键盘背光
+  - 实验性心跳检测,利用弹道心动描记法(BCG)在手腕放置触控板附近时捕捉心跳振动
+  - 简洁的 Python 实现,传感器读取模块可独立复用
+
+* **为何值得关注**: 通过逆向工程 IOKit 路径,暴露了现代 MacBook 上此前无法访问的硬件传感器。展示了在封闭 Apple 平台上的创意硬件破解。心跳检测演示巧妙证明了传感器的灵敏度。需要 root 权限,仅支持 M2/M3 MacBook Pro(不支持 M1 或 Intel 机型)。769 星标反映了开发者对 Apple 未公开硬件能力的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/olvvier/apple-silicon-accelerometer)**
+
+### 🎬 The "Game Over" Hook: The End of reCAPTCHA? AI Hits 100% Accuracy 🤖🛑
+
+**Channel:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* What the video covers: This video explores the breakthrough where AI has achieved 100% accuracy in solving reCAPTCHA challenges, potentially marking the end of this widely-used bot detection system.
+
+* Key topics discussed: The evolution of CAPTCHA technology, how AI models have advanced to bypass reCAPTCHA with perfect accuracy, implications for web security and bot prevention, and what this means for the future of human verification systems online.
+
+* Why it's worth watching: If you're interested in cybersecurity, AI capabilities, or web development, this video highlights a critical turning point where traditional security measures are being outpaced by machine learning. It raises important questions about the next generation of authentication methods and the ongoing arms race between security systems and AI.
+
+---
+
+### 🎬 "游戏结束"时刻:reCAPTCHA的终结?AI达到100%准确率 🤖🛑
+
+**频道:** Voice of Libraries: VOL (LIS Education Urdu)
+
+* 视频内容概述: 本视频探讨了AI在破解reCAPTCHA验证码方面达到100%准确率的突破性进展,这可能标志着这一广泛使用的机器人检测系统的终结。
+
+* 主要话题: CAPTCHA技术的演变、AI模型如何进步到能够完美绕过reCAPTCHA、对网络安全和机器人防护的影响,以及这对未来在线人机验证系统意味着什么。
+
+* 为何值得观看: 如果你对网络安全、AI能力或Web开发感兴趣,这个视频展示了一个关键转折点——传统安全措施正被机器学习超越。它提出了关于下一代身份验证方法的重要问题,以及安全系统与AI之间持续的军备竞赛。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PVt9zSF8Lf4)**
+
+### 🎬 Create almost any interactive product #design #coding #figma
+**Channel:** SetupsAI
+
+* What the video covers: This video demonstrates how to create interactive products by combining design and coding workflows, with a focus on using Figma as a central tool in the product development process.
+* Key topics discussed: Interactive product design, bridging design and development, Figma workflows, prototyping techniques, and practical implementation strategies for building functional products.
+* Why it's worth watching: Perfect for designers looking to expand into development or developers wanting to improve their design skills. Shows practical approaches to creating interactive prototypes and products that go beyond static mockups, helping you build more engaging user experiences.
+
+---
+
+### 🎬 创建几乎任何交互式产品 #设计 #编程 #figma
+**频道:** SetupsAI
+
+* 视频内容概述: 本视频展示了如何通过结合设计和编程工作流程来创建交互式产品,重点介绍如何将 Figma 作为产品开发过程中的核心工具。
+* 主要话题: 交互式产品设计、连接设计与开发、Figma 工作流程、原型制作技术,以及构建功能性产品的实用实施策略。
+* 为何值得观看: 非常适合希望拓展开发技能的设计师,或想要提升设计能力的开发者。展示了创建交互式原型和产品的实用方法,超越静态模型的局限,帮助你构建更具吸引力的用户体验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ePtrob2lNeE)**
+
+### 🎬 TCP vs UDP #programming #protocols
+**Channel:** Навчальний Порт
+
+* What the video covers: A comparison between TCP (Transmission Control Protocol) and UDP (User Datagram Protocol), two fundamental networking protocols used in internet communication
+* Key topics discussed: The differences in how TCP and UDP handle data transmission, reliability, connection establishment, and their respective use cases in programming and network applications
+* Why it's worth watching: Essential knowledge for developers working with network programming, understanding when to use each protocol can significantly impact application performance and reliability
+
+### 🎬 TCP vs UDP #programming #protocols
+**频道:** Навчальний Порт
+
+* 视频内容概述: 对比TCP(传输控制协议)和UDP(用户数据报协议)这两种互联网通信中的基础网络协议
+* 主要话题: TCP和UDP在数据传输、可靠性、连接建立方面的差异,以及它们在编程和网络应用中的各自使用场景
+* 为何值得观看: 对于从事网络编程的开发者来说是必备知识,了解何时使用每种协议能够显著影响应用程序的性能和可靠性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cVJRxBXgts8)**
+
+### 🎬 FIGHT BETWEEN DEV VS DESIGNER
+
+**Channel:** Aziz Syntax
+
+* What the video covers: A humorous take on the classic conflict between developers and designers in the tech industry, exploring common friction points in the software development workflow
+* Key topics discussed: Developer-designer collaboration challenges, communication gaps between technical and creative teams, typical disagreements over implementation feasibility and design specifications
+* Why it's worth watching: Offers a relatable and entertaining perspective on workplace dynamics that anyone in tech can identify with, while highlighting the importance of cross-functional collaboration in building great products
+
+---
+
+### 🎬 开发者与设计师之争
+
+**频道:** Aziz Syntax
+
+* 视频内容概述: 以幽默的方式呈现科技行业中开发者与设计师之间的经典冲突,探讨软件开发流程中常见的摩擦点
+* 主要话题: 开发者与设计师的协作挑战、技术团队与创意团队之间的沟通障碍、关于实现可行性和设计规范的典型分歧
+* 为何值得观看: 提供了一个科技从业者都能产生共鸣的有趣视角,同时强调了跨职能协作对打造优秀产品的重要性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qZPLNj18RdA)**
+
+### 🎬 cqi to the rescue
+
+**Channel:** Kevin Powell
+
+* What the video covers: A practical CSS solution for fixing squished gradient appearances in responsive designs
+* Key topics discussed: Container query units (cqi), gradient styling techniques, and responsive design improvements
+* Why it's worth watching: Kevin Powell shares a real-world problem he encountered on his own site and demonstrates how container query units can elegantly solve gradient distortion issues. This is a quick, actionable tip that addresses a common CSS challenge developers face when working with gradients in flexible layouts.
+
+---
+
+### 🎬 cqi 来救场
+
+**频道:** Kevin Powell
+
+* 视频内容概述: 一个实用的 CSS 解决方案,用于修复响应式设计中被压扁的渐变效果
+* 主要话题: 容器查询单位(cqi)、渐变样式技巧以及响应式设计改进
+* 为何值得观看: Kevin Powell 分享了他在自己网站上遇到的实际问题,并演示了如何使用容器查询单位优雅地解决渐变变形问题。这是一个快速、可操作的技巧,解决了开发者在弹性布局中使用渐变时面临的常见 CSS 挑战。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJ3WE0Ohfpc)**
 
