@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 24, 2026"
 date: 2026-02-24
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -780,4 +780,97 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 如果你正在寻找简短易懂的编程知识,并希望加入一个通过热门内容提升编程技能的社区,值得一看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=U32X53WNlhw)**
+
+### Firefox 148 Launches with AI Kill Switch and Enhanced Features
+
+* **AI Kill Switch**: Users can now completely disable AI functionalities including chatbot prompts and AI-generated summaries via Settings > AI Controls, with Mozilla guaranteeing future updates won't override this choice
+* **Selective AI Blocking**: Option to retain useful on-device features like translations while blocking cloud-based AI services
+* **Enhanced Privacy Controls**: New options to opt out of remote updates while minimizing data collection through Settings > Privacy & Settings > Firefox Data Collection
+* **Security Improvements**: Integration of Trusted Types API and Sanitizer API to combat cross-site scripting (XSS) vulnerabilities
+* **Accessibility Enhancements**: Improved screen reader compatibility for mathematical formulas in PDFs
+* **New Features**: Firefox Backup now available on Windows 10, translation support for Vietnamese and Traditional Chinese, new tab wallpapers in container tabs, and Service worker support for WebGPU
+
+### Firefox 148 推出 AI 关闭开关及多项增强功能
+
+* **AI 关闭开关**:用户现可通过"设置 > AI 控制"完全禁用 AI 功能,包括聊天机器人提示和 AI 生成的摘要,Mozilla 承诺未来更新不会覆盖此选择
+* **选择性 AI 屏蔽**:可选择保留有用的设备端功能(如翻译),同时屏蔽基于云的 AI 服务
+* **增强隐私控制**:通过"设置 > 隐私与设置 > Firefox 数据收集"提供新的选项,可选择退出远程更新同时最小化数据收集
+* **安全性改进**:集成 Trusted Types API 和 Sanitizer API 以对抗跨站脚本攻击(XSS)漏洞
+* **无障碍增强**:改进屏幕阅读器对 PDF 中数学公式的兼容性
+* **新功能**:Firefox 备份现已支持 Windows 10,新增越南语和繁体中文翻译支持,容器标签页中的新标签壁纸,以及 WebGPU 的 Service worker 支持
+
+**[Read Original / 阅读原文](https://serverhost.com/blog/firefox-148-launches-with-exciting-ai-kill-switch-feature-and-more-enhancements/)**
+
+### Enveil: Protecting Environment Secrets from AI Code Assistants
+
+* A Rust CLI tool that prevents AI coding assistants (Claude, Copilot, Cursor) from accidentally reading plaintext secrets in `.env` files
+* Stores actual secret values in an encrypted local store using AES-256-GCM with Argon2id key derivation, while `.env` contains only symbolic references like `ev://database_url`
+* Secrets are decrypted in-memory and injected directly into subprocess environments at runtime, never written to disk as plaintext
+* Includes comprehensive security features: fresh random nonces per write, authentication tags to detect tampering, memory zeroization, and 31 automated tests
+* Supports standard workflows: `enveil init` for setup, `enveil set` for adding secrets interactively, `enveil run -- <command>` to launch apps with resolved environment variables
+* Deliberately omits `get` and `export` commands to prevent secrets from appearing in terminal output or logs
+* Installation via cargo or from source, with per-project encrypted stores that should never be committed to version control
+* Future roadmap includes global store support and system keychain integration
+
+### Enveil:保护环境变量密钥免受 AI 代码助手窥探
+
+* 一个 Rust CLI 工具,防止 AI 编码助手(Claude、Copilot、Cursor)意外读取 `.env` 文件中的明文密钥
+* 使用 AES-256-GCM 加密和 Argon2id 密钥派生将实际密钥值存储在加密的本地存储中,而 `.env` 仅包含符号引用如 `ev://database_url`
+* 密钥在内存中解密并直接注入到子进程环境中,永不以明文形式写入磁盘
+* 包含全面的安全特性:每次写入使用新鲜随机 nonce、身份验证标签检测篡改、内存清零,以及 31 个自动化测试
+* 支持标准工作流:`enveil init` 初始化、`enveil set` 交互式添加密钥、`enveil run -- <命令>` 启动应用并解析环境变量
+* 刻意省略 `get` 和 `export` 命令,防止密钥出现在终端输出或日志中
+* 可通过 cargo 或源码安装,每个项目拥有独立的加密存储,不应提交到版本控制
+* 未来路线图包括全局存储支持和系统钥匙串集成
+
+**[Read Original / 阅读原文](https://github.com/GreatScott/enveil)**
+
+<!-- [Title-Only] -->
+### Blood test boosts Alzheimer's diagnosis accuracy to 94.5%, clinical study shows
+
+* Based on the title, this article likely discusses a breakthrough in Alzheimer's disease diagnosis through blood testing technology. The study appears to demonstrate that blood-based biomarkers can achieve 94.5% accuracy in detecting Alzheimer's, which would represent a significant improvement over traditional diagnostic methods.
+* This is potentially groundbreaking because current Alzheimer's diagnosis typically relies on expensive and invasive procedures like PET scans or spinal taps, along with cognitive assessments. A simple blood test could enable earlier detection, reduce healthcare costs, make screening more accessible, and allow patients to begin treatment sooner. The high accuracy rate suggests this could become a standard diagnostic tool in clinical practice.
+
+---
+
+### 血液检测将阿尔茨海默病诊断准确率提升至94.5%，临床研究显示
+
+* 根据标题推测，这篇文章可能介绍了通过血液检测技术诊断阿尔茨海默病的突破性进展。研究似乎表明，基于血液的生物标志物检测可以达到94.5%的准确率，这将是对传统诊断方法的重大改进。
+* 这项研究值得关注，因为目前阿尔茨海默病的诊断通常依赖于昂贵且具有侵入性的检查手段，如PET扫描或腰椎穿刺，以及认知评估。简单的血液检测可以实现更早期的发现、降低医疗成本、提高筛查的可及性，并让患者更早开始治疗。如此高的准确率表明这项技术有望成为临床实践中的标准诊断工具。
+
+**[Read Original / 阅读原文](https://medicalxpress.com/news/2026-02-blood-boosts-alzheimer-diagnosis-accuracy.html)**
+
+### 🎬 Create almost any interactive product #design #coding #figma
+**Channel:** SetupsAI
+
+* What the video covers: This video demonstrates how to create interactive products by combining design and coding workflows, with a focus on using Figma as a central tool in the product development process.
+* Key topics discussed: Interactive product design, bridging design and development, Figma workflows, prototyping techniques, and practical implementation strategies for building functional products.
+* Why it's worth watching: Perfect for designers looking to expand into development or developers wanting to improve their design skills. Shows practical approaches to creating interactive prototypes and products that go beyond static mockups, helping you build more engaging user experiences.
+
+---
+
+### 🎬 创建几乎任何交互式产品 #设计 #编程 #figma
+**频道:** SetupsAI
+
+* 视频内容概述: 本视频展示了如何通过结合设计和编程工作流程来创建交互式产品,重点介绍如何将 Figma 作为产品开发过程中的核心工具。
+* 主要话题: 交互式产品设计、连接设计与开发、Figma 工作流程、原型制作技术,以及构建功能性产品的实用实施策略。
+* 为何值得观看: 非常适合希望拓展开发技能的设计师,或想要提升设计能力的开发者。展示了创建交互式原型和产品的实用方法,超越静态模型的局限,帮助你构建更具吸引力的用户体验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ePtrob2lNeE)**
+
+### 🎬 TCP vs UDP #programming #protocols
+**Channel:** Навчальний Порт
+
+* What the video covers: A comparison between TCP (Transmission Control Protocol) and UDP (User Datagram Protocol), two fundamental networking protocols used in internet communication
+* Key topics discussed: The differences in how TCP and UDP handle data transmission, reliability, connection establishment, and their respective use cases in programming and network applications
+* Why it's worth watching: Essential knowledge for developers working with network programming, understanding when to use each protocol can significantly impact application performance and reliability
+
+### 🎬 TCP vs UDP #programming #protocols
+**频道:** Навчальний Порт
+
+* 视频内容概述: 对比TCP(传输控制协议)和UDP(用户数据报协议)这两种互联网通信中的基础网络协议
+* 主要话题: TCP和UDP在数据传输、可靠性、连接建立方面的差异,以及它们在编程和网络应用中的各自使用场景
+* 为何值得观看: 对于从事网络编程的开发者来说是必备知识,了解何时使用每种协议能够显著影响应用程序的性能和可靠性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cVJRxBXgts8)**
 
