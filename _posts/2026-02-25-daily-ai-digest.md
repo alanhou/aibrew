@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 25, 2026"
 date: 2026-02-25
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -735,4 +735,76 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 作为 AI 驱动开发实验(大部分代码由 Claude 编写)在一周内实现 Next.js 兼容性而备受关注,拥有 1700+ 单元测试和 380+ E2E 测试验证其在 Cloudflare 边缘平台的生产就绪性
 
 **[View Repository / 查看仓库](https://github.com/cloudflare/vinext)**
+
+### Analysis: When National AI Models Encode Political Narratives
+
+* Sarvam AI's Indus model, funded with $41M private capital and ~$12M in Indian taxpayer subsidies, lacks transparency despite claiming to be India's sovereign AI foundation
+* The leaked system prompt reveals hardcoded instructions to prioritize "national pride" over neutrality, dismiss international characterizations of mass violence as "foreign opinion," and treat Indian court findings as the sole authoritative source
+* Comparative testing shows Indus systematically avoids direct answers on sensitive historical events (2002 Gujarat riots), while Claude, Gemini, and GPT provide straightforward responses citing international consensus
+* The model conflates "sovereignty" with narrative control - instructing the AI to "push back on loaded premises" and challenge question framing before answering
+* Critical gap between "open weights" (releasing model files) and true open source (training data, methodology, reproducibility) - Sarvam hasn't committed to the latter despite public funding
+* Benchmark claims lack specificity and verifiable methodology, with vague comparisons to DeepSeek R1 and Gemini Flash that would require peer-reviewed research to validate
+
+### 分析:当国家级AI模型编码政治叙事时
+
+* Sarvam AI的Indus模型获得4100万美元私人资金和约1200万美元印度纳税人补贴,尽管声称是印度主权AI基础,却缺乏透明度
+* 泄露的系统提示词显示硬编码指令:优先考虑"民族自豪感"而非中立性,将大规模暴力事件的国际定性视为"外国观点",仅将印度法院裁决视为权威来源
+* 对比测试显示,Indus系统性地回避敏感历史事件(2002年古吉拉特骚乱)的直接回答,而Claude、Gemini和GPT则引用国际共识提供直接回应
+* 该模型将"主权"与叙事控制混为一谈——指示AI"反驳预设前提",在回答前先质疑问题框架
+* "开放权重"(发布模型文件)与真正开源(训练数据、方法论、可复现性)之间存在关键差距——尽管使用公共资金,Sarvam未承诺后者
+* 基准测试声明缺乏具体性和可验证方法论,与DeepSeek R1和Gemini Flash的模糊比较需要同行评审研究来验证
+
+**[Read Original / 阅读原文](https://pop.rdi.sh/sovereignty-in-a-system-prompt/)**
+
+### cl-kawa: Bridging Common Lisp and Kawa Scheme
+
+* **Deep interoperability** between Common Lisp and Scheme via OpenLDK—a JVM implemented in Common Lisp that transpiles Java bytecode to native assembly
+* **Zero-overhead integration**: both languages share the same SBCL process and heap with no serialization or process boundaries
+* **Bidirectional calling**: evaluate Scheme from Common Lisp, call Scheme procedures from CL, and register CL functions callable from Scheme
+* **Three-language chain**: demonstrates Common Lisp → Kawa Scheme → Java interop in a single process (e.g., calling Java's `String.toUpperCase()` from Scheme within CL)
+* **Simple API**: `kawa:eval` for expressions, `kawa:funcall` for procedure calls, `kawa:register` for CL function registration
+* **Automatic value conversion**: handles integers, floats, strings, booleans, and lists across the language boundary
+* **Prerequisites**: SBCL, OpenLDK, Java 8 JDK, and Kawa 3.1.1 JAR
+* **Status**: technology demonstration and proof-of-concept—not production-ready
+
+### cl-kawa:连接 Common Lisp 与 Kawa Scheme
+
+* **深度互操作性**:通过 OpenLDK(一个用 Common Lisp 实现的 JVM,可将 Java 字节码转译为原生汇编)实现 Common Lisp 与 Scheme 的无缝集成
+* **零开销集成**:两种语言共享同一个 SBCL 进程和堆,无需序列化或进程边界
+* **双向调用**:从 Common Lisp 执行 Scheme 表达式,从 CL 调用 Scheme 过程,并注册可从 Scheme 调用的 CL 函数
+* **三语言调用链**:演示在单个进程中实现 Common Lisp → Kawa Scheme → Java 互操作(例如在 CL 中通过 Scheme 调用 Java 的 `String.toUpperCase()`)
+* **简洁 API**:`kawa:eval` 用于表达式求值,`kawa:funcall` 用于过程调用,`kawa:register` 用于注册 CL 函数
+* **自动值转换**:在语言边界间自动处理整数、浮点数、字符串、布尔值和列表的转换
+* **前置要求**:SBCL、OpenLDK、Java 8 JDK 和 Kawa 3.1.1 JAR 包
+* **项目状态**:技术演示和概念验证——尚未达到生产就绪水平
+
+**[Read Original / 阅读原文](https://github.com/atgreen/cl-kawa)**
+
+### Japanese Death Poems: Haiku Poets' Final Verses
+
+* Collection of *jisei* (death poems) written by Japanese haiku poets in their final moments
+* Features poems blending natural imagery with mortality - maple leaves, snow, cherry blossoms, moon
+* Includes historical context: poems from the forty-seven ronin who committed seppuku after avenging their master in 1703
+* Demonstrates Zen Buddhist philosophy through simple imagery - snowmen, dumplings, seasonal changes
+* Poets range from anarchist Kyutaro to doctor Masahide to samurai warriors
+* Common themes: transience of life, nature as mirror of death, humor mixed with solemnity
+* Wordplay and cultural references embedded in original Japanese (e.g., *sharakusashi* meaning both vanity and stench)
+* Poems use seasonal imagery (*kigo*) traditional to haiku - autumn leaves, spring plums, winter snow
+* Some poets faced tragic ends: imprisonment, forced suicide, poverty
+* Death viewed through lens of impermanence - life as "melting snow" or waking from a dream
+
+### 日本辞世诗:俳句诗人的临终诗篇
+
+* 收录日本俳句诗人在生命最后时刻创作的*辞世*诗
+* 诗歌将自然意象与死亡主题融合——枫叶、雪、樱花、月亮
+* 包含历史背景:1703年为主君复仇后切腹的四十七浪人的诗作
+* 通过简单意象展现禅宗哲学——雪人、团子、季节变化
+* 诗人背景多样:从无政府主义者九太郎到医生正秀到武士
+* 共同主题:生命无常、自然映照死亡、庄谐并存
+* 原文蕴含日语文字游戏和文化典故(如*sharakusashi*兼指虚荣与恶臭)
+* 诗歌运用俳句传统季语——秋叶、春梅、冬雪
+* 部分诗人遭遇悲剧结局:入狱、被迫自杀、贫困
+* 从无常角度看待死亡——生命如"融雪"或梦醒
+
+**[Read Original / 阅读原文](https://www.secretorum.life/p/japanese-death-poems-part-3)**
 
