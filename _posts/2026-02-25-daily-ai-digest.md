@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 25, 2026"
 date: 2026-02-25
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -653,4 +653,86 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 如果你正在寻找简短易懂的编程知识,并希望加入一个通过热门内容提升编程技能的社区,值得一看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=U32X53WNlhw)**
+
+### The Rise and Fall of Fry's Electronics
+
+* Founded in 1985 with proceeds from a supermarket chain, Fry's Electronics became a legendary big-box computer store that peaked at 34 locations across nine states
+* The store was unique for selling everything from complete computers to discrete electronic components, positioned as an "IKEA of computer stores" with themed locations and cafes
+* Major problems included poor customer service, difficulty with refunds, and being extremely slow to establish an online presence (didn't fully launch frys.com until 2006, giving competitors like Newegg a 5-year head start)
+* A 2008 embezzlement scandal saw VP Ausaf Umar Siddiqui steal $65-87 million through vendor kickback schemes, receiving a 6-year prison sentence in 2011
+* The combination of online competition, internal fraud, and operational issues forced Fry's to switch to a consignment model, leading to empty shelves and declining supplier relationships
+* After closing 4 stores in 2019-2020, Fry's shut down all remaining 30 stores on February 24, 2021, citing COVID-19, with final asset liquidation on April 2, 2021
+* The store had a mixed legacy - while some mourned the loss of a destination shopping experience, others criticized commission-based salespeople who were often unknowledgeable and aggressive
+
+### Fry's Electronics 的兴衰史
+
+* Fry's Electronics 成立于1985年,资金来自一家超市连锁店的出售收益,成为传奇性的大型电脑商店,鼎盛时期在九个州拥有34家门店
+* 该商店的独特之处在于销售从整机电脑到分立电子元件的所有产品,被定位为"电脑商店中的宜家",拥有主题化的门店和咖啡厅
+* 主要问题包括糟糕的客户服务、退货困难,以及在线业务发展极其缓慢(直到2006年才完全启动frys.com网站,让Newegg等竞争对手获得了5年的领先优势)
+* 2008年的贪污丑闻中,副总裁Ausaf Umar Siddiqui通过供应商回扣计划窃取了6500万至8700万美元,于2011年被判处6年监禁
+* 在线竞争、内部欺诈和运营问题的综合影响下,Fry's被迫转向寄售模式,导致货架空空、供应商关系恶化
+* 在2019-2020年关闭4家门店后,Fry's于2021年2月24日关闭了剩余的30家门店,理由是新冠疫情,最终资产清算于2021年4月2日完成
+* 该商店留下了复杂的遗产——一些人哀悼失去了目的地购物体验,而另一些人则批评其基于佣金的销售人员往往缺乏专业知识且态度强硬
+
+**[Read Original / 阅读原文](https://dfarq.homeip.net/what-happened-to-frys-electronics/)**
+
+### Mercury 2: World's Fastest Reasoning LLM Powered by Diffusion
+
+* Mercury 2 uses diffusion-based parallel refinement instead of sequential token generation, achieving >5x faster speeds (1,009 tokens/sec on NVIDIA Blackwell GPUs)
+* Solves the latency compounding problem in production AI loops (agents, retrieval pipelines, extraction jobs) where traditional autoregressive models create bottlenecks
+* Pricing: $0.25/1M input tokens, $0.75/1M output tokens with competitive quality to leading speed-optimized models
+* Key features: tunable reasoning, 128K context window, native tool use, schema-aligned JSON output, OpenAI API compatibility
+* Optimized for latency-sensitive applications: coding/autocomplete, agentic workflows, real-time voice interfaces, and search/RAG pipelines
+* Enables reasoning-grade quality within real-time latency budgets, changing the traditional trade-off between intelligence and speed
+* Available now for production use with enterprise evaluation support
+
+### Mercury 2:基于扩散技术的全球最快推理大语言模型
+
+* Mercury 2 采用基于扩散的并行优化技术,而非顺序生成token,实现了超过5倍的速度提升(在NVIDIA Blackwell GPU上达到1,009 tokens/秒)
+* 解决了生产环境AI循环中的延迟累积问题(智能体、检索管道、提取任务),传统自回归模型在这些场景中存在瓶颈
+* 定价:输入token $0.25/百万,输出token $0.75/百万,质量与领先的速度优化模型相当
+* 核心特性:可调节推理、128K上下文窗口、原生工具调用、符合schema的JSON输出、兼容OpenAI API
+* 针对延迟敏感应用优化:代码编写/自动补全、智能体工作流、实时语音交互、搜索/RAG管道
+* 在实时延迟预算内实现推理级质量,改变了传统智能与速度之间的权衡
+* 现已上线可用于生产环境,提供企业评估支持
+
+**[Read Original / 阅读原文](https://www.inceptionlabs.ai/blog/introducing-mercury-2)**
+
+### Pi: A Minimal Terminal Coding Agent
+
+* **Extensible by design** - Adapt pi to your workflow with TypeScript extensions, skills, prompt templates, and themes; bundle and share as npm or git packages
+* **15+ AI providers** - Supports Anthropic, OpenAI, Google, Azure, Bedrock, Mistral, Groq, Cerebras, xAI, Hugging Face, and more; switch models mid-session with keyboard shortcuts
+* **Tree-structured sessions** - Navigate conversation history as a tree, branch from any point, export to HTML or share via GitHub gist
+* **Advanced context engineering** - Project-specific instructions (AGENTS.md), custom system prompts (SYSTEM.md), auto-compaction, on-demand skills, and dynamic context injection
+* **Real-time steering** - Queue messages while agent works; use Enter for steering (interrupts) or Alt+Enter for follow-ups
+* **Build your own features** - No built-in sub-agents, plan mode, or permission gates; implement via extensions or install community packages
+* **Four integration modes** - Interactive TUI, print/JSON for scripts, RPC protocol for non-Node apps, and SDK for embedding
+* **Philosophy of minimalism** - Ships with powerful defaults but keeps core minimal; extend with 50+ example extensions including sub-agents, sandboxing, SSH execution, and even Doom
+
+### Pi:极简终端编码代理
+
+* **高度可扩展设计** - 通过 TypeScript 扩展、技能包、提示模板和主题适配你的工作流;打包为 npm 或 git 包分享
+* **支持 15+ AI 提供商** - 支持 Anthropic、OpenAI、Google、Azure、Bedrock、Mistral、Groq、Cerebras、xAI、Hugging Face 等;可通过快捷键随时切换模型
+* **树状结构会话** - 对话历史以树形存储,可导航到任意历史节点继续分支,支持导出 HTML 或通过 GitHub gist 分享
+* **高级上下文工程** - 项目级指令(AGENTS.md)、自定义系统提示(SYSTEM.md)、自动压缩、按需加载技能包和动态上下文注入
+* **实时引导控制** - 在代理工作时排队消息;Enter 发送引导消息(中断后续工具),Alt+Enter 发送跟进消息(等待完成)
+* **自建功能特性** - 不内置子代理、计划模式或权限弹窗;通过扩展实现或安装社区包
+* **四种集成模式** - 交互式 TUI、脚本用 print/JSON、非 Node 应用用 RPC 协议、嵌入应用用 SDK
+* **极简主义哲学** - 提供强大默认配置但保持核心极简;可使用 50+ 示例扩展,包括子代理、沙箱、SSH 执行,甚至运行 Doom 游戏
+
+**[Read Original / 阅读原文](https://pi.dev)**
+
+### vinext - Next.js API reimplemented on Vite for flexible deployment
+
+* Reimplements the Next.js API surface (routing, SSR, RSC, CLI) on top of Vite's build toolchain, allowing existing Next.js apps to run without the Next.js compiler
+* Supports both Pages Router and App Router with 94% API compatibility, automated migration via `vinext init`, fast HMR development, and one-command deployment to Cloudflare Workers
+* Notable as an AI-driven development experiment (most code written by Claude) that achieved Next.js compatibility in one week, with 1,700+ unit tests and 380+ E2E tests validating production-readiness for Cloudflare's edge platform
+
+### vinext - 基于 Vite 重新实现的 Next.js API,支持灵活部署
+
+* 在 Vite 构建工具链上重新实现了 Next.js API 表面(路由、SSR、RSC、CLI),使现有 Next.js 应用无需 Next.js 编译器即可运行
+* 同时支持 Pages Router 和 App Router,API 兼容性达 94%,通过 `vinext init` 自动迁移,提供快速 HMR 开发体验,一键部署到 Cloudflare Workers
+* 作为 AI 驱动开发实验(大部分代码由 Claude 编写)在一周内实现 Next.js 兼容性而备受关注,拥有 1700+ 单元测试和 380+ E2E 测试验证其在 Cloudflare 边缘平台的生产就绪性
+
+**[View Repository / 查看仓库](https://github.com/cloudflare/vinext)**
 
