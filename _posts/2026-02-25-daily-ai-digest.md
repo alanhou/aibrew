@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 25, 2026"
 date: 2026-02-25
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -297,79 +297,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 TanStack Start 百秒速览
-**频道:** Fireship
-
-* 视频内容概述: 快速介绍 TanStack Start——一个结合 TanStack Router 与 React 和 Solid 的新型全栈框架，专为构建现代 Web 应用而设计
-* 主要话题: 开发者体验优化、全栈功能特性、与 TanStack Router 的集成方式、对 React 和 Solid 框架的支持，以及与其他元框架的对比
-* 为何值得观看: Fireship 标志性的百秒速览格式，无需花费数小时阅读文档即可快速全面了解 TanStack Start 的核心价值。非常适合希望紧跟 React/Solid 生态系统最新全栈工具动态的开发者
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1fUBWAETmkk)**
-
-### Teaching a Dog to Code Games with AI
-
-* A developer trained their 9-pound cavapoo Momo to "code" video games by typing random keystrokes that Claude AI interprets as cryptic game design instructions
-* The system uses a Bluetooth keyboard connected to a Raspberry Pi 5, which filters keystrokes and forwards them to Claude Code via a custom Rust app called DogKeyboard
-* Games are built in Godot 4.6 with C# and take 1-2 hours from first keystroke to playable build
-* The prompt engineering trick: telling Claude it's working with an "eccentric genius game designer who speaks in cryptic riddles" rather than random input
-* Added minimum requirements checklist (working audio, WASD controls, enemies, visible player) to ensure quality output
-* Automated reward system using Aqara C1 Smart Pet Feeder controlled via Zigbee to dispense treats when Momo types enough
-* Built automated QA tools allowing Claude to screenshot and play-test its own games, fixing bugs autonomously
-* Chose Godot over Unity and Bevy because its text-based .tscn scene format lets Claude directly read and edit files
-* Hardware challenges included finding a durable keyboard (settled on Logitech Pebble Keys 2) after dogs destroyed silicone keyboards
-* Project started after the developer was laid off from Meta and had time to explore the idea
-
-### 教狗用 AI 编写游戏代码
-
-* 一位开发者训练了他 9 磅重的卡瓦普犬 Momo "编写"电子游戏，通过让它敲击键盘产生随机字符，由 Claude AI 将其解读为神秘的游戏设计指令
-* 系统使用连接到树莓派 5 的蓝牙键盘，通过名为 DogKeyboard 的自定义 Rust 应用过滤按键并转发给 Claude Code
-* 游戏在 Godot 4.6 中用 C# 构建，从首次按键到可玩版本需要 1-2 小时
-* 提示工程技巧：告诉 Claude 它正在与一位"用神秘谜语说话的古怪天才游戏设计师"合作，而非随机输入
-* 添加了最低要求清单（工作音频、WASD 控制、敌人、可见玩家角色）以确保输出质量
-* 使用通过 Zigbee 控制的 Aqara C1 智能宠物喂食器实现自动奖励系统，当 Momo 输入足够多时分发零食
-* 构建了自动化 QA 工具，让 Claude 能够截图并测试自己的游戏，自主修复 bug
-* 选择 Godot 而非 Unity 和 Bevy，因为其基于文本的 .tscn 场景格式让 Claude 可以直接读取和编辑文件
-* 硬件挑战包括寻找耐用键盘（最终选择罗技 Pebble Keys 2），此前狗狗们破坏了硅胶键盘
-* 该项目始于开发者从 Meta 被裁员后有时间探索这个想法
-
-**[Read Original / 阅读原文](https://www.calebleak.com/posts/dog-game/)**
-
-### Nearby Glasses: Privacy-Focused Smart Glasses Detection App
-
-* Open-source Android app that detects nearby smart glasses using Bluetooth Low Energy (BLE) scanning
-* Identifies devices by scanning manufacturer company IDs in BLE advertising frames (Meta, Snapchat, Luxottica)
-* Uses RSSI signal strength threshold (-75 dBm default) to determine proximity, roughly 3-15 meters depending on environment
-* Privacy-first design: no data collection, no telemetry, no ads; logs stored locally only
-* Configurable settings include RSSI threshold, notification cooldown, custom company IDs, and foreground service
-* Available on Google Play and GitHub releases; requires Bluetooth and location permissions (Android <13)
-* Developer acknowledges false positives possible (VR headsets, other devices from same manufacturers)
-* Created as response to privacy concerns around smart glasses' recording capabilities and facial recognition features
-* Features exportable debug logs and real-time scanning display for technical users
-* Uses Android Foreground Service for persistent background scanning
-
-### Nearby Glasses：注重隐私的智能眼镜检测应用
-
-* 开源安卓应用，通过蓝牙低功耗(BLE)扫描检测附近的智能眼镜
-* 通过扫描BLE广播帧中的制造商公司ID识别设备(Meta、Snapchat、Luxottica等)
-* 使用RSSI信号强度阈值(默认-75 dBm)判断距离，根据环境约为3-15米
-* 隐私优先设计：无数据收集、无遥测、无广告；日志仅本地存储
-* 可配置设置包括RSSI阈值、通知冷却时间、自定义公司ID和前台服务
-* 可在Google Play和GitHub发布页下载；需要蓝牙和位置权限(Android 13以下)
-* 开发者承认可能存在误报(VR头显、同制造商其他设备)
-* 创建目的是应对智能眼镜录制功能和面部识别功能带来的隐私担忧
-* 提供可导出的调试日志和实时扫描显示，方便技术用户使用
-* 使用Android前台服务实现持久后台扫描
-
-**[Read Original / 阅读原文](https://github.com/yjeanrenaud/yj_nearbyglasses)**
-
-<!-- [Title-Only] -->
-### Hacking an old Kindle to display bus arrival times
-
-* This article likely covers a hardware/software project that repurposes an old Kindle e-reader as a real-time bus arrival display. Based on the title, it probably details the technical process of jailbreaking or modifying the Kindle, connecting it to transit APIs, and creating a custom interface to show live bus schedules.
-* This is interesting because it demonstrates creative hardware reuse, combining IoT concepts with practical everyday utility. E-ink displays are perfect for always-on information dashboards due to their low power consumption and excellent readability. Readers interested in DIY electronics, smart home projects, or sustainable tech repurposing would find this particularly appealing.
-
----
-
 ### 改造旧 Kindle 显示公交到站时间
 
 * 根据标题推测，这篇文章可能介绍了一个将旧 Kindle 电子阅读器改造成实时公交到站信息显示屏的硬件/软件项目。内容应该包括如何破解或修改 Kindle、连接公交 API 接口，以及创建自定义界面来显示实时公交时刻表的技术细节。
@@ -572,4 +499,158 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Kevin Powell 分享了他在自己网站上遇到的实际问题,并演示了如何使用容器查询单位优雅地解决渐变变形问题。这是一个快速、可操作的技巧,解决了开发者在弹性布局中使用渐变时面临的常见 CSS 挑战。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJ3WE0Ohfpc)**
+
+### Teaching a Dog to Code Games with AI
+
+* A developer trained their 9-pound cavapoo Momo to "code" video games by typing random keystrokes that Claude AI interprets as cryptic game design instructions
+* The system uses a Bluetooth keyboard connected to a Raspberry Pi 5, which filters keystrokes and forwards them to Claude Code via a custom Rust app called DogKeyboard
+* Games are built in Godot 4.6 with C# and take 1-2 hours from first keystroke to playable build
+* The prompt engineering trick: telling Claude it's working with an "eccentric genius game designer who speaks in cryptic riddles" rather than random input
+* Added minimum requirements checklist (working audio, WASD controls, enemies, visible player) to ensure quality output
+* Automated reward system using Aqara C1 Smart Pet Feeder controlled via Zigbee to dispense treats when Momo types enough
+* Built automated QA tools allowing Claude to screenshot and play-test its own games, fixing bugs autonomously
+* Chose Godot over Unity and Bevy because its text-based .tscn scene format lets Claude directly read and edit files
+* Hardware challenges included finding a durable keyboard (settled on Logitech Pebble Keys 2) after dogs destroyed silicone keyboards
+* Project started after the developer was laid off from Meta and had time to explore the idea
+
+### 教狗用 AI 编写游戏代码
+
+* 一位开发者训练了他 9 磅重的卡瓦普犬 Momo "编写"电子游戏，通过让它敲击键盘产生随机字符，由 Claude AI 将其解读为神秘的游戏设计指令
+* 系统使用连接到树莓派 5 的蓝牙键盘，通过名为 DogKeyboard 的自定义 Rust 应用过滤按键并转发给 Claude Code
+* 游戏在 Godot 4.6 中用 C# 构建，从首次按键到可玩版本需要 1-2 小时
+* 提示工程技巧：告诉 Claude 它正在与一位"用神秘谜语说话的古怪天才游戏设计师"合作，而非随机输入
+* 添加了最低要求清单（工作音频、WASD 控制、敌人、可见玩家角色）以确保输出质量
+* 使用通过 Zigbee 控制的 Aqara C1 智能宠物喂食器实现自动奖励系统，当 Momo 输入足够多时分发零食
+* 构建了自动化 QA 工具，让 Claude 能够截图并测试自己的游戏，自主修复 bug
+* 选择 Godot 而非 Unity 和 Bevy，因为其基于文本的 .tscn 场景格式让 Claude 可以直接读取和编辑文件
+* 硬件挑战包括寻找耐用键盘（最终选择罗技 Pebble Keys 2），此前狗狗们破坏了硅胶键盘
+* 该项目始于开发者从 Meta 被裁员后有时间探索这个想法
+
+**[Read Original / 阅读原文](https://www.calebleak.com/posts/dog-game/)**
+
+### Moonshine Voice: Open-Source Real-Time Speech Recognition Toolkit
+
+* On-device AI speech-to-text toolkit optimized for live voice applications with no API keys or cloud dependencies required
+* Outperforms Whisper in streaming scenarios with 5-100x lower latency (e.g., 107ms vs 11,286ms for medium models on MacBook Pro)
+* Cross-platform support with unified API across Python, iOS, Android, Linux, Windows, MacOS, Raspberry Pi, and IoT devices
+* Flexible input windows and intelligent caching eliminate Whisper's fixed 30-second window limitation and redundant computation
+* Language-specific models for English, Spanish, Mandarin, Japanese, Korean, Vietnamese, Ukrainian, and Arabic with higher accuracy than multilingual approaches
+* Model sizes range from 26MB tiny models (12% WER) to 245M parameter medium models (6.65% WER), beating Whisper Large V3's 7.44% WER
+* Built-in high-level APIs for transcription, speaker diarization, and intent recognition without requiring ML expertise
+* Quick start available via pip install with microphone transcription and intent recognition examples
+
+### Moonshine Voice:开源实时语音识别工具包
+
+* 设备端AI语音转文字工具包,专为实时语音应用优化,无需API密钥或云服务依赖
+* 在流式场景中性能超越Whisper,延迟降低5-100倍(例如MacBook Pro上中型模型107ms对比11,286ms)
+* 跨平台支持,在Python、iOS、Android、Linux、Windows、MacOS、树莓派和物联网设备上提供统一API
+* 灵活的输入窗口和智能缓存机制,消除了Whisper固定30秒窗口限制和冗余计算问题
+* 针对英语、西班牙语、中文、日语、韩语、越南语、乌克兰语和阿拉伯语的专用模型,准确度高于多语言方案
+* 模型尺寸从26MB微型模型(12%词错误率)到2.45亿参数中型模型(6.65%词错误率),超越Whisper Large V3的7.44%词错误率
+* 内置转录、说话人识别和意图识别等高级API,无需机器学习专业知识即可使用
+* 通过pip安装即可快速开始,提供麦克风转录和意图识别示例
+
+**[Read Original / 阅读原文](https://github.com/moonshine-ai/moonshine)**
+
+### Apple Accelerates U.S. Manufacturing with Mac mini Production
+
+* Apple announces Mac mini production will move to Houston, Texas later in 2026, marking the first time this product line will be manufactured in the U.S.
+* The Houston facility will double in size to accommodate Mac mini production alongside existing advanced AI server manufacturing, creating thousands of jobs
+* A new 20,000-square-foot Advanced Manufacturing Center will open in Houston to provide hands-on training in advanced manufacturing techniques to students, supplier employees, and American businesses
+* Apple's $600 billion U.S. commitment has achieved major milestones: sourcing over 20 billion U.S.-made chips from 24 factories across 12 states, with partners including TSMC, Broadcom, and Texas Instruments
+* Key supplier investments include GlobalWafers' $4 billion silicon wafer facility in Sherman, Texas, and Amkor's $7 billion semiconductor packaging facility in Peoria, Arizona
+* Corning's Kentucky facility now produces 100% of iPhone and Apple Watch cover glass for global shipments
+* Apple Manufacturing Academy in Detroit supports over 130 small and medium-sized manufacturers with AI, automation, and smart manufacturing training, now expanded with virtual programming nationwide
+
+### 苹果加速美国制造业布局,Mac mini 生产线落户美国
+
+* 苹果宣布将于 2026 年下半年在德克萨斯州休斯顿生产 Mac mini,这是该产品线首次在美国本土制造
+* 休斯顿工厂规模将扩大一倍,在现有先进 AI 服务器制造基础上增加 Mac mini 生产线,预计创造数千个就业岗位
+* 新建 20,000 平方英尺的先进制造中心将在休斯顿开放,为学生、供应商员工和美国企业提供先进制造技术实操培训
+* 苹果 6000 亿美元美国投资承诺已取得重大进展:从 12 个州的 24 家工厂采购超过 200 亿颗美国制造芯片,合作伙伴包括台积电、博通和德州仪器
+* 主要供应商投资包括:环球晶圆在德州谢尔曼投资 40 亿美元建设硅晶圆厂,安靠在亚利桑那州皮奥里亚投资 70 亿美元建设半导体先进封装测试厂
+* 康宁肯塔基州工厂现已 100% 专注于生产全球出货的 iPhone 和 Apple Watch 盖板玻璃
+* 底特律苹果制造学院已为超过 130 家美国中小型制造商提供 AI、自动化和智能制造培训,并推出虚拟课程面向全国企业
+
+**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/)**
+
+### 🎬 Why AI Needs a Trillion Words to Do What Humans Do Easily - Dario Amodei
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Anthropic CEO Dario Amodei exploring the fundamental differences between human and AI learning, examining why large language models require massive amounts of training data to achieve capabilities that humans develop naturally with far less input.
+
+* Key topics discussed: The data efficiency gap between human and artificial intelligence, the architectural and algorithmic reasons behind AI's need for trillion-token training datasets, insights into how human brains process and generalize information compared to neural networks, and implications for future AI development and scaling laws.
+
+* Why it's worth watching: This conversation offers rare insights from one of AI's leading researchers into the core challenges of machine learning. Understanding why AI systems are so data-hungry compared to humans is crucial for anyone interested in the limitations and future trajectory of AI technology. Amodei's perspective provides both technical depth and accessible explanations of one of AI's most fundamental puzzles.
+
+---
+
+### 🎬 为什么AI需要万亿词汇才能做到人类轻松完成的事 - Dario Amodei
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与Anthropic首席执行官Dario Amodei的深度对话,探讨人类学习与AI学习之间的根本差异,研究为什么大型语言模型需要海量训练数据才能获得人类用少量输入就能自然发展的能力。
+
+* 主要话题: 人类智能与人工智能之间的数据效率差距、AI需要万亿级token训练数据集背后的架构和算法原因、人脑处理和泛化信息的方式与神经网络的对比,以及对未来AI发展和扩展定律的影响。
+
+* 为何值得观看: 这次对话提供了来自AI领域顶尖研究者的罕见洞察,揭示了机器学习的核心挑战。理解为什么AI系统相比人类如此依赖数据,对于任何关注AI技术局限性和未来发展轨迹的人都至关重要。Amodei的观点既有技术深度,又能通俗易懂地解释AI最根本的谜题之一。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XLuI5RiMncA)**
+
+### 🎬 Coding Will Be Solved For Everybody
+
+**Channel:** Y Combinator
+
+* What the video covers: Boris Cherny, creator of Claude Code, discusses the future of coding accessibility and how AI is democratizing software development
+* Key topics discussed: AI-powered coding tools, the evolution of programming accessibility, how coding barriers are being eliminated for non-technical users, and the implications for the tech industry
+* Why it's worth watching: Offers insider perspective from a leading AI coding tool creator on how AI will fundamentally change who can build software, making it accessible to everyone regardless of technical background
+
+---
+
+### 🎬 编程将为所有人解决
+
+**频道:** Y Combinator
+
+* 视频内容概述: Claude Code 的创建者 Boris Cherny 讨论编程可及性的未来,以及 AI 如何使软件开发民主化
+* 主要话题: AI 驱动的编程工具、编程可及性的演变、如何为非技术用户消除编程障碍,以及对科技行业的影响
+* 为何值得观看: 提供来自领先 AI 编程工具创建者的内部视角,探讨 AI 将如何从根本上改变谁能构建软件,使其对所有人开放,无论技术背景如何
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jnSGYd3gdOs)**
+
+### 🎬 You're Not Behind (Yet): How to Build AI Agents in 2026 (no coding)
+
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive guide to building AI agents in 2026 without any coding knowledge, making advanced AI automation accessible to non-technical users
+* Key topics discussed: No-code AI agent development platforms, practical implementation strategies, current state of AI agent technology, and actionable steps for beginners to get started with AI automation
+* Why it's worth watching: Perfect for anyone feeling overwhelmed by AI advancement - this video demystifies AI agents and provides a clear roadmap to leverage this technology without technical barriers. Includes a free AI Agents Playbook resource to accelerate your learning journey
+
+---
+
+### 🎬 你还没有落后(但要抓紧):2026年如何构建AI智能体(无需编程)
+
+**频道:** Futurepedia
+
+* 视频内容概述: 全面指导如何在2026年无需编程知识构建AI智能体,让非技术用户也能掌握先进的AI自动化技术
+* 主要话题: 无代码AI智能体开发平台、实用实施策略、AI智能体技术现状,以及初学者入门AI自动化的可行步骤
+* 为何值得观看: 非常适合对AI发展感到不知所措的人群 - 本视频揭开AI智能体的神秘面纱,提供清晰的技术应用路线图,无需技术门槛。附赠免费AI智能体实战手册资源,加速学习进程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ibFJ--CH3cQ)**
+
+### 🎬 Subscribe for more coding tips⬆️#trending #ai #yt #shorts #tricks #code #coding #study #fun
+**Channel:** code with sweety
+
+* This appears to be a promotional short video encouraging viewers to subscribe for coding content
+* Likely covers quick coding tips, tricks, or educational snippets in a short-form format
+* Worth watching if you're looking for bite-sized coding knowledge and want to join a community focused on improving programming skills through accessible, trending content
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** code with sweety
+
+* 这是一个推广订阅的短视频,鼓励观众订阅以获取编程内容
+* 可能涵盖快速编程技巧、窍门或教育片段,采用短视频格式
+* 如果你正在寻找简短易懂的编程知识,并希望加入一个通过热门内容提升编程技能的社区,值得一看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=U32X53WNlhw)**
 
