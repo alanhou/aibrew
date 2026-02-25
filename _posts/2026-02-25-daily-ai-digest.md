@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 25, 2026"
 date: 2026-02-25
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 16 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：16篇黑客新闻，3个热门项目，11个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -807,4 +807,155 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 从无常角度看待死亡——生命如"融雪"或梦醒
 
 **[Read Original / 阅读原文](https://www.secretorum.life/p/japanese-death-poems-part-3)**
+
+### Denmark Ditches Microsoft for Open-Source in Digital Independence Push
+
+* Denmark's digitalization ministry is replacing Microsoft products with LibreOffice and open-source alternatives to reduce dependence on U.S. tech companies
+* Over half of ministry staff will switch from Microsoft Office to LibreOffice next month, with full transition planned by autumn 2025
+* The move helps avoid costs of managing Windows 10 systems losing support in October, though ministry can revert if transition proves too complex
+* Copenhagen and Aarhus, Denmark's two largest municipalities, previously announced similar plans citing financial concerns, market dominance issues, and U.S.-Denmark political tensions
+* Part of broader European trend toward "digital sovereignty" - German state Schleswig-Holstein also abandoning Microsoft Office for LibreOffice and planning Linux migration
+* LibreOffice, developed by Berlin-based non-profit The Document Foundation, includes word processing, spreadsheets, presentations, vector graphics, databases, and formula editing tools
+
+### 丹麦政府弃用微软软件,推动数字独立
+
+* 丹麦数字化部计划用 LibreOffice 和开源软件替代微软产品,以减少对美国科技公司的依赖
+* 超过半数部门员工将于下月从 Microsoft Office 切换到 LibreOffice,计划在 2025 年秋季完成全面过渡
+* 此举有助于避免管理即将在 10 月失去支持的 Windows 10 系统的成本,但如果过渡过于复杂,部门可以恢复使用微软产品
+* 丹麦最大的两个城市哥本哈根和奥胡斯此前已宣布类似计划,理由是财务考虑、市场垄断问题以及美丹政治紧张关系
+* 这是欧洲"数字主权"趋势的一部分——德国石勒苏益格-荷尔斯泰因州也在放弃 Microsoft Office 转用 LibreOffice,并计划迁移到 Linux 系统
+* LibreOffice 由柏林非营利组织文档基金会开发,包含文字处理、电子表格、演示文稿、矢量图形、数据库和公式编辑等工具
+
+**[Read Original / 阅读原文](https://therecord.media/denmark-digital-agency-microsoft-digital-independence)**
+
+### LLM Skirmish: A Code-Based RTS Benchmark for Large Language Models
+
+* LLM Skirmish is a novel benchmark where LLMs compete in 1v1 real-time strategy games by writing executable battle strategies in code
+* Built on the Screeps open-source API, the benchmark tests LLMs' coding abilities in a dynamic game environment where they must eliminate opponents' spawns within 2,000 frames
+* Tournament structure consists of 5 rounds with 10 matches per round, allowing models to learn from previous results and adapt strategies between rounds
+* Four out of five evaluated models showed significant in-context learning improvements: Claude Opus 4.5 (+20%), GLM 4.7 (+16%), GPT 5.2 (+7%), and Grok 4.1 Fast (+6%)
+* Gemini 3 Pro exhibited an anomaly: dominated round 1 with 70% win rate using simple strategies, but dropped to 15% in rounds 2-5 due to context rot issues
+* Claude Opus 4.5 achieved the highest ELO rating (1778) but at the highest cost ($4.12/round), while GPT 5.2 delivered 1.7x more ELO per dollar
+* GPT 5.2 demonstrated verbose coding with top-performing scripts but sometimes overengineered solutions with excessive helper functions
+* GLM 4.7 showed the second-steepest learning curve but relied on basic tactics without implementing advanced strategies like kiting or formations
+* The benchmark uses OpenCode, an open-source agentic coding harness, running each LLM in isolated Docker containers with script validation and up to 3 fix attempts
+
+### LLM Skirmish:基于代码的大语言模型即时战略基准测试
+
+* LLM Skirmish 是一个创新基准测试,让大语言模型通过编写可执行的战斗策略代码在1v1即时战略游戏中竞争
+* 基于 Screeps 开源 API 构建,该基准测试在动态游戏环境中测试 LLM 的编码能力,模型需在2000帧内消灭对手的生成建筑
+* 锦标赛结构包含5轮比赛,每轮10场对局,允许模型从先前结果中学习并在轮次间调整策略
+* 五个评估模型中有四个显示出显著的上下文学习改进:Claude Opus 4.5 (+20%)、GLM 4.7 (+16%)、GPT 5.2 (+7%) 和 Grok 4.1 Fast (+6%)
+* Gemini 3 Pro 表现异常:在第1轮以简单策略主导并获得70%胜率,但在第2-5轮因上下文腐化问题降至15%
+* Claude Opus 4.5 获得最高 ELO 评分(1778),但成本也最高(每轮$4.12),而 GPT 5.2 的性价比是 Claude Opus 4.5 的1.7倍
+* GPT 5.2 展示了冗长的编码风格,拥有顶级表现的脚本,但有时会过度设计,使用过多辅助函数
+* GLM 4.7 显示出第二陡峭的学习曲线,但依赖基础战术,未实现风筝、阵型或承诺逻辑等高级策略
+* 该基准测试使用开源的 OpenCode 代理编码框架,在隔离的 Docker 容器中运行每个 LLM,提供脚本验证和最多3次修复尝试
+
+**[Read Original / 阅读原文](https://llmskirmish.com/)**
+
+### HUMAN=true: Optimizing AI Coding Agents Through Context Window Management
+
+* AI coding agents suffer from "context pollution" when build tools dump excessive, irrelevant output into stdout, wasting tokens and degrading performance
+* A TypeScript monorepo using Turborepo generated 1005 words (~750 tokens) of build output per command, most of it useless to LLMs
+* Optimization strategies include setting `outputLogs: "errors-only"` in turbo.json, using `TURBO_NO_UPDATE_NOTIFIER=1`, and leveraging `NO_COLOR=1` to strip ANSI codes
+* The `CI=true` environment variable offers a declarative approach, automatically adjusting tool behavior for non-interactive environments
+* The author proposes a new `LLM=true` environment variable as a standard for tools to minimize output when used by AI agents
+* Three benefits: reduced token costs, cleaner context windows for better AI output, and lower energy consumption
+* Provocative closing thought: as AI agents dominate coding, perhaps the exception flag should be `HUMAN=true` instead
+
+### HUMAN=true：通过上下文窗口管理优化 AI 编码代理
+
+* AI 编码代理会因"上下文污染"而受损，当构建工具向 stdout 输出大量无关信息时，会浪费 token 并降低性能
+* 使用 Turborepo 的 TypeScript monorepo 每次构建命令生成 1005 个单词（约 750 个 token），其中大部分对 LLM 毫无用处
+* 优化策略包括在 turbo.json 中设置 `outputLogs: "errors-only"`，使用 `TURBO_NO_UPDATE_NOTIFIER=1`，以及利用 `NO_COLOR=1` 去除 ANSI 转义码
+* `CI=true` 环境变量提供了声明式方法，自动调整工具行为以适应非交互式环境
+* 作者提议建立新的 `LLM=true` 环境变量标准，让工具在被 AI 代理使用时最小化输出
+* 三大好处：降低 token 成本、更清洁的上下文窗口以获得更好的 AI 输出、降低能源消耗
+* 发人深省的结论：当 AI 代理主导编码时，也许异常标志应该改为 `HUMAN=true`
+
+**[Read Original / 阅读原文](https://blog.codemine.be/posts/2026/20260222-be-quiet/)**
+
+### Scrapling - Adaptive Web Scraping Framework for Modern Websites
+
+* An all-in-one Python web scraping framework that scales from single requests to full-scale concurrent crawls with intelligent element tracking that adapts to website changes
+* Adaptive parser automatically relocates elements when pages update, built-in anti-bot bypass (Cloudflare Turnstile), Scrapy-like spider API with pause/resume, multi-session support (HTTP + headless browsers), streaming mode with real-time stats, automatic proxy rotation, and browser fingerprint spoofing
+* Trending with 1,970 stars today because it solves the biggest pain points in web scraping: handling anti-bot systems out of the box, surviving website redesigns through adaptive parsing, and providing a unified interface that works for both simple scripts and enterprise-scale crawls
+
+### Scrapling - 适应性网页抓取框架
+
+* 一个全能的 Python 网页抓取框架,从单个请求扩展到大规模并发爬取,具有智能元素跟踪功能,可自动适应网站变化
+* 自适应解析器在页面更新时自动重新定位元素,内置反机器人绕过(Cloudflare Turnstile),类 Scrapy 的爬虫 API 支持暂停/恢复,多会话支持(HTTP + 无头浏览器),实时统计的流式模式,自动代理轮换,以及浏览器指纹伪装
+* 今日获得 1,970 星标,因为它解决了网页抓取中最大的痛点:开箱即用地处理反机器人系统,通过自适应解析在网站重新设计后仍能正常工作,并提供统一接口,既适用于简单脚本也适用于企业级大规模爬取
+
+**[View Repository / 查看仓库](https://github.com/D4Vinci/Scrapling)**
+
+### GitNexus - Code Intelligence Engine for AI Agents
+
+* Transforms any codebase into a knowledge graph that maps dependencies, call chains, clusters, and execution flows—giving AI agents complete architectural context to avoid missing code relationships
+* Dual-mode operation: CLI + MCP server for production development (integrates with Cursor, Claude Code, Windsurf, OpenCode) or browser-based Web UI for quick exploration without installation
+* Exposes 7 MCP tools (hybrid search, symbol context, impact analysis, change detection, coordinated rename, Cypher queries) plus resources and prompts that let even smaller AI models compete with larger ones through deep codebase understanding
+
+### GitNexus - AI 代理的代码智能引擎
+
+* 将任何代码库转换为知识图谱,映射依赖关系、调用链、集群和执行流程——为 AI 代理提供完整的架构上下文,避免遗漏代码关系
+* 双模式运行:CLI + MCP 服务器用于生产开发(集成 Cursor、Claude Code、Windsurf、OpenCode),或基于浏览器的 Web UI 用于快速探索无需安装
+* 提供 7 个 MCP 工具(混合搜索、符号上下文、影响分析、变更检测、协调重命名、Cypher 查询)以及资源和提示,让小型 AI 模型通过深度代码库理解与大型模型竞争
+
+**[View Repository / 查看仓库](https://github.com/abhigyanpatwari/GitNexus)**
+
+### Superpowers - Agentic Skills Framework for AI Coding Agents
+
+* **What it does**: A complete software development workflow system that transforms AI coding agents into disciplined developers. Instead of jumping straight into code, agents first clarify requirements, create digestible specs, build detailed implementation plans, then execute through autonomous subagent-driven development with built-in testing and review cycles.
+
+* **Key features**: Composable skills library covering the full dev lifecycle - brainstorming (Socratic design refinement), test-driven development (strict RED-GREEN-REFACTOR), systematic debugging, git worktree management, subagent dispatching with two-stage reviews, and automated code review workflows. Supports Claude Code, Cursor, Codex, and OpenCode through plugin marketplaces or manual setup.
+
+* **Why it's notable**: Enables AI agents to work autonomously for hours without deviation by enforcing engineering discipline (TDD, YAGNI, DRY) through mandatory workflows rather than suggestions. With 1,247 stars today, it's gaining traction as a practical solution to the "AI agents that write untested spaghetti code" problem - turning chaotic AI coding into structured, reviewable, test-first development.
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+* **功能介绍**: 为 AI 编码代理打造的完整软件开发工作流系统。代理不会直接开始写代码,而是先澄清需求、创建易读的规格说明、构建详细实施计划,然后通过自主的子代理驱动开发流程执行,内置测试和审查循环。
+
+* **主要特点**: 可组合的技能库覆盖完整开发生命周期 - 头脑风暴(苏格拉底式设计优化)、测试驱动开发(严格的红-绿-重构循环)、系统化调试、Git 工作树管理、带两阶段审查的子代理调度、自动化代码审查工作流。支持 Claude Code、Cursor、Codex 和 OpenCode,可通过插件市场或手动安装。
+
+* **为何值得关注**: 通过强制执行工程纪律(TDD、YAGNI、DRY)而非建议,使 AI 代理能够自主工作数小时而不偏离计划。今日获得 1,247 星标,作为"AI 代理编写未测试意大利面代码"问题的实用解决方案而备受关注 - 将混乱的 AI 编码转变为结构化、可审查、测试优先的开发流程。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Claude for Financial Services Plugins - Turn Claude into a Financial Services Specialist
+
+* Transforms Claude into a domain expert for investment banking, equity research, private equity, and wealth management through modular plugins
+* Delivers end-to-end workflows from data gathering to finished deliverables — build DCF models, draft CIMs, generate equity research reports, create IC memos, all with live formulas and firm-branded templates
+* Integrates 11 major financial data providers (Daloopa, FactSet, S&P Global, Bloomberg LSEG, PitchBook, etc.) via MCP protocol, eliminating tab-switching and manual data entry
+* Offers 5 specialized plugins (core financial analysis + 4 function-specific add-ons) with 41 skills, 38 slash commands, and fully customizable workflows that adapt to your firm's processes and templates
+
+### Claude for Financial Services Plugins - 将 Claude 打造为金融服务专家
+
+* 功能介绍:通过模块化插件将 Claude 转变为投资银行、股票研究、私募股权和财富管理领域的专家,支持从数据采集到成品交付的完整工作流——构建 DCF 模型、起草 CIM 文件、生成股票研究报告、创建投资委员会备忘录,所有输出均包含实时公式和企业品牌模板
+* 主要特点:集成 11 家主流金融数据供应商(Daloopa、FactSet、S&P Global、彭博 LSEG、PitchBook 等)通过 MCP 协议连接,消除多标签页切换和手动数据录入;提供 5 个专业插件(核心金融分析 + 4 个功能插件),包含 41 项技能、38 个斜杠命令
+* 为何值得关注:完全可定制的工作流系统,可适配企业特定流程和模板;基于文件的架构(Markdown + JSON)无需编码即可扩展;由 Anthropic 官方发布,专为 Claude Cowork 和 Claude Code 设计,已获 866 stars,代表 AI 在专业金融领域应用的重要突破
+
+**[View Repository / 查看仓库](https://github.com/anthropics/financial-services-plugins)**
+
+### 🎬 Python Essentials for AI Agents – Tutorial
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** A comprehensive Python course focused on building the technical foundation for creating autonomous AI agents, covering the essential programming concepts and tools needed for AI development
+* **Key topics discussed:** Python fundamentals tailored for AI applications, autonomous intelligence systems, technical stack components for agent-based AI, and practical implementation techniques for building intelligent agents
+* **Why it's worth watching:** Perfect for developers looking to transition into AI agent development, this tutorial bridges the gap between general Python knowledge and specialized AI agent programming, offering hands-on guidance from the trusted freeCodeCamp platform
+
+---
+
+### 🎬 Python AI 智能体开发基础教程
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 一门全面的 Python 课程,专注于构建自主 AI 智能体所需的技术基础,涵盖 AI 开发必备的编程概念和工具
+* **主要话题:** 面向 AI 应用的 Python 基础知识、自主智能系统、AI 智能体技术栈组件,以及构建智能代理的实用实现技巧
+* **为何值得观看:** 非常适合想要转型到 AI 智能体开发的开发者,本教程在通用 Python 知识和专业 AI 智能体编程之间搭建桥梁,由值得信赖的 freeCodeCamp 平台提供实战指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UsfpzxZNsPo)**
 
