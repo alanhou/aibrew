@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 26, 2026"
 date: 2026-02-26
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -286,4 +286,232 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于从事网络编程的开发者来说是必备知识,了解何时使用每种协议能够显著影响应用程序的性能和可靠性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=cVJRxBXgts8)**
+
+### gotreesitter: Pure-Go Tree-Sitter Runtime
+
+* Pure-Go implementation of tree-sitter parser — no CGo, no C toolchain, WASM-ready
+* 90x faster incremental edits than CGo binding (1.38 μs vs 124 μs), 14,000x faster no-op reparse
+* Supports 205 languages (204 full, 1 partial) with existing grammars working without recompilation
+* Eliminates CGo pain points: cross-compilation works, no gcc required, race detector/fuzzing compatible
+* Complete query API with S-expression patterns, predicates, syntax highlighting, and symbol tagging
+* Incremental parsing reuses unchanged subtrees automatically for editor/LSP performance
+* Architecture includes LR(1)/GLR parser, DFA lexer, arena allocator, external scanner VM, and query engine
+* Configurable grammar loading: embedded blobs, external files with mmap, or curated language sets
+* Tunable grammar cache for long-lived processes with runtime memory management
+
+### gotreesitter:纯 Go 语言 Tree-Sitter 运行时
+
+* 纯 Go 实现的 tree-sitter 解析器——无 CGo、无 C 工具链、支持 WASM
+* 增量编辑比 CGo 绑定快 90 倍(1.38 μs vs 124 μs),无操作重解析快 14,000 倍
+* 支持 205 种语言(204 种完整,1 种部分),现有语法无需重新编译即可使用
+* 消除 CGo 痛点:跨平台编译可用、无需 gcc、兼容竞态检测器/模糊测试
+* 完整查询 API,支持 S 表达式模式、谓词、语法高亮和符号标记
+* 增量解析自动重用未更改的子树,优化编辑器/LSP 性能
+* 架构包含 LR(1)/GLR 解析器、DFA 词法分析器、内存池分配器、外部扫描器虚拟机和查询引擎
+* 可配置语法加载:嵌入式 blob、外部文件(支持 mmap)或精选语言集
+* 长期运行进程的可调语法缓存,支持运行时内存管理
+
+**[Read Original / 阅读原文](https://github.com/odvcencio/gotreesitter)**
+
+### Jimi Hendrix's Analog Wizardry: An Engineering Analysis
+
+* On February 3, 1967, Hendrix recorded "Purple Haze" at Olympic Studios using the custom Octavia pedal, creating sounds so novel that remastering engineers needed a note explaining the distortion was intentional
+* An engineer analyzed Hendrix's signal chain using circuit simulations (ngspice) to replace the "Hendrix was an alien" narrative with reproducible engineering insights
+* Hendrix's setup addressed electric guitar limitations: hard attack, fast decay, and poor sustain compared to bowed strings or organs
+* The signal chain included Fuzz Face, Octavia, wah-wah, Uni-Vibe pedals, and Marshall amplifier, creating a modular analog system controlled by body movement in an acoustic feedback loop
+* Fuzz Face: Two-transistor feedback amplifier creating "fuzzy" distortion with famous "cleanup effect" when guitar volume reduced due to low input impedance (20kΩ)
+* Octavia: Used rectifier to flip waveform troughs into peaks, doubling frequency for octave-higher harmonic content
+* Wah-wah: Band-pass filter sweeping 300Hz to 2kHz, creating vowel-like "talking" guitar sounds
+* Uni-Vibe: Four cascaded phase-shift sections with photoresistors adding motion and spatial depth
+* Marshall amplifier driven near saturation extended sustain and created acoustic feedback system that Hendrix tuned with physical positioning
+* All simulation code available on GitHub (Hendrix-Systems-Lab) for reproduction
+
+### Jimi Hendrix 的模拟电路魔法：工程学分析
+
+* 1967年2月3日，Hendrix 在奥林匹克录音室使用定制 Octavia 踏板录制《Purple Haze》，创造的声音如此新颖，以至于母带工程师需要附注说明失真是有意为之
+* 一位工程师使用电路仿真（ngspice）分析 Hendrix 的信号链，用可重现的工程见解取代"Hendrix 是外星人"的叙事
+* Hendrix 的设置解决了电吉他的局限性：硬起音、快速衰减、以及相比弓弦乐器或管风琴较差的延音
+* 信号链包括 Fuzz Face、Octavia、哇音、Uni-Vibe 踏板和 Marshall 放大器，形成通过身体动作在声学反馈回路中控制的模块化模拟系统
+* Fuzz Face：双晶体管反馈放大器产生"模糊"失真，由于低输入阻抗（20kΩ）在降低吉他音量时产生著名的"清理效果"
+* Octavia：使用整流器将波形波谷翻转为波峰，使频率加倍产生高八度泛音内容
+* 哇音踏板：带通滤波器扫频范围 300Hz 至 2kHz，创造类似元音的"说话"吉他音色
+* Uni-Vibe：四级级联相移电路配合光敏电阻，增添运动感和空间深度
+* Marshall 放大器接近饱和驱动延长延音并创造声学反馈系统，Hendrix 通过物理位置调节
+* 所有仿真代码可在 GitHub（Hendrix-Systems-Lab）获取以供重现
+
+**[Read Original / 阅读原文](https://spectrum.ieee.org/jimi-hendrix-systems-engineer)**
+
+### Om Programming Language: Overview and Technical Documentation
+
+* Om is a novel concatenative, homoiconic programming language with maximally-simple syntax and UTF-8 correctness
+* Currently in early "proof of concept" stage, not production-ready, requiring additional operations and optimizations
+* Released under Eclipse Public License v1.0
+* Implemented as a C++ header-only library with stand-alone interpreter option
+* Available on GitHub with development and released versions
+* Build dependencies include CMake, ICU4C, and Boost libraries
+* Supports multiple platforms: Mac OS X, Windows (with Visual Studio and Cygwin), and Ubuntu
+* Uses prefix notation (Polish notation) instead of traditional postfix, preventing stack underflows
+* Enables single-pass read-parse-evaluate with streaming output
+* Three fundamental function types: Identity, Constant, and Operation
+* Syntax consists of three elements: operators, separators, and operands
+* Can be integrated into C++ or Objective-C++ projects as header-only library
+
+### Om 编程语言:概述与技术文档
+
+* Om 是一种新颖的连接式、同像性编程语言,具有极简语法和 UTF-8 正确性
+* 目前处于早期"概念验证"阶段,尚未达到生产就绪状态,需要添加更多操作和优化
+* 采用 Eclipse 公共许可证 v1.0 发布
+* 实现为 C++ 纯头文件库,可选独立解释器
+* 在 GitHub 上提供开发版本和发布版本
+* 构建依赖包括 CMake、ICU4C 和 Boost 库
+* 支持多平台:Mac OS X、Windows(需 Visual Studio 和 Cygwin)和 Ubuntu
+* 使用前缀表示法(波兰表示法)而非传统后缀表示法,防止栈下溢
+* 支持单遍读取-解析-求值并流式输出
+* 三种基本函数类型:恒等、常量和操作
+* 语法由三个元素组成:操作符、分隔符和操作数
+* 可作为纯头文件库集成到 C++ 或 Objective-C++ 项目中
+
+**[Read Original / 阅读原文](https://www.om-language.com/)**
+
+### Superpowers - Agentic Skills Framework for AI Coding Agents
+
+* **What it does**: A complete software development workflow system that transforms AI coding agents into disciplined developers. Instead of jumping straight into code, agents first clarify requirements, create digestible specs, build detailed implementation plans, then execute through autonomous subagent-driven development with built-in testing and review cycles.
+
+* **Key features**: Composable skills library covering the full dev lifecycle - brainstorming (Socratic design refinement), test-driven development (strict RED-GREEN-REFACTOR), systematic debugging, git worktree management, subagent dispatching with two-stage reviews, and automated code review workflows. Supports Claude Code, Cursor, Codex, and OpenCode through plugin marketplaces or manual setup.
+
+* **Why it's notable**: Enables AI agents to work autonomously for hours without deviation by enforcing engineering discipline (TDD, YAGNI, DRY) through mandatory workflows rather than suggestions. With 1,247 stars today, it's gaining traction as a practical solution to the "AI agents that write untested spaghetti code" problem - turning chaotic AI coding into structured, reviewable, test-first development.
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+* **功能介绍**: 为 AI 编码代理打造的完整软件开发工作流系统。代理不会直接开始写代码,而是先澄清需求、创建易读的规格说明、构建详细实施计划,然后通过自主的子代理驱动开发流程执行,内置测试和审查循环。
+
+* **主要特点**: 可组合的技能库覆盖完整开发生命周期 - 头脑风暴(苏格拉底式设计优化)、测试驱动开发(严格的红-绿-重构循环)、系统化调试、Git 工作树管理、带两阶段审查的子代理调度、自动化代码审查工作流。支持 Claude Code、Cursor、Codex 和 OpenCode,可通过插件市场或手动安装。
+
+* **为何值得关注**: 通过强制执行工程纪律(TDD、YAGNI、DRY)而非建议,使 AI 代理能够自主工作数小时而不偏离计划。今日获得 1,247 星标,作为"AI 代理编写未测试意大利面代码"问题的实用解决方案而备受关注 - 将混乱的 AI 编码转变为结构化、可审查、测试优先的开发流程。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Agent Skills for Context Engineering - Production-Grade AI Agent Context Management
+
+* A comprehensive skill library teaching context engineering—the discipline of managing LLM context windows through strategic curation of system prompts, tool definitions, documents, and message history rather than just prompt crafting
+* Covers 12+ modular skills across foundational concepts (context fundamentals, degradation patterns, compression), architectural patterns (multi-agent systems, memory architectures, tool design, hosted agents), operational optimization (caching, evaluation, LLM-as-judge), cognitive modeling (BDI mental states), and full project development methodology
+* Notable for being cited in academic research as foundational work on static skill architecture, offering platform-agnostic principles that work across Claude Code, Cursor, and any agent framework, with progressive disclosure design that loads skills on-demand to minimize context overhead
+
+### Agent Skills for Context Engineering - 生产级 AI Agent 上下文管理
+
+* 全面的技能库,教授上下文工程——通过策略性管理系统提示、工具定义、文档和消息历史来管理 LLM 上下文窗口的学科,而不仅仅是提示词编写
+* 涵盖 12+ 个模块化技能,包括基础概念(上下文基础、降级模式、压缩)、架构模式(多智能体系统、内存架构、工具设计、托管智能体)、运营优化(缓存、评估、LLM-as-judge)、认知建模(BDI 心智状态)以及完整的项目开发方法论
+* 因被学术研究引用为静态技能架构的基础性工作而备受关注,提供跨 Claude Code、Cursor 及任何智能体框架的平台无关原则,采用渐进式披露设计按需加载技能以最小化上下文开销
+
+**[View Repository / 查看仓库](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering)**
+
+### Claude for Financial Services Plugins - Turn Claude into a Financial Services Specialist
+
+* What it does: A comprehensive plugin system that transforms Claude into a domain expert for investment banking, equity research, private equity, and wealth management workflows. Connects Claude to 11 major financial data providers (Daloopa, FactSet, S&P Global, Bloomberg LSEG, etc.) and enables end-to-end workflows from data gathering to deliverable creation (Excel models, PowerPoint decks, research reports).
+
+* Key features: 41 skills and 38 slash commands across 5 specialized plugins (core financial analysis + 4 function-specific add-ons). Supports complete workflows like building DCF/LBO models, drafting CIMs and IC memos, generating earnings reports, and creating client presentations. File-based architecture (markdown + JSON) requires no coding. Fully customizable to match firm-specific processes, templates, and data sources.
+
+* Why it's notable: First official plugin marketplace from Anthropic specifically targeting financial services professionals. Bridges the gap between AI assistants and enterprise financial workflows by integrating industry-standard data terminals and automating complex multi-step processes. Built for Claude Cowork and Claude Code, with partner-built plugins from LSEG and S&P Global demonstrating ecosystem momentum.
+
+---
+
+### Claude for Financial Services Plugins - 将 Claude 转变为金融服务专家
+
+* 功能介绍: 一套完整的插件系统,将 Claude 转变为投资银行、股票研究、私募股权和财富管理工作流程的领域专家。连接 11 个主要金融数据提供商(Daloopa、FactSet、S&P Global、彭博 LSEG 等),实现从数据收集到交付成果(Excel 模型、PowerPoint 演示文稿、研究报告)的端到端工作流程。
+
+* 主要特点: 5 个专业插件(核心金融分析 + 4 个功能特定附加组件)提供 41 项技能和 38 个斜杠命令。支持完整工作流程,如构建 DCF/LBO 模型、起草 CIM 和投资委员会备忘录、生成财报分析、创建客户演示文稿。基于文件的架构(markdown + JSON)无需编码。可完全定制以匹配公司特定流程、模板和数据源。
+
+* 为何值得关注: Anthropic 首个专门针对金融服务专业人士的官方插件市场。通过集成行业标准数据终端和自动化复杂多步骤流程,弥合了 AI 助手与企业金融工作流程之间的差距。为 Claude Cowork 和 Claude Code 构建,LSEG 和 S&P Global 的合作伙伴插件展示了生态系统发展势头。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/financial-services-plugins)**
+
+### Polymarket CLI - Command-line interface for Polymarket prediction markets
+
+* A Rust-based CLI tool that lets you browse prediction markets, place trades, and manage positions on Polymarket directly from your terminal or as a JSON API for automation
+* Supports wallet-free market browsing, full trading capabilities (limit/market orders), on-chain contract interactions (CTF token operations), portfolio tracking, and both human-readable table and machine-readable JSON output formats
+* Notable for bringing programmatic access to prediction markets — ideal for traders building automated strategies, developers integrating Polymarket into applications, and power users who prefer terminal workflows over web interfaces
+
+### Polymarket CLI - Polymarket 预测市场命令行工具
+
+* 基于 Rust 的 CLI 工具,可直接在终端浏览预测市场、下单交易、管理仓位,或作为 JSON API 用于自动化脚本和 AI 代理
+* 支持无钱包浏览市场、完整交易功能(限价单/市价单)、链上合约交互(CTF 代币操作)、投资组合追踪,提供人类可读的表格和机器可读的 JSON 两种输出格式
+* 为预测市场带来程序化访问能力 — 适合构建自动化交易策略的交易者、将 Polymarket 集成到应用的开发者,以及偏好终端操作的高级用户
+
+**[View Repository / 查看仓库](https://github.com/Polymarket/polymarket-cli)**
+
+### 🎬 Why The Robot Revolution Will Come Sooner Than You Think - Elon Musk
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Elon Musk discusses the accelerating timeline for humanoid robots and AI-powered automation becoming mainstream in everyday life and industry
+* Key topics discussed: The technological breakthroughs enabling practical robotics, cost economics of robot production vs. human labor, Tesla's Optimus robot development, and the societal implications of widespread automation
+* Why it's worth watching: Musk provides insider perspective on the actual timeline and technical challenges of the robot revolution, offering a reality check on when we'll see robots in homes and workplaces, backed by his direct experience building Optimus at Tesla
+
+### 🎬 为什么机器人革命会比你想象的更快到来 - 埃隆·马斯克
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 埃隆·马斯克探讨人形机器人和AI驱动的自动化在日常生活和工业领域成为主流的加速时间线
+* 主要话题: 实现实用机器人技术的突破、机器人生产成本与人工成本的经济学对比、特斯拉Optimus机器人的开发进展,以及大规模自动化的社会影响
+* 为何值得观看: 马斯克以内部视角分享机器人革命的实际时间表和技术挑战,基于他在特斯拉打造Optimus的直接经验,对我们何时能在家庭和工作场所看到机器人提供了现实的判断
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vgiYZP6lREI)**
+
+### 🎬 Can QA Testing Keep Up With Vibe Coding? - KaneAI Review
+**Channel:** Shark Numbers
+
+* What the video covers: This video reviews KaneAI, an AI-powered QA testing tool, examining whether automated testing can keep pace with the rapid "vibe coding" development approach where developers quickly build features with AI assistance
+* Key topics discussed: KaneAI's capabilities for automated test generation, how AI testing tools compare to traditional QA workflows, the challenges of maintaining test coverage in fast-paced AI-assisted development, and practical demonstrations of the tool in action
+* Why it's worth watching: Essential viewing for developers and QA engineers navigating the tension between AI-accelerated development speed and maintaining quality assurance; provides hands-on insights into whether modern testing tools can actually match the velocity of AI-powered coding
+
+---
+
+### 🎬 QA 测试能跟上"氛围编程"的速度吗？- KaneAI 评测
+**频道:** Shark Numbers
+
+* 视频内容概述: 本视频评测 KaneAI 这款 AI 驱动的 QA 测试工具,探讨自动化测试是否能跟上"氛围编程"(开发者借助 AI 快速构建功能)的开发速度
+* 主要话题: KaneAI 的自动化测试生成能力、AI 测试工具与传统 QA 工作流程的对比、在快节奏 AI 辅助开发中维护测试覆盖率的挑战,以及工具的实际操作演示
+* 为何值得观看: 对于在 AI 加速开发速度与保持质量保证之间寻求平衡的开发者和 QA 工程师来说必看;提供了关于现代测试工具能否真正匹配 AI 编程速度的实战洞察
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aZDTxEH7kK0)**
+
+### 🎬 You're Not Behind (Yet): How to Build AI Agents in 2026 (no coding)
+
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive guide to building AI agents in 2026 without any coding knowledge, making advanced AI automation accessible to non-technical users
+* Key topics discussed: No-code AI agent development platforms, practical implementation strategies, current state of AI agent technology, and actionable steps for beginners to get started with AI automation
+* Why it's worth watching: Perfect for anyone feeling overwhelmed by AI advancement - this video demystifies AI agents and provides a clear roadmap to leverage this technology without technical barriers. Includes a free AI Agents Playbook resource to accelerate your learning journey.
+
+---
+
+### 🎬 无需编程:2026年AI智能体构建指南(你还没落后)
+
+**频道:** Futurepedia
+
+* 视频内容概述: 全面介绍如何在2026年无需编程知识即可构建AI智能体,让非技术用户也能掌握先进的AI自动化技术
+* 主要话题: 无代码AI智能体开发平台、实用实施策略、AI智能体技术现状,以及初学者入门AI自动化的可行步骤
+* 为何值得观看: 非常适合对AI发展感到不知所措的人群 - 本视频深入浅出地讲解AI智能体,并提供清晰的技术应用路线图,无需技术背景即可上手。还附赠免费的AI智能体实战手册,助力快速学习。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ibFJ--CH3cQ)**
+
+### 🎬 cqi to the rescue
+
+**Channel:** Kevin Powell
+
+* What the video covers: A practical CSS solution for fixing squished gradient appearances in responsive designs
+* Key topics discussed: Container query units (cqi), gradient styling techniques, and responsive design improvements
+* Why it's worth watching: Kevin Powell shares a real-world problem he encountered on his own site and demonstrates how container query units can elegantly solve gradient distortion issues. This is a quick, actionable tip that addresses a common CSS challenge developers face when working with gradients in flexible layouts.
+
+---
+
+### 🎬 cqi 来救场
+
+**频道:** Kevin Powell
+
+* 视频内容概述: 一个实用的 CSS 解决方案,用于修复响应式设计中被压扁的渐变效果
+* 主要话题: 容器查询单位(cqi)、渐变样式技巧和响应式设计改进
+* 为何值得观看: Kevin Powell 分享了他在自己网站上遇到的实际问题,并演示了如何使用容器查询单位优雅地解决渐变变形问题。这是一个快速、可操作的技巧,解决了开发者在弹性布局中使用渐变时面临的常见 CSS 挑战。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJ3WE0Ohfpc)**
 
