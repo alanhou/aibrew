@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 26, 2026"
 date: 2026-02-26
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -514,4 +514,95 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Kevin Powell 分享了他在自己网站上遇到的实际问题,并演示了如何使用容器查询单位优雅地解决渐变变形问题。这是一个快速、可操作的技巧,解决了开发者在弹性布局中使用渐变时面临的常见 CSS 挑战。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJ3WE0Ohfpc)**
+
+<!-- [Title-Only] -->
+### First Website
+
+* Based on the title, this article likely covers the very first website ever created, which was launched at CERN (European Organization for Nuclear Research) in 1991 by Tim Berners-Lee. The site probably discusses the origins of the World Wide Web, what that initial website contained (information about the WWW project itself), and its historical significance in shaping how we use the internet today.
+
+* Why it might be interesting to readers: This is a piece of internet history that's still accessible today. It offers a glimpse into the humble beginnings of the web - a stark contrast to the complex, multimedia-rich websites we're used to now. For developers and tech enthusiasts, it's fascinating to see how simple HTML and hypertext concepts revolutionized global communication. The site represents the moment when information sharing transformed from isolated systems to the interconnected web we know today.
+
+---
+
+### 第一个网站
+
+* 根据标题推测，这篇文章可能介绍了有史以来第一个网站，该网站由 Tim Berners-Lee 于 1991 年在 CERN（欧洲核子研究组织）创建并发布。文章可能会讨论万维网的起源、最初网站的内容（关于 WWW 项目本身的信息），以及它在塑造我们今天使用互联网方式中的历史意义。
+
+* 为何值得关注：这是一段至今仍可访问的互联网历史。它让我们得以一窥网络的起源——与我们现在习惯的复杂、富媒体网站形成鲜明对比。对于开发者和技术爱好者来说，看到简单的 HTML 和超文本概念如何彻底改变了全球通信方式是非常有趣的。这个网站代表了信息共享从孤立系统转变为我们今天所知的互联网络的关键时刻。
+
+**[Read Original / 阅读原文](https://info.cern.ch)**
+
+### How CLI Makes AI Agent Tools 94% Cheaper Than MCP
+
+* AI agents using MCP (Model Context Protocol) waste tokens by loading complete JSON schemas for all tools upfront - typically ~15,540 tokens for 84 tools across 6 servers
+* CLI approach uses lazy loading: starts with lightweight tool listing (~300 tokens), then discovers tool details only when needed via `--help` commands
+* Token comparison for typical usage: MCP uses ~15,570 tokens for 1 tool vs CLI's ~910 tokens (94% savings), maintaining similar efficiency even at 100 tools (92% savings)
+* CLI outperforms Anthropic's Tool Search feature by 74-88% in token efficiency, while being model-agnostic instead of Anthropic-only
+* CLIHub provides an open-source converter that transforms MCP servers into CLI tools with one command, maintaining same OAuth and API functionality
+
+### CLI 让 AI 智能体工具成本比 MCP 降低 94%
+
+* 使用 MCP(模型上下文协议)的 AI 智能体会浪费大量 token,因为需要预先加载所有工具的完整 JSON schema - 通常 6 个服务器的 84 个工具需要约 15,540 个 token
+* CLI 方式采用延迟加载:启动时仅加载轻量级工具列表(约 300 token),仅在需要时通过 `--help` 命令获取工具详情
+* 典型使用场景的 token 对比:MCP 使用 1 个工具需要约 15,570 token,而 CLI 仅需约 910 token(节省 94%),即使使用 100 个工具仍保持高效(节省 92%)
+* CLI 比 Anthropic 的 Tool Search 功能节省 74-88% 的 token,且支持任意模型而非仅限 Anthropic
+* CLIHub 提供开源转换器,可通过一条命令将 MCP 服务器转换为 CLI 工具,保持相同的 OAuth 和 API 功能
+
+**[Read Original / 阅读原文](https://kanyilmaz.me/2026/02/23/cli-vs-mcp.html)**
+
+### Why Swap Size Was 2x Physical RAM: A Historical Perspective
+
+* The 2x swap rule originated from the need for **contiguous disk space allocation** on HDDs with slow seek times, not from the expectation to fill all swap space
+* In 1997, typical systems had 8MB RAM and 320MB disk (1/20 ratio), making 16MB swap reasonable; today's 32GB RAM would require 64GB swap on a 256GB SSD (1/4 ratio), which seems excessive
+* The rule combined two heuristics: (1) maximum usable load occurs when swap usage equals physical RAM, and (2) keeping ~50% swap free ensures contiguous block availability
+* **Swap fragmentation** was the core problem - systems needed to write consecutive memory ranges to consecutive disk blocks to minimize HDD seek penalties
+* Modern software behavior differs significantly - VMs and interpreters (like JVM garbage collection) regularly touch all memory pages, making heavy swap usage nearly unusable compared to 1990s systems
+* Early FreeBSD and Windows 3.x could only swap entire processes/segments (not individual pages), making contiguous allocation even more critical
+* The rule was always a **rule of thumb**, not rigid requirement, but became treated as gospel because "we had no better idea" for estimating swap needs
+
+### 为什么交换分区大小是物理内存的2倍:历史视角
+
+* 2倍交换分区规则源于HDD时代对**连续磁盘空间分配**的需求,而非期望填满所有交换空间
+* 1997年典型系统配置为8MB内存和320MB硬盘(1/20比例),16MB交换分区合理;而今天32GB内存需要64GB交换分区(占用256GB SSD的1/4),显得过度
+* 该规则结合两个经验法则:(1)最大可用负载时交换分区使用量约等于物理内存,(2)保持约50%交换空间空闲以确保连续块可用性
+* **交换分区碎片化**是核心问题 - 系统需要将连续内存范围写入连续磁盘块,以最小化HDD寻道开销
+* 现代软件行为显著不同 - 虚拟机和解释器(如JVM垃圾回收)会定期访问所有内存页,使重度交换使用几乎不可用,不同于1990年代系统
+* 早期FreeBSD和Windows 3.x只能交换整个进程/段(而非单个页面),使连续分配更加关键
+* 该规则始终是**经验法则**而非硬性要求,但因"我们没有更好的办法"估算交换需求而被当作金科玉律
+
+**[Read Original / 阅读原文](https://retrocomputing.stackexchange.com/questions/32492/origin-of-the-rule-that-swap-size-should-be-2x-of-the-physical-memory)**
+
+### Agent Reach - Give Your AI Agent Internet Superpowers
+
+* A CLI toolkit that enables AI agents to read and search across major platforms (Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Instagram, LinkedIn) without API fees
+* One-line installation that auto-configures dependencies; supports web scraping, video transcripts, RSS feeds, and semantic search through pluggable channel architecture
+* Notable for solving the "AI agent can't access the internet" problem with zero-cost, privacy-first design (cookies stored locally, fully open-source) and compatibility with all major AI coding assistants (Claude Code, Cursor, Windsurf)
+
+### Agent Reach - 为 AI Agent 提供互联网访问能力
+
+* 命令行工具包,让 AI Agent 能够免费读取和搜索主流平台(Twitter、Reddit、YouTube、GitHub、B站、小红书、Instagram、LinkedIn)内容,无需支付 API 费用
+* 一行命令自动安装配置所有依赖;支持网页抓取、视频字幕提取、RSS 订阅和语义搜索,采用可插拔的渠道架构设计
+* 值得关注的原因:以零成本、隐私优先(Cookie 本地存储、完全开源)的方式解决了"AI Agent 无法访问互联网"的痛点,兼容所有主流 AI 编程助手(Claude Code、Cursor、Windsurf 等)
+
+**[View Repository / 查看仓库](https://github.com/Panniantong/Agent-Reach)**
+
+### 🎬 Khabib vs Lex: Training with Khabib | FULL EXCLUSIVE FOOTAGE
+
+**Channel:** Lex Fridman
+
+* What the video covers: Exclusive behind-the-scenes footage of Lex Fridman training with legendary MMA fighter Khabib Nurmagomedov, showcasing their grappling session and personal interactions
+* Key topics discussed: MMA training techniques, Khabib's fighting philosophy and approach to combat sports, the mental and physical discipline required at the highest level of competition, insights into Khabib's training methodology
+* Why it's worth watching: Rare opportunity to see one of the greatest UFC champions of all time in action, demonstrating his world-class grappling skills; offers unique perspective on what makes elite fighters exceptional; combines athletic performance with thoughtful conversation typical of Lex Fridman's content
+
+---
+
+### 🎬 卡比布对战莱克斯:与卡比布的训练 | 完整独家镜头
+
+**频道:** Lex Fridman
+
+* 视频内容概述: Lex Fridman 与传奇 MMA 格斗家卡比布·努曼格莫多夫训练的独家幕后花絮,展示他们的摔跤训练过程和个人互动
+* 主要话题: MMA 训练技巧、卡比布的格斗哲学和竞技体育方法、顶级竞技所需的心理和身体纪律、卡比布训练方法论的深入见解
+* 为何值得观看: 难得一见的机会观看史上最伟大的 UFC 冠军之一的实战演示,展现其世界级的摔跤技术;提供独特视角了解精英格斗家的卓越之处;结合了运动表现与 Lex Fridman 内容特有的深度对话
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGVpKPNUdzA)**
 
