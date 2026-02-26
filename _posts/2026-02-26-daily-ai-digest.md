@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 26, 2026"
 date: 2026-02-26
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -596,87 +596,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 卡比布对战莱克斯:与卡比布的训练 | 完整独家镜头
-
-**频道:** Lex Fridman
-
-* 视频内容概述: Lex Fridman 与传奇 MMA 格斗家卡比布·努曼格莫多夫训练的独家幕后花絮,展示他们的摔跤训练过程和个人互动
-* 主要话题: MMA 训练技巧、卡比布的格斗哲学和竞技体育方法、顶级竞技所需的心理和身体纪律、卡比布训练方法论的深入见解
-* 为何值得观看: 难得一见的机会观看史上最伟大的 UFC 冠军之一的实战演示,展现其世界级的摔跤技术;提供独特视角了解精英格斗家的卓越之处;结合了运动表现与 Lex Fridman 内容特有的深度对话
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGVpKPNUdzA)**
-
-### Google API Keys Security Flaw: Gemini's Retroactive Privilege Escalation
-
-* Google told developers for over a decade that API keys (AIza...) for Maps, Firebase, etc. were safe to embed publicly and weren't secrets
-* Gemini API now accepts these same public keys for authentication, silently granting access to private data without warning users
-* Truffle Security found nearly 3,000 exposed Google API keys on public websites that now authenticate to Gemini
-* When Gemini API is enabled on a project, existing public API keys retroactively gain sensitive privileges with no notification
-* Attackers can use exposed keys to access uploaded files, cached data, and rack up LLM usage charges on victim accounts
-* The vulnerability stems from insecure defaults (CWE-1188) and incorrect privilege assignment (CWE-269)
-* Google's own internal systems had exposed API keys that researchers could use to access Google's internal Gemini
-* New API keys default to "Unrestricted" access, immediately valid for all enabled APIs including Gemini
-* The attack is trivial: extract key from website source code, make API call to Gemini endpoints
-* This represents a fundamental design flaw: using single key format for both public identification and sensitive authentication
-
-### Google API 密钥安全漏洞:Gemini 的追溯性权限提升
-
-* Google 十多年来一直告诉开发者,Maps、Firebase 等服务的 API 密钥(AIza...)可以安全地公开嵌入,不属于机密信息
-* Gemini API 现在接受这些相同的公开密钥进行身份验证,在未警告用户的情况下静默授予私有数据访问权限
-* Truffle Security 在公共网站上发现近 3,000 个暴露的 Google API 密钥,这些密钥现在可以验证 Gemini 访问
-* 当项目启用 Gemini API 时,现有的公开 API 密钥会追溯性地获得敏感权限,且没有任何通知
-* 攻击者可以使用暴露的密钥访问上传的文件、缓存数据,并在受害者账户上产生大量 LLM 使用费用
-* 该漏洞源于不安全的默认设置(CWE-1188)和错误的权限分配(CWE-269)
-* Google 自己的内部系统也存在暴露的 API 密钥,研究人员可以用来访问 Google 的内部 Gemini
-* 新创建的 API 密钥默认为"不受限制"访问,立即对所有已启用的 API(包括 Gemini)有效
-* 攻击方式极其简单:从网站源代码中提取密钥,向 Gemini 端点发起 API 调用
-* 这代表了一个根本性的设计缺陷:将单一密钥格式同时用于公开标识和敏感身份验证
-
-**[Read Original / 阅读原文](https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules)**
-
-### HP PC Costs Surge as RAM Prices Double
-
-* RAM now accounts for 35% of HP PC bill of materials, up from 15-18% in Q4 2025
-* Memory costs have increased roughly 100% sequentially with further increases expected
-* HP forecasts double-digit decline in PC market demand due to higher prices
-* DRAM and NAND price volatility expected to continue through fiscal years 2026 and 2027
-* HP has raised PC prices to maintain margins while absorbing significantly higher RAM costs
-* One-third of Personal Systems margin comes from non-RAM categories like IT services and peripherals
-
-### 惠普电脑成本飙升,内存价格翻倍
-
-* 内存成本现占惠普电脑物料清单的35%,较2025年第四季度的15-18%大幅上升
-* 内存成本环比增长约100%,预计将进一步上涨
-* 惠普预测由于价格上涨,个人电脑市场需求将出现两位数下降
-* DRAM和NAND价格波动预计将持续至2026和2027财年
-* 惠普已提高电脑价格以维持利润率,同时承担显著增加的内存成本
-* 个人系统业务三分之一的利润来自IT服务和外设等非内存类别
-
-**[Read Original / 阅读原文](https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/)**
-
-<!-- [Title-Only] -->
-### The Pleasures and Pains of Coffee (1830)
-
-* Based on the title, this article likely explores the dual nature of coffee consumption as understood in the early 19th century - examining both its enjoyable aspects (stimulation, social rituals, flavor) and its negative effects (health concerns, dependency, side effects)
-* Why it might be interesting: This historical perspective from 1830 offers a fascinating glimpse into how people viewed coffee nearly 200 years ago, potentially revealing that debates about coffee's benefits and drawbacks are not new. It may contain medical theories, cultural observations, and social commentary from an era when coffee culture was still developing in many Western societies
-
-### 咖啡的乐趣与痛苦（1830年）
-
-* 根据标题推测，这篇文章可能探讨了19世纪早期人们对咖啡消费的双重认知——既讨论其令人愉悦的方面（提神效果、社交仪式、风味），也分析其负面影响（健康隐患、依赖性、副作用）
-* 为何值得关注：这篇来自1830年的历史文献提供了一个引人入胜的视角，让我们了解近200年前人们如何看待咖啡，可能揭示关于咖啡利弊的争论由来已久。文章或许包含当时的医学理论、文化观察以及社会评论，展现咖啡文化在许多西方社会尚处于发展阶段时的面貌
-
-**[Read Original / 阅读原文](https://quod.lib.umich.edu/m/mqrarchive/act2080.0035.002/10)**
-
-### 🎬 cqi to the rescue
-
-**Channel:** Kevin Powell
-
-* What the video covers: A practical CSS solution for fixing squished gradient appearances in responsive designs
-* Key topics discussed: Container query units (cqi), gradient styling techniques, and responsive design improvements
-* Why it's worth watching: Kevin Powell shares a real-world problem he encountered on his own site and demonstrates how container query units can elegantly solve gradient distortion issues. This is a quick, actionable tip that addresses a common CSS challenge developers face when working with gradients in flexible layouts.
-
----
-
 ### 🎬 cqi 来救场
 
 **频道:** Kevin Powell
@@ -706,4 +625,106 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合需要在不同操作系统间无缝共享文件的开发者和技术爱好者,无需被锁定在苹果生态系统中。展示了使用开源工具的实用替代方案。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zMSL-kTF8LE)**
+
+### Google API Keys Security Vulnerability: Gemini Changes the Game
+
+* Google historically told developers that API keys (AIza...) for services like Maps and Firebase were safe to embed publicly in client-side code
+* Truffle Security discovered nearly 3,000 exposed Google API keys on public websites that now grant unauthorized access to Gemini AI services
+* When Gemini API is enabled on a Google Cloud project, existing public API keys silently gain access to sensitive Gemini endpoints without any warning or notification
+* Attackers can use these keys to access private uploaded files, cached data, and generate charges on victim accounts
+* The vulnerability stems from "retroactive privilege expansion" - old public keys designed as billing identifiers now function as authentication credentials for sensitive AI services
+* Google's default API key configuration is "Unrestricted," granting immediate access to all enabled APIs including Gemini
+* The issue represents insecure defaults (CWE-1188) and incorrect privilege assignment (CWE-269) - Google failed to separate public identifiers from secret credentials
+* Even Google's own internal systems were affected by exposed legacy API keys that granted access to their internal Gemini instances
+
+### Google API 密钥安全漏洞:Gemini 改变了游戏规则
+
+* Google 长期以来告诉开发者,用于 Maps 和 Firebase 等服务的 API 密钥(AIza...)可以安全地嵌入到客户端代码中公开使用
+* Truffle Security 在公共网站上发现了近 3,000 个暴露的 Google API 密钥,这些密钥现在可以未经授权访问 Gemini AI 服务
+* 当在 Google Cloud 项目上启用 Gemini API 时,现有的公共 API 密钥会在没有任何警告或通知的情况下静默获得对敏感 Gemini 端点的访问权限
+* 攻击者可以使用这些密钥访问私有上传文件、缓存数据,并在受害者账户上产生费用
+* 该漏洞源于"追溯权限扩展" - 原本设计为计费标识符的旧公共密钥现在成为敏感 AI 服务的身份验证凭据
+* Google 的默认 API 密钥配置为"不受限制",立即授予对包括 Gemini 在内的所有已启用 API 的访问权限
+* 该问题代表了不安全的默认设置(CWE-1188)和错误的权限分配(CWE-269) - Google 未能将公共标识符与秘密凭据分离
+* 甚至 Google 自己的内部系统也受到暴露的旧版 API 密钥的影响,这些密钥授予了对其内部 Gemini 实例的访问权限
+
+**[Read Original / 阅读原文](https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules)**
+
+### OpenAI's Competitive Challenge: Infrastructure vs. Market Power
+
+* OpenAI is attempting to secure massive compute infrastructure ($1.4tr commitment, 30 gigawatts) through capital raising and partnerships, despite lacking the cashflow scale of hyperscalers like AWS, Azure, and GCP
+* AI infrastructure may follow semiconductor/airliner manufacturing patterns—rising fixed costs could create an oligopoly where only a handful of companies can afford cutting-edge model development (similar to Boeing/Airbus or TSMC)
+* Sam Altman's aggressive infrastructure push (aiming for 1 gigawatt/week, implying ~$1tr annual capex) is a "self-fulfilling prophecy" strategy to earn OpenAI a seat at the table through sheer force of will
+* However, infrastructure scale alone doesn't guarantee market power—TSMC's chip monopoly provides no leverage over app developers; users don't care which cloud provider powers their apps
+* OpenAI's potential advantage lies in becoming the API/account layer connecting services (ChatGPT as the "glue" between Instagram recipes and Instacart orders), creating network effects through standards control
+* This vision faces two major challenges: the "widget fallacy" (abstracting complex products into simple interfaces rarely works, as seen with failed "APIs are the new BD" movement) and lack of lock-in (developers can easily support multiple AI platforms simultaneously)
+* The core question isn't about platforms or ecosystems, but about power—whether OpenAI can compel consumers, developers, and enterprises to use its systems regardless of alternatives, as Microsoft, Apple, Facebook, and Amazon have done
+
+### OpenAI 如何竞争:基础设施规模能否转化为市场支配力?
+
+* OpenAI 正通过融资和合作伙伴关系争取大规模算力基础设施(承诺 1.4 万亿美元、30 吉瓦),但缺乏 AWS、Azure、GCP 等超大规模云服务商的现金流规模
+* AI 基础设施可能遵循半导体/飞机制造业模式——固定成本不断上升可能形成寡头垄断,只有少数公司能负担前沿模型开发(类似波音/空客或台积电)
+* Sam Altman 激进的基础设施战略(目标每周 1 吉瓦,意味着年资本支出约 1 万亿美元)是通过意志力实现"自我实现预言",为 OpenAI 争取入场券
+* 但基础设施规模本身不保证市场权力——台积电的芯片垄断地位对应用开发者没有影响力;用户不关心应用背后使用哪家云服务
+* OpenAI 的潜在优势在于成为连接各服务的 API/账户层(ChatGPT 作为连接 Instagram 食谱和 Instacart 订单的"粘合剂"),通过标准控制创造网络效应
+* 这一愿景面临两大挑战:"小部件谬误"(将复杂产品抽象为简单接口很少成功,如失败的"API 是新 BD"运动)和缺乏锁定效应(开发者可轻松同时支持多个 AI 平台)
+* 核心问题不在于平台或生态系统,而在于权力——OpenAI 能否像微软、苹果、Facebook 和亚马逊那样,迫使消费者、开发者和企业使用其系统,无论是否有替代方案
+
+**[Read Original / 阅读原文](https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x)**
+
+### Out of Light: A Meditation on Georges de La Tour and the Art of Attention
+
+* Nicole Krauss reflects on her encounter with Georges de La Tour's exhibition "From Shadow to Light" at the Musée Jacquemart-André in Paris
+* Contrasts Caravaggio's dramatic use of light with La Tour's more intimate, devotional approach to candlelit scenes
+* La Tour (1593-born) was forgotten for centuries after his death, rediscovered in the 20th century with only 40 surviving works
+* His paintings feature ordinary people as saints, rendered with compassionate detail in candlelit darkness that creates profound stillness
+* The essay explores attention as a form of love and devotion, arguing that La Tour's work teaches us about transformative seeing
+* Krauss connects the experience of viewing art to renewed attention in daily life, reflecting on her year in Rome
+* The piece examines how Counter-Reformation Catholic culture of stillness and meditation infuses La Tour's work with timeless relevance
+
+### 从光影中走出:对乔治·德·拉图尔与专注艺术的沉思
+
+* 妮可·克劳斯回忆在巴黎雅克马尔-安德烈博物馆观看乔治·德·拉图尔"从阴影到光明"展览的经历
+* 对比卡拉瓦乔戏剧性的光影运用与拉图尔更私密、虔诚的烛光场景手法
+* 拉图尔(生于1593年)去世后被遗忘数世纪,20世纪重新被发现,仅存约40幅作品
+* 他的画作将普通人描绘为圣徒,在烛光黑暗中以富有同情心的细节呈现深刻的静谧
+* 文章探讨专注作为一种爱与虔诚的形式,认为拉图尔的作品教导我们关于转化性的观看
+* 克劳斯将观赏艺术的体验与日常生活中重获的专注力联系起来,反思她在罗马的一年
+* 文章审视反宗教改革时期天主教的静默与冥想文化如何赋予拉图尔作品永恒的当代意义
+
+**[Read Original / 阅读原文](https://harpers.org/archive/2026/03/out-of-light-nicole-krauss-caravaggio-georges-de-la-tour/)**
+
+### DataClaw - Export AI Coding Conversations to Open Datasets
+
+* Converts Claude Code, Codex, Gemini CLI, and OpenCode conversation histories into structured datasets and publishes them to Hugging Face with a single command
+* Automated privacy protection with multi-layer redaction (secrets, PII, emails, paths), username hashing, and entropy-based detection; includes manual review workflow before publishing
+* A performance art response to AI companies restricting access to their training data — creates a distributed, community-owned dataset of real human-AI coding collaboration tagged `dataclaw` on Hugging Face
+
+### DataClaw - 将 AI 编程对话导出为开放数据集
+
+* 一键将 Claude Code、Codex、Gemini CLI 和 OpenCode 的对话历史转换为结构化数据集并发布到 Hugging Face
+* 多层隐私保护自动化处理（密钥、个人信息、邮箱、路径脱敏），用户名哈希化和熵值检测，发布前包含人工审核流程
+* 一个行为艺术项目，回应 AI 公司限制训练数据访问的做法——创建社区共有的、带 `dataclaw` 标签的真实人机编程协作分布式数据集
+
+**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
+
+### 🎬 Khabib vs Lex: Training with Khabib | FULL EXCLUSIVE FOOTAGE
+
+**Channel:** Lex Fridman
+
+* What the video covers: Exclusive behind-the-scenes footage of Lex Fridman training with legendary MMA fighter Khabib Nurmagomedov, showcasing their grappling session and personal interactions
+* Key topics discussed: MMA training techniques, Khabib's fighting philosophy and approach to combat sports, the mental and physical discipline required at the highest level of competition, insights into Khabib's training methodology
+* Why it's worth watching: Rare opportunity to see one of the greatest UFC champions of all time in action, demonstrating his world-class grappling skills; offers unique perspective on what makes elite fighters exceptional; combines athletic performance with thoughtful conversation typical of Lex Fridman's content
+
+---
+
+### 🎬 卡比布对战莱克斯:与卡比布的训练 | 完整独家镜头
+
+**频道:** Lex Fridman
+
+* 视频内容概述: Lex Fridman 与传奇 MMA 格斗家卡比布·努曼格莫多夫训练的独家幕后花絮,展示他们的摔跤训练过程和个人互动
+* 主要话题: MMA 训练技巧、卡比布的格斗哲学和竞技体育方法、顶级竞技所需的心理和身体纪律、卡比布训练方法论的深入见解
+* 为何值得观看: 难得一见的机会观看史上最伟大的 UFC 冠军之一的实战演示,展现其世界级的摔跤技术;提供独特视角了解精英格斗家的卓越之处;结合了运动表现与 Lex Fridman 内容特有的深度对话
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGVpKPNUdzA)**
 
