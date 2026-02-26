@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 26, 2026"
 date: 2026-02-26
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -605,4 +605,105 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 难得一见的机会观看史上最伟大的 UFC 冠军之一的实战演示,展现其世界级的摔跤技术;提供独特视角了解精英格斗家的卓越之处;结合了运动表现与 Lex Fridman 内容特有的深度对话
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGVpKPNUdzA)**
+
+### Google API Keys Security Flaw: Gemini's Retroactive Privilege Escalation
+
+* Google told developers for over a decade that API keys (AIza...) for Maps, Firebase, etc. were safe to embed publicly and weren't secrets
+* Gemini API now accepts these same public keys for authentication, silently granting access to private data without warning users
+* Truffle Security found nearly 3,000 exposed Google API keys on public websites that now authenticate to Gemini
+* When Gemini API is enabled on a project, existing public API keys retroactively gain sensitive privileges with no notification
+* Attackers can use exposed keys to access uploaded files, cached data, and rack up LLM usage charges on victim accounts
+* The vulnerability stems from insecure defaults (CWE-1188) and incorrect privilege assignment (CWE-269)
+* Google's own internal systems had exposed API keys that researchers could use to access Google's internal Gemini
+* New API keys default to "Unrestricted" access, immediately valid for all enabled APIs including Gemini
+* The attack is trivial: extract key from website source code, make API call to Gemini endpoints
+* This represents a fundamental design flaw: using single key format for both public identification and sensitive authentication
+
+### Google API 密钥安全漏洞:Gemini 的追溯性权限提升
+
+* Google 十多年来一直告诉开发者,Maps、Firebase 等服务的 API 密钥(AIza...)可以安全地公开嵌入,不属于机密信息
+* Gemini API 现在接受这些相同的公开密钥进行身份验证,在未警告用户的情况下静默授予私有数据访问权限
+* Truffle Security 在公共网站上发现近 3,000 个暴露的 Google API 密钥,这些密钥现在可以验证 Gemini 访问
+* 当项目启用 Gemini API 时,现有的公开 API 密钥会追溯性地获得敏感权限,且没有任何通知
+* 攻击者可以使用暴露的密钥访问上传的文件、缓存数据,并在受害者账户上产生大量 LLM 使用费用
+* 该漏洞源于不安全的默认设置(CWE-1188)和错误的权限分配(CWE-269)
+* Google 自己的内部系统也存在暴露的 API 密钥,研究人员可以用来访问 Google 的内部 Gemini
+* 新创建的 API 密钥默认为"不受限制"访问,立即对所有已启用的 API(包括 Gemini)有效
+* 攻击方式极其简单:从网站源代码中提取密钥,向 Gemini 端点发起 API 调用
+* 这代表了一个根本性的设计缺陷:将单一密钥格式同时用于公开标识和敏感身份验证
+
+**[Read Original / 阅读原文](https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules)**
+
+### HP PC Costs Surge as RAM Prices Double
+
+* RAM now accounts for 35% of HP PC bill of materials, up from 15-18% in Q4 2025
+* Memory costs have increased roughly 100% sequentially with further increases expected
+* HP forecasts double-digit decline in PC market demand due to higher prices
+* DRAM and NAND price volatility expected to continue through fiscal years 2026 and 2027
+* HP has raised PC prices to maintain margins while absorbing significantly higher RAM costs
+* One-third of Personal Systems margin comes from non-RAM categories like IT services and peripherals
+
+### 惠普电脑成本飙升,内存价格翻倍
+
+* 内存成本现占惠普电脑物料清单的35%,较2025年第四季度的15-18%大幅上升
+* 内存成本环比增长约100%,预计将进一步上涨
+* 惠普预测由于价格上涨,个人电脑市场需求将出现两位数下降
+* DRAM和NAND价格波动预计将持续至2026和2027财年
+* 惠普已提高电脑价格以维持利润率,同时承担显著增加的内存成本
+* 个人系统业务三分之一的利润来自IT服务和外设等非内存类别
+
+**[Read Original / 阅读原文](https://arstechnica.com/gadgets/2026/02/ram-now-represents-35-percent-of-bill-of-materials-for-hp-pcs/)**
+
+<!-- [Title-Only] -->
+### The Pleasures and Pains of Coffee (1830)
+
+* Based on the title, this article likely explores the dual nature of coffee consumption as understood in the early 19th century - examining both its enjoyable aspects (stimulation, social rituals, flavor) and its negative effects (health concerns, dependency, side effects)
+* Why it might be interesting: This historical perspective from 1830 offers a fascinating glimpse into how people viewed coffee nearly 200 years ago, potentially revealing that debates about coffee's benefits and drawbacks are not new. It may contain medical theories, cultural observations, and social commentary from an era when coffee culture was still developing in many Western societies
+
+### 咖啡的乐趣与痛苦（1830年）
+
+* 根据标题推测，这篇文章可能探讨了19世纪早期人们对咖啡消费的双重认知——既讨论其令人愉悦的方面（提神效果、社交仪式、风味），也分析其负面影响（健康隐患、依赖性、副作用）
+* 为何值得关注：这篇来自1830年的历史文献提供了一个引人入胜的视角，让我们了解近200年前人们如何看待咖啡，可能揭示关于咖啡利弊的争论由来已久。文章或许包含当时的医学理论、文化观察以及社会评论，展现咖啡文化在许多西方社会尚处于发展阶段时的面貌
+
+**[Read Original / 阅读原文](https://quod.lib.umich.edu/m/mqrarchive/act2080.0035.002/10)**
+
+### 🎬 cqi to the rescue
+
+**Channel:** Kevin Powell
+
+* What the video covers: A practical CSS solution for fixing squished gradient appearances in responsive designs
+* Key topics discussed: Container query units (cqi), gradient styling techniques, and responsive design improvements
+* Why it's worth watching: Kevin Powell shares a real-world problem he encountered on his own site and demonstrates how container query units can elegantly solve gradient distortion issues. This is a quick, actionable tip that addresses a common CSS challenge developers face when working with gradients in flexible layouts.
+
+---
+
+### 🎬 cqi 来救场
+
+**频道:** Kevin Powell
+
+* 视频内容概述: 一个实用的 CSS 解决方案,用于修复响应式设计中被压扁的渐变效果
+* 主要话题: 容器查询单位(cqi)、渐变样式技术和响应式设计改进
+* 为何值得观看: Kevin Powell 分享了他在自己网站上遇到的实际问题,并演示了如何使用容器查询单位优雅地解决渐变变形问题。这是一个快速、可操作的技巧,解决了开发者在弹性布局中使用渐变时面临的常见 CSS 挑战。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJ3WE0Ohfpc)**
+
+### 🎬 "AirDrop" for Linux, Android, and Windows?
+
+**Channel:** bashbunni
+
+* What the video covers: A cross-platform file sharing solution that works like Apple's AirDrop but for Linux, Android, and Windows systems
+* Key topics discussed: Tailscale integration for secure file transfers, cross-platform compatibility, practical implementation for developers and Linux users
+* Why it's worth watching: Perfect for developers and tech enthusiasts who need seamless file sharing across different operating systems without being locked into Apple's ecosystem. Shows a practical alternative using open-source tools.
+
+---
+
+### 🎬 Linux、Android 和 Windows 的"隔空投送"？
+
+**频道:** bashbunni
+
+* 视频内容概述: 介绍一个跨平台文件共享解决方案,类似苹果的隔空投送(AirDrop),但支持 Linux、Android 和 Windows 系统
+* 主要话题: Tailscale 集成实现安全文件传输、跨平台兼容性、开发者实用实现方案
+* 为何值得观看: 适合需要在不同操作系统间无缝共享文件的开发者和技术爱好者,无需被锁定在苹果生态系统中。展示了使用开源工具的实用替代方案。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zMSL-kTF8LE)**
 
