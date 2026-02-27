@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 27, 2026"
 date: 2026-02-27
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，9个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -586,67 +586,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Claude Code 手机版正式发布(改变一切)
-
-**频道:** NetworkChuck
-
-* 视频内容概述: NetworkChuck 展示了 Claude Code 移动版的正式发布,演示开发者如何直接在手机上运行 AI 驱动的编程辅助工具
-* 主要话题: 移动端编程工作流、Claude AI 在智能手机上的集成、移动编程的实际演示、与之前变通方法的对比,以及这如何改变移动开发的可访问性
-* 为何值得观看: 这代表了移动开发能力的重大转变 - 能够随时随地访问强大的 AI 编程辅助使开发工作更加灵活和便捷。NetworkChuck 的实践演示展示了真实应用场景而非纯理论,对于想在移动设备上编程或需要在离开桌面环境时获得 AI 辅助的开发者来说非常有价值
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ocQ7ZKhHU5Q)**
-
-### Anthropic CEO Stands Firm on AI Ethics Amid Pentagon Pressure
-
-* Anthropic has been a pioneer in deploying Claude AI to US military and intelligence agencies, being the first frontier AI company in classified networks and National Laboratories
-* The company sacrificed hundreds of millions in revenue by blocking Chinese Communist Party-linked firms and defending against CCP cyberattacks to protect US AI leadership
-* Anthropic refuses to remove two critical safeguards: mass domestic surveillance and fully autonomous weapons deployment
-* Mass domestic surveillance using AI threatens fundamental liberties by assembling comprehensive profiles of Americans' lives at scale, exploiting legal gaps
-* Current AI systems lack the reliability for fully autonomous weapons that remove human judgment from target selection and engagement decisions
-* The Department of War demands "any lawful use" access and threatens to label Anthropic a "supply chain risk" or invoke the Defense Production Act
-* Despite threats of removal from military systems, Anthropic maintains its ethical stance while offering smooth transition support if needed
-* The company remains committed to supporting national security within the boundaries of democratic values and technical safety
-
-### Anthropic CEO 在五角大楼施压下坚守 AI 伦理底线
-
-* Anthropic 率先将 Claude AI 部署到美国军事和情报机构,是首家进入机密网络和国家实验室的前沿 AI 公司
-* 公司为保护美国 AI 领先地位,牺牲数亿美元收入封禁中共关联企业,并抵御中共网络攻击
-* Anthropic 拒绝移除两项关键安全措施:大规模国内监控和全自主武器部署
-* AI 驱动的大规模国内监控利用法律漏洞,可大规模自动组装美国人的全面生活档案,威胁基本自由
-* 当前 AI 系统尚不具备支持全自主武器的可靠性,无法在目标选择和打击中替代人类判断
-* 国防部要求"任何合法用途"的访问权限,威胁将 Anthropic 列为"供应链风险"或动用《国防生产法》
-* 尽管面临被军事系统移除的威胁,Anthropic 坚持伦理立场,同时承诺提供平稳过渡支持
-* 公司仍致力于在民主价值观和技术安全边界内支持国家安全
-
-**[Read Original / 阅读原文](https://www.anthropic.com/news/statement-department-of-war)**
-
-### The Hunt for Dark Breakfast: A Mathematical Exploration of Unexplored Culinary Space
-
-* Author theorizes breakfast foods exist on a mathematical simplex defined by milk, eggs, and flour ratios
-* Comprehensive mapping of global breakfast dishes reveals a mysterious gap in the "breakfast manifold"
-* Three major breakfast clusters identified: Pancake Local Group, Baked Good Quadrant, and Egg Singularity with Custard Accretion Disk
-* Discovery that IHOP omelettes contain pancake batter confirms the existence of the "Dark Breakfast Abyss"
-* Humorous speculation that this unexplored region remains empty for existential reasons, warning against cooking the "Forbidden Breakfast"
-
-### 寻找暗黑早餐:未探索烹饪空间的数学探索
-
-* 作者提出早餐食物存在于由牛奶、鸡蛋和面粉比例定义的数学单纯形上
-* 对全球早餐菜肴的全面映射揭示了"早餐流形"中的神秘空白
-* 识别出三个主要早餐集群:煎饼局部群、烘焙食品象限、以及鸡蛋奇点与蛋奶冻吸积盘
-* 发现IHOP煎蛋卷含有煎饼面糊,证实了"暗黑早餐深渊"的存在
-* 幽默推测这个未探索区域保持空白是有存在主义原因的,警告不要烹饪"禁忌早餐"
-
-**[Read Original / 阅读原文](https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast/)**
-
-<!-- [Title-Only] -->
-### The Normalization of Corruption in Organizations (2003)
-
-* Based on the title, this academic paper likely examines how corrupt practices become accepted and institutionalized within organizational settings. It probably explores the psychological and social mechanisms through which unethical behavior transitions from being seen as deviant to becoming routine and normalized among employees and management.
-
-* This is worth reading because it addresses a critical question: how do organizations drift from ethical standards without anyone sounding the alarm? Understanding the normalization process can help identify early warning signs and develop strategies to prevent corruption from taking root. The 2003 publication date suggests this is a foundational work in organizational ethics that may have influenced subsequent research and corporate governance practices.
-
----
-
 ### 组织中腐败的常态化 (2003)
 
 * 根据标题推测,这篇学术论文可能探讨了腐败行为如何在组织环境中被接受并制度化。文章很可能分析了不道德行为从被视为异常转变为员工和管理层日常惯例的心理和社会机制。
@@ -692,4 +631,170 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于希望在 2026 年利用 AI 编程助手的开发者和非技术创作者来说是必看指南;针对不同项目类型和技能水平,提供关于哪些工具能带来最佳效果的实用见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SordE3oOSyc)**
+
+### Anthropic CEO Stands Firm on AI Ethics Amid Pentagon Pressure
+
+* Anthropic has been a pioneer in deploying Claude AI to US military and intelligence agencies, being the first frontier AI company in classified networks and National Laboratories
+* The company sacrificed hundreds of millions in revenue by blocking Chinese Communist Party-linked firms and defending against CCP cyberattacks to protect US AI leadership
+* Anthropic refuses to remove two critical safeguards: mass domestic surveillance and fully autonomous weapons deployment
+* Mass domestic surveillance using AI threatens fundamental liberties by assembling comprehensive profiles of Americans' lives at scale, exploiting legal gaps
+* Current AI systems lack the reliability for fully autonomous weapons that remove human judgment from target selection and engagement decisions
+* The Department of War demands "any lawful use" access and threatens to label Anthropic a "supply chain risk" or invoke the Defense Production Act
+* Despite threats of removal from military systems, Anthropic maintains its ethical stance while offering smooth transition support if needed
+* The company remains committed to supporting national security within the boundaries of democratic values and technical safety
+
+### Anthropic CEO 在五角大楼施压下坚守 AI 伦理底线
+
+* Anthropic 率先将 Claude AI 部署到美国军事和情报机构,是首家进入机密网络和国家实验室的前沿 AI 公司
+* 公司为保护美国 AI 领先地位,牺牲数亿美元收入封禁中共关联企业,并抵御中共网络攻击
+* Anthropic 拒绝移除两项关键安全措施:大规模国内监控和全自主武器部署
+* AI 驱动的大规模国内监控利用法律漏洞,可大规模自动组装美国人的全面生活档案,威胁基本自由
+* 当前 AI 系统尚不具备支持全自主武器的可靠性,无法在目标选择和打击中替代人类判断
+* 国防部要求"任何合法用途"的访问权限,并威胁将 Anthropic 列为"供应链风险"或动用《国防生产法》
+* 尽管面临被军事系统移除的威胁,Anthropic 坚持伦理立场,同时承诺提供平稳过渡支持
+* 公司仍致力于在民主价值观和技术安全边界内支持国家安全
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/statement-department-of-war)**
+
+I need to see the complete content to provide an accurate summary. The text appears to be cut off at "After a day of running, the SAT solver reduced the program to 20,". 
+
+Could you please provide the rest of the article? Once I have the complete content, I'll create a properly formatted summary in both English and Chinese following the structure you specified.
+
+**[Read Original / 阅读原文](https://blog.janestreet.com/can-you-reverse-engineer-our-neural-network/)**
+
+### F-Droid Board of Directors Nominations 2026 - Call for Volunteer Directors
+
+* F-Droid is accepting nominations for up to four volunteer board director positions with two-year terms
+* Nomination deadline: March 16, 2026 (Anywhere on Earth). Submit via email to board-nominations@f-droid.org
+* Self-nominations and third-party nominations (with permission) are both welcome
+* Ideal candidates are committed to computer user freedoms, especially on mobile devices - no prior software development or board experience required
+* Nominations should include: social media/website links, examples of FOSS contributions, and relevant skills or qualifications
+* Selection process: Current board discusses and votes on nominees in private meeting, with voting weighted toward new candidates
+* Director responsibilities: Email discussions, community communication (GitLab/Forum), prompt voting, and monthly one-hour public video conferences
+* Time commitment: 1-3 hours per week; English proficiency required
+* Directors must follow F-Droid Code of Conduct and maintain high community standards
+* New appointments will be announced shortly after March 19, 2026
+* Four current directors' terms are ending: Sebastian Crane, Peter Serwylo, Hans-Christoph Steiner, and John Sullivan
+
+### F-Droid 2026年董事会提名 - 招募志愿董事
+
+* F-Droid正在接受最多四个志愿董事职位的提名,任期两年
+* 提名截止日期:2026年3月16日(地球上任何地方时间)。通过电子邮件提交至 board-nominations@f-droid.org
+* 欢迎自我提名和第三方提名(需获得许可)
+* 理想候选人致力于维护计算机用户自由,特别是移动设备方面 - 无需软件开发或董事会经验
+* 提名应包括:社交媒体/网站链接、自由开源软件贡献示例、相关技能或资质
+* 选拔流程:现任董事会私下讨论并投票,投票向新候选人倾斜
+* 董事职责:电子邮件讨论、社区沟通(GitLab/论坛)、及时投票、每月一小时公开视频会议
+* 时间投入:每周1-3小时;需具备英语能力
+* 董事必须遵守F-Droid行为准则并保持高社区标准
+* 新任命将在2026年3月19日后尽快公布
+* 四位现任董事任期即将结束:Sebastian Crane、Peter Serwylo、Hans-Christoph Steiner和John Sullivan
+
+**[Read Original / 阅读原文](https://f-droid.org/2026/02/26/board-of-directors-nominations.html)**
+
+### WiFi DensePose - Revolutionary WiFi-Based Human Pose Estimation Through Walls
+
+* Uses WiFi signals and Channel State Information (CSI) to track full-body human poses in real-time without cameras, enabling privacy-preserving motion detection through walls using commodity routers
+* Privacy-first camera-free tracking, sub-50ms latency at 30 FPS, multi-person tracking (up to 10 people), enterprise-ready REST/WebSocket APIs, 100% test coverage, includes specialized disaster response module (WiFi-Mat) for search and rescue operations detecting vital signs through rubble
+* Trending for its groundbreaking approach to pose estimation that solves privacy concerns while enabling through-wall detection; features a high-performance Rust port with 810x speedup over Python (54,000 fps throughput), production-ready with Docker support, and real-world applications in healthcare, fitness, smart homes, security, and disaster response
+
+### WiFi DensePose - 革命性的基于WiFi的人体姿态估计系统
+
+* 使用WiFi信号和信道状态信息(CSI)实时追踪完整人体姿态，无需摄像头，通过普通路由器实现隐私保护的穿墙运动检测
+* 隐私优先的无摄像头追踪，延迟低于50毫秒、30帧/秒，多人追踪(最多10人)，企业级REST/WebSocket API，100%测试覆盖率，包含专门的灾难响应模块(WiFi-Mat)用于搜救行动，可透过废墟检测生命体征
+* 因其突破性的姿态估计方法而备受关注，解决了隐私问题同时实现穿墙检测；配备高性能Rust版本，速度比Python快810倍(吞吐量54,000帧/秒)，生产就绪支持Docker，在医疗、健身、智能家居、安防和灾难救援领域有实际应用
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/wifi-densepose)**
+
+### Moonshine Voice - Fast On-Device Speech Recognition for Real-Time Voice Applications
+
+* An open-source ASR toolkit optimized for live voice interfaces that runs entirely on-device across Python, iOS, Android, Linux, Windows, Raspberry Pi, and IoT devices
+* Outperforms Whisper with 10-100x faster latency (34-802ms vs 277-16,919ms), streaming support with caching, better multilingual accuracy for Asian languages, and models as small as 26MB
+* Trending because it solves Whisper's limitations for real-time applications: eliminates the fixed 30-second window, caches repeated audio for instant updates, offers higher accuracy than Whisper Large V3 on benchmarks, and provides unified cross-platform deployment with batteries-included APIs for transcription, diarization, and intent recognition
+
+### Moonshine Voice - 面向实时语音应用的快速边缘设备语音识别
+
+* 完全在设备端运行的开源 ASR 工具包,专为实时语音界面优化,支持 Python、iOS、Android、Linux、Windows、树莓派和物联网设备
+* 性能超越 Whisper:延迟快 10-100 倍(34-802ms vs 277-16,919ms),支持流式处理和缓存,亚洲语言准确率更高,模型最小仅 26MB
+* 值得关注因为它解决了 Whisper 在实时应用中的局限:消除固定 30 秒窗口限制,缓存重复音频实现即时更新,基准测试准确率高于 Whisper Large V3,提供统一的跨平台部署和开箱即用的转录、说话人识别和意图识别 API
+
+**[View Repository / 查看仓库](https://github.com/moonshine-ai/moonshine)**
+
+### 🎬 Praise in private, criticize in public
+**Channel:** Lenny's Podcast
+
+* This video challenges the conventional management wisdom of "praise in public, criticize in private" by flipping it on its head
+* Explores controversial leadership approaches and when breaking traditional rules might actually benefit team dynamics and accountability
+* Worth watching for managers and leaders willing to question established norms and consider context-dependent leadership strategies that prioritize transparency and collective learning over individual comfort
+
+### 🎬 私下表扬,公开批评
+**频道:** Lenny's Podcast
+
+* 这期视频挑战了传统管理智慧"公开表扬,私下批评",提出了颠覆性的观点
+* 探讨了有争议的领导方法,以及何时打破传统规则实际上可能有益于团队动态和责任制
+* 值得管理者和领导者观看,适合那些愿意质疑既定规范、考虑情境化领导策略的人——优先考虑透明度和集体学习而非个人舒适感
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UWYCwtecjfA)**
+
+### 🎬 The ultimate dev skill is Integration Testing – Interview with Internet of Bugs [Podcast #209]
+
+**Channel:** freeCodeCamp.org
+
+* This podcast features an interview with Carl Brown, creator of the Internet of Bugs YouTube channel and former Amazon developer, discussing the critical importance of integration testing in software development
+* Key topics include why integration testing is considered the "ultimate dev skill," practical approaches to implementing integration tests, lessons learned from working at scale at Amazon, and how to balance different testing strategies in real-world projects
+* Worth watching because it provides insider perspectives from someone with hands-on experience at one of the world's largest tech companies, offering actionable insights on testing practices that can immediately improve code quality and system reliability for developers at any level
+
+---
+
+### 🎬 终极开发技能是集成测试 – Internet of Bugs 访谈 [播客 #209]
+
+**频道:** freeCodeCamp.org
+
+* 本播客采访了 Internet of Bugs YouTube 频道创建者、前亚马逊开发者 Carl Brown,探讨集成测试在软件开发中的关键重要性
+* 主要话题包括为什么集成测试被视为"终极开发技能"、实施集成测试的实用方法、在亚马逊大规模工作中获得的经验教训,以及如何在实际项目中平衡不同的测试策略
+* 值得观看因为它提供了来自世界最大科技公司之一的实战经验者的内部视角,为各个水平的开发者提供可立即改善代码质量和系统可靠性的可行见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=s950xhRvqYQ)**
+
+### 🎬 Code your own smartwatch
+**Channel:** CircuitMess Shorts
+
+* What the video covers: A DIY smartwatch project that allows you to program and customize your own wearable device
+* Key topics discussed: Coding capabilities, built-in sensors (gyroscope and accelerometer), creative possibilities for custom smartwatch applications
+* Why it's worth watching: Perfect for makers and developers interested in wearable tech and IoT projects; offers hands-on experience with sensor programming and embedded systems
+
+---
+
+### 🎬 编程你自己的智能手表
+**频道:** CircuitMess Shorts
+
+* 视频内容概述: 一个DIY智能手表项目,让你可以编程和定制自己的可穿戴设备
+* 主要话题: 编程功能、内置传感器(陀螺仪和加速度计)、智能手表应用的创意可能性
+* 为何值得观看: 适合对可穿戴技术和物联网项目感兴趣的创客和开发者;提供传感器编程和嵌入式系统的实践经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=q51NE21Xik8)**
+
+### 🎬 C++ vs Python: Hello World Program | Coding Shorts
+
+**Channel:** Wraithen
+
+* What the video covers: A side-by-side comparison of writing a "Hello World" program in C++ versus Python, demonstrating the syntax differences between these two popular programming languages.
+
+* Key topics discussed: Basic syntax comparison, code verbosity differences, the simplicity of Python versus the more structured approach of C++, and fundamental programming concepts for beginners.
+
+* Why it's worth watching: Perfect for coding beginners or anyone curious about language differences. This short format makes it easy to quickly understand why Python is often recommended for beginners while C++ requires more boilerplate code. Great for developers considering which language to learn first or those interested in understanding the trade-offs between high-level and lower-level programming languages.
+
+---
+
+### 🎬 C++ vs Python: Hello World 程序对比 | 编程短视频
+
+**频道:** Wraithen
+
+* 视频内容概述: 并排对比 C++ 和 Python 编写"Hello World"程序的过程,展示这两种流行编程语言之间的语法差异。
+
+* 主要话题: 基础语法对比、代码冗长度差异、Python 的简洁性与 C++ 更结构化的方法对比,以及面向初学者的基础编程概念。
+
+* 为何值得观看: 非常适合编程初学者或对语言差异感兴趣的人。这种短视频格式让你快速理解为什么 Python 常被推荐给初学者,而 C++ 需要更多样板代码。对于正在考虑学习哪种语言的开发者,或想了解高级语言与低级语言之间权衡的人来说,这是很好的入门内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8HEXSoTx3PU)**
 
