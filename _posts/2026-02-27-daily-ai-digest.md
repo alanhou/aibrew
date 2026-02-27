@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 27, 2026"
 date: 2026-02-27
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -523,4 +523,139 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 非常适合希望转型到 AI 智能体开发领域的开发者,本教程在通用 Python 知识和专业 AI 智能体编程之间搭建桥梁,提供现代自主系统中使用的工具和技术的实践经验
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UsfpzxZNsPo)**
+
+### Anthropic CEO Stands Firm on AI Ethics Amid Pentagon Pressure
+
+* Anthropic has been a pioneer in deploying Claude AI to US military and intelligence agencies, being the first frontier AI company in classified networks and National Laboratories
+* The company sacrificed hundreds of millions in revenue by blocking Chinese Communist Party-linked firms and defending against CCP cyberattacks to protect US AI leadership
+* Anthropic refuses to remove two critical safeguards: prohibition of mass domestic surveillance and fully autonomous weapons systems
+* Mass domestic surveillance using AI threatens fundamental liberties by aggregating scattered data into comprehensive profiles of Americans' lives at scale
+* Current AI systems lack the reliability and judgment needed for fully autonomous weapons that remove humans from targeting decisions
+* The Department of War has threatened to designate Anthropic a "supply chain risk" and invoke the Defense Production Act to force removal of safeguards
+* Despite threats of removal from military systems, Anthropic maintains its ethical stance while offering to ensure smooth transition if needed
+* The company remains committed to supporting national security within the bounds of democratic values and technological safety
+
+### Anthropic CEO 在五角大楼施压下坚守 AI 伦理底线
+
+* Anthropic 率先将 Claude AI 部署到美国军事和情报机构,是首家进入机密网络和国家实验室的前沿 AI 公司
+* 公司为保护美国 AI 领先地位,牺牲数亿美元收入封锁中共关联企业,并抵御中共网络攻击
+* Anthropic 拒绝移除两项关键安全措施:禁止大规模国内监控和完全自主武器系统
+* 使用 AI 进行大规模国内监控威胁基本自由,可将零散数据大规模汇总成美国人生活的全面画像
+* 当前 AI 系统缺乏可靠性和判断力,无法支持将人类完全排除在目标选择之外的全自主武器
+* 国防部威胁将 Anthropic 列为"供应链风险",并援引《国防生产法》强制移除安全措施
+* 尽管面临被军事系统移除的威胁,Anthropic 仍坚持伦理立场,同时承诺确保平稳过渡
+* 公司继续致力于在民主价值观和技术安全范围内支持国家安全
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/statement-department-of-war)**
+
+### Error Page Analysis
+
+* This appears to be an X.com (formerly Twitter) error page with minimal content
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Contains a "Try again" button for users to retry their action
+* Includes a warning about privacy-related browser extensions potentially causing issues on x.com
+* The HTML structure shows this is a standard error handling interface with CSS styling classes
+* No actual blog content or article is present - this is just an error state page
+
+### 错误页面分析
+
+* 这是一个 X.com（原 Twitter）的错误页面，内容极少
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含一个"重试"按钮供用户重新尝试操作
+* 包含关于隐私相关浏览器扩展可能导致 x.com 出现问题的警告
+* HTML 结构显示这是一个标准的错误处理界面，带有 CSS 样式类
+* 没有实际的博客内容或文章——这只是一个错误状态页面
+
+**[Read Original / 阅读原文](https://twitter.com/jack/status/2027129697092731343)**
+
+<!-- [Title-Only] -->
+### AirSnitch: Demystifying and breaking client isolation in Wi-Fi networks
+
+* Based on the title, this appears to be an academic research paper that examines vulnerabilities in Wi-Fi client isolation mechanisms. Client isolation is a security feature used in public and shared Wi-Fi networks to prevent devices from communicating directly with each other. The paper likely presents "AirSnitch," a tool or technique that can bypass these isolation protections.
+
+* This is interesting to security researchers and network administrators because it reveals potential weaknesses in a widely-deployed security feature. If client isolation can be broken, attackers on the same Wi-Fi network could potentially intercept traffic, perform man-in-the-middle attacks, or access other users' devices—scenarios that client isolation is specifically designed to prevent. The research likely has implications for public Wi-Fi security in cafes, airports, hotels, and enterprise guest networks.
+
+---
+
+### AirSnitch: 揭秘并突破 Wi-Fi 网络中的客户端隔离机制
+
+* 根据标题推测,这是一篇学术研究论文,探讨了 Wi-Fi 客户端隔离机制中的安全漏洞。客户端隔离是公共和共享 Wi-Fi 网络中使用的一项安全功能,用于防止设备之间直接通信。该论文可能介绍了名为"AirSnitch"的工具或技术,可以绕过这些隔离保护措施。
+
+* 这项研究对安全研究人员和网络管理员很有价值,因为它揭示了一个广泛部署的安全功能中的潜在弱点。如果客户端隔离可以被突破,同一 Wi-Fi 网络上的攻击者就有可能拦截流量、执行中间人攻击或访问其他用户的设备——而这些正是客户端隔离机制旨在防止的场景。这项研究可能对咖啡馆、机场、酒店和企业访客网络等公共 Wi-Fi 安全具有重要影响。
+
+**[Read Original / 阅读原文](https://www.ndss-symposium.org/wp-content/uploads/2026-f1282-paper.pdf)**
+
+### DataClaw - Export AI Coding Conversations to Open Datasets
+
+* Converts Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw conversation histories into structured datasets and publishes them to Hugging Face
+* Multi-layer privacy protection including path anonymization, username hashing, secret detection via regex and entropy analysis, email redaction, and customizable redaction rules
+* A performance art project challenging AI companies' restrictive data policies by enabling developers to share their human-AI coding collaboration data as part of a growing distributed dataset tagged `dataclaw` on Hugging Face
+
+### DataClaw - 将 AI 编程对话导出为开放数据集
+
+* 将 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的对话历史转换为结构化数据集并发布到 Hugging Face
+* 多层隐私保护,包括路径匿名化、用户名哈希、通过正则和熵分析检测密钥、邮箱脱敏以及可自定义的脱敏规则
+* 一个行为艺术项目,通过让开发者分享人机协作编程数据来挑战 AI 公司的限制性数据政策,这些数据在 Hugging Face 上以 `dataclaw` 标签形成不断增长的分布式数据集
+
+**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
+
+### 🎬 You're Not Behind (Yet): How to Build AI Agents in 2026 (no coding)
+
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive guide to building AI agents in 2026 without any coding knowledge, making advanced AI automation accessible to non-technical users
+* Key topics discussed: No-code AI agent development platforms, practical implementation strategies, current state of AI agent technology, and actionable steps for beginners to get started with AI automation
+* Why it's worth watching: Perfect for anyone feeling overwhelmed by AI advancement - this video demystifies AI agents and provides a clear roadmap to leverage this technology without technical barriers. Includes a free AI Agents Playbook resource to accelerate your learning journey.
+
+---
+
+### 🎬 无需编程:2026年AI智能体构建指南(你还没落后)
+
+**频道:** Futurepedia
+
+* 视频内容概述: 全面介绍如何在2026年无需编程知识即可构建AI智能体,让非技术用户也能掌握先进的AI自动化技术
+* 主要话题: 无代码AI智能体开发平台、实用实施策略、AI智能体技术现状,以及初学者入门AI自动化的可行步骤
+* 为何值得观看: 非常适合对AI发展感到不知所措的人群 - 本视频深入浅出地讲解AI智能体,并提供清晰的技术应用路线图,无需技术背景即可上手。还附赠免费的AI智能体实战手册,助力快速学习。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ibFJ--CH3cQ)**
+
+### 🎬 "AirDrop" for Linux, Android, and Windows?
+
+**Channel:** bashbunni
+
+* What the video covers: A cross-platform file sharing solution that works like Apple's AirDrop but for Linux, Android, and Windows systems
+* Key topics discussed: Tailscale integration for secure file transfers, cross-platform compatibility, practical implementation for developers and Linux users
+* Why it's worth watching: Perfect for developers and tech enthusiasts who need seamless file sharing across different operating systems without being locked into Apple's ecosystem. Shows a practical alternative using open-source tools.
+
+---
+
+### 🎬 Linux、Android 和 Windows 的"隔空投送"？
+
+**频道:** bashbunni
+
+* 视频内容概述: 介绍一个跨平台文件共享解决方案,类似苹果的隔空投送(AirDrop),但支持 Linux、Android 和 Windows 系统
+* 主要话题: Tailscale 集成实现安全文件传输、跨平台兼容性、开发者实用实现方案
+* 为何值得观看: 适合需要在不同操作系统间无缝共享文件的开发者和技术爱好者,无需被锁定在苹果生态系统中。展示了使用开源工具的实用替代方案。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zMSL-kTF8LE)**
+
+### 🎬 I Downloaded MINECRAFT on My CALCULATOR! 🤯 (Calcraft Tutorial)
+
+**Channel:** Frannoni
+
+* What the video covers: A step-by-step tutorial on installing and running Calcraft (a Minecraft port) on a graphing calculator
+* Key topics discussed: Calculator gaming, Calcraft installation process, running Minecraft on unconventional hardware, technical setup and configuration
+* Why it's worth watching: This video showcases an impressive technical feat of running Minecraft on calculator hardware, perfect for tech enthusiasts curious about pushing device limitations and exploring creative gaming setups. The tutorial format makes it accessible for viewers who want to try this themselves.
+
+---
+
+### 🎬 我在计算器上下载了 MINECRAFT! 🤯 (Calcraft 教程)
+
+**频道:** Frannoni
+
+* 视频内容概述: 详细演示如何在图形计算器上安装和运行 Calcraft(Minecraft 移植版)的分步教程
+* 主要话题: 计算器游戏、Calcraft 安装流程、在非常规硬件上运行 Minecraft、技术设置和配置
+* 为何值得观看: 这个视频展示了在计算器硬件上运行 Minecraft 的惊人技术成就,非常适合对突破设备限制和探索创意游戏设置感兴趣的科技爱好者。教程形式让想要亲自尝试的观众也能轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OGWObc5tv0Q)**
 
