@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 28, 2026"
 date: 2026-02-28
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -514,98 +514,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Vibe 编程工具排名：从最差到最佳 (2026)
-**频道:** Mikey No Code
-
-* 视频内容概述: 全面排名和比较 2026 年可用的 AI 驱动"氛围编程"工具,评估其功能、性能和性价比
-* 主要话题: 详细分析各种无代码/低代码 AI 开发平台,重点推荐 Base44 作为最佳选择;比较不同工具的定价、功能、用户体验和实际应用场景
-* 为何值得观看: 对于希望在 2026 年利用 AI 编程助手的开发者和非技术创作者来说是必看指南;针对不同项目类型和技能水平,提供关于哪些工具能带来最佳效果的实用见解
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SordE3oOSyc)**
-
-<!-- [Title-Only] -->
-### We Will Not Be Divided
-
-* Based on the title, this article likely addresses themes of unity, solidarity, or resistance against divisive forces. It could be discussing social, political, or community issues where maintaining cohesion is crucial.
-* This might be interesting to readers because it appears to take a stance on current divisive issues, potentially offering perspective on how communities or groups can stay united despite challenges or external pressures trying to create rifts.
-
-### 我们不会被分裂
-
-* 根据标题推测,这篇文章可能探讨团结、凝聚力或抵制分裂势力的主题。可能涉及社会、政治或社区议题,强调保持团结的重要性。
-* 值得关注是因为文章似乎对当前的分裂性议题表明了立场,可能提供关于社区或群体如何在面对挑战或试图制造裂痕的外部压力时保持团结的视角。
-
-**[Read Original / 阅读原文](https://notdivided.org)**
-
-### Error Page Analysis
-
-* This appears to be an X.com (formerly Twitter) error page with minimal content
-* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
-* Contains a "Try again" button for users to retry their action
-* Includes a warning about privacy-related browser extensions potentially causing issues on x.com
-* The HTML structure shows this is a standard error handling interface with CSS styling classes
-* No actual blog content or article is present - this is just an error state page
-
-### 错误页面分析
-
-* 这是一个 X.com（原 Twitter）的错误页面，内容极少
-* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
-* 包含一个"重试"按钮供用户重新尝试操作
-* 包含关于隐私相关浏览器扩展可能导致 x.com 出现问题的警告
-* HTML 结构显示这是一个标准的错误处理界面，带有 CSS 样式类
-* 没有实际的博客内容或文章——这只是一个错误状态页面
-
-**[Read Original / 阅读原文](https://twitter.com/secwar/status/2027507717469049070)**
-
-### AdderBoard: The Quest for the Smallest Addition Transformer
-
-* Community-driven challenge to build the tiniest transformer that can add two 10-digit numbers with ≥99% accuracy
-* Started from AI coding assistants (Claude Code: 6,080 params, Codex: 1,644 params), now pushed down to just 36 parameters
-* Two competition tracks: hand-coded weights (constructive proofs) and trained weights (learned from data)
-* Current hand-coded champion: 36-parameter model with 100% accuracy using ALiBi positional encoding and sparse embeddings
-* Current trained champion: 311-parameter model achieving 99.999% accuracy through rank-3 factorization and grokking
-* Strict rules enforce genuine autoregressive transformers—self-attention required, no problem-specific logic in forward pass
-* Key innovations: tied embeddings, RoPE digit routing, rank-1 projections, factorized embeddings, curriculum learning
-* Models must pass verification on 10,000 random test pairs plus edge cases
-* Explores fundamental question: what's the minimal architecture that can represent integer addition through attention, MLPs, and autoregressive generation?
-
-### AdderBoard：最小加法 Transformer 挑战赛
-
-* 社区驱动的挑战赛，目标是构建能以 ≥99% 准确率完成两个 10 位数加法的最小 Transformer
-* 起源于 AI 编程助手的对比（Claude Code：6,080 参数，Codex：1,644 参数），现已压缩至仅 36 个参数
-* 两个竞赛赛道：手工编码权重（构造性证明）和训练权重（从数据学习）
-* 当前手工编码冠军：36 参数模型，使用 ALiBi 位置编码和稀疏嵌入实现 100% 准确率
-* 当前训练冠军：311 参数模型，通过秩-3 分解和 grokking 达到 99.999% 准确率
-* 严格规则确保真正的自回归 Transformer——必须包含自注意力机制，前向传播中不允许问题特定逻辑
-* 关键创新：绑定嵌入、RoPE 数字路由、秩-1 投影、分解嵌入、课程学习
-* 模型必须通过 10,000 个随机测试对加边界案例的验证
-* 探索基本问题：通过注意力、MLP 和自回归生成表示整数加法的最小架构是什么?
-
-**[Read Original / 阅读原文](https://github.com/anadim/AdderBoard)**
-
-### DataClaw - Export AI Coding Conversations to Open Datasets
-
-* Converts Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw conversation histories into structured datasets and publishes them to Hugging Face
-* Automatically redacts secrets, PII, and sensitive data through path anonymization, username hashing, secret detection, entropy analysis, and custom redaction rules
-* Positions itself as "performance art" challenging Anthropic's data policies — enabling users to contribute their AI coding interactions to a distributed open dataset tagged with `dataclaw` on Hugging Face
-
-### DataClaw - 将 AI 编程对话导出为开放数据集
-
-* 将 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的对话历史转换为结构化数据集并发布到 Hugging Face
-* 通过路径匿名化、用户名哈希、密钥检测、熵分析和自定义脱敏规则自动删除敏感信息、个人身份信息和机密数据
-* 以"行为艺术"的形式挑战 Anthropic 的数据政策——让用户能够将其 AI 编程交互贡献到 Hugging Face 上标记为 `dataclaw` 的分布式开放数据集
-
-**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
-
-### 🎬 Claude Code - Full Tutorial for Beginners
-
-**Channel:** Tech With Tim
-
-* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
-* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
-* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
-
----
-
 ### 🎬 Claude Code - 完整新手教程
 
 **频道:** Tech With Tim
@@ -639,4 +547,174 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合编程初学者或对语言差异感兴趣的人。这种短视频格式让你快速理解为什么 Python 常被推荐给初学者,而 C++ 需要更多样板代码。对于正在考虑学习哪种语言的开发者,或想了解高级语言与低级语言之间权衡的人来说,这是很好的入门内容。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8HEXSoTx3PU)**
+
+### We Will Not Be Divided - FAQ Summary
+
+* **Purpose**: An open letter seeking common ground among Google and OpenAI employees regarding concerns about AI misuse, organized by independent citizens unaffiliated with any political party or company
+* **Eligibility**: Current and former Google and OpenAI employees can sign, with options for both public and anonymous signatures
+* **Privacy Protection**: Anonymous signatures have personal data automatically deleted within 24 hours after verification, leaving only anonymous public listings
+* **Verification Process**: All signatures verified through company email addresses (@google.com or @openai.com) or manual employment proof review before publication
+* **Data Handling**: Public signatures display name and affiliation; email addresses never published or shared; automatic de-duplication prevents double-counting
+* **Signature Updates**: Anonymous signers can switch to named signatures through alternative verification method
+* **Transparency**: Two verification mistakes acknowledged and corrected; all errors logged publicly
+* **Infrastructure**: Hosted on Fly.io with encrypted SQLite database, uses Resend for emails, open-source Flask application, no tracking scripts
+
+### 我们不会被分裂 - 常见问题摘要
+
+* **目的**: 一封由独立公民组织的公开信,旨在就AI滥用问题在谷歌和OpenAI员工中寻求共识,组织者不隶属于任何政党或公司
+* **签署资格**: 谷歌和OpenAI的现任及前任员工可签署,提供公开和匿名签署两种选项
+* **隐私保护**: 匿名签署者的个人信息在验证后24小时内自动永久删除,仅保留匿名公开记录
+* **验证流程**: 所有签名在发布前均需验证,通过公司邮箱(@google.com或@openai.com)或人工审核就业证明完成
+* **数据处理**: 公开签名显示姓名和所属机构;邮箱地址从不公开或共享;自动去重防止重复计数
+* **签名更新**: 匿名签署者可通过替代验证方式转为实名签署
+* **透明度**: 已公开承认并纠正两次验证错误;所有错误均公开记录
+* **基础设施**: 托管于Fly.io,使用加密SQLite数据库,通过Resend发送邮件,开源Flask应用,无追踪脚本
+
+**[Read Original / 阅读原文](https://notdivided.org)**
+
+### Anthropic Responds to Department of War Supply Chain Risk Designation
+
+* Secretary of War Pete Hegseth announced plans to designate Anthropic as a supply chain risk following failed negotiations over two AI use exceptions
+* Anthropic refused to allow Claude AI for mass domestic surveillance of Americans and fully autonomous weapons systems
+* The company argues current AI models are not reliable enough for autonomous weapons and that mass surveillance violates fundamental rights
+* This would be an unprecedented designation—historically reserved for US adversaries, never before publicly applied to an American company
+* Anthropic has supported US military operations since June 2024 and intends to continue, but will challenge the designation in court
+* For individual and commercial customers: Claude access remains completely unaffected
+* For Department of War contractors: The designation would only restrict Claude use on DoW contract work, not other purposes
+* Anthropic maintains the Secretary lacks statutory authority to broadly restrict contractors from doing business with the company
+
+### Anthropic 回应国防部供应链风险指定
+
+* 国防部长 Pete Hegseth 宣布计划将 Anthropic 指定为供应链风险,此前双方就两项 AI 使用例外条款的谈判破裂
+* Anthropic 拒绝允许 Claude AI 用于对美国人的大规模国内监控和完全自主武器系统
+* 该公司认为当前 AI 模型的可靠性不足以用于自主武器,且大规模监控侵犯基本权利
+* 这将是史无前例的指定——历史上仅用于美国对手,从未公开适用于美国公司
+* Anthropic 自 2024 年 6 月起支持美国军事行动并打算继续合作,但将在法庭上挑战该指定
+* 对于个人和商业客户:Claude 访问完全不受影响
+* 对于国防部承包商:该指定仅限制在国防部合同工作中使用 Claude,其他用途不受影响
+* Anthropic 坚称部长缺乏法定权力广泛限制承包商与该公司开展业务
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/statement-comments-secretary-war)**
+
+### Stop Using Passkeys for Encrypting User Data: A Critical Warning
+
+* **The Core Problem**: Organizations are using passkeys with PRF (Pseudo-Random Function) extension to encrypt user data, creating a dangerous "blast radius" when users lose or delete their passkeys
+* **Common Use Cases at Risk**: Message backups (photos/videos), end-to-end encryption, document encryption, crypto wallets, credential manager unlocking, and local account sign-in
+* **The User Experience Disaster**: Users like "Erika" enable encrypted backups via passkey without understanding the tight coupling, later delete the passkey during cleanup, and permanently lose access to irreplaceable memories and data
+* **Why Users Can't Protect Themselves**: Current credential managers (Apple Passwords, Google Password Manager, Bitwarden) show no warnings about data loss when deleting passkeys with PRF
+* **Legitimate PRF Uses**: Credential managers and operating systems can safely use PRF because they have multiple recovery mechanisms (master passwords, recovery keys, social recovery)
+* **Call to Action for Identity Industry**: Stop promoting passkeys for data encryption—let them remain excellent phishing-resistant authentication credentials only
+* **Recommendations for Credential Managers**: Add deletion warnings for PRF-enabled passkeys and display relying party information pages
+* **Guidance for Services Still Using PRF**: Create support documentation explaining PRF usage, list it in Well-Known URLs, and provide upfront warnings to users
+
+---
+
+### 停止使用通行密钥加密用户数据：一个严重警告
+
+* **核心问题**：组织正在使用带有 PRF(伪随机函数)扩展的通行密钥来加密用户数据,当用户丢失或删除通行密钥时会造成危险的"爆炸半径"
+* **面临风险的常见用例**：消息备份(照片/视频)、端到端加密、文档加密、加密钱包、凭证管理器解锁和本地账户登录
+* **用户体验灾难**：像"Erika"这样的用户在不理解紧密耦合的情况下通过通行密钥启用加密备份,后来在清理时删除通行密钥,永久失去对不可替代的回忆和数据的访问权限
+* **为什么用户无法保护自己**：当前的凭证管理器(Apple Passwords、Google Password Manager、Bitwarden)在删除带有 PRF 的通行密钥时不显示数据丢失警告
+* **PRF 的合法用途**：凭证管理器和操作系统可以安全使用 PRF,因为它们具有多种恢复机制(主密码、恢复密钥、社交恢复)
+* **对身份行业的呼吁**：停止推广使用通行密钥进行数据加密——让它们仅作为出色的防钓鱼身份验证凭证
+* **对凭证管理器的建议**：为启用 PRF 的通行密钥添加删除警告,并显示依赖方信息页面
+* **对仍在使用 PRF 的服务的指导**：创建支持文档说明 PRF 使用情况,在 Well-Known URL 中列出,并向用户提供前置警告
+
+**[Read Original / 阅读原文](https://blog.timcappalli.me/p/passkeys-prf-warning/)**
+
+### DataClaw - Export AI Coding Conversations to Open Datasets
+
+* Converts Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw conversation histories into structured datasets and publishes them to Hugging Face
+* Multi-layer privacy protection including path anonymization, username hashing, secret detection (API keys, tokens, passwords), entropy analysis for potential secrets, email redaction, and custom redaction rules
+* A performance art project challenging AI companies' restrictive data policies by enabling developers to share their human-AI coding collaboration data as part of a growing distributed dataset tagged `dataclaw` on Hugging Face
+
+### DataClaw - 将 AI 编程对话导出为开放数据集
+
+* 将 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的对话历史转换为结构化数据集并发布到 Hugging Face
+* 多层隐私保护,包括路径匿名化、用户名哈希、密钥检测(API 密钥、令牌、密码)、熵分析识别潜在密钥、邮箱脱敏以及自定义脱敏规则
+* 一个行为艺术项目,通过让开发者分享人机协作编程数据来挑战 AI 公司的限制性数据政策,所有导出数据在 Hugging Face 上标记为 `dataclaw`,共同构建分布式数据集
+
+**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
+
+### 🎬 Anthropic killed Tool calling
+**Channel:** AI Jason
+
+* What the video covers: This video discusses Anthropic's recent changes or decisions regarding tool calling functionality in their AI models, likely Claude
+* Key topics discussed: The implications of Anthropic's modifications to tool calling capabilities, potential alternatives or workarounds, and how developers should adapt their implementations
+* Why it's worth watching: Essential viewing for developers using Anthropic's APIs who rely on tool calling features; provides insights into the changes and offers practical guidance through a step-by-step tutorial for programmatic tool call setup
+
+---
+
+### 🎬 Anthropic 终止了工具调用功能
+**频道:** AI Jason
+
+* 视频内容概述: 本视频讨论了 Anthropic 最近对其 AI 模型(可能是 Claude)中工具调用功能所做的更改或决策
+* 主要话题: Anthropic 对工具调用能力的修改所带来的影响、潜在的替代方案或解决方法,以及开发者应如何调整其实现方式
+* 为何值得观看: 对于依赖工具调用功能使用 Anthropic API 的开发者来说是必看内容;深入解析了这些变化,并通过分步教程提供了编程式工具调用设置的实用指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3wglqgskzjQ)**
+
+### 🎬 Full Tutorial: Use OpenClaw to Build a Business That Runs Itself in 35 Min | Nat Eliason
+
+**Channel:** Peter Yang
+
+* What the video covers: A comprehensive tutorial on using OpenClaw, an AI automation tool, to create and run an autonomous business. The video showcases Nat Eliason's experiment where he gave his AI bot "Felix" $1000 as seed capital to independently build and operate a business.
+
+* Key topics discussed: Setting up OpenClaw for business automation, the AI bot's decision-making process in launching products/services, revenue generation strategies ($14,718 earned in 3 weeks), practical implementation steps, and lessons learned from running an AI-powered autonomous business.
+
+* Why it's worth watching: This tutorial demonstrates cutting-edge AI business automation in action with real financial results. It provides actionable insights for entrepreneurs interested in leveraging AI agents for business operations, showcasing both the potential and practical considerations of autonomous AI-driven commerce. The impressive ROI (1371% in 3 weeks) makes this a compelling case study for AI-powered business models.
+
+---
+
+### 🎬 完整教程:用 OpenClaw 在 35 分钟内打造自动运营的生意 | Nat Eliason
+
+**频道:** Peter Yang
+
+* 视频内容概述: 这是一个关于使用 OpenClaw(AI 自动化工具)创建和运营自主商业的全面教程。视频展示了 Nat Eliason 的实验,他给 AI 机器人"Felix"提供 1000 美元启动资金,让其独立构建和运营业务。
+
+* 主要话题: OpenClaw 商业自动化设置、AI 机器人在产品/服务推出中的决策过程、收入生成策略(3 周内赚取 14,718 美元)、实际实施步骤,以及运营 AI 驱动自主业务的经验教训。
+
+* 为何值得观看: 本教程展示了前沿的 AI 商业自动化实践及其真实财务成果。为对利用 AI 代理进行商业运营感兴趣的创业者提供可操作的见解,展示了自主 AI 驱动商业的潜力和实际考量。令人印象深刻的投资回报率(3 周内达 1371%)使其成为 AI 驱动商业模式的有力案例研究。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nSBKCZQkmYw)**
+
+### 🎬 Insane Shadow Data Trick in C
+
+**Channel:** Tsoding
+
+* What the video covers: An advanced C programming technique involving "shadow data" - a method for associating metadata with data structures without modifying their original layout
+* Key topics discussed: Low-level memory manipulation, pointer arithmetic tricks, creative use of C's memory model to store auxiliary information alongside primary data structures, references to stb and gf libraries which commonly use similar techniques
+* Why it's worth watching: Demonstrates a clever systems programming pattern used in production libraries like stb (single-file public domain libraries) and gf; valuable for understanding how to write memory-efficient C code and learning unconventional but powerful techniques that experienced C programmers use
+
+---
+
+### 🎬 C语言中的疯狂影子数据技巧
+
+**频道:** Tsoding
+
+* 视频内容概述: 介绍C语言中的高级"影子数据"技术——一种在不修改原始数据结构布局的情况下关联元数据的方法
+* 主要话题: 底层内存操作、指针算术技巧、创造性地利用C语言内存模型在主数据结构旁存储辅助信息,参考了stb和gf等库中使用的类似技术
+* 为何值得观看: 展示了stb(单文件公共域库)和gf等生产级库中使用的巧妙系统编程模式;对于理解如何编写内存高效的C代码以及学习经验丰富的C程序员使用的非常规但强大的技术非常有价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gtk3RZHwJUA)**
+
+### 🎬 Python Essentials for AI Agents – Tutorial
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** A comprehensive Python course focused on building the technical foundation needed for developing AI agents and autonomous intelligence systems
+* **Key topics discussed:** Essential Python programming concepts, technical stack for AI agents, autonomous intelligence implementation, and practical skills for working with AI agent frameworks
+* **Why it's worth watching:** Perfect for developers looking to transition into AI agent development, this tutorial bridges the gap between general Python knowledge and specialized AI agent programming, offering hands-on experience with the tools and techniques used in modern autonomous systems
+
+---
+
+### 🎬 Python AI 智能体开发基础教程
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 一门全面的 Python 课程,专注于构建开发 AI 智能体和自主智能系统所需的技术基础
+* **主要话题:** Python 编程核心概念、AI 智能体技术栈、自主智能实现方法,以及使用 AI 智能体框架的实用技能
+* **为何值得观看:** 非常适合希望转型到 AI 智能体开发领域的开发者,本教程在通用 Python 知识和专业 AI 智能体编程之间搭建桥梁,提供现代自主系统中使用的工具和技术的实践经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UsfpzxZNsPo)**
 
