@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 28, 2026"
 date: 2026-02-28
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -717,4 +717,111 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 非常适合希望转型到 AI 智能体开发领域的开发者,本教程在通用 Python 知识和专业 AI 智能体编程之间搭建桥梁,提供现代自主系统中使用的工具和技术的实践经验
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UsfpzxZNsPo)**
+
+<!-- [Title-Only] -->
+### How do I cancel my ChatGPT subscription?
+
+* Based on the title, this appears to be an official help documentation article from OpenAI that provides step-by-step instructions for users who want to cancel their ChatGPT Plus or other paid ChatGPT subscription plans
+* This would be interesting to readers who are considering canceling their subscription, want to understand the cancellation process before subscribing, or are looking for information about refund policies and what happens to their data after cancellation
+
+### 如何取消我的 ChatGPT 订阅？
+
+* 根据标题推测，这应该是 OpenAI 官方帮助文档，为想要取消 ChatGPT Plus 或其他付费订阅计划的用户提供分步操作指南
+* 对于正在考虑取消订阅的用户、想在订阅前了解取消流程的潜在用户，或者关心取消后退款政策和数据处理方式的读者来说，这篇文章值得关注
+
+**[Read Original / 阅读原文](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-subscription)**
+
+### Croatia Officially Declared Landmine-Free After 31 Years
+
+* Interior Minister Davor Božinović announced that Croatia has completed demining operations, clearing all known minefields 31 years after the Homeland War ended
+* The demining effort resulted in 208 deaths over three decades, including 41 deminers, with total costs reaching approximately 1.2 billion euros
+* Nearly 107,000 mines and 407,000 pieces of unexploded ordnance were removed in compliance with the Ottawa Convention
+* The achievement represents both a technical success and moral obligation to mine victims and their families
+* A mine-free Croatia enables safer communities, rural development, expanded farmland, and enhanced tourism opportunities
+
+### 克罗地亚在31年后正式宣布无地雷
+
+* 内政部长达沃尔·博日诺维奇宣布克罗地亚已完成排雷行动,在祖国战争结束31年后清除了所有已知雷区
+* 历时三十年的排雷工作造成208人死亡,其中包括41名排雷人员,总成本约为12亿欧元
+* 根据《渥太华公约》,清除了近10.7万枚地雷和40.7万件未爆弹药
+* 这一成就既是技术上的成功,也是对地雷受害者及其家属的道义责任
+* 无地雷的克罗地亚意味着更安全的社区、农村发展、更多耕地以及更强劲的旅游业
+
+**[Read Original / 阅读原文](https://glashrvatske.hrt.hr/en/domestic/croatia-declared-free-of-landmines-after-31-years-12593533)**
+
+### Rust is Just a Tool - A Pragmatic Perspective
+
+* Author appreciates Rust for its versatility in both application and systems programming, excellent tooling, pleasant type system, and ability to bring high-level features to non-GC environments
+* Rust has set the bar for "fast languages that are also decently expressive"
+* Using Rust doesn't require: liking every popular crate, buying into marketing hype, following all community "best practices", attacking users of other languages (C, Zig), or denying its design flaws and complexity
+* The author critiques Rust's "enthusiastic" community culture, particularly the repetitive "safety" lectures and refusal to acknowledge alternatives like RAII
+* Core message: Programming tools are just tools - not identity markers, wisdom badges, or moral choices
+* Different developers have different perspectives, tastes, and skills, leading to legitimate preferences for different tools
+* Advocates for accepting diversity in tool choices rather than tribal loyalty to any single language
+
+### Rust 只是一个工具 - 务实的视角
+
+* 作者欣赏 Rust 在应用和系统编程中的多功能性、出色的工具链、优雅的类型系统,以及在无垃圾回收环境中引入高级语言特性的能力
+* Rust 为"既快速又具有表达力的语言"树立了标杆
+* 使用 Rust 并不意味着必须:喜欢每个流行的 crate、相信营销炒作、遵循所有社区"最佳实践"、攻击使用其他语言(C、Zig)的开发者,或否认其设计缺陷和复杂性
+* 作者批评 Rust 社区中"狂热"的文化,特别是重复的"安全性"说教以及拒绝承认 RAII 等替代方案的存在
+* 核心观点:编程工具只是工具 - 不是身份标识、智慧徽章或道德选择
+* 不同的开发者有不同的视角、品味和技能,导致对不同工具的合理偏好
+* 倡导接受工具选择的多样性,而非对单一语言的部落式忠诚
+
+**[Read Original / 阅读原文](https://lewiscampbell.tech/blog/260204.html)**
+
+### Ruflo - Enterprise AI Agent Orchestration Platform for Claude Code
+
+* Production-ready framework that transforms Claude Code into a multi-agent development platform with 60+ specialized AI agents (coder, tester, reviewer, architect, security, DevOps) working in coordinated swarms
+* Self-learning system with RuVector intelligence layer (SONA, Flash Attention, HNSW vector search), reinforcement learning algorithms, and pattern storage that remembers successful workflows and routes tasks to best-performing agents
+* Native Claude Code integration via MCP, multi-LLM support (Claude/GPT/Gemini/Ollama) with automatic failover, fault-tolerant consensus mechanisms (Raft/Byzantine/Gossip), enterprise security (prompt injection protection, input validation), and extensible plugin system with IPFS marketplace
+
+### Ruflo - Claude Code 企业级 AI 智能体编排平台
+
+* 生产就绪的框架,将 Claude Code 转变为多智能体开发平台,提供 60+ 专业 AI 智能体(编码、测试、审查、架构、安全、DevOps)协同工作的集群系统
+* 自学习系统集成 RuVector 智能层(SONA、Flash Attention、HNSW 向量搜索)、强化学习算法和模式存储,能记住成功的工作流程并将任务路由到表现最佳的智能体
+* 原生 Claude Code 集成(通过 MCP 协议)、多 LLM 支持(Claude/GPT/Gemini/Ollama)及自动故障转移、容错共识机制(Raft/拜占庭/Gossip)、企业级安全防护(提示注入防护、输入验证)以及可扩展插件系统和 IPFS 市场
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/ruflo)**
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY FULL COURSE 6HRS: Vibe Coding
+
+**Channel:** Nick Saraev
+
+* What the video covers: A comprehensive 6-hour course on building applications using Gemini 3.1 AI and the Antigravity framework, focusing on a "vibe coding" approach that emphasizes rapid development and AI-assisted programming
+* Key topics discussed: Gemini 3.1 API integration, Antigravity framework fundamentals, AI-powered development workflows, practical project building, and modern full-stack development techniques with AI assistance
+* Why it's worth watching: This extensive tutorial offers hands-on experience with cutting-edge AI development tools, perfect for developers wanting to leverage Gemini 3.1's capabilities and learn efficient AI-assisted coding patterns. The course includes all necessary files and provides a complete learning path from basics to deployment
+
+---
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY 完整课程 6小时:氛围编程
+
+**频道:** Nick Saraev
+
+* 视频内容概述: 一个全面的6小时课程,教授如何使用 Gemini 3.1 AI 和 Antigravity 框架构建应用程序,重点介绍强调快速开发和 AI 辅助编程的"氛围编程"方法
+* 主要话题: Gemini 3.1 API 集成、Antigravity 框架基础、AI 驱动的开发工作流、实战项目构建,以及借助 AI 辅助的现代全栈开发技术
+* 为何值得观看: 这个深度教程提供了使用前沿 AI 开发工具的实践经验,非常适合想要利用 Gemini 3.1 功能并学习高效 AI 辅助编程模式的开发者。课程包含所有必需文件,提供从基础到部署的完整学习路径
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gcuR_-rzlDw)**
+
+### 🎬 Installing Linux on my upgraded Chromebook
+
+**Channel:** yaptech
+
+* What the video covers: A hands-on tutorial demonstrating the process of installing a Linux distribution on a Chromebook that has been hardware upgraded
+* Key topics discussed: Chromebook hardware modifications, Linux installation procedures, compatibility considerations, and the technical steps required to run Linux on Chrome OS hardware
+* Why it's worth watching: Perfect for tech enthusiasts looking to extend the life and functionality of their Chromebook beyond Chrome OS limitations, especially after hardware upgrades like RAM or storage improvements
+
+---
+
+### 🎬 在升级版 Chromebook 上安装 Linux
+
+**频道:** yaptech
+
+* 视频内容概述: 实操教程,展示如何在经过硬件升级的 Chromebook 上安装 Linux 发行版
+* 主要话题: Chromebook 硬件改装、Linux 安装流程、兼容性注意事项,以及在 Chrome OS 硬件上运行 Linux 所需的技术步骤
+* 为何值得观看: 适合想要突破 Chrome OS 限制、延长 Chromebook 使用寿命的科技爱好者,特别是在进行内存或存储升级后希望发挥设备更多潜力的用户
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=D6QagnfQur0)**
 
