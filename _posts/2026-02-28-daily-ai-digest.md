@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 28, 2026"
 date: 2026-02-28
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -522,4 +522,121 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于希望在 2026 年利用 AI 编程助手的开发者和非技术创作者来说是必看指南;针对不同项目类型和技能水平,提供关于哪些工具能带来最佳效果的实用见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SordE3oOSyc)**
+
+<!-- [Title-Only] -->
+### We Will Not Be Divided
+
+* Based on the title, this article likely addresses themes of unity, solidarity, or resistance against divisive forces. It could be discussing social, political, or community issues where maintaining cohesion is crucial.
+* This might be interesting to readers because it appears to take a stance on current divisive issues, potentially offering perspective on how communities or groups can stay united despite challenges or external pressures trying to create rifts.
+
+### 我们不会被分裂
+
+* 根据标题推测,这篇文章可能探讨团结、凝聚力或抵制分裂势力的主题。可能涉及社会、政治或社区议题,强调保持团结的重要性。
+* 值得关注是因为文章似乎对当前的分裂性议题表明了立场,可能提供关于社区或群体如何在面对挑战或试图制造裂痕的外部压力时保持团结的视角。
+
+**[Read Original / 阅读原文](https://notdivided.org)**
+
+### Error Page Analysis
+
+* This appears to be an X.com (formerly Twitter) error page with minimal content
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Contains a "Try again" button for users to retry their action
+* Includes a warning about privacy-related browser extensions potentially causing issues on x.com
+* The HTML structure shows this is a standard error handling interface with CSS styling classes
+* No actual blog content or article is present - this is just an error state page
+
+### 错误页面分析
+
+* 这是一个 X.com（原 Twitter）的错误页面，内容极少
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含一个"重试"按钮供用户重新尝试操作
+* 包含关于隐私相关浏览器扩展可能导致 x.com 出现问题的警告
+* HTML 结构显示这是一个标准的错误处理界面，带有 CSS 样式类
+* 没有实际的博客内容或文章——这只是一个错误状态页面
+
+**[Read Original / 阅读原文](https://twitter.com/secwar/status/2027507717469049070)**
+
+### AdderBoard: The Quest for the Smallest Addition Transformer
+
+* Community-driven challenge to build the tiniest transformer that can add two 10-digit numbers with ≥99% accuracy
+* Started from AI coding assistants (Claude Code: 6,080 params, Codex: 1,644 params), now pushed down to just 36 parameters
+* Two competition tracks: hand-coded weights (constructive proofs) and trained weights (learned from data)
+* Current hand-coded champion: 36-parameter model with 100% accuracy using ALiBi positional encoding and sparse embeddings
+* Current trained champion: 311-parameter model achieving 99.999% accuracy through rank-3 factorization and grokking
+* Strict rules enforce genuine autoregressive transformers—self-attention required, no problem-specific logic in forward pass
+* Key innovations: tied embeddings, RoPE digit routing, rank-1 projections, factorized embeddings, curriculum learning
+* Models must pass verification on 10,000 random test pairs plus edge cases
+* Explores fundamental question: what's the minimal architecture that can represent integer addition through attention, MLPs, and autoregressive generation?
+
+### AdderBoard：最小加法 Transformer 挑战赛
+
+* 社区驱动的挑战赛，目标是构建能以 ≥99% 准确率完成两个 10 位数加法的最小 Transformer
+* 起源于 AI 编程助手的对比（Claude Code：6,080 参数，Codex：1,644 参数），现已压缩至仅 36 个参数
+* 两个竞赛赛道：手工编码权重（构造性证明）和训练权重（从数据学习）
+* 当前手工编码冠军：36 参数模型，使用 ALiBi 位置编码和稀疏嵌入实现 100% 准确率
+* 当前训练冠军：311 参数模型，通过秩-3 分解和 grokking 达到 99.999% 准确率
+* 严格规则确保真正的自回归 Transformer——必须包含自注意力机制，前向传播中不允许问题特定逻辑
+* 关键创新：绑定嵌入、RoPE 数字路由、秩-1 投影、分解嵌入、课程学习
+* 模型必须通过 10,000 个随机测试对加边界案例的验证
+* 探索基本问题：通过注意力、MLP 和自回归生成表示整数加法的最小架构是什么?
+
+**[Read Original / 阅读原文](https://github.com/anadim/AdderBoard)**
+
+### DataClaw - Export AI Coding Conversations to Open Datasets
+
+* Converts Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw conversation histories into structured datasets and publishes them to Hugging Face
+* Automatically redacts secrets, PII, and sensitive data through path anonymization, username hashing, secret detection, entropy analysis, and custom redaction rules
+* Positions itself as "performance art" challenging Anthropic's data policies — enabling users to contribute their AI coding interactions to a distributed open dataset tagged with `dataclaw` on Hugging Face
+
+### DataClaw - 将 AI 编程对话导出为开放数据集
+
+* 将 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的对话历史转换为结构化数据集并发布到 Hugging Face
+* 通过路径匿名化、用户名哈希、密钥检测、熵分析和自定义脱敏规则自动删除敏感信息、个人身份信息和机密数据
+* 以"行为艺术"的形式挑战 Anthropic 的数据政策——让用户能够将其 AI 编程交互贡献到 Hugging Face 上标记为 `dataclaw` 的分布式开放数据集
+
+**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
+
+### 🎬 Claude Code - Full Tutorial for Beginners
+
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
+* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
+* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
+
+---
+
+### 🎬 Claude Code - 完整新手教程
+
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
+* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
+* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+### 🎬 C++ vs Python: Hello World Program | Coding Shorts
+
+**Channel:** Wraithen
+
+* What the video covers: A side-by-side comparison of writing a "Hello World" program in C++ versus Python, demonstrating the syntax differences between these two popular programming languages.
+
+* Key topics discussed: Basic syntax comparison, code verbosity differences, the simplicity of Python versus the more structured approach of C++, and fundamental programming concepts for beginners.
+
+* Why it's worth watching: Perfect for coding beginners or anyone curious about language differences. This short format makes it easy to quickly understand why Python is often recommended for beginners while C++ requires more boilerplate code. Great for developers considering which language to learn first or those interested in understanding the trade-offs between high-level and lower-level programming languages.
+
+---
+
+### 🎬 C++ vs Python: Hello World 程序对比 | 编程短视频
+
+**频道:** Wraithen
+
+* 视频内容概述: 并排对比 C++ 和 Python 编写"Hello World"程序的过程,展示这两种流行编程语言之间的语法差异。
+
+* 主要话题: 基础语法对比、代码冗长度差异、Python 的简洁性与 C++ 更结构化的方法对比,以及面向初学者的基础编程概念。
+
+* 为何值得观看: 非常适合编程初学者或对语言差异感兴趣的人。这种短视频格式让你快速理解为什么 Python 常被推荐给初学者,而 C++ 需要更多样板代码。对于正在考虑学习哪种语言的开发者,或想了解高级语言与低级语言之间权衡的人来说,这是很好的入门内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8HEXSoTx3PU)**
 
