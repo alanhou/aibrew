@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: February 28, 2026"
 date: 2026-02-28
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -824,4 +824,80 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合想要突破 Chrome OS 限制、延长 Chromebook 使用寿命的科技爱好者,特别是在进行内存或存储升级后希望发挥设备更多潜力的用户
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=D6QagnfQur0)**
+
+<!-- [Title-Only] -->
+### OpenAI – How to delete your account
+
+* Based on the title, this article likely provides step-by-step instructions for users who want to permanently delete their OpenAI account, including what happens to their data, chat history, and any associated subscriptions
+* This might be interesting to readers concerned about data privacy, those looking to manage their digital footprint, or users who want to understand OpenAI's account deletion policies before the process becomes necessary
+
+### OpenAI – 如何删除你的账户
+
+* 根据标题推测，这篇文章可能提供了用户永久删除 OpenAI 账户的分步指南，包括数据、聊天记录和相关订阅会如何处理
+* 对于关注数据隐私的读者、希望管理数字足迹的用户，或想在必要时了解 OpenAI 账户删除政策的人来说，这篇文章值得关注
+
+**[Read Original / 阅读原文](https://help.openai.com/en/articles/6378407-how-to-delete-your-account)**
+
+<!-- [Title-Only] -->
+### Unsloth Dynamic 2.0 GGUFs
+
+**Note: This introduction is based solely on the article title, as the full content could not be fetched.**
+
+* This article likely covers Unsloth's Dynamic 2.0 GGUF format, which appears to be an advancement in model quantization and compression technology. GGUF (GPT-Generated Unified Format) is a file format used for storing large language models in a quantized form, making them more efficient to run on consumer hardware.
+
+* This might be interesting to readers because:
+  - It could represent a significant improvement in running LLMs locally with better performance or lower memory requirements
+  - The "Dynamic 2.0" naming suggests enhanced features over previous versions, possibly including adaptive quantization or improved inference speed
+  - Unsloth is known for optimization tools in the LLM space, so this likely offers practical benefits for developers and researchers working with language models
+  - Understanding new quantization formats helps practitioners choose the right model deployment strategy for their use cases
+
+---
+
+### Unsloth Dynamic 2.0 GGUF 格式
+
+**注意：由于无法获取完整内容，本简介仅基于文章标题推测。**
+
+* 本文可能介绍 Unsloth 的 Dynamic 2.0 GGUF 格式，这似乎是模型量化和压缩技术的一次升级。GGUF（GPT-Generated Unified Format）是一种用于存储大型语言模型量化版本的文件格式，使其能够在消费级硬件上更高效地运行。
+
+* 值得关注的原因：
+  - 可能代表了在本地运行大语言模型方面的重大改进，提供更好的性能或更低的内存需求
+  - "Dynamic 2.0" 的命名暗示相比之前版本有增强功能，可能包括自适应量化或改进的推理速度
+  - Unsloth 以 LLM 领域的优化工具而闻名，因此这很可能为使用语言模型的开发者和研究人员带来实际好处
+  - 了解新的量化格式有助于从业者为其使用场景选择合适的模型部署策略
+
+**[Read Original / 阅读原文](https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs)**
+
+### Error Page Analysis
+
+* This appears to be an X.com (formerly Twitter) error page with minimal content
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Contains a "Try again" button for users to retry their action
+* Includes a warning about privacy-related browser extensions potentially causing issues on x.com
+* The HTML structure shows this is a standard error handling interface with CSS styling classes
+* No actual blog content or article is present - this is just an error state page
+
+### 错误页面分析
+
+* 这是一个 X.com（原 Twitter）的错误页面，内容极少
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含一个"重试"按钮供用户重新尝试操作
+* 包含关于隐私相关浏览器扩展可能导致 x.com 出现问题的警告
+* HTML 结构显示这是一个标准的错误处理界面，带有 CSS 样式类
+* 没有实际的博客内容或文章——这只是一个错误状态页面
+
+**[Read Original / 阅读原文](https://twitter.com/sama/status/2027578652477821175)**
+
+### AIRI - Self-Hosted AI Companion Inspired by Neuro-sama
+
+* A self-hosted AI virtual companion (VTuber) that can play games like Minecraft and Factorio, engage in real-time voice chat, and interact across platforms like Discord and Telegram
+* Built with modern web technologies (WebGPU, WebAssembly, WebAudio) enabling browser-based operation while supporting native CUDA/Metal acceleration on desktop; features in-browser database, PWA support, and cross-platform compatibility (Web/macOS/Windows)
+* Trending as an open-source alternative to Neuro-sama that users can own and run themselves, offering unprecedented flexibility for creating interactive AI companions with game-playing capabilities and multi-platform integration
+
+### AIRI - 受 Neuro-sama 启发的自托管 AI 伴侣
+
+* 功能介绍:一个自托管的 AI 虚拟伴侣(VTuber),能够玩 Minecraft 和 Factorio 等游戏,进行实时语音聊天,并在 Discord 和 Telegram 等平台上互动
+* 主要特点:采用现代 Web 技术(WebGPU、WebAssembly、WebAudio)构建,支持浏览器运行,同时在桌面端支持原生 CUDA/Metal 加速;具备浏览器内数据库、PWA 支持和跨平台兼容性(Web/macOS/Windows)
+* 为何值得关注:作为 Neuro-sama 的开源替代方案而走红,用户可以自主拥有和运行,为创建具有游戏能力和多平台集成的交互式 AI 伴侣提供了前所未有的灵活性
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
 
