@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 01, 2026"
 date: 2026-03-01
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -547,4 +547,201 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 展示了stb(单文件公共域库)和gf等生产级库中使用的巧妙系统编程模式;对于理解如何编写内存高效的C代码以及学习经验丰富的C程序员使用的非常规但强大的技术非常有价值
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=gtk3RZHwJUA)**
+
+### Error Page Analysis
+
+* This appears to be an X.com (formerly Twitter) error page with minimal content
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Contains a "Try again" button for users to retry their action
+* Includes a warning about privacy-related browser extensions potentially causing issues on x.com
+* The HTML structure shows this is a standard error handling interface with CSS styling classes
+* No actual blog content or article is present - this is just an error state page
+
+### 错误页面分析
+
+* 这是一个 X.com（原 Twitter）的错误页面，内容极少
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含一个"重试"按钮供用户重新尝试操作
+* 包含关于隐私相关浏览器扩展可能导致 x.com 出现问题的警告
+* HTML 结构显示这是一个标准的错误处理界面，带有 CSS 样式类
+* 没有实际的博客内容或文章——这只是一个错误状态页面
+
+**[Read Original / 阅读原文](https://twitter.com/OpenAI/status/2027846016423321831)**
+
+<!-- [Title-Only] -->
+### The Windows 95 User Interface: A Case Study in Usability Engineering (1996)
+
+**Note: This introduction is based solely on the article title, as the full content could not be accessed.**
+
+* This article likely examines the design and development process behind Windows 95's revolutionary user interface, focusing on the usability engineering methodologies Microsoft employed during its creation. It probably covers user testing, iterative design decisions, and the research that led to iconic features like the Start menu, taskbar, and desktop metaphor.
+
+* Why it might be interesting: Windows 95 marked a pivotal moment in computing history, making PCs accessible to mainstream users. This 1996 case study offers valuable insights into how systematic usability engineering shaped one of the most influential interfaces ever created. For designers and developers, it provides historical context on user-centered design principles that remain relevant today, and shows how rigorous testing and iteration can transform complex systems into intuitive experiences.
+
+---
+
+### Windows 95 用户界面：可用性工程案例研究 (1996)
+
+**注：本简介仅基于文章标题，因无法获取完整内容。**
+
+* 这篇文章可能深入探讨了 Windows 95 革命性用户界面的设计和开发过程，重点关注微软在创建过程中采用的可用性工程方法论。文章很可能涵盖了用户测试、迭代设计决策，以及促成"开始"菜单、任务栏和桌面隐喻等标志性功能诞生的研究工作。
+
+* 为何值得关注：Windows 95 标志着计算机历史上的关键转折点，它让个人电脑真正走向大众用户。这篇 1996 年的案例研究为我们提供了宝贵的见解，展示了系统化的可用性工程如何塑造了史上最具影响力的界面之一。对于设计师和开发者而言，它提供了以用户为中心的设计原则的历史背景——这些原则至今仍然适用，并展示了严格的测试和迭代如何将复杂系统转化为直观的用户体验。
+
+**[Read Original / 阅读原文](https://dl.acm.org/doi/fullHtml/10.1145/238386.238611)**
+
+### MinIO's Death and Community Resurrection
+
+* MinIO officially archived its open-source repository in February 2026, marking the end of maintenance for a project with 60k stars and over 1 billion Docker pulls
+* The author forked MinIO, restored the admin console, rebuilt binary distribution, and released it as `pgsty/minio` with CVE fixes
+* Users can simply replace `minio/minio` with `pgsty/minio` in their deployments - everything else remains compatible
+* MinIO's decline was gradual: license change to AGPL (2021), removing admin console from CE (May 2025), stopping binary distribution (Oct 2025), maintenance mode (Dec 2025), and final archival (Feb 2026)
+* Despite corporate abandonment, AGPL licensing ensures the community retains irrevocable rights to fork and maintain the codebase
+* The fork restored the full admin console (user management, bucket policies, access control) by reverting the console submodule to its previous version
+* Complete binary distribution rebuilt: Docker images on Docker Hub, RPM/DEB packages for major Linux distros, and automated CI/CD pipeline
+* Author maintains Pigsty (PostgreSQL distribution with 460+ extensions) and has extensive experience with MinIO, managing ~25 PB in production since 2018
+* The resurrection demonstrates that open-source projects can survive corporate decisions through community action and proper licensing
+
+### MinIO 之死与社区复活
+
+* MinIO 于 2026 年 2 月正式归档其开源仓库,标志着这个拥有 6 万星标和超过 10 亿次 Docker 拉取的项目停止维护
+* 作者 fork 了 MinIO,恢复了管理控制台,重建了二进制分发,并以 `pgsty/minio` 发布,修复了 CVE 漏洞
+* 用户只需将部署中的 `minio/minio` 替换为 `pgsty/minio`,其他一切保持兼容
+* MinIO 的衰落是渐进的:许可证改为 AGPL(2021)、从社区版移除管理控制台(2025年5月)、停止二进制分发(2025年10月)、维护模式(2025年12月)、最终归档(2026年2月)
+* 尽管公司放弃项目,AGPL 许可证确保社区保留不可撤销的 fork 和维护代码库的权利
+* 该 fork 通过将控制台子模块恢复到之前版本,重新提供了完整的管理控制台(用户管理、存储桶策略、访问控制)
+* 重建了完整的二进制分发:Docker Hub 上的 Docker 镜像、主流 Linux 发行版的 RPM/DEB 包,以及自动化 CI/CD 流水线
+* 作者维护 Pigsty(包含 460+ 扩展的 PostgreSQL 发行版),自 2018 年起在生产环境管理约 25 PB 数据,拥有丰富的 MinIO 经验
+* 这次复活证明了开源项目可以通过社区行动和适当的许可证在公司决策后继续存活
+
+**[Read Original / 阅读原文](https://blog.vonng.com/en/db/minio-resurrect/)**
+
+### CoPaw - Your Personal AI Assistant
+
+* What it does: CoPaw is a personal AI assistant that you can install and deploy on your own machine or in the cloud, supporting multiple chat applications with easily extensible capabilities.
+
+* Key features:
+  - Multi-channel support (DingTalk, Feishu, QQ, Discord, iMessage, etc.)
+  - Local or cloud deployment with full control over memory and personalization
+  - Built-in cron scheduler and custom skills that auto-load from your workspace
+  - Supports both cloud LLMs and local models (llama.cpp, MLX)
+  - Easy installation via pip, one-line installer, Docker, or ModelScope
+  - Extensible with custom skills and tools
+  - Web console for configuration and chat
+
+* Why it's notable: With 2,082 GitHub stars, CoPaw stands out for its flexibility and user control. Unlike many AI assistants that lock you into specific platforms or cloud services, CoPaw lets you run everything locally, integrate with your preferred chat apps, and extend functionality through custom skills. The project emphasizes privacy and personalization, making it ideal for developers and power users who want a truly personal AI assistant that works across all their communication channels.
+
+---
+
+### CoPaw - 你的个人 AI 助手
+
+* 功能介绍:CoPaw 是一个个人 AI 助手,可以安装部署在你自己的机器上或云端,支持多个聊天应用,具有易于扩展的能力。
+
+* 主要特点:
+  - 多渠道支持(钉钉、飞书、QQ、Discord、iMessage 等)
+  - 本地或云端部署,完全控制记忆和个性化
+  - 内置定时任务调度器和自动加载的自定义技能
+  - 支持云端大语言模型和本地模型(llama.cpp、MLX)
+  - 通过 pip、一键安装脚本、Docker 或 ModelScope 轻松安装
+  - 可通过自定义技能和工具扩展
+  - 提供 Web 控制台用于配置和聊天
+
+* 为何值得关注:CoPaw 在 GitHub 上获得了 2,082 颗星,因其灵活性和用户控制权而脱颖而出。与许多将用户锁定在特定平台或云服务的 AI 助手不同,CoPaw 允许你在本地运行所有功能,与你喜欢的聊天应用集成,并通过自定义技能扩展功能。该项目强调隐私和个性化,非常适合希望拥有真正个人化 AI 助手的开发者和高级用户,可以在所有通信渠道中使用。
+
+**[View Repository / 查看仓库](https://github.com/agentscope-ai/CoPaw)**
+
+### 🎬 Claude Code - Full Tutorial for Beginners
+
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
+* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
+* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
+
+---
+
+### 🎬 Claude Code - 完整新手教程
+
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
+* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
+* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+### 🎬 Code your own smartwatch
+**Channel:** CircuitMess Shorts
+
+* What the video covers: A DIY smartwatch project that allows you to program and customize your own wearable device
+* Key topics discussed: Coding capabilities, built-in sensors (gyroscope and accelerometer), creative possibilities for custom smartwatch applications
+* Why it's worth watching: Perfect for makers and developers interested in wearable tech and IoT projects; offers hands-on experience with sensor programming and embedded systems
+
+---
+
+### 🎬 编程你自己的智能手表
+**频道:** CircuitMess Shorts
+
+* 视频内容概述: 一个DIY智能手表项目,让你能够编程和定制自己的可穿戴设备
+* 主要话题: 编程功能、内置传感器(陀螺仪和加速度计)、智能手表应用的创意可能性
+* 为何值得观看: 适合对可穿戴技术和物联网项目感兴趣的创客和开发者;提供传感器编程和嵌入式系统的实践经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=q51NE21Xik8)**
+
+### 🎬 Installing Linux on my upgraded Chromebook
+
+**Channel:** yaptech
+
+* What the video covers: A hands-on tutorial demonstrating the process of installing a Linux distribution on a Chromebook that has been hardware upgraded
+* Key topics discussed: Chromebook hardware modifications, Linux installation procedures, compatibility considerations, and the technical steps required to run Linux on Chrome OS hardware
+* Why it's worth watching: Perfect for tech enthusiasts looking to extend the life and functionality of their Chromebook beyond Chrome OS limitations, especially after hardware upgrades like RAM or storage improvements
+
+---
+
+### 🎬 在升级版 Chromebook 上安装 Linux
+
+**频道:** yaptech
+
+* 视频内容概述: 实操教程,展示如何在经过硬件升级的 Chromebook 上安装 Linux 发行版
+* 主要话题: Chromebook 硬件改装、Linux 安装流程、兼容性注意事项,以及在 Chrome OS 硬件上运行 Linux 所需的技术步骤
+* 为何值得观看: 适合想要突破 Chrome OS 限制、延长 Chromebook 使用寿命的科技爱好者,特别是在进行内存或存储升级后希望发挥设备更多潜力的用户
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=D6QagnfQur0)**
+
+### 🎬 I Downloaded MINECRAFT on My CALCULATOR! 🤯 (Calcraft Tutorial)
+
+**Channel:** Frannoni
+
+* What the video covers: A step-by-step tutorial on installing and running Calcraft (a Minecraft port) on a graphing calculator
+* Key topics discussed: Calculator gaming, Calcraft installation process, running Minecraft on unconventional hardware, technical setup and configuration
+* Why it's worth watching: This video showcases an impressive technical feat of running Minecraft on calculator hardware, perfect for tech enthusiasts curious about pushing device limitations and exploring creative gaming setups. The tutorial format makes it accessible for viewers who want to try this themselves.
+
+---
+
+### 🎬 我在计算器上下载了 MINECRAFT! 🤯 (Calcraft 教程)
+
+**频道:** Frannoni
+
+* 视频内容概述: 详细演示如何在图形计算器上安装和运行 Calcraft(Minecraft 移植版)的分步教程
+* 主要话题: 计算器游戏、Calcraft 安装流程、在非常规硬件上运行 Minecraft、技术设置和配置
+* 为何值得观看: 这个视频展示了在计算器硬件上运行 Minecraft 的惊人技术成就,非常适合对突破设备限制和探索创意游戏设置感兴趣的科技爱好者。教程形式让想要亲自尝试的观众也能轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OGWObc5tv0Q)**
+
+### 🎬 Vibe Coding Tools Ranked from Worst to Best (2026)
+**Channel:** Mikey No Code
+
+* What the video covers: A comprehensive ranking and comparison of AI-powered "vibe coding" tools available in 2026, evaluating their features, performance, and value propositions
+* Key topics discussed: Detailed analysis of various no-code/low-code AI development platforms, with Base44 highlighted as the top recommendation; comparison of pricing, capabilities, user experience, and practical use cases across different tools
+* Why it's worth watching: Essential guide for developers and non-technical creators looking to leverage AI coding assistants in 2026; provides actionable insights on which tools deliver the best results for different project types and skill levels
+
+---
+
+### 🎬 Vibe 编程工具排名：从最差到最佳 (2026)
+**频道:** Mikey No Code
+
+* 视频内容概述: 全面排名和比较 2026 年可用的 AI 驱动"氛围编程"工具,评估其功能、性能和性价比
+* 主要话题: 详细分析各种无代码/低代码 AI 开发平台,重点推荐 Base44 作为最佳选择;比较不同工具的定价、功能、用户体验和实际应用场景
+* 为何值得观看: 对于希望在 2026 年利用 AI 编程助手的开发者和非技术创作者来说是必看指南;针对不同项目类型和技能水平,提供关于哪些工具能带来最佳效果的实用见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SordE3oOSyc)**
 
