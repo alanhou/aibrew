@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 02, 2026"
 date: 2026-03-02
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -815,4 +815,110 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了关于哪些类型的项目能带来最大学习价值和认知成长的宝贵见解,帮助观众选择真正能提升技能的项目,而不仅仅是充实作品集
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GJcskn5mAg)**
+
+### Motorola Partners with GrapheneOS Foundation to Enhance Mobile Security
+
+* Motorola announced a long-term partnership with GrapheneOS Foundation at Mobile World Congress to bring advanced security features to smartphones globally
+* The collaboration will combine GrapheneOS's hardened Android-based operating system with Motorola's security expertise and Lenovo's ThinkShield solutions
+* Future Motorola devices will be engineered with GrapheneOS compatibility, with joint research and software enhancements planned
+* Motorola introduced Moto Analytics, an enterprise-grade platform providing IT administrators real-time visibility into device performance, app stability, battery health, and connectivity
+* New Private Image Data feature in Moto Secure automatically removes sensitive metadata (location, device info) from camera images to protect user privacy
+* Private Image Data will roll out to Motorola signature devices in coming months as part of the expanding Moto Secure security platform
+
+### 摩托罗拉与 GrapheneOS 基金会合作提升移动安全性
+
+* 摩托罗拉在世界移动通信大会上宣布与 GrapheneOS 基金会建立长期合作关系,为全球智能手机用户带来先进的安全功能
+* 此次合作将结合 GrapheneOS 基于 Android 的强化操作系统、摩托罗拉的安全专业知识以及联想的 ThinkShield 解决方案
+* 未来的摩托罗拉设备将支持 GrapheneOS 兼容性,双方计划进行联合研究和软件增强
+* 摩托罗拉推出企业级平台 Moto Analytics,为 IT 管理员提供设备性能、应用稳定性、电池健康和连接性的实时可见性
+* Moto Secure 新增私密图像数据功能,可自动删除相机图像中的敏感元数据(位置、设备信息)以保护用户隐私
+* 私密图像数据功能将在未来几个月内推广到摩托罗拉标志性设备,作为 Moto Secure 安全平台扩展的一部分
+
+**[Read Original / 阅读原文](https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/)**
+
+### Making Video Games in 2025 Without Commercial Engines
+
+* Indie developer with 20 years of experience explains why he avoids Unity/Unreal and builds custom tools instead
+* Commercial engines provide 90% features most indie games don't need, while lacking flexibility for specific requirements
+* Concerns about vendor lock-in, forced updates breaking games, and unethical business decisions from engine companies
+* Making games "from scratch" in 2025 is more accessible than assumed, thanks to mature open-source frameworks
+* Many successful indie games (VVVVVV, Balatro, Animal Well, Stardew Valley, Celeste) use lightweight frameworks like FNA, Love2D, or SDL
+
+**Tech Stack:**
+* **Language**: Modern C# with hot reload support via `dotnet watch` for live code updates during development
+* **Platform Layer**: SDL3 for cross-platform windowing, input, rendering (DirectX/Vulkan/Metal abstraction), works on all major platforms including consoles
+* **Custom Framework**: Foster - personal C# layer on top of SDL for rendering and input utilities
+* **Audio**: FMOD (only proprietary tool used) for dynamic audio control
+* **UI/Editor**: Dear ImGui for building custom level editors with minimal code
+* **Asset Management**: Simple load-on-demand approach, entire pixel art game loads in 0.4 seconds
+
+**Key Advantages:**
+* Full control over development stack and ability to fix issues immediately
+* Long-term sustainability - games remain compilable decades later
+* C# offers great balance: performance for games, accessibility for small teams (brother learned to code boss fights in one year)
+* Built-in reflection simplifies editor tooling without custom meta-programming
+* Custom tools are more fun and tailored to specific project needs
+
+---
+
+### 2025年无引擎独立游戏开发实践
+
+* 拥有20年经验的独立开发者分享为何放弃Unity/Unreal，转而构建自定义工具
+* 商业引擎提供90%独立游戏用不到的功能，同时缺乏针对特定需求的灵活性
+* 担忧供应商锁定、强制更新破坏游戏、引擎公司不道德的商业决策
+* 得益于成熟的开源框架，2025年"从零开始"做游戏比想象中更容易
+* 许多成功独立游戏（VVVVVV、Balatro、Animal Well、星露谷物语、Celeste）都使用FNA、Love2D或SDL等轻量级框架
+
+**技术栈：**
+* **编程语言**：现代C#，通过`dotnet watch`支持热重载，开发时可实时更新代码
+* **平台层**：SDL3提供跨平台窗口、输入、渲染（DirectX/Vulkan/Metal抽象），支持所有主流平台包括主机
+* **自定义框架**：Foster - 基于SDL的个人C#渲染和输入工具层
+* **音频**：FMOD（唯一使用的专有工具）用于动态音频控制
+* **UI/编辑器**：Dear ImGui用最少代码构建自定义关卡编辑器
+* **资源管理**：简单的按需加载方式，整个像素游戏0.4秒加载完成
+
+**核心优势：**
+* 完全掌控开发栈，能立即修复问题
+* 长期可持续性 - 游戏在几十年后仍可编译
+* C#平衡性好：游戏所需性能 + 小团队易上手（弟弟一年内学会编写Boss战）
+* 内置反射简化编辑器工具开发，无需自定义元编程
+* 自定义工具更有趣，完全贴合项目特定需求
+
+**[Read Original / 阅读原文](https://www.noelberry.ca/posts/making_games_in_2025/)**
+
+### How AI Can Read Our Scrambled Inner Thoughts
+
+* Brain processes music differently from images - semantics and low-level information are not separated in music perception, unlike visual processing where they occupy distinct brain locations
+* Potential applications include recreating auditory and visual hallucinations of psychiatric patients (like schizophrenics) to better understand their conditions
+* Technology could be used to reconstruct what animals experience or even recreate human dreams, though dream reconstruction remains extremely complicated
+* Research suggests possibility of direct brain-to-brain communication, even among multiple people simultaneously, though ethical and human rights implications need resolution
+* Direct brain stimulation for entertainment purposes is theoretically possible but faces technical limitations - estimated 10-20 years away from reality
+
+### AI如何解读我们混乱的内心思维
+
+* 大脑处理音乐与图像的方式不同——音乐感知中的语义信息和低级信息并未分离,而视觉处理中它们位于大脑的不同区域
+* 潜在应用包括重现精神病患者(如精神分裂症患者)的听觉和视觉幻觉,以更好地理解他们的病情
+* 该技术可用于重建动物感知世界的方式,甚至重构人类梦境,尽管梦境重建目前仍极其复杂
+* 研究表明直接脑对脑通信的可能性,甚至可以同时在多人之间进行,但相关的伦理和人权问题仍需解决
+* 用于娱乐目的的直接大脑刺激在理论上可行,但面临技术限制——预计需要10-20年才能实现
+
+**[Read Original / 阅读原文](https://www.bbc.com/future/article/20260226-how-ai-can-read-your-thoughts)**
+
+### 🎬 Claude Plugins & Skills Tutorial (All Updates Combined)
+**Channel:** The Cutting Edge School
+
+* What the video covers: A comprehensive tutorial combining all updates about Claude's plugins and skills functionality, demonstrating how to extend Claude's capabilities through custom integrations
+* Key topics discussed: Plugin installation and configuration, skills development for Claude, practical use cases for extending AI functionality, latest updates and features in the Claude ecosystem
+* Why it's worth watching: Essential for professionals looking to maximize Claude's potential through custom tools and automations; provides consolidated information on all recent updates in one place, saving time on researching scattered documentation
+
+---
+
+### 🎬 Claude 插件与技能教程(所有更新合集)
+**频道:** The Cutting Edge School
+
+* 视频内容概述: 一个综合性教程,汇总了关于 Claude 插件和技能功能的所有更新,演示如何通过自定义集成扩展 Claude 的能力
+* 主要话题: 插件安装与配置、Claude 技能开发、扩展 AI 功能的实际应用案例、Claude 生态系统中的最新更新和特性
+* 为何值得观看: 对于希望通过自定义工具和自动化最大化 Claude 潜力的专业人士来说必不可少;将所有最新更新整合在一个视频中,节省了查找分散文档的时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6EFOT6hjvAU)**
 
