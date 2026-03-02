@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 02, 2026"
 date: 2026-03-02
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -515,4 +515,142 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合想要突破 Chrome OS 限制、延长 Chromebook 使用寿命的科技爱好者,特别是在进行内存或存储升级后希望发挥设备更多潜力的用户
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=D6QagnfQur0)**
+
+### The Lost Art of Talking to Strangers
+
+* Modern society is experiencing a "global relational recession" where casual conversations with strangers have become rare and anxiety-inducing
+* Technology (headphones, phones, touchscreens), remote work, and pandemic habits have created barriers to spontaneous human interaction
+* Gen Z shows declining conversational skills, with experts warning this generation underperforms previous ones on cognitive measures related to communication
+* Social media "talking to strangers" videos are performative and exploitative, commodifying genuine human connection for clicks
+* Research shows people overestimate the risks of casual conversations and underestimate how much they'll enjoy them
+* The solution is to lower the stakes: treat small talk as practice for "social muscles," not a high-pressure performance
+* Simple boundaries work: if you don't want to talk, use clear gestures or say "I can't talk right now"
+* Taking small conversational risks helps rebuild a fundamental human skill that's being lost
+
+### 与陌生人交谈的失落艺术
+
+* 现代社会正经历"全球关系衰退",与陌生人的随意交谈变得罕见且令人焦虑
+* 科技产品(耳机、手机、触摸屏)、远程工作和疫情习惯为自发的人际互动制造了障碍
+* Z世代的对话能力下降,专家警告这一代人在沟通相关的认知指标上表现不如前辈
+* 社交媒体上的"与陌生人交谈"视频具有表演性和剥削性,将真实的人际联系商品化以获取点击量
+* 研究表明,人们高估了随意交谈的风险,低估了从中获得的乐趣
+* 解决方法是降低期望:把闲聊当作锻炼"社交肌肉"的练习,而非高压表演
+* 简单的界限很有效:如果不想交谈,用清晰的手势或说"我现在不能聊"
+* 冒小小的对话风险有助于重建正在消失的基本人类技能
+
+**[Read Original / 阅读原文](https://www.theguardian.com/lifeandstyle/2026/feb/24/stranger-secret-how-to-talk-to-anyone-why-you-should)**
+
+### WebMCP: Structured AI Agent Interactions for Websites
+
+* Chrome introduces WebMCP, a standard protocol enabling websites to expose structured tools for AI agents to interact with increased speed, reliability, and precision
+* Two new APIs proposed: Declarative API for standard HTML form actions, and Imperative API for complex JavaScript-based interactions
+* Key use cases include customer support ticket automation, ecommerce product configuration and checkout, and travel booking with structured search and filtering
+* WebMCP eliminates ambiguity in agent-website communication by providing a direct channel for defining how and where agents should interact
+* Currently available for prototyping through Chrome's early preview program with access to documentation and demos
+
+### WebMCP：为网站提供结构化 AI 代理交互
+
+* Chrome 推出 WebMCP，这是一个标准协议，使网站能够为 AI 代理提供结构化工具，以提高交互的速度、可靠性和精确度
+* 提出两个新 API：声明式 API 用于可直接在 HTML 表单中定义的标准操作，命令式 API 用于需要 JavaScript 执行的复杂动态交互
+* 主要应用场景包括客户支持工单自动化、电商产品配置和结账流程，以及使用结构化数据进行旅行预订搜索和筛选
+* WebMCP 通过提供直接通信渠道来定义代理应如何以及在何处与网站交互，消除了代理与网站通信中的歧义
+* 目前通过 Chrome 早期预览计划开放原型开发，可访问文档和演示
+
+**[Read Original / 阅读原文](https://developer.chrome.com/blog/webmcp-epp)**
+
+### Tove Jansson's Controversial Hobbit Illustrations: A Unique Artistic Vision
+
+* In 1960, Astrid Lindgren commissioned Tove Jansson to illustrate the Swedish translation of Tolkien's The Hobbit, published as "Bilbo – en hobbits äventyr" in 1962
+* Jansson deliberately departed from her signature Moomin style, using freehand felt pen techniques and creating 20-60 versions of each character before satisfaction
+* Her illustrations emphasized dramatic landscapes over character details, using a collage technique of gluing multiple drawings together
+* Tolkien fans criticized the work for being too "Jansson-like" rather than faithful to Tolkien's vision—characters appeared too small, and Gollum was depicted as monstrously large instead of small
+* Tolkien himself was surprised by Jansson's massive Gollum and subsequently amended the text to clarify "a small, slimy creature"
+* Despite Lindgren's prediction of it becoming "the children's book of the century," the edition received mixed reception due to artistic liberties
+* Jansson focused on horror and catastrophe elements, reflecting her personal artistic interests rather than literal interpretation
+* A new book by Paul Gravett (Thames & Hudson) features 106 illustrations documenting Jansson's diverse illustration work beyond Moomin
+
+### 托芙·扬松备受争议的《霍比特人》插图:独特的艺术视角
+
+* 1960年,阿斯特丽德·林格伦委托托芙·扬松为托尔金《霍比特人》瑞典译本绘制插图,该书于1962年以"Bilbo – en hobbits äventyr"出版
+* 扬松刻意摆脱其标志性的姆明风格,采用自由手绘毡笔技法,每个角色绘制20-60个版本才满意
+* 她的插图强调戏剧性景观而非角色细节,使用拼贴技术将多幅画作粘合在一起
+* 托尔金粉丝批评作品过于"扬松化"而非忠实于托尔金原著——角色显得过小,咕噜被描绘成巨大怪物而非小型生物
+* 托尔金本人对扬松笔下巨大的咕噜感到惊讶,随后修改文本明确描述为"小而黏滑的生物"
+* 尽管林格伦预测这将成为"世纪儿童读物",但该版本因艺术自由度过大而反响不一
+* 扬松专注于恐怖和灾难元素,反映其个人艺术兴趣而非字面诠释
+* 保罗·格拉维特的新书(泰晤士与哈德逊出版社)收录106幅插图,记录扬松在姆明之外的多元插画作品
+
+**[Read Original / 阅读原文](https://tovejansson.com/hobbit-tolkien/)**
+
+### DataClaw - Export AI Coding Conversations to Open Datasets
+
+* Converts Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw conversation histories into structured datasets and publishes them to Hugging Face
+* Multi-layer privacy protection including automatic PII/secret redaction, path anonymization, username hashing, and entropy-based secret detection
+* One-command workflow with built-in review steps, agent-friendly installation, and contribution to a distributed dataset of real-world human-AI coding collaboration
+
+### DataClaw - 将 AI 编程对话导出为开放数据集
+
+* 将 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的对话历史转换为结构化数据集并发布到 Hugging Face
+* 多层隐私保护,包括自动 PII/密钥脱敏、路径匿名化、用户名哈希和基于熵的密钥检测
+* 单命令工作流,内置审查步骤、对 AI 代理友好的安装方式,并为真实人机编程协作的分布式数据集做出贡献
+
+**[View Repository / 查看仓库](https://github.com/peteromallet/dataclaw)**
+
+### 🎬 The Three Types of Programmers in 2026 - Andrej Karpathy
+**Channel:** Dwarkesh Patel
+
+* Andrej Karpathy discusses his vision of how programming roles will evolve by 2026, categorizing developers into three distinct types based on their relationship with AI tools
+* Key topics include the transformation of software development workflows, the changing skill requirements for programmers, and how AI coding assistants will reshape the industry landscape
+* Worth watching for developers and tech professionals who want to understand where the field is heading and how to position themselves for the future of programming in an AI-augmented world
+
+---
+
+### 🎬 2026年的三类程序员 - Andrej Karpathy
+**频道:** Dwarkesh Patel
+
+* Andrej Karpathy 探讨了他对2026年编程角色演变的看法,根据开发者与AI工具的关系将其分为三种不同类型
+* 主要话题包括软件开发工作流程的转变、程序员技能要求的变化,以及AI编码助手将如何重塑行业格局
+* 值得开发者和技术专业人士观看,帮助理解该领域的发展方向,以及如何在AI增强的编程未来中定位自己
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MqarkPmYI9Y)**
+
+### 🎬 Setup Claude Code for FREE in 3 Simple steps
+
+**Channel:** Abhishek.Veeramalla
+
+* What the video covers: A step-by-step tutorial on setting up Claude Code without any cost, making AI-powered coding assistance accessible to everyone
+* Key topics discussed: Three straightforward setup steps to get Claude Code running, practical configuration tips, and how to leverage this free AI coding tool effectively
+* Why it's worth watching: Perfect for developers looking to enhance their coding workflow with AI assistance without budget constraints. Abhishek breaks down the process into simple, actionable steps that anyone can follow, making advanced AI coding tools accessible to beginners and experienced developers alike
+
+---
+
+### 🎬 免费设置 Claude Code 的 3 个简单步骤
+
+**频道:** Abhishek.Veeramalla
+
+* 视频内容概述: 详细讲解如何免费设置 Claude Code 的分步教程，让每个人都能使用 AI 驱动的编码辅助工具
+* 主要话题: 三个简单的设置步骤来运行 Claude Code，实用的配置技巧，以及如何有效利用这个免费的 AI 编码工具
+* 为何值得观看: 非常适合希望在不增加预算的情况下通过 AI 辅助提升编码工作流程的开发者。Abhishek 将整个过程分解为简单易行的步骤，无论是初学者还是经验丰富的开发者都能轻松上手，让先进的 AI 编码工具变得触手可及
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AKKx1PoNtnM)**
+
+### 🎬 7 Excel Tips You'll Regret Not Knowing! #shorts
+
+**Channel:** なおたろ【パソコン&スマホ便利術】
+
+* What the video covers: A quick compilation of 7 practical Excel tips and tricks that can significantly improve your spreadsheet workflow
+* Key topics discussed: Time-saving Excel techniques, hidden features, and productivity hacks for both beginners and intermediate users
+* Why it's worth watching: Short-form content (#shorts) that delivers actionable Excel knowledge quickly - perfect for learning essential tricks you might be missing out on in your daily work
+
+---
+
+### 🎬 Excel中不知道就亏了的7个便利技巧！#shorts
+
+**频道:** なおたろ【パソコン&スマホ便利術】
+
+* 视频内容概述: 快速展示7个实用的Excel技巧和窍门,能显著提升电子表格工作效率
+* 主要话题: Excel省时技巧、隐藏功能和适合初学者及中级用户的生产力技巧
+* 为何值得观看: 短视频形式(#shorts)快速传递可操作的Excel知识,非常适合学习日常工作中可能错过的关键技巧
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RR-yqL6108c)**
 
