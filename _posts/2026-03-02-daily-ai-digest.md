@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 02, 2026"
 date: 2026-03-02
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，8个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -921,4 +921,134 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于希望通过自定义工具和自动化最大化 Claude 潜力的专业人士来说必不可少;将所有最新更新整合在一个视频中,节省了查找分散文档的时间
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=6EFOT6hjvAU)**
+
+<!-- [Title-Only] -->
+### /e/OS is a complete "deGoogled", mobile ecosystem
+
+* Based on the title, this article likely introduces /e/OS, an alternative mobile operating system that removes all Google services and tracking from the Android ecosystem. It probably covers how /e/OS provides a privacy-focused mobile experience while maintaining app compatibility and core smartphone functionality.
+* This might be interesting to readers who are concerned about privacy, data collection, and Google's dominance in mobile ecosystems. It offers a practical alternative for those wanting to reduce their dependence on big tech companies while still using familiar mobile apps and services.
+
+### /e/OS：完全"去谷歌化"的移动生态系统
+
+* 根据标题推测，本文介绍了 /e/OS，这是一个替代性的移动操作系统，它从安卓生态系统中移除了所有谷歌服务和追踪功能。文章可能涵盖 /e/OS 如何在保持应用兼容性和核心智能手机功能的同时，提供注重隐私的移动体验。
+* 对于关注隐私保护、数据收集以及谷歌在移动生态系统中主导地位的读者来说，这篇文章值得关注。它为那些希望减少对大型科技公司依赖，同时仍能使用熟悉的移动应用和服务的用户提供了一个实用的替代方案。
+
+**[Read Original / 阅读原文](https://e.foundation/e-os/)**
+
+### The 2-Minute Claude Code Upgrade You're Probably Missing: LSP
+
+* Claude Code runs without LSP by default, using grep-based text search that takes 30-60 seconds to find code definitions across large codebases
+* LSP (Language Server Protocol) provides IDE-level code intelligence: go-to-definition, find references, type info, and real-time error detection with 50ms response time vs 30-60s with grep
+* The core problem: grep treats code as text, but code has structure, meaning, and relationships - LSP understands the difference between definitions, references, and mentions
+* LSP was created by Microsoft in 2016 to solve the M×N problem: instead of building separate language support for every editor-language combination, LSP provides a standard protocol
+* Before LSP: 20 editors × 50 languages = 1,000 implementations; With LSP: 20 + 50 = 70 implementations (editors + language servers)
+* Setup takes 2 minutes but requires discovering an undocumented flag through GitHub issues rather than official docs
+
+### Claude Code 被忽视的 2 分钟升级:LSP
+
+* Claude Code 默认不启用 LSP,使用基于 grep 的文本搜索,在大型代码库中查找代码定义需要 30-60 秒
+* LSP(语言服务器协议)提供 IDE 级别的代码智能:跳转到定义、查找引用、类型信息和实时错误检测,响应时间 50 毫秒,而 grep 需要 30-60 秒
+* 核心问题:grep 将代码视为文本,但代码具有结构、含义和关系 - LSP 能够区分定义、引用和提及
+* LSP 由微软于 2016 年创建,用于解决 M×N 问题:无需为每个编辑器-语言组合构建单独的语言支持,LSP 提供标准协议
+* LSP 之前:20 个编辑器 × 50 种语言 = 1,000 个实现;使用 LSP:20 + 50 = 70 个实现(编辑器 + 语言服务器)
+* 设置只需 2 分钟,但需要通过 GitHub issues 发现未记录的标志,而非官方文档
+
+**[Read Original / 阅读原文](https://karanbansal.in/blog/claude-code-lsp/)**
+
+<!-- [Title-Only] -->
+### U.S. Science Agency Moves to Restrict Foreign Scientists from Its Labs
+
+*Based on the title alone*, this article likely covers:
+
+* **Policy changes at a U.S. scientific institution** (likely NIST - National Institute of Standards and Technology) that will limit or restrict access for foreign scientists to work in their laboratories
+* **The rationale behind these restrictions** - possibly related to national security concerns, intellectual property protection, or geopolitical tensions
+* **Impact on international scientific collaboration** - how this affects research partnerships, knowledge exchange, and the global scientific community
+* **Potential consequences** for both U.S. science competitiveness and international researchers who have been contributing to American research institutions
+
+**Why it might be interesting to readers:**
+
+* Reflects broader tensions between **open science principles and national security concerns**
+* Has implications for **scientific talent recruitment** and America's position in global research
+* May signal a **trend in science policy** that could affect other institutions
+* Raises questions about the **balance between collaboration and protection** in sensitive research areas
+
+---
+
+### 美国科学机构限制外国科学家进入其实验室
+
+*仅根据标题推测*，这篇文章可能涵盖：
+
+* **美国科研机构的政策变化**（很可能是 NIST - 美国国家标准与技术研究院），将限制外国科学家在其实验室工作的权限
+* **这些限制措施背后的理由** - 可能与国家安全考虑、知识产权保护或地缘政治紧张局势有关
+* **对国际科学合作的影响** - 这将如何影响研究伙伴关系、知识交流和全球科学界
+* **潜在后果** - 对美国科学竞争力以及一直为美国研究机构做出贡献的国际研究人员的影响
+
+**为何值得关注：**
+
+* 反映了**开放科学原则与国家安全关切**之间更广泛的紧张关系
+* 对**科研人才招募**和美国在全球研究中的地位有重要影响
+* 可能预示着**科学政策的趋势**，可能会影响其他机构
+* 引发关于在敏感研究领域**合作与保护之间平衡**的问题
+
+**[Read Original / 阅读原文](https://www.science.org/content/article/nist-moves-restrict-foreign-scientists-its-labs)**
+
+### 🎬 The design process is dead
+**Channel:** Lenny's Podcast
+
+* What the video covers: This episode explores how AI is fundamentally transforming traditional design workflows and processes in product development
+* Key topics discussed: The impact of AI tools on design methodology, the evolution of designer roles, and how teams are adapting their processes in the age of artificial intelligence
+* Why it's worth watching: Essential viewing for designers, product managers, and anyone interested in understanding how AI is reshaping creative work and the future of design careers
+
+### 🎬 设计流程已死
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 本期节目探讨人工智能如何从根本上改变产品开发中的传统设计工作流程
+* 主要话题: AI 工具对设计方法论的影响、设计师角色的演变,以及团队如何在人工智能时代调整工作流程
+* 为何值得观看: 对设计师、产品经理以及任何想了解 AI 如何重塑创意工作和设计职业未来的人来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mhhF8JQzUDo)**
+
+### 🎬 Build Your Own Video Sharing App – Loom Clone with Next.js and Mux JavaScript Tutorial
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive tutorial on building a full-featured video sharing application similar to Loom, using modern web technologies including Next.js for the frontend framework and Mux for video processing and streaming infrastructure.
+
+* Key topics discussed: Next.js application development, Mux video API integration, screen recording functionality, video upload and processing workflows, user interface design for video sharing platforms, and implementing core features like video playback and sharing capabilities.
+
+* Why it's worth watching: This hands-on project tutorial provides practical experience building a real-world application that combines multiple modern technologies. It's perfect for developers looking to understand video streaming infrastructure, learn Next.js in a practical context, or build portfolio projects. The tutorial includes complete source code on GitHub, making it easy to follow along and customize for your own projects.
+
+---
+
+### 🎬 构建视频分享应用 – 使用 Next.js 和 Mux 打造 Loom 克隆版 JavaScript 教程
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 这是一个全面的教程,教你如何使用现代 Web 技术构建类似 Loom 的全功能视频分享应用,采用 Next.js 作为前端框架,Mux 作为视频处理和流媒体基础设施。
+
+* 主要话题: Next.js 应用开发、Mux 视频 API 集成、屏幕录制功能实现、视频上传和处理工作流、视频分享平台的用户界面设计,以及视频播放和分享等核心功能的实现。
+
+* 为何值得观看: 这个实战项目教程提供了构建真实应用的实践经验,结合了多种现代技术栈。非常适合想要了解视频流媒体基础设施、在实际场景中学习 Next.js,或构建作品集项目的开发者。教程在 GitHub 上提供完整源代码,便于跟随学习和自定义开发。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IBTx5aGj-6U)**
+
+### 🎬 This Just Fixed 90% of AI Coding Errors
+
+**Channel:** AI LABS
+
+* What the video covers: An in-depth test of Claude plugins designed to enforce strict development workflows within Claude Code, examining whether these "skills" can significantly reduce common AI coding errors
+* Key topics discussed: Claude Code plugin functionality, workflow enforcement mechanisms, error reduction metrics, practical effectiveness of AI coding assistants with structured constraints
+* Why it's worth watching: If you're using AI coding tools like Claude Code, this video provides data-driven insights into how workflow plugins can dramatically improve code quality and reduce the frustrating errors that typically plague AI-generated code. The 90% error reduction claim is backed by real testing.
+
+---
+
+### 🎬 这个方法解决了90%的AI编程错误
+
+**频道:** AI LABS
+
+* 视频内容概述: 深度测试Claude插件如何在Claude Code中强制执行严格的开发工作流程,验证这些"技能"是否真的有效
+* 主要话题: Claude Code插件功能、工作流强制机制、错误减少指标、带结构化约束的AI编程助手的实际效果
+* 为何值得观看: 如果你正在使用Claude Code等AI编程工具,这个视频提供了数据驱动的见解,展示工作流插件如何显著提升代码质量并减少AI生成代码中常见的令人沮丧的错误。90%的错误减少率经过实际测试验证。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=romGzY0Xu0s)**
 
