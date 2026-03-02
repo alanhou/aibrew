@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 02, 2026"
 date: 2026-03-02
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -653,4 +653,166 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 短视频形式(#shorts)快速传递可操作的Excel知识,非常适合学习日常工作中可能错过的关键技巧
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=RR-yqL6108c)**
+
+### Git-Memento: AI Coding Session Tracker for Git Commits
+
+* Git extension that captures AI coding sessions and attaches them as git notes to commits
+* Supports multiple AI providers (Codex, Claude) with extensible configuration via environment variables and local git config
+* Core commands: `init` (setup), `commit` (create commit with session note), `amend` (modify commits while preserving/appending notes), `audit` (validate note coverage), `doctor` (diagnostics)
+* Note management: `share-notes` and `push` sync notes to remotes, `notes-sync` merges remote notes with backup safety, `notes-rewrite-setup` enables automatic note carry-over during rebases
+* Multi-session support: single commits can contain notes from multiple AI sessions across different providers using versioned delimiters
+* Built with .NET 10 NativeAOT for cross-platform single-binary distribution (macOS, Linux, Windows)
+* Installation via curl script from GitHub releases or manual PATH setup as `git-memento` command
+* GitHub Action integration: `comment` mode posts session notes as commit comments, `gate` mode enforces note coverage in CI pipelines
+* Release automation creates platform-specific binaries, tags follow semantic versioning with commit metadata fallback
+
+### Git-Memento:Git 提交的 AI 编码会话跟踪器
+
+* Git 扩展工具,捕获 AI 编码会话并将其作为 git notes 附加到提交上
+* 支持多个 AI 提供商(Codex、Claude),通过环境变量和本地 git 配置实现可扩展配置
+* 核心命令:`init`(设置)、`commit`(创建带会话注释的提交)、`amend`(修改提交同时保留/追加注释)、`audit`(验证注释覆盖率)、`doctor`(诊断)
+* 注释管理:`share-notes` 和 `push` 将注释同步到远程仓库,`notes-sync` 安全合并远程注释并备份,`notes-rewrite-setup` 在变基时自动携带注释
+* 多会话支持:单个提交可包含来自不同提供商的多个 AI 会话注释,使用版本化分隔符
+* 使用 .NET 10 NativeAOT 构建跨平台单二进制文件(macOS、Linux、Windows)
+* 通过 GitHub releases 的 curl 脚本安装,或手动设置 PATH 作为 `git-memento` 命令
+* GitHub Action 集成:`comment` 模式将会话注释发布为提交评论,`gate` 模式在 CI 流水线中强制执行注释覆盖率
+* 发布自动化创建特定平台二进制文件,标签遵循语义化版本控制,带提交元数据回退
+
+**[Read Original / 阅读原文](https://github.com/mandel-macaque/memento)**
+
+### Simulating a Virtual Computer Around a Real 286 Processor
+
+* Author resurrects a vintage Harris 80C286-12 processor to create a hardware-software hybrid system
+* Uses Raspberry Pi Pico with MCP23S17 IO expanders to simulate memory, peripherals, and interrupts around the physical CPU
+* Project involves manually stepping the processor clock and creating a "virtual reality" for the chip
+* Technical challenge: connecting 57 processor pins using four 16-pin IO expander chips via SPI communication
+* Implementation uses MicroPython to control the processor through simulated bus cycles and memory operations
+* Demonstrates reverse approach to virtualization - real hardware running in a software-defined environment
+
+### 为真实的 286 处理器模拟虚拟计算机环境
+
+* 作者复活了一颗老式 Harris 80C286-12 处理器，创建硬件-软件混合系统
+* 使用树莓派 Pico 配合 MCP23S17 IO 扩展芯片，为物理 CPU 模拟内存、外设和中断
+* 项目涉及手动控制处理器时钟，为芯片创造"虚拟现实"环境
+* 技术挑战：通过 SPI 通信使用四个 16 引脚 IO 扩展芯片连接 57 个处理器引脚
+* 实现采用 MicroPython 通过模拟总线周期和内存操作来控制处理器
+* 展示了虚拟化的反向方法 - 真实硬件运行在软件定义的环境中
+
+**[Read Original / 阅读原文](https://deadlime.hu/en/2026/02/22/computer-generated-dream-world/)**
+
+### Timber: Native Compilation for Classical ML Models
+
+* **Core concept**: Compiles tree-based ML models (XGBoost, LightGBM, scikit-learn, CatBoost, ONNX) into optimized native C code and serves them via HTTP API
+* **Performance**: Achieves ~2 µs latency (336× faster than Python XGBoost) with no Python runtime overhead in inference path
+* **Target users**: Fraud/risk teams, edge/IoT deployments, regulated industries (finance, healthcare, automotive), and platform teams replacing Python serving overhead
+* **Workflow**: Simple Ollama-style commands - `timber load` to compile models, `timber serve` to deploy, then call via REST API
+* **Supported formats**: XGBoost JSON, LightGBM text, scikit-learn pickle, ONNX TreeEnsemble operators, CatBoost JSON
+* **Deployment advantages**: Tiny artifacts (~48 KB), zero runtime dependencies (pure C99), deterministic execution for audit trails
+* **Benchmarking**: Reproducible scripts included with hardware metadata capture, comparing against Python XGBoost, ONNX Runtime, Treelite, and lleaves
+* **API endpoints**: `/api/predict`, `/api/generate`, `/api/models`, `/api/model/:name`, `/api/health`
+* **Limitations**: ONNX support limited to tree ensembles, CatBoost requires JSON exports, scikit-learn parser may fail on custom estimators, XGBoost uses JSON (not binary) format
+* **Roadmap**: Broader framework compatibility, expanded ONNX operators, embedded deployment profiles (ARM Cortex-M/RISC-V), enhanced regulatory tooling (MISRA-C)
+
+### Timber:经典机器学习模型的原生编译工具
+
+* **核心概念**:将基于树的机器学习模型(XGBoost、LightGBM、scikit-learn、CatBoost、ONNX)编译为优化的原生C代码,并通过HTTP API提供服务
+* **性能表现**:实现约2微秒延迟(比Python XGBoost快336倍),推理路径中无Python运行时开销
+* **目标用户**:欺诈/风险团队、边缘/物联网部署、受监管行业(金融、医疗、汽车)以及替换Python服务开销的平台团队
+* **工作流程**:类似Ollama的简单命令 - `timber load`编译模型,`timber serve`部署,然后通过REST API调用
+* **支持格式**:XGBoost JSON、LightGBM文本、scikit-learn pickle、ONNX TreeEnsemble算子、CatBoost JSON
+* **部署优势**:极小的产物(约48 KB)、零运行时依赖(纯C99)、可审计的确定性执行
+* **基准测试**:包含可复现脚本及硬件元数据捕获,对比Python XGBoost、ONNX Runtime、Treelite和lleaves
+* **API端点**:`/api/predict`、`/api/generate`、`/api/models`、`/api/model/:name`、`/api/health`
+* **局限性**:ONNX支持仅限树集成、CatBoost需要JSON导出、scikit-learn解析器可能在自定义估计器上失败、XGBoost使用JSON(非二进制)格式
+* **路线图**:更广泛的框架兼容性、扩展ONNX算子、嵌入式部署配置(ARM Cortex-M/RISC-V)、增强监管工具(MISRA-C)
+
+**[Read Original / 阅读原文](https://github.com/kossisoroyce/timber)**
+
+### vphone-cli - Boot Virtual iPhone on macOS Using Apple's Virtualization Framework
+
+* **What it does**: Runs a fully functional virtual iPhone (iOS 26) on Apple Silicon Macs using Apple's private Virtualization.framework APIs and PCC research VM infrastructure. Supports firmware patching, SSH access, and VNC remote control.
+
+* **Key features**: 
+  - Boots iOS 26 in a VM with custom firmware (CFW) support
+  - Automated setup via Makefile targets for firmware download, patching, and restoration
+  - SSH and VNC connectivity for remote access (default password: `alpine`)
+  - Binary analysis-based patching (41+ modifications across 6 boot components) that adapts to newer iOS versions
+  - Full DFU mode support for firmware flashing and ramdisk deployment
+
+* **Why it's notable**: This is a rare implementation that leverages Apple's undocumented research VM capabilities to virtualize iOS on macOS. With 1,837 stars, it's gaining attention from security researchers and iOS developers who need a virtualized testing environment. Requires disabling SIP/AMFI, making it strictly for research and development purposes. The project demonstrates advanced iOS internals knowledge and provides a complete toolchain for iOS virtualization.
+
+---
+
+### vphone-cli - 在 macOS 上使用苹果虚拟化框架启动虚拟 iPhone
+
+* **功能介绍**: 在 Apple Silicon Mac 上运行完整功能的虚拟 iPhone (iOS 26),使用苹果私有 Virtualization.framework API 和 PCC 研究虚拟机基础设施。支持固件修补、SSH 访问和 VNC 远程控制。
+
+* **主要特点**:
+  - 在虚拟机中启动 iOS 26,支持自定义固件 (CFW)
+  - 通过 Makefile 目标自动化设置,包括固件下载、修补和恢复
+  - SSH 和 VNC 连接实现远程访问(默认密码:`alpine`)
+  - 基于二进制分析的修补技术(跨 6 个启动组件的 41+ 处修改),可适配更新的 iOS 版本
+  - 完整的 DFU 模式支持,用于固件刷写和 ramdisk 部署
+
+* **为何值得关注**: 这是一个罕见的实现,利用苹果未公开的研究虚拟机能力在 macOS 上虚拟化 iOS。凭借 1,837 星标,它正受到安全研究人员和 iOS 开发者的关注,为需要虚拟化测试环境的用户提供解决方案。需要禁用 SIP/AMFI,因此严格用于研究和开发目的。该项目展示了深厚的 iOS 内部机制知识,并提供了完整的 iOS 虚拟化工具链。
+
+**[View Repository / 查看仓库](https://github.com/Lakr233/vphone-cli)**
+
+### 🎬 What are skills?
+
+**Channel:** Claude
+
+* This video explains Claude's "skills" feature - a capability that allows users to teach Claude how to perform specific tasks once, which Claude then automatically applies in relevant future contexts
+* Key topics include how skills work as reusable knowledge modules, the one-time teaching process, and automatic application when contextually appropriate
+* Worth watching for anyone using Claude who wants to understand how to create persistent, reusable instructions that enhance Claude's performance on recurring tasks without repeating instructions each time
+
+### 🎬 什么是技能?
+
+**频道:** Claude
+
+* 本视频介绍了 Claude 的"技能"功能——一种允许用户一次性教会 Claude 执行特定任务的能力,之后 Claude 会在相关场景中自动应用这些知识
+* 主要话题包括技能如何作为可重用的知识模块工作、一次性教学过程,以及在适当情境下的自动应用机制
+* 值得观看,适合所有想了解如何创建持久性、可重用指令的 Claude 用户,这些指令能够在重复性任务中提升 Claude 的表现,而无需每次都重复说明
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bjdBVZa66oU)**
+
+### 🎬 Insane Shadow Data Trick in C
+
+**Channel:** Tsoding
+
+* What the video covers: An advanced C programming technique involving "shadow data" - a method for associating metadata with data structures without modifying their original layout
+* Key topics discussed: Low-level memory manipulation, pointer arithmetic tricks, creative use of C's memory model to store auxiliary information alongside primary data structures, references to stb and gf libraries which commonly use similar techniques
+* Why it's worth watching: Demonstrates a clever systems programming pattern used in production libraries like stb (single-file public domain libraries) and gf; valuable for understanding how to write memory-efficient C code and learning unconventional but powerful techniques that experienced C programmers use
+
+---
+
+### 🎬 C语言中的疯狂影子数据技巧
+
+**频道:** Tsoding
+
+* 视频内容概述: 介绍C语言中的高级"影子数据"技术——一种在不修改原始数据结构布局的情况下关联元数据的方法
+* 主要话题: 底层内存操作、指针算术技巧、创造性地利用C语言内存模型在主数据结构旁存储辅助信息,参考了stb和gf等库中使用的类似技术
+* 为何值得观看: 展示了stb(单文件公共域库)和gf等生产级库中使用的巧妙系统编程模式;对于理解如何编写内存高效的C代码以及学习经验丰富的C程序员使用的非常规但强大的技术非常有价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gtk3RZHwJUA)**
+
+### 🎬 Programming projects that rewired my brain
+
+**Channel:** bigboxSWE
+
+* What the video covers: The creator shares transformative programming projects that fundamentally changed how they think about software development and problem-solving
+* Key topics discussed: Personal project experiences that led to breakthrough moments in understanding programming concepts, practical lessons learned from building real-world applications, and how certain projects can reshape a developer's mental models
+* Why it's worth watching: Offers valuable insights into which types of projects provide the most learning value and cognitive growth for developers, helping viewers choose projects that will genuinely level up their skills rather than just adding to their portfolio
+
+---
+
+### 🎬 改变我思维方式的编程项目
+
+**频道:** bigboxSWE
+
+* 视频内容概述: 创作者分享了几个彻底改变其软件开发和问题解决思维方式的编程项目经历
+* 主要话题: 个人项目经验中带来的突破性理解时刻、构建实际应用中学到的实用经验教训、以及某些项目如何重塑开发者的思维模型
+* 为何值得观看: 提供了关于哪些类型的项目能带来最大学习价值和认知成长的宝贵见解,帮助观众选择真正能提升技能的项目,而不仅仅是充实作品集
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GJcskn5mAg)**
 
