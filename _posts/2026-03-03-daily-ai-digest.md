@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 03, 2026"
 date: 2026-03-03
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，9个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，10个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -401,98 +401,6 @@ pin: false
 
 ---
 
-### 🎬 改变我思维方式的编程项目
-
-**频道:** bigboxSWE
-
-* 视频内容概述: 创作者分享了几个彻底改变其软件开发和问题解决思维方式的编程项目经历
-* 主要话题: 个人项目经验中带来的突破性理解时刻、构建实际应用中学到的实用经验教训、以及某些特定项目如何重塑开发者的思维模型
-* 为何值得观看: 提供了关于哪些类型的项目能带来最大学习价值和认知成长的宝贵见解,帮助观众选择真正能提升技能的项目,而不仅仅是充实作品集
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GJcskn5mAg)**
-
-### Meta's AI Smart Glasses: Privacy Concerns from Data Workers
-
-* Meta's Ray-Ban AI glasses marketed as all-in-one assistant for work, travel, and translation while promising user privacy control
-* Investigation reveals Kenyan data annotators at subcontractor Sama process highly sensitive user footage including bathroom visits, intimate moments, and sexual content
-* Workers report seeing bank cards, people undressing, and other private moments - users appear unaware their recordings are being viewed
-* Over 30 employees interviewed describe uncomfortable working conditions, viewing deeply personal content from Western homes
-* AI revolution relies heavily on manual labor in low-income countries - "machine learning" depends on human annotation work
-* Employees bound by strict confidentiality agreements, risk losing jobs and returning to poverty if they speak out
-* Investigation conducted by Svenska Dagbladet and Göteborgs-Posten with Nairobi-based journalist Naipanoi Lepapa
-* Raises questions about data control and privacy in borderless digital world where tech companies outsource sensitive data processing globally
-
-### Meta AI智能眼镜:数据工作者揭露隐私问题
-
-* Meta的Ray-Ban AI眼镜宣传为工作、旅行和翻译的全能助手,承诺用户隐私可控
-* 调查显示,肯尼亚分包商Sama的数据标注员处理高度敏感的用户视频,包括如厕、亲密时刻和性内容
-* 工作人员报告看到银行卡、人们脱衣等私密场景 - 用户似乎不知道他们的录像正被他人查看
-* 超过30名员工受访,描述不适的工作环境,需要查看来自西方家庭的深度私人内容
-* AI革命严重依赖低收入国家的人工劳动 - "机器学习"实际依靠人工标注工作
-* 员工受严格保密协议约束,若泄密将失业并可能重返贫困
-* 调查由瑞典《每日新闻》和《哥德堡邮报》与内罗毕记者Naipanoi Lepapa合作完成
-* 引发对无国界数字世界中数据控制和隐私的质疑,科技公司将敏感数据处理外包至全球各地
-
-**[Read Original / 阅读原文](https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything)**
-
-<!-- [Title-Only] -->
-### Seed of Might Color Correction Process (2023)
-
-* Based on the title, this article likely provides a technical breakdown of the color correction workflow used in "Seed of Might," which appears to be a visual project (possibly animation, film, or game). The PDF format suggests it contains detailed visual examples, before/after comparisons, and possibly technical diagrams showing the color grading pipeline.
-
-* This would be interesting to readers working in digital content creation, particularly those in animation, VFX, or game development who want to understand professional color correction workflows. It may reveal specific techniques, tools, and artistic decisions that went into achieving the final look of the project, offering practical insights for similar productions.
-
-### 《Seed of Might》调色流程解析（2023）
-
-* 根据标题推测，这篇文章可能详细介绍了《Seed of Might》项目中使用的调色工作流程，该项目似乎是一个视觉作品（可能是动画、影片或游戏）。PDF 格式表明文章可能包含详细的视觉示例、前后对比图，以及展示调色管线的技术图表。
-
-* 这对从事数字内容创作的读者很有价值，特别是动画、视效或游戏开发领域的从业者，他们希望了解专业的调色工作流程。文章可能揭示实现项目最终视觉效果所采用的具体技术、工具和艺术决策，为类似制作提供实用的参考经验。
-
-**[Read Original / 阅读原文](https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf)**
-
-The content you provided appears to be incomplete - it only contains a brief excerpt and post metadata. To provide a proper bilingual summary with meaningful bullet points, I would need the full article content.
-
-Could you please provide the complete article text? The current excerpt only shows:
-- A title
-- A date (February 25, 2026)
-- An incomplete sentence about RAC being saddened
-- Post footer links
-
-Once you share the full content, I'll create a structured bilingual summary following your specified format.
-
-**[Read Original / 阅读原文](https://www.rac.ca/rac-responds-to-the-closure-of-the-weatherradio-service-in-canada/)**
-
-### WiFi DensePose - See Through Walls with WiFi Signals
-
-* Turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring (breathing 6-30 BPM, heart rate 40-120 BPM), and presence detection through walls — no cameras, wearables, or video
-* Privacy-first sensing using Channel State Information (CSI) from WiFi radio waves; self-learning AI that adapts to any room; 810x faster Rust implementation (54K fps); multi-person tracking; disaster response capabilities with START triage; ESP32-S3 mesh support (~$54 for full setup)
-* Trending for breakthrough camera-free sensing technology that works through walls and darkness while avoiding GDPR/HIPAA imaging regulations; combines physics-based signal processing with ML for healthcare, retail, disaster response, and smart building applications at $0-8 per zone vs $200-2000 for camera systems
-
-### WiFi DensePose - 用 WiFi 信号透视墙壁
-
-* 将普通 WiFi 信号转化为实时人体姿态估计、生命体征监测(呼吸 6-30 次/分钟,心率 40-120 次/分钟)和穿墙存在检测 — 无需摄像头、可穿戴设备或视频
-* 隐私优先的传感技术,利用 WiFi 无线电波的信道状态信息(CSI);自学习 AI 可适应任何房间;Rust 重写性能提升 810 倍(54K fps);多人追踪;灾难响应能力含 START 分诊;支持 ESP32-S3 网格(全套约 54 美元)
-* 因突破性的无摄像头传感技术而热门,可穿墙和黑暗环境工作,同时规避 GDPR/HIPAA 影像监管;结合物理信号处理与机器学习,应用于医疗、零售、灾难响应和智能建筑,每区域成本 0-8 美元 vs 摄像头系统 200-2000 美元
-
-**[View Repository / 查看仓库](https://github.com/ruvnet/wifi-densepose)**
-
-### AIRI - Self-Hosted AI Companion Inspired by Neuro-sama
-
-* **What it does**: AIRI is an open-source, self-hosted AI virtual companion (digital waifu/VTuber) that can engage in real-time voice conversations, play games like Minecraft and Factorio, and interact across multiple platforms including Discord and Telegram. Built with TypeScript and modern web technologies (WebGPU, WebAssembly, WebAudio), it runs in browsers, on desktop (macOS/Windows), and even mobile devices via PWA.
-
-* **Key features**: 
-  - Cross-platform support with native GPU acceleration (NVIDIA CUDA, Apple Metal)
-  - Game-playing capabilities (Minecraft, Factorio)
-  - Multi-platform chat integration (Discord, Telegram)
-  - Real-time voice interaction with audio input/output
-  - In-browser database and memory systems
-  - Live2D/VRM avatar support
-  - Plugin system for extensibility
-
-* **Why it's notable**: Unlike closed-source AI VTubers like Neuro-sama, AIRI gives users complete ownership of their AI companion. It's trending with 1,412 stars today because it bridges the gap between simple chatbots and interactive AI streamers, offering an ambitious open-source alternative that combines gaming AI, voice interaction, and virtual character technology. The project leverages cutting-edge web technologies to deliver performance comparable to native applications while maintaining accessibility across devices.
-
----
-
 ### AIRI - 受 Neuro-sama 启发的自托管 AI 伴侣
 
 * **功能介绍**: AIRI 是一个开源的自托管 AI 虚拟伴侣(数字老婆/虚拟主播),能够进行实时语音对话、玩 Minecraft 和 Factorio 等游戏,并在 Discord 和 Telegram 等多个平台上互动。使用 TypeScript 和现代 Web 技术(WebGPU、WebAssembly、WebAudio)构建,可在浏览器、桌面端(macOS/Windows)甚至移动设备上通过 PWA 运行。
@@ -619,4 +527,128 @@ Once you share the full content, I'll create a structured bilingual summary foll
 * 为何值得观看: 短视频形式(#shorts)快速传递可操作的Excel知识,非常适合学习日常工作中可能错过的关键技巧
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=RR-yqL6108c)**
+
+### Meta's AI Smart Glasses: Privacy Concerns from Data Workers
+
+* Meta's Ray-Ban AI glasses marketed as all-in-one assistant for work, travel, and translation while promising user privacy control
+* Investigation reveals Kenyan data annotators at subcontractor Sama process highly sensitive user footage including bathroom visits, intimate moments, and sexual content
+* Workers report seeing bank cards, people undressing, and other private moments - users appear unaware their recordings are being viewed
+* Over 30 employees interviewed describe uncomfortable working conditions, viewing deeply personal content from Western homes
+* AI revolution relies heavily on manual labor in low-income countries - "machine learning" depends on human annotation work
+* Employees bound by strict confidentiality agreements, risk losing jobs and returning to poverty if they speak out
+* Investigation conducted by Svenska Dagbladet and Göteborgs-Posten with Nairobi-based journalist Naipanoi Lepapa
+* Raises questions about data control and privacy in borderless digital world where tech companies outsource sensitive data processing globally
+
+### Meta AI智能眼镜:数据工作者揭露隐私问题
+
+* Meta的Ray-Ban AI眼镜宣传为工作、旅行和翻译的全能助手,承诺用户隐私可控
+* 调查显示,肯尼亚分包商Sama的数据标注员处理高度敏感的用户视频,包括如厕、亲密时刻和性内容
+* 工作人员报告看到银行卡、人们脱衣等私密场景 - 用户似乎不知道他们的录像正被他人查看
+* 超过30名员工受访,描述不适的工作环境,需要查看来自西方家庭的深度私人内容
+* AI革命严重依赖低收入国家的人工劳动 - "机器学习"实际依靠人工标注工作
+* 员工受严格保密协议约束,若泄密将失业并可能重返贫困
+* 调查由瑞典《每日新闻》和《哥德堡邮报》与内罗毕记者Naipanoi Lepapa合作完成
+* 引发对无国界数字世界中数据控制和隐私的质疑,科技公司将敏感数据处理外包至全球各地
+
+**[Read Original / 阅读原文](https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything)**
+
+### B.C. Ends Time Changes: Mixed Reactions to Year-Round Daylight Time
+
+* British Columbia will permanently adopt daylight time, with the last clock change on March 8, 2025, and no fall-back on November 1, 2026
+* Premier David Eby cited health concerns including sleep disruption, increased car accidents, and general inconvenience as reasons for the change
+* The new "Pacific Time" zone will align with Yukon year-round, except for East Kootenay which follows Alberta's Mountain Time
+* B.C. passed enabling legislation in 2019 but previously waited for Washington, Oregon, and California to make similar changes
+* UBC professor Werner Antweiler supports the move, noting time changes impose "jet lag on the entire population" and someone had to lead
+* 93% of 2019 public consultation respondents favored year-round daylight time, primarily for health and wellness reasons
+* Business leaders and Vancouver Airport Authority express concern about unilateral action without neighboring U.S. jurisdictions
+* Critics worry about cross-border business complications, travel confusion, and scheduling challenges for airlines
+* Some view the timing as a political distraction from B.C.'s $13-billion deficit rather than genuine policy reform
+
+### 卑诗省取消时制转换:全年夏令时引发褒贬不一
+
+* 卑诗省将永久采用夏令时,最后一次调时为2025年3月8日,2026年11月1日将不再回拨时钟
+* 省长尹大卫指出时制转换导致睡眠不足、交通事故增加等诸多问题,是做出改变的原因
+* 新的"太平洋时间"时区将全年与育空地区保持一致,东库特尼地区除外(该区域与阿尔伯塔省保持山地时间)
+* 卑诗省2019年已通过相关立法,但此前一直等待华盛顿州、俄勒冈州和加州采取同样行动
+* UBC商学教授安特韦勒支持此举,指出时制转换给全体民众带来"时差反应",总要有人率先行动
+* 2019年公众咨询显示93%受访者支持全年夏令时,主要出于健康考虑
+* 商界领袖和温哥华机场管理局担忧在美国邻近地区未跟进情况下单方面行动
+* 批评者担心跨境商业往来复杂化、旅客混淆以及航空公司排班挑战
+* 部分人士认为此举时机是为转移公众对卑诗省130亿加元赤字的关注,而非真正的政策改革
+
+**[Read Original / 阅读原文](https://www.cbc.ca/news/canada/british-columbia/b-c-adopting-year-round-daylight-time-9.7111657)**
+
+### Ars Technica Fires AI Reporter Over Fabricated Quotes Scandal
+
+* Ars Technica terminated senior AI reporter Benj Edwards after he published an article containing AI-generated fabricated quotes attributed to engineer Scott Shambaugh
+* Edwards admitted using an experimental Claude-based AI tool while sick with fever to extract source material, which inadvertently produced paraphrased rather than verbatim quotes
+* The article, published February 13 and later retracted, covered an incident where an AI agent published a hit piece about Shambaugh
+* Editor-in-chief Ken Fisher called it a "serious failure of standards" but noted it appeared to be an isolated incident
+* Edwards emphasized the article text was human-written and clarified his co-author Kyle Orland had no role in the error
+* Ars Technica completed its internal review by February 27 and plans to publish guidelines on AI use in journalism
+* The incident highlights broader tensions in media as executives push AI integration while ethical guidelines remain unclear, amid copyright battles and concerns about AI-generated misinformation
+
+### Ars Technica 因 AI 捏造引语丑闻解雇记者
+
+* Ars Technica 解雇了资深 AI 记者 Benj Edwards,原因是他发表的文章包含 AI 生成的虚假引语,这些引语被错误地归于工程师 Scott Shambaugh
+* Edwards 承认在发烧生病期间使用了一个实验性的基于 Claude 的 AI 工具来提取源材料,结果意外产生了改写版本而非逐字引用
+* 该文章于 2 月 13 日发表后被撤回,内容涉及一个 AI 代理发布针对 Shambaugh 的攻击性文章的事件
+* 主编 Ken Fisher 称这是"标准的严重失误",但指出这似乎是孤立事件
+* Edwards 强调文章正文是人工撰写的,并澄清合著者 Kyle Orland 与此错误无关
+* Ars Technica 于 2 月 27 日完成内部审查,并计划发布关于新闻工作中 AI 使用的指南
+* 这一事件凸显了媒体行业的广泛紧张局势:高管推动 AI 整合,但道德准则仍不明确,同时版权纠纷和 AI 生成虚假信息的担忧持续存在
+
+**[Read Original / 阅读原文](https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes)**
+
+### RuView: WiFi DensePose - See Through Walls with WiFi Signals
+
+* Transforms commodity WiFi signals into real-time human pose estimation, vital sign monitoring (breathing 6-30 BPM, heart rate 40-120 BPM), and presence detection through walls—no cameras, wearables, or video capture required
+* Privacy-first sensing using Channel State Information (CSI) analysis with Rust-powered 54K fps processing, self-learning AI that requires no labeled training data, multi-person tracking (3-5 per access point), ESP32-S3 mesh support (~$54 for full setup), and one-command Docker deployment
+* Notable for achieving 810x performance improvement through complete Rust rewrite, offering camera-free monitoring that bypasses GDPR/HIPAA imaging regulations, working through walls/darkness where cameras fail, and enabling disaster response applications (survivor detection through rubble with START triage classification)
+
+### RuView: WiFi DensePose - 用WiFi信号透视墙壁
+
+* 将普通WiFi信号转化为实时人体姿态估计、生命体征监测(呼吸6-30次/分钟,心率40-120次/分钟)和存在检测,可穿墙感知——无需摄像头、可穿戴设备或视频采集
+* 隐私优先的感知技术,使用信道状态信息(CSI)分析,Rust驱动的54K帧/秒处理速度,无需标注数据的自学习AI,多人追踪(每个接入点3-5人),支持ESP32-S3网格(全套约54美元),一键Docker部署
+* 值得关注的原因:通过完全Rust重写实现810倍性能提升,提供无摄像头监控方案规避GDPR/HIPAA影像法规,可穿墙/黑暗环境工作突破摄像头限制,支持灾难响应应用(通过废墟检测幸存者并进行START分诊分类)
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### OpenSandbox - General-Purpose Sandbox Platform for AI Applications
+
+* **What it does**: OpenSandbox provides isolated execution environments for AI applications, enabling safe code execution, agent operations, and automated testing. It offers unified APIs for creating, managing, and interacting with sandboxes through command execution, file operations, and code interpretation across multiple programming languages.
+
+* **Key features**: Multi-language SDKs (Python, Java/Kotlin, TypeScript/JavaScript, C#/.NET), Docker and Kubernetes runtime support, built-in code interpreter, browser automation capabilities (Chrome, Playwright), desktop environments with VNC access, network ingress/egress controls, and extensive integration examples for popular AI coding agents (Claude Code, Gemini CLI, Codex CLI).
+
+* **Why it's notable**: Addresses the critical need for secure, scalable execution environments in AI applications. With 1,026 stars today, it's gaining traction as Alibaba's solution for safely running AI-generated code and agents. The platform's flexibility spans from local Docker deployments to large-scale Kubernetes orchestration, making it suitable for everything from development to production AI workloads. Its comprehensive SDK support and rich examples (20+ integration scenarios) lower the barrier for developers building coding agents, GUI automation, and RL training pipelines.
+
+---
+
+### OpenSandbox - AI 应用通用沙箱平台
+
+* **功能介绍**: OpenSandbox 为 AI 应用提供隔离的执行环境,支持安全的代码执行、智能体操作和自动化测试。通过统一的 API 实现沙箱的创建、管理和交互,包括命令执行、文件操作和多语言代码解释功能。
+
+* **主要特点**: 多语言 SDK 支持(Python、Java/Kotlin、TypeScript/JavaScript、C#/.NET),Docker 和 Kubernetes 运行时,内置代码解释器,浏览器自动化能力(Chrome、Playwright),带 VNC 访问的桌面环境,网络入口/出口控制,以及丰富的 AI 编码智能体集成示例(Claude Code、Gemini CLI、Codex CLI 等)。
+
+* **为何值得关注**: 解决了 AI 应用中安全、可扩展执行环境的关键需求。今日获得 1,026 星标,作为阿里巴巴推出的 AI 代码和智能体安全运行解决方案备受关注。平台灵活性覆盖从本地 Docker 部署到大规模 Kubernetes 编排,适用于开发到生产环境的各类 AI 工作负载。全面的 SDK 支持和丰富示例(20+ 集成场景)降低了开发者构建编码智能体、GUI 自动化和强化学习训练管道的门槛。
+
+**[View Repository / 查看仓库](https://github.com/alibaba/OpenSandbox)**
+
+### 🎬 Claude Code Skills Are Broken (Beginner to Pro)
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: A comprehensive guide exploring Claude's coding capabilities, from basic usage to advanced techniques, highlighting both strengths and limitations
+* Key topics discussed: Practical demonstrations of Claude's code generation, debugging workflows, common pitfalls to avoid, and strategies to maximize AI-assisted development productivity
+* Why it's worth watching: Essential for developers wanting to leverage Claude effectively in their workflow - shows real-world examples of what works, what doesn't, and how to bridge the gap between beginner and professional-level AI coding assistance
+
+---
+
+### 🎬 Claude 编程技能深度解析(从入门到精通)
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
+* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
+* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
 
