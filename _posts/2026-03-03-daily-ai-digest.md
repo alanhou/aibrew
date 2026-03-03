@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 03, 2026"
 date: 2026-03-03
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，10个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -651,4 +651,78 @@ pin: false
 * 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+
+### Arm's Cortex X925: Reaching Desktop Performance
+
+* Arm's Cortex X925 achieves performance parity with AMD Zen 5 and Intel Lion Cove in desktop implementations, marking a milestone for Arm in high-performance computing
+* The X925 is a massive 10-wide core with superior reordering capacity (525 instructions) compared to Zen 5 (448) and comparable to Lion Cove (576)
+* Nvidia's GB10 chip uses ten X925 cores running at 4 GHz (one core) and 3.9 GHz (others), deployed in Dell's Pro Max series
+* X925 features fixed 64 KB L1 caches, configurable 2-3 MB L2, and up to 32 MB L3 via DSU-120 interconnect
+* Branch prediction matches or exceeds Zen 5 performance, with a large first-level BTB tracking up to 2048 branches and total capacity of 16384 branches
+* The core ditches the MOP cache from previous generations, relying on predecode and lower clock speeds for efficiency
+* Frontend sustains 10 instructions per cycle with 2 MB pages, though actual throughput is lower than Zen 5/Lion Cove due to clock speed differences
+* Integer execution uses eight ALU ports and three branch units distributed across four 28-entry schedulers for balanced throughput
+* X925 breaks integer multiply-add (madd) into two micro-ops, unlike older Arm cores with dedicated multi-cycle pipes
+* The design prioritizes maximum performance over power/area efficiency, unlike Arm's 7-series cores
+
+### Arm Cortex X925:达到桌面级性能
+
+* Arm的Cortex X925在桌面实现中达到了与AMD Zen 5和Intel Lion Cove相当的性能,标志着Arm在高性能计算领域的里程碑
+* X925是一个庞大的10路宽核心,具有优于Zen 5(448条指令)的重排序能力(525条指令),与Lion Cove(576条指令)相当
+* Nvidia的GB10芯片使用十个X925核心,运行频率为4 GHz(一个核心)和3.9 GHz(其他核心),部署在戴尔Pro Max系列中
+* X925配备固定的64 KB L1缓存、可配置的2-3 MB L2缓存,以及通过DSU-120互连的最多32 MB L3缓存
+* 分支预测性能与Zen 5相当或更优,拥有可跟踪多达2048个分支的大型一级BTB,总容量达16384个分支
+* 该核心放弃了前几代的MOP缓存,依靠预解码和较低时钟速度来提高效率
+* 前端在使用2 MB页面时可维持每周期10条指令,但由于时钟速度差异,实际吞吐量低于Zen 5/Lion Cove
+* 整数执行使用八个ALU端口和三个分支单元,分布在四个28条目调度器中以实现平衡吞吐量
+* X925将整数乘加(madd)指令分解为两个微操作,不同于具有专用多周期管道的旧Arm核心
+* 该设计优先考虑最大性能而非功耗/面积效率,与Arm的7系列核心不同
+
+**[Read Original / 阅读原文](https://chipsandcheese.com/p/arms-cortex-x925-reaching-desktop)**
+
+### DIY Hardware Dispensers for Kit Assembly Automation
+
+* Maker creates laser-cut acrylic dispensers to automate counting small parts for precision clock kits
+* Nut dispenser uses trigger mechanism to dispense exactly 6 M3 nuts at once, assembled with PLA filament pegs
+* Screw dispenser evolved through 3 iterations: simple slot design, curved track system, final S-shaped parametric design
+* Mark 3 screw dispenser holds 16 sets (96 screws) in compact S-curve track with 21mm turn radius, fits A4 sheet constraints
+* Magnet dispenser uses flexure mechanism to shear off exactly 3 magnets (4mm × 3mm) per trigger pull
+* All designs use 3mm laser-cut acrylic with clever assembly techniques avoiding glue where possible
+* CAD files available as STEP and DXF formats, designed in OnShape during free trial period
+* Significantly reduces manual counting errors and speeds up kit packing workflow
+
+### 简易螺丝计数器 - 套件组装自动化工具
+
+* 制作者使用激光切割亚克力制作分配器,自动化精密时钟套件的小零件计数工作
+* 螺母分配器采用扳机机制,一次精确分配 6 个 M3 螺母,使用 PLA 耗材销钉组装
+* 螺丝分配器经历三次迭代:简单槽口设计、弯曲轨道系统、最终 S 型参数化设计
+* Mark 3 螺丝分配器在紧凑的 S 型轨道中容纳 16 组(96 颗螺丝),转弯半径 21mm,符合 A4 纸张尺寸限制
+* 磁铁分配器使用挠曲机制,每次扳机拉动剪切 3 个磁铁(4mm × 3mm)
+* 所有设计使用 3mm 激光切割亚克力,采用巧妙的组装技术,尽可能避免使用胶水
+* CAD 文件提供 STEP 和 DXF 格式,在 OnShape 免费试用期间设计
+* 显著减少人工计数错误,加快套件包装工作流程
+
+**[Read Original / 阅读原文](https://mitxela.com/projects/screwcounter)**
+
+### Building a Miniature Macintosh with Raspberry Pi Pico
+
+* Jeff Geerling built a tiny Macintosh emulator using a Raspberry Pi Pico (RP2040) running Matt Evans' Pico Micro Mac firmware
+* The system outputs 640x480 VGA at 60Hz with USB keyboard and mouse support, offering 208KB RAM (63% more than the original 128K Mac)
+* Hardware setup uses a Pico Micro Mac adapter board with microSD card support; V3 version eliminates soldering by using pre-headered Pico WH
+* Setup process involves flashing a .uf2 firmware file to the Pico and copying a umac0.img disk image to a FAT32-formatted microSD card
+* The system successfully runs Mac OS System 5.3 but has significant limitations: 208KB RAM constraint prevents running larger applications, no sound support, and lacks specialized features like AppleTalk or SCSI
+* Experimental RP2350 work shows potential for up to 4MB RAM running System 7.5.5, though still in testing phase
+* Total build cost around $20 compared to the original Mac's $2,495 ($8,000 in today's dollars), making it primarily a learning tool and novelty project
+
+### 用树莓派 Pico 打造迷你麦金塔电脑
+
+* Jeff Geerling 使用树莓派 Pico (RP2040) 运行 Matt Evans 的 Pico Micro Mac 固件,构建了一台微型麦金塔模拟器
+* 系统支持 640x480 VGA 60Hz 输出,可连接 USB 键盘和鼠标,提供 208KB 内存(比原版 128K Mac 多 63%)
+* 硬件配置使用 Pico Micro Mac 适配板和 microSD 卡支持;V3 版本采用预焊接排针的 Pico WH,无需焊接
+* 设置流程包括向 Pico 刷入 .uf2 固件文件,并将 umac0.img 磁盘镜像复制到 FAT32 格式的 microSD 卡
+* 系统可成功运行 Mac OS System 5.3,但存在明显限制:208KB 内存限制无法运行大型应用,不支持声音,缺少 AppleTalk 或 SCSI 等专业功能
+* 实验性的 RP2350 开发显示可支持最高 4MB 内存运行 System 7.5.5,但仍处于测试阶段
+* 总成本约 20 美元,而原版 Mac 售价 2,495 美元(相当于今天的 8,000 美元),主要作为学习工具和新奇项目
+
+**[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/pint-sized-macintosh-pico-micro-mac/)**
 
