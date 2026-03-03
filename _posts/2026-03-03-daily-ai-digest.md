@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 03, 2026"
 date: 2026-03-03
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 13 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，13个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -725,4 +725,183 @@ pin: false
 * 总成本约 20 美元,而原版 Mac 售价 2,495 美元(相当于今天的 8,000 美元),主要作为学习工具和新奇项目
 
 **[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/pint-sized-macintosh-pico-micro-mac/)**
+
+### The Beauty and Terror of Modding Windows with Windhawk
+
+* Windhawk is a free, open-source Windows customization tool that lets users install "mods" to deeply customize Windows and applications beyond Microsoft's default options
+* Popular features include moving the taskbar, theming the Start menu, scroll-wheel tab switching in browsers, and volume control via taskbar scrolling
+* The tool works by injecting DLLs into system processes, which raises stability and security concerns, and may conflict with anti-cheat software in games
+* Created by trusted developer Michael Maltsev (m417z), but third-party mods require users to assess trustworthiness themselves
+* Represents the tension between Windows customization freedom and security - Microsoft's upcoming Baseline Security Mode will lock down systems by default while allowing opt-out
+* The existence of tools like Windhawk highlights Microsoft's failure to provide basic customization options users want, though Windows 11 will finally restore movable taskbars
+* Author takes a nuanced stance: can't officially recommend it due to risks, but acknowledges it's been reliable and fills a real need for power users willing to accept trade-offs
+
+### 用 Windhawk 修改 Windows 的美妙与风险
+
+* Windhawk 是一款免费开源的 Windows 定制工具,允许用户安装"模组"来深度定制 Windows 和应用程序,超越微软的默认选项
+* 热门功能包括移动任务栏、主题化开始菜单、浏览器中滚轮切换标签页、以及通过任务栏滚动控制音量
+* 该工具通过向系统进程注入 DLL 来工作,这引发了稳定性和安全性担忧,并可能与游戏中的反作弊软件冲突
+* 由值得信赖的开发者 Michael Maltsev (m417z) 创建,但第三方模组需要用户自行评估可信度
+* 代表了 Windows 定制自由与安全之间的张力 - 微软即将推出的基线安全模式将默认锁定系统,同时允许用户选择退出
+* Windhawk 等工具的存在凸显了微软未能提供用户想要的基本定制选项,尽管 Windows 11 最终将恢复可移动任务栏
+* 作者持谨慎态度:由于风险无法正式推荐,但承认它一直很可靠,并为愿意接受权衡的高级用户填补了真实需求
+
+**[Read Original / 阅读原文](https://windowsread.me/p/windhawk-explained)**
+
+<!-- [Title-Only] -->
+### The Xkcd thing, now interactive
+
+* Based on the title, this article likely presents an interactive version of a concept, visualization, or comic from xkcd (the popular webcomic by Randall Munroe known for its witty takes on science, math, and technology). The URL suggests it's built using p5.js, a JavaScript library for creative coding, hosted on the p5.js web editor.
+* This would be interesting to readers because xkcd comics often contain clever visualizations or thought experiments that become even more engaging when made interactive. The ability to manipulate parameters or explore the concept hands-on could provide deeper understanding or simply be entertaining. Fans of data visualization, creative coding, or xkcd's humor would likely find this compelling.
+
+### Xkcd 概念的交互式版本
+
+* 根据标题推测，这篇文章可能展示了 xkcd（Randall Munroe 创作的流行网络漫画，以其对科学、数学和技术的机智解读而闻名）中某个概念、可视化或漫画的交互式版本。从 URL 可以看出，这是使用 p5.js（一个用于创意编程的 JavaScript 库）构建的，托管在 p5.js 网页编辑器上。
+* 这对读者来说很有趣，因为 xkcd 漫画经常包含巧妙的可视化或思想实验，当它们变成可交互的形式时会更加引人入胜。能够操作参数或亲手探索这些概念可以提供更深入的理解，或者单纯就很有趣。数据可视化、创意编程或 xkcd 幽默的爱好者可能会觉得这很吸引人。
+
+**[Read Original / 阅读原文](https://editor.p5js.org/isohedral/full/vJa5RiZWs)**
+
+### C64 Sprite Multiplexing: Implementing Advanced Graphics Techniques
+
+* Article demonstrates implementing sprite multiplexing on Commodore 64 to overcome the 8-sprite hardware limitation
+* Project enhances a Lights-Out game by adding drop shadows and button press animations to 25 game cells (requiring 33 sprites total)
+* Uses sprite reuse technique: 5 sprites for cell shadows repositioned across 5 rows, 2 sprites for corners reused top/bottom, 1 for left shadow
+* Tightest timing constraint involves reconfiguring sprites 0-1 between rendering last cell row and bottom shadow (only few scanlines available)
+* Switches status line from Extended Color Mode to standard mode to access full 256-character set and enable mixed-case text
+* Organizes sprites by update frequency: sprites 0-4 (cell shadows, updated 4x/frame), 5-6 (corners, 2x/frame), 7 (left shadow, 2x/frame)
+* Implements RAM array `spr_enable` to track which sprites should be visible per row (disabling sprites for pressed buttons)
+* Interrupt handler complexity increases from 2 to 8 interrupt points per frame for precise sprite repositioning
+* Animates button labels by redefining character graphics in-place (each letter used only once in the character set)
+
+### C64 精灵复用：实现高级图形技术
+
+* 文章演示了在 Commodore 64 上实现精灵复用以突破 8 个精灵的硬件限制
+* 项目通过为 25 个游戏单元格添加阴影和按钮按下动画来增强 Lights-Out 游戏（总共需要 33 个精灵）
+* 使用精灵重用技术：5 个精灵用于单元格阴影并在 5 行中重新定位，2 个精灵用于上下角落重用，1 个用于左侧阴影
+* 最严格的时序约束涉及在渲染最后一行单元格和底部阴影之间重新配置精灵 0-1（仅有几条扫描线可用）
+* 将状态行从扩展颜色模式切换到标准模式以访问完整的 256 字符集并启用大小写混合文本
+* 按更新频率组织精灵：精灵 0-4（单元格阴影，每帧更新 4 次），5-6（角落，每帧 2 次），7（左侧阴影，每帧 2 次）
+* 实现 RAM 数组 `spr_enable` 来跟踪每行应显示哪些精灵（为按下的按钮禁用精灵）
+* 中断处理程序复杂度从每帧 2 个中断点增加到 8 个，以实现精确的精灵重新定位
+* 通过就地重新定义字符图形来动画化按钮标签（字符集中每个字母仅使用一次）
+
+**[Read Original / 阅读原文](https://bumbershootsoft.wordpress.com/2026/02/28/c64-putting-sprite-multiplexing-to-work/)**
+
+### Claude Scientific Skills - Transform AI Agents into Research Assistants
+
+* **What it does**: A comprehensive collection of 148+ ready-to-use scientific and research skills that transform AI coding agents (Cursor, Claude Code, Codex) into powerful research assistants. Provides curated documentation and examples for specialized scientific libraries, databases, and tools across biology, chemistry, medicine, physics, engineering, finance, and more.
+
+* **Key features**: Access to 250+ databases (PubMed, ChEMBL, UniProt, SEC EDGAR, Alpha Vantage); 55+ optimized Python package skills (RDKit, Scanpy, PyTorch Lightning, BioPython, Qiskit); covers bioinformatics, drug discovery, clinical research, medical imaging, machine learning, materials science, astronomy, lab automation, and scientific communication; follows open Agent Skills standard; simple copy-paste installation with automatic discovery.
+
+* **Why it's notable**: Saves days of research setup by providing production-ready, tested code examples and best practices for complex scientific workflows. Created by K-Dense, this MIT-licensed toolkit enables researchers to execute multi-step scientific pipelines with simple prompts, bridging the gap between AI coding assistants and domain-specific scientific computing. Gaining 790 stars today reflects strong demand for accessible scientific AI tools.
+
+---
+
+### Claude Scientific Skills - 将 AI 代理转变为科研助手
+
+* **功能介绍**: 包含 148+ 个即用型科学研究技能的综合集合,可将 AI 编码代理(Cursor、Claude Code、Codex)转变为强大的科研助手。为生物学、化学、医学、物理学、工程学、金融等领域的专业科学库、数据库和工具提供精选文档和示例。
+
+* **主要特点**: 访问 250+ 个数据库(PubMed、ChEMBL、UniProt、SEC EDGAR、Alpha Vantage);55+ 个优化的 Python 包技能(RDKit、Scanpy、PyTorch Lightning、BioPython、Qiskit);涵盖生物信息学、药物发现、临床研究、医学影像、机器学习、材料科学、天文学、实验室自动化和科学写作;遵循开放的 Agent Skills 标准;简单的复制粘贴安装,自动发现功能。
+
+* **为何值得关注**: 通过为复杂科学工作流程提供生产就绪的测试代码示例和最佳实践,节省数天的研究设置时间。由 K-Dense 创建,这个 MIT 许可的工具包使研究人员能够通过简单提示执行多步骤科学流程,弥合了 AI 编码助手与特定领域科学计算之间的差距。今日获得 790 星标反映了对易用科学 AI 工具的强劲需求。
+
+**[View Repository / 查看仓库](https://github.com/K-Dense-AI/claude-scientific-skills)**
+
+### Codebuff - Open-Source Multi-Agent AI Coding Assistant
+
+* **What it does**: Codebuff is a terminal-based AI coding assistant that edits codebases through natural language instructions. Instead of relying on a single model, it orchestrates specialized agents (File Picker, Planner, Editor, Reviewer) that collaborate to understand project architecture and make precise code changes across multiple files.
+
+* **Key features**: 
+  - Multi-agent architecture for better context understanding and accuracy (beats Claude Code 61% vs 53% on 175+ coding tasks)
+  - Custom agent creation with TypeScript definitions and programmatic control
+  - SDK for production integration and CI/CD pipelines
+  - Support for any model via OpenRouter (Claude, GPT, Qwen, DeepSeek, etc.)
+  - Agent marketplace for reusing published agents
+  - Handles complex tasks like "add authentication" or "fix SQL injection" autonomously
+
+* **Why it's notable**: Gaining 118 stars today because it outperforms single-model tools like Claude Code through its innovative multi-agent approach. The ability to create custom agents with TypeScript, switch between any AI model, and embed the SDK into production applications makes it highly flexible. It's positioning itself as "the new MCP" for AI coding workflows, offering both CLI convenience and programmatic control.
+
+---
+
+### Codebuff - 开源多智能体 AI 编码助手
+
+* **功能介绍**: Codebuff 是一个基于终端的 AI 编码助手,通过自然语言指令编辑代码库。它不依赖单一模型,而是协调多个专业智能体(文件选择器、规划器、编辑器、审查器)协同工作,理解项目架构并跨多个文件进行精确代码修改。
+
+* **主要特点**:
+  - 多智能体架构提供更好的上下文理解和准确性(在 175+ 编码任务中以 61% 对 53% 击败 Claude Code)
+  - 使用 TypeScript 定义创建自定义智能体,支持编程控制
+  - 提供 SDK 用于生产集成和 CI/CD 流水线
+  - 通过 OpenRouter 支持任意模型(Claude、GPT、Qwen、DeepSeek 等)
+  - 智能体市场可复用已发布的智能体
+  - 自主处理复杂任务,如"添加身份验证"或"修复 SQL 注入"
+
+* **为何值得关注**: 今日获得 118 星,因其创新的多智能体方法超越了 Claude Code 等单模型工具。能够用 TypeScript 创建自定义智能体、在任意 AI 模型间切换,以及将 SDK 嵌入生产应用的能力使其极具灵活性。它将自己定位为 AI 编码工作流的"新一代 MCP",同时提供 CLI 便利性和编程控制能力。
+
+**[View Repository / 查看仓库](https://github.com/CodebuffAI/codebuff)**
+
+### AgentScope - Production-Ready Agent Framework for Building Trustworthy AI Agents
+
+* **What it does**: AgentScope is a Python framework for building, deploying, and running AI agents with LLMs. It provides essential abstractions like ReAct agents, tools, memory, planning, and multi-agent orchestration, designed to work with increasingly capable language models.
+
+* **Key features**: 
+  * Built-in ReAct agent with tool use, human-in-the-loop steering, and realtime voice capabilities
+  * Extensive ecosystem integrations (MCP, A2A protocol, Anthropic Agent Skills, Trinity-RFT for agentic RL)
+  * Production deployment options (local, serverless, K8s) with OpenTelemetry support
+  * Advanced memory systems with database support and compression
+  * Flexible multi-agent workflows and message hub architecture
+
+* **Why it's notable**: Gaining 83 stars today, AgentScope stands out by embracing model capabilities rather than constraining them with rigid prompts. It's production-ready with real deployment infrastructure, supports cutting-edge features like realtime voice agents and agentic reinforcement learning, and offers a complete ecosystem from development to deployment. The framework's recent additions (realtime voice, A2A protocol, TTS) show active development aligned with the latest AI agent trends.
+
+---
+
+### AgentScope - 可信赖的生产级 AI 智能体开发框架
+
+* **功能介绍**: AgentScope 是一个用于构建、部署和运行 AI 智能体的 Python 框架。它提供了 ReAct 智能体、工具、记忆、规划和多智能体编排等核心抽象,专为日益强大的语言模型设计。
+
+* **主要特点**:
+  * 内置 ReAct 智能体,支持工具调用、人机协同和实时语音交互
+  * 丰富的生态集成(MCP、A2A 协议、Anthropic Agent Skills、Trinity-RFT 智能体强化学习)
+  * 生产级部署方案(本地、无服务器、K8s),内置 OpenTelemetry 支持
+  * 高级记忆系统,支持数据库存储和记忆压缩
+  * 灵活的多智能体工作流和消息中心架构
+
+* **为何值得关注**: 今日获得 83 个 star,AgentScope 的独特之处在于充分利用模型能力而非用僵化的提示词限制它们。框架具备完整的生产部署基础设施,支持实时语音智能体和智能体强化学习等前沿功能,并提供从开发到部署的完整生态系统。最近新增的实时语音、A2A 协议、TTS 等功能展现了与 AI 智能体最新趋势同步的活跃开发状态。
+
+**[View Repository / 查看仓库](https://github.com/agentscope-ai/agentscope)**
+
+### 🎬 Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI
+
+**Channel:** Lex Fridman
+
+* Exclusive training footage of Lex Fridman working out with legendary UFC champion Khabib Nurmagomedov at the UFC Performance Institute
+* Behind-the-scenes look at Khabib's training methods, grappling techniques, and fighting philosophy from one of MMA's most dominant champions
+* Worth watching for rare access to Khabib's coaching style, insights into elite-level combat sports training, and the unique dynamic between a podcaster/martial arts enthusiast and an undefeated UFC legend
+
+---
+
+### 🎬 Lex 与 Khabib Nurmagomedov 训练 | UFC PI 独家镜头
+
+**频道:** Lex Fridman
+
+* Lex Fridman 与传奇 UFC 冠军 Khabib Nurmagomedov 在 UFC 表现研究所的独家训练镜头
+* 深入了解 Khabib 的训练方法、摔跤技巧以及这位 MMA 最具统治力冠军的格斗哲学
+* 值得观看的原因：难得一见的 Khabib 教学风格、精英级别格斗运动训练的洞察,以及播客主持人/武术爱好者与不败 UFC 传奇之间的独特互动
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SHlrUAkkWI0)**
+
+### 🎬 3 types of designers you need on your team
+**Channel:** Lenny's Podcast
+
+* What the video covers: The video explores three essential designer roles that modern teams should have to build successful products in the AI era
+* Key topics discussed: Different designer specializations, how design roles are evolving with AI, team composition strategies, and the future of design work
+* Why it's worth watching: Provides actionable insights for hiring managers and team leaders on building well-rounded design teams, especially relevant as AI transforms the design landscape
+
+### 🎬 团队中需要的3种设计师类型
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨现代团队在AI时代打造成功产品所需的三种核心设计师角色
+* 主要话题: 不同的设计师专业分工、AI如何改变设计角色、团队组建策略以及设计工作的未来发展
+* 为何值得观看: 为招聘经理和团队领导者提供实用建议,帮助构建全面的设计团队,尤其适合关注AI如何重塑设计领域的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GSvf-5JI3Yo)**
 
