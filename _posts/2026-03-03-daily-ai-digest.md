@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 03, 2026"
 date: 2026-03-03
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 5 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，5个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，9个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -410,4 +410,213 @@ pin: false
 * 为何值得观看: 提供了关于哪些类型的项目能带来最大学习价值和认知成长的宝贵见解,帮助观众选择真正能提升技能的项目,而不仅仅是充实作品集
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=3GJcskn5mAg)**
+
+### Meta's AI Smart Glasses: Privacy Concerns from Data Workers
+
+* Meta's Ray-Ban AI glasses marketed as all-in-one assistant for work, travel, and translation while promising user privacy control
+* Investigation reveals Kenyan data annotators at subcontractor Sama process highly sensitive user footage including bathroom visits, intimate moments, and sexual content
+* Workers report seeing bank cards, people undressing, and other private moments - users appear unaware their recordings are being viewed
+* Over 30 employees interviewed describe uncomfortable working conditions, viewing deeply personal content from Western homes
+* AI revolution relies heavily on manual labor in low-income countries - "machine learning" depends on human annotation work
+* Employees bound by strict confidentiality agreements, risk losing jobs and returning to poverty if they speak out
+* Investigation conducted by Svenska Dagbladet and Göteborgs-Posten with Nairobi-based journalist Naipanoi Lepapa
+* Raises questions about data control and privacy in borderless digital world where tech companies outsource sensitive data processing globally
+
+### Meta AI智能眼镜:数据工作者揭露隐私问题
+
+* Meta的Ray-Ban AI眼镜宣传为工作、旅行和翻译的全能助手,承诺用户隐私可控
+* 调查显示,肯尼亚分包商Sama的数据标注员处理高度敏感的用户视频,包括如厕、亲密时刻和性内容
+* 工作人员报告看到银行卡、人们脱衣等私密场景 - 用户似乎不知道他们的录像正被他人查看
+* 超过30名员工受访,描述不适的工作环境,需要查看来自西方家庭的深度私人内容
+* AI革命严重依赖低收入国家的人工劳动 - "机器学习"实际依靠人工标注工作
+* 员工受严格保密协议约束,若泄密将失业并可能重返贫困
+* 调查由瑞典《每日新闻》和《哥德堡邮报》与内罗毕记者Naipanoi Lepapa合作完成
+* 引发对无国界数字世界中数据控制和隐私的质疑,科技公司将敏感数据处理外包至全球各地
+
+**[Read Original / 阅读原文](https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything)**
+
+<!-- [Title-Only] -->
+### Seed of Might Color Correction Process (2023)
+
+* Based on the title, this article likely provides a technical breakdown of the color correction workflow used in "Seed of Might," which appears to be a visual project (possibly animation, film, or game). The PDF format suggests it contains detailed visual examples, before/after comparisons, and possibly technical diagrams showing the color grading pipeline.
+
+* This would be interesting to readers working in digital content creation, particularly those in animation, VFX, or game development who want to understand professional color correction workflows. It may reveal specific techniques, tools, and artistic decisions that went into achieving the final look of the project, offering practical insights for similar productions.
+
+### 《Seed of Might》调色流程解析（2023）
+
+* 根据标题推测，这篇文章可能详细介绍了《Seed of Might》项目中使用的调色工作流程，该项目似乎是一个视觉作品（可能是动画、影片或游戏）。PDF 格式表明文章可能包含详细的视觉示例、前后对比图，以及展示调色管线的技术图表。
+
+* 这对从事数字内容创作的读者很有价值，特别是动画、视效或游戏开发领域的从业者，他们希望了解专业的调色工作流程。文章可能揭示实现项目最终视觉效果所采用的具体技术、工具和艺术决策，为类似制作提供实用的参考经验。
+
+**[Read Original / 阅读原文](https://andrewvanner.github.io/som/SoM_CC_Process_Day.pdf)**
+
+The content you provided appears to be incomplete - it only contains a brief excerpt and post metadata. To provide a proper bilingual summary with meaningful bullet points, I would need the full article content.
+
+Could you please provide the complete article text? The current excerpt only shows:
+- A title
+- A date (February 25, 2026)
+- An incomplete sentence about RAC being saddened
+- Post footer links
+
+Once you share the full content, I'll create a structured bilingual summary following your specified format.
+
+**[Read Original / 阅读原文](https://www.rac.ca/rac-responds-to-the-closure-of-the-weatherradio-service-in-canada/)**
+
+### WiFi DensePose - See Through Walls with WiFi Signals
+
+* Turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring (breathing 6-30 BPM, heart rate 40-120 BPM), and presence detection through walls — no cameras, wearables, or video
+* Privacy-first sensing using Channel State Information (CSI) from WiFi radio waves; self-learning AI that adapts to any room; 810x faster Rust implementation (54K fps); multi-person tracking; disaster response capabilities with START triage; ESP32-S3 mesh support (~$54 for full setup)
+* Trending for breakthrough camera-free sensing technology that works through walls and darkness while avoiding GDPR/HIPAA imaging regulations; combines physics-based signal processing with ML for healthcare, retail, disaster response, and smart building applications at $0-8 per zone vs $200-2000 for camera systems
+
+### WiFi DensePose - 用 WiFi 信号透视墙壁
+
+* 将普通 WiFi 信号转化为实时人体姿态估计、生命体征监测(呼吸 6-30 次/分钟,心率 40-120 次/分钟)和穿墙存在检测 — 无需摄像头、可穿戴设备或视频
+* 隐私优先的传感技术,利用 WiFi 无线电波的信道状态信息(CSI);自学习 AI 可适应任何房间;Rust 重写性能提升 810 倍(54K fps);多人追踪;灾难响应能力含 START 分诊;支持 ESP32-S3 网格(全套约 54 美元)
+* 因突破性的无摄像头传感技术而热门,可穿墙和黑暗环境工作,同时规避 GDPR/HIPAA 影像监管;结合物理信号处理与机器学习,应用于医疗、零售、灾难响应和智能建筑,每区域成本 0-8 美元 vs 摄像头系统 200-2000 美元
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/wifi-densepose)**
+
+### AIRI - Self-Hosted AI Companion Inspired by Neuro-sama
+
+* **What it does**: AIRI is an open-source, self-hosted AI virtual companion (digital waifu/VTuber) that can engage in real-time voice conversations, play games like Minecraft and Factorio, and interact across multiple platforms including Discord and Telegram. Built with TypeScript and modern web technologies (WebGPU, WebAssembly, WebAudio), it runs in browsers, on desktop (macOS/Windows), and even mobile devices via PWA.
+
+* **Key features**: 
+  - Cross-platform support with native GPU acceleration (NVIDIA CUDA, Apple Metal)
+  - Game-playing capabilities (Minecraft, Factorio)
+  - Multi-platform chat integration (Discord, Telegram)
+  - Real-time voice interaction with audio input/output
+  - In-browser database and memory systems
+  - Live2D/VRM avatar support
+  - Plugin system for extensibility
+
+* **Why it's notable**: Unlike closed-source AI VTubers like Neuro-sama, AIRI gives users complete ownership of their AI companion. It's trending with 1,412 stars today because it bridges the gap between simple chatbots and interactive AI streamers, offering an ambitious open-source alternative that combines gaming AI, voice interaction, and virtual character technology. The project leverages cutting-edge web technologies to deliver performance comparable to native applications while maintaining accessibility across devices.
+
+---
+
+### AIRI - 受 Neuro-sama 启发的自托管 AI 伴侣
+
+* **功能介绍**: AIRI 是一个开源的自托管 AI 虚拟伴侣(数字老婆/虚拟主播),能够进行实时语音对话、玩 Minecraft 和 Factorio 等游戏,并在 Discord 和 Telegram 等多个平台上互动。使用 TypeScript 和现代 Web 技术(WebGPU、WebAssembly、WebAudio)构建,可在浏览器、桌面端(macOS/Windows)甚至移动设备上通过 PWA 运行。
+
+* **主要特点**:
+  - 跨平台支持,具备原生 GPU 加速(NVIDIA CUDA、Apple Metal)
+  - 游戏能力(Minecraft、Factorio)
+  - 多平台聊天集成(Discord、Telegram)
+  - 实时语音交互,支持音频输入/输出
+  - 浏览器内数据库和记忆系统
+  - Live2D/VRM 虚拟形象支持
+  - 可扩展的插件系统
+
+* **为何值得关注**: 与 Neuro-sama 等闭源 AI 虚拟主播不同,AIRI 让用户完全拥有自己的 AI 伴侣。今日获得 1,412 星标的原因在于它填补了简单聊天机器人与互动 AI 主播之间的空白,提供了一个雄心勃勃的开源替代方案,结合了游戏 AI、语音交互和虚拟角色技术。该项目利用前沿 Web 技术提供媲美原生应用的性能,同时保持跨设备的可访问性。
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
+
+### Ruflo - Enterprise AI Agent Orchestration Platform for Claude Code
+
+* Production-ready framework that transforms Claude Code into a multi-agent development platform with 60+ specialized AI agents (coder, tester, reviewer, architect, security, DevOps) working in coordinated swarms
+* Self-learning system with RuVector intelligence layer (SONA, Flash Attention, HNSW vector search, LoRA fine-tuning, 9 RL algorithms), fault-tolerant consensus mechanisms (Raft/Byzantine/Gossip), multi-LLM support (Claude/GPT/Gemini/Ollama), native MCP integration, and extensible plugin system with IPFS marketplace
+* Trending with 830 stars today as "GitHub Project of the Day" - represents a major evolution in AI orchestration with Rust-powered WASM kernels, hierarchical/mesh swarm topologies, enterprise-grade security (prompt injection protection, input validation), and workflow learning that gets smarter over time by storing successful patterns
+
+### Ruflo - Claude Code 企业级 AI 智能体编排平台
+
+* 生产就绪的框架，将 Claude Code 转变为多智能体开发平台，提供 60+ 专业 AI 智能体（编码、测试、审查、架构、安全、DevOps）协同工作的集群系统
+* 自学习系统配备 RuVector 智能层（SONA 自优化、Flash Attention、HNSW 向量搜索、LoRA 微调、9 种强化学习算法）、容错共识机制（Raft/拜占庭/Gossip）、多 LLM 支持（Claude/GPT/Gemini/Ollama）、原生 MCP 集成和可扩展插件系统（IPFS 市场）
+* 今日获得 830 星标成为"GitHub 每日项目" - 代表 AI 编排领域的重大进化，采用 Rust 驱动的 WASM 内核、分层/网状集群拓扑、企业级安全防护（提示注入防护、输入验证），通过存储成功模式实现工作流学习并持续优化
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/ruflo)**
+
+### Context+ - Semantic Intelligence MCP Server for Large-Scale Codebases
+
+* What it does: Context+ is an MCP (Model Context Protocol) server that transforms massive codebases into searchable, hierarchical feature graphs using Tree-sitter AST parsing, spectral clustering, and Obsidian-style wikilinks. It provides 11 specialized tools for code discovery, analysis, and safe AI-assisted modifications.
+
+* Key features: Semantic code search using embeddings (not text matching), AST-based structural navigation with 43 language support, blast radius analysis to trace symbol usage, shadow restore points for safe undo without touching git, Obsidian-style feature hubs with `[[wikilinks]]`, realtime embedding cache that refreshes incrementally on file changes, and strict validation before code writes via `propose_commit`.
+
+* Why it's notable: With 1,191 stars, Context+ addresses the critical challenge of AI coding accuracy in large projects. Unlike basic grep or LSP tools, it combines semantic understanding with structural analysis to achieve "99% accuracy" claims. The shadow restore point system and strict validation rules make it safer for AI agents to modify code. Its zero-install setup (npx/bunx) and support for major IDEs (Claude, Cursor, VS Code, Windsurf) make it immediately accessible to developers working with AI coding assistants.
+
+---
+
+### Context+ - 大规模工程的语义智能 MCP 服务器
+
+* 功能介绍: Context+ 是一个 MCP (模型上下文协议) 服务器,通过 Tree-sitter AST 解析、谱聚类和 Obsidian 风格的维基链接,将大型代码库转换为可搜索的分层特性图谱。它提供 11 个专业工具用于代码发现、分析和安全的 AI 辅助修改。
+
+* 主要特点: 基于嵌入向量的语义代码搜索(非文本匹配)、支持 43 种语言的 AST 结构导航、爆炸半径分析追踪符号使用、不影响 git 的影子还原点实现安全撤销、Obsidian 风格的 `[[维基链接]]` 特性中心、文件变更时增量刷新的实时嵌入缓存,以及通过 `propose_commit` 在写入前进行严格验证。
+
+* 为何值得关注: 拥有 1,191 星标的 Context+ 解决了大型项目中 AI 编码准确性的关键挑战。与基础的 grep 或 LSP 工具不同,它结合语义理解和结构分析来实现"99% 准确率"的目标。影子还原点系统和严格验证规则使 AI 代理修改代码更加安全。零安装设置(npx/bunx)和对主流 IDE(Claude、Cursor、VS Code、Windsurf)的支持,让使用 AI 编码助手的开发者可以立即上手。
+
+**[View Repository / 查看仓库](https://github.com/ForLoopCodes/contextplus)**
+
+### 🎬 Cloudflare just slop forked Next.js…
+**Channel:** Fireship
+
+* What the video covers: Cloudflare's controversial decision to fork Next.js, creating their own version of the popular React framework
+* Key topics discussed: The technical and business reasons behind the fork, implications for the Next.js ecosystem, differences between Cloudflare's version and Vercel's original Next.js, and the potential impact on developers
+* Why it's worth watching: This represents a significant shift in the web development landscape - understanding the fork's motivations and consequences is crucial for developers using Next.js or considering Cloudflare's platform. Fireship's signature fast-paced, informative style breaks down complex industry drama into digestible insights
+
+### 🎬 Cloudflare 刚刚"粗暴"分叉了 Next.js…
+**频道:** Fireship
+
+* 视频内容概述: Cloudflare 备受争议地决定分叉 Next.js，创建他们自己版本的流行 React 框架
+* 主要话题: 分叉背后的技术和商业原因、对 Next.js 生态系统的影响、Cloudflare 版本与 Vercel 原版 Next.js 的差异，以及对开发者的潜在影响
+* 为何值得观看: 这代表了 Web 开发领域的重大转变 - 理解分叉的动机和后果对于使用 Next.js 或考虑 Cloudflare 平台的开发者至关重要。Fireship 标志性的快节奏、信息丰富的风格将复杂的行业动态分解为易于理解的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=abbeIUOCzmw)**
+
+### 🎬 Claude Code - Full Tutorial for Beginners
+
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
+* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
+* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
+
+---
+
+### 🎬 Claude Code - 完整新手教程
+
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
+* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
+* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+### 🎬 Python Essentials for AI Agents – Tutorial
+
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** A comprehensive Python course focused on building the technical foundation needed for developing AI agents and autonomous intelligence systems
+* **Key topics discussed:** Essential Python programming concepts, technical stack for AI agents, autonomous intelligence implementation, and practical skills for working with AI agent frameworks
+* **Why it's worth watching:** Perfect for developers looking to transition into AI agent development, this tutorial bridges the gap between general Python knowledge and specialized AI agent programming, offering hands-on experience with the tools and techniques used in modern autonomous systems
+
+---
+
+### 🎬 Python AI 智能体开发基础教程
+
+**频道:** freeCodeCamp.org
+
+* **视频内容概述:** 一门全面的 Python 课程,专注于构建开发 AI 智能体和自主智能系统所需的技术基础
+* **主要话题:** Python 编程核心概念、AI 智能体技术栈、自主智能实现方法,以及使用 AI 智能体框架的实用技能
+* **为何值得观看:** 非常适合希望转型到 AI 智能体开发领域的开发者,本教程在通用 Python 知识和专业 AI 智能体编程之间搭建桥梁,提供现代自主系统中使用的工具和技术的实践经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UsfpzxZNsPo)**
+
+### 🎬 7 Excel Tips You'll Regret Not Knowing! #shorts
+
+**Channel:** なおたろ【パソコン&スマホ便利術】
+
+* What the video covers: A quick compilation of 7 practical Excel tips and tricks that can significantly improve your spreadsheet workflow
+* Key topics discussed: Time-saving Excel techniques, hidden features, and productivity hacks for both beginners and intermediate users
+* Why it's worth watching: Short-form content (#shorts) that delivers actionable Excel knowledge quickly - perfect for learning essential tricks you might be missing out on in your daily work
+
+---
+
+### 🎬 Excel中不知道就亏了的7个便利技巧！#shorts
+
+**频道:** なおたろ【パソコン&スマホ便利術】
+
+* 视频内容概述: 快速展示7个实用的Excel技巧和窍门,能显著提升电子表格工作效率
+* 主要话题: Excel省时技巧、隐藏功能和适合初学者及中级用户的生产力技巧
+* 为何值得观看: 短视频形式(#shorts)快速传递可操作的Excel知识,非常适合学习日常工作中可能错过的关键技巧
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RR-yqL6108c)**
 
