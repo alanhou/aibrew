@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 04, 2026"
 date: 2026-03-04
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -706,4 +706,117 @@ pin: false
 * 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+
+<!-- [Title-Only] -->
+### Motorola GrapheneOS devices will be bootloader unlockable/relockable
+
+* Based on the title, this article likely announces that Motorola devices will officially support GrapheneOS with the ability to unlock and relock the bootloader. This is significant because bootloader relocking after installing a custom ROM is a key security feature that GrapheneOS emphasizes, allowing users to maintain verified boot while running privacy-focused custom firmware.
+* This is interesting to readers because it expands GrapheneOS support beyond Google Pixel devices, offering more hardware choices for privacy-conscious users. The ability to relock the bootloader after installation is crucial for maintaining device security while using alternative operating systems, making this a notable development in the mobile privacy and security space.
+
+### 摩托罗拉设备将支持 GrapheneOS 的 Bootloader 解锁/重新锁定
+
+* 根据标题推测，这篇文章可能宣布摩托罗拉设备将正式支持 GrapheneOS，并具备解锁和重新锁定 bootloader 的能力。这一点意义重大，因为在安装自定义 ROM 后重新锁定 bootloader 是 GrapheneOS 强调的关键安全特性，允许用户在运行注重隐私的定制固件时保持验证启动功能。
+* 这对读者来说值得关注，因为它将 GrapheneOS 的支持范围扩展到了 Google Pixel 设备之外，为注重隐私的用户提供了更多硬件选择。安装后重新锁定 bootloader 的能力对于在使用替代操作系统时保持设备安全至关重要，使这成为移动隐私和安全领域的一个重要进展。
+
+**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116160393783585567)**
+
+### TLS Encrypted Client Hello: Server-Side Processing
+
+* Server receives encrypted_client_hello extension and determines ECH acceptance before negotiating other TLS parameters
+* Two methods for collecting candidate ECHConfig values: matching config_id or trial decryption of all known configs
+* Randomized config_id (used in local discovery mode) requires trial decryption method to prevent tracking
+* Server iterates through candidates, verifying cipher suite compatibility and ECH version matching
+* Decryption uses HPKE with SetupBaseR, using private key and "tls ech" || 0x00 || ECHConfig as info parameter
+* Server may optionally verify ClientHelloOuter server_name matches ECHConfig public_name
+* Successfully decrypted ClientHelloInner must contain well-formed inner extension and not offer TLS 1.2 or below
+* Client-facing server forwards ClientHelloInner to backend server for processing
+* If all decryption attempts fail, server proceeds with ClientHelloOuter and must include retry_configs in EncryptedExtensions
+* HelloRetryRequest handling reuses existing HPKE context without repeating ECHConfig selection
+* Second ClientHelloOuter must maintain same cipher_suite and config_id with empty enc field
+* Decryption failures may indicate GREASE ECH extensions, requiring servers to continue and let clients abort if needed
+* Client-facing servers forwarding ClientHello cannot include their own cookie extension during HelloRetryRequest
+
+### TLS 加密客户端问候:服务器端处理
+
+* 服务器接收 encrypted_client_hello 扩展,在协商其他 TLS 参数前决定是否接受 ECH
+* 收集候选 ECHConfig 值的两种方法:匹配 config_id 或对所有已知配置进行试解密
+* 随机化的 config_id(用于本地发现模式)需要试解密方法以防止跟踪
+* 服务器遍历候选配置,验证密码套件兼容性和 ECH 版本匹配
+* 使用 HPKE 的 SetupBaseR 解密,使用私钥和 "tls ech" || 0x00 || ECHConfig 作为 info 参数
+* 服务器可选择验证 ClientHelloOuter 的 server_name 是否匹配 ECHConfig 的 public_name
+* 成功解密的 ClientHelloInner 必须包含格式正确的内部扩展且不提供 TLS 1.2 或更低版本
+* 面向客户端的服务器将 ClientHelloInner 转发给后端服务器处理
+* 如果所有解密尝试失败,服务器使用 ClientHelloOuter 继续,并必须在 EncryptedExtensions 中包含 retry_configs
+* HelloRetryRequest 处理重用现有 HPKE 上下文,无需重复 ECHConfig 选择
+* 第二个 ClientHelloOuter 必须保持相同的 cipher_suite 和 config_id,enc 字段为空
+* 解密失败可能表示 GREASE ECH 扩展,需要服务器继续连接并让客户端在需要时中止
+* 转发 ClientHello 的面向客户端服务器在 HelloRetryRequest 期间不能包含自己的 cookie 扩展
+
+**[Read Original / 阅读原文](https://www.rfc-editor.org/rfc/rfc9849.html)**
+
+### pg_jitter: Lightweight JIT Compilation for PostgreSQL
+
+* Provides three alternative JIT backends (sljit, AsmJit, MIR) for PostgreSQL 14–18, replacing slow LLVM-based compilation
+* Compilation speed: microseconds vs LLVM's milliseconds (10-1000x faster), making JIT viable for OLTP workloads
+* sljit offers 5-25% performance gains with fastest compilation; AsmJit excels on wide tables (up to 32% faster); MIR provides best portability
+* Zero-config setup with runtime backend switching via `SET pg_jitter.backend` without restart
+* Implements two-tier function optimization: Tier 1 (pass-by-value) uses direct native calls; Tier 2 (pass-by-reference) uses C wrappers
+* Architecture supports ~30 hot-path opcodes with native code generation, delegates remaining to PostgreSQL C functions
+* Memory management tied to PostgreSQL's ResourceOwner system for automatic cleanup
+* Optional precompiled function blobs via LLVM or c2mir pipelines for zero-cost inlining
+* Beta quality: passes all PostgreSQL regression tests but lacks large-scale production verification
+* Recommended `jit_above_cost` setting: 200-2000 (vs default 100,000) for optimal performance
+
+### pg_jitter:PostgreSQL 轻量级 JIT 编译器
+
+* 为 PostgreSQL 14-18 提供三种替代 JIT 后端(sljit、AsmJit、MIR),取代缓慢的 LLVM 编译
+* 编译速度:微秒级 vs LLVM 的毫秒级(快 10-1000 倍),使 JIT 适用于 OLTP 工作负载
+* sljit 提供 5-25% 性能提升且编译最快;AsmJit 在宽表场景表现优异(最高快 32%);MIR 可移植性最佳
+* 零配置设置,通过 `SET pg_jitter.backend` 运行时切换后端无需重启
+* 实现两层函数优化:第一层(按值传递)使用直接原生调用;第二层(按引用传递)使用 C 包装器
+* 架构支持约 30 个热路径操作码的原生代码生成,其余委托给 PostgreSQL C 函数
+* 内存管理绑定到 PostgreSQL 的 ResourceOwner 系统实现自动清理
+* 可选通过 LLVM 或 c2mir 管道预编译函数块实现零成本内联
+* Beta 质量:通过所有 PostgreSQL 回归测试但缺乏大规模生产验证
+* 推荐 `jit_above_cost` 设置:200-2000(vs 默认 100,000)以获得最佳性能
+
+**[Read Original / 阅读原文](https://github.com/vladich/pg_jitter)**
+
+### 🎬 How To Stop Authoritarianism With AI - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth conversation with Dario Amodei (CEO of Anthropic) exploring how artificial intelligence could be leveraged as a tool to counter authoritarian regimes and protect democratic values
+* Key topics discussed: The relationship between AI development and political systems, potential mechanisms for using AI to promote transparency and accountability, risks of AI being weaponized by authoritarian states, and the role of AI companies in shaping geopolitical power dynamics
+* Why it's worth watching: Offers a thought-provoking perspective from one of AI's leading figures on the intersection of cutting-edge technology and global governance, addressing critical questions about how AI will shape the future of freedom and democracy
+
+---
+
+### 🎬 如何用人工智能阻止威权主义 - Dario Amodei
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Dario Amodei(Anthropic 首席执行官)的深度对话,探讨如何将人工智能作为对抗威权政权和保护民主价值观的工具
+* 主要话题: AI 发展与政治体制的关系、利用 AI 促进透明度和问责制的潜在机制、AI 被威权国家武器化的风险,以及 AI 公司在塑造地缘政治力量格局中的作用
+* 为何值得观看: 从 AI 领域领军人物的视角,深入探讨尖端技术与全球治理的交叉点,解答 AI 将如何塑造自由与民主未来的关键问题
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OpW40RyrXwU)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
 
