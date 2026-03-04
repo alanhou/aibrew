@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 04, 2026"
 date: 2026-03-04
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -698,14 +698,34 @@ pin: false
 
 ---
 
-### 🎬 Claude 编程技能深度解析(从入门到精通)
-**频道:** Nate Herk | AI Automation
+### 🎬 如何用人工智能阻止威权主义 - Dario Amodei
+**频道:** Dwarkesh Patel
 
-* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
-* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
-* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
+* 视频内容概述: 与 Dario Amodei(Anthropic 首席执行官)的深度对话,探讨如何将人工智能作为对抗威权政权和保护民主价值观的工具
+* 主要话题: AI 发展与政治体制的关系、利用 AI 促进透明度和问责制的潜在机制、AI 被威权国家武器化的风险,以及 AI 公司在塑造地缘政治力量格局中的作用
+* 为何值得观看: 从 AI 领域领军人物的视角,深入探讨尖端技术与全球治理的交叉点,解答 AI 将如何塑造自由与民主未来的关键问题
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OpW40RyrXwU)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
 
 <!-- [Title-Only] -->
 ### Motorola GrapheneOS devices will be bootloader unlockable/relockable
@@ -716,7 +736,7 @@ pin: false
 ### 摩托罗拉设备将支持 GrapheneOS 的 Bootloader 解锁/重新锁定
 
 * 根据标题推测，这篇文章可能宣布摩托罗拉设备将正式支持 GrapheneOS，并具备解锁和重新锁定 bootloader 的能力。这一点意义重大，因为在安装自定义 ROM 后重新锁定 bootloader 是 GrapheneOS 强调的关键安全特性，允许用户在运行注重隐私的定制固件时保持验证启动功能。
-* 这对读者来说值得关注，因为它将 GrapheneOS 的支持范围扩展到了 Google Pixel 设备之外，为注重隐私的用户提供了更多硬件选择。安装后重新锁定 bootloader 的能力对于在使用替代操作系统时保持设备安全至关重要，使这成为移动隐私和安全领域的一个重要进展。
+* 这对读者来说值得关注，因为它将 GrapheneOS 的支持范围扩展到了 Google Pixel 设备之外，为注重隐私的用户提供了更多硬件选择。安装后重新锁定 bootloader 的能力对于在使用替代操作系统时维护设备安全至关重要，使这成为移动隐私和安全领域的一个重要进展。
 
 **[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116160393783585567)**
 
@@ -754,69 +774,154 @@ pin: false
 
 **[Read Original / 阅读原文](https://www.rfc-editor.org/rfc/rfc9849.html)**
 
-### pg_jitter: Lightweight JIT Compilation for PostgreSQL
+<!-- [Title-Only] -->
+### Agentic Engineering Patterns
 
-* Provides three alternative JIT backends (sljit, AsmJit, MIR) for PostgreSQL 14–18, replacing slow LLVM-based compilation
-* Compilation speed: microseconds vs LLVM's milliseconds (10-1000x faster), making JIT viable for OLTP workloads
-* sljit offers 5-25% performance gains with fastest compilation; AsmJit excels on wide tables (up to 32% faster); MIR provides best portability
-* Zero-config setup with runtime backend switching via `SET pg_jitter.backend` without restart
-* Implements two-tier function optimization: Tier 1 (pass-by-value) uses direct native calls; Tier 2 (pass-by-reference) uses C wrappers
-* Architecture supports ~30 hot-path opcodes with native code generation, delegates remaining to PostgreSQL C functions
-* Memory management tied to PostgreSQL's ResourceOwner system for automatic cleanup
-* Optional precompiled function blobs via LLVM or c2mir pipelines for zero-cost inlining
-* Beta quality: passes all PostgreSQL regression tests but lacks large-scale production verification
-* Recommended `jit_above_cost` setting: 200-2000 (vs default 100,000) for optimal performance
+* Based on the title, this article likely explores design patterns and best practices for building AI agents - autonomous systems that can perceive their environment, make decisions, and take actions to achieve goals
+* It probably covers architectural approaches, common patterns like ReAct (Reasoning + Acting), tool use, memory management, and how to structure agent workflows effectively
+* Why it might be interesting: As AI agents become more prevalent in software development and automation, understanding proven engineering patterns helps developers build more reliable, maintainable, and effective agentic systems. The author (Simon Willison) is known for practical, hands-on technical content in the AI/ML space
 
-### pg_jitter:PostgreSQL 轻量级 JIT 编译器
+### 智能体工程模式
 
-* 为 PostgreSQL 14-18 提供三种替代 JIT 后端(sljit、AsmJit、MIR),取代缓慢的 LLVM 编译
-* 编译速度:微秒级 vs LLVM 的毫秒级(快 10-1000 倍),使 JIT 适用于 OLTP 工作负载
-* sljit 提供 5-25% 性能提升且编译最快;AsmJit 在宽表场景表现优异(最高快 32%);MIR 可移植性最佳
-* 零配置设置,通过 `SET pg_jitter.backend` 运行时切换后端无需重启
-* 实现两层函数优化:第一层(按值传递)使用直接原生调用;第二层(按引用传递)使用 C 包装器
-* 架构支持约 30 个热路径操作码的原生代码生成,其余委托给 PostgreSQL C 函数
-* 内存管理绑定到 PostgreSQL 的 ResourceOwner 系统实现自动清理
-* 可选通过 LLVM 或 c2mir 管道预编译函数块实现零成本内联
-* Beta 质量:通过所有 PostgreSQL 回归测试但缺乏大规模生产验证
-* 推荐 `jit_above_cost` 设置:200-2000(vs 默认 100,000)以获得最佳性能
+* 根据标题推测，这篇文章可能探讨构建 AI 智能体的设计模式和最佳实践 - 即能够感知环境、做出决策并采取行动以实现目标的自主系统
+* 文章可能涵盖架构方法、常见模式（如 ReAct - 推理+行动）、工具使用、内存管理，以及如何有效构建智能体工作流
+* 为何值得关注：随着 AI 智能体在软件开发和自动化中越来越普遍，了解经过验证的工程模式有助于开发者构建更可靠、可维护和高效的智能体系统。作者（Simon Willison）以在 AI/ML 领域提供实用的技术内容而闻名
 
-**[Read Original / 阅读原文](https://github.com/vladich/pg_jitter)**
+**[Read Original / 阅读原文](https://simonwillison.net/guides/agentic-engineering-patterns/)**
 
-### 🎬 How To Stop Authoritarianism With AI - Dario Amodei
-**Channel:** Dwarkesh Patel
+### Shannon - Fully Autonomous AI Penetration Testing Framework
 
-* What the video covers: An in-depth conversation with Dario Amodei (CEO of Anthropic) exploring how artificial intelligence could be leveraged as a tool to counter authoritarian regimes and protect democratic values
-* Key topics discussed: The relationship between AI development and political systems, potential mechanisms for using AI to promote transparency and accountability, risks of AI being weaponized by authoritarian states, and the role of AI companies in shaping geopolitical power dynamics
-* Why it's worth watching: Offers a thought-provoking perspective from one of AI's leading figures on the intersection of cutting-edge technology and global governance, addressing critical questions about how AI will shape the future of freedom and democracy
+* An AI-powered pentester that autonomously discovers and executes real exploits in web applications, achieving 96.15% success on the XBOW benchmark
+* Performs white-box security testing by analyzing source code and executing live browser-based attacks (injection, XSS, SSRF, auth bypass) with zero human intervention, delivering pentester-grade reports with reproducible proof-of-concepts
+* Addresses the security gap created by rapid development cycles—while teams ship code daily using AI tools, traditional pentests happen once yearly, leaving 364 days of potential vulnerabilities undetected
 
----
+### Shannon - 全自动 AI 渗透测试框架
 
-### 🎬 如何用人工智能阻止威权主义 - Dario Amodei
-**频道:** Dwarkesh Patel
+* 一款由 AI 驱动的渗透测试工具,能够自主发现并执行 Web 应用中的真实漏洞利用,在 XBOW 基准测试中达到 96.15% 的成功率
+* 通过分析源代码并执行基于浏览器的实时攻击(注入、XSS、SSRF、身份验证绕过等)进行白盒安全测试,全程零人工干预,生成包含可复现概念验证的专业级渗透测试报告
+* 解决快速开发周期带来的安全缺口——当团队使用 AI 工具每天持续交付代码时,传统渗透测试每年仅进行一次,导致 364 天的潜在漏洞无法被发现
 
-* 视频内容概述: 与 Dario Amodei(Anthropic 首席执行官)的深度对话,探讨如何将人工智能作为对抗威权政权和保护民主价值观的工具
-* 主要话题: AI 发展与政治体制的关系、利用 AI 促进透明度和问责制的潜在机制、AI 被威权国家武器化的风险,以及 AI 公司在塑造地缘政治力量格局中的作用
-* 为何值得观看: 从 AI 领域领军人物的视角,深入探讨尖端技术与全球治理的交叉点,解答 AI 将如何塑造自由与民主未来的关键问题
+**[View Repository / 查看仓库](https://github.com/KeygraphHQ/shannon)**
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OpW40RyrXwU)**
+### Trivy - Comprehensive Security Scanner for Containers, Kubernetes, and Cloud Infrastructure
 
-### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+* **What it does**: Trivy is an all-in-one security scanner that detects vulnerabilities, misconfigurations, secrets, and generates SBOMs (Software Bill of Materials) across multiple targets including container images, filesystems, Git repositories, VM images, and Kubernetes clusters.
 
-**Channel:** CodeWithHarry
+* **Key features**: 
+  - Scans for known CVEs, IaC misconfigurations, exposed secrets, and software licenses
+  - Supports multiple targets: containers, Kubernetes, code repos, cloud environments, and VMs
+  - Easy installation via Homebrew, Docker, or binary downloads
+  - Rich ecosystem with GitHub Actions, Kubernetes operator, and VS Code plugin integrations
+  - Written in Go with extensive language and platform support
 
-* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
-* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
-* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+* **Why it's notable**: Gaining 164 stars today, Trivy stands out as a versatile, production-ready security tool from Aqua Security. Its comprehensive scanning capabilities combined with easy integration into CI/CD pipelines make it essential for DevSecOps workflows. The tool's ability to scan everything from container images to entire Kubernetes clusters in a single CLI makes it a go-to solution for modern cloud-native security.
 
 ---
 
-### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+### Trivy - 容器、Kubernetes 和云基础设施的综合安全扫描器
 
-**频道:** CodeWithHarry
+* **功能介绍**: Trivy 是一款一体化安全扫描工具,可在容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes 集群等多个目标中检测漏洞、错误配置、敏感信息,并生成软件物料清单(SBOM)。
 
-* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
-* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
-* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+* **主要特点**:
+  - 扫描已知 CVE 漏洞、基础设施即代码(IaC)错误配置、暴露的密钥和软件许可证
+  - 支持多种扫描目标:容器、Kubernetes、代码仓库、云环境和虚拟机
+  - 通过 Homebrew、Docker 或二进制文件轻松安装
+  - 丰富的生态系统集成,包括 GitHub Actions、Kubernetes operator 和 VS Code 插件
+  - 使用 Go 语言编写,支持广泛的编程语言和平台
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
+* **为何值得关注**: Trivy 今日获得 164 星标,作为 Aqua Security 推出的多功能生产级安全工具表现突出。其全面的扫描能力结合 CI/CD 流水线的便捷集成,使其成为 DevSecOps 工作流程的必备工具。该工具能够通过单一 CLI 扫描从容器镜像到整个 Kubernetes 集群的所有内容,是现代云原生安全的首选解决方案。
+
+**[View Repository / 查看仓库](https://github.com/aquasecurity/trivy)**
+
+### 🎬 Design has evolved into two paths
+**Channel:** Lenny's Podcast
+
+* The video explores how the design profession has diverged into two distinct career trajectories in the modern tech landscape
+* Key topics include the impact of AI on design work, the future of design roles, and how designers can position themselves strategically
+* Worth watching for designers, product managers, and anyone interested in understanding how AI is reshaping creative and strategic work in tech companies
+
+### 🎬 设计已演变为两条路径
+**频道:** Lenny's Podcast
+
+* 视频探讨了设计职业如何在现代科技领域分化为两条截然不同的职业发展路径
+* 主要话题包括AI对设计工作的影响、设计角色的未来走向,以及设计师如何进行战略性职业定位
+* 值得设计师、产品经理以及所有对AI如何重塑科技公司创意和战略工作感兴趣的人观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qy5kf0HaDu4)**
+
+### 🎬 NVIDIA-Certified Associate AI Infrastructure and Operations (NCA AIIO) Free Study Course
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive free study course designed to prepare learners for the NVIDIA-Certified Associate AI Infrastructure and Operations (NCA-AIIO) certification exam
+* Key topics discussed: Foundational concepts of AI computing infrastructure, operations management for AI systems, NVIDIA's AI technology stack, hardware and software components essential for AI deployments, and best practices for maintaining AI infrastructure
+* Why it's worth watching: This is an entry-level certification that opens doors to the rapidly growing AI infrastructure field. The course provides free, structured learning from freeCodeCamp.org, making professional AI certification accessible to anyone interested in building a career in AI operations and infrastructure management
+
+---
+
+### 🎬 NVIDIA 认证助理 AI 基础设施与运维 (NCA AIIO) 免费学习课程
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 一门全面的免费学习课程,旨在帮助学习者准备 NVIDIA 认证助理 AI 基础设施与运维 (NCA-AIIO) 认证考试
+* 主要话题: AI 计算基础设施的基础概念、AI 系统的运维管理、NVIDIA AI 技术栈、AI 部署所需的硬件和软件组件,以及维护 AI 基础设施的最佳实践
+* 为何值得观看: 这是一个入门级认证,为快速增长的 AI 基础设施领域打开职业大门。该课程由 freeCodeCamp.org 提供免费、结构化的学习内容,让任何对 AI 运维和基础设施管理职业感兴趣的人都能获得专业的 AI 认证
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0WjfKQdfeMU)**
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY FULL COURSE 6HRS: Vibe Coding
+
+**Channel:** Nick Saraev
+
+* What the video covers: A comprehensive 6-hour course on building applications using Gemini 3.1 AI and the Antigravity framework, focusing on a "vibe coding" approach that emphasizes rapid development and AI-assisted programming
+* Key topics discussed: Gemini 3.1 API integration, Antigravity framework fundamentals, AI-powered development workflows, practical project building, and modern full-stack development techniques with AI assistance
+* Why it's worth watching: This extensive tutorial offers hands-on experience with cutting-edge AI development tools, perfect for developers wanting to leverage Gemini 3.1's capabilities and learn efficient AI-assisted coding patterns. The course includes all necessary files and provides a complete learning path from basics to deployment
+
+---
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY 完整课程 6小时:氛围编程
+
+**频道:** Nick Saraev
+
+* 视频内容概述: 一个全面的6小时课程,教授如何使用 Gemini 3.1 AI 和 Antigravity 框架构建应用程序,重点介绍强调快速开发和 AI 辅助编程的"氛围编程"方法
+* 主要话题: Gemini 3.1 API 集成、Antigravity 框架基础、AI 驱动的开发工作流、实战项目构建,以及借助 AI 辅助的现代全栈开发技术
+* 为何值得观看: 这个深度教程提供了使用前沿 AI 开发工具的实践经验,非常适合想要利用 Gemini 3.1 功能并学习高效 AI 辅助编码模式的开发者。课程包含所有必需文件,并提供从基础到部署的完整学习路径
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gcuR_-rzlDw)**
+
+### 🎬 Claude Code Skills Are Broken (Beginner to Pro)
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: A comprehensive guide exploring Claude's coding capabilities, from basic usage to advanced techniques, highlighting both strengths and limitations
+* Key topics discussed: Practical demonstrations of Claude's code generation, debugging workflows, common pitfalls to avoid, and strategies to maximize AI-assisted development productivity
+* Why it's worth watching: Essential for developers wanting to leverage Claude effectively in their workflow - shows real-world examples of what works, what doesn't, and how to bridge the gap between beginner and professional-level AI coding assistance
+
+---
+
+### 🎬 Claude 编程技能深度解析(从入门到精通)
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
+* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
+* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+
+### 🎬 Cursor vs Codex vs Claude vs Zed vs Anti-Gravity (I Tested Them All)
+**Channel:** Your Average Tech Bro
+
+* What the video covers: A comprehensive hands-on comparison of five major AI coding assistants - Cursor, Codex, Claude, Zed, and Anti-Gravity - testing their real-world performance across various coding tasks
+* Key topics discussed: Feature comparison, code generation quality, speed and responsiveness, integration capabilities, pricing models, and practical use cases for each tool
+* Why it's worth watching: Provides unbiased, practical insights from actual testing to help developers choose the right AI coding assistant for their workflow, potentially saving time and money on trial-and-error
+
+---
+
+### 🎬 Cursor vs Codex vs Claude vs Zed vs Anti-Gravity (我全部测试了)
+**频道:** Your Average Tech Bro
+
+* 视频内容概述: 对五款主流 AI 编程助手(Cursor、Codex、Claude、Zed 和 Anti-Gravity)进行全面实测对比,评估它们在实际编码任务中的表现
+* 主要话题: 功能对比、代码生成质量、响应速度、集成能力、定价模式,以及每个工具的实际应用场景
+* 为何值得观看: 提供基于实际测试的客观见解,帮助开发者选择最适合自己工作流程的 AI 编程助手,避免试错浪费时间和金钱
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pJylXFAC87A)**
 
