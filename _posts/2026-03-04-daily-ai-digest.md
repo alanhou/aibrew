@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 04, 2026"
 date: 2026-03-04
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -520,4 +520,112 @@ pin: false
 * 为何值得观看: 为硬件项目从原型到量产提供了宝贵经验,展示了高效测试多块电路板的实际解决方案——对于想要超越单件制作的创客和硬件创业者来说是必备知识
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+
+### Gary Marcus AI Claims Dataset: Evidence-Based Analysis of 2,218 Predictions
+
+* Comprehensive dataset analyzing 474 Substack posts by AI skeptic Gary Marcus from May 2022 to March 2026
+* Overall accuracy: 59.9% supported, 33.7% mixed, 6.4% contradicted by evidence
+* Strongest performance on technical claims: LLM security vulnerabilities (100% supported), Sora video reliability (90% supported), production agents (88% supported)
+* Weakest performance on market predictions: GenAI bubble claims (27% contradicted), escalating from "AI winter" warnings to "greatest capital destruction" predictions that haven't materialized
+* Built using dual LLM pipelines (Claude Opus 4.6 and ChatGPT Codex) with reconciliation layer for cross-validation
+* Dataset includes 2,218 individual claims organized into 54 clusters with granular scoring and evidence mapping
+* Key files: methodology guide, hybrid reconciliation CSV, claims JSONL with verbatim quotes, and canonical cluster statistics
+* Important caveat: All verdicts are LLM-scored against March 2026 evidence, not human-verified
+
+### Gary Marcus AI 预测数据集:2,218 条声明的实证分析
+
+* 全面分析 AI 怀疑论者 Gary Marcus 从 2022 年 5 月至 2026 年 3 月在 Substack 发表的 474 篇文章
+* 整体准确率:59.9% 得到支持,33.7% 结果混合,6.4% 被证据反驳
+* 技术性声明表现最佳:LLM 安全漏洞(100% 支持)、Sora 视频可靠性(90% 支持)、生产环境 AI 代理(88% 支持)
+* 市场预测表现最差:GenAI 泡沫论(27% 被反驳),从"AI 寒冬"警告升级到"史上最大资本毁灭"预测均未兑现
+* 采用双 LLM 管道构建(Claude Opus 4.6 和 ChatGPT Codex),通过协调层进行交叉验证
+* 数据集包含 2,218 条独立声明,组织为 54 个集群,配有细粒度评分和证据映射
+* 核心文件:方法论指南、混合协调 CSV、带原文引用的声明 JSONL、集群统计规范表
+* 重要说明:所有判定均由 LLM 基于 2026 年 3 月证据评分,非人工验证
+
+**[Read Original / 阅读原文](https://github.com/davegoldblatt/marcus-claims-dataset)**
+
+### Apple Unveils MacBook Pro with M5 Pro and M5 Max: Revolutionary Performance and AI Capabilities
+
+* Apple announces new 14-inch and 16-inch MacBook Pro models powered by M5 Pro and M5 Max chips, featuring breakthrough AI performance up to 4x faster than M4 generation and 8x faster than M1 models
+* M5 Pro and M5 Max utilize new Fusion Architecture with up to 18-core CPU (6 super cores + 12 performance cores), delivering 30% faster performance and world's fastest CPU core
+* GPU features Neural Accelerators in each core, enabling up to 4x faster LLM prompt processing and 8x faster AI image generation compared to previous generations
+* Storage upgrades include 2x faster SSD speeds (up to 14.5GB/s), 1TB starting storage for M5 Pro models, and 2TB for M5 Max models
+* M5 Pro supports up to 64GB unified memory (307GB/s bandwidth), while M5 Max supports up to 128GB (614GB/s bandwidth)
+* New Apple N1 chip enables Wi-Fi 7 and Bluetooth 6 connectivity with improved performance and reliability
+* Battery life reaches up to 24 hours, with 50% fast-charge capability in 30 minutes using 96W+ USB-C adapter
+* Features include Liquid Retina XDR display with nano-texture option, three Thunderbolt 5 ports, 12MP Center Stage camera, studio-quality mics, and six-speaker sound system
+* macOS Tahoe brings enhanced Spotlight search, improved Apple Intelligence features, Live Translation across Messages/FaceTime/Phone, and new Liquid Glass design
+* Environmental commitment: 45% recycled content, 100% recycled aluminum enclosure, 100% recycled cobalt battery, 50% renewable electricity in manufacturing
+* Pricing starts at $2,199 (14-inch M5 Pro), $2,699 (16-inch M5 Pro), $3,599 (14-inch M5 Max); pre-orders begin March 4, availability March 11
+
+### Apple 推出搭载全新 M5 Pro 和 M5 Max 的 MacBook Pro:突破性性能与 AI 能力
+
+* Apple 发布搭载 M5 Pro 和 M5 Max 芯片的新款 14 英寸和 16 英寸 MacBook Pro,AI 性能较 M4 代提升最高 4 倍,较 M1 机型提升最高 8 倍
+* M5 Pro 和 M5 Max 采用全新 Fusion Architecture 架构,配备最高 18 核 CPU(6 个超级核心 + 12 个性能核心),性能提升 30%,拥有全球最快 CPU 核心
+* GPU 每个核心内置神经加速器,LLM 提示处理速度提升最高 4 倍,AI 图像生成速度较前代提升最高 8 倍
+* 存储升级包括 2 倍更快的 SSD 速度(最高 14.5GB/s),M5 Pro 机型起始存储容量 1TB,M5 Max 机型 2TB
+* M5 Pro 支持最高 64GB 统一内存(307GB/s 带宽),M5 Max 支持最高 128GB(614GB/s 带宽)
+* 全新 Apple N1 芯片支持 Wi-Fi 7 和蓝牙 6,提供更优性能和可靠性
+* 电池续航最长达 24 小时,使用 96W 及以上 USB-C 适配器可在 30 分钟内快充至 50%
+* 配备 Liquid Retina XDR 显示屏(可选纳米纹理)、三个雷雳 5 端口、1200 万像素人物居中摄像头、录音室级麦克风和六扬声器音响系统
+* macOS Tahoe 带来增强的 Spotlight 搜索、改进的 Apple Intelligence 功能、跨信息/FaceTime/电话的实时翻译,以及全新 Liquid Glass 设计
+* 环保承诺:45% 再生材料、100% 再生铝金属外壳、100% 再生钴电池、制造过程使用 50% 可再生电力
+* 起售价 $2,199(14 英寸 M5 Pro)、$2,699(16 英寸 M5 Pro)、$3,599(14 英寸 M5 Max);3 月 4 日开启预订,3 月 11 日正式发售
+
+**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/)**
+
+### Lenovo ThinkPad T-Series Achieves Perfect Repairability Score
+
+* Lenovo's new T14 Gen 7 and T16 Gen 5 ThinkPads earn a historic 10/10 repairability rating from iFixit, the first time the T-series has achieved this top score
+* This represents repairability entering the mainstream business laptop market, not just niche products for enthusiasts
+* Two years of collaboration between iFixit and Lenovo led to continuous improvements, building on the previous generation's 9/10 score
+* Key design changes include: easily swappable battery (nearly tool-free), simple keyboard replacement, modular LPCAMM2 memory, standard M.2 SSD storage, streamlined display repairs, modular cooling system with replaceable fan, and fully modular Thunderbolt ports
+* Lenovo integrated repairability considerations from day one of the design process, bringing together design, engineering, service, quality, and sustainability teams early
+* The challenge was balancing repairability with performance, reliability, thermal efficiency, and form factor requirements
+* Official repair documentation and replacement parts pipeline will be available through Lenovo's support site
+
+### 联想 ThinkPad T 系列获得完美可维修性评分
+
+* 联想新款 T14 Gen 7 和 T16 Gen 5 ThinkPad 获得 iFixit 史无前例的 10/10 可维修性评分,这是 T 系列首次获得最高评分
+* 这标志着可维修性进入主流商务笔记本电脑市场,而不仅仅是面向爱好者的小众产品
+* iFixit 与联想经过两年合作持续改进,在上一代 9/10 评分的基础上更进一步
+* 主要设计改进包括:易于更换的电池(几乎无需工具)、简单的键盘更换程序、模块化 LPCAMM2 内存、标准 M.2 SSD 存储、简化的显示屏维修、带可更换风扇的模块化散热系统以及完全模块化的雷雳接口
+* 联想从设计流程的第一天就整合了可维修性考虑,将设计、工程、服务、质量和可持续性团队提前聚集在一起
+* 挑战在于平衡可维修性与性能、可靠性、散热效率和外形尺寸要求
+* 官方维修文档和更换零件供应渠道将通过联想支持网站提供
+
+**[Read Original / 阅读原文](https://www.ifixit.com/News/115827/new-thinkpads-score-perfect-10-repairability)**
+
+### wechat-decrypt - WeChat 4.0 Database Decryption Tool
+
+* Extracts encryption keys from WeChat's running process memory and decrypts SQLCipher 4 encrypted local databases (messages, contacts, media). Supports real-time message monitoring via Web UI with ~100ms latency, image decryption (XOR/V1/V2 formats), and Claude AI integration through MCP Server
+* Memory scanning for AES-256-CBC keys, automatic config detection, Web UI with SSE push, rich media rendering (emojis, link cards, files, mini-programs), image inline preview, thread-safe WAL handling, and AI query interface for chat history/contacts/search
+* Notable for reverse-engineering WeChat 4.0's SQLCipher implementation (PBKDF2-HMAC-SHA512 with 256k iterations), handling three generations of image encryption, and providing a complete local data access solution with minimal latency monitoring
+
+### wechat-decrypt - 微信 4.0 数据库解密工具
+
+* 从微信运行进程内存中提取加密密钥,解密 SQLCipher 4 加密的本地数据库(消息、联系人、媒体)。支持通过 Web UI 实时监听消息(延迟约 100ms),图片解密(XOR/V1/V2 格式),以及通过 MCP Server 集成 Claude AI
+* 内存扫描提取 AES-256-CBC 密钥、自动配置检测、Web UI 实时推送、富媒体渲染(表情包、链接卡片、文件、小程序)、图片内联预览、线程安全 WAL 处理、AI 查询接口(聊天记录/联系人/搜索)
+* 逆向工程微信 4.0 的 SQLCipher 实现(PBKDF2-HMAC-SHA512 25.6 万次迭代)、处理三代图片加密格式、提供完整的本地数据访问方案和低延迟监控,技术深度突出
+
+**[View Repository / 查看仓库](https://github.com/ylytdeng/wechat-decrypt)**
+
+### 🎬 How To Stop Authoritarianism With AI - Dario Amodei
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth conversation with Dario Amodei (CEO of Anthropic) exploring how artificial intelligence could be leveraged as a tool to counter authoritarian regimes and protect democratic values
+* Key topics discussed: The relationship between AI development and political systems, potential mechanisms for using AI to promote transparency and accountability, risks of AI being weaponized by authoritarian states, and the role of AI companies in shaping geopolitical power dynamics
+* Why it's worth watching: Offers a thought-provoking perspective from one of AI's leading figures on the intersection of cutting-edge technology and global governance, addressing critical questions about how AI will shape the future of freedom and democracy
+
+---
+
+### 🎬 如何用人工智能阻止威权主义 - Dario Amodei
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与 Dario Amodei(Anthropic 首席执行官)的深度对话,探讨如何将人工智能作为对抗威权政权和保护民主价值观的工具
+* 主要话题: AI 发展与政治体制的关系、利用 AI 促进透明度和问责制的潜在机制、AI 被威权国家武器化的风险,以及 AI 公司在塑造地缘政治力量格局中的作用
+* 为何值得观看: 从 AI 领域领军人物的视角,深入探讨尖端技术与全球治理的交叉点,解答 AI 将如何塑造自由与民主未来的关键问题
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OpW40RyrXwU)**
 
