@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 05, 2026"
 date: 2026-03-05
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -313,4 +313,205 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+<!-- [Title-Only] -->
+### An Interactive Map of FLock Cams
+
+* Based on the title, this article likely presents an interactive geographical visualization of "FLock Cams" - which appears to be a network or collection of cameras (possibly surveillance, traffic, or monitoring cameras) distributed across a region. The URL coordinates suggest coverage of the United States.
+* This might be interesting to readers concerned about surveillance infrastructure, privacy advocates tracking the proliferation of monitoring systems, researchers studying urban infrastructure, or those interested in open-source intelligence (OSINT) and public data visualization. The "deflock" domain name suggests this could be related to tracking or documenting surveillance technology deployment.
+
+### FLock Cams 互动地图
+
+* 根据标题推测，这篇文章可能展示了一个"FLock Cams"的交互式地理可视化地图——这似乎是一个分布在某个区域的摄像头网络或集合（可能是监控、交通或监测摄像头）。URL中的坐标显示可能覆盖美国地区。
+* 这对关注监控基础设施的读者、追踪监控系统扩散的隐私倡导者、研究城市基础设施的研究人员，或对开源情报（OSINT）和公共数据可视化感兴趣的人来说可能很有价值。"deflock"域名暗示这可能与追踪或记录监控技术部署有关。
+
+**[Read Original / 阅读原文](https://deflock.org/map#map=5/37.125286/-96.284180)**
+
+### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
+
+* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
+* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
+* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
+* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
+* Up to 16 hours of battery life on a single charge
+* Weighs just 2.7 pounds with fanless, silent operation
+* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
+* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
+* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
+* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
+* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
+* Pre-orders start March 4, 2026; availability begins March 11, 2026
+
+### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
+
+* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
+* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
+* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
+* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
+* 单次充电续航长达 16 小时
+* 重量仅 2.7 磅,无风扇静音运行
+* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
+* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
+* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
+* 运行 macOS Tahoe,集成 Apple Intelligence 功能,与 iPhone 无缝协作
+* 采用 60% 回收材料 - 苹果产品中比例最高,碳排放最低的 MacBook
+* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
+
+**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
+
+### Google AI Product Allegedly Contributed to Son's Mental Health Crisis
+
+* A father claims Google's AI product played a role in his son's delusional spiral
+* The case raises concerns about AI's potential psychological impact on vulnerable users
+* Details about the specific AI product and circumstances remain limited in the provided content
+
+### 父亲声称谷歌AI产品加剧儿子妄想症状
+
+* 一位父亲指控谷歌的AI产品导致其儿子出现妄想性精神问题
+* 该案例引发了对AI产品可能对脆弱用户造成心理影响的担忧
+* 关于具体涉及的AI产品及事件详情在提供的内容中信息有限
+
+---
+
+**Note:** The HTML content provided appears to be about a different story (Meta's AI glasses privacy concerns), not matching the title about Google's AI and mental health issues. The summary above is based on the title you provided.
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/czx44p99457o)**
+
+### Claude Scientific Skills - Transform Your AI Agent into a Research Assistant
+
+* A comprehensive collection of 170+ ready-to-use scientific and research skills for AI agents following the open Agent Skills standard
+* Covers bioinformatics, genomics, cheminformatics, drug discovery, proteomics, clinical research, medical imaging, machine learning, materials science, physics, engineering, data analysis, and scientific communication
+* Provides access to 250+ scientific databases (PubMed, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov, SEC EDGAR, Alpha Vantage) and 60+ optimized Python packages (RDKit, Scanpy, PyTorch Lightning, BioPython, Qiskit, OpenMM, scVelo, TimesFM)
+* Works seamlessly with Cursor, Claude Code, Codex, and other Agent Skills-compatible tools through simple copy-paste installation
+* Each skill includes comprehensive documentation, practical code examples, use cases, and best practices for executing complex multi-step scientific workflows
+* Notable for gaining 926 stars today, indicating strong community interest in AI-powered scientific research tools that accelerate research workflows and eliminate API integration overhead
+
+### Claude Scientific Skills - 将 AI 代理转变为研究助手
+
+* 为遵循开放 Agent Skills 标准的 AI 代理提供 170 多个即用型科学研究技能的综合集合
+* 涵盖生物信息学、基因组学、化学信息学、药物发现、蛋白质组学、临床研究、医学影像、机器学习、材料科学、物理学、工程学、数据分析和科学传播
+* 提供对 250 多个科学数据库(PubMed、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov、SEC EDGAR、Alpha Vantage)和 60 多个优化 Python 包(RDKit、Scanpy、PyTorch Lightning、BioPython、Qiskit、OpenMM、scVelo、TimesFM)的访问
+* 通过简单的复制粘贴安装,与 Cursor、Claude Code、Codex 和其他兼容 Agent Skills 的工具无缝协作
+* 每个技能都包含全面的文档、实用代码示例、使用案例和最佳实践,用于执行复杂的多步骤科学工作流程
+* 今日获得 926 个星标,表明社区对 AI 驱动的科学研究工具有强烈兴趣,这些工具可加速研究工作流程并消除 API 集成开销
+
+**[View Repository / 查看仓库](https://github.com/K-Dense-AI/claude-scientific-skills)**
+
+### Codebuff - Open-Source Multi-Agent AI Coding Assistant
+
+* **What it does**: Codebuff is a terminal-based AI coding assistant that edits codebases through natural language instructions. Instead of relying on a single model, it orchestrates specialized agents (File Picker, Planner, Editor, Reviewer) that collaborate to understand project architecture and make precise code changes across multiple files.
+
+* **Key features**: 
+  - Multi-agent architecture for better context understanding and fewer errors
+  - Custom agent creation using TypeScript with programmatic workflow control
+  - SDK for production integration and CI/CD pipelines
+  - Support for any model via OpenRouter (Claude, GPT, Qwen, DeepSeek, etc.)
+  - Agent marketplace for reusing published agents
+  - Outperforms Claude Code (61% vs 53%) on 175+ real-world coding task evaluations
+
+* **Why it's notable**: Codebuff challenges the single-model approach of existing AI coding tools by proving that coordinated specialized agents deliver more accurate results. With 337 stars today, it's gaining traction as an open-source alternative that offers model flexibility, custom workflows, and production-ready SDK integration—making it suitable for both individual developers and enterprise applications.
+
+---
+
+### Codebuff - 开源多智能体 AI 编码助手
+
+* **功能介绍**: Codebuff 是一个基于终端的 AI 编码助手,通过自然语言指令编辑代码库。它不依赖单一模型,而是协调多个专业智能体(文件选择器、规划器、编辑器、审查器)协同工作,理解项目架构并跨多个文件进行精确代码修改。
+
+* **主要特点**:
+  - 多智能体架构,提供更好的上下文理解和更少的错误
+  - 使用 TypeScript 创建自定义智能体,支持编程式工作流控制
+  - 提供 SDK 用于生产环境集成和 CI/CD 流水线
+  - 通过 OpenRouter 支持任意模型(Claude、GPT、Qwen、DeepSeek 等)
+  - 智能体市场可复用已发布的智能体
+  - 在 175+ 个真实编码任务评估中表现优于 Claude Code(61% vs 53%)
+
+* **为何值得关注**: Codebuff 通过证明协调的专业智能体能提供更准确的结果,挑战了现有 AI 编码工具的单模型方法。今日获得 337 星标,作为开源替代方案正在获得关注,它提供模型灵活性、自定义工作流和生产就绪的 SDK 集成——既适合个人开发者也适合企业应用。
+
+**[View Repository / 查看仓库](https://github.com/CodebuffAI/codebuff)**
+
+### wechat-decrypt - WeChat 4.0 Database Decryption Tool
+
+* Extracts encryption keys from running WeChat process memory and decrypts SQLCipher 4 encrypted local databases (messages, contacts, media). Supports real-time message monitoring via Web UI with ~100ms latency, image decryption (XOR/V1/V2 formats), and Claude AI integration through MCP server for querying chat history
+* Memory scanning for AES-256-CBC keys, automatic config detection, SSE-based live message streaming, rich media rendering (emojis, link cards, files, mini-programs), thread-safe WAL file monitoring, and comprehensive database access (26+ databases including sessions, messages, contacts)
+* Notable for reverse-engineering WeChat 4.0's SQLCipher implementation (PBKDF2-HMAC-SHA512 with 256k iterations), handling three generations of image encryption, and providing both CLI and web interfaces. The MCP integration enables AI assistants to directly query WeChat data, making it a powerful tool for personal data analysis and backup
+
+### wechat-decrypt - 微信 4.0 数据库解密工具
+
+* 从运行中的微信进程内存提取加密密钥,解密 SQLCipher 4 加密的本地数据库(消息、联系人、媒体)。支持通过 Web UI 实时监听消息(延迟约 100ms)、图片解密(XOR/V1/V2 格式),以及通过 MCP 服务器集成 Claude AI 查询聊天记录
+* 内存扫描提取 AES-256-CBC 密钥、自动配置检测、基于 SSE 的实时消息推送、富媒体渲染(表情包、链接卡片、文件、小程序)、线程安全的 WAL 文件监控、全面的数据库访问(26+ 个数据库,包括会话、消息、联系人)
+* 因逆向工程微信 4.0 的 SQLCipher 实现(PBKDF2-HMAC-SHA512 256k 迭代)、处理三代图片加密格式、提供 CLI 和 Web 双界面而备受关注。MCP 集成使 AI 助手能直接查询微信数据,成为个人数据分析和备份的强大工具
+
+**[View Repository / 查看仓库](https://github.com/ylytdeng/wechat-decrypt)**
+
+### Context+ - Semantic Intelligence MCP Server for Large-Scale Codebases
+
+* An MCP (Model Context Protocol) server that transforms massive codebases into searchable, hierarchical feature graphs using RAG, Tree-sitter AST parsing, spectral clustering, and Obsidian-style linking
+* 17 specialized tools across discovery (semantic code search, AST navigation, identifier search), analysis (blast radius tracing, static analysis), code operations (validated commits with restore points), version control (shadow undo system), and memory graph (RAG with decay scoring and graph traversal)
+* Built for 99% accuracy with multi-language support (43 file extensions), realtime embedding cache, and zero-installation setup via npx/bunx for Claude Code, Cursor, VS Code, Windsurf, and OpenCode
+
+### Context+ - 大规模工程的语义智能 MCP 服务器
+
+* 一个 MCP (模型上下文协议) 服务器,通过 RAG、Tree-sitter AST 解析、谱聚类和 Obsidian 风格链接,将大型代码库转换为可搜索的分层特性图谱
+* 提供 17 个专业工具,涵盖发现(语义代码搜索、AST 导航、标识符检索)、分析(影响范围追踪、静态分析)、代码操作(带恢复点的验证提交)、版本控制(影子撤销系统)和内存图谱(带衰减评分和图遍历的 RAG)
+* 专为 99% 准确率设计,支持多语言(43 种文件扩展名)、实时嵌入缓存,通过 npx/bunx 零安装配置,支持 Claude Code、Cursor、VS Code、Windsurf 和 OpenCode
+
+**[View Repository / 查看仓库](https://github.com/ForLoopCodes/contextplus)**
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY FULL COURSE 6HRS: Vibe Coding
+
+**Channel:** Nick Saraev
+
+* What the video covers: A comprehensive 6-hour course on building applications using Gemini 3.1 AI and the Antigravity framework, focusing on a "vibe coding" approach that emphasizes rapid development and AI-assisted programming
+* Key topics discussed: Gemini 3.1 API integration, Antigravity framework fundamentals, AI-powered development workflows, practical project building, and modern full-stack development techniques with AI assistance
+* Why it's worth watching: This extensive tutorial offers hands-on experience with cutting-edge AI development tools, perfect for developers wanting to leverage Gemini 3.1's capabilities and learn efficient AI-assisted coding patterns. The course includes all necessary files and provides a complete learning path from basics to deployment
+
+---
+
+### 🎬 GEMINI 3.1 + ANTIGRAVITY 完整课程 6小时:氛围编程
+
+**频道:** Nick Saraev
+
+* 视频内容概述: 一个全面的6小时课程,教授如何使用 Gemini 3.1 AI 和 Antigravity 框架构建应用程序,重点介绍强调快速开发和 AI 辅助编程的"氛围编程"方法
+* 主要话题: Gemini 3.1 API 集成、Antigravity 框架基础、AI 驱动的开发工作流、实战项目构建,以及借助 AI 辅助的现代全栈开发技术
+* 为何值得观看: 这个深度教程提供了使用前沿 AI 开发工具的实践经验,非常适合想要利用 Gemini 3.1 功能并学习高效 AI 辅助编程模式的开发者。课程包含所有必需文件,提供从基础到部署的完整学习路径
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gcuR_-rzlDw)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
+
+### 🎬 Claude Code Skills Are Broken (Beginner to Pro)
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: A comprehensive guide exploring Claude's coding capabilities, from basic usage to advanced techniques, highlighting both strengths and limitations
+* Key topics discussed: Practical demonstrations of Claude's code generation, debugging workflows, common pitfalls to avoid, and strategies to maximize AI-assisted development productivity
+* Why it's worth watching: Essential for developers wanting to leverage Claude effectively in their workflow - shows real-world examples of what works, what doesn't, and how to bridge the gap between beginner and professional-level AI coding assistance
+
+---
+
+### 🎬 Claude 编程技能深度解析(从入门到精通)
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
+* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
+* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
 
