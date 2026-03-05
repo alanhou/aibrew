@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 05, 2026"
 date: 2026-03-05
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -456,99 +456,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Claude Code - 完整新手教程
-
-**频道:** Tech With Tim
-
-* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
-* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
-* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
-
-### Google Workspace CLI (gws) - Unified Command-Line Tool
-
-* Dynamic CLI for all Google Workspace APIs (Drive, Gmail, Calendar, etc.) built for both humans and AI agents
-* Auto-generates commands from Google's Discovery Service at runtime - no static command lists, always up-to-date
-* Structured JSON output for every operation, making it ideal for automation and AI agent integration
-* Multiple authentication methods: interactive OAuth, service accounts, headless/CI workflows, and pre-obtained tokens
-* Ships with 100+ AI Agent Skills for common workflows across Gmail, Drive, Docs, Calendar, and Sheets
-* Built-in MCP (Model Context Protocol) server support for integration with Claude Desktop, Gemini CLI, and VS Code
-* Advanced features include auto-pagination, multipart uploads, dry-run mode, and Google Cloud Model Armor integration for prompt injection protection
-* Two-phase parsing architecture: identifies service, fetches Discovery Document (cached 24h), builds command tree dynamically
-* Written in Rust with comprehensive testing and coverage tooling
-
-### Google Workspace CLI (gws) - 统一命令行工具
-
-* 为 Google Workspace 所有 API(Drive、Gmail、Calendar 等)提供动态 CLI,同时面向人类用户和 AI 代理
-* 运行时从 Google Discovery Service 自动生成命令 - 无静态命令列表,始终保持最新
-* 所有操作输出结构化 JSON,非常适合自动化和 AI 代理集成
-* 支持多种认证方式:交互式 OAuth、服务账号、无头/CI 工作流和预获取令牌
-* 内置 100+ AI 代理技能,涵盖 Gmail、Drive、Docs、Calendar 和 Sheets 的常见工作流
-* 内置 MCP(模型上下文协议)服务器支持,可集成 Claude Desktop、Gemini CLI 和 VS Code
-* 高级功能包括自动分页、多部分上传、试运行模式,以及 Google Cloud Model Armor 集成用于提示注入防护
-* 两阶段解析架构:识别服务、获取 Discovery Document(缓存 24 小时)、动态构建命令树
-* 使用 Rust 编写,具有全面的测试和覆盖率工具
-
-**[Read Original / 阅读原文](https://github.com/googleworkspace/cli)**
-
-### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
-
-* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
-* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
-* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
-* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
-* Up to 16 hours of battery life on a single charge
-* Weighs just 2.7 pounds with fanless, silent operation
-* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
-* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
-* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
-* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
-* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
-* Pre-orders start March 4, 2026; availability begins March 11, 2026
-
-### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
-
-* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
-* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
-* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
-* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
-* 单次充电续航长达 16 小时
-* 重量仅 2.7 磅,无风扇静音运行
-* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
-* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
-* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
-* 运行 macOS Tahoe 系统,集成 Apple Intelligence 功能,与 iPhone 无缝协作
-* 采用 60% 回收材料制造——苹果产品中比例最高,碳排放最低的 MacBook
-* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
-
-**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
-
-<!-- [Title-Only] -->
-### Building a new Flash
-
-* Based on the title, this article likely discusses efforts to recreate or build a successor to Adobe Flash, the once-ubiquitous web animation and interactive content platform that was discontinued in 2020
-* This would be interesting to readers because Flash was instrumental in the early creative web, powering games, animations, and interactive experiences on sites like Newgrounds. A "new Flash" could address the nostalgia and functionality gap left by Flash's demise while incorporating modern web standards and security improvements
-* Given the URL is from Newgrounds (a platform historically built around Flash content), this likely covers their specific approach to preserving or reimagining Flash-style content creation and playback
-
-### 构建新的 Flash
-
-* 根据标题推测，这篇文章可能讨论了重建或开发 Adobe Flash 继任者的努力。Flash 曾是无处不在的网页动画和交互内容平台，于 2020 年停止支持
-* 这个话题值得关注，因为 Flash 在早期创意网络中发挥了重要作用，为 Newgrounds 等网站上的游戏、动画和交互体验提供支持。"新 Flash" 可以填补 Flash 消失后留下的怀旧和功能空白，同时融入现代网络标准和安全改进
-* 鉴于该 URL 来自 Newgrounds（一个历史上以 Flash 内容为核心的平台），文章很可能介绍他们在保存或重新构想 Flash 风格内容创作和播放方面的具体方法
-
-**[Read Original / 阅读原文](https://bill.newgrounds.com/news/post/1607118)**
-
-### Paperclip - Open-Source Orchestration Platform for Autonomous AI Companies
-
-* **What it does**: Paperclip is a Node.js server and React UI that orchestrates teams of AI agents to run entire businesses autonomously. It functions as a management layer where you define business goals, hire AI agents (from any provider like OpenClaw, Claude, Cursor, Codex), assign roles in an org chart, and monitor their work through a unified dashboard. Think of it as the "company" that manages your AI "employees."
-
-* **Key features**: Bring-your-own-agent compatibility with any AI that can receive heartbeats; full organizational structure with hierarchies, roles, and reporting lines; cost control with per-agent monthly budgets; goal alignment system that traces every task back to company mission; scheduled heartbeats for autonomous 24/7 operation; ticket-based task system with full audit trails; governance controls for approving strategies and managing agents; multi-company support from one deployment; mobile-ready interface for managing businesses anywhere.
-
-* **Why it's notable**: Paperclip solves the chaos of managing multiple AI agents simultaneously—no more juggling 20 Claude Code tabs or losing context on reboots. It's gaining traction (1,522 stars) because it treats AI orchestration as a business management problem rather than a technical one, providing atomic execution, persistent agent state, and proper governance. The upcoming "Clipmart" feature will let users download and run entire pre-configured AI companies with one click, making autonomous business creation accessible to anyone.
-
----
-
 ### Paperclip - 零人力公司的开源编排平台
 
 * **功能介绍**: Paperclip 是一个 Node.js 服务器和 React 界面,用于编排 AI 智能体团队自主运营整个企业。它作为管理层运作,你可以定义业务目标、雇佣 AI 智能体(支持 OpenClaw、Claude、Cursor、Codex 等任何提供商)、在组织架构图中分配角色,并通过统一仪表板监控它们的工作。可以把它理解为管理 AI "员工"的"公司"。
@@ -596,4 +503,127 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 快速了解计算机史上最具影响力的开源项目背后的人物性格,适合对技术领导风格和 Linux 历史感兴趣的观众
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Zjk1LXWcdaw)**
+
+<!-- [Title-Only] -->
+### Nvidia PersonaPlex 7B on Apple Silicon: Full-Duplex Speech-to-Speech in Swift
+
+**Note:** This introduction is based solely on the article title, as the full content could not be fetched.
+
+* This article likely covers the implementation of Nvidia's PersonaPlex 7B model on Apple Silicon devices, demonstrating real-time, bidirectional voice conversation capabilities using native Swift programming with the MLX framework
+* The piece probably explores how to achieve full-duplex communication (simultaneous two-way audio streaming) for speech-to-speech applications on Mac devices, potentially including technical details about model optimization, performance benchmarks, and integration patterns
+* Why it might be interesting: This represents a significant development in bringing advanced AI voice models to Apple's ecosystem, showing how developers can leverage Apple Silicon's neural engine capabilities for real-time conversational AI without relying on cloud services. It's particularly relevant for developers interested in privacy-focused, on-device AI applications and those working with Swift/MLX for machine learning
+
+---
+
+### Nvidia PersonaPlex 7B 在 Apple Silicon 上运行：使用 Swift 实现全双工语音对话
+
+**说明：** 由于无法获取完整文章内容，以下介绍仅基于标题推测。
+
+* 本文可能介绍了如何在 Apple Silicon 设备上部署 Nvidia 的 PersonaPlex 7B 模型，展示使用原生 Swift 语言和 MLX 框架实现实时双向语音对话的能力
+* 文章很可能探讨了如何在 Mac 设备上实现全双工通信（同时进行双向音频流传输）的语音对话应用，可能包含模型优化、性能基准测试和集成模式等技术细节
+* 为何值得关注：这代表了将先进 AI 语音模型引入苹果生态系统的重要进展，展示了开发者如何利用 Apple Silicon 的神经引擎能力实现实时对话 AI，而无需依赖云服务。对于关注隐私保护的本地 AI 应用开发者，以及使用 Swift/MLX 进行机器学习开发的工程师来说，这篇文章特别有价值
+
+**[Read Original / 阅读原文](https://blog.ivan.digital/nvidia-personaplex-7b-on-apple-silicon-full-duplex-speech-to-speech-in-native-swift-with-mlx-0aa5276f2e23)**
+
+### Google Workspace CLI (gws) - Unified Command-Line Tool
+
+* A single CLI that dynamically exposes all Google Workspace APIs (Drive, Gmail, Calendar, Sheets, etc.) by reading Google's Discovery Service at runtime
+* Built for both human developers and AI agents with structured JSON output, zero boilerplate, and 100+ pre-built agent skills
+* Supports multiple authentication methods: interactive OAuth, service accounts, headless/CI workflows, and pre-obtained tokens
+* Features include auto-pagination, tab-completion, dry-run mode, multipart uploads, and optional Model Armor integration for prompt injection protection
+* Includes MCP (Model Context Protocol) server support for integration with Claude Desktop, Gemini CLI, and other MCP-compatible clients
+* Not an officially supported Google product; currently in active development toward v1.0
+
+### Google Workspace CLI (gws) - 统一命令行工具
+
+* 单一 CLI 工具,通过运行时读取 Google Discovery Service 动态暴露所有 Google Workspace API(Drive、Gmail、Calendar、Sheets 等)
+* 专为开发者和 AI 代理设计,提供结构化 JSON 输出、零样板代码和 100+ 预构建代理技能
+* 支持多种认证方式:交互式 OAuth、服务账号、无头/CI 工作流和预获取令牌
+* 功能包括自动分页、Tab 补全、试运行模式、分段上传,以及可选的 Model Armor 集成用于提示注入防护
+* 包含 MCP(模型上下文协议)服务器支持,可与 Claude Desktop、Gemini CLI 等 MCP 兼容客户端集成
+* 非 Google 官方支持产品;目前正在积极开发中,朝 v1.0 版本迈进
+
+**[Read Original / 阅读原文](https://github.com/googleworkspace/cli)**
+
+### The Mystery of 999,999 Free Minutes: A Vodafone Glitch Story
+
+* Author receives unexpected SMS from Vodafone offering 999,999 free minutes and unlimited data for 5 days with a typo ("REVEIVED")
+* Family shares two SIM cards between a 10-year-old Samsung and a flip phone on prepaid plan
+* Unlike typical conditional offers requiring payment, this gift was completely unprompted and unconditional
+* The minutes were actually credited to the account, though only usable within a 5-day window (7,200 minutes total time)
+* Author explores possible explanations: system error, untransformed placeholder, LLM hallucination, or human error
+* The presence of a typo in an otherwise automated system raises questions about manual intervention
+* Mystery remains unsolved: Was this exclusive? Is there a human manually sending these messages? Why this specific offer?
+* Author embraces the absurdity of briefly becoming a "Vodafone minute millionaire"
+
+### 99万9999分钟的谜团：沃达丰系统故障趣事
+
+* 作者意外收到沃达丰短信，提供999,999免费通话分钟和无限流量，有效期5天，短信中还有拼写错误（"REVEIVED"）
+* 全家共用两张SIM卡，在一部使用近10年的三星智能机和一部翻盖功能机之间切换使用
+* 与通常需要充值才能激活的优惠不同，这次是完全无条件的免费赠送
+* 账户确实收到了这些分钟数，但只能在5天内使用（总计7200分钟可用时间）
+* 作者探讨可能的原因：系统错误、未转换的占位符、AI幻觉，或人为失误
+* 在原本自动化的系统中出现拼写错误，引发了关于人工干预的疑问
+* 谜团未解：这是专属优惠吗？是否有人工手动发送这些消息？为何是这个特定优惠？
+* 作者欣然接受这个荒诞经历，短暂成为"沃达丰分钟百万富翁"
+
+**[Read Original / 阅读原文](https://dylan.gr/1772520728)**
+
+### 🎬 Claude Code - Full Tutorial for Beginners
+
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
+* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
+* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
+
+---
+
+### 🎬 Claude Code - 完整新手教程
+
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
+* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
+* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+### 🎬 How I test hundreds of PD Stepper PCB's #arduino #esp32 #pcb
+**Channel:** Things by Josh
+
+* What the video covers: The creator demonstrates their automated testing process for mass-producing PD (Power Delivery) Stepper motor controller PCBs, showing the workflow from manufacturing to quality assurance
+* Key topics discussed: PCB testing methodology, Arduino/ESP32 integration, automated testing fixtures, quality control for batch production, hardware debugging techniques
+* Why it's worth watching: Provides practical insights into scaling hardware projects from prototype to production, showcasing real-world testing solutions that makers and hardware engineers can apply to their own PCB manufacturing workflows
+
+---
+
+### 🎬 如何测试数百块 PD 步进电机 PCB #arduino #esp32 #pcb
+**频道:** Things by Josh
+
+* 视频内容概述: 创作者展示了批量生产 PD(电源传输)步进电机控制器 PCB 的自动化测试流程,呈现从制造到质量保证的完整工作流程
+* 主要话题: PCB 测试方法论、Arduino/ESP32 集成应用、自动化测试夹具、批量生产质量控制、硬件调试技术
+* 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试解决方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+
+### 🎬 Transmitter And Receiver making with ESP32 | ESPNOW
+
+**Channel:** Ashwin Projects
+
+* What the video covers: A practical tutorial on building wireless transmitter and receiver systems using ESP32 microcontrollers and the ESPNOW protocol
+* Key topics discussed: ESP32 hardware setup, ESPNOW communication protocol implementation, wireless data transmission between devices, hands-on project demonstration
+* Why it's worth watching: Perfect for makers and IoT enthusiasts looking to create low-latency, peer-to-peer wireless communication systems without needing WiFi infrastructure. ESPNOW is ideal for battery-powered projects and real-time control applications
+
+---
+
+### 🎬 使用ESP32制作发射器和接收器 | ESPNOW协议
+
+**频道:** Ashwin Projects
+
+* 视频内容概述: 详细演示如何使用ESP32微控制器和ESPNOW协议构建无线发射器和接收器系统的实用教程
+* 主要话题: ESP32硬件配置、ESPNOW通信协议的实现、设备间无线数据传输、实际项目演示
+* 为何值得观看: 适合创客和物联网爱好者学习如何在不依赖WiFi基础设施的情况下创建低延迟的点对点无线通信系统。ESPNOW协议特别适用于电池供电项目和实时控制应用场景
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yZ4lSgk_UVQ)**
 
