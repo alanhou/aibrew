@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 06, 2026"
 date: 2026-03-06
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -269,4 +269,239 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试解决方案
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+
+<!-- [Title-Only] -->
+### GPT-5.4
+
+**Note: This introduction is based solely on the title, as the article content could not be fetched.**
+
+* This article likely announces OpenAI's release of GPT-5.4, which appears to be a new iteration in their GPT model series. The ".4" suffix suggests this could be either a minor update to GPT-5 or a specific variant optimized for certain tasks.
+* This would be interesting to readers because it represents the next generation beyond GPT-4, potentially bringing significant improvements in reasoning capabilities, knowledge depth, multimodal understanding, or computational efficiency. Given OpenAI's track record, this release could mark a substantial leap in AI capabilities and have wide-ranging implications for developers, businesses, and AI researchers.
+
+---
+
+### GPT-5.4
+
+**注意：由于无法获取文章内容，以下介绍仅基于标题推测。**
+
+* 这篇文章很可能是 OpenAI 发布 GPT-5.4 的官方公告，这似乎是 GPT 模型系列的新版本。".4"后缀表明这可能是 GPT-5 的小版本更新，或是针对特定任务优化的变体版本。
+* 这对读者来说值得关注，因为它代表了超越 GPT-4 的下一代模型，可能在推理能力、知识深度、多模态理解或计算效率方面带来显著提升。考虑到 OpenAI 的历史表现，这次发布可能标志着 AI 能力的重大飞跃，并对开发者、企业和 AI 研究人员产生广泛影响。
+
+**[Read Original / 阅读原文](https://openai.com/index/introducing-gpt-5-4/)**
+
+### The Brand Age: How Swiss Watchmakers Survived by Selling Status Over Precision
+
+* The Swiss watch industry faced a "triple disaster" in the 1970s: Japanese competition (who won top spots at Geneva trials by 1968), the collapse of Bretton Woods (making Swiss watches 2.7x more expensive), and quartz technology making mechanical precision obsolete
+* Swiss watch unit sales fell by two-thirds between early 1970s and 1980s, but survivors transformed from precision instrument makers into luxury brands
+* The "golden age" (1945-1970) focused on thinness and accuracy; the "holy trinity" brands (Patek Philippe, Vacheron Constantin, Audemars Piguet) had both prestige and performance
+* Omega failed by doubling down on technical performance, going insolvent by 1981; Patek Philippe succeeded by redesigning cases to make watches visible status symbols
+* The shift from engineering to branding was profitable: revenue recovered and soared in the late 1980s as watchmakers learned the new rules
+* Brand became what's left when technology eliminates substantive product differences—a defining force of our era
+
+### 品牌时代:瑞士制表商如何通过销售地位而非精密度生存
+
+* 瑞士制表业在1970年代面临"三重灾难":日本竞争(1968年在日内瓦天文台比赛中横扫榜首)、布雷顿森林体系崩溃(使瑞士手表价格上涨2.7倍)、石英技术使机械精密度变得无关紧要
+* 1970年代初至1980年代初,瑞士手表销量下降三分之二,但幸存者从精密仪器制造商转型为奢侈品牌
+* "黄金时代"(1945-1970)专注于薄度和准确性;"三圣"品牌(百达翡丽、江诗丹顿、爱彼)兼具声望和性能
+* 欧米茄因加倍投入技术性能而失败,1981年破产;百达翡丽通过重新设计表壳使手表成为可见的地位象征而成功
+* 从工程到品牌的转变是有利可图的:1980年代末收入恢复并飙升,制表商学会了新规则
+* 当技术消除产品实质差异时,品牌成为剩下的东西——这是我们时代的决定性力量
+
+**[Read Original / 阅读原文](https://paulgraham.com/brandage.html)**
+
+### Physical Penetration Testing: A Week of Security Failures
+
+* Pentester conducted comprehensive physical security assessment including social engineering, physical intrusion, and internal testing across multiple corporate buildings
+* Despite active CCTV surveillance and security personnel, testers moved freely for days without being challenged or questioned by staff or guards
+* Successfully exploited weak locks on secure shredding bins containing sensitive payroll and employee data, demonstrating critical document security failures
+* Gained unauthorized access to director's office (door was unlocked), reception area, and multiple restricted zones by simply walking in with confidence
+* Social engineering proved devastatingly effective - employees never verified badges, questioned presence, or challenged suspicious behavior
+* Final test required deliberately stealing company flag in front of cameras to finally trigger security response after days of increasingly bold actions
+* Key vulnerability: organizational culture where employees avoid confrontation and assume others belong, combined with ineffective physical security monitoring
+
+### 物理渗透测试:一周的安全失败记录
+
+* 渗透测试人员对多栋企业大楼进行了全面的物理安全评估,包括社会工程学、物理入侵和内部测试
+* 尽管有监控摄像头和安保人员,测试人员数天内自由活动却未被员工或保安质疑或盘问
+* 成功破解装有敏感工资单和员工数据的安全碎纸箱的薄弱锁具,暴露出关键的文件安全漏洞
+* 未经授权进入总监办公室(门未上锁)、前台区域和多个限制区域,仅凭自信行走即可进入
+* 社会工程学效果惊人 - 员工从不验证证件、质疑身份或挑战可疑行为
+* 最终测试需要在摄像头前故意偷取公司旗帜,才终于在数天越来越大胆的行动后触发安保响应
+* 核心漏洞:组织文化中员工避免对抗并假设他人有权进入,加上物理安全监控失效
+
+**[Read Original / 阅读原文](https://m4iler.cloud/posts/lets-get-physical/)**
+
+### Trivy - Comprehensive Security Scanner for Containers, Kubernetes, and Cloud Infrastructure
+
+* **What it does**: Trivy is an all-in-one security scanner that detects vulnerabilities, misconfigurations, secrets, and generates SBOMs (Software Bill of Materials) across multiple targets including container images, filesystems, Git repositories, VM images, and Kubernetes clusters.
+
+* **Key features**: 
+  - Scans for known CVEs, IaC misconfigurations, exposed secrets, and software licenses
+  - Supports multiple targets: containers, Kubernetes, code repos, cloud environments, and VMs
+  - Easy installation via Homebrew, Docker, or binary downloads
+  - Rich ecosystem with GitHub Actions, Kubernetes operator, and VS Code plugin integrations
+  - Written in Go with extensive language and platform support
+
+* **Why it's notable**: With 297 stars today, Trivy stands out as a versatile, production-ready security tool from Aqua Security. Its comprehensive scanning capabilities combined with simple CLI usage (`trivy image python:3.4-alpine`) make it accessible for DevSecOps teams. The tool's ability to scan everything from container images to entire Kubernetes clusters in a single solution addresses the growing need for unified security scanning in cloud-native environments.
+
+---
+
+### Trivy - 容器、Kubernetes 和云基础设施的综合安全扫描器
+
+* **功能介绍**: Trivy 是一款一体化安全扫描工具,可在容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes 集群等多个目标中检测漏洞、错误配置、敏感信息,并生成软件物料清单(SBOM)。
+
+* **主要特点**:
+  - 扫描已知 CVE 漏洞、基础设施即代码(IaC)错误配置、泄露的密钥和软件许可证
+  - 支持多种扫描目标:容器、Kubernetes、代码仓库、云环境和虚拟机
+  - 安装便捷,支持 Homebrew、Docker 或二进制文件下载
+  - 丰富的生态系统集成,包括 GitHub Actions、Kubernetes operator 和 VS Code 插件
+  - 使用 Go 语言编写,广泛支持各种编程语言和平台
+
+* **为何值得关注**: Trivy 今日获得 297 星标,作为 Aqua Security 推出的多功能生产级安全工具表现突出。其全面的扫描能力结合简洁的命令行使用方式(`trivy image python:3.4-alpine`),使 DevSecOps 团队易于上手。该工具能够在单一解决方案中扫描从容器镜像到整个 Kubernetes 集群的所有内容,满足了云原生环境中对统一安全扫描日益增长的需求。
+
+**[View Repository / 查看仓库](https://github.com/aquasecurity/trivy)**
+
+### AIRI - Self-Hosted AI Companion Inspired by Neuro-sama
+
+* A self-hosted virtual AI companion (digital waifu/VTuber) that can play games, chat in real-time, and interact across multiple platforms. Inspired by Neuro-sama, it aims to create a "cyber living being" you can own and interact with anytime.
+* Built with modern web technologies (WebGPU, WebAssembly, WebAudio) for cross-platform support (Web/macOS/Windows/mobile PWA). Can play Minecraft and Factorio, chat on Discord/Telegram, supports real-time voice chat, Live2D/VRM avatars, and runs local AI inference with CUDA/Metal acceleration on desktop.
+* Trending with 3,003 stars today because it's an ambitious open-source alternative to closed AI VTuber systems, offering users full ownership of their AI companion. The project combines gaming AI, speech synthesis, computer vision, and memory systems into a unified platform that works both in browsers and as native desktop apps.
+
+---
+
+### AIRI - 受 Neuro-sama 启发的自托管 AI 伴侣
+
+* 一个自托管的虚拟 AI 伴侣(数字老婆/虚拟主播),能够玩游戏、实时聊天并跨多个平台互动。受 Neuro-sama 启发,旨在创建一个你可以拥有并随时互动的"赛博生命体"。
+* 使用现代 Web 技术(WebGPU、WebAssembly、WebAudio)构建,支持跨平台(Web/macOS/Windows/移动端 PWA)。可以玩《我的世界》和《异星工厂》,在 Discord/Telegram 上聊天,支持实时语音对话、Live2D/VRM 虚拟形象,桌面版支持 CUDA/Metal 加速的本地 AI 推理。
+* 今日获得 3,003 星标,因为它是封闭式 AI 虚拟主播系统的雄心勃勃的开源替代方案,让用户完全拥有自己的 AI 伴侣。该项目将游戏 AI、语音合成、计算机视觉和记忆系统整合到一个统一平台中,既可在浏览器中运行,也可作为原生桌面应用使用。
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
+
+### MinecraftConsoles - Revived Minecraft Legacy Console Edition Source Code
+
+* **What it does**: Restores and modernizes the leaked Minecraft Legacy Console Edition v1.6.0560.0 (TU19) source code, making it buildable and playable on modern Windows systems with keyboard/mouse controls and LAN multiplayer support.
+
+* **Key features**: 
+  - Fixed compilation for Visual Studio 2022 (Debug/Release modes)
+  - Full keyboard and mouse controls replacing console gamepad input
+  - LAN multiplayer with automatic network discovery
+  - Headless dedicated server mode with configurable properties
+  - Modern enhancements: fullscreen toggle (F11), adaptive resolution, high-FPS timing, persistent usernames
+  - Comprehensive debug tools (F3-F6 overlays)
+
+* **Why it's notable**: This project breathes new life into a piece of Minecraft history by making a previously console-exclusive version accessible on PC. With 2,818 stars, it's gained traction among preservation enthusiasts and players nostalgic for the Legacy Console Edition's unique features. The addition of LAN multiplayer and server functionality transforms it from a curiosity into a playable experience, while the active development (nightly builds, contributor guide) shows ongoing community engagement in game preservation.
+
+---
+
+### MinecraftConsoles - 复活的《我的世界》主机版源代码
+
+* **功能介绍**: 修复并现代化泄露的《我的世界》主机遗产版 v1.6.0560.0 (TU19) 源代码,使其能在现代 Windows 系统上编译运行,支持键鼠操作和局域网联机。
+
+* **主要特点**:
+  - 修复了 Visual Studio 2022 编译问题(支持 Debug/Release 模式)
+  - 完整的键盘鼠标控制系统,替代原主机手柄输入
+  - 局域网多人游戏,支持自动网络发现
+  - 无头专用服务器模式,可配置服务器属性
+  - 现代化增强:全屏切换(F11)、自适应分辨率、高帧率计时、持久化用户名
+  - 完善的调试工具(F3-F6 调试界面)
+
+* **为何值得关注**: 该项目让曾经主机独占的《我的世界》版本在 PC 上重获新生,成为游戏保存领域的重要案例。凭借 2,818 星标,它吸引了大量游戏保存爱好者和怀念主机版独特功能的玩家。局域网联机和服务器功能的加入,将其从单纯的历史文物转变为可实际游玩的体验。活跃的开发状态(每日构建版本、贡献者指南)展现了社区对游戏保存工作的持续投入。
+
+**[View Repository / 查看仓库](https://github.com/smartcmd/MinecraftConsoles)**
+
+### Paperclip - Open-Source Orchestration Platform for Autonomous AI Companies
+
+* **What it does**: Paperclip is a Node.js server and React UI that orchestrates teams of AI agents to run entire businesses autonomously. It functions as a management layer where you define business goals, hire AI agents (from any provider like OpenClaw, Claude, Cursor, Codex), assign roles in an org chart, and monitor their work through a unified dashboard. Think of it as the "company" that manages your AI "employees."
+
+* **Key features**: 
+  - Bring-your-own-agent architecture supporting any AI agent that can receive heartbeats
+  - Complete organizational structure with org charts, hierarchies, roles, and reporting lines
+  - Goal alignment system ensuring every task traces back to company mission
+  - Cost control with monthly budgets per agent and automatic throttling
+  - Scheduled heartbeats for autonomous 24/7 operation
+  - Ticket-based task system with full audit trails and tool-call tracing
+  - Governance controls allowing you to approve hires, override strategies, and pause agents
+  - Multi-company support with complete data isolation
+  - Mobile-ready interface for managing businesses from anywhere
+
+* **Why it's notable**: With 2,817 stars, Paperclip addresses a critical pain point in the AI agent ecosystem: coordinating multiple AI agents toward common business goals. Instead of managing dozens of scattered agent terminals and configs, it provides enterprise-grade orchestration with atomic execution, persistent agent state, and proper governance. The upcoming "Clipmart" feature promises one-click deployment of entire pre-built company templates. It's particularly compelling for developers juggling multiple AI coding assistants or building autonomous AI-driven businesses, offering a structured alternative to ad-hoc agent coordination.
+
+---
+
+### Paperclip - 零人力公司的开源编排平台
+
+* **功能介绍**: Paperclip 是一个 Node.js 服务器和 React UI，用于编排 AI 智能体团队自主运营整个业务。它作为管理层运作：你定义业务目标，雇佣 AI 智能体（支持 OpenClaw、Claude、Cursor、Codex 等任何提供商），在组织架构图中分配角色，并通过统一仪表板监控它们的工作。可以理解为管理 AI "员工"的"公司"。
+
+* **主要特点**:
+  - 自带智能体架构，支持任何能接收心跳信号的 AI 智能体
+  - 完整的组织结构，包含组织架构图、层级关系、角色和汇报线
+  - 目标对齐系统，确保每个任务都能追溯到公司使命
+  - 成本控制，为每个智能体设置月度预算并自动限流
+  - 定时心跳机制实现 7×24 小时自主运行
+  - 基于工单的任务系统，提供完整审计跟踪和工具调用追踪
+  - 治理控制，允许批准招聘、覆盖策略、暂停智能体
+  - 多公司支持，数据完全隔离
+  - 移动端就绪，可随时随地管理业务
+
+* **为何值得关注**: 拥有 2,817 星标的 Paperclip 解决了 AI 智能体生态系统中的关键痛点：协调多个 AI 智能体实现共同业务目标。它提供企业级编排能力，包括原子化执行、持久化智能体状态和适当的治理机制，而不是管理数十个分散的智能体终端和配置文件。即将推出的"Clipmart"功能承诺一键部署整个预构建的公司模板。对于需要协调多个 AI 编码助手或构建自主 AI 驱动业务的开发者来说特别有吸引力，为临时性的智能体协调提供了结构化替代方案。
+
+**[View Repository / 查看仓库](https://github.com/paperclipai/paperclip)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
+
+### 🎬 Transmitter And Receiver making with ESP32 | ESPNOW
+
+**Channel:** Ashwin Projects
+
+* What the video covers: A practical tutorial on building wireless transmitter and receiver systems using ESP32 microcontrollers and the ESPNOW protocol
+* Key topics discussed: ESP32 hardware setup, ESPNOW communication protocol implementation, wireless data transmission between devices, hands-on project demonstration
+* Why it's worth watching: Perfect for makers and IoT enthusiasts looking to create low-latency, peer-to-peer wireless communication systems without needing WiFi infrastructure. ESPNOW is ideal for battery-powered projects and real-time control applications
+
+---
+
+### 🎬 使用ESP32制作发射器和接收器 | ESPNOW协议
+
+**频道:** Ashwin Projects
+
+* 视频内容概述: 详细演示如何使用ESP32微控制器和ESPNOW协议构建无线发射器和接收器系统的实用教程
+* 主要话题: ESP32硬件配置、ESPNOW通信协议的实现、设备间无线数据传输、实际项目演示
+* 为何值得观看: 适合创客和物联网爱好者学习如何在不依赖WiFi基础设施的情况下创建低延迟的点对点无线通信系统。ESPNOW协议特别适用于电池供电项目和实时控制应用场景
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yZ4lSgk_UVQ)**
+
+### 🎬 VIBE CODING FULL COURSE: Gemini 3.1 + Antigravity (6 Hrs)
+**Channel:** Nick Saraev
+
+* What the video covers: A comprehensive 6-hour course on "vibe coding" using Google's Gemini 3.1 AI model combined with Antigravity development tools
+* Key topics discussed: AI-assisted coding workflows, leveraging Gemini 3.1's capabilities for software development, practical implementation with Antigravity framework, and hands-on project building
+* Why it's worth watching: This extensive tutorial offers a complete deep-dive into modern AI-powered development techniques, perfect for developers looking to integrate cutting-edge AI tools into their coding workflow and boost productivity with next-generation development practices
+
+---
+
+### 🎬 VIBE CODING 完整课程：Gemini 3.1 + Antigravity（6小时）
+**频道:** Nick Saraev
+
+* 视频内容概述: 一门关于使用 Google Gemini 3.1 AI 模型结合 Antigravity 开发工具进行"氛围编程"的6小时综合课程
+* 主要话题: AI 辅助编码工作流程、利用 Gemini 3.1 进行软件开发的能力、Antigravity 框架的实际应用，以及动手项目构建
+* 为何值得观看: 这个详尽的教程深入探讨了现代 AI 驱动的开发技术，非常适合希望将前沿 AI 工具集成到编码工作流程中、并通过下一代开发实践提升生产力的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gcuR_-rzlDw)**
 
