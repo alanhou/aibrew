@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 05, 2026"
 date: 2026-03-05
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -437,93 +437,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Claude 编程技能深度解析(从入门到精通)
-**频道:** Nate Herk | AI Automation
-
-* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
-* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
-* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
-
-### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
-
-* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
-* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
-* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
-* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
-* Up to 16 hours of battery life on a single charge
-* Weighs just 2.7 pounds with fanless, silent operation
-* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
-* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
-* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
-* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
-* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
-* Pre-orders start March 4, 2026; availability begins March 11, 2026
-
-### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
-
-* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
-* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
-* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
-* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
-* 单次充电续航长达 16 小时
-* 重量仅 2.7 磅,无风扇静音运行
-* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
-* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
-* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
-* 运行 macOS Tahoe,集成 Apple Intelligence 功能,与 iPhone 无缝协作
-* 采用 60% 回收材料 - 苹果产品中比例最高,碳排放最低的 MacBook
-* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
-
-**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
-
-<!-- [Title-Only] -->
-### Building a new Flash
-
-* Based on the title, this article likely discusses efforts to recreate or build a successor to Adobe Flash, the once-ubiquitous web animation and interactive content platform that was discontinued in 2020
-* This would be interesting to readers because Flash was instrumental in the early creative web, powering games, animations, and interactive experiences on sites like Newgrounds. A "new Flash" could address the nostalgia and functionality gap left by Flash's demise while incorporating modern web standards and security improvements
-* Given the URL is from Newgrounds (a platform historically built around Flash content), this likely covers their specific approach to preserving or reimagining Flash-style content creation and playback
-
-### 构建新的 Flash
-
-* 根据标题推测，这篇文章可能讨论了重建或开发 Adobe Flash 继任者的努力。Flash 曾是无处不在的网页动画和交互内容平台，于 2020 年停止支持
-* 这个话题值得关注，因为 Flash 在早期创意网络中发挥了重要作用，为 Newgrounds 等网站上的游戏、动画和交互体验提供支持。"新 Flash" 可以填补 Flash 消失后留下的怀旧和功能空白，同时融入现代网络标准和安全改进
-* 鉴于该 URL 来自 Newgrounds（一个历史上以 Flash 内容为核心的平台），文章很可能介绍他们在保存或重新构想 Flash 风格内容创作和播放方面的具体方法
-
-**[Read Original / 阅读原文](https://bill.newgrounds.com/news/post/1607118)**
-
-### Anthropic CEO Accuses OpenAI of "Straight Up Lies" Over Pentagon Deal
-
-* Anthropic CEO Dario Amodei harshly criticized OpenAI's Department of Defense contract in an internal memo, calling their messaging "straight up lies" and "safety theater"
-* Anthropic walked away from a DoD deal after refusing to grant "unrestricted access" to its AI, insisting on explicit prohibitions against domestic mass surveillance and autonomous weaponry
-* OpenAI subsequently signed a contract with the DoD (rebranded as "Department of War" under Trump administration) claiming similar safeguards, but only restricting "unlawful" uses
-* Amodei argues OpenAI "cared about placating employees" while Anthropic "actually cared about preventing abuses," accusing Sam Altman of falsely positioning himself as a peacemaker
-* Critics note that "lawful use" clauses are weak protections since laws can change, making current illegal activities potentially legal in the future
-* Public backlash was significant: ChatGPT uninstalls surged 295% after the OpenAI-DoD deal announcement, while Anthropic's app ranking jumped to #2 in the App Store
-* Amodei expressed concern about OpenAI's messaging potentially influencing OpenAI employees, though he believes the public and media see through the "spin/gaslighting"
-
-### Anthropic CEO 指责 OpenAI 在五角大楼交易中"彻头彻尾撒谎"
-
-* Anthropic CEO Dario Amodei 在内部备忘录中严厉批评 OpenAI 与国防部的合同,称其信息传递为"彻头彻尾的谎言"和"安全作秀"
-* Anthropic 拒绝向国防部授予其 AI 技术的"无限制访问权",坚持明确禁止用于国内大规模监控和自主武器系统后退出交易
-* OpenAI 随后与国防部(在特朗普政府下更名为"战争部")签署合同,声称有类似保障措施,但仅限制"非法"用途
-* Amodei 认为 OpenAI "关心安抚员工",而 Anthropic "真正关心防止滥用",指责 Sam Altman 虚假地将自己定位为和平缔造者
-* 批评者指出"合法使用"条款是薄弱的保护,因为法律可以改变,使当前非法活动在未来可能合法化
-* 公众强烈反对:OpenAI-国防部交易公布后,ChatGPT 卸载量激增 295%,而 Anthropic 的应用排名跃升至 App Store 第 2 名
-* Amodei 担心 OpenAI 的信息传递可能影响 OpenAI 员工,尽管他认为公众和媒体能看穿这种"操纵/煤气灯效应"
-
-**[Read Original / 阅读原文](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/)**
-
-### 🎬 Are We Living in a Simulation? - Elon Musk
-**Channel:** Dwarkesh Patel
-
-* What the video covers: An in-depth discussion with Elon Musk exploring the simulation hypothesis - the philosophical and scientific argument that our reality might be a computer-generated simulation
-* Key topics discussed: The probability we're living in a simulation, technological advancement trajectories, consciousness and reality, implications for humanity's future, and the intersection of physics, computing power, and existential questions
-* Why it's worth watching: Elon Musk offers his unique perspective on one of the most mind-bending questions in modern philosophy and technology, combining his expertise in AI, computing, and futuristic thinking with accessible explanations that challenge our understanding of reality itself
-
----
-
 ### 🎬 我们生活在模拟世界中吗? - 埃隆·马斯克
 **频道:** Dwarkesh Patel
 
@@ -552,4 +465,135 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
+
+### Google Workspace CLI (gws) - Unified Command-Line Tool
+
+* Dynamic CLI for all Google Workspace APIs (Drive, Gmail, Calendar, etc.) built for both humans and AI agents
+* Auto-generates commands from Google's Discovery Service at runtime - no static command lists, always up-to-date
+* Structured JSON output for every operation, making it ideal for automation and AI agent integration
+* Multiple authentication methods: interactive OAuth, service accounts, headless/CI workflows, and pre-obtained tokens
+* Ships with 100+ AI Agent Skills for common workflows across Gmail, Drive, Docs, Calendar, and Sheets
+* Built-in MCP (Model Context Protocol) server support for integration with Claude Desktop, Gemini CLI, and VS Code
+* Advanced features include auto-pagination, multipart uploads, dry-run mode, and Google Cloud Model Armor integration for prompt injection protection
+* Two-phase parsing architecture: identifies service, fetches Discovery Document (cached 24h), builds command tree dynamically
+* Written in Rust with comprehensive testing and coverage tooling
+
+### Google Workspace CLI (gws) - 统一命令行工具
+
+* 为 Google Workspace 所有 API(Drive、Gmail、Calendar 等)提供动态 CLI,同时面向人类用户和 AI 代理
+* 运行时从 Google Discovery Service 自动生成命令 - 无静态命令列表,始终保持最新
+* 所有操作输出结构化 JSON,非常适合自动化和 AI 代理集成
+* 支持多种认证方式:交互式 OAuth、服务账号、无头/CI 工作流和预获取令牌
+* 内置 100+ AI 代理技能,涵盖 Gmail、Drive、Docs、Calendar 和 Sheets 的常见工作流
+* 内置 MCP(模型上下文协议)服务器支持,可集成 Claude Desktop、Gemini CLI 和 VS Code
+* 高级功能包括自动分页、多部分上传、试运行模式,以及 Google Cloud Model Armor 集成用于提示注入防护
+* 两阶段解析架构:识别服务、获取 Discovery Document(缓存 24 小时)、动态构建命令树
+* 使用 Rust 编写,具有全面的测试和覆盖率工具
+
+**[Read Original / 阅读原文](https://github.com/googleworkspace/cli)**
+
+### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
+
+* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
+* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
+* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
+* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
+* Up to 16 hours of battery life on a single charge
+* Weighs just 2.7 pounds with fanless, silent operation
+* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
+* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
+* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
+* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
+* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
+* Pre-orders start March 4, 2026; availability begins March 11, 2026
+
+### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
+
+* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
+* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
+* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
+* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
+* 单次充电续航长达 16 小时
+* 重量仅 2.7 磅,无风扇静音运行
+* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
+* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
+* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
+* 运行 macOS Tahoe 系统,集成 Apple Intelligence 功能,与 iPhone 无缝协作
+* 采用 60% 回收材料制造——苹果产品中比例最高,碳排放最低的 MacBook
+* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
+
+**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
+
+<!-- [Title-Only] -->
+### Building a new Flash
+
+* Based on the title, this article likely discusses efforts to recreate or build a successor to Adobe Flash, the once-ubiquitous web animation and interactive content platform that was discontinued in 2020
+* This would be interesting to readers because Flash was instrumental in the early creative web, powering games, animations, and interactive experiences on sites like Newgrounds. A "new Flash" could address the nostalgia and functionality gap left by Flash's demise while incorporating modern web standards and security improvements
+* Given the URL is from Newgrounds (a platform historically built around Flash content), this likely covers their specific approach to preserving or reimagining Flash-style content creation and playback
+
+### 构建新的 Flash
+
+* 根据标题推测，这篇文章可能讨论了重建或开发 Adobe Flash 继任者的努力。Flash 曾是无处不在的网页动画和交互内容平台，于 2020 年停止支持
+* 这个话题值得关注，因为 Flash 在早期创意网络中发挥了重要作用，为 Newgrounds 等网站上的游戏、动画和交互体验提供支持。"新 Flash" 可以填补 Flash 消失后留下的怀旧和功能空白，同时融入现代网络标准和安全改进
+* 鉴于该 URL 来自 Newgrounds（一个历史上以 Flash 内容为核心的平台），文章很可能介绍他们在保存或重新构想 Flash 风格内容创作和播放方面的具体方法
+
+**[Read Original / 阅读原文](https://bill.newgrounds.com/news/post/1607118)**
+
+### Paperclip - Open-Source Orchestration Platform for Autonomous AI Companies
+
+* **What it does**: Paperclip is a Node.js server and React UI that orchestrates teams of AI agents to run entire businesses autonomously. It functions as a management layer where you define business goals, hire AI agents (from any provider like OpenClaw, Claude, Cursor, Codex), assign roles in an org chart, and monitor their work through a unified dashboard. Think of it as the "company" that manages your AI "employees."
+
+* **Key features**: Bring-your-own-agent compatibility with any AI that can receive heartbeats; full organizational structure with hierarchies, roles, and reporting lines; cost control with per-agent monthly budgets; goal alignment system that traces every task back to company mission; scheduled heartbeats for autonomous 24/7 operation; ticket-based task system with full audit trails; governance controls for approving strategies and managing agents; multi-company support from one deployment; mobile-ready interface for managing businesses anywhere.
+
+* **Why it's notable**: Paperclip solves the chaos of managing multiple AI agents simultaneously—no more juggling 20 Claude Code tabs or losing context on reboots. It's gaining traction (1,522 stars) because it treats AI orchestration as a business management problem rather than a technical one, providing atomic execution, persistent agent state, and proper governance. The upcoming "Clipmart" feature will let users download and run entire pre-configured AI companies with one click, making autonomous business creation accessible to anyone.
+
+---
+
+### Paperclip - 零人力公司的开源编排平台
+
+* **功能介绍**: Paperclip 是一个 Node.js 服务器和 React 界面,用于编排 AI 智能体团队自主运营整个企业。它作为管理层运作,你可以定义业务目标、雇佣 AI 智能体(支持 OpenClaw、Claude、Cursor、Codex 等任何提供商)、在组织架构图中分配角色,并通过统一仪表板监控它们的工作。可以把它理解为管理 AI "员工"的"公司"。
+
+* **主要特点**: 兼容任何能接收心跳信号的 AI 智能体;完整的组织架构,包含层级、角色和汇报关系;成本控制,为每个智能体设置月度预算;目标对齐系统,将每个任务追溯到公司使命;定时心跳机制实现 7×24 小时自主运行;基于工单的任务系统,提供完整审计追踪;治理控制,可批准策略并管理智能体;单次部署支持多公司运营;移动端就绪,随时随地管理自主业务。
+
+* **为何值得关注**: Paperclip 解决了同时管理多个 AI 智能体的混乱问题——不再需要同时打开 20 个 Claude Code 标签页或在重启后丢失上下文。它获得关注(1,522 星标)是因为将 AI 编排视为业务管理问题而非技术问题,提供原子化执行、持久化智能体状态和适当的治理机制。即将推出的"Clipmart"功能将允许用户一键下载并运行整个预配置的 AI 公司,让自主业务创建变得人人可及。
+
+**[View Repository / 查看仓库](https://github.com/paperclipai/paperclip)**
+
+### 🎬 Claude Code Skills Are Broken (Beginner to Pro)
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: A comprehensive guide exploring Claude's coding capabilities, from basic usage to advanced techniques, highlighting both strengths and limitations
+* Key topics discussed: Practical demonstrations of Claude's code generation, debugging workflows, common pitfalls to avoid, and strategies to maximize AI-assisted development productivity
+* Why it's worth watching: Essential for developers wanting to leverage Claude effectively in their workflow - shows real-world examples of what works, what doesn't, and how to bridge the gap between beginner and professional-level AI coding assistance
+
+---
+
+### 🎬 Claude 编程技能深度解析(从入门到精通)
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 全面指南,深入探讨 Claude 的编程能力,从基础使用到高级技巧,揭示其优势与局限性
+* 主要话题: 实战演示 Claude 的代码生成能力、调试工作流程、常见陷阱规避方法,以及最大化 AI 辅助开发生产力的策略
+* 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+
+### 🎬 The Dark Aura Of Linus Torvalds
+
+**Channel:** WebKnower
+
+* What the video covers: A short-form exploration of Linus Torvalds' personality and reputation in the tech community, focusing on his controversial leadership style
+* Key topics discussed: Linus Torvalds as the creator of Linux, his direct and sometimes harsh communication style, important facts about Linux operating system, and the "dark aura" or intimidating presence he's known for in developer circles
+* Why it's worth watching: Offers a quick glimpse into the personality behind one of the most influential open-source projects in computing history, perfect for those curious about tech leadership styles and Linux history
+
+---
+
+### 🎬 Linus Torvalds 的"黑暗气场"
+
+**频道:** WebKnower
+
+* 视频内容概述: 简短探讨 Linus Torvalds 在技术社区中的个性和声誉,重点关注他颇具争议的领导风格
+* 主要话题: Linus Torvalds 作为 Linux 创始人的身份、他直接甚至有时严厉的沟通方式、Linux 操作系统的重要事实,以及他在开发者圈子中闻名的"黑暗气场"或令人生畏的存在感
+* 为何值得观看: 快速了解计算机史上最具影响力的开源项目背后的人物性格,适合对技术领导风格和 Linux 历史感兴趣的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Zjk1LXWcdaw)**
 
