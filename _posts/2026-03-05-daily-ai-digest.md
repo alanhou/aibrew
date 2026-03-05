@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 05, 2026"
 date: 2026-03-05
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -304,75 +304,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Claude Code - 完整新手教程
-
-**频道:** Tech With Tim
-
-* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
-* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
-* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
-
-<!-- [Title-Only] -->
-### An Interactive Map of FLock Cams
-
-* Based on the title, this article likely presents an interactive geographical visualization of "FLock Cams" - which appears to be a network or collection of cameras (possibly surveillance, traffic, or monitoring cameras) distributed across a region. The URL coordinates suggest coverage of the United States.
-* This might be interesting to readers concerned about surveillance infrastructure, privacy advocates tracking the proliferation of monitoring systems, researchers studying urban infrastructure, or those interested in open-source intelligence (OSINT) and public data visualization. The "deflock" domain name suggests this could be related to tracking or documenting surveillance technology deployment.
-
-### FLock Cams 互动地图
-
-* 根据标题推测，这篇文章可能展示了一个"FLock Cams"的交互式地理可视化地图——这似乎是一个分布在某个区域的摄像头网络或集合（可能是监控、交通或监测摄像头）。URL中的坐标显示可能覆盖美国地区。
-* 这对关注监控基础设施的读者、追踪监控系统扩散的隐私倡导者、研究城市基础设施的研究人员，或对开源情报（OSINT）和公共数据可视化感兴趣的人来说可能很有价值。"deflock"域名暗示这可能与追踪或记录监控技术部署有关。
-
-**[Read Original / 阅读原文](https://deflock.org/map#map=5/37.125286/-96.284180)**
-
-### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
-
-* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
-* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
-* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
-* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
-* Up to 16 hours of battery life on a single charge
-* Weighs just 2.7 pounds with fanless, silent operation
-* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
-* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
-* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
-* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
-* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
-* Pre-orders start March 4, 2026; availability begins March 11, 2026
-
-### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
-
-* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
-* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
-* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
-* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
-* 单次充电续航长达 16 小时
-* 重量仅 2.7 磅,无风扇静音运行
-* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
-* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
-* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
-* 运行 macOS Tahoe,集成 Apple Intelligence 功能,与 iPhone 无缝协作
-* 采用 60% 回收材料 - 苹果产品中比例最高,碳排放最低的 MacBook
-* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
-
-**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
-
-### Google AI Product Allegedly Contributed to Son's Mental Health Crisis
-
-* A father claims Google's AI product played a role in his son's delusional spiral
-* The case raises concerns about AI's potential psychological impact on vulnerable users
-* Details about the specific AI product and circumstances remain limited in the provided content
-
-### 父亲声称谷歌AI产品加剧儿子妄想症状
-
-* 一位父亲指控谷歌的AI产品导致其儿子出现妄想性精神问题
-* 该案例引发了对AI产品可能对脆弱用户造成心理影响的担忧
-* 关于具体涉及的AI产品及事件详情在提供的内容中信息有限
-
----
-
 **Note:** The HTML content provided appears to be about a different story (Meta's AI glasses privacy concerns), not matching the title about Google's AI and mental health issues. The summary above is based on the title you provided.
 
 **[Read Original / 阅读原文](https://www.bbc.com/news/articles/czx44p99457o)**
@@ -514,4 +445,111 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于想要在工作流程中有效利用 Claude 的开发者来说必看 - 展示了真实案例中哪些方法有效、哪些无效,以及如何从入门级提升到专业级的 AI 编程辅助水平
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=zKBPwDpBfhs)**
+
+### Apple Unveils MacBook Neo: Most Affordable Mac Ever at $599
+
+* Apple announces MacBook Neo, starting at $599 ($499 for education) - the company's most affordable laptop ever
+* Features durable aluminum design in four colors: blush, indigo, silver, and citrus
+* 13-inch Liquid Retina display with 2408x1506 resolution, 500 nits brightness, and 1 billion color support
+* Powered by A18 Pro chip - 50% faster for everyday tasks and 3x faster for AI workloads vs Intel Core Ultra 5 PCs
+* Up to 16 hours of battery life on a single charge
+* Weighs just 2.7 pounds with fanless, silent operation
+* Includes Magic Keyboard, large Multi-Touch trackpad, and optional Touch ID
+* 1080p FaceTime HD camera, dual mics with beamforming, and dual speakers with Spatial Audio support
+* Two USB-C ports (both support charging), headphone jack, Wi-Fi 6E, and Bluetooth 6
+* Runs macOS Tahoe with Apple Intelligence features and seamless iPhone integration
+* Built with 60% recycled content - Apple's highest percentage ever and lowest-carbon MacBook
+* Pre-orders start March 4, 2026; availability begins March 11, 2026
+
+### 苹果发布 MacBook Neo:史上最实惠 Mac,售价 599 美元
+
+* 苹果推出 MacBook Neo,起售价 599 美元(教育优惠 499 美元)——公司史上最实惠的笔记本电脑
+* 采用耐用铝合金设计,提供四种配色:腮红粉、靛蓝、银色和柑橘黄
+* 13 英寸 Liquid Retina 显示屏,分辨率 2408x1506,亮度 500 尼特,支持 10 亿色彩
+* 搭载 A18 Pro 芯片 - 日常任务速度比英特尔酷睿 Ultra 5 PC 快 50%,AI 工作负载快 3 倍
+* 单次充电续航长达 16 小时
+* 重量仅 2.7 磅,无风扇静音运行
+* 配备妙控键盘、大尺寸多点触控触控板,可选 Touch ID
+* 1080p FaceTime 高清摄像头、双麦克风波束成形技术、双扬声器支持空间音频
+* 两个 USB-C 接口(均支持充电)、耳机插孔、Wi-Fi 6E 和蓝牙 6
+* 运行 macOS Tahoe,集成 Apple Intelligence 功能,与 iPhone 无缝协作
+* 采用 60% 回收材料 - 苹果产品中比例最高,碳排放最低的 MacBook
+* 2026 年 3 月 4 日开启预购;3 月 11 日正式发售
+
+**[Read Original / 阅读原文](https://www.apple.com/newsroom/2026/03/say-hello-to-macbook-neo/)**
+
+<!-- [Title-Only] -->
+### Building a new Flash
+
+* Based on the title, this article likely discusses efforts to recreate or build a successor to Adobe Flash, the once-ubiquitous web animation and interactive content platform that was discontinued in 2020
+* This would be interesting to readers because Flash was instrumental in the early creative web, powering games, animations, and interactive experiences on sites like Newgrounds. A "new Flash" could address the nostalgia and functionality gap left by Flash's demise while incorporating modern web standards and security improvements
+* Given the URL is from Newgrounds (a platform historically built around Flash content), this likely covers their specific approach to preserving or reimagining Flash-style content creation and playback
+
+### 构建新的 Flash
+
+* 根据标题推测，这篇文章可能讨论了重建或开发 Adobe Flash 继任者的努力。Flash 曾是无处不在的网页动画和交互内容平台，于 2020 年停止支持
+* 这个话题值得关注，因为 Flash 在早期创意网络中发挥了重要作用，为 Newgrounds 等网站上的游戏、动画和交互体验提供支持。"新 Flash" 可以填补 Flash 消失后留下的怀旧和功能空白，同时融入现代网络标准和安全改进
+* 鉴于该 URL 来自 Newgrounds（一个历史上以 Flash 内容为核心的平台），文章很可能介绍他们在保存或重新构想 Flash 风格内容创作和播放方面的具体方法
+
+**[Read Original / 阅读原文](https://bill.newgrounds.com/news/post/1607118)**
+
+### Anthropic CEO Accuses OpenAI of "Straight Up Lies" Over Pentagon Deal
+
+* Anthropic CEO Dario Amodei harshly criticized OpenAI's Department of Defense contract in an internal memo, calling their messaging "straight up lies" and "safety theater"
+* Anthropic walked away from a DoD deal after refusing to grant "unrestricted access" to its AI, insisting on explicit prohibitions against domestic mass surveillance and autonomous weaponry
+* OpenAI subsequently signed a contract with the DoD (rebranded as "Department of War" under Trump administration) claiming similar safeguards, but only restricting "unlawful" uses
+* Amodei argues OpenAI "cared about placating employees" while Anthropic "actually cared about preventing abuses," accusing Sam Altman of falsely positioning himself as a peacemaker
+* Critics note that "lawful use" clauses are weak protections since laws can change, making current illegal activities potentially legal in the future
+* Public backlash was significant: ChatGPT uninstalls surged 295% after the OpenAI-DoD deal announcement, while Anthropic's app ranking jumped to #2 in the App Store
+* Amodei expressed concern about OpenAI's messaging potentially influencing OpenAI employees, though he believes the public and media see through the "spin/gaslighting"
+
+### Anthropic CEO 指责 OpenAI 在五角大楼交易中"彻头彻尾撒谎"
+
+* Anthropic CEO Dario Amodei 在内部备忘录中严厉批评 OpenAI 与国防部的合同,称其信息传递为"彻头彻尾的谎言"和"安全作秀"
+* Anthropic 拒绝向国防部授予其 AI 技术的"无限制访问权",坚持明确禁止用于国内大规模监控和自主武器系统后退出交易
+* OpenAI 随后与国防部(在特朗普政府下更名为"战争部")签署合同,声称有类似保障措施,但仅限制"非法"用途
+* Amodei 认为 OpenAI "关心安抚员工",而 Anthropic "真正关心防止滥用",指责 Sam Altman 虚假地将自己定位为和平缔造者
+* 批评者指出"合法使用"条款是薄弱的保护,因为法律可以改变,使当前非法活动在未来可能合法化
+* 公众强烈反对:OpenAI-国防部交易公布后,ChatGPT 卸载量激增 295%,而 Anthropic 的应用排名跃升至 App Store 第 2 名
+* Amodei 担心 OpenAI 的信息传递可能影响 OpenAI 员工,尽管他认为公众和媒体能看穿这种"操纵/煤气灯效应"
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/)**
+
+### 🎬 Are We Living in a Simulation? - Elon Musk
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth discussion with Elon Musk exploring the simulation hypothesis - the philosophical and scientific argument that our reality might be a computer-generated simulation
+* Key topics discussed: The probability we're living in a simulation, technological advancement trajectories, consciousness and reality, implications for humanity's future, and the intersection of physics, computing power, and existential questions
+* Why it's worth watching: Elon Musk offers his unique perspective on one of the most mind-bending questions in modern philosophy and technology, combining his expertise in AI, computing, and futuristic thinking with accessible explanations that challenge our understanding of reality itself
+
+---
+
+### 🎬 我们生活在模拟世界中吗? - 埃隆·马斯克
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与埃隆·马斯克深入探讨"模拟假说"——即我们的现实可能是计算机生成的模拟世界这一哲学和科学论点
+* 主要话题: 我们生活在模拟世界中的概率、技术进步轨迹、意识与现实的本质、对人类未来的影响,以及物理学、计算能力和存在主义问题的交叉探讨
+* 为何值得观看: 埃隆·马斯克对现代哲学和技术中最令人费解的问题之一提供了独特见解,将他在人工智能、计算和未来主义思维方面的专业知识与通俗易懂的解释相结合,挑战我们对现实本身的理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=t3P3Kt5VS2Y)**
+
+### 🎬 Claude Code - Full Tutorial for Beginners
+
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, an AI-powered coding assistant that helps developers write, debug, and understand code more efficiently
+* Key topics discussed: Getting started with Claude Code, core features and capabilities, practical coding examples, integration with development workflows, best practices for using AI coding assistants effectively
+* Why it's worth watching: Perfect for developers new to AI-assisted coding who want to boost productivity and learn how to leverage Claude's advanced code generation and problem-solving capabilities in real-world projects
+
+---
+
+### 🎬 Claude Code - 完整新手教程
+
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面介绍 Claude Code 的新手教程,这是一款 AI 驱动的编程助手,可帮助开发者更高效地编写、调试和理解代码
+* 主要话题: Claude Code 入门指南、核心功能与特性、实用编程示例、与开发工作流的集成、有效使用 AI 编程助手的最佳实践
+* 为何值得观看: 非常适合刚接触 AI 辅助编程的开发者,想要提升生产力并学习如何在实际项目中充分利用 Claude 的高级代码生成和问题解决能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ntDIxaeo3Wg)**
 
