@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 06, 2026"
 date: 2026-03-06
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -669,14 +669,35 @@ I need the complete content to provide an accurate summary. The HTML appears to 
 
 ---
 
-### 🎬 Claude 插件与技能教程(所有更新合集)
-**频道:** The Cutting Edge School
+### 🎬 如何测试数百块 PD 步进电机 PCB #arduino #esp32 #pcb
+**频道:** Things by Josh
 
-* 视频内容概述: 一个综合性教程,汇总了关于 Claude 插件和技能功能的所有更新,演示如何通过自定义集成扩展 Claude 的能力
-* 主要话题: 插件安装与配置、Claude 技能开发、扩展 AI 功能的实际应用案例、Claude 生态系统中的最新更新和特性
-* 为何值得观看: 对于希望通过自定义工具和自动化最大化 Claude 潜力的专业人士来说必不可少;将所有最新更新整合在一个视频中,节省了查找分散文档的时间
+* 视频内容概述: 创作者展示了批量生产 PD(电源传输)步进电机控制器 PCB 的自动化测试流程,呈现从制造到质量保证的完整工作流程
+* 主要话题: PCB 测试方法论、Arduino/ESP32 集成应用、自动化测试夹具、批量生产的质量控制、常见 PCB 问题排查
+* 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试策略
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6EFOT6hjvAU)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+
+<!-- [Title-Only] -->
+### LibreSprite – Open-Source Pixel Art Editor
+
+*Note: This introduction is based on the title alone, as the article content could not be fetched.*
+
+* **What this likely covers**: LibreSprite appears to be an open-source software tool specifically designed for creating pixel art. The article probably introduces the editor's features, capabilities, and how it compares to other pixel art tools. It may cover the software's interface, drawing tools, animation capabilities, and sprite sheet management features commonly needed by game developers and pixel artists.
+
+* **Why it might be interesting**: For indie game developers, digital artists, and retro gaming enthusiasts, having a free and open-source alternative to commercial pixel art software is valuable. The open-source nature means the community can contribute improvements, it's free to use, and the source code is transparent. This is particularly relevant for those working on 2D games, retro-style projects, or anyone interested in the pixel art aesthetic without investing in expensive proprietary software.
+
+---
+
+### LibreSprite – 开源像素艺术编辑器
+
+*注：由于无法获取文章内容，以下介绍仅基于标题推测。*
+
+* **文章可能涵盖的内容**: LibreSprite 似乎是一款专门用于创作像素艺术的开源软件工具。文章可能介绍该编辑器的功能特性、使用方法，以及与其他像素艺术工具的对比。内容可能涵盖软件界面、绘图工具、动画制作能力，以及游戏开发者和像素艺术家常用的精灵图管理功能。
+
+* **为何值得关注**: 对于独立游戏开发者、数字艺术家和复古游戏爱好者来说，拥有一个免费且开源的商业像素艺术软件替代品非常有价值。开源特性意味着社区可以贡献改进、免费使用，且源代码透明。这对于从事 2D 游戏开发、复古风格项目的创作者，或任何想要尝试像素艺术风格而不想投资昂贵专有软件的人来说都特别相关。
+
+**[Read Original / 阅读原文](https://libresprite.github.io/)**
 
 ### System76 CEO Critiques Age Verification Laws: Why Restricting Digital Access Harms Innovation and Liberty
 
@@ -700,51 +721,133 @@ I need the complete content to provide an accurate summary. The HTML appears to 
 * 这些法律给 Linux 等开源生态系统带来问题，不提供年龄信号的发行版将导致用户的互联网访问受限
 * 控制用户活动的中心化平台本身也可能被政府控制，而 Linux 等去中心化平台则保护个人自由
 * 真正的解决方案不是技术或法律限制，而是文化层面的——教育儿童了解数字生活，而不是在他们 16 或 18 岁之前阻止访问
-* System76 将像遵守 ADA 无障碍和能源之星法规一样遵守法律，但希望这些年龄验证法律被认定为违宪
+* System76 将遵守法律，就像遵守 ADA 无障碍和能源之星法规一样，但希望这些年龄验证法律能被认定为违宪
 
 **[Read Original / 阅读原文](https://blog.system76.com/post/system76-on-age-verification/)**
 
-<!-- [Title-Only] -->
-### 10% of Firefox crashes are caused by bitflips
+### GPL License Upgrades via Section 14 Proxy Delegation
 
-* Based on the title, this article likely discusses a surprising finding that approximately 10% of Firefox browser crashes are attributed to bitflips - random changes in computer memory bits caused by cosmic rays, electrical interference, or hardware defects
-* This is interesting because it highlights an often-overlooked source of software instability that isn't due to bugs in the code itself, but rather hardware-level issues that can affect any running application. It raises questions about software reliability, error detection mechanisms, and the challenges of debugging issues that aren't reproducible
+* The GPL-3.0-only vs GPL-3.0-or-later dilemma: "only" locks you to version 3.0 (requiring all copyright holders' consent to upgrade), while "or-later" gives FSF unilateral power to change your program's license terms
+* Section 14 of GPL/AGPL v3.0 allows designating a proxy to decide which future GPL versions can be used for the program
+* The author's solution: Use GPL-3.0-only but designate yourself (or a trusted party) as the Section 14 proxy, giving you controlled upgrade authority without FSF's blanket power
+* This approach maintains license stability while preserving flexibility for future upgrades, avoiding both the rigidity of "only" and the FSF dependency of "or-later"
+* Surprisingly underutilized strategy in open source licensing debates despite being explicitly permitted by the license text
 
-### 10% 的 Firefox 崩溃是由位翻转引起的
+### GPL 第 14 条代理授权的许可证升级机制
 
-* 根据标题推测,这篇文章可能讨论了一个令人惊讶的发现:大约 10% 的 Firefox 浏览器崩溃是由位翻转造成的——这是由宇宙射线、电气干扰或硬件缺陷导致的计算机内存位的随机变化
-* 这个话题值得关注,因为它揭示了一个经常被忽视的软件不稳定性来源,这些崩溃并非代码本身的 bug 造成,而是硬件层面的问题,可能影响任何正在运行的应用程序。这引发了关于软件可靠性、错误检测机制以及调试不可重现问题的挑战等思考
+* GPL-3.0-only 与 GPL-3.0-or-later 的两难选择："only"将项目锁定在 3.0 版本(升级需所有版权持有人同意),而"or-later"则赋予 FSF 单方面改变程序许可条款的权力
+* GPL/AGPL v3.0 第 14 条允许指定代理人来决定程序可使用哪些未来的 GPL 版本
+* 作者的解决方案:使用 GPL-3.0-only 但指定自己(或可信方)为第 14 条代理人,在不依赖 FSF 的情况下获得可控的升级权限
+* 这种方法既保持了许可证的稳定性,又保留了未来升级的灵活性,避免了"only"的僵化和"or-later"对 FSF 的依赖
+* 尽管许可证文本明确允许这一策略,但在开源许可讨论中却很少被提及和使用
 
-**[Read Original / 阅读原文](https://mas.to/@gabrielesvelto/116171750653898304)**
+**[Read Original / 阅读原文](https://runxiyu.org/comp/gplproxy/)**
 
-<!-- [Title-Only] -->
-### Show HN: Swarm – Program a colony of 200 ants using a custom assembly language
+### Qwen-Agent - LLM Agent Framework Built on Qwen Models
 
-* Based on the title, this article likely introduces an interactive programming environment or game where you control a colony of 200 ants using a custom-designed assembly language. It appears to be a "Show HN" post, meaning the creator is sharing their project with the Hacker News community.
-* This would be interesting to readers who enjoy programming challenges, game development, emergent behavior simulations, or learning low-level programming concepts. The combination of swarm intelligence and assembly language programming creates a unique educational and entertainment experience that bridges systems programming with artificial life simulations.
+* **What it does**: Qwen-Agent is a comprehensive framework for building LLM-powered applications with advanced capabilities like function calling, tool usage, planning, and memory. It powers the backend of Qwen Chat and provides ready-to-use components for creating intelligent agents that can execute code, browse the web, process documents, and integrate with external tools.
 
-### Show HN: Swarm – 使用自定义汇编语言编程控制 200 只蚂蚁群体
+* **Key features**: 
+  * Modular architecture with atomic components (LLMs, Tools, Agents) for flexible agent development
+  * Built-in tools including Code Interpreter, RAG (Retrieval-Augmented Generation), and MCP (Model Context Protocol) support
+  * Multi-modal capabilities with Qwen3-VL for image processing and visual reasoning
+  * Support for multiple deployment options (DashScope cloud service, vLLM, Ollama)
+  * Gradio-based GUI for rapid prototyping and demo deployment
+  * Custom tool creation with simple decorator-based registration
+  * Production-ready examples: Browser Assistant, Code Interpreter, Custom Assistant
 
-* 根据标题推测，这篇文章可能介绍了一个交互式编程环境或游戏，让你使用自定义设计的汇编语言来控制一个由 200 只蚂蚁组成的群体。这是一个"Show HN"帖子，意味着创作者正在向 Hacker News 社区分享他们的项目。
-* 这对喜欢编程挑战、游戏开发、涌现行为模拟或学习底层编程概念的读者来说会很有趣。群体智能与汇编语言编程的结合创造了一种独特的教育和娱乐体验，将系统编程与人工生命模拟连接起来。
-
-**[Read Original / 阅读原文](https://dev.moment.com/)**
-
-### 🎬 How I test hundreds of PD Stepper PCB's #arduino #esp32 #pcb
-**Channel:** Things by Josh
-
-* What the video covers: The creator demonstrates their automated testing process for mass-producing PD (Power Delivery) Stepper motor controller PCBs, showing the workflow from manufacturing to quality assurance
-* Key topics discussed: PCB testing methodology, Arduino/ESP32 integration, automated testing fixtures, quality control for batch production, troubleshooting common PCB issues
-* Why it's worth watching: Provides practical insights into scaling hardware projects from prototype to production, showcasing real-world testing strategies that makers and hardware engineers can apply to their own PCB manufacturing processes
+* **Why it's notable**: Gaining 684 stars today, Qwen-Agent stands out as the official agent framework from Alibaba's Qwen team, offering enterprise-grade reliability with active development (latest Qwen3.5 support added Feb 2026). It bridges the gap between research and production with comprehensive documentation, evaluation benchmarks (DeepPlanning), and real-world deployment in Qwen Chat. The framework's support for advanced reasoning models like QwQ-32B and specialized variants (Qwen3-Coder, Qwen2.5-Math) makes it particularly attractive for developers building sophisticated AI applications requiring multi-step reasoning and tool integration.
 
 ---
 
-### 🎬 如何测试数百块 PD 步进电机 PCB #arduino #esp32 #pcb
-**频道:** Things by Josh
+### Qwen-Agent - 基于 Qwen 模型的大语言模型智能体框架
 
-* 视频内容概述: 创作者展示了批量生产 PD(电源传输)步进电机控制器 PCB 的自动化测试流程,呈现从制造到质量保证的完整工作流程
-* 主要话题: PCB 测试方法论、Arduino/ESP32 集成应用、自动化测试夹具、批量生产的质量控制、常见 PCB 问题排查
-* 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试策略
+* **功能介绍**: Qwen-Agent 是一个全面的大语言模型应用开发框架,具备函数调用、工具使用、规划和记忆等高级能力。它为 Qwen Chat 提供后端支持,并提供开箱即用的组件,用于创建能够执行代码、浏览网页、处理文档和集成外部工具的智能代理。
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+* **主要特点**:
+  * 模块化架构,包含原子组件(LLM、工具、智能体),支持灵活的智能体开发
+  * 内置工具包括代码解释器、RAG(检索增强生成)和 MCP(模型上下文协议)支持
+  * 通过 Qwen3-VL 实现多模态能力,支持图像处理和视觉推理
+  * 支持多种部署方式(DashScope 云服务、vLLM、Ollama)
+  * 基于 Gradio 的图形界面,便于快速原型开发和演示部署
+  * 通过简单的装饰器注册机制创建自定义工具
+  * 生产级示例应用:浏览器助手、代码解释器、自定义助手
+
+* **为何值得关注**: 今日获得 684 星标,Qwen-Agent 作为阿里巴巴 Qwen 团队的官方智能体框架,提供企业级可靠性和活跃的开发支持(2026年2月新增 Qwen3.5 支持)。它通过完善的文档、评估基准(DeepPlanning)以及在 Qwen Chat 中的实际部署,成功连接了研究与生产之间的桥梁。该框架对 QwQ-32B 等高级推理模型和专业变体(Qwen3-Coder、Qwen2.5-Math)的支持,使其特别适合开发需要多步推理和工具集成的复杂 AI 应用。
+
+**[View Repository / 查看仓库](https://github.com/QwenLM/Qwen-Agent)**
+
+### HVE Core - Enterprise Prompt Engineering Framework for GitHub Copilot
+
+* **What it does**: HVE Core is a comprehensive prompt engineering framework that supercharges GitHub Copilot with 34 specialized AI agents, 68 coding instructions, 40 reusable prompts, and structured workflows. It implements the RPI (Research → Plan → Implement) methodology to transform AI from generating "plausible code" to producing "verified truth" through constraint-based design.
+
+* **Key features**: Four distinct artifact types (Instructions, Prompts, Agents, Skills) with JSON schema validation; automatic file-pattern-based instruction application; VS Code extension with 30-second installation; enterprise-grade CI/CD validation pipeline; cross-platform PowerShell scripts; subagent delegation for complex tasks; maturity lifecycle management (experimental → preview → stable → deprecated).
+
+* **Why it's notable**: Gaining 275 stars today because it solves a critical enterprise problem—preventing AI "runaway behavior" through structured boundaries while scaling from solo developers to large teams. Microsoft's production-ready approach with OpenSSF Best Practices badge, comprehensive documentation, and responsible AI standards makes it the first enterprise-grade framework for systematically enhancing GitHub Copilot's capabilities across entire organizations.
+
+---
+
+### HVE Core - GitHub Copilot 企业级提示工程框架
+
+* **功能介绍**: HVE Core 是一个全面的提示工程框架,通过 34 个专业 AI 代理、68 条编码指令、40 个可复用提示模板和结构化工作流来增强 GitHub Copilot。它实现了 RPI(研究 → 规划 → 实施)方法论,通过基于约束的设计将 AI 从生成"看似合理的代码"转变为产出"经过验证的真实方案"。
+
+* **主要特点**: 四种不同的工件类型(指令、提示、代理、技能)配备 JSON 模式验证;基于文件模式的自动指令应用;VS Code 扩展 30 秒快速安装;企业级 CI/CD 验证管道;跨平台 PowerShell 脚本;复杂任务的子代理委托;成熟度生命周期管理(实验 → 预览 → 稳定 → 弃用)。
+
+* **为何值得关注**: 今日获得 275 星是因为它解决了企业关键痛点——通过结构化边界防止 AI "失控行为",同时支持从个人开发者到大型团队的扩展。微软的生产就绪方案配备 OpenSSF 最佳实践徽章、完善文档和负责任 AI 标准,使其成为首个系统性增强 GitHub Copilot 能力的企业级框架,可在整个组织范围内部署。
+
+**[View Repository / 查看仓库](https://github.com/microsoft/hve-core)**
+
+### CyberStrikeAI - AI-Native Security Testing Platform with 100+ Integrated Tools
+
+* An AI-powered security testing platform built in Go that orchestrates 100+ security tools (nmap, sqlmap, nuclei, metasploit, etc.) through natural language commands. Uses OpenAI-compatible models to automate penetration testing workflows from reconnaissance to exploitation.
+* Role-based testing with 12+ predefined security personas (Penetration Testing, CTF, Web App Scanning, API Security), skills system with 20+ specialized techniques (SQL injection, XSS, API security), native MCP protocol support, attack-chain visualization, vulnerability management with CRUD operations, batch task queues, knowledge base with vector search, and mobile chatbot integration (DingTalk/Lark).
+* Trending for bringing conversational AI to offensive security—security teams can now describe targets in plain language and let AI agents autonomously select tools, chain exploits, visualize attack paths, and generate audit trails. The role/skills architecture and one-command deployment lower the barrier for automated security testing.
+
+---
+
+### CyberStrikeAI - AI 原生安全测试平台,集成 100+ 工具
+
+* 基于 Go 构建的 AI 驱动安全测试平台,通过自然语言命令编排 100+ 安全工具(nmap、sqlmap、nuclei、metasploit 等)。使用 OpenAI 兼容模型自动化渗透测试工作流,从侦察到漏洞利用全流程覆盖。
+* 角色化测试系统包含 12+ 预定义安全角色(渗透测试、CTF、Web 应用扫描、API 安全),技能系统提供 20+ 专业测试技能(SQL 注入、XSS、API 安全),原生 MCP 协议支持,攻击链可视化,漏洞全生命周期管理,批量任务队列,向量搜索知识库,以及钉钉/飞书移动端集成。
+* 因将对话式 AI 引入攻击性安全领域而受关注——安全团队现在可以用自然语言描述目标,让 AI 代理自主选择工具、串联漏洞利用、可视化攻击路径并生成审计日志。角色/技能架构和一键部署降低了自动化安全测试的门槛。
+
+**[View Repository / 查看仓库](https://github.com/Ed1s0nZ/CyberStrikeAI)**
+
+### 🎬 There are 2 kinds of devs. One of them is screwed. Justin Searls interview [Podcast #210]
+
+**Channel:** freeCodeCamp.org
+
+* This podcast features an in-depth interview with Justin Searls, a software engineer who co-founded a successful software agency 15 years ago that continues to thrive today
+* Key topics include the two distinct types of developers in the industry, the evolving landscape of software development, insights from running a long-standing software agency, and what skills and mindsets will matter most for developers' future careers
+* Worth watching because Justin brings real-world experience from building and sustaining a software business over 15 years, offering practical perspectives on how developers can position themselves for success in an rapidly changing tech industry, especially as AI and automation reshape the field
+
+---
+
+### 🎬 两种开发者,其中一种要完蛋了。Justin Searls 访谈 [播客 #210]
+
+**频道:** freeCodeCamp.org
+
+* 本期播客深度访谈了 Justin Searls,他是一位软件工程师,15年前联合创立了一家至今仍在蓬勃发展的软件代理公司
+* 主要话题包括软件行业中两种截然不同的开发者类型、软件开发领域的演变趋势、经营长期软件代理公司的经验洞察,以及对开发者未来职业发展最重要的技能和思维方式
+* 值得观看因为 Justin 带来了15年构建和维持软件业务的实战经验,提供了关于开发者如何在快速变化的技术行业中定位自己以获得成功的实用观点,特别是在人工智能和自动化重塑该领域的背景下
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=hP931079TMw)**
+
+### 🎬 Claude Plugins & Skills Tutorial (All Updates Combined)
+**Channel:** The Cutting Edge School
+
+* What the video covers: A comprehensive tutorial combining all updates about Claude's plugins and skills functionality, demonstrating how to extend Claude's capabilities through custom integrations
+* Key topics discussed: Plugin installation and configuration, skills development for Claude, practical use cases for extending AI functionality, latest updates and features in the Claude ecosystem
+* Why it's worth watching: Essential for professionals looking to maximize Claude's potential through custom tools and automations; provides consolidated information on all recent updates in one place, saving time on researching scattered documentation
+
+---
+
+### 🎬 Claude 插件与技能教程(所有更新合集)
+**频道:** The Cutting Edge School
+
+* 视频内容概述: 一个综合性教程,汇总了关于 Claude 插件和技能功能的所有更新,演示如何通过自定义集成扩展 Claude 的能力
+* 主要话题: 插件安装与配置、Claude 技能开发、扩展 AI 功能的实际应用案例、Claude 生态系统中的最新更新和特性
+* 为何值得观看: 对于希望通过自定义工具和自动化最大化 Claude 潜力的专业人士来说必不可少;将所有最新更新整合在一个视频中,节省了查找分散文档的时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6EFOT6hjvAU)**
 
