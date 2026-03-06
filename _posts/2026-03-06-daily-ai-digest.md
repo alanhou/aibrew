@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 06, 2026"
 date: 2026-03-06
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -588,4 +588,93 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试解决方案
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
+
+I need the complete content to provide an accurate summary. The HTML appears to be cut off mid-sentence. Could you provide the full article content?
+
+**[Read Original / 阅读原文](https://www.feldera.com/blog/nobody-ever-got-fired-for-using-a-struct)**
+
+<!-- [Title-Only] -->
+### 10% of Firefox crashes are caused by bitflips
+
+* Based on the title, this article likely discusses a surprising finding that approximately 10% of Firefox browser crashes are attributed to bitflips - random changes in computer memory bits caused by cosmic rays, electrical interference, or hardware defects
+* This is interesting because it highlights an often-overlooked source of software instability that isn't due to bugs in the code itself, but rather hardware-level issues that can affect any running application. It raises questions about software reliability, error detection mechanisms, and the challenges of debugging issues that aren't reproducible
+
+### 10% 的 Firefox 崩溃是由位翻转引起的
+
+* 根据标题推测,这篇文章可能讨论了一个令人惊讶的发现:大约 10% 的 Firefox 浏览器崩溃是由位翻转造成的——这是由宇宙射线、电气干扰或硬件缺陷导致的计算机内存位的随机变化
+* 这个话题值得关注,因为它揭示了一个经常被忽视的软件不稳定性来源,这些崩溃并非代码本身的 bug 造成,而是硬件层面的问题,可能影响任何正在运行的应用程序。这引发了关于软件可靠性、错误检测机制以及调试不可重现问题的挑战等思考
+
+**[Read Original / 阅读原文](https://mas.to/@gabrielesvelto/116171750653898304)**
+
+### AI's Labor Market Impact: New Measurement Framework Shows Limited Disruption So Far
+
+* Anthropic introduces "observed exposure" metric combining theoretical AI capability with real-world Claude usage data, prioritizing automated and work-related applications
+* Current AI adoption significantly lags theoretical potential—actual workplace implementation covers only a fraction of feasible tasks
+* High-exposure occupations show slower projected growth through 2034, with affected workers typically older, female, more educated, and higher-paid
+* No systematic unemployment increase detected among exposed workers since late 2022, though some evidence suggests slower hiring of younger workers in these roles
+* Framework designed for ongoing monitoring as AI adoption evolves, acknowledging past labor prediction failures (offshoring, robots, trade shocks)
+* Methodology combines O*NET occupational database, Anthropic Economic Index usage data, and Eloundou et al.'s theoretical capability scores
+* 97% of observed Claude tasks fall within theoretically feasible categories, but real-world barriers (legal, software, verification requirements) slow adoption
+* Exposure scoring weighs five factors: theoretical feasibility, actual usage volume, work context, automation level, and task proportion within roles
+
+### AI对劳动力市场的影响:新测量方法显示目前影响有限
+
+* Anthropic推出"观察暴露度"指标,结合理论AI能力与Claude实际使用数据,重点关注自动化和工作相关应用
+* 当前AI采用远未达到理论潜力——实际工作场所应用仅覆盖可行任务的一小部分
+* 高暴露度职业预计到2034年增长较慢,受影响工作者通常年龄较大、女性、教育程度较高且收入较高
+* 自2022年底以来,暴露度高的工作者未出现系统性失业增加,但有迹象表明这些职业中年轻工作者的招聘有所放缓
+* 该框架设计用于持续监测AI采用演变,承认过去劳动力预测的失败(离岸外包、机器人、贸易冲击)
+* 方法论结合O*NET职业数据库、Anthropic经济指数使用数据和Eloundou等人的理论能力评分
+* 观察到的Claude任务中97%属于理论上可行的类别,但现实障碍(法律、软件、验证要求)减缓了采用速度
+* 暴露度评分权衡五个因素:理论可行性、实际使用量、工作场景、自动化水平和任务在角色中的占比
+
+**[Read Original / 阅读原文](https://www.anthropic.com/research/labor-market-impacts)**
+
+### PM Skills Marketplace - AI-Powered Product Management Framework System
+
+* **What it does**: A comprehensive plugin marketplace delivering 65+ structured PM skills and 36 chained workflows across 8 specialized plugins, transforming AI assistants (primarily Claude) into guided product management systems that encode proven frameworks from industry experts like Teresa Torres, Marty Cagan, and Alberto Savoia.
+
+* **Key features**: 
+  - 8 domain-specific plugins covering discovery, strategy, execution, launch, growth, market research, data analytics, and toolkit
+  - Slash commands (`/discover`, `/strategy`, `/write-prd`) that chain multiple skills into end-to-end workflows
+  - Framework-driven approach replacing generic AI responses with structured methodologies (Opportunity Solution Trees, Lean Canvas, SWOT, OKRs)
+  - Cross-platform compatibility with Claude Code, Claude Cowork, Gemini CLI, Cursor, and other AI assistants
+  - Automated skill loading with intelligent context awareness
+
+* **Why it's notable**: Bridges the gap between theoretical PM knowledge and practical execution by embedding battle-tested frameworks directly into AI workflows. With 1,851 stars, it's gaining traction as a structured alternative to generic AI assistance, offering PMs a systematic approach to product decisions rather than just faster document generation. The modular plugin architecture and universal skill format make it adaptable across multiple AI platforms.
+
+---
+
+### PM Skills Marketplace - AI 驱动的产品管理框架系统
+
+* **功能介绍**: 一个综合性插件市场,提供 65+ 个结构化产品管理技能和 36 个链式工作流,涵盖 8 个专业插件,将 AI 助手(主要是 Claude)转变为引导式产品管理系统,内置 Teresa Torres、Marty Cagan 和 Alberto Savoia 等行业专家的成熟框架。
+
+* **主要特点**:
+  - 8 个领域专用插件,覆盖产品发现、战略、执行、发布、增长、市场研究、数据分析和工具包
+  - 斜杠命令(`/discover`、`/strategy`、`/write-prd`)将多个技能串联成端到端工作流
+  - 框架驱动方法,用结构化方法论(机会解决方案树、精益画布、SWOT、OKR)替代通用 AI 回复
+  - 跨平台兼容 Claude Code、Claude Cowork、Gemini CLI、Cursor 等多个 AI 助手
+  - 自动技能加载与智能上下文感知
+
+* **为何值得关注**: 通过将经过实战检验的框架直接嵌入 AI 工作流,弥合了产品管理理论知识与实际执行之间的鸿沟。凭借 1,851 个星标,该项目作为通用 AI 辅助的结构化替代方案正在获得关注,为产品经理提供系统化的产品决策方法,而不仅仅是更快的文档生成。模块化插件架构和通用技能格式使其可适配多个 AI 平台。
+
+**[View Repository / 查看仓库](https://github.com/phuryn/pm-skills)**
+
+### 🎬 Claude Plugins & Skills Tutorial (All Updates Combined)
+**Channel:** The Cutting Edge School
+
+* What the video covers: A comprehensive tutorial combining all updates about Claude's plugins and skills functionality, demonstrating how to extend Claude's capabilities through custom integrations
+* Key topics discussed: Plugin installation and configuration, skills development for Claude, practical use cases for extending AI functionality, latest updates and features in the Claude ecosystem
+* Why it's worth watching: Essential for professionals looking to maximize Claude's potential through custom tools and automations; provides consolidated information on all recent updates in one place, saving time on researching scattered documentation
+
+---
+
+### 🎬 Claude 插件与技能教程(所有更新合集)
+**频道:** The Cutting Edge School
+
+* 视频内容概述: 一个综合性教程,汇总了关于 Claude 插件和技能功能的所有更新,演示如何通过自定义集成扩展 Claude 的能力
+* 主要话题: 插件安装与配置、Claude 技能开发、扩展 AI 功能的实际应用案例、Claude 生态系统中的最新更新和特性
+* 为何值得观看: 对于希望通过自定义工具和自动化最大化 Claude 潜力的专业人士来说必不可少;将所有最新更新整合在一个视频中,节省了查找分散文档的时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6EFOT6hjvAU)**
 
