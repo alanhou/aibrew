@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 06, 2026"
 date: 2026-03-06
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -504,4 +504,88 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 这个详尽的教程深入探讨了现代 AI 驱动的开发技术，非常适合希望将前沿 AI 工具集成到编码工作流程中、并通过下一代开发实践提升生产力的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=gcuR_-rzlDw)**
+
+### CBP Tapped Into the Online Advertising Ecosystem To Track Peoples' Movements
+
+* Customs and Border Protection (CBP) purchased data from the online advertising ecosystem to track people's precise movements over time
+* The data is collected from ordinary apps including video games, dating services, and fitness trackers
+* An internal Department of Homeland Security (DHS) document obtained by 404 Media reveals this practice
+* Immigration and Customs Enforcement (ICE) has also purchased similar surveillance tools capable of monitoring phone movements in entire neighborhoods
+* ICE expressed interest in sourcing more "Ad Tech" data for investigations through public procurement documents
+* Around 70 lawmakers urged the DHS oversight body to investigate ICE's location data purchases
+* Privacy experts describe this advertising data as a "goldmine for tracking where every person is and what they read, watch, and listen to"
+
+### 美国海关边境保护局利用在线广告生态系统追踪民众行踪
+
+* 美国海关边境保护局(CBP)从在线广告生态系统购买数据,用于追踪人们的精确行踪
+* 这些数据来自普通应用程序,包括视频游戏、约会服务和健身追踪器
+* 404 Media获得的国土安全部(DHS)内部文件揭露了这一做法
+* 移民海关执法局(ICE)也购买了类似的监控工具,能够监控整个社区内手机的移动情况
+* ICE通过公开采购文件表示有意采购更多"广告技术"数据用于调查
+* 约70名国会议员敦促国土安全部监督机构调查ICE购买位置数据的行为
+* 隐私专家将这类广告数据描述为"追踪每个人位置及其阅读、观看和收听内容的金矿"
+
+**[Read Original / 阅读原文](https://www.404media.co/cbp-tapped-into-the-online-advertising-ecosystem-to-track-peoples-movements/)**
+
+### Anthropic's Response to Department of War Supply Chain Risk Designation
+
+* Anthropic received official confirmation on March 4 that it has been designated as a supply chain risk to U.S. national security by the Department of War
+* The company plans to challenge this designation in court, believing the action is not legally sound
+* The designation has narrow scope under 10 USC 3252, affecting only Claude usage directly tied to Department of War contracts, not all customers who have such contracts
+* Anthropic had been in productive discussions with the Department about serving within their two policy exceptions (no fully autonomous weapons, no mass domestic surveillance)
+* CEO Dario Amodei apologized for a leaked internal post written during a chaotic day when the President announced removal from federal systems and OpenAI's Pentagon deal was announced
+* The company emphasizes it does not believe private companies should be involved in operational military decision-making, only providing tools
+* Anthropic will continue providing models to the Department of War at nominal cost during the transition period to ensure warfighters aren't deprived of critical AI tools during active operations
+* The company stresses shared commitment with the Department of War to U.S. national security and AI application across government
+
+### Anthropic 回应国防部供应链风险认定
+
+* Anthropic 于 3 月 4 日收到国防部正式信函,确认其被认定为美国国家安全的供应链风险
+* 公司计划通过法律途径挑战这一认定,认为该行动缺乏法律依据
+* 该认定范围狭窄,依据 10 USC 3252 法规,仅影响直接用于国防部合同的 Claude 使用,不影响所有拥有此类合同的客户
+* Anthropic 此前一直与国防部进行富有成效的对话,探讨如何在其两项政策例外(不参与全自主武器、不参与大规模国内监控)范围内提供服务
+* CEO Dario Amodei 为泄露的内部帖子道歉,该帖子写于总统宣布将 Anthropic 从联邦系统中移除、OpenAI 与五角大楼达成协议的混乱当天
+* 公司强调不认为私营企业应参与军事行动决策,只提供工具支持
+* Anthropic 将在过渡期内继续以名义成本向国防部提供模型,确保作战人员在重大军事行动期间不会失去关键 AI 工具
+* 公司强调与国防部在维护美国国家安全和推进政府 AI 应用方面拥有共同承诺
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/where-stand-department-war)**
+
+### Charm v2: Production-Ready Terminal UI Framework
+
+* Bubble Tea, Lip Gloss, and Bubbles v2.0.0 are officially out of beta with battle-tested stability from powering Crush AI coding agent in production
+* Core improvements include highly optimized rendering via the new Cursed Renderer (modeled on ncurses), advanced compositing, higher-fidelity input handling, and a more declarative API
+* The Cursed Renderer delivers orders of magnitude faster and more efficient rendering—critical for local apps and monetarily quantifiable for SSH-based applications
+* v2 unlocks modern terminal capabilities: richer keyboard support, inline images, synchronized rendering, clipboard transfer over SSH, and numerous meticulous enhancements
+* The ecosystem now powers 25,000+ open-source applications used by teams at NVIDIA, GitHub, Slack, Microsoft Azure, and thousands of others—all without breaking changes until v2
+* Designed for the new era where AI agents and coding tools have made the terminal a primary platform, v2 provides production-grade software for a medium that offers speed, composability, scriptability, and deep OS access
+
+### Charm v2:生产级终端 UI 框架正式发布
+
+* Bubble Tea、Lip Gloss 和 Bubbles v2.0.0 正式结束测试版,经过 Crush AI 编码代理在生产环境中的实战检验,稳定性得到充分验证
+* 核心改进包括通过全新 Cursed Renderer(基于 ncurses 渲染算法)实现的高度优化渲染、高级合成、更高保真度的输入处理以及更具声明性的 API
+* Cursed Renderer 带来数量级的渲染速度和效率提升——对本地应用意义重大,对基于 SSH 的应用则可量化为成本节约
+* v2 深度挖掘现代终端能力:更丰富的键盘支持、内联图像、同步渲染、SSH 剪贴板传输以及众多细致入微的增强功能
+* 该生态系统目前为 25,000+ 个开源应用提供支持,被 NVIDIA、GitHub、Slack、Microsoft Azure 等公司的团队使用——在 v2 之前从未引入破坏性变更
+* 专为 AI 代理和编码工具将终端变为主要平台的新时代设计,v2 为这个具有速度、可组合性、可脚本化和深度操作系统访问优势的媒介提供生产级软件
+
+**[Read Original / 阅读原文](https://charm.land/blog/v2/)**
+
+### 🎬 How I test hundreds of PD Stepper PCB's #arduino #esp32 #pcb
+**Channel:** Things by Josh
+
+* What the video covers: The creator demonstrates their automated testing process for mass-producing PD (Power Delivery) Stepper motor controller PCBs, showing the workflow from manufacturing to quality assurance
+* Key topics discussed: PCB testing methodology, Arduino/ESP32 integration, automated testing fixtures, quality control for batch production, hardware debugging techniques
+* Why it's worth watching: Provides practical insights into scaling hardware projects from prototype to production, showcasing real-world testing solutions that makers and hardware engineers can apply to their own PCB manufacturing workflows
+
+---
+
+### 🎬 如何测试数百块 PD 步进电机 PCB #arduino #esp32 #pcb
+**频道:** Things by Josh
+
+* 视频内容概述: 创作者展示了批量生产 PD(电源传输)步进电机控制器 PCB 的自动化测试流程,呈现从制造到质量保证的完整工作流程
+* 主要话题: PCB 测试方法论、Arduino/ESP32 集成应用、自动化测试夹具、批量生产质量控制、硬件调试技术
+* 为何值得观看: 提供了将硬件项目从原型扩展到量产的实用见解,展示了创客和硬件工程师可应用于自己 PCB 制造流程的真实测试解决方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_8RCy8rFJLk)**
 
