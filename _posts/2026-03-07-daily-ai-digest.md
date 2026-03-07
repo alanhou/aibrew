@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 07, 2026"
 date: 2026-03-07
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -656,4 +656,207 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
+
+### Evolution of Delete in Ki Editor
+
+* Ki's Delete operation differs from Vim/Kakoune by automatically selecting the next element instead of collapsing to single-character selection
+* Version 1 introduced selection mode-specific behavior: deletes current selection plus gap, then auto-selects next item for continuous deletion
+* Core design conflict: choosing between Left/Right (skips insignificant symbols) vs Previous/Next (includes all symbols) for gap deletion
+* Word mode problem: Left/Right could unexpectedly delete symbols like `.` and newlines when removing identifiers
+* Syntax Node mode problem: Previous/Next left invalid syntax by not removing trailing commas when deleting function parameters
+* The challenge was balancing predictable behavior across different selection modes while maintaining syntactic validity
+
+### Ki 编辑器删除操作的演进
+
+* Ki 的删除操作与 Vim/Kakoune 不同,会自动选择下一个元素而非折叠为单字符选择
+* 版本 1 引入了选择模式特定行为:删除当前选择及间隙,然后自动选择下一项以实现连续删除
+* 核心设计冲突:在 Left/Right(跳过无关符号)和 Previous/Next(包含所有符号)之间选择用于间隙删除的方式
+* 单词模式问题:Left/Right 在删除标识符时可能意外删除 `.` 和换行符等符号
+* 语法节点模式问题:Previous/Next 在删除函数参数时不会移除尾随逗号,导致语法无效
+* 挑战在于平衡不同选择模式下的可预测行为,同时保持语法有效性
+
+**[Read Original / 阅读原文](https://ki-editor.org/)**
+
+### Building a 1536 LED Retro Game Computer to Inspire Creation Over Consumption
+
+* **Motivation**: Father builds custom gaming device to shift children from passive gaming consumption to active creation, addressing school-mandated device addiction
+* **Hardware Setup**: Six 32x8 addressable LED modules combined into 48x32 display (1536 LEDs total), measuring 48x32 cm (19x12 inches)
+* **Construction**: Laser-cut plywood enclosure with precision fit, 3D-printed joystick controllers from Thingiverse, Arduino R4 as main computer
+* **Design Philosophy**: Focuses on fun factor of retro games rather than competing with modern 3D graphics; simpler toolchain makes it accessible for novices
+* **Implementation**: Successfully runs classic Snake game with color-coded elements (purple obstacles, yellow food, green snake body, blue head)
+* **Educational Value**: Arduino ecosystem provides powerful yet beginner-friendly platform; project demonstrates that gameplay matters more than visual complexity
+* **Next Steps**: Author promises software tutorial and provides CAD files for DIY builders
+
+### 打造1536颗LED复古游戏机：用创造替代消费
+
+* **项目动机**：父亲自制游戏设备，旨在将孩子从被动游戏消费转向主动创造，应对学校强制配备设备带来的成瘾问题
+* **硬件配置**：六块32x8可编址LED模块组合成48x32显示屏（共1536颗LED），尺寸为48x32厘米（约19x12英寸）
+* **制作工艺**：激光切割胶合板外壳实现精密贴合，从Thingiverse下载3D打印摇杆控制器，Arduino R4作为主控计算机
+* **设计理念**：专注于复古游戏的趣味性而非与现代3D图形竞争；简化的工具链降低新手入门门槛
+* **实际应用**：成功运行经典贪吃蛇游戏，采用颜色编码元素（紫色障碍物、黄色食物、绿色蛇身、蓝色蛇头）
+* **教育价值**：Arduino生态系统提供强大且易上手的平台；项目证明游戏性比视觉复杂度更重要
+* **后续计划**：作者承诺提供软件教程，并为DIY爱好者提供CAD文件下载
+
+**[Read Original / 阅读原文](https://jacquesmattheij.com/48x32-introduction/)**
+
+<!-- [Title-Only] -->
+### QGIS 4.0
+
+* Based on the title, this article likely covers the major release of QGIS version 4.0, a significant milestone for this open-source Geographic Information System (GIS) software. The changelog would typically detail new features, improvements, bug fixes, and potentially breaking changes from version 3.x.
+* This is interesting to readers because major version releases (x.0) usually introduce substantial architectural changes, new capabilities for spatial data analysis and visualization, performance improvements, and modernized user interfaces. For GIS professionals, researchers, and developers working with geospatial data, understanding what's new in QGIS 4.0 could impact their workflows and open up new possibilities for mapping and spatial analysis projects.
+
+**Note:** This introduction is based solely on the article title, as the actual content could not be fetched.
+
+---
+
+### QGIS 4.0 版本发布
+
+* 根据标题推测,这篇文章可能介绍了开源地理信息系统(GIS)软件 QGIS 的 4.0 重大版本发布。更新日志通常会详细说明新功能、改进项、错误修复,以及与 3.x 版本相比可能存在的破坏性变更。
+* 这对读者很有价值,因为主要版本发布(x.0)通常会引入重大的架构变化、空间数据分析和可视化的新功能、性能提升以及现代化的用户界面。对于从事地理空间数据工作的 GIS 专业人员、研究人员和开发者来说,了解 QGIS 4.0 的新特性可能会影响他们的工作流程,并为地图制作和空间分析项目带来新的可能性。
+
+**说明:** 此简介仅基于文章标题,因为无法获取实际内容。
+
+**[Read Original / 阅读原文](https://changelog.qgis.org/en/version/4.0/)**
+
+### MiroFish - AI-Powered Swarm Intelligence Prediction Engine
+
+* **What it does**: MiroFish creates high-fidelity parallel digital worlds populated by thousands of autonomous AI agents with independent personalities, long-term memory, and behavioral logic. Users upload seed data (news, policy drafts, financial signals, or even novel chapters) and describe prediction needs in natural language—the system then simulates future scenarios through agent interactions and delivers detailed prediction reports with an interactive digital sandbox.
+
+* **Key features**: Multi-agent simulation engine powered by OASIS framework; GraphRAG-based knowledge graph construction; dual-platform parallel simulation with dynamic temporal memory updates; interactive "god mode" for injecting variables mid-simulation; supports diverse use cases from public opinion forecasting to creative storytelling (demonstrated with Wuhan University sentiment analysis and predicting the lost ending of "Dream of the Red Chamber"); full-stack deployment with Node.js frontend and Python backend.
+
+* **Why it's notable**: Backed by Shanda Group, this project bridges serious predictive analytics with creative exploration—offering decision-makers a zero-risk policy rehearsal lab while giving individuals a playground for "what-if" scenarios. With 345 stars today and live demos available, it represents an innovative approach to swarm intelligence applications, making complex future modeling accessible through natural language interaction. The bilingual documentation and Docker support lower the barrier to experimentation.
+
+---
+
+### MiroFish - 基于群体智能的 AI 预测引擎
+
+* **功能介绍**: MiroFish 通过多智能体技术构建高保真平行数字世界,其中数千个具备独立人格、长期记忆和行为逻辑的 AI 智能体自由交互演化。用户只需上传种子数据(突发新闻、政策草案、金融信号或小说章节)并用自然语言描述预测需求,系统即可通过智能体互动模拟未来场景,生成详尽预测报告和可深度交互的数字沙盘。
+
+* **主要特点**: 基于 OASIS 框架的多智能体仿真引擎;GraphRAG 驱动的知识图谱构建;双平台并行模拟与动态时序记忆更新;"上帝视角"动态变量注入功能;支持从舆情预测到创意推演的多元场景(已展示武汉大学舆情分析和《红楼梦》失传结局预测);Node.js 前端 + Python 后端全栈部署方案。
+
+* **为何值得关注**: 获盛大集团战略支持,该项目将严肃预测分析与创意探索相结合——既为决策者提供零风险政策预演实验室,也为个人用户打造"如果...会怎样"的创意沙盘。今日获 345 星且提供在线演示,代表了群体智能应用的创新方向,通过自然语言交互让复杂的未来建模变得触手可及。中英双语文档和 Docker 支持降低了体验门槛。
+
+**[View Repository / 查看仓库](https://github.com/666ghj/MiroFish)**
+
+### openai/skills - Official Skills Catalog for OpenAI Codex
+
+* **What it does**: A centralized repository of reusable "skills" (packaged instructions, scripts, and resources) that AI agents like Codex can discover and execute to perform specific tasks in a standardized, repeatable way.
+
+* **Key features**: 
+  - Three-tier skill organization: system (auto-installed), curated, and experimental skills
+  - Simple installation via `$skill-installer` command within Codex
+  - Supports installation by name, folder path, or GitHub URL
+  - Follows the Agent Skills open standard (agentskills.io)
+  - Write-once, use-everywhere approach for AI agent capabilities
+
+* **Why it's notable**: This is OpenAI's official effort to standardize and distribute AI agent capabilities, making it easier for developers to extend Codex with pre-built, tested functionality. With 947 stars today, it represents a significant step toward creating an ecosystem of shareable AI agent skills, similar to package managers for traditional software development.
+
+---
+
+### openai/skills - OpenAI Codex 官方技能目录
+
+* **功能介绍**: 这是一个集中式的可复用"技能"仓库(包含指令、脚本和资源的打包文件夹),AI 代理如 Codex 可以发现并执行这些技能,以标准化、可重复的方式完成特定任务。
+
+* **主要特点**:
+  - 三级技能组织结构:系统级(自动安装)、精选级和实验级技能
+  - 通过 Codex 内的 `$skill-installer` 命令简单安装
+  - 支持按名称、文件夹路径或 GitHub URL 安装
+  - 遵循 Agent Skills 开放标准(agentskills.io)
+  - 一次编写,随处使用的 AI 代理能力扩展方式
+
+* **为何值得关注**: 这是 OpenAI 官方推出的 AI 代理能力标准化和分发方案,让开发者能够更轻松地用预构建、经过测试的功能扩展 Codex。今日获得 947 星标,标志着向创建可共享 AI 代理技能生态系统迈出重要一步,类似于传统软件开发中的包管理器概念。
+
+**[View Repository / 查看仓库](https://github.com/openai/skills)**
+
+### Agency Agents - Your Complete AI Specialist Team in One Repository
+
+* A curated collection of 50+ specialized AI agent personalities designed for Claude Code and other AI assistants, covering engineering, design, marketing, product, project management, testing, and support roles
+* Each agent comes with distinct personality traits, specialized workflows, technical deliverables with code examples, and measurable success metrics - not just generic prompt templates
+* Born from community feedback and battle-tested in production, offering plug-and-play specialists from Frontend Developers and DevOps Automators to Reddit Community Builders and Whimsy Injectors
+
+### Agency Agents - 完整的 AI 专家团队资源库
+
+* 精心打造的 50 多个专业 AI 智能体角色集合,专为 Claude Code 等 AI 助手设计,涵盖工程、设计、营销、产品、项目管理、测试和支持等领域
+* 每个智能体都具有独特的个性特征、专业工作流程、包含代码示例的技术交付物和可衡量的成功指标 - 不是泛泛的提示词模板
+* 源自社区反馈并经过实战检验,提供即插即用的专家角色,从前端开发者、DevOps 自动化专家到 Reddit 社区建设者和趣味注入者应有尽有
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### 🎬 The Library of Alexandria Isn't Where We Lost Ancient Books - Ada Palmer
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: This video challenges the popular myth that the burning of the Library of Alexandria was the primary cause of losing ancient knowledge, featuring historian Ada Palmer who explains the actual historical processes behind the loss of ancient texts.
+
+* Key topics discussed: The real reasons ancient books were lost (gradual decay, lack of copying, changing interests rather than catastrophic destruction), the historical reality of the Library of Alexandria, how knowledge transmission actually worked in the ancient world, and common misconceptions about ancient book preservation.
+
+* Why it's worth watching: This video debunks one of history's most persistent myths with scholarly rigor while remaining accessible. Ada Palmer provides fascinating insights into how ancient knowledge was actually preserved and lost, offering a more nuanced understanding of historical knowledge transmission that challenges popular narratives about single catastrophic events.
+
+---
+
+### 🎬 亚历山大图书馆并非古代书籍遗失之地 - Ada Palmer
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 本视频挑战了亚历山大图书馆焚毁是古代知识遗失主因的流行神话,历史学家 Ada Palmer 解释了古代文献遗失背后的真实历史过程。
+
+* 主要话题: 古代书籍遗失的真正原因(逐渐腐朽、缺乏抄写、兴趣转移,而非灾难性破坏),亚历山大图书馆的历史真相,古代世界知识传播的实际运作方式,以及关于古代书籍保存的常见误解。
+
+* 为何值得观看: 这个视频以学术严谨性揭穿了历史上最持久的神话之一,同时保持了可理解性。Ada Palmer 对古代知识如何被实际保存和遗失提供了引人入胜的见解,提供了对历史知识传播更细致的理解,挑战了关于单一灾难性事件的流行叙事。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eVqgRfRFsMc)**
+
+### 🎬 Claude Code Skills Just Got a MASSIVE Upgrade
+**Channel:** Chase AI
+
+* What the video covers: This video explores the latest major improvements to Claude's coding capabilities, demonstrating how these upgrades enhance AI-assisted development workflows
+* Key topics discussed: New features in Claude's code generation and understanding abilities, practical applications for developers, how these improvements compare to previous versions, and real-world use cases for building projects
+* Why it's worth watching: Essential viewing for developers and AI enthusiasts who want to stay current with Claude's evolving capabilities and learn how to leverage these new features for more efficient coding and project development
+
+---
+
+### 🎬 Claude 代码技能获得重大升级
+**频道:** Chase AI
+
+* 视频内容概述: 本视频深入探讨了 Claude 编码能力的最新重大改进,展示这些升级如何增强 AI 辅助开发工作流程
+* 主要话题: Claude 代码生成和理解能力的新功能、开发者的实际应用场景、与之前版本的对比改进,以及构建项目的真实用例
+* 为何值得观看: 对于想要了解 Claude 不断演进能力并学习如何利用这些新功能提高编码和项目开发效率的开发者和 AI 爱好者来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UxfeF4bSBYI)**
+
+### 🎬 OpenClaw is 100x better with this tool (Mission Control)
+**Channel:** Alex Finn
+
+* What the video covers: A tutorial on integrating Mission Control into OpenClaw to dramatically enhance its functionality and usability
+* Key topics discussed: Step-by-step setup process for Mission Control, how it improves OpenClaw workflows, and references to a comprehensive OpenClaw bootcamp available in Vibe Coding
+* Why it's worth watching: If you're using OpenClaw, this tool integration promises significant improvements (100x better according to the title), making it essential viewing for optimizing your OpenClaw setup. The easy setup approach makes it accessible even for beginners.
+
+---
+
+### 🎬 使用这个工具让 OpenClaw 强大 100 倍(Mission Control)
+**频道:** Alex Finn
+
+* 视频内容概述: 教程演示如何将 Mission Control 集成到 OpenClaw 中,以显著提升其功能和易用性
+* 主要话题: Mission Control 的分步设置流程、如何改进 OpenClaw 工作流程,以及 Vibe Coding 中提供的完整 OpenClaw 训练营介绍
+* 为何值得观看: 如果你正在使用 OpenClaw,这个工具集成承诺带来显著改进(标题声称强大 100 倍),是优化 OpenClaw 设置的必看内容。简单的设置方法让初学者也能轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RhLpV6QDBFE)**
+
+### 🎬 Bubble Sort Drum Cover
+**Channel:** onjsdev
+
+* A creative visualization of the bubble sort algorithm through drum performance
+* Demonstrates how the sorting algorithm works by translating comparison and swap operations into rhythmic drum patterns
+* Worth watching for its unique approach to teaching algorithms through music, making computer science concepts more accessible and entertaining for visual and auditory learners
+
+---
+
+### 🎬 冒泡排序鼓点演奏
+**频道:** onjsdev
+
+* 通过鼓点演奏创意可视化冒泡排序算法
+* 将排序算法的比较和交换操作转化为节奏鼓点模式,展示算法工作原理
+* 值得观看的原因:用音乐教学算法的独特方式,让计算机科学概念更易理解且富有娱乐性,适合视觉和听觉学习者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Yj2kaI5f2uo)**
 
