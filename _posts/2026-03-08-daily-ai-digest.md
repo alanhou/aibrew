@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 08, 2026"
 date: 2026-03-08
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -291,4 +291,226 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
+
+### Cloudflare Security Block Notice
+
+* The website is protected by Cloudflare's security service to prevent online attacks
+* User access was blocked due to triggering the security solution
+* Common triggers include: submitting specific words/phrases, SQL commands, or malformed data
+* This is an automated security response to potentially suspicious activity
+
+### Cloudflare 安全拦截通知
+
+* 该网站使用 Cloudflare 安全服务来防御在线攻击
+* 用户访问被拦截是因为触发了安全解决方案
+* 常见触发原因包括：提交特定词语/短语、SQL 命令或格式错误的数据
+* 这是针对潜在可疑活动的自动安全响应
+
+**[Read Original / 阅读原文](https://cacm.acm.org/research/a-decade-of-docker-containers/)**
+
+### FLASH Radiotherapy: Revolutionary Cancer Treatment Using Particle Physics
+
+* CERN physicists are adapting particle accelerator technology to develop FLASH radiotherapy, a radical new cancer treatment approach
+* FLASH delivers ultrahigh radiation doses (10+ gray) in under 0.1 seconds, compared to conventional therapy's multiple low-dose sessions over weeks
+* Studies show FLASH kills tumors effectively while causing significantly less damage to healthy tissue than conventional radiotherapy
+* The technique originated from 1990s experiments at Institut Curie in Paris, where researchers unexpectedly found ultrafast radiation didn't cause expected tissue scarring
+* Published in 2014, the findings initially faced skepticism but have since been replicated across multiple tumor types and species
+* The biological mechanism remains unclear, though current theories focus on how healthy vs. cancerous cells process reactive oxygen species differently
+* Major challenge: developing accelerators powerful enough to deliver FLASH doses deep inside the body for treating lung, brain, and abdominal cancers
+* CERN's particle physics expertise offers immediate societal impact beyond fundamental research
+
+### FLASH放射治疗:利用粒子物理学的癌症治疗革命性方法
+
+* 欧洲核子研究中心(CERN)的物理学家正在改造粒子加速器技术,开发FLASH放射治疗这一全新癌症治疗方法
+* FLASH在0.1秒内提供超高剂量辐射(10+戈瑞),而传统疗法需要数周内多次低剂量治疗
+* 研究显示FLASH能有效杀死肿瘤,同时对健康组织的损伤远低于传统放射治疗
+* 该技术源于1990年代巴黎居里研究所的实验,研究人员意外发现超快辐射不会造成预期的组织疤痕
+* 2014年发表的研究结果最初遭到质疑,但此后在多种肿瘤类型和物种中得到验证
+* 生物学机制仍不明确,目前理论聚焦于健康细胞与癌细胞处理活性氧的方式差异
+* 主要挑战:开发足够强大的加速器,能够将FLASH剂量深入体内,治疗肺部、大脑和腹部癌症
+* CERN的粒子物理学专业知识为基础研究之外提供了直接的社会影响
+
+**[Read Original / 阅读原文](https://spectrum.ieee.org/flash-radiotherapy)**
+
+### Exploiting Lego NXT Firmware: A Technical Deep Dive into Embedded Security
+
+* Author discovered arbitrary code execution vulnerability while attempting to archive original 2006 Lego NXT v1.01 firmware for the Pybricks MicroPython project
+* NXT runs on AT91SAM7S256 ARM microcontroller and serves as accessible introduction to embedded exploitation techniques
+* Traditional firmware extraction methods failed: SAM-BA bootloader overwrites firmware during entry, JTAG requires hardware disassembly and soldering
+* NXT's bytecode VM and communication protocol were designed as security sandboxes, preventing arbitrary memory access through normal channels
+* Critical vulnerability found in IO-Maps feature: writable function pointer (pRCHandler) in VM IO-Map structure accessible via USB
+* IO-Maps expose internal module state and contain the command handler for "direct" commands, enabling potential code execution hijacking
+* Exploit development requires USB command protocol understanding and ARM assembly knowledge for payload crafting
+* Case study demonstrates importance of security research skills as online resources for legacy hardware increasingly suffer from link rot and information decay
+
+### 乐高 NXT 固件漏洞利用:嵌入式安全技术深度剖析
+
+* 作者在为 Pybricks MicroPython 项目归档 2006 年原版乐高 NXT v1.01 固件时,发现了任意代码执行漏洞
+* NXT 基于 AT91SAM7S256 ARM 微控制器,是学习嵌入式漏洞利用技术的理想入门目标
+* 传统固件提取方法均失败:SAM-BA 引导加载程序在进入时会覆盖固件,JTAG 需要硬件拆解和焊接
+* NXT 的字节码虚拟机和通信协议被设计为安全沙箱,通过常规渠道无法实现任意内存访问
+* 在 IO-Maps 功能中发现关键漏洞:VM IO-Map 结构中存在可通过 USB 访问的可写函数指针(pRCHandler)
+* IO-Maps 暴露了模块内部状态,包含"直接"命令的命令处理器,可被劫持实现代码执行
+* 漏洞利用开发需要理解 USB 命令协议和 ARM 汇编知识来构造攻击载荷
+* 案例研究表明安全研究技能的重要性,因为老旧硬件的在线资源正日益遭受链接失效和信息衰减问题
+
+**[Read Original / 阅读原文](https://arcanenibble.github.io/dumping-lego-nxt-firmware-off-of-an-existing-brick.html)**
+
+### GoogleCloudPlatform/generative-ai - Official Google Cloud Generative AI Sample Repository
+
+* Comprehensive collection of Jupyter notebooks, code samples, and sample apps demonstrating how to build generative AI workflows using Google Cloud's Vertex AI platform, with a focus on the Gemini model family (including the newly released Gemini 3.1 Pro)
+* Key features include organized sections for Gemini experimentation (starter notebooks, use cases, function calling), Vertex AI Search integration, RAG and grounding techniques, Imagen vision capabilities (image generation/editing, visual Q&A), Chirp audio processing, and complete environment setup guides for Google Colab and Vertex AI Workbench
+* Notable for being Google's official learning resource with 348 stars today, offering production-ready examples across multiple AI modalities (text, vision, audio), extensive links to related repositories (Agent Development Kit, marketing/developer productivity solutions), and serving as the go-to reference for developers building on Google's generative AI stack
+
+### GoogleCloudPlatform/generative-ai - Google Cloud 生成式 AI 官方示例仓库
+
+* 全面的 Jupyter 笔记本、代码示例和应用程序集合,展示如何使用 Google Cloud 的 Vertex AI 平台构建生成式 AI 工作流,重点关注 Gemini 模型系列(包括新发布的 Gemini 3.1 Pro)
+* 主要特点包括 Gemini 实验专区(入门笔记本、用例、函数调用)、Vertex AI Search 集成、RAG 和 Grounding 技术、Imagen 视觉能力(图像生成/编辑、视觉问答)、Chirp 音频处理,以及 Google Colab 和 Vertex AI Workbench 的完整环境配置指南
+* 值得关注的原因:作为 Google 官方学习资源今日获得 348 星标,提供跨多种 AI 模态(文本、视觉、音频)的生产就绪示例,包含大量相关仓库链接(Agent Development Kit、营销/开发者生产力解决方案),是在 Google 生成式 AI 技术栈上构建应用的首选参考资料
+
+**[View Repository / 查看仓库](https://github.com/GoogleCloudPlatform/generative-ai)**
+
+### Jido - Pure Functional Agent Framework for Elixir
+
+* A framework for building autonomous multi-agent systems in Elixir using immutable data structures and pure functional design. Agents are defined as simple data transformations with a single `cmd/2` function that returns updated state plus directives for side effects, executed by an OTP runtime.
+
+* Pure functional agent architecture inspired by Elm/Redux with schema-validated state, directive-based effects system (Emit, Spawn, Schedule, Stop), composable plugins for extending agent capabilities, OTP runtime integration with GenServer-based AgentServer, parent-child agent hierarchies, signal routing with CloudEvents-based messaging, and multi-agent orchestration with FSM and plan-based strategies.
+
+* Notable for formalizing agent patterns on top of OTP primitives, solving common multi-agent challenges like standardized message envelopes, reusable command patterns, typed effect descriptions, and built-in lifecycle management. Provides deterministic, testable agent logic without processes while maintaining a clear path to production deployment. Part of a broader ecosystem including LLM integration (jido_ai), HTTP client for AI APIs (req_llm), and composable actions (jido_action).
+
+---
+
+### Jido - Elixir 纯函数式自主代理框架
+
+* 一个用于在 Elixir 中构建自主多代理系统的框架,使用不可变数据结构和纯函数式设计。代理被定义为简单的数据转换,通过单一的 `cmd/2` 函数返回更新后的状态和副作用指令,由 OTP 运行时执行。
+
+* 受 Elm/Redux 启发的纯函数式代理架构,具有模式验证状态、基于指令的副作用系统(Emit、Spawn、Schedule、Stop)、可组合插件扩展代理能力、基于 GenServer 的 OTP 运行时集成、父子代理层级结构、基于 CloudEvents 的信号路由,以及支持 FSM 和计划编排的多代理协作。
+
+* 在 OTP 原语之上形式化代理模式,解决多代理系统的常见挑战:标准化消息封装、可复用命令模式、类型化副作用描述和内置生命周期管理。提供确定性、可测试的代理逻辑,无需进程即可测试,同时保持清晰的生产部署路径。属于更广泛的生态系统,包括 LLM 集成(jido_ai)、AI API HTTP 客户端(req_llm)和可组合操作(jido_action)。
+
+**[View Repository / 查看仓库](https://github.com/agentjido/jido)**
+
+### Qwen-Agent - LLM Agent Framework Built on Qwen Models
+
+* **What it does**: Qwen-Agent is a comprehensive framework for building LLM-powered applications with advanced capabilities like function calling, tool usage, planning, and memory. It powers the backend of Qwen Chat and provides ready-to-use components for creating custom AI agents.
+
+* **Key features**: 
+  * Supports Qwen 3.0+ models with function calling and tool integration
+  * Built-in tools including Code Interpreter, RAG, and MCP (Model Context Protocol)
+  * Browser Assistant and Chrome extension support
+  * Gradio-based GUI for rapid prototyping
+  * Custom tool creation with simple decorator pattern
+  * Multi-modal support (Qwen3-VL for image processing)
+  * Compatible with DashScope API, vLLM, and Ollama deployments
+
+* **Why it's notable**: Gaining 586 stars today due to the recent Qwen3.5 release (Feb 2025) and its production-ready status as the backend for Qwen Chat. The framework stands out for its comprehensive tooling ecosystem, active development with frequent updates, and the new DeepPlanning benchmark for agent evaluation. It bridges the gap between research and production with practical examples and extensive documentation.
+
+---
+
+### Qwen-Agent - 基于 Qwen 模型的 LLM 智能体框架
+
+* **功能介绍**: Qwen-Agent 是一个全面的 LLM 应用开发框架,具备函数调用、工具使用、规划和记忆等高级能力。它为 Qwen Chat 提供后端支持,并提供开箱即用的组件用于创建自定义 AI 智能体。
+
+* **主要特点**:
+  * 支持 Qwen 3.0+ 模型的函数调用和工具集成
+  * 内置代码解释器、RAG 和 MCP(模型上下文协议)等工具
+  * 浏览器助手和 Chrome 扩展支持
+  * 基于 Gradio 的图形界面,快速原型开发
+  * 通过装饰器模式轻松创建自定义工具
+  * 多模态支持(Qwen3-VL 用于图像处理)
+  * 兼容 DashScope API、vLLM 和 Ollama 部署
+
+* **为何值得关注**: 今日获得 586 星标,得益于最近发布的 Qwen3.5(2025年2月)以及其作为 Qwen Chat 后端的生产级稳定性。该框架凭借完善的工具生态系统、频繁更新的活跃开发以及新推出的 DeepPlanning 智能体评估基准脱颖而出。它通过实用示例和详尽文档,成功连接了研究与生产应用之间的桥梁。
+
+**[View Repository / 查看仓库](https://github.com/QwenLM/Qwen-Agent)**
+
+### OBLITERATUS - Advanced Toolkit for Removing AI Model Refusal Behaviors
+
+* Surgically removes content refusal mechanisms from large language models without retraining, using "abliteration" techniques that identify and eliminate internal representations responsible for gatekeeping while preserving core capabilities
+* 15 deep analysis modules map refusal geometry across layers, multiple extraction strategies (PCA, SVD, sparse autoencoders), analysis-informed auto-configuration, novel techniques like Expert-Granular Abliteration for MoE models, and crowdsourced telemetry that turns every run into distributed research
+* Represents cutting-edge mechanistic interpretability research with a complete no-code Gradio interface on HuggingFace Spaces, one-command CLI, and full Python API — making model behavior modification transparent, reproducible, and accessible to researchers investigating how alignment actually works inside transformers
+
+### OBLITERATUS - 移除 AI 模型拒绝行为的高级工具包
+
+* 通过"消融"技术从大语言模型中精准移除内容拒绝机制,无需重新训练,识别并消除负责内容审查的内部表征,同时保留核心能力
+* 15 个深度分析模块映射跨层拒绝几何结构,多种提取策略(PCA、SVD、稀疏自编码器),分析驱动的自动配置,针对 MoE 模型的专家粒度消融等新技术,以及将每次运行转化为分布式研究的众包遥测
+* 代表机械可解释性研究的前沿,提供 HuggingFace Spaces 上的完整无代码 Gradio 界面、单命令 CLI 和完整 Python API——使模型行为修改对研究 transformer 内部对齐机制的人员来说透明、可复现且易于访问
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/OBLITERATUS)**
+
+### OpenClaw Master Skills - Curated AI Agent Skill Library for MyClaw.ai
+
+* **What it does**: A comprehensive collection of 127+ pre-built skills that extend AI agent capabilities across development, productivity, marketing, and creative tasks. Users can install individual skills via ClaWHub or manually integrate them into their OpenClaw workspace.
+
+* **Key features**: Weekly updates from multiple sources (skills.sh, GitHub, ClaWHub); organized into categories (AI Tools, Productivity, Marketing, DevOps); includes skills for document manipulation (PDF, DOCX, PPTX, XLSX), development workflows (TDD, code review, debugging), prompt engineering, RAG implementation, and marketing automation; simple installation via CLI or git clone.
+
+* **Why it's notable**: Provides a centralized, curated marketplace of battle-tested AI agent skills that would otherwise require custom development. With 1,433 stars and backing from MyClaw.ai (an AI personal assistant platform), it's becoming a standard library for extending AI agent functionality. The weekly curation from top repositories (Anthropic, obra/superpowers) ensures quality and relevance.
+
+---
+
+### OpenClaw Master Skills - MyClaw.ai 的 AI 智能体技能库
+
+* **功能介绍**: 精选 127+ 个预构建技能的综合集合,可扩展 AI 智能体在开发、效率、营销和创意任务方面的能力。用户可通过 ClaWHub 安装单个技能或手动集成到 OpenClaw 工作区。
+
+* **主要特点**: 每周从多个来源更新(skills.sh、GitHub、ClaWHub);按类别组织(AI 工具、效率工具、营销、DevOps);包含文档处理(PDF、DOCX、PPTX、XLSX)、开发工作流(测试驱动开发、代码审查、调试)、提示工程、RAG 实现和营销自动化等技能;支持 CLI 或 git clone 简易安装。
+
+* **为何值得关注**: 提供了一个集中化、精心策划的 AI 智能体技能市场,这些经过实战检验的技能原本需要自定义开发。拥有 1,433 星标并由 MyClaw.ai(AI 个人助理平台)支持,正在成为扩展 AI 智能体功能的标准库。每周从顶级仓库(Anthropic、obra/superpowers)精选确保了质量和实用性。
+
+**[View Repository / 查看仓库](https://github.com/LeoYeAI/openclaw-master-skills)**
+
+### 🎬 Claude Code Skills Just Got a MASSIVE Upgrade
+**Channel:** Chase AI
+
+* What the video covers: This video explores the latest major improvements to Claude's coding capabilities, demonstrating how these upgrades enhance AI-assisted development workflows
+* Key topics discussed: New features in Claude's code generation and understanding abilities, practical applications for developers, how these improvements compare to previous versions, and real-world use cases for building projects
+* Why it's worth watching: Essential viewing for developers and AI enthusiasts who want to stay current with Claude's evolving capabilities and learn how to leverage these new features for more efficient coding and project development
+
+---
+
+### 🎬 Claude 代码技能获得重大升级
+**频道:** Chase AI
+
+* 视频内容概述: 本视频深入探讨了 Claude 编码能力的最新重大改进,展示这些升级如何增强 AI 辅助开发工作流程
+* 主要话题: Claude 代码生成和理解能力的新功能、开发者的实际应用场景、与之前版本的对比改进,以及构建项目的真实用例
+* 为何值得观看: 对于想要了解 Claude 不断演进能力并学习如何利用这些新功能提高编码和项目开发效率的开发者和 AI 爱好者来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UxfeF4bSBYI)**
+
+### 🎬 Wolf 🐺 Logo in MS Word By Shortcut Key | In English | Digital Shortcut Hub
+
+**Channel:** Digital Shortcut Hub
+
+* What the video covers: A quick tutorial demonstrating how to insert a wolf emoji/logo in Microsoft Word using keyboard shortcuts
+* Key topics discussed: MS Word shortcut keys, emoji insertion techniques, productivity tips for document editing
+* Why it's worth watching: Perfect for users looking to speed up their workflow in MS Word by learning efficient shortcut methods to insert symbols and emojis without using the mouse
+
+---
+
+### 🎬 在 MS Word 中用快捷键插入狼 🐺 标志 | Digital Shortcut Hub
+
+**频道:** Digital Shortcut Hub
+
+* 视频内容概述: 快速教程演示如何使用键盘快捷键在 Microsoft Word 中插入狼表情符号/标志
+* 主要话题: MS Word 快捷键、表情符号插入技巧、文档编辑效率提升方法
+* 为何值得观看: 适合希望通过学习高效快捷键方法来加快 MS Word 工作流程的用户,无需使用鼠标即可插入符号和表情符号
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7FmAKajTerw)**
+
+### 🎬 OpenClaw is 100x better with this tool (Mission Control)
+**Channel:** Alex Finn
+
+* What the video covers: A tutorial on integrating Mission Control into OpenClaw to dramatically enhance its functionality and usability
+* Key topics discussed: Step-by-step setup process for Mission Control, how it improves OpenClaw workflows, and references to a comprehensive OpenClaw bootcamp available in Vibe Coding
+* Why it's worth watching: If you're using OpenClaw, this tool integration promises significant improvements (100x better according to the title), making it essential viewing for optimizing your OpenClaw setup. The easy setup approach makes it accessible even for beginners.
+
+---
+
+### 🎬 OpenClaw 配合这个工具效果提升100倍 (Mission Control)
+**频道:** Alex Finn
+
+* 视频内容概述: 教程演示如何将 Mission Control 集成到 OpenClaw 中,大幅提升其功能和易用性
+* 主要话题: Mission Control 的分步设置流程、如何改进 OpenClaw 工作流程,以及 Vibe Coding 中提供的完整 OpenClaw 训练营介绍
+* 为何值得观看: 如果你正在使用 OpenClaw,这个工具集成承诺带来显著改进(标题声称提升100倍),是优化 OpenClaw 设置的必看内容。简单的设置方法让初学者也能轻松上手。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RhLpV6QDBFE)**
 
