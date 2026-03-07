@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 07, 2026"
 date: 2026-03-07
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -523,4 +523,141 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合创客和电子爱好者寻找 Arduino 项目灵感和实践教程思路;以简短易懂的形式展示微控制器编程的实际应用场景
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZjqCaNwYBoY)**
+
+<!-- [Title-Only] -->
+### Plasma Bigscreen – 10-foot interface for KDE plasma
+
+* Based on the title, this article likely covers Plasma Bigscreen, a specialized user interface designed for large displays and TV screens within the KDE Plasma desktop environment. The "10-foot interface" terminology suggests it's optimized for viewing and interaction from a distance, similar to smart TV interfaces or media center applications.
+
+* This might be interesting to readers who are exploring alternatives to commercial smart TV platforms, looking to build custom home theater PCs, or interested in open-source solutions for living room computing. It could appeal to Linux enthusiasts wanting to extend KDE Plasma's capabilities beyond traditional desktop use cases, as well as those interested in convergent computing experiences across different form factors.
+
+### Plasma Bigscreen – KDE plasma 的大屏幕界面
+
+* 根据标题推测，这篇文章可能介绍 Plasma Bigscreen，这是 KDE Plasma 桌面环境中专为大屏幕和电视设计的用户界面。"10-foot interface"（十英尺界面）这个术语表明它针对远距离观看和交互进行了优化，类似于智能电视界面或媒体中心应用。
+
+* 这对于正在寻找商业智能电视平台替代方案、希望构建定制家庭影院电脑，或对客厅计算的开源解决方案感兴趣的读者来说可能很有价值。它可能吸引那些希望将 KDE Plasma 的功能扩展到传统桌面使用场景之外的 Linux 爱好者，以及对跨不同设备形态的融合计算体验感兴趣的人群。
+
+**[Read Original / 阅读原文](https://plasma-bigscreen.org)**
+
+### This CSS Proves Me Human
+
+* A writer explores the painful compromises required to evade AI detection systems by deliberately altering their natural writing style
+* Uses CSS tricks like `text-transform: lowercase` to hide capitalization while preserving code blocks
+* Modifies font glyphs to disguise em dashes, a signature stylistic element
+* Considers intentional misspellings using Norvig corpus analysis to identify subtle word substitutions
+* Draws the line at fundamentally changing writing style—recognizing it as core to identity and thought process, not just appearance
+* The ironic final line mimics AI-generated content, highlighting the absurdity of having to prove humanity through deliberate imperfection
+
+### 这段 CSS 证明我是人类
+
+* 作者探讨了为规避 AI 检测系统而被迫改变自然写作风格的痛苦妥协
+* 使用 CSS 技巧如 `text-transform: lowercase` 隐藏大写字母,同时保留代码块原样
+* 修改字体字形来伪装破折号——一个标志性的文体元素
+* 考虑使用 Norvig 语料库分析来识别微妙的词汇替换,故意拼错单词
+* 在根本改变写作风格这一点上划清界限——认识到写作风格是身份认同和思维方式的核心,而非仅仅是外表
+* 讽刺性的结尾模仿 AI 生成内容,凸显了必须通过刻意制造缺陷来证明人类身份的荒谬性
+
+**[Read Original / 阅读原文](https://will-keleher.com/posts/this-css-makes-me-human/)**
+
+### How C# Strings Silently Kill Your SQL Server Indexes in Dapper
+
+* A production performance issue was traced to a simple Dapper query with a WHERE clause on an indexed column, averaging thousands of milliseconds CPU per execution
+* The root cause: C# string parameters passed through anonymous objects default to `nvarchar(4000)`, causing implicit conversions when querying `varchar` columns
+* When SQL Server encounters type mismatches, it performs `CONVERT_IMPLICIT` on every row, forcing full index scans instead of efficient index seeks
+* The fix is straightforward: use `DynamicParameters` with `DbType.AnsiString` or `DbString` with `IsAnsi = true` to match varchar column types
+* Performance impact is dramatic - switching from index scans with tens of thousands of logical reads to index seeks with single-digit reads
+* Three detection methods: Query Store analysis for `nvarchar(4000)` parameters, execution plan inspection for `CONVERT_IMPLICIT` warnings, and code audits for anonymous object patterns
+* Best practice: always match parameter types to column types (`DbType.AnsiString` for varchar, `DbType.String` for nvarchar) and include explanatory comments to prevent future "simplification" refactors
+* Collation matters: `SQL_Latin1_General_CP1_CI_AS` (common default) produces worst-case full scans, while some Windows collations may still allow seeks but with conversion overhead
+
+### C# 字符串如何悄无声息地破坏 SQL Server 索引(Dapper 场景)
+
+* 生产环境性能问题追溯到一个简单的 Dapper 查询,在索引列上使用 WHERE 子句,每次执行平均消耗数千毫秒 CPU
+* 根本原因:通过匿名对象传递的 C# 字符串参数默认映射为 `nvarchar(4000)`,查询 `varchar` 列时会导致隐式转换
+* 当 SQL Server 遇到类型不匹配时,会对每一行执行 `CONVERT_IMPLICIT`,强制进行全索引扫描而非高效的索引查找
+* 修复方法很简单:使用 `DynamicParameters` 配合 `DbType.AnsiString`,或使用 `DbString` 设置 `IsAnsi = true` 来匹配 varchar 列类型
+* 性能影响显著 - 从数万次逻辑读取的索引扫描切换到个位数逻辑读取的索引查找
+* 三种检测方法:Query Store 分析 `nvarchar(4000)` 参数、执行计划检查 `CONVERT_IMPLICIT` 警告、代码审计匿名对象模式
+* 最佳实践:始终匹配参数类型与列类型(varchar 用 `DbType.AnsiString`,nvarchar 用 `DbType.String`),并添加注释说明以防止未来"简化"重构
+* 排序规则影响:常见默认排序规则 `SQL_Latin1_General_CP1_CI_AS` 会产生最坏情况的全表扫描,某些 Windows 排序规则可能仍允许索引查找但存在转换开销
+
+**[Read Original / 阅读原文](https://consultwithgriff.com/dapper-nvarchar-implicit-conversion-performance-trap)**
+
+### OBLITERATUS - Advanced Toolkit for Removing AI Model Refusal Behaviors
+
+* **What it does**: Surgically removes content refusal mechanisms from large language models without retraining. Uses "abliteration" techniques to identify and eliminate internal representations that cause models to refuse prompts, while preserving core capabilities. Provides complete pipeline from probing hidden states to extracting refusal directions (via PCA, SVD, sparse autoencoders) to intervention at inference time.
+
+* **Key features**: 
+  - One-click model liberation via Gradio interface on HuggingFace Spaces or Colab notebook
+  - 15 deep analysis modules mapping refusal geometry across layers
+  - Novel techniques including Expert-Granular Abliteration for MoE models, CoT-Aware Ablation, LoRA-based reversible ablation
+  - Analysis-informed pipeline that auto-configures obliteration strategy based on model architecture
+  - Distributed research experiment - telemetry from each run contributes to crowd-sourced abliteration dataset
+  - Full Python API exposing activation tensors, direction vectors, cross-layer alignment matrices
+  - Side-by-side chat comparison between original and liberated models
+
+* **Why it's notable**: Most advanced open-source implementation of mechanistic interpretability research for understanding and modifying alignment behaviors. Goes beyond existing tools with unique capabilities like Concept Cone Geometry (mapping per-category guardrails), Alignment Imprint Detection (fingerprinting DPO/RLHF/CAI training methods), Cross-Model Universality Index, and true iterative refinement that catches rotated residual guardrails. Built on cutting-edge research from 2023-2025 papers. Enables practitioners to make informed decisions about model behavior rather than accepting training-time restrictions. 1,859 stars reflects strong interest in transparent, reproducible alignment intervention tools.
+
+---
+
+### OBLITERATUS - 移除AI模型拒绝行为的高级工具包
+
+* **功能介绍**: 无需重新训练即可手术式移除大语言模型的内容拒绝机制。使用"消融"技术识别并消除导致模型拒绝提示的内部表征,同时保留核心能力。提供从探测隐藏状态到提取拒绝方向(通过PCA、SVD、稀疏自编码器)再到推理时干预的完整流程。
+
+* **主要特点**:
+  - 通过HuggingFace Spaces的Gradio界面或Colab笔记本实现一键模型解放
+  - 15个深度分析模块,映射跨层拒绝几何结构
+  - 新颖技术包括针对MoE模型的专家粒度消融、CoT感知消融、基于LoRA的可逆消融
+  - 分析驱动的流程,根据模型架构自动配置消融策略
+  - 分布式研究实验 - 每次运行的遥测数据贡献到众包消融数据集
+  - 完整Python API,暴露激活张量、方向向量、跨层对齐矩阵
+  - 原始模型与解放模型的并排对话比较
+
+* **为何值得关注**: 最先进的开源机制可解释性研究实现,用于理解和修改对齐行为。通过独特功能超越现有工具,如概念锥几何(映射每类别护栏)、对齐印记检测(指纹识别DPO/RLHF/CAI训练方法)、跨模型通用性指数,以及捕获旋转残余护栏的真正迭代精炼。基于2023-2025年前沿研究论文构建。使从业者能够对模型行为做出明智决策,而非接受训练时限制。1,859星标反映了对透明、可复现对齐干预工具的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/OBLITERATUS)**
+
+### 🎬 The Library of Alexandria Isn't Where We Lost Ancient Books - Ada Palmer
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: This video challenges the popular myth that the burning of the Library of Alexandria was the primary cause of losing ancient knowledge, featuring historian Ada Palmer who explains the actual historical processes behind the loss of ancient texts.
+
+* Key topics discussed: The real reasons ancient books were lost (gradual decay, lack of copying, changing interests rather than catastrophic destruction), the historical reality of the Library of Alexandria, how knowledge transmission actually worked in the ancient world, and common misconceptions about ancient book preservation.
+
+* Why it's worth watching: This video debunks one of history's most persistent myths with scholarly rigor while remaining accessible. Ada Palmer provides fascinating insights into how ancient knowledge was actually preserved and lost, offering a more nuanced understanding of historical knowledge transmission that challenges popular narratives about single catastrophic events.
+
+---
+
+### 🎬 亚历山大图书馆并非古代书籍遗失之地 - Ada Palmer
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 本视频挑战了亚历山大图书馆焚毁是古代知识遗失主因的流行神话,历史学家 Ada Palmer 解释了古代文献遗失背后的真实历史过程。
+
+* 主要话题: 古代书籍遗失的真正原因(逐渐腐朽、缺乏抄写、兴趣转移,而非灾难性破坏),亚历山大图书馆的历史真相,古代世界知识传播的实际运作方式,以及关于古代书籍保存的常见误解。
+
+* 为何值得观看: 这个视频以学术严谨性揭穿了历史上最持久的神话之一,同时保持了可理解性。Ada Palmer 对古代知识如何被实际保存和遗失提供了引人入胜的见解,提供了对历史知识传播更细致的理解,挑战了关于单一灾难性事件的流行叙事。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eVqgRfRFsMc)**
+
+### 🎬 Claude Code - Idiots Guide
+
+**Channel:** Oliur Online
+
+* What the video covers: A beginner-friendly tutorial on Claude Code, breaking down its features and functionality in an accessible way for newcomers
+* Key topics discussed: Practical walkthrough of Claude Code's capabilities, setup process, and real-world usage examples designed for users with minimal technical background
+* Why it's worth watching: Perfect for anyone intimidated by AI coding tools - Oliur's "idiots guide" approach makes complex AI-assisted development approachable and easy to understand, even if you're just getting started with coding assistants
+
+---
+
+### 🎬 Claude Code - 傻瓜式指南
+
+**频道:** Oliur Online
+
+* 视频内容概述: 面向初学者的 Claude Code 教程,以通俗易懂的方式讲解其功能和使用方法
+* 主要话题: Claude Code 功能的实用演示、设置流程,以及为技术背景较少的用户设计的实际应用案例
+* 为何值得观看: 非常适合对 AI 编程工具感到陌生的人 - Oliur 的"傻瓜式指南"方法让复杂的 AI 辅助开发变得平易近人,即使你刚开始接触编程助手也能轻松理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8xfIarQ9mL0)**
 
