@@ -514,92 +514,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 Arduino 项目合集
-
-**频道:** Eazytronic Shorts ( Official )
-
-* 视频内容概述: 展示多个基于 Arduino 的 DIY 电子项目,包括家庭自动化和机器人应用
-* 主要话题: Arduino 项目实现,包括自动楼梯照明系统、LED 灯光控制和机器人制作的实际演示
-* 为何值得观看: 适合创客和电子爱好者寻找 Arduino 项目灵感和实践教程思路;以简短易懂的形式展示微控制器编程的实际应用场景
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZjqCaNwYBoY)**
-
-<!-- [Title-Only] -->
-### Plasma Bigscreen – 10-foot interface for KDE plasma
-
-* Based on the title, this article likely covers Plasma Bigscreen, a specialized user interface designed for large displays and TV screens within the KDE Plasma desktop environment. The "10-foot interface" terminology suggests it's optimized for viewing and interaction from a distance, similar to smart TV interfaces or media center applications.
-
-* This might be interesting to readers who are exploring alternatives to commercial smart TV platforms, looking to build custom home theater PCs, or interested in open-source solutions for living room computing. It could appeal to Linux enthusiasts wanting to extend KDE Plasma's capabilities beyond traditional desktop use cases, as well as those interested in convergent computing experiences across different form factors.
-
-### Plasma Bigscreen – KDE plasma 的大屏幕界面
-
-* 根据标题推测，这篇文章可能介绍 Plasma Bigscreen，这是 KDE Plasma 桌面环境中专为大屏幕和电视设计的用户界面。"10-foot interface"（十英尺界面）这个术语表明它针对远距离观看和交互进行了优化，类似于智能电视界面或媒体中心应用。
-
-* 这对于正在寻找商业智能电视平台替代方案、希望构建定制家庭影院电脑，或对客厅计算的开源解决方案感兴趣的读者来说可能很有价值。它可能吸引那些希望将 KDE Plasma 的功能扩展到传统桌面使用场景之外的 Linux 爱好者，以及对跨不同设备形态的融合计算体验感兴趣的人群。
-
-**[Read Original / 阅读原文](https://plasma-bigscreen.org)**
-
-### This CSS Proves Me Human
-
-* A writer explores the painful compromises required to evade AI detection systems by deliberately altering their natural writing style
-* Uses CSS tricks like `text-transform: lowercase` to hide capitalization while preserving code blocks
-* Modifies font glyphs to disguise em dashes, a signature stylistic element
-* Considers intentional misspellings using Norvig corpus analysis to identify subtle word substitutions
-* Draws the line at fundamentally changing writing style—recognizing it as core to identity and thought process, not just appearance
-* The ironic final line mimics AI-generated content, highlighting the absurdity of having to prove humanity through deliberate imperfection
-
-### 这段 CSS 证明我是人类
-
-* 作者探讨了为规避 AI 检测系统而被迫改变自然写作风格的痛苦妥协
-* 使用 CSS 技巧如 `text-transform: lowercase` 隐藏大写字母,同时保留代码块原样
-* 修改字体字形来伪装破折号——一个标志性的文体元素
-* 考虑使用 Norvig 语料库分析来识别微妙的词汇替换,故意拼错单词
-* 在根本改变写作风格这一点上划清界限——认识到写作风格是身份认同和思维方式的核心,而非仅仅是外表
-* 讽刺性的结尾模仿 AI 生成内容,凸显了必须通过刻意制造缺陷来证明人类身份的荒谬性
-
-**[Read Original / 阅读原文](https://will-keleher.com/posts/this-css-makes-me-human/)**
-
-### How C# Strings Silently Kill Your SQL Server Indexes in Dapper
-
-* A production performance issue was traced to a simple Dapper query with a WHERE clause on an indexed column, averaging thousands of milliseconds CPU per execution
-* The root cause: C# string parameters passed through anonymous objects default to `nvarchar(4000)`, causing implicit conversions when querying `varchar` columns
-* When SQL Server encounters type mismatches, it performs `CONVERT_IMPLICIT` on every row, forcing full index scans instead of efficient index seeks
-* The fix is straightforward: use `DynamicParameters` with `DbType.AnsiString` or `DbString` with `IsAnsi = true` to match varchar column types
-* Performance impact is dramatic - switching from index scans with tens of thousands of logical reads to index seeks with single-digit reads
-* Three detection methods: Query Store analysis for `nvarchar(4000)` parameters, execution plan inspection for `CONVERT_IMPLICIT` warnings, and code audits for anonymous object patterns
-* Best practice: always match parameter types to column types (`DbType.AnsiString` for varchar, `DbType.String` for nvarchar) and include explanatory comments to prevent future "simplification" refactors
-* Collation matters: `SQL_Latin1_General_CP1_CI_AS` (common default) produces worst-case full scans, while some Windows collations may still allow seeks but with conversion overhead
-
-### C# 字符串如何悄无声息地破坏 SQL Server 索引(Dapper 场景)
-
-* 生产环境性能问题追溯到一个简单的 Dapper 查询,在索引列上使用 WHERE 子句,每次执行平均消耗数千毫秒 CPU
-* 根本原因:通过匿名对象传递的 C# 字符串参数默认映射为 `nvarchar(4000)`,查询 `varchar` 列时会导致隐式转换
-* 当 SQL Server 遇到类型不匹配时,会对每一行执行 `CONVERT_IMPLICIT`,强制进行全索引扫描而非高效的索引查找
-* 修复方法很简单:使用 `DynamicParameters` 配合 `DbType.AnsiString`,或使用 `DbString` 设置 `IsAnsi = true` 来匹配 varchar 列类型
-* 性能影响显著 - 从数万次逻辑读取的索引扫描切换到个位数逻辑读取的索引查找
-* 三种检测方法:Query Store 分析 `nvarchar(4000)` 参数、执行计划检查 `CONVERT_IMPLICIT` 警告、代码审计匿名对象模式
-* 最佳实践:始终匹配参数类型与列类型(varchar 用 `DbType.AnsiString`,nvarchar 用 `DbType.String`),并添加注释说明以防止未来"简化"重构
-* 排序规则影响:常见默认排序规则 `SQL_Latin1_General_CP1_CI_AS` 会产生最坏情况的全表扫描,某些 Windows 排序规则可能仍允许索引查找但存在转换开销
-
-**[Read Original / 阅读原文](https://consultwithgriff.com/dapper-nvarchar-implicit-conversion-performance-trap)**
-
-### OBLITERATUS - Advanced Toolkit for Removing AI Model Refusal Behaviors
-
-* **What it does**: Surgically removes content refusal mechanisms from large language models without retraining. Uses "abliteration" techniques to identify and eliminate internal representations that cause models to refuse prompts, while preserving core capabilities. Provides complete pipeline from probing hidden states to extracting refusal directions (via PCA, SVD, sparse autoencoders) to intervention at inference time.
-
-* **Key features**: 
-  - One-click model liberation via Gradio interface on HuggingFace Spaces or Colab notebook
-  - 15 deep analysis modules mapping refusal geometry across layers
-  - Novel techniques including Expert-Granular Abliteration for MoE models, CoT-Aware Ablation, LoRA-based reversible ablation
-  - Analysis-informed pipeline that auto-configures obliteration strategy based on model architecture
-  - Distributed research experiment - telemetry from each run contributes to crowd-sourced abliteration dataset
-  - Full Python API exposing activation tensors, direction vectors, cross-layer alignment matrices
-  - Side-by-side chat comparison between original and liberated models
-
-* **Why it's notable**: Most advanced open-source implementation of mechanistic interpretability research for understanding and modifying alignment behaviors. Goes beyond existing tools with unique capabilities like Concept Cone Geometry (mapping per-category guardrails), Alignment Imprint Detection (fingerprinting DPO/RLHF/CAI training methods), Cross-Model Universality Index, and true iterative refinement that catches rotated residual guardrails. Built on cutting-edge research from 2023-2025 papers. Enables practitioners to make informed decisions about model behavior rather than accepting training-time restrictions. 1,859 stars reflects strong interest in transparent, reproducible alignment intervention tools.
-
----
-
 ### OBLITERATUS - 移除AI模型拒绝行为的高级工具包
 
 * **功能介绍**: 无需重新训练即可手术式移除大语言模型的内容拒绝机制。使用"消融"技术识别并消除导致模型拒绝提示的内部表征,同时保留核心能力。提供从探测隐藏状态到提取拒绝方向(通过PCA、SVD、稀疏自编码器)再到推理时干预的完整流程。
@@ -660,4 +574,81 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合对 AI 编程工具感到陌生的人 - Oliur 的"傻瓜式指南"方法让复杂的 AI 辅助开发变得平易近人,即使你刚开始接触编程助手也能轻松理解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8xfIarQ9mL0)**
+
+<!-- [Title-Only] -->
+### Plasma Bigscreen – 10-foot interface for KDE plasma
+
+* Based on the title, this article likely covers Plasma Bigscreen, a specialized user interface designed for large displays and TV screens within the KDE Plasma desktop environment. The "10-foot interface" terminology suggests it's optimized for viewing and interaction from a distance, similar to smart TV interfaces or media center applications.
+
+* This might be interesting to readers who are exploring alternatives to commercial smart TV platforms, looking to build custom home theater PCs, or interested in open-source solutions for living room computing. It could appeal to Linux enthusiasts wanting to extend KDE Plasma's capabilities beyond traditional desktop use cases, or anyone curious about convergent computing experiences across different form factors.
+
+### Plasma Bigscreen – KDE Plasma 的大屏幕界面
+
+* 根据标题推测，这篇文章可能介绍 Plasma Bigscreen，这是 KDE Plasma 桌面环境中专为大屏幕和电视设计的用户界面。"10-foot interface"（十英尺界面）这个术语表明它针对远距离观看和交互进行了优化，类似于智能电视界面或媒体中心应用。
+
+* 这对于正在寻找商业智能电视平台替代方案的读者、想要构建定制家庭影院电脑的用户，或对客厅计算的开源解决方案感兴趣的人来说可能很有价值。它可能吸引希望将 KDE Plasma 的功能扩展到传统桌面之外的 Linux 爱好者，或任何对跨不同设备形态的融合计算体验感到好奇的人。
+
+**[Read Original / 阅读原文](https://plasma-bigscreen.org)**
+
+### The Go Programming Language - Overview
+
+* Go is an open source programming language designed for building simple, reliable, and efficient software
+* The canonical Git repository is hosted at https://go.googlesource.com/go with a mirror at https://github.com/golang/go
+* Go source files are distributed under a BSD-style license
+* Official binary distributions are available at https://go.dev/dl/ for easy installation
+* Source installation is available for custom OS and architecture combinations at https://go.dev/doc/install/source
+* Go is built by thousands of contributors and welcomes community participation
+* Contribution guidelines are available at https://go.dev/doc/contribute
+* The project's issue tracker is reserved for bug reports and proposals only, not general questions
+
+### Go 编程语言 - 概述
+
+* Go 是一种开源编程语言,旨在构建简单、可靠和高效的软件
+* 官方 Git 仓库托管在 https://go.googlesource.com/go,镜像仓库位于 https://github.com/golang/go
+* Go 源代码文件采用 BSD 风格许可证分发
+* 官方二进制发行版可在 https://go.dev/dl/ 下载,便于快速安装
+* 对于特定操作系统和架构组合,可通过 https://go.dev/doc/install/source 进行源码安装
+* Go 由数千名贡献者共同构建,欢迎社区参与
+* 贡献指南可在 https://go.dev/doc/contribute 查阅
+* 项目的问题跟踪器仅用于错误报告和提案,不接受一般性问题咨询
+
+**[Read Original / 阅读原文](https://github.com/golang/go/issues/62026)**
+
+### This CSS Proves Me Human
+
+* A writer explores the painful compromises required to evade AI detection systems by deliberately altering their natural writing style
+* Uses CSS tricks like `text-transform: lowercase` to hide capitalization while preserving code blocks
+* Modifies font glyphs to disguise em dashes, a signature stylistic element
+* Considers intentional misspellings using Norvig corpus analysis to identify subtle errors that might pass as human mistakes
+* Draws the line at fundamentally changing writing style—recognizing it as core to identity and thought process, not just surface presentation
+* The ironic final line mimics an AI assistant's response, highlighting the absurdity of humans disguising themselves as human
+* A meditation on authenticity in an era where human expression must be masked to avoid being flagged as machine-generated
+
+### 这段 CSS 证明我是人类
+
+* 作者探讨了为逃避 AI 检测系统而被迫改变自然写作风格所带来的痛苦妥协
+* 使用 CSS 技巧如 `text-transform: lowercase` 隐藏大写字母,同时保留代码块原样
+* 修改字体字形来伪装破折号——作者标志性的文体元素
+* 考虑使用 Norvig 语料库分析来制造刻意的拼写错误,模仿人类可能犯的细微错误
+* 在根本改变写作风格这一步前止步——意识到写作风格是身份认同和思维方式的核心,而非表面装饰
+* 讽刺性的结尾模仿 AI 助手的回复,凸显人类为证明自己是人类而伪装的荒谬性
+* 一篇关于真实性的沉思:在人类表达必须被掩盖以避免被标记为机器生成内容的时代
+
+**[Read Original / 阅读原文](https://will-keleher.com/posts/this-css-makes-me-human/)**
+
+### 🎬 Become the best programmer
+**Channel:** Matty McTech
+
+* What the video covers: The video introduces a platform that offers learning opportunities for over 80 programming languages with a gamified, path-based approach
+* Key topics discussed: Interactive coding education, language-agnostic learning platform, Duolingo-style programming practice methodology
+* Why it's worth watching: If you're looking to expand your programming language repertoire or prefer a structured, gamified learning experience, this video showcases a comprehensive platform that makes learning multiple languages accessible and engaging
+
+### 🎬 成为最优秀的程序员
+**频道:** Matty McTech
+
+* 视频内容概述: 视频介绍了一个提供80多种编程语言学习的平台,采用游戏化的路径式学习方法
+* 主要话题: 互动式编程教育、多语言学习平台、类似Duolingo的编程练习方法论
+* 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
 
