@@ -562,31 +562,20 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * What the video covers: A beginner-friendly tutorial on Claude Code, breaking down its features and functionality in an accessible way for newcomers
 * Key topics discussed: Practical walkthrough of Claude Code's capabilities, setup process, and real-world usage examples designed for users with minimal technical background
 * Why it's worth watching: Perfect for anyone intimidated by AI coding tools - Oliur's "idiots guide" approach makes complex AI-assisted development approachable and easy to understand, even if you're just getting started with coding assistants
-
----
-
-### 🎬 Claude Code - 傻瓜式指南
-
-**频道:** Oliur Online
-
-* 视频内容概述: 面向初学者的 Claude Code 教程,以通俗易懂的方式讲解其功能和使用方法
-* 主要话题: Claude Code 功能的实用演示、设置流程,以及为技术背景较少的用户设计的实际应用案例
-* 为何值得观看: 非常适合对 AI 编程工具感到陌生的人 - Oliur 的"傻瓜式指南"方法让复杂的 AI 辅助开发变得平易近人,即使你刚开始接触编程助手也能轻松理解
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8xfIarQ9mL0)**
-
 <!-- [Title-Only] -->
 ### Plasma Bigscreen – 10-foot interface for KDE plasma
 
-* Based on the title, this article likely covers Plasma Bigscreen, a specialized user interface designed for large displays and TV screens within the KDE Plasma desktop environment. The "10-foot interface" terminology suggests it's optimized for viewing and interaction from a distance, similar to smart TV interfaces or media center applications.
+* Based on the title, this article likely covers Plasma Bigscreen, a specialized user interface designed for large displays and TV screens (the "10-foot interface" refers to viewing distance from a TV). It's built on KDE Plasma, the popular Linux desktop environment, but optimized for couch/living room usage rather than traditional desktop computing.
 
-* This might be interesting to readers who are exploring alternatives to commercial smart TV platforms, looking to build custom home theater PCs, or interested in open-source solutions for living room computing. It could appeal to Linux enthusiasts wanting to extend KDE Plasma's capabilities beyond traditional desktop use cases, or anyone curious about convergent computing experiences across different form factors.
+* This might be interesting to readers because it represents an open-source alternative to proprietary smart TV interfaces and streaming boxes. It could appeal to Linux enthusiasts wanting to build their own media center PCs, those interested in privacy-focused home entertainment solutions, or anyone curious about how desktop Linux is expanding into the living room space. The project demonstrates how traditional desktop environments can be adapted for different use cases and form factors.
+
+---
 
 ### Plasma Bigscreen – KDE Plasma 的大屏幕界面
 
-* 根据标题推测，这篇文章可能介绍 Plasma Bigscreen，这是 KDE Plasma 桌面环境中专为大屏幕和电视设计的用户界面。"10-foot interface"（十英尺界面）这个术语表明它针对远距离观看和交互进行了优化，类似于智能电视界面或媒体中心应用。
+* 根据标题推测，这篇文章可能介绍 Plasma Bigscreen，这是一个专为大屏幕和电视设计的用户界面（"10-foot interface"指的是从电视观看的距离，约3米）。它基于流行的 Linux 桌面环境 KDE Plasma 构建，但针对客厅/沙发使用场景进行了优化，而非传统的桌面计算。
 
-* 这对于正在寻找商业智能电视平台替代方案的读者、想要构建定制家庭影院电脑的用户，或对客厅计算的开源解决方案感兴趣的人来说可能很有价值。它可能吸引希望将 KDE Plasma 的功能扩展到传统桌面之外的 Linux 爱好者，或任何对跨不同设备形态的融合计算体验感到好奇的人。
+* 这个项目值得关注，因为它代表了专有智能电视界面和流媒体盒子的开源替代方案。它可能吸引想要构建自己媒体中心电脑的 Linux 爱好者、寻求注重隐私的家庭娱乐解决方案的用户，或任何对 Linux 桌面如何扩展到客厅领域感兴趣的人。该项目展示了传统桌面环境如何适配不同的使用场景和设备形态。
 
 **[Read Original / 阅读原文](https://plasma-bigscreen.org)**
 
@@ -619,22 +608,38 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * A writer explores the painful compromises required to evade AI detection systems by deliberately altering their natural writing style
 * Uses CSS tricks like `text-transform: lowercase` to hide capitalization while preserving code blocks
 * Modifies font glyphs to disguise em dashes, a signature stylistic element
-* Considers intentional misspellings using Norvig corpus analysis to identify subtle errors that might pass as human mistakes
-* Draws the line at fundamentally changing writing style—recognizing it as core to identity and thought process, not just surface presentation
-* The ironic final line mimics an AI assistant's response, highlighting the absurdity of humans disguising themselves as human
-* A meditation on authenticity in an era where human expression must be masked to avoid being flagged as machine-generated
+* Considers intentional misspellings using Norvig corpus analysis to identify subtle word substitutions
+* Draws the line at fundamentally changing writing style—recognizing it as core to identity and thought process, not just appearance
+* The ironic final line mimics AI-generated content, highlighting the absurdity of having to prove humanity through deliberate imperfection
 
 ### 这段 CSS 证明我是人类
 
-* 作者探讨了为逃避 AI 检测系统而被迫改变自然写作风格所带来的痛苦妥协
+* 作者探讨了为规避 AI 检测系统而被迫改变自然写作风格的痛苦妥协
 * 使用 CSS 技巧如 `text-transform: lowercase` 隐藏大写字母,同时保留代码块原样
-* 修改字体字形来伪装破折号——作者标志性的文体元素
-* 考虑使用 Norvig 语料库分析来制造刻意的拼写错误,模仿人类可能犯的细微错误
-* 在根本改变写作风格这一步前止步——意识到写作风格是身份认同和思维方式的核心,而非表面装饰
-* 讽刺性的结尾模仿 AI 助手的回复,凸显人类为证明自己是人类而伪装的荒谬性
-* 一篇关于真实性的沉思:在人类表达必须被掩盖以避免被标记为机器生成内容的时代
+* 修改字体字形来伪装破折号——一个标志性的文体元素
+* 考虑使用 Norvig 语料库分析来识别微妙的词汇替换,故意拼错单词
+* 在根本改变写作风格这一点上划清界限——认识到写作风格是身份认同和思维方式的核心,而非仅仅是外表
+* 讽刺性的结尾模仿 AI 生成内容,凸显了必须通过刻意制造缺陷来证明人类身份的荒谬性
 
 **[Read Original / 阅读原文](https://will-keleher.com/posts/this-css-makes-me-human/)**
+
+### 🎬 Complete Python Learning RoadMap (A to Z)
+**Channel:** Apna College
+
+* What the video covers: A comprehensive guide on how to start learning Python from scratch, covering the complete learning journey from beginner to advanced levels
+* Key topics discussed: Python learning strategies, recommended resources for faster learning, structured learning path, and access to a complete Python playlist for hands-on practice
+* Why it's worth watching: Perfect for beginners who want a clear, structured roadmap to master Python efficiently. Apna College provides practical guidance and curated resources to accelerate your Python learning journey, eliminating the confusion of where to start and what to learn next.
+
+---
+
+### 🎬 完整Python学习路线图（从A到Z）
+**频道:** Apna College
+
+* 视频内容概述: 全面指导如何从零开始学习Python,涵盖从初学者到高级水平的完整学习旅程
+* 主要话题: Python学习策略、快速学习的推荐资源、结构化学习路径,以及完整的Python播放列表供实践练习
+* 为何值得观看: 非常适合想要清晰、结构化路线图来高效掌握Python的初学者。Apna College提供实用指导和精选资源来加速你的Python学习之旅,消除从哪里开始和学什么的困惑。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XV-lIaO00H8)**
 
 ### 🎬 Become the best programmer
 **Channel:** Matty McTech
