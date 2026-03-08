@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 08, 2026"
 date: 2026-03-08
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -661,4 +661,76 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 适合希望完全掌控 AI 编码助手、注重数据隐私或想要避免订阅费用的开发者,同时在开发工作流程中保持前沿的 AI 能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=3zSANOIBHYw)**
+
+### Hormuz Strait Closure: Extended Disruption Becomes Reality
+
+* The Strait of Hormuz is effectively closed, challenging the long-held assumption that any closure would be brief due to global economic necessity
+* War risk insurance costs are extremely high, and the area has been designated a Warlike Operations Area, allowing seafarers to refuse passage
+* Lessons from the Red Sea crisis show military intervention alone doesn't restore commercial shipping confidence—insurance costs and crew safety concerns persist
+* Trump ordered US Navy escorts and insurance guarantees, but analysts doubt this will meaningfully increase traffic given safety concerns
+* Unlike the Red Sea (an "open" chokepoint with alternative routes), Hormuz is a "closed" chokepoint with no viable alternatives for trapped energy supplies
+* Middle East Gulf oil producers are running out of storage capacity; Qatar shut down 20% of global LNG supply, Iraq and Kuwait began production cuts
+* Crude tanker rates have reached historically unprecedented levels, with VLCC rates exceeding $485,000 per day on some routes
+* Shipowners are avoiding the risk entirely by focusing on profitable Atlantic basin routes, pushing tonnage away from the Middle East Gulf market
+* The commercial reality is that reopening requires shipowner confidence in crew and asset safety—conditions that remain absent
+
+### 霍尔木兹海峡封锁:长期中断成为现实
+
+* 霍尔木兹海峡实际上已经关闭,挑战了长期以来认为任何封锁都会因全球经济需要而短暂的假设
+* 战争风险保险成本极高,该地区已被指定为战争行动区,允许海员拒绝通行
+* 红海危机的教训表明,仅靠军事干预无法恢复商业航运信心——保险成本和船员安全问题依然存在
+* 特朗普下令美国海军护航并提供保险担保,但分析师怀疑这能否显著增加通行量,因为安全担忧仍在
+* 与红海(有替代路线的"开放"咽喉点)不同,霍尔木兹是"封闭"咽喉点,被困能源供应没有可行替代方案
+* 中东海湾石油生产商储存容量即将耗尽;卡塔尔关闭了全球20%的液化天然气供应,伊拉克和科威特开始削减产量
+* 原油油轮费率达到历史空前水平,部分航线VLCC费率超过每天48.5万美元
+* 船东通过专注于有利可图的大西洋盆地航线完全规避风险,将运力从中东海湾市场转移
+* 商业现实是重新开放需要船东对船员和资产安全有信心——这些条件目前仍不具备
+
+**[Read Original / 阅读原文](https://www.lloydslist.com/LL1156532/They-all-said-Hormuz-closure-would-be-brief-What-if-they-were-wrong)**
+
+### uv: An Extremely Fast Python Package and Project Manager
+
+* **Core Value**: Rust-based Python package manager that's 10-100x faster than pip, replacing multiple tools (pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv) with a single solution
+* **Project Management**: Comprehensive dependency management with universal lockfiles, workspaces support similar to Cargo, and seamless project initialization, building, and publishing capabilities
+* **Script Execution**: Manages single-file Python scripts with inline dependency metadata, running them in isolated virtual environments automatically
+* **Tool Management**: Executes and installs Python CLI tools (like pipx) using `uvx` for ephemeral runs or `uv tool install` for persistent installations
+* **Python Version Control**: Built-in Python version installation and management, allowing quick switching between versions (including PyPy) and pinning specific versions per directory
+* **pip Compatibility**: Drop-in replacement for pip/pip-tools/virtualenv with advanced features like platform-independent resolutions, dependency overrides, and reproducible builds
+* **Performance & Efficiency**: Global cache for dependency deduplication, disk-space efficient storage, and millisecond-level package resolution and installation
+* **Installation**: Available via standalone installers (curl/PowerShell), PyPI (pip/pipx), with self-update capability and cross-platform support (macOS, Linux, Windows)
+* **Production Ready**: Stable and widely used in production environments, backed by Astral (creators of Ruff), with comprehensive documentation at docs.astral.sh/uv
+* **Technical Foundation**: Built using PubGrub dependency resolver, inspired by pnpm/Orogene/Bun optimizations, with Git implementation based on Cargo
+
+### uv:极速 Python 包和项目管理器
+
+* **核心价值**:基于 Rust 的 Python 包管理器,速度比 pip 快 10-100 倍,单一工具替代多个工具(pip、pip-tools、pipx、poetry、pyenv、twine、virtualenv)
+* **项目管理**:全面的依赖管理,支持通用锁文件、类似 Cargo 的工作空间,以及无缝的项目初始化、构建和发布功能
+* **脚本执行**:管理单文件 Python 脚本及其内联依赖元数据,自动在隔离的虚拟环境中运行
+* **工具管理**:执行和安装 Python CLI 工具(类似 pipx),使用 `uvx` 进行临时运行或 `uv tool install` 进行持久安装
+* **Python 版本控制**:内置 Python 版本安装和管理,支持快速切换版本(包括 PyPy)和按目录固定特定版本
+* **pip 兼容性**:pip/pip-tools/virtualenv 的直接替代品,具有平台无关解析、依赖覆盖和可重现构建等高级功能
+* **性能与效率**:全局缓存实现依赖去重,磁盘空间高效存储,毫秒级包解析和安装速度
+* **安装方式**:支持独立安装器(curl/PowerShell)、PyPI(pip/pipx),具备自更新能力和跨平台支持(macOS、Linux、Windows)
+* **生产就绪**:稳定且广泛应用于生产环境,由 Astral(Ruff 创建者)支持,完整文档位于 docs.astral.sh/uv
+* **技术基础**:使用 PubGrub 依赖解析器构建,借鉴 pnpm/Orogene/Bun 优化思路,Git 实现基于 Cargo
+
+**[Read Original / 阅读原文](https://github.com/astral-sh/uv/pull/17643)**
+
+### PulseFeedback - An Extra-Sensory Experience in Your Browser
+
+* **Camera-based pulse detection**: The page uses your device camera to detect and measure your heart rate in real-time
+* **Privacy-focused design**: No video feed is transmitted or visible to others - only your heart rate data is shared
+* **Interactive biometric experience**: Creates a responsive, immersive browser experience that reacts to your physiological state
+* **Animated heart icon with EKG visualization**: Features an SVG heart with a sweeping gradient animation mimicking an electrocardiogram pulse
+* **Simple entry interface**: Single call-to-action button invites users to "Continue to experience" the pulse-responsive features
+
+### PulseFeedback - 浏览器中的超感官体验
+
+* **基于摄像头的脉搏检测**:该页面使用设备摄像头实时检测和测量心率
+* **注重隐私的设计**:不会传输或向他人显示视频画面 - 仅共享心率数据
+* **交互式生物识别体验**:创建响应式、沉浸式的浏览器体验,对用户的生理状态做出反应
+* **带心电图可视化的动画心形图标**:采用SVG心形图标,配有模拟心电图脉搏的扫描渐变动画
+* **简洁的入口界面**:单一行动号召按钮邀请用户"继续体验"脉搏响应功能
+
+**[Read Original / 阅读原文](https://pulsefeedback.io/)**
 
