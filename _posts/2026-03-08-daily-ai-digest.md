@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 08, 2026"
 date: 2026-03-08
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -513,4 +513,152 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你正在使用 OpenClaw,这个工具集成承诺带来显著改进(标题声称提升100倍),是优化 OpenClaw 设置的必看内容。简单的设置方法让初学者也能轻松上手。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=RhLpV6QDBFE)**
+
+### Cloud VM Benchmarks 2026: Performance / Price Analysis
+
+* Comprehensive benchmark comparison of 44 VM types across 7 cloud providers testing CPU performance and cost efficiency
+* Focus on 2vCPU instances as the minimum scalable unit, with separate evaluation of single-thread and multi-thread performance
+* New CPUs tested include AMD EPYC Turin, Intel Granite Rapids, Google Axion, Azure Cobalt 100, and Ampere AmpereOne M
+* Expanded testing methodology now includes performance ranges across multiple regions to account for instance inconsistency
+* AMD EPYC Turin with SMT disabled delivers exceptional per-2vCPU results by providing full core per vCPU
+* AWS EC2 offers 11 instance types ranging from older AMD Rome/Intel Skylake to latest Turin/Granite Rapids, with complex pricing including on-demand, reserved (1Y/3Y), and spot options
+* GCP provides 12 instance types with competitive spot pricing (as low as $9.90/month for c3d instances) and includes ARM-based Axion processors
+* Standard configuration uses 2GB RAM per vCPU and 30GB SSD boot disk for fair price comparison across providers
+* Older CPU generations should be avoided as cloud providers charge more for less performance due to lower efficiency
+* Pricing data valid for January 2026 with recommendations to verify current rates before final decisions
+
+### 2026年云虚拟机基准测试:性能/价格分析
+
+* 对7家云服务商的44种虚拟机类型进行全面基准测试,评估CPU性能和成本效益
+* 重点测试2vCPU实例作为最小可扩展单元,分别评估单线程和多线程性能
+* 新测试的CPU包括AMD EPYC Turin、Intel Granite Rapids、Google Axion、Azure Cobalt 100和Ampere AmpereOne M
+* 扩展测试方法现包括跨多个区域的性能范围,以考虑实例不一致性
+* 禁用SMT的AMD EPYC Turin通过每vCPU提供完整核心,实现出色的每2vCPU结果
+* AWS EC2提供11种实例类型,从较旧的AMD Rome/Intel Skylake到最新的Turin/Granite Rapids,定价复杂包括按需、预留(1年/3年)和竞价选项
+* GCP提供12种实例类型,竞价定价具有竞争力(c3d实例低至每月$9.90),并包含基于ARM的Axion处理器
+* 标准配置使用每vCPU 2GB内存和30GB SSD启动盘,以便跨供应商进行公平价格比较
+* 应避免使用旧代CPU,因为云服务商由于效率较低会对较低性能收取更高费用
+* 定价数据截至2026年1月,建议在最终决策前验证当前费率
+
+**[Read Original / 阅读原文](https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html)**
+
+### CasNum: Arbitrary Precision Arithmetic Through Ancient Geometry
+
+* A Python library implementing arbitrary precision arithmetic using classical compass and straightedge constructions
+* Features a modified Game Boy emulator where every ALU operation runs entirely on geometric constructions
+* Numbers represented as points (x,0) on a plane, with arithmetic operations built from five basic geometric constructions
+* Includes working examples: RSA encryption and a functional (albeit slow) Game Boy emulator running Pokémon
+* Uses aggressive caching (lru_cache) to manage computational expense - first Pokémon boot takes ~15 minutes, subsequent runs achieve 0.5-1 FPS
+* Built on PyBoy emulator with minimal modifications, integrating geometric arithmetic into opcodes_gen.py
+* Comes with a visualization tool to watch the compass-and-straightedge constructions in real-time
+* Philosophy: "If you didn't solve a 4th-degree polynomial to increment a loop counter, you didn't really increment it"
+* Performance metrics humorously listed as "Time Complexity: Yes, Space Complexity: Also yes"
+* Dependencies include sympy, pyglet for visualization, and notably "Euclid Postulate V (optional)"
+
+### CasNum:用古典几何实现任意精度运算
+
+* 一个使用经典尺规作图实现任意精度算术运算的 Python 库
+* 包含一个修改版 Game Boy 模拟器,其中每个 ALU 操作完全通过几何构造运行
+* 数字表示为平面上的点 (x,0),算术运算基于五种基本几何构造实现
+* 包含实际运行示例:RSA 加密和一个功能完整(虽然很慢)的 Game Boy 模拟器可运行宝可梦
+* 使用激进的缓存策略(lru_cache)管理计算开销 - 首次启动宝可梦需约 15 分钟,后续运行可达 0.5-1 FPS
+* 基于 PyBoy 模拟器构建,仅需最小修改,将几何运算集成到 opcodes_gen.py 中
+* 配备可视化工具,可实时观看尺规作图构造过程
+* 设计哲学:"如果你不需要解四次多项式来递增循环计数器,那你就没有真正递增它"
+* 性能指标幽默地列为"时间复杂度:是的,空间复杂度:也是的"
+* 依赖项包括 sympy、用于可视化的 pyglet,以及值得注意的"欧几里得第五公设(可选)"
+
+**[Read Original / 阅读原文](https://github.com/0x0mer/CasNum)**
+
+### The Death and Rebirth of Science Fiction: A Genre in Transition
+
+* Traditional written sci-fi is declining in bookstores, with fewer dedicated titles and shelf space dominated by classics like *Dune* and media tie-ins
+* Sci-fi themes (AI, time travel, cloning, apocalypses) are thriving in mainstream literary fiction, reaching audiences who wouldn't identify as sci-fi fans
+* Books like *Sea of Tranquility*, *Orbital*, and *In Ascension* contain sci-fi elements but compete for Booker Prizes rather than Hugo Awards
+* The genre's commercial machinery emerged in the 1920s when Hugo Gernsback launched *Amazing Stories* (1926), creating the first dedicated sci-fi community
+* By the 1980s, sci-fi had developed numerous subgenres (cyberpunk, New Wave, hard SF, space opera) with constant internal debates about direction
+* Recent decades saw internal conflicts (Sad/Rabid Puppies movements 2013-2017) focused on defending traditional pulp styles against literary approaches and diverse voices
+* Meanwhile, sci-fi elements quietly migrated into mainstream literature, especially through British writers (Ballard, Banks, Ishiguro) and translated works (Lem, Murakami)
+* The paradox: genre sci-fi is shrinking while sci-fi as a literary mode is expanding beyond the traditional genre boundaries
+
+### 科幻小说之死与重生:一个转型中的文学类型
+
+* 传统书面科幻小说在书店中衰落,专门书籍减少,书架空间被《沙丘》等经典作品和影视衍生品占据
+* 科幻主题(人工智能、时间旅行、克隆、末日)在主流文学小说中蓬勃发展,触及那些不认为自己是科幻迷的读者群体
+* 《宁静之海》《轨道》《升天》等作品包含科幻元素,但竞争布克奖而非雨果奖
+* 该类型的商业机制始于1920年代,雨果·根斯巴克于1926年创办《惊奇故事》杂志,建立了首个专门的科幻社群
+* 到1980年代,科幻已发展出众多子类型(赛博朋克、新浪潮、硬科幻、太空歌剧),内部不断争论发展方向
+* 近几十年出现内部冲突(2013-2017年"悲伤小狗"运动),聚焦于捍卫传统通俗风格,反对文学化手法和多元声音
+* 与此同时,科幻元素悄然迁移到主流文学,特别是通过英国作家(巴拉德、班克斯、石黑一雄)和翻译作品(莱姆、村上春树)
+* 悖论:类型科幻正在萎缩,而作为文学模式的科幻却在超越传统类型界限不断扩张
+
+**[Read Original / 阅读原文](https://www.typebarmagazine.com/science-fiction-is-dying-long-live-post-sci-fi/)**
+
+### autoresearch - Autonomous AI Agent for LLM Training Optimization
+
+* **What it does**: Enables AI agents to autonomously conduct machine learning research by iteratively modifying training code, running 5-minute experiments, and optimizing model performance overnight without human intervention.
+
+* **Key features**: Single-file modification approach (agent only edits `train.py`), fixed 5-minute training budget for fair comparisons, simplified single-GPU nanochat implementation, human-programmable agent instructions via `program.md`, measures validation bits per byte (val_bpb) as platform-independent metric.
+
+* **Why it's notable**: Created by Andrej Karpathy, this represents a paradigm shift in AI research methodology—instead of manually tweaking code, researchers "program" AI agents through markdown instructions to autonomously explore the optimization space. The project demonstrates practical autonomous research capabilities, running ~12 experiments/hour or ~100 overnight, making frontier AI research accessible on single-GPU setups.
+
+---
+
+### autoresearch - 用于大语言模型训练优化的自主 AI 智能体
+
+* **功能介绍**: 让 AI 智能体自主进行机器学习研究,通过迭代修改训练代码、运行 5 分钟实验并优化模型性能,无需人工干预即可在夜间完成研究工作。
+
+* **主要特点**: 单文件修改方式(智能体仅编辑 `train.py`)、固定 5 分钟训练预算确保公平对比、简化的单 GPU nanochat 实现、通过 `program.md` 文件编程智能体指令、使用验证字节比特数(val_bpb)作为平台无关的评估指标。
+
+* **为何值得关注**: 由 Andrej Karpathy 创建,代表了 AI 研究方法论的范式转变——研究人员不再手动调整代码,而是通过 Markdown 指令"编程"AI 智能体来自主探索优化空间。该项目展示了实用的自主研究能力,每小时可运行约 12 次实验或夜间运行约 100 次,使前沿 AI 研究在单 GPU 环境下变得可行。
+
+**[View Repository / 查看仓库](https://github.com/karpathy/autoresearch)**
+
+### 🎬 The Hidden Story Behind the Printing Press - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth exploration of the printing press's invention and its historical impact, featuring historian Ada Palmer who challenges common narratives about this transformative technology
+* Key topics discussed: The actual circumstances surrounding Gutenberg's invention, the printing press's role in information dissemination, how it reshaped society and knowledge distribution, and misconceptions about its immediate effects on literacy and culture
+* Why it's worth watching: Ada Palmer brings scholarly expertise to debunk myths about one of history's most important inventions, offering nuanced insights into how technological revolutions actually unfold versus how we romanticize them in hindsight
+
+---
+
+### 🎬 印刷机背后的隐秘故事 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深入探讨印刷机的发明及其历史影响,历史学家 Ada Palmer 挑战关于这项变革性技术的常见叙事
+* 主要话题: 古腾堡发明的实际情况、印刷机在信息传播中的作用、它如何重塑社会和知识分配,以及关于其对识字率和文化立即影响的误解
+* 为何值得观看: Ada Palmer 以学术专业知识揭穿关于历史上最重要发明之一的迷思,对技术革命的实际发展过程与我们事后浪漫化的方式提供细致入微的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_-JDgtXEZCs)**
+
+### 🎬 The Unbeatable Local AI Coding Workflow (Full 2026 Setup)
+
+**Channel:** Zen van Riel
+
+* **What the video covers:** A comprehensive guide to setting up a complete local AI coding workflow in 2026, focusing on running AI models entirely on your own machine without relying on cloud services
+* **Key topics discussed:** 
+  - Local AI model setup and configuration for coding assistance
+  - Tools and frameworks for running LLMs locally
+  - Integration strategies for AI-powered development environments
+  - Performance optimization for local AI inference
+  - Privacy and cost benefits of local AI workflows
+* **Why it's worth watching:** Perfect for developers who want full control over their AI coding assistants, prioritize data privacy, or want to avoid subscription costs while maintaining cutting-edge AI capabilities in their development workflow
+
+---
+
+### 🎬 无与伦比的本地 AI 编码工作流程(2026 完整设置)
+
+**频道:** Zen van Riel
+
+* **视频内容概述:** 全面指导如何在 2026 年搭建完整的本地 AI 编码工作流程,重点介绍如何在本地机器上运行 AI 模型而无需依赖云服务
+* **主要话题:**
+  - 本地 AI 模型的设置与配置用于编码辅助
+  - 本地运行大语言模型的工具和框架
+  - AI 驱动开发环境的集成策略
+  - 本地 AI 推理的性能优化
+  - 本地 AI 工作流程的隐私保护和成本优势
+* **为何值得观看:** 适合希望完全掌控 AI 编码助手、注重数据隐私或想要避免订阅费用的开发者,同时在开发工作流程中保持前沿的 AI 能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3zSANOIBHYw)**
 
