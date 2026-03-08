@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 08, 2026"
 date: 2026-03-08
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -733,4 +733,119 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **简洁的入口界面**:单一行动号召按钮邀请用户"继续体验"脉搏响应功能
 
 **[Read Original / 阅读原文](https://pulsefeedback.io/)**
+
+<!-- [Title-Only] -->
+### SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI
+
+* Based on the title, this appears to be a research paper introducing a benchmark called "SWE-CI" (likely Software Engineering - Continuous Integration) that evaluates how well AI agents can maintain and work with codebases through continuous integration workflows
+* This is likely interesting because it addresses a critical gap in evaluating AI coding assistants - not just whether they can write code, but whether they can maintain existing codebases, handle CI/CD pipelines, fix failing tests, and work within real-world development workflows. This is particularly relevant as AI coding tools become more sophisticated and teams consider using them for maintenance tasks beyond initial code generation
+
+### SWE-CI：通过持续集成评估智能体维护代码库的能力
+
+* 根据标题推测，这是一篇研究论文，介绍了名为"SWE-CI"（可能是软件工程-持续集成的缩写）的基准测试，用于评估 AI 智能体通过持续集成工作流维护和处理代码库的能力
+* 值得关注的原因：该研究填补了评估 AI 编程助手的关键空白——不仅评估它们能否编写代码，更重要的是能否维护现有代码库、处理 CI/CD 流程、修复失败的测试，以及在真实开发工作流中运作。随着 AI 编程工具日益成熟，团队开始考虑将其用于代码维护等任务，这项研究显得尤为重要
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2603.03823)**
+
+### Understanding Color Space Conversion: From RGB to L*a*b*
+
+* RGB color space is not perceptually uniform - equal RGB value changes don't match equal perceived color changes, causing reproduction inaccuracies across devices
+* L*a*b* color space is perceptually uniform with three components: L* (lightness 0-100), a* (green-red axis), and b* (blue-yellow axis)
+* Delta E (ΔE) measures color differences in Lab space, enabling objective color accuracy assessment in digital imaging workflows
+* Converting sRGB to Lab requires four steps: normalize RGB values (0-1 range), apply gamma correction for linearization, transform to XYZ color space using a matrix, then convert XYZ to Lab using reference white point formulas
+* White point selection is critical - D65 (average daylight) is standard for digital imaging/sRGB, D50 (warmer light) for printing, and E (equal energy) for theoretical work
+* The 2° standard observer is most commonly used for color matching, with D65 reference values: Xn=0.95047, Yn=1.00000, Zn=1.08883
+* For Python implementation, scikit-image library provides `rgb2lab()` function with configurable illuminant and observer parameters
+
+### 理解色彩空间转换:从 RGB 到 L*a*b*
+
+* RGB 色彩空间不具备感知均匀性 - RGB 值的相等变化不对应相等的感知色彩变化,导致不同设备间色彩还原不准确
+* L*a*b* 色彩空间具有感知均匀性,包含三个分量:L*(明度 0-100)、a*(绿-红轴)和 b*(蓝-黄轴)
+* Delta E (ΔE) 在 Lab 空间中测量色彩差异,实现数字成像工作流程中的客观色彩准确度评估
+* sRGB 转换为 Lab 需要四个步骤:归一化 RGB 值(0-1 范围)、应用伽马校正进行线性化、使用矩阵转换到 XYZ 色彩空间、然后使用参考白点公式将 XYZ 转换为 Lab
+* 白点选择至关重要 - D65(平均日光)是数字成像/sRGB 的标准,D50(暖光)用于印刷,E(等能量)用于理论研究
+* 2° 标准观察者最常用于色彩匹配,D65 参考值为:Xn=0.95047、Yn=1.00000、Zn=1.08883
+* Python 实现可使用 scikit-image 库的 `rgb2lab()` 函数,支持配置光源和观察者参数
+
+**[Read Original / 阅读原文](https://kaizoudou.com/from-rgb-to-lab-color-space/)**
+
+### MonoGame: Cross-Platform Game Development Framework
+
+* Open-source .NET framework for creating games using C# across desktop, mobile, and console platforms
+* Re-implementation of Microsoft's discontinued XNA Framework, powering successful titles like Stardew Valley, Celeste, and Streets of Rage 4
+* Supports Windows (8.1+), Linux, macOS (10.15+), Android (6.0+), iOS (10.0+), and major consoles (PlayStation 4/5, Xbox One, Nintendo Switch)
+* Provides comprehensive resources including getting started guides, API documentation, and community tutorials
+* Includes sample projects: Platformer 2D, NeonShooter, Auto Pong, and Ship Game 3D demonstrating various game mechanics
+* Active community support through Discord server, GitHub discussions, and issue tracker
+* Fully open-source with available source code on GitHub, including game framework, content pipeline, and command-line tools
+* Accepts financial support through donations to fund hosting, hardware, and potential dedicated developers
+* Licensed under Microsoft Public License with clear documentation for third-party library licenses
+
+### MonoGame:跨平台游戏开发框架
+
+* 基于 .NET 的开源游戏框架,使用 C# 语言开发桌面、移动和主机平台游戏
+* 微软已停止维护的 XNA Framework 的重新实现,已成功开发《星露谷物语》《蔚蓝》《怒之铁拳4》等知名游戏
+* 支持 Windows(8.1+)、Linux、macOS(10.15+)、Android(6.0+)、iOS(10.0+)及主流游戏主机(PlayStation 4/5、Xbox One、Nintendo Switch)
+* 提供完整的学习资源,包括入门指南、API 参考文档和社区教程
+* 包含示例项目:2D 平台游戏、霓虹射击、自动乒乓球和 3D 飞船游戏,展示各种游戏机制
+* 通过 Discord 服务器、GitHub 讨论区和问题追踪器提供活跃的社区支持
+* 完全开源,GitHub 上提供源代码,包括游戏框架、内容管线和命令行工具
+* 接受捐赠支持,资金用于托管服务、硬件采购和潜在的专职开发人员
+* 采用微软公共许可证,第三方库许可证文档清晰明确
+
+**[Read Original / 阅读原文](https://github.com/MonoGame/MonoGame)**
+
+### 🎬 Cloudflare just slop forked Next.js…
+**Channel:** Fireship
+
+* What the video covers: Cloudflare's controversial decision to fork Next.js, creating their own version of the popular React framework
+* Key topics discussed: The technical and business reasons behind the fork, implications for the Next.js ecosystem, differences between Cloudflare's version and Vercel's original Next.js, and the potential impact on developers
+* Why it's worth watching: This represents a significant shift in the web development landscape - understanding the fork's motivations and consequences is crucial for developers using Next.js or considering Cloudflare's platform. Fireship's signature fast-paced, informative style breaks down complex industry drama into digestible insights
+
+### 🎬 Cloudflare 刚刚"粗暴"分叉了 Next.js…
+**频道:** Fireship
+
+* 视频内容概述: Cloudflare 备受争议地决定分叉 Next.js,创建他们自己版本的流行 React 框架
+* 主要话题: 分叉背后的技术和商业原因、对 Next.js 生态系统的影响、Cloudflare 版本与 Vercel 原版 Next.js 的差异,以及对开发者的潜在影响
+* 为何值得观看: 这代表了 Web 开发领域的重大转变 - 理解分叉的动机和后果对于使用 Next.js 或考虑 Cloudflare 平台的开发者至关重要。Fireship 标志性的快节奏、信息丰富的风格将复杂的行业动态分解为易于理解的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=abbeIUOCzmw)**
+
+### 🎬 I Made a 3D Horror Game In Scratch
+**Channel:** ZonxScratch
+
+* What the video covers: A complete walkthrough of creating a 3D horror game using Scratch, a block-based visual programming platform typically used for beginner projects
+* Key topics discussed: 3D rendering techniques in Scratch, horror game mechanics implementation, creative workarounds for Scratch's limitations, game design and atmosphere building
+* Why it's worth watching: Demonstrates advanced programming concepts in an accessible platform, shows how to push Scratch beyond its typical use cases, inspiring for beginners wanting to create complex projects with simple tools
+
+---
+
+### 🎬 我用 Scratch 制作了一款 3D 恐怖游戏
+**频道:** ZonxScratch
+
+* 视频内容概述: 完整展示如何使用 Scratch(一个通常用于初学者的图形化编程平台)创建 3D 恐怖游戏的全过程
+* 主要话题: Scratch 中的 3D 渲染技术、恐怖游戏机制实现、突破 Scratch 限制的创意方法、游戏设计与氛围营造
+* 为何值得观看: 用简单易懂的平台展示高级编程概念,演示如何突破 Scratch 的常规用途,对想用简单工具创建复杂项目的初学者极具启发性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=JBt2Um6kONE)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
 
