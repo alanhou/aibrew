@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 08, 2026"
 date: 2026-03-08
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，11个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -848,4 +848,173 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
+
+<!-- [Title-Only] -->
+### SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI
+
+* Based on the title, this appears to be a research paper introducing a benchmark called "SWE-CI" (likely Software Engineering - Continuous Integration) that evaluates how well AI agents can maintain and work with codebases through continuous integration workflows
+* This is likely interesting because it addresses a critical gap in evaluating AI coding assistants - not just whether they can write code, but whether they can maintain existing codebases, handle CI/CD pipelines, fix failing tests, and work within real-world development workflows. This is particularly relevant as AI coding tools become more sophisticated and teams consider using them for maintenance tasks beyond initial code generation
+
+### SWE-CI：通过持续集成评估智能体维护代码库的能力
+
+* 根据标题推测，这是一篇研究论文，介绍了名为"SWE-CI"（可能是软件工程-持续集成的缩写）的基准测试，用于评估 AI 智能体通过持续集成工作流维护和处理代码库的能力
+* 值得关注的原因：该研究填补了评估 AI 编程助手的关键空白——不仅评估它们能否编写代码，更重要的是能否维护现有代码库、处理 CI/CD 流程、修复失败的测试，以及在真实开发工作流中运作。随着 AI 编程工具日益成熟，团队开始考虑将其用于代码维护等任务，这项研究显得尤为重要
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2603.03823)**
+
+### Notes on Writing Wasm: Best Practices for Rust-Wasm Integration
+
+* Author shares practical patterns for working with Rust-based WebAssembly and wasm-bindgen after years of experience
+* Key recommendations include passing data by reference, using `Rc<RefCell<T>>` over `&mut`, avoiding `Copy` on exported types, and using `wasm_refgen` for collections
+* Naming conventions matter: prefix Rust-exported types with `Wasm*` and JS-imported types with `Js*` to maintain clarity across the boundary
+* wasm-bindgen generates glue code between Rust and JavaScript, managing two different memory models (GC vs explicit ownership)
+* JS holds opaque handles like `{ __wbg_ptr: 12345 }` that index into a Wasm-side table containing actual Rust values
+* Manual bindings with `js_sys` are possible but time-consuming and brittle; leaning into bindgen's generated code provides better compile-time feedback
+* Primitive types implementing `IntoWasmAbi` (like `u32`, `String`, `Vec<u8>`) cross the boundary directly without special handling
+* Wrapping Rust structs/enums in newtypes for JS exposure is the core pattern, with `Wasm*` prefix on Rust side and unprefixed names on JS side
+
+### 编写 Wasm 的注意事项:Rust-Wasm 集成最佳实践
+
+* 作者分享了多年使用 Rust WebAssembly 和 wasm-bindgen 的实用模式经验
+* 核心建议包括:通过引用传递数据、优先使用 `Rc<RefCell<T>>` 而非 `&mut`、避免在导出类型上派生 `Copy`、对集合使用 `wasm_refgen`
+* 命名规范很重要:Rust 导出类型加 `Wasm*` 前缀,JS 导入类型加 `Js*` 前缀,以保持跨边界的清晰性
+* wasm-bindgen 在 Rust 和 JavaScript 之间生成粘合代码,管理两种不同的内存模型(垃圾回收 vs 显式所有权)
+* JS 持有不透明句柄如 `{ __wbg_ptr: 12345 }`,索引到 Wasm 端包含实际 Rust 值的表中
+* 使用 `js_sys` 手动绑定虽然可行但耗时且脆弱;依赖 bindgen 生成的代码能提供更好的编译时反馈
+* 实现 `IntoWasmAbi` 的原始类型(如 `u32`、`String`、`Vec<u8>`)可直接跨边界传递,无需特殊处理
+* 将 Rust 结构体/枚举包装在新类型中以暴露给 JS 是核心模式,Rust 端使用 `Wasm*` 前缀,JS 端使用无前缀名称
+
+**[Read Original / 阅读原文](https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm)**
+
+### Odysseus: A Groundbreaking Sci-Fi LARP Experience
+
+* Odysseus is a 50-hour continuous sci-fi LARP inspired by Battlestar Galactica's "33" episode, where hundreds of players inhabited a spaceship fleeing from enemies
+* Recognized as one of the most accomplished LARPs ever, featured in an exhibition at the Finnish Museum of Games
+* 200+ volunteers transformed an elementary school into a spaceship set with €190,000 budget, including mess hall, ops room, medical bays, and hangar
+* Featured custom open-source software for combat, engineering, RFID scanners, message boards, and livestreaming drone footage
+* Unique "clockwork" gameplay design where players perform interdependent sequential tasks that create feedback loops driving the story forward
+* Each of 300+ characters had unique backstories and relationships, with mature themes including genocide, grief, and political conflict
+* €550 tickets barely covered production costs; 30,000 volunteer hours were uncompensated
+* Lead producer Laura Kröger discusses the challenge of making such ambitious LARPs financially sustainable while properly compensating creators
+
+### 《奥德修斯》:开创性的科幻实境角色扮演体验
+
+* 《奥德修斯》是一场持续50小时的科幻LARP,灵感来自《太空堡垒卡拉狄加》的"33"集,数百名玩家扮演逃离敌人的太空船居民
+* 被公认为史上最成功的LARP之一,在芬兰游戏博物馆设有专题展览
+* 200多名志愿者用19万欧元预算将一所小学改造成太空船场景,包括食堂、作战室、医疗舱和机库
+* 采用定制开源软件支持战斗、工程、RFID扫描、内部留言板和无人机直播功能
+* 独特的"发条式"游戏设计,玩家执行相互依赖的连续任务,形成推动故事发展的反馈循环
+* 300多个角色各具独特背景故事和人际关系,涉及种族灭绝、悲伤和政治冲突等成人主题
+* 550欧元门票仅能勉强覆盖制作成本;3万小时志愿者工作未获报酬
+* 首席制作人Laura Kröger探讨如何让如此雄心勃勃的LARP在适当补偿创作者的同时实现财务可持续性
+
+**[Read Original / 阅读原文](https://mssv.net/2025/03/19/the-collective-ambition-behind-odysseus/)**
+
+### shadcn/ui - Beautifully Designed, Customizable Component Library
+
+* **What it does**: A collection of accessible, pre-built UI components that you can copy and paste into your projects. Unlike traditional component libraries, you own the code and can customize it freely.
+
+* **Key features**: 
+  - Framework-agnostic design (works with React, Next.js, and other frameworks)
+  - Fully customizable components built on Radix UI primitives
+  - Tailwind CSS styling with theme support
+  - Copy-paste approach - components live in your codebase, not node_modules
+  - Accessibility-first design
+  - Open source with MIT license
+
+* **Why it's notable**: Gaining 129 stars today, shadcn/ui has revolutionized how developers approach component libraries. Instead of installing a package, you copy components directly into your project, giving you complete control and ownership. This "open code" philosophy allows teams to build their own design systems while starting with production-ready components.
+
+---
+
+### shadcn/ui - 精美设计的可定制组件库
+
+* **功能介绍**: 一套可访问的预构建 UI 组件集合，可以直接复制粘贴到项目中。与传统组件库不同，你完全拥有代码并可自由定制。
+
+* **主要特点**:
+  - 框架无关设计（支持 React、Next.js 等框架）
+  - 基于 Radix UI 原语构建的完全可定制组件
+  - 使用 Tailwind CSS 样式和主题支持
+  - 复制粘贴方式 - 组件存在于你的代码库中，而非 node_modules
+  - 优先考虑可访问性
+  - MIT 许可证开源
+
+* **为何值得关注**: 今日获得 129 星标，shadcn/ui 彻底改变了开发者使用组件库的方式。你不需要安装包，而是直接将组件复制到项目中，获得完全的控制权和所有权。这种"开放代码"理念让团队能够在生产就绪组件的基础上构建自己的设计系统。
+
+**[View Repository / 查看仓库](https://github.com/shadcn-ui/ui)**
+
+### OpenClaw - Self-Hosted Personal AI Assistant Across All Your Messaging Platforms
+
+* A local-first AI assistant that runs on your own devices and integrates with 20+ messaging platforms (WhatsApp, Telegram, Slack, Discord, Signal, iMessage, Teams, and more)
+* Multi-channel inbox with voice wake words, live canvas workspace, CLI wizard setup, security-first DM pairing, multi-agent routing, and cross-platform support (macOS/Linux/Windows/iOS/Android)
+* Trending with 4,777 stars today because it offers a privacy-focused alternative to cloud AI assistants - you control the infrastructure, data stays local, and it works seamlessly across your existing communication channels with professional-grade features like session management, tool integration, and companion apps
+
+### OpenClaw - 跨平台自托管个人 AI 助手
+
+* 在本地设备上运行的 AI 助手,集成 20 多个消息平台(WhatsApp、Telegram、Slack、Discord、Signal、iMessage、Teams 等)
+* 多渠道收件箱,支持语音唤醒、实时画布工作区、CLI 向导安装、安全优先的 DM 配对、多代理路由,跨平台支持(macOS/Linux/Windows/iOS/Android)
+* 今日获得 4,777 星标,因其提供了注重隐私的云端 AI 助手替代方案 - 用户完全控制基础设施,数据保留在本地,无缝集成现有通信渠道,并具备会话管理、工具集成和配套应用等专业级功能
+
+**[View Repository / 查看仓库](https://github.com/openclaw/openclaw)**
+
+### AFFiNE - Open-Source Alternative to Notion & Miro with AI-Powered Canvas
+
+* AFFiNE is an all-in-one workspace that merges docs, whiteboards, and databases into a unified canvas. It combines knowledge management, planning, and creative work in a single platform where you can write, draw, and organize simultaneously.
+
+* Key features include a true edgeless canvas supporting any block type (rich text, databases, embedded pages, shapes, slides), multimodal AI assistance for content generation and transformation, local-first architecture with real-time collaboration, self-hosting capabilities, and cross-platform support. Built with TypeScript and fully open-source.
+
+* Notable for being a privacy-focused, local-first alternative that genuinely merges document editing with visual whiteboarding—something most productivity tools only claim to do. With 281 stars today and strong community engagement, it's gaining traction as developers and creative professionals seek open-source alternatives to proprietary tools. The project offers extensive templates and is actively building a plugin ecosystem.
+
+---
+
+### AFFiNE - 开源的 Notion 与 Miro 替代品,集成 AI 画布功能
+
+* AFFiNE 是一个多合一工作空间,将文档、白板和数据库融合到统一画布中。它整合了知识管理、规划和创意工作,让你可以在单一平台上同时进行写作、绘图和组织。
+
+* 主要特点包括真正的无边界画布(支持富文本、数据库、嵌入页面、图形、幻灯片等任意模块)、多模态 AI 助手用于内容生成和转换、本地优先架构配合实时协作、支持自托管部署,以及跨平台支持。使用 TypeScript 构建,完全开源。
+
+* 值得关注的原因在于它是一个注重隐私、本地优先的替代方案,真正实现了文档编辑与可视化白板的融合——这是大多数生产力工具只是声称但未做到的。今日获得 281 个星标,社区活跃度高,正吸引越来越多寻求开源替代方案的开发者和创意专业人士。项目提供丰富的模板库,并正在积极构建插件生态系统。
+
+**[View Repository / 查看仓库](https://github.com/toeverything/AFFiNE)**
+
+### 🎬 The most successful AI company you've never heard of | Qasar Younis
+
+**Channel:** Lenny's Podcast
+
+* What the video covers: An in-depth conversation with Qasar Younis, co-founder and CEO of Applied Intuition, a $15 billion AI company that's flying under the radar despite its massive success in the autonomous vehicle and industrial automation space.
+
+* Key topics discussed: Applied Intuition's journey from startup to a multi-billion dollar enterprise, how they add intelligence to vehicles (cars, tractors, and other machinery), the company's approach to building AI infrastructure for autonomous systems, insights on scaling a B2B AI company, and lessons learned from building in a highly technical and regulated industry.
+
+* Why it's worth watching: This is a rare look into one of the most valuable AI companies that operates largely out of the public eye. If you're interested in enterprise AI, autonomous vehicles, or building successful B2B tech companies, Qasar shares invaluable insights on product-market fit, customer acquisition in complex industries, and navigating the intersection of AI and physical systems. Perfect for founders, product leaders, and anyone curious about the less-hyped but highly impactful side of AI.
+
+---
+
+### 🎬 你从未听说过的最成功AI公司 | Qasar Younis
+
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 与Applied Intuition联合创始人兼CEO Qasar Younis的深度对话。这是一家估值150亿美元的AI公司,尽管在自动驾驶汽车和工业自动化领域取得了巨大成功,却鲜为人知。
+
+* 主要话题: Applied Intuition从初创公司到数十亿美元企业的发展历程,他们如何为车辆(汽车、拖拉机等机械设备)增加智能,公司构建自动驾驶系统AI基础设施的方法,扩展B2B AI公司的经验,以及在高度技术化和受监管行业中的经验教训。
+
+* 为何值得观看: 这是难得一见的机会,深入了解一家在公众视野之外运营的最有价值AI公司之一。如果你对企业级AI、自动驾驶汽车或构建成功的B2B科技公司感兴趣,Qasar分享了关于产品市场契合度、复杂行业中的客户获取,以及如何驾驭AI与物理系统交叉领域的宝贵见解。非常适合创始人、产品负责人,以及任何对AI领域中低调但高影响力一面感到好奇的人。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_rcniEb9bLw)**
+
+### 🎬 Claude Code 2.0 Is Finally Here
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: An in-depth look at the newly released Claude Code 2.0, Anthropic's latest AI coding assistant update with significant improvements over the previous version
+* Key topics discussed: New features and capabilities in Claude Code 2.0, performance comparisons with version 1.0, practical demonstrations of coding workflows, integration improvements, and how it stacks up against competing AI coding tools
+* Why it's worth watching: Essential viewing for developers and AI enthusiasts who want to stay current with cutting-edge AI coding assistants. Nate provides hands-on demonstrations and real-world use cases that help viewers understand whether upgrading or adopting Claude Code 2.0 makes sense for their workflow
+
+---
+
+### 🎬 Claude Code 2.0 终于发布了
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 深入介绍 Anthropic 最新发布的 Claude Code 2.0，这是一款相比前代版本有重大改进的 AI 编程助手
+* 主要话题: Claude Code 2.0 的新功能和能力、与 1.0 版本的性能对比、编程工作流程的实际演示、集成改进，以及与竞争对手 AI 编程工具的比较
+* 为何值得观看: 对于想要了解前沿 AI 编程助手的开发者和 AI 爱好者来说是必看内容。Nate 提供了实际操作演示和真实使用场景，帮助观众判断升级或采用 Claude Code 2.0 是否适合自己的工作流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BlNJFa3Btm8)**
 
