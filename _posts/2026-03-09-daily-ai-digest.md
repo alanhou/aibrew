@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 09, 2026"
 date: 2026-03-09
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -557,4 +557,108 @@ pin: false
 * 为何值得观看: 适合想要通过学习高效快捷键来加快工作流程的用户,无需使用鼠标即可在 Word 文档中添加符号和表情符号
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7FmAKajTerw)**
+
+### The Death of Social Media is the Renaissance of RSS
+
+* Social media platforms are drowning in AI-generated content, creating an ocean of repetitive, shallow material that drowns out authentic human voices
+* Generative AI tools have lowered content creation barriers to zero, causing oversaturation where machine-generated articles mimic human style but lack depth and authenticity
+* Social media algorithms prioritize engagement over authenticity, amplifying AI clickbait while suffocating genuine creators who can't compete with industrial-scale content production
+* The collapse of authenticity represents social media's death spiral—platforms push harder for monetization through ads while users disengage from feeds indistinguishable from AI sludge
+* RSS (Really Simple Syndication) emerges as the solution, allowing users to subscribe directly to trusted sources without algorithmic middlemen, ads, or surveillance
+* RSS readers like Feeder provide free, open-source tools that restore user control, delivering curated content from human creators straight to your feed
+* RSS flips the script on AI-driven platforms by empowering individuals to build their own decentralized information ecosystems, choosing signal over noise
+* The future points toward RSS renaissance as social media becomes background noise—a return to the early web's decentralized, user-driven model where curation becomes the most valuable act
+
+### 社交媒体之死与 RSS 的复兴
+
+* 社交媒体平台被 AI 生成的内容淹没,创造了一片重复、肤浅的内容海洋,淹没了真实的人类声音
+* 生成式 AI 工具将内容创作门槛降至零,导致过度饱和——机器生成的文章模仿人类风格但缺乏深度和真实性
+* 社交媒体算法优先考虑参与度而非真实性,放大 AI 点击诱饵,同时扼杀无法与工业规模内容生产竞争的真实创作者
+* 真实性的崩溃代表社交媒体的死亡螺旋——平台通过广告更努力地变现,而用户则从与 AI 垃圾内容无异的信息流中脱离
+* RSS(真正简单的聚合)作为解决方案出现,允许用户直接订阅可信来源,无需算法中间商、广告或监控
+* Feeder 等 RSS 阅读器提供免费、开源的工具,恢复用户控制权,将来自人类创作者的精选内容直接传送到您的信息流
+* RSS 通过赋予个人构建自己的去中心化信息生态系统的能力,在 AI 驱动的平台上翻转剧本,选择信号而非噪音
+* 未来指向 RSS 的复兴,社交媒体将成为背景噪音——回归早期网络的去中心化、用户驱动模式,策展成为最有价值的行为
+
+**[Read Original / 阅读原文](https://www.smartlab.at/rss-revival-life-after-social-media/)**
+
+### Revisiting Literate Programming in the AI Agent Era
+
+* Literate programming combines code with prose narratives, but traditionally requires maintaining two parallel systems—the code and its explanations—which has limited adoption
+* Historically used mainly in Jupyter notebooks for data science and Emacs Org Mode for niche applications, but cumbersome for larger projects due to "tangling" (code extraction) overhead
+* AI coding agents (Claude, Kimi, etc.) eliminate the maintenance burden by automatically keeping prose and code synchronized, handling translation and summarization effortlessly
+* Agents can write executable runbooks in Org Mode format, where prose explains intent and code blocks can be run interactively with results captured inline
+* The workflow enables bidirectional editing: update prose to modify code, or update code to regenerate explanations—agents handle both without fatigue
+* This approach leverages LLMs' core strengths (translation, summarization) while potentially improving code quality by maintaining intent documentation in context
+* The pattern shifts engineering focus from writing to reading, with codebases exportable to multiple readable formats
+* While Org Mode's Emacs dependency is limiting, the underlying concept—not the specific tool—offers compelling possibilities for narrative-driven codebases maintained by tireless AI agents
+
+### 在 AI 智能体时代重新审视文学编程
+
+* 文学编程将代码与叙述性文字结合,但传统上需要维护代码和解释两个平行系统,这限制了其采用
+* 历史上主要用于数据科学的 Jupyter notebooks 和小众应用的 Emacs Org Mode,但由于"缠结"(代码提取)开销,在大型项目中使用繁琐
+* AI 编码智能体(Claude、Kimi 等)通过自动保持文字和代码同步,消除了维护负担,轻松处理翻译和总结任务
+* 智能体可以编写 Org Mode 格式的可执行操作手册,其中文字解释意图,代码块可交互运行并内联捕获结果
+* 该工作流支持双向编辑:更新文字以修改代码,或更新代码以重新生成解释——智能体不知疲倦地处理两者
+* 这种方法利用了大语言模型的核心优势(翻译、总结),同时通过在上下文中维护意图文档可能提高代码质量
+* 该模式将工程重点从编写转向阅读,代码库可导出为多种可读格式
+* 虽然 Org Mode 对 Emacs 的依赖性有局限,但底层概念——而非特定工具——为由不知疲倦的 AI 智能体维护的叙事驱动代码库提供了引人注目的可能性
+
+**[Read Original / 阅读原文](https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/)**
+
+### 2025 Single Board Computer Testing Roundup
+
+* Tested 15 SBC boards from 8 manufacturers in 2025, featuring diverse SoCs (Rockchip, Broadcom, Qualcomm, MediaTek, Allwinner, StarFive, CIX, Texas Instruments)
+* Price range spans $42-$590, showcasing significant market variety
+* Notable trends: RISC-V boards gaining traction, Qualcomm's major SBC market entry, Arduino's surprising SBC debut, Raspberry Pi keyboard form factor iteration
+* Memory prices affected by "RAMageddon" - LPDDR4/LPDDR5 costs rising due to AI-driven demand shifts
+* All boards benchmarked and available for comparison on sbc.compare website
+
+**Budget Tier (Under $50):**
+* BeagleBone Green Eco ($42): Legacy TI Sitara AM3358, 512MB DDR3L - aimed at industrial/education, not performance
+* StarFive VisionFive 2 Lite ($43): RISC-V JH7110S, 4GB RAM, modest Geekbench scores (59 SC/180 MC)
+* Arduino UNO Q ($44): Qualcomm QRB2210, 2GB LPDDR4X - Arduino's experimental SBC entry
+* Orange Pi RV/RV2 ($50/$46): Two RISC-V options with different SoCs, showing architecture progress
+* Radxa Cubie A7A ($45): Budget tier standout with Allwinner A733, 6GB LPDDR5, strong performance (641 SC/1,545 MC)
+
+**Mid-Range ($50-$100):**
+* Radxa ROCK 4D ($60): Rockchip RK3576, 8GB LPDDR5 - cheapest RK3576 entry point
+* Radxa Dragon Q6A ($70): Qualcomm QCS6490, 6GB LPDDR5 - highlighted as most interesting board of the year
+
+### 2025年单板计算机测试综述
+
+* 测试了来自8家制造商的15款2025年发布的单板计算机,涵盖多种SoC芯片(瑞芯微、博通、高通、联发科、全志、赛昉、CIX、德州仪器)
+* 价格区间从42美元到590美元,市场产品多样性显著
+* 主要趋势:RISC-V架构板卡增多、高通大举进军SBC市场、Arduino推出令人意外的SBC产品、树莓派迭代键盘形态产品
+* 内存价格受"内存灾难"影响 - LPDDR4/LPDDR5成本上涨,因AI需求导致产能转移
+* 所有板卡均已进行基准测试,可在sbc.compare网站上对比
+
+**预算级别(50美元以下):**
+* BeagleBone Green Eco(42美元):传统TI Sitara AM3358芯片,512MB DDR3L内存 - 面向工业/教育领域,非性能导向
+* StarFive VisionFive 2 Lite(43美元):RISC-V JH7110S架构,4GB内存,Geekbench跑分一般(单核59/多核180)
+* Arduino UNO Q(44美元):高通QRB2210芯片,2GB LPDDR4X内存 - Arduino试水SBC市场之作
+* Orange Pi RV/RV2(50/46美元):两款RISC-V选项,采用不同SoC,展现架构进步
+* Radxa Cubie A7A(45美元):预算级别亮点产品,全志A733芯片,6GB LPDDR5内存,性能强劲(单核641/多核1,545)
+
+**中端级别(50-100美元):**
+* Radxa ROCK 4D(60美元):瑞芯微RK3576芯片,8GB LPDDR5内存 - 最便宜的RK3576入门选择
+* Radxa Dragon Q6A(70美元):高通QCS6490芯片,6GB LPDDR5内存 - 被评为年度最有趣板卡
+
+**[Read Original / 阅读原文](https://bret.dk/every-single-board-computer-i-tested-in-2025/)**
+
+### 🎬 Cloudflare just slop forked Next.js…
+**Channel:** Fireship
+
+* What the video covers: Cloudflare's controversial decision to fork Next.js, creating their own version of the popular React framework
+* Key topics discussed: The technical and business reasons behind the fork, implications for the Next.js ecosystem, differences between Cloudflare's version and Vercel's original Next.js, and the potential impact on developers
+* Why it's worth watching: This represents a significant shift in the web development landscape - understanding the fork's motivations and consequences is crucial for developers using Next.js or considering Cloudflare's platform. Fireship's signature fast-paced, informative style breaks down complex industry drama into digestible insights
+
+### 🎬 Cloudflare 刚刚"粗暴"分叉了 Next.js…
+**频道:** Fireship
+
+* 视频内容概述: Cloudflare 备受争议地决定分叉 Next.js，创建他们自己版本的流行 React 框架
+* 主要话题: 分叉背后的技术和商业原因、对 Next.js 生态系统的影响、Cloudflare 版本与 Vercel 原版 Next.js 的差异，以及对开发者的潜在影响
+* 为何值得观看: 这代表了 Web 开发领域的重大转变 - 理解分叉的动机和后果对于使用 Next.js 或考虑 Cloudflare 平台的开发者至关重要。Fireship 标志性的快节奏、信息丰富的风格将复杂的行业动态分解为易于理解的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=abbeIUOCzmw)**
 
