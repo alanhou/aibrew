@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 09, 2026"
 date: 2026-03-09
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -661,4 +661,93 @@ pin: false
 * 为何值得观看: 这代表了 Web 开发领域的重大转变 - 理解分叉的动机和后果对于使用 Next.js 或考虑 Cloudflare 平台的开发者至关重要。Fireship 标志性的快节奏、信息丰富的风格将复杂的行业动态分解为易于理解的见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=abbeIUOCzmw)**
+
+<!-- [Title-Only] -->
+### US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]
+
+* Based on the title, this article likely covers a recent US Court of Appeals ruling that establishes companies can legally update their Terms of Service (TOS) by sending email notifications to users, and that continued use of a service after such notification can constitute implied consent to the new terms
+* This is significant for both consumers and businesses as it addresses the enforceability of TOS modifications and the legal standards for user consent in digital services. It may have implications for how companies handle policy updates and how users should approach service agreements
+
+### 美国上诉法院：服务条款可通过电子邮件更新，继续使用可视为默示同意 [pdf]
+
+* 根据标题推测，本文可能涉及美国上诉法院的一项最新裁决，该裁决确立了公司可以通过向用户发送电子邮件通知来合法更新其服务条款（TOS），并且用户在收到此类通知后继续使用服务可构成对新条款的默示同意
+* 这对消费者和企业都具有重要意义，因为它涉及服务条款修改的可执行性以及数字服务中用户同意的法律标准。这可能会影响公司处理政策更新的方式，以及用户应如何对待服务协议
+
+---
+
+**Note:** This analysis is based solely on the article title, as the PDF content could not be accessed. The actual ruling may contain additional nuances, limitations, or specific circumstances that affect its application.
+
+**注意：** 此分析仅基于文章标题，因为无法访问PDF内容。实际裁决可能包含影响其适用的额外细节、限制或特定情况。
+
+**[Read Original / 阅读原文](https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf)**
+
+### mcp2cli: Runtime CLI Generator for MCP Servers and OpenAPI Specs
+
+* **Zero-codegen approach** — converts any MCP server or OpenAPI spec into a CLI instantly at runtime, no code generation or compilation required
+* **Massive token savings** — reduces LLM context consumption by 96-99% compared to native tool schema injection by using lazy discovery (`--list` and `--help`)
+* **Multi-protocol support** — handles MCP servers (HTTP/SSE and stdio modes) and OpenAPI specs (JSON/YAML, local or remote) with unified interface
+* **Smart caching** — caches specs and tool lists locally with configurable TTL (default 1 hour) to minimize network requests
+* **Token-efficient output** — supports TOON encoding for 40-60% fewer tokens than JSON when returning large uniform arrays
+* **AI agent integration** — ships with installable skill for Claude Code, Cursor, and Codex to teach agents how to discover and use APIs dynamically
+* **Proven metrics** — verified token savings through automated test suite using cl100k_base tokenizer against real schemas
+* **Cost breakdown** — system prompt costs 67 tokens/turn, `--list` costs ~16 tokens/tool (once), `--help` costs ~80-200 tokens/tool (once per unique tool used)
+* **Multi-server efficiency** — for 60 tools across 3 MCP servers over 20 turns, saves 141,772 tokens (97.7% reduction) compared to native injection
+* **Provider-agnostic** — works with any LLM (Claude, GPT, Gemini, local models) since it's just a CLI tool, unlike Anthropic's API-specific Tool Search
+
+### mcp2cli:MCP 服务器和 OpenAPI 规范的运行时 CLI 生成器
+
+* **零代码生成方式** — 在运行时即时将任何 MCP 服务器或 OpenAPI 规范转换为 CLI,无需代码生成或编译
+* **大幅节省 token** — 通过延迟发现机制(`--list` 和 `--help`)将 LLM 上下文消耗减少 96-99%,相比原生工具模式注入
+* **多协议支持** — 统一接口处理 MCP 服务器(HTTP/SSE 和 stdio 模式)以及 OpenAPI 规范(JSON/YAML,本地或远程)
+* **智能缓存** — 本地缓存规范和工具列表,可配置 TTL(默认 1 小时)以最小化网络请求
+* **token 高效输出** — 支持 TOON 编码,返回大型统一数组时比 JSON 减少 40-60% 的 token
+* **AI 代理集成** — 为 Claude Code、Cursor 和 Codex 提供可安装技能,教会代理如何动态发现和使用 API
+* **经过验证的指标** — 通过自动化测试套件使用 cl100k_base 分词器对真实模式进行验证,确认 token 节省效果
+* **成本明细** — 系统提示每轮消耗 67 token,`--list` 每工具约 16 token(一次),`--help` 每工具 80-200 token(每个唯一工具使用一次)
+* **多服务器效率** — 对于 3 个 MCP 服务器的 60 个工具,20 轮对话可节省 141,772 token(减少 97.7%),相比原生注入
+* **提供商无关** — 适用于任何 LLM(Claude、GPT、Gemini、本地模型),因为它只是一个 CLI 工具,不像 Anthropic 的 API 专用 Tool Search
+
+**[Read Original / 阅读原文](https://github.com/knowsuchagency/mcp2cli)**
+
+### Grammarly Uses Journalists' Identities Without Permission for AI Feature
+
+* Grammarly's "Expert Review" feature generates AI writing suggestions "inspired by" real experts, including tech journalists from The Verge, without obtaining their consent
+* The feature includes prominent journalists like Nilay Patel, David Pierce, Sean Hollister, and dozens of others from major tech publications
+* Superhuman (Grammarly's parent company) claims no endorsement is implied and justifies the practice by citing publicly available published works
+* The AI-generated suggestions appear as realistic comments in Google Docs, potentially misleading users into thinking they're receiving actual feedback from these experts
+* Technical issues plague the feature: frequent crashes, broken source links leading to spam sites, and misattributed content suggesting AI may be mixing up different authors' work
+* Expert profiles contain inaccuracies like outdated job titles, which could have been corrected if permission had been requested
+* The feature fundamentally misunderstands editing: mimicking someone's writing style doesn't replicate their editorial judgment or preferences
+
+### Grammarly 未经许可使用记者身份开发 AI 功能
+
+* Grammarly 的"专家评审"功能生成"受启发于"真实专家的 AI 写作建议,包括 The Verge 等媒体的科技记者,但未获得他们的同意
+* 该功能包含 Nilay Patel、David Pierce、Sean Hollister 等知名记者,以及来自主要科技媒体的数十位其他记者
+* Superhuman(Grammarly 母公司)声称不暗示背书,并以公开发表的作品为由为这一做法辩护
+* AI 生成的建议在 Google Docs 中显示为逼真的评论,可能误导用户以为他们正在接收这些专家的真实反馈
+* 该功能存在严重技术问题:频繁崩溃、来源链接指向垃圾网站、内容归属错误,表明 AI 可能混淆了不同作者的作品
+* 专家资料包含不准确信息,如过时的职位头衔,如果请求许可本可以纠正
+* 该功能从根本上误解了编辑工作:模仿某人的写作风格并不能复制其编辑判断或偏好
+
+**[Read Original / 阅读原文](https://www.theverge.com/ai-artificial-intelligence/890921/grammarly-ai-expert-reviews)**
+
+### 🎬 SQL SELECT Query Explained in 30 Seconds 📊 | Beginners
+
+**Channel:** Debug Your Career
+
+* A quick 30-second tutorial explaining the fundamental SQL SELECT query for database beginners
+* Covers the basic syntax and usage of SELECT statements to retrieve data from databases
+* Perfect for freshers and beginners who want a fast, digestible introduction to SQL's most essential command - ideal for quick learning or refreshing core concepts
+
+---
+
+### 🎬 30秒学会SQL SELECT查询 📊 | 初学者教程
+
+**频道:** Debug Your Career
+
+* 30秒快速教程,讲解数据库初学者必学的SQL SELECT查询基础
+* 涵盖SELECT语句的基本语法和用法,教你如何从数据库中检索数据
+* 非常适合应届生和初学者快速入门SQL最核心的命令 - 短小精悍,适合快速学习或复习基础概念
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ym3ajx3NLWw)**
 
