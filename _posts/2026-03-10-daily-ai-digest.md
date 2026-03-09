@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 10, 2026"
 date: 2026-03-10
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -278,4 +278,223 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
+
+### Building a Procedural Hex Map with Wave Function Collapse
+
+* A procedural medieval island map generator using Wave Function Collapse (WFC) algorithm with 4,100 hex tiles across 19 grids, built with Three.js WebGPU and TSL shaders
+* WFC works like the board game Carcassonne - tiles must have matching edges (road-to-road, grass-to-grass), but hex tiles have 6 edges instead of 4, creating more complex constraints
+* Uses 30 tile types with 6 rotations and 5 elevation levels (900 possible states per cell), each defining terrain types for its edges
+* WFC process: start with all possibilities, collapse the most constrained cell, propagate constraints to neighbors, repeat until solved or stuck
+* Modular approach splits the map into 19 independent hexagonal grids to avoid dead-ends that plague large single-grid solves
+* Three-layer recovery system handles failures: Layer 1 "unfixes" conflicting neighbor cells, Layer 2 runs mini-WFC on problem areas (86% success rate), Layer 3 covers seams with mountain tiles
+* Elevation adds a third dimension - 5 levels with slopes and cliffs that must connect properly, turning 2D constraints into 3D
+* Uses cube coordinates (q, r, s) instead of offset coordinates for simpler hex math and neighbor finding
+* Perlin noise handles tree and building placement separately from WFC, creating organic clustering into forests and villages that WFC couldn't achieve
+* Tiles colored with PBR materials using custom TSL shaders that blend between summer/winter palettes based on elevation
+
+### 使用波函数坍缩算法构建程序化六边形地图
+
+* 使用波函数坍缩(WFC)算法的程序化中世纪岛屿地图生成器,包含19个网格上的4100个六边形瓦片,使用Three.js WebGPU和TSL着色器构建
+* WFC的工作原理类似桌游卡卡颂 - 瓦片必须边缘匹配(道路对道路、草地对草地),但六边形瓦片有6条边而非4条,创造了更复杂的约束
+* 使用30种瓦片类型,每种有6个旋转角度和5个高度级别(每个单元格900种可能状态),每个瓦片定义其边缘的地形类型
+* WFC流程:从所有可能性开始,坍缩约束最多的单元格,向邻居传播约束,重复直到解决或卡住
+* 模块化方法将地图分割为19个独立的六边形网格,避免大型单网格求解中常见的死胡同
+* 三层恢复系统处理失败:第1层"解除固定"冲突的邻居单元格,第2层在问题区域运行迷你WFC(86%成功率),第3层用山地瓦片覆盖接缝
+* 高度增加了第三维度 - 5个级别包含必须正确连接的斜坡和悬崖,将2D约束转变为3D
+* 使用立方体坐标(q, r, s)而非偏移坐标,简化六边形数学和邻居查找
+* Perlin噪声独立于WFC处理树木和建筑放置,创建WFC无法实现的有机聚类森林和村庄
+* 瓦片使用PBR材质着色,采用自定义TSL着色器根据高度在夏季/冬季调色板之间混合
+
+**[Read Original / 阅读原文](https://felixturner.github.io/hex-map-wfc/article/)**
+
+<!-- [Title-Only] -->
+### JSLinux Now Supports x86_64
+
+* Based on the title, this article likely announces that JSLinux - a JavaScript-based PC emulator that runs in web browsers - has been updated to support the x86_64 (64-bit) architecture. JSLinux is created by Fabrice Bellard, known for projects like QEMU and FFmpeg.
+* This is significant because it means the emulator can now run 64-bit operating systems and applications directly in a browser, expanding its capabilities beyond the previous 32-bit x86 support. This could enable running more modern Linux distributions and software, making it interesting for developers, educators, and anyone curious about virtualization technology running entirely in JavaScript.
+
+### JSLinux 现已支持 x86_64 架构
+
+* 根据标题推测，本文可能宣布 JSLinux（一个基于 JavaScript 的 PC 模拟器，可在网页浏览器中运行）已更新支持 x86_64（64 位）架构。JSLinux 由 Fabrice Bellard 创建，他也是 QEMU 和 FFmpeg 等知名项目的作者。
+* 这一更新意义重大，因为该模拟器现在可以直接在浏览器中运行 64 位操作系统和应用程序，超越了之前仅支持 32 位 x86 的限制。这使得运行更现代的 Linux 发行版和软件成为可能，对开发者、教育工作者以及对完全用 JavaScript 实现的虚拟化技术感兴趣的人来说都很有吸引力。
+
+**[Read Original / 阅读原文](https://bellard.org/jslinux/)**
+
+### Mog: A Programming Language for AI Agents
+
+* Mog is a statically typed, compiled, embedded language designed specifically for LLMs to write and modify code safely
+* Full language specification fits in just 3200 tokens, making it highly accessible for AI agents
+* Compiles to native code for low-latency execution without interpreter overhead, JIT, or process startup costs
+* Features capability-based permissions where the host controls exactly which functions Mog programs can call
+* Supports async/await for non-blocking operations, pattern matching with Result types, and f-strings for interpolation
+* Includes native tensor support for multi-dimensional arrays with explicit type conversions
+* No operator precedence for non-associative operations - requires explicit parentheses to minimize errors
+* Written in safe Rust for security auditing, MIT licensed and open source
+* Enables AI agents to dynamically load self-written plugins, scripts, and hooks with controlled permissions
+* Practical use cases include agent hooks for context management, async HTTP operations with retry logic, and numerical computing with FFT
+
+### Mog:为 AI 智能体设计的编程语言
+
+* Mog 是一种静态类型、编译型、嵌入式语言,专为 LLM 编写和安全修改代码而设计
+* 完整语言规范仅需 3200 个 token,使 AI 智能体极易上手
+* 编译为原生代码实现低延迟执行,无解释器开销、JIT 或进程启动成本
+* 采用基于能力的权限系统,宿主程序精确控制 Mog 程序可调用的函数
+* 支持非阻塞的 async/await 操作、Result 类型的模式匹配以及 f-string 插值
+* 原生支持多维数组(张量),类型转换必须显式声明
+* 非结合运算符无优先级规则,需要显式括号以减少错误
+* 使用安全的 Rust 编写便于安全审计,采用 MIT 开源许可
+* 使 AI 智能体能够动态加载自己编写的插件、脚本和钩子,并具有受控权限
+* 实际应用场景包括上下文管理的智能体钩子、带重试逻辑的异步 HTTP 操作以及 FFT 数值计算
+
+**[Read Original / 阅读原文](https://moglang.org)**
+
+### nanochat - Train Your Own GPT-2 for Under $100
+
+* **What it does**: A minimal experimental harness for training LLMs from scratch, covering the complete pipeline from tokenization through pretraining, finetuning, evaluation, inference, and a ChatGPT-like web UI. Train GPT-2 capability models (originally $43k in 2019) for ~$48 on an 8XH100 node, or ~$15 on spot instances.
+
+* **Key features**: 
+  - Single complexity dial (`--depth`) automatically calculates all optimal hyperparameters
+  - Complete "GPT-2 speedrun" in ~2-3 hours with leaderboard tracking progress
+  - Runs on single GPU nodes with minimal, hackable PyTorch code
+  - Supports multiple precisions (fp32, bf16, fp16) with hardware auto-detection
+  - Includes research tools for scaling laws and compute-optimal model training
+
+* **Why it's notable**: Democratizes LLM training by making GPT-2 level models accessible for under $100, down from the original $43,000 cost. The leaderboard shows continuous optimization - from OpenAI's original 168 hours down to just 2.02 hours. Created by Andrej Karpathy, it's designed for researchers and hobbyists to experiment with the full LLM training stack without enterprise-scale infrastructure.
+
+---
+
+### nanochat - 用不到 100 美元训练你自己的 GPT-2
+
+* **功能介绍**: 一个极简的 LLM 训练实验框架,涵盖从分词到预训练、微调、评估、推理和类 ChatGPT 网页界面的完整流程。可以在 8XH100 节点上以约 48 美元的成本训练 GPT-2 级别模型(2019 年原始训练成本约 43,000 美元),使用竞价实例成本可低至约 15 美元。
+
+* **主要特点**:
+  - 单一复杂度参数(`--depth`)自动计算所有最优超参数
+  - 完整的"GPT-2 速通"约 2-3 小时,配有排行榜追踪进度
+  - 可在单 GPU 节点运行,代码简洁易修改,基于 PyTorch
+  - 支持多种精度(fp32、bf16、fp16),硬件自动检测
+  - 包含用于缩放定律和计算最优模型训练的研究工具
+
+* **为何值得关注**: 将 LLM 训练成本从原始的 43,000 美元降至 100 美元以下,真正实现了 GPT-2 级别模型的平民化。排行榜显示持续优化成果——从 OpenAI 最初的 168 小时缩短至仅 2.02 小时。由 Andrej Karpathy 创建,专为研究人员和爱好者设计,无需企业级基础设施即可体验完整的 LLM 训练流程。
+
+**[View Repository / 查看仓库](https://github.com/karpathy/nanochat)**
+
+### BettaFish - Multi-Agent Public Opinion Analysis System Built from Scratch
+
+* An innovative AI-powered sentiment analysis platform that monitors 30+ social media platforms (Weibo, Xiaohongshu, Douyin, Kuaishou, etc.) and analyzes millions of user comments to break information bubbles and provide comprehensive public opinion insights
+* Features a unique "forum" collaboration mechanism where 5 specialized agents (Query, Media, Insight, Report, Forum) work together through debate and chain-of-thought reasoning, combining LLMs with fine-tuned models and statistical analysis for multi-dimensional insights; supports multimodal content analysis (videos, images, structured data cards) and seamless integration of private databases with public sentiment data
+* Notable for its framework-free pure Python implementation offering lightweight deployment and high extensibility, allowing developers to easily customize agents for different domains (e.g., financial market analysis); generates interactive HTML reports with predictive capabilities through its companion project MiroFish
+
+### BettaFish（微舆）- 从零实现的多智能体舆情分析系统
+
+* 创新型AI驱动的舆情分析平台，可监控30+主流社交媒体（微博、小红书、抖音、快手等）并分析数百万条用户评论，帮助用户打破信息茧房，全面洞察公众舆论
+* 采用独特的"论坛"协作机制，5类专业Agent（Query、Media、Insight、Report、Forum）通过辩论和链式思维协同工作，融合LLM、微调模型和统计分析实现多维度洞察；支持多模态内容分析（视频、图片、结构化数据卡片）以及私有数据库与公开舆情的无缝融合
+* 亮点在于纯Python模块化设计，不依赖任何框架，实现轻量化部署和高扩展性，开发者可轻松定制Agent用于不同领域（如金融市场分析）；可生成交互式HTML报告，并通过配套项目MiroFish提供预测能力
+
+**[View Repository / 查看仓库](https://github.com/666ghj/BettaFish)**
+
+### TorchCode - LeetCode-Style PyTorch Interview Prep Platform
+
+* **What it does**: An interactive coding practice platform for ML engineers to implement PyTorch operators and architectures from scratch (softmax, attention, GPT-2, etc.) with instant auto-grading feedback
+* **Key features**: 40 curated problems covering fundamentals to advanced architectures; automated correctness/gradient verification; Jupyter-based with hints, reference solutions, and progress tracking; runs locally via Docker or online (Hugging Face Spaces/Colab); no GPU required
+* **Why it's notable**: Directly addresses what top ML teams (Meta, DeepMind, OpenAI) test in interviews—implementing core operations from memory. Fills the gap between reading papers and actual coding skills with a structured, gamified learning environment similar to competitive programming platforms
+
+### TorchCode - PyTorch 面试刷题平台
+
+* **功能介绍**: 为机器学习工程师打造的交互式编程练习平台,从零实现 PyTorch 算子和架构(softmax、注意力机制、GPT-2 等),配备即时自动评分反馈
+* **主要特点**: 精选 40 道题目涵盖基础到高级架构;自动化正确性和梯度验证;基于 Jupyter,提供提示、参考答案和进度追踪;支持 Docker 本地运行或在线使用(Hugging Face Spaces/Colab);无需 GPU
+* **为何值得关注**: 直击顶级 ML 团队(Meta、DeepMind、OpenAI)面试考点——凭记忆实现核心操作。以结构化、游戏化的学习环境弥合了阅读论文与实际编码能力之间的鸿沟,类似竞赛编程平台的体验
+
+**[View Repository / 查看仓库](https://github.com/duoan/TorchCode)**
+
+### Siftly - Self-hosted Twitter/X bookmark manager with AI-powered organization
+
+* Transforms Twitter/X bookmarks into a searchable, categorized knowledge base running entirely on your machine with no cloud dependencies or browser extensions
+* Runs a 4-stage AI pipeline: entity extraction (hashtags, URLs, mentions), vision analysis (OCR + 30-40 visual tags per image), semantic tagging (25-35 search tags), and smart categorization with confidence scores
+* Features AI-powered semantic search, interactive force-directed mindmap visualization, grid/list browsing with filters, custom categories, and export tools (CSV/JSON/ZIP with media)
+
+### Siftly - 本地 Twitter/X 书签管理器,支持 AI 分类和思维导图可视化
+
+* 将 Twitter/X 书签转化为可搜索、分类的知识库,完全在本地运行,无需云服务或浏览器扩展
+* 运行 4 阶段 AI 处理流程:实体提取(话题标签、链接、提及)、视觉分析(OCR + 每张图片 30-40 个视觉标签)、语义标注(25-35 个搜索标签)和智能分类(带置信度评分)
+* 提供 AI 语义搜索、交互式力导向思维导图可视化、网格/列表浏览及筛选、自定义分类,以及导出工具(CSV/JSON/ZIP 含媒体文件)
+
+**[View Repository / 查看仓库](https://github.com/viperrcrypto/Siftly)**
+
+### 🎬 The greatest unsolved problem in computer science...
+
+**Channel:** Fireship
+
+* What the video covers: An exploration of the P vs NP problem, one of the most fundamental unsolved questions in computer science and mathematics
+* Key topics discussed: The difference between P (problems solvable in polynomial time) and NP (problems verifiable in polynomial time), real-world implications, why this problem matters for cryptography, optimization, and artificial intelligence
+* Why it's worth watching: Fireship breaks down this complex theoretical concept into digestible explanations, showing how P vs NP affects everything from password security to route optimization. Understanding this problem helps grasp the limits of computation and why some problems remain computationally hard despite modern computing power.
+
+---
+
+### 🎬 计算机科学中最伟大的未解之谜...
+
+**频道:** Fireship
+
+* 视频内容概述: 深入探讨 P vs NP 问题——计算机科学和数学领域最基本的未解难题之一
+* 主要话题: P类问题(多项式时间可解)与NP类问题(多项式时间可验证)的区别,实际应用影响,以及这个问题对密码学、优化算法和人工智能的重要性
+* 为何值得观看: Fireship 将这个复杂的理论概念拆解成易于理解的内容,展示 P vs NP 如何影响从密码安全到路径优化的方方面面。理解这个问题有助于认识计算的极限,以及为什么某些问题即使在现代计算能力下仍然难以解决。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=x36UmiSiEzc)**
+
+### 🎬 Cloudflare just slop forked Next.js…
+**Channel:** Fireship
+
+* What the video covers: Cloudflare's controversial decision to fork Next.js, creating their own version of the popular React framework
+* Key topics discussed: The technical and business reasons behind the fork, implications for the Next.js ecosystem, differences between Cloudflare's version and Vercel's original Next.js, and the potential impact on developers
+* Why it's worth watching: This represents a significant shift in the web development landscape - understanding the fork's motivations and consequences is crucial for developers using Next.js or considering Cloudflare's platform. Fireship's signature fast-paced, informative style breaks down complex industry drama into digestible insights
+
+### 🎬 Cloudflare 刚刚"粗暴"分叉了 Next.js…
+**频道:** Fireship
+
+* 视频内容概述: Cloudflare 备受争议地决定分叉 Next.js,创建他们自己版本的流行 React 框架
+* 主要话题: 分叉背后的技术和商业原因、对 Next.js 生态系统的影响、Cloudflare 版本与 Vercel 原版 Next.js 的差异,以及对开发者的潜在影响
+* 为何值得观看: 这代表了 Web 开发领域的重大转变 - 理解分叉的动机和后果对于使用 Next.js 或考虑 Cloudflare 平台的开发者至关重要。Fireship 标志性的快节奏、信息丰富的风格将复杂的行业动态分解为易于理解的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=abbeIUOCzmw)**
+
+### 🎬 Anthropic's Claude Co-work Just Made ChatGPT Look Useless (Complete Mastery Guide)
+
+**Channel:** Vaibhav Sisinty
+
+* What the video covers: A comprehensive guide to Anthropic's Claude Co-work feature, positioning it as a superior alternative to ChatGPT for collaborative AI workflows
+* Key topics discussed: Claude Co-work's capabilities, practical use cases, comparison with ChatGPT's features, and step-by-step mastery techniques for maximizing productivity
+* Why it's worth watching: Learn how to leverage Claude's latest collaborative features that could transform your AI-assisted workflow, with actionable insights on why it might outperform ChatGPT for team-based tasks
+
+---
+
+### 🎬 Anthropic 的 Claude Co-work 让 ChatGPT 相形见绌(完整精通指南)
+
+**频道:** Vaibhav Sisinty
+
+* 视频内容概述: 全面介绍 Anthropic 的 Claude Co-work 功能,将其定位为协作 AI 工作流程中优于 ChatGPT 的替代方案
+* 主要话题: Claude Co-work 的功能特性、实际应用场景、与 ChatGPT 功能的对比,以及最大化生产力的分步精通技巧
+* 为何值得观看: 了解如何利用 Claude 最新的协作功能来改变你的 AI 辅助工作流程,获取关于为何它在团队协作任务中可能优于 ChatGPT 的实用见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CpDM2ZXapBs)**
+
+### 🎬 Claude Code Skills Just Got Even Better
+**Channel:** Nate Herk | AI Automation
+
+* What the video covers: This video explores recent improvements to Claude's coding capabilities, demonstrating enhanced performance in software development tasks and AI-assisted programming workflows.
+
+* Key topics discussed: Updates to Claude's code generation abilities, practical demonstrations of new features, comparison with previous versions, real-world coding scenarios and automation use cases.
+
+* Why it's worth watching: Essential viewing for developers and AI automation enthusiasts who want to stay current with Claude's evolving capabilities. The video provides hands-on insights into how these improvements can streamline development workflows and boost productivity in coding projects.
+
+---
+
+### 🎬 Claude 编程能力再次升级
+**频道:** Nate Herk | AI Automation
+
+* 视频内容概述: 本视频深入探讨 Claude 最新的编程能力提升,展示其在软件开发任务和 AI 辅助编程工作流程中的增强表现。
+
+* 主要话题: Claude 代码生成能力的更新、新功能的实际演示、与旧版本的对比、真实编程场景应用以及自动化用例展示。
+
+* 为何值得观看: 对于希望了解 Claude 最新能力的开发者和 AI 自动化爱好者来说,这是必看内容。视频提供了实用见解,展示这些改进如何简化开发工作流程并提升编程项目的生产力。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RAZVk5NPNtE)**
 
