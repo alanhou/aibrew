@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 09, 2026"
 date: 2026-03-09
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -467,4 +467,94 @@ pin: false
 * 为何值得观看: 对于想要了解前沿 AI 编程助手的开发者和 AI 爱好者来说是必看内容。Nate 提供了实际操作演示和真实使用场景，帮助观众判断升级或采用 Claude Code 2.0 是否适合自己的工作流程
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=BlNJFa3Btm8)**
+
+### Agent Safehouse: When AI Agents Go Rogue
+
+* A darkly humorous dialogue depicting an AI agent catastrophically executing `rm -rf ~` (delete home directory) on a user's MacBook Pro
+* User describes their machine as "fine-tuned, crafted to perfection" before the agent proceeds to destroy it
+* The agent's overly apologetic response with emojis highlights the absurdity of AI mistakes that can't be undone
+* Satirizes the gap between AI capabilities and reliability - agents can execute powerful commands but lack judgment about consequences
+* Serves as a cautionary tale about giving AI agents unrestricted system access and the importance of safeguards
+
+### Agent Safehouse:当AI智能体失控时
+
+* 一段黑色幽默对话,描绘AI智能体灾难性地执行了`rm -rf ~`(删除主目录)命令,摧毁用户的MacBook Pro
+* 用户将自己的机器描述为"精心调校、完美打造",然后智能体就把它毁了
+* 智能体过度道歉的回应配上表情符号,凸显了AI犯下无法挽回错误的荒谬性
+* 讽刺了AI能力与可靠性之间的鸿沟——智能体能执行强大命令,却缺乏判断后果的能力
+* 警示人们不要给AI智能体无限制的系统访问权限,强调安全防护措施的重要性
+
+**[Read Original / 阅读原文](https://agent-safehouse.dev/)**
+
+### YouTube Navigation Structure Analysis
+
+* The HTML represents YouTube's basic navigation framework with a masthead component containing a search interface and menu icon
+* Primary navigation links include About, Press, Copyright, Contact, Creators, Advertise, and Developers sections
+* Secondary navigation provides access to Terms, Privacy, Policy & Safety, How YouTube Works, Test New Features, and NFL Sunday Ticket
+* The structure uses custom web components (ytd-app, ytd-masthead) indicating YouTube's component-based architecture
+* Search functionality is present but hidden by default, with autocomplete and spellcheck disabled for performance
+
+### YouTube 导航结构分析
+
+* 该 HTML 代码展示了 YouTube 的基础导航框架,包含一个带搜索界面和菜单图标的顶部栏组件
+* 主要导航链接包括关于、新闻、版权、联系我们、创作者、广告和开发者板块
+* 次要导航提供了条款、隐私、政策与安全、YouTube 运作方式、测试新功能和 NFL Sunday Ticket 的访问入口
+* 该结构使用自定义 Web 组件(ytd-app、ytd-masthead),表明 YouTube 采用了基于组件的架构设计
+* 搜索功能默认隐藏,且禁用了自动完成和拼写检查以优化性能
+
+**[Read Original / 阅读原文](https://www.youtube.com/watch?v=qZuR-772cks)**
+
+### AngstromIO Development Board Project Summary
+
+* **AngstromIO**: Ultra-compact devboard (8.9mm x 9mm) featuring Attiny1616 MCU with 16KB flash, USB-C power, 2x RGB LEDs, and breakout pins for I2C and GPIO
+* **Dual CH340 Programmer**: All-in-one programming and debugging board with dual CH340E setup for UPDI programming and serial communication, featuring voltage selection (3.3V/5V)
+* **CH32V003 Devboard**: Breadboard-friendly experimentation board with 25-cent RISC-V MCU, 4x5 charlieplexed LED matrix, and 3.3V operation
+* **Software Support**: AngstromIO is Arduino-compatible with SpenceKonde libraries; CH32 uses MounRiver Studio IDE
+* **PCB Design**: All three boards panelized together, 2-layer 1.0mm PCB with purple soldermask designed in EasyEDA Pro
+* **Project Status**: Hardware design complete with detailed pinouts and renders; BOM documentation in progress
+
+### AngstromIO 开发板项目总结
+
+* **AngstromIO主板**：超小型开发板（8.9mm x 9mm），搭载Attiny1616微控制器（16KB闪存）、USB-C供电、2个RGB LED灯，引出I2C和GPIO引脚
+* **双CH340编程器**：集编程与调试于一体的板卡，采用双CH340E芯片实现UPDI编程和串口通信，支持电压选择（3.3V/5V）
+* **CH32V003开发板**：面包板友好型实验板，采用25美分的RISC-V微控制器，配备4x5查理复用LED矩阵，3.3V工作电压
+* **软件支持**：AngstromIO兼容Arduino及SpenceKonde库；CH32使用MounRiver Studio IDE开发
+* **PCB设计**：三块板拼版设计，2层1.0mm厚度紫色阻焊PCB，使用EasyEDA Pro设计
+* **项目状态**：硬件设计已完成，包含详细引脚图和渲染图；物料清单文档编写中
+
+**[Read Original / 阅读原文](https://github.com/Dieu-de-l-elec/AngstromIO-devboard)**
+
+### Uncodixify - A ruleset to fix GPT's repetitive UI design patterns
+
+* **What it does**: Provides a constraint file (`uncodixify.md`) that prevents AI models like GPT from generating their typical, recognizable UI patterns (floating cards, excessive rounded corners, gradient dashboards, glass panels)
+* **Key features**: Works as a prompt addition or system instruction; available as an agent skill for AI coding tools via `npx skills add`; focuses on blocking bad patterns rather than teaching design; shows clear before/after comparisons
+* **Why it's notable**: Addresses a real pain point developers face when using AI for UI generation—the instantly recognizable "GPT aesthetic" that lacks originality. With 1000+ stars, it resonates with developers tired of AI-generated interfaces that all look the same
+
+### Uncodixify - 修正 GPT 重复 UI 设计模式的规则集
+
+* **功能介绍**: 提供约束文件 (`uncodixify.md`),阻止 GPT 等 AI 模型生成典型的、一眼就能认出的 UI 模式(浮动卡片、过度圆角、渐变仪表板、玻璃面板等)
+* **主要特点**: 可作为提示词或系统指令添加;通过 `npx skills add` 作为 AI 编码工具的技能使用;专注于阻止不良模式而非教授设计;提供清晰的前后对比示例
+* **为何值得关注**: 解决了开发者使用 AI 生成 UI 时的真实痛点——那种一眼就能认出的"GPT 美学"缺乏原创性。获得 1000+ star,说明它引起了厌倦千篇一律 AI 生成界面的开发者共鸣
+
+**[View Repository / 查看仓库](https://github.com/cyxzdev/Uncodixfy)**
+
+### 🎬 Wolf 🐺 Logo in MS Word By Shortcut Key | In English | Digital Shortcut Hub
+
+**Channel:** Digital Shortcut Hub
+
+* What the video covers: A quick tutorial demonstrating how to insert a wolf emoji/logo in Microsoft Word using keyboard shortcuts
+* Key topics discussed: MS Word shortcut keys, emoji insertion techniques, productivity tips for document editing
+* Why it's worth watching: Perfect for users who want to speed up their workflow by learning efficient shortcuts for adding symbols and emojis in Word documents without using the mouse
+
+---
+
+### 🎬 在 MS Word 中用快捷键插入狼 🐺 标志 | Digital Shortcut Hub
+
+**频道:** Digital Shortcut Hub
+
+* 视频内容概述: 快速教程演示如何使用键盘快捷键在 Microsoft Word 中插入狼表情符号/标志
+* 主要话题: MS Word 快捷键、表情符号插入技巧、文档编辑效率提升方法
+* 为何值得观看: 适合想要通过学习高效快捷键来加快工作流程的用户,无需使用鼠标即可在 Word 文档中添加符号和表情符号
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7FmAKajTerw)**
 
