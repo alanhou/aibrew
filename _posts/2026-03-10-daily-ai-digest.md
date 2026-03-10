@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 10, 2026"
 date: 2026-03-10
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，12个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -780,4 +780,149 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合想要利用 Claude 协作功能提升生产力、编程辅助或项目管理的新手用户。Mikey Ranks 将复杂的 AI 工具拆解成易懂且可操作的步骤,观众可以立即应用到实际工作中
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=stEVjMHMt-Q)**
+
+### Felix Krause's Life Quantification Project: A Comprehensive Self-Tracking Experiment
+
+* Felix Krause created a comprehensive life-tracking system called FxLifeSheet, collecting over 380,000 data points across 100+ daily metrics since 2019
+* The project tracks everything from fitness, mood, and sleep to computer usage, location data, and weather patterns to answer questions about life optimization
+* Data sources include RescueTime (149,466 entries), Foursquare Swarm (126,285 entries), manual tracking (67,031 entries), and Apple Health integration
+* The website howisFelix.today displays real-time personal metrics including current location, mood, weight, sleep patterns, and productivity statistics
+* Key insights reveal that happy/excited days correlate with 50% more comfort zone pushing, 44% more meditation, but 45% less time in video calls
+* The project is fully open-source, self-hosted, and designed with privacy controls, showing only snapshot data publicly while maintaining complete personal data ownership
+* Flight tracking data shows clear COVID-19 impact on travel patterns, with Sunday being the primary "commute day" between San Francisco, NYC, and Vienna
+* The system includes visualizations like "Life in Weeks" charts and comprehensive analytics spanning up to 27.5 years of life data
+
+### Felix Krause的生活量化项目：全面的自我追踪实验
+
+* Felix Krause创建了名为FxLifeSheet的综合生活追踪系统，自2019年以来收集了超过38万个数据点，涵盖100多项日常指标
+* 该项目追踪从健身、情绪、睡眠到电脑使用、位置数据和天气模式的所有内容，旨在回答关于生活优化的问题
+* 数据源包括RescueTime（149,466条记录）、Foursquare Swarm（126,285条记录）、手动追踪（67,031条记录）和Apple Health集成
+* 网站howisFelix.today显示实时个人指标，包括当前位置、情绪、体重、睡眠模式和生产力统计
+* 关键洞察显示，快乐/兴奋的日子与50%更多的舒适区突破、44%更多的冥想相关，但视频通话时间减少45%
+* 该项目完全开源、自托管，并设计有隐私控制，仅公开显示快照数据，同时保持完整的个人数据所有权
+* 飞行追踪数据清楚显示了COVID-19对旅行模式的影响，周日是旧金山、纽约市和维也纳之间的主要"通勤日"
+* 系统包括"生活周数"图表等可视化功能和涵盖长达27.5年生活数据的综合分析
+
+**[Read Original / 阅读原文](https://howisfelix.today/)**
+
+<!-- [Title-Only] -->
+### Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy
+
+* This article likely covers Redox OS's new contribution guidelines that include implementing a Certificate of Origin (similar to the Developer Certificate of Origin used by Linux kernel) to ensure contributors have the legal right to submit their code, and a prohibition on using Large Language Models (LLMs) like ChatGPT, GitHub Copilot, or similar AI tools in code contributions.
+
+* This is particularly interesting to readers because it represents a significant stance in the ongoing debate about AI-generated code in open source projects, addressing concerns about copyright, code quality, and intellectual property rights. Redox OS, being a Rust-based microkernel operating system, is taking a proactive approach to maintain code integrity and legal clarity in an era where AI-assisted development is becoming increasingly common.
+
+### Redox OS 采用原创证书政策并严格禁止使用大语言模型
+
+* 根据标题推测，这篇文章可能介绍了 Redox OS 新的贡献指南，包括实施原创证书政策（类似于 Linux 内核使用的开发者原创证书）以确保贡献者拥有提交代码的合法权利，以及禁止在代码贡献中使用大语言模型（如 ChatGPT、GitHub Copilot 等 AI 工具）。
+
+* 这个话题值得关注，因为它代表了在 AI 生成代码在开源项目中应用这一持续争议中的重要立场，涉及版权、代码质量和知识产权等关切。作为基于 Rust 的微内核操作系统，Redox OS 在 AI 辅助开发日益普及的时代采取了主动措施来维护代码完整性和法律清晰度。
+
+**[Read Original / 阅读原文](https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md)**
+
+### The Gervais Principle: A Management Theory Through The Office
+
+* Proposes that The Office reveals a complete management theory that challenges traditional business literature
+* Introduces three organizational layers: Sociopaths (power-driven leaders), Clueless (middle management), and Losers (economic underperformers)
+* Describes the MacLeod Life Cycle where organizations go through predictable phases of growth and decline
+* States the core Gervais Principle: Sociopaths strategically promote over-performing losers to middle management while grooming under-performers as future sociopaths
+* Argues this differs from Peter Principle and Dilbert Principle by explaining promotion decisions as strategic rather than incompetent
+* Suggests organizations are inherently pathological rather than suffering from fixable problems
+* Claims modern economy operates on Darwinian principles through mergers, layoffs, and corporate restructuring
+
+### 格瓦斯原理：通过《办公室》解读的管理理论
+
+* 提出《办公室》揭示了一套完整的管理理论，挑战传统商业文献
+* 介绍三个组织层级：反社会者（权力驱动的领导者）、无知者（中层管理）和失败者（经济表现不佳者）
+* 描述麦克劳德生命周期，组织经历可预测的增长和衰退阶段
+* 阐述核心格瓦斯原理：反社会者战略性地将表现优异的失败者提升为中层管理，同时培养表现不佳者成为未来的反社会者
+* 论证这与彼得原理和呆伯特原理不同，将晋升决策解释为战略性而非无能的表现
+* 认为组织本质上是病态的，而非存在可修复的问题
+* 声称现代经济通过并购、裁员和企业重组按达尔文主义原则运作
+
+**[Read Original / 阅读原文](https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/)**
+
+### Agency Agents - Complete AI Specialist Collection for Development Workflows
+
+* A comprehensive library of specialized AI agent personalities designed for software development, each with unique expertise, communication styles, and proven deliverables
+* 30+ production-ready agents across Engineering, Design, Marketing, Product, Project Management, and Testing divisions - from Frontend Developers to Reddit Community Builders
+* Notable for its practical approach: born from Reddit discussions, battle-tested workflows, and seamless integration with popular AI coding tools (Claude, Cursor, Aider, Windsurf)
+
+### Agency Agents - 完整的AI专家团队开发工作流程集合
+
+* 专为软件开发设计的专业AI代理人格库，每个都具有独特的专业知识、沟通风格和经过验证的交付成果
+* 涵盖工程、设计、营销、产品、项目管理和测试等6大部门的30多个生产就绪代理 - 从前端开发者到Reddit社区建设者
+* 值得关注的原因：源于Reddit讨论的实用方法，经过实战检验的工作流程，与主流AI编程工具（Claude、Cursor、Aider、Windsurf）无缝集成
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### Hermes Agent - Self-Improving AI Agent with Built-in Learning Loop
+
+* **What it does**: A self-improving AI agent that creates skills from experience, learns from conversations, and builds persistent user models across sessions. Works with any LLM provider and runs anywhere from $5 VPS to GPU clusters.
+
+* **Key features**: Built-in learning loop with autonomous skill creation, cross-platform messaging (Telegram, Discord, Slack, etc.), scheduled automations with cron, parallel subagent delegation, 40+ tools, persistent memory with FTS5 search, and serverless deployment options.
+
+* **Why it's notable**: First agent with a complete learning loop that genuinely improves over time. Gained 776 stars today due to its unique self-improvement capabilities, platform flexibility, and ability to run cost-effectively on serverless infrastructure while maintaining conversation continuity across devices.
+
+### Hermes Agent - 具备内置学习循环的自我改进AI智能体
+
+* **功能介绍**: 一个能够从经验中创建技能、从对话中学习并跨会话构建持久用户模型的自我改进AI智能体。支持任何LLM提供商，可在5美元VPS到GPU集群的任何环境中运行。
+
+* **主要特点**: 内置学习循环与自主技能创建、跨平台消息传递（Telegram、Discord、Slack等）、定时自动化任务、并行子智能体委派、40+工具集成、带FTS5搜索的持久化内存，以及无服务器部署选项。
+
+* **为何值得关注**: 首个具备完整学习循环的智能体，能够真正随时间改进。今日获得776星标，得益于其独特的自我改进能力、平台灵活性，以及在无服务器基础设施上经济高效运行同时保持跨设备对话连续性的能力。
+
+**[View Repository / 查看仓库](https://github.com/NousResearch/hermes-agent)**
+
+### Promptfoo - LLM Evaluation and Red Teaming Platform
+
+* **What it does**: A comprehensive CLI and library for testing, evaluating, and securing LLM applications through automated prompt testing, model comparison, and AI red teaming
+* **Key features**: Side-by-side model comparison (GPT, Claude, Gemini, Llama), vulnerability scanning, automated evaluations, CI/CD integration, privacy-first local execution, and security compliance checking
+* **Why it's notable**: Trending with 632 stars today due to its developer-first approach to LLM security - addresses the critical need for systematic testing and vulnerability assessment in AI applications, powers production apps serving 10M+ users
+
+### Promptfoo - LLM评估与红队测试平台
+
+* **功能介绍**: 全面的命令行工具和库，用于测试、评估和保护LLM应用程序，提供自动化提示测试、模型对比和AI红队攻击功能
+* **主要特点**: 支持多模型并排对比（GPT、Claude、Gemini、Llama等）、漏洞扫描、自动化评估、CI/CD集成、本地隐私执行、安全合规检查
+* **为何值得关注**: 今日获得632星标，因其开发者优先的LLM安全方法而备受关注 - 解决了AI应用中系统性测试和漏洞评估的关键需求，已为服务1000万+用户的生产应用提供支持
+
+**[View Repository / 查看仓库](https://github.com/promptfoo/promptfoo)**
+
+### 🎬 Why JavaScript is a "glue" language
+**Channel:** freeCodeCamp.org
+
+* Explores JavaScript's role as a "glue" language that connects different parts of web applications and systems
+* Discusses why JavaScript has become so versatile and widely adopted across frontend, backend, and mobile development
+* Features insights from Sumit on the freeCodeCamp podcast about JavaScript's unique positioning in the tech ecosystem
+* Covers how JavaScript bridges gaps between different technologies and platforms
+* Worth watching for developers wanting to understand JavaScript's strategic importance and why it's become the lingua franca of modern web development
+
+### 🎬 为什么JavaScript是一种"胶水"语言
+**频道:** freeCodeCamp.org
+
+* 探讨JavaScript作为"胶水"语言连接Web应用和系统不同部分的作用
+* 讨论为什么JavaScript在前端、后端和移动开发中变得如此多才多艺和广泛采用
+* 在freeCodeCamp播客中展示Sumit对JavaScript在技术生态系统中独特定位的见解
+* 涵盖JavaScript如何在不同技术和平台之间架起桥梁
+* 值得开发者观看，帮助理解JavaScript的战略重要性以及为什么它成为现代Web开发的通用语言
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=E2oyLZVBcQw)**
+
+### 🎬 The industries that AI will impact the most
+**Channel:** Lenny's Podcast
+
+* Explores which industries will experience the most significant transformation from AI adoption
+* Discusses the future of work and how artificial intelligence will reshape various sectors
+* Provides insights into AI's disruptive potential across different business domains
+* Worth watching for professionals wanting to understand AI's impact on their industry and prepare for upcoming changes
+
+### 🎬 AI将对哪些行业产生最大影响
+**频道:** Lenny's Podcast
+
+* 探讨哪些行业将因AI应用而经历最重大的变革
+* 讨论工作的未来以及人工智能如何重塑各个领域
+* 提供AI在不同商业领域颠覆性潜力的见解
+* 值得观看，帮助专业人士了解AI对其行业的影响并为即将到来的变化做好准备
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pe0oPhBJYpY)**
 
