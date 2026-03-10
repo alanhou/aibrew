@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 10, 2026"
 date: 2026-03-10
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -254,115 +254,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 完整Python学习路线图（从A到Z）
-**频道:** Apna College
-
-* 视频内容概述: 全面指导如何从零开始学习Python,涵盖从初学者到高级水平的完整学习旅程
-* 主要话题: Python学习策略、快速学习的推荐资源、结构化学习路径,以及完整的Python播放列表供实践练习
-* 为何值得观看: 非常适合想要清晰、结构化路线图来高效掌握Python的初学者。Apna College提供实用指导和精选资源来加速你的Python学习之旅,消除从哪里开始和学什么的困惑。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XV-lIaO00H8)**
-
-### 🎬 Become the best programmer
-**Channel:** Matty McTech
-
-* What the video covers: The video introduces a platform that offers learning opportunities for over 80 programming languages with a gamified, path-based approach
-* Key topics discussed: Interactive coding education, language-agnostic learning platform, Duolingo-style programming practice methodology
-* Why it's worth watching: If you're looking to expand your programming language repertoire or prefer a structured, gamified learning experience, this video showcases a comprehensive platform that makes learning multiple languages accessible and engaging
-
-### 🎬 成为最优秀的程序员
-**频道:** Matty McTech
-
-* 视频内容概述: 视频介绍了一个提供80多种编程语言学习的平台,采用游戏化的路径式学习方法
-* 主要话题: 互动式编程教育、多语言学习平台、类似Duolingo的编程练习方法论
-* 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
-
-### Building a Procedural Hex Map with Wave Function Collapse
-
-* A procedural medieval island map generator using Wave Function Collapse (WFC) algorithm with 4,100 hex tiles across 19 grids, built with Three.js WebGPU and TSL shaders
-* WFC works like the board game Carcassonne - tiles must have matching edges (road-to-road, grass-to-grass), but hex tiles have 6 edges instead of 4, creating more complex constraints
-* Uses 30 tile types with 6 rotations and 5 elevation levels (900 possible states per cell), each defining terrain types for its edges
-* WFC process: start with all possibilities, collapse the most constrained cell, propagate constraints to neighbors, repeat until solved or stuck
-* Modular approach splits the map into 19 independent hexagonal grids to avoid dead-ends that plague large single-grid solves
-* Three-layer recovery system handles failures: Layer 1 "unfixes" conflicting neighbor cells, Layer 2 runs mini-WFC on problem areas (86% success rate), Layer 3 covers seams with mountain tiles
-* Elevation adds a third dimension - 5 levels with slopes and cliffs that must connect properly, turning 2D constraints into 3D
-* Uses cube coordinates (q, r, s) instead of offset coordinates for simpler hex math and neighbor finding
-* Perlin noise handles tree and building placement separately from WFC, creating organic clustering into forests and villages that WFC couldn't achieve
-* Tiles colored with PBR materials using custom TSL shaders that blend between summer/winter palettes based on elevation
-
-### 使用波函数坍缩算法构建程序化六边形地图
-
-* 使用波函数坍缩(WFC)算法的程序化中世纪岛屿地图生成器,包含19个网格上的4100个六边形瓦片,使用Three.js WebGPU和TSL着色器构建
-* WFC的工作原理类似桌游卡卡颂 - 瓦片必须边缘匹配(道路对道路、草地对草地),但六边形瓦片有6条边而非4条,创造了更复杂的约束
-* 使用30种瓦片类型,每种有6个旋转角度和5个高度级别(每个单元格900种可能状态),每个瓦片定义其边缘的地形类型
-* WFC流程:从所有可能性开始,坍缩约束最多的单元格,向邻居传播约束,重复直到解决或卡住
-* 模块化方法将地图分割为19个独立的六边形网格,避免大型单网格求解中常见的死胡同
-* 三层恢复系统处理失败:第1层"解除固定"冲突的邻居单元格,第2层在问题区域运行迷你WFC(86%成功率),第3层用山地瓦片覆盖接缝
-* 高度增加了第三维度 - 5个级别包含必须正确连接的斜坡和悬崖,将2D约束转变为3D
-* 使用立方体坐标(q, r, s)而非偏移坐标,简化六边形数学和邻居查找
-* Perlin噪声独立于WFC处理树木和建筑放置,创建WFC无法实现的有机聚类森林和村庄
-* 瓦片使用PBR材质着色,采用自定义TSL着色器根据高度在夏季/冬季调色板之间混合
-
-**[Read Original / 阅读原文](https://felixturner.github.io/hex-map-wfc/article/)**
-
-<!-- [Title-Only] -->
-### JSLinux Now Supports x86_64
-
-* Based on the title, this article likely announces that JSLinux - a JavaScript-based PC emulator that runs in web browsers - has been updated to support the x86_64 (64-bit) architecture. JSLinux is created by Fabrice Bellard, known for projects like QEMU and FFmpeg.
-* This is significant because it means the emulator can now run 64-bit operating systems and applications directly in a browser, expanding its capabilities beyond the previous 32-bit x86 support. This could enable running more modern Linux distributions and software, making it interesting for developers, educators, and anyone curious about virtualization technology running entirely in JavaScript.
-
-### JSLinux 现已支持 x86_64 架构
-
-* 根据标题推测，本文可能宣布 JSLinux（一个基于 JavaScript 的 PC 模拟器，可在网页浏览器中运行）已更新支持 x86_64（64 位）架构。JSLinux 由 Fabrice Bellard 创建，他也是 QEMU 和 FFmpeg 等知名项目的作者。
-* 这一更新意义重大，因为该模拟器现在可以直接在浏览器中运行 64 位操作系统和应用程序，超越了之前仅支持 32 位 x86 的限制。这使得运行更现代的 Linux 发行版和软件成为可能，对开发者、教育工作者以及对完全用 JavaScript 实现的虚拟化技术感兴趣的人来说都很有吸引力。
-
-**[Read Original / 阅读原文](https://bellard.org/jslinux/)**
-
-### Mog: A Programming Language for AI Agents
-
-* Mog is a statically typed, compiled, embedded language designed specifically for LLMs to write and modify code safely
-* Full language specification fits in just 3200 tokens, making it highly accessible for AI agents
-* Compiles to native code for low-latency execution without interpreter overhead, JIT, or process startup costs
-* Features capability-based permissions where the host controls exactly which functions Mog programs can call
-* Supports async/await for non-blocking operations, pattern matching with Result types, and f-strings for interpolation
-* Includes native tensor support for multi-dimensional arrays with explicit type conversions
-* No operator precedence for non-associative operations - requires explicit parentheses to minimize errors
-* Written in safe Rust for security auditing, MIT licensed and open source
-* Enables AI agents to dynamically load self-written plugins, scripts, and hooks with controlled permissions
-* Practical use cases include agent hooks for context management, async HTTP operations with retry logic, and numerical computing with FFT
-
-### Mog:为 AI 智能体设计的编程语言
-
-* Mog 是一种静态类型、编译型、嵌入式语言,专为 LLM 编写和安全修改代码而设计
-* 完整语言规范仅需 3200 个 token,使 AI 智能体极易上手
-* 编译为原生代码实现低延迟执行,无解释器开销、JIT 或进程启动成本
-* 采用基于能力的权限系统,宿主程序精确控制 Mog 程序可调用的函数
-* 支持非阻塞的 async/await 操作、Result 类型的模式匹配以及 f-string 插值
-* 原生支持多维数组(张量),类型转换必须显式声明
-* 非结合运算符无优先级规则,需要显式括号以减少错误
-* 使用安全的 Rust 编写便于安全审计,采用 MIT 开源许可
-* 使 AI 智能体能够动态加载自己编写的插件、脚本和钩子,并具有受控权限
-* 实际应用场景包括上下文管理的智能体钩子、带重试逻辑的异步 HTTP 操作以及 FFT 数值计算
-
-**[Read Original / 阅读原文](https://moglang.org)**
-
-### nanochat - Train Your Own GPT-2 for Under $100
-
-* **What it does**: A minimal experimental harness for training LLMs from scratch, covering the complete pipeline from tokenization through pretraining, finetuning, evaluation, inference, and a ChatGPT-like web UI. Train GPT-2 capability models (originally $43k in 2019) for ~$48 on an 8XH100 node, or ~$15 on spot instances.
-
-* **Key features**: 
-  - Single complexity dial (`--depth`) automatically calculates all optimal hyperparameters
-  - Complete "GPT-2 speedrun" in ~2-3 hours with leaderboard tracking progress
-  - Runs on single GPU nodes with minimal, hackable PyTorch code
-  - Supports multiple precisions (fp32, bf16, fp16) with hardware auto-detection
-  - Includes research tools for scaling laws and compute-optimal model training
-
-* **Why it's notable**: Democratizes LLM training by making GPT-2 level models accessible for under $100, down from the original $43,000 cost. The leaderboard shows continuous optimization - from OpenAI's original 168 hours down to just 2.02 hours. Created by Andrej Karpathy, it's designed for researchers and hobbyists to experiment with the full LLM training stack without enterprise-scale infrastructure.
-
----
-
 ### nanochat - 用不到 100 美元训练你自己的 GPT-2
 
 * **功能介绍**: 一个极简的 LLM 训练实验框架,涵盖从分词到预训练、微调、评估、推理和类 ChatGPT 网页界面的完整流程。可以在 8XH100 节点上以约 48 美元的成本训练 GPT-2 级别模型(2019 年原始训练成本约 43,000 美元),使用竞价实例成本可低至约 15 美元。
@@ -497,4 +388,196 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于希望了解 Claude 最新能力的开发者和 AI 自动化爱好者来说,这是必看内容。视频提供了实用见解,展示这些改进如何简化开发工作流程并提升编程项目的生产力。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=RAZVk5NPNtE)**
+
+### Emacs Solo: Two Years of Zero-Dependency Configuration
+
+* **Project Philosophy**: A daily-driver Emacs config with one strict rule - no external packages, only built-in features or custom Elisp code
+* **Motivation**: Understanding Emacs core capabilities, avoiding package repository breakage, maintaining config stability across releases, and having full control over the codebase
+* **Major Refactor**: Split monolithic `init.el` into two layers - core configuration (built-in packages only) and 35 self-contained modules in `lisp/` directory
+* **Core Layer (`init.el`)**: Configures only built-in Emacs features with `:ensure nil`, making sections copy-pasteable without dependencies
+* **Module Layer (`lisp/`)**: Custom implementations as proper `provide`/`require` modules, easily toggled or shared independently
+* **Key Configurations**: 
+  - General settings with Emacs 31 features (window layouts, tree-sitter auto-install, quality-of-life improvements)
+  - Abbrev mode with custom placeholder system (`###1###`, `###2###`, `###@###` markers)
+  - Eshell with shared history across buffers, custom prompts, 100k entry history
+  - VC (version control) extensively configured as Magit alternative - staging, reflog viewer, remote browsing, hunk navigation
+  - Eglot LSP with custom server programs including rassumfrassum for TypeScript/ESLint/Tailwind multiplexing
+  - Icomplete-vertical-mode for completion instead of Vertico/Consult/Helm, with upstream contributions
+* **Additional Built-ins**: Dired, WDired, ERC/RCIRC IRC clients, tab-bar workspaces, auth-source, auto-revert, compilation with ANSI colors, smerge/diff/ediff, flymake/flyspell, Gnus email client
+* **Benefits**: Full control, no upstream breakage, deep understanding of Emacs internals, modular and shareable configuration
+
+### Emacs Solo:两年零依赖配置实践
+
+* **项目理念**:日常使用的 Emacs 配置,严格遵循一条规则——零外部包,仅使用内置功能或自定义 Elisp 代码
+* **动机**:深入理解 Emacs 核心能力、避免包仓库故障、保持跨版本配置稳定性、完全掌控代码库
+* **重大重构**:将单体 `init.el` 拆分为两层——核心配置层(仅内置包)和 `lisp/` 目录下的 35 个独立模块
+* **核心层(`init.el`)**:仅配置内置 Emacs 功能,使用 `:ensure nil`,各部分可直接复制粘贴无需依赖
+* **模块层(`lisp/`)**:自定义实现为标准 `provide`/`require` 模块,可轻松切换或独立分享
+* **关键配置**:
+  - 通用设置包含 Emacs 31 特性(窗口布局、tree-sitter 自动安装、生活质量改进)
+  - Abbrev 模式配合自定义占位符系统(`###1###`、`###2###`、`###@###` 标记)
+  - Eshell 跨缓冲区共享历史、自定义提示符、10 万条历史记录
+  - VC(版本控制)深度配置作为 Magit 替代——暂存、reflog 查看器、远程浏览、代码块导航
+  - Eglot LSP 配置自定义服务器程序,包括用于 TypeScript/ESLint/Tailwind 多路复用的 rassumfrassum
+  - 使用 icomplete-vertical-mode 替代 Vertico/Consult/Helm 进行补全,并向上游贡献代码
+* **其他内置功能**:Dired、WDired、ERC/RCIRC IRC 客户端、tab-bar 工作区、auth-source、auto-revert、支持 ANSI 颜色的编译、smerge/diff/ediff、flymake/flyspell、Gnus 邮件客户端
+* **优势**:完全掌控、无上游故障、深入理解 Emacs 内部机制、模块化可分享配置
+
+**[Read Original / 阅读原文](https://www.rahuljuliato.com/posts/emacs-solo-two-years)**
+
+### Building a Procedural Hex Map with Wave Function Collapse
+
+* A procedural medieval island map generator using Wave Function Collapse (WFC) algorithm with 4,100 hex tiles across 19 grids, built with Three.js WebGPU and TSL shaders
+* WFC works like the board game Carcassonne - tiles must have matching edges (road-to-road, grass-to-grass), but hex tiles have 6 edges instead of 4, creating more complex constraints
+* Uses 30 tile types with 6 rotations and 5 elevation levels (900 possible states per cell), each defining terrain types for its edges
+* WFC process: start with all possibilities, collapse the most constrained cell, propagate constraints to neighbors, repeat until solved or stuck
+* Modular approach splits the map into 19 independent hexagonal grids to avoid dead-ends that plague large single-grid solves
+* Three-layer recovery system handles failures: Layer 1 "unfixes" conflicting neighbor cells, Layer 2 runs mini-WFC on problem areas (86% success rate), Layer 3 covers seams with mountain tiles
+* Elevation adds a third dimension - 5 levels with slopes and cliffs that must connect properly, turning 2D constraints into 3D
+* Uses cube coordinates (q, r, s) instead of offset coordinates for simpler hex math and neighbor finding
+* Perlin noise handles tree and building placement separately from WFC, creating organic clustering into forests and villages that WFC couldn't achieve
+* Tiles colored with PBR materials using custom TSL shaders that blend between summer/winter palettes based on elevation
+
+### 使用波函数坍缩算法构建程序化六边形地图
+
+* 使用波函数坍缩(WFC)算法的程序化中世纪岛屿地图生成器,包含19个网格上的4100个六边形瓦片,使用Three.js WebGPU和TSL着色器构建
+* WFC的工作原理类似桌游卡卡颂 - 瓦片必须边缘匹配(道路对道路、草地对草地),但六边形瓦片有6条边而非4条,创造了更复杂的约束
+* 使用30种瓦片类型,每种有6个旋转角度和5个高度级别(每个单元格900种可能状态),每个瓦片定义其边缘的地形类型
+* WFC流程:从所有可能性开始,坍缩约束最多的单元格,向邻居传播约束,重复直到解决或卡住
+* 模块化方法将地图分割为19个独立的六边形网格,避免大型单网格求解中常见的死胡同
+* 三层恢复系统处理失败:第1层"解除固定"冲突的邻居单元格,第2层在问题区域运行迷你WFC(86%成功率),第3层用山地瓦片覆盖接缝
+* 高度增加了第三维度 - 5个级别包含必须正确连接的斜坡和悬崖,将2D约束转变为3D
+* 使用立方体坐标(q, r, s)而非偏移坐标,简化六边形数学和邻居查找
+* Perlin噪声独立于WFC处理树木和建筑放置,创建WFC无法实现的有机聚集森林和村庄
+* 瓦片使用PBR材质着色,采用自定义TSL着色器根据高度在夏季/冬季调色板之间混合
+
+**[Read Original / 阅读原文](https://felixturner.github.io/hex-map-wfc/article/)**
+
+### Why the "JVG Algorithm" Fails: A Critical Analysis
+
+* The JVG algorithm claims to break RSA-2048 with only 5,000 physical qubits, supposedly improving on Shor's algorithm
+* The core flaw: it proposes precomputing x^r mod N values classically and loading them into quantum states
+* This approach fails because there are exponentially many r values, requiring exponential time for both computation and quantum state loading
+* The algorithm trades polynomial time (n²) for exponential time (2^n), making it impractical for large numbers
+* Red flags include: publication on Preprints.org instead of arXiv, amplification only by clickbait sites, and avoidance by reputable science outlets
+* Even quantum computing hype outlets ignored this claim, signaling its lack of credibility
+* The author criticizes the "intellectual hooliganism" and disregard for truth displayed by the paper's authors
+
+### "JVG算法"为何失败:批判性分析
+
+* JVG算法声称仅用5,000个物理量子比特就能破解RSA-2048,号称改进了Shor算法
+* 核心缺陷:提议在经典计算机上预计算x^r mod N的值,然后将它们加载到量子态中
+* 该方法失败的原因是r值呈指数级增长,计算和量子态加载都需要指数时间
+* 该算法将多项式时间(n²)换成了指数时间(2^n),对大数字来说完全不可行
+* 可疑迹象包括:发表在Preprints.org而非arXiv、仅被标题党网站传播、被权威科学媒体回避
+* 连量子计算炒作媒体都忽略了这一声明,表明其缺乏可信度
+* 作者批评论文作者表现出的"知识流氓行为"和对真相的漠视
+
+**[Read Original / 阅读原文](https://scottaaronson.blog/?p=9615)**
+
+### Uncodixfy - A ruleset to fix GPT's repetitive UI design patterns
+
+* **What it does**: Provides a constraint file (`uncodixify.md`) that prevents AI models like GPT from generating their typical, recognizable UI patterns (floating cards, excessive rounded corners, gradient dashboards, glass panels)
+* **Key features**: Works as a prompt addition or system instruction; available as an agent skill for AI coding tools via `npx skills add`; focuses on blocking bad patterns rather than teaching design; shows clear before/after comparisons
+* **Why it's notable**: Addresses a real pain point developers face when using AI for UI generation—the instantly recognizable "GPT aesthetic" that lacks originality. With 1,227 stars, it's resonating with developers tired of AI-generated interfaces that all look the same
+
+---
+
+### Uncodixfy - 修正 GPT 重复 UI 设计模式的规则集
+
+* **功能介绍**: 提供约束文件 (`uncodixify.md`)，阻止 GPT 等 AI 模型生成典型的、容易识别的 UI 模式(浮动卡片、过大圆角、渐变仪表板、玻璃面板等)
+* **主要特点**: 可作为提示词或系统指令添加；通过 `npx skills add` 作为 AI 编码工具的技能使用；专注于阻止不良模式而非教授设计；提供清晰的前后对比示例
+* **为何值得关注**: 解决了开发者使用 AI 生成 UI 时的真实痛点——那种一眼就能认出的"GPT 美学"缺乏原创性。1,227 星标表明它引起了厌倦千篇一律 AI 生成界面的开发者共鸣
+
+**[View Repository / 查看仓库](https://github.com/cyxzdev/Uncodixfy)**
+
+### 🎬 How Italy's Wealth Kept Italy Divided - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of the paradoxical relationship between Italy's economic prosperity and its prolonged political fragmentation during the Renaissance period
+* Key topics discussed: How wealth from trade and banking created powerful city-states that resisted unification; the role of competing merchant families and regional identities; economic incentives that made division more profitable than unity
+* Why it's worth watching: Ada Palmer brings historical expertise to explain a counterintuitive phenomenon—how success can prevent consolidation—with insights applicable to understanding modern political and economic fragmentation
+
+### 🎬 意大利的财富如何使其保持分裂 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨文艺复兴时期意大利经济繁荣与长期政治分裂之间的悖论关系
+* 主要话题: 贸易和银行业带来的财富如何造就了抵制统一的强大城邦;相互竞争的商人家族和地区认同的作用;使分裂比统一更有利可图的经济激励机制
+* 为何值得观看: Ada Palmer以历史专业知识解释了一个反直觉的现象——成功如何阻碍整合——其洞见可应用于理解现代政治和经济分裂问题
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=h1oyu5Z13Fk)**
+
+### 🎬 Complete Python Learning RoadMap (A to Z)
+**Channel:** Apna College
+
+* What the video covers: A comprehensive guide on how to start learning Python from scratch, covering the complete learning journey from beginner to advanced levels
+* Key topics discussed: Python learning strategies, recommended resources for faster learning, structured learning path, and access to a complete Python playlist for hands-on practice
+* Why it's worth watching: Perfect for beginners who want a clear, structured roadmap to master Python efficiently. Apna College provides practical guidance and curated resources to accelerate your Python learning journey, eliminating the confusion of where to start and what to learn next.
+
+---
+
+### 🎬 完整Python学习路线图（从A到Z）
+**频道:** Apna College
+
+* 视频内容概述: 全面指导如何从零开始学习Python,涵盖从初学者到高级水平的完整学习旅程
+* 主要话题: Python学习策略、快速学习的推荐资源、结构化学习路径,以及完整的Python播放列表供实践练习
+* 为何值得观看: 非常适合想要清晰、结构化路线图来高效掌握Python的初学者。Apna College提供实用指导和精选资源来加速你的Python学习之旅,消除从哪里开始和学什么的困惑。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XV-lIaO00H8)**
+
+### 🎬 Become the best programmer
+**Channel:** Matty McTech
+
+* What the video covers: The video introduces a platform that offers learning opportunities for over 80 programming languages with a gamified, path-based approach
+* Key topics discussed: Interactive coding education, language-agnostic learning platform, Duolingo-style programming practice methodology
+* Why it's worth watching: If you're looking to expand your programming language repertoire or prefer a structured, gamified learning experience, this video showcases a comprehensive platform that makes learning multiple languages accessible and engaging
+
+### 🎬 成为最优秀的程序员
+**频道:** Matty McTech
+
+* 视频内容概述: 视频介绍了一个提供80多种编程语言学习的平台,采用游戏化的路径式学习方法
+* 主要话题: 互动式编程教育、多语言学习平台、类似Duolingo的编程练习方法论
+* 为何值得观看: 如果你想扩展编程语言技能或偏好结构化、游戏化的学习体验,这个视频展示了一个全面的平台,让学习多种编程语言变得易于上手且富有趣味性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
+
+### 🎬 OpenClaw Tutorial for Beginners | Automating Email + Calendar forever 🔥
+
+**Channel:** CodeWithHarry
+
+* What the video covers: A comprehensive beginner-friendly tutorial on OpenClaw, a tool designed to automate email and calendar management tasks
+* Key topics discussed: Setting up OpenClaw, automating repetitive email workflows, calendar synchronization and automation, practical use cases for productivity enhancement
+* Why it's worth watching: Perfect for anyone looking to save time on daily email and scheduling tasks; includes hands-on demonstrations and a special discount code (HARRY20 for 20% off until March 2026); CodeWithHarry is known for clear, accessible tech tutorials that make complex tools easy to understand
+
+---
+
+### 🎬 OpenClaw 初学者教程 | 永久自动化邮件和日历 🔥
+
+**频道:** CodeWithHarry
+
+* 视频内容概述: 全面介绍 OpenClaw 自动化工具的入门教程,专注于邮件和日历管理的自动化解决方案
+* 主要话题: OpenClaw 的安装配置、邮件工作流自动化设置、日历同步与自动化功能、实用的生产力提升案例演示
+* 为何值得观看: 适合希望节省日常邮件和日程管理时间的用户;包含实操演示和专属优惠码(HARRY20 可享8折优惠,有效期至2026年3月);CodeWithHarry 以清晰易懂的技术教程著称,能将复杂工具讲解得简单明了
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=161yAjOIHAw)**
+
+### 🎬 SQL SELECT Query Explained in 30 Seconds 📊 | Beginners
+
+**Channel:** Debug Your Career
+
+* A quick 30-second tutorial explaining the fundamental SQL SELECT query for database beginners
+* Covers the basic syntax and usage of SELECT statements to retrieve data from databases
+* Perfect for freshers and beginners who want a fast, digestible introduction to SQL's most essential command - ideal for quick learning or refreshing core concepts
+
+---
+
+### 🎬 30秒学会SQL SELECT查询 📊 | 初学者教程
+
+**频道:** Debug Your Career
+
+* 30秒快速教程,讲解数据库初学者必学的SQL SELECT查询基础
+* 涵盖SELECT语句的基本语法和用法,教你如何从数据库中检索数据
+* 非常适合应届生和初学者快速入门SQL最核心的命令 - 短小精悍,适合快速学习或复习基础概念
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ym3ajx3NLWw)**
 
