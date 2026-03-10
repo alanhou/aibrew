@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 10, 2026"
 date: 2026-03-10
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -664,4 +664,120 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于想要了解 Claude 不断演进能力并学习如何利用这些新功能提高编码和项目开发效率的开发者和 AI 爱好者来说,这是必看内容
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UxfeF4bSBYI)**
+
+### Lotus 1-2-3: The Spreadsheet That Crushed VisiCalc
+
+* Lotus 1-2-3 achieved $53M in first-year sales (1983) vs. projected $1M, becoming the IBM-PC's killer app and decimating VisiCalc
+* The "1-2-3" name represented integrated software: (1) spreadsheet in x86 assembly for speed, (2) one-click graphing that made audiences applaud, (3) database functionality replacing the planned word processor
+* Mitch Kapor created 1-2-3 after VisiCorp rejected his idea to combine VisiCalc and VisiPlot on one disk, eliminating tedious disk-swapping
+* IBM-PC advantages: 80-column display vs. Apple II's 40 columns, 640K RAM vs. 48K enabled far more complex worksheets
+* Lotus bought VisiCalc's parent company (1985), killed VisiCalc (1986); Microsoft Excel still references 1-2-3 today, not VisiCalc
+* Market dominance peaked with Release 2.2 outselling competitors 2:1, but Excel surpassed 1-2-3 by 1993; IBM acquired Lotus for $3.5B (1995), ended support (2014)
+* The article explores 1-2-3 using DOSBox-X with multiple releases (2.01-3.4), primarily Release 2.3, to understand what made it revolutionary
+
+### Lotus 1-2-3:击败 VisiCalc 的电子表格霸主
+
+* Lotus 1-2-3 首年销售额达 5300 万美元(1983),远超预期的 100 万美元,成为 IBM-PC 的杀手级应用,摧毁了 VisiCalc
+* "1-2-3"名称代表集成软件:(1)用 x86 汇编编写的高速电子表格,(2)一键生成图表功能让观众鼓掌喝彩,(3)数据库功能取代了原计划的文字处理器
+* Mitch Kapor 在 VisiCorp 拒绝他将 VisiCalc 和 VisiPlot 合并到一张磁盘的想法后创建了 1-2-3,消除了繁琐的磁盘切换
+* IBM-PC 优势:80 列显示 vs Apple II 的 40 列,640K 内存 vs 48K,支持更复杂的工作表
+* Lotus 收购 VisiCalc 母公司(1985),终止 VisiCalc(1986);微软 Excel 至今仍引用 1-2-3,而非 VisiCalc
+* Release 2.2 版本市场占有率巅峰时销量超竞争对手 2 倍,但 Excel 于 1993 年超越;IBM 以 35 亿美元收购 Lotus(1995),2014 年终止支持
+* 文章使用 DOSBox-X 运行多个版本(2.01-3.4),主要使用 Release 2.3,探索 1-2-3 的革命性特性
+
+**[Read Original / 阅读原文](https://stonetools.ghost.io/lotus123-dos/)**
+
+### Debunking the $5K Anthropic Loss Myth: API Pricing vs. Actual Compute Costs
+
+* Forbes article claims Anthropic loses $5,000 per Claude Code Max user ($200/month plan), but this confuses retail API prices with actual compute costs
+* OpenRouter pricing reveals the truth: comparable open-weight models (Qwen 3.5 397B, Kimi K2.5) cost ~10x less than Claude Opus 4.6 API prices ($0.39-$0.45 vs $5 per million input tokens)
+* Real compute cost for heavy users is likely ~$500/month, meaning Anthropic loses $300 on extreme power users, not $4,800
+* Only <5% of subscribers hit usage caps; most users consume ~50% of limits, making the service break-even or profitable for Anthropic
+* The $5,000 figure actually represents Cursor's cost problem - they must pay Anthropic's retail API rates to offer Opus 4.6 to their users
+* Anthropic's losses come from model training, researcher salaries, and compute infrastructure - not from inference serving
+* The "inference is expensive" narrative benefits frontier labs by justifying 10x+ API markups and discouraging competition
+
+### 揭穿 Anthropic 每用户亏损 5000 美元的谣言：API 定价与实际计算成本的差异
+
+* Forbes 文章声称 Anthropic 在每个 Claude Code Max 用户（200 美元/月套餐）上亏损 5000 美元，但这混淆了零售 API 价格与实际计算成本
+* OpenRouter 定价揭示真相：可比的开源权重模型（Qwen 3.5 397B、Kimi K2.5）成本约为 Claude Opus 4.6 API 价格的 1/10（每百万输入 token 0.39-0.45 美元 vs 5 美元）
+* 重度用户的真实计算成本可能约为每月 500 美元，意味着 Anthropic 在极端重度用户上亏损 300 美元，而非 4800 美元
+* 只有不到 5% 的订阅者达到使用上限；大多数用户消耗约 50% 的限额，使该服务对 Anthropic 来说达到盈亏平衡或盈利
+* 5000 美元的数字实际上代表 Cursor 的成本问题 - 他们必须支付 Anthropic 的零售 API 费率才能向用户提供 Opus 4.6
+* Anthropic 的亏损来自模型训练、研究人员薪资和计算基础设施 - 而非推理服务
+* "推理成本高昂"的叙事有利于前沿实验室，为 10 倍以上的 API 加价辩护并阻碍竞争
+
+**[Read Original / 阅读原文](https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/)**
+
+### macOS Tahoe's Inconsistent Window Corner Radius Design Flaw
+
+* macOS 26 Tahoe introduces exaggerated window corner radiuses that vary inconsistently across different application windows
+* Windows without toolbars (like TextEdit) have smaller corner radiuses, while windows with toolbars (like Calculator) have more exaggerated radiuses
+* The corner radius also changes based on other UI elements such as sidebars, creating visual inconsistency when windows overlap
+* This design choice contradicts Mac's historical reputation for UI consistency and has caused implementation issues even for Apple's own WebKit engineers
+* The author criticizes this as potentially "the stupidest user interface feature ever invented" and continues using macOS Sequoia on their main machine, blocking the Tahoe update with Little Snitch
+
+### macOS Tahoe 窗口圆角半径不一致的设计缺陷
+
+* macOS 26 Tahoe 引入了夸张的窗口圆角设计,但不同应用窗口的圆角半径并不统一
+* 没有工具栏的窗口(如 TextEdit)圆角较小,而带有工具栏的窗口(如计算器)圆角更加夸张
+* 圆角半径还会根据侧边栏等其他 UI 元素变化,导致窗口重叠时出现视觉不一致
+* 这一设计违背了 Mac 历来以 UI 一致性著称的传统,甚至给苹果自家的 WebKit 工程师带来了实现问题
+* 作者批评这可能是"有史以来最愚蠢的用户界面功能",并在主力机上继续使用 macOS Sequoia,通过 Little Snitch 阻止 Tahoe 更新
+
+**[Read Original / 阅读原文](https://lapcatsoftware.com/articles/2026/3/1.html)**
+
+### CLI-Anything - Transform Any Software into Agent-Controllable CLI Tools
+
+* Automatically generates command-line interfaces for any software (GIMP, Blender, LibreOffice, etc.) through a 7-phase pipeline: analyze codebase → design architecture → implement CLI → plan tests → write tests → document → publish
+* Provides structured JSON output for AI agents plus human-readable formats, with built-in REPL, undo/redo, and stateful operations - works as a Claude Code plugin with one-command installation
+* Bridges the gap between AI agents and professional software by replacing fragile UI automation with reliable CLI interfaces, enabling agents to control real applications with full capabilities (1,436+ passing tests across 9 major applications)
+
+### CLI-Anything - 让任何软件都能被 AI 智能体控制的命令行工具生成器
+
+* 通过 7 阶段自动化流程为任意软件(GIMP、Blender、LibreOffice 等)生成命令行接口:分析代码库 → 设计架构 → 实现 CLI → 规划测试 → 编写测试 → 生成文档 → 发布安装
+* 为 AI 智能体提供结构化 JSON 输出和人类可读格式,内置交互式 REPL、撤销/重做和状态管理功能 - 作为 Claude Code 插件一键安装使用
+* 用可靠的命令行接口替代脆弱的 UI 自动化,让 AI 智能体能够完整控制专业软件的全部功能,无需妥协(已在 9 个主流应用上通过 1,436+ 项测试验证)
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/CLI-Anything)**
+
+### 🎬 SQL SELECT Query Explained in 30 Seconds 📊 | Beginners
+
+**Channel:** Debug Your Career
+
+* A quick 30-second tutorial explaining the fundamental SQL SELECT query for database beginners
+* Covers the basic syntax and usage of SELECT statements to retrieve data from databases
+* Perfect for freshers and beginners who want a fast, digestible introduction to SQL's most essential command - ideal for quick learning or refreshing core concepts
+
+---
+
+### 🎬 30秒学会SQL SELECT查询 📊 | 初学者教程
+
+**频道:** Debug Your Career
+
+* 30秒快速教程,讲解数据库初学者必学的SQL SELECT查询基础
+* 涵盖SELECT语句的基本语法和用法,教你如何从数据库中检索数据
+* 非常适合应届生和初学者快速入门SQL最核心的命令 - 短小精悍,适合快速学习或复习基础概念
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ym3ajx3NLWw)**
+
+### 🎬 Claude Cowork Full Tutorial for Beginners: How to Use Claude Cowork
+
+**Channel:** Mikey Ranks
+
+* What the video covers: A comprehensive beginner's guide to Claude Cowork, walking through the setup process, core features, and practical use cases for this AI collaboration tool
+* Key topics discussed: Getting started with Claude Cowork, understanding its interface and capabilities, workflow integration, best practices for AI-assisted collaboration, and real-world application examples
+* Why it's worth watching: Perfect for newcomers wanting to leverage Claude's collaborative features for productivity, coding assistance, or project management. Mikey Ranks breaks down complex AI tools into digestible, actionable steps that viewers can immediately apply to their work
+
+---
+
+### 🎬 Claude Cowork 完整新手教程:如何使用 Claude Cowork
+
+**频道:** Mikey Ranks
+
+* 视频内容概述: 全面的 Claude Cowork 新手指南,详细介绍设置流程、核心功能以及这款 AI 协作工具的实际应用场景
+* 主要话题: Claude Cowork 入门指南、界面和功能解析、工作流程整合、AI 辅助协作的最佳实践方法,以及真实应用案例演示
+* 为何值得观看: 非常适合想要利用 Claude 协作功能提升生产力、编程辅助或项目管理的新手用户。Mikey Ranks 将复杂的 AI 工具拆解成易懂且可操作的步骤,观众可以立即应用到实际工作中
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=stEVjMHMt-Q)**
 
