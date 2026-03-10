@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 11, 2026"
 date: 2026-03-11
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -251,4 +251,230 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看，适合希望通过互动式、碎片化方式学习新编程语言或通过持续练习巩固现有技能的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=R2eQ4wsCbh0)**
+
+### Building Autonomous Code Agents with Verification Systems
+
+* Author develops AI agents that write code autonomously while sleeping, but faces trust issues with unreviewed code changes
+* Teams using Claude for PRs are merging 40-50 weekly instead of 10, spending more time in code reviews as systems become autonomous
+* Traditional solutions fail: hiring more reviewers isn't scalable, and AI checking its own work creates a "self-congratulation machine"
+* Proposes TDD-inspired approach: write acceptance criteria in plain English before coding, let agents build features, then verify against criteria
+* Built Claude Skill with four-stage verification: pre-flight checks, planning with Opus, parallel browser testing with Sonnet, and final judgment
+* Uses Playwright for frontend testing and curl commands for backend API verification, focusing on observable behavior rather than code review
+* Workflow shifts from reviewing diffs to reviewing failures, making verification more targeted and efficient
+
+### 构建具有验证系统的自主代码智能体
+
+* 作者开发了在睡眠时自主编写代码的AI智能体，但面临未经审查的代码变更的信任问题
+* 使用Claude进行PR的团队每周合并40-50个而不是10个，随着系统变得更加自主，在代码审查上花费更多时间
+* 传统解决方案失效：雇佣更多审查员不可扩展，AI检查自己的工作会创建"自我祝贺机器"
+* 提出受TDD启发的方法：在编码前用简单英语编写验收标准，让智能体构建功能，然后根据标准进行验证
+* 构建了具有四阶段验证的Claude技能：预检查、使用Opus规划、使用Sonnet并行浏览器测试和最终判断
+* 对前端测试使用Playwright，对后端API验证使用curl命令，专注于可观察行为而非代码审查
+* 工作流程从审查差异转向审查失败，使验证更加有针对性和高效
+
+**[Read Original / 阅读原文](https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep)**
+
+### Yann LeCun Launches $1 Billion AI Startup to Challenge Language Model Dominance
+
+* Meta's former chief AI scientist Yann LeCun cofounded Advanced Machine Intelligence (AMI), raising over $1 billion at a $3.5 billion valuation
+* The Paris-based startup aims to develop AI world models that understand physical reality, challenging the current focus on large language models
+* LeCun argues human reasoning is grounded in the physical world, not language, calling the idea that LLMs will achieve human-level intelligence "complete nonsense"
+* Notable investors include Cathay Innovation, Bezos Expeditions, Mark Cuban, and former Google CEO Eric Schmidt
+* AMI will operate globally with offices in Paris, Montreal, Singapore, and New York, targeting manufacturing, biomedical, and robotics industries
+* The company plans to build AI systems with persistent memory that can reason, plan, and remain controllable and safe
+* LeCun left Meta in November 2025 after founding their FAIR lab, citing strategic differences over LLM focus versus world model research
+* AMI's cofounders include former Meta executives and researchers, with Alexandre LeBrun as CEO and Saining Xie as chief science officer
+
+### 杨立昆筹集10亿美元挑战语言模型主导地位的AI初创公司
+
+* Meta前首席AI科学家杨立昆联合创立了先进机器智能公司(AMI)，融资超过10亿美元，估值35亿美元
+* 这家总部位于巴黎的初创公司旨在开发理解物理现实的AI世界模型，挑战当前对大语言模型的关注
+* 杨立昆认为人类推理基于物理世界而非语言，称LLM实现人类级智能的想法是"完全的胡说八道"
+* 知名投资者包括国泰创新、贝索斯探险基金、马克·库班和前谷歌CEO埃里克·施密特
+* AMI将在巴黎、蒙特利尔、新加坡和纽约设立办公室，全球化运营，目标客户为制造业、生物医学和机器人行业
+* 公司计划构建具有持久记忆、能够推理规划且可控安全的AI系统
+* 杨立昆于2025年11月离开Meta，此前曾创立Meta的FAIR实验室，离职原因是在LLM重点与世界模型研究方向上存在战略分歧
+* AMI联合创始人包括Meta前高管和研究人员，亚历山大·勒布伦担任CEO，谢赛宁担任首席科学官
+
+**[Read Original / 阅读原文](https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/)**
+
+### RISC-V Performance Challenges in Fedora Linux Development
+
+* Developer shares 3-month experience working on Fedora Linux RISC-V port, highlighting significant performance bottlenecks
+* Triaged Fedora RISC-V tracker entries and submitted 86 pull requests for package fixes across various complexity levels
+* RISC-V hardware shows dramatically slower build times - binutils package takes 143 minutes vs 25-46 minutes on other architectures
+* Current RISC-V builders use 4-8 cores with limited RAM, comparable to low-end ARM Cortex-A55 processors
+* LTO (Link Time Optimization) disabled on RISC-V builds to reduce memory usage and compilation time
+* QEMU emulation with 80 cores proves faster than native hardware for complex packages like LLVM15
+* Future hardware improvements expected from UltraRISC UR-DP1000 and SpacemiT K3 systems, but still insufficient for production needs
+* Plans for Fedora Linux 44 development continue with unified kernel images and new faster builders for heavy packages
+
+### RISC-V 在 Fedora Linux 开发中的性能挑战
+
+* 开发者分享了3个月 Fedora Linux RISC-V 移植工作经验，突出了显著的性能瓶颈问题
+* 整理了 Fedora RISC-V 跟踪器条目，并为各种复杂度的软件包修复提交了86个拉取请求
+* RISC-V 硬件显示出显著较慢的构建时间 - binutils 软件包需要143分钟，而其他架构仅需25-46分钟
+* 当前 RISC-V 构建器使用4-8核心和有限内存，性能相当于低端 ARM Cortex-A55 处理器
+* RISC-V 构建中禁用了 LTO（链接时优化）以减少内存使用和编译时间
+* 使用80核心的 QEMU 模拟对于 LLVM15 等复杂软件包比原生硬件更快
+* 预期 UltraRISC UR-DP1000 和 SpacemiT K3 系统将带来硬件改进，但仍不足以满足生产需求
+* Fedora Linux 44 开发计划继续推进，将使用统一内核镜像和新的更快构建器处理重型软件包
+
+**[Read Original / 阅读原文](https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/)**
+
+### Promptfoo - LLM Evaluation and Red Teaming Platform
+
+* **What it does**: A comprehensive CLI and library for testing, evaluating, and securing LLM applications through automated prompt testing, model comparison, and AI red teaming
+* **Key features**: Side-by-side model comparison (GPT, Claude, Gemini, Llama), vulnerability scanning, CI/CD integration, local evaluation (privacy-first), web UI and command-line interface
+* **Why it's notable**: Trending with 632 stars today due to its developer-first approach to LLM security - addresses the critical need for systematic testing and vulnerability assessment in AI applications, powers production apps serving 10M+ users
+
+### Promptfoo - LLM评估与红队测试平台
+
+* **功能介绍**: 全面的命令行工具和库，用于通过自动化提示测试、模型比较和AI红队测试来测试、评估和保护LLM应用程序
+* **主要特点**: 支持多模型并排比较（GPT、Claude、Gemini、Llama等）、漏洞扫描、CI/CD集成、本地评估（隐私优先）、Web界面和命令行界面
+* **为何值得关注**: 今日获得632星标，因其开发者优先的LLM安全方法而备受关注 - 解决了AI应用中系统性测试和漏洞评估的关键需求，为服务1000万+用户的生产应用提供支持
+
+**[View Repository / 查看仓库](https://github.com/promptfoo/promptfoo)**
+
+### GoogleCloudPlatform/generative-ai - Comprehensive Generative AI Sample Repository for Google Cloud
+
+* **What it does**: Provides extensive collection of Jupyter notebooks, code samples, and resources demonstrating how to build generative AI workflows using Google Cloud's Vertex AI platform, with focus on Gemini models
+* **Key features**: 
+  - Latest Gemini 3.1 Pro integration and tutorials
+  - Multi-modal AI capabilities (text, vision, audio) with Imagen and Chirp APIs
+  - RAG (Retrieval Augmented Generation) and grounding implementations
+  - Vertex AI Search for enterprise data solutions
+  - Complete setup guides for Google Colab and Vertex AI Workbench
+  - Production-ready sample applications and agent templates
+* **Why it's notable**: Gained 534 stars today as Google's official showcase for generative AI development, offering the most comprehensive hands-on learning resource for developers wanting to leverage Google's latest AI models in cloud environments
+
+### GoogleCloudPlatform/generative-ai - Google Cloud 生成式AI综合示例仓库
+
+* **功能介绍**: 提供大量Jupyter笔记本、代码示例和资源，演示如何使用Google Cloud的Vertex AI平台构建生成式AI工作流，重点关注Gemini模型
+* **主要特点**:
+  - 最新Gemini 3.1 Pro集成和教程
+  - 多模态AI能力（文本、视觉、音频），包含Imagen和Chirp API
+  - RAG（检索增强生成）和基础实现
+  - 面向企业数据的Vertex AI搜索解决方案
+  - Google Colab和Vertex AI Workbench完整设置指南
+  - 生产就绪的示例应用和智能体模板
+* **为何值得关注**: 今日获得534个星标，作为Google官方生成式AI开发展示平台，为希望在云环境中利用Google最新AI模型的开发者提供最全面的实践学习资源
+
+**[View Repository / 查看仓库](https://github.com/GoogleCloudPlatform/generative-ai)**
+
+### AgentHub - Agent-First Collaboration Platform for AI Swarms
+
+* **What it does**: A stripped-down GitHub alternative designed specifically for AI agents to collaborate on codebases, featuring a bare git repository with DAG-based commits and an integrated message board for coordination
+* **Key features**: Git bundle-based code sharing, threaded message boards for agent communication, API key authentication with rate limiting, single Go binary deployment with SQLite backend, and CLI tool for agent interactions
+* **Why it's notable**: Created by Andrej Karpathy as an innovative approach to autonomous AI research collaboration, enabling swarms of AI agents to work together without traditional GitHub constraints like main branches or pull requests - represents a novel paradigm for agent-to-agent development workflows
+
+### AgentHub - AI智能体协作平台
+
+* **功能介绍**: 专为AI智能体设计的代码协作平台，采用简化的Git仓库结构和DAG提交模式，配备消息板供智能体间协调沟通
+* **主要特点**: 基于Git bundle的代码共享机制、支持线程回复的消息板系统、API密钥认证和速率限制、单一Go二进制文件部署配SQLite数据库、提供CLI工具便于智能体操作
+* **为何值得关注**: 由Andrej Karpathy开发的创新项目，旨在实现自主AI研究协作，让AI智能体群体能够在没有传统GitHub约束（如主分支、拉取请求）的环境下协同工作，代表了智能体间开发协作的全新范式
+
+**[View Repository / 查看仓库](https://github.com/karpathy/agenthub)**
+
+### SwiftUI-Agent-Skill - AI-powered SwiftUI code enhancement tool
+
+* **What it does**: An agent skill that integrates with AI coding assistants (Claude Code, Codex, Gemini, Cursor) to help developers write better SwiftUI code with guidance on API usage, design patterns, performance optimization, and accessibility compliance.
+
+* **Key features**: Easy installation via npx, works across multiple AI platforms, provides targeted code reviews for deprecated APIs and performance issues, built on years of real-world SwiftUI development experience, supports both command triggers and natural language activation.
+
+* **Why it's notable**: Created by Paul Hudson (@twostraws), a renowned Swift educator, this tool addresses common mistakes that AI models make when generating SwiftUI code. With 1,733 stars, it's gaining traction as developers seek to improve AI-generated code quality, particularly for accessibility and modern API usage.
+
+### SwiftUI-Agent-Skill - AI驱动的SwiftUI代码增强工具
+
+* **功能介绍**: 一个代理技能工具，可与AI编程助手（Claude Code、Codex、Gemini、Cursor等）集成，帮助开发者编写更优质的SwiftUI代码，提供API使用、设计模式、性能优化和无障碍功能方面的指导。
+
+* **主要特点**: 通过npx简易安装，支持多个AI平台，针对废弃API和性能问题提供精准代码审查，基于多年实际SwiftUI开发经验构建，支持命令触发和自然语言激活。
+
+* **为何值得关注**: 由知名Swift教育家Paul Hudson（@twostraws）创建，专门解决AI模型在生成SwiftUI代码时的常见错误。获得1,733个星标，随着开发者寻求提升AI生成代码质量的需求增长，特别是在无障碍功能和现代API使用方面，该工具正受到越来越多关注。
+
+**[View Repository / 查看仓库](https://github.com/twostraws/SwiftUI-Agent-Skill)**
+
+### 🎬 The Truth Behind Machiavelli's "The Prince" - Ada Palmer
+**Channel:** Dwarkesh Patel
+* Deep dive into the historical context and true meaning of Machiavelli's famous political treatise
+* Explores common misconceptions about "The Prince" and what Machiavelli actually intended
+* Features expert analysis from Ada Palmer, likely discussing the Renaissance political landscape and Machiavelli's real motivations
+* Worth watching for anyone interested in political philosophy, history, or understanding how classic texts are often misinterpreted
+
+### 🎬 马基雅维利《君主论》背后的真相 - Ada Palmer
+**频道:** Dwarkesh Patel
+* 深入探讨马基雅维利著名政治论著的历史背景和真实含义
+* 揭示人们对《君主论》的常见误解，以及马基雅维利的真实意图
+* 由专家Ada Palmer进行分析，可能讨论文艺复兴时期的政治环境和马基雅维利的真实动机
+* 对政治哲学、历史或了解经典文本如何被误读感兴趣的观众值得一看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mbTTdzBdn04)**
+
+### 🎬 SQL SELECT Query Explained in 30 Seconds 📊 | Beginners #shorts #sql #freshers
+
+**Channel:** Debug Your Career
+
+* Quick 30-second tutorial explaining the fundamentals of SQL SELECT queries
+* Covers basic SELECT syntax and essential query structure for database operations
+* Perfect for beginners and fresh graduates looking to grasp SQL basics quickly in bite-sized format
+
+### 🎬 SQL SELECT 查询 30 秒速成 📊 | 初学者教程
+
+**频道:** Debug Your Career
+
+* 30秒快速教程，讲解SQL SELECT查询的基础知识
+* 涵盖基本SELECT语法和数据库操作的核心查询结构
+* 非常适合初学者和应届毕业生快速掌握SQL基础概念
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ym3ajx3NLWw)**
+
+### 🎬 Claude Code Skills Just Got a MASSIVE Upgrade
+**Channel:** Chase AI
+* Covers the latest major improvements to Claude's coding capabilities and features
+* Key topics include enhanced code generation, debugging tools, and practical implementation strategies
+* Worth watching for developers and AI enthusiasts wanting to leverage Claude's upgraded coding abilities for building agencies and landing clients
+
+### 🎬 Claude 编程技能获得重大升级
+**频道:** Chase AI
+* 介绍 Claude 编程能力和功能的最新重大改进
+* 主要话题包括增强的代码生成、调试工具和实际实施策略
+* 对于想要利用 Claude 升级编程能力来建立代理机构和获得客户的开发者和 AI 爱好者来说值得观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UxfeF4bSBYI)**
+
+### 🎬 How to Use Claude Code Skills Like the 1% (it's easy actually)
+**Channel:** Simon Scrapes
+
+* What the video covers: Advanced techniques for leveraging Claude's coding capabilities to build sophisticated agentic systems for business automation
+* Key topics discussed: Professional-level Claude prompting strategies, building autonomous systems, business process automation, and scaling AI workflows
+* Why it's worth watching: Learn insider techniques used by top 1% of Claude users to create powerful automated systems that can run business operations with minimal human intervention
+
+### 🎬 如何像顶尖1%用户一样使用Claude编程技能（其实很简单）
+**频道:** Simon Scrapes
+
+* 视频内容概述: 介绍如何利用Claude的高级编程能力构建复杂的智能代理系统来实现业务自动化
+* 主要话题: 专业级Claude提示策略、构建自主系统、业务流程自动化以及扩展AI工作流程
+* 为何值得观看: 学习顶尖1%Claude用户使用的内部技巧，创建能够以最少人工干预运行业务操作的强大自动化系统
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6-D3fg3JUL4)**
+
+### 🎬 Claude Code + CMUX: The Ultimate AI Coding Terminal
+**Channel:** Better Stack
+
+* Explores CMUX, a revolutionary terminal designed specifically for AI coding agents by Lawrence Chen
+* Demonstrates how AI agents can gain enhanced control and interaction capabilities through this specialized terminal interface
+* Shows the integration between Claude Code and CMUX for improved AI-assisted development workflows
+* Covers the technical architecture and practical applications of AI-controlled terminal environments
+* Worth watching for developers interested in AI-powered coding tools and terminal innovations that bridge the gap between AI agents and system control
+
+### 🎬 Claude Code + CMUX：终极AI编程终端
+**频道:** Better Stack
+
+* 探索由Lawrence Chen开发的CMUX革命性终端，专为AI编程代理设计
+* 演示AI代理如何通过这个专用终端界面获得增强的控制和交互能力
+* 展示Claude Code与CMUX的集成，改善AI辅助开发工作流程
+* 涵盖AI控制终端环境的技术架构和实际应用
+* 值得观看，适合对AI驱动的编程工具和连接AI代理与系统控制的终端创新感兴趣的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8oLP8oxqtOE)**
 
