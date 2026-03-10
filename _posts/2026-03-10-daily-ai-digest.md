@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 10, 2026"
 date: 2026-03-10
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -580,4 +580,88 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 非常适合应届生和初学者快速入门SQL最核心的命令 - 短小精悍,适合快速学习或复习基础概念
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ym3ajx3NLWw)**
+
+### Lessons from Tess.Design: The AI Art Royalty Experiment That Failed
+
+* Tess.Design launched in 2024 as an AI image marketplace paying artists 50% royalties when their style was used, but shut down less than two years later
+* The platform aimed to solve AI's copyright controversy by creating a "properly-licensed" image generator where every output traced back to a consenting artist
+* Out of 325 artists contacted, only 6.5% joined—most rejected due to ideological opposition to AI, brand dilution fears, artistic principles, or reputation risks
+* Artists who declined cited concerns like "there is no such thing as ethical AI" and fear of being "fried" by the artist community for AI involvement
+* The business generated only $12,172 in revenue over 20 months while paying $18,000 in artist advances, resulting in a $7,000+ net loss
+* No artist earned royalties beyond their initial advance—the usage economics never scaled
+* Three factors killed Tess: unresolved legal arguments around AI copyright scared enterprise clients away, poor timing with hostile artist community sentiment in 2024, and need to focus resources on core product Kapwing
+* A major US media outlet nearly signed but their legal team blocked it due to ongoing AI copyright litigation risks
+* The experiment revealed that even with fair compensation models, cultural and legal barriers make AI art licensing businesses extremely difficult in the current environment
+
+### Tess.Design 的教训:失败的 AI 艺术版税实验
+
+* Tess.Design 于 2024 年推出,是一个在使用艺术家风格时向其支付 50% 版税的 AI 图像市场,但不到两年就关闭了
+* 该平台旨在通过创建"合法授权"的图像生成器来解决 AI 的版权争议,每个输出都可追溯到同意的艺术家
+* 在联系的 325 位艺术家中,只有 6.5% 加入——大多数人因意识形态上反对 AI、担心品牌稀释、艺术原则或声誉风险而拒绝
+* 拒绝的艺术家提出了诸如"不存在道德的 AI"以及害怕因参与 AI 而被艺术家社区"炮轰"等担忧
+* 该业务在 20 个月内仅产生 12,172 美元收入,同时支付了 18,000 美元的艺术家预付款,净亏损超过 7,000 美元
+* 没有艺术家赚到超出初始预付款的版税——使用经济从未形成规模
+* 三个因素导致 Tess 关闭:围绕 AI 版权的未解决法律争议吓跑了企业客户,2024 年艺术家社区敌对情绪导致时机不佳,以及需要将资源集中在核心产品 Kapwing 上
+* 一家美国主流媒体几乎签约,但其法律团队因持续的 AI 版权诉讼风险而阻止了交易
+* 这次实验揭示,即使有公平的补偿模式,文化和法律障碍也使得 AI 艺术授权业务在当前环境下极其困难
+
+**[Read Original / 阅读原文](https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/)**
+
+<!-- [Title-Only] -->
+### Show HN: Remotely use my guitar tuner
+
+* Based on the title, this appears to be a Show HN post where someone has created a web-based guitar tuner that can be accessed remotely online. The project likely allows musicians to tune their guitars using their browser, possibly utilizing the device's microphone to detect pitch and provide real-time feedback.
+* This might be interesting to readers because it demonstrates a practical web audio application, showcases creative use of browser APIs (like Web Audio API), and offers a convenient tool for musicians who need quick access to a tuner without installing dedicated software. The "remotely use my guitar tuner" phrasing suggests it might be the creator's actual physical tuner accessible via the web, which would be a unique technical achievement.
+
+### Show HN: 远程使用我的吉他调音器
+
+* 根据标题推测，这是一个 Show HN 帖子，作者创建了一个可以远程在线访问的网页版吉他调音器。该项目可能允许音乐家通过浏览器为吉他调音，可能利用设备的麦克风来检测音高并提供实时反馈。
+* 这个项目值得关注，因为它展示了一个实用的网页音频应用，体现了浏览器 API（如 Web Audio API）的创意使用，并为需要快速访问调音器而不想安装专用软件的音乐家提供了便利工具。标题中"远程使用我的吉他调音器"的措辞暗示这可能是作者的实体调音器通过网络远程访问，这将是一个独特的技术成就。
+
+**[Read Original / 阅读原文](https://realtuner.online/)**
+
+<!-- [Title-Only] -->
+### JSLinux Now Supports x86_64
+
+* Based on the title, this article likely announces that JSLinux - a JavaScript-based PC emulator that runs in web browsers - has been updated to support the x86_64 (64-bit) architecture. JSLinux is created by Fabrice Bellard, known for projects like QEMU and FFmpeg.
+* This is significant because it means the emulator can now run 64-bit operating systems and applications directly in a browser, expanding its capabilities beyond the previous 32-bit x86 support. This could enable running more modern Linux distributions and software, making it interesting for developers, educators, and anyone curious about virtualization technology running entirely in JavaScript.
+
+### JSLinux 现已支持 x86_64 架构
+
+* 根据标题推测，本文可能宣布 JSLinux（一个基于 JavaScript 的 PC 模拟器，可在网页浏览器中运行）已更新支持 x86_64（64 位）架构。JSLinux 由 Fabrice Bellard 创建，他也是 QEMU 和 FFmpeg 等知名项目的作者。
+* 这一更新意义重大，因为该模拟器现在可以直接在浏览器中运行 64 位操作系统和应用程序，超越了之前仅支持 32 位 x86 的限制。这使得运行更现代的 Linux 发行版和软件成为可能，对开发者、教育工作者以及对完全用 JavaScript 实现的虚拟化技术感兴趣的人来说都很有吸引力。
+
+**[Read Original / 阅读原文](https://bellard.org/jslinux/)**
+
+### CLI-Anything - Transform Any Software into Agent-Controllable CLI Tools
+
+* Automatically generates command-line interfaces for any software (GIMP, Blender, LibreOffice, etc.) through a 7-phase pipeline: analyze codebase → design architecture → implement CLI → plan tests → write tests → document → publish
+* Provides structured JSON output for AI agents plus human-readable formats, with built-in REPL, undo/redo, and stateful command groups that integrate directly with real software backends
+* Solves the agent-software gap by replacing fragile UI automation with reliable CLI interfaces - battle-tested with 1,436+ passing tests across 9 major applications, works as a Claude Code plugin with one-command setup
+
+### CLI-Anything - 让任何软件都能被 AI 智能体控制的命令行工具生成器
+
+* 通过 7 阶段自动化流程为任意软件(GIMP、Blender、LibreOffice 等)生成命令行接口:分析代码库 → 设计架构 → 实现 CLI → 规划测试 → 编写测试 → 生成文档 → 发布安装
+* 为 AI 智能体提供结构化 JSON 输出和人类可读格式,内置交互式 REPL、撤销/重做功能和有状态命令组,直接调用真实软件后端实现完整专业功能
+* 解决智能体与软件的鸿沟问题,用可靠的 CLI 接口替代脆弱的 UI 自动化 - 经过 1,436+ 项测试验证覆盖 9 个主流应用,作为 Claude Code 插件一条命令即可使用
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/CLI-Anything)**
+
+### 🎬 Claude Code Skills Just Got a MASSIVE Upgrade
+**Channel:** Chase AI
+
+* What the video covers: This video explores the latest major improvements to Claude's coding capabilities, demonstrating how these upgrades enhance AI-assisted development workflows
+* Key topics discussed: New features in Claude's code generation and understanding abilities, practical applications for developers, how these improvements compare to previous versions, and real-world use cases for building projects
+* Why it's worth watching: Essential viewing for developers and AI enthusiasts who want to stay current with Claude's evolving capabilities and learn how to leverage these new features for more efficient coding and project development
+
+---
+
+### 🎬 Claude 代码技能获得重大升级
+**频道:** Chase AI
+
+* 视频内容概述: 本视频深入探讨了 Claude 编码能力的最新重大改进,展示这些升级如何增强 AI 辅助开发工作流程
+* 主要话题: Claude 代码生成和理解能力的新功能、开发者的实际应用场景、与之前版本的对比改进,以及构建项目的真实用例
+* 为何值得观看: 对于想要了解 Claude 不断演进能力并学习如何利用这些新功能提高编码和项目开发效率的开发者和 AI 爱好者来说,这是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UxfeF4bSBYI)**
 
