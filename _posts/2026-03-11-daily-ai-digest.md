@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 11, 2026"
 date: 2026-03-11
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，11个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -785,4 +785,159 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 无论是寻求方向的初学者还是希望更新2026年技能的经验开发者都值得观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=-4e3ewcTupM)**
+
+<!-- [Title-Only] -->
+### Building a TB-303 from Scratch
+
+* Based on the title, this article likely covers a technical tutorial on recreating the iconic Roland TB-303 bass synthesizer, either as a hardware build, software emulation, or sound design guide
+* This would be interesting to electronic music producers, synthesizer enthusiasts, and DIY electronics hobbyists who want to understand the legendary acid house sound that defined genres like techno and acid house in the late 1980s and early 1990s
+
+---
+
+### 从零开始制作 TB-303
+
+* 根据标题推测，这篇文章可能是关于重现经典 Roland TB-303 贝斯合成器的技术教程，可能涉及硬件制作、软件模拟或声音设计指南
+* 对于电子音乐制作人、合成器爱好者以及 DIY 电子设备玩家来说很有价值，可以深入了解这台在 1980 年代末和 1990 年代初定义了 Techno 和 Acid House 等音乐流派的传奇设备的声音特性
+
+**[Read Original / 阅读原文](https://loopmaster.xyz/tutorials/tb303-from-scratch)**
+
+### Microsoft BitNet.cpp: Revolutionary 1-bit LLM Inference Framework
+
+* Official inference framework for 1-bit Large Language Models (BitNet b1.58) with optimized kernels for CPU and GPU
+* Achieves dramatic performance improvements: 1.37x-5.07x speedup on ARM CPUs and 2.37x-6.17x on x86 CPUs
+* Reduces energy consumption by 55.4%-82.2% while maintaining lossless inference quality
+* Enables running 100B parameter models on single CPU at human reading speed (5-7 tokens/second)
+* Built on llama.cpp framework with T-MAC lookup table methodologies for efficient computation
+* Supports multiple model families including BitNet, Llama3, and Falcon series from 0.7B to 10B parameters
+* Latest optimization introduces parallel kernels with configurable tiling for additional 1.15x-2.1x speedup
+* Provides comprehensive installation guide with Python 3.9+, CMake 3.22+, and Clang 18+ requirements
+* Includes ready-to-use inference scripts with conversation mode and benchmarking capabilities
+* Available through Hugging Face with official 2B parameter model and online demo
+
+### 微软 BitNet.cpp：革命性的1位大语言模型推理框架
+
+* 1位大语言模型（BitNet b1.58）的官方推理框架，为CPU和GPU提供优化内核
+* 实现显著性能提升：ARM CPU上1.37x-5.07x加速，x86 CPU上2.37x-6.17x加速
+* 在保持无损推理质量的同时，降低55.4%-82.2%的能耗
+* 支持在单个CPU上运行1000亿参数模型，达到人类阅读速度（每秒5-7个token）
+* 基于llama.cpp框架构建，采用T-MAC查找表方法实现高效计算
+* 支持多个模型系列，包括BitNet、Llama3和Falcon系列，参数规模从7亿到100亿
+* 最新优化引入可配置平铺的并行内核，额外提供1.15x-2.1x加速
+* 提供完整安装指南，需要Python 3.9+、CMake 3.22+和Clang 18+
+* 包含即用型推理脚本，支持对话模式和基准测试功能
+* 通过Hugging Face提供，包含官方20亿参数模型和在线演示
+
+**[Read Original / 阅读原文](https://github.com/microsoft/BitNet)**
+
+### TADA: Revolutionary Text-to-Speech System with Zero Hallucinations
+
+* Hume AI open-sources TADA (Text-Acoustic Dual Alignment), a breakthrough LLM-based TTS system that synchronizes text and speech one-to-one
+* Achieves 5x faster generation speed (RTF 0.09) than comparable systems by operating at only 2-3 tokens per second instead of 12.5-75
+* Records zero hallucinations in 1000+ test samples, eliminating skipped or fabricated content through architectural design
+* Delivers competitive voice quality with 4.18/5.0 speaker similarity and 3.78/5.0 naturalness scores on expressive speech datasets
+* Lightweight enough for on-device deployment on mobile phones and edge devices without cloud dependency
+* Supports 10x longer context windows than traditional systems (700 seconds vs 70 seconds in same token budget)
+* Available now with 1B English and 3B multilingual models on HuggingFace and GitHub under open-source license
+* Current limitations include occasional speaker drift in very long generations and reduced language quality in mixed text-speech mode
+* Supports English plus seven additional languages, with larger multilingual models in development
+
+### TADA:零幻觉的革命性文本转语音系统
+
+* Hume AI 开源 TADA(文本-声学双重对齐)系统,这是一个突破性的基于 LLM 的 TTS 系统,实现文本与语音的一对一同步
+* 生成速度比同类系统快 5 倍(实时因子 0.09),每秒仅需 2-3 个 token,而非传统的 12.5-75 个
+* 在 1000 多个测试样本中实现零幻觉,通过架构设计从根本上消除了跳过或虚构内容的问题
+* 语音质量出色,在表现力语音数据集上获得 4.18/5.0 的说话人相似度和 3.78/5.0 的自然度评分
+* 足够轻量,可在手机和边缘设备上本地部署,无需依赖云端
+* 支持比传统系统长 10 倍的上下文窗口(相同 token 预算下 700 秒 vs 70 秒)
+* 现已在 HuggingFace 和 GitHub 上提供 10 亿参数英语模型和 30 亿参数多语言模型,采用开源许可
+* 当前局限包括超长生成时偶尔出现说话人漂移,以及文本-语音混合模式下语言质量下降
+* 支持英语及其他七种语言,更大规模的多语言模型正在开发中
+
+**[Read Original / 阅读原文](https://www.hume.ai/blog/opensource-tada)**
+
+### Superpowers - An Agentic Skills Framework for AI Coding Agents
+
+* **What it does**: A complete software development workflow system that transforms AI coding agents into disciplined developers. Instead of jumping straight into code, agents first clarify requirements through conversation, create digestible design specs, build detailed implementation plans, and execute through autonomous subagent-driven development with built-in testing and review cycles.
+
+* **Key features**: Composable skills library covering the full dev lifecycle - brainstorming (Socratic design refinement), test-driven development (RED-GREEN-REFACTOR enforcement), systematic debugging (4-phase root cause analysis), git worktree management, subagent-driven development with two-stage reviews, and automated code review workflows. Supports Claude Code, Cursor, Codex, OpenCode, and Gemini CLI with marketplace integration.
+
+* **Why it's notable**: Gained 1,477 stars today by solving a critical problem - AI agents that write code without understanding requirements or following best practices. Enforces TDD, YAGNI, and DRY principles through mandatory workflows rather than suggestions. Enables Claude to work autonomously for hours without deviating from approved plans, turning chaotic AI coding into structured engineering.
+
+---
+
+### Superpowers - AI 编码代理的技能框架
+
+* **功能介绍**: 为 AI 编码代理提供完整的软件开发工作流系统。代理不会直接开始写代码,而是先通过对话明确需求,创建易读的设计规范,构建详细的实施计划,然后通过自主的子代理驱动开发流程执行任务,内置测试和审查循环。
+
+* **主要特点**: 可组合的技能库覆盖完整开发生命周期 - 头脑风暴(苏格拉底式设计优化)、测试驱动开发(强制执行红-绿-重构循环)、系统化调试(四阶段根因分析)、Git 工作树管理、带两阶段审查的子代理驱动开发、自动化代码审查工作流。支持 Claude Code、Cursor、Codex、OpenCode 和 Gemini CLI,集成插件市场。
+
+* **为何值得关注**: 今日获得 1,477 星标,解决了 AI 代理在不理解需求或不遵循最佳实践的情况下编写代码的关键问题。通过强制性工作流(而非建议)执行 TDD、YAGNI 和 DRY 原则。使 Claude 能够在不偏离已批准计划的情况下自主工作数小时,将混乱的 AI 编码转变为结构化工程。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Fish Speech - State-of-the-Art Open Source Text-to-Speech System
+
+* A production-ready TTS system trained on 10M+ hours of audio across ~50 languages, using a Dual-Autoregressive architecture with reinforcement learning alignment to generate natural, emotionally expressive speech
+* Fine-grained prosody control via natural language tags (`[laugh]`, `[whisper]`), rapid voice cloning from 10-30s samples, native multi-speaker/multi-turn generation, and industry-leading benchmark performance (0.54% WER Chinese, 0.99% English, 81.88% win rate on EmergentTTS-Eval)
+* Outperforms both open and closed-source competitors with efficient streaming inference (RTF 0.195, ~100ms latency on H200 GPU), multilingual support without phoneme preprocessing, and seamless SGLang integration for production deployment
+
+### Fish Speech - 最先进的开源文本转语音系统
+
+* 基于超过1000万小时、约50种语言的音频训练的生产级TTS系统,采用双自回归架构结合强化学习对齐,生成自然且富有情感表现力的语音
+* 通过自然语言标签实现细粒度韵律控制(`[laugh]`、`[whisper]`),支持10-30秒样本快速声音克隆、原生多说话人/多轮对话生成,基准测试性能业界领先(中文WER 0.54%、英文0.99%、EmergentTTS-Eval胜率81.88%)
+* 在开源和闭源竞品中表现最优,具备高效流式推理能力(H200 GPU上RTF 0.195、延迟约100ms)、无需音素预处理的多语言支持,以及与SGLang的无缝集成用于生产部署
+
+**[View Repository / 查看仓库](https://github.com/fishaudio/fish-speech)**
+
+### 🎬 Our brains need to relax sometime - so find a way that works for you
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Mike shares his personal approach to mental relaxation and stress management, using familiar computer games as his go-to method for unwinding
+* Key topics discussed: The importance of giving your brain downtime, finding personalized relaxation techniques that work for you, balancing productivity with mental health, and how repetitive/familiar activities can provide cognitive rest
+* Why it's worth watching: Especially relevant for developers and tech professionals who often experience burnout; offers a relatable, practical perspective on self-care from someone in the coding community rather than generic wellness advice
+
+---
+
+### 🎬 大脑需要放松 - 找到适合你的方式
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Mike 分享了他个人的心理放松和压力管理方法,通过玩熟悉的电脑游戏来放松身心
+* 主要话题: 给大脑休息时间的重要性、寻找适合自己的个性化放松技巧、平衡生产力与心理健康、以及熟悉的重复性活动如何提供认知休息
+* 为何值得观看: 特别适合经常经历倦怠的开发者和技术从业者;来自编程社区内部人士提供的实用自我关怀视角,而非泛泛的健康建议
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lnycGFq8JQI)**
+
+### 🎬 What to do if you're worried about AI
+**Channel:** Lenny's Podcast
+
+* Addresses concerns and anxieties people have about artificial intelligence and its impact on their careers and lives
+* Discusses the future of work in the age of AI, exploring how professionals can adapt and thrive
+* Provides practical advice and frameworks for navigating AI-driven changes in the workplace
+* Worth watching for anyone feeling uncertain about AI's role in their professional future, offering actionable strategies rather than just theoretical discussion
+
+### 🎬 如果你担心人工智能该怎么办
+**频道:** Lenny's Podcast
+
+* 探讨人们对人工智能及其对职业和生活影响的担忧和焦虑
+* 讨论人工智能时代的工作未来,探索专业人士如何适应和发展
+* 提供实用建议和框架,帮助应对人工智能驱动的职场变化
+* 值得观看,因为它为对人工智能在职业未来中的角色感到不确定的人提供可行的策略,而不仅仅是理论讨论
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1E0Sd4JEqpA)**
+
+### 🎬 CI/CD in Production with Jenkins – Complete DevOps Course
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive CI/CD course that progresses from foundational concepts to production-grade implementations using Jenkins
+* Key topics discussed: Jenkins setup and configuration, continuous integration and continuous deployment pipelines, DevOps best practices, and real-world production scenarios
+* Why it's worth watching: This is a complete end-to-end course from freeCodeCamp that takes learners through the entire journey of implementing CI/CD in production environments, making it ideal for developers looking to master DevOps practices with Jenkins
+
+### 🎬 使用 Jenkins 的生产环境 CI/CD – 完整 DevOps 课程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 一门全面的 CI/CD 课程,从基础概念逐步深入到使用 Jenkins 实现生产级别的部署
+* 主要话题: Jenkins 安装配置、持续集成与持续部署流水线、DevOps 最佳实践以及真实的生产环境场景
+* 为何值得观看: 这是 freeCodeCamp 提供的完整端到端课程,带领学习者完整掌握在生产环境中实施 CI/CD 的全过程,非常适合想要精通 Jenkins DevOps 实践的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uHNOqKdqQas)**
 
