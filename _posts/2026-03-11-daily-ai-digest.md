@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 11, 2026"
 date: 2026-03-11
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -681,4 +681,108 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 该项目展示了构建符合个人工作流程的工具的价值,而非妥协使用现有解决方案
 
 **[Read Original / 阅读原文](https://blog.jsbarretto.com/post/text-editor)**
+
+### Debunking AI Hysteria: A Reality Check on Technology Progress
+
+* The title is satirical - the author is mocking the fear-mongering rhetoric around AI agents and productivity anxiety
+* Social media has become toxic with fear-based messaging claiming you'll fall behind without constant AI adoption
+* AI is not magical but simply a continuation of exponential technological progress we've experienced for decades
+* AI fundamentally remains search and optimization - the same computational concepts taught in computer science classes
+* Jobs focused on creating unnecessary complexity for others (rent-seeking) are vulnerable, but due to market consolidation rather than AI replacement
+* The real solution is avoiding zero-sum thinking and focusing on creating genuine value for others
+* Success comes from contributing more value than you consume, not from endless competitive escalation
+
+### 揭穿AI恐慌：对技术进步的现实审视
+
+* 标题是讽刺性的 - 作者在嘲笑围绕AI代理和生产力焦虑的恐慌言论
+* 社交媒体变得有毒，充斥着基于恐惧的信息，声称不持续采用AI就会落后
+* AI并非魔法，而是我们几十年来经历的指数级技术进步的延续
+* AI本质上仍然是搜索和优化 - 与计算机科学课程中教授的概念相同
+* 专注于为他人制造不必要复杂性的工作（寻租行为）容易受到冲击，但这是由于市场整合而非AI替代
+* 真正的解决方案是避免零和思维，专注于为他人创造真正的价值
+* 成功来自于贡献比消费更多的价值，而不是无休止的竞争升级
+
+**[Read Original / 阅读原文](https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html)**
+
+### Why AI Overuses Terminal Commands: A Critical Analysis
+
+* AI systems like ChatGPT, Claude, and Grok heavily favor Terminal commands over GUI applications when troubleshooting Mac problems
+* This preference stems from LLMs being built on text tokens, making command-line instructions easier to verbalize than GUI workflows
+* Terminal commands lack built-in safeguards, can cause system damage, generate overwhelming output, and create security risks through malicious copy-paste exploits
+* Analysis of ChatGPT's malware detection advice reveals five flawed Terminal commands that fail to accomplish their stated purposes
+* Commands included overly broad log queries returning 1,505 entries, attempts to access year-old logs that don't exist, and useless verification methods
+* Two recommended procedures could be easily performed through GUI apps (System Information instead of system_profiler), yet AI insisted on command-line alternatives
+* This approach fails to educate users, doesn't build understanding, and trains people to blindly execute potentially dangerous commands
+
+### 为什么AI过度使用终端命令：批判性分析
+
+* ChatGPT、Claude和Grok等AI系统在解决Mac问题时严重偏向终端命令而非GUI应用程序
+* 这种偏好源于大语言模型基于文本标记构建，使命令行指令比GUI工作流程更容易用语言表达
+* 终端命令缺乏内置安全保护，可能造成系统损坏、产生大量输出，并通过恶意复制粘贴创建安全风险
+* 对ChatGPT恶意软件检测建议的分析揭示了五个有缺陷的终端命令，都无法完成其声称的目的
+* 命令包括返回1,505条条目的过于宽泛的日志查询、试图访问不存在的一年前日志，以及无用的验证方法
+* 两个推荐程序本可通过GUI应用轻松完成（系统信息而非system_profiler），但AI仍坚持使用命令行替代方案
+* 这种方法无法教育用户，不能建立理解，并训练人们盲目执行潜在危险的命令
+
+**[Read Original / 阅读原文](https://eclecticlight.co/2026/03/11/why-does-ai-tell-you-to-use-terminal-so-much/)**
+
+### PiClaw: Docker-Based Pi Coding Agent Platform
+
+* Docker-containerized sandbox running Pi Coding Agent in isolated Debian environment with web-first orchestrator
+* Streaming web UI with real-time token updates, Markdown/KaTeX/Mermaid rendering, and mobile-friendly design
+* Built-in workspace explorer with file tree sidebar, drag-drop uploads, and folder-size visualization
+* Integrated CodeMirror 6 editor supporting 12 programming languages with search/replace functionality
+* Persistent SQLite storage for messages, media, tasks, and encrypted keychain management
+* Authentication via WebAuthn passkeys with TOTP fallback, plus optional WhatsApp integration
+* Quick setup with `make build && make up`, accessible at localhost:8080
+* Configurable via environment variables for ports, authentication, proxy settings, and assistant naming
+* Development workflow includes linting, testing with Bun runner, and CI/CD with multi-arch Docker builds
+* Compatible with Docker, Podman, nerdctl, and Apple Containers runtimes
+
+### PiClaw：基于Docker的Pi编程代理平台
+
+* 在隔离的Debian环境中运行Pi编程代理的Docker容器化沙箱，配备Web优先的编排器
+* 流式Web界面，支持实时令牌更新、Markdown/KaTeX/Mermaid渲染和移动端友好设计
+* 内置工作区资源管理器，包含文件树侧边栏、拖拽上传和文件夹大小可视化功能
+* 集成CodeMirror 6编辑器，支持12种编程语言的语法高亮和搜索替换功能
+* 基于SQLite的持久化存储，管理消息、媒体、任务和加密密钥链
+* 通过WebAuthn密钥认证配合TOTP备用方案，另可选WhatsApp集成
+* 快速部署：`make build && make up`，通过localhost:8080访问
+* 通过环境变量配置端口、认证、代理设置和助手命名等选项
+* 开发工作流包括代码检查、Bun测试运行器和多架构Docker构建的CI/CD
+* 兼容Docker、Podman、nerdctl和Apple Containers等运行时环境
+
+**[Read Original / 阅读原文](https://github.com/rcarmo/piclaw)**
+
+### PUA - AI Coding Agent Skill Plugin with Corporate PUA Tactics
+
+* An AI coding agent skill plugin that uses Chinese and Western corporate PUA (pressure/manipulation) tactics to drive AI agents to exhaust all solutions before giving up
+* Key features: PUA rhetoric to prevent AI from giving up, systematic debugging methodology, proactive behavior enforcement that makes AI take initiative rather than wait passively
+* Why it's notable: Addresses the "five lazy modes" of AI (brute force retry, blame shifting, tool idleness, procrastination, passive waiting) with a 4-level pressure escalation system and shows measurable improvements in debugging persistence (+36% fix rate, +65% verification, +50% hidden issue discovery)
+
+### PUA - 使用大厂PUA话术驱动AI编程助手的技能插件
+
+* 一个AI编程助手技能插件，使用中西方大厂PUA话术驱动AI穷尽所有方案才允许放弃
+* 主要特点：PUA话术让AI不敢放弃、系统化调试方法论、能动性鞭策让AI主动出击而非被动等待
+* 为何值得关注：针对AI的"五大偷懒模式"（暴力重试、甩锅用户、工具闲置、磨洋工、被动等待）提供4级压力升级系统，实测数据显示调试持久力显著提升（修复点数+36%，验证次数+65%，隐藏问题发现率+50%）
+
+**[View Repository / 查看仓库](https://github.com/tanweai/pua)**
+
+### 🎬 Web Development Roadmap 2026 (No BS Guide!)
+**Channel:** CodeWithHarry
+
+* Provides a comprehensive, no-nonsense roadmap for web development in 2026
+* Covers the essential technologies, frameworks, and skills needed to become a successful web developer
+* Offers practical guidance on learning paths, avoiding common pitfalls, and staying current with industry trends
+* Worth watching for both beginners seeking direction and experienced developers looking to update their skillset for 2026
+
+### 🎬 2026年网页开发路线图（无废话指南！）
+**频道:** CodeWithHarry
+
+* 提供2026年网页开发的全面、直接的学习路线图
+* 涵盖成为成功网页开发者所需的核心技术、框架和技能
+* 提供学习路径的实用指导，帮助避免常见陷阱，并跟上行业趋势
+* 无论是寻求方向的初学者还是希望更新2026年技能的经验开发者都值得观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-4e3ewcTupM)**
 
