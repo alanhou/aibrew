@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 11, 2026"
 date: 2026-03-11
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -603,4 +603,82 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 基于Docker的部署使任何人都能使用复杂的OSINT功能
 
 **[View Repository / 查看仓库](https://github.com/BigBodyCobain/Shadowbroker)**
+
+### Zig Programming Language Development Updates
+
+* Matthew Lugg merged a massive 30,000-line PR reworking the compiler's internal type resolution logic after 2-3 months of work
+* The compiler now uses lazy type analysis - it only analyzes type fields when the type is actually initialized, reducing unnecessary code compilation
+* Dependency loop error messages are now detailed and helpful, showing exactly where circular dependencies occur with clear traces
+* Incremental compilation received major improvements, fixing numerous bugs and eliminating "over-analysis" problems for significantly faster builds
+* The PR includes dozens of bugfixes, minor language changes, and compiler performance improvements
+* Andrew Kelley announced that `std.Io.Evented` is now available for experimentation in the 0.16.0 release cycle
+* The evented I/O system is based on userspace stack switching (fibers/green threads/stackful coroutines)
+* Zig is approaching the ability to effortlessly swap I/O implementations in code, though the feature is still experimental
+* Important follow-up work is needed before evented I/O can be used reliably in production
+
+### Zig 编程语言开发更新
+
+* Matthew Lugg 合并了一个包含 30,000 行代码的大型 PR,经过 2-3 个月的工作重构了编译器的内部类型解析逻辑
+* 编译器现在采用惰性类型分析 - 仅在类型实际初始化时才分析类型字段,减少不必要的代码编译
+* 依赖循环错误消息现在详细且有帮助,能清晰显示循环依赖的确切位置和追踪信息
+* 增量编译获得重大改进,修复了大量 bug 并消除了"过度分析"问题,显著提升构建速度
+* 该 PR 包含数十个 bug 修复、小型语言改动和编译器性能优化
+* Andrew Kelley 宣布 `std.Io.Evented` 现已在 0.16.0 版本周期中可供实验使用
+* 事件驱动 I/O 系统基于用户空间栈切换(纤程/绿色线程/有栈协程)
+* Zig 正在接近能够在代码中轻松切换 I/O 实现的目标,但该功能仍处于实验阶段
+* 在事件驱动 I/O 能够可靠用于生产环境之前,还需要完成重要的后续工作
+
+**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-03-10)**
+
+### Julia Snail: REPL-Driven Development Environment for Emacs
+
+* Emacs package inspired by SLIME and CIDER that enables dynamic REPL-driven Julia development
+* Uses high-performance terminal emulators (libvterm or Eat) for native Julia REPL display with minimal glitches
+* Provides bidirectional bridge between Emacs and Julia REPL for code introspection and interactive loading
+* Supports remote Julia sessions via SSH/Tramp, Docker containers, and multiple concurrent REPLs
+* Integrates with Emacs xref for jump-to-definition and completion-at-point for intelligent code completion
+* Uses CSTParser for full Julia syntax awareness and module-context understanding
+* Displays multimedia output and plots from packages like Plots and Gadfly in graphical Emacs
+* Requires Julia >1.6.0 and Emacs 26.2+ (for vterm) or 28.1+ (for Eat)
+* Available on MELPA with automatic Julia dependency management via LOAD_PATH
+* Configurable via use-package with customization options for display behavior, eval results, and Imenu integration
+
+### Julia Snail:Emacs 的 REPL 驱动开发环境
+
+* 受 SLIME 和 CIDER 启发的 Emacs 包,支持动态 REPL 驱动的 Julia 开发
+* 使用高性能终端模拟器(libvterm 或 Eat)显示原生 Julia REPL,减少显示故障
+* 在 Emacs 和 Julia REPL 之间提供双向桥接,支持代码内省和交互式加载
+* 支持通过 SSH/Tramp 连接远程 Julia 会话、Docker 容器和多个并发 REPL
+* 集成 Emacs xref 实现跳转到定义,集成 completion-at-point 实现智能代码补全
+* 使用 CSTParser 进行完整的 Julia 语法识别和模块上下文理解
+* 在图形化 Emacs 中显示 Plots 和 Gadfly 等包的多媒体输出和图表
+* 需要 Julia >1.6.0 和 Emacs 26.2+(vterm)或 28.1+(Eat)
+* 可通过 MELPA 安装,通过 LOAD_PATH 自动管理 Julia 依赖
+* 可通过 use-package 配置,支持自定义显示行为、求值结果和 Imenu 集成
+
+**[Read Original / 阅读原文](https://github.com/gcv/julia-snail)**
+
+### Building a Custom Text Editor: A Developer's Journey
+
+* Author spent 2 years developing their own text editor after dissatisfaction with existing options including Howl, Helix, VS Code, Vim, and 10+ others
+* Started with minimal scope: no configurability, basic performance, limited Unicode support, and syntax highlighting only for frequently-used languages
+* Key success strategy: daily-driving the editor from early stages, replacing nano for all tasks and documenting every issue immediately
+* Development accelerated dramatically after adopting dogfooding approach: ~10k lines of code written in just 6 months
+* Cursor manipulation proved surprisingly complex, requiring careful implementation of primitive operations and undo/redo grouping
+* File browser implementation focused on simplicity: ranking by prefix match, substring match, and recent modification time achieved 95% accuracy within 2 keystrokes
+* Built custom regex engine with context-sensitivity support, progressively optimized through AST optimization, prefix discovery, threaded code VM, and CPS conversion
+* Project demonstrates value of building tools tailored to personal workflow rather than compromising with existing solutions
+
+### 构建自定义文本编辑器:开发者的实践之旅
+
+* 作者在对现有编辑器(包括 Howl、Helix、VS Code、Vim 等 10 多款)不满后,花费 2 年时间开发自己的文本编辑器
+* 起步阶段采用最小化范围:无可配置性、基础性能、有限的 Unicode 支持,仅为常用语言提供语法高亮
+* 关键成功策略:从早期阶段就日常使用该编辑器,用它替代 nano 完成所有任务,并立即记录每个问题
+* 采用"吃自己的狗粮"方法后开发速度显著加快:仅 6 个月就编写了约 1 万行代码
+* 光标操作实现出乎意料地复杂,需要仔细实现原始操作和撤销/重做分组
+* 文件浏览器实现注重简洁:通过前缀匹配、子串匹配和最近修改时间排序,在 2 次按键内达到 95% 的准确率
+* 构建了支持上下文敏感的自定义正则表达式引擎,通过 AST 优化、前缀发现、线程代码虚拟机和 CPS 转换逐步优化性能
+* 该项目展示了构建符合个人工作流程的工具的价值,而非妥协使用现有解决方案
+
+**[Read Original / 阅读原文](https://blog.jsbarretto.com/post/text-editor)**
 
