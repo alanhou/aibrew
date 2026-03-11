@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 11, 2026"
 date: 2026-03-11
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -477,4 +477,130 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看，适合对AI驱动的编程工具和连接AI代理与系统控制的终端创新感兴趣的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8oLP8oxqtOE)**
+
+### The Mystery of Unicode Symbol ⍼ Solved: It's Azimuth
+
+* Wikipedia user Moyogo discovered that the Unicode symbol ⍼ (U+237C) represents "azimuth" or "direction angle" based on H. Berthold AG's 1950 symbol catalogue
+* Historical research through Berthold type foundry catalogues from 1900-1952 shows the symbol first appeared between 1946-1949
+* The symbol appears in catalogues from 1949-1952 but is absent from earlier editions (1900, 1909, 1946)
+* The glyph's design resembles how light rays pass through a sextant when measuring azimuth angles
+* This discovery resolves a long-standing mystery about the meaning and origin of this obscure Unicode mathematical symbol
+
+### Unicode符号⍼之谜揭晓：它代表方位角
+
+* 维基百科用户Moyogo根据H. Berthold AG 1950年符号目录发现Unicode符号⍼ (U+237C)代表"方位角"或"方向角"
+* 通过研究Berthold字体铸造厂1900-1952年的历史目录，发现该符号首次出现在1946-1949年间
+* 该符号出现在1949-1952年的目录中，但在更早的版本(1900年、1909年、1946年)中并未出现
+* 该字形的设计类似于光线通过六分仪测量方位角时的路径
+* 这一发现解决了这个晦涩Unicode数学符号的含义和起源之谜
+
+**[Read Original / 阅读原文](https://ionathan.ch/2026/02/16/angzarr.html)**
+
+### Cloudflare Browser Rendering Introduces Single-Call Website Crawling API
+
+* New `/crawl` endpoint in open beta allows crawling entire websites with one API call
+* Asynchronous job processing - submit URL, get job ID, check back for results
+* Multiple output formats supported: HTML, Markdown, and structured JSON via Workers AI
+* Perfect for AI model training, RAG pipelines, and content monitoring/research
+* Configurable crawl scope with depth limits, page limits, and URL pattern filtering
+* Automatic page discovery through sitemaps and page links
+* Incremental crawling capabilities using `modifiedSince` and `maxAge` parameters
+* Static mode option (`render: false`) for faster crawling of static sites without browser rendering
+* Respects `robots.txt` directives and crawl-delay settings for ethical crawling
+* Available on both Workers Free and Paid plans
+
+### Cloudflare 浏览器渲染推出单次调用网站爬取 API
+
+* 开放测试版新增 `/crawl` 端点，支持单次 API 调用爬取整个网站
+* 异步任务处理 - 提交 URL，获取任务 ID，稍后查看结果
+* 支持多种输出格式：HTML、Markdown 和通过 Workers AI 生成的结构化 JSON
+* 非常适合 AI 模型训练、RAG 管道构建以及内容监控研究
+* 可配置爬取范围，包括深度限制、页面限制和 URL 模式过滤
+* 通过站点地图和页面链接自动发现页面
+* 支持增量爬取，使用 `modifiedSince` 和 `maxAge` 参数跳过未更改内容
+* 静态模式选项（`render: false`）可在不启动浏览器渲染的情况下快速爬取静态网站
+* 遵守 `robots.txt` 指令和爬取延迟设置，实现道德爬取
+* 在 Workers 免费版和付费版计划中均可使用
+
+**[Read Original / 阅读原文](https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/)**
+
+### X.com Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) indicating a technical issue
+* The page displays a generic error message encouraging users to try again
+* Contains a "Try again" button for users to refresh or retry their action
+* Includes a warning about privacy-related browser extensions potentially causing conflicts
+* The HTML structure uses Twitter's CSS class naming conventions (css-* and r-* prefixes)
+* Features minimal content with an emoji warning icon and basic troubleshooting guidance
+
+### X.com 错误页面分析
+
+* 这是来自 X.com（前 Twitter）的错误页面，显示技术问题
+* 页面显示通用错误消息，鼓励用户重试
+* 包含"重试"按钮供用户刷新或重新执行操作
+* 包含关于隐私相关浏览器扩展可能导致冲突的警告
+* HTML 结构使用 Twitter 的 CSS 类命名约定（css-* 和 r-* 前缀）
+* 内容简洁，包含表情符号警告图标和基本故障排除指导
+
+**[Read Original / 阅读原文](https://twitter.com/rebane2001/status/2031037389347406054)**
+
+### twitter-cli - Terminal-first Twitter/X CLI without API keys
+
+* A Python CLI tool that lets you read Twitter/X feeds, bookmarks, and user profiles directly from your terminal without needing API keys
+* Key features include timeline reading (For You/Following), bookmark management, tweet search, user lookup, posting/deleting tweets, and structured YAML/JSON output for scripting
+* Notable for its sophisticated anti-detection system using browser cookie extraction, TLS fingerprint impersonation, request timing jitter, and proxy support to avoid rate limiting and bans
+
+### twitter-cli - 无需 API 密钥的终端 Twitter/X 客户端
+
+* 一个 Python 命令行工具，可以直接在终端中读取 Twitter/X 动态、书签和用户资料，无需 API 密钥
+* 主要特点包括时间线读取（推荐/关注）、书签管理、推文搜索、用户查询、发布/删除推文，以及支持 YAML/JSON 结构化输出用于脚本处理
+* 为何值得关注：采用了先进的反风控系统，包括浏览器 Cookie 提取、TLS 指纹伪装、请求时序随机化和代理支持，有效避免频率限制和封号风险
+
+**[View Repository / 查看仓库](https://github.com/jackwener/twitter-cli)**
+
+### ShadowBroker - Real-Time Global Intelligence Dashboard
+* A comprehensive OSINT platform that aggregates live data from dozens of intelligence feeds into a unified dark-ops map interface
+* Tracks aircraft (including private jets), ships, satellites, earthquakes, conflict zones, CCTV networks, GPS jamming, and geopolitical events in real-time
+* Built with Next.js, MapLibre GL, FastAPI, and Python - designed for analysts, researchers, and intelligence enthusiasts who need a single-pane view of global activity
+
+**Key Features:**
+* Aviation tracking with 5,000+ aircraft including military flights and billionaire private jets
+* Maritime monitoring of 25,000+ vessels plus US Navy carrier strike groups
+* Real-time satellite tracking of 2,000+ orbital objects with mission classification
+* Live conflict monitoring via GDELT events and Ukraine frontline data
+* High-resolution satellite imagery with NASA GIBS and Sentinel-2 integration
+* Software-defined radio network with 500+ KiwiSDR receivers
+* CCTV surveillance mesh covering major cities worldwide
+* GPS jamming detection and signal intelligence capabilities
+* Environmental monitoring including NASA fire hotspots and space weather
+
+**Why It's Notable:**
+* Democratizes access to intelligence data typically available only to government agencies
+* Impressive technical achievement aggregating 15+ real-time data sources
+* Growing community interest (1,414 stars) in open-source intelligence tools
+* Docker-based deployment makes sophisticated OSINT capabilities accessible to anyone
+
+### ShadowBroker - 实时全球情报仪表板
+* 综合性开源情报平台，将数十个情报源的实时数据聚合到统一的暗黑作战地图界面中
+* 实时追踪飞机（包括私人飞机）、船舶、卫星、地震、冲突区域、监控摄像头网络、GPS干扰和地缘政治事件
+* 使用 Next.js、MapLibre GL、FastAPI 和 Python 构建，专为需要全球活动单一视图的分析师、研究人员和情报爱好者设计
+
+**主要特点:**
+* 航空追踪覆盖5000+架飞机，包括军用飞机和亿万富翁私人飞机
+* 海事监控25000+艘船舶，外加美国海军航母打击群
+* 实时卫星追踪2000+轨道物体，按任务类型分类
+* 通过GDELT事件和乌克兰前线数据进行实时冲突监控
+* 集成NASA GIBS和Sentinel-2的高分辨率卫星图像
+* 拥有500+个KiwiSDR接收器的软件定义无线电网络
+* 覆盖全球主要城市的监控摄像头网络
+* GPS干扰检测和信号情报能力
+* 环境监测包括NASA火灾热点和空间天气
+
+**为何值得关注:**
+* 将通常只有政府机构才能获得的情报数据民主化
+* 聚合15+个实时数据源的令人印象深刻的技术成就
+* 开源情报工具领域日益增长的社区关注度（1,414星标）
+* 基于Docker的部署使任何人都能使用复杂的OSINT功能
+
+**[View Repository / 查看仓库](https://github.com/BigBodyCobain/Shadowbroker)**
 
