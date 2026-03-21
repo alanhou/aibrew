@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 21, 2026"
 date: 2026-03-21
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 5 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，5个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -148,103 +148,6 @@ pin: false
 * What the video covers: A demonstration of Blackbox AI, an AI-powered coding assistant that helps developers write code more efficiently
 * Key topics discussed: Code generation capabilities, code explanation features, and how Blackbox AI streamlines the development workflow
 * Why it's worth watching: Learn how AI tools can accelerate your coding process and improve code quality through automated assistance
-
----
-
-### 🎬 订阅获取更多编程技巧⬆️ #BlackboxAI #AI工具 #编程AI #开发者工具 #编程 #科技AI
-**频道:** Codewithpoornima
-
-* 视频内容概述: 展示 Blackbox AI 这款 AI 驱动的编程助手如何帮助开发者更高效地编写代码
-* 主要话题: 代码生成功能、代码解释特性，以及 Blackbox AI 如何简化开发工作流程
-* 为何值得观看: 了解 AI 工具如何通过自动化辅助加速编程过程并提升代码质量
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kG89yZ379BQ)**
-
-<!-- [Title-Only] -->
-### OpenCode – Open Source AI Coding Agent
-
-* Based on the title, this article likely introduces OpenCode, an open-source AI-powered coding assistant or agent that helps developers write, debug, or optimize code
-* This would be interesting to readers because open-source AI coding tools democratize access to advanced development assistance, allowing developers to understand how these systems work, customize them for specific needs, and contribute to their improvement without vendor lock-in
-
-### OpenCode – 开源 AI 编程助手
-
-* 根据标题推测，这篇文章可能介绍 OpenCode，一个开源的 AI 驱动编程助手或代理，可以帮助开发者编写、调试或优化代码
-* 值得关注的原因是开源 AI 编程工具让更多开发者能够使用先进的开发辅助功能，同时可以了解这些系统的工作原理，根据特定需求进行定制，并参与改进，而不受供应商限制
-
-**[Read Original / 阅读原文](https://opencode.ai/)**
-
-### Mamba-3: Inference-First State Space Model Architecture
-
-* Mamba-3 shifts focus from training efficiency to inference optimization, addressing the growing demand from post-training, RLVR, and agentic workflows
-* Three core improvements: exponential-trapezoidal discretization for richer recurrence, complex-valued SSM systems for better state tracking, and MIMO SSMs for parallel processing
-* Architecture changes include adding QKNorm for stability, removing short convolution (replaced by internal convolution-like mechanisms), adding RoPE and MIMO projections
-* Outperforms Mamba-2 and linear attention alternatives like GDN on language modeling tasks across various scales
-* MIMO variant boosts accuracy by 1+ percentage points at 1B scale with longer training but no inference latency increase
-* Naturally underperforms Transformers on retrieval tasks due to fixed-size state, suggesting hybrid models combining linear layers with self-attention are the future direction
-* Open-sourced kernels to facilitate adoption and development
-
-### Mamba-3:推理优先的状态空间模型架构
-
-* Mamba-3将重点从训练效率转向推理优化,以应对后训练、RLVR和智能体工作流日益增长的需求
-* 三大核心改进:指数梯形离散化方案实现更丰富的递归、复值SSM系统增强状态跟踪能力、MIMO SSM实现并行处理
-* 架构变化包括添加QKNorm提升稳定性、移除短卷积(由内部类卷积机制替代)、添加RoPE和MIMO投影
-* 在各种规模的语言建模任务上优于Mamba-2和GDN等线性注意力替代方案
-* MIMO变体在1B规模上准确率提升1个百分点以上,训练时间更长但推理延迟不增加
-* 由于固定大小状态,在检索任务上自然弱于Transformer,表明结合线性层和自注意力的混合模型是未来方向
-* 开源内核以促进采用和开发
-
-**[Read Original / 阅读原文](https://www.together.ai/blog/mamba-3)**
-
-### Molly Guard: A Safety Mechanism in Computing
-
-* A "molly guard" is a plastic safety cover that must be moved before pressing an important button, preventing accidental activation
-* Named after Molly, an engineer's daughter who pressed a big red button in a datacenter twice in one day
-* Common in military aircraft controls and civilian hardware (recessed buttons, plastic ridges, SIM card ejection holes requiring special tools)
-* Software equivalents include "are you sure?" dialogs and modifier key combinations like Ctrl+Alt+Del
-* "Reverse molly guards" are buttons that auto-press if no action is taken, preventing systems from waiting indefinitely for user input
-* Reverse guards solve the frustrating problem of programs halting overnight while waiting for responses to unimportant prompts
-
-### Molly Guard:计算机中的安全机制
-
-* "Molly Guard"(莫莉护罩)是指按下重要按钮前必须移开的塑料安全盖,用于防止误操作
-* 得名于工程师的女儿Molly,她在数据中心一天内两次按下大红按钮
-* 常见于军用飞机控制装置和民用硬件(凹陷按钮、按键周围的塑料凸起、需要专用工具的SIM卡弹出孔)
-* 软件中的等效设计包括"确定吗?"对话框和组合键(如Ctrl+Alt+Del)
-* "反向莫莉护罩"是指如果用户不采取行动就会自动按下的按钮,防止系统无限期等待用户输入
-* 反向护罩解决了程序整夜停滞、等待不重要提示响应的令人沮丧的问题
-
-**[Read Original / 阅读原文](https://bookofjoe2.blogspot.com/2026/02/molly-guard.html)**
-
-
-## 🔥 GitHub Trending / GitHub 热门项目
-
-### Claude HUD - Real-time visibility plugin for Claude Code sessions
-
-* **What it does**: A Claude Code plugin that displays live session metrics directly in your terminal's status line - showing context usage, active tools, running agents, and todo progress without needing separate windows or tmux
-* **Key features**: Native statusline integration with real-time updates (~300ms), visual progress bars for context and usage limits, git branch tracking with dirty/ahead/behind indicators, tool/agent/todo activity monitoring, and highly customizable display options (3 presets + granular controls)
-* **Why it's notable**: Gained 1,068 stars today by solving a critical visibility gap in Claude Code - developers can now see exactly what's happening under the hood (context consumption, API rate limits, subagent activity) before hitting limits, with zero UI overhead using Claude Code's native API
-
-### Claude HUD - Claude Code 实时会话监控插件
-
-* **功能介绍**: 一个 Claude Code 插件，在终端状态栏实时显示会话指标 - 包括上下文使用率、活跃工具、运行中的代理和待办事项进度，无需额外窗口或 tmux
-* **主要特点**: 原生状态栏集成，实时更新（约300毫秒），上下文和使用限制的可视化进度条，Git 分支跟踪（含未提交/领先落后状态），工具/代理/待办事项活动监控，高度可定制的显示选项（3种预设+细粒度控制）
-* **为何值得关注**: 今日获得 1,068 星标，解决了 Claude Code 的关键可见性问题 - 开发者现在可以在达到限制之前清楚看到底层运行情况（上下文消耗、API 速率限制、子代理活动），使用 Claude Code 原生 API 实现零 UI 开销
-
-**[View Repository / 查看仓库](https://github.com/jarrodwatts/claude-hud)**
-
-### Open SWE - Open-Source Framework for Building Internal Coding Agents
-
-* **What it does**: An open-source framework that enables organizations to build their own internal coding agents (Slackbots, CLIs, web apps) that can autonomously handle software engineering tasks like bug fixes, feature implementations, and code reviews.
-
-* **Key features**: 
-  - Built on LangGraph and Deep Agents with isolated cloud sandbox environments (Modal, Daytona, Runloop, LangSmith)
-  - Multi-platform invocation via Slack, Linear, and GitHub comments
-  - Automatic PR creation with GitHub OAuth integration
-  - Subagent orchestration for parallel task execution
-  - Curated toolset (~15 tools) including shell execution, file operations, and API integrations
-  - Real-time messaging support - can receive follow-up instructions mid-task
-
-* **Why it's notable**: Replicates the internal coding agent architecture used by elite engineering organizations like Stripe, Ramp, and Coinbase, making enterprise-grade autonomous coding capabilities accessible to any development team. With 635 stars today, it represents a significant shift toward democratizing AI-powered software engineering workflows that were previously only available to well-resourced companies.
 
 ---
 
@@ -415,4 +318,168 @@ pin: false
 * 适合对排序算法及其实际应用感兴趣的开发者观看,特别是想要理解图书馆排序独特方法的人——该算法通过在元素之间保持间隙来实现高效插入
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8sbMUTeZ76A)**
+
+<!-- [Title-Only] -->
+### OpenCode – Open Source AI Coding Agent
+
+* Based on the title, this article likely introduces OpenCode, an open-source AI-powered coding assistant or agent that helps developers write, debug, or optimize code
+* This would be interesting to readers because open-source AI coding tools democratize access to advanced development assistance, allowing developers to understand how these systems work, customize them for specific needs, and contribute to their improvement without vendor lock-in
+
+### OpenCode – 开源 AI 编程助手
+
+* 根据标题推测，这篇文章可能介绍 OpenCode，一个开源的 AI 驱动编程助手或智能体，可以帮助开发者编写、调试或优化代码
+* 值得关注的原因是开源 AI 编程工具让更多开发者能够使用先进的开发辅助功能，同时可以了解这些系统的工作原理，根据特定需求进行定制，并参与改进，而不受供应商限制
+
+**[Read Original / 阅读原文](https://opencode.ai/)**
+
+### Mamba-3: Inference-First State Space Model Architecture
+
+* Mamba-3 shifts focus from training efficiency to inference optimization, addressing the growing demand from post-training, RLVR, and agentic workflows
+* Three core improvements: exponential-trapezoidal discretization for richer recurrence, complex-valued SSM systems for better state tracking, and MIMO SSMs for parallel processing
+* Architecture changes include adding QKNorm for stability, removing short convolution (replaced by internal convolution-like mechanisms), adding RoPE and MIMO projections
+* Outperforms Mamba-2 and linear attention alternatives like GDN on language modeling tasks across various scales
+* MIMO variant boosts accuracy by 1+ percentage points at 1B scale with longer training but no inference latency increase
+* Naturally underperforms Transformers on retrieval tasks due to fixed-size state, suggesting hybrid models combining linear layers with self-attention are the future direction
+* Open-sourced kernels to facilitate adoption and development
+
+### Mamba-3:推理优先的状态空间模型架构
+
+* Mamba-3将重点从训练效率转向推理优化,以应对后训练、RLVR和智能体工作流日益增长的需求
+* 三大核心改进:指数梯形离散化方案实现更丰富的递归、复值SSM系统增强状态跟踪能力、MIMO SSM实现并行处理
+* 架构变化包括添加QKNorm提升稳定性、移除短卷积(由内部类卷积机制替代)、添加RoPE和MIMO投影
+* 在各种规模的语言建模任务上优于Mamba-2和GDN等线性注意力替代方案
+* MIMO变体在1B规模上准确率提升1个百分点以上,训练时间更长但推理延迟不增加
+* 由于固定大小状态,在检索任务上自然弱于Transformer,表明结合线性层和自注意力的混合模型是未来方向
+* 开源内核以促进采用和开发
+
+**[Read Original / 阅读原文](https://www.together.ai/blog/mamba-3)**
+
+### FFmpeg 101: High-Level Architecture Overview
+
+* **FFmpeg package** includes command-line tools (ffmpeg, ffplay, ffprobe) for converting, playing, and analyzing multimedia files
+* **Eight core libraries** provide functionality for I/O, encoding/decoding, filtering, device handling, and audio/video processing (libavformat, libavcodec, libavfilter, libavdevice, libavutil, libswresample, libswscale, libpostproc)
+* **Basic player architecture** uses key structures: AVFormatContext for stream sync/metadata, AVStream for continuous streams, AVCodec for encoding/decoding, AVPacket for encoded data, and AVFrame for decoded raw data
+* **Demuxing and decoding process** involves opening input files with avformat_open_input(), finding stream info, iterating through streams to extract metadata (time base, framerate, duration, codec type)
+* **Codec discovery** uses avcodec_find_decoder() to locate appropriate decoders for each stream based on codec_id
+* **Custom codec integration** possible by creating FFCodec structure instances and registering them in libavcodec/allcodecs.c
+* **Code repository** available at github.com/neodesys/blog-ffmpeg-101 for reference implementation
+
+### FFmpeg 101：高级架构概述
+
+* **FFmpeg 软件包**包含命令行工具（ffmpeg、ffplay、ffprobe），用于转换、播放和分析多媒体文件
+* **八个核心库**提供 I/O、编解码、过滤、设备处理和音视频处理功能（libavformat、libavcodec、libavfilter、libavdevice、libavutil、libswresample、libswscale、libpostproc）
+* **基础播放器架构**使用关键结构：AVFormatContext 用于流同步/元数据，AVStream 用于连续流，AVCodec 用于编解码，AVPacket 用于编码数据，AVFrame 用于解码的原始数据
+* **解复用和解码过程**包括使用 avformat_open_input() 打开输入文件，查找流信息，遍历流以提取元数据（时基、帧率、时长、编解码器类型）
+* **编解码器发现**使用 avcodec_find_decoder() 根据 codec_id 为每个流定位适当的解码器
+* **自定义编解码器集成**可通过创建 FFCodec 结构实例并在 libavcodec/allcodecs.c 中注册来实现
+* **代码仓库**可在 github.com/neodesys/blog-ffmpeg-101 获取参考实现
+
+**[Read Original / 阅读原文](https://blogs.igalia.com/llepage/ffmpeg-101/)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### MoneyPrinterV2 - Automated Online Money-Making Tool
+
+* **What it does**: Automates various online money-making strategies including social media content creation, affiliate marketing, and business outreach
+* **Key features**: Twitter bot with scheduled posting, YouTube Shorts automation, Amazon affiliate marketing integration, local business scraping with cold outreach capabilities, and modular Python architecture
+* **Why it's notable**: Complete rewrite of the original MoneyPrinter with expanded features and automation capabilities; gaining significant traction with 775 stars today as developers explore automated income generation strategies
+
+---
+
+### MoneyPrinterV2 - 在线赚钱自动化工具
+
+* **功能介绍**: 自动化多种在线赚钱策略，包括社交媒体内容创作、联盟营销和商业推广
+* **主要特点**: 带定时任务的 Twitter 机器人、YouTube Shorts 自动化发布、亚马逊联盟营销集成、本地企业信息抓取及冷邮件推广功能，采用模块化 Python 架构
+* **为何值得关注**: 原 MoneyPrinter 项目的完全重写版本，功能更丰富、架构更灵活；今日获得 775 星标，开发者对自动化收入生成策略的探索热情高涨
+
+**[View Repository / 查看仓库](https://github.com/FujiwaraChoki/MoneyPrinterV2)**
+
+### systemd/systemd - The Core Linux System and Service Manager
+
+* **What it does**: systemd is the fundamental init system and service manager for Linux distributions, responsible for bootstrapping the system, managing services, handling system states, and coordinating system resources
+* **Key features**: Process supervision and parallelization, socket and D-Bus activation, on-demand daemon starting, mount point management, snapshot support, and comprehensive logging via journald
+* **Why it's notable**: As the de facto standard init system adopted by major Linux distributions (Fedora, Debian, Ubuntu, Arch, RHEL), systemd is critical infrastructure that powers millions of servers and desktops. The 47 stars today reflect ongoing interest in this foundational project that continues active development with security bug bounty programs and extensive CI/CD infrastructure
+
+### systemd/systemd - Linux 核心系统与服务管理器
+
+* **功能介绍**: systemd 是 Linux 发行版的基础初始化系统和服务管理器，负责系统引导、服务管理、系统状态处理和系统资源协调
+* **主要特点**: 进程监控与并行化、套接字和 D-Bus 激活、按需启动守护进程、挂载点管理、快照支持，以及通过 journald 实现的全面日志记录
+* **为何值得关注**: 作为主流 Linux 发行版（Fedora、Debian、Ubuntu、Arch、RHEL）采用的事实标准初始化系统，systemd 是支撑数百万服务器和桌面系统的关键基础设施。今日获得 47 星反映了社区对这个持续活跃开发、配备安全漏洞赏金计划和完善 CI/CD 基础设施的基础项目的持续关注
+
+**[View Repository / 查看仓库](https://github.com/systemd/systemd)**
+
+### Trivy - Comprehensive Security Scanner for Containers, Code, and Cloud
+
+* **What it does**: Trivy is a versatile security scanner that finds vulnerabilities, misconfigurations, secrets, and generates SBOMs across container images, Kubernetes clusters, code repositories, filesystems, and cloud environments
+* **Key features**: 
+  - Multiple scan targets (containers, K8s, git repos, VMs, filesystems)
+  - Multiple scanners (CVE detection, IaC misconfigurations, secret scanning, license checking, SBOM generation)
+  - Supports most popular programming languages and operating systems
+  - Easy installation via brew, Docker, or binary downloads
+  - Rich ecosystem with GitHub Actions, K8s operator, VS Code plugin integrations
+* **Why it's notable**: With 22 stars today and strong community backing from Aqua Security, Trivy has become a go-to open-source security tool for DevSecOps workflows, offering comprehensive scanning capabilities in a single, easy-to-use CLI tool
+
+### Trivy - 全面的容器、代码和云安全扫描工具
+
+* **功能介绍**: Trivy 是一个多功能安全扫描器，可在容器镜像、Kubernetes 集群、代码仓库、文件系统和云环境中查找漏洞、错误配置、敏感信息，并生成软件物料清单(SBOM)
+* **主要特点**:
+  - 支持多种扫描目标（容器、K8s、Git 仓库、虚拟机、文件系统）
+  - 提供多种扫描器（CVE 漏洞检测、基础设施即代码配置检查、密钥扫描、许可证检查、SBOM 生成）
+  - 支持主流编程语言和操作系统
+  - 安装便捷（brew、Docker、二进制文件）
+  - 丰富的生态集成（GitHub Actions、K8s Operator、VS Code 插件等）
+* **为何值得关注**: 今日获得 22 个 star，由 Aqua Security 支持的开源项目，已成为 DevSecOps 工作流中首选的安全工具，通过单一易用的 CLI 工具提供全面的安全扫描能力
+
+**[View Repository / 查看仓库](https://github.com/aquasecurity/trivy)**
+
+### Understand Anything - Turn Any Codebase into an Interactive Knowledge Graph
+
+* **What it does**: A Claude Code plugin that analyzes codebases using multi-agent AI pipelines and transforms them into interactive, explorable knowledge graphs with plain-English explanations for every file, function, and class
+* **Key features**: Interactive visual dashboard with React Flow, semantic search across code, guided architectural tours, diff impact analysis, auto-generated documentation, multi-platform support (Claude Code, Codex, OpenCode, OpenClaw, Cursor)
+* **Why it's notable**: Solves the universal developer pain point of understanding unfamiliar codebases by combining LLM intelligence with static analysis - particularly valuable for onboarding, code reviews, and cross-team collaboration. Nearly 2,000 stars in a short time shows strong demand for better code comprehension tools.
+
+---
+
+### Understand Anything - 将任何代码库转化为可交互的知识图谱
+
+* **功能介绍**: 一个 Claude Code 插件，通过多智能体 AI 管道分析代码库，将其转换为可交互、可探索的知识图谱，为每个文件、函数和类提供通俗易懂的解释
+* **主要特点**: 基于 React Flow 的交互式可视化仪表板、代码语义搜索、架构导览、差异影响分析、自动生成文档、多平台支持（Claude Code、Codex、OpenCode、OpenClaw、Cursor）
+* **为何值得关注**: 通过结合大语言模型智能和静态分析，解决了开发者理解陌生代码库的普遍痛点——对新人入职、代码审查和跨团队协作特别有价值。短时间内获得近 2000 星标，显示出市场对更好的代码理解工具的强烈需求
+
+**[View Repository / 查看仓库](https://github.com/Lum1104/Understand-Anything)**
+
+### 🎬 Learning a new skill in your native language can be so powerful - and Sumit explains why
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Sumit discusses the advantages of learning new skills (particularly coding and tech) in your native language rather than exclusively in English
+* Key topics discussed: The cognitive benefits of native language learning, accessibility in tech education, how language barriers affect skill acquisition, and the importance of localized educational content
+* Why it's worth watching: Challenges the assumption that tech must be learned in English; offers perspective on making programming education more inclusive and effective for non-English speakers worldwide
+
+### 🎬 用母语学习新技能的力量 - Sumit 的见解
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Sumit 探讨用母语学习新技能(特别是编程和技术)相比只用英语学习的优势
+* 主要话题: 母语学习的认知优势、技术教育的可及性、语言障碍如何影响技能习得、本地化教育内容的重要性
+* 为何值得观看: 挑战了"必须用英语学习技术"的固有观念;为全球非英语使用者提供了关于如何让编程教育更具包容性和有效性的独特视角
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xtGThMTO9rI)**
+
+### 🎬 Subscribe for more coding tips⬆️ #BlackboxAI #AItools #CodingAI #DeveloperTools #Programming #TechAI
+**Channel:** Codewithpoornima
+
+* What the video covers: A demonstration of Blackbox AI, an AI-powered coding assistant that helps developers write code more efficiently
+* Key topics discussed: Code generation capabilities, code explanation features, and how Blackbox AI streamlines the development workflow
+* Why it's worth watching: Learn how AI tools can accelerate your coding process and improve code quality through automated assistance
+
+---
+
+### 🎬 订阅获取更多编程技巧⬆️ #BlackboxAI #AI工具 #编程AI #开发者工具 #编程 #科技AI
+**频道:** Codewithpoornima
+
+* 视频内容概述: 展示 Blackbox AI 这款 AI 驱动的编程助手如何帮助开发者更高效地编写代码
+* 主要话题: 代码生成功能、代码解释特性，以及 Blackbox AI 如何简化开发工作流程
+* 为何值得观看: 了解 AI 工具如何通过自动化辅助加速编程过程并提升代码质量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kG89yZ379BQ)**
 
