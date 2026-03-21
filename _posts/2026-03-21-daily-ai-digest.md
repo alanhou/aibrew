@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 21, 2026"
 date: 2026-03-21
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 5 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，5个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -159,4 +159,260 @@ pin: false
 * 为何值得观看: 了解 AI 工具如何通过自动化辅助加速编程过程并提升代码质量
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=kG89yZ379BQ)**
+
+<!-- [Title-Only] -->
+### OpenCode – Open Source AI Coding Agent
+
+* Based on the title, this article likely introduces OpenCode, an open-source AI-powered coding assistant or agent that helps developers write, debug, or optimize code
+* This would be interesting to readers because open-source AI coding tools democratize access to advanced development assistance, allowing developers to understand how these systems work, customize them for specific needs, and contribute to their improvement without vendor lock-in
+
+### OpenCode – 开源 AI 编程助手
+
+* 根据标题推测，这篇文章可能介绍 OpenCode，一个开源的 AI 驱动编程助手或代理，可以帮助开发者编写、调试或优化代码
+* 值得关注的原因是开源 AI 编程工具让更多开发者能够使用先进的开发辅助功能，同时可以了解这些系统的工作原理，根据特定需求进行定制，并参与改进，而不受供应商限制
+
+**[Read Original / 阅读原文](https://opencode.ai/)**
+
+### Mamba-3: Inference-First State Space Model Architecture
+
+* Mamba-3 shifts focus from training efficiency to inference optimization, addressing the growing demand from post-training, RLVR, and agentic workflows
+* Three core improvements: exponential-trapezoidal discretization for richer recurrence, complex-valued SSM systems for better state tracking, and MIMO SSMs for parallel processing
+* Architecture changes include adding QKNorm for stability, removing short convolution (replaced by internal convolution-like mechanisms), adding RoPE and MIMO projections
+* Outperforms Mamba-2 and linear attention alternatives like GDN on language modeling tasks across various scales
+* MIMO variant boosts accuracy by 1+ percentage points at 1B scale with longer training but no inference latency increase
+* Naturally underperforms Transformers on retrieval tasks due to fixed-size state, suggesting hybrid models combining linear layers with self-attention are the future direction
+* Open-sourced kernels to facilitate adoption and development
+
+### Mamba-3:推理优先的状态空间模型架构
+
+* Mamba-3将重点从训练效率转向推理优化,以应对后训练、RLVR和智能体工作流日益增长的需求
+* 三大核心改进:指数梯形离散化方案实现更丰富的递归、复值SSM系统增强状态跟踪能力、MIMO SSM实现并行处理
+* 架构变化包括添加QKNorm提升稳定性、移除短卷积(由内部类卷积机制替代)、添加RoPE和MIMO投影
+* 在各种规模的语言建模任务上优于Mamba-2和GDN等线性注意力替代方案
+* MIMO变体在1B规模上准确率提升1个百分点以上,训练时间更长但推理延迟不增加
+* 由于固定大小状态,在检索任务上自然弱于Transformer,表明结合线性层和自注意力的混合模型是未来方向
+* 开源内核以促进采用和开发
+
+**[Read Original / 阅读原文](https://www.together.ai/blog/mamba-3)**
+
+### Molly Guard: A Safety Mechanism in Computing
+
+* A "molly guard" is a plastic safety cover that must be moved before pressing an important button, preventing accidental activation
+* Named after Molly, an engineer's daughter who pressed a big red button in a datacenter twice in one day
+* Common in military aircraft controls and civilian hardware (recessed buttons, plastic ridges, SIM card ejection holes requiring special tools)
+* Software equivalents include "are you sure?" dialogs and modifier key combinations like Ctrl+Alt+Del
+* "Reverse molly guards" are buttons that auto-press if no action is taken, preventing systems from waiting indefinitely for user input
+* Reverse guards solve the frustrating problem of programs halting overnight while waiting for responses to unimportant prompts
+
+### Molly Guard:计算机中的安全机制
+
+* "Molly Guard"(莫莉护罩)是指按下重要按钮前必须移开的塑料安全盖,用于防止误操作
+* 得名于工程师的女儿Molly,她在数据中心一天内两次按下大红按钮
+* 常见于军用飞机控制装置和民用硬件(凹陷按钮、按键周围的塑料凸起、需要专用工具的SIM卡弹出孔)
+* 软件中的等效设计包括"确定吗?"对话框和组合键(如Ctrl+Alt+Del)
+* "反向莫莉护罩"是指如果用户不采取行动就会自动按下的按钮,防止系统无限期等待用户输入
+* 反向护罩解决了程序整夜停滞、等待不重要提示响应的令人沮丧的问题
+
+**[Read Original / 阅读原文](https://bookofjoe2.blogspot.com/2026/02/molly-guard.html)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### Claude HUD - Real-time visibility plugin for Claude Code sessions
+
+* **What it does**: A Claude Code plugin that displays live session metrics directly in your terminal's status line - showing context usage, active tools, running agents, and todo progress without needing separate windows or tmux
+* **Key features**: Native statusline integration with real-time updates (~300ms), visual progress bars for context and usage limits, git branch tracking with dirty/ahead/behind indicators, tool/agent/todo activity monitoring, and highly customizable display options (3 presets + granular controls)
+* **Why it's notable**: Gained 1,068 stars today by solving a critical visibility gap in Claude Code - developers can now see exactly what's happening under the hood (context consumption, API rate limits, subagent activity) before hitting limits, with zero UI overhead using Claude Code's native API
+
+### Claude HUD - Claude Code 实时会话监控插件
+
+* **功能介绍**: 一个 Claude Code 插件，在终端状态栏实时显示会话指标 - 包括上下文使用率、活跃工具、运行中的代理和待办事项进度，无需额外窗口或 tmux
+* **主要特点**: 原生状态栏集成，实时更新（约300毫秒），上下文和使用限制的可视化进度条，Git 分支跟踪（含未提交/领先落后状态），工具/代理/待办事项活动监控，高度可定制的显示选项（3种预设+细粒度控制）
+* **为何值得关注**: 今日获得 1,068 星标，解决了 Claude Code 的关键可见性问题 - 开发者现在可以在达到限制之前清楚看到底层运行情况（上下文消耗、API 速率限制、子代理活动），使用 Claude Code 原生 API 实现零 UI 开销
+
+**[View Repository / 查看仓库](https://github.com/jarrodwatts/claude-hud)**
+
+### Open SWE - Open-Source Framework for Building Internal Coding Agents
+
+* **What it does**: An open-source framework that enables organizations to build their own internal coding agents (Slackbots, CLIs, web apps) that can autonomously handle software engineering tasks like bug fixes, feature implementations, and code reviews.
+
+* **Key features**: 
+  - Built on LangGraph and Deep Agents with isolated cloud sandbox environments (Modal, Daytona, Runloop, LangSmith)
+  - Multi-platform invocation via Slack, Linear, and GitHub comments
+  - Automatic PR creation with GitHub OAuth integration
+  - Subagent orchestration for parallel task execution
+  - Curated toolset (~15 tools) including shell execution, file operations, and API integrations
+  - Real-time messaging support - can receive follow-up instructions mid-task
+
+* **Why it's notable**: Replicates the internal coding agent architecture used by elite engineering organizations like Stripe, Ramp, and Coinbase, making enterprise-grade autonomous coding capabilities accessible to any development team. With 635 stars today, it represents a significant shift toward democratizing AI-powered software engineering workflows that were previously only available to well-resourced companies.
+
+---
+
+### Open SWE - 构建内部编码代理的开源框架
+
+* **功能介绍**: 一个开源框架,帮助组织构建自己的内部编码代理(Slack机器人、CLI工具、Web应用),能够自主处理软件工程任务,如修复bug、实现功能和代码审查。
+
+* **主要特点**:
+  - 基于LangGraph和Deep Agents构建,配备隔离的云沙箱环境(支持Modal、Daytona、Runloop、LangSmith)
+  - 支持通过Slack、Linear和GitHub评论多平台触发
+  - 自动创建PR,内置GitHub OAuth认证
+  - 子代理编排,支持并行任务执行
+  - 精选工具集(约15个工具),包括Shell执行、文件操作和API集成
+  - 实时消息支持 - 可在任务执行中途接收后续指令
+
+* **为何值得关注**: 复制了Stripe、Ramp和Coinbase等顶级工程组织使用的内部编码代理架构,让任何开发团队都能获得企业级的自主编码能力。今日获得635星标,标志着AI驱动的软件工程工作流正在从资源充足的大公司走向民主化,成为所有团队都能使用的工具。
+
+**[View Repository / 查看仓库](https://github.com/langchain-ai/open-swe)**
+
+### OpenDataLoader PDF - #1 Benchmark PDF Parser for AI Data Extraction & Accessibility Automation
+
+* **What it does**: Converts PDFs to AI-ready structured data (Markdown, JSON with bounding boxes, HTML) with #1 benchmark accuracy (0.90 overall, 0.93 table extraction). Also automates PDF accessibility compliance by generating Tagged PDFs from untagged documents.
+
+* **Key features**: Deterministic local mode (0.05s/page) + hybrid AI mode for complex tables/scanned PDFs/formulas; built-in OCR (80+ languages); bounding boxes for every element; XY-Cut++ reading order; first open-source end-to-end PDF auto-tagging solution (Q2 2026); Python/Node.js/Java SDKs; LangChain integration.
+
+* **Why it's notable**: Ranks #1 in extraction benchmarks across 200 real-world PDFs, beating competitors like Docling and Marker. Built in collaboration with PDF Association and veraPDF developers, following Well-Tagged PDF specification. Solves two major problems: RAG/LLM data preparation and accessibility compliance (EAA/ADA/Section 508) that costs $50-200/document manually. Core extraction and auto-tagging are Apache 2.0 open-source.
+
+---
+
+### OpenDataLoader PDF - 排名第一的 AI 数据提取与无障碍自动化 PDF 解析器
+
+* **功能介绍**: 将 PDF 转换为 AI 可用的结构化数据（Markdown、带边界框的 JSON、HTML），基准测试准确率第一（总体 0.90，表格提取 0.93）。同时通过从未标记文档生成标记 PDF，自动化 PDF 无障碍合规性。
+
+* **主要特点**: 确定性本地模式（0.05秒/页）+ 混合 AI 模式处理复杂表格/扫描 PDF/公式；内置 OCR（80+ 语言）；每个元素都有边界框；XY-Cut++ 阅读顺序；首个开源端到端 PDF 自动标记解决方案（2026年第二季度）；Python/Node.js/Java SDK；LangChain 集成。
+
+* **为何值得关注**: 在 200 个真实 PDF 的提取基准测试中排名第一，超越 Docling 和 Marker 等竞品。与 PDF 协会和 veraPDF 开发者合作构建，遵循 Well-Tagged PDF 规范。解决两大问题：RAG/LLM 数据准备和无障碍合规（EAA/ADA/Section 508，人工修复成本 50-200 美元/文档）。核心提取和自动标记功能采用 Apache 2.0 开源许可。
+
+**[View Repository / 查看仓库](https://github.com/opendataloader-project/opendataloader-pdf)**
+
+### Attention Residuals - A Smarter Way to Connect Transformer Layers
+
+* **What it does**: Replaces standard residual connections in Transformers with learned attention mechanisms that let each layer selectively aggregate information from all previous layers, rather than uniformly adding them together
+* **Key features**: 
+  - Full AttnRes uses softmax attention over all preceding layer outputs with learned weights
+  - Block AttnRes variant reduces memory overhead from O(Ld) to O(Nd) by grouping layers into blocks
+  - Drop-in replacement for existing architectures with minimal code changes
+* **Why it's notable**: Achieves equivalent performance to baseline models trained with 1.25x more compute; shows major improvements on reasoning tasks (+7.5 on GPQA-Diamond) and code generation (+3.1 on HumanEval); solves the PreNorm dilution problem where layer contributions get washed out in deep networks
+
+### Attention Residuals - 更智能的 Transformer 层连接方式
+
+* **功能介绍**: 用学习型注意力机制替代 Transformer 中的标准残差连接，使每一层能够选择性地聚合之前所有层的信息，而不是简单地均匀相加
+* **主要特点**:
+  - Full AttnRes 对所有前序层输出使用 softmax 注意力和可学习权重
+  - Block AttnRes 变体通过将层分组为块，将内存开销从 O(Ld) 降至 O(Nd)
+  - 可直接替换现有架构，代码改动极小
+* **为何值得关注**: 性能相当于用 1.25 倍计算量训练的基线模型；在推理任务上提升显著（GPQA-Diamond +7.5）和代码生成（HumanEval +3.1）；解决了 PreNorm 稀释问题，避免深层网络中各层贡献被淹没
+
+**[View Repository / 查看仓库](https://github.com/MoonshotAI/Attention-Residuals)**
+
+### ClawTeam - Agent Swarm Intelligence for Full Automation
+
+* **What it does**: ClawTeam enables AI agents to autonomously form collaborative swarms that self-organize, delegate tasks, and execute complex workflows. One command triggers full automation where a leader agent spawns specialized worker agents, each with isolated environments (git worktrees, tmux sessions), and coordinates them through CLI-based inter-agent communication.
+
+* **Key features**: 
+  - Works with any CLI agent (Claude Code, Codex, OpenClaw, Cursor, custom agents)
+  - Agents spawn sub-agents, communicate via inbox/task systems, and self-coordinate
+  - Lightweight infrastructure (filesystem + tmux, no Docker/Redis required)
+  - Real-world applications: autonomous ML research (8 agents × 8 GPUs achieving 6.4% improvement), full-stack development, AI hedge fund operations
+  - TOML-based templates for custom swarm configurations
+
+* **Why it's notable**: Shifts from isolated single-agent workflows to collective swarm intelligence. Instead of humans manually orchestrating multiple agents, ClawTeam lets agents think and work as a team—spawning workers, dividing complex tasks, sharing insights in real-time, and adapting strategies dynamically. The autonomous ML research demo showcases true research automation: 2430+ experiments across 8 H100 GPUs with zero human intervention.
+
+---
+
+### ClawTeam - AI 智能体集群协作系统
+
+* **功能介绍**: ClawTeam 让 AI 智能体自主组建协作集群,实现自组织、任务委派和复杂工作流执行。一条命令即可触发全自动化:领导智能体生成专业工作智能体(每个拥有独立的 git worktree 和 tmux 会话),并通过 CLI 命令协调它们之间的通信。
+
+* **主要特点**:
+  - 兼容任何 CLI 智能体(Claude Code、Codex、OpenClaw、Cursor、自定义智能体)
+  - 智能体可生成子智能体,通过收件箱/任务系统通信并自我协调
+  - 轻量级基础设施(仅需文件系统 + tmux,无需 Docker/Redis)
+  - 实际应用场景:自主机器学习研究(8 智能体 × 8 GPU 实现 6.4% 性能提升)、全栈开发、AI 对冲基金运营
+  - 基于 TOML 的模板系统支持自定义集群配置
+
+* **为何值得关注**: 从孤立的单智能体工作流转变为集群智能协作。无需人工手动协调多个智能体,ClawTeam 让智能体以团队方式思考和工作——生成工作智能体、分解复杂任务、实时共享洞察、动态调整策略。自主机器学习研究演示展示了真正的研究自动化:在 8 个 H100 GPU 上运行 2430+ 次实验,零人工干预。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/ClawTeam)**
+
+### 🎬 Why No One Cared When Columbus Discovered The Americas - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of the surprisingly muted initial reaction to Columbus's discovery of the Americas in 1492, examining why this world-changing event didn't immediately capture European attention
+* Key topics discussed: Historical context of 15th-century Europe, contemporary priorities and concerns that overshadowed the discovery, how information spread in the pre-printing press era, and the delayed realization of the discovery's significance
+* Why it's worth watching: Ada Palmer brings a historian's perspective to challenge our assumptions about how major historical events were perceived in their own time, offering fascinating insights into the gap between historical importance and contemporary awareness
+
+---
+
+### 🎬 为什么哥伦布发现美洲时无人在意 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨1492年哥伦布发现美洲后欧洲社会反应出奇平淡的现象，分析为何这一改变世界的事件未能立即引起关注
+* 主要话题: 15世纪欧洲的历史背景、当时掩盖这一发现的优先事项和关注点、印刷术普及前的信息传播方式，以及人们延迟认识到这一发现重要性的过程
+* 为何值得观看: 历史学家Ada Palmer以专业视角挑战我们对重大历史事件当时如何被感知的假设，深刻揭示了历史重要性与同时代认知之间的差距
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=a9c5uO1D248)**
+
+### 🎬 This new Linux distro is breaking the law, by design…
+**Channel:** Fireship
+
+* Explores a controversial new Linux distribution that intentionally violates legal restrictions or licensing terms
+* Discusses the technical design choices and philosophy behind this unconventional approach
+* Worth watching for insights into Linux distribution development, open-source licensing debates, and the boundaries of software freedom
+
+### 🎬 这个新 Linux 发行版故意违法设计…
+**频道:** Fireship
+
+* 探讨一个有争议的新 Linux 发行版，该发行版故意违反法律限制或许可条款
+* 讨论这种非常规方法背后的技术设计选择和理念
+* 值得观看以了解 Linux 发行版开发、开源许可争议以及软件自由的边界
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nkY_s9HpL9M)**
+
+### 🎬 a veces youtube no es la mejor opcion...
+**Channel:** Frannoni
+
+* A tech-focused video discussing situations where YouTube might not be the optimal platform or solution
+* Covers engineering, programming, and technology topics with a humorous take
+* Worth watching for developers and tech enthusiasts interested in alternative approaches to learning or sharing technical content, presented in an entertaining Spanish-language format
+
+### 🎬 有时候 YouTube 不是最佳选择...
+**频道:** Frannoni
+
+* 探讨 YouTube 可能不是最佳平台或解决方案的情况
+* 涵盖工程、编程和技术话题，以幽默的方式呈现
+* 适合对学习或分享技术内容的替代方法感兴趣的开发者和技术爱好者观看，西班牙语讲解，轻松有趣
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2uKWLSlt1hE)**
+
+### 🎬 The fastest one | Radix Sort
+**Channel:** onjsdev
+
+* Explains Radix Sort algorithm, which sorts numbers by processing individual digits
+* Covers the technique of using base-10 buckets as stable queues, working from least significant to most significant digit
+* Worth watching to understand one of the fastest sorting algorithms for integers, particularly useful when dealing with numbers of similar length
+
+### 🎬 最快的排序算法 | 基数排序
+**频道:** onjsdev
+
+* 讲解基数排序算法，通过逐位处理数字进行排序
+* 介绍使用十进制桶作为稳定队列的技术，从最低有效位到最高有效位依次处理
+* 值得观看以了解整数排序中最快的算法之一，特别适用于处理长度相似的数字
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0RIhg6x3kSo)**
+
+### 🎬 Library Sort – Visualization
+**Channel:** CoffeeBits
+
+* Demonstrates how the Library Sort algorithm works through visualization
+* Covers step-by-step implementation from scratch using JavaScript
+* Worth watching for developers interested in sorting algorithms and their practical implementation, especially those wanting to understand the unique approach of Library Sort which maintains gaps between elements for efficient insertions
+
+### 🎬 图书馆排序 – 可视化
+**频道:** CoffeeBits
+
+* 通过可视化演示图书馆排序算法的工作原理
+* 涵盖使用 JavaScript 从零开始的逐步实现过程
+* 适合对排序算法及其实际应用感兴趣的开发者观看,特别是想要理解图书馆排序独特方法的人——该算法通过在元素之间保持间隙来实现高效插入
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8sbMUTeZ76A)**
 
