@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 22, 2026"
 date: 2026-03-22
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -556,4 +556,125 @@ pin: false
 * 为何值得观看: 如果你正在使用 Claude 或类似的 AI 编程工具,这个视频提供了来自经验丰富开发者的实战技巧。Matt 的见解帮助你超越基础提示词使用,真正将 AI 作为开发伙伴来利用,让编程过程更高效并产出更高质量的代码。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=EJyuu6zlQCg)**
+
+### The Three Pillars of JavaScript Bloat
+
+* The article examines three main types of bloat in npm dependency trees and their causes
+* **Older Runtime Support**: Packages like `is-string` and `hasown` exist to support ES3 engines, protect against global namespace mutation, and handle cross-realm values - but most developers don't need these features
+* **Atomic Architecture**: Breaking code into extremely granular packages (like `shebang-regex` being just a single regex) creates overhead without the intended reusability benefits
+* **Single-use packages**: Many atomic packages are only used by one other package from the same maintainer, making them equivalent to inline code but with added acquisition costs
+* **Duplication problem**: The atomic approach leads to multiple versions of the same packages appearing in dependency trees
+* The cost of this bloat is paid by all developers, even though only a tiny minority actually need these compatibility layers
+
+### JavaScript 代码膨胀的三大支柱
+
+* 本文探讨了 npm 依赖树中三种主要的代码膨胀类型及其成因
+* **旧版运行时支持**：像 `is-string` 和 `hasown` 这样的包用于支持 ES3 引擎、防止全局命名空间被修改以及处理跨域值 - 但大多数开发者并不需要这些功能
+* **原子化架构**：将代码拆分成极其细粒度的包（如 `shebang-regex` 仅包含一个正则表达式）会产生开销，却没有带来预期的可复用性
+* **单一用途包**：许多原子化包仅被同一维护者的另一个包使用，相当于内联代码但增加了获取成本
+* **重复问题**：原子化方法导致依赖树中出现同一包的多个版本
+* 所有开发者都要为这种膨胀付出代价，尽管只有极少数人真正需要这些兼容层
+
+**[Read Original / 阅读原文](https://43081j.com/2026/03/three-pillars-of-javascript-bloat)**
+
+<!-- [Title-Only] -->
+### Professional video editing, right in the browser with WebGPU and WASM
+
+* Based on the title, this article likely introduces a web-based video editing application that leverages modern browser technologies - specifically WebGPU for hardware-accelerated graphics processing and WebAssembly (WASM) for near-native performance
+* This is interesting because it represents a significant shift in professional video editing, traditionally dominated by desktop applications like Adobe Premiere or Final Cut Pro. Running professional-grade editing entirely in the browser eliminates installation requirements, enables cross-platform compatibility, and demonstrates the maturity of web technologies for computationally intensive tasks
+
+### 基于 WebGPU 和 WASM 的浏览器专业视频编辑
+
+* 根据标题推测,这篇文章可能介绍了一款基于浏览器的视频编辑应用,利用了现代浏览器技术 - 特别是用于硬件加速图形处理的 WebGPU 和用于接近原生性能的 WebAssembly (WASM)
+* 这值得关注,因为它代表了专业视频编辑领域的重大转变,该领域传统上由 Adobe Premiere 或 Final Cut Pro 等桌面应用主导。完全在浏览器中运行专业级编辑消除了安装要求,实现了跨平台兼容性,并展示了 Web 技术在计算密集型任务中的成熟度
+
+**[Read Original / 阅读原文](https://tooscut.app/)**
+
+### Floci: A Free, Open-Source AWS Local Emulator
+
+* **What it is**: Floci is a lightweight, free alternative to LocalStack for emulating AWS services locally, named after the popcorn-shaped cloud formation "floccus"
+* **Why it exists**: LocalStack Community Edition sunsets in March 2026, requiring auth tokens and dropping CI support; Floci offers a no-restrictions alternative
+* **Performance advantages**: Dramatically faster and lighter than LocalStack — 24ms startup vs 3.3s, 13 MiB memory vs 143 MiB, 90 MB image vs 1.0 GB
+* **No barriers**: Zero auth tokens, unlimited CI/CD support, ongoing security updates, and MIT licensed
+* **Feature-rich**: Supports 20+ AWS services with 408/408 SDK tests passing, including services LocalStack Community lacks (API Gateway v2, Cognito, ElastiCache with IAM, RDS with IAM)
+* **Easy setup**: Simple `docker compose up` with endpoint at `localhost:4566`, works with any AWS SDK by pointing to the local endpoint
+* **Flexible storage**: Configurable storage modes (memory, persistent, hybrid, WAL) with environment variable overrides
+* **Production-ready**: Available as native binary (~40 MB) or JVM image, with pinned version tags for stability
+
+### Floci:免费开源的 AWS 本地模拟器
+
+* **产品定位**: Floci 是 LocalStack 的轻量级免费替代方案,用于本地模拟 AWS 服务,以形似爆米花的云层"floccus"命名
+* **诞生背景**: LocalStack 社区版将于 2026 年 3 月停止维护,需要认证令牌且不再支持 CI;Floci 提供无限制的替代方案
+* **性能优势**: 比 LocalStack 快速轻便得多 — 启动时间 24 毫秒 vs 3.3 秒,内存占用 13 MiB vs 143 MiB,镜像大小 90 MB vs 1.0 GB
+* **零门槛**: 无需认证令牌,无限制 CI/CD 支持,持续安全更新,采用 MIT 许可证
+* **功能丰富**: 支持 20 多项 AWS 服务,通过 408/408 项 SDK 测试,包含 LocalStack 社区版缺失的服务(API Gateway v2、Cognito、带 IAM 的 ElastiCache 和 RDS)
+* **简易部署**: 只需 `docker compose up` 即可启动,端点为 `localhost:4566`,任何 AWS SDK 只需指向本地端点即可使用
+* **灵活存储**: 可配置存储模式(内存、持久化、混合、WAL),支持环境变量覆盖
+* **生产就绪**: 提供原生二进制版本(约 40 MB)或 JVM 镜像,支持固定版本标签以保证稳定性
+
+**[Read Original / 阅读原文](https://github.com/hectorvent/floci)**
+
+### OpenGauss - Multi-Agent Lean Workflow Orchestrator for Mathematical Proving
+
+* **What it does**: OpenGauss is a project-scoped workflow orchestrator that provides a multi-agent frontend for Lean4 mathematical proving and formalization. It wraps the `lean4-skills` toolkit with commands like `/prove`, `/draft`, `/autoprove`, `/formalize`, and `/autoformalize`, managing backend sessions and project state automatically.
+
+* **Key features**: 
+  - Project-aware Lean workflow management with automatic project detection
+  - Five core workflows for interactive and autonomous mathematical proving/formalization
+  - Swarm tracking system to monitor and reattach to running agent sessions
+  - Support for both cloud (Claude/Codex) and local (vLLM) model backends
+  - One-command installation with automatic dependency setup
+  - Managed backend child agents that spawn within project context
+
+* **Why it's notable**: OpenGauss bridges the gap between AI coding assistants and formal mathematics by making Lean theorem proving accessible through a CLI interface. With 850 stars, it's gaining traction as a practical tool for mathematicians and researchers who want to leverage AI for formal verification without deep Lean expertise. The project-scoped approach and swarm management make it particularly useful for complex mathematical projects requiring multiple concurrent proving sessions.
+
+---
+
+### OpenGauss - Lean 数学证明的多智能体工作流编排器
+
+* **功能介绍**: OpenGauss 是一个项目级工作流编排器,为 Lean4 数学证明和形式化提供多智能体前端。它封装了 `lean4-skills` 工具包,通过 `/prove`、`/draft`、`/autoprove`、`/formalize` 和 `/autoformalize` 等命令,自动管理后端会话和项目状态。
+
+* **主要特点**:
+  - 具备项目感知能力的 Lean 工作流管理,支持自动项目检测
+  - 五个核心工作流,支持交互式和自主式数学证明/形式化
+  - 集群追踪系统,可监控和重新连接运行中的智能体会话
+  - 支持云端(Claude/Codex)和本地(vLLM)模型后端
+  - 一键安装,自动配置依赖项
+  - 在项目上下文中生成托管的后端子智能体
+
+* **为何值得关注**: OpenGauss 通过 CLI 界面让 Lean 定理证明变得易于使用,在 AI 编码助手和形式数学之间架起了桥梁。拥有 850 星标,它正成为数学家和研究人员进行形式验证的实用工具,无需深厚的 Lean 专业知识。项目级方法和集群管理特别适合需要多个并发证明会话的复杂数学项目。
+
+**[View Repository / 查看仓库](https://github.com/math-inc/OpenGauss)**
+
+### Any Auto Register - Multi-Platform Account Registration & Management System
+
+* **What it does**: Automates account registration across multiple platforms (Trae.ai, Tavily, Cursor, Kiro, ChatGPT, OpenBlockLabs) with built-in web UI, supporting various email services and captcha solvers
+* **Key features**: Plugin-based architecture for platform extensions; multiple email providers (MoeMail, Laoudo, DuckMail, Cloudflare Worker); proxy pool management with auto-rotation; concurrent registration with real-time SSE logs; captcha solving via YesCaptcha, 2Captcha, or local Camoufox solver; FastAPI + React tech stack
+* **Why it's notable**: Provides a complete, extensible framework for automated account management with 846 stars, featuring both API-based and browser automation modes, making it easy to add new platforms through a clean plugin system
+
+---
+
+### Any Auto Register - 多平台账号自动注册与管理系统
+
+* **功能介绍**: 自动化注册多个平台账号(Trae.ai、Tavily、Cursor、Kiro、ChatGPT、OpenBlockLabs 等),内置 Web 管理界面,支持多种邮箱服务和验证码解决方案
+* **主要特点**: 插件化平台扩展架构;支持多邮箱服务商(MoeMail、Laoudo、DuckMail、Cloudflare Worker 自建);代理池自动管理与轮询;并发注册与实时日志推送;验证码服务集成(YesCaptcha、2Captcha、本地 Camoufox);FastAPI + React 技术栈
+* **为何值得关注**: 获得 846 星标的完整账号管理框架,同时支持 API 协议和浏览器自动化模式,通过简洁的插件系统轻松扩展新平台,适合学习自动化注册系统架构设计
+
+**[View Repository / 查看仓库](https://github.com/lxf746/any-auto-register)**
+
+### 🎬 The only OpenClaw tutorial you'll ever need (March 2026 edition)
+**Channel:** Alex Finn
+
+* Comprehensive guide to OpenClaw, positioned as a revolutionary AI tool for building AI employees
+* Complete walkthrough covering setup, configuration, and implementation of AI automation workflows
+* Worth watching for developers and businesses looking to leverage AI for task automation and productivity enhancement - claims to be the definitive tutorial with full coverage of OpenClaw's capabilities
+
+### 🎬 你唯一需要的 OpenClaw 教程(2026年3月版)
+**频道:** Alex Finn
+
+* 全面介绍 OpenClaw 这一被称为最强大的 AI 工具,教你构建首个 AI 员工
+* 完整演示从设置、配置到实现 AI 自动化工作流程的全过程
+* 适合希望利用 AI 提升任务自动化和生产力的开发者和企业观看 - 号称是涵盖 OpenClaw 所有功能的权威教程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CxErCGVo-oo)**
 
