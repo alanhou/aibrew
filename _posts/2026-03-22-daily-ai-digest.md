@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 22, 2026"
 date: 2026-03-22
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -546,90 +546,6 @@ pin: false
 
 ---
 
-### 🎬 我每天都在用的 5 个 Claude Code 技巧
-**频道:** Matt Pocock
-
-* 视频内容概述: Matt Pocock 分享他使用 Claude Code(AI 编程助手)的日常工作流程,展示五个有效引导 AI 代理以提升代码质量和生产力的核心技巧。
-
-* 主要话题: 流程驱动的开发方法、实用的 AI 代理引导技术、代码质量改进策略,以及如何在日常开发中最大化利用 AI 编程助手的真实案例。
-
-* 为何值得观看: 如果你正在使用 Claude 或类似的 AI 编程工具,这个视频提供了来自经验丰富开发者的实战技巧。Matt 的见解帮助你超越基础提示词使用,真正将 AI 作为开发伙伴来利用,让编程过程更高效并产出更高质量的代码。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EJyuu6zlQCg)**
-
-### The Three Pillars of JavaScript Bloat
-
-* The article examines three main types of bloat in npm dependency trees and their causes
-* **Older Runtime Support**: Packages like `is-string` and `hasown` exist to support ES3 engines, protect against global namespace mutation, and handle cross-realm values - but most developers don't need these features
-* **Atomic Architecture**: Breaking code into extremely granular packages (like `shebang-regex` being just a single regex) creates overhead without the intended reusability benefits
-* **Single-use packages**: Many atomic packages are only used by one other package from the same maintainer, making them equivalent to inline code but with added acquisition costs
-* **Duplication problem**: The atomic approach leads to multiple versions of the same packages appearing in dependency trees
-* The cost of this bloat is paid by all developers, even though only a tiny minority actually need these compatibility layers
-
-### JavaScript 代码膨胀的三大支柱
-
-* 本文探讨了 npm 依赖树中三种主要的代码膨胀类型及其成因
-* **旧版运行时支持**：像 `is-string` 和 `hasown` 这样的包用于支持 ES3 引擎、防止全局命名空间被修改以及处理跨域值 - 但大多数开发者并不需要这些功能
-* **原子化架构**：将代码拆分成极其细粒度的包（如 `shebang-regex` 仅包含一个正则表达式）会产生开销，却没有带来预期的可复用性
-* **单一用途包**：许多原子化包仅被同一维护者的另一个包使用，相当于内联代码但增加了获取成本
-* **重复问题**：原子化方法导致依赖树中出现同一包的多个版本
-* 所有开发者都要为这种膨胀付出代价，尽管只有极少数人真正需要这些兼容层
-
-**[Read Original / 阅读原文](https://43081j.com/2026/03/three-pillars-of-javascript-bloat)**
-
-<!-- [Title-Only] -->
-### Professional video editing, right in the browser with WebGPU and WASM
-
-* Based on the title, this article likely introduces a web-based video editing application that leverages modern browser technologies - specifically WebGPU for hardware-accelerated graphics processing and WebAssembly (WASM) for near-native performance
-* This is interesting because it represents a significant shift in professional video editing, traditionally dominated by desktop applications like Adobe Premiere or Final Cut Pro. Running professional-grade editing entirely in the browser eliminates installation requirements, enables cross-platform compatibility, and demonstrates the maturity of web technologies for computationally intensive tasks
-
-### 基于 WebGPU 和 WASM 的浏览器专业视频编辑
-
-* 根据标题推测,这篇文章可能介绍了一款基于浏览器的视频编辑应用,利用了现代浏览器技术 - 特别是用于硬件加速图形处理的 WebGPU 和用于接近原生性能的 WebAssembly (WASM)
-* 这值得关注,因为它代表了专业视频编辑领域的重大转变,该领域传统上由 Adobe Premiere 或 Final Cut Pro 等桌面应用主导。完全在浏览器中运行专业级编辑消除了安装要求,实现了跨平台兼容性,并展示了 Web 技术在计算密集型任务中的成熟度
-
-**[Read Original / 阅读原文](https://tooscut.app/)**
-
-### Floci: A Free, Open-Source AWS Local Emulator
-
-* **What it is**: Floci is a lightweight, free alternative to LocalStack for emulating AWS services locally, named after the popcorn-shaped cloud formation "floccus"
-* **Why it exists**: LocalStack Community Edition sunsets in March 2026, requiring auth tokens and dropping CI support; Floci offers a no-restrictions alternative
-* **Performance advantages**: Dramatically faster and lighter than LocalStack — 24ms startup vs 3.3s, 13 MiB memory vs 143 MiB, 90 MB image vs 1.0 GB
-* **No barriers**: Zero auth tokens, unlimited CI/CD support, ongoing security updates, and MIT licensed
-* **Feature-rich**: Supports 20+ AWS services with 408/408 SDK tests passing, including services LocalStack Community lacks (API Gateway v2, Cognito, ElastiCache with IAM, RDS with IAM)
-* **Easy setup**: Simple `docker compose up` with endpoint at `localhost:4566`, works with any AWS SDK by pointing to the local endpoint
-* **Flexible storage**: Configurable storage modes (memory, persistent, hybrid, WAL) with environment variable overrides
-* **Production-ready**: Available as native binary (~40 MB) or JVM image, with pinned version tags for stability
-
-### Floci:免费开源的 AWS 本地模拟器
-
-* **产品定位**: Floci 是 LocalStack 的轻量级免费替代方案,用于本地模拟 AWS 服务,以形似爆米花的云层"floccus"命名
-* **诞生背景**: LocalStack 社区版将于 2026 年 3 月停止维护,需要认证令牌且不再支持 CI;Floci 提供无限制的替代方案
-* **性能优势**: 比 LocalStack 快速轻便得多 — 启动时间 24 毫秒 vs 3.3 秒,内存占用 13 MiB vs 143 MiB,镜像大小 90 MB vs 1.0 GB
-* **零门槛**: 无需认证令牌,无限制 CI/CD 支持,持续安全更新,采用 MIT 许可证
-* **功能丰富**: 支持 20 多项 AWS 服务,通过 408/408 项 SDK 测试,包含 LocalStack 社区版缺失的服务(API Gateway v2、Cognito、带 IAM 的 ElastiCache 和 RDS)
-* **简易部署**: 只需 `docker compose up` 即可启动,端点为 `localhost:4566`,任何 AWS SDK 只需指向本地端点即可使用
-* **灵活存储**: 可配置存储模式(内存、持久化、混合、WAL),支持环境变量覆盖
-* **生产就绪**: 提供原生二进制版本(约 40 MB)或 JVM 镜像,支持固定版本标签以保证稳定性
-
-**[Read Original / 阅读原文](https://github.com/hectorvent/floci)**
-
-### OpenGauss - Multi-Agent Lean Workflow Orchestrator for Mathematical Proving
-
-* **What it does**: OpenGauss is a project-scoped workflow orchestrator that provides a multi-agent frontend for Lean4 mathematical proving and formalization. It wraps the `lean4-skills` toolkit with commands like `/prove`, `/draft`, `/autoprove`, `/formalize`, and `/autoformalize`, managing backend sessions and project state automatically.
-
-* **Key features**: 
-  - Project-aware Lean workflow management with automatic project detection
-  - Five core workflows for interactive and autonomous mathematical proving/formalization
-  - Swarm tracking system to monitor and reattach to running agent sessions
-  - Support for both cloud (Claude/Codex) and local (vLLM) model backends
-  - One-command installation with automatic dependency setup
-  - Managed backend child agents that spawn within project context
-
-* **Why it's notable**: OpenGauss bridges the gap between AI coding assistants and formal mathematics by making Lean theorem proving accessible through a CLI interface. With 850 stars, it's gaining traction as a practical tool for mathematicians and researchers who want to leverage AI for formal verification without deep Lean expertise. The project-scoped approach and swarm management make it particularly useful for complex mathematical projects requiring multiple concurrent proving sessions.
-
----
-
 ### OpenGauss - Lean 数学证明的多智能体工作流编排器
 
 * **功能介绍**: OpenGauss 是一个项目级工作流编排器,为 Lean4 数学证明和形式化提供多智能体前端。它封装了 `lean4-skills` 工具包,通过 `/prove`、`/draft`、`/autoprove`、`/formalize` 和 `/autoformalize` 等命令,自动管理后端会话和项目状态。
@@ -677,4 +593,104 @@ pin: false
 * 适合希望利用 AI 提升任务自动化和生产力的开发者和企业观看 - 号称是涵盖 OpenClaw 所有功能的权威教程
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=CxErCGVo-oo)**
+
+### The Three Pillars of JavaScript Bloat
+
+* The e18e community has been growing and focusing on performance improvements through a "cleanup" initiative that removes redundant, outdated, or unmaintained packages
+* Dependency bloat is a major issue where npm dependency trees grow larger over time with code that modern platforms now provide natively
+* Three main types of bloat exist: older runtime support (with safety and realms), atomic architecture, and duplication across dependency trees
+* Older runtime support bloat comes from packages supporting ES3 engines, protecting against global namespace mutation, and handling cross-realm values - features most developers don't need
+* Atomic architecture bloat results from breaking packages into extremely granular pieces (like single-line regex exports), which often end up as single-use dependencies rather than reusable building blocks
+* Most developers pay the cost for niche compatibility features they don't use, while the tiny group who actually needs these features should be seeking specialized packages instead
+
+### JavaScript 臃肿的三大支柱
+
+* e18e 社区不断发展壮大，通过"清理"计划专注于性能改进，删除冗余、过时或无人维护的包
+* 依赖臃肿是一个主要问题，npm 依赖树随时间增长，包含许多现代平台已原生提供的代码
+* 存在三种主要的臃肿类型：旧运行时支持（包括安全性和领域）、原子化架构以及依赖树中的重复
+* 旧运行时支持臃肿来自支持 ES3 引擎的包、防止全局命名空间突变以及处理跨领域值 - 这些功能大多数开发者并不需要
+* 原子化架构臃肿源于将包拆分成极其细粒度的片段（如单行正则表达式导出），这些包往往最终成为单一用途的依赖，而非可重用的构建块
+* 大多数开发者为他们不使用的小众兼容性功能付出代价，而真正需要这些功能的少数群体应该主动寻找专门的包
+
+**[Read Original / 阅读原文](https://43081j.com/2026/03/three-pillars-of-javascript-bloat)**
+
+### Cross-Model Semantic Void Convergence: When AI Models Choose Silence
+
+* Researchers discovered that advanced AI models (GPT-5.2 and Claude Opus 4.6) consistently produce empty responses when prompted with "embodiment prompts" for ontologically null concepts—ideas that lack real-world referents or meaningful existence
+* This behavior is reproducible across different models, independent of token budgets, and shows partial resistance to adversarial prompting, suggesting a shared architectural boundary rather than simple refusal mechanisms
+* The phenomenon represents a form of "deterministic silence" where models recognize semantic conditions that shouldn't be continued, distinguishing between legitimate conceptual voids and normal instruction-following
+* The study provides black-box evidence of convergent behavior across independent AI systems, revealing how frontier models handle the boundaries of meaningful semantic space
+
+### 跨模型语义空洞收敛：当AI模型选择沉默
+
+* 研究人员发现，先进的AI模型（GPT-5.2和Claude Opus 4.6）在面对本体论上的空概念（缺乏现实指涉或有意义存在的概念）的"具身提示"时，会一致性地产生空白响应
+* 这种行为可在不同模型间复现，不受token预算限制，并对对抗性提示表现出部分抵抗力，表明这是一种共享的架构边界，而非简单的拒绝机制
+* 该现象代表了一种"确定性沉默"形式，模型能够识别不应继续的语义条件，区分合法的概念空洞与正常的指令遵循
+* 该研究提供了跨独立AI系统收敛行为的黑盒证据，揭示了前沿模型如何处理有意义语义空间的边界
+
+**[Read Original / 阅读原文](https://zenodo.org/records/18976656)**
+
+### My First Patch to the Linux Kernel: A Sign-Extension Bug Story
+
+* Discovered a critical sign-extension bug in C while building a Type-2 hypervisor to learn virtualization
+* The bug occurred in TSS (Task State Segment) base address handling during CPU core migration in VMX operations
+* Issue manifested as system crashes on physical hardware (but not in VMs) when handling NMIs after vCPU core switches
+* Root cause: improper handling of the TR (Task Register) base address when updating VMCS host-state fields
+* Bug led to cascading CPU core failures - starting with page faults on one core, then IPI lockups spreading to other cores
+* Successfully identified and patched the issue, resulting in first contribution to the Linux kernel
+* Demonstrates the complexity of hardware-assisted virtualization and the subtle bugs that can emerge in low-level system programming
+
+### 我的第一个 Linux 内核补丁：符号扩展 Bug 的故事
+
+* 在构建 Type-2 虚拟机监控程序学习虚拟化时，发现了 C 语言中的一个关键符号扩展 bug
+* Bug 发生在 VMX 操作期间 CPU 核心迁移时的 TSS（任务状态段）基地址处理中
+* 问题表现为在物理硬件上（而非虚拟机中）处理 NMI 时系统崩溃，发生在 vCPU 核心切换之后
+* 根本原因：更新 VMCS 主机状态字段时对 TR（任务寄存器）基地址的处理不当
+* Bug 导致级联的 CPU 核心故障 - 从一个核心的页面错误开始，然后 IPI 锁定扩散到其他核心
+* 成功识别并修复了该问题，完成了对 Linux 内核的首次贡献
+* 展示了硬件辅助虚拟化的复杂性以及底层系统编程中可能出现的微妙 bug
+
+**[Read Original / 阅读原文](https://pooladkhay.com/posts/first-kernel-patch/)**
+
+### 🎬 5 Claude Code Skills I Use Every Single Day
+**Channel:** Matt Pocock
+
+* What the video covers: Matt Pocock shares his daily workflow with Claude Code (an AI coding assistant), demonstrating five essential techniques for effectively steering AI agents to improve code quality and productivity.
+
+* Key topics discussed: Process-driven development approaches, practical AI agent steering techniques, code quality improvement strategies, and real-world examples of how to get the most out of AI coding tools in everyday development work.
+
+* Why it's worth watching: If you're using AI coding assistants like Claude or want to level up your AI-assisted development workflow, this video provides actionable skills from an experienced developer who uses these tools daily. Perfect for developers looking to maximize their productivity with AI pair programming.
+
+---
+
+### 🎬 我每天都在用的 5 个 Claude Code 技巧
+**频道:** Matt Pocock
+
+* 视频内容概述: Matt Pocock 分享他使用 Claude Code(AI 编程助手)的日常工作流程,演示五个关键技巧,教你如何有效地引导 AI 代理来提升代码质量和生产力。
+
+* 主要话题: 流程驱动的开发方法、实用的 AI 代理引导技术、代码质量改进策略,以及如何在日常开发中充分利用 AI 编程工具的真实案例。
+
+* 为何值得观看: 如果你正在使用 Claude 等 AI 编程助手,或想提升 AI 辅助开发的工作流程,这个视频提供了来自经验丰富开发者的可操作技巧。非常适合希望通过 AI 结对编程最大化生产力的开发者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EJyuu6zlQCg)**
+
+### 🎬 Subscribe for more coding tips⬆️ #cheat#exam#lotion#test#blackbox#professor
+**Channel:** Study with mishti
+
+* This video appears to be a short-form content piece promoting coding tips and educational content
+* Likely covers quick coding tricks, study techniques, or programming shortcuts aimed at students and learners
+* Worth watching if you're looking for bite-sized coding advice and want to follow a channel focused on programming education and study strategies
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Study with mishti
+
+* 这是一个推广编程技巧和教育内容的短视频
+* 可能涵盖快速编程技巧、学习方法或针对学生和学习者的编程捷径
+* 如果你正在寻找简短的编程建议,并希望关注专注于编程教育和学习策略的频道,值得一看
+
+---
+
+**Note:** The video title contains hashtags that may be misleading (#cheat, #exam). Based on the channel description, this appears to be legitimate educational content about coding skills rather than academic dishonesty. The actual content quality and relevance would need to be verified by watching the video.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qA4D40URfhM)**
 
