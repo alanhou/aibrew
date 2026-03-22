@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 22, 2026"
 date: 2026-03-22
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，4个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -415,4 +415,145 @@ pin: false
 * 为何值得观看: 如果你正在寻找一个经济实惠、无使用限制的 AI 编程助手来构建全栈应用，这个视频展示了一个可行的开源选择，摆脱了商业工具的各种限制
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=1C_0WaKKCPw)**
+
+<!-- [Title-Only] -->
+### Professional video editing, right in the browser with WebGPU and WASM
+
+* Based on the title, this article likely introduces a web-based video editing application that leverages modern browser technologies - specifically WebGPU for hardware-accelerated graphics processing and WebAssembly (WASM) for near-native performance
+* This is interesting because it represents a significant shift in professional video editing, traditionally dominated by desktop applications like Adobe Premiere or Final Cut Pro. Running professional-grade editing entirely in the browser eliminates installation requirements, enables cross-platform compatibility, and demonstrates the maturity of web technologies for computationally intensive tasks
+
+### 基于 WebGPU 和 WASM 的浏览器专业视频编辑
+
+* 根据标题推测,这篇文章可能介绍了一款基于浏览器的视频编辑应用,利用了现代浏览器技术 - 特别是用于硬件加速图形处理的 WebGPU 和用于接近原生性能的 WebAssembly (WASM)
+* 这值得关注,因为它代表了专业视频编辑领域的重大转变,该领域传统上由 Adobe Premiere 或 Final Cut Pro 等桌面应用主导。完全在浏览器中运行专业级编辑消除了安装要求,实现了跨平台兼容性,并展示了 Web 技术在计算密集型任务中的成熟度
+
+**[Read Original / 阅读原文](https://tooscut.app/)**
+
+### Boomloom: Intuitive Weaving Made Simple
+
+* **Learn by doing**: The loom is designed around natural, hands-on learning rather than complex technical instruction
+* **Automated warp separation**: Top bar separates warp threads with a simple knob turn, making plain weave and tapestry effortless
+* **Pattern creation without complexity**: Creates 4-shaft loom patterns without multiple steps, levers, or draft reading—just turn the bar between rows
+* **5 bars, endless possibilities**: Each of the 5 bars produces different weave structures, allowing beginners to explore complex designs immediately
+* **Compact and accessible**: "The Boss" consists of just two pieces, perfect for those curious about weaving without committing to large equipment
+* **Versatile for all skill levels**: Ideal for beginners exploring fiber arts, experienced weavers sampling ideas, or anyone passionate about fiber, color, and pattern design
+
+### Boomloom：直观简易的编织工具
+
+* **边做边学**：织布机围绕自然的动手学习方式设计，无需复杂的技术指导
+* **自动经线分离**：顶部横杆通过简单的旋钮转动即可分离经线，使平纹编织和挂毯编织轻而易举
+* **无需复杂步骤的图案创作**：可创建4综织机图案，无需多个步骤、操作杠杆或解读编织图——只需在行间转动横杆
+* **5根横杆，无限可能**：5根横杆各自产生不同的编织结构，让初学者也能立即探索复杂设计
+* **紧凑易用**："The Boss"仅由两个部件组成，非常适合对编织感兴趣但不想投入大型设备的人群
+* **适合所有技能水平**：无论是探索纤维艺术的初学者、需要打样试验的经验丰富编织者，还是热爱纤维、色彩和图案设计的任何人都适用
+
+**[Read Original / 阅读原文](https://www.theboomloom.com)**
+
+### Do Not Turn Child Protection Into Internet Access Control
+
+* Age verification is expanding beyond adult websites into social media, messaging, gaming, and search across Europe, USA, UK, and Australia
+* Age verification is fundamentally an access control architecture that shifts the internet from open access to permissioned access, requiring users to prove identity before services respond
+* The system is moving into operating systems (including Linux/systemd) as a persistent age-status layer, creating a general identity infrastructure for entire devices
+* Current approach confuses content moderation (technical filtering) with guardianship (relational, contextual responsibility of parents, teachers, and communities)
+* Age verification fails on its own terms - easily bypassed via VPNs, borrowed accounts, fake credentials - while imposing high privacy costs on everyone through increased metadata collection and surveillance
+* Once built, this infrastructure can be repurposed beyond age checks for location, citizenship, legal status, or other attributes
+* Better solution: implement local content moderation (browser, device, school network level) and keep guardianship decisions with families and communities who understand context
+* Real harms come from recommendation algorithms, dark patterns, and addictive business models - regulation should target these rather than building universal permission systems
+
+### 不要把儿童保护变成互联网访问控制
+
+* 年龄验证正从成人网站扩展到社交媒体、消息应用、游戏和搜索等主流服务,遍及欧洲、美国、英国和澳大利亚
+* 年龄验证本质上是一种访问控制架构,将互联网从开放访问转变为许可访问,要求用户在服务响应前证明身份
+* 该系统正进入操作系统层面(包括Linux/systemd),成为持久的年龄状态层,为整个设备创建通用身份基础设施
+* 当前方法混淆了内容审核(技术过滤)与监护权(父母、教师和社区的关系性、情境性责任)
+* 年龄验证无法实现自身目标 - 容易通过VPN、借用账户、虚假凭证绕过 - 同时通过增加元数据收集和监控对所有人造成高昂的隐私代价
+* 一旦建立,这种基础设施可被重新用于年龄以外的目的,如位置、公民身份、法律地位或其他属性
+* 更好的解决方案:实施本地内容审核(浏览器、设备、学校网络层面),将监护决策权留给理解具体情境的家庭和社区
+* 真正的危害来自推荐算法、暗黑模式和成瘾性商业模式 - 监管应针对这些问题,而非构建通用许可系统
+
+**[Read Original / 阅读原文](https://news.dyne.org/child-protection-is-not-access-control/)**
+
+### Clui CC - A Desktop Overlay UI for Claude Code CLI
+
+* **What it does**: Wraps Anthropic's Claude Code CLI in a floating, transparent macOS overlay with a pill-shaped interface, enabling visual interaction with the command-line AI coding assistant
+* **Key features**: Multi-tab sessions with independent Claude processes, human-in-the-loop permission approval UI for tool calls, conversation history browser, built-in skills marketplace, local voice input via Whisper, file/screenshot attachments, and system-wide hotkey toggle (⌥ + Space)
+* **Why it's notable**: Bridges the gap between CLI power and desktop UX by adding visual controls, safety guardrails, and session management to Claude Code while remaining local-first with no telemetry—trending because it solves the friction of approving AI tool executions and managing multiple coding sessions in a developer-friendly way
+
+---
+
+### Clui CC - Claude Code 命令行界面的桌面覆盖层
+
+* **功能介绍**: 将 Anthropic 的 Claude Code CLI 封装在一个浮动、透明的 macOS 覆盖层中,提供药丸形状的界面,让用户能够可视化地与命令行 AI 编码助手交互
+* **主要特点**: 多标签页独立会话(每个标签运行独立的 Claude 进程)、工具调用的人工审批界面、对话历史浏览器、内置技能市场、通过 Whisper 实现的本地语音输入、文件/截图附件支持,以及系统级快捷键切换(⌥ + Space)
+* **为何值得关注**: 在保留 CLI 强大功能的同时增加了可视化控制、安全防护和会话管理,完全本地运行无遥测数据收集——因其解决了 AI 工具执行审批的摩擦点,并以开发者友好的方式管理多个编码会话而受到关注,获得近千星标
+
+**[View Repository / 查看仓库](https://github.com/lcoutodemos/clui-cc)**
+
+### autoresearch-genealogy - AI-Powered Genealogy Research Framework
+
+* **What it does**: Provides structured prompts, vault templates, and workflows for conducting genealogy research using AI assistants like Claude Code. Transforms family history research into autonomous, verifiable research loops that search records, update documentation, and cross-reference sources automatically.
+
+* **Key features**: 
+  - 12 autonomous research prompts covering tree expansion, source verification, DNA analysis, immigration records, and colonial archives
+  - Complete Obsidian vault template with 19 pre-structured markdown files for organizing family data
+  - 24 country-specific archive guides (Europe, Americas, Oceania) detailing where to find records
+  - Confidence-tier system (Strong/Moderate/Speculative) for probabilistic genealogy claims
+  - Mechanical verification approach that logs negative results and resolves discrepancies between conflicting sources
+
+* **Why it's notable**: Represents a practical application of autonomous AI research to humanities work, extracting real-world methods from a project that documented 105 files across 9 generations. Addresses genealogy's unique challenges—conflicting sources, name variations, probabilistic confidence—with structured verification rather than AI guessing. Demonstrates how AI can accelerate rigorous historical research without sacrificing source integrity.
+
+---
+
+### autoresearch-genealogy - AI 辅助家谱研究框架
+
+* **功能介绍**: 为使用 Claude Code 等 AI 助手进行家谱研究提供结构化提示词、资料库模板和工作流程。将家族史研究转化为可自主运行、可验证的研究循环,自动搜索记录、更新文档并交叉引用来源。
+
+* **主要特点**:
+  - 12 个自主研究提示词,涵盖家谱扩展、来源验证、DNA 分析、移民记录和殖民地档案
+  - 完整的 Obsidian 资料库模板,包含 19 个预结构化 Markdown 文件用于组织家族数据
+  - 24 个国家/地区专属档案指南(欧洲、美洲、大洋洲),详细说明记录查找位置
+  - 置信度分层系统(强信号/中等信号/推测性),用于处理概率性家谱声明
+  - 机械验证方法,记录负面结果并解决冲突来源之间的差异
+
+* **为何值得关注**: 展示了自主 AI 研究在人文学科的实际应用,从一个真实项目中提取方法论(该项目记录了跨 9 代的 105 个文件)。通过结构化验证而非 AI 猜测,解决了家谱研究的独特挑战——来源冲突、姓名变体、概率置信度。证明 AI 可以在不牺牲来源严谨性的前提下加速历史研究工作。
+
+**[View Repository / 查看仓库](https://github.com/mattprusak/autoresearch-genealogy)**
+
+### 🎬 Gauss's Strangest Discovery Was a Statistical Accident - Terence Tao
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Terence Tao, one of the world's leading mathematicians, discusses an unexpected discovery by Carl Friedrich Gauss that emerged from statistical analysis rather than deliberate mathematical investigation
+* Key topics discussed: The serendipitous nature of mathematical discovery, Gauss's contributions to statistics and probability theory, how accidents and unexpected patterns can lead to profound mathematical insights
+* Why it's worth watching: Rare insight from a Fields Medalist on how even the greatest mathematicians stumble upon groundbreaking discoveries, offering a humanizing perspective on mathematical research and the role of chance in scientific progress
+
+### 🎬 高斯最奇特的发现源于统计意外 - 陶哲轩
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 世界顶尖数学家陶哲轩讲述卡尔·弗里德里希·高斯的一个意外发现,这个发现并非来自刻意的数学研究,而是源于统计分析
+* 主要话题: 数学发现的偶然性、高斯对统计学和概率论的贡献、意外和非预期的模式如何引领深刻的数学洞见
+* 为何值得观看: 菲尔兹奖得主罕见地分享即使是最伟大的数学家也会偶然发现突破性成果,为数学研究提供了人性化视角,展现了机遇在科学进步中的作用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=fXFmnIZhE08)**
+
+### 🎬 5 Claude Code Skills I Use Every Single Day
+**Channel:** Matt Pocock
+
+* What the video covers: Matt Pocock shares his daily workflow with Claude Code (an AI coding assistant), demonstrating five essential techniques for effectively steering AI agents to improve code quality and productivity.
+
+* Key topics discussed: Process-driven development approaches, practical AI agent steering techniques, code quality improvement strategies, and real-world examples of how to get the most out of AI coding assistants in everyday development work.
+
+* Why it's worth watching: If you're using AI coding tools like Claude or similar assistants, this video offers battle-tested techniques from an experienced developer. Matt's insights help you move beyond basic prompting to truly leverage AI as a development partner, making your coding sessions more efficient and producing higher-quality results.
+
+---
+
+### 🎬 我每天都在用的 5 个 Claude Code 技巧
+**频道:** Matt Pocock
+
+* 视频内容概述: Matt Pocock 分享他使用 Claude Code(AI 编程助手)的日常工作流程,展示五个有效引导 AI 代理以提升代码质量和生产力的核心技巧。
+
+* 主要话题: 流程驱动的开发方法、实用的 AI 代理引导技术、代码质量改进策略,以及如何在日常开发中最大化利用 AI 编程助手的真实案例。
+
+* 为何值得观看: 如果你正在使用 Claude 或类似的 AI 编程工具,这个视频提供了来自经验丰富开发者的实战技巧。Matt 的见解帮助你超越基础提示词使用,真正将 AI 作为开发伙伴来利用,让编程过程更高效并产出更高质量的代码。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EJyuu6zlQCg)**
 
