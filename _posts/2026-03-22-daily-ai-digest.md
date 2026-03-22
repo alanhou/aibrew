@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 22, 2026"
 date: 2026-03-22
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，11个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -693,4 +693,168 @@ pin: false
 **Note:** The video title contains hashtags that may be misleading (#cheat, #exam). Based on the channel description, this appears to be legitimate educational content about coding skills rather than academic dishonesty. The actual content quality and relevance would need to be verified by watching the video.
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=qA4D40URfhM)**
+
+<!-- [Title-Only] -->
+### Flash-Moe: Running a 397B Parameter Model on a Mac with 48GB RAM
+
+*Based on the title alone:*
+
+* This article likely covers a technical breakthrough or optimization technique that enables running an extremely large language model (397 billion parameters) on consumer hardware with limited RAM (48GB). This is remarkable because models of this size typically require enterprise-grade infrastructure with hundreds of gigabytes of VRAM.
+* Why it might be interesting: This represents a significant democratization of AI technology. Running massive models on standard Mac hardware could make advanced AI capabilities accessible to individual developers and researchers without expensive cloud computing costs or specialized hardware. The project probably involves innovative techniques like model quantization, memory-efficient inference, or mixture-of-experts (MoE) architecture optimization.
+
+---
+
+### Flash-Moe：在 48GB 内存的 Mac 上运行 3970 亿参数模型
+
+*仅基于标题的推测：*
+
+* 这篇文章可能介绍了一项技术突破或优化方法，使得在内存有限（48GB）的消费级硬件上运行超大规模语言模型（3970 亿参数）成为可能。这非常引人注目，因为这种规模的模型通常需要配备数百 GB 显存的企业级基础设施。
+* 为何值得关注：这代表了 AI 技术的重要民主化进程。在标准 Mac 硬件上运行大规模模型，可以让个人开发者和研究人员无需昂贵的云计算成本或专用硬件即可使用先进的 AI 能力。该项目可能涉及模型量化、内存高效推理或专家混合（MoE）架构优化等创新技术。
+
+**[Read Original / 阅读原文](https://github.com/danveloper/flash-moe)**
+
+<!-- [Title-Only] -->
+### Hormuz Minesweeper – Are you tired of winning?
+
+* Based on the title, this appears to be a creative twist on the classic Minesweeper game, likely themed around the Strait of Hormuz - a strategically important waterway known for geopolitical tensions and naval operations
+* The phrase "Are you tired of winning?" suggests a challenging or satirical take on the game, possibly referencing political rhetoric while adding difficulty or commentary to the traditional minesweeper gameplay
+* It might be interesting to readers who enjoy browser-based games with geopolitical themes, or those curious about how classic games can be reimagined with contemporary contexts
+
+### 霍尔木兹扫雷 – 你赢腻了吗?
+
+* 根据标题推测,这可能是经典扫雷游戏的创意变体,主题围绕霍尔木兹海峡展开——这是一个因地缘政治紧张局势和海军行动而闻名的战略要地
+* "你赢腻了吗?"这句话暗示游戏可能具有挑战性或讽刺意味,可能在引用政治修辞的同时,为传统扫雷游戏增添了难度或评论性元素
+* 对于喜欢带有地缘政治主题的浏览器游戏的读者,或者对经典游戏如何以当代背景重新演绎感到好奇的人来说,这可能会很有趣
+
+**[Read Original / 阅读原文](https://hormuz.pythonic.ninja/)**
+
+### 25 Years of Eggs: A Receipt Scanning Journey
+
+* A developer scanned 11,345 receipts from 2001-2026 and used AI agents to extract egg purchase data across 25 years
+* The project took 14 days with only 15 hours of hands-on time, consuming 1.6 billion tokens to find 589 egg receipts totaling $1,972 spent on 8,604 eggs
+* Classical computer vision failed at the "shades of white" problem (white receipts on white scanner beds), but Meta's SAM3 achieved 0.92-0.98 confidence in one afternoon
+* Replaced Tesseract OCR with PaddleOCR-VL running locally on Apple Silicon, processing all receipts overnight with cleaner results
+* Built a hybrid pipeline: specialized models for segmentation and OCR, then Codex/Claude for structured extraction and classification
+* The LLM classifier achieved 99%+ accuracy and actually corrected errors in the hand-labeled ground truth
+* Key insight: AI agents excel at building tools and extracting structured data, but specialized models are still needed for computer vision tasks
+* The agents autonomously built Flask labeling tools, implemented parallel processing with retry logic, and auto-switched between Codex and Claude when token limits were hit
+
+### 25年的鸡蛋：收据扫描之旅
+
+* 一位开发者扫描了2001-2026年间的11,345张收据，使用AI代理提取了25年的鸡蛋购买数据
+* 项目耗时14天，实际操作仅15小时，消耗16亿tokens，找到589张鸡蛋收据，总计花费1,972美元购买8,604个鸡蛋
+* 传统计算机视觉在"白色阴影"问题(白色收据在白色扫描仪底板上)上失败，但Meta的SAM3在一个下午就达到了0.92-0.98的置信度
+* 用本地运行在Apple Silicon上的PaddleOCR-VL替换了Tesseract OCR，一夜之间处理完所有收据，结果更清晰
+* 构建了混合管道：专用模型用于分割和OCR，然后用Codex/Claude进行结构化提取和分类
+* LLM分类器达到99%+的准确率，甚至纠正了人工标注的真实数据中的错误
+* 关键洞察：AI代理擅长构建工具和提取结构化数据，但计算机视觉任务仍需要专用模型
+* 代理自主构建了Flask标注工具，实现了带重试逻辑的并行处理，并在token限制时自动在Codex和Claude之间切换
+
+**[Read Original / 阅读原文](https://www.john-rush.com/posts/eggs-25-years-20260219.html)**
+
+### TradingAgents - Multi-Agent LLM Financial Trading Framework
+
+* **What it does**: A research framework that simulates a real-world trading firm using specialized LLM-powered agents (fundamental analysts, sentiment experts, technical analysts, traders, and risk managers) that collaborate to evaluate market conditions and make informed trading decisions through dynamic discussions and debates.
+
+* **Key features**: Modular multi-agent architecture built with LangGraph; supports multiple LLM providers (OpenAI GPT, Google Gemini, Anthropic Claude, xAI Grok, OpenRouter, Ollama); specialized agent roles including analyst teams, researcher teams with bullish/bearish perspectives, trader agents, and risk management; configurable debate rounds and reasoning depth; both CLI and Python package interfaces.
+
+* **Why it's notable**: Gained 1,503 stars today by offering a comprehensive open-source approach to algorithmic trading that mirrors institutional trading firm dynamics. The framework decomposes complex trading decisions into specialized roles with structured debates, making LLM-based trading research more accessible. Backed by academic research (arXiv paper) and actively maintained with recent v0.2.1 release adding latest model support.
+
+---
+
+### TradingAgents - 多智能体大语言模型金融交易框架
+
+* **功能介绍**: 一个研究框架,通过专业化的大语言模型智能体(基本面分析师、情绪专家、技术分析师、交易员和风险管理团队)模拟真实交易公司,这些智能体通过动态讨论和辩论协作评估市场状况并做出明智的交易决策。
+
+* **主要特点**: 基于 LangGraph 构建的模块化多智能体架构;支持多个大语言模型提供商(OpenAI GPT、Google Gemini、Anthropic Claude、xAI Grok、OpenRouter、Ollama);专业化的智能体角色包括分析师团队、多空研究员团队、交易员和风险管理;可配置的辩论轮次和推理深度;提供命令行和 Python 包两种接口。
+
+* **为何值得关注**: 今日获得 1,503 星标,通过提供全面的开源算法交易方案模拟机构交易公司运作模式。该框架将复杂的交易决策分解为专业化角色并进行结构化辩论,使基于大语言模型的交易研究更易获取。有学术论文(arXiv)支持,并积极维护,最新 v0.2.1 版本添加了最新模型支持。
+
+**[View Repository / 查看仓库](https://github.com/TauricResearch/TradingAgents)**
+
+### PentAGI - Fully Autonomous AI-Powered Penetration Testing System
+
+* **What it does**: PentAGI is an autonomous penetration testing platform that uses artificial intelligence to automatically plan and execute security assessments. It operates in isolated Docker environments, leveraging AI agents to determine testing strategies, execute professional security tools, and generate comprehensive vulnerability reports without manual intervention.
+
+* **Key features**: 
+  - Autonomous AI agent system with multi-agent delegation (research, development, infrastructure specialists)
+  - 20+ built-in professional pentesting tools (nmap, metasploit, sqlmap, etc.) in sandboxed environments
+  - Knowledge graph integration via Graphiti/Neo4j for semantic relationship tracking
+  - Long-term memory system for storing successful approaches
+  - Web intelligence gathering with built-in browser and multiple search API integrations (Tavily, Perplexity, DuckDuckGo, Google, Sploitus, Searxng)
+  - Comprehensive monitoring via Grafana/Prometheus and LLM observability through Langfuse
+  - Support for 10+ LLM providers (OpenAI, Anthropic, Ollama, AWS Bedrock, Google Gemini, DeepSeek, and more)
+  - Modern web UI with REST and GraphQL APIs for automation
+  - Microservices architecture with PostgreSQL + pgvector for persistent storage
+
+* **Why it's notable**: PentAGI represents a significant advancement in automated security testing by combining AGI principles with penetration testing workflows. With over 1,000 stars gained today, it's trending because it offers security professionals a self-hosted, fully autonomous solution that can perform complex pentesting tasks traditionally requiring extensive manual expertise. The system's ability to learn from past engagements, delegate to specialized agents, and integrate with modern observability tools makes it a powerful force multiplier for security teams.
+
+---
+
+### PentAGI - 全自主 AI 驱动的渗透测试系统
+
+* **功能介绍**: PentAGI 是一个自主渗透测试平台,利用人工智能自动规划和执行安全评估。它在隔离的 Docker 环境中运行,通过 AI 代理确定测试策略、执行专业安全工具并生成全面的漏洞报告,无需人工干预。
+
+* **主要特点**:
+  - 自主 AI 代理系统,支持多代理委派(研究、开发、基础设施专家)
+  - 20+ 款内置专业渗透测试工具(nmap、metasploit、sqlmap 等),运行在沙箱环境中
+  - 通过 Graphiti/Neo4j 集成知识图谱,实现语义关系追踪
+  - 长期记忆系统,存储成功的测试方法
+  - Web 情报收集功能,内置浏览器和多个搜索 API 集成(Tavily、Perplexity、DuckDuckGo、Google、Sploitus、Searxng)
+  - 通过 Grafana/Prometheus 进行全面监控,通过 Langfuse 实现 LLM 可观测性
+  - 支持 10+ 种 LLM 提供商(OpenAI、Anthropic、Ollama、AWS Bedrock、Google Gemini、DeepSeek 等)
+  - 现代化 Web UI,提供 REST 和 GraphQL API 用于自动化
+  - 微服务架构,使用 PostgreSQL + pgvector 实现持久化存储
+
+* **为何值得关注**: PentAGI 将 AGI 原理与渗透测试工作流程相结合,代表了自动化安全测试领域的重大进步。今日获得超过 1,000 颗星,成为热门项目,因为它为安全专业人员提供了一个可自托管的全自主解决方案,能够执行传统上需要大量人工专业知识的复杂渗透测试任务。该系统能够从过往测试中学习、委派给专业代理并与现代可观测性工具集成,使其成为安全团队的强大效率倍增器。
+
+**[View Repository / 查看仓库](https://github.com/vxcontrol/pentagi)**
+
+### production-agentic-rag-course - A Comprehensive Production RAG System Course
+
+* **What it does**: A hands-on educational project that teaches you to build a complete production-grade RAG (Retrieval-Augmented Generation) system from scratch. The course builds an arXiv Paper Curator - an AI research assistant that automatically fetches academic papers, understands their content, and answers research questions using advanced RAG techniques.
+
+* **Key features**: 
+  * 7-week progressive curriculum covering infrastructure setup, data pipelines, hybrid search (BM25 + semantic), LLM integration, production monitoring, and agentic RAG with LangGraph
+  * Complete tech stack including FastAPI, PostgreSQL, OpenSearch, Apache Airflow, Ollama, Langfuse, and Telegram bot integration
+  * Professional approach: builds search foundations first (keyword/BM25), then enhances with vectors for hybrid retrieval - mirroring how successful companies build RAG systems
+  * Week 7 introduces intelligent agents with decision-making, document grading, query rewriting, and guardrails against hallucination
+  * Each week includes detailed blog posts, code releases, and Jupyter notebooks for hands-on learning
+
+* **Why it's notable**: With 235 stars today, this repository stands out as a learner-focused, production-oriented RAG course that teaches industry best practices rather than shortcuts. Unlike typical tutorials that jump straight to vector search, it follows the professional path used by successful companies. The progression from infrastructure to agentic AI, combined with real-world tools (Docker, monitoring, caching) and mobile access via Telegram, makes it a comprehensive resource for mastering the most in-demand AI engineering skill: building production RAG systems.
+
+---
+
+### production-agentic-rag-course - 生产级智能体 RAG 系统完整课程
+
+* **功能介绍**: 这是一个从零开始构建生产级 RAG(检索增强生成)系统的实战教学项目。课程通过构建 arXiv 论文管理助手,教你打造一个能自动获取学术论文、理解内容并使用先进 RAG 技术回答研究问题的 AI 研究助手。
+
+* **主要特点**:
+  * 7 周渐进式课程,涵盖基础设施搭建、数据管道、混合搜索(BM25 + 语义搜索)、LLM 集成、生产监控以及基于 LangGraph 的智能体 RAG
+  * 完整技术栈包括 FastAPI、PostgreSQL、OpenSearch、Apache Airflow、Ollama、Langfuse 和 Telegram 机器人集成
+  * 专业路径:先构建搜索基础(关键词/BM25),再用向量增强实现混合检索 - 这正是成功公司构建 RAG 系统的方式
+  * 第 7 周引入智能决策、文档评分、查询重写和防幻觉保护机制
+  * 每周配有详细博客文章、代码发布版本和 Jupyter 笔记本供实践学习
+
+* **为何值得关注**: 今日获得 235 星,该项目作为一个以学习者为中心、面向生产环境的 RAG 课程脱颖而出,教授的是行业最佳实践而非捷径。与直接跳到向量搜索的典型教程不同,它遵循成功公司使用的专业路径。从基础设施到智能体 AI 的完整进阶,结合真实世界工具(Docker、监控、缓存)和通过 Telegram 的移动访问,使其成为掌握最热门 AI 工程技能 - 构建生产级 RAG 系统的综合资源。
+
+**[View Repository / 查看仓库](https://github.com/jamwithai/production-agentic-rag-course)**
+
+### 🎬 The art of influence: The single most important skill left that AI can't replace
+
+**Channel:** Lenny's Podcast
+
+* What the video covers: Jessica Fain, a product leader at Webflow and former Chief of Staff to the CPO at Slack, discusses the critical skill of influence in the age of AI and how it remains uniquely human
+* Key topics discussed: Why influence is AI-resistant, practical techniques for building influence in product leadership roles, lessons from working at Slack, and how to navigate organizational dynamics effectively
+* Why it's worth watching: As AI automates more technical tasks, understanding how to influence people and drive decisions becomes increasingly valuable for product managers and leaders—this episode offers actionable insights from someone who's operated at the highest levels of product organizations
+
+### 🎬 影响力的艺术:AI无法取代的最重要技能
+
+**频道:** Lenny's Podcast
+
+* 视频内容概述: Webflow产品负责人、前Slack首席产品官幕僚长Jessica Fain探讨在AI时代影响力这一关键技能如何保持其独特的人性价值
+* 主要话题: 为什么影响力是AI难以替代的能力、在产品领导岗位上建立影响力的实用技巧、在Slack工作的经验教训,以及如何有效应对组织动态
+* 为何值得观看: 随着AI自动化更多技术任务,影响他人和推动决策的能力对产品经理和领导者来说变得越来越重要——本期节目提供了来自顶级产品组织高层实战者的可行见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RP4vJeIb7WU)**
 
