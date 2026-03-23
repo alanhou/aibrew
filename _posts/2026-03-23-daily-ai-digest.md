@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 23, 2026"
 date: 2026-03-23
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -658,4 +658,76 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 作者建议通过 ARENA 的"机械可解释性入门"练习进行实践操作,这比仅阅读数学框架更能真正理解这些概念
 
 **[Read Original / 阅读原文](https://www.connorjdavis.com/p/intuitions-for-transformer-circuits)**
+
+### Tin Can: A WiFi "Landline" Phone Helping Parents Delay Kids' Cellphone Use
+
+* **Product Overview**: Tin Can is a $75 WiFi-enabled home phone with parental controls that allows only approved contacts to call during approved hours, offering a free plan for Tin Can-to-Tin Can calls
+* **Market Response**: The Seattle-based startup has sold tens of thousands of units since launching in early 2025, with orders backordered until December after raising $3.5 million in funding
+* **Parent Appeal**: Addresses the growing movement of parents delaying cellphones for kids while solving the communication gap—allowing children social autonomy without smartphone risks like social media and internet access
+* **Real-World Use**: Parents like LA mom Alison Bennett are embracing "full '90s" strategies, combining Tin Can phones with MP3 players and DVDs to keep kids connected without mobile devices
+* **Founder Motivation**: Created by three Seattle-area dads who discovered kids "lost their minds" with excitement over the prototype, enabling children to independently arrange playdates without parental mediation
+* **Educational Benefit**: Teaches phone etiquette to a generation where some Gen Zers don't even say "hello" when answering calls
+
+### Tin Can:"固定电话"帮助家长推迟孩子使用手机
+
+* **产品概述**:Tin Can 是一款售价 75 美元的 WiFi 家用电话,具有家长控制功能,仅允许经批准的联系人在批准的时间段内通话,提供 Tin Can 用户之间免费通话计划
+* **市场反响**:这家西雅图初创公司自 2025 年初推出以来已售出数万台设备,在筹集 350 万美元资金后,订单已排至 12 月
+* **家长青睐**:满足了越来越多家长推迟给孩子配手机的需求,同时解决了沟通难题——让孩子拥有社交自主权,却无需承担智能手机带来的社交媒体和互联网风险
+* **实际应用**:洛杉矶妈妈 Alison Bennett 等家长正在采用"完全 90 年代"策略,将 Tin Can 电话与 MP3 播放器和 DVD 结合使用,让孩子保持联系而无需移动设备
+* **创始人动机**:由三位西雅图地区的父亲创建,他们发现孩子们对原型机"欣喜若狂",使儿童能够独立安排玩伴聚会,无需父母中介
+* **教育价值**:向新一代教授电话礼仪,因为部分 Z 世代接电话时甚至不说"你好"
+
+**[Read Original / 阅读原文](https://www.businessinsider.com/tin-can-landline-kids-cellphone-cell-alternative-how-2025-9)**
+
+### Migrating the Payments Network Twice with Zero Downtime
+
+* American Express successfully migrated their payments network twice without any customer-impacting downtime or transaction interruptions
+* The first migration transitioned from a legacy payments network to a new microservices-based architecture using a three-stage approach: connection migration, shadow traffic validation, and canary routing
+* The Global Transaction Router (GTR) was introduced as a gateway to manage long-lived TCP connections and route ISO8583 payment messages with minimal protocol understanding
+* Shadow traffic capability allowed validation of payment processing logic in production-like environments by replaying live traffic to the new platform
+* Canary deployment principles enabled gradual migration of live traffic in small percentages (1%, 5%, 10%, etc.) with immediate rollback capability if anomalies were detected
+* The second migration moved the entire payments processing platform from legacy Kubernetes infrastructure to a new Kubernetes environment, reusing the same traffic control patterns
+* Both migrations operated under strict constraints: no downtime, no functionality regressions, consistent latency/throughput, and zero dropped or delayed payment requests
+* The GTR's canary routing capability, initially built for migration, became a critical permanent component of the Payments Network architecture
+
+### 两次零停机迁移支付网络
+
+* 美国运通成功完成了两次支付网络迁移,期间没有任何影响客户的停机时间或交易中断
+* 第一次迁移采用三阶段方法从传统支付网络过渡到新的微服务架构:连接迁移、影子流量验证和金丝雀路由
+* 引入全球交易路由器(GTR)作为网关,管理长连接TCP连接并路由ISO8583支付消息,仅需最少的协议理解
+* 影子流量功能通过将实时流量重放到新平台,在类生产环境中验证支付处理逻辑
+* 金丝雀部署原则使实时流量能够以小百分比(1%、5%、10%等)逐步迁移,并在检测到异常时立即回滚
+* 第二次迁移将整个支付处理平台从传统Kubernetes基础设施迁移到新的Kubernetes环境,重用了相同的流量控制模式
+* 两次迁移都在严格约束下运行:零停机、无功能回退、一致的延迟/吞吐量、零丢失或延迟的支付请求
+* GTR的金丝雀路由功能最初为迁移而构建,现已成为支付网络架构的关键永久组件
+
+**[Read Original / 阅读原文](https://americanexpress.io/migrating-the-payments-network-twice/)**
+
+### Why I Love NixOS: A Declarative, Reproducible Operating System
+
+* **Core Philosophy**: NixOS is built on the Nix package manager, which provides deterministic and reproducible functional package management - allowing you to construct an entire OS as a predictable result of Nix DSL configuration
+* **State Management**: Unlike traditional operating systems that accumulate state over time through installations and tweaks, NixOS lets you define your entire system declaratively and rebuild it from first principles
+* **Unified Configuration**: All system aspects - packages, desktop settings, keyboard behavior - can be specified in one declarative setup, eliminating the need to chase configurations across multiple locations
+* **Stability & Longevity**: With predictable six-month release cycles, automatic updates, and both stable and unstable channels, NixOS provides reliable operation without upgrade anxiety
+* **Safe Experimentation**: Isolated package shells allow trying new software without mutating the base system, making experimentation cheap and reversible
+* **Cross-Platform Consistency**: The same Nix package manager works across macOS, Linux, and FreeBSD, providing uniform tooling and dependency management
+* **LLM-Era Workflow**: Perfectly suited for modern AI coding agents that need specific tool versions - agents can use `nix shell` or `nix develop` to create isolated environments without polluting the system
+* **Reproducible Development**: Agent experiments can be captured in `flake.nix` files, transforming ad-hoc sessions into verifiable, reproducible artifacts
+* **Deployment Benefits**: Using `dockerTools.buildLayeredImage` creates deterministic, layered Docker images that are smaller and more reliable than traditional approaches
+* **Coherent Ecosystem**: One unified model spans laptop configuration, shell environments, project dependencies, CI pipelines, and deployment artifacts
+
+### 为什么我喜欢 NixOS:声明式、可复现的操作系统
+
+* **核心理念**:NixOS 基于 Nix 包管理器构建,提供确定性和可复现的函数式包管理 - 允许你通过 Nix DSL 配置构建整个操作系统,结果可预测
+* **状态管理**:与传统操作系统通过安装和调整逐渐积累状态不同,NixOS 让你以声明式方式定义整个系统,并可从第一原理重建
+* **统一配置**:所有系统方面 - 软件包、桌面设置、键盘行为 - 都可在一个声明式配置中指定,无需在多个位置追踪配置
+* **稳定性与长期支持**:具有可预测的六个月发布周期、自动更新,以及稳定和不稳定通道,NixOS 提供可靠运行且无升级焦虑
+* **安全实验**:隔离的包环境允许尝试新软件而不改变基础系统,使实验成本低且可逆
+* **跨平台一致性**:同一个 Nix 包管理器可在 macOS、Linux 和 FreeBSD 上工作,提供统一的工具链和依赖管理
+* **LLM 时代工作流**:完美适配现代 AI 编码代理,这些代理需要特定工具版本 - 代理可使用 `nix shell` 或 `nix develop` 创建隔离环境而不污染系统
+* **可复现开发**:代理实验可捕获在 `flake.nix` 文件中,将临时会话转化为可验证、可复现的构件
+* **部署优势**:使用 `dockerTools.buildLayeredImage` 创建确定性、分层的 Docker 镜像,比传统方法更小更可靠
+* **统一生态系统**:一个统一模型涵盖笔记本配置、Shell 环境、项目依赖、CI 流水线和部署构件
+
+**[Read Original / 阅读原文](https://www.birkey.co/2026-03-22-why-i-love-nixos.html)**
 
