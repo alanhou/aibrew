@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 23, 2026"
 date: 2026-03-23
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -730,4 +730,91 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **统一生态系统**:一个统一模型涵盖笔记本配置、Shell 环境、项目依赖、CI 流水线和部署构件
 
 **[Read Original / 阅读原文](https://www.birkey.co/2026-03-22-why-i-love-nixos.html)**
+
+### POSSE: Publish on Your Own Site, Syndicate Elsewhere
+
+* POSSE means publishing content on your own website first, then sharing copies or links to social media platforms with links back to your original post
+* Key benefits include reducing third-party dependence, maintaining content ownership, controlling canonical URLs, and enabling better search of your content
+* The practice prioritizes staying connected with friends on their preferred platforms while keeping your content under your control
+* Implementation involves posting to your site first, then automatically or manually syndicating to platforms like Twitter, Facebook, Medium, or WordPress with links back to the original
+* POSSE differs from traditional blogging by focusing on current relationships over architectural ideals, making it more practical than pure federation approaches
+* When syndicating, include permashortlinks to your original content for discovery, to subvert content scrapers, and to improve search engine ranking of your posts
+
+### POSSE：在自己的网站发布，向其他平台联合发布
+
+* POSSE 是指先在自己的网站上发布内容，然后将副本或链接分享到社交媒体平台，并附上指向原始帖子的链接
+* 主要优势包括减少对第三方的依赖、保持内容所有权、控制规范 URL，以及实现更好的内容搜索
+* 这种做法优先考虑在朋友偏好的平台上保持联系，同时将内容保留在自己的控制之下
+* 实施方式是先发布到自己的网站，然后自动或手动联合发布到 Twitter、Facebook、Medium 或 WordPress 等平台，并附上返回原文的链接
+* POSSE 与传统博客不同，它关注当前的人际关系而非架构理想，使其比纯粹的联邦方法更实用
+* 联合发布时，应包含指向原始内容的永久短链接，以便于发现、防止内容抓取，并提高原始帖子的搜索引擎排名
+
+**[Read Original / 阅读原文](https://indieweb.org/POSSE)**
+
+### Can You Get Root With Only a Cigarette Lighter?
+
+* A security researcher demonstrates achieving root access using just a cigarette lighter
+* The technique exploits physical hardware vulnerabilities through unconventional methods
+* Published by David Buchanan on October 7th, 2024
+* Proves that physical access can bypass traditional security measures
+* Highlights the importance of physical security in addition to software protections
+
+### 仅用打火机就能获取 Root 权限？
+
+* 安全研究人员演示了仅使用打火机就能获取 root 访问权限
+* 该技术通过非常规方法利用物理硬件漏洞
+* 由 David Buchanan 于 2024 年 10 月 7 日发布
+* 证明物理访问可以绕过传统安全措施
+* 强调了物理安全与软件保护同等重要
+
+**[Read Original / 阅读原文](https://www.da.vidbuchanan.co.uk/blog/dram-emfi.html)**
+
+<!-- [Title-Only] -->
+### Show HN: The King Wen Permutation: [52, 10, 2]
+
+**Note: This introduction is based solely on the title, as the article content could not be fetched.**
+
+* This article likely explores a mathematical pattern or sequence called the "King Wen Permutation" with the specific values [52, 10, 2]. King Wen is historically associated with the I Ching (Book of Changes), an ancient Chinese divination text, suggesting this work may connect mathematical permutations with the ordering of the 64 hexagrams in the I Ching.
+* This could be interesting to readers who appreciate the intersection of mathematics, ancient philosophy, and pattern recognition. It may reveal hidden mathematical structures in classical Chinese texts or demonstrate how ancient wisdom systems can be analyzed through modern computational methods.
+
+---
+
+### Show HN: 文王排列：[52, 10, 2]
+
+**注：本简介仅基于标题推测，未能获取文章正文内容。**
+
+* 这篇文章可能探讨了一个名为"文王排列"的数学模式或序列，具体数值为 [52, 10, 2]。文王在历史上与《易经》（周易）密切相关，这表明该研究可能将数学排列与《易经》中64卦的排序规律联系起来。
+* 对于喜欢数学、古代哲学和模式识别交叉领域的读者来说，这可能很有意思。文章可能揭示了中国古典文献中隐藏的数学结构，或展示了如何用现代计算方法分析古代智慧系统。
+
+**[Read Original / 阅读原文](https://gzw1987-bit.github.io/iching-math/)**
+
+### dbskill - Business Diagnostic Toolkit Extracted from 12,307 Tweets
+
+* **What it does**: A comprehensive business diagnostic toolkit for Claude Code that analyzes business models, content strategy, execution blockers, and concept deconstruction. Built from 4,176 knowledge atoms extracted from dontbesilent's 12,307 tweets.
+
+* **Key features**: 
+  - 7 diagnostic tools covering business model validation, competitor benchmarking, content creation, video hooks, execution psychology, and concept deconstruction
+  - Austrian economics chatroom with Hayek × Mises × Claude dialogue
+  - Fully open knowledge base: 4,176 structured knowledge atoms (JSONL), 10 methodology documents, and 700+ real business cases
+  - Skills auto-recommend next steps (e.g., diagnosis → benchmark → content → hook → action)
+  - Modular design - use the entire toolkit or extract individual components for your own AI projects
+
+* **Why it's notable**: Transforms years of business insights into actionable AI skills with a completely open knowledge architecture. The structured atom library (with topics, confidence scores, and skill associations) makes it ideal for RAG systems, custom chatbots, or standalone learning - you don't need Claude Code to benefit from the methodology. The v2 rebuild replaced raw tweet dumps with curated knowledge atoms and inline case studies, making it production-ready for business diagnostics.
+
+---
+
+### dbskill - 从 12,307 条推文提炼的商业诊断工具箱
+
+* **功能介绍**: 为 Claude Code 打造的商业诊断工具套件,涵盖商业模式诊断、对标分析、内容创作、短视频开头优化、执行力诊断和概念拆解。从 dontbesilent 的 12,307 条推文中提取 4,176 个知识原子构建而成。
+
+* **主要特点**:
+  - 7 个诊断工具覆盖商业模式验证、竞品对标、内容策略、视频钩子、执行心理学和概念解构
+  - 奥派经济学聊天室(哈耶克 × 米塞斯 × Claude 三方对话)
+  - 完全开放的知识库:4,176 个结构化知识原子(JSONL 格式)、10 个方法论文档、700+ 真实商业案例
+  - Skill 间自动推荐下一步(如:诊断 → 对标 → 内容 → 开头 → 执行)
+  - 模块化设计 - 可整套使用或提取单个组件用于自己的 AI 项目
+
+* **为何值得关注**: 将多年商业洞察转化为可执行的 AI 技能,知识架构完全开放。结构化的原子库(带主题标签、置信度评分和 Skill 关联)非常适合 RAG 系统、定制聊天机器人或独立学习 - 无需 Claude Code 也能使用方法论。v2 版本用精选知识原子和内联案例替代了原始推文堆叠,使其成为生产级的商业诊断工具。
+
+**[View Repository / 查看仓库](https://github.com/dontbesilent2025/dbskill)**
 
