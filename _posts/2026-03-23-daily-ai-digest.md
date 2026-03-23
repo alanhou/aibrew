@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 23, 2026"
 date: 2026-03-23
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -596,4 +596,66 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 适合对 AI 辅助编程能力和视觉动画技术感兴趣的开发者观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=-e6f34KyTgI)**
+
+### The Gold Standard of Optimization: RollerCoaster Tycoon's Technical Mastery
+
+* RollerCoaster Tycoon (1999) was written almost entirely in Assembly by Chris Sawyer, making it likely the last major game developed this way
+* The game achieved remarkable performance, simulating thousands of agents in full theme parks on 1999 hardware without performance issues
+* OpenRCT2, a 100% compatible re-implementation, provides insight into the original's aggressive optimization techniques
+* Memory optimization: Different money values use different data types (1-4 bytes) based on expected value ranges to minimize memory usage
+* Bit shifting replaces multiplication/division operations - shifting left doubles values, shifting right halves them, avoiding costly arithmetic operations
+* Game formulas were specifically designed around powers of two (2, 4, 8, 16) to enable bit shifting optimizations
+* The unified role of designer and programmer allowed Chris Sawyer to optimize at every level, from game mechanics to CPU instruction efficiency
+* While Assembly provided performance benefits in 1999, modern compilers have narrowed this gap, though RCT's optimization philosophy remains exemplary
+
+### 优化的黄金标准：过山车大亨的技术解析
+
+* 《过山车大亨》(1999) 由 Chris Sawyer 几乎完全用汇编语言编写，可能是最后一款以这种方式开发的大型游戏
+* 该游戏实现了卓越的性能表现，在1999年的硬件上模拟完整主题公园中的数千个智能体而不出现性能问题
+* OpenRCT2 是一个100%兼容的重新实现版本，为我们揭示了原版游戏激进的优化技术
+* 内存优化：不同的金钱数值根据预期值范围使用不同的数据类型(1-4字节)以最小化内存占用
+* 位移操作替代乘除法运算 - 左移使数值翻倍，右移使数值减半，避免了昂贵的算术运算
+* 游戏公式专门围绕2的幂次(2、4、8、16)设计，以实现位移优化
+* 设计师与程序员的统一角色使 Chris Sawyer 能够从游戏机制到CPU指令效率的各个层面进行优化
+* 虽然汇编语言在1999年提供了性能优势，但现代编译器已经缩小了这一差距，不过《过山车大亨》的优化理念仍然堪称典范
+
+**[Read Original / 阅读原文](https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/)**
+
+### Reports of Code's Death Are Greatly Exaggerated
+
+* **The Precision Paradox**: English specifications feel precise until you try to implement them - programming, like writing, requires iterative refinement to sharpen vague ideas into concrete reality
+* **Vibe Coding's Illusion**: AI enables rapid English-to-code translation, creating the illusion that natural language vibes are precise abstractions - but they leak when complexity and scale increase, as demonstrated by a viral collaborative text editor that crashed
+* **Abstraction as Complexity Master**: The human brain can only handle 7±2 things simultaneously, so we compress complexity through abstraction - this is programming's best part, creating precise semantic levels to master unlimited complexity
+* **The AGI Future**: When AGI arrives, we won't use it to ship more slop - we'll use superhuman intelligence to create better abstractions, better code, and better solutions to hard problems like collaborative editing
+* **Code as Poetry**: Code isn't just about the software it produces - it's a centrally important artifact itself. Just as ChatGPT won't replace great novelists, AI won't kill coding; it will help us write better code and solve harder abstraction problems
+* **The Real Revolution**: Society wrongly believes coding is dead, but AI is actually a boon for programming - formalism and precise abstractions will become more valuable, not less, as we gain tools to master greater complexity
+
+### 代码之死的报道被严重夸大了
+
+* **精确性悖论**：英语规范在实现之前感觉很精确——编程就像写作一样，需要迭代改进才能将模糊的想法锐化为具体的现实
+* **氛围编程的幻觉**：AI 实现了快速的英语到代码转换，造成自然语言"氛围"是精确抽象的错觉——但当复杂性和规模增加时它们会泄漏，正如一个病毒式传播的协作文本编辑器崩溃所证明的那样
+* **抽象是复杂性的主宰**：人脑一次只能处理 7±2 件事，所以我们通过抽象来压缩复杂性——这是编程最精彩的部分，创建精确的语义层次来掌控无限的复杂性
+* **AGI 的未来**：当 AGI 到来时，我们不会用它来生产更多垃圾——我们会用超人智能创建更好的抽象、更好的代码，以及协作编辑等难题的更好解决方案
+* **代码即诗歌**：代码不仅仅关乎它产生的软件——它本身就是一个核心重要的产物。正如 ChatGPT 不会取代伟大的小说家，AI 不会杀死编程；它会帮助我们编写更好的代码并解决更难的抽象问题
+* **真正的革命**：社会错误地认为编程已死，但 AI 实际上是编程的福音——形式化和精确抽象将变得更有价值，而不是更少，因为我们获得了掌控更大复杂性的工具
+
+**[Read Original / 阅读原文](https://stevekrouse.com/precision)**
+
+### Intuitions for Transformer Circuits: Understanding Mechanistic Interpretability
+
+* The post explores mechanistic interpretability (MI) - reverse engineering neural networks to understand why transformers work mathematically, motivated by AI alignment and safety concerns
+* The residual stream functions as shared memory (like DRAM) where different model components perform parallel loads/stores, with learned subspaces preventing interference between layers
+* Attention computes the "token" part of memory addressing by probabilistically selecting which source token positions to read from, creating soft distributions over token indices
+* Two fundamental circuits enable information flow: QK circuits (bilinear) determine attention patterns between queries and keys, while OV circuits (linear) specify which subspaces to read and write
+* The author recommends hands-on practice through ARENA's "Intro to Mech Interp" exercises for truly understanding these concepts, beyond just reading the mathematical framework
+
+### Transformer 电路的直觉理解:理解机械可解释性
+
+* 本文探讨机械可解释性(MI)——对神经网络进行逆向工程以从数学层面理解 transformer 的工作原理,其动机源于 AI 对齐和安全问题
+* 残差流充当共享内存(类似 DRAM),不同模型组件并行执行加载/存储操作,通过学习的子空间防止层间干扰
+* 注意力机制计算内存寻址的"token"部分,通过概率方式选择要读取的源 token 位置,在 token 索引上创建软分布
+* 两个基本电路实现信息流动:QK 电路(双线性)确定查询和键之间的注意力模式,OV 电路(线性)指定读写哪些子空间
+* 作者建议通过 ARENA 的"机械可解释性入门"练习进行实践操作,这比仅阅读数学框架更能真正理解这些概念
+
+**[Read Original / 阅读原文](https://www.connorjdavis.com/p/intuitions-for-transformer-circuits)**
 
