@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 23, 2026"
 date: 2026-03-23
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，10个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -586,199 +586,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 ChatGPT vs Gemini — 玻璃沙漏动画
-
-**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
-
-* 对比 ChatGPT 和 Gemini 两个 AI 模型创建玻璃沙漏动画的能力
-* 展示使用 HTML、CSS 和 JavaScript 的实际编码实现
-* 呈现两个 AI 助手在生成前端代码方面的实际差异
-* 适合对 AI 辅助编程能力和视觉动画技术感兴趣的开发者观看
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-e6f34KyTgI)**
-
-### The Gold Standard of Optimization: RollerCoaster Tycoon's Technical Mastery
-
-* RollerCoaster Tycoon (1999) was written almost entirely in Assembly by Chris Sawyer, making it likely the last major game developed this way
-* The game achieved remarkable performance, simulating thousands of agents in full theme parks on 1999 hardware without performance issues
-* OpenRCT2, a 100% compatible re-implementation, provides insight into the original's aggressive optimization techniques
-* Memory optimization: Different money values use different data types (1-4 bytes) based on expected value ranges to minimize memory usage
-* Bit shifting replaces multiplication/division operations - shifting left doubles values, shifting right halves them, avoiding costly arithmetic operations
-* Game formulas were specifically designed around powers of two (2, 4, 8, 16) to enable bit shifting optimizations
-* The unified role of designer and programmer allowed Chris Sawyer to optimize at every level, from game mechanics to CPU instruction efficiency
-* While Assembly provided performance benefits in 1999, modern compilers have narrowed this gap, though RCT's optimization philosophy remains exemplary
-
-### 优化的黄金标准：过山车大亨的技术解析
-
-* 《过山车大亨》(1999) 由 Chris Sawyer 几乎完全用汇编语言编写，可能是最后一款以这种方式开发的大型游戏
-* 该游戏实现了卓越的性能表现，在1999年的硬件上模拟完整主题公园中的数千个智能体而不出现性能问题
-* OpenRCT2 是一个100%兼容的重新实现版本，为我们揭示了原版游戏激进的优化技术
-* 内存优化：不同的金钱数值根据预期值范围使用不同的数据类型(1-4字节)以最小化内存占用
-* 位移操作替代乘除法运算 - 左移使数值翻倍，右移使数值减半，避免了昂贵的算术运算
-* 游戏公式专门围绕2的幂次(2、4、8、16)设计，以实现位移优化
-* 设计师与程序员的统一角色使 Chris Sawyer 能够从游戏机制到CPU指令效率的各个层面进行优化
-* 虽然汇编语言在1999年提供了性能优势，但现代编译器已经缩小了这一差距，不过《过山车大亨》的优化理念仍然堪称典范
-
-**[Read Original / 阅读原文](https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/)**
-
-### Reports of Code's Death Are Greatly Exaggerated
-
-* **The Precision Paradox**: English specifications feel precise until you try to implement them - programming, like writing, requires iterative refinement to sharpen vague ideas into concrete reality
-* **Vibe Coding's Illusion**: AI enables rapid English-to-code translation, creating the illusion that natural language vibes are precise abstractions - but they leak when complexity and scale increase, as demonstrated by a viral collaborative text editor that crashed
-* **Abstraction as Complexity Master**: The human brain can only handle 7±2 things simultaneously, so we compress complexity through abstraction - this is programming's best part, creating precise semantic levels to master unlimited complexity
-* **The AGI Future**: When AGI arrives, we won't use it to ship more slop - we'll use superhuman intelligence to create better abstractions, better code, and better solutions to hard problems like collaborative editing
-* **Code as Poetry**: Code isn't just about the software it produces - it's a centrally important artifact itself. Just as ChatGPT won't replace great novelists, AI won't kill coding; it will help us write better code and solve harder abstraction problems
-* **The Real Revolution**: Society wrongly believes coding is dead, but AI is actually a boon for programming - formalism and precise abstractions will become more valuable, not less, as we gain tools to master greater complexity
-
-### 代码之死的报道被严重夸大了
-
-* **精确性悖论**：英语规范在实现之前感觉很精确——编程就像写作一样，需要迭代改进才能将模糊的想法锐化为具体的现实
-* **氛围编程的幻觉**：AI 实现了快速的英语到代码转换，造成自然语言"氛围"是精确抽象的错觉——但当复杂性和规模增加时它们会泄漏，正如一个病毒式传播的协作文本编辑器崩溃所证明的那样
-* **抽象是复杂性的主宰**：人脑一次只能处理 7±2 件事，所以我们通过抽象来压缩复杂性——这是编程最精彩的部分，创建精确的语义层次来掌控无限的复杂性
-* **AGI 的未来**：当 AGI 到来时，我们不会用它来生产更多垃圾——我们会用超人智能创建更好的抽象、更好的代码，以及协作编辑等难题的更好解决方案
-* **代码即诗歌**：代码不仅仅关乎它产生的软件——它本身就是一个核心重要的产物。正如 ChatGPT 不会取代伟大的小说家，AI 不会杀死编程；它会帮助我们编写更好的代码并解决更难的抽象问题
-* **真正的革命**：社会错误地认为编程已死，但 AI 实际上是编程的福音——形式化和精确抽象将变得更有价值，而不是更少，因为我们获得了掌控更大复杂性的工具
-
-**[Read Original / 阅读原文](https://stevekrouse.com/precision)**
-
-### Intuitions for Transformer Circuits: Understanding Mechanistic Interpretability
-
-* The post explores mechanistic interpretability (MI) - reverse engineering neural networks to understand why transformers work mathematically, motivated by AI alignment and safety concerns
-* The residual stream functions as shared memory (like DRAM) where different model components perform parallel loads/stores, with learned subspaces preventing interference between layers
-* Attention computes the "token" part of memory addressing by probabilistically selecting which source token positions to read from, creating soft distributions over token indices
-* Two fundamental circuits enable information flow: QK circuits (bilinear) determine attention patterns between queries and keys, while OV circuits (linear) specify which subspaces to read and write
-* The author recommends hands-on practice through ARENA's "Intro to Mech Interp" exercises for truly understanding these concepts, beyond just reading the mathematical framework
-
-### Transformer 电路的直觉理解:理解机械可解释性
-
-* 本文探讨机械可解释性(MI)——对神经网络进行逆向工程以从数学层面理解 transformer 的工作原理,其动机源于 AI 对齐和安全问题
-* 残差流充当共享内存(类似 DRAM),不同模型组件并行执行加载/存储操作,通过学习的子空间防止层间干扰
-* 注意力机制计算内存寻址的"token"部分,通过概率方式选择要读取的源 token 位置,在 token 索引上创建软分布
-* 两个基本电路实现信息流动:QK 电路(双线性)确定查询和键之间的注意力模式,OV 电路(线性)指定读写哪些子空间
-* 作者建议通过 ARENA 的"机械可解释性入门"练习进行实践操作,这比仅阅读数学框架更能真正理解这些概念
-
-**[Read Original / 阅读原文](https://www.connorjdavis.com/p/intuitions-for-transformer-circuits)**
-
-### Tin Can: A WiFi "Landline" Phone Helping Parents Delay Kids' Cellphone Use
-
-* **Product Overview**: Tin Can is a $75 WiFi-enabled home phone with parental controls that allows only approved contacts to call during approved hours, offering a free plan for Tin Can-to-Tin Can calls
-* **Market Response**: The Seattle-based startup has sold tens of thousands of units since launching in early 2025, with orders backordered until December after raising $3.5 million in funding
-* **Parent Appeal**: Addresses the growing movement of parents delaying cellphones for kids while solving the communication gap—allowing children social autonomy without smartphone risks like social media and internet access
-* **Real-World Use**: Parents like LA mom Alison Bennett are embracing "full '90s" strategies, combining Tin Can phones with MP3 players and DVDs to keep kids connected without mobile devices
-* **Founder Motivation**: Created by three Seattle-area dads who discovered kids "lost their minds" with excitement over the prototype, enabling children to independently arrange playdates without parental mediation
-* **Educational Benefit**: Teaches phone etiquette to a generation where some Gen Zers don't even say "hello" when answering calls
-
-### Tin Can:"固定电话"帮助家长推迟孩子使用手机
-
-* **产品概述**:Tin Can 是一款售价 75 美元的 WiFi 家用电话,具有家长控制功能,仅允许经批准的联系人在批准的时间段内通话,提供 Tin Can 用户之间免费通话计划
-* **市场反响**:这家西雅图初创公司自 2025 年初推出以来已售出数万台设备,在筹集 350 万美元资金后,订单已排至 12 月
-* **家长青睐**:满足了越来越多家长推迟给孩子配手机的需求,同时解决了沟通难题——让孩子拥有社交自主权,却无需承担智能手机带来的社交媒体和互联网风险
-* **实际应用**:洛杉矶妈妈 Alison Bennett 等家长正在采用"完全 90 年代"策略,将 Tin Can 电话与 MP3 播放器和 DVD 结合使用,让孩子保持联系而无需移动设备
-* **创始人动机**:由三位西雅图地区的父亲创建,他们发现孩子们对原型机"欣喜若狂",使儿童能够独立安排玩伴聚会,无需父母中介
-* **教育价值**:向新一代教授电话礼仪,因为部分 Z 世代接电话时甚至不说"你好"
-
-**[Read Original / 阅读原文](https://www.businessinsider.com/tin-can-landline-kids-cellphone-cell-alternative-how-2025-9)**
-
-### Migrating the Payments Network Twice with Zero Downtime
-
-* American Express successfully migrated their payments network twice without any customer-impacting downtime or transaction interruptions
-* The first migration transitioned from a legacy payments network to a new microservices-based architecture using a three-stage approach: connection migration, shadow traffic validation, and canary routing
-* The Global Transaction Router (GTR) was introduced as a gateway to manage long-lived TCP connections and route ISO8583 payment messages with minimal protocol understanding
-* Shadow traffic capability allowed validation of payment processing logic in production-like environments by replaying live traffic to the new platform
-* Canary deployment principles enabled gradual migration of live traffic in small percentages (1%, 5%, 10%, etc.) with immediate rollback capability if anomalies were detected
-* The second migration moved the entire payments processing platform from legacy Kubernetes infrastructure to a new Kubernetes environment, reusing the same traffic control patterns
-* Both migrations operated under strict constraints: no downtime, no functionality regressions, consistent latency/throughput, and zero dropped or delayed payment requests
-* The GTR's canary routing capability, initially built for migration, became a critical permanent component of the Payments Network architecture
-
-### 两次零停机迁移支付网络
-
-* 美国运通成功完成了两次支付网络迁移,期间没有任何影响客户的停机时间或交易中断
-* 第一次迁移采用三阶段方法从传统支付网络过渡到新的微服务架构:连接迁移、影子流量验证和金丝雀路由
-* 引入全球交易路由器(GTR)作为网关,管理长连接TCP连接并路由ISO8583支付消息,仅需最少的协议理解
-* 影子流量功能通过将实时流量重放到新平台,在类生产环境中验证支付处理逻辑
-* 金丝雀部署原则使实时流量能够以小百分比(1%、5%、10%等)逐步迁移,并在检测到异常时立即回滚
-* 第二次迁移将整个支付处理平台从传统Kubernetes基础设施迁移到新的Kubernetes环境,重用了相同的流量控制模式
-* 两次迁移都在严格约束下运行:零停机、无功能回退、一致的延迟/吞吐量、零丢失或延迟的支付请求
-* GTR的金丝雀路由功能最初为迁移而构建,现已成为支付网络架构的关键永久组件
-
-**[Read Original / 阅读原文](https://americanexpress.io/migrating-the-payments-network-twice/)**
-
-### Why I Love NixOS: A Declarative, Reproducible Operating System
-
-* **Core Philosophy**: NixOS is built on the Nix package manager, which provides deterministic and reproducible functional package management - allowing you to construct an entire OS as a predictable result of Nix DSL configuration
-* **State Management**: Unlike traditional operating systems that accumulate state over time through installations and tweaks, NixOS lets you define your entire system declaratively and rebuild it from first principles
-* **Unified Configuration**: All system aspects - packages, desktop settings, keyboard behavior - can be specified in one declarative setup, eliminating the need to chase configurations across multiple locations
-* **Stability & Longevity**: With predictable six-month release cycles, automatic updates, and both stable and unstable channels, NixOS provides reliable operation without upgrade anxiety
-* **Safe Experimentation**: Isolated package shells allow trying new software without mutating the base system, making experimentation cheap and reversible
-* **Cross-Platform Consistency**: The same Nix package manager works across macOS, Linux, and FreeBSD, providing uniform tooling and dependency management
-* **LLM-Era Workflow**: Perfectly suited for modern AI coding agents that need specific tool versions - agents can use `nix shell` or `nix develop` to create isolated environments without polluting the system
-* **Reproducible Development**: Agent experiments can be captured in `flake.nix` files, transforming ad-hoc sessions into verifiable, reproducible artifacts
-* **Deployment Benefits**: Using `dockerTools.buildLayeredImage` creates deterministic, layered Docker images that are smaller and more reliable than traditional approaches
-* **Coherent Ecosystem**: One unified model spans laptop configuration, shell environments, project dependencies, CI pipelines, and deployment artifacts
-
-### 为什么我喜欢 NixOS:声明式、可复现的操作系统
-
-* **核心理念**:NixOS 基于 Nix 包管理器构建,提供确定性和可复现的函数式包管理 - 允许你通过 Nix DSL 配置构建整个操作系统,结果可预测
-* **状态管理**:与传统操作系统通过安装和调整逐渐积累状态不同,NixOS 让你以声明式方式定义整个系统,并可从第一原理重建
-* **统一配置**:所有系统方面 - 软件包、桌面设置、键盘行为 - 都可在一个声明式配置中指定,无需在多个位置追踪配置
-* **稳定性与长期支持**:具有可预测的六个月发布周期、自动更新,以及稳定和不稳定通道,NixOS 提供可靠运行且无升级焦虑
-* **安全实验**:隔离的包环境允许尝试新软件而不改变基础系统,使实验成本低且可逆
-* **跨平台一致性**:同一个 Nix 包管理器可在 macOS、Linux 和 FreeBSD 上工作,提供统一的工具链和依赖管理
-* **LLM 时代工作流**:完美适配现代 AI 编码代理,这些代理需要特定工具版本 - 代理可使用 `nix shell` 或 `nix develop` 创建隔离环境而不污染系统
-* **可复现开发**:代理实验可捕获在 `flake.nix` 文件中,将临时会话转化为可验证、可复现的构件
-* **部署优势**:使用 `dockerTools.buildLayeredImage` 创建确定性、分层的 Docker 镜像,比传统方法更小更可靠
-* **统一生态系统**:一个统一模型涵盖笔记本配置、Shell 环境、项目依赖、CI 流水线和部署构件
-
-**[Read Original / 阅读原文](https://www.birkey.co/2026-03-22-why-i-love-nixos.html)**
-
-### POSSE: Publish on Your Own Site, Syndicate Elsewhere
-
-* POSSE means publishing content on your own website first, then sharing copies or links to social media platforms with links back to your original post
-* Key benefits include reducing third-party dependence, maintaining content ownership, controlling canonical URLs, and enabling better search of your content
-* The practice prioritizes staying connected with friends on their preferred platforms while keeping your content under your control
-* Implementation involves posting to your site first, then automatically or manually syndicating to platforms like Twitter, Facebook, Medium, or WordPress with links back to the original
-* POSSE differs from traditional blogging by focusing on current relationships over architectural ideals, making it more practical than pure federation approaches
-* When syndicating, include permashortlinks to your original content for discovery, to subvert content scrapers, and to improve search engine ranking of your posts
-
-### POSSE：在自己的网站发布，向其他平台联合发布
-
-* POSSE 是指先在自己的网站上发布内容，然后将副本或链接分享到社交媒体平台，并附上指向原始帖子的链接
-* 主要优势包括减少对第三方的依赖、保持内容所有权、控制规范 URL，以及实现更好的内容搜索
-* 这种做法优先考虑在朋友偏好的平台上保持联系，同时将内容保留在自己的控制之下
-* 实施方式是先发布到自己的网站，然后自动或手动联合发布到 Twitter、Facebook、Medium 或 WordPress 等平台，并附上返回原文的链接
-* POSSE 与传统博客不同，它关注当前的人际关系而非架构理想，使其比纯粹的联邦方法更实用
-* 联合发布时，应包含指向原始内容的永久短链接，以便于发现、防止内容抓取，并提高原始帖子的搜索引擎排名
-
-**[Read Original / 阅读原文](https://indieweb.org/POSSE)**
-
-### Can You Get Root With Only a Cigarette Lighter?
-
-* A security researcher demonstrates achieving root access using just a cigarette lighter
-* The technique exploits physical hardware vulnerabilities through unconventional methods
-* Published by David Buchanan on October 7th, 2024
-* Proves that physical access can bypass traditional security measures
-* Highlights the importance of physical security in addition to software protections
-
-### 仅用打火机就能获取 Root 权限？
-
-* 安全研究人员演示了仅使用打火机就能获取 root 访问权限
-* 该技术通过非常规方法利用物理硬件漏洞
-* 由 David Buchanan 于 2024 年 10 月 7 日发布
-* 证明物理访问可以绕过传统安全措施
-* 强调了物理安全与软件保护同等重要
-
-**[Read Original / 阅读原文](https://www.da.vidbuchanan.co.uk/blog/dram-emfi.html)**
-
-<!-- [Title-Only] -->
-### Show HN: The King Wen Permutation: [52, 10, 2]
-
-**Note: This introduction is based solely on the title, as the article content could not be fetched.**
-
-* This article likely explores a mathematical pattern or sequence called the "King Wen Permutation" with the specific values [52, 10, 2]. King Wen is historically associated with the I Ching (Book of Changes), an ancient Chinese divination text, suggesting this work may connect mathematical permutations with the ordering of the 64 hexagrams in the I Ching.
-* This could be interesting to readers who appreciate the intersection of mathematics, ancient philosophy, and pattern recognition. It may reveal hidden mathematical structures in classical Chinese texts or demonstrate how ancient wisdom systems can be analyzed through modern computational methods.
-
----
-
 ### Show HN: 文王排列：[52, 10, 2]
 
 **注：本简介仅基于标题推测，未能获取文章正文内容。**
@@ -817,4 +624,229 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 将多年商业洞察转化为可执行的 AI 技能,知识架构完全开放。结构化的原子库(带主题标签、置信度评分和 Skill 关联)非常适合 RAG 系统、定制聊天机器人或独立学习 - 无需 Claude Code 也能使用方法论。v2 版本用精选知识原子和内联案例替代了原始推文堆叠,使其成为生产级的商业诊断工具。
 
 **[View Repository / 查看仓库](https://github.com/dontbesilent2025/dbskill)**
+
+### Migrating to the EU: A Tech Services Migration Journey
+
+* Author migrated personal services from non-EU to EU providers for data protection and geopolitical reasons
+* **Email**: Switched from Fastmail ($10/month) to Uberspace (pay-what-you-want) for email hosting with unlimited domains and flexible sender addresses
+* **Calendar**: Deployed NextCloud on Uberspace for CalDAV/CardDAV functionality, using Thunderbird (desktop) and DAVx5 + Fossil Calendar (Android)
+* **Web Hosting**: Consolidated website hosting to Uberspace, eliminating need for separate Hetzner VPS; adapted SSI implementation from Nginx to Apache
+* **Domains/DNS**: Migrated from Namecheap to hosting.de (Germany-based) for domain registration and DNS management
+* **Git Repositories**: Moved all code from GitHub to Codeberg.org, a German nonprofit organization
+* **VPN**: Retained Mullvad (Sweden) at €5/month for its proven no-logging policy and straightforward pricing
+* **Mobile/Computing**: Purchased Pixel 9a with GrapheneOS for personal use; exploring MX Linux on MacBook Air as Chromebook replacement
+
+### 迁移至欧盟:技术服务迁移之旅
+
+* 作者因数据保护和地缘政治原因,将个人服务从非欧盟国家迁移至欧盟服务商
+* **电子邮件**:从 Fastmail(每月10美元)切换到 Uberspace(自定价格),支持无限域名和灵活发件人地址
+* **日历**:在 Uberspace 上部署 NextCloud 实现 CalDAV/CardDAV 功能,桌面使用 Thunderbird,Android 使用 DAVx5 + Fossil Calendar
+* **网站托管**:将网站整合到 Uberspace,取消独立的 Hetzner VPS;将 SSI 实现从 Nginx 适配到 Apache
+* **域名/DNS**:从 Namecheap 迁移到 hosting.de(德国)进行域名注册和 DNS 管理
+* **Git 仓库**:将所有代码从 GitHub 迁移到德国非营利组织 Codeberg.org
+* **VPN**:保留 Mullvad(瑞典),每月5欧元,因其经过验证的无日志政策和透明定价
+* **移动/计算设备**:购买 Pixel 9a 安装 GrapheneOS 供个人使用;尝试在 MacBook Air 上安装 MX Linux 以替代 Chromebook
+
+**[Read Original / 阅读原文](https://rz01.org/eu-migration/)**
+
+<!-- [Title-Only] -->
+### Attractive students no longer receive better results as classes moved online
+
+* Based on the title, this article likely examines research showing that physical attractiveness bias in academic grading disappeared when education shifted to remote/online formats during the pandemic or similar transitions
+* This is interesting because it suggests that in-person interactions may introduce unconscious bias in educational assessment, where attractive students receive preferential treatment. The shift to online learning appears to have created a more equitable evaluation environment by reducing face-to-face contact between instructors and students
+
+### 线上教学消除了"颜值优势"：外貌出众的学生不再获得更好成绩
+
+* 根据标题推测，这篇文章可能探讨了一项研究发现：当课堂转为线上教学后，学生的外貌吸引力不再影响其学业成绩表现
+* 这个话题值得关注，因为它揭示了传统面对面教学中可能存在的无意识偏见——外貌出众的学生往往能获得更好的评价。而线上教学通过减少师生面对面接触，似乎创造了一个更加公平的评估环境
+
+**[Read Original / 阅读原文](https://www.sciencedirect.com/science/article/pii/S016517652200283X)**
+
+### POSSE: Publish on Your Own Site, Syndicate Elsewhere
+
+* POSSE means publishing content on your own website first, then sharing copies or links to social media platforms with links back to your original post
+* Key benefits include reducing third-party dependence, maintaining content ownership, controlling canonical URLs, and enabling better search of your content
+* The practice prioritizes staying connected with friends on their preferred platforms while keeping your content under your control
+* POSSE goes beyond traditional blogging by letting you maintain relationships across multiple platforms while owning your data
+* Implementation involves posting to your site first, then automatically or manually syndicating to platforms like Twitter, Facebook, Medium, and WordPress
+* Linking back to your original content helps with discovery, subverts content scrapers, and improves search engine rankings for your posts
+* The approach is considered more robust than PESOS (Publish Elsewhere, Syndicate to Own Site) because you establish direct ownership from the start
+
+### POSSE：先在自己网站发布，再同步到其他平台
+
+* POSSE 是指先在自己的网站上发布内容，然后将副本或链接分享到社交媒体平台，并附上指向原始帖子的链接
+* 主要优势包括减少对第三方的依赖、保持内容所有权、控制规范 URL，以及实现更好的内容搜索
+* 这种做法优先考虑在朋友偏好的平台上保持联系，同时保持对内容的控制权
+* POSSE 超越了传统博客的范畴，让你能够在多个平台上维护关系的同时拥有自己的数据
+* 实施方式是先发布到自己的网站，然后自动或手动同步到 Twitter、Facebook、Medium 和 WordPress 等平台
+* 链接回原始内容有助于内容发现、对抗内容抓取者，并提高原始帖子的搜索引擎排名
+* 这种方法被认为比 PESOS（先在其他平台发布，再同步到自己网站）更可靠，因为你从一开始就建立了直接的所有权
+
+**[Read Original / 阅读原文](https://indieweb.org/POSSE)**
+
+### DeerFlow - Open-Source SuperAgent Harness for Research, Coding, and Creation
+
+* **What it does**: DeerFlow is a comprehensive AI agent orchestration framework that coordinates sub-agents, memory systems, and sandboxed environments to handle complex, multi-hour tasks involving research, coding, and content creation.
+
+* **Key features**: 
+  - Extensible skill system with tool integration (including Claude Code and MCP servers)
+  - Multi-agent orchestration with specialized sub-agents for different tasks
+  - Sandboxed execution environments for safe code running
+  - Long-term memory and context engineering for maintaining state across sessions
+  - Support for multiple LLM providers (OpenAI, Anthropic, OpenRouter, ByteDance Doubao)
+  - Built-in web search and crawling via InfoQuest integration
+  - Docker-based deployment with hot-reload development mode
+
+* **Why it's notable**: Version 2.0 represents a complete ground-up rewrite that hit #1 on GitHub Trending with 3,569 stars today. It transforms from a deep research framework into a full-fledged super agent harness, offering production-ready orchestration of complex AI workflows. Backed by ByteDance and featuring integration with their Volcengine Doubao models, it provides enterprise-grade capabilities for developers building sophisticated AI agent systems.
+
+---
+
+### DeerFlow - 开源超级智能体框架，用于研究、编码和创作
+
+* **功能介绍**: DeerFlow 是一个全面的 AI 智能体编排框架，通过协调子智能体、记忆系统和沙箱环境，处理涉及研究、编码和内容创作的复杂多小时任务。
+
+* **主要特点**:
+  - 可扩展的技能系统，支持工具集成（包括 Claude Code 和 MCP 服务器）
+  - 多智能体编排，针对不同任务使用专门的子智能体
+  - 沙箱执行环境，确保代码安全运行
+  - 长期记忆和上下文工程，跨会话维护状态
+  - 支持多个大语言模型提供商（OpenAI、Anthropic、OpenRouter、字节跳动豆包）
+  - 通过 InfoQuest 集成内置网络搜索和爬虫功能
+  - 基于 Docker 的部署，支持热重载开发模式
+
+* **为何值得关注**: 2.0 版本是完全重写的版本，今日获得 3,569 星标并登顶 GitHub Trending 榜首。它从深度研究框架转变为成熟的超级智能体框架，为构建复杂 AI 工作流提供生产级编排能力。由字节跳动支持，集成火山引擎豆包模型，为开发者构建高级 AI 智能体系统提供企业级功能。
+
+**[View Repository / 查看仓库](https://github.com/bytedance/deer-flow)**
+
+### Project N.O.M.A.D. - Self-Contained Offline Survival Computer with AI and Knowledge Base
+
+* **What it does**: A comprehensive offline-first knowledge server that bundles critical tools, AI chat, educational content, offline Wikipedia, maps, and data utilities into a single self-contained system accessible through a browser interface.
+
+* **Key features**: 
+  * Local AI chat with document upload and semantic search (Ollama + Qdrant)
+  * Offline Wikipedia and educational resources (Kiwix + Kolibri with Khan Academy)
+  * Downloadable regional maps, encryption tools, note-taking, and system benchmarking
+  * Docker-based architecture with a management UI ("Command Center") for easy installation and updates
+  * Zero telemetry, no authentication by design, works completely offline after initial setup
+
+* **Why it's notable**: Gained 4,148 stars today as a unique "survival computer" concept that prioritizes offline access to knowledge and AI tools. Unlike typical lightweight offline solutions, N.O.M.A.D. is designed for powerful hardware (GPU-backed systems) to run local LLMs effectively. It addresses growing concerns about internet dependency and information access during emergencies or connectivity issues, while maintaining privacy with no built-in telemetry.
+
+---
+
+### Project N.O.M.A.D. - 离线生存计算机：集成AI与知识库的自包含系统
+
+* **功能介绍**: 一个全面的离线优先知识服务器，将关键工具、AI聊天、教育内容、离线维基百科、地图和数据工具整合到一个可通过浏览器访问的自包含系统中。
+
+* **主要特点**:
+  * 本地AI聊天，支持文档上传和语义搜索（Ollama + Qdrant）
+  * 离线维基百科和教育资源（Kiwix + Kolibri，包含可汗学院课程）
+  * 可下载的区域地图、加密工具、笔记功能和系统基准测试
+  * 基于Docker架构，配备管理界面（"指挥中心"），便于安装和更新
+  * 零遥测数据收集，设计上无需身份验证，初始设置后完全离线运行
+
+* **为何值得关注**: 今日获得4,148星标，作为独特的"生存计算机"概念备受关注，优先考虑离线访问知识和AI工具。与典型的轻量级离线解决方案不同，N.O.M.A.D.专为强大硬件（GPU支持系统）设计，以有效运行本地大语言模型。该项目回应了人们对互联网依赖和紧急情况下信息获取的日益关注，同时通过零内置遥测保护隐私。
+
+**[View Repository / 查看仓库](https://github.com/Crosstalk-Solutions/project-nomad)**
+
+### browser-use/browser-use - Make Websites Accessible for AI Agents
+
+* **What it does**: Browser-Use is a Python library that enables AI agents to autonomously control web browsers and automate online tasks. It provides a framework for LLMs to interact with websites through actions like clicking, typing, form-filling, and navigation.
+
+* **Key features**: 
+  - Multi-LLM support (ChatBrowserUse, Google Gemini, Claude, Ollama, etc.)
+  - Custom tool integration for extending agent capabilities
+  - CLI for fast, persistent browser automation
+  - Cloud service option for stealth-enabled, scalable browser automation
+  - Real browser profile support for authentication handling
+  - Template quickstart system for rapid setup
+
+* **Why it's notable**: Gaining 1,160 stars today, Browser-Use stands out as a production-ready solution for AI-powered web automation. It offers both open-source flexibility and a managed cloud service, making it accessible for developers at any scale. The library's optimized ChatBrowserUse model completes tasks 3-5x faster than alternatives, and its comprehensive documentation plus real-world examples (job applications, grocery shopping, PC building) demonstrate practical applications beyond simple web scraping.
+
+---
+
+### browser-use/browser-use - 让 AI 智能体能够访问和操作网站
+
+* **功能介绍**: Browser-Use 是一个 Python 库,使 AI 智能体能够自主控制网页浏览器并自动化在线任务。它为大语言模型提供了与网站交互的框架,支持点击、输入、表单填写和导航等操作。
+
+* **主要特点**:
+  - 支持多种大语言模型(ChatBrowserUse、Google Gemini、Claude、Ollama 等)
+  - 自定义工具集成,可扩展智能体功能
+  - 命令行界面,实现快速持久的浏览器自动化
+  - 云服务选项,提供隐身模式和可扩展的浏览器自动化
+  - 支持真实浏览器配置文件,便于身份验证处理
+  - 模板快速启动系统,加速项目搭建
+
+* **为何值得关注**: Browser-Use 今日获得 1,160 星标,作为一个生产就绪的 AI 网页自动化解决方案脱颖而出。它同时提供开源灵活性和托管云服务,适合各种规模的开发者使用。该库优化的 ChatBrowserUse 模型完成任务的速度比其他方案快 3-5 倍,其全面的文档和实际应用案例(求职申请、杂货购物、组装电脑)展示了超越简单网页抓取的实用价值。
+
+**[View Repository / 查看仓库](https://github.com/browser-use/browser-use)**
+
+### 🎬 LLMs haven't really gotten "smarter" - but the tools we use with them have
+**Channel:** freeCodeCamp.org
+
+* What the video covers: An analysis of the evolution of Large Language Models (LLMs) and the distinction between model intelligence improvements versus tooling advancements
+* Key topics discussed: The plateau in LLM core capabilities, how surrounding tools and frameworks have enhanced AI utility, and predictions for the future direction of AI development
+* Why it's worth watching: Provides a nuanced perspective on AI progress that challenges common assumptions about model improvements, helping developers and tech enthusiasts understand where real innovation is happening in the AI ecosystem
+
+### 🎬 大语言模型并没有真正变得"更聪明"——但我们使用的工具变强了
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 深入分析大语言模型(LLM)的演进过程,区分模型智能本身的提升与工具链的进步
+* 主要话题: LLM核心能力的发展瓶颈、周边工具和框架如何增强AI实用性、以及AI发展的未来趋势预测
+* 为何值得观看: 提供了关于AI进步的独特视角,挑战了关于模型改进的常见假设,帮助开发者和技术爱好者理解AI生态系统中真正的创新发生在哪里
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=H_3sWUR9v7A)**
+
+### 🎬 Do you understand your exec's calendar?
+
+**Channel:** Lenny's Podcast
+
+* What the video covers: This video explores how to interpret and understand an executive's calendar as a key skill for effective collaboration and career advancement
+* Key topics discussed: Reading calendar patterns, understanding executive priorities through time allocation, improving communication with leadership, and leveraging calendar insights for better alignment
+* Why it's worth watching: Essential viewing for anyone working closely with executives or aspiring to leadership roles—learn how to decode what matters most to your leaders and position yourself as a strategic partner rather than just a task executor
+
+### 🎬 你了解你的高管日程表吗?
+
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨如何解读和理解高管的日程安排,这是有效协作和职业发展的关键技能
+* 主要话题: 解读日程模式、通过时间分配理解高管优先事项、改善与领导层的沟通、利用日程洞察实现更好的战略对齐
+* 为何值得观看: 对于与高管密切合作或渴望晋升领导岗位的人来说必看——学习如何解码领导最关心的事项,将自己定位为战略合作伙伴而非单纯的任务执行者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=H6qf_cQJZMo)**
+
+### 🎬 Claude Code Essentials
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive tutorial on using Claude Code to build practical agentic coding workflows, demonstrating how AI can assist in real-world development scenarios
+* Key topics discussed: Claude Code fundamentals, agentic workflow patterns, hands-on implementation techniques, and practical coding automation strategies
+* Why it's worth watching: Developed by ExamProChannel for freeCodeCamp, this course provides actionable skills for leveraging AI coding assistants in your development workflow, helping you work more efficiently with modern AI-powered tools
+
+### 🎬 Claude Code 基础教程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 全面讲解如何使用 Claude Code 构建实用的智能编码工作流,展示 AI 如何在真实开发场景中提供帮助
+* 主要话题: Claude Code 基础知识、智能工作流模式、实践操作技巧以及实用的编码自动化策略
+* 为何值得观看: 由 ExamProChannel 为 freeCodeCamp 制作,本课程提供可操作的技能,帮助你在开发工作流中充分利用 AI 编码助手,提升现代 AI 工具的使用效率
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=brLhhkUqcn4)**
+
+### 🎬 Learn to code by getting hands on 😎
+
+**Channel:** softwarewithnick
+
+* What the video covers: A motivational short emphasizing the importance of practical, hands-on experience when learning to code
+* Key topics discussed: Learning by doing, practical coding approach, getting started with programming through active practice rather than passive consumption
+* Why it's worth watching: Quick inspiration for beginners who might be stuck in tutorial hell or overthinking their coding journey—reinforces that the best way to learn programming is to actually write code and build things
+
+---
+
+### 🎬 通过动手实践学习编程 😎
+
+**频道:** softwarewithnick
+
+* 视频内容概述: 一个激励性短视频,强调学习编程时动手实践的重要性
+* 主要话题: 边做边学、实用编程方法、通过主动实践而非被动学习来开始编程之旅
+* 为何值得观看: 为可能陷入"教程地狱"或过度思考的初学者提供快速激励——强化了学习编程的最佳方式就是实际编写代码和构建项目
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qbzipHrA3nQ)**
 
