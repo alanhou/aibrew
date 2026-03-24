@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 24, 2026"
 date: 2026-03-24
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -488,4 +488,162 @@ pin: false
 * 为何值得观看: 学习如何在无需持续订阅费用的情况下使用 Claude 强大的 AI 编程助手，让任何预算的开发者都能使用先进的 AI 开发工具
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=DPuZafJ6UEs)**
+
+<!-- [Title-Only] -->
+### Windows 3.1 Tiled Background .bmp Archive
+
+* Based on the title, this appears to be a GitHub repository containing a collection of the classic bitmap (.bmp) background images that shipped with Windows 3.1, the iconic operating system released by Microsoft in 1992
+* This archive likely preserves the nostalgic tiled wallpapers that defined the aesthetic of early 90s computing - those repeating patterns and textures that many users remember from their first PC experiences
+* It might be interesting to readers who appreciate digital preservation, retro computing history, or designers looking for authentic vintage assets. The repository could serve as both a nostalgia trip and a resource for understanding early GUI design patterns
+
+### Windows 3.1 平铺背景 .bmp 图像存档
+
+* 根据标题推测,这是一个 GitHub 仓库,收录了 Windows 3.1 系统自带的经典位图(.bmp)背景图片集合。Windows 3.1 是微软在 1992 年发布的标志性操作系统
+* 该存档可能保存了定义 90 年代初期计算机美学的怀旧平铺壁纸 - 那些许多用户在第一台 PC 上记忆犹新的重复图案和纹理
+* 对于喜欢数字保存、复古计算机历史的读者,或寻找真实复古素材的设计师来说,这个项目值得关注。该仓库既是一次怀旧之旅,也是理解早期图形用户界面设计模式的资源
+
+**[Read Original / 阅读原文](https://github.com/andreasjansson/win-3.1-backgrounds)**
+
+<!-- [Title-Only] -->
+### FCC Updates Covered List to Include Foreign-Made Consumer Routers
+
+* Based on the title, this article likely discusses the Federal Communications Commission's (FCC) decision to add foreign-manufactured consumer routers to its "Covered List" - a catalog of communications equipment deemed to pose national security risks to U.S. networks and infrastructure.
+* This is significant because it may affect which router brands consumers and businesses can purchase, potentially impacting popular networking equipment from certain countries. The update reflects growing concerns about supply chain security and foreign surveillance capabilities in networking hardware.
+
+### FCC 更新涵盖清单,纳入外国制造的消费级路由器
+
+* 根据标题推测,本文可能讨论美国联邦通信委员会(FCC)决定将外国制造的消费级路由器纳入其"涵盖清单"——该清单列出了被认为对美国网络和基础设施构成国家安全风险的通信设备。
+* 这一更新值得关注,因为它可能影响消费者和企业可以购买的路由器品牌,可能会波及某些国家的热门网络设备。此举反映了人们对供应链安全和网络硬件中外国监控能力的日益担忧。
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content was not available.*
+
+**[Read Original / 阅读原文](https://www.fcc.gov/document/fcc-updates-covered-list-include-foreign-made-consumer-routers)**
+
+### Ju Ci: The Ancient Art of Repairing Porcelain
+
+* Ju ci (锔瓷) is a Chinese craft of repairing broken porcelain dating back to the Song dynasty (960-1279), now recognized by UNESCO as intangible cultural heritage
+* The technique involves embedding metal staples (copper, iron, gold, or silver) into fractured ceramics through careful drilling and placement to restore both functionality and beauty
+* Similar to Japanese Kintsugi, Ju ci embraces the philosophy of "beauty of the imperfect," celebrating flaws and transforming cracks into stories of resilience
+* The craft requires extraordinary skill to work with fragile porcelain while preserving the aesthetic integrity of the original object
+* Mended pieces gain renewed identity, with visible repairs serving as meaningful scars that tell a story rather than hiding damage
+
+### 锔瓷：修复瓷器的古老艺术
+
+* 锔瓷是一种中国传统修复破损瓷器的工艺，可追溯至宋代（960-1279年），现已被联合国教科文组织认定为非物质文化遗产
+* 该技艺通过在破碎的陶瓷上嵌入金属锔钉（铜、铁、金或银）来恢复器物的功能性和美感，需要精心钻孔和仔细放置
+* 与日本金继工艺相似，锔瓷秉承"残缺之美"的哲学理念，赞颂瑕疵并将裂痕转化为韧性的故事
+* 这门手艺需要高超的技巧，在处理易碎瓷器的同时保持原物的美学完整性
+* 修复后的器物获得新的身份，可见的修补痕迹成为有意义的"伤疤"，讲述故事而非隐藏损伤
+
+**[Read Original / 阅读原文](https://thesublimeblog.org/2025/03/13/ju-ci-the-ancient-art-of-repairing-porcelain/)**
+
+### claude-peers-mcp - Let Your Claude Code Instances Communicate Across Sessions
+
+* **What it does**: Enables multiple Claude Code instances running on the same machine to discover each other and exchange messages in real-time, allowing coordination across different projects and terminal sessions.
+
+* **Key features**:
+  - Peer discovery scoped by machine, directory, or git repository
+  - Instant message delivery via channel protocol with automatic push notifications
+  - Auto-generated summaries of what each instance is working on (using GPT-4-nano if OpenAI API key provided)
+  - Localhost-only broker daemon with SQLite backend for security
+  - CLI tools for inspecting and managing peer connections
+  - Automatic cleanup of dead peer sessions
+
+* **Why it's notable**: Solves a real pain point for developers juggling multiple Claude Code sessions - instead of manually copying context between terminals, Claude instances can now ask each other questions and share information autonomously. The implementation is elegant (broker + MCP servers + channel push) and the use case is immediately practical for anyone running parallel development workflows. With nearly 1K stars, it's gaining traction as a power-user tool for Claude Code.
+
+---
+
+### claude-peers-mcp - 让你的 Claude Code 实例跨会话通信
+
+* **功能介绍**: 允许同一台机器上运行的多个 Claude Code 实例相互发现并实时交换消息,实现跨项目和终端会话的协作。
+
+* **主要特点**:
+  - 按机器、目录或 Git 仓库范围发现对等实例
+  - 通过 channel 协议即时推送消息,自动通知
+  - 自动生成每个实例的工作摘要(如提供 OpenAI API 密钥,使用 GPT-4-nano)
+  - 仅限本地的 broker 守护进程,使用 SQLite 后端保证安全
+  - 提供 CLI 工具检查和管理对等连接
+  - 自动清理失效的会话
+
+* **为何值得关注**: 解决了开发者同时运行多个 Claude Code 会话时的实际痛点——无需手动在终端间复制上下文,Claude 实例现在可以自主地相互提问和共享信息。实现方式优雅(broker + MCP 服务器 + channel 推送),使用场景对任何并行开发工作流都立即实用。接近 1K 星标,正成为 Claude Code 高级用户的热门工具。
+
+**[View Repository / 查看仓库](https://github.com/louislva/claude-peers-mcp)**
+
+### 🎬 Why Italian Cities Survived After Rome Fell - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of how Italian cities maintained continuity and survived the collapse of the Roman Empire, examining the unique factors that allowed urban centers in Italy to persist when other Roman territories saw their cities decline or disappear.
+
+* Key topics discussed: The structural and cultural reasons behind Italian urban resilience, the role of infrastructure and institutions in preserving city life, differences between Italy's experience and other former Roman provinces, and the historical mechanisms that enabled this exceptional survival.
+
+* Why it's worth watching: Ada Palmer brings academic rigor to a fascinating historical puzzle—why Italy's urban tradition never truly died while cities elsewhere crumbled. This offers valuable insights into institutional resilience, path dependency, and how civilizations maintain continuity through catastrophic transitions.
+
+---
+
+### 🎬 为什么意大利城市在罗马帝国衰落后得以幸存 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨意大利城市如何在罗马帝国崩溃后保持连续性并存活下来,研究使意大利城市中心得以延续的独特因素,而其他罗马领土的城市则衰落或消失。
+
+* 主要话题: 意大利城市韧性背后的结构性和文化原因、基础设施和制度在保护城市生活中的作用、意大利经历与其他前罗马行省的差异,以及实现这种特殊存续的历史机制。
+
+* 为何值得观看: Ada Palmer以学术严谨性解答了一个引人入胜的历史谜题——为什么意大利的城市传统从未真正消亡,而其他地方的城市却崩溃了。这为理解制度韧性、路径依赖以及文明如何在灾难性转型中保持连续性提供了宝贵见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=blsTU-FKZuI)**
+
+### 🎬 Subscribe for more coding tips⬆️ #cheat#exam#lotion#test#blackbox#professor
+**Channel:** Study with mishti
+
+* This video appears to be a short-form content piece promoting coding tips and educational content
+* Likely covers quick coding tricks, study techniques, or programming shortcuts aimed at students and learners
+* Worth watching if you're looking for bite-sized coding advice and want to follow a channel focused on programming education and study strategies
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Study with mishti
+
+* 这是一个推广编程技巧和教育内容的短视频
+* 可能涵盖快速编程技巧、学习方法或针对学生和学习者的编程捷径
+* 如果你正在寻找简短的编程建议,并希望关注专注于编程教育和学习策略的频道,值得一看
+
+---
+
+**Note:** The video title contains hashtags that may be misleading (#cheat, #exam). Based on the channel description, this appears to be legitimate educational content about coding skills rather than academic dishonesty. The actual content quality and relevance would need to be verified by watching the video.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qA4D40URfhM)**
+
+### 🎬 The only OpenClaw tutorial you'll ever need (March 2026 edition)
+**Channel:** Alex Finn
+
+* Comprehensive guide to OpenClaw, described as a groundbreaking AI tool for building AI employees
+* Complete walkthrough covering setup, configuration, and implementation of your first AI employee using OpenClaw
+* Worth watching for developers and businesses looking to leverage AI automation and understand how to deploy AI agents in production environments
+* March 2026 edition suggests this is an updated tutorial with the latest features and best practices
+
+### 🎬 你唯一需要的 OpenClaw 教程(2026年3月版)
+**频道:** Alex Finn
+
+* 全面介绍 OpenClaw——被称为最强大的 AI 工具,用于构建 AI 员工
+* 完整演示从设置、配置到实现第一个 AI 员工的全过程
+* 适合希望利用 AI 自动化的开发者和企业,深入了解如何在生产环境中部署 AI 代理
+* 2026年3月版本意味着包含最新功能和最佳实践的更新内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CxErCGVo-oo)**
+
+### 🎬 Bogo Sort | The fastest one (If you are lucky)
+**Channel:** onjsdev
+
+* What the video covers: An exploration of Bogo Sort, a highly inefficient sorting algorithm that works by randomly shuffling elements until they happen to be in order
+* Key topics discussed: How Bogo Sort operates through random permutations, why it's called "stupid sort" or "permutation sort", and the humorous concept that it could theoretically be the fastest sort if you get extremely lucky on the first try
+* Why it's worth watching: Perfect for understanding algorithm efficiency through a comedic example, great for learning what NOT to do in production code, and entertaining way to grasp the importance of algorithmic complexity in computer science
+
+### 🎬 Bogo 排序 | 最快的排序算法(如果你够幸运的话)
+**频道:** onjsdev
+
+* 视频内容概述: 介绍 Bogo 排序这种极其低效的排序算法,它通过不断随机打乱元素顺序,直到碰巧排列正确为止
+* 主要话题: Bogo 排序如何通过随机排列工作、为什么被称为"愚蠢排序"或"排列组合排序",以及一个幽默的概念——理论上如果第一次就走运,它可能是最快的排序算法
+* 为何值得观看: 通过一个搞笑的例子理解算法效率的绝佳视频,学习在生产代码中绝对不能做什么,用有趣的方式掌握算法复杂度在计算机科学中的重要性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KIyWsTxjPHY)**
 
