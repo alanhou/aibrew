@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 24, 2026"
 date: 2026-03-24
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -646,4 +646,75 @@ pin: false
 * 为何值得观看: 通过一个搞笑的例子理解算法效率的绝佳视频,学习在生产代码中绝对不能做什么,用有趣的方式掌握算法复杂度在计算机科学中的重要性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KIyWsTxjPHY)**
+
+### Breakthrough in Hypergraph Ramsey Theory: AI Solves Open Mathematical Problem
+
+* GPT-5.4 Pro successfully solved an open problem in hypergraph Ramsey theory, first elicited by Kevin Barreto and Liam Price, with the solution confirmed by problem contributor Will Brian
+* The problem involves finding improved lower bounds for H(n), a sequence related to simultaneous convergence of infinite series and partition sizes in hypergraphs
+* Brian noted the AI's approach eliminates inefficiencies in previous lower-bound constructions and mirrors the complexity of upper-bound constructions, achieving unusually tight matching bounds for Ramsey-theoretic problems
+* Multiple advanced AI models subsequently solved the problem using the developed testing scaffold: Opus 4.6 (max), Gemini 3.1 Pro, and GPT-5.4 (xhigh)
+* The solution will be written up for publication, with Barreto and Price offered coauthorship on resulting papers
+
+### 超图拉姆齐理论突破：AI 解决开放数学问题
+
+* GPT-5.4 Pro 成功解决了超图拉姆齐理论中的一个开放问题，由 Kevin Barreto 和 Liam Price 首次引导得出，问题贡献者 Will Brian 确认了该解决方案
+* 该问题涉及寻找 H(n) 的改进下界，H(n) 是与无穷级数同时收敛和超图中分割大小相关的序列
+* Brian 指出 AI 的方法消除了先前下界构造中的低效性，并反映了上界构造的复杂性，为拉姆齐理论问题实现了异常紧密的匹配界
+* 多个先进 AI 模型随后使用开发的测试框架解决了该问题：Opus 4.6 (max)、Gemini 3.1 Pro 和 GPT-5.4 (xhigh)
+* 该解决方案将撰写发表，Barreto 和 Price 可选择成为相关论文的共同作者
+
+**[Read Original / 阅读原文](https://epoch.ai/frontiermath/open-problems/ramsey-hypergraphs)**
+
+### Box of Secrets: Hacking an Apartment Intercom System
+
+* Friends discovered their apartment complex's Doorking intercom system stopped working after management failed to renew cellular service
+* Initial attempts included exploiting an unlocked Wi-Fi router (found default admin credentials and SSH access) and faking phone signals via DTMF, but both proved impractical
+* The breakthrough came from a "bottom-up" approach: accessing the junction box revealed direct control over the gate's solenoid (electromagnet lock)
+* Solution involved installing an ESP32 relay board as a man-in-the-middle device, powered by the intercom's 12V DC auxiliary power
+* Developed Rust firmware using the Matter protocol to integrate the gate lock into Apple Home for remote control
+* Major technical challenge was ESP32's limited RAM causing stack corruption when running Wi-Fi and Bluetooth simultaneously; solved by enabling only one stack at a time
+* Successfully deployed the hidden device in the junction box, creating a functional smart lock system that maintains fail-safe operation if the custom circuit fails
+
+### 秘密盒子：破解公寓对讲系统
+
+* 朋友发现公寓的 Doorking 对讲系统因物业未续费蜂窝服务而停止工作
+* 最初尝试包括利用未上锁的 Wi-Fi 路由器（发现默认管理员凭据和 SSH 访问）以及通过 DTMF 伪造电话信号，但都不切实际
+* 突破来自"自下而上"的方法：访问接线盒发现可以直接控制大门的电磁锁
+* 解决方案是安装 ESP32 继电器板作为中间人设备，由对讲机的 12V 直流辅助电源供电
+* 使用 Rust 开发固件，采用 Matter 协议将门锁集成到 Apple Home 实现远程控制
+* 主要技术挑战是 ESP32 的有限 RAM 在同时运行 Wi-Fi 和蓝牙时导致堆栈损坏；通过一次只启用一个堆栈解决
+* 成功在接线盒中部署隐藏设备，创建了功能性智能锁系统，即使自定义电路故障也能保持故障安全运行
+
+**[Read Original / 阅读原文](https://www.jackhogan.me/blog/box-of-secrets/)**
+
+<!-- [Title-Only] -->
+### Pompeii's Battle Scars Linked to an Ancient 'Machine Gun'
+
+* Based on the title, this article likely discusses new archaeological findings at Pompeii that reveal evidence of ancient warfare technology. Researchers appear to have discovered damage patterns or marks on structures that suggest the use of a rapid-fire projectile weapon, possibly a Roman ballista or similar siege engine that functioned like an early "machine gun."
+
+* This is fascinating because it challenges our understanding of ancient military technology and provides physical evidence of sophisticated weaponry in the Roman era. It also adds a new layer to Pompeii's history beyond the famous volcanic eruption, revealing the city may have experienced military conflict before its destruction in 79 AD.
+
+### 庞贝古城的战斗伤痕与古代"机关枪"有关
+
+* 根据标题推测,这篇文章可能讨论了在庞贝古城发现的新考古证据,揭示了古代战争技术的痕迹。研究人员似乎在建筑结构上发现了损伤模式或痕迹,表明曾使用过快速发射的投射武器,可能是罗马弩炮或类似的攻城器械,其功能类似于早期的"机关枪"。
+
+* 这项发现引人入胜,因为它挑战了我们对古代军事技术的认知,并提供了罗马时代精密武器的实物证据。它还为庞贝的历史增添了新的维度——除了公元79年著名的火山爆发之外,这座城市可能在毁灭之前还经历过军事冲突。
+
+**[Read Original / 阅读原文](https://phys.org/news/2026-03-pompeii-scars-linked-ancient-machine.html)**
+
+### 🎬 How to use Claude Code FREE Forever (Openrouter)
+**Channel:** Jack Roberts
+
+* What the video covers: A tutorial on accessing Claude's coding capabilities for free using Openrouter as an alternative to paid subscriptions
+* Key topics discussed: Setting up Openrouter integration, configuring Claude for coding tasks, cost-free access methods, and practical implementation steps
+* Why it's worth watching: Learn how to leverage Claude's powerful AI coding assistant without ongoing subscription costs, making advanced AI development tools accessible to developers on any budget
+
+### 🎬 如何永久免费使用 Claude Code (通过 Openrouter)
+**频道:** Jack Roberts
+
+* 视频内容概述: 教程演示如何通过 Openrouter 免费使用 Claude 的编程功能，替代付费订阅方案
+* 主要话题: Openrouter 集成设置、Claude 编程任务配置、免费访问方法以及实际操作步骤
+* 为何值得观看: 学习如何在无需持续订阅费用的情况下使用 Claude 强大的 AI 编程助手，让任何预算的开发者都能使用先进的 AI 开发工具
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DPuZafJ6UEs)**
 
