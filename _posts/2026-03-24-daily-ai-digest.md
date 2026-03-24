@@ -606,6 +606,97 @@ pin: false
 * 这是一个推广编程技巧和教育内容的短视频
 * 可能涵盖快速编程技巧、学习方法或针对学生和学习者的编程捷径
 * 如果你正在寻找简短的编程建议,并希望关注专注于编程教育和学习策略的频道,值得一看
+### Box of Secrets: Hacking an Apartment Intercom System
+
+* Friends discovered their apartment complex's Doorking intercom system stopped working after management failed to renew cellular service
+* Initial attempts included exploiting an unlocked Wi-Fi router (found default admin credentials and SSH access) and faking phone signals via DTMF, but both proved impractical
+* The breakthrough came from a "bottom-up" approach: accessing the junction box revealed direct control over the gate's solenoid (electromagnet lock)
+* Solution involved installing an ESP32 relay board as a man-in-the-middle device, powered by the intercom's 12V DC auxiliary power
+* Developed Rust firmware using Matter protocol to integrate the gate lock with Apple Home, allowing remote unlocking via smartphone
+* Major technical challenge was ESP32's limited RAM causing memory corruption when running Wi-Fi and Bluetooth simultaneously; solved by enabling only one stack at a time
+* Successfully deployed the hidden device in the junction box, making the gate controllable through Apple Home while maintaining system functionality if the custom circuit fails
+
+### 秘密盒子：破解公寓对讲系统
+
+* 朋友发现公寓的 Doorking 对讲系统因物业未续费蜂窝服务而停止工作
+* 最初尝试包括利用未上锁的 Wi-Fi 路由器（发现默认管理员凭据和 SSH 访问）以及通过 DTMF 伪造电话信号，但都不切实际
+* 突破来自"自下而上"的方法：访问接线盒发现可以直接控制大门的电磁锁
+* 解决方案是安装 ESP32 继电器板作为中间人设备，由对讲机的 12V 直流辅助电源供电
+* 使用 Rust 开发固件，采用 Matter 协议将门锁集成到 Apple Home，实现通过智能手机远程解锁
+* 主要技术挑战是 ESP32 的有限 RAM 在同时运行 Wi-Fi 和蓝牙时导致内存损坏；通过一次只启用一个协议栈解决
+* 成功将隐藏设备部署在接线盒中，使大门可通过 Apple Home 控制，同时在自定义电路故障时保持系统功能正常
+
+**[Read Original / 阅读原文](https://www.jackhogan.me/blog/box-of-secrets/)**
+
+### Visual Changelog for v0.13.0 - Logfile Navigator Major Updates
+
+* New custom text input widget replaces readline library, featuring improved tab-completion, multi-line support, and better syntax highlighting
+* Fuzzy history search (CTRL-R) now stored in SQLite database with command execution status tracking across sessions
+* Smart search suggestions automatically propose next words from displayed content during phrase searches
+* Enhanced :comment command with multi-line Markdown editing, live preview, clickable permalinks, and executable code blocks
+* Multi-line SQL/PRQL statement support with automatic formatting (CTRL-L to toggle) and improved query editing
+* Time column feature displays abbreviated timestamps and log levels in aligned left column, activated by scrolling right
+* Empty view messages provide helpful hints to use :open command when no files are loaded
+* Control characters in DB table cells now displayed as highlighted Unicode symbols
+* Permalinks for log messages available in parser details overlay (press 'p') and log_line_link column for easy reference
+* New measure_with_units SQLite collation function for proper sorting of numbers with unit suffixes (KB, ms, etc.)
+* System clipboard integration for cut/copy operations and prompt content export (CTRL-O)
+* Full mouse support in prompt including cursor positioning, text selection, and right-click copy
+
+### v0.13.0 版本可视化更新日志 - 日志文件导航器重大更新
+
+* 全新自定义文本输入组件取代 readline 库,提供改进的 Tab 补全、多行支持和更好的语法高亮
+* 模糊历史搜索(CTRL-R)现存储在 SQLite 数据库中,可跨会话追踪命令执行状态
+* 智能搜索建议功能在短语搜索时自动从显示内容中提议下一个单词
+* 增强的 :comment 命令支持多行 Markdown 编辑、实时预览、可点击的永久链接和可执行代码块
+* 多行 SQL/PRQL 语句支持,带自动格式化功能(CTRL-L 切换)和改进的查询编辑
+* 时间列功能在左侧对齐列中显示缩写时间戳和日志级别,通过向右滚动激活
+* 空视图消息在未加载文件时提供使用 :open 命令的有用提示
+* 数据库表格单元格中的控制字符现以高亮的 Unicode 符号显示
+* 日志消息永久链接可在解析器详情覆盖层(按 'p' 键)和 log_line_link 列中获取,便于引用
+* 新增 measure_with_units SQLite 排序函数,用于正确排序带单位后缀的数字(KB、ms 等)
+* 系统剪贴板集成支持剪切/复制操作和提示内容导出(CTRL-O)
+* 提示框完整鼠标支持,包括光标定位、文本选择和右键复制
+
+**[Read Original / 阅读原文](https://lnav.org/)**
+
+### ProofShot - Visual Proof for AI-Built Code
+
+* **Open-source verification tool** (MIT licensed) that provides visual proof when AI agents complete coding tasks
+* **Three-command workflow**: `start` (launches dev server + recording), `exec` (logs agent actions), `stop` (generates proof bundle)
+* **Comprehensive capture**: Records full browser sessions with video, screenshots, action timeline, console errors, and server logs
+* **Interactive HTML viewer**: Standalone file with synced video playback, action timeline, element labels, and screenshots
+* **Agent-agnostic design**: Works with any AI coding agent through simple CLI integration
+* **PR-ready output**: Generates SUMMARY.md and formatted artifacts for pull requests with visual diff comparison
+* **Smart error detection**: Scans browser console and server logs with pattern matching for JavaScript, Python, Go, Rust, and more
+* **Automatic optimization**: Trims dead time from recordings to show only relevant agent activity
+
+### ProofShot - AI 生成代码的可视化验证工具
+
+* **开源验证工具**(MIT 许可),为 AI 代理完成编码任务提供可视化证明
+* **三步命令工作流**:`start`(启动开发服务器+录制)、`exec`(记录代理操作)、`stop`(生成证明包)
+* **全面捕获**:录制完整浏览器会话,包含视频、截图、操作时间线、控制台错误和服务器日志
+* **交互式 HTML 查看器**:独立文件,包含同步视频播放、操作时间线、元素标签和截图
+* **代理无关设计**:通过简单的 CLI 集成,适用于任何 AI 编码代理
+* **PR 就绪输出**:生成 SUMMARY.md 和格式化的制品,用于拉取请求和可视化差异对比
+* **智能错误检测**:扫描浏览器控制台和服务器日志,支持 JavaScript、Python、Go、Rust 等语言的模式匹配
+* **自动优化**:自动修剪录制中的空闲时间,仅显示相关的代理活动
+
+**[Read Original / 阅读原文](https://proofshot.argil.io/)**
+
+### 🎬 Subscribe for more coding tips⬆️ #cheat#exam#lotion#test#blackbox#professor
+**Channel:** Study with mishti
+
+* This video appears to be a short-form content piece promoting coding tips and educational content
+* Likely covers quick coding tricks, study techniques, or programming shortcuts aimed at students and learners
+* Worth watching if you're looking for bite-sized coding advice and want to follow a channel focused on programming education and study strategies
+
+### 🎬 订阅获取更多编程技巧⬆️
+**频道:** Study with mishti
+
+* 这是一个推广编程技巧和教育内容的短视频
+* 可能涵盖快速编程技巧、学习方法或针对学生和学习者的编程捷径
+* 如果你正在寻找简短的编程建议,并希望关注专注于编程教育和学习策略的频道,值得一看
 
 ---
 
@@ -616,18 +707,16 @@ pin: false
 ### 🎬 The only OpenClaw tutorial you'll ever need (March 2026 edition)
 **Channel:** Alex Finn
 
-* Comprehensive guide to OpenClaw, described as a groundbreaking AI tool for building AI employees
-* Complete walkthrough covering setup, configuration, and implementation of your first AI employee using OpenClaw
-* Worth watching for developers and businesses looking to leverage AI automation and understand how to deploy AI agents in production environments
-* March 2026 edition suggests this is an updated tutorial with the latest features and best practices
+* Comprehensive guide to OpenClaw, positioned as a revolutionary AI tool for building AI employees
+* Complete walkthrough covering setup, configuration, and implementation of AI automation workflows
+* Worth watching for developers and businesses looking to leverage AI for task automation and building autonomous AI agents that can handle complex workflows
 
 ### 🎬 你唯一需要的 OpenClaw 教程(2026年3月版)
 **频道:** Alex Finn
 
-* 全面介绍 OpenClaw——被称为最强大的 AI 工具,用于构建 AI 员工
-* 完整演示从设置、配置到实现第一个 AI 员工的全过程
-* 适合希望利用 AI 自动化的开发者和企业,深入了解如何在生产环境中部署 AI 代理
-* 2026年3月版本意味着包含最新功能和最佳实践的更新内容
+* 全面介绍 OpenClaw 这一革命性 AI 工具,教你构建 AI 员工
+* 完整演示从设置、配置到实现 AI 自动化工作流程的全过程
+* 适合希望利用 AI 进行任务自动化、构建能处理复杂工作流程的自主 AI 代理的开发者和企业观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=CxErCGVo-oo)**
 
@@ -641,80 +730,27 @@ pin: false
 ### 🎬 Bogo 排序 | 最快的排序算法(如果你够幸运的话)
 **频道:** onjsdev
 
-* 视频内容概述: 介绍 Bogo 排序这种极其低效的排序算法,它通过不断随机打乱元素顺序,直到碰巧排列正确为止
-* 主要话题: Bogo 排序如何通过随机排列工作、为什么被称为"愚蠢排序"或"排列组合排序",以及一个幽默的概念——理论上如果第一次就走运,它可能是最快的排序算法
-* 为何值得观看: 通过一个搞笑的例子理解算法效率的绝佳视频,学习在生产代码中绝对不能做什么,用有趣的方式掌握算法复杂度在计算机科学中的重要性
+* 视频内容概述: 介绍 Bogo 排序这种极其低效的排序算法,它通过不断随机打乱元素直到碰巧排列正确为止
+* 主要话题: Bogo 排序如何通过随机排列工作,为什么被称为"愚蠢排序"或"排列组合排序",以及如果第一次就幸运地排对了,理论上它可能是最快的排序算法这一幽默概念
+* 为何值得观看: 通过一个搞笑的例子理解算法效率的绝佳方式,学习在生产代码中绝对不能做什么,用有趣的方式掌握算法复杂度在计算机科学中的重要性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KIyWsTxjPHY)**
 
-### Breakthrough in Hypergraph Ramsey Theory: AI Solves Open Mathematical Problem
+### 🎬 How to Make Viral Food Talking AI Videos | ChatGPT + Gemini Tutorial
+**Channel:** Entri Coding తెలుగు
 
-* GPT-5.4 Pro successfully solved an open problem in hypergraph Ramsey theory, first elicited by Kevin Barreto and Liam Price, with the solution confirmed by problem contributor Will Brian
-* The problem involves finding improved lower bounds for H(n), a sequence related to simultaneous convergence of infinite series and partition sizes in hypergraphs
-* Brian noted the AI's approach eliminates inefficiencies in previous lower-bound constructions and mirrors the complexity of upper-bound constructions, achieving unusually tight matching bounds for Ramsey-theoretic problems
-* Multiple advanced AI models subsequently solved the problem using the developed testing scaffold: Opus 4.6 (max), Gemini 3.1 Pro, and GPT-5.4 (xhigh)
-* The solution will be written up for publication, with Barreto and Price offered coauthorship on resulting papers
+* What the video covers: A step-by-step tutorial on creating engaging AI-powered videos where food items appear to talk, using a combination of ChatGPT, Google Gemini, and Google AI tools
+* Key topics discussed: AI video generation workflow, integrating multiple AI platforms (ChatGPT for scripting, Gemini for content generation), practical techniques for creating viral-worthy content with minimal technical expertise
+* Why it's worth watching: Perfect for content creators looking to jump on the viral AI video trend; offers a straightforward approach to combining popular AI tools for creative video production, with potential applications for social media marketing and entertainment
 
-### 超图拉姆齐理论突破：AI 解决开放数学问题
+---
 
-* GPT-5.4 Pro 成功解决了超图拉姆齐理论中的一个开放问题，由 Kevin Barreto 和 Liam Price 首次引导得出，问题贡献者 Will Brian 确认了该解决方案
-* 该问题涉及寻找 H(n) 的改进下界，H(n) 是与无穷级数同时收敛和超图中分割大小相关的序列
-* Brian 指出 AI 的方法消除了先前下界构造中的低效性，并反映了上界构造的复杂性，为拉姆齐理论问题实现了异常紧密的匹配界
-* 多个先进 AI 模型随后使用开发的测试框架解决了该问题：Opus 4.6 (max)、Gemini 3.1 Pro 和 GPT-5.4 (xhigh)
-* 该解决方案将撰写发表，Barreto 和 Price 可选择成为相关论文的共同作者
+### 🎬 如何制作病毒式传播的食物对话AI视频 | ChatGPT + Gemini 教程
+**频道:** Entri Coding తెలుగు
 
-**[Read Original / 阅读原文](https://epoch.ai/frontiermath/open-problems/ramsey-hypergraphs)**
+* 视频内容概述: 详细演示如何使用ChatGPT、Google Gemini和谷歌AI工具,通过简单步骤制作让食物"开口说话"的创意AI视频
+* 主要话题: AI视频生成工作流程、多个AI平台的整合应用(ChatGPT用于脚本创作,Gemini用于内容生成)、低技术门槛的病毒式内容制作技巧
+* 为何值得观看: 适合想要追赶AI视频热潮的内容创作者;提供了一套简单易行的方法,将热门AI工具组合用于创意视频制作,可应用于社交媒体营销和娱乐内容创作
 
-### Box of Secrets: Hacking an Apartment Intercom System
-
-* Friends discovered their apartment complex's Doorking intercom system stopped working after management failed to renew cellular service
-* Initial attempts included exploiting an unlocked Wi-Fi router (found default admin credentials and SSH access) and faking phone signals via DTMF, but both proved impractical
-* The breakthrough came from a "bottom-up" approach: accessing the junction box revealed direct control over the gate's solenoid (electromagnet lock)
-* Solution involved installing an ESP32 relay board as a man-in-the-middle device, powered by the intercom's 12V DC auxiliary power
-* Developed Rust firmware using the Matter protocol to integrate the gate lock into Apple Home for remote control
-* Major technical challenge was ESP32's limited RAM causing stack corruption when running Wi-Fi and Bluetooth simultaneously; solved by enabling only one stack at a time
-* Successfully deployed the hidden device in the junction box, creating a functional smart lock system that maintains fail-safe operation if the custom circuit fails
-
-### 秘密盒子：破解公寓对讲系统
-
-* 朋友发现公寓的 Doorking 对讲系统因物业未续费蜂窝服务而停止工作
-* 最初尝试包括利用未上锁的 Wi-Fi 路由器（发现默认管理员凭据和 SSH 访问）以及通过 DTMF 伪造电话信号，但都不切实际
-* 突破来自"自下而上"的方法：访问接线盒发现可以直接控制大门的电磁锁
-* 解决方案是安装 ESP32 继电器板作为中间人设备，由对讲机的 12V 直流辅助电源供电
-* 使用 Rust 开发固件，采用 Matter 协议将门锁集成到 Apple Home 实现远程控制
-* 主要技术挑战是 ESP32 的有限 RAM 在同时运行 Wi-Fi 和蓝牙时导致堆栈损坏；通过一次只启用一个堆栈解决
-* 成功在接线盒中部署隐藏设备，创建了功能性智能锁系统，即使自定义电路故障也能保持故障安全运行
-
-**[Read Original / 阅读原文](https://www.jackhogan.me/blog/box-of-secrets/)**
-
-<!-- [Title-Only] -->
-### Pompeii's Battle Scars Linked to an Ancient 'Machine Gun'
-
-* Based on the title, this article likely discusses new archaeological findings at Pompeii that reveal evidence of ancient warfare technology. Researchers appear to have discovered damage patterns or marks on structures that suggest the use of a rapid-fire projectile weapon, possibly a Roman ballista or similar siege engine that functioned like an early "machine gun."
-
-* This is fascinating because it challenges our understanding of ancient military technology and provides physical evidence of sophisticated weaponry in the Roman era. It also adds a new layer to Pompeii's history beyond the famous volcanic eruption, revealing the city may have experienced military conflict before its destruction in 79 AD.
-
-### 庞贝古城的战斗伤痕与古代"机关枪"有关
-
-* 根据标题推测,这篇文章可能讨论了在庞贝古城发现的新考古证据,揭示了古代战争技术的痕迹。研究人员似乎在建筑结构上发现了损伤模式或痕迹,表明曾使用过快速发射的投射武器,可能是罗马弩炮或类似的攻城器械,其功能类似于早期的"机关枪"。
-
-* 这项发现引人入胜,因为它挑战了我们对古代军事技术的认知,并提供了罗马时代精密武器的实物证据。它还为庞贝的历史增添了新的维度——除了公元79年著名的火山爆发之外,这座城市可能在毁灭之前还经历过军事冲突。
-
-**[Read Original / 阅读原文](https://phys.org/news/2026-03-pompeii-scars-linked-ancient-machine.html)**
-
-### 🎬 How to use Claude Code FREE Forever (Openrouter)
-**Channel:** Jack Roberts
-
-* What the video covers: A tutorial on accessing Claude's coding capabilities for free using Openrouter as an alternative to paid subscriptions
-* Key topics discussed: Setting up Openrouter integration, configuring Claude for coding tasks, cost-free access methods, and practical implementation steps
-* Why it's worth watching: Learn how to leverage Claude's powerful AI coding assistant without ongoing subscription costs, making advanced AI development tools accessible to developers on any budget
-
-### 🎬 如何永久免费使用 Claude Code (通过 Openrouter)
-**频道:** Jack Roberts
-
-* 视频内容概述: 教程演示如何通过 Openrouter 免费使用 Claude 的编程功能，替代付费订阅方案
-* 主要话题: Openrouter 集成设置、Claude 编程任务配置、免费访问方法以及实际操作步骤
-* 为何值得观看: 学习如何在无需持续订阅费用的情况下使用 Claude 强大的 AI 编程助手，让任何预算的开发者都能使用先进的 AI 开发工具
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DPuZafJ6UEs)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7QWoElzc6i8)**
 
