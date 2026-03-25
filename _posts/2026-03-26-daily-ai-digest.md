@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 26, 2026"
 date: 2026-03-26
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -296,4 +296,257 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 以讽刺yet富有洞察力的方式探讨软件开发中对AI的过度依赖,展示了将LLM用于确定性任务的荒谬性和不可预测性,对关注AI特性的开发者来说既有趣又发人深省
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b44TJfJv5Dk)**
+
+### Apple's Bug Report System: Closing Issues Without Fixes
+
+* Apple randomly closes bug reports if developers don't "verify" unfixed bugs within two weeks, even after years of silence
+* A developer filed a privacy bug (FB12088655) in March 2023 about network filter extension leaks, received no response for 3 years until asked to verify in beta
+* Apple threatened to close the report and assume it's fixed if not verified within 2 weeks, despite the bug still being reproducible in macOS 26.4
+* Another bug (FB22057274) about Safari pinned tabs was closed as "Unable to diagnose" despite being 100% reproducible with provided steps
+* The developer suspects Apple leadership incentivizes closing bug reports to artificially lower open ticket counts, regardless of whether bugs are actually fixed
+* Beta testing appears ineffective - a Safari crashing bug reported a month ago in iPadOS 26.4 beta still made it to public release
+
+### 苹果的漏洞报告系统：未修复就关闭问题
+
+* 苹果会随意关闭漏洞报告，除非开发者在两周内"验证"未修复的漏洞，即使苹果已经沉默数年
+* 一位开发者于2023年3月提交了关于网络过滤扩展泄漏的隐私漏洞（FB12088655），三年内未收到任何回复，直到被要求在测试版中验证
+* 苹果威胁称如果不在两周内验证就会关闭报告并假定漏洞已修复，尽管该漏洞在macOS 26.4中仍可重现
+* 另一个关于Safari固定标签页的漏洞（FB22057274）被标记为"无法诊断"而关闭，尽管提供了100%可重现的步骤
+* 开发者怀疑苹果管理层激励员工关闭漏洞报告以人为降低未解决工单数量，无论漏洞是否真正修复
+* 测试版测试似乎无效 - 一个月前在iPadOS 26.4测试版中报告的Safari崩溃漏洞仍然出现在公开发布版本中
+
+**[Read Original / 阅读原文](https://lapcatsoftware.com/articles/2026/3/11.html)**
+
+### Fight Chat Control - Protect Digital Privacy in the EU
+
+* The European People's Party (EPP/Conservatives) is attempting to force a new vote on Thursday, March 26th
+* This vote aims to reverse Parliament's previous rejection of indiscriminate digital scanning measures
+* Critics view this as an attack on democratic process and citizens' right to privacy
+* The initiative is part of the ongoing "Chat Control" debate in the EU
+* Citizens are being urged to take immediate action to contact representatives and oppose the measure
+
+### 抵制聊天监控 - 保护欧盟数字隐私
+
+* 欧洲人民党(EPP/保守派)试图在3月26日星期四强行进行新一轮投票
+* 该投票旨在推翻议会此前否决的无差别数字扫描措施
+* 批评者认为这是对民主程序和公民隐私权的攻击
+* 该倡议是欧盟正在进行的"聊天监控"辩论的一部分
+* 呼吁公民立即采取行动,联系代表并反对该措施
+
+**[Read Original / 阅读原文](https://fightchatcontrol.eu/?foo=bar)**
+
+<!-- [Title-Only] -->
+### My astrophotography in the movie Project Hail Mary
+
+* Based on the title, this article likely discusses how the author's astrophotography work was featured or used in the film adaptation of "Project Hail Mary" (Andy Weir's science fiction novel about a lone astronaut on a desperate mission to save Earth)
+* This would be interesting to readers who are fans of the book/movie, astrophotography enthusiasts, or anyone curious about how real astronomical imagery gets incorporated into Hollywood productions and the behind-the-scenes collaboration between scientists/photographers and filmmakers
+
+### 我的天文摄影作品出现在电影《挽救计划》中
+
+* 根据标题推测,这篇文章可能讲述了作者的天文摄影作品如何被用于电影《挽救计划》(改编自安迪·威尔的科幻小说,讲述一位孤独的宇航员执行拯救地球的绝望任务)
+* 对于该书/电影的粉丝、天文摄影爱好者,或任何对真实天文图像如何融入好莱坞制作以及科学家/摄影师与电影制作人之间幕后合作感兴趣的读者来说,这都值得一读
+
+---
+
+*Note: This introduction is based solely on the article title, as the actual content could not be accessed.*
+
+**[Read Original / 阅读原文](https://rpastro.square.site/s/stories/phm)**
+
+### last30days-skill - AI-Powered Multi-Platform Research Agent
+
+* **What it does**: Automatically researches any topic across 8+ platforms (Reddit, X/Twitter, YouTube, TikTok, Instagram, Hacker News, Polymarket, Bluesky) from the last 30 days, then synthesizes findings into a grounded narrative with real citations
+* **Key features**: Multi-signal quality scoring with engagement velocity and cross-platform convergence detection; Polymarket prediction market integration for real-money sentiment; comparative mode for side-by-side analysis; auto-saves research briefings to local markdown files; optional watchlist mode for scheduled monitoring; works with Claude Code, Gemini CLI, and OpenAI Codex
+* **Why it's notable**: Solves the "staying current" problem in fast-moving spaces like AI by aggregating what communities are actually upvoting, sharing, and betting on—not just keyword matches. The v2.9.5 release adds Bluesky support and comparative research mode, while maintaining a sophisticated scoring pipeline that ranked 4.38/5.0 vs 3.73/5.0 for earlier versions in blind testing
+
+### last30days-skill - AI 驱动的多平台研究智能体
+
+* **功能介绍**: 自动在 8+ 个平台(Reddit、X/Twitter、YouTube、TikTok、Instagram、Hacker News、Polymarket、Bluesky)上研究任意主题的近 30 天内容,并将发现综合成带真实引用的叙述性报告
+* **主要特点**: 多信号质量评分系统,结合参与度速率和跨平台趋同检测;集成 Polymarket 预测市场以获取真金白银的情绪指标;对比模式支持并排分析;自动保存研究简报为本地 Markdown 文件;可选监视列表模式用于定期监控;支持 Claude Code、Gemini CLI 和 OpenAI Codex
+* **为何值得关注**: 解决了在 AI 等快速发展领域"保持更新"的难题,通过聚合社区真正点赞、分享和下注的内容——而非仅仅关键词匹配。v2.9.5 版本新增 Bluesky 支持和对比研究模式,同时保持精密的评分管道(盲测中评分 4.38/5.0,早期版本为 3.73/5.0),今日获得 1,342 星标
+
+**[View Repository / 查看仓库](https://github.com/mvanhorn/last30days-skill)**
+
+### Pascal Editor - Create and Share 3D Architectural Projects
+
+* **What it does**: A web-based 3D building editor that lets you design architectural projects directly in the browser using WebGPU rendering. Create buildings with walls, floors, ceilings, zones, and place furniture/fixtures with real-time 3D visualization.
+
+* **Key features**: Built on React Three Fiber with a clean monorepo architecture separating core logic, 3D rendering, and editor UI. Features a node-based scene graph, spatial collision detection, CSG geometry operations for wall cutouts (doors/windows), undo/redo with IndexedDB persistence, and multiple level display modes (stacked/exploded/solo). Includes specialized tools for drawing walls, creating zones, and placing items.
+
+* **Why it's notable**: Gaining 2,353 stars today for bringing professional-grade 3D architectural editing to the web with WebGPU performance. The well-architected codebase with clear separation between viewer and editor concerns, plus the dirty-node system for efficient geometry updates, makes it a solid reference for building complex 3D web applications. The combination of React 19, Next.js 16, and Three.js with a robust state management approach (Zustand + Zundo) demonstrates modern web 3D development best practices.
+
+---
+
+### Pascal Editor - 创建和分享 3D 建筑项目
+
+* **功能介绍**: 基于浏览器的 3D 建筑编辑器,使用 WebGPU 渲染直接在网页中设计建筑项目。可创建包含墙体、地板、天花板、区域的建筑物,并放置家具/固定装置,实时 3D 可视化。
+
+* **主要特点**: 基于 React Three Fiber 构建,采用清晰的 monorepo 架构分离核心逻辑、3D 渲染和编辑器 UI。具有基于节点的场景图、空间碰撞检测、用于墙体开口(门窗)的 CSG 几何运算、支持撤销/重做的 IndexedDB 持久化,以及多种楼层显示模式(堆叠/展开/单独)。包含绘制墙体、创建区域和放置物品的专用工具。
+
+* **为何值得关注**: 今日获得 2,353 星,将专业级 3D 建筑编辑带入 Web 端并具备 WebGPU 性能。架构清晰,查看器与编辑器关注点分离明确,加上用于高效几何更新的脏节点系统,是构建复杂 3D Web 应用的优秀参考。结合 React 19、Next.js 16 和 Three.js,配合强大的状态管理方案(Zustand + Zundo),展示了现代 Web 3D 开发的最佳实践。
+
+**[View Repository / 查看仓库](https://github.com/pascalorg/editor)**
+
+### Claude Subconscious - Give Claude Code a Persistent Memory Layer
+
+* **What it does**: A background Letta agent that runs alongside Claude Code, watching sessions, reading files, building persistent memory, and providing contextual guidance across sessions
+* **Key features**: 
+  - Watches every Claude Code session and remembers context across projects and time
+  - Uses Letta's tool system (Read, Grep, Glob) to explore codebases autonomously
+  - Whispers guidance before prompts without blocking workflow
+  - Supports multi-project usage with shared memory via Letta Conversations
+  - Zero-config setup with automatic agent import and model detection
+* **Why it's notable**: Solves Claude Code's session amnesia problem by adding a stateful memory layer that gets smarter over time, while remaining fully non-blocking and running in the background via the Letta Code SDK
+
+---
+
+### Claude Subconscious - 为 Claude Code 添加持久化记忆层
+
+* **功能介绍**: 一个在 Claude Code 后台运行的 Letta 智能体，监控会话、读取文件、构建持久化记忆，并跨会话提供上下文指导
+* **主要特点**:
+  - 监控所有 Claude Code 会话，跨项目和时间记忆上下文
+  - 使用 Letta 工具系统（Read、Grep、Glob）自主探索代码库
+  - 在提示前低语指导，不阻塞工作流程
+  - 通过 Letta Conversations 支持多项目使用和共享记忆
+  - 零配置启动，自动导入智能体并检测模型
+* **为何值得关注**: 通过添加有状态的记忆层解决了 Claude Code 的会话遗忘问题，随使用变得更智能，同时通过 Letta Code SDK 保持完全非阻塞的后台运行
+
+**[View Repository / 查看仓库](https://github.com/letta-ai/claude-subconscious)**
+
+### Codebase to Course - Turn Any Codebase into an Interactive Learning Experience
+
+**What it does:**
+A Claude Code skill that automatically transforms any GitHub repository into a beautiful, self-contained single-page HTML course. It analyzes your codebase and generates an interactive tutorial that explains how the code works through scroll-based navigation, animated visualizations, side-by-side code translations, and embedded quizzes.
+
+**Key features:**
+* **Zero-dependency output** - Single HTML file that works offline, no setup required
+* **Code-to-English translations** - Real code snippets paired with plain-language explanations
+* **Visual learning** - Animated data flow diagrams, component interaction visualizations, and architecture maps
+* **Practical quizzes** - Tests application knowledge rather than memorization ("Where would you add a favorites feature?")
+* **Glossary tooltips** - Hover any technical term for instant definitions
+* **"Build first, understand later" philosophy** - Designed for people who create with AI tools but want to understand the underlying mechanics
+
+**Why it's notable:**
+This tool addresses a growing demographic of "vibe coders" - people who build software using AI coding assistants without traditional CS backgrounds. With 1,448 stars, it's gaining traction because it inverts traditional learning: instead of studying theory before building, you build first (often with AI help), then use this tool to understand what you created. It's particularly valuable for improving AI tool prompting, debugging when AI gets stuck, and communicating with technical teams. The emphasis on visual, interactive learning over text-heavy documentation makes complex codebases accessible to non-engineers who want coding as a practical superpower.
+
+---
+
+### Codebase to Course - 将任何代码库转换为交互式学习课程
+
+**功能介绍:**
+这是一个 Claude Code 技能工具,可以自动将任何 GitHub 仓库转换为精美的独立单页 HTML 课程。它分析你的代码库并生成交互式教程,通过滚动式导航、动画可视化、代码与自然语言对照翻译以及嵌入式测验来解释代码的工作原理。
+
+**主要特点:**
+* **零依赖输出** - 单个 HTML 文件即可离线运行,无需任何配置
+* **代码到自然语言翻译** - 真实代码片段配对通俗易懂的解释
+* **可视化学习** - 动画数据流图、组件交互可视化和架构图
+* **实用测验** - 测试应用能力而非死记硬背("在哪里添加收藏功能?")
+* **术语表提示** - 悬停任何技术术语即可查看定义
+* **"先构建,后理解"理念** - 专为使用 AI 工具创建软件但想了解底层机制的人设计
+
+**为何值得关注:**
+该工具针对日益增长的"氛围程序员"群体 - 那些使用 AI 编码助手构建软件但没有传统计算机科学背景的人。凭借 1,448 个星标,它正在获得关注,因为它颠覆了传统学习模式:不是先学习理论再构建,而是先构建(通常借助 AI),然后使用此工具理解你创建的内容。它对于改进 AI 工具提示、在 AI 卡住时调试以及与技术团队沟通特别有价值。强调视觉化、交互式学习而非大量文本文档,使复杂代码库对想要将编程作为实用超能力的非工程师来说变得易于理解。
+
+**[View Repository / 查看仓库](https://github.com/zarazhangrui/codebase-to-course)**
+
+### claude-peers-mcp - Let Your Claude Code Instances Communicate Across Sessions
+
+* **What it does**: Enables multiple Claude Code instances running on the same machine to discover each other and exchange messages in real-time, allowing coordination across different projects and terminal sessions.
+
+* **Key features**:
+  - Peer discovery scoped by machine, directory, or git repository
+  - Instant message delivery via channel protocol with automatic push notifications
+  - Auto-generated summaries of what each instance is working on (using GPT-4-nano if OpenAI API key provided)
+  - Localhost-only broker daemon with SQLite backend for security
+  - CLI tools for inspecting and managing peer connections
+  - Automatic cleanup of dead peer sessions
+
+* **Why it's notable**: Solves a real pain point for developers juggling multiple Claude Code sessions across different projects. Instead of manually copying context between sessions, Claude instances can now ask each other questions, share information, and coordinate work autonomously. The implementation is elegant—using an auto-launching broker daemon with instant message delivery through Claude's channel protocol. With 1,187 stars, it's gaining traction as a practical tool for power users who run multiple AI coding assistants simultaneously.
+
+---
+
+### claude-peers-mcp - 让你的 Claude Code 实例跨会话通信
+
+* **功能介绍**: 允许同一台机器上运行的多个 Claude Code 实例相互发现并实时交换消息,实现跨项目和终端会话的协调工作。
+
+* **主要特点**:
+  - 按机器、目录或 Git 仓库范围发现对等实例
+  - 通过通道协议即时推送消息,无需轮询
+  - 自动生成每个实例的工作摘要(如提供 OpenAI API 密钥,使用 GPT-4-nano)
+  - 仅限本地的代理守护进程,使用 SQLite 后端确保安全
+  - 提供 CLI 工具用于检查和管理对等连接
+  - 自动清理失效的对等会话
+
+* **为何值得关注**: 解决了开发者在多个项目间切换多个 Claude Code 会话时的实际痛点。无需手动在会话间复制上下文,Claude 实例现在可以相互提问、共享信息并自主协调工作。实现方式优雅——使用自动启动的代理守护进程,通过 Claude 的通道协议实现即时消息传递。获得 1,187 星标,正成为同时运行多个 AI 编码助手的高级用户的实用工具。
+
+**[View Repository / 查看仓库](https://github.com/louislva/claude-peers-mcp)**
+
+### 🎬 Chat GPT vs Claude !! #coding #programming #javascript #python #html #css #cssanimation
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* Compares ChatGPT and Claude AI assistants for coding tasks
+* Covers their capabilities across JavaScript, Python, HTML, CSS, and CSS animations
+* Worth watching for developers choosing between AI coding assistants to understand their strengths and differences in handling various programming languages and web development tasks
+
+---
+
+### 🎬 Chat GPT vs Claude !! #编程 #JavaScript #Python #HTML #CSS #CSS动画
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 对比 ChatGPT 和 Claude 两款 AI 助手在编程任务中的表现
+* 涵盖它们在 JavaScript、Python、HTML、CSS 及 CSS 动画方面的能力
+* 值得观看，帮助开发者了解两款 AI 编程助手的优势和差异，选择最适合自己的工具
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZQ1_Kj2ELpg)**
+
+### 🎬 Which AI is Better !!! #coding #programming #python #javascript #html #css #cssanimation #aicoding
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* Compares different AI coding assistants and their capabilities across multiple programming languages
+* Covers AI tools for Python, JavaScript, HTML, CSS, and CSS animations
+* Worth watching for developers evaluating which AI coding assistant best fits their workflow and programming needs
+
+---
+
+### 🎬 哪个 AI 更好用！！！
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 对比不同 AI 编程助手在多种编程语言中的表现
+* 涵盖 Python、JavaScript、HTML、CSS 及 CSS 动画等领域的 AI 工具
+* 适合正在评估和选择最适合自己开发流程的 AI 编程助手的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7izpt_EAFQo)**
+
+### 🎬 Bogo Sort | The fastest one (If you are lucky)
+**Channel:** onjsdev
+
+* What the video covers: An exploration of Bogo Sort, a highly inefficient sorting algorithm that works by randomly shuffling elements until they happen to be in order
+* Key topics discussed: How Bogo Sort operates through random permutations, why it's called "stupid sort" or "permutation sort", and the probabilistic nature of its performance
+* Why it's worth watching: A humorous and educational look at one of computer science's most impractical algorithms - perfect for understanding algorithm efficiency by examining the worst possible approach, with the ironic twist that it could theoretically be the fastest if you get extremely lucky on the first try
+
+### 🎬 Bogo 排序 | 最快的排序算法(如果你够幸运的话)
+**频道:** onjsdev
+
+* 视频内容概述: 深入介绍 Bogo 排序,一种通过随机打乱元素直到碰巧排序正确的极度低效算法
+* 主要话题: Bogo 排序如何通过随机排列工作、为什么被称为"愚蠢排序"或"排列排序",以及其概率性的性能特点
+* 为何值得观看: 以幽默且富有教育意义的方式展示计算机科学中最不实用的算法之一 - 通过研究最糟糕的方法来理解算法效率,并带有讽刺意味的是,如果第一次就足够幸运,理论上它可能是最快的排序算法
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KIyWsTxjPHY)**
+
+### 🎬 Master 80% of Claude Code in 26 Minutes
+**Channel:** Skill Leap AI
+
+* A comprehensive step-by-step tutorial on getting started with Claude Code (Anthropic's AI coding assistant)
+* Covers essential features including code generation, debugging, refactoring, and project setup workflows
+* Worth watching for developers wanting to quickly learn the core functionalities that cover 80% of typical use cases, with practical demonstrations and a free supplementary resource
+
+### 🎬 26分钟掌握Claude Code的80%核心功能
+**频道:** Skill Leap AI
+
+* 全面的Claude Code(Anthropic的AI编程助手)入门分步教程
+* 涵盖代码生成、调试、重构和项目设置等核心功能
+* 适合希望快速学习Claude Code 80%常用功能的开发者,包含实际演示和免费补充资源
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WCuwYLVE6j8)**
 
