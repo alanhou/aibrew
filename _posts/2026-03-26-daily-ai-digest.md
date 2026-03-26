@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 26, 2026"
 date: 2026-03-26
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 16 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：16篇黑客新闻，3个热门项目，12个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -859,4 +859,206 @@ This tool addresses a growing demographic of "vibe coders" - people who build so
 * 理解编译器优化机制有助于开发者编写更注重性能的代码并调试意外的性能问题
 
 **[Read Original / 阅读原文](https://www.hmpcabral.com/2026/03/20/two-studies-in-compiler-optimisations/)**
+
+### Swift 6.3 Released: Expanding Swift Across the Software Stack
+
+* Swift 6.3 introduces the `@c` attribute for exposing Swift functions and enums to C code, enabling better C/C++ interoperability
+* Module selectors (`::` syntax) allow disambiguation when multiple imported modules provide APIs with the same name
+* New optimization attributes give library authors control over function specialization, inlining, and implementation visibility
+* Swift Build preview integrated into Swift Package Manager provides unified cross-platform build experience
+* Official Swift SDK for Android released, expanding Swift's reach to mobile development
+* Improvements for embedded environments make Swift more accessible for firmware and resource-constrained systems
+* Enhanced cross-platform build tooling improves developer ergonomics across different platforms
+
+### Swift 6.3 发布:将 Swift 扩展到整个软件栈
+
+* Swift 6.3 引入 `@c` 属性,可将 Swift 函数和枚举暴露给 C 代码,实现更好的 C/C++ 互操作性
+* 模块选择器(`::` 语法)允许在多个导入模块提供同名 API 时进行消歧
+* 新的优化属性让库作者能够控制函数特化、内联和实现可见性
+* Swift Build 预览版集成到 Swift Package Manager,提供统一的跨平台构建体验
+* 发布官方 Android Swift SDK,将 Swift 扩展到移动开发领域
+* 嵌入式环境改进使 Swift 更适用于固件和资源受限系统
+* 增强的跨平台构建工具改善了不同平台的开发体验
+
+**[Read Original / 阅读原文](https://www.swift.org/blog/swift-6.3-released/)**
+
+### From Zero to a RAG System: Successes and Failures
+
+* Developer built an internal RAG (Retrieval-Augmented Generation) chat system using local LLM to query 1TB of company project history spanning nearly a decade
+* Tech stack: Ollama for local LLaMA models, nomic-embed-text for embeddings, LlamaIndex as RAG engine, Python, and ChromaDB vector database
+* Filtered out 54% of irrelevant files (videos, images, executables, backups) by extension and pattern matching to prevent RAM overflow
+* Migrated from JSON-based indexing to ChromaDB with SQLite backend, processing 150 files at a time with checkpoint system for resilience
+* Rented NVIDIA RTX 4000 SFF Ada GPU (€184 over 2-3 weeks on Hetzner) to index 451GB documents into 738,470 vectors (54GB ChromaDB index)
+* Built Flask API backend and Streamlit frontend with chat interface, displaying answers with source document references
+* Final architecture: User → Streamlit UI → Flask API → Python Backend → Ollama (LLM) ↔ LlamaIndex (RAG) ↔ ChromaDB
+
+### 从零到 RAG 系统：成功与失败
+
+* 开发者构建了内部 RAG(检索增强生成)聊天系统,使用本地 LLM 查询公司近十年 1TB 项目历史数据
+* 技术栈:Ollama 运行本地 LLaMA 模型、nomic-embed-text 嵌入模型、LlamaIndex RAG 引擎、Python 和 ChromaDB 向量数据库
+* 通过扩展名和模式匹配过滤掉 54% 无关文件(视频、图片、可执行文件、备份)以防止内存溢出
+* 从基于 JSON 的索引迁移到 ChromaDB(SQLite 后端),每次处理 150 个文件并设置检查点系统保证容错性
+* 租用 NVIDIA RTX 4000 SFF Ada GPU(Hetzner 上 2-3 周花费 184 欧元)将 451GB 文档索引为 738,470 个向量(54GB ChromaDB 索引)
+* 构建 Flask API 后端和 Streamlit 前端聊天界面,答案附带源文档引用
+* 最终架构:用户 → Streamlit UI → Flask API → Python 后端 → Ollama(LLM)↔ LlamaIndex(RAG)↔ ChromaDB
+
+**[Read Original / 阅读原文](https://en.andros.dev/blog/aa31d744/from-zero-to-a-rag-system-successes-and-failures/)**
+
+### Tuta Celebrates End of Chat Control 1.0 in EU
+
+* European Parliament voted to end Chat Control 1.0, effective April 6, 2026
+* Major tech companies (Gmail, LinkedIn, Microsoft) must stop scanning private messages in the EU
+* Tuta celebrates this as a significant privacy victory for European users
+* The decision marks a milestone in protecting digital communication privacy
+
+### Tuta 庆祝欧盟终止聊天控制 1.0
+
+* 欧洲议会投票决定终止聊天控制 1.0，将于 2026 年 4 月 6 日生效
+* 主要科技公司(Gmail、LinkedIn、微软)必须停止在欧盟扫描私人消息
+* Tuta 将此视为欧洲用户隐私的重大胜利
+* 该决定标志着保护数字通信隐私的里程碑
+
+**[Read Original / 阅读原文](https://bsky.app/profile/tuta.com/post/3mhxkfowv322c)**
+
+### oh-my-claudecode - Multi-Agent Orchestration Framework for Claude Code
+
+* **What it does**: A zero-configuration orchestration layer that transforms Claude Code into a multi-agent development system. It automatically distributes complex coding tasks across specialized AI agents, manages execution pipelines, and ensures tasks complete successfully through verify-fix loops.
+
+* **Key features**: 
+  - Team-first architecture with staged pipelines (plan → PRD → execute → verify → fix)
+  - CLI worker support for Codex and Gemini via tmux panes
+  - 32 specialized agents for different development tasks (architecture, testing, data science, etc.)
+  - Smart model routing to optimize token costs (30-50% savings)
+  - Auto-learning system that extracts reusable problem-solving patterns into portable skills
+  - Natural language interface with optional magic keywords for power users
+  - Real-time HUD statusline showing orchestration metrics
+
+* **Why it's notable**: Eliminates the learning curve for Claude Code by providing intelligent defaults and automatic task delegation. With 576 stars today, it's gaining rapid traction as a productivity multiplier for developers who want AI assistance without micromanagement. The recent v4.4.0 update adds CLI-first team runtime with on-demand worker spawning, making it more resource-efficient while supporting multiple AI models (Claude, Codex, Gemini) in coordinated workflows.
+
+---
+
+### oh-my-claudecode - Claude Code 多智能体编排框架
+
+* **功能介绍**: 零配置的编排层,将 Claude Code 转变为多智能体开发系统。自动将复杂编码任务分配给专业 AI 智能体,管理执行流水线,并通过验证-修复循环确保任务成功完成。
+
+* **主要特点**:
+  - 团队优先架构,采用分阶段流水线(计划 → PRD → 执行 → 验证 → 修复)
+  - 通过 tmux 面板支持 Codex 和 Gemini 的 CLI 工作进程
+  - 32 个专业智能体处理不同开发任务(架构、测试、数据科学等)
+  - 智能模型路由优化 token 成本(节省 30-50%)
+  - 自动学习系统,将可复用的问题解决模式提取为便携技能
+  - 自然语言界面,为高级用户提供可选的魔法关键词
+  - 实时 HUD 状态栏显示编排指标
+
+* **为何值得关注**: 通过提供智能默认配置和自动任务委派,消除了 Claude Code 的学习曲线。今日获得 576 星标,作为开发者生产力倍增器迅速获得关注,适合希望获得 AI 辅助而无需微观管理的开发者。最新 v4.4.0 版本添加了 CLI 优先的团队运行时和按需工作进程生成,在支持多个 AI 模型(Claude、Codex、Gemini)协同工作流的同时提高了资源效率。
+
+**[View Repository / 查看仓库](https://github.com/Yeachan-Heo/oh-my-claudecode)**
+
+### Dexter - An Autonomous Financial Research Agent
+
+* **What it does**: Dexter is an AI-powered agent that performs deep financial research autonomously. It breaks down complex financial questions into structured tasks, executes them using real-time market data (income statements, balance sheets, cash flows), and validates its own work through self-reflection before delivering data-backed answers.
+
+* **Key features**: 
+  - Intelligent task planning that decomposes queries into research steps
+  - Autonomous tool selection and execution with live financial data
+  - Self-validation loop that checks and refines results
+  - Built-in safety features (loop detection, step limits)
+  - Debug scratchpad for tracking all tool calls
+  - WhatsApp integration for conversational queries
+  - Evaluation suite with LLM-as-judge scoring
+
+* **Why it's notable**: Gaining 274 stars today, Dexter stands out as a specialized financial research tool that combines agentic AI workflows with institutional-grade market data. Unlike general-purpose coding assistants, it's purpose-built for financial analysis with self-correcting capabilities. The project uses modern tooling (Bun runtime, TypeScript) and provides practical features like WhatsApp integration and comprehensive debugging tools, making sophisticated financial research accessible through natural language queries.
+
+---
+
+### Dexter - 自主金融研究智能体
+
+* **功能介绍**: Dexter 是一个由 AI 驱动的自主金融研究智能体。它能将复杂的金融问题分解为结构化任务,使用实时市场数据(损益表、资产负债表、现金流量表)执行分析,并通过自我反思验证工作成果,最终提供有数据支撑的答案。
+
+* **主要特点**:
+  - 智能任务规划,自动将查询分解为研究步骤
+  - 自主选择和执行工具,获取实时金融数据
+  - 自我验证循环,检查并优化结果
+  - 内置安全机制(循环检测、步骤限制)
+  - 调试记录本,追踪所有工具调用
+  - WhatsApp 集成,支持对话式查询
+  - 评估套件,采用 LLM 评判打分
+
+* **为何值得关注**: 今日获得 274 星标,Dexter 作为专门的金融研究工具脱颖而出,将智能体 AI 工作流与机构级市场数据相结合。与通用编程助手不同,它专为金融分析打造,具备自我纠错能力。项目采用现代技术栈(Bun 运行时、TypeScript),提供 WhatsApp 集成和完善的调试工具等实用功能,让用户通过自然语言查询即可进行复杂的金融研究。
+
+**[View Repository / 查看仓库](https://github.com/virattt/dexter)**
+
+### RuView - WiFi-Based Human Sensing Without Cameras
+
+* **What it does**: Transforms commodity WiFi signals into real-time human pose estimation, vital sign monitoring (breathing rate, heart rate), and presence detection—completely camera-free and privacy-preserving
+* **Key features**: 
+  - Detects pose, breathing (6-30 BPM), and heartbeat (40-120 BPM) through walls using Channel State Information (CSI)
+  - Runs on inexpensive ESP32 hardware (~$1/node) with edge AI processing—no cloud required
+  - Self-learning system that adapts to environments without labeled training data
+  - Multi-person tracking with 360° coverage using multistatic sensor mesh
+  - Built on Rust for performance (54K fps pose estimation) with 1300+ tests
+* **Why it's notable**: Gained 1,001 stars today by making academic WiFi sensing research (like CMU's DensePose From WiFi) practical for real-world edge deployment. Offers privacy-first alternative to camera surveillance for healthcare monitoring, disaster response, and smart spaces—all using signals already present in the environment.
+
+---
+
+### RuView - 基于WiFi的无摄像头人体感知系统
+
+* **功能介绍**: 将普通WiFi信号转化为实时人体姿态估计、生命体征监测(呼吸率、心率)和存在检测——完全无需摄像头,保护隐私
+* **主要特点**:
+  - 利用信道状态信息(CSI)穿墙检测姿态、呼吸(6-30次/分)和心跳(40-120次/分)
+  - 运行在廉价ESP32硬件上(约1美元/节点),边缘AI处理——无需云服务
+  - 自学习系统,无需标注数据即可适应环境
+  - 多人追踪,使用多基站传感器网格实现360°覆盖
+  - 基于Rust构建,性能强劲(54K fps姿态估计),拥有1300+测试
+* **为何值得关注**: 今日获得1,001星标,将学术WiFi感知研究(如CMU的DensePose From WiFi)转化为实用的边缘部署方案。为医疗监护、灾难救援和智能空间提供隐私优先的摄像头监控替代方案——仅利用环境中已存在的信号。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### 🎬 Learn a bit about camera position in Three.js
+**Channel:** freeCodeCamp.org
+
+* What the video covers: This tutorial explores camera positioning fundamentals in Three.js, a popular JavaScript 3D library for creating web-based 3D graphics
+* Key topics discussed: Camera placement techniques, coordinate systems in 3D space, how camera position affects scene rendering and perspective
+* Why it's worth watching: Essential knowledge for anyone building 3D web experiences - understanding camera control is crucial for creating engaging interactive 3D scenes and proper viewpoint management
+
+### 🎬 Three.js 相机位置入门教程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 本教程讲解 Three.js 中相机定位的基础知识,Three.js 是用于创建网页 3D 图形的流行 JavaScript 库
+* 主要话题: 相机放置技巧、3D 空间中的坐标系统、相机位置如何影响场景渲染和透视效果
+* 为何值得观看: 对于构建 3D 网页体验的开发者来说是必备知识 - 掌握相机控制对于创建引人入胜的交互式 3D 场景和正确的视角管理至关重要
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GMytb7LNGOI)**
+
+### 🎬 AI Foundations for Absolute Beginners
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive introduction to artificial intelligence fundamentals designed specifically for those with no prior AI experience
+* Key topics discussed: Core AI concepts, foundational principles, and essential building blocks that form the basis of modern artificial intelligence systems
+* Why it's worth watching: Perfect entry point for anyone curious about AI - breaks down complex concepts into digestible lessons through freeCodeCamp's proven teaching approach, created by learnaianywhere.org specialists
+
+### 🎬 AI 基础入门课程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 专为零基础学习者设计的人工智能入门综合课程,系统讲解 AI 基础知识
+* 主要话题: 核心 AI 概念、基础原理以及构成现代人工智能系统的关键要素
+* 为何值得观看: 对 AI 感兴趣的初学者的理想起点 - 通过 freeCodeCamp 经过验证的教学方法,将复杂概念分解为易于理解的课程内容,由 learnaianywhere.org 专家团队制作
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tchN4xa4pfg)**
+
+### 🎬 The Ultimate Beginner's Guide To Claude
+**Channel:** AI Edge
+
+* Comprehensive introduction to Claude AI, covering its core features and capabilities for newcomers
+* Key topics include practical use cases, prompt engineering techniques, and how Claude compares to other AI assistants
+* Worth watching for anyone looking to understand Claude's strengths and learn effective ways to leverage it for productivity, coding assistance, and creative tasks
+
+### 🎬 Claude 终极新手指南
+**频道:** AI Edge
+
+* 全面介绍 Claude AI，涵盖其核心功能和能力，专为新手设计
+* 主要话题包括实际应用场景、提示词工程技巧，以及 Claude 与其他 AI 助手的对比
+* 适合想要了解 Claude 优势并学习如何有效利用它提升生产力、编程辅助和创意任务的用户观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jw0pMr54Ztc)**
 
