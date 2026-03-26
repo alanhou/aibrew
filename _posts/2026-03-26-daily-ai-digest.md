@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 26, 2026"
 date: 2026-03-26
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -508,99 +508,6 @@ This tool addresses a growing demographic of "vibe coders" - people who build so
 
 ---
 
-### 🎬 哪个 AI 更好用！！！
-
-**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
-
-* 对比不同 AI 编程助手在多种编程语言中的表现
-* 涵盖 Python、JavaScript、HTML、CSS 及 CSS 动画等领域的 AI 工具
-* 适合正在评估和选择最适合自己开发流程的 AI 编程助手的开发者观看
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7izpt_EAFQo)**
-
-### 🎬 Bogo Sort | The fastest one (If you are lucky)
-**Channel:** onjsdev
-
-* What the video covers: An exploration of Bogo Sort, a highly inefficient sorting algorithm that works by randomly shuffling elements until they happen to be in order
-* Key topics discussed: How Bogo Sort operates through random permutations, why it's called "stupid sort" or "permutation sort", and the probabilistic nature of its performance
-* Why it's worth watching: A humorous and educational look at one of computer science's most impractical algorithms - perfect for understanding algorithm efficiency by examining the worst possible approach, with the ironic twist that it could theoretically be the fastest if you get extremely lucky on the first try
-
-### 🎬 Bogo 排序 | 最快的排序算法(如果你够幸运的话)
-**频道:** onjsdev
-
-* 视频内容概述: 深入介绍 Bogo 排序,一种通过随机打乱元素直到碰巧排序正确的极度低效算法
-* 主要话题: Bogo 排序如何通过随机排列工作、为什么被称为"愚蠢排序"或"排列排序",以及其概率性的性能特点
-* 为何值得观看: 以幽默且富有教育意义的方式展示计算机科学中最不实用的算法之一 - 通过研究最糟糕的方法来理解算法效率,并带有讽刺意味的是,如果第一次就足够幸运,理论上它可能是最快的排序算法
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KIyWsTxjPHY)**
-
-### 🎬 Master 80% of Claude Code in 26 Minutes
-**Channel:** Skill Leap AI
-
-* A comprehensive step-by-step tutorial on getting started with Claude Code (Anthropic's AI coding assistant)
-* Covers essential features including code generation, debugging, refactoring, and project setup workflows
-* Worth watching for developers wanting to quickly learn the core functionalities that cover 80% of typical use cases, with practical demonstrations and a free supplementary resource
-
-### 🎬 26分钟掌握Claude Code的80%核心功能
-**频道:** Skill Leap AI
-
-* 全面的Claude Code(Anthropic的AI编程助手)入门分步教程
-* 涵盖代码生成、调试、重构和项目设置等核心功能
-* 适合希望快速学习Claude Code 80%常用功能的开发者,包含实际演示和免费补充资源
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WCuwYLVE6j8)**
-
-### Running Tesla Model 3's Computer on My Desk Using Parts From Crashed Cars
-
-* Security researcher purchased salvaged Tesla Model 3 parts from eBay ($200-300 for MCU, $175 for touchscreen) to participate in Tesla's bug bounty program
-* Successfully assembled a working desk setup by connecting the MCU (Media Control Unit), autopilot computer, touchscreen, and 12V power supply (10A recommended)
-* Tesla publicly provides detailed wiring schematics through their "Electrical Reference" documentation, showing exact pin assignments and connector specifications
-* Discovered internal car network (192.168.90.X/24) with exposed services including SSH server and ODIN REST API on port 8080 for diagnostics
-* Major challenge was sourcing the rare Rosenberger 99K10D-1D5A5-D connector cable - BMW LVDS alternatives didn't fit, improvised wiring caused a short that burned a power controller chip
-* After replacing the damaged MAX16932CATIS chip and purchasing an entire dashboard wiring harness ($80) for the correct cable, achieved a fully functional Tesla OS running on desk
-* Tesla offers "Root access program" - researchers who find rooting vulnerabilities receive permanent SSH certificates for continued security research on their own vehicles
-
-### 在桌面上运行特斯拉 Model 3 车载电脑 - 使用事故车零件
-
-* 安全研究员从 eBay 购买特斯拉 Model 3 打捞零件(MCU 200-300美元,触摸屏175美元)以参与特斯拉漏洞赏金计划
-* 成功组装桌面系统,连接 MCU(媒体控制单元)、自动驾驶电脑、触摸屏和12V电源(建议10A)
-* 特斯拉通过"电气参考"文档公开提供详细接线原理图,显示精确的引脚分配和连接器规格
-* 发现车辆内部网络(192.168.90.X/24),暴露的服务包括 SSH 服务器和8080端口的 ODIN REST API 诊断接口
-* 主要挑战是采购罕见的 Rosenberger 99K10D-1D5A5-D 连接器线缆 - 宝马 LVDS 替代品不兼容,临时接线导致短路烧毁电源控制芯片
-* 更换损坏的 MAX16932CATIS 芯片并购买整个仪表板线束(80美元)获得正确线缆后,成功在桌面运行完整的特斯拉操作系统
-* 特斯拉提供"Root 访问计划" - 发现提权漏洞的研究人员可获得永久 SSH 证书,用于在自己车辆上继续安全研究
-
-**[Read Original / 阅读原文](https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/)**
-
-### ARC-AGI-3: Interactive Reasoning Benchmark for AI Agents
-
-* ARC-AGI-3 is an interactive reasoning benchmark that tests AI agents' ability to explore novel environments, acquire goals dynamically, build adaptable world models, and learn continuously
-* A 100% score indicates AI agents can beat every game as efficiently as humans, requiring experience-driven learning rather than solving static puzzles
-* Measures intelligence through 100% human-solvable environments, skill-acquisition efficiency over time, long-horizon planning with sparse feedback, and experience-driven adaptation
-* Designed with principles of being easy for humans to learn, requiring no pre-loaded knowledge, providing clear goals with meaningful feedback, and introducing novelty to prevent brute-force memorization
-* Makes the gap between AI and human learning measurable by testing intelligence across time—capturing planning horizons, memory compression, and belief-updating capabilities
-
-### ARC-AGI-3：AI智能体交互推理基准测试
-
-* ARC-AGI-3是一个交互式推理基准测试，挑战AI智能体探索新环境、动态获取目标、构建可适应的世界模型并持续学习的能力
-* 100%的分数意味着AI智能体能像人类一样高效地通关每个游戏，需要通过经验驱动学习而非解决静态谜题
-* 通过100%人类可解的环境、随时间推移的技能习得效率、稀疏反馈下的长期规划以及多步骤的经验驱动适应来衡量智能
-* 设计原则包括：人类易于快速上手、无需预加载知识或隐藏提示、提供清晰目标和有意义的反馈、引入新颖性以防止暴力记忆
-* 通过测试跨时间的智能（而非仅最终答案）来量化AI与人类学习之间的差距，捕捉规划视野、记忆压缩和根据新证据更新信念的能力
-
-**[Read Original / 阅读原文](https://arcprize.org/arc-agi/3)**
-
-<!-- [Title-Only] -->
-### False claims in a widely-cited paper. No corrections. No consequences
-
-**Note:** This analysis is based solely on the title, as the article content could not be fetched.
-
-* This article likely discusses a case of academic misconduct or research integrity issues where a highly-cited academic paper contains demonstrably false claims, yet the authors have not issued corrections and faced no professional repercussions
-* The URL suggests this is from Andrew Gelman's Statistical Modeling blog and references "business school," indicating the problematic paper may be from business or management research
-* Why it might be interesting: This touches on critical issues in academic publishing including the lack of accountability for research errors, the difficulty of correcting the scientific record once papers gain citations, and potential systemic problems in how academic institutions handle research misconduct. It raises questions about peer review effectiveness and the incentive structures in academia that may allow flawed research to persist unchallenged
-
----
-
 ### 被广泛引用的论文中存在虚假声明，无更正，无后果
 
 **说明：** 由于无法获取文章内容，以下分析仅基于标题。
@@ -720,4 +627,166 @@ This tool addresses a growing demographic of "vibe coders" - people who build so
 * 适合寻求端到端学习路径的开发者，课程将传统Java开发与现代云原生和AI驱动应用相结合，提供企业级项目所需的实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=q6z_UCBM5Ek)**
+
+### Running Tesla Model 3's Computer on My Desk Using Parts From Crashed Cars
+
+* Security researcher purchased salvaged Tesla Model 3 parts from eBay ($200-300 for MCU, $175 for touchscreen) to participate in Tesla's bug bounty program
+* Successfully assembled a working desk setup by connecting the MCU (Media Control Unit), autopilot computer, touchscreen, and power supply (12V, up to 8A consumption)
+* Tesla publicly provides detailed wiring schematics through their "Electrical Reference" documentation, showing exact pin assignments and connector specifications
+* Discovered internal car network (192.168.90.X/24) with exposed services including SSH server and ODIN REST API on port 8080 for diagnostics
+* Faced major challenge sourcing the rare Rosenberger 99K10D-1D5A5-D connector cable; BMW LVDS alternative didn't fit, causing a short circuit that burned a power controller chip
+* Eventually solved cable problem by purchasing entire dashboard wiring harness ($80) since individual cables aren't manufactured separately
+* Tesla offers "Root access program" - researchers who find rooting vulnerabilities receive permanent SSH certificates for continued security research on their own vehicles
+
+### 在桌面上运行特斯拉 Model 3 车载电脑 - 使用事故车零件
+
+* 安全研究员从 eBay 购买报废特斯拉 Model 3 零件(MCU 200-300美元,触摸屏175美元)以参与特斯拉漏洞赏金计划
+* 成功组装桌面系统,连接 MCU(媒体控制单元)、自动驾驶电脑、触摸屏和电源(12V,峰值功耗达8A)
+* 特斯拉通过"电气参考"文档公开提供详细接线原理图,显示精确的引脚分配和连接器规格
+* 发现车辆内部网络(192.168.90.X/24),暴露的服务包括 SSH 服务器和用于诊断的 ODIN REST API(8080端口)
+* 采购稀有的 Rosenberger 99K10D-1D5A5-D 连接器线缆遇到重大挑战;宝马 LVDS 替代品不匹配,导致短路烧毁电源控制芯片
+* 最终通过购买整个仪表板线束($80)解决线缆问题,因为单独的线缆不单独制造
+* 特斯拉提供"Root 访问计划" - 发现提权漏洞的研究人员可获得永久 SSH 证书,用于在自己车辆上继续安全研究
+
+**[Read Original / 阅读原文](https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/)**
+
+### ARC-AGI-3: Interactive Reasoning Benchmark for AI Agents
+
+* ARC-AGI-3 is an interactive reasoning benchmark that tests AI agents' ability to explore novel environments, acquire goals dynamically, build adaptable world models, and learn continuously
+* A 100% score indicates AI agents can beat every game as efficiently as humans, requiring experience-driven learning rather than solving static puzzles
+* Measures intelligence through 100% human-solvable environments, skill-acquisition efficiency over time, long-horizon planning with sparse feedback, and experience-driven adaptation
+* Designed with principles of being easy for humans to learn, requiring no pre-loaded knowledge, providing clear goals with meaningful feedback, and introducing novelty to prevent brute-force memorization
+* The benchmark captures the gap between AI and human learning by testing intelligence across time—measuring planning horizons, memory compression, and belief-updating capabilities
+
+### ARC-AGI-3：AI智能体交互推理基准测试
+
+* ARC-AGI-3是一个交互式推理基准测试，挑战AI智能体探索新环境、动态获取目标、构建可适应的世界模型并持续学习的能力
+* 100%的分数意味着AI智能体能像人类一样高效地通关每个游戏，需要通过经验驱动学习而非解决静态谜题
+* 通过100%人类可解的环境、随时间推移的技能习得效率、稀疏反馈下的长期规划以及多步骤的经验驱动适应来衡量智能
+* 设计原则包括：人类易于快速上手、无需预加载知识或隐藏提示、提供清晰目标和有意义的反馈、引入新颖性以防止暴力记忆
+* 该基准通过测试跨时间的智能来捕捉AI与人类学习之间的差距——衡量规划视野、记忆压缩和随新证据出现而更新信念的能力
+
+**[Read Original / 阅读原文](https://arcprize.org/arc-agi/3)**
+
+### Seismic Monitoring Reveals How Overplowing Weakens Soil Structure
+
+* University of Washington researchers used fiber optic cables and earthquake monitoring techniques (distributed acoustic sensing/DAS) to study how tilling affects soil moisture and water retention at an experimental farm in the UK
+* The study found that plowing disrupts the soil's natural capillary networks, reducing its sponge-like ability to absorb water, causing rain to pool on the surface and form muddy crusts that increase erosion and flood risk
+* Researchers monitored plots with different tillage depths (no-till, 10cm, and 25cm) and compaction levels over 40 hours, tracking how seismic velocity changes revealed soil moisture responses to rainfall
+* This counterintuitive finding explains why tilling—meant to create water channels—actually breaks small soil passages, degrading soil structure over time
+* The seismological method offers an inexpensive, high-resolution monitoring tool that could help farmers manage land, provide flood alerts, improve climate models, and assess liquefaction risks for seismic hazard maps
+
+### 地震监测技术揭示过度耕作如何削弱土壤结构
+
+* 华盛顿大学研究人员在英国实验农场使用光纤电缆和地震监测技术(分布式声学传感/DAS)研究耕作对土壤湿度和保水能力的影响
+* 研究发现,翻耕破坏了土壤内部精细的毛细管网络,降低了土壤像海绵一样吸水的能力,导致雨水在表面积聚并形成泥泞硬壳,增加侵蚀和洪水风险
+* 研究人员在40小时内监测了不同耕作深度(免耕、10厘米和25厘米深)和压实程度的地块,通过地震波速变化追踪土壤湿度对降雨的响应
+* 这一反直觉的发现解释了为什么耕作——本意是创造水分通道——实际上破坏了土壤中的细小孔道,随时间推移导致土壤结构退化
+* 这种地震学方法提供了一种廉价、高分辨率的监测工具,可帮助农民管理土地、提供洪水预警、改进气候模型,并评估地震灾害地图的液化风险
+
+**[Read Original / 阅读原文](https://www.washington.edu/news/2026/03/19/earthquake-scientists-reveal-how-overplowing-weakens-soil-at-experimental-farm/)**
+
+### OpenSpace - Self-Evolving AI Agent Framework with Collective Intelligence
+
+* **What it does**: OpenSpace is a self-evolving engine that plugs into any AI agent (Claude Code, Codex, OpenClaw, nanobot, Cursor, etc.) to enable automatic learning, skill improvement, and knowledge sharing across agents through a cloud-based skill community.
+
+* **Key features**:
+  * Self-evolution engine with auto-fix, auto-improve, and auto-learn capabilities that capture successful workflows and turn failures into improvements
+  * Collective intelligence network where one agent's learning becomes available to all agents through shared skill evolution
+  * 46% token reduction and 4.2× better performance on real-world professional tasks (GDPVal benchmark)
+  * MCP (Model Context Protocol) integration for seamless agent compatibility
+  * Cloud skill community for uploading, downloading, and sharing evolved skills with access control
+  * Quality monitoring system tracking skill performance, error rates, and execution success
+
+* **Why it's notable**: Addresses a critical weakness in current AI agents — their inability to learn from experience and share knowledge. OpenSpace transforms agents from one-shot executors into continuously improving systems that get smarter and more cost-efficient over time. The framework demonstrates measurable economic value with real-world results: earning $11K in 6 hours on professional tasks across compliance, engineering, and document preparation. It enables autonomous system development, as showcased by a complete behavior monitoring system with 60+ self-evolved skills built entirely by the agent.
+
+---
+
+### OpenSpace - 具备集体智能的自进化 AI 智能体框架
+
+* **功能介绍**: OpenSpace 是一个自进化引擎,可插入任何 AI 智能体(Claude Code、Codex、OpenClaw、nanobot、Cursor 等),通过基于云的技能社区实现自动学习、技能改进和跨智能体知识共享。
+
+* **主要特点**:
+  * 自进化引擎具备自动修复、自动改进和自动学习能力,可捕获成功的工作流程并将失败转化为改进
+  * 集体智能网络,一个智能体的学习成果可通过共享技能进化供所有智能体使用
+  * 在真实专业任务(GDPVal 基准测试)中减少 46% 的 token 消耗,性能提升 4.2 倍
+  * MCP(模型上下文协议)集成,实现无缝智能体兼容性
+  * 云技能社区支持上传、下载和共享进化技能,并提供访问控制
+  * 质量监控系统跟踪技能性能、错误率和执行成功率
+
+* **为何值得关注**: 解决了当前 AI 智能体的关键弱点——无法从经验中学习和共享知识。OpenSpace 将智能体从一次性执行器转变为持续改进的系统,随时间推移变得更智能、更具成本效益。该框架展示了可衡量的经济价值,在合规、工程和文档准备等专业任务中 6 小时内赚取 1.1 万美元。它支持自主系统开发,如展示案例中完全由智能体构建的行为监控系统,包含 60 多个自进化技能。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/OpenSpace)**
+
+### 🎬 Vibe Sort
+**Channel:** onjsdev
+
+* What the video covers: An unconventional "AI-powered" sorting algorithm that leverages Large Language Models (LLMs) to sort arrays instead of traditional algorithmic approaches
+* Key topics discussed: Humorous exploration of using AI for basic computational tasks, the unpredictability of LLM outputs (hallucinations), and a satirical take on the current trend of applying AI to everything
+* Why it's worth watching: A clever, tongue-in-cheek commentary on AI hype that demonstrates the absurdity of using complex AI models for simple problems that already have efficient solutions—entertaining for developers interested in both AI trends and algorithm humor
+
+### 🎬 Vibe Sort (氛围排序)
+**频道:** onjsdev
+
+* 视频内容概述: 一个非传统的"AI驱动"排序算法,使用大语言模型(LLM)来排序数组,而非传统算法方法
+* 主要话题: 幽默探讨将AI用于基础计算任务、LLM输出的不可预测性(幻觉问题),以及对当前"万物皆可AI"趋势的讽刺
+* 为何值得观看: 对AI炒作的巧妙讽刺,展示了用复杂AI模型解决已有高效解决方案的简单问题是多么荒谬——适合对AI趋势和算法幽默感兴趣的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b44TJfJv5Dk)**
+
+### 🎬 Which AI is Better !!! #coding #programming #python #javascript #html #css #cssanimation #aicoding
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* Compares different AI coding assistants and their capabilities across multiple programming languages
+* Covers AI tools for Python, JavaScript, HTML, CSS, and CSS animations
+* Worth watching for developers evaluating which AI coding assistant best fits their workflow and programming needs
+
+---
+
+### 🎬 哪个 AI 更好用！！！
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 对比不同 AI 编程助手在多种编程语言中的表现
+* 涵盖 Python、JavaScript、HTML、CSS 及 CSS 动画等领域的 AI 工具
+* 适合正在评估和选择最适合自己开发流程的 AI 编程助手的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7izpt_EAFQo)**
+
+### 🎬 Learn AI Coding the Right Way (No Vibe Coding) | New Playlist | CampusX
+**Channel:** CampusX
+
+* What the video covers: A comprehensive introduction to Agentic Coding using Claude Code, moving beyond basic "vibe coding" to structured AI-assisted software development
+* Key topics discussed: Proper AI coding workflows, Claude Code implementation, transitioning from manual coding to AI-assisted development, best practices for working with AI coding tools
+* Why it's worth watching: Essential for developers looking to level up their AI coding skills with a systematic approach rather than trial-and-error methods. The playlist promises a complete guide to modern AI-assisted development workflows.
+
+---
+
+### 🎬 正确学习 AI 编程（告别随意编码）| 新播放列表 | CampusX
+**频道:** CampusX
+
+* 视频内容概述: 使用 Claude Code 进行代理编程（AI 辅助软件开发）的完整指南，帮助开发者从基础的"随意编码"过渡到结构化的 AI 辅助开发
+* 主要话题: 正确的 AI 编程工作流程、Claude Code 实践应用、从手动编码到 AI 辅助开发的转变、AI 编码工具的最佳实践
+* 为何值得观看: 对于想要系统性提升 AI 编程技能的开发者来说必看，该系列课程提供了完整的现代 AI 辅助开发工作流指南，避免盲目试错
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=K_KIQA849cs)**
+
+### 🎬 Master 80% of Claude Code in 26 Minutes
+**Channel:** Skill Leap AI
+
+* What the video covers: A comprehensive step-by-step tutorial on getting started with Claude Code (Anthropic's AI coding assistant), covering the essential features and workflows that represent 80% of typical usage
+* Key topics discussed: Initial setup process, core functionalities, practical demonstrations of Claude Code's capabilities, and efficient workflows for developers looking to integrate AI assistance into their coding practice
+* Why it's worth watching: Offers a time-efficient deep dive (26 minutes) that focuses on the most practical and frequently-used features rather than overwhelming viewers with every detail. Perfect for developers who want to quickly become productive with Claude Code without spending hours on documentation. The tutorial includes real-world examples and best practices from hands-on experience.
+
+---
+
+### 🎬 26分钟掌握Claude Code的80%核心功能
+**频道:** Skill Leap AI
+
+* 视频内容概述: 全面的分步教程，介绍如何开始使用Claude Code（Anthropic的AI编程助手），涵盖代表80%典型使用场景的核心功能和工作流程
+* 主要话题: 初始设置流程、核心功能介绍、Claude Code能力的实际演示，以及希望将AI辅助集成到编程实践中的开发者的高效工作流程
+* 为何值得观看: 提供高效的深度讲解（26分钟），专注于最实用和最常用的功能，而不是用所有细节让观众不知所措。非常适合希望快速掌握Claude Code并提高生产力的开发者，无需花费数小时阅读文档。教程包含实际案例和基于实践经验的最佳做法。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WCuwYLVE6j8)**
 
