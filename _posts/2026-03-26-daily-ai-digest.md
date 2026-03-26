@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 26, 2026"
 date: 2026-03-26
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -789,4 +789,74 @@ This tool addresses a growing demographic of "vibe coders" - people who build so
 * 为何值得观看: 提供高效的深度讲解（26分钟），专注于最实用和最常用的功能，而不是用所有细节让观众不知所措。非常适合希望快速掌握Claude Code并提高生产力的开发者，无需花费数小时阅读文档。教程包含实际案例和基于实践经验的最佳做法。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=WCuwYLVE6j8)**
+
+### Personal Encyclopedias: Preserving Family History Through Wiki Technology
+
+* Author discovered 1,351 old family photos spanning three generations and organized them systematically
+* Created a personal MediaWiki instance to document grandmother's wedding using Wikipedia's format as template
+* Conducted oral history interviews with family members to capture stories behind photos before they're lost
+* Used AI tools (Claude Code, audio transcription, language models) to automate documentation of digital photos
+* Successfully generated detailed trip narratives by having AI analyze photos, EXIF metadata, location data, bank transactions, and Shazam history
+* Discovered the power of encyclopedia software for preserving personal and family knowledge that would otherwise fade over time
+* MediaWiki's existing features (talk pages, categories, revision history) proved ideal for collaborative memory preservation
+* The process evolved from human helping AI fill gaps to AI surfacing forgotten memories through cross-referencing multiple data sources
+
+### 个人百科全书：用维基技术保存家族历史
+
+* 作者发现了1,351张跨越三代人的老照片并进行了系统整理
+* 创建了个人MediaWiki实例，参照维基百科格式记录祖母的婚礼
+* 对家人进行口述历史访谈，在故事消失前捕捉照片背后的记忆
+* 使用AI工具（Claude Code、语音转录、语言模型）自动化处理数字照片的文档工作
+* 通过让AI分析照片、EXIF元数据、位置数据、银行交易和Shazam历史，成功生成详细的旅行叙事
+* 发现百科全书软件在保存个人和家族知识方面的强大力量，这些知识原本会随时间流逝
+* MediaWiki的现有功能（讨论页、分类、修订历史）被证明非常适合协作式记忆保存
+* 整个过程从人类帮助AI填补空白，演变为AI通过交叉引用多个数据源来唤起被遗忘的记忆
+
+**[Read Original / 阅读原文](https://whoami.wiki/blog/personal-encyclopedias)**
+
+### The Ramones: Cultural Icons Who Sold More T-Shirts Than Records
+
+* The Ramones' 1976 debut album cost only $6,400 to record and failed to chart, yet became one of the most influential albums in popular music history
+* Four high school outcasts from Queens adopted matching stage names, leather jackets, ripped jeans, and a raw sound that democratized rock music
+* Their iconic album cover photo by Roberta Bayley now hangs in New York's MoMA
+* Songs celebrated trash culture while addressing darker themes like hustling, drug use, and violence, sometimes controversially using Nazi imagery
+* Despite playing 2,263 concerts over their career, the band's merchandise became more commercially successful than their music
+* Arturo Vega, the "fifth Ramone," designed their iconic logo and T-shirts, attending all but two concerts and personally selling merchandise at shows
+* The band revolutionized punk by rejecting the virtuosity and pretentiousness of 1970s rock, returning to primitive 1950s-60s rock spirit
+* Their 17-minute sets at CBGB built a cult following that influenced generations, even as commercial success eluded them
+
+### 雷蒙斯乐队：卖出的T恤比唱片还多的文化偶像
+
+* 雷蒙斯1976年的首张专辑录制成本仅6,400美元，未能上榜，却成为流行音乐史上最具影响力的专辑之一
+* 四个来自皇后区的高中边缘人采用了统一的艺名、皮夹克、破牛仔裤和原始音乐风格，让摇滚乐平民化
+* 摄影师罗伯塔·贝利拍摄的标志性专辑封面照片现藏于纽约现代艺术博物馆
+* 歌曲既颂扬垃圾文化，也涉及卖淫、吸毒和暴力等黑暗主题，有时还争议性地使用纳粹意象
+* 尽管职业生涯中演出了2,263场音乐会，乐队周边商品的商业成功却超过了音乐本身
+* "第五位雷蒙斯"阿图罗·维加设计了他们的标志性logo和T恤，除两场外参加了所有演出，并亲自在现场销售商品
+* 乐队通过拒绝1970年代摇滚的炫技和做作，回归1950-60年代原始摇滚精神，革新了朋克音乐
+* 他们在CBGB酒吧的17分钟演出培养了狂热追随者，影响了几代人，尽管商业成功始终未至
+
+**[Read Original / 阅读原文](https://english.elpais.com/culture/2026-03-17/the-uncomfortable-truth-that-will-always-haunt-the-ramones-they-sold-more-t-shirts-than-records.html)**
+
+### Two Studies in Compiler Optimizations
+
+* The post explores how modern compilers like LLVM optimize code, examining two specific cases where small source changes can have unexpected performance impacts
+* Case 1 demonstrates modular increment optimization: converting an expensive division operation (6 cycles, 12-cycle latency) into a cheaper conditional move instruction
+* The compiler can automatically perform this optimization when given hints through C++23's `assume` attribute, transforming `(cur + 1) % count` into a `cmp`+`cmov` sequence
+* The optimization occurs in LLVM's InstCombine pass, which handles peephole optimizations by pattern matching instructions without modifying the control flow graph
+* The post uses LLVM 22.1.0, C++23, and x86-64 Assembly with Intel syntax to illustrate how compiler internals work
+* Compiler Explorer's Opt Pipeline view is recommended as the best tool for investigating optimization passes and their effects on code
+* Understanding compiler optimization mechanics helps developers write more performance-oriented code and debug unexpected performance issues
+
+### 编译器优化的两个研究案例
+
+* 本文探讨了 LLVM 等现代编译器如何优化代码，通过两个具体案例展示源代码的微小变化如何产生意外的性能影响
+* 案例1演示了模运算递增优化：将昂贵的除法操作（6个周期，12周期延迟）转换为更便宜的条件移动指令
+* 当通过 C++23 的 `assume` 属性提供提示时，编译器可以自动执行此优化，将 `(cur + 1) % count` 转换为 `cmp`+`cmov` 序列
+* 该优化发生在 LLVM 的 InstCombine 阶段，该阶段通过模式匹配指令来处理窥孔优化，而不修改控制流图
+* 文章使用 LLVM 22.1.0、C++23 和 x86-64 汇编（Intel 语法）来说明编译器内部工作原理
+* 推荐使用 Compiler Explorer 的 Opt Pipeline 视图作为研究优化过程及其对代码影响的最佳工具
+* 理解编译器优化机制有助于开发者编写更注重性能的代码并调试意外的性能问题
+
+**[Read Original / 阅读原文](https://www.hmpcabral.com/2026/03/20/two-studies-in-compiler-optimisations/)**
 
