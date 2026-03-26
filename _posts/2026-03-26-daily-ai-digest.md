@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 26, 2026"
 date: 2026-03-26
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -549,4 +549,175 @@ This tool addresses a growing demographic of "vibe coders" - people who build so
 * 适合希望快速学习Claude Code 80%常用功能的开发者,包含实际演示和免费补充资源
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=WCuwYLVE6j8)**
+
+### Running Tesla Model 3's Computer on My Desk Using Parts From Crashed Cars
+
+* Security researcher purchased salvaged Tesla Model 3 parts from eBay ($200-300 for MCU, $175 for touchscreen) to participate in Tesla's bug bounty program
+* Successfully assembled a working desk setup by connecting the MCU (Media Control Unit), autopilot computer, touchscreen, and 12V power supply (10A recommended)
+* Tesla publicly provides detailed wiring schematics through their "Electrical Reference" documentation, showing exact pin assignments and connector specifications
+* Discovered internal car network (192.168.90.X/24) with exposed services including SSH server and ODIN REST API on port 8080 for diagnostics
+* Major challenge was sourcing the rare Rosenberger 99K10D-1D5A5-D connector cable - BMW LVDS alternatives didn't fit, improvised wiring caused a short that burned a power controller chip
+* After replacing the damaged MAX16932CATIS chip and purchasing an entire dashboard wiring harness ($80) for the correct cable, achieved a fully functional Tesla OS running on desk
+* Tesla offers "Root access program" - researchers who find rooting vulnerabilities receive permanent SSH certificates for continued security research on their own vehicles
+
+### 在桌面上运行特斯拉 Model 3 车载电脑 - 使用事故车零件
+
+* 安全研究员从 eBay 购买特斯拉 Model 3 打捞零件(MCU 200-300美元,触摸屏175美元)以参与特斯拉漏洞赏金计划
+* 成功组装桌面系统,连接 MCU(媒体控制单元)、自动驾驶电脑、触摸屏和12V电源(建议10A)
+* 特斯拉通过"电气参考"文档公开提供详细接线原理图,显示精确的引脚分配和连接器规格
+* 发现车辆内部网络(192.168.90.X/24),暴露的服务包括 SSH 服务器和8080端口的 ODIN REST API 诊断接口
+* 主要挑战是采购罕见的 Rosenberger 99K10D-1D5A5-D 连接器线缆 - 宝马 LVDS 替代品不兼容,临时接线导致短路烧毁电源控制芯片
+* 更换损坏的 MAX16932CATIS 芯片并购买整个仪表板线束(80美元)获得正确线缆后,成功在桌面运行完整的特斯拉操作系统
+* 特斯拉提供"Root 访问计划" - 发现提权漏洞的研究人员可获得永久 SSH 证书,用于在自己车辆上继续安全研究
+
+**[Read Original / 阅读原文](https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/)**
+
+### ARC-AGI-3: Interactive Reasoning Benchmark for AI Agents
+
+* ARC-AGI-3 is an interactive reasoning benchmark that tests AI agents' ability to explore novel environments, acquire goals dynamically, build adaptable world models, and learn continuously
+* A 100% score indicates AI agents can beat every game as efficiently as humans, requiring experience-driven learning rather than solving static puzzles
+* Measures intelligence through 100% human-solvable environments, skill-acquisition efficiency over time, long-horizon planning with sparse feedback, and experience-driven adaptation
+* Designed with principles of being easy for humans to learn, requiring no pre-loaded knowledge, providing clear goals with meaningful feedback, and introducing novelty to prevent brute-force memorization
+* Makes the gap between AI and human learning measurable by testing intelligence across time—capturing planning horizons, memory compression, and belief-updating capabilities
+
+### ARC-AGI-3：AI智能体交互推理基准测试
+
+* ARC-AGI-3是一个交互式推理基准测试，挑战AI智能体探索新环境、动态获取目标、构建可适应的世界模型并持续学习的能力
+* 100%的分数意味着AI智能体能像人类一样高效地通关每个游戏，需要通过经验驱动学习而非解决静态谜题
+* 通过100%人类可解的环境、随时间推移的技能习得效率、稀疏反馈下的长期规划以及多步骤的经验驱动适应来衡量智能
+* 设计原则包括：人类易于快速上手、无需预加载知识或隐藏提示、提供清晰目标和有意义的反馈、引入新颖性以防止暴力记忆
+* 通过测试跨时间的智能（而非仅最终答案）来量化AI与人类学习之间的差距，捕捉规划视野、记忆压缩和根据新证据更新信念的能力
+
+**[Read Original / 阅读原文](https://arcprize.org/arc-agi/3)**
+
+<!-- [Title-Only] -->
+### False claims in a widely-cited paper. No corrections. No consequences
+
+**Note:** This analysis is based solely on the title, as the article content could not be fetched.
+
+* This article likely discusses a case of academic misconduct or research integrity issues where a highly-cited academic paper contains demonstrably false claims, yet the authors have not issued corrections and faced no professional repercussions
+* The URL suggests this is from Andrew Gelman's Statistical Modeling blog and references "business school," indicating the problematic paper may be from business or management research
+* Why it might be interesting: This touches on critical issues in academic publishing including the lack of accountability for research errors, the difficulty of correcting the scientific record once papers gain citations, and potential systemic problems in how academic institutions handle research misconduct. It raises questions about peer review effectiveness and the incentive structures in academia that may allow flawed research to persist unchallenged
+
+---
+
+### 被广泛引用的论文中存在虚假声明，无更正，无后果
+
+**说明：** 由于无法获取文章内容，以下分析仅基于标题。
+
+* 这篇文章可能讨论了一起学术不端或研究诚信问题案例：一篇被高度引用的学术论文包含可证实的虚假声明，但作者既未发布更正声明，也未面临任何职业后果
+* 从URL来看，这篇文章来自Andrew Gelman的统计建模博客，并提到了"商学院"，表明这篇有问题的论文可能来自商业或管理研究领域
+* 为何值得关注：这触及了学术出版中的关键问题，包括研究错误缺乏问责机制、论文获得引用后难以更正科学记录，以及学术机构处理研究不端行为的潜在系统性问题。它引发了关于同行评审有效性以及学术界激励结构的质疑——这些结构可能允许有缺陷的研究长期存在而不受挑战
+
+**[Read Original / 阅读原文](https://statmodeling.stat.columbia.edu/2026/03/24/false-claims-in-a-published-no-corrections-no-consequences-welcome-to-the-business-school/?unapproved=2412259&moderation-hash=80fae7fdc82aee50eb3cb14cd8c0b080#comment-2412259)**
+
+### codex-console - Enhanced OpenAI Account Registration & Management Console
+
+* **What it does**: An integrated console for automating OpenAI account registration, login, token extraction, and subscription management with support for multiple email providers and batch processing
+* **Key features**: 
+  - Fixes recent OpenAI registration flow issues (Sentinel POW solving, split registration/login flow, verification code handling)
+  - Web UI for task management with real-time logs and data import/export
+  - Semi-automated card binding with random address generation
+  - Docker deployment with noVNC support for visual browser automation
+  - Cross-platform packaging (Windows/Linux/macOS executables)
+  - SQLite and PostgreSQL database support
+* **Why it's notable**: Actively maintained fork addressing breaking changes in OpenAI's registration pipeline that cause failures with Outlook/temporary emails, making it a practical solution for developers needing reliable account automation in 2024
+
+---
+
+### codex-console - OpenAI 账号注册与管理增强控制台
+
+* **功能介绍**: 集成化控制台,用于自动化 OpenAI 账号注册、登录、token 获取和订阅管理,支持多种邮箱服务和批量处理
+* **主要特点**:
+  - 修复近期 OpenAI 注册流程问题(Sentinel POW 求解、注册登录分离、验证码处理优化)
+  - Web UI 任务管理界面,支持实时日志查看和数据导入导出
+  - 半自动绑卡模式,支持随机地址生成
+  - Docker 部署,集成 noVNC 可视化浏览器自动化
+  - 跨平台打包(Windows/Linux/macOS 可执行文件)
+  - 支持 SQLite 和 PostgreSQL 数据库
+* **为何值得关注**: 基于 cnlimiter/codex-manager 的活跃维护分支,专门解决 OpenAI 注册链路变更导致的 Outlook/临时邮箱收不到邮件等问题,为 2024 年需要可靠账号自动化的开发者提供实用解决方案
+
+**[View Repository / 查看仓库](https://github.com/dou-jiang/codex-console)**
+
+### 🎬 How a Lost Book Launched the Scientific Revolution - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Explores how the rediscovery of an ancient text catalyzed the Scientific Revolution, examining the historical connection between lost knowledge and intellectual transformation
+* Key topics discussed: The role of recovered classical texts in Renaissance thought, how ancient ideas sparked modern scientific thinking, the transmission of knowledge across centuries, and the intellectual conditions that enabled revolutionary scientific breakthroughs
+* Why it's worth watching: Ada Palmer brings a historian's perspective to understanding how ideas travel through time, revealing the surprising ways that rediscovering old knowledge can trigger entirely new ways of thinking about the world
+
+### 🎬 失落的书籍如何引发科学革命 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨一本古代文献的重新发现如何催化了科学革命,考察失落知识与智识变革之间的历史联系
+* 主要话题: 复原的古典文本在文艺复兴思想中的作用、古代思想如何激发现代科学思维、知识跨世纪的传播,以及促成革命性科学突破的智识条件
+* 为何值得观看: Ada Palmer以历史学家的视角解读思想如何穿越时空传播,揭示重新发现旧知识如何以令人惊讶的方式触发全新的世界观
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oJBcOsyuHvw)**
+
+### 🎬 Google just changed the future of UI/UX design...
+
+**Channel:** Fireship
+
+* What the video covers: Google's latest announcements and innovations that are reshaping UI/UX design paradigms, featuring new tools, frameworks, or design systems that developers and designers need to know about
+* Key topics discussed: Breaking changes in Google's design approach, new development tools or APIs, practical implications for frontend developers and designers, real-world implementation examples
+* Why it's worth watching: Fireship delivers fast-paced, technically accurate breakdowns of major tech announcements. This video provides essential insights into Google's direction for UI/UX, helping developers stay ahead of industry shifts and adapt their workflows accordingly
+
+### 🎬 Google 刚刚改变了 UI/UX 设计的未来...
+
+**频道:** Fireship
+
+* 视频内容概述: Google 最新发布的重大公告和创新技术,正在重塑 UI/UX 设计范式,包括新工具、框架或设计系统等开发者和设计师必须了解的内容
+* 主要话题: Google 设计方法的突破性变化、新的开发工具或 API、对前端开发者和设计师的实际影响、真实世界的实现案例
+* 为何值得观看: Fireship 以快节奏、技术精准的方式解读重大科技公告。本视频提供了 Google UI/UX 发展方向的核心洞察,帮助开发者把握行业变革趋势并及时调整工作流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qaB5HF4ax9M)**
+
+### 🎬 This new Linux distro is breaking the law, by design…
+**Channel:** Fireship
+
+* What the video covers: A controversial new Linux distribution that intentionally violates software licensing laws and regulations as part of its core design philosophy
+* Key topics discussed: The legal implications of the distro's approach, what laws it's breaking, the motivations behind this design choice, and the potential consequences for users and the open-source community
+* Why it's worth watching: Explores the intersection of software freedom, legal compliance, and ethical boundaries in the Linux ecosystem - a provocative topic that challenges conventional thinking about open-source software distribution
+
+### 🎬 这个新 Linux 发行版故意违法设计…
+**频道:** Fireship
+
+* 视频内容概述: 介绍一个有争议的新 Linux 发行版,其核心设计理念是故意违反软件许可法律和法规
+* 主要话题: 该发行版的法律影响、违反了哪些法律、这种设计选择背后的动机,以及对用户和开源社区的潜在后果
+* 为何值得观看: 探讨软件自由、法律合规性和 Linux 生态系统中的道德边界交叉点 - 这是一个挑战开源软件发行传统思维的挑衅性话题
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nkY_s9HpL9M)**
+
+### 🎬 Coding Adventure: Synthesizing Musical Instruments
+**Channel:** Sebastian Lague
+
+* What the video covers: A hands-on exploration of digital audio synthesis, demonstrating how to create musical instrument sounds from scratch using code and mathematical principles
+* Key topics discussed: Sine wave manipulation, additive synthesis techniques, harmonic overtones, waveform shaping, and the mathematical foundations of sound generation
+* Why it's worth watching: Sebastian Lague's signature blend of clear visual explanations and practical coding makes complex audio synthesis concepts accessible; perfect for developers interested in audio programming, game development, or understanding the science behind digital music creation
+
+### 🎬 编程冒险:合成乐器音色
+**频道:** Sebastian Lague
+
+* 视频内容概述: 通过代码和数学原理从零开始创建乐器音色的实践探索,展示数字音频合成的工作原理
+* 主要话题: 正弦波操控、加法合成技术、谐波泛音、波形塑造以及声音生成的数学基础
+* 为何值得观看: Sebastian Lague 标志性的清晰可视化讲解与实践编程相结合,让复杂的音频合成概念变得易于理解;非常适合对音频编程、游戏开发或数字音乐创作背后的科学原理感兴趣的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rRnOtKlg4jA)**
+
+### 🎬 Complete Java Development: Spring Boot, Microservices, Spring AI
+**Channel:** Telusko
+
+* Comprehensive 63-hour roadmap covering the complete Java development ecosystem from fundamentals to advanced enterprise technologies
+* Key topics include Spring Boot framework, microservices architecture, and cutting-edge Spring AI integration for modern application development
+* Worth watching for developers seeking an end-to-end learning path that bridges traditional Java development with contemporary cloud-native and AI-powered applications, offering practical skills for enterprise-level projects
+
+### 🎬 完整Java开发：Spring Boot、微服务、Spring AI
+**频道:** Telusko
+
+* 全面的63小时学习路线，涵盖从基础到高级企业技术的完整Java开发生态系统
+* 主要话题包括Spring Boot框架、微服务架构，以及前沿的Spring AI集成技术
+* 适合寻求端到端学习路径的开发者，课程将传统Java开发与现代云原生和AI驱动应用相结合，提供企业级项目所需的实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=q6z_UCBM5Ek)**
 
