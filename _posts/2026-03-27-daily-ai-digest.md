@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 27, 2026"
 date: 2026-03-27
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -285,4 +285,200 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 适合正在评估和选择最适合自己开发流程的 AI 编程助手的开发者观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7izpt_EAFQo)**
+
+### RuView - WiFi-Based Human Sensing Without Cameras
+
+* **What it does**: Transforms commodity WiFi signals into real-time human pose estimation, vital sign monitoring (breathing rate, heart rate), and presence detection—completely camera-free and privacy-preserving
+* **Key features**: 
+  - Detects pose, breathing (6-30 BPM), and heartbeat (40-120 BPM) through walls using Channel State Information (CSI)
+  - Runs on inexpensive ESP32 hardware (~$1/node) with edge AI processing—no cloud required
+  - Self-learning system that adapts to environments without labeled training data
+  - Multi-person tracking with 360° coverage using mesh sensor networks
+  - Built in Rust for performance (54K fps pose estimation) with 1300+ tests
+* **Why it's notable**: Extends academic WiFi sensing research (like CMU's DensePose From WiFi) into a practical, deployable edge system. Offers privacy-first alternative to camera surveillance for healthcare monitoring, disaster response, and smart spaces. Gained 1,001 stars today for bringing cutting-edge RF sensing to accessible hardware with comprehensive documentation (62 architecture decision records).
+
+---
+
+### RuView - 基于WiFi的无摄像头人体感知系统
+
+* **功能介绍**: 将普通WiFi信号转化为实时人体姿态估计、生命体征监测(呼吸率、心率)和存在检测——完全无需摄像头,保护隐私
+* **主要特点**:
+  - 利用信道状态信息(CSI)穿墙检测姿态、呼吸(6-30次/分)和心跳(40-120次/分)
+  - 运行在廉价ESP32硬件上(约1美元/节点),边缘AI处理——无需云服务
+  - 自学习系统,无需标注数据即可适应环境
+  - 通过网状传感器网络实现多人追踪和360°覆盖
+  - 使用Rust构建,性能强劲(54K fps姿态估计),包含1300+测试
+* **为何值得关注**: 将学术WiFi感知研究(如CMU的DensePose From WiFi)转化为实用的边缘部署系统。为医疗监护、灾难救援和智能空间提供隐私优先的摄像头替代方案。凭借将前沿射频感知技术应用于平价硬件,并提供全面文档(62份架构决策记录),今日获得1,001星标。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### DeerFlow - Open-Source Super Agent Harness for Long-Horizon Tasks
+
+* **What it does**: DeerFlow is a super agent orchestration framework that coordinates sub-agents, memory systems, and sandboxes to handle complex, long-running tasks (minutes to hours). It can research, write code, and create content autonomously through extensible skills and tools.
+
+* **Key features**: 
+  - Orchestrates multiple sub-agents with shared memory and context
+  - Integrated sandbox environments for safe code execution
+  - Extensible skill system with Claude Code integration
+  - Supports multiple LLM providers (OpenAI, Anthropic, OpenRouter, DeepSeek, etc.)
+  - MCP (Model Context Protocol) server support
+  - IM channel integrations for messaging platforms
+  - Docker-based deployment with hot-reload development mode
+
+* **Why it's notable**: Version 2.0 represents a complete ground-up rewrite that hit #1 on GitHub Trending. It's backed by ByteDance and integrates with their Volcengine/BytePlus services. The framework bridges the gap between simple chatbots and autonomous agents capable of handling complex, multi-step workflows that require research, coding, and content creation over extended time periods.
+
+---
+
+### DeerFlow - 开源长时程超级智能体框架
+
+* **功能介绍**: DeerFlow 是一个超级智能体编排框架,通过协调子智能体、记忆系统和沙箱环境来处理复杂的长时程任务(从几分钟到几小时)。它能够通过可扩展的技能和工具自主完成研究、编写代码和内容创作。
+
+* **主要特点**:
+  - 编排多个子智能体,共享记忆和上下文
+  - 集成沙箱环境,安全执行代码
+  - 可扩展的技能系统,支持 Claude Code 集成
+  - 支持多种大语言模型提供商(OpenAI、Anthropic、OpenRouter、DeepSeek 等)
+  - 支持 MCP(模型上下文协议)服务器
+  - 即时通讯渠道集成
+  - 基于 Docker 的部署,支持热重载开发模式
+
+* **为何值得关注**: 2.0 版本是完全重写的版本,发布后登顶 GitHub Trending 榜首。该项目由字节跳动支持,并集成了火山引擎/BytePlus 服务。这个框架填补了简单聊天机器人和自主智能体之间的空白,能够处理需要研究、编码和内容创作的复杂多步骤工作流,适用于长时间运行的任务场景。
+
+**[View Repository / 查看仓库](https://github.com/bytedance/deer-flow)**
+
+### claude-peers-mcp - Let Your Claude Code Instances Communicate Across Sessions
+
+* **What it does**: Enables multiple Claude Code instances running on the same machine to discover each other and exchange messages in real-time, allowing coordination across different projects and terminal sessions.
+
+* **Key features**:
+  - Peer discovery scoped by machine, directory, or git repository
+  - Instant message delivery via channel protocol with automatic push notifications
+  - Auto-generated summaries of what each instance is working on (using GPT-4-nano if OpenAI API key provided)
+  - Localhost-only broker daemon with SQLite backend for security
+  - CLI tools for inspecting and managing peer connections
+  - Automatic cleanup of dead peer sessions
+
+* **Why it's notable**: Solves a real pain point for developers juggling multiple Claude Code sessions across different projects. Instead of manually copying context between sessions, Claude instances can now ask each other questions, share information, and coordinate work autonomously. The implementation is elegant—using a lightweight broker daemon and MCP server architecture—and the instant message delivery via channels makes the experience seamless. With 1,250 stars, it's gaining traction as a practical tool for power users who run multiple AI coding assistants simultaneously.
+
+---
+
+### claude-peers-mcp - 让你的 Claude Code 实例跨会话通信
+
+* **功能介绍**: 允许同一台机器上运行的多个 Claude Code 实例相互发现并实时交换消息,实现跨项目和终端会话的协作。
+
+* **主要特点**:
+  - 按机器、目录或 Git 仓库范围发现对等实例
+  - 通过 channel 协议即时推送消息,无需轮询
+  - 自动生成每个实例的工作摘要(如提供 OpenAI API 密钥,使用 GPT-4-nano)
+  - 仅限本地的 broker 守护进程,使用 SQLite 后端保障安全
+  - 提供 CLI 工具用于检查和管理对等连接
+  - 自动清理失效的会话
+
+* **为何值得关注**: 解决了开发者在多个项目间切换多个 Claude Code 会话时的实际痛点。无需手动在会话间复制上下文,Claude 实例现在可以相互提问、共享信息并自主协调工作。实现方式优雅——采用轻量级 broker 守护进程和 MCP 服务器架构——通过 channel 实现的即时消息推送让体验非常流畅。获得 1,250 星标,正在成为同时运行多个 AI 编码助手的高级用户的实用工具。
+
+**[View Repository / 查看仓库](https://github.com/louislva/claude-peers-mcp)**
+
+### OpenSpace - Self-Evolving AI Agent Framework with Collective Intelligence
+
+* **What it does**: OpenSpace is a self-evolving engine that plugs into any AI agent (Claude Code, Codex, OpenClaw, nanobot, Cursor) to make them learn, adapt, and share knowledge from real-world tasks. It transforms individual agents into a collective intelligence network where successful patterns become reusable skills.
+
+* **Key features**: 
+  * Auto-fix, auto-improve, and auto-learn capabilities that turn failures into improvements
+  * 46% token reduction through skill reuse and evolution
+  * Cloud skill community for sharing evolved skills across agents
+  * Quality monitoring with performance tracking and error rate analysis
+  * Multi-layer monitoring that auto-triggers repairs when skills degrade
+  * Works with any agent supporting skills via MCP (Model Context Protocol)
+
+* **Why it's notable**: Delivers measurable economic value with 4.2× better performance on professional tasks (GDPVal benchmark) while cutting costs nearly in half. Solves the critical problem that current AI agents never learn from experience - they repeat costly mistakes and waste tokens reasoning from scratch every time. The framework enables true agent evolution where one agent's learning becomes every agent's upgrade, creating network effects that make the entire ecosystem smarter over time.
+
+---
+
+### OpenSpace - 自进化 AI 智能体框架与集体智能
+
+* **功能介绍**: OpenSpace 是一个自进化引擎,可插入任何 AI 智能体(Claude Code、Codex、OpenClaw、nanobot、Cursor),使其能够从实际任务中学习、适应和分享知识。它将独立智能体转变为集体智能网络,成功的模式会成为可复用的技能。
+
+* **主要特点**:
+  * 自动修复、自动改进和自动学习能力,将失败转化为改进
+  * 通过技能复用和进化减少 46% 的 token 消耗
+  * 云端技能社区,可跨智能体分享进化后的技能
+  * 质量监控,包含性能追踪和错误率分析
+  * 多层监控系统,当技能退化时自动触发修复
+  * 通过 MCP(模型上下文协议)支持任何具备技能功能的智能体
+
+* **为何值得关注**: 在专业任务基准测试(GDPVal)中实现 4.2 倍性能提升,同时成本降低近一半,带来可衡量的经济价值。解决了当前 AI 智能体的关键问题——从不从经验中学习,重复犯同样的代价高昂的错误,每次都从零开始推理浪费 token。该框架实现了真正的智能体进化,一个智能体的学习成果会成为所有智能体的升级,创造网络效应使整个生态系统持续变得更智能。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/OpenSpace)**
+
+### 🎬 Anthropic just released its OpenClaw Killer...
+
+**Channel:** Fireship
+
+* What the video covers: Anthropic's latest release that directly competes with OpenAI's capabilities, potentially disrupting the AI landscape
+* Key topics discussed: New features and capabilities from Anthropic, comparison with OpenAI's offerings, implications for developers and the AI industry
+* Why it's worth watching: Fireship delivers fast-paced, technical breakdowns of cutting-edge AI developments with his signature style - perfect for developers who want to stay current on AI tooling and understand competitive dynamics in the space
+
+### 🎬 Anthropic 发布 OpenClaw 杀手级产品
+
+**频道:** Fireship
+
+* 视频内容概述: Anthropic 最新发布的产品直接对标 OpenAI 的能力，可能颠覆 AI 领域格局
+* 主要话题: Anthropic 的新功能和能力、与 OpenAI 产品的对比、对开发者和 AI 行业的影响
+* 为何值得观看: Fireship 以其标志性风格快速解析前沿 AI 技术发展 - 非常适合想要了解 AI 工具最新动态和行业竞争态势的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wfeiCZK0mNs)**
+
+### 🎬 Chat GPT vs Claude !! #coding #programming #javascript #python #html #css #cssanimation
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* Compares ChatGPT and Claude AI assistants for coding tasks across multiple programming languages
+* Covers practical coding applications in JavaScript, Python, HTML, CSS, and CSS animations
+* Worth watching for developers evaluating which AI coding assistant better suits their workflow and programming needs
+
+---
+
+### 🎬 Chat GPT vs Claude !! #编程 #JavaScript #Python #HTML #CSS #CSS动画
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 对比 ChatGPT 和 Claude 两款 AI 助手在多种编程语言中的编码能力
+* 涵盖 JavaScript、Python、HTML、CSS 及 CSS 动画的实际编程应用
+* 适合正在评估哪款 AI 编程助手更符合自己工作流程和编程需求的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZQ1_Kj2ELpg)**
+
+### 🎬 Learn AI Coding the Right Way (No Vibe Coding) | New Playlist | CampusX
+**Channel:** CampusX
+
+* What the video covers: A comprehensive introduction to Agentic Coding using Claude Code, moving beyond basic "vibe coding" to structured AI-assisted software development
+* Key topics discussed: Proper AI coding workflows, Claude Code implementation, transitioning from manual coding to AI-assisted development, best practices for working with AI coding tools
+* Why it's worth watching: Essential for developers looking to level up their AI coding skills with a systematic approach rather than trial-and-error methods. The playlist promises a complete guide to modern AI-assisted development workflows.
+
+---
+
+### 🎬 正确学习 AI 编程（告别随意编码）| 新播放列表 | CampusX
+**频道:** CampusX
+
+* 视频内容概述: 使用 Claude Code 进行代理编码（AI 辅助软件开发）的完整指南，帮助开发者从基础的"随意编码"过渡到结构化的 AI 辅助开发
+* 主要话题: 正确的 AI 编码工作流程、Claude Code 实践应用、从手动编码到 AI 辅助开发的转变、AI 编码工具的最佳实践
+* 为何值得观看: 对于想要系统性提升 AI 编码技能的开发者来说必看，该系列课程提供了完整的现代 AI 辅助开发工作流指南，而非简单的试错方法
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=K_KIQA849cs)**
+
+### 🎬 AI Versus Coding !! #coding #programming #python #javascript #html #css #cssanimation
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* What the video covers: A comparison between AI tools and traditional coding approaches, exploring how AI is impacting the development workflow across multiple programming languages and web technologies
+* Key topics discussed: The relationship between AI and coding practices, covering Python, JavaScript, HTML, CSS, and CSS animations - likely examining where AI assists versus where manual coding skills remain essential
+* Why it's worth watching: Relevant for developers at all levels who want to understand how AI is reshaping the coding landscape and how to balance AI assistance with core programming skills in modern web development
+
+---
+
+### 🎬 AI 对决编程 !! #coding #programming #python #javascript #html #css #cssanimation
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 对比 AI 工具与传统编程方法，探讨 AI 如何影响多种编程语言和 Web 技术的开发工作流程
+* 主要话题: AI 与编程实践的关系，涵盖 Python、JavaScript、HTML、CSS 和 CSS 动画 - 可能探讨 AI 辅助的领域与手动编码技能仍然必不可少的领域
+* 为何值得观看: 适合各个水平的开发者，帮助理解 AI 如何重塑编程领域，以及如何在现代 Web 开发中平衡 AI 辅助与核心编程技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=phsVbWVoZ18)**
 
