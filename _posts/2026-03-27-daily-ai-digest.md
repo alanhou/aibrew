@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 27, 2026"
 date: 2026-03-27
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -595,4 +595,89 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合想要了解为什么 Claude 正成为许多用户首选 AI 助手的新手。创作者分享了实用的工作流程,并通过 Telegram 社群提供额外资源(提示词模板和电子表格)
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=jw0pMr54Ztc)**
+
+### Schedule Tasks on the Web - Claude Code Documentation Summary
+
+* Cloud-based scheduled tasks run prompts on recurring schedules using Anthropic infrastructure, working even when your computer is off
+* Three scheduling options available: Cloud (Anthropic-managed), Desktop (local machine), and /loop (session-based)
+* Cloud tasks require no local machine, run autonomously without permission prompts, minimum 1-hour intervals
+* Common use cases include reviewing PRs, analyzing CI failures, syncing documentation, and running dependency audits
+* Task creation involves naming, writing self-contained prompts, selecting GitHub repositories, choosing cloud environments, and configuring schedules
+* Tasks support MCP connectors for external service integration (Slack, Linear, Google Drive)
+* Available to all Claude Code web users (Pro, Max, Team, Enterprise)
+
+### 在 Web 端安排定时任务 - Claude Code 文档摘要
+
+* 基于云的定时任务使用 Anthropic 基础设施按周期运行提示词,即使计算机关闭也能继续工作
+* 提供三种调度选项:云端(Anthropic 托管)、桌面端(本地机器)和 /loop(会话级)
+* 云端任务无需本地机器,自主运行无需权限提示,最小间隔 1 小时
+* 常见用例包括审查 PR、分析 CI 失败、同步文档和运行依赖审计
+* 任务创建包括命名、编写独立提示词、选择 GitHub 仓库、选择云环境和配置时间表
+* 任务支持 MCP 连接器以集成外部服务(Slack、Linear、Google Drive)
+* 面向所有 Claude Code Web 用户(Pro、Max、Team、Enterprise)
+
+**[Read Original / 阅读原文](https://code.claude.com/docs/en/web-scheduled-tasks)**
+
+### Apple Discontinues Mac Pro with No Future Hardware Plans
+
+* Apple has officially discontinued the Mac Pro, removing it from their website with the buy page now redirecting to the Mac homepage
+* The company confirmed to 9to5Mac that there are no plans to offer future Mac Pro hardware, marking the end of the product line
+* The current Mac Pro design launched in 2019 with Intel chips, was updated with M2 Ultra in June 2023, but never received the M3 Ultra upgrade
+* Mac Studio is positioned as the replacement pro desktop, offering M3 Ultra chip with up to 32-core CPU, 80-core GPU, 256GB unified memory, and 16TB storage
+* Apple's desktop lineup now consists of three models: Mac mini, iMac, and Mac Studio, alongside three laptop options
+* macOS Tahoe 26.2 introduced RDMA over Thunderbolt 5 feature, allowing users to connect multiple Macs for scaled performance at the ultra-high-end
+* The decision to discontinue rather than update the aging M2 Ultra model at $6,999 is seen as the right call for Mac shoppers
+
+### 苹果停产 Mac Pro 且无未来硬件计划
+
+* 苹果正式停产 Mac Pro，已从官网下架，购买页面现已重定向至 Mac 主页
+* 该公司向 9to5Mac 确认，未来没有推出 Mac Pro 硬件的计划，标志着该产品线的终结
+* 现有 Mac Pro 设计于 2019 年推出搭载英特尔芯片，2023 年 6 月更新为 M2 Ultra，但从未获得 M3 Ultra 升级
+* Mac Studio 被定位为替代的专业级台式机，提供 M3 Ultra 芯片，最高配置 32 核 CPU、80 核 GPU、256GB 统一内存和 16TB 存储
+* 苹果的台式机产品线现包含三款机型：Mac mini、iMac 和 Mac Studio，以及三款笔记本电脑选项
+* macOS Tahoe 26.2 引入了 RDMA over Thunderbolt 5 功能，允许用户连接多台 Mac 以实现超高端性能扩展
+* 停产而非更新售价 6,999 美元的老旧 M2 Ultra 机型，被认为是对 Mac 购买者更负责任的决定
+
+**[Read Original / 阅读原文](https://9to5mac.com/2026/03/26/apple-discontinues-the-mac-pro/)**
+
+<!-- [Title-Only] -->
+### Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer
+
+* This article likely describes a creative technical experiment where the author deployed an AI agent on a budget VPS (Virtual Private Server) and used IRC (Internet Relay Chat) as the communication protocol. The approach is interesting because it combines modern AI technology with a classic, lightweight messaging protocol from the early internet era.
+* Why it might be interesting: It demonstrates how AI agents can be deployed cost-effectively using minimal infrastructure, and shows that old-school protocols like IRC can still be relevant for modern applications. The $7/month price point makes this accessible to hobbyists and developers looking for budget-friendly AI deployment solutions.
+
+### Show HN: 我在每月 7 美元的 VPS 上部署了一个 AI 代理，使用 IRC 作为传输层
+
+* 这篇文章可能描述了一个有趣的技术实验：作者在低成本的 VPS（虚拟专用服务器）上部署了一个 AI 代理，并使用 IRC（互联网中继聊天）作为通信协议。这种方法很有意思，因为它将现代 AI 技术与早期互联网时代的经典轻量级消息协议结合在一起。
+* 为何值得关注：展示了如何使用最少的基础设施以经济高效的方式部署 AI 代理，并证明了像 IRC 这样的老式协议在现代应用中仍然具有相关性。每月 7 美元的价格点使得业余爱好者和寻求经济实惠的 AI 部署方案的开发者都能轻松尝试。
+
+**[Read Original / 阅读原文](https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/)**
+
+### Awesome Open Source AI - Curated Collection of Open-Source AI Projects
+
+* **What it does**: A comprehensive directory of truly open-source AI projects, covering everything from core frameworks and foundation models to inference engines, RAG tools, and developer utilities.
+
+* **Key features**: 
+  * Organized into 14 major categories including frameworks (PyTorch, JAX), foundation models (Qwen, DeepSeek, Llama), inference engines, agentic AI systems, and MLOps tools
+  * Includes both established projects (TensorFlow, Hugging Face Transformers) and emerging Rust-based frameworks (Burn, Candle)
+  * Covers the full AI development lifecycle from training and fine-tuning to production deployment and evaluation
+  * Features specialized sections for generative media, RAG systems, and AI safety
+
+* **Why it's notable**: With 1,114 stars, this repository serves as an essential reference for developers navigating the rapidly expanding open-source AI ecosystem. It distinguishes itself by focusing exclusively on truly open-source projects (not just open-weight models), making it valuable for developers who need transparency, customization, and community-driven innovation. The list is actively maintained and includes both cutting-edge research tools and production-ready infrastructure.
+
+---
+
+### Awesome Open Source AI - 开源人工智能项目精选集
+
+* **功能介绍**: 全面收录真正开源的 AI 项目目录,涵盖从核心框架、基础模型到推理引擎、RAG 工具和开发者实用工具的各个方面。
+
+* **主要特点**:
+  * 分为 14 个主要类别,包括框架(PyTorch、JAX)、基础模型(Qwen、DeepSeek、Llama)、推理引擎、智能体 AI 系统和 MLOps 工具
+  * 既包含成熟项目(TensorFlow、Hugging Face Transformers),也包含新兴的 Rust 框架(Burn、Candle)
+  * 覆盖从训练微调到生产部署和评估的完整 AI 开发生命周期
+  * 设有生成式媒体、RAG 系统和 AI 安全等专门板块
+
+* **为何值得关注**: 该仓库获得 1,114 星标,是开发者探索快速扩张的开源 AI 生态系统的重要参考资源。其独特之处在于专注于真正的开源项目(而非仅开放权重的模型),对需要透明度、可定制性和社区驱动创新的开发者极具价值。列表持续更新维护,既包含前沿研究工具,也包含生产就绪的基础设施。
+
+**[View Repository / 查看仓库](https://github.com/alvinunreal/awesome-opensource-ai)**
 
