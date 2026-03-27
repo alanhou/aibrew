@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 27, 2026"
 date: 2026-03-27
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -481,4 +481,118 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合各个水平的开发者，帮助理解 AI 如何重塑编程领域，以及如何在现代 Web 开发中平衡 AI 辅助与核心编程技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=phsVbWVoZ18)**
+
+<!-- [Title-Only] -->
+### Show HN: I put an AI agent on a $7/month VPS with IRC as its transport layer
+
+* This article likely describes a creative technical experiment where the author deployed an AI agent on a budget VPS (Virtual Private Server) and used IRC (Internet Relay Chat) as the communication protocol. The approach is interesting because it combines modern AI technology with a classic, lightweight messaging protocol from the early internet era.
+* Why it might be interesting: It demonstrates how AI agents can be deployed cost-effectively using minimal infrastructure, and shows that old-school protocols like IRC can still be relevant for modern applications. The $7/month price point makes this accessible to hobbyists and developers looking for budget-friendly AI deployment solutions.
+
+### Show HN: 我在每月 7 美元的 VPS 上部署了一个 AI 代理，使用 IRC 作为传输层
+
+* 这篇文章可能描述了一个有趣的技术实验：作者在低成本的 VPS（虚拟专用服务器）上部署了一个 AI 代理，并使用 IRC（互联网中继聊天）作为通信协议。这种方法很有意思，因为它将现代 AI 技术与早期互联网时代的经典轻量级消息协议结合在一起。
+* 为何值得关注：展示了如何使用最少的基础设施以经济高效的方式部署 AI 代理，并证明了像 IRC 这样的老式协议在现代应用中仍然具有相关性。每月 7 美元的价格点使得业余爱好者和寻求经济实惠的 AI 部署方案的开发者都能轻松尝试。
+
+**[Read Original / 阅读原文](https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/)**
+
+<!-- [Title-Only] -->
+### Why so many control rooms were seafoam green (2025)
+
+* This article likely explores the historical and psychological reasons behind the widespread use of seafoam green color in control rooms across various industries (nuclear plants, air traffic control, military facilities, etc.) during the mid-20th century
+* It probably discusses color psychology, industrial design trends of that era, and how this specific shade was believed to reduce eye strain and operator fatigue during long monitoring shifts
+* Readers interested in design history, industrial psychology, or Cold War-era aesthetics will find this fascinating as it reveals how seemingly mundane design choices were actually carefully considered decisions affecting human performance and safety
+
+### 为什么这么多控制室都是海沫绿色 (2025)
+
+* 这篇文章可能探讨了20世纪中期各行业控制室(核电站、空中交通管制、军事设施等)广泛使用海沫绿色的历史和心理学原因
+* 文章很可能讨论色彩心理学、那个时代的工业设计趋势,以及这种特定色调如何被认为能够减少眼睛疲劳,帮助操作员在长时间监控工作中保持状态
+* 对设计史、工业心理学或冷战时期美学感兴趣的读者会觉得这很有意思,因为它揭示了看似平凡的设计选择实际上是经过深思熟虑的决策,影响着人类表现和安全性
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content was not accessible.*
+
+*注:此简介仅基于文章标题撰写,因无法获取完整内容。*
+
+**[Read Original / 阅读原文](https://bethmathews.substack.com/p/why-so-many-control-rooms-were-seafoam)**
+
+### The Illustrator Behind Chicago Neighborhood Posters
+
+* Steve Shanabruch creates WPA-style tourism posters featuring Chicago neighborhoods and landmarks with bold lines and vivid colors
+* The project started 15 years ago as neighborhood logos while working an unfulfilling design job at a sales company
+* Recent posters include Wicker Park's Blue Line "L" train, Englewood's Yale Building atrium, and Norwood Park's Superdawg drive-in
+* Shanabruch grew up in Beverly; his father founded the Chicago Bungalow Association, instilling deep appreciation for the city's architectural character
+* The posters are self-funded passion projects available for purchase on his website, with no city agency affiliation
+
+### 芝加哥社区海报背后的插画师
+
+* Steve Shanabruch 创作了以芝加哥社区和地标为主题的 WPA 风格旅游海报，采用粗线条和鲜艳色彩
+* 该项目始于 15 年前，当时他在销售公司做设计工作感到不满足，便开始创作社区标志
+* 最新作品包括威克公园的蓝线"L"列车、恩格尔伍德的耶鲁大厦中庭以及诺伍德公园的 Superdawg 汽车餐厅
+* Shanabruch 在贝弗利长大，他的父亲创立了芝加哥平房协会，这让他对城市建筑特色有着深厚的情感
+* 这些海报是自费的激情项目，可在其网站上购买，与任何市政机构无关
+
+**[Read Original / 阅读原文](https://www.chicagotribune.com/2026/03/25/chicago-neighborhood-posters/)**
+
+### codex-console - Enhanced OpenAI Account Management Console
+
+* **What it does**: An integrated console for managing OpenAI account registration, batch processing, and token management with automated workflows
+* **Key features**: 
+  - Fixes recent OpenAI registration flow issues (Sentinel POW, split registration/login, verification code handling)
+  - Web UI for batch account management with real-time logging
+  - Multi-email service support (Outlook, CloudMail, temp emails)
+  - Auto card binding mode with random address generation
+  - SQLite/PostgreSQL support with data import/export
+  - Docker deployment with noVNC for visual browser automation
+  - Cross-platform packaging (Windows/Linux/macOS executables)
+* **Why it's notable**: Actively maintained fork addressing OpenAI's frequently changing registration requirements that break existing tools; includes practical fixes for "worked yesterday, broken today" scenarios with 1K+ stars showing strong community adoption
+
+---
+
+### codex-console - OpenAI 账号管理增强控制台
+
+* **功能介绍**: 集成化的 OpenAI 账号注册管理控制台，支持批量处理、Token 管理和自动化工作流
+* **主要特点**:
+  - 修复 OpenAI 最新注册流程问题（Sentinel POW 求解、注册登录分离、验证码处理优化）
+  - Web UI 批量账号管理，实时日志查看
+  - 多邮箱服务支持（Outlook、CloudMail、临时邮箱）
+  - 半自动绑卡模式，支持随机地址生成
+  - SQLite/PostgreSQL 数据库，支持数据导入导出
+  - Docker 部署，集成 noVNC 可视化浏览器自动化
+  - 跨平台打包（Windows/Linux/macOS 可执行文件）
+* **为何值得关注**: 针对 OpenAI 频繁变更注册链路的活跃维护分支，解决"昨天能用今天就挂"的实际痛点；1K+ star 显示社区强烈需求和认可度
+
+**[View Repository / 查看仓库](https://github.com/dou-jiang/codex-console)**
+
+### 🎬 History Was Never Slow - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: A deep dive into historical misconceptions about the pace of change, challenging the common belief that pre-modern societies experienced slow, gradual transformation
+* Key topics discussed: Historical acceleration myths, technological and social change in ancient and medieval periods, how our perception of historical time is distorted by modern perspectives, Ada Palmer's expertise in Renaissance history and science fiction
+* Why it's worth watching: Ada Palmer brings a unique perspective as both a historian and sci-fi author, offering fresh insights into how rapidly societies actually evolved throughout history and what this means for understanding our current era
+
+### 🎬 历史从未缓慢 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深入探讨关于历史变革速度的常见误解,挑战前现代社会经历缓慢渐进转变的普遍观念
+* 主要话题: 历史加速度的迷思、古代和中世纪时期的技术与社会变革、现代视角如何扭曲我们对历史时间的感知、Ada Palmer在文艺复兴历史和科幻小说方面的专业见解
+* 为何值得观看: Ada Palmer作为历史学家和科幻作家的双重身份,为理解各个历史时期社会实际演变速度提供了独特视角,并揭示这对认识当今时代的意义
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=O--rUvPZWCo)**
+
+### 🎬 The Ultimate Beginner's Guide To Claude
+**Channel:** AI Edge
+
+* What the video covers: A comprehensive introduction to Claude AI, covering its core features, capabilities, and practical applications for beginners
+* Key topics discussed: Getting started with Claude, understanding its interface, prompt engineering basics, use cases across different workflows, and how Claude compares to other AI assistants
+* Why it's worth watching: Perfect for newcomers to Claude AI who want to understand why it's becoming the go-to AI assistant for many users. The creator shares practical workflows and provides additional resources (prompts and spreadsheets) through their Telegram community
+
+### 🎬 Claude 终极新手指南
+**频道:** AI Edge
+
+* 视频内容概述: 全面介绍 Claude AI,涵盖其核心功能、能力和实际应用场景,专为初学者设计
+* 主要话题: Claude 入门指南、界面使用说明、提示词工程基础、跨工作流程的应用案例,以及 Claude 与其他 AI 助手的对比
+* 为何值得观看: 非常适合想要了解为什么 Claude 正成为许多用户首选 AI 助手的新手。创作者分享了实用的工作流程,并通过 Telegram 社群提供额外资源(提示词模板和电子表格)
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jw0pMr54Ztc)**
 
