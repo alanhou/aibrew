@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 28, 2026"
 date: 2026-03-28
-description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 17 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：17篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -769,4 +769,174 @@ VibeVoice是微软开源的语音AI模型家族,包含文本转语音(TTS)和自
 * 可通过 Mozilla Firefox 附加组件商店安装使用
 
 **[Read Original / 阅读原文](https://hn-trustspark.com/)**
+
+### Legalize-ES: Spanish Legislation as Git Repository
+
+* Over 8,600 Spanish laws from the BOE Open Data API stored as Markdown files, with each law reform tracked as a Git commit
+* Complete reform history since 1960, including the Spanish Constitution, Penal Code, Workers' Statute, and other state-level legislation
+* Each law file contains YAML frontmatter with metadata (title, identifier, country, rank, publication date, status, source) and full legislative text
+* Git-based version control enables precise tracking of legal amendments with official publication dates and source links
+* Part of the broader Legalize project, with a programmatic API planned at legalize.dev for searching, filtering, and receiving notifications on law changes
+
+### Legalize-ES: 西班牙立法的 Git 仓库
+
+* 从 BOE 开放数据 API 收录超过 8,600 部西班牙法律,以 Markdown 文件存储,每次法律修订作为一个 Git 提交记录
+* 完整的修订历史可追溯至 1960 年,包括西班牙宪法、刑法典、劳工法规等国家级立法
+* 每个法律文件包含 YAML 前置元数据(标题、标识符、国家、级别、发布日期、状态、来源)和完整法律文本
+* 基于 Git 的版本控制系统可精确追踪法律修订,附带官方发布日期和来源链接
+* 属于更广泛的 Legalize 项目,计划在 legalize.dev 提供程序化 API,支持搜索、筛选和法律变更通知功能
+
+**[Read Original / 阅读原文](https://github.com/EnriqueLop/legalize-es)**
+
+### Cocoa-Way: Native macOS Wayland Compositor
+
+* A native macOS Wayland compositor that enables seamless running of Linux applications on macOS without VM overhead
+* Features Metal/OpenGL rendering, HiDPI/Retina display support, hardware acceleration, and native desktop integration with server-side decorations
+* Uses direct Wayland protocol via Unix sockets through waypipe-darwin for zero virtualization latency
+* Installation available via Homebrew or binary releases; requires waypipe-darwin for connecting Linux apps via SSH
+* Part of "Turbo-Charged Protocol Virtualization" research exploring cross-platform Wayland using Rust trait monomorphization and SIMD optimization
+* Roadmap includes Windows backend (win-way), Android NDK support, multi-monitor capabilities, and clipboard synchronization
+
+### Cocoa-Way:原生 macOS Wayland 混成器
+
+* 原生 macOS Wayland 混成器,可在 macOS 上无缝运行 Linux 应用程序,无需虚拟机开销
+* 特性包括 Metal/OpenGL 渲染、HiDPI/Retina 显示屏支持、硬件加速,以及带服务器端装饰的原生桌面集成
+* 通过 waypipe-darwin 使用 Unix 套接字直接传输 Wayland 协议,实现零虚拟化延迟
+* 可通过 Homebrew 或二进制版本安装;需要 waypipe-darwin 通过 SSH 连接 Linux 应用
+* 属于"涡轮增压协议虚拟化"研究项目的一部分,探索使用 Rust trait 单态化和 SIMD 优化实现跨平台 Wayland
+* 路线图包括 Windows 后端(win-way)、Android NDK 支持、多显示器功能和剪贴板同步
+
+**[Read Original / 阅读原文](https://github.com/J-x-Z/cocoa-way)**
+
+### National Grid: Live - UK's Energy Transition and Wind Power Milestones
+
+* Britain closed its last coal-fired power station on September 30, 2024, ending 142 years of coal power that emitted 10.6 billion tonnes of CO2
+* EU regulations (2001), carbon pricing (2013-2015), and renewable energy growth drove the transition from coal to gas and wind power
+* Britain's Atlantic location and North Sea shallow waters make it ideal for wind power, with offshore wind farms among the world's largest
+* Wind power hit a record 23.94GW on December 5, 2025, with major milestones: 10GW (2016), 15GW (2018), 20GW (2022), 23GW (2025)
+* Open source project by Kate Morley using data from Elexon Insights, National Energy System Operator, and Carbon Intensity API
+* The site received 20.9 million visits over the past year, with weekly traffic ranging from 300K to 635K visitors
+
+### 英国国家电网：能源转型与风电里程碑
+
+* 英国于2024年9月30日关闭最后一座燃煤电厂，结束了142年的煤电历史，期间排放了106亿吨二氧化碳
+* 欧盟法规（2001年）、碳定价机制（2013-2015年）和可再生能源增长推动了从煤炭到天然气和风能的转型
+* 英国位于大西洋的地理位置和北海浅水区使其成为风电理想地点，拥有世界最大的海上风电场
+* 2025年12月5日风电创下23.94吉瓦纪录，主要里程碑：10吉瓦（2016年）、15吉瓦（2018年）、20吉瓦（2022年）、23吉瓦（2025年）
+* 由Kate Morley开发的开源项目，数据来源于Elexon Insights、国家能源系统运营商和碳强度API
+* 该网站过去一年获得2090万次访问，每周流量在30万至63.5万访客之间
+
+**[Read Original / 阅读原文](https://grid.iamkate.com/)**
+
+### Superpowers - An Agentic Skills Framework for AI-Powered Software Development
+
+* **What it does**: Superpowers transforms coding agents (Claude, Cursor, Codex, etc.) into structured software development partners. Instead of jumping straight into code, agents follow a complete workflow: brainstorming specs, creating implementation plans, executing tasks via subagents, enforcing test-driven development, and managing git workflows—all automatically.
+
+* **Key features**: 
+  - **Subagent-driven development** with two-stage review (spec compliance + code quality)
+  - **Mandatory TDD workflow** (RED-GREEN-REFACTOR cycle, deletes untested code)
+  - **Git worktree integration** for isolated parallel development
+  - **Systematic debugging** with 4-phase root cause analysis
+  - **Composable skills library** covering testing, debugging, collaboration, and meta-development
+  - **Multi-platform support** (Claude Code, Cursor, Codex, OpenCode, Gemini CLI)
+
+* **Why it's notable**: With 2,293 stars today, Superpowers addresses a critical gap in AI coding: preventing agents from producing untested, poorly-planned code. It enforces software engineering best practices (YAGNI, DRY, TDD) through automatic skill activation, enabling agents to work autonomously for hours while maintaining quality. The framework's emphasis on "process over guessing" and "evidence over claims" makes AI coding more reliable and production-ready.
+
+---
+
+### Superpowers - AI 编程助手的技能框架与开发方法论
+
+* **功能介绍**: Superpowers 将编程 AI 助手(Claude、Cursor、Codex 等)转变为结构化的软件开发伙伴。AI 不会直接开始写代码,而是遵循完整工作流:头脑风暴需求规格、制定实现计划、通过子代理执行任务、强制测试驱动开发、管理 git 工作流——全部自动触发。
+
+* **主要特点**:
+  - **子代理驱动开发**,双阶段审查(规格符合性 + 代码质量)
+  - **强制 TDD 工作流**(红-绿-重构循环,删除未测试代码)
+  - **Git worktree 集成**,支持隔离的并行开发
+  - **系统化调试**,四阶段根因分析流程
+  - **可组合技能库**,涵盖测试、调试、协作和元开发
+  - **多平台支持**(Claude Code、Cursor、Codex、OpenCode、Gemini CLI)
+
+* **为何值得关注**: 今日获得 2,293 星标,Superpowers 解决了 AI 编程的关键痛点:防止 AI 生成未经测试、缺乏规划的代码。通过自动激活技能,强制执行软件工程最佳实践(YAGNI、DRY、TDD),使 AI 能够在保持质量的前提下自主工作数小时。框架强调"流程优于猜测"和"证据优于声明",让 AI 编程更可靠、更适合生产环境。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Dexter - An Autonomous Financial Research Agent
+
+* **What it does**: Dexter is an AI-powered agent that performs deep financial research autonomously. It breaks down complex financial questions into structured tasks, executes them using real-time market data (income statements, balance sheets, cash flows), and validates its own work through self-reflection before delivering data-backed answers.
+
+* **Key features**: 
+  - Intelligent task planning that decomposes queries into research steps
+  - Autonomous tool selection and execution with live financial data
+  - Self-validation loop that checks and refines results
+  - Built-in safety features (loop detection, step limits)
+  - Debug scratchpad for tracking all tool calls
+  - Evaluation suite with LLM-as-judge scoring
+  - WhatsApp integration for mobile access
+  - Support for multiple LLM providers (OpenAI, Anthropic, Google, xAI, Ollama)
+
+* **Why it's notable**: With 583 stars today, Dexter stands out as a specialized financial research tool that combines agentic AI capabilities with institutional-grade market data. It's positioned as "Claude Code for financial research" - bringing autonomous reasoning and planning specifically to finance workflows. The project offers practical features like WhatsApp integration and comprehensive debugging tools, making it accessible for both developers and financial analysts.
+
+---
+
+### Dexter - 自主金融研究智能体
+
+* **功能介绍**: Dexter 是一个由 AI 驱动的自主金融研究智能体。它能将复杂的金融问题分解为结构化任务,使用实时市场数据(损益表、资产负债表、现金流量表)执行研究,并通过自我反思验证工作成果,最终提供有数据支撑的答案。
+
+* **主要特点**:
+  - 智能任务规划,自动将查询分解为研究步骤
+  - 自主选择和执行工具,获取实时金融数据
+  - 自我验证循环,检查并优化结果
+  - 内置安全机制(循环检测、步骤限制)
+  - 调试记录板,追踪所有工具调用
+  - 评估套件,采用 LLM 评判方法评分
+  - WhatsApp 集成,支持移动端访问
+  - 支持多个 LLM 提供商(OpenAI、Anthropic、Google、xAI、Ollama)
+
+* **为何值得关注**: Dexter 今日获得 583 星标,作为专门的金融研究工具脱颖而出,将智能体 AI 能力与机构级市场数据相结合。它被定位为"金融研究领域的 Claude Code",为金融工作流程带来自主推理和规划能力。该项目提供 WhatsApp 集成和完善的调试工具等实用功能,使开发者和金融分析师都能轻松上手。
+
+**[View Repository / 查看仓库](https://github.com/virattt/dexter)**
+
+### FlipOff - Free Split-Flap Display Emulator for Any TV
+
+* **What it does**: Transforms any TV or monitor into a retro mechanical split-flap display (like classic airport/train station boards) using just a web browser. No hardware required, completely free and open-source.
+
+* **Key features**: Realistic flip animation with colorful scramble transitions, authentic mechanical clacking sounds from real hardware, auto-rotating inspirational quotes, fullscreen mode, keyboard controls, works offline with zero dependencies, pure vanilla JavaScript (no frameworks or build tools).
+
+* **Why it's notable**: Offers the nostalgic aesthetic of expensive $3,500+ split-flap hardware for free. Simple to use (just open `index.html`), highly customizable, and works on any device from mobile to 4K displays. Perfect for home displays, digital signage, or retro-themed projects without the cost or complexity.
+
+---
+
+### FlipOff - 免费的翻牌显示屏模拟器
+
+* **功能介绍**: 将任何电视或显示器变成复古机械翻牌显示屏(类似经典机场/火车站信息板),只需浏览器即可运行。无需硬件,完全免费开源。
+
+* **主要特点**: 逼真的翻牌动画和彩色滚动过渡效果,真实录制的机械翻牌声音,自动轮播励志名言,全屏模式,键盘控制,离线可用且零外部依赖,纯原生 JavaScript 实现(无框架、无构建工具)。
+
+* **为何值得关注**: 以免费方式实现了价值 3,500 美元以上的翻牌硬件的怀旧美感。使用简单(直接打开 `index.html`),高度可定制,支持从手机到 4K 显示器的所有设备。适合家庭展示、数字标牌或复古主题项目,无需成本和复杂配置。
+
+**[View Repository / 查看仓库](https://github.com/magnum6actual/flipoff)**
+
+### 🎬 Do web devs NEED to understand low-level programming concepts? Chris doesn't think so...
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Chris challenges the conventional wisdom that web developers must understand low-level programming concepts like memory management, pointers, and system architecture to be effective in their roles.
+
+* Key topics discussed: The debate around foundational computer science knowledge versus practical web development skills, what knowledge is actually necessary for modern web development, and how the abstraction layers in web technologies have changed the requirements for developers.
+
+* Why it's worth watching: This video offers a refreshing perspective on the ongoing debate about what web developers really need to know. It's particularly valuable for aspiring developers who feel overwhelmed by the breadth of knowledge they think they need, and for experienced developers reconsidering what skills truly matter in modern web development.
+
+---
+
+### 🎬 Web 开发者需要理解底层编程概念吗? Chris 认为不需要...
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Chris 挑战了传统观点,认为 Web 开发者不必深入理解内存管理、指针和系统架构等底层编程概念就能胜任工作。
+
+* 主要话题: 探讨计算机科学基础知识与实用 Web 开发技能之间的争论,现代 Web 开发真正需要哪些知识,以及 Web 技术中的抽象层如何改变了对开发者的要求。
+
+* 为何值得观看: 这个视频为关于 Web 开发者应该掌握什么知识的持续争论提供了新颖的视角。对于被海量知识需求压得喘不过气的初学者,以及重新思考现代 Web 开发中哪些技能真正重要的资深开发者来说,这个视频特别有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uWRdzJTpcpI)**
 
