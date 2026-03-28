@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 28, 2026"
 date: 2026-03-28
-description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -722,4 +722,51 @@ VibeVoice是微软开源的语音AI模型家族,包含文本转语音(TTS)和自
 * 适合寻求端到端学习路径的开发者，将传统Java开发与现代云原生和AI驱动应用相结合，提供企业级项目所需的实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=q6z_UCBM5Ek)**
+
+<!-- [Title-Only] -->
+### CERN uses tiny AI models burned into silicon for real-time LHC data filtering
+
+* This article likely explores how CERN has implemented specialized AI models directly into hardware (ASICs or FPGAs) to process the massive data streams from the Large Hadron Collider in real-time. The "burned into silicon" phrase suggests these are hardware-accelerated neural networks that can make split-second decisions about which particle collision events to keep and which to discard.
+* This is fascinating because the LHC generates petabytes of data per second, far more than can be stored or analyzed. Real-time filtering at the hardware level represents a clever solution to a massive data engineering challenge, and demonstrates how AI is being applied in cutting-edge physics research beyond traditional software implementations.
+
+### CERN 使用烧录到硅芯片中的微型 AI 模型实时过滤大型强子对撞机数据
+
+* 本文可能介绍了 CERN 如何将专用 AI 模型直接集成到硬件芯片(ASIC 或 FPGA)中,以实时处理大型强子对撞机产生的海量数据流。"烧录到硅芯片"这一表述暗示这些是硬件加速的神经网络,能够在瞬间决定保留哪些粒子碰撞事件数据、丢弃哪些数据。
+* 这项技术引人注目,因为大型强子对撞机每秒产生的数据量达到 PB 级别,远超存储和分析能力。在硬件层面进行实时过滤是解决这一巨大数据工程挑战的巧妙方案,也展示了 AI 在尖端物理研究中的应用如何超越传统软件实现。
+
+**[Read Original / 阅读原文](https://theopenreader.org/Journalism:CERN_Uses_Tiny_AI_Models_Burned_into_Silicon_for_Real-Time_LHC_Data_Filtering)**
+
+### The Bee That Everyone Wants to Save
+
+* **Honeybees are livestock, not wild animals** - The Western Honeybee (Apis mellifera) has been domesticated for 6,000+ years, managed and bred by humans, and kept in artificial densities that would never occur naturally
+* **Misguided conservation focus** - "Save the bees" campaigns feature honeybees, but they're not endangered; managed hive numbers are stable or increasing while wild bee populations quietly decline
+* **Competition for resources** - Four million honeybees in one area create significant pressure on wild bees; research shows high hive densities reduce nectar/pollen availability, disrupt pollination networks, and lower wild bee diet quality
+* **Honeybees aren't the best pollinators** - They're generalists but can't perform buzz pollination (needed for tomatoes, potatoes), don't fly in cold weather like mining bees do, and wild pollinator diversity matters more for plant reproduction than honeybee numbers
+* **Real conservation action** - Instead of installing hives, help pollinators by growing more flowers, eliminating pesticides, leaving bare ground and dead wood, and preserving wild bee habitats like unmown grass and old wood
+
+### 人人都想拯救的蜜蜂
+
+* **蜜蜂是家畜,而非野生动物** - 西方蜜蜂(Apis mellifera)已被人类驯化6000多年,经过管理和选育,以自然界不可能出现的人工密度饲养
+* **保护重点的误导** - "拯救蜜蜂"运动主打蜜蜂形象,但它们并未濒危;管理蜂箱数量稳定或增长,而野生蜂类种群却在悄然衰退
+* **资源竞争问题** - 一个地区的400万只蜜蜂对野生蜂类造成巨大压力;研究表明高密度蜂箱会减少花蜜/花粉供应,破坏授粉网络,降低野生蜂类食物质量
+* **蜜蜂并非最佳授粉者** - 它们是通才但无法进行振动授粉(番茄、土豆等作物所需),不像采矿蜂那样在寒冷天气飞行,且野生授粉者多样性对植物繁殖的重要性超过蜜蜂数量
+* **真正的保护行动** - 与其安装蜂箱,不如种植更多花卉、停用农药、保留裸露地面和枯木,保护野生蜂类栖息地如未修剪的草地和老木材
+
+**[Read Original / 阅读原文](https://naturalist.bearblog.dev/the-bee-that-everyone-wants-to-save/)**
+
+### TrustSpark for Hacker News: Visual Trust Signals Plugin
+
+* Firefox extension that adds sparkline visualizations next to Hacker News usernames to display trust signals
+* Created as a response to discussions about "macro trends" on Hacker News, helping users identify posting patterns
+* Features demo functionality on `/newest` page that penalizes accounts with high submission rates
+* Available for installation through Mozilla Firefox Add-ons store
+
+### TrustSpark：Hacker News 信任信号可视化插件
+
+* Firefox 浏览器扩展，在 Hacker News 用户名旁添加迷你图表，直观显示信任信号
+* 针对 Hacker News 上关于"宏观趋势"的讨论而开发，帮助用户识别发帖模式
+* 在 `/newest` 页面提供演示功能，对高频提交的账号进行标记提示
+* 可通过 Mozilla Firefox 附加组件商店安装使用
+
+**[Read Original / 阅读原文](https://hn-trustspark.com/)**
 
