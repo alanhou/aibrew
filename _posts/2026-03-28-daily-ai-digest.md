@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 28, 2026"
 date: 2026-03-28
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -630,4 +630,96 @@ VibeVoice是微软开源的语音AI模型家族,包含文本转语音(TTS)和自
 * 为何值得观看: Mosh 以高质量编程教程闻名,这个视频承诺教授专业级的 AI 编程技术,能够显著提升开发速度和效率
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IuyVVtr1uhY)**
+
+### AMD Ryzen 9 9950X3D2: Dual 3D V-Cache Configuration Delivers 208MB Total Cache
+
+* AMD introduces the Ryzen 9 9950X3D2 Dual Edition with 64MB of 3D V-Cache on both CPU chiplets, eliminating the asymmetric cache design of previous X3D processors
+* Previous 12-core and 16-core X3D chips (7900X3D, 7950X3D, 9900X3D, 9950X3D) featured only one chiplet with V-Cache, requiring driver software to intelligently schedule workloads
+* The new chip totals 208MB cache: 16MB L2, 64MB base L3 (32MB per die), plus 128MB additional 3D V-Cache (64MB per die)
+* AMD claims up to 10% performance improvement over the standard 9950X3D in cache-sensitive applications and games
+* The dual V-Cache approach solves core parking and thread scheduling issues that occasionally affected previous asymmetric X3D designs
+
+### AMD 锐龙 9 9950X3D2：双 3D V-Cache 配置带来 208MB 总缓存
+
+* AMD 推出锐龙 9 9950X3D2 双版本处理器，在两个 CPU 芯片组上均配备 64MB 3D V-Cache，消除了之前 X3D 处理器的非对称缓存设计
+* 此前的 12 核和 16 核 X3D 芯片（7900X3D、7950X3D、9900X3D、9950X3D）仅在一个芯片组上配备 V-Cache，需要驱动软件智能调度工作负载
+* 新芯片总缓存达 208MB：16MB L2 缓存、64MB 基础 L3 缓存（每个芯片组 32MB）、以及 128MB 额外 3D V-Cache（每个芯片组 64MB）
+* AMD 声称在缓存敏感型应用和游戏中，性能比标准 9950X3D 提升最高达 10%
+* 双 V-Cache 方案解决了之前非对称 X3D 设计偶尔出现的核心驻留和线程调度问题
+
+**[Read Original / 阅读原文](https://arstechnica.com/gadgets/2026/03/amds-ryzen-9-9950x3d2-dual-edition-crams-208mb-of-cache-into-a-single-chip/)**
+
+### LG's Revolutionary 1Hz Display Technology Extends Laptop Battery Life
+
+* LG Display introduces "Oxide 1Hz" technology with variable refresh rates from 1Hz to 120Hz, claiming up to 48% battery life savings
+* Dell has already integrated this display as the default option in its XPS laptop lineup, with no price premium
+* The technology dynamically adjusts refresh rates - conserving power at 1Hz during static content and ramping up to 120Hz for gaming and smooth scrolling
+* LG plans mass production of 1Hz OLED panels by 2027, signaling wider adoption across the laptop industry
+* This innovation addresses the traditional tradeoff between high refresh rates and battery consumption, offering both performance and efficiency
+
+### LG 全新 1Hz 显示屏技术大幅延长笔记本电池续航
+
+* LG Display 推出"Oxide 1Hz"技术,刷新率可在 1Hz 至 120Hz 之间动态调节,声称可节省高达 48% 的电池电量
+* 戴尔已将该显示屏作为 XPS 笔记本系列的默认配置,且不额外收费
+* 该技术可动态调整刷新率——静态内容时以 1Hz 节能运行,游戏和流畅滚动时提升至 120Hz
+* LG 计划在 2027 年量产搭载该技术的 1Hz OLED 面板,预示着该技术将在笔记本行业广泛应用
+* 这项创新解决了高刷新率与电池续航之间的传统矛盾,同时提供性能和能效
+
+**[Read Original / 阅读原文](https://www.pcworld.com/article/3096432/lgs-new-1hz-display-is-the-secret-behind-a-new-laptops-battery-life.html)**
+
+### Twitch Roulette: Discover Hidden Streamers
+
+* A web platform designed to help users discover small Twitch streamers with little to no viewers
+* Features a "Spin" button that randomly connects users to live streams with 0-2 viewers
+* Includes filtering options to customize streamer discovery preferences
+* Displays real-time statistics showing how many live streams currently have minimal viewership
+* Aims to support small content creators by bringing them unexpected viewers and engagement
+* Simple, gamified interface that encourages users to "make someone's day" by watching underappreciated streams
+
+### Twitch 轮盘：发现隐藏的主播
+
+* 一个帮助用户发现观众极少的小型 Twitch 主播的网络平台
+* 提供"旋转"按钮，随机连接用户到拥有 0-2 名观众的直播间
+* 包含过滤选项，可自定义主播发现偏好
+* 实时显示当前观众人数极少的直播间统计数据
+* 旨在通过带来意外观众和互动来支持小型内容创作者
+* 简洁的游戏化界面，鼓励用户通过观看被忽视的直播来"让某人开心一天"
+
+**[Read Original / 阅读原文](https://twitchroulette.net/)**
+
+### FlipOff - Free Split-Flap Display Emulator for Any TV
+
+* **What it does**: Transforms any TV or monitor into a retro mechanical split-flap airport/train station display through a web browser. Shows rotating inspirational quotes with authentic flip-board animations and sound effects.
+
+* **Key features**: Realistic split-flap animation with colorful scramble transitions, authentic mechanical clacking sound from real hardware, fullscreen TV mode, keyboard controls, works completely offline with zero dependencies, pure vanilla JavaScript (no frameworks or build tools required), responsive across all screen sizes.
+
+* **Why it's notable**: Offers a nostalgic, high-quality alternative to expensive commercial split-flap displays (typically $3,500+) for free. The simplicity is remarkable—just open `index.html` and it works. No accounts, subscriptions, or complex setup. Perfect for home displays, offices, or anyone wanting that classic airport terminal aesthetic without the hardware cost.
+
+---
+
+### FlipOff - 免费翻牌显示屏模拟器
+
+* **功能介绍**: 通过网页浏览器将任何电视或显示器变成复古机械翻牌显示屏(类似机场/火车站的航班信息牌)。可展示轮播的励志名言,配有真实的翻牌动画和音效。
+
+* **主要特点**: 逼真的翻牌动画效果,带彩色随机字符过渡;真实机械翻牌音效(从实体设备录制);全屏电视模式;键盘快捷键控制;完全离线运行,零外部依赖;纯原生 HTML/CSS/JS 实现(无需框架或构建工具);支持从移动端到 4K 显示器的响应式设计。
+
+* **为何值得关注**: 以免费开源的方式提供了商业翻牌显示屏(通常售价 3,500 美元以上)的高质量替代方案。使用极其简单——只需打开 `index.html` 即可运行。无需注册账号、订阅服务或复杂配置。非常适合家庭装饰、办公室展示,或任何想要经典机场航站楼美学效果但不想购买昂贵硬件的场景。
+
+**[View Repository / 查看仓库](https://github.com/magnum6actual/flipoff)**
+
+### 🎬 Complete Java Development: Spring Boot, Microservices, Spring AI
+**Channel:** Telusko
+
+* Comprehensive 63-hour roadmap covering the complete Java development ecosystem from fundamentals to advanced enterprise technologies
+* Key topics include Spring Boot framework, microservices architecture, and cutting-edge Spring AI integration for modern application development
+* Worth watching for developers seeking an end-to-end learning path that bridges traditional Java development with contemporary cloud-native and AI-powered applications, offering practical skills for enterprise-level projects
+
+### 🎬 完整Java开发：Spring Boot、微服务、Spring AI
+**频道:** Telusko
+
+* 全面的63小时学习路线，涵盖从基础到高级企业技术的完整Java开发生态系统
+* 主要话题包括Spring Boot框架、微服务架构，以及前沿的Spring AI集成技术
+* 适合寻求端到端学习路径的开发者，将传统Java开发与现代云原生和AI驱动应用相结合，提供企业级项目所需的实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=q6z_UCBM5Ek)**
 
