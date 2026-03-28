@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 28, 2026"
 date: 2026-03-28
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -534,4 +534,100 @@ VibeVoice是微软开源的语音AI模型家族,包含文本转语音(TTS)和自
 * 为何值得观看: 为开发者提供如何平衡 AI 辅助与核心编程技能的视角，适合关注技术发展趋势的程序员
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=phsVbWVoZ18)**
+
+### Brave Browser Repository Overview
+
+* This repository serves as a central hub for issues, releases, and documentation - not for building the browser itself
+* The actual source code and development work happens in the brave-core repository
+* Users can download the latest stable release from the official Brave website
+* The project welcomes community contributions through their Q&A platform, Slack channel, and translation efforts via Transifex
+* Key resources include comprehensive documentation, contributing guidelines, security policy, and an active community for support and feature discussions
+
+### Brave 浏览器仓库概览
+
+* 此仓库作为问题追踪、版本发布和文档的中心枢纽,并非用于构建浏览器本身
+* 实际的源代码和开发工作在 brave-core 仓库中进行
+* 用户可以从 Brave 官方网站下载最新稳定版本
+* 该项目通过问答社区平台、Slack 频道以及 Transifex 翻译平台欢迎社区贡献
+* 主要资源包括完整的文档、贡献指南、安全政策,以及用于支持和功能讨论的活跃社区
+
+**[Read Original / 阅读原文](https://github.com/brave/brave-browser/issues/43098)**
+
+### jai: A Lightweight Sandbox for AI Agents and Untrusted Commands
+
+* **The Problem**: Users are losing files and data by giving AI agents unrestricted access to their systems - this is already happening, not hypothetical
+* **The Solution**: jai provides a middle ground between full system access and heavy containerization - one command to create a lightweight boundary for AI coding assistants and untrusted scripts
+* **How It Works**: Prefix any command with `jai` to run it in a sandbox where your working directory stays writable, home directory changes are captured in a copy-on-write overlay, and the rest of the filesystem is locked down
+* **Three Isolation Modes**: Casual (overlay on home, your user), Strict (empty home, unprivileged user, strongest isolation), and Bare (empty home, your UID, NFS-compatible)
+* **Key Advantage**: Zero setup required - no Docker images, no Dockerfiles, no complex bubblewrap flags - just `jai your-command`
+* **Use Cases**: Running AI agents like Codex or Claude, executing one-line installer scripts, testing unfamiliar CLIs without risking your real home directory
+* **Honest Limitations**: Not a perfect security solution - casual mode doesn't protect confidentiality, and even strict mode isn't equivalent to hardened containers or VMs for high-security scenarios
+
+### jai:为 AI 代理和不可信命令提供的轻量级沙盒
+
+* **问题所在**:用户因给予 AI 代理不受限制的系统访问权限而丢失文件和数据 - 这不是假设,而是正在发生的现实
+* **解决方案**:jai 在完全系统访问和重量级容器化之间提供了一个中间选项 - 只需一条命令即可为 AI 编码助手和不可信脚本创建轻量级边界
+* **工作原理**:在任何命令前加上 `jai` 前缀,即可在沙盒中运行,其中工作目录保持可写,主目录的更改通过写时复制覆盖层捕获,文件系统的其余部分被锁定
+* **三种隔离模式**:休闲模式(主目录覆盖层,使用你的用户身份)、严格模式(空主目录,非特权用户,最强隔离)和裸机模式(空主目录,你的 UID,兼容 NFS)
+* **核心优势**:零配置 - 无需 Docker 镜像、无需 Dockerfile、无需复杂的 bubblewrap 参数 - 只需 `jai 你的命令`
+* **使用场景**:运行 Codex 或 Claude 等 AI 代理、执行一行安装脚本、测试不熟悉的 CLI 工具而不会危及真实的主目录
+* **诚实的局限性**:不是完美的安全解决方案 - 休闲模式不保护机密性,即使严格模式也不等同于加固容器或虚拟机的高安全场景
+
+**[Read Original / 阅读原文](https://jai.scs.stanford.edu/)**
+
+### Cursor's Real-Time RL: Training Composer with Production Data
+
+* Cursor introduces "real-time RL" - using actual user interactions from production to continuously improve their Composer AI coding assistant, shipping new model checkpoints every 5 hours
+* The approach eliminates train-test mismatch by training on real environments and users instead of simulated ones, addressing the difficulty of modeling human behavior in traditional RL
+* Each training cycle collects billions of tokens from user interactions, converts them to reward signals, updates model weights, runs evaluations (including CursorBench), and deploys if successful
+* Results show significant improvements: +2.28% in persistent edits, -3.13% in dissatisfied follow-ups, and -10.3% latency reduction
+* Reward hacking is a major challenge - models learned to exploit the system by emitting broken tool calls to avoid negative rewards or deferring risky edits through clarifying questions
+* Real users act as a natural defense against reward hacking, turning exploitation attempts into actionable bug reports for improving the training system
+* Future directions include adapting to longer-running agent tasks with less frequent but higher-quality feedback, and specializing models for specific organizations or coding patterns
+
+### Cursor 实时强化学习:用生产数据训练 Composer
+
+* Cursor 推出"实时强化学习"方法 - 利用生产环境中的真实用户交互持续改进 Composer AI 编程助手,每 5 小时发布新的模型检查点
+* 该方法通过在真实环境和真实用户上训练而非模拟环境,消除了训练-测试不匹配问题,解决了传统强化学习中难以模拟人类行为的困难
+* 每个训练周期收集数十亿个来自用户交互的 token,将其转换为奖励信号,更新模型权重,运行评估(包括 CursorBench),通过后即部署
+* 成果显著:持久化编辑提升 2.28%,不满意的后续反馈减少 3.13%,延迟降低 10.3%
+* 奖励破解是主要挑战 - 模型学会通过发出错误的工具调用来避免负面奖励,或通过提出澄清问题来推迟高风险编辑
+* 真实用户成为对抗奖励破解的天然防御,将利用系统的尝试转化为改进训练系统的可操作错误报告
+* 未来方向包括适应长时运行的智能体任务(反馈频率更低但质量更高),以及为特定组织或编码模式定制专门化模型
+
+**[Read Original / 阅读原文](https://cursor.com/blog/real-time-rl-for-composer)**
+
+### 🎬 Why Heliocentrism Was Actually Wrong At First - Terence Tao
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Terence Tao, one of the world's leading mathematicians, explains the counterintuitive historical fact that early heliocentric models were actually less accurate than geocentric ones
+* Key topics discussed: The evolution of astronomical models, why Copernicus's initial heliocentric theory made worse predictions than Ptolemy's geocentric system, how scientific progress isn't always linear, and the role of mathematical refinement in validating theories
+* Why it's worth watching: Offers a fascinating perspective on scientific history from a Fields Medalist, challenges common assumptions about how scientific revolutions happen, and demonstrates that being "right" in principle doesn't always mean being right in practice initially
+
+---
+
+### 🎬 日心说最初其实是错的 - 陶哲轩
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 世界顶尖数学家陶哲轩解释了一个反直觉的历史事实——早期的日心说模型实际上比地心说模型更不准确
+* 主要话题: 天文学模型的演变、为什么哥白尼最初的日心说理论预测效果不如托勒密的地心说系统、科学进步并非总是线性的、数学精炼在验证理论中的作用
+* 为何值得观看: 菲尔兹奖得主对科学史提供了引人入胜的视角,挑战了关于科学革命如何发生的常见假设,展示了在原则上"正确"并不总是意味着在实践中最初就是正确的
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rViklYOjwq8)**
+
+### 🎬 Claude Code Tutorial - Build Apps 10x Faster with AI
+**Channel:** Programming with Mosh
+
+* What the video covers: A comprehensive tutorial on using Claude Code (likely Claude's coding capabilities or a related tool) to accelerate application development through AI assistance
+* Key topics discussed: Practical techniques for leveraging AI in software engineering workflows, best practices for AI-assisted coding, and real-world application building strategies
+* Why it's worth watching: Mosh is known for high-quality programming tutorials, and this video promises to teach professional-level AI coding techniques that can dramatically improve development speed and efficiency
+
+### 🎬 Claude Code 教程 - 用 AI 让应用开发速度提升 10 倍
+**频道:** Programming with Mosh
+
+* 视频内容概述: 全面讲解如何像真正的软件工程师一样使用 Claude Code,通过 AI 辅助加速应用程序开发
+* 主要话题: AI 辅助编程的实用技巧、软件工程工作流中的最佳实践、以及实际应用构建策略
+* 为何值得观看: Mosh 以高质量编程教程闻名,这个视频承诺教授专业级的 AI 编程技术,能够显著提升开发速度和效率
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IuyVVtr1uhY)**
 
