@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 31, 2026"
 date: 2026-03-31
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，9个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -619,4 +619,86 @@ This plugin bridges two powerful AI coding assistants, allowing developers to le
 * 为何值得观看: Mosh 以高质量编程教程闻名,这个视频承诺教授真实世界的 AI 辅助开发技术,能够显著加快编码工作流程。对于希望有效地将 AI 工具整合到日常实践中的开发者来说必看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IuyVVtr1uhY)**
+
+### Artemis II Heat Shield Safety Concerns
+
+* NASA's Artemis II mission faces critical heat shield issues discovered after the unmanned Artemis I flight in 2022, where large chunks of Avcoat material broke off during re-entry
+* Three life-threatening problems identified: heat shield spalling (creating dangerous gaps), debris impact risks to parachute systems, and melted separation bolts that could cause structural failure
+* NASA claims a trajectory change will fix the issues but refuses to conduct an unmanned test flight, despite using the same flawed models that failed to predict the original damage
+* Former astronaut and heat shield expert Charles Camarda warns NASA is repeating the organizational dysfunction that led to Challenger and Columbia disasters
+* With a new Artemis III mission added to test systems in Earth orbit, there's no technical justification for risking crew lives on Artemis II - the mission could fly unmanned to validate the heat shield fixes
+
+### Artemis II 任务存在安全隐患
+
+* NASA 的 Artemis II 任务面临严重的隔热罩问题,2022年无人驾驶的 Artemis I 返回时隔热罩材料大块脱落
+* 发现三个致命问题:隔热罩剥落(形成危险缺口)、碎片撞击降落伞系统的风险,以及分离螺栓熔化可能导致结构失效
+* NASA 声称改变返回轨迹可以解决问题,但拒绝进行无人测试飞行,尽管使用的是未能预测原始损坏的同一套有缺陷的模型
+* 前宇航员和隔热罩专家 Charles Camarda 警告,NASA 正在重复导致挑战者号和哥伦比亚号灾难的组织功能障碍
+* 随着新增的 Artemis III 任务将在地球轨道测试系统,Artemis II 没有技术理由冒险搭载宇航员 - 该任务可以无人飞行来验证隔热罩修复方案
+
+**[Read Original / 阅读原文](https://idlewords.com/2026/03/artemis_ii_is_not_safe_to_fly.htm)**
+
+### TimesFM: Google's Time Series Foundation Model
+
+* **What it is**: A pretrained foundation model by Google Research specifically designed for time-series forecasting, based on a decoder-only architecture
+* **Latest version**: TimesFM 2.5 (released Sept 2024) - significantly improved with 200M parameters (down from 500M), supports up to 16k context length (up from 2048), and includes continuous quantile forecasting
+* **Key features**: Supports multiple input formats, normalizes inputs, offers quantile forecasting with up to 1k horizon, and recently added back covariate support through XReg
+* **Availability**: Open-source on GitHub, checkpoints on Hugging Face, integrated into BigQuery as an official Google product, with both PyTorch and Flax implementations
+* **Recent updates**: Oct 2024 added XReg covariate support; ongoing improvements include Flax version for faster inference and enhanced documentation
+
+### TimesFM：谷歌时间序列基础模型
+
+* **产品定位**：由谷歌研究院开发的预训练时间序列基础模型，专门用于时间序列预测，采用纯解码器架构
+* **最新版本**：TimesFM 2.5（2024年9月发布）——大幅改进，参数量从500M降至200M，上下文长度支持从2048提升至16k，并包含连续分位数预测功能
+* **核心特性**：支持多种输入格式，自动归一化输入，提供最高1k预测范围的分位数预测，最近重新添加了通过XReg的协变量支持
+* **可用性**：GitHub开源，Hugging Face提供检查点，已集成到BigQuery作为谷歌官方产品，同时提供PyTorch和Flax实现
+* **近期更新**：2024年10月添加XReg协变量支持；正在进行的改进包括更快推理的Flax版本和增强文档
+
+**[Read Original / 阅读原文](https://github.com/google-research/timesfm)**
+
+### Fedware: Government Apps Collecting More Data Than the Apps They Ban
+
+* The White House app (v47.0.1) requests extensive permissions including GPS location, biometric fingerprint access, storage modification, and contains 3 trackers including Huawei Mobile Services Core
+* FBI's myFBI Dashboard app has 12 permissions and 4 trackers including Google AdMob, while FEMA's app requests 28 permissions
+* CBP Mobile Passport Control requests 14 permissions (7 classified as "dangerous") including background location tracking and biometric authentication, with faceprints retained for up to 75 years
+* ICE's SmartLINK monitoring app collects geolocation, facial images, voice prints, medical data, and contact information from over 230,000 users, built by private prison company GEO Group
+* Federal agencies including DHS, FBI, DOD, and DEA purchase location data from brokers like Venntel (15 billion daily location points from 250+ million devices) without warrants
+* IRS-ICE data sharing deal from April 2025 allowed ICE to receive tax data for 1.28 million people, leading to resignations of acting IRS Commissioner and chief privacy officer in protest
+
+### 联邦间谍软件:13款比被禁应用监控更严重的政府应用
+
+* 白宫应用(v47.0.1版)要求大量权限,包括GPS定位、生物识别指纹访问、存储修改权限,并内置3个追踪器,其中包括华为移动服务核心
+* FBI的myFBI Dashboard应用有12项权限和4个追踪器(包括谷歌AdMob),而FEMA应用要求28项权限
+* 海关边境保护局(CBP)移动护照控制应用要求14项权限(其中7项被归类为"危险"),包括后台位置追踪和生物识别认证,面部识别数据保留长达75年
+* 移民及海关执法局(ICE)的SmartLINK监控应用从超过23万用户收集地理位置、面部图像、声纹、医疗数据和联系人信息,由私营监狱公司GEO集团开发
+* 包括国土安全部、FBI、国防部和缉毒局在内的联邦机构从Venntel等数据经纪商购买位置数据(每天从2.5亿多台设备收集150亿个位置点),无需搜查令
+* 2025年4月的国税局-ICE数据共享协议允许ICE获取128万人的税务数据,导致国税局代理局长和首席隐私官抗议辞职
+
+**[Read Original / 阅读原文](https://www.sambent.com/the-white-house-app-has-huawei-spyware-and-an-ice-tip-line/)**
+
+### colleague-skill - Turn Departed Colleagues into AI Skills
+
+* **What it does**: Transforms your former colleagues' work materials (chat logs, documents, emails, screenshots) into functional AI skills that replicate their technical expertise, communication style, and work patterns
+* **Key features**: 
+  - Auto-collects data from Feishu/DingTalk/email/PDFs with just a name input
+  - Generates two-part skills: Work (technical specs, workflows) + Persona (5-layer personality model including quirks like blame-shifting or perfectionism)
+  - Supports major Chinese tech company cultures (Bytedance, Alibaba, Tencent) and job levels
+  - Incremental learning through file additions and conversational corrections with version rollback
+  - Compatible with Claude Code and OpenClaw via AgentSkills standard
+* **Why it's notable**: Addresses a uniquely painful problem in Chinese tech culture—knowledge loss from high turnover—with dark humor ("digital immortality 1.0") and practical utility. The 2,385 stars reflect both the clever concept and genuine need for preserving institutional knowledge when teammates leave
+
+---
+
+### colleague-skill - 将离职同事转化为 AI 技能
+
+* **功能介绍**: 将离职同事的工作资料(聊天记录、文档、邮件、截图)转化为可用的 AI 技能,复刻其技术专长、沟通风格和工作模式
+* **主要特点**:
+  - 仅需输入姓名即可自动采集飞书/钉钉/邮件/PDF 数据
+  - 生成双层技能结构:工作能力(技术规范、流程)+ 人物性格(5层模型,包含甩锅、完美主义等特质)
+  - 支持字节、阿里、腾讯等大厂文化和职级体系
+  - 通过追加文件和对话纠正实现增量学习,支持版本回滚
+  - 遵循 AgentSkills 标准,兼容 Claude Code 和 OpenClaw
+* **为何值得关注**: 以黑色幽默("赛博永生")切入中国互联网高流动率下的知识流失痛点,将情感化问题转化为实用工具。2,385 star 反映了创意与实际需求的共鸣,尤其在技术交接和文档维护场景中具有独特价值
+
+**[View Repository / 查看仓库](https://github.com/titanwings/colleague-skill)**
 
