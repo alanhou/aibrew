@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 31, 2026"
 date: 2026-03-31
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，9个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，11个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -701,4 +701,178 @@ This plugin bridges two powerful AI coding assistants, allowing developers to le
 * **为何值得关注**: 以黑色幽默("赛博永生")切入中国互联网高流动率下的知识流失痛点,将情感化问题转化为实用工具。2,385 star 反映了创意与实际需求的共鸣,尤其在技术交接和文档维护场景中具有独特价值
 
 **[View Repository / 查看仓库](https://github.com/titanwings/colleague-skill)**
+
+### Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) with minimal actual content
+* The page displays a generic error message asking users to try again
+* It includes a warning that privacy-related browser extensions may cause issues on the platform
+* No substantive blog content is present - this is just an error/troubleshooting page
+* Cannot provide meaningful content analysis as there is no actual article or blog post to summarize
+
+### 错误页面分析
+
+* 这似乎是 X.com（前 Twitter）的错误页面，没有实际内容
+* 页面显示一个通用错误消息，要求用户重试
+* 包含一个警告，提示与隐私相关的浏览器扩展可能会导致平台出现问题
+* 没有实质性的博客内容 - 这只是一个错误/故障排除页面
+* 无法提供有意义的内容分析，因为没有实际的文章或博客文章可供总结
+
+---
+
+**Note:** The HTML you provided contains only an error page, not actual blog content. If you'd like me to analyze and summarize a blog post, please provide the correct content URL or HTML.
+
+**注意：** 您提供的 HTML 仅包含错误页面，而非实际的博客内容。如果您希望我分析和总结博客文章，请提供正确的内容 URL 或 HTML。
+
+**[Read Original / 阅读原文](https://twitter.com/Fried_rice/status/2038894956459290963)**
+
+### Milgram Obedience Experiments: Audio Analysis Reveals Widespread Rule-Breaking
+
+* Audio recordings from Stanley Milgram's famous 1960s obedience experiments show that participants who administered maximum electric shocks violated experimental procedures in nearly half (48.4%) of their actions
+* Not a single "obedient" participant followed the complete five-step protocol (read question, evaluate answer, announce voltage, press lever, read correct answer) throughout the entire experiment
+* Participants who eventually refused to continue actually followed scientific procedures better (30.6% violation rate) than those who completed all shocks, challenging traditional interpretations of obedience
+* The most common violation involved reading test questions while the "learner" screamed, making it impossible for them to hear and effectively abandoning the memory study premise
+* Researchers argue the experimenter's silence when rules were broken transformed the laboratory from legitimate science into a scene of unauthorized violence, suggesting coercion rather than willing obedience
+* The study, published in Political Psychology by David Kaposi and David Sumeghy, reframes understanding of the experiments by showing the scientific framework collapsed while shock administration continued
+
+### 米尔格拉姆服从实验：音频分析揭示大规模违规行为
+
+* 对斯坦利·米尔格拉姆1960年代著名服从实验的音频录音分析显示,施加最大电击的参与者在近一半(48.4%)的操作中违反了实验程序
+* 没有一个"服从"的参与者在整个实验中完整遵循了五步协议(朗读问题、评估答案、宣布电压、按下电击杆、朗读正确答案)
+* 最终拒绝继续的参与者实际上更好地遵守了科学程序(违规率30.6%),这挑战了对服从行为的传统解释
+* 最常见的违规是在"学习者"尖叫时朗读测试问题,使其无法听到问题,实际上放弃了记忆研究的前提
+* 研究人员认为,实验者在规则被打破时保持沉默,将实验室从合法科学转变为未经授权的暴力场景,表明这是胁迫而非自愿服从
+* 该研究由大卫·卡波西和大卫·苏梅吉发表于《政治心理学》期刊,通过展示科学框架崩溃而电击行为持续,重新定义了对这些实验的理解
+
+**[Read Original / 阅读原文](https://www.psypost.org/audio-tapes-reveal-mass-rule-breaking-in-milgram-s-obedience-experiments-2026-03-26/)**
+
+### Ransomware Landscape Analysis: 7,655 Claims Over 12 Months
+
+* **Scale and velocity**: 7,655 ransomware victim claims from 129 groups across 141 countries between March 2025-March 2026, averaging 20 claims per day or one organization named every 71 minutes
+* **Concentration at the top**: Qilin leads with 1,179 claims (15.4%), followed by Akira (706), INC Ransom (415), Play (386), and Safepay (341). Top 5 groups account for 40% of all claims
+* **Sector targeting**: Manufacturing (890 claims) and Technology (843) are most targeted, followed by Healthcare (537), Construction (375), and Financial Services (362). These top 5 sectors represent 35% of sector-attributed claims
+* **Geographic distribution**: US dominates with 3,101 claims (40%), followed by Germany (315), Canada (311), UK (232), and France (177). Qilin operates across 74 countries, the widest footprint
+* **Accelerating trend**: Monthly claim volume increased 40% from first half (521/month average) to second half (732/month average), with December 2025 hitting peak of 861 claims
+* **Ecosystem resilience**: 124 groups outside the top 5 posted 4,628 claims collectively, suggesting disrupting individual groups won't significantly reduce overall volume
+* **Risk implications**: Supply chain exposure is critical as manufacturing and tech vendors face high ransomware risk; geographic spread means no region is safe; fragmented threat landscape indicates sustained ecosystem activity
+
+### 勒索软件态势分析：12个月内7,655起索赔声明
+
+* **规模与速度**：2025年3月至2026年3月期间，129个勒索软件团伙在141个国家发布7,655起受害者索赔声明，平均每天20起，相当于每71分钟就有一个组织被点名
+* **头部集中效应**：Qilin以1,179起索赔(15.4%)领先,其次是Akira(706起)、INC Ransom(415起)、Play(386起)和Safepay(341起)。前5大团伙占所有索赔的40%
+* **行业目标**：制造业(890起)和科技业(843起)是最大目标,其次是医疗保健(537起)、建筑业(375起)和金融服务(362起)。前5大行业占已归类索赔的35%
+* **地理分布**：美国以3,101起索赔(40%)占主导地位,其次是德国(315起)、加拿大(311起)、英国(232起)和法国(177起)。Qilin在74个国家活动,覆盖范围最广
+* **加速趋势**：月度索赔量从上半年平均521起增至下半年732起,增幅40%,2025年12月达到峰值861起
+* **生态韧性**：前5名之外的124个团伙共发布4,628起索赔,表明打击单个团伙不会显著降低整体数量
+* **风险启示**：供应链暴露风险严峻,制造业和科技供应商面临高勒索软件风险;地理分布广泛意味着无安全区域;威胁生态碎片化预示持续活跃态势
+
+**[Read Original / 阅读原文](https://ciphercue.com/blog/7655-ransomware-claims-march-2025-to-march-2026)**
+
+### Hermes Agent - A Self-Improving AI Agent with Built-in Learning Loop
+
+* **What it does**: A self-improving AI agent that creates skills from experience, learns across sessions, and runs anywhere from a $5 VPS to GPU clusters. Features a real terminal interface and works across multiple messaging platforms (Telegram, Discord, Slack, WhatsApp, Signal).
+
+* **Key features**: 
+  - Built-in learning loop with autonomous skill creation and improvement
+  - Works with 200+ models via OpenRouter, Nous Portal, OpenAI, and custom endpoints
+  - Multi-platform support with voice memo transcription and conversation continuity
+  - Scheduled automations with natural language cron jobs
+  - Serverless deployment options that cost nearly nothing when idle
+  - Full TUI with multiline editing, slash commands, and streaming output
+  - Agent-curated memory with cross-session recall and user modeling
+
+* **Why it's notable**: Built by Nous Research, this is the only agent with a closed learning loop that genuinely improves itself over time. It's provider-agnostic (switch models with one command), deployment-flexible (runs anywhere from local to serverless), and platform-independent (not tied to your laptop). The combination of autonomous skill development, persistent memory, and cross-platform accessibility makes it stand out in the crowded AI agent space. Nearly 2,000 stars today suggests strong developer interest in self-improving, portable AI agents.
+
+---
+
+### Hermes Agent - 具备内置学习循环的自我改进 AI 智能体
+
+* **功能介绍**: 一个能够从经验中创建技能、跨会话学习的自我改进 AI 智能体,可在 5 美元 VPS 到 GPU 集群的任何环境运行。提供真实的终端界面,支持多个消息平台(Telegram、Discord、Slack、WhatsApp、Signal)。
+
+* **主要特点**:
+  - 内置学习循环,具备自主技能创建和改进能力
+  - 通过 OpenRouter、Nous Portal、OpenAI 等支持 200+ 模型及自定义端点
+  - 多平台支持,包含语音备忘录转录和跨平台对话连续性
+  - 使用自然语言的定时自动化任务
+  - 无服务器部署选项,空闲时成本几乎为零
+  - 完整 TUI 界面,支持多行编辑、斜杠命令和流式输出
+  - 智能体管理的记忆系统,具备跨会话召回和用户建模功能
+
+* **为何值得关注**: 由 Nous Research 开发,这是唯一具有闭环学习能力、能够真正自我改进的智能体。它不依赖特定提供商(一条命令即可切换模型)、部署灵活(从本地到无服务器均可运行)、平台独立(不绑定笔记本电脑)。自主技能开发、持久化记忆和跨平台可访问性的组合使其在拥挤的 AI 智能体领域脱颖而出。今日获得近 2,000 星标,显示开发者对自我改进、可移植 AI 智能体的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/NousResearch/hermes-agent)**
+
+### claude-code - Independent Python Port of Claude Code
+
+* **What it does**: A complete Python reimplementation of Claude Code's architecture, rewritten from scratch using the oh-my-codex framework. Provides tool wiring, agent workflow, and command harness functionality originally designed in TypeScript.
+
+* **Key features**: Python-first codebase with modular subsystems (models, commands, tools, query engine), CLI interface for manifest and summary generation, comprehensive test suite, and AI-assisted development workflow using OmX orchestration modes.
+
+* **Why it's notable**: With 22K+ stars, this educational project demonstrates ethical AI-assisted code porting while addressing legal/copyleft concerns around exposed source code. The repository pivoted from tracking an exposed TypeScript snapshot to building an independent Python implementation, documented with transparent development process and philosophical essay on legitimate vs. legal reimplementation.
+
+---
+
+### claude-code - Claude Code 的独立 Python 移植版本
+
+* **功能介绍**: 使用 oh-my-codex 框架从零完全重写的 Claude Code Python 实现。提供工具连接、智能体工作流和命令框架功能,原始设计为 TypeScript 版本。
+
+* **主要特点**: Python 优先的代码库,包含模块化子系统(模型、命令、工具、查询引擎),用于清单和摘要生成的 CLI 接口,完整的测试套件,以及使用 OmX 编排模式的 AI 辅助开发工作流。
+
+* **为何值得关注**: 拥有超过 22K 星标,这个教育项目展示了符合伦理的 AI 辅助代码移植,同时解决了暴露源代码相关的法律和 Copyleft 问题。该仓库从跟踪暴露的 TypeScript 快照转向构建独立的 Python 实现,并通过透明的开发过程和关于合法性与正当性重新实现的哲学文章进行记录。
+
+**[View Repository / 查看仓库](https://github.com/instructkr/claude-code)**
+
+### 🎬 If you can contribute to an open source project and collaborate with others, you can work anywhere
+**Channel:** freeCodeCamp.org
+
+* What the video covers: This video explores how open source contribution skills translate directly to professional work environments, demonstrating that the ability to collaborate on public projects proves your readiness for any tech role.
+
+* Key topics discussed: Open source contribution workflows, collaboration best practices, how public code contributions serve as portfolio evidence, and the transferable skills gained from working with distributed teams on shared codebases.
+
+* Why it's worth watching: If you're looking to break into tech or advance your career, this video shows how open source work is more than just coding practice—it's a proven way to demonstrate real-world collaboration skills that employers value. Perfect for developers at any level who want to understand how their contributions can open career doors.
+
+---
+
+### 🎬 如果你能为开源项目做贡献并与他人协作,你就能在任何地方工作
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 本视频探讨了开源贡献技能如何直接转化为专业工作环境中的能力,展示了在公开项目上的协作能力如何证明你已为任何技术岗位做好准备。
+
+* 主要话题: 开源贡献工作流程、协作最佳实践、公开代码贡献如何作为作品集证明,以及从分布式团队共享代码库工作中获得的可迁移技能。
+
+* 为何值得观看: 如果你想进入科技行业或提升职业发展,这个视频展示了开源工作不仅仅是编码练习——它是证明雇主重视的真实协作技能的有效方式。适合任何级别的开发者,帮助理解如何通过贡献打开职业大门。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5e9J47H9EFE)**
+
+### 🎬 The OpenClaw unlock that changes the game
+**Channel:** Lenny's Podcast
+
+* What the video covers: Explores OpenClaw, a significant development in AI agent technology that represents a breakthrough in how AI systems interact and operate
+* Key topics discussed: The technical capabilities of OpenClaw, its practical applications in AI agent workflows, and how it fundamentally changes the landscape of autonomous AI systems
+* Why it's worth watching: If you're interested in cutting-edge AI developments, this video breaks down a game-changing unlock in the AI agent space that could reshape how we think about autonomous systems and their capabilities
+
+### 🎬 改变游戏规则的 OpenClaw 突破
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 深入探讨 OpenClaw——AI 智能体技术的重大突破,展示了 AI 系统交互和运作方式的革命性变化
+* 主要话题: OpenClaw 的技术能力、在 AI 智能体工作流程中的实际应用,以及它如何从根本上改变自主 AI 系统的格局
+* 为何值得观看: 如果你对前沿 AI 发展感兴趣,这个视频解析了 AI 智能体领域的颠覆性突破,可能重塑我们对自主系统及其能力的认知
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=47GHJZaF4Z8)**
+
+### 🎬 AI-Assisted Coding Tutorial – OpenClaw, GitHub Copilot, Claude Code, CodeRabbit, Gemini CLI
+**Channel:** freeCodeCamp.org
+
+* Comprehensive guide to modern AI coding tools including OpenClaw, GitHub Copilot, Claude Code, CodeRabbit, and Gemini CLI
+* Covers AI pair programming techniques and agentic terminal workflows to boost developer productivity
+* Essential for developers looking to integrate AI assistants into their daily coding workflow and understand how different tools complement each other
+
+### 🎬 AI 辅助编程教程 – OpenClaw、GitHub Copilot、Claude Code、CodeRabbit、Gemini CLI
+**频道:** freeCodeCamp.org
+
+* 全面介绍现代 AI 编程工具，包括 OpenClaw、GitHub Copilot、Claude Code、CodeRabbit 和 Gemini CLI
+* 讲解 AI 结对编程技术和智能终端工作流，提升开发者生产力
+* 适合希望将 AI 助手集成到日常编程工作流程中的开发者，帮助理解不同工具如何相互配合
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wlpBCazAY9Q)**
 
