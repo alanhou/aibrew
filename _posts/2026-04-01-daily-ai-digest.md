@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 01, 2026"
 date: 2026-04-01
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -315,4 +315,275 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 轻松娱乐的内容能引起开发者共鸣,同时提供编程鼓励;适合快速休息时观看,将欢笑与科技文化完美融合
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=-w4A69iyuog)**
+
+<!-- [Title-Only] -->
+### GitHub's Historic Uptime
+
+Based on the title, this article likely covers:
+* An analysis of GitHub's service availability and reliability over time, examining historical uptime data and patterns
+* Metrics showing how consistently GitHub has maintained its platform operations, possibly including downtime incidents, maintenance windows, and overall availability percentages
+* Why it might be interesting: For developers and organizations relying on GitHub for critical infrastructure, understanding its historical reliability helps assess risk and plan for potential disruptions. It also provides insight into how one of the world's largest code hosting platforms manages scale and reliability.
+
+### GitHub 的历史正常运行时间
+
+根据标题推测:
+* 对 GitHub 服务可用性和可靠性的历史数据分析,检视其运行时间模式和趋势
+* 展示 GitHub 平台运营稳定性的指标,可能包括停机事件、维护窗口期以及整体可用性百分比
+* 为何值得关注:对于依赖 GitHub 作为关键基础设施的开发者和组织而言,了解其历史可靠性有助于评估风险并为潜在中断做好准备。这也让我们得以一窥全球最大代码托管平台之一如何管理规模化运营和可靠性。
+
+**[Read Original / 阅读原文](https://damrnelson.github.io/github-historical-uptime/)**
+
+### The Claude Code Source Leak: Key Findings
+
+* **Anti-distillation mechanisms**: Claude Code injects fake tool definitions and summarizes reasoning chains to prevent competitors from training models on its API traffic, though these protections are easily bypassed
+* **Undercover mode**: AI strips all Anthropic references when working in external repos, with no way to disable it - raising concerns about AI-authored commits appearing human-written in open source projects
+* **Frustration detection via regex**: Uses pattern matching to detect user frustration (profanity, complaints) - ironic for an LLM company but pragmatic
+* **Native client attestation**: Implements DRM-like cryptographic verification at the HTTP transport level (below JS runtime) to prevent third-party tools from accessing Claude APIs
+* **250K wasted API calls daily**: Auto-compaction failures were burning massive resources until a 3-line fix limited consecutive failures
+* **KAIROS autonomous agent mode**: Unreleased feature with background daemon workers, GitHub webhooks, memory distillation, and cron scheduling - potentially the biggest roadmap reveal
+* **April Fools' Easter egg**: Tamagotchi-style companion system with 18 species, rarity tiers, and RPG stats built in for tomorrow's prank
+
+### Claude Code 源代码泄露：关键发现
+
+* **反蒸馏机制**：Claude Code 注入虚假工具定义并总结推理链，以防止竞争对手从其 API 流量中训练模型，但这些保护措施很容易被绕过
+* **隐身模式**：AI 在外部代码库工作时会删除所有 Anthropic 相关信息，且无法禁用 - 引发了对开源项目中 AI 编写的提交看起来像人类所写的担忧
+* **正则表达式检测挫败感**：使用模式匹配检测用户挫败感(脏话、抱怨) - 对 LLM 公司来说很讽刺但很实用
+* **原生客户端认证**：在 HTTP 传输层(JS 运行时之下)实现类似 DRM 的加密验证，以防止第三方工具访问 Claude API
+* **每天浪费 25 万次 API 调用**：自动压缩失败曾消耗大量资源，直到用 3 行代码限制连续失败次数
+* **KAIROS 自主代理模式**：未发布的功能，包含后台守护进程、GitHub webhook、内存蒸馏和定时调度 - 可能是最大的产品路线图泄露
+* **愚人节彩蛋**：内置电子宠物式伴侣系统,有 18 个物种、稀有度等级和 RPG 属性，为明天的恶作剧准备
+
+**[Read Original / 阅读原文](https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/)**
+
+### Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) with a generic error message
+* The page displays a "Try again" button for users to retry their action
+* Includes a warning that privacy-related browser extensions may cause issues on the platform
+* The content is minimal and lacks substantive information for analysis
+* No actual blog content or article is present - this is just an error state HTML
+
+### 错误页面分析
+
+* 这是来自 X.com（前 Twitter）的错误页面，显示通用错误消息
+* 页面显示"重试"按钮，供用户重新尝试操作
+* 包含警告提示：隐私相关的浏览器扩展可能导致平台问题
+* 内容极少，缺乏可分析的实质性信息
+* 没有实际的博客内容或文章 - 这只是一个错误状态的 HTML 页面
+
+**[Read Original / 阅读原文](https://twitter.com/Fried_rice/status/2038894956459290963)**
+
+### claude-code-best-practice - A Comprehensive Guide to Mastering Claude Code
+
+* **What it does**: A curated collection of best practices, implementations, and workflows for Claude Code (Anthropic's AI coding assistant). It demonstrates how to leverage subagents, commands, skills, hooks, MCP servers, and other advanced features through real-world examples.
+
+* **Key features**: 
+  * Detailed documentation of Claude Code's core concepts (subagents, commands, skills, workflows, hooks)
+  * Practical implementations with badges linking to actual source code
+  * Coverage of cutting-edge features like Auto Mode, Chrome automation, scheduled tasks, and voice dictation
+  * Orchestration workflow examples showing multi-agent coordination
+  * Best practices from Boris Cherny (prominent Claude Code advocate) and official Anthropic documentation
+  * Bilingual support and structured markdown formatting for easy navigation
+
+* **Why it's notable**: With 2,408 stars today and recognition as GitHub's #1 trending repository, this project has become the go-to resource for developers wanting to maximize Claude Code's capabilities. It bridges the gap between official documentation and practical application, offering battle-tested patterns for AI-assisted development. The repository's comprehensive coverage of both stable and beta features makes it invaluable for teams adopting Claude Code in production environments.
+
+---
+
+### claude-code-best-practice - Claude Code 最佳实践完整指南
+
+* **功能介绍**: 这是一个精心整理的 Claude Code(Anthropic 的 AI 编程助手)最佳实践、实现方案和工作流程集合。通过真实案例展示如何利用子代理、命令、技能、钩子、MCP 服务器等高级功能。
+
+* **主要特点**:
+  * 详细记录 Claude Code 核心概念(子代理、命令、技能、工作流、钩子)
+  * 提供实际实现代码,带有徽章链接到源代码
+  * 涵盖前沿功能:自动模式、Chrome 自动化、定时任务、语音输入
+  * 编排工作流示例展示多代理协作
+  * 包含 Boris Cherny(知名 Claude Code 倡导者)和 Anthropic 官方文档的最佳实践
+  * 支持双语,结构化 Markdown 格式便于导航
+
+* **为何值得关注**: 该项目今日获得 2,408 星标,成为 GitHub 当日趋势榜第一名,已成为开发者充分发挥 Claude Code 能力的首选资源。它在官方文档和实际应用之间架起桥梁,提供经过实战检验的 AI 辅助开发模式。仓库全面覆盖稳定版和测试版功能,对于在生产环境中采用 Claude Code 的团队来说极具价值。
+
+**[View Repository / 查看仓库](https://github.com/shanraisshan/claude-code-best-practice)**
+
+### Hermes Agent - A Self-Improving AI Agent with Built-in Learning Loop
+
+* **What it does**: A self-improving AI agent that creates skills from experience, learns across sessions, and runs anywhere from a $5 VPS to GPU clusters. Features a real terminal interface and works across multiple messaging platforms (Telegram, Discord, Slack, WhatsApp, Signal).
+
+* **Key features**: 
+  - Built-in learning loop with autonomous skill creation and improvement
+  - Works with 200+ models via OpenRouter, Nous Portal, OpenAI, and custom endpoints
+  - Multi-platform support with voice memo transcription and conversation continuity
+  - Scheduled automations with natural language cron jobs
+  - Serverless deployment options (Daytona, Modal) that cost nearly nothing when idle
+  - Agent-curated memory with FTS5 session search and user modeling
+  - Parallel workstreams via isolated subagents
+
+* **Why it's notable**: Unlike typical AI agents tied to your laptop, Hermes persists independently on cloud infrastructure and genuinely learns from experience. It's the only agent with a closed learning loop that creates, improves, and persists skills autonomously. Built by Nous Research with research-ready features for trajectory generation and RL training. The 1,909 stars today reflect strong interest in its unique self-improvement capabilities and flexible deployment model.
+
+---
+
+### Hermes Agent - 具备内置学习循环的自我改进 AI 智能体
+
+* **功能介绍**: 一个能够从经验中创建技能、跨会话学习的自我改进型 AI 智能体,可在 5 美元 VPS 到 GPU 集群等任何环境运行。提供真实终端界面,支持多个消息平台(Telegram、Discord、Slack、WhatsApp、Signal)。
+
+* **主要特点**:
+  - 内置学习循环,可自主创建和改进技能
+  - 通过 OpenRouter、Nous Portal、OpenAI 等支持 200+ 模型
+  - 多平台支持,具备语音备忘录转录和跨平台对话连续性
+  - 使用自然语言的定时自动化任务
+  - 无服务器部署选项(Daytona、Modal),空闲时几乎零成本
+  - 智能体管理的记忆系统,支持 FTS5 会话搜索和用户建模
+  - 通过隔离子智能体实现并行工作流
+
+* **为何值得关注**: 与绑定在笔记本电脑上的典型 AI 智能体不同,Hermes 可独立持久化在云基础设施上,并真正从经验中学习。这是唯一具有闭环学习系统的智能体,能够自主创建、改进和持久化技能。由 Nous Research 构建,具备轨迹生成和强化学习训练等研究级功能。今日获得 1,909 星标,反映了其独特的自我改进能力和灵活部署模式引发的强烈关注。
+
+**[View Repository / 查看仓库](https://github.com/NousResearch/hermes-agent)**
+
+### Claude Code - Agentic Terminal Coding Assistant with Full Source Released
+
+* **What it does**: A sophisticated CLI tool that brings Claude AI directly into your terminal, enabling natural language interactions for code editing, git workflows, codebase exploration, and command execution. It features an agent-based architecture with ~40 specialized tools and ~85 slash commands.
+
+* **Key features**: 
+  - Built with TypeScript (512K+ lines across ~1,900 files) using Bun runtime and React + Ink for terminal UI
+  - Comprehensive tool system covering file I/O, search (ripgrep, web), shell execution, LSP integration, and MCP server support
+  - Multi-agent orchestration with inter-agent messaging and task management
+  - Advanced subsystems: permission model, plugin system, skills framework, persistent memory, voice input, and IDE bridges (VS Code, JetBrains)
+  - Ships with an MCP server (`claude-code-explorer-mcp`) for interactive source exploration
+  - Extensive documentation covering architecture, tools reference, commands, and subsystems
+
+* **Why it's notable**: This represents a rare full source code release of a production AI coding assistant from Anthropic. Originally discovered through an npm package's source map file, it was officially made public domain on March 31, 2026. The codebase showcases enterprise-grade patterns for building agentic systems, including sophisticated permission management, state handling, and tool orchestration. It's particularly valuable for developers studying how to architect large-scale AI-powered developer tools, with detailed documentation and an MCP server enabling hands-on exploration of the implementation.
+
+---
+
+### Claude Code - 终端智能编码助手完整源码公开
+
+* **功能介绍**: 一款将 Claude AI 集成到终端的高级 CLI 工具，通过自然语言命令实现代码编辑、Git 工作流管理、代码库探索和命令执行。采用基于智能体的架构，包含约 40 个专用工具和 85 个斜杠命令。
+
+* **主要特点**:
+  - 使用 TypeScript 构建(约 1,900 个文件，超过 51.2 万行代码)，基于 Bun 运行时和 React + Ink 终端 UI
+  - 完整的工具系统涵盖文件操作、搜索(ripgrep、网页)、Shell 执行、LSP 集成和 MCP 服务器支持
+  - 多智能体协作编排，支持智能体间消息传递和任务管理
+  - 高级子系统:权限模型、插件系统、技能框架、持久化内存、语音输入和 IDE 桥接(VS Code、JetBrains)
+  - 附带 MCP 服务器(`claude-code-explorer-mcp`)用于交互式源码探索
+  - 详尽文档涵盖架构、工具参考、命令和子系统
+
+* **为何值得关注**: 这是 Anthropic 罕见的生产级 AI 编码助手完整源码公开。最初通过 npm 包的 source map 文件被发现，于 2026 年 3 月 31 日正式开放为公共领域。代码库展示了构建智能体系统的企业级模式，包括复杂的权限管理、状态处理和工具编排。对于研究如何架构大规模 AI 驱动开发工具的开发者极具价值，配套详细文档和 MCP 服务器可实现对实现细节的深入探索。
+
+**[View Repository / 查看仓库](https://github.com/nirholas/claude-code)**
+
+### claude-code-sourcemap - Reconstructed Source Code of Anthropic's Claude Code CLI
+
+* **What it does**: This repository contains reconstructed TypeScript source code from Anthropic's `@anthropic-ai/claude-code` npm package (version 2.1.88), extracted from source maps for research and educational purposes.
+
+* **Key features**: 
+  - 4,756 restored files including 1,884 TypeScript/TSX source files
+  - Complete CLI implementation with 30+ tools (Bash, FileEdit, Grep, MCP integration)
+  - 40+ commands (commit, review, config)
+  - Multi-agent coordination system, AI assistant mode (KAIROS), voice interaction, and Vim mode
+  - Plugin and skills systems for extensibility
+
+* **Why it's notable**: Provides rare insight into the internal architecture of Claude's official code assistant tool, revealing how Anthropic structures their AI-powered development tools. The reconstruction demonstrates sophisticated patterns for building AI coding assistants, including context management, tool orchestration, and multi-modal interaction. Trending due to developer interest in understanding production-grade AI coding tools and the technical implementation behind Claude's capabilities.
+
+---
+
+### claude-code-sourcemap - Anthropic Claude Code CLI 源码还原
+
+* **功能介绍**: 本仓库包含从 Anthropic 的 `@anthropic-ai/claude-code` npm 包（版本 2.1.88）中通过 source map 还原的 TypeScript 源代码,仅供研究和学习使用。
+
+* **主要特点**:
+  - 还原了 4,756 个文件,包括 1,884 个 TypeScript/TSX 源文件
+  - 完整的 CLI 实现,包含 30+ 个工具(Bash、文件编辑、Grep、MCP 集成等)
+  - 40+ 个命令(提交、审查、配置等)
+  - 多 Agent 协调系统、AI 助手模式(KAIROS)、语音交互和 Vim 模式
+  - 插件和技能系统,支持扩展功能
+
+* **为何值得关注**: 提供了罕见的机会来了解 Claude 官方代码助手工具的内部架构,揭示了 Anthropic 如何构建 AI 驱动的开发工具。这次还原展示了构建 AI 编码助手的复杂模式,包括上下文管理、工具编排和多模态交互。因开发者对理解生产级 AI 编码工具以及 Claude 能力背后的技术实现感兴趣而受到关注。
+
+**[View Repository / 查看仓库](https://github.com/ChinaSiro/claude-code-sourcemap)**
+
+### 🎬 Millions of JS devs just got penetrated by a RAT…
+**Channel:** Fireship
+
+* Covers a major security breach affecting millions of JavaScript developers through a Remote Access Trojan (RAT) attack
+* Key topics include the attack vector, how the malicious code infiltrated the JavaScript ecosystem, and the scope of the compromise
+* Worth watching to understand critical supply chain security vulnerabilities in modern web development and learn how to protect your projects from similar attacks
+
+### 🎬 数百万 JS 开发者遭遇远程访问木马攻击
+**频道:** Fireship
+
+* 报道了一起影响数百万 JavaScript 开发者的重大安全事件,涉及远程访问木马(RAT)攻击
+* 主要话题包括攻击途径、恶意代码如何渗透 JavaScript 生态系统以及受影响范围
+* 值得观看以了解现代 Web 开发中的关键供应链安全漏洞,学习如何保护项目免受类似攻击
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=o7NYXvYohYk)**
+
+### 🎬 Huawei Was About to Beat NVIDIA - Dylan Patel
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth analysis of Huawei's ambitious attempt to compete with NVIDIA in the AI chip market, exploring how close the Chinese tech giant came to challenging NVIDIA's dominance before facing significant obstacles.
+
+* Key topics discussed: Huawei's chip development strategy, technical capabilities and innovations in AI accelerators, the impact of US sanctions and export controls on Huawei's semiconductor ambitions, comparative analysis of Huawei's chips versus NVIDIA's GPUs, and the broader geopolitical implications for the AI hardware race.
+
+* Why it's worth watching: Dylan Patel, a renowned semiconductor analyst, provides insider perspective on one of the most significant tech competitions of our time. The discussion reveals how close Huawei came to disrupting NVIDIA's near-monopoly and what this means for the future of AI infrastructure and US-China tech rivalry.
+
+---
+
+### 🎬 华为差点击败英伟达 - Dylan Patel
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深入分析华为在AI芯片市场挑战英伟达的雄心壮志,探讨这家中国科技巨头在遭遇重大阻碍之前,距离挑战英伟达的主导地位有多近。
+
+* 主要话题: 华为的芯片发展战略、AI加速器的技术能力与创新、美国制裁和出口管制对华为半导体野心的影响、华为芯片与英伟达GPU的对比分析,以及AI硬件竞赛的更广泛地缘政治影响。
+
+* 为何值得观看: 知名半导体分析师Dylan Patel提供了关于当今最重要科技竞争之一的内部视角。讨论揭示了华为距离打破英伟达近乎垄断地位有多近,以及这对AI基础设施和中美科技竞争未来的意义。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=x21Sac_RnyE)**
+
+### 🎬 Learn coding like a game #coding #development #python
+**Channel:** SetupsAI
+
+* What the video covers: An approach to learning programming through gamification techniques, specifically focusing on Python development
+* Key topics discussed: Gamified learning methods, Python programming fundamentals, making coding more engaging and accessible for beginners
+* Why it's worth watching: Offers a fresh perspective on learning to code by treating it as an interactive game rather than traditional study, potentially making the learning process more enjoyable and effective for newcomers to programming
+
+### 🎬 像玩游戏一样学编程 #coding #development #python
+**频道:** SetupsAI
+
+* 视频内容概述: 通过游戏化技巧学习编程的方法,特别聚焦于 Python 开发
+* 主要话题: 游戏化学习方法、Python 编程基础、让编程学习更有趣和易于上手
+* 为何值得观看: 提供了一种全新的编程学习视角,将其视为互动游戏而非传统学习方式,让编程新手的学习过程更加愉快和高效
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SV1NOIgBA0)**
+
+### 🎬 How to use Claude Code FREE Forever | STOP Paying $200/m
+**Channel:** Website Learners
+
+* What the video covers: A tutorial demonstrating how to access and use Claude's coding capabilities without paying the $200/month subscription fee
+* Key topics discussed: Free alternatives to Claude Code, setup instructions, cost-saving strategies for developers, and practical implementation methods
+* Why it's worth watching: Perfect for developers and tech enthusiasts looking to leverage AI coding assistants while staying within budget. The video offers actionable steps to access premium AI coding features without the hefty monthly cost, making advanced AI tools more accessible to individual developers and small teams.
+
+### 🎬 如何永久免费使用 Claude Code | 停止支付每月 $200
+**频道:** Website Learners
+
+* 视频内容概述: 教程展示如何在不支付每月 $200 订阅费的情况下访问和使用 Claude 的编码功能
+* 主要话题: Claude Code 的免费替代方案、设置说明、开发者省钱策略以及实际实施方法
+* 为何值得观看: 非常适合希望在预算内利用 AI 编码助手的开发者和技术爱好者。视频提供了可操作的步骤,帮助用户在无需支付高额月费的情况下访问高级 AI 编码功能,使个人开发者和小型团队更容易获得先进的 AI 工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AjoD5GqosTk)**
+
+### 🎬 Stooge Sort
+**Channel:** onjsdev
+
+* What the video covers: An exploration of the Stooge Sort algorithm, one of the most inefficient sorting algorithms in computer science
+* Key topics discussed: The recursive sorting mechanism that works by sorting the first 2/3 of an array, then the last 2/3, and finally the first 2/3 again; the algorithm's computational complexity and why it's impractical for real-world use
+* Why it's worth watching: Perfect for understanding algorithm efficiency concepts, learning about recursive sorting approaches, and appreciating why certain algorithms are avoided in production code—great educational content for computer science students and developers interested in algorithm analysis
+
+### 🎬 Stooge Sort (傻瓜排序)
+**频道:** onjsdev
+
+* 视频内容概述: 深入讲解 Stooge Sort 算法,这是计算机科学中效率最低的排序算法之一
+* 主要话题: 递归排序机制——先排序数组的前 2/3,再排序后 2/3,最后再次排序前 2/3;算法的计算复杂度以及为何不适用于实际应用
+* 为何值得观看: 非常适合理解算法效率概念,学习递归排序方法,并体会为什么某些算法在生产环境中应该避免使用——对计算机科学学生和对算法分析感兴趣的开发者来说是很好的教学内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LXRO2eMnI7w)**
 
