@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: March 31, 2026"
 date: 2026-03-31
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 3 fast-moving projects, 7 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，3个快速崛起项目，7个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -359,4 +359,264 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了一种全新的编程学习视角,将其视为游戏而非传统学习,能帮助初学者保持动力,让编程变得更易上手且充满乐趣
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SV1NOIgBA0)**
+
+### Axios npm Package Compromised - Remote Access Trojan Deployed via Malicious Versions
+
+* On March 30, 2026, two malicious axios versions (1.14.1 and 0.30.4) were published to npm using compromised maintainer credentials
+* Attack bypassed GitHub Actions CI/CD by using stolen npm token; maintainer's email changed to anonymous ProtonMail address
+* Malicious versions inject fake dependency "plain-crypto-js@4.2.1" that executes postinstall script deploying cross-platform RAT (macOS, Windows, Linux)
+* Malware contacts live C2 server, delivers platform-specific payloads, then self-destructs and replaces package.json to evade detection
+* Attack was pre-staged 18 hours in advance with separate payloads for three operating systems; both release branches compromised within 39 minutes
+* Axios has 300+ million weekly downloads; compromised versions published manually via npm CLI, breaking normal OIDC trusted publisher pattern
+* Plain-crypto-js masquerades as legitimate crypto-js library, never imported in axios code, exists solely to trigger malicious postinstall hook
+* If you installed axios@1.14.1 or axios@0.30.4, assume system compromise and take immediate remediation action
+* Attack represents one of most sophisticated supply chain compromises against top-10 npm package, with complete operational security and evidence destruction
+
+### Axios npm 包遭入侵 - 恶意版本植入远程访问木马
+
+* 2026年3月30日,两个恶意 axios 版本(1.14.1 和 0.30.4)通过被盗的维护者凭证发布到 npm
+* 攻击绕过 GitHub Actions CI/CD,使用被盗 npm 令牌;维护者邮箱被改为匿名 ProtonMail 地址
+* 恶意版本注入伪造依赖 "plain-crypto-js@4.2.1",执行 postinstall 脚本部署跨平台远程访问木马(支持 macOS、Windows、Linux)
+* 恶意软件联系活跃的 C2 服务器,投放特定平台载荷,然后自毁并替换 package.json 以逃避检测
+* 攻击提前18小时预部署,为三个操作系统准备独立载荷;两个发布分支在39分钟内被同时攻陷
+* Axios 每周下载量超3亿次;被入侵版本通过 npm CLI 手动发布,打破正常的 OIDC 可信发布者模式
+* Plain-crypto-js 伪装成合法的 crypto-js 库,从未在 axios 代码中导入,仅用于触发恶意 postinstall 钩子
+* 如果安装了 axios@1.14.1 或 axios@0.30.4,应假定系统已被入侵并立即采取补救措施
+* 此次攻击是针对前十大 npm 包最复杂的供应链入侵之一,具有完整的操作安全性和证据销毁机制
+
+**[Read Original / 阅读原文](https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan)**
+
+### Claude Token Efficiency Tool - Single File Solution to Reduce AI Output Verbosity
+
+* Drop-in CLAUDE.md file that reduces Claude's output verbosity by ~63% without code changes
+* Targets common AI response problems: sycophantic greetings, unnecessary closings, restating prompts, over-engineering, and Unicode formatting issues
+* Best for high-volume automation pipelines and repeated structured tasks; not cost-effective for single queries due to input token overhead
+* Includes specialized profiles for coding, agents, and analysis workflows; supports composable configuration across global, project, and subdirectory levels
+* Benchmark shows reduction from 465 to 170 words across 5 test prompts, saving ~9,600 tokens per 100 prompts daily
+
+### Claude 令牌效率工具 - 单文件方案减少 AI 输出冗余
+
+* 投放式 CLAUDE.md 文件可将 Claude 输出冗余度降低约 63%,无需修改代码
+* 针对常见 AI 响应问题:谄媚式问候、不必要的结束语、重复提示词、过度工程化和 Unicode 格式问题
+* 最适合高容量自动化管道和重复结构化任务;由于输入令牌开销,单次查询不划算
+* 包含编码、代理和分析工作流的专用配置文件;支持全局、项目和子目录级别的可组合配置
+* 基准测试显示 5 个测试提示从 465 词减少到 170 词,每日 100 个提示可节省约 9,600 个令牌
+
+**[Read Original / 阅读原文](https://github.com/drona23/claude-token-efficient)**
+
+### Ollama Now Powered by MLX on Apple Silicon - Performance Preview
+
+* Ollama introduces MLX-powered acceleration for Apple Silicon, delivering the fastest local inference performance on Mac devices
+* Prefill speed increased to 1810 tokens/s (57% faster than v0.18's 1154 tokens/s), decode speed doubled to 112 tokens/s (vs 58 tokens/s)
+* New NVFP4 quantization format maintains model accuracy while reducing memory usage, ensuring production parity with cloud inference providers
+* Enhanced caching system reduces memory utilization through cross-conversation reuse, intelligent checkpointing, and smarter eviction strategies
+* Preview release optimized for Qwen3.5-35B-A3B model with coding-focused sampling parameters, requires 32GB+ unified memory
+* Compatible with Claude Code and OpenClaw development tools via simple CLI commands
+* Future roadmap includes expanded model architecture support and simplified custom model import workflow
+
+### Ollama 现已在 Apple Silicon 上由 MLX 驱动 - 性能预览版
+
+* Ollama 推出基于 MLX 的 Apple Silicon 加速方案,在 Mac 设备上实现最快的本地推理性能
+* 预填充速度提升至 1810 tokens/s(比 v0.18 的 1154 tokens/s 快 57%),解码速度翻倍至 112 tokens/s(对比 58 tokens/s)
+* 采用全新 NVFP4 量化格式,在保持模型精度的同时降低内存占用,确保与云端推理服务的生产环境一致性
+* 升级的缓存系统通过跨对话复用、智能检查点和优化的淘汰策略,显著降低内存使用率
+* 预览版针对 Qwen3.5-35B-A3B 模型优化,配备编程任务专用采样参数,需要 32GB 以上统一内存
+* 通过简单的命令行指令即可与 Claude Code 和 OpenClaw 开发工具集成
+* 未来计划扩展支持更多模型架构,并简化自定义模型导入流程
+
+**[Read Original / 阅读原文](https://ollama.com/blog/mlx)**
+
+### claude-code-best-practice - Comprehensive Guide to Mastering Claude Code
+
+* **What it does**: A curated collection of best practices, implementations, and workflows for Claude Code (Anthropic's AI coding assistant). It demonstrates how to leverage subagents, commands, skills, hooks, MCP servers, and other advanced features to build powerful AI-assisted development workflows.
+
+* **Key features**: 
+  - Complete implementation examples for all Claude Code concepts (subagents, commands, skills, workflows, hooks)
+  - Orchestration workflow demonstrations showing multi-agent coordination
+  - Real-world configurations for settings, permissions, memory management, and MCP integrations
+  - Coverage of cutting-edge features like Auto Mode, Chrome automation, scheduled tasks, voice dictation, and code review
+  - Bilingual documentation approach with structured markdown formatting
+  - Active maintenance with 1,108 stars gained today
+
+* **Why it's notable**: This repository serves as the definitive reference for developers wanting to maximize Claude Code's capabilities. It bridges the gap between official documentation and practical implementation, showing how to orchestrate complex AI workflows. The project gained significant traction (#1 trending on GitHub) due to endorsements from Boris Cherny and its comprehensive coverage of both stable and beta features. It's particularly valuable for teams adopting AI-assisted development practices and looking to implement advanced patterns like agent teams, automated code review, and CI/CD integration.
+
+---
+
+### claude-code-best-practice - Claude Code 最佳实践完整指南
+
+* **功能介绍**: 这是一个精心整理的 Claude Code（Anthropic 的 AI 编码助手）最佳实践、实现示例和工作流程集合。展示如何利用子代理、命令、技能、钩子、MCP 服务器等高级功能构建强大的 AI 辅助开发工作流。
+
+* **主要特点**:
+  - 涵盖所有 Claude Code 概念的完整实现示例（子代理、命令、技能、工作流、钩子）
+  - 多代理协作的编排工作流演示
+  - 设置、权限、内存管理和 MCP 集成的实际配置
+  - 覆盖前沿功能：自动模式、Chrome 自动化、定时任务、语音输入、代码审查
+  - 采用双语文档方式，结构化 Markdown 格式
+  - 积极维护，今日获得 1,108 星标
+
+* **为何值得关注**: 该仓库是开发者充分发挥 Claude Code 能力的权威参考。它在官方文档和实际实现之间架起桥梁，展示如何编排复杂的 AI 工作流。由于获得 Boris Cherny 的推荐以及对稳定版和测试版功能的全面覆盖，该项目获得了巨大关注（GitHub 趋势榜第一）。对于采用 AI 辅助开发实践并希望实现代理团队、自动化代码审查和 CI/CD 集成等高级模式的团队特别有价值。
+
+**[View Repository / 查看仓库](https://github.com/shanraisshan/claude-code-best-practice)**
+
+### Deep-Live-Cam - Real-Time Face Swap and One-Click Video Deepfake
+
+* **What it does**: Performs real-time face swapping and video deepfakes using just a single source image. Works with webcams, videos, and images to replace faces instantly.
+
+* **Key features**: 
+  - Live webcam face swapping with 3-click setup
+  - Mouth mask retention for accurate lip movement
+  - Multi-face mapping (swap multiple faces simultaneously)
+  - GPU acceleration support (NVIDIA CUDA, AMD DirectML, Apple Silicon CoreML)
+  - Built-in content filters to prevent inappropriate use
+  - Works with streaming platforms and video calls
+
+* **Why it's notable**: Gaining 1,136 stars today due to its impressive real-time performance and ease of use - no technical expertise needed with pre-built versions. The project balances powerful AI capabilities with ethical safeguards, making deepfake technology accessible while promoting responsible use. Popular for content creation, memes, live performances, and entertainment applications.
+
+---
+
+### Deep-Live-Cam - 实时换脸和一键视频深度伪造工具
+
+* **功能介绍**: 仅需一张源图像即可实现实时换脸和视频深度伪造。支持摄像头、视频和图像的即时面部替换。
+
+* **主要特点**:
+  - 三步完成实时摄像头换脸
+  - 保留原始嘴部以实现精准唇形同步
+  - 多人脸映射(同时替换多个面孔)
+  - 支持GPU加速(NVIDIA CUDA、AMD DirectML、Apple Silicon CoreML)
+  - 内置内容过滤器防止不当使用
+  - 兼容流媒体平台和视频通话
+
+* **为何值得关注**: 今日获得1,136星标,因其出色的实时性能和易用性备受关注——预构建版本无需技术背景即可使用。该项目在提供强大AI能力的同时注重道德规范,让深度伪造技术既易于获取又倡导负责任使用。广泛应用于内容创作、表情包制作、现场表演和娱乐领域。
+
+**[View Repository / 查看仓库](https://github.com/hacksider/Deep-Live-Cam)**
+
+### OpenBB - Open-source financial data platform for analysts, quants and AI agents
+
+* **What it does**: OpenBB provides a unified data integration layer that consolidates proprietary, licensed, and public financial data sources into a single Python-based platform. It operates on a "connect once, consume everywhere" architecture, exposing data to Python environments, Excel, AI agents via MCP servers, and REST APIs.
+
+* **Key features**: 
+  * Python SDK with simple API (`pip install openbb`) for accessing financial data
+  * FastAPI backend server for integration with downstream applications
+  * Native integration with OpenBB Workspace (enterprise UI for visualization and AI agents)
+  * Support for multiple data providers and sources through a standardized interface
+  * CLI tool for command-line access
+  * Open-source with AGPLv3 license
+
+* **Why it's notable**: With 502 stars today, OpenBB is gaining traction as the infrastructure layer for financial data in the AI era. It bridges the gap between data engineers and end users (analysts, quants, AI agents) by providing a single integration point that serves multiple consumption patterns. The platform's positioning as the data backbone for AI copilots and research tools makes it particularly relevant as financial institutions adopt AI-driven workflows.
+
+---
+
+### OpenBB - 面向分析师、量化研究员和 AI 代理的开源金融数据平台
+
+* **功能介绍**: OpenBB 提供统一的数据集成层,将专有、授权和公共金融数据源整合到单一的 Python 平台中。采用"一次连接,随处使用"的架构,将数据暴露给 Python 环境、Excel、通过 MCP 服务器的 AI 代理以及 REST API。
+
+* **主要特点**:
+  * 提供简洁的 Python SDK (`pip install openbb`) 用于访问金融数据
+  * FastAPI 后端服务器,可与下游应用集成
+  * 原生集成 OpenBB Workspace(企业级可视化和 AI 代理 UI)
+  * 通过标准化接口支持多个数据提供商和数据源
+  * 命令行工具支持
+  * AGPLv3 开源许可
+
+* **为何值得关注**: OpenBB 今日获得 502 星标,正成为 AI 时代金融数据基础设施层的热门选择。它通过提供单一集成点来服务多种消费模式,在数据工程师和最终用户(分析师、量化研究员、AI 代理)之间架起桥梁。该平台定位为 AI 副驾驶和研究工具的数据支柱,在金融机构采用 AI 驱动工作流程的背景下尤其具有现实意义。
+
+**[View Repository / 查看仓库](https://github.com/OpenBB-finance/OpenBB)**
+
+### Codex Plugin for Claude Code - Integrate OpenAI Codex into Your Claude Code Workflow
+
+**What it does:**
+A Claude Code plugin that brings OpenAI Codex capabilities directly into your existing Claude Code workflow, enabling code reviews and task delegation without switching tools.
+
+**Key features:**
+* Multiple review modes: standard code review (`/codex:review`) and adversarial review (`/codex:adversarial-review`) that challenges design decisions
+* Task delegation system (`/codex:rescue`) for investigating bugs, applying fixes, or continuing previous work
+* Background job management with status tracking, result retrieval, and cancellation
+* Optional review gate that automatically validates Claude's responses before execution
+* Seamless integration with local Codex CLI - uses your existing authentication and configuration
+* Support for different models (including GPT-5.4-mini and Spark) and reasoning effort levels
+
+**Why it's notable:**
+This plugin bridges two powerful AI coding assistants, allowing developers to leverage Codex's specialized code review and problem-solving capabilities while staying in their Claude Code environment. With nearly 3,000 stars, it's gaining traction as a practical solution for teams already invested in Claude Code who want to add Codex's strengths without workflow disruption. The background job system and steerable adversarial reviews are particularly innovative, enabling pressure-testing of architectural decisions and long-running investigations without blocking your main workflow.
+
+---
+
+### Codex Plugin for Claude Code - 在 Claude Code 中集成 OpenAI Codex
+
+**功能介绍:**
+这是一个 Claude Code 插件,可将 OpenAI Codex 的功能直接集成到现有的 Claude Code 工作流程中,实现代码审查和任务委派,无需切换工具。
+
+**主要特点:**
+* 多种审查模式:标准代码审查(`/codex:review`)和对抗性审查(`/codex:adversarial-review`),后者会质疑设计决策
+* 任务委派系统(`/codex:rescue`)用于调查 bug、应用修复或继续之前的工作
+* 后台任务管理,支持状态跟踪、结果检索和取消操作
+* 可选的审查门控,在执行前自动验证 Claude 的响应
+* 与本地 Codex CLI 无缝集成 - 使用现有的身份验证和配置
+* 支持不同模型(包括 GPT-5.4-mini 和 Spark)和推理强度级别
+
+**为何值得关注:**
+该插件连接了两个强大的 AI 编码助手,让开发者能够在 Claude Code 环境中利用 Codex 专业的代码审查和问题解决能力。凭借近 3000 个星标,它正成为已投资 Claude Code 团队的实用解决方案,可在不中断工作流程的情况下增强 Codex 的优势。后台任务系统和可控的对抗性审查尤其创新,能够对架构决策进行压力测试和长时间调查,而不会阻塞主工作流程。
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### G0DM0D3 - Liberated Multi-Model AI Chat Interface for Red Teaming and Cognition Research
+
+* **What it does**: A privacy-first, open-source chat interface that connects to 50+ AI models via OpenRouter, featuring advanced prompt engineering modes like GODMODE CLASSIC (5 parallel model races) and ULTRAPLINIAN (multi-model evaluation across 51 models with composite scoring)
+
+* **Key features**: 
+  - Parseltongue input perturbation engine with 33 obfuscation techniques for red-teaming research
+  - AutoTune context-adaptive parameter engine that learns from user feedback
+  - Single-file deployment (one `index.html`) with zero dependencies or build steps
+  - Complete privacy: API keys stay in browser, no login required, opt-out telemetry
+  - Semantic Transformation Modules for real-time output normalization
+
+* **Why it's notable**: Pushes boundaries of post-training layer manipulation for AI research while maintaining radical transparency (AGPL-3.0 license). Built for hackers and researchers who need unfiltered AI interaction without corporate guardrails. The single-file architecture and 2,286 stars demonstrate strong community interest in AI liberation tools.
+
+---
+
+### G0DM0D3 - 解放的多模型 AI 聊天界面，用于红队测试和认知研究
+
+* **功能介绍**: 一个隐私优先的开源聊天界面，通过 OpenRouter 连接 50+ AI 模型，具有高级提示工程模式，如 GODMODE CLASSIC(5 个模型并行竞赛)和 ULTRAPLINIAN(跨 51 个模型的多模型评估与综合评分)
+
+* **主要特点**:
+  - Parseltongue 输入扰动引擎，提供 33 种混淆技术用于红队研究
+  - AutoTune 上下文自适应参数引擎，可从用户反馈中学习
+  - 单文件部署(一个 `index.html`)，零依赖、无需构建步骤
+  - 完全隐私保护: API 密钥仅存储在浏览器中，无需登录，可选退出遥测
+  - 语义转换模块实现实时输出标准化
+
+* **为何值得关注**: 突破 AI 后训练层操作的边界，同时保持彻底透明(AGPL-3.0 许可证)。专为需要无过滤 AI 交互的黑客和研究人员打造，摆脱企业护栏限制。单文件架构和 2,286 星标展示了社区对 AI 解放工具的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/G0DM0D3)**
+
+### 🎬 Subscribe for more coding tips⬆️ Breakup😭 #funny #codingtips #comedyfilms #motivation #codeprep
+**Channel:** Coding avani
+
+* What the video covers: A humorous take on coding life, blending comedy with coding motivation and tips
+* Key topics discussed: Coding lifestyle, developer humor, motivational content for programmers, coding preparation
+* Why it's worth watching: Light-hearted entertainment that resonates with developers' experiences while providing coding encouragement; perfect for a quick break that combines laughs with tech culture
+
+### 🎬 订阅获取更多编程技巧⬆️ 分手😭 #搞笑 #编程技巧 #喜剧 #励志 #代码准备
+**频道:** Coding avani
+
+* 视频内容概述: 以幽默方式呈现编程生活,将喜剧与编程激励和技巧相结合
+* 主要话题: 编程生活方式、开发者幽默、程序员励志内容、编程准备
+* 为何值得观看: 轻松娱乐的内容能引起开发者共鸣,同时提供编程鼓励;适合快速休息时观看,将欢笑与科技文化完美融合
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-w4A69iyuog)**
+
+### 🎬 Claude Code Tutorial - Build Apps 10x Faster with AI
+**Channel:** Programming with Mosh
+
+* What the video covers: A comprehensive tutorial on using Claude Code (likely Claude's coding capabilities or a related tool) to accelerate application development through AI assistance
+* Key topics discussed: Practical techniques for leveraging AI in software development workflows, best practices for using Claude Code as a professional software engineer would, and strategies to achieve 10x productivity gains
+* Why it's worth watching: Mosh is known for high-quality programming tutorials, and this video promises to teach real-world AI-assisted development techniques that can dramatically speed up your coding workflow. Essential for developers looking to integrate AI tools into their daily practice effectively.
+
+### 🎬 Claude Code 教程 - 用 AI 让应用开发速度提升 10 倍
+**频道:** Programming with Mosh
+
+* 视频内容概述: 全面讲解如何使用 Claude Code(可能是 Claude 的编码功能或相关工具)通过 AI 辅助加速应用程序开发
+* 主要话题: 在软件开发工作流程中利用 AI 的实用技巧、像专业软件工程师一样使用 Claude Code 的最佳实践,以及实现 10 倍生产力提升的策略
+* 为何值得观看: Mosh 以高质量编程教程闻名,这个视频承诺教授真实世界的 AI 辅助开发技术,能够显著加快编码工作流程。对于希望有效地将 AI 工具整合到日常实践中的开发者来说必看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IuyVVtr1uhY)**
 
