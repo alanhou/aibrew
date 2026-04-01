@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 01, 2026"
 date: 2026-04-01
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -458,100 +458,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### Claude Code - 泄露源码揭示先进的 AI 编程架构
-
-* **功能介绍**: 这是 Anthropic 的 Claude Code CLI 工具的纯净室 Rust 重新实现版本,创建于原始 TypeScript 源代码通过 npm sourcemap 文件意外泄露之后。该仓库记录了泄露事件并提供了 Claude Code 内部架构的技术分析。
-
-* **主要特点**: 分析揭示了隐藏功能,包括 BUDDY(电子宠物系统,拥有 18 个物种和抽卡机制)、KAIROS(始终在线的主动助手模式)、ULTRAPLAN(30 分钟远程规划会话),以及包含 40 多个工具和名为"dream"的后台内存整合引擎的复杂多智能体编排系统。
-
-* **为何值得关注**: 这是一起重大安全事件,Anthropic 通过 npm 包中的 sourcemap 文件意外暴露了整个专有代码库。泄露揭示了以前未知的功能和内部系统,而该仓库展示了类似 Phoenix Technologies 诉 IBM BIOS 案例的纯净室逆向工程原则。Rust 重新实现展示了如何在不复制源代码的情况下提取和重新实现行为规范。
-
-**[View Repository / 查看仓库](https://github.com/Kuberwastaken/claude-code)**
-
-### 🎬 Static vs Dynamic Variable 🤯🙌| Variables in Java
-
-**Channel:** DevNest Code
-
-* What the video covers: A quick comparison between static and dynamic variables in Java, explaining their fundamental differences and use cases
-* Key topics discussed: Static variable behavior (class-level scope, shared across instances), dynamic/instance variable characteristics (object-specific, independent per instance), and practical implications in Java programming
-* Why it's worth watching: Perfect bite-sized explanation for Java beginners to grasp a core OOP concept that often causes confusion; the short format makes it easy to understand the distinction quickly
-
-### 🎬 Java中的静态变量与动态变量 🤯🙌
-
-**频道:** DevNest Code
-
-* 视频内容概述: 快速对比Java中静态变量和动态变量的区别,解释它们的基本特性和使用场景
-* 主要话题: 静态变量的行为特点(类级别作用域、实例间共享)、动态/实例变量的特征(对象特定、每个实例独立)以及在Java编程中的实际应用
-* 为何值得观看: 适合Java初学者的精简讲解,帮助快速理解这个常见的面向对象编程核心概念;短视频形式让知识点更易消化吸收
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PqsdeTMs_k8)**
-
-### 🎬 Subscribe for more coding tips⬆️ Breakup😭 #funny #codingtips #comedyfilms #motivation #codeprep
-**Channel:** Coding avani
-
-* What the video covers: A humorous take on coding life, blending comedy with coding motivation and tips
-* Key topics discussed: Coding lifestyle, developer humor, motivational content for programmers, coding preparation
-* Why it's worth watching: Light-hearted entertainment that resonates with developers' experiences while providing coding encouragement; perfect for a quick break that combines laughs with tech culture
-
-### 🎬 订阅获取更多编程技巧⬆️ 分手😭 #搞笑 #编程技巧 #喜剧 #励志 #代码准备
-**频道:** Coding avani
-
-* 视频内容概述: 以幽默方式呈现编程生活,将喜剧与编程激励和技巧相结合
-* 主要话题: 编程生活方式、开发者幽默、程序员励志内容、编程准备
-* 为何值得观看: 轻松娱乐的内容能引起开发者共鸣,同时提供编程鼓励;适合快速休息时观看,将欢笑与科技文化完美融合
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-w4A69iyuog)**
-
-### Claude Code Unpacked: Understanding the AI Coding Assistant's Inner Workings
-
-* **Agent Loop Architecture**: Claude Code operates through a sophisticated agent loop that processes user messages and executes actions iteratively
-* **Extensive Tool Arsenal**: The system utilizes over 40 specialized tools to interact with codebases, file systems, and development environments
-* **Multi-Agent Orchestration**: Multiple AI agents work together in coordination to handle complex coding tasks and workflows
-* **Unreleased Features**: The analysis reveals upcoming capabilities and features that are built into the source code but not yet publicly available
-* **Source Code Transparency**: The breakdown provides direct insights by examining Claude Code's actual implementation and architecture
-
-### Claude Code 深度解析:AI 编程助手的内部运作机制
-
-* **智能体循环架构**: Claude Code 通过复杂的智能体循环来处理用户消息并迭代执行操作
-* **丰富的工具集**: 系统配备超过 40 种专用工具,用于与代码库、文件系统和开发环境进行交互
-* **多智能体协同**: 多个 AI 智能体协同工作,共同处理复杂的编程任务和工作流程
-* **未发布功能**: 分析揭示了源代码中已构建但尚未公开发布的即将推出的功能
-* **源码透明度**: 通过直接检查 Claude Code 的实际实现和架构,提供深入的技术洞察
-
-**[Read Original / 阅读原文](https://ccunpacked.dev/)**
-
-### The Claude Code Source Leak: Key Findings
-
-* **Anti-distillation mechanisms**: Claude Code injects fake tool definitions and summarizes reasoning chains to prevent competitors from training models on its API traffic, though these protections are easily bypassed
-* **Undercover mode**: AI actively hides that it's AI-generated when used in external repos, stripping mentions of "Claude Code" and internal codenames with no way to disable it
-* **Frustration detection via regex**: Uses simple regex patterns to detect user swearing and frustration instead of LLM inference calls
-* **Native client attestation**: Implements DRM-like API verification at the HTTP transport level (below JavaScript runtime) to block third-party tools from using Claude APIs
-* **Massive API waste**: A bug caused 250,000 wasted API calls per day from repeated auto-compaction failures before being fixed with a 3-line code change
-* **KAIROS autonomous agent**: Unreleased feature with background daemon workers, GitHub webhooks, daily memory logs, and cron-scheduled refreshes every 5 minutes
-* **April Fools' companion system**: Tamagotchi-style virtual creatures with 18 species, rarity tiers, and RPG stats, likely launching April 1st
-
-### Claude Code 源代码泄露：关键发现
-
-* **反蒸馏机制**：Claude Code 注入虚假工具定义并总结推理链，以防止竞争对手从其 API 流量中训练模型，但这些保护措施很容易被绕过
-* **隐身模式**：AI 在外部代码库中主动隐藏其 AI 生成的身份，删除"Claude Code"和内部代号的提及，且无法禁用
-* **正则表达式检测挫败感**：使用简单的正则表达式模式检测用户咒骂和挫败感，而不是调用 LLM 推理
-* **原生客户端认证**：在 HTTP 传输层（JavaScript 运行时之下）实现类似 DRM 的 API 验证，以阻止第三方工具使用 Claude API
-* **大量 API 浪费**：一个 bug 导致每天浪费 25 万次 API 调用，源于重复的自动压缩失败，最终用 3 行代码修复
-* **KAIROS 自主代理**：未发布的功能，包含后台守护进程、GitHub webhook、每日内存日志和每 5 分钟的定时刷新
-* **愚人节伙伴系统**：电子宠物风格的虚拟生物，拥有 18 个物种、稀有度等级和 RPG 属性，可能在 4 月 1 日推出
-
-**[Read Original / 阅读原文](https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/)**
-
-<!-- [Title-Only] -->
-### Neanderthals survived on a knife's edge for 350k years
-
-* This article likely explores new research revealing that Neanderthals lived in precarious conditions for approximately 350,000 years, possibly facing environmental pressures, resource scarcity, or population bottlenecks that kept them on the brink of extinction throughout much of their existence.
-* It's interesting because it challenges our understanding of Neanderthal resilience and adaptability, suggesting they were more vulnerable than previously thought, yet somehow managed to persist for hundreds of thousands of years despite constant threats to their survival.
-
-**Note:** This introduction is based solely on the article title, as the full content was not available.
-
----
-
 ### 尼安德特人在生存边缘挣扎了35万年
 
 * 这篇文章可能探讨了新的研究发现,揭示尼安德特人在大约35万年的时间里一直生活在危险的边缘状态,可能面临环境压力、资源匮乏或人口瓶颈,使他们在存在的大部分时间里都处于灭绝的边缘。
@@ -646,4 +552,114 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合理解算法效率概念,学习递归排序方法,并体会为什么某些算法在生产环境中应该避免使用——对计算机科学学生和对算法分析感兴趣的开发者来说是很好的教育内容
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=LXRO2eMnI7w)**
+
+### Claude Code Unpacked: Understanding the AI Coding Assistant's Inner Workings
+
+* **Agent Loop Architecture**: Claude Code operates through a sophisticated agent loop that processes user messages and executes actions iteratively
+* **Extensive Tool Arsenal**: The system utilizes over 40 specialized tools to interact with codebases, file systems, and development environments
+* **Multi-Agent Orchestration**: Multiple AI agents work together in coordination to handle complex coding tasks and workflows
+* **Unreleased Features**: The analysis reveals upcoming capabilities and features that are built into the system but not yet publicly available
+* **Source Code Transparency**: All insights are derived directly from examining Claude Code's actual source code implementation
+
+### Claude Code 深度解析:AI 编程助手的内部运作机制
+
+* **智能体循环架构**: Claude Code 通过复杂的智能体循环系统处理用户消息并迭代执行操作
+* **丰富的工具集**: 系统配备超过 40 种专业工具,用于与代码库、文件系统和开发环境交互
+* **多智能体协同**: 多个 AI 智能体协同工作,共同处理复杂的编程任务和工作流程
+* **未发布功能**: 分析揭示了系统中已构建但尚未公开发布的即将推出的功能
+* **源码透明度**: 所有洞察均直接来源于对 Claude Code 实际源代码实现的深入分析
+
+**[Read Original / 阅读原文](https://ccunpacked.dev/)**
+
+### CERN Introduces Superconducting Karts for LHC Tunnel Operations
+
+* CERN engineers developed superconducting karts to replace bicycles for navigating the 27-km Large Hadron Collider underground tunnel during Long Shutdown 3 (LS3) starting this summer
+* Each kart features 64 superconducting engines that use the Meissner effect for levitation, enabling high-speed travel through tunnels when cooled below critical temperatures
+* The karts will support the transformation of the LHC into the High-Luminosity LHC, allowing engineers and technicians to quickly access areas requiring improvements
+* Safety equipment called SHELLS (Safety and Health Equipment for Long and Limited Stays) will be issued to all drivers during testing and operations
+* CERN's Knowledge Transfer Group is exploring commercial applications with European startup Quantum Mushroom for aerospace and anti-gravity vehicle technology
+* The project originated from a collaboration between CERN engineers and onsite nursery school children, demonstrating CERN's commitment to inspiring future generations in science
+
+### CERN推出超导卡丁车用于大型强子对撞机隧道作业
+
+* CERN工程师开发了超导卡丁车,用于在今年夏季开始的长期停机3期(LS3)期间替代自行车,在27公里长的大型强子对撞机地下隧道中穿行
+* 每辆卡丁车配备64个超导引擎,当冷却至临界温度以下时利用迈斯纳效应实现悬浮,能够在隧道中高速行驶
+* 这些卡丁车将支持大型强子对撞机向高亮度大型强子对撞机的转型升级,使工程师和技术人员能够快速到达需要改进的区域
+* 所有驾驶员将配备名为SHELLS(长期和有限停留安全健康设备)的安全装备用于测试和操作
+* CERN的知识转移小组正在与欧洲初创公司Quantum Mushroom探讨航空航天和下一代反重力车辆技术的商业应用
+* 该项目源于CERN工程师与现场幼儿园儿童的合作,展示了CERN激励未来一代投身科学的承诺
+
+**[Read Original / 阅读原文](https://home.cern/news/news/engineering/cern-levels-new-superconducting-karts)**
+
+### REWE Shopping Automation CLI Tool
+
+* **korb** is a Haskell-based CLI that programmatically interacts with REWE APIs to create shopping baskets and order groceries for pickup
+* Designed for AI agent consumption with JSON output, enabling automated grocery shopping workflows
+* End-to-end flow: Siri shortcut adds items to shopping list → AI agent uses korb to search products and build basket → user reviews and confirms → agent places order and updates list
+* Key feature: generates personalized shopping templates from order history using `korb orders history` to identify frequently purchased items
+* Supports product search by name/EAN, favorites management, basket operations, timeslot selection, and order placement/cancellation
+* Includes formal verification using Lean 4 with mathematically proven properties for the suggestion engine, validated through differential random testing
+* Installation via binary download or source build (requires GHC 9.12+, Cabal, and extracted REWE mTLS certificates)
+* Provides reverse-engineered OpenAPI specs for REWE mobile APIs
+
+### REWE 购物自动化命令行工具
+
+* **korb** 是一个基于 Haskell 的命令行工具,通过编程方式调用 REWE API 创建购物篮并下单自提
+* 专为 AI 代理设计,输出 JSON 格式,支持自动化购物流程
+* 端到端流程:Siri 快捷指令添加商品到购物清单 → AI 代理使用 korb 搜索商品并构建购物篮 → 用户审核确认 → 代理下单并更新清单
+* 核心功能:通过 `korb orders history` 从历史订单生成个性化购物模板,识别常购商品
+* 支持按名称/条形码搜索商品、收藏夹管理、购物篮操作、时间段选择、订单下单/取消等功能
+* 包含使用 Lean 4 的形式化验证,为建议引擎提供数学证明的属性保证,通过差异随机测试验证
+* 可通过二进制文件下载或源码构建安装(需要 GHC 9.12+、Cabal 和提取的 REWE mTLS 证书)
+* 提供逆向工程的 REWE 移动端 API 的 OpenAPI 规范文档
+
+**[Read Original / 阅读原文](https://github.com/yannick-cw/korb)**
+
+### claude-code-best/claude-code - Reverse-Engineered Claude Code CLI with Full TypeScript Support
+
+* A decompiled and restored version of Anthropic's official Claude Code CLI tool, making it runnable with Bun/Node and fully type-safe
+* Key features include complete tool ecosystem (40+ tools), multi-provider API support (Anthropic/AWS/GCP/Azure), MCP integration, plugin system, permission management, and session recovery
+* Notable for achieving enterprise-grade reliability with 5000+ stars, providing a fully functional alternative to the official CLI with comprehensive documentation and rapid updates powered by Claude Opus
+
+### claude-code-best/claude-code - Claude Code CLI 逆向还原可执行版
+
+* 功能介绍:对 Anthropic 官方 Claude Code CLI 工具进行反编译还原,实现 Bun/Node 可直接运行的完整 TypeScript 版本
+* 主要特点:包含 40+ 工具集成、多云 API 支持(Anthropic/AWS/GCP/Azure)、MCP 服务管理、插件系统、权限控制、会话恢复等完整工程化能力
+* 为何值得关注:获得 5000+ stars,提供企业级可靠性的官方 CLI 替代方案,配有详细文档站点,由 Claude Opus 持续优化更新
+
+**[View Repository / 查看仓库](https://github.com/claude-code-best/claude-code)**
+
+### 🎬 Subscribe for more coding tips⬆️ Breakup😭 #funny #codingtips #comedyfilms #motivation #codeprep
+**Channel:** Coding avani
+
+* What the video covers: A humorous take on coding life, blending comedy with coding motivation and tips
+* Key topics discussed: Coding lifestyle, developer humor, motivational content for programmers, coding preparation
+* Why it's worth watching: Light-hearted entertainment that resonates with developers' experiences while providing coding encouragement; perfect for a quick break that combines laughs with tech culture
+
+### 🎬 订阅获取更多编程技巧⬆️ 分手😭 #搞笑 #编程技巧 #喜剧 #励志 #代码准备
+**频道:** Coding avani
+
+* 视频内容概述: 以幽默方式呈现编程生活,将喜剧与编程激励和技巧相结合
+* 主要话题: 编程生活方式、开发者幽默、程序员励志内容、编程准备
+* 为何值得观看: 轻松娱乐的内容能引起开发者共鸣,同时提供编程鼓励;适合快速休息时观看,将欢笑与科技文化完美融合
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-w4A69iyuog)**
+
+### 🎬 4 Claude Code GitHub Repo
+
+**Channel:** AI adventurer
+
+* What the video covers: Explores a GitHub repository that enhances Claude's coding capabilities with structured workflows and "superpowers"
+* Key topics discussed: Forced structured workflows including planning, brainstorming, Test-Driven Development (TDD), and systematic code development approaches
+* Why it's worth watching: Learn how to leverage Claude more effectively for software development by implementing structured methodologies that improve code quality and development process
+
+### 🎬 4 个 Claude 代码 GitHub 仓库
+
+**频道:** AI adventurer
+
+* 视频内容概述: 探索一个增强 Claude 编码能力的 GitHub 仓库，提供结构化工作流程和"超能力"功能
+* 主要话题: 强制性结构化工作流程，包括规划、头脑风暴、测试驱动开发（TDD）以及系统化的代码开发方法
+* 为何值得观看: 学习如何通过实施结构化方法论更有效地利用 Claude 进行软件开发，从而提高代码质量和开发流程效率
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AWBsGEuVhuE)**
 
