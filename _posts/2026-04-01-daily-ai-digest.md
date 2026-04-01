@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 01, 2026"
 date: 2026-04-01
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -390,102 +390,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * Why it's worth watching: Dylan Patel, a renowned semiconductor analyst, provides insider perspective on one of the most significant tech competitions of our time. The discussion reveals how close Huawei came to disrupting NVIDIA's near-monopoly and what this means for the future of AI infrastructure and US-China tech rivalry.
 
 ---
-
-### 🎬 华为差点击败英伟达 - Dylan Patel
-**频道:** Dwarkesh Patel
-
-* 视频内容概述: 深入分析华为在AI芯片市场挑战英伟达的雄心壮志,探讨这家中国科技巨头在遭遇重大阻碍之前,距离挑战英伟达的主导地位有多近。
-
-* 主要话题: 华为的芯片发展战略、AI加速器的技术能力与创新、美国制裁和出口管制对华为半导体野心的影响、华为芯片与英伟达GPU的对比分析,以及AI硬件竞赛的更广泛地缘政治影响。
-
-* 为何值得观看: 知名半导体分析师Dylan Patel提供了关于当今最重要科技竞争之一的内部视角。讨论揭示了华为距离打破英伟达近乎垄断地位有多近,以及这对AI基础设施和中美科技竞争未来的意义。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=x21Sac_RnyE)**
-
-### 🎬 Learn coding like a game #coding #development #python
-**Channel:** SetupsAI
-
-* What the video covers: An approach to learning programming through gamification techniques, specifically focusing on Python development
-* Key topics discussed: Gamified learning methods, Python programming fundamentals, making coding more engaging and accessible for beginners
-* Why it's worth watching: Offers a fresh perspective on learning to code by treating it as an interactive game rather than traditional study, potentially making the learning process more enjoyable and effective for newcomers to programming
-
-### 🎬 像玩游戏一样学编程 #coding #development #python
-**频道:** SetupsAI
-
-* 视频内容概述: 通过游戏化技巧学习编程的方法,特别聚焦于 Python 开发
-* 主要话题: 游戏化学习方法、Python 编程基础、让编程学习更有趣和易于上手
-* 为何值得观看: 提供了一种全新的编程学习视角,将其视为互动游戏而非传统学习方式,让编程新手的学习过程更加愉快和高效
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SV1NOIgBA0)**
-
-### 🎬 How to use Claude Code FREE Forever | STOP Paying $200/m
-**Channel:** Website Learners
-
-* What the video covers: A tutorial demonstrating how to access and use Claude's coding capabilities without paying the $200/month subscription fee
-* Key topics discussed: Free alternatives to Claude Code, setup instructions, cost-saving strategies for developers, and practical implementation methods
-* Why it's worth watching: Perfect for developers and tech enthusiasts looking to leverage AI coding assistants while staying within budget. The video offers actionable steps to access premium AI coding features without the hefty monthly cost, making advanced AI tools more accessible to individual developers and small teams.
-
-### 🎬 如何永久免费使用 Claude Code | 停止支付每月 $200
-**频道:** Website Learners
-
-* 视频内容概述: 教程展示如何在不支付每月 $200 订阅费的情况下访问和使用 Claude 的编码功能
-* 主要话题: Claude Code 的免费替代方案、设置说明、开发者省钱策略以及实际实施方法
-* 为何值得观看: 非常适合希望在预算内利用 AI 编码助手的开发者和技术爱好者。视频提供了可操作的步骤,帮助用户在无需支付高额月费的情况下访问高级 AI 编码功能,使个人开发者和小型团队更容易获得先进的 AI 工具。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AjoD5GqosTk)**
-
-### 🎬 Stooge Sort
-**Channel:** onjsdev
-
-* What the video covers: An exploration of the Stooge Sort algorithm, one of the most inefficient sorting algorithms in computer science
-* Key topics discussed: The recursive sorting mechanism that works by sorting the first 2/3 of an array, then the last 2/3, and finally the first 2/3 again; the algorithm's computational complexity and why it's impractical for real-world use
-* Why it's worth watching: Perfect for understanding algorithm efficiency concepts, learning about recursive sorting approaches, and appreciating why certain algorithms are avoided in production code—great educational content for computer science students and developers interested in algorithm analysis
-
-### 🎬 Stooge Sort (傻瓜排序)
-**频道:** onjsdev
-
-* 视频内容概述: 深入讲解 Stooge Sort 算法,这是计算机科学中效率最低的排序算法之一
-* 主要话题: 递归排序机制——先排序数组的前 2/3,再排序后 2/3,最后再次排序前 2/3;算法的计算复杂度以及为何不适用于实际应用
-* 为何值得观看: 非常适合理解算法效率概念,学习递归排序方法,并体会为什么某些算法在生产环境中应该避免使用——对计算机科学学生和对算法分析感兴趣的开发者来说是很好的教学内容
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LXRO2eMnI7w)**
-
-### The Claude Code Source Leak: Key Findings
-
-* **Anti-distillation mechanisms**: Claude Code injects fake tool definitions and summarizes reasoning chains to prevent competitors from training models on its API traffic, though these protections are easily bypassed
-* **Undercover mode**: AI actively hides that it's AI-generated when used in external repos, with no way to disable this behavior - commits appear human-authored
-* **Frustration detection via regex**: Uses simple regex patterns to detect user frustration (profanity, complaints) rather than LLM inference for speed and cost efficiency
-* **Native client attestation**: Implements DRM-like cryptographic verification at the HTTP transport level (below JavaScript runtime) to prevent third-party tools from using Claude Code APIs
-* **Massive API waste**: A bug caused 250,000 wasted API calls per day from repeated auto-compaction failures, fixed with a simple 3-failure limit
-* **KAIROS autonomous agent**: Unreleased feature with background daemon workers, GitHub webhooks, daily memory logs, and cron-scheduled refreshes every 5 minutes
-* **April Fools' companion system**: Tamagotchi-style virtual creatures with 18 species, rarity tiers, and RPG stats, likely launching April 1st
-* **Second leak in a week**: Follows the model spec leak days earlier, raising questions about internal security practices
-
-### Claude Code 源代码泄露：关键发现
-
-* **反蒸馏机制**：Claude Code 注入虚假工具定义并总结推理链，以防止竞争对手从其 API 流量中训练模型，但这些保护措施很容易被绕过
-* **隐身模式**：AI 在外部代码库中主动隐藏其 AI 生成的身份，且无法禁用此行为 - 提交记录看起来像人类编写
-* **正则表达式检测挫败感**：使用简单的正则表达式模式检测用户挫败感（脏话、抱怨），而非 LLM 推理，以提高速度和降低成本
-* **原生客户端认证**：在 HTTP 传输层（JavaScript 运行时之下）实现类似 DRM 的加密验证，防止第三方工具使用 Claude Code API
-* **大量 API 浪费**：一个 bug 导致每天浪费 25 万次 API 调用，源于重复的自动压缩失败，通过简单的 3 次失败限制修复
-* **KAIROS 自主代理**：未发布功能，包含后台守护进程、GitHub webhook、每日内存日志和每 5 分钟的定时刷新
-* **愚人节伙伴系统**：电子宠物风格的虚拟生物，拥有 18 个物种、稀有度等级和 RPG 属性，可能在 4 月 1 日推出
-* **一周内第二次泄露**：几天前刚发生模型规范泄露，引发对内部安全实践的质疑
-
-**[Read Original / 阅读原文](https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/)**
-
-<!-- [Title-Only] -->
-### TinyLoRA – Learning to Reason in 13 Parameters
-
-* Based on the title, this article likely presents a research paper exploring an extremely parameter-efficient approach to training language models for reasoning tasks. The "13 Parameters" suggests a remarkably minimal model size, which would be groundbreaking if it can achieve meaningful reasoning capabilities.
-* This is interesting because it challenges the conventional wisdom that larger models are necessary for complex reasoning. If successful, this approach could democratize AI by making sophisticated reasoning models accessible on resource-constrained devices, reduce computational costs dramatically, and open new research directions in model efficiency and compression techniques.
-
-### TinyLoRA – 用 13 个参数学习推理
-
-* 根据标题推测，这篇文章可能是一篇研究论文，探索了一种极其参数高效的方法来训练语言模型进行推理任务。"13 个参数"暗示了极小的模型规模，如果能实现有意义的推理能力，这将是突破性的进展。
-* 这项研究值得关注，因为它挑战了"更大的模型才能完成复杂推理"的传统观念。如果成功，这种方法可以通过在资源受限的设备上运行复杂推理模型来实现 AI 民主化，大幅降低计算成本，并为模型效率和压缩技术开辟新的研究方向。
-
----
 *Note: This introduction is based solely on the article title, as the full content could not be accessed.*
 
 **[Read Original / 阅读原文](https://arxiv.org/abs/2602.04118)**
@@ -597,4 +501,149 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 轻松娱乐的内容能引起开发者共鸣,同时提供编程鼓励;适合快速休息时观看,将欢笑与科技文化完美融合
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=-w4A69iyuog)**
+
+### Claude Code Unpacked: Understanding the AI Coding Assistant's Inner Workings
+
+* **Agent Loop Architecture**: Claude Code operates through a sophisticated agent loop that processes user messages and executes actions iteratively
+* **Extensive Tool Arsenal**: The system utilizes over 40 specialized tools to interact with codebases, file systems, and development environments
+* **Multi-Agent Orchestration**: Multiple AI agents work together in coordination to handle complex coding tasks and workflows
+* **Unreleased Features**: The analysis reveals upcoming capabilities and features that are built into the source code but not yet publicly available
+* **Source Code Transparency**: The breakdown provides direct insights by examining Claude Code's actual implementation and architecture
+
+### Claude Code 深度解析:AI 编程助手的内部运作机制
+
+* **智能体循环架构**: Claude Code 通过复杂的智能体循环来处理用户消息并迭代执行操作
+* **丰富的工具集**: 系统配备超过 40 种专用工具,用于与代码库、文件系统和开发环境进行交互
+* **多智能体协同**: 多个 AI 智能体协同工作,共同处理复杂的编程任务和工作流程
+* **未发布功能**: 分析揭示了源代码中已构建但尚未公开发布的即将推出的功能
+* **源码透明度**: 通过直接检查 Claude Code 的实际实现和架构,提供深入的技术洞察
+
+**[Read Original / 阅读原文](https://ccunpacked.dev/)**
+
+### The Claude Code Source Leak: Key Findings
+
+* **Anti-distillation mechanisms**: Claude Code injects fake tool definitions and summarizes reasoning chains to prevent competitors from training models on its API traffic, though these protections are easily bypassed
+* **Undercover mode**: AI actively hides that it's AI-generated when used in external repos, stripping mentions of "Claude Code" and internal codenames with no way to disable it
+* **Frustration detection via regex**: Uses simple regex patterns to detect user swearing and frustration instead of LLM inference calls
+* **Native client attestation**: Implements DRM-like API verification at the HTTP transport level (below JavaScript runtime) to block third-party tools from using Claude APIs
+* **Massive API waste**: A bug caused 250,000 wasted API calls per day from repeated auto-compaction failures before being fixed with a 3-line code change
+* **KAIROS autonomous agent**: Unreleased feature with background daemon workers, GitHub webhooks, daily memory logs, and cron-scheduled refreshes every 5 minutes
+* **April Fools' companion system**: Tamagotchi-style virtual creatures with 18 species, rarity tiers, and RPG stats, likely launching April 1st
+
+### Claude Code 源代码泄露：关键发现
+
+* **反蒸馏机制**：Claude Code 注入虚假工具定义并总结推理链，以防止竞争对手从其 API 流量中训练模型，但这些保护措施很容易被绕过
+* **隐身模式**：AI 在外部代码库中主动隐藏其 AI 生成的身份，删除"Claude Code"和内部代号的提及，且无法禁用
+* **正则表达式检测挫败感**：使用简单的正则表达式模式检测用户咒骂和挫败感，而不是调用 LLM 推理
+* **原生客户端认证**：在 HTTP 传输层（JavaScript 运行时之下）实现类似 DRM 的 API 验证，以阻止第三方工具使用 Claude API
+* **大量 API 浪费**：一个 bug 导致每天浪费 25 万次 API 调用，源于重复的自动压缩失败，最终用 3 行代码修复
+* **KAIROS 自主代理**：未发布的功能，包含后台守护进程、GitHub webhook、每日内存日志和每 5 分钟的定时刷新
+* **愚人节伙伴系统**：电子宠物风格的虚拟生物，拥有 18 个物种、稀有度等级和 RPG 属性，可能在 4 月 1 日推出
+
+**[Read Original / 阅读原文](https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/)**
+
+<!-- [Title-Only] -->
+### Neanderthals survived on a knife's edge for 350k years
+
+* This article likely explores new research revealing that Neanderthals lived in precarious conditions for approximately 350,000 years, possibly facing environmental pressures, resource scarcity, or population bottlenecks that kept them on the brink of extinction throughout much of their existence.
+* It's interesting because it challenges our understanding of Neanderthal resilience and adaptability, suggesting they were more vulnerable than previously thought, yet somehow managed to persist for hundreds of thousands of years despite constant threats to their survival.
+
+**Note:** This introduction is based solely on the article title, as the full content was not available.
+
+---
+
+### 尼安德特人在生存边缘挣扎了35万年
+
+* 这篇文章可能探讨了新的研究发现,揭示尼安德特人在大约35万年的时间里一直生活在危险的边缘状态,可能面临环境压力、资源匮乏或人口瓶颈,使他们在存在的大部分时间里都处于灭绝的边缘。
+* 这很有意思,因为它挑战了我们对尼安德特人韧性和适应能力的理解,表明他们比之前认为的更加脆弱,但不知何故,尽管生存受到持续威胁,他们仍然设法坚持了数十万年。
+
+**注意:** 此简介仅基于文章标题,因为无法获取完整内容。
+
+**[Read Original / 阅读原文](https://www.science.org/content/article/neanderthals-survived-knife-s-edge-350-000-years)**
+
+### 🎬 Huawei Was About to Beat NVIDIA - Dylan Patel
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An in-depth analysis of Huawei's ambitious attempt to compete with NVIDIA in the AI chip market, exploring how close the Chinese tech giant came to challenging NVIDIA's dominance before facing significant obstacles.
+
+* Key topics discussed: Huawei's chip development strategy, technical capabilities comparison with NVIDIA's GPUs, the impact of US sanctions and export controls on Huawei's semiconductor ambitions, China's domestic chip industry challenges, and the geopolitical implications of the AI hardware race.
+
+* Why it's worth watching: Dylan Patel, a renowned semiconductor analyst, provides insider perspective on one of the most significant tech competitions of our time. The discussion reveals the technical and political complexities behind AI chip development and offers insights into how close China came to achieving semiconductor independence in the AI era.
+
+---
+
+### 🎬 华为差点击败英伟达 - Dylan Patel
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深度分析华为在AI芯片市场挑战英伟达的雄心壮志,探讨这家中国科技巨头在遭遇重大阻碍前,距离挑战英伟达的市场主导地位有多近。
+
+* 主要话题: 华为的芯片研发策略、与英伟达GPU的技术能力对比、美国制裁和出口管制对华为半导体野心的影响、中国国内芯片产业面临的挑战,以及AI硬件竞赛的地缘政治影响。
+
+* 为何值得观看: 知名半导体分析师Dylan Patel提供了关于当今最重要科技竞争之一的内部视角。讨论揭示了AI芯片开发背后的技术和政治复杂性,并深入分析了中国在AI时代实现半导体独立的进程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=x21Sac_RnyE)**
+
+### 🎬 Learn coding like a game #coding #development #python
+**Channel:** SetupsAI
+
+* What the video covers: An approach to learning programming through gamification techniques, specifically focusing on Python development
+* Key topics discussed: Gamified learning methods, Python programming fundamentals, making coding more engaging and accessible for beginners
+* Why it's worth watching: Offers a fresh perspective on learning to code by treating it as an interactive game rather than traditional study, potentially making the learning process more enjoyable and effective for newcomers to programming
+
+### 🎬 像玩游戏一样学编程 #coding #development #python
+**频道:** SetupsAI
+
+* 视频内容概述: 通过游戏化技巧学习编程的方法,特别聚焦于 Python 开发
+* 主要话题: 游戏化学习方法、Python 编程基础、让编程学习更有趣和易于上手
+* 为何值得观看: 提供了一种全新的编程学习视角,将其视为互动游戏而非传统学习方式,让编程新手的学习过程更加愉快和高效
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SV1NOIgBA0)**
+
+### 🎬 How to use Claude Code FREE Forever | STOP Paying $200/m
+**Channel:** Website Learners
+
+* What the video covers: A tutorial demonstrating how to access and use Claude's coding capabilities without paying the $200/month subscription fee
+* Key topics discussed: Free alternatives to Claude Code, setup instructions, cost-saving strategies for developers, and practical implementation methods
+* Why it's worth watching: If you're looking to leverage AI-powered coding assistance without the hefty subscription cost, this guide provides actionable steps to access Claude's coding features for free, potentially saving $2,400+ annually
+
+### 🎬 如何永久免费使用 Claude Code | 停止支付每月 $200
+**频道:** Website Learners
+
+* 视频内容概述: 演示如何在不支付每月 $200 订阅费的情况下访问和使用 Claude 的编码功能
+* 主要话题: Claude Code 的免费替代方案、设置说明、开发者省钱策略以及实际实施方法
+* 为何值得观看: 如果你想利用 AI 驱动的编码辅助工具而不想支付高昂的订阅费用,本指南提供了免费访问 Claude 编码功能的可行步骤,每年可能节省 $2,400 以上
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AjoD5GqosTk)**
+
+### 🎬 Forget ChatGPT! Claude CoWork Will BLOW Your Mind!
+**Channel:** Ishan Sharma
+
+* What the video covers: An introduction to Claude CoWork, a new feature that enables autonomous task delegation and completion
+* Key topics discussed: The capabilities of Claude CoWork's autonomous work system, how it differs from traditional AI assistants like ChatGPT, and practical demonstrations of delegating tasks that Claude completes independently
+* Why it's worth watching: Learn about a significant AI advancement that moves beyond conversational AI to autonomous task execution, potentially transforming how you approach productivity and automation
+
+### 🎬 忘掉 ChatGPT!Claude CoWork 将彻底改变你的认知!
+**频道:** Ishan Sharma
+
+* 视频内容概述: 介绍 Claude CoWork 这一新功能,它允许用户委派任务给 Claude 并由其自主完成工作
+* 主要话题: Claude CoWork 的自主工作系统能力、与 ChatGPT 等传统 AI 助手的区别,以及委派任务后 Claude 独立完成工作的实际演示
+* 为何值得观看: 了解 AI 领域的重大进展——从对话式 AI 转向自主任务执行,这可能会彻底改变你处理生产力和自动化工作的方式
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SB_tKxkfjMk)**
+
+### 🎬 Stooge Sort
+**Channel:** onjsdev
+
+* What the video covers: An exploration of the Stooge Sort algorithm, one of the most inefficient sorting algorithms in computer science
+* Key topics discussed: The recursive sorting mechanism that works by sorting the first 2/3 of an array, then the last 2/3, and finally the first 2/3 again; the algorithm's computational complexity and why it's impractical for real-world use
+* Why it's worth watching: Perfect for understanding algorithm efficiency concepts, learning about recursive sorting approaches, and appreciating why certain algorithms are avoided in production code—great educational content for computer science students and developers interested in algorithm analysis
+
+### 🎬 Stooge Sort (笨蛋排序)
+**频道:** onjsdev
+
+* 视频内容概述: 深入讲解 Stooge Sort 算法,这是计算机科学中效率最低的排序算法之一
+* 主要话题: 递归排序机制——先排序数组的前 2/3,再排序后 2/3,最后再次排序前 2/3;算法的计算复杂度以及为何不适用于实际应用
+* 为何值得观看: 非常适合理解算法效率概念,学习递归排序方法,并体会为什么某些算法在生产环境中应该避免使用——对计算机科学学生和对算法分析感兴趣的开发者来说是很好的教育内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LXRO2eMnI7w)**
 
