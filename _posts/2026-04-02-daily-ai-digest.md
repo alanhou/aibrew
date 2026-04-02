@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 02, 2026"
 date: 2026-04-02
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -530,4 +530,123 @@ pin: false
 * 值得观看,特别是对于陷入"教程地狱"的开发者和学生 - 提供了如何弥合理论与实践差距的见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
+
+### Artemis II Launch Day: Historic Moon Mission Successfully Lifts Off
+
+* NASA's Artemis II mission launched at 6:35 p.m. EDT from Kennedy Space Center's Launch Complex 39B, carrying four astronauts on humanity's first crewed deep space mission in over 50 years
+* The crew includes NASA astronauts Reid Wiseman, Victor Glover, Christina Koch, and Canadian Space Agency astronaut Jeremy Hansen aboard the Orion spacecraft named "Integrity"
+* The Space Launch System (SLS) rocket generated 8.8 million pounds of thrust at liftoff, with twin solid rocket boosters providing over 75% of initial power
+* Key milestones achieved: solid rocket booster separation at 2 minutes, core stage separation at 8 minutes, and successful deployment of Orion's four solar array wings providing continuous power
+* The approximately 10-day mission will test critical systems for future lunar exploration and eventual Mars missions, with upcoming maneuvers including proximity operations demonstration and orbit-raising burns
+* Live coverage continues on NASA's YouTube channel with 24/7 updates throughout the mission
+
+### Artemis II 发射日:历史性登月任务成功升空
+
+* 美国宇航局 Artemis II 任务于美国东部时间下午 6:35 从肯尼迪航天中心 39B 发射场成功发射,搭载四名宇航员执行人类 50 多年来首次载人深空任务
+* 机组人员包括美国宇航局宇航员 Reid Wiseman、Victor Glover、Christina Koch 和加拿大航天局宇航员 Jeremy Hansen,他们乘坐名为"Integrity"(正直号)的猎户座飞船
+* 太空发射系统(SLS)火箭在升空时产生 880 万磅推力,双固体火箭助推器提供超过 75% 的初始动力
+* 已完成的关键里程碑:2 分钟时固体火箭助推器分离,8 分钟时核心级分离,以及猎户座四个太阳能电池板翼成功展开提供持续电力
+* 这次约 10 天的任务将测试未来月球探索和最终火星任务的关键系统,即将进行的操作包括近距离操作演示和轨道提升燃烧
+* NASA YouTube 频道提供 24/7 全程直播,持续更新任务进展
+
+**[Read Original / 阅读原文](https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/)**
+
+<!-- [Title-Only] -->
+### A new C++ back end for ocamlc
+
+Based on the title alone, this article likely covers:
+* A proposed or implemented enhancement to the OCaml compiler (`ocamlc`) that adds a new C++ code generation backend
+* Technical details about how OCaml code could be compiled to C++ instead of (or in addition to) the existing bytecode or native code backends
+* Potential benefits such as improved interoperability with C++ codebases, access to C++ tooling and optimizations, or easier cross-platform compilation
+
+Why it might be interesting to readers:
+* Represents a significant architectural change to a mature functional programming language compiler
+* Could open new possibilities for OCaml adoption in C++-heavy environments
+* Demonstrates interesting compiler engineering techniques for bridging functional and object-oriented paradigms
+* May impact performance characteristics and deployment options for OCaml applications
+
+---
+
+### OCaml 编译器的新 C++ 后端
+
+根据标题推测的文章内容:
+* OCaml 编译器 (`ocamlc`) 的一个提议或已实现的增强功能,添加了新的 C++ 代码生成后端
+* 关于如何将 OCaml 代码编译为 C++ 的技术细节,而不是(或除了)现有的字节码或原生代码后端
+* 潜在优势,如改善与 C++ 代码库的互操作性、访问 C++ 工具链和优化,或更便捷的跨平台编译
+
+为何值得关注:
+* 代表了对成熟函数式编程语言编译器的重大架构变更
+* 可能为 OCaml 在 C++ 密集型环境中的采用开辟新的可能性
+* 展示了连接函数式和面向对象范式的有趣编译器工程技术
+* 可能影响 OCaml 应用程序的性能特征和部署选项
+
+**[Read Original / 阅读原文](https://github.com/ocaml/ocaml/pull/14701)**
+
+### DRAM Pricing Crisis Threatens Hobbyist Single-Board Computer Market
+
+* Raspberry Pi announced significant price increases across all LPDDR4 RAM models, with the 16GB Pi 5 now reaching $299.99
+* LPDDR chips now account for the majority of board costs, making hobbyist SBCs increasingly unaffordable for most users
+* The entire SBC industry is affected, with fewer new boards launched and mini PCs also rising to $250+ for 8GB models
+* Hobbyists are shifting toward older SBCs and microcontrollers as current-generation boards exceed typical project budgets under $100
+* The future of smaller SBC vendors remains uncertain, though Raspberry Pi's microcontroller and industrial segments may sustain them through the crisis
+
+### DRAM 价格飙升正在扼杀业余爱好者单板计算机市场
+
+* 树莓派宣布所有 LPDDR4 RAM 型号大幅涨价,16GB Pi 5 现已达到 299.99 美元
+* LPDDR 芯片现已占据主板成本的大部分,使业余爱好者级 SBC 对大多数用户来说越来越难以负担
+* 整个 SBC 行业都受到影响,新板发布数量减少,8GB 迷你电脑价格也上涨至 250 美元以上
+* 业余爱好者正在转向旧款 SBC 和微控制器,因为当前一代主板已超出 100 美元以下的典型项目预算
+* 小型 SBC 供应商的未来仍不确定,尽管树莓派的微控制器和工业领域可能帮助其度过危机
+
+**[Read Original / 阅读原文](https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/)**
+
+### Claw Code - Viral Open-Source AI Agent Harness Rewrite in Rust
+
+* **What it does**: A clean-room reimplementation of an AI coding agent harness system, originally ported to Python and now being rewritten in Rust for performance and memory safety. Provides tool orchestration, session management, plugin architecture, and an interactive CLI for AI-assisted development workflows.
+
+* **Key features**: Multi-language port (Python → Rust), API client with streaming support, MCP (Model Context Protocol) orchestration, extensible plugin system, slash commands, tool execution framework, interactive REPL with markdown rendering, and compatibility layer for editor integration. Built using oh-my-codex (OmX) and oh-my-opencode (OmO) AI workflow tools.
+
+* **Why it's notable**: Achieved the fastest GitHub growth in history—50K stars in 2 hours, now at 122K+ stars. Created as an emergency response when proprietary source code was leaked, the author completed a working Python port in hours under legal pressure. Featured in Wall Street Journal for extreme AI tool usage (25 billion tokens). Represents a significant case study in AI-assisted clean-room engineering and the ethics of reimplementation. Active collaboration with OmX creator for continued development.
+
+---
+
+### Claw Code - 史上增长最快的 AI 代码助手工具重写项目
+
+* **功能介绍**: 对 AI 编码代理工具系统的全新实现，最初移植到 Python，现正用 Rust 重写以提升性能和内存安全性。提供工具编排、会话管理、插件架构和交互式 CLI，用于 AI 辅助开发工作流。
+
+* **主要特点**: 多语言移植（Python → Rust）、支持流式传输的 API 客户端、MCP（模型上下文协议）编排、可扩展插件系统、斜杠命令、工具执行框架、带 Markdown 渲染的交互式 REPL，以及编辑器集成兼容层。使用 oh-my-codex (OmX) 和 oh-my-opencode (OmO) AI 工作流工具构建。
+
+* **为何值得关注**: 创造了 GitHub 史上最快增长记录——发布 2 小时内获得 5 万星标，目前已超 12.2 万星。在专有源代码泄露后，作者在法律压力下数小时内完成可用的 Python 移植版本作为应急响应。因极端 AI 工具使用量（250 亿 token）被《华尔街日报》专题报道。代表了 AI 辅助净室工程和重新实现伦理的重要案例研究。正与 OmX 创建者积极合作持续开发。
+
+**[View Repository / 查看仓库](https://github.com/ultraworkers/claw-code)**
+
+### claude-code-sourcemap - Reconstructed Source Code of Anthropic's Claude Code CLI
+
+* **What it does**: This repository contains reconstructed TypeScript source code from Anthropic's `@anthropic-ai/claude-code` npm package (version 2.1.88), extracted from source maps for research and educational purposes.
+
+* **Key features**: 
+  - 4,756 files reconstructed including 1,884 TypeScript/TSX source files
+  - Complete CLI implementation with 30+ tools (Bash, FileEdit, Grep, MCP integration)
+  - 40+ commands (commit, review, config)
+  - Multi-agent coordination system, AI assistant mode (KAIROS), voice interaction, and Vim mode
+  - Plugin and skills systems for extensibility
+
+* **Why it's notable**: Provides rare insight into the architecture of Anthropic's official Claude Code CLI tool, revealing how a production AI coding assistant is structured. With 7,396 stars, it's become a valuable resource for developers studying AI-powered development tools, though it's unofficial and intended strictly for research purposes.
+
+---
+
+### claude-code-sourcemap - Anthropic Claude Code CLI 源码重构版
+
+* **功能介绍**: 本仓库包含从 Anthropic 官方 `@anthropic-ai/claude-code` npm 包（版本 2.1.88）的 source map 中还原的 TypeScript 源代码，供研究和学习使用。
+
+* **主要特点**:
+  - 还原了 4,756 个文件，包括 1,884 个 TypeScript/TSX 源文件
+  - 完整的 CLI 实现，包含 30+ 种工具（Bash、文件编辑、Grep、MCP 集成等）
+  - 40+ 个命令（提交、审查、配置等）
+  - 多 Agent 协调系统、AI 助手模式（KAIROS）、语音交互和 Vim 模式
+  - 插件和技能系统，支持扩展功能
+
+* **为何值得关注**: 这是罕见的能够深入了解 Anthropic 官方 Claude Code CLI 工具架构的机会，展示了生产级 AI 编程助手的内部结构。凭借 7,396 个 star，它已成为开发者研究 AI 驱动开发工具的宝贵资源，尽管这是非官方版本且仅供研究使用。
+
+**[View Repository / 查看仓库](https://github.com/ChinaSiro/claude-code-sourcemap)**
 
