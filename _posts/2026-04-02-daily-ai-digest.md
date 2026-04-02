@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 02, 2026"
 date: 2026-04-02
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -680,4 +680,84 @@ pin: false
 * 为何值得观看: 适合想要系统学习AI编程助手的开发者,由经验丰富的技术教育者提供结构化的实用入门指导和真实案例
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=qYqIhX9hTQk)**
+
+### Bringing Clojure Programming to Enterprise: Key Insights
+
+* **Clojure Overview**: A dynamic functional programming language from the Lisp family that runs on the JVM, combining functional programming benefits with code-as-data semantics and powerful data manipulation libraries.
+
+* **Enterprise Adoption**: Despite being created in 2007 and initially seen as a "hobbyist" language, Clojure has gained significant enterprise traction since ThoughtWorks marked it as "adopted" in 2014.
+
+* **Code-as-Data Advantage**: Clojure's Lisp nature and EDN format enable seamless creation of Domain Specific Languages (DSLs) for expressing business logic declaratively, ideal for frequently evolving business rules.
+
+* **REPL-Driven Development**: The Read-Eval-Print Loop provides interactive programming capabilities, enabling rapid prototyping, instant code experimentation, and tight feedback loops that dramatically increase development efficiency.
+
+* **Java Interoperability**: Running on the JVM allows seamless integration with existing Java/SpringBoot stacks and access to all Java libraries, reducing adoption barriers in enterprise environments.
+
+* **Strategic Implementation**: Gradual adoption approach recommended - start with prototyping and limited use cases, then progressively integrate more complex features as team expertise grows.
+
+* **Learning Curve Consideration**: Functional and data-oriented approach differs significantly from traditional OOP, requiring progressive ramp-up strategy for teams without functional programming experience.
+
+* **Key Benefits Summary**: Functional data handling, natural DSL creation, REPL development environment, powerful schema libraries, and enterprise-standard Java integration make Clojure compelling for data-driven projects.
+
+### 将 Clojure 编程引入企业：核心洞察
+
+* **Clojure 概述**：一种运行在 JVM 上的动态函数式编程语言，属于 Lisp 家族，结合了函数式编程的优势、代码即数据的语义以及强大的数据处理库。
+
+* **企业采用情况**：尽管 Clojure 创建于 2007 年，最初被视为"爱好者"语言，但自 2014 年 ThoughtWorks 将其标记为"已采用"以来，已在企业中获得显著关注。
+
+* **代码即数据优势**：Clojure 的 Lisp 特性和 EDN 格式使其能够无缝创建领域特定语言（DSL），以声明方式表达业务逻辑，非常适合频繁变化的业务规则。
+
+* **REPL 驱动开发**：读取-求值-打印循环提供交互式编程能力，支持快速原型开发、即时代码实验和紧密的反馈循环，显著提高开发效率。
+
+* **Java 互操作性**：运行在 JVM 上可与现有 Java/SpringBoot 技术栈无缝集成，并访问所有 Java 库，降低企业环境中的采用门槛。
+
+* **战略实施方法**：建议采用渐进式采用策略——从原型开发和有限用例开始，随着团队专业知识的增长逐步集成更复杂的功能。
+
+* **学习曲线考量**：函数式和面向数据的方法与传统面向对象编程差异显著，对于没有函数式编程经验的团队需要采用渐进式提升策略。
+
+* **核心优势总结**：函数式数据处理、天然的 DSL 创建能力、REPL 开发环境、强大的模式库以及企业标准的 Java 集成，使 Clojure 成为数据驱动项目的理想选择。
+
+**[Read Original / 阅读原文](https://blogit.michelin.io/clojure-programming/)**
+
+### Email Obfuscation: What Works in 2026?
+
+* Plain text email addresses with no protection are harvested by 100% of spammers (0% blocked)
+* HTML entities block 95% of spammers despite being easily decoded by server-side libraries
+* Comment tags provide minimal protection but still block 98% of basic harvesters
+* SVG embedding, CSS display:none, and JavaScript-based techniques (concatenation, ROT18, custom conversion, AES encryption) all achieved 100% blocking rates against 318 tested spammers
+* Most effective approaches combine multiple techniques, splitting email addresses into segments with different protection methods
+* AES-256 encryption offers NSA-grade security but requires HTTPS/localhost and browser's SubtleCrypto API
+* Simple custom conversion functions are surprisingly effective since most harvesters can only access HTML source code, not execute JavaScript or access DOM
+* Accessibility must be maintained - use "display:none" rather than visual-only hiding techniques to support screen readers
+
+### 电子邮件混淆技术:2026年有效方法
+
+* 无保护的纯文本电子邮件地址会被100%的垃圾邮件发送者收集(0%拦截率)
+* HTML实体编码可拦截95%的垃圾邮件发送者,尽管服务器端库很容易解码
+* HTML注释标签提供最小保护,但仍能拦截98%的基础采集器
+* SVG嵌入、CSS display:none和基于JavaScript的技术(字符串拼接、ROT18、自定义转换、AES加密)对318个测试的垃圾邮件发送者均达到100%拦截率
+* 最有效的方法是组合多种技术,将电子邮件地址分段并对每段使用不同的保护方法
+* AES-256加密提供NSA级别的安全性,但需要HTTPS/localhost环境和浏览器的SubtleCrypto API
+* 简单的自定义转换函数出奇有效,因为大多数采集器只能访问HTML源代码,无法执行JavaScript或访问DOM
+* 必须保持可访问性 - 使用"display:none"而非纯视觉隐藏技术以支持屏幕阅读器
+
+**[Read Original / 阅读原文](https://spencermortensen.com/articles/email-obfuscation/)**
+
+### Steam on Linux Surges Past 5% Market Share in March 2026
+
+* Linux gaming on Steam reached an all-time high of 5.33% market share in March 2026, more than doubling macOS's 2.35%
+* The dramatic 3.1% spike follows months of decline (3.5% in December 2025, dropping to 2.23% in February 2026)
+* The surge appears partially driven by Valve correcting Steam China survey data, with Simplified Chinese language use dropping 31.85%
+* Approximately 25% of Linux gamers run Steam OS, while AMD CPUs dominate with nearly 70% usage due to open-source driver support
+* Windows market share declined 4.28% to 92.33%, while macOS also gained 1.19% in the same period
+
+### Steam Linux 版市场份额在 2026 年 3 月飙升至 5% 以上
+
+* Steam 上的 Linux 游戏在 2026 年 3 月达到历史新高 5.33% 的市场份额,是 macOS 2.35% 的两倍多
+* 这一显著的 3.1% 增长出现在连续数月下滑之后(2025 年 12 月为 3.5%,2026 年 2 月降至 2.23%)
+* 增长部分归因于 Valve 修正了 Steam 中国区的调查数据,简体中文使用率下降了 31.85%
+* 约 25% 的 Linux 游戏玩家运行 Steam OS,而 AMD CPU 因其开源驱动支持占据近 70% 的使用率
+* Windows 市场份额下降 4.28% 至 92.33%,而 macOS 在同期也增长了 1.19%
+
+**[Read Original / 阅读原文](https://www.phoronix.com/news/Steam-On-Linux-Tops-5p)**
 
