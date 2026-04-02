@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 02, 2026"
 date: 2026-04-02
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -488,85 +488,6 @@ pin: false
 
 ---
 
-### 🎬 如何为 N64 构建开放世界引擎
-**频道:** James Lambert
-
-* 视频内容概述: 深入讲解如何为任天堂 64 主机专门构建自定义开放世界游戏引擎,展示如何在 1990 年代游戏机硬件上创建无缝的大规模环境
-* 主要话题: 实现零加载画面的技术细节、N64 有限资源的内存管理策略、渲染优化技术,以及如何克服硬件限制以实现开放世界玩法
-* 为何值得观看: 提供了罕见的复古硬件底层游戏引擎开发见解,展示了令人印象深刻的技术问题解决能力,证明通过巧妙的工程设计可以将现代游戏设计理念应用于老式平台
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lXxmIw9axWw)**
-
-### 🎬 OpenClaw......RIGHT NOW??? (it's not what you think)
-**Channel:** NetworkChuck
-
-* What the video covers: A hands-on tutorial about setting up OpenClaw, likely a self-hosted or open-source project, using a VPS (Virtual Private Server) from Hostinger
-* Key topics discussed: VPS deployment, OpenClaw installation and configuration, self-hosting infrastructure, and practical server setup techniques
-* Why it's worth watching: NetworkChuck's engaging teaching style makes complex server setups accessible; the video provides step-by-step guidance for deploying OpenClaw with 308K+ community interest, perfect for those interested in self-hosting and learning practical DevOps skills
-
-### 🎬 OpenClaw......现在就开始??? (并非你想的那样)
-**频道:** NetworkChuck
-
-* 视频内容概述: 详细演示如何使用 Hostinger VPS 搭建 OpenClaw 的实操教程,这可能是一个自托管或开源项目
-* 主要话题: VPS 部署、OpenClaw 安装配置、自托管基础设施搭建、实用服务器设置技巧
-* 为何值得观看: NetworkChuck 以其生动有趣的教学风格著称,能将复杂的服务器配置讲解得通俗易懂;视频提供详细的 OpenClaw 部署步骤指南,拥有 30 万+社区关注度,非常适合对自托管和 DevOps 实践技能感兴趣的观众
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=T-HZHO_PQPY)**
-
-### 🎬 When You Hire a Free Intern
-
-**Channel:** Sheryians Coding School
-
-* A humorous take on the gap between tutorial learning and practical project building
-* Addresses why students struggle to build real projects despite understanding tutorials
-* Worth watching for developers and students experiencing the "tutorial hell" phenomenon - offers insight into bridging theory and practice
-
-### 🎬 当你雇佣免费实习生时
-
-**频道:** Sheryians Coding School
-
-* 幽默地展现了教程学习与实际项目开发之间的差距
-* 探讨为什么学生虽然理解教程内容却难以构建真实项目
-* 值得观看,特别是对于陷入"教程地狱"的开发者和学生 - 提供了如何弥合理论与实践差距的见解
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
-
-### Artemis II Launch Day: Historic Moon Mission Successfully Lifts Off
-
-* NASA's Artemis II mission launched at 6:35 p.m. EDT from Kennedy Space Center's Launch Complex 39B, carrying four astronauts on humanity's first crewed deep space mission in over 50 years
-* The crew includes NASA astronauts Reid Wiseman, Victor Glover, Christina Koch, and Canadian Space Agency astronaut Jeremy Hansen aboard the Orion spacecraft named "Integrity"
-* The Space Launch System (SLS) rocket generated 8.8 million pounds of thrust at liftoff, with twin solid rocket boosters providing over 75% of initial power
-* Key milestones achieved: solid rocket booster separation at 2 minutes, core stage separation at 8 minutes, and successful deployment of Orion's four solar array wings providing continuous power
-* The approximately 10-day mission will test critical systems for future lunar exploration and eventual Mars missions, with upcoming maneuvers including proximity operations demonstration and orbit-raising burns
-* Live coverage continues on NASA's YouTube channel with 24/7 updates throughout the mission
-
-### Artemis II 发射日:历史性登月任务成功升空
-
-* 美国宇航局 Artemis II 任务于美国东部时间下午 6:35 从肯尼迪航天中心 39B 发射场成功发射,搭载四名宇航员执行人类 50 多年来首次载人深空任务
-* 机组人员包括美国宇航局宇航员 Reid Wiseman、Victor Glover、Christina Koch 和加拿大航天局宇航员 Jeremy Hansen,他们乘坐名为"Integrity"(正直号)的猎户座飞船
-* 太空发射系统(SLS)火箭在升空时产生 880 万磅推力,双固体火箭助推器提供超过 75% 的初始动力
-* 已完成的关键里程碑:2 分钟时固体火箭助推器分离,8 分钟时核心级分离,以及猎户座四个太阳能电池板翼成功展开提供持续电力
-* 这次约 10 天的任务将测试未来月球探索和最终火星任务的关键系统,即将进行的操作包括近距离操作演示和轨道提升燃烧
-* NASA YouTube 频道提供 24/7 全程直播,持续更新任务进展
-
-**[Read Original / 阅读原文](https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/)**
-
-<!-- [Title-Only] -->
-### A new C++ back end for ocamlc
-
-Based on the title alone, this article likely covers:
-* A proposed or implemented enhancement to the OCaml compiler (`ocamlc`) that adds a new C++ code generation backend
-* Technical details about how OCaml code could be compiled to C++ instead of (or in addition to) the existing bytecode or native code backends
-* Potential benefits such as improved interoperability with C++ codebases, access to C++ tooling and optimizations, or easier cross-platform compilation
-
-Why it might be interesting to readers:
-* Represents a significant architectural change to a mature functional programming language compiler
-* Could open new possibilities for OCaml adoption in C++-heavy environments
-* Demonstrates interesting compiler engineering techniques for bridging functional and object-oriented paradigms
-* May impact performance characteristics and deployment options for OCaml applications
-
----
-
 ### OCaml 编译器的新 C++ 后端
 
 根据标题推测的文章内容:
@@ -649,4 +570,114 @@ Why it might be interesting to readers:
 * **为何值得关注**: 这是罕见的能够深入了解 Anthropic 官方 Claude Code CLI 工具架构的机会，展示了生产级 AI 编程助手的内部结构。凭借 7,396 个 star，它已成为开发者研究 AI 驱动开发工具的宝贵资源，尽管这是非官方版本且仅供研究使用。
 
 **[View Repository / 查看仓库](https://github.com/ChinaSiro/claude-code-sourcemap)**
+
+### Artemis II Launch Day: Historic Moon Mission Successfully Lifts Off
+
+* NASA's Artemis II mission launched at 6:35 p.m. EDT from Kennedy Space Center's Launch Complex 39B, carrying four astronauts on humanity's first crewed deep space mission in over 50 years
+* The crew includes NASA astronauts Reid Wiseman, Victor Glover, Christina Koch, and Canadian Space Agency astronaut Jeremy Hansen aboard the Orion spacecraft named "Integrity"
+* The Space Launch System (SLS) rocket generated 8.8 million pounds of thrust at liftoff, with twin solid rocket boosters providing over 75% of initial power
+* Key milestones achieved: solid rocket booster separation at 2 minutes, core stage separation at 8 minutes, and successful deployment of Orion's four solar array wings providing power through 15,000 solar cells per wing
+* The approximately 10-day mission will test critical systems for future lunar exploration and eventual Mars missions, with upcoming maneuvers including proximity operations demonstration and orbit-raising burns
+* Live coverage continues on NASA's YouTube channel with 24/7 updates, and a postlaunch news conference is scheduled for 9 p.m. EDT
+
+### 阿尔忒弥斯二号发射日：历史性登月任务成功升空
+
+* NASA阿尔忒弥斯二号任务于美国东部时间下午6:35从肯尼迪航天中心39B发射场升空，搭载四名宇航员执行人类50多年来首次载人深空任务
+* 机组人员包括NASA宇航员里德·怀斯曼、维克多·格洛弗、克里斯蒂娜·科赫，以及加拿大航天局宇航员杰里米·汉森，他们乘坐名为"正直号"的猎户座飞船
+* 太空发射系统(SLS)火箭在升空时产生880万磅推力，双固体火箭助推器提供超过75%的初始动力
+* 已完成的关键里程碑：2分钟时固体火箭助推器分离，8分钟时核心级分离，以及猎户座四个太阳能电池板翼成功展开，每个翼板配备15,000个太阳能电池提供电力
+* 这次约10天的任务将测试未来月球探索和最终火星任务所需的关键系统，即将进行的操作包括近距离操作演示和轨道提升机动
+* NASA YouTube频道提供24/7全天候直播报道，发射后新闻发布会定于美国东部时间晚上9点举行
+
+**[Read Original / 阅读原文](https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/)**
+
+### Your Sign-Up Form is a Weapon: Understanding Subscription Bombing Attacks
+
+* **What happened**: Suga noticed unusual sign-ups with random names (like `PfVQXvYTXjwSbEeJBjXYy`) using real email addresses, followed by password reset requests within 60 seconds
+* **The attack**: Subscription bombing floods victims' inboxes with hundreds of sign-up emails across websites to hide critical emails (bank alerts, password resets) while attackers commit fraud
+* **Detection pattern**: Low-volume attacks (1-2 sign-ups/hour) with bot-like typing behavior, geographically dispersed traffic with no time-zone correlation, and unusual forgot-password page activity
+* **Why it's dangerous**: The damage falls on innocent victims, not site owners - making it low-priority for many companies while enabling real financial crimes
+* **The fix**: Implemented Cloudflare Turnstile (invisible CAPTCHA) via Better Auth plugin, restricted emails to verified users only (one verification email until confirmed), and tightened firewall rules
+* **Key lesson**: Any sign-up form sending emails to unverified addresses becomes a weapon in these attacks - verification should happen before any welcome or transactional emails
+
+### 你的注册表单是一件武器:理解订阅轰炸攻击
+
+* **事件经过**: Suga 发现异常注册,使用真实邮箱地址但用户名是随机字符(如 `PfVQXvYTXjwSbEeJBjXYy`),并在 60 秒内请求密码重置
+* **攻击原理**: 订阅轰炸通过在数百个网站批量注册受害者邮箱,用大量注册邮件淹没收件箱,掩盖关键邮件(银行警报、密码重置),从而实施欺诈
+* **检测特征**: 低频攻击(每小时 1-2 次注册)、机器人式打字行为、地理位置分散但与时区无关联、忘记密码页面异常活跃
+* **危险之处**: 损害的是无辜受害者而非网站所有者,导致许多公司将其视为低优先级问题,却助长了真实的金融犯罪
+* **解决方案**: 通过 Better Auth 插件实现 Cloudflare Turnstile(隐形验证码)、限制仅向已验证用户发送邮件(验证前只发一封验证邮件)、加强防火墙规则
+* **核心教训**: 任何向未验证地址发送邮件的注册表单都会成为此类攻击的武器 - 应在发送欢迎邮件或交易邮件之前先完成验证
+
+**[Read Original / 阅读原文](https://bytemash.net/posts/subscription-bombing-your-signup-form-is-a-weapon/)**
+
+### The Claude Code Leak: Key Takeaways
+
+* **Code quality doesn't determine product success** - Claude Code achieved $2.5B ARR despite having "garbage" code, proving that product-market fit matters more than pristine implementation
+* **Observability over perfection** - Anthropic prioritizes self-healing systems and monitoring code effects rather than character-level code quality, enabling faster iteration
+* **Product-market fit is king** - Users care about whether the product works, not how it works under the hood; supply constraints in AI coding tools show massive unmet demand
+* **Copyright irony** - Anthropic's DMCA takedowns and subsequent clean-room implementations highlight the industry's contradictory stance on derivative work and AI training
+* **Integration is the real value** - The leak won't significantly impact Anthropic because their competitive advantage lies in seamless model-harness integration, not the source code itself
+* **Rethinking code's value** - The incident reinforces that solving user problems well matters infinitely more than having a clean codebase
+
+### Claude 代码泄露事件：核心要点
+
+* **代码质量不决定产品成功** - Claude Code 尽管代码质量被称为"垃圾"，仍实现了 25 亿美元年度经常性收入，证明产品市场契合度比完美实现更重要
+* **可观测性胜过完美性** - Anthropic 优先考虑自愈系统和监控代码效果，而非字符级代码质量，从而实现更快迭代
+* **产品市场契合度为王** - 用户关心产品是否有效，而非其底层实现方式；AI 编码工具的供应限制显示出巨大的未满足需求
+* **版权的讽刺** - Anthropic 的 DMCA 下架通知和随后出现的净室实现，凸显了行业在衍生作品和 AI 训练问题上的矛盾立场
+* **集成才是真正的价值** - 此次泄露不会对 Anthropic 产生重大影响，因为其竞争优势在于模型与工具的无缝集成，而非源代码本身
+* **重新思考代码的价值** - 这一事件强化了一个观点：出色地解决用户问题比拥有整洁的代码库重要得多
+
+**[Read Original / 阅读原文](https://build.ms/2026/4/1/the-claude-code-leak/)**
+
+### 🎬 When You Hire a Free Intern
+
+**Channel:** Sheryians Coding School
+
+* A humorous take on the common struggle developers face: understanding tutorials but failing to build actual projects
+* Addresses the gap between passive learning (watching tutorials) and active implementation (building projects)
+* Worth watching for developers who feel stuck in "tutorial hell" - it highlights a relatable problem in the coding learning journey and likely offers insights on bridging the theory-practice gap
+
+### 🎬 当你雇佣免费实习生时
+
+**频道:** Sheryians Coding School
+
+* 幽默地展现开发者常见困境:看懂教程却无法独立构建项目
+* 探讨被动学习(观看教程)与主动实践(构建项目)之间的鸿沟
+* 值得观看,因为它点出了编程学习中"教程地狱"这一普遍问题,并可能提供如何跨越理论与实践差距的见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
+
+### 🎬 Redacted Sort: redacted
+**Channel:** swap.
+
+* What the video covers: A humorous take on a fictional "redacted sort" algorithm that supposedly makes evidence disappear, playing on the concept of data manipulation and sorting algorithms
+* Key topics discussed: Sorting algorithms, algorithmic complexity (O(?)), and a satirical commentary on data deletion/hiding through the lens of computer science
+* Why it's worth watching: Short, entertaining content that uses programming humor to explore the darker side of algorithms - perfect for developers who appreciate tech satire and want a quick laugh while thinking about data ethics
+
+### 🎬 删减排序算法：已删减
+**频道:** swap.
+
+* 视频内容概述: 以幽默方式介绍一个虚构的"删减排序"算法,该算法据称能让证据消失,借此探讨数据操作和排序算法的概念
+* 主要话题: 排序算法、算法复杂度(O(?))、以及通过计算机科学视角对数据删除/隐藏的讽刺性评论
+* 为何值得观看: 简短有趣的内容,用编程幽默探讨算法的阴暗面——非常适合喜欢技术讽刺的开发者,既能快速获得乐趣又能思考数据伦理问题
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J7o7jSwZGfk)**
+
+### 🎬 FULL Claude Code Tutorial for Beginners in 2026! (Step-By-Step)
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on using Claude Code, walking through setup and practical applications step-by-step
+* Key topics discussed: Claude Code fundamentals, hands-on implementation examples, best practices for AI-assisted coding workflows in 2026
+* Why it's worth watching: Perfect for developers new to AI coding assistants who want a structured, practical introduction to Claude Code with real-world examples from an experienced tech educator
+
+### 🎬 2026年Claude Code完整新手教程!(分步指南)
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面的Claude Code新手教程,逐步讲解设置和实际应用
+* 主要话题: Claude Code基础知识、实操示例、2026年AI辅助编程工作流程的最佳实践
+* 为何值得观看: 适合想要系统学习AI编程助手的开发者,由经验丰富的技术教育者提供结构化的实用入门指导和真实案例
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qYqIhX9hTQk)**
 
