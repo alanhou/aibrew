@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 03, 2026"
 date: 2026-04-03
-description: "Today's digest: 0 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：0篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 5 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，5个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -351,4 +351,238 @@ This repo is trending (323+ stars today) because it lifts the curtain on how AI 
 > ⚠️ **Note:** The video has a very brief description, so the summary above is based on the title, tags, and channel focus. A more detailed breakdown would require watching the full video content.
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SV1NOIgBA0)**
+
+<!-- [Title-Only] -->
+### Google releases Gemma 4 open models
+* Based on the title alone, this article likely covers Google's release of a new generation of **Gemma 4 open models**, probably including model sizes, capabilities, supported use cases, and how developers can access or deploy them.
+* It may also discuss how these models fit into the broader open-model ecosystem, what improvements they bring over earlier Gemma versions, and why Google is making them available to researchers and builders.
+* This could be interesting to readers because new open models often affect **AI development, experimentation, fine-tuning, and local or commercial deployment options**.
+
+### Google 发布 Gemma 4 开放模型
+* 仅根据标题推测，这篇文章很可能介绍 Google 发布的新一代 **Gemma 4 开放模型**，可能会涉及模型规模、能力、适用场景，以及开发者如何获取、使用或部署这些模型。
+* 文章也可能会谈到这些模型在开放模型生态中的定位、相较于 предыдущих Gemma 版本有哪些改进，以及 Google 向研究者和开发者开放它们的意义。
+* 这对读者来说可能很有吸引力，因为新的开放模型往往会影响 **AI 开发、实验、微调，以及本地或商业化部署的选择**。
+
+**[Read Original / 阅读原文](https://deepmind.google/models/gemma/gemma-4/)**
+
+<!-- [Title-Only] -->
+### Decisions that eroded trust in Azure – by a former Azure Core engineer
+* Based on the title alone, this article likely discusses internal decisions, product choices, or leadership missteps at Microsoft Azure that may have weakened customer, developer, or employee trust. Since it is written by a former Azure Core engineer, it probably includes an insider perspective on how technical strategy, reliability, security, communication, or organizational culture contributed to that erosion of confidence.
+* This could be interesting to readers because it may offer a rare firsthand view into how trust can be lost inside a major cloud platform, and what that means for enterprise customers, engineers, and the broader tech industry.
+
+### 削弱人们对 Azure 信任的决策——出自前 Azure Core 工程师之手
+* 仅根据标题推测，这篇文章可能会讨论微软 Azure 在内部决策、产品方向或管理层判断上的一些问题，以及这些问题如何削弱了客户、开发者或员工对平台的信任。由于作者自称是前 Azure Core 工程师，文章很可能会带有一定的内部视角，涉及技术战略、可靠性、安全性、沟通方式或组织文化等方面。
+* 这类内容值得关注，因为它可能提供一个少见的一线观察：一家大型云平台是如何一步步失去信任的，以及这对企业用户、工程师和整个科技行业意味着什么。
+
+**[Read Original / 阅读原文](https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion)**
+
+<!-- [Title-Only] -->
+### C89cc.sh – standalone C89/ELF64 compiler in pure portable shell
+* Based on the title alone, this article likely introduces a remarkably minimalist compiler that can compile **C89** code into **ELF64** binaries using only **portable shell scripting**, without relying on a conventional compiler toolchain.
+* It probably discusses how the compiler is structured, how much of the C89 language it supports, and how shell scripts can be used to perform parsing, code generation, and executable output in a highly constrained environment.
+* This could be especially interesting to readers who enjoy **compiler design, bootstrapping, Unix minimalism, portability, and creative systems programming**, since it suggests an unusual and elegant approach to building a working compiler from very simple tools.
+
+### C89cc.sh——使用纯可移植 Shell 实现的独立 C89/ELF64 编译器
+* 仅根据标题推测，这篇文章很可能介绍了一个非常“极简”的编译器：它能够仅靠**可移植的 shell 脚本**，把 **C89** 代码编译成 **ELF64** 可执行文件，而不依赖传统的完整编译工具链。
+* 文章可能会讲解这个编译器的整体设计、它对 **C89** 特性的支持范围，以及如何在 shell 环境中完成语法分析、代码生成和二进制输出等关键步骤。
+* 这对关注**编译器原理、引导构建（bootstrapping）、Unix 极简主义、可移植性**以及**系统编程创意实践**的读者来说会很有吸引力，因为它展示了一种用极少工具实现编译器的非常规思路。
+
+**[Read Original / 阅读原文](https://gist.github.com/alganet/2b89c4368f8d23d033961d8a3deb5c19)**
+
+### sherlock - Find social media accounts across many sites by username
+
+* **What it does**
+  * `sherlock` is a Python-based tool for searching a username across a wide range of social media platforms and online services.
+  * It helps users quickly check where a given username appears on the internet.
+
+* **Key features**
+  * Searches across many social networks and websites.
+  * Focused on username-based account discovery.
+  * Built in Python, which makes it approachable for developers and easy to extend.
+
+* **Why it's notable**
+  * It addresses a very practical OSINT-style use case: discovering a person's or brand's online presence from a single username.
+  * With **827 stars today**, it is clearly attracting strong current attention.
+  * Even without README details, the repository metadata suggests a broadly useful and easy-to-understand tool with wide appeal.
+
+### sherlock - 通过用户名查找多个社交平台账号
+
+* **功能介绍**
+  * `sherlock` 是一个基于 Python 的工具，用于在多个社交媒体平台和在线服务中搜索某个用户名。
+  * 它可以帮助用户快速判断某个用户名在哪些网站上被注册或使用。
+
+* **主要特点**
+  * 支持在大量社交网络和网站中进行搜索。
+  * 专注于基于用户名的账号发现与检索。
+  * 使用 Python 开发，便于开发者理解、使用和扩展。
+
+* **为何值得关注**
+  * 该项目面向一个非常实用的场景：通过单一用户名追踪个人、品牌或组织的网络存在。
+  * **今日新增 827 星**，说明它近期热度很高，关注度显著上升。
+  * 即使缺少 README 内容，仅从仓库元数据也能看出这是一个用途明确、受众广泛的实用项目。
+
+**[View Repository / 查看仓库](https://github.com/sherlock-project/sherlock)**
+
+### claude-code - A Bun/TypeScript rebuild of the Claude Code CLI with debugging, feature flags, and engineering enhancements
+
+* **What it does**
+  * Reconstructs and restores much of Anthropic's Claude Code CLI functionality as a runnable, buildable, and debuggable open-source project.
+  * Lets developers install with `bun install`, run in dev mode, build distributable outputs, and debug via Bun + VS Code attach mode.
+  * Adds operational and engineering support around the CLI, including documentation, testing, monitoring hooks, and configurable features.
+
+* **Key features**
+  * TypeScript type fixes and improved project reliability.
+  * Runs on **Bun** and also produces builds that can run on **Node/Bun**.
+  * Feature flags via environment variables such as `FEATURE_BUDDY=1`.
+  * Includes restored or added capabilities like **Buddy**, **Auto Mode**, **web search (via Bing)**, and **debug support**.
+  * Supports custom **Sentry** error reporting and **GrowthBook** integration for remote feature control.
+  * Comes with active docs, a docs site, contributor support, and a roadmap for larger modular refactors.
+
+* **Why it's notable**
+  * It is a highly starred TypeScript repo focused on reproducing a popular AI coding CLI, which naturally draws strong developer curiosity.
+  * The project emphasizes being directly runnable, buildable, and debuggable rather than just serving as a code dump.
+  * Fast iteration, extensive feature restoration, and strong community interest make it stand out in the AI tooling/open-source CLI space.
+  * Its reverse-engineering/reimplementation angle makes it especially controversial and attention-grabbing.
+
+### claude-code - 一个基于 Bun/TypeScript 的 Claude Code CLI 复刻与增强项目
+
+* **功能介绍**
+  * 该项目旨在对 Anthropic 官方 Claude Code CLI 进行源码级复原/重建，实现大部分核心功能与工程化能力。
+  * 开发者可以直接使用 `bun install` 安装，通过 `bun run dev` 启动开发模式，并构建可运行产物。
+  * 同时提供调试、文档、测试、监控上报等配套能力，方便二次开发与研究。
+
+* **主要特点**
+  * 完整修复大量 **TypeScript 类型问题**，强调可运行、可构建、可调试。
+  * 基于 **Bun** 开发，构建后产物可在 **Node/Bun** 环境运行。
+  * 支持通过环境变量开启功能开关，例如 `FEATURE_<FLAG_NAME>=1`。
+  * 已补全或恢复多个功能，包括 **Buddy**、**Auto Mode**、**Web Search（基于 Bing）**、**Debug 模式**。
+  * 支持自定义 **Sentry 错误上报** 和 **GrowthBook** 远程配置。
+  * 提供在线文档、调试说明、特性文档，以及后续模块化重构路线图。
+
+* **为何值得关注**
+  * 这是一个围绕 Claude Code CLI 的高热度复刻项目，Star 数很高，说明社区关注度非常强。
+  * 与普通“源码镜像”不同，它更强调**能跑、能构建、能调试、能扩展**，对开发者更有实际价值。
+  * 项目更新频繁，文档和功能推进速度快，具备明显的社区驱动特征。
+  * 由于其“逆向还原/重实现”定位，这个仓库在 AI 工具与开源 CLI 领域都具有较强的话题性。
+
+**[View Repository / 查看仓库](https://github.com/claude-code-best/claude-code)**
+
+### codex-plugin-cc - Use Codex inside Claude Code for reviews and delegated tasks
+
+* **What it does**
+  * Integrates OpenAI Codex into Claude Code, letting users run code reviews and hand off engineering tasks without leaving their existing workflow.
+  * Supports both read-only reviews and background task delegation through slash commands like `/codex:review`, `/codex:adversarial-review`, and `/codex:rescue`.
+
+* **Key features**
+  * Read-only code review for current changes or branch diffs with `/codex:review`
+  * Steerable “challenge” review with `/codex:adversarial-review` to question design choices, assumptions, and risk areas
+  * Background task delegation via `/codex:rescue`, plus job management commands like `/codex:status`, `/codex:result`, and `/codex:cancel`
+  * Setup and environment checks with `/codex:setup`, including optional install help and an experimental review gate
+  * Reuses local Codex CLI auth, config, and runtime, so it fits into existing Codex setups
+
+* **Why it's notable**
+  * Bridges two popular AI coding workflows: Claude Code for interactive development and Codex for review/delegation
+  * Especially useful for teams or developers who want multi-step async reviews and task offloading inside a single coding environment
+  * With **10.8k+ stars**, it’s gaining attention as a practical productivity plugin rather than a standalone framework
+
+### codex-plugin-cc - 在 Claude Code 中调用 Codex 进行审查与任务委派
+
+* **功能介绍**
+  * 这个插件让 Claude Code 用户可以直接在现有工作流中使用 Codex，进行代码审查或把任务交给 Codex 处理。
+  * 提供多种斜杠命令，既能做只读审查，也能启动后台任务并跟踪结果。
+
+* **主要特点**
+  * `/codex:review`：对当前改动或分支差异进行只读代码审查
+  * `/codex:adversarial-review`：可定向的“挑战式审查”，重点质疑设计决策、隐藏风险和实现取舍
+  * `/codex:rescue`：将排查 bug、修复问题、继续上次任务等工作委派给 Codex
+  * `/codex:status`、`/codex:result`、`/codex:cancel`：用于后台任务状态查看、结果获取与取消
+  * `/codex:setup`：检查安装和登录状态，并支持可选的 review gate 审查拦截机制
+  * 直接复用本地 Codex CLI 的认证、配置和运行环境，无需单独维护一套新运行时
+
+* **为何值得关注**
+  * 它把 Claude Code 和 Codex 两种 AI 编程体验连接起来，降低了跨工具协作的成本
+  * 对需要异步代码审查、任务分流、风险验证的开发者来说很实用
+  * 作为一个定位明确的工作流增强插件，已获得 **10.8k+ Stars**，说明社区关注度和实际需求都很高
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### 🎬 The Bad Website Club bootcamp is back - and they're going through fCC's RWD cert
+**Channel:** freeCodeCamp.org
+
+* **What the video covers:** An announcement and overview of the return of the Bad Website Club bootcamp, with a focus on working through freeCodeCamp’s Responsive Web Design certification.
+* **Key topics discussed:** The bootcamp’s comeback, Carmen’s introduction to the program, and what learners can expect from following the RWD certification path.
+* **Why it's worth watching:** It’s a useful update for beginners or community learners who want structure, motivation, and a guided way to build foundational web design skills through freeCodeCamp.
+
+### 🎬 Bad Website Club 训练营回归——并将学习 freeCodeCamp 的响应式网页设计认证
+**频道:** freeCodeCamp.org
+
+* **视频内容概述：** 这是一则关于 Bad Website Club 训练营回归的介绍视频，重点说明他们将围绕 freeCodeCamp 的“响应式网页设计”认证展开学习。
+* **主要话题：** 训练营重启、Carmen 对项目的介绍，以及学习者可以从 RWD 认证学习路线中获得什么。
+* **为何值得观看：** 对网页开发新手或喜欢社群学习的人来说，这支视频能帮助你快速了解训练营安排，并以更有组织、更有动力的方式入门网页设计基础。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zJHXDuUzFkc)**
+
+### 🎬 He just crawled through hell to fix the browser…
+**Channel:** Fireship
+
+* **What the video covers:** A fast-paced overview of Cheng Lou’s effort to improve the browser, likely focusing on deep frontend or rendering-engine problems and the brutal debugging process behind fixing them.
+* **Key topics discussed:** Browser internals, performance bottlenecks, engineering tradeoffs, low-level debugging, and insights from a former React Core team member.
+* **Why it's worth watching:** It looks valuable for frontend developers and curious engineers who want a sharper understanding of how browsers actually work—and what it takes to solve hard infrastructure-level problems.
+
+### 🎬 他几乎是从“地狱”里爬出来修好了浏览器……
+**频道:** Fireship
+
+* **视频内容概述：** 这期视频以高密度、快节奏的方式介绍了 Cheng Lou 修复浏览器底层问题的过程，重点可能在于复杂渲染机制或性能故障背后的排查与修复。
+* **主要话题：** 浏览器内部原理、性能瓶颈、工程取舍、底层调试过程，以及前 React Core 成员带来的技术视角。
+* **为何值得观看：** 对前端开发者和技术爱好者来说，这类内容能帮助理解浏览器到底如何运作，也能看到解决底层复杂问题所需要的工程能力与思维方式。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vd14EElCRvs)**
+
+### 🎬 Why Medieval Workers Didn&#39;t Need Government Safety Nets - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* **What the video covers**: A discussion on why many medieval workers may have relied less on modern-style government welfare systems, likely focusing on the social, economic, and institutional structures that supported people in premodern society.
+* **Key topics discussed**: Medieval labor conditions, mutual aid, guilds, family and community support networks, and how premodern social safety mechanisms differed from today’s state-run safety nets.
+* **Why it's worth watching**: It offers a thought-provoking historical perspective on welfare, work, and social organization, and may challenge modern assumptions about how societies care for vulnerable people.
+
+### 🎬 为什么中世纪劳动者不需要政府安全网 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* **视频内容概述**: 视频探讨了为什么许多中世纪劳动者可能不像现代人那样依赖政府福利制度，重点可能放在前现代社会中支撑普通人的社会、经济与制度结构上。
+* **主要话题**: 中世纪劳动环境、互助机制、行会制度、家庭与社区支持网络，以及前现代保障体系与现代国家福利制度的差异。
+* **为何值得观看**: 这期内容从历史角度重新审视福利、劳动与社会组织方式，能够帮助观众反思现代社会对“安全网”的常见理解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=9-STuFQD9RY)**
+
+### 🎬 When You Hire a Free Intern #sheryians #shorts
+**Channel:** Sheryians Coding School
+
+* **What the video covers:** A short, likely humorous take on why learners still struggle to build real projects even after watching many tutorials.
+* **Key topics discussed:** Tutorial dependency, the gap between understanding concepts and applying them independently, and common beginner learning mistakes.
+* **Why it's worth watching:** It seems to highlight a very relatable problem for coding students in a quick, memorable format, with practical insight into why passive learning often doesn’t translate into project-building skills.
+
+### 🎬 当你雇了一个免费实习生 #sheryians #shorts
+**频道:** Sheryians Coding School
+
+* **视频内容概述：** 这是一则短视频，可能用幽默的方式说明：为什么很多学生看了大量教程之后，依然不会独立做项目。
+* **主要话题：** 教程依赖、理解知识与实际动手之间的差距，以及初学者常见的学习误区。
+* **为何值得观看：** 它抓住了编程学习者非常普遍的痛点，用简短直接的方式点出问题本质，适合想提升实战能力的人观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
+
+### 🎬 Redacted Sort: redacted
+**Channel:** swap.
+
+* **What the video covers:** A likely playful or experimental look at a custom sorting algorithm called “Redacted Sort,” framed as “the algorithm that makes evidence disappear.”
+* **Key topics discussed:** Sorting algorithms, coding concepts, algorithm design, and possibly humor or abstraction around how data gets reordered or hidden.
+* **Why it's worth watching:** The title and description suggest an unusual, creative take on sorting algorithms that could be fun for programmers who enjoy niche algorithm content and clever presentation.
+
+### 🎬 Redacted Sort: redacted
+**频道:** swap.
+
+* **视频内容概述：** 这支视频很可能以一种幽默或实验性的方式介绍名为 “Redacted Sort” 的自定义排序算法，并用“让证据消失的算法”作为趣味切入点。
+* **主要话题：** 排序算法、编程概念、算法设计，以及数据如何被重排或“隐藏”的创意表达。
+* **为何值得观看：** 从标题和简介来看，这可能是一支风格新颖、点子有趣的算法视频，适合喜欢编程、排序算法和技术幽默内容的观众。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J7o7jSwZGfk)**
 
