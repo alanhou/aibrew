@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 04, 2026"
 date: 2026-04-04
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### iNaturalist Mobile Apps Work Across Devices
@@ -351,4 +351,318 @@ pin: false### iNaturalist Mobile Apps Work Across Devices
 * **为何值得观看：** 内容短小直接，容易引发编程学习者共鸣，也能提醒大家：真正提升能力，关键在于亲手做项目。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
+
+<!-- [Title-Only] -->
+### Artemis II crew take “spectacular” image of Earth
+* Based on the title alone, this article likely covers the Artemis II mission crew capturing a striking photograph of Earth, probably from a unique vantage point during training, testing, or flight-related operations connected to NASA’s return-to-the-Moon program.
+* It may be interesting to readers because it combines space exploration, human spaceflight, and the emotional impact of seeing Earth from afar—something that often highlights both technological progress and our planet’s fragility.
+
+### 阿耳忒弥斯二号机组拍摄到“壮观”的地球照片
+* 仅根据标题推测，这篇文章可能讲述了阿耳忒弥斯二号任务的宇航员团队拍摄到一张引人注目的地球照片，拍摄地点或许与 NASA 重返月球计划中的训练、测试或飞行相关活动有关。
+* 这类内容值得关注，因为它同时涉及太空探索、载人航天，以及从遥远视角回望地球所带来的震撼感，也常常让人重新思考技术进步与地球本身的珍贵。
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/ce8jzr423p9o)**
+
+### TinyOS: Ultra-Lightweight RTOS for IoT and Embedded Devices
+* TinyOS is a compact RTOS designed for resource-constrained IoT systems, with a kernel footprint under 10 KB, minimum RAM requirement of 2 KB, and preemptive priority-based scheduling with 256 levels.
+* It offers a broad embedded feature set beyond the kernel, including synchronization primitives, software timers, memory tools, a VT100 interactive shell, lightweight filesystem, networking stack, TLS/DTLS via mbedTLS, MQTT, CoAP, OTA updates, watchdogs, power management, and MPU-based security.
+* Supported platforms include ARM Cortex-M, RISC-V RV32I, and experimental AVR targets, with examples such as STM32, nRF52, Raspberry Pi Pico, ESP32-C3, and ATmega.
+* Developer onboarding is straightforward with `make`-based example targets for blink, shell, MQTT, and IoT demos, plus a simple C API for task creation and OS startup.
+* The API surface is extensive, covering task management, synchronization, timers, shell extension, networking, secure transport, messaging, storage, power control, watchdog monitoring, and OTA workflows.
+* Notable strengths include built-in observability and manageability features such as task stats, memory stats, shell commands like `ps`, `top`, `mem`, `net`, and power controls, making it practical for real deployments.
+* MQTT support is especially robust for embedded use, with QoS 0/1/2 handling, retransmission logic, offline queueing, reconnect backoff, and configuration limits for in-flight and pending messages.
+* System configuration is compile-time driven through header macros, allowing developers to tune task count, stack size, tick rate, shell capacity, and other limits for small embedded footprints.
+
+### TinyOS：面向物联网与嵌入式设备的超轻量 RTOS
+* TinyOS 是一款面向资源受限物联网设备的轻量级实时操作系统，内核占用低于 10 KB，最低仅需 2 KB RAM，并提供 256 级抢占式优先级调度。
+* 它不仅包含 RTOS 内核，还集成了丰富的嵌入式能力，包括互斥锁、信号量、条件变量、软件定时器、内存管理、VT100 交互式 Shell、轻量文件系统、网络协议栈、TLS/DTLS、MQTT、CoAP、OTA 升级、看门狗、电源管理和基于 MPU 的安全机制。
+* 支持的硬件平台涵盖 ARM Cortex-M、RISC-V RV32I，以及实验性的 AVR，示例芯片包括 STM32、nRF52、Raspberry Pi Pico、ESP32-C3 和 ATmega。
+* 上手方式简单，提供基于 `make` 的示例工程，如 LED 闪烁、串口 Shell、MQTT 发布订阅和多传感器 IoT 节点，同时也给出了简洁的最小任务创建示例。
+* API 设计较完整，覆盖任务管理、同步机制、定时器、Shell 扩展、网络通信、安全传输、消息协议、文件系统、功耗控制、看门狗和 OTA 升级等核心场景。
+* 其一个突出优势是内建了较强的运维与调试能力，例如任务与内存统计、`ps`、`top`、`mem`、`net`、`power` 等 Shell 命令，便于在设备端进行诊断。
+* MQTT 模块尤其适合嵌入式场景，支持 QoS 0/1/2、重传机制、离线消息队列、指数退避自动重连，以及可配置的 in-flight / pending 消息上限。
+* 系统采用头文件宏进行编译期配置，开发者可以灵活调整任务数、栈大小、时钟节拍、Shell 容量等参数，以适配不同资源规模的设备。
+
+**[Read Original / 阅读原文](https://github.com/cmc-labo/tinyos-rtos)**
+
+<!-- [Title-Only] -->
+### Extra usage credit for Claude to celebrate usage bundles launch (Pro, Max, Team)
+
+* Based on the title alone, this article likely explains a promotional or temporary bonus in Claude usage credits tied to the launch of new **usage bundles** for the **Pro, Max, and Team** plans. It probably outlines who qualifies, how much extra credit is included, when it becomes available, and any limits or terms users should know about.
+* This could be interesting to readers who use Claude regularly, manage team subscriptions, or are comparing plan options, because it may affect pricing, available message capacity, and the value of upgrading or staying on a paid plan.
+
+### 为庆祝用量包上线，Claude 为 Pro、Max 和 Team 提供额外使用额度
+
+* 仅根据标题推测，这篇文章很可能介绍：为了配合新的**用量包（usage bundles）**上线，Claude 向 **Pro、Max 和 Team** 套餐用户提供一项促销或限时的**额外使用额度**。文章可能会说明哪些用户符合条件、可获得多少额度、何时发放，以及相关限制或使用条款。
+* 这对经常使用 Claude 的用户、管理团队订阅的人，或正在比较不同套餐的读者来说可能很有价值，因为这类信息会直接影响使用量、套餐性价比，以及是否值得升级或继续订阅。
+
+**[Read Original / 阅读原文](https://support.claude.com/en/articles/14246053-extra-usage-credit-for-pro-max-and-team-plans)**
+
+### openscreen - Free open-source app for creating polished screen demos
+
+* **What it does**
+  * OpenScreen is a free, open-source desktop app for recording screens and turning them into clean product demos and walkthrough videos.
+  * It positions itself as a simpler alternative to Screen Studio, focused on essential demo-making features without subscriptions or watermarks.
+
+* **Key features**
+  * Screen and window recording
+  * Automatic or manual zoom effects with customizable depth, timing, and position
+  * Microphone and system audio recording
+  * Video cropping, trimming, and segment-based speed control
+  * Background customization with wallpapers, colors, gradients, or custom assets
+  * Motion blur for smoother zoom/pan effects
+  * Annotation tools including text, arrows, and images
+  * Export support for multiple aspect ratios and resolutions
+  * Cross-platform distribution via GitHub Releases, with notes for macOS and Linux setup
+
+* **Why it's notable**
+  * It’s trending because it offers a genuinely useful alternative to a popular paid tool: free for personal and commercial use, open-source, and no watermark.
+  * The feature set covers the core workflow many creators, indie hackers, and product teams need for demo videos.
+  * Built with a modern TypeScript/Electron/React stack, it’s also attractive to developers who may want to inspect, modify, or contribute.
+  * The README is candid that the project is still in beta, which makes its strong community traction even more notable.
+
+### openscreen - 免费开源的精美录屏演示制作工具
+
+* **功能介绍**
+  * OpenScreen 是一款免费、开源的桌面应用，用于录制屏幕并制作更美观的产品演示、操作讲解和 walkthrough 视频。
+  * 它被定位为 Screen Studio 的简化版替代方案，主打核心功能、无订阅、无水印，并支持商业使用。
+
+* **主要特点**
+  * 支持录制整个屏幕或指定窗口
+  * 支持自动缩放和手动缩放，可自定义缩放强度、时长与位置
+  * 支持麦克风音频和系统音频录制
+  * 支持裁剪、剪辑片段、分段调速
+  * 支持设置壁纸、纯色、渐变或自定义背景
+  * 提供运动模糊，让平移和缩放效果更顺滑
+  * 支持添加文本、箭头、图片等标注
+  * 支持导出多种画幅比例和分辨率
+  * 可通过 GitHub Releases 获取安装包，并提供 macOS / Linux 的使用说明
+
+* **为何值得关注**
+  * 它的热度很高，是因为它切中了一个明确需求：提供一个免费、开源、可商用、无水印的 Screen Studio 替代品。
+  * 虽然不是 1:1 复刻，但已经覆盖了大多数用户制作产品演示视频所需的基础能力。
+  * 项目采用 Electron、React、TypeScript、Vite、PixiJS 等现代技术栈实现，对开发者和贡献者也很有吸引力。
+  * README 明确说明项目仍处于 beta 阶段，但依然获得大量关注，说明市场对这类开源工具的需求非常强。
+
+**[View Repository / 查看仓库](https://github.com/siddharthvaddem/openscreen)**
+
+### fff.nvim - Ultra-fast file search toolkit for AI agents and Neovim
+
+* **What it does**
+  * Provides a high-performance file search and fuzzy finder focused on **AI agents** and **Neovim**.
+  * Supports **fuzzy file matching, grep, globbing, and multi-grep**.
+  * Adds built-in “memory” to improve ranking and help AI tools find relevant files faster with fewer token-wasting round trips.
+
+* **Key features**
+  * Built for speed and accuracy, with a strong emphasis on **useful search results**, not just raw matching.
+  * Ranking takes into account signals like **frecency, git status, file size, and definition matches**.
+  * Can be installed as an **MCP tool** for agents like Claude Code, Codex, and similar coding assistants.
+  * Neovim plugin with:
+    * lazy-loading support
+    * preview pane
+    * flexible layout options
+    * typo-resistant fuzzy search
+    * live grep with multiple modes
+    * quickfix and multi-select support
+  * Rust-based core with prebuilt binary download or source build flow.
+
+* **Why it's notable**
+  * Trending because it targets a very timely use case: **making AI coding agents faster and more efficient at navigating large codebases**.
+  * Stands out by combining **developer UX for Neovim** with **agent-oriented search optimization**.
+  * The README makes a bold performance claim and positions FFF as a specialized alternative to slower built-in file search workflows, especially for large repositories.
+
+### fff.nvim - 面向 AI 代理与 Neovim 的极速文件搜索工具
+
+* **功能介绍**
+  * 这是一个专注于 **AI 代理** 和 **Neovim** 的高性能文件搜索与模糊查找工具。
+  * 支持 **模糊文件匹配、grep、glob 搜索以及多重 grep**。
+  * 内置“记忆”机制，可帮助 AI 更快找到相关文件，减少无效读取和 token 消耗。
+
+* **主要特点**
+  * 强调 **速度与准确性**，不仅搜索快，而且结果排序更实用。
+  * 结果排序会综合考虑 **frecency（访问频率/最近使用）、Git 状态、文件大小、定义匹配** 等因素。
+  * 可作为 **MCP 工具** 集成到 Claude Code、Codex 等 AI 编码助手中。
+  * 提供功能完善的 Neovim 插件，包括：
+    * 懒加载
+    * 文件预览窗口
+    * 灵活布局配置
+    * 抗拼写错误的模糊搜索
+    * 多模式实时 grep
+    * quickfix 与多选支持
+  * 底层使用 Rust 实现，并支持预编译二进制或源码构建。
+
+* **为何值得关注**
+  * 它之所以火，是因为切中了当前热门场景：**提升 AI 编程代理在大型代码库中的检索效率**。
+  * 不只是传统 Neovim 文件选择器，还把重点放在 **AI 搜索效率优化** 上，这一点很有差异化。
+  * README 中展示了其在大规模仓库场景下的定位，适合追求更快搜索体验的开发者和 AI 工作流用户。
+
+**[View Repository / 查看仓库](https://github.com/dmtrKovalenko/fff.nvim)**
+
+### openclaude - Open-source multi-provider coding-agent CLI
+
+* **What it does**
+  * Provides a terminal-first coding-agent CLI that works across many AI backends, including OpenAI-compatible APIs, Gemini, GitHub Models, Codex, Ollama, Atomic Chat, and other supported providers.
+  * Lets developers keep a consistent workflow for prompts, tools, agents, MCP, slash commands, and streaming output regardless of model provider.
+
+* **Key features**
+  * Supports 200+ models through OpenAI-compatible APIs plus direct integrations like Gemini, GitHub Models, Codex, and Ollama.
+  * Includes coding tools such as bash, file read/write/edit, grep, glob, tasks, agents, MCP, and web tools.
+  * Offers provider profile management via `/provider`, interactive GitHub onboarding via `/onboard-github`, and local model support with Ollama.
+  * Supports agent routing, allowing different sub-agents to use different models in the same session for cost/performance optimization.
+  * Provides web search/fetch capabilities, with DuckDuckGo fallback and optional Firecrawl integration.
+  * Includes a VS Code extension for launch integration and theme support.
+
+* **Why it's notable**
+  * Stands out by unifying cloud and local AI coding workflows in a single open-source CLI.
+  * Attractive to developers who want flexibility to switch between providers without changing their workflow.
+  * Its strong traction (**11.8k+ stars**) suggests growing interest in open, provider-agnostic coding-agent tools.
+
+### openclaude - 开源的多模型编程代理命令行工具
+
+* **功能介绍**
+  * 这是一个以终端为核心的开源编程代理 CLI，可接入多种 AI 提供商，包括 OpenAI 兼容接口、Gemini、GitHub Models、Codex、Ollama、Atomic Chat 等。
+  * 无论底层模型来自云端还是本地，用户都可以保持一致的工作流，例如提示词、工具调用、代理、MCP、斜杠命令和流式输出。
+
+* **主要特点**
+  * 支持通过 OpenAI 兼容 API 接入 200+ 模型，并原生支持 Gemini、GitHub Models、Codex、Ollama 等后端。
+  * 内置丰富的编程工作流工具，包括 bash、文件读写/编辑、grep、glob、任务、代理、MCP 和网页工具。
+  * 提供 `/provider` 配置提供商档案、`/onboard-github` 进行 GitHub Models 引导式接入，并支持 Ollama 本地运行。
+  * 支持代理路由，可在同一会话中让不同子代理调用不同模型，以优化成本与性能。
+  * 提供网页搜索与抓取能力，默认可用 DuckDuckGo，亦可选配 Firecrawl 增强搜索与抓取效果。
+  * 仓库还附带 VS Code 扩展，支持启动集成和主题支持。
+
+* **为何值得关注**
+  * 它把本地模型与云端模型统一到同一个开源 CLI 中，对开发者非常实用。
+  * 对希望自由切换模型提供商、避免工作流被单一平台绑定的用户尤其有吸引力。
+  * 仓库已获得 **11.8k+ Stars**，说明其在开源 AI 编程工具领域具备较高热度和关注度。
+
+**[View Repository / 查看仓库](https://github.com/Gitlawb/openclaude)**
+
+### openai/codex-plugin-cc - Codex plugin for Claude Code workflows
+
+* **What it does**
+  * Lets Claude Code users invoke Codex directly inside their existing workflow.
+  * Supports code review, adversarial review, and delegating tasks like bug investigation or fixes to Codex.
+  * Provides commands to manage background jobs, check status, fetch results, and cancel tasks.
+
+* **Key features**
+  * Slash commands such as `/codex:review`, `/codex:adversarial-review`, and `/codex:rescue`.
+  * Background job management with `/codex:status`, `/codex:result`, and `/codex:cancel`.
+  * Read-only review modes for normal and challenge-based review.
+  * Rescue/delegation flow for handing implementation or debugging tasks to Codex.
+  * Uses the local Codex CLI and app server, inheriting existing authentication and configuration.
+  * Optional **review gate** that can automatically block stopping if Codex finds issues.
+
+* **Why it's notable**
+  * Bridges two popular AI coding workflows by bringing Codex into Claude Code instead of forcing users to switch tools.
+  * Practical for developers who want deeper review or delegated task execution without leaving their current environment.
+  * Strong traction with **11k+ stars**, suggesting broad interest in AI-assisted multi-agent developer tooling.
+  * Especially notable for its support of both lightweight review commands and longer-running background delegation.
+
+### openai/codex-plugin-cc - 面向 Claude Code 的 Codex 插件
+
+* **功能介绍**
+  * 让 Claude Code 用户可以直接在现有开发流程中调用 Codex。
+  * 支持代码审查、对抗式审查，以及将排查 Bug、修复问题等任务委托给 Codex。
+  * 提供后台任务管理能力，可查看状态、获取结果并取消任务。
+
+* **主要特点**
+  * 提供多个斜杠命令，例如 `/codex:review`、`/codex:adversarial-review`、`/codex:rescue`。
+  * 支持后台运行，并通过 `/codex:status`、`/codex:result`、`/codex:cancel` 管理任务。
+  * 包含只读审查模式，既可进行常规代码审查，也可进行更具挑战性的设计/风险审查。
+  * 支持将实现、调试、问题排查等工作委托给 Codex 子代理完成。
+  * 复用本地 Codex CLI 与配置，沿用已有登录状态、模型设置和环境。
+  * 提供可选的 **review gate**，在发现问题时可阻止流程结束，促使先修复再继续。
+
+* **为何值得关注**
+  * 它把 Codex 能力直接接入 Claude Code，降低了开发者在不同 AI 工具之间切换的成本。
+  * 对希望在熟悉环境中完成代码审查、任务分派和异步处理的开发者来说非常实用。
+  * 仓库已获得 **11k+ Star**，显示出 AI 编程协作工具方向的强烈关注度。
+  * 兼顾快速审查与长时间后台任务，体现出较成熟的开发工作流整合思路。
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### 🎬 Why Florence's Top Cop Was Always a Foreigner - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* **What the video covers:** A discussion on why Florence historically appointed a foreigner as its chief law enforcement official, likely exploring the political logic and institutional design behind that choice.
+* **Key topics discussed:** Florentine governance, political neutrality, power balancing, medieval or Renaissance civic institutions, and Ada Palmer’s historical interpretation.
+* **Why it's worth watching:** It offers an intriguing lens on how societies build trust in public institutions, especially by limiting local bias and factional influence.
+
+### 🎬 为什么佛罗伦萨的最高警务官总是由外国人担任 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* **视频内容概述：** 这期视频探讨了佛罗伦萨为何在历史上常任命外国人担任最高执法官员，可能重点分析这一安排背后的政治逻辑与制度设计。
+* **主要话题：** 佛罗伦萨的治理体系、政治中立性、权力制衡、中世纪或文艺复兴时期的城市制度，以及 Ada Palmer 的历史解读。
+* **为何值得观看：** 这为理解社会如何通过制度设计建立公众信任提供了一个很有意思的案例，尤其是如何减少地方派系与偏袒问题。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=B37saIexYr4)**
+
+### 🎬 Arena War | 4 algorithms fighting for their life
+**Channel:** swap.
+
+* **What the video covers:** A competitive simulation where four different algorithms battle inside a circular arena, each trying to claim as much territory as possible.
+* **Key topics discussed:** Territory expansion strategies, greedy selection behavior, algorithmic competition, and how simple decision rules affect outcomes in a constrained space.
+* **Why it's worth watching:** It turns abstract algorithm concepts into a visual, game-like showdown that’s easy to follow and fun for anyone interested in coding, simulations, or emergent behavior.
+
+### 🎬 Arena War｜4种算法的生存之战
+**频道:** swap.
+
+* **视频内容概述：** 影片展示了一个圆形竞技场中的模拟对决，4种不同算法彼此竞争，目标是尽可能占领更多区域。
+* **主要话题：** 领地扩张策略、贪心算法如何优先选择最近的未占领单元、算法之间的竞争机制，以及简单规则如何影响最终结果。
+* **为何值得观看：** 它把抽象的算法原理变成直观又有趣的可视化对抗，非常适合对编程、模拟系统和涌现行为感兴趣的观众。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=w31JkwWaFNo)**
+
+### 🎬 Redacted Sort: redacted
+**Channel:** swap.
+
+* **What the video covers**  
+  A mysterious sorting algorithm called “Redacted Sort,” framed as an algorithm that somehow makes “evidence disappear.” The video likely explores the concept through a playful or unconventional coding lens.
+
+* **Key topics discussed**  
+  * Sorting algorithms and experimental algorithm design  
+  * How the algorithm behaves compared with standard sorting methods  
+  * Programming logic, implementation ideas, and possible edge cases  
+  * The humor or novelty behind the “redacted” theme
+
+* **Why it's worth watching**  
+  * It offers a fresh, intriguing take on a familiar computer science topic  
+  * Good for viewers who enjoy algorithm visuals, coding curiosities, and unusual programming ideas  
+  * The concept is catchy and likely makes abstract sorting behavior more memorable
+
+### 🎬 Redacted Sort：已涂黑排序
+**频道:** swap.
+
+* **视频内容概述**  
+  这支视频介绍了一种名为“Redacted Sort”的神秘排序算法，并用“让证据消失”的戏谑设定来包装这个概念，整体风格应偏向有趣、另类的编程讲解。
+
+* **主要话题**  
+  * 排序算法与非常规算法设计  
+  * 它与传统排序方法相比的运行方式与特点  
+  * 编程实现思路、逻辑结构以及可能的边界情况  
+  * “redacted（涂黑/删改）”主题背后的幽默感与创意表达
+
+* **为何值得观看**  
+  * 用新鲜、有记忆点的方式讲解经典计算机科学主题  
+  * 适合喜欢算法可视化、编程趣味内容和冷门点子的观众  
+  * 标题和设定很有吸引力，能让抽象的排序概念更容易留下印象
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J7o7jSwZGfk)**
+
+### 🎬 FULL Claude Code Tutorial for Beginners in 2026! (Step-By-Step)
+**Channel:** Tech With Tim
+
+* **What the video covers:** A beginner-friendly, step-by-step tutorial on using Claude Code, likely aimed at helping viewers get started quickly and understand practical workflows.
+* **Key topics discussed:** Claude Code setup, core features, how beginners can use it effectively, and likely broader interview-prep context tied to coding, DSA, and system design.
+* **Why it's worth watching:** It looks useful for newcomers who want a guided introduction rather than piecing things together from scattered sources, especially if they're also thinking about coding interview preparation in 2026.
+
+### 🎬 2026 年 Claude Code 新手完整教程！（一步一步教学）
+**频道:** Tech With Tim
+
+* **视频内容概述：** 这是一支面向初学者的 Claude Code 分步教学视频，重点应是帮助观众快速上手并了解实际使用方式。
+* **主要话题：** Claude Code 的基础入门、设置与使用方法、核心功能，以及可能延伸到编程面试准备、DSA 和系统设计相关背景。
+* **为何值得观看：** 对想在 2026 年快速掌握 Claude Code 的新手来说，这类循序渐进的教程很有价值；如果你也在准备技术面试，这支视频的相关背景内容也可能有帮助。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qYqIhX9hTQk)**
 
