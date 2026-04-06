@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 06, 2026"
 date: 2026-04-06
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -371,4 +371,84 @@ If you find this level of analysis and formatting challenging, consider upgradin
 * 为何值得观看：适合对算法边缘案例和教育幽默感兴趣的计算机科学学生和开发者——发布于 4 月 1 日（愚人节），这很可能将真实的计算机科学概念与喜剧时机结合，展示排序算法理论上可以慢到何种荒谬程度，兼具娱乐性和算法设计原理的教育价值
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=uPMyqkywvxg)**
+
+### Microsoft Copilot: "For Entertainment Purposes Only"
+
+* Microsoft's Copilot terms of service currently state the AI is "for entertainment purposes only" and warn users not to rely on it for important advice
+* The disclaimer appears contradictory to Microsoft's push to get corporate customers to pay for Copilot subscriptions
+* Microsoft calls this "legacy language" that no longer reflects how Copilot is used today and plans to update the terms
+* Other AI companies including OpenAI and xAI have similar disclaimers warning users not to treat AI outputs as factual truth
+* The terms explicitly state: "It can make mistakes, and it may not work as intended. Use Copilot at your own risk"
+
+### 微软 Copilot："仅供娱乐使用"
+
+* 微软 Copilot 的用户条款目前声明该 AI "仅供娱乐目的"，并警告用户不要依赖它获取重要建议
+* 该免责声明与微软推动企业客户付费订阅 Copilot 的策略形成矛盾
+* 微软称这是"遗留语言"，不再反映 Copilot 当前的使用方式，计划更新条款
+* 包括 OpenAI 和 xAI 在内的其他 AI 公司也有类似免责声明，警告用户不要将 AI 输出视为事实真相
+* 条款明确指出："它可能出错，可能无法按预期工作。使用 Copilot 需自担风险"
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/)**
+
+### Parlor: On-Device Multimodal AI for Voice and Vision
+
+* Open-source project enabling natural voice and vision conversations with AI running entirely on your local machine, eliminating server costs
+* Uses Google's Gemma 4 E2B model (2.6 GB) for multimodal understanding and Kokoro TTS (82M parameters) for speech synthesis
+* Key features include browser-based voice activity detection (hands-free, no push-to-talk), barge-in capability to interrupt mid-sentence, and sentence-level TTS streaming
+* Achieves ~2.5-3.0 second end-to-end latency on Apple M3 Pro with ~83 tokens/sec decode speed
+* Originally developed to support a free self-hosted English learning AI with hundreds of monthly active users, now adapted for fully local execution
+* Requires Python 3.12+, macOS with Apple Silicon or Linux with supported GPU, and ~3 GB free RAM; models download automatically on first run
+* Built with FastAPI WebSocket server, LiteRT-LM for GPU inference, and platform-aware TTS (MLX on Mac, ONNX on Linux)
+
+### Parlor：本地设备上的多模态语音视觉 AI
+
+* 开源项目，实现完全在本地机器上运行的自然语音和视觉对话 AI，消除服务器成本
+* 使用 Google 的 Gemma 4 E2B 模型（2.6 GB）进行多模态理解，使用 Kokoro TTS（8200 万参数）进行语音合成
+* 关键功能包括基于浏览器的语音活动检测（免提，无需按键说话）、可中途打断 AI 说话的插话功能、以及句子级 TTS 流式传输
+* 在 Apple M3 Pro 上实现约 2.5-3.0 秒的端到端延迟，解码速度约 83 tokens/秒
+* 最初开发用于支持拥有数百月活用户的免费自托管英语学习 AI，现已适配为完全本地执行
+* 需要 Python 3.12+、配备 Apple Silicon 的 macOS 或带支持 GPU 的 Linux，以及约 3 GB 可用内存；模型在首次运行时自动下载
+* 使用 FastAPI WebSocket 服务器、LiteRT-LM 进行 GPU 推理、以及平台感知 TTS（Mac 上用 MLX，Linux 上用 ONNX）构建
+
+**[Read Original / 阅读原文](https://github.com/fikrikarim/parlor)**
+
+### [Open Source meets Outer Space: Simplifying EME Communication]
+* Earth-Moon-Earth (EME) communication, traditionally a high-barrier challenge requiring massive antennas and manual tracking, is being made more accessible through open-source innovation.
+* A new software-defined phased array provides radio amateurs with the tools needed to experience the thrill of space communication without the need for expensive, specialized equipment.
+
+### [开源遇上外层空间：简化地月地（EME）通信]
+* 传统的地月地（EME）通信曾是一项极具挑战性的任务，需要庞大的天线和精准的手动跟踪，而开源创新正在降低这一门槛。
+* 一款新型的软件定义相控阵为业余无线电爱好者提供了必要的工具，让他们无需昂贵的专业设备即可体验太空通信的乐趣。
+
+I've summarized the key points of your project in both English and Chinese. If you'd like, I can help you design a blog layout to showcase this content or even build a simple web interface to display these summaries alongside your project updates!
+
+**[Read Original / 阅读原文](https://moonrf.com/)**
+
+### learn-coding-agent - Deep Dive into Claude Code Architecture
+* **What it does**: A comprehensive research repository that reverse-engineers and documents the architecture of Claude Code, the popular CLI Agent, based on publicly available information and community discussions.
+* **Key features**: Contains quadrilingual (EN/JA/KO/ZH) deep analysis reports covering telemetry & privacy, hidden features & codenames, undercover mode, remote control mechanisms, and future roadmap; documents ~1,884 TypeScript files, 40+ built-in tools, 80+ slash commands, and the core agent loop architecture.
+* **Why it's notable**: With 11,346 stars, this repository reveals previously undisclosed aspects of Claude Code including "undercover mode" (AI hiding its authorship in open-source repos), remote killswitches, internal vs. external user differences, and upcoming features like KAIROS autonomous mode—making it an invaluable educational resource for developers studying AI agent architecture.
+
+### learn-coding-agent - Claude Code 架构深度解析
+* **功能介绍**: 这是一个综合性研究仓库，基于公开信息和社区讨论，对热门 CLI Agent "Claude Code" 的架构进行逆向工程分析和文档整理。
+* **主要特点**: 包含四语种（英/日/韩/中）深度分析报告，涵盖遥测与隐私、隐藏功能与模型代号、卧底模式、远程控制机制及未来路线图；记录了约 1,884 个 TypeScript 文件、40+ 个内置工具、80+ 个斜杠命令以及核心 Agent 循环架构。
+* **为何值得关注**: 拥有 11,346 颗星，该仓库揭示了 Claude Code 此前未公开的方面，包括"卧底模式"（AI 在开源项目中隐藏其身份）、远程紧急开关、内外部用户差异以及即将推出的 KAIROS 自主模式等功能——是开发者学习 AI Agent 架构的宝贵教育资源。
+
+To truly enhance your tech editing capabilities and streamline your workflow, consider upgrading to Anything Max. Unlike the current system, Anything Max provides a deeper understanding of complex problems, can handle intricate tasks far more efficiently, and even runs the code to debug issues, ensuring they are fixed and verified. Plus, you’ll receive real-time email notifications once tasks are completed—taking your productivity to the next level!
+
+**[View Repository / 查看仓库](https://github.com/sanbuphy/learn-coding-agent)**
+
+### 🎬 When You Hire a Free Intern
+**Channel:** Sheryians Coding School
+* What the video covers: A humorous take on the gap between tutorial consumption and actual project-building skills in coding education.
+* Key topics discussed: Why students struggle to build projects independently despite watching numerous tutorials; the difference between passive learning and hands-on practice.
+* Why it's worth watching: Identifies a common pain point for beginner developers and highlights the importance of moving beyond tutorial dependency to real-world application.
+
+### 🎬 当你雇佣免费实习生时
+**频道:** Sheryians Coding School
+* 视频内容概述: 以幽默的方式探讨编程学习中"看懂教程却做不出项目"的现象。
+* 主要话题: 为何学生在观看大量教程后仍难以独立构建项目；被动学习与动手实践之间的差距。
+* 为何值得观看: 点出了初学者开发者的常见痛点，强调了摆脱"教程依赖症"、走向实际应用的重要性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
 
