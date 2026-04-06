@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 06, 2026"
 date: 2026-04-06
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -451,4 +451,38 @@ To truly enhance your tech editing capabilities and streamline your workflow, co
 * 为何值得观看: 点出了初学者开发者的常见痛点，强调了摆脱"教程依赖症"、走向实际应用的重要性。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IWyLERVVp8c)**
+
+<!-- [Title-Only] -->
+### France Pulls Last Gold Held in US for $15B Gain
+
+* This article likely covers France's decision to repatriate its remaining gold reserves that were stored in the United States, resulting in a substantial financial gain of approximately $15 billion. This suggests either a significant appreciation in gold prices since the reserves were originally stored, or a strategic shift in how France manages its national assets.
+* Why it's interesting: This move reflects broader geopolitical and financial dynamics—potential concerns about US financial stability, changing monetary policies, diversification of reserve assets, or shifts in European financial independence. Gold repatriation by major nations has historically signaled confidence (or lack thereof) in international financial systems.
+
+---
+
+### 法国从美国提取最后一批黄金储备，获得150亿美元收益
+
+* 该文章很可能报道了法国决定将存
+
+**[Read Original / 阅读原文](https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/)**
+
+### Gemma Gem: On-Device AI Assistant Browser Extension
+
+* **Privacy-first AI**: Runs Google's Gemma 4 model entirely in your browser via WebGPU with no API keys, cloud dependencies, or data transmission
+* **Intelligent page interaction**: Can read webpage content, take screenshots, click elements, fill forms, scroll, and execute JavaScript directly in the browser context
+* **Two model variants**: Choose between E2B (~500MB) for faster performance or E4B (~1.5GB) for higher quality, both cached locally after first download
+* **Modular architecture**: Built on WXT framework with three components—Offscreen Document (model inference), Service Worker (message routing), and Content Script (UI + DOM manipulation)
+* **Developer-friendly**: Open source with development/production builds, comprehensive logging, and zero-dependency agent core that can be extracted as a standalone library
+* **Customizable settings**: Toggle native thinking mode, adjust max iterations, clear conversation context per page, and disable per-hostname
+
+### Gemma Gem：设备端运行的浏览器 AI 助手扩展
+
+* **隐私优先的 AI**：通过 WebGPU 在浏览器中完全本地运行 Google Gemma 4 模型，无需 API 密钥、云服务或数据传输
+* **智能页面交互**：可读取网页内容、截屏、点击元素、填写表单、滚动页面，并直接在浏览器上下文中执行 JavaScript
+* **两种模型选择**：可选择 E2B（约 500MB）以获得更快性能，或 E4B（约 1.5GB）以获得更高质量，首次下载后均本地缓存
+* **模块化架构**：基于 WXT 框架构建，包含三个组件——离屏文档（模型推理）、Service Worker（消息路由）和内容脚本（UI + DOM 操作）
+* **开发者友好**：开源项目，支持开发/生产构建、完整的日志记录，以及可独立提取的零依赖 agent 核心
+* **可自定义设置**：可切换原生思考模式、调整最大迭代次数、清除单页对话上下文，以及按主机名禁用扩展
+
+**[Read Original / 阅读原文](https://github.com/kessler/gemma-gem)**
 
