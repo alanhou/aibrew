@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 08, 2026"
 date: 2026-04-08
-description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -756,4 +756,65 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 美洲原住民口述历史中频繁提及赌博,一些故事描述神灵参与骰子游戏,表明其具有深厚的文化和宗教意义
 
 **[Read Original / 阅读原文](https://www.nbcnews.com/science/science-news/native-americans-dice-games-probability-study-rcna266426)**
+
+### YouTube Platform Overview
+
+* The content shows YouTube's main navigation structure with primary links including About, Press, Copyright, Contact, Creators, Advertise, and Developers sections
+* Secondary footer links provide access to Terms, Privacy, Policy & Safety, How YouTube works, Test new features, and NFL Sunday Ticket
+* The HTML structure reveals YouTube's web component architecture using custom elements like `<ytd-app>` and `<ytd-masthead>` for modular design
+* A search functionality is embedded with autocomplete disabled and hidden input field for query submission
+* The interface includes a hamburger menu icon (SVG) for mobile/responsive navigation
+
+### YouTube 平台概览
+
+* 内容展示了 YouTube 的主导航结构,包含关于我们、新闻中心、版权、联系我们、创作者、广告和开发者等主要链接
+* 次要页脚链接提供服务条款、隐私政策、政策与安全、YouTube 运作方式、测试新功能和 NFL Sunday Ticket 的访问入口
+* HTML 结构揭示了 YouTube 使用自定义元素(如 `<ytd-app>` 和 `<ytd-masthead>`)的 Web 组件架构,实现模块化设计
+* 嵌入了搜索功能,禁用自动完成并使用隐藏输入框提交查询
+* 界面包含汉堡菜单图标(SVG)用于移动端/响应式导航
+
+**[Read Original / 阅读原文](https://www.youtube.com/watch?v=Lw4W9V57SKs&t=5716s)**
+
+### Moving Railway's Frontend Off Next.js
+
+* Railway migrated their entire production frontend from Next.js to Vite + TanStack Router in two PRs with zero downtime
+* Build times dropped from 10+ minutes to under 2 minutes; Next.js builds were taking 6 minutes alone with half spent on "finalizing page optimization"
+* Next.js Pages Router didn't fit their client-heavy architecture - the dashboard is stateful, canvas is real-time, and websockets are everywhere
+* TanStack Start provided type-safe routing, first-class layouts, instant HMR, SSR where needed, and a more explicit model with less framework magic
+* Migration strategy: PR 1 replaced Next.js-specific APIs (next/image, next/head, next/router) with framework-agnostic alternatives; PR 2 swapped the framework and migrated 200+ routes
+* Trade-offs included losing built-in image optimization (replaced with Fastly edge optimization), some ecosystem tools (rebuilt in-house), and framework maturity
+* Railway now uses Fastly for edge caching with Vite's content-hashed chunks, meaning updates only invalidate changed modules
+* The migration demonstrates Railway's philosophy: frontends should optimize for iteration speed while infrastructure handles deployment invisibly
+
+### Railway 前端迁移：告别 Next.js
+
+* Railway 将整个生产环境前端从 Next.js 迁移到 Vite + TanStack Router，通过两个 PR 完成，零停机时间
+* 构建时间从 10 分钟以上降至 2 分钟以内；Next.js 构建单独耗时 6 分钟，其中一半时间卡在"最终页面优化"
+* Next.js Pages Router 不适合他们的客户端重型架构 - 仪表板是有状态的，画布是实时的，到处都是 WebSocket
+* TanStack Start 提供了类型安全路由、一流的布局支持、即时 HMR、按需 SSR，以及更明确的模型和更少的框架魔法
+* 迁移策略：PR 1 将 Next.js 特定 API（next/image、next/head、next/router）替换为框架无关的替代方案；PR 2 更换框架并迁移 200 多个路由
+* 权衡取舍包括失去内置图片优化（改用 Fastly 边缘优化）、部分生态工具（内部重建）以及框架成熟度
+* Railway 现在使用 Fastly 进行边缘缓存，配合 Vite 的内容哈希分块，更新只会使更改的模块失效
+* 此次迁移体现了 Railway 的理念：前端应优化迭代速度，而基础设施应无形地处理部署
+
+**[Read Original / 阅读原文](https://blog.railway.com/p/moving-railways-frontend-off-nextjs)**
+
+<!-- [Title-Only] -->
+### GLM-5.1: Towards Long-Horizon Tasks
+
+*Note: This introduction is based solely on the article title, as the full content was not available.*
+
+* This article likely discusses GLM-5.1, a new version of the GLM (General Language Model) series that focuses on handling "long-horizon tasks" - complex, multi-step problems that require sustained reasoning and planning over extended sequences
+* The piece probably covers technical improvements in the model's architecture or training that enable it to maintain context and coherence across longer interactions, potentially addressing challenges like memory management, task decomposition, and goal-oriented behavior
+* Why it might be interesting: Long-horizon task handling is a critical frontier in AI development, relevant for applications like complex coding projects, research assistance, and autonomous agents that need to work toward goals over time rather than just responding to single prompts
+
+### GLM-5.1：面向长期任务
+
+*注：本简介仅基于文章标题，因无法获取完整内容。*
+
+* 本文可能介绍 GLM-5.1，这是 GLM（通用语言模型）系列的新版本，专注于处理"长期任务"——需要在较长序列中持续推理和规划的复杂多步骤问题
+* 文章可能涵盖模型架构或训练方面的技术改进，使其能够在更长的交互过程中保持上下文和连贯性，可能涉及内存管理、任务分解和目标导向行为等挑战
+* 为何值得关注：长期任务处理是 AI 发展的关键前沿领域，对复杂编程项目、研究辅助以及需要长期朝着目标工作而非仅响应单个提示的自主代理等应用具有重要意义
+
+**[Read Original / 阅读原文](https://z.ai/blog/glm-5.1)**
 
