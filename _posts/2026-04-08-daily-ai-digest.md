@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 08, 2026"
 date: 2026-04-08
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -240,147 +240,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
   - Three mining modes: projects (code/docs), conversations (chat exports), and general (auto-classified decisions/milestones)
 
 * **Why it's notable**: This is the first memory system to beat all commercial alternatives while remaining completely free and local. The "memory palace" spatial organization (wings/halls/rooms/closets) improves retrieval by 34% over flat storage. It solves the critical problem of AI amnesia - where 19.5 million tokens of decisions and context disappear after each session - by compressing everything into ~170 tokens for instant recall. The AAAK dialect is particularly innovative: a lossless shorthand that any LLM can read natively without decoders or APIs.
-
----
-
-### MemPalace - 有史以来基准测试得分最高的 AI 记忆系统
-
-* **功能介绍**: MemPalace 是一个本地开源的 AI 记忆系统,可以存储和检索你与 AI 助手进行的每一次对话、决策和调试会话。与其他让 AI 决定记住什么的系统不同,MemPalace 存储所有内容,并通过结构化的"记忆宫殿"架构使其可搜索。
-
-* **主要特点**:
-  - 在 LongMemEval 基准测试中达到 96.6% 召回率(重排序后 100%)——有史以来公布的最高分数
-  - AAAK 压缩方言将内存占用减少 30 倍,同时保持零信息损失
-  - 完全本地运行,无云依赖或订阅费用(成本 $0,而竞品方案每年 $507)
-  - 适用于任何基于文本的 AI 模型(Claude、GPT、Gemini、Llama、Mistral),无需微调
-  - 通过 MCP(模型上下文协议)集成,实现无缝 AI 工具访问
-  - 三种挖掘模式:项目(代码/文档)、对话(聊天记录导出)和通用(自动分类决策/里程碑)
-
-* **为何值得关注**: 这是第一个在完全免费和本地运行的情况下击败所有商业替代方案的记忆系统。"记忆宫殿"空间组织结构(翼/厅/房间/壁橱)使检索效率比扁平存储提高 34%。它解决了 AI 失忆的关键问题——每次会话后 1950 万个 token 的决策和上下文消失——通过将所有内容压缩为约 170 个 token 以实现即时召回。AAAK 方言尤其创新:一种无损简写,任何 LLM 都可以原生读取,无需解码器或 API。
-
-**[View Repository / 查看仓库](https://github.com/milla-jovovich/mempalace)**
-
-
-## 🎬 YouTube Tech Videos / YouTube 技术视频
-
-### 🎬 Michael Nielsen – How science actually progresses
-**Channel:** Dwarkesh Patel
-
-* What the video covers: An in-depth conversation with Michael Nielsen exploring the real mechanisms behind scientific progress, beyond the idealized textbook narratives
-* Key topics discussed: The actual processes of scientific discovery, institutional structures that enable or hinder research, how breakthroughs happen in practice, and the gap between how science is taught versus how it's conducted
-* Why it's worth watching: Nielsen brings unique insights as both a quantum computing pioneer and science communicator, offering a candid look at what actually drives scientific advancement—essential viewing for anyone interested in research, innovation, or how knowledge is created
-
-### 🎬 Michael Nielsen – 科学进步的真实过程
-**频道:** Dwarkesh Patel
-
-* 视频内容概述: 与 Michael Nielsen 深度对话,探讨科学进步背后的真实机制,超越理想化的教科书叙述
-* 主要话题: 科学发现的实际过程、促进或阻碍研究的制度结构、突破性进展在实践中如何发生,以及科学教学与实际研究之间的差距
-* 为何值得观看: Nielsen 作为量子计算先驱和科学传播者,对科学进步的驱动力提供了独特而坦诚的见解——对任何关注研究、创新或知识创造的人来说都是必看内容
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=myP8UjAM1pk)**
-
-### 🎬 Learn Drone Programming with Python – Tutorial
-**Channel:** freeCodeCamp.org
-
-* What the video covers: A comprehensive tutorial on programming drones using Python with the Pyimverse high-fidelity simulator, designed for beginners with no prior drone programming experience
-* Key topics discussed: Python-based drone control, flight simulation, autonomous navigation, sensor integration, and practical programming exercises in a realistic virtual environment
-* Why it's worth watching: Offers hands-on experience with drone programming without needing physical hardware, making it accessible and cost-effective for anyone interested in robotics, automation, or aerial systems development
-
-### 🎬 使用 Python 学习无人机编程 – 教程
-**频道:** freeCodeCamp.org
-
-* 视频内容概述: 使用 Python 和高保真 Pyimverse 模拟器进行无人机编程的综合教程,专为零基础学习者设计
-* 主要话题: 基于 Python 的无人机控制、飞行模拟、自主导航、传感器集成以及在逼真虚拟环境中的实践编程练习
-* 为何值得观看: 无需购买实体硬件即可获得无人机编程的实践经验,为对机器人技术、自动化或航空系统开发感兴趣的学习者提供了经济实惠的入门途径
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k-yDYgc8AmU)**
-
-### 🎬 Learn how to render elements into your scenes in Three.js
-**Channel:** freeCodeCamp.org
-
-* What the video covers: A practical tutorial on rendering elements within Three.js scenes, covering the fundamentals of adding and displaying objects in 3D web environments
-* Key topics discussed: Three.js rendering pipeline, scene element integration, object placement and manipulation techniques for creating interactive 3D graphics
-* Why it's worth watching: Essential for web developers looking to build 3D experiences in the browser, taught by freeCodeCamp with hands-on examples that make complex 3D concepts accessible
-
-### 🎬 学习如何在 Three.js 场景中渲染元素
-**频道:** freeCodeCamp.org
-
-* 视频内容概述: 实用教程，讲解如何在 Three.js 场景中渲染元素，涵盖在 3D 网页环境中添加和显示对象的基础知识
-* 主要话题: Three.js 渲染管线、场景元素集成、用于创建交互式 3D 图形的对象放置和操作技术
-* 为何值得观看: 对于想要在浏览器中构建 3D 体验的 Web 开发者来说必不可少，由 freeCodeCamp 提供教学，通过实践示例让复杂的 3D 概念变得易于理解
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cmLlI2XqsVs)**
-
-### 🎬 SQL queries ❤️‍🔥🤖| SQL tamil easy
-**Channel:** DevNest Code
-
-* What the video covers: A quick SQL tutorial presented in Tamil, focusing on practical SQL queries and database operations
-* Key topics discussed: SQL query syntax, common interview questions, and hands-on coding examples for beginners
-* Why it's worth watching: Perfect for Tamil-speaking developers preparing for technical interviews or learning SQL fundamentals through short, digestible content
-
-### 🎬 SQL查询教程 | 泰米尔语SQL简易教学
-**频道:** DevNest Code
-
-* 视频内容概述: 使用泰米尔语讲解的SQL快速教程，专注于实用的SQL查询和数据库操作
-* 主要话题: SQL查询语法、常见面试问题以及适合初学者的实操编码示例
-* 为何值得观看: 非常适合讲泰米尔语的开发者准备技术面试或通过短视频学习SQL基础知识
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bGfcpCa2AEE)**
-
-### 🎬 It took a 2v1 to end his streak.
-**Channel:** swap.
-
-* A competitive gaming challenge where one player ("spiral") faces off against two hunters simultaneously
-* Features intense gameplay with spiral starting from the center position, ultimately taking their first loss after an impressive winning streak
-* Worth watching for fans of competitive gaming content who enjoy high-stakes 1v2 scenarios and seeing how top players perform under pressure - the fact it took two opponents to finally defeat spiral highlights the skill level on display
-
-### 🎬 两人联手才终结了他的连胜
-**频道:** swap.
-
-* 一场竞技游戏挑战,一名玩家("spiral")同时对战两名猎人
-* 展示了激烈的游戏过程,spiral从中心位置开始,最终在一连串胜利后首次失利
-* 值得观看的原因:适合喜欢高风险1v2场景的竞技游戏爱好者,展现顶尖玩家在压力下的表现 - 需要两名对手才能击败spiral这一事实凸显了其技术水平
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qHa9ZC-vNQA)**
-
-### Project Glasswing: Securing Critical Software for the AI Era
-
-* Anthropic's Claude Mythos Preview has autonomously identified thousands of zero-day vulnerabilities across major operating systems, web browsers, and critical software
-* Notable discoveries include a 27-year-old OpenBSD vulnerability, a 16-year-old FFmpeg flaw, and Linux kernel exploits enabling privilege escalation
-* All identified vulnerabilities have been reported to maintainers and patched, with cryptographic hashes provided for others pending fixes
-* Major tech companies (AWS, Microsoft, Cisco, Google, CrowdStrike) and financial institutions (JPMorganChase) have joined Project Glasswing to deploy AI-powered security at scale
-* Partners report that Mythos Preview significantly outperforms previous models on cybersecurity benchmarks like CyberGym and CTI-REALM
-* The initiative aims to democratize advanced security capabilities, particularly for open source maintainers who lack large security teams
-* Industry leaders emphasize the urgency: AI has collapsed the window between vulnerability discovery and exploitation from months to minutes
-* Project Glasswing represents a collaborative, cross-industry approach to using AI defensively before adversaries exploit the same capabilities
-
-### 玻璃翼计划：为AI时代保护关键软件
-
-* Anthropic的Claude Mythos Preview已自主识别出主流操作系统、网页浏览器和关键软件中的数千个零日漏洞
-* 重大发现包括OpenBSD中存在27年的漏洞、FFmpeg中存在16年的缺陷，以及可实现权限提升的Linux内核漏洞
-* 所有已识别的漏洞均已报告给维护者并修补，其他待修复漏洞已提供加密哈希值
-* 主要科技公司(AWS、微软、思科、谷歌、CrowdStrike)和金融机构(摩根大通)已加入玻璃翼计划，大规模部署AI驱动的安全防护
-* 合作伙伴报告称，Mythos Preview在CyberGym和CTI-REALM等网络安全基准测试中显著优于以往模型
-* 该计划旨在普及先进的安全能力，特别是为缺乏大型安全团队的开源维护者提供支持
-* 行业领袖强调紧迫性：AI已将漏洞发现到被利用的时间窗口从数月缩短至数分钟
-* 玻璃翼计划代表了一种跨行业协作方式，在对手利用相同能力之前将AI用于防御
-
-**[Read Original / 阅读原文](https://www.anthropic.com/glasswing)**
-
-<!-- [Title-Only] -->
-### System Card: Claude Mythos Preview [pdf]
-
-*Based on the title alone*, this appears to be an official technical document from Anthropic about a new Claude model variant called "Mythos Preview." System cards typically detail a model's capabilities, limitations, safety evaluations, and behavioral characteristics. This document likely covers:
-
-* Technical specifications and performance benchmarks of the Claude Mythos Preview model
-* Safety testing results, potential risks, and mitigation strategies
-* Comparison with previous Claude versions or other AI models
-* Use cases and recommended applications
-
-**Why it might be interesting:**
-* Provides transparency into Anthropic's AI development and safety practices
-* Offers insights into the next generation of Claude models and their capabilities
-* Valuable for developers, researchers, and organizations considering Claude integration
-* Demonstrates industry best practices for responsible AI documentation
 
 ---
 
@@ -626,4 +485,213 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 开发者选择AI编程助手的必看指南;通过实战对比帮助你选择最适合自己工作流程的工具,了解哪个AI在特定编程任务中表现最佳
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=fqJUJjvLSHk)**
+
+### Project Glasswing: Securing Critical Software for the AI Era
+
+* Anthropic's Claude Mythos Preview has autonomously identified thousands of zero-day vulnerabilities across major operating systems, web browsers, and critical software
+* Notable discoveries include a 27-year-old OpenBSD vulnerability, a 16-year-old FFmpeg flaw, and Linux kernel exploits enabling privilege escalation
+* All identified vulnerabilities have been reported to maintainers and patched, with cryptographic hashes provided for others pending fixes
+* Major tech companies (AWS, Microsoft, Cisco, Google, CrowdStrike) and financial institutions (JPMorganChase) have joined Project Glasswing to deploy AI-powered security at scale
+* Partners report that Mythos Preview significantly outperforms previous models on cybersecurity benchmarks like CyberGym and CTI-REALM
+* The initiative aims to democratize advanced security capabilities, particularly for open source maintainers who lack large security teams
+* Industry leaders emphasize the urgency: AI has collapsed the window between vulnerability discovery and exploitation from months to minutes
+* Project Glasswing represents a collaborative, cross-industry approach to using AI defensively before adversaries exploit the same capabilities
+
+### 玻璃翼计划：为AI时代保护关键软件
+
+* Anthropic的Claude Mythos Preview已自主识别出主流操作系统、网页浏览器和关键软件中的数千个零日漏洞
+* 重大发现包括OpenBSD中存在27年的漏洞、FFmpeg中存在16年的缺陷，以及可实现权限提升的Linux内核漏洞
+* 所有已识别的漏洞均已报告给维护者并修补，其他待修复漏洞已提供加密哈希值
+* 主要科技公司(AWS、微软、思科、谷歌、CrowdStrike)和金融机构(摩根大通)已加入玻璃翼计划，大规模部署AI驱动的安全防护
+* 合作伙伴报告称，Mythos Preview在CyberGym和CTI-REALM等网络安全基准测试中显著优于以往模型
+* 该计划旨在普及先进的安全能力，特别是为缺乏大型安全团队的开源维护者提供支持
+* 行业领袖强调紧迫性：AI已将漏洞发现到被利用的时间窗口从数月缩短至数分钟
+* 玻璃翼计划代表了一种跨行业协作方式，在对手利用相同能力之前将AI用于防御
+
+**[Read Original / 阅读原文](https://www.anthropic.com/glasswing)**
+
+### Artemis II Lunar Flyby - Historic Return to the Moon
+
+* NASA's Artemis II astronauts captured the first human-taken images of the Moon's far side during their historic test flight
+* The photos were released on April 7, 2026, taken during a seven-hour lunar flyby on April 6
+* The images reveal regions never before seen by humans, including a rare in-space solar eclipse
+* This mission marks humanity's return to the Moon's vicinity after decades
+
+### 阿尔忒弥斯二号月球飞越 - 历史性重返月球
+
+* NASA阿尔忒弥斯二号宇航员在历史性测试飞行中拍摄了首批由人类拍摄的月球背面图像
+* 这些照片于2026年4月7日发布,拍摄于4月6日为期七小时的月球飞越期间
+* 图像展示了人类从未见过的区域,包括罕见的太空日食现象
+* 此次任务标志着人类在数十年后重返月球附近区域
+
+**[Read Original / 阅读原文](https://www.nasa.gov/gallery/lunar-flyby/)**
+
+### US-Iran Provisional Ceasefire: Key Developments
+
+* US and Iran agreed to a two-week conditional ceasefire mediated by Pakistan, canceling Trump's ultimatum to bomb Iranian infrastructure
+* Trump's deadline was set for 8pm ET Tuesday, threatening attacks on power plants and bridges that legal scholars warned could constitute war crimes
+* Iran agreed to reopen the Strait of Hormuz (conduit for 1/5 of global energy supply) to allow safe passage coordinated with Iranian Armed Forces
+* The ceasefire allows both sides to negotiate over Iran's 10-point proposal for long-term peace in the Middle East
+* Israel also agreed to the two-week ceasefire, which takes effect once the Strait of Hormuz blockade ceases
+* Prior to the agreement, Israel struck Iranian infrastructure including rail bridges and power stations, while the US hit 50 military targets on Kharg Island
+
+### 美伊临时停火协议:关键进展
+
+* 美国和伊朗在巴基斯坦斡旋下达成为期两周的有条件停火协议,取消了特朗普轰炸伊朗基础设施的最后通牒
+* 特朗普的最后期限定于周二美东时间晚8点,威胁攻击发电厂和桥梁,法律学者警告此举可能构成战争罪
+* 伊朗同意重新开放霍尔木兹海峡(全球五分之一能源供应的通道),允许在伊朗武装部队协调下安全通行
+* 停火使双方能够就伊朗提出的中东长期和平10点建议进行谈判
+* 以色列也同意两周停火,停火将在霍尔木兹海峡封锁解除后立即生效
+* 协议达成前,以色列袭击了伊朗基础设施包括铁路桥梁和电站,美国则打击了哈尔克岛上的50个军事目标
+
+**[Read Original / 阅读原文](https://www.theguardian.com/us-news/2026/apr/07/trump-iran-war-ceasefire)**
+
+### MemPalace - The Highest-Scoring AI Memory System Ever Benchmarked
+
+* **What it does**: MemPalace is a local AI memory system that stores every conversation, decision, and debugging session you have with AI tools, making them searchable and retrievable without losing context. It achieves this by storing raw verbatim conversations in ChromaDB and organizing them using a spatial metaphor (wings, halls, rooms) inspired by ancient Greek memory techniques.
+
+* **Key features**: 
+  - Achieved 96.6% R@5 on LongMemEval benchmark (highest score ever published) using raw verbatim storage mode
+  - Runs entirely locally with zero cloud dependencies or API calls
+  - Integrates with Claude, ChatGPT, Cursor, Gemini via MCP (Model Context Protocol) providing 19 automated tools
+  - Three mining modes: projects (code/docs), conversations (chat exports), and general (auto-classifies decisions, preferences, milestones)
+  - Experimental AAAK compression dialect for token efficiency at scale (currently 84.2% R@5, under active development)
+  - Python-based, open source, works with any local LLM (Llama, Mistral, etc.)
+
+* **Why it's notable**: MemPalace solves a critical problem in AI-assisted development: the loss of context when chat sessions end. Unlike other memory systems that use LLMs to extract and summarize (losing nuance), MemPalace stores everything verbatim and makes it findable through semantic search. With 17,550+ stars, it's gained rapid attention for delivering the highest benchmark scores while remaining completely free and local. The team's transparent response to community criticism (addressing overstated claims about AAAK compression and metadata filtering) demonstrates genuine commitment to accuracy over hype.
+
+---
+
+### MemPalace - 有史以来基准测试得分最高的 AI 记忆系统
+
+* **功能介绍**: MemPalace 是一个本地 AI 记忆系统,可以存储您与 AI 工具进行的每次对话、决策和调试会话,使其可搜索和可检索而不丢失上下文。它通过在 ChromaDB 中存储原始逐字对话,并使用受古希腊记忆技术启发的空间隐喻(翼、厅、室)来组织它们来实现这一点。
+
+* **主要特点**:
+  - 在 LongMemEval 基准测试中使用原始逐字存储模式达到 96.6% R@5(有史以来发布的最高分数)
+  - 完全在本地运行,零云依赖或 API 调用
+  - 通过 MCP(模型上下文协议)与 Claude、ChatGPT、Cursor、Gemini 集成,提供 19 个自动化工具
+  - 三种挖掘模式:项目(代码/文档)、对话(聊天导出)和通用(自动分类决策、偏好、里程碑)
+  - 实验性 AAAK 压缩方言,用于大规模令牌效率(目前 84.2% R@5,正在积极开发中)
+  - 基于 Python,开源,适用于任何本地 LLM(Llama、Mistral 等)
+
+* **为何值得关注**: MemPalace 解决了 AI 辅助开发中的一个关键问题:聊天会话结束时上下文的丢失。与其他使用 LLM 提取和总结(丢失细微差别)的记忆系统不同,MemPalace 逐字存储所有内容,并通过语义搜索使其可查找。拥有 17,550+ 星标,它因在保持完全免费和本地化的同时提供最高基准分数而迅速获得关注。团队对社区批评的透明回应(解决关于 AAAK 压缩和元数据过滤的夸大声明)展示了对准确性而非炒作的真正承诺。
+
+**[View Repository / 查看仓库](https://github.com/milla-jovovich/mempalace)**
+
+### caveman - Claude Code skill that cuts 65% of tokens by talking like caveman
+
+* **What it does**: A Claude Code skill/plugin that makes AI agents communicate in compressed "caveman-speak" - dropping filler words, articles, and pleasantries while preserving full technical accuracy and code quality
+* **Key features**: 
+  * Reduces output tokens by ~65% on average (22-87% range across different tasks)
+  * Three intensity levels (Lite/Full/Ultra) for different compression needs
+  * Companion tool `caveman-compress` cuts input tokens by ~45% by compressing memory files
+  * Preserves all technical terms, code blocks, error messages, and accuracy
+  * One-line install via `npx skills add` for 40+ agents (Claude Code, Cursor, Copilot, Windsurf, Cline, etc.)
+* **Why it's notable**: Viral approach backed by research showing brevity constraints can improve LLM accuracy by 26 percentage points; delivers 3x faster responses, easier readability, and cost savings while maintaining 100% technical accuracy - turns verbose AI responses into efficient, actionable answers
+
+### caveman - 让 Claude 像原始人说话，减少 65% token 消耗
+
+* **功能介绍**: 一个 Claude Code 技能插件，让 AI 助手用压缩的"原始人语言"交流 - 去除冗余词汇、冠词和客套话，同时保持完整的技术准确性和代码质量
+* **主要特点**:
+  * 平均减少约 65% 的输出 token（不同任务范围 22-87%）
+  * 三种强度级别（轻度/标准/极限）适应不同压缩需求
+  * 配套工具 `caveman-compress` 可压缩记忆文件，减少 45% 输入 token
+  * 保留所有技术术语、代码块、错误信息和准确性
+  * 通过 `npx skills add` 一行命令安装，支持 40+ 种 AI 编程助手
+* **为何值得关注**: 病毒式传播的方法，有研究支持简洁约束可提升 LLM 准确率 26 个百分点；实现 3 倍响应速度提升、更易读的输出和成本节省，同时保持 100% 技术准确性 - 将冗长的 AI 回复转化为高效、可操作的答案
+
+**[View Repository / 查看仓库](https://github.com/JuliusBrussee/caveman)**
+
+
+## 🎬 YouTube Tech Videos / YouTube 技术视频
+
+### 🎬 Michael Nielsen – Why aliens will have a different tech stack than us
+**Channel:** Dwarkesh Patel
+
+* What the video covers: A deep dive into how alien civilizations would likely develop fundamentally different technological approaches and tools compared to humanity, exploring the relationship between intelligence, environment, and technological evolution.
+
+* Key topics discussed: The contingency of human technology on our specific evolutionary path and environment; how different physical constraints and cognitive architectures would lead to divergent "tech stacks"; the implications for SETI and understanding intelligence; whether certain technologies are universal or culturally/biologically specific.
+
+* Why it's worth watching: Michael Nielsen (known for his work on quantum computing and open science) offers a fascinating thought experiment that challenges assumptions about technological inevitability and provides fresh perspective on what makes human technology uniquely human—essential viewing for anyone interested in the philosophy of technology, astrobiology, or the nature of innovation.
+
+---
+
+### 🎬 Michael Nielsen – 为什么外星人会拥有与我们不同的技术栈
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 深入探讨外星文明为何会发展出与人类根本不同的技术方法和工具,探索智能、环境与技术演化之间的关系。
+
+* 主要话题: 人类技术对我们特定进化路径和环境的依赖性;不同的物理约束和认知架构如何导致不同的"技术栈";对SETI(搜寻地外文明)和理解智能的启示;某些技术是普遍的还是文化/生物学特定的。
+
+* 为何值得观看: Michael Nielsen(以量子计算和开放科学研究闻名)提出了一个引人入胜的思想实验,挑战了关于技术必然性的假设,并为理解人类技术的独特性提供了全新视角——对技术哲学、天体生物学或创新本质感兴趣的人必看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=myP8UjAM1pk)**
+
+### 🎬 Learn Drone Programming with Python – Tutorial
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive tutorial on programming drones using Python with the Pyimverse high-fidelity simulator, designed for beginners with no prior drone programming experience
+* Key topics discussed: Python-based drone control, flight simulation, autonomous navigation, sensor integration, and practical programming exercises in a realistic virtual environment
+* Why it's worth watching: Offers hands-on experience with drone programming without needing physical hardware, making it accessible and cost-effective for anyone interested in robotics, automation, or aerial systems development
+
+### 🎬 使用 Python 学习无人机编程 – 教程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 使用 Python 和高保真 Pyimverse 模拟器进行无人机编程的综合教程,专为零基础学习者设计
+* 主要话题: 基于 Python 的无人机控制、飞行模拟、自主导航、传感器集成,以及在逼真虚拟环境中的实践编程练习
+* 为何值得观看: 无需购买实体硬件即可获得无人机编程的实践经验,为对机器人技术、自动化或航空系统开发感兴趣的学习者提供了经济实惠的入门途径
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k-yDYgc8AmU)**
+
+### 🎬 SQL queries ❤️‍🔥🤖| SQL tamil easy
+
+**Channel:** DevNest Code
+
+* What the video covers: A quick SQL tutorial presented in Tamil, focusing on practical SQL queries and interview preparation
+* Key topics discussed: SQL query syntax, common interview questions, and hands-on coding examples for database operations
+* Why it's worth watching: Perfect for Tamil-speaking developers preparing for technical interviews or wanting to strengthen their SQL fundamentals through concise, accessible explanations
+
+---
+
+### 🎬 SQL查询教程 | 泰米尔语SQL简易教程
+
+**频道:** DevNest Code
+
+* 视频内容概述: 使用泰米尔语讲解的SQL快速教程，专注于实用的SQL查询和面试准备
+* 主要话题: SQL查询语法、常见面试问题以及数据库操作的实践编码示例
+* 为何值得观看: 非常适合讲泰米尔语的开发者进行技术面试准备，或通过简洁易懂的讲解巩固SQL基础知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bGfcpCa2AEE)**
+
+### 🎬 It took a 2v1 to end his streak.
+**Channel:** swap.
+
+* A competitive gaming challenge where one player ("spiral") faces off against two hunters simultaneously
+* Features intense gameplay with spiral starting from the center position, ultimately taking their first loss after an impressive winning streak
+* Worth watching for fans of competitive gaming content who enjoy high-stakes 1v2 scenarios and seeing how top players perform under pressure - the fact it took two opponents to finally defeat spiral highlights the skill level on display
+
+### 🎬 两人联手才终结了他的连胜
+**频道:** swap.
+
+* 一场竞技游戏挑战,玩家"spiral"同时对战两名猎人
+* 展示了激烈的游戏过程,spiral从中心位置开始,最终在一波连胜后首次失利
+* 值得观看的原因:适合喜欢高风险1v2场景的竞技游戏爱好者,可以看到顶尖玩家在压力下的表现——需要两名对手才能击败spiral这一事实充分展现了其技术水平
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qHa9ZC-vNQA)**
+
+### 🎬 What is Vibe Coding?
+**Channel:** Google
+
+* Explores the concept of "vibe coding" - a new approach to software development that combines natural language with AI
+* Discusses how developers can use conversational, creative inputs to build functional tools and applications
+* Worth watching for anyone interested in how AI is transforming the coding experience, making development more intuitive and accessible by bridging the gap between human ideas and executable code
+
+### 🎬 什么是氛围编程？
+**频道:** Google
+
+* 探讨"氛围编程"概念——一种将自然语言与AI结合的全新软件开发方式
+* 讨论开发者如何通过对话式、创意性的输入来构建功能性工具和应用
+* 值得观看，适合所有对AI如何改变编程体验感兴趣的人，展示了如何让开发变得更直观、更易上手，在人类想法和可执行代码之间架起桥梁
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tYhgWRJeYzs)**
 
