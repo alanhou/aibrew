@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 08, 2026"
 date: 2026-04-08
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -694,4 +694,66 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看，适合所有对AI如何改变编程体验感兴趣的人，展示了如何让开发变得更直观、更易上手，在人类想法和可执行代码之间架起桥梁
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=tYhgWRJeYzs)**
+
+### Protect Your Shed: Balancing Enterprise Engineering with Personal Projects
+
+* **Two modes of engineering**: Enterprise work (skyscrapers) requires blueprints, permits, and coordination, while personal projects (sheds) offer freedom to build quickly without bureaucracy
+* **Enterprise teaches scale**: Working with banking systems and tools like Cloud Spanner provides experience with defensive design, failure modes, and engineering at unattainable scale—but comes with rigidity
+* **Personal projects preserve craft**: Side projects keep curiosity alive and prevent burnout when enterprise work becomes repetitive; they're where you remember building software is fun
+* **Bidirectional learning**: Patterns from enterprise work naturally improve personal projects (adding structure), while shed experiments accelerate learning at work (containerization, cloud infrastructure)
+* **Rapid experimentation**: Personal projects allow trying new tools and approaches without proposals, with low-cost failure providing valuable lessons and broader technical perspective
+* **Career development**: Maintaining side projects does more for your career than interview prep; they let you be architect, developer, and user simultaneously
+* **Essential balance**: Engineers who only build enterprise systems eventually burn out; personal projects protect your identity as a builder rather than just an employee
+
+### 保护你的小屋：平衡企业工程与个人项目
+
+* **两种工程模式**：企业工作（摩天大楼）需要蓝图、许可和协调，而个人项目（小屋）提供快速构建的自由，无需繁文缛节
+* **企业教会规模化**：在银行系统和 Cloud Spanner 等工具上工作，提供防御性设计、故障模式和大规模工程经验——但伴随着僵化
+* **个人项目保持工匠精神**：副业项目保持好奇心，防止企业工作变得重复时的倦怠；它们让你记住构建软件的乐趣
+* **双向学习**：企业工作的模式自然改进个人项目（增加结构），而小屋实验加速工作中的学习（容器化、云基础设施）
+* **快速实验**：个人项目允许尝试新工具和方法而无需提案，低成本的失败提供宝贵经验和更广阔的技术视野
+* **职业发展**：维护副业项目对职业生涯的帮助超过面试准备；它们让你同时成为架构师、开发者和用户
+* **必要的平衡**：只构建企业系统的工程师最终会倦怠；个人项目保护你作为建造者而非仅仅是员工的身份
+
+**[Read Original / 阅读原文](https://dylanbutler.dev/blog/protect-your-shed/)**
+
+### ADD / XOR / ROL: Slightly Safer Vibecoding by Adopting Old Hacker Habits
+
+* Author discusses concerns about supply-chain attacks on Python, prompt injection risks with coding agents, and security implications of "vibe coding"
+* Proposes a development setup using remote servers/VMs accessed via SSH with key-forwarding, working in tmux/screen sessions
+* Development happens on isolated VMs without secrets stored locally, reducing supply-chain attack impact to VM compromise only
+* Recommends fork-based workflow: maintain separate main and dev repositories, issue cross-repo PRs requiring human review
+* Main risk becomes compromised Claude credentials and GitHub key forwarding abuse, rather than local machine compromise
+* Notes this SSH-into-remote-machine approach originated from hacker subculture for operational security reasons
+* Model proves useful for long-running compute needs, frequent travel, and modern agent-first development workflows
+
+### ADD / XOR / ROL: 采用旧黑客习惯让"氛围编程"更安全
+
+* 作者讨论了对 Python 供应链攻击、编码代理的提示注入风险以及"氛围编程"安全隐患的担忧
+* 提出使用远程服务器/虚拟机的开发设置,通过 SSH 密钥转发访问,在 tmux/screen 会话中工作
+* 开发在隔离的虚拟机上进行且不存储机密信息,将供应链攻击的影响降低到仅虚拟机被攻陷
+* 建议采用分叉工作流:维护独立的主仓库和开发仓库,通过跨仓库 PR 并需要人工审查
+* 主要风险变为 Claude 凭证泄露和 GitHub 密钥转发滥用,而非本地机器被攻陷
+* 指出这种 SSH 远程机器的方法源自黑客亚文化的操作安全考虑
+* 该模式对长时间运行计算需求、频繁出差和现代代理优先开发工作流程非常实用
+
+**[Read Original / 阅读原文](http://addxorrol.blogspot.com/2026/03/slightly-safer-vibecoding-by-adopting.html)**
+
+### Native Americans Pioneered Probability Gaming 12,000 Years Ago
+
+* Archaeological evidence shows Native Americans used dice and probability games 12,000 years ago in the Southwestern U.S., predating Old World cultures by approximately 6,000 years
+* Researcher Robert Madden, a former trial lawyer turned archaeologist, compiled evidence from excavation reports showing continuous dice use from the Folsom culture through European contact to present day
+* The two-sided dice were crafted from bone or wood, carefully shaped for random outcomes, and used in fast-paced social games that facilitated trade and information exchange
+* This discovery challenges the assumption that complex mathematical concepts like probability and the law of large numbers originated in Mesopotamia or other ancient Old World civilizations
+* Native American oral histories frequently reference gambling, with some stories depicting deities engaging in dice games, suggesting deep cultural and religious significance
+
+### 美洲原住民在其他文化之前就有骰子和概率游戏
+
+* 考古证据显示,美洲原住民在12,000年前就在美国西南部使用骰子和概率游戏,比旧大陆文化早约6,000年
+* 前律师转考古学家罗伯特·马登通过整理发掘报告,发现从福尔瑟姆文化到欧洲接触时期直至今天,骰子使用持续不断
+* 这些双面骰子由骨头或木头制成,经过精心塑形以产生随机结果,用于快节奏的社交游戏,促进贸易和信息交流
+* 这一发现挑战了概率和大数定律等复杂数学概念起源于美索不达米亚或其他古代旧大陆文明的假设
+* 美洲原住民口述历史中频繁提及赌博,一些故事描述神灵参与骰子游戏,表明其具有深厚的文化和宗教意义
+
+**[Read Original / 阅读原文](https://www.nbcnews.com/science/science-news/native-americans-dice-games-probability-study-rcna266426)**
 
