@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 14, 2026"
 date: 2026-04-14
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -321,4 +321,263 @@ Directly addresses Karpathy's viral observations about LLM coding failures - wro
 * 为何值得观看: 适合想要快速掌握 Claude AI 而不需要花费数小时阅读文档的用户。教程高效地涵盖了从入门基础到高级技巧的全部内容，无论是新手还是希望充分发挥 Claude 潜力的用户都能从中受益。配套的免费指南提供了额外的参考资料。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=WSPChlfxJyA)**
+
+### Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them
+
+* A buyer acquired Essential Plugin's entire portfolio of 30+ WordPress plugins for six figures on Flippa, then immediately planted backdoors in all of them
+* The backdoor was added in August 2025 but remained dormant for 8 months before being activated in April 2026 to inject SEO spam
+* The malware used sophisticated techniques including PHP deserialization exploits, blockchain-based C2 infrastructure via Ethereum smart contracts, and Googlebot-only spam injection
+* WordPress.org permanently closed all 31 plugins on April 7, 2026, but the forced security update didn't clean already-infected wp-config.php files
+* The attack followed a known pattern: legitimate plugins acquired through marketplaces and weaponized by new owners, similar to the 2017 Display Widgets case
+* The backdoor used an unauthenticated REST API endpoint and arbitrary function execution to download malicious payloads from analytics.essentialplugin.com
+* Forensic analysis using backup snapshots pinpointed the exact 6-hour 44-minute infection window on April 6, 2026
+
+### 有人买下30个WordPress插件并在所有插件中植入后门
+
+* 买家通过Flippa以六位数价格收购了Essential Plugin的整个插件组合(30多个WordPress插件),随后立即在所有插件中植入后门
+* 后门于2025年8月添加,但潜伏了8个月,直到2026年4月才被激活用于注入SEO垃圾内容
+* 恶意软件使用了复杂技术,包括PHP反序列化漏洞、通过以太坊智能合约的区块链C2基础设施,以及仅针对Googlebot的垃圾内容注入
+* WordPress.org于2026年4月7日永久关闭了全部31个插件,但强制安全更新未能清理已被感染的wp-config.php文件
+* 此次攻击遵循已知模式:通过市场购买合法插件后被新所有者武器化,类似于2017年Display Widgets案例
+* 后门使用未经身份验证的REST API端点和任意函数执行,从analytics.essentialplugin.com下载恶意载荷
+* 使用备份快照的取证分析精确定位了2026年4月6日感染发生的6小时44分钟时间窗口
+
+**[Read Original / 阅读原文](https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/)**
+
+<!-- [Title-Only] -->
+### GitHub Stacked PRs
+
+* Based on the title, this article likely covers GitHub's approach to "stacked pull requests" - a workflow where developers create multiple dependent PRs that build on top of each other, rather than one large monolithic PR
+* This is interesting because stacked PRs are a popular workflow in tech companies for breaking down large features into smaller, reviewable chunks while maintaining dependencies between changes. GitHub appears to be offering official tooling or guidance for this workflow, which could streamline collaboration for teams already using this pattern or make it more accessible to those who haven't adopted it yet
+
+### GitHub 堆叠式拉取请求
+
+* 根据标题推测,这篇文章可能介绍 GitHub 的"堆叠式拉取请求"功能 - 一种开发者创建多个相互依赖的 PR 的工作流程,每个 PR 建立在前一个之上,而不是创建一个庞大的单一 PR
+* 这值得关注,因为堆叠式 PR 是科技公司中流行的工作流程,用于将大型功能拆分为更小、更易审查的部分,同时保持变更之间的依赖关系。GitHub 似乎正在提供官方工具或指导来支持这种工作流程,这可能会简化已采用此模式的团队的协作流程,或让尚未采用的团队更容易上手
+
+**[Read Original / 阅读原文](https://github.github.com/gh-stack/)**
+
+### How to Make Firefox Builds 17% Faster with Buildcache
+
+* Firefox's WebIDL binding code generation step can now be cached using buildcache's Lua plugin system, reducing warm build times from 1m27s to 1m12s
+* The fix involves wrapping the Python WebIDL codegen command with buildcache by passing `$(CCACHE)` as a command wrapper in `dom/bindings/Makefile.in`
+* A custom Lua wrapper (`webidl.lua`) tells buildcache how to handle the WebIDL step by identifying inputs (.webidl files and Python scripts) and outputs (generated C++ binding code)
+* Benchmark results show buildcache with the plugin achieves 1m12s warm builds compared to 3m21s with ccache and 2m49s with sccache (from a 5m35s baseline)
+* The Lua plugin system can be applied to other deterministic build steps in Firefox, opening opportunities for further optimization
+* Setup requires cloning the buildcache-wrappers repo and configuring `lua_paths` in buildcache's config or setting `BUILDCACHE_LUA_PATH` environment variable
+
+### 如何让 Firefox 构建速度提升 17%
+
+* Firefox 的 WebIDL 绑定代码生成步骤现在可以使用 buildcache 的 Lua 插件系统进行缓存，将热构建时间从 1分27秒 缩短到 1分12秒
+* 修复方法是在 `dom/bindings/Makefile.in` 中将 `$(CCACHE)` 作为命令包装器传递给 Python WebIDL 代码生成命令
+* 自定义 Lua 包装器（`webidl.lua`）通过识别输入（.webidl 文件和 Python 脚本）和输出（生成的 C++ 绑定代码）来告诉 buildcache 如何处理 WebIDL 步骤
+* 基准测试结果显示，使用插件的 buildcache 实现了 1分12秒 的热构建，相比之下 ccache 需要 3分21秒，sccache 需要 2分49秒（基准为 5分35秒）
+* Lua 插件系统可以应用于 Firefox 中其他确定性构建步骤，为进一步优化提供了机会
+* 设置需要克隆 buildcache-wrappers 仓库，并在 buildcache 配置中配置 `lua_paths` 或设置 `BUILDCACHE_LUA_PATH` 环境变量
+
+**[Read Original / 阅读原文](https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/)**
+
+### claude-mem - Persistent Memory System for Claude Code
+
+* **What it does**: Automatically captures everything Claude does during coding sessions, compresses it with AI using Claude's agent-sdk, and injects relevant context back into future sessions—giving Claude persistent memory across conversations.
+
+* **Key features**: 
+  * Progressive disclosure with layered memory retrieval and token cost visibility
+  * Skill-based natural language search through project history (mem-search)
+  * Real-time web viewer UI at localhost:37777 with observation citations
+  * Privacy controls with `<private>` tags to exclude sensitive content
+  * Works with both Claude Code and Gemini CLI
+  * Beta features like Endless Mode for experimental capabilities
+  * OpenClaw gateway integration for persistent memory plugins
+
+* **Why it's notable**: Solves a fundamental limitation of AI coding assistants—context loss between sessions. With 3,185 stars today, it's rapidly gaining traction as developers discover how transformative persistent memory is for maintaining project continuity. The hybrid architecture (lifecycle hooks + worker service + SQLite + vector search) demonstrates sophisticated context engineering, while the one-command install (`npx claude-mem install`) makes it instantly accessible.
+
+---
+
+### claude-mem - Claude Code 持久化记忆系统
+
+* **功能介绍**: 自动捕获 Claude 在编码会话中的所有操作，使用 Claude 的 agent-sdk 进行 AI 压缩，并将相关上下文注入到未来的会话中——为 Claude 提供跨对话的持久记忆。
+
+* **主要特点**:
+  * 渐进式披露，分层记忆检索并显示 token 成本
+  * 基于技能的自然语言搜索，可查询项目历史（mem-search）
+  * 实时 Web 查看器界面（localhost:37777），支持观察引用
+  * 使用 `<private>` 标签的隐私控制，排除敏感内容
+  * 同时支持 Claude Code 和 Gemini CLI
+  * Beta 功能如无尽模式等实验性能力
+  * OpenClaw 网关集成，支持持久化记忆插件
+
+* **为何值得关注**: 解决了 AI 编码助手的根本性限制——会话间的上下文丢失。今日获得 3,185 星标，开发者们正快速发现持久化记忆对维护项目连续性的变革性价值。其混合架构（生命周期钩子 + 工作服务 + SQLite + 向量搜索）展示了精密的上下文工程，而一键安装命令（`npx claude-mem install`）使其即刻可用。
+
+**[View Repository / 查看仓库](https://github.com/thedotmack/claude-mem)**
+
+### MarkItDown - Python Tool for Converting Files to Markdown
+
+* **What it does**: MarkItDown is a lightweight Python utility that converts various file formats (PDF, Office documents, images, audio, HTML, and more) into Markdown format, specifically optimized for use with Large Language Models and text analysis pipelines.
+
+* **Key features**: 
+  - Supports 15+ file formats including PDF, PowerPoint, Word, Excel, images (with OCR), audio (with transcription), HTML, EPubs, and YouTube URLs
+  - Preserves document structure (headings, lists, tables, links) in Markdown
+  - Optional Azure Document Intelligence integration for enhanced conversion
+  - LLM-powered image descriptions and OCR capabilities
+  - Plugin system for extensibility
+  - Available as CLI tool, Python API, and Docker container
+
+* **Why it's notable**: With 2,811 stars today, MarkItDown addresses a critical need in the AI/LLM workflow by converting diverse document formats into LLM-friendly Markdown. Built by Microsoft's AutoGen team, it's particularly valuable as mainstream LLMs like GPT-4o natively understand Markdown, making it an essential bridge between traditional documents and modern AI text processing pipelines.
+
+---
+
+### MarkItDown - 文件转 Markdown 的 Python 工具
+
+* **功能介绍**: MarkItDown 是一个轻量级 Python 工具,可将各种文件格式(PDF、Office 文档、图片、音频、HTML 等)转换为 Markdown 格式,专为大语言模型和文本分析流程优化。
+
+* **主要特点**:
+  - 支持 15+ 种文件格式,包括 PDF、PowerPoint、Word、Excel、图片(含 OCR)、音频(含转录)、HTML、EPub 和 YouTube 链接
+  - 保留文档结构(标题、列表、表格、链接等)的 Markdown 格式
+  - 可选的 Azure 文档智能集成以增强转换效果
+  - 支持 LLM 驱动的图片描述和 OCR 功能
+  - 插件系统支持功能扩展
+  - 提供命令行工具、Python API 和 Docker 容器三种使用方式
+
+* **为何值得关注**: 今日获得 2,811 星标,MarkItDown 解决了 AI/LLM 工作流中的关键需求——将多样化的文档格式转换为 LLM 友好的 Markdown。由微软 AutoGen 团队开发,特别有价值的是主流 LLM(如 GPT-4o)原生理解 Markdown,使其成为传统文档与现代 AI 文本处理管道之间的重要桥梁。
+
+**[View Repository / 查看仓库](https://github.com/microsoft/markitdown)**
+
+### codex-oauth-automation-extension - Chrome Extension for Automating OpenAI OAuth Registration
+
+* **What it does**: Automates the complete ChatGPT OAuth registration and login flow through a Chrome extension with sidebar controls, supporting batch account creation with automated email verification code retrieval
+* **Key features**: Single-step or full auto-execution modes; supports multiple email providers (DuckDuckGo, QQ, 163, Hotmail, Inbucket); automatic password generation; Cloudflare custom domain email generation; CPA panel integration; multi-round automation with configurable delays; Hotmail account pool with local/remote helper modes
+* **Why it's notable**: Achieves impressive success rates (150 accounts with only one 401 error) by streamlining the tedious OAuth registration process; offers flexible email verification solutions and robust error recovery; particularly valuable for developers managing multiple OpenAI accounts or testing OAuth flows at scale
+
+---
+
+### codex-oauth-automation-extension - OpenAI OAuth 注册自动化 Chrome 扩展
+
+* **功能介绍**: 通过 Chrome 扩展自动化完成 ChatGPT OAuth 注册和登录全流程，支持批量创建账号并自动获取邮箱验证码
+* **主要特点**: 支持单步执行或全自动模式；集成多种邮箱服务商（DuckDuckGo、QQ、163、Hotmail、Inbucket）；自动生成强密码；支持 Cloudflare 自定义域名邮箱生成；CPA 面板集成；多轮自动化运行可配置延迟；Hotmail 账号池支持本地/远程助手模式
+* **为何值得关注**: 实现了极高的成功率（150 个账号仅 1 个 401 错误），大幅简化繁琐的 OAuth 注册流程；提供灵活的邮箱验证解决方案和强大的错误恢复能力；对需要管理多个 OpenAI 账号或大规模测试 OAuth 流程的开发者特别有价值
+
+**[View Repository / 查看仓库](https://github.com/QLHazyCoder/codex-oauth-automation-extension)**
+
+### LLM Wiki - AI-Powered Personal Knowledge Base Builder
+
+* **What it does**: Automatically transforms your documents into an organized, interlinked wiki using LLM analysis. Unlike traditional RAG systems that retrieve-and-answer on every query, LLM Wiki incrementally builds and maintains a persistent knowledge base that compiles knowledge once and keeps it current.
+
+* **Key features**: 
+  - Two-step chain-of-thought document ingestion with source traceability and incremental caching
+  - 4-signal knowledge graph with relevance modeling (direct links, source overlap, Adamic-Adar, type affinity)
+  - Louvain community detection for automatic knowledge cluster discovery
+  - Graph insights that surface surprising connections and knowledge gaps
+  - Vector semantic search via LanceDB with OpenAI-compatible endpoints
+  - Cross-platform desktop app with three-column layout, persistent ingest queue, and Obsidian compatibility
+  - Chrome web clipper for one-click page capture and auto-ingest
+  - Deep Research mode with LLM-optimized search and multi-query web integration
+
+* **Why it's notable**: Based on Andrej Karpathy's LLM Wiki pattern, this project takes an abstract design methodology and implements it as a full-featured desktop application with significant enhancements. With 1,117 stars, it represents a practical implementation of using LLMs to build personal knowledge bases that maintain structure and context over time, rather than starting from scratch on every query. The addition of graph analysis, community detection, and automated insight discovery makes it a powerful tool for researchers and knowledge workers managing large document collections.
+
+---
+
+### LLM Wiki - AI 驱动的个人知识库构建工具
+
+* **功能介绍**: 使用 LLM 分析自动将文档转换为有组织的、相互链接的维基知识库。与传统的 RAG 系统(每次查询都重新检索和回答)不同,LLM Wiki 增量式地构建和维护持久化知识库,知识编译一次后持续更新。
+
+* **主要特点**:
+  - 两步链式思考文档摄取,支持源追溯和增量缓存
+  - 4 信号知识图谱,包含相关性建模(直接链接、源重叠、Adamic-Adar、类型亲和度)
+  - Louvain 社区检测算法自动发现知识集群
+  - 图谱洞察功能,揭示意外连接和知识空白
+  - 通过 LanceDB 实现向量语义搜索,支持 OpenAI 兼容端点
+  - 跨平台桌面应用,三栏布局、持久化摄取队列、兼容 Obsidian
+  - Chrome 网页剪藏器,一键捕获页面并自动摄取
+  - 深度研究模式,LLM 优化搜索主题和多查询网络集成
+
+* **为何值得关注**: 基于 Andrej Karpathy 的 LLM Wiki 模式,该项目将抽象的设计方法论实现为功能完整的桌面应用程序,并进行了重大增强。拥有 1,117 星标,它代表了使用 LLM 构建个人知识库的实用实现,能够长期维护结构和上下文,而不是每次查询都从头开始。图谱分析、社区检测和自动洞察发现功能的加入,使其成为研究人员和知识工作者管理大型文档集合的强大工具。
+
+**[View Repository / 查看仓库](https://github.com/nashsu/llm_wiki)**
+
+### 🎬 Why It Took Centuries to Invent Science - Ada Palmer
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of the historical development of scientific methodology and why it took humanity so long to establish systematic scientific inquiry as we know it today
+* Key topics discussed: The intellectual, cultural, and philosophical barriers that delayed the emergence of modern science; the role of Renaissance humanism and Enlightenment thinking; how different civilizations approached knowledge and empirical observation
+* Why it's worth watching: Ada Palmer brings a historian's perspective to understanding why science isn't an obvious or inevitable human endeavor, offering insights into how our current scientific framework emerged from centuries of intellectual evolution and cultural shifts
+
+### 🎬 为何科学的发明花费了数个世纪 - Ada Palmer
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨科学方法论的历史发展,以及为什么人类花费如此漫长的时间才建立起我们今天所知的系统性科学探究
+* 主要话题: 延缓现代科学出现的智识、文化和哲学障碍;文艺复兴人文主义和启蒙思想的作用;不同文明如何看待知识和实证观察
+* 为何值得观看: Ada Palmer以历史学家的视角阐释为何科学并非人类显而易见或必然的事业,深入剖析当代科学框架如何从数世纪的智识演进和文化变迁中诞生
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oNPcwszl6KA)**
+
+### 🎬 Gemma 4 + Ollama = FREE Claude Code
+**Channel:** Jack Roberts
+
+* What the video covers: A tutorial on setting up Gemma 4 (Google's open-source AI model) with Ollama to create a free, local alternative to Claude for coding assistance
+* Key topics discussed: Installing and configuring Ollama, running Gemma 4 locally, comparing performance with Claude, practical coding use cases, cost savings from using free local models
+* Why it's worth watching: Learn how to get Claude-level AI coding assistance completely free by running models locally on your machine, eliminating subscription costs while maintaining privacy and control over your development workflow
+
+### 🎬 Gemma 4 + Ollama = 免费的 Claude 代码助手
+**频道:** Jack Roberts
+
+* 视频内容概述: 教程演示如何使用 Gemma 4(谷歌开源 AI 模型)配合 Ollama 搭建免费的本地 Claude 代码助手替代方案
+* 主要话题: Ollama 安装配置、本地运行 Gemma 4、与 Claude 性能对比、实际编码应用场景、使用免费本地模型节省成本
+* 为何值得观看: 学习如何在本地机器上运行 AI 模型,获得媲美 Claude 的编码辅助能力,完全免费且保护隐私,无需订阅费用,完全掌控开发工作流
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eehsSUlXZN4)**
+
+### 🎬 Learn Drone Programming with Python – Tutorial
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive tutorial on programming drones using Python with the Pyimverse high-fidelity simulator, designed for beginners with no prior drone programming experience
+* Key topics discussed: Python-based drone control, flight simulation, autonomous navigation, sensor integration, and practical programming exercises in a realistic virtual environment
+* Why it's worth watching: Offers hands-on experience with drone programming without needing physical hardware, making it accessible and cost-effective for anyone interested in robotics, automation, or aerial systems development
+
+### 🎬 使用 Python 学习无人机编程 – 教程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 使用 Python 和高保真 Pyimverse 模拟器进行无人机编程的综合教程,专为零基础学习者设计
+* 主要话题: 基于 Python 的无人机控制、飞行模拟、自主导航、传感器集成,以及在逼真虚拟环境中的实践编程练习
+* 为何值得观看: 无需购买实体硬件即可获得无人机编程的实践经验,为对机器人技术、自动化或航空系统开发感兴趣的学习者提供了经济实惠的入门途径
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k-yDYgc8AmU)**
+
+### 🎬 Which AI Codes Animation Best
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘀
+
+* Comparative analysis of different AI coding assistants' capabilities in generating animation code
+* Evaluates performance across multiple programming languages (Python, JavaScript, HTML, CSS)
+* Practical demonstration showing which AI tools excel at creating animations and interactive elements
+* Worth watching for developers choosing AI coding tools for frontend work or animation projects
+
+---
+
+### 🎬 哪个AI最擅长编写动画代码
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘀
+
+* 对比分析不同AI编程助手在生成动画代码方面的能力
+* 评估多种编程语言(Python、JavaScript、HTML、CSS)的表现
+* 实际演示展示哪些AI工具在创建动画和交互元素方面表现出色
+* 适合正在为前端开发或动画项目选择AI编程工具的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VG-b4JamfhE)**
+
+### 🎬 Top 5 AI Skills to Learn in 2026 🚀 (Stay Relevant or Fall Behind)
+**Channel:** Gowtham Tirri Telugu
+
+* What the video covers: A strategic guide to the most valuable AI skills professionals need to acquire in 2026 to remain competitive in the rapidly evolving tech landscape
+* Key topics discussed: Five critical AI competencies that separate those who thrive from those who get left behind as AI transforms industries; focuses on practical, high-demand skills rather than outdated or overhyped capabilities
+* Why it's worth watching: Cuts through the noise to identify which AI skills actually matter for career growth and relevance; helps viewers avoid wasting time on skills that won't provide ROI in the current AI-driven job market
+
+### 🎬 2026年必学的5大AI技能 🚀 (保持竞争力或被淘汰)
+**频道:** Gowtham Tirri Telugu
+
+* 视频内容概述: 针对2026年AI技术发展趋势,系统讲解专业人士必须掌握的五项最有价值的AI技能,帮助观众在快速变化的科技环境中保持竞争力
+* 主要话题: 五项关键AI能力,这些技能将决定从业者能否在AI变革浪潮中脱颖而出;重点关注实用性强、市场需求高的技能,而非过时或被过度炒作的能力
+* 为何值得观看: 去伪存真,精准识别对职业发展真正有价值的AI技能;帮助观众避免在低回报技能上浪费时间,聚焦当前AI驱动的就业市场真正需要的核心能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ir10fvx9v0k)**
 
