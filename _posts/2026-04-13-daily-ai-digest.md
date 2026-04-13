@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 13, 2026"
 date: 2026-04-13
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -520,4 +520,183 @@ Gained 2,369 stars today by solving a critical pain point in AI-assisted coding.
 * 适合正在选择AI编程工具进行前端开发和动画项目的开发者观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=VG-b4JamfhE)**
+
+### Android Now Strips Location Data from Shared Photos
+
+* Google has progressively broken the ability to share geotagged photos on Android, affecting web apps like OpenBenches that rely on photo location metadata
+* Previously functional methods (photo picker with `accept="image/jpeg"`, file picker, Progressive Web Apps, Bluetooth/QuickShare, and email) now all strip EXIF location data
+* The only remaining workaround is physically connecting via USB cable to transfer photos to a computer, then uploading from a desktop browser
+* Google implemented these changes for privacy protection without community consultation or advance notice, leaving developers and users frustrated
+* The suggested solution is developing native Android/iOS apps with special location permissions, though a browser-based permission prompt system would be preferable
+
+### Android 现已阻止你在照片中分享位置信息
+
+* 谷歌逐步破坏了 Android 上分享带地理标签照片的功能,影响了像 OpenBenches 这样依赖照片位置元数据的网络应用
+* 之前可用的方法(带 `accept="image/jpeg"` 的照片选择器、文件选择器、渐进式网络应用、蓝牙/快速分享和电子邮件)现在都会剥离 EXIF 位置数据
+* 目前唯一的解决方法是通过 USB 数据线物理连接,将照片传输到电脑,然后从桌面浏览器上传
+* 谷歌在没有社区咨询或提前通知的情况下实施了这些隐私保护变更,让开发者和用户感到沮丧
+* 建议的解决方案是开发具有特殊位置权限的原生 Android/iOS 应用,尽管基于浏览器的权限提示系统会更可取
+
+**[Read Original / 阅读原文](https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/)**
+
+### AI Could Be the End of the Digital Wave, Not the Next Big Thing
+
+* The article proposes a thought experiment: AI might represent the final stage of the digital technology surge that began in the 1970s, rather than the start of a new technological revolution
+* Using Carlota Perez's model of 50-60 year technology surges, the piece suggests we're in the "late cycle" of the Information and Communications Technology era
+* Three key indicators support this theory: the 2022 startup funding collapse may be structural, AI breakthroughs come from well-funded incumbents rather than startups, and digital transformation has reached saturation in most viable sectors
+* AI appears to be optimizing the existing computing paradigm rather than creating a new one, similar to how lean production refined mass production in the 1970s without replacing it
+* Unlike early-stage technology surges which develop quietly with patchy investment, AI's emergence was highly visible and choreographed with massive capital deployment
+* The technology is extending computing into previously resistant sectors like healthcare, education, and construction, representing computing's "final conquest" rather than a new beginning
+* Social pushback against AI and data centers mirrors the resistance to late-stage infrastructure projects in previous technology cycles
+
+### AI 可能是数字浪潮的终结，而非下一个大事件
+
+* 文章提出一个思想实验：AI 可能代表始于 1970 年代数字技术浪潮的最后阶段，而非新技术革命的开端
+* 运用 Carlota Perez 关于 50-60 年技术浪潮的模型，文章认为我们正处于信息与通信技术时代的"晚期周期"
+* 三个关键指标支持这一理论：2022 年初创企业融资崩溃可能是结构性的，AI 突破来自资金雄厚的现有巨头而非初创公司，数字化转型在大多数可行领域已达到饱和
+* AI 似乎在优化现有的计算范式，而非创造新范式，类似于 1970 年代精益生产改进大规模生产但未取代它
+* 与早期技术浪潮悄然发展、投资零散不同，AI 的出现高度可见且精心策划，伴随大规模资本部署
+* 该技术正将计算扩展到以前抵制的领域，如医疗保健、教育和建筑，代表计算的"最终征服"而非新的开始
+* 对 AI 和数据中心的社会抵制反映了前几个技术周期中对晚期基础设施项目的抵抗
+
+**[Read Original / 阅读原文](https://thenextwavefutures.wordpress.com/2026/04/07/ai-end-digital-wave-technology-innovation-perez/)**
+
+<!-- [Title-Only] -->
+### I went to America's worst national parks so you don't have to
+
+* Based on the title, this article likely covers a humorous or critical exploration of lesser-known or underappreciated U.S. national parks that don't get the same attention as popular destinations like Yellowstone or Yosemite
+* The author probably visited parks that are considered "worst" due to factors like poor accessibility, lack of dramatic scenery, overcrowding, poor maintenance, or simply being overshadowed by more famous neighbors
+* This might be interesting to readers who enjoy travel writing with a contrarian perspective, want to know which parks to skip, or are curious about the full spectrum of America's national park system beyond the Instagram-worthy highlights
+
+### 我去了美国最差的国家公园，所以你不必去了
+
+* 根据标题推测，这篇文章可能以幽默或批判的视角探讨了那些不太知名或被低估的美国国家公园，它们不像黄石或优胜美地那样受欢迎
+* 作者可能实地探访了那些被认为"最差"的公园，原因可能包括交通不便、景色平淡、过度拥挤、维护不善，或者只是被更著名的邻近公园掩盖了光芒
+* 这篇文章可能吸引那些喜欢反主流旅行写作的读者，想知道哪些公园可以跳过，或者对美国国家公园体系的全貌（而不仅仅是社交媒体上的热门景点）感到好奇的人
+
+**[Read Original / 阅读原文](https://substack.com/home/post/p-193626949)**
+
+### claude-mem - Persistent Memory System for Claude Code
+
+* **What it does**: Automatically captures everything Claude does during coding sessions, compresses it with AI using Claude's agent-sdk, and injects relevant context back into future sessions—giving Claude persistent memory across conversations.
+
+* **Key features**: 
+  * Progressive disclosure with layered memory retrieval and token cost visibility
+  * Skill-based natural language search through project history (mem-search)
+  * Real-time web viewer UI at localhost:37777 with observation citations
+  * Privacy controls with `<private>` tags to exclude sensitive content
+  * Works with both Claude Code and Gemini CLI
+  * Beta features like Endless Mode for experimental capabilities
+  * OpenClaw gateway integration for persistent memory plugins
+
+* **Why it's notable**: Solves a fundamental limitation of AI coding assistants—context loss between sessions. With 3,185 stars today, it's rapidly gaining traction as developers discover how transformative persistent memory is for maintaining project continuity. The hybrid architecture (lifecycle hooks + worker service + SQLite + vector search) demonstrates sophisticated context engineering, while the one-command install (`npx claude-mem install`) makes it instantly accessible.
+
+---
+
+### claude-mem - Claude Code 持久化记忆系统
+
+* **功能介绍**: 自动捕获 Claude 在编码会话中的所有操作，使用 Claude 的 agent-sdk 进行 AI 压缩，并将相关上下文注入到未来的会话中——为 Claude 提供跨对话的持久记忆。
+
+* **主要特点**:
+  * 渐进式披露，分层记忆检索并显示 token 成本
+  * 基于技能的自然语言搜索，可查询项目历史（mem-search）
+  * 实时 Web 查看器界面（localhost:37777），支持观察引用
+  * 使用 `<private>` 标签的隐私控制，排除敏感内容
+  * 同时支持 Claude Code 和 Gemini CLI
+  * Beta 功能如无尽模式等实验性能力
+  * OpenClaw 网关集成，支持持久化记忆插件
+
+* **为何值得关注**: 解决了 AI 编码助手的根本性限制——会话间的上下文丢失。今日获得 3,185 星标，开发者们正快速发现持久化记忆对维护项目连续性的变革性价值。其混合架构（生命周期钩子 + 工作服务 + SQLite + 向量搜索）展示了精密的上下文工程，而一键安装命令（`npx claude-mem install`）使其即刻可用。
+
+**[View Repository / 查看仓库](https://github.com/thedotmack/claude-mem)**
+
+### codex-oauth-automation-extension - Chrome Extension for Automating OpenAI OAuth Registration
+
+* **What it does**: A Chrome extension that automates the entire ChatGPT OAuth registration and login flow, including email generation, verification code retrieval, and CPA callback verification. Supports batch processing of multiple accounts with automatic recovery capabilities.
+
+* **Key features**:
+  * Sidebar-based control panel with single-step or full automation modes
+  * Multiple email providers: Hotmail (via Microsoft Graph API), QQ Mail, 163 Mail, Inbucket
+  * Automatic email generation via DuckDuckGo (@duck.com) or Cloudflare custom domains
+  * Hotmail account pool management with token refresh
+  * Automatic password generation or custom password support
+  * Multi-round automation with configurable delays and retry logic
+  * Supports both birthday and age-based registration flows
+  * CPA panel integration for OAuth link retrieval and callback verification
+
+* **Why it's notable**: Achieves impressive success rates (150 accounts with only one 401 error) by intelligently handling the complete OAuth flow end-to-end. The extension's flexible email provider support and Cloudflare catch-all integration make it particularly powerful for bulk account creation. Its ability to pause, resume, and recover from failures makes it production-ready for large-scale operations.
+
+---
+
+### codex-oauth-automation-extension - 用于自动化 OpenAI OAuth 注册的 Chrome 扩展
+
+* **功能介绍**: 一个 Chrome 扩展程序，可自动完成 ChatGPT OAuth 注册和登录的全流程，包括邮箱生成、验证码获取和 CPA 回调验证。支持批量处理多个账号，具备自动恢复能力。
+
+* **主要特点**:
+  * 侧边栏控制面板，支持单步执行或全自动模式
+  * 多种邮箱提供商：Hotmail（通过 Microsoft Graph API）、QQ 邮箱、163 邮箱、Inbucket
+  * 通过 DuckDuckGo（@duck.com）或 Cloudflare 自定义域名自动生成邮箱
+  * Hotmail 账号池管理，支持令牌刷新
+  * 自动生成强密码或使用自定义密码
+  * 多轮自动化运行，可配置延迟和重试逻辑
+  * 支持生日和年龄两种注册页面流程
+  * CPA 面板集成，用于 OAuth 链接获取和回调验证
+
+* **为何值得关注**: 通过智能处理完整的 OAuth 流程实现了令人印象深刻的成功率（150 个账号仅 1 个 401 错误）。扩展灵活的邮箱提供商支持和 Cloudflare catch-all 集成使其在批量账号创建方面特别强大。其暂停、恢复和故障恢复能力使其可用于大规模生产环境。
+
+**[View Repository / 查看仓库](https://github.com/QLHazyCoder/codex-oauth-automation-extension)**
+
+### 🎬 Recursion is a key concept in coding. Gavin explains it simply here.
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A beginner-friendly explanation of recursion, one of the fundamental programming concepts where a function calls itself to solve problems
+* Key topics discussed: How recursion works, when to use it, breaking down complex problems into simpler sub-problems, and practical examples to understand the concept
+* Why it's worth watching: Gavin from freeCodeCamp breaks down this often-confusing topic in a simple, accessible way—perfect for developers learning algorithms or preparing for technical interviews
+
+### 🎬 递归是编程中的关键概念。Gavin 在这里简单解释了它。
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 对递归这一编程基础概念的新手友好讲解，递归是指函数调用自身来解决问题的编程技术
+* 主要话题: 递归的工作原理、使用场景、如何将复杂问题分解为更简单的子问题，以及帮助理解概念的实际示例
+* 为何值得观看: freeCodeCamp 的 Gavin 以简单易懂的方式讲解这个常常令人困惑的主题——非常适合正在学习算法或准备技术面试的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-jTrzdO-6i4)**
+
+### 🎬 Full Claude Tutorial: Beginner to Advanced in 19 Minutes
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive walkthrough of Claude AI from basic usage to advanced features, condensed into a 19-minute tutorial that takes viewers through every major capability of the platform.
+
+* Key topics discussed: Complete feature set of Claude AI including chat interface, prompt engineering techniques, file uploads and analysis, Projects feature for custom knowledge bases, API integration, and advanced use cases for different workflows.
+
+* Why it's worth watching: Perfect for anyone wanting to quickly master Claude AI without spending hours on documentation. The tutorial efficiently covers beginner fundamentals through advanced techniques, making it ideal for both newcomers and users looking to unlock Claude's full potential. The accompanying free guide provides additional reference material.
+
+---
+
+### 🎬 Claude 完整教程：19分钟从入门到精通
+**频道:** Futurepedia
+
+* 视频内容概述: 全面讲解 Claude AI 从基础使用到高级功能的完整教程，将平台的所有主要功能浓缩在19分钟的视频中，带领观众系统学习每个重要特性。
+
+* 主要话题: 涵盖 Claude AI 的完整功能集，包括对话界面使用、提示词工程技巧、文件上传与分析、Projects 功能（自定义知识库）、API 集成，以及针对不同工作流程的高级应用场景。
+
+* 为何值得观看: 适合想要快速掌握 Claude AI 而不需要花费数小时阅读文档的用户。教程高效地涵盖了从入门基础到高级技巧的全部内容，无论是新手还是希望充分发挥 Claude 潜力的用户都能从中受益。配套的免费指南提供了额外的参考资料。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WSPChlfxJyA)**
+
+### 🎬 Claude Code Is Now 100% Free - Here's How
+**Channel:** Hasan Aboul Hasan
+
+* What the video covers: A tutorial on accessing and using Claude Code, which is now available for free
+* Key topics discussed: Step-by-step guide to getting started with Claude Code, its features and capabilities for developers, practical demonstrations of how to leverage the tool for coding tasks
+* Why it's worth watching: If you're interested in AI-powered coding assistants, this video provides hands-on guidance for using Claude Code without any cost barrier, making advanced AI development tools accessible to everyone
+
+### 🎬 Claude Code 现已完全免费 - 使用方法详解
+**频道:** Hasan Aboul Hasan
+
+* 视频内容概述: 关于如何访问和使用现已免费的 Claude Code 的教程
+* 主要话题: Claude Code 入门分步指南、面向开发者的功能特性、如何利用该工具完成编码任务的实际演示
+* 为何值得观看: 如果你对 AI 驱动的编码助手感兴趣,这个视频提供了免费使用 Claude Code 的实操指导,让所有人都能使用先进的 AI 开发工具
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=t0Mesp118l4)**
 
