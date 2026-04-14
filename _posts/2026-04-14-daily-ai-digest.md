@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 14, 2026"
 date: 2026-04-14
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -311,89 +311,6 @@ Directly addresses Karpathy's viral observations about LLM coding failures - wro
 
 ---
 
-### 🎬 Claude 完整教程：19分钟从入门到精通
-**频道:** Futurepedia
-
-* 视频内容概述: 全面讲解 Claude AI 从基础使用到高级功能的完整教程，将平台的所有主要功能浓缩在19分钟的精炼内容中。
-
-* 主要话题: 涵盖 Claude AI 的完整功能集，包括对话界面、提示词工程技巧、文件上传与分析、项目管理、生成物创建、API 集成，以及针对不同技能水平的高级应用场景。
-
-* 为何值得观看: 适合想要快速掌握 Claude AI 而不需要花费数小时阅读文档的用户。教程高效地涵盖了从入门基础到高级技巧的全部内容，无论是新手还是希望充分发挥 Claude 潜力的用户都能从中受益。配套的免费指南提供了额外的参考资料。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WSPChlfxJyA)**
-
-### Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them
-
-* A buyer acquired Essential Plugin's entire portfolio of 30+ WordPress plugins for six figures on Flippa, then immediately planted backdoors in all of them
-* The backdoor was added in August 2025 but remained dormant for 8 months before being activated in April 2026 to inject SEO spam
-* The malware used sophisticated techniques including PHP deserialization exploits, blockchain-based C2 infrastructure via Ethereum smart contracts, and Googlebot-only spam injection
-* WordPress.org permanently closed all 31 plugins on April 7, 2026, but the forced security update didn't clean already-infected wp-config.php files
-* The attack followed a known pattern: legitimate plugins acquired through marketplaces and weaponized by new owners, similar to the 2017 Display Widgets case
-* The backdoor used an unauthenticated REST API endpoint and arbitrary function execution to download malicious payloads from analytics.essentialplugin.com
-* Forensic analysis using backup snapshots pinpointed the exact 6-hour 44-minute infection window on April 6, 2026
-
-### 有人买下30个WordPress插件并在所有插件中植入后门
-
-* 买家通过Flippa以六位数价格收购了Essential Plugin的整个插件组合(30多个WordPress插件),随后立即在所有插件中植入后门
-* 后门于2025年8月添加,但潜伏了8个月,直到2026年4月才被激活用于注入SEO垃圾内容
-* 恶意软件使用了复杂技术,包括PHP反序列化漏洞、通过以太坊智能合约的区块链C2基础设施,以及仅针对Googlebot的垃圾内容注入
-* WordPress.org于2026年4月7日永久关闭了全部31个插件,但强制安全更新未能清理已被感染的wp-config.php文件
-* 此次攻击遵循已知模式:通过市场购买合法插件后被新所有者武器化,类似于2017年Display Widgets案例
-* 后门使用未经身份验证的REST API端点和任意函数执行,从analytics.essentialplugin.com下载恶意载荷
-* 使用备份快照的取证分析精确定位了2026年4月6日感染发生的6小时44分钟时间窗口
-
-**[Read Original / 阅读原文](https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/)**
-
-<!-- [Title-Only] -->
-### GitHub Stacked PRs
-
-* Based on the title, this article likely covers GitHub's approach to "stacked pull requests" - a workflow where developers create multiple dependent PRs that build on top of each other, rather than one large monolithic PR
-* This is interesting because stacked PRs are a popular workflow in tech companies for breaking down large features into smaller, reviewable chunks while maintaining dependencies between changes. GitHub appears to be offering official tooling or guidance for this workflow, which could streamline collaboration for teams already using this pattern or make it more accessible to those who haven't adopted it yet
-
-### GitHub 堆叠式拉取请求
-
-* 根据标题推测,这篇文章可能介绍 GitHub 的"堆叠式拉取请求"功能 - 一种开发者创建多个相互依赖的 PR 的工作流程,每个 PR 建立在前一个之上,而不是创建一个庞大的单一 PR
-* 这值得关注,因为堆叠式 PR 是科技公司中流行的工作流程,用于将大型功能拆分为更小、更易审查的部分,同时保持变更之间的依赖关系。GitHub 似乎正在提供官方工具或指导来支持这种工作流程,这可能会简化已采用此模式的团队的协作流程,或让尚未采用的团队更容易上手
-
-**[Read Original / 阅读原文](https://github.github.com/gh-stack/)**
-
-### How to Make Firefox Builds 17% Faster with Buildcache
-
-* Firefox's WebIDL binding code generation step can now be cached using buildcache's Lua plugin system, reducing warm build times from 1m27s to 1m12s
-* The fix involves wrapping the Python WebIDL codegen command with buildcache by passing `$(CCACHE)` as a command wrapper in `dom/bindings/Makefile.in`
-* A custom Lua wrapper (`webidl.lua`) tells buildcache how to handle the WebIDL step by identifying inputs (.webidl files and Python scripts) and outputs (generated C++ binding code)
-* Benchmark results show buildcache with the plugin achieves 1m12s warm builds compared to 3m21s with ccache and 2m49s with sccache (from a 5m35s baseline)
-* The Lua plugin system can be applied to other deterministic build steps in Firefox, opening opportunities for further optimization
-* Setup requires cloning the buildcache-wrappers repo and configuring `lua_paths` in buildcache's config or setting `BUILDCACHE_LUA_PATH` environment variable
-
-### 如何让 Firefox 构建速度提升 17%
-
-* Firefox 的 WebIDL 绑定代码生成步骤现在可以使用 buildcache 的 Lua 插件系统进行缓存，将热构建时间从 1分27秒 缩短到 1分12秒
-* 修复方法是在 `dom/bindings/Makefile.in` 中将 `$(CCACHE)` 作为命令包装器传递给 Python WebIDL 代码生成命令
-* 自定义 Lua 包装器（`webidl.lua`）通过识别输入（.webidl 文件和 Python 脚本）和输出（生成的 C++ 绑定代码）来告诉 buildcache 如何处理 WebIDL 步骤
-* 基准测试结果显示，使用插件的 buildcache 实现了 1分12秒 的热构建，相比之下 ccache 需要 3分21秒，sccache 需要 2分49秒（基准为 5分35秒）
-* Lua 插件系统可以应用于 Firefox 中其他确定性构建步骤，为进一步优化提供了机会
-* 设置需要克隆 buildcache-wrappers 仓库，并在 buildcache 配置中配置 `lua_paths` 或设置 `BUILDCACHE_LUA_PATH` 环境变量
-
-**[Read Original / 阅读原文](https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/)**
-
-### claude-mem - Persistent Memory System for Claude Code
-
-* **What it does**: Automatically captures everything Claude does during coding sessions, compresses it with AI using Claude's agent-sdk, and injects relevant context back into future sessions—giving Claude persistent memory across conversations.
-
-* **Key features**: 
-  * Progressive disclosure with layered memory retrieval and token cost visibility
-  * Skill-based natural language search through project history (mem-search)
-  * Real-time web viewer UI at localhost:37777 with observation citations
-  * Privacy controls with `<private>` tags to exclude sensitive content
-  * Works with both Claude Code and Gemini CLI
-  * Beta features like Endless Mode for experimental capabilities
-  * OpenClaw gateway integration for persistent memory plugins
-
-* **Why it's notable**: Solves a fundamental limitation of AI coding assistants—context loss between sessions. With 3,185 stars today, it's rapidly gaining traction as developers discover how transformative persistent memory is for maintaining project continuity. The hybrid architecture (lifecycle hooks + worker service + SQLite + vector search) demonstrates sophisticated context engineering, while the one-command install (`npx claude-mem install`) makes it instantly accessible.
-
----
-
 ### claude-mem - Claude Code 持久化记忆系统
 
 * **功能介绍**: 自动捕获 Claude 在编码会话中的所有操作，使用 Claude 的 agent-sdk 进行 AI 压缩，并将相关上下文注入到未来的会话中——为 Claude 提供跨对话的持久记忆。
@@ -580,4 +497,151 @@ Directly addresses Karpathy's viral observations about LLM coding failures - wro
 * 为何值得观看: 去伪存真,精准识别对职业发展真正有价值的AI技能;帮助观众避免在低回报技能上浪费时间,聚焦当前AI驱动的就业市场真正需要的核心能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ir10fvx9v0k)**
+
+### Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them
+
+* A buyer acquired Essential Plugin's entire portfolio of 30+ WordPress plugins for six figures on Flippa, then immediately planted backdoors in all of them
+* The backdoor was added in August 2025 but remained dormant for 8 months before being weaponized in April 2026
+* The malicious code used PHP deserialization to execute arbitrary functions, downloaded a fake core file (wp-comments-posts.php), and injected SEO spam into wp-config.php
+* The malware only showed spam content to Googlebot, making it invisible to site owners, and used Ethereum smart contracts to resolve its command-and-control server
+* WordPress.org permanently closed all 31 plugins on April 7, 2026, and force-updated affected sites, though the forced update didn't clean the injected wp-config.php code
+* This follows the same pattern as the 2017 Display Widgets attack, where legitimate plugins are acquired through marketplaces and weaponized for spam injection
+
+### 有人买下30个WordPress插件并在所有插件中植入后门
+
+* 一名买家在Flippa上以六位数价格收购了Essential Plugin的整个插件组合(30多个WordPress插件),随后立即在所有插件中植入后门
+* 后门于2025年8月添加,但潜伏了8个月,直到2026年4月才被激活
+* 恶意代码使用PHP反序列化执行任意函数,下载伪造的核心文件(wp-comments-posts.php),并向wp-config.php注入SEO垃圾内容
+* 恶意软件仅向Googlebot展示垃圾内容,使网站所有者无法察觉,并使用以太坊智能合约解析其命令控制服务器
+* WordPress.org于2026年4月7日永久关闭了所有31个插件,并强制更新受影响的网站,但强制更新未清理被注入的wp-config.php代码
+* 这与2017年Display Widgets攻击的模式相同,即通过市场购买合法插件后将其武器化用于垃圾内容注入
+
+**[Read Original / 阅读原文](https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/)**
+
+### Formal Verification Meets Reality: A Bug in Lean's Verified zlib Implementation
+
+* AI agents are rapidly improving at discovering security vulnerabilities, creating a potential software crisis as the cost of finding bugs collapses
+* Researchers used 10 AI agents to build and formally verify lean-zip, a zlib implementation in Lean, with end-to-end correctness proofs guaranteeing it's bug-free
+* The main theorem proves that decompressing compressed data returns the original input for any byte array under 1GB
+* Fuzzing with 105 million executions found zero memory vulnerabilities in the verified Lean code itself
+* However, fuzzing discovered a heap buffer overflow in the Lean 4 runtime (lean_alloc_sarray) affecting all Lean versions
+* A denial-of-service vulnerability was also found in lean-zip's unverified archive parser
+* This demonstrates that formal verification of application code doesn't guarantee safety if the underlying runtime or unverified components contain bugs
+
+### 形式化验证遭遇现实：Lean 验证的 zlib 实现中发现的漏洞
+
+* AI 智能体在发现安全漏洞方面能力快速提升，随着发现漏洞的成本急剧下降，可能引发软件危机
+* 研究人员使用 10 个 AI 智能体构建并形式化验证了 lean-zip（Lean 语言实现的 zlib），具有端到端的正确性证明，保证无实现错误
+* 主要定理证明：对于任何小于 1GB 的字节数组，解压缩后的数据与原始输入完全一致
+* 通过 1.05 亿次模糊测试执行，在已验证的 Lean 代码本身中未发现任何内存漏洞
+* 然而，模糊测试在 Lean 4 运行时（lean_alloc_sarray）中发现了堆缓冲区溢出漏洞，影响所有 Lean 版本
+* 在 lean-zip 未经验证的归档解析器中还发现了拒绝服务漏洞
+* 这表明应用代码的形式化验证无法保证整体安全性，如果底层运行时或未验证组件存在漏洞
+
+**[Read Original / 阅读原文](https://kirancodes.me/posts/log-who-watches-the-watchers.html)**
+
+<!-- [Title-Only] -->
+### GitHub Stacked PRs
+
+* Based on the title, this article likely covers GitHub's approach to "stacked pull requests" - a development workflow where multiple dependent PRs are created on top of each other, rather than waiting for each PR to be merged before starting the next one
+* This might be interesting to readers because stacked PRs can significantly improve development velocity for teams working on large features that need to be broken into smaller, reviewable chunks. It's a workflow pattern popular in companies like Meta and Google, and GitHub appears to be providing official tooling support for it
+
+### GitHub 堆叠式拉取请求
+
+* 根据标题推测,本文可能介绍 GitHub 的"堆叠式拉取请求"功能 - 一种开发工作流,允许开发者创建多个相互依赖的 PR,而不必等待每个 PR 合并后再开始下一个
+* 值得关注的原因:堆叠式 PR 可以显著提升团队的开发效率,特别是在将大型功能拆分为多个小型、易于审查的部分时。这种工作流模式在 Meta 和 Google 等公司很受欢迎,GitHub 似乎正在为其提供官方工具支持
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
+
+**[Read Original / 阅读原文](https://github.github.com/gh-stack/)**
+
+### PureMac - Privacy-First macOS Cleaner, the Free CleanMyMac Alternative
+
+* **What it does**: A native macOS cleaning utility that removes system junk, caches, logs, Xcode artifacts, Homebrew cache, and purgeable space. Offers scheduled auto-cleaning with zero telemetry or data collection.
+
+* **Key features**: 
+  - 100% free and open-source (MIT licensed) with no subscriptions or upsells
+  - Built entirely in SwiftUI for native performance, signed and notarized by Apple
+  - Smart scan across 8+ categories: system/user caches, mail attachments, trash, large/old files, Xcode/Homebrew junk, and APFS purgeable space
+  - Configurable scheduled cleaning (hourly to monthly intervals) with auto-purge options
+  - Click-to-inspect interface shows exactly what will be removed before cleaning
+
+* **Why it's notable**: Positioned as a privacy-respecting alternative to CleanMyMac X ($39.95/year), PureMac runs completely offline with no analytics or network calls. With 932 stars and growing, it's gaining traction among developers who want transparency (auditable source code) and control over their Mac maintenance without paying for commercial cleaners. The Homebrew installation and Apple Developer ID signing make it production-ready for immediate use.
+
+---
+
+### PureMac - 注重隐私的 macOS 清理工具,免费的 CleanMyMac 替代品
+
+* **功能介绍**: 原生 macOS 清理工具,可清除系统垃圾、缓存、日志、Xcode 构建产物、Homebrew 缓存和可清除空间。支持定时自动清理,零遥测和数据收集。
+
+* **主要特点**:
+  - 100% 免费开源(MIT 许可),无订阅或付费升级
+  - 完全使用 SwiftUI 构建,原生性能,经 Apple 签名和公证
+  - 智能扫描 8+ 个类别:系统/用户缓存、邮件附件、废纸篓、大型/旧文件、Xcode/Homebrew 垃圾文件和 APFS 可清除空间
+  - 可配置定时清理(每小时到每月),支持自动清除选项
+  - 点击检查界面,清理前可准确查看将删除的内容
+
+* **为何值得关注**: 作为 CleanMyMac X(39.95 美元/年)的隐私友好替代品,PureMac 完全离线运行,无分析或网络请求。拥有 932 星标且持续增长,在希望透明度(可审计源代码)和掌控 Mac 维护而不想为商业清理工具付费的开发者中越来越受欢迎。支持 Homebrew 安装和 Apple 开发者 ID 签名,可立即投入生产使用。
+
+**[View Repository / 查看仓库](https://github.com/momenbasel/PureMac)**
+
+### 🎬 These 4 AIs Race Through Impossible Traffic
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* What the video covers: A coding demonstration where four AI agents are programmed to navigate through challenging traffic scenarios, showcasing pathfinding algorithms and AI decision-making in real-time
+* Key topics discussed: AI programming techniques, traffic simulation algorithms, comparative AI performance analysis, practical implementation using web technologies (Python, JavaScript, HTML, CSS)
+* Why it's worth watching: Offers an engaging visual demonstration of AI concepts in action, perfect for developers interested in game AI, pathfinding algorithms, or simulation programming; combines entertainment with practical coding education
+
+---
+
+### 🎬 四个 AI 在极限交通中竞速
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* 视频内容概述: 通过编程演示四个 AI 智能体如何在复杂的交通场景中导航，实时展示路径规划算法和 AI 决策过程
+* 主要话题: AI 编程技术、交通模拟算法、AI 性能对比分析、使用 Web 技术（Python、JavaScript、HTML、CSS）的实际实现
+* 为何值得观看: 以生动的视觉方式展示 AI 概念的实际应用，适合对游戏 AI、路径规划算法或模拟编程感兴趣的开发者；将娱乐性与实用编程教育完美结合
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yICjfUfvJIs)**
+
+### 🎬 Full Claude Tutorial: Beginner to Advanced in 19 Minutes
+**Channel:** Futurepedia
+
+* What the video covers: A comprehensive walkthrough of Claude AI from basic usage to advanced features, condensed into a 19-minute tutorial that takes viewers through every major capability of the platform.
+
+* Key topics discussed: Complete feature set of Claude AI including chat interface, prompt engineering techniques, file uploads and analysis, Projects feature for custom knowledge bases, API integration, and advanced use cases for different workflows.
+
+* Why it's worth watching: Perfect for anyone wanting to quickly master Claude AI without spending hours on documentation. The tutorial efficiently covers beginner fundamentals through advanced techniques, making it ideal for both newcomers and users looking to unlock Claude's full potential. The accompanying free guide provides additional reference material.
+
+---
+
+### 🎬 Claude 完整教程：19分钟从入门到精通
+**频道:** Futurepedia
+
+* 视频内容概述: 全面讲解 Claude AI 从基础使用到高级功能的完整教程，将平台的所有主要功能浓缩在19分钟的视频中，带领观众系统学习每个重要特性。
+
+* 主要话题: 涵盖 Claude AI 的完整功能集，包括对话界面使用、提示词工程技巧、文件上传与分析、Projects 功能（自定义知识库）、API 集成，以及针对不同工作流程的高级应用场景。
+
+* 为何值得观看: 适合想要快速掌握 Claude AI 而不需要花费数小时阅读文档的用户。教程高效地涵盖了从入门基础到高级技巧的全部内容，无论是新手还是希望充分发挥 Claude 潜力的用户都能从中受益。配套的免费指南提供了额外的参考资料。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WSPChlfxJyA)**
+
+### 🎬 Hermes Agent Full Setup Tutorial: How to Setup Your First AI Agent (Gemma 4)
+**Channel:** Bart Slodyczka
+
+* What the video covers: A complete step-by-step tutorial on setting up Hermes Agent from scratch, integrating it with Gemma 4 AI model running locally via Ollama
+* Key topics discussed: Hermes Agent installation and configuration, local AI model deployment with Ollama, Gemma 4 integration, hands-on agent setup process
+* Why it's worth watching: Perfect for developers wanting to build their first AI agent locally without cloud dependencies, provides practical implementation guidance for running advanced AI models on your own machine
+
+### 🎬 Hermes Agent 完整设置教程：如何设置你的第一个 AI 代理（Gemma 4）
+**频道:** Bart Slodyczka
+
+* 视频内容概述: 从零开始完整演示如何设置 Hermes Agent，并通过 Ollama 将其与本地运行的 Gemma 4 AI 模型集成
+* 主要话题: Hermes Agent 的安装与配置、使用 Ollama 进行本地 AI 模型部署、Gemma 4 集成、实操代理设置流程
+* 为何值得观看: 适合想要在本地构建首个 AI 代理而无需依赖云服务的开发者，提供在自己机器上运行先进 AI 模型的实用实施指南
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=THA8Fov44QY)**
 
