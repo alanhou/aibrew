@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 14, 2026"
 date: 2026-04-14
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -471,88 +471,6 @@ Directly addresses Karpathy's viral observations about LLM coding failures - wro
 
 ---
 
-### 🎬 哪个AI最擅长编写动画代码
-
-**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘀
-
-* 对比分析不同AI编程助手在生成动画代码方面的能力
-* 评估多种编程语言(Python、JavaScript、HTML、CSS)的表现
-* 实际演示展示哪些AI工具在创建动画和交互元素方面表现出色
-* 适合正在为前端开发或动画项目选择AI编程工具的开发者观看
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VG-b4JamfhE)**
-
-### 🎬 Top 5 AI Skills to Learn in 2026 🚀 (Stay Relevant or Fall Behind)
-**Channel:** Gowtham Tirri Telugu
-
-* What the video covers: A strategic guide to the most valuable AI skills professionals need to acquire in 2026 to remain competitive in the rapidly evolving tech landscape
-* Key topics discussed: Five critical AI competencies that separate those who thrive from those who get left behind as AI transforms industries; focuses on practical, high-demand skills rather than outdated or overhyped capabilities
-* Why it's worth watching: Cuts through the noise to identify which AI skills actually matter for career growth and relevance; helps viewers avoid wasting time on skills that won't provide ROI in the current AI-driven job market
-
-### 🎬 2026年必学的5大AI技能 🚀 (保持竞争力或被淘汰)
-**频道:** Gowtham Tirri Telugu
-
-* 视频内容概述: 针对2026年AI技术发展趋势,系统讲解专业人士必须掌握的五项最有价值的AI技能,帮助观众在快速变化的科技环境中保持竞争力
-* 主要话题: 五项关键AI能力,这些技能将决定从业者能否在AI变革浪潮中脱颖而出;重点关注实用性强、市场需求高的技能,而非过时或被过度炒作的能力
-* 为何值得观看: 去伪存真,精准识别对职业发展真正有价值的AI技能;帮助观众避免在低回报技能上浪费时间,聚焦当前AI驱动的就业市场真正需要的核心能力
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ir10fvx9v0k)**
-
-### Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them
-
-* A buyer acquired Essential Plugin's entire portfolio of 30+ WordPress plugins for six figures on Flippa, then immediately planted backdoors in all of them
-* The backdoor was added in August 2025 but remained dormant for 8 months before being weaponized in April 2026
-* The malicious code used PHP deserialization to execute arbitrary functions, downloaded a fake core file (wp-comments-posts.php), and injected SEO spam into wp-config.php
-* The malware only showed spam content to Googlebot, making it invisible to site owners, and used Ethereum smart contracts to resolve its command-and-control server
-* WordPress.org permanently closed all 31 plugins on April 7, 2026, and force-updated affected sites, though the forced update didn't clean the injected wp-config.php code
-* This follows the same pattern as the 2017 Display Widgets attack, where legitimate plugins are acquired through marketplaces and weaponized for spam injection
-
-### 有人买下30个WordPress插件并在所有插件中植入后门
-
-* 一名买家在Flippa上以六位数价格收购了Essential Plugin的整个插件组合(30多个WordPress插件),随后立即在所有插件中植入后门
-* 后门于2025年8月添加,但潜伏了8个月,直到2026年4月才被激活
-* 恶意代码使用PHP反序列化执行任意函数,下载伪造的核心文件(wp-comments-posts.php),并向wp-config.php注入SEO垃圾内容
-* 恶意软件仅向Googlebot展示垃圾内容,使网站所有者无法察觉,并使用以太坊智能合约解析其命令控制服务器
-* WordPress.org于2026年4月7日永久关闭了所有31个插件,并强制更新受影响的网站,但强制更新未清理被注入的wp-config.php代码
-* 这与2017年Display Widgets攻击的模式相同,即通过市场购买合法插件后将其武器化用于垃圾内容注入
-
-**[Read Original / 阅读原文](https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/)**
-
-### Formal Verification Meets Reality: A Bug in Lean's Verified zlib Implementation
-
-* AI agents are rapidly improving at discovering security vulnerabilities, creating a potential software crisis as the cost of finding bugs collapses
-* Researchers used 10 AI agents to build and formally verify lean-zip, a zlib implementation in Lean, with end-to-end correctness proofs guaranteeing it's bug-free
-* The main theorem proves that decompressing compressed data returns the original input for any byte array under 1GB
-* Fuzzing with 105 million executions found zero memory vulnerabilities in the verified Lean code itself
-* However, fuzzing discovered a heap buffer overflow in the Lean 4 runtime (lean_alloc_sarray) affecting all Lean versions
-* A denial-of-service vulnerability was also found in lean-zip's unverified archive parser
-* This demonstrates that formal verification of application code doesn't guarantee safety if the underlying runtime or unverified components contain bugs
-
-### 形式化验证遭遇现实：Lean 验证的 zlib 实现中发现的漏洞
-
-* AI 智能体在发现安全漏洞方面能力快速提升，随着发现漏洞的成本急剧下降，可能引发软件危机
-* 研究人员使用 10 个 AI 智能体构建并形式化验证了 lean-zip（Lean 语言实现的 zlib），具有端到端的正确性证明，保证无实现错误
-* 主要定理证明：对于任何小于 1GB 的字节数组，解压缩后的数据与原始输入完全一致
-* 通过 1.05 亿次模糊测试执行，在已验证的 Lean 代码本身中未发现任何内存漏洞
-* 然而，模糊测试在 Lean 4 运行时（lean_alloc_sarray）中发现了堆缓冲区溢出漏洞，影响所有 Lean 版本
-* 在 lean-zip 未经验证的归档解析器中还发现了拒绝服务漏洞
-* 这表明应用代码的形式化验证无法保证整体安全性，如果底层运行时或未验证组件存在漏洞
-
-**[Read Original / 阅读原文](https://kirancodes.me/posts/log-who-watches-the-watchers.html)**
-
-<!-- [Title-Only] -->
-### GitHub Stacked PRs
-
-* Based on the title, this article likely covers GitHub's approach to "stacked pull requests" - a development workflow where multiple dependent PRs are created on top of each other, rather than waiting for each PR to be merged before starting the next one
-* This might be interesting to readers because stacked PRs can significantly improve development velocity for teams working on large features that need to be broken into smaller, reviewable chunks. It's a workflow pattern popular in companies like Meta and Google, and GitHub appears to be providing official tooling support for it
-
-### GitHub 堆叠式拉取请求
-
-* 根据标题推测,本文可能介绍 GitHub 的"堆叠式拉取请求"功能 - 一种开发工作流,允许开发者创建多个相互依赖的 PR,而不必等待每个 PR 合并后再开始下一个
-* 值得关注的原因:堆叠式 PR 可以显著提升团队的开发效率,特别是在将大型功能拆分为多个小型、易于审查的部分时。这种工作流模式在 Meta 和 Google 等公司很受欢迎,GitHub 似乎正在为其提供官方工具支持
-
----
-
 *Note: This introduction is based solely on the article title, as the full content could not be accessed.*
 
 **[Read Original / 阅读原文](https://github.github.com/gh-stack/)**
@@ -644,4 +562,64 @@ Directly addresses Karpathy's viral observations about LLM coding failures - wro
 * 为何值得观看: 适合想要在本地构建首个 AI 代理而无需依赖云服务的开发者，提供在自己机器上运行先进 AI 模型的实用实施指南
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=THA8Fov44QY)**
+
+### DaVinci Resolve Photo Page: Professional RAW Processing with Familiar Tools
+
+* Native RAW support for major camera brands (Canon, Fujifilm, Nikon, Sony) and iPhone ProRAW
+* Processes images at full source resolution up to 32K or 400+ megapixels, independent of project resolution
+* Combines familiar photo editing controls (white balance, exposure, color, saturation) with DaVinci's advanced color grading
+* Non-destructive workflow allows reframing, cropping, and reinterpreting original sensor data at any time
+* GPU-accelerated processing enables significantly faster batch processing compared to traditional photo applications
+
+### DaVinci Resolve 照片页面：专业 RAW 处理与熟悉的工具
+
+* 原生支持主流相机品牌（佳能、富士、尼康、索尼）RAW 格式及 iPhone ProRAW
+* 以原始分辨率处理图像，最高支持 32K 或超过 4 亿像素，不受项目分辨率限制
+* 结合熟悉的照片编辑控制（白平衡、曝光、色彩、饱和度）与 DaVinci 强大的调色功能
+* 非破坏性工作流程，可随时重新构图、裁剪和重新解读原始传感器数据
+* GPU 加速处理，批量处理速度远超传统照片应用程序
+
+**[Read Original / 阅读原文](https://www.blackmagicdesign.com/products/davinciresolve/photo)**
+
+### Google Introduces New Spam Policy Targeting "Back Button Hijacking"
+
+* **Effective Date**: Google will enforce this policy starting June 15, 2026, giving site owners two months to comply
+* **What It Is**: Back button hijacking prevents users from returning to the previous page when clicking the browser's back button, instead redirecting them to unwanted pages, ads, or recommendations
+* **Policy Classification**: Now explicitly violates Google's "malicious practices" spam policy, which addresses behaviors that create mismatches between user expectations and actual outcomes
+* **Consequences**: Sites engaging in this practice may face manual spam actions or automated demotions in Google Search results
+* **Common Sources**: The hijacking may originate from third-party scripts, libraries, or advertising platforms embedded on the site
+* **Required Action**: Site owners must remove or disable any code, scripts, or configurations that interfere with normal browser back button functionality
+* **Recourse**: Sites affected by manual actions can submit reconsideration requests through Search Console after fixing the issue
+
+### Google 推出针对"返回按钮劫持"的新垃圾内容政策
+
+* **生效日期**: Google 将从 2026 年 6 月 15 日开始执行此政策,给网站所有者两个月的合规时间
+* **定义**: 返回按钮劫持是指阻止用户点击浏览器返回按钮时回到上一页面,而是将其重定向到不需要的页面、广告或推荐内容
+* **政策分类**: 现已明确违反 Google 的"恶意行为"垃圾内容政策,该政策针对在用户期望与实际结果之间制造不匹配的行为
+* **处罚后果**: 从事此类行为的网站可能面临人工垃圾内容处理或自动降级,影响在 Google 搜索结果中的表现
+* **常见来源**: 劫持行为可能源自网站中嵌入的第三方脚本、库或广告平台
+* **必要措施**: 网站所有者必须删除或禁用任何干扰浏览器返回按钮正常功能的代码、脚本或配置
+* **申诉途径**: 受到人工处理影响的网站在修复问题后,可通过 Search Console 提交重新审核请求
+
+**[Read Original / 阅读原文](https://developers.google.com/search/blog/2026/04/back-button-hijacking)**
+
+### Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them
+
+* A buyer acquired Essential Plugin's entire portfolio of 30+ WordPress plugins for six figures on Flippa, then immediately planted backdoors in all of them
+* The backdoor was added in August 2025 but remained dormant for 8 months before being weaponized in April 2026
+* The malicious code used PHP deserialization to execute arbitrary functions, downloaded a fake core file (wp-comments-posts.php), and injected SEO spam into wp-config.php
+* The malware only showed spam content to Googlebot, making it invisible to site owners, and used Ethereum smart contracts to resolve C2 domains
+* WordPress.org permanently closed all 31 plugins on April 7, 2026, and force-updated affected sites, though the forced update didn't clean the wp-config.php injections
+* This follows the same pattern as the 2017 Display Widgets attack, where legitimate plugins are acquired through marketplaces and weaponized for spam injection
+
+### 有人买下30个WordPress插件并在所有插件中植入后门
+
+* 买家在Flippa上以六位数价格收购了Essential Plugin的整个插件组合(30多个WordPress插件),然后立即在所有插件中植入后门
+* 后门于2025年8月添加,但潜伏了8个月,直到2026年4月才被激活
+* 恶意代码使用PHP反序列化执行任意函数,下载伪造的核心文件(wp-comments-posts.php),并向wp-config.php注入SEO垃圾内容
+* 恶意软件仅向Googlebot显示垃圾内容,使网站所有者无法察觉,并使用以太坊智能合约解析C2域名
+* WordPress.org于2026年4月7日永久关闭了所有31个插件,并强制更新受影响的网站,但强制更新未清理wp-config.php中的注入代码
+* 这与2017年Display Widgets攻击的模式相同,即通过市场购买合法插件后将其武器化用于垃圾内容注入
+
+**[Read Original / 阅读原文](https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/)**
 
