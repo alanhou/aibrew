@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 15, 2026"
 date: 2026-04-15
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -802,4 +802,102 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合想要构建首个 AI 智能体的开发者——无需依赖云服务或支付 API 费用。实用教程带你从零搭建一个基于开源工具的可运行 AI 智能体系统。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=THA8Fov44QY)**
+
+### Fixing a 20-Year-Old Bug in Enlightenment E16
+
+* A rare, show-stopping bug dating back to 2006 was discovered in the E16 window manager while opening a PDF with a long title
+* The bug caused the desktop to freeze due to an infinite loop in the text truncation algorithm that uses Newton's method to fit window titles
+* The root cause was a faulty Newton's algorithm implementation lacking iteration limits, causing oscillation between two states when trying to truncate text to fit a 291-pixel border
+* The fix involved three defensive changes: capping iterations at 32, flooring nuke_count at 1, and flooring character width at 1 to prevent divide-by-zero
+* The author reflects on software maintenance philosophy, noting that older stable software maintained by competent developers can be more reliable than constantly updated modern software with new bugs and supply chain risks
+
+### 修复 Enlightenment E16 中一个 20 年历史的 Bug
+
+* 在打开一个标题过长的 PDF 文件时,发现了 E16 窗口管理器中一个可追溯到 2006 年的罕见致命 bug
+* 该 bug 导致桌面冻结,原因是文本截断算法中使用牛顿法来适配窗口标题时出现无限循环
+* 根本原因是牛顿算法实现存在缺陷,缺少迭代限制,在尝试将文本截断以适应 291 像素边框时,在两个状态之间无限振荡
+* 修复方案包括三个防御性改动:将迭代次数限制在 32 次、将 nuke_count 下限设为 1、将字符宽度下限设为 1 以防止除零错误
+* 作者对软件维护理念进行了反思,指出由称职开发者维护的旧版稳定软件可能比不断更新、带有新 bug 和供应链风险的现代软件更可靠
+
+**[Read Original / 阅读原文](https://iczelia.net/posts/e16-20-year-old-bug/)**
+
+### My Adventure in Designing API Keys
+
+* **API Key Basics**: API keys are authentication tokens that allow users to access APIs without sessions, typically formatted with a prefix (metadata), random hex string, and checksum for validation
+* **Security & Storage**: API keys are hashed before database storage (like passwords), making them unrecoverable after creation - users must copy them immediately
+* **Multi-tenant Challenge**: In sharded database systems, routing API requests to the correct shard is complex since API keys lack the account context that session cookies provide
+* **Design Approaches Explored**: Three main approaches tested - full hash mapping (simple but redundant), prefix-based routing (predictable but efficient), and custom encoding (initially promising but flawed)
+* **Performance Insights**: B-tree indexes handle string lookups efficiently regardless of length; BigInt operations in JavaScript are surprisingly slow due to software-based arbitrary-precision math
+* **Final Solution - SHAKE256**: SHA3's SHAKE algorithm provides variable-length output, allowing 10-character base64url encoding that balances performance, collision resistance (72 quintillion possibilities), and reduced index size
+* **Key Learnings**: Real-world implementation revealed assumptions about string indexing performance, the importance of proper benchmarking (avoiding TCP connection time inflation), and trade-offs between security and efficiency
+
+### 我的 API 密钥设计之旅
+
+* **API 密钥基础**:API 密钥是无需会话即可访问 API 的身份验证令牌,通常由前缀(元数据)、随机十六进制字符串和校验和组成,用于验证有效性
+* **安全与存储**:API 密钥在存入数据库前会被哈希处理(类似密码),创建后无法恢复 - 用户必须立即复制保存
+* **多租户挑战**:在分片数据库系统中,将 API 请求路由到正确分片很复杂,因为 API 密钥缺少会话 cookie 提供的账户上下文信息
+* **探索的设计方案**:测试了三种主要方法 - 完整哈希映射(简单但冗余)、基于前缀的路由(可预测但高效)和自定义编码(初看有前景但存在缺陷)
+* **性能洞察**:B 树索引无论字符串长度如何都能高效处理查找;JavaScript 中的 BigInt 运算因基于软件的任意精度数学而出乎意料地慢
+* **最终方案 - SHAKE256**:SHA3 的 SHAKE 算法提供可变长度输出,允许使用 10 字符 base64url 编码,在性能、抗碰撞性(72 千万亿种可能性)和索引大小之间取得平衡
+* **核心收获**:实际实现揭示了关于字符串索引性能的假设错误、正确基准测试的重要性(避免 TCP 连接时间膨胀)以及安全性与效率之间的权衡
+
+**[Read Original / 阅读原文](https://vjay15.github.io/blog/apikeys/)**
+
+### wacli — WhatsApp CLI: Sync, Search, and Send Messages
+
+* **Third-party WhatsApp CLI tool** built on `whatsmeow` using WhatsApp Web protocol (not officially affiliated with WhatsApp)
+* **Core features**: local message history sync with continuous capture, fast offline search, message sending, and contact/group management
+* **Recent updates (v0.2.0)**: enhanced search/list display for reactions, replies, and media; file send with custom filename override; optional device label/platform environment variables
+* **Installation options**: via Homebrew tap (`brew install steipete/tap/wacli`) or local build with Go
+* **Quick start workflow**: authenticate with QR code (`wacli auth`), run continuous sync (`wacli sync --follow`), then search, send messages, or manage groups
+* **Backfill capability**: fetch older message history per chat (best-effort, requires primary device online) using `history backfill` command
+* **Storage**: defaults to `~/.wacli` directory with human-readable output (JSON format available via `--json` flag)
+* **Inspired by**: Vicente Reig's `whatsapp-cli` project
+
+### wacli — WhatsApp 命令行工具：同步、搜索和发送消息
+
+* **第三方 WhatsApp CLI 工具**，基于 `whatsmeow` 构建，使用 WhatsApp Web 协议（非 WhatsApp 官方产品）
+* **核心功能**：本地消息历史同步与持续捕获、快速离线搜索、消息发送、联系人和群组管理
+* **最新更新 (v0.2.0)**：搜索/列表显示增强了反应、回复和媒体类型；文件发送支持自定义文件名覆盖；可选的设备标签/平台环境变量
+* **安装方式**：通过 Homebrew tap 安装（`brew install steipete/tap/wacli`）或使用 Go 本地构建
+* **快速开始流程**：使用二维码认证（`wacli auth`），运行持续同步（`wacli sync --follow`），然后搜索、发送消息或管理群组
+* **回填功能**：按聊天获取较旧的消息历史（尽力而为，需要主设备在线），使用 `history backfill` 命令
+* **存储方式**：默认存储在 `~/.wacli` 目录，输出人类可读格式（可通过 `--json` 标志获取 JSON 格式）
+* **灵感来源**：Vicente Reig 的 `whatsapp-cli` 项目
+
+**[Read Original / 阅读原文](https://github.com/steipete/wacli)**
+
+### MOSS-TTS-Nano - Tiny Multilingual Speech Generation Model for CPU-Based Realtime TTS
+
+* **What it does**: MOSS-TTS-Nano is an open-source text-to-speech model that generates natural-sounding multilingual speech with only 0.1B parameters. It uses an Audio Tokenizer + LLM architecture to convert text into high-quality 48kHz stereo audio through voice cloning.
+
+* **Key features**: 
+  * Extremely lightweight (0.1B parameters) enabling CPU-only inference without GPU requirements
+  * Supports 20 languages including Chinese, English, German, Spanish, French, Japanese, Korean, and more
+  * Streaming inference with low latency for realtime applications
+  * Native 48kHz 2-channel audio output for high fidelity
+  * Simple deployment via Python scripts, web demo, or CLI commands
+  * Long-text support with automatic chunked voice cloning
+  * Includes MOSS-Audio-Tokenizer-Nano (20M parameters) for efficient audio compression
+
+* **Why it's notable**: This project stands out for making high-quality multilingual TTS accessible on consumer hardware. With 896 stars, it's gaining traction because it solves the practical deployment challenge of running TTS models locally without expensive GPU infrastructure. The pure autoregressive architecture, combined with CPU-friendly streaming generation on just 4 cores, makes it ideal for lightweight product integration, local demos, and web serving. The comprehensive language support and voice cloning capabilities in such a tiny model size represent a significant achievement in efficient speech synthesis.
+
+---
+
+### MOSS-TTS-Nano - 轻量级多语言实时语音生成模型
+
+* **功能介绍**: MOSS-TTS-Nano 是一个开源的文本转语音模型,仅使用 0.1B 参数即可生成自然流畅的多语言语音。它采用音频分词器 + 大语言模型架构,通过声音克隆技术将文本转换为高质量的 48kHz 立体声音频。
+
+* **主要特点**:
+  * 极致轻量(0.1B 参数),支持纯 CPU 推理,无需 GPU
+  * 支持 20 种语言,包括中文、英文、德语、西班牙语、法语、日语、韩语等
+  * 流式推理,低延迟,适合实时应用场景
+  * 原生 48kHz 双声道音频输出,保证高保真度
+  * 部署简单,支持 Python 脚本、Web 演示或 CLI 命令行
+  * 支持长文本合成,自动分块声音克隆
+  * 包含 MOSS-Audio-Tokenizer-Nano(20M 参数)实现高效音频压缩
+
+* **为何值得关注**: 该项目因在消费级硬件上实现高质量多语言 TTS 而备受关注,目前已获得 896 星标。它解决了 TTS 模型本地部署的实际难题,无需昂贵的 GPU 基础设施。纯自回归架构结合 CPU 友好的流式生成(仅需 4 核),使其非常适合轻量级产品集成、本地演示和 Web 服务。在如此小的模型规模下实现全面的语言支持和声音克隆能力,代表了高效语音合成领域的重大突破。
+
+**[View Repository / 查看仓库](https://github.com/OpenMOSS/MOSS-TTS-Nano)**
 
