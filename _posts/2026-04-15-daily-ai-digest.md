@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 15, 2026"
 date: 2026-04-15
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，11个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -900,4 +900,162 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 该项目因在消费级硬件上实现高质量多语言 TTS 而备受关注,目前已获得 896 星标。它解决了 TTS 模型本地部署的实际难题,无需昂贵的 GPU 基础设施。纯自回归架构结合 CPU 友好的流式生成(仅需 4 核),使其非常适合轻量级产品集成、本地演示和 Web 服务。在如此小的模型规模下实现全面的语言支持和声音克隆能力,代表了高效语音合成领域的重大突破。
 
 **[View Repository / 查看仓库](https://github.com/OpenMOSS/MOSS-TTS-Nano)**
+
+### Want to Write a Compiler? Just Read These Two Papers.
+
+* Compiler textbooks are often overly complex and broadly scoped, making them difficult for beginners—similar to learning programming from Knuth's "The Art of Computer Programming"
+* Jack Crenshaw's "Let's Build a Compiler!" (1988) demystifies compiler writing by focusing on simple, single-pass compilers suitable for first-year programming students
+* Crenshaw's tutorial omits abstract syntax trees (AST) due to Pascal's limitations, but modern high-level languages (Python, Ruby, Erlang, Haskell, Lisp) make tree manipulation trivial
+* "A Nanopass Framework for Compiler Education" by Sarkar, Waddell, and Dybvig presents compilers as a series of simple transformations on internal program representations
+* The nanopass approach advocates for dozens or hundreds of simple compiler passes rather than complex combined transformations, making compiler construction more accessible
+* After mastering these resources, traditional compiler textbooks like the "Dragon Book" may become optional rather than essential
+
+### 想写编译器？读这两篇文章就够了
+
+* 编译器教科书通常过于复杂且范围广泛，对初学者来说很困难——就像从Knuth的《计算机程序设计艺术》学习编程一样
+* Jack Crenshaw的《Let's Build a Compiler!》(1988)通过专注于简单的单遍编译器，打破了编译器难写的神话，适合编程初学者
+* Crenshaw的教程因Pascal语言限制而省略了抽象语法树(AST)，但现代高级语言(Python、Ruby、Erlang、Haskell、Lisp)使树操作变得简单
+* Sarkar、Waddell和Dybvig的论文《A Nanopass Framework for Compiler Education》将编译器呈现为对程序内部表示的一系列简单转换
+* Nanopass方法提倡使用数十或数百个简单的编译器遍历，而不是复杂的组合转换，使编译器构建更易于理解
+* 掌握这些资源后，像"龙书"这样的传统编译器教材可能变成可选而非必需
+
+**[Read Original / 阅读原文](https://prog21.dadgum.com/30.html)**
+
+### Good Sleep, Good Learning, Good Life - Summary
+
+* Comprehensive guide on sleep science with practical applications for learning and creative achievement
+* Emphasizes that good sleep is achievable for most healthy people with proper knowledge and lifestyle adjustments
+* Key recommendations include respecting sleep for high IQ, using free-running sleep schedules, and avoiding alarm clocks when possible
+* Advocates for biphasic sleep schedules for creative individuals and letting children sleep on demand rather than forcing school wake times
+* Warns against using substances (sleeping pills, caffeine, alcohol) to regulate sleep and alertness
+* Written using incremental writing technique, making it suitable for both linear reading and incremental learning approaches
+* Highlights the modern epidemic of sleep disorders caused by alarm clocks, artificial lighting, and shift work disrupting natural sleep patterns
+* Positions sleep alongside exercise and learning as essential tools for brain growth and cognitive performance
+
+### 优质睡眠、高效学习、美好生活 - 摘要
+
+* 关于睡眠科学的综合指南,重点关注学习和创造性成就的实际应用
+* 强调大多数健康人只要掌握适当知识并调整生活方式,就能获得优质睡眠
+* 核心建议包括:尊重睡眠以提高智商、采用自由运行睡眠时间表、尽可能避免使用闹钟
+* 提倡创意工作者采用双相睡眠模式,让儿童按需睡眠而非强制按学校时间起床
+* 警告不要使用药物(安眠药、咖啡因、酒精)来调节睡眠和警觉性
+* 采用增量写作技术撰写,适合线性阅读和增量学习两种方式
+* 指出现代社会因闹钟、人工照明和轮班工作破坏自然睡眠模式而导致的睡眠障碍流行病
+* 将睡眠与运动和学习并列为大脑发育和认知表现的关键工具
+
+**[Read Original / 阅读原文](https://super-memory.com/articles/sleep.htm)**
+
+### Costasiella kuroshimae: The Photosynthetic "Leaf Sheep" Sea Slug
+
+* A shell-less marine sea slug discovered in 1993 off Kuroshima, Japan, found in tropical waters near Japan, Philippines, and Indonesia
+* Nicknamed "leaf sheep" or "sea sheep" due to ear-like rhinophores and leaf-like cerata arranged across its 5-10mm body
+* Performs photosynthesis through kleptoplasty - stealing and retaining chloroplasts from Avrainvillea algae it feeds on
+* The stored chloroplasts enable photosynthesis and serve as a nutrient reserve, allowing extended survival without food
+* Features rows of cerata (leaf-like structures) containing digestive glands that aid in feeding, defense, and respiration
+
+### 黑岛叶海蛞蝓：会光合作用的"叶羊"
+
+* 1993年在日本黑岛附近发现的无壳海蛞蝓，分布于日本、菲律宾和印度尼西亚的热带海域
+* 因头顶类似羊耳的触角和身体上排列的叶状突起而被称为"叶羊"或"海羊"，体长5-10毫米
+* 通过盗食质体作用进行光合作用——从摄食的羽藻属藻类中窃取并保留叶绿体
+* 储存的叶绿体能够进行光合作用并作为营养储备，使其能在无食物情况下长期存活
+* 身体上排列着多排叶状突起（cerata），内含消化腺，协助摄食、防御和呼吸
+
+**[Read Original / 阅读原文](https://en.wikipedia.org/wiki/Costasiella_kuroshimae)**
+
+### Dive into LLMs - Hands-on Programming Tutorial Series for Large Language Models
+
+* **What it does**: A comprehensive Chinese-language tutorial series teaching practical LLM development, from fine-tuning and deployment to advanced topics like jailbreak attacks, watermarking, and GUI agents. Includes slides, code notebooks, and hands-on experiments.
+
+* **Key features**: 11 chapters covering the full LLM development pipeline - model fine-tuning, prompt engineering, knowledge editing, mathematical reasoning, multimodal models, RLHF alignment, and AI safety. Recently partnered with Huawei Ascend to release a nationalized version with PPT, lab manuals, and video tutorials. All materials are free and open-source.
+
+* **Why it's notable**: Originated from Shanghai Jiao Tong University's NLP and AI Security courses, this is one of the most comprehensive Chinese LLM tutorials available. With 1,068 stars gained today and strong institutional backing, it fills a critical gap for Chinese-speaking developers entering the LLM space. The practical, code-first approach with Jupyter notebooks makes complex concepts accessible.
+
+---
+
+### Dive into LLMs - 《动手学大模型》系列编程实践教程
+
+* **功能介绍**: 全面的中文大语言模型实践教程系列,涵盖从模型微调部署到越狱攻击、水印技术、GUI智能体等前沿主题。包含课件、代码脚本和实验手册。
+
+* **主要特点**: 11个章节覆盖大模型开发全流程——模型微调、提示工程、知识编辑、数学推理、多模态模型、RLHF对齐、AI安全等。最近与华为昇腾合作推出国产化版本,提供PPT、实验手册和视频教程。所有资料完全免费开源。
+
+* **为何值得关注**: 源自上海交通大学《自然语言处理前沿技术》和《人工智能安全技术》课程讲义,是目前最全面的中文大模型教程之一。今日获得1,068个star,具有强大的学术机构支持,填补了中文开发者进入LLM领域的关键空白。基于Jupyter notebook的代码实践方式让复杂概念易于上手。
+
+**[View Repository / 查看仓库](https://github.com/Lordog/dive-into-llms)**
+
+### AI Hedge Fund - Multi-Agent AI Trading System for Educational Exploration
+
+* **What it does**: A proof-of-concept AI-powered hedge fund that uses multiple specialized agents (modeled after legendary investors like Warren Buffett, Michael Burry, Cathie Wood, etc.) to analyze stocks and generate trading signals. The system combines valuation, sentiment, fundamentals, and technical analysis with risk management to make simulated trading decisions.
+
+* **Key features**: 
+  - 19 specialized agents including famous investor personas (Buffett, Munger, Ackman, Taleb, etc.) and analytical agents (valuation, sentiment, fundamentals, technicals)
+  - Both CLI and web application interfaces for running analyses
+  - Backtesting capabilities to evaluate strategy performance over historical periods
+  - Support for multiple LLM providers (OpenAI, Anthropic, Groq, DeepSeek) and local models via Ollama
+  - Portfolio management with risk metrics and position limits
+
+* **Why it's notable**: Gaining 1,062 stars today, this educational project demonstrates how AI agents can collaborate to replicate different investment philosophies and decision-making styles. It's a creative exploration of multi-agent systems in finance, though explicitly designed for learning only—not real trading. The combination of legendary investor personas with modern AI makes complex investment strategies accessible and transparent.
+
+---
+
+### AI 对冲基金 - 多智能体 AI 交易系统教育项目
+
+* **功能介绍**: 这是一个概念验证的 AI 驱动对冲基金系统,使用多个专业智能体(模仿巴菲特、芒格、伯里、凯茜·伍德等传奇投资者)来分析股票并生成交易信号。系统结合估值、情绪、基本面和技术分析,配合风险管理进行模拟交易决策。
+
+* **主要特点**:
+  - 19 个专业智能体,包括著名投资者人格(巴菲特、芒格、阿克曼、塔勒布等)和分析智能体(估值、情绪、基本面、技术面)
+  - 提供命令行和 Web 应用两种界面
+  - 支持回测功能,可评估历史时期的策略表现
+  - 支持多种 LLM 提供商(OpenAI、Anthropic、Groq、DeepSeek)及通过 Ollama 使用本地模型
+  - 具备风险指标计算和仓位限制的投资组合管理
+
+* **为何值得关注**: 今日获得 1,062 星标,这个教育项目展示了 AI 智能体如何协作复现不同的投资哲学和决策风格。它创造性地探索了多智能体系统在金融领域的应用,虽然明确声明仅用于学习而非实际交易,但将传奇投资者理念与现代 AI 结合,使复杂的投资策略变得透明易懂。
+
+**[View Repository / 查看仓库](https://github.com/virattt/ai-hedge-fund)**
+
+### 🎬 Why repeat business is so important for freelancers
+**Channel:** freeCodeCamp.org
+
+* What the video covers: This video explores the critical role of repeat business in building a sustainable freelance career, examining how returning clients impact income stability and business growth.
+* Key topics discussed: The economics of client retention vs. acquisition, strategies for encouraging repeat business, building long-term client relationships, and how repeat clients reduce marketing overhead while increasing profitability.
+* Why it's worth watching: Essential viewing for freelancers looking to move beyond the constant hustle of finding new clients. Offers practical insights on creating a more stable, predictable income stream through client retention strategies.
+
+### 🎬 为什么回头客对自由职业者如此重要
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 本视频深入探讨回头客在建立可持续自由职业生涯中的关键作用,分析老客户如何影响收入稳定性和业务增长。
+* 主要话题: 客户留存与获取的经济学原理、鼓励回头客的策略、建立长期客户关系的方法,以及回头客如何降低营销成本并提高盈利能力。
+* 为何值得观看: 对于希望摆脱不断寻找新客户困境的自由职业者来说,这是必看内容。提供通过客户留存策略创造更稳定、可预测收入流的实用见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=A84bznMx89A)**
+
+### 🎬 You shouldn't talk to customers
+**Channel:** Lenny's Podcast
+* Explores the counterintuitive argument against direct customer conversations in product development
+* Discusses when customer feedback can mislead product decisions and strategic direction
+* Worth watching for product managers and founders seeking to balance user research with product vision, offering a contrarian perspective on customer discovery best practices
+
+### 🎬 你不应该与客户交谈
+**频道:** Lenny's Podcast
+* 探讨产品开发中不直接与客户对话的反直觉论点
+* 讨论客户反馈何时会误导产品决策和战略方向
+* 适合希望平衡用户研究与产品愿景的产品经理和创始人观看,提供关于客户发现最佳实践的反传统视角
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=m6B95EUX7-0)**
+
+### 🎬 خد فكرة عن Data Oriented Programming
+**Channel:** Bits & Pixels
+
+* Introduces the concept of Data Oriented Programming (DOP), an alternative programming paradigm focused on organizing code around data structures rather than objects or functions
+* Covers how DOP differs from Object-Oriented Programming (OOP) and Functional Programming, emphasizing data transformation and cache-friendly memory layouts
+* Worth watching for developers interested in performance optimization, game development, or understanding modern programming paradigms that prioritize data locality and CPU cache efficiency
+
+### 🎬 了解面向数据编程
+**频道:** Bits & Pixels
+
+* 介绍面向数据编程（DOP）的概念，这是一种以数据结构组织代码的替代编程范式，而非围绕对象或函数
+* 讲解 DOP 与面向对象编程（OOP）和函数式编程的区别，强调数据转换和缓存友好的内存布局
+* 适合对性能优化、游戏开发或理解优先考虑数据局部性和 CPU 缓存效率的现代编程范式感兴趣的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8PXZ9KdWy6M)**
 
