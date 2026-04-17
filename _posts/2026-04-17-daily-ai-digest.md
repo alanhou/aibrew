@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 17, 2026"
 date: 2026-04-17
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -528,4 +528,205 @@ pin: false
 * 为何值得观看: 适合对生成艺术、AI编码工具感兴趣的开发者，以及想学习如何创建炫酷视觉动画的程序员。"大脑宕机"的说法暗示了创新或出人意料的方法，挑战传统编程实践
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=588_zYeP1P0)**
+
+<!-- [Title-Only] -->
+### CadQuery: An Open-Source Python Library for Building 3D CAD Models
+
+* Based on the title, this article likely introduces CadQuery, a Python-based tool that allows developers and engineers to create 3D CAD (Computer-Aided Design) models programmatically using code rather than traditional GUI-based CAD software
+* This might be interesting to readers who want to automate CAD design workflows, integrate 3D modeling into their Python projects, or prefer a code-first approach to creating parametric designs. It could appeal to makers, engineers, and developers looking for an open-source alternative to commercial CAD tools
+
+**Note:** This introduction is based solely on the article title, as the full content was not available.
+
+---
+
+### CadQuery：用于构建 3D CAD 模型的开源 Python 库
+
+* 根据标题推测，本文可能介绍 CadQuery——一个基于 Python 的工具，允许开发者和工程师通过编程方式创建 3D CAD（计算机辅助设计）模型，而非使用传统的图形界面 CAD 软件
+* 对于希望自动化 CAD 设计工作流程、将 3D 建模集成到 Python 项目中，或偏好代码优先方式创建参数化设计的读者来说，这可能很有价值。它可能吸引创客、工程师以及寻找商业 CAD 工具开源替代方案的开发者
+
+**注意：** 此简介仅基于文章标题，因为无法获取完整内容。
+
+**[Read Original / 阅读原文](https://cadquery.github.io/)**
+
+### Everything We Like Is a Psyop: How Marketing Firms Manufacture Viral Trends
+
+* Modern music and startup marketing relies on "content farms" - hundreds of fake social media accounts posting coordinated content to simulate organic viral trends
+* Marketing firm Chaotic Good revealed they use thousands of iPhones and social accounts to manufacture buzz for clients like band Geese, creating the illusion of grassroots popularity
+* This strategy extends beyond music: Gen Z startup founders openly discuss paying college students to flood TikTok with promotional content, while streamers hire teenagers to clip and repost their content
+* The line between authentic popularity and manufactured hype has blurred - even when we know something is artificially promoted (like K-pop group Katseye), we still become emotionally invested
+* These tactics exploit how algorithmic feeds work: viewers see content in isolation without checking if an account only posts promotional material, making inorganic marketing appear authentic
+
+### 我们喜欢的一切都是心理战：营销公司如何制造病毒式传播趋势
+
+* 现代音乐和初创公司营销依赖"内容农场"——数百个虚假社交媒体账号发布协调内容，模拟有机病毒式传播趋势
+* 营销公司Chaotic Good透露他们使用数千部iPhone和社交账号为客户（如乐队Geese）制造热度，营造草根流行的假象
+* 这种策略不仅限于音乐：Z世代创业者公开讨论付钱给大学生在TikTok上发布推广内容，而主播则雇佣青少年剪辑和转发他们的内容
+* 真实流行度和人为炒作之间的界限已经模糊——即使我们知道某些东西是人为推广的（如韩流组合Katseye），我们仍然会产生情感投入
+* 这些策略利用了算法推送的工作方式：观众孤立地看到内容，不会检查账号是否只发布推广材料，使非自然营销看起来真实可信
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/04/16/everything-we-like-is-a-psyop/)**
+
+### AutoProber: Hardware Hacker's Flying Probe Automation Stack
+
+* **Purpose**: Automated hardware probing system that guides agents from target placement to safe pin-level probing
+* **Core Flow**: Agent ingestion → hardware connection → homing/calibration → target detection → frame capture with XYZ tracking → map stitching with annotations → probe target approval → automated probing
+* **Safety-First Design**: Independent safety endstop on oscilloscope Channel 4, continuous monitoring during motion, immediate stop on any trigger/fault, no automatic recovery
+* **Hardware Stack**: GRBL CNC controller, USB microscope with mjpg_streamer, Siglent oscilloscope for safety monitoring and measurement, optical endstop, optional network power outlet
+* **Control Options**: Web dashboard, Python scripts, or direct agent control for all hardware operations
+* **Repository Contents**: Python control code, Flask dashboard, CAD files for custom toolhead, comprehensive safety and operations documentation
+* **License**: PolyForm Noncommercial 1.0.0 (commercial use requires separate paid license)
+* **Key Limitation**: Microscope-to-probe offset must be manually measured before probing; system designed for authorized lab testing only
+
+### AutoProber:硬件黑客的飞针自动化系统
+
+* **用途**:自动化硬件探测系统,引导智能体从目标放置到安全的引脚级探测
+* **核心流程**:智能体导入 → 硬件连接 → 归零/校准 → 目标检测 → 带XYZ追踪的帧捕获 → 带注释的地图拼接 → 探针目标审批 → 自动探测
+* **安全优先设计**:示波器通道4上的独立安全限位开关,运动期间持续监控,任何触发/故障立即停止,无自动恢复
+* **硬件栈**:GRBL数控控制器、USB显微镜配合mjpg_streamer、Siglent示波器用于安全监控和测量、光学限位开关、可选网络电源插座
+* **控制选项**:Web仪表板、Python脚本或智能体直接控制所有硬件操作
+* **仓库内容**:Python控制代码、Flask仪表板、定制探头的CAD文件、全面的安全和操作文档
+* **许可证**:PolyForm非商业1.0.0(商业用途需单独付费许可)
+* **关键限制**:探测前必须手动测量显微镜到探针的偏移量;系统仅用于授权实验室测试
+
+**[Read Original / 阅读原文](https://github.com/gainsec/autoprober)**
+
+### Anything Analyzer - AI-Powered Universal Traffic Capture & Protocol Analysis Tool
+
+* **What it does**: A cross-platform Electron app that captures network traffic from any source (browsers, desktop apps, CLI tools, mobile apps) and uses AI to automatically reverse-engineer protocols, analyze APIs, and detect security issues. Combines Chrome DevTools Protocol (CDP) with MITM proxy to create unified capture sessions.
+
+* **Key features**: 
+  - Universal traffic capture: embedded browser (CDP), MITM proxy for desktop apps/terminals/mobile devices, all traffic unified in one session
+  - AI-powered analysis: two-phase intelligent filtering, 5 analysis modes (API reverse engineering, security audit, performance, JS encryption), streaming output with follow-up questions
+  - JS Hook injection: automatically intercepts fetch/XHR/crypto calls and extracts encryption code
+  - MCP ecosystem integration: built-in MCP server exposes capture capabilities to Claude Desktop/Cursor, MCP client extends AI analysis
+
+* **Why it's notable**: Solves the fragmentation problem of traditional tools (DevTools only for browsers, Fiddler/Charles only proxy, Wireshark can't decrypt HTTPS). This is a one-stop solution that captures traffic from ANY source and lets AI do the heavy lifting of protocol analysis - no more manually sifting through hundreds of requests. With 1000+ stars, it's gaining traction as a powerful tool for API reverse engineering, security auditing, and protocol analysis workflows.
+
+---
+
+### Anything Analyzer - AI 驱动的通用流量捕获与协议分析工具
+
+* **功能介绍**: 跨平台 Electron 应用,可捕获任意来源的网络流量(浏览器、桌面应用、命令行工具、手机 App),并利用 AI 自动逆向分析协议、解析 API、检测安全问题。结合 Chrome DevTools Protocol (CDP) 和 MITM 代理,将所有流量统一到同一会话中。
+
+* **主要特点**:
+  - 全场景抓包:内嵌浏览器(CDP)、MITM 代理支持桌面应用/终端/移动设备,所有流量统一汇入同一会话
+  - AI 智能分析:两阶段智能过滤、5 种分析模式(API 逆向、安全审计、性能分析、JS 加密逆向)、流式输出支持追问
+  - JS Hook 注入:自动拦截 fetch/XHR/crypto 调用并提取加密代码
+  - MCP 生态集成:内置 MCP Server 将抓包能力暴露给 Claude Desktop/Cursor,MCP Client 扩展 AI 分析能力
+
+* **为何值得关注**: 解决了传统工具的碎片化问题(DevTools 只看浏览器、Fiddler/Charles 只做代理、Wireshark 无法解密 HTTPS)。这是一个一站式解决方案,可捕获任意来源的流量并让 AI 完成协议分析的繁重工作 - 无需手动翻阅数百条请求。获得 1000+ star,正成为 API 逆向工程、安全审计和协议分析工作流的强大工具。
+
+**[View Repository / 查看仓库](https://github.com/Mouseww/anything-analyzer)**
+
+### RedSun - Windows Defender Privilege Escalation Vulnerability
+
+* **What it does**: Exploits a critical flaw in Windows Defender where the antivirus rewrites malicious files with cloud tags back to their original location, enabling attackers to overwrite system files and gain administrative privileges
+
+* **Key features**: 
+  - Proof-of-concept (PoC) code demonstrating the vulnerability
+  - Leverages Windows Defender's cloud tag handling behavior
+  - Achieves privilege escalation through system file overwriting
+  - Written in C++ for Windows systems
+
+* **Why it's notable**: Exposes a counterintuitive security flaw where Windows Defender, instead of removing threats, actively helps restore malicious files to their original locations—essentially working against its core purpose of system protection. The vulnerability's ironic nature and serious security implications have driven significant attention (810 stars).
+
+---
+
+### RedSun - Windows Defender 权限提升漏洞
+
+* **功能介绍**: 利用 Windows Defender 的一个严重缺陷——当杀毒软件发现带有云标签的恶意文件时,会将其重新写回原始位置,攻击者可借此覆盖系统文件并获取管理员权限
+
+* **主要特点**:
+  - 提供漏洞概念验证(PoC)代码
+  - 利用 Windows Defender 的云标签处理机制
+  - 通过覆盖系统文件实现权限提升
+  - 使用 C++ 编写,针对 Windows 系统
+
+* **为何值得关注**: 揭露了一个反常识的安全漏洞——Windows Defender 不但没有删除威胁文件,反而主动帮助恶意文件恢复到原始位置,完全违背了其保护系统的核心职责。这个漏洞的讽刺性质和严重的安全影响引发了广泛关注(810 星标)。
+
+**[View Repository / 查看仓库](https://github.com/Nightmare-Eclipse/RedSun)**
+
+### 🎬 Jensen Huang Makes the Case for Selling Chips to China
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: NVIDIA CEO Jensen Huang discusses the strategic and economic rationale behind selling semiconductor chips to China amid ongoing geopolitical tensions and export restrictions
+* Key topics discussed: US-China tech trade policy, semiconductor export controls, the balance between national security concerns and economic interests, NVIDIA's position in the global chip market, and the implications of technology decoupling
+* Why it's worth watching: Offers rare insight from one of the tech industry's most influential leaders on a critical geopolitical issue affecting the future of AI and semiconductor technology; provides a business perspective on complex policy decisions that will shape global tech competition
+
+### 🎬 黄仁勋阐述向中国销售芯片的理由
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 英伟达CEO黄仁勋讨论在地缘政治紧张局势和出口限制背景下,向中国销售半导体芯片的战略和经济理由
+* 主要话题: 美中科技贸易政策、半导体出口管制、国家安全与经济利益的平衡、英伟达在全球芯片市场的地位,以及技术脱钩的影响
+* 为何值得观看: 提供了科技行业最具影响力领导者之一对关键地缘政治问题的罕见见解,这些问题将影响AI和半导体技术的未来;从商业角度解读将塑造全球科技竞争格局的复杂政策决策
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=u7Xqu65Gh58)**
+
+### 🎬 Millions of WordPress sites just got hacked... again
+
+**Channel:** Fireship
+
+* What the video covers: A major security breach affecting millions of WordPress websites, explaining the vulnerability that was exploited and the scale of the attack
+* Key topics discussed: The specific security flaw in WordPress or its plugins, how the hack was executed, the impact on affected sites, and what measures site owners should take to protect themselves
+* Why it's worth watching: Critical security awareness for anyone running WordPress sites (which power ~40% of the web), delivered in Fireship's signature fast-paced, informative style with technical depth and practical takeaways
+
+### 🎬 数百万 WordPress 网站再次遭到黑客攻击
+
+**频道:** Fireship
+
+* 视频内容概述: 影响数百万 WordPress 网站的重大安全漏洞事件,解释被利用的漏洞及攻击规模
+* 主要话题: WordPress 或其插件中的具体安全缺陷、黑客攻击手法、对受影响网站的冲击,以及网站所有者应采取的防护措施
+* 为何值得观看: 对于运营 WordPress 网站的用户(占全球网站约 40%)至关重要的安全警示,以 Fireship 标志性的快节奏、信息密集风格呈现,兼具技术深度和实用建议
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=piah4fV_o2Q)**
+
+### 🎬 The GPT Moment for Robotics Is Here
+**Channel:** Y Combinator
+
+* Physical Intelligence is developing a foundation model designed to control any robot for any task, representing a breakthrough similar to GPT's impact on language AI
+* The video explores how this universal robot control system could revolutionize robotics by enabling general-purpose automation across different hardware platforms
+* Worth watching to understand the next frontier in AI — how foundation models are moving from digital to physical world applications, potentially transforming manufacturing, logistics, and everyday automation
+
+### 🎬 机器人领域的GPT时刻已经到来
+**频道:** Y Combinator
+
+* Physical Intelligence正在构建一个基础模型,能够控制任何机器人执行任何任务,这被认为是机器人领域类似GPT对语言AI的突破性进展
+* 视频探讨了这种通用机器人控制系统如何通过在不同硬件平台上实现通用自动化来革新机器人技术
+* 值得观看以了解AI的下一个前沿领域——基础模型如何从数字世界迁移到物理世界应用,可能彻底改变制造业、物流和日常自动化
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=4EsUaur0nsQ)**
+
+### 🎬 Coding in VS Code with Gemma 4 and Ollama
+**Channel:** Zero to MVP
+
+* What the video covers: A practical guide to integrating local Large Language Models (LLMs) directly into Visual Studio Code using Gemma 4 and Ollama, eliminating the need for third-party services like Cursor or GitHub Copilot
+* Key topics discussed: Setting up Ollama for local LLM hosting, configuring VS Code extensions to work with local models, running AI-assisted coding entirely on your own machine without external API calls or subscriptions
+* Why it's worth watching: Perfect for developers who want AI coding assistance while maintaining privacy, working offline, or avoiding subscription costs. Shows a complete setup process for self-hosted AI development tools that give you full control over your coding environment
+
+### 🎬 在 VS Code 中使用 Gemma 4 和 Ollama 进行编码
+**频道:** Zero to MVP
+
+* 视频内容概述: 详细演示如何在 Visual Studio Code 中直接集成本地大语言模型(LLM),使用 Gemma 4 和 Ollama,无需依赖 Cursor、Copilot 等第三方服务
+* 主要话题: 配置 Ollama 本地 LLM 托管服务、设置 VS Code 扩展以使用本地模型、在本地机器上完全运行 AI 辅助编码,无需外部 API 调用或订阅
+* 为何值得观看: 适合希望在保护隐私、离线工作或避免订阅费用的同时获得 AI 编码辅助的开发者。展示了自托管 AI 开发工具的完整设置流程,让你完全掌控编码环境
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=89bhDV0FBSM)**
+
+### 🎬 Claude Code for Desktop is the BEST way to build apps with AI EVER (full tutorial)
+**Channel:** Alex Finn
+
+* What the video covers: A comprehensive tutorial on using Claude Code for Desktop's major update to build complete applications with AI assistance
+* Key topics discussed: Step-by-step walkthrough of the new features, practical app development workflow, hands-on demonstration of AI-powered coding capabilities
+* Why it's worth watching: Learn how to leverage the latest AI coding tools to accelerate your development process with a full end-to-end tutorial from an experienced creator
+
+### 🎬 Claude Code 桌面版是用 AI 构建应用的最佳方式(完整教程)
+**频道:** Alex Finn
+
+* 视频内容概述: 全面讲解如何使用 Claude Code 桌面版的重大更新来构建完整应用程序
+* 主要话题: 新功能的分步演示、实用的应用开发工作流程、AI 辅助编程能力的实战展示
+* 为何值得观看: 通过经验丰富的创作者提供的端到端完整教程,学习如何利用最新的 AI 编程工具加速开发流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pHr1O_Af5NA)**
 
