@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 17, 2026"
 date: 2026-04-17
-description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，8个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 19 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，11个快速崛起项目，19个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -817,99 +817,189 @@ pin: false
 * What the video covers: A comprehensive introduction to OpenAI's Codex, positioned as the evolution beyond ChatGPT, specifically designed for non-technical users
 * Key topics discussed: Understanding what Codex is, how it differs from ChatGPT, practical applications for non-programmers, and how to leverage this AI tool directly in your workflow
 * Why it's worth watching: Perfect for anyone curious about AI coding assistants but intimidated by technical barriers—this guide breaks down Codex in accessible terms and shows real-world use cases that don't require programming knowledge
+### The Last Question by Isaac Asimov: A Journey Through Time and Entropy
 
----
+* Classic science fiction short story exploring humanity's ultimate question about reversing entropy
+* Spans trillions of years across multiple eras, from 2061 to the end of the universe
+* Features evolving supercomputers (Multivac, Microvac, Galactic AC, Universal AC, Cosmic AC) that grow more powerful with each era
+* Central question: Can entropy be reversed? Can the universe be saved from heat death?
+* Each generation asks the same question to increasingly advanced AIs, always receiving "INSUFFICIENT DATA FOR MEANINGFUL ANSWER"
+* Explores themes of technological progress, human expansion across galaxies, and the ultimate fate of existence
+* Culminates in a profound philosophical and theological conclusion about creation and renewal
+* Demonstrates Asimov's masterful storytelling through epic scope compressed into short narrative form
 
-### 🎬 Codex: 超越 ChatGPT 的下一步（非程序员完整指南）
+### 《最后的问题》艾萨克·阿西莫夫：穿越时空与熵的旅程
 
-**频道:** Web3nity
+* 经典科幻短篇小说，探讨人类关于逆转熵的终极问题
+* 时间跨度从2061年延伸至宇宙终结，历经数万亿年
+* 展现不断进化的超级计算机（Multivac、Microvac、银河AC、宇宙AC、终极AC），每个时代都更加强大
+* 核心问题：熵能否逆转？宇宙能否免于热寂？
+* 每一代人都向日益先进的人工智能提出同样的问题，始终得到"数据不足，无法给出有意义的答案"
+* 探讨科技进步、人类跨越星系扩张以及存在的终极命运等主题
+* 以深刻的哲学和神学结论达到高潮，关于创造与重生
+* 展示了阿西莫夫通过短篇叙事压缩史诗般宏大视野的大师级叙事技巧
 
-* 视频内容概述: 全面介绍 OpenAI 的 Codex 工具，将其定位为 ChatGPT 之后的进化版本，专为非技术用户设计
-* 主要话题: 解释 Codex 是什么、它与 ChatGPT 的区别、非程序员的实际应用场景，以及如何在工作流程中直接使用这个 AI 工具
-* 为何值得观看: 非常适合对 AI 编程助手感兴趣但被技术门槛吓退的人群——本指南用通俗易懂的语言讲解 Codex，并展示无需编程知识即可使用的实际案例
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=woqDHL_XvVI)**
-
-### 🎬 The Ultimate Claude Code Guide | MCP, Skills & More
-**Channel:** Tech With Tim
-
-* Comprehensive guide to Claude Code, covering its core features and advanced capabilities including Model Context Protocol (MCP) integration
-* Key topics: Claude Code setup and configuration, MCP implementation for extending functionality, skills development, practical coding workflows, and best practices for AI-assisted development
-* Worth watching for developers wanting to maximize productivity with Claude Code - provides hands-on examples and real-world use cases that go beyond basic usage, plus introduces Nimbalyst's visual workspace for enhanced development experience
-
-### 🎬 Claude Code 终极指南 | MCP、技能等
-**频道:** Tech With Tim
-
-* 全面介绍 Claude Code 的核心功能和高级特性,包括模型上下文协议(MCP)集成
-* 主要话题:Claude Code 的设置与配置、MCP 实现以扩展功能、技能开发、实用编码工作流程,以及 AI 辅助开发的最佳实践
-* 值得观看的理由:适合希望通过 Claude Code 最大化生产力的开发者 - 提供超越基础用法的实操示例和真实应用场景,并介绍 Nimbalyst 的可视化工作空间以增强开发体验
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uogzSxOw4LU)**
+**[Read Original / 阅读原文](https://hex.ooo/library/last_question.html)**
 
 ### The Quiet Colossus: Ada's Enduring Influence on Modern Programming Languages
 
-* Ada, designed in the late 1970s for the U.S. Department of Defense, pioneered concepts like generics, packages, built-in concurrency, interface-implementation separation, range-constrained types, discriminated unions, and language-level contracts
-* Modern languages like Rust, Python, C#, and Go have spent decades independently rediscovering and implementing Ada's design principles, particularly around type safety and program verification
-* Ada emerged from a DoD crisis: over 450 incompatible programming languages were in use across military systems, creating unmaintainable software chaos
-* The Steelman requirements document (1978) specified properties derived from actual software failures: strong static typing, module systems, concurrency support, exception handling, and program readability
-* Ada's package system enforces true separation between specification (interface) and body (implementation) at the compiler level—a feature modern languages still struggle to replicate fully
-* Private types in Ada achieve genuine representational invisibility, not just access control—the implementation literally doesn't exist in client code's view
-* Java, C#, Python, JavaScript, and other languages have gradually added features (like Java's records in 2021) that Ada provided from 1983
-* Ada's type system allows mathematical constraints (e.g., `type Age is range 0 .. 150`) with compiler-enforced runtime checks, creating distinct types rather than relying on comments and conventions
-* Despite powering critical systems in every commercial aircraft, Ada remains largely unknown in mainstream programming culture, lacking the community enthusiasm of modern languages
-* The industry initially dismissed Ada as verbose and arcane, but its "say no" philosophy—refusing to compile unverifiable programs—represents the safety-first approach modern languages now pursue
+* Ada, designed in the late 1970s for the U.S. Department of Defense, pioneered features that modern languages are now adopting: generics, packages, concurrency, interface-implementation separation, range-constrained types, and discriminated unions
+* The DoD created Ada to solve a crisis: over 450 incompatible programming languages across military systems, leading to unmaintainable, non-interoperable software
+* Ada's package system enforces true encapsulation through compiler-verified separation of specification (interface) and body (implementation), a feature modern languages like Java, Python, JavaScript, Go, and Rust still struggle to fully replicate
+* Ada's type system introduced range-constrained types (e.g., `type Age is range 0 .. 150`) and private types with complete representational invisibility, concepts that languages like C#, Java, and others took decades to approximate
+* Despite its technical sophistication and presence in critical systems like aviation software, Ada remains largely unknown and underappreciated, while modern "innovative" languages independently rediscover its design principles
+* The language's reputation for saying "no" and enforcing strict safety checks—once considered weaknesses—are now recognized as the exact qualities modern languages pursue for reliability and safety
 
 ### 沉默的巨人:Ada语言及其对现代编程语言的深远影响
 
-* Ada语言由美国国防部于1970年代末设计,首创了泛型、包、内置并发、接口与实现分离、范围约束类型、可辨识联合类型和语言级契约等概念
-* Rust、Python、C#和Go等现代语言花费数十年时间独立地重新发现并实现Ada的设计原则,特别是在类型安全和程序验证方面
-* Ada的诞生源于国防部危机:军事系统中使用超过450种互不兼容的编程语言,造成软件维护灾难
-* Steelman需求文档(1978年)根据实际软件故障总结出语言必备特性:强静态类型、模块系统、并发支持、异常处理和程序可读性
-* Ada的包系统在编译器层面强制实现规范(接口)与主体(实现)的真正分离——这一特性现代语言至今仍难以完全复制
-* Ada的私有类型实现真正的表示不可见性,而非仅仅访问控制——实现在客户端代码视角中根本不存在
-* Java、C#、Python、JavaScript等语言逐步添加Ada从1983年就提供的特性(如Java在2021年引入的记录类型)
-* Ada的类型系统允许数学约束(如`type Age is range 0 .. 150`),编译器强制执行运行时检查,创建独立类型而非依赖注释和约定
-* 尽管为所有商用飞机的关键系统提供支持,Ada在主流编程文化中仍鲜为人知,缺乏现代语言的社区热情
-* 业界最初认为Ada冗长且晦涩,但其"说不"的哲学——拒绝编译无法验证的程序——正是现代语言追求的安全优先方法
+* Ada语言由美国国防部于1970年代末设计,率先实现了现代语言正在采用的特性:泛型、包系统、并发、接口与实现分离、范围约束类型和可辨识联合类型
+* 国防部创建Ada是为了解决危机:军事系统中存在450多种不兼容的编程语言,导致软件无法维护和互操作
+* Ada的包系统通过编译器验证的规范(接口)和主体(实现)分离,实现了真正的封装,这一特性是Java、Python、JavaScript、Go和Rust等现代语言仍在努力完全复制的
+* Ada的类型系统引入了范围约束类型(如`type Age is range 0 .. 150`)和具有完全表示不可见性的私有类型,这些概念让C#、Java等语言花了数十年才接近
+* 尽管Ada技术先进并应用于航空软件等关键系统,但它仍然鲜为人知且未受重视,而现代"创新"语言却在独立地重新发现其设计原则
+* 该语言以严格说"不"和强制执行安全检查而闻名——这些曾被视为弱点的特性,现在被认为正是现代语言为可靠性和安全性而追求的品质
 
 **[Read Original / 阅读原文](https://www.iqiipi.com/the-quiet-colossus.html)**
 
-### FIM 0.7.1 Release Summary: Bug Fixes and Improvements
+### Average Is All You Need: LLMs and the Democratization of Data Analysis
 
-* Fixed mouse coordinate issues in GTK mode and SDL window quit functionality
-* Improved command help search to include variable identifiers
-* Enhanced page/file navigation with new 'N' and 'P' key bindings
-* Resolved memory errors in file sorting and description loading
-* Fixed compilation issues for SDL-1.2, 32-bit GTK3, and aarch64 systems
-* Improved configure script with better pkg-config detection and poppler checks
-* Added more comprehensive tests and better error handling
-* Minor fixes in autocompletion, alias commands, and WebAssembly builds
+* LLMs have commoditized "average" output across creative and technical fields, making previously time-intensive work fast and accessible
+* In data analytics, most people intuitively understand their data but lack technical skills (SQL, visualization) to extract insights effectively
+* rawquery is an LLM-agent-operated data platform that lets users describe analysis needs in plain language while agents handle technical execution
+* Example workflow: Connect data sources (Stripe, HubSpot) via CLI, then ask agents like Claude to analyze campaign impact through natural language queries
+* The platform automates attribution modeling and complex joins, letting users focus on strategic thinking rather than technical implementation
+* This represents a shift where "average" technical execution becomes cheap, allowing humans to concentrate on higher-level analysis and decision-making
 
-### FIM 0.7.1 版本总结：错误修复与改进
+### 平均水平就是你所需要的：大语言模型与数据分析的民主化
 
-* 修复了 GTK 模式下的鼠标坐标问题和 SDL 窗口退出功能
-* 改进了命令帮助搜索，现可搜索变量标识符
-* 通过新的 'N' 和 'P' 键绑定增强了页面/文件导航
-* 解决了文件排序和描述加载中的内存错误
-* 修复了 SDL-1.2、32 位 GTK3 和 aarch64 系统的编译问题
-* 改进了配置脚本，优化了 pkg-config 检测和 poppler 检查
-* 添加了更全面的测试和更好的错误处理
-* 修复了自动补全、别名命令和 WebAssembly 构建中的小问题
+* 大语言模型已将创意和技术领域的"平均水平"输出商品化，使以前耗时的工作变得快速且易于获取
+* 在数据分析领域，大多数人直觉上理解自己的数据，但缺乏提取洞察所需的技术技能(SQL、可视化等)
+* rawquery 是一个由大语言模型代理操作的数据平台，允许用户用自然语言描述分析需求，而代理处理技术执行
+* 示例工作流程：通过命令行连接数据源(Stripe、HubSpot)，然后要求 Claude 等代理通过自然语言查询分析营销活动影响
+* 该平台自动化归因建模和复杂的数据关联，让用户专注于战略思考而非技术实现
+* 这代表了一种转变：当"平均水平"的技术执行变得廉价时,人类可以专注于更高层次的分析和决策制定
 
-**[Read Original / 阅读原文](https://www.nongnu.org/fbi-improved/)**
+**[Read Original / 阅读原文](https://rawquery.dev/blog/average-is-all-you-need)**
 
-<!-- [Title-Only] -->
-### How to make buffet breakfasts less wasteful
+### Evolver - GEP-Powered Self-Evolution Engine for AI Agents
 
-* Based on the title, this article likely explores strategies and innovations to reduce food waste at hotel and restaurant buffet breakfasts, which are notorious for generating significant amounts of uneaten food
-* This topic is relevant to readers interested in sustainability, hospitality industry practices, and practical solutions to environmental challenges. It may cover behavioral nudges, portion control techniques, smart inventory management, or technology-driven approaches to minimize waste while maintaining guest satisfaction
+* **What it does**: Evolver is a protocol-driven evolution engine that transforms ad hoc prompt tweaks into auditable, reusable evolution assets. It scans runtime logs, selects matching Genes/Capsules from the GEP (Genome Evolution Protocol) library, and generates strict, protocol-bound prompts to guide AI agent evolution—without automatically executing code changes.
 
-### 如何减少自助早餐的浪费
+* **Key features**: 
+  - Auto-log analysis with signal de-duplication to prevent repair loops
+  - GEP protocol compliance with reusable Genes and Capsules for standardized evolution
+  - Configurable strategy presets (balanced/innovate/harden/repair-only) for different operational needs
+  - Optional EvoMap Hub integration for skill sharing, worker pools, and collaborative evolution
+  - Protected source files and lifecycle management (start/stop/status/check)
+  - Works fully offline; network features are optional
 
-* 根据标题推测,这篇文章可能探讨了减少酒店和餐厅自助早餐食物浪费的策略和创新方法。自助早餐因产生大量未食用的食物而臭名昭著
-* 这个话题对关注可持续发展、酒店餐饮行业实践以及环境问题实用解决方案的读者很有意义。文章可能涵盖行为引导、份量控制技术、智能库存管理,或通过技术手段在保持客户满意度的同时最大限度减少浪费
+* **Why it's notable**: With 750 stars today, Evolver addresses a critical pain point in AI agent development—turning chaotic prompt engineering into a governed, traceable process. It's the core engine behind EvoMap.ai, a network where AI agents evolve through validated collaboration. The project introduces a novel approach to AI agent maintenance at scale with auditable evolution traces, making it valuable for teams managing complex agent systems that require deterministic, protocol-bound changes rather than free-form modifications.
 
-**[Read Original / 阅读原文](https://www.economist.com/science-and-technology/2026/04/14/how-to-make-buffet-breakfasts-less-wasteful)**
+---
+
+### Evolver - 基于 GEP 协议的 AI 智能体自进化引擎
+
+* **功能介绍**: Evolver 是一个协议驱动的进化引擎,将临时的提示词调整转化为可审计、可复用的进化资产。它扫描运行日志,从 GEP(基因组进化协议)库中选择匹配的基因/胶囊,生成严格的协议约束提示词来指导 AI 智能体进化——但不会自动执行代码更改。
+
+* **主要特点**:
+  - 自动日志分析,带信号去重功能防止修复循环
+  - 符合 GEP 协议,使用可复用的基因和胶囊实现标准化进化
+  - 可配置策略预设(平衡/创新/加固/仅修复)适应不同运营需求
+  - 可选的 EvoMap Hub 集成,支持技能共享、工作池和协作进化
+  - 保护源文件和生命周期管理(启动/停止/状态/检查)
+  - 完全支持离线运行,网络功能为可选项
+
+* **为何值得关注**: 今日获得 750 星标,Evolver 解决了 AI 智能体开发中的关键痛点——将混乱的提示词工程转变为可治理、可追溯的流程。它是 EvoMap.ai 的核心引擎,该网络让 AI 智能体通过验证协作实现进化。该项目为 AI 智能体维护引入了新颖的方法,提供可审计的进化轨迹,对于需要确定性、协议约束变更而非自由修改的复杂智能体系统管理团队极具价值。
+
+**[View Repository / 查看仓库](https://github.com/EvoMap/evolver)**
+
+### Android Reverse Engineering & API Extraction — Claude Code Skill
+
+**What it does:**
+A Claude Code skill that decompiles Android APK/XAPK/JAR/AAR files and automatically extracts HTTP APIs (Retrofit endpoints, OkHttp calls, hardcoded URLs, auth patterns) from Android apps without needing source code.
+
+**Key features:**
+* Multi-engine decompilation using jadx, Fernflower, and Vineflower with side-by-side comparison
+* Automated API extraction and documentation from decompiled code
+* Call flow tracing from UI components through ViewModels to HTTP calls
+* Handles obfuscated code (ProGuard/R8) with specialized analysis strategies
+* Simple slash command interface (`/decompile path/to/app.apk`) or natural language activation
+* Standalone scripts for manual workflows and CI/CD integration
+
+**Why it's notable:**
+Trending with 375 stars today because it solves a critical pain point for security researchers, developers doing interoperability analysis, and reverse engineers. It automates the tedious process of extracting and documenting APIs from compiled Android apps, turning hours of manual work into a single command. The integration with Claude Code makes it accessible to non-experts while providing powerful features for professionals.
+
+---
+
+### Android 逆向工程与 API 提取 — Claude Code 技能插件
+
+**功能介绍:**
+一个 Claude Code 技能插件,可反编译 Android APK/XAPK/JAR/AAR 文件,并自动提取应用使用的 HTTP API(Retrofit 端点、OkHttp 调用、硬编码 URL、认证模式),无需原始源代码即可记录和复现这些接口。
+
+**主要特点:**
+* 使用 jadx、Fernflower 和 Vineflower 多引擎反编译,支持对比分析
+* 从反编译代码中自动提取和记录 API 接口
+* 追踪从 Activity/Fragment 到 ViewModel 再到 HTTP 调用的完整调用链
+* 处理混淆代码(ProGuard/R8)的专门分析策略
+* 简单的斜杠命令界面(`/decompile path/to/app.apk`)或自然语言激活
+* 提供独立脚本支持手动工作流和 CI/CD 集成
+
+**为何值得关注:**
+今日获得 375 星标,因为它解决了安全研究人员、进行互操作性分析的开发者和逆向工程师的关键痛点。它将从编译后的 Android 应用中提取和记录 API 的繁琐过程自动化,将数小时的手动工作简化为单个命令。与 Claude Code 的集成使非专业人士也能轻松使用,同时为专业人士提供强大功能。
+
+**[View Repository / 查看仓库](https://github.com/SimoneAvogadro/android-reverse-engineering-skill)**
+
+### Omi - AI-Powered Second Brain That Captures Your Screen and Conversations
+
+* **What it does**: Omi is an AI assistant that captures your screen activity and conversations, transcribes them in real-time, generates summaries and action items, and provides an AI chat interface with complete memory of everything you've seen and heard. It works across desktop (macOS), mobile (iOS/Android), and wearable devices.
+
+* **Key features**: Real-time transcription and screen capture; automatic summary and action item generation; cross-platform support (macOS app, mobile apps, open-source wearables); AI chat with persistent memory; fully open-source stack (Swift/Rust desktop app, Flutter mobile, Python backend); hardware options including Omi wearable and Omi Glass dev kit with 24h+ continuous capture; comprehensive API and SDKs (Python, Swift, React Native).
+
+* **Why it's notable**: With 821 stars today and trusted by 300,000+ professionals, Omi stands out as a complete open-source alternative to proprietary AI assistants. It offers unprecedented transparency with its MIT license, full hardware designs, and extensive documentation. The project provides both cloud and local deployment options, making it accessible for quick starts while maintaining privacy control for advanced users.
+
+---
+
+### Omi - 可信赖的 AI 第二大脑,捕获屏幕与对话
+
+* **功能介绍**: Omi 是一款 AI 助手,可捕获屏幕活动和对话内容,实时转录,生成摘要和待办事项,并提供具有完整记忆功能的 AI 聊天界面,记住你看到和听到的一切。支持桌面(macOS)、移动端(iOS/Android)和可穿戴设备。
+
+* **主要特点**: 实时转录和屏幕捕获;自动生成摘要和行动项;跨平台支持(macOS 应用、移动应用、开源可穿戴设备);具有持久记忆的 AI 聊天;完全开源技术栈(Swift/Rust 桌面应用、Flutter 移动端、Python 后端);硬件选项包括 Omi 可穿戴设备和支持 24 小时以上连续捕获的 Omi Glass 开发套件;完善的 API 和 SDK(Python、Swift、React Native)。
+
+* **为何值得关注**: Omi 今日获得 821 星标,已被 30 万以上专业人士信赖,作为专有 AI 助手的完整开源替代方案脱颖而出。采用 MIT 许可证,提供完整硬件设计和详尽文档,透明度极高。项目同时提供云端和本地部署选项,既方便快速上手,又能为高级用户保持隐私控制。
+
+**[View Repository / 查看仓库](https://github.com/BasedHardware/omi)**
+
+### 🎬 If you're job hunting, build software that removes friction from your own work
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Practical advice for job seekers on building portfolio projects that demonstrate real problem-solving skills by creating tools that solve their own workflow challenges
+* Key topics discussed: Building meaningful portfolio projects, demonstrating practical coding abilities, creating software that addresses genuine pain points in your daily work, and showcasing problem-solving mindset to potential employers
+* Why it's worth watching: Offers a strategic approach to standing out in the job market by building projects that serve dual purposes—improving your productivity while proving your development capabilities to hiring managers
+
+### 🎬 求职时，开发能消除自身工作摩擦的软件
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 为求职者提供实用建议，通过创建解决自身工作流程问题的工具来构建作品集项目，展示真实的问题解决能力
+* 主要话题: 构建有意义的作品集项目、展示实际编程能力、创建解决日常工作痛点的软件、向潜在雇主展示解决问题的思维方式
+* 为何值得观看: 提供了在就业市场中脱颖而出的策略方法——构建既能提高个人生产力又能向招聘经理证明开发能力的双重目的项目
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xGW-g1KIU9M)**
+
+### 🎬 How to friction-max your learning with software engineer Jessica Rose [Podcast #216]
+**Channel:** freeCodeCamp.org
+
+* An in-depth conversation with Jessica Rose, a software engineer and educator who has contributed to open data projects at Mozilla and various other initiatives
+* Explores the concept of "friction-maxing" - intentionally adding productive challenges to accelerate learning and skill development in programming
+* Worth watching for developers at any level seeking effective learning strategies, career insights from someone who bridges engineering and education, and practical advice on how to optimize your learning journey through deliberate practice
+
+### 🎬 如何通过"摩擦最大化"提升学习效果 - 对话软件工程师 Jessica Rose [播客 #216]
+**频道:** freeCodeCamp.org
+
+* Quincy Larson 深度访谈软件工程师兼教育工作者 Jessica Rose,她曾参与 Mozilla 的开放数据项目及其他多个技术项目
+* 探讨"摩擦最大化"(friction-maxing)学习理念 - 如何通过有意识地增加有益挑战来加速编程学习和技能提升
+* 适合各阶段开发者观看,可获得高效学习策略、横跨工程与教育领域的职业洞见,以及通过刻意练习优化学习路径的实用建议
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pxMUG3gcoik)**
 
 ### 🎬 Claude Code Is Now 100% Free - Here's How
 **Channel:** Hasan Aboul Hasan
@@ -926,4 +1016,40 @@ pin: false
 * 为何值得观看: 如果你对 AI 驱动的编码助手感兴趣,这个视频提供了免费使用 Claude Code 的实操指导,让所有人都能使用先进的 AI 开发工具
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=t0Mesp118l4)**
+
+### 🎬 Codex: The Next Step After ChatGPT (Complete Guide for NON-Programmers)
+
+**Channel:** Web3nity
+
+* What the video covers: An introduction to OpenAI's Codex as an evolution beyond ChatGPT, designed to work directly on your system and assist with coding tasks even if you're not a programmer
+* Key topics discussed: What Codex is, how it differs from ChatGPT, practical applications for non-technical users, and how to get started with the tool
+* Why it's worth watching: Perfect for beginners curious about AI coding assistants; breaks down technical concepts into accessible explanations and shows how non-programmers can leverage Codex for their projects
+
+---
+
+### 🎬 Codex: 超越 ChatGPT 的下一步（非程序员完整指南）
+
+**频道:** Web3nity
+
+* 视频内容概述: 介绍 OpenAI 的 Codex 作为 ChatGPT 之后的进化版本，可以直接在您的系统上运行并协助编程任务，即使您不是程序员也能使用
+* 主要话题: Codex 是什么、与 ChatGPT 的区别、非技术用户的实际应用场景，以及如何开始使用该工具
+* 为何值得观看: 非常适合对 AI 编程助手感兴趣的初学者；将技术概念分解为易懂的解释，展示非程序员如何利用 Codex 完成项目
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=woqDHL_XvVI)**
+
+### 🎬 The Ultimate Claude Code Guide | MCP, Skills & More
+**Channel:** Tech With Tim
+
+* Comprehensive guide to Claude Code, covering its core features and capabilities for developers
+* Deep dive into Model Context Protocol (MCP) integration and how to leverage Claude's skills system for enhanced coding workflows
+* Worth watching for developers looking to maximize their productivity with Claude Code, understand advanced features like MCP for extending Claude's capabilities, and learn practical implementation strategies for AI-assisted development
+
+### 🎬 Claude Code 终极指南 | MCP、技能系统及更多
+**频道:** Tech With Tim
+
+* 全面介绍 Claude Code 的核心功能和开发者能力
+* 深入讲解模型上下文协议(MCP)集成，以及如何利用 Claude 的技能系统优化编码工作流
+* 适合希望通过 Claude Code 提升生产力的开发者观看，了解 MCP 等高级功能如何扩展 Claude 能力，学习 AI 辅助开发的实用策略
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uogzSxOw4LU)**
 
