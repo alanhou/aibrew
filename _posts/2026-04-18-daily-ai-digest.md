@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 18, 2026"
 date: 2026-04-18
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，11个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -563,42 +563,6 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 
 ---
 
-*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
-
-**[Read Original / 阅读原文](https://miguelconner.substack.com/p/im-coding-by-hand)**
-
-### Category Theory Illustrated - Orders: Summary
-
-* Orders are mathematical structures consisting of a set of elements and a binary relation that follows specific laws
-* Linear orders are the simplest type where every element has a definite position relative to all others (like rainbow colors or natural numbers)
-* Linear orders must satisfy four laws: reflexivity (a ≤ a), transitivity (if a ≤ b and b ≤ c, then a ≤ c), antisymmetry (no contradictions), and totality (all elements are comparable)
-* All finite linear orders are isomorphic to natural numbers, making them mathematically straightforward but somewhat limited
-* Partial orders remove the totality requirement, allowing for incomparable elements (like ranking soccer players who never played each other)
-* Partial orders contain "chains" - linearly ordered subsets that may or may not connect to each other
-* The relationship between order types forms a hierarchy: partial orders are more general than linear orders, similar to how equivalence relations differ by replacing symmetry with antisymmetry
-
-### 范畴论图解 - 序关系：总结
-
-* 序是由一组元素和遵循特定规律的二元关系组成的数学结构
-* 线性序是最简单的类型，其中每个元素相对于所有其他元素都有确定的位置（如彩虹颜色或自然数）
-* 线性序必须满足四个定律：自反性（a ≤ a）、传递性（若 a ≤ b 且 b ≤ c，则 a ≤ c）、反对称性（无矛盾）和完全性（所有元素可比较）
-* 所有有限线性序都同构于自然数，这使它们在数学上简单明了但有些局限
-* 偏序去除了完全性要求，允许存在不可比较的元素（如对从未互相比赛过的足球运动员进行排名）
-* 偏序包含"链"——可能相互连接也可能不连接的线性有序子集
-* 序类型之间的关系形成层次结构：偏序比线性序更一般，类似于等价关系通过用反对称性替换对称性而产生的差异
-
-**[Read Original / 阅读原文](https://abuseofnotation.github.io/category-theory-illustrated/04_order/)**
-
-<!-- [Title-Only] -->
-### Amiga Graphics
-
-* Based on the title, this article likely explores the graphics capabilities and architecture of the Amiga computer system, which was revolutionary in the 1980s and early 1990s. It probably covers technical aspects like the custom chipset (including the famous "Denise" and "Agnus" chips), color palettes, sprite handling, and the innovative features that made Amiga a powerhouse for graphics and multimedia at the time.
-* This would be interesting to readers who appreciate computer history, retro computing, or want to understand how early personal computers achieved impressive visual effects with limited hardware. The Amiga's influence on modern graphics architecture and game development makes this a fascinating technical deep-dive.
-
-**Note:** This introduction is based solely on the article title, as the full content could not be accessed.
-
----
-
 ### Amiga 图形系统
 
 * 根据标题推测,这篇文章可能深入探讨 Amiga 计算机系统的图形能力和架构。Amiga 在 1980 年代至 1990 年代初期具有革命性意义。文章很可能涵盖定制芯片组的技术细节(包括著名的 "Denise" 和 "Agnus" 芯片)、调色板、精灵处理,以及让 Amiga 成为当时图形和多媒体领域强者的创新特性。
@@ -675,4 +639,216 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 * 值得观看以了解全球AI芯片格局、技术政策辩论,以及行业最具影响力领导者之一对技术限制实用性的观点
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=wvzJHVmvEwU)**
+
+### State of Kdenlive 2026: Steady Progress Through Development and Community
+
+* Kdenlive maintained focus on stability over feature creep in 2025, balancing new features with bug fixes and performance improvements
+* Website relaunched with new CMS and restored historic content dating back to 2002; strengthened collaboration with MLT developers and OpenTimelineIO
+* Three major releases followed KDE Gear cycle: 25.04 added AI-powered background removal and OpenTimelineIO support; 25.08 focused on stabilization with 300+ commits fixing 15+ crashes; 25.12 improved UX with new welcome screen and flexible docking system
+* Upcoming 26.04 release features monitor mirroring, animated transition previews, and batch playback speed changes
+* Major roadmap items include Dopesheet for advanced keyframe management (funded by NLnet NGI Zero Commons grant), 10/12-bit color support, OpenFX integration, and Microsoft Store distribution via MSVC compilation
+* Core team of 8 members (2 developers) supported by 38 code contributors in 2025, with half being first-time contributors
+
+### Kdenlive 2026 现状：通过开发和社区实现稳步进展
+
+* Kdenlive 在 2025 年优先考虑稳定性而非功能堆砌，在新功能、错误修复和性能改进之间保持平衡
+* 网站采用新 CMS 重新上线，恢复了可追溯至 2002 年的历史内容；加强了与 MLT 开发者和 OpenTimelineIO 的上游协作
+* 遵循 KDE Gear 发布周期推出三个主要版本：25.04 新增 AI 驱动的背景移除和 OpenTimelineIO 支持；25.08 专注于稳定性，提交 300 多次修复 15 个以上崩溃问题；25.12 改进用户体验，新增欢迎屏幕和灵活的停靠系统
+* 即将发布的 26.04 版本包含监视器镜像、动画过渡预览和批量播放速度调整功能
+* 主要路线图项目包括用于高级关键帧管理的 Dopesheet(由 NLnet NGI Zero Commons 资助)、10/12 位色彩支持、OpenFX 集成，以及通过 MSVC 编译实现 Microsoft Store 分发
+* 核心团队由 8 名成员(2 名开发者)组成，2025 年获得 38 名代码贡献者支持，其中一半为首次贡献者
+
+**[Read Original / 阅读原文](https://kdenlive.org/news/2026/state-2026/)**
+
+### Michael O. Rabin: Pioneer of Computer Science and Computational Complexity
+
+* Israeli-American computer scientist (1931-2026) who won the 1976 Turing Award with Dana Scott for groundbreaking work on computational complexity theory
+* Born in Breslau, Germany, emigrated to Mandatory Palestine in 1935, studied under mathematician Elisha Netanyahu in Haifa
+* Co-authored seminal 1959 paper "Finite Automata and Their Decision Problems" with Dana Scott, introducing nondeterministic automata and proving they accept exactly regular languages
+* Introduced key concepts including probabilistic automata (1960), polynomial time complexity (1966), and infinite-tree automata (1969)
+* Invented the Miller-Rabin primality test (1975), a randomized algorithm crucial for modern public-key cryptography implementation
+* Held professorships at UC Berkeley, MIT, Hebrew University of Jerusalem, and Harvard University; served as Rector of Hebrew University
+* Received the 2003 Paris Kanellakis Award (with Miller, Solovay, and Strassen) for contributions to primality testing algorithms
+
+### 迈克尔·拉宾：计算机科学与计算复杂性理论先驱
+
+* 以色列裔美国计算机科学家（1931-2026），因在计算复杂性理论方面的开创性工作与达纳·斯科特共同获得1976年图灵奖
+* 出生于德国布雷斯劳，1935年随家人移民至巴勒斯坦托管地，在海法师从数学家埃利沙·内塔尼亚胡
+* 1959年与达纳·斯科特合著开创性论文《有限自动机及其判定问题》，引入非确定性自动机并证明其恰好接受正则语言
+* 引入多个关键概念：概率自动机（1960）、多项式时间复杂度（1966）和无限树自动机（1969）
+* 发明米勒-拉宾素性测试算法（1975），这一随机算法对现代公钥密码学实现至关重要
+* 曾任教于加州大学伯克利分校、麻省理工学院、耶路撒冷希伯来大学和哈佛大学；担任过希伯来大学校长
+* 因在素性测试算法方面的贡献，与米勒、索洛维和施特拉森共同获得2003年巴黎卡内拉基斯奖
+
+**[Read Original / 阅读原文](https://en.wikipedia.org/wiki/Michael_O._Rabin)**
+
+### Category Theory Illustrated - Orders: Summary
+
+* Orders are mathematical structures consisting of a set of elements and a binary relation that follows specific laws
+* Linear orders are the simplest type where every element has a definite position relative to all others (like rainbow colors or natural numbers)
+* Linear orders must satisfy four laws: reflexivity (a ≤ a), transitivity (if a ≤ b and b ≤ c, then a ≤ c), antisymmetry (no contradictions), and totality (all elements are comparable)
+* All finite linear orders are isomorphic to natural numbers, making them mathematically straightforward but somewhat limited
+* Partial orders remove the totality requirement, allowing for incomparable elements (like ranking soccer players who never played each other)
+* Partial orders contain "chains" - linearly ordered subsets that may or may not connect to each other
+* The relationship between order types forms a hierarchy: partial orders are more general than linear orders, similar to how equivalence relations differ by replacing symmetry with antisymmetry
+
+### 范畴论图解 - 序关系：总结
+
+* 序是由一组元素和遵循特定规律的二元关系组成的数学结构
+* 线性序是最简单的类型，其中每个元素相对于所有其他元素都有确定的位置（如彩虹颜色或自然数）
+* 线性序必须满足四个定律：自反性（a ≤ a）、传递性（若 a ≤ b 且 b ≤ c，则 a ≤ c）、反对称性（无矛盾）和完全性（所有元素可比较）
+* 所有有限线性序都同构于自然数，这使它们在数学上简单明了但有些局限
+* 偏序去除了完全性要求，允许存在不可比较的元素（如对从未互相比赛过的足球运动员进行排名）
+* 偏序包含"链"——可能相互连接也可能不连接的线性有序子集
+* 序类型之间的关系形成层次结构：偏序比线性序更一般，类似于等价关系通过用反对称性替换对称性而产生的差异
+
+**[Read Original / 阅读原文](https://abuseofnotation.github.io/category-theory-illustrated/04_order/)**
+
+### Thunderbolt - Open-Source AI Client with Full Data Control
+
+* **What it does**: A cross-platform AI client that lets you choose your own models, host your data on-premises, and avoid vendor lock-in. Works with frontier models, local models (Ollama, llama.cpp), and any OpenAI-compatible provider.
+
+* **Key features**: 
+  - Available on all major platforms (web, iOS, Android, Mac, Linux, Windows)
+  - Self-hostable with Docker/Kubernetes deployment options
+  - Compatible with multiple model providers and local inference
+  - Enterprise-ready with on-prem deployment support
+  - Currently undergoing security audit for production readiness
+
+* **Why it's notable**: Backed by Mozilla/Thunderbird, this project addresses growing concerns about AI vendor lock-in and data privacy. With 458 stars today, it's gaining traction among enterprises seeking full control over their AI infrastructure. The emphasis on self-hosting and model flexibility positions it as a compelling alternative to proprietary AI platforms, especially for organizations with strict data sovereignty requirements.
+
+---
+
+### Thunderbolt - 开源 AI 客户端，完全掌控数据主权
+
+* **功能介绍**: 跨平台 AI 客户端,让用户自主选择模型、本地托管数据、消除供应商锁定。支持前沿模型、本地模型(Ollama、llama.cpp)以及任何兼容 OpenAI 的服务商。
+
+* **主要特点**:
+  - 支持所有主流平台(网页、iOS、Android、Mac、Linux、Windows)
+  - 可通过 Docker/Kubernetes 自主部署
+  - 兼容多种模型提供商和本地推理
+  - 面向企业的本地部署支持
+  - 正在进行安全审计,为生产环境做准备
+
+* **为何值得关注**: 由 Mozilla/Thunderbird 团队支持,该项目针对 AI 供应商锁定和数据隐私问题提供解决方案。今日获得 458 星标,在寻求完全掌控 AI 基础设施的企业中快速获得关注。强调自主托管和模型灵活性,使其成为专有 AI 平台的有力替代方案,特别适合对数据主权有严格要求的组织。
+
+**[View Repository / 查看仓库](https://github.com/thunderbird/thunderbolt)**
+
+### OpenAI Agents SDK - A Lightweight Framework for Building Multi-Agent Workflows
+
+* **What it does**: A Python framework for creating sophisticated multi-agent systems that can delegate tasks, use tools, and work together to solve complex problems. Supports OpenAI APIs and 100+ other LLMs.
+
+* **Key features**: 
+  - Sandbox Agents for long-running tasks with filesystem access
+  - Agent handoffs and delegation capabilities
+  - Built-in tracing UI for debugging workflows
+  - Human-in-the-loop mechanisms
+  - Automatic session management
+  - Configurable guardrails for safety
+  - Realtime voice agent support with `gpt-realtime-1.5`
+  - Provider-agnostic design (works with multiple LLM providers)
+
+* **Why it's notable**: Official OpenAI framework gaining rapid traction (473 stars today) as organizations seek to build production-ready multi-agent systems. Offers enterprise-grade features like tracing, guardrails, and sandbox environments while remaining lightweight and flexible. The sandbox agent capability is particularly powerful for agents that need to perform real work with code repositories and filesystems.
+
+---
+
+### OpenAI Agents SDK - 轻量级多智能体工作流框架
+
+* **功能介绍**: 一个用于创建复杂多智能体系统的 Python 框架,支持任务委派、工具使用和协作解决问题。兼容 OpenAI API 及 100 多种其他大语言模型。
+
+* **主要特点**:
+  - 沙箱智能体可执行长时间任务并访问文件系统
+  - 智能体间的任务移交和委派能力
+  - 内置追踪界面用于调试工作流
+  - 人机协作机制
+  - 自动会话管理
+  - 可配置的安全防护栏
+  - 支持 `gpt-realtime-1.5` 的实时语音智能体
+  - 提供商无关设计(支持多种 LLM 提供商)
+
+* **为何值得关注**: OpenAI 官方框架,快速获得关注(今日新增 473 星标),满足企业构建生产级多智能体系统的需求。在保持轻量灵活的同时,提供追踪、防护栏和沙箱环境等企业级功能。沙箱智能体功能尤其强大,可让智能体在代码仓库和文件系统中执行实际工作。
+
+**[View Repository / 查看仓库](https://github.com/openai/openai-agents-python)**
+
+### DeepGEMM - Unified High-Performance Tensor Core Kernel Library for LLMs
+
+* **What it does**: DeepGEMM is a clean, efficient CUDA kernel library that provides core computation primitives for modern large language models, including FP8/FP4/BF16 GEMMs, fused MoE operations with overlapped communication (Mega MoE), MQA scoring for indexers, and more. All kernels compile at runtime via lightweight JIT, requiring no CUDA compilation during installation.
+
+* **Key features**:
+  - Supports NVIDIA SM90/SM100 architectures with performance matching or exceeding expert-tuned libraries
+  - Runtime JIT compilation with low CPU overhead (no NVRTC dependency by default)
+  - Fine-grained FP8 scaling with flexible memory layouts (NT/TN/NN/TT on SM100)
+  - Grouped GEMM operations optimized for MoE workloads (both contiguous and masked layouts)
+  - Mega MoE kernel that fuses dispatch, FP8xFP4 linear layers, SwiGLU, and combine operations with NVLink communication overlap
+  - Lightweight codebase designed for learning GPU kernel optimization (minimal template complexity compared to CUTLASS)
+  - Specialized kernels for DeepSeek v3.2 lightning indexer (weighted ReLU MQA logits)
+
+* **Why it's notable**: Achieves up to 1550 TFLOPS on H800 GPUs while maintaining code simplicity and accessibility. The library demonstrates that high performance doesn't require heavy template metaprogramming, making it an excellent educational resource. Its unified approach to LLM primitives and runtime compilation strategy eliminates build-time CUDA dependencies, simplifying deployment. The recent addition of Mega MoE with communication overlap represents cutting-edge optimization for mixture-of-experts models.
+
+---
+
+### DeepGEMM - 面向大语言模型的统一高性能张量核心内核库
+
+* **功能介绍**: DeepGEMM 是一个简洁高效的 CUDA 内核库,为现代大语言模型提供核心计算原语,包括 FP8/FP4/BF16 GEMM、融合 MoE 操作与通信重叠(Mega MoE)、索引器的 MQA 评分等。所有内核通过轻量级 JIT 在运行时编译,安装时无需 CUDA 编译。
+
+* **主要特点**:
+  - 支持 NVIDIA SM90/SM100 架构,性能匹敌或超越专家调优库
+  - 运行时 JIT 编译,CPU 开销低(默认不依赖 NVRTC)
+  - 细粒度 FP8 缩放,支持灵活的内存布局(SM100 支持 NT/TN/NN/TT)
+  - 针对 MoE 工作负载优化的分组 GEMM 操作(连续和掩码布局)
+  - Mega MoE 内核融合调度、FP8xFP4 线性层、SwiGLU 和合并操作,并与 NVLink 通信重叠
+  - 轻量级代码库,专为学习 GPU 内核优化设计(相比 CUTLASS 模板复杂度更低)
+  - 为 DeepSeek v3.2 闪电索引器提供专用内核(加权 ReLU MQA logits)
+
+* **为何值得关注**: 在 H800 GPU 上实现高达 1550 TFLOPS 的性能,同时保持代码简洁易懂。该库证明了高性能不需要复杂的模板元编程,是优秀的教育资源。其统一的 LLM 原语方法和运行时编译策略消除了构建时的 CUDA 依赖,简化了部署。最新添加的 Mega MoE 通信重叠功能代表了混合专家模型的前沿优化技术。
+
+**[View Repository / 查看仓库](https://github.com/deepseek-ai/DeepGEMM)**
+
+### LingBot-Map - Feed-Forward 3D Foundation Model for Streaming Scene Reconstruction
+
+* **What it does**: LingBot-Map is a feed-forward 3D foundation model that reconstructs 3D scenes from streaming video or image sequences in real-time. It processes continuous visual data to generate accurate 3D point clouds and camera trajectories without requiring iterative optimization.
+
+* **Key features**: 
+  * Geometric Context Transformer architecture that unifies coordinate grounding, dense geometric cues, and long-range drift correction in a single streaming framework
+  * High-efficiency streaming inference at ~20 FPS on 518×378 resolution, handling sequences exceeding 10,000 frames
+  * Paged KV cache attention via FlashInfer for memory-efficient processing of long sequences
+  * Sky masking capability for improved outdoor scene reconstruction
+  * Windowed inference mode for ultra-long sequences (>3000 frames)
+  * Multiple model variants optimized for different sequence lengths
+
+* **Why it's notable**: Achieves state-of-the-art performance on diverse benchmarks, outperforming both existing streaming methods and traditional iterative optimization-based approaches. The model's ability to process extremely long sequences in real-time with a feed-forward architecture represents a significant advancement in 3D reconstruction technology. With 1,311 stars and backed by the Robbyant team, it demonstrates strong community interest in practical, efficient 3D reconstruction solutions.
+
+---
+
+### LingBot-Map - 流式数据三维场景重建的前馈基础模型
+
+* **功能介绍**: LingBot-Map 是一个前馈式三维基础模型,能够从流式视频或图像序列实时重建三维场景。它处理连续的视觉数据以生成精确的三维点云和相机轨迹,无需迭代优化。
+
+* **主要特点**:
+  * 几何上下文 Transformer 架构,在单一流式框架中统一了坐标定位、密集几何线索和长程漂移校正
+  * 高效流式推理,在 518×378 分辨率下达到约 20 FPS,可处理超过 10,000 帧的序列
+  * 通过 FlashInfer 实现分页 KV 缓存注意力机制,实现长序列的内存高效处理
+  * 天空遮罩功能,改善户外场景重建质量
+  * 窗口推理模式,支持超长序列(>3000 帧)
+  * 针对不同序列长度优化的多个模型变体
+
+* **为何值得关注**: 在多个基准测试中达到最先进性能,超越现有流式方法和传统的基于迭代优化的方法。该模型以前馈架构实时处理超长序列的能力,代表了三维重建技术的重大进步。获得 1,311 星标并由 Robbyant 团队支持,展现了社区对实用、高效三维重建解决方案的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/Robbyant/lingbot-map)**
+
+### 🎬 Software itself has no value. It's the solutions that are valuable, and that will sell.
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A philosophical perspective on software development that challenges developers to think beyond code and focus on problem-solving
+* Key topics discussed: The distinction between writing software and delivering valuable solutions; how to shift mindset from technical implementation to business value; understanding what customers actually pay for
+* Why it's worth watching: Essential viewing for developers who want to understand the business side of software development and learn why solution-oriented thinking leads to better career opportunities and more impactful work
+
+### 🎬 软件本身没有价值。有价值且能销售的是解决方案。
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 从哲学角度探讨软件开发,挑战开发者超越代码本身,专注于问题解决
+* 主要话题: 编写软件与交付有价值解决方案的区别;如何从技术实现转向商业价值思维;理解客户真正为什么付费
+* 为何值得观看: 对于想要理解软件开发商业层面的开发者来说是必看内容,帮助理解为什么以解决方案为导向的思维能带来更好的职业机会和更有影响力的工作
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=04LPpj7lQlA)**
 
