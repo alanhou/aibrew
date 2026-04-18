@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 18, 2026"
 date: 2026-04-18
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -593,4 +593,69 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 * 值得观看以了解全球AI芯片格局、技术政策辩论,以及行业最具影响力领导者之一对技术限制实用性的观点
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=wvzJHVmvEwU)**
+
+### Towards Trust in Emacs: A New Package for Just-in-Time Trust Management
+
+* Emacs versions up to 30 treated all files as trusted by default, leading to security vulnerabilities like CVE-2024-53920 (arbitrary code execution)
+* Emacs 30 introduced explicit trust mechanisms, setting all files to untrusted by default, but this creates friction for users
+* The new `trust-manager` package solves this by enabling just-in-time trust prompting with minimal user interruption
+* When you first visit a file in a project, `trust-manager` asks once if you trust it, then remembers your choice for future visits
+* The package automatically trusts your init files, custom files, and directories on your `load-path`
+* Untrusted Emacs Lisp buffers show a red `?` indicator in the mode line that you can click to grant trust immediately
+* Trust settings are stored in `trust-manager-trust-alist` and can be managed through dedicated commands or the Customize interface
+* The package integrates with `project-forget-project` to automatically clear trust entries when projects are forgotten
+* Available on MELPA and helps maintain security without compromising workflow efficiency
+
+### 迈向 Emacs 中的信任机制:即时信任管理新包
+
+* Emacs 30 版本之前默认将所有文件视为可信,导致了如 CVE-2024-53920(任意代码执行)等安全漏洞
+* Emacs 30 引入了显式信任机制,默认将所有文件设为不可信,但这给用户带来了使用摩擦
+* 新的 `trust-manager` 包通过启用即时信任提示来解决此问题,最大限度减少对用户的干扰
+* 当你首次访问项目中的文件时,`trust-manager` 会询问一次是否信任该项目,然后记住你的选择供将来访问使用
+* 该包自动信任你的初始化文件、自定义文件以及 `load-path` 中的目录
+* 不可信的 Emacs Lisp 缓冲区会在模式行显示红色 `?` 指示器,点击即可立即授予信任
+* 信任设置存储在 `trust-manager-trust-alist` 中,可通过专用命令或自定义界面进行管理
+* 该包与 `project-forget-project` 集成,在忘记项目时自动清除信任条目
+* 可从 MELPA 安装,在保持安全性的同时不影响工作流程效率
+
+**[Read Original / 阅读原文](https://eshelyaron.com/posts/2026-04-15-towards-trust-in-emacs.html)**
+
+### Interval Calculator: A Powerful Tool for Interval Union Arithmetic
+
+* **Core Concept**: Calculator operating on unions of intervals rather than single real numbers, implementing Interval Union Arithmetic with guaranteed inclusion property
+* **Key Advantage**: Supports division by intervals containing zero, producing disjoint interval unions (e.g., `2 / [-2, 1]` yields `[-∞, -1] U [2, +∞]`)
+* **Practical Applications**: Represents uncertainty in calculations, handles complex interval expressions with union operator `U`, and produces results guaranteed to contain true values
+* **Full Precision Mode**: Uses outward rounding over IEEE 754 doubles to guarantee results contain mathematically exact values, addressing floating-point precision issues (e.g., `0.1 + 0.2` correctly bounds `0.3`)
+* **Rich Functionality**: Supports standard arithmetic operations, trigonometric functions, logarithms, and special interval operations like `hull()`, `lo()`, `hi()`, and `sqinv()`
+* **Flexible Syntax**: Allows mixing bare numbers with intervals, nested interval notation, and arithmetic expressions within interval bounds
+* **Open Source**: Available on GitHub with underlying engine "not-so-float", actively seeking community contributions and sponsorship
+
+### 区间计算器：区间并集运算的强大工具
+
+* **核心概念**：基于区间并集而非单一实数的计算器，实现区间并集算术，具有保证包含性质
+* **关键优势**：支持包含零的区间除法，产生不相交的区间并集（例如 `2 / [-2, 1]` 得到 `[-∞, -1] U [2, +∞]`）
+* **实际应用**：表示计算中的不确定性，使用并集运算符 `U` 处理复杂区间表达式，结果保证包含真实值
+* **全精度模式**：在 IEEE 754 双精度浮点数上使用向外舍入，保证结果包含数学精确值，解决浮点精度问题（例如 `0.1 + 0.2` 正确界定 `0.3`）
+* **丰富功能**：支持标准算术运算、三角函数、对数函数，以及特殊区间操作如 `hull()`、`lo()`、`hi()` 和 `sqinv()`
+* **灵活语法**：允许裸数字与区间混合使用，支持嵌套区间表示法和区间边界内的算术表达式
+* **开源项目**：在 GitHub 上开源，底层引擎为 "not-so-float"，积极寻求社区贡献和赞助支持
+
+**[Read Original / 阅读原文](https://victorpoughon.github.io/interval-calculator/)**
+
+<!-- [Title-Only] -->
+### Spending 3 months coding by hand
+
+* Based on the title, this article likely documents a developer's experiment of writing code entirely by hand (pen and paper) for three months, exploring how this constraint affects their coding process, thinking patterns, and relationship with programming.
+* This might be interesting because it challenges our modern assumptions about development workflows and could reveal insights about code quality, intentionality, and the cognitive differences between typing and handwriting code.
+
+### 用手写代码三个月
+
+* 根据标题推测,这篇文章可能记录了一位开发者完全用手(纸笔)编写代码三个月的实验,探讨这种限制如何影响编程过程、思维模式以及与编程的关系。
+* 值得关注的原因在于,它挑战了我们对现代开发工作流程的假设,可能揭示关于代码质量、编程意图性以及打字与手写代码之间认知差异的见解。
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
+
+**[Read Original / 阅读原文](https://miguelconner.substack.com/p/im-coding-by-hand)**
 
