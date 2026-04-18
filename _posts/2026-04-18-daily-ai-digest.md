@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 18, 2026"
 date: 2026-04-18
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -563,62 +563,50 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 
 ---
 
-### 达尔文.skill - 受 Autoresearch 启发的自主技能优化系统
+*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
 
-* **功能介绍**: 一个自主系统,持续评估、改进、测试和进化 Agent Skills(SKILL.md 文件),采用棘轮机制——只保留可测量的改进,自动回滚其他所有变更。
+**[Read Original / 阅读原文](https://miguelconner.substack.com/p/im-coding-by-hand)**
 
-* **主要特点**:
-  - 双重评估体系:结构质量(60%)+ 实际效果测试(40%),涵盖 8 个维度
-  - 棘轮机制确保分数只升不降,不会积累局部退化
-  - 通过子 agent 独立评分,避免"自己改自己评"的偏差
-  - 人在回路设计:优化周期之间暂停,等待用户确认
-  - 每次迭代只编辑单一资产,改进可控且可归因
+### Category Theory Illustrated - Orders: Summary
 
-* **为何值得关注**: 直接受 Andrej Karpathy 的 autoresearch 启发,这个项目巧妙地将自主实验循环从模型训练迁移到 Agent Skill 优化领域。随着 Agent Skill 生态快速扩张(Claude Code、Codex、OpenClaw 等),手动维护变得不可能。该系统解决了真实痛点:传统 Skill 审查只检查格式结构,但 darwin-skill 通过测试提示验证实际效果,为提升 AI agent 能力创造了可测量的自动化路径。已获 1100+ stars,证明了开发者对系统化 Skill 优化的强烈需求。
+* Orders are mathematical structures consisting of a set of elements and a binary relation that follows specific laws
+* Linear orders are the simplest type where every element has a definite position relative to all others (like rainbow colors or natural numbers)
+* Linear orders must satisfy four laws: reflexivity (a ≤ a), transitivity (if a ≤ b and b ≤ c, then a ≤ c), antisymmetry (no contradictions), and totality (all elements are comparable)
+* All finite linear orders are isomorphic to natural numbers, making them mathematically straightforward but somewhat limited
+* Partial orders remove the totality requirement, allowing for incomparable elements (like ranking soccer players who never played each other)
+* Partial orders contain "chains" - linearly ordered subsets that may or may not connect to each other
+* The relationship between order types forms a hierarchy: partial orders are more general than linear orders, similar to how equivalence relations differ by replacing symmetry with antisymmetry
 
-**[View Repository / 查看仓库](https://github.com/alchaincyf/darwin-skill)**
+### 范畴论图解 - 序关系：总结
 
-### 🎬 The Idea That China Can't Have AI Chips Is Nonsense - Jensen Huang
-**Channel:** Dwarkesh Patel
+* 序是由一组元素和遵循特定规律的二元关系组成的数学结构
+* 线性序是最简单的类型，其中每个元素相对于所有其他元素都有确定的位置（如彩虹颜色或自然数）
+* 线性序必须满足四个定律：自反性（a ≤ a）、传递性（若 a ≤ b 且 b ≤ c，则 a ≤ c）、反对称性（无矛盾）和完全性（所有元素可比较）
+* 所有有限线性序都同构于自然数，这使它们在数学上简单明了但有些局限
+* 偏序去除了完全性要求，允许存在不可比较的元素（如对从未互相比赛过的足球运动员进行排名）
+* 偏序包含"链"——可能相互连接也可能不连接的线性有序子集
+* 序类型之间的关系形成层次结构：偏序比线性序更一般，类似于等价关系通过用反对称性替换对称性而产生的差异
 
-* Jensen Huang (NVIDIA CEO) challenges the notion that China can be prevented from accessing AI chip technology
-* Discusses the geopolitical and technical realities of AI chip export controls and semiconductor restrictions
-* Worth watching for insights into the global AI chip landscape, technology policy debates, and perspectives from one of the industry's most influential leaders on the practicality of tech restrictions
+**[Read Original / 阅读原文](https://abuseofnotation.github.io/category-theory-illustrated/04_order/)**
 
-### 🎬 中国无法获得AI芯片的想法是无稽之谈 - 黄仁勋
-**频道:** Dwarkesh Patel
+<!-- [Title-Only] -->
+### Amiga Graphics
 
-* 英伟达CEO黄仁勋质疑阻止中国获得AI芯片技术的可行性
-* 探讨AI芯片出口管制和半导体限制的地缘政治与技术现实
-* 值得观看以了解全球AI芯片格局、技术政策辩论,以及行业最具影响力领导者之一对技术限制实用性的观点
+* Based on the title, this article likely explores the graphics capabilities and architecture of the Amiga computer system, which was revolutionary in the 1980s and early 1990s. It probably covers technical aspects like the custom chipset (including the famous "Denise" and "Agnus" chips), color palettes, sprite handling, and the innovative features that made Amiga a powerhouse for graphics and multimedia at the time.
+* This would be interesting to readers who appreciate computer history, retro computing, or want to understand how early personal computers achieved impressive visual effects with limited hardware. The Amiga's influence on modern graphics architecture and game development makes this a fascinating technical deep-dive.
 
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wvzJHVmvEwU)**
+**Note:** This introduction is based solely on the article title, as the full content could not be accessed.
 
-### Towards Trust in Emacs: A New Package for Just-in-Time Trust Management
+---
 
-* Emacs versions up to 30 treated all files as trusted by default, leading to security vulnerabilities like CVE-2024-53920 (arbitrary code execution)
-* Emacs 30 introduced explicit trust mechanisms, setting all files to untrusted by default, but this creates friction for users
-* The new `trust-manager` package solves this by enabling just-in-time trust prompting with minimal user interruption
-* When you first visit a file in a project, `trust-manager` asks once if you trust it, then remembers your choice for future visits
-* The package automatically trusts your init files, custom files, and directories on your `load-path`
-* Untrusted Emacs Lisp buffers show a red `?` indicator in the mode line that you can click to grant trust immediately
-* Trust settings are stored in `trust-manager-trust-alist` and can be managed through dedicated commands or the Customize interface
-* The package integrates with `project-forget-project` to automatically clear trust entries when projects are forgotten
-* Available on MELPA and helps maintain security without compromising workflow efficiency
+### Amiga 图形系统
 
-### 迈向 Emacs 中的信任机制:即时信任管理新包
+* 根据标题推测,这篇文章可能深入探讨 Amiga 计算机系统的图形能力和架构。Amiga 在 1980 年代至 1990 年代初期具有革命性意义。文章很可能涵盖定制芯片组的技术细节(包括著名的 "Denise" 和 "Agnus" 芯片)、调色板、精灵处理,以及让 Amiga 成为当时图形和多媒体领域强者的创新特性。
+* 对于欣赏计算机历史、复古计算机爱好者,或想了解早期个人电脑如何用有限硬件实现令人印象深刻的视觉效果的读者来说,这会是一篇很有价值的文章。Amiga 对现代图形架构和游戏开发的影响使其成为一个引人入胜的技术深度探讨主题。
 
-* Emacs 30 版本之前默认将所有文件视为可信,导致了如 CVE-2024-53920(任意代码执行)等安全漏洞
-* Emacs 30 引入了显式信任机制,默认将所有文件设为不可信,但这给用户带来了使用摩擦
-* 新的 `trust-manager` 包通过启用即时信任提示来解决此问题,最大限度减少对用户的干扰
-* 当你首次访问项目中的文件时,`trust-manager` 会询问一次是否信任该项目,然后记住你的选择供将来访问使用
-* 该包自动信任你的初始化文件、自定义文件以及 `load-path` 中的目录
-* 不可信的 Emacs Lisp 缓冲区会在模式行显示红色 `?` 指示器,点击即可立即授予信任
-* 信任设置存储在 `trust-manager-trust-alist` 中,可通过专用命令或自定义界面进行管理
-* 该包与 `project-forget-project` 集成,在忘记项目时自动清除信任条目
-* 可从 MELPA 安装,在保持安全性的同时不影响工作流程效率
+**说明:** 此简介仅基于文章标题,因为无法访问完整内容。
 
-**[Read Original / 阅读原文](https://eshelyaron.com/posts/2026-04-15-towards-trust-in-emacs.html)**
+**[Read Original / 阅读原文](https://amiga.lychesis.net/)**
 
 ### Interval Calculator: A Powerful Tool for Interval Union Arithmetic
 
@@ -642,20 +630,49 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 
 **[Read Original / 阅读原文](https://victorpoughon.github.io/interval-calculator/)**
 
-<!-- [Title-Only] -->
-### Spending 3 months coding by hand
+### darwin-skill - Autonomous Skill Optimization System Inspired by autoresearch
 
-* Based on the title, this article likely documents a developer's experiment of writing code entirely by hand (pen and paper) for three months, exploring how this constraint affects their coding process, thinking patterns, and relationship with programming.
-* This might be interesting because it challenges our modern assumptions about development workflows and could reveal insights about code quality, intentionality, and the cognitive differences between typing and handwriting code.
+* **What it does**: An autonomous system that continuously evaluates, improves, tests, and evolves Agent Skills (SKILL.md files) using a ratchet mechanism—only keeping changes that measurably improve performance, automatically reverting everything else.
 
-### 用手写代码三个月
+* **Key features**: 
+  - Dual evaluation system: structural quality (60%) + actual performance testing (40%) across 8 dimensions
+  - Git-based ratchet mechanism ensuring scores only go up, never down
+  - Independent scoring via sub-agent to avoid self-evaluation bias
+  - Human-in-the-loop design: pauses between optimization cycles for user confirmation
+  - Single-asset editing per iteration for controlled, attributable improvements
 
-* 根据标题推测,这篇文章可能记录了一位开发者完全用手(纸笔)编写代码三个月的实验,探讨这种限制如何影响编程过程、思维模式以及与编程的关系。
-* 值得关注的原因在于,它挑战了我们对现代开发工作流程的假设,可能揭示关于代码质量、编程意图性以及打字与手写代码之间认知差异的见解。
+* **Why it's notable**: Directly inspired by Andrej Karpathy's autoresearch, this project adapts autonomous experimentation loops from model training to the rapidly growing Agent Skill ecosystem (Claude Code, Codex, OpenClaw, etc.). As skill libraries scale from 10 to 60+ skills, manual maintenance becomes impractical—darwin-skill provides systematic, measurable optimization that goes beyond format checking to validate real-world effectiveness.
 
 ---
 
-*Note: This introduction is based solely on the article title, as the full content could not be accessed.*
+### 达尔文.skill - 受 autoresearch 启发的自主技能优化系统
 
-**[Read Original / 阅读原文](https://miguelconner.substack.com/p/im-coding-by-hand)**
+* **功能介绍**: 一个自主系统,持续评估、改进、测试和进化 Agent Skills(SKILL.md 文件),采用棘轮机制——只保留可测量改进的变更,自动回滚其他所有修改。
+
+* **主要特点**:
+  - 双重评估体系:结构质量(60%)+ 实际效果测试(40%),涵盖 8 个维度
+  - 基于 Git 的棘轮机制,确保分数只升不降
+  - 通过子 agent 独立评分,避免自我评估偏差
+  - 人在回路设计:优化周期之间暂停,等待用户确认
+  - 每次迭代只编辑单一资产,改进可控且可归因
+
+* **为何值得关注**: 直接受 Andrej Karpathy 的 autoresearch 启发,将自主实验循环从模型训练迁移到快速增长的 Agent Skill 生态系统(Claude Code、Codex、OpenClaw 等)。当技能库从 10 个扩展到 60+ 个时,手动维护变得不切实际——达尔文.skill 提供系统化、可量化的优化方案,超越格式检查,验证真实世界的有效性。
+
+**[View Repository / 查看仓库](https://github.com/alchaincyf/darwin-skill)**
+
+### 🎬 The Idea That China Can't Have AI Chips Is Nonsense - Jensen Huang
+**Channel:** Dwarkesh Patel
+
+* Jensen Huang (NVIDIA CEO) challenges the notion that China can be prevented from accessing AI chip technology
+* Discusses the geopolitical and technical realities of AI chip export controls and semiconductor restrictions
+* Worth watching for insights into the global AI chip landscape, technology policy debates, and perspectives from one of the industry's most influential leaders on the practicality of tech restrictions
+
+### 🎬 中国无法获得AI芯片的想法是无稽之谈 - 黄仁勋
+**频道:** Dwarkesh Patel
+
+* 英伟达CEO黄仁勋质疑阻止中国获得AI芯片技术的可行性
+* 探讨AI芯片出口管制和半导体限制的地缘政治与技术现实
+* 值得观看以了解全球AI芯片格局、技术政策辩论,以及行业最具影响力领导者之一对技术限制实用性的观点
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wvzJHVmvEwU)**
 
