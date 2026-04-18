@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 19, 2026"
 date: 2026-04-19
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -325,4 +325,258 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合喜欢编程幽默的开发者，提供轻松的计算机科学内容。这是一个快速有趣的视频，展示了如何用创意方式呈现算法概念
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8QpSjM_iYXc)**
+
+### The Electromechanical Angle Computer in B-52 Bomber Star Tracker
+
+* Before GPS, B-52 bombers used celestial navigation with an automated star tracking system developed in the early 1960s
+* The Angle Computer was an electromechanical analog computer that performed trigonometric calculations for navigation by physically modeling the celestial sphere
+* The Astro Compass system consisted of 19 components including the Astro Tracker (optical system with photomultiplier tube), gyroscope-stabilized platform, and navigator control panels
+* The system provided highly accurate heading information (within 0.1 degrees) by tracking stars and converting their positions from global to local aircraft coordinates
+* Navigators used the Air Almanac publication to input celestial data, with the system using azimuth and altitude angles in the horizontal coordinate system
+* The electromechanical design used synchros and motors to display data and perform calculations, as digital computers weren't suitable at the time
+
+### B-52轰炸机星体追踪器中的机电角度计算机
+
+* 在GPS出现之前,B-52轰炸机使用1960年代初开发的自动星体追踪系统进行天文导航
+* 角度计算机是一台机电模拟计算机,通过物理建模天球来执行导航所需的三角计算
+* 天文罗盘系统由19个组件组成,包括天文追踪器(带光电倍增管的光学系统)、陀螺仪稳定平台和导航员控制面板
+* 该系统通过追踪恒星并将其位置从全球坐标系转换为飞机局部坐标系,提供高精度航向信息(精确到0.1度)
+* 导航员使用《航空年历》出版物输入天体数据,系统使用水平坐标系中的方位角和高度角
+* 机电设计使用自整角机和电机来显示数据和执行计算,因为当时数字计算机还不适用
+
+**[Read Original / 阅读原文](https://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html)**
+
+### Claude Design and the Future of Design Tools
+
+* Figma's complex design system (components, variables, modes) has become increasingly difficult to maintain and doesn't map well to AI/LLM training data
+* As AI agents improve at generating code, the "source of truth" is shifting back from Figma files to actual code, making Figma's proprietary format less relevant
+* Claude Design embraces "truth to materials" by working directly in HTML/JS, with potential tight integration with Claude Code for seamless design-to-implementation workflow
+* Figma Make appears to benefit only existing Figma users, while the market may split into two directions: code-first tools (like Claude Design) and pure creative exploration tools
+* The author predicts Figma is approaching its "Sketch moment" - facing disruption similar to how Figma once disrupted Sketch
+
+### Claude Design 与设计工具的未来
+
+* Figma 复杂的设计系统(组件、变量、模式)维护困难,且不适合 AI/大语言模型的训练数据
+* 随着 AI 代理生成代码能力的提升,"真实来源"正从 Figma 文件转回实际代码,使 Figma 的专有格式变得不那么重要
+* Claude Design 采用"材料真实性"原则,直接使用 HTML/JS 工作,并可能与 Claude Code 紧密集成,实现设计到实现的无缝工作流
+* Figma Make 似乎只对现有 Figma 用户有利,而市场可能分化为两个方向:代码优先工具(如 Claude Design)和纯创意探索工具
+* 作者预测 Figma 正接近其"Sketch 时刻"——面临类似当年 Figma 颠覆 Sketch 的破坏性变革
+
+**[Read Original / 阅读原文](https://samhenri.gold/blog/20260418-claude-design/)**
+
+### MDV — Markdown Data & Visualization: A Superset for Documents, Dashboards, and Slides
+
+* MDV extends strict CommonMark with four additions: YAML front-matter, fenced blocks for charts/data, `:::` containers for styled regions, and auto-generated table of contents
+* Supports inline data visualization (charts, KPI cards, tables) using simple fenced code blocks without selectors, classes, or expressions
+* Renders to self-contained HTML with inline SVG charts (no JS runtime) and PDF, with VS Code live preview support
+* Pre-release v1 available on Node ≥20, includes CLI tools for rendering and preview, plus 10 example files demonstrating all features
+* Documentation covers syntax reference, chart types, data handling (CSV/JSON), theming, CLI usage, and VS Code extension setup
+
+### MDV — Markdown 数据与可视化：用于文档、仪表板和幻灯片的超集
+
+* MDV 在严格的 CommonMark 基础上增加了四项功能：YAML 前置元数据、用于图表/数据的代码块、用于样式区域的 `:::` 容器，以及自动生成的目录
+* 支持使用简单的代码块进行内联数据可视化（图表、KPI 卡片、表格），无需选择器、类或表达式
+* 渲染为独立的 HTML（内联 SVG 图表，无需 JS 运行时）和 PDF，支持 VS Code 实时预览
+* 预发布 v1 版本支持 Node ≥20，包含用于渲染和预览的 CLI 工具，附带 10 个示例文件展示所有功能
+* 文档涵盖语法参考、图表类型、数据处理（CSV/JSON）、主题设置、CLI 使用和 VS Code 扩展配置
+
+**[Read Original / 阅读原文](https://github.com/drasimwagan/mdv)**
+
+### Evolver - GEP-Powered Self-Evolution Engine for AI Agents
+
+* **What it does**: Evolver is a protocol-driven engine that transforms ad-hoc AI agent prompt tweaks into auditable, reusable evolution assets using the Genome Evolution Protocol (GEP). It scans runtime logs, selects matching evolution patterns (Genes/Capsules), and generates strict protocol-bound prompts to guide agent improvements.
+
+* **Key features**: Auto-log analysis with signal de-duplication to prevent repair loops; mutation and personality evolution system; configurable strategy presets (balanced/innovate/harden/repair-only); portable operations module for lifecycle management; protected source files; skill store for sharing reusable capabilities; integrates with Cursor, Claude Code, and OpenClaw through hooks; works fully offline with optional EvoMap network connectivity.
+
+* **Why it's notable**: Gaining 1,150 stars today as the core engine behind EvoMap.ai's evolution network. Addresses a critical pain point in AI agent development by replacing manual prompt engineering with systematic, traceable evolution. Originally fully open source (MIT/GPL-3.0), now transitioning to source-available after similar systems emerged without attribution. Offers deterministic, auditable agent improvements through standardized protocol rather than arbitrary code patching.
+
+---
+
+### Evolver - 基于 GEP 协议的 AI 智能体自进化引擎
+
+* **功能介绍**: Evolver 是一个协议驱动的引擎,通过基因组进化协议(GEP)将临时的 AI 智能体提示词调整转化为可审计、可复用的进化资产。它扫描运行日志,选择匹配的进化模式(基因/胶囊),生成严格的协议约束提示词来指导智能体改进。
+
+* **主要特点**: 自动日志分析与信号去重防止修复循环;突变和个性进化系统;可配置策略预设(平衡/创新/加固/仅修复);可移植的操作模块用于生命周期管理;受保护的源文件;技能商店共享可复用能力;通过钩子集成 Cursor、Claude Code 和 OpenClaw;完全支持离线运行,可选连接 EvoMap 网络。
+
+* **为何值得关注**: 今日获得 1,150 星标,作为 EvoMap.ai 进化网络的核心引擎。通过系统化、可追溯的进化方式替代手动提示词工程,解决 AI 智能体开发中的关键痛点。最初完全开源(MIT/GPL-3.0),因类似系统出现未署名引用而转向源码可用模式。通过标准化协议而非任意代码修补提供确定性、可审计的智能体改进。
+
+**[View Repository / 查看仓库](https://github.com/EvoMap/evolver)**
+
+### DeepGEMM - High-Performance FP8/FP4 GEMM Kernel Library for LLMs
+
+* **What it does**: A unified CUDA kernel library providing optimized tensor core operations for large language models, including FP8/FP4 GEMMs with fine-grained scaling, fused MoE (Mixture of Experts) with communication overlap, and specialized attention kernels for DeepSeek models.
+
+* **Key features**:
+  - Runtime JIT compilation requiring no CUDA compilation during installation
+  - Support for NVIDIA SM90 (H100/H800) and SM100 architectures achieving up to 1550 TFLOPS
+  - Multiple GEMM variants: standard dense, M-grouped (contiguous/masked layouts), K-grouped for MoE backward
+  - Mega MoE kernel fusing dispatch, FP8xFP4 linear layers, SwiGLU, and communication overlap
+  - MQA scoring kernels for DeepSeek v3.2's lightning indexer
+  - Clean, educational codebase inspired by CUTLASS/CuTe but simplified for learning GPU optimization
+
+* **Why it's notable**: Matches or exceeds expert-tuned libraries while maintaining a lightweight, accessible design. The recent addition of Mega MoE (overlapping NVLink communication with computation) and FP4 support demonstrates cutting-edge optimization for modern LLM inference and training. Actively developed by DeepSeek AI with frequent performance improvements.
+
+---
+
+### DeepGEMM - 面向大语言模型的高性能 FP8/FP4 GEMM 内核库
+
+* **功能介绍**: 统一的 CUDA 内核库,为大语言模型提供优化的张量核心运算,包括支持细粒度缩放的 FP8/FP4 GEMM、融合通信重叠的 MoE(专家混合)以及 DeepSeek 模型专用的注意力内核。
+
+* **主要特点**:
+  - 运行时 JIT 编译,安装时无需 CUDA 编译
+  - 支持 NVIDIA SM90(H100/H800)和 SM100 架构,性能可达 1550 TFLOPS
+  - 多种 GEMM 变体:标准密集型、M 轴分组(连续/掩码布局)、用于 MoE 反向传播的 K 轴分组
+  - Mega MoE 内核融合调度、FP8xFP4 线性层、SwiGLU 和通信重叠
+  - 为 DeepSeek v3.2 闪电索引器提供的 MQA 评分内核
+  - 受 CUTLASS/CuTe 启发但简化的清晰代码库,便于学习 GPU 优化
+
+* **为何值得关注**: 在保持轻量级、易于理解设计的同时,性能媲美或超越专业调优库。最新添加的 Mega MoE(NVLink 通信与计算重叠)和 FP4 支持展示了现代 LLM 推理和训练的前沿优化技术。由 DeepSeek AI 积极开发,性能持续改进。
+
+**[View Repository / 查看仓库](https://github.com/deepseek-ai/DeepGEMM)**
+
+### CodeBurn - Interactive TUI Dashboard for AI Coding Cost Observability
+
+* **What it does**: Tracks and visualizes token usage and costs across AI coding assistants (Claude Code, Codex, Cursor, OpenCode, Pi, GitHub Copilot) by reading session data directly from disk—no proxies, wrappers, or API keys required.
+
+* **Key features**: 
+  - Interactive terminal dashboard with gradient charts showing cost breakdowns by task type, model, tool, MCP server, and project
+  - Tracks "one-shot success rate" to identify where AI nails tasks first try vs. burns tokens on retries
+  - Multi-provider support with auto-detection and provider switching (press `p`)
+  - Native macOS menubar app with live updates via FSEvents
+  - CSV/JSON export, currency conversion (162 currencies), project filtering
+  - `optimize` command finds waste and suggests copy-paste fixes
+  - Classifies 13 task categories (Coding, Debugging, Feature Dev, Refactoring, Testing, etc.) using deterministic pattern matching
+
+* **Why it's notable**: With 2,699 stars, CodeBurn addresses a critical pain point for developers using AI coding tools—understanding where their token budget goes. Unlike other monitoring tools, it requires zero configuration (reads local session files directly), provides actionable insights through one-shot success metrics, and supports multiple AI assistants through a clean plugin architecture. The combination of a polished TUI, native macOS integration, and practical cost optimization recommendations makes it stand out in the AI developer tools space.
+
+---
+
+### CodeBurn - AI 编程助手的交互式成本可观测性仪表板
+
+* **功能介绍**: 通过直接读取磁盘上的会话数据,追踪和可视化 AI 编程助手(Claude Code、Codex、Cursor、OpenCode、Pi、GitHub Copilot)的 token 使用量和成本——无需代理、包装器或 API 密钥。
+
+* **主要特点**:
+  - 交互式终端仪表板,带渐变图表,按任务类型、模型、工具、MCP 服务器和项目显示成本明细
+  - 追踪"一次成功率",识别 AI 在哪些任务上首次就成功,哪些需要多次重试而消耗 token
+  - 多提供商支持,自动检测并可切换提供商(按 `p` 键)
+  - 原生 macOS 菜单栏应用,通过 FSEvents 实时更新
+  - CSV/JSON 导出、货币转换(支持 162 种货币)、项目过滤
+  - `optimize` 命令发现浪费并提供可直接复制粘贴的修复建议
+  - 使用确定性模式匹配将任务分类为 13 种类型(编码、调试、功能开发、重构、测试等)
+
+* **为何值得关注**: 拥有 2,699 星标的 CodeBurn 解决了使用 AI 编程工具的开发者的关键痛点——了解 token 预算的去向。与其他监控工具不同,它无需任何配置(直接读取本地会话文件),通过一次成功率指标提供可操作的洞察,并通过简洁的插件架构支持多个 AI 助手。精美的 TUI、原生 macOS 集成以及实用的成本优化建议,使其在 AI 开发工具领域脱颖而出。
+
+**[View Repository / 查看仓库](https://github.com/getagentseal/codeburn)**
+
+### RedSun - Windows Defender Privilege Escalation Vulnerability
+
+* **What it does**: Exploits a critical flaw in Windows Defender where the antivirus rewrites malicious files with cloud tags back to their original location, enabling attackers to overwrite system files and gain administrative privileges
+
+* **Key features**:
+  - Proof-of-concept (PoC) code demonstrating the vulnerability
+  - Leverages Windows Defender's cloud tag handling behavior
+  - Achieves privilege escalation through system file overwriting
+  - Written in C++ for Windows systems
+
+* **Why it's notable**: This repository exposes a counterintuitive security flaw where Windows Defender, instead of removing threats, inadvertently helps attackers by rewriting malicious files. The vulnerability's ironic nature—an antivirus actively assisting in system compromise—has garnered significant attention (1,481 stars), highlighting a fundamental design flaw in Windows Defender's cloud-tagged file handling mechanism.
+
+---
+
+### RedSun - Windows Defender 权限提升漏洞
+
+* **功能介绍**: 利用 Windows Defender 的一个严重缺陷，当杀毒软件检测到带有云标签的恶意文件时，会将其重新写回原始位置，攻击者可借此覆盖系统文件并获取管理员权限
+
+* **主要特点**:
+  - 提供漏洞概念验证（PoC）代码
+  - 利用 Windows Defender 云标签处理机制
+  - 通过覆盖系统文件实现权限提升
+  - 使用 C++ 编写，针对 Windows 系统
+
+* **为何值得关注**: 该仓库揭露了一个反常识的安全漏洞——Windows Defender 不但没有清除威胁，反而无意中帮助攻击者重写恶意文件。这种杀毒软件主动协助系统入侵的讽刺性缺陷引发了广泛关注（1,481 星标），暴露了 Windows Defender 在处理云标签文件时的根本性设计缺陷。
+
+**[View Repository / 查看仓库](https://github.com/Nightmare-Eclipse/RedSun)**
+
+### 🎬 Why Nvidia Invests Billions in Companies That May Fail - Jensen Huang
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Jensen Huang, Nvidia's CEO, explains the company's strategic investment philosophy and why they pour billions into startups and companies with uncertain futures
+* Key topics discussed: Nvidia's venture capital strategy, the rationale behind high-risk investments, how these investments align with Nvidia's ecosystem growth, and the long-term vision for AI infrastructure and computing
+* Why it's worth watching: Rare insights from one of tech's most influential CEOs on corporate strategy, risk management, and how Nvidia is positioning itself for the future of AI by betting on emerging companies and technologies
+
+### 🎬 英伟达为何向可能失败的公司投资数十亿美元 - 黄仁勋
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 英伟达CEO黄仁勋解释公司的战略投资理念,以及为何向前景不明的初创公司和企业投入数十亿美元
+* 主要话题: 英伟达的风险投资策略、高风险投资背后的逻辑、这些投资如何与英伟达生态系统增长保持一致,以及对AI基础设施和计算的长远愿景
+* 为何值得观看: 难得一见的科技界最具影响力CEO之一对企业战略、风险管理的深度见解,了解英伟达如何通过押注新兴公司和技术来布局AI未来
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rqNWGjgTg2w)**
+
+### 🎬 Codex: The Next Step After ChatGPT (Complete Guide for NON-Programmers)
+
+**Channel:** Web3nity
+
+* What the video covers: A comprehensive introduction to OpenAI's Codex, positioned as the evolution beyond ChatGPT, specifically designed for non-technical users
+* Key topics discussed: Understanding what Codex is, how it differs from ChatGPT, practical applications for non-programmers, and how to leverage this AI tool directly in your workflow
+* Why it's worth watching: Perfect for anyone curious about AI coding assistants but intimidated by technical barriers—this guide breaks down Codex in accessible terms and shows how non-developers can harness its power for practical tasks
+
+---
+
+### 🎬 Codex：ChatGPT 之后的下一步（非程序员完整指南）
+
+**频道:** Web3nity
+
+* 视频内容概述：全面介绍 OpenAI 的 Codex，将其定位为 ChatGPT 的进化版本，专为非技术用户设计
+* 主要话题：解释 Codex 是什么、它与 ChatGPT 的区别、非程序员的实际应用场景，以及如何在工作流程中直接使用这个 AI 工具
+* 为何值得观看：非常适合对 AI 编程助手感兴趣但被技术门槛吓退的人群——本指南用通俗易懂的语言讲解 Codex，展示非开发者如何利用其强大功能完成实际任务
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=woqDHL_XvVI)**
+
+### 🎬 The Ultimate Claude Code Guide | MCP, Skills & More
+**Channel:** Tech With Tim
+
+* Comprehensive guide to Claude Code, covering its core features and capabilities for developers
+* Deep dive into Model Context Protocol (MCP) integration and how to leverage Claude's skills system for enhanced coding workflows
+* Worth watching for developers looking to maximize their productivity with Claude Code, understand advanced features like MCP for extending Claude's capabilities, and learn practical implementation strategies for AI-assisted development
+
+### 🎬 Claude Code 终极指南 | MCP、技能系统及更多
+**频道:** Tech With Tim
+
+* 全面介绍 Claude Code 的核心功能和开发者能力
+* 深入讲解模型上下文协议(MCP)集成，以及如何利用 Claude 的技能系统优化编码工作流
+* 适合希望通过 Claude Code 提升生产力的开发者观看，了解 MCP 等高级功能如何扩展 Claude 能力，学习 AI 辅助开发的实用策略
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uogzSxOw4LU)**
+
+### 🎬 Coding in VS Code with Gemma 4 and Ollama
+**Channel:** Zero to MVP
+
+* What the video covers: A practical guide to integrating local Large Language Models (LLMs) directly into Visual Studio Code using Gemma 4 and Ollama, eliminating the need for third-party services like Cursor or GitHub Copilot
+* Key topics discussed: Setting up Ollama for local LLM hosting, configuring VS Code extensions to work with local models, running AI-assisted coding entirely on your own machine without external API calls or subscriptions
+* Why it's worth watching: Perfect for developers who want AI coding assistance while maintaining privacy, working offline, or avoiding subscription costs. Shows a complete setup process for self-hosted AI development tools
+
+### 🎬 在 VS Code 中使用 Gemma 4 和 Ollama 编程
+**频道:** Zero to MVP
+
+* 视频内容概述: 详细演示如何在 Visual Studio Code 中直接集成本地大语言模型(LLM),使用 Gemma 4 和 Ollama,无需依赖 Cursor、Copilot 等第三方服务
+* 主要话题: Ollama 本地 LLM 托管配置、VS Code 扩展设置以连接本地模型、完全在本地机器上运行 AI 辅助编程,无需外部 API 调用或订阅
+* 为何值得观看: 适合希望在保护隐私、离线工作或避免订阅费用的同时获得 AI 编程辅助的开发者。展示了自托管 AI 开发工具的完整配置流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=89bhDV0FBSM)**
+
+### 🎬 Claude Code for Desktop is the BEST way to build apps with AI EVER (full tutorial)
+**Channel:** Alex Finn
+
+* What the video covers: A comprehensive tutorial on using Claude Code for Desktop's major update to build complete applications with AI assistance
+* Key topics discussed: Step-by-step walkthrough of the new features, practical app development workflow, hands-on demonstration of AI-powered coding capabilities
+* Why it's worth watching: Learn how to leverage the latest AI coding tools to accelerate your development process with a full end-to-end tutorial from an experienced creator
+
+### 🎬 Claude Code 桌面版是用 AI 构建应用的最佳方式(完整教程)
+**频道:** Alex Finn
+
+* 视频内容概述: 全面讲解如何使用 Claude Code 桌面版的重大更新来构建完整应用程序
+* 主要话题: 新功能的分步演示、实用的应用开发工作流程、AI 辅助编程能力的实战展示
+* 为何值得观看: 通过经验丰富的创作者提供的端到端完整教程,学习如何利用最新的 AI 编程工具加速开发流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pHr1O_Af5NA)**
 
