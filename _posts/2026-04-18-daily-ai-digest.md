@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: April 18, 2026"
 date: 2026-04-18
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -479,4 +479,118 @@ Trending with 558 stars today because it solves a critical reverse engineering w
 * 为何值得观看: 适合希望在保护隐私、离线工作或避免订阅费用的同时获得 AI 编程辅助的开发者。展示了自托管 AI 开发工具的完整配置流程
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=89bhDV0FBSM)**
+
+### A Simplified Model of Fil-C: Memory Safety for C/C++
+
+* Fil-C achieves memory safety in C/C++ by automatically rewriting code to track allocation metadata alongside every pointer
+* Each pointer variable gets an accompanying `AllocationRecord*` that stores bounds information (visible_bytes, invisible_bytes, length)
+* Memory allocations create three regions: the AllocationRecord itself, visible_bytes for actual data, and invisible_bytes to track pointers within heap data
+* All pointer dereferences are rewritten with bounds checks to prevent buffer overflows and use-after-free bugs
+* The system includes a garbage collector that frees unreachable AllocationRecords and handles memory leaks automatically
+* Local variables whose addresses escape are promoted to heap allocation, and `memmove` operations intelligently handle pointer metadata
+* Production Fil-C adds complexity for threads (concurrent GC, atomic operations), function pointers (type signature verification), and memory optimization (lazy allocation of invisible_bytes)
+
+### Fil-C 简化模型:C/C++ 的内存安全实现
+
+* Fil-C 通过自动重写代码来跟踪每个指针的分配元数据,从而实现 C/C++ 的内存安全
+* 每个指针变量都配有一个 `AllocationRecord*`,用于存储边界信息(visible_bytes、invisible_bytes、length)
+* 内存分配创建三个区域:AllocationRecord 本身、用于实际数据的 visible_bytes,以及用于跟踪堆数据中指针的 invisible_bytes
+* 所有指针解引用都被重写为包含边界检查,以防止缓冲区溢出和释放后使用漏洞
+* 系统包含垃圾回收器,可自动释放不可达的 AllocationRecord 并处理内存泄漏
+* 地址逃逸的局部变量会被提升为堆分配,`memmove` 操作能智能处理指针元数据
+* 生产版 Fil-C 增加了对线程(并发 GC、原子操作)、函数指针(类型签名验证)和内存优化(invisible_bytes 的延迟分配)的复杂支持
+
+**[Read Original / 阅读原文](https://www.corsix.org/content/simplified-model-of-fil-c)**
+
+### Landmark Ancient-Genome Study Reveals Accelerated Human Evolution
+
+* The largest-ever ancient human DNA study analyzed 15,836 individuals from western Eurasia, revealing that human evolution has accelerated over the past 10,000 years
+* Researchers identified 479 gene variants that evolved through natural selection after the dawn of agriculture, with evolution intensifying during the Bronze Age around 5,000 years ago
+* Two-thirds of identified variants showed fluctuating frequencies rather than consistent directional changes, including a multiple sclerosis risk variant that peaked 6,000 years ago
+* Immunity genes were the most common targets for selection, including variants affecting tuberculosis susceptibility and HIV resistance that became more prevalent between 6,000-2,000 years ago
+* Physical appearance traits also evolved, with ten variants linked to lighter skin tone showing selection signals, and male pattern baldness causes becoming 1-2% less common over 7,000 years
+* The study suggests agricultural lifestyle changes and closer proximity to animals introduced new pathogens and challenges that drove rapid genetic adaptation
+* Some researchers remain skeptical about the scale of findings, particularly regarding natural selection's impact on complex traits like mental illness and cognition
+
+### 里程碑式古基因组研究揭示人类进化意外加速
+
+* 有史以来最大规模的古人类DNA研究分析了来自西欧亚大陆的15,836个个体,揭示人类进化在过去1万年间加速进行
+* 研究人员确定了479个在农业出现后通过自然选择进化的基因变异,进化在约5000年前的青铜时代进一步加速
+* 三分之二的已识别变异显示出波动频率而非一致的方向性变化,包括一个多发性硬化症风险变异在6000年前达到峰值
+* 免疫基因是最常见的选择目标,包括影响结核病易感性的变异和在6000至2000年前变得更普遍的HIV抗性变异
+* 外貌特征也发生了进化,十个与较浅肤色相关的变异显示出选择信号,男性型脱发的原因在7000年间减少了1-2%
+* 研究表明农业生活方式的改变和与动物更密切的接触带来了新的病原体和挑战,推动了快速的基因适应
+* 一些研究人员对研究结果的规模持怀疑态度,特别是关于自然选择对精神疾病和认知等复杂性状的影响
+
+**[Read Original / 阅读原文](https://www.nature.com/articles/d41586-026-01204-5)**
+
+### The Last Question by Isaac Asimov: A Journey Through Time and Entropy
+
+* Classic science fiction short story exploring humanity's ultimate question about reversing entropy
+* Spans trillions of years across multiple eras, from 2061 to the end of the universe
+* Features evolving supercomputers (Multivac, Microvac, Galactic AC, Universal AC, Cosmic AC) that grow more powerful with each era
+* Central question: Can entropy be reversed? Can the universe be saved from heat death?
+* Each generation asks the same question to increasingly advanced AIs, always receiving "INSUFFICIENT DATA FOR MEANINGFUL ANSWER"
+* Explores themes of technological progress, human expansion across galaxies, and the ultimate fate of existence
+* Culminates in a profound philosophical and theological conclusion about creation and renewal
+* Demonstrates Asimov's masterful storytelling through epic scope compressed into short narrative form
+
+### 《最后的问题》艾萨克·阿西莫夫：穿越时空与熵的旅程
+
+* 经典科幻短篇小说，探讨人类关于逆转熵的终极问题
+* 时间跨度达数万亿年，从2061年到宇宙终结
+* 展现不断进化的超级计算机（Multivac、Microvac、银河AC、宇宙AC、终极AC），每个时代都更加强大
+* 核心问题：熵能否逆转？宇宙能否免于热寂？
+* 每一代人都向越来越先进的人工智能提出同样的问题，总是得到"数据不足，无法给出有意义的答案"
+* 探讨科技进步、人类跨越星系扩张以及存在的终极命运等主题
+* 以深刻的哲学和神学结论达到高潮，关于创造与重生
+* 展示了阿西莫夫通过短篇叙事压缩史诗般宏大视野的大师级叙事技巧
+
+**[Read Original / 阅读原文](https://hex.ooo/library/last_question.html)**
+
+### darwin-skill - Autonomous Skill Optimization System Inspired by Autoresearch
+
+* **What it does**: An autonomous system that continuously evaluates, improves, tests, and evolves Agent Skills (SKILL.md files) using a ratchet mechanism - only keeping changes that measurably improve performance, automatically reverting everything else.
+
+* **Key features**: 
+  - Dual evaluation system: structural quality (60%) + actual performance testing (40%) across 8 dimensions
+  - Ratchet mechanism ensuring scores only go up, never accumulate degradation
+  - Independent scoring via sub-agents to avoid self-evaluation bias
+  - Human-in-the-loop design: pauses between optimization cycles for user confirmation
+  - Single-asset editing per iteration for controlled, attributable improvements
+
+* **Why it's notable**: Directly inspired by Andrej Karpathy's autoresearch, this project brilliantly adapts the autonomous experimentation loop from model training to Agent Skill optimization. As the Agent Skill ecosystem rapidly expands (Claude Code, Codex, OpenClaw, etc.), manual maintenance becomes impossible at scale. This system addresses a real pain point: traditional Skill reviews only check structure, but darwin-skill validates actual effectiveness through test prompts, creating a measurable, automated path to better AI agent capabilities.
+
+---
+
+### 达尔文.skill - 受 Autoresearch 启发的自主技能优化系统
+
+* **功能介绍**: 一个自主系统,持续评估、改进、测试和进化 Agent Skills(SKILL.md 文件),采用棘轮机制——只保留可测量的改进,自动回滚其他所有变更。
+
+* **主要特点**:
+  - 双重评估体系:结构质量(60%)+ 实际效果测试(40%),涵盖 8 个维度
+  - 棘轮机制确保分数只升不降,不会积累局部退化
+  - 通过子 agent 独立评分,避免"自己改自己评"的偏差
+  - 人在回路设计:优化周期之间暂停,等待用户确认
+  - 每次迭代只编辑单一资产,改进可控且可归因
+
+* **为何值得关注**: 直接受 Andrej Karpathy 的 autoresearch 启发,这个项目巧妙地将自主实验循环从模型训练迁移到 Agent Skill 优化领域。随着 Agent Skill 生态快速扩张(Claude Code、Codex、OpenClaw 等),手动维护变得不可能。该系统解决了真实痛点:传统 Skill 审查只检查格式结构,但 darwin-skill 通过测试提示验证实际效果,为提升 AI agent 能力创造了可测量的自动化路径。已获 1100+ stars,证明了开发者对系统化 Skill 优化的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/alchaincyf/darwin-skill)**
+
+### 🎬 The Idea That China Can't Have AI Chips Is Nonsense - Jensen Huang
+**Channel:** Dwarkesh Patel
+
+* Jensen Huang (NVIDIA CEO) challenges the notion that China can be prevented from accessing AI chip technology
+* Discusses the geopolitical and technical realities of AI chip export controls and semiconductor restrictions
+* Worth watching for insights into the global AI chip landscape, technology policy debates, and perspectives from one of the industry's most influential leaders on the practicality of tech restrictions
+
+### 🎬 中国无法获得AI芯片的想法是无稽之谈 - 黄仁勋
+**频道:** Dwarkesh Patel
+
+* 英伟达CEO黄仁勋质疑阻止中国获得AI芯片技术的可行性
+* 探讨AI芯片出口管制和半导体限制的地缘政治与技术现实
+* 值得观看以了解全球AI芯片格局、技术政策辩论,以及行业最具影响力领导者之一对技术限制实用性的观点
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wvzJHVmvEwU)**
 
