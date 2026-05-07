@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 07, 2026"
 date: 2026-05-07
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -519,4 +519,159 @@ pin: false
 * 为何值得观看: 简短有趣的内容,真实捕捉了与AI编码工具协作的体验 - 适合想要快速一笑并找到日常工作共鸣的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=uhQdDQEzdZk)**
+
+### SQLite Recognized as Library of Congress Recommended Storage Format
+
+* **Official Recognition**: SQLite is designated as a Recommended Storage Format for datasets by the US Library of Congress, joining only XML, JSON, and CSV in this category as of 2018
+* **Preservation Standards**: The format meets LOC's criteria for maximizing long-term survival and accessibility of digital content
+* **Key Evaluation Criteria**: LOC assessed SQLite based on seven factors: disclosure (complete specifications), adoption (widespread use), transparency (analyzability with basic tools), self-documentation (embedded metadata), external dependencies (minimal reliance on specific systems), patent impact (no restrictions), and technical protection mechanisms (no encryption barriers)
+* **Significance**: This designation validates SQLite's suitability for archival purposes and long-term data preservation in institutional and research contexts
+
+### SQLite 获美国国会图书馆推荐存储格式认证
+
+* **官方认可**：SQLite 被美国国会图书馆指定为数据集推荐存储格式，截至 2018 年仅与 XML、JSON 和 CSV 并列此类别
+* **保存标准**：该格式符合国会图书馆关于最大化数字内容长期存续性和可访问性的标准
+* **关键评估标准**：国会图书馆基于七项因素评估 SQLite：公开性（完整规范）、采用度（广泛使用）、透明性（可用基础工具分析）、自文档化（嵌入元数据）、外部依赖性（对特定系统依赖最小）、专利影响（无限制）和技术保护机制（无加密障碍）
+* **重要意义**：此认证验证了 SQLite 在机构和研究环境中用于档案保存和长期数据保存的适用性
+
+**[Read Original / 阅读原文](https://sqlite.org/locrsf.html)**
+
+<!-- [Title-Only] -->
+### Show HN: Social Network for Corporate Cringe
+
+**Note: This introduction is based solely on the title, as the article content could not be fetched.**
+
+* This appears to be a Show HN post introducing CringeOut.com, a social platform dedicated to sharing and discussing awkward, embarrassing, or tone-deaf corporate communications and behaviors—what's commonly referred to as "corporate cringe"
+* It might be interesting to readers because it taps into the widespread phenomenon of companies making PR missteps, posting awkward social media content, or engaging in performative corporate culture that feels inauthentic. Such a platform could serve as both entertainment and a cautionary tale for businesses about what not to do
+* The "Show HN" format suggests this is a newly launched project by a Hacker News community member, which typically generates discussion about the technical implementation, business model, and market fit
+
+### Show HN: 企业尴尬社交网络
+
+**注意：本简介仅基于标题，因为无法获取文章内容。**
+
+* 这似乎是一个 Show HN 帖子，介绍 CringeOut.com——一个专门用于分享和讨论尴尬、令人难堪或不得体的企业沟通和行为的社交平台，也就是通常所说的"企业尴尬时刻"
+* 这可能会引起读者兴趣，因为它切中了企业公关失误、发布尴尬社交媒体内容或进行虚伪的企业文化表演等普遍现象。这样的平台既可以作为娱乐，也可以为企业提供警示，告诉他们什么不该做
+* "Show HN"格式表明这是 Hacker News 社区成员新推出的项目，通常会引发关于技术实现、商业模式和市场契合度的讨论
+
+**[Read Original / 阅读原文](https://CringeOut.com)**
+
+### TI-83 Plus BASIC Programming Tutorial Summary
+
+**Overview:**
+* Beginner's guide to programming the TI-83 Plus graphing calculator using BASIC language
+* Written by Boris Cherny (v2.5), available for download from ticalc.org
+* Recommends using TI Graph Link software, emulators, and connectivity cables for easier development
+
+**Core Programming Concepts Covered:**
+* **DISP Function** - Displays text on the next available line of the screen
+* **OUTPUT Function** - Places text at specific coordinates on an 8×16 character screen grid
+* **CLRHOME Function** - Clears the screen, typically used at the start of programs
+* **LBL/GOTO Functions** - Creates labeled frames and navigation between them (creates loops)
+* **END/PAUSE Functions** - Controls program flow by stopping loops or waiting for user input
+* **MENU Function** - Creates interactive menus with up to 7 items plus a title
+* **INPUT/PROMPT Functions** - Collects user input as variables
+* **STOP Function** - Terminates active processes and loops
+* **Variables** - Stores numbers or strings as single letters for easier manipulation
+
+**Tutorial Structure:**
+* Includes code examples with screenshots for each concept
+* Provides practical exercises (e.g., cylinder area calculator, counting program)
+* Emphasizes hands-on learning with sample programs to modify
+* Credits contributors Ilya S and Tom T
+
+---
+
+### TI-83 Plus BASIC 编程教程摘要
+
+**概述：**
+* TI-83 Plus 图形计算器 BASIC 语言初学者指南
+* 由 Boris Cherny 编写（v2.5 版本），可从 ticalc.org 下载
+* 建议使用 TI Graph Link 软件、模拟器和连接线以便于开发
+
+**涵盖的核心编程概念：**
+* **DISP 函数** - 在屏幕下一可用行显示文本
+* **OUTPUT 函数** - 在 8×16 字符屏幕网格的特定坐标位置放置文本
+* **CLRHOME 函数** - 清除屏幕，通常在程序开始时使用
+* **LBL/GOTO 函数** - 创建标记框架并在它们之间导航（创建循环）
+* **END/PAUSE 函数** - 通过停止循环或等待用户输入来控制程序流程
+* **MENU 函数** - 创建包含最多 7 个项目加标题的交互式菜单
+* **INPUT/PROMPT 函数** - 将用户输入收集为变量
+* **STOP 函数** - 终止活动进程和循环
+* **变量** - 将数字或字符串存储为单个字母以便于操作
+
+**教程结构：**
+* 每个概念都包含带截图的代码示例
+* 提供实践练习（例如圆柱体面积计算器、计数程序）
+* 强调通过可修改的示例程序进行实践学习
+* 感谢贡献者 Ilya S 和 Tom T
+
+**[Read Original / 阅读原文](https://www.ticalc.org/programming/columns/83plus-bas/cherny/)**
+
+### Petdex - Public Gallery for Codex-Compatible Animated Pets
+
+* **What it does**: A web-based gallery platform for browsing, previewing, and downloading animated pet packages compatible with Codex (likely a code editor or development tool with pet companion features)
+
+* **Key features**: Browse approved pet packs with live animation previews across all states; download individual pet packages or the complete gallery collection; in-browser validation and submission system for community-contributed pets
+
+* **Why it's notable**: Provides a centralized hub for the Codex pet ecosystem, enabling community contributions while maintaining quality through validation; the 877 stars indicate strong community engagement around customizable coding companions
+
+---
+
+### Petdex - Codex 兼容动画宠物公共画廊
+
+* **功能介绍**: 一个基于网页的画廊平台,用于浏览、预览和下载与 Codex 兼容的动画宠物包(Codex 可能是支持宠物伴侣功能的代码编辑器或开发工具)
+
+* **主要特点**: 浏览已审核的宠物包并实时预览所有动画状态;支持下载单个宠物包或完整画廊合集;提供浏览器内验证和提交系统,方便社区贡献宠物作品
+
+* **为何值得关注**: 为 Codex 宠物生态系统提供了集中化平台,在保证质量验证的同时鼓励社区贡献;877 星标数反映出开发者社区对可定制编程伴侣的强烈兴趣
+
+**[View Repository / 查看仓库](https://github.com/crafter-station/petdex)**
+
+### Cheat on Content - Your Auto-Evolving Content Operations Expert
+
+* **What it does**: A systematic content creation workflow that transforms gut-feel publishing into data-driven experimentation. It scores your content pre-publication, makes blind predictions, tracks actual performance, and automatically evolves your scoring rubric based on your account's unique patterns—not generic averages.
+
+* **Key features**: 
+  - Account-specific learning system that improves with every post you publish
+  - Pre-publication scoring + blind prediction workflow with T+3 day performance review
+  - Self-evolving rubric that auto-updates when it detects consistent prediction errors
+  - Built-in safeguards: new rubrics must outperform old ones on historical data and pass cross-model validation
+  - 13 Claude Code skills covering the full content ops cycle: scoring, prediction, publishing, retrospectives, trend analysis, and rubric upgrades
+
+* **Why it's notable**: Claims to have driven 1M follower growth in one month by treating content creation as a calibrated feedback loop rather than inspiration-based guessing. Unlike generic AI writing assistants that give the same advice to everyone, this builds a personalized operations expert that learns your specific account's success patterns. The system forces accountability—every prediction is logged and reviewed against actual data, creating a compounding learning effect over time.
+
+---
+
+### Cheat on Content - 自进化的内容运营专家系统
+
+* **功能介绍**: 将凭感觉发内容转变为数据驱动的实验系统。发布前对内容打分并盲预测表现,发布后追踪真实数据,根据你账号的独特规律自动进化评分公式——不是基于全网平均水平,而是专属于你的账号。
+
+* **主要特点**:
+  - 账号专属学习系统,每发一条内容就进化一次
+  - 发布前打分 + 盲预测 + 发布后 3 天复盘的完整工作流
+  - 自动进化的评分公式,连续三次同向偏差会自动提示升级
+  - 内置安全机制:新公式必须在历史数据上表现更优且通过跨模型审核才能生效
+  - 13 个 Claude Code 技能覆盖完整内容运营周期:打分、预测、发布、复盘、热点分析、公式升级
+
+* **为何值得关注**: 作者声称用此系统一个月涨粉 100 万,核心理念是把内容创作变成可校准的反馈循环而非靠灵感。与通用 AI 写作助手不同,这套系统构建的是只服务你一个账号的运营专家,学习你的特定成功模式。系统强制问责——每次预测都留档并与实际数据对账,形成复利式学习效应。本质是用工程化方法论替代经验主义。
+
+**[View Repository / 查看仓库](https://github.com/XBuilderLAB/cheat-on-content)**
+
+### 🎬 Open Models Coding Essentials – Running LLMs Locally and in the Cloud Course
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive course on working with open-source large language models (LLMs) including Gemma, Kimmy, and GLM, covering both local deployment and cloud-based implementations
+* Key topics discussed: Setting up and running open LLMs locally on your machine, deploying models to cloud environments, practical coding examples with multiple model architectures, and hands-on implementation strategies
+* Why it's worth watching: Essential for developers wanting to leverage open-source AI models without relying solely on proprietary APIs, offering practical skills for both resource-constrained local setups and scalable cloud deployments
+
+---
+
+### 🎬 开源模型编码基础 – 本地与云端运行大语言模型课程
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 全面讲解如何使用开源大语言模型（LLMs），包括 Gemma、Kimmy 和 GLM 等模型，涵盖本地部署和云端实现两种方式
+* 主要话题: 在本地机器上设置和运行开源 LLM、将模型部署到云环境、多种模型架构的实战编码示例、以及实用的实现策略
+* 为何值得观看: 对于希望利用开源 AI 模型而不完全依赖专有 API 的开发者来说至关重要，提供了适用于资源受限的本地环境和可扩展云部署的实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=HNVaYYxmwLU)**
 
