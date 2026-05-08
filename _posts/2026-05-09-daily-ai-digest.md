@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 09, 2026"
 date: 2026-05-09
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 4 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：4篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -49,54 +49,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **Privacy-focused users are systematically excluded** - GrapheneOS, LineageOS, Firefox for Android, and other privacy-respecting platforms fail attestation checks, blocking journalists, activists, and security-conscious users
 * **Device attestation enables persistent cross-site tracking** - Every successful challenge sends device identity signals to Google, creating stable identifiers that persist across sessions and browsers, fundamentally compromising user privacy
 * **Proof-of-work alternatives exist without surveillance** - Systems like Private Captcha use computational challenges that penalize bot farms exponentially while preserving user privacy and requiring no hardware certification
-
----
-
-### 谷歌云欺诈防御：WEI 换汤不换药的商业化产品
-
-* **谷歌将 Web Environment Integrity (WEI) 重新包装为"谷歌云欺诈防御"** - 2023年因 Mozilla 和 EFF 反对而撤回 WEI 提案后，谷歌于2026年5月悄然将相同的设备认证机制作为商业验证码服务推出
-* **二维码挑战要求谷歌认证的硬件** - 用户必须使用运行 Google Play 服务的 Android 设备或 iOS 设备扫描二维码，实际上根据谷歌批准的硬件来控制网络访问权限
-* **该系统很容易被机器人运营商绕过** - 自动化相机系统可以扫描二维码，符合要求的 Android 设备成本约30美元，这使其无法有效对抗专业机器人农场，同时还制造了钓鱼风险
-* **注重隐私的用户被系统性排除** - GrapheneOS、LineageOS、Firefox for Android 等注重隐私的平台无法通过认证检查，阻止了记者、活动家和注重安全的用户访问
-* **设备认证实现了持久的跨站点追踪** - 每次成功的挑战都会向谷歌发送设备身份信号，创建跨会话和浏览器持续存在的稳定标识符，从根本上损害用户隐私
-* **存在无需监控的工作量证明替代方案** - Private Captcha 等系统使用计算挑战，对机器人农场施加指数级惩罚，同时保护用户隐私且无需硬件认证
-
-**[Read Original / 阅读原文](https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/)**
-
-<!-- [Title-Only] -->
-### Cartoon Network Flash Games
-
-**Based on the title alone:**
-
-* This article likely covers the collection of Flash-based browser games that Cartoon Network created for their website, featuring popular characters from shows like Dexter's Laboratory, The Powerpuff Girls, Johnny Bravo, and others from the late 1990s to early 2010s
-* It's hosted on the Web Design Museum, suggesting it may be a curated exhibition or archive of these games, possibly with historical context about their design, cultural impact, and the era of Flash gaming
-* Why it might be interesting: Flash games were a defining part of internet culture for millennials and Gen Z, and Cartoon Network's games were particularly beloved. With Flash being discontinued in 2020, preservation efforts like this are important for digital history. It's a nostalgic look at how entertainment brands engaged with audiences online during the early web era
-
-### 卡通频道 Flash 游戏合集
-
-**仅根据标题推测：**
-
-* 本文可能介绍卡通频道（Cartoon Network）为其网站制作的基于 Flash 技术的浏览器游戏合集，包含《德克斯特的实验室》、《飞天小女警》、《强尼布拉沃》等热门动画角色的游戏，时间跨度大约从 1990 年代末到 2010 年代初
-* 文章发布在网页设计博物馆（Web Design Museum）网站上，暗示这可能是一个精心策划的展览或档案馆，可能包含这些游戏的历史背景、设计理念和文化影响
-* 为何值得关注：Flash 游戏是千禧一代和 Z 世代互联网文化的重要组成部分，而卡通频道的游戏尤其受欢迎。随着 Flash 在 2020 年停止支持，这类保存工作对数字历史至关重要。这是一次怀旧之旅，回顾娱乐品牌在早期互联网时代如何与观众互动
-
-**[Read Original / 阅读原文](https://www.webdesignmuseum.org/flash-game-exhibitions/cartoon-network-flash-games)**
-
-
-## 🔥 GitHub Trending / GitHub 热门项目
-
-### Claude for Financial Services - AI Agents and Workflows for Finance Professionals
-
-* **What it does**: Provides production-ready AI agents and skills for financial services workflows including investment banking, equity research, private equity, and wealth management. Agents draft analyst work products like pitch decks, financial models, research notes, and reconciliations for human review.
-
-* **Key features**: 
-  - 11 specialized agents (Pitch Agent, Market Researcher, GL Reconciler, etc.) deployable via Claude Cowork or Managed Agents API
-  - Vertical-specific skill bundles with slash commands (`/comps`, `/dcf`, `/earnings`)
-  - 11 MCP data connectors to major financial platforms (Bloomberg LSEG, S&P Global, FactSet, Morningstar, etc.)
-  - Microsoft 365 integration for Excel, PowerPoint, Word, and Outlook
-  - File-based architecture with no build step required
-
-* **Why it's notable**: First comprehensive open-source framework from Anthropic specifically designed for financial services workflows. Bridges the gap between generic AI assistants and domain-specific finance needs with pre-built agents that understand industry conventions, regulatory requirements, and professional workflows. The dual deployment model (plugin or API) gives firms flexibility to run agents in Cowork or behind their own orchestration layer.
 
 ---
 
@@ -318,4 +270,245 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为开发者和自动化爱好者提供实操指导,展示如何零成本扩展 AI 能力,演示多智能体系统在热门 AI 编码工具中的真实应用场景
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=DuDrHzaBQ3k)**
+
+### Google Cloud Fraud Defense: WEI Repackaged as Commercial Product
+
+* Google launched "Google Cloud Fraud Defense" in May 2026, requiring users to scan QR codes with certified devices (Android with Google Play Services or iOS) to prove human presence
+* This is essentially Web Environment Integrity (WEI) rebranded—the same device attestation mechanism Google withdrew in 2023 after Mozilla and EFF objections
+* WEI was killed because it created a "gated internet controlled by OS and device vendors," but Google bypassed standards review by launching it as a commercial product instead
+* The QR code challenge is trivially defeated: bot operators can automate camera scanning, and compliant Android devices cost only $30 in bulk
+* Device attestation excludes privacy-focused users: GrapheneOS, LineageOS, and Firefox for Android users cannot pass Google Play Integrity checks required by Fraud Defense
+* The system creates persistent tracking: every successful challenge sends device identity and site access data to Google, functioning as cross-session attribution infrastructure
+* QR code challenges train users to scan codes for website access, creating immediate phishing attack vectors that security professionals cannot realistically defend against
+* Unlike bounded authentication systems (Estonia's Smart ID for banking), Fraud Defense applies hardware certification to the open web without consent architecture or purpose limitation
+* Proof-of-work alternatives like Private Captcha exist that verify humanity through computational challenges without requiring hardware certification or creating tracking infrastructure
+
+### Google Cloud 欺诈防御:重新包装的 WEI
+
+* Google 于 2026 年 5 月推出"Google Cloud 欺诈防御",要求用户使用认证设备(安装 Google Play 服务的 Android 或 iOS)扫描二维码以证明人类存在
+* 这本质上是重新包装的 Web 环境完整性(WEI)——Google 在 2023 年因 Mozilla 和 EFF 反对而撤回的同一设备认证机制
+* WEI 被终止是因为它创建了"由操作系统和设备供应商控制的封闭互联网",但 Google 通过将其作为商业产品推出来绕过标准审查
+* 二维码挑战很容易被破解:机器人操作者可以自动化相机扫描,批量购买合规 Android 设备仅需 30 美元
+* 设备认证排除了注重隐私的用户:GrapheneOS、LineageOS 和 Firefox for Android 用户无法通过欺诈防御所需的 Google Play 完整性检查
+* 该系统创建持久跟踪:每次成功挑战都会向 Google 发送设备身份和网站访问数据,充当跨会话归因基础设施
+* 二维码挑战训练用户扫描代码以访问网站,创造了安全专业人员无法实际防御的即时网络钓鱼攻击载体
+* 与有界认证系统(爱沙尼亚用于银行业务的 Smart ID)不同,欺诈防御在没有同意架构或目的限制的情况下将硬件认证应用于开放网络
+* 存在工作量证明替代方案(如 Private Captcha),通过计算挑战验证人类身份,无需硬件认证或创建跟踪基础设施
+
+**[Read Original / 阅读原文](https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/)**
+
+### Discord Status: Increased API Errors Incident Subscription
+
+* Discord is experiencing increased API errors and offers incident update subscriptions
+* Users can subscribe to notifications via email and/or SMS text messages
+* Email notifications are sent whenever incidents are updated
+* SMS notifications are sent only when Discord creates or resolves an incident
+* The subscription form includes a comprehensive country code selector supporting 150+ countries/regions
+* SMS subscription requires selecting a phone country code from a dropdown menu
+
+### Discord 状态：API 错误增加事件订阅
+
+* Discord 正在经历 API 错误增加的问题，并提供事件更新订阅服务
+* 用户可以通过电子邮件和/或短信订阅通知
+* 每当事件更新时会发送电子邮件通知
+* 仅在 Discord 创建或解决事件时发送短信通知
+* 订阅表单包含支持 150 多个国家/地区的综合国家代码选择器
+* 短信订阅需要从下拉菜单中选择电话国家代码
+
+**[Read Original / 阅读原文](https://discordstatus.com)**
+
+### AI is Breaking Two Vulnerability Cultures
+
+* **Two conflicting security approaches**: "Coordinated disclosure" (private reporting with 90-day embargo) vs. "bugs are bugs" (quiet public fixes without highlighting security impact)
+* **Linux networking case study**: Hyunwoo Kim reported Copy Fail vulnerability fix, but someone else spotted the commit and publicly disclosed it within hours, breaking the embargo
+* **AI changes the game**: AI tools now efficiently scan commits and code for vulnerabilities, making both approaches less effective—quiet fixes get noticed faster, and embargoes are independently discovered
+* **Embargoes becoming risky**: In the Copy Fail case, two researchers independently found the ESP vulnerability just 9 hours apart, showing embargoes create false security and limit who can help fix issues
+* **The author's take**: Very short embargoes seem best, getting shorter over time as AI accelerates both attackers and defenders
+* **Proof of concept**: The author tested Gemini, ChatGPT, and Claude on a Linux kernel security patch—all identified it as security-related immediately with full context
+
+### AI 正在打破两种漏洞文化
+
+* **两种冲突的安全方法**："协调披露"(私下报告并设置 90 天禁令期)与"漏洞就是漏洞"(悄悄公开修复而不强调安全影响)
+* **Linux 网络案例研究**：Hyunwoo Kim 报告了 Copy Fail 漏洞修复,但其他人在数小时内发现了该提交并公开披露,打破了禁令
+* **AI 改变游戏规则**：AI 工具现在能高效扫描提交和代码中的漏洞,使两种方法都失效——悄悄的修复更快被发现,禁令期内漏洞被独立发现
+* **禁令变得危险**：在 Copy Fail 案例中,两名研究人员仅相隔 9 小时就独立发现了 ESP 漏洞,表明禁令制造虚假安全感并限制了能帮助修复的人员
+* **作者观点**：极短的禁令期似乎最好,并且随着 AI 加速攻击者和防御者而需要越来越短
+* **概念验证**：作者在 Linux 内核安全补丁上测试了 Gemini、ChatGPT 和 Claude——在完整上下文下,所有模型都立即识别出这是安全相关补丁
+
+**[Read Original / 阅读原文](https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### DFlash - Block Diffusion for Flash Speculative Decoding
+
+* **What it does**: DFlash is a lightweight block diffusion model that accelerates large language model (LLM) inference through speculative decoding. It generates multiple draft tokens in parallel, which are then verified by the target model, significantly speeding up text generation without sacrificing quality.
+
+* **Key features**: Supports 20+ popular models including Qwen, Gemma-4, Llama-3.1, and DeepSeek; integrates with major inference backends (vLLM, SGLang, Transformers, MLX for Apple Silicon); achieves substantial speedups through parallel token drafting; provides pre-trained draft models ready to use; includes comprehensive benchmarking tools across multiple datasets.
+
+* **Why it's notable**: Trending with 388 stars today because it offers a practical, production-ready solution to accelerate LLM inference across diverse models and hardware. The approach is particularly valuable as it maintains output quality while dramatically reducing latency—a critical need as LLMs grow larger and more expensive to serve. The broad model support and multi-backend compatibility make it immediately useful for real-world deployments.
+
+---
+
+### DFlash - 用于快速推测解码的块扩散模型
+
+* **功能介绍**: DFlash 是一个轻量级的块扩散模型,通过推测解码技术加速大语言模型(LLM)推理。它并行生成多个草稿 token,然后由目标模型验证,在不牺牲质量的前提下显著提升文本生成速度。
+
+* **主要特点**: 支持 20 多个主流模型,包括 Qwen、Gemma-4、Llama-3.1 和 DeepSeek;集成主流推理后端(vLLM、SGLang、Transformers、MLX 苹果芯片);通过并行 token 草稿实现大幅加速;提供开箱即用的预训练草稿模型;包含跨多个数据集的完整基准测试工具。
+
+* **为何值得关注**: 今日获得 388 星标,因为它为跨多种模型和硬件加速 LLM 推理提供了实用的生产级解决方案。该方法在保持输出质量的同时大幅降低延迟,这对于日益庞大和昂贵的 LLM 服务至关重要。广泛的模型支持和多后端兼容性使其可立即应用于实际部署场景。
+
+**[View Repository / 查看仓库](https://github.com/z-lab/dflash)**
+
+### 9Router - Unlimited FREE AI Coding Router with Auto-Fallback & Token Optimization
+
+* **What it does**: Acts as a smart proxy/router that connects AI coding tools (Claude Code, Cursor, Cline, Copilot, etc.) to 40+ AI providers and 100+ models, with automatic fallback from paid subscriptions to cheap to free providers when quotas are exhausted.
+
+* **Key features**: 
+  - **RTK Token Saver** automatically compresses tool output content, reducing token usage by 20-40% per request
+  - **Multi-tier auto-fallback** system (Subscription → Cheap → Free) ensures zero downtime
+  - **Universal compatibility** with all major AI coding tools through OpenAI-compatible API endpoint
+  - **Multi-account round-robin** to maximize quota usage across providers
+  - **OAuth integration** for premium providers (Claude Code, Codex, GitHub Copilot, Antigravity)
+  - **Free provider support** including Kiro AI (unlimited Claude), OpenCode Free, and Google Vertex AI ($300 credits)
+
+* **Why it's notable**: Solves the expensive and frustrating problem of hitting rate limits and wasting subscription quotas during coding sessions. With 1,028 stars today, it's trending because it enables developers to code continuously without interruption while dramatically reducing AI API costs through intelligent routing and token compression. The tool maximizes value from existing subscriptions while providing seamless fallback to free alternatives.
+
+---
+
+### 9Router - 无限免费 AI 编码路由器，支持自动降级和令牌优化
+
+* **功能介绍**: 作为智能代理/路由器，将 AI 编码工具(Claude Code、Cursor、Cline、Copilot 等)连接到 40 多个 AI 提供商和 100 多个模型，当配额耗尽时自动从付费订阅降级到廉价再到免费提供商。
+
+* **主要特点**:
+  - **RTK 令牌节省器**自动压缩工具输出内容,每次请求减少 20-40% 的令牌使用
+  - **多层自动降级**系统(订阅 → 廉价 → 免费)确保零停机时间
+  - **通用兼容性**,通过 OpenAI 兼容的 API 端点支持所有主流 AI 编码工具
+  - **多账户轮询**,最大化利用各提供商的配额
+  - **OAuth 集成**支持高级提供商(Claude Code、Codex、GitHub Copilot、Antigravity)
+  - **免费提供商支持**,包括 Kiro AI(无限 Claude)、OpenCode Free 和 Google Vertex AI(300 美元额度)
+
+* **为何值得关注**: 解决了编码过程中遇到速率限制和浪费订阅配额的昂贵且令人沮丧的问题。今日获得 1,028 星标,因其能让开发者持续编码而不中断,同时通过智能路由和令牌压缩大幅降低 AI API 成本而受到关注。该工具最大化现有订阅的价值,同时提供无缝降级到免费替代方案的能力。
+
+**[View Repository / 查看仓库](https://github.com/decolua/9router)**
+
+### deepclaude - Use Claude Code's Agent Loop with DeepSeek V4 Pro at 17x Lower Cost
+
+* **What it does**: Replaces Claude Code's backend with DeepSeek V4 Pro, OpenRouter, or other Anthropic-compatible APIs while preserving the full autonomous coding agent experience (file editing, bash execution, git operations, multi-step loops)
+* **Key features**: Drop-in replacement requiring only environment variables; supports live backend switching mid-session via slash commands; includes cost tracking proxy showing 60-90% savings; works with remote control mode for browser-based access; automatic context caching on DeepSeek reduces repeat-turn costs by 120x
+* **Why it's notable**: Delivers Claude Code's premium autonomous agent capabilities ($200/month subscription) at $0.87/M output tokens via DeepSeek V4 Pro (96.4% LiveCodeBench score), making advanced AI coding assistance accessible without usage caps or subscription fees
+
+---
+
+### deepclaude - 以 17 倍低成本使用 Claude Code 的自主代理循环
+
+* **功能介绍**: 将 Claude Code 的后端替换为 DeepSeek V4 Pro、OpenRouter 或其他兼容 Anthropic 的 API,同时保留完整的自主编码代理体验(文件编辑、bash 执行、git 操作、多步骤循环)
+* **主要特点**: 仅需设置环境变量即可替换;支持会话中通过斜杠命令实时切换后端;内置成本追踪代理显示 60-90% 的费用节省;支持远程控制模式实现浏览器访问;DeepSeek 的自动上下文缓存使重复轮次成本降低 120 倍
+* **为何值得关注**: 以 $0.87/百万输出 token 的价格通过 DeepSeek V4 Pro(LiveCodeBench 得分 96.4%)提供 Claude Code 的高级自主代理能力(原价 $200/月订阅),让先进的 AI 编码辅助无需订阅费用和使用上限即可获得
+
+**[View Repository / 查看仓库](https://github.com/aattaran/deepclaude)**
+
+### Mirage - A Unified Virtual Filesystem For AI Agents
+
+* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
+
+* **Key features**: 
+  - Mounts 20+ resources (cloud storage, collaboration tools, databases, messaging platforms) under one filesystem tree
+  - Agents use standard bash tools (grep, cat, cp, wc) across all services with zero new vocabulary
+  - Built-in two-layer caching (index + file) with RAM and Redis backends
+  - Portable workspaces that can be cloned, snapshotted, and versioned
+  - Native SDKs for Python and TypeScript, embeddable in FastAPI, Express, or browser apps
+  - Integrates with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
+  - Custom command registration with resource-specific overrides
+
+* **Why it's notable**: Solves the complexity problem of AI agents needing to learn N different SDKs by leveraging the filesystem abstraction LLMs are already trained on. With 1,394 stars, it's gaining traction as a practical solution for building agents that work across multiple services without API-specific training, making agent development significantly simpler and more composable.
+
+---
+
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,无需学习多个 API。
+
+* **主要特点**:
+  - 将 20 多种资源(云存储、协作工具、数据库、消息平台)挂载到单一文件系统树下
+  - 智能体可在所有服务中使用标准 bash 工具(grep、cat、cp、wc),无需学习新语法
+  - 内置双层缓存机制(索引 + 文件),支持 RAM 和 Redis 后端
+  - 可移植工作空间,支持克隆、快照和版本控制
+  - 提供 Python 和 TypeScript 原生 SDK,可嵌入 FastAPI、Express 或浏览器应用
+  - 集成主流智能体框架(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 支持自定义命令注册和资源特定覆盖
+
+* **为何值得关注**: 通过利用 LLM 已经训练过的文件系统抽象,解决了 AI 智能体需要学习 N 个不同 SDK 的复杂性问题。拥有 1,394 星标,正成为构建跨多服务智能体的实用解决方案,无需针对特定 API 进行训练,大幅简化智能体开发并提升可组合性。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+
+### 🎬 Why Humans Didn't Farm 50,000 Years Ago - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Explores why anatomically modern humans existed for tens of thousands of years before developing agriculture, examining the biological, environmental, and cognitive factors that delayed the agricultural revolution
+* Key topics discussed: Human evolutionary history, the transition from hunter-gatherer to agricultural societies, genetic and archaeological evidence for behavioral modernity, environmental conditions necessary for farming, and what changed around 10,000-12,000 years ago to enable agriculture
+* Why it's worth watching: David Reich is a leading geneticist and expert on ancient DNA; this conversation offers deep insights into human prehistory, challenging assumptions about why major civilizational shifts occurred when they did, and what it reveals about human nature and capability
+
+### 🎬 为什么人类在5万年前没有发展农业 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨为什么解剖学意义上的现代人类存在了数万年才发展出农业,分析延迟农业革命的生物学、环境和认知因素
+* 主要话题: 人类进化史、从狩猎采集到农业社会的转变、行为现代性的遗传学和考古学证据、农业所需的环境条件,以及约1万至1.2万年前发生了什么变化使农业成为可能
+* 为何值得观看: David Reich是古代DNA领域的顶尖遗传学家;这次对话深入探讨人类史前史,挑战关于重大文明转变发生时机的假设,揭示人类本质和能力的深层含义
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2IqCkJOLekc)**
+
+### 🎬 Where Does 90GB Go When You ZIP a File? 😳 #GTA5 #howtechworks #zip #tech #info #compress #shorts
+**Channel:** Tanmay Tiwari
+
+* What the video covers: Explains the mechanics behind ZIP file compression and why large files (like GTA 5's 90GB) become significantly smaller
+* Key topics discussed: How ZIP compression stores data more efficiently by identifying and eliminating redundant patterns rather than making data "disappear"
+* Why it's worth watching: A quick, accessible explanation of a common tech phenomenon that most people use daily but don't fully understand—perfect for demystifying file compression in under a minute
+
+---
+
+### 🎬 压缩文件时90GB去哪了？😳
+**频道:** Tanmay Tiwari
+
+* 视频内容概述: 解释ZIP文件压缩的工作原理，以及为什么大型文件（如GTA 5的90GB）会变得明显更小
+* 主要话题: ZIP压缩如何通过识别和消除冗余模式来更高效地存储数据，而不是让数据"消失"
+* 为何值得观看: 用不到一分钟的时间快速、易懂地解释了一个人们每天都在使用但并不完全理解的常见技术现象——非常适合揭开文件压缩的神秘面纱
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cYbaUKVGrlc)**
+
+### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
+**Channel:** Richo | AI Tips 🤖
+
+* What the video covers: An introduction to BLACKBOX AI as a coding assistant tool
+* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
+* Why it's worth watching: Useful for developers looking to leverage AI tools to enhance their coding workflow and learn more efficiently; part of a community-focused channel offering regular coding tips
+
+### 🎬 订阅获取更多编程技巧!⬆️
+**频道:** Richo | AI Tips 🤖
+
+* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
+* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助功能提升编程技能
+* 为何值得观看: 适合希望利用 AI 工具优化编程工作流程并更高效学习的开发者;该频道以社区为导向,定期提供编程技巧
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=scpgat-xaZQ)**
+
+### 🎬 3D Print custom LEGO-like bricks with ZERO experience
+
+**Channel:** printpal
+
+* What the video covers: A beginner-friendly guide to 3D printing custom LEGO-compatible bricks without prior experience
+* Key topics discussed: 3D printing basics for beginners, creating LEGO-style building blocks, accessible entry into 3D printing hobby
+* Why it's worth watching: Perfect for newcomers interested in 3D printing who want a practical, fun first project; demonstrates how accessible modern 3D printing has become; combines popular LEGO building with maker culture
+
+---
+
+### 🎬 零基础3D打印定制乐高积木
+
+**频道:** printpal
+
+* 视频内容概述: 面向初学者的3D打印教程，教你在没有任何经验的情况下制作兼容乐高的定制积木
+* 主要话题: 3D打印入门基础、制作乐高风格积木块、轻松进入3D打印爱好领域
+* 为何值得观看: 非常适合对3D打印感兴趣的新手，提供实用且有趣的首个项目；展示了现代3D打印技术的易用性；将流行的乐高拼搭与创客文化完美结合
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=hnc8F7tGlEE)**
 
