@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 08, 2026"
 date: 2026-05-08
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，9个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -526,72 +526,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### Mirage - AI 智能体的统一虚拟文件系统
-
-* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
-
-* **主要特点**:
-  - 将多种资源(云存储、数据库、通信平台、SaaS 工具)挂载到单一文件系统树下
-  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
-  - 双层缓存系统(索引 + 文件缓存),支持 RAM 和 Redis 后端
-  - 可克隆、快照和版本化的便携式工作空间
-  - 与主流智能体框架原生集成(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
-  - 提供 Python 和 TypeScript SDK,以及用于直接智能体集成的 CLI
-
-* **为何值得关注**: Mirage 解决了 AI 智能体开发中的关键问题——无需让智能体学习数十个不同的 API。相反,智能体利用 LLM 已经大量训练过的 bash/Unix 词汇,可以立即在任何后端上高效工作。能够像操作本地文件一样跨服务组合管道命令(`grep alert /slack/general/*.json | wc -l`)极大简化了多服务工作流,并减少了智能体交互中的 token 开销。
-
-**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
-
-### Canvas Learning Platform Suffers Major Data Breach and Outage
-
-* **Platform Down**: Canvas, owned by Instructure, is currently in maintenance mode after a massive data breach affecting student names, email addresses, ID numbers, and messages
-* **Hacker Group Claims Responsibility**: ShinyHunters posted a ransom message on the platform, claiming they breached Instructure again after the company ignored their initial contact and only applied "security patches"
-* **Ransom Deadline**: The hacking group is demanding schools negotiate settlements through cyber advisory firms by May 12, 2026, or they will leak all stolen data
-* **Massive Scale**: ShinyHunters claims their data leak site contains information from 9,000 schools, affecting approximately 275 million students, teachers, and staff members
-* **Notorious Threat Actor**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
-* **Company Response**: Instructure deployed security patches last week and has placed Canvas systems in maintenance mode, promising updates soon
-
-### Canvas 学习平台遭遇重大数据泄露和系统中断
-
-* **平台宕机**: Instructure 旗下的 Canvas 学习管理平台目前处于维护模式，此前发生大规模数据泄露，涉及学生姓名、电子邮件地址、ID 号码和消息内容
-* **黑客组织声称负责**: ShinyHunters 在平台上发布勒索信息，声称他们再次入侵 Instructure，因为该公司忽视了他们的初次联系，仅进行了"安全补丁"修复
-* **勒索截止日期**: 该黑客组织要求各学校通过网络安全咨询公司在 2026 年 5 月 12 日前进行谈判和解，否则将泄露所有被盗数据
-* **影响规模巨大**: ShinyHunters 声称其数据泄露网站包含 9,000 所学校的信息，影响约 2.75 亿名学生、教师和工作人员
-* **臭名昭著的威胁行为者**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高知名度攻击事件负责
-* **公司回应**: Instructure 上周部署了安全补丁，目前已将 Canvas 系统置于维护模式，承诺尽快提供更新信息
-
-**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
-
-<!-- [Title-Only] -->
-### Maybe you shouldn't install new software for a bit
-
-* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
-* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate necessity before adding new dependencies or tools
-* Could be particularly relevant given ongoing concerns about software supply chain security, malicious packages, or the recent trend of compromised open-source projects
-* Why it might be interesting: Offers practical security advice in an era where software dependencies and third-party tools can introduce significant risks
-
-### 也许你应该暂时不要安装新软件
-
-* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
-* 文章可能倡导对软件安装采取谨慎态度，建议读者在添加新的依赖项或工具之前暂停并评估必要性
-* 可能特别关注软件供应链安全问题、恶意软件包或近期开源项目被攻陷的趋势
-* 为何值得关注：在第三方工具和软件依赖可能带来重大风险的时代，提供实用的安全建议
-
-**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
-
-<!-- [Title-Only] -->
-### Cloudflare to cut about 20% workforce
-
-* Based on the title, this article likely covers Cloudflare's announcement of significant workforce reductions, affecting approximately 20% of its employees (over 1,100 jobs according to the URL). The piece probably discusses the reasons behind this decision, such as economic pressures, restructuring efforts, or strategic shifts in the company's direction.
-* This is significant for readers because Cloudflare is a major internet infrastructure and security company that powers a substantial portion of the web. Large-scale layoffs at such a prominent tech company often signal broader industry trends, economic challenges, or shifts in the tech sector's growth trajectory. It may also impact the services millions of websites and applications depend on.
-
-### Cloudflare 将裁员约 20%
-
-* 根据标题推测，这篇文章可能报道了 Cloudflare 宣布大规模裁员的消息，影响约 20% 的员工（根据 URL 显示超过 1,100 个职位）。文章可能讨论了这一决定背后的原因，例如经济压力、重组计划或公司战略方向的调整。
-* 这对读者来说很重要，因为 Cloudflare 是一家为大量网站提供基础设施和安全服务的主要互联网公司。如此知名的科技公司进行大规模裁员往往预示着更广泛的行业趋势、经济挑战或科技行业增长轨迹的转变。这也可能影响数百万依赖其服务的网站和应用程序。
-
----
-
 *Note: This summary is based solely on the article title, as the full content could not be accessed.*
 
 *注：此摘要仅基于文章标题，因为无法获取完整内容。*
@@ -663,4 +597,147 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=DpO8t_e5yEk)**
+
+### Canvas Learning Platform Suffers Major Data Breach and Outage
+
+* **Platform Down**: Canvas, owned by Instructure, is currently in maintenance mode after a massive data breach affecting student names, email addresses, ID numbers, and messages
+* **ShinyHunters Claims Responsibility**: The notorious hacking group displayed a ransom message to students, claiming Instructure ignored their initial contact and only applied "security patches"
+* **Massive Scale**: The breach allegedly affects 9,000 schools and data belonging to 275 million students, teachers, and staff members
+* **Ransom Deadline**: ShinyHunters set a deadline of May 12, 2026, threatening to leak all stolen data unless affected schools negotiate settlements
+* **Repeat Offender**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
+* **Response**: Instructure deployed security patches last week and placed Canvas systems in maintenance mode, promising updates soon
+
+### Canvas 学习平台遭遇重大数据泄露和系统中断
+
+* **平台宕机**: Instructure 旗下的 Canvas 学习管理平台目前处于维护模式,此前发生大规模数据泄露,涉及学生姓名、电子邮件地址、ID 号码和消息内容
+* **ShinyHunters 声称负责**: 这个臭名昭著的黑客组织向学生显示勒索信息,声称 Instructure 忽视了他们的初次联系,仅进行了"安全补丁"修复
+* **影响规模巨大**: 据称此次泄露影响 9,000 所学校,涉及 2.75 亿学生、教师和教职员工的数据
+* **勒索最后期限**: ShinyHunters 设定了 2026 年 5 月 12 日的最后期限,威胁如果受影响学校不进行谈判和解,将泄露所有被盗数据
+* **惯犯**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高知名度攻击负责
+* **应对措施**: Instructure 上周部署了安全补丁,并将 Canvas 系统置于维护模式,承诺尽快提供更新
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
+
+<!-- [Title-Only] -->
+### Maybe you shouldn't install new software for a bit
+
+* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
+* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate whether new installations are truly necessary
+* The timing and phrasing suggest this could be related to a specific security event or vulnerability that makes software installation temporarily risky
+* Why it might be interesting: Offers practical security advice and raises awareness about software supply chain risks, helping readers make informed decisions about when to install or update software
+
+### 也许你暂时不应该安装新软件
+
+* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
+* 文章可能倡导对软件安装采取谨慎态度，建议读者暂停并评估新安装是否真正必要
+* 标题的时机和措辞暗示这可能与某个特定的安全事件或漏洞有关，使得软件安装暂时存在风险
+* 为何值得关注：提供实用的安全建议，提高对软件供应链风险的认识，帮助读者就何时安装或更新软件做出明智决策
+
+**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
+
+### ClojureScript 1.12.145 Release: Native Async/Await Support
+
+* **Native async function support**: ClojureScript now compiles functions marked with `^:async` hint into JavaScript async functions, eliminating the need for external dependencies
+* **ES2016 foundation**: This enhancement builds on ClojureScript's recent move to target ECMAScript 2016, enabling better JavaScript interop
+* **Await syntax**: Developers can use `await` directly within async functions to handle Promises, with support for nested async operations
+* **Test framework integration**: The `^:async` hint works seamlessly with `deftest`, allowing asynchronous test cases with try-catch error handling
+* **Community-driven feature**: Async function support was the most requested ClojureScript enhancement in the last Clojure survey
+* **Modern API compatibility**: Simplifies interaction with modern Browser APIs and popular JavaScript libraries that rely on Promises
+
+### ClojureScript 1.12.145 版本发布：原生异步/等待支持
+
+* **原生异步函数支持**：ClojureScript 现在可以将标记为 `^:async` 的函数编译为 JavaScript 异步函数，无需额外依赖
+* **ES2016 基础**：此增强功能基于 ClojureScript 最近迁移到 ECMAScript 2016 目标，实现更好的 JavaScript 互操作
+* **等待语法**：开发者可以在异步函数中直接使用 `await` 处理 Promise，支持嵌套异步操作
+* **测试框架集成**：`^:async` 提示可与 `deftest` 无缝配合，支持带有 try-catch 错误处理的异步测试用例
+* **社区驱动功能**：异步函数支持是上次 Clojure 调查中最受欢迎的 ClojureScript 增强功能
+* **现代 API 兼容性**：简化了与依赖 Promise 的现代浏览器 API 和流行 JavaScript 库的交互
+
+**[Read Original / 阅读原文](https://clojurescript.org/news/2026-05-07-release)**
+
+### ds4.c - DeepSeek V4 Flash Native Inference Engine for Metal
+
+* **What it does**: A specialized, Metal-optimized inference engine built exclusively for running DeepSeek V4 Flash locally on Apple Silicon Macs. Unlike generic GGUF runners, it's a purpose-built engine with DS4-specific loading, prompt rendering, and KV state management.
+
+* **Key features**: 
+  - Runs on 128GB+ MacBooks with 2-bit quantization (q2) or 256GB+ machines with 4-bit (q4)
+  - Supports 1 million token context window with disk-based KV cache persistence
+  - Achieves 26-36 t/s generation speed on M3 Max/Ultra hardware
+  - OpenAI/Anthropic-compatible HTTP server with tool calling support
+  - Interactive CLI with multi-turn chat and thinking modes
+  - Validated against official DeepSeek logits for correctness
+
+* **Why it's notable**: Takes a deliberately narrow approach—one model done right rather than supporting everything. DeepSeek V4 Flash offers frontier-model quality with fewer active parameters, proportional thinking length (1/5 of other models), and highly compressed KV cache. The project treats KV cache as a disk-first citizen, enabling long-context inference on consumer hardware. Built with GPT assistance and heavily inspired by llama.cpp/GGML. Provides end-to-end solution: engine + specially crafted GGUFs + agent testing.
+
+---
+
+### ds4.c - DeepSeek V4 Flash Metal 本地推理引擎
+
+* **功能介绍**: 专为在 Apple Silicon Mac 上本地运行 DeepSeek V4 Flash 而构建的 Metal 优化推理引擎。不同于通用 GGUF 运行器,这是一个专用引擎,包含 DS4 特定的加载、提示渲染和 KV 状态管理。
+
+* **主要特点**:
+  - 支持 128GB+ MacBook(2-bit 量化)或 256GB+ 机器(4-bit 量化)运行
+  - 支持 100 万 token 上下文窗口,KV 缓存可持久化到磁盘
+  - 在 M3 Max/Ultra 硬件上实现 26-36 t/s 生成速度
+  - 兼容 OpenAI/Anthropic 的 HTTP 服务器,支持工具调用
+  - 交互式 CLI,支持多轮对话和思考模式
+  - 针对官方 DeepSeek logits 验证正确性
+
+* **为何值得关注**: 采用刻意聚焦的策略——把一个模型做到极致,而非支持所有模型。DeepSeek V4 Flash 以更少的活跃参数提供前沿模型质量,思考长度与问题复杂度成正比(仅为其他模型的 1/5),KV 缓存高度压缩。项目将 KV 缓存视为磁盘优先资源,使消费级硬件能够进行长上下文推理。借助 GPT 辅助开发,深受 llama.cpp/GGML 启发。提供端到端解决方案:引擎 + 特制 GGUF + 智能体测试。
+
+**[View Repository / 查看仓库](https://github.com/antirez/ds4)**
+
+### Mirage - A Unified Virtual Filesystem For AI Agents
+
+* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
+
+* **Key features**: 
+  - Mounts 20+ resources (cloud storage, collaboration tools, databases, messaging platforms) under one filesystem tree
+  - Agents use standard bash tools (grep, cat, cp, wc) across all services with zero new vocabulary
+  - Built-in two-layer caching (index + file) with RAM and Redis backends
+  - Portable workspaces that can be cloned, snapshotted, and versioned
+  - Python and TypeScript SDKs for embedding in applications
+  - Integrates with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
+  - Custom command registration with resource-specific overrides
+
+* **Why it's notable**: Solves the complexity problem of AI agents needing to learn N different SDKs by providing a single abstraction layer that leverages the filesystem and bash vocabulary LLMs are already trained on. With 1,189 stars, it's gaining traction as a practical solution for building AI agents that need to work across multiple services seamlessly, reducing context switching and API learning overhead.
+
+---
+
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,无需学习多个 API。
+
+* **主要特点**:
+  - 将 20 多种资源(云存储、协作工具、数据库、消息平台)挂载到单一文件系统树下
+  - 智能体可在所有服务中使用标准 bash 工具(grep、cat、cp、wc),无需学习新语法
+  - 内置双层缓存机制(索引 + 文件),支持 RAM 和 Redis 后端
+  - 可移植的工作空间,支持克隆、快照和版本控制
+  - 提供 Python 和 TypeScript SDK,可嵌入应用程序
+  - 集成主流智能体框架(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 支持自定义命令注册和资源特定覆盖
+
+* **为何值得关注**: 通过提供单一抽象层解决了 AI 智能体需要学习 N 个不同 SDK 的复杂性问题,充分利用 LLM 已经训练过的文件系统和 bash 词汇。获得 1,189 星标,作为构建需要跨多个服务无缝工作的 AI 智能体的实用解决方案正在获得关注,显著减少了上下文切换和 API 学习开销。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+
+### 🎬 Startup School Paris
+
+**Channel:** Y Combinator
+
+* What the video covers: Y Combinator's Startup School event held in Paris, featuring talks and insights from successful startup founders
+* Key topics discussed: Entrepreneurship lessons from founders like Alexandre Lebrun (AMI), Olivier Pomel (Datadog), Paul and other startup leaders; building and scaling startups; navigating the European tech ecosystem
+* Why it's worth watching: Rare opportunity to hear directly from YC-backed founders who have built successful companies, offering practical advice and real-world experiences for aspiring entrepreneurs in the European market
+
+---
+
+### 🎬 巴黎创业学校
+
+**频道:** Y Combinator
+
+* 视频内容概述: Y Combinator 在巴黎举办的创业学校活动,汇集成功创业者的演讲和见解
+* 主要话题: Alexandre Lebrun (AMI)、Olivier Pomel (Datadog)、Paul 等创业领袖分享的创业经验;如何建立和扩展初创公司;欧洲科技生态系统的发展策略
+* 为何值得观看: 难得机会直接聆听 YC 支持的成功创业者分享实战经验,为欧洲市场的创业者提供实用建议和真实案例
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FHAaGxvGii4)**
 
