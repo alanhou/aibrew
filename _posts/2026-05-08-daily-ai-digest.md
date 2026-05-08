@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 08, 2026"
 date: 2026-05-08
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -550,4 +550,88 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望利用 AI 工具增强编程工作流程并加入技能提升社区的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=scpgat-xaZQ)**
+
+### Canvas Learning Platform Suffers Major Data Breach and Outage
+
+* **Platform Down**: Instructure's Canvas learning management system is currently in maintenance mode after a major security incident
+* **ShinyHunters Attack**: Hacking group ShinyHunters claims responsibility and posted ransom demands directly on Canvas, threatening to leak school data by May 12, 2026
+* **Massive Scale**: Hackers claim to have breached 9,000 schools affecting 275 million students, teachers, and staff members
+* **Data Compromised**: Breach exposed student names, email addresses, ID numbers, and private messages
+* **Repeat Breach**: ShinyHunters states this is their second breach of Instructure, claiming the company ignored their initial contact and only applied "security patches"
+* **Notorious Group**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
+* **Ransom Demand**: The group is demanding schools contact them through TOX to negotiate settlements to prevent data release
+
+### Canvas 学习平台遭遇重大数据泄露和系统中断
+
+* **平台宕机**: Instructure 旗下的 Canvas 学习管理系统在重大安全事件后目前处于维护模式
+* **ShinyHunters 攻击**: 黑客组织 ShinyHunters 声称对此负责,并直接在 Canvas 上发布勒索要求,威胁在 2026 年 5 月 12 日前泄露学校数据
+* **规模巨大**: 黑客声称已入侵 9,000 所学校,影响 2.75 亿名学生、教师和工作人员
+* **数据泄露**: 泄露内容包括学生姓名、电子邮件地址、ID 号码和私人消息
+* **重复入侵**: ShinyHunters 表示这是他们第二次入侵 Instructure,声称该公司忽视了他们的初次联系,仅进行了"安全补丁"修复
+* **臭名昭著**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高调攻击负责
+* **勒索要求**: 该组织要求学校通过 TOX 联系他们协商和解,以防止数据公开
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
+
+<!-- [Title-Only] -->
+### Maybe you shouldn't install new software for a bit
+
+* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
+* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate whether new installations are truly necessary
+* The timing and phrasing suggest this could be related to a specific security event or vulnerability that makes software installation temporarily risky
+* Why it might be interesting: Offers practical security advice and raises awareness about software supply chain risks, helping readers make informed decisions about when to install or update software
+
+### 也许你暂时不应该安装新软件
+
+* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
+* 文章可能倡导对软件安装采取谨慎态度，建议读者暂停并评估新安装是否真正必要
+* 标题的时机和措辞暗示这可能与某个特定的安全事件或漏洞有关，使得软件安装暂时存在风险
+* 为何值得关注：提供实用的安全建议，提高对软件供应链风险的认识，帮助读者就何时安装或更新软件做出明智决策
+
+**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
+
+<!-- [Title-Only] -->
+### The Disappearance of the Public Bench
+
+* Based on the title, this article likely examines the decline of public seating in urban spaces and explores the social, political, and design factors behind this trend. It probably discusses how public benches have been removed or redesigned (often with hostile architecture) to discourage loitering, and what this means for accessibility, community, and the right to public space.
+* Why it might be interesting to readers: This topic touches on urban design philosophy, social equity, and how cities balance competing interests. The removal of public benches reflects broader tensions around who belongs in public spaces, how we treat homelessness, and whether cities prioritize commerce and aesthetics over inclusivity and rest. It's a tangible example of how design choices shape daily life and social dynamics.
+
+### 公共长椅的消失
+
+* 根据标题推测，这篇文章可能探讨城市公共空间中座椅减少的现象，分析这一趋势背后的社会、政治和设计因素。文章很可能讨论公共长椅如何被移除或重新设计（通常采用"敌意建筑"手法）以阻止闲坐，以及这对可达性、社区和公共空间权利意味着什么。
+* 为何值得关注：这个话题涉及城市设计理念、社会公平，以及城市如何平衡不同利益群体的需求。公共长椅的移除反映了关于谁有权使用公共空间、如何对待无家可归者、以及城市是否优先考虑商业和美观而非包容性和休憩权等更广泛的矛盾。这是一个具体的例子，说明设计选择如何塑造日常生活和社会动态。
+
+**[Read Original / 阅读原文](https://placesjournal.org/article/the-disappearance-of-the-public-bench/)**
+
+### Mirage - A Unified Virtual Filesystem For AI Agents
+
+* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
+
+* **Key features**: 
+  - Mount multiple resources (cloud storage, databases, communication platforms, SaaS tools) under one filesystem tree
+  - Use standard bash commands (`grep`, `cat`, `cp`, `wc`) across all mounted services
+  - Two-layer caching system (index + file cache) with RAM and Redis backends
+  - Portable workspaces that can be cloned, snapshotted, and versioned
+  - Native integrations with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
+  - Available as Python and TypeScript SDKs, plus a CLI for direct agent integration
+
+* **Why it's notable**: Mirage solves a critical problem in AI agent development by eliminating the need for agents to learn dozens of different APIs. Instead, agents leverage the bash/Unix vocabulary that LLMs are already heavily trained on, making them immediately productive across any backend. The ability to compose pipelines across services as naturally as local files (`grep alert /slack/general/*.json | wc -l`) dramatically simplifies multi-service workflows and reduces token overhead in agent interactions.
+
+---
+
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
+
+* **主要特点**:
+  - 将多种资源(云存储、数据库、通信平台、SaaS 工具)挂载到单一文件系统树下
+  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
+  - 双层缓存系统(索引 + 文件缓存),支持 RAM 和 Redis 后端
+  - 可克隆、快照和版本化的便携式工作空间
+  - 与主流智能体框架原生集成(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 提供 Python 和 TypeScript SDK,以及用于直接智能体集成的 CLI
+
+* **为何值得关注**: Mirage 解决了 AI 智能体开发中的关键问题——无需让智能体学习数十个不同的 API。相反,智能体利用 LLM 已经大量训练过的 bash/Unix 词汇,可以立即在任何后端上高效工作。能够像操作本地文件一样跨服务组合管道命令(`grep alert /slack/general/*.json | wc -l`)极大简化了多服务工作流,并减少了智能体交互中的 token 开销。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
 
