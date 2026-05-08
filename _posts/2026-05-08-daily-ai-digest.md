@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 08, 2026"
 date: 2026-05-08
-description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，9个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，11个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -556,121 +556,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 压缩文件时90GB去哪了？😳
-
-**频道:** Tanmay Tiwari
-
-* 视频内容概述: 解释ZIP文件压缩的工作原理，以及压缩大型文件（如GTA5）时那些"消失"的GB实际去了哪里
-* 主要话题: 数据压缩原理、ZIP算法如何在不删除数据的情况下更高效地存储数据、减小文件大小背后的科学原理
-* 为何值得观看: 揭秘了一个大多数人每天都在使用却不理解的常见技术现象——非常适合对压缩原理感到好奇的观众
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cYbaUKVGrlc)**
-
-### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
-**Channel:** Richo | AI Tips 🤖
-
-* What the video covers: Introduction to BLACKBOX AI as a coding assistance tool
-* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered features
-* Why it's worth watching: Useful for developers looking to leverage AI tools to enhance their coding workflow and join a community focused on skill development
-
-### 🎬 订阅获取更多编程技巧!⬆️
-**频道:** Richo | AI Tips 🤖
-
-* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
-* 主要话题: BLACKBOX AI 如何帮助释放编程潜力,通过 AI 驱动的功能提升编程技能
-* 为何值得观看: 适合希望利用 AI 工具增强编程工作流程并加入技能提升社区的开发者
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=scpgat-xaZQ)**
-
-### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
-**Channel:** Sisca | Tips AI 🪄
-
-* What the video covers: An introduction to BLACKBOX AI as a coding assistant tool
-* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
-* Why it's worth watching: Useful for developers looking to enhance their coding workflow with AI tools and join a community focused on skill development
-
-### 🎬 订阅获取更多编程技巧!⬆️
-**频道:** Sisca | Tips AI 🪄
-
-* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
-* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助提升编程技能
-* 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DpO8t_e5yEk)**
-
-### Canvas Learning Platform Suffers Major Data Breach and Outage
-
-* **Platform Down**: Canvas, owned by Instructure, is currently in maintenance mode after a massive data breach affecting student names, email addresses, ID numbers, and messages
-* **ShinyHunters Claims Responsibility**: The notorious hacking group displayed a ransom message to students, claiming Instructure ignored their initial contact and only applied "security patches"
-* **Massive Scale**: The breach allegedly affects 9,000 schools and data belonging to 275 million students, teachers, and staff members
-* **Ransom Deadline**: ShinyHunters set a deadline of May 12, 2026, threatening to leak all stolen data unless affected schools negotiate settlements
-* **Repeat Offender**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
-* **Response**: Instructure deployed security patches last week and placed Canvas systems in maintenance mode, promising updates soon
-
-### Canvas 学习平台遭遇重大数据泄露和系统中断
-
-* **平台宕机**: Instructure 旗下的 Canvas 学习管理平台目前处于维护模式,此前发生大规模数据泄露,涉及学生姓名、电子邮件地址、ID 号码和消息内容
-* **ShinyHunters 声称负责**: 这个臭名昭著的黑客组织向学生显示勒索信息,声称 Instructure 忽视了他们的初次联系,仅进行了"安全补丁"修复
-* **影响规模巨大**: 据称此次泄露影响 9,000 所学校,涉及 2.75 亿学生、教师和教职员工的数据
-* **勒索最后期限**: ShinyHunters 设定了 2026 年 5 月 12 日的最后期限,威胁如果受影响学校不进行谈判和解,将泄露所有被盗数据
-* **惯犯**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高知名度攻击负责
-* **应对措施**: Instructure 上周部署了安全补丁,并将 Canvas 系统置于维护模式,承诺尽快提供更新
-
-**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
-
-<!-- [Title-Only] -->
-### Maybe you shouldn't install new software for a bit
-
-* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
-* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate whether new installations are truly necessary
-* The timing and phrasing suggest this could be related to a specific security event or vulnerability that makes software installation temporarily risky
-* Why it might be interesting: Offers practical security advice and raises awareness about software supply chain risks, helping readers make informed decisions about when to install or update software
-
-### 也许你暂时不应该安装新软件
-
-* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
-* 文章可能倡导对软件安装采取谨慎态度，建议读者暂停并评估新安装是否真正必要
-* 标题的时机和措辞暗示这可能与某个特定的安全事件或漏洞有关，使得软件安装暂时存在风险
-* 为何值得关注：提供实用的安全建议，提高对软件供应链风险的认识，帮助读者就何时安装或更新软件做出明智决策
-
-**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
-
-### ClojureScript 1.12.145 Release: Native Async/Await Support
-
-* **Native async function support**: ClojureScript now compiles functions marked with `^:async` hint into JavaScript async functions, eliminating the need for external dependencies
-* **ES2016 foundation**: This enhancement builds on ClojureScript's recent move to target ECMAScript 2016, enabling better JavaScript interop
-* **Await syntax**: Developers can use `await` directly within async functions to handle Promises, with support for nested async operations
-* **Test framework integration**: The `^:async` hint works seamlessly with `deftest`, allowing asynchronous test cases with try-catch error handling
-* **Community-driven feature**: Async function support was the most requested ClojureScript enhancement in the last Clojure survey
-* **Modern API compatibility**: Simplifies interaction with modern Browser APIs and popular JavaScript libraries that rely on Promises
-
-### ClojureScript 1.12.145 版本发布：原生异步/等待支持
-
-* **原生异步函数支持**：ClojureScript 现在可以将标记为 `^:async` 的函数编译为 JavaScript 异步函数，无需额外依赖
-* **ES2016 基础**：此增强功能基于 ClojureScript 最近迁移到 ECMAScript 2016 目标，实现更好的 JavaScript 互操作
-* **等待语法**：开发者可以在异步函数中直接使用 `await` 处理 Promise，支持嵌套异步操作
-* **测试框架集成**：`^:async` 提示可与 `deftest` 无缝配合，支持带有 try-catch 错误处理的异步测试用例
-* **社区驱动功能**：异步函数支持是上次 Clojure 调查中最受欢迎的 ClojureScript 增强功能
-* **现代 API 兼容性**：简化了与依赖 Promise 的现代浏览器 API 和流行 JavaScript 库的交互
-
-**[Read Original / 阅读原文](https://clojurescript.org/news/2026-05-07-release)**
-
-### ds4.c - DeepSeek V4 Flash Native Inference Engine for Metal
-
-* **What it does**: A specialized, Metal-optimized inference engine built exclusively for running DeepSeek V4 Flash locally on Apple Silicon Macs. Unlike generic GGUF runners, it's a purpose-built engine with DS4-specific loading, prompt rendering, and KV state management.
-
-* **Key features**: 
-  - Runs on 128GB+ MacBooks with 2-bit quantization (q2) or 256GB+ machines with 4-bit (q4)
-  - Supports 1 million token context window with disk-based KV cache persistence
-  - Achieves 26-36 t/s generation speed on M3 Max/Ultra hardware
-  - OpenAI/Anthropic-compatible HTTP server with tool calling support
-  - Interactive CLI with multi-turn chat and thinking modes
-  - Validated against official DeepSeek logits for correctness
-
-* **Why it's notable**: Takes a deliberately narrow approach—one model done right rather than supporting everything. DeepSeek V4 Flash offers frontier-model quality with fewer active parameters, proportional thinking length (1/5 of other models), and highly compressed KV cache. The project treats KV cache as a disk-first citizen, enabling long-context inference on consumer hardware. Built with GPT assistance and heavily inspired by llama.cpp/GGML. Provides end-to-end solution: engine + specially crafted GGUFs + agent testing.
-
----
-
 ### ds4.c - DeepSeek V4 Flash Metal 本地推理引擎
 
 * **功能介绍**: 专为在 Apple Silicon Mac 上本地运行 DeepSeek V4 Flash 而构建的 Metal 优化推理引擎。不同于通用 GGUF 运行器,这是一个专用引擎,包含 DS4 特定的加载、提示渲染和 KV 状态管理。
@@ -740,4 +625,188 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 难得机会直接聆听 YC 支持的成功创业者分享实战经验,为欧洲市场的创业者提供实用建议和真实案例
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=FHAaGxvGii4)**
+
+### Poland's Economic Transformation: From Communist Rationing to G20 Contender
+
+* **Historic economic leap**: Poland has grown from post-Communist poverty in 1989-90 (rationing sugar/flour, wages 1/10th of West Germany) to become the world's 20th largest economy with over $1 trillion in annual output, surpassing Switzerland
+* **Brain gain reversal**: Skilled professionals like engineer Joanna Kowalska are returning from the US, citing Poland's advancement in areas like AI and quantum computing
+* **Tech infrastructure investment**: Poland is developing its first AI factory integrated with quantum computing, part of an EU program supporting 10 quantum computers across Europe
+* **Growth model recognition**: Economists highlight Poland's transformation as a lesson in bringing prosperity to ordinary citizens; Trump administration advocates for Poland's inclusion in G20 summits
+* **Competitive advantage**: Returnees report Poland is "ahead of the United States in so many areas," reflecting improved quality of life and technological infrastructure
+
+---
+
+### 波兰经济转型：从共产主义配给制到G20竞争者
+
+* **历史性经济飞跃**：波兰从1989-90年的后共产主义贫困（糖和面粉配给制，工资仅为西德的1/10）发展成为全球第20大经济体，年产值超过1万亿美元，超越瑞士
+* **人才回流逆转**：像工程师Joanna Kowalska这样的技术人才从美国回国，认为波兰在人工智能和量子计算等领域更具优势
+* **科技基础设施投资**：波兰正在开发首个与量子计算机集成的人工智能工厂，这是欧盟支持欧洲大陆10台量子计算机项目的一部分
+* **增长模式获认可**：经济学家强调波兰转型是为普通公民带来繁荣的典范；特朗普政府主张波兰应加入G20峰会
+* **竞争优势**：回国人才表示波兰"在许多领域领先于美国"，反映出生活质量和技术基础设施的改善
+
+**[Read Original / 阅读原文](https://apnews.com/article/poland-economy-growth-g20-gdp-26fe06e120398410f8d773ba5661e7aa)**
+
+### Meshtastic: Open-Source Long-Range Off-Grid Communication Platform
+
+* **What it is**: Community-driven project enabling long-range communication using inexpensive LoRa radios in areas without reliable infrastructure
+* **Record range**: 331km ground communication achieved by MartinR7 & alleg
+* **Key features**: No phone required for mesh communication, decentralized network (no dedicated router), encrypted messaging, excellent battery life, optional GPS location tracking
+* **How it works**: Uses LoRa radio protocol (no license required in most regions), radios rebroadcast messages to form mesh network, can pair with phone for direct messaging
+* **Open source**: 100% community-driven with volunteers maintaining codebase on GitHub
+* **Getting started**: Documentation available with community support through Discord server and GitHub Discussions
+
+### Meshtastic：开源长距离离网通信平台
+
+* **项目简介**：社区驱动的开源项目，使用廉价 LoRa 无线电设备在缺乏可靠通信基础设施的地区实现长距离通信
+* **通信距离记录**：MartinR7 和 alleg 创造了 331 公里的地面通信记录
+* **核心功能**：网状通信无需手机、去中心化网络（无需专用路由器）、加密通信、超长电池续航、收发文本消息、可选 GPS 定位功能
+* **工作原理**：采用 LoRa 长距离无线电协议（大多数地区无需许可证），无线电设备转发消息形成网状网络，可与手机配对进行直接消息传递
+* **开源特性**：100% 社区驱动，志愿者在 GitHub 上维护代码库
+* **快速上手**：提供完整文档，通过 Discord 服务器和 GitHub Discussions 获得社区支持
+
+**[Read Original / 阅读原文](https://meshtastic.org/docs/introduction/)**
+
+### Canvas Learning Platform Restored After ShinyHunters Data Breach and Ransom Threat
+
+* **Service Disruption**: Canvas, owned by Instructure, went offline after hackers displayed ransom messages to users attempting to access the platform on Thursday
+* **Breach Scope**: ShinyHunters claims to have compromised data from 9,000 schools affecting 275 million students, teachers, and staff, including names, email addresses, ID numbers, and messages
+* **Ransom Demand**: The hacking group gave schools until May 12, 2026 to negotiate settlements through cyber advisory firms or face public data leaks
+* **Attack Vector**: Instructure confirmed the breach exploited vulnerabilities in Free-For-Teacher accounts, which have been temporarily shut down
+* **Current Status**: Canvas is now online for most users, though Beta and Test systems remain in maintenance mode, and Student ePortfolios are experiencing login issues
+* **Hacker History**: ShinyHunters has previously claimed responsibility for major breaches at Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
+* **Company Response**: Instructure deployed security patches but did not initially engage with the hackers, leading to the escalated ransom threat and service disruption
+
+### Canvas 学习平台在 ShinyHunters 数据泄露和勒索威胁后恢复服务
+
+* **服务中断**：Instructure 旗下的 Canvas 平台在黑客向周四试图访问系统的用户显示勒索信息后下线
+* **泄露规模**：ShinyHunters 声称已攻破 9,000 所学校的数据,影响 2.75 亿学生、教师和员工,包括姓名、电子邮件地址、ID 号码和消息
+* **勒索要求**：黑客组织要求各学校在 2026 年 5 月 12 日前通过网络安全咨询公司进行谈判,否则将公开泄露数据
+* **攻击途径**：Instructure 确认黑客利用了免费教师账户的漏洞,该类账户已被临时关闭
+* **当前状态**：Canvas 已对大多数用户恢复服务,但测试版和测试系统仍处于维护模式,学生电子档案袋存在登录问题
+* **黑客背景**：ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等公司的重大数据泄露事件负责
+* **公司回应**：Instructure 部署了安全补丁但最初未与黑客接触,导致勒索威胁升级和服务中断
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
+
+### Agent Skills - Production-grade engineering skills for AI coding agents
+
+* **What it does**: Provides a comprehensive framework of 20 structured engineering workflows that AI coding agents can follow to build software like senior engineers—from initial idea refinement through specification, planning, implementation, testing, review, and deployment.
+
+* **Key features**: 7 lifecycle commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/code-simplify`, `/ship`) that automatically activate relevant skills; covers the complete development cycle including TDD, incremental implementation, API design, security hardening, performance optimization, and CI/CD; includes specialist agent personas (code reviewer, test engineer, security auditor); works with Claude Code, Cursor, Gemini CLI, Windsurf, GitHub Copilot, and other AI coding tools.
+
+* **Why it's notable**: Addresses a critical gap in AI-assisted development by encoding the implicit knowledge and quality gates that experienced engineers use—ensuring AI agents produce production-ready code rather than just working prototypes. With nearly 1,800 stars in a single day, it's gaining rapid traction as teams seek to standardize how AI agents approach software engineering tasks, making agent output more consistent, maintainable, and aligned with industry best practices.
+
+---
+
+### Agent Skills - 为 AI 编码代理提供生产级工程技能
+
+* **功能介绍**: 提供包含 20 个结构化工程工作流的综合框架,让 AI 编码代理能够像资深工程师一样构建软件——从最初的想法细化到规范制定、计划、实现、测试、审查和部署的全流程。
+
+* **主要特点**: 7 个生命周期命令(`/spec`、`/plan`、`/build`、`/test`、`/review`、`/code-simplify`、`/ship`)自动激活相关技能;覆盖完整开发周期,包括测试驱动开发、增量实现、API 设计、安全加固、性能优化和 CI/CD;包含专业代理角色(代码审查员、测试工程师、安全审计员);支持 Claude Code、Cursor、Gemini CLI、Windsurf、GitHub Copilot 等多种 AI 编码工具。
+
+* **为何值得关注**: 通过将经验丰富的工程师使用的隐性知识和质量关卡编码化,填补了 AI 辅助开发中的关键空白——确保 AI 代理产出生产就绪的代码而非仅仅是可运行的原型。单日获得近 1,800 个星标,快速获得关注,因为团队正在寻求标准化 AI 代理处理软件工程任务的方式,使代理输出更加一致、可维护并符合行业最佳实践。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### 9Router - Unlimited FREE AI Coding Router with Auto-Fallback & Token Optimization
+
+* **What it does**: Acts as a smart proxy/router that connects AI coding tools (Claude Code, Cursor, Cline, Copilot, etc.) to 40+ AI providers and 100+ models, with automatic fallback from paid subscriptions to cheap to free providers when quotas are exhausted.
+
+* **Key features**: 
+  - **RTK Token Saver** automatically compresses tool output content, reducing token usage by 20-40% per request
+  - **Multi-tier auto-fallback** system (Subscription → Cheap → Free) ensures zero downtime
+  - **Universal compatibility** with all major AI coding tools through OpenAI-compatible API endpoint
+  - **Multi-account round-robin** support per provider to maximize quota usage
+  - **OAuth integration** for premium providers (Claude Code, Codex, GitHub Copilot, Antigravity)
+  - **Free provider support** including Kiro AI (unlimited Claude 4.5) and OpenCode Free (no auth required)
+
+* **Why it's notable**: Solves the expensive problem of AI coding subscriptions by intelligently routing requests across multiple providers, preventing rate limit interruptions, and dramatically reducing token costs through compression. With 1,028 stars today, it's gaining rapid traction as developers seek to maximize their AI coding budgets while maintaining uninterrupted workflow. The tool's ability to work with virtually any AI coding CLI tool and automatically fall back to free providers makes it a practical solution for cost-conscious developers.
+
+---
+
+### 9Router - 无限免费 AI 编程路由器，支持自动降级和令牌优化
+
+* **功能介绍**: 作为智能代理/路由器，将 AI 编程工具(Claude Code、Cursor、Cline、Copilot 等)连接到 40 多个 AI 提供商和 100 多个模型，当配额用尽时自动从付费订阅降级到廉价再到免费提供商。
+
+* **主要特点**:
+  - **RTK 令牌节省器**自动压缩工具输出内容,每次请求减少 20-40% 的令牌使用量
+  - **多层自动降级**系统(订阅 → 廉价 → 免费)确保零停机时间
+  - **通用兼容性**,通过 OpenAI 兼容的 API 端点支持所有主流 AI 编程工具
+  - **多账户轮询**支持,最大化每个提供商的配额使用
+  - **OAuth 集成**支持高级提供商(Claude Code、Codex、GitHub Copilot、Antigravity)
+  - **免费提供商支持**,包括 Kiro AI(无限 Claude 4.5)和 OpenCode Free(无需认证)
+
+* **为何值得关注**: 通过智能地在多个提供商之间路由请求,解决了 AI 编程订阅费用昂贵的问题,防止速率限制中断,并通过压缩大幅降低令牌成本。今日获得 1,028 星标,正快速获得关注,因为开发者寻求在保持不间断工作流程的同时最大化 AI 编程预算。该工具能够与几乎所有 AI 编程 CLI 工具配合使用,并自动降级到免费提供商,使其成为注重成本的开发者的实用解决方案。
+
+**[View Repository / 查看仓库](https://github.com/decolua/9router)**
+
+### 🎬 Learning "just in time" is a lot easier than it used to be. Swyx talks about why.
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Swyx explores how modern learning approaches have evolved, focusing on the "just in time" learning methodology where developers learn skills precisely when they need them rather than in advance
+* Key topics discussed: The shift from traditional "just in case" learning to on-demand skill acquisition, how modern tools and resources (AI assistants, documentation, tutorials) enable faster learning, and why this approach is more effective in today's rapidly changing tech landscape
+* Why it's worth watching: Offers practical insights into optimizing your learning strategy as a developer, especially relevant given the acceleration of AI tools and the impossibility of learning everything upfront. Swyx brings valuable perspective on adapting to the modern development workflow.
+
+---
+
+### 🎬 "即时学习"比以往更容易了。Swyx 谈论原因
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Swyx 探讨了现代学习方法的演变,重点关注"即时学习"方法论——开发者在需要时才学习技能,而不是提前学习
+* 主要话题: 从传统的"以防万一"学习转向按需技能获取、现代工具和资源(AI 助手、文档、教程)如何实现更快的学习速度,以及为什么这种方法在当今快速变化的技术环境中更有效
+* 为何值得观看: 提供了优化开发者学习策略的实用见解,特别是在 AI 工具加速发展、无法提前学习所有知识的背景下尤为相关。Swyx 为适应现代开发工作流程提供了宝贵的视角。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wDLdDaGR8S4)**
+
+### 🎬 Where Does 90GB Go When You ZIP a File? 😳 #GTA5 #howtechworks #zip #tech #info #compress #shorts
+
+**Channel:** Tanmay Tiwari
+
+* What the video covers: Explains the mechanics behind ZIP file compression and where the "missing" gigabytes actually go when you compress large files like GTA5
+* Key topics discussed: Data compression principles, how ZIP algorithms store data more efficiently without actually deleting it, the science behind reducing file sizes
+* Why it's worth watching: Demystifies a common tech phenomenon that most people use daily but don't understand—perfect for anyone curious about how compression actually works under the hood
+
+---
+
+### 🎬 压缩文件时90GB去哪了？😳
+
+**频道:** Tanmay Tiwari
+
+* 视频内容概述: 解释ZIP文件压缩的工作原理，以及压缩大型文件（如GTA5）时那些"消失"的GB实际去了哪里
+* 主要话题: 数据压缩原理、ZIP算法如何在不删除数据的情况下更高效地存储数据、减小文件大小背后的科学原理
+* 为何值得观看: 揭秘了一个大多数人每天都在使用却不理解的常见技术现象——非常适合对压缩原理感到好奇的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cYbaUKVGrlc)**
+
+### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
+**Channel:** Richo | AI Tips 🤖
+
+* What the video covers: Introduction to BLACKBOX AI as a coding assistant tool
+* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
+* Why it's worth watching: Useful for developers looking to leverage AI tools to enhance their coding workflow and learn more efficiently; part of a community-focused channel offering practical coding tips
+
+### 🎬 订阅获取更多编程技巧!⬆️
+**频道:** Richo | AI Tips 🤖
+
+* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
+* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助功能提升编程技能
+* 为何值得观看: 适合希望利用 AI 工具优化编程工作流程并更高效学习的开发者;该频道专注于社区建设,提供实用的编程技巧
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=scpgat-xaZQ)**
+
+### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
+**Channel:** Sisca | Tips AI 🪄
+
+* What the video covers: An introduction to BLACKBOX AI as a coding assistant tool
+* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
+* Why it's worth watching: Useful for developers looking to enhance their coding workflow with AI tools and join a community focused on skill development
+
+### 🎬 订阅获取更多编程技巧!⬆️
+**频道:** Sisca | Tips AI 🪄
+
+* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
+* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助功能提升编程技能
+* 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DpO8t_e5yEk)**
 
