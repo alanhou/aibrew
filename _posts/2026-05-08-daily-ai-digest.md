@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 08, 2026"
 date: 2026-05-08
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -526,12 +526,109 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
+
+* **主要特点**:
+  - 将多种资源(云存储、数据库、通信平台、SaaS 工具)挂载到单一文件系统树下
+  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
+  - 双层缓存系统(索引 + 文件缓存),支持 RAM 和 Redis 后端
+  - 可克隆、快照和版本化的便携式工作空间
+  - 与主流智能体框架原生集成(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 提供 Python 和 TypeScript SDK,以及用于直接智能体集成的 CLI
+
+* **为何值得关注**: Mirage 解决了 AI 智能体开发中的关键问题——无需让智能体学习数十个不同的 API。相反,智能体利用 LLM 已经大量训练过的 bash/Unix 词汇,可以立即在任何后端上高效工作。能够像操作本地文件一样跨服务组合管道命令(`grep alert /slack/general/*.json | wc -l`)极大简化了多服务工作流,并减少了智能体交互中的 token 开销。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+
+### Canvas Learning Platform Suffers Major Data Breach and Outage
+
+* **Platform Down**: Canvas, owned by Instructure, is currently in maintenance mode after a massive data breach affecting student names, email addresses, ID numbers, and messages
+* **Hacker Group Claims Responsibility**: ShinyHunters posted a ransom message on the platform, claiming they breached Instructure again after the company ignored their initial contact and only applied "security patches"
+* **Ransom Deadline**: The hacking group is demanding schools negotiate settlements through cyber advisory firms by May 12, 2026, or they will leak all stolen data
+* **Massive Scale**: ShinyHunters claims their data leak site contains information from 9,000 schools, affecting approximately 275 million students, teachers, and staff members
+* **Notorious Threat Actor**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
+* **Company Response**: Instructure deployed security patches last week and has placed Canvas systems in maintenance mode, promising updates soon
+
+### Canvas 学习平台遭遇重大数据泄露和系统中断
+
+* **平台宕机**: Instructure 旗下的 Canvas 学习管理平台目前处于维护模式，此前发生大规模数据泄露，涉及学生姓名、电子邮件地址、ID 号码和消息内容
+* **黑客组织声称负责**: ShinyHunters 在平台上发布勒索信息，声称他们再次入侵 Instructure，因为该公司忽视了他们的初次联系，仅进行了"安全补丁"修复
+* **勒索截止日期**: 该黑客组织要求各学校通过网络安全咨询公司在 2026 年 5 月 12 日前进行谈判和解，否则将泄露所有被盗数据
+* **影响规模巨大**: ShinyHunters 声称其数据泄露网站包含 9,000 所学校的信息，影响约 2.75 亿名学生、教师和工作人员
+* **臭名昭著的威胁行为者**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高知名度攻击事件负责
+* **公司回应**: Instructure 上周部署了安全补丁，目前已将 Canvas 系统置于维护模式，承诺尽快提供更新信息
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
+
+<!-- [Title-Only] -->
+### Maybe you shouldn't install new software for a bit
+
+* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
+* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate necessity before adding new dependencies or tools
+* Could be particularly relevant given ongoing concerns about software supply chain security, malicious packages, or the recent trend of compromised open-source projects
+* Why it might be interesting: Offers practical security advice in an era where software dependencies and third-party tools can introduce significant risks
+
+### 也许你应该暂时不要安装新软件
+
+* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
+* 文章可能倡导对软件安装采取谨慎态度，建议读者在添加新的依赖项或工具之前暂停并评估必要性
+* 可能特别关注软件供应链安全问题、恶意软件包或近期开源项目被攻陷的趋势
+* 为何值得关注：在第三方工具和软件依赖可能带来重大风险的时代，提供实用的安全建议
+
+**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
+
+<!-- [Title-Only] -->
+### Cloudflare to cut about 20% workforce
+
+* Based on the title, this article likely covers Cloudflare's announcement of significant workforce reductions, affecting approximately 20% of its employees (over 1,100 jobs according to the URL). The piece probably discusses the reasons behind this decision, such as economic pressures, restructuring efforts, or strategic shifts in the company's direction.
+* This is significant for readers because Cloudflare is a major internet infrastructure and security company that powers a substantial portion of the web. Large-scale layoffs at such a prominent tech company often signal broader industry trends, economic challenges, or shifts in the tech sector's growth trajectory. It may also impact the services millions of websites and applications depend on.
+
+### Cloudflare 将裁员约 20%
+
+* 根据标题推测，这篇文章可能报道了 Cloudflare 宣布大规模裁员的消息，影响约 20% 的员工（根据 URL 显示超过 1,100 个职位）。文章可能讨论了这一决定背后的原因，例如经济压力、重组计划或公司战略方向的调整。
+* 这对读者来说很重要，因为 Cloudflare 是一家为大量网站提供基础设施和安全服务的主要互联网公司。如此知名的科技公司进行大规模裁员往往预示着更广泛的行业趋势、经济挑战或科技行业增长轨迹的转变。这也可能影响数百万依赖其服务的网站和应用程序。
+
+---
+
+*Note: This summary is based solely on the article title, as the full content could not be accessed.*
+
+*注：此摘要仅基于文章标题，因为无法获取完整内容。*
+
+**[Read Original / 阅读原文](https://www.reuters.com/business/world-at-work/cloudflare-cut-over-1100-jobs-2026-05-07/)**
+
+### dirtyfrag - Universal Linux Local Privilege Escalation Exploit
+
+* **What it does**: A deterministic Linux kernel exploit that chains two page-cache write vulnerabilities (xfrm-ESP and RxRPC) to gain root privileges on major Linux distributions without requiring race conditions
+* **Key features**: High success rate with no kernel panic on failure; works across Ubuntu, RHEL, Fedora, openSUSE and other major distros; extends the Dirty Pipe/Copy Fail bug class; affects kernels from 2017 to present (9-year vulnerability window)
+* **Why it's notable**: Universal LPE affecting all major Linux distributions with no official patches yet due to broken embargo; provides a 4-byte arbitrary write primitive; bypasses existing Copy Fail mitigations; includes working proof-of-concept exploit
+
+### dirtyfrag - 通用 Linux 本地提权漏洞利用
+
+* **功能介绍**: 一个确定性的 Linux 内核漏洞利用工具,通过链式组合两个页缓存写入漏洞(xfrm-ESP 和 RxRPC)在主流 Linux 发行版上获取 root 权限,无需竞态条件
+* **主要特点**: 成功率极高且失败时不会导致内核崩溃;适用于 Ubuntu、RHEL、Fedora、openSUSE 等主流发行版;扩展了 Dirty Pipe/Copy Fail 漏洞类别;影响 2017 年至今的内核版本(9 年漏洞窗口期)
+* **为何值得关注**: 影响所有主流 Linux 发行版的通用提权漏洞,因禁令被破坏目前尚无官方补丁;提供 4 字节任意写入原语;绕过现有 Copy Fail 缓解措施;包含可工作的概念验证利用代码
+
+**[View Repository / 查看仓库](https://github.com/V4bel/dirtyfrag)**
+
+### 🎬 Where Does 90GB Go When You ZIP a File? 😳 #GTA5 #howtechworks #zip #tech #info #compress #shorts
+
+**Channel:** Tanmay Tiwari
+
+* What the video covers: Explains the mechanics behind ZIP file compression and where the "missing" gigabytes actually go when you compress large files like GTA5
+* Key topics discussed: Data compression principles, how ZIP algorithms store data more efficiently without actually deleting it, the science behind reducing file sizes
+* Why it's worth watching: Demystifies a common tech phenomenon that most people use daily but don't understand—perfect for anyone curious about how compression actually works under the hood
+
+---
+
 ### 🎬 压缩文件时90GB去哪了？😳
+
 **频道:** Tanmay Tiwari
 
-* 视频内容概述: 解释ZIP文件压缩的工作原理，以及为什么大型文件（如GTA 5的90GB）会变得明显更小
-* 主要话题: ZIP压缩如何通过识别和消除冗余模式来更高效地存储数据，而不是让数据"消失"
-* 为何值得观看: 用不到一分钟的时间快速、易懂地解释了一个人们每天都在使用但并不完全理解的常见技术现象——非常适合揭开文件压缩的神秘面纱
+* 视频内容概述: 解释ZIP文件压缩的工作原理，以及压缩大型文件（如GTA5）时那些"消失"的GB实际去了哪里
+* 主要话题: 数据压缩原理、ZIP算法如何在不删除数据的情况下更高效地存储数据、减小文件大小背后的科学原理
+* 为何值得观看: 揭秘了一个大多数人每天都在使用却不理解的常见技术现象——非常适合对压缩原理感到好奇的观众
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=cYbaUKVGrlc)**
 
@@ -551,87 +648,19 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=scpgat-xaZQ)**
 
-### Canvas Learning Platform Suffers Major Data Breach and Outage
+### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
+**Channel:** Sisca | Tips AI 🪄
 
-* **Platform Down**: Instructure's Canvas learning management system is currently in maintenance mode after a major security incident
-* **ShinyHunters Attack**: Hacking group ShinyHunters claims responsibility and posted ransom demands directly on Canvas, threatening to leak school data by May 12, 2026
-* **Massive Scale**: Hackers claim to have breached 9,000 schools affecting 275 million students, teachers, and staff members
-* **Data Compromised**: Breach exposed student names, email addresses, ID numbers, and private messages
-* **Repeat Breach**: ShinyHunters states this is their second breach of Instructure, claiming the company ignored their initial contact and only applied "security patches"
-* **Notorious Group**: ShinyHunters has previously claimed responsibility for high-profile attacks on Ticketmaster, AT&T, Rockstar Games, ADT, and Vercel
-* **Ransom Demand**: The group is demanding schools contact them through TOX to negotiate settlements to prevent data release
+* What the video covers: An introduction to BLACKBOX AI as a coding assistant tool
+* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
+* Why it's worth watching: Useful for developers looking to enhance their coding workflow with AI tools and join a community focused on skill development
 
-### Canvas 学习平台遭遇重大数据泄露和系统中断
+### 🎬 订阅获取更多编程技巧!⬆️
+**频道:** Sisca | Tips AI 🪄
 
-* **平台宕机**: Instructure 旗下的 Canvas 学习管理系统在重大安全事件后目前处于维护模式
-* **ShinyHunters 攻击**: 黑客组织 ShinyHunters 声称对此负责,并直接在 Canvas 上发布勒索要求,威胁在 2026 年 5 月 12 日前泄露学校数据
-* **规模巨大**: 黑客声称已入侵 9,000 所学校,影响 2.75 亿名学生、教师和工作人员
-* **数据泄露**: 泄露内容包括学生姓名、电子邮件地址、ID 号码和私人消息
-* **重复入侵**: ShinyHunters 表示这是他们第二次入侵 Instructure,声称该公司忽视了他们的初次联系,仅进行了"安全补丁"修复
-* **臭名昭著**: ShinyHunters 此前曾声称对 Ticketmaster、AT&T、Rockstar Games、ADT 和 Vercel 等高调攻击负责
-* **勒索要求**: 该组织要求学校通过 TOX 联系他们协商和解,以防止数据公开
+* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
+* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助提升编程技能
+* 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
 
-**[Read Original / 阅读原文](https://www.theverge.com/tech/926458/canvas-shinyhunters-breach)**
-
-<!-- [Title-Only] -->
-### Maybe you shouldn't install new software for a bit
-
-* Based on the title, this article likely discusses the risks and considerations around installing new software, possibly in light of recent security incidents or supply chain attacks
-* It may advocate for a cautious approach to software installation, suggesting readers pause and evaluate whether new installations are truly necessary
-* The timing and phrasing suggest this could be related to a specific security event or vulnerability that makes software installation temporarily risky
-* Why it might be interesting: Offers practical security advice and raises awareness about software supply chain risks, helping readers make informed decisions about when to install or update software
-
-### 也许你暂时不应该安装新软件
-
-* 根据标题推测，这篇文章可能讨论安装新软件的风险和注意事项，可能与近期的安全事件或供应链攻击有关
-* 文章可能倡导对软件安装采取谨慎态度，建议读者暂停并评估新安装是否真正必要
-* 标题的时机和措辞暗示这可能与某个特定的安全事件或漏洞有关，使得软件安装暂时存在风险
-* 为何值得关注：提供实用的安全建议，提高对软件供应链风险的认识，帮助读者就何时安装或更新软件做出明智决策
-
-**[Read Original / 阅读原文](https://xeiaso.net/blog/2026/abstain-from-install/)**
-
-<!-- [Title-Only] -->
-### The Disappearance of the Public Bench
-
-* Based on the title, this article likely examines the decline of public seating in urban spaces and explores the social, political, and design factors behind this trend. It probably discusses how public benches have been removed or redesigned (often with hostile architecture) to discourage loitering, and what this means for accessibility, community, and the right to public space.
-* Why it might be interesting to readers: This topic touches on urban design philosophy, social equity, and how cities balance competing interests. The removal of public benches reflects broader tensions around who belongs in public spaces, how we treat homelessness, and whether cities prioritize commerce and aesthetics over inclusivity and rest. It's a tangible example of how design choices shape daily life and social dynamics.
-
-### 公共长椅的消失
-
-* 根据标题推测，这篇文章可能探讨城市公共空间中座椅减少的现象，分析这一趋势背后的社会、政治和设计因素。文章很可能讨论公共长椅如何被移除或重新设计（通常采用"敌意建筑"手法）以阻止闲坐，以及这对可达性、社区和公共空间权利意味着什么。
-* 为何值得关注：这个话题涉及城市设计理念、社会公平，以及城市如何平衡不同利益群体的需求。公共长椅的移除反映了关于谁有权使用公共空间、如何对待无家可归者、以及城市是否优先考虑商业和美观而非包容性和休憩权等更广泛的矛盾。这是一个具体的例子，说明设计选择如何塑造日常生活和社会动态。
-
-**[Read Original / 阅读原文](https://placesjournal.org/article/the-disappearance-of-the-public-bench/)**
-
-### Mirage - A Unified Virtual Filesystem For AI Agents
-
-* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
-
-* **Key features**: 
-  - Mount multiple resources (cloud storage, databases, communication platforms, SaaS tools) under one filesystem tree
-  - Use standard bash commands (`grep`, `cat`, `cp`, `wc`) across all mounted services
-  - Two-layer caching system (index + file cache) with RAM and Redis backends
-  - Portable workspaces that can be cloned, snapshotted, and versioned
-  - Native integrations with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
-  - Available as Python and TypeScript SDKs, plus a CLI for direct agent integration
-
-* **Why it's notable**: Mirage solves a critical problem in AI agent development by eliminating the need for agents to learn dozens of different APIs. Instead, agents leverage the bash/Unix vocabulary that LLMs are already heavily trained on, making them immediately productive across any backend. The ability to compose pipelines across services as naturally as local files (`grep alert /slack/general/*.json | wc -l`) dramatically simplifies multi-service workflows and reduces token overhead in agent interactions.
-
----
-
-### Mirage - AI 智能体的统一虚拟文件系统
-
-* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
-
-* **主要特点**:
-  - 将多种资源(云存储、数据库、通信平台、SaaS 工具)挂载到单一文件系统树下
-  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
-  - 双层缓存系统(索引 + 文件缓存),支持 RAM 和 Redis 后端
-  - 可克隆、快照和版本化的便携式工作空间
-  - 与主流智能体框架原生集成(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
-  - 提供 Python 和 TypeScript SDK,以及用于直接智能体集成的 CLI
-
-* **为何值得关注**: Mirage 解决了 AI 智能体开发中的关键问题——无需让智能体学习数十个不同的 API。相反,智能体利用 LLM 已经大量训练过的 bash/Unix 词汇,可以立即在任何后端上高效工作。能够像操作本地文件一样跨服务组合管道命令(`grep alert /slack/general/*.json | wc -l`)极大简化了多服务工作流,并减少了智能体交互中的 token 开销。
-
-**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DpO8t_e5yEk)**
 
