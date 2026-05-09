@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 09, 2026"
 date: 2026-05-09
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 10 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：10篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -597,4 +597,128 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=DpO8t_e5yEk)**
+
+### A Recent Experience with claude-sonnet-4-5 5.5 Pro: LLMs Solving PhD-Level Math Problems
+
+* **Major capability leap**: ChatGPT 5.5 Pro produced PhD-level mathematical research in about an hour with minimal human input, marking a significant advancement in LLM mathematical capabilities.
+
+* **Current state of LLM math research**: LLMs can now solve research-level problems, including several Erdős problems. They excel at finding "easy arguments" that human mathematicians may have missed, though many solutions still rely on combining existing knowledge rather than truly original ideas.
+
+* **New experiment approach**: Instead of testing on well-studied problems, the author tested ChatGPT 5.5 Pro on relatively new combinatorial parameters from Mel Nathanson's paper on additive number theory, where problems might not have received extensive attention.
+
+* **Problem domain**: The test focused on sumset theory—analyzing possible sizes of h-fold sumsets (hA) given the size of set A. While the h=2 case is well-understood (all integers between 2k-1 and (k+1 choose 2) are achievable), general cases remain open.
+
+* **Implications for research training**: Problems that were previously valuable for beginning researchers (officially open but not extremely difficult) may no longer serve this purpose if LLMs can solve them, effectively raising the bar for what constitutes suitable training problems.
+
+* **Philosophical question**: The distinction between "combining existing knowledge" (which describes much human mathematics) and "truly original ideas" becomes increasingly blurred as LLMs demonstrate sophisticated problem-solving abilities.
+
+---
+
+### ChatGPT 5.5 Pro 最新体验：大语言模型解决博士级数学问题
+
+* **能力重大飞跃**：ChatGPT 5.5 Pro 在约一小时内完成了博士级别的数学研究，几乎不需要人类的数学输入，标志着大语言模型数学能力的显著提升。
+
+* **LLM 数学研究现状**：大语言模型现在能够解决研究级问题，包括多个埃尔德什问题。它们擅长发现人类数学家可能遗漏的"简单论证"，尽管许多解决方案仍依赖于组合现有知识，而非真正原创的想法。
+
+* **新实验方法**：作者没有测试已被充分研究的问题,而是用 Mel Nathanson 关于加法数论论文中相对较新的组合参数来测试 ChatGPT 5.5 Pro，这些问题可能尚未得到广泛关注。
+
+* **问题领域**：测试聚焦于和集理论——分析给定集合 A 的大小时，h 重和集(hA)的可能大小。虽然 h=2 的情况已被充分理解(2k-1 到 (k+1 选 2) 之间的所有整数都可实现)，但一般情况仍未解决。
+
+* **对研究训练的影响**：以前对初学研究者有价值的问题(正式开放但不太困难)可能不再适合这一目的，因为大语言模型可以解决它们，这实际上提高了合适训练问题的标准。
+
+* **哲学问题**：随着大语言模型展示出复杂的问题解决能力，"组合现有知识"(这描述了许多人类数学工作)与"真正原创的想法"之间的界限变得越来越模糊。
+
+**[Read Original / 阅读原文](https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/)**
+
+### Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) with no actual content to analyze
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Includes a "Try again" button for users to retry their action
+* Contains a warning that privacy-related browser extensions may cause issues on x.com
+* No substantive blog content, article, or information is present to summarize
+
+### 错误页面分析
+
+* 这是 X.com（前 Twitter）的错误页面，没有实际内容可供分析
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含"重试"按钮供用户重新尝试操作
+* 提醒用户隐私相关的浏览器扩展可能会导致 x.com 出现问题
+* 没有实质性的博客内容、文章或信息可以总结
+
+---
+
+**Note:** Please provide the actual blog content you'd like me to analyze and summarize. The current HTML appears to be an error page rather than blog content.
+
+**注意：** 请提供您希望我分析和总结的实际博客内容。当前的 HTML 似乎是错误页面而非博客内容。
+
+**[Read Original / 阅读原文](https://twitter.com/trq212/status/2052809885763747935)**
+
+### The Mythical Man-Month: Timeless Lessons in Software Development
+
+* **Brooks's Law**: Adding more people to a late software project makes it even later due to exponentially growing communication paths that must be carefully managed
+* **Conceptual Integrity**: The most critical consideration in system design—a unified, coherent design philosophy is better than a collection of uncoordinated good ideas
+* **Simplicity and Composability**: Conceptual integrity emerges from both simplicity and straightforwardness (how easily elements can be composed together)
+* **Historical Context**: Written by Fred Brooks after managing IBM's System/360 development in the 1960s, published in 1975, remains influential in 2026
+* **Recommended Edition**: The anniversary edition includes the influential 1986 essay "No Silver Bullet"
+
+### 人月神话：软件开发中的永恒教训
+
+* **布鲁克斯定律**：向延期的软件项目增加人力会使项目更加延期，因为沟通路径呈指数级增长，必须精心管理
+* **概念完整性**：系统设计中最重要的考量——统一连贯的设计理念优于一堆互不协调的好想法的集合
+* **简洁性与可组合性**：概念完整性源于简洁性和直接性（元素组合的容易程度）
+* **历史背景**：Fred Brooks 在 1960 年代管理 IBM System/360 开发后撰写，1975 年出版，至 2026 年仍具影响力
+* **推荐版本**：周年纪念版包含了 1986 年极具影响力的文章《没有银弹》
+
+**[Read Original / 阅读原文](https://martinfowler.com/bliki/MythicalManMonth.html)**
+
+### Yao Open Prompts - Chinese AI Prompt Library for Work, Learning, Content, Marketing & Life
+
+* **What it does**: A comprehensive collection of 116 Chinese AI prompts organized by real-world scenarios, extracted from the original "Yao Jingang Prompt Collection" and restructured for open-source use. Covers work productivity, learning methods, content creation, marketing (including GEO), and daily life applications.
+
+* **Key features**: 
+  - Structured prompt library with standardized frontmatter (title, category, version, tags)
+  - Specialized collections including 36 content & operations prompts and 25 GEO marketing templates
+  - Meta-prompt generation system (RTF framework V0.6) for creating high-quality prompts
+  - Bilingual support with English mirror in `prompts-en/`
+  - Automated maintenance scripts for catalog generation and quality checks
+  - Clean, copy-ready prompt format with variables and placeholders
+
+* **Why it's notable**: Addresses the gap in Chinese-language AI prompt resources with production-ready templates for business scenarios. The repository emphasizes practical application over theory, removing tutorials and screenshots to focus on reusable prompt text. The systematic approach to prompt engineering (meta-prompts, versioning, quality checks) and the inclusion of emerging GEO (Generative Engine Optimization) marketing templates make it particularly relevant for Chinese-speaking professionals adapting to AI-driven workflows.
+
+---
+
+### Yao Open Prompts - 中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景
+
+* **功能介绍**: 从《姚金刚提示词合集》整理出的 116 个中文 AI 提示词开源库,按真实场景分类。涵盖工作生产力、学习方法、内容创作、营销(包括 GEO)和日常生活应用。
+
+* **主要特点**:
+  - 结构化提示词库,统一 frontmatter 元数据(标题、分类、版本、标签)
+  - 专题合集包括 36 个内容运营提示词和 25 个 GEO 营销实战模板
+  - 智能元提示词生成系统(RTF 框架 V0.6)用于创建高质量提示词
+  - 双语支持,`prompts-en/` 目录提供英文镜像版本
+  - 自动化维护脚本用于目录生成和质量检查
+  - 简洁可复制的提示词格式,包含变量和占位符
+
+* **为何值得关注**: 填补了中文 AI 提示词资源的空白,提供面向实际业务场景的生产级模板。仓库强调实用性而非理论,去除教程和截图,专注于可复用的提示词文本。系统化的提示词工程方法(元提示词、版本管理、质量检查)以及新兴的 GEO(生成式引擎优化)营销模板,使其特别适合适应 AI 驱动工作流程的中文用户。
+
+**[View Repository / 查看仓库](https://github.com/yaojingang/yao-open-prompts)**
+
+### 🎬 How to Build an App With Claude Code - Full Tutorial for Beginners
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on building applications using Claude Code, Anthropic's AI-powered coding assistant
+* Key topics discussed: Step-by-step app development process, Claude Code features and capabilities, practical implementation examples, deployment strategies with Hostinger
+* Why it's worth watching: Perfect for beginners wanting to leverage AI coding tools to accelerate app development, with hands-on guidance from an experienced tech educator
+
+---
+
+### 🎬 如何使用 Claude Code 构建应用 - 新手完整教程
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面讲解如何使用 Anthropic 的 AI 编程助手 Claude Code 构建应用程序，专为初学者设计的详细教程
+* 主要话题: 应用开发的分步流程、Claude Code 的功能特性、实际应用案例演示、使用 Hostinger 进行部署的策略
+* 为何值得观看: 适合想要利用 AI 编程工具加速应用开发的初学者，由经验丰富的技术教育者提供实操指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GUgxx6fMiR8)**
 
