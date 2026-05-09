@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 10, 2026"
 date: 2026-05-10
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -327,4 +327,252 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合对3D打印感兴趣的初学者或想制作定制积木的乐高爱好者；展示了即使没有技术背景也能轻松上手3D打印；包含令人满足的ASMR元素
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=hnc8F7tGlEE)**
+
+### Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) with no actual content to analyze
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Includes a "Try again" button for users to retry their action
+* Contains a warning that privacy-related browser extensions may cause issues on x.com
+* No substantive blog content, article, or information is present to summarize
+
+### 错误页面分析
+
+* 这是 X.com（前 Twitter）的错误页面，没有实际内容可供分析
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含"重试"按钮供用户重新尝试操作
+* 提醒用户隐私相关的浏览器扩展可能会导致 x.com 出现问题
+* 没有实质性的博客内容、文章或信息可以总结
+
+---
+
+**Note:** Please provide the actual blog content you'd like me to analyze and summarize. The current HTML appears to be an error page rather than blog content.
+
+**注意：** 请提供您希望我分析和总结的实际博客内容。当前的 HTML 似乎是错误页面而非博客内容。
+
+**[Read Original / 阅读原文](https://twitter.com/jarredsumner/status/2053047748191232310)**
+
+### Internet Archive Switzerland: Expanding Global Knowledge Preservation
+
+* Internet Archive launches Swiss branch (internetarchive.ch) to expand its mission of preserving digital knowledge and cultural heritage
+* The new Switzerland location joins existing Internet Archive operations in the US and Canada, strengthening the organization's global infrastructure
+* This expansion aims to provide geographic redundancy and resilience for the Archive's vast collection of web pages, books, videos, software, and other digital materials
+* Switzerland's strong data protection laws and political neutrality make it an ideal location for long-term digital preservation
+* The move helps ensure continued public access to archived materials even if one location faces technical issues or legal challenges
+* Internet Archive continues its commitment to universal access to knowledge by distributing its preservation infrastructure across multiple countries
+
+### 互联网档案馆瑞士分部:扩展全球知识保存使命
+
+* 互联网档案馆推出瑞士分部(internetarchive.ch),扩大其保存数字知识和文化遗产的使命
+* 新的瑞士站点加入了互联网档案馆在美国和加拿大的现有运营,加强了该组织的全球基础设施
+* 此次扩展旨在为档案馆庞大的网页、书籍、视频、软件和其他数字资料收藏提供地理冗余和弹性
+* 瑞士强大的数据保护法律和政治中立性使其成为长期数字保存的理想地点
+* 此举有助于确保即使某个地点面临技术问题或法律挑战,公众仍能持续访问存档材料
+* 互联网档案馆通过在多个国家分布其保存基础设施,继续致力于实现知识的普遍获取
+
+**[Read Original / 阅读原文](https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/)**
+
+### I've Banned Query Strings
+
+* **Author's stance**: Chris Morgan has implemented a blanket ban on unauthorized query strings for his personal website
+* **Motivation**: Dislikes tracking parameters added to URLs without permission, viewing them as abuse of users and URLs
+* **Specific grievances**: Objects to `?ref=` parameters and UTM tracking parameters (`utm_source`, etc.) being appended to his site's URLs
+* **Implementation**: Currently enforces the ban via Caddyfile configuration; any query string triggers a response (users can test by adding `?` to the URL)
+* **Current policy**: No query strings are used on the site; if any are needed in future, only explicitly whitelisted parameters will be allowed
+* **Philosophy**: "It's my website: I can do what I want with it" - encourages others to do the same with their sites
+* **Technical note**: Considered publishing at `/?` (empty path with query string) or `/%3F` (path containing `?` character) but encountered tool limitations and Caddy bugs
+
+### 我已禁用查询字符串
+
+* **作者立场**：Chris Morgan 在其个人网站上实施了对未经授权查询字符串的全面禁令
+* **动机**：不喜欢未经许可在 URL 中添加跟踪参数，认为这是对用户和 URL 的滥用
+* **具体不满**：反对在其网站 URL 后添加 `?ref=` 参数和 UTM 跟踪参数（`utm_source` 等）
+* **实现方式**：目前通过 Caddyfile 配置强制执行禁令；任何查询字符串都会触发响应（用户可通过在 URL 添加 `?` 测试）
+* **当前策略**：网站不使用任何查询字符串；如果将来需要使用，只允许明确列入白名单的参数
+* **理念**："这是我的网站：我可以随心所欲" - 鼓励他人在自己的网站上也这样做
+* **技术说明**：曾考虑将此页面发布在 `/?`（空路径带查询字符串）或 `/%3F`（路径包含 `?` 字符），但遇到工具限制和 Caddy 漏洞
+
+**[Read Original / 阅读原文](https://chrismorgan.info/no-query-strings)**
+
+### Hello-Agents - A Comprehensive Guide to Building AI Agents from Scratch
+
+* **What it does**: A systematic, open-source tutorial that teaches developers how to build AI-native agents from foundational theory to practical implementation, covering everything from basic agent concepts to multi-agent systems and reinforcement learning.
+
+* **Key features**: 
+  - 16 comprehensive chapters spanning agent fundamentals, LLM basics, classic paradigms (ReAct, Plan-and-Solve), framework development, and advanced topics like memory systems, communication protocols, and Agentic-RL
+  - Hands-on projects including a custom agent framework (HelloAgents), intelligent travel assistant, automated research agent, and a simulated cyber town
+  - Bilingual content (Chinese/English) with both online reading and PDF downloads
+  - Practical code examples for low-code platforms (Coze, Dify, n8n) and popular frameworks (AutoGen, AgentScope, LangGraph)
+  - Community-contributed extras including interview questions, best practices, and GUI agent tutorials
+
+* **Why it's notable**: Addresses the critical gap in systematic, practice-oriented agent development education as the industry shifts from "model wars" to "agent era" in 2025. Unlike workflow-driven platforms, this focuses on building true AI-native agents by understanding core principles rather than just using frameworks. The project has gained massive traction with 1,162 stars today, reflecting strong demand for comprehensive agent development resources.
+
+---
+
+### Hello-Agents - 从零开始构建智能体的完整指南
+
+* **功能介绍**: 由 Datawhale 社区打造的系统性智能体学习教程,从基础理论到实战应用全面讲解如何构建 AI 原生智能体,涵盖单智能体到多智能体系统的完整开发流程。
+
+* **主要特点**:
+  - 16章完整内容体系,包括智能体基础、大语言模型、经典范式(ReAct、Plan-and-Solve)、框架开发、记忆系统、通信协议、Agentic-RL等高级主题
+  - 实战项目包括自研智能体框架(HelloAgents)、智能旅行助手、自动化深度研究智能体、赛博小镇模拟等
+  - 中英双语内容,提供在线阅读和PDF下载
+  - 涵盖低代码平台(Coze、Dify、n8n)和主流框架(AutoGen、AgentScope、LangGraph)的实践代码
+  - 社区贡献精选包含面试题、最佳实践、GUI Agent教程等扩展内容
+
+* **为何值得关注**: 在2025年"Agent元年"背景下,填补了系统性、重实践的智能体教程空白。不同于流程驱动的软件工程类Agent,本教程专注于构建真正的AI原生智能体,强调理解核心原理而非仅使用框架。今日获得1,162星标,反映出开发者对全面智能体开发资源的强烈需求。完全开源免费,适合AI开发者、软件工程师和在校学生系统学习。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/hello-agents)**
+
+### easy-vibe - A Modern Programming Course for Beginners in the AI Era
+
+* **What it does**: Easy-Vibe is a beginner-friendly programming course that teaches you to build real applications through conversational AI coding ("vibe coding"). Instead of traditional syntax-first learning, you describe what you want to build and learn by doing—turning ideas into working prototypes with AI assistance.
+
+* **Key features**: 
+  - Interactive visual tutorials with step-by-step guidance and simulated coding environments
+  - Comprehensive learning paths from complete beginner to full-stack development
+  - Real-world project examples including SaaS apps, mobile apps, and AI integrations
+  - Multi-language support (10+ languages) with bilingual documentation
+  - Animated explanations of complex concepts like RAG, Git, and AI principles
+  - Practical appendix covering user research, requirement validation, and 80+ interactive topics
+
+* **Why it's notable**: With 294 stars today, Easy-Vibe addresses the paradigm shift in programming education for the AI era. It's designed for the reality that "if you can talk, you can build apps"—making software development accessible to non-programmers, product managers, and students. The course emphasizes building first, understanding later, with immersive tutorials that feel like learning with a private tutor. It's particularly valuable for validating ideas quickly and building MVPs at low cost.
+
+---
+
+### easy-vibe - AI 时代零基础现代编程入门课程
+
+* **功能介绍**: Easy-Vibe 是一门面向初学者的编程课程,通过对话式 AI 编码("vibe coding")教你构建真实应用。不同于传统的语法优先学习方式,你只需描述想要构建的内容,通过实践学习——在 AI 辅助下将想法转化为可运行的原型。
+
+* **主要特点**:
+  - 交互式可视化教程,提供分步指导和模拟编码环境
+  - 从零基础到全栈开发的完整学习路径
+  - 真实项目案例,包括 SaaS 应用、移动应用和 AI 集成
+  - 支持 10+ 种语言的多语言双语文档
+  - 动画讲解 RAG、Git 和 AI 原理等复杂概念
+  - 实用附录涵盖用户研究、需求验证和 80+ 个交互式主题
+
+* **为何值得关注**: 今日获得 294 星标,Easy-Vibe 针对 AI 时代编程教育的范式转变而设计。它践行"会说话就会做应用"的理念,让软件开发对非程序员、产品经理和学生都触手可及。课程强调先构建、后理解,沉浸式教程如同私人导师般贴心。特别适合快速验证想法和低成本构建 MVP 产品。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/easy-vibe)**
+
+### Mirage - A Unified Virtual Filesystem For AI Agents
+
+* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
+
+* **Key features**: 
+  - Mount multiple resources (cloud storage, databases, communication platforms, SaaS tools) under one filesystem tree
+  - Use standard bash commands (`grep`, `cat`, `cp`, `wc`) across all mounted services
+  - Two-layer caching system (index + file) with RAM and Redis backends
+  - Portable workspaces that can be cloned, snapshotted, and versioned
+  - Native integrations with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
+  - Available as Python and TypeScript SDKs, plus a CLI for direct agent integration
+
+* **Why it's notable**: Eliminates the complexity of teaching AI agents dozens of different APIs by leveraging the filesystem abstraction and bash vocabulary that LLMs are already trained on. This dramatically simplifies agent development—any LLM familiar with Unix commands can immediately work with any mounted backend without learning new tools. The approach is particularly powerful for coding agents and multi-service workflows that need to compose operations across different platforms as naturally as local file operations.
+
+---
+
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并排挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
+
+* **主要特点**:
+  - 将多种资源(云存储、数据库、通信平台、SaaS 工具)挂载到单一文件系统树下
+  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
+  - 双层缓存系统(索引 + 文件),支持 RAM 和 Redis 后端
+  - 可克隆、快照和版本化的便携式工作空间
+  - 与主流智能体框架原生集成(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 提供 Python 和 TypeScript SDK,以及用于直接智能体集成的 CLI
+
+* **为何值得关注**: 通过利用 LLM 已经训练过的文件系统抽象和 bash 词汇,消除了教 AI 智能体学习数十个不同 API 的复杂性。这极大简化了智能体开发——任何熟悉 Unix 命令的 LLM 都能立即使用任何挂载的后端,无需学习新工具。这种方法对于需要跨不同平台自然组合操作的编码智能体和多服务工作流特别强大,就像操作本地文件一样简单。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+
+### Yao Open Prompts - Chinese AI Prompt Library for Work, Learning, Content, Marketing & Life
+
+* **What it does**: A comprehensive collection of 116 Chinese AI prompts organized by real-world scenarios, extracted from the original "Yao Jingang Prompt Collection" and restructured for open-source use. Each prompt is ready to copy and use, with variables and placeholders for customization.
+
+* **Key features**: 
+  - Covers 9 categories: AI Methods (meta-prompts, reverse engineering), AI Work (contracts, sales, product prototypes, PPT), AI Learning (Feynman questioning, critical thinking), AI Content (49 prompts for writing, video scripts, social media), AI Marketing (25 GEO templates for SEO-to-GEO transition), and more
+  - Includes advanced tools like the RTF Meta-Prompt System V0.6 for generating high-quality prompts
+  - Bilingual support with 116 English prompt mirrors in `prompts-en/`
+  - Structured with YAML frontmatter for versioning, categorization, and maintenance
+  - Automated scripts for catalog generation, quality checks, and webpage building
+
+* **Why it's notable**: Addresses the gap in Chinese-language AI prompt resources by providing production-ready templates for actual business and creative workflows. The repository emphasizes practical usability—removing tutorials, screenshots, and promotional content to keep prompts clean and reusable. With 1,481 stars, it's becoming a go-to resource for Chinese-speaking AI practitioners seeking structured, scenario-based prompts rather than generic examples.
+
+---
+
+### Yao Open Prompts - 中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景
+
+* **功能介绍**: 从《姚金刚提示词合集》整理出的 116 个中文 AI 提示词开源库，按真实场景重新分类。每个提示词保留可复制正文，去除教程、截图和推广内容，支持变量替换后直接使用。
+
+* **主要特点**:
+  - 覆盖 9 大分类：AI 方法（元提示词、反编译）、AI 工作（合同、销售、产品原型、PPT）、AI 学习（费曼提问、批判思维）、AI 内容（49 个写作、短视频、公众号运营提示词）、AI 营销（25 个 GEO 营销实战模板）等
+  - 包含智能元提示词生成系统 V0.6（基于 RTF 框架）等高级工具
+  - 双语支持，`prompts-en/` 目录下完整镜像 116 个英文提示词
+  - 采用 YAML frontmatter 统一管理版本、分类和标签
+  - 提供自动化脚本生成目录、质量检查和网页导航
+
+* **为何值得关注**: 填补中文 AI 提示词资源空白，提供面向实际业务和创作流程的生产级模板。仓库强调实用性——剔除教程、截图和推广内容，保持提示词简洁可复用。获得 1,481 星标，正成为中文 AI 从业者寻找结构化、场景化提示词的首选资源，而非泛泛的示例合集。
+
+**[View Repository / 查看仓库](https://github.com/yaojingang/yao-open-prompts)**
+
+### 🎬 When You Hire a Free Intern Part 2
+
+**Channel:** Sheryians Coding School
+
+* A humorous short video depicting common scenarios when working with unpaid/free interns in tech
+* Likely showcases relatable coding workplace situations, intern mistakes, or learning moments
+* Worth watching for a quick laugh and insight into the realities of internship culture in software development, especially for those in coding education or hiring
+
+---
+
+### 🎬 当你雇佣免费实习生 第2部分
+
+**频道:** Sheryians Coding School
+
+* 幽默短视频,展现科技行业雇佣免费实习生时的常见场景
+* 可能呈现职场中易产生共鸣的编程情境、实习生犯的错误或学习时刻
+* 值得观看以获得快速笑点,并了解软件开发实习文化的真实面貌,特别适合从事编程教育或招聘的人群
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KtCGh89J8RY)**
+
+### 🎬 How to Build an App With Claude Code - Full Tutorial for Beginners
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on building applications using Claude Code, Anthropic's AI-powered coding assistant
+* Key topics discussed: Step-by-step app development process, Claude Code features and capabilities, practical implementation examples, deployment strategies with Hostinger
+* Why it's worth watching: Perfect for beginners wanting to leverage AI coding tools to accelerate app development, with hands-on guidance from an experienced tech educator
+
+---
+
+### 🎬 如何使用 Claude Code 构建应用 - 新手完整教程
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面讲解如何使用 Anthropic 的 AI 编程助手 Claude Code 构建应用程序，专为初学者设计的详细教程
+* 主要话题: 应用开发的分步流程、Claude Code 的功能特性、实际应用案例演示、使用 Hostinger 进行部署的策略
+* 为何值得观看: 适合想要利用 AI 编程工具加速应用开发的初学者，由经验丰富的技术教育者提供实操指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GUgxx6fMiR8)**
+
+### 🎬 ✅ Hyperlink in Excel
+
+**Channel:** Accounts Expert
+
+* What the video covers: A quick tutorial demonstrating how to create and use hyperlinks in Microsoft Excel
+* Key topics discussed: Hyperlink functionality in Excel, practical applications for linking cells, sheets, or external resources
+* Why it's worth watching: Short, focused tip perfect for Excel users looking to improve navigation and organization in their spreadsheets; relevant for Excel 2025 and other versions
+
+---
+
+### 🎬 ✅ Excel 中的超链接功能
+
+**频道:** Accounts Expert
+
+* 视频内容概述: 快速教程，演示如何在 Microsoft Excel 中创建和使用超链接
+* 主要话题: Excel 超链接功能、链接单元格、工作表或外部资源的实际应用
+* 为何值得观看: 简短而专注的技巧，适合希望改善电子表格导航和组织的 Excel 用户；适用于 Excel 2025 及其他版本
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GMlf9Q6uxu0)**
 
