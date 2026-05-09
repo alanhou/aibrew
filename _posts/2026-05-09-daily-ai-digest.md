@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 09, 2026"
 date: 2026-05-09
-description: "Today's digest: 13 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：13篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 16 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：16篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -796,4 +796,225 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **讽刺的现实**：作者的客户现在有了一个不知道营业时间或价格的聊天机器人,但它就在那里——就像其他所有人的一样。
 
 **[Read Original / 阅读原文](https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md)**
+
+<!-- [Title-Only] -->
+### Internet Archive Switzerland
+
+* Based on the title, this article likely covers a Swiss-based initiative or mirror of the Internet Archive, possibly providing localized access to digital preservation services in Switzerland
+* This might be interesting to readers concerned about digital preservation, data sovereignty, and ensuring redundant access to archived web content—especially given recent legal challenges faced by the main Internet Archive. A Swiss presence could offer additional legal protections and geographic redundancy for preserving internet history
+
+### 瑞士互联网档案馆
+
+* 根据标题推测，这篇文章可能介绍了一个位于瑞士的互联网档案馆项目或镜像站点，为瑞士地区提供本地化的数字保存服务
+* 对于关注数字保存、数据主权以及确保存档网络内容冗余访问的读者来说，这个话题值得关注——特别是考虑到主互联网档案馆最近面临的法律挑战。瑞士站点可能为保存互联网历史提供额外的法律保护和地理冗余
+
+---
+
+**Note:** This introduction is based solely on the article title, as the actual content could not be fetched. The article may cover different or additional aspects not reflected here.
+
+**注意：** 此简介仅基于文章标题撰写，因为无法获取实际内容。文章可能涵盖此处未反映的不同或额外方面。
+
+**[Read Original / 阅读原文](https://internetarchive.ch/)**
+
+### On Forking the Web: Building a Simpler Alternative to Current Web Standards
+
+* **Core Problem**: The current HTML specification is 18.3 MiB and changes weekly, making it nearly impossible to build compliant browsers without constant updates
+* **Simplicity Goal**: Constrain the entire specification to fit in 1.44 MiB compressed (floppy disk size), ensuring diverse browsers can be built with low effort
+* **Semantic Versioning**: Use strict version numbers (1.2.3) where published versions never change—typos get patch bumps, new features get minor bumps, breaking changes get major bumps
+* **Strict Grammar**: Enforce a non-ambiguous formal grammar that rejects non-compliant pages, preventing the need for error-correction rules and forcing specification improvements in later versions
+* **Text-First Philosophy**: Prioritize written text as the primary medium for information transfer, similar to printed books, with responsive wrapping for different screen sizes
+* **No Scripting**: Remove JavaScript entirely—interactive features should use native programs with standardized protocols (like Geo URIs for maps) rather than browser-based VMs
+* **Standard Capture Resistance**: Design mechanisms to prevent monopolistic entities from controlling the standard and artificially increasing complexity to reduce competition
+* **Non-Goal**: Not attempting to replicate all Web features, but rather create a specification for human knowledge exchange without requiring a full VM to read content
+
+---
+
+### 关于分叉 Web：构建更简单的 Web 标准替代方案
+
+* **核心问题**：当前 HTML 规范有 18.3 MiB 大小且每周变化，使得构建符合标准的浏览器几乎不可能，需要持续更新
+* **简洁性目标**：将整个规范限制在 1.44 MiB 压缩大小内（软盘容量），确保可以低成本构建多样化的浏览器
+* **语义化版本控制**：使用严格的版本号（1.2.3），已发布版本永不更改——错别字修正提升补丁版本，新功能提升次版本，破坏性更改提升主版本
+* **严格语法**：强制使用无歧义的形式化语法，拒绝不符合规范的页面，避免实现错误修正规则，促使规范在后续版本中改进
+* **文本优先理念**：优先使用书面文字作为信息传递的主要媒介，类似印刷书籍，支持不同屏幕尺寸的响应式换行
+* **无脚本**：完全移除 JavaScript——交互功能应使用标准化协议的原生程序（如地图使用 Geo URI），而非基于浏览器的虚拟机
+* **抵抗标准捕获**：设计机制防止垄断实体控制标准并人为增加复杂度以减少竞争
+* **非目标**：不试图复制所有 Web 功能，而是创建一个用于人类知识交流的规范，无需完整虚拟机即可阅读内容
+
+**[Read Original / 阅读原文](https://dillo-browser.org/lab/web-fork/)**
+
+### Making Julia as Fast as C++: Optimizing High-Performance Computing
+
+* **Julia's promise**: Combines Python-like syntax with C++/FORTRAN-level performance through JIT compilation and features like multiple dispatch and explicit type declaration
+* **Real-world optimization case**: Demonstrates performance tuning using the vortex particle method from aerodynamics, an N-body problem with O(N²) computational complexity
+* **Key challenge**: While Julia's high-level syntax is accessible, achieving peak performance requires understanding optimization techniques specific to the language
+* **Problem domain**: Computing velocity and velocity Jacobian induced by N vortex particles using Winckelmans' regularizing kernel—a computationally intensive particle-to-particle interaction calculation
+* **Practical approach**: Shows the iterative process of code optimization from initial implementation to high-performance computing, bridging the gap between ease of use and execution speed
+
+---
+
+### 让 Julia 达到 C++ 的性能：高性能计算优化实践
+
+* **Julia 的优势**：通过即时编译（JIT）将类 Python 语法与 C++/FORTRAN 级别的性能相结合，支持多重分派和显式类型声明等特性
+* **实际优化案例**：使用空气动力学中的涡粒子方法演示性能调优，这是一个计算复杂度为 O(N²) 的 N 体问题
+* **核心挑战**：虽然 Julia 的高级语法易于上手，但要达到峰值性能需要掌握该语言特定的优化技术
+* **问题领域**：使用 Winckelmans 正则化核计算 N 个涡粒子产生的速度和速度雅可比矩阵——一个计算密集型的粒子间相互作用计算
+* **实用方法**：展示从初始实现到高性能计算的代码优化迭代过程，在易用性和执行速度之间架起桥梁
+
+**[Read Original / 阅读原文](https://flow.byu.edu/posts/julia-c++)**
+
+### UI-TARS-desktop - Multimodal AI Agent Stack for Desktop Automation
+
+* **What it does**: A comprehensive multimodal AI agent platform that brings GUI automation and vision capabilities to your terminal, desktop, and browser. Ships as two projects: Agent TARS (CLI/Web UI for general agent tasks) and UI-TARS Desktop (native desktop app for computer/browser control).
+
+* **Key features**: 
+  - One-click CLI with headful Web UI and headless server execution
+  - Hybrid browser agent supporting GUI Agent, DOM, and hybrid control strategies
+  - Event Stream protocol for context engineering and agent UI development
+  - MCP (Model Context Protocol) integration for connecting real-world tools
+  - Local and remote computer/browser operators powered by UI-TARS model
+  - Supports multiple LLM providers (Anthropic Claude, Volcengine Doubao, etc.)
+
+* **Why it's notable**: Trending with 850 stars today as ByteDance's open-source solution for building human-like AI agents. Demonstrates practical GUI automation with impressive showcases like booking flights, hotels, and generating charts. The project bridges cutting-edge multimodal LLMs with real-world automation through seamless tool integration, offering both developer-friendly CLI tools and end-user desktop applications.
+
+---
+
+### UI-TARS-desktop - 多模态 AI 智能体桌面自动化平台
+
+* **功能介绍**: 综合性多模态 AI 智能体平台,将 GUI 自动化和视觉能力引入终端、桌面和浏览器。包含两个项目:Agent TARS(用于通用智能体任务的 CLI/Web UI)和 UI-TARS Desktop(用于计算机/浏览器控制的原生桌面应用)。
+
+* **主要特点**:
+  - 一键启动 CLI,支持可视化 Web UI 和无头服务器执行
+  - 混合浏览器智能体,支持 GUI Agent、DOM 和混合控制策略
+  - 事件流协议驱动上下文工程和智能体 UI 开发
+  - MCP(模型上下文协议)集成,连接真实世界工具
+  - 基于 UI-TARS 模型的本地和远程计算机/浏览器操作器
+  - 支持多个 LLM 提供商(Anthropic Claude、火山引擎豆包等)
+
+* **为何值得关注**: 今日获得 850 星标,是字节跳动开源的构建类人 AI 智能体解决方案。通过预订机票、酒店、生成图表等实际案例展示了强大的 GUI 自动化能力。该项目通过无缝工具集成,将前沿多模态大语言模型与真实世界自动化连接起来,既提供开发者友好的 CLI 工具,也提供面向最终用户的桌面应用程序。
+
+**[View Repository / 查看仓库](https://github.com/bytedance/UI-TARS-desktop)**
+
+### agentmemory - Persistent Memory System for AI Coding Agents
+
+* **What it does**: Provides persistent, searchable memory for AI coding agents (Claude Code, Cursor, Gemini CLI, etc.) so they remember context across sessions without re-explaining. Automatically captures agent actions, compresses them into searchable memories, and injects relevant context when needed.
+
+* **Key features**: 95.2% retrieval accuracy (R@5), 92% token reduction, zero external databases required, 51 MCP tools, 12 auto-hooks, works with any MCP-compatible agent via shared memory server, real-time viewer, knowledge graphs with confidence scoring, hybrid search (vector + BM25), 827 passing tests.
+
+* **Why it's notable**: Solves the persistent problem of AI agents forgetting context between sessions. Built on the viral GitHub gist (1050+ stars) extending Karpathy's LLM Wiki pattern. Achieves dramatic cost savings (~$10/year vs ~$500 for LLM-summarized approaches) while maintaining high accuracy. Universal compatibility means one memory server works across all your coding agents. Gained 400 stars today due to practical solution to a widespread pain point.
+
+---
+
+### agentmemory - AI 编程助手的持久化记忆系统
+
+* **功能介绍**: 为 AI 编程助手(Claude Code、Cursor、Gemini CLI 等)提供持久化、可搜索的记忆功能,使其能够跨会话记住上下文,无需重复解释。自动捕获助手操作,压缩为可搜索的记忆,并在需要时注入相关上下文。
+
+* **主要特点**: 95.2% 检索准确率(R@5),减少 92% token 使用,无需外部数据库,提供 51 个 MCP 工具,12 个自动钩子,通过共享内存服务器支持所有 MCP 兼容助手,实时查看器,带置信度评分的知识图谱,混合搜索(向量 + BM25),827 个测试通过。
+
+* **为何值得关注**: 解决了 AI 助手在会话间丢失上下文的持久性问题。基于病毒式传播的 GitHub Gist(1050+ 星标)构建,扩展了 Karpathy 的 LLM Wiki 模式。在保持高准确率的同时实现显著成本节约(每年约 10 美元 vs LLM 摘要方案的 500 美元)。通用兼容性意味着一个内存服务器可服务所有编程助手。今日获得 400 星标,因其切实解决了广泛存在的痛点问题。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/agentmemory)**
+
+### Hello-Agents - A Comprehensive Guide to Building AI Agents from Scratch
+
+* **What it does**: A systematic, open-source tutorial that teaches developers how to build AI-native agents from foundational theory to practical implementation, covering everything from basic agent concepts to multi-agent systems and reinforcement learning.
+
+* **Key features**: 
+  - 16 comprehensive chapters spanning agent fundamentals, LLM basics, classic paradigms (ReAct, Plan-and-Solve), framework development, and advanced topics like memory systems, communication protocols, and Agentic-RL
+  - Hands-on projects including a custom agent framework (HelloAgents), intelligent travel assistant, automated research agent, and a simulated cyber town
+  - Bilingual content (Chinese/English) with both online reading and PDF downloads
+  - Practical code examples for low-code platforms (Coze, Dify, n8n) and popular frameworks (AutoGen, AgentScope, LangGraph)
+  - Community-contributed content including interview questions, best practices, and GUI agent tutorials
+
+* **Why it's notable**: Addresses the critical gap in systematic, practice-oriented agent development education as the industry shifts from "model wars" to "agent era" in 2025. Unlike workflow-driven platforms, this focuses on building true AI-native agents by understanding core principles rather than just using frameworks. The project has gained significant traction with 1,162 stars today, offering a complete learning path from beginner to building production-ready multi-agent applications.
+
+---
+
+### Hello-Agents - 从零开始构建智能体的完整指南
+
+* **功能介绍**: 由 Datawhale 社区打造的系统性智能体学习教程,从基础理论到实战应用全面讲解如何构建 AI 原生智能体,涵盖单智能体到多智能体系统的完整开发流程。
+
+* **主要特点**:
+  - 16章完整内容体系,包括智能体基础、大语言模型、经典范式(ReAct、Plan-and-Solve)、框架开发、记忆系统、通信协议、Agentic-RL 等高级主题
+  - 实战项目包括自研智能体框架 HelloAgents、智能旅行助手、自动化深度研究智能体、赛博小镇模拟等
+  - 中英双语内容,提供在线阅读和 PDF 下载
+  - 涵盖低代码平台(Coze、Dify、n8n)和主流框架(AutoGen、AgentScope、LangGraph)的实践代码
+  - 社区贡献精选包含面试题总结、最佳实践、GUI Agent 实战等扩展内容
+
+* **为何值得关注**: 在 2025 年"Agent 元年"背景下,填补了系统性、重实践的智能体教程空白。不同于流程驱动的软件工程类 Agent,本教程专注于构建真正的 AI 驱动智能体,强调理解核心原理而非仅使用框架。项目今日获得 1,162 星标,为开发者提供从入门到构建生产级多智能体应用的完整学习路径,完全开源免费。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/hello-agents)**
+
+### 🎬 Apple's first logo was...complicated
+**Channel:** freeCodeCamp.org
+
+* What the video covers: The evolution of Apple's logo from its original complex design to the iconic bitten apple symbol recognized worldwide today
+* Key topics discussed: Apple's original logo design, the historical context behind the first logo, and the transition to the modern minimalist branding
+* Why it's worth watching: A quick history lesson that reveals the surprising origins of one of the world's most recognizable tech brands, offering insight into how Apple's visual identity evolved alongside its products
+
+### 🎬 苹果的第一个标志非常复杂
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 探索苹果标志从最初复杂的设计演变为今天全球认知的咬了一口的苹果图标的历程
+* 主要话题: 苹果最初的标志设计、第一个标志背后的历史背景，以及向现代简约品牌形象的转变过程
+* 为何值得观看: 一堂简短的历史课，揭示了全球最知名科技品牌之一令人惊讶的起源，深入了解苹果的视觉识别系统如何随其产品一同演进
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UH2XXGPh0N0)**
+
+### 🎬 How to Build an App With Claude Code - Full Tutorial for Beginners
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on building applications using Claude Code, Anthropic's AI-powered coding assistant
+* Key topics discussed: Step-by-step app development process, Claude Code features and capabilities, practical implementation examples, deployment strategies with Hostinger
+* Why it's worth watching: Perfect for beginners wanting to leverage AI coding tools to accelerate app development, with hands-on guidance from an experienced tech educator
+
+---
+
+### 🎬 如何使用 Claude Code 构建应用 - 新手完整教程
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面讲解如何使用 Anthropic 的 AI 编程助手 Claude Code 构建应用程序，专为初学者设计
+* 主要话题: 应用开发的分步流程、Claude Code 的功能特性、实际应用示例、使用 Hostinger 的部署策略
+* 为何值得观看: 适合想要利用 AI 编程工具加速应用开发的初学者，由经验丰富的技术教育者提供实操指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GUgxx6fMiR8)**
+
+### 🎬 OpenAI Codex Full Course 4 Hours: Build & Ship
+**Channel:** Aniket Panjwani
+
+* **What the video covers:** A comprehensive 4-hour course on OpenAI Codex, focusing on practical application—building and shipping real projects using Codex's code generation capabilities.
+
+* **Key topics discussed:** Hands-on development with Codex, project workflows from concept to deployment, integration techniques, and best practices for leveraging AI-powered coding tools in production environments.
+
+* **Why it's worth watching:** This is a deep-dive tutorial for developers who want to move beyond basic experimentation with AI coding assistants. The extended format allows for complete project walkthroughs, making it valuable for anyone looking to integrate Codex into their development workflow or ship AI-assisted applications.
+
+---
+
+### 🎬 OpenAI Codex 完整课程 4 小时：构建与发布
+**频道:** Aniket Panjwani
+
+* **视频内容概述:** 一门关于 OpenAI Codex 的综合性 4 小时课程，专注于实际应用——使用 Codex 的代码生成能力构建和发布真实项目。
+
+* **主要话题:** Codex 实战开发、从概念到部署的项目工作流、集成技术，以及在生产环境中利用 AI 驱动编码工具的最佳实践。
+
+* **为何值得观看:** 这是一个深度教程，适合希望超越 AI 编码助手基础实验的开发者。超长的课程时长允许完整的项目演练，对于想要将 Codex 集成到开发工作流或发布 AI 辅助应用的人来说非常有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=j7d5rs0iMlE)**
+
+### 🎬 Build Unlimited AI Games for FREE (Guide Included)
+**Channel:** Hasan Aboul Hasan
+
+* What the video covers: A comprehensive guide on building games using AI tools without coding knowledge, demonstrating multiple game examples created entirely with AI assistance
+* Key topics discussed: Free AI-powered game development workflows, practical demonstrations of building various game types, step-by-step processes for non-developers to create functional games, tools and platforms for AI-assisted game creation
+* Why it's worth watching: Perfect for aspiring game developers with no coding background who want to leverage AI to bring their game ideas to life quickly and cost-effectively; includes actionable guide and real examples built in minimal time
+
+---
+
+### 🎬 免费用AI构建无限游戏(含指南)
+**频道:** Hasan Aboul Hasan
+
+* 视频内容概述: 全面指导如何使用AI工具在无需编程知识的情况下构建游戏,展示多个完全由AI辅助创建的游戏实例
+* 主要话题: 免费AI驱动的游戏开发工作流程、各类游戏的实际构建演示、非开发者创建功能性游戏的分步流程、AI辅助游戏创作的工具和平台
+* 为何值得观看: 非常适合没有编程背景但想利用AI快速且经济地实现游戏创意的游戏开发爱好者;包含可操作的指南和短时间内构建的真实案例
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Aj2LoQ8hcSQ)**
 
