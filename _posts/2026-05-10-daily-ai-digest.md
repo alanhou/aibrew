@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 10, 2026"
 date: 2026-05-10
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -575,4 +575,148 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 简短而专注的技巧，适合希望改善电子表格导航和组织的 Excel 用户；适用于 Excel 2025 及其他版本
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=GMlf9Q6uxu0)**
+
+### The Serial TTL Connector We Deserve
+
+* **Problem**: Embedded device debugging typically requires messy, unreliable Dupont jumper cables dangling from RX/TX/GND pins, which are fragile, unsafe, and prone to breaking with repeated use
+* **Proposed Solution**: Use Julet connectors (M6 variant) - sturdy, waterproof (IP68) connectors originally designed for e-bikes that already carry serial TTL signals along with high voltage
+* **Key Advantages**: Robust plug-and-play design with no polarity guessing, readily available pre-made pigtails from AliExpress, rated for 3A 0-24V DC, and much cleaner installation
+* **Implementation Details**: Author uses color-coded wiring convention (blue=GND, red/black=RX/TX with arrow marking on Dupont connector indicating RX), separate 1-pin ground header for flexibility
+* **Scalability**: 5-pin and 6-pin Julet variants are backwards compatible with 3-pin plugs, allowing future expansion while maintaining compatibility with simple USB-TTL adapters
+* **Voltage Differentiation**: 3.3V signals use M6 connectors; author suggests M8 for 5V and HiGo Micro Q connectors for non-standard voltages (1.8V/2.5V)
+
+### 我们应得的串行 TTL 连接器
+
+* **问题描述**：嵌入式设备调试通常需要使用杂乱、不可靠的杜邦跳线连接 RX/TX/GND 引脚，这些线缆脆弱、不安全，反复使用容易损坏
+* **解决方案**：使用 Julet 连接器（M6 型号）——这是一种坚固耐用、防水（IP68）的连接器，最初为电动自行车设计，已被用于传输串行 TTL 信号和高压电
+* **主要优势**：坚固的即插即用设计，无需猜测极性，可从速卖通轻松购买预制线束，额定 3A 0-24V 直流电，安装更加整洁
+* **实施细节**：作者使用颜色编码接线规范（蓝色=GND，红/黑=RX/TX，杜邦连接器上的箭头标记表示 RX），独立的单针接地头提供灵活性
+* **可扩展性**：5 针和 6 针 Julet 变体向后兼容 3 针插头，允许未来扩展同时保持与简单 USB-TTL 适配器的兼容性
+* **电压区分**：3.3V 信号使用 M6 连接器；作者建议 5V 使用 M8，非标准电压（1.8V/2.5V）使用 HiGo Micro Q 连接器
+
+**[Read Original / 阅读原文](https://kohlschuetter.github.io/blog/posts/2026/05/07/serial-ttl-connector/)**
+
+### rlisp: Rust Semantics with LISP Syntax
+
+* **Transparent s-expression frontend** that compiles directly to Rust with no runtime or garbage collection — just `(s-expr → .rs → binary)`
+* **Full Rust feature parity** including ownership, borrowing, lifetimes, generics, traits, and pattern matching, all expressed as s-expressions
+* **Trivial macro system** where macros are compile-time s-expression transformers using `quasiquote`, `unquote`, and `unquote-splicing` — no `proc_macro` complexity
+* **Direct syntax mapping** from LISP forms to Rust constructs: `(fn add ((x i32) (y i32)) i32 (+ x y))` becomes `fn add(x: i32, y: i32) -> i32 { x + y }`
+* **Structural editing advantages** with homogeneous s-expression syntax that's trivial to manipulate with editor tooling (slurp, barf, transpose)
+* **Inline Rust escape hatch** via `(rust "...")` for anything not natively expressed in rlisp syntax
+* **Standard Rust toolchain** handles all type checking, borrow checking, and optimization — rlisp only transforms syntax
+* **CLI workflow** with `rlisp compile`, `rlisp build`, and `rlisp run` commands for transpiling and executing
+
+### rlisp：使用 LISP 语法的 Rust 语义
+
+* **透明的 s-表达式前端**，直接编译为 Rust，无运行时或垃圾回收 — 仅 `(s-expr → .rs → binary)`
+* **完整的 Rust 特性支持**，包括所有权、借用、生命周期、泛型、trait 和模式匹配，全部用 s-表达式表示
+* **简化的宏系统**，宏是编译时的 s-表达式转换器，使用 `quasiquote`、`unquote` 和 `unquote-splicing` — 无需 `proc_macro` 的复杂性
+* **直接的语法映射**，从 LISP 形式到 Rust 结构：`(fn add ((x i32) (y i32)) i32 (+ x y))` 转换为 `fn add(x: i32, y: i32) -> i32 { x + y }`
+* **结构化编辑优势**，同质化的 s-表达式语法易于使用编辑器工具操作（slurp、barf、transpose）
+* **内联 Rust 逃生舱**，通过 `(rust "...")` 表达 rlisp 语法中未原生支持的内容
+* **标准 Rust 工具链**处理所有类型检查、借用检查和优化 — rlisp 仅转换语法
+* **CLI 工作流**，提供 `rlisp compile`、`rlisp build` 和 `rlisp run` 命令用于转译和执行
+
+**[Read Original / 阅读原文](https://github.com/ThatXliner/rust-but-lisp)**
+
+### FreeBSD Critical Security Advisory: Local Privilege Escalation via execve()
+
+* **Vulnerability**: Buffer overflow in execve(2) system call due to operator precedence bug allows unprivileged users to gain root access
+* **Severity**: Critical - CVE-2026-7270 affects all supported FreeBSD versions (13.x, 14.x, 15.x)
+* **Discovered by**: Ryan of Calif.io
+* **Impact**: Attacker-controlled data overwrites adjacent execve() argument buffers, enabling privilege escalation to superuser
+* **No workaround available** - immediate patching required
+* **Fix released**: April 29, 2026 for stable/15, stable/14, stable/13 and all release branches
+* **Remediation**: Update via pkg upgrade, freebsd-update, or apply source patch and recompile kernel; system reboot mandatory
+* **Update methods**: Base system packages (pkg), binary distributions (freebsd-update), or source code patch available
+
+### FreeBSD 严重安全公告：execve() 本地权限提升漏洞
+
+* **漏洞详情**：execve(2) 系统调用中的运算符优先级错误导致缓冲区溢出，允许非特权用户获取 root 权限
+* **严重程度**：严重 - CVE-2026-7270 影响所有受支持的 FreeBSD 版本（13.x、14.x、15.x）
+* **发现者**：Calif.io 的 Ryan
+* **影响范围**：攻击者可控数据覆盖相邻的 execve() 参数缓冲区，实现提权至超级用户
+* **无可用临时解决方案** - 需立即打补丁
+* **修复发布时间**：2026 年 4 月 29 日，覆盖 stable/15、stable/14、stable/13 及所有发行分支
+* **修复方法**：通过 pkg 升级、freebsd-update 或应用源码补丁并重新编译内核；必须重启系统
+* **更新途径**：基础系统包（pkg）、二进制发行版（freebsd-update）或源码补丁三种方式可选
+
+**[Read Original / 阅读原文](https://www.freebsd.org/security/advisories/FreeBSD-SA-26:13.exec.asc)**
+
+### zero-native - Build Native Desktop Apps with Web UI Using Zig
+
+* **What it does**: A Zig-based desktop app shell that lets you build native applications using web frontends (React, Next.js, Vue, Svelte). Choose between lightweight system WebView or bundled Chromium (CEF) for consistent rendering.
+
+* **Key features**: Tiny binaries with system WebView; instant native rebuilds with Zig; JavaScript-to-Zig bridge for native capabilities; explicit security model treating WebView as untrusted; cross-platform support (macOS, Linux, Windows); works with popular web frameworks; optional mobile embedding (iOS/Android).
+
+* **Why it's notable**: Combines the speed and minimal footprint of native apps with the flexibility of web UI development. Unlike Electron, it produces tiny binaries by using platform WebViews. Zig's fast compilation enables rapid iteration on native code while keeping familiar web tooling for frontend work.
+
+---
+
+### zero-native - 使用 Zig 和 Web UI 构建原生桌面应用
+
+* **功能介绍**: 基于 Zig 的桌面应用外壳,让你使用 Web 前端技术(React、Next.js、Vue、Svelte)构建原生应用。可选择轻量级系统 WebView 或捆绑 Chromium(CEF)以获得一致的渲染效果。
+
+* **主要特点**: 使用系统 WebView 生成极小的二进制文件;Zig 实现即时原生重建;JavaScript 到 Zig 的桥接调用原生功能;将 WebView 视为不可信的显式安全模型;跨平台支持(macOS、Linux、Windows);兼容主流 Web 框架;可选移动端嵌入(iOS/Android)。
+
+* **为何值得关注**: 将原生应用的速度和最小内存占用与 Web UI 开发的灵活性相结合。与 Electron 不同,通过使用平台 WebView 生成极小的二进制文件。Zig 的快速编译支持原生代码的快速迭代,同时保留熟悉的 Web 前端工具链。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/zero-native)**
+
+### 🎬 Why Humans Stopped Evolving Smarter 2,000 Years Ago - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses the controversial hypothesis that human cognitive evolution may have plateaued or slowed approximately 2,000 years ago, exploring genetic and anthropological evidence
+* Key topics discussed: Human evolutionary genetics, cognitive selection pressures, population dynamics, the relationship between civilization and biological evolution, and what genetic data reveals about recent human evolution
+* Why it's worth watching: Reich is a leading geneticist whose work on ancient DNA has revolutionized our understanding of human history. This conversation tackles a provocative question at the intersection of genetics, anthropology, and human potential—offering insights into whether modern civilization has altered the evolutionary forces that shaped human intelligence
+
+### 🎬 人类为何在2000年前停止进化得更聪明 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 探讨了一个颇具争议的假说——人类认知进化可能在约2000年前达到平台期或放缓，并分析相关的遗传学和人类学证据
+* 主要话题: 人类进化遗传学、认知选择压力、人口动态、文明与生物进化的关系，以及基因数据揭示的人类近期进化情况
+* 为何值得观看: Reich 是古DNA研究领域的顶尖遗传学家，其工作彻底改变了我们对人类历史的认知。这场对话探讨了遗传学、人类学与人类潜能交汇处的一个provocative问题——现代文明是否改变了塑造人类智力的进化力量
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Af1apxOmS9M)**
+
+### 🎬 I Tried 100+ Claude Code Skills. These 6 Are The Best
+**Channel:** Nate Herk | AI Automation
+
+* **What the video covers:** A comprehensive evaluation of over 100 Claude coding capabilities, distilled down to the 6 most practical and powerful skills for developers and automation enthusiasts.
+
+* **Key topics discussed:** The top 6 Claude code skills that deliver the most value in real-world scenarios, likely covering automation workflows, code generation techniques, debugging strategies, and integration patterns that maximize Claude's coding potential.
+
+* **Why it's worth watching:** Saves you time by filtering through 100+ features to focus on what actually works. Perfect for developers wanting to leverage Claude's coding abilities efficiently without trial-and-error experimentation. Nate Herk specializes in AI automation, so expect actionable, tested recommendations rather than theoretical overviews.
+
+---
+
+### 🎬 我测试了 100 多个 Claude 编程技能，这 6 个最好用
+**频道:** Nate Herk | AI Automation
+
+* **视频内容概述:** 对 Claude 的 100 多项编程能力进行全面评估，精选出 6 个最实用、最强大的技能，适合开发者和自动化爱好者。
+
+* **主要话题:** 介绍在实际场景中最有价值的 6 大 Claude 编程技能，可能涵盖自动化工作流、代码生成技术、调试策略以及最大化 Claude 编程潜力的集成模式。
+
+* **为何值得观看:** 帮你节省时间，从 100 多个功能中筛选出真正有效的技能。非常适合希望高效利用 Claude 编程能力的开发者，无需反复试错。Nate Herk 专注于 AI 自动化领域，视频提供的是经过测试的实用建议，而非理论概述。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eRS3CmvrOvA)**
+
+### 🎬 Vibe Coding Itu Jebakan... Ini Buktinya.
+**Channel:** Zotta
+
+* What the video covers: This video exposes the dark side of "Vibe Coding" - a coding approach driven by intuition and feeling rather than structured planning and best practices
+* Key topics discussed: The illusion of competence that vibe coding creates, accumulating technical debt, potential long-term consequences of coding without proper architecture and testing
+* Why it's worth watching: Essential viewing for developers who rely heavily on intuition-based coding; reveals hidden pitfalls that can sabotage projects and career growth, offering a reality check on popular but potentially harmful development practices
+
+---
+
+### 🎬 Vibe Coding 其实是个陷阱...这就是证据
+**频道:** Zotta
+
+* 视频内容概述: 本视频深入剖析"氛围编程"(Vibe Coding)的阴暗面——一种依靠直觉和感觉而非结构化规划和最佳实践的编程方式
+* 主要话题: 氛围编程制造的能力假象、不断累积的技术债务、缺乏适当架构和测试的编程方式可能带来的长期后果
+* 为何值得观看: 对于严重依赖直觉式编程的开发者来说是必看内容；揭示了可能破坏项目和职业发展的隐藏陷阱，为流行但潜在有害的开发实践提供了现实警示
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uHpuueEEjlA)**
 
