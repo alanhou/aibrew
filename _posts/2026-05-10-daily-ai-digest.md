@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 10, 2026"
 date: 2026-05-10
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -823,4 +823,55 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IVjeZvC3Ji8)**
+
+### Rotten Dot Com: A Memoir of Early Internet Transgression
+
+* A personal essay recounting the author's first encounter with Rotten.com in 1999 as an 11-year-old building a PC with her brother in California
+* Describes Rotten.com as a shock site featuring graphic death and gore images, presented with clinical detachment on a plain HTML interface
+* The site was launched in 1996 by Thomas E. Dell (alias "Soylent") as a free speech challenge to the Communications Decency Act
+* Rotten positioned itself as testing censorship boundaries by posting technically legal but grotesque public-domain content
+* The author and her friend "Milo" used Rotten imagery to fuel elaborate trolling campaigns in AOL chat rooms, particularly targeting Christian communities
+* Reflects on early internet culture of shock sites (Goatse, Tubgirl, LemonParty) and the grammar of trolling that emerged in the late 1990s/early 2000s
+* Explores themes of childhood exposure to extreme content, the lawless freedom of early internet spaces, and how transgressive material shaped a generation's online behavior
+* Connects historical internet censorship debates (CDA in 1996) to modern legislation like FOSTA-SESTA (2018) that reshaped online platforms
+
+### 腐烂网站：早期互联网越界行为回忆录
+
+* 个人回忆文章，讲述作者1999年11岁时在加州与哥哥组装电脑，首次接触Rotten.com网站的经历
+* 描述Rotten.com是一个展示死亡和血腥图像的震惊网站，以临床式冷漠态度呈现在简陋的HTML界面上
+* 该网站由托马斯·E·戴尔（化名"Soylent"）于1996年创建，作为对《通信规范法案》的言论自由挑战
+* Rotten通过发布技术上合法但令人不适的公共领域内容来测试审查边界
+* 作者和朋友"Milo"利用Rotten的图像在AOL聊天室进行精心策划的恶作剧，特别针对基督教社区
+* 反思早期互联网震惊网站文化（Goatse、Tubgirl、LemonParty）以及1990年代末/2000年代初出现的网络恶搞语法
+* 探讨儿童接触极端内容、早期互联网空间的无法无天自由，以及越界材料如何塑造一代人的在线行为
+* 将历史性互联网审查辩论（1996年CDA法案）与现代立法如FOSTA-SESTA（2018年）联系起来，后者重塑了在线平台
+
+**[Read Original / 阅读原文](https://www.theparisreview.org/blog/2026/05/06/rotten-dot-com/)**
+
+<!-- [Title-Only] -->
+### Idempotency Is Easy Until the Second Request Is Different
+
+* Based on the title, this article likely explores the challenges of implementing idempotency in distributed systems, particularly when dealing with requests that appear identical but contain subtle differences. It probably discusses edge cases where naive idempotency implementations fail, such as when request payloads vary slightly, timing issues occur, or state changes between attempts.
+* Why it might be interesting: Idempotency is a critical concept for building reliable APIs and distributed systems, but the title suggests there are non-obvious pitfalls that developers commonly encounter. This article likely provides practical insights into real-world scenarios where idempotency becomes complex, helping engineers avoid common mistakes when designing retry logic, payment systems, or other operations that must be safely repeatable.
+
+### 幂等性很简单，直到第二个请求不同为止
+
+* 根据标题推测，这篇文章可能探讨了在分布式系统中实现幂等性的挑战，特别是当处理看似相同但实际存在细微差异的请求时。文章可能讨论了简单幂等性实现失效的边界情况，例如请求负载略有不同、时序问题，或两次尝试之间状态发生变化等场景。
+* 为何值得关注：幂等性是构建可靠 API 和分布式系统的关键概念，但标题暗示存在开发者常遇到的非显而易见的陷阱。这篇文章可能提供了关于幂等性变得复杂的真实场景的实用见解，帮助工程师在设计重试逻辑、支付系统或其他必须安全可重复的操作时避免常见错误。
+
+**[Read Original / 阅读原文](https://blog.dochia.dev/blog/idempotency/)**
+
+### Gemini API File Search Now Supports Multimodal Capabilities
+
+* **Custom metadata filtering** - Attach key-value labels (e.g., `department: Legal`, `status: Final`) to unstructured data to scope queries and reduce noise from irrelevant documents, improving RAG workflow speed and accuracy
+* **Page-level citations** - File Search now captures page numbers for indexed information, allowing applications to tie model responses directly to source pages for verification and fact-checking
+* **Simplified implementation** - The File Search tool handles infrastructure complexity for storing and retrieving data, making it easy to upload files and search across them at scale
+
+### Gemini API 文件搜索现已支持多模态功能
+
+* **自定义元数据过滤** - 为非结构化数据附加键值标签(如 `department: Legal`、`status: Final`),在查询时筛选所需数据范围,减少无关文档干扰,提升 RAG 工作流的速度和准确性
+* **页面级引用** - 文件搜索现可捕获索引信息的页码,将模型响应直接关联到源页面,便于用户验证和事实核查
+* **简化实现** - 文件搜索工具处理存储和检索数据的基础设施复杂性,使大规模文件上传和搜索变得简单易用
+
+**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/)**
 
