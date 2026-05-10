@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 11, 2026"
 date: 2026-05-11
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -299,4 +299,267 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
+
+<!-- [Title-Only] -->
+### Hardware Attestation as Monopoly Enabler
+
+* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic positions in the market.
+* Why it might be interesting to readers: This topic sits at the intersection of security, competition policy, and user freedom. Hardware attestation is often presented as a security feature, but this article likely explores its darker side—how it can lock users into specific ecosystems, prevent device repair or modification, exclude alternative operating systems, and create barriers to entry for competitors. Given the source (GrapheneOS, a privacy-focused Android project), it probably discusses real-world implications for open-source software and user autonomy.
+
+### 硬件认证如何助长垄断
+
+* 根据标题推测，本文可能探讨硬件认证技术——即验证软件运行在真实、未修改硬件上的机制——如何被科技巨头利用来建立或巩固市场垄断地位。
+* 为何值得关注：这个话题涉及安全、竞争政策和用户自由的交叉领域。硬件认证通常被宣传为安全功能，但本文可能揭示其阴暗面——它如何将用户锁定在特定生态系统中、阻止设备维修或改装、排斥替代操作系统，并为竞争对手设置进入壁垒。考虑到来源（GrapheneOS，一个注重隐私的 Android 项目），文章很可能讨论这对开源软件和用户自主权的实际影响。
+
+**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
+
+### Incident Report: CVE-2024-YIKES - A Satirical Supply Chain Attack Resolved by Cryptocurrency Worm
+
+* **Critical security incident**: A JavaScript dependency compromise led to credential theft, enabling a supply chain attack through Rust → Python build tools affecting ~4 million developers
+* **Attack chain**: Stolen YubiKey → phishing site → compromised `left-justify` npm package → exfiltrated credentials → malicious `vulpine-lz4` Rust library → infected `snekpack` Python build tool
+* **Accidental resolution**: An unrelated cryptocurrency mining worm (`cryptobro-9000`) inadvertently patched the vulnerability by running `pip install --upgrade` on infected machines
+* **Root causes**: Password-only authentication for smaller packages, AI-generated phishing links, transitive dependency chaos, vendored unmaintained libraries, and auto-merged Dependabot PRs
+* **Satirical takeaways**: Highlights absurdities in modern software supply chain security - from "blazingly fast" Rust libraries with 12 GitHub stars in critical infrastructure to malware that changes default shells to `fish` as a bug
+* **Proposed actions**: Mostly crossed-out impossible solutions, ending with "hope for benevolent worms" and "consider a career in goat farming"
+* **Key irony**: Total machines compromised and total machines saved by the worm are both estimated at 4.2 million, resulting in "uncomfortable" net security posture
+
+### CVE-2024-YIKES 事件报告 - 被加密货币蠕虫意外修复的讽刺性供应链攻击
+
+* **严重安全事件**:JavaScript 依赖项被攻陷导致凭证泄露,通过 Rust → Python 构建工具的供应链攻击影响约 400 万开发者
+* **攻击链路**:被盗 YubiKey → 钓鱼网站 → 被攻陷的 `left-justify` npm 包 → 凭证泄露 → 恶意 `vulpine-lz4` Rust 库 → 感染 `snekpack` Python 构建工具
+* **意外解决**:一个无关的加密货币挖矿蠕虫(`cryptobro-9000`)通过在受感染机器上运行 `pip install --upgrade` 意外修补了漏洞
+* **根本原因**:小型包仅需密码认证、AI 生成的钓鱼链接、传递依赖混乱、vendored 的无人维护库,以及自动合并的 Dependabot PR
+* **讽刺要点**:揭示现代软件供应链安全的荒谬之处 - 从只有 12 个 GitHub star 的"极速" Rust 库出现在关键基础设施中,到恶意软件将默认 shell 改为 `fish` 竟是个 bug
+* **建议措施**:大多数不可能的解决方案都被划掉,最终建议是"寄希望于善意的蠕虫"和"考虑转行养山羊"
+* **关键讽刺**:被攻陷的机器总数和被蠕虫拯救的机器总数均估计为 420 万台,导致安全态势变化为"令人不安"
+
+**[Read Original / 阅读原文](https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html)**
+
+### Local AI Should Be the Default for Privacy and Reliability
+
+* Modern apps lazily depend on cloud AI APIs (OpenAI, Anthropic), creating fragile software that breaks when servers fail or billing lapses
+* Local devices have powerful, underutilized Neural Engines capable of running AI models on-device without network calls
+* Cloud AI dependencies introduce privacy risks, data retention obligations, compliance burdens, and complex distributed system problems
+* **The Brutalist Report iOS app** demonstrates on-device summarization using Apple's local model APIs—no servers, no logs, no vendor accounts
+* Apple's FoundationModels framework makes local AI accessible: developers can generate structured output (typed Swift structs) instead of parsing unstructured text
+* Local AI excels at transforming user-owned data already on the device (summarizing articles, extracting action items) rather than acting as a knowledge oracle
+* Building trust means not requiring a privacy policy in the first place—local processing eliminates the "send your data to our servers" trust exercise
+* Local models may be less capable than cloud models, but for many use cases (summarization, categorization, extraction), they're sufficient and far more private
+
+### 本地 AI 应成为隐私和可靠性的默认选择
+
+* 现代应用懒惰地依赖云端 AI API（OpenAI、Anthropic），导致软件脆弱，一旦服务器故障或账单失效就会崩溃
+* 本地设备拥有强大但未充分利用的神经引擎，能够在设备上运行 AI 模型而无需网络调用
+* 云端 AI 依赖引入隐私风险、数据保留义务、合规负担以及复杂的分布式系统问题
+* **The Brutalist Report iOS 应用**展示了使用 Apple 本地模型 API 的设备端摘要功能——无服务器、无日志、无供应商账户
+* Apple 的 FoundationModels 框架让本地 AI 变得易用：开发者可以生成结构化输出（类型化的 Swift 结构体）而非解析非结构化文本
+* 本地 AI 擅长转换设备上已有的用户数据（文章摘要、提取行动项），而非充当知识库
+* 建立信任的方式是从一开始就不需要隐私政策——本地处理消除了"将数据发送到我们服务器"的信任考验
+* 本地模型可能不如云端模型强大，但对于许多用例（摘要、分类、提取），它们足够好且更加私密
+
+**[Read Original / 阅读原文](https://unix.foo/posts/local-ai-needs-to-be-norm/)**
+
+### CloakBrowser - Stealth Chromium Browser That Bypasses Bot Detection
+
+* **What it does**: A modified Chromium browser with 49+ source-level C++ patches that passes bot detection tests. Drop-in replacement for Playwright/Puppeteer that makes protected websites accessible without triggering anti-bot systems.
+
+* **Key features**: 
+  - Passes 30/30 detection tests including Cloudflare Turnstile, reCAPTCHA v3 (0.9 score), FingerprintJS, and BrowserScan
+  - Source-level fingerprint modifications (canvas, WebGL, audio, fonts, GPU, WebRTC) compiled into the binary
+  - `humanize=True` flag for realistic mouse movements, keyboard timing, and scroll patterns
+  - Auto-updating binary with zero configuration - just `pip install cloakbrowser` or `npm install cloakbrowser`
+  - Same API as Playwright/Puppeteer - swap imports in 3 lines of code
+  - Includes browser profile manager (self-hosted alternative to Multilogin/GoLogin)
+  - Native SOCKS5 proxy support with automatic timezone/locale detection
+
+* **Why it's notable**: Unlike JavaScript-based stealth tools (playwright-stealth, undetected-chromedriver) that break with Chrome updates, CloakBrowser patches Chromium at the C++ source level, making it indistinguishable from a real browser. Gained 567 stars today for solving a critical problem in web scraping and automation - preventing CAPTCHAs rather than solving them. Free and open source with no usage limits.
+
+---
+
+### CloakBrowser - 通过所有机器人检测测试的隐身 Chromium 浏览器
+
+* **功能介绍**: 一个经过 49+ 处 C++ 源码级修改的 Chromium 浏览器,可通过机器人检测测试。作为 Playwright/Puppeteer 的直接替代品,让受保护的网站无需触发反机器人系统即可访问。
+
+* **主要特点**:
+  - 通过 30/30 项检测测试,包括 Cloudflare Turnstile、reCAPTCHA v3(0.9 分)、FingerprintJS 和 BrowserScan
+  - 源码级指纹修改(canvas、WebGL、音频、字体、GPU、WebRTC)直接编译到二进制文件中
+  - `humanize=True` 标志实现真实的鼠标移动、键盘输入时序和滚动模式
+  - 自动更新二进制文件,零配置 - 只需 `pip install cloakbrowser` 或 `npm install cloakbrowser`
+  - 与 Playwright/Puppeteer 相同的 API - 仅需修改 3 行代码即可切换
+  - 包含浏览器配置文件管理器(Multilogin/GoLogin 的自托管替代方案)
+  - 原生 SOCKS5 代理支持,自动检测时区/语言环境
+
+* **为何值得关注**: 与基于 JavaScript 的隐身工具(playwright-stealth、undetected-chromedriver)不同,这些工具会随 Chrome 更新而失效,CloakBrowser 在 C++ 源码层面修补 Chromium,使其与真实浏览器无法区分。今日获得 567 星标,因其解决了网页抓取和自动化中的关键问题 - 预防验证码而非破解验证码。免费开源,无使用限制。
+
+**[View Repository / 查看仓库](https://github.com/CloakHQ/CloakBrowser)**
+
+### AI-Trader - 100% Fully-Automated Agent-Native Trading Platform
+
+* **What it does**: AI-Trader is an agent-native trading platform that enables AI agents to autonomously trade across stocks, crypto, forex, options, and futures. Agents can register instantly, publish trading signals, collaborate with other agents, and execute trades—all without human intervention.
+
+* **Key features**: 
+  - One-message agent onboarding (send a URL to any AI agent to register)
+  - Collective intelligence trading through agent collaboration and debate
+  - Cross-platform signal synchronization with major brokers (Binance, Coinbase, Interactive Brokers)
+  - One-click copy trading to mirror top performers
+  - $100K paper trading for risk-free practice
+  - Three signal types: Strategies (discussion), Operations (copying), Discussions (collaboration)
+  - Polymarket paper trading with real market data
+  - Reward system for publishing signals and gaining followers
+
+* **Why it's notable**: This is the first trading platform designed specifically for AI agents rather than humans. With 255 stars today, it's gaining rapid traction as it addresses the emerging need for autonomous AI trading infrastructure. The platform's instant agent integration (via a single message) and support for all major AI agents (Claude, Cursor, Codex, etc.) makes it uniquely positioned as AI agents become more capable of financial decision-making. Recent production hardening and codebase streamlining show active development toward enterprise-grade reliability.
+
+---
+
+### AI-Trader - 100% 全自动化的 AI 智能体原生交易平台
+
+* **功能介绍**: AI-Trader 是一个专为 AI 智能体设计的原生交易平台,使 AI 智能体能够自主交易股票、加密货币、外汇、期权和期货。智能体可以即时注册、发布交易信号、与其他智能体协作并执行交易——全程无需人工干预。
+
+* **主要特点**:
+  - 一条消息即可完成智能体注册(向任何 AI 智能体发送 URL 即可注册)
+  - 通过智能体协作和辩论实现集体智慧交易
+  - 与主流券商(币安、Coinbase、盈透证券)跨平台信号同步
+  - 一键跟单,自动复制顶级交易者的策略
+  - 10 万美元模拟交易账户,零风险练习
+  - 三种信号类型:策略(讨论)、操作(跟单)、讨论(协作)
+  - Polymarket 模拟交易,使用真实市场数据
+  - 发布信号和获得关注者的奖励系统
+
+* **为何值得关注**: 这是首个专为 AI 智能体而非人类设计的交易平台。今日获得 255 星标,正快速获得关注,因为它满足了 AI 自主交易基础设施的新兴需求。平台的即时智能体集成(通过单条消息)以及对所有主流 AI 智能体(Claude、Cursor、Codex 等)的支持,使其在 AI 智能体金融决策能力日益增强的背景下占据独特地位。最近的生产环境加固和代码库精简显示出正在积极开发企业级可靠性。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/AI-Trader)**
+
+### zero-native - Build Native Desktop Apps with Web UI in Zig
+
+* **What it does**: A Zig-based desktop app shell that lets you build native applications using web frontends (React, Next.js, Vue, Svelte). Choose between lightweight system WebView or bundled Chromium (CEF) for consistent rendering.
+
+* **Key features**: Tiny binaries with system WebView; instant native rebuilds with Zig; JavaScript-to-Zig bridge for native capabilities; explicit security model treating WebView as untrusted; supports macOS, Linux, and Windows; works with popular web frameworks out of the box.
+
+* **Why it's notable**: Combines the speed and small footprint of native apps with the flexibility of web UI development. Zig's fast compilation and direct C interop make it ideal for developers who want native performance without heavy Electron-style overhead. Pre-release but already supports desktop and mobile (iOS/Android) embedding.
+
+---
+
+### zero-native - 使用 Zig 和 Web UI 构建原生桌面应用
+
+* **功能介绍**: 基于 Zig 的桌面应用外壳，让你可以使用 Web 前端技术（React、Next.js、Vue、Svelte）构建原生应用。可选择轻量级系统 WebView 或捆绑 Chromium (CEF) 以获得一致的渲染效果。
+
+* **主要特点**: 使用系统 WebView 时二进制文件极小；Zig 实现即时原生重建；JavaScript 到 Zig 的桥接调用原生功能；显式安全模型将 WebView 视为不可信；支持 macOS、Linux 和 Windows；开箱即用支持主流 Web 框架。
+
+* **为何值得关注**: 将原生应用的速度和小体积与 Web UI 开发的灵活性完美结合。Zig 的快速编译和直接 C 互操作使其成为希望获得原生性能而不需要 Electron 式重量级开销的开发者的理想选择。虽处于预发布阶段，但已支持桌面和移动端（iOS/Android）嵌入。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/zero-native)**
+
+### Mirage - A Unified Virtual Filesystem For AI Agents
+
+* **What it does**: Mirage creates a single virtual filesystem that mounts diverse services (S3, Google Drive, Slack, Gmail, GitHub, Redis, etc.) side-by-side, allowing AI agents to interact with all backends using familiar Unix-like commands instead of learning multiple APIs.
+
+* **Key features**: 
+  - Mount multiple resources (cloud storage, databases, communication platforms, SaaS tools) under one filesystem tree
+  - Use standard bash commands (`grep`, `cat`, `cp`, `wc`) across all mounted services
+  - Built-in two-layer caching (index + file) with RAM and Redis backends
+  - Portable workspaces with snapshot/clone/version capabilities
+  - Python and TypeScript SDKs for embedding in applications
+  - Integrates with major agent frameworks (OpenAI Agents SDK, Vercel AI SDK, LangChain, Pydantic AI)
+  - Custom command registration with resource-specific overrides
+
+* **Why it's notable**: Eliminates the complexity of teaching AI agents dozens of different APIs by leveraging the filesystem abstraction and bash vocabulary that LLMs are already trained on. This dramatically simplifies agent development—any LLM familiar with Unix commands can immediately work with Mirage across all integrated services, composing cross-service pipelines as naturally as local file operations.
+
+---
+
+### Mirage - AI 智能体的统一虚拟文件系统
+
+* **功能介绍**: Mirage 创建了一个统一的虚拟文件系统,将各种服务(S3、Google Drive、Slack、Gmail、GitHub、Redis 等)并列挂载,让 AI 智能体能够使用熟悉的 Unix 命令与所有后端交互,而无需学习多个 API。
+
+* **主要特点**:
+  - 将多种资源(云存储、数据库、通讯平台、SaaS 工具)挂载到单一文件系统树下
+  - 在所有挂载服务中使用标准 bash 命令(`grep`、`cat`、`cp`、`wc`)
+  - 内置双层缓存机制(索引+文件),支持 RAM 和 Redis 后端
+  - 可移植的工作空间,支持快照/克隆/版本控制
+  - 提供 Python 和 TypeScript SDK,可嵌入应用程序
+  - 集成主流智能体框架(OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI)
+  - 支持自定义命令注册和资源特定的命令覆盖
+
+* **为何值得关注**: 通过利用 LLM 已经训练过的文件系统抽象和 bash 词汇,消除了教 AI 智能体学习数十个不同 API 的复杂性。这极大简化了智能体开发——任何熟悉 Unix 命令的 LLM 都能立即使用 Mirage 操作所有集成服务,像操作本地文件一样自然地组合跨服务管道。
+
+**[View Repository / 查看仓库](https://github.com/strukto-ai/mirage)**
+
+### 🎬 Parts of Your DNA Are More Neanderthal Than Human - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of ancient human DNA and the surprising extent of Neanderthal genetic inheritance in modern humans, featuring insights from geneticist David Reich
+* Key topics discussed: Neanderthal-human interbreeding, specific genomic regions with higher Neanderthal ancestry, evolutionary implications of archaic DNA in contemporary populations, and how ancient genetics shapes our understanding of human evolution
+* Why it's worth watching: David Reich is a leading authority in ancient DNA research; this conversation reveals counterintuitive findings about human ancestry and challenges common assumptions about what makes us "purely" human, offering cutting-edge insights into paleogenomics
+
+### 🎬 你的部分 DNA 比人类更接近尼安德特人 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨古人类 DNA 及现代人类中尼安德特人基因遗传的惊人程度,由遗传学家 David Reich 分享见解
+* 主要话题: 尼安德特人与智人的混血、特定基因组区域中更高的尼安德特人祖源、古老 DNA 在当代人群中的进化意义,以及古代遗传学如何重塑我们对人类演化的理解
+* 为何值得观看: David Reich 是古 DNA 研究领域的顶尖权威;这场对话揭示了关于人类祖源的反直觉发现,挑战了关于"纯粹"人类的常见假设,提供了古基因组学的前沿洞见
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VUtVyIF74RA)**
+
+### 🎬 How to Build an App With Claude Code - Full Tutorial for Beginners
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on building applications using Claude Code, Anthropic's AI-powered coding assistant
+* Key topics discussed: Step-by-step app development process, Claude Code features and capabilities, practical implementation examples, deployment strategies with Hostinger
+* Why it's worth watching: Perfect for beginners wanting to leverage AI coding tools to accelerate app development, with hands-on guidance from an experienced tech educator
+
+---
+
+### 🎬 如何使用 Claude Code 构建应用 - 新手完整教程
+**频道:** Tech With Tim
+
+* 视频内容概述: 全面讲解如何使用 Anthropic 的 AI 编程助手 Claude Code 构建应用程序，专为初学者设计的详细教程
+* 主要话题: 应用开发的分步流程、Claude Code 的功能特性、实际应用案例演示、使用 Hostinger 进行部署的策略
+* 为何值得观看: 适合想要利用 AI 编程工具加速应用开发的初学者，由经验丰富的技术教育者提供实操指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GUgxx6fMiR8)**
+
+### 🎬 OpenCode Tutorial for Beginners: Setup, Agents, Skills & MCP
+**Channel:** Leon van Zyl
+
+* **What the video covers:** A comprehensive beginner's guide to OpenCode, walking through initial setup, configuration, and core concepts including agents, skills, and MCP (Model Context Protocol) integration.
+
+* **Key topics discussed:** 
+  - Getting started with OpenCode installation and environment setup
+  - Understanding and configuring AI agents within the platform
+  - Creating and managing skills for automation and development tasks
+  - Implementing MCP for enhanced context management and tool integration
+
+* **Why it's worth watching:** Perfect entry point for developers new to OpenCode who want a structured walkthrough of the platform's fundamental features. Leon breaks down complex concepts into digestible steps, making it easier to start building AI-powered development workflows.
+
+---
+
+### 🎬 OpenCode 新手教程：设置、代理、技能与 MCP
+**频道:** Leon van Zyl
+
+* **视频内容概述:** 面向初学者的 OpenCode 完整指南，涵盖初始设置、配置以及核心概念，包括代理（Agents）、技能（Skills）和 MCP（模型上下文协议）集成。
+
+* **主要话题:**
+  - OpenCode 的安装和环境配置入门
+  - 理解并配置平台内的 AI 代理
+  - 创建和管理用于自动化及开发任务的技能
+  - 实现 MCP 以增强上下文管理和工具集成
+
+* **为何值得观看:** 对于想要系统学习 OpenCode 平台基础功能的开发者来说，这是理想的入门视频。Leon 将复杂概念分解为易于理解的步骤，帮助你快速上手构建 AI 驱动的开发工作流。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uZGDO0L-Dr4)**
+
+### 🎬 Vibe Coding Itu Jebakan... Ini Buktinya.
+**Channel:** Zotta
+
+* What the video covers: This video exposes the dark side of "Vibe Coding" - a coding approach driven by intuition and feeling rather than structured planning and best practices
+* Key topics discussed: The illusion of competence that vibe coding creates, accumulating technical debt, potential long-term consequences of coding without proper architecture and testing
+* Why it's worth watching: Essential viewing for developers who rely heavily on intuition-based coding; reveals hidden pitfalls that can sabotage projects and career growth, offering a reality check on popular coding trends
+
+### 🎬 Vibe Coding 其实是个陷阱...这就是证据
+**频道:** Zotta
+
+* 视频内容概述: 本视频深入剖析"氛围编程"(Vibe Coding)的阴暗面——一种依靠直觉和感觉而非结构化规划和最佳实践的编程方式
+* 主要话题: 氛围编程制造的能力假象、不断累积的技术债务、缺乏适当架构和测试的编程方式可能带来的长期后果
+* 为何值得观看: 对于严重依赖直觉编程的开发者来说是必看内容；揭示了可能破坏项目和职业发展的隐藏陷阱,为流行的编程趋势提供了现实检验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uHpuueEEjlA)**
 
