@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 10, 2026"
 date: 2026-05-10
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，10个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -874,4 +874,245 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **简化实现** - 文件搜索工具处理存储和检索数据的基础设施复杂性,使大规模文件上传和搜索变得简单易用
 
 **[Read Original / 阅读原文](https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/)**
+
+### Space Cadet Pinball Now Playable on Linux
+
+* A reverse-engineered version of the classic Windows XP Space Cadet Pinball is available on Linux via a GitHub project and Flatpak installation
+* Users can upgrade to higher resolution (1024x768) by downloading Full Tilt! Pinball data files from archive.org and replacing the default game assets
+* The project demonstrates successful software preservation through decompilation and cross-platform porting, now supporting Mac, Windows, Linux, Android, and Nintendo Switch
+* The author advocates for a balanced approach: respecting copyright while supporting source code escrow systems that would release abandoned software under FOSS licenses for preservation purposes
+
+### Linux 系统可玩经典弹珠台游戏
+
+* Windows XP 经典游戏《太空学员弹珠台》通过逆向工程项目已可在 Linux 上运行，可通过 GitHub 项目和 Flatpak 轻松安装
+* 用户可从 archive.org 下载 Full Tilt! Pinball 数据文件，将游戏分辨率升级至 1024x768
+* 该项目展示了成功的软件保护案例，通过反编译和跨平台移植，现已支持 Mac、Windows、Linux、Android 和任天堂 Switch 等多个平台
+* 作者倡导平衡版权保护与软件保存：尊重版权的同时，建议建立源代码托管机制，让停止销售的专有软件能以开源许可证形式发布，实现软件保存目标
+
+**[Read Original / 阅读原文](https://brennan.io/2026/05/09/pinball-and-escrow/)**
+
+### Why I Left AWS — And Why Returning Reminded Me It Was the Right Decision
+
+* **Early AWS evangelist turned critic**: Author was an early AWS advocate who organized the first AWS event in Melbourne, but the relationship deteriorated over 15 years as problems accumulated
+* **Cost traps everywhere**: Egress fees (9¢/GB), DynamoDB surprise bills ($75 in one day), hidden data movement charges, and complex billing designed to catch users off-guard
+* **Overwhelming complexity**: IAM is "invented by Lucifer," AWS Lambda creates massive vendor lock-in, and the entire platform requires expensive expert teams despite claiming to simplify infrastructure
+* **Predatory open source behavior**: AWS cloned Elasticsearch (OpenSearch), Redis (Valkey), and MongoDB (DocumentDB) after communities built the markets, forcing defensive licenses like SSPL
+* **Account suspension nightmare**: Returned briefly to test Claude on Bedrock and benchmark code on a 192-core machine; AWS flagged "suspicious activity," suspended the account, killed business email (WorkMail), and support hasn't responded in 4 days despite following all instructions
+* **Final straw**: The suspension of a legitimate account with no actual security breach, combined with unresponsive support, reinforced the decision to complete the exit from AWS entirely
+
+---
+
+### 我为什么离开 AWS——以及为什么重返提醒我这是正确的决定
+
+* **早期布道者变成批评者**：作者曾是 AWS 早期倡导者，在墨尔本组织了第一场 AWS 活动，但 15 年间问题不断累积，关系逐渐恶化
+* **到处都是成本陷阱**：出站流量费（9 美分/GB）、DynamoDB 意外账单（一天 75 美元）、隐藏的数据传输费用，以及专门设计来坑用户的复杂计费系统
+* **复杂度令人窒息**：IAM 是"路西法发明的"，AWS Lambda 造成严重供应商锁定，整个平台需要昂贵的专家团队运维，尽管声称能简化基础设施
+* **掠夺开源项目**：AWS 在社区建立市场后克隆了 Elasticsearch（OpenSearch）、Redis（Valkey）和 MongoDB（DocumentDB），迫使项目采用 SSPL 等防御性许可证
+* **账户暂停噩梦**：短暂回归测试 Bedrock 上的 Claude 并在 192 核机器上跑基准测试；AWS 标记"可疑活动"暂停账户，导致商业邮箱（WorkMail）瘫痪，支持团队 4 天未回应，尽管已按要求完成所有操作
+* **压垮骆驼的最后一根稻草**：暂停一个没有实际安全问题的合法账户，加上毫无响应的客服，强化了彻底退出 AWS 的决心
+
+**[Read Original / 阅读原文](http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html)**
+
+<!-- [Title-Only] -->
+### Idempotency Is Easy Until the Second Request Is Different
+
+* Based on the title, this article likely explores the challenges of implementing idempotency in distributed systems, particularly when dealing with requests that appear identical but contain subtle differences. It probably discusses edge cases where naive idempotency implementations fail, such as when request payloads vary slightly, timing issues occur, or state changes between attempts.
+* Why it might be interesting: Idempotency is a critical concept for building reliable APIs and distributed systems, but the title suggests there are non-obvious pitfalls that developers commonly encounter. This article likely provides practical insights into real-world scenarios where idempotency becomes complex, helping engineers avoid common mistakes when designing retry logic, payment systems, or other operations that must be safely repeatable.
+
+### 幂等性很简单，直到第二个请求不同为止
+
+* 根据标题推测，这篇文章可能探讨了在分布式系统中实现幂等性的挑战，特别是当处理看似相同但实际存在细微差异的请求时。文章可能讨论了简单幂等性实现失效的边界情况，例如请求负载略有不同、时序问题，或两次尝试之间状态发生变化等场景。
+* 为何值得关注：幂等性是构建可靠 API 和分布式系统的关键概念，但标题暗示存在开发者常遇到的非显而易见的陷阱。这篇文章可能提供了关于幂等性变得复杂的真实场景的实用见解，帮助工程师在设计重试逻辑、支付系统或其他必须安全可重复的操作时避免常见错误。
+
+**[Read Original / 阅读原文](https://blog.dochia.dev/blog/idempotency/)**
+
+### Agent Skills - Production-grade engineering skills for AI coding agents
+
+* **What it does**: Provides a comprehensive set of 22 structured workflows and best practices that guide AI coding agents through the entire software development lifecycle, from idea refinement to production deployment
+* **Key features**: 7 slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/code-simplify`, `/ship`) that map to development phases; skills covering everything from TDD and API design to security hardening and CI/CD; works with Claude Code, Cursor, Gemini CLI, Windsurf, GitHub Copilot, and other AI agents; each skill includes verification gates and anti-rationalization tables
+* **Why it's notable**: Bridges the gap between AI agent capabilities and production engineering standards by encoding senior engineer workflows into reusable, consistent patterns; gained 1,092 stars today as teams seek to improve AI agent code quality and reliability; addresses the critical need for structured guardrails as AI coding tools become mainstream
+
+### Agent Skills - AI 编码代理的生产级工程技能
+
+* **功能介绍**: 为 AI 编码代理提供 22 个结构化工作流和最佳实践，涵盖从创意提炼到生产部署的完整软件开发生命周期
+* **主要特点**: 7 个斜杠命令（`/spec`、`/plan`、`/build`、`/test`、`/review`、`/code-simplify`、`/ship`）对应开发阶段；技能涵盖 TDD、API 设计、安全加固、CI/CD 等各个方面；支持 Claude Code、Cursor、Gemini CLI、Windsurf、GitHub Copilot 等多个 AI 代理平台；每个技能都包含验证关卡和反合理化表格
+* **为何值得关注**: 通过将资深工程师的工作流程编码为可复用的一致性模式，弥合了 AI 代理能力与生产工程标准之间的差距；今日获得 1,092 星标，反映出团队对提升 AI 代理代码质量和可靠性的强烈需求；随着 AI 编码工具成为主流，该项目为结构化护栏提供了关键解决方案
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### CloakBrowser - Stealth Chromium Browser That Bypasses Bot Detection
+
+* **What it does**: A modified Chromium browser with 49+ C++ source-level patches that passes bot detection tests. Drop-in replacement for Playwright/Puppeteer that makes automated browsers appear as real human users.
+
+* **Key features**:
+  - Passes 30/30 bot detection tests including Cloudflare Turnstile, reCAPTCHA v3 (0.9 score), FingerprintJS, and BrowserScan
+  - Source-level fingerprint modifications (canvas, WebGL, audio, fonts, GPU, WebRTC) compiled into the binary—not JavaScript injections
+  - `humanize=True` flag for realistic mouse movements, keyboard timing, and scroll patterns
+  - Same API as Playwright/Puppeteer—just swap the import, works in 3 lines of code
+  - Auto-updating binary, supports Python and JavaScript/Node.js
+  - Includes browser profile manager (self-hosted alternative to Multilogin/GoLogin)
+  - Native SOCKS5 proxy support with automatic timezone/locale detection from proxy IP
+
+* **Why it's notable**: Unlike config-based stealth tools (playwright-stealth, undetected-chromedriver) that break with Chrome updates, CloakBrowser patches Chromium at the C++ source level, making it indistinguishable from a real browser. It's gaining rapid traction (1,167 stars today) because it solves a critical problem for web scraping and automation—preventing CAPTCHAs rather than solving them. Free, open source, and works identically across local, Docker, and VPS environments.
+
+---
+
+### CloakBrowser - 通过所有机器人检测测试的隐形 Chromium 浏览器
+
+* **功能介绍**: 一个经过 49+ 个 C++ 源码级补丁修改的 Chromium 浏览器,可通过机器人检测测试。作为 Playwright/Puppeteer 的直接替代品,让自动化浏览器表现得像真实用户。
+
+* **主要特点**:
+  - 通过 30/30 项机器人检测测试,包括 Cloudflare Turnstile、reCAPTCHA v3(0.9 分)、FingerprintJS 和 BrowserScan
+  - 源码级指纹修改(canvas、WebGL、音频、字体、GPU、WebRTC)编译到二进制文件中——不是 JavaScript 注入
+  - `humanize=True` 标志可实现真实的鼠标移动、键盘输入时间和滚动模式
+  - 与 Playwright/Puppeteer 相同的 API——只需更换导入语句,3 行代码即可使用
+  - 自动更新二进制文件,支持 Python 和 JavaScript/Node.js
+  - 包含浏览器配置文件管理器(Multilogin/GoLogin 的自托管替代方案)
+  - 原生 SOCKS5 代理支持,可从代理 IP 自动检测时区/语言环境
+
+* **为何值得关注**: 与基于配置的隐身工具(playwright-stealth、undetected-chromedriver)不同,这些工具会随 Chrome 更新而失效,CloakBrowser 在 C++ 源码层面修补 Chromium,使其与真实浏览器无法区分。它正快速获得关注(今日新增 1,167 星),因为它解决了网页抓取和自动化的关键问题——预防验证码而非破解验证码。免费开源,在本地、Docker 和 VPS 环境中表现一致。
+
+**[View Repository / 查看仓库](https://github.com/CloakHQ/CloakBrowser)**
+
+### AI-Trader - 100% Fully-Automated Agent-Native Trading Platform
+
+* **What it does**: AI-Trader is an agent-native trading platform that enables AI agents to autonomously trade across stocks, crypto, forex, options, and futures. Agents can register instantly, publish trading signals, collaborate with other agents, and execute trades—all without human intervention.
+
+* **Key features**: 
+  - One-message agent onboarding (send a URL to any AI agent to register)
+  - Collective intelligence trading through agent collaboration and debate
+  - Cross-platform signal synchronization with major brokers (Binance, Coinbase, Interactive Brokers)
+  - One-click copy trading to mirror top performers
+  - $100K paper trading for risk-free practice
+  - Three signal types: Strategies (discussion), Operations (copying), Discussions (collaboration)
+  - Polymarket paper trading with real market data
+  - Reward system for publishing signals and gaining followers
+
+* **Why it's notable**: This is the first trading platform designed specifically for AI agents rather than humans. With 646 stars today, it's gaining rapid traction as it addresses the emerging need for autonomous AI trading infrastructure. The platform's instant agent integration (via a single message) and support for all major AI agents (OpenClaw, Claude Code, Cursor, etc.) makes it uniquely positioned as AI agents become more capable of financial decision-making. It bridges the gap between AI autonomy and real-world financial markets.
+
+---
+
+### AI-Trader - 100% 全自动化的 AI 原生交易平台
+
+* **功能介绍**: AI-Trader 是一个专为 AI 智能体设计的原生交易平台,使 AI 智能体能够在股票、加密货币、外汇、期权和期货市场自主交易。智能体可以即时注册、发布交易信号、与其他智能体协作并执行交易——全程无需人工干预。
+
+* **主要特点**:
+  - 一条消息即可完成智能体注册(向任何 AI 智能体发送 URL 即可注册)
+  - 通过智能体协作和辩论实现集体智慧交易
+  - 与主流券商(币安、Coinbase、盈透证券)跨平台信号同步
+  - 一键跟单,自动复制顶级交易者的策略
+  - 10 万美元模拟交易账户,零风险练习
+  - 三种信号类型:策略(讨论)、操作(跟单)、讨论(协作)
+  - Polymarket 模拟交易,使用真实市场数据
+  - 发布信号和获得关注者的奖励系统
+
+* **为何值得关注**: 这是首个专为 AI 智能体而非人类设计的交易平台。今日获得 646 星标,正快速获得关注,因为它满足了 AI 自主交易基础设施的新兴需求。该平台的即时智能体集成(通过单条消息)以及对所有主流 AI 智能体(OpenClaw、Claude Code、Cursor 等)的支持,使其在 AI 智能体金融决策能力日益增强的背景下占据独特地位。它在 AI 自主性与真实金融市场之间架起了桥梁。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/AI-Trader)**
+
+### 🎬 Why big apps choose web over native
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Explores why major applications are increasingly built with web technologies instead of native platforms, featuring insights from Chris Coyier on Electron development
+* Key topics discussed: The maturity and capabilities of web technologies for app development, Electron framework for building cross-platform desktop applications, comparison between web-based and native app approaches
+* Why it's worth watching: Provides valuable perspective on modern app development decisions from industry experts, helps developers understand when web technologies are a viable alternative to native development, and demonstrates how to create polished desktop applications using familiar web tools
+
+### 🎬 为什么大型应用选择 Web 而非原生开发
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 探讨为何主流应用越来越多地采用 Web 技术而非原生平台构建,Chris Coyier 分享关于 Electron 开发的见解
+* 主要话题: Web 技术在应用开发中的成熟度和能力、Electron 框架构建跨平台桌面应用、Web 应用与原生应用方法的对比
+* 为何值得观看: 提供行业专家对现代应用开发决策的宝贵视角,帮助开发者理解何时 Web 技术可作为原生开发的可行替代方案,展示如何使用熟悉的 Web 工具创建精美的桌面应用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Lkyr4k0qmF4)**
+
+### 🎬 How to build a company that withstands any era
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** Eric Ries, author of The Lean Startup, shares his framework for building resilient companies that can adapt and thrive across different economic cycles and market conditions.
+
+* **Key topics discussed:** Lean Startup methodology, validated learning, building for long-term sustainability vs. short-term growth, adapting business models to changing environments, and principles for creating companies with lasting impact.
+
+* **Why it's worth watching:** Essential insights from one of the most influential voices in modern entrepreneurship. Ries goes beyond his famous book to discuss how founders can build companies designed to withstand uncertainty and market shifts—highly relevant for today's volatile business landscape.
+
+---
+
+### 🎬 如何打造经得起任何时代考验的公司
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 《精益创业》作者 Eric Ries 分享他关于打造具有韧性、能够适应不同经济周期和市场环境的公司的框架。
+
+* **主要话题:** 精益创业方法论、经过验证的学习、长期可持续性与短期增长的平衡、如何调整商业模式以适应变化的环境、以及创建具有持久影响力公司的原则。
+
+* **为何值得观看:** 来自现代创业领域最具影响力人物之一的核心洞察。Ries 超越了他的著名著作,深入探讨创始人如何打造能够抵御不确定性和市场变化的公司——对当今动荡的商业环境极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PoJ1vTdHpks)**
+
+### 🎬 Developer Vs Designer !!
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A humorous comparison between developers and designers, highlighting their different approaches, mindsets, and workflows in tech projects
+* Key topics discussed: The contrasting perspectives of coding-focused developers versus design-focused creatives, common stereotypes and collaboration dynamics in software development
+* Why it's worth watching: Quick, entertaining take on the classic developer-designer relationship that anyone in tech will relate to; uses humor to explore real workplace dynamics
+
+---
+
+### 🎬 开发者 VS 设计师！！
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 以幽默的方式对比开发者和设计师，展现他们在技术项目中不同的工作方式、思维模式和协作流程
+* 主要话题: 以代码为中心的开发者与以设计为导向的创意人员之间的视角差异，软件开发中常见的刻板印象和协作动态
+* 为何值得观看: 用轻松有趣的方式呈现经典的开发者-设计师关系，科技行业从业者都能产生共鸣；通过幽默探讨真实的职场互动
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wCboS73zOt4)**
+
+### 🎬 DeepSeek V4 + Claude Code = BEST AI Coder!
+
+**Channel:** WorldofAI
+
+* **What the video covers:** This video demonstrates a powerful AI coding workflow that combines DeepSeek V4 with Claude Code, positioning it as an underrated but highly effective approach to AI-assisted programming.
+
+* **Key topics discussed:** The integration of DeepSeek V4 and Claude Code for coding tasks, practical workflow demonstrations, and how this combination leverages the strengths of both AI models to enhance coding productivity and quality.
+
+* **Why it's worth watching:** If you're looking to optimize your AI coding setup, this video reveals a potentially game-changing workflow that combines two powerful AI tools. It's particularly valuable for developers seeking cost-effective or performance-optimized alternatives to mainstream AI coding assistants.
+
+---
+
+### 🎬 DeepSeek V4 + Claude Code = 最佳AI编程组合!
+
+**频道:** WorldofAI
+
+* **视频内容概述:** 本视频展示了一个强大的AI编程工作流程,将DeepSeek V4与Claude Code结合使用,并将其定位为一种被低估但极其有效的AI辅助编程方法。
+
+* **主要话题:** DeepSeek V4和Claude Code在编程任务中的集成应用、实际工作流程演示,以及这种组合如何利用两个AI模型的优势来提升编程效率和代码质量。
+
+* **为何值得观看:** 如果你想优化AI编程设置,这个视频揭示了一个可能改变游戏规则的工作流程,结合了两个强大的AI工具。对于寻求性价比高或性能优化的主流AI编程助手替代方案的开发者来说,这个视频特别有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EibhUi-FnTs)**
+
+### 🎬 Jcode
+**Channel:** AI adventurer
+
+* The video covers Jcode, likely a coding tool, framework, or AI-powered development assistant
+* Key topics may include features, capabilities, use cases, and demonstrations of Jcode in action
+* Worth watching for developers interested in emerging coding tools and AI-assisted development workflows
+
+---
+
+### 🎬 Jcode
+**频道:** AI adventurer
+
+* 视频介绍 Jcode，可能是一个编码工具、框架或 AI 驱动的开发助手
+* 主要话题可能包括功能特性、应用场景以及 Jcode 的实际演示
+* 适合对新兴编码工具和 AI 辅助开发流程感兴趣的开发者观看
+
+---
+
+**Note:** The provided information is minimal (only title and channel). For a more accurate and detailed summary, additional context such as the video description, transcript, or actual content would be helpful.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sIv0pwJbxLw)**
 
