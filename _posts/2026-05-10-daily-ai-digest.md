@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 10, 2026"
 date: 2026-05-10
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -719,4 +719,108 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 对于严重依赖直觉式编程的开发者来说是必看内容；揭示了可能破坏项目和职业发展的隐藏陷阱，为流行但潜在有害的开发实践提供了现实警示
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=uHpuueEEjlA)**
+
+### ymawky: A Web Server Written in ARM64 Assembly
+
+* **Pure Assembly Implementation**: ymawky is a web server written entirely in ARM64 assembly for Apple Silicon Macs, using direct syscalls without libc
+* **Fork-per-Connection Architecture**: Handles concurrent requests by forking a new process for each connection, with configurable limits (default: 256 max processes)
+* **Static File Serving**: Supports GET, PUT, DELETE, OPTIONS, and HEAD methods with MIME type detection for 50+ file types including web, image, video, audio, and document formats
+* **Security Features**: Includes path traversal protection, symlink blocking, request size limits, atomic PUT operations via temporary files, and 10-second timeout protection against slowloris attacks
+* **HTTP Compliance**: Implements HTTP/1.0 and HTTP/1.1 with proper status codes (200-507), Range request support for video scrubbing, and custom error pages
+* **Configuration Options**: Customizable document root, error page directory, default file, timeout values, upload size limits (default 1GB), and minimum transfer speeds
+* **MacOS-Specific**: Built for MacOS with Xcode Command Line Tools; porting to Linux requires significant changes to syscall conventions, struct layouts, signal handling, and relocation operators
+
+### ymawky：用 ARM64 汇编编写的 Web 服务器
+
+* **纯汇编实现**：ymawky 是一个完全用 ARM64 汇编为 Apple Silicon Mac 编写的 Web 服务器，直接使用系统调用，不依赖 libc
+* **每连接一个进程架构**：通过为每个连接 fork 新进程来处理并发请求，可配置限制（默认：最多 256 个进程）
+* **静态文件服务**：支持 GET、PUT、DELETE、OPTIONS 和 HEAD 方法，可检测 50 多种文件类型的 MIME 类型，包括网页、图像、视频、音频和文档格式
+* **安全特性**：包括路径遍历保护、符号链接阻止、请求大小限制、通过临时文件实现的原子 PUT 操作，以及 10 秒超时保护以防止 slowloris 攻击
+* **HTTP 合规性**：实现 HTTP/1.0 和 HTTP/1.1，支持完整的状态码（200-507）、Range 请求支持视频拖动，以及自定义错误页面
+* **配置选项**：可自定义文档根目录、错误页面目录、默认文件、超时值、上传大小限制（默认 1GB）和最小传输速度
+* **MacOS 专用**：使用 Xcode 命令行工具为 MacOS 构建；移植到 Linux 需要对系统调用约定、结构体布局、信号处理和重定位操作符进行重大修改
+
+**[Read Original / 阅读原文](https://github.com/imtomt/ymawky)**
+
+### The One-Dollar Counterfeiter: How an Elderly Immigrant Fooled the Secret Service for a Decade
+
+* **Emerich Juettner**, an Austrian immigrant and junk collector, counterfeited one-dollar bills in his New York apartment from 1938-1948 using crude techniques—cheap paper, poor ink, and hand-engraved zinc plates with spelling errors.
+
+* **His strategy was brilliance through simplicity**: He exploited the fact that nobody scrutinizes one-dollar bills, released only a handful at a time, and never gave more than one fake bill to any person, ensuring no one lost more than $1.
+
+* **The Secret Service investigation** (Case #880) became their largest and most expensive counterfeiting case, distributing 200,000 warning placards to 10,000 stores over 10 years before schoolboys discovered his zinc plates in a vacant lot after a fire.
+
+* **Public sympathy and light sentencing**: After his 1948 arrest, the 72-year-old became a folk hero. He received only 1 year and 1 day in prison (paroled after 4 months) plus a $1 fine, with the judge citing his complete lack of greed.
+
+* **Hollywood ending**: The 1950 film *Mister 880* immortalized his story, and Juettner earned more from the movie rights than from his entire decade of counterfeiting. He died peacefully in Long Island in 1955 at age 79.
+
+---
+
+### 一美元伪钞大师:老年移民如何骗过特勤局十年
+
+* **埃默里希·尤特纳**(Emerich Juettner)是一位奥地利移民和拾荒者,1938-1948年间在纽约公寓用粗糙技术伪造一美元纸币——廉价纸张、劣质油墨、手工雕刻锌版,甚至有拼写错误。
+
+* **他的策略是化繁为简的天才之举**:利用没人会仔细检查一美元纸币的心理,每次只投放少量假钞,从不给任何人超过一张假币,确保没人损失超过1美元。
+
+* **特勤局的调查**(880号案件)成为他们史上最大、最昂贵的伪钞案,十年间向1万家商店发放了20万张警示海报,直到学童在火灾后的空地上发现了他的锌版才破案。
+
+* **公众同情与轻判**:1948年被捕后,这位72岁老人成为民间英雄。他仅被判1年零1天监禁(4个月后假释)外加1美元罚款,法官称其完全不贪婪是轻判理由。
+
+* **好莱坞结局**:1950年电影《880先生》(*Mister 880*)将他的故事搬上银幕,尤特纳从电影版权中赚的钱比十年伪钞生涯还多。1955年他在长岛平静离世,享年79岁。
+
+**[Read Original / 阅读原文](https://www.amusingplanet.com/2026/05/emerich-juettner-one-dollar.html)**
+
+### CASIO S100X-JC1-U: Japanese Lacquer Craftsmanship Meets Precision Engineering
+
+* Japanese lacquer craftsman Takaji Umeda applied traditional lacquerware techniques to a CASIO industrial product, requiring millimeter-level precision
+* The project presented unique challenges: achieving consistent quality with manually applied lacquer on an industrial product, unlike traditional applications on wood, glass, or metal
+* Japanese lacquer (urushi) has been used for centuries in fine tableware, temple architecture, and farming tools, demonstrating its versatility and cultural significance
+* The development process involved countless adjustments, prototypes, and rigorous inspections to meet industrial standards while preserving artisanal quality
+* The successful fusion of traditional craftsmanship with modern manufacturing represents an uncompromising pursuit of perfection in product design
+
+### CASIO S100X-JC1-U：日本漆艺工艺与精密工程的结合
+
+* 日本漆艺工匠梅田隆司将传统漆器技术应用于 CASIO 工业产品，要求达到毫米级精度
+* 该项目面临独特挑战：在工业产品上手工涂漆并保持一致质量，这与在木材、玻璃或金属等传统材料上的应用不同
+* 日本漆（漆树漆）数百年来被用于精美餐具、寺庙建筑和农具，展现了其多功能性和文化意义
+* 开发过程经历了无数次调整、原型制作和严格检验，在保持工艺品质的同时满足工业标准
+* 传统工艺与现代制造的成功融合，代表了产品设计中对完美的不懈追求
+
+**[Read Original / 阅读原文](https://www.casio.com/jp/basic-calculators/premium/en-s100x-jc1-u/)**
+
+### 🎬 Developer Vs Designer !!
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A humorous comparison between developers and designers, highlighting their different approaches, mindsets, and workflows in tech projects
+* Key topics discussed: The contrasting perspectives of coding-focused developers versus design-focused creatives, common stereotypes and collaboration dynamics in software development
+* Why it's worth watching: Quick, entertaining take on the classic developer-designer relationship that anyone in tech will relate to; uses humor to explore real workplace dynamics
+
+---
+
+### 🎬 开发者 VS 设计师！！
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 以幽默的方式对比开发者和设计师，展现他们在技术项目中不同的工作方式、思维模式和协作流程
+* 主要话题: 以代码为中心的开发者与以设计为导向的创意人员之间的视角差异，软件开发中常见的刻板印象和协作动态
+* 为何值得观看: 用轻松有趣的方式呈现经典的开发者-设计师关系，科技行业从业者都能产生共鸣；通过幽默探讨真实的职场互动
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=wCboS73zOt4)**
+
+### 🎬 Subscribe untuk lebih banyak tips coding!⬆️
+**Channel:** Sisca | Tips AI 🪄
+
+* What the video covers: An introduction to BLACKBOX AI as a coding assistant tool
+* Key topics discussed: How BLACKBOX AI can help unlock coding potential and improve programming skills through AI-powered assistance
+* Why it's worth watching: Useful for developers looking to enhance their coding workflow with AI tools and join a community focused on skill development
+
+### 🎬 订阅获取更多编程技巧!⬆️
+**频道:** Sisca | Tips AI 🪄
+
+* 视频内容概述: 介绍 BLACKBOX AI 作为编程辅助工具的功能
+* 主要话题: BLACKBOX AI 如何帮助开发者释放编程潜力,通过 AI 驱动的辅助功能提升编程技能
+* 为何值得观看: 适合希望通过 AI 工具优化编程工作流程的开发者,并加入专注于技能提升的社区
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IVjeZvC3Ji8)**
 
