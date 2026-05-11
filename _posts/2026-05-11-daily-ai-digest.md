@@ -398,104 +398,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 OpenCode 新手教程：设置、代理、技能与 MCP
-**频道:** Leon van Zyl
-
-* **视频内容概述:** 面向初学者的 OpenCode 完整指南，涵盖初始设置、配置以及核心概念，包括代理（Agents）、技能（Skills）和 MCP（模型上下文协议）集成。
-
-* **主要话题:**
-  - OpenCode 的安装和环境配置入门
-  - 理解并配置平台内的 AI 代理
-  - 创建和管理用于自动化及开发任务的技能
-  - 实现 MCP 以增强上下文管理和工具集成
-
-* **为何值得观看:** 对于想要系统学习 OpenCode 平台基础功能的开发者来说，这是理想的入门视频。Leon 将复杂概念分解为易于理解的步骤，帮助你快速上手构建 AI 驱动的开发工作流。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uZGDO0L-Dr4)**
-
-### 🎬 Vibe Coding Itu Jebakan... Ini Buktinya.
-**Channel:** Zotta
-
-* What the video covers: This video exposes the dark side of "Vibe Coding" - a coding approach driven by intuition and feeling rather than structured planning and best practices
-* Key topics discussed: The illusion of competence that vibe coding creates, accumulating technical debt, potential long-term consequences of coding without proper architecture and testing
-* Why it's worth watching: Essential viewing for developers who rely heavily on intuition-based coding; reveals hidden pitfalls that can sabotage projects and career growth, offering a reality check on popular coding trends
-
-### 🎬 Vibe Coding 其实是个陷阱...这就是证据
-**频道:** Zotta
-
-* 视频内容概述: 本视频深入剖析"氛围编程"(Vibe Coding)的阴暗面——一种依靠直觉和感觉而非结构化规划和最佳实践的编程方式
-* 主要话题: 氛围编程制造的能力假象、不断累积的技术债务、缺乏适当架构和测试的编程方式可能带来的长期后果
-* 为何值得观看: 对于严重依赖直觉编程的开发者来说是必看内容；揭示了可能破坏项目和职业发展的隐藏陷阱,为流行的编程趋势提供了现实检验
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uHpuueEEjlA)**
-
-<!-- [Title-Only] -->
-### Hardware Attestation as Monopoly Enabler
-
-* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic market positions
-* Why it might be interesting: Hardware attestation is increasingly used for security (like SafetyNet on Android or Apple's attestation), but this piece likely explores the darker side—how these technologies can lock users into specific ecosystems, prevent device repair, block custom ROMs, or exclude competitors. Given the source appears to be GrapheneOS (a privacy-focused Android OS), it likely critiques how attestation requirements can prevent users from exercising control over their own devices while benefiting incumbent platform holders.
-
-### 硬件认证作为垄断推手
-
-* 根据标题推测，本文可能探讨硬件认证技术——即验证软件运行在真实、未修改硬件上的机制——如何被科技巨头利用来建立或巩固垄断地位
-* 为何值得关注：硬件认证技术越来越多地用于安全目的（如 Android 的 SafetyNet 或苹果的认证机制），但本文可能揭示其阴暗面——这些技术如何将用户锁定在特定生态系统中，阻止设备维修，封锁自定义 ROM，或排挤竞争对手。鉴于来源似乎是 GrapheneOS（一个注重隐私的 Android 系统），文章很可能批评认证要求如何阻止用户掌控自己的设备，同时让现有平台持有者获益。
-
-**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
-
-### Local AI Should Be the Default for Privacy and Reliability
-
-* Modern apps lazily depend on cloud AI APIs (OpenAI, Anthropic), creating fragile software that breaks when servers fail or billing lapses
-* Local devices have powerful, underutilized Neural Engines capable of running AI models on-device without network calls
-* Cloud AI dependencies introduce privacy risks, data retention obligations, compliance burdens, and complex distributed system problems
-* **The Brutalist Report iOS app** demonstrates on-device summarization using Apple's local model APIs—no servers, no logs, no vendor accounts
-* Apple's FoundationModels framework makes local AI accessible: developers can generate structured output (typed Swift structs) instead of parsing unstructured text
-* Local AI excels at transforming user-owned data already on the device (summarizing articles, extracting action items) rather than acting as a knowledge oracle
-* Building trust means not requiring a privacy policy in the first place—local processing eliminates the "send your data to our servers" trust exercise
-* Local models may be less capable than cloud models, but for many use cases (summarization, categorization, extraction), they're sufficient and far more private
-
-### 本地 AI 应成为隐私和可靠性的默认选择
-
-* 现代应用懒惰地依赖云端 AI API（OpenAI、Anthropic），导致软件脆弱，一旦服务器故障或账单失效就会崩溃
-* 本地设备拥有强大但未充分利用的神经引擎，能够在设备上运行 AI 模型而无需网络调用
-* 云端 AI 依赖引入隐私风险、数据保留义务、合规负担以及复杂的分布式系统问题
-* **The Brutalist Report iOS 应用**展示了使用 Apple 本地模型 API 的设备端摘要功能——无服务器、无日志、无供应商账户
-* Apple 的 FoundationModels 框架让本地 AI 变得易用：开发者可以生成结构化输出（类型化的 Swift 结构体）而非解析非结构化文本
-* 本地 AI 擅长转换设备上已有的用户数据（文章摘要、提取行动项），而非充当知识库
-* 建立信任意味着从一开始就不需要隐私政策——本地处理消除了"将数据发送到我们服务器"的信任考验
-* 本地模型可能不如云端模型强大，但对于许多用例（摘要、分类、提取），它们足够好且更加私密
-
-**[Read Original / 阅读原文](https://unix.foo/posts/local-ai-needs-to-be-norm/)**
-
-### Running Local AI Models on M4 MacBook Pro with 24GB RAM
-
-* **Best working model**: Qwen 3.5-9B (4-bit quantization) runs at ~40 tokens/second with thinking mode enabled, successful tool use, and 128K context window
-* **Setup challenges**: Choosing between Ollama, llama.cpp, or LM Studio; finding models that fit in memory while leaving headroom for other apps; configuring esoteric parameters
-* **Recommended settings for coding**: temperature=0.6, top_p=0.95, top_k=20, with thinking mode enabled via prompt template modification
-* **Tool options**: Works with both Pi and OpenCode AI assistants, each requiring specific JSON configuration files
-* **Performance trade-offs**: Not comparable to SOTA models for complex autonomous tasks, but encourages more engaged, interactive workflow with step-by-step guidance
-* **Key advantage**: Fully local operation with no internet dependency, reducing reliance on big tech platforms
-
-### 在配备 24GB 内存的 M4 MacBook Pro 上运行本地 AI 模型
-
-* **最佳可用模型**：Qwen 3.5-9B（4位量化）运行速度约 40 tokens/秒，支持思考模式、工具调用和 128K 上下文窗口
-* **配置挑战**：需要在 Ollama、llama.cpp 或 LM Studio 之间选择；寻找既能装入内存又为其他应用留有空间的模型；调整各种复杂参数
-* **编码推荐设置**：temperature=0.6, top_p=0.95, top_k=20，通过修改提示模板启用思考模式
-* **工具选项**：可配合 Pi 和 OpenCode AI 助手使用，各需特定的 JSON 配置文件
-* **性能权衡**：无法与最先进模型相比完成复杂自主任务，但鼓励更积极参与的逐步交互式工作流程
-* **核心优势**：完全本地运行，无需互联网连接，减少对大型科技平台的依赖
-
-**[Read Original / 阅读原文](https://jola.dev/posts/running-local-models-on-m4)**
-
-### Cheat on Content - A Self-Evolving Content Performance Prediction System
-
-* **What it does**: Transforms content creation from guesswork into a calibrated experiment loop—score your content, make blind predictions before publishing, retrospect with real data after 3 days, and evolve your scoring rubric based on what actually worked.
-
-* **Key features**: Personal prediction engine that learns from your specific channel history (not generic AI advice), auto-evolving scoring formula that gets sharper with each post, built-in safeguards against self-deception through cross-model audits, and complete workflow integration via shell-based skills for Claude Code/Codex agents.
-
-* **Why it's notable**: Claims to have taken the creator from 0 to 1M followers in one month by turning intuition into measurable, compounding knowledge. Unlike generic AI tools that give everyone the same advice, this builds a custom hit-formula unique to your channel—by month three, you're supposedly 10× sharper at predicting what will work than when you started.
-
----
-
 ### Cheat on Content - 内容创作者的自进化预测系统
 
 * **功能介绍**: 将内容创作从"凭感觉赌博"转变为可校准的实验循环——发布前给内容打分并盲预测表现,发布后3天用真实数据复盘,根据实际效果持续进化你的评分标准。
@@ -577,4 +479,115 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 学习如何用简单易行的方法消除高额设计费用(视频中提到可节省数十万卢比),挑战传统设计工作流程,特别适合预算有限的创业者和小企业
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=S5_AFhMZg44)**
+
+<!-- [Title-Only] -->
+### Hardware Attestation as Monopoly Enabler
+
+* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic positions
+* It probably discusses how attestation requirements can lock users into specific hardware ecosystems, prevent device modifications or alternative operating systems, and create barriers to entry for competitors
+* Why it might be interesting: This topic sits at the intersection of security, user freedom, and market competition. Given the source (GrapheneOS, a privacy-focused Android OS), it likely offers a critical perspective on how security features can be weaponized for anti-competitive purposes, which is particularly relevant as regulators worldwide scrutinize big tech's market power
+
+### 硬件认证作为垄断推手
+
+* 根据标题推测，这篇文章可能探讨硬件认证技术——用于验证软件运行在真实、未修改硬件上的技术——如何被科技巨头利用来建立或巩固垄断地位
+* 文章可能讨论认证要求如何将用户锁定在特定硬件生态系统中，阻止设备修改或安装替代操作系统，并为竞争对手设置进入壁垒
+* 为何值得关注：这个话题处于安全性、用户自由和市场竞争的交叉点。考虑到来源（GrapheneOS，一个注重隐私的 Android 系统），文章可能提供了一个批判性视角，说明安全功能如何被武器化用于反竞争目的，这在全球监管机构审查大型科技公司市场权力的当下尤为相关
+
+**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
+
+### Local AI Should Be the Default for Privacy and Reliability
+
+* Modern apps lazily depend on cloud AI APIs (OpenAI, Anthropic), creating fragile software that breaks when servers fail or billing lapses
+* Local devices have powerful, underutilized Neural Engines capable of running AI models on-device without network calls
+* Cloud AI dependencies introduce privacy risks, data retention obligations, compliance burdens, and complex distributed system problems
+* **The Brutalist Report iOS app** demonstrates on-device summarization using Apple's local model APIs—no servers, no logs, no vendor accounts
+* Apple's FoundationModels framework makes local AI accessible: developers can generate structured output (typed Swift structs) instead of parsing unstructured text
+* Local AI excels at transforming user-owned data already on the device (summarizing articles, extracting action items) rather than acting as a knowledge oracle
+* Building trust means not requiring a privacy policy in the first place—local processing eliminates the "send your data to our servers" trust exercise
+* Local models may be less capable than cloud models, but for many use cases (summarization, categorization, extraction), they're sufficient and far more private
+
+### 本地 AI 应成为隐私和可靠性的默认选择
+
+* 现代应用懒惰地依赖云端 AI API（OpenAI、Anthropic），导致软件脆弱，一旦服务器故障或账单失效就会崩溃
+* 本地设备拥有强大但未充分利用的神经引擎，能够在设备上运行 AI 模型而无需网络调用
+* 云端 AI 依赖引入隐私风险、数据保留义务、合规负担以及复杂的分布式系统问题
+* **The Brutalist Report iOS 应用**展示了使用 Apple 本地模型 API 的设备端摘要功能——无服务器、无日志、无供应商账户
+* Apple 的 FoundationModels 框架让本地 AI 变得易用：开发者可以生成结构化输出（类型化的 Swift 结构体）而非解析非结构化文本
+* 本地 AI 擅长转换设备上已有的用户数据（文章摘要、提取行动项），而非充当知识库
+* 建立信任的方式是从一开始就不需要隐私政策——本地处理消除了"将数据发送到我们服务器"的信任考验
+* 本地模型可能不如云端模型强大，但对于许多用例（摘要、分类、提取），它们足够好且更加私密
+
+**[Read Original / 阅读原文](https://unix.foo/posts/local-ai-needs-to-be-norm/)**
+
+### The Greatest Shot in Television: James Burke's Perfectly Timed Rocket Launch
+
+* **Iconic 80-second clip** from 1978's *Connections* series shows science historian James Burke explaining rocket fuel chemistry while a Saturn V rocket launches perfectly on cue behind him
+* **One-take perfection**: Burke had only one chance to nail the timing as he pointed to the rocket launch, discussing how thermos flasks store frozen liquid hydrogen and oxygen for ignition
+* **Culminating moment** of a 50-minute episode tracing technological evolution from credit cards through knight's armor, canned food, and air conditioning to the Saturn V rocket
+* **18 million YouTube views** have made this the "greatest shot in television" - though it uses clever editing by having Burke walk from a non-time-sensitive shot into the launch frame
+* ***Connections* series** traces surprising links in science and technology history, bearing repeat viewing alongside Carl Sagan's *Cosmos* for its intellectual and visual bravado
+* **Closing line resonance**: "Destination: the moon, or Moscow, the planets, or Peking" - dated a few years ago but relevant again in today's geopolitical climate
+
+### 电视史上最伟大的镜头：科学历史学家詹姆斯·伯克一次成功的完美时机把握
+
+* **标志性的80秒片段**来自1978年《连接》系列，展示科学历史学家詹姆斯·伯克在讲解火箭燃料化学原理时，土星五号火箭恰好在他身后完美发射
+* **一次拍摄完成**：伯克只有一次机会把握时机，当他指向火箭发射时，正在讨论保温瓶如何储存冷冻液态氢和氧以供点火
+* **50分钟节目的高潮时刻**，追溯从信用卡到骑士盔甲、罐头食品、空调，最终到土星五号火箭的技术演变历程
+* **YouTube播放量达1800万次**，使这一镜头被称为"电视史上最伟大的镜头" - 尽管使用了巧妙的剪辑，让伯克从非时间敏感镜头走入发射画面
+* **《连接》系列**追溯科学技术史上令人惊讶的联系，其智识深度和视觉魄力值得与卡尔·萨根的《宇宙》一同反复观看
+* **结束语的时代共鸣**："目的地：月球或莫斯科，行星或北京" - 几年前听起来过时，但在当今地缘政治气候下再次具有现实意义
+
+**[Read Original / 阅读原文](https://www.openculture.com/2024/10/the-greatest-shot-in-television.html)**
+
+### 🎬 ✅ Presentation creation in PowerPoint
+
+**Channel:** Accounts Expert
+
+* What the video covers: A tutorial on creating presentations using Microsoft PowerPoint, focusing on fundamental presentation design and creation techniques
+* Key topics discussed: PowerPoint basics, presentation structure, MS Office functionality for building slide decks
+* Why it's worth watching: Quick, practical guide for users looking to improve their PowerPoint skills, particularly useful for beginners or those needing a refresher on MS Office presentation tools
+
+---
+
+### 🎬 ✅ PowerPoint 演示文稿制作
+
+**频道:** Accounts Expert
+
+* 视频内容概述: 关于使用 Microsoft PowerPoint 创建演示文稿的教程，重点介绍基础的演示文稿设计和制作技巧
+* 主要话题: PowerPoint 基础操作、演示文稿结构、MS Office 幻灯片制作功能
+* 为何值得观看: 适合初学者或需要复习 MS Office 演示工具的用户，提供快速实用的 PowerPoint 技能指导
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=93dKjCC1RNY)**
+
+### 🎬 OpenCode Tutorial for Beginners: Setup, Agents, Skills & MCP
+**Channel:** Leon van Zyl
+
+* **What the video covers:** A comprehensive beginner's guide to OpenCode, walking through initial setup, configuration, and core features including agents, skills, and MCP (Model Context Protocol) integration.
+
+* **Key topics discussed:** 
+  - Getting started with OpenCode installation and setup
+  - Understanding and configuring AI agents within the platform
+  - Working with skills to extend functionality
+  - Implementing MCP for enhanced context management
+  - Practical demonstrations and workflow examples
+
+* **Why it's worth watching:** Perfect entry point for developers new to OpenCode who want a structured walkthrough of the platform's fundamental features. Leon van Zyl provides hands-on guidance that bridges theory and practical implementation, making it easier to start building with OpenCode's agent-based development environment.
+
+---
+
+### 🎬 OpenCode 新手教程：设置、代理、技能与 MCP
+**频道:** Leon van Zyl
+
+* **视频内容概述:** 全面的 OpenCode 入门指南，详细讲解初始设置、配置以及核心功能，包括代理（Agents）、技能（Skills）和 MCP（模型上下文协议）集成。
+
+* **主要话题:**
+  - OpenCode 的安装与初始设置
+  - 理解和配置平台内的 AI 代理
+  - 使用技能扩展功能
+  - 实现 MCP 以增强上下文管理
+  - 实际演示和工作流程示例
+
+* **为何值得观看:** 对于想要系统学习 OpenCode 平台基础功能的开发者来说，这是完美的入门资源。Leon van Zyl 提供了理论与实践相结合的手把手指导，帮助你快速上手 OpenCode 的代理驱动开发环境。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uZGDO0L-Dr4)**
 
