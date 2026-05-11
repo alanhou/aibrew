@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 11, 2026"
 date: 2026-05-11
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，10个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -678,4 +678,102 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 声称展示前所未见的编程速度,可能提供快速开发工作流程的见解或展示令人印象深刻的技术能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=sOyJR6Ikxng)**
+
+### Killed by Apple: A Graveyard of Discontinued Products and Services
+
+* **Digital cemetery tracking Apple's discontinued offerings** - The site catalogs products and services that Apple has shut down over the years
+* **Interactive filtering and sorting capabilities** - Users can browse by category, sort by discontinuation date (newest/oldest), product age (longest/shortest lived), launch date, or alphabetically
+* **Transparency through documentation** - Provides a historical record of Apple's product lifecycle decisions, similar to "Killed by Google" projects
+* **Community resource for tech history** - Serves as a reference for understanding Apple's strategic pivots and product evolution patterns
+
+### 苹果产品墓地：已停产产品与服务档案
+
+* **记录苹果停产产品的数字墓园** - 该网站收录了苹果多年来关闭的产品和服务
+* **交互式筛选和排序功能** - 用户可按类别浏览，按停产日期（最新/最旧）、产品寿命（最长/最短）、发布日期或字母顺序排序
+* **通过文档实现透明化** - 提供苹果产品生命周期决策的历史记录，类似于"Killed by Google"项目
+* **科技历史的社区资源** - 作为理解苹果战略转向和产品演变模式的参考资料
+
+**[Read Original / 阅读原文](https://killedbyapple.theden.sh/)**
+
+<!-- [Title-Only] -->
+### Ratty – A terminal emulator with inline 3D graphics
+
+* Based on the title, this article likely introduces Ratty, a new terminal emulator that supports rendering 3D graphics directly within the terminal interface. This suggests it goes beyond traditional text-based terminals by allowing inline visualization of 3D models, scenes, or data.
+* Why it might be interesting: This could be a game-changer for developers working with 3D graphics, scientific visualization, or CAD tools who want to preview or debug 3D content without leaving their terminal workflow. It represents an innovative approach to terminal capabilities, potentially bridging the gap between command-line efficiency and visual feedback.
+
+### Ratty – 支持内联 3D 图形的终端模拟器
+
+* 根据标题推测，本文可能介绍了 Ratty，一款能够在终端界面内直接渲染 3D 图形的新型终端模拟器。这意味着它突破了传统纯文本终端的限制，允许在终端中内联显示 3D 模型、场景或数据。
+* 为何值得关注：对于从事 3D 图形、科学可视化或 CAD 工具开发的程序员来说，这可能是一个革新性的工具，让他们无需离开终端工作流程就能预览或调试 3D 内容。它代表了终端功能的创新方向，有望在命令行效率和视觉反馈之间架起桥梁。
+
+**[Read Original / 阅读原文](https://ratty-term.org/)**
+
+<!-- [Title-Only] -->
+### Hardware Attestation as Monopoly Enabler
+
+* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic positions in the market.
+* Why it might be interesting: This topic sits at the intersection of security, competition policy, and user freedom. Hardware attestation is often presented as a security feature, but it can also be used to lock users into specific ecosystems, prevent device repair, block alternative operating systems, and exclude competitors. Given the source (GrapheneOS, a privacy-focused Android project), the article likely critiques how attestation mechanisms can be weaponized against open-source alternatives and user choice, making it relevant for anyone concerned about digital rights, antitrust issues, or the future of open computing platforms.
+
+---
+
+### 硬件认证作为垄断推手
+
+* 根据标题推测，本文可能探讨硬件认证技术——即验证软件运行在真实、未修改硬件上的机制——如何被科技巨头利用来建立或巩固市场垄断地位。
+* 为何值得关注：这个话题涉及安全、竞争政策和用户自由的交叉领域。硬件认证通常被宣传为安全功能，但它也可能被用来将用户锁定在特定生态系统中，阻止设备维修，封锁替代操作系统，并排除竞争对手。考虑到来源（GrapheneOS，一个注重隐私的 Android 项目），文章很可能批评认证机制如何被武器化以对抗开源替代方案和用户选择权，这对关注数字权利、反垄断问题或开放计算平台未来的读者都具有重要意义。
+
+**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
+
+### 🎬 Build something real first, then sell it
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Strategies for job seekers to compete with experienced professionals by building and launching real projects
+* Key topics discussed: Creating tangible products, completing projects end-to-end, demonstrating practical skills through shipped work rather than just tutorials or theoretical knowledge
+* Why it's worth watching: Provides actionable advice for breaking into tech by showcasing real-world problem-solving abilities and project ownership, which can differentiate candidates in competitive job markets
+
+### 🎬 先做出真实产品，再推销自己
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 求职者如何通过构建和发布真实项目来与行业资深人士竞争的策略
+* 主要话题: 创建实际产品、完整完成项目、通过已上线的作品展示实践技能，而非仅停留在教程或理论知识层面
+* 为何值得观看: 提供可操作的建议，通过展示真实的问题解决能力和项目主导经验来突破技术行业，帮助求职者在竞争激烈的就业市场中脱颖而出
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=shN9XmVABnY)**
+
+### 🎬 OpenCode Tutorial for Beginners: Setup, Agents, Skills & MCP
+**Channel:** Leon van Zyl
+
+* **What the video covers:** A comprehensive beginner's guide to OpenCode, walking through initial setup and configuration of the development environment
+* **Key topics discussed:** Setting up OpenCode agents, implementing skills/capabilities, integrating Model Context Protocol (MCP) for enhanced AI functionality
+* **Why it's worth watching:** Perfect entry point for developers new to OpenCode who want hands-on guidance through the core features and architecture. Covers the essential building blocks (agents, skills, MCP) needed to start building with OpenCode effectively.
+
+---
+
+### 🎬 OpenCode 新手教程：设置、代理、技能与 MCP
+**频道:** Leon van Zyl
+
+* **视频内容概述:** 全面的 OpenCode 入门指南，详细讲解开发环境的初始设置和配置流程
+* **主要话题:** OpenCode 代理的设置方法、技能/功能的实现方式、模型上下文协议（MCP）的集成以增强 AI 功能
+* **为何值得观看:** 对于想要深入了解 OpenCode 的开发者来说是理想的入门资源，提供核心功能和架构的实操指导。涵盖了使用 OpenCode 进行有效开发所需的基本构建模块（代理、技能、MCP）。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uZGDO0L-Dr4)**
+
+### 🎬 Jcode
+**Channel:** AI adventurer
+
+* The video covers Jcode, likely an AI-powered coding tool or development platform
+* Key topics may include code generation, AI-assisted development workflows, and practical demonstrations
+* Worth watching for developers interested in AI coding assistants and productivity tools that streamline software development
+
+### 🎬 Jcode
+**频道:** AI adventurer
+
+* 视频介绍 Jcode，可能是一款 AI 驱动的编码工具或开发平台
+* 主要话题可能包括代码生成、AI 辅助开发工作流程以及实际演示
+* 适合对 AI 编码助手和提升软件开发效率的工具感兴趣的开发者观看
+
+---
+
+**Note:** The provided information is minimal (only title and channel). For a more accurate and detailed summary, additional context such as the video description, transcript, or actual content would be helpful.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sIv0pwJbxLw)**
 
