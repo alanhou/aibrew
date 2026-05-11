@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 11, 2026"
 date: 2026-05-11
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，10个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -420,135 +420,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 如何打造经得起任何时代考验的公司
-
-**频道:** Lenny's Podcast
-
-* **视频内容概述:** 《精益创业》作者 Eric Ries 分享他关于打造具有韧性公司的框架,帮助企业在不同经济周期和市场环境中适应并蓬勃发展。
-
-* **主要话题:** 精益创业方法论、经过验证的学习、长期可持续性与短期增长的平衡、如何调整商业模式以适应变化的环境,以及创建具有持久影响力公司的核心原则。
-
-* **为何值得观看:** 来自现代创业领域最具影响力人物之一的重要洞见。Ries 超越了他的著名著作,深入探讨创始人如何打造能够抵御不确定性和市场波动的公司——对于在动荡时期创建或扩展业务的任何人都极具参考价值。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PoJ1vTdHpks)**
-
-### 🎬 How Quick Sort can become slow #coding #maths
-**Channel:** Algo Andre
-
-* What the video covers: Explores the performance characteristics of the Quick Sort algorithm and identifies specific input patterns that cause it to degrade from its typical fast performance
-* Key topics discussed: Quick Sort algorithm behavior, worst-case scenarios, performance analysis, and the specific data patterns that trigger slow execution
-* Why it's worth watching: Essential knowledge for developers who need to understand when Quick Sort might not be the best choice, helping avoid performance pitfalls in real-world applications
-
-### 🎬 快速排序如何变慢 #编程 #数学
-**频道:** Algo Andre
-
-* 视频内容概述: 探讨快速排序算法的性能特征,并识别导致其从通常的高速性能降级的特定输入模式
-* 主要话题: 快速排序算法行为、最坏情况场景、性能分析,以及触发慢速执行的特定数据模式
-* 为何值得观看: 对于需要了解何时快速排序可能不是最佳选择的开发者来说是必备知识,有助于在实际应用中避免性能陷阱
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DqTukNSMb6E)**
-
-### 🎬 Timsort - When one algorithm isn't enough #coding #maths
-**Channel:** Algo Andre
-
-* What the video covers: An exploration of Timsort, the hybrid sorting algorithm used in Python's built-in sort functions
-* Key topics discussed: How Timsort combines merge sort and insertion sort strategies to achieve optimal performance on real-world data; why Python chose this algorithm over traditional sorting methods
-* Why it's worth watching: Understanding Timsort reveals why practical algorithm design often requires blending multiple approaches rather than relying on a single technique—essential knowledge for writing efficient code
-
-### 🎬 Timsort - 当一种算法还不够时 #编程 #数学
-**频道:** Algo Andre
-
-* 视频内容概述: 深入讲解 Timsort——Python 内置排序函数所使用的混合排序算法
-* 主要话题: Timsort 如何结合归并排序和插入排序的策略,在真实数据上实现最优性能;Python 为何选择这个算法而非传统排序方法
-* 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
-
-### 🎬 Comment "CODING" to get the full guide and exact prompts! 🚀
-**Channel:** Karthik Naidu
-
-* What the video covers: A cost-effective alternative to hiring expensive designers using AI or automation techniques
-* Key topics discussed: Design automation tricks, cost-saving strategies for startups and businesses, practical implementation methods
-* Why it's worth watching: Learn how to eliminate significant design expenses (described as "lakhs" - hundreds of thousands in Indian currency) with a simple, accessible approach that challenges traditional design workflows
-
-### 🎬 评论"CODING"获取完整指南和精确提示词! 🚀
-**频道:** Karthik Naidu
-
-* 视频内容概述: 介绍一种经济实惠的方法,通过AI或自动化技术替代昂贵的设计师
-* 主要话题: 设计自动化技巧、创业公司和企业的成本节约策略、实用的实施方法
-* 为何值得观看: 学习如何用简单易行的方法消除高额设计费用(视频中提到可节省数十万卢比),挑战传统设计工作流程,特别适合预算有限的创业者和小企业
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=S5_AFhMZg44)**
-
-<!-- [Title-Only] -->
-### Hardware Attestation as Monopoly Enabler
-
-* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic positions
-* It probably discusses how attestation requirements can lock users into specific hardware ecosystems, prevent device modifications or alternative operating systems, and create barriers to entry for competitors
-* Why it might be interesting: This topic sits at the intersection of security, user freedom, and market competition. Given the source (GrapheneOS, a privacy-focused Android OS), it likely offers a critical perspective on how security features can be weaponized for anti-competitive purposes, which is particularly relevant as regulators worldwide scrutinize big tech's market power
-
-### 硬件认证作为垄断推手
-
-* 根据标题推测，这篇文章可能探讨硬件认证技术——用于验证软件运行在真实、未修改硬件上的技术——如何被科技巨头利用来建立或巩固垄断地位
-* 文章可能讨论认证要求如何将用户锁定在特定硬件生态系统中，阻止设备修改或安装替代操作系统，并为竞争对手设置进入壁垒
-* 为何值得关注：这个话题处于安全性、用户自由和市场竞争的交叉点。考虑到来源（GrapheneOS，一个注重隐私的 Android 系统），文章可能提供了一个批判性视角，说明安全功能如何被武器化用于反竞争目的，这在全球监管机构审查大型科技公司市场权力的当下尤为相关
-
-**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
-
-### Local AI Should Be the Default for Privacy and Reliability
-
-* Modern apps lazily depend on cloud AI APIs (OpenAI, Anthropic), creating fragile software that breaks when servers fail or billing lapses
-* Local devices have powerful, underutilized Neural Engines capable of running AI models on-device without network calls
-* Cloud AI dependencies introduce privacy risks, data retention obligations, compliance burdens, and complex distributed system problems
-* **The Brutalist Report iOS app** demonstrates on-device summarization using Apple's local model APIs—no servers, no logs, no vendor accounts
-* Apple's FoundationModels framework makes local AI accessible: developers can generate structured output (typed Swift structs) instead of parsing unstructured text
-* Local AI excels at transforming user-owned data already on the device (summarizing articles, extracting action items) rather than acting as a knowledge oracle
-* Building trust means not requiring a privacy policy in the first place—local processing eliminates the "send your data to our servers" trust exercise
-* Local models may be less capable than cloud models, but for many use cases (summarization, categorization, extraction), they're sufficient and far more private
-
-### 本地 AI 应成为隐私和可靠性的默认选择
-
-* 现代应用懒惰地依赖云端 AI API（OpenAI、Anthropic），导致软件脆弱，一旦服务器故障或账单失效就会崩溃
-* 本地设备拥有强大但未充分利用的神经引擎，能够在设备上运行 AI 模型而无需网络调用
-* 云端 AI 依赖引入隐私风险、数据保留义务、合规负担以及复杂的分布式系统问题
-* **The Brutalist Report iOS 应用**展示了使用 Apple 本地模型 API 的设备端摘要功能——无服务器、无日志、无供应商账户
-* Apple 的 FoundationModels 框架让本地 AI 变得易用：开发者可以生成结构化输出（类型化的 Swift 结构体）而非解析非结构化文本
-* 本地 AI 擅长转换设备上已有的用户数据（文章摘要、提取行动项），而非充当知识库
-* 建立信任的方式是从一开始就不需要隐私政策——本地处理消除了"将数据发送到我们服务器"的信任考验
-* 本地模型可能不如云端模型强大，但对于许多用例（摘要、分类、提取），它们足够好且更加私密
-
-**[Read Original / 阅读原文](https://unix.foo/posts/local-ai-needs-to-be-norm/)**
-
-### The Greatest Shot in Television: James Burke's Perfectly Timed Rocket Launch
-
-* **Iconic 80-second clip** from 1978's *Connections* series shows science historian James Burke explaining rocket fuel chemistry while a Saturn V rocket launches perfectly on cue behind him
-* **One-take perfection**: Burke had only one chance to nail the timing as he pointed to the rocket launch, discussing how thermos flasks store frozen liquid hydrogen and oxygen for ignition
-* **Culminating moment** of a 50-minute episode tracing technological evolution from credit cards through knight's armor, canned food, and air conditioning to the Saturn V rocket
-* **18 million YouTube views** have made this the "greatest shot in television" - though it uses clever editing by having Burke walk from a non-time-sensitive shot into the launch frame
-* ***Connections* series** traces surprising links in science and technology history, bearing repeat viewing alongside Carl Sagan's *Cosmos* for its intellectual and visual bravado
-* **Closing line resonance**: "Destination: the moon, or Moscow, the planets, or Peking" - dated a few years ago but relevant again in today's geopolitical climate
-
-### 电视史上最伟大的镜头：科学历史学家詹姆斯·伯克一次成功的完美时机把握
-
-* **标志性的80秒片段**来自1978年《连接》系列，展示科学历史学家詹姆斯·伯克在讲解火箭燃料化学原理时，土星五号火箭恰好在他身后完美发射
-* **一次拍摄完成**：伯克只有一次机会把握时机，当他指向火箭发射时，正在讨论保温瓶如何储存冷冻液态氢和氧以供点火
-* **50分钟节目的高潮时刻**，追溯从信用卡到骑士盔甲、罐头食品、空调，最终到土星五号火箭的技术演变历程
-* **YouTube播放量达1800万次**，使这一镜头被称为"电视史上最伟大的镜头" - 尽管使用了巧妙的剪辑，让伯克从非时间敏感镜头走入发射画面
-* **《连接》系列**追溯科学技术史上令人惊讶的联系，其智识深度和视觉魄力值得与卡尔·萨根的《宇宙》一同反复观看
-* **结束语的时代共鸣**："目的地：月球或莫斯科，行星或北京" - 几年前听起来过时，但在当今地缘政治气候下再次具有现实意义
-
-**[Read Original / 阅读原文](https://www.openculture.com/2024/10/the-greatest-shot-in-television.html)**
-
-### 🎬 ✅ Presentation creation in PowerPoint
-
-**Channel:** Accounts Expert
-
-* What the video covers: A tutorial on creating presentations using Microsoft PowerPoint, focusing on fundamental presentation design and creation techniques
-* Key topics discussed: PowerPoint basics, presentation structure, MS Office functionality for building slide decks
-* Why it's worth watching: Quick, practical guide for users looking to improve their PowerPoint skills, particularly useful for beginners or those needing a refresher on MS Office presentation tools
-
----
-
 ### 🎬 ✅ PowerPoint 演示文稿制作
 
 **频道:** Accounts Expert
@@ -590,4 +461,221 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 对于想要系统学习 OpenCode 平台基础功能的开发者来说，这是完美的入门资源。Leon van Zyl 提供了理论与实践相结合的手把手指导，帮助你快速上手 OpenCode 的代理驱动开发环境。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=uZGDO0L-Dr4)**
+
+<!-- [Title-Only] -->
+### Hardware Attestation as Monopoly Enabler
+
+* Based on the title, this article likely examines how hardware attestation technologies—which verify that software is running on genuine, unmodified hardware—can be leveraged by dominant tech companies to create or strengthen monopolistic positions in the market.
+* Why it might be interesting to readers: This topic sits at the intersection of security, competition policy, and user freedom. Hardware attestation is often presented as a security feature, but this article likely explores its darker side—how it can lock users into specific ecosystems, prevent device repair or modification, exclude alternative operating systems, and create barriers to entry for competitors. Given the source (GrapheneOS, a privacy-focused Android project), it probably discusses real-world implications for open-source software and user autonomy.
+
+### 硬件认证如何助长垄断
+
+* 根据标题推测，本文可能探讨硬件认证技术——即验证软件运行在真实、未修改硬件上的机制——如何被科技巨头利用来建立或巩固市场垄断地位。
+* 为何值得关注：这个话题涉及安全、竞争政策和用户自由的交叉领域。硬件认证通常被宣传为安全功能，但本文可能揭示其阴暗面——它如何将用户锁定在特定生态系统中、阻止设备维修或改装、排斥替代操作系统，并为竞争对手设置进入壁垒。考虑到来源（GrapheneOS，一个注重隐私的 Android 项目），文章很可能讨论这对开源软件和用户自主权的实际影响。
+
+**[Read Original / 阅读原文](https://grapheneos.social/@GrapheneOS/116550899908879585)**
+
+### Local AI Should Be the Default for Privacy and Reliability
+
+* Modern apps lazily depend on cloud AI APIs (OpenAI, Anthropic), creating fragile software that breaks when servers fail or billing lapses
+* Local devices have powerful, underutilized Neural Engines capable of running AI models on-device without network calls
+* Cloud AI dependencies introduce privacy risks, data retention obligations, compliance burdens, and complex distributed system problems
+* **The Brutalist Report iOS app** demonstrates on-device summarization using Apple's local model APIs—no servers, no logs, no vendor accounts
+* Apple's FoundationModels framework makes local AI accessible: developers can generate structured output (typed Swift structs) instead of parsing unstructured text
+* Local AI excels at transforming user-owned data already on the device (summarizing articles, extracting action items) rather than acting as a knowledge oracle
+* Building trust means not requiring a privacy policy in the first place—local processing eliminates the "send your data to our servers" trust exercise
+* Local models may be less capable than cloud models, but for many use cases (summarization, categorization, extraction), they're sufficient and far more private
+
+### 本地 AI 应成为隐私和可靠性的默认选择
+
+* 现代应用懒惰地依赖云端 AI API（OpenAI、Anthropic），导致软件脆弱，一旦服务器故障或账单失效就会崩溃
+* 本地设备拥有强大但未充分利用的神经引擎，能够在设备上运行 AI 模型而无需网络调用
+* 云端 AI 依赖引入隐私风险、数据保留义务、合规负担以及复杂的分布式系统问题
+* **The Brutalist Report iOS 应用**展示了使用 Apple 本地模型 API 的设备端摘要功能——无服务器、无日志、无供应商账户
+* Apple 的 FoundationModels 框架让本地 AI 变得易用：开发者可以生成结构化输出（类型化的 Swift 结构体）而非解析非结构化文本
+* 本地 AI 擅长转换设备上已有的用户数据（文章摘要、提取行动项），而非充当知识库
+* 建立信任的方式是从一开始就不需要隐私政策——本地处理消除了"将数据发送到我们服务器"的信任考验
+* 本地模型可能不如云端模型强大，但对于许多用例（摘要、分类、提取），它们足够好且更加私密
+
+**[Read Original / 阅读原文](https://unix.foo/posts/local-ai-needs-to-be-norm/)**
+
+### I'm Going Back to Writing Code by Hand: A Developer's Journey from AI-Assisted Coding to Manual Architecture
+
+* **The God Object Problem**: After 234 commits and ~30 weekends of AI-assisted coding, the author's Kubernetes GPU dashboard (k10s) collapsed into a 1,690-line god object where all state, UI components, and business logic merged into one unmaintainable struct
+* **Vibe-Coding Velocity Trap**: Initial development felt magical with 10x speed—features landed quickly because the project was small enough for AI to hold in context, but this velocity masked accumulating architectural debt
+* **The Breaking Point**: Adding a GPU fleet view caused cascading failures across other views (pods, nodes) because shared state in the god object created unpredictable interactions between features
+* **Key Insight - "Em-dash is to AI writing, god-object is to AI coding"**: Just as AI writing overuses em-dashes, AI coding defaults to centralized state management without proper separation of concerns
+* **Human Intervention Required**: The author realized that AI excels at writing features but fails at architecture—developers must define structure and constraints upfront rather than iteratively prompting for features
+* **The Rewrite Decision**: After 7 months, the author is archiving the entire Go codebase and starting from scratch with human-designed architecture, keeping AI as a tool rather than the driver
+* **Lessons for AI-Assisted Development**: Let humans write the architecture, avoid letting AI drive without constraints, recognize that velocity wins can hide structural collapse, and maintain focus to prevent building bloat
+
+### 我要回归手写代码：从 AI 辅助编程到手动架构设计的开发者之旅
+
+* **上帝对象问题**：经过 234 次提交和约 30 个周末的 AI 辅助编程后，作者的 Kubernetes GPU 仪表板（k10s）崩溃成一个 1,690 行的上帝对象，所有状态、UI 组件和业务逻辑都合并到一个无法维护的结构体中
+* **氛围编程的速度陷阱**：初期开发感觉很神奇，速度提升 10 倍——功能快速落地是因为项目足够小，AI 能在上下文中掌握全局，但这种速度掩盖了不断累积的架构债务
+* **崩溃临界点**：添加 GPU 集群视图导致其他视图（pods、nodes）出现连锁故障，因为上帝对象中的共享状态在功能之间产生了不可预测的交互
+* **核心洞察——"破折号之于 AI 写作，正如上帝对象之于 AI 编程"**：就像 AI 写作过度使用破折号一样，AI 编程默认采用集中式状态管理，缺乏适当的关注点分离
+* **需要人工干预**：作者意识到 AI 擅长编写功能但不擅长架构设计——开发者必须预先定义结构和约束，而不是迭代式地提示 AI 添加功能
+* **重写决定**：7 个月后，作者决定归档整个 Go 代码库，从零开始用人工设计的架构重写，将 AI 作为工具而非驱动者
+* **AI 辅助开发的经验教训**：让人类编写架构，避免让 AI 在没有约束的情况下驱动开发，认识到速度优势可能掩盖结构性崩溃，保持专注以防止构建冗余功能
+
+**[Read Original / 阅读原文](https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/)**
+
+### AiToEarn - AI-Powered Content Monetization Platform for Solo Entrepreneurs
+
+* **What it does**: An all-in-one AI automation platform that helps one-person companies (OPC), creators, and brands build, distribute, and monetize content across 12+ global social platforms including TikTok, YouTube, Instagram, Douyin, Xiaohongshu, and more. Provides four core AI agents: Monetize (CPS/CPE/CPM earnings), Publish (multi-platform distribution), Engage (automated interactions), and Create (AI content generation).
+
+* **Key features**: 
+  - Content marketplace with three monetization models (CPS, CPE, CPM)
+  - One-click publishing to 12+ platforms with calendar scheduling
+  - Browser extension for automated engagement (likes, comments, AI replies)
+  - AI content creation agent supporting video generation (Grok, Veo), image generation (Nano Banana), and batch production
+  - MCP protocol support for integration with Claude, Cursor, and other AI assistants
+  - OpenClaw plugin for automated task execution
+  - Docker one-click deployment with relay configuration for OAuth simplification
+
+* **Why it's notable**: Trending with 397 stars today, this TypeScript-based platform addresses the complete creator monetization pipeline with practical AI automation. Stands out for its comprehensive approach—from content creation to distribution to earnings—and flexible deployment options (web, Docker, source code, MCP integration). The relay configuration feature eliminates the need for developers to obtain OAuth credentials from each platform individually, significantly lowering the barrier to entry.
+
+---
+
+### AiToEarn - 面向一人公司的 AI 内容营销变现平台
+
+* **功能介绍**: 一站式 AI 自动化平台,帮助一人公司(OPC)、创作者和品牌在抖音、小红书、TikTok、YouTube、Instagram 等 12+ 全球主流平台上构建、分发和变现内容。提供四大 AI 智能体:Monetize(内容赚钱)、Publish(内容发布)、Engage(内容互动)、Create(内容创作)。
+
+* **主要特点**:
+  - 内容交易市场,支持 CPS(按成交)、CPE(按互动)、CPM(按播放)三种结算模式
+  - 一键分发至 12+ 平台,支持日历排期统一管理
+  - 浏览器插件实现自动点赞、收藏、关注及 AI 智能回复
+  - AI 创作智能体支持视频生成(Grok、Veo)、图片生成(Nano Banana)及批量制作
+  - 支持 MCP 协议,可在 Claude、Cursor 等 AI 助手中直接使用
+  - OpenClaw(龙虾)插件支持自动接收并执行赚钱任务
+  - Docker 一键部署,Relay 配置简化 OAuth 授权流程
+
+* **为何值得关注**: 今日获得 397 星,这个基于 TypeScript 的平台通过实用的 AI 自动化解决了创作者从内容制作到分发再到变现的完整链路。其亮点在于全流程覆盖和灵活的部署方式(网页版、Docker、源码、MCP 集成)。Relay 配置功能让开发者无需逐个平台申请 OAuth 凭据,大幅降低使用门槛,特别适合个人创作者和小团队快速上手。
+
+**[View Repository / 查看仓库](https://github.com/yikart/AiToEarn)**
+
+### SuperSplat - 3D Gaussian Splat Editor
+
+* **What it does**: SuperSplat is a browser-based editor for inspecting, editing, optimizing, and publishing 3D Gaussian Splats—a cutting-edge technique for photorealistic 3D scene representation.
+
+* **Key features**: 
+  - Fully web-based with no installation required
+  - Free and open source
+  - Built with TypeScript on modern web technologies
+  - Supports localization for multiple languages
+  - Integrated with PlayCanvas ecosystem
+  - Real-time editing and optimization tools
+
+* **Why it's notable**: With 579 stars today, SuperSplat addresses the growing demand for accessible tools in the emerging field of Gaussian Splatting. It democratizes 3D scene editing by running entirely in the browser, making advanced 3D graphics technology accessible to creators without requiring powerful local hardware or complex software installations.
+
+---
+
+### SuperSplat - 3D 高斯点云编辑器
+
+* **功能介绍**: SuperSplat 是一款基于浏览器的编辑器,用于检查、编辑、优化和发布 3D 高斯点云(Gaussian Splats)——一种用于真实感 3D 场景表现的前沿技术。
+
+* **主要特点**:
+  - 完全基于 Web,无需下载或安装
+  - 免费且开源
+  - 使用 TypeScript 构建于现代 Web 技术之上
+  - 支持多语言本地化
+  - 与 PlayCanvas 生态系统集成
+  - 实时编辑和优化工具
+
+* **为何值得关注**: SuperSplat 今日获得 579 星标,满足了高斯点云这一新兴领域对易用工具日益增长的需求。它通过完全在浏览器中运行来普及 3D 场景编辑,使创作者无需强大的本地硬件或复杂的软件安装即可使用先进的 3D 图形技术。
+
+**[View Repository / 查看仓库](https://github.com/playcanvas/supersplat)**
+
+### easy-vibe - A Modern Beginner-Friendly Coding Course for the AI Era
+
+* **What it does**: Easy-Vibe is a comprehensive, interactive coding tutorial that teaches complete beginners how to build real applications using AI-assisted development. It guides learners from zero to building full-stack apps, SaaS products, and cross-platform applications through visual tutorials, simulated coding environments, and step-by-step guidance.
+
+* **Key features**: 
+  - Interactive learning with animated explanations of AI principles (diffusion models, RAG systems)
+  - Immersive simulated IDE with virtual mouse guidance
+  - Three-stage learning path: beginner entry, full-stack development, and advanced development
+  - Real user success stories (teachers, students, truck drivers building actual products)
+  - Multi-language support (10+ languages) with 80+ interactive topics
+  - Practical projects including expense trackers, booking systems, SaaS apps with Stripe integration
+  - AI agent-friendly with OpenClaw support and comprehensive appendix knowledge base
+
+* **Why it's notable**: Represents a paradigm shift in coding education for the AI era—teaching beginners to build applications by describing what they want rather than memorizing syntax. With 635 stars today and comprehensive coverage from product prototyping to advanced Claude Code development, it's gaining traction as a practical bridge between non-technical users and modern AI-assisted development. The course emphasizes "if you can talk, you can build apps," making programming accessible to rural teachers, students, and career changers.
+
+---
+
+### easy-vibe - 面向 AI 时代的现代编程入门课程
+
+* **功能介绍**: Easy-Vibe 是一个全面的交互式编程教程,教授零基础学习者如何使用 AI 辅助开发构建真实应用。通过可视化教程、模拟编码环境和分步指导,引导学习者从零开始构建全栈应用、SaaS 产品和跨平台应用程序。
+
+* **主要特点**:
+  - 交互式学习,包含 AI 原理动画讲解(扩散模型、RAG 系统)
+  - 沉浸式模拟 IDE,配有虚拟鼠标引导
+  - 三阶段学习路径:入门、全栈开发、高级开发
+  - 真实用户成功案例(教师、学生、卡车司机构建实际产品)
+  - 多语言支持(10+ 种语言),80+ 个交互式主题
+  - 实战项目包括记账应用、预订系统、集成 Stripe 的 SaaS 应用
+  - 支持 AI 智能体(OpenClaw),配有完整的附录知识库
+
+* **为何值得关注**: 代表了 AI 时代编程教育的范式转变——教初学者通过描述需求而非死记语法来构建应用。今日获得 635 星,内容涵盖从产品原型到 Claude Code 高级开发,正成为连接非技术用户与现代 AI 辅助开发的实用桥梁。课程强调"会说话就会做应用",让乡村教师、学生和转行者都能轻松上手编程。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/easy-vibe)**
+
+### 🎬 How to build a company that withstands any era
+
+**Channel:** Lenny's Podcast
+
+* **What the video covers:** Eric Ries, author of The Lean Startup, shares his framework for building resilient companies that can adapt and thrive across different economic cycles and market conditions.
+
+* **Key topics discussed:** Lean Startup methodology, validated learning, building for long-term sustainability vs. short-term growth, adapting business models to changing environments, and principles for creating companies with lasting impact.
+
+* **Why it's worth watching:** Essential insights from one of the most influential voices in modern entrepreneurship. Ries goes beyond his famous book to discuss how founders can build companies designed to withstand uncertainty and market shifts—highly relevant for today's volatile business landscape.
+
+---
+
+### 🎬 如何打造经得起任何时代考验的公司
+
+**频道:** Lenny's Podcast
+
+* **视频内容概述:** 《精益创业》作者 Eric Ries 分享他关于打造具有韧性、能够适应不同经济周期和市场环境的公司的框架。
+
+* **主要话题:** 精益创业方法论、经过验证的学习、长期可持续性与短期增长的平衡、如何调整商业模式以适应变化的环境、以及创建具有持久影响力公司的原则。
+
+* **为何值得观看:** 来自现代创业领域最具影响力人物之一的核心洞察。Ries 超越了他的著名著作,深入探讨创始人如何打造能够抵御不确定性和市场变化的公司——对当今动荡的商业环境极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PoJ1vTdHpks)**
+
+### 🎬 Timsort - When one algorithm isn't enough #coding #maths
+**Channel:** Algo Andre
+
+* What the video covers: An exploration of Timsort, the hybrid sorting algorithm used in Python's built-in sort functions
+* Key topics discussed: How Timsort combines merge sort and insertion sort strategies to achieve optimal performance on real-world data; why Python chose this algorithm over traditional sorting methods
+* Why it's worth watching: Understanding Timsort reveals why practical algorithm design often requires blending multiple approaches rather than relying on a single technique—essential knowledge for writing efficient code
+
+### 🎬 Timsort - 当一种算法还不够时 #编程 #数学
+**频道:** Algo Andre
+
+* 视频内容概述: 深入讲解 Timsort——Python 内置排序函数所使用的混合排序算法
+* 主要话题: Timsort 如何结合归并排序和插入排序的策略,在真实数据上实现最优性能;Python 为何选择这个算法而非传统排序方法
+* 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
+
+### 🎬 Cosi veloce nella programmazione mai visto!!Primissimo
+
+**Channel:** SIEMILANO Pettine!
+
+* What the video covers: A programming demonstration showcasing exceptionally fast coding techniques
+* Key topics discussed: Speed programming methods, coding efficiency, tutorial-style walkthrough
+* Why it's worth watching: Claims to demonstrate unprecedented programming speed, potentially offering insights into rapid development workflows or showcasing impressive technical skills
+
+### 🎬 编程速度快到前所未见!!首发
+
+**频道:** SIEMILANO Pettine!
+
+* 视频内容概述: 展示极快编程技巧的演示
+* 主要话题: 快速编程方法、编码效率、教程式讲解
+* 为何值得观看: 声称展示前所未见的编程速度,可能提供快速开发工作流程的见解或展示令人印象深刻的技术能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sOyJR6Ikxng)**
 
