@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 12, 2026"
 date: 2026-05-12
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -639,4 +639,59 @@ pin: false
 **Note:** The provided information is minimal (only title and channel). For a more accurate and detailed summary, additional context such as the video description, transcript, or actual content would be helpful.
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=sIv0pwJbxLw)**
+
+### They Live Adblocker: A Satirical Ad-Blocking Browser Extension
+
+* **Concept**: Fork of uBlock Origin Lite that replaces blocked ads with white tiles displaying dystopian slogans from the 1988 film *They Live* (e.g., "OBEY", "CONSUME", "SUBMIT")
+* **Installation**: Download from GitHub releases, extract, and load as unpacked extension in Chromium-based browsers; requires switching filtering mode to "Optimal" or "Complete" to see replacements
+* **Technical approach**: Patches uBO Lite's cosmetic filtering to inject CSS overlays with random phrases instead of hiding ads; uses MutationObserver for dynamic content
+* **Limitations**: Only affects cosmetically-filtered ads (not network-blocked ones), may cause layout shifts, personal hobby project not officially supported by uBlock Origin
+* **Origin**: Inspired by creator's 2015 blog post; built with Node 22, licensed under GPL-3.0
+
+---
+
+### They Live 广告拦截器：讽刺性广告屏蔽浏览器扩展
+
+* **核心概念**：uBlock Origin Lite 的分支版本，将被屏蔽的广告替换为白色方块，显示 1988 年电影《极度空间》中的反乌托邦标语（如"服从"、"消费"、"屈服"）
+* **安装方法**：从 GitHub 发布页下载，解压后在基于 Chromium 的浏览器中加载未打包扩展；需将过滤模式切换至"最佳"或"完整"才能看到替换效果
+* **技术实现**：修改 uBO Lite 的外观过滤机制，注入带随机短语的 CSS 叠加层替代隐藏广告；使用 MutationObserver 处理动态内容
+* **使用限制**：仅影响外观过滤的广告（不包括网络层拦截的广告），可能导致页面布局偏移，属个人爱好项目非 uBlock Origin 官方支持
+* **项目起源**：源自作者 2015 年博客文章构想；使用 Node 22 构建，采用 GPL-3.0 许可证
+
+**[Read Original / 阅读原文](https://github.com/davmlaw/they_live_adblocker)**
+
+### Software Internals Book Club: A Community for Deep Technical Reading
+
+* **Email-based book club** with 2,500+ members reading high-caliber technical books on databases, distributed systems, and software performance
+* **Currently reading** "Operating Systems: Three Easy Pieces" with 300-800 active participants per book
+* **Diverse membership** including undergrads, grad students, early-career and experienced programmers, and founders
+* **Discussion format**: Text-only via Google Group, with weekly chapter recaps and Q&A led by experienced volunteers
+* **Book criteria**: 350-550 pages, specific software topics (not philosophy), completable in ~3 months at 1-2 chapters/week
+* **Target audience**: Senior+ developers, though open to anyone interested in deep technical learning
+* **Sign-up available** to join future reading sessions and stay updated on upcoming books
+
+### 软件内核读书会：深度技术阅读社区
+
+* **基于邮件的读书会**，拥有 2,500+ 名成员，阅读数据库、分布式系统和软件性能等领域的高质量技术书籍
+* **当前阅读**《操作系统：三个简单部分》，每本书有 300-800 名活跃参与者
+* **成员多元化**，包括本科生、研究生、初级和资深程序员以及创业者
+* **讨论形式**：通过 Google Group 纯文字交流，每周由经验丰富的志愿者主持章节回顾和问答
+* **书籍标准**：350-550 页，聚焦具体软件主题（非泛泛而谈的软件哲学），约 3 个月完成，每周 1-2 章
+* **目标受众**：资深及以上开发者，但欢迎所有对深度技术学习感兴趣的人
+* **开放注册**，可加入未来的阅读计划并获取新书更新
+
+**[Read Original / 阅读原文](https://eatonphil.com/bookclub.html)**
+
+<!-- [Title-Only] -->
+### Google says criminal hackers used AI to find a major software flaw
+
+* Based on the title, this article likely covers a significant cybersecurity incident where criminal hackers leveraged artificial intelligence tools to discover a critical vulnerability in software. This represents a notable escalation in the cyber threat landscape, as it demonstrates AI being weaponized for offensive security purposes rather than just defensive ones.
+* This is worth reading because it highlights an emerging trend in cybersecurity: the use of AI by malicious actors to automate vulnerability discovery, potentially accelerating the arms race between attackers and defenders. It also raises important questions about AI safety, responsible AI development, and how organizations need to adapt their security strategies in an AI-enabled threat environment.
+
+### 谷歌称犯罪黑客利用人工智能发现重大软件漏洞
+
+* 根据标题推测，这篇文章可能报道了一起重要的网络安全事件，犯罪黑客利用人工智能工具发现了软件中的关键漏洞。这标志着网络威胁形势的显著升级，表明 AI 正被用于攻击性安全目的，而不仅仅是防御。
+* 值得关注的原因在于，这凸显了网络安全领域的新兴趋势：恶意行为者使用 AI 自动化漏洞发现过程，可能加速攻击者与防御者之间的军备竞赛。这也引发了关于 AI 安全、负责任的 AI 开发，以及组织如何在 AI 驱动的威胁环境中调整安全策略等重要问题。
+
+**[Read Original / 阅读原文](https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html)**
 
