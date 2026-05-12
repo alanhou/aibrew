@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 12, 2026"
 date: 2026-05-12
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -493,4 +493,150 @@ pin: false
 * 为何值得观看: 声称展示前所未有的编程速度,对希望提高编码速度和学习快速开发技术的开发者可能有帮助
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=sOyJR6Ikxng)**
+
+### TanStack npm Supply-Chain Compromise: Critical Security Incident
+
+* **Attack Window**: May 11, 2026, 19:20-19:26 UTC — 84 malicious versions published across 42 @tanstack/* packages
+* **Attack Vector**: Sophisticated three-stage exploit combining GitHub Actions `pull_request_target` vulnerability, cache poisoning across fork boundaries, and OIDC token extraction from runner memory
+* **Detection**: External researcher (ashishkurmi/StepSecurity) identified the compromise within 20 minutes of publication
+* **Payload Behavior**: Malicious install scripts harvested AWS, GCP, Kubernetes, Vault, GitHub, npm, and SSH credentials; exfiltrated data via Session/Oxen encrypted network; self-propagated to other packages
+* **Attack Timeline**: Attacker created fork on May 10, planted malicious commit with fabricated identity, opened benign-looking PR that triggered `pull_request_target` workflows, poisoned GitHub Actions cache, then triggered malicious publishes during legitimate release workflows
+* **Affected Packages**: 42 packages compromised; confirmed clean: @tanstack/query*, table*, form*, virtual*, store, start (meta-package)
+* **Remediation**: All malicious versions deprecated, npm engaged to remove tarballs; **users who installed affected versions must rotate all credentials accessible from install host**
+* **Root Cause**: No npm tokens stolen — attack exploited GitHub Actions OIDC trusted publisher mechanism by extracting tokens from runner process memory during poisoned cache restoration
+
+### TanStack npm 供应链攻击：严重安全事件
+
+* **攻击时间窗口**：2026年5月11日 19:20-19:26 UTC — 42个 @tanstack/* 包的84个恶意版本被发布
+* **攻击手段**：复杂的三阶段攻击，结合了 GitHub Actions `pull_request_target` 漏洞、跨 fork 边界的缓存投毒、以及从运行器内存中提取 OIDC 令牌
+* **检测响应**：外部研究员（ashishkurmi/StepSecurity）在发布后20分钟内发现了入侵
+* **恶意载荷行为**：恶意安装脚本窃取 AWS、GCP、Kubernetes、Vault、GitHub、npm 和 SSH 凭证；通过 Session/Oxen 加密网络外泄数据；自我传播到其他包
+* **攻击时间线**：攻击者于5月10日创建 fork，植入伪造身份的恶意提交，提交看似正常的 PR 触发 `pull_request_target` 工作流，投毒 GitHub Actions 缓存，随后在合法发布工作流期间触发恶意发布
+* **受影响包**：42个包被入侵；已确认安全：@tanstack/query*、table*、form*、virtual*、store、start（元包）
+* **修复措施**：所有恶意版本已弃用，npm 已介入删除压缩包；**安装了受影响版本的用户必须轮换安装主机可访问的所有凭证**
+* **根本原因**：未窃取 npm 令牌 — 攻击利用 GitHub Actions OIDC 可信发布者机制，在恢复被投毒缓存期间从运行器进程内存中提取令牌
+
+**[Read Original / 阅读原文](https://tanstack.com/blog/npm-supply-chain-compromise-postmortem)**
+
+### If AI Writes Your Code, Why Use Python?
+
+**Core Argument:**
+* The traditional trade-off between developer velocity (Python/TypeScript) and performance (Rust/Go/C++) has collapsed because AI models now excel at writing systems languages
+* Strong type systems and fast compiler feedback loops make "hard" languages easier for AI to write correctly than dynamic languages
+
+**Key Evidence:**
+* Microsoft rewrote TypeScript compiler in Go, achieving 10x performance improvement (TypeScript 7.0 beta, 2026)
+* Anthropic researcher built a production C compiler in Rust using 16 parallel Claude agents for $20,000
+* Steve Klabnik created new systems language "Rue" (70,000 lines of Rust) in 2 weeks with Claude
+* Andreas Kling ported Ladybird browser's JavaScript engine from C++ to Rust in 2 weeks using AI assistance
+
+**Ecosystem Shift:**
+* Python's performance-critical libraries increasingly use Rust under the hood (Pydantic, Polars, orjson)
+* Rust tooling adoption in Python ecosystem jumped from 27% to 33% in one year (JetBrains 2025 survey)
+* OpenAI acquired Astral (makers of ruff, uv) and Anthropic acquired Bun, both Rust-based tools
+
+**Cultural Change:**
+* Open-source contribution pattern shifting from "patch" to "port" - developers now port entire libraries to faster languages instead of fixing bugs
+* AI makes cross-language porting economically viable at scale
+
+---
+
+### 如果 AI 编写你的代码，为什么还要用 Python？
+
+**核心论点：**
+* 开发速度（Python/TypeScript）与性能（Rust/Go/C++）之间的传统权衡已经崩溃，因为 AI 模型现在擅长编写系统级语言
+* 强类型系统和快速编译器反馈循环使"困难"语言对 AI 来说比动态语言更容易正确编写
+
+**关键证据：**
+* 微软用 Go 重写了 TypeScript 编译器，性能提升 10 倍（TypeScript 7.0 测试版，2026年）
+* Anthropic 研究员使用 16 个并行 Claude 代理，花费 2 万美元用 Rust 构建了生产级 C 编译器
+* Steve Klabnik 用 Claude 在两周内创建了新系统语言"Rue"（7 万行 Rust 代码）
+* Andreas Kling 使用 AI 辅助在两周内将 Ladybird 浏览器的 JavaScript 引擎从 C++ 移植到 Rust
+
+**生态系统转变：**
+* Python 的性能关键库越来越多地在底层使用 Rust（Pydantic、Polars、orjson）
+* Python 生态系统中 Rust 工具采用率一年内从 27% 跃升至 33%（JetBrains 2025 调查）
+* OpenAI 收购了 Astral（ruff、uv 的制造商），Anthropic 收购了 Bun，两者都是基于 Rust 的工具
+
+**文化变革：**
+* 开源贡献模式从"补丁"转向"移植" - 开发者现在将整个库移植到更快的语言，而不是修复错误
+* AI 使大规模跨语言移植在经济上变得可行
+
+**[Read Original / 阅读原文](https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055)**
+
+### Introducing the Claude Platform on AWS
+
+* **New offering**: Anthropic launches Claude Platform on AWS, a first-of-its-kind service operated directly by Anthropic with all native Claude API features available from day one
+* **Available models**: Claude Opus 4.7, Sonnet 4.6, and Haiku 4.5 are included, with new models shipping as they launch
+* **Native platform features**: Includes prompt caching, batch processing, message streaming, vision capabilities, and tool use functionality
+* **Claude Console access**: Customers get access to Anthropic's development environment with prompt improver, prompt generator, and evaluation tools
+* **Key difference from Bedrock**: Data is processed outside the AWS boundary with Anthropic as the operator, ideal for companies wanting the full Claude Platform experience
+* **Claude on Bedrock alternative**: Remains available for companies with strict regional data residency requirements or those needing data processed exclusively within AWS infrastructure
+* **Availability**: The service is live today with documentation available for developers to get started
+* **Pricing note**: Existing Bedrock private offer customers should contact their account executive before migrating to ensure discounts transfer correctly
+
+### Claude 平台登陆 AWS
+
+* **全新服务**：Anthropic 推出 AWS 上的 Claude 平台，这是首个由 Anthropic 直接运营的服务，从第一天起就提供所有原生 Claude API 功能
+* **可用模型**：包含 Claude Opus 4.7、Sonnet 4.6 和 Haiku 4.5，新模型发布后将同步上线
+* **原生平台功能**：包括提示词缓存、批处理、消息流式传输、视觉能力和工具使用功能
+* **Claude 控制台访问**：客户可使用 Anthropic 的开发环境，包含提示词优化器、提示词生成器和评估工具
+* **与 Bedrock 的关键区别**：数据在 AWS 边界外处理，由 Anthropic 运营，适合希望获得完整 Claude 平台体验的企业
+* **Bedrock 替代方案**：Amazon Bedrock 上的 Claude 仍可用，适合有严格地区数据驻留要求或需要数据完全在 AWS 基础设施内处理的企业
+* **可用性**：服务已上线，开发者可查阅文档开始使用
+* **定价提示**：现有 Bedrock 私有优惠客户在迁移前应联系客户经理，确保折扣正确转移
+
+**[Read Original / 阅读原文](https://claude.com/blog/claude-platform-on-aws)**
+
+### Yao Open Prompts - Chinese AI Prompt Library for Work, Learning, Content, Marketing & Life
+
+* **What it does**: A comprehensive collection of 116 Chinese AI prompts organized by real-world scenarios, extracted from the original "Yao Jingang Prompt Collection" and restructured for open-source use. Each prompt is ready to copy and use, with variables and placeholders for customization.
+
+* **Key features**: 
+  - Covers 9 categories: AI Methods (meta-prompts, reverse engineering), AI Work (contracts, sales, product prototypes, PPT), AI Learning (Feynman questioning, critical thinking), AI Content (writing, video scripts, WeChat HTML), AI Marketing (25 GEO templates, SEO-to-GEO strategies), and more
+  - Includes advanced tools like the RTF Meta-Prompt System V0.6 for generating high-quality prompts
+  - 36 content & operations prompts for short videos, platform operations, live streaming conversion
+  - Bilingual support with 116 English prompts mirrored in `prompts-en/`
+  - Structured with YAML frontmatter for versioning, categorization, and maintenance
+
+* **Why it's notable**: Addresses the gap in Chinese-language AI prompt resources by providing production-ready templates for actual business and creative workflows. The repository emphasizes practical usability—removing tutorials and screenshots to keep prompts clean and copyable. With 1,632 stars, it's become a go-to resource for Chinese-speaking AI practitioners seeking structured, scenario-based prompts rather than generic examples.
+
+---
+
+### Yao Open Prompts - 面向真实场景的中文 AI 提示词库
+
+* **功能介绍**: 从《姚金刚提示词合集》整理出的 116 个中文 AI 提示词开源版本,按工作、学习、内容、营销和生活场景分类。每个提示词保留可直接复制的正文,去除教程推广和效果截图,通过变量和占位符支持快速定制。
+
+* **主要特点**:
+  - 涵盖 9 大分类:AI 方法(元提示词、反编译)、AI 工作(合同生成、产品原型、PPT)、AI 学习(费曼提问、批判思维)、AI 内容(写作润色、短视频文案、公众号 HTML)、AI 营销(25 个 GEO 实战模板、SEO 到 GEO 策略)等
+  - 包含智能元提示词生成系统 V0.6(基于 RTF 框架)等高级工具
+  - 新增 36 个内容与运营提示词,覆盖短视频、平台运营、直播转化、私域成交
+  - 双语支持,116 个英文提示词完整镜像在 `prompts-en/` 目录
+  - 采用 YAML frontmatter 统一管理版本、分类和维护状态
+
+* **为何值得关注**: 填补了中文 AI 提示词资源的空白,提供面向真实业务和创作流程的生产级模板。仓库强调实用性——移除教程和截图,保持提示词简洁可复制。1,632 星标表明它已成为中文 AI 从业者寻找结构化、场景化提示词(而非泛用示例)的首选资源。采用 CC BY 4.0 许可,支持持续迭代和社区贡献。
+
+**[View Repository / 查看仓库](https://github.com/yaojingang/yao-open-prompts)**
+
+### 🎬 Jcode
+**Channel:** AI adventurer
+
+* The video covers Jcode, likely a coding tool, framework, or AI-powered development assistant
+* Key topics may include features, capabilities, use cases, and demonstrations of Jcode in action
+* Worth watching for developers interested in emerging coding tools and AI-assisted development workflows
+
+---
+
+### 🎬 Jcode
+**频道:** AI adventurer
+
+* 视频介绍 Jcode，可能是一个编码工具、框架或 AI 驱动的开发助手
+* 主要话题可能包括功能特性、应用场景以及 Jcode 的实际演示
+* 适合对新兴编码工具和 AI 辅助开发流程感兴趣的开发者观看
+
+---
+
+**Note:** The provided information is minimal (only title and channel). For a more accurate and detailed summary, additional context such as the video description, transcript, or actual content would be helpful.
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sIv0pwJbxLw)**
 
