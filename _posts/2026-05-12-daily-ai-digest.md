@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 12, 2026"
 date: 2026-05-12
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -754,4 +754,176 @@ pin: false
 * 为何值得观看: 技术面试和构建健壮系统的必备知识。理解幂等性有助于防止分布式系统、API 设计和数据库操作中的错误。短视频格式非常适合快速学习。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=QdjpPgA4ntg)**
+
+### Rendering Atmospheric Scattering: Sky, Sunsets, and Planets with Shaders
+
+* Inspired by NASA's photo of space shuttle Endeavour at sunset, showing Earth's atmospheric layers with beautiful color gradients from orange to blue
+* Implements atmospheric scattering shader effects step-by-step using raymarching, Rayleigh and Mie scattering, and ozone absorption
+* Builds realistic sky dome rendering that works at any time of day, moving beyond simple blue gradients
+* Extends the technique to render atmospheric shells around planets for game-like visuals
+* Explores Sebastian Hillaire's LUT-based approach for performance optimization
+* Treats sky color as the result of light interacting with air in a volume, accounting for altitude, dust, and time of day
+* Uses raymarching to sample atmospheric density and calculate transmittance (light survival) and scattering (light redirection)
+* Month-long project creating real-time browser-based atmospheric rendering effects
+
+### 使用着色器渲染大气散射：天空、日落和行星
+
+* 灵感来自 NASA 拍摄的奋进号航天飞机日落照片，展示地球大气层从橙色到蓝色的美丽渐变色彩
+* 逐步实现大气散射着色器效果，使用光线步进、瑞利散射、米氏散射和臭氧吸收
+* 构建可在一天中任何时间工作的真实天空穹顶渲染，超越简单的蓝色渐变
+* 将技术扩展到在行星周围渲染大气层外壳，实现游戏级视觉效果
+* 探索 Sebastian Hillaire 基于 LUT 的方法以优化性能
+* 将天空颜色视为光与体积空气相互作用的结果，考虑海拔、灰尘和时间等因素
+* 使用光线步进采样大气密度，计算透射率（光线存活）和散射（光线重定向）
+* 历时一个月的项目，创建基于浏览器的实时大气渲染效果
+
+**[Read Original / 阅读原文](https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/)**
+
+### EU Targets "Addictive Design" Features on TikTok and Instagram to Protect Children
+
+* EU Commission President Ursula von der Leyen announced plans to crack down on addictive design features like endless scrolling, autoplay, and push notifications on TikTok and Instagram
+* The EU is investigating platforms that allow children to access harmful content promoting eating disorders or self-harm, and examining Meta's failure to enforce its minimum age requirement of 13
+* The EU has developed a high-privacy age verification app that member states can integrate into digital wallets, with a legal proposal expected by summer 2025
+* This action follows a March 2026 U.S. court ruling that found Meta and YouTube's design features contributed to teen addiction and mental health harms
+* The crackdown is part of broader EU enforcement against Big Tech, which has resulted in over $7 billion in fines against U.S. companies in the past two years
+* Multiple countries including Australia, Spain, France, and the UK are proposing or implementing social media bans for minors, with Australia becoming the first to enforce an under-16 ban in December 2025
+
+### 欧盟打击 TikTok 和 Instagram "成瘾性设计"以保护儿童
+
+* 欧盟委员会主席乌尔苏拉·冯德莱恩宣布计划打击 TikTok 和 Instagram 上的成瘾性设计功能，包括无限滚动、自动播放和推送通知
+* 欧盟正在调查允许儿童接触有害内容（如宣传饮食失调或自残的视频）的平台，并审查 Meta 未能执行其 13 岁最低年龄要求的问题
+* 欧盟开发了一款高隐私标准的年龄验证应用程序，成员国可将其集成到数字钱包中，预计将在 2025 年夏季前提出法律提案
+* 此次行动是在 2026 年 3 月美国法院裁定 Meta 和 YouTube 的设计功能导致青少年成瘾和心理健康问题之后采取的
+* 这次打击是欧盟对大型科技公司更广泛执法行动的一部分，过去两年对美国公司的罚款总额超过 70 亿美元
+* 包括澳大利亚、西班牙、法国和英国在内的多个国家正在提议或实施针对未成年人的社交媒体禁令，澳大利亚于 2025 年 12 月成为首个实施 16 岁以下禁令的国家
+
+**[Read Original / 阅读原文](https://www.cnbc.com/2026/05/12/tiktok-instagram-social-media-addictive-eu-crack-down.html)**
+
+### Statistical Profiling in Python 3.15: Understanding Tachyon's Sampling Approach
+
+* **Core concept**: Statistical profiling captures periodic call stack snapshots instead of instrumenting every function call, building a picture of program behavior through sampling frequency
+* **Time estimation**: Results are statistical estimates based on sample counts multiplied by sampling interval, not precise measurements (e.g., 5,000 samples out of 100,000 = ~5% of execution time)
+* **Accuracy factors**: More samples = better accuracy; default settings typically sufficient for identifying bottlenecks; expect slight variations between runs (normal statistical behavior)
+* **When NOT to use**: Very short scripts (<1 second), when exact call counts needed, micro-benchmarks with 1-2% differences, or precise timing requirements
+* **Key advantage over tracing**: Zero overhead during execution—observes from outside without modifying code, making it ideal for production environments
+* **Main commands**: `run` (profile from startup), `attach` (connect to running process by PID), `dump` (single stack snapshot), `replay` (convert binary profiles)
+* **Production use case**: Can attach to live servers, collect data, and detach without application awareness—perfect for investigating performance issues in running systems
+* **Permission requirements**: Attaching to processes typically requires elevated permissions on most systems
+
+### Python 3.15 统计性能分析:理解 Tachyon 的采样方法
+
+* **核心概念**:统计性能分析通过定期捕获调用栈快照来构建程序行为画像,而非像确定性分析器那样对每个函数调用进行插桩
+* **时间估算**:结果是基于样本计数乘以采样间隔的统计估计值,而非精确测量(例如:100,000 个样本中的 5,000 个 = 约 5% 的执行时间)
+* **准确性因素**:样本越多准确性越高;默认设置通常足以识别瓶颈;运行之间存在轻微差异属于正常统计行为
+* **不适用场景**:极短脚本(<1秒)、需要精确调用次数、1-2% 差异的微基准测试、或需要精确计时的场景
+* **相比追踪分析的关键优势**:执行期间零开销——从外部观察而不修改代码,非常适合生产环境
+* **主要命令**:`run`(从启动开始分析)、`attach`(通过 PID 连接运行中的进程)、`dump`(单次栈快照)、`replay`(转换二进制配置文件)
+* **生产环境用例**:可以附加到运行中的服务器、收集数据并分离,应用程序无感知——非常适合调查运行系统的性能问题
+* **权限要求**:在大多数系统上附加到进程通常需要提升的权限
+
+**[Read Original / 阅读原文](https://docs.python.org/3.15/library/profiling.sampling.html#module-profiling.sampling)**
+
+### OpenHuman - Your Private Personal AI Super Intelligence
+
+* **What it does**: OpenHuman is an open-source agentic AI assistant that integrates deeply into your daily workflow. It connects to 118+ services (Gmail, Notion, GitHub, Slack, etc.) via one-click OAuth, automatically fetches and compresses your data every 20 minutes, and builds a local knowledge graph so the agent understands your context in minutes, not weeks.
+
+* **Key features**: Memory Tree system stores everything locally in SQLite and generates an Obsidian-compatible wiki from your data. Includes a desktop mascot that speaks, reacts, and can join Google Meets as a participant. Built-in model routing, token compression (TokenJuice reduces costs by up to 80%), native voice support, web scraping, and full coding toolset. Privacy-first with local-first storage and encryption.
+
+* **Why it's notable**: Solves the cold-start problem that plagues most AI agents—instead of spending weeks training your assistant, OpenHuman learns your entire context (emails, calendar, repos, docs) in one sync pass. Built in Rust for performance, it's the first agent harness that combines deep third-party integration, automatic context gathering, and persistent memory in a simple desktop UI. Inspired by Karpathy's LLM knowledge base workflow.
+
+---
+
+### OpenHuman - 私密的个人 AI 超级智能助手
+
+* **功能介绍**: OpenHuman 是一个开源的智能 AI 助手,深度集成到你的日常工作流程中。通过一键 OAuth 连接 118+ 个服务(Gmail、Notion、GitHub、Slack 等),每 20 分钟自动获取并压缩你的数据,在本地构建知识图谱,让 AI 助手在几分钟内(而非数周)就能理解你的完整上下文。
+
+* **主要特点**: Memory Tree 系统将所有数据存储在本地 SQLite 中,并从你的数据生成兼容 Obsidian 的知识库。配备桌面吉祥物,可以说话、做出反应,甚至作为真实参与者加入 Google Meet 会议。内置模型路由、token 压缩技术(TokenJuice 可降低高达 80% 的成本)、原生语音支持、网页抓取和完整的编码工具集。隐私优先,采用本地存储和加密。
+
+* **为何值得关注**: 解决了大多数 AI 助手的"冷启动"问题——无需花费数周时间训练助手,OpenHuman 在一次同步中就能学习你的全部上下文(邮件、日历、代码库、文档)。使用 Rust 构建以保证性能,是首个将深度第三方集成、自动上下文收集和持久化记忆结合在简洁桌面 UI 中的智能体框架。灵感来自 Karpathy 的 LLM 知识库工作流程。
+
+**[View Repository / 查看仓库](https://github.com/tinyhumansai/openhuman)**
+
+### agentmemory - Persistent Memory System for AI Coding Agents
+
+* **What it does**: Provides persistent, searchable memory for AI coding agents (Claude Code, Cursor, Gemini CLI, etc.) so they remember context across sessions without re-explaining. Captures agent actions, compresses them into searchable memory, and auto-injects relevant context when needed.
+
+* **Key features**: 95.2% retrieval accuracy (R@5), 92% token reduction, zero external databases required, 51 MCP tools, 12 auto-hooks, works with any MCP-compatible agent via shared memory server, real-time viewer, knowledge graphs with confidence scoring, hybrid search (vector + BM25), 827 passing tests.
+
+* **Why it's notable**: Solves the "re-explaining every session" problem that plagues AI coding agents. Built on the viral GitHub gist (1,050 stars) extending Karpathy's LLM Wiki pattern. Benchmarked on real-world datasets (LongMemEval-S from ICLR 2025), reduces annual costs from $500 to $10 while maintaining high accuracy. Universal compatibility across all major coding agents through MCP protocol.
+
+---
+
+### agentmemory - AI 编程助手的持久化记忆系统
+
+* **功能介绍**: 为 AI 编程助手(Claude Code、Cursor、Gemini CLI 等)提供持久化、可搜索的记忆功能,使其能够跨会话记住上下文,无需重复解释。自动捕获助手操作,压缩为可搜索记忆,并在需要时自动注入相关上下文。
+
+* **主要特点**: 95.2% 检索准确率(R@5),减少 92% token 使用,无需外部数据库,提供 51 个 MCP 工具,12 个自动钩子,通过共享内存服务器支持所有 MCP 兼容助手,实时可视化界面,带置信度评分的知识图谱,混合搜索(向量 + BM25),827 个测试通过。
+
+* **为何值得关注**: 解决了 AI 编程助手"每次会话都要重新解释"的痛点。基于病毒式传播的 GitHub Gist(1,050 星标)构建,扩展了 Karpathy 的 LLM Wiki 模式。在真实数据集(ICLR 2025 的 LongMemEval-S)上进行基准测试,将年度成本从 500 美元降至 10 美元,同时保持高准确率。通过 MCP 协议实现对所有主流编程助手的通用兼容。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/agentmemory)**
+
+### Hysteria - A Lightning-Fast, Censorship-Resistant Proxy Built on QUIC
+
+* **What it does**: Hysteria is a high-performance proxy solution designed to bypass censorship and deliver exceptional speed over unreliable networks. It supports multiple modes including SOCKS5, HTTP Proxy, TCP/UDP Forwarding, Linux TProxy, and TUN.
+
+* **Key features**: 
+  - Powered by a customized QUIC protocol for blazing-fast performance on lossy networks
+  - Masquerades as standard HTTP/3 traffic to evade detection and blocking
+  - Cross-platform support with builds for all major platforms and architectures
+  - Built-in authentication, traffic statistics, and access control for easy infrastructure integration
+  - Versatile deployment options with extensive third-party app support
+
+* **Why it's notable**: Hysteria stands out for its unique combination of speed and stealth. By leveraging QUIC protocol optimizations, it achieves superior performance in challenging network conditions while appearing as legitimate HTTP/3 traffic, making it extremely difficult for censors to block without collateral damage. With 28 stars today and strong community support, it's becoming a go-to solution for users needing reliable, fast proxy services in restrictive environments.
+
+---
+
+### Hysteria - 基于 QUIC 的高速抗审查代理工具
+
+* **功能介绍**: Hysteria 是一款高性能代理解决方案,专为突破网络审查和在不稳定网络环境下提供卓越速度而设计。支持 SOCKS5、HTTP 代理、TCP/UDP 转发、Linux TProxy 和 TUN 等多种模式。
+
+* **主要特点**:
+  - 采用定制化 QUIC 协议,在丢包网络环境下实现极速性能
+  - 伪装成标准 HTTP/3 流量,有效规避检测和封锁
+  - 跨平台支持,为所有主流平台和架构提供构建版本
+  - 内置身份验证、流量统计和访问控制,便于集成到现有基础设施
+  - 灵活的部署选项,拥有丰富的第三方应用支持
+
+* **为何值得关注**: Hysteria 凭借速度与隐蔽性的独特结合脱颖而出。通过 QUIC 协议优化,它在复杂网络条件下实现卓越性能,同时伪装成合法 HTTP/3 流量,使审查者难以在不造成大规模误伤的情况下进行封锁。今日获得 28 个星标,拥有活跃的社区支持,正成为需要在受限环境中使用可靠、快速代理服务的用户首选方案。
+
+**[View Repository / 查看仓库](https://github.com/apernet/hysteria)**
+
+### 🎬 Are you familiar with the Zen of Python? Estefania breaks down the principles here.
+**Channel:** freeCodeCamp.org
+
+* What the video covers: An in-depth exploration of the Zen of Python, the 19 guiding principles for writing Python code (PEP 20)
+* Key topics discussed: Core Python philosophy including "Beautiful is better than ugly," "Explicit is better than implicit," "Simple is better than complex," and other foundational design principles that shape Pythonic code
+* Why it's worth watching: Essential viewing for Python developers who want to write cleaner, more maintainable code by understanding the philosophical foundation behind Python's design. Estefania provides practical explanations of these often-quoted but sometimes misunderstood principles.
+
+---
+
+### 🎬 你熟悉 Python 之禅吗?Estefania 在这里详解其原则
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 深入探讨 Python 之禅,即编写 Python 代码的 19 条指导原则(PEP 20)
+* 主要话题: Python 核心哲学,包括"优美胜于丑陋"、"明确胜于隐晦"、"简单胜于复杂"等塑造 Pythonic 代码的基础设计原则
+* 为何值得观看: 对于想要编写更清晰、更易维护代码的 Python 开发者来说必看。Estefania 对这些经常被引用但有时被误解的原则提供了实用的解释,帮助理解 Python 设计背后的哲学基础。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SXfDBlyqkNQ)**
+
+### 🎬 Anthropic's safety structure
+**Channel:** Lenny's Podcast
+
+* What the video covers: An exploration of Anthropic's organizational approach to AI safety, examining how the company structures its teams and processes to ensure responsible AI development
+* Key topics discussed: Anthropic's safety frameworks, organizational design principles, the balance between innovation and safety guardrails, and how these structures influence products like Claude
+* Why it's worth watching: Provides insider perspective on how one of the leading AI safety-focused companies operationalizes its values, relevant for anyone interested in AI governance, product development in high-stakes domains, or building safety-conscious organizations
+
+### 🎬 Anthropic 的安全架构
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 深入探讨 Anthropic 在 AI 安全方面的组织架构方法,剖析该公司如何构建团队和流程以确保负责任的 AI 开发
+* 主要话题: Anthropic 的安全框架、组织设计原则、创新与安全防护之间的平衡,以及这些架构如何影响 Claude 等产品
+* 为何值得观看: 提供领先的 AI 安全公司如何将其价值观落地的内部视角,适合对 AI 治理、高风险领域的产品开发或构建安全意识组织感兴趣的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OCuoTZ9O10E)**
 
