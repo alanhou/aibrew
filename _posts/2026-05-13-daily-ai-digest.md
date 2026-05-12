@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 13, 2026"
 date: 2026-05-13
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -303,4 +303,259 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
+
+<!-- [Title-Only] -->
+### Googlebook
+
+**Note:** This introduction is based solely on the title, as the article content could not be fetched.
+
+* **What this likely covers:** Based on the title "Googlebook," this appears to be related to a Google service or project involving books. It could be Google Books (Google's digital library project), a new book-related product from Google, or possibly a parody/commentary on Google's book digitization efforts. Given the domain "googlebook.google," this seems to be an official Google property.
+
+* **Why it might be interesting:** If this is about Google Books, it's significant because Google has digitized millions of books, making them searchable and accessible online. This has been both celebrated for democratizing access to knowledge and controversial due to copyright concerns. Any updates or new developments in this space would be relevant to publishers, libraries, researchers, and readers interested in digital access to literature and academic works.
+
+---
+
+### Googlebook（谷歌图书）
+
+**注意：** 由于无法获取文章内容，以下介绍仅基于标题推测。
+
+* **可能涵盖的内容：** 根据标题"Googlebook"，这很可能与谷歌的图书相关服务或项目有关。可能是 Google Books（谷歌图书，谷歌的数字图书馆项目）、谷歌推出的新图书产品，或者是对谷歌图书数字化工作的评论。鉴于域名为"googlebook.google"，这似乎是谷歌的官方项目。
+
+* **为何值得关注：** 如果这是关于 Google Books 的内容，那么它具有重要意义，因为谷歌已经数字化了数百万册图书，使其可在线搜索和访问。这一举措既因为让知识获取民主化而受到赞誉，也因版权问题而引发争议。该领域的任何更新或新发展都与出版商、图书馆、研究人员以及对数字化文学和学术作品感兴趣的读者相关。
+
+**[Read Original / 阅读原文](https://googlebook.google/)**
+
+### How to Make Text Look Futuristic: Six Design Rules from Sci-Fi Movies
+
+* **Rule 1 - Add Italic Slant**: Tilt text forward to create a sense of motion toward the future
+* **Rule 2 - Mix Curves and Angles**: Combine curved and angular elements for dynamic contrast
+* **Rule 3 - Add "Consummate Vs"**: Insert V-shaped cuts or notches into letterforms
+* **Rule 4 - Combine Letters (Kerning)**: Merge adjacent letters into single unified forms
+* **Rule 5 - Remove Arbitrary Segments**: Delete horizontal or vertical lines from letters for a tech aesthetic
+* **Rule 6 - Apply Metallic Textures**: Add brushed metal effects, embossing, noise textures, blue lighting, and star field backgrounds
+* Examples include iconic logos from Blade Runner, Star Wars, Transformers, Battlestar Galactica, RoboCop, WALL-E, and Back to the Future
+* Eurostile Bold Extended is the quintessential futuristic typeface that often serves as the starting point
+* These design tropes have become visual shorthand for "future" across decades of sci-fi cinema
+
+### 如何让文字看起来充满未来感:科幻电影中的六大设计法则
+
+* **法则1 - 添加斜体倾斜**:将文字向前倾斜,营造向未来冲刺的动感
+* **法则2 - 混合曲线与棱角**:结合圆润和尖锐的元素,创造动态对比
+* **法则3 - 添加"V形切口"**:在字母中插入V形的切割或缺口
+* **法则4 - 字母组合(紧缩字距)**:将相邻字母合并成单一统一的形式
+* **法则5 - 删除任意片段**:从字母中移除水平或垂直线条,打造科技美感
+* **法则6 - 应用金属质感**:添加拉丝金属效果、浮雕、噪点纹理、蓝色光照和星空背景
+* 经典案例包括《银翼杀手》《星球大战》《变形金刚》《太空堡垒卡拉狄加》《机械战警》《机器人总动员》和《回到未来》的标志设计
+* Eurostile Bold Extended字体是最典型的未来主义字体,常作为设计起点
+* 这些设计手法已成为数十年科幻电影中"未来"的视觉速记符号
+
+**[Read Original / 阅读原文](https://typesetinthefuture.com/2016/02/18/futuristic/)**
+
+### Dnsmasq Critical Security Vulnerabilities Disclosed - Six CVEs Released
+
+* **Six serious CVEs disclosed**: CERT released six critical security vulnerabilities affecting dnsmasq on May 11, 2026, impacting nearly all non-ancient versions as long-standing bugs.
+* **Patches and releases available**: Fixes are available at the official website, with dnsmasq 2.92rel2 stable release patched and downloadable, plus development tree commits addressing root causes.
+* **AI-driven security research surge**: The maintainer reports a "revolution in AI-based security research" leading to massive bug report volumes, including many duplicates, requiring extensive triage over recent months.
+* **Vendor pre-disclosure completed**: CVEs were pre-disclosed to vendors to enable timely patched package releases across distributions.
+* **Accelerated release cycle planned**: dnsmasq 2.93rc1 will be tagged shortly with aim for stable 2.93 release within a week, prioritizing timeliness over comprehensive bug fixes.
+* **Ongoing security work**: The maintainer expects the AI-generated bug report "tsunami" to continue, with likely repeated security disclosure cycles and continuous fixing efforts post-2.93 release.
+
+### Dnsmasq 披露严重安全漏洞 - 发布六个 CVE
+
+* **披露六个严重 CVE**：CERT 于 2026 年 5 月 11 日发布了影响 dnsmasq 的六个严重安全漏洞，这些长期存在的缺陷影响几乎所有非古老版本。
+* **补丁和版本已发布**：修复程序可在官方网站获取，已修补的 dnsmasq 2.92rel2 稳定版本可供下载，开发树提交解决了根本原因。
+* **AI 驱动的安全研究激增**：维护者报告"AI 安全研究革命"导致大量漏洞报告（包括许多重复项），过去几个月需要进行大量分类工作。
+* **已完成供应商预披露**：CVE 已预先披露给供应商，以便各发行版及时发布修补包。
+* **加速发布周期计划**：dnsmasq 2.93rc1 即将标记，目标是在一周内发布稳定版 2.93，优先考虑及时性而非全面修复。
+* **持续安全工作**：维护者预计 AI 生成的漏洞报告"海啸"将持续，可能需要重复安全披露周期，并在 2.93 发布后继续修复工作。
+
+**[Read Original / 阅读原文](https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html)**
+
+### Hysteria - A Lightning-Fast, Censorship-Resistant Proxy Built on QUIC
+
+* **What it does**: Hysteria is a high-performance proxy solution designed to bypass censorship and deliver exceptional speed over unreliable networks. It supports multiple modes including SOCKS5, HTTP Proxy, TCP/UDP Forwarding, Linux TProxy, and TUN.
+
+* **Key features**: 
+  - Powered by a customized QUIC protocol for blazing-fast performance on lossy networks
+  - Masquerades as standard HTTP/3 traffic to evade detection and blocking
+  - Cross-platform support with builds for all major operating systems and architectures
+  - Built-in authentication, traffic statistics, and access control for easy infrastructure integration
+  - Versatile deployment options with extensive third-party app support
+
+* **Why it's notable**: With 112 stars today, Hysteria stands out for its unique approach to combining speed and censorship resistance. Unlike traditional proxies, it leverages QUIC's advanced congestion control to maintain high performance even on unstable connections, while its HTTP/3 mimicry makes it extremely difficult to block without collateral damage. The project offers comprehensive documentation and an active community, making it accessible for both users and developers.
+
+---
+
+### Hysteria - 基于 QUIC 的高速抗审查代理工具
+
+* **功能介绍**: Hysteria 是一款高性能代理解决方案，专为突破网络审查和在不稳定网络环境下提供卓越速度而设计。支持 SOCKS5、HTTP 代理、TCP/UDP 转发、Linux TProxy 和 TUN 等多种模式。
+
+* **主要特点**:
+  - 采用定制化 QUIC 协议，在丢包网络环境下实现极速性能
+  - 伪装成标准 HTTP/3 流量，有效规避检测和封锁
+  - 跨平台支持，覆盖所有主流操作系统和架构
+  - 内置身份验证、流量统计和访问控制，便于集成到现有基础设施
+  - 灵活的部署选项，支持众多第三方应用
+
+* **为何值得关注**: Hysteria 今日获得 112 星标，其独特之处在于将速度与抗审查能力完美结合。不同于传统代理，它利用 QUIC 的先进拥塞控制算法，即使在不稳定连接下也能保持高性能，同时通过模拟 HTTP/3 流量使其极难被封锁且不会造成误伤。项目提供完善的文档和活跃的社区支持，对用户和开发者都十分友好。
+
+**[View Repository / 查看仓库](https://github.com/apernet/hysteria)**
+
+### mattpocock/skills - Real Engineering Skills for AI Coding Agents
+
+* **What it does**: A collection of practical, composable skills/prompts for AI coding agents (Claude, Codex, etc.) that enforce software engineering best practices. These are production-ready workflows extracted from Matt Pocock's `.claude` directory that he uses daily for real development work.
+
+* **Key features**: 
+  - **Alignment skills** (`/grill-me`, `/grill-with-docs`) - Forces agents to ask detailed questions before coding to prevent misalignment
+  - **Shared language** (`CONTEXT.md`) - Builds domain-specific vocabulary to reduce verbosity and improve consistency
+  - **Quality loops** (`/tdd`, `/diagnose`) - Enforces test-driven development and systematic debugging
+  - **Architecture maintenance** (`/improve-codebase-architecture`) - Prevents codebases from becoming unmaintainable "balls of mud"
+  - **Project management** (`/triage`, `/to-prd`, `/to-issues`) - Integrates with GitHub/Linear for issue tracking and PRD creation
+  - 30-second setup via `npx skills@latest add mattpocock/skills`
+
+* **Why it's notable**: Addresses the core failure modes of AI-assisted development (misalignment, verbosity, broken code, architectural decay) with battle-tested engineering principles. Unlike heavyweight frameworks (GSD, BMAD, Spec-Kit), these skills are small, hackable, and composable. With 3,886 stars today and 60,000+ newsletter subscribers, it represents a pragmatic middle ground between "vibe coding" and over-engineered AI workflows—giving developers control while maintaining quality.
+
+---
+
+### mattpocock/skills - 面向真实工程的 AI 编程助手技能库
+
+* **功能介绍**: 为 AI 编码助手(Claude、Codex 等)提供的实用、可组合技能/提示词集合,强制执行软件工程最佳实践。这些是 Matt Pocock 从其 `.claude` 目录中提取的生产级工作流,每天用于实际开发工作。
+
+* **主要特点**:
+  - **对齐技能**(`/grill-me`、`/grill-with-docs`) - 强制 AI 在编码前提出详细问题,防止需求偏差
+  - **共享语言**(`CONTEXT.md`) - 构建领域特定词汇表,减少冗长并提高一致性
+  - **质量循环**(`/tdd`、`/diagnose`) - 强制执行测试驱动开发和系统化调试
+  - **架构维护**(`/improve-codebase-architecture`) - 防止代码库变成难以维护的"泥球"
+  - **项目管理**(`/triage`、`/to-prd`、`/to-issues`) - 与 GitHub/Linear 集成进行问题跟踪和 PRD 创建
+  - 通过 `npx skills@latest add mattpocock/skills` 实现 30 秒快速安装
+
+* **为何值得关注**: 用久经考验的工程原则解决 AI 辅助开发的核心失败模式(需求偏差、冗长、代码错误、架构腐化)。与重量级框架(GSD、BMAD、Spec-Kit)不同,这些技能小巧、可修改、可组合。今日获得 3,886 星标,拥有 60,000+ 订阅者,代表了"氛围编程"和过度工程化 AI 工作流之间的务实中间路线——在保持质量的同时赋予开发者控制权。
+
+**[View Repository / 查看仓库](https://github.com/mattpocock/skills)**
+
+### 3DCellForge - AI-Powered 3D Cell Generation and Exploration Studio
+
+* **What it does**: An interactive browser-based studio for generating and exploring 3D biological cell models using AI. Upload reference images and convert them into explorable 3D cell structures with detailed organelle visualization.
+
+* **Key features**: Built with React Three Fiber and Three.js for WebGL rendering; supports multiple AI providers (Tripo, Rodin, Hunyuan3D) for image-to-3D conversion; interactive orbit controls with zoom and rotation; organelle detail panels and comparison views; GLB/glTF export; cached demo models for offline use; secure API key management on server-side.
+
+* **Why it's notable**: Bridges biology education and 3D visualization with a polished, production-ready interface. Offers flexible AI generation pipelines with cloud and local options, making advanced 3D cell modeling accessible through a browser. The multi-provider fallback system and offline-friendly caching demonstrate thoughtful engineering for real-world use.
+
+---
+
+### 3DCellForge - AI 驱动的 3D 细胞生成与探索工作室
+
+* **功能介绍**: 基于浏览器的交互式工作室,用于生成和探索 3D 生物细胞模型。上传参考图像,通过 AI 将其转换为可探索的 3D 细胞结构,并提供详细的细胞器可视化。
+
+* **主要特点**: 使用 React Three Fiber 和 Three.js 构建 WebGL 渲染;支持多个 AI 提供商(Tripo、Rodin、Hunyuan3D)进行图像转 3D;交互式轨道控制,支持缩放和旋转;细胞器详情面板和对比视图;GLB/glTF 导出;缓存演示模型支持离线使用;服务端安全管理 API 密钥。
+
+* **为何值得关注**: 将生物学教育与 3D 可视化完美结合,提供精致的生产级界面。灵活的 AI 生成管道支持云端和本地选项,让高级 3D 细胞建模通过浏览器即可实现。多提供商备用系统和离线友好的缓存机制展现了面向实际应用的周到工程设计。
+
+**[View Repository / 查看仓库](https://github.com/huangserva/3DCellForge)**
+
+### files-sdk - A Unified Storage SDK for Object and Blob Backends
+
+* **What it does**: Provides a single, consistent API for interacting with multiple cloud storage providers (like AWS S3, Google Cloud Storage, Azure Blob Storage, etc.) and blob backends, abstracting away provider-specific implementations.
+
+* **Key features**: 
+  - Unified interface across different storage providers
+  - Web-standards compliant I/O operations
+  - Small footprint with minimal dependencies
+  - TypeScript-first with full type safety
+  - Honest, straightforward API design without unnecessary abstractions
+
+* **Why it's notable**: Eliminates vendor lock-in and reduces complexity when working with cloud storage by offering one simple API that works across all major providers. The "honest API" approach means developers get predictable behavior without hidden magic, making it easier to switch providers or support multiple backends simultaneously.
+
+---
+
+### files-sdk - 统一的对象和 Blob 存储 SDK
+
+* **功能介绍**: 为多个云存储提供商(如 AWS S3、Google Cloud Storage、Azure Blob Storage 等)和 Blob 后端提供单一、一致的 API,抽象化了特定提供商的实现细节。
+
+* **主要特点**:
+  - 跨不同存储提供商的统一接口
+  - 符合 Web 标准的 I/O 操作
+  - 体积小巧,依赖项极少
+  - TypeScript 优先,完整的类型安全
+  - 简洁直接的 API 设计,无多余抽象
+
+* **为何值得关注**: 通过提供一个适用于所有主流提供商的简单 API,消除了供应商锁定问题并降低了云存储操作的复杂性。"诚实 API"的设计理念意味着开发者能获得可预测的行为,没有隐藏的魔法,使得切换提供商或同时支持多个后端变得更加容易。
+
+**[View Repository / 查看仓库](https://github.com/haydenbleasel/files-sdk)**
+
+### 🎬 Are Humans Getting Genetically Less Studious? - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of potential genetic changes in human cognitive traits and educational attainment over recent generations, featuring renowned geneticist David Reich
+* Key topics discussed: Population genetics, polygenic scores for educational traits, evolutionary selection pressures in modern societies, the intersection of genetics and social outcomes
+* Why it's worth watching: David Reich is one of the world's leading experts in ancient DNA and population genetics. This conversation tackles a provocative question about whether modern selection pressures are shifting the genetic basis of traits like studiousness, offering insights into human evolution happening in real-time and the complex interplay between genes, environment, and society
+
+### 🎬 人类在基因上是否变得不那么好学了? - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨近几代人类认知特质和教育程度的潜在基因变化,由著名遗传学家 David Reich 主讲
+* 主要话题: 群体遗传学、教育特质的多基因评分、现代社会的进化选择压力、遗传与社会结果的交集
+* 为何值得观看: David Reich 是古代 DNA 和群体遗传学领域的世界顶尖专家之一。这场对话探讨了一个颇具争议的问题——现代选择压力是否正在改变好学等特质的遗传基础,深入剖析了人类正在进行的实时进化,以及基因、环境和社会之间的复杂相互作用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=0wWC1Sxhass)**
+
+### 🎬 How to use OpenAI APIs for Free
+
+**Channel:** Sumit Paul
+
+* What the video covers: A method to access OpenAI APIs without paying, through a program that provides daily free tokens
+* Key topics discussed: Free token allocation system - 250K tokens daily for latest models and 2.5M tokens for other models; workaround for OpenAI's lack of free trials
+* Why it's worth watching: Useful for developers who want to experiment with OpenAI APIs without incurring costs, especially beneficial for learning, prototyping, or small-scale projects
+
+---
+
+### 🎬 如何免费使用 OpenAI API
+
+**频道:** Sumit Paul
+
+* 视频内容概述: 介绍一种无需付费即可访问 OpenAI API 的方法，通过某个提供每日免费令牌的程序实现
+* 主要话题: 免费令牌分配系统 - 最新模型每日 25 万令牌，其他模型每日 250 万令牌；绕过 OpenAI 不提供免费试用的限制
+* 为何值得观看: 适合想要在不产生费用的情况下试验 OpenAI API 的开发者，特别有利于学习、原型开发或小规模项目
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=toYyrmlJZ5o)**
+
+### 🎬 How to Build an App With Claude Code - Full Tutorial for Beginners
+**Channel:** Tech With Tim
+
+* What the video covers: A comprehensive beginner-friendly tutorial on building applications using Claude Code, Anthropic's AI-powered coding assistant
+* Key topics discussed: Step-by-step app development process, practical implementation techniques, deployment strategies using Hostinger
+* Why it's worth watching: Perfect for beginners wanting to leverage AI coding tools; provides hands-on guidance from setup to deployment, demonstrating how Claude Code can accelerate the development workflow
+
+### 🎬 如何使用 Claude Code 构建应用 - 新手完整教程
+**频道:** Tech With Tim
+
+* 视频内容概述: 详细讲解如何使用 Anthropic 的 AI 编程助手 Claude Code 构建应用程序，专为初学者设计的完整教程
+* 主要话题: 应用开发的分步流程、实际实现技巧、使用 Hostinger 进行部署的策略
+* 为何值得观看: 非常适合想要利用 AI 编程工具的初学者；提供从设置到部署的实操指导，展示 Claude Code 如何加速开发工作流程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=GUgxx6fMiR8)**
+
+### 🎬 Idempotencia 👀💯
+
+**Channel:** CuAsPro
+
+* What the video covers: This short video explains the concept of idempotency in programming, a fundamental principle where performing the same operation multiple times produces the same result as performing it once.
+
+* Key topics discussed: Idempotent operations, practical examples in code, how idempotency relates to API design and system reliability, common interview questions about this concept.
+
+* Why it's worth watching: Essential knowledge for technical interviews and building robust systems. Understanding idempotency helps prevent bugs in distributed systems, API design, and database operations. The short format makes it perfect for quick learning.
+
+---
+
+### 🎬 幂等性 👀💯
+
+**频道:** CuAsPro
+
+* 视频内容概述: 这个短视频讲解了编程中的幂等性概念，即多次执行同一操作与执行一次产生相同结果的基本原则。
+
+* 主要话题: 幂等操作、代码实例、幂等性与 API 设计和系统可靠性的关系、常见面试问题。
+
+* 为何值得观看: 技术面试和构建健壮系统的必备知识。理解幂等性有助于防止分布式系统、API 设计和数据库操作中的错误。短视频格式非常适合快速学习。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QdjpPgA4ntg)**
 
