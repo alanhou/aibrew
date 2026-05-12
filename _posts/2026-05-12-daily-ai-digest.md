@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 12, 2026"
 date: 2026-05-12
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -647,51 +647,111 @@ pin: false
 * **Technical approach**: Patches uBO Lite's cosmetic filtering to inject CSS overlays with random phrases instead of hiding ads; uses MutationObserver for dynamic content
 * **Limitations**: Only affects cosmetically-filtered ads (not network-blocked ones), may cause layout shifts, personal hobby project not officially supported by uBlock Origin
 * **Origin**: Inspired by creator's 2015 blog post; built with Node 22, licensed under GPL-3.0
+### Learning Software Architecture: Key Insights from a Practitioner
+
+* **Learning by doing is essential** – Software design is best learned through practice, not formal courses. Real leadership positions on projects like IntelliJ Rust provide the most valuable learning experiences.
+
+* **Conway's Law matters more than code** – Social structures and organizational incentives shape software architecture more than technical knowledge. The difference between industrial and scientific software often stems from incentive structures (e.g., "publish in three months") rather than skill gaps.
+
+* **Adapt to or design incentive structures** – You can either shape project incentives (rare but impactful, like TIGER_STYLE) or accept and adapt to existing constraints, which is the reality for most projects.
+
+* **Architecture must match social reality** – rust-analyzer's design choices (no rustc dependency, stable builds, fast tests, isolated features with `catch_unwind`) were deliberately aligned with attracting both deep contributors and weekend warriors.
+
+* **Quality standards should vary by component** – Core infrastructure demands high quality and careful review, while peripheral features can accept lower bars ("happy path works") to encourage contribution, provided failures are isolated.
+
+* **Recommended resources** – Gary Bernhardt's "Boundaries" talk, "How to Test" principles, ∅MQ guide on Conway's Law, Jamii's "Reflections on a decade of coding", Ted Kaminski's blog, and books like "Software Engineering at Google" and "Philosophy of Software Design".
+
+* **The future is unpredictable** – Projects evolve unexpectedly (rust-analyzer started as a prototype, became a production compiler; uutils began as a Rust learning project, became Ubuntu's coreutils).
+
+### 学习软件架构：来自实践者的核心见解
+
+* **实践是最好的老师** – 软件设计最好通过实践学习，而非正式课程。在 IntelliJ Rust 等项目中担任真正的领导职位能提供最有价值的学习经验。
+
+* **康威定律比代码更重要** – 社会结构和组织激励机制对软件架构的影响超过技术知识。工业软件与科研软件的差异往往源于激励结构（如"三个月内发表论文"），而非技能差距。
+
+* **适应或设计激励结构** – 你可以塑造项目激励机制（罕见但影响深远，如 TIGER_STYLE），或接受并适应现有约束，这是大多数项目的现实。
+
+* **架构必须匹配社会现实** – rust-analyzer 的设计选择（不依赖 rustc、稳定版本构建、快速测试、用 `catch_unwind` 隔离功能）是为了吸引深度贡献者和周末贡献者而刻意设计的。
+
+* **质量标准应因组件而异** – 核心基础设施需要高质量和仔细审查，而外围功能可以接受较低标准（"主路径可用"）以鼓励贡献，前提是故障被隔离。
+
+* **推荐资源** – Gary Bernhardt 的"Boundaries"演讲、"如何测试"原则、关于康威定律的 ∅MQ 指南、Jamii 的"十年编程反思"、Ted Kaminski 的博客，以及《Google 软件工程》和《软件设计哲学》等书籍。
+
+* **未来不可预测** – 项目会意外演变（rust-analyzer 从原型变成生产编译器；uutils 从 Rust 学习项目变成 Ubuntu 的 coreutils）。
+
+**[Read Original / 阅读原文](https://matklad.github.io/2026/05/12/software-architecture.html)**
+
+### Retrotechnology Media: A Visual History of Early GUI Systems (1983-1988)
+
+* **VisiCorp Visi On (1983)** - Early graphical interface for IBM PC clones running at 640×400 resolution with line-doubled aspect ratio correction
+* **SunTools Desktop (1984-1987)** - Sun Microsystems' windowing system on Sun 2/120 and Sun 3/60 workstations running SunOS, featuring 1152×900 resolution displays with chess games and sphere demos
+* **HP Integral PC (1985)** - Hewlett-Packard's portable workstation running HP-UX 5.0 with 512×256 display
+* **IBM CGA Graphics (1985)** - 4-color graphics mode at 320×200 resolution, demonstrated with the 'Alleycat' video game
+* **GEM Desktop & Applications (1985-1988)** - Digital Research's graphical environment for IBM PC, including Desktop 1.2/3.0, Draw 1.0, and Paint 2.01, running in EGA and VGA modes before and after Apple's "look and feel" lawsuit significantly limited its interface design
+* **Arthur & RISC OS (1987-1988)** - Acorn Archimedes operating systems, evolving from Arthur 0.30 to Arthur 1.20 to RISC OS 2.00, featuring custom display modes and desk accessories
+* **NewTek Digi-Paint (1987)** - Amiga 2000 paint program utilizing 4096-color HAM6 mode with multiple logical screens
+* **DEC VWS (1987)** - VAX Workstation Software (UIS) on VAXstation 2000 with GPX graphics, featuring VT200 and Tektronix 4014 emulators
+* **Xerox Ventura Publisher 1.1 (1987)** - Desktop publishing software for GEM environment on high-resolution PC displays, demonstrating early PC competition with Macintosh publishing capabilities
+* **SGI IRIS Multiple Exposure (1987)** - Silicon Graphics workstation running GL2-W3.6 with mex tools at 1024×768 resolution
+* **Frame Maker 1.0 (1987)** - Professional document creation software on Sun workstations
+
+### 复古技术媒体：早期图形用户界面系统的视觉历史（1983-1988）
+
+* **VisiCorp Visi On（1983年）** - IBM PC 兼容机的早期图形界面，运行在 640×400 分辨率，带有纵横比校正的行倍增
+* **SunTools 桌面（1984-1987年）** - Sun Microsystems 的窗口系统，运行在 Sun 2/120 和 Sun 3/60 工作站上的 SunOS，具有 1152×900 分辨率显示，包含国际象棋游戏和球体演示
+* **HP Integral PC（1985年）** - 惠普便携式工作站，运行 HP-UX 5.0，512×256 显示
+* **IBM CGA 图形（1985年）** - 320×200 分辨率的 4 色图形模式，通过"Alleycat"视频游戏演示
+* **GEM 桌面与应用程序（1985-1988年）** - Digital Research 为 IBM PC 开发的图形环境，包括 Desktop 1.2/3.0、Draw 1.0 和 Paint 2.01，在 EGA 和 VGA 模式下运行，在苹果"外观和感觉"诉讼前后界面设计受到显著限制
+* **Arthur 与 RISC OS（1987-1988年）** - Acorn Archimedes 操作系统，从 Arthur 0.30 演进到 Arthur 1.20 再到 RISC OS 2.00，具有自定义显示模式和桌面附件
+* **NewTek Digi-Paint（1987年）** - Amiga 2000 绘图程序，利用 4096 色 HAM6 模式和多个逻辑屏幕
+* **DEC VWS（1987年）** - VAXstation 2000 上的 VAX 工作站软件（UIS），配备 GPX 图形，具有 VT200 和 Tektronix 4014 仿真器
+* **Xerox Ventura Publisher 1.1（1987年）** - GEM 环境下的桌面出版软件，运行在高分辨率 PC 显示器上，展示了早期 PC 与 Macintosh 出版能力的竞争
+* **SGI IRIS Multiple Exposure（1987年）** - Silicon Graphics 工作站运行 GL2-W3.6 和 mex 工具，1024×768 分辨率
+* **Frame Maker 1.0（1987年）** - Sun 工作站上的专业文档创建软件
+
+**[Read Original / 阅读原文](http://www.typewritten.org/Media/)**
+
+### They Live Adblocker: A Satirical Ad-Blocking Browser Extension
+
+* **Concept**: Fork of uBlock Origin Lite that replaces blocked ads with white tiles displaying slogans from the 1988 film *They Live* (e.g., "OBEY", "CONSUME", "SUBMIT")
+* **Installation**: Download from GitHub releases, extract, and load as unpacked extension in Chromium-based browsers; requires switching to "Optimal" or "Complete" filtering mode to see replacements
+* **Technical approach**: Patches uBO Lite's cosmetic filtering to inject CSS overlays with random phrases instead of hiding ads; uses MutationObserver for dynamic content
+* **Limitations**: Only affects cosmetically-filtered ads (not network-blocked ones), may cause layout shifts, personal hobby project not officially supported by uBlock Origin
+* **Origin**: Inspired by creator's 2015 blog post; built with Node 22, licensed under GPL-3.0
 
 ---
 
 ### They Live 广告拦截器：讽刺性广告屏蔽浏览器扩展
 
-* **核心概念**：uBlock Origin Lite 的分支版本，将被屏蔽的广告替换为白色方块，显示 1988 年电影《极度空间》中的反乌托邦标语（如"服从"、"消费"、"屈服"）
-* **安装方法**：从 GitHub 发布页下载，解压后在基于 Chromium 的浏览器中加载未打包扩展；需将过滤模式切换至"最佳"或"完整"才能看到替换效果
-* **技术实现**：修改 uBO Lite 的外观过滤机制，注入带随机短语的 CSS 叠加层替代隐藏广告；使用 MutationObserver 处理动态内容
-* **使用限制**：仅影响外观过滤的广告（不包括网络层拦截的广告），可能导致页面布局偏移，属个人爱好项目非 uBlock Origin 官方支持
-* **项目起源**：源自作者 2015 年博客文章构想；使用 Node 22 构建，采用 GPL-3.0 许可证
+* **核心概念**：uBlock Origin Lite 的分支版本,将被屏蔽的广告替换为显示 1988 年电影《极度空间》台词的白色方块(如"服从"、"消费"、"屈服")
+* **安装方法**：从 GitHub 发布页下载,解压后在基于 Chromium 的浏览器中加载未打包扩展;需切换到"最佳"或"完整"过滤模式才能看到替换效果
+* **技术实现**：修改 uBO Lite 的外观过滤机制,注入带随机短语的 CSS 叠加层而非隐藏广告;使用 MutationObserver 处理动态内容
+* **使用限制**：仅影响外观过滤的广告(不包括网络层拦截的广告),可能导致页面布局偏移,属个人爱好项目非 uBlock Origin 官方支持
+* **项目起源**：源自作者 2015 年博客文章构想;使用 Node 22 构建,采用 GPL-3.0 许可证
 
 **[Read Original / 阅读原文](https://github.com/davmlaw/they_live_adblocker)**
 
-### Software Internals Book Club: A Community for Deep Technical Reading
+### 🎬 Idempotencia 👀💯
 
-* **Email-based book club** with 2,500+ members reading high-caliber technical books on databases, distributed systems, and software performance
-* **Currently reading** "Operating Systems: Three Easy Pieces" with 300-800 active participants per book
-* **Diverse membership** including undergrads, grad students, early-career and experienced programmers, and founders
-* **Discussion format**: Text-only via Google Group, with weekly chapter recaps and Q&A led by experienced volunteers
-* **Book criteria**: 350-550 pages, specific software topics (not philosophy), completable in ~3 months at 1-2 chapters/week
-* **Target audience**: Senior+ developers, though open to anyone interested in deep technical learning
-* **Sign-up available** to join future reading sessions and stay updated on upcoming books
+**Channel:** CuAsPro
 
-### 软件内核读书会：深度技术阅读社区
+* What the video covers: This short video explains the concept of idempotency in programming, a fundamental principle where performing the same operation multiple times produces the same result as performing it once.
 
-* **基于邮件的读书会**，拥有 2,500+ 名成员，阅读数据库、分布式系统和软件性能等领域的高质量技术书籍
-* **当前阅读**《操作系统：三个简单部分》，每本书有 300-800 名活跃参与者
-* **成员多元化**，包括本科生、研究生、初级和资深程序员以及创业者
-* **讨论形式**：通过 Google Group 纯文字交流，每周由经验丰富的志愿者主持章节回顾和问答
-* **书籍标准**：350-550 页，聚焦具体软件主题（非泛泛而谈的软件哲学），约 3 个月完成，每周 1-2 章
-* **目标受众**：资深及以上开发者，但欢迎所有对深度技术学习感兴趣的人
-* **开放注册**，可加入未来的阅读计划并获取新书更新
+* Key topics discussed: Idempotent operations, practical examples in code, how idempotency relates to API design and system reliability, common interview questions about this concept.
 
-**[Read Original / 阅读原文](https://eatonphil.com/bookclub.html)**
+* Why it's worth watching: Essential knowledge for technical interviews and building robust systems. Understanding idempotency helps prevent bugs in distributed systems, API design, and database operations. The short format makes it perfect for quick learning.
 
-<!-- [Title-Only] -->
-### Google says criminal hackers used AI to find a major software flaw
+---
 
-* Based on the title, this article likely covers a significant cybersecurity incident where criminal hackers leveraged artificial intelligence tools to discover a critical vulnerability in software. This represents a notable escalation in the cyber threat landscape, as it demonstrates AI being weaponized for offensive security purposes rather than just defensive ones.
-* This is worth reading because it highlights an emerging trend in cybersecurity: the use of AI by malicious actors to automate vulnerability discovery, potentially accelerating the arms race between attackers and defenders. It also raises important questions about AI safety, responsible AI development, and how organizations need to adapt their security strategies in an AI-enabled threat environment.
+### 🎬 幂等性 👀💯
 
-### 谷歌称犯罪黑客利用人工智能发现重大软件漏洞
+**频道:** CuAsPro
 
-* 根据标题推测，这篇文章可能报道了一起重要的网络安全事件，犯罪黑客利用人工智能工具发现了软件中的关键漏洞。这标志着网络威胁形势的显著升级，表明 AI 正被用于攻击性安全目的，而不仅仅是防御。
-* 值得关注的原因在于，这凸显了网络安全领域的新兴趋势：恶意行为者使用 AI 自动化漏洞发现过程，可能加速攻击者与防御者之间的军备竞赛。这也引发了关于 AI 安全、负责任的 AI 开发，以及组织如何在 AI 驱动的威胁环境中调整安全策略等重要问题。
+* 视频内容概述: 这个短视频讲解了编程中的幂等性概念，即多次执行同一操作与执行一次产生相同结果的基本原则。
 
-**[Read Original / 阅读原文](https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html)**
+* 主要话题: 幂等操作、代码实例、幂等性与 API 设计和系统可靠性的关系、常见面试问题。
+
+* 为何值得观看: 技术面试和构建健壮系统的必备知识。理解幂等性有助于防止分布式系统、API 设计和数据库操作中的错误。短视频格式非常适合快速学习。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QdjpPgA4ntg)**
 
