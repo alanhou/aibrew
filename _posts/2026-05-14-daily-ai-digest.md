@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 14, 2026"
 date: 2026-05-14
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -339,4 +339,250 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合想要在不产生费用的情况下试验 OpenAI API 的开发者，特别有利于学习、原型开发或小规模项目
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=toYyrmlJZ5o)**
+
+### Princeton Ends 133-Year Honor System, Mandates Exam Proctoring
+
+* **Historic policy shift**: Princeton faculty voted to require proctoring for all in-person exams starting July 1, 2026, ending a 133-year tradition of unproctored exams under the Honor Code established in 1893
+* **Overwhelming approval**: The proposal passed with only one opposing vote after clearing three rounds of faculty committee reviews
+* **AI and technology concerns**: The policy change was driven by the proliferation of AI tools and personal devices that make cheating harder for peers to detect and report
+* **Student reporting breakdown**: Only 0.4% of seniors reported Honor Code violations despite 44.6% witnessing them; 29.9% admitted to cheating during their Princeton career
+* **Proctor role defined**: Instructors will serve as witnesses documenting suspected violations but won't interfere with students during exams
+* **Trust vs. necessity debate**: Faculty and students remain divided—some view proctoring as necessary deterrent, others see it as erosion of academic trust
+* **Implementation details pending**: Proctor-to-student ratios and monitoring guidelines will be finalized before the policy takes effect
+* **Honor Committee unchanged**: The student-led Honor Committee will continue adjudicating violations; the Honor Code itself requires no revision
+
+---
+
+### 普林斯顿终结133年荣誉制度，强制考试监考
+
+* **历史性政策转变**：普林斯顿教职工投票通过从2026年7月1日起所有现场考试必须监考，终结了自1893年荣誉守则建立以来133年的无监考传统
+* **压倒性通过**：该提案仅有一票反对，此前已通过三轮教职工委员会审查
+* **AI与技术担忧**：政策变更由AI工具和个人设备的泛滥推动，这些技术使作弊行为更难被同学发现和举报
+* **学生举报机制失效**：仅0.4%的毕业生举报过荣誉守则违规，尽管44.6%目睹过违规行为；29.9%承认在校期间作过弊
+* **监考员角色界定**：教师将作为见证人记录可疑违规行为，但不会干预学生考试过程
+* **信任与必要性之争**：教职工和学生意见分歧——部分人认为监考是必要威慑，另一些人视其为对学术信任的侵蚀
+* **实施细节待定**：监考员与学生比例及监督指南将在政策生效前最终确定
+* **荣誉委员会不变**：学生主导的荣誉委员会将继续裁决违规案件；荣誉守则本身无需修订
+
+**[Read Original / 阅读原文](https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent)**
+
+### Linux Gaming Accelerates as Windows APIs Move into the Linux Kernel
+
+* Linux crossed 5% of Steam's user base in March 2026, driven by Windows 10's end-of-support and Steam Deck adoption
+* Performance improvements are increasingly happening at the kernel level rather than just in Wine/Proton translation layers
+* NTSYNC, a new kernel-level driver, provides native Linux implementations of Windows synchronization primitives used by games
+* Modern games require complex multi-threaded coordination across rendering, physics, audio, AI, and input processing
+* NTSYNC is now loaded by default on updated Steam Decks, delivering significant performance gains
+* This shift represents a fundamental change: critical Windows gaming APIs are becoming first-class Linux kernel features
+
+### Linux 游戏性能提升：Windows API 正在成为 Linux 内核功能
+
+* 2026年3月，Linux 在 Steam 用户中的占比首次突破5%，这得益于 Windows 10 停止支持和 Steam Deck 的普及
+* 性能改进越来越多地发生在内核层面，而不仅仅是 Wine/Proton 转换层
+* NTSYNC 是一个新的内核级驱动程序，为游戏使用的 Windows 同步原语提供原生 Linux 实现
+* 现代游戏需要在渲染、物理、音频、AI 和输入处理等方面进行复杂的多线程协调
+* NTSYNC 现已默认加载在更新后的 Steam Deck 上，带来显著的性能提升
+* 这一转变代表了根本性变化：关键的 Windows 游戏 API 正在成为 Linux 内核的一等公民功能
+
+**[Read Original / 阅读原文](https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/)**
+
+### Building a RAR Compressor in Rust with AI Assistance
+
+* Reverse-engineered and implemented a complete RAR compressor/decompressor in Rust using OpenAI Codex 5.5 and Claude Opus 4.7 over 5 weeks of part-time work, costing approximately £40 in tokens
+* Created comprehensive specification documents for every RAR version by analyzing free decompressor sources (unar, libarchive, UNRARLIB), reverse-engineering RAR binaries with Ghidra and DOSBox-x, and iteratively documenting gaps with Claude
+* Developed a workflow combining both AI models: Codex for autonomous implementation from spec, Claude for architecture discussions and code reviews, with extensive test suites to guide generation and prevent regressions
+* Achieved compression performance within 5-10% of WinRAR on most test data through AI-applied optimization techniques, though execution speed remained slower due to safe Rust idioms and lack of novel performance hacks
+* Leveraged OpenAI's `/goal` feature for autonomous 6-16 hour coding sessions that generated ~40,000 lines implementing recovery records, encryption, multi-volume support, and other advanced features
+* Published working CLI tool supporting RAR versions 1.3-2.9+ to crates.io, providing the world with a free software RAR implementation for archivists and general use
+* Key lessons: working from spec is effective, modern models excel at Rust, tests/docs shape context through mass, bring your own architecture to avoid refactoring costs, and AI can miss obvious issues like poor UX without explicit prompting
+
+### 用 AI 辅助在 Rust 中构建 RAR 压缩器
+
+* 使用 OpenAI Codex 5.5 和 Claude Opus 4.7，在 5 周的业余时间内逆向工程并实现了完整的 Rust RAR 压缩/解压缩器，token 成本约 40 英镑
+* 通过分析免费解压缩器源代码（unar、libarchive、UNRARLIB）、使用 Ghidra 和 DOSBox-x 逆向工程 RAR 二进制文件，并与 Claude 迭代记录缺失部分，为每个 RAR 版本创建了全面的规范文档
+* 开发了结合两个 AI 模型的工作流程：Codex 根据规范自主实现，Claude 负责架构讨论和代码审查，通过大量测试套件引导生成并防止回归
+* 通过 AI 应用的优化技术，在大多数测试数据上实现了与 WinRAR 相差 5-10% 的压缩性能，但由于安全的 Rust 习惯用法和缺乏新颖的性能技巧，执行速度仍然较慢
+* 利用 OpenAI 的 `/goal` 功能进行 6-16 小时的自主编码会话，生成了约 40,000 行代码，实现了恢复记录、加密、多卷支持等高级功能
+* 将支持 RAR 1.3-2.9+ 版本的可用 CLI 工具发布到 crates.io，为档案管理员和普通用户提供了免费的 RAR 软件实现
+* 关键经验：从规范开始工作是有效的，现代模型擅长 Rust，测试/文档通过质量塑造上下文，自带架构以避免重构成本，AI 在没有明确提示的情况下可能会忽略明显问题（如糟糕的用户体验）
+
+**[Read Original / 阅读原文](https://bitplane.net/log/2026/05/rars/)**
+
+### AiToEarn - AI-Powered Content Marketing Agent for Solo Entrepreneurs
+
+* **What it does**: An all-in-one platform that automates content creation, distribution, monetization, and engagement across 10+ global social media platforms (TikTok, YouTube, Instagram, X/Twitter, Douyin, Xiaohongshu, etc.) using AI agents. Enables creators to earn through CPS/CPE/CPM models by selling content to merchants.
+
+* **Key features**: 
+  - **Monetize Agent**: Content marketplace with performance-based payouts (CPS/CPE/CPM)
+  - **Publish Agent**: One-click distribution to 14+ platforms with calendar scheduling
+  - **Engage Agent**: Browser extension for automated interactions (likes, follows, AI-powered comment replies)
+  - **Create Agent**: Automated video/image generation using models like Grok, Veo, Nano Banana
+  - **5 deployment options**: Web app, OpenClaw integration, MCP protocol (Claude/Cursor), Docker, or source code
+  - **Relay mode**: Borrow official OAuth credentials to skip platform developer registration
+
+* **Why it's notable**: Rapidly trending with 987 stars today. Addresses the complete monetization pipeline for solo creators and OPCs (One-Person Companies) through intelligent automation. Supports both Chinese and international markets with bilingual infrastructure. Offers unprecedented flexibility with MCP protocol support, allowing integration into any AI assistant. The relay configuration eliminates a major friction point by handling OAuth complexity for users.
+
+---
+
+### AiToEarn - 一人公司的 AI 内容营销智能体
+
+* **功能介绍**: 面向一人公司(OPC)和创作者的一站式平台,通过 AI Agent 自动化实现内容创作、全网分发、变现和互动运营。覆盖抖音、小红书、TikTok、YouTube、Instagram、X 等 10+ 主流平台,创作者可通过 CPS/CPE/CPM 模式接单赚钱。
+
+* **主要特点**:
+  - **赚钱 Agent**: 内容交易市场,按成交额/互动量/播放量结算
+  - **发布 Agent**: 一键分发至 14+ 平台,支持日历排期
+  - **互动 Agent**: 浏览器插件实现自动点赞、关注、AI 智能回复评论
+  - **创作 Agent**: 调用 Grok、Veo、Nano Banana 等模型自动生成视频/图文
+  - **5 种使用方式**: 网页版、龙虾 OpenClaw 集成、MCP 协议(Claude/Cursor)、Docker 部署、源码开发
+  - **Relay 中继模式**: 借用官方 OAuth 凭据,无需自行申请各平台开发者账号
+
+* **为何值得关注**: 今日新增 987 星,快速蹿红。通过智能化 Agent 打通创作者完整变现链路,解决一人公司内容营销痛点。同时支持中国和国际市场的双语基础设施。支持 MCP 协议可集成到任何 AI 助手中,Relay 配置消除了 OAuth 授权的技术门槛,大幅降低使用难度。
+
+**[View Repository / 查看仓库](https://github.com/yikart/AiToEarn)**
+
+### Telegraf - Server Agent for Metrics, Logs, and Data Collection
+
+* **What it does**: Telegraf is a plugin-driven server agent that collects, processes, aggregates, and writes metrics, logs, and arbitrary data from various sources to multiple destinations. It acts as a universal data pipeline for observability and monitoring.
+
+* **Key features**: 
+  * Over 300 plugins covering system monitoring, cloud services, IoT devices (OPC UA, Modbus), messaging systems (Kafka, MQTT), and modern observability (OpenTelemetry, Prometheus)
+  * Single static binary with no external dependencies, configured via simple TOML files
+  * Extensible architecture allowing custom plugins for data collection and transformation
+  * Wide platform support including Docker, RPM/DEB packages, and Windows
+  * Active community with 1,200+ contributors
+
+* **Why it's notable**: Telegraf is the de facto standard agent in the InfluxData ecosystem and a critical component for time-series data collection. Its comprehensive plugin library makes it a Swiss Army knife for infrastructure monitoring, IoT data ingestion, and observability pipelines. The project's maturity, zero-dependency deployment model, and extensive integration options make it a go-to choice for DevOps and SRE teams building monitoring stacks.
+
+---
+
+### Telegraf - 指标、日志和数据采集的服务器代理
+
+* **功能介绍**: Telegraf 是一个插件驱动的服务器代理,用于从各种来源收集、处理、聚合指标、日志和任意数据,并将其写入多个目的地。它充当可观测性和监控的通用数据管道。
+
+* **主要特点**:
+  * 超过 300 个插件,涵盖系统监控、云服务、物联网设备(OPC UA、Modbus)、消息系统(Kafka、MQTT)和现代可观测性(OpenTelemetry、Prometheus)
+  * 单一静态二进制文件,无外部依赖,通过简单的 TOML 文件配置
+  * 可扩展架构,支持自定义插件进行数据收集和转换
+  * 广泛的平台支持,包括 Docker、RPM/DEB 软件包和 Windows
+  * 活跃社区,拥有 1200 多名贡献者
+
+* **为何值得关注**: Telegraf 是 InfluxData 生态系统中的事实标准代理,也是时序数据收集的关键组件。其全面的插件库使其成为基础设施监控、物联网数据采集和可观测性管道的瑞士军刀。项目的成熟度、零依赖部署模型和广泛的集成选项,使其成为 DevOps 和 SRE 团队构建监控堆栈的首选工具。
+
+**[View Repository / 查看仓库](https://github.com/influxdata/telegraf)**
+
+### 3DCellForge - AI-Powered 3D Cell Generation and Exploration Studio
+
+* **What it does**: An interactive browser-based studio for generating and exploring biological cell models in 3D. Users can upload reference images and convert them into 3D cell models using AI providers (Hyper3D, Tripo, Fal.ai, Hunyuan3D), then manipulate and inspect them in real-time with WebGL controls.
+
+* **Key features**: Three-column workbench UI with cell library, interactive 3D viewport, and generation tools; supports multiple AI-to-3D providers with automatic fallback; drag-to-rotate/zoom controls; organelle inspection and isolation; GLB/GLTF export; demo presentation mode for clean screenshots; local model caching; offline-friendly with cached demo models.
+
+* **Why it's notable**: Combines cutting-edge AI image-to-3D generation with an elegant React + Three.js interface specifically designed for biological education and research. The polished workbench workflow, multi-provider support with intelligent fallbacks, and presentation-ready demo mode make it a standout tool for visualizing cellular structures. With 1,796 stars, it demonstrates strong interest in accessible 3D biovisualization tools.
+
+---
+
+### 3DCellForge - AI 驱动的交互式 3D 细胞生成与探索工作室
+
+* **功能介绍**: 基于浏览器的交互式工作室,用于生成和探索生物细胞的 3D 模型。用户可以上传参考图像,通过 AI 服务商(Hyper3D、Tripo、Fal.ai、Hunyuan3D)将其转换为 3D 细胞模型,然后使用 WebGL 控件进行实时操作和检查。
+
+* **主要特点**: 三栏工作台界面,包含细胞库、交互式 3D 视口和生成工具;支持多个 AI 转 3D 服务商并具备自动降级机制;拖拽旋转/缩放控制;细胞器检查与隔离功能;GLB/GLTF 导出;演示模式可生成干净的截图;本地模型缓存;离线友好的演示模型。
+
+* **为何值得关注**: 将前沿的 AI 图像转 3D 生成技术与专为生物教育和研究设计的优雅 React + Three.js 界面相结合。精致的工作流程、多服务商支持与智能降级、以及适合演示的模式,使其成为细胞结构可视化的杰出工具。获得 1,796 星标,展现了人们对易用 3D 生物可视化工具的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/huangserva/3DCellForge)**
+
+### YellowKey - BitLocker Bypass Vulnerability Discovery
+
+* **What it does**: Exposes a critical vulnerability that allows bypassing Windows BitLocker disk encryption protection through Windows Recovery Environment, granting unrestricted access to encrypted volumes without requiring the encryption key or password.
+
+* **Key features**: 
+  - Simple reproduction method using a USB stick with specific FsTx folder structure
+  - Works by triggering a shell in Windows Recovery Environment with a keyboard combination (SHIFT + restart, then hold CTRL)
+  - Affects Windows 11, Server 2022, and Server 2025 (Windows 10 is not vulnerable)
+  - No complex tools or technical expertise required to exploit
+
+* **Why it's notable**: The researcher suggests this may be an intentional backdoor rather than an accidental bug, as the vulnerable component exists only in WinRE images with functionality absent from normal Windows installations. This is a severe security issue affecting enterprise and personal data protection, disclosed publicly with coordination from Microsoft security teams (MORSE, MSTIC, GHOST). The ease of exploitation and suspicious nature of the vulnerability make it particularly concerning for organizations relying on BitLocker for data security.
+
+---
+
+### YellowKey - BitLocker 加密绕过漏洞
+
+* **功能介绍**: 揭露了一个严重的安全漏洞,可通过 Windows 恢复环境绕过 BitLocker 磁盘加密保护,无需加密密钥或密码即可获得对加密卷的完全访问权限。
+
+* **主要特点**:
+  - 使用带有特定 FsTx 文件夹结构的 U 盘即可简单复现
+  - 通过键盘组合键(按住 SHIFT 点击重启,然后按住 CTRL)在 Windows 恢复环境中触发 shell
+  - 影响 Windows 11、Server 2022 和 Server 2025(Windows 10 不受影响)
+  - 无需复杂工具或专业技术知识即可利用
+
+* **为何值得关注**: 研究人员认为这可能是故意留下的后门而非意外漏洞,因为存在漏洞的组件仅出现在 WinRE 镜像中,且具有正常 Windows 安装版本中不存在的功能。这是一个影响企业和个人数据保护的严重安全问题,已与微软安全团队(MORSE、MSTIC、GHOST)协调后公开披露。该漏洞利用方式极其简单,且性质可疑,对依赖 BitLocker 进行数据安全保护的组织构成重大威胁。
+
+**[View Repository / 查看仓库](https://github.com/Nightmare-Eclipse/YellowKey)**
+
+### 🎬 Why Hasn't Evolution Eliminated Schizophrenia? - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of why schizophrenia, a debilitating mental illness, persists in human populations despite evolutionary pressures that should eliminate harmful genetic variants
+* Key topics discussed: Evolutionary genetics, the paradox of schizophrenia's prevalence (~1% of population), potential balancing selection mechanisms, genetic architecture of psychiatric disorders, and insights from population genetics research
+* Why it's worth watching: David Reich, a leading population geneticist, offers a scientific perspective on one of medicine's most puzzling questions—combining evolutionary biology, genetics, and psychiatry to explain why natural selection hasn't removed genes associated with severe mental illness
+
+### 🎬 为什么进化没有消除精神分裂症？- David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨为什么精神分裂症这种使人衰弱的精神疾病在人类群体中持续存在,尽管进化压力应该会消除有害的基因变异
+* 主要话题: 进化遗传学、精神分裂症患病率悖论(约占人口1%)、潜在的平衡选择机制、精神疾病的遗传结构,以及群体遗传学研究的见解
+* 为何值得观看: David Reich 作为顶尖的群体遗传学家,从科学角度解答医学界最令人困惑的问题之一——结合进化生物学、遗传学和精神病学,解释为什么自然选择没有清除与严重精神疾病相关的基因
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OR_VBlb4fD8)**
+
+### 🎬 The Best Local Agentic Coding Workflow (Complete Guide)
+**Channel:** Web Dev Simplified
+
+* Comprehensive guide to setting up and using local AI models for coding workflows
+* Covers the complete process from installation to practical implementation of agentic coding assistants
+* Worth watching for developers who want privacy, cost savings, and full control over their AI coding tools without relying on cloud services
+
+### 🎬 最佳本地智能编码工作流程（完整指南）
+**频道:** Web Dev Simplified
+
+* 全面介绍如何设置和使用本地 AI 模型进行编码工作流程
+* 涵盖从安装到实际应用智能编码助手的完整过程
+* 适合希望在保护隐私、节省成本的同时完全掌控 AI 编码工具的开发者观看，无需依赖云服务
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UngVdAsQEiU)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse software projects, likely covering fundamental coding principles and development workflows that apply across different types of applications
+* Key topics discussed: Programming fundamentals, productivity techniques for developers, practical coding approaches that can be adapted to various project types
+* Why it's worth watching: Offers versatile coding knowledge that empowers developers to tackle a wide range of projects with confidence, focusing on transferable skills rather than narrow specialization
+
+### 🎬 构建几乎任何东西 #编程 #开发 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何构建各种软件项目的指南,可能涵盖适用于不同类型应用的基础编程原则和开发工作流程
+* 主要话题: 编程基础知识、开发者生产力技巧、可适配各种项目类型的实用编程方法
+* 为何值得观看: 提供通用的编程知识,帮助开发者自信地应对各种项目,注重可迁移的技能而非狭窄的专业化领域
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程提高生产力，减少手动操作，非常适合希望提升效率的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
 
