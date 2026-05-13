@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 13, 2026"
 date: 2026-05-13
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -773,4 +773,120 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 展示了通过印尼金融科技基础设施（GoPay tokenization）实现完整支付自动化流程的技术方案，在无需传统支付方式的情况下完成 ChatGPT Plus 订阅。项目因其支付流程自动化的技术实现获得 616 星关注，但作者声明已停止更新仅供学习研究，并提醒当前风控限制（单个 GoPay 账号现最多绑定 1-3 个 ChatGPT 账号，Midtrans 对虚拟号有反欺诈检测）。
 
 **[View Repository / 查看仓库](https://github.com/ywnd1144/Gopay_plus_automatic)**
+
+### Ultra-Corrosion-Resistant Stainless Steel Breakthrough Could Revolutionize Green Hydrogen Production
+
+* **Dual-layer protection system**: University of Hong Kong researchers developed SS-H₂ stainless steel using "sequential dual-passivation" — a chromium oxide base layer plus a manganese-based second shield that protects up to 1700 mV, far exceeding the ~1600 mV needed for water splitting
+* **Cost reduction potential**: Could replace expensive titanium-platinum components in electrolyzers with material 40 times cheaper, potentially cutting structural costs from 53% of a 10 MW system's HK$17.8 million budget
+* **Counter-intuitive discovery**: Manganese, traditionally viewed as harmful to corrosion resistance, forms a protective layer at ~720 mV that enables operation in harsh seawater conditions — a finding that "cannot be explained by current knowledge in corrosion science"
+* **Seawater electrolysis enabler**: Addresses the core challenge of direct seawater hydrogen production — corrosion from salt, chloride ions, and side reactions that damage conventional materials
+* **Moving toward commercialization**: After 6 years from discovery to publication, the technology has secured patents in multiple countries and tons of SS-H₂ wire have been produced in collaboration with a mainland China factory
+* **Timely solution**: Recent 2025 reviews continue highlighting corrosion resistance and durability as major bottlenecks in seawater electrolysis, making this breakthrough increasingly relevant for scaling green hydrogen
+
+### 超耐腐蚀不锈钢突破性进展有望革新绿色制氢产业
+
+* **双层保护系统**:香港大学研究团队开发的SS-H₂不锈钢采用"序贯双钝化"策略——铬氧化物基础层加锰基第二防护层,可承受高达1700 mV电位,远超水分解所需的~1600 mV
+* **成本削减潜力**:可替代电解槽中昂贵的钛-铂组件,材料成本降低约40倍,有望将结构材料成本从10兆瓦系统1780万港元预算中占比53%大幅降低
+* **颠覆性发现**:传统上被认为有害耐腐蚀性的锰元素,在~720 mV时形成保护层,使材料能在苛刻海水环境中运行——这一发现"无法用现有腐蚀科学知识解释"
+* **海水电解推动者**:解决直接海水制氢的核心挑战——盐分、氯离子和副反应导致的腐蚀问题,这些因素会损坏传统材料
+* **迈向商业化**:从发现到发表历时6年,该技术已在多国获得专利授权,并与中国大陆工厂合作生产出数吨SS-H₂线材
+* **时机关键**:2025年最新综述仍强调耐腐蚀性和耐久性是海水电解的主要瓶颈,使这项突破对扩大绿色制氢规模愈发重要
+
+**[Read Original / 阅读原文](https://www.sciencedaily.com/releases/2026/05/260510030950.htm)**
+
+### European Government Cybersecurity Crisis: 3,000 Illegal Tracking Sites, 1,000 Exposed Databases, and 99% Weak Email Encryption
+
+* **SecurityBaseline.eu launched May 13, 2026** as a pan-European expansion of the Dutch "Basisbeveiliging" program, monitoring baseline security across 32 European countries (EU members plus EEA countries, excluding UK)
+* **Massive scope**: Monitors 67,000 local governments across 200,000 domains, generating 1,827 maps updated nightly across 21 security metrics
+* **Three critical findings**: 3,000 government sites use tracking cookies illegally, over 1,000 database management interfaces (phpMyAdmin) are publicly accessible, and 99% of government email uses poor encryption
+* **Traffic light visualization**: Maps use red (security issue), orange (warning), and green (secure) to show regional security status, with no relative grading—one issue turns a region red
+* **Transparency-driven approach**: All data is public, following established publication and measurement policies, with tens of thousands of warning emails sent to governments three months before launch
+* **Notable country differences**: Denmark shows mostly orange (policies in effect), Italy appears greener due to subdomain structures, Netherlands shows mixed results from active policy enforcement, EU CSIRTs are all red
+* **Foundation's mission**: Internet Cleanup Foundation advocates for transparency, security, sovereignty, accessibility, and privacy, offering membership and research services to improve internet security
+* **Methodology**: Focuses on primary government domains and subdomains (e.g., Amsterdam.nl includes 700 addresses), though actual government domain count is estimated 10x higher when including project sites
+
+### 欧洲政府网络安全危机：3000个非法追踪网站、1000个暴露数据库、99%电子邮件加密薄弱
+
+* **SecurityBaseline.eu于2026年5月13日上线**，作为荷兰"Basisbeveiliging"项目的泛欧洲扩展，监测32个欧洲国家（欧盟成员国加欧洲经济区国家，不包括英国）的基线安全
+* **监测规模庞大**：监控67,000个地方政府的200,000个域名，每晚更新1,827张地图，涵盖21项安全指标
+* **三大关键发现**：3,000个政府网站非法使用追踪Cookie，超过1,000个数据库管理界面（phpMyAdmin）可公开访问，99%的政府电子邮件使用弱加密
+* **交通灯可视化**：地图使用红色（安全问题）、橙色（警告）和绿色（安全）显示区域安全状态，无相对评分——一个问题即可使区域变红
+* **透明度驱动方法**：所有数据公开，遵循既定的发布和测量政策，在上线前三个月向政府发送数万封警告邮件
+* **各国显著差异**：丹麦大部分显示橙色（政策生效中），意大利因子域名结构显得更绿，荷兰因积极政策执行呈现混合结果，欧盟计算机安全事件响应团队全部为红色
+* **基金会使命**：互联网清理基金会倡导透明度、安全性、主权、可访问性和隐私，提供会员资格和研究服务以改善互联网安全
+* **方法论**：专注于主要政府域名及子域名（如阿姆斯特丹市包含700个地址），尽管实际政府域名数量估计是当前的10倍（包括项目网站）
+
+**[Read Original / 阅读原文](https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/)**
+
+### Why Senior Developers Fail to Communicate Their Expertise
+
+* **Two conflicting loops**: Senior developers operate in a complexity management loop (keeping systems stable, understandable, and maintainable) while the rest of the business operates in an uncertainty reduction loop (exploring possibilities and validating ideas quickly)
+* **The communication gap**: Senior developers respond to feature requests by citing complexity and maintenance costs, but this doesn't address the business's actual problem—reducing uncertainty about what customers want
+* **The core insight**: You can't explain away someone else's problem using your own problems; you must frame your solution as addressing their problem too
+* **The senior developer's superpower**: The ability to spot opportunities to reuse existing solutions and avoid building unnecessary features—achieving goals with minimal new complexity
+* **The magic phrase**: "Can we try something quicker?" This acknowledges the need for speed (uncertainty reduction) while allowing developers to exercise their expertise (complexity management through reduction and reuse)
+* **Why this still matters in the AI era**: AI can build features quickly, but it can't take responsibility for long-term system stability and business continuity—that's still the senior developer's role
+
+### 为什么高级开发者无法有效传达他们的专业知识
+
+* **两个冲突的循环**：高级开发者专注于复杂度管理循环(保持系统稳定、可理解、可维护)，而业务团队专注于不确定性消除循环(快速探索可能性并验证想法)
+* **沟通鸿沟**：高级开发者用复杂度和维护成本来回应功能需求，但这并未解决业务的真正问题——消除关于客户需求的不确定性
+* **核心洞察**：你不能用自己的问题来解释别人的问题；你必须将你的解决方案框定为同时解决他们的问题
+* **高级开发者的超能力**：发现重用现有解决方案的机会，避免构建不必要的功能——用最小的新增复杂度实现目标
+* **神奇短语**："我们能试试更快的方法吗？"这既承认了对速度的需求(消除不确定性)，又允许开发者发挥专长(通过精简和重用管理复杂度)
+* **为什么在AI时代这仍然重要**：AI可以快速构建功能，但它无法为长期系统稳定性和业务连续性负责——这仍然是高级开发者的职责
+
+**[Read Original / 阅读原文](https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise)**
+
+### 🎬 When You Hire a Free Intern Part 2
+
+**Channel:** Sheryians Coding School
+
+* A humorous short video depicting common scenarios when working with unpaid/free interns in tech
+* Likely covers relatable coding school or workplace situations involving intern expectations vs. reality
+* Worth watching for a quick laugh and relatable content for developers, coding students, and tech professionals navigating internship culture
+
+---
+
+### 🎬 当你雇佣免费实习生 第2部分
+
+**频道:** Sheryians Coding School
+
+* 幽默短视频,描绘科技行业雇佣免费实习生时的常见场景
+* 可能涵盖编程学校或职场中实习生期望与现实的反差情况
+* 值得观看,因为内容轻松搞笑且贴近开发者、编程学生和科技从业者在实习文化中的真实体验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KtCGh89J8RY)**
+
+### 🎬 Timsort - When one algorithm isn't enough #coding #maths
+**Channel:** Algo Andre
+
+* What the video covers: An exploration of Timsort, the hybrid sorting algorithm used in Python's built-in sort functions
+* Key topics discussed: How Timsort combines merge sort and insertion sort strategies to achieve optimal performance on real-world data; why Python chose this algorithm over traditional sorting methods
+* Why it's worth watching: Understanding Timsort reveals why practical algorithm design often requires blending multiple approaches rather than relying on a single technique—essential knowledge for writing efficient code
+
+### 🎬 Timsort - 当一种算法还不够时 #编程 #数学
+**频道:** Algo Andre
+
+* 视频内容概述: 深入讲解 Timsort——Python 内置排序函数所使用的混合排序算法
+* 主要话题: Timsort 如何结合归并排序和插入排序的策略,在真实数据上实现最优性能;Python 为何选择这个算法而非传统排序方法
+* 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse software projects, likely covering fundamental coding principles and development workflows that apply across different types of applications
+* Key topics discussed: Programming fundamentals, productivity techniques for developers, practical coding approaches that can be adapted to various project types
+* Why it's worth watching: Offers versatile coding knowledge that empowers developers to tackle a wide range of projects with confidence, focusing on transferable skills rather than narrow specialization
+
+### 🎬 构建几乎任何东西 #编程 #开发 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何构建各种软件项目的指南,可能涵盖适用于不同类型应用的基础编程原则和开发工作流程
+* 主要话题: 编程基础知识、开发者生产力技巧、可适配各种项目类型的实用编程方法
+* 为何值得观看: 提供通用的编程知识,帮助开发者自信地应对各种项目,注重可迁移的技能而非狭隘的专业化
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
 
