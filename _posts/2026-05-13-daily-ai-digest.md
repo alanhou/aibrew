@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 13, 2026"
 date: 2026-05-13
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -664,4 +664,113 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供通用的编程知识,帮助开发者自信地应对各种项目,注重可迁移的技能而非狭窄的专业化领域
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
+
+<!-- [Title-Only] -->
+### Deterministic Fully-Static Whole-Binary Translation Without Heuristics
+
+*Based on the title alone:*
+
+* This article likely presents a novel approach to binary translation—converting executable programs from one instruction set architecture to another—that operates entirely at compile-time (fully-static) without needing to run the program
+* The "deterministic" and "without heuristics" aspects suggest this method provides guaranteed correctness rather than relying on probabilistic techniques or educated guesses that traditional binary translators often use to identify code boundaries and control flow
+* This could be significant for security, compatibility layers (like running x86 programs on ARM), and reverse engineering, as it promises more reliable translation results
+
+**Why it might be interesting to readers:**
+* Addresses a fundamental challenge in systems programming: traditional static binary translation struggles with distinguishing code from data and handling indirect jumps
+* Could enable more robust cross-architecture software compatibility and security analysis tools
+* The "deterministic" claim is bold—most binary translation involves some uncertainty, so a provably correct approach would be a major advancement
+
+---
+
+### 无启发式的确定性全静态二进制整体翻译
+
+*仅基于标题的推测:*
+
+* 本文可能提出了一种新颖的二进制翻译方法——将可执行程序从一种指令集架构转换到另一种——完全在编译时（全静态）操作，无需运行程序
+* "确定性"和"无启发式"表明该方法提供有保证的正确性，而不是依赖传统二进制翻译器常用的概率技术或经验猜测来识别代码边界和控制流
+* 这对安全性、兼容层（如在 ARM 上运行 x86 程序）和逆向工程可能具有重要意义，因为它承诺提供更可靠的翻译结果
+
+**为何值得关注:**
+* 解决了系统编程中的基本挑战：传统静态二进制翻译难以区分代码和数据，也难以处理间接跳转
+* 可能实现更强大的跨架构软件兼容性和安全分析工具
+* "确定性"的声明很大胆——大多数二进制翻译都涉及一些不确定性，因此可证明正确的方法将是一个重大进步
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2605.08419)**
+
+### The vi Family: A Comprehensive Guide to vi Editors and Clones
+
+* **vi remains popular** despite being nearly 50 years old due to its efficiency once learned and ubiquitous availability across systems and IDEs
+* **Original vi (1977-2017)** was proprietary until the 1980s, spurring creation of multiple free clones for personal computers
+* **Major modern implementations** include Vim (1991) and Neovim (2014), both widely used with extensive features like syntax highlighting, multiple buffers, and scripting support
+* **Recent forks emerged in 2026** (EVi and Vim Classic) to avoid LLM-generated code being incorporated into Vim and Neovim
+* **Historical clones** include STevie (1987, for Atari/Amiga), Elvis (1990), nvi (1994, used in BSD), and various minimal implementations like BusyBox vi
+* **vi-inspired alternatives** exist with different key bindings, including Kakoune (2012), Helix (2021), and vis (2015, incorporating Plan 9 concepts)
+* **Emacs users** can access vi modal editing through Viper (1995) or Evil (2013) packages
+* **Size and capability vary widely** from tiny implementations (BusyBox vi, xvi) to feature-rich editors handling gigabyte-sized files (Vim, Neovim)
+
+### vi 编辑器家族：vi 编辑器及其衍生版本完整指南
+
+* **vi 至今仍受欢迎**，尽管已有近 50 年历史，但因其熟练后的高效性以及在各系统和 IDE 中的普遍可用性而广受青睐
+* **原版 vi（1977-2017）** 在 1980 年代前为专有软件，促使多个自由克隆版本为个人电脑而生
+* **主要现代实现** 包括 Vim（1991）和 Neovim（2014），两者广泛使用，具有语法高亮、多缓冲区和脚本支持等丰富功能
+* **2026 年出现新分支**（EVi 和 Vim Classic），旨在避免 Vim 和 Neovim 中加入 LLM 生成的代码
+* **历史克隆版本** 包括 STevie（1987，用于 Atari/Amiga）、Elvis（1990）、nvi（1994，用于 BSD）以及各种精简实现如 BusyBox vi
+* **受 vi 启发的替代品** 采用不同键位绑定，包括 Kakoune（2012）、Helix（2021）和 vis（2015，融合 Plan 9 概念）
+* **Emacs 用户** 可通过 Viper（1995）或 Evil（2013）包使用 vi 模式编辑
+* **大小和功能差异显著**，从微型实现（BusyBox vi、xvi）到可处理 GB 级文件的功能丰富编辑器（Vim、Neovim）
+
+**[Read Original / 阅读原文](https://lpar.ATH0.com/posts/2026/05/the-vi-family/)**
+
+### Needle: A 26M Parameter AI Model for Edge Devices
+
+* **Ultra-compact architecture**: Distilled from Gemini 3.1 into a 26 million parameter "Simple Attention Network" that can be finetuned locally on consumer hardware (Mac/PC)
+* **High-performance inference**: Runs on Cactus platform achieving 6000 tokens/sec prefill and 1200 tokens/sec decode speed in production
+* **Fully open source**: Weights, dataset generation, and training code available on HuggingFace (Cactus-Compute/needle) and GitHub
+* **Encoder-decoder design**: 12-layer encoder (no FFN) + 8-layer decoder with grouped query attention, RoPE, gated residuals, and tied embeddings (d=512, 8H/4KV, 8192 BPE vocab)
+* **Efficient training**: Pretrained on 200B tokens using 16 TPU v6e (27 hours), post-trained on 2B function call tokens (45 minutes)
+* **Function calling focus**: Optimized for single-shot tool/function calling for personal AI applications, outperforms FunctionGemma-270m, Qwen-0.6B, Granite-350m on this task
+* **Developer-friendly tooling**: Includes web UI playground for testing and one-click finetuning, Python API, and comprehensive CLI for training, evaluation, and data generation
+* **Edge AI target**: Designed specifically for consumer devices like phones, watches, and smart glasses where model size and inference speed are critical
+
+### Needle：面向边缘设备的 2600 万参数 AI 模型
+
+* **超紧凑架构**：从 Gemini 3.1 蒸馏而来，仅 2600 万参数的"简单注意力网络"，可在消费级硬件（Mac/PC）上本地微调
+* **高性能推理**：在 Cactus 平台上运行，生产环境达到 6000 tokens/秒预填充速度和 1200 tokens/秒解码速度
+* **完全开源**：权重、数据集生成和训练代码均在 HuggingFace（Cactus-Compute/needle）和 GitHub 上开放
+* **编码器-解码器设计**：12 层编码器（无 FFN）+ 8 层解码器，采用分组查询注意力、RoPE、门控残差和共享嵌入（d=512, 8H/4KV, 8192 BPE 词表）
+* **高效训练**：使用 16 个 TPU v6e 在 2000 亿 tokens 上预训练（27 小时），在 20 亿函数调用 tokens 上后训练（45 分钟）
+* **专注函数调用**：针对个人 AI 应用的单次工具/函数调用进行优化，在此任务上优于 FunctionGemma-270m、Qwen-0.6B、Granite-350m
+* **开发者友好工具**：包含用于测试和一键微调的 Web UI 界面、Python API 以及用于训练、评估和数据生成的完整命令行工具
+* **边缘 AI 目标**：专为手机、手表、智能眼镜等消费设备设计，模型大小和推理速度至关重要
+
+**[Read Original / 阅读原文](https://github.com/cactus-compute/needle)**
+
+### Gopay_plus_automatic - Automated claude-sonnet-4-5 Plus Subscription via GoPay
+
+* **What it does**: Fully automated tool that subscribes ChatGPT accounts to Plus tier using the Stripe → Midtrans → GoPay payment chain, completing the first month free trial in approximately 20 seconds given a ChatGPT `access_token`.
+
+* **Key features**:
+  * Zero-touch automation from token input to Plus activation
+  * Three OTP reception modes: manual, SMS API integration, or WhatsApp relay
+  * Supports single account testing and batch concurrent subscriptions
+  * Built with Python orchestrator + gRPC payment core architecture
+  * Includes fraud detection bypass strategies and systemd deployment scripts
+
+* **Why it's notable**: Demonstrates a complete payment automation pipeline through Indonesian fintech infrastructure (GoPay tokenization), achieving ChatGPT Plus subscriptions without traditional payment methods. The project has gained 616 stars for its technical approach to payment flow automation, though the author notes it's archived for educational purposes only and warns about current anti-fraud restrictions (single GoPay account now limited to 1-3 ChatGPT bindings, Midtrans fraud detection on virtual numbers).
+
+---
+
+### Gopay_plus_automatic - GoPay 自动订阅 ChatGPT Plus
+
+* **功能介绍**: 全自动 ChatGPT Plus 订阅工具，输入 ChatGPT `access_token` 后通过 Stripe → Midtrans → GoPay 支付链路在约 20 秒内完成首月 0 元试用订阅。
+
+* **主要特点**:
+  * 从输入到激活全程无人工干预的自动化流程
+  * 提供三种 OTP 验证码接收方案：手动模式、接码平台 API、WhatsApp 中继
+  * 支持单号调试和多号批量并发订阅
+  * 采用 Python 编排器 + gRPC 支付核心的分层架构
+  * 包含 CDN 限流绕过方案和 systemd 生产部署脚本
+
+* **为何值得关注**: 展示了通过印尼金融科技基础设施（GoPay tokenization）实现完整支付自动化流程的技术方案，在无需传统支付方式的情况下完成 ChatGPT Plus 订阅。项目因其支付流程自动化的技术实现获得 616 星关注，但作者声明已停止更新仅供学习研究，并提醒当前风控限制（单个 GoPay 账号现最多绑定 1-3 个 ChatGPT 账号，Midtrans 对虚拟号有反欺诈检测）。
+
+**[View Repository / 查看仓库](https://github.com/ywnd1144/Gopay_plus_automatic)**
 
