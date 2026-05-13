@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 13, 2026"
 date: 2026-05-13
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -558,4 +558,110 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 技术面试和构建健壮系统的必备知识。理解幂等性有助于防止分布式系统、API 设计和数据库操作中的错误。短视频格式非常适合快速学习。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=QdjpPgA4ntg)**
+
+### OrcaSlicer with Restored BambuNetwork Support
+
+* **Full BambuNetwork functionality restored** - This fork of OrcaSlicer brings back complete BambuNetwork support for Bambu Lab printers, removing LAN-only limitations
+* **Internet connectivity enabled** - Works over the internet through BambuNetwork with full functionality for normal printing operations, just like the original implementation
+* **Platform-specific installation requirements** - Windows requires WSL 2 setup with specific DISM commands before first launch; Linux works with standard installation; macOS support is currently in development
+* **Additional BMCU firmware available** - The developer also provides BMCU (Bambu Micro Controller Unit) firmware in separate repositories for enhanced functionality
+
+### OrcaSlicer 恢复 BambuNetwork 支持版本
+
+* **完整恢复 BambuNetwork 功能** - 这个 OrcaSlicer 分支为拓竹（Bambu Lab）打印机恢复了完整的 BambuNetwork 支持，突破了仅限局域网的限制
+* **支持互联网连接** - 通过 BambuNetwork 实现互联网远程打印，具备完整的正常使用和打印功能，与原始实现方式一致
+* **不同平台安装要求** - Windows 需要先启用 WSL 2 并运行特定的 DISM 命令后才能首次启动；Linux 仅需标准安装；macOS 支持正在开发中
+* **提供额外的 BMCU 固件** - 开发者还在独立仓库中提供 BMCU（拓竹微控制器单元）固件，以增强功能
+
+**[Read Original / 阅读原文](https://github.com/FULU-Foundation/OrcaSlicer-bambulab)**
+
+### My Graduation Cap Runs Rust
+
+* **Custom LED graduation cap project**: Built a contraption with 48 WS2812B LEDs that lights up the underside of a graduation cap, controlled by a Digispark ATtiny85 microcontroller running Rust code
+* **Hardware components**: Used ATtiny85, WS2812B LEDs, reed switch/magnet for tassel detection, USB-C PD trigger board, and power bank
+* **Development time**: ~2 hours for Rust code (required forking `avr-hal` and `ws2812-avr` to support ATtiny85 at 16 MHz), 3+ hours for hardware assembly
+* **Rental cap economics**: US graduation caps cost $94 to rent (can't buy outright), must be returned, and you can't participate in the ceremony without renting one
+* **Not wearing it**: Despite building it, decided not to wear it to actual graduation because it looks "tacky" and potentially seizure-inducing
+* **Open source**: Code available on GitHub at ericswpark/gradcap-rs
+
+### 我的毕业帽运行 Rust 语言
+
+* **定制 LED 毕业帽项目**：制作了一个装置，在毕业帽底部安装 48 个 WS2812B LED 灯，由运行 Rust 代码的 Digispark ATtiny85 微控制器控制
+* **硬件组件**：使用了 ATtiny85、WS2812B LED 灯、用于流苏检测的干簧管/磁铁、USB-C PD 触发板和充电宝
+* **开发时间**：Rust 代码约 2 小时（需要 fork `avr-hal` 和 `ws2812-avr` 以支持 16 MHz 的 ATtiny85），硬件组装 3+ 小时
+* **租赁帽子经济学**：美国毕业帽租金 94 美元（不能直接购买），必须归还，不租就不能参加毕业典礼
+* **不会佩戴**：尽管制作完成，但决定不在实际毕业典礼上佩戴，因为看起来"俗气"且可能引发癫痫
+* **开源项目**：代码已在 GitHub 上公开，仓库地址为 ericswpark/gradcap-rs
+
+**[Read Original / 阅读原文](https://ericswpark.com/blog/2026/2026-05-12-my-graduation-cap-runs-rust/)**
+
+### Kraftwerk's "Radioactivity": From 1976 Innovation to Anti-Nuclear Anthem
+
+* Kraftwerk's catalogue serves as a musical circuit board connecting diverse genres including hip-hop, electro, ambient, new wave, synth pop, industrial rock, Detroit techno, and contemporary classical
+* The Radio-Activity album captured a unique spirit of sound and vision with artwork by long-time collaborator Emil Schult
+* Live performances featured innovative technology like a light-triggered "percussion cage" that would frequently glitch onstage, as documented in Flür's book "I Was a Robot"
+* The track "Radioactivity" has been extensively sampled by major acts including New Order (notably in "Blue Monday"), The Chemical Brothers, and Miley Cyrus
+* The album represents Kraftwerk's ambitious approach to presenting music through both sonic and visual innovation
+
+### 发电站乐队的《放射性》:从1976年创新之作到反核圣歌
+
+* 发电站乐队的音乐目录如同一块非凡的电路板,连接着无限的音乐风格,包括嘻哈、电子、氛围音乐、新浪潮、合成器流行、工业摇滚、底特律电子乐和当代古典音乐
+* 《Radio-Activity》专辑以独特的声音与视觉精神呈现,封面由长期合作者埃米尔·舒尔特设计
+* 现场演出采用创新技术,如光触发"打击乐笼",经常在舞台上出现故障,这在弗吕尔的书《我曾是机器人》中有记载
+* 《Radioactivity》这首曲目被众多知名艺人广泛采样,包括新秩序乐队(最著名的是《Blue Monday》)、化学兄弟和麦莉·赛勒斯
+* 该专辑代表了发电站乐队通过声音和视觉创新来呈现音乐的雄心壮志
+
+**[Read Original / 阅读原文](https://www.bbc.com/culture/article/20260511-kraftwerks-radical-1976-track-radioactivity-became-an-anti-nuclear-anthem)**
+
+### 🎬 When You Hire a Free Intern Part 2
+
+**Channel:** Sheryians Coding School
+
+* A humorous short video depicting common scenarios and challenges when working with unpaid/free interns in a coding environment
+* Likely covers relatable workplace dynamics, coding mishaps, or learning curve moments that occur during internships
+* Worth watching for developers and students to enjoy lighthearted comedy about the tech internship experience and coding school culture
+
+---
+
+### 🎬 当你雇佣免费实习生 第2部分
+
+**频道:** Sheryians Coding School
+
+* 幽默短视频,描绘在编程环境中与免费/无薪实习生合作时的常见场景和挑战
+* 可能涵盖职场动态、编程失误或实习期间出现的学习曲线时刻等引人共鸣的内容
+* 值得开发者和学生观看,轻松幽默地展现科技实习经历和编程学校文化
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KtCGh89J8RY)**
+
+### 🎬 Timsort - When one algorithm isn't enough #coding #maths
+**Channel:** Algo Andre
+
+* What the video covers: An exploration of Timsort, the hybrid sorting algorithm used in Python's built-in sort functions
+* Key topics discussed: How Timsort combines merge sort and insertion sort strategies to achieve optimal performance on real-world data; why Python chose this algorithm over traditional sorting methods
+* Why it's worth watching: Understanding Timsort reveals why practical algorithm design often requires blending multiple approaches rather than relying on a single technique—essential knowledge for writing efficient code
+
+### 🎬 Timsort - 当一种算法还不够时 #编程 #数学
+**频道:** Algo Andre
+
+* 视频内容概述: 深入讲解 Timsort——Python 内置排序函数所使用的混合排序算法
+* 主要话题: Timsort 如何结合归并排序和插入排序的策略,在真实数据上实现最优性能;Python 为何选择这个算法而非传统排序方法
+* 为何值得观看: 理解 Timsort 揭示了实用算法设计往往需要融合多种方法而非依赖单一技术——这是编写高效代码的必备知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kh7gqhOwksA)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse software projects, likely covering fundamental coding principles and development workflows that apply across different types of applications
+* Key topics discussed: Programming fundamentals, productivity techniques for developers, practical coding approaches that can be adapted to various project types
+* Why it's worth watching: Offers versatile coding knowledge that empowers developers to tackle a wide range of projects with confidence, focusing on transferable skills rather than narrow specialization
+
+### 🎬 构建几乎任何东西 #编程 #开发 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何构建各种软件项目的指南,可能涵盖适用于不同类型应用的基础编程原则和开发工作流程
+* 主要话题: 编程基础知识、开发者生产力技巧、可适配各种项目类型的实用编程方法
+* 为何值得观看: 提供通用的编程知识,帮助开发者自信地应对各种项目,注重可迁移的技能而非狭窄的专业化领域
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
 
