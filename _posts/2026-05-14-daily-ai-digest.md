@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 14, 2026"
 date: 2026-05-14
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -585,4 +585,83 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程提高生产力，减少手动操作，非常适合希望提升效率的机器学习工程师
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+<!-- [Title-Only] -->
+### Scorched Earth 2000 is back
+
+* Based on the title, this article likely announces the return or revival of Scorched Earth 2000, a turn-based artillery game that was popular in the DOS era. The original Scorched Earth was a classic "tank wars" game where players would adjust angle and power to fire projectiles at opponents across destructible terrain.
+* This might be interesting to readers who have nostalgia for classic DOS games, enjoy retro gaming, or are curious about how beloved games from the 1990s are being preserved or modernized for contemporary platforms. The return could mean a remaster, a web-based version, or simply the game being made accessible again.
+
+### Scorched Earth 2000 回归
+
+* 根据标题推测，这篇文章可能宣布了 Scorched Earth 2000 的回归或复兴。这是一款在 DOS 时代流行的回合制炮击游戏。原版 Scorched Earth 是经典的"坦克大战"游戏，玩家需要调整角度和力度，在可破坏的地形上向对手发射炮弹。
+* 这对怀念经典 DOS 游戏的读者、喜欢复古游戏的玩家，或对 1990 年代经典游戏如何被保存或现代化感兴趣的人来说可能很有吸引力。游戏的回归可能意味着重制版、网页版本，或者只是让这款游戏在现代平台上重新可玩。
+
+**[Read Original / 阅读原文](http://www.scorch2000.com/web/)**
+
+### Chess Puzzle from Kempelen's Era
+
+* Historical chess problem created by Wolfgang von Kempelen, inventor of the famous "Mechanical Chess Player" automaton over a century ago
+* Challenge: Place 4 black queens and 1 black bishop on a chessboard so that every square is under attack
+* Goal: Make it impossible to place a white king anywhere on the board without it being in checkmate
+* Considered one of Kempelen's most difficult puzzles that stumped the greatest minds of his time
+
+### 肯佩伦时代的国际象棋谜题
+
+* 历史悠久的国际象棋难题，由沃尔夫冈·冯·肯佩伦创作，他是一个多世纪前著名的"机械象棋手"自动机的发明者
+* 挑战：在棋盘上放置 4 个黑皇后和 1 个黑主教，使每个方格都处于攻击范围内
+* 目标：使白方国王无法放置在棋盘的任何位置而不被将死
+* 被认为是肯佩伦最困难的谜题之一，曾难倒当时最伟大的智者
+
+**[Read Original / 阅读原文](https://ardoedo.it/kempelen/)**
+
+### The Emacsification of Software: AI Agents Enable Personal Native UI Development
+
+* **The Markdown viewer problem**: Developers read massive amounts of Markdown (especially with AI agents), but existing solutions are inadequate—TUI viewers are monospaced and fatiguing, GUI editors disrupt workflows, and App Store viewers lack basic features like text search or copy-paste.
+
+* **AI-generated solution**: The author used Claude to build a custom macOS Markdown viewer (MDV.app) in ~30 minutes of active work, featuring SQLite full-text search, bookmarks, table-of-contents navigation, position memory, and quality typography—better than commercial alternatives.
+
+* **Native UI becomes accessible**: AI agents like Claude are competent SwiftUI developers, making native UI development trivially easy compared to the historical difficulty of finding skilled native developers or settling for Electron apps (which bundle entire Chromium instances).
+
+* **Emacsification concept**: Software is becoming like Emacs culture—personal, bespoke tools built to scratch specific itches, where the ideas and prompts matter more than the source code itself. Everything becomes configurable and malleable, not just text editors.
+
+* **Paradigm shift**: Building software with agents feels more like "configuring" than "building." Developers can now create hyperspecific, pleasant-to-use native applications for personal problems, from improved system monitoring tools (iostat, bpftrace visualizations) to finishing long-abandoned side projects.
+
+* **Cultural impact**: The barrier to creating polished native UI has collapsed. The author encourages developers to build stupidly specific tools for their own problems and share the ideas/prompts rather than treating them as traditional software products—mirroring Emacs's show-and-tell culture.
+
+---
+
+### 软件的 Emacs 化：AI 智能体让个人原生 UI 开发成为可能
+
+* **Markdown 查看器困境**：开发者需要阅读大量 Markdown（尤其是使用 AI 智能体时），但现有解决方案都不理想——TUI 查看器使用等宽字体令人疲劳，GUI 编辑器会打乱工作流，App Store 的查看器缺少文本搜索或复制粘贴等基本功能。
+
+* **AI 生成的解决方案**：作者使用 Claude 在约 30 分钟的主动工作时间内构建了一个自定义 macOS Markdown 查看器（MDV.app），具有 SQLite 全文搜索、书签、目录导航、位置记忆和优质排版功能——优于商业替代品。
+
+* **原生 UI 变得易于实现**：像 Claude 这样的 AI 智能体是称职的 SwiftUI 开发者，使原生 UI 开发变得极其简单，相比之下，历史上很难找到熟练的原生开发者，或只能妥协使用 Electron 应用（捆绑整个 Chromium 实例）。
+
+* **Emacs 化概念**：软件正在变得像 Emacs 文化——为解决特定痒点而构建的个人化、定制化工具，其中想法和提示词比源代码本身更重要。一切都变得可配置和可塑造，不仅仅是文本编辑器。
+
+* **范式转变**：使用智能体构建软件感觉更像是"配置"而非"构建"。开发者现在可以为个人问题创建超特定的、使用体验良好的原生应用程序，从改进的系统监控工具（iostat、bpftrace 可视化）到完成长期搁置的副项目。
+
+* **文化影响**：创建精美原生 UI 的门槛已经崩塌。作者鼓励开发者为自己的问题构建极度特定的工具，并分享想法/提示词而非将其视为传统软件产品——呼应 Emacs 的展示与交流文化。
+
+**[Read Original / 阅读原文](https://sockpuppet.org/blog/2026/05/12/emacsification/)**
+
+### 🎬 Clone Any YouTube Channel with Claude AI (No Coding, 100% Free)
+**Channel:** AI Flow
+
+* **What the video covers:** A step-by-step tutorial on cloning YouTube channels using Claude AI's coding capabilities without requiring programming knowledge
+* **Key topics discussed:** Using Claude AI for automated content replication, no-code implementation methods, free tools and workflows for channel cloning
+* **Why it's worth watching:** Demonstrates practical AI automation for content creators who want to replicate channel structures or learn reverse-engineering techniques without technical barriers; shows how accessible AI coding assistants have become for non-developers
+
+---
+
+### 🎬 使用 Claude AI 克隆任何 YouTube 频道（无需编程，完全免费）
+**频道:** AI Flow
+
+* **视频内容概述:** 详细教程展示如何利用 Claude AI 的编程能力克隆 YouTube 频道，无需编程基础
+* **主要话题:** Claude AI 自动化内容复制、无代码实现方法、免费工具和工作流程
+* **为何值得观看:** 为内容创作者展示实用的 AI 自动化技术，帮助复制频道结构或学习逆向工程技巧，无技术门槛；体现 AI 编程助手对非开发者的可及性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=m47OgPtxhBg)**
 
