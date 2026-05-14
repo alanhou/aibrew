@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 14, 2026"
 date: 2026-05-14
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -664,4 +664,106 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 为内容创作者展示实用的 AI 自动化技术，帮助复制频道结构或学习逆向工程技巧，无技术门槛；体现 AI 编程助手对非开发者的可及性
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=m47OgPtxhBg)**
+
+### Anthropic Launches Claude for Small Business: AI-Powered Workflows for Everyday Tools
+
+* **New product package**: Claude for Small Business integrates AI directly into tools like QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, and Microsoft 365
+* **15 ready-to-run workflows**: Covers finance, operations, sales, marketing, HR, and customer service tasks that small business owners handle daily
+* **Key capabilities**: Plan payroll, close monthly books, run sales campaigns, chase invoices, reconcile accounts, and generate marketing content
+* **Approval-based system**: Users initiate tasks and approve actions before Claude executes—nothing sends, posts, or pays without owner confirmation
+* **Addresses adoption gap**: Small businesses represent 44% of U.S. GDP but lag in AI adoption due to lack of tailored tools and training
+* **Security focus**: Maintains existing user permissions, doesn't train on customer data by default (Team/Enterprise plans), keeps users in control
+* **Free training program**: Partnered with PayPal to launch "AI Fluency for Small Business" course teaching practical AI usage
+* **Partner integrations**: Deep collaboration with QuickBooks (payroll, financial close), HubSpot (CRM and campaigns), and Canva (content creation)
+
+---
+
+### Anthropic 推出小企业版 Claude：为日常工具注入 AI 自动化工作流
+
+* **新产品套件**：Claude for Small Business 将 AI 直接集成到 QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace 和 Microsoft 365 等工具中
+* **15 个即用型工作流**：涵盖财务、运营、销售、营销、人力资源和客户服务等小企业主日常处理的任务
+* **核心功能**：规划工资发放、月度账目结算、开展销售活动、追踪发票、账目核对以及生成营销内容
+* **审批制系统**：用户发起任务并在 Claude 执行前进行审批——未经所有者确认，不会发送、发布或支付任何内容
+* **解决采用差距**：小企业占美国 GDP 的 44%，但因缺乏定制化工具和培训，AI 采用率落后
+* **安全重点**：保持现有用户权限，默认不使用客户数据进行训练(团队版/企业版)，用户保持控制权
+* **免费培训计划**：与 PayPal 合作推出"小企业 AI 能力培训"课程，教授实用 AI 使用技能
+* **合作伙伴集成**：与 QuickBooks(工资、财务结算)、HubSpot(CRM 和营销活动)和 Canva(内容创作)深度合作
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/claude-for-small-business)**
+
+### Cisco Announces Workforce Reduction Amid Record Q3 Revenue Growth
+
+* Cisco reported record Q3 FY26 revenue of $15.8 billion, up 12% year-over-year with double-digit growth
+* The company will reduce its workforce by fewer than 4,000 jobs (less than 5% of total employees) in Q4, with notifications beginning May 14
+* Impacted employees will receive pro-rated FY26 bonuses, placement services (75% success rate), and one year of free access to Cisco U courses and certifications
+* Strategic investments will focus on silicon, optics, security, and AI integration across the company
+* Leadership attributes the restructuring to market complexity, intensifying competition, and global component shortages affecting AI infrastructure buildout
+* The company emphasizes the need for focus, urgency, and disciplined investment reallocation to remain competitive in the AI era
+
+### 思科宣布裁员，同时第三季度营收创历史新高
+
+* 思科公布 2026 财年第三季度创纪录营收 158 亿美元，同比增长 12%，实现两位数增长
+* 公司将在第四季度裁减不到 4,000 个职位（占员工总数不到 5%），通知将从 5 月 14 日开始发出
+* 受影响员工将获得按比例支付的 2026 财年奖金、职位安置服务（成功率 75%）以及一年免费 Cisco U 课程和认证访问权限
+* 战略投资将聚焦于芯片、光学、安全以及全公司范围内的 AI 应用
+* 管理层将重组归因于市场复杂性、竞争加剧以及影响 AI 基础设施建设的全球组件短缺
+* 公司强调需要专注、紧迫感和有纪律的投资重新配置，以在 AI 时代保持竞争力
+
+**[Read Original / 阅读原文](https://blogs.cisco.com/news/our-path-forward)**
+
+### Arena AI Model ELO History: Tracking AI Model Performance Over Time
+
+* **Purpose**: Exposes hidden trends in AI model updates, including post-launch "nerfs" like aggressive censorship, excessive quantization for cost savings, and behavioral degradation
+* **Data Source**: Automatically fetched daily from the official LM Arena Leaderboard Dataset on Hugging Face, based on thousands of blind, crowdsourced human evaluations
+* **Web UI vs API Gap**: LMSYS Arena tests raw API endpoints, while consumer interfaces (gemini.com, chatgpt.com) add system prompts, safety filters, and may silently switch to quantized versions during peak load
+* **Chart Logic**: Each AI lab has ONE curve tracking their highest-rated flagship model at any point in time, with inference-mode variants (like -thinking, -reasoning) collapsed into single entries
+* **Visualization Features**: New releases shown as labeled marker points (often with ELO jumps), while any downward trends between releases clearly expose model degradation
+* **Open Contribution**: PRs welcome for data sources representing true web-interface evaluations beyond API benchmarks
+
+### Arena AI 模型 ELO 历史：追踪 AI 模型性能变化
+
+* **目的**：揭露 AI 模型更新中的隐藏趋势，包括发布后的"削弱"，如过度审查、为节省成本的过度量化以及行为退化
+* **数据来源**：每日自动从 Hugging Face 上的官方 LM Arena 排行榜数据集获取，基于数千次盲测众包人工评估
+* **网页界面与 API 差异**：LMSYS Arena 测试原始 API 端点，而消费者界面（gemini.com、chatgpt.com）会添加系统提示词、安全过滤器，并可能在高峰期静默切换到量化版本
+* **图表逻辑**：每个 AI 实验室有一条曲线，追踪其在任意时间点评分最高的旗舰模型，推理模式变体（如 -thinking、-reasoning）合并为单一条目
+* **可视化特性**：新版本发布显示为带标签的标记点（通常伴随 ELO 跃升），而版本之间的任何下降趋势清晰暴露模型退化
+* **开放贡献**：欢迎提交 PR，补充代表真实网页界面评估的数据源，超越 API 基准测试
+
+**[Read Original / 阅读原文](https://mayerwin.github.io/AI-Arena-History/)**
+
+### Gopay_plus_automatic - Automated claude-sonnet-4-5 Plus Subscription via GoPay
+
+* **What it does**: Automatically subscribes to ChatGPT Plus using the Stripe → Midtrans → GoPay payment chain with Indonesian virtual phone numbers, completing the first month free trial in approximately 20 seconds
+* **Key features**: Fully automated OTP verification (manual/SMS API/WhatsApp modes), batch subscription support with concurrent processing, gRPC-based payment core with orchestrator architecture, supports multiple GoPay accounts with configurable PINs
+* **Why it's notable**: Provides a technical solution for automating ChatGPT Plus subscriptions through Indonesia's GoPay payment system, eliminating manual intervention in the subscription process. The project demonstrates sophisticated payment flow automation and includes detailed documentation on bypassing fraud detection systems, though the author has discontinued updates and emphasizes it's for research/educational purposes only.
+
+---
+
+### Gopay_plus_automatic - GoPay 自动订阅 ChatGPT Plus 工具
+
+* **功能介绍**: 通过 Stripe → Midtrans → GoPay 支付链路自动完成 ChatGPT Plus 订阅，使用印尼虚拟手机号在约 20 秒内完成首月 0 元试用
+* **主要特点**: 全自动 OTP 验证码接收(支持手动/短信接码平台/WhatsApp 三种模式)、支持批量并发订阅、基于 gRPC 的支付核心与编排器架构、可配置多个 GoPay 账号和 PIN 码
+* **为何值得关注**: 提供了通过印尼 GoPay 支付系统自动化订阅 ChatGPT Plus 的技术方案,消除了手动操作流程。项目展示了复杂的支付流程自动化技术,并详细记录了绕过反欺诈检测的方法,但作者已停止更新并强调仅供研究学习使用。
+
+**[View Repository / 查看仓库](https://github.com/ywnd1144/Gopay_plus_automatic)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
 
