@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 14, 2026"
 date: 2026-05-14
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -766,4 +766,71 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+### Welcome to Classic 7: A Windows 7-Inspired Windows 10 Modification
+
+* **What is Classic 7?** A modified version of Windows 10 IoT Enterprise LTSC 2021 designed to replicate the Windows 7 look and feel with 1:1 accuracy
+* **Authentic Experience:** Features a recreated OOBE (Out-of-Box Experience) that mirrors the original Windows 7 setup process
+* **Windows 7 Features Included:** Brings back most beloved features from Windows 7, with some exceptions that may be added in future updates
+* **Missing Features:** 3D window animations (open/close/minimize/maximize), Flip 3D (no quality port available yet), and some system applications/gadgets due to Windows 7-10 incompatibilities
+* **Target Audience:** Users nostalgic for Windows 7's interface while wanting Windows 10's modern foundation and security updates
+
+### 欢迎使用 Classic 7：Windows 7 风格的 Windows 10 改版系统
+
+* **什么是 Classic 7？** 基于 Windows 10 IoT Enterprise LTSC 2021 的修改版本，旨在 1:1 还原 Windows 7 的外观和体验
+* **原汁原味体验：** 完整重现 Windows 7 的开箱即用体验（OOBE），让您的电脑再次回到简洁时代
+* **包含 Windows 7 功能：** 带回了 Windows 7 的大部分经典功能，部分例外功能可能在未来版本中加入
+* **缺失功能：** 窗口 3D 动画效果（打开/关闭/最小化/最大化）、Flip 3D（目前无高质量移植版本），以及部分系统应用/小工具因 Windows 7 与 10 不兼容而无法使用
+* **目标用户：** 怀念 Windows 7 界面，同时希望获得 Windows 10 现代化基础和安全更新的用户
+
+**[Read Original / 阅读原文](https://classic7.lol/)**
+
+<!-- [Title-Only] -->
+### Scorched Earth 2000 – Web
+
+* Based on the title, this article likely covers a web-based version or revival of "Scorched Earth," the classic DOS artillery game from the 1990s where players control tanks and take turns firing weapons at each other across destructible terrain
+* Why it might be interesting to readers: Scorched Earth was an iconic turn-based strategy game that defined a generation of shareware gaming. A web version would bring this nostalgic classic to modern browsers, making it accessible without DOS emulators. It represents the ongoing trend of preserving and modernizing retro games for contemporary platforms, and could appeal to both veterans who remember the original and new players discovering classic game design
+
+### Scorched Earth 2000 – 网页版
+
+* 根据标题推测，这篇文章可能介绍了经典 DOS 炮兵游戏"Scorched Earth"的网页版或复刻版本。在这款 90 年代的游戏中，玩家控制坦克，在可破坏的地形上轮流向对手发射武器
+* 为何值得关注：Scorched Earth 是一款标志性的回合制策略游戏，定义了共享软件游戏的一个时代。网页版本将这款怀旧经典带到现代浏览器中，无需 DOS 模拟器即可游玩。它代表了复古游戏保存和现代化的持续趋势，既能吸引记得原版的老玩家，也能让新玩家发现经典游戏设计的魅力
+
+**[Read Original / 阅读原文](http://www.scorch2000.com/web/)**
+
+### MacBook Neo Processor Benchmarks: A18 Pro CPU vs M1 and M4
+
+* **A18 Pro Performance**: The MacBook Neo uses Apple's A18 Pro chip (same as iPhone 16 Pro) with 6 CPU cores, achieving 3,569 single-core and 8,879 multi-core in Geekbench 6 when cold—landing between M3 and M4 performance
+* **Thermal Throttling Reality**: After 60 seconds of sustained load, the fanless design causes CPU utilization to drop 64% in 15 seconds, reducing single-core performance by 87% after thermal soak (from 3,569 to 476)
+* **$599 Price Point**: Apple achieves this unprecedented Mac pricing through vertical integration—designing the chip, controlling the OS, and amortizing silicon costs across 230 million iPhones annually
+* **Real-World Testing**: Three thermal states tested show dramatic performance variance: cold start (baseline), dev workload with Claude Code active (-80% single-core), and post-thermal soak (-87% single-core)
+* **Hardware Tradeoffs**: To hit $599, Apple cut MagSafe, Thunderbolt, backlit keyboard, haptic trackpad, P3 display, Wi-Fi 7, and limited to 8GB RAM (no upgrade path) with one USB-C port at USB 2.0 speeds
+* **Thermal Design Philosophy**: The chassis stays at 97.6°F (36.4°C) externally while the chip hits 105°C internally—Apple prioritized user comfort over sustained performance in this fanless design
+* **Use Case Positioning**: The Neo is a "sprinter, not marathon runner"—excellent for burst workloads under 60 seconds, but sustained heavy tasks trigger aggressive throttling in the fanless aluminum chassis
+
+### MacBook Neo 处理器基准测试：A18 Pro CPU 对比 M1 和 M4
+
+* **A18 Pro 性能表现**：MacBook Neo 搭载苹果 A18 Pro 芯片（与 iPhone 16 Pro 相同），6 核 CPU，冷启动时 Geekbench 6 单核 3,569 分、多核 8,879 分——性能介于 M3 和 M4 之间
+* **热节流现实**：持续负载 60 秒后，无风扇设计导致 CPU 利用率在 15 秒内下降 64%，热浸泡后单核性能降低 87%（从 3,569 降至 476）
+* **599 美元价格点**：苹果通过垂直整合实现这一史无前例的 Mac 定价——自主设计芯片、控制操作系统、并在每年 2.3 亿部 iPhone 上分摊硅片成本
+* **实际测试数据**：三种热状态测试显示性能差异巨大：冷启动（基准线）、Claude Code 活跃的开发工作负载（单核 -80%）、热浸泡后（单核 -87%）
+* **硬件取舍**：为达到 599 美元，苹果砍掉了 MagSafe、雷雳接口、背光键盘、触觉触控板、P3 显示屏、Wi-Fi 7，并限制为 8GB 内存（无升级路径），其中一个 USB-C 接口仅支持 USB 2.0 速度
+* **散热设计理念**：机身外部保持在 97.6°F（36.4°C），而芯片内部达到 105°C——苹果在这款无风扇设计中优先考虑用户舒适度而非持续性能
+* **使用场景定位**：Neo 是"短跑选手而非马拉松选手"——适合 60 秒内的突发工作负载，但持续重度任务会在无风扇铝制机身中触发激进的节流限制
+
+**[Read Original / 阅读原文](https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/)**
+
+### Clawdmeter - ESP32 Desk Dashboard for Claude Code Usage Monitoring
+
+* **What it does**: A physical desk dashboard that displays real-time Claude Code API usage statistics on an ESP32-powered AMOLED screen, featuring animated pixel-art "Clawd" mascot that responds to usage patterns
+* **Key features**: Bluetooth pairing with laptop for live usage tracking; animated splash screens with mood-based Clawd sprites; physical buttons for Claude Code voice mode (Space) and mode toggle (Shift+Tab) via BLE HID; displays session and weekly utilization percentages with auto-refresh daemon
+* **Why it's notable**: Creative hardware integration for AI coding assistant monitoring; combines custom GATT protocol, LVGL graphics, and HID keyboard functionality; uses pixel art from claudepix library with usage-rate-responsive animations; practical tool for developers tracking Claude API limits
+
+### Clawdmeter - Claude Code 使用量桌面仪表盘
+
+* **功能介绍**: 基于 ESP32 的物理桌面仪表盘，在 AMOLED 屏幕上实时显示 Claude Code API 使用统计，配有根据使用模式变化的像素风格 Clawd 吉祥物动画
+* **主要特点**: 通过蓝牙与笔记本配对实时追踪使用量；带有情绪化 Clawd 精灵动画的启动画面；物理按钮通过 BLE HID 触发 Claude Code 语音模式（空格键）和模式切换（Shift+Tab）；显示会话和每周使用率百分比，配有自动刷新守护进程
+* **为何值得关注**: AI 编码助手监控的创意硬件集成方案；结合自定义 GATT 协议、LVGL 图形界面和 HID 键盘功能；使用 claudepix 库的像素艺术，动画响应使用率变化；帮助开发者追踪 Claude API 限额的实用工具
+
+**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
 
