@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 15, 2026"
 date: 2026-05-15
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -337,4 +337,260 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 适合希望在保护隐私、节省成本的同时完全掌控 AI 编码工具的开发者观看，无需依赖云服务
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UngVdAsQEiU)**
+
+### First Public macOS Kernel Memory Corruption Exploit on Apple M5
+
+* **Historic Achievement**: First public macOS kernel memory corruption exploit successfully bypassing MIE (Memory Integrity Enforcement) on Apple M5 silicon, reported directly to Apple at their Cupertino headquarters
+* **Rapid Development**: Complete exploit chain built in just one week (April 25 - May 1) by a small team, demonstrating the power of AI-assisted vulnerability research
+* **Technical Details**: Data-only kernel local privilege escalation targeting macOS 26.4.1, starting from unprivileged user to root shell using only normal system calls on bare-metal M5 hardware
+* **AI-Powered Discovery**: Mythos Preview AI system identified vulnerabilities and assisted throughout development, showcasing how AI can generalize attack patterns across problem classes
+* **MIE Challenge**: Apple's hardware-assisted memory safety system, built over 5 years at billions of dollars cost, was designed to disrupt all public iOS exploit chains including Coruna and Darksword kits
+* **Future Implications**: This work demonstrates that even best-in-class mitigations can be evaded with the right vulnerabilities, foreshadowing an "AI bugmageddon" era where small teams can achieve what previously required entire organizations
+* **Responsible Disclosure**: Full 55-page technical report will be published after Apple ships a fix; team chose in-person reporting to avoid submission backlogs
+
+### 首个公开的 Apple M5 macOS 内核内存破坏漏洞利用
+
+* **历史性突破**：首个成功绕过 Apple M5 芯片上 MIE（内存完整性强制）保护的公开 macOS 内核内存破坏漏洞利用，已在库比蒂诺总部直接向苹果报告
+* **快速开发**：小型团队仅用一周时间（4月25日至5月1日）构建完整漏洞利用链，展示了 AI 辅助漏洞研究的强大能力
+* **技术细节**：针对 macOS 26.4.1 的纯数据内核本地权限提升攻击，从非特权用户通过常规系统调用提权至 root shell，运行在裸机 M5 硬件上
+* **AI 驱动发现**：Mythos Preview AI 系统识别漏洞并全程辅助开发，展示了 AI 如何将攻击模式泛化应用于同类问题
+* **MIE 挑战**：苹果耗时5年、投入数十亿美元打造的硬件辅助内存安全系统，旨在阻断包括 Coruna 和 Darksword 工具包在内的所有公开 iOS 漏洞利用链
+* **未来影响**：这项工作证明即使是最顶级的防护措施也可能被合适的漏洞绕过，预示着"AI 漏洞末日"时代的到来——小团队能完成过去需要整个组织才能实现的目标
+* **负责任披露**：完整的55页技术报告将在苹果发布修复后公开；团队选择当面报告以避免提交积压
+
+**[Read Original / 阅读原文](https://blog.calif.io/p/first-public-kernel-memory-corruption)**
+
+### The Great Zombification: AI's Corrosive Impact on Elite Universities
+
+* A UCLA graduate's viral photo showing ChatGPT at graduation reveals a deeper crisis than simple cheating—AI usage has metastasized throughout every level of university life
+* At UChicago, AI cheating evolved from isolated incidents to systemic corruption: students photograph exams to feed into LLMs, take-home test scores diverge 40 points from in-person exams
+* The cancer spread beyond academics—student newspapers published fully AI-written articles, professors allegedly use ChatGPT for lectures, and students automate everything from homework to personal emails
+* Universities are complicit, pouring millions into "AI in the classroom" initiatives while the technology hollows out genuine learning and human capability
+* The author compares AI dependency to a "zombie ant-fungus"—watching a classmate progressively surrender all decision-making to LLMs, from problem sets to gym routines to romantic messages
+* This represents not just academic misconduct but an existential threat to universities as institutions and to an entire generation's intellectual development
+* The piece references "The Whispering Earring," a prophetic 2012 story about an artifact that gives perfect advice, gradually taking over all human agency through increasingly granular commands
+* What appears as efficiency gains masks a fundamental loss: students are becoming "drooling morons," unable to think independently or engage authentically with learning
+
+### 大僵尸化：AI对精英大学的腐蚀性影响
+
+* 加州大学洛杉矶分校毕业生在毕业典礼上展示ChatGPT的病毒照片揭示了比简单作弊更深层的危机——AI使用已经扩散到大学生活的各个层面
+* 在芝加哥大学，AI作弊从孤立事件演变为系统性腐败：学生在考试中拍照上传到大语言模型，居家考试成绩与现场考试相差40分
+* 这种癌症蔓延到学术之外——学生报纸发表完全由AI撰写的文章，教授据称使用ChatGPT准备讲座，学生将从作业到私人邮件的一切都自动化
+* 大学是共谋者，投入数百万美元用于"课堂AI"计划，而这项技术正在掏空真正的学习和人类能力
+* 作者将AI依赖比作"僵尸蚂蚁真菌"——看着一位同学逐渐将所有决策权交给大语言模型，从习题集到健身计划再到恋爱信息
+* 这不仅代表学术不端，更是对大学作为机构以及整整一代人智力发展的生存威胁
+* 文章引用了2012年的预言性故事《低语耳环》，讲述一个提供完美建议的神器，通过越来越细致的指令逐渐接管所有人类能动性
+* 表面上的效率提升掩盖了根本性的丧失：学生正在变成"流口水的白痴"，无法独立思考或真实地参与学习
+
+**[Read Original / 阅读原文](https://www.thenewcritic.com/p/the-great-zombification)**
+
+### Senior Developer Advocate at Infracost - Shaping the Future of Cloud Cost Management
+
+* **Company Mission**: Infracost helps engineers see cloud infrastructure costs before deployment, enabling proactive FinOps by integrating cost visibility into engineering workflows (CLI, CI/CD, IDEs)
+* **Market Context**: Public cloud spending approaching $1 trillion annually; Infrastructure-as-Code has democratized cloud provisioning, making every engineer a buyer
+* **Role Focus**: First Developer Advocate hire responsible for driving signups by engaging DevOps, SRE, Platform, and Infrastructure engineers through content creation, community building, and developer education
+* **Key Responsibilities**: Shape developer engagement strategy, create technical content (blogs, videos, tutorials), build community presence across GitHub/Slack/YouTube/Reddit, and establish feedback loops between users and product teams
+* **Ideal Candidate**: DevOps/IaC background with proven content creation skills, community building experience, and ability to simplify technical concepts; bonus for startup experience or cloud cost expertise
+* **Company Culture**: Values customer partnership ("Ustomer not customer"), radical transparency ("Open is our core"), and bias toward action ("Let's JEDI - Just Effing Do It")
+* **Benefits**: Fully remote, 31 days PTO, bi-annual team meetups (recent: Croatia, Barcelona), 10-year equity exercise window, 401k matching, comprehensive health benefits, 12 weeks parental leave
+* **Traction**: 12K GitHub stars on CLI repo demonstrating strong developer pull and product-market fit
+
+### Infracost 高级开发者布道师 - 塑造云成本管理的未来
+
+* **公司使命**: Infracost 帮助工程师在部署前看到云基础设施成本，通过将成本可见性集成到工程工作流（CLI、CI/CD、IDE）中实现主动式 FinOps
+* **市场背景**: 公共云支出接近每年 1 万亿美元；基础设施即代码（IaC）使云资源配置民主化，让每位工程师都成为采购决策者
+* **职位重点**: 首位开发者布道师，负责通过内容创作、社区建设和开发者教育，吸引 DevOps、SRE、平台和基础设施工程师，推动注册增长
+* **核心职责**: 制定开发者参与策略，创建技术内容（博客、视频、教程），在 GitHub/Slack/YouTube/Reddit 等平台建立社区影响力，建立用户与产品团队之间的反馈循环
+* **理想候选人**: 具有 DevOps/IaC 背景，拥有成熟的内容创作能力和社区建设经验，能够简化技术概念；有初创公司经验或云成本专业知识者优先
+* **公司文化**: 重视客户伙伴关系（"Ustomer 而非 customer"）、极度透明（"开放是我们的核心"）、偏向行动（"Let's JEDI - 立即执行"）
+* **福利待遇**: 完全远程办公，每年 31 天带薪假期，每年两次团队聚会（最近去了克罗地亚和巴塞罗那），10 年股权行权窗口期，401k 匹配，全面医疗保险，12 周育儿假
+* **市场牵引力**: CLI 代码库获得 12K GitHub 星标，展示强劲的开发者需求和产品市场契合度
+
+**[Read Original / 阅读原文](https://www.ycombinator.com/companies/infracost/jobs/NzwUQ7c-senior-developer-advocate)**
+
+### Superpowers - An Agentic Skills Framework for AI-Powered Software Development
+
+* **What it does**: A complete software development methodology that transforms coding agents (like Claude, Cursor, Copilot) into systematic developers. Instead of jumping straight into code, agents follow a structured workflow: brainstorming → design approval → implementation planning → subagent-driven development → test-driven implementation → code review → branch completion.
+
+* **Key features**: 
+  - **Automatic skill activation** - agents detect context and apply appropriate workflows without manual prompting
+  - **Subagent-driven development** - spawns fresh subagents for each task with two-stage review (spec compliance, then code quality)
+  - **True TDD enforcement** - RED-GREEN-REFACTOR cycle that deletes code written before tests
+  - **Git worktree integration** - isolated workspaces for parallel development
+  - **Composable skills library** - testing, debugging, collaboration, and meta skills that work together
+  - **Multi-agent support** - works across Claude Code, Cursor, Copilot CLI, Codex, and more
+
+* **Why it's notable**: Addresses the core problem of AI coding agents producing unmaintainable code by enforcing engineering discipline. With 1,800+ stars today, it's gaining traction as a practical solution for autonomous agent development that can work for hours without deviating from plan. Built by Jesse Vincent (Prime Radiant), it represents a shift from "AI writes code" to "AI follows software engineering methodology."
+
+---
+
+### Superpowers - AI 编程代理的技能框架与开发方法论
+
+* **功能介绍**: 一套完整的软件开发方法论,将 AI 编程代理(如 Claude、Cursor、Copilot)转变为系统化的开发者。代理不会直接开始写代码,而是遵循结构化工作流:头脑风暴 → 设计确认 → 实施计划 → 子代理驱动开发 → 测试驱动实现 → 代码审查 → 分支完成。
+
+* **主要特点**:
+  - **自动技能激活** - 代理自动检测上下文并应用相应工作流,无需手动提示
+  - **子代理驱动开发** - 为每个任务生成新的子代理,进行两阶段审查(规范合规性,然后代码质量)
+  - **强制 TDD** - 严格执行 RED-GREEN-REFACTOR 循环,删除测试前编写的代码
+  - **Git worktree 集成** - 为并行开发提供隔离工作空间
+  - **可组合技能库** - 测试、调试、协作和元技能协同工作
+  - **多代理支持** - 支持 Claude Code、Cursor、Copilot CLI、Codex 等多个平台
+
+* **为何值得关注**: 通过强制执行工程规范,解决了 AI 编程代理产生难以维护代码的核心问题。今日获得 1800+ star,作为一个实用的自主代理开发解决方案正在获得关注,可以让代理在不偏离计划的情况下自主工作数小时。由 Jesse Vincent(Prime Radiant)构建,代表了从"AI 写代码"到"AI 遵循软件工程方法论"的转变。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Scientific Agent Skills - Comprehensive AI Research Assistant Toolkit
+
+* **What it does**: A collection of 135 ready-to-use skills that transform AI coding agents (Cursor, Claude Code, Codex) into powerful research assistants capable of executing complex scientific workflows across biology, chemistry, medicine, engineering, and more.
+
+* **Key features**: 
+  - 100+ scientific databases (PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov, etc.) with unified access
+  - 70+ optimized Python package skills (RDKit, Scanpy, PyTorch Lightning, BioPython, OpenMM, scVelo, TimesFM)
+  - 30+ analysis and communication tools for literature review, scientific writing, visualization
+  - Covers bioinformatics, drug discovery, proteomics, clinical research, medical imaging, ML/AI, materials science, geospatial analysis, and more
+  - Works with any AI agent supporting the open Agent Skills standard
+  - Each skill includes comprehensive documentation, code examples, and best practices
+
+* **Why it's notable**: Rapidly trending (637 stars today) because it bridges the gap between general-purpose AI coding agents and specialized scientific research. Instead of spending days researching APIs and integration, researchers get production-ready, tested code for complex multi-step scientific workflows. The repository provides curated documentation that makes AI agents significantly more reliable for scientific tasks, effectively creating an "AI Scientist" on your desktop. Recently expanded from Claude-only to support any Agent Skills-compatible platform, with a new open-source companion project (K-Dense BYOK) for local deployment.
+
+---
+
+### Scientific Agent Skills - 综合 AI 科研助手工具包
+
+* **功能介绍**: 包含 135 个即用型技能的集合,可将 AI 编码代理(Cursor、Claude Code、Codex)转变为强大的科研助手,能够跨生物学、化学、医学、工程等领域执行复杂的科学工作流程。
+
+* **主要特点**:
+  - 100+ 科学数据库(PubChem、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov 等)统一访问接口
+  - 70+ 优化的 Python 包技能(RDKit、Scanpy、PyTorch Lightning、BioPython、OpenMM、scVelo、TimesFM)
+  - 30+ 分析和交流工具,支持文献综述、科学写作、可视化
+  - 涵盖生物信息学、药物发现、蛋白质组学、临床研究、医学影像、机器学习、材料科学、地理空间分析等领域
+  - 兼容所有支持开放 Agent Skills 标准的 AI 代理
+  - 每个技能都包含完整文档、代码示例和最佳实践
+
+* **为何值得关注**: 快速走红(今日获 637 星),因为它在通用 AI 编码代理和专业科研之间架起了桥梁。研究人员无需花费数天研究 API 和集成设置,即可获得经过测试的生产级代码来执行复杂的多步骤科学工作流程。该仓库提供的精选文档使 AI 代理在科学任务中更加可靠,有效地在桌面上创建了一个"AI 科学家"。最近从仅支持 Claude 扩展到支持任何兼容 Agent Skills 的平台,并推出了新的开源配套项目(K-Dense BYOK)用于本地部署。
+
+**[View Repository / 查看仓库](https://github.com/K-Dense-AI/scientific-agent-skills)**
+
+### YellowKey - BitLocker Bypass Vulnerability Discovery
+
+* **What it does**: Demonstrates a critical vulnerability that allows bypassing Windows BitLocker disk encryption protection through Windows Recovery Environment manipulation
+* **Key features**: 
+  - Requires only a USB stick with specific FsTx folder structure
+  - Works by exploiting Windows Recovery Environment (WinRE) components
+  - Grants unrestricted access to BitLocker-protected volumes without requiring the encryption key
+  - Affects Windows 11, Server 2022, and Server 2025 (Windows 10 not affected)
+* **Why it's notable**: The researcher suggests this could be an intentional backdoor due to suspicious component behavior - the vulnerable component exists only in WinRE images with functionality absent from normal Windows installations. The exploit is remarkably simple to execute and raises serious security concerns about BitLocker's protection mechanisms. Disclosed in coordination with Microsoft security teams.
+
+---
+
+### YellowKey - BitLocker 加密绕过漏洞
+
+* **功能介绍**: 展示了一个严重的安全漏洞,可通过 Windows 恢复环境操作绕过 Windows BitLocker 磁盘加密保护
+* **主要特点**:
+  - 仅需一个包含特定 FsTx 文件夹结构的 U 盘
+  - 利用 Windows 恢复环境(WinRE)组件中的漏洞
+  - 无需加密密钥即可获得对 BitLocker 保护卷的完全访问权限
+  - 影响 Windows 11、Server 2022 和 Server 2025(Windows 10 不受影响)
+* **为何值得关注**: 研究人员认为这可能是一个故意留下的后门,因为存在可疑的组件行为——该漏洞组件仅存在于 WinRE 镜像中,且具有正常 Windows 安装中不存在的功能。该漏洞执行方式极其简单,引发了对 BitLocker 保护机制的严重安全担忧。已与微软安全团队协调公开披露。
+
+**[View Repository / 查看仓库](https://github.com/Nightmare-Eclipse/YellowKey)**
+
+### Clawdmeter - ESP32 Desk Dashboard for Claude Code Usage Monitoring
+
+* **What it does**: A physical desk dashboard that displays real-time Claude Code API usage statistics on an ESP32-powered AMOLED screen, featuring animated pixel-art "Clawd" characters that react to usage intensity
+* **Key features**: Runs on Waveshare ESP32-S3 with 2.16" AMOLED display; Bluetooth pairing with laptop; animated splash screens that change based on usage rate; physical buttons for Claude Code voice mode (Space) and mode toggle (Shift+Tab) via BLE HID; displays session and weekly utilization percentages with reset timers; cross-platform daemon (Linux/macOS) that polls Claude API every 60s
+* **Why it's notable**: Creative hardware integration that transforms abstract API metrics into tangible, ambient awareness; combines practical monitoring with delightful pixel-art animations from the claudepix library; demonstrates ESP32 capabilities with LVGL UI, BLE dual-mode (GATT + HID), and custom font rendering; well-documented build process including font compilation and icon conversion workflows
+
+---
+
+### Clawdmeter - Claude Code 使用量监控桌面仪表盘
+
+* **功能介绍**: 基于 ESP32 的物理桌面仪表盘,在 AMOLED 屏幕上实时显示 Claude Code API 使用统计,配有像素风格的"Clawd"动画角色,会根据使用强度变化做出反应
+* **主要特点**: 运行在配备 2.16 英寸 AMOLED 显示屏的 Waveshare ESP32-S3 开发板;通过蓝牙与笔记本配对;根据使用率变化的动画启动画面;物理按键通过 BLE HID 触发 Claude Code 语音模式(空格键)和模式切换(Shift+Tab);显示会话和每周使用率百分比及重置倒计时;跨平台守护进程(Linux/macOS)每 60 秒轮询 Claude API
+* **为何值得关注**: 将抽象的 API 指标转化为可触摸的环境感知设备,创意十足的硬件集成方案;实用监控与 claudepix 库提供的精美像素动画完美结合;展示了 ESP32 的强大能力,包括 LVGL 用户界面、BLE 双模(GATT + HID)和自定义字体渲染;详尽的构建文档涵盖字体编译和图标转换工作流程
+
+**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
+
+### 🎬 Why Humans Waited 70,000 Years to Build Civilization - David Reich
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of why anatomically modern humans existed for approximately 70,000 years before developing complex civilizations, examining the biological, environmental, and cultural factors that delayed this transition
+* Key topics discussed: Human evolutionary history, the cognitive and social prerequisites for civilization, potential genetic or environmental triggers that enabled the agricultural revolution, and what distinguished pre-civilization humans from those who built early societies
+* Why it's worth watching: David Reich, a leading geneticist and expert on ancient DNA, offers unique insights into one of anthropology's most puzzling questions—combining cutting-edge genetic research with archaeological evidence to explain humanity's long "waiting period" before civilization emerged
+
+---
+
+### 🎬 人类为何等待了7万年才建立文明 - David Reich
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨解剖学意义上的现代人类存在约7万年后才发展出复杂文明的原因,分析延迟这一转变的生物学、环境和文化因素
+* 主要话题: 人类进化史、文明所需的认知和社会先决条件、可能促成农业革命的基因或环境触发因素,以及文明前人类与早期社会建设者的区别
+* 为何值得观看: David Reich作为古DNA研究领域的顶尖遗传学家,对人类学最令人困惑的问题之一提供了独特见解——结合前沿基因研究和考古证据,解释人类在文明出现前漫长的"等待期"
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=C8kOBVNkzpQ)**
+
+### 🎬 How to use OpenAI APIs for Free
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** A method to access OpenAI APIs without paying, through a program that provides daily free tokens
+* **Key topics discussed:** 
+  * Alternative to OpenAI's paid API access (no free trial available)
+  * Daily token allocation: 250K tokens for latest models, 2.5M tokens for other models
+  * Practical implementation for developers wanting to experiment with OpenAI APIs
+* **Why it's worth watching:** Valuable for developers, students, or hobbyists who want to test and build with OpenAI's API capabilities without incurring costs during the development phase
+
+---
+
+### 🎬 如何免费使用 OpenAI API
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 介绍一种无需付费即可访问 OpenAI API 的方法,通过某个项目每天获取免费令牌额度
+* **主要话题:**
+  * OpenAI 付费 API 的替代方案(官方不提供免费试用)
+  * 每日令牌配额:最新模型 25 万令牌,其他模型 250 万令牌
+  * 适合开发者实验和测试 OpenAI API 的实用方法
+* **为何值得观看:** 对于想要在开发阶段测试和构建 OpenAI API 应用的开发者、学生或爱好者来说非常实用,可以在不产生费用的情况下进行实验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=toYyrmlJZ5o)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse projects using coding and programming techniques
+* Key topics discussed: Coding fundamentals, programming approaches, and productivity strategies for developers
+* Why it's worth watching: Offers practical insights for developers looking to expand their building capabilities and improve workflow efficiency
+
+### 🎬 构建几乎任何东西 #编程 #开发 #生产力
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何使用编程技术构建各种项目的指南
+* 主要话题: 编程基础、开发方法以及提升开发者生产力的策略
+* 为何值得观看: 为希望扩展构建能力和提高工作流程效率的开发者提供实用见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
 
