@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 14, 2026"
 date: 2026-05-14
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，11个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -833,4 +833,225 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: AI 编码助手监控的创意硬件集成方案；结合自定义 GATT 协议、LVGL 图形界面和 HID 键盘功能；使用 claudepix 库的像素艺术，动画响应使用率变化；帮助开发者追踪 Claude API 限额的实用工具
 
 **[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
+
+<!-- [Title-Only] -->
+### USDA Projects Smallest US Wheat Harvest Since 1972 Due to Plains Drought
+
+* **What this article likely covers:** Based on the title, this article discusses USDA forecasts indicating the United States will experience its smallest wheat harvest in over 50 years, primarily attributed to severe drought conditions affecting the Plains states—a critical wheat-growing region.
+
+* **Why it might be interesting to readers:** This represents a significant agricultural crisis with potential ripple effects on food prices, global wheat supply chains, and food security. The historical comparison to 1972 underscores the severity of current drought conditions and raises questions about climate impacts on agriculture, farmer livelihoods, and potential policy responses. For readers interested in agriculture, economics, climate change, or food systems, this signals a major disruption worth monitoring.
+
+---
+
+### 美国农业部预测：因平原干旱，美国小麦收成将创1972年以来最低
+
+* **文章可能涵盖的内容：** 根据标题推测，本文讨论美国农业部（USDA）的预测报告，指出美国将迎来50多年来最小的小麦收成，主要原因是严重干旱影响了平原地区——这是美国的关键小麦产区。
+
+* **为何值得关注：** 这代表着一场重大的农业危机，可能对粮食价格、全球小麦供应链和粮食安全产生连锁反应。与1972年的历史对比凸显了当前干旱状况的严重性，并引发了关于气候变化对农业影响、农民生计以及潜在政策应对措施的讨论。对于关注农业、经济、气候变化或粮食系统的读者来说，这是一个值得密切关注的重大事件。
+
+**[Read Original / 阅读原文](https://www.agweb.com/news/usda-projects-smallest-us-wheat-harvest-1972-due-plains-drought)**
+
+### Computer Hobby Movement in Canada: A Chronicle of Personal Computing Revolution (1976-1985)
+
+* **Origins in Electronics Hobbyism**: The computer hobby movement emerged from a 50+ year tradition of radio and electronics hobbyism, supported by magazines like *Popular Electronics* (1954) and *Radio-Electronics*, dating back to publications from 1908
+* **Microprocessor Catalyst**: The introduction of microprocessors in the early 1970s triggered homebrew computer activities, enabling hobbyists to build low-cost microcomputers, often from kits, placing them at the forefront of the personal computer revolution
+* **TRACE Formation (1976)**: The Toronto Region Association of Computer Enthusiasts was founded in January 1976 by Control Data Canada employees, led by Harold Melanson, becoming arguably Canada's earliest computer hobby organization
+* **Parallel to US Movement**: TRACE emerged alongside influential US groups like the Homebrew Computer Club (March 1975), inspired by landmark projects like the Mark-8 (1974) and Altair 8800 (1975)
+* **Diverse Membership**: While early TRACE members were mostly computer professionals, the club soon attracted novices building their first computers, united by shared passion and technical language ("byte, bit, nibble, Kansas, ram, rom")
+* **Canadian Innovation**: Howard Franklin built one of Canada's earliest hobby computers in 1974, while Canadian companies like Microsystems International Ltd. and Micro Computer Machines (MCM/70) supported the movement
+* **Component Sourcing**: Hobbyists acquired expensive components through informal channels, with out-of-spec parts from companies like MIL and Consolidated Computer finding their way to students and enthusiasts
+* **Cultural Legacy**: Though the movement declined in the late 1980s, it made personal computing relevant and inclusive, leaving a rich cultural legacy that brought computers into Canadian homes
+
+---
+
+### 加拿大计算机爱好者运动：个人计算革命编年史（1976-1985）
+
+* **源于电子爱好传统**：计算机爱好者运动源自50多年的无线电和电子爱好传统，由《大众电子》（1954年）和《无线电-电子》等杂志支持，可追溯至1908年的出版物
+* **微处理器催化剂**：20世纪70年代初微处理器的推出引发了自制计算机活动，使爱好者能够制造低成本微型计算机（通常为套件形式），将他们推向个人计算机革命的前沿
+* **TRACE成立（1976年）**：多伦多地区计算机爱好者协会由加拿大控制数据公司员工于1976年1月创立，由Harold Melanson领导，可以说是加拿大最早的计算机爱好者组织
+* **与美国运动并行**：TRACE与美国有影响力的团体如家酿计算机俱乐部（1975年3月）同时出现，受Mark-8（1974年）和Altair 8800（1975年）等里程碑项目启发
+* **多元化成员**：虽然早期TRACE成员大多是计算机专业人士，但俱乐部很快吸引了制造第一台计算机的新手，他们因共同的热情和技术语言（"字节、位、半字节、堪萨斯、内存、只读存储器"）而团结
+* **加拿大创新**：Howard Franklin于1974年制造了加拿大最早的爱好者计算机之一，而Microsystems International Ltd.和Micro Computer Machines（MCM/70）等加拿大公司支持了这一运动
+* **元件采购**：爱好者通过非正式渠道获取昂贵元件，MIL和Consolidated Computer等公司的不合格零件流向学生和爱好者手中
+* **文化遗产**：尽管该运动在20世纪80年代末衰落，但它使个人计算变得相关和包容，留下了丰富的文化遗产，将计算机带入加拿大家庭
+
+**[Read Original / 阅读原文](https://museum.eecs.yorku.ca/exhibits/show/hobby_canada/hobby_canada)**
+
+### Anonymous DNS without an account: shipping ODoH client + relay in one Rust binary
+
+* **Problem**: Traditional DNS resolvers expose either your IP to one operator (forwarding resolvers like Pi-hole) or to every authoritative nameserver (recursive resolvers like Unbound). DoH/DoT encrypt transport but don't solve the privacy problem.
+
+* **Solution**: Numa v0.14 implements ODoH (Oblivious DNS over HTTPS, RFC 9230) - a protocol that splits the path so the relay sees your IP but not your query, while the target sees your query but not your IP. No account required, single Rust binary, MIT licensed.
+
+* **How it works**: Client encrypts queries using HPKE (same crypto as TLS ECH) under target's public key. Relay forwards ciphertext without seeing contents. Target (Cloudflare) decrypts and resolves. Response encrypted with symmetric key and returned through relay. Both operators must be independent.
+
+* **Implementation**: Built on audited crypto primitives (`odoh-rs` for HPKE, `rustls` for TLS). Relay includes SSRF-hardened hostname validator and eTLD+1 same-operator check. Public relay at `odoh-relay.numa.rs` pairs with Cloudflare's target by default.
+
+* **Limitations**: Target still sees queries (just not your IP). Traffic analysis possible on low-volume relays. Pubkey distribution relies on WebPKI. DNSSEC orthogonal but supported. Recursive mode leaks at target's egress.
+
+* **Ecosystem**: Adds second public relay to sparse ecosystem (previously only Frank Denis's Fastly relay). Encourages community to run more relays for better privacy through operator diversity.
+
+* **Usage**: `cargo install numa`, set `mode = "odoh"` in config, or use Docker compose recipe. Queries route through two independent open-source organizations.
+
+---
+
+### 无需账户的匿名 DNS：在单个 Rust 二进制文件中集成 ODoH 客户端和中继
+
+* **问题**：传统 DNS 解析器会暴露你的 IP 给单一运营商（如 Pi-hole 等转发解析器）或暴露给每个权威域名服务器（如 Unbound 等递归解析器）。DoH/DoT 加密传输但不解决隐私问题。
+
+* **解决方案**：Numa v0.14 实现了 ODoH（基于 HTTPS 的不透明 DNS，RFC 9230）协议，将路径分离，使中继看到你的 IP 但看不到查询内容，而目标服务器看到查询但看不到你的 IP。无需账户，单个 Rust 二进制文件，MIT 许可证。
+
+* **工作原理**：客户端使用 HPKE（与 TLS ECH 相同的加密技术）在目标公钥下加密查询。中继转发密文但看不到内容。目标服务器（Cloudflare）解密并解析。响应用对称密钥加密并通过中继返回。两个运营商必须独立。
+
+* **实现细节**：基于经过审计的加密原语（`odoh-rs` 用于 HPKE，`rustls` 用于 TLS）。中继包含防 SSRF 的主机名验证器和 eTLD+1 同运营商检查。公共中继 `odoh-relay.numa.rs` 默认与 Cloudflare 目标配对。
+
+* **局限性**：目标服务器仍能看到查询（只是看不到你的 IP）。低流量中继可能存在流量分析风险。公钥分发依赖 WebPKI。支持 DNSSEC 但两者正交。递归模式在目标出口处泄露信息。
+
+* **生态系统**：为稀疏的生态系统添加第二个公共中继（此前仅有 Frank Denis 的 Fastly 中继）。鼓励社区运行更多中继，通过运营商多样性提升隐私保护。
+
+* **使用方法**：`cargo install numa`，在配置中设置 `mode = "odoh"`，或使用 Docker compose 配方。查询通过两个独立的开源组织路由。
+
+**[Read Original / 阅读原文](https://numa.rs/blog/posts/odoh-anonymous-dns-without-an-account.html)**
+
+### RuView - WiFi-Based Spatial Intelligence Without Cameras
+
+* **What it does**: Transforms ordinary WiFi signals into a comprehensive sensing system that detects presence, monitors vital signs (breathing and heart rate), tracks movement, and estimates human pose—all through walls and in complete darkness without any cameras or wearables.
+
+* **Key features**: 
+  - Contactless vital sign monitoring (6-30 BPM breathing, 40-120 BPM heart rate)
+  - 17-point pose estimation using Channel State Information (CSI) from $9 ESP32-S3 sensors
+  - Through-wall detection up to 5m depth using Fresnel zone geometry
+  - Edge-first architecture with cryptographic attestation via Ed25519 witness chain
+  - Multi-frequency mesh scanning across 6 WiFi channels using neighbor routers as radar illuminators
+  - Self-learning spiking neural networks that adapt to new environments in under 30 seconds
+  - Optional integration with Cognitum Seed for persistent vector storage and AI capabilities
+  - 1,463 passing tests with production-ready Rust implementation
+
+* **Why it's notable**: RuView represents a breakthrough in privacy-preserving spatial intelligence by achieving camera-free pose estimation and vital sign monitoring using only commodity WiFi hardware. Built on research from Carnegie Mellon's "DensePose From WiFi" paper, it offers a practical, low-cost alternative to camera-based monitoring systems—ideal for healthcare, elderly care, security, and smart home applications where privacy is paramount. The system runs entirely on edge hardware with no cloud dependency, making it both cost-effective and secure. With 1,757 stars today, it's gaining rapid attention for democratizing advanced sensing technology.
+
+---
+
+### RuView - 基于WiFi的无摄像头空间智能系统
+
+* **功能介绍**: 将普通WiFi信号转化为综合传感系统,可检测人员存在、监测生命体征(呼吸和心率)、追踪运动轨迹并估算人体姿态——全程无需摄像头或可穿戴设备,可穿墙感知且在完全黑暗环境中工作。
+
+* **主要特点**:
+  - 非接触式生命体征监测(呼吸6-30次/分钟,心率40-120次/分钟)
+  - 使用9美元ESP32-S3传感器的信道状态信息(CSI)实现17个关键点的姿态估算
+  - 利用菲涅尔区几何原理实现最远5米的穿墙检测
+  - 边缘优先架构,通过Ed25519见证链提供密码学认证
+  - 跨6个WiFi信道的多频网格扫描,利用邻居路由器作为雷达照明源
+  - 自学习脉冲神经网络,可在30秒内适应新环境
+  - 可选集成Cognitum Seed实现持久化向量存储和AI能力
+  - 1,463个测试通过,采用生产就绪的Rust实现
+
+* **为何值得关注**: RuView在隐私保护的空间智能领域实现了突破,仅使用商用WiFi硬件就达成了无摄像头姿态估算和生命体征监测。该项目基于卡内基梅隆大学"WiFi密集姿态估算"论文研究,为基于摄像头的监控系统提供了实用且低成本的替代方案——特别适合医疗保健、老年护理、安全监控和智能家居等隐私至关重要的应用场景。系统完全在边缘硬件上运行,无需云端依赖,既经济又安全。今日获得1,757星标,因其让先进传感技术平民化而迅速受到关注。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### Scientific Agent Skills - Comprehensive AI Research Assistant Toolkit
+
+* **What it does**: A collection of 135 ready-to-use skills that transform AI coding agents (Cursor, Claude Code, Codex) into powerful research assistants capable of executing complex scientific workflows across biology, chemistry, medicine, engineering, and more.
+
+* **Key features**: 
+  - 100+ scientific databases (PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov, etc.) with unified access
+  - 70+ optimized Python package skills (RDKit, Scanpy, PyTorch Lightning, BioPython, OpenMM, scVelo, TimesFM)
+  - 30+ analysis and communication tools for literature review, scientific writing, visualization
+  - Covers bioinformatics, drug discovery, proteomics, clinical research, medical imaging, ML/AI, materials science, geospatial analysis, and more
+  - Works with any AI agent supporting the open Agent Skills standard
+  - Each skill includes comprehensive documentation, code examples, and best practices
+
+* **Why it's notable**: Bridges the gap between AI coding agents and specialized scientific computing by providing curated, production-ready integrations that would otherwise require days of API research and setup. With 637 stars today, it's gaining rapid traction as researchers discover they can execute multi-step scientific pipelines with simple prompts. The recent rebranding from "Claude Scientific Skills" to platform-agnostic "Scientific Agent Skills" and the launch of K-Dense BYOK (a free desktop AI co-scientist) significantly expand its accessibility and use cases.
+
+---
+
+### Scientific Agent Skills - 综合AI科研助手工具包
+
+* **功能介绍**: 提供135个即用型技能集合,将AI编程助手(Cursor、Claude Code、Codex)转变为强大的科研助手,能够跨生物学、化学、医学、工程等领域执行复杂的科学工作流程。
+
+* **主要特点**:
+  - 100+科学数据库统一访问(PubChem、ChEMBL、UniProt、COSMIC、临床试验数据库等)
+  - 70+优化的Python包技能(RDKit、Scanpy、PyTorch Lightning、BioPython、OpenMM、scVelo、TimesFM)
+  - 30+分析和交流工具,支持文献综述、科学写作、可视化
+  - 覆盖生物信息学、药物发现、蛋白质组学、临床研究、医学影像、机器学习、材料科学、地理空间分析等
+  - 兼容所有支持开放Agent Skills标准的AI助手
+  - 每个技能都包含完整文档、代码示例和最佳实践
+
+* **为何值得关注**: 通过提供精心策划的生产级集成,弥合了AI编程助手与专业科学计算之间的鸿沟,省去了数天的API研究和配置工作。今日获得637星标,随着研究人员发现可以用简单提示执行多步骤科学流程而迅速走红。最近从"Claude Scientific Skills"更名为平台无关的"Scientific Agent Skills",并推出K-Dense BYOK(免费桌面AI科研助手),大幅提升了可访问性和应用场景。
+
+**[View Repository / 查看仓库](https://github.com/K-Dense-AI/scientific-agent-skills)**
+
+### Clawdmeter - ESP32 Desk Dashboard for Claude Code Usage Monitoring
+
+* **What it does**: A physical desk dashboard that displays real-time Claude Code API usage statistics on an ESP32-powered AMOLED screen, featuring animated pixel-art "Clawd" mascot that responds to usage patterns
+* **Key features**: Bluetooth pairing with laptop for live usage tracking; animated splash screens with mood-based Clawd sprites; physical buttons for Claude Code voice mode (Space) and mode toggle (Shift+Tab) via BLE HID; displays session and weekly utilization percentages with auto-refresh daemon
+* **Why it's notable**: Creative hardware integration that transforms API monitoring into an engaging physical device; combines embedded systems (ESP32-S3, LVGL GUI), Bluetooth LE protocols, and daemon-based polling; showcases practical IoT application for developer tools with polished UX including custom fonts and animations from claudepix library
+
+### Clawdmeter - Claude Code 使用量监控桌面仪表盘
+
+* **功能介绍**: 基于 ESP32 的物理桌面仪表盘，在 AMOLED 屏幕上实时显示 Claude Code API 使用统计，配有根据使用模式变化的像素风格 Clawd 吉祥物动画
+* **主要特点**: 通过蓝牙与笔记本配对实现实时使用量追踪；带有情绪感知的 Clawd 动画启动画面；物理按键通过 BLE HID 触发 Claude Code 语音模式(空格键)和模式切换(Shift+Tab)；显示会话和每周使用率百分比，配有自动刷新守护进程
+* **为何值得关注**: 将 API 监控转化为引人入胜的物理设备的创意硬件集成；结合嵌入式系统(ESP32-S3、LVGL 图形界面)、蓝牙低功耗协议和守护进程轮询；展示了开发者工具的实用物联网应用，包含来自 claudepix 库的自定义字体和精美动画
+
+**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
+
+### 🎬 Google almost had a very different name (and functionality)...
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: The video explores the early history of Google, revealing the alternative names and functionalities that were considered before the company became what we know today.
+
+* Key topics discussed: Google's original naming concepts, the evolution of its core search functionality, and pivotal decisions made during the company's formative years that shaped its direction.
+
+* Why it's worth watching: This is a fascinating look at tech history that shows how one of the world's most influential companies could have turned out completely differently. Great for anyone interested in startup stories, tech evolution, or the "what if" moments that define major companies.
+
+---
+
+### 🎬 Google 差点有个完全不同的名字（和功能）...
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 视频探索了 Google 的早期历史，揭示了在公司成为今天的样子之前，曾考虑过的其他名称和功能。
+
+* 主要话题: Google 最初的命名构想、其核心搜索功能的演变，以及公司成立初期做出的关键决策如何塑造了其发展方向。
+
+* 为何值得观看: 这是一次引人入胜的科技历史之旅，展示了世界上最具影响力的公司之一本可能完全不同的发展轨迹。非常适合对创业故事、科技演变或定义重要公司的"如果"时刻感兴趣的观众。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ETQjANMlkWo)**
+
+### 🎬 Why Great Companies Go Bad
+**Channel:** Lenny's Podcast
+
+* What the video covers: Explores the patterns and mechanisms that cause successful companies to decline and fail
+* Key topics discussed: Common pitfalls that lead to corporate decline, warning signs of organizational decay, lessons from companies that lost their way, strategies founders and leaders can use to avoid these traps
+* Why it's worth watching: Essential viewing for founders, startup leaders, and anyone interested in understanding why even the most successful companies can falter—offers actionable insights to prevent organizational decline
+
+### 🎬 为什么伟大的公司会走向衰败
+**频道:** Lenny's Podcast
+
+* 视频内容概述: 探讨导致成功公司衰落和失败的模式与机制
+* 主要话题: 导致企业衰退的常见陷阱、组织衰败的预警信号、迷失方向的公司案例教训、创始人和领导者可用来避免这些陷阱的策略
+* 为何值得观看: 对创始人、创业公司领导者以及任何想了解为何即使最成功的公司也会失败的人来说必看——提供可操作的见解以防止组织衰退
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oSzp6fkMQ94)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程提高生产力，减少手动操作，非常适合希望提升效率的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
 
