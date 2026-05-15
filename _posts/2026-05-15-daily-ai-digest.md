@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 15, 2026"
 date: 2026-05-15
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -593,4 +593,140 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为希望扩展构建能力和提高工作流程效率的开发者提供实用见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
+
+### DwarfStar 4: A Breakthrough in Local AI Inference
+
+* **Unexpected viral success**: DS4 gained rapid popularity due to meeting the need for single-model, locally-integrated AI experiences
+* **Perfect timing convergence**: Release coincided with a quasi-frontier model (DeepSeek v4 Flash) that's large and fast enough, works with asymmetric 2/8-bit quantization, and runs on 96-128GB RAM
+* **Intensive development**: Built in one week with 14-hour workdays, leveraging years of local AI movement experience and GPT 5.5 assistance
+* **Model flexibility**: DS4 isn't locked to one model—will evolve with the best "practically fast" open-weights models for high-end Macs and GPU boxes
+* **Game-changing quality**: First time antirez uses local models for serious work previously reserved for Claude/GPT, marking a significant shift from typical local model experience toward frontier model quality
+* **Future roadmap**: Focus on quality benchmarks, coding agent integration, CI infrastructure, more ports, and distributed inference (serial and parallel)
+* **Specialized variants anticipated**: Potential for domain-specific models (ds4-coding, ds4-legal, ds4-medical) that users can load based on their needs
+* **Core philosophy**: "AI is too critical to be just a provided service"—emphasizing the importance of local, user-controlled AI infrastructure
+
+### DwarfStar 4：本地 AI 推理的突破
+
+* **意外走红**：DS4 迅速流行，满足了单模型本地集成 AI 体验的需求
+* **完美时机汇聚**：发布时恰逢准前沿模型（DeepSeek v4 Flash）问世，该模型足够大且快速，支持 2/8 位非对称量化，可在 96-128GB 内存上运行
+* **高强度开发**：在 GPT 5.5 辅助下，利用多年本地 AI 运动经验，每天工作 14 小时，一周内完成构建
+* **模型灵活性**：DS4 不锁定单一模型，将随着高端 Mac 和 GPU 设备上"实际快速"的最佳开放权重模型演进
+* **质量飞跃**：antirez 首次将本地模型用于原本使用 Claude/GPT 的严肃工作，标志着从典型本地模型体验向前沿模型质量的重大转变
+* **未来路线图**：专注于质量基准测试、编码代理集成、CI 基础设施、更多移植版本以及分布式推理（串行和并行）
+* **专业化变体展望**：可能推出领域专用模型（ds4-coding、ds4-legal、ds4-medical），用户可根据需求加载
+* **核心理念**："AI 太关键了，不能仅作为提供的服务"——强调本地化、用户可控的 AI 基础设施的重要性
+
+**[Read Original / 阅读原文](https://antirez.com/news/165)**
+
+### Work with Codex from Anywhere | OpenAI
+
+* **Mobile access to Codex**: Codex is now available in the ChatGPT mobile app, allowing users to stay connected and manage work across laptops, devboxes, or remote environments from their phones.
+
+* **New collaboration rhythm**: As AI agents handle longer-running tasks, users can answer questions, review findings, change direction, approve next steps, or add ideas on the go to keep work moving forward.
+
+* **Massive adoption**: Over 4 million people use Codex weekly, with quick check-ins proving crucial for preventing rework and providing the right context for progress.
+
+* **Full-featured mobile experience**: The mobile app connects to any machine running Codex, loading live state so users can work across active threads, approvals, plugins, and project context with real-time updates including screenshots, terminal output, diffs, and test results.
+
+* **Secure relay infrastructure**: Codex uses a secure relay layer to keep trusted machines reachable across devices without public internet exposure, syncing active session state and context across all signed-in ChatGPT devices.
+
+* **Real-world use cases**: Start bug investigations during coffee breaks, make architectural decisions during commutes, prepare for customer calls between meetings, or capture fresh ideas while away from the desk.
+
+* **Enterprise environment support**: Remote SSH (now generally available) allows Codex to connect directly into managed remote environments with approved dependencies, credentials, and security policies.
+
+* **Enterprise features**: New capabilities include programmatic access tokens for CI/CD pipelines, Hooks for customizing Codex behavior, and HIPAA-compliant use for healthcare organizations on Enterprise plans.
+
+* **Availability**: Rolling out in preview on iOS and Android across all plans (Free, Go, Business, Enterprise) in all supported regions; Windows phone support coming soon.
+
+---
+
+### 随时随地使用 Codex | OpenAI
+
+* **移动端访问 Codex**：Codex 现已登陆 ChatGPT 移动应用，用户可以通过手机随时保持连接，管理笔记本电脑、开发机或远程环境中的工作。
+
+* **新的协作节奏**：随着 AI 代理处理更长时间运行的任务，用户可以随时回答问题、审查发现、改变方向、批准下一步操作或添加新想法，保持工作持续推进。
+
+* **广泛采用**：每周超过 400 万人使用 Codex，快速签到对于防止返工和提供正确上下文以推动进展至关重要。
+
+* **功能完整的移动体验**：移动应用可连接到任何运行 Codex 的机器，加载实时状态，用户可以跨活动线程、审批、插件和项目上下文工作，实时更新包括屏幕截图、终端输出、差异对比和测试结果。
+
+* **安全中继基础设施**：Codex 使用安全中继层使受信任的机器可跨设备访问而不暴露于公共互联网，在所有已登录 ChatGPT 的设备间同步活动会话状态和上下文。
+
+* **实际应用场景**：在喝咖啡时开始调查 bug、在通勤途中做出架构决策、在会议间隙为客户电话做准备，或在离开办公桌时捕捉新鲜想法。
+
+* **企业环境支持**：Remote SSH（现已正式发布）允许 Codex 直接连接到具有批准的依赖项、凭证和安全策略的托管远程环境。
+
+* **企业功能**：新功能包括用于 CI/CD 流水线的程序化访问令牌、用于自定义 Codex 行为的 Hooks，以及面向企业计划医疗机构的 HIPAA 合规使用。
+
+* **可用性**：在所有计划（免费版、Go 版、商业版、企业版）的所有支持地区的 iOS 和 Android 上以预览版形式推出；Windows 手机支持即将推出。
+
+**[Read Original / 阅读原文](https://openai.com/index/work-with-codex-from-anywhere/)**
+
+### Have a Coherent AI Policy
+
+* **No AI mandate**: Teams should not be forced to use AI tools or measured by token usage (tokenmaxxing). Smart engineers should choose tools that help them deliver value to customers, not chase vanity metrics.
+* **Understand your code**: Any AI-generated code is your responsibility. You must understand what it does, ensure it fits existing patterns, and not burden reviewers with low-quality submissions.
+* **Maintain independence**: Engineers must be able to do their jobs if AI tooling disappears. Relying entirely on LLMs creates fragility and tech debt that may exceed the productivity gains.
+* **Junior engineers need reps**: Learning happens through struggle and repetition. Junior engineers should use AI judiciously to avoid short-circuiting the learning process and missing foundational skills.
+* **Human-first architecture**: When choosing between code optimized for machines versus humans, prefer humans. AI tools should adapt to coding standards, not the other way around.
+* **Professional awareness required**: While there's no mandate to use AI daily, senior engineers have a duty to stay aware of how these rapidly evolving tools work, even if only for occasional prototyping.
+
+### 制定连贯的 AI 政策
+
+* **不强制使用 AI**:不应强迫团队使用 AI 工具或通过 token 使用量来衡量绩效(tokenmaxxing)。聪明的工程师应选择能为客户创造价值的工具,而非追逐虚荣指标。
+* **理解你的代码**:任何 AI 生成的代码都是你的责任。你必须理解代码的功能,确保符合现有模式,不要用低质量的提交给审查者增加负担。
+* **保持独立性**:工程师必须能在 AI 工具失效时完成工作。完全依赖 LLM 会造成脆弱性和技术债,可能超过生产力收益。
+* **初级工程师需要练习**:学习通过挣扎和重复发生。初级工程师应谨慎使用 AI,避免跳过学习过程而错失基础技能。
+* **人类优先架构**:在为机器优化的代码和为人类优化的代码之间选择时,优先考虑人类。AI 工具应适应编码标准,而非反过来。
+* **需要专业意识**:虽然不强制每天使用 AI,但高级工程师有责任了解这些快速发展的工具如何工作,即使只是偶尔用于原型开发。
+
+**[Read Original / 阅读原文](https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/)**
+
+### HTML Anything - The Agentic HTML Editor for Local AI-Powered Content Creation
+
+* **What it does**: A local-first HTML editor that leverages AI coding agents (Claude Code, Cursor, Gemini, Copilot, etc.) to transform any input (Markdown, CSV, JSON, notes) into production-ready HTML deliverables across 9 surfaces (magazines, decks, posters, social cards, prototypes, data reports, video frames).
+
+* **Key features**: 
+  - Zero API key required — auto-detects 8 coding-agent CLIs already on your PATH
+  - 75 composable skill templates with locked layouts and design systems
+  - Sandboxed preview with 1-click export to WeChat, X (Twitter), Zhihu, HTML, or PNG
+  - Built on the proven architecture of Open Design (40k stars, 200+ contributors)
+  - Ships single-file HTML artifacts that are immediately shareable, not drafts requiring post-editing
+
+* **Why it's notable**: Represents a paradigm shift from "Markdown for writers" to "HTML for readers" — reflecting how Anthropic's Claude Code team now ships internal docs. In the agentic era, humans design and approve while local AI agents handle the HTML/CSS implementation, eliminating the traditional friction of hand-coding layouts. The focus on Chinese social platforms (WeChat, Xiaohongshu, Zhihu) alongside Western ones makes it particularly relevant for bilingual content creators.
+
+---
+
+### HTML Anything - 本地 AI 代理驱动的 HTML 编辑器
+
+* **功能介绍**: 本地优先的 HTML 编辑器,利用 AI 编码代理(Claude Code、Cursor、Gemini、Copilot 等)将任何输入(Markdown、CSV、JSON、笔记)转换为可直接发布的 HTML 交付物,涵盖 9 种呈现形式(杂志文章、演示文稿、海报、社交媒体卡片、原型、数据报告、视频帧)。
+
+* **主要特点**:
+  - 零 API 密钥要求 — 自动检测系统 PATH 中已有的 8 种编码代理 CLI
+  - 75 个可组合的技能模板,配备锁定布局和设计系统
+  - 沙盒预览,一键导出至微信、X(推特)、知乎、HTML 或 PNG
+  - 基于 Open Design 的成熟架构(4 万星标、200+ 贡献者)
+  - 生成即可发布的单文件 HTML,无需后期编辑
+
+* **为何值得关注**: 代表了从"为写作者设计的 Markdown"到"为读者设计的 HTML"的范式转变 — 呼应了 Anthropic Claude Code 团队现已采用 HTML 交付内部文档的实践。在 AI 代理时代,人类负责设计和审核,本地 AI 代理处理 HTML/CSS 实现,消除了传统手工编码布局的摩擦。对微信、小红书、知乎等中文社交平台与西方平台的同等支持,使其特别适合双语内容创作者。
+
+**[View Repository / 查看仓库](https://github.com/nexu-io/html-anything)**
+
+### 🎬 Claude Code for Beginners Tutorial [Full Course]
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, teaching how to integrate Anthropic's Claude AI into your development workflow as a coding assistant
+* Key topics discussed: Setting up Claude Code, core features and capabilities, practical coding examples, best practices for AI-assisted development, and real-world implementation scenarios
+* Why it's worth watching: Full-length course from freeCodeCamp offering structured, hands-on learning for developers wanting to leverage Claude AI for coding tasks—ideal for those new to AI-powered development tools
+
+---
+
+### 🎬 Claude Code 初学者教程 [完整课程]
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 全面的 Claude Code 入门教程，教授如何将 Anthropic 的 Claude AI 无缝集成到开发工作流程中作为编码助手
+* 主要话题: Claude Code 的设置配置、核心功能特性、实用编码示例、AI 辅助开发的最佳实践，以及真实场景的应用实现
+* 为何值得观看: freeCodeCamp 出品的完整课程，提供结构化的实践学习体验，适合想要利用 Claude AI 进行编码任务的开发者——特别适合 AI 开发工具的新手
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gh2_PhgZGsM)**
 
