@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 16, 2026"
 date: 2026-05-16
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -331,4 +331,280 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 适合希望在本地运行 AI 编码助手的开发者观看,无需依赖云服务,提供隐私保护、成本节约和离线使用能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UngVdAsQEiU)**
+
+### Windows CE 2.11 Running on Nintendo 64 Hardware
+
+* A hobbyist reverse-engineering project that successfully boots unmodified Microsoft Windows CE 2.11 kernel on real Nintendo 64 hardware via EverDrive-64 X7 cartridge
+* Custom Hardware Abstraction Layer (HAL) enables full desktop environment with working taskbar, file browser, window management, and SD card filesystem access mounted at `\SDCard`
+* N64 controller functions as mouse input (A button = left click, B button = right click) with visible cursor, and audio plays through N64's native hardware via standard CE wave stack
+* Supports running third-party CE 2.11 MIPS executables directly from SD card, including RDP-accelerated 3D graphics demos that leverage N64's Reality Display Processor for hardware-accelerated triangle rasterization
+* Architecture includes custom drivers for display (VI framebuffer + RDP acceleration), input devices (SI Joybus polling for N64 controller/mouse), FatFS-backed SD filesystem, polling-mode audio interface, and Win9x-style desktop shell
+* Build requires external dependencies: Windows CE 2.11 Platform Builder SDK (out of print, circa early 2000s), libdragon N64 homebrew toolchain, EverDrive-64 X7 hardware, Wine for running Microsoft build tools, and Python 3 with Pillow
+* No prebuilt ROM available due to licensing restrictions on redistributing Microsoft CE 2.11 binaries; users must build from source using legitimate SDK copy
+* Project source code released under MIT license, though build output incorporates proprietary Microsoft libraries and cannot be redistributed
+
+### 在任天堂 64 硬件上运行 Windows CE 2.11
+
+* 这是一个业余逆向工程项目,成功在真实任天堂 64 硬件上通过 EverDrive-64 X7 烧录卡启动未修改的微软 Windows CE 2.11 内核
+* 定制硬件抽象层(HAL)实现了完整桌面环境,包括可工作的任务栏、文件浏览器、窗口管理功能,以及挂载在 `\SDCard` 的 SD 卡文件系统访问
+* N64 手柄作为鼠标输入(A 键=左键点击,B 键=右键点击)并显示可见光标,音频通过标准 CE 波形栈在 N64 原生硬件上播放
+* 支持直接从 SD 卡运行第三方 CE 2.11 MIPS 可执行文件,包括利用 N64 现实显示处理器(RDP)进行硬件加速三角形光栅化的 3D 图形演示程序
+* 架构包含定制驱动程序:显示驱动(VI 帧缓冲 + RDP 加速)、输入设备(SI Joybus 轮询 N64 手柄/鼠标)、基于 FatFS 的 SD 文件系统、轮询模式音频接口,以及 Win9x 风格桌面外壳
+* 构建需要外部依赖:Windows CE 2.11 Platform Builder SDK(已绝版,约 2000 年代初期产品)、libdragon N64 自制工具链、EverDrive-64 X7 硬件、用于运行微软构建工具的 Wine,以及带 Pillow 的 Python 3
+* 由于微软 CE 2.11 二进制文件的许可限制,不提供预构建 ROM;用户必须使用合法 SDK 副本从源代码构建
+* 项目源代码采用 MIT 许可证发布,但构建输出包含微软专有库,不可再分发
+
+**[Read Original / 阅读原文](https://github.com/ThroatyMumbo/WinCE64)**
+
+### Zulip Foundation Announcement: Major Transition to Nonprofit Structure
+
+* **Leadership transition**: Founder Tim Abbott and three senior team members (Alya Abbott, Greg Price, Alex Vandiver) are joining Anthropic, while Zulip transitions to nonprofit governance
+* **New ownership structure**: Kandra Labs (the company behind Zulip) is now fully owned by the newly created nonprofit Zulip Foundation, with no stockholders or debt obligations
+* **Foundation board**: Initial directors include Tim Abbott, Greg Price, Alya Abbott, and Josh Triplett (Rust programming language leader), plus five advisory board members from academia and open source
+* **Operational continuity**: All services continue without interruption; Kim Vandiver joins as Interim President to ensure smooth transition; 12 team members with average 4+ years experience remain
+* **Mission formalization**: The nonprofit structure permanently commits Zulip to public-interest values, data privacy protection, and serving communities alongside business customers
+* **New funding opportunities**: Foundation status enables grant applications, tax-deductible donations, and fundraising campaigns previously unavailable to the privately-owned company
+* **Product stability**: Zulip 12.0 (April 2026) included 5,500 commits from 160 contributors; the platform serves thousands of organizations with its unique topic-based threading model
+* **Governance model**: Similar to Mozilla, Signal, and Wikipedia structures, ensuring long-term sustainability and independence
+
+### Zulip 基金会成立公告：向非营利组织结构的重大转型
+
+* **领导层过渡**：创始人 Tim Abbott 及三位高级团队成员（Alya Abbott、Greg Price、Alex Vandiver）加入 Anthropic，Zulip 转为非营利治理模式
+* **新所有权结构**：Zulip 背后的公司 Kandra Labs 现完全由新成立的非营利 Zulip 基金会拥有，无股东或债务义务
+* **基金会董事会**：初始董事包括 Tim Abbott、Greg Price、Alya Abbott 和 Josh Triplett（Rust 编程语言领导者），另有五位来自学术界和开源领域的顾问委员会成员
+* **运营连续性**：所有服务不间断继续；Kim Vandiver 担任临时总裁确保平稳过渡；12 名平均拥有 4 年以上经验的团队成员留任
+* **使命正式化**：非营利结构永久承诺 Zulip 的公共利益价值观、数据隐私保护，以及在服务商业客户的同时服务社区
+* **新融资机会**：基金会身份使 Zulip 能够申请资助、接受税收减免捐赠，以及开展私有公司无法进行的筹款活动
+* **产品稳定性**：Zulip 12.0（2026 年 4 月）包含来自 160 位贡献者的 5,500 次提交；该平台以其独特的主题式线程模型服务数千个组织
+* **治理模式**：类似于 Mozilla、Signal 和维基百科的结构，确保长期可持续性和独立性
+
+**[Read Original / 阅读原文](https://blog.zulip.com/2026/05/15/announcing-zulip-foundation/)**
+
+### Microscale Thermite Reaction: A Safe Chemistry Demonstration
+
+* **What it demonstrates**: A miniature version of the classic thermite reaction where two rusty iron balls (one wrapped in aluminum foil) are struck together, producing sparks and light through an oxidation-reduction reaction between aluminum and iron oxide (rust)
+* **Chemical reaction**: 2Al(s) + Fe₂O₃(s) → Al₂O₃(s) + 2Fe(s) + heat, releasing -849 kJ/mol and reaching temperatures around 2200°C
+* **How it works**: The mechanical energy from collision provides activation energy; aluminum is oxidized while iron is reduced, producing molten iron that creates bright yellow sparks when exposed to air
+* **Safety and setup**: Requires safety goggles, uses 2kg iron balls (~7cm diameter), needs a hard glancing blow to initiate reaction, produces sparks traveling 2-3 feet with a loud cracking sound
+* **Applications**: The full-scale thermite reaction is used for welding railroad tracks and underwater welding due to its self-sustaining, oxygen-independent nature
+* **Educational value**: Demonstrates exothermic reactions, oxidation-reduction chemistry, and energy transfer in a controlled, repeatable classroom setting
+
+### 微型铝热反应：安全的化学演示实验
+
+* **实验内容**：经典铝热反应的微型版本，将两个生锈的铁球（其中一个包裹铝箔）撞击在一起，通过铝与氧化铁（铁锈）之间的氧化还原反应产生火花和光
+* **化学反应**：2Al(s) + Fe₂O₃(s) → Al₂O₃(s) + 2Fe(s) + 热量，释放 -849 kJ/mol 能量，反应温度约达 2200°C
+* **工作原理**：碰撞的机械能提供活化能；铝被氧化，铁被还原，产生的熔融铁暴露在空气中时形成明亮的黄色火花
+* **安全与操作**：需佩戴护目镜，使用约2公斤重、直径7厘米的铁球，需用力斜击才能引发反应，火花可飞溅2-3英尺并伴有响亮的爆裂声
+* **实际应用**：大规模铝热反应因其自持续、不依赖外部氧气的特性，被用于焊接铁轨和水下焊接
+* **教育价值**：在可控、可重复的课堂环境中演示放热反应、氧化还原化学和能量转换原理
+
+**[Read Original / 阅读原文](https://sciencedemonstrations.fas.harvard.edu/presentations/microscale-thermite-reaction)**
+
+### Supertonic - Lightning-Fast, On-Device, Multilingual TTS via ONNX
+
+* **What it does**: Supertonic is a privacy-focused text-to-speech system that runs entirely on your device using ONNX Runtime—no cloud, no API calls, no data leaving your machine. It converts text to natural speech across 31 languages with minimal latency.
+
+* **Key features**: 
+  - Supports 31 languages including English, Korean, Japanese, Arabic, and major European languages
+  - Runs on-device across platforms: Python, JavaScript, browser, iOS, Android, Raspberry Pi, and even e-readers
+  - Compact 99M parameter model with improved reading accuracy and fewer repetition/skip errors
+  - Expressive tags support (`<laugh>`, `<breath>`, `<sigh>`)
+  - Fast CPU inference competitive with GPU-based systems while using substantially less memory
+  - Cross-platform SDK support (Python, Node.js, Swift, Rust, Go, Java, C++, C#, Flutter)
+
+* **Why it's notable**: Gained 712 stars today as a practical solution for local TTS deployment. Unlike cloud-based alternatives, it offers complete privacy and zero network dependency while maintaining competitive quality with much larger models. The recent v3 release expanded from 5 to 31 languages and includes a Voice Builder tool for custom voice creation. Its lightweight footprint makes it ideal for edge devices, browsers, and privacy-sensitive applications—demonstrated running on Raspberry Pi and e-readers in airplane mode.
+
+---
+
+### Supertonic - 基于 ONNX 的超快速端侧多语言语音合成
+
+* **功能介绍**: Supertonic 是一个注重隐私的文本转语音系统,通过 ONNX Runtime 完全在本地设备上运行——无需云服务、无需 API 调用、数据不离开设备。支持 31 种语言的自然语音合成,延迟极低。
+
+* **主要特点**:
+  - 支持 31 种语言,包括英语、韩语、日语、阿拉伯语及主要欧洲语言
+  - 跨平台端侧运行:Python、JavaScript、浏览器、iOS、Android、树莓派,甚至电子书阅读器
+  - 紧凑的 9900 万参数模型,阅读准确度提升,重复/跳读错误更少
+  - 支持表达标签(`<laugh>`、`<breath>`、`<sigh>`)
+  - CPU 推理速度可与 GPU 系统媲美,内存占用显著更低
+  - 全面的跨平台 SDK 支持(Python、Node.js、Swift、Rust、Go、Java、C++、C#、Flutter)
+
+* **为何值得关注**: 今日获得 712 星,成为本地 TTS 部署的实用解决方案。与云端方案不同,它提供完全的隐私保护和零网络依赖,同时保持与更大模型相当的质量。最新 v3 版本将语言支持从 5 种扩展到 31 种,并包含自定义声音创建的 Voice Builder 工具。其轻量级特性使其非常适合边缘设备、浏览器和隐私敏感应用——已演示在树莓派和飞行模式下的电子书阅读器上运行。
+
+**[View Repository / 查看仓库](https://github.com/supertone-inc/supertonic)**
+
+### RuView - WiFi-Based Spatial Intelligence Without Cameras
+
+* **What it does**: Transforms ordinary WiFi signals into a comprehensive sensing system that detects presence, monitors vital signs (breathing and heart rate), tracks movement, and estimates human pose—all without cameras or wearables, even through walls and in darkness.
+
+* **Key features**: 
+  - Contactless vital sign monitoring (6-30 BPM breathing, 40-120 BPM heart rate)
+  - 17-keypoint pose estimation using Channel State Information (CSI) from $9 ESP32-S3 sensors
+  - Multi-frequency mesh scanning across 6 WiFi channels using neighbors' routers as radar illuminators
+  - Edge-first architecture with spiking neural networks that adapt in under 30 seconds
+  - Cryptographically attested measurements via Ed25519 witness chain
+  - Camera-free training using 10 sensor signals (no labels needed)
+  - Optional integration with Cognitum Seed for persistent vector storage and AI capabilities
+  - Through-wall detection up to 5m depth using Fresnel zone geometry
+
+* **Why it's notable**: RuView represents a breakthrough in privacy-preserving spatial intelligence by leveraging physics rather than optics. It runs entirely on edge hardware with no cloud dependency, making it ideal for healthcare monitoring, elderly care, security, and smart building applications where cameras are impractical or invasive. The system achieves this using commodity WiFi hardware and builds on Carnegie Mellon's DensePose From WiFi research, with 1,865 stars today reflecting strong interest in camera-free sensing technology.
+
+---
+
+### RuView - 基于 WiFi 的无摄像头空间智能系统
+
+* **功能介绍**: 将普通 WiFi 信号转化为综合传感系统,可检测人员存在、监测生命体征(呼吸和心率)、追踪运动并估计人体姿态——完全无需摄像头或可穿戴设备,甚至可以穿墙和在黑暗中工作。
+
+* **主要特点**:
+  - 非接触式生命体征监测(呼吸 6-30 次/分钟,心率 40-120 次/分钟)
+  - 使用 9 美元 ESP32-S3 传感器的信道状态信息(CSI)进行 17 个关键点的姿态估计
+  - 跨 6 个 WiFi 信道的多频网格扫描,利用邻居路由器作为雷达照明源
+  - 边缘优先架构,配备可在 30 秒内适应的脉冲神经网络
+  - 通过 Ed25519 见证链进行加密认证测量
+  - 使用 10 个传感器信号的无摄像头训练(无需标签)
+  - 可选集成 Cognitum Seed 实现持久向量存储和 AI 能力
+  - 使用菲涅尔区几何原理实现最远 5 米的穿墙检测
+
+* **为何值得关注**: RuView 通过利用物理学而非光学技术,在隐私保护的空间智能领域实现了突破。系统完全在边缘硬件上运行,无需云依赖,非常适合医疗监护、老年护理、安防和智能建筑等摄像头不实用或侵犯隐私的应用场景。该系统使用商用 WiFi 硬件,基于卡内基梅隆大学的 DensePose From WiFi 研究成果,今日获得 1,865 星标,反映了业界对无摄像头传感技术的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### 3DCellForge - AI-Powered 3D Model Generation and Presentation Studio
+
+* **What it does**: Transforms uploaded reference images or GLB files into interactive 3D models using AI providers (Hyper3D, Tripo, Fal.ai, Hunyuan3D), with a professional three-panel workspace for model inspection, editing, and presentation
+* **Key features**: React Three Fiber-based WebGL viewer with orbit controls; object-aware inspector that categorizes models (vehicles, aircraft, vessels, products); cinematic Demo Mode with adaptive camera paths; model quality scoring; generation queue with multiple AI provider support; persistent model library via IndexedDB; screenshot and GLB export capabilities
+* **Why it's notable**: Bridges the gap between AI-generated 3D content and production-ready presentation with a polished, studio-grade interface. Supports multiple image-to-3D providers with automatic fallback, includes cached demo models for offline use, and features intelligent camera choreography that adapts to model type—making it ideal for rapid 3D asset prototyping and showcase workflows
+
+---
+
+### 3DCellForge - AI 驱动的 3D 模型生成与展示工作室
+
+* **功能介绍**: 将上传的参考图片或 GLB 文件通过 AI 提供商(Hyper3D、Tripo、Fal.ai、Hunyuan3D)转换为可交互的 3D 模型,提供专业的三栏工作区用于模型检查、编辑和展示
+* **主要特点**: 基于 React Three Fiber 的 WebGL 查看器,支持轨道控制;智能对象识别器可自动分类模型(车辆、飞机、船舶、产品);电影级演示模式配备自适应摄像机路径;模型质量评分系统;支持多个 AI 提供商的生成队列;通过 IndexedDB 持久化模型库;支持截图和 GLB 导出
+* **为何值得关注**: 在 AI 生成的 3D 内容与生产级展示之间搭建桥梁,提供精致的工作室级界面。支持多个图像转 3D 提供商并具备自动降级机制,内置缓存演示模型支持离线使用,智能摄像机编排可根据模型类型自动调整——非常适合快速 3D 资产原型制作和展示工作流
+
+**[View Repository / 查看仓库](https://github.com/huangserva/3DCellForge)**
+
+### HTML Anything - The Agentic HTML Editor for Local AI-Powered Content Creation
+
+* **What it does**: A local-first HTML editor that leverages AI coding agents (Claude Code, Cursor, Copilot, etc.) to transform any input (Markdown, CSV, JSON, notes) into production-ready HTML documents. No API keys required—it detects and reuses CLI sessions already logged in on your system.
+
+* **Key features**: 
+  - **75 composable skill templates** across 9 content surfaces (magazine articles, keynote decks, posters, social media cards for Xiaohongshu/Twitter, prototypes, data reports, video storyboards)
+  - **8 coding-agent CLIs auto-detected**: Claude Code, Cursor Agent, Codex, Gemini CLI, GitHub Copilot CLI, OpenCode, Qwen Coder, Aider
+  - **One-click export** to WeChat, X (Twitter), Zhihu, or download as HTML/PNG
+  - **Sandboxed preview** with locked design layouts—ship-ready output without manual CSS tweaking
+  - Built on the proven architecture of Open Design (40k stars, 200+ contributors)
+
+* **Why it's notable**: Addresses a fundamental shift in content creation—moving from Markdown (writer-friendly) to HTML (reader-friendly) as the final deliverable format. In the agentic era, AI writes the HTML while humans focus on content and distribution. The zero-API-key approach and local-first architecture make it immediately accessible, while the extensive skill library (from Swiss International decks to glitch title frames) provides production-grade design systems out of the box. Trending because it solves the "last mile" problem of turning AI-generated content into polished, shareable artifacts.
+
+---
+
+### HTML Anything - 本地 AI 驱动的智能 HTML 编辑器
+
+* **功能介绍**: 一款本地优先的 HTML 编辑器,利用 AI 编码代理(Claude Code、Cursor、Copilot 等)将任何输入(Markdown、CSV、JSON、笔记)转换为可直接发布的 HTML 文档。无需 API 密钥——自动检测并复用系统中已登录的 CLI 会话。
+
+* **主要特点**:
+  - **75 个可组合技能模板**,覆盖 9 种内容形式(杂志文章、演示文稿、海报、小红书/推特卡片、原型、数据报告、视频分镜)
+  - **自动检测 8 种编码代理 CLI**: Claude Code、Cursor Agent、Codex、Gemini CLI、GitHub Copilot CLI、OpenCode、通义千问、Aider
+  - **一键导出**至微信、X(推特)、知乎,或下载为 HTML/PNG 格式
+  - **沙盒预览**,锁定设计布局——无需手动调整 CSS 即可获得可发布的输出
+  - 基于 Open Design 的成熟架构(4 万星标,200+ 贡献者)
+
+* **为何值得关注**: 解决了内容创作的根本性转变——从 Markdown(对作者友好)转向 HTML(对读者友好)作为最终交付格式。在 AI 代理时代,AI 负责编写 HTML,人类专注于内容和分发。零 API 密钥和本地优先的架构使其开箱即用,而丰富的技能库(从瑞士国际风格演示文稿到故障风格标题帧)提供了生产级的设计系统。之所以受关注,是因为它解决了将 AI 生成内容转化为精美可分享成品的"最后一公里"问题。
+
+**[View Repository / 查看仓库](https://github.com/nexu-io/html-anything)**
+
+### 🎬 I can't believe this trial is real...
+
+**Channel:** Fireship
+
+* The video covers a surprising or controversial tech trial that has captured attention in the industry
+* Key topics likely include legal developments affecting tech companies, developers, or the open-source community, presented with Fireship's signature fast-paced, humorous commentary
+* Worth watching for staying current on significant tech industry news and legal precedents that may impact developers, delivered in an entertaining and digestible format
+
+---
+
+### 🎬 难以置信这场审判是真的...
+
+**频道:** Fireship
+
+* 视频报道了一场令人惊讶或具有争议性的科技行业审判案件
+* 主要话题可能涉及影响科技公司、开发者或开源社区的法律动态，以 Fireship 标志性的快节奏、幽默风格呈现
+* 值得观看以了解可能影响开发者的重要科技行业新闻和法律先例，内容娱乐性强且易于理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3tbB2dffx0s)**
+
+### 🎬 When your genes had to choose which disease to fight - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: This video explores how human genetic evolution involved trade-offs where genes that protected against one disease increased vulnerability to another, featuring insights from geneticist David Reich
+* Key topics discussed: Evolutionary genetics, disease resistance trade-offs, natural selection pressures, how ancient pathogens shaped modern human genomes, and the concept of balancing selection in human populations
+* Why it's worth watching: Offers a fascinating perspective on why certain genetic variants persist despite causing health issues today—they were survival advantages against historical diseases. Reich is a leading authority in ancient DNA and population genetics, making complex evolutionary biology accessible and relevant to understanding modern health disparities
+
+### 🎬 当你的基因必须选择对抗哪种疾病 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 本视频探讨人类基因进化中的权衡现象——某些保护人类免受一种疾病侵害的基因却增加了对另一种疾病的易感性,由遗传学家 David Reich 提供深刻见解
+* 主要话题: 进化遗传学、疾病抗性的权衡、自然选择压力、古代病原体如何塑造现代人类基因组,以及人类群体中的平衡选择概念
+* 为何值得观看: 提供了独特视角解释为何某些导致当代健康问题的基因变异仍然存在——它们曾是对抗历史疾病的生存优势。Reich 是古代 DNA 和群体遗传学领域的权威专家,他将复杂的进化生物学变得易懂,并与理解现代健康差异高度相关
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=uivpxQCp0Dg)**
+
+### 🎬 How to use OpenAI APIs for Free
+
+**Channel:** Sumit Paul
+
+* What the video covers: A method to access OpenAI APIs without paying, through a program that provides daily free tokens
+* Key topics discussed: Free token allocation system - 250K tokens daily for latest models and 2.5M tokens for other models; workaround for OpenAI's lack of free trials
+* Why it's worth watching: Useful for developers who want to experiment with OpenAI APIs without incurring costs, especially beneficial for learning, prototyping, or small-scale projects
+
+---
+
+### 🎬 如何免费使用 OpenAI API
+
+**频道:** Sumit Paul
+
+* 视频内容概述: 介绍一种无需付费即可访问 OpenAI API 的方法，通过某个提供每日免费令牌的程序实现
+* 主要话题: 免费令牌分配系统 - 最新模型每日 25 万令牌，其他模型每日 250 万令牌；绕过 OpenAI 不提供免费试用的限制
+* 为何值得观看: 适合想要在不产生费用的情况下试验 OpenAI API 的开发者，特别有利于学习、原型开发或小规模项目
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=toYyrmlJZ5o)**
+
+### 🎬 Claude Code for Beginners Tutorial [Full Course]
+**Channel:** freeCodeCamp.org
+
+* Comprehensive guide to integrating Anthropic's Claude AI into your development workflow
+* Covers setup, core features, practical coding applications, and best practices for AI-assisted development
+* Worth watching for developers wanting to leverage Claude's capabilities for coding tasks, automation, and productivity enhancement—especially beginners looking for a structured, full-course introduction
+
+---
+
+### 🎬 Claude Code 初学者教程 [完整课程]
+**频道:** freeCodeCamp.org
+
+* 全面介绍如何将 Anthropic 的 Claude AI 集成到开发工作流程中
+* 涵盖设置、核心功能、实际编码应用以及 AI 辅助开发的最佳实践
+* 适合希望利用 Claude 进行编码任务、自动化和提升生产力的开发者观看——特别是寻求结构化完整课程入门的初学者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gh2_PhgZGsM)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程提高生产力，减少手动操作，非常适合希望提升效率的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
 
