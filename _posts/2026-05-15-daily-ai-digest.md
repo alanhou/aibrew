@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 15, 2026"
 date: 2026-05-15
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -799,4 +799,79 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **三种部署模式**：使大规模代码库可导航、针对特定结构配置、构建自我改进系统
 
 **[Read Original / 阅读原文](https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start)**
+
+<!-- [Title-Only] -->
+### RelaxAI – UK Sovereign LLM Inference at 80% Cheaper than OpenAI/Claude
+
+* Based on the title, this article likely covers RelaxAI, a UK-based AI inference service that offers large language model capabilities with a focus on data sovereignty and cost efficiency. The "sovereign" aspect suggests the service keeps data within UK jurisdiction, addressing regulatory and privacy concerns for British organizations.
+* This might be interesting to readers because it represents a significant cost reduction (80% cheaper) compared to major providers like OpenAI and Anthropic's Claude, while also addressing data residency requirements that are increasingly important for enterprises, government agencies, and organizations subject to UK/EU data protection regulations. It could signal growing competition in the AI infrastructure market and the emergence of regional alternatives to US-dominated AI services.
+
+### RelaxAI – 英国主权 LLM 推理服务，成本比 OpenAI/Claude 低 80%
+
+* 根据标题推测，本文可能介绍 RelaxAI，一个英国本土的 AI 推理服务，提供大语言模型能力，重点关注数据主权和成本效益。"主权"一词暗示该服务将数据保留在英国司法管辖范围内，解决了英国组织的监管和隐私问题。
+* 值得关注的原因在于，相比 OpenAI 和 Anthropic 的 Claude 等主要供应商，该服务实现了显著的成本降低（便宜 80%），同时满足了数据驻留要求——这对企业、政府机构以及受英国/欧盟数据保护法规约束的组织越来越重要。这可能标志着 AI 基础设施市场竞争加剧，以及区域性替代方案对美国主导的 AI 服务的挑战。
+
+**[Read Original / 阅读原文](https://relax.ai/docs)**
+
+### Wikipedia File Explorer: A Nostalgic Windows XP-Style Interface
+
+* **Retro Design System**: Features authentic Windows XP visual elements including gradient-filled folder icons, yellow tabs, green navigation buttons, and the classic Windows flag logo
+* **SVG Icon Library**: Comprehensive set of reusable SVG symbols with gradients (folders, globe files, books, notepads, media players, recycle bin) using `<symbol>` and `<use>` patterns
+* **Desktop Metaphor**: Implements a traditional desktop interface with clickable icons for Wikipedia, Media, and other applications, mimicking the classic Windows explorer experience
+* **Accessibility Considerations**: Includes ARIA labels (`aria-label`, `aria-hidden`) and semantic button elements for screen reader compatibility
+* **Nostalgic UI Elements**: Recreates the familiar Windows XP aesthetic with specific color palettes (#E0B340 gold, #5A8AC5 blue, #3FA53F green) and visual effects like radial gradients and highlights
+* **Toolbar Components**: Navigation controls (back, forward, up, search, folders, views, go) styled as 3D buttons with gradient effects and shine overlays
+
+---
+
+### 维基百科文件浏览器：怀旧的 Windows XP 风格界面
+
+* **复古设计系统**：采用正宗的 Windows XP 视觉元素，包括渐变填充的文件夹图标、黄色标签页、绿色导航按钮和经典的 Windows 旗帜标志
+* **SVG 图标库**：使用 `<symbol>` 和 `<use>` 模式构建的可复用 SVG 符号集，包含渐变效果（文件夹、地球文件、书籍、记事本、媒体播放器、回收站）
+* **桌面隐喻**：实现传统桌面界面，包含维基百科、媒体等应用的可点击图标，模仿经典的 Windows 资源管理器体验
+* **无障碍考量**：包含 ARIA 标签（`aria-label`、`aria-hidden`）和语义化按钮元素，支持屏幕阅读器兼容性
+* **怀旧 UI 元素**：重现熟悉的 Windows XP 美学，使用特定配色方案（#E0B340 金色、#5A8AC5 蓝色、#3FA53F 绿色）和径向渐变、高光等视觉效果
+* **工具栏组件**：导航控件（后退、前进、向上、搜索、文件夹、视图、前往）采用带渐变效果和光泽叠加的 3D 按钮样式
+
+**[Read Original / 阅读原文](https://explorer.samismith.com/)**
+
+### Category Theory for Tiny ML in Rust: A Working Draft Combining Mathematical Structure with Practical Implementation
+
+* **Core Approach**: Uses category theory as an engineering tool rather than abstract decoration, mapping domain objects to Rust types, morphisms to typed transformations, and composition to executable program structure
+* **Target Audience**: Readers who want to understand machine learning as a structured pipeline of objects, transformations, composition, and constraints, not just numerical computation
+* **Current Status**: Working draft with evolving chapters, examples, and code; public edition available for study and feedback while development continues
+* **Co-authors**: Hamze Ghalebi (Paris-based AI architect/CTO focused on production GenAI and auditable systems) and Farzad Jafarranmani (researcher at Huawei/Lagrange Center with PhD in Mathematics and Computer Science, specializing in category theory and proof theory)
+* **Public Resources**: Open-access book at hghalebi.github.io, source repository on GitHub, first public workshop hosted through AI Reading Club
+* **Feedback Welcome**: Seeking specific input on unclear explanations, broken examples, missing references, awkward terminology, and connections between Rust, ML, and category theory
+* **Usage Terms**: Free to read online for personal study with citation; commercial/organizational group reuse (workshops, training programs, courses) requires written permission; paid editions support continued development without removing free access
+
+### 《Rust 中的微型机器学习范畴论》：结合数学结构与实践实现的工作草稿
+
+* **核心方法**：将范畴论作为工程工具而非抽象装饰，将领域对象映射为 Rust 类型，态射映射为类型化转换，组合映射为可执行程序结构
+* **目标读者**：希望将机器学习理解为对象、转换、组合和约束的结构化管道，而不仅仅是数值计算的读者
+* **当前状态**：章节、示例和代码持续演进的工作草稿；公开版本可供学习和反馈，同时开发继续进行
+* **合著者**：Hamze Ghalebi(巴黎 AI 架构师/CTO，专注于生产级 GenAI 和可审计系统)和 Farzad Jafarranmani(华为/拉格朗日中心研究员，数学与计算机科学博士，专攻范畴论和证明论)
+* **公共资源**：开放访问书籍位于 hghalebi.github.io，GitHub 源代码仓库，首次公开研讨会由 AI Reading Club 主办
+* **欢迎反馈**：寻求关于不清晰解释、错误示例、缺失引用、术语问题以及 Rust、机器学习和范畴论之间联系的具体意见
+* **使用条款**：个人学习可免费在线阅读并注明出处；商业/组织团体使用(研讨会、培训项目、课程)需要书面许可；付费版本支持持续开发但不移除免费访问
+
+**[Read Original / 阅读原文](https://hghalebi.github.io/category_theory_transformer_rs/)**
+
+### 🎬 Think in JavaScript – The Hard & Conceptual Parts (Full Course)
+**Channel:** freeCodeCamp.org
+
+* What the video covers: An engineering-grade deep dive into JavaScript's internal mechanics, focusing on how the language actually works under the hood rather than surface-level syntax
+* Key topics discussed: Core JavaScript concepts including execution context, closures, scope, the event loop, asynchronous behavior, prototypal inheritance, and other foundational mechanisms that govern code execution
+* Why it's worth watching: Transforms you from guessing why code behaves a certain way to truly understanding JavaScript's execution model. Essential for developers who want to move beyond trial-and-error coding to writing predictable, professional-grade JavaScript with confidence
+
+---
+
+### 🎬 深入理解 JavaScript——核心与概念精讲（完整课程）
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 工程级别的 JavaScript 内部机制深度剖析，重点讲解语言底层运作原理而非表面语法
+* 主要话题: JavaScript 核心概念，包括执行上下文、闭包、作用域、事件循环、异步行为、原型继承以及其他控制代码执行的基础机制
+* 为何值得观看: 帮助开发者从"猜测代码行为"转变为"真正理解 JavaScript 执行模型"。对于想要摆脱试错式编程、编写可预测的专业级 JavaScript 代码的开发者来说，这是一门必修课程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=x7u2c0DhWEU)**
 
