@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 15, 2026"
 date: 2026-05-15
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -729,4 +729,74 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: freeCodeCamp 出品的完整课程，提供结构化的实践学习体验，适合想要利用 Claude AI 进行编码任务的开发者——特别适合 AI 开发工具的新手
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=gh2_PhgZGsM)**
+
+### UK Government Replaces Palantir System with In-House Solution
+
+* The UK Ministry of Housing Communities and Local Government (MHCLG) terminated its contract with Palantir and built a replacement system internally
+* The original Palantir contract for the "Homes for Ukraine" data system was awarded under urgent exemption rules during the refugee crisis
+* The National Audit Office (2023) reported that Palantir's system had issues including duplicated data presentation and confusion for local authorities
+* MHCLG's new in-house system is saving millions of pounds annually and receives better user feedback for ease of navigation
+* The replacement system is open source, giving the government direct control over sovereign technology
+* The blog post highlights how UK government contracts are publicly searchable at contractsfinder.service.gov.uk, though agencies rarely publicly criticize suppliers
+* This case demonstrates that properly resourced civil servants can outperform private sector contractors
+
+### 英国政府淘汰 Palantir 系统，自主开发替代方案
+
+* 英国住房、社区与地方政府部（MHCLG）终止了与 Palantir 的合同，并在内部构建了替代系统
+* Palantir 最初为"乌克兰家园"数据系统提供的合同是在难民危机期间根据紧急豁免规则授予的
+* 国家审计署（2023年）报告指出，Palantir 的系统存在问题，包括数据重复显示和地方当局使用困惑
+* MHCLG 的新内部系统每年节省数百万英镑，用户反馈其导航更加便捷
+* 替代系统采用开源方式，使政府能够直接控制主权技术
+* 该博文强调英国政府合同可在 contractsfinder.service.gov.uk 公开查询，尽管政府机构很少公开批评供应商
+* 此案例表明，资源充足的公务员可以超越私营部门承包商的表现
+
+**[Read Original / 阅读原文](https://shkspr.mobi/blog/2026/05/uk-government-kicks-out-palantir/)**
+
+### Mullvad VPN Exit IPs as a Fingerprinting Vector
+
+* **Deterministic IP assignment vulnerability**: Mullvad assigns exit IPs based on your WireGuard key (which rotates every 1-30 days), not randomly, creating a fingerprinting risk across multiple servers
+* **Limited IP combinations**: Despite 8.2 trillion theoretical combinations across 9 tested servers, only 284 actual combinations were observed due to a seed-based RNG implementation
+* **Proportional IP selection**: Exit IPs are assigned at the same percentile position across all server pools, meaning servers with identical pool sizes always share the same IP indexes
+* **Root cause identified**: The behavior stems from Rust's `random_range` function, which generates the same float on first call regardless of bounds, effectively linking your identity across different servers
+* **Correlation attack risk**: With ~99% accuracy, attackers can correlate user identities across different Mullvad servers by analyzing exit IP patterns, even when switching servers
+* **Mitigation strategies**: Avoid switching servers more than once per pubkey rotation, and force pubkey rotation by logging out of the Mullvad app to break the fingerprinting chain
+
+### Mullvad VPN 出口 IP 作为指纹识别向量
+
+* **确定性 IP 分配漏洞**：Mullvad 根据 WireGuard 密钥（每 1-30 天轮换一次）分配出口 IP，而非随机分配，这在多个服务器间造成指纹识别风险
+* **有限的 IP 组合**：尽管在 9 个测试服务器上理论上有 8.2 万亿种组合，但由于基于种子的随机数生成器实现，实际只观察到 284 种组合
+* **比例化 IP 选择**：出口 IP 在所有服务器池中按相同百分位位置分配，意味着具有相同池大小的服务器总是共享相同的 IP 索引
+* **根本原因确认**：该行为源于 Rust 的 `random_range` 函数，无论边界如何，首次调用都会生成相同的浮点数，从而在不同服务器间关联用户身份
+* **关联攻击风险**：通过分析出口 IP 模式，攻击者可以约 99% 的准确率关联不同 Mullvad 服务器上的用户身份，即使切换服务器也无法避免
+* **缓解策略**：每次公钥轮换期间避免切换服务器超过一次，并通过退出 Mullvad 应用强制轮换公钥以打破指纹识别链
+
+**[Read Original / 阅读原文](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/)**
+
+### How Claude Code Works in Large Codebases: Best Practices and Where to Start
+
+* **Claude Code operates locally** on developer machines using agentic search—traversing files, reading code, and using grep—rather than requiring centralized codebase indexes or embeddings
+* **The "harness" matters more than the model alone**: Five extension points (CLAUDE.md files, hooks, skills, plugins, MCP servers) plus LSP integrations and subagents determine real-world performance
+* **CLAUDE.md files provide foundational context** that Claude reads automatically in every session, covering project conventions and codebase knowledge
+* **Hooks enable continuous improvement** by automating checks, dynamically loading context, and capturing session learnings to update documentation
+* **Skills use progressive disclosure** to load specialized expertise on-demand without bloating every session, and can be scoped to specific codebase paths
+* **Plugins bundle and distribute** working configurations (skills, hooks, MCP configs) across organizations through managed marketplaces
+* **LSP integrations provide symbol-level precision** for navigation, especially critical for multi-language codebases and typed languages like C, C++, and Java
+* **MCP servers connect Claude to internal tools**, data sources, and APIs that aren't otherwise accessible
+* **Subagents split exploration from editing** by running isolated Claude instances for specific tasks, preserving main context window
+* **Three deployment patterns emerge**: making codebases navigable at scale, configuring for specific structures, and building self-improving systems
+
+### Claude Code 如何在大型代码库中工作：最佳实践与入门指南
+
+* **Claude Code 在本地运行**，使用智能体搜索方式（遍历文件、读取代码、使用 grep），而非依赖集中式代码库索引或嵌入向量
+* **"工具链"比模型本身更重要**：五个扩展点（CLAUDE.md 文件、钩子、技能、插件、MCP 服务器）加上 LSP 集成和子智能体决定了实际性能
+* **CLAUDE.md 文件提供基础上下文**，Claude 在每个会话中自动读取，涵盖项目约定和代码库知识
+* **钩子实现持续改进**，通过自动化检查、动态加载上下文、捕获会话学习来更新文档
+* **技能采用渐进式披露**，按需加载专业知识而不会使每个会话臃肿，并可限定在特定代码库路径
+* **插件打包和分发**工作配置（技能、钩子、MCP 配置），通过托管市场在组织内推广
+* **LSP 集成提供符号级精度**导航，对多语言代码库和 C、C++、Java 等类型化语言尤为关键
+* **MCP 服务器连接 Claude 与内部工具**、数据源和 API，访问原本无法触及的资源
+* **子智能体分离探索与编辑**，通过运行独立的 Claude 实例处理特定任务，保留主上下文窗口
+* **三种部署模式**：使大规模代码库可导航、针对特定结构配置、构建自我改进系统
+
+**[Read Original / 阅读原文](https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start)**
 
