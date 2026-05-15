@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 15, 2026"
 date: 2026-05-15
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -874,4 +874,148 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 帮助开发者从"猜测代码行为"转变为"真正理解 JavaScript 执行模型"。对于想要摆脱试错式编程、编写可预测的专业级 JavaScript 代码的开发者来说，这是一门必修课程
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=x7u2c0DhWEU)**
+
+### The Wonders of AI: Turso Retires Bug Bounty Program Due to AI-Generated Spam
+
+* **Program retirement**: Turso is ending its $1,000 bug bounty program for data corruption bugs after nearly a year, not due to lack of bugs, but because of overwhelming AI-generated spam submissions
+* **Original success**: The program successfully paid 5 skilled contributors who found legitimate bugs, including Alperen Keles, Mikael, and Pavan Nambi (who found 10+ bugs in SQLite itself)
+* **AI slop problem**: After AI tools became widespread, maintainers were flooded with nonsensical PRs from bots trying to claim bounties—submissions included manually corrupting database headers, modifying source code to add bugs, and claiming SQL execution as a "vulnerability"
+* **Asymmetric cost**: Generating spam submissions takes bots minutes, but reviewing and responding takes maintainers hours, creating an unsustainable burden
+* **Failed mitigation**: A vouching system was implemented to auto-close suspected bot submissions, but bots adapted by opening follow-up issues requesting manual review
+* **Open source commitment**: Turso remains committed to open contributions and community engagement, choosing to remove financial incentives rather than close their system
+* **Broader implications**: The company is sharing this experience publicly to contribute to conversations about governance in the AI era, as many open source projects face similar challenges
+
+### AI 的奇迹:Turso 因 AI 生成的垃圾信息而终止漏洞赏金计划
+
+* **计划终止**:Turso 在运行近一年后终止了针对数据损坏漏洞的 1000 美元赏金计划,原因不是缺少漏洞,而是被 AI 生成的垃圾提交淹没
+* **最初的成功**:该计划成功向 5 位发现真实漏洞的技术人员支付了赏金,包括 Alperen Keles、Mikael 和 Pavan Nambi(他在 SQLite 本身发现了 10 多个漏洞)
+* **AI 垃圾问题**:AI 工具普及后,维护者被试图领取赏金的机器人提交的荒谬 PR 淹没——提交内容包括手动破坏数据库头、修改源代码添加漏洞、以及将 SQL 执行声称为"漏洞"
+* **不对称成本**:机器人生成垃圾提交只需几分钟,但维护者审查和回应需要数小时,造成了不可持续的负担
+* **缓解措施失败**:实施了担保系统来自动关闭疑似机器人提交,但机器人通过开启后续问题请求人工审查来适应
+* **开源承诺**:Turso 仍然致力于开放贡献和社区参与,选择移除经济激励而不是关闭系统
+* **更广泛的影响**:该公司公开分享这一经历,为 AI 时代的治理对话做出贡献,因为许多开源项目面临类似挑战
+
+**[Read Original / 阅读原文](https://turso.tech/blog/the-wonders-of-ai)**
+
+### OCaml Protocol Stack Successfully Deployed in Low Earth Orbit
+
+* On April 23, 2026, a pure-OCaml CCSDS protocol stack (codename "Borealis") booted up in low Earth orbit aboard DPhi Space's ClusterGate-2 payload module
+* The system implements end-to-end encrypted command and control with post-quantum key rotation, all written in safe OCaml
+* Borealis runs a complete CCSDS protocol stack from radio framing through Bundle Protocol (BPv7) with BPSec security extensions, treating the satellite's filesystem as a delay-tolerant network
+* The system features post-quantum signing keys (ML-DSA-65) with OTAR (Over-The-Air Rekeying) capability, marking the first public in-orbit demonstration of post-quantum OTAR
+* Cryptographic envelopes around each bundle provide security guarantees independent of container isolation, addressing kernel-level vulnerabilities that regularly break tenant boundaries on shared satellite hardware
+* The flight binary is 5-10 MB, statically linked, running on an Arm SoC (four Cortex-A53 cores, 4 GB RAM) as a Docker container
+* Future development includes integrating Jane Street's OxCaml compiler branch, whose mode system enables stack-bound allocations and compile-time data race prevention for real-time on-board dispatch
+* The project originated from the EU ORCHIDE Horizon Europe project at Tarides and led to the spin-out of Parsimoni as a dedicated space-software company
+
+### OCaml 协议栈成功部署于近地轨道
+
+* 2026年4月23日，纯 OCaml 编写的 CCSDS 协议栈（代号"Borealis"）在 DPhi Space 的 ClusterGate-2 载荷模块上成功启动运行于近地轨道
+* 该系统实现了端到端加密的指令与控制，支持后量子密钥轮换，全部使用安全的 OCaml 语言实现
+* Borealis 运行完整的 CCSDS 协议栈，从无线电帧到 Bundle Protocol（BPv7）及 BPSec 安全扩展，将卫星文件系统视为容延网络
+* 系统采用后量子签名密钥（ML-DSA-65）并支持 OTAR（空中密钥更新），这是首次公开的在轨后量子 OTAR 演示
+* 每个数据包的加密封装提供独立于容器隔离的安全保障，解决了共享卫星硬件上定期突破租户边界的内核级漏洞问题
+* 飞行二进制文件为 5-10 MB，静态链接，运行在 Arm SoC（四核 Cortex-A53，4 GB 内存）上作为 Docker 容器
+* 未来开发包括集成 Jane Street 的 OxCaml 编译器分支，其模式系统支持栈绑定分配和编译时数据竞争预防，用于实时星载调度
+* 该项目源于欧盟 ORCHIDE 地平线欧洲项目在 Tarides 的工作，最终促成 Parsimoni 作为专注航天软件的公司独立运营
+
+**[Read Original / 阅读原文](https://gazagnaire.org/blog/2026-05-14-borealis.html)**
+
+### whichllm: Find the Best Local LLM for Your Hardware
+
+* **Auto-detects hardware** — Analyzes your GPU/CPU/RAM and ranks top HuggingFace models that fit your system
+* **Evidence-based ranking** — Uses merged real benchmarks (LiveBench, Artificial Analysis, Aider, Chatbot Arena ELO) instead of just size heuristics
+* **One-command chat** — `whichllm run` downloads and starts interactive chat sessions instantly with any model format (GGUF, AWQ, GPTQ, FP16)
+* **GPU simulation** — Test with any GPU before buying: `whichllm --gpu "RTX 4090"`
+* **Hardware planning** — Reverse lookup to find what GPU you need: `whichllm plan "llama 3 70b"`
+* **Smart scoring system** — Combines benchmark quality, model size, quantization penalties, evidence confidence, runtime fit, speed, and source trust
+* **Live data pipeline** — Fetches models directly from HuggingFace API with cached fallbacks; integrates multiple benchmark sources with confidence-based dampening
+* **Code snippets** — `whichllm snippet` generates ready-to-run Python code for any model
+* **Architecture-aware estimates** — Calculates VRAM (weights + KV cache + activation + overhead) and speed with per-quant efficiency and MoE modeling
+* **Install via pipx, Homebrew, or pip** — Supports NVIDIA, AMD, Apple Silicon, and CPU-only modes
+
+### whichllm:为你的硬件找到最佳本地大语言模型
+
+* **自动检测硬件** — 分析你的 GPU/CPU/RAM 并从 HuggingFace 排序出适合你系统的顶级模型
+* **基于证据的排名** — 使用合并的真实基准测试(LiveBench、Artificial Analysis、Aider、Chatbot Arena ELO)而非仅凭模型大小启发式判断
+* **一键对话** — `whichllm run` 即可下载并立即启动与任何模型格式(GGUF、AWQ、GPTQ、FP16)的交互式对话
+* **GPU 模拟** — 购买前测试任何 GPU:`whichllm --gpu "RTX 4090"`
+* **硬件规划** — 反向查询找出需要什么 GPU:`whichllm plan "llama 3 70b"`
+* **智能评分系统** — 综合基准测试质量、模型大小、量化惩罚、证据置信度、运行时适配、速度和来源可信度
+* **实时数据管道** — 直接从 HuggingFace API 获取模型并带缓存回退;整合多个基准测试源并进行基于置信度的衰减
+* **代码片段** — `whichllm snippet` 为任何模型生成即用的 Python 代码
+* **架构感知估算** — 计算显存(权重 + KV 缓存 + 激活 + 开销)和速度,包含每量化效率和 MoE 建模
+* **通过 pipx、Homebrew 或 pip 安装** — 支持 NVIDIA、AMD、Apple Silicon 和纯 CPU 模式
+
+**[Read Original / 阅读原文](https://github.com/Andyyyy64/whichllm)**
+
+### Supertonic - Lightning-Fast, On-Device, Multilingual TTS via ONNX
+
+* **What it does**: Supertonic is a privacy-focused text-to-speech system that runs entirely on your device using ONNX Runtime—no cloud, no API calls, no data leaving your machine. It converts text to natural speech across 31 languages with minimal latency.
+
+* **Key features**: 
+  - Supports 31 languages including English, Korean, Japanese, Arabic, and major European languages
+  - Runs on CPU with competitive speed vs GPU baselines, using ~99M parameters (much smaller than 0.7B-2B class TTS models)
+  - Cross-platform SDKs for Python, JavaScript, Swift, Rust, Go, Java, C++, C#, iOS, and browser
+  - Expressive tags like `<laugh>`, `<breath>`, `<sigh>` for natural speech
+  - Improved reading accuracy with fewer repeat/skip failures compared to v2
+  - Demonstrated running on Raspberry Pi and e-readers in airplane mode
+
+* **Why it's notable**: Achieved 712 stars today by delivering production-ready, on-device TTS that balances quality with extreme efficiency. The v3 release expands from 5 to 31 languages while maintaining v2-compatible ONNX interfaces. It's practical for edge deployment, browser extensions, and privacy-sensitive applications where cloud TTS isn't viable. The Voice Builder tool lets users create custom voices with permanent ownership.
+
+---
+
+### Supertonic - 基于 ONNX 的超快速端侧多语言语音合成
+
+* **功能介绍**: Supertonic 是一个注重隐私的文本转语音系统,通过 ONNX Runtime 完全在本地设备运行——无需云服务、无需 API 调用、数据不离开设备。支持 31 种语言的自然语音合成,延迟极低。
+
+* **主要特点**:
+  - 支持 31 种语言,包括英语、韩语、日语、阿拉伯语及主要欧洲语言
+  - CPU 运行速度可媲美 GPU 基准,仅使用约 9900 万参数(远小于 7 亿至 20 亿参数级别的 TTS 模型)
+  - 跨平台 SDK 支持 Python、JavaScript、Swift、Rust、Go、Java、C++、C#、iOS 和浏览器
+  - 支持 `<laugh>`、`<breath>`、`<sigh>` 等表达标签,实现自然语音
+  - 相比 v2 版本,阅读准确性提升,重复/跳读失败显著减少
+  - 已在树莓派和电子阅读器(飞行模式)上成功演示
+
+* **为何值得关注**: 今日获得 712 星,提供了兼顾质量与极致效率的生产级端侧 TTS 方案。v3 版本将语言支持从 5 种扩展到 31 种,同时保持与 v2 兼容的 ONNX 接口。适用于边缘部署、浏览器扩展及隐私敏感场景,在云端 TTS 不可行时提供可靠替代方案。Voice Builder 工具允许用户创建具有永久所有权的自定义语音。
+
+**[View Repository / 查看仓库](https://github.com/supertone-inc/supertonic)**
+
+### 🎬 Why companies still need real people responsible for critical work
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Chris Coyier discusses the irreplaceable role of human accountability in business-critical operations, particularly in the context of AI tools like Claude
+* Key topics discussed: The limitations of delegating critical responsibilities to AI systems, the importance of human ownership and decision-making in high-stakes work, and why automation cannot replace human accountability
+* Why it's worth watching: Essential perspective for developers and tech leaders navigating the AI era—understanding where human judgment and responsibility remain non-negotiable, even as AI capabilities expand
+
+---
+
+### 🎬 为什么公司仍然需要真人负责关键工作
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Chris Coyier 探讨了在业务关键操作中人类责任不可替代的角色,特别是在 Claude 等 AI 工具的背景下
+* 主要话题: AI 系统承担关键责任的局限性、人类在高风险工作中的所有权和决策重要性,以及为什么自动化无法取代人类问责制
+* 为何值得观看: 为开发者和技术领导者提供 AI 时代的重要视角——理解即使 AI 能力不断扩展,哪些领域的人类判断和责任仍然不可或缺
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=4uNoRLpLud8)**
+
+### 🎬 Claude Code for Beginners Tutorial [Full Course]
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A comprehensive beginner-friendly tutorial on Claude Code, teaching how to integrate Anthropic's Claude AI into your development workflow as a coding assistant
+* Key topics discussed: Setting up Claude Code, core features and capabilities, practical coding examples, best practices for AI-assisted development, and real-world implementation scenarios
+* Why it's worth watching: Full-length course from freeCodeCamp offering structured, hands-on learning for developers wanting to leverage Claude AI for coding tasks—ideal for those new to AI-powered development tools
+
+---
+
+### 🎬 Claude Code 初学者教程 [完整课程]
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 全面的 Claude Code 入门教程，教授如何将 Anthropic 的 Claude AI 无缝集成到开发工作流程中作为编码助手
+* 主要话题: Claude Code 的设置配置、核心功能特性、实用编码示例、AI 辅助开发的最佳实践，以及真实场景的应用实现
+* 为何值得观看: freeCodeCamp 出品的完整课程，提供结构化的实践学习体验，适合想要利用 Claude AI 进行编码任务的开发者——特别适合 AI 开发工具的新手
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gh2_PhgZGsM)**
 
