@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 16, 2026"
 date: 2026-05-16
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -731,4 +731,78 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合对技术路线犹豫不决的游戏开发初学者,清晰介绍现代游戏开发的多种选择,帮助观众做出明智的学习决策
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7KXtysJYYr0)**
+
+### Bean Pointing Stick Preorder Summary
+
+* **Preorder Structure**: Three tiers available - Early Access (ships immediately), Tier A (ships within 8 weeks), Tier B (ships within 20 weeks) from launch date of May 6, 2026
+* **What's Included**: Fully assembled device with 3D-printed black parts, Bean Pointing Stick PCB, optional USB-A to USB-C cable, mounting hardware (screw, magnet), and friction components (4 pads, 1 nub)
+* **Firmware & Customization**: Ships with QMK firmware preloaded; users can easily flash custom firmware using QMK Toolbox or QMK Configurator without special tools
+* **Shipping & Returns**: Ships via Chit Chats (Canadian logistics); 30-day return policy (shipping not included); assembled kits cannot be returned; international orders may incur customs fees
+* **Warranty**: One-year limited manufacturer's warranty from purchase date; warranty voids if hardware, software, or firmware is modified in any way
+
+### Bean Pointing Stick 预购摘要
+
+* **预购结构**：三个等级可选 - 早期访问（立即发货）、A 级（发布日期后 8 周内发货）、B 级（发布日期后 20 周内发货），发布日期为 2026 年 5 月 6 日
+* **包含内容**：完全组装的设备，包含黑色 3D 打印部件、Bean Pointing Stick PCB、可选 USB-A 转 USB-C 线缆、安装硬件（螺丝、磁铁）和摩擦组件（4 个摩擦垫、1 个摩擦头）
+* **固件与定制**：预装 QMK 固件；用户可使用 QMK Toolbox 或 QMK Configurator 轻松刷入自定义固件，无需特殊工具
+* **运输与退货**：通过 Chit Chats（加拿大物流）发货；30 天退货政策（不含运费）；已组装套件不可退货；国际订单可能产生海关费用
+* **保修**：自购买之日起一年有限制造商保修；如对硬件、软件或固件进行任何修改，保修自动失效
+
+**[Read Original / 阅读原文](https://ploopy.co/shop/bean-pointing-stick/)**
+
+### How Bird Eyes Evolved an Oxygen-Free Power System
+
+* Bird retinas operate in completely anoxic (zero-oxygen) conditions throughout their lifetime, using anaerobic glycolysis—a metabolic pathway previously unknown to sustain any vertebrate tissue permanently
+* The pecten oculi, a unique vascular structure in bird eyes, supports this oxygen-free metabolism by supplying nutrients without delivering oxygen to the retina
+* This adaptation likely evolved during the dinosaur era after birds split from crocodiles, possibly driven by selection for sharp vision in theropod dinosaurs for tracking prey and identifying mates
+* The absence of blood vessels in the retina may enhance visual acuity by eliminating obstructions, supporting birds' exceptional vision for hunting, foraging, and migration
+* Researchers compared bird retinas to reptile relatives (turtles and caimans) which showed normal oxygen levels, confirming the uniqueness of the avian system
+* Understanding how bird tissues tolerate anoxia could provide biomedical insights for treating conditions like strokes and oxygen deprivation in human tissues
+
+### 鸟类眼睛如何进化出无氧供能系统
+
+* 鸟类视网膜在完全缺氧的条件下运作，终生使用无氧糖酵解代谢途径——这是此前未知的任何脊椎动物组织能够永久维持的代谢方式
+* 栉膜（pecten oculi）是鸟类眼睛中独特的血管结构，通过提供营养物质而不向视网膜输送氧气来支持这种无氧代谢
+* 这种适应性可能在恐龙时代进化而来，发生在鸟类与鳄鱼分化之后，可能是由于兽脚类恐龙为追踪猎物和识别配偶而对敏锐视力的选择压力所驱动
+* 视网膜中缺乏血管可能通过消除视觉障碍来增强视觉敏锐度，支持鸟类在狩猎、觅食和迁徙中的卓越视力
+* 研究人员将鸟类视网膜与爬行动物近亲（乌龟和凯门鳄）进行比较，后者显示正常氧气水平，证实了鸟类系统的独特性
+* 了解鸟类组织如何耐受缺氧可能为治疗中风和人体组织缺氧等疾病提供生物医学启示
+
+**[Read Original / 阅读原文](https://www.quantamagazine.org/how-the-bird-eye-was-pushed-to-an-evolutionary-extreme-20260513/)**
+
+### Six SQL Patterns I Use to Catch Transaction Fraud
+
+* **Velocity detection**: Track rapid transaction bursts using time-bucketed queries (1-minute, 5-minute, 1-hour windows) to catch stolen cards being drained quickly before holders notice
+* **Impossible travel**: Identify cloned cards by detecting transactions in geographically distant locations within physically impossible timeframes (e.g., Chicago to LA in 7 minutes, using haversine distance calculations)
+* **Amount anomalies**: Flag suspicious transaction amounts including round-dollar card tests ($1, $5, $10) and just-under-threshold amounts ($99.99, $499.99) designed to avoid ID checks or daily limits
+* **Suspicious merchants**: Detect compromised card readers by finding merchants with unusual spikes in unique cards and transaction volumes within short time windows
+* **SQL-first approach**: Fraud detection relies primarily on well-structured SQL queries against transaction tables, not machine learning or graph databases, applicable across credit cards, healthcare claims, e-commerce, and government benefit programs
+* **Practical implementation**: Use window functions (LAG, RANGE), CTEs, and QUALIFY clauses for sliding-window analysis; maintain whitelists for legitimate high-velocity users; tune thresholds based on fraud patterns at different time scales
+
+### 我用来捕获交易欺诈的六种 SQL 模式
+
+* **速度检测**:通过时间分桶查询(1分钟、5分钟、1小时窗口)追踪快速交易爆发,捕获在持卡人发现前被快速盗刷的被盗卡片
+* **不可能旅行**:通过检测在物理上不可能的时间范围内在地理上相距遥远的地点发生的交易(例如7分钟内从芝加哥到洛杉矶,使用 haversine 距离计算)来识别克隆卡
+* **金额异常**:标记可疑交易金额,包括整数金额的卡片测试($1、$5、$10)和刚好低于阈值的金额($99.99、$499.99),旨在避免身份检查或每日限额
+* **可疑商户**:通过发现在短时间窗口内出现独特卡片和交易量异常激增的商户来检测被入侵的读卡器
+* **SQL 优先方法**:欺诈检测主要依赖于针对交易表的结构良好的 SQL 查询,而非机器学习或图数据库,适用于信用卡、医疗索赔、电子商务和政府福利项目
+* **实际实施**:使用窗口函数(LAG、RANGE)、CTE 和 QUALIFY 子句进行滑动窗口分析;为合法的高速用户维护白名单;根据不同时间尺度的欺诈模式调整阈值
+
+**[Read Original / 阅读原文](https://analytics.fixelsmith.com/posts/sql-fraud-patterns/)**
+
+### 🎬 Thanks for a great time, India 🇮🇳
+**Channel:** Y Combinator
+
+* What the video covers: Y Combinator's experience and activities in India, likely covering their recent visit, events, or initiatives in the Indian startup ecosystem
+* Key topics discussed: YC's engagement with Indian entrepreneurs, startup community interactions, and reflections on India's tech landscape
+* Why it's worth watching: Offers insights into YC's perspective on India's startup scene and their commitment to supporting founders in one of the world's fastest-growing tech markets
+
+### 🎬 感谢印度的美好时光 🇮🇳
+**频道:** Y Combinator
+
+* 视频内容概述: Y Combinator 在印度的经历和活动，可能涵盖他们最近的访问、活动或在印度创业生态系统中的举措
+* 主要话题: YC 与印度创业者的互动、创业社区交流以及对印度科技领域的思考
+* 为何值得观看: 提供 YC 对印度创业场景的独特视角，展示他们对支持全球增长最快科技市场之一的创始人的承诺
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yMt2oSemobE)**
 
