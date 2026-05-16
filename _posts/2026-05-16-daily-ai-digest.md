@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 16, 2026"
 date: 2026-05-16
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，9个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -867,4 +867,156 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **真正的原因**：证据表明无家可归和心理健康危机并非因为P2P冰毒化学性质不同或更危险——而是前所未有的供应量使成瘾问题更加普遍
 
 **[Read Original / 阅读原文](https://dynomight.net/p2p-meth/)**
+
+<!-- [Title-Only] -->
+### Δ-Mem: Efficient Online Memory for Large Language Models
+
+* Based on the title, this article likely presents a novel memory mechanism called "Δ-Mem" (Delta-Mem) designed to enhance how large language models store and retrieve information during inference. The "Δ" (delta) notation suggests it may focus on incremental or differential memory updates rather than full memory rewrites.
+* This could be interesting to readers working on LLM optimization, as efficient memory management is crucial for reducing computational costs and enabling longer context windows. The "online" aspect suggests real-time memory updates during model operation, which could improve performance on tasks requiring dynamic information retention.
+
+### Δ-Mem:大型语言模型的高效在线内存机制
+
+* 根据标题推测,本文可能提出了一种名为"Δ-Mem"(Delta-Mem)的新型内存机制,旨在改进大型语言模型在推理过程中存储和检索信息的方式。"Δ"(delta)符号暗示该方法可能专注于增量或差分内存更新,而非完整的内存重写。
+* 对于从事LLM优化工作的读者而言,这项研究值得关注,因为高效的内存管理对于降低计算成本和支持更长的上下文窗口至关重要。"在线"特性表明该机制可在模型运行时进行实时内存更新,这可能提升需要动态信息保留的任务性能。
+
+---
+
+**Note:** This introduction is based solely on the article title, as the full content could not be accessed. The actual paper may cover different or additional aspects.
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2605.12357)**
+
+<!-- [Title-Only] -->
+### Accelerando (2005)
+
+* Based on the title, this appears to be a science fiction novel by Charles Stross. "Accelerando" is a musical term meaning "gradually accelerating," which likely refers to the accelerating pace of technological change and the technological singularity. The novel probably explores themes of post-humanism, artificial intelligence, and the exponential growth of technology through multiple generations.
+* This work is significant in the sci-fi community as it's considered a seminal exploration of the singularity concept and transhumanism. It's freely available online under a Creative Commons license, making it accessible to anyone interested in hard science fiction that grapples with near-future technological transformation.
+
+### 《加速进行曲》(2005)
+
+* 根据标题判断，这应该是查尔斯·斯特罗斯（Charles Stross）的科幻小说。"Accelerando"是音乐术语，意为"渐快"，很可能隐喻技术变革的加速发展和技术奇点。小说可能通过多代人的视角探讨后人类主义、人工智能以及技术指数级增长等主题。
+* 这部作品在科幻界具有重要地位，被认为是探索奇点概念和超人类主义的开创性作品。它以知识共享协议免费在线发布，让所有对硬科幻感兴趣的读者都能接触到这部探讨近未来技术变革的作品。
+
+**[Read Original / 阅读原文](https://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando.html)**
+
+### Futhark by Example: A Hands-On Introduction to Parallel Array Programming
+
+* **Learning Resource**: Collection of commented Futhark programs arranged by increasing complexity, designed for hands-on learning through the Futhark interpreter
+* **Alternative Resources**: Includes "Parallel Programming in Futhark" book for conventional introduction, benchmark implementations, and literate programming with gnuplot visualization support
+* **Dex Language Ports**: Features examples ported from Dex (a dependently typed functional array language) while maintaining original naming conventions and programming style
+* **Real-World Projects**: Showcases practical applications including Diving Beet (particle simulator), Futball (ray-traced game), Futcam (webcam filter application), and various ray tracers
+* **Production Use Cases**: Highlights Neptune (Poseidon hash function for Filecoin blockchain), Palathark (lattice Boltzmann method implementation), and Pareas (compiler project)
+* **Graphics & Simulation Focus**: Many projects demonstrate Futhark's strength in graphics rendering, particle simulation, fractal generation, and GPU-accelerated computations
+
+### Futhark 实例教程:并行数组编程实战入门
+
+* **学习资源**:按复杂度递增排列的 Futhark 注释程序集合,通过 Futhark 解释器进行实践学习
+* **其他资源**:包含《Futhark 并行编程》书籍作为常规入门教材,基准测试实现,以及支持 gnuplot 可视化的文学编程功能
+* **Dex 语言移植**:收录从 Dex(依赖类型函数式数组语言)移植的示例,保留原始命名规范和编程风格
+* **实际项目**:展示实用应用,包括 Diving Beet(粒子模拟器)、Futball(光线追踪游戏)、Futcam(摄像头滤镜应用)及多个光线追踪器
+* **生产级应用**:重点介绍 Neptune(Filecoin 区块链的 Poseidon 哈希函数)、Palathark(格子玻尔兹曼方法实现)和 Pareas(编译器项目)
+* **图形与模拟专长**:众多项目展示 Futhark 在图形渲染、粒子模拟、分形生成和 GPU 加速计算方面的优势
+
+**[Read Original / 阅读原文](https://futhark-lang.org/examples.html)**
+
+### Bun - Incredibly fast all-in-one JavaScript toolkit
+
+* **What it does**: Bun is a complete JavaScript/TypeScript toolkit that combines a runtime, bundler, test runner, and package manager into a single executable. It serves as a drop-in replacement for Node.js with dramatically faster startup times and lower memory usage.
+
+* **Key features**: 
+  - Written in Zig and powered by JavaScriptCore for exceptional performance
+  - Native TypeScript and JSX support out-of-the-box
+  - Built-in test runner, bundler, and package manager (no need for separate tools)
+  - Node.js compatible with minimal changes required
+  - Cross-platform support (Linux, macOS, Windows on x64 & ARM64)
+  - Hot module replacement, watch mode, and development tools included
+
+* **Why it's notable**: Bun consolidates the entire JavaScript toolchain into one blazingly fast executable, eliminating the need for thousands of node_modules during development. With 448 stars today and strong community adoption, it's becoming a serious alternative to the traditional Node.js ecosystem by offering significantly better performance while maintaining compatibility with existing projects.
+
+---
+
+### Bun - 极速 JavaScript 全能工具包
+
+* **功能介绍**: Bun 是一个完整的 JavaScript/TypeScript 工具包，将运行时、打包器、测试运行器和包管理器整合到单个可执行文件中。它可以直接替代 Node.js，启动速度更快，内存占用更低。
+
+* **主要特点**:
+  - 使用 Zig 编写，基于 JavaScriptCore 引擎，性能卓越
+  - 原生支持 TypeScript 和 JSX，无需额外配置
+  - 内置测试运行器、打包器和包管理器（无需安装多个独立工具）
+  - 与 Node.js 兼容，迁移成本极低
+  - 跨平台支持（Linux、macOS、Windows 的 x64 和 ARM64 架构）
+  - 包含热模块替换、监听模式等完整开发工具
+
+* **为何值得关注**: Bun 将整个 JavaScript 工具链整合为一个极速可执行文件，开发时无需安装数千个 node_modules 依赖。今日获得 448 星标，社区采用率持续上升，凭借显著的性能优势和对现有项目的良好兼容性，正在成为传统 Node.js 生态系统的有力替代方案。
+
+**[View Repository / 查看仓库](https://github.com/oven-sh/bun)**
+
+### Open Generative AI - Free Open-Source AI Media Generation Studio
+
+* **What it does**: A self-hosted alternative to commercial AI video platforms that generates images and videos using 200+ state-of-the-art models including Flux, Midjourney, Kling, Sora, Veo, and more. Supports text-to-image, image-to-image, text-to-video, image-to-video, and audio-driven lip sync generation.
+
+* **Key features**: 
+  - No content filters or prompt restrictions — full creative freedom
+  - Desktop apps for macOS, Windows, and Linux with one-click installers
+  - Local model inference support via bundled sd.cpp engine (runs on Apple Silicon) and Wan2GP server integration (for CUDA/ROCm GPUs)
+  - Four specialized studios: Image, Video, Lip Sync, and Cinema
+  - Multi-image input support (up to 14 reference images)
+  - Hosted web version available at dev.muapi.ai for zero-setup usage
+  - MIT licensed with full self-hosting capability
+
+* **Why it's notable**: Trending with 356 stars today because it eliminates the subscription fees, vendor lock-in, and content restrictions of commercial platforms while providing access to cutting-edge generative models. The project offers both convenience (hosted version, desktop apps) and control (self-hosted, local inference), making professional AI media generation accessible to everyone. Its integration with AI coding agents through Generative-Media-Skills enables automated media pipeline workflows.
+
+---
+
+### Open Generative AI - 免费开源 AI 媒体生成工作室
+
+* **功能介绍**: 一个可自托管的商业 AI 视频平台替代方案,使用 200+ 最先进的模型(包括 Flux、Midjourney、Kling、Sora、Veo 等)生成图像和视频。支持文本生成图像、图像转图像、文本生成视频、图像生成视频以及音频驱动的唇形同步生成。
+
+* **主要特点**:
+  - 无内容过滤或提示词限制 — 完全的创作自由
+  - 提供 macOS、Windows 和 Linux 桌面应用,一键安装
+  - 支持本地模型推理:内置 sd.cpp 引擎(可在 Apple Silicon 上运行)和 Wan2GP 服务器集成(支持 CUDA/ROCm GPU)
+  - 四个专业工作室:图像、视频、唇形同步和影院
+  - 支持多图像输入(最多 14 张参考图像)
+  - 提供托管网页版本,零配置即可使用
+  - MIT 许可证,完全支持自托管
+
+* **为何值得关注**: 今日获得 356 星标,因为它消除了商业平台的订阅费用、供应商锁定和内容限制,同时提供最前沿生成模型的访问权限。该项目兼顾便利性(托管版本、桌面应用)和控制权(自托管、本地推理),让专业级 AI 媒体生成对所有人开放。通过 Generative-Media-Skills 与 AI 编码代理集成,可实现自动化媒体管道工作流。
+
+**[View Repository / 查看仓库](https://github.com/Anil-matcha/Open-Generative-AI)**
+
+### 🎬 Building trust at a new job is key - and so is being someone people actually want to work with
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Strategies for establishing trust and building positive working relationships when starting a new position
+* Key topics discussed: Professional relationship building, workplace trust dynamics, becoming a valued team member, career advice from Landon and Quincy
+* Why it's worth watching: Essential soft skills guidance for developers and tech professionals navigating new roles, featuring insights from freeCodeCamp's founder Quincy Larson
+
+---
+
+### 🎬 在新工作中建立信任是关键——成为人们真正愿意共事的人同样重要
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 讲解如何在新岗位上建立信任并培养积极的工作关系的策略
+* 主要话题: 职场关系建立、工作信任动态、成为有价值的团队成员、Landon 和 Quincy 的职业建议
+* 为何值得观看: 为开发者和技术专业人士提供必备的软技能指导,帮助他们适应新角色,由 freeCodeCamp 创始人 Quincy Larson 参与分享见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MxaIP40tPCQ)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse projects using coding and programming techniques
+* Key topics discussed: Coding fundamentals, programming approaches, and productivity strategies for developers
+* Why it's worth watching: Offers practical insights for developers looking to expand their building capabilities and improve workflow efficiency
+
+### 🎬 构建几乎任何东西 #编程 #开发 #生产力
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何使用编程技术构建各种项目的指南
+* 主要话题: 编程基础、开发方法以及提升开发者生产力的策略
+* 为何值得观看: 为希望扩展构建能力和提高工作流程效率的开发者提供实用见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
 
