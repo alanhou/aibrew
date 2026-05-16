@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 16, 2026"
 date: 2026-05-16
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -805,4 +805,66 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供 YC 对印度创业场景的独特视角，展示他们对支持全球增长最快科技市场之一的创始人的承诺
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=yMt2oSemobE)**
+
+### The Decline of the CTF Competition Scene
+
+* The CTFTime leaderboard for 2026 shows a dramatic shift from previous years, with historically dominant teams like TheHackersCrew either absent, fielding smaller rosters, or struggling to reach top 10 placements
+* Unregulated cheating has surged significantly, while prestigious competitions such as Plaid CTF have ceased operations entirely
+* Elite competitors—including International Cybersecurity Championship participants, top bug bounty hunters, Pwn2Own competitors, and Black Hat presenters—are losing interest in the scene
+* The traditional pathway from beginner to elite competitor is breaking down, along with the culture of thoughtful challenge design and the satisfaction of human problem-solving
+* The current open online CTF format is fundamentally broken, and pretending otherwise only enables opportunistic AI vendors to exploit the community's decline by selling inferior products built on training data the community itself created
+
+### CTF 竞赛圈的衰落
+
+* 2026 年 CTFTime 排行榜与往年相比面目全非,TheHackersCrew 等历史强队要么不再参赛,要么参赛人数大幅减少,或难以进入前十名
+* 不受监管的作弊行为激增,而 Plaid CTF 等顶级赛事已经停办
+* 精英选手正在失去兴趣——这些人包括国际网络安全锦标赛参赛者、顶级漏洞赏金猎人、Pwn2Own 竞赛选手以及 Black Hat 演讲者
+* 从新手到精英选手的传统成长路径正在瓦解,精心设计挑战题目的文化和人类深度解题的成就感也在消失
+* 当前的开放在线 CTF 赛制已经从根本上失效,假装一切正常只会让投机的 AI 供应商有机可乘,用社区创造的训练数据反过来向社区兜售劣质产品
+
+**[Read Original / 阅读原文](https://kabir.au/blog/the-ctf-scene-is-dead)**
+
+### Additive Blending on the Nintendo 64
+
+* **The Problem**: N64 explosions and effects looked worse than PlayStation because the N64's Reality Display Processor (RDP) doesn't clamp color values during additive blending, causing color wrap-around artifacts in 16-bit framebuffers.
+* **PlayStation's Advantage**: PSX supports 4 blend modes including simple additive blending (`src + dst`) with automatic clamping, making bright effects like explosions and plasma beams look great.
+* **The Solution**: Draw to a 32-bit RGBA8888 buffer with sprites pre-scaled to 16-bit range (dividing RGB by 8), giving headroom for additive blending without overflow.
+* **Color Combiner Trick**: Use N64's color combiner to automatically scale sprites during rendering by setting fog color alpha to `256/8`, avoiding offline asset preprocessing.
+* **RSP Conversion**: Convert the 32-bit buffer to 16-bit for display using the Reality Signal Processor (RSP), clamping 8-bit color components to 5-bit range in ~3.1ms per frame using optimized vector instructions.
+* **Modern Tooling**: Development made easier with Libdragon and RSPL (a C-like language that compiles to MIPS assembly), eliminating need for hand-written assembly.
+* **Trade-offs**: 32-bit framebuffer doubles memory throughput requirements due to N64's limited RDRAM bandwidth, but technique works well for specific applications.
+* **Future Optimization**: Potential to render only additive-blended sprites to 32-bit buffer (possibly at lower resolution) and combine with 16-bit scene buffer on RSP.
+
+### 任天堂 64 上的加法混合
+
+* **问题所在**：N64 的爆炸和特效看起来不如 PlayStation，因为 N64 的现实显示处理器（RDP）在加法混合时不会钳制颜色值，导致 16 位帧缓冲区中出现颜色溢出伪影。
+* **PlayStation 的优势**：PSX 支持 4 种混合模式，包括简单的加法混合（`src + dst`）并自动钳制数值，使爆炸和等离子光束等明亮特效表现出色。
+* **解决方案**：在 32 位 RGBA8888 缓冲区中绘制，将精灵预缩放到 16 位范围（RGB 除以 8），为加法混合提供足够空间避免溢出。
+* **颜色组合器技巧**：利用 N64 的颜色组合器在渲染时自动缩放精灵，通过将雾色 alpha 设置为 `256/8`，避免离线资源预处理。
+* **RSP 转换**：使用现实信号处理器（RSP）将 32 位缓冲区转换为 16 位用于显示，通过优化的矢量指令将 8 位颜色分量钳制到 5 位范围，每帧约 3.1 毫秒。
+* **现代工具链**：借助 Libdragon 和 RSPL（一种编译为 MIPS 汇编的类 C 语言）简化开发，无需手写汇编代码。
+* **权衡取舍**：32 位帧缓冲区使内存吞吐量需求翻倍，受限于 N64 的 RDRAM 带宽，但该技术在特定应用中表现良好。
+* **未来优化**：可能仅将需要加法混合的精灵渲染到 32 位缓冲区（可能采用更低分辨率），然后在 RSP 上与 16 位场景缓冲区合并。
+
+**[Read Original / 阅读原文](https://phoboslab.org/log/2026/05/n64-additive-blending)**
+
+### The Main Thing About P2P Meth Is That There's So Much of It
+
+* **Synthesis shift (2009-2012)**: US meth production switched from ephedrine-based to P2P (phenylacetone) synthesis after pseudoephedrine sales were banned in 2006-2008
+* **Chemical composition**: P2P synthesis initially produced mixed d-meth (psychoactive) and l-meth (inactive) isomers, but by 2019 street meth was ~95% pure d-meth—higher quality than ever
+* **Contaminants not the culprit**: Different P2P synthesis routes (NTS vs PAA) emerged over time, but lead acetate contamination theory doesn't correlate with schizophrenia reports
+* **Massive supply increase**: Border seizures skyrocketed, Seattle sewage data shows usage doubled around 2017, and heavy daily users tripled between 2015-2019
+* **Price collapse**: Meth prices dropped significantly through 2017 (DEA stopped publishing data after), consistent with massive supply increase
+* **The real story**: Evidence suggests the homelessness and mental health crisis isn't about P2P meth being chemically different or more dangerous—it's about unprecedented availability making addiction more widespread
+
+### P2P冰毒的关键问题是供应量太大了
+
+* **合成方法转变（2009-2012）**：美国在2006-2008年禁售伪麻黄碱后，冰毒生产从麻黄碱合成转向P2P（苯丙酮）合成
+* **化学成分**：P2P合成最初产生d-冰毒（有精神活性）和l-冰毒（无活性）的混合物，但到2019年街头冰毒纯度达到约95%的d-冰毒——比以往任何时候都更纯
+* **污染物不是罪魁祸首**：不同的P2P合成路线（NTS vs PAA）随时间演变，但醋酸铅污染理论与精神分裂症报告并不相关
+* **供应量大幅增加**：边境缉获量激增，西雅图污水数据显示2017年前后使用量翻倍，2015-2019年间重度每日使用者增加了三倍
+* **价格暴跌**：冰毒价格在2017年前大幅下降（DEA之后停止公布数据），与供应量大增一致
+* **真正的原因**：证据表明无家可归和心理健康危机并非因为P2P冰毒化学性质不同或更危险——而是前所未有的供应量使成瘾问题更加普遍
+
+**[Read Original / 阅读原文](https://dynomight.net/p2p-meth/)**
 
