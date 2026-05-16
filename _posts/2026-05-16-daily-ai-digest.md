@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 16, 2026"
 date: 2026-05-16
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -607,4 +607,128 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程提高生产力，减少手动操作，非常适合希望提升效率的机器学习工程师
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+### No Way To Prevent This: The npm Supply Chain Attack Satire
+
+* **Satirical take on npm security vulnerabilities** - Article parodies recurring supply chain attacks in the JavaScript ecosystem, highlighting how the community treats preventable security issues as inevitable
+* **Deep dependency hell criticized** - Mocks the practice of relying on 40-level-deep nested trees of unvetted packages from anonymous maintainers for trivial functions like string capitalization
+* **Comparison with other ecosystems** - Points out that Go, Rust, and native Web APIs with robust standard libraries and cryptographic verification don't experience these issues
+* **Default execution of arbitrary code** - Criticizes npm's design that executes arbitrary installation scripts on local machines by default without sandboxing
+* **"Thoughts and prayers" response** - Satirizes the passive acceptance of security breaches as unavoidable rather than addressing systemic design flaws
+* **Real-world impact highlighted** - References enterprise applications compromised, billions of user records exposed, and DevOps teams scrambling to rotate credentials
+
+### 无法阻止的悲剧:npm 供应链攻击讽刺文
+
+* **讽刺 npm 安全漏洞** - 文章模仿 JavaScript 生态系统中反复出现的供应链攻击,突显社区如何将可预防的安全问题视为不可避免
+* **批评依赖地狱** - 嘲讽依赖 40 层深度嵌套的未经审查包树的做法,这些包由匿名维护者提供,仅用于字符串首字母大写等琐碎功能
+* **与其他生态系统对比** - 指出 Go、Rust 和原生 Web API 拥有强大的标准库和加密验证机制,不会遇到这些问题
+* **默认执行任意代码** - 批评 npm 的设计默认在本地机器上执行任意安装脚本,没有沙箱隔离
+* **"思念与祈祷"式回应** - 讽刺被动接受安全漏洞为不可避免,而非解决系统性设计缺陷
+* **强调现实影响** - 提及企业应用被攻陷、数十亿用户记录泄露、DevOps 团队紧急轮换凭证等实际后果
+
+**[Read Original / 阅读原文](https://kevinpatel.xyz/posts/no-way-to-prevent-this/)**
+
+### Erlang/OTP 29.0 Release Highlights
+
+* **Unsafe function warnings**: New `-unsafe` attributes mark dangerous functions; compiler warns about unsafe Erlang/OTP functions by default, and `xref` can detect calls to unsafe or undocumented functions
+* **SSH security hardening**: SSH daemon now disables shell and exec services by default (secure by default), preventing arbitrary Erlang code execution; SFTP subsystem also disabled by default
+* **Post-quantum cryptography**: SSL now prioritizes x25519mlkem768 hybrid algorithm for quantum-resistant key exchange
+* **Terminal styling support**: New `io_ansi` module enables Virtual Terminal Sequences (ANSI codes) for colored/styled text and terminal applications
+* **Documentation testing**: `ct_doctest` module allows testing code examples in module docs and documentation files
+* **Native records (experimental)**: EEP-79 implementation introduces true record data types beyond tuple-based records
+* **Enhanced guard BIFs**: New `is_integer/3` BIF checks integer values within ranges (e.g., `is_integer(I, 0, 100)`)
+* **Multi-valued comprehensions**: EEP-78 support enables expressions like `[-I, I || I <- [1,2,3]]` producing `[-1,1,-2,2,-3,3]`
+* **Comprehension assignments**: New `compr_assign` feature allows variable binding in comprehensions
+* **New compiler warnings**: Warnings for deprecated `catch` operator, variable exports from subexpressions, obsolete `and`/`or` operators, and inefficient match patterns
+* **Performance improvements**: Better JIT code generation for little-endian binary operations and optimized map comprehensions with constant values
+* **Security changes**: Current working directory (`.`) moved to end of default code path; 32-bit Windows builds discontinued
+* **Quantum-resistant SSH**: Default key exchange now uses mlkem768x25519-sha256 hybrid algorithm combining ML-KEM-768 with X25519
+
+### Erlang/OTP 29.0 版本亮点
+
+* **不安全函数警告**：新增 `-unsafe` 属性标记危险函数；编译器默认对 Erlang/OTP 已知不安全函数发出警告，`xref` 可检测不安全或缺少文档的函数调用
+* **SSH 安全加固**：SSH 守护进程默认禁用 shell 和 exec 服务（默认安全原则），防止执行任意 Erlang 代码；SFTP 子系统也默认禁用
+* **后量子密码学**：SSL 现优先使用 x25519mlkem768 混合算法实现抗量子密钥交换
+* **终端样式支持**：新增 `io_ansi` 模块支持虚拟终端序列（ANSI 代码），可实现彩色/样式文本和终端应用程序
+* **文档测试**：`ct_doctest` 模块允许测试模块文档和文档文件中的代码示例
+* **原生记录（实验性）**：EEP-79 实现引入真正的记录数据类型，超越基于元组的记录
+* **增强的守卫 BIF**：新增 `is_integer/3` BIF 检查整数值范围（如 `is_integer(I, 0, 100)`）
+* **多值推导式**：EEP-78 支持使表达式如 `[-I, I || I <- [1,2,3]]` 生成 `[-1,1,-2,2,-3,3]`
+* **推导式赋值**：新增 `compr_assign` 特性允许在推导式中绑定变量
+* **新增编译器警告**：对已弃用的 `catch` 操作符、子表达式变量导出、过时的 `and`/`or` 操作符和低效匹配模式发出警告
+* **性能改进**：改进小端字节序二进制操作的 JIT 代码生成，优化带常量值的映射推导式
+* **安全变更**：当前工作目录（`.`）移至默认代码路径末尾；停止 32 位 Windows 构建
+* **抗量子 SSH**：默认密钥交换现使用 mlkem768x25519-sha256 混合算法，结合 ML-KEM-768 与 X25519
+
+**[Read Original / 阅读原文](https://www.erlang.org/news/188)**
+
+### Error Page Analysis
+
+* This appears to be an error page from X.com (formerly Twitter) with no actual content to analyze
+* The page displays a generic error message: "Something went wrong, but don't fret — let's give it another shot"
+* Includes a "Try again" button for users to retry their action
+* Contains a warning that privacy-related browser extensions may cause issues on x.com
+* No substantive blog content, article, or information is present to summarize
+
+### 错误页面分析
+
+* 这是一个来自 X.com（前 Twitter）的错误页面，没有实际内容可供分析
+* 页面显示通用错误消息："出了点问题，但别担心——让我们再试一次"
+* 包含"重试"按钮供用户重新尝试操作
+* 包含警告提示：隐私相关的浏览器扩展可能会导致 x.com 出现问题
+* 没有实质性的博客内容、文章或信息可以总结
+
+---
+
+**Note:** Please provide the actual blog content you'd like me to analyze and summarize. The HTML you shared is just an error page without any article content.
+
+**注意：** 请提供您希望我分析和总结的实际博客内容。您分享的 HTML 只是一个错误页面，没有任何文章内容。
+
+**[Read Original / 阅读原文](https://twitter.com/mitchellh/status/2055380239711457578)**
+
+### native-feel-skill - Cross-Platform Desktop Apps That Feel Native
+
+* **What it does**: An Agent Skill that teaches AI agents how to design cross-platform desktop apps (macOS/Windows) that feel indistinguishable from native applications, using a four-layer architecture (native shell → WebView → Node → Rust core)
+
+* **Key features**: 
+  - Eight architectural tenets for balancing cross-platform DX with native performance
+  - Four-layer architecture with typed IPC across Rust/Swift/C#/TypeScript
+  - WebKit/WebView2 survival guide addressing common quirks (flickering, startup flash, memory issues)
+  - 75-item ship-readiness audit checklist
+  - Distilled from Raycast 2.0 technical deep-dive and reverse engineering of Raycast Beta.app
+
+* **Why it's notable**: Solves the classic trade-off between convenient cross-platform development and native performance—targets apps that must launch under 500ms, stay under 500MB, and pass the "30-second skeptical user test" without cursor:pointer tells or web-style behaviors. Particularly valuable for productivity tools, launchers, and AI workspaces where native feel is the entire value proposition.
+
+---
+
+### native-feel-skill - 打造原生体验的跨平台桌面应用
+
+* **功能介绍**: 一个 Agent Skill,教 AI 智能体如何设计在 macOS/Windows 上运行且体验媲美原生应用的跨平台桌面应用,采用四层架构(原生外壳 → WebView → Node → Rust 核心)
+
+* **主要特点**:
+  - 八大架构原则,平衡跨平台开发体验与原生性能
+  - 四层架构,通过类型化 IPC 连接 Rust/Swift/C#/TypeScript
+  - WebKit/WebView2 生存指南,解决常见问题(闪烁、启动白屏、内存泄漏)
+  - 75 项发布就绪审计清单
+  - 从 Raycast 2.0 技术深度剖析和 Raycast Beta.app 逆向工程中提炼
+
+* **为何值得关注**: 解决了跨平台开发便利性与原生性能之间的经典矛盾——专为启动时间 <500ms、内存占用 <500MB、能通过"30 秒挑剔用户测试"的应用设计,避免 cursor:pointer 等 Web 特征暴露。特别适合效率工具、启动器和 AI 工作空间等以原生体验为核心价值的应用场景。
+
+**[View Repository / 查看仓库](https://github.com/yetone/native-feel-skill)**
+
+### 🎬 Do I NEED to learn CODING to make games?!
+**Channel:** Crashsune Academy
+
+* What the video covers: Addresses the common question of whether coding knowledge is essential for game development, exploring both code-based and no-code approaches to creating games
+* Key topics discussed: Different pathways into game development, visual scripting tools vs traditional programming, no-code game engines and their capabilities, when coding skills become necessary
+* Why it's worth watching: Perfect for aspiring game developers unsure about their technical path, provides clarity on modern game development options and helps viewers make informed decisions about their learning journey
+
+### 🎬 游戏开发必须学编程吗?!
+**频道:** Crashsune Academy
+
+* 视频内容概述: 探讨游戏开发是否必须掌握编程技能这一常见问题,分析基于代码和无代码两种游戏制作方式
+* 主要话题: 游戏开发的不同入门路径、可视化脚本工具与传统编程的对比、无代码游戏引擎及其功能、何时需要掌握编程技能
+* 为何值得观看: 适合对技术路线犹豫不决的游戏开发初学者,清晰介绍现代游戏开发的多种选择,帮助观众做出明智的学习决策
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7KXtysJYYr0)**
 
