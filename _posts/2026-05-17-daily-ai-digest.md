@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 17, 2026"
 date: 2026-05-17
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -585,4 +585,68 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+<!-- [Title-Only] -->
+### Zerostack – A Unix-inspired coding agent written in pure Rust
+
+* Based on the title, this article likely introduces Zerostack, a coding agent (AI-powered development tool) that draws design inspiration from Unix philosophy and is implemented entirely in Rust. It probably emphasizes principles like modularity, composability, and doing one thing well—core Unix tenets applied to AI-assisted development.
+* Why it might be interesting: Readers interested in Rust development, AI coding assistants, or Unix design philosophy would find this compelling. The "pure Rust" implementation suggests performance and safety benefits, while the Unix inspiration hints at a tool that might integrate cleanly into existing developer workflows through standard interfaces and pipelines.
+
+### Zerostack – 受 Unix 启发、用纯 Rust 编写的编码代理
+
+* 根据标题推测，本文可能介绍 Zerostack，一个借鉴 Unix 哲学设计、完全用 Rust 实现的编码代理（AI 驱动的开发工具）。文章可能强调模块化、可组合性以及"专注做好一件事"等 Unix 核心理念在 AI 辅助开发中的应用。
+* 为何值得关注：对 Rust 开发、AI 编码助手或 Unix 设计哲学感兴趣的读者会觉得这很有吸引力。"纯 Rust"实现意味着性能和安全优势，而 Unix 启发则暗示该工具可能通过标准接口和管道无缝集成到现有开发工作流中。
+
+**[Read Original / 阅读原文](https://crates.io/crates/zerostack/1.0.0)**
+
+<!-- [Title-Only] -->
+### A Nicer Voltmeter Clock
+
+* Based on the title, this article likely covers an improved or refined design for a clock that uses voltmeters as its display mechanism. Voltmeter clocks are creative DIY projects where analog voltage meters are repurposed to show time - typically with needles pointing to hours, minutes, and sometimes seconds on the meter faces.
+
+* This might be interesting to readers who enjoy electronics projects, retro-futuristic aesthetics, or creative hardware hacking. The "nicer" qualifier suggests improvements over previous designs - possibly better accuracy, cleaner construction, more elegant circuitry, or enhanced visual appeal. Given the Substack domain (lcamtuf), this is likely from a technical author sharing detailed build insights.
+
+### 更精致的电压表时钟
+
+* 根据标题推测，这篇文章可能介绍了一个改进或优化的电压表时钟设计。电压表时钟是一种创意 DIY 项目，将模拟电压表改造用于显示时间——通常用表针指向表盘上的小时、分钟，有时还包括秒数。
+
+* 这对喜欢电子项目、复古未来主义美学或创意硬件改造的读者可能很有吸引力。标题中的"更精致"暗示了相比以前设计的改进——可能是更高的精度、更简洁的构造、更优雅的电路设计，或更出色的视觉效果。考虑到这是 Substack 平台（lcamtuf），很可能来自一位技术作者分享详细的制作心得。
+
+**[Read Original / 阅读原文](https://lcamtuf.substack.com/p/a-nicer-voltmeter-clock)**
+
+### Hosting a Website on an 8-bit Microcontroller
+
+* **Hardware**: AVR64DD32 microcontroller ($1, 8KB RAM, 64KB Flash, 24MHz) hosts a live website using a wooden-mounted perfboard setup
+* **Connectivity**: Uses Serial Line Internet Protocol (SLIP) over USB-to-serial adapter instead of Ethernet (too fast for 8-bit AVR at 20Mbps Manchester encoding)
+* **Network Stack**: Custom implementation of IP header handling (swapping source/destination) and TCP protocol, though TCP still has bugs after several days of development
+* **HTTP Implementation**: Hardcoded response sent to all requests—no actual HTTP parsing, works for single-URL sites
+* **Public Access**: Uses WireGuard VPN to connect through a Helsinki datacenter VPS, with nginx proxying `/mcu` requests to avoid needing a public IPv4 address
+* **Limitations**: Vulnerable to DDoS via dial-up speed connection; author notes IPv6 adoption would solve routing issues but remains unavailable after 30 years
+
+### 在 8 位微控制器上托管网站
+
+* **硬件配置**：AVR64DD32 微控制器（售价 1 美元，8KB RAM，64KB Flash，24MHz）在木质底座的洞洞板上运行真实网站
+* **连接方式**：使用串行线路互联网协议（SLIP）通过 USB 转串口适配器，而非以太网（20Mbps 曼彻斯特编码对 8 位 AVR 太快）
+* **网络协议栈**：自定义实现 IP 头处理（交换源地址和目标地址）和 TCP 协议，尽管 TCP 在开发数天后仍存在漏洞
+* **HTTP 实现**：对所有请求发送硬编码响应——无实际 HTTP 解析，仅适用于单 URL 网站
+* **公网访问**：使用 WireGuard VPN 通过赫尔辛基数据中心的 VPS 连接，nginx 代理 `/mcu` 请求以避免需要公网 IPv4 地址
+* **局限性**：易受拨号速度连接的 DDoS 攻击；作者指出 IPv6 普及可解决路由问题，但 30 年后仍未广泛部署
+
+**[Read Original / 阅读原文](https://maurycyz.com/projects/mcusite/)**
+
+### Clawdmeter - ESP32 Desk Dashboard for Claude Code Usage Monitoring
+
+* **What it does**: A physical desk dashboard that displays real-time Claude Code API usage statistics on an ESP32-powered AMOLED screen, featuring animated pixel-art "Clawd" characters that react to usage intensity
+* **Key features**: Runs on Waveshare ESP32-S3 with 2.16" AMOLED display; Bluetooth pairing with laptop; displays session and weekly usage percentages; physical buttons for Claude Code voice mode (Space) and mode toggle (Shift+Tab) via BLE HID; animated splash screens that change based on usage rate; cross-platform daemon (Linux/macOS) that polls Claude API every 60 seconds
+* **Why it's notable**: Creative hardware integration that turns abstract API metrics into tangible, always-visible feedback; combines custom firmware (C/LVGL), BLE protocol design, and system daemons; uses charming pixel art from the claudepix library; demonstrates practical IoT monitoring for developer tools with polished UX including touch controls and auto-rotating animations
+
+---
+
+### Clawdmeter - Claude Code 使用量监控的 ESP32 桌面仪表盘
+
+* **功能介绍**: 一个实体桌面仪表盘，在 ESP32 驱动的 AMOLED 屏幕上实时显示 Claude Code API 使用统计数据，配有像素风格的"Clawd"动画角色，会根据使用强度做出反应
+* **主要特点**: 运行在配备 2.16 英寸 AMOLED 显示屏的 Waveshare ESP32-S3 上；通过蓝牙与笔记本配对；显示会话和每周使用百分比；物理按钮通过 BLE HID 触发 Claude Code 语音模式（空格键）和模式切换（Shift+Tab）；根据使用率变化的动画启动画面；跨平台守护进程（Linux/macOS）每 60 秒轮询 Claude API
+* **为何值得关注**: 将抽象的 API 指标转化为有形的、始终可见的反馈，创意十足的硬件集成；结合了自定义固件（C/LVGL）、BLE 协议设计和系统守护进程；使用 claudepix 库中精美的像素艺术；展示了为开发者工具打造实用物联网监控的完整方案，包含触摸控制和自动轮播动画等精致用户体验
+
+**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
 
