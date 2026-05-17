@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 17, 2026"
 date: 2026-05-17
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -692,4 +692,50 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+
+<!-- [Title-Only] -->
+### Zerostack – A Unix-inspired coding agent written in pure Rust
+
+* Based on the title, this article likely introduces Zerostack, a coding agent (AI-powered development tool) that draws design principles from Unix philosophy and is implemented entirely in Rust. It probably emphasizes modularity, composability, and the "do one thing well" approach characteristic of Unix tools.
+* Why it might be interesting: Developers interested in AI coding assistants, Rust programming, or Unix design patterns would find this relevant. The combination of modern AI capabilities with classic Unix principles, plus Rust's performance and safety guarantees, suggests a tool that's both powerful and reliable. The fact it's on crates.io indicates it's available as a Rust package for immediate use.
+
+### Zerostack – 受 Unix 启发、用纯 Rust 编写的编码代理
+
+* 根据标题推测，本文可能介绍 Zerostack，一个借鉴 Unix 哲学设计原则、完全用 Rust 实现的编码代理（AI 驱动的开发工具）。文章可能强调其模块化、可组合性以及 Unix 工具"专注做好一件事"的特点。
+* 为何值得关注：对 AI 编码助手、Rust 编程或 Unix 设计模式感兴趣的开发者会觉得这很有价值。将现代 AI 能力与经典 Unix 原则相结合，加上 Rust 的性能和安全保证，暗示这是一个既强大又可靠的工具。它在 crates.io 上发布，意味着可以作为 Rust 包直接使用。
+
+**[Read Original / 阅读原文](https://crates.io/crates/zerostack/1.0.0)**
+
+### Mozilla Opposes UK Proposal to Age-Gate VPNs, Calls Them Essential Privacy Tools
+
+* Mozilla responded to a UK government consultation on protecting young people online, which considers restricting VPN access to prevent circumvention of age verification systems under the Online Safety Act
+* Mozilla argues VPNs are critical privacy and security tools that hide IP addresses, reduce tracking, prevent profiling, and enable secure remote access to networks
+* The organization warns that age-gating VPNs would undermine fundamental rights while failing to effectively protect young people, who are particularly vulnerable to online tracking and targeted advertising
+* Mozilla advocates for addressing root causes of online harm by holding platforms accountable, promoting parental controls, and investing in digital literacy rather than restricting access to privacy tools
+* The submission emphasizes that young people need access to privacy-protecting technologies to develop responsible digital habits and navigate the internet safely
+
+### Mozilla 反对英国限制 VPN 访问提案，称其为必要隐私工具
+
+* Mozilla 回应了英国政府关于保护青少年在线安全的咨询，该咨询考虑限制 VPN 访问以防止规避《在线安全法》规定的年龄验证系统
+* Mozilla 认为 VPN 是关键的隐私和安全工具，可隐藏 IP 地址、减少追踪、防止画像分析，并支持安全远程访问网络
+* 该组织警告称，对 VPN 实施年龄限制会损害基本权利，同时无法有效保护特别容易受到在线追踪和定向广告影响的青少年
+* Mozilla 主张通过追究平台责任、推广家长控制功能和投资数字素养教育来解决在线危害的根源，而非限制隐私工具的访问
+* 该提交文件强调，青少年需要访问隐私保护技术，以培养负责任的数字习惯并安全地浏览互联网
+
+**[Read Original / 阅读原文](https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/)**
+
+<!-- [Title-Only] -->
+### A Nicer Voltmeter Clock
+
+* Based on the title, this article likely covers an improved or refined design for a clock that uses voltmeters as its display mechanism. Voltmeter clocks are creative DIY projects where analog voltage meters are repurposed to show time - typically with needles pointing to hours, minutes, and sometimes seconds on the meter faces.
+
+* This might be interesting to readers who enjoy electronics projects, retro-futuristic aesthetics, or creative hardware hacking. The "nicer" qualifier suggests improvements over previous designs - possibly better accuracy, cleaner construction, more elegant circuitry, or enhanced visual appeal. Given the Substack domain (lcamtuf), this is likely from a technical author sharing detailed build insights.
+
+### 更精致的电压表时钟
+
+* 根据标题推测，这篇文章可能介绍了一个改进或优化的电压表时钟设计。电压表时钟是一种创意 DIY 项目，将模拟电压表改造用于显示时间——通常用表针指向表盘上的小时、分钟，有时还包括秒数。
+
+* 这对喜欢电子项目、复古未来主义美学或创意硬件改造的读者可能很有吸引力。标题中的"更精致"暗示了相比以前设计的改进——可能是更高的精度、更简洁的构造、更优雅的电路设计，或更出色的视觉效果。考虑到这是 Substack 平台（lcamtuf），很可能来自一位技术作者分享详细的制作心得。
+
+**[Read Original / 阅读原文](https://lcamtuf.substack.com/p/a-nicer-voltmeter-clock)**
 
