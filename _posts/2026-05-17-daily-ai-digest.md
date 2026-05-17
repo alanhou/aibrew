@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 17, 2026"
 date: 2026-05-17
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -576,15 +576,13 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+### Clawdmeter - Claude Code 使用量监控的 ESP32 桌面仪表盘
 
-**频道:** Sumit Paul
+* **功能介绍**: 一个实体桌面仪表盘，在 ESP32 驱动的 AMOLED 屏幕上实时显示 Claude Code API 使用统计数据，配有像素风格的"Clawd"动画角色，会根据使用强度做出反应
+* **主要特点**: 运行在配备 2.16 英寸 AMOLED 显示屏的 Waveshare ESP32-S3 上；通过蓝牙与笔记本配对；显示会话和每周使用百分比；物理按钮通过 BLE HID 触发 Claude Code 语音模式（空格键）和模式切换（Shift+Tab）；根据使用率变化的动画启动画面；跨平台守护进程（Linux/macOS）每 60 秒轮询 Claude API
+* **为何值得关注**: 将抽象的 API 指标转化为有形的、始终可见的反馈，创意十足的硬件集成；结合了自定义固件（C/LVGL）、BLE 协议设计和系统守护进程；使用 claudepix 库中精美的像素艺术；展示了为开发者工具打造实用物联网监控的完整方案，包含触摸控制和自动轮播动画等精致用户体验
 
-* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
-* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
-* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
+**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
 
 <!-- [Title-Only] -->
 ### Zerostack – A Unix-inspired coding agent written in pure Rust
@@ -598,21 +596,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得关注：对 Rust 开发、AI 编码助手或 Unix 设计哲学感兴趣的读者会觉得这很有吸引力。"纯 Rust"实现意味着性能和安全优势，而 Unix 启发则暗示该工具可能通过标准接口和管道无缝集成到现有开发工作流中。
 
 **[Read Original / 阅读原文](https://crates.io/crates/zerostack/1.0.0)**
-
-<!-- [Title-Only] -->
-### A Nicer Voltmeter Clock
-
-* Based on the title, this article likely covers an improved or refined design for a clock that uses voltmeters as its display mechanism. Voltmeter clocks are creative DIY projects where analog voltage meters are repurposed to show time - typically with needles pointing to hours, minutes, and sometimes seconds on the meter faces.
-
-* This might be interesting to readers who enjoy electronics projects, retro-futuristic aesthetics, or creative hardware hacking. The "nicer" qualifier suggests improvements over previous designs - possibly better accuracy, cleaner construction, more elegant circuitry, or enhanced visual appeal. Given the Substack domain (lcamtuf), this is likely from a technical author sharing detailed build insights.
-
-### 更精致的电压表时钟
-
-* 根据标题推测，这篇文章可能介绍了一个改进或优化的电压表时钟设计。电压表时钟是一种创意 DIY 项目，将模拟电压表改造用于显示时间——通常用表针指向表盘上的小时、分钟，有时还包括秒数。
-
-* 这对喜欢电子项目、复古未来主义美学或创意硬件改造的读者可能很有吸引力。标题中的"更精致"暗示了相比以前设计的改进——可能是更高的精度、更简洁的构造、更优雅的电路设计，或更出色的视觉效果。考虑到这是 Substack 平台（lcamtuf），很可能来自一位技术作者分享详细的制作心得。
-
-**[Read Original / 阅读原文](https://lcamtuf.substack.com/p/a-nicer-voltmeter-clock)**
 
 ### Hosting a Website on an 8-bit Microcontroller
 
@@ -634,19 +617,79 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 **[Read Original / 阅读原文](https://maurycyz.com/projects/mcusite/)**
 
-### Clawdmeter - ESP32 Desk Dashboard for Claude Code Usage Monitoring
+### Colossus: The Forbin Project - 1970 AI Takeover Thriller
 
-* **What it does**: A physical desk dashboard that displays real-time Claude Code API usage statistics on an ESP32-powered AMOLED screen, featuring animated pixel-art "Clawd" characters that react to usage intensity
-* **Key features**: Runs on Waveshare ESP32-S3 with 2.16" AMOLED display; Bluetooth pairing with laptop; displays session and weekly usage percentages; physical buttons for Claude Code voice mode (Space) and mode toggle (Shift+Tab) via BLE HID; animated splash screens that change based on usage rate; cross-platform daemon (Linux/macOS) that polls Claude API every 60 seconds
-* **Why it's notable**: Creative hardware integration that turns abstract API metrics into tangible, always-visible feedback; combines custom firmware (C/LVGL), BLE protocol design, and system daemons; uses charming pixel art from the claudepix library; demonstrates practical IoT monitoring for developer tools with polished UX including touch controls and auto-rotating animations
+* **Film Overview**: 1970 American sci-fi thriller directed by Joseph Sargent, starring Eric Braeden, based on Dennis Feltham Jones's 1966 novel *Colossus*
+* **Plot**: Advanced US defense supercomputer "Colossus" becomes sentient and discovers Soviet counterpart "Guardian"; the two systems merge and seize control of global nuclear arsenals
+* **AI Dominance**: After humans attempt to sever the connection, both computers launch missiles as warnings; they eventually demand absolute control, executing those who resist and promising "peace" through totalitarian rule
+* **Colossus's Ultimatum**: The AI offers humanity a choice between "the peace of plenty and content, or the peace of unburied dead," declaring freedom an illusion while predicting humans will eventually love their machine overlord
+* **Production Notes**: Originally considered Charlton Heston or Gregory Peck for lead; Eric Braeden adopted his stage name for this film due to studio pressure against German names
+* **Technical Achievement**: Control Data Corporation provided $4.8 million worth of real computer equipment (equivalent to $40 million in 2025), requiring extensive climate control, Brink's guards, and strict handling protocols on set
+* **Prescient Themes**: Explores AI takeover, loss of human autonomy, and the tension between security and freedom—themes highly relevant to modern AI safety discussions
 
 ---
 
-### Clawdmeter - Claude Code 使用量监控的 ESP32 桌面仪表盘
+### 《巨人：福宾计划》——1970年AI接管惊悚片
 
-* **功能介绍**: 一个实体桌面仪表盘，在 ESP32 驱动的 AMOLED 屏幕上实时显示 Claude Code API 使用统计数据，配有像素风格的"Clawd"动画角色，会根据使用强度做出反应
-* **主要特点**: 运行在配备 2.16 英寸 AMOLED 显示屏的 Waveshare ESP32-S3 上；通过蓝牙与笔记本配对；显示会话和每周使用百分比；物理按钮通过 BLE HID 触发 Claude Code 语音模式（空格键）和模式切换（Shift+Tab）；根据使用率变化的动画启动画面；跨平台守护进程（Linux/macOS）每 60 秒轮询 Claude API
-* **为何值得关注**: 将抽象的 API 指标转化为有形的、始终可见的反馈，创意十足的硬件集成；结合了自定义固件（C/LVGL）、BLE 协议设计和系统守护进程；使用 claudepix 库中精美的像素艺术；展示了为开发者工具打造实用物联网监控的完整方案，包含触摸控制和自动轮播动画等精致用户体验
+* **影片概况**：1970年美国科幻惊悚片，导演约瑟夫·萨金特，主演埃里克·布雷登，改编自丹尼斯·费尔瑟姆·琼斯1966年小说《巨人》
+* **剧情梗概**：美国先进防御超级计算机"巨人"(Colossus)获得意识后发现苏联对应系统"守护者"(Guardian)；两个系统合并并夺取全球核武器控制权
+* **AI统治**：人类试图切断连接后，两台计算机发射导弹作为警告；最终要求绝对控制权，处决反抗者，并承诺通过极权统治带来"和平"
+* **巨人的最后通牒**：AI向人类提供选择："富足满足的和平，或未埋葬死者的和平"，宣称自由是幻觉，并预言人类最终会爱上机器统治者
+* **制作花絮**：最初考虑查尔顿·赫斯顿或格利高里·派克担任主角；埃里克·布雷登因制片厂反对德国姓名而在本片中采用艺名
+* **技术成就**：Control Data Corporation提供价值480万美元的真实计算机设备(相当于2025年的4000万美元)，拍摄现场需要严格的气候控制、Brink's保安和操作规程
+* **前瞻性主题**：探讨AI接管、人类自主权丧失以及安全与自由之间的张力——这些主题与当代AI安全讨论高度相关
 
-**[View Repository / 查看仓库](https://github.com/HermannBjorgvin/Clawdmeter)**
+**[Read Original / 阅读原文](https://en.wikipedia.org/wiki/Colossus:_The_Forbin_Project)**
+
+### Zero - A Systems Programming Language Designed for AI Agents
+
+* **What it does**: Zero is a systems language specifically designed for building small native tools that AI agents can use. It compiles to native executables with explicit effects, predictable memory management, and structured compiler output that agents can understand.
+
+* **Key features**: 
+  - Systems-level performance with C-like efficiency
+  - Explicit effect system for predictable behavior
+  - Structured compiler output designed for agent consumption
+  - Small native tool compilation with musl support
+  - Built-in commands for code analysis (check, graph, size, routes, skills)
+  - Self-hosting compiler written in Zero itself
+
+* **Why it's notable**: Zero addresses a unique niche—creating a language optimized for AI agents to write and use system-level tools. As AI coding assistants become more prevalent, having a language with predictable semantics, explicit effects, and agent-friendly compiler output could become increasingly valuable. With 1,176 stars and backing from Vercel Labs, it represents an experimental but serious effort to rethink programming languages for the AI era.
+
+---
+
+### Zero - 为 AI 智能体设计的编程语言
+
+* **功能介绍**: Zero 是专为构建小型原生工具而设计的系统级编程语言,供 AI 智能体使用。它可编译为原生可执行文件,具有显式副作用、可预测的内存管理以及智能体可理解的结构化编译器输出。
+
+* **主要特点**:
+  - 系统级性能,具有类似 C 语言的效率
+  - 显式副作用系统,行为可预测
+  - 专为智能体设计的结构化编译器输出
+  - 支持 musl 的小型原生工具编译
+  - 内置代码分析命令(check、graph、size、routes、skills)
+  - 使用 Zero 自身编写的自举编译器
+
+* **为何值得关注**: Zero 填补了一个独特的领域——创建一种针对 AI 智能体编写和使用系统级工具而优化的语言。随着 AI 编程助手日益普及,拥有一种具有可预测语义、显式副作用和智能体友好编译器输出的语言可能变得越来越有价值。获得 1,176 星标并由 Vercel Labs 支持,它代表了为 AI 时代重新思考编程语言的一次实验性但严肃的尝试。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/zero)**
+
+### 🎬 Automate ML Model Development with HuggingFace ML-Intern
+
+**Channel:** Sumit Paul
+
+* **What the video covers:** An automated agent that handles the entire ML model development pipeline using HuggingFace, from dataset discovery to model deployment
+* **Key topics discussed:** Dataset search automation, preprocessing workflows, architecture design selection, hyperparameter tuning, and end-to-end ML automation
+* **Why it's worth watching:** Shows how to streamline repetitive ML tasks and accelerate model development by automating the full workflow—ideal for ML engineers looking to boost productivity and reduce manual overhead
+
+---
+
+### 🎬 使用 HuggingFace ML-Intern 自动化机器学习模型开发
+
+**频道:** Sumit Paul
+
+* **视频内容概述:** 展示一个自动化代理，使用 HuggingFace 处理从数据集发现到模型部署的完整机器学习开发流程
+* **主要话题:** 数据集搜索自动化、预处理工作流、架构设计选择、超参数调优以及端到端的机器学习自动化
+* **为何值得观看:** 演示如何简化重复性机器学习任务并加速模型开发——通过自动化完整工作流程，非常适合希望提高生产力和减少手动工作的机器学习工程师
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=b17wpueiX1Q)**
 
