@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 18, 2026"
 date: 2026-05-18
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，11个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -699,4 +699,181 @@ pin: false
 * **为何值得观看:** 如果你正在使用 Claude 进行开发或对 AI 编程助手感兴趣，这个视频展示了智能体仪表板如何让你更好地控制和理解 AI 在幕后的操作——这对于调试、学习和信任 AI 生成的代码至关重要。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZAaxx3qyT8g)**
+
+<!-- [Title-Only] -->
+### The Foundations of a Provably Secure Operating System (PSOS) (1979)
+
+* Based on the title, this article likely covers the theoretical and architectural foundations of PSOS, an early research project aimed at building an operating system with mathematically provable security properties. It probably discusses formal verification methods, security models, and the design principles needed to create an OS where security guarantees can be formally proven rather than just tested.
+* Why it might be interesting: This 1979 paper represents pioneering work in formal methods and secure systems design. It's historically significant as one of the earliest attempts to apply mathematical rigor to OS security, predating modern verified systems like seL4. Readers interested in security engineering, formal verification, or the history of computer science will find valuable insights into how foundational security concepts were developed decades ago.
+
+---
+
+### 可证明安全操作系统（PSOS）的基础（1979）
+
+* 根据标题推测，这篇文章可能介绍了 PSOS 的理论和架构基础，这是一个早期研究项目，旨在构建具有数学可证明安全属性的操作系统。文章可能讨论了形式化验证方法、安全模型，以及创建一个安全性可以被形式化证明（而非仅仅测试）的操作系统所需的设计原则。
+* 为何值得关注：这篇 1979 年的论文代表了形式化方法和安全系统设计领域的开创性工作。作为最早将数学严谨性应用于操作系统安全的尝试之一，它具有重要的历史意义，比现代的验证系统（如 seL4）早了数十年。对安全工程、形式化验证或计算机科学历史感兴趣的读者，可以从中了解到几十年前如何发展基础安全概念的宝贵见解。
+
+**[Read Original / 阅读原文](http://www.csl.sri.com/users/neumann/psos.pdf)**
+
+### The Global Fertility Crisis: A Demographic Turning Point
+
+* **Historic milestone**: 2023 marked the first year in human history when global fertility rates fell below replacement level (2.1 children per woman)
+* **Widespread decline**: Fertility rates have dropped below replacement in nearly all of North America, South America, Europe, and Southern/Eastern Asia
+* **Surprising epicenters**: Tokyo has higher fertility than Mexico City or Bogotá; Europe exceeds Thailand; China may already be lower than Japan
+* **Dramatic misses**: UN predicted 350,000 births in South Korea for 2023; actual figure was 230,000—a 50% error
+* **China's shift**: Young Chinese women with "no desire for children" surged from 5% (2012) to 47% (2023)
+* **Competing explanations**: Technology and social media versus existential anxiety about climate, housing costs, and political instability
+* **Long-term context**: Decline reflects positive developments (lower child mortality, women's education, contraception access) alongside modern challenges
+* **Momentum effect**: Global population continues growing temporarily due to demographic momentum, but "peak child" may already be behind us
+* **Compounding impact**: At current rates, Thailand's population could theoretically decline from 63 million to 2 million over 200 years without immigration
+* **Expert perspective**: Economist Jesús Fernández-Villaverde argues fertility and AI are the only two truly important issues of our time
+
+### 全球生育危机：人口转折点
+
+* **历史性里程碑**：2023年是人类历史上首次全球生育率低于更替水平（每名女性2.1个孩子）
+* **普遍下降**：北美、南美、欧洲和东亚、南亚几乎所有国家的生育率都低于更替水平
+* **令人意外的重灾区**：东京生育率高于墨西哥城或波哥大；欧洲超过泰国；中国可能已低于日本
+* **预测严重失准**：联合国预测韩国2023年将有35万新生儿；实际仅23万——误差达50%
+* **中国的转变**：中国年轻女性"不想要孩子"的比例从2012年的5%飙升至2023年的47%
+* **原因争论**：科技和社交媒体的影响 vs 对气候、房价和政治不稳定的存在焦虑
+* **长期背景**：下降反映了积极发展（儿童死亡率降低、女性教育、避孕普及）和现代挑战
+* **人口惯性效应**：由于人口惯性，全球人口暂时继续增长，但"儿童峰值"可能已经过去
+* **复合影响**：按当前速度，泰国人口理论上可能在200年内从6300万降至200万（无移民情况下）
+* **专家观点**：经济学家赫苏斯·费尔南德斯-比利亚韦德认为生育率和人工智能是当今唯一真正重要的两个议题
+
+**[Read Original / 阅读原文](https://www.derekthompson.org/p/why-the-whole-world-stopped-having)**
+
+### There Is No 'Hard Problem Of Consciousness'
+
+* Theoretical physicist Carlo Rovelli argues that consciousness is not fundamentally mysterious, but rather a complex natural phenomenon like thunderstorms or protein folding that we don't yet fully understand
+* The "hard problem of consciousness" proposed by philosopher David Chalmers in 1994 claims there's an unbridgeable "explanatory gap" between brain processes and subjective experience
+* Rovelli contends this supposed gap stems from outdated dualistic thinking that separates mind from matter, similar to historical resistance against Darwin's evolution or the idea that Earth and heaven share the same nature
+* He argues that scientific understanding is inherently experiential and perspectival—we observe the world from within it, not from outside, making the subject-object divide artificial
+* The concept of "philosophical zombies" (beings that behave like humans but lack consciousness) is dismissed as a rhetorical trick that assumes dualism upfront
+* Rovelli suggests consciousness and subjective experience are simply names for brain processes viewed from different perspectives—first-person versus third-person—not evidence of separate realities
+* The article frames the consciousness debate as cultural resistance to accepting that our "soul" or inner life is part of the natural world, not a transcendent spiritual entity
+
+### 意识的"困难问题"并不存在
+
+* 理论物理学家卡洛·罗韦利认为，意识并非根本性的神秘现象，而是像雷暴或蛋白质折叠一样复杂但尚未完全理解的自然现象
+* 哲学家大卫·查尔默斯于1994年提出的意识"困难问题"声称，大脑过程与主观体验之间存在无法跨越的"解释鸿沟"
+* 罗韦利认为这种所谓的鸿沟源于过时的二元论思维，将心灵与物质分离，类似于历史上对达尔文进化论或天地同质观念的抵制
+* 他主张科学理解本质上是经验性和视角性的——我们从世界内部观察世界，而非从外部，这使得主客体分离变得人为
+* "哲学僵尸"概念（行为像人类但缺乏意识的存在）被驳斥为预设二元论的修辞技巧
+* 罗韦利认为意识和主观体验只是从不同视角（第一人称与第三人称）观察大脑过程的名称，而非独立现实的证据
+* 文章将意识辩论框定为文化抵制，即抗拒接受我们的"灵魂"或内在生活是自然世界的一部分，而非超越性的精神实体
+
+**[Read Original / 阅读原文](https://www.noemamag.com/there-is-no-hard-problem-of-consciousness/)**
+
+### Academic Research Skills for Claude Code - AI-Powered Academic Writing Pipeline
+
+* **What it does**: A comprehensive Claude Code plugin that automates the academic research workflow from literature review through peer review to final publication, handling citation verification, formatting, and quality checks while keeping humans in control of critical decisions.
+
+* **Key features**: 
+  - 13-agent deep research team with PRISMA systematic review and Semantic Scholar API verification
+  - 12-agent paper writing with style calibration, LaTeX formatting, and anti-hallucination safeguards
+  - 7-agent multi-perspective peer review system with 0-100 quality rubrics
+  - 10-stage pipeline with integrity gates that catch fabricated citations, statistical errors, and AI research failure modes
+  - Claim-level citation audit (v3.8) that verifies every reference actually supports the claim it's cited for
+  - Material Passport system for reproducibility documentation
+
+* **Why it's notable**: Addresses the citation hallucination crisis documented by Zhao et al. (146,932 hallucinated citations in 2025 alone) with trust-chain provenance tracking and locator infrastructure. Takes a human-in-the-loop approach inspired by Nature's "The AI Scientist" paper, explicitly avoiding the failure modes of fully autonomous AI research. Real-world showcase demonstrates catching 15 fabricated references and 3 statistical errors before publication. Installs in 30 seconds via Claude Code plugin marketplace.
+
+---
+
+### Academic Research Skills for Claude Code - AI 驱动的学术写作流程工具
+
+* **功能介绍**: 一个全面的 Claude Code 插件，自动化学术研究工作流程，从文献综述到同行评审再到最终发表，处理引用验证、格式化和质量检查，同时让人类掌控关键决策。
+
+* **主要特点**:
+  - 13 个智能体组成的深度研究团队，支持 PRISMA 系统综述和 Semantic Scholar API 验证
+  - 12 个智能体的论文写作系统，具备风格校准、LaTeX 格式化和防幻觉保护措施
+  - 7 个智能体的多视角同行评审系统，采用 0-100 质量评分标准
+  - 10 阶段流程管道，配备完整性检查点，可捕获虚假引用、统计错误和 AI 研究失败模式
+  - 声明级引用审计功能（v3.8），验证每个参考文献是否真正支持其所引用的论点
+  - 材料护照系统用于可重现性文档记录
+
+* **为何值得关注**: 针对 Zhao 等人记录的引用幻觉危机（仅 2025 年就有 146,932 条虚假引用）提供解决方案，通过信任链溯源追踪和定位器基础设施进行防范。采用受 Nature《The AI Scientist》论文启发的人机协作方法，明确避免全自动 AI 研究的失败模式。真实案例展示在发表前成功捕获 15 条虚假引用和 3 个统计错误。通过 Claude Code 插件市场 30 秒即可完成安装。
+
+**[View Repository / 查看仓库](https://github.com/Imbad0202/academic-research-skills)**
+
+### Scientific Agent Skills - Comprehensive AI Research Assistant Toolkit
+
+* **What it does**: A collection of 135 ready-to-use skills that transform AI coding agents (Cursor, Claude Code, Codex) into powerful research assistants. Provides curated access to 100+ scientific databases, 70+ optimized Python packages, and specialized tools for executing complex multi-step scientific workflows across biology, chemistry, medicine, physics, and more.
+
+* **Key features**: 
+  - Unified access to 78+ public databases (PubChem, ChEMBL, UniProt, COSMIC, ClinicalTrials.gov) plus specialized data sources
+  - Pre-documented skills for scientific Python packages (RDKit, Scanpy, PyTorch Lightning, BioPython, OpenMM, scVelo)
+  - Covers 17+ scientific domains: genomics, drug discovery, proteomics, clinical research, medical imaging, materials science, geospatial analysis
+  - Includes research communication tools (literature review, scientific writing, grant writing)
+  - Works with any AI agent supporting the open Agent Skills standard
+  - Simple installation via `npx skills add` command
+
+* **Why it's notable**: Bridges the gap between AI coding agents and specialized scientific computing by providing production-ready, tested code examples and comprehensive documentation. Eliminates days of API research and integration work, enabling researchers to execute complex scientific pipelines with simple prompts. The 762 stars today reflect strong demand for accessible AI-powered research tools that work across multiple platforms.
+
+---
+
+### Scientific Agent Skills - 综合 AI 科研助手工具包
+
+* **功能介绍**: 包含 135 个即用型技能的集合,可将 AI 编程助手(Cursor、Claude Code、Codex)转变为强大的科研助手。提供对 100+ 科学数据库、70+ 优化 Python 包的精选访问,以及跨生物学、化学、医学、物理等领域执行复杂多步骤科学工作流的专业工具。
+
+* **主要特点**:
+  - 统一访问 78+ 公共数据库(PubChem、ChEMBL、UniProt、COSMIC、ClinicalTrials.gov)及专业数据源
+  - 为科学 Python 包(RDKit、Scanpy、PyTorch Lightning、BioPython、OpenMM、scVelo)提供预文档化技能
+  - 覆盖 17+ 科学领域:基因组学、药物发现、蛋白质组学、临床研究、医学影像、材料科学、地理空间分析
+  - 包含科研交流工具(文献综述、科学写作、基金申请)
+  - 兼容所有支持开放 Agent Skills 标准的 AI 助手
+  - 通过 `npx skills add` 命令简单安装
+
+* **为何值得关注**: 通过提供生产就绪、经过测试的代码示例和全面文档,弥合了 AI 编程助手与专业科学计算之间的鸿沟。省去数天的 API 研究和集成工作,使研究人员能够通过简单提示执行复杂科学流程。今日获得 762 星标反映了对跨平台 AI 驱动科研工具的强劲需求。
+
+**[View Repository / 查看仓库](https://github.com/K-Dense-AI/scientific-agent-skills)**
+
+### Supertonic - Lightning-Fast, On-Device, Multilingual TTS via ONNX
+
+* **What it does**: Supertonic is a text-to-speech system that runs entirely on your device using ONNX Runtime, supporting 31 languages with zero cloud dependency. It converts text to high-quality 44.1kHz audio locally on desktop, mobile, browsers, and edge devices like Raspberry Pi.
+
+* **Key features**: 
+  - Blazingly fast real-time synthesis with a compact 99M-parameter model (much smaller than typical 0.7B-2B TTS systems)
+  - 31-language multilingual support with language-agnostic mode (`lang="na"`)
+  - 10 inline expression tags (`<laugh>`, `<breath>`, `<sigh>`) for natural speech
+  - Multi-runtime SDKs: Python, Node.js, Browser (WebGPU), Java, C++, C#, Go, Swift, iOS, Rust, Flutter
+  - Voice Builder for custom voice cloning with permanent ownership
+  - Local HTTP server with OpenAI-compatible `/v1/audio/speech` endpoint
+
+* **Why it's notable**: Achieves production-grade TTS quality with complete privacy and no GPU requirement, running fast enough to convert entire webpages to audio in under a second. The open-weight model and edge-device readiness make it ideal for privacy-sensitive applications, offline use cases, and resource-constrained environments. Recently released Supertonic 3 with expanded language support and improved accuracy.
+
+---
+
+### Supertonic - 基于 ONNX 的超快速端侧多语言 TTS
+
+* **功能介绍**: Supertonic 是一个完全在本地设备上运行的文本转语音系统,通过 ONNX Runtime 实现,支持 31 种语言,无需云端依赖。可在桌面、移动端、浏览器和树莓派等边缘设备上将文本转换为高质量 44.1kHz 音频。
+
+* **主要特点**:
+  - 采用紧凑的 9900 万参数模型实现超快实时合成(远小于常见的 7 亿-20 亿参数 TTS 系统)
+  - 支持 31 种语言的多语言合成,提供语言无关模式(`lang="na"`)
+  - 10 种内联表情标签(`<laugh>`、`<breath>`、`<sigh>`)实现自然语音表达
+  - 多运行时 SDK:Python、Node.js、浏览器(WebGPU)、Java、C++、C#、Go、Swift、iOS、Rust、Flutter
+  - Voice Builder 支持自定义声音克隆并永久拥有
+  - 本地 HTTP 服务器,兼容 OpenAI 的 `/v1/audio/speech` 接口
+
+* **为何值得关注**: 在完全保护隐私且无需 GPU 的情况下实现生产级 TTS 质量,速度快到可在一秒内将整个网页转换为音频。开放权重模型和边缘设备就绪特性使其非常适合隐私敏感应用、离线场景和资源受限环境。最近发布的 Supertonic 3 扩展了语言支持并提升了准确性。
+
+**[View Repository / 查看仓库](https://github.com/supertone-inc/supertonic)**
+
+### 🎬 Claude Code FREE UNLIMITED 2026 🤯 (No Ollama, No GPU, No Nvidia Nim)
+**Channel:** AI with Hassan
+
+* What the video covers: A tutorial on setting up Claude Code (likely Claude-powered coding assistant) completely free with unlimited usage, without requiring local GPU resources, Ollama installation, or Nvidia NIM
+* Key topics discussed: Free setup method for Claude Code, workarounds for hardware limitations, step-by-step configuration guide available on GitHub
+* Why it's worth watching: Provides a cost-effective solution for developers who want to use advanced AI coding assistance without expensive hardware or API costs, particularly valuable for those without access to high-end GPUs
+
+### 🎬 Claude Code 免费无限使用 2026 🤯 (无需 Ollama、GPU 或 Nvidia Nim)
+**频道:** AI with Hassan
+
+* 视频内容概述: 教程演示如何完全免费且无限制地设置 Claude Code(可能是 Claude 驱动的编码助手),无需本地 GPU 资源、Ollama 安装或 Nvidia NIM
+* 主要话题: Claude Code 的免费设置方法、硬件限制的解决方案、GitHub 上提供的分步配置指南
+* 为何值得观看: 为开发者提供经济实惠的解决方案,无需昂贵的硬件或 API 费用即可使用先进的 AI 编码辅助工具,特别适合没有高端 GPU 的用户
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Rssu7r8ANik)**
 
