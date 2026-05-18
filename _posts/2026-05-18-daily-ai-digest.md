@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 18, 2026"
 date: 2026-05-18
-description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -505,36 +505,6 @@ pin: false
 
 ---
 
-### GenCAD：基于图像条件的参数化 CAD 生成模型
-
-* **核心创新**：GenCAD 从图像生成完整的参数化 CAD 命令序列（CAD 程序），而非仅生成 3D 几何体，实现完全可编辑性和可制造性
-* **解决的问题**：传统 AI 方法使用网格、体素或点云表示，牺牲了工程任务和制造所需的精度和可修改性
-* **四阶段架构**：
-  * 自回归 Transformer 编码器学习 CAD 命令序列的潜在表示
-  * 对比学习模型对齐 CAD 命令与 CAD 图像之间的联合表示
-  * 潜在扩散模型根据输入图像生成 CAD 命令潜在表示
-  * 解码器将潜在表示转换回参数化 CAD 命令序列
-* **关键优势**：输出真正的参数化 CAD 程序，可通过几何内核转换为 3D 实体，保留设计意图并支持设计空间探索
-* **影响意义**：通过从图像提供精确、可修改的 3D 建模（而非固定几何表示），推进自动化设计流程
-
-**[Read Original / 阅读原文](https://gencad.github.io/)**
-
-<!-- [Title-Only] -->
-### Ask an Astronaut: 333 hours of Q&A footage with astronauts
-
-**Based on the title, this article likely covers:**
-* A collection or archive of 333 hours of question-and-answer sessions with astronauts, possibly from various space missions or public outreach events
-* The content may be organized or searchable, allowing people to explore astronauts' responses to public questions about space travel, life in orbit, and their experiences
-* Could be part of the "ISS in Real Time" project, suggesting it focuses on International Space Station astronauts
-
-**Why it might be interesting to readers:**
-* Provides unprecedented access to firsthand accounts from people who have actually been to space
-* 333 hours represents a massive archive of space knowledge and personal experiences that would typically be scattered across different sources
-* Offers insights into both technical aspects of spaceflight and the human experience of living and working in space
-* Valuable educational resource for anyone curious about space exploration
-
----
-
 ### 问问宇航员：333小时宇航员问答视频资料
 
 **根据标题推测的文章内容简介：**
@@ -593,4 +563,140 @@ pin: false
 * **为何值得关注**: 填补了"模型提议操作"与"安全生产执行"之间的关键空白,采用严格的运行框架优先方法。提供具体蓝图而非模糊的最佳实践,强调智能体需要超越提示词的运行时规范——验证、授权、结构化观察和预算控制。724 星标反映出业界日益认识到生产级智能体需要围绕模型的工程严谨性,而不仅仅是更好的提示词。
 
 **[View Repository / 查看仓库](https://github.com/DenisSergeevitch/agents-best-practices)**
+
+### GenCAD: Image-Conditional Parametric CAD Generation Model
+
+* **Core Innovation**: GenCAD generates complete parametric CAD command sequences (CAD programs) from images, not just 3D geometry, enabling full editability and manufacturability
+* **Problem Addressed**: Traditional AI approaches use meshes, voxels, or point clouds that sacrifice the accuracy and modifiability critical for engineering tasks and manufacturing
+* **Four-Stage Architecture**:
+  * Autoregressive transformer encoder learns latent representations of CAD command sequences
+  * Contrastive learning model aligns joint representations between CAD commands and CAD images
+  * Latent diffusion model generates CAD command latent representations conditioned on input images
+  * Decoder converts latent representations back into parametric CAD command sequences
+* **Key Advantage**: Outputs true parametric CAD programs that can be converted to 3D solids via geometry kernels, preserving design intent and enabling design space exploration
+* **Impact**: Advances automated design processes by providing precise, modifiable 3D modeling from images while maintaining engineering-grade accuracy
+
+---
+
+### GenCAD：基于图像条件的参数化 CAD 生成模型
+
+* **核心创新**：GenCAD 从图像生成完整的参数化 CAD 命令序列（CAD 程序），而不仅仅是 3D 几何体，实现完全可编辑性和可制造性
+* **解决的问题**：传统 AI 方法使用网格、体素或点云表示，牺牲了工程任务和制造所需的精度和可修改性
+* **四阶段架构**：
+  * 自回归 Transformer 编码器学习 CAD 命令序列的潜在表示
+  * 对比学习模型对齐 CAD 命令和 CAD 图像之间的联合表示
+  * 潜在扩散模型根据输入图像生成 CAD 命令的潜在表示
+  * 解码器将潜在表示转换回参数化 CAD 命令序列
+* **关键优势**：输出真正的参数化 CAD 程序，可通过几何内核转换为 3D 实体，保留设计意图并支持设计空间探索
+* **影响意义**：通过从图像提供精确、可修改的 3D 建模来推进自动化设计流程，同时保持工程级精度
+
+**[Read Original / 阅读原文](https://gencad.github.io/)**
+
+### Strange Crystals Found Inside Trinity Nuclear Test Wreckage
+
+* Scientists discovered a new type of clathrate crystal inside trinitite, the glasslike material formed from melted sand after the 1945 Trinity nuclear bomb test in New Mexico
+* The clathrate has a cagelike chemical structure made of 12-sided and 14-sided silicon atom formations that trap calcium, copper, and iron atoms inside
+* This unique material formed under extreme conditions: temperatures above 1,500°C and pressures tens of thousands of times normal atmospheric pressure, all within seconds
+* The same trinitite sample previously yielded a quasicrystal in 2021—another rare form of matter with ordered but non-repeating atomic patterns
+* Both the clathrate and quasicrystal contain the same four elements (iron, silicon, copper, calcium) but formed in areas with different copper availability
+* These discoveries demonstrate how extreme energy events like nuclear detonations, lightning strikes, and asteroid impacts create materials that cannot yet be replicated in laboratories
+* The research was published in *Proceedings of the National Academy of Sciences USA* on May 11
+
+### 三位一体核试验残骸中发现奇异晶体
+
+* 科学家在三位一体石（trinitite）中发现了一种新型笼形晶体（clathrate）——这是1945年新墨西哥州三位一体核弹试验后由熔化沙子形成的玻璃状物质
+* 该笼形晶体具有独特的化学结构，由12面和14面的硅原子构型组成，内部困住了钙、铜和铁原子
+* 这种独特材料在极端条件下形成：温度超过1500°C，压力是正常大气压的数万倍，整个过程仅在数秒内完成
+* 同一三位一体石样本在2021年还发现了准晶体——另一种罕见的物质形态，具有有序但不重复的原子排列模式
+* 笼形晶体和准晶体都含有相同的四种元素（铁、硅、铜、钙），但在铜元素可用性不同的区域形成
+* 这些发现表明，核爆炸、闪电和小行星撞击等极端能量事件能够创造出实验室尚无法复制的材料
+* 该研究于5月11日发表在《美国国家科学院院刊》上
+
+**[Read Original / 阅读原文](https://www.scientificamerican.com/article/strange-crystals-found-inside-wreckage-from-the-first-nuclear-bomb-test/)**
+
+### jank Now Has Its Own Custom IR
+
+* jank has developed a custom intermediate representation (IR) to optimize performance and compete with the JVM
+* Unlike LLVM IR, jank's IR operates at Clojure's semantic level, understanding vars, transients, persistent data structures, and lazy sequences
+* The IR is SSA-based (single static assignment) and represented as a control flow graph (CFG) with basic blocks
+* This high-level IR is specifically tailored to jank rather than being a general-purpose VM, enabling language-specific optimizations
+* The IR is stored as C++ data structures but can be rendered to Clojure data for debugging and testing
+* jank's IR includes instructions for Clojure-specific operations like var dereferencing and dynamic function calls
+* This represents a significant shift from delegating optimization to LLVM, allowing jank to optimize compiled code more effectively
+* The IR design prioritizes Clojure semantics over portability, as jank is not building a general compiler platform
+* As far as known, no other Clojure dialects have implemented a custom IR at this semantic level
+
+### jank 现在拥有自己的自定义中间表示
+
+* jank 开发了自定义中间表示（IR）以优化性能并与 JVM 竞争
+* 与 LLVM IR 不同，jank 的 IR 在 Clojure 语义层面运行，理解 vars、transients、持久化数据结构和惰性序列
+* 该 IR 基于 SSA（单静态赋值）并表示为控制流图（CFG），包含基本块
+* 这个高级 IR 专门为 jank 定制，而非通用虚拟机，能够实现特定于语言的优化
+* IR 以 C++ 数据结构存储，但可以渲染为 Clojure 数据用于调试和测试
+* jank 的 IR 包含 Clojure 特定操作的指令，如 var 解引用和动态函数调用
+* 这标志着从将优化委托给 LLVM 的重大转变，使 jank 能够更有效地优化编译代码
+* IR 设计优先考虑 Clojure 语义而非可移植性，因为 jank 不是构建通用编译器平台
+* 据了解，没有其他 Clojure 方言在这个语义层面实现过自定义 IR
+
+**[Read Original / 阅读原文](https://jank-lang.org/blog/2026-05-08-optimization/)**
+
+### VGGT-Omega - Multi-View 3D Vision Foundation Model
+
+* **What it does**: VGGT-Omega is a foundation model that jointly predicts camera poses, depth maps, and 3D scene structure from multiple input images or video frames. It processes collections of images to reconstruct camera parameters (extrinsics and intrinsics), dense depth, and confidence maps in a single forward pass.
+
+* **Key features**: 
+  - Handles 1-500+ frames with scalable GPU memory usage (6-43GB on A100)
+  - Two model variants: 512px resolution base model and 256px text-aligned version
+  - Outputs camera poses, depth maps, confidence scores, and optional text alignment embeddings
+  - Includes interactive Gradio demo for visualization with point cloud and camera rendering
+  - Built by Meta AI and Oxford's Visual Geometry Group
+
+* **Why it's notable**: Accepted as an **Oral presentation at CVPR 2026** (top ~2% of submissions), representing cutting-edge research in multi-view geometry and 3D reconstruction. The model unifies multiple 3D vision tasks (structure-from-motion, depth estimation, camera calibration) into a single transformer-based architecture, with 830 stars indicating strong early community interest.
+
+---
+
+### VGGT-Omega - 多视图3D视觉基础模型
+
+* **功能介绍**: VGGT-Omega 是一个基础模型,可以从多张输入图像或视频帧中联合预测相机位姿、深度图和3D场景结构。它能够处理图像集合,在单次前向传播中重建相机参数(外参和内参)、密集深度图和置信度图。
+
+* **主要特点**:
+  - 支持1-500+帧处理,GPU显存占用可扩展(A100上6-43GB)
+  - 两个模型版本:512像素分辨率基础模型和256像素文本对齐版本
+  - 输出相机位姿、深度图、置信度分数和可选的文本对齐嵌入
+  - 包含交互式Gradio演示,可视化点云和相机渲染
+  - 由Meta AI和牛津大学视觉几何组联合开发
+
+* **为何值得关注**: 被 **CVPR 2026 接收为口头报告**(约占投稿的前2%),代表了多视图几何和3D重建领域的前沿研究。该模型将多个3D视觉任务(运动恢复结构、深度估计、相机标定)统一到单个基于Transformer的架构中,830个星标显示了社区的强烈早期关注。
+
+**[View Repository / 查看仓库](https://github.com/facebookresearch/vggt-omega)**
+
+### 🎬 Claude Code Just Got an Agent Dashboard
+**Channel:** Nate Herk | AI Automation
+
+* **What the video covers:** This video introduces the new Agent Dashboard feature in Claude Code (likely referring to Anthropic's Claude AI coding assistant), demonstrating how it enhances visibility into AI agent operations during development workflows.
+
+* **Key topics discussed:** 
+  - The new Agent Dashboard interface and its capabilities
+  - How the dashboard improves transparency in AI-assisted coding
+  - Practical demonstrations of monitoring agent actions in real-time
+  - Integration with existing Claude Code workflows
+
+* **Why it's worth watching:** If you're using Claude for development or interested in AI coding assistants, this video shows how the Agent Dashboard gives you better control and understanding of what the AI is doing behind the scenes—essential for debugging, learning, and trusting AI-generated code.
+
+---
+
+### 🎬 Claude Code 推出智能体仪表板
+**频道:** Nate Herk | AI Automation
+
+* **视频内容概述:** 本视频介绍了 Claude Code（可能指 Anthropic 的 Claude AI 编程助手）的全新智能体仪表板功能，展示了它如何增强开发工作流程中对 AI 智能体操作的可见性。
+
+* **主要话题:**
+  - 全新智能体仪表板界面及其功能
+  - 仪表板如何提高 AI 辅助编程的透明度
+  - 实时监控智能体操作的实际演示
+  - 与现有 Claude Code 工作流程的集成
+
+* **为何值得观看:** 如果你正在使用 Claude 进行开发或对 AI 编程助手感兴趣，这个视频展示了智能体仪表板如何让你更好地控制和理解 AI 在幕后的操作——这对于调试、学习和信任 AI 生成的代码至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZAaxx3qyT8g)**
 
