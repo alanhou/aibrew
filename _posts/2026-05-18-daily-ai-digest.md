@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 18, 2026"
 date: 2026-05-18
-description: "Today's digest: 4 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：4篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -490,4 +490,107 @@ pin: false
 * 为何值得观看: 为希望扩展构建能力和提升工作流效率的开发者提供实用见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
+
+### GenCAD: Image-Conditional Parametric CAD Generation Model
+
+* **Core Innovation**: GenCAD generates complete parametric CAD command sequences (CAD programs) from images, not just 3D geometry, enabling full editability and manufacturability
+* **Problem Addressed**: Traditional AI approaches use meshes, voxels, or point clouds that sacrifice the accuracy and modifiability critical for engineering tasks and manufacturing
+* **Four-Stage Architecture**:
+  * Autoregressive transformer encoder learns latent representations of CAD command sequences
+  * Contrastive learning model aligns joint representations between CAD commands and CAD images
+  * Latent diffusion model generates CAD command latents conditioned on input images
+  * Decoder converts latents back into parametric CAD command sequences
+* **Key Advantage**: Outputs true parametric CAD programs that can be converted to 3D solids via geometry kernels, preserving design intent and enabling design space exploration
+* **Impact**: Advances automated design processes by providing precise, modifiable 3D modeling from images rather than fixed geometric representations
+
+---
+
+### GenCAD：基于图像条件的参数化 CAD 生成模型
+
+* **核心创新**：GenCAD 从图像生成完整的参数化 CAD 命令序列（CAD 程序），而非仅生成 3D 几何体，实现完全可编辑性和可制造性
+* **解决的问题**：传统 AI 方法使用网格、体素或点云表示，牺牲了工程任务和制造所需的精度和可修改性
+* **四阶段架构**：
+  * 自回归 Transformer 编码器学习 CAD 命令序列的潜在表示
+  * 对比学习模型对齐 CAD 命令与 CAD 图像之间的联合表示
+  * 潜在扩散模型根据输入图像生成 CAD 命令潜在表示
+  * 解码器将潜在表示转换回参数化 CAD 命令序列
+* **关键优势**：输出真正的参数化 CAD 程序，可通过几何内核转换为 3D 实体，保留设计意图并支持设计空间探索
+* **影响意义**：通过从图像提供精确、可修改的 3D 建模（而非固定几何表示），推进自动化设计流程
+
+**[Read Original / 阅读原文](https://gencad.github.io/)**
+
+<!-- [Title-Only] -->
+### Ask an Astronaut: 333 hours of Q&A footage with astronauts
+
+**Based on the title, this article likely covers:**
+* A collection or archive of 333 hours of question-and-answer sessions with astronauts, possibly from various space missions or public outreach events
+* The content may be organized or searchable, allowing people to explore astronauts' responses to public questions about space travel, life in orbit, and their experiences
+* Could be part of the "ISS in Real Time" project, suggesting it focuses on International Space Station astronauts
+
+**Why it might be interesting to readers:**
+* Provides unprecedented access to firsthand accounts from people who have actually been to space
+* 333 hours represents a massive archive of space knowledge and personal experiences that would typically be scattered across different sources
+* Offers insights into both technical aspects of spaceflight and the human experience of living and working in space
+* Valuable educational resource for anyone curious about space exploration
+
+---
+
+### 问问宇航员：333小时宇航员问答视频资料
+
+**根据标题推测的文章内容简介：**
+* 一个包含333小时宇航员问答环节的合集或档案库，可能来自各种太空任务或公众科普活动
+* 内容可能经过整理或可搜索，让人们能够探索宇航员对公众提问的回答，涉及太空旅行、轨道生活及其个人经历
+* 可能是"ISS实时追踪"项目的一部分，表明重点关注国际空间站的宇航员
+
+**为何值得关注：**
+* 提供了前所未有的机会，直接了解真正去过太空的人的第一手资料
+* 333小时代表着海量的太空知识和个人经历档案，这些内容通常分散在不同来源中
+* 既能了解太空飞行的技术层面，也能感受在太空生活和工作的人性化体验
+* 对任何对太空探索感兴趣的人来说都是宝贵的教育资源
+
+**[Read Original / 阅读原文](https://askanastronaut.issinrealtime.org/)**
+
+### Prolog Coding Horror: Common Pitfalls and Best Practices
+
+* **Losing Solutions**: Prolog programs can be defective by reporting wrong answers or failing to report intended solutions—the latter is worse because wrong answers can be filtered, but missing solutions cannot be recovered
+* **Impure Constructs**: Using non-monotonic language constructs like `!/0` (cut), `(-&gt;)/2` (if-then), and `var/1` causes programs to lose solutions; use clean data structures, constraints like `dif/2`, and meta-predicates like `if_/3` instead
+* **Global State Modification**: Beginners often modify the global database with `assertz/1` and `retract/1`, creating implicit dependencies; use predicate arguments or semicontext notation to thread state explicitly
+* **Impure Output**: Printing answers directly to the terminal with `format/2` prevents reasoning about output and breaks relational generality; let the toplevel report solutions or use pure formatting with `format_//2`
+* **Low-Level Constructs**: Using outdated arithmetic predicates like `(is)/2`, `(=:=)/2`, and `(&gt;)/2` makes Prolog harder to teach and learn; use CLP(FD) constraints for declarative integer arithmetic instead
+* **Horror Factorial Example**: The traditional factorial implementation with cut and low-level arithmetic fails on the most general query `factorial(N, F)`, either returning only one solution or throwing instantiation errors
+* **Pure Solution**: Replacing low-level arithmetic with CLP(FD) constraints (`#&gt;`, `#=`) and removing cuts creates a truly relational program that works for all query modes, including generating all factorial pairs
+* **Key Recommendation**: Stay in the pure monotonic subset of Prolog, use declarative constructs, and rebel against outdated practices—not against modern improvements that make the language more general and maintainable
+
+### Prolog 编程恐怖：常见陷阱与最佳实践
+
+* **丢失解决方案**：Prolog 程序可能存在两种缺陷：报告错误答案或未能报告预期解决方案——后者更糟糕，因为错误答案可以过滤，但丢失的解决方案无法恢复
+* **不纯构造**：使用非单调语言构造如 `!/0`（cut）、`(-&gt;)/2`（if-then）和 `var/1` 会导致程序丢失解决方案；应使用干净的数据结构、约束如 `dif/2` 和元谓词如 `if_/3`
+* **全局状态修改**：初学者常用 `assertz/1` 和 `retract/1` 修改全局数据库，造成隐式依赖；应使用谓词参数或半上下文记法显式传递状态
+* **不纯输出**：用 `format/2` 直接打印答案到终端会阻碍对输出的推理并破坏关系的通用性；应让顶层报告解决方案，或使用纯函数格式化如 `format_//2`
+* **低级构造**：使用过时的算术谓词如 `(is)/2`、`(=:=)/2` 和 `(&gt;)/2` 使 Prolog 更难教学和学习；应使用 CLP(FD) 约束实现声明式整数算术
+* **恐怖阶乘示例**：传统的带 cut 和低级算术的阶乘实现在最通用查询 `factorial(N, F)` 上失败，要么只返回一个解，要么抛出实例化错误
+* **纯函数解决方案**：用 CLP(FD) 约束（`#&gt;`、`#=`）替换低级算术并移除 cut，创建真正的关系型程序，适用于所有查询模式，包括生成所有阶乘对
+* **核心建议**：保持在 Prolog 的纯单调子集中，使用声明式构造，反抗过时的实践——而非反抗使语言更通用和可维护的现代改进
+
+**[Read Original / 阅读原文](https://www.metalevel.at/prolog/horror)**
+
+### agents-best-practices - Provider-Neutral Agent Harness Design Framework
+
+* **What it does**: A comprehensive skill/reference for designing production-ready agentic systems with proper runtime controls, tool permissions, and safety guardrails. Works across Codex, Claude Code, and other AI agents to generate MVP blueprints, audit existing agents, and design secure tool architectures.
+
+* **Key features**: Provider-neutral agentic loop design with typed tools and permission checks; planning mode with approval gates; context/memory management with auto-compaction; prompt caching optimization; observability, evals, and launch checklists; MCP and connector governance; works for coding, research, operations, finance, healthcare, and other domains.
+
+* **Why it's notable**: Addresses the critical gap between "model proposes actions" and "safe production execution" with a rigorous harness-first approach. Provides concrete blueprints rather than vague best practices, emphasizing that agents need runtime discipline beyond prompts—validation, authorization, structured observations, and budgets. The 724 stars reflect growing recognition that production agents require engineering rigor around the model, not just better prompts.
+
+---
+
+### agents-best-practices - 提供商中立的智能体运行框架设计
+
+* **功能介绍**: 为设计生产级智能体系统提供全面的技能参考,包含完善的运行时控制、工具权限和安全防护。适配 Codex、Claude Code 等多种 AI 智能体,可生成 MVP 蓝图、审计现有智能体、设计安全的工具架构。
+
+* **主要特点**: 提供商中立的智能体循环设计,包含类型化工具和权限检查;带审批门控的规划模式;支持自动压缩的上下文/内存管理;提示缓存优化;可观测性、评估和发布检查清单;MCP 和连接器治理;适用于编码、研究、运维、金融、医疗等多个领域。
+
+* **为何值得关注**: 填补了"模型提议操作"与"安全生产执行"之间的关键空白,采用严格的运行框架优先方法。提供具体蓝图而非模糊的最佳实践,强调智能体需要超越提示词的运行时规范——验证、授权、结构化观察和预算控制。724 星标反映出业界日益认识到生产级智能体需要围绕模型的工程严谨性,而不仅仅是更好的提示词。
+
+**[View Repository / 查看仓库](https://github.com/DenisSergeevitch/agents-best-practices)**
 
