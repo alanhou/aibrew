@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 18, 2026"
 date: 2026-05-18
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，11个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，11个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -876,4 +876,110 @@ pin: false
 * 为何值得观看: 为开发者提供经济实惠的解决方案,无需昂贵的硬件或 API 费用即可使用先进的 AI 编码辅助工具,特别适合没有高端 GPU 的用户
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Rssu7r8ANik)**
+
+### Files.md: A Simple, Local-First Markdown Note-Taking Application
+
+* **Core Philosophy**: Minimalist note-taking app built on plain `.md` files with local-first storage, designed for notes, documents, journals, checklists, and tasks
+* **Key Features**: Browser-based PWA requiring no installation, works offline, free and open source, extremely simple codebase that one person or an LLM can understand
+* **Synchronization Options**: Built-in sync server (single binary) or use existing cloud services (iCloud/Dropbox/Google Drive), plus Telegram chatbot for mobile access
+* **Knowledge Management Approach**: Rejects complex "Second Brain" systems in favor of simple note-taking with manual linking, emphasizing actual thinking over system-building
+* **Philosophy on Learning**: Warns against note-taking as procrastination—reading without action is entertainment; emotional healing requires emotional work, not intellectual note-taking
+* **Technical Design**: No build systems (just open `web/index.html`), portable architecture, predefined file structure, comprehensive hotkeys, and useful Go scripts for file management
+* **Development Principles**: Prioritize code simplicity and removal over addition, minimize dependencies, ensure junior developers can understand the code, maintain portability through plain `.md` files
+* **5-Year Project**: Built by a small team over five years, currently in beta at app.files.md, with emphasis on restrictions fostering creativity rather than feature bloat
+
+### Files.md：简单的本地优先 Markdown 笔记应用
+
+* **核心理念**：基于纯 `.md` 文件的极简笔记应用，本地优先存储，适用于笔记、文档、日记、清单和任务管理
+* **主要特性**：基于浏览器的 PWA 无需安装，支持离线工作，免费开源，代码极其简单，一个人或 LLM 就能理解整个项目
+* **同步选项**：内置同步服务器(单个二进制文件)或使用现有云服务(iCloud/Dropbox/Google Drive)，另有 Telegram 聊天机器人实现移动访问
+* **知识管理方法**：拒绝复杂的"第二大脑"系统，倡导简单笔记配合手动链接，强调真正的思考而非系统构建
+* **学习观点**：警惕笔记成为拖延症——没有行动的阅读只是娱乐；情感创伤需要情感层面的疗愈，而非智力层面的笔记整理
+* **技术设计**：无构建系统(直接打开 `web/index.html`)，可移植架构，预定义文件结构，完善的快捷键，以及实用的 Go 脚本用于文件管理
+* **开发原则**：优先简化和删除代码而非添加，最小化依赖，确保初级开发者能理解代码，通过纯 `.md` 文件保持可移植性
+* **五年项目**：小团队历时五年打造，目前在 app.files.md 处于测试阶段，强调限制激发创造力而非功能堆砌
+
+**[Read Original / 阅读原文](https://github.com/zakirullin/files.md)**
+
+### The 1,024,000² 2b2t World Download Project: Largest Minecraft Archive Ever Released
+
+* **Massive Scale**: 24 TB of 2b2t world data released, including 1m² Overworld area, 512k² Overworld, 256k² End, and 100k² Nether regions
+* **Timeline**: Over a year of development (2024-2026), with the final 1m² download taking 109 days to complete
+* **Technical Achievement**: Custom file format (zvcr), world download server, and autopilot system developed from scratch
+* **Funding & Resources**: Over $3,000 spent on priority queue and server costs, using 28+ bot accounts
+* **Community Deception**: The 512k² download was disguised as a fake "Dofnear Exploit 2" coordinate leak, resulting in 600+ double chests of stolen items
+* **Access**: Full torrent coming soon; currently viewable via 2b2t Wayback Machine server and map website at 2b2t.place
+* **Team Effort**: Led by crayne, Fuch, mahan, and Steve3, with support from the Enclave group and many contributors
+* **Open Source**: Tools including PlaceProxy, world download server, and zvcr format will be released on GitHub
+* **Separate from 200k² Release**: Coincidentally released around the same time as CrisisSheep's 200k² project, but completely independent
+
+### 史上最大的 Minecraft 存档：1,024,000² 2b2t 世界下载项目
+
+* **规模空前**：发布 24 TB 的 2b2t 世界数据，包括 1m² 主世界区域、512k² 主世界、256k² 末地和 100k² 下界区域
+* **时间跨度**：历时一年多开发（2024-2026），最终 1m² 下载耗时 109 天完成
+* **技术突破**：从零开发自定义文件格式（zvcr）、世界下载服务器和自动驾驶系统
+* **资金投入**：花费超过 3000 美元用于优先队列和服务器成本，使用 28+ 个机器人账号
+* **社区欺骗**：512k² 下载伪装成假的"Dofnear Exploit 2"坐标泄露，导致 600+ 双箱物品被盗
+* **访问方式**：完整种子即将发布；目前可通过 2b2t 时光机服务器和 2b2t.place 地图网站查看
+* **团队协作**：由 crayne、Fuch、mahan 和 Steve3 领导，Enclave 组织和众多贡献者支持
+* **开源计划**：PlaceProxy、世界下载服务器和 zvcr 格式等工具将在 GitHub 上发布
+* **独立项目**：与 CrisisSheep 的 200k² 项目发布时间巧合重叠，但完全独立
+
+**[Read Original / 阅读原文](https://github.com/2b2tplace/1m_release)**
+
+### Growing Furniture: A Patient Journey from Childhood Vision to Living Chairs
+
+* Gavin's inspiration began as a child when he saw an overgrown bonsai tree that resembled a chair
+* His rare congenital condition (Klippel-Feil syndrome) required multiple spine surgeries during youth, teaching him patience and reflection
+* A friend later noted the parallel between Gavin's own experience being "shaped and grafted" medically and his tree-shaping work
+* After studying at Chesterfield College, Gavin experimented with stitching driftwood furniture in California, which proved trees could be grown into functional shapes
+* He and Alice founded Full Grown in Derbyshire in 2006, combining Gavin's furniture design expertise with Alice's communications skills
+* The couple met at 17, remained friends through international travels, and eventually partnered both personally and professionally
+
+### 种植家具:从童年愿景到活体椅子的耐心之旅
+
+* Gavin 的灵感源于童年时看到一棵长得像椅子的盆景树
+* 他患有罕见的先天性疾病(Klippel-Feil 综合征),青少年时期接受了多次脊柱矫正手术,这让他学会了耐心和反思
+* 一位朋友后来指出,Gavin 自己在医学上被"塑形和嫁接"的经历,与他塑造树木的工作形成了平行对照
+* 从切斯特菲尔德学院毕业后,Gavin 在加州尝试用浮木拼接制作家具,这证明了树木可以被培育成实用形状
+* 2006 年,他和 Alice 在德比郡创立了 Full Grown 公司,结合了 Gavin 的家具设计专长和 Alice 的传播技能
+* 这对夫妇 17 岁相识,经历国际旅行后保持友谊,最终成为生活和事业伙伴
+
+**[Read Original / 阅读原文](https://www.bbc.co.uk/news/articles/cvg0yy3gp71o)**
+
+### 🎬 Don't try to learn a new skill in a vacuum - build with a goal in mind
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: A learning philosophy that emphasizes project-based skill acquisition rather than abstract study
+* Key topics discussed: Goal-oriented learning, building real projects while learning, filling knowledge gaps retroactively, maintaining motivation through tangible outcomes
+* Why it's worth watching: Offers a practical alternative to traditional learning methods that can help developers stay motivated and learn more effectively by working on actual projects instead of isolated tutorials
+
+---
+
+### 🎬 不要在真空中学习新技能 - 带着目标去构建
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 强调以项目为导向的技能学习方法,而非抽象的理论学习
+* 主要话题: 目标导向学习、在实践中构建真实项目、事后填补知识空白、通过具体成果保持学习动力
+* 为何值得观看: 提供了一种实用的学习方法替代方案,帮助开发者通过实际项目而非孤立教程来保持动力并更高效地学习技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=g4Jne1qDDhU)**
+
+### 🎬 Claude Code Tutorial: Beginner to Advanced in 20 Minutes
+**Channel:** Zinho Automates
+
+* What the video covers: A comprehensive tutorial on Claude Code (likely Claude's coding capabilities or a coding tool built with Claude), progressing from basic concepts to advanced techniques in a condensed 20-minute format
+* Key topics discussed: Beginner fundamentals, intermediate coding patterns, advanced implementation strategies, practical examples and use cases for leveraging Claude in development workflows
+* Why it's worth watching: Efficiently structured crash course that takes viewers from zero to proficient in under 20 minutes, ideal for developers wanting to quickly integrate Claude into their coding toolkit without lengthy tutorials
+
+### 🎬 Claude 代码教程：20 分钟从入门到精通
+**频道:** Zinho Automates
+
+* 视频内容概述: 关于 Claude Code 的全面教程（可能是 Claude 的编码能力或基于 Claude 构建的编码工具），在 20 分钟内从基础概念进阶到高级技巧
+* 主要话题: 初学者基础知识、中级编码模式、高级实现策略、在开发工作流中利用 Claude 的实际示例和用例
+* 为何值得观看: 高效的速成课程结构，在 20 分钟内让观众从零基础到熟练掌握，非常适合希望快速将 Claude 集成到编码工具包中而不想看冗长教程的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ujHXnlSVheI)**
 
