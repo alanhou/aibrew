@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 19, 2026"
 date: 2026-05-19
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -797,4 +797,154 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 学习路径结构清晰，快速带领观众从零基础到高级水平；提供免费社区资源，包含额外的提示词和指南；非常适合希望利用 Claude 进行编码辅助或自动化的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ujHXnlSVheI)**
+
+### Ultra-Pure Quantum Crystals from an Abandoned Mine in the Atacama Desert
+
+**Summary of Discovery and Scientific Significance:**
+
+* Dr. Aaron Breidenbach discovered natural Herbertsmithite crystals in an abandoned mine in Chile's Atacama Desert, potentially containing 10+ grams—roughly 10 times what he synthesized in 6 years at Stanford
+* These crystals are candidates for "quantum spin liquid" (QSL) state and have immense potential for future large-scale quantum computers
+* Natural crystals from the San Francisco mine are **more pure** than lab synthetics (Cu:Zn ratio of 2.98:1.02 vs 3.15:0.85), verified by electron microprobe microscopy
+* This is the only known bulk quantum material that grows naturally in nature—an absolute anomaly in condensed matter physics
+* Higher purity means better two-dimensional magnetic properties, crucial for hosting exotic quantum states
+* Lab synthesis is expensive (>$10,000 equipment, ~$100 per attempt), time-consuming (9 months growth), and only 45% successful
+* Discovery made with anthropologist Vicente Carrasola Vega using $15 pickaxes in mine waste tailings
+* Identity confirmed via X-ray scattering at Universidad Católica del Norte (approximately 65% Herbertsmithite composition)
+* This is Part 1 of a two-part series; Part 2 addresses ecological destruction from mining practices
+
+---
+
+### 阿塔卡马沙漠废弃矿井中的超纯量子晶体
+
+**发现与科学意义摘要：**
+
+* Aaron Breidenbach 博士在智利阿塔卡马沙漠的废弃矿井中发现了天然赫伯史密斯石晶体，可能含有 10 克以上——约为他在斯坦福 6 年合成量的 10 倍
+* 这些晶体是"量子自旋液体"(QSL) 态的候选材料，对未来大规模量子计算机具有巨大潜力
+* 来自圣弗朗西斯科矿的天然晶体**纯度高于**实验室合成品（铜锌比为 2.98:1.02 vs 3.15:0.85），已通过电子探针显微镜验证
+* 这是唯一已知在自然界生长的块体量子材料——在凝聚态物理学中绝对是异常现象
+* 更高纯度意味着更好的二维磁性特性，这对承载奇异量子态至关重要
+* 实验室合成成本高昂（设备 >$10,000，每次尝试约 $100）、耗时长（生长 9 个月）且成功率仅 45%
+* 与人类学家 Vicente Carrasola Vega 合作，使用 15 美元的镐在矿渣中发现
+* 在智利北方天主教大学通过 X 射线散射确认身份（约 65% 赫伯史密斯石成分）
+* 这是两部分系列的第一部分；第二部分讨论采矿实践造成的生态破坏
+
+**[Read Original / 阅读原文](https://medium.com/@breid.at/ultra-pure-quantum-crystals-from-an-abandoned-mine-in-a-mysterious-desert-93cc87d12314)**
+
+I need more content to analyze. The HTML you provided only contains a comments section with no actual article content about "Strawberry - SuperSplat". 
+
+Could you provide the main article content? I'm looking for:
+- The actual blog post text
+- Technical details about Strawberry/SuperSplat
+- Any descriptions, features, or information discussed in the article
+
+Once you share the full content, I'll create a structured summary in both English and Chinese following the markdown format you specified.
+
+**[Read Original / 阅读原文](https://superspl.at/scene/84df8849)**
+
+<!-- [Title-Only] -->
+### Polypad
+
+* Based on the title, this appears to be an interactive mathematical tool or digital manipulative platform created by Amplify. "Polypad" suggests a virtual workspace where users can explore mathematical concepts through hands-on manipulation of geometric shapes, tiles, and other mathematical objects.
+* This might be interesting to readers because it likely represents a modern approach to teaching mathematics through visual and interactive methods, potentially making abstract concepts more accessible to students. The Amplify brand suggests it's designed for educational use with a focus on engagement and understanding.
+
+### Polypad - 数学互动工具平台
+
+* 根据标题推测，这应该是 Amplify 公司开发的一个交互式数学工具或数字操作平台。"Polypad"这个名称暗示这是一个虚拟工作空间，用户可以通过动手操作几何图形、拼图和其他数学对象来探索数学概念。
+* 值得关注的原因在于，它可能代表了一种通过视觉化和互动方式教授数学的现代方法，有助于让抽象的数学概念变得更易于理解。Amplify 品牌表明这是专为教育用途设计的工具，注重提升学习参与度和理解深度。
+
+**[Read Original / 阅读原文](https://polypad.amplify.com/)**
+
+### Superpowers - An Agentic Skills Framework for AI-Powered Software Development
+
+* **What it does**: A complete software development methodology that transforms coding agents (like Claude, Cursor, Copilot) into systematic developers. Instead of jumping straight into code, agents follow a structured workflow: brainstorming → design approval → implementation planning → subagent-driven development → test-driven implementation → code review → branch completion.
+
+* **Key features**: 
+  - **Subagent-driven development** - Dispatches fresh subagents per task with two-stage review (spec compliance, then code quality)
+  - **Enforced TDD** - RED-GREEN-REFACTOR cycle that deletes code written before tests
+  - **Systematic debugging** - 4-phase root cause process with defense-in-depth techniques
+  - **Git worktree integration** - Isolated workspaces for parallel development
+  - **Composable skills library** - Testing, debugging, collaboration, and meta skills that trigger automatically
+  - **Multi-agent support** - Works across Claude Code, Cursor, Copilot CLI, Codex, Gemini CLI, and more
+
+* **Why it's notable**: Addresses the core problem of AI coding agents producing untested, over-engineered code by enforcing professional development practices. Enables agents to work autonomously for hours without deviating from approved plans. Gained 1,620 stars today because it provides a battle-tested methodology that makes AI pair programming actually productive - agents ask "what are you building?" before writing a single line of code.
+
+---
+
+### Superpowers - AI 编程助手的技能框架与软件开发方法论
+
+* **功能介绍**: 一套完整的软件开发方法论,将 AI 编程助手(如 Claude、Cursor、Copilot)转变为系统化的开发者。不是直接跳入编码,而是遵循结构化工作流:头脑风暴 → 设计审批 → 实施计划 → 子代理驱动开发 → 测试驱动实现 → 代码审查 → 分支完成。
+
+* **主要特点**:
+  - **子代理驱动开发** - 为每个任务分派独立子代理,进行两阶段审查(规范合规性,然后代码质量)
+  - **强制 TDD** - 红-绿-重构循环,删除在测试之前编写的代码
+  - **系统化调试** - 4 阶段根因分析流程,包含纵深防御技术
+  - **Git worktree 集成** - 为并行开发提供隔离工作空间
+  - **可组合技能库** - 测试、调试、协作和元技能自动触发
+  - **多代理支持** - 支持 Claude Code、Cursor、Copilot CLI、Codex、Gemini CLI 等
+
+* **为何值得关注**: 解决了 AI 编程助手产生未经测试、过度设计代码的核心问题,通过强制执行专业开发实践来实现。使代理能够在数小时内自主工作而不偏离已批准的计划。今日获得 1,620 星标,因为它提供了一套经过实战检验的方法论,让 AI 结对编程真正高效 - 代理在编写任何代码之前会先问"你要构建什么?"
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### Claude Code Plugins Directory - Official Plugin Marketplace for Claude Code
+
+* **What it does**: Serves as the official, curated directory of high-quality plugins for Claude Code, Anthropic's AI-powered development environment. Provides a centralized marketplace where developers can discover, install, and manage plugins that extend Claude Code's capabilities.
+
+* **Key features**: 
+  - Dual plugin ecosystem with internal (Anthropic-developed) and external (community/partner) plugins
+  - Simple installation via `/plugin install` command or discovery interface
+  - Standardized plugin structure supporting MCP servers, slash commands, agents, and skills
+  - Quality and security vetting for external submissions through formal review process
+
+* **Why it's notable**: This is Anthropic's first official plugin marketplace for Claude Code, establishing the foundation for an extensible AI development ecosystem. With 127 stars today, it signals growing developer interest in customizing and extending Claude's coding capabilities. The structured approach to plugin management and security review demonstrates Anthropic's commitment to maintaining quality while enabling community innovation in AI-assisted development tools.
+
+---
+
+### Claude Code 插件目录 - Claude Code 官方插件市场
+
+* **功能介绍**: 作为 Claude Code 的官方精选插件目录，为 Anthropic 的 AI 驱动开发环境提供集中式插件市场。开发者可以在此发现、安装和管理扩展 Claude Code 功能的插件。
+
+* **主要特点**:
+  - 双重插件生态系统，包含内部插件（Anthropic 开发）和外部插件（社区/合作伙伴）
+  - 通过 `/plugin install` 命令或发现界面实现简单安装
+  - 标准化插件结构，支持 MCP 服务器、斜杠命令、代理和技能
+  - 外部提交需通过正式审核流程进行质量和安全审查
+
+* **为何值得关注**: 这是 Anthropic 为 Claude Code 推出的首个官方插件市场，为可扩展的 AI 开发生态系统奠定基础。今日获得 127 星标，表明开发者对定制和扩展 Claude 编码能力的兴趣日益增长。结构化的插件管理和安全审查方法体现了 Anthropic 在保持质量的同时推动 AI 辅助开发工具社区创新的承诺。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/claude-plugins-official)**
+
+### Lossless Scaling Desktop 2026 - Suspicious Repository with Piracy/Malware Indicators
+
+**⚠️ WARNING: This repository exhibits multiple red flags suggesting piracy, malware distribution, or scam content.**
+
+* **What it claims**: Presents itself as a "cracked" or "pre-activated" version of Lossless Scaling software with keywords like "Keygen," "Patch Activator," "License Key Pre-Activated"
+* **Red flags identified**: 
+  - Keyword stuffing typical of malware/piracy sites ("Keygen," "Patch," "Activator," "Cracked")
+  - No actual code or legitimate README content
+  - Repository name/description designed for search engine manipulation
+  - 778 stars with no substantive content (likely fake engagement)
+  - Claims to provide "Full Version" of commercial software for free
+* **Why it's notable**: This is a **dangerous repository** that likely distributes pirated software, malware, or phishing content. The legitimate Lossless Scaling is a paid Windows application available on Steam.
+
+**Recommendation**: Avoid this repository entirely. Do not download or run any files from it. Purchase legitimate software from official sources.
+
+---
+
+### Lossless Scaling Desktop 2026 - 疑似盗版/恶意软件传播库
+
+**⚠️ 警告：此仓库存在多个危险信号，疑似盗版软件、恶意软件传播或诈骗内容。**
+
+* **声称功能**：自称为 Lossless Scaling 软件的"破解版"或"预激活版本"，包含"注册机"、"激活补丁"、"预激活许可证密钥"等关键词
+* **识别到的危险信号**：
+  - 典型恶意软件/盗版网站的关键词堆砌（"Keygen"、"Patch"、"Activator"、"Cracked"）
+  - 无实际代码或合法 README 内容
+  - 仓库名称/描述专为搜索引擎操纵设计
+  - 778 个星标但无实质内容（可能是虚假互动）
+  - 声称免费提供商业软件的"完整版本"
+* **为何值得关注**：这是一个**危险仓库**，很可能传播盗版软件、恶意软件或钓鱼内容。正版 Lossless Scaling 是 Steam 平台上的付费 Windows 应用程序。
+
+**建议**：完全避开此仓库。不要下载或运行其中的任何文件。请从官方渠道购买正版软件。
+
+**[View Repository / 查看仓库](https://github.com/DuskMosquito/Lossless-Scaling-Desktop-2026)**
 
