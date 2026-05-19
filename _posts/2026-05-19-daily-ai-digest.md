@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 19, 2026"
 date: 2026-05-19
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -591,4 +591,91 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 高效的速成课程结构，在 20 分钟内让观众从零基础到熟练掌握，非常适合希望快速将 Claude 集成到编码工具包中而不想看冗长教程的开发者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=ujHXnlSVheI)**
+
+<!-- [Title-Only] -->
+### Click (2016)
+* Based on the title and URL structure, this article likely explores an interactive web experience or experiment focused on clicking behavior. It may be a creative project that tracks, visualizes, or responds to user clicks in unexpected ways, possibly commenting on digital interaction patterns or user tracking.
+* Why it might be interesting: The repetitive domain name suggests this could be an artistic or educational piece about web interactions, privacy, or the nature of digital engagement. Given its appearance on Hacker News, it likely offers technical insights or a clever demonstration of web technologies.
+
+### 点击 (2016)
+* 根据标题和URL结构推测,这篇文章可能是一个关于点击行为的互动网页体验或实验。它可能是一个创意项目,以意想不到的方式追踪、可视化或响应用户的点击行为,可能在评论数字交互模式或用户追踪。
+* 为何值得关注:重复的域名暗示这可能是一个关于网页交互、隐私或数字参与本质的艺术或教育作品。鉴于它出现在 Hacker News 上,很可能提供了技术见解或巧妙展示了网页技术。
+
+**[Read Original / 阅读原文](https://clickclickclick.click/)**
+
+### Pope Leo XIV's First Encyclical on AI and Human Dignity
+
+* Pope Leo XIV will release his first encyclical, *Magnifica humanitas*, on May 25, 2026, addressing the preservation of human dignity in the age of artificial intelligence
+* The encyclical is dated May 15, marking the 135th anniversary of Pope Leo XIII's landmark social encyclical *Rerum novarum*
+* A Vatican presentation event will be held on May 25 at 11:30 a.m. in the Synod Hall, with the Pope in attendance
+* Speakers include Cardinal Víctor Manuel Fernández (Doctrine of the Faith), Cardinal Michael Czerny (Integral Human Development), theologian Professor Anna Rowlands, AI researcher Christopher Olah (Anthropic co-founder), and Professor Leocadie Lushombo (political theology expert)
+* Cardinal Secretary of State Pietro Parolin will deliver closing remarks before Pope Leo XIV's address and blessing
+
+### 教宗良十四世首部通谕聚焦人工智能时代的人性尊严
+
+* 教宗良十四世将于2026年5月25日发布其首部通谕《伟大的人性》(*Magnifica humanitas*)，探讨在人工智能时代如何维护人的尊严
+* 通谕签署日期为5月15日，纪念教宗良十三世具有里程碑意义的社会通谕《新事》(*Rerum novarum*)发布135周年
+* 梵蒂冈将于5月25日上午11:30在世界主教会议厅举行发布会，教宗将出席
+* 发言嘉宾包括教义部部长维克多·曼努埃尔·费尔南德斯枢机、促进人类整体发展部部长迈克尔·切尔尼枢机、神学家安娜·罗兰兹教授、人工智能研究员克里斯托弗·奥拉(Anthropic联合创始人)以及政治神学专家莱奥卡迪·卢雄博教授
+* 国务卿帕罗林枢机将致闭幕词，随后教宗良十四世将发表讲话并降福
+
+**[Read Original / 阅读原文](https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html)**
+
+### Regex Chess: A 2-ply Minimax Chess Engine in 84,688 Regular Expressions
+
+* **Concept**: A complete chess engine implemented as a sequence of 84,688 regular expressions that plays valid chess moves by executing regex transformations in order
+* **Implementation**: The entire program is just a loop that applies regex patterns sequentially to a board state string - no traditional programming logic, just pattern matching and replacement
+* **Architecture**: Built on a custom "Regular Expression CPU" with a Branch-Free, Conditional-Execution, Single-Instruction Multiple-Data instruction set
+* **Data Structure**: Computer state represented as a single string containing a stack and variables, formatted with delimiters like `%%\n#stack:\n` and `#variable: value`
+* **Basic Operations**: Implements fundamental stack operations (push/pop) and variable operations (lookup) purely through regex pattern matching and replacement
+* **Stack Manipulation**: Push adds items by matching the stack header and inserting new values; Pop removes top elements by matching and deleting the first line after the header
+* **Variable System**: Lookup operation finds variable values in the state string and copies them to the stack top using capture groups and back-references
+* **Purpose**: A deliberately impractical project demonstrating the theoretical computational completeness of regular expressions through an absurdly complex chess implementation
+
+### 正则表达式国际象棋：用 84,688 个正则表达式实现的 2 层极小极大算法国际象棋引擎
+
+* **核心概念**：一个完整的国际象棋引擎，由 84,688 个正则表达式序列实现，通过按顺序执行正则表达式转换来下出有效的棋步
+* **实现方式**：整个程序只是一个循环，依次对棋盘状态字符串应用正则表达式模式——没有传统编程逻辑，只有模式匹配和替换
+* **架构设计**：构建在自定义的"正则表达式 CPU"之上，采用无分支、条件执行、单指令多数据的指令集
+* **数据结构**：计算机状态表示为包含栈和变量的单个字符串，使用 `%%\n#stack:\n` 和 `#variable: value` 等分隔符格式化
+* **基本操作**：纯粹通过正则表达式模式匹配和替换实现基础栈操作（push/pop）和变量操作（lookup）
+* **栈操作机制**：Push 通过匹配栈头部并插入新值来添加项；Pop 通过匹配并删除头部后的第一行来移除顶部元素
+* **变量系统**：Lookup 操作在状态字符串中查找变量值，并使用捕获组和反向引用将其复制到栈顶
+* **项目意义**：一个刻意不实用的项目，通过极其复杂的国际象棋实现来展示正则表达式在理论上的图灵完备性
+
+**[Read Original / 阅读原文](https://nicholas.carlini.com/writing/2025/regex-chess.html)**
+
+### Lossless Scaling Desktop 2026 - Suspicious Repository with Piracy/Malware Indicators
+
+**⚠️ WARNING: This repository exhibits multiple red flags suggesting piracy, malware distribution, or scam content.**
+
+* **What it claims**: Presents itself as a "cracked" or "pre-activated" version of Lossless Scaling software with keywords like "Keygen," "Patch Activator," and "License Key Pre-Activated"
+* **Red flags identified**: 
+  - Keyword stuffing typical of malware/piracy sites ("Keygen," "Patch," "Activator," "Cracked")
+  - No actual code or legitimate README content
+  - Suspicious naming pattern (username/repo structure suggests impersonation)
+  - C language tag with no visible C code
+  - High star count (776) potentially artificially inflated
+* **Why it's notable**: This is a **dangerous repository** that likely distributes pirated software, malware, or phishing content. Lossless Scaling is legitimate commercial software; unauthorized "cracks" or "keygens" typically contain malware
+
+**Recommendation**: Avoid downloading anything from this repository. Purchase legitimate software from official sources.
+
+---
+
+### Lossless Scaling Desktop 2026 - 疑似盗版/恶意软件传播仓库
+
+**⚠️ 警告：此仓库存在多个危险信号，疑似盗版软件、恶意软件传播或诈骗内容。**
+
+* **声称功能**：自称为 Lossless Scaling 软件的"破解版"或"预激活版本"，包含"注册机"、"激活补丁"等关键词
+* **危险信号**：
+  - 典型恶意软件/盗版网站的关键词堆砌（"Keygen"、"Patch"、"Activator"、"Cracked"）
+  - 无实际代码或合法 README 内容
+  - 可疑的命名模式（用户名/仓库结构疑似冒充）
+  - 标记为 C 语言但无可见 C 代码
+  - 高星标数（776）可能被人为操纵
+* **为何值得关注**：这是一个**危险仓库**，很可能传播盗版软件、恶意软件或钓鱼内容。Lossless Scaling 是合法商业软件，未经授权的"破解版"或"注册机"通常包含恶意软件
+
+**建议**：避免从此仓库下载任何内容。请从官方渠道购买正版软件。
+
+**[View Repository / 查看仓库](https://github.com/DuskMosquito/Lossless-Scaling-Desktop-2026)**
 
