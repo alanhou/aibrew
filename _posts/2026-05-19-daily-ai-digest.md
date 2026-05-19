@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 19, 2026"
 date: 2026-05-19
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -678,4 +678,123 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 **建议**：避免从此仓库下载任何内容。请从官方渠道购买正版软件。
 
 **[View Repository / 查看仓库](https://github.com/DuskMosquito/Lossless-Scaling-Desktop-2026)**
+
+### The Last Six Months in LLMs in Five Minutes
+
+* **November 2025 inflection point**: The "best" LLM model changed hands 5 times between Anthropic (claude-sonnet-4-5, claude-sonnet-4-5), OpenAI (GPT-5.1, GPT-5.1 Codex Max), and Google (Gemini 3)
+* **Coding agents breakthrough**: AI coding assistants crossed from "often-work" to "mostly-work" quality, becoming reliable daily-driver tools thanks to Reinforcement Learning from Verifiable Rewards
+* **December-January experimentation period**: Developers experienced "LLM psychosis" during holidays, building wildly ambitious but often impractical projects (e.g., JavaScript-in-Python-in-WebAssembly)
+* **February 2026 - Rise of OpenClaw**: A project that started in November became a viral "personal AI assistant," spawning the generic term "Claws" for such tools; Mac Minis sold out as people bought them as "aquariums for your Claw"
+* **Gemini 3.1 Pro excellence**: Google's February release produced remarkably good results, including animated SVGs of animals on vehicles, suggesting AI labs are optimizing for creative tasks
+* **Pelican-on-bicycle test**: Used throughout as a benchmark because it combines difficult drawing tasks (pelicans, bicycles) with an impossible scenario, ensuring no training data exists
+
+### 过去六个月的大语言模型发展五分钟速览
+
+* **2025年11月拐点**："最佳"大语言模型在Anthropic（Claude Sonnet 4.5、Claude Opus 4.5）、OpenAI（GPT-5.1、GPT-5.1 Codex Max）和Google（Gemini 3）之间易手5次
+* **编码代理突破**：AI编码助手从"经常有效"跨越到"大多数时候有效"的质量水平，通过可验证奖励强化学习成为可靠的日常工具
+* **12月至1月实验期**：开发者在假期经历"LLM精神错乱"，构建雄心勃勃但往往不切实际的项目（如JavaScript嵌套在Python中再嵌套在WebAssembly中）
+* **2026年2月 - OpenClaw崛起**：一个11月启动的项目成为病毒式传播的"个人AI助手"，催生了此类工具的通用术语"Claws"（爪子）；Mac Mini因人们购买作为"Claw的水族箱"而售罄
+* **Gemini 3.1 Pro卓越表现**：Google 2月发布的版本产生了非常出色的结果，包括动物骑车的动画SVG，表明AI实验室正在优化创意任务
+* **鹈鹕骑自行车测试**：全程用作基准测试，因为它结合了困难的绘图任务（鹈鹕、自行车）和不可能的场景，确保不存在训练数据
+
+**[Read Original / 阅读原文](https://simonwillison.net/2026/May/19/5-minute-llms/)**
+
+<!-- [Title-Only] -->
+### Click (2016)
+
+* Based on the title and URL structure, this article likely explores an interactive web experience or experiment focused on clicking behavior. It may be a creative project that tracks, visualizes, or responds to user clicks in unexpected ways, possibly commenting on digital interaction patterns or user tracking.
+* Why it might be interesting: The repetitive domain name and minimalist title suggest this could be an artistic or educational piece about web interactivity, user behavior tracking, or the psychology of clicking. It may offer insights into how websites monitor user actions or provide a thought-provoking interactive experience.
+
+**Note:** This introduction is based solely on the title and URL. The actual content may differ.
+
+---
+
+### Click (2016) / 点击 (2016)
+
+* 根据标题和URL结构推测,这篇文章可能是一个关注点击行为的互动网页体验或实验项目。它可能是一个创意作品,以意想不到的方式追踪、可视化或响应用户的点击行为,或许在评论数字交互模式或用户追踪现象。
+* 为何值得关注:重复的域名和极简的标题暗示这可能是一个关于网页交互性、用户行为追踪或点击心理学的艺术或教育作品。它可能揭示网站如何监控用户行为,或提供一个发人深省的互动体验。
+
+**注意:** 此简介仅基于标题和URL推测,实际内容可能有所不同。
+
+**[Read Original / 阅读原文](https://clickclickclick.click/)**
+
+### Codex-maxxing: Transforming AI Coding Agents into Knowledge Work Operating Systems
+
+* **Durable threads with compaction** - Long-running conversations that compress history to continue indefinitely, accumulating preferences and decisions across months of work
+* **Voice input for unfiltered thinking** - Speaking naturally captures messy, unedited thoughts that are too vague to type but provide crucial context for agents
+* **Steering during execution** - Injecting new directions while the agent works, queuing multiple steps without waiting for each to complete
+* **Shared memory in vaults** - Using Obsidian repos as persistent knowledge bases where agents document people, projects, and decisions across threads
+* **Git-tracked memory for review** - Version-controlling the vault enables cloud work and provides diffs as a review surface for what the agent learned
+* **Computer and browser control** - Different tools for different contexts: `$browser` for local inspection, `@chrome` for authenticated multi-tab work, `@computer` for GUI-only tasks
+* **Connectors for real work surfaces** - Integration with Slack, Gmail, and Calendar where work originates before becoming code
+* **Remote control for mobility** - Checking in from mobile to steer long-running tasks, preserving momentum across locations
+* **Heartbeats for autonomous monitoring** - Thread-local automations that schedule recurring checks on PRs, Slack threads, or other async work
+* **From chat to operating loop** - The shift from one-shot prompts to persistent workflows with memory, tools, and the ability to resume and steer over time
+
+---
+
+### Codex 最大化：将 AI 编码代理转变为知识工作操作系统
+
+* **持久线程与压缩** - 长期运行的对话通过压缩历史记录无限延续，在数月工作中积累偏好和决策
+* **语音输入捕获原始思维** - 自然说话捕获混乱、未经编辑的想法，这些想法太模糊难以打字，但为代理提供关键上下文
+* **执行中的引导** - 在代理工作时注入新方向，无需等待每步完成即可排队多个步骤
+* **保险库中的共享内存** - 使用 Obsidian 仓库作为持久知识库，代理在其中跨线程记录人员、项目和决策
+* **Git 跟踪的内存供审查** - 版本控制保险库实现云端工作，并提供差异作为代理学习内容的审查界面
+* **计算机和浏览器控制** - 针对不同场景的工具：`$browser` 用于本地检查，`@chrome` 用于已认证的多标签工作，`@computer` 用于仅 GUI 任务
+* **连接器对接真实工作界面** - 与 Slack、Gmail 和日历集成，这些是代码产生之前工作的起源地
+* **远程控制实现移动性** - 从移动设备检查以引导长期运行的任务，跨位置保持工作动力
+* **心跳实现自主监控** - 线程本地自动化，安排对 PR、Slack 线程或其他异步工作的定期检查
+* **从聊天到操作循环** - 从一次性提示转变为具有内存、工具以及随时间恢复和引导能力的持久工作流
+
+**[Read Original / 阅读原文](https://jxnl.co/writing/2026/05/10/codex-maxxing/)**
+
+### 🎬 Claude Code for Beginners Tutorial [Full Course]
+**Channel:** freeCodeCamp.org
+
+* Comprehensive guide to integrating Anthropic's Claude AI into your development workflow
+* Covers setup, core features, practical coding applications, and best practices for AI-assisted development
+* Worth watching for developers wanting to leverage Claude's capabilities for coding tasks, automation, and productivity enhancement—especially beginners looking for a structured, full-course introduction
+
+---
+
+### 🎬 Claude Code 初学者教程 [完整课程]
+**频道:** freeCodeCamp.org
+
+* 全面介绍如何将 Anthropic 的 Claude AI 集成到开发工作流程中
+* 涵盖设置、核心功能、实际编码应用以及 AI 辅助开发的最佳实践
+* 适合希望利用 Claude 进行编码任务、自动化和提升生产力的开发者观看——特别是寻求结构化完整课程入门的初学者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=gh2_PhgZGsM)**
+
+### 🎬 Build almost anything #coding #programming #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A guide to building diverse software projects, likely covering fundamental coding principles and development workflows that apply across different types of applications
+* Key topics discussed: Programming fundamentals, productivity techniques for developers, practical coding approaches that can be adapted to various project types
+* Why it's worth watching: Offers versatile coding knowledge that empowers developers to tackle a wide range of projects with confidence, focusing on transferable skills rather than narrow specialization
+
+### 🎬 构建几乎任何东西 #编程 #开发 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 介绍如何构建各种软件项目的指南,可能涵盖适用于不同类型应用的基础编程原则和开发工作流程
+* 主要话题: 编程基础知识、开发者生产力技巧、可适配各种项目类型的实用编程方法
+* 为何值得观看: 提供通用的编程知识,帮助开发者自信地应对各种项目,注重可迁移的技能而非狭窄的专业化领域
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BxEO4Thm_Qg)**
+
+### 🎬 Claude Code Tutorial: Beginner to Advanced in 20 Minutes
+**Channel:** Zinho Automates
+
+* What the video covers: A comprehensive tutorial on Claude Code (likely Claude's coding capabilities or a coding tool built with Claude), progressing from basic concepts to advanced techniques in a condensed 20-minute format
+* Key topics discussed: Beginner fundamentals, intermediate coding patterns, advanced implementation strategies, practical examples and workflows for using Claude in coding tasks
+* Why it's worth watching: Efficiently structured learning path that takes viewers from zero to advanced proficiency quickly; includes access to a free community with additional prompts and guides; ideal for developers wanting to leverage Claude for coding assistance or automation
+
+### 🎬 Claude 代码教程：20 分钟从入门到精通
+**频道:** Zinho Automates
+
+* 视频内容概述: 全面讲解 Claude Code（可能是 Claude 的编码能力或基于 Claude 构建的编码工具），在 20 分钟内从基础概念进阶到高级技巧
+* 主要话题: 初学者基础知识、中级编码模式、高级实现策略、使用 Claude 进行编码任务的实用示例和工作流程
+* 为何值得观看: 学习路径结构清晰，快速带领观众从零基础到高级水平；提供免费社区资源，包含额外的提示词和指南；非常适合希望利用 Claude 进行编码辅助或自动化的开发者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ujHXnlSVheI)**
 
