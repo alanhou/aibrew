@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 20, 2026"
 date: 2026-05-20
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，11个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，12个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -731,4 +731,185 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合同时学习多种编程语言的初学者；展示了 Python 简洁的语法与 Java 较为冗长的方式在完成相同任务时的对比
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=blX44W_bFHo)**
+
+### Meta Blocks Human Rights Accounts in Saudi Arabia and UAE: A Pattern of Digital Repression
+
+* **Geo-blocking campaign**: Since April 30, 2026, Meta has restricted over 100 Facebook and Instagram accounts of NGOs, researchers, and activists from reaching audiences in Saudi Arabia and the UAE at government request
+* **Affected organizations**: ALQST for Human Rights, Democratic Diwan, Saudi researcher Abdullah Alaoudh, and human rights defender Yahya Assiri have been geo-blocked in Saudi Arabia; similar restrictions imposed in UAE
+* **Legal justification questioned**: Meta cites compliance with "local cybercrime laws," but these laws are routinely used by Gulf governments to silence dissent and criminalize online expression
+* **Context of escalating censorship**: Restrictions intensified after US-Israel strikes on Iran (February 28, 2026), as Gulf governments tightened control over information about regional conflicts
+* **Human rights concerns**: Civil society organizations condemn the blocks as arbitrary, discriminatory, and violations of freedom of expression, questioning Meta's claimed "human rights due diligence"
+* **Demands for transparency**: 12 human rights organizations call on Meta to publish full legal requests, restore account access, provide specific restriction details, and explain its regional offices' role in processing requests
+
+---
+
+### Meta 在沙特和阿联酋封锁人权账号：数字压制的模式
+
+* **地理封锁行动**：自2026年4月30日起，Meta应政府要求限制了100多个Facebook和Instagram账号，使NGO、研究人员和活动人士无法触达沙特阿拉伯和阿联酋的受众
+* **受影响组织**：ALQST人权组织、民主迪万、沙特研究员Abdullah Alaoudh和人权捍卫者Yahya Assiri在沙特被地理封锁；阿联酋也实施了类似限制
+* **法律依据受质疑**：Meta称遵守"当地网络犯罪法"，但这些法律经常被海湾国家政府用来压制异议和将网络言论定罪
+* **审查升级背景**：在美国-以色列打击伊朗后（2026年2月28日），限制措施加剧，海湾国家政府加强了对地区冲突信息的控制
+* **人权担忧**：民间社会组织谴责这些封锁是任意的、歧视性的，违反了言论自由权，质疑Meta声称的"人权尽职调查"
+* **透明度诉求**：12个人权组织呼吁Meta公布完整法律请求、恢复账号访问、提供具体限制细节，并解释其地区办公室在处理请求中的角色
+
+**[Read Original / 阅读原文](https://www.alqst.org/ar/posts/1190)**
+
+<!-- [Title-Only] -->
+### Qwen3.7-Max: The Agent Frontier
+
+* Based on the title, this article likely introduces Qwen3.7-Max, a new AI model from Alibaba's Qwen team that focuses on agentic capabilities—meaning AI systems that can autonomously plan, execute tasks, and interact with tools or environments
+* This would be interesting to readers because it represents the evolution from conversational AI to action-oriented AI agents that can perform complex, multi-step tasks. The "Max" designation suggests this is a flagship model with enhanced reasoning and tool-use capabilities, potentially competing with models like GPT-4 and Claude in the agent space
+
+### Qwen3.7-Max：智能体前沿
+
+* 根据标题推测，本文可能介绍阿里巴巴 Qwen 团队推出的 Qwen3.7-Max 新模型，重点聚焦智能体（Agent）能力——即能够自主规划、执行任务并与工具或环境交互的 AI 系统
+* 值得关注的原因在于，这代表了从对话式 AI 向行动导向型 AI 智能体的演进，能够执行复杂的多步骤任务。"Max"命名暗示这是一款旗舰级模型，具备增强的推理和工具使用能力，可能在智能体领域与 GPT-4、Claude 等模型展开竞争
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content could not be accessed. The actual article may cover different or additional topics.*
+
+*注：本简介仅基于文章标题撰写，因无法获取完整内容。实际文章可能涵盖不同或更多主题。*
+
+**[Read Original / 阅读原文](https://qwen.ai/blog?id=qwen3.7)**
+
+### Map of Metal: An Interactive Guide to Heavy Metal History
+
+* **Interactive visualization** of metal music history and genre evolution
+* **Showcases influential bands** that shaped modern metal subgenres
+* **Requires JavaScript** to function - the site is built as a web application
+* **Created by Patrick Galbraith** as an educational resource for metal enthusiasts
+* **Provides genre overview** helping users understand connections between different metal styles
+
+### 金属地图：重金属音乐历史互动指南
+
+* **互动式可视化**展示金属音乐历史和流派演变
+* **展示有影响力的乐队**，这些乐队塑造了现代金属子流派
+* **需要启用 JavaScript** 才能运行 - 该网站是作为 Web 应用程序构建的
+* **由 Patrick Galbraith 创建**，作为金属音乐爱好者的教育资源
+* **提供流派概览**，帮助用户理解不同金属风格之间的联系
+
+**[Read Original / 阅读原文](https://mapofmetal.com/)**
+
+### GuJumpgate - Automated GPT Plus Registration Browser Extension
+
+* **What it does**: A browser extension that automates the entire process of registering OpenAI free accounts and upgrading them to GPT Plus using PayPal, including email verification, payment form filling, and OAuth callbacks.
+
+* **Key features**: 
+  - Automatic free account registration via FlowPilot integration
+  - Full PayPal activation flow with auto-fill for Stripe and PayPal billing
+  - Hotmail/Outlook alias automation and phone number pool support
+  - Proxy splitting configuration for registration (JP) and payment (US)
+  - Local JSON export without refresh tokens to avoid OAuth verification issues
+  - 100% success rate in testing (10 consecutive runs)
+
+* **Why it's notable**: Addresses the tedious manual process of GPT Plus registration and payment, particularly valuable given current OAuth restrictions that trigger phone verification. The project demonstrates sophisticated automation of a multi-step web workflow involving email verification, payment processing, and API callbacks. Built on FlowPilot with MIT license, it's gained 830 stars for solving a real pain point in the AI tools community.
+
+---
+
+### GuJumpgate - 全自动 GPT Plus 注册浏览器扩展
+
+* **功能介绍**: 一个浏览器扩展，可自动完成 OpenAI 免费账号注册并通过 PayPal 升级至 GPT Plus 的全流程，包括邮箱验证、支付表单填写和 OAuth 回调。
+
+* **主要特点**:
+  - 通过 FlowPilot 集成实现免费账号自动注册
+  - PayPal 激活全流程自动化，自动填写 Stripe 和 PayPal 账单信息
+  - 支持 Hotmail/Outlook 自动别名和 PayPal 号码池
+  - 代理分流配置（注册走日本代理，支付走美国代理）
+  - 支持导出本地 JSON 文件（无刷新令牌）以规避 OAuth 验证问题
+  - 测试成功率 100%（连续 10 次运行）
+
+* **为何值得关注**: 解决了 GPT Plus 注册和支付过程中的繁琐手动操作，在当前 OAuth 严重风控、几乎必跳手机验证的情况下尤其实用。该项目展示了对涉及邮箱验证、支付处理和 API 回调的复杂多步骤 Web 工作流的精密自动化。基于 FlowPilot 开发并采用 MIT 许可证，因解决 AI 工具社区的实际痛点而获得 830 星关注。
+
+**[View Repository / 查看仓库](https://github.com/FoundZiGu/GuJumpgate)**
+
+### 🎬 Why did the dev go broke?
+**Channel:** freeCodeCamp.org
+
+* A lighthearted programming joke video from freeCodeCamp
+* Short-form content delivering a developer-themed punchline
+* Worth watching for a quick laugh and relatable developer humor during coding breaks
+
+### 🎬 为什么开发者破产了？
+**频道:** freeCodeCamp.org
+
+* 来自 freeCodeCamp 的轻松编程笑话视频
+* 短视频形式，讲述一个以开发者为主题的笑话
+* 适合在编码休息时观看，获得快速的笑点和开发者共鸣
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1SKV4B_WPkg)**
+
+### 🎬 The impact of war on the hardware industry
+**Channel:** Lenny's Podcast
+
+* Explores how geopolitical conflicts and warfare are reshaping the hardware and semiconductor industry
+* Discusses supply chain disruptions, strategic resource competition, and the race for technological sovereignty in AI and chip manufacturing
+* Worth watching for understanding the intersection of global politics, defense priorities, and the future of hardware innovation—critical context for anyone in tech, product, or strategic planning
+
+### 🎬 战争对硬件产业的影响
+**频道:** Lenny's Podcast
+
+* 探讨地缘政治冲突和战争如何重塑硬件和半导体产业格局
+* 讨论供应链中断、战略资源竞争,以及AI和芯片制造领域的技术主权竞赛
+* 值得观看,帮助理解全球政治、国防优先级与硬件创新未来的交汇点——对科技、产品或战略规划从业者至关重要
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=hffvbBd5pJk)**
+
+### 🎬 Wait Till The End #shorts #sheryianscodingschool #placement #engineering
+**Channel:** Sheryians Coding School
+
+* What the video covers: A satirical take on common career advice given to engineering students in India, particularly around learning Python, DSA (Data Structures & Algorithms), and AI
+* Key topics discussed: The repetitive and often oversimplified career guidance that engineering students receive about tech skills and job placement strategies
+* Why it's worth watching: Relatable humor for engineering students and tech learners who've experienced the pressure of following trending tech advice; offers a comedic perspective on the gap between advice and reality in tech education
+
+---
+
+### 🎬 等到最后 #shorts #编程学校 #就业 #工程
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 讽刺印度工程专业学生常听到的职业建议，特别是关于学习 Python、数据结构与算法(DSA)和人工智能的建议
+* 主要话题: 工程学生收到的重复且过于简化的职业指导，涉及技术技能和求职策略
+* 为何值得观看: 对于经历过追随热门技术建议压力的工程学生和技术学习者来说非常有共鸣；以幽默视角展现技术教育中建议与现实之间的差距
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MFiOI1q9oLs)**
+
+### 🎬 How to Use Claude Projects (Step-by-Step Tutorial)
+**Channel:** Kevin Stratvert
+
+* What the video covers: A comprehensive step-by-step guide on using Claude Projects, including project creation, file uploads, and project management workflows
+* Key topics discussed: Setting up Claude Projects from scratch, uploading and organizing files within projects, leveraging project features for enhanced AI collaboration and context management
+* Why it's worth watching: Perfect for users wanting to maximize Claude's capabilities through the Projects feature, offering practical demonstrations of how to organize work, maintain context across conversations, and efficiently manage AI-assisted workflows
+
+### 🎬 如何使用 Claude Projects(分步教程)
+**频道:** Kevin Stratvert
+
+* 视频内容概述: 全面的分步指南,教你如何使用 Claude Projects,包括项目创建、文件上传和项目管理工作流程
+* 主要话题: 从零开始设置 Claude Projects、在项目中上传和整理文件、利用项目功能增强 AI 协作和上下文管理
+* 为何值得观看: 适合想要通过 Projects 功能最大化发挥 Claude 能力的用户,提供如何组织工作、跨对话保持上下文以及高效管理 AI 辅助工作流程的实用演示
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=w7_yWjYyxjE)**
+
+### 🎬 OOP with Java AKTU One Shot 🔥 | BCS-403 | All PYQs + Important Topics | Complete Revision
+
+**Channel:** AH Tutorials
+
+* **What the video covers:** A comprehensive one-shot revision session for Object-Oriented Programming with Java, specifically tailored for AKTU's BCS-403 course. Includes complete coverage of previous year questions (PYQs) and all important exam topics.
+
+* **Key topics discussed:** Core OOP concepts in Java including classes, objects, inheritance, polymorphism, encapsulation, abstraction, and other essential topics from the BCS-403 syllabus. Features handwritten solutions to past exam questions.
+
+* **Why it's worth watching:** Perfect for AKTU students preparing for BCS-403 exams who need a focused, exam-oriented revision covering both theory and solved previous year questions in one comprehensive session. The instructor offers downloadable PDF notes with short summaries and handwritten PYQ solutions.
+
+---
+
+### 🎬 OOP with Java AKTU 一站式速成 🔥 | BCS-403 | 所有往年真题 + 重点主题 | 完整复习
+
+**频道:** AH Tutorials
+
+* **视频内容概述:** 针对 AKTU 大学 BCS-403 课程的 Java 面向对象编程完整复习课程，一次性涵盖所有往年考试真题和重要考点。
+
+* **主要话题:** Java 核心 OOP 概念，包括类、对象、继承、多态、封装、抽象以及 BCS-403 教学大纲中的其他必考主题。提供往年试题的手写解答。
+
+* **为何值得观看:** 专为准备 BCS-403 考试的 AKTU 学生设计，提供聚焦考试的复习内容，在一个完整课程中同时覆盖理论知识和往年真题解析。讲师提供可下载的 PDF 笔记，包含简明总结和手写真题答案。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tcPbt94qy3g)**
 
