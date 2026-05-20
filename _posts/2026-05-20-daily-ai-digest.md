@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 20, 2026"
 date: 2026-05-20
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -531,4 +531,127 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 如果你在寻找一个轻量级、快速且可根据个人工作流程深度定制的编程助手，这个视频展示了如何充分发挥 Pi 的潜力，超越其默认配置
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=6xXjHM3V1zM)**
+
+<!-- [Title-Only] -->
+### Railway Blocked by Google Cloud
+
+**Based on the title only:**
+
+* This article likely covers an incident where Railway (a popular platform-as-a-service for deploying applications) experienced service disruptions or access issues caused by Google Cloud infrastructure or policies
+* The URL suggests this is from Railway's status page dated May 19, 2026, indicating a specific outage or blocking event
+* This might be interesting to readers because it highlights infrastructure dependencies and potential risks when cloud platforms rely on other cloud providers, affecting developers and businesses using Railway for their deployments
+
+### Railway 被 Google Cloud 封锁
+
+**仅根据标题推测：**
+
+* 本文可能讲述 Railway（一个流行的应用部署平台即服务）因 Google Cloud 基础设施或政策问题而遭遇服务中断或访问受限的事件
+* 从 URL 可以看出这是 Railway 状态页面 2026 年 5 月 19 日的记录，表明发生了特定的服务中断或封锁事件
+* 这对读者来说值得关注，因为它凸显了基础设施依赖关系以及当云平台依赖其他云服务商时可能带来的风险，影响使用 Railway 部署应用的开发者和企业
+
+**[Read Original / 阅读原文](https://status.railway.com/?date=20260519)**
+
+### Remove AI Watermarks: Comprehensive Tool for Stripping Visible and Invisible AI Signatures
+
+* **Multi-layered removal**: Eliminates visible watermarks (Google Gemini sparkle logo), invisible watermarks (SynthID, StableSignature, TreeRing), and AI metadata (C2PA, EXIF, XMP) in one command
+* **Gemini/Nano Banana specialization**: Uses reverse alpha blending with NCC detection to remove sparkle logos at ~0.05s per image, no GPU required
+* **Invisible watermark defeat**: Employs SDXL-based diffusion pipeline (resize to ~1024px → VAE encode → controlled noise → denoise at 50 steps/0.05 strength → decode → upscale) to destroy frequency-domain patterns
+* **Smart face protection**: YOLO detects humans before diffusion, then blends original faces back with soft elliptical masks to prevent AI distortion of facial features
+* **Analog humanizer**: Optional film grain and chromatic aberration injection makes outputs indistinguishable from screen photos, bypassing AI image classifiers
+* **Metadata stripping**: Removes "Made with AI" triggers used by Instagram/Facebook/X (DigitalSourceType tags), plus EXIF prompts, PNG text chunks, and C2PA cryptographic provenance manifests
+* **Broad AI model support**: Works on outputs from Google Gemini, ChatGPT/DALL-E, Stable Diffusion, Adobe Firefly, Midjourney, with model-specific approaches for each watermarking scheme
+* **Installation flexibility**: Available via pipx/uv as isolated CLI tool, or editable install from repository; base install covers visible/metadata removal, GPU dependencies optional for invisible removal
+* **Legal context**: Tool itself is lawful; usage regulated under EU AI Act (marking obligations start Dec 2026), US COPIED Act (criminalizes deceptive removal), China Deep Synthesis Regulation (mandatory labels), and state-specific deepfake laws
+
+### 去除 AI 水印：全面清除可见与不可见 AI 签名的工具
+
+* **多层清除能力**：一条命令即可移除可见水印（Google Gemini 闪光标志）、不可见水印（SynthID、StableSignature、TreeRing）和 AI 元数据（C2PA、EXIF、XMP）
+* **Gemini/Nano Banana 专项处理**：使用反向 alpha 混合配合 NCC 检测移除闪光标志，每张图片约 0.05 秒，无需 GPU
+* **不可见水印破解**：采用基于 SDXL 的扩散管道（调整至约 1024px → VAE 编码 → 受控噪声 → 50 步/0.05 强度去噪 → 解码 → 放大至原分辨率）摧毁频域模式
+* **智能人脸保护**：扩散前用 YOLO 检测人物，扩散后用软椭圆遮罩将原始面部混合回来，防止 AI 扭曲面部特征
+* **模拟人性化处理**：可选的胶片颗粒和色差注入使输出与屏幕照片无法区分，绕过 AI 生成图像分类器
+* **元数据清除**：移除 Instagram/Facebook/X 使用的"AI 制作"触发标签（DigitalSourceType 标签），以及 EXIF 提示词、PNG 文本块和 C2PA 加密溯源清单
+* **广泛 AI 模型支持**：适用于 Google Gemini、ChatGPT/DALL-E、Stable Diffusion、Adobe Firefly、Midjourney 的输出，针对每种水印方案采用特定方法
+* **灵活安装方式**：可通过 pipx/uv 作为独立 CLI 工具安装，或从仓库可编辑安装；基础安装涵盖可见/元数据清除，不可见水印清除需可选 GPU 依赖
+* **法律背景**：工具本身合法；使用受 EU AI 法案（标记义务 2026 年 12 月生效）、美国 COPIED 法案（欺骗性移除入刑）、中国深度合成规定（强制标签）及各州深度伪造法律监管
+
+**[Read Original / 阅读原文](https://github.com/wiltodelta/remove-ai-watermarks)**
+
+### Forge: A Reliability Layer for Self-Hosted LLM Tool-Calling
+
+* **Purpose**: Python library that enhances small local LLMs (8B models) for multi-step agentic workflows through guardrails and context management
+* **Performance**: Achieves 86.5% success rate on 26-scenario eval suite using Ministral-3 8B model, with 76% on hardest tier
+* **Three usage modes**: WorkflowRunner (full lifecycle management), Guardrails middleware (composable reliability stack), Proxy server (OpenAI-compatible drop-in)
+* **Key features**: Rescue parsing for malformed tool calls, retry nudges, step enforcement, VRAM-aware context budgets, tiered compaction
+* **Backend support**: Works with Ollama, llama-server (llama.cpp), Llamafile, and Anthropic
+* **Requirements**: Python 3.12+, running LLM backend
+* **Installation**: `pip install forge-guardrails` with optional Anthropic support
+* **Eval harness**: 26 scenarios split into baseline (OG-18) and advanced reasoning (8 scenarios) tiers for model qualification
+* **Published research**: Academic paper available at DOI 10.1145/3786335.3813193
+* **License**: MIT, open source project by Antoine Zambelli
+
+### Forge：自托管 LLM 工具调用的可靠性层
+
+* **用途**：Python 库，通过护栏机制和上下文管理增强小型本地 LLM（8B 模型）的多步骤智能体工作流能力
+* **性能表现**：使用 Ministral-3 8B 模型在 26 个场景评估套件上达到 86.5% 成功率，最难层级达到 76%
+* **三种使用模式**：WorkflowRunner（全生命周期管理）、Guardrails 中间件（可组合可靠性栈）、代理服务器（OpenAI 兼容的即插即用方案）
+* **核心功能**：修复格式错误的工具调用、重试提示、步骤强制执行、显存感知的上下文预算、分层压缩
+* **后端支持**：兼容 Ollama、llama-server（llama.cpp）、Llamafile 和 Anthropic
+* **系统要求**：Python 3.12+，运行中的 LLM 后端
+* **安装方式**：`pip install forge-guardrails`，可选 Anthropic 支持
+* **评估框架**：26 个场景分为基线层（OG-18）和高级推理层（8 个场景）用于模型资格认证
+* **学术发表**：研究论文已发表，DOI 编号 10.1145/3786335.3813193
+* **开源协议**：MIT 许可证，由 Antoine Zambelli 开发的开源项目
+
+**[Read Original / 阅读原文](https://github.com/antoinezambelli/forge)**
+
+### agents-best-practices - Provider-Neutral Agent Harness Design Framework
+
+* **What it does**: A comprehensive skill/reference for designing production-ready agentic systems with proper runtime controls, tool permissions, and safety guardrails. Works across Codex, Claude Code, and other AI agents to generate MVP blueprints, audit existing agents, and design secure tool architectures.
+
+* **Key features**: Provider-neutral agentic loop design with typed tools and permission checks; planning mode with approval gates; context/memory management with auto-compaction; prompt caching optimization; observability, evals, and launch checklists; MCP and connector governance; works for coding, research, operations, finance, healthcare, and other agent domains.
+
+* **Why it's notable**: Addresses the critical gap between "model proposes actions" and "production-safe execution" by providing a rigorous harness framework. Goes beyond prompt engineering to cover the full control plane: validation, authorization, budgets, structured observations, and incident response. The 854 stars reflect growing recognition that agent safety requires runtime discipline, not just better prompts.
+
+---
+
+### agents-best-practices - 提供商中立的智能体运行框架设计指南
+
+* **功能介绍**: 为设计生产级智能体系统提供全面的技能参考，包含完善的运行时控制、工具权限管理和安全防护。支持 Codex、Claude Code 等多种 AI 智能体，可生成 MVP 蓝图、审计现有智能体、设计安全的工具架构。
+
+* **主要特点**: 提供商中立的智能体循环设计，包含类型化工具和权限检查；带审批门控的规划模式；支持自动压缩的上下文/内存管理；提示缓存优化；可观测性、评估和发布检查清单；MCP 和连接器治理；适用于编码、研究、运营、金融、医疗等多种智能体场景。
+
+* **为何值得关注**: 填补了"模型提议操作"与"生产安全执行"之间的关键空白，提供严格的运行框架。超越提示工程，覆盖完整的控制平面：验证、授权、预算、结构化观察和事件响应。854 星标反映出业界日益认识到智能体安全需要运行时纪律，而非仅靠更好的提示词。
+
+**[View Repository / 查看仓库](https://github.com/DenisSergeevitch/agents-best-practices)**
+
+### Codex Complexity Optimizer - Safe Codebase Performance Analysis Tool
+
+* **What it does**: Analyzes codebases to identify algorithmic complexity issues and performance bottlenecks, generating detailed optimization reports without modifying code by default
+* **Key features**: Provides file/line-level complexity analysis, recommends specific optimizations with expected improvements, assigns risk levels to changes, and suggests required tests or benchmarks; can apply low-risk optimizations when explicitly requested
+* **Why it's notable**: Offers a safety-first approach to performance optimization by separating analysis from implementation, making it ideal for teams wanting to understand performance issues before committing to changes; integrates as a Codex skill for seamless workflow integration
+
+### Codex Complexity Optimizer - 安全的代码库性能分析工具
+
+* **功能介绍**: 分析代码库以识别算法复杂度问题和性能瓶颈,生成详细的优化报告,默认情况下不修改代码
+* **主要特点**: 提供文件/行级别的复杂度分析,推荐具体优化方案并预测改进效果,为变更分配风险等级,建议所需的测试或基准测试;在明确请求时可应用低风险优化
+* **为何值得关注**: 采用安全优先的性能优化方法,将分析与实施分离,适合希望在提交更改前充分了解性能问题的团队;作为 Codex 技能集成,实现无缝工作流程
+
+**[View Repository / 查看仓库](https://github.com/Kappaemme-git/codex-complexity-optimizer)**
+
+### 🎬 How to Use Claude Projects (Step-by-Step Tutorial)
+**Channel:** Kevin Stratvert
+
+* What the video covers: A comprehensive step-by-step guide on using Claude Projects, including project creation, file uploads, and project management workflows
+* Key topics discussed: Setting up Claude Projects from scratch, uploading and organizing files within projects, leveraging project features for enhanced AI collaboration and context management
+* Why it's worth watching: Perfect for users wanting to maximize Claude's capabilities through the Projects feature, offering practical demonstrations of how to structure work and maintain context across conversations for more efficient AI-assisted workflows
+
+### 🎬 如何使用 Claude Projects(分步教程)
+**频道:** Kevin Stratvert
+
+* 视频内容概述: 全面的分步指南,教你如何使用 Claude Projects,包括项目创建、文件上传和项目管理工作流程
+* 主要话题: 从零开始设置 Claude Projects、在项目中上传和组织文件、利用项目功能增强 AI 协作和上下文管理
+* 为何值得观看: 适合想要通过 Projects 功能最大化发挥 Claude 能力的用户,提供实用演示,展示如何构建工作结构并在对话中保持上下文,实现更高效的 AI 辅助工作流
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=w7_yWjYyxjE)**
 
