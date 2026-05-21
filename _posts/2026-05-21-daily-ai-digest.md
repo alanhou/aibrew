@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 21, 2026"
 date: 2026-05-21
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -581,90 +581,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 24小时获900星——Zero编程语言有何玄机？
-
-**频道:** DIY Smart Code
-
-* **视频内容概述:** 深度分析Vercel Labs刚发布的Zero编程语言，这是一门专为AI代理而非人类开发者设计的系统编程语言，发布24小时内在GitHub获得900星
-* **主要话题:** Zero语言的独特设计理念——面向AI代理优化；显式编程范式的特点；技术热度背后的真实价值；对AI驱动开发模式的潜在影响
-* **为何值得观看:** 对这个热门开发工具提供批判性视角，帮助观众判断Zero是编程范式的真正变革还是又一次炒作；对关注AI辅助编程和编程语言未来发展的开发者尤为重要
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IKqgG31EG7g)**
-
-### DOS Zone: Classic DOS Games Playable in Browser
-
-* **Curated collection of Russian-language DOS games** - Features games developed in the USSR and CIS countries, plus international classics translated into Russian
-* **Browser-based gaming platform** - Allows users to play vintage DOS games directly in their web browser without downloads or emulators
-* **Preservation of gaming heritage** - Focuses on preserving and making accessible games from the Soviet and post-Soviet era
-* **Multilingual support** - Provides dedicated section for Russian-language content alongside international titles
-
-### DOS Zone：浏览器中的经典 DOS 游戏
-
-* **精选俄语 DOS 游戏合集** - 收录苏联和独联体国家开发的游戏，以及翻译成俄语的国际经典作品
-* **基于浏览器的游戏平台** - 用户可直接在浏览器中游玩复古 DOS 游戏，无需下载或模拟器
-* **游戏遗产保护** - 专注于保存和提供苏联及后苏联时代的游戏资源
-* **多语言支持** - 为俄语内容提供专门板块，同时包含国际游戏作品
-
-**[Read Original / 阅读原文](https://dos.zone/)**
-
-### Phosphene: Video Wallpaper Engine for macOS Tahoe
-
-* **Native system integration** — Uses Apple's private `WallpaperExtensionKit` framework to plug directly into System Settings → Wallpaper, appearing alongside built-in Aerials
-* **Gapless looping** — Frame-accurate video loops using PTS/DTS offset technique, eliminating stutters and flushes
-* **Power-aware playback** — Graduated `PlaybackPolicy` adjusts rendering based on thermal state, battery level, Game Mode, and screen lock status
-* **Multi-display support** — Different wallpapers per display and per Space, with per-display pause/preview controls
-* **Adaptive variants** — Pre-render lower-resolution/fps versions; renderer automatically swaps to optimal variant based on current power policy
-* **Occlusion detection** — Pauses rendering when desktop is fully covered by windows to save resources
-* **Custom architecture** — Menu bar app manages library; extension runs in `WallpaperAgent` process using `AVSampleBufferDisplayLayer` instead of `AVPlayerLayer` for remote CAContext compatibility
-* **Runtime introspection** — Uses `dlopen` and Mirror-based reflection to interface with private XPC types; includes swizzle for snapshot encoding
-* **macOS 26+ only** — Requires Tahoe, Apple Silicon, Xcode 17+, Swift 6 strict concurrency
-
-### Phosphene：macOS Tahoe 视频壁纸引擎
-
-* **原生系统集成** — 使用 Apple 私有 `WallpaperExtensionKit` 框架直接接入系统设置 → 壁纸，与内置 Aerials 并列显示
-* **无缝循环播放** — 使用 PTS/DTS 偏移技术实现帧精确视频循环，消除卡顿和刷新
-* **电源感知播放** — 分级 `PlaybackPolicy` 根据热状态、电池电量、游戏模式和锁屏状态调整渲染
-* **多显示器支持** — 每个显示器和每个 Space 可设置不同壁纸，支持单显示器暂停/预览控制
-* **自适应变体** — 预渲染低分辨率/帧率版本；渲染器根据当前电源策略自动切换到最优变体
-* **遮挡检测** — 当桌面完全被窗口覆盖时暂停渲染以节省资源
-* **自定义架构** — 菜单栏应用管理库；扩展在 `WallpaperAgent` 进程中运行，使用 `AVSampleBufferDisplayLayer` 而非 `AVPlayerLayer` 以兼容远程 CAContext
-* **运行时内省** — 使用 `dlopen` 和基于 Mirror 的反射与私有 XPC 类型交互；包含快照编码的 swizzle
-* **仅支持 macOS 26+** — 需要 Tahoe、Apple Silicon、Xcode 17+、Swift 6 严格并发
-
-**[Read Original / 阅读原文](https://github.com/kageroumado/phosphene)**
-
-<!-- [Title-Only] -->
-### Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects
-
-* Based on the title, this article likely covers a legislative development in Colorado where Senate Bill 051, which appears to mandate age verification requirements (possibly for online platforms or content), has been amended to exempt open source software projects from its requirements.
-* This is significant because it suggests lawmakers recognized that applying age verification mandates to open source projects could create undue burdens on volunteer-maintained software, stifle innovation, or conflict with the collaborative nature of open source development. The amendment likely reflects advocacy from the tech community about the practical challenges and potential chilling effects such regulations could have on open source ecosystems.
-
-### 科罗拉多州修订 SB051 法案(年龄验证法案)以豁免开源项目
-
-* 根据标题推测,本文可能报道了科罗拉多州参议院第 051 号法案的立法进展。该法案似乎要求实施年龄验证(可能针对在线平台或内容),但已被修订为豁免开源软件项目。
-* 这一修订值得关注,因为它表明立法者认识到对开源项目强制实施年龄验证可能会给志愿者维护的软件带来不当负担,抑制创新,或与开源开发的协作性质相冲突。该修正案可能反映了技术社区的倡导,他们指出此类法规可能对开源生态系统产生实际挑战和潜在的寒蝉效应。
-
-**[Read Original / 阅读原文](https://legiscan.com/CO/bill/SB051/2026)**
-
-### SmallCode - AI Coding Agent Optimized for Small Local LLMs
-
-* **What it does**: A terminal-native AI coding agent specifically designed to work with small local language models (7B-20B parameters) running on consumer hardware, achieving 87% benchmark performance with a 4B-active parameter model.
-
-* **Key features**: 
-  - Budget-managed context window with intelligent summarization to prevent overflow
-  - Forgiving multi-format tool call parser that handles messy small-model output (JSON/YAML/XML/plain text)
-  - Patch-first editing using search-and-replace instead of full file rewrites
-  - TODO-driven planning that decomposes complex tasks into atomic validated steps
-  - MarrowScript cognition layer with prompt caching, structured traces, and tier-based routing
-  - BoneScript integration for Node.js/TypeScript projects (compiles one `.bone` file to complete backend)
-  - Optional cloud model escalation (Claude/GPT/DeepSeek) as fallback on hard failures
-  - 2-stage tool routing to reduce schema overhead
-  - Fully local operation with no network requirements (privacy-first)
-
-* **Why it's notable**: Bridges the gap between expensive cloud AI coding assistants and affordable local models by compensating for small model limitations through intelligent architecture. Achieves frontier-model-like results (87% benchmark) using models that run on consumer GPUs, making AI-assisted coding accessible without API costs or privacy concerns. Includes comprehensive observability (token tracking, execution traces, evaluations) and can be used both as a CLI tool and programmatic API.
-
----
-
 ### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
 
 * **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(7B-20B 参数)设计的终端原生 AI 编码代理,使用 4B 激活参数模型即可达到 87% 的基准测试性能。
@@ -683,4 +599,121 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 通过智能架构弥补小模型的局限性,在昂贵的云端 AI 编码助手和经济实惠的本地模型之间架起桥梁。使用可在消费级 GPU 上运行的模型即可达到接近前沿模型的效果(87% 基准测试),让 AI 辅助编码无需 API 费用或隐私顾虑。包含全面的可观测性功能(令牌追踪、执行追踪、评估),既可作为 CLI 工具也可作为编程 API 使用。
 
 **[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
+
+### Haskell Foundation 2026 Restructuring: Focus on Technical Work and Member Engagement
+
+* **Executive Director Transition**: José, the longest-serving executive director, will step down in June 2026 after guiding the Foundation through challenging times and leaving it in strong financial shape
+* **Strategic Restructuring**: The Board is eliminating the full-time executive director role to redirect most financial resources toward technical projects and ecosystem improvements
+* **Member-Centric Approach**: Shifting from a donor/sponsor model to an active membership model where contributors have direct input on project priorities and can see clear impact from their contributions
+* **New Technical Committee**: A dedicated committee with strong member representation will direct resources toward a unified technical vision for the Haskell ecosystem
+* **Distributed Leadership**: Executive responsibilities will be split between the Board and a new part-time role focused on financial sustainability
+* **Board Changes**: Andres Löh (former Chair), Hazel Weakly, and Josh Meredith departed; Dominik Schrempf and Simon Marlow joined as new directors
+* **Increased Transparency**: The Foundation commits to more regular communications with the community in the coming months
+
+### Haskell 基金会 2026 年重组：聚焦技术工作与成员参与
+
+* **执行董事交接**：任职时间最长的执行董事 José 将于 2026 年 6 月卸任，他带领基金会度过艰难时期并使其财务状况良好
+* **战略重组**：董事会取消全职执行董事职位，将大部分财务资源重新分配到技术项目和生态系统改进上
+* **以成员为中心的模式**：从捐赠者/赞助商模式转向积极的成员制模式，贡献者可直接参与项目优先级决策并清晰看到其贡献的影响
+* **新技术委员会**：成立专门委员会（包含强大的成员代表）来指导资源投向统一的 Haskell 生态系统技术愿景
+* **分布式领导**：执行职责将由董事会和一个专注于财务可持续性的新兼职角色共同承担
+* **董事会变动**：Andres Löh（前主席）、Hazel Weakly 和 Josh Meredith 离任；Dominik Schrempf 和 Simon Marlow 加入担任新董事
+* **提高透明度**：基金会承诺在未来几个月内与社区进行更频繁的沟通
+
+**[Read Original / 阅读原文](https://discourse.haskell.org/t/haskell-foundation-2026-update/14136)**
+
+### Phosphene: Video Wallpaper Engine for macOS Tahoe
+
+* **Native system integration** — Uses Apple's private `WallpaperExtensionKit` framework to plug directly into System Settings → Wallpaper, appearing alongside built-in Aerials
+* **Gapless looping** — Frame-accurate video loops using PTS/DTS offset technique, eliminating stutters and flushes
+* **Power-aware playback** — Graduated `PlaybackPolicy` adjusts rendering based on thermal state, battery level, Game Mode, and presentation mode (active/locked/idle)
+* **Multi-display support** — Different wallpapers per display and per Space, with per-display pause/preview controls via menu bar
+* **Adaptive variants** — Optional pre-rendered lower-resolution/fps variants automatically selected based on current power policy
+* **Smart resource management** — Pauses when desktop is fully occluded by windows; smooth cubic-curve transitions for lock screen
+* **Technical architecture** — Menu bar app manages library and transcoding; extension runs in `WallpaperAgent` process using `AVSampleBufferDisplayLayer` for rendering
+* **Requirements** — macOS Tahoe (26.0+), Apple Silicon only, built with Xcode 17+ and Swift 6 strict concurrency
+* **Open source (MIT)** — Originally commercial, now open-sourced; uses runtime introspection and swizzling to work with private APIs
+
+### Phosphene：macOS Tahoe 视频壁纸引擎
+
+* **原生系统集成** — 使用 Apple 私有的 `WallpaperExtensionKit` 框架直接接入系统设置 → 壁纸，与内置 Aerials 并列显示
+* **无缝循环播放** — 使用 PTS/DTS 偏移技术实现帧精确视频循环，消除卡顿和刷新
+* **电源感知播放** — 分级 `PlaybackPolicy` 根据热状态、电池电量、游戏模式和呈现模式（活动/锁定/空闲）调整渲染
+* **多显示器支持** — 每个显示器和每个 Space 可设置不同壁纸，通过菜单栏控制各显示器的暂停/预览
+* **自适应变体** — 可选预渲染低分辨率/帧率变体，根据当前电源策略自动选择
+* **智能资源管理** — 当桌面被窗口完全遮挡时暂停；锁屏时使用三次曲线平滑过渡
+* **技术架构** — 菜单栏应用管理库和转码；扩展在 `WallpaperAgent` 进程中运行，使用 `AVSampleBufferDisplayLayer` 渲染
+* **系统要求** — macOS Tahoe (26.0+)，仅支持 Apple Silicon，需 Xcode 17+ 和 Swift 6 严格并发模式构建
+* **开源 (MIT)** — 原为商业项目，现已开源；使用运行时反射和方法交换来调用私有 API
+
+**[Read Original / 阅读原文](https://github.com/kageroumado/phosphene)**
+
+<!-- [Title-Only] -->
+### New features in GCC 16: Improved error messages and SARIF output
+
+* Based on the title, this article likely covers enhancements to the GNU Compiler Collection (GCC) version 16, focusing on two main areas: better error message formatting to help developers understand compilation issues more quickly, and support for SARIF (Static Analysis Results Interchange Format) output, which is a standardized JSON format for sharing static analysis results across different tools and IDEs.
+
+* This is interesting to developers because clearer error messages reduce debugging time and cognitive load, while SARIF support enables better integration with modern development workflows, CI/CD pipelines, and code analysis platforms. These improvements make GCC more developer-friendly and interoperable with the broader tooling ecosystem.
+
+### GCC 16 新特性：改进的错误消息和 SARIF 输出
+
+* 根据标题推测，本文可能介绍 GNU 编译器集合（GCC）第 16 版的增强功能，重点关注两个方面：更好的错误消息格式化，帮助开发者更快理解编译问题；以及对 SARIF（静态分析结果交换格式）输出的支持，这是一种用于在不同工具和 IDE 之间共享静态分析结果的标准化 JSON 格式。
+
+* 这对开发者很有价值，因为更清晰的错误消息可以减少调试时间和认知负担，而 SARIF 支持则能更好地集成到现代开发工作流、CI/CD 流水线和代码分析平台中。这些改进使 GCC 更加开发者友好，并与更广泛的工具生态系统实现更好的互操作性。
+
+**[Read Original / 阅读原文](https://developers.redhat.com/articles/2026/04/28/gcc-16-improved-error-messages-sarif-output)**
+
+### 🎬 900 stars in 24 hours — what's the catch with Zero?
+
+**Channel:** DIY Smart Code
+
+* **What the video covers:** An analysis of Zero, Vercel Labs' newly released systems programming language that gained 900 GitHub stars within 24 hours of launch
+* **Key topics discussed:** Zero's unique design philosophy of being built specifically for AI agents rather than human developers; its explicit syntax approach; the implications of AI-first language design in systems programming; potential catches or limitations despite the hype
+* **Why it's worth watching:** Provides critical insight into a potentially paradigm-shifting development tool that challenges conventional programming language design by prioritizing AI agent comprehension over human readability—essential viewing for developers interested in AI-assisted development and the future of programming
+
+---
+
+### 🎬 24小时获900星——Zero编程语言有何玄机?
+
+**频道:** DIY Smart Code
+
+* **视频内容概述:** 深度分析Vercel Labs刚发布的Zero系统编程语言，该语言在发布24小时内就获得了900个GitHub星标
+* **主要话题:** Zero从设计之初就专为AI代理而非人类开发者打造的独特理念；其显式语法方法；AI优先的语言设计在系统编程中的意义；尽管备受关注但可能存在的局限性或问题
+* **为何值得观看:** 深入剖析这个可能改变开发范式的工具，它通过优先考虑AI代理的理解能力而非人类可读性来挑战传统编程语言设计——对关注AI辅助开发和编程未来的开发者来说是必看内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IKqgG31EG7g)**
+
+### 🎬 Hermes Agent Full Tutorial INSTALLATION + USECASES
+**Channel:** CodeHead
+
+* **What the video covers:** A comprehensive tutorial on installing and deploying Hermes Agent, an AI agent framework, with practical hosting setup using Hostinger
+* **Key topics discussed:** Step-by-step installation process, configuration requirements, real-world use cases for Hermes Agent, hosting considerations and deployment strategies
+* **Why it's worth watching:** Provides hands-on guidance for developers looking to implement AI agents in their projects, includes practical hosting solutions with discount offers, and demonstrates actual use cases beyond basic setup
+
+---
+
+### 🎬 Hermes Agent 完整教程：安装与使用案例
+**频道:** CodeHead
+
+* **视频内容概述:** 全面讲解 Hermes Agent（AI 智能体框架）的安装部署流程，包括使用 Hostinger 进行实际托管配置
+* **主要话题:** 分步安装指南、配置要求说明、Hermes Agent 的实际应用场景、托管方案选择与部署策略
+* **为何值得观看:** 为希望在项目中实现 AI 智能体的开发者提供实操指导，包含实用的托管解决方案和优惠信息，展示了超越基础设置的真实用例
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GjyOQy19so)**
+
+### 🎬 Find almost every tool for developers #development #coding #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A curated collection or directory showcasing a wide range of developer tools across different categories
+* Key topics discussed: Development tools, coding utilities, productivity enhancers for software engineers and programmers
+* Why it's worth watching: Provides a comprehensive resource for discovering new tools that can streamline your development workflow and boost productivity, potentially saving time in tool research
+
+### 🎬 开发者工具大全 #开发 #编程 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 展示了一个精选的开发者工具集合或目录,涵盖多个类别的工具资源
+* 主要话题: 开发工具、编程实用程序、提升软件工程师和程序员生产力的工具
+* 为何值得观看: 提供了一个全面的资源库来发现新工具,可以优化开发工作流程并提高生产力,节省工具搜索时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rJjsLX02X-M)**
 
