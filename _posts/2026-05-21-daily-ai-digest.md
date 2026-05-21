@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 21, 2026"
 date: 2026-05-21
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -590,4 +590,97 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 对这个热门开发工具提供批判性视角，帮助观众判断Zero是编程范式的真正变革还是又一次炒作；对关注AI辅助编程和编程语言未来发展的开发者尤为重要
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IKqgG31EG7g)**
+
+### DOS Zone: Classic DOS Games Playable in Browser
+
+* **Curated collection of Russian-language DOS games** - Features games developed in the USSR and CIS countries, plus international classics translated into Russian
+* **Browser-based gaming platform** - Allows users to play vintage DOS games directly in their web browser without downloads or emulators
+* **Preservation of gaming heritage** - Focuses on preserving and making accessible games from the Soviet and post-Soviet era
+* **Multilingual support** - Provides dedicated section for Russian-language content alongside international titles
+
+### DOS Zone：浏览器中的经典 DOS 游戏
+
+* **精选俄语 DOS 游戏合集** - 收录苏联和独联体国家开发的游戏，以及翻译成俄语的国际经典作品
+* **基于浏览器的游戏平台** - 用户可直接在浏览器中游玩复古 DOS 游戏，无需下载或模拟器
+* **游戏遗产保护** - 专注于保存和提供苏联及后苏联时代的游戏资源
+* **多语言支持** - 为俄语内容提供专门板块，同时包含国际游戏作品
+
+**[Read Original / 阅读原文](https://dos.zone/)**
+
+### Phosphene: Video Wallpaper Engine for macOS Tahoe
+
+* **Native system integration** — Uses Apple's private `WallpaperExtensionKit` framework to plug directly into System Settings → Wallpaper, appearing alongside built-in Aerials
+* **Gapless looping** — Frame-accurate video loops using PTS/DTS offset technique, eliminating stutters and flushes
+* **Power-aware playback** — Graduated `PlaybackPolicy` adjusts rendering based on thermal state, battery level, Game Mode, and screen lock status
+* **Multi-display support** — Different wallpapers per display and per Space, with per-display pause/preview controls
+* **Adaptive variants** — Pre-render lower-resolution/fps versions; renderer automatically swaps to optimal variant based on current power policy
+* **Occlusion detection** — Pauses rendering when desktop is fully covered by windows to save resources
+* **Custom architecture** — Menu bar app manages library; extension runs in `WallpaperAgent` process using `AVSampleBufferDisplayLayer` instead of `AVPlayerLayer` for remote CAContext compatibility
+* **Runtime introspection** — Uses `dlopen` and Mirror-based reflection to interface with private XPC types; includes swizzle for snapshot encoding
+* **macOS 26+ only** — Requires Tahoe, Apple Silicon, Xcode 17+, Swift 6 strict concurrency
+
+### Phosphene：macOS Tahoe 视频壁纸引擎
+
+* **原生系统集成** — 使用 Apple 私有 `WallpaperExtensionKit` 框架直接接入系统设置 → 壁纸，与内置 Aerials 并列显示
+* **无缝循环播放** — 使用 PTS/DTS 偏移技术实现帧精确视频循环，消除卡顿和刷新
+* **电源感知播放** — 分级 `PlaybackPolicy` 根据热状态、电池电量、游戏模式和锁屏状态调整渲染
+* **多显示器支持** — 每个显示器和每个 Space 可设置不同壁纸，支持单显示器暂停/预览控制
+* **自适应变体** — 预渲染低分辨率/帧率版本；渲染器根据当前电源策略自动切换到最优变体
+* **遮挡检测** — 当桌面完全被窗口覆盖时暂停渲染以节省资源
+* **自定义架构** — 菜单栏应用管理库；扩展在 `WallpaperAgent` 进程中运行，使用 `AVSampleBufferDisplayLayer` 而非 `AVPlayerLayer` 以兼容远程 CAContext
+* **运行时内省** — 使用 `dlopen` 和基于 Mirror 的反射与私有 XPC 类型交互；包含快照编码的 swizzle
+* **仅支持 macOS 26+** — 需要 Tahoe、Apple Silicon、Xcode 17+、Swift 6 严格并发
+
+**[Read Original / 阅读原文](https://github.com/kageroumado/phosphene)**
+
+<!-- [Title-Only] -->
+### Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects
+
+* Based on the title, this article likely covers a legislative development in Colorado where Senate Bill 051, which appears to mandate age verification requirements (possibly for online platforms or content), has been amended to exempt open source software projects from its requirements.
+* This is significant because it suggests lawmakers recognized that applying age verification mandates to open source projects could create undue burdens on volunteer-maintained software, stifle innovation, or conflict with the collaborative nature of open source development. The amendment likely reflects advocacy from the tech community about the practical challenges and potential chilling effects such regulations could have on open source ecosystems.
+
+### 科罗拉多州修订 SB051 法案(年龄验证法案)以豁免开源项目
+
+* 根据标题推测,本文可能报道了科罗拉多州参议院第 051 号法案的立法进展。该法案似乎要求实施年龄验证(可能针对在线平台或内容),但已被修订为豁免开源软件项目。
+* 这一修订值得关注,因为它表明立法者认识到对开源项目强制实施年龄验证可能会给志愿者维护的软件带来不当负担,抑制创新,或与开源开发的协作性质相冲突。该修正案可能反映了技术社区的倡导,他们指出此类法规可能对开源生态系统产生实际挑战和潜在的寒蝉效应。
+
+**[Read Original / 阅读原文](https://legiscan.com/CO/bill/SB051/2026)**
+
+### SmallCode - AI Coding Agent Optimized for Small Local LLMs
+
+* **What it does**: A terminal-native AI coding agent specifically designed to work with small local language models (7B-20B parameters) running on consumer hardware, achieving 87% benchmark performance with a 4B-active parameter model.
+
+* **Key features**: 
+  - Budget-managed context window with intelligent summarization to prevent overflow
+  - Forgiving multi-format tool call parser that handles messy small-model output (JSON/YAML/XML/plain text)
+  - Patch-first editing using search-and-replace instead of full file rewrites
+  - TODO-driven planning that decomposes complex tasks into atomic validated steps
+  - MarrowScript cognition layer with prompt caching, structured traces, and tier-based routing
+  - BoneScript integration for Node.js/TypeScript projects (compiles one `.bone` file to complete backend)
+  - Optional cloud model escalation (Claude/GPT/DeepSeek) as fallback on hard failures
+  - 2-stage tool routing to reduce schema overhead
+  - Fully local operation with no network requirements (privacy-first)
+
+* **Why it's notable**: Bridges the gap between expensive cloud AI coding assistants and affordable local models by compensating for small model limitations through intelligent architecture. Achieves frontier-model-like results (87% benchmark) using models that run on consumer GPUs, making AI-assisted coding accessible without API costs or privacy concerns. Includes comprehensive observability (token tracking, execution traces, evaluations) and can be used both as a CLI tool and programmatic API.
+
+---
+
+### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
+
+* **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(7B-20B 参数)设计的终端原生 AI 编码代理,使用 4B 激活参数模型即可达到 87% 的基准测试性能。
+
+* **主要特点**:
+  - 智能上下文窗口预算管理,通过摘要防止溢出
+  - 容错的多格式工具调用解析器,可处理小模型的混乱输出(JSON/YAML/XML/纯文本)
+  - 补丁优先编辑,使用搜索替换而非完整文件重写
+  - TODO 驱动的规划系统,将复杂任务分解为经过验证的原子步骤
+  - MarrowScript 认知层,具备提示缓存、结构化追踪和分层路由
+  - BoneScript 集成,可将单个 `.bone` 文件编译为完整的 Node.js/TypeScript 后端
+  - 可选的云模型升级机制(Claude/GPT/DeepSeek)作为失败时的后备方案
+  - 两阶段工具路由以减少模式开销
+  - 完全本地运行,无需网络连接(隐私优先)
+
+* **为何值得关注**: 通过智能架构弥补小模型的局限性,在昂贵的云端 AI 编码助手和经济实惠的本地模型之间架起桥梁。使用可在消费级 GPU 上运行的模型即可达到接近前沿模型的效果(87% 基准测试),让 AI 辅助编码无需 API 费用或隐私顾虑。包含全面的可观测性功能(令牌追踪、执行追踪、评估),既可作为 CLI 工具也可作为编程 API 使用。
+
+**[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
 
