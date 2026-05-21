@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 21, 2026"
 date: 2026-05-21
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -581,98 +581,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
-
-* **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(7B-20B 参数)设计的终端原生 AI 编码代理,使用 4B 激活参数模型即可达到 87% 的基准测试性能。
-
-* **主要特点**:
-  - 智能上下文窗口预算管理,通过摘要防止溢出
-  - 容错的多格式工具调用解析器,可处理小模型的混乱输出(JSON/YAML/XML/纯文本)
-  - 补丁优先编辑,使用搜索替换而非完整文件重写
-  - TODO 驱动的规划系统,将复杂任务分解为经过验证的原子步骤
-  - MarrowScript 认知层,具备提示缓存、结构化追踪和分层路由
-  - BoneScript 集成,可将单个 `.bone` 文件编译为完整的 Node.js/TypeScript 后端
-  - 可选的云模型升级机制(Claude/GPT/DeepSeek)作为失败时的后备方案
-  - 两阶段工具路由以减少模式开销
-  - 完全本地运行,无需网络连接(隐私优先)
-
-* **为何值得关注**: 通过智能架构弥补小模型的局限性,在昂贵的云端 AI 编码助手和经济实惠的本地模型之间架起桥梁。使用可在消费级 GPU 上运行的模型即可达到接近前沿模型的效果(87% 基准测试),让 AI 辅助编码无需 API 费用或隐私顾虑。包含全面的可观测性功能(令牌追踪、执行追踪、评估),既可作为 CLI 工具也可作为编程 API 使用。
-
-**[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
-
-### Haskell Foundation 2026 Restructuring: Focus on Technical Work and Member Engagement
-
-* **Executive Director Transition**: José, the longest-serving executive director, will step down in June 2026 after guiding the Foundation through challenging times and leaving it in strong financial shape
-* **Strategic Restructuring**: The Board is eliminating the full-time executive director role to redirect most financial resources toward technical projects and ecosystem improvements
-* **Member-Centric Approach**: Shifting from a donor/sponsor model to an active membership model where contributors have direct input on project priorities and can see clear impact from their contributions
-* **New Technical Committee**: A dedicated committee with strong member representation will direct resources toward a unified technical vision for the Haskell ecosystem
-* **Distributed Leadership**: Executive responsibilities will be split between the Board and a new part-time role focused on financial sustainability
-* **Board Changes**: Andres Löh (former Chair), Hazel Weakly, and Josh Meredith departed; Dominik Schrempf and Simon Marlow joined as new directors
-* **Increased Transparency**: The Foundation commits to more regular communications with the community in the coming months
-
-### Haskell 基金会 2026 年重组：聚焦技术工作与成员参与
-
-* **执行董事交接**：任职时间最长的执行董事 José 将于 2026 年 6 月卸任，他带领基金会度过艰难时期并使其财务状况良好
-* **战略重组**：董事会取消全职执行董事职位，将大部分财务资源重新分配到技术项目和生态系统改进上
-* **以成员为中心的模式**：从捐赠者/赞助商模式转向积极的成员制模式，贡献者可直接参与项目优先级决策并清晰看到其贡献的影响
-* **新技术委员会**：成立专门委员会（包含强大的成员代表）来指导资源投向统一的 Haskell 生态系统技术愿景
-* **分布式领导**：执行职责将由董事会和一个专注于财务可持续性的新兼职角色共同承担
-* **董事会变动**：Andres Löh（前主席）、Hazel Weakly 和 Josh Meredith 离任；Dominik Schrempf 和 Simon Marlow 加入担任新董事
-* **提高透明度**：基金会承诺在未来几个月内与社区进行更频繁的沟通
-
-**[Read Original / 阅读原文](https://discourse.haskell.org/t/haskell-foundation-2026-update/14136)**
-
-### Phosphene: Video Wallpaper Engine for macOS Tahoe
-
-* **Native system integration** — Uses Apple's private `WallpaperExtensionKit` framework to plug directly into System Settings → Wallpaper, appearing alongside built-in Aerials
-* **Gapless looping** — Frame-accurate video loops using PTS/DTS offset technique, eliminating stutters and flushes
-* **Power-aware playback** — Graduated `PlaybackPolicy` adjusts rendering based on thermal state, battery level, Game Mode, and presentation mode (active/locked/idle)
-* **Multi-display support** — Different wallpapers per display and per Space, with per-display pause/preview controls via menu bar
-* **Adaptive variants** — Optional pre-rendered lower-resolution/fps variants automatically selected based on current power policy
-* **Smart resource management** — Pauses when desktop is fully occluded by windows; smooth cubic-curve transitions for lock screen
-* **Technical architecture** — Menu bar app manages library and transcoding; extension runs in `WallpaperAgent` process using `AVSampleBufferDisplayLayer` for rendering
-* **Requirements** — macOS Tahoe (26.0+), Apple Silicon only, built with Xcode 17+ and Swift 6 strict concurrency
-* **Open source (MIT)** — Originally commercial, now open-sourced; uses runtime introspection and swizzling to work with private APIs
-
-### Phosphene：macOS Tahoe 视频壁纸引擎
-
-* **原生系统集成** — 使用 Apple 私有的 `WallpaperExtensionKit` 框架直接接入系统设置 → 壁纸，与内置 Aerials 并列显示
-* **无缝循环播放** — 使用 PTS/DTS 偏移技术实现帧精确视频循环，消除卡顿和刷新
-* **电源感知播放** — 分级 `PlaybackPolicy` 根据热状态、电池电量、游戏模式和呈现模式（活动/锁定/空闲）调整渲染
-* **多显示器支持** — 每个显示器和每个 Space 可设置不同壁纸，通过菜单栏控制各显示器的暂停/预览
-* **自适应变体** — 可选预渲染低分辨率/帧率变体，根据当前电源策略自动选择
-* **智能资源管理** — 当桌面被窗口完全遮挡时暂停；锁屏时使用三次曲线平滑过渡
-* **技术架构** — 菜单栏应用管理库和转码；扩展在 `WallpaperAgent` 进程中运行，使用 `AVSampleBufferDisplayLayer` 渲染
-* **系统要求** — macOS Tahoe (26.0+)，仅支持 Apple Silicon，需 Xcode 17+ 和 Swift 6 严格并发模式构建
-* **开源 (MIT)** — 原为商业项目，现已开源；使用运行时反射和方法交换来调用私有 API
-
-**[Read Original / 阅读原文](https://github.com/kageroumado/phosphene)**
-
-<!-- [Title-Only] -->
-### New features in GCC 16: Improved error messages and SARIF output
-
-* Based on the title, this article likely covers enhancements to the GNU Compiler Collection (GCC) version 16, focusing on two main areas: better error message formatting to help developers understand compilation issues more quickly, and support for SARIF (Static Analysis Results Interchange Format) output, which is a standardized JSON format for sharing static analysis results across different tools and IDEs.
-
-* This is interesting to developers because clearer error messages reduce debugging time and cognitive load, while SARIF support enables better integration with modern development workflows, CI/CD pipelines, and code analysis platforms. These improvements make GCC more developer-friendly and interoperable with the broader tooling ecosystem.
-
-### GCC 16 新特性：改进的错误消息和 SARIF 输出
-
-* 根据标题推测，本文可能介绍 GNU 编译器集合（GCC）第 16 版的增强功能，重点关注两个方面：更好的错误消息格式化，帮助开发者更快理解编译问题；以及对 SARIF（静态分析结果交换格式）输出的支持，这是一种用于在不同工具和 IDE 之间共享静态分析结果的标准化 JSON 格式。
-
-* 这对开发者很有价值，因为更清晰的错误消息可以减少调试时间和认知负担，而 SARIF 支持则能更好地集成到现代开发工作流、CI/CD 流水线和代码分析平台中。这些改进使 GCC 更加开发者友好，并与更广泛的工具生态系统实现更好的互操作性。
-
-**[Read Original / 阅读原文](https://developers.redhat.com/articles/2026/04/28/gcc-16-improved-error-messages-sarif-output)**
-
-### 🎬 900 stars in 24 hours — what's the catch with Zero?
-
-**Channel:** DIY Smart Code
-
-* **What the video covers:** An analysis of Zero, Vercel Labs' newly released systems programming language that gained 900 GitHub stars within 24 hours of launch
-* **Key topics discussed:** Zero's unique design philosophy of being built specifically for AI agents rather than human developers; its explicit syntax approach; the implications of AI-first language design in systems programming; potential catches or limitations despite the hype
-* **Why it's worth watching:** Provides critical insight into a potentially paradigm-shifting development tool that challenges conventional programming language design by prioritizing AI agent comprehension over human readability—essential viewing for developers interested in AI-assisted development and the future of programming
-
----
-
 ### 🎬 24小时获900星——Zero编程语言有何玄机?
 
 **频道:** DIY Smart Code
@@ -716,4 +624,206 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了一个全面的资源库来发现新工具,可以优化开发工作流程并提高生产力,节省工具搜索时间
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=rJjsLX02X-M)**
+
+### New AI-Powered Ad Formats Coming to Google Search
+
+* **AI Mode adoption**: 75% of users report making faster, more confident purchasing decisions using AI Mode in Google Search
+* **Two new ad formats built with Gemini**: Conversational Discovery ads and Highlighted Answers, both designed to provide relevant product details with helpful guidance
+* **Independent AI explainer**: Gemini evaluates and synthesizes product information independently, displaying context alongside advertiser creative to ensure transparency and trust
+* **Conversational Discovery ads**: Ads that answer specific user questions with tailored creative highlighting relevant product features (e.g., home fragrance solutions for spa-like ambiance)
+* **Highlighted Answers**: High-quality ads appear as recommendations within AI Mode's suggestion lists (e.g., best language learning apps for travel)
+* **Clear labeling**: All new ad formats will be clearly marked as "Sponsored" to maintain transparency
+
+### Google 搜索推出基于 Gemini 构建的新广告格式
+
+* **AI 模式采用率高**: 75% 的用户表示使用 Google 搜索的 AI 模式能更快、更自信地做出购买决策
+* **两种基于 Gemini 的新广告格式**: 对话式发现广告和高亮答案,旨在提供相关产品详情和实用指导
+* **独立 AI 解释器**: Gemini 独立评估和综合产品信息,在广告创意旁显示背景说明,确保透明度和信任度
+* **对话式发现广告**: 针对用户具体问题定制广告创意,突出相关产品特性(例如:为家居营造水疗般香氛的解决方案)
+* **高亮答案**: 在 AI 模式的推荐列表中展示高质量广告(例如:旅行用语言学习应用推荐)
+* **清晰标识**: 所有新广告格式都将明确标注为"赞助内容",保持透明度
+
+**[Read Original / 阅读原文](https://blog.google/products/ads-commerce/google-marketing-live-search-ads/)**
+
+### RMUX: Universal Rust Terminal Multiplexer for the Agentic Era
+
+* **Modern tmux alternative** written in Rust with full tmux CLI compatibility (90 commands implemented)
+* **Cross-platform support** for Linux, macOS, and Windows (including native Windows Named Pipes, no WSL required)
+* **Daemon-backed SDK** enabling programmatic control, inspection, and orchestration of terminal sessions
+* **Native Ratatui integration** for building custom terminal UIs with live pane rendering
+* **Designed for AI agents and automation** with detachable sessions, structured snapshots, and scriptable workflows
+* **Current release v0.2.0** (May 2026) - public preview with expected bugs, community feedback encouraged
+* **Three public interfaces**: CLI (`rmux`), Rust SDK (`rmux-sdk`), and Ratatui widget (`ratatui-rmux`)
+* **Demo applications** include multi-agent orchestration, terminal-browser mirroring, Playwright testing, and custom multiplexer UIs
+* **Production-ready architecture** with platform-neutral types, local IPC transports, and `#![forbid(unsafe_code)]` in high-level crates
+* **Easy installation** via curl script (Unix) or PowerShell (Windows), also available through cargo and GitHub releases
+
+### RMUX：面向智能体时代的通用 Rust 终端复用器
+
+* **现代化 tmux 替代品**，使用 Rust 编写，完全兼容 tmux CLI（已实现 90 个命令）
+* **跨平台支持** Linux、macOS 和 Windows（包括原生 Windows 命名管道，无需 WSL）
+* **守护进程支持的 SDK**，可编程控制、检查和编排终端会话
+* **原生 Ratatui 集成**，用于构建带实时窗格渲染的自定义终端 UI
+* **专为 AI 智能体和自动化设计**，支持可分离会话、结构化快照和可脚本化工作流
+* **当前版本 v0.2.0**（2026 年 5 月）- 公开预览版，预期存在 bug，欢迎社区反馈
+* **三个公共接口**：CLI（`rmux`）、Rust SDK（`rmux-sdk`）和 Ratatui 组件（`ratatui-rmux`）
+* **演示应用**包括多智能体编排、终端-浏览器镜像、Playwright 测试和自定义复用器 UI
+* **生产就绪架构**，具有平台中立类型、本地 IPC 传输，高级 crate 使用 `#![forbid(unsafe_code)]`
+* **便捷安装**，通过 curl 脚本（Unix）或 PowerShell（Windows），也可通过 cargo 和 GitHub releases 获取
+
+**[Read Original / 阅读原文](https://github.com/helvesec/rmux)**
+
+### Phosphene: Video Wallpaper Engine for macOS Tahoe
+
+* **Native system integration** — Uses Apple's private `WallpaperExtensionKit` framework to plug directly into System Settings → Wallpaper, appearing alongside built-in Aerials
+* **Gapless looping** — Frame-accurate video loops using PTS/DTS offset technique, eliminating stutters and flushes
+* **Power-aware playback** — Graduated `PlaybackPolicy` adjusts rendering based on thermal state, battery level, Game Mode, and screen lock status
+* **Multi-display support** — Different wallpapers per display and per Space, with per-display pause/preview controls
+* **Adaptive variants** — Pre-render lower-resolution/fps versions; renderer automatically swaps to optimal variant based on current power policy
+* **Occlusion detection** — Pauses rendering when desktop is fully covered by windows to save resources
+* **Architecture** — Menu bar app manages library and transcoding; extension runs in system `WallpaperAgent` process using `AVSampleBufferDisplayLayer` for rendering
+* **Technical approach** — Uses `dlopen` and Mirror-based runtime introspection to interface with private APIs; includes XPC swizzle to fix snapshot encoding
+* **Requirements** — macOS Tahoe (26.0+), Apple Silicon only, Xcode 17+ with Swift 6
+* **Open source** — MIT licensed, originally a commercial project now released publicly
+
+### Phosphene：macOS Tahoe 视频壁纸引擎
+
+* **原生系统集成** — 使用 Apple 私有的 `WallpaperExtensionKit` 框架直接接入系统设置 → 壁纸，与内置 Aerials 并列显示
+* **无缝循环播放** — 使用 PTS/DTS 偏移技术实现帧精确视频循环，消除卡顿和刷新
+* **电源感知播放** — 分级 `PlaybackPolicy` 根据热状态、电池电量、游戏模式和锁屏状态调整渲染
+* **多显示器支持** — 每个显示器和每个 Space 可设置不同壁纸，支持单独暂停/预览控制
+* **自适应变体** — 预渲染低分辨率/帧率版本；渲染器根据当前电源策略自动切换到最优变体
+* **遮挡检测** — 当桌面完全被窗口覆盖时暂停渲染以节省资源
+* **架构设计** — 菜单栏应用管理库和转码；扩展运行在系统 `WallpaperAgent` 进程中，使用 `AVSampleBufferDisplayLayer` 渲染
+* **技术实现** — 使用 `dlopen` 和基于 Mirror 的运行时反射与私有 API 交互；包含 XPC swizzle 修复快照编码问题
+* **系统要求** — macOS Tahoe (26.0+)，仅支持 Apple Silicon，需要 Xcode 17+ 和 Swift 6
+* **开源项目** — MIT 许可证，原为商业项目现已公开发布
+
+**[Read Original / 阅读原文](https://github.com/kageroumado/phosphene)**
+
+### Claude Code Plugins Directory - Official Marketplace for Claude Code Extensions
+
+* **What it does**: Provides a curated directory of high-quality plugins that extend Claude Code's functionality, including both Anthropic-developed internal plugins and vetted third-party community plugins
+* **Key features**: Standardized plugin structure with support for MCP servers, slash commands, agents, and skills; easy installation via `/plugin install` command or discovery interface; clear separation between internal and external plugins
+* **Why it's notable**: First official plugin marketplace for Claude Code, enabling developers to enhance their AI-powered development environment with trusted extensions; 674 stars today indicates strong community interest in extending Claude's capabilities
+
+### Claude Code 插件目录 - Claude Code 扩展官方市场
+
+* **功能介绍**: 提供精选的高质量插件目录,用于扩展 Claude Code 的功能,包括 Anthropic 开发的内部插件和经过审核的第三方社区插件
+* **主要特点**: 标准化的插件结构,支持 MCP 服务器、斜杠命令、代理和技能;通过 `/plugin install` 命令或发现界面轻松安装;内部和外部插件明确分离
+* **为何值得关注**: Claude Code 的首个官方插件市场,使开发者能够通过可信扩展增强 AI 驱动的开发环境;今日获得 674 星标,表明社区对扩展 Claude 功能有强烈兴趣
+
+**[View Repository / 查看仓库](https://github.com/anthropics/claude-plugins-official)**
+
+### dotnet/skills - Official .NET Agent Skills Repository
+
+* **What it does**: Provides a curated collection of skills and plugins that enable AI coding agents to work effectively with .NET and C# projects, covering everything from core development tasks to specialized areas like data access, diagnostics, and AI/ML integration.
+
+* **Key features**: 
+  - 12 specialized plugin categories including core .NET, Entity Framework, MSBuild, NuGet, MAUI, ASP.NET Core, and .NET 11 features
+  - Compatible with multiple AI coding platforms (GitHub Copilot CLI, Claude Code, VS Code, Cursor, OpenAI Codex)
+  - Follows the open agentskills.io standard for interoperability
+  - Includes performance dashboard tracking accuracy and efficiency metrics
+  - Covers full development lifecycle: scaffolding, testing, debugging, upgrading, and deployment
+
+* **Why it's notable**: This is Microsoft's official skills repository for AI agents working with .NET, representing a significant investment in making .NET development more accessible to AI-powered coding assistants. With 96 stars today, it reflects growing interest in agent-assisted development and positions .NET as a first-class citizen in the emerging AI coding ecosystem. The comprehensive coverage and multi-platform support make it a foundational resource for developers using AI tools with .NET.
+
+---
+
+### dotnet/skills - 官方 .NET AI 代理技能库
+
+* **功能介绍**: 提供精心策划的技能和插件集合,使 AI 编码代理能够高效处理 .NET 和 C# 项目,涵盖从核心开发任务到数据访问、诊断和 AI/ML 集成等专业领域。
+
+* **主要特点**:
+  - 12 个专业插件类别,包括核心 .NET、Entity Framework、MSBuild、NuGet、MAUI、ASP.NET Core 和 .NET 11 新特性
+  - 兼容多个 AI 编码平台(GitHub Copilot CLI、Claude Code、VS Code、Cursor、OpenAI Codex)
+  - 遵循开放的 agentskills.io 标准,确保互操作性
+  - 包含性能仪表板,跟踪准确性和效率指标
+  - 覆盖完整开发生命周期:脚手架搭建、测试、调试、升级和部署
+
+* **为何值得关注**: 这是微软官方为 AI 代理提供的 .NET 技能库,代表了微软在让 .NET 开发更易于 AI 编码助手使用方面的重大投入。今日获得 96 星标,反映了业界对 AI 辅助开发日益增长的兴趣,并将 .NET 定位为新兴 AI 编码生态系统中的一等公民。全面的功能覆盖和多平台支持使其成为使用 AI 工具进行 .NET 开发的基础资源。
+
+**[View Repository / 查看仓库](https://github.com/dotnet/skills)**
+
+### Superpowers - An Agentic Skills Framework for AI-Powered Software Development
+
+* **What it does**: A complete software development methodology that transforms coding agents (like Claude, Cursor, Copilot) into systematic developers. Instead of jumping straight into code, agents follow a structured workflow: brainstorming → design approval → implementation planning → subagent-driven development → test-driven implementation → code review → branch completion.
+
+* **Key features**: 
+  - **Automatic skill activation** - agents detect context and apply appropriate workflows without manual prompting
+  - **Subagent-driven development** - dispatches fresh subagents per task with two-stage review (spec compliance, then code quality)
+  - **True TDD enforcement** - RED-GREEN-REFACTOR cycle that deletes code written before tests
+  - **Git worktree integration** - isolated workspaces for parallel development
+  - **Composable skills library** - testing, debugging, collaboration, and meta skills that work across multiple AI coding platforms
+
+* **Why it's notable**: Addresses the core problem of AI agents writing code without understanding requirements or following best practices. With 1,743 stars today, it's gaining rapid traction as developers discover they can have agents work autonomously for hours without deviating from plan. Works with Claude Code, Cursor, GitHub Copilot CLI, Codex, and more. Built by Jesse Vincent (Prime Radiant), emphasizes YAGNI, DRY, and systematic debugging over ad-hoc fixes.
+
+---
+
+### Superpowers - AI 编程助手的技能框架与软件开发方法论
+
+* **功能介绍**: 为 AI 编程助手(如 Claude、Cursor、Copilot)提供完整的软件开发方法论。不是直接写代码,而是遵循结构化工作流:头脑风暴 → 设计确认 → 实施计划 → 子代理驱动开发 → 测试驱动实现 → 代码审查 → 分支完成。让 AI 像系统化的开发者一样工作。
+
+* **主要特点**:
+  - **自动技能激活** - AI 自动检测上下文并应用相应工作流,无需手动提示
+  - **子代理驱动开发** - 为每个任务分派独立子代理,进行两阶段审查(规范合规性和代码质量)
+  - **强制 TDD** - 严格执行"红-绿-重构"循环,删除测试前编写的代码
+  - **Git worktree 集成** - 为并行开发提供隔离工作空间
+  - **可组合技能库** - 包含测试、调试、协作和元技能,支持多个 AI 编程平台
+
+* **为何值得关注**: 解决了 AI 代理在不理解需求或不遵循最佳实践的情况下编写代码的核心问题。今日获得 1,743 星标,因开发者发现可以让 AI 自主工作数小时而不偏离计划而迅速走红。支持 Claude Code、Cursor、GitHub Copilot CLI、Codex 等多个平台。由 Jesse Vincent(Prime Radiant)构建,强调 YAGNI、DRY 原则和系统化调试。
+
+**[View Repository / 查看仓库](https://github.com/obra/superpowers)**
+
+### SmallCode - AI Coding Agent Optimized for Small Local LLMs
+
+* **What it does**: A terminal-native AI coding agent specifically designed to work with small local language models (8B-35B parameters) running on consumer hardware, enabling fully private AI-assisted coding without cloud dependencies.
+
+* **Key features**: 
+  - **Smart architecture for small models**: 2-stage tool routing, forgiving parser for messy outputs, patch-first editing (search-and-replace instead of full file rewrites), TODO-driven task decomposition
+  - **Context budget management**: Automatic summarization, mid-turn eviction, 4k char caps on tool results to never exceed model context windows
+  - **MarrowScript cognition layer**: Declarative prompt definitions with built-in caching, retry logic, tier-based routing, and token budget enforcement
+  - **BoneScript integration**: Compiles single `.bone` files into complete Node.js/TypeScript projects, reducing 8-15 tool calls to 1-2
+  - **Optional cloud escalation**: Falls back to Claude/GPT-5/DeepSeek on hard failures while keeping everything local by default
+  - **Persistent shell sessions**: Maintains state across bash calls (cd, env vars) for multi-step terminal workflows
+  - **Early-stop detection**: Catches repetition loops, patch spirals, and context loss to save tokens
+
+* **Why it's notable**: Achieves 87% benchmark performance with 4B-active models by compensating for small model limitations through intelligent architecture—a practical solution for privacy-conscious developers who want AI coding assistance without sending code to cloud APIs. Includes prebuilt binaries requiring no Node.js installation, making local AI coding accessible to a broader audience.
+
+---
+
+### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
+
+* **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(8B-35B 参数)设计的终端原生 AI 编码代理,实现完全私密的 AI 辅助编程,无需依赖云服务。
+
+* **主要特点**:
+  - **针对小模型的智能架构**: 两阶段工具路由、容错解析器(处理混乱输出)、补丁优先编辑(搜索替换而非全文件重写)、TODO 驱动的任务分解
+  - **上下文预算管理**: 自动摘要、中途清理、工具结果限制在 4k 字符以内,确保不超出模型上下文窗口
+  - **MarrowScript 认知层**: 声明式提示定义,内置缓存、重试逻辑、分层路由和令牌预算控制
+  - **BoneScript 集成**: 将单个 `.bone` 文件编译为完整的 Node.js/TypeScript 项目,将 8-15 次工具调用减少到 1-2 次
+  - **可选云端升级**: 在本地模型失败时可回退到 Claude/GPT-5/DeepSeek,但默认保持完全本地化
+  - **持久化 Shell 会话**: 在多次 bash 调用间保持状态(cd、环境变量等)以支持多步骤终端工作流
+  - **提前停止检测**: 捕获重复循环、补丁死循环和上下文丢失,节省令牌消耗
+
+* **为何值得关注**: 通过智能架构补偿小模型的局限性,使用 4B 激活参数的模型就能达到 87% 的基准测试性能——为注重隐私的开发者提供了实用的解决方案,无需将代码发送到云端 API 即可获得 AI 编码辅助。提供无需安装 Node.js 的预编译二进制文件,让更广泛的用户群体能够使用本地 AI 编程工具。
+
+**[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
+
+### 🎬 Codex + Ollama = Free Unlimited Coding AI
+**Channel:** WorldofAI
+
+* What the video covers: OpenAI's Codex now integrates directly with Ollama, enabling developers to run powerful open-source AI models locally for coding assistance without cloud dependencies or API costs
+* Key topics discussed: Setting up Codex with Ollama, running local AI models for code generation, benefits of local vs cloud-based coding assistants, practical demonstrations of the integration
+* Why it's worth watching: Learn how to get unlimited, free AI coding assistance by running models on your own hardware, maintaining privacy and avoiding subscription fees while still accessing powerful coding capabilities
+
+---
+
+### 🎬 Codex + Ollama = 免费无限编程 AI
+**频道:** WorldofAI
+
+* 视频内容概述: OpenAI 的 Codex 现已直接支持 Ollama，使开发者能够在本地运行强大的开源 AI 模型进行编程辅助，无需依赖云服务或支付 API 费用
+* 主要话题: 配置 Codex 与 Ollama 的集成、本地运行 AI 模型进行代码生成、本地与云端编程助手的优势对比、实际操作演示
+* 为何值得观看: 学习如何通过在自己的硬件上运行模型来获得无限制的免费 AI 编程辅助，在保护隐私的同时避免订阅费用，仍能获得强大的编程能力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qo40REk9wNU)**
 
