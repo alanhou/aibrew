@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 22, 2026"
 date: 2026-05-22
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -498,4 +498,156 @@ pin: false
 * 为何值得观看: 提供实践经验，帮助理解 AI 编程工具的内部机制，适合想要学习 Claude Code、GitHub Copilot 或 Cursor 等工具工作原理的开发者，以及希望为自定义场景构建类似功能的技术人员
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=k_D_C3ExypU)**
+
+### It is Time to Build a New Internet
+
+* **The current internet is dying** – The "Obvious Internet" has become a necrotic digital organism polluted by AI-generated content, astroturfing, bots, and commercial exploitation across platforms like Reddit, Twitter, LinkedIn, and Google search.
+
+* **Small safe zones remain** – Invite-only forums, Hacker News, Bearblog corners, and tools like Kagi still offer glimpses of honest discourse, but the decentralized public commons for genuine conversation is nearly extinct.
+
+* **The core problem is structural** – Marketers and profit-driven actors function like viruses replicating within an open host system. Creating new platforms within the existing internet is futile—like generating new cells in an infected body.
+
+* **Proposed solution: Build a completely new internet** – A new protocol stack incompatible with TCP/IP, DNS, and HTTP/HTML. The technical barrier between old and new internet should be as insurmountable as teaching Mandarin to an English-speaking dog.
+
+* **Higher barriers to entry are necessary** – Access must be deliberately difficult to prevent the low-friction pollution that destroyed the current internet. Only those genuinely invested would participate.
+
+* **Goal: A sacred digital commons** – Modeled after the Talmud, Buddhist sutras, and early Wikipedia—a living archive of knowledge built on good-faith engagement, human-generated content, and collaborative intellectual exploration without commercial corruption.
+
+* **Governance challenges** – Success requires participants to value community integrity over engagement metrics or profit, optimizing for altruism rather than exploitation. This network would necessarily be small, designed for thoughtful users rather than the median user.
+
+* **Acknowledge the difficulty** – Humans historically fail as stewards of open commons, struggling to act against short-term interests. But implementing guardrails—even if clunky and non-user-friendly—is worth attempting to preserve something valuable.
+
+---
+
+### 是时候建立一个新的互联网了
+
+* **当前互联网正在死亡** – "显而易见的互联网"已成为一个坏死的数字有机体，被AI生成内容、水军营销、机器人和商业剥削污染，Reddit、Twitter、LinkedIn和Google搜索等平台无一幸免。
+
+* **小型安全区仍然存在** – 仅限邀请的论坛、Hacker News、Bearblog的小角落以及Kagi等工具仍提供真诚对话的一瞥，但用于真正交流的去中心化公共空间几乎已经消失。
+
+* **核心问题是结构性的** – 营销人员和逐利者像病毒一样在开放的宿主系统中复制。在现有互联网内创建新平台是徒劳的——就像在被感染的身体中生成新细胞一样。
+
+* **提议的解决方案：建立一个全新的互联网** – 一个与TCP/IP、DNS和HTTP/HTML不兼容的新协议栈。新旧互联网之间的技术障碍应该像教会只说英语的狗学习中文一样难以逾越。
+
+* **必须提高准入门槛** – 访问必须故意设置得困难，以防止摧毁当前互联网的低摩擦污染。只有真正投入的人才会参与。
+
+* **目标：神圣的数字公共空间** – 以《塔木德》、佛教经典和早期维基百科为模型——一个基于善意参与、人类生成内容和协作智力探索的活的知识档案，没有商业腐败。
+
+* **治理挑战** – 成功需要参与者重视社区诚信而非参与度指标或利润，优化利他主义而非剥削。这个网络必然会很小，为有思想的用户而非普通用户设计。
+
+* **承认困难** – 人类历史上作为开放公共空间的管理者屡屡失败，难以对抗短期利益行事。但实施防护措施——即使笨拙且不友好——也值得尝试以保护有价值的东西。
+
+**[Read Original / 阅读原文](https://mrmarket.bearblog.dev/it-is-time-to-build-a-new-internet/)**
+
+### Using Kagi Search With Low Vision: A User's Experience
+
+* **Problem with traditional search engines**: Visual fatigue from cluttered results pages filled with AI summaries, ads, auto-play content, and condensed layouts that drain energy and make focusing difficult
+* **Kagi as a solution**: Paid, ad-free search engine funded by subscriptions (not advertisers), offering dramatically cleaner results pages and extensive customization options
+* **Pricing tiers**: Free trial (100 searches), Starter ($5/month, 300 searches), Professional ($10/month, unlimited), Ultimate ($25/month with advanced AI), plus fair pricing policy that credits unused months
+* **Key customization features**: Lenses for filtered searches, ability to block/raise/lower/pin domains, custom Bangs for quick site searches, and configurable search widgets
+* **Accessibility settings**: Theme options (light/dark), adjustable font sizes (5 levels), result alignment (left/center), URL display customization, and favicon placement controls
+* **Setup across browsers**: Available on Chrome, Edge, Firefox, Safari, and mobile platforms via extensions or manual configuration using custom search URLs
+* **Low vision benefits**: Reduced visual clutter, personalized result ranking, integration of small web/blog content, and ability to eliminate low-quality AI-generated content
+* **Private browsing support**: Works in incognito/private mode using a private session link with embedded authentication token
+
+### 使用 Kagi 搜索引擎的低视力用户体验
+
+* **传统搜索引擎的问题**：结果页面充斥 AI 摘要、广告、自动播放内容和密集布局，导致视觉疲劳，消耗精力，难以集中注意力
+* **Kagi 解决方案**：付费、无广告搜索引擎，由用户订阅（而非广告商）资助，提供更清爽的结果页面和丰富的自定义选项
+* **价格层级**：免费试用（100 次搜索）、入门版（每月 5 美元，300 次搜索）、专业版（每月 10 美元，无限搜索）、旗舰版（每月 25 美元含高级 AI），另有公平定价政策，未使用月份可退款
+* **核心自定义功能**：Lenses 过滤搜索、屏蔽/提升/降低/置顶域名、自定义 Bangs 快速搜索网站、可配置搜索小部件
+* **无障碍设置**：主题选项（浅色/深色）、可调字体大小（5 档）、结果对齐方式（左/中）、URL 显示自定义、网站图标位置控制
+* **跨浏览器设置**：支持 Chrome、Edge、Firefox、Safari 及移动平台，可通过扩展程序或使用自定义搜索 URL 手动配置
+* **低视力优势**：减少视觉杂乱、个性化结果排序、整合小型网站/博客内容、能够屏蔽低质量 AI 生成内容
+* **隐私浏览支持**：通过带嵌入式身份验证令牌的私密会话链接，可在无痕/隐私模式下使用
+
+**[Read Original / 阅读原文](https://veroniiiica.com/using-kagi-search-with-low-vision/)**
+
+### A Decade-Long Ubuntu 16.04 Blog Migrates to FreeBSD
+
+* **Legacy system overhaul**: After 10 years on Digital Ocean running unsupported Ubuntu 16.04 LTS, the author migrated to a Hetzner VPS running FreeBSD 14.3
+* **Cost and performance upgrade**: New Hetzner server costs less than half the price (~€6 vs $13/month) while offering double the RAM (8GB), more CPU cores (4 vCPUs), and 10x the bandwidth
+* **FreeBSD Jails architecture**: Implemented containerization using FreeBSD Jails with Bastille management tool—each website runs in its own isolated jail with nginx, coordinated by a Caddy reverse proxy jail
+* **Motivation beyond cost**: Chose FreeBSD for its stability, mature ZFS filesystem with snapshot capabilities, and 25+ year track record with Jails (predating Docker)
+* **Simple static site workflow**: Sites are static (Hugo-generated), making the migration straightforward—no complex CGI or dynamic code to port
+* **Impressive uptime**: The old Ubuntu server ran for 1,491 consecutive days (~4 years) before shutdown, demonstrating remarkable stability despite being outdated
+* **Security through isolation**: Jail architecture means if one site is compromised, it can be destroyed and recreated without affecting others or the host system
+
+### Ubuntu 16.04 博客运行十年后迁移至 FreeBSD
+
+* **老旧系统升级**：在 Digital Ocean 上运行不受支持的 Ubuntu 16.04 LTS 十年后,作者迁移到运行 FreeBSD 14.3 的 Hetzner VPS
+* **成本与性能双提升**：新 Hetzner 服务器价格不到原来一半(约 6 欧元 vs 13 美元/月),同时提供双倍内存(8GB)、更多 CPU 核心(4 vCPUs)和 10 倍带宽
+* **FreeBSD Jails 架构**：使用 FreeBSD Jails 配合 Bastille 管理工具实现容器化——每个网站运行在独立的 jail 中并配有 nginx,由 Caddy 反向代理 jail 统一协调
+* **选择 FreeBSD 的深层原因**：看重其稳定性、成熟的 ZFS 文件系统(支持快照)以及 Jails 技术 25 年以上的历史(早于 Docker)
+* **简洁的静态站点工作流**：网站均为静态(Hugo 生成),使迁移过程简单直接——无需移植复杂的 CGI 或动态代码
+* **惊人的运行时间**：旧 Ubuntu 服务器在关机前连续运行 1,491 天(约 4 年),尽管系统过时但展现了卓越的稳定性
+* **隔离带来的安全性**：Jail 架构意味着即使某个站点被攻破,也可以销毁并重建而不影响其他站点或宿主系统
+
+**[Read Original / 阅读原文](https://crocidb.com/post/this-blog-ran-on-ubuntu-16-04-for-10-years-i-migrated-it-to-freebsd/)**
+
+### Agent-Learning-Hub - Curated AI Agent Learning Roadmap and Resource Collection
+
+* **What it does**: Provides a structured, actionable learning path for building production-ready AI agents, moving beyond simple chatbots to real-world agent systems with tool use, memory, evaluation, and safety guardrails.
+
+* **Key features**: 
+  - Stage-by-stage todo list from basic agent loops to production harnesses
+  - Project ladder with 11 hands-on projects of increasing complexity
+  - Curated resources prioritizing official docs, modern agent systems (Claude Code, OpenClaw, Hermes), and protocols (MCP, A2A, ACP)
+  - Focus on practical engineering: skills, evaluation, observability, browser agents, and safety
+  - Explicitly steers learners away from outdated role-play frameworks toward coding agents and personal agent systems
+
+* **Why it's notable**: Cuts through the noise of scattered agent tutorials by providing a clear, opinionated roadmap based on what actually matters in 2024-2026—tool harnesses, context management, skills packaging, and production-grade evaluation. Maintained by Datawhale community with 638 stars, it reflects real engineering priorities rather than hype-driven multi-agent theater.
+
+---
+
+### Agent-Learning-Hub - AI Agent 学习路线与精选资源库
+
+* **功能介绍**: 提供结构化、可执行的 AI Agent 学习路径,从基础 agent 循环到生产级 harness,涵盖工具调用、记忆管理、评测和安全边界,帮助开发者构建真正可用的 agent 系统。
+
+* **主要特点**:
+  - 分阶段 todo 清单,从最小 agent loop 到生产部署
+  - 11 个递进式实战项目,从计算器 agent 到个人 agent 网关
+  - 精选资源优先官方文档和现代 agent 系统(Claude Code、OpenClaw、Hermes)及协议(MCP、A2A、ACP)
+  - 强调工程实践:skills 封装、评测体系、可观测性、浏览器 agent 和安全机制
+  - 明确指出应避免的过时框架,聚焦编码 agent 和个人 agent 系统
+
+* **为何值得关注**: 在碎片化的 agent 教程中提供清晰、有主见的学习路线,基于 2024-2026 年真实工程需求——工具 harness、上下文管理、能力封装和生产级评测。由 Datawhale 社区维护,获 638 星标,反映真实工程优先级而非炒作驱动的多 agent 演示。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/Agent-Learning-Hub)**
+
+### 🎬 Wait Till The End #shorts #sheryianscodingschool #placement #engineering
+**Channel:** Sheryians Coding School
+
+* What the video covers: A satirical take on common career advice given to engineering students in India, particularly around learning Python, DSA (Data Structures & Algorithms), and AI
+* Key topics discussed: The repetitive and often oversimplified career guidance that engineering students receive about tech skills and job placement strategies
+* Why it's worth watching: Relatable humor for engineering students and tech learners who've experienced the pressure of following trending tech advice; offers a comedic perspective on the gap between advice and reality in tech education
+
+---
+
+### 🎬 等到最后 #shorts #编程学校 #就业 #工程
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 讽刺印度工程专业学生常听到的职业建议，特别是关于学习 Python、数据结构与算法(DSA)和人工智能的建议
+* 主要话题: 工程学生收到的重复且过于简化的职业指导，涉及技术技能和求职策略
+* 为何值得观看: 对于经历过追随热门技术建议压力的工程学生和技术学习者来说非常有共鸣；以幽默视角展现技术教育中建议与现实之间的差距
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MFiOI1q9oLs)**
+
+### 🎬 How to Make an Arduino Solar Panel Tracker | Easy Project Tutorial #shorts
+**Channel:** Seun Tech
+
+* What the video covers: A complete step-by-step tutorial on building an automatic solar panel tracking system using Arduino
+* Key topics discussed: Arduino IDE programming, LDR (Light Dependent Resistor) sensors for light detection, servo motor control for panel movement, circuit assembly and wiring
+* Why it's worth watching: Practical hands-on project that combines hardware and software skills, improves solar panel efficiency by automatically following the sun's position, beginner-friendly with clear instructions despite being a short-form video
+
+---
+
+### 🎬 如何制作Arduino太阳能板追踪器 | 简易项目教程
+**频道:** Seun Tech
+
+* 视频内容概述: 使用Arduino制作自动太阳能追踪系统的完整分步教程
+* 主要话题: Arduino IDE编程、LDR光敏电阻传感器用于光线检测、舵机控制面板移动、电路组装与接线
+* 为何值得观看: 结合软硬件技能的实用动手项目,通过自动跟随太阳位置提高太阳能板效率,适合初学者且讲解清晰(虽然是短视频格式)
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
 
