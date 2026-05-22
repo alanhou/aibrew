@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 22, 2026"
 date: 2026-05-22
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -738,4 +738,179 @@ pin: false
 * 适合对创意编程、网页动画和展示代码艺术潜力的视觉编程技术感兴趣的开发者观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
+
+<!-- [Title-Only] -->
+### Cleve Moler has died
+
+* Based on the title, this article likely announces the passing of Cleve Moler, a significant figure in computational mathematics and scientific computing
+* Cleve Moler is the co-founder of MathWorks and the creator of MATLAB, one of the most widely-used programming languages and environments for numerical computing, engineering, and scientific research
+* This would be important news for the scientific computing community, as Moler's contributions have shaped how engineers, scientists, and researchers approach numerical problems for decades
+* Readers interested in the history of scientific software, numerical analysis, or the evolution of computational tools would find this significant
+
+### Cleve Moler 逝世
+
+* 根据标题，这篇文章可能宣布了 Cleve Moler 的去世消息，他是计算数学和科学计算领域的重要人物
+* Cleve Moler 是 MathWorks 公司的联合创始人，也是 MATLAB 的创造者。MATLAB 是应用最广泛的数值计算、工程和科学研究编程语言及环境之一
+* 这对科学计算社区来说是重要新闻，因为 Moler 的贡献几十年来塑造了工程师、科学家和研究人员处理数值问题的方式
+* 对科学软件历史、数值分析或计算工具演变感兴趣的读者会认为这是重要消息
+
+---
+
+*Note: This introduction is based solely on the article title. The actual article may contain additional details about Cleve Moler's life, career achievements, and legacy.*
+
+**[Read Original / 阅读原文](https://www.mathworks.com/company/aboutus/founders/clevemoler.html)**
+
+### AI is Killing the Cheap Smartphone
+
+* **The era of exponentially cheaper computing is ending.** For decades, smartphones became thousands of times more powerful while costing a fraction of what computers cost in the 1980s, enabling hundreds of millions of poor people to access the internet.
+
+* **Smartphone shipments are crashing, especially in developing markets.** In 2026, worldwide smartphone shipments are predicted to fall 13% (the largest single-year decline ever), with Africa and the Middle East seeing drops over 20%, concentrated in the cheapest devices.
+
+* **AI is consuming the global memory supply.** Smartphones use DRAM memory, which is expensive and difficult to produce. AI has emerged as an enormous consumer of memory, reallocating supply away from consumer electronics and driving up smartphone manufacturing costs.
+
+* **Memory production is highly concentrated and inelastic.** Only three companies (Samsung, SK Hynix, and Micron) control over 90% of global DRAM production. After decades of boom-bust cycles, these manufacturers have learned to keep supply tight rather than risk overproduction.
+
+* **The "memory wall" limits computing progress.** While processors improved 60% annually in the 1980s-90s, DRAM speeds only improved 7% per year. Memory manufacturing requires $15-20 billion fabrication facilities and years to achieve competitive yields.
+
+* **The crisis may spread to wealthy markets.** If AI memory consumption continues growing at current rates, consumer electronics globally will become much more expensive, reversing decades of technological democratization.
+
+---
+
+### AI 正在扼杀廉价智能手机
+
+* **计算设备指数级降价的时代正在终结。** 几十年来，智能手机的性能提升了数千倍，而价格却只是 1980 年代计算机的零头，使数亿贫困人口能够接入互联网。
+
+* **智能手机出货量暴跌，发展中市场受创最重。** 预计 2026 年全球智能手机出货量将下降 13%（有史以来最大单年跌幅），非洲和中东地区跌幅超过 20%，主要集中在最便宜的设备。
+
+* **AI 正在消耗全球内存供应。** 智能手机使用 DRAM 内存，这种内存生产成本高且难度大。AI 已成为内存的巨大消费者，将供应从消费电子产品转移出去，推高了智能手机制造成本。
+
+* **内存生产高度集中且缺乏弹性。** 仅三家公司（三星、SK 海力士和美光）控制着全球 90% 以上的 DRAM 生产。经历数十年的繁荣-萧条周期后，这些制造商学会了保持供应紧张，而不是冒过度生产的风险。
+
+* **"内存墙"限制了计算进步。** 虽然 1980-90 年代处理器每年改进 60%，但 DRAM 速度每年仅改进 7%。内存制造需要 150-200 亿美元的制造设施，并需要数年时间才能实现有竞争力的产量。
+
+* **危机可能蔓延至富裕市场。** 如果 AI 内存消耗继续以当前速度增长，全球消费电子产品都将变得更加昂贵，逆转数十年的技术民主化进程。
+
+**[Read Original / 阅读原文](https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone)**
+
+### Was My $48K GPU Server Worth It? - Analysis Summary
+
+* **The Build**: Independent ML researcher built "grumbl", a 6x RTX 6000 Ada GPU server for $48K after leaving FAANG job in 2024
+* **GPU Selection**: Chose RTX 6000 Ada over A100/H100 based on FP8 support, inference performance, and price/throughput ratio
+* **Power Challenges**: Required dual power supplies across separate circuits due to apartment electrical constraints; later moved to parents' basement
+* **Usage Tracking**: Logged GPU utilization and power consumption every minute to compare against cloud rental costs
+* **Results After ~20 Months**: Achieved 76% average utilization (85% since Jan 2025), equivalent cloud rental would have cost $68K
+* **ROI Achieved**: Saved $17K after accounting for $3K electricity costs (~$125/month); server has now paid for itself
+* **Key Insight**: Treated GPUs as investment - if powerful hardware accelerated success by just 2 months, it would offset the opportunity cost of leaving employment
+* **Maintenance**: Experienced 3 downtime periods for maintenance, creating uncertainty about hardware failures
+
+---
+
+### 我的 4.8 万美元 GPU 服务器值得吗？- 分析总结
+
+* **构建背景**：独立机器学习研究员在 2024 年离开大厂后，构建了名为"grumbl"的 6 块 RTX 6000 Ada GPU 服务器，成本 4.8 万美元
+* **GPU 选择**：基于 FP8 支持、推理性能和性价比，选择 RTX 6000 Ada 而非 A100/H100
+* **电力挑战**：由于公寓电路限制，需要双电源跨独立电路供电；后来搬到父母地下室
+* **使用追踪**：每分钟记录 GPU 利用率和功耗，以便与云租赁成本对比
+* **约 20 个月后的结果**：平均利用率达 76%（2025 年 1 月起为 85%），等效云租赁成本为 6.8 万美元
+* **投资回报已实现**：扣除 3000 美元电费（每月约 125 美元）后，节省 1.7 万美元；服务器已回本
+* **核心洞察**：将 GPU 视为投资 - 如果强大硬件能让成功提前 2 个月，就能抵消离职的机会成本
+* **维护情况**：经历 3 次停机维护，每次都担心是单个部件故障还是硬件全毁
+
+**[Read Original / 阅读原文](https://rosmine.ai/2026/05/13/was-my-48k-gpu-worth-it/)**
+
+### RuView - WiFi-Based Spatial Intelligence Without Cameras
+
+* **What it does**: Transforms ordinary WiFi signals into a contactless sensing system that detects presence, monitors vital signs (breathing and heart rate), tracks movement, and estimates human poses—all through walls and in darkness without cameras or wearables.
+
+* **Key features**: 
+  - Runs on $9 ESP32 hardware with 8KB pretrained models (100% validation accuracy on presence detection)
+  - Real-time vital sign monitoring: 6-30 BPM breathing rate, 40-120 BPM heart rate detection
+  - 17-keypoint pose estimation and fall detection with <200ms response time
+  - 105-module edge intelligence catalog for health, security, retail, and industrial applications
+  - Multi-frequency mesh scanning across 6 WiFi channels, through-wall sensing up to ~5m
+  - Cryptographically attested measurements with Ed25519 witness chain
+  - Optional Cognitum Seed integration ($140 total) adds persistent vector storage and kNN search
+  - Pretrained weights available on Hugging Face at `ruvnet/wifi-densepose-pretrained`
+
+* **Why it's notable**: Achieves camera-free spatial intelligence using commodity WiFi hardware at a fraction of traditional sensor costs. The system processes Channel State Information (CSI) from radio wave disturbances to deliver privacy-preserving monitoring for healthcare, security, and smart building applications. With 1,463 passing tests, multi-architecture Docker support, and edge-first design requiring no cloud connectivity, it represents a practical breakthrough in RF sensing technology. The 1,269 stars today reflect strong interest in privacy-conscious, low-cost alternatives to video surveillance.
+
+---
+
+### RuView - 基于 WiFi 的无摄像头空间智能系统
+
+* **功能介绍**: 将普通 WiFi 信号转化为非接触式传感系统,可穿墙检测人员存在、监测生命体征(呼吸和心率)、追踪运动并估计人体姿态——完全无需摄像头或可穿戴设备,可在黑暗中和墙壁后工作。
+
+* **主要特点**:
+  - 运行在 9 美元的 ESP32 硬件上,预训练模型仅 8KB(存在检测验证准确率 100%)
+  - 实时生命体征监测:呼吸频率 6-30 次/分钟,心率 40-120 次/分钟
+  - 17 关键点姿态估计和跌倒检测,响应时间 <200 毫秒
+  - 105 个边缘智能模块目录,涵盖健康、安防、零售和工业应用
+  - 跨 6 个 WiFi 频道的多频网格扫描,穿墙感知距离达约 5 米
+  - 通过 Ed25519 见证链进行加密认证测量
+  - 可选 Cognitum Seed 集成(总计 140 美元)增加持久化向量存储和 kNN 搜索
+  - 预训练权重发布在 Hugging Face:`ruvnet/wifi-densepose-pretrained`
+
+* **为何值得关注**: 使用商用 WiFi 硬件以传统传感器成本的一小部分实现无摄像头空间智能。系统通过处理无线电波扰动的信道状态信息(CSI)为医疗保健、安防和智能建筑应用提供隐私保护监测。拥有 1,463 个通过测试、多架构 Docker 支持和无需云连接的边缘优先设计,代表了射频传感技术的实用突破。今日获得 1,269 星标反映了人们对隐私友好、低成本视频监控替代方案的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### ai-engineering-from-scratch - Comprehensive AI Engineering Curriculum from First Principles
+
+* **What it does**: A complete, hands-on curriculum teaching AI engineering from mathematical foundations to production-ready autonomous systems. 435 lessons across 20 phases covering everything from linear algebra to multi-agent swarms, with implementations in Python, TypeScript, Rust, and Julia.
+
+* **Key features**: 
+  - Every lesson follows a "Build It / Use It / Ship It" pattern—implement algorithms from scratch first, then use production libraries
+  - Each lesson produces a reusable artifact (prompt, skill, agent, or MCP server) you can use in real projects
+  - Built-in agent skills for personalized learning paths and knowledge assessment
+  - Structured progression from math foundations → ML fundamentals → deep learning → transformers → LLMs → agent engineering → production systems
+  - ~320 hours of content, free and open source under MIT license
+
+* **Why it's notable**: Bridges the gap between academic AI knowledge and professional application—84% of students use AI tools but only 18% feel professionally prepared. Unlike scattered tutorials, this provides a complete spine for AI engineering education, ensuring you understand what's happening under the hood of every framework and API you use. Gained 1,333 stars today, reflecting strong demand for structured, comprehensive AI engineering education.
+
+---
+
+### ai-engineering-from-scratch - 从零开始的 AI 工程完整课程
+
+* **功能介绍**: 一套完整的 AI 工程实战课程,从数学基础到生产级自主系统。20 个阶段共 435 节课,涵盖从线性代数到多智能体集群的所有内容,提供 Python、TypeScript、Rust 和 Julia 实现。
+
+* **主要特点**:
+  - 每节课遵循"构建它/使用它/交付它"模式——先从零实现算法,再使用生产库
+  - 每节课产出可复用的工件(提示词、技能、智能体或 MCP 服务器),可用于实际项目
+  - 内置智能体技能,提供个性化学习路径和知识评估
+  - 结构化进阶:数学基础 → 机器学习 → 深度学习 → Transformer → LLM → 智能体工程 → 生产系统
+  - 约 320 小时内容,MIT 许可证开源免费
+
+* **为何值得关注**: 弥合学术 AI 知识与专业应用之间的鸿沟——84% 的学生使用 AI 工具,但只有 18% 感到有专业准备。不同于零散教程,本课程提供完整的 AI 工程教育体系,确保你理解所使用的每个框架和 API 的底层原理。今日获得 1,333 星标,反映出对结构化、全面 AI 工程教育的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/ai-engineering-from-scratch)**
+
+### Chrome DevTools MCP - Chrome DevTools for Coding Agents
+
+* **What it does**: Enables AI coding assistants (like Claude, Cursor, Copilot) to control and inspect a live Chrome browser through the Model Context Protocol (MCP), providing full access to Chrome DevTools capabilities for automation, debugging, and performance analysis.
+
+* **Key features**: 
+  * Performance insights through Chrome DevTools trace recording and analysis
+  * Advanced browser debugging with network inspection, screenshots, and console messages with source-mapped stack traces
+  * Reliable automation using Puppeteer with automatic action result waiting
+  * Supports both full-featured and slim modes for basic browser tasks
+  * Integration with CrUX API for real-user experience data alongside lab data
+
+* **Why it's notable**: Bridges the gap between AI coding agents and browser automation by exposing Chrome DevTools' powerful debugging and performance tools through a standardized MCP interface. With 151 stars today and official support from Google's Chrome DevTools team, it's becoming the go-to solution for AI-assisted browser testing and debugging. Works seamlessly with popular AI coding tools like Claude Code, Cline, Copilot, and Antigravity.
+
+---
+
+### Chrome DevTools MCP - AI 编程助手的 Chrome 开发者工具
+
+* **功能介绍**: 让 AI 编程助手(如 Claude、Cursor、Copilot)通过模型上下文协议(MCP)控制和检查实时 Chrome 浏览器,提供完整的 Chrome DevTools 功能用于自动化、调试和性能分析。
+
+* **主要特点**:
+  * 通过 Chrome DevTools 跟踪记录和分析获取性能洞察
+  * 高级浏览器调试功能,包括网络检查、截图和带源映射堆栈跟踪的控制台消息
+  * 使用 Puppeteer 实现可靠的自动化,自动等待操作结果
+  * 支持完整功能模式和精简模式以满足基本浏览器任务需求
+  * 集成 CrUX API,将真实用户体验数据与实验室数据结合
+
+* **为何值得关注**: 通过标准化的 MCP 接口将 AI 编程助手与浏览器自动化连接起来,暴露 Chrome DevTools 强大的调试和性能工具。今日获得 151 星标,由 Google Chrome DevTools 团队官方支持,正在成为 AI 辅助浏览器测试和调试的首选解决方案。与 Claude Code、Cline、Copilot 和 Antigravity 等流行 AI 编程工具无缝集成。
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
 
