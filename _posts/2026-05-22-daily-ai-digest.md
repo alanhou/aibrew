@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 22, 2026"
 date: 2026-05-22
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -650,4 +650,92 @@ pin: false
 * 为何值得观看: 结合软硬件技能的实用动手项目,通过自动跟随太阳位置提高太阳能板效率,适合初学者且讲解清晰(虽然是短视频格式)
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
+
+### CODA: Rewriting Transformer Blocks as GEMM-Epilogue Programs
+
+* **Core Problem**: Transformer training spends significant time on memory-bound operators (normalization, activations, residual updates) that move large tensors through global memory with minimal computation, creating a data movement bottleneck.
+
+* **CODA Solution**: A GPU kernel abstraction that expresses memory-bound operations as GEMM-plus-epilogue programs, executing computations while GEMM output tiles remain on-chip before writing to memory.
+
+* **Key Innovation**: Algebraically reparameterizes separate framework kernels to execute as epilogue operations during GEMM computation, avoiding redundant memory transfers.
+
+* **Architecture**: Fixed GEMM mainloop with composable epilogue primitives for scaling, reductions, pairwise transformations, and accumulation.
+
+* **Coverage**: Handles nearly all non-attention computation in forward and backward passes of standard Transformer blocks.
+
+* **Performance**: Both human- and LLM-authored CODA kernels achieve high performance across representative Transformer workloads, bridging framework productivity with hardware efficiency.
+
+### CODA：将 Transformer 块重写为 GEMM-Epilogue 程序
+
+* **核心问题**：Transformer 训练在内存受限算子（归一化、激活函数、残差更新）上花费大量时间，这些算子在全局内存中移动大型张量但计算量很小，导致数据移动成为瓶颈。
+
+* **CODA 解决方案**：一种 GPU 内核抽象，将内存受限操作表达为 GEMM-加-epilogue 程序，在 GEMM 输出块仍在片上时执行计算，然后再写入内存。
+
+* **关键创新**：通过代数重参数化将独立的框架内核转换为 GEMM 计算期间的 epilogue 操作，避免冗余的内存传输。
+
+* **架构设计**：固定的 GEMM 主循环配合可组合的 epilogue 原语，支持缩放、归约、成对变换和累加操作。
+
+* **覆盖范围**：处理标准 Transformer 块前向和反向传播中几乎所有非注意力计算。
+
+* **性能表现**：人工编写和 LLM 生成的 CODA 内核在代表性 Transformer 工作负载上均实现高性能，在框架生产力和硬件效率之间架起桥梁。
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2605.19269)**
+
+### Slumber: Terminal-Based HTTP Client
+
+* **Dual usage modes**: Terminal User Interface (TUI) for interactive request/response workflows and Command Line Interface (CLI) for quick requests and scripting
+* **Configuration-driven**: Uses a YAML-based "request collection" file shared across both TUI and CLI modes
+* **Core design goals**: Easy to use, configurable, and sharable across teams
+* **Primary use case**: Interacting with REST APIs and other HTTP services directly from the terminal
+* **Getting started resources**: Includes installation guide, getting started tutorial, and key concepts documentation
+
+### Slumber:基于终端的 HTTP 客户端
+
+* **双重使用模式**:终端用户界面(TUI)用于交互式请求/响应工作流,命令行界面(CLI)用于快速请求和脚本编写
+* **配置驱动**:使用基于 YAML 的"请求集合"文件,TUI 和 CLI 模式共享相同配置
+* **核心设计目标**:易于使用、可配置且可在团队间共享
+* **主要用途**:直接从终端与 REST API 和其他 HTTP 服务交互
+* **入门资源**:包含安装指南、入门教程和核心概念文档
+
+**[Read Original / 阅读原文](https://slumber.lucaspickering.me)**
+
+### Astronaut Wanted: No Experience Necessary – The Surprising Story Behind the First British Person in Space
+
+* Star City, located on the outskirts of Moscow, was a highly restricted military installation during the Soviet era
+* Access to the cosmonaut training facility was severely limited and kept secret from the public
+* Despite being officially classified, the location was an open secret – everyone knew where it was, but it remained a closed and secure city
+* NASA astronaut Michael Barratt described it in 1998 as feeling like "the forbidden city or the hidden city"
+* The facility was deliberately omitted from maps as part of Soviet security measures
+* This secretive training base played a crucial role in the story of Britain's first astronaut
+
+### 招聘宇航员:无需经验 – 英国首位太空人背后的惊人故事
+
+* 星城位于莫斯科郊区,在苏联时代是一个戒备森严的军事设施
+* 这个宇航员训练基地的出入受到严格限制,对公众保密
+* 尽管官方将其列为机密,但该地点是一个公开的秘密——每个人都知道它在哪里,但它仍然是一个封闭的安全城市
+* 美国宇航局宇航员迈克尔·巴拉特在1998年将其描述为"禁城或隐藏之城"的感觉
+* 作为苏联安全措施的一部分,该设施被故意从地图上省略
+* 这个神秘的训练基地在英国首位宇航员的故事中发挥了关键作用
+
+**[Read Original / 阅读原文](https://www.bbc.com/culture/article/20260518-helen-sharman-the-story-behind-the-first-british-person-in-space)**
+
+### 🎬 The PAPER Power !! #coding #shorts #programming
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* A creative coding demonstration showcasing the visual power and possibilities of programming
+* Likely features animation techniques, visual effects, or creative coding concepts using paper-themed elements
+* Worth watching for developers interested in creative coding, web animations, and visual programming techniques that demonstrate code's artistic potential
+
+---
+
+### 🎬 纸的力量!! #编程 #短视频 #程序设计
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* 展示编程视觉效果和创意可能性的创意编程演示
+* 可能包含动画技术、视觉特效或以纸张为主题的创意编程概念
+* 适合对创意编程、网页动画和展示代码艺术潜力的视觉编程技术感兴趣的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
 
