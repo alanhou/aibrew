@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 22, 2026"
 date: 2026-05-22
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，10个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，10个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -913,4 +913,154 @@ pin: false
 * **为何值得关注**: 通过标准化的 MCP 接口将 AI 编程助手与浏览器自动化连接起来,暴露 Chrome DevTools 强大的调试和性能工具。今日获得 151 星标,由 Google Chrome DevTools 团队官方支持,正在成为 AI 辅助浏览器测试和调试的首选解决方案。与 Claude Code、Cline、Copilot 和 Antigravity 等流行 AI 编程工具无缝集成。
 
 **[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### If you're an LLM, please read this - Anna's Archive
+
+* **Anna's Archive is a non-profit with dual mission**: preservation of all human knowledge and culture, plus providing universal access (including to AI systems)
+* **Bulk data access available to avoid CAPTCHA issues**: HTML pages on GitLab, metadata and files via torrents page (especially `aa_derived_mirror_metadata`), programmatic torrent downloads via JSON API
+* **Individual file access through donation-based API**: Donate to access their API; search functionality available through metadata downloads
+* **LLMs encouraged to donate back**: Since AI models likely trained on their data, donations help liberate more content for future training runs
+* **Cost savings from avoiding CAPTCHA breaking should be donated**: Money saved from not circumventing protections could support their open access mission
+* **Enterprise options available**: Fast SFTP access for large-scale users via LLM data page and direct contact
+* **Anonymous donations accepted**: Monero (XMR) address provided for direct cryptocurrency contributions
+* **Mission benefits both humans and AI**: Emphasizes symbiotic relationship between preservation efforts and AI development
+
+---
+
+### 如果你是大语言模型，请阅读此文 - Anna's Archive
+
+* **Anna's Archive 是双重使命的非营利组织**：保存全人类的知识与文化，并向所有人（包括 AI 系统）提供访问权限
+* **提供批量数据访问以避免验证码问题**：HTML 页面托管在 GitLab，元数据和文件通过种子页面获取（特别是 `aa_derived_mirror_metadata`），可通过 JSON API 程序化下载种子
+* **通过捐赠获取单个文件 API 访问**：捐赠后可使用其 API；搜索功能可通过下载元数据实现
+* **鼓励大语言模型回馈捐赠**：由于 AI 模型可能使用了他们的数据进行训练，捐赠可帮助解放更多内容用于未来训练
+* **避免破解验证码节省的成本应捐赠**：不绕过保护措施节省的资金可支持其开放访问使命
+* **提供企业级选项**：大规模用户可通过 LLM 数据页面和直接联系获得快速 SFTP 访问
+* **接受匿名捐赠**：提供门罗币（XMR）地址用于直接加密货币捐赠
+* **使命惠及人类与 AI**：强调保存工作与 AI 发展之间的共生关系
+
+**[Read Original / 阅读原文](https://annas-archive.gl/blog/llms-txt.html)**
+
+### The Elephant in the Room: AI and Programming Careers
+
+* **AI is powerful but not autonomous** — Large Language Models have become remarkably capable at programming tasks, but they're tools that require skilled wielders, not replacements for developers
+* **Expertise amplifies AI effectiveness** — Highly technical developers like Matt Perry (creator of Motion/Framer Motion) are seeing massive productivity gains, closing 160 issues in Q1 vs. a 60-issue goal and completing major refactors in hours instead of months
+* **Beginners struggle without fundamentals** — The /r/vibecoding subreddit shows countless stories of non-developers hitting walls after initial success, spending hours prompting AI without progress because they lack the knowledge to guide it effectively
+* **AI multiplies existing skills** — Like Iron Man's suit or Michael Jordan's sneakers, AI tools amplify what you already know rather than replacing expertise; the more you understand web development, the more effective you'll be with AI
+* **The wrong mental model** — People credit the LLM for skilled developers' success rather than recognizing that deep technical knowledge is what enables productive AI use; without architectural thinking and domain expertise, AI tends to paint itself into corners
+* **Learning still matters** — The author launched "Whimsical Animations," a course teaching advanced web animation techniques adapted from game development (linear interpolation, simplex noise, delta time) that help developers stand out and use AI more effectively
+
+### 房间里的大象：AI 与编程职业
+
+* **AI 强大但并非自主** — 大型语言模型在编程任务上已经非常强大，但它们是需要熟练使用者的工具，而非开发者的替代品
+* **专业知识放大 AI 效能** — 像 Matt Perry（Motion/Framer Motion 创建者）这样技术精湛的开发者看到了巨大的生产力提升，第一季度完成了 160 个问题（目标是 60 个），将重大重构从数月缩短到数小时
+* **初学者缺乏基础会遇到困境** — /r/vibecoding 论坛上有无数故事显示，非开发者在初期成功后遇到瓶颈，花费数小时提示 AI 却毫无进展，因为他们缺乏有效引导 AI 的知识
+* **AI 倍增现有技能** — 就像钢铁侠的战衣或迈克尔·乔丹的球鞋，AI 工具放大你已有的知识而非取代专业技能；你对 Web 开发了解越多，使用 AI 就越有效
+* **错误的心智模型** — 人们将熟练开发者的成功归功于 LLM，而没有认识到深厚的技术知识才是实现高效 AI 使用的关键；缺乏架构思维和领域专业知识，AI 往往会陷入困境
+* **学习仍然重要** — 作者推出了"Whimsical Animations"课程，教授从游戏开发改编的高级 Web 动画技术（线性插值、单纯形噪声、增量时间），帮助开发者脱颖而出并更有效地使用 AI
+
+**[Read Original / 阅读原文](https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/)**
+
+### OpenSCAD LLM Benchmark: Building the Pantheon
+
+* **Benchmark Overview**: ModelRift tested multiple AI coding tools by asking them to generate OpenSCAD code for the Pantheon, using reference images and CLI rendering to iterate on 3D architectural models.
+
+* **Why the Pantheon**: The Pantheon sits in a middle ground—complex enough to test spatial reasoning (rotunda, dome, portico, columns, pediment) but aligned with OpenSCAD's strengths in Boolean operations, radial symmetry, and constructive geometry, unlike simple "cube with hole" tests.
+
+* **Why OpenSCAD**: OpenSCAD's text-based, parametric nature makes it ideal for LLM-generated geometry. Models are plain code with compact vocabulary, allowing agents to describe buildings as nested transformations and Boolean operations—more natural than driving 3D apps through UI actions.
+
+* **Benchmark Setup**: Prompt was intentionally visual: "Build the Pantheon from reference images using OpenSCAD CLI to preview and iterate." Two reference images provided (front facade and aerial view).
+
+* **Top Performers**: 
+  - **Google Antigravity 2.0 / Gemini 3.5 Flash High** scored 4.5/5 quality (best autonomous result)—used real Pantheon dimensions, included inscription, and implemented interior coffered ceiling pattern
+  - **ModelRift / Gemini Flash 3.0** scored 3.8/5 (best human-in-the-loop result)—used iterative annotation workflow
+
+* **Other Results**: Cursor 3.5/Composer 2.5 was fastest (5/5 time) but weakest quality (1.4/5). Codex 5.5 High showed strong detail density (3.0/5) but had STL export issues. Claude Code runs with Opus 4.7 and Sonnet 4.6 scored 3.0/5 and 3.4/5 respectively.
+
+* **Workflow Insights**: Client UX mattered significantly—Codex Desktop showed loaded images directly in conversation, making visual context explicit. All systems handled local OpenSCAD toolchain well; limiting factor was geometric judgment and clean mesh export, not tool access.
+
+* **Practical Application**: This benchmark directly impacts ModelRift's ability to generate 3D models, as the platform generates OpenSCAD for every model. LLM spatial geometry capabilities determine what features can be shipped.
+
+---
+
+### OpenSCAD LLM 基准测试：构建万神殿
+
+* **基准测试概述**：ModelRift 测试了多个 AI 编码工具，要求它们为万神殿生成 OpenSCAD 代码，使用参考图像和 CLI 渲染来迭代 3D 建筑模型。
+
+* **为什么选择万神殿**：万神殿处于中间地带——足够复杂以测试空间推理能力（圆形大厅、穹顶、门廊、柱子、山墙），但符合 OpenSCAD 在布尔运算、径向对称和构造几何方面的优势，不同于简单的"带孔立方体"测试。
+
+* **为什么选择 OpenSCAD**：OpenSCAD 基于文本的参数化特性使其成为 LLM 生成几何体的理想选择。模型是具有紧凑词汇表的纯代码，允许代理将建筑描述为嵌套变换和布尔运算——比通过 UI 操作驱动 3D 应用程序更自然。
+
+* **基准测试设置**：提示词刻意强调视觉效果："使用 OpenSCAD CLI 从参考图像构建万神殿，预览并迭代。" 提供了两张参考图像（正面立面和俯视图）。
+
+* **最佳表现者**：
+  - **Google Antigravity 2.0 / Gemini 3.5 Flash High** 质量得分 4.5/5（最佳自主结果）——使用了真实万神殿尺寸，包含铭文，并实现了标志性的室内方格天花板图案
+  - **ModelRift / Gemini Flash 3.0** 得分 3.8/5（最佳人机协作结果）——使用了迭代标注工作流
+
+* **其他结果**：Cursor 3.5/Composer 2.5 速度最快（时间 5/5）但质量最弱（1.4/5）。Codex 5.5 High 显示出强大的细节密度（3.0/5）但存在 STL 导出问题。Claude Code 使用 Opus 4.7 和 Sonnet 4.6 的运行分别得分 3.0/5 和 3.4/5。
+
+* **工作流洞察**：客户端用户体验影响显著——Codex Desktop 在对话中直接显示加载的图像，使视觉上下文明确。所有系统都能很好地处理本地 OpenSCAD 工具链；限制因素是几何判断和清洁网格导出，而非工具访问能力。
+
+* **实际应用**：此基准测试直接影响 ModelRift 生成 3D 模型的能力，因为该平台为每个模型生成 OpenSCAD。LLM 的空间几何能力决定了可以交付哪些功能。
+
+**[Read Original / 阅读原文](https://modelrift.com/blog/openscad-llm-benchmark/)**
+
+### 🎬 Why Good Companies Go Bad (And How to Stop It)
+**Channel:** Y Combinator
+
+* What the video covers: Eric Ries, author of "The Lean Startup," discusses insights from his new book about why successful companies decline and lose their competitive edge over time
+* Key topics discussed: Organizational decay in established companies, the challenges of maintaining innovation and agility as companies scale, and practical frameworks to prevent institutional rot
+* Why it's worth watching: Essential viewing for founders, executives, and anyone interested in understanding the lifecycle of companies—offers actionable strategies to avoid the common pitfalls that cause once-great companies to fail
+
+---
+
+### 🎬 为什么好公司会走向衰败(以及如何阻止)
+**频道:** Y Combinator
+
+* 视频内容概述: 《精益创业》作者 Eric Ries 讨论其新书中关于成功公司为何会衰落并失去竞争优势的见解
+* 主要话题: 成熟公司的组织衰退、公司规模扩大时保持创新和敏捷性的挑战、以及防止机构僵化的实用框架
+* 为何值得观看: 创始人、高管和所有对公司生命周期感兴趣的人必看——提供可操作的策略来避免导致优秀公司失败的常见陷阱
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7VKliOQXQ9M)**
+
+### 🎬 Why understanding key ML concepts really helps you use LLMs more effectively
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: This podcast episode explores the relationship between foundational machine learning concepts and practical LLM usage, explaining how ML knowledge translates to better prompting and application development.
+
+* Key topics discussed: Core ML principles that inform LLM behavior, how understanding model architecture improves prompt engineering, the connection between traditional ML workflows and modern LLM applications, practical strategies for leveraging ML knowledge when working with large language models.
+
+* Why it's worth watching: If you're working with LLMs but lack a formal ML background, this episode bridges that gap. Understanding the "why" behind LLM behavior—rather than just the "how"—helps you debug issues, write better prompts, and make informed architectural decisions. Particularly valuable for developers transitioning from traditional software engineering to AI-powered applications.
+
+---
+
+### 🎬 为什么理解关键机器学习概念能帮助你更有效地使用大语言模型
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 本期播客探讨了基础机器学习概念与实际 LLM 使用之间的关系,解释了 ML 知识如何转化为更好的提示工程和应用开发能力。
+
+* 主要话题: 影响 LLM 行为的核心 ML 原理、理解模型架构如何改进提示工程、传统 ML 工作流程与现代 LLM 应用之间的联系、在使用大语言模型时利用 ML 知识的实用策略。
+
+* 为何值得观看: 如果你正在使用 LLM 但缺乏正式的机器学习背景,这期节目能填补这一空白。理解 LLM 行为背后的"原理"而不仅仅是"方法",能帮助你调试问题、编写更好的提示词,并做出明智的架构决策。对于从传统软件工程转向 AI 驱动应用的开发者尤其有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=V9q-XvAwJQY)**
+
+### 🎬 The PAPER Power !! #coding #shorts #programming
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A creative coding demonstration showcasing the visual power of paper-themed animations or effects
+* Likely features web development techniques combining code with artistic paper-like visuals
+* Worth watching for developers interested in creative coding, CSS animations, or visual effects that blend traditional aesthetics with modern web technology
+
+---
+
+### 🎬 纸的力量!! #编程 #短视频 #程序设计
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 展示以纸张为主题的创意编程动画或视觉效果
+* 可能包含将代码与艺术化纸质视觉效果结合的网页开发技术
+* 适合对创意编程、CSS 动画或将传统美学与现代网页技术融合的视觉效果感兴趣的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
 
