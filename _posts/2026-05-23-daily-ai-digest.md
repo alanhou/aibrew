@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 23, 2026"
 date: 2026-05-23
-description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 14 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：14篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -739,4 +739,102 @@ pin: false
 * **为何值得关注**: 通过将基础模型预训练成本降至消费级预算,同时保持竞争力性能,实现了 AI 民主化。提供从数据准备到评估、导出 Hugging Face 格式的完整生产级流程。计算需求降低高达 600 倍、数据需求降低高达 900 倍,对资源有限的研究人员和组织来说是重大突破。
 
 **[View Repository / 查看仓库](https://github.com/sapientinc/HRM-Text)**
+
+### Rubish: A UNIX Shell Written in Pure Ruby
+
+* **Full Bash compatibility** — Run existing bash scripts without modification; any incompatibility is considered a bug
+* **Deep Ruby integration** — Seamlessly mix shell commands with Ruby code, blocks, iterators, and libraries
+* **Ruby-enhanced syntax** — Use Ruby expressions as conditions (`if { count.to_i > 3 }`), method call style (`ls('-la')`), and method chaining (`ls().sort.uniq`)
+* **Inline Ruby evaluation** — Lines starting with capital letters execute as Ruby code directly (`Time.now`, `Dir.glob('*.rb')`)
+* **Ruby-style functions** — Define shell functions with `def...end` syntax, named parameters, and splat args
+* **Custom Ruby prompts** — Define `rubish_prompt` and `rubish_right_prompt` as Ruby functions for dynamic, programmatic prompts
+* **Lazy loading** — Defer slow initializations (rbenv, nvm, pyenv) to background threads for instant shell startup
+* **Zsh compatibility** — Supports `setopt`/`unsetopt`, `compdef`, `autoload`, `%X` prompt codes, and abbreviated path expansion
+* **Embeddable API** — Drive rubish sessions in-process from other Ruby programs with tokenization, parsing, completion, and prompt rendering APIs
+* **Restricted mode** — Run untrusted scripts safely with `-r` flag, disabling all Ruby integration features
+* **Comprehensive builtins** — Includes all standard shell builtins for directory navigation, I/O, variables, process control, job control, and more
+
+---
+
+### Rubish：用纯 Ruby 编写的 UNIX Shell
+
+* **完全兼容 Bash** — 无需修改即可运行现有 bash 脚本；任何不兼容问题都被视为 bug
+* **深度 Ruby 集成** — 无缝混合 shell 命令与 Ruby 代码、块、迭代器和库
+* **Ruby 增强语法** — 使用 Ruby 表达式作为条件（`if { count.to_i > 3 }`）、方法调用风格（`ls('-la')`）和方法链（`ls().sort.uniq`）
+* **内联 Ruby 求值** — 以大写字母开头的行直接作为 Ruby 代码执行（`Time.now`、`Dir.glob('*.rb')`）
+* **Ruby 风格函数** — 使用 `def...end` 语法、命名参数和可变参数定义 shell 函数
+* **自定义 Ruby 提示符** — 将 `rubish_prompt` 和 `rubish_right_prompt` 定义为 Ruby 函数，实现动态、可编程的提示符
+* **延迟加载** — 将慢速初始化（rbenv、nvm、pyenv）推迟到后台线程，实现即时 shell 启动
+* **Zsh 兼容性** — 支持 `setopt`/`unsetopt`、`compdef`、`autoload`、`%X` 提示符代码和缩写路径展开
+* **可嵌入 API** — 通过分词、解析、补全和提示符渲染 API，从其他 Ruby 程序进程内驱动 rubish 会话
+* **受限模式** — 使用 `-r` 标志安全运行不受信任的脚本，禁用所有 Ruby 集成功能
+* **全面的内置命令** — 包含所有标准 shell 内置命令，用于目录导航、I/O、变量、进程控制、作业控制等
+
+**[Read Original / 阅读原文](https://github.com/amatsuda/rubish)**
+
+### The Quadratic Sandwich: Understanding Strong Convexity and L-Smoothness
+
+* **Strong convexity** (μ > 0) ensures a function stays above its tangent plane plus a quadratic gap, guaranteeing minimum curvature μ in every direction and preventing flat valleys or plateaus
+* **L-smoothness** bounds the gradient's Lipschitz constant, ensuring the gradient cannot change faster than L times the input change, which caps maximum curvature
+* The **quadratic sandwich** traps well-behaved functions between two parabolas: a tighter lower bound (curvature μ) and a wider upper bound (curvature L)
+* The **condition number** κ = L/μ measures optimization difficulty: κ ≈ 1 means nearly quadratic (easy), large κ means wildly varying curvature (gradient descent zigzags)
+* When κ = 1 (μ = L), the function is exactly quadratic and gradient descent converges in one step
+* **Without strong convexity** (μ = 0): gradient loses calibration, cannot gauge distance to minimum, condition number explodes to infinity, convergence degrades
+* **Without L-smoothness**: gradient can spike unpredictably between steps, causing catastrophic overshoots even with previously safe step sizes (like kicking a ball from mud onto ice)
+
+### 二次三明治：理解强凸性和L-光滑性
+
+* **强凸性**（μ > 0）确保函数始终位于其切平面加上二次间隙之上，保证每个方向上的最小曲率为μ，防止出现平坦的山谷或高原
+* **L-光滑性**限制梯度的Lipschitz常数，确保梯度变化速度不超过输入变化的L倍，从而限制最大曲率
+* **二次三明治**将良好函数夹在两个抛物线之间：更紧的下界（曲率μ）和更宽的上界（曲率L）
+* **条件数** κ = L/μ衡量优化难度：κ ≈ 1表示近似二次函数（容易优化），大κ表示曲率变化剧烈（梯度下降会之字形震荡）
+* 当κ = 1（即μ = L）时，函数恰好是二次函数，梯度下降一步收敛
+* **缺少强凸性**（μ = 0）：梯度失去校准能力，无法判断与最小值的距离，条件数爆炸至无穷，收敛性能退化
+* **缺少L-光滑性**：梯度可能在步骤间不可预测地激增，即使使用之前安全的步长也会导致灾难性的过冲（就像从泥地踢球突然到了冰面上）
+
+**[Read Original / 阅读原文](https://fedemagnani.github.io/math/2026/04/08/the-quadratic-sandwich.html)**
+
+### Microsoft Cancels Claude Code Licenses, Pushes Developers to GitHub Copilot CLI
+
+* Microsoft is canceling most Claude Code licenses by June 30th, 2026, despite the tool's popularity among its developers over the past six months
+* The company is transitioning developers to GitHub Copilot CLI, its own command-line AI coding tool, citing both strategic alignment and financial considerations at fiscal year-end
+* Claude Code had become surprisingly popular, even among non-engineers like designers and project managers, and was preferred over GitHub Copilot CLI by many Microsoft developers
+* Microsoft's Experiences + Devices team (Windows, Microsoft 365, Outlook, Teams, Surface) is leading the transition, with the cutoff aligned to the end of the current financial year
+* Anthropic's Claude models will remain accessible through Copilot CLI and continue to be used in Microsoft 365 apps where they outperform OpenAI models at certain tasks
+* The move puts pressure on GitHub's team to rapidly improve Copilot CLI to match or exceed Claude Code's capabilities and win back internal developer adoption
+* Microsoft had previously reported 91% of engineering teams using GitHub Copilot, but Claude Code's introduction impacted that adoption rate
+* The company had considered acquiring Cursor to close the gap but is now exploring other AI startup partnerships to avoid regulatory scrutiny
+
+### 微软开始取消 Claude Code 许可证，推动开发者转向 GitHub Copilot CLI
+
+* 尽管 Claude Code 在过去六个月内深受微软开发者欢迎，微软仍计划在 2026 年 6 月 30 日前取消大部分 Claude Code 许可证
+* 公司正将开发者转向其自有的命令行 AI 编码工具 GitHub Copilot CLI，理由包括战略统一和财年末的财务考量
+* Claude Code 意外受到欢迎，甚至设计师和项目经理等非工程师也在使用，许多微软开发者更青睐它而非 GitHub Copilot CLI
+* 微软体验与设备团队（负责 Windows、Microsoft 365、Outlook、Teams、Surface）正主导这一转型，截止日期与当前财年结束时间一致
+* Anthropic 的 Claude 模型将继续通过 Copilot CLI 提供访问，并在 Microsoft 365 应用中继续使用，因其在某些任务上优于 OpenAI 模型
+* 此举给 GitHub 团队带来压力，需要快速改进 Copilot CLI 以匹配或超越 Claude Code 的能力，重新赢得内部开发者的采用
+* 微软此前报告称 91% 的工程团队使用 GitHub Copilot，但 Claude Code 的引入影响了该采用率
+* 公司曾考虑收购 Cursor 以缩小差距，但现在正探索其他 AI 初创公司合作伙伴关系以避免监管审查
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad)**
+
+### 🎬 The PAPER Power !! #coding #shorts #programming
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* A creative coding demonstration showcasing the visual power and possibilities of paper-themed animations or effects in programming
+* Likely features web development techniques, CSS animations, or creative coding concepts that bring paper-like interactions to life
+* Worth watching for developers interested in creative coding, visual effects, and learning how to build engaging animations with code in a quick, digestible short format
+
+---
+
+### 🎬 纸的力量!! #编程 #短视频 #程序设计
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 展示以纸张为主题的创意编程动画效果,演示代码的视觉表现力
+* 可能涉及网页开发技术、CSS 动画或创意编程概念,实现逼真的纸张交互效果
+* 适合对创意编程、视觉特效感兴趣的开发者观看,通过短视频快速学习如何用代码构建引人入胜的动画效果
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
 
