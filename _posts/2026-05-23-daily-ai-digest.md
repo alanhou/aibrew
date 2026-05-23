@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 23, 2026"
 date: 2026-05-23
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，6个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -652,4 +652,91 @@ pin: false
 * 适合对创意编程、网页动画和视觉编程技术感兴趣的开发者观看——短视频格式提供快速灵感
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
+
+### sp.h is the standard library that C deserves
+
+* **sp.h is a 15,000-line single-header C99 library** that reimagines C's standard library by programming directly against syscalls instead of wrapping libc
+* **Eliminates libc dependencies** where possible, arguing that libc is actively harmful for modern programming needs, especially asynchronous IO
+* **Introduces explicit memory management** through custom allocators (`sp_allocator_t`), rejecting the fiction of unlimited heap allocation
+* **Replaces null-terminated strings** with `sp_str_t` (pointer + length), enabling O(1) length checks, safe substrings, and eliminating buffer overflow vulnerabilities
+* **Achieves both ergonomics and performance** by allowing zero-copy string operations while maintaining readable, high-level code patterns
+* **Designed for portability and transparency** - works across Linux, Windows, macOS, WASM, and various compilers (MSVC, MinGW, TCC) with only ~40 platform-specific syscalls
+* **Meant to be modified** - ships as a single organized file with namespace conventions and searchable tags for easy customization
+* **Provides modern data structures** including hash tables and dynamic arrays that work seamlessly with the string type system
+
+### sp.h 是 C 语言应得的标准库
+
+* **sp.h 是一个 15,000 行的单头文件 C99 库**,通过直接调用系统调用而非封装 libc 来重新构想 C 的标准库
+* **尽可能消除 libc 依赖**,认为 libc 对现代编程需求(尤其是异步 IO)是有害的
+* **引入显式内存管理**,通过自定义分配器(`sp_allocator_t`)拒绝无限堆分配的虚构概念
+* **用 `sp_str_t`(指针+长度)替代空终止字符串**,实现 O(1) 长度检查、安全子串操作,并消除缓冲区溢出漏洞
+* **同时实现人体工程学和性能**,允许零拷贝字符串操作,同时保持可读的高级代码模式
+* **为可移植性和透明度而设计** - 可在 Linux、Windows、macOS、WASM 和各种编译器(MSVC、MinGW、TCC)上运行,仅需约 40 个平台特定的系统调用
+* **设计为可修改** - 作为单个有组织的文件发布,具有命名空间约定和可搜索标签,便于自定义
+* **提供现代数据结构**,包括与字符串类型系统无缝协作的哈希表和动态数组
+
+**[Read Original / 阅读原文](https://spader.zone/sp/)**
+
+<!-- [Title-Only] -->
+### Neutron scattering explains why gluten-free pasta falls apart (2025)
+
+* Based on the title, this article likely explores the scientific research using neutron scattering techniques to understand the structural differences between traditional and gluten-free pasta at a molecular level, explaining why gluten-free varieties tend to have inferior texture and structural integrity during cooking
+* Why it might be interesting: This represents a fascinating intersection of physics, food science, and practical cooking. Understanding the molecular mechanisms behind pasta structure could lead to better gluten-free alternatives, and it showcases how advanced scientific instruments (neutron scattering) can solve everyday culinary problems. For readers interested in food science, materials science, or gluten-free cooking, this offers insights into why gluten-free pasta behaves differently and what might be done to improve it.
+
+### 中子散射解释了无麸质意大利面为何容易散开 (2025)
+
+* 根据标题推测，这篇文章可能探讨了科学家如何利用中子散射技术，从分子层面研究传统意大利面和无麸质意大利面的结构差异，解释为什么无麸质品种在烹饪过程中质地和结构完整性较差
+* 为何值得关注：这是物理学、食品科学和实际烹饪的迷人交叉领域。理解意大利面结构背后的分子机制可能有助于开发更好的无麸质替代品，同时展示了先进的科学仪器（中子散射）如何解决日常烹饪问题。对于关注食品科学、材料科学或无麸质饮食的读者来说，这提供了关于无麸质意大利面为何表现不同以及如何改进的见解。
+
+**[Read Original / 阅读原文](https://phys.org/news/2025-09-science-spaghetti-neutron-gluten-free.html)**
+
+### What is the history of the ERROR_ARENA_TRASHED error code?
+
+* **ERROR_ARENA_TRASHED (error code 7)** is a legacy error inherited from MS-DOS, named after corrupted memory management structures called "arenas"
+* MS-DOS tracked memory using 16-byte blocks with signatures: **0x4D ('M')** for valid blocks and **0x5A ('Z')** for the last block—the initials of Mark Zbikowski
+* The error triggered when MS-DOS detected invalid signatures during memory allocation, indicating corrupted memory structures
+* **Not used by Win32 kernel**, making it useful for mocking error conditions in testing since genuine system errors won't produce it
+* Many websites claiming to "fix" this error provide vague, generic troubleshooting advice despite the error being obsolete in modern Windows
+* The slang term "trashed" reflects Microsoft's informal developer culture in the MS-DOS era
+
+### ERROR_ARENA_TRASHED 错误代码的历史
+
+* **ERROR_ARENA_TRASHED（错误代码 7）** 是从 MS-DOS 继承的遗留错误，因内存管理结构"arena"损坏而得名
+* MS-DOS 使用 16 字节的内存块追踪内存，带有签名：**0x4D ('M')** 表示有效块，**0x5A ('Z')** 表示最后一个块——这是 Mark Zbikowski 的首字母缩写
+* 当 MS-DOS 在内存分配期间检测到无效签名时触发此错误，表示内存结构已损坏
+* **Win32 内核不使用此错误**，因此适合在测试中模拟错误条件，因为真实的系统错误不会产生它
+* 许多声称能"修复"此错误的网站提供模糊、通用的故障排除建议，尽管该错误在现代 Windows 中已过时
+* 俚语"trashed"反映了 MS-DOS 时代微软开发者的非正式文化
+
+**[Read Original / 阅读原文](https://devblogs.microsoft.com/oldnewthing/20260519-00/?p=112339)**
+
+### HRM-Text - Efficient 1B Text Generation Model with $1000 Pretraining Budget
+
+* **What it does**: A 1B parameter text generation model that can be pretrained from scratch for approximately $1000, using 130-600x less compute and 150-900x less data than traditional approaches. Built on a hierarchical recurrent architecture (HRM) with task completion and latent space reasoning capabilities.
+
+* **Key features**: 
+  - Two model sizes: L (0.6B, 8 H100s, ~$800) and XL (1B, 16 H100s, ~$1472)
+  - Strong benchmark performance (XL: 84.7% GSM8k, 56.5% MATH, 82.3% DROP, 60.7% MMLU)
+  - Complete pretraining framework with PrefixLM sequence packing, FlashAttention 3, PyTorch FSDP2
+  - Includes evaluation suite, checkpoint conversion, and fine-tuning (SFT) support
+  - Docker environment with full toolchain for reproducible training
+
+* **Why it's notable**: Democratizes foundation model pretraining by making it accessible at consumer-friendly budgets while achieving competitive performance. Provides a complete, production-ready pipeline from data preparation through evaluation and export to Hugging Face format. The dramatic reduction in compute requirements (up to 600x) and data needs (up to 900x) represents a significant breakthrough for researchers and organizations with limited resources.
+
+---
+
+### HRM-Text - 千元预算训练的高效 10 亿参数文本生成模型
+
+* **功能介绍**: 一个可以用约 1000 美元从零开始预训练的 10 亿参数文本生成模型,基于分层递归架构(HRM),通过任务完成和潜在空间推理增强。相比传统方法减少 130-600 倍计算量和 150-900 倍数据需求。
+
+* **主要特点**:
+  - 两种模型规格:L 版(6 亿参数,8 张 H100,约 800 美元)和 XL 版(10 亿参数,16 张 H100,约 1472 美元)
+  - 强劲的基准测试表现(XL 版:GSM8k 84.7%、MATH 56.5%、DROP 82.3%、MMLU 60.7%)
+  - 完整的预训练框架,包含 PrefixLM 序列打包、FlashAttention 3、PyTorch FSDP2
+  - 提供评估套件、检查点转换和监督微调(SFT)支持
+  - Docker 环境配套完整工具链,确保训练可复现
+
+* **为何值得关注**: 通过将基础模型预训练成本降至消费级预算,同时保持竞争力性能,实现了 AI 民主化。提供从数据准备到评估、导出 Hugging Face 格式的完整生产级流程。计算需求降低高达 600 倍、数据需求降低高达 900 倍,对资源有限的研究人员和组织来说是重大突破。
+
+**[View Repository / 查看仓库](https://github.com/sapientinc/HRM-Text)**
 
