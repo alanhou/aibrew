@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 24, 2026"
 date: 2026-05-24
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 0 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，0个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -276,4 +276,254 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合初学者的Arduino项目,结合硬件组装与实用的可再生能源应用,展示如何通过自动定位最大化太阳能板效率
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
+
+### It's Time to Talk About My Writerdeck
+
+* **Minimal writing setup**: Installed console-only Debian (no desktop environment) on an old System76 laptop to create a distraction-free writing device
+* **Network connectivity**: Added `network-manager` with `nm-tui` for easy Wi-Fi connections when needed, while keeping the device mostly offline
+* **Enhanced console experience**: Installed `kmscon` for custom fonts, scalable text, and better color support beyond the standard 16-color tty
+* **Terminal multiplexing**: Used `tmux` for screen tiling and a custom status bar, with `acpi` for battery monitoring and `light` for backlight control via F-keys
+* **Writing tools**: Set up `neovim` as the primary editor with `vim-vimwiki` plugin for maintaining a personal wiki
+* **Backup solution**: Configured `syncthing` to sync and backup writing work across devices
+* **Philosophy**: Breaks desktop OS muscle memory to force intentional writing without browser distractions, using only what's needed
+
+### 我的专用写作设备配置
+
+* **极简写作环境**：在旧 System76 笔记本上安装纯控制台 Debian 系统（完全无桌面环境），打造无干扰写作设备
+* **网络连接**：添加 `network-manager` 和 `nm-tui` 工具，方便在需要时连接 Wi-Fi，同时保持设备主要离线状态
+* **增强控制台体验**：安装 `kmscon` 实现自定义字体、可缩放文本和超越标准 16 色的 tty 色彩支持
+* **终端复用**：使用 `tmux` 实现屏幕分割和自定义状态栏，配合 `acpi` 监控电池和 `light` 通过功能键控制屏幕亮度
+* **写作工具**：配置 `neovim` 作为主编辑器，使用 `vim-vimwiki` 插件维护个人知识库
+* **备份方案**：配置 `syncthing` 在设备间同步和备份写作内容
+* **设计理念**：打破桌面操作系统的使用惯性，强制专注于文字创作，无浏览器干扰，只保留必需功能
+
+**[Read Original / 阅读原文](https://veronicaexplains.net/my-first-writerdeck/)**
+
+<!-- [Title-Only] -->
+### Texas woman arrested for Facebook post about town water quality
+
+* Based on the title, this article likely covers a case where a woman in Texas faced legal consequences for publicly criticizing or raising concerns about her town's water quality on Facebook. This appears to involve issues of free speech, government accountability, and the intersection of social media with civic engagement.
+* Why it might be interesting to readers: This case raises important questions about First Amendment protections, whether citizens can be penalized for criticizing public services, and the potential chilling effect on public discourse about health and safety issues. It touches on the tension between government authority and citizen oversight, particularly relevant given ongoing concerns about infrastructure and water quality in various U.S. communities.
+
+### 德州女性因Facebook发帖评论城镇水质被捕
+
+* 根据标题推测,本文可能报道了一名德州女性因在Facebook上公开批评或质疑其所在城镇的水质问题而面临法律后果的案例。这似乎涉及言论自由、政府问责制以及社交媒体与公民参与的交集等议题。
+* 为何值得关注:此案引发了关于第一修正案保护范围的重要问题——公民是否会因批评公共服务而受到惩罚,以及这种做法对公共健康和安全议题讨论可能产生的寒蝉效应。考虑到美国各地社区持续存在的基础设施和水质担忧,这个案例凸显了政府权威与公民监督之间的张力,具有现实意义。
+
+**[Read Original / 阅读原文](https://reclaimthenet.org/texas-woman-arrested-for-facebook-post-about-town-water-quality)**
+
+### Reverse Engineering a 1980 Spacelab Computer's Circuitry
+
+* **Spacelab Background**: Spacelab was a reusable laboratory carried in the Space Shuttle's cargo bay, controlled by a French-built Mitra 125 MS minicomputer that used discrete chips instead of a microprocessor
+* **Computer Architecture**: The 16-bit processor was constructed from multiple circuit boards, with the Arithmetic/Logic Unit (ALU) built from several boards of TTL (transistor-transistor logic) chips
+* **74181 ALU Chip**: The core component was the Texas Instruments 74181, a 4-bit ALU chip containing ~170 transistors that performed arithmetic and Boolean logic operations
+* **32-bit Implementation**: Eight 54S181 chips were combined to create a 32-bit adder, spread across three boards with 32 multiplexer chips, 24 register chips, and carry-lookahead chips
+* **Design Surprise**: Despite being a 16-bit computer, it featured a 32-bit ALU to improve performance for multiplication and 32-bit floating-point operations
+* **Historical Context**: The Mitra 125 MS was a militarized variant produced by CIMSA; Spacelab missions used three computers (Subsystem, Experiment, and Backup) mounted under the Work Bench Rack
+* **Technology Era**: Built with military-grade 5400 series TTL chips (bipolar transistors), representing pre-microprocessor minicomputer design from the early 1980s
+
+### 对1980年太空实验室计算机电路的逆向工程
+
+* **太空实验室背景**:太空实验室是可在航天飞机货舱中携带的可重复使用实验室,由法国制造的Mitra 125 MS微型计算机控制,该计算机使用分立芯片而非微处理器
+* **计算机架构**:16位处理器由多块电路板构建,算术逻辑单元(ALU)由多块TTL(晶体管-晶体管逻辑)芯片板组成
+* **74181 ALU芯片**:核心组件是德州仪器74181,一个包含约170个晶体管的4位ALU芯片,执行算术和布尔逻辑运算
+* **32位实现**:八个54S181芯片组合创建32位加法器,分布在三块板上,配有32个多路复用器芯片、24个寄存器芯片和进位超前芯片
+* **设计惊喜**:尽管是16位计算机,却配备32位ALU以提高乘法和32位浮点运算的性能
+* **历史背景**:Mitra 125 MS是CIMSA生产的军用化版本;太空实验室任务使用三台计算机(子系统、实验和备份),安装在工作台架下方
+* **技术时代**:采用军用级5400系列TTL芯片(双极晶体管)构建,代表了1980年代早期微处理器出现前的微型计算机设计
+
+**[Read Original / 阅读原文](https://www.righto.com/2026/05/reverse-engineering-spacelab-computer.html)**
+
+### AI Engineering from Scratch - Complete Hands-On AI Curriculum
+
+* **What it does**: A comprehensive, 435-lesson curriculum teaching AI engineering from mathematical foundations through autonomous agent systems, with every lesson producing a reusable artifact (prompt, skill, agent, or MCP server)
+
+* **Key features**:
+  - 20 structured phases covering math foundations → ML → deep learning → transformers → LLMs → agents → production systems
+  - Build-first approach: implement algorithms from scratch before using frameworks (PyTorch, sklearn)
+  - Multi-language support (Python, TypeScript, Rust, Julia)
+  - Each lesson ships working code with 6-step structure: Motto → Problem → Concept → Build It → Use It → Ship It
+  - Built-in agent skills for personalized learning paths (`/find-your-level`, `/check-understanding`)
+  - ~320 hours of content, designed to run on your laptop
+
+* **Why it's notable**: Bridges the gap between AI tool usage (84% of students) and professional readiness (only 18% feel prepared) by teaching the complete stack end-to-end. Unlike scattered tutorials, this provides a linear progression where you understand what frameworks do under the hood because you've already built the smaller version yourself. Gained 1,523 stars today, reflecting strong demand for structured, implementation-focused AI education.
+
+---
+
+### AI Engineering from Scratch - 完整的 AI 工程实战课程
+
+* **功能介绍**: 包含 435 节课的综合性 AI 工程课程,从数学基础到自主智能体系统的完整教学,每节课都产出可复用的工件(提示词、技能、智能体或 MCP 服务器)
+
+* **主要特点**:
+  - 20 个结构化阶段,涵盖数学基础 → 机器学习 → 深度学习 → Transformers → 大语言模型 → 智能体 → 生产系统
+  - 先构建后使用:在使用框架(PyTorch、sklearn)之前先从零实现算法
+  - 支持多种编程语言(Python、TypeScript、Rust、Julia)
+  - 每节课包含可运行代码,采用 6 步结构:核心理念 → 问题 → 概念 → 构建 → 使用 → 交付
+  - 内置智能体技能,提供个性化学习路径(`/find-your-level`、`/check-understanding`)
+  - 约 320 小时内容,可在个人笔记本上运行
+
+* **为何值得关注**: 弥合了 AI 工具使用(84% 学生使用)与职业准备度(仅 18% 感到有准备)之间的差距,通过端到端教学完整技术栈。与零散教程不同,本课程提供线性进阶路径,让学习者理解框架底层原理,因为已经亲手构建过简化版本。今日获得 1,523 星标,反映出市场对结构化、注重实践的 AI 教育的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/ai-engineering-from-scratch)**
+
+### FinceptTerminal - Institutional-Grade Financial Intelligence Platform
+
+* **What it does**: A native C++20 desktop application that provides professional-level financial analytics, AI-powered market research, and real-time trading capabilities. Built with Qt6 and embedded Python, it delivers terminal-class performance for equity research, portfolio management, derivatives pricing, and quantitative analysis.
+
+* **Key features**: 
+  - 37 AI agents modeling legendary investors (Buffett, Graham, Lynch) with multi-LLM support (OpenAI, Anthropic, DeepSeek, Ollama)
+  - 100+ data connectors (DBnomics, Polygon, FRED, World Bank, Yahoo Finance)
+  - Real-time trading with 16 broker integrations and crypto WebSocket feeds
+  - QuantLib suite with 18 quantitative modules for pricing, risk, and volatility analysis
+  - Visual workflow automation via node editor
+  - Multi-asset analytics including DCF models, portfolio optimization, VaR, and derivatives pricing
+
+* **Why it's notable**: Gaining 537 stars today as an open-source alternative to Bloomberg Terminal. Combines institutional-grade analytics with AI automation in a single native binary. Offers unprecedented data connectivity and supports both professional traders and quantitative researchers. AGPL-3.0 licensed with commercial options available.
+
+---
+
+### FinceptTerminal - 机构级金融智能平台
+
+* **功能介绍**: 一款原生 C++20 桌面应用程序,提供专业级金融分析、AI 驱动的市场研究和实时交易功能。基于 Qt6 构建并嵌入 Python,为股票研究、投资组合管理、衍生品定价和量化分析提供终端级性能。
+
+* **主要特点**:
+  - 37 个 AI 智能体模拟传奇投资者(巴菲特、格雷厄姆、林奇等),支持多种大语言模型(OpenAI、Anthropic、DeepSeek、Ollama)
+  - 100+ 数据连接器(DBnomics、Polygon、FRED、世界银行、Yahoo Finance 等)
+  - 实时交易功能,集成 16 家券商接口和加密货币 WebSocket 数据流
+  - QuantLib 套件包含 18 个量化模块,涵盖定价、风险和波动率分析
+  - 通过节点编辑器实现可视化工作流自动化
+  - 多资产分析功能,包括 DCF 模型、投资组合优化、VaR 和衍生品定价
+
+* **为何值得关注**: 今日获得 537 星标,作为彭博终端的开源替代方案备受关注。将机构级分析能力与 AI 自动化整合到单一原生二进制文件中。提供前所未有的数据连接能力,同时服务于专业交易员和量化研究人员。采用 AGPL-3.0 许可证,并提供商业授权选项。
+
+**[View Repository / 查看仓库](https://github.com/Fincept-Corporation/FinceptTerminal)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### GuJumpgate - Automated GPT Plus Registration Browser Extension
+
+* **What it does**: A browser extension that automates the entire process of registering OpenAI free accounts and upgrading them to GPT Plus using PayPal, including automatic email alias creation, payment form filling, and OAuth callbacks.
+
+* **Key features**: 
+  - Fully automated free account registration via FlowPilot integration
+  - Complete PayPal activation flow (Stripe billing, PayPal form auto-fill)
+  - Hotmail/Outlook automatic alias functionality
+  - PayPal phone number pool management
+  - Supports skipping OAuth to generate session-only JSON exports
+  - Built-in proxy configuration for payment conversion (US registration + JP payment link + US checkout)
+
+* **Why it's notable**: Achieves 100% success rate in testing (10 consecutive runs), genuinely "hands-free" automation for a typically manual multi-step process. Addresses current OAuth restrictions by supporting session-based JSON exports. Based on the open-source FlowPilot project with significant adaptations for reliability and ease of use.
+
+---
+
+### GuJumpgate - 全自动 GPT Plus 注册浏览器扩展
+
+* **功能介绍**: 一个浏览器扩展，可全自动完成 OpenAI 免费账号注册并通过 PayPal 升级至 GPT Plus，包括自动创建邮箱别名、自动填写支付表单和 OAuth 回调等全流程。
+
+* **主要特点**:
+  - 通过 FlowPilot 集成实现全自动免费账号注册
+  - 完整的 PayPal 激活流程（Stripe 账单、PayPal 表单自动填写）
+  - Hotmail/Outlook 自动别名功能
+  - PayPal 号码池管理
+  - 支持跳过 OAuth 生成纯 Session JSON 导出
+  - 内置代理配置支持支付转换（美国注册 + 日本长链接 + 美国付款）
+
+* **为何值得关注**: 测试中达到 100% 成功率（连续 10 次运行），真正实现"解放双手"的多步骤自动化流程。针对当前 OAuth 风控严重的情况，支持导出无刷新令牌的 Session JSON。基于开源项目 FlowPilot 进行大量适配和优化，提升可靠性和易用性。
+
+**[View Repository / 查看仓库](https://github.com/FoundZiGu/GuJumpgate)**
+
+### 9arm-skills - Claude Code Agent Skills Collection
+
+* **What it does**: A curated collection of specialized skills/prompts that extend Claude Code's capabilities for software engineering and productivity workflows
+* **Key features**: 
+  - Organized skill library covering debugging (debug-mantra), post-mortem analysis, code review (scrutinize), and management communication
+  - Each skill is a self-contained module with YAML frontmatter and bundled scripts
+  - Easy installation via symlink script to `~/.claude/skills/`
+  - Categorized into engineering, productivity, misc, personal, in-progress, and deprecated buckets
+* **Why it's notable**: Provides battle-tested, opinionated workflows for AI-assisted development—particularly valuable for teams adopting Claude Code who want structured approaches to debugging, documentation, and technical communication
+
+---
+
+### 9arm-skills - Claude Code 智能体技能集合
+
+* **功能介绍**: 为 Claude Code 提供的专业技能/提示词集合,扩展其在软件工程和生产力工作流中的能力
+* **主要特点**:
+  - 精心组织的技能库,涵盖调试方法论(debug-mantra)、事后分析(post-mortem)、代码审查(scrutinize)和管理沟通等场景
+  - 每个技能都是独立模块,包含 YAML 元数据和配套脚本
+  - 通过符号链接脚本可快速安装到 `~/.claude/skills/`
+  - 按工程、生产力、杂项、个人、开发中和已弃用等类别分组管理
+* **为何值得关注**: 为 AI 辅助开发提供了经过实战检验的结构化工作流程——对于正在采用 Claude Code 并希望在调试、文档编写和技术沟通方面建立标准化方法的团队特别有价值
+
+**[View Repository / 查看仓库](https://github.com/thananon/9arm-skills)**
+
+### 🎬 How The Best Companies Defend Against Mediocrity And Rot
+
+**Channel:** Y Combinator
+
+* **What the video covers:** A conversation between Garry Tan and Eric Ries exploring how successful companies combat organizational decline and maintain excellence as they scale
+* **Key topics discussed:** Strategies from Eric Ries' new book on preventing corporate stagnation, lessons from "The Lean Startup" applied to organizational health, and practical frameworks for sustaining innovation and quality in growing companies
+* **Why it's worth watching:** Essential insights from the author of "The Lean Startup" on a critical challenge every scaling company faces—how to avoid the entropy that turns great companies mediocre. Particularly valuable for founders and leaders navigating growth phases.
+
+---
+
+### 🎬 顶尖公司如何抵御平庸与衰退
+
+**频道:** Y Combinator
+
+* **视频内容概述:** Garry Tan 与《精益创业》作者 Eric Ries 深度对话，探讨成功公司如何在规模化过程中对抗组织衰退并保持卓越
+* **主要话题:** Eric Ries 新书中关于防止企业停滞的策略、《精益创业》理念在组织健康方面的应用，以及在成长型公司中维持创新和质量的实用框架
+* **为何值得观看:** 来自《精益创业》作者关于每个规模化公司都会面临的关键挑战的核心洞察——如何避免让优秀公司变得平庸的熵增效应。对于正在经历增长阶段的创始人和领导者尤其有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7VKliOQXQ9M)**
+
+### 🎬 The PAPER Power !! #coding #shorts #programming
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A creative coding demonstration showcasing the visual power and possibilities of programming
+* Likely features animation techniques, visual effects, or creative coding concepts using paper-themed elements
+* Worth watching for developers interested in creative coding, web animations, and visual programming techniques—perfect bite-sized inspiration in short format
+
+---
+
+### 🎬 纸的力量！！#编程 #短视频 #程序设计
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* 展示编程视觉效果和创意可能性的创意编程演示
+* 可能包含动画技术、视觉特效或以纸张为主题的创意编程概念
+* 适合对创意编程、网页动画和视觉编程技术感兴趣的开发者观看——短视频格式提供快速灵感
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
+
+### 🎬 Build Your Own Claude Code | Full AI Coding Agent Tutorial
+**Channel:** Code With Antonio
+
+* What the video covers: A comprehensive tutorial on building an AI coding agent from scratch, inspired by tools like Claude Code (Anthropic's AI coding assistant)
+* Key topics discussed: Modern AI coding agent architecture, implementation patterns, and the underlying mechanisms that power AI-assisted development tools
+* Why it's worth watching: Perfect for developers who want to understand how AI coding assistants work under the hood and learn to build their own custom coding agent with full control over features and behavior
+
+### 🎬 从零构建你自己的 Claude Code | AI 编程助手完整教程
+**频道:** Code With Antonio
+
+* 视频内容概述: 从零开始构建一个受 Claude Code 启发的 AI 编程助手，深入了解现代 AI 辅助开发工具的工作原理
+* 主要话题: 现代 AI 编程助手的架构设计、实现模式，以及驱动 AI 辅助开发工具的核心机制
+* 为何值得观看: 适合想要深入理解 AI 编程助手底层原理的开发者，学习如何构建自定义编程助手，完全掌控功能和行为逻辑
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k_D_C3ExypU)**
+
+### 🎬 Find almost every tool for developers #development #coding #productivity
+**Channel:** SetupsAI
+
+* What the video covers: A curated collection or directory showcasing a wide range of developer tools across different categories
+* Key topics discussed: Development tools, coding utilities, productivity enhancers for software engineers and programmers
+* Why it's worth watching: Provides a comprehensive resource for discovering new tools that can streamline your development workflow and boost productivity, potentially saving time in finding the right tools for specific tasks
+
+### 🎬 开发者工具大全 #开发 #编程 #效率
+**频道:** SetupsAI
+
+* 视频内容概述: 展示了一个精选的开发者工具集合或目录，涵盖不同类别的各种工具
+* 主要话题: 开发工具、编程实用程序、面向软件工程师和程序员的生产力工具
+* 为何值得观看: 提供了一个全面的资源来发现新工具，可以简化开发工作流程并提高生产力，在寻找特定任务的合适工具时节省时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rJjsLX02X-M)**
 
