@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 23, 2026"
 date: 2026-05-23
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，4个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，6个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -488,4 +488,168 @@ pin: false
 * 为何值得观看: 快速教程演示如何在 Unity 中创建持续移动机制,适用于无尽跑酷游戏或自动滚动平台游戏;对开发 2D 项目的独立开发者很实用
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=k2LGyKHlc6w)**
+
+### Shipping a Laptop to a Refugee Camp in Uganda: A Journey Through Bureaucracy and Perseverance
+
+* **The Challenge**: A Congolese refugee named Django, studying Computer Science remotely from a Ugandan refugee camp with solar power and rationed internet, needed a replacement laptop after his motherboard burned out
+* **Failed First Attempt**: Initial shipment via Australia Post ($111.60 AUD) was returned because lithium battery devices cannot be shipped internationally by air through their service
+* **Second Attempt via Freight**: Used Pack & Send freight service ($213 AUD) with warnings about customs fees, taxes, and potential $50-100 buffer needed on recipient's end
+* **Customs Bureaucracy**: Required Tax Identification Number (TIN) registration through Uganda Revenue Authority (URA) Portal, which refugees cannot complete online
+* **Arduous TIN Journey**: Django traveled 5+ hours (2-hour walk + motorcycle + 3-hour bus) to URA office, was told to return for authorization letter, faced network "issues" and implicit bribery requests, waited hours while others were served, finally received TIN in 10 minutes after full day of persistence
+* **Tax Payment**: Completed customs clearance with UGX 127,657.76 (~$47 AUD) in taxes, bringing total cost to ~$407 AUD
+* **Seizure Issue**: Package routed through 9+ countries, temporarily seized because used laptops require original purchase receipts under Ugandan law
+* **Resolution**: After additional UGX 50,000 (~$18.50 AUD) payment and proving it was a used gift, laptop was finally released and delivered
+* **Total Journey**: Over one month from initial shipment to delivery, highlighting the extreme barriers refugees face in accessing basic educational resources
+
+### 向乌干达难民营邮寄笔记本电脑:穿越官僚主义与坚持不懈的旅程
+
+* **挑战背景**:刚果难民Django在乌干达难民营依靠太阳能和配给的网络远程攻读计算机科学学位,主板烧毁后急需替换笔记本电脑
+* **首次失败尝试**:通过澳大利亚邮政寄送($111.60澳元)被退回,因为含锂电池设备不能通过航空国际邮寄
+* **第二次货运尝试**:使用Pack & Send货运服务($213澳元),被警告需要支付关税、税费,收件人需准备$50-100澳元缓冲资金
+* **海关官僚程序**:需要通过乌干达税务局(URA)门户网站注册税务识别号(TIN),难民无法在线完成
+* **艰难的TIN申请之旅**:Django跋涉5小时以上(步行2小时+摩托车+巴士3小时)到达URA办公室,被要求返回获取授权信,遭遇网络"故障"和隐性贿赂要求,眼看他人正常办理而自己等待数小时,最终在坚持一整天后10分钟内获得TIN
+* **税费支付**:完成海关清关,支付UGX 127,657.76(约$47澳元)税费,总成本达到约$407澳元
+* **扣押问题**:包裹途经9个以上国家,因乌干达法律规定二手笔记本电脑需要原始购买收据而被临时扣押
+* **最终解决**:额外支付UGX 50,000(约$18.50澳元)并证明是二手礼物后,笔记本电脑最终放行并送达
+* **全程耗时**:从最初发货到交付超过一个月,凸显难民在获取基本教育资源时面临的极端障碍
+
+**[Read Original / 阅读原文](https://notesbylex.com/shipping-a-laptop-to-a-refugee-camp-in-uganda)**
+
+### How Decades of Sleep Research Led to a New Sleep Apnea Drug
+
+* The article title suggests a breakthrough in sleep apnea treatment resulting from long-term research efforts
+* A new pharmaceutical intervention for sleep apnea has been developed, representing a significant advancement in the field
+* The development is connected to the Temerty Faculty of Medicine, indicating academic research origins
+* Decades of accumulated sleep science knowledge contributed to this medical innovation
+* This represents a potential alternative or complement to traditional sleep apnea treatments like CPAP machines
+
+### 数十年睡眠研究催生新型睡眠呼吸暂停药物
+
+* 文章标题表明长期研究工作在睡眠呼吸暂停治疗方面取得突破性进展
+* 一种新的睡眠呼吸暂停药物治疗方法已被开发出来，代表该领域的重大进步
+* 该研究成果与坦普尔蒂医学院相关，表明源自学术研究
+* 数十年积累的睡眠科学知识为这一医学创新做出了贡献
+* 这可能为传统睡眠呼吸暂停治疗方法（如CPAP呼吸机）提供替代或补充选择
+
+**[Read Original / 阅读原文](https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-sleep-apnea-drug)**
+
+### Blood Pumping Mechanism of the Horse Hoof
+
+* The horse's hoof contains a sophisticated "pumping mechanism" that assists in returning venous blood to the heart, compensating for the lack of muscles in the lower leg
+* An extensive network of veins called the venous plexus is located on both sides of the lateral cartilages and within the sensitive structures of the hoof
+* Compression of these veins by the plantar cushion against the lateral cartilages or the coffin bone against the hoof wall acts as a pump to force blood up the leg
+* One-way valves in the leg veins prevent blood from flowing back down to the hoof, while compression creates a "hydraulic cushion" that dissipates concussion and protects the coffin bone
+* When the hoof bears weight, veins compress and push blood upward; when lifted, veins open and refill through arterial pulse and gravity—this cycle is often called the horse's "second heart"
+
+### 马蹄的血液泵送机制
+
+* 马蹄包含一个复杂的"泵送机制"，协助将静脉血液输送回心脏，弥补下肢缺乏肌肉的不足
+* 一个广泛的静脉网络称为静脉丛，位于每个侧软骨的两侧以及马蹄的敏感结构内
+* 这些静脉受到跖垫对侧软骨的压迫，或蹄骨对蹄壁的压迫，起到泵的作用，将血液推向腿部上方
+* 腿部静脉中的单向瓣膜防止血液回流到马蹄，而压迫产生的"液压缓冲"可以消散震荡并保护脆弱的蹄骨
+* 当马蹄承重时，静脉被压缩并向上推送血液；当抬起时，静脉打开并通过动脉脉搏和重力重新充盈——这个循环常被称为马的"第二心脏"
+
+**[Read Original / 阅读原文](https://horses.extension.org/blood-pumping-mechanism-of-the-hoof/)**
+
+### SmallCode - AI Coding Agent Optimized for Small Local LLMs
+
+* **What it does**: A terminal-native AI coding agent specifically designed to work with small local language models (8B-35B parameters) running on consumer hardware, enabling developers to use AI assistance without cloud dependencies or API costs.
+
+* **Key features**: 
+  - **Budget-aware architecture** with context management, forgiving tool-call parsing, and patch-based editing optimized for small model limitations
+  - **MarrowScript cognition layer** providing prompt caching, structured traces, tier-based routing, and automatic validation/repair
+  - **BoneScript integration** for Node.js/TypeScript projects, compiling single `.bone` files into complete backends
+  - **Model escalation** with optional fallback to cloud models (Claude, GPT-5, DeepSeek) on hard failures
+  - **TODO-driven planning** that decomposes complex tasks into atomic steps with validation
+  - **Persistent shell sessions** and working memory that survives across turns
+  - **18 built-in tools** with 2-stage routing to reduce context overhead
+
+* **Why it's notable**: Achieves 87% benchmark performance with 4B-active models by compensating for small model limitations through intelligent architecture rather than requiring frontier models. Offers complete privacy with fully local operation, no network calls needed. Provides prebuilt binaries for all platforms with zero build dependencies. Represents a practical approach to making AI coding assistance accessible on consumer hardware without cloud costs.
+
+---
+
+### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
+
+* **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(8B-35B 参数)设计的终端原生 AI 编码代理,让开发者无需依赖云服务或支付 API 费用即可使用 AI 辅助编程。
+
+* **主要特点**:
+  - **预算感知架构**,包含上下文管理、容错工具调用解析和针对小模型限制优化的补丁式编辑
+  - **MarrowScript 认知层**提供提示词缓存、结构化追踪、分层路由和自动验证/修复
+  - **BoneScript 集成**用于 Node.js/TypeScript 项目,将单个 `.bone` 文件编译为完整后端
+  - **模型升级机制**,在严重失败时可选择回退到云模型(Claude、GPT-5、DeepSeek)
+  - **TODO 驱动规划**将复杂任务分解为带验证的原子步骤
+  - **持久化 Shell 会话**和跨轮次保留的工作内存
+  - **18 个内置工具**,采用两阶段路由减少上下文开销
+
+* **为何值得关注**: 通过智能架构补偿小模型的局限性,而非依赖前沿模型,在 4B 激活参数模型上实现了 87% 的基准性能。提供完全本地化操作,无需网络调用,保证完全隐私。为所有平台提供预编译二进制文件,零构建依赖。代表了一种实用方法,使 AI 编码辅助在消费级硬件上无需云成本即可实现。
+
+**[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
+
+### Agent-Learning-Hub - Curated AI Agent Learning Roadmap and Resource Collection
+
+* **What it does**: Provides a structured, actionable learning path for building production-ready AI agents, moving beyond simple chatbots to real-world agent systems with tool use, memory, evaluation, and safety guardrails.
+
+* **Key features**: 
+  - Stage-by-stage todo list from basic agent loops to production harnesses
+  - Project ladder with 11 hands-on projects of increasing complexity
+  - Curated resources prioritizing official docs, modern agent systems (Claude Code, OpenClaw, Hermes), and protocols (MCP, A2A, ACP)
+  - Focus on practical engineering: skills, evaluation, observability, browser agents, and safety
+  - Emphasis on modern approaches over outdated role-play frameworks
+
+* **Why it's notable**: Cuts through the noise of scattered agent tutorials by providing a clear, opinionated learning path focused on what actually matters in 2024-2026—coding agents, agent harnesses, skills/protocols, and production readiness. Maintained by Datawhale community with 1,098 stars, it's particularly valuable for Chinese-speaking developers wanting to build useful agents rather than collect random links.
+
+---
+
+### Agent-Learning-Hub - AI 智能体学习路线与资源库
+
+* **功能介绍**: 提供结构化、可执行的 AI Agent 学习路径,帮助开发者构建生产级智能体系统,从基础对话机器人进阶到具备工具调用、记忆管理、评测和安全机制的真实应用。
+
+* **主要特点**:
+  - 分阶段学习清单,从最小 agent 循环到生产级 harness
+  - 11 个难度递进的实战项目梯度
+  - 精选资源优先官方文档、现代智能体系统(Claude Code、OpenClaw、Hermes)和协议标准(MCP、A2A、ACP)
+  - 聚焦实用工程能力:技能封装、评测体系、可观测性、浏览器智能体和安全边界
+  - 强调现代方法论,避开过时的角色扮演框架
+
+* **为何值得关注**: 在碎片化的 Agent 教程中提供清晰、有主见的学习路径,聚焦 2024-2026 年真正重要的方向——代码智能体、agent harness 工程、技能协议和生产化部署。由 Datawhale 社区维护,获 1,098 星标,特别适合想构建实用智能体而非收集链接的中文开发者。
+
+**[View Repository / 查看仓库](https://github.com/datawhalechina/Agent-Learning-Hub)**
+
+### 🎬 When Claude Handles Your Project
+
+**Channel:** Sheryians Coding School
+
+* What the video covers: A short demonstration of Claude AI managing development projects, likely showcasing its coding capabilities and project handling features
+* Key topics discussed: Claude AI's practical application in software development workflows, automated project management, AI-assisted coding
+* Why it's worth watching: Quick insight into how AI tools like Claude can streamline development work, relevant for developers exploring AI-powered coding assistants
+
+---
+
+### 🎬 当 Claude 接管你的项目
+
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 简短演示 Claude AI 如何管理开发项目,展示其编码能力和项目处理功能
+* 主要话题: Claude AI 在软件开发工作流程中的实际应用、自动化项目管理、AI 辅助编码
+* 为何值得观看: 快速了解 Claude 等 AI 工具如何简化开发工作,适合探索 AI 编程助手的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QGNw9QZHsAA)**
+
+### 🎬 The PAPER Power !! #coding #shorts #programming
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A creative coding demonstration showcasing the visual power and possibilities of programming
+* Likely features animation techniques, visual effects, or creative coding concepts using paper-themed elements
+* Worth watching for developers interested in creative coding, web animations, and visual programming techniques—perfect bite-sized inspiration in short format
+
+---
+
+### 🎬 纸的力量！！#编程 #短视频 #程序设计
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* 展示编程视觉效果和创意可能性的创意编程演示
+* 可能包含动画技术、视觉特效或以纸张为主题的创意编程概念
+* 适合对创意编程、网页动画和视觉编程技术感兴趣的开发者观看——短视频格式提供快速灵感
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=omfU5ra_rcI)**
 
