@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 24, 2026"
 date: 2026-05-24
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -249,104 +249,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * What the video covers: A satirical take on common career advice given to engineering students in India, particularly around learning Python, DSA (Data Structures & Algorithms), and AI
 * Key topics discussed: The repetitive and often generic placement advice that engineering students receive, the pressure to follow trending tech skills, and the reality behind such recommendations
 * Why it's worth watching: Relatable humor for engineering students and recent graduates who've experienced the overwhelming and sometimes contradictory career guidance during their college years; offers a comedic perspective on the tech education and placement culture
-
----
-
-### 🎬 等到最后 #shorts #编程学校 #就业 #工程
-**频道:** Sheryians Coding School
-
-* 视频内容概述: 讽刺印度工程专业学生经常听到的职业建议,特别是关于学习 Python、数据结构与算法(DSA)和人工智能的建议
-* 主要话题: 工程学生收到的重复且通用的就业建议、追随热门技术技能的压力,以及这些建议背后的现实
-* 为何值得观看: 对于经历过大学期间铺天盖地且有时相互矛盾的职业指导的工程学生和应届毕业生来说非常有共鸣;以幽默的方式呈现科技教育和就业文化
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MFiOI1q9oLs)**
-
-### 🎬 How to Make an Arduino Solar Panel Tracker | Easy Project Tutorial #shorts
-**Channel:** Seun Tech
-
-* What the video covers: A complete step-by-step tutorial on building an automatic solar tracking system using Arduino and light-dependent resistors (LDRs)
-* Key topics discussed: Arduino IDE programming, LDR sensor integration, servo motor control for panel positioning, and automated sun-tracking mechanism
-* Why it's worth watching: Perfect beginner-friendly Arduino project that combines hardware assembly with practical renewable energy applications, demonstrating how to maximize solar panel efficiency through automated positioning
-
-### 🎬 如何制作Arduino太阳能板追踪器 | 简易项目教程
-**频道:** Seun Tech
-
-* 视频内容概述: 使用Arduino和光敏电阻(LDR)制作自动太阳能追踪系统的完整分步教程
-* 主要话题: Arduino IDE编程、光敏电阻传感器集成、伺服电机控制面板定位、自动追日机制
-* 为何值得观看: 适合初学者的Arduino项目,结合硬件组装与实用的可再生能源应用,展示如何通过自动定位最大化太阳能板效率
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
-
-### It's Time to Talk About My Writerdeck
-
-* **Minimal writing setup**: Installed console-only Debian (no desktop environment) on an old System76 laptop to create a distraction-free writing device
-* **Network connectivity**: Added `network-manager` with `nm-tui` for easy Wi-Fi connections when needed, while keeping the device mostly offline
-* **Enhanced console experience**: Installed `kmscon` for custom fonts, scalable text, and better color support beyond the standard 16-color tty
-* **Terminal multiplexing**: Used `tmux` for screen tiling and a custom status bar, with `acpi` for battery monitoring and `light` for backlight control via F-keys
-* **Writing tools**: Set up `neovim` as the primary editor with `vim-vimwiki` plugin for maintaining a personal wiki
-* **Backup solution**: Configured `syncthing` to sync and backup writing work across devices
-* **Philosophy**: Breaks desktop OS muscle memory to force intentional writing without browser distractions, using only what's needed
-
-### 我的专用写作设备配置
-
-* **极简写作环境**：在旧 System76 笔记本上安装纯控制台 Debian 系统（完全无桌面环境），打造无干扰写作设备
-* **网络连接**：添加 `network-manager` 和 `nm-tui` 工具，方便在需要时连接 Wi-Fi，同时保持设备主要离线状态
-* **增强控制台体验**：安装 `kmscon` 实现自定义字体、可缩放文本和超越标准 16 色的 tty 色彩支持
-* **终端复用**：使用 `tmux` 实现屏幕分割和自定义状态栏，配合 `acpi` 监控电池和 `light` 通过功能键控制屏幕亮度
-* **写作工具**：配置 `neovim` 作为主编辑器，使用 `vim-vimwiki` 插件维护个人知识库
-* **备份方案**：配置 `syncthing` 在设备间同步和备份写作内容
-* **设计理念**：打破桌面操作系统的使用惯性，强制专注于文字创作，无浏览器干扰，只保留必需功能
-
-**[Read Original / 阅读原文](https://veronicaexplains.net/my-first-writerdeck/)**
-
-<!-- [Title-Only] -->
-### Texas woman arrested for Facebook post about town water quality
-
-* Based on the title, this article likely covers a case where a woman in Texas faced legal consequences for publicly criticizing or raising concerns about her town's water quality on Facebook. This appears to involve issues of free speech, government accountability, and the intersection of social media with civic engagement.
-* Why it might be interesting to readers: This case raises important questions about First Amendment protections, whether citizens can be penalized for criticizing public services, and the potential chilling effect on public discourse about health and safety issues. It touches on the tension between government authority and citizen oversight, particularly relevant given ongoing concerns about infrastructure and water quality in various U.S. communities.
-
-### 德州女性因Facebook发帖评论城镇水质被捕
-
-* 根据标题推测,本文可能报道了一名德州女性因在Facebook上公开批评或质疑其所在城镇的水质问题而面临法律后果的案例。这似乎涉及言论自由、政府问责制以及社交媒体与公民参与的交集等议题。
-* 为何值得关注:此案引发了关于第一修正案保护范围的重要问题——公民是否会因批评公共服务而受到惩罚,以及这种做法对公共健康和安全议题讨论可能产生的寒蝉效应。考虑到美国各地社区持续存在的基础设施和水质担忧,这个案例凸显了政府权威与公民监督之间的张力,具有现实意义。
-
-**[Read Original / 阅读原文](https://reclaimthenet.org/texas-woman-arrested-for-facebook-post-about-town-water-quality)**
-
-### Reverse Engineering a 1980 Spacelab Computer's Circuitry
-
-* **Spacelab Background**: Spacelab was a reusable laboratory carried in the Space Shuttle's cargo bay, controlled by a French-built Mitra 125 MS minicomputer that used discrete chips instead of a microprocessor
-* **Computer Architecture**: The 16-bit processor was constructed from multiple circuit boards, with the Arithmetic/Logic Unit (ALU) built from several boards of TTL (transistor-transistor logic) chips
-* **74181 ALU Chip**: The core component was the Texas Instruments 74181, a 4-bit ALU chip containing ~170 transistors that performed arithmetic and Boolean logic operations
-* **32-bit Implementation**: Eight 54S181 chips were combined to create a 32-bit adder, spread across three boards with 32 multiplexer chips, 24 register chips, and carry-lookahead chips
-* **Design Surprise**: Despite being a 16-bit computer, it featured a 32-bit ALU to improve performance for multiplication and 32-bit floating-point operations
-* **Historical Context**: The Mitra 125 MS was a militarized variant produced by CIMSA; Spacelab missions used three computers (Subsystem, Experiment, and Backup) mounted under the Work Bench Rack
-* **Technology Era**: Built with military-grade 5400 series TTL chips (bipolar transistors), representing pre-microprocessor minicomputer design from the early 1980s
-
-### 对1980年太空实验室计算机电路的逆向工程
-
-* **太空实验室背景**:太空实验室是可在航天飞机货舱中携带的可重复使用实验室,由法国制造的Mitra 125 MS微型计算机控制,该计算机使用分立芯片而非微处理器
-* **计算机架构**:16位处理器由多块电路板构建,算术逻辑单元(ALU)由多块TTL(晶体管-晶体管逻辑)芯片板组成
-* **74181 ALU芯片**:核心组件是德州仪器74181,一个包含约170个晶体管的4位ALU芯片,执行算术和布尔逻辑运算
-* **32位实现**:八个54S181芯片组合创建32位加法器,分布在三块板上,配有32个多路复用器芯片、24个寄存器芯片和进位超前芯片
-* **设计惊喜**:尽管是16位计算机,却配备32位ALU以提高乘法和32位浮点运算的性能
-* **历史背景**:Mitra 125 MS是CIMSA生产的军用化版本;太空实验室任务使用三台计算机(子系统、实验和备份),安装在工作台架下方
-* **技术时代**:采用军用级5400系列TTL芯片(双极晶体管)构建,代表了1980年代早期微处理器出现前的微型计算机设计
-
-**[Read Original / 阅读原文](https://www.righto.com/2026/05/reverse-engineering-spacelab-computer.html)**
-
-### AI Engineering from Scratch - Complete Hands-On AI Curriculum
-
-* **What it does**: A comprehensive, 435-lesson curriculum teaching AI engineering from mathematical foundations through autonomous agent systems, with every lesson producing a reusable artifact (prompt, skill, agent, or MCP server)
-
-* **Key features**:
-  - 20 structured phases covering math foundations → ML → deep learning → transformers → LLMs → agents → production systems
-  - Build-first approach: implement algorithms from scratch before using frameworks (PyTorch, sklearn)
-  - Multi-language support (Python, TypeScript, Rust, Julia)
-  - Each lesson ships working code with 6-step structure: Motto → Problem → Concept → Build It → Use It → Ship It
-  - Built-in agent skills for personalized learning paths (`/find-your-level`, `/check-understanding`)
-  - ~320 hours of content, designed to run on your laptop
-
-* **Why it's notable**: Bridges the gap between AI tool usage (84% of students) and professional readiness (only 18% feel prepared) by teaching the complete stack end-to-end. Unlike scattered tutorials, this provides a linear progression where you understand what frameworks do under the hood because you've already built the smaller version yourself. Gained 1,523 stars today, reflecting strong demand for structured, implementation-focused AI education.
 
 ---
 
@@ -902,4 +804,70 @@ This appears to be an error page from AMD's customer community website. The HTML
 * 为何值得观看: 诚实揭示 AI 编程助手在构建复杂系统时的局限性，为使用 Claude 等工具的开发者提供实用经验，展示了功能开发速度与系统整合性之间的差距
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=c-fqGHGh5_o)**
+
+### The C64 Dead Test Font: A Deep Dive into a Hidden Diagnostic Treasure
+
+* The C64 "Dead Test" diagnostic cartridge (Rev. 718220) features a unique embedded font that operates independently of the C64's built-in Character ROM, making it recognizable to vintage computer enthusiasts
+* The font implements only 58 characters (screen codes $00–$39) including uppercase letters, digits, punctuation, and custom box-drawing characters, with no reverse video support
+* The design is heavily inspired by the MICR E-13B font used in banking (Magnetic Ink Character Recognition), featuring boxy, rectangular character shapes with slight rounding
+* An Easter egg was discovered: screen code $21 contains the MICR "transit" symbol (used as a bank routing delimiter) that is never referenced in the cartridge's code—a hidden homage to the MICR character set
+* The cartridge exploits the C64's dual architecture capability, functioning as a Commodore Max machine by using cartridge ROM exclusively, requiring no working internal ROMs (hence "Dead Test")
+* The font uses a 6×7 pixel box for most characters, with M and W spreading to 7×7 pixels, though thin vertical strokes may not display well on consumer CRT TVs
+* Characters $1B–$1F and $28–$2F are borrowed directly from the standard C64 character set, while custom box borders replace the usual punctuation at $22–$27
+
+### C64 死机测试字体：隐藏在诊断卡带中的宝藏
+
+* C64"死机测试"诊断卡带（Rev. 718220）采用独特的嵌入式字体，完全独立于C64内置字符ROM运行，对复古计算机爱好者来说极具辨识度
+* 该字体仅实现58个字符（屏幕码$00–$39），包括大写字母、数字、标点符号和自定义边框字符，不支持反显
+* 设计深受银行业MICR E-13B字体（磁性墨水字符识别）启发，采用方正的矩形字符造型并带有轻微圆角
+* 发现了一个彩蛋：屏幕码$21包含MICR"转账"符号（用作银行路由分隔符），该字符从未在卡带代码中被引用——这是对MICR字符集的隐藏致敬
+* 该卡带利用C64的双架构能力，通过完全使用卡带ROM作为Commodore Max机器运行，无需任何内部ROM正常工作（因此称为"死机测试"）
+* 字体大多数字符使用6×7像素框，M和W扩展至7×7像素，但细竖线在消费级CRT电视上可能显示效果不佳
+* 字符$1B–$1F和$28–$2F直接借用标准C64字符集，而自定义边框字符替换了$22–$27位置的常规标点符号
+
+**[Read Original / 阅读原文](https://www.masswerk.at/nowgobang/2026/c64-dead-test-font)**
+
+### Silk: A High-Performance Cooperative Fiber Scheduler for Linux
+
+* **Core Architecture**: Per-CPU scheduler threads with io_uring integration and topology-aware work-stealing for lightweight stackful coroutines
+* **Comprehensive Documentation**: Detailed guides covering scheduler internals, synchronization primitives (FiberFuture, FiberMutex, FiberEvent), utilities (lock-free structures, TSC timing), and performance benchmarks
+* **Modern Build System**: CMake-based with Clang 21, bundled dependencies (GTest, Benchmark, liburing, librseq, libbpf), and optional components (Poco, AWS SDK, jemalloc)
+* **Unified Build Tool**: `./bb` script with debug/release modes, sanitizer support (TSan, ASan, MSan, UBSan), formatting, testing with coverage, and benchmarking
+* **Extensive Performance Suite**: Benchmarks for async file I/O (file-perf vs fio), TCP echo (net-perf vs Asio), HTTP/1.1 (internal server vs nginx), and S3 object storage (MinIO-based)
+* **Developer Tools**: GDB extension for fiber debugging (fiber-list, context switching), flamegraph profiling, perf counter integration, and configurable test/benchmark filtering
+* **Production-Ready Features**: Stackful fibers enable high concurrency with low overhead, suspension instead of blocking, and seamless integration with async I/O patterns
+
+### Silk：Linux 高性能协作式纤程调度器
+
+* **核心架构**：每 CPU 调度线程，集成 io_uring 和拓扑感知工作窃取，实现轻量级有栈协程
+* **完整文档**：涵盖调度器内部机制、同步原语（FiberFuture、FiberMutex、FiberEvent）、工具库（无锁数据结构、TSC 计时）和性能基准测试的详细指南
+* **现代构建系统**：基于 CMake 和 Clang 21，内置依赖项（GTest、Benchmark、liburing、librseq、libbpf），可选组件（Poco、AWS SDK、jemalloc）
+* **统一构建工具**：`./bb` 脚本支持 debug/release 模式、sanitizer（TSan、ASan、MSan、UBSan）、代码格式化、覆盖率测试和基准测试
+* **全面性能测试套件**：异步文件 I/O 基准（file-perf vs fio）、TCP 回显（net-perf vs Asio）、HTTP/1.1（内置服务器 vs nginx）和 S3 对象存储（基于 MinIO）
+* **开发者工具**：GDB 扩展用于纤程调试（fiber-list、上下文切换）、火焰图分析、perf 计数器集成和可配置的测试/基准过滤
+* **生产就绪特性**：有栈纤程实现高并发低开销，挂起而非阻塞线程，与异步 I/O 模式无缝集成
+
+**[Read Original / 阅读原文](https://github.com/ClickHouse/silk)**
+
+### It's Time to Talk About My Writerdeck
+
+* **Minimal writing setup**: Installed console-only Debian (no desktop environment) on an old System76 laptop to create a distraction-free writing device
+* **Network connectivity**: Added `network-manager` with `nm-tui` for easy Wi-Fi connections when needed, while keeping the device primarily offline
+* **Enhanced console experience**: Installed `kmscon` for custom fonts, scalable text, and better color support beyond the standard 16-color tty
+* **Terminal multiplexing**: Used `tmux` for screen tiling and a custom status bar, with `acpi` for battery monitoring and `light` for backlight control via F-keys
+* **Writing tools**: Set up `neovim` as the primary editor with `vim-vimwiki` plugin for maintaining a personal wiki
+* **Backup solution**: Configured `syncthing` to sync and backup writing work across devices
+* **Philosophy**: Breaks desktop OS muscle memory to force intentional writing without browser distractions, using only what's needed
+
+### 我的专用写作设备配置
+
+* **极简写作环境**：在旧 System76 笔记本上安装纯控制台 Debian 系统（完全无桌面环境），打造无干扰写作设备
+* **网络连接**：添加 `network-manager` 和 `nm-tui` 工具，方便在需要时连接 Wi-Fi，但设备主要保持离线状态
+* **增强控制台体验**：安装 `kmscon` 实现自定义字体、可缩放文本和超越标准 16 色的 tty 色彩支持
+* **终端复用**：使用 `tmux` 实现屏幕分割和自定义状态栏，配合 `acpi` 监控电池和 `light` 通过功能键控制屏幕亮度
+* **写作工具**：配置 `neovim` 作为主编辑器，使用 `vim-vimwiki` 插件维护个人知识库
+* **备份方案**：配置 `syncthing` 在设备间同步和备份写作内容
+* **设计理念**：打破桌面操作系统的使用惯性，强制专注于文字创作，无浏览器干扰，只保留必需功能
+
+**[Read Original / 阅读原文](https://veronicaexplains.net/my-first-writerdeck/)**
 
