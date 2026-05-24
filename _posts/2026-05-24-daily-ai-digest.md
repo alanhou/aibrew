@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 24, 2026"
 date: 2026-05-24
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -526,4 +526,208 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了一个全面的资源来发现新工具，可以简化开发工作流程并提高生产力，在寻找特定任务的合适工具时节省时间
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=rJjsLX02X-M)**
+
+### Microsoft Open-Sources Earliest DOS Source Code Ever Discovered
+
+* Microsoft released the oldest DOS source code to date, predating the MS-DOS branding
+* The release includes 86-DOS 1.00 kernel sources, PC-DOS 1.00 development snapshots, and utilities like CHKDSK
+* 86-DOS was originally created by Tim Paterson for Seattle Computer Products' Intel 8086-based computer kit
+* Microsoft licensed 86-DOS to provide an operating system for the IBM PC 5150, then hired Paterson and later bought the rights
+* Microsoft licensed the OS to IBM as PC-DOS while selling it to other companies as MS-DOS
+* MS-DOS became dominant due to the proliferation of IBM PC clones throughout the 1980s and 1990s
+
+### 微软开源"迄今发现最早的 DOS 源代码"
+
+* 微软发布了迄今为止最古老的 DOS 源代码，早于 MS-DOS 品牌命名
+* 此次发布包括 86-DOS 1.00 内核源代码、PC-DOS 1.00 开发快照以及 CHKDSK 等实用工具
+* 86-DOS 最初由程序员 Tim Paterson 为西雅图计算机产品公司基于 Intel 8086 的计算机套件开发
+* 微软为 IBM PC 5150 提供操作系统，授权使用 86-DOS，随后聘用 Paterson 并最终买断版权
+* 微软将该操作系统授权给 IBM 称为 PC-DOS，同时保留向其他公司销售的权利，命名为 MS-DOS
+* 由于 1980 年代和 1990 年代 IBM PC 兼容机的大量普及，MS-DOS 成为主流操作系统
+
+**[Read Original / 阅读原文](https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/)**
+
+### Wake Up! 16b: Algorithmic Density in x86 Assembly
+
+* **16-byte x86 demo** released at Outline Demoparty (May 2026) that generates Sierpinski triangle fractals as both audio and visuals
+* Uses **video memory as calculation space** - points data segment to 0xB800 (VGA text buffer) and manipulates it directly
+* Core technique: **XOR operations on memory** with 56-byte backward steps create cellular automaton (Rule 60) patterns
+* **Sound generation**: Outputs fractal data directly to PC speaker port (61h), where bit 1 controls speaker cone position
+* Mathematical foundation: Binomial sequences modulo 256 create **self-similar bytebeat audio** with octave shifts
+* Visual effect: 56-byte step size creates **diagonal shearing** across 10 screen columns, resembling Matrix-style rain
+* **Hardware-dependent behavior**: Different BIOS versions leave different RAM artifacts, making each execution unique
+* Builds on author's 2014 "M8trix" demo, combining pseudorandom visual patterns with algorithmic sound design
+
+---
+
+### Wake Up! 16b：16字节x86汇编中的算法密度
+
+* **16字节x86演示程序**，2026年5月在Outline演示聚会发布，同时生成Sierpinski三角形分形的音频和视觉效果
+* **将显存用作计算空间** - 将数据段指向0xB800（VGA文本缓冲区）并直接操作
+* 核心技术：对内存进行**XOR操作**，配合56字节反向步进，创建元胞自动机（规则60）图案
+* **声音生成**：将分形数据直接输出到PC扬声器端口（61h），其中第1位控制扬声器锥体位置
+* 数学基础：模256的二项式序列创建**自相似字节节拍音频**，带有八度音程变化
+* 视觉效果：56字节步长在10个屏幕列上创建**对角剪切**，类似《黑客帝国》风格的字符雨
+* **硬件依赖行为**：不同BIOS版本在RAM中留下不同痕迹，使每次执行都独一无二
+* 基于作者2014年的"M8trix"演示，将伪随机视觉图案与算法声音设计相结合
+
+**[Read Original / 阅读原文](https://hellmood.111mb.de/wake_up_16b_writeup.html)**
+
+### Scammers Exploit Microsoft Internal Email System to Send Spam
+
+* **Loophole abuse**: Scammers have been exploiting a vulnerability for months, sending spam emails from `msonlineservicesteam@microsoftonline.com`, a legitimate Microsoft address used for account alerts and two-factor authentication codes
+* **Attack method**: Scammers create new Microsoft accounts and leverage system access to send fraudulent emails that appear genuine, though the exact exploitation technique remains unclear
+* **Email content**: Spam messages include fake fraud alerts and phishing links directing recipients to scam websites, designed to steal credentials or cryptocurrency
+* **Widespread issue**: Anti-spam nonprofit Spamhaus Project confirmed the abuse dates back several months and has notified Microsoft; similar attacks have targeted other companies like Betterment and Namecheap
+* **Microsoft response**: The company acknowledged the issue and stated they are "actively investigating" while strengthening detection mechanisms and removing violating accounts, but the problem persists
+
+### 诈骗者滥用微软内部邮箱系统发送垃圾邮件
+
+* **漏洞滥用**:诈骗者数月来一直在利用漏洞,从 `msonlineservicesteam@microsoftonline.com` 发送垃圾邮件,这是微软用于发送账户警报和双因素认证码的合法地址
+* **攻击手法**:诈骗者创建新的微软账户并利用系统访问权限发送看似真实的欺诈邮件,但具体的利用技术尚不清楚
+* **邮件内容**:垃圾邮件包括虚假的欺诈警报和钓鱼链接,将收件人引导至诈骗网站,旨在窃取凭证或加密货币
+* **广泛问题**:反垃圾邮件非营利组织 Spamhaus Project 证实该滥用行为可追溯到数月前并已通知微软;类似攻击还针对 Betterment 和 Namecheap 等其他公司
+* **微软回应**:该公司承认问题并表示正在"积极调查",同时加强检测机制并删除违规账户,但问题仍在持续
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/)**
+
+### Bumblebee - Read-Only Developer Endpoint Scanner for Supply-Chain Exposure Detection
+
+* **What it does**: Scans developer machines for package, extension, and developer-tool metadata to quickly identify exposure to known supply-chain compromises. Answers the critical question: "Which developer machines have the compromised package/version installed right now?"
+
+* **Key features**: 
+  - Single static Go binary with zero dependencies
+  - Reads lockfiles, package manager metadata, extension manifests, and MCP configs without executing package managers
+  - Covers npm/pnpm/Yarn/Bun, PyPI, Go modules, RubyGems, Composer, MCP servers, and editor/browser extensions
+  - Three scan profiles (baseline, project, deep) for different use cases
+  - Outputs structured NDJSON with content-addressed record IDs
+  - Built-in exposure catalog matching for instant compromise detection
+  - Includes maintained threat-intelligence catalogs for recent supply-chain campaigns
+
+* **Why it's notable**: Fills a critical gap between SBOMs (what shipped) and EDR (what ran) by providing real-time visibility into messy local developer state during supply-chain incidents. Built by Perplexity AI as a focused, read-only response tool that respects the chaotic reality of developer environments—no package manager execution, no source file reads, just fast answers when seconds count during an active supply-chain compromise.
+
+---
+
+### Bumblebee - 开发者端点只读扫描器，用于软件供应链暴露检测
+
+* **功能介绍**: 扫描开发者机器上的包、扩展和开发工具元数据，快速识别已知供应链攻击的暴露情况。回答关键问题："哪些开发者机器上现在安装了被攻陷的包/版本？"
+
+* **主要特点**:
+  - 单个静态 Go 二进制文件，零依赖
+  - 读取锁文件、包管理器元数据、扩展清单和 MCP 配置，无需执行包管理器
+  - 覆盖 npm/pnpm/Yarn/Bun、PyPI、Go modules、RubyGems、Composer、MCP 服务器以及编辑器/浏览器扩展
+  - 三种扫描配置（baseline、project、deep）适用于不同场景
+  - 输出结构化 NDJSON，带内容寻址的记录 ID
+  - 内置暴露目录匹配，即时检测攻陷情况
+  - 包含维护的威胁情报目录，涵盖近期供应链攻击活动
+
+* **为何值得关注**: 填补了 SBOM（已发布内容）和 EDR（已运行内容）之间的关键空白，在供应链事件期间提供开发者本地状态的实时可见性。由 Perplexity AI 构建，作为专注的只读响应工具，尊重开发者环境的混乱现实——不执行包管理器、不读取源文件，只在供应链攻陷活跃期间争分夺秒地提供快速答案。
+
+**[View Repository / 查看仓库](https://github.com/perplexityai/bumblebee)**
+
+### SmallCode - AI Coding Agent Optimized for Small Local LLMs
+
+* **What it does**: A terminal-native AI coding agent specifically designed to work with small local language models (8B-35B parameters) running on consumer hardware, enabling developers to use AI assistance without cloud dependencies or API costs.
+
+* **Key features**: 
+  - **Budget-aware architecture** with context management, forgiving tool-call parsing, and patch-based editing optimized for small model limitations
+  - **MarrowScript cognition layer** providing prompt caching, structured traces, tier-based routing, and automatic validation/repair
+  - **BoneScript integration** for Node.js/TypeScript projects, compiling single `.bone` files into complete backends
+  - **Model escalation** with optional fallback to cloud models (Claude, GPT-5, DeepSeek) on hard failures
+  - **TODO-driven planning** that decomposes complex tasks into atomic steps with validation
+  - **Persistent shell sessions** and working memory that survives across turns
+  - **18 built-in tools** with 2-stage routing to reduce schema overhead
+
+* **Why it's notable**: Achieves 87% benchmark performance with 4B-active models by compensating for small model limitations through intelligent architecture rather than requiring frontier models. Offers complete privacy with fully local operation, no network calls needed. Provides prebuilt binaries for all platforms with zero build tool requirements. Represents a practical approach to AI-assisted coding for developers who want to avoid cloud API costs and data privacy concerns while using consumer-grade hardware.
+
+---
+
+### SmallCode - 专为小型本地大语言模型优化的 AI 编码代理
+
+* **功能介绍**: 一个专为在消费级硬件上运行的小型本地语言模型(8B-35B 参数)设计的终端原生 AI 编码代理,使开发者能够在无需云依赖或 API 费用的情况下使用 AI 辅助编程。
+
+* **主要特点**:
+  - **预算感知架构**,包含上下文管理、宽容的工具调用解析和针对小模型局限性优化的补丁式编辑
+  - **MarrowScript 认知层**,提供提示词缓存、结构化追踪、分层路由和自动验证/修复
+  - **BoneScript 集成**,用于 Node.js/TypeScript 项目,将单个 `.bone` 文件编译为完整后端
+  - **模型升级机制**,在严重失败时可选择回退到云模型(Claude、GPT-5、DeepSeek)
+  - **TODO 驱动规划**,将复杂任务分解为带验证的原子步骤
+  - **持久化 Shell 会话**和跨轮次保留的工作记忆
+  - **18 个内置工具**,采用两阶段路由减少模式开销
+
+* **为何值得关注**: 通过智能架构补偿小模型的局限性,而非依赖前沿模型,在 4B 活跃参数模型上实现了 87% 的基准性能。提供完全本地化操作,无需网络调用,保证完整隐私。为所有平台提供预编译二进制文件,零构建工具要求。代表了一种实用的 AI 辅助编程方法,适合希望避免云 API 成本和数据隐私问题,同时使用消费级硬件的开发者。
+
+**[View Repository / 查看仓库](https://github.com/Doorman11991/smallcode)**
+
+### 🎬 The biological clock that doomed the Neanderthals - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses how biological timing mechanisms may have contributed to Neanderthal extinction, exploring the intersection of genetics, evolutionary biology, and ancient human populations
+* Key topics discussed: Neanderthal genetics, biological clocks and their evolutionary implications, comparative analysis between Neanderthals and Homo sapiens, potential genetic disadvantages that affected Neanderthal survival
+* Why it's worth watching: Offers cutting-edge insights from a leading geneticist on why our closest human relatives went extinct, combining ancient DNA research with evolutionary theory to reveal surprising biological factors that shaped human prehistory
+
+### 🎬 生物钟如何导致尼安德特人灭绝 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 探讨生物节律机制如何可能导致尼安德特人灭绝,深入分析遗传学、进化生物学与古人类种群的交叉领域
+* 主要话题: 尼安德特人基因组、生物钟及其进化意义、尼安德特人与智人的比较分析、影响尼安德特人生存的潜在基因劣势
+* 为何值得观看: 顶尖遗传学家揭示人类近亲灭绝的前沿见解,结合古DNA研究与进化理论,揭示塑造人类史前史的惊人生物学因素
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-zsD-iw-arw)**
+
+### 🎬 When Claude Handles Your Project
+
+**Channel:** Sheryians Coding School
+
+* What the video covers: A short demonstration of Claude AI managing development projects, likely showcasing its coding capabilities and project handling features
+* Key topics discussed: Claude AI's practical application in software development workflows, automated project management, AI-assisted coding
+* Why it's worth watching: Quick insight into how AI tools like Claude can streamline development work, relevant for developers exploring AI-powered coding assistants
+
+---
+
+### 🎬 当 Claude 接管你的项目
+
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 简短演示 Claude AI 如何管理开发项目,展示其编码能力和项目处理功能
+* 主要话题: Claude AI 在软件开发工作流程中的实际应用、自动化项目管理、AI 辅助编码
+* 为何值得观看: 快速了解 Claude 等 AI 工具如何简化开发工作,适合探索 AI 编程助手的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QGNw9QZHsAA)**
+
+### 🎬 Wait Till The End #shorts #sheryianscodingschool #placement #engineering
+**Channel:** Sheryians Coding School
+
+* What the video covers: A satirical take on common career advice given to engineering students in India, particularly around learning Python, DSA (Data Structures & Algorithms), and AI
+* Key topics discussed: The repetitive and often oversimplified career guidance that engineering students receive about tech skills and job placement strategies
+* Why it's worth watching: Relatable humor for engineering students and tech learners who've experienced the pressure of following trending tech advice; offers a comedic perspective on the Indian tech education landscape
+
+---
+
+### 🎬 等到最后 #shorts #编程学校 #就业 #工程
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 讽刺印度工程专业学生经常听到的职业建议，特别是关于学习 Python、数据结构与算法(DSA)和人工智能的建议
+* 主要话题: 工程学生收到的关于技术技能和求职策略的重复且过于简化的职业指导
+* 为何值得观看: 对于经历过追随热门技术建议压力的工程学生和技术学习者来说非常有共鸣；以幽默的视角展现印度技术教育现状
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MFiOI1q9oLs)**
+
+### 🎬 How to Make an Arduino Solar Panel Tracker | Easy Project Tutorial #shorts
+**Channel:** Seun Tech
+
+* What the video covers: A complete step-by-step tutorial on building an automatic solar tracking system using Arduino and light-dependent resistors (LDRs)
+* Key topics discussed: Arduino IDE programming, LDR sensor integration, servo motor control for panel positioning, and automated sun-tracking mechanism
+* Why it's worth watching: Perfect beginner-friendly Arduino project that combines hardware and software skills while creating a practical renewable energy application that maximizes solar panel efficiency
+
+---
+
+### 🎬 如何制作 Arduino 太阳能板追踪器 | 简易项目教程
+**频道:** Seun Tech
+
+* 视频内容概述: 使用 Arduino 和光敏电阻 (LDR) 构建自动太阳追踪系统的完整分步教程
+* 主要话题: Arduino IDE 编程、LDR 传感器集成、伺服电机控制面板定位、自动追日机制
+* 为何值得观看: 适合初学者的 Arduino 项目，结合硬件和软件技能，创建实用的可再生能源应用，最大化太阳能板效率
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
 
