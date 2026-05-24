@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 24, 2026"
 date: 2026-05-24
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -730,4 +730,176 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合初学者的 Arduino 项目，结合硬件和软件技能，创建实用的可再生能源应用，最大化太阳能板效率
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
+
+### Amazon Web Services - Four Years and Out
+
+* Author reflects on being fired from AWS after four years, expressing relief as the company has changed significantly since joining in 2022
+* Two main factors drove unhappiness: organizational restructuring (loss of direct manager David Nalley who was promoted) and AWS's aggressive pivot to Generative AI
+* Amazon views employees as "fungible" (replaceable), a retail-focused mindset that doesn't translate well to IT where institutional knowledge matters
+* AWS has lost customer focus in the GenAI rush, prioritizing rapid AI product launches over genuine customer needs and quality ("good enough" vs customer obsession)
+* The shift from infrastructure excellence (S3, EC2, RDS) to AI-first approach has abstracted away the technical professionals who built AWS's success
+* Author's proudest achievement: restoring a suspended AWS account for a user in northern Africa, demonstrating human-centered problem-solving that leadership didn't value
+* Health deteriorated over the year (30 pounds gained, high blood pressure, sleep disruption) amid layoffs and watching talented colleagues leave
+* Concerns about AWS creating "reverse centaurs" (humans serving AI rather than AI augmenting humans) and ethical questions around company priorities
+* Questions the future of open source when cutting-edge AI models require expensive hardware and API access, concentrating power with vendors rather than users
+* Plans to return to open source roots, focusing on putting technological power back in users' hands rather than vendors
+
+### 亚马逊云科技——四年之后离开
+
+* 作者在AWS工作四年后被解雇,但表示感到如释重负,因为公司自2022年入职以来已发生重大变化
+* 导致不满的两大因素:组织重组(直接上司David Nalley晋升后失去密切互动)以及AWS激进转向生成式AI
+* 亚马逊将员工视为"可替代品",这种零售业思维模式不适用于IT行业,因为IT成功依赖于需要时间积累的机构知识
+* AWS在生成式AI热潮中失去了客户焦点,优先考虑快速推出AI产品而非真正的客户需求和质量("足够好"而非客户至上)
+* 从基础设施卓越(S3、EC2、RDS)转向AI优先的策略,使构建AWS成功的技术专业人员被边缘化
+* 作者最自豪的成就:为北非用户恢复被暂停的AWS账户,展示了以人为本的问题解决方式,但领导层并不重视
+* 健康状况在这一年恶化(体重增加30磅、高血压、睡眠障碍),期间经历裁员并目睹优秀同事离职
+* 担忧AWS创造"反向半人马"(人类服务AI而非AI增强人类能力),以及对公司优先事项的伦理质疑
+* 质疑开源的未来:当前沿AI模型需要昂贵硬件和API访问时,权力集中在供应商而非用户手中
+* 计划回归开源本源,专注于将技术权力交还用户而非供应商
+
+**[Read Original / 阅读原文](https://www.adventuresinoss.com/aws-four-years/)**
+
+### Analysis: Error Page - No Actual Content
+
+This appears to be an error page from AMD's customer community website. The HTML contains only an error dialog box indicating a CSS loading failure. There is no substantive content to summarize - just a technical error message that interrupted the page load.
+
+**Key observations:**
+* The page failed to load properly due to a CSS error
+* Only error handling UI elements are present
+* No actual blog content, article, or community discussion is available
+* This is a technical error page, not content for editorial analysis
+
+---
+
+### 分析：错误页面 - 无实际内容
+
+这是 AMD 客户社区网站的一个错误页面。HTML 中仅包含一个错误对话框，显示 CSS 加载失败。没有可供总结的实质性内容 - 只有一条中断页面加载的技术错误消息。
+
+**主要观察：**
+* 页面因 CSS 错误而未能正常加载
+* 仅存在错误处理 UI 元素
+* 没有实际的博客内容、文章或社区讨论
+* 这是一个技术错误页面，而非可供编辑分析的内容
+
+**[Read Original / 阅读原文](https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US)**
+
+### How Alexander Grothendieck Revolutionized 20th-Century Mathematics
+
+* **Transformed algebraic geometry from chaos to coherence**: Before Grothendieck, the field was fragmented with researchers using incompatible definitions and terminology across "at least half a dozen different mathematical languages"
+* **Introduced revolutionary mathematical constructions**: His work created new frameworks that enabled proofs of longstanding conjectures and became central objects of study themselves
+* **Connected algebraic geometry to multiple mathematical disciplines**: His ideas created bridges between topology, number theory, representation theory, and logic, fundamentally transforming how number theory is practiced
+* **Achieved instant stardom with the Riemann-Roch generalization (1957)**: Extended a century-old theorem about how surface shapes constrain definable functions, opening "a whole new wealth of operations" and ways of understanding
+* **Announced the scheme theory revolution (1958)**: Declared his intention to completely remake algebraic geometry using schemes, a new foundational framework
+* **Addressed the Weil conjectures**: Tackled André Weil's four conjectures linking polynomial solutions in finite fields to those in complex numbers—connections described as "communication between parallel universes"
+
+### 亚历山大·格罗滕迪克如何革新20世纪数学
+
+* **将代数几何从混乱转变为统一体系**:在格罗滕迪克之前,该领域支离破碎,研究人员使用"至少六种不同的数学语言"中互不兼容的定义和术语
+* **引入革命性的数学构造**:他的工作创造了新框架,使长期悬而未决的猜想得以证明,这些构造本身也成为核心研究对象
+* **连接代数几何与多个数学学科**:他的思想在拓扑学、数论、表示论和逻辑学之间架起桥梁,从根本上改变了数论的研究方式
+* **凭借黎曼-罗赫定理推广(1957年)一举成名**:扩展了一个百年前关于曲面形状如何限制可定义函数的定理,开启了"全新的运算宝库"和理解方式
+* **宣布概型理论革命(1958年)**:宣布他打算使用概型(scheme)这一新基础框架彻底重塑代数几何
+* **解决韦伊猜想**:处理安德烈·韦伊提出的四个猜想,这些猜想将有限域中的多项式解与复数中的多项式解联系起来——被描述为"平行宇宙之间的通信"
+
+**[Read Original / 阅读原文](https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/)**
+
+### HRM-Text - Efficient 1B Text Generation Model with $1000 Pretraining Budget
+
+* **What it does**: A 1B parameter text generation model that can be pretrained from scratch for approximately $1000, using a hierarchical recurrent architecture (HRM) enhanced with task completion and latent space reasoning capabilities.
+
+* **Key features**: 
+  - Achieves competitive performance (84.7% GSM8k, 56.5% MATH, 82.3% DROP) with 130-600x less compute and 150-900x less data than traditional approaches
+  - Complete pretraining framework with FlashAttention 3, PyTorch FSDP2, PrefixLM sequence packing
+  - Two model sizes: L (0.6B, 8 H100s, ~$800) and XL (1B, 16 H100s, ~$1472)
+  - Includes full pipeline: data preparation, training, evaluation, fine-tuning, and Hugging Face export
+  - Docker-based environment with multi-node distributed training support
+
+* **Why it's notable**: Democratizes foundation model pretraining by making it accessible to researchers and small teams with limited budgets, while maintaining strong benchmark performance across reasoning (GSM8k, MATH), reading comprehension (DROP), and general knowledge tasks (MMLU, ARC-C). The dramatic reduction in compute and data requirements (up to 900x less) represents a significant breakthrough in efficient model pretraining.
+
+---
+
+### HRM-Text - 千元预算训练的高效 10 亿参数文本生成模型
+
+* **功能介绍**: 基于分层递归架构(HRM)的 10 亿参数文本生成模型,通过任务完成和潜在空间推理增强,可用约 1000 美元从零开始预训练。
+
+* **主要特点**:
+  - 以 130-600 倍更少的算力和 150-900 倍更少的数据达到竞争性能(GSM8k 84.7%、MATH 56.5%、DROP 82.3%)
+  - 完整的预训练框架,集成 FlashAttention 3、PyTorch FSDP2、PrefixLM 序列打包
+  - 两种模型规格:L 版(0.6B,8 张 H100,约 800 美元)和 XL 版(1B,16 张 H100,约 1472 美元)
+  - 提供全流程工具:数据准备、训练、评估、微调和 Hugging Face 格式导出
+  - 基于 Docker 的环境,支持多节点分布式训练
+
+* **为何值得关注**: 通过大幅降低算力和数据需求(最高可减少 900 倍),让预算有限的研究人员和小型团队也能训练基础模型,实现了基础模型预训练的民主化。在推理任务(GSM8k、MATH)、阅读理解(DROP)和通用知识(MMLU、ARC-C)等基准测试中保持强劲性能,代表了高效模型预训练领域的重大突破。
+
+**[View Repository / 查看仓库](https://github.com/sapientinc/HRM-Text)**
+
+### 🎬 The problem with AI agents..
+**Channel:** Low Level
+
+* What the video covers: An analysis of current limitations and challenges facing AI agents in practical applications
+* Key topics discussed: Technical constraints of AI agents, implementation issues, real-world deployment challenges, and potential pitfalls developers should be aware of
+* Why it's worth watching: Provides a critical, grounded perspective on AI agent technology from a low-level programming viewpoint, helping developers understand what works, what doesn't, and what to watch out for when building or integrating AI agents
+
+### 🎬 AI 智能体的问题..
+**频道:** Low Level
+
+* 视频内容概述: 分析当前 AI 智能体在实际应用中面临的局限性和挑战
+* 主要话题: AI 智能体的技术限制、实现问题、真实场景部署挑战,以及开发者应注意的潜在陷阱
+* 为何值得观看: 从底层编程角度提供对 AI 智能体技术的批判性、务实的观点,帮助开发者理解哪些有效、哪些无效,以及在构建或集成 AI 智能体时需要注意什么
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=74FjlxQgftg)**
+
+### 🎬 The Explore → Plan → Code → Commit workflow in Claude Code
+**Channel:** Claude
+
+* What the video covers: A comprehensive walkthrough of the four-stage workflow for using Claude Code effectively—exploring the codebase, planning changes, implementing code, and committing results
+* Key topics discussed: How to let Claude research and understand your project before writing code, defining clear implementation plans, the importance of structured workflows over ad-hoc coding, and best practices for each stage
+* Why it's worth watching: This is described as "the single most important workflow" for Claude Code users. Understanding this systematic approach can dramatically improve code quality and reduce errors by ensuring Claude has proper context before making changes
+
+### 🎬 Claude Code 中的探索 → 规划 → 编码 → 提交工作流
+**频道:** Claude
+
+* 视频内容概述: 全面介绍有效使用 Claude Code 的四阶段工作流程——探索代码库、规划变更、实现代码和提交结果
+* 主要话题: 如何让 Claude 在编写代码前先研究和理解项目、定义清晰的实现计划、结构化工作流相比临时编码的重要性，以及各阶段的最佳实践
+* 为何值得观看: 这被描述为 Claude Code 用户"最重要的工作流程"。掌握这种系统化方法可以显著提高代码质量并减少错误，确保 Claude 在进行更改前拥有适当的上下文信息
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xJQuF02NAK8)**
+
+### 🎬 I kept coding until an RTOS was inevitable
+**Channel:** Artful Bytes
+
+* What the video covers: A practical journey showing how embedded systems naturally evolve from simple bare-metal code to requiring a Real-Time Operating System (RTOS), demonstrating the organic progression rather than theoretical explanations
+* Key topics discussed: Bare-metal embedded programming challenges, task scheduling complexities, timing conflicts, resource management issues, and the specific pain points that make an RTOS necessary in real-world projects
+* Why it's worth watching: Instead of abstract RTOS theory, this video shows the actual coding problems that force developers to adopt an RTOS, making it invaluable for embedded engineers wondering when to make the leap from bare-metal to RTOS-based development
+
+---
+
+### 🎬 我一直编码直到 RTOS 变得不可避免
+**频道:** Artful Bytes
+
+* 视频内容概述: 通过实际编码过程展示嵌入式系统如何从简单的裸机代码自然演变到需要实时操作系统(RTOS),用实践而非理论来说明这一进化过程
+* 主要话题: 裸机嵌入式编程的挑战、任务调度的复杂性、时序冲突、资源管理问题,以及在实际项目中迫使开发者采用 RTOS 的具体痛点
+* 为何值得观看: 视频不讲抽象的 RTOS 理论,而是展示迫使开发者采用 RTOS 的实际编码问题,对于正在考虑何时从裸机开发转向基于 RTOS 开发的嵌入式工程师来说极具价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=i_eU16X67qU)**
+
+### 🎬 Claude Wrote 50 Features. None of Them Worked Together
+
+**Channel:** Better Stack
+
+* What the video covers: A real-world case study of using Claude AI to rapidly build 50 features for a software project, revealing the challenges when AI-generated code doesn't integrate properly
+* Key topics discussed: AI-assisted development pitfalls, integration issues between AI-generated features, debugging and refactoring challenges, lessons learned about AI code generation at scale
+* Why it's worth watching: Provides honest insights into the limitations of AI coding assistants when building complex systems, offering practical lessons for developers using tools like Claude, and demonstrates the gap between feature velocity and system cohesion
+
+---
+
+### 🎬 Claude 写了 50 个功能，但没有一个能协同工作
+
+**频道:** Better Stack
+
+* 视频内容概述: 真实案例研究，展示使用 Claude AI 快速构建 50 个软件功能后，发现 AI 生成的代码无法正常集成的挑战
+* 主要话题: AI 辅助开发的陷阱、AI 生成功能之间的集成问题、调试和重构挑战、大规模使用 AI 代码生成的经验教训
+* 为何值得观看: 诚实揭示 AI 编程助手在构建复杂系统时的局限性，为使用 Claude 等工具的开发者提供实用经验，展示了功能开发速度与系统整合性之间的差距
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=c-fqGHGh5_o)**
 
