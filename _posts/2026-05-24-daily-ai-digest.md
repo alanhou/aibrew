@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 24, 2026"
 date: 2026-05-24
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 17 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，17个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -870,4 +870,164 @@ This appears to be an error page from AMD's customer community website. The HTML
 * **设计理念**：打破桌面操作系统的使用惯性，强制专注于文字创作，无浏览器干扰，只保留必需功能
 
 **[Read Original / 阅读原文](https://veronicaexplains.net/my-first-writerdeck/)**
+
+### Mastering Dyalog APL - A Modern Learning Resource
+
+* The "Mastering Dyalog APL" book is the de facto standard for learning Dyalog APL programming language
+* An updated online version is being created using Jupyter Notebooks to provide an interactive learning experience
+* The original first edition was published in November 2009 by Bernard Legrand with contributions from multiple experts
+* This rework by Rodrigo Girão Serrão modernizes the content while preserving original prose and examples where possible
+* The project is open source on GitHub, welcoming feedback and corrections from the community
+* Available in multiple formats: interactive notebooks, static online version, and a forthcoming printed edition
+* New sections cover features that didn't exist in Dyalog APL 12.0 from 2009
+
+### 精通 Dyalog APL - 现代化学习资源
+
+* 《精通 Dyalog APL》是学习 Dyalog APL 编程语言的事实标准教材
+* 正在使用 Jupyter Notebooks 创建更新的在线版本，提供互动学习体验
+* 原始第一版由 Bernard Legrand 于 2009 年 11 月出版，多位专家参与贡献
+* Rodrigo Girão Serrão 的重制版本对内容进行现代化更新，同时尽可能保留原始文字和示例
+* 该项目在 GitHub 上开源，欢迎社区反馈和纠错
+* 提供多种格式：交互式笔记本、静态在线版本以及即将推出的印刷版
+* 新增章节涵盖 2009 年 Dyalog APL 12.0 中不存在的功能特性
+
+**[Read Original / 阅读原文](https://mastering.dyalog.com/README.html)**
+
+### Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI
+
+* **OpenAI's founding vision**: Greg Brockman, co-founder and President of OpenAI, reveals how the original Napa offsite produced a three-step technical plan that OpenAI has followed for a decade, and explains why the company had to abandon its pure nonprofit structure.
+
+* **The 72-hour crisis**: Brockman provides an inside account of the chaotic period after Sam Altman's firing—where he was when he received the board's call, why he resigned the same day, how the "Phoenix" backup company was designed at Sam's house, and the pivotal moment when Ilya Sutskever's tweet changed everything.
+
+* **AI development insights**: The conversation covers breakthrough moments at OpenAI, why ChatGPT no longer displays its reasoning process, and the reality that much of OpenAI's code is now AI-generated ("it's hard to know what percent is *not*").
+
+* **Future of AGI and global competition**: Brockman discusses whether we're in a global AI race, what a compute-constrained world means for AGI access, and addresses the critical question on everyone's mind: what happens to human jobs as AI capabilities advance.
+
+* **From Stripe to shaping AI's future**: Before co-founding OpenAI in 2015, Brockman was the first engineer at Stripe, bringing technical leadership to one of the most important AI companies in the world behind ChatGPT and GPT-5.
+
+---
+
+### Greg Brockman：差点摧毁 OpenAI 的 72 小时内幕
+
+* **OpenAI 的创立愿景**：OpenAI 联合创始人兼总裁 Greg Brockman 揭示了最初的纳帕会议如何制定出 OpenAI 十年来一直遵循的三步技术计划，并解释了公司为何不得不放弃纯非营利结构。
+
+* **72 小时危机**：Brockman 详细讲述了 Sam Altman 被解雇后的混乱时期——他接到董事会电话时身在何处、为何当天就辞职、第二天早上如何在 Sam 家中设计"凤凰"备用公司，以及 Ilya Sutskever 的推文如何改变了一切的关键时刻。
+
+* **AI 开发洞察**：对话涵盖了 OpenAI 的突破性时刻、ChatGPT 为何不再显示推理过程，以及 OpenAI 的大部分代码现在都由 AI 生成的现实（"很难知道有多少比例*不是*由 AI 编写的"）。
+
+* **AGI 的未来与全球竞争**：Brockman 讨论了我们是否正处于全球 AI 竞赛中、算力受限的世界对 AGI 访问意味着什么，并回答了每个人都在关心的关键问题：随着 AI 能力的提升，人类的工作会发生什么变化。
+
+* **从 Stripe 到塑造 AI 的未来**：在 2015 年联合创立 OpenAI 之前，Brockman 是 Stripe 的第一位工程师，为 ChatGPT 和 GPT-5 背后全球最重要的 AI 公司之一带来了技术领导力。
+
+**[Read Original / 阅读原文](https://fs.blog/knowledge-project-podcast/greg-brockman/)**
+
+### 50 Hours to Draw Some Lines - A Journey into Hand-Drawn Data Visualization
+
+* **The Analog Approach**: Artist Doug MacDowell spent 50+ hours creating a data visualization by hand using rulers, pencils, ink, and lettering kits—something software could accomplish in 20 minutes
+* **Why Hand-Draw Data?**: The process connects modern data visualization with pre-computer professional drafting techniques from the 1920s-1970s, creating work that looks "right out of a 1970's college textbook"
+* **Art Meets Data**: Hand-drawing data visualizations is fundamentally about making art—using the same techniques as fine artists like Jiří Lindovský while learning traditional drafting skills
+* **The Grid Foundation**: Creating a hand-drawn data viz starts with drawing a precise grid (e.g., 396 squares on an 18x22" workspace), a meditative process that builds comfort with the tools
+* **The Circle Technique**: Professional data lines are created using circles around plotted points, connected with straight edges—not freehand marker strokes—to control line weight and accuracy
+* **The Inking Stage**: Tracing pencil outlines with ink is described as scary but rewarding, followed by erasing pencil marks to reveal "the most satisfying, clean, crisp inked lines imaginable"
+* **Essential Tools**: T-square, rulers, triangles, circle stencils, lettering kits with reservoirs and nibs, ink, pencils, and quality paper on a drawing board
+* **Historical Resources**: Key books include works by Tufte (data viz enthusiasm), W.E.B. Du Bois (sociological/artistic experimentation), and Willard Brinton's 1914 manual
+* **Final Touches**: Lettering kits with matching reservoirs and nibs add titles, axis labels, and annotations—with ongoing debate about whether to sign the work
+* **The Philosophy**: This practice values slow, mindful craftsmanship over algorithmic efficiency, celebrating imperfections and the tactile experience of creating data art
+
+---
+
+### 50小时画几条线 - 手绘数据可视化之旅
+
+* **模拟方法的回归**: 艺术家Doug MacDowell花费50多小时用尺子、铅笔、墨水和字母模板手工制作数据可视化图表——而软件只需20分钟就能完成
+* **为什么手绘数据?**: 这个过程将现代数据可视化与1920-1970年代计算机出现前的专业制图技术相连接,创作出"仿佛来自1970年代大学教科书"的作品
+* **艺术与数据的融合**: 手绘数据可视化本质上是在创作艺术——使用与Jiří Lindovský等艺术家相同的技法,同时学习传统制图技能
+* **网格基础**: 手绘数据可视化从绘制精确网格开始(例如在18x22英寸工作区上绘制396个方格),这是一个冥想般的过程,帮助熟悉工具
+* **圆圈技法**: 专业数据线条通过在绘制的数据点周围画圆,然后用直边连接来创建——而非徒手画线——以控制线条粗细和精确度
+* **上墨阶段**: 用墨水描摹铅笔轮廓被形容为"令人紧张但有回报",随后擦除铅笔痕迹,呈现"可以想象的最令人满意、干净、清晰的墨线"
+* **必备工具**: 丁字尺、直尺、三角板、圆形模板、带储墨器和笔尖的字母模板套装、墨水、铅笔以及绘图板上的优质纸张
+* **历史资源**: 关键书籍包括Tufte的作品(数据可视化热情)、W.E.B. Du Bois(社会学/艺术实验)和Willard Brinton 1914年的手册
+* **最后润色**: 使用配套储墨器和笔尖的字母模板添加标题、坐标轴标签和注释——关于是否签名仍有争议
+* **核心理念**: 这种实践重视缓慢、用心的工艺而非算法效率,赞美不完美之处和创作数据艺术的触觉体验
+
+**[Read Original / 阅读原文](https://www.dougmacdowell.com/50-hours-to-draw-some-lines.html)**
+
+### Knowledge Work Plugins - Specialist Plugins for Claude Cowork
+
+* **What it does**: Transforms Claude into a role-specific specialist by providing pre-built plugins for 11 job functions (sales, product management, finance, data, legal, marketing, etc.), each bundled with domain expertise, workflow automation, and tool integrations
+* **Key features**: File-based plugin system (markdown + JSON, no code required); connects to 30+ external tools via MCP servers (Slack, HubSpot, Jira, Snowflake, etc.); includes both auto-activated skills and explicit slash commands; fully customizable to match company-specific processes and terminology
+* **Why it's notable**: Anthropic's official open-source plugin marketplace that makes Claude Cowork immediately useful for knowledge workers across different roles, with a simple structure that teams can fork and customize to embed their own workflows, tools, and institutional knowledge into AI assistance
+
+---
+
+### Knowledge Work Plugins - Claude Cowork 专业插件库
+
+* **功能介绍**: 将 Claude 转变为特定岗位的专家助手,提供 11 个职能领域的预构建插件(销售、产品管理、财务、数据分析、法务、市场营销等),每个插件集成了领域专业知识、工作流自动化和工具连接
+* **主要特点**: 基于文件的插件系统(Markdown + JSON,无需编码);通过 MCP 服务器连接 30 多个外部工具(Slack、HubSpot、Jira、Snowflake 等);包含自动激活的技能和显式斜杠命令;可完全定制以匹配公司特定流程和术语
+* **为何值得关注**: Anthropic 官方开源的插件市场,让 Claude Cowork 能立即为不同岗位的知识工作者提供实用帮助,采用简单结构便于团队 fork 并定制,将自己的工作流程、工具和组织知识嵌入 AI 辅助系统中
+
+**[View Repository / 查看仓库](https://github.com/anthropics/knowledge-work-plugins)**
+
+### andrej-karpathy-skills - Claude Code Guidelines to Prevent Common LLM Coding Pitfalls
+
+* **What it does**: Provides a single `CLAUDE.md` file with four core principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) that guide Claude Code and other AI coding assistants to avoid common mistakes like making wrong assumptions, overcomplicating code, and making unnecessary changes.
+
+* **Key features**: Addresses specific issues identified by Andrej Karpathy—forces explicit reasoning before coding, prevents overengineering and bloated abstractions, ensures surgical edits that only touch necessary code, and transforms tasks into verifiable goals with test-driven loops. Available as both a Claude Code plugin and a standalone CLAUDE.md file, with Cursor IDE support included.
+
+* **Why it's notable**: Directly tackles the most frustrating behaviors of LLM coding assistants based on insights from a leading AI researcher. The guidelines are practical, immediately actionable, and designed to reduce costly mistakes on non-trivial work. With 2,555 stars today, it's resonating with developers tired of AI assistants that silently assume, overcomplicate, and make orthogonal changes.
+
+---
+
+### andrej-karpathy-skills - 基于 Karpathy 观察的 Claude 代码指南
+
+* **功能介绍**: 提供单个 `CLAUDE.md` 文件,包含四大核心原则(编码前思考、简洁优先、精准修改、目标驱动执行),指导 Claude Code 等 AI 编码助手避免常见错误,如错误假设、过度复杂化代码和不必要的修改。
+
+* **主要特点**: 针对 Andrej Karpathy 指出的具体问题——强制编码前明确推理,防止过度工程和臃肿抽象,确保仅修改必要代码的精准编辑,将任务转化为可验证的测试驱动目标。支持 Claude Code 插件和独立 CLAUDE.md 文件两种方式,并包含 Cursor IDE 支持。
+
+* **为何值得关注**: 直接解决 LLM 编码助手最令人沮丧的行为模式,基于顶尖 AI 研究者的洞察。这些指南实用、可立即应用,旨在减少非简单任务中的代价高昂的错误。今日获得 2,555 星标,引起了厌倦 AI 助手默默假设、过度复杂化和进行无关修改的开发者们的强烈共鸣。
+
+**[View Repository / 查看仓库](https://github.com/multica-ai/andrej-karpathy-skills)**
+
+### 🎬 In the beginning, Amazon sold...1 book. In its first week. What a start.
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: The humble origins of Amazon's e-commerce empire, starting with a single book sale in its first week of operation
+* Key topics discussed: Amazon's early days as an online bookstore, the company's modest beginnings before becoming a tech giant, the contrast between its initial performance and current scale
+* Why it's worth watching: Offers perspective on how even the world's largest tech companies started small, providing inspiration for entrepreneurs and context for understanding Amazon's growth trajectory. Particularly relevant for developers and tech professionals interested in startup history and scaling challenges.
+
+---
+
+### 🎬 起初，亚马逊卖出了...1本书。在第一周。多么惊人的开端。
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: 讲述亚马逊电商帝国的起源故事，从第一周仅售出一本书的微小开始说起
+* 主要话题: 亚马逊作为在线书店的早期岁月、成为科技巨头前的朴素起点、初期表现与当前规模的巨大反差
+* 为何值得观看: 展示了即使是全球最大的科技公司也是从小做起，为创业者提供启发，帮助理解亚马逊的成长轨迹。对于对创业历史和规模化挑战感兴趣的开发者和科技从业者尤其有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=y-uopI6VtE4)**
+
+### 🎬 The AI paradox: More automation, more humans, more work | Dan Shipper
+
+**Channel:** Lenny's Podcast
+
+* What the video covers: Dan Shipper, co-founder and CEO of Every, discusses the counterintuitive relationship between AI automation and human work, exploring how increased automation paradoxically leads to more human involvement and expanded workloads rather than replacement.
+
+* Key topics discussed: The AI paradox phenomenon, Every's experiments as a media and software company testing AI integration, practical insights on how automation changes rather than eliminates work, the evolving relationship between human creativity and AI tools, and real-world lessons from building in the AI era.
+
+* Why it's worth watching: Offers a nuanced, experience-based perspective that challenges the common narrative of AI replacing jobs, providing actionable insights for founders, creators, and anyone navigating the AI transformation in their work. Dan's hands-on experiments at Every provide concrete examples of how AI reshapes workflows in unexpected ways.
+
+---
+
+### 🎬 AI悖论：更多自动化，更多人力，更多工作 | Dan Shipper
+
+**频道:** Lenny's Podcast
+
+* 视频内容概述: Every公司联合创始人兼CEO Dan Shipper探讨AI自动化与人类工作之间的反直觉关系，揭示为何自动化程度提高反而导致更多人力参与和工作量扩大，而非取代人类。
+
+* 主要话题: AI悖论现象、Every作为媒体和软件公司的AI整合实验、自动化如何改变而非消除工作的实用见解、人类创造力与AI工具之间不断演变的关系，以及在AI时代构建产品的实战经验。
+
+* 为何值得观看: 提供基于实践经验的细腻视角，挑战"AI将取代工作"的主流叙事，为创始人、创作者及所有在工作中应对AI转型的人提供可操作的洞察。Dan在Every的实际实验提供了AI如何以意想不到的方式重塑工作流程的具体案例。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=4D3hDmGhFhA)**
 
