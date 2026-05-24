@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 25, 2026"
 date: 2026-05-25
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -347,4 +347,250 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为泰卢固语观众提供国际科技政治新闻见解，涵盖科技、外交和美中关系的交叉领域
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=gZET4CvcutA)**
+
+### Australia's Four-Day Work Week Trial: What the Data Shows
+
+* **15 Australian companies** tested the 100:80:100 model (100% pay, 80% hours, 100% output) between 2022-2024
+* **14 out of 15 companies** continued the four-day week after the trial ended
+* **Zero companies reported productivity drops** — 6 saw increases, 9 maintained the same output
+* Study led by Professor John Hopkins of Deakin University, published in Nature journal
+* Companies spanned diverse industries: property management, publishing, health tech, financial services
+* **Primary motivation for many**: reducing burnout (1 in 2 Australian workers currently experience burnout)
+* **Key insight**: Success required workflow restructuring — eliminating unnecessary meetings, automating tasks, cutting low-value work
+* **Client-facing businesses** staggered days off across teams to maintain coverage
+* **AI connection**: As automation increases productivity, the four-day week offers a way to reclaim time rather than just add more tasks
+* **Legitimate concerns**: Novelty effect may fade long-term; harder to implement in healthcare, emergency services, logistics, and hospitality sectors
+* **Global trend**: Similar trials in Germany (45 companies) and UK (200+ companies) showed comparable results
+
+---
+
+### 澳大利亚四天工作制试验：数据揭示的真相
+
+* **15家澳大利亚公司**在2022-2024年间测试了100:80:100模式（100%薪资、80%工时、100%产出）
+* **15家中有14家**在试验结束后继续实行四天工作制
+* **零家公司报告生产力下降** — 6家生产力提升，9家维持相同产出
+* 研究由迪肯大学John Hopkins教授领导，发表于《自然》期刊
+* 参与公司涵盖多个行业：物业管理、出版、健康科技、金融服务
+* **许多公司的主要动机**：减少职业倦怠（目前每2名澳大利亚员工中就有1人经历倦怠）
+* **关键洞察**：成功需要重组工作流程 — 取消不必要的会议、自动化任务、削减低价值工作
+* **面向客户的企业**采用团队成员错峰休息的方式保持服务覆盖
+* **与AI的关联**：随着自动化提高生产力，四天工作制提供了一种夺回时间的方式，而非仅仅增加更多任务
+* **合理的担忧**：新鲜感效应可能随时间消退；在医疗、应急服务、物流和酒店业等行业更难实施
+* **全球趋势**：德国（45家公司）和英国（200多家公司）的类似试验显示了相似结果
+
+**[Read Original / 阅读原文](https://scienceaim.com/australia-just-proved-the-four-day-work-week-works-here-is-what-the-data-actually-says/)**
+
+<!-- [Title-Only] -->
+### Memory has grown to nearly two-thirds of AI chip component costs
+
+* Based on the title, this article likely examines the evolving cost structure of AI accelerator chips, specifically highlighting how memory components (like HBM - High Bandwidth Memory) now represent approximately 65% of total chip costs
+* This is significant because it represents a major shift in semiconductor economics - traditionally, logic/compute components dominated chip costs, but the massive memory bandwidth requirements of modern AI workloads (especially for large language models and transformers) have inverted this relationship
+* Readers interested in AI infrastructure economics, semiconductor industry trends, or understanding why AI chips are so expensive will find this analysis valuable, as memory costs are now the primary driver of AI chip pricing
+
+### AI 芯片成本构成：内存占比已接近三分之二
+
+* 根据标题推测，本文可能分析了 AI 加速器芯片的成本结构演变，特别指出内存组件（如 HBM 高带宽内存）现已占芯片总成本的约 65%
+* 这一趋势意义重大，因为它代表了半导体经济学的重大转变——传统上逻辑/计算组件主导芯片成本，但现代 AI 工作负载（尤其是大语言模型和 Transformer 架构）对内存带宽的巨大需求已经逆转了这种关系
+* 对 AI 基础设施经济学、半导体行业趋势感兴趣，或想了解 AI 芯片为何如此昂贵的读者会发现这篇分析很有价值，因为内存成本现已成为 AI 芯片定价的主要驱动因素
+
+**[Read Original / 阅读原文](https://epoch.ai/data-insights/ai-chip-component-cost-shares)**
+
+<!-- [Title-Only] -->
+### Ruby for Good
+* Based on the title, this article likely covers an initiative or event that brings together Ruby developers to work on projects benefiting nonprofits and social causes
+* Why it might be interesting: It represents the intersection of software development and social impact, showing how the Ruby community contributes technical skills to charitable organizations. The URL suggests this is an event registration page, indicating it's likely a hackathon or conference where developers volunteer their time to build tools for good causes.
+
+### Ruby for Good（Ruby 公益项目）
+* 根据标题推测，这篇文章可能介绍一个将 Ruby 开发者聚集在一起，为非营利组织和社会公益事业开发项目的活动或倡议
+* 为何值得关注：这代表了软件开发与社会影响力的交汇点，展示了 Ruby 社区如何将技术技能贡献给慈善组织。从 URL 来看，这似乎是一个活动注册页面，很可能是一个黑客马拉松或会议，开发者们自愿贡献时间为公益事业构建工具。
+
+**Note:** This introduction is based solely on the title and URL structure, as the actual article content could not be fetched.
+
+**注意：** 此简介仅基于标题和 URL 结构推测，因为无法获取实际文章内容。
+
+**[Read Original / 阅读原文](https://ti.to/codeforgood/rubyforgood)**
+
+### Knowledge Work Plugins - Open-source Claude plugins for specialized professional workflows
+
+* **What it does**: Transforms Claude into a role-specific specialist by providing pre-built plugins for 11 job functions (sales, product management, finance, data, legal, marketing, etc.), each bundling domain expertise, tool integrations, and workflow automation
+* **Key features**: File-based architecture (markdown + JSON, no code required); connects to 30+ external tools via MCP servers (Slack, Notion, HubSpot, Snowflake, etc.); includes both auto-activated skills and explicit slash commands; fully customizable for company-specific processes and terminology
+* **Why it's notable**: Built by Anthropic for Claude Cowork/Code, this represents a new paradigm for AI assistants — moving beyond generic chat to role-aware, tool-connected specialists that understand your company's actual workflows. The open-source approach lets teams customize and share organizational knowledge at scale.
+
+---
+
+### Knowledge Work Plugins - Claude 专业工作流开源插件集
+
+* **功能介绍**: 将 Claude 转变为特定岗位的专家助手,提供 11 个职能领域的预构建插件(销售、产品管理、财务、数据分析、法务、营销等),每个插件整合了领域专业知识、工具集成和工作流自动化
+* **主要特点**: 基于文件的架构(Markdown + JSON,无需编码);通过 MCP 服务器连接 30 多个外部工具(Slack、Notion、HubSpot、Snowflake 等);包含自动激活的技能和显式斜杠命令;可完全定制以适配公司特定流程和术语
+* **为何值得关注**: 由 Anthropic 为 Claude Cowork/Code 构建,代表了 AI 助手的新范式——从通用聊天转向具备角色认知、工具连接的专业助手,能理解企业实际工作流程。开源方式让团队能够大规模定制和共享组织知识。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/knowledge-work-plugins)**
+
+### andrej-karpathy-skills - Claude Code Guidelines to Prevent Common LLM Coding Pitfalls
+
+* **What it does**: Provides a single `CLAUDE.md` file with four core principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) that guide Claude Code and other AI coding assistants to avoid common mistakes like making wrong assumptions, overcomplicating code, and making unnecessary changes.
+
+* **Key features**: Addresses specific issues identified by Andrej Karpathy—forces explicit reasoning before coding, prevents overengineering and bloated abstractions, ensures surgical edits that only touch relevant code, and transforms tasks into verifiable goals with test-driven loops. Available as both a Claude Code plugin and a per-project CLAUDE.md file, with Cursor IDE support included.
+
+* **Why it's notable**: Directly tackles the most frustrating behaviors of LLM coding assistants based on insights from a leading AI researcher. The guidelines are practical, immediately actionable, and designed to reduce costly mistakes on non-trivial work. With 2,555 stars today, it's resonating with developers tired of AI assistants that silently assume, overcomplicate, and make orthogonal changes.
+
+---
+
+### andrej-karpathy-skills - 基于 Karpathy 观察的 Claude 代码指南
+
+* **功能介绍**: 提供单个 `CLAUDE.md` 文件,包含四大核心原则(编码前思考、简洁优先、精准修改、目标驱动执行),指导 Claude Code 等 AI 编码助手避免常见错误,如错误假设、过度复杂化代码和不必要的修改。
+
+* **主要特点**: 针对 Andrej Karpathy 指出的具体问题——强制编码前明确推理,防止过度工程和臃肿抽象,确保仅修改相关代码的精准编辑,将任务转化为可验证的测试驱动目标。支持 Claude Code 插件和项目级 CLAUDE.md 文件两种安装方式,并包含 Cursor IDE 支持。
+
+* **为何值得关注**: 直接解决 LLM 编码助手最令人沮丧的行为模式,基于顶尖 AI 研究者的洞察。这些指南实用、可立即应用,旨在减少非简单任务中的代价高昂的错误。今日获得 2,555 星标,引起了厌倦 AI 助手默默假设、过度复杂化和进行无关修改的开发者们的强烈共鸣。
+
+**[View Repository / 查看仓库](https://github.com/multica-ai/andrej-karpathy-skills)**
+
+### 9arm-skills - Claude Code Agent Skills Collection
+
+* **What it does**: A curated collection of specialized skills/prompts that extend Claude Code's capabilities for software engineering and productivity workflows
+* **Key features**: 
+  - Organized skill library covering debugging (debug-mantra), post-mortem analysis, code review (scrutinize), and management communication
+  - Each skill is a self-contained module with YAML frontmatter and bundled scripts
+  - Easy installation via symlink script to `~/.claude/skills/`
+  - Categorized into engineering, productivity, misc, personal, in-progress, and deprecated buckets
+* **Why it's notable**: Provides battle-tested, opinionated workflows for AI-assisted development; demonstrates how to structure reusable agent skills with clear separation between production-ready and experimental capabilities; particularly valuable for teams adopting Claude Code
+
+---
+
+### 9arm-skills - Claude Code 智能体技能集合
+
+* **功能介绍**: 为 Claude Code 提供专业技能/提示词的精选集合,扩展其在软件工程和生产力工作流中的能力
+* **主要特点**:
+  - 包含调试方法论(debug-mantra)、事后分析(post-mortem)、代码审查(scrutinize)和管理沟通等技能模块
+  - 每个技能都是独立模块,包含 YAML 元数据和配套脚本
+  - 通过符号链接脚本可快速安装到 `~/.claude/skills/`
+  - 按工程、生产力、杂项、个人、开发中和已弃用分类管理
+* **为何值得关注**: 提供经过实战检验的 AI 辅助开发工作流;展示了如何构建可复用的智能体技能库,清晰区分生产就绪和实验性功能;对采用 Claude Code 的团队特别有价值
+
+**[View Repository / 查看仓库](https://github.com/thananon/9arm-skills)**
+
+### Phosphene - A Native Video Wallpaper Engine for macOS Tahoe
+
+* **What it does**: Phosphene is a menu bar app and wallpaper extension that plays custom video files as your macOS desktop and lock-screen wallpaper, integrating directly into System Settings → Wallpaper alongside Apple's built-in Aerials.
+
+* **Key features**: 
+  - Built on Apple's private `WallpaperExtensionKit` framework for native OS integration
+  - Gapless video looping with frame-accurate playback using PTS/DTS offset technique
+  - Power-aware playback that adapts to thermal state, battery level, and system mode
+  - Multi-display support with per-Space wallpaper selections
+  - Adaptive variants system that automatically switches to lower-resolution versions based on power policy
+  - Occlusion detection that pauses rendering when desktop is fully covered
+
+* **Why it's notable**: This is a rare open-source project that reverse-engineers Apple's private wallpaper framework through runtime introspection and `dlopen`, achieving the same level of system integration as Apple's own Aerials. The technical implementation is sophisticated—using `AVSampleBufferDisplayLayer` instead of `AVPlayerLayer` for remote `CAContext` rendering, runtime swizzling to fix snapshot encoding bugs, and Mirror-based reflection to parse undocumented XPC types. Originally a commercial project, it's now open-sourced and demonstrates advanced macOS internals knowledge, though it comes with the caveat that Apple could break it at any major OS release.
+
+---
+
+### Phosphene - macOS Tahoe 原生视频壁纸引擎
+
+* **功能介绍**: Phosphene 是一款菜单栏应用和壁纸扩展，可将自定义视频文件作为 macOS 桌面和锁屏壁纸播放，直接集成到系统设置 → 壁纸中，与 Apple 内置的 Aerials 动态壁纸并列显示。
+
+* **主要特点**:
+  - 基于 Apple 私有 `WallpaperExtensionKit` 框架构建，实现原生系统级集成
+  - 使用 PTS/DTS 偏移技术实现帧精确的无缝循环播放
+  - 智能功耗管理，根据散热状态、电池电量和系统模式自动调整播放策略
+  - 支持多显示器，每个 Space 可设置不同壁纸
+  - 自适应变体系统，根据功耗策略自动切换到低分辨率版本
+  - 遮挡检测功能，当桌面完全被窗口覆盖时自动暂停渲染
+
+* **为何值得关注**: 这是一个罕见的开源项目，通过运行时反射和 `dlopen` 逆向工程了 Apple 的私有壁纸框架，实现了与 Apple 官方 Aerials 相同级别的系统集成。技术实现非常精妙——使用 `AVSampleBufferDisplayLayer` 而非 `AVPlayerLayer` 进行远程 `CAContext` 渲染，通过运行时 swizzling 修复快照编码 bug，使用 Mirror 反射解析未公开的 XPC 类型。该项目原本是商业软件，现已开源，展示了深厚的 macOS 底层技术功底，但需注意 Apple 可能在任何重大系统更新中破坏其兼容性。
+
+**[View Repository / 查看仓库](https://github.com/kageroumado/phosphene)**
+
+### 🎬 The problem with AI agents..
+**Channel:** Low Level
+
+* What the video covers: An analysis of current limitations and challenges facing AI agents in practical applications
+* Key topics discussed: Technical constraints of AI agents, implementation issues, real-world deployment challenges, and potential pitfalls developers should be aware of
+* Why it's worth watching: Provides a critical, grounded perspective on AI agent technology from a low-level programming viewpoint, helping developers understand what works, what doesn't, and what to watch out for when building or integrating AI agents
+
+---
+
+### 🎬 AI 智能体的问题..
+**频道:** Low Level
+
+* 视频内容概述: 分析当前 AI 智能体在实际应用中面临的局限性和挑战
+* 主要话题: AI 智能体的技术限制、实现问题、真实场景部署挑战，以及开发者应注意的潜在陷阱
+* 为何值得观看: 从底层编程角度提供对 AI 智能体技术的批判性、务实的观点，帮助开发者理解哪些有效、哪些无效，以及在构建或集成 AI 智能体时需要注意什么
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=74FjlxQgftg)**
+
+### 🎬 Google Antigravity 2.0 Beginner's Guide
+**Channel:** Google Antigravity
+
+* What the video covers: A comprehensive introduction to Antigravity 2.0, Google's new standalone desktop application that represents a significant evolution from its original version
+* Key topics discussed: The core features and capabilities of Antigravity 2.0, how it delivers on the original vision as a desktop application, and beginner-friendly guidance for getting started
+* Why it's worth watching: Essential viewing for anyone interested in Google's latest desktop technology release, especially those who followed the original Antigravity concept and want to understand how version 2.0 fulfills its promise
+
+### 🎬 Google Antigravity 2.0 初学者指南
+**频道:** Google Antigravity
+
+* 视频内容概述: 全面介绍 Antigravity 2.0,这是 Google 推出的全新独立桌面应用程序,相比初代版本有重大进化
+* 主要话题: Antigravity 2.0 的核心功能和特性,作为桌面应用如何实现最初的愿景,以及面向初学者的入门指导
+* 为何值得观看: 对于关注 Google 最新桌面技术发布的用户来说是必看内容,特别是那些了解初代 Antigravity 概念并想知道 2.0 版本如何兑现承诺的观众
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6C0FjHoN3qE)**
+
+### 🎬 Claude Wrote 50 Features. None of Them Worked Together
+
+**Channel:** Better Stack
+
+* What the video covers: A real-world case study of using Claude AI to rapidly build 50 features for a software project, revealing the challenges when AI-generated code doesn't integrate properly
+* Key topics discussed: AI-assisted development pitfalls, integration issues between AI-generated features, debugging and refactoring challenges, lessons learned about AI code generation at scale
+* Why it's worth watching: Provides honest insights into the limitations of AI coding assistants when building complex systems, offering practical lessons for developers working with AI tools like Claude, GitHub Copilot, or similar platforms
+
+---
+
+### 🎬 Claude 写了 50 个功能，但没有一个能协同工作
+
+**频道:** Better Stack
+
+* 视频内容概述: 真实案例研究，展示使用 Claude AI 快速构建 50 个软件功能后，发现 AI 生成的代码无法正确集成的挑战
+* 主要话题: AI 辅助开发的陷阱、AI 生成功能之间的集成问题、调试和重构挑战、大规模使用 AI 代码生成的经验教训
+* 为何值得观看: 诚实揭示 AI 编程助手在构建复杂系统时的局限性，为使用 Claude、GitHub Copilot 等 AI 工具的开发者提供实用经验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=c-fqGHGh5_o)**
+
+### 🎬 When Claude Handles Your Project
+
+**Channel:** Sheryians Coding School
+
+* What the video covers: A short demonstration of Claude AI managing development projects, likely showcasing its coding capabilities and project handling features
+* Key topics discussed: Claude AI's practical application in software development workflows, automated project management, AI-assisted coding
+* Why it's worth watching: Quick insight into how AI tools like Claude can streamline development work, relevant for developers exploring AI-powered coding assistants
+
+---
+
+### 🎬 当 Claude 接管你的项目
+
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 简短演示 Claude AI 如何管理开发项目,展示其编码能力和项目处理功能
+* 主要话题: Claude AI 在软件开发工作流程中的实际应用、自动化项目管理、AI 辅助编程
+* 为何值得观看: 快速了解 Claude 等 AI 工具如何简化开发工作,适合探索 AI 编程助手的开发者观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QGNw9QZHsAA)**
+
+### 🎬 How to Make an Arduino Solar Panel Tracker | Easy Project Tutorial #shorts
+**Channel:** Seun Tech
+
+* What the video covers: A complete step-by-step tutorial on building an automatic solar tracking system using Arduino and light-dependent resistors (LDRs)
+* Key topics discussed: Arduino IDE programming, LDR sensor integration, servo motor control for panel positioning, and automated sun-tracking mechanism
+* Why it's worth watching: Perfect beginner-friendly project that combines hardware and software skills while creating a practical renewable energy application that maximizes solar panel efficiency
+
+---
+
+### 🎬 如何制作 Arduino 太阳能板追踪器 | 简易项目教程
+**频道:** Seun Tech
+
+* 视频内容概述: 使用 Arduino 和光敏电阻 (LDR) 构建自动太阳追踪系统的完整分步教程
+* 主要话题: Arduino IDE 编程、LDR 传感器集成、伺服电机控制面板定位、自动追日机制
+* 为何值得观看: 适合初学者的实用项目,结合软硬件技能,打造能提高太阳能板效率的可再生能源应用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
 
