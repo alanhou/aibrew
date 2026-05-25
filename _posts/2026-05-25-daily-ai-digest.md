@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 25, 2026"
 date: 2026-05-25
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -764,4 +764,194 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 轻松幽默且引起共鸣的程序员内容,通过喜剧形式捕捉调试的普遍经历以及不同编程语言的独特怪癖
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=OX4Tu7semWA)**
+
+### Six Alternative Search Engines to Try as Google Embraces AI-First Search
+
+* **Google's major shift**: At Google I/O 2026, Google announced its biggest search overhaul in 25+ years, introducing conversational AI mode, AI Overviews with chat boxes, and AI agents—making it look more like ChatGPT than traditional search
+* **User backlash**: Many users are frustrated by forced AI integration everywhere, especially after Google's rocky AI Overviews rollout (remember the "stare into the sun" incident), plus concerns about Google's search monopoly ruled illegal in 2024
+* **Kagi ($5-10/month)**: Ad-free, subscription-based search with customizable filters, academic "lenses," and optional AI summaries—you control when AI appears
+* **DuckDuckGo (free)**: Privacy-focused search that doesn't track user data, shows contextual ads based on search topics only, and lets you completely opt out of AI features in settings
+* **Startpage (free)**: Acts as a privacy proxy for Google—strips your personal data before sending queries to Google, so you get Google results without Google tracking you
+* **&udm=14 (free)**: Automatically appends "&udm=14" to Google searches to remove AI Overviews—essentially AI-free Google with open-source code available on GitHub
+* **Brave (free)**: Chromium-based browser and search engine supporting Chrome extensions, with customizable "Goggles" filters (like "No Pinterest," "Tech Blogs," political news filters) and toggleable AI features
+* **Ecosia (free)**: Chromium-based eco-friendly option that donates ~80% of ad revenue to tree-planting initiatives, publishes monthly financial reports for transparency, and works with local reforestation communities
+
+---
+
+### 六款值得尝试的搜索引擎:Google 已不再是原来的 Google
+
+* **Google 的重大转变**:在 Google I/O 2026 大会上,Google 宣布了 25 年来最大的搜索改革,推出对话式 AI 模式、带聊天框的 AI 概览和 AI 代理——使其看起来更像 ChatGPT 而非传统搜索引擎
+* **用户反弹**:许多用户对无处不在的强制 AI 集成感到沮丧,尤其是在 Google AI 概览推出失败(还记得"盯着太阳看"事件吗)之后,加上 2024 年 Google 搜索垄断被判违法的担忧
+* **Kagi(每月 5-10 美元)**:基于订阅的无广告搜索,具有可自定义过滤器、学术"镜头"和可选 AI 摘要——你可以控制何时显示 AI
+* **DuckDuckGo(免费)**:注重隐私的搜索引擎,不追踪用户数据,仅根据搜索主题显示相关广告,并允许在设置中完全退出 AI 功能
+* **Startpage(免费)**:充当 Google 的隐私代理——在将查询发送到 Google 之前剥离你的个人数据,因此你可以获得 Google 结果而不被 Google 追踪
+* **&udm=14(免费)**:自动在 Google 搜索中添加"&udm=14"以移除 AI 概览——本质上是无 AI 的 Google,开源代码可在 GitHub 上获取
+* **Brave(免费)**:基于 Chromium 的浏览器和搜索引擎,支持 Chrome 扩展,具有可自定义的"Goggles"过滤器(如"无 Pinterest"、"科技博客"、政治新闻过滤器)和可切换的 AI 功能
+* **Ecosia(免费)**:基于 Chromium 的环保选项,将约 80% 的广告收入捐赠给植树计划,每月发布财务报告以保持透明度,并与当地重新造林社区合作
+
+**[Read Original / 阅读原文](https://techcrunch.com/2026/05/21/six-search-engines-worth-trying-now-that-google-isnt-really-google-anymore/)**
+
+### Magnifica Humanitas: Pope Leo XIV's Encyclical on Technology and Human Dignity
+
+* Pope Leo XIV's encyclical addresses humanity's pivotal choice between building a "Tower of Babel" or a city where God and humanity dwell together
+* Commemorates the 135th anniversary of Pope Leo XIII's *Rerum Novarum* (1891), which founded the Church's Social Doctrine
+* Focuses on contemporary challenges: digitalization, artificial intelligence, robotics, and rapid technological transformation
+* Structured in five chapters covering: Gospel-based social approach, foundational principles, technology and AI ethics, safeguarding humanity (truth/work/freedom), and peace versus power culture
+* Key themes include human dignity, common good, subsidiarity, solidarity, integral human development, and the dangers of technocratic paradigms
+* Addresses transhumanism, posthumanism, and the need to preserve authentic human grandeur in the digital age
+* Discusses practical concerns: democracy and truth, communication ecology, digital education, work dignity amid automation, and AI in warfare
+* Calls for building a "civilization of love" through justice, dialogue, multilateralism, and rejecting the normalization of war
+* Emphasizes that technology must serve human flourishing, not replace or diminish human dignity
+* Concludes with Christian hope rooted in the Incarnation and the *Magnificat*
+
+### 《伟大的人性》：教宗良十四世关于科技与人类尊严的通谕
+
+* 教宗良十四世的通谕探讨人类面临的关键选择：建造"巴别塔"还是建设天主与人类共居的城市
+* 纪念教宗良十三世1891年《新事物》通谕发表135周年，该通谕奠定了教会社会训导的基础
+* 聚焦当代挑战：数字化、人工智能、机器人技术及快速的技术变革
+* 分为五章：基于福音的社会方法、基本原则、技术与人工智能伦理、保护人性（真理/工作/自由）、和平与权力文化
+* 核心主题包括：人的尊严、公益、辅助性原则、团结互助、人的整体发展，以及技术统治范式的危险
+* 讨论超人类主义、后人类主义，以及在数字时代保护真正人性伟大的必要性
+* 涉及实际问题：民主与真理、传播生态、数字教育、自动化时代的工作尊严、人工智能在战争中的应用
+* 呼吁通过正义、对话、多边主义建设"爱的文明"，拒绝战争常态化
+* 强调技术必须服务于人类繁荣，而非取代或削弱人的尊严
+* 以基督道成肉身和《圣母颂》中的基督信仰希望作结
+
+**[Read Original / 阅读原文](https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html)**
+
+### Netherlands Arrests Two Hosting Operators for Enabling Russian Cyberattacks
+
+* Dutch authorities arrested two co-owners of hosting companies for operating infrastructure used by Russia for cyberattacks, influence operations, and disinformation campaigns within the EU
+* The arrests targeted Andrey Nesterenko (39, Russian native) and Youssef Zinad (57, Amsterdam resident) who controlled MIRhosting and WorkTitans BV
+* Over 800 servers were seized along with laptops and phones during raids on three businesses and two data centers
+* The investigation focused on their connection to Stark Industries Solutions, an EU-sanctioned hosting provider that emerged two weeks before Russia's Ukraine invasion
+* Stark Industries became a major source of DDoS attacks against European targets and provided proxy services for Russia-backed hacking groups
+* After EU sanctions on PQHosting in May 2025, Stark's network assets were transferred to "the.hosting" under WorkTitans' control, maintaining connectivity through MIRhosting
+* The networks were identified as the most-used in pro-Russian attacks on Danish government bodies during November 2025 municipal elections
+* Nesterenko, a former piano prodigy, founded MIRhosting's parent company in 2004, which previously hosted a hacktivist website during Russia's 2008 invasion of Georgia
+* Both suspects were charged with violating sanctions law by making economic resources available to EU-sanctioned entities
+* MIRhosting denied knowledge of server misuse and temporarily suspended services to WorkTitans while conducting an internal investigation
+
+### 荷兰查封800台服务器，逮捕两名协助网络攻击的嫌疑人
+
+* 荷兰当局逮捕了两家托管公司的共同所有者，指控其运营被俄罗斯用于在欧盟内部进行网络攻击、影响行动和虚假信息宣传的IT基础设施
+* 被捕者为Andrey Nesterenko（39岁，俄罗斯籍）和Youssef Zinad（57岁，阿姆斯特丹居民），二人控制着MIRhosting和WorkTitans BV公司
+* 在对三家企业和两个数据中心的突击搜查中，查封了800多台服务器以及笔记本电脑和手机
+* 调查重点是他们与Stark Industries Solutions的关联，该公司是被欧盟制裁的托管服务商，在俄罗斯入侵乌克兰前两周成立
+* Stark Industries成为针对欧洲目标的DDoS攻击的主要来源，并为俄罗斯支持的黑客组织提供代理服务
+* 2025年5月欧盟制裁PQHosting后，Stark的网络资产被转移到WorkTitans控制下的"the.hosting"，通过MIRhosting维持互联网连接
+* 这些网络被确认为2025年11月丹麦市政选举期间针对丹麦政府机构的亲俄攻击中使用最多的网络
+* Nesterenko曾是钢琴神童，2004年创立了MIRhosting的母公司，该公司曾在2008年俄罗斯入侵格鲁吉亚期间托管黑客活动网站
+* 两名嫌疑人被指控违反制裁法，向欧盟制裁实体提供经济资源
+* MIRhosting否认知晓服务器被滥用，并在进行内部调查期间暂时中止了对WorkTitans的服务
+
+**[Read Original / 阅读原文](https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/)**
+
+### ECC - The Agent Harness Performance Optimization System
+
+* **What it does**: A comprehensive operator system that enhances AI coding agents (Claude Code, Cursor, Codex, etc.) with production-ready skills, memory optimization, security scanning, and continuous learning capabilities. Goes beyond simple configs to provide a complete agent performance framework.
+
+* **Key features**: 
+  - 60+ specialized agents, 232 skills, and 75 legacy command shims evolved from 10+ months of production use
+  - Cross-harness compatibility (Claude Code, Cursor, Codex, OpenCode, Gemini, Zed, GitHub Copilot)
+  - Memory persistence hooks, token optimization, and continuous learning from sessions
+  - AgentShield security scanning with attack vector protection and sandboxing
+  - Selective install architecture with manifest-driven component installation
+  - ECC 2.0 alpha with Rust control-plane and operator workflow automation
+  - Support for 12+ language ecosystems (TypeScript, Python, Go, Java, Kotlin, Rust, C++, PHP, Perl, etc.)
+
+* **Why it's notable**: Won an Anthropic hackathon and has achieved massive community adoption (182K+ stars, 28K+ forks, 170+ contributors). Represents a paradigm shift from basic AI agent configs to a full performance optimization system with research-first development, production-grade security, and real-world battle-testing. The project bridges the gap between experimental AI coding assistants and enterprise-ready development tools.
+
+---
+
+### ECC - AI 代码助手性能优化系统
+
+* **功能介绍**: 一个全面的智能体操作系统，为 AI 编码助手（Claude Code、Cursor、Codex 等）提供生产级技能、内存优化、安全扫描和持续学习能力。不仅仅是配置文件，而是完整的智能体性能框架。
+
+* **主要特点**:
+  - 60+ 专业智能体、232 项技能和 75 个传统命令封装，源自 10 个月以上的生产实践
+  - 跨平台兼容（Claude Code、Cursor、Codex、OpenCode、Gemini、Zed、GitHub Copilot）
+  - 内存持久化钩子、令牌优化和会话持续学习
+  - AgentShield 安全扫描，提供攻击向量防护和沙箱隔离
+  - 选择性安装架构，支持清单驱动的组件安装
+  - ECC 2.0 alpha 版本，配备 Rust 控制平面和操作工作流自动化
+  - 支持 12+ 种语言生态系统（TypeScript、Python、Go、Java、Kotlin、Rust、C++、PHP、Perl 等）
+
+* **为何值得关注**: 赢得 Anthropic 黑客松大赛，获得社区广泛认可（182K+ 星标、28K+ 分支、170+ 贡献者）。代表了从基础 AI 助手配置到完整性能优化系统的范式转变，具备研究优先的开发方法、生产级安全性和真实场景验证。该项目填补了实验性 AI 编码助手与企业级开发工具之间的空白。
+
+**[View Repository / 查看仓库](https://github.com/affaan-m/ECC)**
+
+I'll analyze the repository and create a bilingual summary.
+
+### Anthropic Cybersecurity Skills - The Largest Open-Source Cybersecurity Skills Library for AI Agents
+
+* **What it does**: Provides 754 structured, production-grade cybersecurity skills that enable AI agents to perform security analysis, threat hunting, incident response, and penetration testing with the expertise of a senior analyst. Each skill follows the agentskills.io open standard with YAML frontmatter for discovery and structured Markdown for execution workflows.
+
+* **Key features**: 
+  - Covers 26 security domains from cloud security to OT/ICS, malware analysis to zero trust architecture
+  - Every skill mapped to 5 industry frameworks: MITRE ATT&CK v18, NIST CSF 2.0, MITRE ATLAS v5.4, MITRE D3FEND v1.3, and NIST AI RMF 1.0
+  - Progressive disclosure architecture: ~30 tokens to scan frontmatter, 500-2,000 tokens for full workflow
+  - Compatible with 26+ AI platforms including Claude Code, GitHub Copilot, Cursor, Gemini CLI, and Hermes Agent
+  - Apache 2.0 licensed with active community contributions
+
+* **Why it's notable**: Addresses the 4.8 million global cybersecurity workforce gap by giving AI agents structured practitioner workflows instead of just scripts or checklists. This is the only open-source skills library providing unified cross-framework coverage, enabling agents to execute expert-level security investigations while maintaining compliance across multiple standards. The project includes a live playground at casky.ai and is backed by the GARS-2026 academic study measuring enterprise readiness for agentic AI in security operations.
+
+---
+
+### Anthropic Cybersecurity Skills - 面向 AI 智能体的最大开源网络安全技能库
+
+* **功能介绍**: 提供 754 个结构化的生产级网络安全技能,使 AI 智能体能够以高级分析师的专业水平执行安全分析、威胁狩猎、事件响应和渗透测试。每个技能遵循 agentskills.io 开放标准,采用 YAML 前置元数据用于发现,结构化 Markdown 用于执行工作流。
+
+* **主要特点**:
+  - 覆盖 26 个安全领域,从云安全到工控系统安全,从恶意软件分析到零信任架构
+  - 每个技能映射到 5 个行业框架:MITRE ATT&CK v18、NIST CSF 2.0、MITRE ATLAS v5.4、MITRE D3FEND v1.3 和 NIST AI RMF 1.0
+  - 渐进式披露架构:扫描前置元数据约 30 个 token,完整工作流 500-2,000 个 token
+  - 兼容 26+ 个 AI 平台,包括 Claude Code、GitHub Copilot、Cursor、Gemini CLI 和 Hermes Agent
+  - Apache 2.0 许可证,社区积极贡献
+
+* **为何值得关注**: 通过为 AI 智能体提供结构化的实践者工作流(而非仅仅是脚本或检查清单),解决全球 480 万网络安全人才缺口问题。这是唯一提供统一跨框架覆盖的开源技能库,使智能体能够执行专家级安全调查,同时保持多个标准的合规性。该项目包含 casky.ai 上的实时演练场,并由 GARS-2026 学术研究支持,该研究衡量企业在安全运营中对智能体 AI 的准备程度。
+
+**[View Repository / 查看仓库](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)**
+
+### 🎬 Is your job costing you your health?
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Landon examines how toxic work environments can negatively impact your physical and mental health, exploring the various ways a bad job takes its toll on well-being.
+
+* Key topics discussed: Signs of workplace toxicity, health consequences of staying in harmful work environments, the hidden costs of tolerating poor job conditions, and strategies for recognizing when it's time to prioritize your health over your career.
+
+* Why it's worth watching: Essential viewing for developers and tech professionals experiencing burnout or workplace stress. Provides practical insights on identifying toxic patterns and understanding the real trade-offs between career advancement and personal health—particularly relevant in high-pressure tech environments.
+
+---
+
+### 🎬 你的工作是否正在损害你的健康?
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Landon 探讨有毒工作环境如何对身心健康产生负面影响,分析糟糕工作带来的各种代价。
+
+* 主要话题: 职场毒性的迹象、停留在有害工作环境中的健康后果、容忍恶劣工作条件的隐性成本,以及识别何时应该将健康置于职业之上的策略。
+
+* 为何值得观看: 对于正在经历职业倦怠或工作压力的开发者和技术从业者来说是必看内容。提供了识别有毒模式的实用见解,帮助理解职业发展与个人健康之间的真实权衡——在高压技术环境中尤其相关。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=y8aYytIyzqs)**
+
+### 🎬 How to make Jack in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+
+* What the video covers: A tutorial demonstrating how to create a character named "Jack" within Melon Sandbox, a physics-based sandbox game
+* Key topics discussed: Step-by-step creation process, game mechanics, character building techniques in Melon Sandbox
+* Why it's worth watching: Quick, practical guide for Melon Sandbox players looking to recreate specific characters; credits original idea from @Блекикс, making it a community-driven tutorial
+
+---
+
+### 🎬 如何在 Melon Sandbox 中制作 Jack 角色
+**频道:** Vedid
+
+* 视频内容概述: 演示如何在物理沙盒游戏 Melon Sandbox 中创建名为"Jack"的角色的教程
+* 主要话题: 分步创建流程、游戏机制、Melon Sandbox 中的角色构建技巧
+* 为何值得观看: 为想要重现特定角色的 Melon Sandbox 玩家提供快速实用的指南；致谢原创意来自 @Блекикс，体现社区驱动的教程特色
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k3N-fdn4RSk)**
 
