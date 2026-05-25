@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 25, 2026"
 date: 2026-05-25
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -593,4 +593,98 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 适合初学者的实用项目,结合软硬件技能,打造能提高太阳能板效率的可再生能源应用
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=xj1FMq41tBg)**
+
+<!-- [Title-Only] -->
+### Show HN: Audiomass – a free, open-source multitrack audio editor for the web
+
+* Based on the title, this article likely introduces Audiomass, a web-based digital audio workstation (DAW) that runs entirely in the browser. It appears to support multitrack editing, allowing users to work with multiple audio layers simultaneously without installing desktop software.
+* This is interesting because web-based audio editors have traditionally been limited compared to desktop alternatives. An open-source, multitrack-capable editor that runs in the browser could democratize audio production, making it accessible to anyone with a web browser. The "Show HN" tag indicates this is a project showcase on Hacker News, suggesting the creator is sharing their work with the developer community.
+
+### Show HN: Audiomass – 免费开源的网页版多轨音频编辑器
+
+* 根据标题推测，这篇文章介绍了 Audiomass，一个完全在浏览器中运行的数字音频工作站（DAW）。它似乎支持多轨编辑功能，允许用户同时处理多个音频层，而无需安装桌面软件。
+* 这个项目值得关注，因为传统的网页音频编辑器功能通常较为有限，远不如桌面应用强大。一个开源的、支持多轨编辑的浏览器端编辑器可能会让音频制作变得更加普及，任何拥有浏览器的人都能使用。"Show HN"标签表明这是在 Hacker News 上的项目展示，作者正在与开发者社区分享他们的作品。
+
+**[Read Original / 阅读原文](https://audiomass.co/?multitrack=1)**
+
+### Revolutionary Discovery Challenges 80-Year Aeronautical Engineering Principle
+
+* **Paradigm shift in drag reduction**: Researchers at Tohoku University have overturned the 80-year-old principle that smooth surfaces are essential for reducing aerodynamic drag, demonstrating that strategically applied micro-roughness can reduce drag by up to 43.6%
+
+* **Distributed Micro-Roughness (DMR) technology**: Unlike traditional smooth surfaces or riblet "shark skin" grooves, DMR uses random microscopic irregularities invisible to the naked eye to delay the transition from laminar to turbulent airflow in the boundary layer
+
+* **Historical context and evolution**: The original 1940 principle by Japanese scientist Ichiro Tani established that surface roughness increases drag, but his 1989 reinterpretation of 1930s pipe flow data suggested roughness might not always promote turbulence—a hypothesis now validated
+
+* **Breakthrough measurement methodology**: The discovery was enabled by Tohoku University's 1-meter Magnetic Support Balance System (1m-MSBS), the world's largest, which levitates test models using electromagnetic force, eliminating support-rod interference that previously masked micro-scale aerodynamic effects
+
+* **Fundamental mechanism difference**: DMR operates by delaying laminar-to-turbulent flow transition through random surface irregularities, fundamentally different from riblet technology which aligns turbulent vortices using directional grooves along the airflow
+
+* **Broad applications potential**: This technology promises significant energy efficiency improvements for high-speed aircraft, automobiles, and bullet trains by reducing the aerodynamic drag that acts as a major barrier to speed and fuel efficiency
+
+---
+
+### 颠覆80年航空工程基本原理的革命性发现
+
+* **减阻范式转变**：日本东北大学研究团队推翻了持续80年的"光滑表面是减少空气阻力关键"的工程原理,证明战略性应用的微粗糙度可将阻力降低高达43.6%
+
+* **分布式微粗糙度(DMR)技术**：不同于传统光滑表面或仿鲨鱼皮沟槽技术,DMR利用肉眼不可见的随机微观不规则表面,延迟边界层中层流向湍流的转变过程
+
+* **历史脉络与演进**：日本科学家谷一郎1940年确立的原理认为表面粗糙度会增加阻力,但他1989年对1930年代管道流动数据的重新解读提出粗糙度未必总是促进湍流——这一假说如今得到验证
+
+* **突破性测量方法**：该发现得益于东北大学流体科学研究所的1米磁悬浮支撑天平系统(1m-MSBS)——全球最大规模,利用电磁力使测试模型悬浮,消除了以往支撑杆干扰而掩盖微尺度空气动力学效应的问题
+
+* **根本机制差异**：DMR通过随机表面不规则性延迟层流向湍流转变,与沟槽技术沿气流方向刻槽以排列湍流涡旋的机制完全不同,作用流域和原理均基于不同概念
+
+* **广泛应用前景**：该技术有望显著提升高速飞机、汽车和高铁的能源效率,通过减少作为速度和燃油效率主要障碍的空气动力学阻力
+
+**[Read Original / 阅读原文](https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/)**
+
+<!-- [Title-Only] -->
+### Memory has grown to nearly two-thirds of AI chip component costs
+
+* Based on the title, this article likely examines the evolving cost structure of AI accelerator chips, specifically highlighting how memory components (like HBM - High Bandwidth Memory) now represent approximately 65% of total chip costs
+* This is significant because it represents a major shift in semiconductor economics - traditionally, logic/compute components dominated chip costs, but the massive memory bandwidth requirements of modern AI workloads (especially for large language models and transformers) have inverted this relationship
+* Readers interested in AI infrastructure economics, semiconductor industry trends, or understanding why AI chips are so expensive will find this analysis valuable, as memory costs are now the primary driver of AI chip pricing
+
+### AI 芯片成本构成：内存占比已接近三分之二
+
+* 根据标题推测，本文可能分析了 AI 加速器芯片的成本结构演变，特别指出内存组件（如 HBM 高带宽内存）现已占芯片总成本的约 65%
+* 这一趋势意义重大，因为它代表了半导体经济学的重大转变——传统上逻辑/计算组件主导芯片成本，但现代 AI 工作负载（尤其是大语言模型和 Transformer 架构）对内存带宽的巨大需求已经逆转了这种关系
+* 对 AI 基础设施经济学、半导体行业趋势感兴趣，或想了解 AI 芯片为何如此昂贵的读者会发现这篇分析很有价值，因为内存成本现已成为 AI 芯片定价的主要驱动因素
+
+**[Read Original / 阅读原文](https://epoch.ai/data-insights/ai-chip-component-cost-shares)**
+
+### Get Shit Done Redux - AI-Powered Development Workflow System
+
+* **What it does**: A meta-prompting and context engineering system that prevents "context rot" (quality degradation as AI fills its context window) by orchestrating AI coding assistants through a structured 6-step workflow: initialize → discuss → plan → execute → verify → ship
+* **Key features**: Works across 15+ AI coding tools (Claude Code, Cursor, Windsurf, Copilot, etc.); executes tasks in parallel using fresh subagent contexts; maintains structured artifacts (PROJECT.md, ROADMAP.md, STATE.md) that survive session boundaries; atomic git commits per task; built-in verification and debugging workflow; one-command install via npx
+* **Why it's notable**: Solves the critical problem of AI code quality degradation in long sessions by keeping the main context clean (30-40%) while heavy work happens in fresh 200k-token subagent contexts; community-maintained fork after upstream trust issues; trusted by engineers at Amazon, Google, Shopify, and Webflow; 587 stars with active security audits and transparent governance
+
+---
+
+### Get Shit Done Redux - AI 驱动的开发工作流系统
+
+* **功能介绍**: 一个元提示和上下文工程系统,通过结构化的 6 步工作流(初始化 → 讨论 → 规划 → 执行 → 验证 → 发布)编排 AI 编码助手,防止"上下文腐烂"(AI 填充上下文窗口时的质量下降)
+* **主要特点**: 支持 15+ 种 AI 编码工具(Claude Code、Cursor、Windsurf、Copilot 等);使用全新子代理上下文并行执行任务;维护跨会话的结构化文档(PROJECT.md、ROADMAP.md、STATE.md);每个任务原子化 git 提交;内置验证和调试工作流;通过 npx 一键安装
+* **为何值得关注**: 通过保持主上下文清洁(30-40%)并在全新的 20 万 token 子代理上下文中执行繁重工作,解决了长会话中 AI 代码质量下降的关键问题;上游出现信任问题后的社区维护分支;获得亚马逊、谷歌、Shopify 和 Webflow 工程师信任;587 星标,具有主动安全审计和透明治理
+
+**[View Repository / 查看仓库](https://github.com/open-gsd/get-shit-done-redux)**
+
+### 🎬 Following the Yamnaya Trail into India - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses the migration patterns of the Yamnaya people, a Bronze Age culture from the Pontic-Caspian steppe, and traces their genetic and cultural influence into the Indian subcontinent
+* Key topics discussed: Ancient DNA evidence, Indo-European migrations, the genetic ancestry of South Asian populations, archaeological and linguistic correlations with genetic data, and how the Yamnaya expansion shaped modern populations
+* Why it's worth watching: Reich is a leading geneticist in ancient DNA research; this conversation offers cutting-edge insights into human migration history, the origins of Indo-European languages, and how genetics is rewriting our understanding of Indian prehistory
+
+---
+
+### 🎬 追溯颜那亚人进入印度的路径 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 讨论了颜那亚人(青铜时代黑海-里海草原文化)的迁徙模式,追踪他们对印度次大陆的遗传和文化影响
+* 主要话题: 古代DNA证据、印欧语系迁徙、南亚人群的遗传祖源、考古学和语言学与基因数据的关联,以及颜那亚人扩张如何塑造现代人群
+* 为何值得观看: Reich 是古代DNA研究领域的顶尖遗传学家;这次对话提供了关于人类迁徙史、印欧语系起源的前沿见解,以及基因学如何改写我们对印度史前史的理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BeOLjsymljI)**
 
