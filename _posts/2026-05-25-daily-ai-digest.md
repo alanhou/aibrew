@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 25, 2026"
 date: 2026-05-25
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -687,4 +687,81 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Reich 是古代DNA研究领域的顶尖遗传学家;这次对话提供了关于人类迁徙史、印欧语系起源的前沿见解,以及基因学如何改写我们对印度史前史的理解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=BeOLjsymljI)**
+
+### Jira IS Turing-Complete: Building a Minsky Machine in Atlassian Automation
+
+* **Proof of Turing-completeness**: The article provides a concrete proof that Jira's automation system is Turing-complete by implementing a Minsky register machine, which requires only two unbounded counters and a finite set of labeled instructions (INC and DEC operations).
+
+* **Mapping computational model to Jira**: Registers are represented by counts of linked issues (Bugs for register A, Tasks for register B), the program counter is encoded in an Epic's status, and the dispatch table consists of Automation rules that trigger on status changes.
+
+* **Working addition implementation**: A minimal example demonstrates adding two numbers (2+3=5) using workflow states (BACKLOG, TODO, DEV, PROD), two automation rules, and linked issues, with the Epic transitioning through states as the computation executes.
+
+* **Fibonacci optimization**: Using Jira's "Convert Issue Type" feature, a three-state Fibonacci generator is built that's more compact than pure Minsky operations, though it requires manual re-triggering after hitting Jira Cloud's chain-depth limit of 10.
+
+* **Practical implications**: The proof confirms engineering folklore and demonstrates that complex Jira automations are literally programs, not just configuration, making Jira a legitimate (if impractical) programming environment under standard Turing-completeness conventions.
+
+---
+
+### Jira 具有图灵完备性:在 Atlassian 自动化中构建 Minsky 机器
+
+* **图灵完备性证明**: 文章通过实现 Minsky 寄存器机提供了 Jira 自动化系统图灵完备的具体证明,该机器只需要两个无界计数器和有限的标记指令集(INC 和 DEC 操作)。
+
+* **计算模型映射到 Jira**: 寄存器由关联问题的计数表示(Bug 代表寄存器 A,Task 代表寄存器 B),程序计数器编码在 Epic 的状态中,调度表由在状态变化时触发的自动化规则组成。
+
+* **加法运算实现**: 一个最小示例演示了使用工作流状态(BACKLOG、TODO、DEV、PROD)、两条自动化规则和关联问题来计算两个数字相加(2+3=5),Epic 在计算执行时在各状态间转换。
+
+* **斐波那契优化**: 利用 Jira 的"转换问题类型"功能,构建了一个三状态斐波那契生成器,比纯 Minsky 操作更紧凑,但在达到 Jira Cloud 的链深度限制 10 后需要手动重新触发。
+
+* **实际意义**: 该证明确认了工程界的传说,并表明复杂的 Jira 自动化实际上就是程序,而不仅仅是配置,使 Jira 在标准图灵完备性约定下成为一个合法的(尽管不实用的)编程环境。
+
+**[Read Original / 阅读原文](https://seriot.ch/computation/jira.html)**
+
+<!-- [Title-Only] -->
+### Didgeridoo playing as alternative treatment for obstructive sleep apnea (2006)
+
+* Based on the title, this article likely explores an unconventional therapeutic approach to obstructive sleep apnea (OSA) using didgeridoo playing. The study probably investigates how the breathing techniques and muscle control required to play this traditional Australian wind instrument might strengthen upper airway muscles and reduce sleep apnea symptoms.
+* Why it might be interesting to readers: This represents a creative, non-invasive alternative to conventional OSA treatments like CPAP machines. The connection between musical practice and medical therapy is fascinating, and the 2006 publication date suggests this was pioneering research in exploring lifestyle interventions for sleep disorders.
+
+### 吹奏迪吉里杜管作为阻塞性睡眠呼吸暂停的替代疗法（2006）
+
+* 根据标题推测，这篇文章可能探讨了一种非常规的阻塞性睡眠呼吸暂停（OSA）治疗方法——演奏迪吉里杜管（澳大利亚原住民传统乐器）。研究可能调查了演奏这种管乐器所需的呼吸技巧和肌肉控制如何增强上呼吸道肌肉，从而减轻睡眠呼吸暂停症状。
+* 为何值得关注：这代表了一种创新的、非侵入性的 OSA 治疗替代方案，不同于传统的呼吸机（CPAP）治疗。音乐练习与医学治疗之间的联系非常引人入胜，而 2006 年的发表时间表明这是探索睡眠障碍生活方式干预的开创性研究。
+
+**[Read Original / 阅读原文](https://pmc.ncbi.nlm.nih.gov/articles/PMC1360393/)**
+
+### I Love My Bluetooth Keyboard: Three Reasons Why It's a Game-Changer
+
+* **Better texting experience**: Using a Bluetooth keyboard with a phone enables fast typing and easy copy/paste functionality without needing to carry a laptop or switch to Mac
+* **Distraction-free writing tool**: Typing on a phone's notes app with a keyboard creates a typewriter-like experience—harder to access distractions while retaining word processor features like editing and copy/paste
+* **Keyboard shortcuts on mobile**: Enabling Full Keyboard Access in iOS allows navigation between apps using keyboard shortcuts (especially Cmd+Space for search), making phone usage more efficient
+* **Practical setup**: The author uses a Logitech Pop keyboard and drafted this very post using the phone-keyboard combination during a 10-day trip to China
+
+### 我爱我的蓝牙键盘:改变使用体验的三大理由
+
+* **更好的短信体验**:在手机上使用蓝牙键盘可以快速打字并轻松复制粘贴,无需携带笔记本电脑或购买Mac
+* **无干扰写作工具**:用键盘在手机备忘录应用上打字创造了类似打字机的体验——更难接触到干扰源,同时保留文字处理器的编辑和复制粘贴功能
+* **手机键盘快捷键**:在iOS中启用"完全键盘访问"功能可以使用键盘快捷键在应用之间导航(特别是Cmd+Space搜索功能),让手机使用更高效
+* **实用配置**:作者使用罗技Pop键盘,并在中国十天旅行期间用手机-键盘组合撰写了这篇文章
+
+**[Read Original / 阅读原文](https://liquidbrain.net/blog/i-love-my-bluetooth-keyboard/)**
+
+### 🎬 Error Reactions by Language
+
+**Channel:** Sheryians Coding School
+
+* What the video covers: A humorous take on how developers react to errors in different programming languages
+* Key topics discussed: Programming language error handling, developer experiences, coding reality and frustrations across various languages
+* Why it's worth watching: Light-hearted, relatable content for programmers that captures the universal experience of debugging and the unique quirks of different programming languages through comedy
+
+---
+
+### 🎬 不同编程语言的报错反应
+
+**频道:** Sheryians Coding School
+
+* 视频内容概述: 以幽默的方式展现开发者在不同编程语言中遇到错误时的反应
+* 主要话题: 编程语言错误处理、开发者体验、各种语言中编码的真实情况和挫折感
+* 为何值得观看: 轻松幽默且引起共鸣的程序员内容,通过喜剧形式捕捉调试的普遍经历以及不同编程语言的独特怪癖
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OX4Tu7semWA)**
 
