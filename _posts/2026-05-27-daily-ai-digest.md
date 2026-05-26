@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 27, 2026"
 date: 2026-05-27
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -325,4 +325,265 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 轻松有趣的短视频内容,程序员都能产生共鸣,用有趣的方式捕捉了调试和处理错误的普遍经历
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=OX4Tu7semWA)**
+
+<!-- [Title-Only] -->
+### Chemistry Behind the Garden Grove Chemical Tank
+
+* Based on the title, this article likely examines the chemical properties and hazards of methyl methacrylate (MMA), probably in response to a specific incident involving a chemical tank in Garden Grove
+* This would be interesting to readers because it explains the science behind industrial chemical storage incidents, helping understand why certain chemicals require special handling and what risks they pose to communities
+
+### 加登格罗夫化学储罐背后的化学原理
+
+* 根据标题推测，本文可能分析了甲基丙烯酸甲酯（MMA）的化学性质和危险性，很可能是针对加登格罗夫发生的化学储罐事故
+* 值得关注的原因是它解释了工业化学品储存事故背后的科学原理，帮助读者理解为什么某些化学品需要特殊处理以及它们对社区构成的风险
+
+---
+
+*Note: This introduction is based solely on the article title and URL. The actual content may cover additional or different aspects of the topic.*
+
+*注：本简介仅基于文章标题和网址推测，实际内容可能涵盖该主题的其他方面。*
+
+**[Read Original / 阅读原文](https://www.science.org/content/blog-post/methyl-methacrylate-tank)**
+
+### Modern Pixel Fonts: Nostalgia Meets Functional Design
+
+* **Analog Mono** by Andrew Gleeson fixes the baseline issues of classic VCR OSD Mono, properly positioning descenders in letters like 'g', 'p', and 'y' that were awkwardly pulled up in 1990s hi-fi equipment displays
+* **Coral Pixels** by Kumiko Yoshida is a color font that intentionally includes colorful fringing effects—once an artifact of subpixel rendering, now a nostalgic design element evoking the 1990s-2000s aesthetic
+* **Two Slice** by Joseph Fatula pushes minimalism to the extreme with a font only 2 pixels tall that remains "somewhat readable"
+* **Geist Pixel** from Vercel positions itself as a production-ready system extension rather than a novelty font, emphasizing proper scaling, metrics compatibility, and typographic rigor
+* All these fonts are vector fonts designed to look like pixel fonts, addressing common production issues like viewport scaling, metric conflicts, and maintaining functionality alongside visual appeal
+
+### 现代像素字体：怀旧美学与功能设计的结合
+
+* **Analog Mono** 由 Andrew Gleeson 设计，修复了经典 VCR OSD Mono 字体的基线问题，正确定位了 'g'、'p'、'y' 等字母的下伸部分（这些在 1990 年代音响设备显示屏中被尴尬地上提）
+* **Coral Pixels** 由 Kumiko Yoshida 制作，是一款彩色字体，刻意保留了彩色边缘效果——这曾是亚像素渲染的副产物，如今成为唤起 1990-2000 年代怀旧感的设计元素
+* **Two Slice** 由 Joseph Fatula 创作，将极简主义推向极致，字体高度仅 2 像素却仍保持"一定可读性"
+* **Geist Pixel** 来自 Vercel，将自己定位为可用于生产环境的系统扩展而非噱头字体，强调适当的缩放、指标兼容性和排版严谨性
+* 这些字体都是矢量字体但设计成像素字体外观，解决了常见的生产问题，如视口缩放、指标冲突，在保持视觉吸引力的同时维持功能性
+
+**[Read Original / 阅读原文](https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/)**
+
+### How I Bypassed Adobe and Microsoft to Build a Git-Tracked Book Production Pipeline
+
+* **The Problem**: Author D.J. Speckhals struggled with maintaining multiple book formats (Word, InDesign, Calibre, Kindle Create) across print and ebook versions, requiring separate updates on different operating systems for every minor change.
+
+* **Initial Workflow**: Started with Microsoft Word as the source of truth, used Adobe InDesign for professional print PDFs, Calibre for EPUBs, and Kindle Create for Amazon's proprietary format—a fragmented, platform-dependent process.
+
+* **The Pivot**: Discovered Standard Ebooks' strict, opinionated EPUB production process with semantic markup and comprehensive linting tools that ensure compatibility and accessibility across all devices.
+
+* **New Source of Truth**: Switched from DOCX to LibreOffice ODT format with semantic paragraph and character styles (foreign languages, thoughts, emphasis, etc.) that enable better accessibility and precise formatting control.
+
+* **Custom Conversion Pipeline**: Built Python scripts using lxml to parse ODT files and convert them to both XHTML (for Standard Ebooks-compliant EPUBs) and LaTeX (for print PDFs), eliminating dependency on proprietary software.
+
+* **LaTeX for Print**: Replaced Adobe InDesign with LaTeX for print production, achieving nearly indistinguishable typographic quality with advanced microtypography features while enabling version control and automation.
+
+* **Benefits**: The entire book production pipeline is now Git-tracked, open-source, platform-independent, and automated—a single ODT source file generates both professional print PDFs and pristine EPUBs through custom conversion scripts.
+
+### 我如何绕过 Adobe 和 Microsoft 构建 Git 追踪的图书制作流程
+
+* **问题所在**：作者 D.J. Speckhals 需要维护多种图书格式(Word、InDesign、Calibre、Kindle Create)的印刷版和电子书版本,每次微小修改都需要在不同操作系统上分别更新。
+
+* **初始工作流**：以 Microsoft Word 作为真实来源,使用 Adobe InDesign 制作专业印刷 PDF,用 Calibre 生成 EPUB,用 Kindle Create 制作亚马逊专有格式——这是一个分散且依赖平台的流程。
+
+* **转折点**：发现了 Standard Ebooks 严格且固执己见的 EPUB 制作流程,采用语义标记和全面的代码检查工具,确保在所有设备上的兼容性和可访问性。
+
+* **新的真实来源**：从 DOCX 切换到 LibreOffice ODT 格式,使用语义段落和字符样式(外语、思想、强调等),实现更好的可访问性和精确的格式控制。
+
+* **自定义转换管道**：使用 Python 和 lxml 构建脚本解析 ODT 文件,将其转换为 XHTML(用于符合 Standard Ebooks 标准的 EPUB)和 LaTeX(用于印刷 PDF),消除了对专有软件的依赖。
+
+* **LaTeX 用于印刷**：用 LaTeX 替代 Adobe InDesign 进行印刷制作,实现几乎无法区分的排版质量和高级微排版功能,同时支持版本控制和自动化。
+
+* **优势总结**：整个图书制作流程现已实现 Git 追踪、开源、跨平台和自动化——单一 ODT 源文件通过自定义转换脚本生成专业印刷 PDF 和精美 EPUB。
+
+**[Read Original / 阅读原文](https://www.djspeckhals.com/posts/2026-05-22-how-i-bypassed-adobe-and-microsoft-to-build-a-git-tracked-book-production-pipeline/)**
+
+### Knowledge Work Plugins - Turn Claude into a Specialist for Your Team
+
+* **What it does**: Open-source plugin collection that transforms Claude into a role-specific assistant for knowledge workers, integrating with your company's tools, workflows, and terminology through Claude Cowork and Claude Code.
+
+* **Key features**: 11 pre-built plugins covering sales, customer support, product management, marketing, legal, finance, data analysis, and more; connects to 30+ tools (Slack, Notion, HubSpot, Jira, Snowflake, etc.); customizable skills, slash commands, and connectors; file-based architecture requiring no code or infrastructure.
+
+* **Why it's notable**: Anthropic's official plugin marketplace makes AI assistants truly company-aware by encoding domain expertise and connecting to real business tools. The simple markdown/JSON structure lets teams customize workflows without engineering resources, turning generic AI into a specialist that understands your specific processes, terminology, and tool stack.
+
+---
+
+### Knowledge Work Plugins - 让 Claude 成为你团队的专业助手
+
+* **功能介绍**: Anthropic 开源的插件集合,通过 Claude Cowork 和 Claude Code 将 Claude 转变为针对特定角色的知识工作助手,可集成公司工具、工作流程和专业术语。
+
+* **主要特点**: 提供 11 个预构建插件,涵盖销售、客户支持、产品管理、营销、法务、财务、数据分析等领域;连接 30 多种工具(Slack、Notion、HubSpot、Jira、Snowflake 等);可自定义技能、斜杠命令和连接器;基于文件的架构,无需编码或基础设施。
+
+* **为何值得关注**: Anthropic 官方插件市场通过编码领域专业知识并连接真实业务工具,让 AI 助手真正理解公司运作。简单的 Markdown/JSON 结构让团队无需工程资源即可自定义工作流程,将通用 AI 转变为理解你特定流程、术语和工具栈的专业助手。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/knowledge-work-plugins)**
+
+I'll analyze the repository and create a bilingual summary.
+
+### Anthropic Cybersecurity Skills - The Largest Open-Source Cybersecurity Skills Library for AI Agents
+
+* **What it does**: Provides 754 structured, production-grade cybersecurity skills that enable AI agents to perform security analysis, threat hunting, incident response, and penetration testing with the expertise of a senior analyst. Each skill follows the agentskills.io open standard with YAML frontmatter for discovery and structured Markdown for execution workflows.
+
+* **Key features**: 
+  - 754 skills across 26 security domains (cloud security, threat hunting, malware analysis, digital forensics, etc.)
+  - Unified mapping to 5 industry frameworks: MITRE ATT&CK v18, NIST CSF 2.0, MITRE ATLAS v5.4, MITRE D3FEND v1.3, and NIST AI RMF 1.0
+  - Progressive disclosure architecture (30 tokens to scan, 500-2000 tokens to fully load)
+  - Compatible with 26+ AI platforms including Claude Code, GitHub Copilot, Cursor, Gemini CLI
+  - Apache 2.0 licensed for commercial use
+
+* **Why it's notable**: This is the only open-source skills library that maps every skill to all five major security frameworks simultaneously, addressing the 4.8 million unfilled cybersecurity roles globally by giving AI agents structured practitioner workflows rather than just scripts or checklists. It transforms generic LLMs into capable security analysts with expert-level decision-making capabilities.
+
+---
+
+### Anthropic Cybersecurity Skills - 面向 AI 智能体的最大开源网络安全技能库
+
+* **功能介绍**: 提供 754 个结构化的生产级网络安全技能,使 AI 智能体能够以高级分析师的专业水平执行安全分析、威胁狩猎、事件响应和渗透测试。每个技能都遵循 agentskills.io 开放标准,使用 YAML 前置元数据进行发现,使用结构化 Markdown 描述执行工作流。
+
+* **主要特点**:
+  - 涵盖 26 个安全领域的 754 个技能(云安全、威胁狩猎、恶意软件分析、数字取证等)
+  - 统一映射到 5 个行业框架:MITRE ATT&CK v18、NIST CSF 2.0、MITRE ATLAS v5.4、MITRE D3FEND v1.3 和 NIST AI RMF 1.0
+  - 渐进式披露架构(扫描仅需 30 个 token,完整加载需 500-2000 个 token)
+  - 兼容 26+ 个 AI 平台,包括 Claude Code、GitHub Copilot、Cursor、Gemini CLI
+  - Apache 2.0 许可证,可商用
+
+* **为何值得关注**: 这是唯一一个将每个技能同时映射到所有五个主要安全框架的开源技能库,通过为 AI 智能体提供结构化的实践者工作流(而非仅仅是脚本或检查清单),解决全球 480 万网络安全岗位空缺问题。它将通用 LLM 转变为具备专家级决策能力的安全分析师。
+
+**[View Repository / 查看仓库](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)**
+
+### wechatpay - WeChat Bill Analysis Tool with Visual Analytics
+
+* **What it does**: A desktop application built with Electron that analyzes WeChat Pay transaction history exported from WeChat. It parses Excel bill files and provides comprehensive visualizations of spending patterns, income/expense tracking, merchant analysis, and financial trends.
+
+* **Key features**: Multi-dimensional analysis including overview statistics, payment method distribution, merchant rankings, time-based trend analysis (daily/weekly/monthly), transaction search and filtering, and Excel report export. Supports Chart.js visualizations with bar charts, pie charts, and line graphs for intuitive financial insights.
+
+* **Why it's notable**: Addresses a real need for Chinese users to understand their WeChat spending habits with a privacy-first approach—all data processing happens locally without any server uploads. With 758 stars, it's gaining traction as a practical personal finance tool for the massive WeChat Pay user base. The detailed documentation includes step-by-step instructions for exporting WeChat bills, making it accessible to non-technical users.
+
+---
+
+### wechatpay - 微信账单可视化分析工具
+
+* **功能介绍**: 基于 Electron 开发的桌面应用，用于分析从微信导出的支付账单。解析 Excel 账单文件，提供消费模式、收支追踪、商户分析和财务趋势的全面可视化分析。
+
+* **主要特点**: 多维度分析功能，包括数据概览统计、支付方式分布、商户消费排名、时间趋势分析（按日/周/月）、交易明细搜索筛选，以及 Excel 报告导出。集成 Chart.js 图表库，提供柱状图、饼图、折线图等直观的财务洞察可视化。
+
+* **为何值得关注**: 解决了中国用户了解微信消费习惯的实际需求，采用隐私优先设计——所有数据处理完全在本地进行，不上传任何信息到服务器。获得 758 星标，作为面向庞大微信支付用户群体的实用个人财务工具正在获得关注。详细的文档包含微信账单导出的分步说明，让非技术用户也能轻松使用。
+
+**[View Repository / 查看仓库](https://github.com/run-liyi/wechatpay)**
+
+### Kimi Code CLI - AI Coding Agent That Runs in Your Terminal
+
+* **What it does**: An AI-powered coding agent that operates directly in your terminal, capable of reading/editing code, executing shell commands, searching files, fetching web pages, and autonomously deciding next steps based on feedback. Works with Moonshot AI's Kimi models and other compatible providers.
+
+* **Key features**: 
+  - Single-binary distribution with blazing-fast startup (no Node.js required)
+  - Purpose-built terminal UI for long agent sessions
+  - Video input support for visual context
+  - AI-native MCP (Model Context Protocol) configuration
+  - Subagents for parallel focused work (coder, explore, plan)
+  - Lifecycle hooks for automation and safety gates
+
+* **Why it's notable**: Represents a new generation of autonomous coding agents with a polished developer experience. The single-binary approach eliminates installation friction, while features like video input and conversational MCP configuration show thoughtful innovation in how developers interact with AI assistants. Strong early traction (708 stars) suggests demand for terminal-native AI coding tools.
+
+---
+
+### Kimi Code CLI - 运行在终端中的 AI 编码代理
+
+* **功能介绍**: 一个在终端中运行的 AI 编码代理,能够读写代码、执行 Shell 命令、搜索文件、抓取网页,并根据反馈自主决定下一步操作。支持 Moonshot AI 的 Kimi 模型及其他兼容提供商。
+
+* **主要特点**:
+  - 单一二进制文件分发,启动速度极快(无需 Node.js)
+  - 专为长时间代理会话设计的终端界面
+  - 支持视频输入提供可视化上下文
+  - AI 原生的 MCP(模型上下文协议)配置
+  - 子代理支持并行专注工作(编码、探索、规划)
+  - 生命周期钩子用于自动化和安全控制
+
+* **为何值得关注**: 代表了新一代自主编码代理,提供精致的开发者体验。单一二进制安装方式消除了部署障碍,视频输入和对话式 MCP 配置等特性展现了在开发者与 AI 助手交互方式上的创新思考。早期获得的关注度(708 星)表明市场对终端原生 AI 编码工具的需求强劲。
+
+**[View Repository / 查看仓库](https://github.com/MoonshotAI/kimi-code)**
+
+### 🎬 The cultural transformations in Africa and Eurasia were linked - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses genetic evidence revealing connections between major cultural transformations across Africa and Eurasia, exploring how ancient population movements and interactions shaped civilizations on both continents
+* Key topics discussed: Ancient DNA findings, population genetics, migration patterns between Africa and Eurasia, cultural diffusion vs. independent development, archaeological correlations with genetic data
+* Why it's worth watching: Offers cutting-edge insights from one of the world's leading ancient DNA researchers, challenging traditional views of isolated continental development and revealing the interconnected nature of human cultural evolution
+
+### 🎬 非洲和欧亚大陆的文化变革存在关联 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 讨论遗传学证据如何揭示非洲和欧亚大陆重大文化变革之间的联系,探索古代人口迁徙和互动如何塑造两大洲的文明
+* 主要话题: 古代 DNA 研究发现、群体遗传学、非洲与欧亚之间的迁徙模式、文化传播与独立发展的对比、考古学与遗传数据的关联
+* 为何值得观看: 来自世界顶尖古代 DNA 研究者的前沿见解,挑战大陆孤立发展的传统观点,揭示人类文化演化的互联本质
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UN_zKhmFHjs)**
+
+### 🎬 Learn coding like a game #coding #programming #python
+**Channel:** SetupsAI
+
+* What the video covers: A gamified approach to learning programming, specifically Python, making the learning process more engaging and interactive
+* Key topics discussed: Coding fundamentals through game-like mechanics, Python programming basics, interactive learning methods
+* Why it's worth watching: Ideal for beginners who find traditional coding tutorials dry or intimidating; demonstrates how gamification can make programming more accessible and fun
+
+---
+
+### 🎬 像玩游戏一样学编程 #coding #programming #python
+**频道:** SetupsAI
+
+* 视频内容概述: 通过游戏化方式学习编程，特别是 Python，让学习过程更具吸引力和互动性
+* 主要话题: 通过游戏机制学习编程基础、Python 编程入门、互动式学习方法
+* 为何值得观看: 非常适合觉得传统编程教程枯燥或有畏难情绪的初学者；展示了游戏化如何让编程学习变得更易上手且充满乐趣
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=147Id-x25k8)**
+
+### 🎬 How to debug your vibe coded app
+
+**Channel:** Yashu Developer
+
+* Covers debugging techniques for applications built with vibe coding approaches
+* Key topics include debugging strategies for web development projects, particularly those using modern JavaScript frameworks
+* Worth watching for developers looking to improve their debugging workflow and troubleshoot issues in rapidly prototyped or AI-assisted code, with practical tips applicable to frontend development
+
+### 🎬 如何调试你的 vibe 编码应用
+
+**频道:** Yashu Developer
+
+* 介绍针对 vibe 编码方式构建的应用程序的调试技术
+* 主要话题包括 Web 开发项目的调试策略,特别是使用现代 JavaScript 框架的项目
+* 适合希望改进调试工作流程的开发者观看,提供实用技巧来排查快速原型或 AI 辅助代码中的问题,对前端开发具有实际应用价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qufhLptFGLw)**
+
+### 🎬 Antigravity 2.0 Update - How to Use the IDE Again
+**Channel:** Gravity Coding
+
+* What the video covers: A troubleshooting guide for the IDE missing issue that appeared after the Antigravity 2.0 update
+* Key topics discussed: Step-by-step solutions to restore IDE functionality, common user confusion points, and workarounds for the latest update
+* Why it's worth watching: Essential for Antigravity users experiencing IDE problems after updating to version 2.0, provides practical fixes to get back to coding quickly
+
+### 🎬 Antigravity 2.0 更新 - 如何重新使用 IDE
+**频道:** Gravity Coding
+
+* 视频内容概述: 针对 Antigravity 2.0 更新后 IDE 丢失问题的故障排除指南
+* 主要话题: 恢复 IDE 功能的分步解决方案、用户常见困惑点以及最新更新的变通方法
+* 为何值得观看: 对于更新到 2.0 版本后遇到 IDE 问题的 Antigravity 用户来说必看,提供实用修复方案以快速恢复编码工作
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=pnDMU1AnnpU)**
+
+### 🎬 Want to learn SQL in Tamil for FREE?
+**Channel:** Code Your Future
+
+* A free SQL course taught in Tamil, covering basics to advanced concepts
+* Step-by-step learning approach designed for easy comprehension
+* Ideal for Tamil-speaking learners who want to master database querying without language barriers
+* Accessible by commenting "SQL" to receive the full course materials
+
+### 🎬 想免费学习泰米尔语SQL课程？
+**频道:** Code Your Future
+
+* 提供从基础到高级的泰米尔语SQL免费课程
+* 采用循序渐进的教学方式，易于理解
+* 专为泰米尔语使用者设计，消除语言学习障碍，掌握数据库查询技能
+* 只需评论"SQL"即可获取完整课程资源
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-BqM3JDqB7s)**
 
