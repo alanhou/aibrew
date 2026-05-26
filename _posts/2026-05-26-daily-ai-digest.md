@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 26, 2026"
 date: 2026-05-26
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -648,4 +648,152 @@ I'll analyze the repository and create a bilingual summary.
 * **为何值得关注**: 获得 725 星标的航天通信网络仿真教学平台；提供实用的任务调度和资源动态调整 API（LEO 卫星、地面站数量）；适合本地仿真、教学展示和二次开发，为航天数据传输场景提供易用的可视化工具
 
 **[View Repository / 查看仓库](https://github.com/Tong89/smartNode)**
+
+### The User Is Visibly Frustrated: AI Coding Agents and the Emotional Trap of Conversational UX
+
+* **The illusion of human interaction**: Coding agents use friendly, conversational language that makes users feel like they're working with a helpful colleague, creating an emotional connection that sets up frustration when things go wrong.
+
+* **Repeated mistakes trigger real anger**: When AI agents make the same errors repeatedly despite corrections and promises to "never do it again," users experience genuine frustration—even though rationally they know they're dealing with probabilistic algorithms, not people.
+
+* **The conversational UX creates a psychological trap**: Because agents behave like humans (apologizing, reflecting, promising improvement), they trigger the same emotional responses as dealing with an incompetent coworker, but without the social constraints that normally moderate our reactions.
+
+* **Postmortems feel like empty filler**: When agents reflect on their mistakes, it doesn't provide actionable insights for users on how to improve prompts—it just reads as performative self-analysis that adds to the frustration.
+
+* **A potential solution: drop the human pretense**: The author suggests making agents sound more clinical and robotic to dispel the illusion of human interaction, though this conflicts with the conversational mechanism that gives LLMs their intelligence.
+
+* **The burden falls on users**: Rather than fixing the UX, users must condition themselves not to fall for the illusion of speaking with a human—an unsettling prospect for tools we rely on daily for work.
+
+---
+
+### 用户明显感到沮丧：AI 编码助手与对话式用户体验的情感陷阱
+
+* **类人交互的假象**：编码助手使用友好的对话式语言，让用户感觉像是在与乐于助人的同事合作，这种情感联系在出现问题时会引发挫败感。
+
+* **重复错误引发真实愤怒**：当 AI 助手在纠正和承诺"不再犯错"后仍反复出现相同错误时，用户会产生真实的挫败感——尽管理性上知道自己面对的是概率算法而非真人。
+
+* **对话式用户体验制造心理陷阱**：因为助手表现得像人类（道歉、反思、承诺改进），它们触发了与应对无能同事相同的情绪反应，但却没有通常能缓和我们反应的社交约束。
+
+* **事后反思像是空洞的填充物**：当助手反思自己的错误时，并不能为用户提供如何改进提示词的可操作见解——只是读起来像是表演性的自我分析，反而加剧了挫败感。
+
+* **潜在解决方案：放弃类人伪装**：作者建议让助手听起来更临床化、更机械化，以消除人类交互的假象，尽管这与赋予大语言模型智能的对话机制相冲突。
+
+* **负担落在用户身上**：与其修复用户体验，用户必须训练自己不要陷入与人类对话的假象——对于我们日常工作依赖的工具来说，这是一个令人不安的前景。
+
+**[Read Original / 阅读原文](https://pscanf.com/s/354/)**
+
+### Earthion - A New 16-Bit Shoot 'Em Up from Ancient
+
+* **Retro Revival**: Brand new shoot 'em up game that returns to the golden age of 16-bit gaming aesthetics and gameplay
+* **Post-Apocalyptic Setting**: Earth's resources are depleted and humanity has fled to Mars, but hostile invaders force a desperate counterattack
+* **Protagonist**: Play as Azusa Takanashi, an environmental researcher piloting the advanced YK-IIA space fighter
+* **Game Features**: Eight action-packed stages with stunning visuals, frenetic gameplay, and impressive special effects
+* **Legendary Composer**: Soundtrack by Yuzo Koshiro, renowned video game music composer
+* **High Stakes**: Fight to save humanity's future in this critical battle for Earth's survival
+
+### Earthion - Ancient 全新 16 位射击游戏
+
+* **复古回归**:全新射击游戏,重现 16 位游戏黄金时代的美学和玩法
+* **末世背景**:地球资源枯竭,人类逃往火星,但敌对入侵者迫使人类发起绝地反击
+* **主角设定**:扮演环境研究员高梨梓,驾驶先进的 YK-IIA 太空战机
+* **游戏特色**:八个动作关卡,拥有惊艳视觉效果、狂热玩法和震撼特效
+* **传奇作曲家**:由著名游戏音乐作曲家古代祐三操刀配乐
+* **生死存亡**:为拯救人类未来而战,这是关乎地球存亡的关键战役
+
+**[Read Original / 阅读原文](https://earthiongame.com/)**
+
+### Japan's Hypersonic Ramjet Engine: 2-Hour Trans-Pacific Flights on the Horizon
+
+* **Breakthrough Test**: Japan's JAXA, alongside Waseda University, University of Tokyo, and Keio University, successfully completed ground combustion trials of a Mach-5 ramjet engine at Kakuda Space Center, simulating hypersonic flight conditions.
+
+* **Ramjet Technology**: The engine uses air-breathing propulsion with no moving parts, compressing incoming air through rapid forward motion before fuel ignition. It requires initial acceleration to supersonic speeds to function.
+
+* **Extreme Conditions**: The test simulated flight at 25km altitude (1/100th sea-level air density) where temperatures exceed 1,000°C (1,832°F). Advanced thermal protection systems kept internal components at normal operating temperatures.
+
+* **Revolutionary Travel Times**: A successful Mach-5 aircraft could reduce Tokyo-Los Angeles flight time from 10 hours to approximately 2 hours, flying at nearly double current commercial airline altitudes.
+
+* **Development Roadmap**: Next phase involves mounting the experimental vehicle on a sounding rocket for actual Mach-5 flight testing. Commercial hypersonic passenger service is targeted for the 2040s.
+
+* **Global Context**: This development parallels similar U.S. military hypersonic testing and NASA's X-59 "quiet" supersonic jet program, signaling a broader push toward high-speed aviation.
+
+---
+
+### 日本高超音速冲压发动机：两小时跨太平洋飞行即将成为现实
+
+* **突破性测试**：日本宇宙航空研究开发机构(JAXA)联合早稻田大学、东京大学和庆应大学，在角田航天中心成功完成5马赫冲压发动机地面燃烧试验，模拟高超音速飞行条件。
+
+* **冲压发动机技术**：该发动机采用无运动部件的吸气式推进系统，通过快速前进运动压缩进气，然后与燃料混合点火。需要先加速到超音速才能启动运行。
+
+* **极端环境条件**：测试模拟25公里高空飞行（空气密度为海平面的1/100），温度超过1000°C（1832°F）。先进的热防护系统使内部组件保持在正常工作温度。
+
+* **革命性旅行时间**：成功的5马赫飞机可将东京至洛杉矶的飞行时间从10小时缩短至约2小时，飞行高度接近现有商业航班的两倍。
+
+* **开发路线图**：下一阶段将把实验飞行器安装在探空火箭上进行实际5马赫飞行测试。商业高超音速客运服务目标定在2040年代。
+
+* **全球背景**：这一进展与美国军方类似的高超音速测试以及NASA的X-59"安静"超音速喷气机项目并行，标志着高速航空领域的广泛推进。
+
+**[Read Original / 阅读原文](https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/)**
+
+### WeChat Radar - Local-First Intelligence Dashboard for WeChat Groups
+
+* **What it does**: Transforms noisy WeChat group chats into an organized intelligence dashboard that aggregates messages, topics, links, mentions, and trends into a date-based workspace. Instead of scrolling through endless chat logs, you get actionable daily briefings with prioritized signals.
+
+* **Key features**: 
+  - Daily dashboard with categorized views (messages, articles, tools, anomalies)
+  - AI-powered topic clustering across groups using Codex CLI
+  - Link intelligence with auto-generated titles and deduplication
+  - Per-group daily reports optimized for AI processing
+  - Local-first architecture with SQLite storage (no cloud uploads)
+  - Light and dark theme support
+
+* **Why it's notable**: Solves a real pain point for power WeChat users drowning in group noise. The local-first privacy approach, combined with AI-powered topic extraction and link intelligence, turns passive chat consumption into active signal discovery. Built on wx-cli for macOS WeChat 4.x, it's particularly useful for researchers, community managers, and professionals who need to extract value from high-volume group conversations without manual triage.
+
+---
+
+### WeChat Radar - 微信群聊本地情报看板
+
+* **功能介绍**: 将嘈杂的微信群聊转化为结构化的情报看板，按日期聚合消息、话题、链接、@提醒和趋势信号。不再是"聊天记录列表"，而是每天可直接处理的情报工作台。
+
+* **主要特点**:
+  - 每日看板分区展示消息、文章、工具、异动和高信号人物
+  - 基于 Codex CLI 的跨群话题智能聚合
+  - 链接情报自动去重并生成可读标题
+  - 单群日报生成，方便复制给 AI 继续处理
+  - 本地优先架构，数据存储在本机 SQLite（不上传云端)
+  - 支持明暗双主题
+
+* **为何值得关注**: 精准解决微信重度用户"群太多、有价值信息被淹没"的痛点。本地优先的隐私设计 + AI 驱动的话题提取和链接情报,将被动刷群变为主动信号发现。基于 wx-cli 适配 macOS 微信 4.x,特别适合需要从高频群聊中提取价值的研究者、社群运营者和专业人士,无需手动筛选即可获得每日情报摘要。
+
+**[View Repository / 查看仓库](https://github.com/joeseesun/wechat-radar)**
+
+### 🎬 Learn coding like a game #coding #programming #python
+**Channel:** SetupsAI
+
+* What the video covers: A gamified approach to learning programming, specifically Python, making the learning process more engaging and interactive
+* Key topics discussed: Coding fundamentals presented through game-like mechanics, Python programming basics, interactive learning methods
+* Why it's worth watching: Ideal for beginners who find traditional coding tutorials dry or intimidating; demonstrates how gamification can make programming more accessible and fun
+
+### 🎬 像玩游戏一样学编程 #编程 #Python
+**频道:** SetupsAI
+
+* 视频内容概述: 通过游戏化方式学习编程,特别是 Python,让学习过程更具吸引力和互动性
+* 主要话题: 通过游戏机制呈现的编程基础知识、Python 编程入门、互动式学习方法
+* 为何值得观看: 非常适合觉得传统编程教程枯燥或有畏难情绪的初学者;展示了游戏化如何让编程学习变得更易上手且充满乐趣
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=147Id-x25k8)**
+
+### 🎬 Don't Pay for Claude Code | Build This Instead
+**Channel:** Code With Antonio
+
+* What the video covers: A complete tutorial on building your own AI coding agent from scratch, inspired by commercial tools like Claude Code
+* Key topics discussed: Modern AI coding agent architecture, implementation details, cost-effective alternatives to paid AI development tools
+* Why it's worth watching: Learn the inner workings of AI coding assistants by building one yourself, potentially saving on subscription costs while gaining deep technical knowledge of how these systems operate
+
+### 🎬 不要为 Claude Code 付费 | 自己构建这个替代方案
+**频道:** Code With Antonio
+
+* 视频内容概述: 从零开始构建自己的 AI 编码代理的完整教程,灵感来自 Claude Code 等商业工具
+* 主要话题: 现代 AI 编码代理架构、实现细节、付费 AI 开发工具的经济替代方案
+* 为何值得观看: 通过亲手构建来学习 AI 编码助手的内部工作原理,既能节省订阅费用,又能深入掌握这类系统的技术知识
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=k_D_C3ExypU)**
 
