@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 26, 2026"
 date: 2026-05-26
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -574,4 +574,78 @@ I'll analyze the repository and create a bilingual summary.
 * 为何值得观看: 快速了解 Claude 等 AI 工具如何简化开发工作,适合探索 AI 编程助手的开发者观看
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=QGNw9QZHsAA)**
+
+### Using AI to Write Better Code More Slowly
+
+* **AI coding isn't just for speed** – LLMs can be used to write high-quality code deliberately, not just to generate low-quality code quickly
+* **LLMs excel at bug detection** – Models like Claude and GPT are highly effective at finding bugs when systematically applied to codebases
+* **Multi-model review reduces false positives** – Running multiple AI models (Claude sub-agent, Codex, Cursor Bugbot) on PR reviews and cross-validating their findings minimizes hallucinations
+* **Prioritize bugs by severity** – Focus on fixing critical and high-priority bugs first, skip low-value fixes, and abandon PRs with fundamentally flawed approaches
+* **Slower development improves codebase health** – This method often uncovers pre-existing bugs and leads to writing tests, improving overall code quality rather than just shipping features fast
+* **Deep understanding over raw productivity** – Use AI to explain PRs, generate documentation with Mermaid charts, and thoroughly understand code before merging, prioritizing quality over lines-of-code metrics
+
+### 用 AI 更慢地编写更好的代码
+
+* **AI 编程不只是为了速度** – 大语言模型可以用来有意识地编写高质量代码,而不仅仅是快速生成低质量代码
+* **LLM 擅长检测错误** – 像 Claude 和 GPT 这样的模型在系统性地应用于代码库时,能够高效地发现 bug
+* **多模型审查减少误报** – 在 PR 审查中运行多个 AI 模型(Claude 子代理、Codex、Cursor Bugbot)并交叉验证其发现,可以最大限度地减少幻觉
+* **按严重程度优先处理 bug** – 首先修复关键和高优先级的 bug,跳过低价值的修复,放弃存在根本性缺陷的 PR
+* **较慢的开发改善代码库健康** – 这种方法通常会发现预先存在的 bug,并促使编写测试,提高整体代码质量,而不仅仅是快速交付功能
+* **深入理解胜过原始生产力** – 使用 AI 解释 PR、生成带有 Mermaid 图表的文档,在合并前彻底理解代码,优先考虑质量而非代码行数指标
+
+**[Read Original / 阅读原文](https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/)**
+
+### Walking Boosts Creative Thinking, Research Shows
+
+* **Walking enhances creativity**: Stanford University research with 176 participants found that walking consistently produced more creative responses compared to sitting, with 81-100% of walkers showing improved creative thinking across different experiments.
+* **Divergent vs. convergent thinking**: Walking excelled at tasks requiring imagination and free-flowing thought (like generating alternative uses for objects), but walkers performed slightly worse on focused, single-answer problems.
+* **Indoor and outdoor walking both work**: The creative boost came from walking itself, not from being outdoors—treadmill walkers showed similar improvements to outdoor walkers, while wheelchair users outdoors did not.
+* **Residual creative effect**: Even after sitting down post-walk, participants maintained some creative advantage, suggesting walking before meetings requiring innovation can be beneficial.
+* **Simple workplace intervention**: Unlike demanding 30-minute runs, a simple walk offers an accessible way to temporarily improve creative thinking and can be easily incorporated into work routines.
+
+### 研究发现：散步比久坐更能激发创造力
+
+* **散步显著提升创造力**：斯坦福大学对176名参与者的研究发现，散步者在创造性思维测试中的表现持续优于久坐者，不同实验中有81-100%的散步者展现出更强的创造力。
+* **发散思维与聚合思维的差异**：散步在需要想象力和自由思考的任务中表现出色（如为常见物品想出替代用途），但在需要专注、单一答案的问题上表现略逊一筹。
+* **室内外散步效果相当**：创造力提升源于散步本身而非户外环境——跑步机上散步与户外散步效果相似，而坐轮椅在户外的人则没有这种效果。
+* **创造力的残留效应**：散步后即使坐下，参与者仍保持一定的创造力优势，这表明在需要创新的会议前散步同样有益。
+* **简单的职场干预方式**：与要求30分钟跑步不同，简单的散步提供了一种易于实现的方式来暂时提升创造性思维，可轻松融入工作日常。
+
+**[Read Original / 阅读原文](https://www.apa.org/news/press/releases/2014/04/creativity-walk)**
+
+### How Shamir's Secret Sharing Works
+
+* **Core concept**: Adi Shamir (the S in RSA) published a method in 1979 to split secrets into pieces where a threshold number can recover it, while fewer pieces reveal absolutely nothing
+* **Two-point threshold**: Uses a straight line - the secret is where it crosses the y-axis, each person gets one point on the line, and any two points determine the line and reveal the secret
+* **Higher thresholds**: Require curves with more bend - a parabola needs 3 points, a cubic needs 4 points; generally, k shares require a polynomial of degree k-1
+* **Information-theoretic security**: With fewer than the threshold shares, every possible secret remains equally likely - it's not just hard to crack, it's mathematically impossible to learn anything
+* **Real-world application**: Used in Ente's Legacy Kit for account recovery, where cards reconstruct a secret locally that participates in server-mediated recovery, allowing revocation and avoiding permanent liability
+* **Key advantage**: Enables scenarios like requiring 3 of 5 company officers for master keys, or family account recovery needing multiple envelopes, without single points of failure
+
+### Shamir 秘密共享的工作原理
+
+* **核心概念**: Adi Shamir(RSA 中的 S)于 1979 年发布了一种方法,将秘密分割成多个片段,达到阈值数量可以恢复秘密,而少于阈值则完全无法获取任何信息
+* **两点阈值**: 使用直线 - 秘密是直线与 y 轴的交点,每人获得直线上的一个点,任意两点可以确定直线并揭示秘密
+* **更高阈值**: 需要更多弯曲的曲线 - 抛物线需要 3 个点,三次曲线需要 4 个点;一般来说,k 个份额需要 k-1 次多项式
+* **信息论安全性**: 少于阈值的份额时,所有可能的秘密仍然等概率 - 这不仅仅是难以破解,而是数学上不可能获取任何信息
+* **实际应用**: 用于 Ente 的 Legacy Kit 账户恢复功能,卡片在本地重建一个秘密,该秘密参与服务器中介的恢复过程,允许撤销并避免永久责任
+* **关键优势**: 实现了诸如需要 5 名公司高管中的 3 人才能使用主密钥,或家庭账户恢复需要多个信封的场景,且没有单点故障
+
+**[Read Original / 阅读原文](https://ente.com/blog/how-shamirs-secret-sharing-works/)**
+
+### SmartNode - Space-Based Intelligent Relay Simulation Platform
+
+* **What it does**: A visualization and simulation platform for space-based data relay scenarios, demonstrating coordination between satellites, ground stations, relay links, and content-driven task scheduling
+* **Key features**: 3D spatial situation display, data relay task submission, real-time resource monitoring (satellites, ground stations, relay resources), resource utilization statistics, frontend-backend separation architecture with open API and no authentication required
+* **Why it's notable**: Provides an accessible educational and development platform for simulating satellite communication networks with 725 stars; offers practical APIs for task scheduling and dynamic resource adjustment (LEO satellites, ground stations); suitable for teaching, local simulation, and secondary development in aerospace data transmission scenarios
+
+---
+
+### 天基智枢 SmartNode - 天基数据中继仿真平台
+
+* **功能介绍**: 面向天基数据回传场景的可视化仿真平台，展示卫星、地面站、中继链路和内容驱动任务调度之间的协同关系
+* **主要特点**: 三维空间态势展示、数据回传任务提交、卫星/地面站/中继资源实时状态监测、资源利用率统计、前后端分离架构、开放 API 无需密码登录
+* **为何值得关注**: 获得 725 星标的航天通信网络仿真教学平台；提供实用的任务调度和资源动态调整 API（LEO 卫星、地面站数量）；适合本地仿真、教学展示和二次开发，为航天数据传输场景提供易用的可视化工具
+
+**[View Repository / 查看仓库](https://github.com/Tong89/smartNode)**
 
