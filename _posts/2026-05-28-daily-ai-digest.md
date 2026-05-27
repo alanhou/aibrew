@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 28, 2026"
 date: 2026-05-28
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -283,4 +283,234 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 非常适合觉得传统编程教程枯燥或有畏难情绪的初学者;展示了游戏化如何让编程学习变得更易上手且充满乐趣
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=147Id-x25k8)**
+
+### YouTube Introduces Automatic AI Content Detection for Creators
+
+* **Automatic AI labeling launches May 2026**: YouTube will use internal signals to automatically detect and label realistic AI-generated content when creators don't manually disclose it
+* **Creators retain control**: If content is incorrectly flagged as AI-generated, creators can update the disclosure status in YouTube Studio
+* **Permanent disclosure exceptions**: Labels cannot be removed for content created with YouTube's AI tools (Veo, Dream Screen) or content containing C2PA metadata indicating full generative AI creation
+* **Balancing automation and transparency**: The system aims to make AI disclosure more seamless and reliable while keeping creators responsible for accurate labeling
+
+### YouTube 为创作者推出自动 AI 内容检测功能
+
+* **2026 年 5 月推出自动 AI 标签**：当创作者未手动披露时，YouTube 将使用内部信号自动检测并标记逼真的 AI 生成内容
+* **创作者保留控制权**：如果内容被错误标记为 AI 生成，创作者可以在 YouTube 工作室中更新披露状态
+* **永久披露例外情况**：使用 YouTube AI 工具（Veo、Dream Screen）创建的内容或包含表明完全由生成式 AI 创建的 C2PA 元数据的内容，其标签无法移除
+* **平衡自动化与透明度**：该系统旨在使 AI 披露更加无缝可靠，同时让创作者对准确标记负责
+
+**[Read Original / 阅读原文](https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/)**
+
+### I think Anthropic and OpenAI have found product-market fit
+
+* **Enterprise pricing shift**: Both Anthropic and OpenAI switched their enterprise plans from flat-rate subscriptions to API-based pricing (around $20/seat/month plus usage costs) in late 2025/early 2026, meaning enterprise customers now pay the same token costs as API users
+* **Coding agents drive usage**: Tools like Claude Code and OpenAI Codex burn significantly more tokens than chat interfaces—the author's personal usage would cost ~$2,180/month at API rates versus the $200 they actually pay for consumer plans
+* **Product-market fit evidence**: Anthropic is rumored to reach profitability soon; companies report unexpectedly high AI bills; both labs are hiring heavily for enterprise sales (27-33% of open positions)
+* **Revenue potential**: Enterprise customers paying $200+/month per heavy user (potentially $1,000+/month in API costs) provides a much faster path to covering infrastructure costs than $10-20/month consumer subscriptions
+* **Massive inference spending**: Anthropic's deal with SpaceX reveals they're spending $1.25 billion/month just for additional compute capacity from one vendor, indicating the scale of inference operations
+* **Overblown failure stories**: Reports of companies like Uber "maxing out AI budgets" or Microsoft canceling licenses are actually signs of product-market fit—customers are using these tools so much they're hitting budget limits set before coding agents became truly useful in November 2025
+
+### 我认为 Anthropic 和 OpenAI 已经找到了产品市场契合点
+
+* **企业定价转变**：Anthropic 和 OpenAI 在 2025 年底/2026 年初将企业计划从固定订阅费改为基于 API 的定价模式(约每席位每月 20 美元加使用费),这意味着企业客户现在支付与 API 用户相同的 token 成本
+* **编码代理驱动使用量**：Claude Code 和 OpenAI Codex 等工具消耗的 token 远超聊天界面——作者个人使用按 API 费率计算约需 2,180 美元/月,而实际只需支付 200 美元的消费者计划费用
+* **产品市场契合的证据**：Anthropic 据传即将实现盈利;企业报告 AI 账单意外高昂;两家实验室都在大量招聘企业销售人员(占空缺职位的 27-33%)
+* **收入潜力**：企业客户为重度用户支付每月 200 美元以上(API 成本可能达 1,000 美元以上/月),比每月 10-20 美元的消费者订阅更快覆盖基础设施成本
+* **大规模推理支出**：Anthropic 与 SpaceX 的交易显示,他们仅从一家供应商购买额外算力就每月花费 12.5 亿美元,表明推理操作的规模之大
+* **被夸大的失败故事**：Uber"用尽 AI 预算"或微软取消许可证的报道实际上是产品市场契合的迹象——客户使用这些工具如此频繁,以至于超出了 2025 年 11 月编码代理真正变得有用之前设定的预算限制
+
+**[Read Original / 阅读原文](https://simonwillison.net/2026/May/27/product-market-fit/)**
+
+### Rust (and Slint) on a Jailbroken Kindle
+
+* **Project motivation**: Jailbroke a 7th gen Kindle Paperwhite to use it as a nightstand clock, then explored running Rust applications on the device
+* **Cross-compilation setup**: Used `cargo-zigbuild` with Zig compiler to target ARMv7 with musl libc, avoiding the need to compile directly on the low-powered Kindle
+* **Shell access**: Installed USBNetwork tool for SSH access via USB/WiFi to deploy and test applications
+* **GUI implementation**: Integrated Slint UI framework with custom Kindle backend, using software renderer to output to the e-ink framebuffer (`/dev/fb0`)
+* **Display refresh**: Used `ioctl()` system calls to trigger e-ink screen updates for dirty regions
+* **Touch input**: Read touch events directly from `/dev/input/event1` using Linux multi-touch protocol type B, translating raw kernel events into Slint pointer events
+* **Result**: Successfully created a working counter app with touch button, published `slint-backend-kindle` crate on crates.io
+* **Next steps**: Plans to build a Home Assistant dashboard for the Kindle
+
+### 在越狱 Kindle 上运行 Rust(和 Slint)
+
+* **项目动机**:将第 7 代 Kindle Paperwhite 越狱用作床头时钟,然后探索在设备上运行 Rust 应用程序
+* **交叉编译设置**:使用 `cargo-zigbuild` 和 Zig 编译器针对 ARMv7 和 musl libc 进行编译,避免在低性能 Kindle 上直接编译
+* **Shell 访问**:安装 USBNetwork 工具,通过 USB/WiFi 实现 SSH 访问以部署和测试应用程序
+* **GUI 实现**:集成 Slint UI 框架和自定义 Kindle 后端,使用软件渲染器输出到电子墨水帧缓冲区(`/dev/fb0`)
+* **显示刷新**:使用 `ioctl()` 系统调用触发电子墨水屏幕更新脏区域
+* **触摸输入**:直接从 `/dev/input/event1` 读取触摸事件,使用 Linux 多点触控协议 B 型,将原始内核事件转换为 Slint 指针事件
+* **成果**:成功创建了带触摸按钮的计数器应用,在 crates.io 上发布了 `slint-backend-kindle` 包
+* **下一步计划**:为 Kindle 构建 Home Assistant 仪表板
+
+**[Read Original / 阅读原文](https://sverre.me/blog/rust-on-kindle/)**
+
+### ECC - The Agent Harness Performance Optimization System
+
+* **What it does**: A comprehensive operator system that enhances AI coding agents (Claude Code, Cursor, Codex, etc.) with production-ready skills, memory optimization, security scanning, and continuous learning capabilities. Built from 10+ months of real-world product development.
+
+* **Key features**: 
+  - 61 specialized agents, 246 skills, and 76 legacy command shims across 12+ programming languages
+  - Cross-harness compatibility (works with Claude Code, Cursor, Codex, OpenCode, Gemini, Zed, GitHub Copilot)
+  - Memory persistence hooks, token optimization, and verification loops for production reliability
+  - AgentShield security scanning with attack vector protection and sandboxing
+  - New v2.0.0-rc.1 includes Tkinter dashboard GUI, operator workflows, and Rust control-plane prototype (ECC 2.0 alpha)
+  - Selective install architecture with manifest-driven component installation
+  - Session state management with SQLite store and structured recording
+
+* **Why it's notable**: 
+  - Anthropic Hackathon Winner with 182K+ stars and 170+ contributors
+  - Not just configs—a complete production system evolved from intensive daily use
+  - Bridges the gap between basic AI coding assistants and enterprise-grade agentic development
+  - MIT-licensed OSS with optional Pro tier ($19/seat/mo) for private repos via GitHub App
+  - Comprehensive guides covering everything from setup to security, token optimization, and parallelization
+  - Active development with weekly cross-harness updates and expanding language ecosystem support
+
+---
+
+### ECC - AI 代码助手性能优化系统
+
+* **功能介绍**: 一个全面的智能体操作系统，为 AI 编码助手（Claude Code、Cursor、Codex 等）提供生产级技能、内存优化、安全扫描和持续学习能力。基于 10 个多月的实际产品开发经验构建。
+
+* **主要特点**:
+  - 涵盖 12+ 种编程语言的 61 个专业智能体、246 项技能和 76 个传统命令适配器
+  - 跨平台兼容性（支持 Claude Code、Cursor、Codex、OpenCode、Gemini、Zed、GitHub Copilot）
+  - 内存持久化钩子、令牌优化和验证循环，确保生产环境可靠性
+  - AgentShield 安全扫描，提供攻击向量防护和沙箱隔离
+  - 最新 v2.0.0-rc.1 版本包含 Tkinter 仪表板 GUI、操作工作流和 Rust 控制平面原型（ECC 2.0 alpha）
+  - 基于清单的选择性安装架构，支持组件化部署
+  - 会话状态管理，配备 SQLite 存储和结构化记录功能
+
+* **为何值得关注**:
+  - Anthropic 黑客松获奖项目，拥有 182K+ 星标和 170+ 贡献者
+  - 不仅是配置文件——这是一个从密集日常使用中演化出的完整生产系统
+  - 填补了基础 AI 编码助手与企业级智能体开发之间的空白
+  - MIT 开源许可，提供可选的 Pro 版本（$19/席位/月）通过 GitHub App 支持私有仓库
+  - 提供从设置到安全、令牌优化和并行化的全面指南
+  - 积极开发中，每周更新跨平台支持并持续扩展语言生态系统
+
+**[View Repository / 查看仓库](https://github.com/affaan-m/ECC)**
+
+### Knowledge Work Plugins - Open-source Claude plugins for specialized professional workflows
+
+* **What it does**: Transforms Claude into a role-specific specialist by providing pre-built plugins for 11 job functions (sales, product management, finance, data, legal, marketing, etc.), each bundling domain expertise, tool integrations, and workflow automation
+* **Key features**: File-based architecture (markdown + JSON, no code required); connects to 30+ external tools via MCP servers (Slack, Notion, HubSpot, Snowflake, etc.); includes both auto-activated skills and explicit slash commands; fully customizable for company-specific processes and terminology
+* **Why it's notable**: Built by Anthropic for Claude Cowork/Code, this represents a new paradigm for AI assistants—moving beyond generic chat to role-aware, tool-connected specialists that understand your company's actual workflows. The open-source approach lets teams customize and share organizational knowledge at scale.
+
+---
+
+### Knowledge Work Plugins - Claude 专业工作流开源插件集
+
+* **功能介绍**: 将 Claude 转变为特定岗位的专家助手,提供 11 个职能领域的预构建插件(销售、产品管理、财务、数据分析、法务、市场营销等),每个插件整合了领域专业知识、工具集成和工作流自动化
+* **主要特点**: 基于文件的架构(Markdown + JSON,无需编码);通过 MCP 服务器连接 30 多个外部工具(Slack、Notion、HubSpot、Snowflake 等);包含自动激活的技能和显式斜杠命令;可完全定制以适配公司特定流程和术语
+* **为何值得关注**: 由 Anthropic 为 Claude Cowork/Code 打造,代表了 AI 助手的新范式——从通用聊天升级为具备角色认知、工具连接的专业助手,能理解企业实际工作流程。开源方式让团队能够大规模定制和共享组织知识。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/knowledge-work-plugins)**
+
+### codex-shim - Local API Shim for Codex Desktop with BYOK Model Support
+
+* **What it does**: A local Python server that acts as a translation layer between Codex Desktop and any bring-your-own-key (BYOK) AI models, plus optional ChatGPT GPT-5.5 passthrough. It exposes an OpenAI-compatible endpoint on localhost that Codex can use without modification.
+
+* **Key features**: 
+  - Routes requests to multiple upstream providers (OpenAI, Anthropic, DeepSeek, Gemini, OpenRouter, local proxies) while preserving Codex's native UX including function calls, tool outputs, and streaming
+  - Adds custom models to Codex's model picker without rebuilding the application
+  - ChatGPT subscription passthrough for accessing GPT-5.5 through Codex Desktop
+  - Cross-platform support (Windows, macOS, Linux, WSL, Git Bash)
+  - Prompt-catching proxy architecture for deduplication and token optimization
+
+* **Why it's notable**: Solves a major limitation in Codex Desktop by enabling users to use any AI model provider while keeping Codex's full agent capabilities intact. The maintainer reports multi-fold reductions in billed tokens and faster response times. With 655 stars, it's gaining traction among developers who want flexibility in model choice without sacrificing Codex's sophisticated coding-agent features.
+
+---
+
+### codex-shim - Codex Desktop 本地 API 适配器，支持自带密钥模型
+
+* **功能介绍**: 一个本地 Python 服务器，作为 Codex Desktop 与任意自带密钥(BYOK)AI 模型之间的转换层，并可选支持 ChatGPT GPT-5.5 直通。它在本地主机上提供 OpenAI 兼容端点，让 Codex 无需修改即可使用。
+
+* **主要特点**:
+  - 将请求路由到多个上游提供商(OpenAI、Anthropic、DeepSeek、Gemini、OpenRouter、本地代理)，同时保留 Codex 的原生用户体验，包括函数调用、工具输出和流式传输
+  - 无需重新编译应用即可将自定义模型添加到 Codex 的模型选择器
+  - ChatGPT 订阅直通功能，可通过 Codex Desktop 访问 GPT-5.5
+  - 跨平台支持(Windows、macOS、Linux、WSL、Git Bash)
+  - 提示词捕获代理架构，用于去重和令牌优化
+
+* **为何值得关注**: 解决了 Codex Desktop 的一个重大限制，使用户能够使用任何 AI 模型提供商，同时保持 Codex 完整的智能体功能。维护者报告称令牌计费减少数倍，响应速度更快。拥有 655 星标，在希望灵活选择模型而不牺牲 Codex 复杂编码智能体功能的开发者中越来越受欢迎。
+
+**[View Repository / 查看仓库](https://github.com/0xSero/codex-shim)**
+
+### awesome-architecture - Think like a software architect, not just a coder
+
+* **What it does**: A bilingual (EN/CN) knowledge base teaching developers to think architecturally before coding. Contains 21+ real-world architecture templates (e-commerce, social feeds, video streaming, AI gateways, RAG systems, vector DBs, etc.) plus a comprehensive system design tutorial covering patterns, tradeoffs, and evolution strategies.
+
+* **Key features**: Language-agnostic architecture maps linking to real open-source prototypes; structured tutorial (26 chapters planned) covering fundamentals through advanced distributed systems, resilience engineering, and AI-native architectures; practical templates for classic systems (payment, ride-hailing, collaborative docs) and modern AI systems (inference serving, agent platforms, coding assistants like Claude Code/Codex).
+
+* **Why it's notable**: Addresses the shift from "writing code" to "designing systems" in the AI era. As LLMs automate implementation, architectural judgment becomes the core skill. The repo bridges theory and practice by pairing educational content with battle-tested architecture patterns, making it valuable for interview prep, greenfield projects, and leveling up from coder to architect.
+
+---
+
+### awesome-architecture - 像架构师一样思考,而不仅仅是编码
+
+* **功能介绍**: 中英双语架构知识库,教开发者在写代码前先建立架构思维。包含 21+ 个真实系统架构模板(电商、社交信息流、视频流媒体、AI 网关、RAG 系统、向量数据库等)以及完整的系统设计教程,涵盖架构模式、权衡取舍和演进策略。
+
+* **主要特点**: 语言无关的架构地图,每个模板链接到真实开源原型;结构化教程(规划 26 章)从基础到高级分布式系统、韧性工程、AI 原生架构;涵盖经典系统(支付、网约车、协同文档)和现代 AI 系统(推理服务、Agent 平台、Claude Code/Codex 等编码助手)的实用模板。
+
+* **为何值得关注**: 针对 AI 时代从"写代码"到"设计系统"的能力转变。当大模型自动化实现时,架构判断力成为核心竞争力。该仓库通过将教育内容与经过实战检验的架构模式结合,为面试准备、新项目设计和从程序员向架构师进阶提供实用价值。配套 architecture-copilot 工具可在 Claude/Cursor 中交互式引导架构设计。
+
+**[View Repository / 查看仓库](https://github.com/study8677/awesome-architecture)**
+
+### 🎬 Want to learn SQL in Tamil for FREE?
+**Channel:** Code Your Future
+
+* A free SQL course taught in Tamil, covering basics to advanced concepts
+* Step-by-step learning approach designed for easy comprehension
+* Ideal for Tamil-speaking learners who want to master database querying without language barriers
+* Access the full course by commenting "SQL" on the video
+
+### 🎬 想免费学习泰米尔语SQL课程？
+**频道:** Code Your Future
+
+* 提供从基础到高级的泰米尔语SQL免费课程
+* 采用循序渐进的教学方式，易于理解
+* 非常适合泰米尔语使用者学习数据库查询，消除语言障碍
+* 在视频下评论"SQL"即可获取完整课程
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-BqM3JDqB7s)**
+
+### 🎬 JavaScript ya no se escribe con JavaScript, ahora es Rust
+
+**Channel:** Fazt Code
+
+* What the video covers: Bun's historic migration of over 1 million lines of JavaScript code to Rust, marking a significant shift in how JavaScript runtimes are being built
+* Key topics discussed: The technical reasons behind rewriting JavaScript tooling in Rust, performance implications, the growing trend of using systems programming languages for JavaScript infrastructure, and what this means for the JavaScript ecosystem
+* Why it's worth watching: This represents a major architectural decision in modern JavaScript tooling that affects developers' workflows and performance. Understanding why major projects are moving away from JavaScript-in-JavaScript implementations provides insight into the future direction of the ecosystem and the trade-offs between developer experience and runtime performance
+
+---
+
+### 🎬 JavaScript 已不再用 JavaScript 编写，现在是 Rust
+
+**频道:** Fazt Code
+
+* 视频内容概述: Bun 完成了历史性的迁移，将超过 100 万行 JavaScript 代码迁移到 Rust，标志着 JavaScript 运行时构建方式的重大转变
+* 主要话题: 用 Rust 重写 JavaScript 工具链的技术原因、性能影响、使用系统编程语言构建 JavaScript 基础设施的增长趋势，以及这对 JavaScript 生态系统的意义
+* 为何值得观看: 这代表了现代 JavaScript 工具链中的重大架构决策，直接影响开发者的工作流程和性能。了解为什么主要项目正在放弃 JavaScript-in-JavaScript 实现，有助于洞察生态系统的未来方向以及开发者体验与运行时性能之间的权衡
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WSG3jnXOrkA)**
+
+### 🎬 Hack giới hạn Vật Lý trong Scratch
+
+**Channel:** Dare2Share
+
+* What the video covers: A tutorial demonstrating how to overcome physical limitations in Scratch by creating a falling sand effect
+* Key topics discussed: Scratch programming techniques, physics simulation workarounds, particle effects implementation, creative coding solutions for visual effects
+* Why it's worth watching: Learn practical tricks for simulating realistic sand physics in Scratch, useful for game developers and educators looking to create engaging visual effects within Scratch's constraints
+
+---
+
+### 🎬 突破 Scratch 物理限制的技巧
+
+**频道:** Dare2Share
+
+* 视频内容概述: 教程展示如何在 Scratch 中突破物理限制，创建沙子下落效果
+* 主要话题: Scratch 编程技巧、物理模拟解决方案、粒子效果实现、视觉效果的创意编程方法
+* 为何值得观看: 学习在 Scratch 中模拟真实沙子物理效果的实用技巧，适合游戏开发者和教育工作者在 Scratch 限制条件下创建引人入胜的视觉效果
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=E8RLTc0bj04)**
 
