@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 28, 2026"
 date: 2026-05-28
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -513,4 +513,93 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 学习在 Scratch 中模拟真实沙子物理效果的实用技巧，适合游戏开发者和教育工作者在 Scratch 限制条件下创建引人入胜的视觉效果
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=E8RLTc0bj04)**
+
+### Can We Have the Day Off?
+
+* AI is promised to revolutionize white-collar productivity by 10x, making work faster and easier across all aspects of life
+* If AI truly delivers 10x productivity gains, workers should theoretically complete a full week's work by midday Monday
+* The author proposes taking Fridays off as "AI workers' day" - letting AI agents work while humans rest
+* This arrangement would benefit everyone: workers get three-day weekends, executives get more golf time, and AI handles Friday workloads
+* The proposal highlights a disconnect between productivity promises and actual work-life balance improvements
+* Personal note: With California childcare costing $6,000/month for three children, why not work four days instead of five if AI makes us so productive?
+
+### 我们能休息一天吗?
+
+* 人工智能承诺将白领生产力提高10倍,让工作在生活各方面都变得更快更轻松
+* 如果AI真能实现10倍生产力提升,理论上工作者应该能在周一中午前完成过去一整周的工作量
+* 作者提议将周五定为休息日,称为"AI工作者日"——让AI代理工作,人类休息
+* 这种安排对所有人都有利:员工获得三天周末,高管有更多时间打高尔夫,AI在周五处理工作
+* 该提议凸显了生产力承诺与实际工作生活平衡改善之间的脱节
+* 个人观点:加州三个孩子的托儿费用每月6000美元,如果AI让我们如此高效,为什么不工作四天而非五天?
+
+**[Read Original / 阅读原文](https://mlsu.io/posts/day-off/)**
+
+### What Apple and Google Are Doing to Your Push Notifications
+
+* **Push notifications now pass through active intermediaries**: Apple and Google control the only two delivery pipes, and on-device AI models now summarize, reorder, and rewrite notifications before they reach users
+* **Platform intervention has escalated over 15 years**: From simple on/off toggles in 2009 to notification channels (Android 8, 2017), interruption taxonomies (iOS 15, 2021), and runtime permissions (Android 13, 2022) that dropped opt-in rates from 85% to 67%
+* **Push is following email's path**: Email went through similar intermediation with spam filters, tabbed inboxes, and AI summaries—push is now at the same maturity level but with less sender visibility and control
+* **Senders are losing instrumentation**: Unlike email's deliverability dashboards, push offers almost no visibility into whether notifications were summarized, deprioritized, or hidden by Focus modes
+* **On-device AI is the new gatekeeper**: Apple Intelligence and Android's models make display decisions locally using opaque, unappealable logic—platforms defend user attention as their own asset, not just user advocacy
+* **Structural disadvantages vs. email**: Push has no open protocols, no portable subscription lists, no authentication standards like DKIM, and notifications disappear from the tray rather than persisting like email in an inbox
+
+### 苹果和谷歌如何处理你的推送通知
+
+* **推送通知现在经过主动中介处理**：苹果和谷歌控制着仅有的两条传输管道，设备端AI模型在通知到达用户之前会对其进行摘要、重新排序和改写
+* **平台干预在15年间不断升级**：从2009年的简单开关切换，到通知频道(Android 8, 2017)、中断分类(iOS 15, 2021)，再到运行时权限(Android 13, 2022)，导致选择加入率从85%降至67%
+* **推送正在重复电子邮件的路径**：电子邮件经历了类似的中介化过程，包括垃圾邮件过滤、分类收件箱和AI摘要——推送现在达到了相同的成熟度，但发送者的可见性和控制力更低
+* **发送者正在失去监测工具**：与电子邮件的送达率仪表板不同，推送几乎无法让发送者看到通知是否被摘要、降级或被专注模式隐藏
+* **设备端AI成为新守门人**：Apple Intelligence和Android的模型使用不透明、无法申诉的逻辑在本地做出显示决策——平台将用户注意力视为自己的资产来保护，而非纯粹的用户权益倡导
+* **相比电子邮件的结构性劣势**：推送没有开放协议、没有可移植的订阅列表、没有类似DKIM的认证标准，且通知会从通知栏消失而非像电子邮件那样持久保存在收件箱中
+
+**[Read Original / 阅读原文](https://www.jacquescorbytuech.com/writing/what-apple-and-google-are-doing-your-push-notifications)**
+
+<!-- [Title-Only] -->
+### A New Typst Template for Pandoc
+
+* Based on the title, this article likely discusses a newly created template that bridges Pandoc (a universal document converter) and Typst (a modern markup-based typesetting system). It probably covers how to use Pandoc to convert documents into Typst format, or how to leverage Typst's typesetting capabilities within Pandoc workflows.
+* This might be interesting to readers who work with technical documentation, academic writing, or publishing workflows. Typst is gaining attention as a modern alternative to LaTeX, and integrating it with Pandoc could streamline document conversion and formatting processes for those who need professional-quality output across multiple formats.
+
+### Pandoc 的新 Typst 模板
+
+* 根据标题推测，这篇文章介绍了一个连接 Pandoc（通用文档转换器）和 Typst（现代标记语言排版系统）的新模板。文章可能讲解如何使用 Pandoc 将文档转换为 Typst 格式，或者如何在 Pandoc 工作流中利用 Typst 的排版功能。
+* 对于从事技术文档、学术写作或出版工作流的读者来说值得关注。Typst 作为 LaTeX 的现代替代方案正受到越来越多关注，将其与 Pandoc 集成可以为需要跨多种格式输出专业质量文档的用户简化文档转换和格式化流程。
+
+**[Read Original / 阅读原文](https://imaginarytext.ca/posts/2025/typst-templates-for-pandoc/)**
+
+### Pianke (片刻) - AI-Powered Local Photo Culling Tool for Photographers
+
+* **What it does**: A privacy-first photo selection tool that uses AI to automatically group similar shots from a session and lets you quickly pick the best ones through an intuitive A/B comparison interface. Supports RAW formats with embedded preview extraction and RAW+JPG pairing.
+
+* **Key features**: Three operating modes (Fast/Expert/Tycoon) balancing speed vs AI capability; local-first processing with DINOv2 vision models and face recognition; automatic quality filtering for blurry/overexposed/closed-eye shots; keyboard-driven tournament-style selection (←/→ keys); multi-level undo and auto-save progress; batch EXIF watermarking with 11 styles.
+
+* **Why it's notable**: Solves a real pain point for photographers drowning in hundreds of similar shots from burst mode or continuous shooting. The hybrid approach—AI handles tedious initial filtering and grouping, humans make final aesthetic decisions—is pragmatic. Pure local processing (except Tycoon mode) protects privacy while the tournament UI makes culling surprisingly fast. RAW workflow support and Chinese localization show attention to professional photographer needs.
+
+---
+
+### Pianke (片刻) - 摄影师专用的 AI 本地选片工具
+
+* **功能介绍**: 一款隐私优先的照片筛选工具,利用 AI 自动将拍摄中的相似照片归组,然后通过直观的左右对比界面快速挑选最佳照片。支持 RAW 格式的内嵌预览提取和 RAW+JPG 配对处理。
+
+* **主要特点**: 三种工作模式(极速/专家/土豪)平衡速度与 AI 能力;基于 DINOv2 视觉模型和人脸识别的本地化处理;自动过滤模糊/过曝/闭眼等废片;键盘驱动的擂台式选片(←/→ 键);多级撤销和自动保存进度;批量添加 EXIF 水印,提供 11 种样式。
+
+* **为何值得关注**: 解决了摄影师在连拍或连续拍摄后面对数百张相似照片的痛点。混合方案——AI 处理繁琐的初筛和分组,人类做最终美学决策——非常务实。纯本地处理(土豪模式除外)保护隐私,擂台式 UI 让选片效率大幅提升。对 RAW 工作流的支持和中文本地化体现了对专业摄影师需求的关注。
+
+**[View Repository / 查看仓库](https://github.com/zhaoyue4810/pianke)**
+
+### 🎬 A Pit in Spain Holds the Key to a Neanderthal DNA Mystery - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses a significant archaeological discovery in Spain that provides crucial insights into Neanderthal genetics and human evolution
+* Key topics discussed: Ancient DNA analysis, Neanderthal genomics, the Spanish pit site's importance in understanding human-Neanderthal relationships, and how this discovery resolves longstanding questions about Neanderthal DNA inheritance
+* Why it's worth watching: Reich is a leading expert in ancient DNA and population genetics; this video offers cutting-edge insights into human origins and the genetic legacy Neanderthals left in modern humans, presented through a specific archaeological mystery
+
+### 🎬 西班牙洞穴揭开尼安德特人DNA之谜 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 讨论西班牙的一项重大考古发现,该发现为尼安德特人遗传学和人类进化提供了关键见解
+* 主要话题: 古代DNA分析、尼安德特人基因组学、西班牙洞穴遗址在理解人类与尼安德特人关系中的重要性,以及这一发现如何解决关于尼安德特人DNA遗传的长期疑问
+* 为何值得观看: Reich 是古代DNA和群体遗传学领域的顶尖专家;本视频通过一个具体的考古谜团,提供了关于人类起源和尼安德特人留给现代人类遗传遗产的前沿见解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PhB3QgFnjGQ)**
 
