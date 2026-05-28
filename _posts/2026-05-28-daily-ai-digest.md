@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 28, 2026"
 date: 2026-05-28
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -602,4 +602,129 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: Reich 是古代DNA和群体遗传学领域的顶尖专家;本视频通过一个具体的考古谜团,提供了关于人类起源和尼安德特人留给现代人类遗传遗产的前沿见解
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=PhB3QgFnjGQ)**
+
+### A Eureka Machine That Thinks Like Nature and Explores What AI Cannot
+
+* Researchers from IISc and international partners have developed a neuromorphic computer that combines quantum-tunneling physics with brain-inspired architecture to solve complex combinatorial optimization problems
+* The system uses a neuromorphic autoencoder with Fowler-Nordheim annealer, offering asymptotic convergence guarantees for problems like protein folding, logistics networks, and cryptography
+* Unlike traditional AI models that struggle with combinatorial problems, this machine searches for solutions by navigating energy landscapes similar to natural processes
+* The collaborative work emerged from global neuromorphic engineering workshops (Telluride, BNEW at IISc, CapoCaccia) and was published in Nature Communications
+* Led by Professor Shantanu Chakrabartty (Washington University) and includes Professor Chetan Singh Thakur (IISc), with partners from Heidelberg, Johns Hopkins, and UC Santa Cruz
+* Represents a fundamental shift from Moore's Law scaling to architectures that compute differently, addressing problems where "faster chips" are no longer the solution
+
+### 类似自然思维的尤里卡机器：探索人工智能无法触及的领域
+
+* 印度科学研究所(IISc)及国际合作伙伴开发出一种神经形态计算机，结合量子隧穿物理和类脑架构，用于解决复杂的组合优化问题
+* 该系统采用神经形态自编码器配合Fowler-Nordheim退火器，为蛋白质折叠、物流网络和密码学等问题提供渐近收敛保证
+* 与在组合问题上表现不佳的传统AI模型不同，这台机器通过类似自然过程的能量景观导航来搜索解决方案
+* 该合作研究源于全球神经形态工程研讨会(美国Telluride、IISc的BNEW、欧洲CapoCaccia)，成果发表于《自然·通讯》
+* 由Shantanu Chakrabartty教授(华盛顿大学圣路易斯分校)领导，包括Chetan Singh Thakur教授(IISc)，合作方来自海德堡大学、约翰斯·霍普金斯大学和加州大学圣克鲁兹分校
+* 代表了从摩尔定律扩展向不同计算架构的根本转变，解决"更快芯片"已不再是解决方案的问题
+
+**[Read Original / 阅读原文](https://iisc.ac.in/a-eureka-machine-that-thinks-like-nature-and-explores-what-ai-cannot/)**
+
+### Building a Personal Relationship Map from 1.2M Messages Across 20 Years
+
+* **Motivation**: Inspired by WaitButWhy's "Life in Weeks" visualization, the author wanted to measure life quality through relationships and conversations rather than just biometric data or major life events
+* **Data sources**: Collected 20 years of chat history from ICQ, IRC, VK, Twitter, Facebook, Instagram, and Telegram using GDPR data exports
+* **Technical challenges**: Parsing inconsistent formats (Instagram double-encodes Cyrillic, Telegram changes message IDs between exports, Facebook's E2E encryption creates duplicate folders)
+* **Noise filtering**: 41% of messages were conversational filler; developed a frequency-based denylist by sampling and manually reviewing top tokens across languages
+* **Vocabulary analysis**: 52,000 unique lemmas total, with novelty rate declining from 45% to 6% over time—most vocabulary locked in by early 20s
+* **Name resolution problem**: Same person appears across platforms with different usernames and diminutives (e.g., Alexander → Al, Alex, Sasha); context-dependent disambiguation needed
+* **Classification approach**: Used LLMs (~15-20B tokens processed) to classify life events, resolve entity mentions, and extract structured data with <1% false-positive rate
+* **Architecture**: LLM outputs structured JSON manifests; deterministic Python scripts inject bullets into Obsidian vault with provenance markers linking back to source messages
+* **Prompt engineering**: Prompt grew from 8KB to 80KB through iterative refinement based on mistakes (e.g., added first-person possession test after model misclassified friend's purchase as user's)
+* **Quality control**: Validation scripts catch orphan links and duplicates; random sampling verifies outputs against source to prevent confabulation
+* **Sentiment analysis**: Standard tools fail to capture asymmetric relationship dynamics (one person enthusiastic, other giving one-word replies)
+
+---
+
+### 从 20 年 120 万条聊天记录构建个人关系图谱
+
+* **动机**：受 WaitButWhy 的"人生周历"可视化启发,作者希望通过关系和对话来衡量生活质量,而不仅仅是生物数据或重大人生事件
+* **数据来源**：通过 GDPR 数据导出收集了 20 年的聊天历史,涵盖 ICQ、IRC、VK、Twitter、Facebook、Instagram 和 Telegram
+* **技术挑战**：解析不一致的格式(Instagram 对西里尔字母双重编码,Telegram 在不同导出间更改消息 ID,Facebook 的端到端加密创建重复文件夹)
+* **噪音过滤**：41% 的消息是对话填充词;通过采样和人工审查跨语言高频词汇开发了拒绝列表
+* **词汇分析**：总共 52,000 个独特词根,新词率从 45% 下降到 6%——大部分词汇在 20 岁出头时就已固定
+* **姓名解析问题**：同一个人在不同平台使用不同用户名和昵称(如 Alexander → Al、Alex、Sasha);需要根据上下文消歧
+* **分类方法**：使用大语言模型(处理约 150-200 亿 token)对生活事件分类、解析实体提及并提取结构化数据,误报率低于 1%
+* **架构设计**：LLM 输出结构化 JSON 清单;确定性 Python 脚本将要点注入 Obsidian 知识库,并带有溯源标记链接回源消息
+* **提示词工程**：提示词从 8KB 增长到 80KB,通过迭代改进修正错误(如添加第一人称所有格测试,防止模型将朋友的购买误分类为用户的)
+* **质量控制**：验证脚本捕获孤立链接和重复项;随机抽样验证输出与源数据的一致性以防止幻觉
+* **情感分析**：标准工具无法捕捉不对称的关系动态(一方热情,另一方只回复单字)
+
+**[Read Original / 阅读原文](https://drobinin.com/posts/am-i-a-bad-friend/)**
+
+<!-- [Title-Only] -->
+### Hallucinate – Massively Multiplayer Online Rave
+
+* Based on the title, this article likely covers an online platform or virtual experience that brings the rave/electronic music culture into a massively multiplayer format, similar to how MMO games work but focused on music events and social dancing experiences
+* Why it might be interesting: It represents an innovative intersection of gaming, music culture, and social platforms—potentially exploring how virtual spaces can recreate the communal energy of live music events, especially relevant in the post-pandemic era where digital gathering spaces have become more sophisticated
+
+### Hallucinate – 大型多人在线锐舞派对
+
+* 根据标题推测，这篇文章可能介绍一个在线平台或虚拟体验，将锐舞/电子音乐文化以大型多人在线的形式呈现，类似于 MMO 游戏的运作方式，但专注于音乐活动和社交舞蹈体验
+* 为何值得关注：这代表了游戏、音乐文化和社交平台的创新交集——可能探讨虚拟空间如何重现现场音乐活动的集体能量，在后疫情时代尤其相关，因为数字聚会空间已变得更加成熟
+
+---
+
+*Note: This introduction is based solely on the article title, as the full content could not be accessed. The actual article may cover different or additional aspects.*
+
+*注：此简介仅基于文章标题撰写，因无法获取完整内容。实际文章可能涵盖不同或更多方面。*
+
+**[Read Original / 阅读原文](https://hallucinate.site)**
+
+### PilotDeck - Task-Oriented AI Agent Productivity Platform
+
+**What it does:**
+PilotDeck is an open-source agent operating system built around the "WorkSpace" concept, designed for long-running, multi-project productivity work. It isolates files, memory, and skills per project, enabling AI agents to work autonomously across multiple tasks without context pollution.
+
+**Key features:**
+* **WorkSpace-Level Isolation** - Each project gets its own file system, memory store, and skill set, preventing cross-project interference
+* **White-box Memory** - Fully traceable memory system where you can view, edit, and rollback AI memory entries when mistakes occur
+* **Smart Routing** - Automatically matches task difficulty to appropriate models (flagship vs. lightweight), achieving ~70% cost savings
+* **Always-on Execution** - Agents continue working in the background, discovering tasks, monitoring progress, and delivering results as local files
+* **Native MCP Support** - Built-in Model Context Protocol integration with consistent behavior across Web/CLI/IM interfaces
+
+**Why it's notable:**
+PilotDeck addresses critical gaps in existing AI agent platforms by making memory transparent and editable, enabling cost-effective background execution, and providing true multi-project isolation. Developed by Tsinghua University THUNLP, ModelBest, OpenBMB, and AI9Stars, it demonstrates impressive real-world results: 70% cost reduction on social media workflows and 1/6 the cost while matching frontier model performance on complex tasks. With 893 stars and recent open-source release (May 2026), it represents a significant evolution in agent operating systems for productivity work.
+
+---
+
+### PilotDeck - 面向任务的 AI Agent 生产力平台
+
+**功能介绍:**
+PilotDeck 是一个围绕"工作空间"概念构建的开源智能体操作系统,专为长期运行的多项目生产力工作而设计。它为每个项目隔离文件、记忆和技能,使 AI 智能体能够在多个任务中自主工作而不会产生上下文污染。
+
+**主要特点:**
+* **工作空间级隔离** - 每个项目拥有独立的文件系统、记忆存储和技能集,防止跨项目干扰
+* **白盒记忆** - 完全可追溯的记忆系统,可以查看、编辑和回滚 AI 记忆条目
+* **智能路由** - 自动将任务难度匹配到合适的模型(旗舰版 vs 轻量版),实现约 70% 的成本节省
+* **全天候执行** - 智能体在后台持续工作,发现任务、监控进度并将结果交付为本地文件
+* **原生 MCP 支持** - 内置模型上下文协议集成,在 Web/CLI/IM 界面保持一致行为
+
+**为何值得关注:**
+PilotDeck 通过使记忆透明可编辑、实现经济高效的后台执行以及提供真正的多项目隔离,填补了现有 AI 智能体平台的关键空白。由清华大学 THUNLP、ModelBest、OpenBMB 和 AI9Stars 联合开发,展示了令人印象深刻的实际效果:社交媒体工作流成本降低 70%,在复杂任务上以 1/6 的成本达到前沿模型性能。拥有 893 星标并于 2026 年 5 月开源,代表了生产力工作智能体操作系统的重大进化。
+
+**[View Repository / 查看仓库](https://github.com/OpenBMB/PilotDeck)**
+
+### 🎬 Hack giới hạn Vật Lý trong Scratch
+
+**Channel:** Dare2Share
+
+* What the video covers: A tutorial demonstrating how to overcome physical limitations in Scratch by creating a falling sand effect
+* Key topics discussed: Scratch programming techniques, physics simulation workarounds, particle effects implementation, sand falling animation mechanics
+* Why it's worth watching: Learn practical tricks for creating realistic physics effects in Scratch despite the platform's constraints—useful for game developers and educators working with visual programming
+
+---
+
+### 🎬 在 Scratch 中突破物理限制
+
+**频道:** Dare2Share
+
+* 视频内容概述: 展示如何在 Scratch 中突破物理限制,创建沙子下落效果的教程
+* 主要话题: Scratch 编程技巧、物理模拟解决方案、粒子效果实现、沙子下落动画机制
+* 为何值得观看: 学习在 Scratch 平台限制下创建逼真物理效果的实用技巧——对使用可视化编程的游戏开发者和教育工作者非常有用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=E8RLTc0bj04)**
 
