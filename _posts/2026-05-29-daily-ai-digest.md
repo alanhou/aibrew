@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 29, 2026"
 date: 2026-05-29
-description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 11 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：11篇黑客新闻，3个热门项目，8个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -685,4 +685,89 @@ Could you provide the full article content about the ten basic cloud types?
 * **为何值得关注**: 该工具包获得了 398 个星标，解决了 Wallpaper Engine 内容创作者面临的实际痛点——管理自定义动态壁纸集合的复杂性和碎片化问题。通过结构化框架推广最佳实践，利用可复用模板加速开发，并通过开源许可和活跃的社区参与支持协作，使专业级壁纸创作对爱好者和开发者都触手可及。
 
 **[View Repository / 查看仓库](https://github.com/alfiyahkamilah1239298/WallpaperDownloader-26)**
+
+### Volkswagen Connect Integration for Home Assistant - EU Vehicle Control & Monitoring
+
+* **Custom Home Assistant component** enabling interaction with Volkswagen Connect service for EU-sold vehicles (Passat, Golf, e-Golf, Tiguan, ID series, etc.)
+* **Installation options**: HACS (recommended, automatic updates) or manual installation from GitHub releases
+* **Key requirements**: Active VW online subscription, EU-region vehicle, VW Connect credentials
+* **Configuration via UI**: Settings → Integrations → Add "Volkswagen Connect" with username/password, region, optional S-PIN for lock/unlock
+* **API rate limits**: VW allows 480 calls/day (~3 min intervals); default 5-min update interval uses 288 calls/day, leaving 192 for official app
+* **Recommendation**: Increase update interval to 10 minutes if using both this integration and official VW app to avoid exceeding daily API limits
+* **Features**: Access most VW Connect app functionality including sensors, location tracking, and vehicle control (if mutable mode enabled)
+* **Customization options**: Custom vehicle naming, distance unit conversion (km/mi/Scandinavian mil), adjustable scan intervals per vehicle
+* **Troubleshooting**: Verify VW Connect service works in web browser first; integration reliability depends entirely on VW's service availability
+* **Support**: Open-source project accepting contributions, especially for non-EU vehicle support; debug logging available via Wiki
+
+### 大众互联 Home Assistant 集成 - 欧盟车辆控制与监控
+
+* **Home Assistant 自定义组件**，可与大众互联服务交互，支持欧盟销售的车辆（帕萨特、高尔夫、e-Golf、途观、ID 系列等）
+* **安装方式**：HACS（推荐，自动更新）或从 GitHub 发布页面手动安装
+* **关键要求**：有效的大众在线订阅、欧盟地区车辆、大众互联账户凭证
+* **UI 配置**：设置 → 集成 → 添加"Volkswagen Connect"，输入用户名/密码、地区、可选的 S-PIN（用于锁车/解锁）
+* **API 速率限制**：大众每天允许 480 次调用（约 3 分钟间隔）；默认 5 分钟更新间隔每天使用 288 次调用，为官方应用留下 192 次
+* **建议**：如果同时使用此集成和官方大众应用，将更新间隔增加到 10 分钟以避免超出每日 API 限制
+* **功能特性**：访问大多数大众互联应用功能，包括传感器、位置跟踪和车辆控制（启用可变模式时）
+* **自定义选项**：自定义车辆命名、距离单位转换（公里/英里/斯堪的纳维亚里）、每辆车可调整扫描间隔
+* **故障排除**：首先验证大众互联服务在网页浏览器中正常工作；集成可靠性完全取决于大众服务的可用性
+* **支持**：开源项目接受贡献，特别欢迎非欧盟车辆支持；Wiki 提供调试日志记录指南
+
+**[Read Original / 阅读原文](https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967)**
+
+### Zot: Yet Another Coding Agent Harness - Background Subagents
+
+* **Parallel background agents**: Type `/swarm` to open dashboard, `n` to spawn subagents that run alongside your main session with separate model loops and persistent sessions
+* **Shared workspace**: All agents edit the same files in the host's working directory using identical `read`/`write`/`edit`/`bash` tools - no isolated branches or worktrees
+* **Interactive transcript view**: Press `enter` on any agent row to open its chat overlay with inline composer, streaming auto-follow, and real-time activity status
+* **CLI-first design**: Full command-line interface (`/swarm new <task>`, `/swarm send <id> <text>`, `/swarm kill <id>`) for scripts and headless workflows
+* **Session-scoped persistence**: Agents persist under `$ZOT_HOME/swarm/agents/<id>/` across restarts, scoped to the spawning session, with press `R` to reattach detached agents
+* **Local state management**: Agent metadata stays machine-local; code edits land directly in repo tracked by git; `/session export` excludes subagents
+* **Auto-swarm capability**: Optional setting allows main agent to autonomously fork subagents when requests naturally split into parallel work
+
+### Zot：又一个编码代理工具 - 后台子代理
+
+* **并行后台代理**：输入 `/swarm` 打开仪表板，按 `n` 生成与主会话并行运行的子代理，每个代理拥有独立的模型循环和持久会话
+* **共享工作空间**：所有代理使用相同的 `read`/`write`/`edit`/`bash` 工具在宿主工作目录中编辑相同文件 - 无隔离分支或工作树
+* **交互式记录视图**：在任意代理行按 `enter` 打开其聊天覆盖层，包含内联编辑器、流式自动跟随和实时活动状态显示
+* **命令行优先设计**：完整的命令行接口（`/swarm new <task>`、`/swarm send <id> <text>`、`/swarm kill <id>`）支持脚本和无头工作流
+* **会话范围持久化**：代理在 `$ZOT_HOME/swarm/agents/<id>/` 下持久化并跨重启保留，限定于生成会话，按 `R` 重新附加已分离的代理
+* **本地状态管理**：代理元数据保持在本地机器；代码编辑直接落入由 git 跟踪的仓库；`/session export` 不包含子代理
+* **自动集群能力**：可选设置允许主代理在请求自然分解为并行工作时自主派生子代理
+
+**[Read Original / 阅读原文](https://www.zot.sh)**
+
+<!-- [Title-Only] -->
+### Cars collect a startling amount of data about you
+
+* This article likely explores how modern vehicles equipped with sensors, cameras, and connectivity features gather extensive personal information about drivers and passengers—ranging from location tracking and driving behavior to biometric data and in-car conversations.
+* Why it might be interesting: As cars become increasingly connected and autonomous, understanding what data is collected, who has access to it, and how it's used raises important privacy concerns that affect millions of vehicle owners. The title suggests the situation may be worsening, making this timely for anyone concerned about digital privacy.
+
+---
+
+### 汽车收集了惊人数量的关于你的数据
+
+* 本文可能探讨现代汽车如何通过传感器、摄像头和联网功能收集大量个人信息——从位置追踪、驾驶行为到生物识别数据和车内对话等。
+* 为何值得关注：随着汽车日益智能化和网联化，了解收集了哪些数据、谁能访问这些数据以及如何使用，引发了影响数百万车主的重要隐私问题。标题暗示情况可能正在恶化，这对关注数字隐私的人来说非常及时。
+
+**[Read Original / 阅读原文](https://www.bbc.com/future/article/20260513-your-car-is-spying-on-you-its-about-to-get-worse)**
+
+### vibecode-pro-max-kit - Spec-Driven AI Coding Harness with Self-Improving Memory
+
+* **What it does**: A development harness that transforms AI coding agents (Claude Code, Codex, Cursor, etc.) into spec-driven engineering teams. It forces AI to research and plan before coding, maintains persistent context memory across sessions, and auto-generates PRDs and technical specifications to prevent "context rot" over time.
+
+* **Key features**: 12 specialized agents with 32 auto-discovered skills, self-improving knowledge base that compounds with each feature shipped, autonomous operation for hours without losing state, automatic backlog management and context routing, shareable specs for team collaboration, works with any tech stack and language, 30-second installation with intelligent project detection.
+
+* **Why it's notable**: Solves the critical problem of AI agents forgetting context and shipping "spaghetti code" by enforcing a spec-first workflow. The self-improving memory system ensures that detailed prompts and project knowledge persist even 6 months later. Built by engineers at flowser.ai specifically for "vibecoders" (product owners, CEOs, and builders who code with AI assistance), it's gaining traction (404 stars) as a practical solution to AI coding workflow chaos.
+
+---
+
+### vibecode-pro-max-kit - 具备自我改进记忆的规范驱动 AI 编码工具
+
+* **功能介绍**: 一个开发工具框架，可将 AI 编码代理（Claude Code、Codex、Cursor 等）转变为规范驱动的工程团队。它强制 AI 在编码前进行研究和规划，跨会话维护持久化上下文记忆，并自动生成 PRD 和技术规范以防止长期"上下文腐烂"。
+
+* **主要特点**: 12 个专业化代理配备 32 个自动发现的技能，随着功能交付不断积累的自我改进知识库，可自主运行数小时而不丢失状态，自动待办事项管理和上下文路由，可共享的规范文档便于团队协作，支持任何技术栈和编程语言，30 秒安装并智能检测项目配置。
+
+* **为何值得关注**: 通过强制执行规范优先的工作流程，解决了 AI 代理忘记上下文和生成"意大利面条式代码"的关键问题。自我改进的记忆系统确保详细提示和项目知识即使在 6 个月后仍能保持。由 flowser.ai 的工程师专为"氛围编码者"（使用 AI 辅助编码的产品负责人、CEO 和构建者）打造，作为 AI 编码工作流混乱的实用解决方案正在获得关注（404 星标）。
+
+**[View Repository / 查看仓库](https://github.com/withkynam/vibecode-pro-max-kit)**
 
