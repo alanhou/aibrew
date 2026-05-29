@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 29, 2026"
 date: 2026-05-29
-description: "Today's digest: 5 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：5篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 8 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：8篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -599,4 +599,90 @@ The summary emphasizes why this repository is particularly relevant now: the shi
 * 为何值得观看: 适合正在选择第一门语言的初学者或探索新技术的资深开发者;清晰展示学习不同编程语言时的预期难度和挑战
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=cBAEZJbrRRg)**
+
+### Where Are the Economies of Scale in Homebuilding?
+
+**Summary:**
+
+* **The productivity puzzle**: Construction productivity grows much slower than manufacturing, and construction costs rarely fall despite technological advances
+* **Scale doesn't help much**: Unlike other industries, homebuilding shows surprisingly modest economies of scale even with over 1.3 million housing starts annually in the US
+* **Fragmented industry**: Over 65,000 homebuilding firms exist in the US, with the top 4 firms controlling only 18% of the market (compared to 90% in aircraft manufacturing)
+* **No cost advantage for giants**: Large homebuilders like Lennar (80,000+ homes/year) have similar gross margins and construction costs as much smaller builders (1,000-5,000 homes/year)
+* **Same methods, different sizes**: Large builders use identical construction techniques as small builders, primarily subcontracting all actual construction work to local contractors
+* **Limited savings**: Volume discounts on materials provide only modest benefits, estimated at around $9,500 per house
+* **Historical pattern**: Since the 1980s, no significant technological breakthroughs or methodology changes have emerged despite industry growth
+* **The core issue**: In conventional US homebuilding, the gap between raw material costs and final production costs is already small, leaving little room for scale-based efficiency improvements
+
+---
+
+### 住宅建筑中的规模经济在哪里?
+
+**摘要:**
+
+* **生产力难题**: 建筑业生产力增长远慢于制造业,尽管技术进步,建筑成本却很少下降
+* **规模效应有限**: 与其他行业不同,美国住宅建筑业尽管年开工量超过130万套,但规模经济效应却出奇地微弱
+* **行业高度分散**: 美国有超过65,000家住宅建筑公司,前四大公司仅控制18%的市场份额(相比之下飞机制造业为90%)
+* **巨头无成本优势**: 大型建筑商如Lennar(年建8万+套房)与小型建筑商(年建1,000-5,000套)的毛利率和建筑成本相似
+* **方法相同,规模不同**: 大型建筑商使用与小型建筑商完全相同的施工技术,主要将实际建筑工作分包给当地承包商
+* **节省有限**: 材料批量采购折扣带来的收益有限,估计每套房屋约9,500美元
+* **历史模式**: 自1980年代以来,尽管行业增长,但未出现重大技术突破或方法论变革
+* **核心问题**: 在美国传统住宅建筑中,原材料成本与最终生产成本之间的差距已经很小,为基于规模的效率提升留下的空间很少
+
+**[Read Original / 阅读原文](https://www.construction-physics.com/p/where-are-the-economies-of-scale)**
+
+### I Made a Million Dollar Product from My Dorm Room - Nick Winans
+
+**Summary:**
+* Nick Winans created the nice!nano, a wireless Pro Micro-compatible microcontroller board during his freshman year of college that has generated over $1 million in sales
+* The project started after building the Dissatisfaction65 wireless keyboard with poor performance, leading him to research Nordic microchips and discover gaps in the DIY wireless keyboard market
+* He designed the entire nice!nano board in one weekend using KiCad, achieving 100x better power efficiency than his previous design (weeks on 110mAh vs days on 2,500mAh battery)
+* The first group buy in June 2020 sold out all 1,000 units in just 7 hours, though the stress of holding customer funds made him vow never to run group buys again
+* He collaborated with Pete Johanson to develop ZMK firmware, creating a modern wireless-first keyboard firmware ecosystem
+* In 2022, he launched Typeractive with his retired father, becoming one of the largest split keyboard stores with a 3D interactive configuration tool
+* The nice!nano was cloned twice in 2023 by manufacturers on Taobao/AliExpress who copied the design and even used his firmware, though the original continues selling well
+* Over 50,000 nice!nanos have been sold worldwide across various retailers, representing over $1 million in total sales
+* Nick acknowledges that while hard work was essential, timing and luck in the growing wireless keyboard market played significant roles in his success
+
+---
+
+### 我在大学宿舍打造了百万美元产品 - Nick Winans
+
+**摘要：**
+* Nick Winans 在大学一年级期间创造了 nice!nano——一款无线 Pro Micro 兼容微控制器板，销售额已超过 100 万美元
+* 该项目源于他制作 Dissatisfaction65 无线键盘时性能不佳的经历，促使他研究 Nordic 微芯片并发现 DIY 无线键盘市场的空白
+* 他用一个周末时间使用 KiCad 设计了整个 nice!nano 板，实现了比之前设计 100 倍的能效提升（110mAh 电池续航数周 vs 2,500mAh 电池续航数天）
+* 2020 年 6 月首次团购仅用 7 小时就售罄全部 1,000 个单位，但持有客户资金的压力让他发誓再也不搞团购
+* 他与 Pete Johanson 合作开发 ZMK 固件，创建了现代化的无线优先键盘固件生态系统
+* 2022 年，他与退休的父亲共同创立 Typeractive，凭借 3D 交互式配置工具成为最大的分体键盘商店之一
+* 2023 年 nice!nano 被淘宝/速卖通的制造商克隆两次，他们复制设计甚至使用他的固件，但原版产品仍持续热销
+* 全球各零售商已售出超过 50,000 个 nice!nano，总销售额超过 100 万美元
+* Nick 承认虽然努力工作至关重要，但在无线键盘市场增长期的时机和运气也发挥了重要作用
+
+**[Read Original / 阅读原文](https://nick.winans.io/blog/nice-nano/)**
+
+I need to see the actual content about "Ten Basic Clouds" to analyze and summarize it. The HTML you provided only contains a security notice about .gov websites, not the cloud classification content.
+
+Could you provide the full article content about the ten basic cloud types?
+
+**[Read Original / 阅读原文](https://www.noaa.gov/jetstream/clouds/ten-basic-clouds)**
+
+### Dynamic Wallpaper Project Toolkit - Community-Driven Wallpaper Engine Content Management System
+
+* **What it does**: A comprehensive TypeScript-based toolkit that provides a standardized framework for organizing, creating, and managing custom dynamic wallpaper projects for Wallpaper Engine, with project templates, asset management utilities, and automation scripts.
+
+* **Key features**: Standardized project structure with automated initialization; pre-built templates for particle effects and scene wallpapers; asset librarian for cataloging media resources; configuration manager for centralized settings; integration scripts for Wallpaper Engine API; localization support for multi-language projects; documentation generator for project guides.
+
+* **Why it's notable**: With 398 stars, this toolkit addresses a real pain point for Wallpaper Engine content creators by solving the fragmentation and complexity of managing custom dynamic wallpaper collections. It promotes best practices through a structured framework, accelerates development with reusable templates, and supports community collaboration through open-source licensing and active engagement—making professional-quality wallpaper creation accessible to enthusiasts and developers alike.
+
+---
+
+### Dynamic Wallpaper Project Toolkit - 社区驱动的 Wallpaper Engine 内容管理系统
+
+* **功能介绍**: 这是一个基于 TypeScript 的综合工具包，为 Wallpaper Engine 的自定义动态壁纸项目提供标准化框架，包含项目模板、资源管理工具和自动化脚本，用于组织、创建和管理动态壁纸内容。
+
+* **主要特点**: 提供标准化项目结构和自动初始化功能；内置粒子效果和场景壁纸的预制模板；资源管理器用于分类媒体资源；集中式配置管理器；Wallpaper Engine API 集成脚本；多语言本地化支持；项目文档生成器。
+
+* **为何值得关注**: 该工具包获得了 398 个星标，解决了 Wallpaper Engine 内容创作者面临的实际痛点——管理自定义动态壁纸集合的复杂性和碎片化问题。通过结构化框架推广最佳实践，利用可复用模板加速开发，并通过开源许可和活跃的社区参与支持协作，使专业级壁纸创作对爱好者和开发者都触手可及。
+
+**[View Repository / 查看仓库](https://github.com/alfiyahkamilah1239298/WallpaperDownloader-26)**
 
