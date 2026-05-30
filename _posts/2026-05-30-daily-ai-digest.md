@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 30, 2026"
 date: 2026-05-30
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -520,4 +520,123 @@ pin: false
 * **为何值得关注**: 将 Pi 从顺序执行的助手转变为并行编排器,大幅提升代码库审计、多文件重构和需要多视角研究等大规模任务的效率。463 星标反映了开发者对将 Claude Code 工作流范式引入开源 Pi 生态系统的强烈兴趣。
 
 **[View Repository / 查看仓库](https://github.com/Michaelliv/pi-dynamic-workflows)**
+
+<!-- [Title-Only] -->
+### SQLite is all you need for durable workflows
+
+* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
+* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. For developers building workflow systems, this could offer a simpler, more maintainable architecture with SQLite's ACID guarantees and single-file simplicity.
+
+### SQLite 就是你构建持久化工作流所需的全部
+
+* 根据标题推测，本文可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
+* 为何值得关注：这挑战了一个常见假设——工作流引擎需要像 Kafka、PostgreSQL 集群或专用工作流数据库这样的重量级基础设施。对于构建工作流系统的开发者来说，这可能提供了一种更简单、更易维护的架构方案，利用 SQLite 的 ACID 保证和单文件简洁性。
+
+**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
+
+### Zig Programming Language Development Updates (May-March 2026)
+
+* **Build System Overhaul (May 26)**: Zig separated the build process into two distinct processes - a "configurer" (compiles `build.zig` in debug mode) and a "maker" (executes build graph in release mode), resulting in 90%+ performance improvements for `zig build --help` commands
+* **Serialized Configuration**: Build graphs are now cached as binary configuration files, eliminating redundant recompilation of the entire build system when only user code changes
+* **Breaking Change**: `b.args` pattern replaced with `addPassthruArgs()` method, removing build script's ability to observe arguments but improving rebuild performance
+* **Incremental Compilation for LLVM (April 8)**: LLVM backend now supports incremental compilation with `--watch` flag, providing millisecond compile error feedback instead of seconds
+* **Lazy Type Resolution (March 10)**: Compiler now lazily analyzes struct fields only when types are initialized, preventing unnecessary code analysis in namespace-style types (e.g., `std.Io.Writer`)
+* **Improved Developer Experience**: Types with `@compileError` fields no longer trigger errors unless those fields are actually accessed, and dependency loop error messages have been enhanced
+* **Release Timeline**: Version 0.17.0 scheduled for release within weeks of May 26, with 0.16.0 already featuring LLVM incremental compilation support
+
+### Zig 编程语言开发更新(2026年3-5月)
+
+* **构建系统重构(5月26日)**:Zig 将构建过程分离为两个独立进程——"配置器"(以调试模式编译 `build.zig`)和"制造器"(以发布模式执行构建图),使 `zig build --help` 命令性能提升超过90%
+* **序列化配置**:构建图现在缓存为二进制配置文件,当仅用户代码更改时无需重新编译整个构建系统
+* **破坏性变更**:`b.args` 模式被 `addPassthruArgs()` 方法取代,构建脚本失去观察参数的能力,但提升了重建性能
+* **LLVM 增量编译(4月8日)**:LLVM 后端现已支持增量编译(使用 `--watch` 标志),将编译错误反馈时间从秒级缩短至毫秒级
+* **惰性类型解析(3月10日)**:编译器现在仅在类型初始化时才分析结构体字段,避免命名空间式类型(如 `std.Io.Writer`)中的不必要代码分析
+* **开发体验改进**:包含 `@compileError` 字段的类型不再触发错误(除非实际访问这些字段),依赖循环错误消息也得到增强
+* **发布时间线**:0.17.0 版本计划在5月26日后数周内发布,0.16.0 版本已支持 LLVM 增量编译功能
+
+**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-05-26)**
+
+### Algebraic Effects for the Rest of Us - A Beginner's Guide
+
+* **What are algebraic effects?** A research programming language feature that's not yet production-ready, but offers a powerful new way to handle control flow in code
+* **The core concept**: Similar to `try/catch` blocks, but with a crucial difference - you can *resume* execution after handling an effect, not just catch and stop
+* **Key advantage**: Intermediate functions don't need to know about effect handling - effects "bubble up" automatically to handlers, like exceptions but resumable
+* **Current status**: Only available in experimental languages (Eff, Koka) and some LISP implementations; OCaml support is in progress
+* **Why it matters**: Could be as transformative as `async/await` was for handling asynchronous code - a mental model for cleaner separation of concerns
+* **React connection**: The React team uses algebraic effects as a mental model for features like Hooks and Suspense
+* **Learning curve**: Despite the intimidating name and academic papers, the concept is straightforward if you understand `try/catch`
+* **Timeline**: This is a "learn now, use later" technology - similar to thinking about `async/await` in 1999 before it became mainstream
+
+---
+
+### 代数效应入门指南 - 为普通开发者准备
+
+* **什么是代数效应？** 一种研究性编程语言特性，尚未投入生产使用，但为代码控制流提供了强大的新方式
+* **核心概念**：类似于 `try/catch` 代码块，但有一个关键区别 - 处理效应后可以*恢复*执行，而不仅仅是捕获后停止
+* **主要优势**：中间函数无需了解效应处理 - 效应会自动"冒泡"到处理器，类似异常但可恢复
+* **当前状态**：仅在实验性语言（Eff、Koka）和部分 LISP 实现中可用；OCaml 的支持正在开发中
+* **重要性**：可能像 `async/await` 处理异步代码一样具有变革性 - 为更清晰的关注点分离提供思维模型
+* **与 React 的联系**：React 团队将代数效应作为 Hooks 和 Suspense 等特性的思维模型
+* **学习曲线**：尽管名称令人生畏且学术论文晦涩，但如果理解 `try/catch`，概念其实很简单
+* **时间线**：这是一项"现在学习，以后使用"的技术 - 类似于在 1999 年主流化之前思考 `async/await`
+
+**[Read Original / 阅读原文](https://overreacted.io/algebraic-effects-for-the-rest-of-us/)**
+
+### 🎬 Qoder 1.0 Beginner Guide: Agentic Coding for Real Projects
+**Channel:** Lia Zhang
+
+* What the video covers: A hands-on test of Qoder, an agentic coding platform designed for multi-file, real-world software projects rather than simple code snippets
+* Key topics discussed: Qoder's capabilities for handling complex project structures, agentic coding workflows, practical use cases for production-level development
+* Why it's worth watching: Provides a beginner-friendly introduction to an emerging AI coding tool that focuses on realistic software engineering scenarios, helping developers understand how agentic systems can assist with full-scale projects
+
+---
+
+### 🎬 Qoder 1.0 初学者指南：面向真实项目的智能体编程
+**频道:** Lia Zhang
+
+* 视频内容概述: 实测 Qoder 智能体编程平台，该平台专为多文件真实软件项目设计，而非简单的单文件代码片段
+* 主要话题: Qoder 处理复杂项目结构的能力、智能体编程工作流程、生产级开发的实际应用场景
+* 为何值得观看: 为初学者友好地介绍了一款新兴 AI 编程工具，专注于真实的软件工程场景，帮助开发者了解智能体系统如何辅助完整项目开发
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ixjIQW1amPM)**
+
+### 🎬 The Internet was WRONG: Trump Phone is "Shipping"
+**Channel:** Linus Tech Tips
+
+* What the video covers: Investigation into the controversial "Trump Phone" and its actual shipping status, debunking or confirming internet speculation about the device
+* Key topics discussed: The Trump-branded smartphone's legitimacy, shipping timeline claims vs reality, product specifications and quality, business model behind the device
+* Why it's worth watching: Linus Tech Tips provides fact-based analysis cutting through online misinformation about a politically charged tech product, offering technical insights and consumer protection perspective on what appears to be a questionable device launch
+
+### 🎬 互联网错了:特朗普手机正在"发货"
+**频道:** Linus Tech Tips
+
+* 视频内容概述: 调查备受争议的"特朗普手机"及其实际发货状态,揭穿或证实互联网上关于该设备的猜测
+* 主要话题: 特朗普品牌智能手机的真实性、宣称的发货时间与实际情况对比、产品规格和质量、设备背后的商业模式
+* 为何值得观看: Linus Tech Tips 提供基于事实的分析,破除关于这款政治敏感科技产品的网络错误信息,从技术角度和消费者保护视角深入剖析这个疑点重重的设备发布
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2T8x5antlnc)**
+
+### 🎬 Crisis for Indian IT Workers in America! 15,000 Employees in Trouble | US IT Layoffs
+
+**Channel:** Saam TV News
+
+* **What the video covers:** The video reports on a crisis affecting Indian IT workers in the United States, with approximately 15,000 employees facing difficulties due to layoffs in the tech sector.
+
+* **Key topics discussed:** Mass layoffs in the US IT industry, the specific impact on Indian workers (likely H-1B visa holders), employment challenges, and the potential consequences for those affected including visa status complications.
+
+* **Why it's worth watching:** Essential viewing for Indian tech professionals working in or planning to move to the US, providing critical information about the current employment landscape and risks facing immigrant tech workers during industry downturns.
+
+---
+
+### 🎬 अमेरिकेत भारतीय IT कर्मचाऱ्यांवर संकट! 15 हजार कर्मचारी अडचणीत | US IT Layoffs
+
+**频道:** Saam TV News
+
+* **视频内容概述:** 该视频报道了美国印度IT工作者面临的危机,约15,000名员工因科技行业裁员而陷入困境。
+
+* **主要话题:** 美国IT行业大规模裁员、对印度工作者(可能是H-1B签证持有者)的具体影响、就业挑战以及受影响者可能面临的后果(包括签证身份问题)。
+
+* **为何值得观看:** 对于在美国工作或计划前往美国的印度科技专业人士来说,这是必看内容,提供了关于当前就业形势的关键信息,以及移民科技工作者在行业低迷期间面临的风险。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nMlwi5mfoA0)**
 
