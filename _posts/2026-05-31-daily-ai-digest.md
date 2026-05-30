@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 31, 2026"
 date: 2026-05-31
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -303,4 +303,240 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 简短精炼的内容帮助程序员避免在搭建开发机器时的代价高昂的错误，节省硬件问题带来的时间和金钱损失
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=83IexutmJjA)**
+
+### OpenRouter Raises $113M Series B to Scale AI Infrastructure
+
+* **Major funding round**: OpenRouter secured $113M Series B led by CapitalG (Alphabet's growth fund), with participation from NVentures (NVIDIA), ServiceNow Ventures, MongoDB Ventures, Snowflake Ventures, Databricks Ventures, and existing investors Andreessen Horowitz and Menlo Ventures
+* **Explosive growth**: Weekly token volume grew from 5 trillion to 25 trillion tokens over six months, serving 8M+ developers across 400+ models, on pace to process over a quadrillion tokens this year
+* **Strategic positioning**: OpenRouter functions as a critical routing and gateway layer between AI agents and model providers, handling routing, reliability, cost optimization, and compliance for production AI systems
+* **Expanded capabilities**: Now supports multimodal inference including image, audio, speech, transcription, embedding, and video models beyond text
+* **Enterprise features**: Introduced workspaces, spend management, guardrails, zero-data-retention policies, provider-level failover, and intelligent routing for cost, latency, and quality optimization
+* **Future plans**: Funding will scale infrastructure, deepen enterprise capabilities, and advance intelligent routing to help teams select optimal models and providers for each request
+
+### OpenRouter 完成 1.13 亿美元 B 轮融资，扩展 AI 基础设施
+
+* **重大融资轮次**：OpenRouter 获得 1.13 亿美元 B 轮融资，由 CapitalG(Alphabet 旗下增长基金)领投，NVentures(英伟达)、ServiceNow Ventures、MongoDB Ventures、Snowflake Ventures、Databricks Ventures 以及现有投资者 Andreessen Horowitz 和 Menlo Ventures 参投
+* **爆炸式增长**：六个月内每周令牌处理量从 5 万亿增长到 25 万亿，服务超过 800 万开发者使用 400 多个模型，预计今年将处理超过一千万亿个令牌
+* **战略定位**：OpenRouter 作为 AI 代理与模型提供商之间的关键路由和网关层，为生产环境 AI 系统处理路由、可靠性、成本优化和合规性
+* **功能扩展**：现已支持多模态推理，除文本外还包括图像、音频、语音、转录、嵌入和视频模型
+* **企业级功能**：推出工作空间、支出管理、护栏机制、零数据保留政策、提供商级故障转移，以及针对成本、延迟和质量优化的智能路由
+* **未来规划**：融资将用于扩展基础设施、深化企业能力，并推进智能路由技术，帮助团队为每个请求选择最优模型和提供商
+
+**[Read Original / 阅读原文](https://openrouter.ai/announcements/series-b)**
+
+### I Found a Seashell in the Middle of the Desert: A Mathematical Journey Through Ancient Marine Fossils
+
+* **Discovery**: Found a rock-solid seashell fossil at the base of a cliff in Alghat desert, Saudi Arabia, 500 km from the nearest coastline
+* **Geological context**: The Arabian Peninsula was submerged under the sea during the late Jurassic age (~150 million years ago), evidenced by carbonate rocks, marine fossils, and sedimentary structures
+* **DIY paleontology approach**: Used morphological analysis to identify the fossil by mathematically representing shell shapes from a dataset of 7,894 species and 59,244 images
+* **Shape normalization**: Standardized shells by centering, scaling, and fixing orientation (pitch, yaw, roll) to isolate pure shape from other factors
+* **Mathematical representation**: Extracted shell contours as 256 points in 2D space, creating a 256×2 matrix for each shell
+* **Distance metric**: Used squared Euclidean distance to measure similarity between shell contours
+* **Dimensionality reduction**: Applied Principal Component Analysis (PCA) to reduce 256 dimensions to 2, retaining 67.25% of variance
+* **Key findings**: PC1 captures "pointiness" (56.50% variance), PC2 captures symmetry/mass distribution; pointy shells are rougher and more diverse than round shells
+* **Fossil identification**: Closest match is *Sphincterochila candidissima*, though it dates back only 38 million years (not Jurassic), suggesting possible convergent evolution
+* **Interactive tool**: Created a web tool (shell.hawzen.me) to explore the shell latent space and compare custom shells
+
+---
+
+### 我在沙漠中央发现了一个贝壳：通过古代海洋化石的数学之旅
+
+* **发现**：在沙特阿拉伯 Alghat 沙漠的悬崖底部发现了一个完全石化的贝壳化石，距离最近的海岸线 500 公里
+* **地质背景**：阿拉伯半岛在侏罗纪晚期（约 1.5 亿年前）曾被海水淹没，碳酸盐岩、海洋化石和沉积构造证明了这一点
+* **DIY 古生物学方法**：使用形态学分析来识别化石，通过数学方式表示来自 7,894 个物种和 59,244 张图像数据集的贝壳形状
+* **形状标准化**：通过居中、缩放和固定方向（俯仰、偏航、翻滚）来标准化贝壳，从其他因素中分离出纯粹的形状
+* **数学表示**：将贝壳轮廓提取为 2D 空间中的 256 个点，为每个贝壳创建 256×2 矩阵
+* **距离度量**：使用平方欧几里得距离来测量贝壳轮廓之间的相似性
+* **降维**：应用主成分分析（PCA）将 256 维降至 2 维，保留 67.25% 的方差
+* **关键发现**：PC1 捕获"尖锐度"（56.50% 方差），PC2 捕获对称性/质量分布；尖锐的贝壳比圆形贝壳更粗糙且更多样化
+* **化石鉴定**：最接近的匹配是 *Sphincterochila candidissima*，尽管它只能追溯到 3800 万年前（非侏罗纪），暗示可能的趋同进化
+* **交互式工具**：创建了一个网络工具（shell.hawzen.me）来探索贝壳潜在空间并比较自定义贝壳
+
+**[Read Original / 阅读原文](https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert)**
+
+### Zig Programming Language Development Updates (May-April 2026)
+
+* **New ELF Linker Progress**: Matthew Lugg's new ELF linker (introduced in Zig 0.16.0) now supports building the self-hosted Zig compiler with LLVM and LLD libraries, enabling fast incremental compilation on x86_64 Linux with rebuild times around 30ms-300ms
+* **Incremental Compilation**: The new linker supports incremental rebuilds while linking external libraries and C sources without performance overhead, though DWARF debug information for Zig code is still missing
+* **Build System Refactor**: Andrew Kelley separated the build process into two components - a "configurer" (compiles build.zig in debug mode) and a "maker" (executes build graph in release mode), resulting in 90.4% faster `zig build --help` execution
+* **Performance Improvements**: The refactored build system caches configuration files, avoids redundant build.zig recompilation, and compiles the execution process with optimizations enabled
+* **Breaking Changes**: The main API change replaces `b.args` pattern with `addPassthruArgs()` method, removing the ability for build scripts to observe arguments but eliminating unnecessary rebuilds
+* **Release Timeline**: Zig 0.17.0 is scheduled for release within a couple weeks (from May 26, 2026), with 0.17.1 planned for subsequent fixes
+
+### Zig 编程语言开发更新（2026年4-5月）
+
+* **新 ELF 链接器进展**：Matthew Lugg 的新 ELF 链接器（在 Zig 0.16.0 中引入）现已支持使用 LLVM 和 LLD 库构建自托管 Zig 编译器，在 x86_64 Linux 上实现快速增量编译，重建时间约 30-300 毫秒
+* **增量编译功能**：新链接器支持在链接外部库和 C 源文件时进行增量重建，无性能开销，但仍缺少对 Zig 代码的 DWARF 调试信息支持
+* **构建系统重构**：Andrew Kelley 将构建过程分离为两个组件 - "配置器"（以调试模式编译 build.zig）和"制造器"（以发布模式执行构建图），使 `zig build --help` 执行速度提升 90.4%
+* **性能改进**：重构后的构建系统缓存配置文件，避免冗余的 build.zig 重新编译，并使用优化模式编译执行进程
+* **破坏性变更**：主要 API 变更是用 `addPassthruArgs()` 方法替换 `b.args` 模式，虽然移除了构建脚本观察参数的能力，但消除了不必要的重建
+* **发布时间线**：Zig 0.17.0 计划在几周内发布（自 2026 年 5 月 26 日起），随后将发布 0.17.1 进行后续修复
+
+**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-05-30)**
+
+### Cursor Plugins - Official Plugin Specification and Marketplace for Cursor IDE
+
+* **What it does**: A centralized repository of official plugins that extend Cursor IDE with specialized agent workflows, developer tools, and automation capabilities. Each plugin is a standalone package with its own manifest, skills, rules, and MCP server definitions.
+
+* **Key features**: 
+  - 11 official plugins covering code review, documentation, CI/CD, agent orchestration, and team workflows
+  - Plugin architecture with standardized manifests (`.cursor-plugin/plugin.json`)
+  - Agent skills system using SKILL.md files with frontmatter
+  - Notable plugins include Thermos (deep security audits), Orchestrate (parallel cloud agents), PR Review Canvas (interactive diff rendering), and Cursor SDK (TypeScript SDK for building on Cursor)
+  - Multi-plugin marketplace structure with centralized discovery
+
+* **Why it's notable**: First official plugin ecosystem for Cursor IDE, enabling developers to extend the AI-powered editor with production-grade workflows. With 206 stars today, it signals Cursor's move toward an extensible platform where teams can codify their development practices as reusable plugins. The inclusion of advanced features like parallel agent orchestration and CLI-for-agents patterns shows sophisticated AI-native tooling.
+
+---
+
+### Cursor 插件 - Cursor IDE 官方插件规范与市场
+
+* **功能介绍**: Cursor IDE 的官方插件中心仓库,提供专业的 Agent 工作流、开发工具和自动化能力扩展。每个插件都是独立的包,包含自己的清单文件、技能定义、规则和 MCP 服务器配置。
+
+* **主要特点**:
+  - 11 个官方插件,涵盖代码审查、文档生成、CI/CD、Agent 编排和团队协作流程
+  - 标准化的插件架构,使用 `.cursor-plugin/plugin.json` 清单文件
+  - 基于 SKILL.md 文件的 Agent 技能系统
+  - 重点插件包括 Thermos(深度安全审计)、Orchestrate(并行云端 Agent)、PR Review Canvas(交互式差异渲染)和 Cursor SDK(TypeScript SDK)
+  - 多插件市场结构,支持集中发现和管理
+
+* **为何值得关注**: 这是 Cursor IDE 首个官方插件生态系统,让开发者能够用生产级工作流扩展这款 AI 驱动的编辑器。今日获得 206 星标,标志着 Cursor 向可扩展平台转型,团队可以将开发实践固化为可复用插件。包含并行 Agent 编排、CLI-for-agents 模式等高级特性,展现了成熟的 AI 原生工具链设计。
+
+**[View Repository / 查看仓库](https://github.com/cursor/plugins)**
+
+### Harness - Meta-Skill Team-Architecture Factory for Claude Code
+
+* **What it does**: Automatically generates domain-specific agent teams and their skills for Claude Code. Simply say "build a harness for this project" and it analyzes your domain, selects from 6 architectural patterns (Pipeline, Fan-out/Fan-in, Expert Pool, Producer-Reviewer, Supervisor, Hierarchical Delegation), and generates agent definitions plus skills tailored to your needs.
+
+* **Key features**: 
+  - 6 pre-defined team architecture patterns for different collaboration scenarios
+  - Auto-generates `.claude/agents/` definitions and `.claude/skills/` with Progressive Disclosure
+  - Built-in orchestration for inter-agent communication, error handling, and coordination
+  - Validation framework with trigger verification and dry-run testing
+  - Works as both agent teams (collaborative) and subagents (one-off tasks)
+
+* **Why it's notable**: Operates at the L3 Meta-Factory layer—it doesn't just provide a harness, it *generates* harnesses. With 80 stars today, it's gaining traction as a team-architecture factory that transforms a single domain description into a complete multi-agent system. Particularly powerful for complex workflows like deep research, full-stack development, content production, and data pipelines where coordinated specialist agents outperform monolithic approaches.
+
+---
+
+### Harness - Claude Code 的元技能团队架构工厂
+
+* **功能介绍**: 为 Claude Code 自动生成特定领域的智能体团队及其技能。只需说"build a harness for this project"（或中文"哈内斯构成해줘"），它就会分析你的领域需求，从 6 种架构模式（流水线、扇出扇入、专家池、生产者-审查者、监督者、层级委派）中选择合适的模式，并生成定制化的智能体定义和技能。
+
+* **主要特点**:
+  - 6 种预定义团队架构模式，适配不同协作场景
+  - 自动生成 `.claude/agents/` 定义文件和 `.claude/skills/` 技能文件，采用渐进式披露策略
+  - 内置编排系统，支持智能体间数据传递、错误处理和团队协调
+  - 完整验证框架，包含触发器验证和模拟运行测试
+  - 支持智能体团队模式（协作型）和子智能体模式（单次任务型）
+
+* **为何值得关注**: 运行在 L3 元工厂层——它不是提供一个工具集，而是*生成*工具集。今日获得 80 星，作为团队架构工厂正在快速获得关注，能将单一领域描述转化为完整的多智能体系统。特别适合深度研究、全栈开发、内容制作、数据管道等需要专业智能体协同工作的复杂工作流，在这些场景中协调的专家团队明显优于单体方案。
+
+**[View Repository / 查看仓库](https://github.com/revfactory/harness)**
+
+### ADHD - Tree-of-Thought Reasoning Skill for AI Coding Agents
+
+* **What it does**: A TypeScript framework that fixes premature convergence in AI agent reasoning by spawning parallel, isolated thought processes under different cognitive frames, then scoring and pruning them through a separate critic pass
+* **Key features**: 
+  * Two-phase architecture (diverge/focus) with zero shared context during ideation
+  * 15 built-in cognitive frames for perspective-shifting
+  * Automatic trap detection and clustering of ideas
+  * Works with Claude Code, Cursor, Codex, Cline, and 50+ other agents
+  * CLI, library, and skill installation options
+* **Why it's notable**: 
+  * Addresses a fundamental architectural problem in autoregressive reasoning rather than relying on prompting tricks
+  * Shows 1.9-5.2× improvements over baseline across breadth, novelty, and trap detection in evals
+  * Already adopted by repowire (first OSS integration) and featured in The New Stack
+  * Backed by a preprint and evidence-based research review with 11 sources
+
+---
+
+### ADHD - AI 编程代理的思维树推理技能
+
+* **功能介绍**: 一个 TypeScript 框架,通过在不同认知框架下生成并行、隔离的思维过程,然后通过独立的评判阶段进行评分和剪枝,解决 AI 代理推理中的过早收敛问题
+* **主要特点**:
+  * 双阶段架构(发散/聚焦),在构思阶段零共享上下文
+  * 内置 15 种认知框架用于视角转换
+  * 自动陷阱检测和想法聚类
+  * 支持 Claude Code、Cursor、Codex、Cline 等 50 多个代理
+  * 提供 CLI、库和技能安装选项
+* **为何值得关注**:
+  * 从架构层面解决自回归推理的根本问题,而非依赖提示词技巧
+  * 评估显示在广度、新颖性和陷阱检测方面比基线提升 1.9-5.2 倍
+  * 已被 repowire 采用(首个开源集成)并被 The New Stack 专题报道
+  * 有预印本论文和基于 11 个来源的循证研究评审支持
+
+**[View Repository / 查看仓库](https://github.com/UditAkhourii/adhd)**
+
+### vibecode-pro-max-kit - Spec-Driven AI Coding Harness with Self-Improving Memory
+
+* **What it does**: A development harness that transforms AI coding agents (Claude Code, Codex, Cursor, etc.) into spec-driven engineering teams. It forces AI to research and plan before coding, maintains persistent context memory across sessions, and auto-generates PRDs and technical specifications to prevent "context rot" over time.
+
+* **Key features**: 12 specialized agents with 32 auto-discovered skills, self-improving knowledge base that compounds with each feature shipped, autonomous operation for hours without losing state, works across any tech stack (React, Python, Go, Rust, etc.), 30-second installation, shareable specs for team collaboration, lifecycle hooks for quality control.
+
+* **Why it's notable**: Solves the critical problem of AI agents forgetting context and shipping "spaghetti code" by enforcing a spec-first workflow. The self-improving memory system learns from each project iteration, making it increasingly effective over months. Designed for "vibecoders" (non-technical builders), product owners, and CEOs who want production-grade code without managing technical details. Built by engineers at flowser.ai specifically for AI-driven development workflows.
+
+---
+
+### vibecode-pro-max-kit - 具备自我改进记忆的规范驱动 AI 编码工具
+
+* **功能介绍**: 一个开发工具框架,将 AI 编码代理(Claude Code、Codex、Cursor 等)转变为规范驱动的工程团队。它强制 AI 在编码前进行研究和规划,跨会话维护持久的上下文记忆,并自动生成 PRD 和技术规范以防止长期"上下文腐烂"。
+
+* **主要特点**: 12 个专业代理配备 32 个自动发现的技能,随着功能交付不断积累的自我改进知识库,可自主运行数小时而不丢失状态,支持任何技术栈(React、Python、Go、Rust 等),30 秒安装,可共享的规范便于团队协作,生命周期钩子确保质量控制。
+
+* **为何值得关注**: 通过强制执行规范优先的工作流程,解决了 AI 代理忘记上下文和生成"意大利面代码"的关键问题。自我改进的记忆系统从每次项目迭代中学习,使其在数月内越来越有效。专为"氛围编码者"(非技术构建者)、产品负责人和 CEO 设计,无需管理技术细节即可获得生产级代码。由 flowser.ai 的工程师专门为 AI 驱动的开发工作流程构建。
+
+**[View Repository / 查看仓库](https://github.com/withkynam/vibecode-pro-max-kit)**
+
+### 🎬 Learn coding like a game #coding #programming #python
+**Channel:** SetupsAI
+
+* What the video covers: A gamified approach to learning programming, specifically Python, making the learning process more engaging and interactive
+* Key topics discussed: Coding fundamentals presented through game-like mechanics, Python programming basics, interactive learning methods
+* Why it's worth watching: Ideal for beginners who find traditional coding tutorials dry or intimidating; demonstrates how gamification can make programming more accessible and fun
+
+### 🎬 像玩游戏一样学编程 #编程 #Python
+**频道:** SetupsAI
+
+* 视频内容概述: 通过游戏化方式学习编程,特别是 Python,让学习过程更具吸引力和互动性
+* 主要话题: 通过游戏机制呈现的编程基础知识、Python 编程入门、互动式学习方法
+* 为何值得观看: 非常适合觉得传统编程教程枯燥或有畏难情绪的初学者;展示了游戏化如何让编程学习变得更易上手且充满乐趣
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=147Id-x25k8)**
+
+### 🎬 Programming Languages Difficulty Explained 💻🔥
+
+**Channel:** Python Expert
+
+* What the video covers: A comparative analysis of programming language difficulty levels, helping developers understand the learning curve and complexity of different languages
+* Key topics discussed: Difficulty rankings of popular programming languages, factors that make languages easier or harder to learn, practical considerations for choosing a language based on skill level
+* Why it's worth watching: Essential guide for beginners choosing their first language or experienced developers exploring new technologies; provides clear, practical insights into language complexity that can inform learning paths and career decisions
+
+---
+
+### 🎬 编程语言难度解析 💻🔥
+
+**频道:** Python Expert
+
+* 视频内容概述: 对比分析各种编程语言的难度等级，帮助开发者了解不同语言的学习曲线和复杂程度
+* 主要话题: 热门编程语言的难度排名、影响语言学习难易度的因素、根据技能水平选择语言的实用建议
+* 为何值得观看: 为初学者选择第一门语言或资深开发者探索新技术提供必备指南；提供清晰实用的语言复杂度见解，有助于规划学习路径和职业发展
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cBAEZJbrRRg)**
+
+### 🎬 My top 10 FREE resources for indie devs! ✨
+**Channel:** Crashsune Academy
+
+* What the video covers: A curated list of 10 free tools and resources specifically selected for independent game developers
+* Key topics discussed: Essential free software, platforms, and services that indie developers can leverage to build, publish, and promote their games without upfront costs
+* Why it's worth watching: Provides actionable, cost-effective solutions for indie devs working with limited budgets, helping them access professional-grade tools and resources to bring their projects to life
+
+### 🎬 我为独立开发者推荐的 10 个免费资源! ✨
+**频道:** Crashsune Academy
+
+* 视频内容概述: 精选了 10 个专为独立游戏开发者准备的免费工具和资源
+* 主要话题: 介绍独立开发者可以利用的免费软件、平台和服务,帮助他们在零成本的情况下开发、发布和推广游戏
+* 为何值得观看: 为预算有限的独立开发者提供实用且经济的解决方案,让他们能够使用专业级工具和资源来实现项目目标
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=I0C_AYHdFk0)**
 
