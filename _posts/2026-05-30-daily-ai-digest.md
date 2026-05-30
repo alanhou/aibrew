@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 30, 2026"
 date: 2026-05-30
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，8个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，10个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -506,69 +506,6 @@ pin: false
 
 ---
 
-### pi-dynamic-workflows - Pi 的 Claude-Code 风格动态工作流
-
-* **功能介绍**: 一个 Pi 扩展,让 AI 模型能够编写 JavaScript 工作流脚本,将任务分发给多个并行运行的隔离子代理,然后综合结果——类似 Anthropic 在 Claude Code 中的动态工作流功能。
-
-* **主要特点**:
-  - 通过 `agent()`、`parallel()` 和 `pipeline()` 原语实现扇出执行,支持并发生成子代理
-  - 基于 JSON Schema 验证的结构化输出,确保子代理响应类型安全
-  - 实时进度跟踪,支持阶段分组和取消操作(按 Esc 中止)
-  - 沙盒 VM 执行环境,保证确定性(工作流脚本中禁用随机数、Date.now 和 I/O)
-  - 每个子代理作为完整的 Pi 会话运行,具备标准编码工具(文件读取、Shell 命令)
-
-* **为何值得关注**: 将 Pi 从顺序执行的助手转变为并行编排器,大幅提升代码库审计、多文件重构和需要多视角研究等大规模任务的效率。463 星标反映了开发者对将 Claude Code 工作流范式引入开源 Pi 生态系统的强烈兴趣。
-
-**[View Repository / 查看仓库](https://github.com/Michaelliv/pi-dynamic-workflows)**
-
-<!-- [Title-Only] -->
-### SQLite is all you need for durable workflows
-
-* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
-* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. For developers building workflow systems, this could offer a simpler, more maintainable architecture with SQLite's ACID guarantees and single-file simplicity.
-
-### SQLite 就是你构建持久化工作流所需的全部
-
-* 根据标题推测，本文可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
-* 为何值得关注：这挑战了一个常见假设——工作流引擎需要像 Kafka、PostgreSQL 集群或专用工作流数据库这样的重量级基础设施。对于构建工作流系统的开发者来说，这可能提供了一种更简单、更易维护的架构方案，利用 SQLite 的 ACID 保证和单文件简洁性。
-
-**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
-
-### Zig Programming Language Development Updates (May-March 2026)
-
-* **Build System Overhaul (May 26)**: Zig separated the build process into two distinct processes - a "configurer" (compiles `build.zig` in debug mode) and a "maker" (executes build graph in release mode), resulting in 90%+ performance improvements for `zig build --help` commands
-* **Serialized Configuration**: Build graphs are now cached as binary configuration files, eliminating redundant recompilation of the entire build system when only user code changes
-* **Breaking Change**: `b.args` pattern replaced with `addPassthruArgs()` method, removing build script's ability to observe arguments but improving rebuild performance
-* **Incremental Compilation for LLVM (April 8)**: LLVM backend now supports incremental compilation with `--watch` flag, providing millisecond compile error feedback instead of seconds
-* **Lazy Type Resolution (March 10)**: Compiler now lazily analyzes struct fields only when types are initialized, preventing unnecessary code analysis in namespace-style types (e.g., `std.Io.Writer`)
-* **Improved Developer Experience**: Types with `@compileError` fields no longer trigger errors unless those fields are actually accessed, and dependency loop error messages have been enhanced
-* **Release Timeline**: Version 0.17.0 scheduled for release within weeks of May 26, with 0.16.0 already featuring LLVM incremental compilation support
-
-### Zig 编程语言开发更新(2026年3-5月)
-
-* **构建系统重构(5月26日)**:Zig 将构建过程分离为两个独立进程——"配置器"(以调试模式编译 `build.zig`)和"制造器"(以发布模式执行构建图),使 `zig build --help` 命令性能提升超过90%
-* **序列化配置**:构建图现在缓存为二进制配置文件,当仅用户代码更改时无需重新编译整个构建系统
-* **破坏性变更**:`b.args` 模式被 `addPassthruArgs()` 方法取代,构建脚本失去观察参数的能力,但提升了重建性能
-* **LLVM 增量编译(4月8日)**:LLVM 后端现已支持增量编译(使用 `--watch` 标志),将编译错误反馈时间从秒级缩短至毫秒级
-* **惰性类型解析(3月10日)**:编译器现在仅在类型初始化时才分析结构体字段,避免命名空间式类型(如 `std.Io.Writer`)中的不必要代码分析
-* **开发体验改进**:包含 `@compileError` 字段的类型不再触发错误(除非实际访问这些字段),依赖循环错误消息也得到增强
-* **发布时间线**:0.17.0 版本计划在5月26日后数周内发布,0.16.0 版本已支持 LLVM 增量编译功能
-
-**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-05-26)**
-
-### Algebraic Effects for the Rest of Us - A Beginner's Guide
-
-* **What are algebraic effects?** A research programming language feature that's not yet production-ready, but offers a powerful new way to handle control flow in code
-* **The core concept**: Similar to `try/catch` blocks, but with a crucial difference - you can *resume* execution after handling an effect, not just catch and stop
-* **Key advantage**: Intermediate functions don't need to know about effect handling - effects "bubble up" automatically to handlers, like exceptions but resumable
-* **Current status**: Only available in experimental languages (Eff, Koka) and some LISP implementations; OCaml support is in progress
-* **Why it matters**: Could be as transformative as `async/await` was for handling asynchronous code - a mental model for cleaner separation of concerns
-* **React connection**: The React team uses algebraic effects as a mental model for features like Hooks and Suspense
-* **Learning curve**: Despite the intimidating name and academic papers, the concept is straightforward if you understand `try/catch`
-* **Timeline**: This is a "learn now, use later" technology - similar to thinking about `async/await` in 1999 before it became mainstream
-
----
-
 ### 代数效应入门指南 - 为普通开发者准备
 
 * **什么是代数效应？** 一种研究性编程语言特性，尚未投入生产使用，但为代码控制流提供了强大的新方式
@@ -639,4 +576,208 @@ pin: false
 * **为何值得观看:** 对于在美国工作或计划前往美国的印度科技专业人士来说,这是必看内容,提供了关于当前就业形势的关键信息,以及移民科技工作者在行业低迷期间面临的风险。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=nMlwi5mfoA0)**
+
+<!-- [Title-Only] -->
+### Pandoc Templates
+
+* Based on the title, this article likely covers a collection of templates for Pandoc, the universal document converter that can transform files between different markup formats (Markdown, LaTeX, HTML, etc.)
+* Why it might be interesting to readers: If you work with technical documentation, academic writing, or need to convert documents between formats regularly, having ready-made templates can save significant time and ensure consistent formatting across your documents. This resource probably provides pre-built templates for common output formats like PDFs, presentations, or web pages.
+
+### Pandoc 模板
+
+* 根据标题推测，这篇文章可能介绍了 Pandoc 的模板集合。Pandoc 是一个通用文档转换器，可以在不同标记格式（Markdown、LaTeX、HTML 等）之间转换文件
+* 为何值得关注：如果你从事技术文档编写、学术写作，或者需要经常在不同格式之间转换文档，现成的模板可以节省大量时间，并确保文档格式的一致性。这个资源可能提供了常见输出格式（如 PDF、演示文稿或网页）的预构建模板
+
+**[Read Original / 阅读原文](https://pandoc-templates.org/)**
+
+### Zig Programming Language Development Updates (May-March 2026)
+
+* **Build System Overhaul (May 26)**: Zig separated the build process into two distinct processes - a "configurer" (compiles `build.zig` in debug mode) and a "maker" (executes build graph in release mode), resulting in 90%+ performance improvements for `zig build --help` commands
+* **Serialized Configuration**: Build graphs are now cached as binary configuration files, eliminating redundant recompilation of the entire build system when only user code changes
+* **Breaking Change**: `b.args` pattern replaced with `addPassthruArgs()` method, removing build script's ability to observe arguments but improving rebuild performance
+* **Incremental Compilation for LLVM (April 8)**: LLVM backend now supports incremental compilation with `--watch` flag, providing millisecond compile error feedback instead of seconds
+* **Lazy Type Resolution (March 10)**: Compiler now lazily analyzes struct fields only when types are initialized, preventing unnecessary code analysis in namespace-style types (e.g., `std.Io.Writer`)
+* **Improved Developer Experience**: Types with `@compileError` fields no longer trigger errors unless those fields are actually accessed, and dependency loop error messages have been enhanced
+* **Release Timeline**: Version 0.17.0 scheduled for release within weeks of May 26, with 0.16.0 already featuring LLVM incremental compilation support
+
+### Zig 编程语言开发更新(2026年3-5月)
+
+* **构建系统重构(5月26日)**:Zig 将构建过程分离为两个独立进程——"配置器"(以调试模式编译 `build.zig`)和"制造器"(以发布模式执行构建图),使 `zig build --help` 命令性能提升超过90%
+* **序列化配置**:构建图现在缓存为二进制配置文件,当仅用户代码更改时无需重新编译整个构建系统
+* **破坏性变更**:`b.args` 模式被 `addPassthruArgs()` 方法取代,构建脚本失去观察参数的能力,但提升了重建性能
+* **LLVM 增量编译(4月8日)**:LLVM 后端现已支持增量编译(使用 `--watch` 标志),将编译错误反馈时间从秒级降至毫秒级
+* **惰性类型解析(3月10日)**:编译器现在仅在类型初始化时才分析结构体字段,避免命名空间式类型(如 `std.Io.Writer`)中的不必要代码分析
+* **开发体验改进**:包含 `@compileError` 字段的类型不再触发错误(除非实际访问这些字段),依赖循环错误消息也得到增强
+* **发布时间线**:0.17.0 版本计划在5月26日后数周内发布,0.16.0 版本已支持 LLVM 增量编译功能
+
+**[Read Original / 阅读原文](https://ziglang.org/devlog/2026/#2026-05-26)**
+
+### Proposed US Funding Rules: Grants Can Be Canceled Anytime - Analysis
+
+* **New OMB rules allow arbitrary grant cancellation** - The Trump administration's Office of Management and Budget proposes regulations permitting termination of any federal grant "at any time" based on shifting political priorities
+* **Culture war targets scientific funding** - The rules explicitly ban funding for research on "gender ideology," disparate impact theories, and DEI initiatives, framing these as threats to "scientific inquiry" and "national security"
+* **PEPFAR cancellation cited as precedent** - The HIV prevention program in Africa was terminated despite estimates of hundreds of thousands of potential deaths, justified by claims it promoted "abortion and gender ideology"
+* **Selective viewpoint discrimination** - While demanding "viewpoint neutral" behavior from grant recipients, the rules themselves engage in explicit ideological filtering, banning research on topics like chromosomal disorders that challenge "sex binary" assumptions
+* **McCarthy-era political litmus tests return** - Applicants' affiliations with organizations deemed to "undermine public safety" or "advocate for overthrow of government" can disqualify them from funding, echoing Cold War-era loyalty investigations
+* **Heritage Foundation influence** - Far-right think tank editorials are cited as authoritative sources for policy justifications, signaling the ideological framework driving these changes
+
+---
+
+### 美国拟议新资助规则：可随时取消任何拨款 - 分析
+
+* **新规允许任意取消拨款** - 特朗普政府管理和预算办公室（OMB）提议的法规允许根据不断变化的政治优先事项"随时"终止任何联邦拨款
+* **文化战争瞄准科学资助** - 规则明确禁止资助"性别意识形态"、差异影响理论和DEI（多元、公平、包容）倡议的研究，将这些框定为对"科学探究"和"国家安全"的威胁
+* **PEPFAR取消作为先例** - 非洲艾滋病预防项目被终止，尽管估计可能导致数十万人死亡，但被以该项目推广"堕胎和性别意识形态"为由正当化
+* **选择性观点歧视** - 虽然要求拨款接受者保持"观点中立"，但规则本身进行明确的意识形态过滤，禁止研究染色体疾病等挑战"性别二元论"假设的课题
+* **麦卡锡时代政治忠诚测试回归** - 申请人与被认为"破坏公共安全"或"主张推翻政府"的组织的关联可能取消其资助资格，呼应冷战时期的忠诚调查
+* **传统基金会影响力** - 极右翼智库的社论被引用为政策理由的权威来源，显示推动这些变革的意识形态框架
+
+**[Read Original / 阅读原文](https://arstechnica.com/science/2026/05/the-office-of-management-and-budget-tries-again-to-cripple-us-science/)**
+
+
+## 🔥 GitHub Trending / GitHub 热门项目
+
+### Cursor Plugins - Official Plugin Specification and Marketplace for Cursor IDE
+
+* **What it does**: A centralized repository of official plugins that extend Cursor IDE with specialized agent workflows, developer tools, and automation capabilities. Each plugin is a standalone package with skills, rules, and MCP server definitions that enhance Cursor's AI coding assistant.
+
+* **Key features**: 
+  - 11 official plugins covering deep code review (Thermos), team workflows, documentation rendering, parallel agent orchestration, and SDK integrations
+  - Standardized plugin architecture with `.cursor-plugin/plugin.json` manifests, agent skills (SKILL.md), and Cursor rules (.mdc files)
+  - Notable plugins include Thermos (security/correctness audits), Orchestrate (parallel cloud agents), PR Review Canvas (interactive diff rendering), and pstack (rigorous agent workflows)
+  - Multi-plugin marketplace structure with centralized discovery via `marketplace.json`
+
+* **Why it's notable**: This is Cursor's official plugin ecosystem launch, providing a standardized way to extend the popular AI-powered IDE. With 206 stars today, it signals Cursor's move toward an extensible platform where developers can customize AI agent behavior for specific workflows like CI/CD, code review, and documentation. The inclusion of advanced features like parallel agent orchestration and MCP (Model Context Protocol) integration shows Cursor pushing the boundaries of AI-assisted development tooling.
+
+---
+
+### Cursor 插件 - Cursor IDE 官方插件规范与市场
+
+* **功能介绍**: Cursor IDE 的官方插件中心仓库,提供专业的 AI 代理工作流、开发工具和自动化能力扩展。每个插件都是独立的包,包含技能定义、规则和 MCP 服务器配置,增强 Cursor 的 AI 编码助手功能。
+
+* **主要特点**:
+  - 包含 11 个官方插件,涵盖深度代码审查(Thermos)、团队协作流程、文档渲染、并行代理编排和 SDK 集成等场景
+  - 标准化插件架构,使用 `.cursor-plugin/plugin.json` 清单、代理技能文件(SKILL.md)和 Cursor 规则(.mdc 文件)
+  - 重点插件包括 Thermos(安全/正确性审计)、Orchestrate(并行云代理)、PR Review Canvas(交互式差异渲染)和 pstack(严格的代理工作流)
+  - 多插件市场结构,通过 `marketplace.json` 实现集中发现
+
+* **为何值得关注**: 这是 Cursor 官方推出的插件生态系统,为这款热门 AI 驱动 IDE 提供了标准化的扩展方式。今日获得 206 星标,标志着 Cursor 向可扩展平台转型,开发者可以针对 CI/CD、代码审查、文档生成等特定工作流定制 AI 代理行为。包含并行代理编排和 MCP(模型上下文协议)集成等高级功能,展示了 Cursor 在 AI 辅助开发工具领域的前沿探索。
+
+**[View Repository / 查看仓库](https://github.com/cursor/plugins)**
+
+### Harness - Meta-Skill Team-Architecture Factory for Claude Code
+
+* **What it does**: Automatically generates domain-specific agent teams and their skills for Claude Code. Simply say "build a harness for this project" and it analyzes your domain, selects an appropriate team architecture pattern, and creates agent definitions plus skills tailored to your needs.
+
+* **Key features**: 
+  - 6 pre-defined team architecture patterns (Pipeline, Fan-out/Fan-in, Expert Pool, Producer-Reviewer, Supervisor, Hierarchical Delegation)
+  - Auto-generates agent definitions (`.claude/agents/`) and skills (`.claude/skills/`)
+  - Progressive Disclosure for efficient context management
+  - Built-in validation with trigger verification and dry-run testing
+  - Works as both Claude Code plugin and global skill
+
+* **Why it's notable**: Operates at the L3 Meta-Factory layer—it doesn't just provide a harness, it *generates* harnesses. With 313 stars today, it's gaining traction as a team-architecture factory that transforms a simple domain description into a coordinated multi-agent system. Particularly useful for complex workflows like deep research, full-stack development, content production, and code review where multiple specialized agents need to collaborate.
+
+---
+
+### Harness - Claude Code 的元技能团队架构工厂
+
+* **功能介绍**: 为 Claude Code 自动生成特定领域的智能体团队及其技能。只需说"build a harness for this project"(或中文"哈内斯 构成해줘"),它就会分析你的领域需求,选择合适的团队架构模式,并创建定制的智能体定义和技能文件。
+
+* **主要特点**:
+  - 6 种预定义团队架构模式(流水线、扇出扇入、专家池、生产者-审查者、监督者、层级委派)
+  - 自动生成智能体定义文件(`.claude/agents/`)和技能文件(`.claude/skills/`)
+  - 渐进式披露机制实现高效上下文管理
+  - 内置验证功能,包括触发器验证和模拟运行测试
+  - 可作为 Claude Code 插件或全局技能使用
+
+* **为何值得关注**: 运行在 L3 元工厂层——它不只是提供一个工具集,而是*生成*工具集。今日获得 313 星标,作为团队架构工厂正在快速获得关注,能将简单的领域描述转化为协调的多智能体系统。特别适用于深度研究、全栈开发、内容制作、代码审查等需要多个专业智能体协作的复杂工作流。
+
+**[View Repository / 查看仓库](https://github.com/revfactory/harness)**
+
+### pi-dynamic-workflows - Claude-Code-style Dynamic Workflows for Pi
+
+* **What it does**: A Pi extension that enables the AI model to write JavaScript workflow scripts that distribute work across multiple isolated subagents running in parallel, then synthesize their results—similar to Anthropic's dynamic workflows in Claude Code.
+
+* **Key features**: 
+  * Fan-out execution with `agent()`, `parallel()`, and `pipeline()` primitives for concurrent subagent spawning
+  * Live progress tracking with phase grouping and cancellation support (press Esc)
+  * Structured output via JSON Schema validation for subagent responses
+  * Sandboxed VM execution with deterministic rules (no random, Date.now, or I/O)
+  * Each subagent runs as a full Pi session with standard coding tools (file reading, shell commands)
+
+* **Why it's notable**: Transforms Pi from a sequential assistant into a multi-agent orchestrator, making it highly effective for large-scale tasks like codebase audits, multi-perspective reviews, and fan-out research. The 508 stars reflect strong interest in bringing Claude Code's workflow paradigm to the open-source Pi ecosystem.
+
+---
+
+### pi-dynamic-workflows - Pi 的 Claude-Code 风格动态工作流
+
+* **功能介绍**: 一个 Pi 扩展,让 AI 模型能够编写 JavaScript 工作流脚本,将任务分发给多个并行运行的隔离子代理,然后综合结果——类似 Anthropic 在 Claude Code 中的动态工作流功能。
+
+* **主要特点**:
+  * 通过 `agent()`、`parallel()` 和 `pipeline()` 原语实现扇出执行和并发子代理生成
+  * 实时进度跟踪,支持阶段分组和取消操作(按 Esc 键)
+  * 通过 JSON Schema 验证实现子代理的结构化输出
+  * 沙盒 VM 执行环境,具有确定性规则(禁用随机数、Date.now 和 I/O)
+  * 每个子代理作为完整的 Pi 会话运行,具备标准编码工具(文件读取、Shell 命令)
+
+* **为何值得关注**: 将 Pi 从顺序执行的助手转变为多代理编排器,在代码库审计、多视角评审和扇出研究等大规模任务中表现出色。508 星标反映了开发者对将 Claude Code 工作流范式引入开源 Pi 生态系统的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/Michaelliv/pi-dynamic-workflows)**
+
+### 🎬 Have you used the has selector in CSS? According to Chris Coyier, it's a game-changer.
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Chris Coyier explores the CSS `:has()` selector and other modern CSS features that are transforming web development
+* Key topics discussed: The `:has()` pseudo-class (often called the "parent selector"), its practical applications, and how it changes CSS styling patterns
+* Why it's worth watching: Learn from CSS expert Chris Coyier about a powerful selector that enables parent-based styling without JavaScript, making CSS more expressive and reducing the need for workarounds
+
+---
+
+### 🎬 CSS 的 has 选择器你用过吗? Chris Coyier 认为它改变了游戏规则
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Chris Coyier 深入讲解 CSS `:has()` 选择器及其他现代 CSS 特性如何改变 Web 开发方式
+* 主要话题: `:has()` 伪类选择器(常被称为"父选择器")的工作原理、实际应用场景,以及它如何改变 CSS 样式编写模式
+* 为何值得观看: 跟随 CSS 专家 Chris Coyier 学习这个强大的选择器,它能实现基于子元素的父元素样式控制,无需 JavaScript,让 CSS 更具表现力并减少变通方案的使用
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5Cm0Lr-HPDk)**
+
+### 🎬 Don't make this painful PC building mistake!
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A common mistake developers make when building PCs that can cause significant problems
+* Key topics discussed: PC hardware assembly pitfalls, coding setup optimization, developer workstation best practices
+* Why it's worth watching: Short-form content that helps programmers avoid costly errors when setting up their development machines, potentially saving time and money on hardware issues
+
+---
+
+### 🎬 别犯这个痛苦的组装电脑错误！
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 开发者在组装电脑时常犯的一个错误，可能导致严重问题
+* 主要话题: PC 硬件组装陷阱、编程环境优化、开发者工作站最佳实践
+* 为何值得观看: 简短精炼的内容帮助程序员避免在搭建开发机器时的代价高昂的错误，节省硬件问题带来的时间和金钱损失
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=83IexutmJjA)**
+
+### 🎬 My top 10 FREE resources for indie devs! ✨
+**Channel:** Crashsune Academy
+
+* What the video covers: A curated list of 10 free tools and resources specifically selected for independent game developers
+* Key topics discussed: Essential free software, platforms, and services that indie developers can leverage to build, publish, and promote their games without upfront costs
+* Why it's worth watching: Provides actionable, cost-effective solutions for indie devs working with limited budgets, helping them access professional-grade tools and resources to bring their projects to life
+
+### 🎬 我为独立开发者推荐的 10 个免费资源! ✨
+**频道:** Crashsune Academy
+
+* 视频内容概述: 精选了 10 个专为独立游戏开发者准备的免费工具和资源
+* 主要话题: 介绍独立开发者可以利用的免费软件、平台和服务,帮助他们在零成本的情况下开发、发布和推广游戏
+* 为何值得观看: 为预算有限的独立开发者提供实用且经济的解决方案,让他们能够使用专业级工具和资源来实现项目目标
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=I0C_AYHdFk0)**
 
