@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 30, 2026"
 date: 2026-05-30
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -392,81 +392,6 @@ pin: false
 
 ---
 
-### 🎬 在 Scratch 中突破物理限制
-
-**频道:** Dare2Share
-
-* 视频内容概述: 教程展示如何在 Scratch 中突破物理限制，创建沙子下落效果
-* 主要话题: Scratch 编程技巧、物理模拟解决方案、粒子效果实现、视觉效果的创意编程方法
-* 为何值得观看: 学习在 Scratch 中模拟真实沙子物理效果的实用技巧，适合游戏开发者和教育工作者在 Scratch 的限制条件下创建引人入胜的视觉效果
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=E8RLTc0bj04)**
-
-<!-- [Title-Only] -->
-### SQLite is all you need for durable workflows
-
-* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
-* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. It's relevant for developers seeking simpler, more maintainable architectures, especially for small to medium-scale systems where SQLite's single-file simplicity and ACID guarantees might be sufficient.
-
-### SQLite 就是你构建持久化工作流所需的全部
-
-* 根据标题推测，这篇文章可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
-* 为何值得关注：这挑战了工作流引擎需要重量级基础设施（如 Kafka、PostgreSQL 集群或专用工作流数据库）的常见假设。对于寻求更简单、更易维护架构的开发者来说很有价值，特别是对于中小规模系统，SQLite 的单文件简洁性和 ACID 保证可能就已足够。
-
-**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
-
-### The Dead Economy Theory: AI's Threat to Labor Markets and Consumer Demand
-
-* **The Dead Internet, Now the Dead Economy**: Just as bots increasingly dominate online content, AI threatens to hollow out the economy by replacing human workers at scale
-* **Trillion-Dollar Labor Replacement**: AI companies like OpenAI ($800B+ valuation) and Anthropic need massive returns, requiring elimination of human labor costs across entire industries
-* **The Three-Turn Collapse**: Companies cut workers using AI → displaced workers stop spending → businesses lose customers who were other companies' employees
-* **The AI Layoff Trap**: Each firm captures full cost savings from automation but shares demand destruction across competitors, creating a race to collective economic ruin
-* **Speed vs. Historical Precedent**: Previous automation transitions took 70-140 years; AI displacement could happen in 2 years, with no guarantee new jobs will emerge
-* **Excessive Automation**: Nobel economist Daron Acemoglu finds firms deploy AI to eliminate jobs without genuine productivity gains, prioritizing stock prices over economic health
-* **The Horse Analogy**: Economist Wassily Leontief warned in 1983 that humans could become economically obsolete like horses after the combustion engine—no economic law prevents this
-
-### 死亡经济理论：AI对劳动力市场和消费需求的威胁
-
-* **从死亡互联网到死亡经济**：正如机器人日益主导在线内容，AI威胁通过大规模取代人类工人来掏空经济
-* **万亿美元的劳动力替代**：OpenAI（估值超8000亿美元）和Anthropic等AI公司需要巨额回报，这要求在整个行业消除人力成本
-* **三步崩溃循环**：公司用AI裁员→失业工人停止消费→企业失去客户（这些客户本是其他公司的员工）
-* **AI裁员陷阱**：每家公司获得自动化的全部成本节省，但需求破坏由竞争对手共同承担，形成集体经济毁灭的竞赛
-* **速度vs历史先例**：以往自动化转型需70-140年；AI替代可能在2年内发生，新工作岗位能否出现毫无保证
-* **过度自动化**：诺贝尔经济学奖得主达龙·阿西莫格鲁发现，企业部署AI消灭工作岗位却无真正生产力提升，优先考虑股价而非经济健康
-* **马匹类比**：经济学家瓦西里·列昂惕夫1983年警告，人类可能像内燃机出现后的马匹一样在经济上变得过时——没有经济规律能阻止这一点
-
-**[Read Original / 阅读原文](https://www.owenmcgrann.com/p/the-dead-economy-theory)**
-
-### Snowboard Kids 2 Achieves 100% Decompilation Milestone
-
-* **Complete decompilation achieved**: All game functions have been reimplemented in C, with assembly matching the original N64 game, transforming MIPS assembly into readable, modifiable code
-* **Two-year community effort**: Project started in September 2024 with significant contributions from the N64 decompilation Discord community, particularly Bl00D4NGEL, inspectredc, SlaveOfIDO, and queueRAM
-* **AI-assisted development**: Coding agents (Claude, GLM, Codex 5.5 xhigh) accelerated the decompilation process, with GLM offering the best value for money
-* **Recompilation in progress**: High-quality recompilation already in good state with widescreen support and expanded draw distance, though bugs remain before public release
-* **Future plans**: Work continues on improving documentation and naming conventions, extracting graphics/audio assets, and potentially starting a Snowboard Kids 1 decompilation for a combined "Super Snowboard Kids" project
-* **Personal milestone**: Final functions were completed while the developer was in hospital with his newborn daughter, using decompilation as a productive distraction
-
-### 《雪地滑板小子2》实现100%反编译
-
-* **完成完整反编译**：所有游戏函数已用C语言重新实现，汇编代码与原版N64游戏完全匹配，将MIPS汇编转换为可读、可修改的代码
-* **两年社区协作成果**：项目始于2024年9月，N64反编译Discord社区做出重大贡献，特别是Bl00D4NGEL、inspectredc、SlaveOfIDO和queueRAM等成员
-* **AI辅助开发**：编程智能体（Claude、GLM、Codex 5.5 xhigh）加速了反编译进程，其中GLM性价比最高
-* **重编译进行中**：高质量重编译版本已初具规模，支持宽屏和扩展绘制距离，但在公开发布前仍需修复漏洞
-* **未来计划**：继续改进文档和命名规范，提取图形/音频资源，并可能启动《雪地滑板小子1》反编译项目，打造合并两代游戏的"超级雪地滑板小子"
-* **个人里程碑**：开发者在医院陪伴新生女儿期间完成了最后几个函数，将反编译作为有益的消遣方式
-
-**[Read Original / 阅读原文](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/)**
-
-### KMS Pico Educational Toolkit - A Controlled Learning Environment for Understanding Software Activation
-
-* **What it does**: Provides a documented, isolated toolkit for studying KMS (Key Management Service) activation mechanisms in safe lab environments, focusing on educational exploration of software licensing and activation protocols without impacting production systems.
-
-* **Key features**: Includes educational documentation on KMS principles, lab environment setup scripts for virtual machines, activation analysis tools for examining logs and network traffic, security auditing checklists, compliance verification aids, and technical reference materials covering protocols like RPC. Emphasizes use within isolated environments (VMs, segmented networks) with clear ethical guidelines.
-
-* **Why it's notable**: Addresses the gap in structured, responsible educational resources for IT professionals, security researchers, and students studying software activation technologies. With 449 stars, it's gaining attention for providing a transparent, well-documented approach to understanding complex licensing mechanisms while explicitly promoting ethical use, isolated testing, and compliance awareness—filling a niche for academic and professional training in system administration and cybersecurity.
-
----
-
 ### KMS Pico 教育工具包 - 用于理解软件激活的受控学习环境
 
 * **功能介绍**: 提供一个有文档支持的隔离工具包，用于在安全的实验室环境中研究 KMS(密钥管理服务)激活机制，专注于软件许可和激活协议的教育探索，不影响生产系统。
@@ -512,4 +437,87 @@ pin: false
 * 为何值得观看: 了解前沿的离线AI技术，提供隐私保护、零延迟和网络独立性——非常适合关注数据隐私或在低网络环境下工作的开发者和用户
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=PAxZEvwVmII)**
+
+### Perry – TypeScript to Native: Cross-Platform Compilation Without Runtime Overhead
+
+* **Latest release (v0.5.306)** introduces generational garbage collection and lazy JSON tape as default, achieving faster performance than Node.js and Bun on most benchmarks
+* **Cross-platform native compilation**: Perry compiles TypeScript directly to native binaries for macOS, iPadOS, iOS, Android, Linux, Windows, watchOS, tvOS, WebAssembly, and web platforms
+* **No runtime dependencies**: Unlike Electron-based solutions, Perry produces standalone native executables without bundling a runtime environment
+* **Supports both GUI and CLI applications**: Single codebase can target both graphical user interfaces and command-line tools across all supported platforms
+* **Lightweight output**: Example shows a compiled executable at only 2.3 MB, significantly smaller than typical Electron app bundles
+* **Simple workflow**: Single command (`perry compile`) transforms TypeScript source code into platform-specific native binaries
+
+### Perry – TypeScript 原生编译:无运行时开销的跨平台方案
+
+* **最新版本 (v0.5.306)** 引入分代垃圾回收和默认惰性 JSON tape,在大多数基准测试中性能超越 Node.js 和 Bun
+* **跨平台原生编译**:Perry 将 TypeScript 直接编译为原生二进制文件,支持 macOS、iPadOS、iOS、Android、Linux、Windows、watchOS、tvOS、WebAssembly 和 Web 平台
+* **无运行时依赖**:与基于 Electron 的方案不同,Perry 生成独立的原生可执行文件,无需捆绑运行时环境
+* **同时支持 GUI 和 CLI 应用**:单一代码库可针对所有支持平台构建图形界面和命令行工具
+* **轻量级输出**:示例显示编译后的可执行文件仅 2.3 MB,远小于典型的 Electron 应用包体积
+* **简洁工作流**:单条命令 (`perry compile`) 即可将 TypeScript 源代码转换为特定平台的原生二进制文件
+
+**[Read Original / 阅读原文](https://www.perryts.com/)**
+
+<!-- [Title-Only] -->
+### SQLite is all you need for durable workflows
+
+* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
+* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. For developers building workflow systems, this could offer a simpler, more maintainable architecture with SQLite's ACID guarantees and single-file simplicity.
+
+### SQLite 就是你构建持久化工作流所需的全部
+
+* 根据标题推测，这篇文章可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
+* 为何值得关注：这挑战了一个常见假设——工作流引擎需要像 Kafka、PostgreSQL 集群或专用工作流数据库这样的重量级基础设施。对于构建工作流系统的开发者来说，这可能提供了一种更简单、更易维护的架构，利用 SQLite 的 ACID 保证和单文件的简洁性。
+
+**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
+
+### Snowboard Kids 2 Achieves 100% Decompilation Milestone
+
+* **Complete decompilation achieved**: All game functions have been reimplemented in C, compiling to assembly that matches the original N64 game
+* **Two-year community effort**: Project started in September 2024 with significant contributions from the N64 decompilation Discord community, including Bl00D4NGEL, inspectredc, SlaveOfIDO, and queueRAM
+* **AI-assisted development**: Coding agents (Claude, GLM, Codex 5.5 xhigh) accelerated the decompilation process, with GLM offering the best value for money
+* **Personal milestone**: Final matches completed while the author was in hospital with his newborn daughter
+* **Transforms game accessibility**: Converts MIPS assembly into readable C code, enabling modding, asset extraction, and deeper understanding of game mechanics
+* **Next steps planned**: Focus shifts to releasing a high-quality recompilation with widescreen support and expanded draw distance, plus potential "Super Snowboard Kids" combining both games
+
+### 《雪地滑板小子2》实现100%反编译
+
+* **完成完整反编译**：所有游戏函数已用C语言重新实现，编译后的汇编代码与原版N64游戏完全匹配
+* **两年社区协作成果**：项目始于2024年9月，N64反编译Discord社区成员做出重大贡献，包括Bl00D4NGEL、inspectredc、SlaveOfIDO和queueRAM
+* **AI辅助开发**：编程智能体（Claude、GLM、Codex 5.5 xhigh）加速了反编译进程，其中GLM性价比最高
+* **个人里程碑**：作者在医院陪伴新生女儿期间完成了最后的匹配工作
+* **提升游戏可访问性**：将MIPS汇编转换为可读的C代码，支持模组制作、资源提取和深入理解游戏机制
+* **后续计划**：重点转向发布高质量重编译版本（支持宽屏和扩展渲染距离），并考虑开发"超级雪地滑板小子"合并两代游戏内容
+
+**[Read Original / 阅读原文](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/)**
+
+### pi-dynamic-workflows - Claude-Code-style Dynamic Workflows for Pi
+
+* **What it does**: A Pi extension that enables the AI model to write JavaScript workflow scripts that distribute work across multiple isolated subagents running in parallel, then synthesize their results—similar to Anthropic's dynamic workflows in Claude Code.
+
+* **Key features**: 
+  - Fan-out execution with `agent()`, `parallel()`, and `pipeline()` primitives for concurrent subagent spawning
+  - Structured output via JSON Schema validation for type-safe subagent responses
+  - Live progress tracking with phase grouping and cancellation support (Esc to abort)
+  - Sandboxed VM execution with determinism guarantees (no random, Date.now, or I/O in workflow scripts)
+  - Each subagent runs as a full Pi session with standard coding tools (file reading, shell commands)
+
+* **Why it's notable**: Transforms Pi from a sequential assistant into a parallel orchestrator, making it dramatically more efficient for large-scale tasks like codebase audits, multi-file refactors, and research that benefits from multiple perspectives. The 463 stars reflect strong interest in bringing Claude Code's workflow paradigm to the open-source Pi ecosystem.
+
+---
+
+### pi-dynamic-workflows - Pi 的 Claude-Code 风格动态工作流
+
+* **功能介绍**: 一个 Pi 扩展,让 AI 模型能够编写 JavaScript 工作流脚本,将任务分发给多个并行运行的隔离子代理,然后综合结果——类似 Anthropic 在 Claude Code 中的动态工作流功能。
+
+* **主要特点**:
+  - 通过 `agent()`、`parallel()` 和 `pipeline()` 原语实现扇出执行,支持并发生成子代理
+  - 基于 JSON Schema 验证的结构化输出,确保子代理响应类型安全
+  - 实时进度跟踪,支持阶段分组和取消操作(按 Esc 中止)
+  - 沙盒 VM 执行环境,保证确定性(工作流脚本中禁用随机数、Date.now 和 I/O)
+  - 每个子代理作为完整的 Pi 会话运行,具备标准编码工具(文件读取、Shell 命令)
+
+* **为何值得关注**: 将 Pi 从顺序执行的助手转变为并行编排器,大幅提升代码库审计、多文件重构和需要多视角研究等大规模任务的效率。463 星标反映了开发者对将 Claude Code 工作流范式引入开源 Pi 生态系统的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/Michaelliv/pi-dynamic-workflows)**
 
