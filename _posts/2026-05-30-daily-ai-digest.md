@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 30, 2026"
 date: 2026-05-30
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -220,99 +220,6 @@ pin: false
 
 ---
 
-### 🎬 美国印度IT员工面临危机！15000名员工陷入困境 | 美国IT裁员潮
-
-**频道:** Saam TV News
-
-* **视频内容概述:** 该视频报道了美国印度IT工作者面临的危机，由于科技行业裁员，约15000名员工陷入困境。
-
-* **主要话题:**
-  - 大规模裁员对在美印度IT专业人士的影响
-  - 危机规模（15000名工作者受影响）
-  - 受影响员工面临的挑战，可能包括签证身份问题和工作保障
-
-* **为何值得观看:** 对于在美国工作或计划前往美国的印度科技专业人士来说，这是必看内容，因为它提供了关于当前就业形势和美国IT行业潜在风险的关键信息。该视频为理解印度侨民在科技领域面临的移民和就业挑战提供了重要背景。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nMlwi5mfoA0)**
-
-<!-- [Title-Only] -->
-### SQLite is all you need for durable workflows
-
-* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
-* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. It's relevant for developers seeking simpler, more maintainable architectures, especially for small to medium-scale systems where SQLite's single-file simplicity and ACID guarantees might be sufficient.
-
-### SQLite 就是你构建持久化工作流所需的全部
-
-* 根据标题推测，这篇文章可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
-* 为何值得关注：这挑战了工作流引擎需要重量级基础设施（如 Kafka、PostgreSQL 集群或专用工作流数据库）的常见假设。对于寻求更简单、更易维护架构的开发者来说很有价值，特别是对于中小规模系统，SQLite 的单文件简洁性和 ACID 保证可能就已足够。
-
-**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
-
-### The Dead Economy Theory: AI's Threat to Labor Markets and Consumer Demand
-
-* **The Dead Internet, Now the Dead Economy**: Just as bots increasingly dominate online content, AI threatens to hollow out the economy by replacing human workers at scale
-* **Trillion-Dollar Labor Replacement**: AI companies like OpenAI ($800B+ valuation) and Anthropic need massive returns, requiring elimination of human labor costs across entire industries
-* **The Three-Turn Collapse**: Companies cut workers using AI → displaced workers stop spending → businesses lose customers who were other companies' employees
-* **The AI Layoff Trap**: Each firm captures full cost savings from automation but shares demand destruction across competitors, creating a race to collective economic ruin
-* **Speed vs. Historical Precedent**: Previous automation transitions took 70-140 years; AI displacement could happen in 2 years, with no guarantee new jobs will emerge
-* **Excessive Automation**: Nobel economist Daron Acemoglu finds firms deploy AI to eliminate jobs without genuine productivity gains, prioritizing stock prices over economic efficiency
-* **The Horse Analogy**: Economist Wassily Leontief warned in 1983 that humans could become economically obsolete like horses after the combustion engine—no economic law prevents this
-* **Political Crisis Ahead**: An economy that doesn't need human labor creates an unprecedented challenge for democratic systems built on employment-based participation
-
-### 死亡经济理论：AI对劳动力市场和消费需求的威胁
-
-* **从死亡互联网到死亡经济**：正如机器人主导在线内容，AI威胁通过大规模取代人类工人来掏空经济
-* **万亿美元的劳动力替代**：OpenAI（估值超8000亿美元）和Anthropic等AI公司需要巨额回报，要求在整个行业消除人力成本
-* **三步崩溃循环**：公司用AI裁员→失业工人停止消费→企业失去客户（这些客户本是其他公司的员工）
-* **AI裁员陷阱**：每家公司获得自动化的全部成本节省，但需求破坏由竞争对手共同承担，形成集体经济毁灭的竞赛
-* **速度vs历史先例**：以往自动化转型需70-140年；AI替代可能在2年内发生，新工作岗位能否出现无保证
-* **过度自动化**：诺贝尔经济学奖得主达龙·阿西莫格鲁发现，企业部署AI消灭工作岗位却无真正生产力提升，优先考虑股价而非经济效率
-* **马匹类比**：经济学家瓦西里·列昂惕夫1983年警告，人类可能像内燃机出现后的马匹一样在经济上过时——没有经济规律能阻止这一点
-* **政治危机在前**：不需要人类劳动的经济为建立在就业基础上的民主制度带来前所未有的挑战
-
-**[Read Original / 阅读原文](https://www.owenmcgrann.com/p/the-dead-economy-theory)**
-
-### Mistral AI's European Strategy: Full-Stack AI with Sovereignty Focus
-
-* **Beyond models**: Mistral is building a complete AI stack including compute infrastructure (40MW Paris data center, expanding to Sweden), platforms, and consultancy services
-* **Specialized efficiency**: Small, focused models outperform general-purpose ones in specific domains—Document AI for OCR, Voxtral for multilingual voice (Amazon Alexa+ Europe), Robostral for industrial robotics with ASML
-* **Agentic architecture**: The "harness" (context, persistence, learning) matters as much as the model itself; reasoning enables error recovery and transparency, while skills capture organizational best practices
-* **On-premises sovereignty**: European enterprises like BNP Paribas and Abanca run Mistral models on-prem for sensitive data (KYC, customer information), avoiding reliance on US hyperscalers
-* **Partnership-driven**: Summit emphasized real-world collaborations over technical innovation announcements; launched Vibe for Work (Claude competitor)
-* **Unexpected application**: Austrian Academy of Sciences fine-tuned Codestral to decode 180,000 ancient papyrus documents—a 2000-year task accelerated by AI
-* **Strategic positioning**: Mistral aims to be Europe's full-stack AI partner delivering immediate ROI, not competing for AGI leadership
-
-### Mistral AI 的欧洲战略:以主权为核心的全栈 AI
-
-* **超越模型**:Mistral 正在构建完整的 AI 技术栈,包括计算基础设施(巴黎 40MW 数据中心,扩展至瑞典)、平台和咨询服务
-* **专业化效率**:小型专注模型在特定领域优于通用模型——Document AI 用于 OCR、Voxtral 用于多语言语音(亚马逊 Alexa+ 欧洲版)、Robostral 用于 ASML 工业机器人
-* **智能体架构**:"线束"(上下文、持久性、学习)与模型本身同等重要;推理能力实现错误恢复和透明度,技能捕获组织最佳实践
-* **本地部署主权**:欧洲企业如法国巴黎银行和 Abanca 在本地运行 Mistral 模型处理敏感数据(KYC、客户信息),避免依赖美国云服务商
-* **合作驱动**:峰会强调实际合作案例而非技术创新公告;发布 Vibe for Work(Claude 竞品)
-* **意外应用**:奥地利科学院微调 Codestral 解码 18 万份古代纸莎草文献——AI 加速了原本需要 2000 年的工作
-* **战略定位**:Mistral 旨在成为欧洲全栈 AI 合作伙伴,提供即时投资回报,而非竞争 AGI 领导地位
-
-**[Read Original / 阅读原文](https://koenvangilst.nl/lab/mistral-ai-now-summit)**
-
-
-## 🔥 GitHub Trending / GitHub 热门项目
-
-### Twenty - The #1 Open-Source CRM, Designed for AI
-
-* **What it does**: Twenty is an open-source alternative to Salesforce that provides technical teams with building blocks to create custom CRMs. It allows you to define objects, fields, views, workflows, and AI agents as code, then version and deploy them like any other part of your stack.
-
-* **Key features**: 
-  - **Code-first approach**: Define CRM objects, fields, and views using TypeScript with the Twenty SDK
-  - **App development framework**: Build and publish custom apps with `create-twenty-app` CLI
-  - **AI-native**: Built-in AI agents and chat capabilities for intelligent automation
-  - **Full CRM toolkit**: Includes standard CRM features (contacts, deals, workflows) plus extensibility
-  - **Flexible deployment**: Cloud-hosted, self-hosted via Docker, or local development
-  - **Modern tech stack**: Built with TypeScript, React, NestJS, PostgreSQL, and Redis
-
-* **Why it's notable**: With 575 stars today, Twenty stands out as a developer-friendly CRM that treats business logic as code rather than configuration. It bridges the gap between off-the-shelf CRMs (too rigid) and building from scratch (too costly), offering the customization of Salesforce with the developer experience of modern frameworks. The AI-first design and version control capabilities make it particularly relevant for technical teams building complex, evolving business systems.
-
----
-
 ### Twenty - 为 AI 设计的开源 Salesforce 替代方案
 
 * **功能介绍**: Twenty 是一个开源的 Salesforce 替代品,为技术团队提供构建自定义 CRM 的基础模块。它允许你将对象、字段、视图、工作流和 AI 代理定义为代码,然后像管理技术栈的其他部分一样进行版本控制和部署。
@@ -494,4 +401,115 @@ pin: false
 * 为何值得观看: 学习在 Scratch 中模拟真实沙子物理效果的实用技巧，适合游戏开发者和教育工作者在 Scratch 的限制条件下创建引人入胜的视觉效果
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=E8RLTc0bj04)**
+
+<!-- [Title-Only] -->
+### SQLite is all you need for durable workflows
+
+* Based on the title, this article likely explores how SQLite can serve as a complete solution for building durable, reliable workflow systems. It probably discusses SQLite's capabilities for state persistence, transaction guarantees, and workflow orchestration without requiring complex distributed databases or message queues.
+* Why it might be interesting to readers: This challenges the common assumption that workflow engines need heavyweight infrastructure like Kafka, PostgreSQL clusters, or specialized workflow databases. It's relevant for developers seeking simpler, more maintainable architectures, especially for small to medium-scale systems where SQLite's single-file simplicity and ACID guarantees might be sufficient.
+
+### SQLite 就是你构建持久化工作流所需的全部
+
+* 根据标题推测，这篇文章可能探讨如何使用 SQLite 作为构建持久化、可靠工作流系统的完整解决方案。文章可能会讨论 SQLite 在状态持久化、事务保证和工作流编排方面的能力，而无需复杂的分布式数据库或消息队列。
+* 为何值得关注：这挑战了工作流引擎需要重量级基础设施（如 Kafka、PostgreSQL 集群或专用工作流数据库）的常见假设。对于寻求更简单、更易维护架构的开发者来说很有价值，特别是对于中小规模系统，SQLite 的单文件简洁性和 ACID 保证可能就已足够。
+
+**[Read Original / 阅读原文](https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/)**
+
+### The Dead Economy Theory: AI's Threat to Labor Markets and Consumer Demand
+
+* **The Dead Internet, Now the Dead Economy**: Just as bots increasingly dominate online content, AI threatens to hollow out the economy by replacing human workers at scale
+* **Trillion-Dollar Labor Replacement**: AI companies like OpenAI ($800B+ valuation) and Anthropic need massive returns, requiring elimination of human labor costs across entire industries
+* **The Three-Turn Collapse**: Companies cut workers using AI → displaced workers stop spending → businesses lose customers who were other companies' employees
+* **The AI Layoff Trap**: Each firm captures full cost savings from automation but shares demand destruction across competitors, creating a race to collective economic ruin
+* **Speed vs. Historical Precedent**: Previous automation transitions took 70-140 years; AI displacement could happen in 2 years, with no guarantee new jobs will emerge
+* **Excessive Automation**: Nobel economist Daron Acemoglu finds firms deploy AI to eliminate jobs without genuine productivity gains, prioritizing stock prices over economic health
+* **The Horse Analogy**: Economist Wassily Leontief warned in 1983 that humans could become economically obsolete like horses after the combustion engine—no economic law prevents this
+
+### 死亡经济理论：AI对劳动力市场和消费需求的威胁
+
+* **从死亡互联网到死亡经济**：正如机器人日益主导在线内容，AI威胁通过大规模取代人类工人来掏空经济
+* **万亿美元的劳动力替代**：OpenAI（估值超8000亿美元）和Anthropic等AI公司需要巨额回报，这要求在整个行业消除人力成本
+* **三步崩溃循环**：公司用AI裁员→失业工人停止消费→企业失去客户（这些客户本是其他公司的员工）
+* **AI裁员陷阱**：每家公司获得自动化的全部成本节省，但需求破坏由竞争对手共同承担，形成集体经济毁灭的竞赛
+* **速度vs历史先例**：以往自动化转型需70-140年；AI替代可能在2年内发生，新工作岗位能否出现毫无保证
+* **过度自动化**：诺贝尔经济学奖得主达龙·阿西莫格鲁发现，企业部署AI消灭工作岗位却无真正生产力提升，优先考虑股价而非经济健康
+* **马匹类比**：经济学家瓦西里·列昂惕夫1983年警告，人类可能像内燃机出现后的马匹一样在经济上变得过时——没有经济规律能阻止这一点
+
+**[Read Original / 阅读原文](https://www.owenmcgrann.com/p/the-dead-economy-theory)**
+
+### Snowboard Kids 2 Achieves 100% Decompilation Milestone
+
+* **Complete decompilation achieved**: All game functions have been reimplemented in C, with assembly matching the original N64 game, transforming MIPS assembly into readable, modifiable code
+* **Two-year community effort**: Project started in September 2024 with significant contributions from the N64 decompilation Discord community, particularly Bl00D4NGEL, inspectredc, SlaveOfIDO, and queueRAM
+* **AI-assisted development**: Coding agents (Claude, GLM, Codex 5.5 xhigh) accelerated the decompilation process, with GLM offering the best value for money
+* **Recompilation in progress**: High-quality recompilation already in good state with widescreen support and expanded draw distance, though bugs remain before public release
+* **Future plans**: Work continues on improving documentation and naming conventions, extracting graphics/audio assets, and potentially starting a Snowboard Kids 1 decompilation for a combined "Super Snowboard Kids" project
+* **Personal milestone**: Final functions were completed while the developer was in hospital with his newborn daughter, using decompilation as a productive distraction
+
+### 《雪地滑板小子2》实现100%反编译
+
+* **完成完整反编译**：所有游戏函数已用C语言重新实现，汇编代码与原版N64游戏完全匹配，将MIPS汇编转换为可读、可修改的代码
+* **两年社区协作成果**：项目始于2024年9月，N64反编译Discord社区做出重大贡献，特别是Bl00D4NGEL、inspectredc、SlaveOfIDO和queueRAM等成员
+* **AI辅助开发**：编程智能体（Claude、GLM、Codex 5.5 xhigh）加速了反编译进程，其中GLM性价比最高
+* **重编译进行中**：高质量重编译版本已初具规模，支持宽屏和扩展绘制距离，但在公开发布前仍需修复漏洞
+* **未来计划**：继续改进文档和命名规范，提取图形/音频资源，并可能启动《雪地滑板小子1》反编译项目，打造合并两代游戏的"超级雪地滑板小子"
+* **个人里程碑**：开发者在医院陪伴新生女儿期间完成了最后几个函数，将反编译作为有益的消遣方式
+
+**[Read Original / 阅读原文](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/)**
+
+### KMS Pico Educational Toolkit - A Controlled Learning Environment for Understanding Software Activation
+
+* **What it does**: Provides a documented, isolated toolkit for studying KMS (Key Management Service) activation mechanisms in safe lab environments, focusing on educational exploration of software licensing and activation protocols without impacting production systems.
+
+* **Key features**: Includes educational documentation on KMS principles, lab environment setup scripts for virtual machines, activation analysis tools for examining logs and network traffic, security auditing checklists, compliance verification aids, and technical reference materials covering protocols like RPC. Emphasizes use within isolated environments (VMs, segmented networks) with clear ethical guidelines.
+
+* **Why it's notable**: Addresses the gap in structured, responsible educational resources for IT professionals, security researchers, and students studying software activation technologies. With 449 stars, it's gaining attention for providing a transparent, well-documented approach to understanding complex licensing mechanisms while explicitly promoting ethical use, isolated testing, and compliance awareness—filling a niche for academic and professional training in system administration and cybersecurity.
+
+---
+
+### KMS Pico 教育工具包 - 用于理解软件激活的受控学习环境
+
+* **功能介绍**: 提供一个有文档支持的隔离工具包，用于在安全的实验室环境中研究 KMS(密钥管理服务)激活机制，专注于软件许可和激活协议的教育探索，不影响生产系统。
+
+* **主要特点**: 包含 KMS 原理的教育文档、虚拟机实验室环境设置脚本、用于检查日志和网络流量的激活分析工具、安全审计检查清单、合规性验证辅助工具，以及涵盖 RPC 等协议的技术参考资料。强调在隔离环境(虚拟机、分段网络)中使用，并提供明确的道德准则。
+
+* **为何值得关注**: 填补了 IT 专业人员、安全研究人员和学生在学习软件激活技术方面结构化、负责任教育资源的空白。拥有 449 星标，因其提供透明、文档完善的方法来理解复杂的许可机制而受到关注，同时明确提倡道德使用、隔离测试和合规意识——为系统管理和网络安全领域的学术和专业培训填补了一个利基市场。
+
+**[View Repository / 查看仓库](https://github.com/harrietteehisqu7759383/kms-pico-latest-april-2026)**
+
+### 🎬 Were Neanderthals Culturally Modern Humans? - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of Neanderthal cognitive and cultural capabilities compared to modern humans, examining archaeological and genetic evidence
+* Key topics discussed: Neanderthal behavior, cultural complexity, interbreeding with Homo sapiens, genetic insights into cognitive differences, and what defines "behavioral modernity"
+* Why it's worth watching: David Reich, a leading geneticist in ancient DNA research, provides cutting-edge scientific perspectives on one of anthropology's most debated questions—whether Neanderthals possessed the same cultural sophistication as our direct ancestors
+
+### 🎬 尼安德特人是文化意义上的现代人吗？- David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 探讨尼安德特人与现代人类在认知和文化能力上的比较，审视考古学和遗传学证据
+* 主要话题: 尼安德特人的行为模式、文化复杂性、与智人的基因交流、认知差异的遗传学见解，以及"行为现代性"的定义
+* 为何值得观看: David Reich 作为古代 DNA 研究领域的顶尖遗传学家，对人类学最具争议的问题之一——尼安德特人是否拥有与我们直系祖先相同的文化复杂度——提供了前沿科学视角
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ci7_eJTrGhQ)**
+
+### 🎬 This FREE AI Tool Works Without Internet 😳🔥 | Better Than claude-sonnet-4-5?
+
+**Channel:** Entri Coding தமிழ்
+
+* What the video covers: Introduces a free AI tool that functions completely offline without requiring an internet connection, positioning it as a potential alternative to ChatGPT
+* Key topics discussed: Offline AI capabilities, comparison with ChatGPT, accessibility and privacy benefits of local AI models, practical demonstrations of the tool's features
+* Why it's worth watching: Learn about cutting-edge offline AI technology that offers privacy, zero latency, and independence from internet connectivity—ideal for developers and users concerned about data privacy or working in low-connectivity environments
+
+---
+
+### 🎬 这个免费AI工具无需联网即可使用 😳🔥 | 比ChatGPT更好？
+
+**频道:** Entri Coding தமிழ்
+
+* 视频内容概述: 介绍一款完全离线运行的免费AI工具，无需互联网连接，并将其与ChatGPT进行对比
+* 主要话题: 离线AI功能、与ChatGPT的比较、本地AI模型的隐私和可访问性优势、工具功能的实际演示
+* 为何值得观看: 了解前沿的离线AI技术，提供隐私保护、零延迟和网络独立性——非常适合关注数据隐私或在低网络环境下工作的开发者和用户
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PAxZEvwVmII)**
 
