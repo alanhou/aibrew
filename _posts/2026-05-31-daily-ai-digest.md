@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 31, 2026"
 date: 2026-05-31
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 16 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，12个快速崛起项目，16个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -854,4 +854,241 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 提供了编程教育的全新视角,超越语言之争,聚焦于2026年开发环境中相关的问题解决能力和实用技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
+
+### dav2d: A Fast Decoder for the AV2 Codec
+
+* **dav2d announced** – VideoLAN community releases a fast, open-source decoder for the new AV2 video codec, continuing the work started with dav1d (AV1 decoder)
+* **AV2 overview** – Successor to AV1 from Alliance for Open Media; royalty-free codec with ~25% compression improvement over AV1, but 5x more complex to decode
+* **Early development strategy** – Started before spec finalization to provide production-quality decoder for browsers, media players, and OS before hardware support becomes widespread
+* **Current status** – Feature-complete AVM v15 decoder supporting 8-bit and 10-bit; implements bitstream parsing, entropy decoding, intra/inter prediction, transforms, filtering, and film grain
+* **Performance optimizations** – AVX2 code for x86, AArch64 NEON for ARM, early RISC-V work; uses checkasm framework for validation and benchmarking from day one
+* **Open source approach** – BSD-style license, public development from start; aims to enable interoperability and provide foundation for AV2 ecosystem deployment
+* **dav1d success story** – Most widely deployed AV1 software decoder, used in VLC, FFmpeg, Firefox, Chrome, Safari, Android, Windows, and Linux
+* **Next steps** – Continue spec tracking, improve conformance, extend test coverage, optimize for multiple architectures, improve threading, and prepare releases
+
+### dav2d:AV2 编解码器的高速解码器
+
+* **dav2d 发布** – VideoLAN 社区发布新 AV2 视频编解码器的快速开源解码器,延续 dav1d(AV1 解码器)的工作
+* **AV2 概述** – 开放媒体联盟推出的 AV1 继任者;免版税编解码器,相比 AV1 压缩效率提升约 25%,但解码复杂度增加 5 倍
+* **早期开发策略** – 在规范最终确定前启动,旨在硬件支持普及前为浏览器、媒体播放器和操作系统提供生产级解码器
+* **当前状态** – 功能完整的 AVM v15 解码器,支持 8 位和 10 位;实现比特流解析、熵解码、帧内/帧间预测、变换、滤波和胶片颗粒
+* **性能优化** – x86 平台的 AVX2 代码、ARM 平台的 AArch64 NEON、早期 RISC-V 工作;从第一天起就使用 checkasm 框架进行验证和基准测试
+* **开源方式** – BSD 风格许可证,从一开始就公开开发;旨在实现互操作性并为 AV2 生态系统部署提供基础
+* **dav1d 成功案例** – 部署最广泛的 AV1 软件解码器,应用于 VLC、FFmpeg、Firefox、Chrome、Safari、Android、Windows 和 Linux
+* **后续计划** – 持续跟踪规范、改进一致性、扩展测试覆盖、多架构优化、改进线程处理并准备发布版本
+
+**[Read Original / 阅读原文](https://jbkempf.com/blog/2026/dav2d/)**
+
+### Backpressure is All You Need: Building Self-Validating AI Coding Agents
+
+* **The problem with current AI coding approaches**: Unattended agents create chaos and bad PRs, while micro-managing every step defeats the purpose of automation
+* **Backpressure as a solution**: Apply systems engineering concepts where downstream components signal upstream to slow down—like how tests and type checkers catch errors before human review
+* **Current state**: Humans are still the primary backpressure mechanism for LLMs, manually reviewing and correcting AI-generated code in repetitive cycles
+* **The vision**: Build automated validation layers (tests, types, benchmarks, review agents) that catch issues before human intervention, enabling safer unattended sessions
+* **Key insight**: Just as TypeScript, linters, and CI pipelines freed humans from low-level correctness checks, AI agents need similar automated guardrails to validate their own work
+* **The goal**: Shift human focus from being an "expensive clipboard" between machines to higher-level design decisions and strategic feedback
+
+### 反压机制：AI 编程代理的关键
+
+* **当前 AI 编程方法的问题**：无人监管的代理会制造混乱和低质量 PR，而微观管理每一步又失去了自动化的意义
+* **反压机制作为解决方案**：应用系统工程概念，下游组件向上游发出信号以减缓速度——就像测试和类型检查器在人工审查前捕获错误
+* **现状**：人类仍然是 LLM 的主要反压机制，在重复循环中手动审查和纠正 AI 生成的代码
+* **愿景**：构建自动化验证层（测试、类型、基准测试、审查代理），在人工介入前捕获问题，实现更安全的无人值守会话
+* **核心洞察**：正如 TypeScript、代码检查工具和 CI 流水线将人类从低级正确性检查中解放出来，AI 代理也需要类似的自动化护栏来验证自己的工作
+* **目标**：将人类角色从机器之间"昂贵的剪贴板"转变为专注于高层设计决策和战略反馈
+
+**[Read Original / 阅读原文](https://www.lucasfcosta.com/blog/backpressure-is-all-you-need)**
+
+<!-- [Title-Only] -->
+### The Website Specification
+
+* Based on the title, this article likely presents a formal or comprehensive specification for building websites - potentially covering standards, best practices, or a systematic approach to web development
+* It might be interesting to readers because it could offer a structured framework for creating consistent, well-designed websites, or it may challenge conventional approaches with a new methodology for web specifications
+
+### 网站规范
+
+* 根据标题推测，这篇文章可能提出了一个正式或全面的网站构建规范——可能涵盖标准、最佳实践，或是一种系统化的 Web 开发方法
+* 值得关注的原因在于，它可能为创建一致、设计良好的网站提供了结构化框架，或者用新的规范方法论挑战传统的 Web 开发方式
+
+---
+
+*Note: This introduction is based solely on the article title, as the content could not be fetched.*
+
+**[Read Original / 阅读原文](https://specification.website/)**
+
+### Scrapling - Adaptive Web Scraping Framework for Modern Websites
+
+* **What it does**: Scrapling is a comprehensive Python web scraping framework that handles everything from single HTTP requests to full-scale concurrent crawls. It features an intelligent parser that automatically adapts to website structure changes, built-in anti-bot bypass capabilities (including Cloudflare Turnstile), and a spider framework for large-scale data extraction.
+
+* **Key features**:
+  * Adaptive parsing that relocates elements when websites update their structure
+  * Multiple fetcher types (Fetcher, AsyncFetcher, StealthyFetcher, DynamicFetcher) with headless browser support
+  * Built-in anti-bot detection bypass without additional configuration
+  * Spider framework with pause/resume, automatic proxy rotation, and real-time statistics
+  * CSS selector support with auto-save functionality for resilient scraping
+  * MCP (Model Context Protocol) server integration for AI agents
+  * CLI tools and streaming capabilities for blazing-fast crawls
+
+* **Why it's notable**: With 639 stars today, Scrapling stands out by solving the persistent problem of website structure changes breaking scrapers. Its adaptive parser learns from changes and automatically finds relocated elements, eliminating constant maintenance. The framework bridges the gap between simple one-off requests and enterprise-scale crawling in a single library, while handling modern anti-bot systems out of the box—making it a zero-compromise solution for both beginners and professional web scrapers.
+
+---
+
+### Scrapling - 适应性网页抓取框架，专为现代网站设计
+
+* **功能介绍**: Scrapling 是一个全面的 Python 网页抓取框架，可处理从单个 HTTP 请求到大规模并发爬取的所有场景。它具有智能解析器，可自动适应网站结构变化，内置反机器人检测绕过功能（包括 Cloudflare Turnstile），以及用于大规模数据提取的爬虫框架。
+
+* **主要特点**:
+  * 自适应解析功能，当网站更新结构时自动重新定位元素
+  * 多种抓取器类型（Fetcher、AsyncFetcher、StealthyFetcher、DynamicFetcher），支持无头浏览器
+  * 内置反机器人检测绕过，无需额外配置
+  * 爬虫框架支持暂停/恢复、自动代理轮换和实时统计
+  * CSS 选择器支持，具有自动保存功能，实现弹性抓取
+  * MCP（模型上下文协议）服务器集成，支持 AI 代理
+  * CLI 工具和流式传输功能，实现超快速爬取
+
+* **为何值得关注**: Scrapling 今日获得 639 星标，其突出之处在于解决了网站结构变化导致爬虫失效这一长期问题。其自适应解析器可以学习变化并自动找到重新定位的元素，消除了持续维护的需求。该框架在单个库中弥合了简单一次性请求和企业级爬取之间的差距，同时开箱即用地处理现代反机器人系统——使其成为初学者和专业网页抓取人员的零妥协解决方案。
+
+**[View Repository / 查看仓库](https://github.com/D4Vinci/Scrapling)**
+
+### Hermes WebUI - Web Interface for Hermes Autonomous Agent
+
+* **What it does**: Provides a browser-based interface for Hermes Agent, a sophisticated autonomous AI agent that runs on your server with persistent memory and cross-session learning capabilities
+* **Key features**: Three-panel layout (sessions, chat, workspace file browser), full CLI parity, no build step required (vanilla JS + Python), dark/light themes, SSH tunnel access, optional Gateway API backend, session recall prefill support
+* **Why it's notable**: Bridges the gap between powerful self-hosted AI agents and convenient web access - gives you the full capabilities of Hermes Agent (persistent memory, scheduled jobs, messaging platform integration, self-improving skills) through a clean web UI without additional setup or configuration
+
+### Hermes WebUI - Hermes 自主代理的 Web 界面
+
+* **功能介绍**: 为 Hermes Agent 提供浏览器界面,Hermes Agent 是一个运行在服务器上的复杂自主 AI 代理,具有持久化内存和跨会话学习能力
+* **主要特点**: 三面板布局(会话、聊天、工作区文件浏览器),与 CLI 完全对等,无需构建步骤(原生 JS + Python),支持深色/浅色主题,SSH 隧道访问,可选 Gateway API 后端,会话回忆预填充支持
+* **为何值得关注**: 在强大的自托管 AI 代理和便捷的 Web 访问之间架起桥梁 - 通过简洁的 Web UI 提供 Hermes Agent 的全部功能(持久化内存、定时任务、消息平台集成、自我改进技能),无需额外设置或配置
+
+**[View Repository / 查看仓库](https://github.com/nesquena/hermes-webui)**
+
+### Compound Engineering - AI Skills and Agents for Compounding Development Productivity
+
+* **What it does**: An official plugin for Claude Code, Codex, Cursor, and other AI coding assistants that provides a structured workflow for planning, executing, reviewing, and documenting engineering work. It inverts traditional technical debt accumulation by making each unit of work easier than the last through systematic knowledge capture.
+
+* **Key features**: Ships with 37 skills and 51 agents including `/ce-strategy` for product strategy, `/ce-brainstorm` for interactive requirements gathering, `/ce-plan` for implementation planning, `/ce-work` for execution with worktrees, `/ce-debug` for systematic troubleshooting, `/ce-code-review` for multi-agent code review, and `/ce-compound` for documenting learnings. Includes `/ce-product-pulse` for time-windowed usage and performance reports.
+
+* **Why it's notable**: Challenges the conventional "move fast and accumulate debt" approach by emphasizing that 80% of engineering should be planning and review, 20% execution. Each cycle compounds knowledge—brainstorms sharpen plans, reviews catch patterns not just bugs, and documented learnings make future work easier. Gaining 243 stars today suggests strong interest in systematic approaches to AI-assisted development that prioritize long-term velocity over short-term speed.
+
+---
+
+### Compound Engineering - 让每次工程工作都比上次更简单的 AI 技能和代理
+
+* **功能介绍**: 这是一个适用于 Claude Code、Codex、Cursor 等 AI 编码助手的官方插件,提供了一套结构化的工作流程,用于规划、执行、审查和记录工程工作。它通过系统化的知识捕获,颠覆了传统的技术债务累积模式,让每个工作单元都比上一个更容易完成。
+
+* **主要特点**: 包含 37 个技能和 51 个代理,包括 `/ce-strategy` 用于产品战略、`/ce-brainstorm` 用于交互式需求收集、`/ce-plan` 用于实现规划、`/ce-work` 用于执行、`/ce-debug` 用于系统化故障排查、`/ce-code-review` 用于多代理代码审查、`/ce-compound` 用于记录经验教训。还包括 `/ce-product-pulse` 用于生成时间窗口内的使用情况和性能报告。
+
+* **为何值得关注**: 挑战了传统的"快速行动并累积债务"的开发方式,强调 80% 的工程工作应该是规划和审查,20% 才是执行。每个周期都会复利积累知识——头脑风暴使计划更清晰,审查捕获模式而非仅仅是 bug,记录的经验使未来的工作更容易。今日获得 243 星表明开发者对这种优先考虑长期开发速度而非短期速度的系统化 AI 辅助开发方法有强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/EveryInc/compound-engineering-plugin)**
+
+### gemini-web2api - Convert Google Gemini Web to OpenAI-Compatible API
+
+* **What it does**: Transforms Google Gemini's web interface into a drop-in OpenAI API replacement, enabling free access to Gemini models through standard OpenAI client libraries and tools without authentication or API keys.
+
+* **Key features**: 
+  - Zero-cost access with optional authentication
+  - Full OpenAI `/v1/chat/completions` compatibility with streaming support
+  - Multiple Gemini models including Flash Thinking (20k+ character output)
+  - Built-in tool/function calling and web search capabilities
+  - Adjustable thinking depth control via `@think=N` suffix
+  - Single Python file with no external dependencies
+  - Cross-platform with Docker support and proxy configuration
+
+* **Why it's notable**: Provides a clever workaround for accessing Google's Gemini models without official API costs by reverse-engineering the web protocol. The 748 stars reflect strong community interest in free AI API access. Particularly valuable for developers wanting to test Gemini models or integrate them into existing OpenAI-based workflows without subscription fees. The Flash Thinking model's extended output capacity and thinking depth controls offer unique capabilities not easily accessible elsewhere.
+
+---
+
+### gemini-web2api - 将 Google Gemini 网页版转换为 OpenAI 兼容 API
+
+* **功能介绍**: 将 Google Gemini 网页界面转换为标准 OpenAI API 接口,无需认证或 API 密钥即可通过 OpenAI 客户端库免费访问 Gemini 模型。
+
+* **主要特点**:
+  - 零成本访问,支持可选的密钥认证
+  - 完全兼容 OpenAI `/v1/chat/completions` 接口,支持流式输出
+  - 支持多个 Gemini 模型,包括 Flash Thinking(20k+ 字符输出)
+  - 内置工具调用和网络搜索功能
+  - 通过 `@think=N` 后缀调节思考深度
+  - 单文件 Python 实现,无外部依赖
+  - 跨平台支持,提供 Docker 部署和代理配置
+
+* **为何值得关注**: 通过逆向工程 Gemini 网页协议,巧妙实现了无需官方 API 费用即可访问 Google Gemini 模型。748 星标反映了社区对免费 AI API 访问的强烈需求。对于想要测试 Gemini 模型或将其集成到现有 OpenAI 工作流的开发者特别有价值,无需订阅费用。Flash Thinking 模型的超长输出能力和思考深度控制提供了其他途径难以获得的独特功能。
+
+**[View Repository / 查看仓库](https://github.com/Sophomoresty/gemini-web2api)**
+
+### 🎬 How Jessica "accidentally" became a developer while living and working in Japan
+
+**Channel:** freeCodeCamp.org
+
+* What the video covers: Jessica's unconventional journey into software development while living and working in Japan, including the circumstances that led to her career transition
+* Key topics discussed: Career pivoting, self-taught programming, working as a developer in Japan, cultural and professional challenges of tech work abroad, accidental career discoveries
+* Why it's worth watching: Inspiring story for career changers and those interested in international tech careers; provides insights into Japan's tech industry and demonstrates that non-traditional paths into development are viable; valuable for anyone considering a move into tech or working abroad
+
+---
+
+### 🎬 Jessica 如何在日本生活和工作时"意外"成为开发者
+
+**频道:** freeCodeCamp.org
+
+* 视频内容概述: Jessica 在日本生活和工作期间非传统地转型成为软件开发者的经历，包括促使她职业转变的各种机遇
+* 主要话题: 职业转型、自学编程、在日本做开发者、海外科技工作的文化和职业挑战、意外的职业发现
+* 为何值得观看: 为职业转型者和对国际科技职业感兴趣的人提供启发；深入了解日本科技行业；证明非传统路径进入开发领域是可行的；对考虑进入科技行业或海外工作的人很有价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=J6t5ev2Z9yk)**
+
+### 🎬 A rational conversation on where AI is actually going | Benedict Evans
+**Channel:** Lenny's Podcast
+
+* What the video covers: Benedict Evans, an independent analyst and former a16z partner, provides a grounded analysis of AI's current state and future trajectory, cutting through the hype to examine what's realistic and what's overblown
+* Key topics discussed: The practical applications of AI today, distinguishing between genuine breakthroughs and inflated expectations, where AI investment is heading, and what the technology can and cannot realistically achieve in the near term
+* Why it's worth watching: Evans brings a rare combination of technical understanding and business insight from his years at Andreessen Horowitz, offering a balanced perspective that helps viewers separate signal from noise in the AI conversation—essential for anyone trying to make sense of AI's impact on business and society
+
+### 🎬 关于 AI 实际发展方向的理性对话 | Benedict Evans
+**频道:** Lenny's Podcast
+
+* 视频内容概述: Benedict Evans,独立分析师及前 a16z 合伙人,对 AI 的现状和未来发展轨迹进行了务实分析,剥离炒作,审视哪些是现实可行的,哪些是被过度夸大的
+* 主要话题: 当今 AI 的实际应用场景、如何区分真正的技术突破与虚高的期望、AI 投资的走向,以及该技术在短期内能够和无法实现的目标
+* 为何值得观看: Evans 结合在 Andreessen Horowitz 多年积累的技术理解和商业洞察力,提供了难得的平衡视角,帮助观众在 AI 讨论中分辨信号与噪音——对于任何试图理解 AI 对商业和社会影响的人来说都至关重要
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BD3vLtWhT5A)**
+
+### 🎬 "just build" is easier said than done (or is it?) #programming #softwaredevelopment #codecrafters
+
+**Channel:** bashbunni
+
+* What the video covers: Explores the common advice "just build" given to aspiring developers and examines whether it's actually as straightforward as it sounds
+* Key topics discussed: The challenges of learning by building, practical approaches to hands-on coding practice, and how platforms like CodeCrafters can help bridge the gap between theory and practice
+* Why it's worth watching: Offers a realistic perspective on the "just build" mantra in programming education, addressing the friction points beginners face and providing actionable solutions for skill development
+
+---
+
+### 🎬 "just build" 说起来容易做起来难（真的吗？）#programming #softwaredevelopment #codecrafters
+
+**频道:** bashbunni
+
+* 视频内容概述: 探讨开发者常听到的"直接动手做项目"这一建议，并审视这个建议是否真的像听起来那么简单
+* 主要话题: 通过实践学习编程的挑战、实用的动手编码方法，以及 CodeCrafters 等平台如何帮助弥合理论与实践之间的差距
+* 为何值得观看: 对编程教育中"直接动手做"这一口号提供了现实视角，解决了初学者面临的实际困难，并提供了技能提升的可行方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
+
+### 🎬 Update Query in SQL 💯| SQL tutorial
+
+**Channel:** DevNest Code
+
+* Covers the SQL UPDATE query syntax and usage
+* Key topics: modifying existing data in database tables, UPDATE statement structure in SQL
+* Worth watching for: Quick, focused tutorial on one of SQL's fundamental data manipulation commands, presented in Tamil for Tamil-speaking learners
+
+### 🎬 SQL UPDATE 查询教程
+
+**频道:** DevNest Code
+
+* 视频内容概述：讲解 SQL UPDATE 查询语法和使用方法
+* 主要话题：修改数据库表中的现有数据，UPDATE 语句结构
+* 为何值得观看：针对 SQL 基础数据操作命令的简短教程，使用泰米尔语讲解，适合泰米尔语学习者快速掌握
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kyaHdEtoJi8)**
 
