@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 31, 2026"
 date: 2026-05-31
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -539,4 +539,154 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为预算有限的独立开发者提供实用且经济的解决方案,让他们能够使用专业级工具和资源来实现项目目标
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=I0C_AYHdFk0)**
+
+### Microsoft Office 2019/2021 for Mac View-Only Conversion (2026)
+
+* **Scheduled degradation**: On July 13, 2026, Office 2019 and 2021 for Mac will enter "reduced functionality mode" due to an expiring license-validation certificate, allowing users to view but not edit or save files.
+* **Broken promise**: In 2023, Microsoft assured Office 2019 for Mac customers their apps would "continue to function" after end-of-support in October 2023. By May 2026, Microsoft quietly removed this language from their support page.
+* **No fix for Office 2019**: Office 2019 for Mac cannot be updated to avoid the conversion—it's capped below the required build 16.83. Office 2021 for Mac can be updated if running macOS 12 (Monterey) or later.
+* **Certificate expiry mechanism**: Microsoft 365 apps use a digital certificate for license validation. The current certificate expires July 13, 2026. Only builds 16.83+ (requiring macOS 12+ or iOS 17+) contain the renewed certificate.
+* **Affected platforms**: macOS and iOS versions of Word, Excel, PowerPoint, Outlook, and OneNote. Windows and Android versions are unaffected.
+* **Microsoft's response**: Mid-May 2026 emails offered affected users a free Microsoft 365 trial (requiring payment method, auto-converts to paid subscription), or suggested switching to web apps or purchasing new licenses.
+* **User backlash**: Early press coverage characterized customer response as "largely negative." Microsoft has issued no public statement reconciling the 2026 conversion with their 2023 assurance.
+* **Perpetual license context**: Office 2019 was marketed as a one-time purchase at $149.99, explicitly positioned as an alternative to Office 365 subscriptions with no upgrade option.
+
+---
+
+### 微软 Office 2019/2021 Mac 版转为仅查看模式(2026)
+
+* **计划性降级**:2026年7月13日,Office 2019和2021 Mac版将因许可证验证证书过期而进入"功能受限模式",用户只能查看文件,无法编辑或保存。
+* **违背承诺**:2023年,微软向Office 2019 Mac版客户保证,软件在2023年10月停止支持后将"继续正常运行"。到2026年5月,微软悄悄从支持页面删除了这一表述。
+* **Office 2019无解决方案**:Office 2019 Mac版无法通过更新避免转换——其版本号上限低于所需的16.83版本。Office 2021 Mac版在运行macOS 12(Monterey)或更高版本时可以更新。
+* **证书过期机制**:Microsoft 365应用使用数字证书进行许可证验证。当前证书将于2026年7月13日过期。只有16.83+版本(需要macOS 12+或iOS 17+)包含更新后的证书。
+* **受影响平台**:macOS和iOS版本的Word、Excel、PowerPoint、Outlook和OneNote。Windows和Android版本不受影响。
+* **微软的回应**:2026年5月中旬发送邮件,向受影响用户提供免费Microsoft 365试用(需要绑定支付方式,未取消将自动转为付费订阅),或建议切换到网页版应用或购买新许可证。
+* **用户反弹**:早期媒体报道称客户反应"普遍负面"。微软未就2026年的转换与2023年的承诺发表任何公开声明。
+* **永久许可证背景**:Office 2019以149.99美元的一次性购买方式销售,明确定位为Office 365订阅的替代方案,无升级选项。
+
+**[Read Original / 阅读原文](https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026))**
+
+### Domain Expertise Has Always Been the Real Moat
+
+* **The core challenge in software development was never coding itself, but understanding the domain** — payroll systems require knowledge of garnishments and deductions; transit apps need understanding of GTFS feeds and route structures
+* **Agentic AI has decoupled code production from domain understanding** — you can now generate software without building a mental model of the problem space, breaking a fundamental assumption of the profession
+* **The constraint has shifted from "can you build it" to "can you tell if it's right"** — judgment now matters more than implementation ability
+* **Domain experts without coding skills are surprisingly effective with AI agents** — a logistics dispatcher or clinical coder can instantly verify if generated outputs are correct based on years of domain experience
+* **Generalist engineers without domain knowledge struggle to validate correctness** — they can verify code quality but cannot distinguish plausible-looking wrong answers from correct ones in unfamiliar domains
+* **AI collapsed the engineer's advantage but not the domain expert's** — translating models into code is now cheap, but knowing what "right" looks like remains irreplaceable and cannot be prompted
+* **The most valuable professionals possess both technical and domain expertise** — they can verify code soundness AND output correctness, judging at both layers
+* **Strategic advice for engineers: invest in deep domain knowledge** — mechanical coding skills have depreciated; acquiring verified expertise in a specific industry, regulatory regime, or process is now the scarce, high-value skill
+
+### 领域专业知识一直是真正的护城河
+
+* **软件开发的核心挑战从来不是编码本身，而是理解业务领域** — 工资系统需要了解扣押令和税前扣除；公交应用需要理解GTFS数据源和路线结构
+* **AI智能体将代码生成与领域理解解耦** — 现在可以在不构建问题空间心智模型的情况下生成软件，打破了行业的基本假设
+* **约束条件已从"你能构建它吗"转变为"你能判断它是否正确吗"** — 判断力现在比实现能力更重要
+* **没有编码技能的领域专家使用AI智能体出奇地有效** — 物流调度员或临床编码员可以基于多年领域经验立即验证生成的输出是否正确
+* **没有领域知识的通用工程师难以验证正确性** — 他们可以验证代码质量，但无法在陌生领域中区分看似合理的错误答案和正确答案
+* **AI消解了工程师的优势，但没有消解领域专家的优势** — 将模型转化为代码现在很便宜，但知道什么是"正确"仍然无可替代且无法通过提示词获得
+* **最有价值的专业人士同时拥有技术和领域专业知识** — 他们可以验证代码健壮性和输出正确性，在两个层面进行判断
+* **给工程师的战略建议：投资于深度领域知识** — 机械编码技能已贬值；在特定行业、监管制度或流程中获得经过验证的专业知识现在是稀缺的高价值技能
+
+**[Read Original / 阅读原文](https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/)**
+
+### The Story of Shantell Sans: A Typeface Born from Dyslexia and Artistic Expression
+
+* **Artist Shantell Martin created Shantell Sans**, a variable font inspired by her dyslexia and childhood struggles with spelling tests, aiming to make typography more accessible and playful
+* **The font is released as open-source** under an open font license via Google Fonts, making it freely available to empower people regardless of their relationship with words
+* **Inspired by Comic Sans**, Martin wanted to create a professional yet approachable typeface that feels welcoming, especially for dyslexic readers who benefit from more spacious, friendly fonts
+* **Variable font technology** allows Shantell Sans to adjust Weight, Italic, Informality, and Bounce axes, offering styles from everyday readable text to experimental animated designs
+* **Type designer Stephen Nixon collaborated** with Martin, digitizing her handwriting while maintaining quirks and simplifying it for digital use with metrics similar to common fonts like Roboto
+* **Early adoption includes diverse uses**: Whitney Museum key tags, Cash App card designs, tldraw collaborative drawing app, and univer.se website templates
+* **Design goals prioritized accessibility**: everyday appeal through marker-style handwriting, easy integration across platforms, wide availability, strong legibility, and innovative variable font features
+* **The project represents empowerment**: Martin views it as reclaiming words on her own terms and inspiring other artists to create typography, while giving up control by releasing it freely
+
+### Shantell Sans 的故事：源于阅读障碍与艺术表达的字体
+
+* **艺术家 Shantell Martin 创造了 Shantell Sans**，这是一款可变字体，灵感来自她的阅读障碍和童年拼写测试的挣扎经历，旨在让字体排印更易用且富有趣味性
+* **该字体以开源形式发布**，通过 Google Fonts 采用开放字体许可证，免费提供给所有人，赋能各种与文字关系不同的使用者
+* **受 Comic Sans 启发**，Martin 希望创造一款既专业又平易近人的字体，让人感觉温暖友好，特别适合阅读障碍者，他们更受益于间距较大、友好的字体
+* **可变字体技术**允许 Shantell Sans 调整粗细、斜体、非正式度和弹跳度等轴线，提供从日常可读文本到实验性动画设计的多种风格
+* **字体设计师 Stephen Nixon 合作**将 Martin 的手写体数字化，保留其特色同时简化为数字形式，字体度量接近 Roboto 等常用字体
+* **早期应用包括多样化用途**：惠特尼博物馆钥匙扣、Cash App 卡片设计、tldraw 协作绘图应用和 univer.se 网站模板
+* **设计目标优先考虑可及性**：通过马克笔风格手写体实现日常吸引力、跨平台易集成、广泛可用性、强可读性以及创新的可变字体功能
+* **该项目代表赋权意义**：Martin 将其视为以自己的方式重新定义文字，并激励其他艺术家创作字体排印，同时通过免费发布放弃控制权
+
+**[Read Original / 阅读原文](https://shantellsans.com/process)**
+
+### SenPaiScanner - Cloudflare IP Scanner with Terminal UI for Proxy Configs
+
+* **What it does**: A lightweight Go-based scanner that finds working Cloudflare IPs for VLESS/Trojan proxy configurations. It runs a two-phase validation process: first testing IP connectivity through Cloudflare's network, then validating endpoints through an embedded xray instance with your actual proxy config.
+
+* **Key features**: Terminal UI with no CLI flags to memorize; supports both random IP scanning and custom IP lists; multi-port testing (443, 8443, 2053, etc.); WebSocket-aware probing for WS configs; real-time results with speed/latency metrics; one-key export of working endpoints to clipboard and file; cross-platform support (Linux, macOS, Windows).
+
+* **Why it's notable**: Built specifically for networks with unpredictable latency and DPI filtering where standard connectivity tests fail. Unlike simple ping tools, it validates actual proxy behavior through xray and handles WebSocket transport requirements. The TUI approach makes it accessible without memorizing complex command syntax—paste your config, adjust settings with arrow keys, and get working IP:port pairs ready to use in any xray-compatible client.
+
+---
+
+### SenPaiScanner - 带终端界面的 Cloudflare IP 扫描器
+
+* **功能介绍**: 一个用 Go 编写的轻量级扫描工具,专门为 VLESS/Trojan 代理配置查找可用的 Cloudflare IP。采用两阶段验证流程:先测试 IP 通过 Cloudflare 网络的连通性,再通过内置的 xray 实例用真实代理配置验证端点。
+
+* **主要特点**: 终端 UI 界面无需记忆命令行参数;支持随机 IP 扫描和自定义 IP 列表;多端口测试(443、8443、2053 等);针对 WebSocket 配置的智能探测;实时显示速度/延迟指标;一键导出可用端点到剪贴板和文件;跨平台支持(Linux、macOS、Windows)。
+
+* **为何值得关注**: 专为延迟不稳定和存在 DPI 过滤的网络环境设计,标准连通性测试往往失效的场景。不同于简单的 ping 工具,它通过 xray 验证实际代理行为,并处理 WebSocket 传输要求。TUI 界面降低使用门槛,无需记忆复杂命令语法——粘贴配置、用方向键调整设置,即可获得可直接用于任何 xray 兼容客户端的 IP:端口对。597 stars 表明在代理用户社区中获得认可。
+
+**[View Repository / 查看仓库](https://github.com/MatinSenPai/SenPaiScanner)**
+
+### 🎬 Why Neanderthals Might Be Our Cousins After All - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses recent genetic evidence challenging the traditional view of Neanderthals as a separate extinct species, suggesting they may be better understood as close relatives or "cousins" to modern humans
+* Key topics discussed: Ancient DNA analysis, interbreeding between Neanderthals and Homo sapiens, genetic legacy in modern human populations, implications for human evolution and species classification
+* Why it's worth watching: Reich is a leading expert in ancient genomics whose research has revolutionized our understanding of human ancestry. This conversation offers cutting-edge insights into how genetic data is rewriting the human family tree and what it means for our conception of what makes us human
+
+### 🎬 尼安德特人可能是我们的表亲——大卫·赖克访谈
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 大卫·赖克讨论了最新的基因证据,这些证据挑战了尼安德特人作为独立灭绝物种的传统观点,提出他们可能更适合被理解为现代人类的近亲或"表亲"
+* 主要话题: 古代DNA分析、尼安德特人与智人的杂交、现代人类群体中的基因遗产、对人类进化和物种分类的影响
+* 为何值得观看: 赖克是古基因组学领域的顶尖专家,他的研究彻底改变了我们对人类祖先的理解。这次对话提供了关于基因数据如何改写人类家谱的前沿见解,以及这对我们理解"人之为人"意味着什么
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=iuVDb9hKn3w)**
+
+### 🎬 This FREE AI Tool Works Without Internet 😳🔥 | Better Than claude-sonnet-4-5?
+
+**Channel:** Entri Coding தமிழ்
+
+* What the video covers: Introduces a free AI tool that functions completely offline without requiring an internet connection, positioning it as a potential alternative to ChatGPT
+* Key topics discussed: Offline AI capabilities, comparison with ChatGPT, accessibility and privacy benefits of local AI models, practical demonstrations of the tool's features
+* Why it's worth watching: Learn about cutting-edge offline AI technology that offers privacy, zero latency, and independence from internet connectivity—ideal for developers and users concerned about data privacy or working in low-connectivity environments
+
+---
+
+### 🎬 无需联网的免费AI工具 😳🔥 | 比ChatGPT更好？
+
+**频道:** Entri Coding தமிழ்
+
+* 视频内容概述: 介绍一款完全离线运行的免费AI工具，无需互联网连接，并将其与ChatGPT进行对比
+* 主要话题: 离线AI功能、与ChatGPT的比较、本地AI模型的隐私和可访问性优势、工具功能的实际演示
+* 为何值得观看: 了解前沿的离线AI技术，提供隐私保护、零延迟和网络独立性——非常适合关注数据隐私或在低网络环境下工作的开发者和用户
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PAxZEvwVmII)**
+
+### 🎬 "just build" is easier said than done (or is it?)
+
+**Channel:** bashbunni
+
+* **What the video covers:** Explores the common advice "just build" given to aspiring developers and whether it's actually practical or oversimplified
+* **Key topics discussed:** The challenges of learning programming through building projects, practical approaches to skill development, and how platforms like CodeCrafters can bridge the gap between theory and practice
+* **Why it's worth watching:** Offers a realistic perspective on the "just build" mantra that's often thrown at beginners, addressing the friction points developers face when trying to learn by doing and providing actionable alternatives
+
+---
+
+### 🎬 "just build"说起来容易做起来难（真的吗？）
+
+**频道:** bashbunni
+
+* **视频内容概述:** 探讨开发者常听到的"直接动手做项目"这一建议是否真的实用，还是过于简化
+* **主要话题:** 通过构建项目学习编程的挑战、技能发展的实用方法，以及 CodeCrafters 等平台如何帮助弥合理论与实践之间的差距
+* **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
 
