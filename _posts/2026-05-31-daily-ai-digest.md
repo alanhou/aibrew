@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 31, 2026"
 date: 2026-05-31
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -689,4 +689,90 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
+
+<!-- [Title-Only] -->
+### The Website Specification
+
+* Based on the title, this article likely presents a formal or comprehensive specification for building websites - potentially covering standards, best practices, or a systematic approach to web development
+* It might be interesting to readers because it could offer a structured framework for creating consistent, well-designed websites, or it may propose new standards for how websites should be built and documented
+
+### 网站规范
+
+* 根据标题推测，这篇文章可能提出了一个正式或全面的网站构建规范——可能涵盖标准、最佳实践，或是一种系统化的 Web 开发方法
+* 值得关注的原因在于，它可能为创建一致、设计良好的网站提供了结构化框架，或者提出了关于网站应如何构建和文档化的新标准
+
+**Note:** This introduction is based solely on the article title, as the content could not be fetched.
+
+**[Read Original / 阅读原文](https://specification.website/)**
+
+<!-- [Title-Only] -->
+### A Gentle Introduction to Lattice-Based Cryptography [pdf]
+
+* Based on the title, this article likely provides an accessible overview of lattice-based cryptographic systems, which are mathematical structures used in post-quantum cryptography. It probably covers the fundamental concepts of lattices in cryptography, why they're considered resistant to quantum computer attacks, and their applications in modern encryption schemes.
+* This is particularly interesting to readers because lattice-based cryptography is one of the leading candidates for securing communications in the post-quantum era. As quantum computers advance, traditional encryption methods like RSA may become vulnerable, making lattice-based alternatives increasingly important for future cybersecurity.
+
+### 格基密码学入门指南 [pdf]
+
+* 根据标题推测，这篇文章可能提供了格基密码系统的易懂概述。格是一种用于后量子密码学的数学结构。文章可能涵盖密码学中格的基本概念、为何它们被认为能抵抗量子计算机攻击，以及它们在现代加密方案中的应用。
+* 值得关注的原因是格基密码学是后量子时代保护通信安全的主要候选方案之一。随着量子计算机的发展，RSA等传统加密方法可能变得脆弱，这使得基于格的替代方案对未来网络安全越来越重要。
+
+**[Read Original / 阅读原文](https://cryptography101.ca/wp-content/uploads/lattice-based-cryptography.pdf)**
+
+### DECmate II: The PDP-8 Minicomputer Transformed into a Desktop Word Processor
+
+* In 1982, DEC shrunk the PDP-8 minicomputer into the DECmate II, a desktop word processor, years before doing the same with the PDP-11 (DEC Professional)
+* The DECmate II descended from the 1977 VT78 DECstation and came with two built-in floppy drives, marketed as a simple office system for basic computing needs
+* Optional expansion included Z80 or 8086 processor cards for CP/M or MS-DOS compatibility, additional floppy drives, hard disks, and graphics cards
+* The original PDP-8 (1965) was a 12-bit minicomputer derived from MIT's 1961 LINC, priced at $18,500 ($190,000 in 2026 dollars), and became the best-selling computer of its time
+* The PDP-8 evolved through multiple versions, culminating in the 1970 PDP-8/E, which became the first computer to sell for under $5,000 ($52,000 in 2026 dollars)
+* By the mid-1970s, the PDP-8's architectural limitations (4kW addressing, awkward subroutine calls, limited instruction set) made it increasingly obsolete
+* DEC initially resisted microprocessor implementations, with Ken Olsen famously vetoing personal computer projects in 1974, stating no one would want a computer at home
+* Intersil, founded by transistor pioneer Jean Hoerni, saw an opportunity in the large PDP-8 installed base and developed the first commercial microprocessor implementation
+
+### DECmate II:将 PDP-8 小型机转变为桌面文字处理器
+
+* 1982年,DEC 将 PDP-8 小型机缩小为 DECmate II 桌面文字处理器,比对 PDP-11 进行同样处理(DEC Professional)早了数年
+* DECmate II 源自1977年的 VT78 DECstation,配备两个内置软盘驱动器,作为简单的办公系统销售
+* 可选扩展包括用于 CP/M 或 MS-DOS 兼容的 Z80 或8086处理器卡、额外软盘驱动器、硬盘和图形卡
+* 原始 PDP-8(1965年)是12位小型机,源自麻省理工学院1961年的 LINC,售价18,500美元(按2026年美元计算约19万美元),成为当时最畅销的计算机
+* PDP-8 经历多个版本演进,1970年的 PDP-8/E 成为首台售价低于5,000美元的计算机(按2026年美元计算约5.2万美元)
+* 到1970年代中期,PDP-8 的架构局限性(4kW 寻址限制、笨拙的子程序调用、有限的指令集)使其日益过时
+* DEC 最初抵制微处理器实现,Ken Olsen 于1974年否决了个人计算机项目,声称没人会想在家里放台计算机
+* 由晶体管先驱 Jean Hoerni 创立的 Intersil 公司看到了庞大的 PDP-8 安装基数中的商机,开发了首个商用微处理器实现
+
+**[Read Original / 阅读原文](http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html)**
+
+### gemini-web2api - Convert Google Gemini Web Interface to OpenAI-Compatible API
+
+* **What it does**: Transforms Google Gemini's web interface into a drop-in OpenAI API replacement, enabling free access to Gemini models through standard OpenAI client libraries without authentication or API keys.
+
+* **Key features**: 
+  - Zero-cost access with optional authentication
+  - Full OpenAI `/v1/chat/completions` compatibility with streaming support
+  - Multiple Gemini models including Flash Thinking (20k+ character output)
+  - Function calling/tool use support
+  - Adjustable thinking depth and built-in web search
+  - Single Python file with no external dependencies
+  - Cross-platform with Docker support and proxy configuration
+
+* **Why it's notable**: Provides a clever workaround for accessing Google's Gemini models without official API costs by reverse-engineering the web protocol. The single-file, dependency-free design makes deployment trivial, while OpenAI compatibility means it works with existing tools like Cherry Studio, ChatBox, and the OpenAI Python SDK. The Flash Thinking model's extended output capacity (20k+ chars) is particularly valuable for complex tasks.
+
+---
+
+### gemini-web2api - 将 Google Gemini 网页版转换为 OpenAI 兼容 API
+
+* **功能介绍**: 将 Google Gemini 网页界面转换为标准 OpenAI API 接口,无需认证或 API 密钥即可通过 OpenAI 客户端库免费访问 Gemini 模型。
+
+* **主要特点**:
+  - 零成本访问,支持可选的身份验证
+  - 完全兼容 OpenAI `/v1/chat/completions` 接口,支持流式传输
+  - 支持多个 Gemini 模型,包括 Flash Thinking(输出超过 2 万字符)
+  - 支持函数调用/工具使用
+  - 可调节思考深度,内置网络搜索功能
+  - 单个 Python 文件,无外部依赖
+  - 跨平台支持,提供 Docker 部署和代理配置
+
+* **为何值得关注**: 通过逆向工程网页协议,巧妙地实现了无需官方 API 费用即可访问 Google Gemini 模型。单文件、零依赖的设计使部署极其简单,而 OpenAI 兼容性意味着可以直接用于 Cherry Studio、ChatBox 和 OpenAI Python SDK 等现有工具。Flash Thinking 模型的超长输出能力(2 万+字符)对复杂任务特别有价值。
+
+**[View Repository / 查看仓库](https://github.com/Sophomoresty/gemini-web2api)**
 
