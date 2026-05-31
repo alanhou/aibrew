@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: May 31, 2026"
 date: 2026-05-31
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -775,4 +775,83 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得关注**: 通过逆向工程网页协议,巧妙地实现了无需官方 API 费用即可访问 Google Gemini 模型。单文件、零依赖的设计使部署极其简单,而 OpenAI 兼容性意味着可以直接用于 Cherry Studio、ChatBox 和 OpenAI Python SDK 等现有工具。Flash Thinking 模型的超长输出能力(2 万+字符)对复杂任务特别有价值。
 
 **[View Repository / 查看仓库](https://github.com/Sophomoresty/gemini-web2api)**
+
+<!-- [Title-Only] -->
+### The Website Specification
+
+* Based on the title, this article likely presents a formal or comprehensive specification for building websites - potentially covering standards, best practices, or a systematic approach to web development
+* It might be interesting to readers because it could offer a structured framework for creating consistent, well-architected websites, or it may be proposing new standards for how websites should be built and documented
+
+### 网站规范
+
+* 根据标题推测，这篇文章可能提出了一个正式或全面的网站构建规范——可能涵盖标准、最佳实践，或是一种系统化的 Web 开发方法
+* 值得关注的原因在于，它可能提供了一个结构化框架来创建一致、架构良好的网站，或者正在提出关于网站应该如何构建和文档化的新标准
+
+**Note:** This introduction is based solely on the article title, as the content could not be fetched.
+
+**注意：** 此简介仅基于文章标题，因为无法获取实际内容。
+
+**[Read Original / 阅读原文](https://specification.website/)**
+
+### Diamond Geezer: London's Free Public Roof Terraces
+
+* City developers discovered that including free public roof terraces increases planning permission approval rates
+* The author visited several walk-in roof terraces, skipping the "big three" (Sky Garden, Horizon 22, The Lookout) which require advance booking
+* **The Terrace at 1 Leadenhall** (opened April 2026, 4th floor): Unusually low for a roof terrace, offers views of Leadenhall Market from above and surrounding City skyscrapers, though currently obstructed by construction at 85 Gracechurch Street
+* **The Garden at 120 at Fen Court** (opened February 2019, 15th floor): The largest roof garden in the City with 360° panoramic views including Tower Bridge, the Tower of London, Docklands, and close-up views of the Gherkin
+* **Roof Terrace at One New Change** (opened November 2010, 6th floor): Located atop a shopping center next to St Paul's Cathedral, offers spectacular views of the cathedral dome and serves as public space alongside a rooftop bar
+* All walk-in terraces provide quick access (20-40 second lift rides) with minimal wait times
+* These free elevated viewing platforms demonstrate how planning requirements can create genuine public amenities in London's dense financial district
+
+### 钻石老兄：伦敦免费公共屋顶露台
+
+* 伦敦金融城的开发商发现，在新摩天大楼中设置免费公共屋顶露台更容易获得规划许可
+* 作者参观了几个可直接进入的屋顶露台，跳过了需要提前预订的"三大"露台（空中花园、Horizon 22、瞭望台）
+* **1 Leadenhall 的露台**（2026年4月开放，4层）：对于屋顶露台来说高度异常低，可从上方俯瞰 Leadenhall 市场和周围的金融城摩天大楼，但目前被 85 Gracechurch Street 的施工遮挡
+* **Fen Court 的 120 花园**（2019年2月开放，15层）：金融城最大的屋顶花园，拥有360°全景视野，包括伦敦塔桥、伦敦塔、码头区，以及小黄瓜大厦的近距离景观
+* **One New Change 的屋顶露台**（2010年11月开放，6层）：位于圣保罗大教堂旁购物中心顶部，可欣赏大教堂圆顶的壮观景色，与屋顶酒吧共享公共空间
+* 所有可直接进入的露台都提供快速通道（电梯行程20-40秒），等待时间极短
+* 这些免费的高空观景平台展示了规划要求如何在伦敦密集的金融区创造真正的公共设施
+
+**[Read Original / 阅读原文](https://diamondgeezer.blogspot.com/2026/05/londons-free-roof-terraces.html)**
+
+### Avian Visitors: A Bird Monitoring System with Artistic Flair
+
+* **Project Overview**: Fork of BirdNET-Pi that adds a kachō-e (Japanese bird-and-flower art) collage overlay to Cornell's BirdNET acoustic classifier for real-time bird species identification
+* **Hardware Requirements**: Raspberry Pi 4 (2GB+ RAM), USB microphone, microSD card (32GB+), and optional API keys for Gemini (illustration restyling) and eBird (regional filtering)
+* **Installation Process**: Flash Raspberry Pi OS Lite, configure SSH and WiFi, run automated installer that sets up audio capture, species identification model, web UI, and artistic overlay at `birdnet.local`
+* **Key Features**: Real-time audio monitoring, automatic species identification, artistic visualization with historical Japanese art style, admin panel for system management and log monitoring
+* **Deployment Options**: Default LAN-only access, or optional public exposure via Cloudflare Tunnel (with HTTPS and no port forwarding), plus Home Assistant integration for automation triggers
+* **Technical Stack**: BirdNET acoustic classifier, Caddy web server, custom JSON API facade, symlinked overlay architecture preserving original BirdNET-Pi functionality at `/index.php`
+* **Use Case**: Personal wildlife monitoring station that transforms bird detection data into an aesthetically pleasing real-time collage, suitable for apartment dwellers or nature enthusiasts
+
+---
+
+### 飞羽访客：结合艺术美学的鸟类监测系统
+
+* **项目概述**：BirdNET-Pi 的分支版本，在康奈尔大学 BirdNET 声学分类器基础上添加了花鸟画（日本传统艺术）拼贴覆盖层，实现实时鸟类物种识别
+* **硬件需求**：树莓派 4（2GB+ 内存）、USB 麦克风、microSD 卡（32GB+），以及可选的 Gemini API 密钥（插图重绘）和 eBird API 密钥（区域过滤）
+* **安装流程**：烧录树莓派 OS Lite 系统，配置 SSH 和 WiFi，运行自动化安装脚本，完成音频采集、物种识别模型、Web 界面和艺术覆盖层的部署，访问地址为 `birdnet.local`
+* **核心功能**：实时音频监听、自动物种识别、日本历史艺术风格的可视化呈现、系统管理和日志监控的管理面板
+* **部署选项**：默认局域网访问，或通过 Cloudflare Tunnel 实现公网 HTTPS 访问（无需端口转发），另支持 Home Assistant 集成用于自动化触发
+* **技术栈**：BirdNET 声学分类器、Caddy Web 服务器、自定义 JSON API 接口、符号链接覆盖架构（保留原始 BirdNET-Pi 功能于 `/index.php`）
+* **应用场景**：个人野生动物监测站，将鸟类检测数据转化为美观的实时拼贴画，适合公寓居民或自然爱好者使用
+
+**[Read Original / 阅读原文](https://theodore.net/projects/AvianVisitors/)**
+
+### 🎬 The Complete Guide to Learning Coding in 2026
+**Channel:** Aishwarya Srinivasan
+
+* What the video covers: A strategic approach to learning programming in 2026, challenging the traditional "which language should I learn first" question
+* Key topics discussed: Modern programming learning strategies, how to choose what to learn based on goals rather than languages, navigating the evolving tech landscape with AI tools
+* Why it's worth watching: Provides a fresh perspective on coding education that moves beyond language debates to focus on problem-solving and practical skills relevant to 2026's development environment
+
+### 🎬 2026年编程学习完全指南
+**频道:** Aishwarya Srinivasan
+
+* 视频内容概述: 2026年学习编程的策略性方法,挑战传统的"我应该先学哪种语言"这一问题
+* 主要话题: 现代编程学习策略、如何基于目标而非语言来选择学习内容、在AI工具时代如何驾驭不断演变的技术环境
+* 为何值得观看: 提供了编程教育的全新视角,超越语言之争,聚焦于2026年开发环境中相关的问题解决能力和实用技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
 
