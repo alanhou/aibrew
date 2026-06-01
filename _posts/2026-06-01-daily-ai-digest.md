@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 01, 2026"
 date: 2026-06-01
-description: "Today's digest: 4 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：4篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 7 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：7篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -502,4 +502,106 @@ pin: false
 * **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
+
+### A 10-Year-Old Xeon Is All You Need: Running Modern LLMs on Ancient Hardware
+
+* **Hardware Setup**: The author runs a Gemma 4 26B language model on a 2016 Intel Xeon E5-2620 v4 server with 128GB DDR3 RAM and no GPU—hardware 5-6x slower than modern laptops
+* **The Memory Wall Problem**: LLM inference is memory-bandwidth limited, not compute-limited; the CPU sits idle waiting for gigabytes of model weights to transfer from RAM during token generation
+* **Why Standard Tools Fail**: Tools like Ollama and standard llama.cpp don't expose enough optimization controls or implement state-of-the-art techniques needed for efficient CPU inference
+* **Speculative Decoding**: Uses a small "drafter" model to predict multiple tokens ahead, which the larger "verifier" model validates in parallel—bypassing the memory wall by batching decoder passes
+* **Advanced Optimizations**: The solution involves a complex command with flags for MTP (multi-token prediction), CPU-specific MoE (Mixture of Experts) routing, flash attention, memory locking, and runtime repacking
+* **CPU Advantage for Speculation**: Speculative decoding works better on CPU than GPU because CPU compute is cheap relative to memory bandwidth, making the drafter's overhead negligible
+* **Expert Routing**: Gemma 4's 128 experts (8 active per token) are optimized with `--cpu-moe` and `--merge-up-gate-experts` to fit routing decisions in CPU cache hierarchies
+* **Practical Achievement**: Demonstrates that with proper optimization, decade-old server hardware can run cutting-edge AI models that conventional wisdom says require modern GPUs
+
+### 十年前的至强处理器就够用了：在老旧硬件上运行现代大语言模型
+
+* **硬件配置**：作者在2016年的Intel Xeon E5-2620 v4服务器上运行Gemma 4 26B语言模型，配备128GB DDR3内存且无GPU——性能比现代笔记本慢5-6倍
+* **内存墙问题**：大语言模型推理受内存带宽限制而非计算能力限制；在生成token时，CPU需要等待数GB的模型权重从内存传输，导致空闲
+* **标准工具的局限**：Ollama和标准llama.cpp等工具没有暴露足够的优化控制选项，也未实现CPU推理所需的前沿优化技术
+* **推测解码技术**：使用小型"起草器"模型预测多个token，由大型"验证器"模型并行验证——通过批量处理解码过程来绕过内存墙
+* **高级优化配置**：解决方案涉及复杂的命令行参数，包括MTP（多token预测）、CPU专用的MoE（专家混合）路由、flash attention、内存锁定和运行时重打包
+* **CPU推测优势**：推测解码在CPU上比GPU更有效，因为相对于内存带宽，CPU计算成本低廉，使起草器的开销可以忽略不计
+* **专家路由优化**：Gemma 4的128个专家（每个token激活8个）通过`--cpu-moe`和`--merge-up-gate-experts`优化，使路由决策适配CPU缓存层次结构
+* **实践成果**：证明通过适当优化，十年前的服务器硬件可以运行传统观念认为需要现代GPU才能运行的前沿AI模型
+
+**[Read Original / 阅读原文](https://point.free/blog/gemma-4-on-a-2016-xeon/)**
+
+### Chuwi Minibook X: A Modern Netbook Revival
+
+* **Compact powerhouse**: 10.5" sub-ultrabook with Intel N150 CPU, 16GB RAM, 512GB NVMe, weighing just 911g at $350
+* **Linux compatibility**: Runs Linux well with working camera, touchscreen, sleep/hibernate, Bluetooth, and Wi-Fi 6 (requires Intel blobs)
+* **Screen rotation quirk**: Hardware-mounted panel requires fixes at multiple layers—bootloader (GRUB patches), kernel parameters (`video=DSI-1:panel_orientation=right_side_up`), initrd (`i915` module), and framebuffer (`fbcon=rotate:1`)
+* **Decent performance**: Geekbench6 scores of 1295 (single-core) and 3332 (multi-core); Wi-Fi 6 reaches 424 Mbps
+* **Good thermals and battery**: Stays cool under load with sufficient battery life for extended use
+* **Quirky charger**: Ships with non-standard 12V/2A USB-C charger, but works fine with standard PD chargers at 20V
+* **Upgradeable storage**: NVMe drive is user-replaceable, though RAM is soldered
+* **Netbook nostalgia**: Fills the niche left by discontinued netbooks as a portable, budget-friendly knock-around laptop
+
+### Chuwi Minibook X：现代上网本的复兴
+
+* **小巧强悍**：10.5英寸超便携笔记本，搭载Intel N150处理器、16GB内存、512GB NVMe固态硬盘，重量仅911克，售价350美元
+* **Linux兼容性**：Linux运行良好，摄像头、触摸屏、睡眠/休眠、蓝牙和Wi-Fi 6均可正常工作（需要Intel非自由固件）
+* **屏幕旋转问题**：硬件面板侧装需要在多个层面修复——引导加载程序（GRUB补丁）、内核参数（`video=DSI-1:panel_orientation=right_side_up`）、initrd（`i915`模块）和帧缓冲（`fbcon=rotate:1`）
+* **性能尚可**：Geekbench6跑分单核1295、多核3332；Wi-Fi 6速度达424 Mbps
+* **散热和续航良好**：负载下保持凉爽，电池续航足够长时间使用
+* **充电器特殊**：配备非标准12V/2A USB-C充电器，但可使用标准PD充电器（20V）
+* **存储可升级**：NVMe硬盘可由用户更换，但内存已焊接
+* **上网本情怀**：填补了已停产上网本留下的空白，是便携、经济实惠的随身笔记本
+
+**[Read Original / 阅读原文](https://tylercipriani.com/blog/2026/05/28/chuwi-minibook-x/)**
+
+### Meta Silences Facebook Whistleblower at Hay Festival Through Legal Action
+
+* Former Facebook executive Sarah Wynn-Williams was forced to sit silently on stage at Hay Festival due to ongoing Meta legal action, unable to speak, nod, or respond during the hour-long panel discussion
+* Wynn-Williams authored "Careless People," a bestselling memoir detailing allegations about Meta's internal culture, political influence, approach to China, and child user safety concerns
+* Meta secured an emergency legal order preventing her from publicly discussing aspects of her book, with $50,000 fines per violation, threatening her with bankruptcy
+* Meta filed a sanctions motion in March 2026 claiming Wynn-Williams violates the order by appearing publicly where her book is sold, specifically citing the Hay Festival appearance
+* The whistleblower received a standing ovation from the audience, while panelists Carole Cadwalladr and Tim Wu condemned Meta's actions as "censorship" and "trolling-like behavior"
+* Hay Festival withdrew the book from sale during her appearance to avoid breaching Meta's legal order
+
+### Meta 通过法律行动在 Hay 文学节封杀 Facebook 举报人
+
+* 前 Facebook 高管 Sarah Wynn-Williams 因 Meta 正在进行的法律诉讼被迫在 Hay 文学节舞台上保持沉默,在长达一小时的小组讨论中无法说话、点头或做出任何回应
+* Wynn-Williams 撰写了畅销回忆录《Careless People》,详细披露了 Meta 内部文化、政治影响力、对华策略以及儿童用户安全问题的指控
+* Meta 获得紧急法律禁令,禁止她公开讨论书中内容,每次违规罚款 5 万美元(约 3.7 万英镑),使她面临破产威胁
+* Meta 于 2026 年 3 月提交制裁动议,声称 Wynn-Williams 在其书籍有售的公共场合露面即构成违规,特别点名 Hay 文学节活动
+* 这位举报人获得观众起立鼓掌,而小组成员 Carole Cadwalladr 和 Tim Wu 谴责 Meta 的行为是"审查"和"类似网络霸凌的行为"
+* Hay 文学节在她出席期间撤下该书销售,以避免违反 Meta 的法律禁令
+
+**[Read Original / 阅读原文](https://www.theguardian.com/technology/2026/may/31/meta-legal-action-forces-facebook-whistleblower-to-stay-silent-at-hay-festival)**
+
+### 🎬 Update Query in SQL 💯| SQL tutorial
+
+**Channel:** DevNest Code
+
+* Covers the SQL UPDATE query syntax and usage
+* Key topics: modifying existing data in database tables, UPDATE statement structure in SQL
+* Worth watching for: Quick, focused tutorial on one of SQL's fundamental data manipulation commands, presented in Tamil for Tamil-speaking learners
+
+### 🎬 SQL UPDATE 查询教程
+
+**频道:** DevNest Code
+
+* 视频内容概述：讲解 SQL UPDATE 查询语法和使用方法
+* 主要话题：修改数据库表中的现有数据，UPDATE 语句结构
+* 为何值得观看：针对 SQL 基础数据操作命令的简短教程，使用泰米尔语讲解，适合泰米尔语学习者快速掌握
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kyaHdEtoJi8)**
+
+### 🎬 Сделал игру для стика! #arduino #m5stack #programming #iot
+**Channel:** Hobby Support
+
+* What the video covers: A DIY game project built for the M5Stack Stick, a compact IoT development board based on Arduino
+* Key topics discussed: Arduino programming, M5Stack hardware implementation, game development for embedded devices, IoT project creation
+* Why it's worth watching: Demonstrates practical hands-on IoT game development with open-source code available on GitHub (stickBananaBoxing), perfect for makers interested in combining gaming with embedded systems
+
+### 🎬 为游戏手柄制作了一款游戏！#arduino #m5stack #programming #iot
+**频道:** Hobby Support
+
+* 视频内容概述: 为 M5Stack Stick（基于 Arduino 的紧凑型物联网开发板）开发的 DIY 游戏项目
+* 主要话题: Arduino 编程、M5Stack 硬件实现、嵌入式设备游戏开发、物联网项目创建
+* 为何值得观看: 展示了实用的物联网游戏开发实践，GitHub 上提供开源代码（stickBananaBoxing），非常适合对嵌入式系统游戏开发感兴趣的创客
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yw5qVl_nXDk)**
 
