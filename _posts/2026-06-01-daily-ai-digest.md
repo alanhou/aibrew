@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 01, 2026"
 date: 2026-06-01
-description: "Today's digest: 4 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：4篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 4 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：4篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -257,103 +257,6 @@ pin: false
 
 ---
 
-### 🎬 "just build" 说起来容易做起来难（真的吗？）
-
-**频道:** bashbunni
-
-* **视频内容概述:** 探讨给初学者的常见建议"just build"（直接动手做）是否真的实用，还是过于简化
-* **主要话题:** 通过构建项目学习编程的挑战、如何有效地进行实践学习，以及像 CodeCrafters 这样的结构化学习资源
-* **为何值得观看:** 对经常被抛给初学者的"just build"口号提供了现实的视角，给出了如何真正通过实践学习而不至于不知所措的可行建议
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
-
-### Cloudflare Turnstile Now Requires WebGL Fingerprinting, Blocking Privacy-Focused Browsers
-
-* Cloudflare Turnstile has been looping indefinitely for about a week on WebKit-GTK based browsers, blocking access to numerous websites
-* The issue stems from Cloudflare requiring WebGL fingerprinting for device verification, which WebKit blocks by default as a privacy protection measure
-* Cloudflare justifies this by claiming fingerprinting is needed to verify humans, and that privacy tools make browsers "look like bots"
-* **WebKit has blocked WebGL fingerprinting for years**, meaning Cloudflare has effectively banned all WebKitGTK browsers (though Safari appears to have an exception)
-* Firefox's WebGL fingerprinting protection is flawed - it reveals sanitized GPU characteristics instead of returning hardcoded strings like WebKit and Blink
-* Firefox's `privacy.resistfingerprinting` setting is not enabled even under "Strict" Enhanced Privacy Protection mode
-* Privacy-conscious Firefox users who manually enable fingerprinting resistance may face similar Cloudflare verification issues in the future
-* The author views this as tracking-focused behavior, noting that even Apple blocks this level of fingerprinting
-
-### Cloudflare Turnstile 现要求 WebGL 指纹识别，屏蔽注重隐私的浏览器
-
-* Cloudflare Turnstile 在基于 WebKit-GTK 的浏览器上已持续无限循环约一周，导致无法访问大量网站
-* 问题源于 Cloudflare 要求通过 WebGL 指纹识别进行设备验证，而 WebKit 默认将其作为隐私保护措施予以屏蔽
-* Cloudflare 声称需要指纹识别来验证真人，并称隐私工具会让浏览器"看起来像机器人"
-* **WebKit 多年来一直屏蔽 WebGL 指纹识别**，这意味着 Cloudflare 实际上已禁止所有 WebKitGTK 浏览器（但 Safari 似乎有例外）
-* Firefox 的 WebGL 指纹保护存在缺陷 - 它会泄露经过清理的 GPU 特征，而非像 WebKit 和 Blink 那样返回硬编码字符串
-* 即使在"严格"增强隐私保护模式下，Firefox 的 `privacy.resistfingerprinting` 设置也未启用
-* 手动启用指纹抵抗功能的注重隐私的 Firefox 用户未来可能面临类似的 Cloudflare 验证问题
-* 作者认为这是以追踪为目的的行为，指出连苹果都会屏蔽这种级别的指纹识别
-
-**[Read Original / 阅读原文](https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting)**
-
-### PrismML Releases Bonsai Image 4B: Ultra-Compact Image Generation Models for Local Devices
-
-* **Two variants launched**: 1-bit Bonsai Image 4B (0.93 GB transformer, 1.125 bits/weight) for maximum compression, and Ternary Bonsai Image 4B (1.21 GB transformer, 1.71 bits/weight) for better visual quality while remaining compact
-* **First-of-its-kind mobile deployment**: Bonsai Image 4B is the first 4B-parameter class image model capable of running directly on iPhone, achieving 6-8x memory reduction compared to full-precision FLUX.2 Klein 4B
-* **Strong performance retention**: Ternary variant retains 95% accuracy of the original model across GenEval, HPSv3, and DPG-Bench benchmarks; 1-bit variant retains 88% while using 8.3x less memory
-* **Practical inference speeds**: Generates 512x512 images in 9.4 seconds on iPhone 17 Pro Max and 6 seconds on Mac M4 Pro, up to 5.6x faster than full-precision pipelines on Mac
-* **Open release**: Both models released under Apache 2.0 license with open weights and code, accompanied by Bonsai Studio iOS app for on-device generation
-* **Built on FLUX.2 Klein 4B**: Uses binary {-1, +1} and ternary {-1, 0, +1} weight representations with FP16 scaling factors, keeping architecture intact while dramatically reducing memory footprint
-* **Enables local-first workflows**: Removes cloud dependency for image generation, enabling faster iteration, lower costs, privacy preservation, and offline capability on consumer devices
-
-### PrismML 发布 Bonsai Image 4B：面向本地设备的超紧凑图像生成模型
-
-* **推出两个版本**：1-bit Bonsai Image 4B（0.93 GB 变换器，1.125 位/权重）实现最大压缩，Ternary Bonsai Image 4B（1.21 GB 变换器，1.71 位/权重）在保持紧凑的同时提供更好的视觉质量
-* **首创移动端部署**：Bonsai Image 4B 是首个能直接在 iPhone 上运行的 4B 参数级图像模型，相比全精度 FLUX.2 Klein 4B 实现 6-8 倍内存缩减
-* **强劲性能保持**：三值版本在 GenEval、HPSv3 和 DPG-Bench 基准测试中保持原模型 95% 的准确率；1-bit 版本保持 88% 准确率，同时内存占用减少 8.3 倍
-* **实用推理速度**：在 iPhone 17 Pro Max 上 9.4 秒生成 512x512 图像，在 Mac M4 Pro 上 6 秒完成，比 Mac 上的全精度管道快 5.6 倍
-* **开放发布**：两个模型均以 Apache 2.0 许可证发布开放权重和代码，并配套推出 Bonsai Studio iOS 应用用于设备端生成
-* **基于 FLUX.2 Klein 4B 构建**：使用二值 {-1, +1} 和三值 {-1, 0, +1} 权重表示配合 FP16 缩放因子，保持架构完整的同时大幅降低内存占用
-* **实现本地优先工作流**：消除图像生成对云端的依赖，实现更快迭代、更低成本、隐私保护和消费级设备上的离线能力
-
-**[Read Original / 阅读原文](https://prismml.com/news/bonsai-image-4b)**
-
-<!-- [Title-Only] -->
-### What if remote working, not AI, is to blame for weak junior hiring?
-
-* Based on the title, this article likely explores an alternative explanation for the current challenges in junior-level hiring. Rather than attributing difficulties to AI automation or other technological factors, it suggests that the shift to remote work may be the primary culprit affecting entry-level employment opportunities.
-* This perspective is worth considering because it challenges the dominant narrative around AI's impact on jobs. The article probably examines how remote work environments may reduce mentorship opportunities, make onboarding more difficult, or change how companies evaluate the cost-benefit of hiring inexperienced workers who require more hands-on training and supervision.
-
-### 远程办公而非 AI，才是初级岗位招聘疲软的罪魁祸首？
-
-* 根据标题推测，这篇文章可能探讨了当前初级岗位招聘困难的另一种解释。文章认为远程工作的转变可能是影响入门级就业机会的主要原因，而不是将困难归咎于 AI 自动化或其他技术因素。
-* 这个观点值得关注，因为它挑战了关于 AI 对就业影响的主流叙事。文章可能会分析远程工作环境如何减少了导师指导机会，使入职培训变得更加困难，或者改变了企业对雇用需要更多现场培训和监督的缺乏经验员工的成本效益评估方式。
-
-**[Read Original / 阅读原文](https://www.ft.com/content/2205e2d0-50dc-4e80-9bf7-78d0272276c0)**
-
-### Hermes WebUI - Web Interface for Hermes Autonomous Agent
-
-* **What it does**: Provides a browser-based interface for Hermes Agent, a sophisticated autonomous AI agent that runs on your server with persistent memory and cross-session learning capabilities
-* **Key features**: Three-panel layout (sessions, chat, workspace file browser), full CLI parity, no build step required (vanilla JS + Python), dark/light themes, SSH tunnel access, optional Gateway API backend, session recall prefill support
-* **Why it's notable**: Bridges the gap between powerful self-hosted AI agents and convenient web access - gives you the full capabilities of Hermes Agent (persistent memory, scheduled jobs, messaging platform integration, self-improving skills) through a clean web UI without additional setup or configuration
-
-### Hermes WebUI - Hermes 自主代理的 Web 界面
-
-* **功能介绍**: 为 Hermes Agent 提供浏览器界面,Hermes Agent 是一个运行在服务器上的复杂自主 AI 代理,具有持久化内存和跨会话学习能力
-* **主要特点**: 三面板布局(会话、聊天、工作区文件浏览器),与 CLI 完全对等,无需构建步骤(原生 JS + Python),支持深色/浅色主题,SSH 隧道访问,可选 Gateway API 后端,会话回忆预填充支持
-* **为何值得关注**: 在强大的自托管 AI 代理和便捷的 Web 访问之间架起桥梁 - 通过简洁的 Web UI 提供 Hermes Agent 的全部功能(持久化内存、定时任务、消息平台集成、自我改进技能),无需额外设置或配置
-
-**[View Repository / 查看仓库](https://github.com/nesquena/hermes-webui)**
-
-### Compound Engineering - AI Skills and Agents for Compounding Development Productivity
-
-* **What it does**: An official plugin for Claude Code, Codex, Cursor, and other AI coding assistants that provides a structured workflow for software development where each unit of work makes the next one easier through systematic planning, review, and knowledge capture.
-
-* **Key features**: 
-  - Complete development workflow with 37 skills and 51 agents covering strategy (`/ce-strategy`), ideation (`/ce-ideate`), requirements gathering (`/ce-brainstorm`), implementation planning (`/ce-plan`), execution (`/ce-work`), debugging (`/ce-debug`), code review (`/ce-code-review`), and knowledge compounding (`/ce-compound`)
-  - Philosophy of "80% planning and review, 20% execution" to reduce technical debt
-  - Product pulse reporting (`/ce-product-pulse`) for tracking real user outcomes
-  - Cross-platform support for Claude Code, Cursor, Codex, GitHub Copilot, Factory Droid, Qwen Code, OpenCode, Pi, Gemini, and Kiro
-
-* **Why it's notable**: Challenges the traditional development model where codebases accumulate complexity and technical debt. Instead of each feature making the next harder, Compound Engineering inverts this through systematic knowledge capture and reuse. With 243 stars today, it represents a novel approach to AI-assisted development that emphasizes leverage through thorough planning and review cycles, making it particularly relevant as AI coding tools become mainstream.
-
----
-
 ### Compound Engineering - 让每次工程工作都比上次更简单的 AI 技能和代理
 
 * **功能介绍**: 这是一个适用于 Claude Code、Codex、Cursor 等 AI 编程助手的官方插件,提供结构化的软件开发工作流,通过系统化的规划、审查和知识积累,让每个工作单元都能让下一个工作变得更容易。
@@ -477,4 +380,126 @@ pin: false
 * 为何值得观看: 了解前沿的离线AI技术，提供隐私保护、零延迟和网络独立性——非常适合关注数据隐私或在低网络环境下工作的开发者和用户
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=PAxZEvwVmII)**
+
+### Shift from a Leader-Follower to a Leader-Leader Approach
+
+* **Technical expertise that earned your promotion can become your biggest liability as a leader** – micromanaging through code reviews and approval gates creates bottlenecks and trains teams in learned helplessness
+* **Google's Project Oxygen research ranks technical expertise last among effective manager traits** – being a good coach and empowering teams without micromanaging are the top differentiators
+* **Intent-driven leadership transforms "Can I..." into "I intend to... because..."** – this language shift forces engineers to think deeply about why, how, and verification, creating competence rather than compliance
+* **Competence emerges from autonomy, not the other way around** – Marquet's "two pillars" (technical competence and organizational clarity) provide the foundation for giving control safely
+* **Create clear guardrails instead of checkpoints** – architecture principles, ADRs, pre-deployment checklists, and feature flags enable autonomous decision-making within safe boundaries
+* **Thinking out loud accelerates learning** – when senior engineers verbalize their troubleshooting process instead of silently fixing issues, they create shared mental models faster than documentation ever could
+
+### 从领导者-追随者模式转向领导者-领导者模式
+
+* **让你获得晋升的技术专长可能成为你作为领导者的最大负担** – 通过代码审查和审批流程进行微观管理会造成瓶颈，并训练团队习得性无助
+* **谷歌的 Project Oxygen 研究将技术专长排在有效管理者特质的最后** – 成为优秀教练和在不微观管理的情况下赋能团队才是最重要的差异化因素
+* **意图驱动型领导将"我可以吗..."转变为"我打算...因为..."** – 这种语言转变迫使工程师深入思考为什么、如何做以及如何验证，创造能力而非服从
+* **能力源于自主权，而非相反** – Marquet 的"两大支柱"（技术能力和组织清晰度）为安全地授予控制权提供了基础
+* **创建清晰的护栏而非检查点** – 架构原则、ADR、部署前检查清单和功能开关使团队能够在安全边界内自主决策
+* **大声思考加速学习** – 当高级工程师将故障排查过程说出来而不是默默修复问题时，他们创建共享心智模型的速度远超任何文档
+
+**[Read Original / 阅读原文](https://www.practicalengineering.management/p/shift-from-a-leader-follower-to-a)**
+
+### Cloudflare Turnstile Now Requires WebGL Fingerprinting, Blocking Privacy-Focused Browsers
+
+* Cloudflare Turnstile has been looping indefinitely for about a week on WebKit-GTK based browsers, blocking access to numerous websites
+* The issue stems from Cloudflare requiring WebGL fingerprinting for device verification, which WebKit blocks by default as a privacy protection measure
+* Cloudflare justifies this by claiming fingerprinting is needed to verify humans, and that privacy tools make browsers "look like bots"
+* This effectively **bans all WebKitGTK browsers** from accessing Cloudflare-protected sites, though Safari appears to have an exception
+* Firefox has a flawed WebGL fingerprinting protection implementation (Bug #1916271) - it reveals sanitized GPU characteristics instead of returning hardcoded strings like WebKit and Blink
+* Firefox's `privacy.resistfingerprinting` setting is not enabled even under "Strict" Enhanced Privacy Protection, requiring manual configuration
+* Even with manual privacy settings enabled, Firefox currently passes Turnstile checks, but privacy-conscious users may face issues in the future
+
+### Cloudflare Turnstile 现要求 WebGL 指纹识别，屏蔽注重隐私的浏览器
+
+* Cloudflare Turnstile 在基于 WebKit-GTK 的浏览器上已持续无限循环约一周，导致无法访问大量网站
+* 问题源于 Cloudflare 要求通过 WebGL 指纹识别进行设备验证，而 WebKit 默认将其作为隐私保护措施予以屏蔽
+* Cloudflare 声称需要指纹识别来验证人类身份，并称隐私工具会让浏览器"看起来像机器人"
+* 这实际上**封禁了所有 WebKitGTK 浏览器**访问受 Cloudflare 保护的网站，但 Safari 似乎有例外
+* Firefox 的 WebGL 指纹保护实现存在缺陷（Bug #1916271）——它会泄露经过处理的 GPU 特征，而非像 WebKit 和 Blink 那样返回硬编码字符串
+* Firefox 的 `privacy.resistfingerprinting` 设置即使在"严格"增强隐私保护模式下也未启用，需要手动配置
+* 即使手动启用隐私设置，Firefox 目前仍能通过 Turnstile 检查，但注重隐私的用户未来可能会遇到问题
+
+**[Read Original / 阅读原文](https://hacktivis.me/articles/cloudflare-turnstile-webgl-fingerprinting)**
+
+### PrismML Releases Bonsai Image 4B: Ultra-Compact Image Generation Models for Local Devices
+
+* **Two variants launched**: 1-bit Bonsai Image 4B (0.93 GB transformer, 1.125 bits/weight) for maximum compression, and Ternary Bonsai Image 4B (1.21 GB transformer, 1.71 bits/weight) for better visual quality while remaining compact
+* **First-of-its-kind mobile deployment**: Bonsai Image 4B is the first 4B-parameter class image model capable of running directly on iPhone, generating 512×512 images in 9.4 seconds on iPhone 17 Pro Max
+* **Massive footprint reduction**: Achieves 6.4x to 8.3x compression of the diffusion transformer compared to full-precision FLUX.2 Klein 4B (from 7.75 GB to 0.93-1.21 GB), with total deployment payloads of 3.42-3.88 GB vs 15.97 GB
+* **Strong quality retention**: Ternary variant retains 95% of FLUX.2 Klein 4B accuracy across GenEval, HPSv3, and DPG-Bench benchmarks; 1-bit variant retains 88% while using fraction of memory
+* **Performance gains**: Up to 5.6x faster than full-precision pipeline on Mac M4 Pro; enables local, private, iterative image generation without cloud API costs or latency
+* **Open release**: Both models released under Apache 2.0 license with open weights and code; includes Bonsai Studio iOS app for on-device testing
+
+### PrismML 发布 Bonsai Image 4B：面向本地设备的超紧凑图像生成模型
+
+* **推出两个版本**：1-bit Bonsai Image 4B（0.93 GB 变换器，每权重 1.125 位）实现最大压缩，Ternary Bonsai Image 4B（1.21 GB 变换器，每权重 1.71 位）在保持紧凑的同时提供更好的视觉质量
+* **首创移动端部署**：Bonsai Image 4B 是首个能直接在 iPhone 上运行的 4B 参数级图像模型，在 iPhone 17 Pro Max 上生成 512×512 图像仅需 9.4 秒
+* **大幅缩减体积**：相比全精度 FLUX.2 Klein 4B，扩散变换器实现 6.4 倍至 8.3 倍压缩（从 7.75 GB 降至 0.93-1.21 GB），总部署负载为 3.42-3.88 GB，而非 15.97 GB
+* **质量保持优异**：三值版本在 GenEval、HPSv3 和 DPG-Bench 基准测试中保持 FLUX.2 Klein 4B 95% 的准确率；1-bit 版本保持 88% 准确率但内存占用极小
+* **性能提升**：在 Mac M4 Pro 上比全精度管道快 5.6 倍；实现本地化、私密化、迭代式图像生成，无需云 API 成本或延迟
+* **开源发布**：两个模型均以 Apache 2.0 许可证发布开放权重和代码；包含 Bonsai Studio iOS 应用用于设备端测试
+
+**[Read Original / 阅读原文](https://prismml.com/news/bonsai-image-4b)**
+
+### Hermes WebUI - A Web Interface for the Hermes Autonomous Agent
+
+* **What it does**: Provides a browser-based interface for Hermes Agent, a sophisticated autonomous AI agent that runs on your server, retains memory across sessions, and gets smarter over time. Offers full feature parity with the CLI experience.
+
+* **Key features**: Three-panel layout (sessions, chat, workspace file browser); streaming responses; multi-provider model support (OpenAI, Anthropic, Google, DeepSeek, etc.); persistent memory and self-improving skills system; scheduled jobs that run offline; messaging platform integration (Telegram, Discord, Slack, Signal); voice input/output; light/dark themes; mobile-responsive design; optional password protection.
+
+* **Why it's notable**: Unlike typical AI tools that reset every session, Hermes maintains context indefinitely, learns your environment, and can orchestrate other agents like Claude Code. It's self-hosted, provider-agnostic, and requires no additional setup beyond your existing Hermes installation. The WebUI makes this powerful autonomous agent accessible from any browser with a single command, while competitors like Claude Code lack web interfaces or self-hosted scheduling capabilities.
+
+---
+
+### Hermes WebUI - Hermes 自主代理的 Web 界面
+
+* **功能介绍**: 为 Hermes Agent 提供基于浏览器的界面。Hermes Agent 是一个运行在服务器上的复杂自主 AI 代理,能够跨会话保留记忆并随时间变得更智能。与 CLI 体验完全对等。
+
+* **主要特点**: 三面板布局(会话、聊天、工作区文件浏览器);流式响应;多提供商模型支持(OpenAI、Anthropic、Google、DeepSeek 等);持久化记忆和自我改进的技能系统;离线运行的定时任务;消息平台集成(Telegram、Discord、Slack、Signal);语音输入/输出;明暗主题;移动端响应式设计;可选密码保护。
+
+* **为何值得关注**: 与大多数每次会话都会重置的 AI 工具不同,Hermes 可以无限期保持上下文,学习你的环境,并能编排其他代理如 Claude Code。它是自托管的、提供商无关的,除了现有的 Hermes 安装外不需要额外设置。WebUI 通过单个命令就能让这个强大的自主代理从任何浏览器访问,而 Claude Code 等竞品缺乏 Web 界面或自托管调度功能。
+
+**[View Repository / 查看仓库](https://github.com/nesquena/hermes-webui)**
+
+### GordenPPTSkill - AI-Powered Chinese PPT Builder with Template-Based Non-Destructive Editing
+
+* **What it does**: Provides 17 hand-polished Chinese PPTX templates and a python-pptx-based editing system that lets you build professional PowerPoint presentations by writing a simple `edits.json` file—preserving complex layouts and high information density without breaking the design.
+
+* **Key features**: Template-based workflow (pick template → write JSON edits → generate .pptx), supports all AI models (DeepSeek, Claude, GPT, domestic Chinese models), auto-update mechanism for templates, command-line tools for building and rendering previews, optimized for Chinese corporate/enterprise aesthetics (high-density layouts, business-friendly styles).
+
+* **Why it's notable**: Solves the "AI-generated PPTs look generic" problem by combining curated templates with structured editing—produces presentation-ready slides that match Chinese enterprise standards. The non-destructive editing approach and model-agnostic design make it practical for real-world use. 1K stars reflect strong demand for quality Chinese PPT automation.
+
+---
+
+### GordenPPTSkill - AI 友好的中文 PPT 生成工具，基于模板的无损编辑
+
+* **功能介绍**: 提供 17 套精心打磨的中文 PPTX 模板和基于 python-pptx 的编辑系统，通过编写简单的 `edits.json` 文件即可生成专业 PPT——保留复杂排版和高信息密度，不破坏原有设计。
+
+* **主要特点**: 模板化工作流（选模板 → 写 JSON 编辑指令 → 生成 .pptx），兼容所有 AI 模型（DeepSeek、Claude、GPT、国产模型），模板自动更新机制，提供命令行构建和预览渲染工具，针对中国企业审美优化（高密度排版、商务风格）。
+
+* **为何值得关注**: 解决了"AI 生成的 PPT 太简陋"的痛点，通过精选模板 + 结构化编辑生成符合中国企业标准的演示文稿。无损编辑方式和模型无关设计使其具备实用价值。1K star 反映了中文 PPT 自动化的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/GordenSun/GordenPPTSkill)**
+
+### 🎬 "just build" is easier said than done (or is it?)
+
+**Channel:** bashbunni
+
+* **What the video covers:** Explores the common advice "just build" given to aspiring developers and whether it's actually practical or oversimplified
+* **Key topics discussed:** The challenges of learning programming through building projects, practical approaches to skill development, and how platforms like CodeCrafters can bridge the gap between theory and practice
+* **Why it's worth watching:** Offers a realistic perspective on the "just build" mantra that's often thrown at beginners, addressing the friction points developers face when trying to learn by doing and providing actionable alternatives
+
+---
+
+### 🎬 "just build"说起来容易做起来难（真的吗？）
+
+**频道:** bashbunni
+
+* **视频内容概述:** 探讨开发者常听到的"直接动手做项目"这一建议是否真的实用，还是过于简化
+* **主要话题:** 通过构建项目学习编程的挑战、技能发展的实用方法，以及 CodeCrafters 等平台如何帮助弥合理论与实践之间的差距
+* **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
 
