@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 02, 2026"
 date: 2026-06-02
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 0 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，0个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -272,4 +272,257 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 了解新兴的离线AI解决方案，这些工具提供隐私保护、适用于低网络环境，并为云端AI服务提供替代方案——对关注数据隐私或网络依赖的开发者和用户特别有价值
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=PAxZEvwVmII)**
+
+### Debug Project: Fighting Disease with Sterile Mosquitoes
+
+* **Mission**: Debug is a team of scientists and engineers developing technology to combat disease-carrying mosquitoes
+* **Method**: Raising and releasing sterile mosquitoes to eliminate disease-spreading populations
+* **Approach**: Using "good bugs" (sterile mosquitoes) to stop "bad bugs" (disease-carrying mosquitoes)
+* **Goal**: Reduce the spread of mosquito-borne diseases through biological intervention
+
+### Debug 项目：用不育蚊子对抗疾病传播
+
+* **使命**：Debug 是一个由科学家和工程师组成的团队，致力于开发技术来对抗传播疾病的蚊子
+* **方法**：培育和释放不育蚊子以消灭传播疾病的蚊子种群
+* **途径**：使用"好蚊子"（不育蚊子）来阻止"坏蚊子"（携带疾病的蚊子）
+* **目标**：通过生物干预手段减少蚊媒疾病的传播
+
+**[Read Original / 阅读原文](https://debug.com/)**
+
+### Should You Normalize RGB Values by 255 or 256?
+
+* **Two normalization approaches**: Standard division by 255 (maps 0→0.0, 255→1.0) vs. alternative division by 256 (adds 0.5 bias, maps 0→0.001953125)
+* **Standard approach advantages**: Black pixels remain 0.0, making detection straightforward; matches GPU behavior; allows logic independent of bit depth
+* **Alternative approach appeal**: Places decoded values exactly midway between integers; avoids round-off error (e.g., 128/256=0.5 exactly); simpler dithering without edge cases
+* **Extreme bin issue**: Standard formula creates half-width bins at 0 and 255, making extreme values statistically less frequent in uniform noise (verified empirically with histograms)
+* **Quantizer theory context**: Standard approach is "mid-tread" (zero maps to zero), alternative is "mid-riser" (zero maps between integers)
+* **Practical impact minimal**: Round-off errors are tiny (~0.00001%); round-trip conversion (uint8→float→uint8) remains lossless; values near extremes still round correctly
+* **Recommendation**: Standard division by 255 remains solid for most image processing due to convenience and GPU compatibility, despite theoretical aesthetic concerns
+
+### RGB 值应该除以 255 还是 256 进行归一化?
+
+* **两种归一化方法**: 标准除以 255(将 0→0.0, 255→1.0)vs. 替代除以 256(添加 0.5 偏移,将 0→0.001953125)
+* **标准方法优势**: 黑色像素保持为 0.0,便于检测;与 GPU 行为一致;逻辑与位深度无关
+* **替代方法吸引力**: 解码值精确位于两个整数中间;避免舍入误差(如 128/256=0.5 精确);抖动处理更简单无需处理边界情况
+* **极值区间问题**: 标准公式在 0 和 255 处创建半宽区间,使极值在均匀噪声中出现频率减半(通过直方图实证验证)
+* **量化器理论背景**: 标准方法是"中阶"型(零映射到零),替代方法是"中升"型(零映射到整数之间)
+* **实际影响很小**: 舍入误差微小(约 0.00001%);往返转换(uint8→float→uint8)保持无损;极值附近的值仍能正确舍入
+* **建议**: 尽管存在理论上的美学问题,标准除以 255 因其便利性和 GPU 兼容性,对大多数图像处理仍是可靠选择
+
+**[Read Original / 阅读原文](https://30fps.net/pages/255-vs-256-division/)**
+
+### Stanford CS336: Language Modeling from Scratch - Course Overview
+
+* **Course Focus**: Comprehensive hands-on course teaching students to build language models from the ground up, covering data collection, transformer architecture, training, and deployment
+* **Prerequisites**: Strong Python proficiency, deep learning experience with PyTorch, GPU optimization knowledge, calculus, linear algebra, probability, and machine learning fundamentals
+* **Course Load**: 5-unit implementation-heavy class requiring significantly more coding than typical AI courses (order of magnitude more code with minimal scaffolding)
+* **Five Core Assignments**: (1) Basics - tokenizer, transformer, optimizer; (2) Systems - profiling, FlashAttention2 in Triton, distributed training; (3) Scaling - component analysis and scaling laws; (4) Data - Common Crawl processing, filtering, deduplication; (5) Alignment - supervised finetuning, RL for reasoning, optional DPO safety alignment
+* **Academic Policies**: Study groups allowed but individual submissions required; AI tools permitted for conceptual questions but not direct problem-solving; AI autocomplete discouraged; existing online implementations should not be consulted
+* **Logistics**: 6 late days total (max 3 per assignment), Gradescope submission, GPU compute available via cloud providers (Modal sponsorship), 3-day regrade request window
+
+### 斯坦福 CS336：从零构建语言模型 - 课程概览
+
+* **课程重点**：全面的实践课程，教授学生从头构建语言模型，涵盖数据收集、Transformer 架构、训练和部署全流程
+* **先修要求**：精通 Python、具备 PyTorch 深度学习经验、GPU 优化知识、微积分、线性代数、概率论和机器学习基础
+* **课程强度**：5 学分的重实现课程，编码量比典型 AI 课程多一个数量级，提供的脚手架代码极少
+* **五个核心作业**：(1) 基础 - 分词器、Transformer、优化器；(2) 系统 - 性能分析、用 Triton 实现 FlashAttention2、分布式训练；(3) 扩展 - 组件分析和缩放定律；(4) 数据 - Common Crawl 处理、过滤、去重；(5) 对齐 - 监督微调、推理强化学习、可选的 DPO 安全对齐
+* **学术政策**：允许学习小组但需独立提交作业；AI 工具可用于概念性问题但不能直接解决问题；不建议使用 AI 自动补全；不应参考网上现有实现
+* **课程管理**：共 6 天延期额度（每个作业最多 3 天），通过 Gradescope 提交，可通过云服务商获取 GPU 算力（Modal 赞助），成绩发布后 3 天内可申请重新评分
+
+**[Read Original / 阅读原文](https://cs336.stanford.edu/)**
+
+### MoneyPrinterTurbo - AI-Powered Automated Short Video Generator
+
+* **What it does**: Automatically generates complete short videos from a single topic or keyword by creating scripts, sourcing HD footage, generating subtitles, adding background music, and rendering the final video—all powered by AI large language models.
+
+* **Key features**: 
+  - Full MVC architecture with both Web UI and API interfaces
+  - AI-generated or custom scripts with multi-language support (Chinese/English)
+  - Multiple HD video formats (9:16 vertical, 16:9 horizontal at 1080p/1920p)
+  - Batch video generation with customizable segment durations
+  - Multiple voice synthesis options with real-time preview
+  - Customizable subtitles (font, position, color, size, stroke)
+  - Background music with volume control
+  - Royalty-free HD stock footage or local material support
+  - Integration with 15+ AI providers (OpenAI, Azure, Gemini, DeepSeek, Moonshot, Qwen, etc.)
+
+* **Why it's notable**: With 3,325 stars today, this project dramatically lowers the barrier to content creation by automating the entire video production pipeline. It's particularly valuable for content creators, marketers, and social media managers who need to produce high-quality short-form videos at scale without video editing expertise. The comprehensive feature set, multiple deployment options (Docker, one-click Windows package, manual), and support for both cloud and local AI models make it accessible to users with varying technical backgrounds and infrastructure preferences.
+
+---
+
+### MoneyPrinterTurbo - AI大模型驱动的一键短视频生成工具
+
+* **功能介绍**: 只需提供一个视频主题或关键词,即可利用AI大语言模型全自动生成视频文案、匹配高清素材、生成字幕、添加背景音乐,最终合成完整的高清短视频。
+
+* **主要特点**:
+  - 完整的MVC架构,提供Web界面和API接口
+  - AI自动生成文案或支持自定义文案,支持中英文双语
+  - 多种高清视频尺寸(竖屏9:16、横屏16:9,支持1080p/1920p)
+  - 批量视频生成,可自定义视频片段时长
+  - 多种语音合成选项并支持实时试听
+  - 可自定义字幕样式(字体、位置、颜色、大小、描边)
+  - 背景音乐支持随机或指定,可调节音量
+  - 无版权高清素材库或支持本地素材
+  - 接入15+种AI模型服务商(OpenAI、Azure、Gemini、DeepSeek、月之暗面、通义千问等)
+
+* **为何值得关注**: 该项目今日获得3,325星标,通过自动化整个视频制作流程,大幅降低了内容创作门槛。对于内容创作者、营销人员和社交媒体运营者来说,无需视频剪辑专业知识即可批量生产高质量短视频。项目提供丰富的部署方式(Docker、Windows一键启动包、手动部署)、支持云端和本地AI模型,适配不同技术背景和基础设施需求的用户,是当前AI视频生成领域的热门开源解决方案。
+
+**[View Repository / 查看仓库](https://github.com/harry0703/MoneyPrinterTurbo)**
+
+### Scrapling - Adaptive Web Scraping Framework for Modern Python
+
+* **What it does**: Scrapling is a comprehensive Python web scraping framework that handles everything from single HTTP requests to full-scale concurrent crawls. It features an intelligent parser that automatically adapts to website structure changes, multiple fetcher types (basic, async, stealth, dynamic) that bypass anti-bot systems like Cloudflare Turnstile, and a spider framework for large-scale crawling with pause/resume capabilities and automatic proxy rotation.
+
+* **Key features**:
+  * Adaptive parsing that learns from website changes and relocates elements automatically when pages update
+  * Built-in anti-bot bypass (Cloudflare Turnstile) without additional configuration
+  * Multiple fetcher types: `Fetcher`, `AsyncFetcher`, `StealthyFetcher`, and `DynamicFetcher` for different scraping scenarios
+  * Full-featured spider framework with concurrent multi-session crawls, real-time stats, and streaming
+  * CSS selector support with `auto_save` and `adaptive` modes for resilient data extraction
+  * CLI tools and MCP (Model Context Protocol) server integration for AI agents
+  * Automatic proxy rotation and session management
+
+* **Why it's notable**: With 1,475 stars today, Scrapling is trending because it solves the persistent pain points of modern web scraping in a single library. Unlike traditional scrapers that break when websites change, Scrapling's adaptive parser automatically finds relocated elements. It handles anti-bot protection out of the box, eliminating the need for complex workarounds. The framework scales seamlessly from simple one-off requests to enterprise-grade crawls, making it accessible for beginners while powerful enough for production use. Built by web scrapers for web scrapers, it represents a zero-compromise solution that combines ease of use with industrial-strength capabilities.
+
+---
+
+### Scrapling - 适应性网页抓取框架
+
+* **功能介绍**: Scrapling 是一个全面的 Python 网页抓取框架,可处理从单个 HTTP 请求到大规模并发爬取的所有场景。它具有智能解析器,可自动适应网站结构变化,多种抓取器类型(基础、异步、隐蔽、动态)可绕过 Cloudflare Turnstile 等反爬虫系统,以及支持暂停/恢复和自动代理轮换的爬虫框架。
+
+* **主要特点**:
+  * 自适应解析功能,可从网站变化中学习并在页面更新时自动重新定位元素
+  * 内置反爬虫绕过(Cloudflare Turnstile),无需额外配置
+  * 多种抓取器类型:`Fetcher`、`AsyncFetcher`、`StealthyFetcher` 和 `DynamicFetcher` 适用于不同抓取场景
+  * 功能完整的爬虫框架,支持并发多会话爬取、实时统计和流式传输
+  * CSS 选择器支持 `auto_save` 和 `adaptive` 模式,实现弹性数据提取
+  * CLI 工具和 MCP(模型上下文协议)服务器集成,支持 AI 代理
+  * 自动代理轮换和会话管理
+
+* **为何值得关注**: Scrapling 今日获得 1,475 星标,成为热门项目是因为它在单个库中解决了现代网页抓取的持续痛点。与网站变化时就会失效的传统爬虫不同,Scrapling 的自适应解析器可自动找到重新定位的元素。它开箱即用地处理反爬虫保护,无需复杂的变通方法。该框架可从简单的一次性请求无缝扩展到企业级爬取,既适合初学者使用,又足够强大可用于生产环境。由网页抓取者为网页抓取者构建,它代表了一种零妥协的解决方案,将易用性与工业级能力完美结合。
+
+**[View Repository / 查看仓库](https://github.com/D4Vinci/Scrapling)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### Odysseus - Self-Hosted AI Workspace with Privacy-First Design
+
+* **What it does**: A comprehensive self-hosted AI workspace that replicates the claude-sonnet-4-5/Claude UI experience but runs entirely on your own hardware with your own data. Supports local models (vLLM, llama.cpp, Ollama) and API providers (OpenRouter, OpenAI).
+
+* **Key features**: 
+  - Multi-modal AI chat with autonomous agents (MCP tools, web search, file operations, shell access)
+  - Smart Cookbook that scans hardware and recommends VRAM-appropriate models with one-click download/serving
+  - Deep Research tool for multi-step investigation with visual reports
+  - Blind model comparison testing
+  - Full productivity suite: document editor, email client with AI triage (IMAP/SMTP), calendar (CalDAV sync), notes/tasks with reminders
+  - Persistent memory and skills system that evolves over time (ChromaDB + vector retrieval)
+  - Mobile-responsive PWA with touch gestures
+
+* **Why it's notable**: Combines the polish of commercial AI chat interfaces with complete data sovereignty and local-first architecture. Stands out for its "Cookbook" feature that democratizes local model deployment by automatically matching models to available hardware. The integrated productivity tools (email, calendar, documents) with AI assistance create a unified workspace rather than just another chat interface. Strong security defaults and comprehensive Docker support make it accessible for self-hosting. At 20K+ stars, it's gaining traction as a serious open-source alternative to cloud AI services.
+
+---
+
+### Odysseus - 隐私优先的自托管 AI 工作空间
+
+* **功能介绍**: 全功能自托管 AI 工作空间，提供类似 ChatGPT/Claude 的用户体验，但完全运行在自己的硬件上。支持本地模型（vLLM、llama.cpp、Ollama）和 API 提供商（OpenRouter、OpenAI）。
+
+* **主要特点**:
+  - 多模态 AI 对话与自主代理（MCP 工具、网页搜索、文件操作、Shell 访问）
+  - 智能 Cookbook 功能：扫描硬件配置，推荐适配显存的模型，一键下载部署
+  - 深度研究工具：多步骤调查并生成可视化报告
+  - 盲测模型对比功能
+  - 完整生产力套件：文档编辑器、AI 邮件分类客户端（IMAP/SMTP）、日历（CalDAV 同步）、笔记/任务提醒
+  - 持久化记忆与技能系统，随使用不断进化（ChromaDB + 向量检索）
+  - 移动端响应式 PWA，支持触控手势
+
+* **为何值得关注**: 将商业 AI 聊天界面的精致体验与完全的数据主权和本地优先架构相结合。其"Cookbook"功能通过自动匹配硬件配置推荐模型，大幅降低了本地模型部署门槛。集成的生产力工具（邮件、日历、文档）配合 AI 辅助，打造统一工作空间而非单纯的聊天界面。默认安全配置和完善的 Docker 支持使自托管变得简单。获得 2 万+ 星标，正成为云端 AI 服务的重要开源替代方案。
+
+**[View Repository / 查看仓库](https://github.com/pewdiepie-archdaemon/odysseus)**
+
+### Guizang Social Card Skill - AI-Powered Social Media Card Generator for Xiaohongshu & WeChat
+
+* **What it does**: A Claude Code/Codex skill that generates professional social media graphics—Xiaohongshu (Rednote) carousel posts and WeChat cover pairs (21:9 + 1:1)—from articles, screenshots, or notes using single-file HTML rendered to PNG.
+
+* **Key features**: 
+  * Dual visual systems: Editorial (magazine-style for storytelling) and Swiss (grid-based for data/tutorials)
+  * 28 layout templates, 10 curated color themes, 3 aspect ratios (3:4, 21:9, 1:1)
+  * Automated image sourcing from Unsplash/Pexels/Wallhaven with attribution tracking
+  * Built-in validation script checks overflow, typography limits, and layout density
+  * WebGL ink-flow backgrounds, screenshot beautification assets, and MapLibre integration
+
+* **Why it's notable**: Solves a real pain point for Chinese social media creators by packaging design expertise into an AI-executable workflow. The single-file HTML approach makes it agent-friendly—no build tools, just text manipulation and Playwright rendering. With 2,402 stars, it demonstrates strong demand for AI-native design tools that respect platform constraints (Xiaohongshu's 3:4 ratio, WeChat's dual-cover system) while maintaining editorial quality. The strict "no custom hex colors" rule and curated layout library prioritize aesthetic consistency over flexibility—a product philosophy rarely seen in generative tools.
+
+---
+
+### Guizang Social Card Skill - 小红书/公众号 AI 图文生成工具
+
+* **功能介绍**: 适配 Claude Code/Codex 的技能包,从文章、截图或笔记自动生成小红书(Rednote)轮播图文和公众号封面对(21:9 头图 + 1:1 分享卡),采用单文件 HTML 渲染为 PNG。
+
+* **主要特点**:
+  * 双视觉系统:电子杂志风(叙事向)和瑞士国际主义风(数据/教程向)
+  * 28 个版式骨架、10 套主题色预设、3 种画板尺寸(3:4、21:9、1:1)
+  * 自动从 Unsplash/Pexels/Wallhaven 取图并记录来源
+  * 内置校验脚本检测溢出、字号上限、版式密度
+  * WebGL 墨流背景、截图美化素材、MapLibre 地图组件
+
+* **为何值得关注**: 精准解决中文社交媒体创作者的实际痛点,将设计专业性封装为 AI 可执行工作流。单文件 HTML 方案对 Agent 极度友好——无需构建工具,纯文本操作 + Playwright 渲染。2,402 星标反映出市场对"AI 原生设计工具"的强烈需求,尤其是能同时适配小红书 3:4 比例和公众号双封面体系的方案。其"禁止自定义色值"和精选版式库的产品哲学,在生成式工具中罕见地将美学一致性置于自由度之上。
+
+**[View Repository / 查看仓库](https://github.com/op7418/guizang-social-card-skill)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A short-form motivational message addressing common frustrations in coding and programming
+* Key topics discussed: Programming challenges, developer mindset, likely debugging or learning difficulties (based on the "It's Not Your Fault" framing)
+* Why it's worth watching: Quick encouragement for developers struggling with code—offers perspective on common coding obstacles in under a minute
+
+---
+
+### 🎬 这不是你的错... #编程 #开发 #Python短视频
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 一则针对编程和开发中常见挫折的简短励志内容
+* 主要话题: 编程挑战、开发者心态、可能涉及调试或学习困难（基于"这不是你的错"的主题）
+* 为何值得观看: 为在代码中挣扎的开发者提供快速鼓励——用不到一分钟的时间提供关于常见编程障碍的新视角
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
+
+### 🎬 "just build" is easier said than done (or is it?)
+
+**Channel:** bashbunni
+
+* **What the video covers:** Explores the common advice "just build" given to aspiring developers and whether it's actually practical or oversimplified
+* **Key topics discussed:** The challenges of learning programming through building projects, practical approaches to skill development, and how platforms like CodeCrafters can bridge the gap between theory and practice
+* **Why it's worth watching:** Offers a realistic perspective on the "just build" mantra that's often thrown at beginners, addressing the friction points developers face when trying to learn by doing and providing actionable alternatives
+
+---
+
+### 🎬 "just build"说起来容易做起来难（真的吗？）
+
+**频道:** bashbunni
+
+* **视频内容概述:** 探讨开发者常听到的"直接动手做项目"这一建议是否真的实用，还是过于简化
+* **主要话题:** 通过构建项目学习编程的挑战、技能发展的实用方法，以及 CodeCrafters 等平台如何帮助弥合理论与实践之间的差距
+* **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
+
+### 🎬 Update Query in SQL 💯| SQL tutorial
+
+**Channel:** DevNest Code
+
+* What the video covers: A focused tutorial on SQL UPDATE queries, teaching how to modify existing data in database tables
+* Key topics discussed: UPDATE statement syntax, setting column values, WHERE clause usage for targeted updates, practical examples in Tamil
+* Why it's worth watching: Provides quick, accessible SQL learning for Tamil-speaking developers; covers a fundamental database operation essential for any backend developer or data professional
+
+### 🎬 SQL UPDATE 查询教程
+
+**频道:** DevNest Code
+
+* 视频内容概述: 专注于 SQL UPDATE 查询的教程，讲解如何修改数据库表中的现有数据
+* 主要话题: UPDATE 语句语法、列值设置、WHERE 子句的精准更新应用、泰米尔语实例演示
+* 为何值得观看: 为泰米尔语开发者提供快速易懂的 SQL 学习内容；涵盖后端开发和数据专业人员必备的基础数据库操作技能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kyaHdEtoJi8)**
 
