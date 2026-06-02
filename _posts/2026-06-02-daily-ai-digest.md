@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 02, 2026"
 date: 2026-06-02
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -498,95 +498,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🎬 "just build"说起来容易做起来难（真的吗？）
-
-**频道:** bashbunni
-
-* **视频内容概述:** 探讨开发者常听到的"直接动手做项目"这一建议是否真的实用，还是过于简化
-* **主要话题:** 通过构建项目学习编程的挑战、技能发展的实用方法，以及 CodeCrafters 等平台如何帮助弥合理论与实践之间的差距
-* **为何值得观看:** 对经常被灌输给初学者的"just build"口号提供了现实视角，解决了开发者在边做边学时遇到的实际困难，并提供可行的替代方案
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=FssFdJFCetg)**
-
-### 🎬 Update Query in SQL 💯| SQL tutorial
-
-**Channel:** DevNest Code
-
-* What the video covers: A focused tutorial on SQL UPDATE queries, teaching how to modify existing data in database tables
-* Key topics discussed: UPDATE statement syntax, setting column values, WHERE clause usage for targeted updates, practical examples in Tamil
-* Why it's worth watching: Provides quick, accessible SQL learning for Tamil-speaking developers; covers a fundamental database operation essential for any backend developer or data professional
-
-### 🎬 SQL UPDATE 查询教程
-
-**频道:** DevNest Code
-
-* 视频内容概述: 专注于 SQL UPDATE 查询的教程，讲解如何修改数据库表中的现有数据
-* 主要话题: UPDATE 语句语法、列值设置、WHERE 子句的精准更新应用、泰米尔语实例演示
-* 为何值得观看: 为泰米尔语开发者提供快速易懂的 SQL 学习内容；涵盖后端开发和数据专业人员必备的基础数据库操作技能
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kyaHdEtoJi8)**
-
-### macOS Needs Its Grid Back: A Developer's Quest to Restore Spatial Desktop Navigation
-
-* **The Problem**: macOS Lion (2011) removed the beloved grid-based virtual desktop layout introduced in Leopard (2006), replacing it with a restrictive horizontal-only row that destroyed spatial memory and muscle memory navigation
-* **The Solution**: The author built GridLion, an app that restores grid-based navigation to macOS Spaces without requiring system modifications or disabling System Integrity Protection
-* **Key Innovation**: By removing space-switching animations, the app creates a virtual grid overlay on top of native single-row spaces, allowing users to navigate 9+ desktops as if they were physical displays in spatial locations
-* **Development Journey**: What started as a day-long prototype evolved into a polished app addressing a 13-year-old frustration with macOS workspace management
-* **Technical Challenges**: macOS locks down Mission Control APIs and requires multiple permission hurdles (Accessibility, Screen Recording) with confusing approval flows that are far less user-friendly than iOS
-* **Philosophy on Software Quality**: Despite LLM code generation, the author argues passionate developers who care deeply about refinement and design decisions still create superior software that stands apart from generic clones
-
-### macOS 需要找回它的网格布局：一位开发者恢复空间桌面导航的探索
-
-* **问题所在**：macOS Lion (2011) 移除了 Leopard (2006) 引入的备受喜爱的网格式虚拟桌面布局，取而代之的是限制性的单行横向排列，彻底破坏了空间记忆和肌肉记忆导航
-* **解决方案**：作者开发了 GridLion 应用，在不需要修改系统或禁用系统完整性保护的情况下，为 macOS Spaces 恢复了网格式导航
-* **核心创新**：通过移除空间切换动画，该应用在原生单行空间之上创建虚拟网格覆盖层，让用户可以像操作物理显示器一样在空间位置上导航 9 个以上的桌面
-* **开发历程**：从一天完成的原型进化为精致的应用，解决了 macOS 工作区管理长达 13 年的痛点
-* **技术挑战**：macOS 锁定了 Mission Control API，并且需要多重权限审批（辅助功能、屏幕录制），其批准流程远不如 iOS 用户友好且令人困惑
-* **软件质量理念**：尽管有 LLM 代码生成，作者认为真正关心细节打磨和设计决策的热情开发者仍能创造出优于普通克隆品的卓越软件
-
-**[Read Original / 阅读原文](https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/)**
-
-<!-- [Title-Only] -->
-### Can the stockmarket swallow Anthropic, SpaceX and OpenAI?
-
-* Based on the title, this article likely examines whether public stock markets have the capacity and appetite to absorb IPOs from three of the world's most valuable private companies: Anthropic (AI research), SpaceX (aerospace), and OpenAI (AI research). It probably discusses their massive valuations, the technical and regulatory challenges of going public, and the potential impact on market dynamics.
-* Why it might be interesting: These companies represent the cutting edge of AI and space technology, with combined valuations potentially exceeding hundreds of billions of dollars. Their IPOs could be among the largest in history, raising questions about market liquidity, investor appetite for high-growth tech stocks, and whether traditional public markets can accommodate such disruptive, capital-intensive businesses.
-
-### 股市能否吞下 Anthropic、SpaceX 和 OpenAI？
-
-* 根据标题推测，这篇文章可能探讨公开股票市场是否有能力和意愿承接三家全球最具价值的私营公司的 IPO：Anthropic（AI 研究）、SpaceX（航天）和 OpenAI（AI 研究）。文章可能讨论它们的巨额估值、上市面临的技术和监管挑战，以及对市场动态的潜在影响。
-* 为何值得关注：这些公司代表了 AI 和太空技术的前沿，合计估值可能超过数千亿美元。它们的 IPO 可能成为史上规模最大的几次上市之一，引发了关于市场流动性、投资者对高增长科技股的兴趣，以及传统公开市场能否容纳如此具有颠覆性、资本密集型企业的问题。
-
-**[Read Original / 阅读原文](https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai)**
-
-### How Groq is Raising $650M After Nvidia "Acquired" Them
-
-* **The Unusual Deal**: Groq wasn't fully acquired by Nvidia in December 2025 — Nvidia licensed their technology and hired key technical executives, but the corporate entity continued operating datacenters and their inference API
-* **Technical Limitations**: Groq's all-SRAM architecture enables extremely fast inference on smaller models (up to 120B parameters) but cannot economically serve frontier models like GPT-5.5 due to lack of high-bandwidth memory (HBM)
-* **The Real Asset**: Groq owns four operational AI datacenters with experienced teams, a rare asset given that half of planned US datacenter builds have been delayed or canceled due to power and infrastructure issues
-* **Valuation Opportunity**: Comparable datacenter operators CoreWeave (43 datacenters) and Nebius (11 datacenters) are each valued at $50 billion, suggesting Groq's infrastructure alone could be worth billions despite their technology being licensed to Nvidia
-* **Major Challenges**: Groq's datacenters run on 7-year-old LPUv1 chips, and Nvidia now sells LPUv3 chips to any cloud provider, eliminating Groq's speed advantage while high AI costs raise questions about their high-speed, high-cost strategy
-
-### Groq 如何在被英伟达"收购"后融资 6.5 亿美元
-
-* **不寻常的交易**:Groq 在 2025 年 12 月并未被英伟达完全收购——英伟达仅授权了他们的技术并聘用了关键技术高管,但公司实体继续运营数据中心和推理 API 服务
-* **技术局限性**:Groq 的全 SRAM 架构能在小型模型(最大 120B 参数)上实现极快推理,但由于缺乏高带宽内存(HBM),无法经济地服务 GPT-5.5 等前沿模型
-* **真正的资产**:Groq 拥有四个运营中的 AI 数据中心和经验丰富的团队,这在美国一半计划中的数据中心因电力和基础设施问题被延迟或取消的背景下成为稀缺资产
-* **估值机会**:可比数据中心运营商 CoreWeave(43 个数据中心)和 Nebius(11 个数据中心)估值均达 500 亿美元,暗示 Groq 的基础设施本身可能价值数十亿美元,尽管其技术已授权给英伟达
-* **主要挑战**:Groq 的数据中心运行着 7 年前的 LPUv1 芯片,而英伟达现在向任何云提供商销售 LPUv3 芯片,消除了 Groq 的速度优势,同时高昂的 AI 成本引发了对其高速高成本策略的质疑
-
-**[Read Original / 阅读原文](https://www.zach.be/p/how-the-hell-is-groq-raising-more)**
-
-### Ian Xiaohei Illustrations - AI-Powered Hand-Drawn Article Illustrations for Chinese Content
-
-* **What it does**: A Codex Skill that transforms cognitive concepts from Chinese articles into quirky, hand-drawn 16:9 illustrations featuring "Xiaohei" (a minimalist black character). It analyzes articles to identify key judgments, processes, structures, states, or metaphors, then generates clean white-background illustrations with minimal red/orange/blue Chinese annotations.
-
-* **Key features**: Generates 4-8 shot lists per article with structure analysis (workflow, system diagrams, before/after comparisons, concept metaphors); uses a consistent visual IP (Xiaohei) as an active participant rather than decoration; produces PNG illustrations saved to workspace; includes QA checklist for quality control; focuses on one core idea per illustration with 40-60% canvas usage and generous whitespace.
-
-* **Why it's notable**: Bridges the gap between generic illustration prompts and PPT infographics by creating knowledge-focused visuals with personality. The "grotesque but refreshing" aesthetic and character-driven approach make complex Chinese content memorable. With 1,650 stars, it's becoming a go-to tool for Chinese content creators, bloggers, and knowledge workers who need consistent, recognizable article illustrations that explain rather than merely decorate.
-
----
-
 ### Ian Xiaohei Illustrations - 中文文章怪诞手绘配图生成工具
 
 * **功能介绍**: 这是一个 Codex Skill,用于为中文文章、博客和方法论内容生成正文配图。它会分析文章中的认知锚点,将其中的判断、流程、结构、状态或隐喻转化为 16:9 横版手绘插图。配图以"小黑"(黑色实心、白点眼的极简角色)为视觉 IP,采用纯白背景、黑色线稿、少量红橙蓝中文批注的风格。
@@ -634,4 +545,101 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 了解昂贵 AI 网页浏览工具的完全免费替代方案,观看实操演示,判断这是否会颠覆当前 AI 定价格局
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+### macOS Needs Its Grid Back
+
+* **The Problem**: macOS Lion (2011) removed the customizable grid layout for virtual desktops (Spaces), replacing it with a restrictive horizontal-only row that destroyed spatial memory and muscle memory workflows
+* **The Golden Era**: macOS Leopard (2006) introduced Spaces with a customizable grid (e.g., 3x3), allowing users to treat virtual desktops like physical displays with spatial locations and keyboard navigation
+* **Current Solutions Fall Short**: Window managers like Yabai/Aerospace don't solve the core issue—they focus on window management rather than dedicated workspaces; Total Spaces required disabling System Integrity Protection
+* **The Solution**: GridLion, a new app that wraps native macOS Spaces with grid-based navigation, eliminating animations for instant switching and restoring spatial memory workflows
+* **Technical Challenges**: macOS locks down Mission Control APIs, making space manipulation difficult; the app requires Accessibility and Screen Recording permissions with unnecessarily complex approval flows
+* **Philosophy**: Good software still requires human care and refinement—passion for solving real problems matters even in the age of AI code generation
+
+### macOS 需要找回它的网格布局
+
+* **核心问题**：macOS Lion（2011）移除了虚拟桌面（Spaces）的可自定义网格布局，改为单行横向排列，彻底破坏了空间记忆和肌肉记忆工作流
+* **黄金时代**：macOS Leopard（2006）推出的 Spaces 支持自定义网格（如 3x3），用户可以将虚拟桌面当作实体显示器，通过空间位置和键盘快速导航
+* **现有方案不够完善**：Yabai/Aerospace 等窗口管理器无法解决核心痛点——它们专注于窗口管理而非独立工作空间；Total Spaces 需要关闭系统完整性保护
+* **解决方案**：GridLion，一款新应用，为原生 macOS Spaces 添加网格导航，去除切换动画实现即时切换，恢复空间记忆工作流
+* **技术挑战**：macOS 锁定了 Mission Control API，难以操控空间；应用需要辅助功能和屏幕录制权限，但授权流程过于繁琐复杂
+* **开发理念**：优秀软件仍需要人类的用心打磨——即使在 AI 代码生成时代，对真实问题的热情和关注细节仍然重要
+
+**[Read Original / 阅读原文](https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/)**
+
+### Categorical Query Language (CQL): A Category Theory-Based Data Transformation Tool
+
+* **Open-source data processing framework** that uses category theory to perform database operations including querying, combining, migrating, and evolving data
+* **Production-ready for single-node in-memory workloads**, particularly suited for data integration in data science applications
+* **Flexible I/O capabilities** supporting JDBC-SQL, CSV formats with graphical visualization of schemas and databases
+* **Rich data integrity constraints** including entities, attributes, foreign keys, and equations that enable denormalization without manual consistency enforcement
+* **Computational schemas** with user-defined functions (Java, JavaScript, or equational) and built-in theorem prover for reasoning about functions and constraints
+* **More principled than SQL** by reimagining relational concepts like foreign keys and providing primitives that SQL lacks
+* **100% Java implementation** with a stateless architecture (not a DBMS - doesn't store or update data)
+* **Based on applied category theory**, implementing David Spivak's ologs (ontology logs) and powered by Kan extensions
+* **Being commercialized by Conexus AI** with active community support through GitHub and Google Groups
+
+---
+
+### 分类查询语言 (CQL)：基于范畴论的数据转换工具
+
+* **开源数据处理框架**，使用范畴论执行数据库操作，包括查询、组合、迁移和演化数据
+* **适用于单节点内存工作负载的生产级工具**，特别适合数据科学中的数据集成应用
+* **灵活的输入输出能力**，支持 JDBC-SQL、CSV 格式，并可图形化显示模式和数据库
+* **丰富的数据完整性约束**，包括实体、属性、外键和方程式，支持无需手动维护一致性的反规范化
+* **计算模式**，支持用户自定义函数（Java、JavaScript 或方程式），内置定理证明器可推理函数与约束的关系
+* **比 SQL 更具原则性**，以更严谨的形式重新诠释外键等关系概念，并提供 SQL 缺乏的原语
+* **100% Java 实现**，采用无状态架构（非数据库管理系统 - 不存储或更新数据）
+* **基于应用范畴论**，实现 David Spivak 的本体日志 (ologs)，由 Kan 扩展提供支持
+* **由 Conexus AI 商业化**，通过 GitHub 和 Google Groups 提供活跃的社区支持
+
+**[Read Original / 阅读原文](https://categoricaldata.net/)**
+
+<!-- [Title-Only] -->
+### Can the stock market swallow Anthropic, SpaceX and OpenAI?
+
+* **Based on the title alone**, this article likely examines whether public markets have sufficient capacity and appetite to absorb IPOs from three of the world's most valuable private companies: Anthropic (AI research), SpaceX (aerospace), and OpenAI (AI). It probably discusses their massive valuations, potential market impact, and whether traditional stock exchanges can handle such large offerings.
+
+* **Why it might be interesting to readers**: This touches on a critical inflection point for the AI and space industries. These companies represent some of the most significant private valuations in history, and their potential public listings could reshape market dynamics, test investor appetite for high-growth tech companies, and signal broader trends about the future of private vs. public markets.
+
+### 股市能否消化 Anthropic、SpaceX 和 OpenAI？
+
+* **仅根据标题推测**，这篇文章可能探讨公开市场是否有足够的容量和意愿来吸收三家全球最具价值的私营公司的 IPO：Anthropic（AI 研究）、SpaceX（航天）和 OpenAI（AI）。文章可能会讨论它们的巨额估值、潜在的市场影响，以及传统证券交易所是否能够承载如此大规模的上市。
+
+* **为何值得关注**：这触及了 AI 和航天产业的关键转折点。这些公司代表了历史上一些最高的私营公司估值，它们的潜在上市可能重塑市场格局，考验投资者对高增长科技公司的胃口，并预示着私营与公开市场未来发展的更广泛趋势。
+
+**[Read Original / 阅读原文](https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai)**
+
+### gemini-web2api - Convert Google Gemini Web to OpenAI-Compatible API
+
+* **What it does**: Transforms Google Gemini's web interface into a standard OpenAI-compatible API endpoint, enabling use with any OpenAI client without authentication or cost
+* **Key features**: Zero-auth operation, drop-in `/v1/chat/completions` compatibility, function calling support, multiple Gemini models (Flash, Pro, Thinking with 20k+ character output), adjustable thinking depth, built-in web search, streaming support, cross-platform pure Python single-file implementation, Docker support, proxy configuration for restricted regions
+* **Why it's notable**: Provides free access to Gemini's powerful models (including the extended-output Thinking variant) through familiar OpenAI SDK interfaces without requiring API keys or paid subscriptions. The reverse-engineered web protocol approach bypasses authentication barriers while maintaining full feature parity with commercial APIs. Particularly valuable for developers seeking cost-free LLM experimentation or those in regions with Gemini access restrictions.
+
+---
+
+### gemini-web2api - 将 Google Gemini 网页版转换为 OpenAI 兼容 API
+
+* **功能介绍**: 将 Google Gemini 网页界面转换为标准 OpenAI 兼容 API 端点,可在任何 OpenAI 客户端中免费使用,无需身份验证
+* **主要特点**: 零认证操作、完全兼容 `/v1/chat/completions` 接口、支持函数调用、多模型支持(Flash、Pro、Thinking 模式输出超 20k 字符)、可调节思考深度、内置网页搜索、流式传输、跨平台纯 Python 单文件实现、Docker 支持、代理配置适配受限地区
+* **为何值得关注**: 通过熟悉的 OpenAI SDK 接口免费访问 Gemini 强大模型(包括扩展输出的 Thinking 变体),无需 API 密钥或付费订阅。逆向工程网页协议的方法绕过了认证障碍,同时保持与商业 API 的完整功能对等。对于寻求零成本 LLM 实验的开发者或 Gemini 访问受限地区的用户尤其有价值。已获 1156 stars,体现了开发者对免费 AI API 解决方案的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/Sophomoresty/gemini-web2api)**
+
+### 🎬 How I would learn to code in 2026 (If I have to start over)
+**Channel:** Aishwarya Srinivasan
+
+* What the video covers: A strategic approach to learning programming in 2026, challenging the common focus on choosing a specific programming language
+* Key topics discussed: Reframing how beginners should think about learning to code, moving beyond the "which language should I learn" question to more fundamental concepts
+* Why it's worth watching: Offers a fresh perspective for coding beginners by addressing a common misconception about starting a programming journey, particularly relevant for those entering the field in the AI era
+
+---
+
+### 🎬 如果重新开始，我会如何在2026年学习编程
+**频道:** Aishwarya Srinivasan
+
+* 视频内容概述: 分享2026年学习编程的战略方法，挑战传统的"选择编程语言"思维定式
+* 主要话题: 重新定义编程初学者的学习思路，超越"应该学哪种编程语言"这一常见问题，聚焦更根本的概念
+* 为何值得观看: 为编程新手提供全新视角，纠正学习编程的常见误区，特别适合在AI时代入门编程的学习者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
 
