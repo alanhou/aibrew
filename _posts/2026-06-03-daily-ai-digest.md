@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 03, 2026"
 date: 2026-06-03
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -353,4 +353,284 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 打破"应该学哪门语言"的争论迷雾，提供符合当今开发环境的可行建议，特别适合被选择困扰的编程初学者
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
+
+### Introducing MAI-Code-1-Flash: A Developer-First Coding Model
+
+* **Production-focused training**: Built with real GitHub Copilot workflows at its core, not just optimized for benchmarks, enabling better integration with production tools and agentic coding tasks
+* **Adaptive response length**: Uses solution length control to adjust depth based on task complexity—concise for simple requests, deeper analysis for complex problems
+* **Superior efficiency**: Solves harder problems with up to 60% fewer tokens, reducing latency and cost while improving interactive workflow smoothness
+* **Strong benchmark performance**: Outperforms Claude Haiku 4.5 across all tested benchmarks (SWE-Bench Verified, Pro, Multilingual, and Terminal Bench 2) with a +16-point lead on SWE-Bench Pro (51.2% vs. 35.2%)
+* **Real-world evaluation approach**: Trained and evaluated using production harnesses, telemetry data, and actual developer tasks to ensure offline improvements translate to real-world quality
+
+### MAI-Code-1-Flash 发布：面向开发者的编程模型
+
+* **以生产为中心的训练**：基于真实的 GitHub Copilot 工作流构建，而非仅针对基准测试优化，能更好地集成生产工具和智能编程任务
+* **自适应响应长度**：根据任务复杂度调整输出深度——简单请求保持简洁，复杂问题提供深入分析
+* **卓越的效率表现**：解决难题所需令牌数减少高达 60%，降低延迟和成本，同时提升交互工作流的流畅度
+* **优异的基准测试成绩**：在所有测试基准（SWE-Bench Verified、Pro、Multilingual 和 Terminal Bench 2）中均超越 Claude Haiku 4.5，在 SWE-Bench Pro 上领先 16 个百分点（51.2% 对比 35.2%）
+* **真实场景的评估方法**：使用生产环境测试框架、遥测数据和实际开发者任务进行训练和评估，确保离线改进能转化为实际质量提升
+
+**[Read Original / 阅读原文](https://microsoft.ai/news/introducingmai-code-1-flash/)**
+
+### Inside BYD: CT Scans of the EV You Can't Buy in America
+
+* **Evolution of disposable engineering**: Humanity invests staggering amounts of engineering effort into even the most disposable objects, like plastic water bottles whose lifespan is measured in seconds
+* **From glass to plastic transition**: Water bottling evolved from earthenware jugs (1826) to glass bottles (early 1900s) to plastic in the mid-1970s as synthetic polymer technology matured
+* **Coca-Cola's acrylonitrile failure**: Coke's 1975 "Easy-Goer" bottle lasted only two years before being banned by the FDA due to toxic leaching into beverages
+* **PET revolutionizes beverage packaging**: DuPont engineer Nathaniel Wyeth developed the PET bottle in 1973, which became the industry standard by 1979 after acrylonitrile's failure
+* **Injection stretch blow molding process**: Modern bottles are made by heating thick PET preforms, stretching them with metal rods, and inflating them with compressed air at incredible speeds
+* **Material science breakthrough**: Polyethylene terephthalate (PET) emerged as the winner due to its strength, clarity, food safety, and environmental stability—now produced at 100 million metric tons annually
+* **Design evolution toward efficiency**: Early two-liter PET bottles (1970s-90s) weighed up to 96 grams with thick walls and glued bases, double the mass of modern bottles through continuous optimization
+
+### 深入比亚迪:你在美国买不到的电动车CT扫描
+
+* **一次性物品的工程学奇迹**:人类为最普通的一次性物品投入了惊人的工程努力,比如使用寿命只有几秒钟的塑料水瓶
+* **从玻璃到塑料的转变**:瓶装水从陶罐(1826年)演变到玻璃瓶(20世纪初),再到1970年代中期随着合成聚合物技术成熟转向塑料
+* **可口可乐的丙烯腈惨败**:可口可乐1975年推出的"Easy-Goer"瓶仅使用两年就因有毒物质渗入饮料而被FDA禁用
+* **PET革新饮料包装**:杜邦工程师纳撒尼尔·怀斯于1973年开发出PET瓶,在丙烯腈失败后于1979年成为行业标准
+* **注射拉伸吹塑成型工艺**:现代瓶子通过加热厚实的PET瓶坯、用金属杆拉伸、再用压缩空气以惊人速度充气成型
+* **材料科学的突破**:聚对苯二甲酸乙二醇酯(PET)因其强度、透明度、食品安全性和环境稳定性胜出——如今年产量达1亿公吨
+* **向高效化设计演进**:早期两升PET瓶(1970-90年代)重达96克,瓶壁厚且需粘合底座,通过持续优化已减重至现代瓶子的一半
+
+**[Read Original / 阅读原文](https://www.lumafield.com/scan-of-the-month/byd)**
+
+### Why I Left Gmail After 16 Years: Aggressive AI Features Drove Me Away
+
+* Gmail now auto-generates message summaries and reply drafts using AI without user consent
+* The interface constantly nags users with "help me write" prompts and "Tab to improve" suggestions while composing emails
+* Many AI features cannot be disabled, or disabling them removes useful long-standing features like thread categorization
+* The author views this as disrespectful software design that treats users as incapable of reading and writing their own emails
+* After 16 years with Gmail, the author migrated to Fastmail with a custom domain for a clean break
+* The forced AI integration feels like an attempt to artificially inflate usage metrics rather than genuinely help users
+
+### 我为何在使用 16 年后离开 Gmail：激进的 AI 功能让我出走
+
+* Gmail 现在会在未经用户同意的情况下使用 AI 自动生成邮件摘要和回复草稿
+* 界面在用户撰写邮件时不断弹出"帮我写"提示和"按 Tab 改进"建议进行打扰
+* 许多 AI 功能无法关闭，或者关闭它们会同时移除有用的长期功能（如邮件线程分类）
+* 作者认为这是不尊重用户的软件设计，把用户当作无法自己阅读和撰写邮件的人
+* 在使用 Gmail 16 年后，作者迁移到 Fastmail 并使用自定义域名以实现彻底分离
+* 强制集成的 AI 功能更像是为了人为提高使用指标，而非真正帮助用户
+
+**[Read Original / 阅读原文](https://moddedbear.com/gmail-thinks-im-stupid-so-i-left)**
+
+### Scrapling - An Adaptive Web Scraping Framework for Python
+
+* **What it does**: Scrapling is a comprehensive Python framework that handles web scraping at any scale, from single requests to full-scale concurrent crawls. It features an adaptive parser that automatically relocates elements when websites change, multiple fetcher types (Fetcher, StealthyFetcher, DynamicFetcher) that bypass anti-bot systems like Cloudflare Turnstile, and a spider framework for large-scale crawling.
+
+* **Key features**:
+  * Adaptive parsing that learns from website changes and auto-saves element locations
+  * Built-in stealth capabilities to bypass Cloudflare and other anti-bot protections
+  * Multiple fetching modes (sync/async, static/dynamic, stealthy/standard)
+  * Full-featured spider framework with pause/resume, automatic proxy rotation, and real-time stats
+  * MCP (Model Context Protocol) server integration for AI agents
+  * CLI tools and streaming support for efficient crawling
+
+* **Why it's notable**: Gained 1,196 stars today due to its unique adaptive parsing that survives website redesigns, enterprise-ready anti-bot evasion out of the box, and ability to scale from simple scripts to production crawlers with minimal code changes. The "zero compromises" approach combines ease of use with professional-grade features that typically require multiple libraries.
+
+---
+
+### Scrapling - 自适应网页爬取框架
+
+* **功能介绍**: Scrapling 是一个全面的 Python 网页爬取框架,可处理从单个请求到大规模并发爬取的所有场景。它具有自适应解析器,可在网站变化时自动重新定位元素;多种爬取器类型(Fetcher、StealthyFetcher、DynamicFetcher)可绕过 Cloudflare Turnstile 等反爬虫系统;以及用于大规模爬取的爬虫框架。
+
+* **主要特点**:
+  * 自适应解析功能,可学习网站变化并自动保存元素位置
+  * 内置隐身能力,可绕过 Cloudflare 和其他反爬虫保护
+  * 多种爬取模式(同步/异步、静态/动态、隐身/标准)
+  * 功能完整的爬虫框架,支持暂停/恢复、自动代理轮换和实时统计
+  * 集成 MCP(模型上下文协议)服务器,支持 AI 智能体
+  * 提供 CLI 工具和流式传输支持,实现高效爬取
+
+* **为何值得关注**: 今日获得 1,196 个星标,因其独特的自适应解析功能可应对网站重新设计、开箱即用的企业级反爬虫规避能力,以及只需最少代码即可从简单脚本扩展到生产级爬虫的能力。这种"零妥协"方案将易用性与通常需要多个库才能实现的专业级功能完美结合。
+
+**[View Repository / 查看仓库](https://github.com/D4Vinci/Scrapling)**
+
+### Hermes WebUI - A Modern Web Interface for Hermes Agent
+
+* **What it does**: Provides a fully-featured web browser interface for Hermes Agent, an autonomous AI assistant that lives on your server, maintains persistent memory across sessions, and becomes more capable over time
+* **Key features**: Three-panel dark-themed UI with full CLI parity; chat interface with streaming responses; workspace file browser; session management; voice input/output; profile system; secure password protection; mobile-responsive; multi-provider model support (OpenAI, Anthropic, Google, DeepSeek, etc.)
+* **Why it's notable**: Unlike typical AI tools that reset each session, Hermes retains context, runs scheduled jobs while offline, self-improves through a skills system, and integrates with 10+ messaging platforms—all accessible through a clean web UI with zero build tooling required. Simple one-command setup (`python3 bootstrap.py`) with automatic Hermes Agent detection and configuration.
+
+---
+
+### Hermes WebUI - Hermes 智能代理的现代化 Web 界面
+
+* **功能介绍**: 为 Hermes Agent 提供功能完整的浏览器界面。Hermes Agent 是一个运行在服务器上的自主 AI 助手，能跨会话保持记忆，使用时间越长功能越强大
+* **主要特点**: 三面板深色主题界面，与命令行完全等价；支持流式聊天响应；工作区文件浏览器；会话管理；语音输入输出；用户配置文件系统；密码安全保护；移动端适配；支持多种 AI 模型提供商（OpenAI、Anthropic、Google、DeepSeek 等）
+* **为何值得关注**: 不同于每次重置的常规 AI 工具，Hermes 能保持上下文记忆、离线运行定时任务、通过技能系统自我改进，并集成 10 多个消息平台——所有功能都可通过简洁的 Web UI 访问，无需任何构建工具。一条命令即可完成安装（`python3 bootstrap.py`），自动检测和配置 Hermes Agent
+
+**[View Repository / 查看仓库](https://github.com/nesquena/hermes-webui)**
+
+### gemini-web2api - Convert Google Gemini Web into OpenAI-Compatible API
+
+* **What it does**: Converts Google Gemini's web interface into an OpenAI-compatible API proxy, enabling zero-cost access to Gemini models through standard OpenAI client libraries and tools. Works without authentication or API keys by reverse-engineering Gemini's web protocol.
+
+* **Key features**: 
+  - Drop-in replacement for OpenAI API endpoints (`/v1/chat/completions`, `/v1/models`)
+  - Supports multiple Gemini models including Flash, Flash Thinking (20k+ char output), Pro, and Auto
+  - Full function calling/tool use support in OpenAI format
+  - Adjustable thinking depth via `@think=N` suffix for reasoning-heavy tasks
+  - Built-in web search using Gemini's native internet access
+  - Pure Python single-file implementation with zero external dependencies
+  - Streaming SSE support and compatibility with Gemini CLI, Cherry Studio, ChatBox
+  - Optional authentication with configurable API keys
+  - Docker support with proxy configuration for restricted regions
+
+* **Why it's notable**: Offers a practical workaround for accessing Google's powerful Gemini models without requiring official API keys or payment. The 1,234 stars reflect strong community interest in free AI API alternatives. Particularly valuable for developers wanting to experiment with Gemini's extended thinking models (20k+ char outputs) or integrate Gemini into existing OpenAI-based workflows. The cross-platform, dependency-free design makes deployment trivial, while cookie-based authentication unlocks Pro model routing for free Google account holders.
+
+---
+
+### gemini-web2api - 将 Google Gemini 网页版转换为 OpenAI 兼容 API
+
+* **功能介绍**: 将 Google Gemini 的网页界面反向工程为 OpenAI 兼容的 API 代理,通过标准 OpenAI 客户端库和工具实现零成本访问 Gemini 模型。无需认证或 API 密钥即可工作,直接调用 Gemini 网页版协议。
+
+* **主要特点**:
+  - 完全兼容 OpenAI API 端点(`/v1/chat/completions`、`/v1/models`),可直接替换
+  - 支持多个 Gemini 模型:Flash、Flash Thinking(20k+ 字符输出)、Pro、Auto 等
+  - 完整支持函数调用/工具使用(OpenAI 格式)
+  - 通过 `@think=N` 后缀调节推理深度,适配不同复杂度任务
+  - 内置网页搜索功能,使用 Gemini 原生互联网访问能力
+  - 纯 Python 单文件实现,零外部依赖
+  - 支持流式 SSE 响应,兼容 Gemini CLI、Cherry Studio、ChatBox 等客户端
+  - 可选的 API 密钥认证机制
+  - 提供 Docker 部署方案,支持代理配置突破区域限制
+
+* **为何值得关注**: 为访问 Google 强大的 Gemini 模型提供了实用的免费方案,无需官方 API 密钥或付费订阅。1,234 颗星反映了社区对免费 AI API 替代方案的强烈需求。对于想要体验 Gemini 扩展思维模型(20k+ 字符输出)或将 Gemini 集成到现有 OpenAI 工作流的开发者尤其有价值。跨平台、零依赖的设计使部署极为简单,而基于 Cookie 的认证方式让免费 Google 账户用户也能解锁 Pro 模型路由。
+
+**[View Repository / 查看仓库](https://github.com/Sophomoresty/gemini-web2api)**
+
+### aBaiAutoplus - Multi-Platform AI Account Auto-Registration & claude-sonnet-4-5 Plus Automation
+
+* **What it does**: Automates account registration across multiple AI platforms (claude-sonnet-4-5, Cursor, Kiro, etc.) and provides one-click ChatGPT Plus subscription through protocol-based payment methods (GoPay, PayPal). Built on Python with FastAPI backend and React frontend.
+
+* **Key features**: 
+  - Supports 12+ AI platforms with plugin architecture for custom extensions
+  - Multiple execution modes: API protocol, headless browser, and headed browser
+  - GoPay (Indonesian) and PayPal automated payment flows for ChatGPT Plus
+  - Integrated email services (9 providers), CAPTCHA solving (YesCaptcha, 2Captcha), SMS verification (4 providers)
+  - Proxy pool management with success rate tracking and auto-failover
+  - Account lifecycle management with token renewal and trial expiration alerts
+  - Real-time registration dashboard with success rate analytics
+  - Docker deployment support with web UI and desktop clients
+  - Concurrent registration with configurable worker threads
+
+* **Why it's notable**: With 974 stars, this tool significantly extends the `any-auto-register` framework by adding automated payment capabilities for ChatGPT Plus subscriptions—a unique feature that automates the entire checkout flow from link generation through payment gateway completion. It represents a comprehensive automation solution for AI service account management, though it operates in a legal gray area regarding platform terms of service.
+
+---
+
+### aBaiAutoplus - 多平台 AI 账号自动注册与管理工具
+
+* **功能介绍**: 自动化注册多个 AI 平台账号(ChatGPT、Cursor、Kiro 等),并通过协议化付款方式(GoPay、PayPal)一键开通 ChatGPT Plus。基于 Python FastAPI 后端与 React 前端构建。
+
+* **主要特点**:
+  - 支持 12+ AI 平台,采用插件化架构可自定义扩展
+  - 多种执行模式:API 协议、无头浏览器、有头浏览器
+  - GoPay(印尼)和 PayPal 自动化付款流程开通 ChatGPT Plus
+  - 集成 9 种邮箱服务、验证码求解(YesCaptcha、2Captcha)、4 种接码服务
+  - 代理池管理,带成功率追踪与自动故障转移
+  - 账号生命周期管理,支持 token 自动续期和试用期预警
+  - 实时注册仪表盘与成功率分析
+  - 支持 Docker 部署,提供 Web UI 和桌面客户端
+  - 可配置并发注册,支持多线程工作
+
+* **为何值得关注**: 拥有 974 星标,该工具在 `any-auto-register` 框架基础上扩展了 ChatGPT Plus 自动付款能力——这是一项独特功能,可自动化完成从生成支付链接到收银台付款的全流程。它代表了 AI 服务账号管理的综合自动化解决方案,但需注意其使用可能涉及平台服务条款的灰色地带。
+
+**[View Repository / 查看仓库](https://github.com/asz798838958/aBaiAutoplus)**
+
+### 🎬 The Neanderthal DNA Puzzle No One Can Explain - David Reich
+
+**Channel:** Dwarkesh Patel
+
+* What the video covers: An exploration of mysterious patterns in Neanderthal DNA found in modern humans that challenge current scientific understanding, discussed with geneticist David Reich
+* Key topics discussed: Unexplained anomalies in ancient DNA inheritance, interbreeding between Neanderthals and Homo sapiens, genetic selection patterns that defy conventional explanations, implications for human evolution
+* Why it's worth watching: David Reich is a leading authority in ancient DNA research; the discussion reveals cutting-edge puzzles in human genetics that could reshape our understanding of human origins and evolution
+
+---
+
+### 🎬 尼安德特人DNA之谜：无人能解 - David Reich
+
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: 与遗传学家David Reich探讨现代人类体内尼安德特人DNA中存在的神秘模式，这些模式挑战了当前的科学认知
+* 主要话题: 古代DNA遗传中无法解释的异常现象、尼安德特人与智人的混血、违背常规解释的基因选择模式、对人类进化的影响
+* 为何值得观看: David Reich是古代DNA研究领域的顶尖权威；讨论揭示了人类遗传学中的前沿谜题，可能重塑我们对人类起源和进化的理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yTOzy2W6_Lo)**
+
+### 🎬 Project 3: real life brick breaker
+
+**Channel:** brendan
+
+* This video showcases a physical implementation of the classic Brick Breaker arcade game using engineering and 3D printing
+* Key topics include mechanical design, actuation systems for destroying "bricks," real-time tracking, and integrating digital game logic with physical hardware
+* Worth watching for makers and engineers interested in bridging digital gaming with tangible, interactive installations—demonstrates creative problem-solving in mechatronics and embedded systems
+
+---
+
+### 🎬 项目3：真实版打砖块游戏
+
+**频道:** brendan
+
+* 视频展示了如何用工程技术和3D打印将经典的打砖块街机游戏变为现实
+* 主要话题包括机械设计、砖块破坏的驱动系统、实时追踪以及将数字游戏逻辑与物理硬件集成
+* 值得观看，适合对机电一体化和嵌入式系统感兴趣的创客和工程师——展示了将数字游戏转化为实体互动装置的创意解决方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=f4kEfAOOKRw)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A short-form motivational message addressing common frustrations in coding and programming
+* Key topics discussed: Developer mindset, overcoming coding challenges, Python programming context
+* Why it's worth watching: Quick encouragement for programmers dealing with self-doubt or debugging frustration; relatable content for developers at any level
+
+---
+
+### 🎬 这不是你的错... #编程 #开发 #Python
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 一则关于编程常见挫折的简短励志信息
+* 主要话题: 开发者心态、克服编程挑战、Python 编程背景
+* 为何值得观看: 为遇到自我怀疑或调试困扰的程序员提供快速鼓励；适合各级别开发者的共鸣内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+
+**Channel:** Keshav Krishnan
+
+* What the video covers: A Chinese startup's free Chrome extension called Kimmi WebBridge that competes with OpenAI's paid services
+* Key topics discussed: Cost comparison between OpenAI's $200 pricing and this free alternative, features and capabilities of Kimmi WebBridge, how it could disrupt the AI tools market
+* Why it's worth watching: Learn about a potentially game-changing free tool that offers similar functionality to expensive paid AI services, understand emerging competition in the AI space
+
+---
+
+### 🎬 OpenAI 收费 $200…这个工具完全免费 😳
+
+**频道:** Keshav Krishnan
+
+* 视频内容概述: 介绍中国初创公司推出的免费 Chrome 扩展程序 Kimmi WebBridge,可与 OpenAI 的付费服务竞争
+* 主要话题: OpenAI $200 定价与免费替代方案的成本对比,Kimmi WebBridge 的功能和特性,如何颠覆 AI 工具市场
+* 为何值得观看: 了解一个可能改变游戏规则的免费工具,提供与昂贵付费 AI 服务类似的功能,理解 AI 领域的新兴竞争态势
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+### 🎬 Best FREE AI Agent Tools That Actually Work in 2026 (I Tried All)
+**Channel:** Mikey No Code
+
+* **What the video covers:** A comprehensive hands-on review of free AI agent tools available in 2026, with real-world testing and comparisons
+* **Key topics discussed:** Performance evaluation of various AI agent platforms, feature comparisons, practical use cases, and recommendations for the best free options (highlighting Base44 as a top choice)
+* **Why it's worth watching:** Cuts through the noise by actually testing all tools instead of just listing features, providing honest assessments to help viewers choose the right AI agent tool without wasting time on trial and error
+
+---
+
+### 🎬 2026年最佳免费AI Agent工具实测（我全部试过了）
+**频道:** Mikey No Code
+
+* **视频内容概述:** 对2026年可用的免费AI代理工具进行全面实测评测和对比
+* **主要话题:** 各AI代理平台的性能评估、功能对比、实际应用场景、最佳免费选项推荐（重点介绍Base44）
+* **为何值得观看:** 通过实际测试而非仅罗列功能来筛选工具，提供真实评估，帮助观众快速选择合适的AI代理工具，避免试错浪费时间
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2GOfWK5M3fg)**
 
