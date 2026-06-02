@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 02, 2026"
 date: 2026-06-02
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -525,4 +525,113 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为泰米尔语开发者提供快速易懂的 SQL 学习内容；涵盖后端开发和数据专业人员必备的基础数据库操作技能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=kyaHdEtoJi8)**
+
+### macOS Needs Its Grid Back: A Developer's Quest to Restore Spatial Desktop Navigation
+
+* **The Problem**: macOS Lion (2011) removed the beloved grid-based virtual desktop layout introduced in Leopard (2006), replacing it with a restrictive horizontal-only row that destroyed spatial memory and muscle memory navigation
+* **The Solution**: The author built GridLion, an app that restores grid-based navigation to macOS Spaces without requiring system modifications or disabling System Integrity Protection
+* **Key Innovation**: By removing space-switching animations, the app creates a virtual grid overlay on top of native single-row spaces, allowing users to navigate 9+ desktops as if they were physical displays in spatial locations
+* **Development Journey**: What started as a day-long prototype evolved into a polished app addressing a 13-year-old frustration with macOS workspace management
+* **Technical Challenges**: macOS locks down Mission Control APIs and requires multiple permission hurdles (Accessibility, Screen Recording) with confusing approval flows that are far less user-friendly than iOS
+* **Philosophy on Software Quality**: Despite LLM code generation, the author argues passionate developers who care deeply about refinement and design decisions still create superior software that stands apart from generic clones
+
+### macOS 需要找回它的网格布局：一位开发者恢复空间桌面导航的探索
+
+* **问题所在**：macOS Lion (2011) 移除了 Leopard (2006) 引入的备受喜爱的网格式虚拟桌面布局，取而代之的是限制性的单行横向排列，彻底破坏了空间记忆和肌肉记忆导航
+* **解决方案**：作者开发了 GridLion 应用，在不需要修改系统或禁用系统完整性保护的情况下，为 macOS Spaces 恢复了网格式导航
+* **核心创新**：通过移除空间切换动画，该应用在原生单行空间之上创建虚拟网格覆盖层，让用户可以像操作物理显示器一样在空间位置上导航 9 个以上的桌面
+* **开发历程**：从一天完成的原型进化为精致的应用，解决了 macOS 工作区管理长达 13 年的痛点
+* **技术挑战**：macOS 锁定了 Mission Control API，并且需要多重权限审批（辅助功能、屏幕录制），其批准流程远不如 iOS 用户友好且令人困惑
+* **软件质量理念**：尽管有 LLM 代码生成，作者认为真正关心细节打磨和设计决策的热情开发者仍能创造出优于普通克隆品的卓越软件
+
+**[Read Original / 阅读原文](https://blog.hopefullyuseful.com/blog/macos-needs-its-grid-back/)**
+
+<!-- [Title-Only] -->
+### Can the stockmarket swallow Anthropic, SpaceX and OpenAI?
+
+* Based on the title, this article likely examines whether public stock markets have the capacity and appetite to absorb IPOs from three of the world's most valuable private companies: Anthropic (AI research), SpaceX (aerospace), and OpenAI (AI research). It probably discusses their massive valuations, the technical and regulatory challenges of going public, and the potential impact on market dynamics.
+* Why it might be interesting: These companies represent the cutting edge of AI and space technology, with combined valuations potentially exceeding hundreds of billions of dollars. Their IPOs could be among the largest in history, raising questions about market liquidity, investor appetite for high-growth tech stocks, and whether traditional public markets can accommodate such disruptive, capital-intensive businesses.
+
+### 股市能否吞下 Anthropic、SpaceX 和 OpenAI？
+
+* 根据标题推测，这篇文章可能探讨公开股票市场是否有能力和意愿承接三家全球最具价值的私营公司的 IPO：Anthropic（AI 研究）、SpaceX（航天）和 OpenAI（AI 研究）。文章可能讨论它们的巨额估值、上市面临的技术和监管挑战，以及对市场动态的潜在影响。
+* 为何值得关注：这些公司代表了 AI 和太空技术的前沿，合计估值可能超过数千亿美元。它们的 IPO 可能成为史上规模最大的几次上市之一，引发了关于市场流动性、投资者对高增长科技股的兴趣，以及传统公开市场能否容纳如此具有颠覆性、资本密集型企业的问题。
+
+**[Read Original / 阅读原文](https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai)**
+
+### How Groq is Raising $650M After Nvidia "Acquired" Them
+
+* **The Unusual Deal**: Groq wasn't fully acquired by Nvidia in December 2025 — Nvidia licensed their technology and hired key technical executives, but the corporate entity continued operating datacenters and their inference API
+* **Technical Limitations**: Groq's all-SRAM architecture enables extremely fast inference on smaller models (up to 120B parameters) but cannot economically serve frontier models like GPT-5.5 due to lack of high-bandwidth memory (HBM)
+* **The Real Asset**: Groq owns four operational AI datacenters with experienced teams, a rare asset given that half of planned US datacenter builds have been delayed or canceled due to power and infrastructure issues
+* **Valuation Opportunity**: Comparable datacenter operators CoreWeave (43 datacenters) and Nebius (11 datacenters) are each valued at $50 billion, suggesting Groq's infrastructure alone could be worth billions despite their technology being licensed to Nvidia
+* **Major Challenges**: Groq's datacenters run on 7-year-old LPUv1 chips, and Nvidia now sells LPUv3 chips to any cloud provider, eliminating Groq's speed advantage while high AI costs raise questions about their high-speed, high-cost strategy
+
+### Groq 如何在被英伟达"收购"后融资 6.5 亿美元
+
+* **不寻常的交易**:Groq 在 2025 年 12 月并未被英伟达完全收购——英伟达仅授权了他们的技术并聘用了关键技术高管,但公司实体继续运营数据中心和推理 API 服务
+* **技术局限性**:Groq 的全 SRAM 架构能在小型模型(最大 120B 参数)上实现极快推理,但由于缺乏高带宽内存(HBM),无法经济地服务 GPT-5.5 等前沿模型
+* **真正的资产**:Groq 拥有四个运营中的 AI 数据中心和经验丰富的团队,这在美国一半计划中的数据中心因电力和基础设施问题被延迟或取消的背景下成为稀缺资产
+* **估值机会**:可比数据中心运营商 CoreWeave(43 个数据中心)和 Nebius(11 个数据中心)估值均达 500 亿美元,暗示 Groq 的基础设施本身可能价值数十亿美元,尽管其技术已授权给英伟达
+* **主要挑战**:Groq 的数据中心运行着 7 年前的 LPUv1 芯片,而英伟达现在向任何云提供商销售 LPUv3 芯片,消除了 Groq 的速度优势,同时高昂的 AI 成本引发了对其高速高成本策略的质疑
+
+**[Read Original / 阅读原文](https://www.zach.be/p/how-the-hell-is-groq-raising-more)**
+
+### Ian Xiaohei Illustrations - AI-Powered Hand-Drawn Article Illustrations for Chinese Content
+
+* **What it does**: A Codex Skill that transforms cognitive concepts from Chinese articles into quirky, hand-drawn 16:9 illustrations featuring "Xiaohei" (a minimalist black character). It analyzes articles to identify key judgments, processes, structures, states, or metaphors, then generates clean white-background illustrations with minimal red/orange/blue Chinese annotations.
+
+* **Key features**: Generates 4-8 shot lists per article with structure analysis (workflow, system diagrams, before/after comparisons, concept metaphors); uses a consistent visual IP (Xiaohei) as an active participant rather than decoration; produces PNG illustrations saved to workspace; includes QA checklist for quality control; focuses on one core idea per illustration with 40-60% canvas usage and generous whitespace.
+
+* **Why it's notable**: Bridges the gap between generic illustration prompts and PPT infographics by creating knowledge-focused visuals with personality. The "grotesque but refreshing" aesthetic and character-driven approach make complex Chinese content memorable. With 1,650 stars, it's becoming a go-to tool for Chinese content creators, bloggers, and knowledge workers who need consistent, recognizable article illustrations that explain rather than merely decorate.
+
+---
+
+### Ian Xiaohei Illustrations - 中文文章怪诞手绘配图生成工具
+
+* **功能介绍**: 这是一个 Codex Skill,用于为中文文章、博客和方法论内容生成正文配图。它会分析文章中的认知锚点,将其中的判断、流程、结构、状态或隐喻转化为 16:9 横版手绘插图。配图以"小黑"(黑色实心、白点眼的极简角色)为视觉 IP,采用纯白背景、黑色线稿、少量红橙蓝中文批注的风格。
+
+* **主要特点**: 每篇文章生成 4-8 张配图方案列表,包含结构类型分析(工作流、系统局部、前后对比、概念隐喻等);小黑角色必须承担核心动作而非装饰;每张图只表达一个核心概念,大量留白,主体占画面 40-60%;包含质检清单确保风格统一;自动保存 PNG 到工作区;提供多种使用场景的 prompt 示例。
+
+* **为何值得关注**: 填补了通用插画 prompt 和 PPT 信息图之间的空白,专注于知识型内容的视觉化表达。"怪诞但清爽"的独特美学和角色驱动的叙事方式,让抽象概念变得具象且有记忆点。获得 1,650 星标,已成为中文内容创作者、知识工作者和 AI 工作流实践者的热门工具,特别适合需要稳定复用视觉语言的 Notion 文档、博客文章和方法论内容配图。
+
+**[View Repository / 查看仓库](https://github.com/helloianneo/ian-xiaohei-illustrations)**
+
+### GordenPPTSkill - AI-Powered Chinese PPT Builder with Hand-Polished Templates
+
+* **What it does**: A Python-based PPT generation skill that lets AI agents create professional PowerPoint presentations. It uses 17 carefully curated Chinese PPTX templates and a non-destructive text-only editing approach—you pick a template, define your edits in JSON format, and get a fully-formatted .pptx file with layouts intact.
+
+* **Key features**: Compatible with all AI models (DeepSeek, Claude, GPT, domestic Chinese models); generates high-information-density, complex layouts suitable for enterprise/corporate use; supports both elaborate and minimal business styles; automatic skill update mechanism; built on python-pptx with font aliasing for cross-platform compatibility.
+
+* **Why it's notable**: Solves a common pain point for Chinese users needing enterprise-grade PPT generation with AI. The "AI-friendly" design means agents can produce professional results without wrestling with layout engines. The author emphasizes it's "the strongest native PPT skill, more suitable for Chinese users" and invites skeptics to challenge the quality. Personal/research use only (non-commercial).
+
+---
+
+### GordenPPTSkill - AI 友好的中文 PPT 生成工具
+
+* **功能介绍**: 基于 Python 的 PPT 生成技能，让 AI 智能体能够创建专业的 PowerPoint 演示文稿。内置 17 个精心打磨的中文 PPTX 模板，采用非破坏性的纯文本编辑方式——选择模板、编写 edits.json 配置文件，即可生成保持原有布局的完整 .pptx 文件。
+
+* **主要特点**: 兼容所有 AI 模型(DeepSeek、Claude、GPT、国产模型等)；可生成信息密度高、排版复杂的企业级 PPT，也支持简约商务风格；具备自动技能更新机制；基于 python-pptx 构建，支持跨平台字体映射(微软雅黑等)。
+
+* **为何值得关注**: 解决了中文用户用 AI 生成企业级 PPT 的痛点。"AI 友好"的设计让智能体无需与复杂的排版引擎搏斗即可产出专业效果。作者自信地称其为"史上最强原生 PPT Skill，更适合中国宝宝"，生成效果令人震撼。仅供个人学习研究使用(非商业)。
+
+**[View Repository / 查看仓库](https://github.com/GordenSun/GordenPPTSkill)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+**Channel:** Keshav Krishnan
+
+* What the video covers: A deep dive into Kimmi WebBridge, a free Chrome extension from a Chinese startup that offers AI-powered web browsing capabilities similar to premium paid services
+* Key topics discussed: Comparison with OpenAI's $200 premium tier, real-time web access features, practical demonstrations of the extension's capabilities, cost-benefit analysis for users seeking AI web integration
+* Why it's worth watching: Learn about a completely free alternative to expensive AI web browsing tools, see hands-on demos, and understand whether this could disrupt the current AI pricing landscape
+
+---
+
+### 🎬 OpenAI 收费 200 美元…这个工具却完全免费 😳
+**频道:** Keshav Krishnan
+
+* 视频内容概述: 深度评测中国初创公司推出的免费 Chrome 扩展 Kimmi WebBridge,其功能可与高价付费 AI 服务媲美
+* 主要话题: 与 OpenAI 200 美元高级套餐的对比、实时网页访问功能、扩展程序实际使用演示、用户成本效益分析
+* 为何值得观看: 了解昂贵 AI 网页浏览工具的完全免费替代方案,观看实操演示,判断这是否会颠覆当前 AI 定价格局
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
 
