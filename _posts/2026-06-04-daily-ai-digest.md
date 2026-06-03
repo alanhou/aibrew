@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 04, 2026"
 date: 2026-06-04
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -319,4 +319,236 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 摒弃营销噱头，提供真实测试结果；帮助观众选择合适的免费AI代理工具，避免在无效平台上浪费时间；包含实际演示和诚实评估
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=2GOfWK5M3fg)**
+
+### Elixir v1.20 Released: A Milestone in Gradual Typing
+
+* **Major Achievement**: Elixir v1.20 completes the first development milestone of adding set-theoretic types, performing type inference and gradual type checking without requiring type annotations
+* **Verified Bug Detection**: The type system finds guaranteed runtime failures (verified bugs) with extremely low false positives, efficiently analyzing existing programs without developer overhead
+* **The `dynamic()` Type**: Unlike other gradual type systems that use `any()` to bypass checks, Elixir's `dynamic()` type has two key properties:
+  * **Compatibility**: Reports violations only when supplied and accepted types are completely disjoint (no overlap), ensuring only verified bugs are caught
+  * **Narrowing**: Refines `dynamic()` types based on usage context, allowing the type system to infer precise types from ordinary code patterns
+* **Sound and Developer-Friendly**: Built on set-theoretic foundations using unions, intersections, and negations, with clear error messages
+* **Strong Benchmark Performance**: Passes 12 of 13 categories in the "If T: Benchmark for Type Narrowing," demonstrating effective type information recovery
+* **Partnership-Driven**: Made possible through collaboration between CNRS and Remote, currently sponsored by Fresha and Tidewave
+* **Research to Production**: Builds on 2022's announcement and 2023's award-winning paper, transitioning from academic research to practical implementation
+
+### Elixir v1.20 发布：渐进式类型语言的里程碑
+
+* **重大成就**：Elixir v1.20 完成了添加集合论类型的第一个开发里程碑，无需类型注解即可对每个 Elixir 程序执行类型推断和渐进式类型检查
+* **已验证错误检测**：类型系统能发现保证会在运行时失败的错误（已验证错误），误报率极低，高效分析现有程序且无需增加开发者负担
+* **`dynamic()` 类型**：与其他使用 `any()` 绕过检查的渐进式类型系统不同，Elixir 的 `dynamic()` 类型具有两个关键特性：
+  * **兼容性**：仅在提供的类型和接受的类型完全不相交（无重叠）时才报告违规，确保只捕获已验证的错误
+  * **类型收窄**：根据使用上下文细化 `dynamic()` 类型，允许类型系统从普通 Elixir 代码模式中推断出精确类型
+* **健全且开发者友好**：基于集合论基础构建，使用并集、交集和否定运算，提供清晰的错误消息
+* **强大的基准测试性能**：在"If T: 类型收窄基准测试"中通过了 13 个类别中的 12 个，展示了有效的类型信息恢复能力
+* **合作驱动**：由 CNRS 和 Remote 合作实现，目前由 Fresha 和 Tidewave 赞助
+* **从研究到生产**：基于 2022 年的公告和 2023 年获奖论文，从学术研究过渡到实际应用
+
+**[Read Original / 阅读原文](https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/)**
+
+### Gemma 4 12B: Bringing Agentic Multimodal AI to Your Laptop
+
+* **New 12B model bridges the gap** between edge-friendly E4B and advanced 26B MoE, designed for local laptop deployment with powerful agentic capabilities
+* **Native multimodal support** includes vision and audio inputs flowing directly into the LLM backbone without separate encoders—making it the first mid-sized Gemma model with native audio
+* **Laptop-ready performance** runs locally on just 16GB VRAM/unified memory while delivering benchmark results approaching the 26B model
+* **Novel unified architecture** eliminates traditional multimodal encoders, processing vision and audio inputs directly through the language model
+* **Advanced reasoning capabilities** enable multi-step reasoning and agentic workflows despite the reduced model size
+* **Developer momentum** continues with Gemma 4 family surpassing 150 million downloads, powering projects from wearable robotic arms to enterprise AI security
+* **Open and optimized** released under Apache 2.0 license with Multi-Token Prediction (MTP) drafters for reduced latency across the developer ecosystem
+
+### Gemma 4 12B：将智能体多模态 AI 带到您的笔记本电脑
+
+* **全新 12B 模型填补空白**，介于边缘友好的 E4B 和高级 26B MoE 之间，专为本地笔记本部署和强大的智能体能力而设计
+* **原生多模态支持**，视觉和音频输入直接流入 LLM 主干网络，无需单独编码器——这是首个支持原生音频的中型 Gemma 模型
+* **笔记本就绪性能**，仅需 16GB 显存/统一内存即可本地运行，同时提供接近 26B 模型的基准测试结果
+* **创新统一架构**，消除传统多模态编码器，通过语言模型直接处理视觉和音频输入
+* **高级推理能力**，尽管模型尺寸缩小，仍能实现多步推理和智能体工作流
+* **开发者热度持续**，Gemma 4 系列下载量已超 1.5 亿次，支持从可穿戴机器人手臂到企业级 AI 安全等多种项目
+* **开放且优化**，采用 Apache 2.0 许可证发布，配备多令牌预测（MTP）起草器以降低延迟，全面支持开发者生态系统
+
+**[Read Original / 阅读原文](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/)**
+
+### Encephalitis: A Developer's Journey Through Rare Autoimmune Disease
+
+* **Andrew Gallant (burntsushi) was diagnosed with anti-NMDA receptor encephalitis**, a rare autoimmune disorder causing brain inflammation where antibodies attack NMDA receptors
+* **Initial symptoms mimicked psychiatric illness**: flu-like symptoms, severe anxiety, panic attacks, suicidal ideation, psychosis with delusions and auditory hallucinations—leading to misdiagnosis as generalized anxiety disorder
+* **Physical symptoms escalated rapidly**: chronic jaw pain (TMJ dysfunction), severe balance problems, inability to catch a ball despite lifelong athletic ability, eventually resulting in a fall and head injury
+* **Healthcare system nearly failed him**: After being cleared physically in the ER, he was sent to a psychiatric hospital where getting neurological evaluation proved difficult—only a lucky connection with a doctor got him transferred to Brigham and Women's Hospital neurology department
+* **Diagnosis and treatment**: MRI revealed a brain lesion; he received life-saving IVIG (intravenous immunoglobulin) and methylprednisolone steroids before official diagnosis was confirmed via cerebrospinal fluid antibody testing (which takes weeks)
+* **Enrolled in CIELO clinical trial** testing satralizumab effectiveness for anti-NMDA receptor encephalitis treatment
+* **Excellent prognosis**: Early detection associated with better long-term outcomes; he's recovering well and tapering off medications, feeling "great" with recovery exceeding expectations
+* **Historical context**: The disease may explain historical accounts of "demonic possession" due to severe psychiatric symptoms
+* **Personal impact**: Describes it as "the absolute worst experience" of his 38-year life, explaining his recent inactivity on open-source projects (ripgrep, etc.)
+* **Deep gratitude expressed**: To his wife Kaitlyn Brady for saving his life and never giving up on finding neurological cause, and to Charlie Marsh (Ruff/Astral co-founder) for exceptional support as his employer/partner
+
+### 脑炎：一位开发者罕见自身免疫疾病的亲历
+
+* **Andrew Gallant（burntsushi）被诊断患有抗NMDA受体脑炎**，这是一种罕见的自身免疫性疾病，抗体攻击NMDA受体导致大脑炎症
+* **初期症状酷似精神疾病**：类流感症状、严重焦虑、恐慌发作、自杀念头、精神病性症状（妄想和幻听）——被误诊为广泛性焦虑障碍
+* **身体症状迅速恶化**：慢性颞颌关节疼痛、严重平衡问题、尽管终生运动却无法接住球、最终摔倒头部受伤
+* **医疗系统差点误诊**：急诊室体检通过后被送往精神病院，获得神经科评估极其困难——靠运气认识的医生才转入波士顿布莱根妇女医院神经科
+* **诊断与治疗**：MRI显示脑部病变；在正式确诊前就接受了救命的IVIG（静脉注射免疫球蛋白）和甲基强的松龙类固醇治疗；脑脊液抗体检测确诊（需数周时间）
+* **参加CIELO临床试验**，测试satralizumab（沙曲珠单抗）对抗NMDA受体脑炎的治疗效果
+* **预后极佳**：早期发现与更好的长期预后相关；目前恢复良好并逐渐减药，感觉"很棒"，恢复超出预期
+* **历史视角**：该疾病可能解释历史上"恶魔附身"的记载，因其严重的精神症状
+* **个人影响**：称这是38年人生中"最糟糕的经历"，解释了他近几个月在开源项目（如ripgrep等）上的不活跃
+* **深切感谢**：感谢妻子Kaitlyn Brady救了他的命并坚持寻找神经学病因；感谢Charlie Marsh（Ruff/Astral联合创始人）作为雇主/合作伙伴给予的超常支持
+
+**[Read Original / 阅读原文](https://burntsushi.net/encephalitis/)**
+
+### Trivy - Comprehensive Security Scanner for Containers, Code, and Cloud
+
+* **What it does**: Trivy is an all-in-one security scanner that detects vulnerabilities, misconfigurations, secrets, and generates SBOMs across containers, Kubernetes clusters, code repositories, filesystems, and cloud infrastructure.
+
+* **Key features**: 
+  - Multiple scan targets: container images, filesystems, Git repos, VM images, and Kubernetes
+  - Multiple scanners: CVE detection, IaC misconfiguration checks, secret detection, license scanning, and SBOM generation
+  - Supports most popular programming languages and operating systems
+  - Easy installation via brew, Docker, or binary downloads
+  - Rich ecosystem with GitHub Actions, Kubernetes operator, VS Code plugin integrations
+
+* **Why it's notable**: With 26 stars today and maintained by Aqua Security, Trivy stands out as a comprehensive, open-source security solution that consolidates multiple security scanning capabilities into a single tool. Its versatility across different targets and scan types makes it essential for modern DevSecOps workflows, from development to production.
+
+---
+
+### Trivy - 全面的容器、代码和云安全扫描工具
+
+* **功能介绍**: Trivy 是一款一体化安全扫描器,可在容器、Kubernetes 集群、代码仓库、文件系统和云基础设施中检测漏洞、错误配置、敏感信息,并生成软件物料清单(SBOM)。
+
+* **主要特点**:
+  - 多种扫描目标:容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes
+  - 多种扫描器:CVE 漏洞检测、IaC 配置检查、密钥检测、许可证扫描和 SBOM 生成
+  - 支持主流编程语言和操作系统
+  - 安装简便,支持 brew、Docker 或二进制文件下载
+  - 丰富的生态系统集成,包括 GitHub Actions、Kubernetes operator、VS Code 插件等
+
+* **为何值得关注**: 今日获得 26 星,由 Aqua Security 维护,Trivy 作为开源安全解决方案脱颖而出,将多种安全扫描能力整合到单一工具中。其跨不同目标和扫描类型的多功能性使其成为现代 DevSecOps 工作流(从开发到生产)的必备工具。
+
+**[View Repository / 查看仓库](https://github.com/aquasecurity/trivy)**
+
+### Hermes Agent - A Self-Improving AI Agent That Grows With You
+
+* **What it does**: A self-improving AI agent with built-in learning loops that creates and refines skills from experience, maintains cross-session memory, and adapts to user patterns. Works with 200+ models via multiple providers (OpenRouter, Nous Portal, OpenAI, local endpoints) and runs anywhere from a $5 VPS to serverless infrastructure.
+
+* **Key features**: Real terminal interface with full TUI; multi-platform presence (Telegram, Discord, Slack, WhatsApp, Signal, CLI); autonomous skill creation and improvement; scheduled automations via natural language cron; parallel subagents; six terminal backends including serverless options (Modal, Daytona) that hibernate when idle; native Windows support with bundled Git Bash; agent-curated memory with FTS5 session search and user modeling.
+
+* **Why it's notable**: First agent with a closed learning loop that genuinely improves itself during use rather than being static. Not laptop-locked—talk from Telegram while it runs on cloud infrastructure. Model-agnostic with instant switching via `hermes model`. Production-ready with research capabilities (trajectory generation/compression). 1,736 stars today suggests strong developer interest in persistent, self-improving agents that aren't tied to specific platforms or providers.
+
+---
+
+### Hermes Agent - 与你共同成长的自我改进型 AI 智能体
+
+* **功能介绍**: 一个具备内置学习循环的自我改进型 AI 智能体,能从经验中创建和优化技能,维护跨会话记忆,并适应用户模式。支持 200+ 个模型(通过 OpenRouter、Nous Portal、OpenAI、本地端点等),可在 5 美元 VPS 到无服务器基础设施上运行。
+
+* **主要特点**: 完整的终端用户界面,支持多行编辑和流式输出;多平台接入(Telegram、Discord、Slack、WhatsApp、Signal、CLI);自主技能创建与改进;自然语言定时任务;并行子智能体;六种终端后端,包括空闲时休眠的无服务器选项(Modal、Daytona);原生 Windows 支持,内置便携 Git Bash;智能体策划的记忆系统,带 FTS5 会话搜索和用户建模。
+
+* **为何值得关注**: 首个真正具备闭环学习能力的智能体,能在使用过程中自我改进而非保持静态。不依赖笔记本电脑运行——可在 Telegram 聊天的同时让它在云端工作。模型无关设计,通过 `hermes model` 即时切换。生产就绪且具备研究能力(轨迹生成/压缩)。今日 1,736 星标显示开发者对不绑定特定平台或提供商的持久化自我改进型智能体有强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/NousResearch/hermes-agent)**
+
+### Goose - Local-First WHOOP 5.0 Health Data Companion
+
+* **What it does**: A local-first iOS app that connects directly to WHOOP 5.0 fitness bands via Bluetooth, processes health data through a Rust core, and displays comprehensive health metrics including sleep, recovery, strain, stress, and cardio load—all without cloud dependencies.
+
+* **Key features**: SwiftUI iOS app with Rust backend bridge; direct Bluetooth communication with WHOOP 5.0 devices; local health metric processing and visualization (sleep, recovery, strain, stress, energy); HealthKit integration; coach interface for metric summaries; Live Activity workout extension; privacy-focused local-first architecture with no external data transmission.
+
+* **Why it's notable**: This is a rare open-source reverse-engineering effort for proprietary fitness hardware, demonstrating how to build an independent companion app for commercial health devices. The hybrid Swift/Rust architecture shows a sophisticated approach to BLE data parsing and health metric computation. With 1.4k stars, it's gaining attention as an alternative to vendor lock-in for fitness data, though currently an alpha proof-of-concept targeting developers only (public beta planned June 2026). The project is explicitly independent and not affiliated with WHOOP.
+
+---
+
+### Goose - WHOOP 5.0 本地健康数据伴侣应用
+
+* **功能介绍**: 一款本地优先的 iOS 应用,通过蓝牙直接连接 WHOOP 5.0 健身手环,使用 Rust 核心处理健康数据,显示全面的健康指标(包括睡眠、恢复、压力、心肺负荷等),完全无需云端依赖。
+
+* **主要特点**: SwiftUI 构建的 iOS 应用配合 Rust 后端桥接;直接通过蓝牙与 WHOOP 5.0 设备通信;本地健康指标处理和可视化(睡眠、恢复、压力、能量等);集成 HealthKit;教练界面提供指标摘要;运动实况活动扩展;注重隐私的本地架构,无外部数据传输。
+
+* **为何值得关注**: 这是一个罕见的专有健身硬件开源逆向工程项目,展示了如何为商业健康设备构建独立伴侣应用。Swift/Rust 混合架构展现了对蓝牙数据解析和健康指标计算的精密处理。拥有 1.4k star,作为摆脱健身数据供应商锁定的替代方案备受关注,但目前仍是面向开发者的 alpha 概念验证版本(公测版计划于 2026 年 6 月发布)。该项目明确声明独立开发,与 WHOOP 公司无关联。
+
+**[View Repository / 查看仓库](https://github.com/b-nnett/goose)**
+
+### aBaiAutoplus - Multi-platform AI Account Auto-registration & claude-sonnet-4-5 Plus Automation
+
+* **What it does**: Automates registration and management of AI platform accounts (ChatGPT, Cursor, Kiro, etc.) with automated ChatGPT Plus subscription payment via PayPal and Indonesian GoPay protocol
+* **Key features**: Plugin-based architecture supporting 12+ platforms; dual-mode execution (API protocol/browser automation); integrated email services, CAPTCHA solvers, SMS providers, and proxy pool management; automated account lifecycle monitoring; GoPay account registration and 14-step Midtrans payment flow; real-time success rate dashboard; Web UI and desktop client
+* **Why it's notable**: Extends the original `any-auto-register` framework with full ChatGPT Plus payment automation using PayPal (US/Japan regions) and GoPay protocol integration, eliminating manual subscription workflows; multi-tenant portal API and Docker deployment ready; supports account export to Any2API gateway for immediate use
+
+### aBaiAutoplus - 多平台 AI 账号自动注册与 ChatGPT Plus 自动订阅工具
+
+* **功能介绍**: 自动化注册和管理 AI 平台账号(ChatGPT、Cursor、Kiro 等),通过 PayPal 浏览器模式和印尼 GoPay 协议自动完成 ChatGPT Plus 订阅付款全流程
+* **主要特点**: 插件化架构支持 12+ 平台;协议/浏览器双执行模式;集成多种邮箱服务、验证码识别、接码平台和代理池管理;账号生命周期自动监测;GoPay 账号注册及 14 步 Midtrans 付款流程;实时成功率仪表盘;提供 Web UI 和桌面客户端
+* **为何值得关注**: 在原 `any-auto-register` 框架基础上扩展了完整的 ChatGPT Plus 自动付款能力,支持 PayPal(日区/美区)和 GoPay 协议付款,实现从账号注册到订阅开通的全自动化;提供多租户门户 API 和 Docker 一键部署;支持导出账号到 Any2API 网关即时可用
+
+**[View Repository / 查看仓库](https://github.com/asz798838958/aBaiAutoplus)**
+
+### 🎬 Humans split into separate groups for a million years, then merged - David Reich
+**Channel:** Dwarkesh Patel
+
+* What the video covers: David Reich discusses ancient human population dynamics, focusing on how human populations separated into distinct groups for approximately one million years before eventually re-merging
+* Key topics discussed: Population genetics, human evolutionary history, ancient DNA evidence, the timeline and mechanisms of human population splits and subsequent admixture events
+* Why it's worth watching: David Reich is a leading geneticist in ancient DNA research; this offers deep insights into human origins and migration patterns that fundamentally shaped modern human genetic diversity
+
+### 🎬 人类分离成不同群体百万年后再次融合 - David Reich
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: David Reich 讨论古人类的人口动态,重点关注人类群体如何分离成不同的族群约一百万年,之后最终重新融合
+* 主要话题: 群体遗传学、人类进化史、古代DNA证据、人类种群分裂的时间线和机制以及后续的混合事件
+* 为何值得观看: David Reich 是古DNA研究领域的顶尖遗传学家;本视频深入探讨了人类起源和迁徙模式,这些研究从根本上塑造了现代人类的遗传多样性
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Vg4QR8KsTgA)**
+
+### 🎬 The DOCTER !! #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* A short-form Python coding demonstration or tutorial
+* Likely features a quick coding tip, trick, or humorous programming concept (given the "DOCTER" title suggests a play on words or meme)
+* Worth watching for: Bite-sized Python learning content perfect for quick breaks; part of the growing #shorts trend making programming concepts accessible in under 60 seconds
+
+---
+
+### 🎬 The DOCTER !! #coding #programming #shorts #python
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* Python 编程短视频演示或教程
+* 可能展示快速编码技巧、窍门或幽默的编程概念(标题 "DOCTER" 暗示可能是文字游戏或梗)
+* 为何值得观看:适合快速学习的 Python 小知识;属于 #shorts 短视频趋势,在 60 秒内让编程概念变得易于理解
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rn0bjXtk-Ug)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+
+**Channel:** Keshav Krishnan
+
+* This video covers Kimmi WebBridge, a free Chrome extension from a Chinese startup that competes with OpenAI's paid offerings
+* Key topics include the extension's features, how it compares to OpenAI's $200 service, practical use cases, and potential implications for the AI tools market
+* Worth watching to learn about a cost-effective alternative to expensive AI services and understand emerging competition in the AI browser extension space
+
+---
+
+### 🎬 OpenAI 收费 $200…这个工具却完全免费 😳
+
+**频道:** Keshav Krishnan
+
+* 视频介绍了一款名为 Kimmi WebBridge 的免费 Chrome 扩展程序,由中国初创公司推出,可与 OpenAI 的付费服务竞争
+* 主要话题包括该扩展的功能特性、与 OpenAI $200 服务的对比、实际应用场景,以及对 AI 工具市场的潜在影响
+* 值得观看以了解昂贵 AI 服务的经济实惠替代方案,并理解 AI 浏览器扩展领域的新兴竞争格局
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A short-form motivational or educational piece addressing common struggles in coding and programming, specifically related to Python
+* Key topics discussed: Programming challenges, coding mindset, likely debugging or learning difficulties that developers face
+* Why it's worth watching: Quick, relatable content for programmers who may be experiencing frustration or self-doubt in their coding journey; part of the growing trend of bite-sized developer motivation and tips
+
+---
+
+### 🎬 这不是你的错... #编程 #开发 #Python短视频
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 一个关于编程和Python开发中常见困境的短视频，带有激励或教育性质
+* 主要话题: 编程挑战、编码心态，可能涉及开发者面临的调试或学习困难
+* 为何值得观看: 简短且易引起共鸣的内容，适合在编程过程中感到挫折或自我怀疑的开发者；符合当前流行的开发者激励和技巧短视频趋势
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
 
