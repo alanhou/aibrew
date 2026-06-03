@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 03, 2026"
 date: 2026-06-03
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -741,4 +741,102 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 实际演示如何将热门手游角色转化为基于Web的2D版本,适合游戏开发者和网页动画爱好者学习
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XoLp0d88SLc)**
+
+### Test Drive III Map Extraction Project
+
+* Developer reverse-engineered and extracted maps from the 1990 DOS game *Test Drive III: The Passion* by Accolade, motivated by childhood exploration memories
+* Maps stored as 32×16 grids where each cell references 3D meshes (tiles/objects) with rotation and height data; meshes use 16-bit signed coordinates and 8-byte polygon records
+* Project includes an online browser viewer, Wavefront OBJ exports, PNG image extraction tools, and comprehensive file format specifications
+* Built with Node.js 20.19+ and Vite 7; features CLI tools for viewing LST files, extracting VGA images, and exporting scene sprites
+* Includes extracted asset galleries for five car models (Corvette ZR-1, Honda NSX, Lamborghini Diablo, Mythos, Corvette Stelvio) and scenery sprites
+
+### Test Drive III 地图提取项目
+
+* 开发者对 1990 年 DOS 游戏《Test Drive III: The Passion》（Accolade 出品)进行逆向工程并提取地图,源于童年探索世界的回忆
+* 地图以 32×16 网格存储,每个单元格引用 3D 网格(地砖/物体)及旋转和高度数据;网格使用 16 位有符号坐标和 8 字节多边形记录
+* 项目包含在线浏览器查看器、Wavefront OBJ 导出、PNG 图像提取工具和完整的文件格式规范文档
+* 基于 Node.js 20.19+ 和 Vite 7 构建;提供 CLI 工具用于查看 LST 文件、提取 VGA 图像和导出场景精灵
+* 包含五款车型(雪佛兰 Corvette ZR-1、本田 NSX、兰博基尼 Diablo、Mythos、雪佛兰 Corvette Stelvio)和场景精灵的提取资源画廊
+
+**[Read Original / 阅读原文](https://github.com/s-macke/Test-Drive-3-Maps)**
+
+### The Unreasonable Redundancy of Nature's Protein Folds
+
+* **Deep learning revolution in biomolecules**: AI models like AlphaFold3 now predict protein structures and design drug-like molecules, with generative models potentially creating most future clinical antibodies
+* **Scaling recipe hits a wall**: While improving AI systems typically requires scaling model size, compute, and data, converting billions of natural protein sequences into 3D structures reveals a fundamental limitation
+* **Sequence diversity ≠ structural diversity**: Natural proteins occupy a tiny, highly structured part of theoretical sequence space—evolution reuses stable, adaptable folds rather than exploring all possibilities
+* **The redundancy problem**: Proteins with only 24-28% sequence identity can share the same 3D fold (TM-score >0.75), meaning vast sequence databases contain far less structural novelty than expected
+* **Implications for enzyme design**: Simply folding more natural sequences from databases like MGnify may not provide the structural diversity needed to train next-generation biomolecular design models
+* **Clustering challenge**: Scalable algorithms like Foldseek are needed to systematically measure true structural novelty across massive protein databases
+
+### 自然界蛋白质折叠的不合理冗余
+
+* **生物分子深度学习革命**：AlphaFold3等AI模型现可预测蛋白质结构并设计类药物分子，生成模型有望设计未来大多数临床抗体
+* **扩展策略遇到瓶颈**：虽然改进AI系统通常需要扩展模型规模、算力和数据，但将数十亿天然蛋白质序列转换为3D结构时揭示了根本性局限
+* **序列多样性≠结构多样性**：天然蛋白质仅占据理论序列空间中极小且高度结构化的部分——进化倾向于重用稳定、可适应的折叠，而非探索所有可能性
+* **冗余问题**：序列相似度仅24-28%的蛋白质可能共享相同的3D折叠（TM分数>0.75），意味着庞大的序列数据库包含的结构新颖性远低于预期
+* **对酶设计的影响**：仅从MGnify等数据库折叠更多天然序列，可能无法提供训练下一代生物分子设计模型所需的结构多样性
+* **聚类挑战**：需要Foldseek等可扩展算法来系统性测量海量蛋白质数据库中的真实结构新颖性
+
+**[Read Original / 阅读原文](https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/)**
+
+### AI Outperforms Law Professors in Stanford Law Study
+
+* Stanford Law School Professor Julian Nyarko led a groundbreaking study showing law professors prefer AI-generated answers to student questions over responses written by fellow instructors, with AI winning 75% of head-to-head matchups across nearly 3,000 blind comparisons.
+* The study involved 16 law professors from U.S. law schools evaluating contract law questions that require judgment, nuanced reasoning, and navigating ambiguity—not just factual recall—challenging assumptions about AI's role in legal education.
+* Professors flagged AI responses as pedagogically harmful only 3.5% of the time, compared to 12% for peer-written answers, demonstrating AI's ability to meet professional standards for legal reasoning and argumentation.
+* The research tested AI's capacity for reasoning in fields without clear right-or-wrong answers, with AI performing comparably to the best human instructors even on complex questions requiring synthesis and application to new situations.
+* First author Alejandro Salinas emphasized AI tutoring could offer high-quality, on-demand support complementing classroom instruction and broadening access to expert guidance in judgment-rich fields like law.
+* Professor Nyarko cautioned against wholesale AI adoption, noting that while blanket skepticism may be unwarranted, the focus should shift to deploying AI responsibly to benefit students, as questions about effective implementation for learning remain open.
+
+### 斯坦福法学院研究显示AI表现优于法学教授
+
+* 斯坦福法学院教授Julian Nyarko领导的突破性研究显示，法学教授更偏好AI生成的学生问题答案，而非同行教师撰写的回答，在近3,000次盲评对比中，AI赢得了75%的直接对决。
+* 该研究涉及来自美国法学院的16名法学教授，评估需要判断力、细致推理和处理模糊性的合同法问题——而非仅仅事实记忆——挑战了关于AI在法学教育中角色的假设。
+* 教授们仅将3.5%的AI回答标记为教学上有害，而同行撰写的答案有12%被标记，表明AI能够达到法律推理和论证的专业标准。
+* 该研究测试了AI在没有明确对错答案的领域中的推理能力，即使在需要综合和应用到新情况的复杂问题上，AI的表现也与最优秀的人类教师相当。
+* 第一作者Alejandro Salinas强调，AI辅导可以提供高质量的按需支持，补充课堂教学，并扩大学生在法律等需要判断力的领域获得专家指导的机会。
+* Nyarko教授警告不要全面采用AI，指出虽然全盘怀疑可能不合理，但重点应转向负责任地部署AI以造福学生，因为如何有效实施以改善学习的问题仍然悬而未决。
+
+**[Read Original / 阅读原文](https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/)**
+
+### Goose - Local-First WHOOP 5.0 Companion App
+
+* **What it does**: An iOS app that connects directly to WHOOP 5.0 fitness bands via Bluetooth, processes data locally through a Rust core, and displays health metrics (sleep, recovery, strain, stress, cardio, energy) without relying on WHOOP's cloud services.
+
+* **Key features**: Local-first architecture with no cloud dependency; Rust-powered data processing bridged to SwiftUI; comprehensive health dashboards including sleep analysis, recovery tracking, strain monitoring, and a coach interface; HealthKit integration; Live Activity widget support; fully open-source with detailed MVP documentation.
+
+* **Why it's notable**: This independent project demonstrates reverse-engineering WHOOP 5.0's Bluetooth protocol to create a privacy-focused alternative to the official app. It's an ambitious proof-of-concept showing how users can own their fitness data locally. The hybrid Rust/Swift architecture is technically interesting, and the project explicitly credits design inspiration (Bevel) while maintaining independence from WHOOP. Currently alpha quality, targeting public beta in June 2026.
+
+---
+
+### Goose - WHOOP 5.0 本地数据伴侣应用
+
+* **功能介绍**: 一款 iOS 应用，通过蓝牙直接连接 WHOOP 5.0 健身手环，使用 Rust 内核在本地处理数据，显示健康指标（睡眠、恢复、压力、心血管负荷、能量等），无需依赖 WHOOP 云服务。
+
+* **主要特点**: 本地优先架构，数据不上云；Rust 驱动的数据处理核心桥接至 SwiftUI；全面的健康仪表板，包括睡眠分析、恢复追踪、压力监测和教练界面；集成 HealthKit；支持实时活动小组件；完全开源并提供详细的 MVP 文档。
+
+* **为何值得关注**: 这个独立项目通过逆向工程 WHOOP 5.0 的蓝牙协议，创建了一个注重隐私的官方应用替代方案，展示了用户如何真正拥有自己的健身数据。Rust/Swift 混合架构在技术上颇具看点，项目明确标注设计灵感来源（Bevel）并强调与 WHOOP 的独立性。目前为 Alpha 概念验证版本，计划 2026 年 6 月发布公开测试版。
+
+**[View Repository / 查看仓库](https://github.com/b-nnett/goose)**
+
+### 🎬 Which one is your favourite? 🙉
+
+**Channel:** MathMotion
+
+* The video explores polar functions by converting their visual patterns into sound through a creative Python script
+* Key topics include polar equations, mathematical visualization, and the intersection of mathematics with audio synthesis
+* Worth watching for anyone interested in creative coding, mathematical art, or synesthesia-like experiences where visual math becomes audible. It demonstrates an innovative way to "hear" mathematical beauty and makes abstract concepts more tangible through multi-sensory representation.
+
+---
+
+### 🎬 你最喜欢哪一个? 🙉
+
+**频道:** MathMotion
+
+* 视频通过创意 Python 脚本将极坐标函数的视觉图案转换为声音,探索数学的听觉表现
+* 主要话题包括极坐标方程、数学可视化以及数学与音频合成的交叉应用
+* 值得观看,因为它适合对创意编程、数学艺术或联觉体验感兴趣的观众。视频展示了一种创新的方式来"聆听"数学之美,通过多感官呈现使抽象概念变得更加具象和易于理解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mZCK67FqNyU)**
 
