@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 03, 2026"
 date: 2026-06-03
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -633,4 +633,112 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 通过实际测试而非仅罗列功能来筛选工具，提供真实评估，帮助观众快速选择合适的AI代理工具，避免试错浪费时间
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=2GOfWK5M3fg)**
+
+### 1-Click GitHub Token Stealing via VSCode Bug
+
+* **Vulnerability Overview**: A single click on a malicious link can steal GitHub OAuth tokens with read/write access to all repositories, including private ones
+* **Attack Vector**: Exploits github.dev (browser-based VSCode) which receives a full-scope OAuth token from github.com via POST - token is not limited to specific repositories
+* **Root Cause**: VSCode webview security model flaw where keyboard event handlers (`did-keydown`) forward keystrokes from sandboxed iframes to the main window to support shortcuts
+* **Security Model Breakdown**: Webviews use cross-origin iframes (`vscode-webview://`) isolated from main window (`vscode-file://`), communicating via postMessage API
+* **The Bug**: To enable keyboard shortcuts in webviews, VSCode forwards all keydown events from the iframe to parent, breaking iframe isolation and allowing keystroke exfiltration
+* **Impact**: Attacker-controlled content in webview (e.g., malicious Markdown preview, Jupyter notebook) can capture all keystrokes and exfiltrate the GitHub OAuth token
+* **Scope**: Affects both desktop VSCode (Electron) and browser version (github.dev), with browser version being particularly dangerous due to OAuth token presence
+
+### 一键窃取 GitHub Token 的 VSCode 漏洞
+
+* **漏洞概述**: 通过点击恶意链接,攻击者可窃取具有读写权限的 GitHub OAuth 令牌,包括访问所有私有仓库
+* **攻击途径**: 利用 github.dev(基于浏览器的 VSCode),该服务从 github.com 通过 POST 接收完整权限的 OAuth 令牌 - 令牌不限于特定仓库
+* **根本原因**: VSCode webview 安全模型缺陷,键盘事件处理器(`did-keydown`)将沙箱 iframe 中的按键事件转发到主窗口以支持快捷键功能
+* **安全模型崩溃**: Webview 使用跨域 iframe(`vscode-webview://`)与主窗口(`vscode-file://`)隔离,通过 postMessage API 通信
+* **漏洞细节**: 为了使键盘快捷键在 webview 中正常工作,VSCode 将 iframe 中的所有 keydown 事件转发给父窗口,破坏了 iframe 隔离机制并允许按键窃取
+* **影响范围**: 攻击者控制的 webview 内容(如恶意 Markdown 预览、Jupyter notebook)可以捕获所有按键并窃取 GitHub OAuth 令牌
+* **受影响版本**: 影响桌面版 VSCode(Electron)和浏览器版本(github.dev),浏览器版本因包含 OAuth 令牌而尤其危险
+
+**[Read Original / 阅读原文](https://blog.ammaraskar.com/github-token-stealing/)**
+
+### Using NVIDIA GPU VRAM as Linux Swap Space
+
+* **nbd-vram** is a tool that lets you use your NVIDIA GPU's video memory (VRAM) as swap space on Linux systems
+* Designed for laptops with limited soldered RAM and no upgrade options—leverages idle VRAM from RTX/GTX cards to extend addressable memory
+* Works by running a daemon that allocates VRAM via CUDA API and exposes it as a block device through NBD (Network Block Device) protocol
+* No kernel modules required—survives driver and kernel updates without recompilation
+* Uses standard CUDA memory copy operations (`cuMemcpyHtoD`/`DtoH`) instead of the restricted NVIDIA P2P API, which only works on Quadro/datacenter GPUs
+* Achieves ~1.3 GB/s sequential throughput on RTX 3070 Laptop, faster than NVMe storage
+* Supports dynamic sizing (backs off in 512 MB increments if VRAM is constrained), configurable swap priority, and optional power-aware management
+* Tested configuration tripled addressable memory from 16 GB to ~46 GB using 7 GB VRAM + zram + SSD swap
+* Simple installation via systemd service with automatic boot activation
+
+---
+
+### 将 NVIDIA GPU 显存用作 Linux 交换空间
+
+* **nbd-vram** 是一个工具，可以将 NVIDIA GPU 的显存（VRAM）用作 Linux 系统的交换空间
+* 专为内存焊接且无法升级的笔记本电脑设计——利用 RTX/GTX 显卡的闲置显存来扩展可寻址内存
+* 工作原理是运行一个守护进程，通过 CUDA API 分配显存，并通过 NBD（网络块设备）协议将其公开为块设备
+* 无需内核模块——在驱动程序和内核更新后无需重新编译即可继续使用
+* 使用标准 CUDA 内存复制操作（`cuMemcpyHtoD`/`DtoH`）而非受限的 NVIDIA P2P API（后者仅适用于 Quadro/数据中心 GPU）
+* 在 RTX 3070 笔记本上可达约 1.3 GB/s 的顺序吞吐量，快于 NVMe 存储
+* 支持动态调整大小（如果显存受限则以 512 MB 为单位递减）、可配置的交换优先级以及可选的电源感知管理
+* 测试配置使用 7 GB 显存 + zram + SSD 交换，将可寻址内存从 16 GB 扩展至约 46 GB，增加了两倍
+* 通过 systemd 服务简单安装，支持开机自动启动
+
+**[Read Original / 阅读原文](https://github.com/c0dejedi/nbd-vram)**
+
+### Vibe-Coded Motherfucking Website: The Death of Clean Code in the AI Era
+
+* **Core thesis**: Clean code principles are obsolete in an age where AI agents regenerate entire codebases on demand, making maintainability irrelevant
+* **The paradox**: This perfectly crafted, lightweight, accessible website was built by an AI agent in one shot—proving the craft still exists, just as a "personality setting" you toggle for nostalgia
+* **New business model**: Burn millions in tokens with deliberately complex "agentic" architectures; the compute cost *is* the pitch to VCs ("pre-revenue at scale")
+* **Complexity as currency**: Ship 1,300 npm dependencies and 9MB bundles not despite their bloat, but because wasteful infrastructure signals you're "Serious About Infrastructure"
+* **Open source is dead**: Repos drown in bot-generated PRs, maintainers burned out years ago, and "clean-room rewrites" via AI test suites enable legal IP theft at scale
+* **Content nihilism**: Semantic HTML and accessibility don't matter when users process content as nine-second dopamine hits, not coherent thought
+* **The actual punchline**: Static sites with proper typography, security, and standards compliance are now acts of *spite*—museum pieces from 2014 that agents can still generate perfectly, if you ask
+
+### Vibe 编程的网站：AI 时代下整洁代码的死亡
+
+* **核心论点**：在 AI 代理可以按需重新生成整个代码库的时代，整洁代码原则已经过时，可维护性变得无关紧要
+* **悖论所在**：这个完美打造、轻量级、可访问的网站由 AI 代理一次性完成——证明工艺仍然存在，只是变成了你为怀旧而切换的"人格设定"
+* **新商业模式**：用故意复杂的"代理化"架构烧掉数百万 token；计算成本本身*就是*对风投的卖点（"规模化的前收入阶段"）
+* **复杂度即货币**：发布 1,300 个 npm 依赖和 9MB 的打包文件不是无意为之，而是因为浪费性基础设施能表明你"认真对待基础设施"
+* **开源已死**：代码仓库被机器人生成的 PR 淹没，维护者多年前已精疲力竭，通过 AI 测试套件进行"洁净室重写"实现了规模化的合法知识产权盗窃
+* **内容虚无主义**：当用户将内容作为九秒多巴胺冲击而非连贯思考来处理时，语义化 HTML 和可访问性已无关紧要
+* **真正的笑点**：具有适当排版、安全性和标准合规性的静态网站现在是一种*对抗行为*——来自 2014 年的博物馆展品，只要你提出要求，代理仍然可以完美生成
+
+**[Read Original / 阅读原文](https://agenticmotherfucking.website)**
+
+### SenPaiScanner - A Lightweight Cloudflare IP Scanner with Terminal UI
+
+* **What it does**: Scans and validates Cloudflare IP addresses to find working endpoints for VLESS/Trojan proxy configurations, especially useful in networks with high latency and unstable connections. Features a two-phase validation process: connectivity scanning followed by xray-based end-to-end testing.
+
+* **Key features**: Terminal UI with arrow-key navigation (no CLI flags needed); supports both random IP scanning and custom IP lists; multi-port testing (443, 8443, 2053, etc.); WebSocket-aware probing for `type=ws` configs; embedded xray validation that measures real download speed and latency; one-click export of working `IP:port` endpoints to clipboard and file; live results file that updates during scanning.
+
+* **Why it's notable**: Solves a real pain point for users in restricted networks by eliminating command memorization—just paste your config URL and let it find IPs that actually work through your proxy. The two-phase validation ensures endpoints pass both basic connectivity and real-world proxy traffic tests. Written in Go for cross-platform compatibility (Linux, macOS, Windows on x86_64 and ARM64).
+
+---
+
+### SenPaiScanner - 轻量级 Cloudflare IP 扫描工具（带终端界面）
+
+* **功能介绍**: 扫描并验证 Cloudflare IP 地址，为 VLESS/Trojan 代理配置找到可用的端点，特别适合高延迟和连接不稳定的网络环境。采用两阶段验证流程：连通性扫描后进行基于 xray 的端到端测试。
+
+* **主要特点**: 方向键导航的终端界面（无需记忆命令行参数）；支持随机 IP 扫描和自定义 IP 列表；多端口测试（443、8443、2053 等）；针对 `type=ws` 配置的 WebSocket 感知探测；内置 xray 验证，可测量真实下载速度和延迟；一键导出可用的 `IP:port` 端点到剪贴板和文件；实时结果文件在扫描过程中持续更新。
+
+* **为何值得关注**: 为受限网络用户解决了实际痛点，无需记忆复杂命令——只需粘贴配置 URL，即可找到真正能通过代理工作的 IP。两阶段验证确保端点既能通过基础连通性测试，也能承载实际代理流量。使用 Go 语言编写，跨平台兼容（支持 Linux、macOS、Windows 的 x86_64 和 ARM64 架构）。
+
+**[View Repository / 查看仓库](https://github.com/MatinSenPai/SenPaiScanner)**
+
+### 🎬 fanny mlbb versi 2D #coding #mobilelegends #htmlcssjavascript #fypp
+**Channel:** Lucky => w_a_h_y_u
+
+* What the video covers: A coding tutorial recreating Fanny, a Mobile Legends: Bang Bang character, in 2D using web technologies
+* Key topics discussed: HTML, CSS, and JavaScript implementation for game character animation and design
+* Why it's worth watching: Practical demonstration of how to translate a popular mobile game character into a web-based 2D version, useful for game developers and web animation enthusiasts
+
+### 🎬 fanny mlbb 2D版本 #coding #mobilelegends #htmlcssjavascript #fypp
+**频道:** Lucky => w_a_h_y_u
+
+* 视频内容概述: 使用网页技术重现《无尽对决》(Mobile Legends)角色Fanny的2D版本编程教程
+* 主要话题: HTML、CSS和JavaScript实现游戏角色动画与设计
+* 为何值得观看: 实际演示如何将热门手游角色转化为基于Web的2D版本,适合游戏开发者和网页动画爱好者学习
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XoLp0d88SLc)**
 
