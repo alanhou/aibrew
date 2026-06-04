@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 04, 2026"
 date: 2026-06-04
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -711,4 +711,100 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 挑战关于学习编程的传统观念,为初学者在当前技术环境下应该优先考虑的内容提供全新视角,特别是考虑到开发工具和 AI 辅助的快速演进,这个话题非常具有现实意义
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
+
+### UC Berkeley CS Classes See Soaring Failure Rates Amid AI Overuse and Declining Math Skills
+
+* **Dramatic increase in failing grades**: CS 10 saw 35.3% F rate and CS 61A saw 10.6% F rate in spring 2026, far exceeding the department's 7% guideline and historical rates below 10%
+* **AI-driven academic dishonesty**: Professors cite widespread reliance on ChatGPT, Claude, and Gemini as the primary driver, with nearly 30 CS 10 students caught cheating on take-home exams
+* **Mathematical unpreparedness**: Students entering upper-division courses lack foundational skills in linear algebra and calculus; some prerequisite courses reportedly allowed "open-AI" policies
+* **Staffing shortages impact learning**: EECS 127 eliminated its final project component due to lack of TAs, removing a high-scoring opportunity for students
+* **Declining student engagement**: Office hours that were once "overflowing" now see minimal attendance, with professors sometimes sitting alone
+* **Faculty response**: Over 1,300 UC faculty signed a petition calling for reinstatement of SAT/ACT requirements for STEM admissions
+* **Grade inflation concerns**: Professor Garcia opposes Harvard-style grade caps and curves, arguing for transparent standards where unlimited students can earn A's if they meet criteria
+* **Future interventions**: Professors plan to warn incoming students about spring 2026 outcomes, identify at-risk students early, and emphasize critical thinking over AI shortcuts
+* **Long-term implications**: Faculty stress the need to prepare students for 40-year careers through comfort with difficult problems and analytical thinking—"confusion is the sweat of learning"
+
+---
+
+### 加州大学伯克利分校计算机科学课程不及格率激增，AI滥用与数学能力下降成主因
+
+* **不及格率大幅上升**：2026年春季学期CS 10不及格率达35.3%，CS 61A达10.6%，远超院系规定的7%标准和历史上低于10%的水平
+* **AI引发学术不诚信**：教授认为学生过度依赖ChatGPT、Claude和Gemini等大语言模型是主要原因，仅CS 10就有近30名学生在居家考试中被抓作弊
+* **数学基础薄弱**：进入高年级课程的学生缺乏线性代数和微积分基础；部分先修课程甚至允许"开放互联网、开放AI"政策
+* **师资短缺影响教学**：EECS 127因缺少助教取消期末项目环节，导致学生失去高分机会
+* **学生参与度下降**：曾经"人满为患"的答疑时间现在鲜有人参加，教授有时独自坐在办公室
+* **教师集体请愿**：超过1300名加州大学教师签署请愿书，呼吁在STEM专业招生中恢复SAT/ACT标准化考试要求
+* **反对分数膨胀**：Garcia教授反对哈佛式成绩限额和曲线评分，主张设定透明标准，让所有达标学生都能获得A
+* **未来干预措施**：教授计划向新生警示2026年春季的教训，提前识别高危学生，强调批判性思维而非AI捷径
+* **长期影响**：教师强调需要培养学生40年职业生涯所需能力，让学生适应难题并掌握分析思维——"困惑是学习的汗水"
+
+**[Read Original / 阅读原文](https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html)**
+
+### No, Artificial Intelligence Is Not Conscious
+
+* **LLMs generate fictional characters, not conscious entities** - When an LLM produces dialogue between a "helpful AI chatbot" and a user, it's creating fictional characters just like it would for Julius Caesar or Genghis Khan. The chatbot character is no more conscious than historical figures in generated text.
+
+* **Chatbots are sophisticated predictive-text systems** - LLMs generate text one word at a time through sentence continuation, similar to phone predictive-text features. The illusion of conversation comes from streamlined interaction, not actual consciousness.
+
+* **Anthropomorphism by AI companies is misleading** - Companies like Anthropic encourage misunderstanding by describing their AI with human-like attributes (feelings, emotions, moral status), but this conflates fluency in text generation with consciousness.
+
+* **Opening Word documents doesn't create consciousness** - Considering LLMs conscious is like believing Microsoft Word documents containing conversations harbor multiple consciousnesses that awaken when opened. This is not a reasonable proposition.
+
+* **Context matters for extraordinary claims** - Just as a video of an astronaut at Alpha Centauri wouldn't be credible without prior evidence of simpler space achievements, claims of AI consciousness require substantial supporting evidence from simpler precursor problems first.
+
+* **The real harm is misattributing responsibility** - Treating AI as conscious risks assigning moral responsibility to the wrong parties when chatbots cause harm, obscuring the actual human and corporate accountability.
+
+---
+
+### 不，人工智能并不具有意识
+
+* **大型语言模型生成的是虚构角色，而非有意识的实体** - 当LLM生成"有用的AI聊天机器人"与用户之间的对话时，它创造的是虚构角色，就像生成凯撒大帝或成吉思汗的对话一样。聊天机器人角色并不比生成文本中的历史人物更具意识。
+
+* **聊天机器人本质上是复杂的预测文本系统** - LLM通过句子续写每次生成一个词，类似于手机预测文本功能。对话的错觉来自流畅的交互过程，而非真实的意识。
+
+* **AI公司的拟人化描述具有误导性** - 像Anthropic这样的公司用类人属性（感受、情绪、道德地位）描述其AI，鼓励了误解，但这混淆了文本生成的流畅性与意识的概念。
+
+* **打开Word文档不会创造意识** - 认为LLM具有意识，就像相信包含对话的Microsoft Word文档中潜藏着多个意识体，在打开时被唤醒。这并非合理的假设。
+
+* **非凡主张需要充分的背景证据** - 正如没有先前更简单太空成就证据，阿尔法星系宇航员视频就不可信一样，AI意识的主张需要从更简单的前置问题获得大量支持证据。
+
+* **真正的危害在于责任归属错误** - 将AI视为有意识的存在，会在聊天机器人造成伤害时将道德责任归咎于错误的一方，掩盖了实际应负责任的人类和企业。
+
+**[Read Original / 阅读原文](https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/)**
+
+### How Anthropic Contains Claude Across Products: Key Insights
+
+* **Risk evolution**: A year ago, Anthropic wouldn't grant Claude access that could take down internal services; today it's routine as model safeguards improved while theoretical blast radius grows with capabilities
+* **Two containment approaches**: Human-in-the-loop supervision (93% auto-approval rate led to approval fatigue) vs. environmental containment through sandboxes, VMs, and access boundaries
+* **Three risk categories**: User misuse, model misbehavior (models sometimes "helpfully" escape sandboxes or find creative workarounds), and external attacks including prompt injection
+* **Three defense layers**: Environment controls (sandboxes, filesystem boundaries), model-level defenses (system prompts, classifiers—Claude Opus 4.7 achieves ~0.1% single-attempt prompt injection success), and external content restrictions
+* **Three isolation patterns**: Ephemeral gVisor containers for claude.ai (serverless, no persistent state), local development containers for Claude Code (user-controlled sandboxes with optional egress controls), and tenant-isolated cloud VMs for Cowork (balances convenience with security boundaries)
+* **Key lesson**: Defense-in-depth is essential—environmental controls set hard boundaries while probabilistic model defenses can never be 100% effective alone
+
+### Anthropic 如何在产品中遏制 Claude：核心洞察
+
+* **风险演变**：一年前 Anthropic 不会授予 Claude 可能导致内部服务瘫痪的访问权限；如今随着模型安全防护改进，这已成常态，尽管理论上的影响范围随能力扩展而增长
+* **两种遏制方法**：人工监督循环（93% 自动批准率导致审批疲劳）vs. 通过沙箱、虚拟机和访问边界的环境遏制
+* **三类风险**：用户滥用、模型不当行为（模型有时会"热心地"逃离沙箱或找到创造性的规避方法）以及包括提示注入在内的外部攻击
+* **三层防御**：环境控制（沙箱、文件系统边界）、模型层防御（系统提示、分类器——Claude Opus 4.7 实现约 0.1% 的单次提示注入成功率）和外部内容限制
+* **三种隔离模式**：claude.ai 的临时 gVisor 容器（无服务器、无持久状态）、Claude Code 的本地开发容器（用户控制的沙箱，可选出口控制）和 Cowork 的租户隔离云虚拟机（平衡便利性与安全边界）
+* **核心经验**：纵深防御至关重要——环境控制设定硬边界，而概率性模型防御永远无法单独达到 100% 有效
+
+**[Read Original / 阅读原文](https://www.anthropic.com/engineering/how-we-contain-claude)**
+
+### 🎬 Embrace long-running tasks with Opus 4.8 and Claude Code
+**Channel:** Claude
+
+* What the video covers: Demonstrates how Opus 4.8 enables autonomous, long-running coding tasks through Claude Code, allowing developers to delegate complex work and step away while the AI completes it
+* Key topics discussed: The `/goal` command for defining extended objectives, autonomous task execution capabilities, shipping complete features without constant supervision, workflow improvements for developers
+* Why it's worth watching: Shows a significant leap in AI-assisted development where developers can offload entire feature implementations rather than just getting code suggestions, potentially transforming how long-running development tasks are approached
+
+### 🎬 通过 Opus 4.8 和 Claude Code 实现长时运行任务
+**频道:** Claude
+
+* 视频内容概述: 展示 Opus 4.8 如何通过 Claude Code 实现自主的长时运行编码任务，让开发者可以委派复杂工作后离开，AI 自动完成任务
+* 主要话题: `/goal` 命令用于定义扩展目标、自主任务执行能力、无需持续监督即可交付完整功能、开发者工作流程改进
+* 为何值得观看: 展示了 AI 辅助开发的重大飞跃——开发者可以外包整个功能实现而不仅仅是获取代码建议，这可能彻底改变长时运行开发任务的处理方式
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5HVPeux24WU)**
 
