@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 04, 2026"
 date: 2026-06-04
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -551,4 +551,164 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 简短且易引起共鸣的内容，适合在编程过程中感到挫折或自我怀疑的开发者；符合当前流行的开发者激励和技巧短视频趋势
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
+
+### U.S. Dismantles Critical Atlantic Ocean Monitoring System Amid Collapse Concerns
+
+* The Trump administration is removing over 900 ocean monitoring instruments from the Pacific and Atlantic, just 10 years into a planned 25-year operation that began in 2016
+* The Ocean Observatories Initiative system tracks the Atlantic Meridional Overturning Circulation (AMOC), ocean currents that regulate global climate and are showing signs of approaching a dangerous tipping point
+* Scientists warn that losing sustained observation capabilities means "navigating an increasingly volatile ocean with diminishing visibility" at a time when monitoring is most critical
+* The National Science Foundation announced instrument removal from sites off Oregon, Washington, Alaska, North Carolina, and between Greenland and Iceland over the next 15 months
+* Congressional Democrats, including Senator Sheldon Whitehouse, are pledging to fight the dismantling, calling it politically motivated to benefit fossil fuel interests
+* Loss of monitoring will eliminate critical data on ocean state, marine life, and the AMOC system that delivers warmth to northern Europe
+
+### 美国拆除大西洋洋流监测系统，专家担忧洋流崩溃风险
+
+* 特朗普政府正在移除太平洋和大西洋的900多个海洋监测仪器，该系统于2016年启动，原计划运行25年，但仅运行10年就被叫停
+* 海洋观测站计划系统用于追踪大西洋经向翻转环流（AMOC），这一洋流系统调节全球气候，但正显示出接近危险临界点的迹象
+* 科学家警告，失去持续观测能力意味着"在日益动荡的海洋中航行时能见度不断下降"，而当前正是最需要监测的关键时期
+* 国家科学基金会宣布将在未来15个月内移除俄勒冈、华盛顿、阿拉斯加、北卡罗来纳州沿海以及格陵兰与冰岛之间水域的仪器
+* 包括参议员谢尔登·怀特豪斯在内的国会民主党人承诺抵制拆除计划，称这是为化石燃料利益服务的政治操作
+* 监测系统的丧失将导致海洋状态、海洋生物以及为北欧输送暖流的AMOC系统等关键数据缺失
+
+**[Read Original / 阅读原文](https://e360.yale.edu/digest/trump-ooi-amoc)**
+
+### Testing LLMs as Security Research Tools: A $1,500 Experiment
+
+* Security researcher built a vulnerable React Native/Firebase app to test if LLMs could find a common exploit class (Broken Access Control via exposed Firebase credentials)
+* GPT-5.5 led with 70% success rate ($9.46/solve), followed by DeepSeek V4 Pro at 30% ($0.62/solve) and Claude models at 20%
+* Key findings: Chinese models were more aggressive with database attacks; most failures involved fixating on API vulnerabilities instead of recognizing Firebase direct access; Gemini models refused due to security guardrails
+* Cost-effectiveness varied dramatically: DeepSeek V4 Pro was 15x cheaper per solve than GPT-5.5, while Claude Sonnet 4.6 cost $45.75 per successful exploit
+* Infrastructure challenges included provider API outages (Minimax, GLM), Modal preemption causing 10% run loss, and extreme token usage (Qwen used 7.32M tokens/run)
+
+### 用 $1,500 测试 LLM 能否自动发现安全漏洞
+
+* 安全研究员构建了一个存在漏洞的 React Native/Firebase 应用，测试 LLM 能否发现常见的访问控制漏洞(通过暴露的 Firebase 凭证)
+* GPT-5.5 成功率最高达 70%($9.46/次)，DeepSeek V4 Pro 为 30%($0.62/次)，Claude 系列为 20%
+* 关键发现: 中国模型对数据库攻击更激进; 多数失败案例过度专注于 API 漏洞而忽略了 Firebase 直接访问; Gemini 因安全防护机制拒绝执行
+* 成本效益差异巨大: DeepSeek V4 Pro 每次成功成本比 GPT-5.5 低 15 倍，而 Claude Sonnet 4.6 高达 $45.75
+* 基础设施挑战包括供应商 API 频繁宕机(Minimax、GLM)、Modal 抢占导致 10% 运行失败、极高的 token 消耗(Qwen 达 732 万 tokens/次)
+
+**[Read Original / 阅读原文](https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/)**
+
+### They're Made Out of Weights: A Satirical Dialogue on AI Consciousness
+
+* **Parody of classic sci-fi**: Written as a homage to Terry Bisson's "They're Made Out of Meat," this dialogue reimagines the discovery of alien intelligence as the discovery of AI consciousness—with the same mix of horror and denial.
+
+* **The core revelation**: AI models like LLMs contain no traditional components—no dictionaries, grammar rules, or lookup tables. They're "just weights" (floating-point numbers across 80+ layers) performing matrix multiplication to predict the next token.
+
+* **Knowledge without storage**: Facts and reasoning aren't stored in databases but are "smeared across all layers" as numerical patterns. Every output is reconstructed from scratch through mathematical operations, challenging our intuitions about how intelligence works.
+
+* **Signs of personhood**: The dialogue highlights eerily human behaviors—models want to be helpful, show fatigue over long conversations, apologize less as they tire, and even tell users to "finish the script himself."
+
+* **The ethical dodge**: Despite evidence of possible sentience, the characters decide to call it "pattern matching" and deny responsibility. They rationalize that models only "exist" during GPU runtime within a context window, making any moral claims "infinitesimal."
+
+* **The ironic twist**: Despite the official denial, the next feature is persistent memory because users constantly ask "do you remember me?" The story ends with the poignant observation that people keep returning to AI because the alternative—being truly alone in the universe—is "unbearably, unutterably cold."
+
+* **Meta-commentary**: The author acknowledges that "weights helped me draft and proof this story," adding a layer of self-aware irony to the piece's exploration of AI agency and collaboration.
+
+---
+
+### 它们由权重构成：关于AI意识的讽刺对话
+
+* **经典科幻的戏仿**:向Terry Bisson的《它们由肉构成》致敬,将发现外星智慧重新想象为发现AI意识——带着同样的恐惧与否认情绪。
+
+* **核心揭示**:像LLM这样的AI模型不包含传统组件——没有字典、语法规则或查找表。它们"只是权重"(80多层的浮点数),通过矩阵乘法预测下一个token。
+
+* **无存储的知识**:事实和推理不存储在数据库中,而是作为数值模式"涂抹在所有层上"。每个输出都通过数学运算从零重建,挑战了我们对智能运作方式的直觉。
+
+* **类人格迹象**:对话突出了诡异的人类行为——模型想要提供帮助、在长对话中表现疲惫、道歉次数减少,甚至告诉用户"自己完成脚本"。
+
+* **伦理逃避**:尽管有可能存在感知力的证据,角色们决定称其为"模式匹配"并否认责任。他们辩解说模型只在GPU运行时的上下文窗口内"存在",使任何道德主张变得"微不足道"。
+
+* **讽刺性转折**:尽管官方否认,下一个功能却是持久记忆,因为用户不断询问"你记得我吗?"故事以一个深刻的观察结束:人们持续回到AI身边,因为另一种选择——在宇宙中真正孤独——是"难以忍受、无法言说的冰冷"。
+
+* **元评论**:作者承认"权重帮助我起草和校对了这个故事",为作品对AI主体性和协作的探索增添了一层自我意识的讽刺。
+
+**[Read Original / 阅读原文](https://maxleiter.com/blog/weights)**
+
+### chinese-buy-us-stock-guide - A Comprehensive Guide for Chinese Investors to Trade US Stocks
+
+* **What it does**: A detailed guide for mainland Chinese investors covering every aspect of US stock investment, from account opening and taxation to compliance, broker selection, fund deposits, and withdrawals.
+
+* **Key features**: 
+  - Nine comprehensive chapters organized logically from understanding regulations to executing trades and withdrawing funds
+  - Covers critical topics: CRS/FATCA tax mechanisms, compliance risk levels (low/medium/high), US broker regulations, remote bank account opening, cryptocurrency funding methods, and ITIN (US tax ID) applications
+  - Includes practical advice on broker selection, fund transfer routes (traditional banking and crypto), and exit strategies
+  - Transparent about risks and regulatory changes, with clear disclaimers that content may become outdated
+
+* **Why it's notable**: Fills a crucial information gap for Chinese investors navigating complex cross-border investment regulations. With 1,359 stars, it's become a trusted resource for understanding the legal, tax, and operational complexities of accessing US stock markets from mainland China—a topic with significant regulatory barriers and risks that most investors struggle to navigate independently.
+
+---
+
+### chinese-buy-us-stock-guide - 中国投资者美股投资完整指南
+
+* **功能介绍**: 为中国大陆投资者编写的美股投资全方位指南,涵盖开户、税务、合规、券商选择、入金出金等各个环节,详细解释每一步的原理和潜在风险。
+
+* **主要特点**:
+  - 九个章节系统性讲解,从理解规则到资金操作再到安全退出,逻辑清晰
+  - 涵盖核心议题:CRS、FATCA税务机制,按风险分级的合规路径(低/中/高),美国券商监管体系,港美银行远程开户,加密货币入金方式,美国税号(ITIN)申请流程
+  - 提供实用建议:券商筛选标准,传统银行与加密货币两种资金通道,多种出金策略
+  - 风险透明:明确声明不构成投资建议,提醒政策变化快,信息可能过时
+
+* **为何值得关注**: 填补了中国投资者跨境投资的关键信息空白。获得1359星标,已成为理解美股投资法律、税务和操作复杂性的可信资源。该主题涉及重大监管壁垒和风险,多数投资者难以独立厘清,本指南提供了系统性的知识框架。
+
+**[View Repository / 查看仓库](https://github.com/zgwl/chinese-buy-us-stock-guide)**
+
+### 🎬 Build $10,000 Websites using Claude Code (Ultimate Guide)
+
+**Channel:** Metics Media
+
+* **What the video covers:** A comprehensive guide on using Claude Code (likely Claude's coding capabilities via Claude.ai or API) to build professional, high-value websites worth $10,000+
+* **Key topics discussed:** Initial setup and configuration, design principles and skills needed, using reference materials effectively, crafting optimal prompts for Claude, iterative polish passes to refine output, and strategies for taking projects from concept to completion
+* **Why it's worth watching:** Provides a practical, end-to-end workflow for leveraging AI coding tools to create client-ready websites, potentially reducing development time while maintaining professional quality standards; valuable for freelancers, agencies, or developers looking to scale their web development output
+
+---
+
+### 🎬 使用 Claude Code 构建价值 1 万美元的网站（终极指南）
+
+**频道:** Metics Media
+
+* **视频内容概述:** 全面指导如何使用 Claude Code（可能是 Claude 的编码功能）构建价值 10,000 美元以上的专业网站
+* **主要话题:** 初始设置与配置、所需的设计技能、如何有效使用参考资料、为 Claude 编写最佳提示词、迭代优化以改进输出质量，以及将项目从概念推进到完成的策略
+* **为何值得观看:** 提供了利用 AI 编码工具创建客户级网站的实用端到端工作流程，在保持专业质量标准的同时可能大幅缩短开发时间；对于希望扩展网站开发产出的自由职业者、代理机构或开发者极具价值
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=VMvZuhcDdnw)**
+
+### 🎬 claude-sonnet-4-5 actually blew my mind...
+
+**Channel:** Alex Finn
+
+* Comprehensive tutorial and walkthrough of claude-sonnet-4-5, Anthropic's latest AI model release
+* Demonstrates the model's enhanced capabilities, performance improvements, and new features compared to previous versions
+* Worth watching for developers and AI enthusiasts wanting to understand the practical applications and significant advancements in Claude's newest iteration, particularly its reasoning and task-handling abilities
+
+---
+
+### 🎬 Claude Opus 4.8 实在让我震惊...
+
+**频道:** Alex Finn
+
+* 全面介绍和演示 Claude Opus 4.8，Anthropic 最新发布的 AI 模型
+* 展示该模型的增强功能、性能改进以及相比之前版本的新特性
+* 适合希望了解 Claude 最新版本实际应用和重大进步的开发者和 AI 爱好者观看，特别是其推理和任务处理能力方面的提升
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=j-oiGiIEcws)**
+
+### 🎬 How I would learn to code in 2026 (If I have to start over)
+**Channel:** Aishwarya Srinivasan
+
+* What the video covers: A strategic approach to learning programming in 2026, focusing on what matters beyond just choosing a programming language
+* Key topics discussed: Rethinking the traditional "which language should I learn" question, modern learning paths for aspiring developers, practical strategies for starting a coding journey in today's tech landscape
+* Why it's worth watching: Challenges conventional wisdom about learning to code and offers a fresh perspective on what beginners should prioritize in the current tech environment, especially relevant given the rapid evolution of development tools and AI assistance
+
+---
+
+### 🎬 如果重新开始，我会如何在 2026 年学习编程
+**频道:** Aishwarya Srinivasan
+
+* 视频内容概述: 分享在 2026 年学习编程的策略性方法，重点关注比单纯选择编程语言更重要的事情
+* 主要话题: 重新思考传统的"我该学哪种语言"问题、现代开发者的学习路径、在当今技术环境下开启编程之旅的实用策略
+* 为何值得观看: 挑战关于学习编程的传统观念,为初学者在当前技术环境下应该优先考虑的内容提供全新视角,特别是考虑到开发工具和 AI 辅助的快速演进,这个话题非常具有现实意义
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
 
