@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 05, 2026"
 date: 2026-06-05
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -309,4 +309,230 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 深入介绍目前最先进的 AI 模型之一,帮助观众了解如何在自己的项目和工作流程中利用 Claude Opus 4.8 的强大能力
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=j-oiGiIEcws)**
+
+### Defending Code Reference Harness: Autonomous Vulnerability Discovery with Claude
+
+* **Open-source reference implementation** for finding and fixing security vulnerabilities using Claude AI, based on learnings from partnerships with security teams
+* **Core components**: Interactive Claude Code skills (`/quickstart`, `/threat-model`, `/vuln-scan`, `/triage`, `/patch`) and an autonomous pipeline for C/C++ memory vulnerabilities using Docker and ASAN
+* **Seven-stage pipeline**: Build → Recon → Find → Verify → Dedupe → Report → Patch, with gVisor sandboxing and egress restrictions for safe autonomous agent execution
+* **Quick ramp-up guide**: Day 1 (threat modeling + static scan), Day 2 (run reference pipeline), Days 3-5 (customize for your stack), Week 2 (scale autonomous operations)
+* **Security-first design**: Read/write-only interactive skills, sandboxed execution for autonomous agents, multi-stage verification to reduce false positives
+* **Customizable architecture**: Generic pipeline shape adaptable to different languages, vulnerability classes, and detection methods beyond the C/C++ memory safety reference
+* **Commercial option available**: Anthropic offers Claude Security as a managed, hosted product for vulnerability scanning across multiple projects
+* **Not maintained**: Repository serves as reference implementation; no ongoing contributions accepted
+
+### Claude 自主漏洞发现与修复参考实现
+
+* **开源参考实现**：基于 Claude AI 的安全漏洞发现和修复工具，汇集了与多个安全团队合作的实践经验
+* **核心组件**：交互式 Claude Code 技能（`/quickstart`、`/threat-model`、`/vuln-scan`、`/triage`、`/patch`）和针对 C/C++ 内存漏洞的自主流水线（使用 Docker 和 ASAN）
+* **七阶段流水线**：构建 → 侦察 → 发现 → 验证 → 去重 → 报告 → 修补，采用 gVisor 沙箱和出口限制确保自主代理安全执行
+* **快速上手指南**：第1天（威胁建模+静态扫描）、第2天（运行参考流水线)、第3-5天（为目标栈定制）、第2周（扩展自主操作）
+* **安全优先设计**：交互式技能仅读写文件，自主代理在沙箱中执行，多阶段验证减少误报
+* **可定制架构**：通用流水线结构可适配不同语言、漏洞类别和检测方法，不限于 C/C++ 内存安全参考实现
+* **商业化选项**：Anthropic 提供 Claude Security 托管产品，支持跨多项目的漏洞扫描管理
+* **不再维护**：仓库作为参考实现，不接受后续贡献
+
+**[Read Original / 阅读原文](https://github.com/anthropics/defending-code-reference-harness)**
+
+### When AI Builds Itself: Anthropic's Progress Toward Recursive Self-Improvement
+
+* **AI is accelerating AI development** – Anthropic engineers now ship 8x as much code per quarter compared to 2021-2025, with over 80% of code authored by Claude as of May 2026
+* **Rapid capability growth** – AI task completion horizons are doubling every 4 months; Claude progressed from 4-minute tasks (March 2024) to 12-hour tasks (March 2026)
+* **Benchmark saturation** – Models have rapidly saturated coding benchmarks like SWE-bench and research replication benchmarks like CORE-Bench within 1-2 years
+* **Engineering productivity surge** – Two major inflection points occurred: when Claude began running code (2025) and when it started working autonomously over longer periods (2026)
+* **Research team impact** – Median Anthropic researcher estimated 4x productivity increase with Mythos Preview in March 2026 poll
+* **The gap remains** – While Claude executes well-specified tasks, significant performance gaps persist in strategic judgment and goal-setting
+* **Recursive self-improvement on horizon** – Full autonomous AI designing its own successor isn't here yet but could arrive sooner than institutions are prepared for
+* **Major implications** – Could bring enormous benefits in science and healthcare, but also increases risks around human control over AI systems
+
+### AI 自我构建：Anthropic 在递归自我改进方面的进展
+
+* **AI 正在加速 AI 开发** – Anthropic 工程师现在每季度交付的代码量是 2021-2025 年的 8 倍，截至 2026 年 5 月，超过 80% 的代码由 Claude 编写
+* **能力快速增长** – AI 任务完成时长每 4 个月翻倍；Claude 从 4 分钟任务（2024 年 3 月）进步到 12 小时任务（2026 年 3 月）
+* **基准测试饱和** – 模型在 1-2 年内快速饱和了 SWE-bench 等编码基准和 CORE-Bench 等研究复现基准
+* **工程生产力激增** – 出现两个重大拐点：Claude 开始运行代码时（2025 年）和开始长时间自主工作时（2026 年）
+* **研究团队影响** – 2026 年 3 月调查显示，Anthropic 研究人员中位数估计使用 Mythos Preview 后生产力提高 4 倍
+* **差距依然存在** – 虽然 Claude 能很好地执行明确指定的任务，但在战略判断和目标设定方面仍存在显著性能差距
+* **递归自我改进即将到来** – 完全自主设计自身后继者的 AI 尚未实现，但可能比各机构准备的更早到来
+* **重大影响** – 可能在科学和医疗保健领域带来巨大收益，但也增加了人类对 AI 系统控制的风险
+
+**[Read Original / 阅读原文](https://www.anthropic.com/institute/recursive-self-improvement)**
+
+### CASTOR: CERN's Advanced Storage Manager for Physics Data Archiving
+
+* **Hierarchical Storage System**: CASTOR (CERN Advanced STORage manager) is a disk-and-tape storage system developed at CERN for archiving massive physics data volumes
+* **Access Protocols**: Supports XROOT (primary protocol), GridFTP, and command-line tools; RFIO was deprecated in 2016
+* **Evolution and Succession**: Succeeded SHIFT (1990s storage system) and is being gradually replaced by CTA (CERN Tape Archive) since June 2020
+* **Five Core Components**: Stager (disk pool management), Name Server (file system and metadata), Tape Infrastructure (automated tape operations), Client (user interface), and Storage Resource Management (Grid integration via SRM)
+* **Tape Architecture**: Uses high-capacity Oracle StorageTek T10000C (5TB) and IBM TS1140 (4TB) units in automated libraries with ~100PB total capacity; offers cost-effective storage with lower energy consumption but slower access times (minutes vs. seconds)
+
+### CASTOR：欧洲核子研究中心的物理数据归档高级存储管理器
+
+* **分层存储系统**：CASTOR（CERN 高级存储管理器）是欧洲核子研究中心开发的磁盘-磁带存储系统，用于归档海量物理数据
+* **访问协议**：支持 XROOT（主要协议）、GridFTP 和命令行工具；RFIO 已于 2016 年停用
+* **演进与继任**：继承了 SHIFT（1990 年代存储系统），自 2020 年 6 月起逐步被 CTA（CERN 磁带归档）取代
+* **五大核心组件**：Stager（磁盘池管理）、Name Server（文件系统和元数据）、Tape Infrastructure（自动化磁带操作）、Client（用户界面）和 Storage Resource Management（通过 SRM 协议实现网格集成）
+* **磁带架构**：采用高容量 Oracle StorageTek T10000C（5TB）和 IBM TS1140（4TB）磁带单元，配备自动化磁带库，总容量约 100PB；提供成本效益高、能耗低的存储方案，但访问时间较慢（分钟级而非秒级）
+
+**[Read Original / 阅读原文](https://castor.web.cern.ch/content/home.html)**
+
+### PaddleOCR - Industry-Leading OCR Toolkit for Converting Documents into LLM-Ready Structured Data
+
+* **What it does**: Converts PDF documents and images into structured, machine-readable data (JSON/Markdown) with support for 100+ languages. Designed specifically to bridge the gap between visual documents and Large Language Models, making it ideal for RAG (Retrieval-Augmented Generation) and AI Agent applications.
+
+* **Key features**: 
+  - PaddleOCR-VL-1.6 (0.9B parameter model) achieves 96.3% accuracy on OmniDocBench, excelling at text, formulas, tables, ancient documents, rare characters, seals, and charts
+  - PP-OCRv5 provides multilingual scene text recognition with 13% accuracy improvement over previous versions
+  - PP-StructureV3 for structure-aware conversion with fine-grained coordinate information
+  - Multiple inference backends (Paddle, Transformers) with seamless HuggingFace integration
+  - Browser-based inference via PaddleOCR.js
+  - Supports diverse hardware (NVIDIA GPU, Intel CPU, Kunlunxin XPU, AI accelerators)
+
+* **Why it's notable**: With 70,000+ stars and 105 stars gained today, PaddleOCR has become the gold standard for document AI. It's deeply integrated into major AI platforms like Dify, RAGFlow, Pathway, and Cherry Studio, serving as the foundation for thousands of production systems. The recent v3.6.0 release delivers state-of-the-art accuracy while maintaining an ultra-lightweight footprint (0.9B parameters), making it production-ready for both edge and cloud deployments. Its combination of commercial-grade performance, multilingual support, and LLM-friendly output formats positions it as essential infrastructure for the AI Agent era.
+
+---
+
+### PaddleOCR - 业界领先的 OCR 工具包，将文档转换为 LLM 就绪的结构化数据
+
+* **功能介绍**: 将 PDF 文档和图像转换为结构化的机器可读数据(JSON/Markdown),支持 100+ 种语言。专为弥合视觉文档与大语言模型之间的鸿沟而设计,非常适合 RAG(检索增强生成)和 AI Agent 应用。
+
+* **主要特点**:
+  - PaddleOCR-VL-1.6(0.9B 参数模型)在 OmniDocBench 上达到 96.3% 准确率,擅长识别文本、公式、表格、古籍、生僻字、印章和图表
+  - PP-OCRv5 提供多语言场景文字识别,准确率较前代提升 13%
+  - PP-StructureV3 实现结构感知转换,提供细粒度坐标信息
+  - 支持多种推理后端(Paddle、Transformers),与 HuggingFace 生态深度集成
+  - 通过 PaddleOCR.js 支持浏览器端推理
+  - 支持多样化硬件(NVIDIA GPU、Intel CPU、昆仑芯 XPU、AI 加速器)
+
+* **为何值得关注**: 拥有 70,000+ star 并在今日新增 105 star,PaddleOCR 已成为文档 AI 的黄金标准。它深度集成于 Dify、RAGFlow、Pathway 和 Cherry Studio 等主流 AI 平台,为数千个生产系统提供基础支撑。最新发布的 v3.6.0 版本在保持超轻量级体积(0.9B 参数)的同时实现了业界领先的准确率,使其可在边缘和云端生产环境中即刻部署。其商业级性能、多语言支持和 LLM 友好的输出格式相结合,使其成为 AI Agent 时代的关键基础设施。
+
+**[View Repository / 查看仓库](https://github.com/PaddlePaddle/PaddleOCR)**
+
+### Spec Kit - Spec-Driven Development Toolkit by GitHub
+
+* **What it does**: An open-source Python toolkit that transforms software development by making specifications executable. Instead of writing code first, you define requirements, plans, and tasks through structured commands that AI coding agents can directly implement into working software.
+
+* **Key features**: Provides a CLI (`specify`) with slash commands (`/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`) that guide AI agents through a complete development workflow—from establishing project principles to generating implementation tasks and executing them. Works with 30+ AI coding agents including GitHub Copilot, supports extensions and presets for customization, and includes quality validation commands for consistency checking.
+
+* **Why it's notable**: Official GitHub project that fundamentally rethinks software development by making specifications first-class citizens rather than throwaway documentation. With 311 stars today, it's gaining traction as teams seek more structured, predictable ways to leverage AI coding agents beyond "vibe coding," enabling developers to focus on product scenarios and outcomes rather than low-level implementation details.
+
+---
+
+### Spec Kit - GitHub 推出的规范驱动开发工具包
+
+* **功能介绍**: 一个开源 Python 工具包,通过使规范文档可执行来革新软件开发流程。开发者无需先编写代码,而是通过结构化命令定义需求、计划和任务,AI 编码助手可直接将其实现为可运行的软件。
+
+* **主要特点**: 提供 CLI 工具(`specify`)和斜杠命令(`/speckit.constitution`、`/speckit.specify`、`/speckit.plan`、`/speckit.tasks`、`/speckit.implement`),引导 AI 助手完成从建立项目原则到生成实现任务并执行的完整开发工作流。支持 30 多种 AI 编码助手(包括 GitHub Copilot),可通过扩展和预设进行自定义,并包含用于一致性检查的质量验证命令。
+
+* **为何值得关注**: GitHub 官方项目,通过将规范文档提升为一等公民而非一次性文档,从根本上重新思考软件开发方式。今日获得 311 星标,随着团队寻求更结构化、可预测的方式来利用 AI 编码助手(超越"氛围编码"),该项目正获得关注,使开发者能够专注于产品场景和结果,而非底层实现细节。
+
+**[View Repository / 查看仓库](https://github.com/github/spec-kit)**
+
+### Goose - Local-First WHOOP 5.0 Health Data Companion
+
+* **What it does**: An iOS app that connects directly to WHOOP 5.0 fitness bands via Bluetooth, processes health data locally through a Rust core, and displays daily metrics for sleep, recovery, strain, stress, cardio, and energy without relying on WHOOP's cloud services.
+
+* **Key features**: Local-first architecture with no cloud dependency; Rust-powered data processing bridged to SwiftUI; comprehensive health dashboards including sleep analysis, recovery scores, strain tracking, and stress monitoring; HealthKit integration; Live Activity workout widget; independent from WHOUGH's official infrastructure while maintaining device compatibility.
+
+* **Why it's notable**: Represents a rare open-source alternative to proprietary fitness tracking ecosystems, giving users full control over their health data. The hybrid Rust/Swift architecture demonstrates a modern approach to performance-critical health data processing on iOS. With 1.8K stars, it's gaining traction among developers interested in local-first health tech and reverse-engineering wearable protocols. Currently alpha—public beta planned for June 2026.
+
+---
+
+### Goose - WHOOP 5.0 本地健康数据伴侣
+
+* **功能介绍**: 一款 iOS 应用,通过蓝牙直接连接 WHOOP 5.0 运动手环,利用 Rust 内核在本地处理健康数据,显示睡眠、恢复、压力、心血管负荷等日常指标,无需依赖 WHOOP 云服务。
+
+* **主要特点**: 本地优先架构,数据不上云;Rust 驱动的数据处理引擎桥接到 SwiftUI 界面;全面的健康仪表板包含睡眠分析、恢复评分、压力追踪等功能;支持 HealthKit 集成和运动实时活动小组件;独立于 WHOOP 官方基础设施的同时保持设备兼容性。
+
+* **为何值得关注**: 作为罕见的开源健身追踪替代方案,让用户完全掌控自己的健康数据。Rust/Swift 混合架构展示了 iOS 平台上处理性能敏感型健康数据的现代方法。获得 1800+ 星标,在对本地优先健康技术和可穿戴设备协议逆向工程感兴趣的开发者中热度攀升。目前处于 Alpha 阶段,公开测试版计划于 2026 年 6 月发布。
+
+**[View Repository / 查看仓库](https://github.com/b-nnett/goose)**
+
+### aBaiAutoplus - Multi-Platform AI Account Auto-Registration & claude-sonnet-4-5 Plus Automated Subscription
+
+* **What it does**: Automates registration and management of AI platform accounts (ChatGPT, Cursor, Kiro, etc.), with specialized functionality for programmatically subscribing to ChatGPT Plus using PayPal and Indonesian GoPay payment methods
+* **Key features**: Supports 10+ AI platforms with plugin architecture; multiple email providers (MoeMail, DuckMail, etc.); headless/headed browser modes; CAPTCHA solving (YesCaptcha, 2Captcha); SMS verification services; proxy pool management with success rate tracking; account lifecycle management with token auto-renewal; real-time registration dashboard; PayPal multi-threaded browser payment; GoPay 14-step protocol payment automation; Docker deployment; export to multiple formats including Any2API integration
+* **Why it's notable**: Extends the open-source `any-auto-register` framework with full-stack automation for ChatGPT Plus subscriptions—handling everything from account creation through payment completion via Indonesian GoPay API or PayPal checkout. The 1,476 stars reflect strong interest in automated AI account provisioning, particularly for bypassing manual subscription processes. Built with FastAPI backend, React frontend, and Playwright/Camoufox for browser automation. Includes Web UI, desktop client, and multi-tenant customer portal API.
+
+---
+
+### aBaiAutoplus - 多平台 AI 账号自动注册与 ChatGPT Plus 自动订阅工具
+
+* **功能介绍**: 自动化注册和管理多个 AI 平台账号(ChatGPT、Cursor、Kiro 等),专门提供 PayPal 和印尼 GoPay 支付方式自动订阅 ChatGPT Plus 的完整流程
+* **主要特点**: 支持 10+ AI 平台的插件化架构;多邮箱服务商(MoeMail、DuckMail 等);无头/有头浏览器模式;验证码自动识别(YesCaptcha、2Captcha);短信接码服务;代理池管理与成功率统计;账号生命周期管理和 token 自动续期;实时注册仪表盘;PayPal 多线程浏览器付款;GoPay 14 步协议化付款自动化;Docker 部署;支持导出为多种格式并集成 Any2API
+* **为何值得关注**: 基于开源项目 `any-auto-register` 二次开发,新增了 ChatGPT Plus 订阅的全链路自动化能力——从账号创建到通过印尼 GoPay API 或 PayPal 完成支付。1,476 星标反映了对 AI 账号自动化配置的强烈需求,特别是绕过人工订阅流程的能力。采用 FastAPI 后端、React 前端、Playwright/Camoufox 浏览器自动化技术栈。包含 Web UI、桌面客户端和多租户门户 API。
+
+**[View Repository / 查看仓库](https://github.com/asz798838958/aBaiAutoplus)**
+
+### 🎬 How I would learn to code in 2026 (If I have to start over)
+
+**Channel:** Aishwarya Srinivasan
+
+* What the video covers: A fresh perspective on learning programming in 2026, challenging the traditional approach of obsessing over which language to learn first
+* Key topics discussed: Strategic approach to learning coding, moving beyond language selection paralysis, modern learning methodologies for aspiring developers
+* Why it's worth watching: Offers practical, updated advice for beginners navigating the overwhelming landscape of programming in 2026, cutting through common misconceptions about how to start coding
+
+---
+
+### 🎬 2026年我会如何学习编程（如果必须重新开始）
+
+**频道:** Aishwarya Srinivasan
+
+* 视频内容概述: 分享2026年学习编程的全新视角，挑战传统的"先选哪种编程语言"的思维定式
+* 主要话题: 编程学习的战略性方法、如何突破语言选择困境、面向初学者的现代学习方法论
+* 为何值得观看: 为2026年的编程初学者提供实用且与时俱进的建议，帮助打破关于如何入门编程的常见误区，直击学习痛点
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SnRLTuD_imI)**
+
+### 🎬 The DOCTER !! #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A short-form Python coding demonstration or humor piece
+* Likely features a quick coding tip, trick, or programming joke related to the "doctor" theme
+* Worth watching for a fast, entertaining take on Python programming — ideal for bite-sized learning or a quick laugh in the coding community
+
+### 🎬 The DOCTER !! #编程 #Python短视频
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* Python编程短视频演示或幽默内容
+* 可能包含与"医生"主题相关的编程技巧、窍门或笑话
+* 值得观看的原因:快节奏、娱乐性强的Python编程内容,适合快速学习或在编程社区中轻松一笑
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rn0bjXtk-Ug)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+**Channel:** Keshav Krishnan
+
+* The video covers Kimmi WebBridge, a free Chrome extension from a Chinese startup that offers capabilities similar to premium AI tools
+* Key topics include the extension's features, how it compares to OpenAI's $200 paid offerings, and its practical applications for web browsing and productivity
+* Worth watching to discover a no-cost alternative to expensive AI tools that could significantly enhance your web browsing experience and potentially save hundreds of dollars annually
+
+---
+
+### 🎬 OpenAI 收费 200 美元…这个工具完全免费 😳
+**频道:** Keshav Krishnan
+
+* 视频介绍了一款名为 Kimmi WebBridge 的免费 Chrome 扩展程序,由中国初创公司推出,功能媲美高端 AI 工具
+* 主要话题包括该扩展的功能特性、与 OpenAI 200 美元付费服务的对比,以及在网页浏览和提升生产力方面的实际应用
+* 值得观看以了解这款免费替代方案如何帮助你节省数百美元,同时显著改善网页浏览体验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A motivational short addressing common struggles programmers face
+* Likely covers debugging frustrations, learning curves, or imposter syndrome in coding
+* Worth watching for encouragement and perspective when dealing with programming challenges
+* Quick format (shorts) makes it an accessible morale boost for developers at any level
+
+### 🎬 编程不是你的错... #编程 #Python
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 一个针对程序员常见困境的励志短视频
+* 可能涵盖调试挫折、学习曲线或编程中的冒充者综合症
+* 值得观看,为面对编程挑战时提供鼓励和新视角
+* 短视频格式便于任何水平的开发者快速获得士气提升
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
 
