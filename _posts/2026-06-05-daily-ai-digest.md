@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 05, 2026"
 date: 2026-06-05
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -666,4 +666,83 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看：为开发者和无代码用户提供诚实的实测建议，帮助找到真正好用的免费AI自动化工具，避开虚假宣传
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=2GOfWK5M3fg)**
+
+### C++: The Documentary Released - A 40-Year Programming Language Success Story
+
+* **C++: The Documentary** premiered on YouTube, featuring Bjarne Stroustrup and key contributors who shaped C++'s 40-year history
+* C++ is currently the **fastest-growing of the top four programming languages** globally, with +90% user growth over the past 3.5 years (Q3 2025 data)
+* The documentary features **14 industry luminaries** including Bjarne Stroustrup (C++ creator), Alexander Stepanov (STL designer), Anders Hejlsberg (C#/TypeScript creator), Chris Lattner (LLVM/Swift creator), and John Romero (Doom/Quake co-creator)
+* **Key timeline covered**: Bell Labs invention (1980s) → C with Classes → C++ naming → CFront compiler → standardization challenges → C++98 standard → STL integration → early 2000s "C++ winter" → language wars with C# → C++11 modern renaissance
+* Documentary explores C++'s **real-world impact** across domains: particle physics at CERN, video game development (Doom/Quake), high-frequency trading, and modern AI infrastructure
+* Addresses ongoing debates about **language complexity** from standards committee evolution and discusses future challenges for C++
+* Published by **Herb Sutter** (Technical Fellow at Citadel Securities, Chair of Standard C++ Foundation, former ISO C++ Committee Chair)
+
+### C++ 纪录片发布 - 编程语言 40 年成功历程
+
+* **《C++: The Documentary》纪录片**在 YouTube 首映,汇集 Bjarne Stroustrup 及塑造 C++ 40 年历史的核心贡献者
+* C++ 目前是全球**四大编程语言中增长最快的语言**,过去 3.5 年用户增长达 +90%(2025 年第三季度数据)
+* 纪录片采访了 **14 位行业领军人物**,包括 Bjarne Stroustrup(C++ 创造者)、Alexander Stepanov(STL 设计者)、Anders Hejlsberg(C#/TypeScript 创造者)、Chris Lattner(LLVM/Swift 创造者)和 John Romero(毁灭战士/雷神之锤联合创始人)
+* **核心时间线涵盖**:贝尔实验室发明(1980年代)→ C with Classes → C++ 命名 → CFront 编译器 → 标准化挑战 → C++98 标准 → STL 集成 → 2000 年代初"C++ 寒冬"→ 与 C# 的语言之争 → C++11 现代复兴
+* 纪录片展现 C++ 的**真实世界影响力**:欧洲核子研究中心(CERN)粒子物理、游戏开发(毁灭战士/雷神之锤)、高频交易、现代 AI 基础设施等领域
+* 探讨标准委员会演进带来的**语言复杂性**争议,并讨论 C++ 未来面临的挑战
+* 由 **Herb Sutter** 发布(Citadel Securities 技术院士、标准 C++ 基金会主席、前 ISO C++ 委员会主席)
+
+**[Read Original / 阅读原文](https://herbsutter.com/2026/06/04/c-the-documentary-released-today/)**
+
+<!-- [Title-Only] -->
+### Meta enables ADB on deprecated Portal devices [video]
+
+* Based on the title, this article likely covers Meta's decision to enable Android Debug Bridge (ADB) access on their discontinued Portal video calling devices, potentially giving users more control over hardware they own
+* This is interesting because it represents an unusual move by a major tech company—rather than leaving deprecated devices as e-waste, Meta appears to be opening them up for developer access and potential repurposing, which could extend the devices' useful life and appeal to tinkerers and developers
+
+### Meta 为已停产的 Portal 设备启用 ADB 功能 [视频]
+
+* 根据标题推测，这篇文章可能介绍了 Meta 决定为其已停产的 Portal 视频通话设备启用 Android 调试桥（ADB）访问权限，这可能让用户对自己拥有的硬件有更多控制权
+* 这值得关注，因为这代表了大型科技公司的一个不寻常举措——Meta 没有让已停产的设备沦为电子垃圾，而是选择开放开发者访问权限，让设备可能被重新利用，这既能延长设备的使用寿命，也能吸引开发者和极客群体
+
+**[Read Original / 阅读原文](https://fb.watch/HxPu0fSyeH/)**
+
+### Fine-tuning an LLM to Write Like a 1990s Technical Writer
+
+* Experimenter fine-tuned small language models (Llama 3.1 8B and Qwen 2.5 7B) to mimic 1990s Microsoft technical writing style
+* Used 37+ million words from out-of-print Microsoft manuals (1977-2005) scraped from Bitsavers archive as training corpus
+* Cleaned data with Python scripts and Gemma-4-26b model, creating 192,456 training examples in JSONL format
+* Applied QLoRA (Quantized Low-Rank Adaptation) technique via Runpod cloud GPUs, spending ~$50 over one day
+* Tested multiple configurations varying training epochs, rank parameters, and corpus size
+* Fine-tuned models successfully reproduced period-accurate documentation structure (Synopsis blocks, Return Value sections, formal headings)
+* Qwen 2.5 7B with 192k examples performed best, generating convincing 1990s-style docs even for anachronistic concepts like REST APIs
+* Discovered that smaller rank adapters (rank 8 vs 16) committed more strongly to training style, while larger ranks allowed more deviation
+* Concluded fine-tuning is viable for style transfer but requires high-quality training data, careful parameter tuning, and significant experimentation time
+
+### 微调大语言模型以模仿1990年代技术写作风格
+
+* 实验者微调了小型语言模型（Llama 3.1 8B 和 Qwen 2.5 7B）以模仿1990年代微软技术写作风格
+* 使用从 Bitsavers 档案库抓取的3700多万字绝版微软手册（1977-2005）作为训练语料库
+* 使用 Python 脚本和 Gemma-4-26b 模型清理数据，创建了192,456个 JSONL 格式的训练样本
+* 通过 Runpod 云端 GPU 应用 QLoRA（量化低秩适应）技术，一天内花费约50美元
+* 测试了多种配置，包括不同训练轮次、秩参数和语料库大小
+* 微调后的模型成功复现了时代准确的文档结构（Synopsis 代码块、Return Value 章节、正式标题）
+* Qwen 2.5 7B（192k样本）表现最佳，即使对于 REST API 等时代错位的概念也能生成令人信服的1990年代风格文档
+* 发现较小秩适配器（秩8 vs 16）更强烈地遵循训练风格，而较大秩允许更多偏离
+* 结论：微调对风格迁移可行，但需要高质量训练数据、仔细的参数调整和大量实验时间
+
+**[Read Original / 阅读原文](https://passo.uno/fine-tuning-docs-llm/)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+**Channel:** Keshav Krishnan
+
+* **What the video covers:** A Chinese startup's free Chrome extension called Kimmi WebBridge that offers capabilities similar to expensive OpenAI tools
+* **Key topics discussed:** Cost comparison between premium AI tools and free alternatives, features and functionality of Kimmi WebBridge, how it challenges the current AI pricing model
+* **Why it's worth watching:** If you're paying for AI tools or looking for cost-effective alternatives, this could save you significant money while providing comparable functionality through a simple browser extension
+
+---
+
+### 🎬 OpenAI 收费 $200…这个工具完全免费 😳
+**频道:** Keshav Krishnan
+
+* **视频内容概述:** 介绍中国初创公司推出的免费 Chrome 扩展 Kimmi WebBridge,功能媲美昂贵的 OpenAI 工具
+* **主要话题:** 高级 AI 工具与免费替代品的成本对比、Kimmi WebBridge 的特性和功能、如何挑战当前的 AI 定价模式
+* **为何值得观看:** 如果你正在为 AI 工具付费或寻找性价比高的替代方案,这个浏览器扩展可能为你节省大量开支,同时提供相当的功能
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
 
