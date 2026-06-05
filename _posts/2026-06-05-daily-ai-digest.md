@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 05, 2026"
 date: 2026-06-05
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 9 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，9个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -745,4 +745,174 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 如果你正在为 AI 工具付费或寻找性价比高的替代方案,这个浏览器扩展可能为你节省大量开支,同时提供相当的功能
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+<!-- [Title-Only] -->
+### Mouseless – keyboard-driven control of macOS/Linux/Windows
+
+*Based on the title alone:*
+
+* This article likely introduces a tool or methodology called "Mouseless" that enables users to navigate and control their operating systems (macOS, Linux, and Windows) entirely through keyboard shortcuts and commands, minimizing or eliminating the need for mouse interaction.
+* Why it might be interesting: For power users, developers, and those focused on efficiency, keyboard-driven workflows can significantly increase productivity and reduce repetitive strain injuries. This cross-platform solution could appeal to anyone looking to optimize their workflow, improve accessibility, or simply explore alternative ways of interacting with their computer. It may also be valuable for users with mobility challenges who find keyboard navigation easier than using a mouse.
+
+---
+
+### Mouseless – 通过键盘驱动控制 macOS/Linux/Windows 系统
+
+*仅根据标题推测:*
+
+* 本文可能介绍一个名为"Mouseless"的工具或方法论,使用户能够完全通过键盘快捷键和命令来导航和控制操作系统(macOS、Linux 和 Windows),最大程度减少或消除对鼠标的依赖。
+* 为何值得关注: 对于高级用户、开发者以及注重效率的人群来说,键盘驱动的工作流程可以显著提高生产力并减少重复性劳损。这个跨平台解决方案可能吸引任何希望优化工作流程、提升可访问性或探索与计算机交互的替代方式的用户。对于发现键盘导航比使用鼠标更容易的行动不便用户,它也可能具有重要价值。
+
+**[Read Original / 阅读原文](https://mouseless.click)**
+
+<!-- [Title-Only] -->
+### Tracing a powerful GNSS interference source over Europe
+
+* Based on the title, this article likely documents the investigation and tracking of a significant source of interference affecting Global Navigation Satellite Systems (GNSS) across European airspace or territory
+* This would be interesting to readers because GNSS interference poses serious risks to aviation safety, maritime navigation, and critical infrastructure - understanding the source, whether intentional jamming or unintentional interference, has important security and operational implications
+
+### 追踪欧洲上空的强力 GNSS 干扰源
+
+* 根据标题推测,本文可能记录了对影响欧洲地区全球导航卫星系统(GNSS)的重大干扰源的调查和追踪过程
+* 值得关注的原因:GNSS 干扰对航空安全、海上导航和关键基础设施构成严重威胁——了解干扰源头,无论是故意干扰还是意外干扰,都具有重要的安全和运营意义
+
+---
+
+**Note:** This introduction is based solely on the article title. The actual content from the arXiv preprint may cover additional technical details about detection methods, geolocation techniques, the specific interference characteristics, or policy implications that are not apparent from the title alone.
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2606.03673)**
+
+### Redis 8.8: New Array Data Structure & Open Source Features
+
+* **New array data structure**: Redis 8.8 introduces a general-purpose array data type, expanding Redis's native data structure offerings
+* **Performance improvements**: Significant throughput gains across multiple data types - up to 83% for streams (XREADGROUP), 74% for sorted sets, 68% for pipelined MGET with I/O threads, and 50% for single-threaded MGET
+* **Window counter rate limiter**: Built-in rate limiting functionality for controlling request frequencies
+* **Streams enhancements**: Message NACKing support for better message handling and reprocessing workflows
+* **Hash field notifications**: Subkey-level notifications for hash fields, enabling more granular event tracking
+* **JSON numeric array control**: Explicit control over how JSON numeric arrays are stored, improving flexibility
+* **Time series multi-aggregator queries**: Support for multiple aggregators in a single time series query for more complex analytics
+* **Sorted set COUNT aggregator**: New COUNT aggregator for ZUNION and ZINTER operations
+* **Optimized bitmap and HyperLogLog operations**: Up to 28% improvement for bitmap operations and 18% for PFCOUNT on x86 architecture
+
+### Redis 8.8：新增数组数据结构与开源功能
+
+* **新增数组数据结构**：Redis 8.8 引入了通用数组数据类型，扩展了 Redis 的原生数据结构
+* **性能大幅提升**：多种数据类型的吞吐量显著提升 - 流（XREADGROUP）提升高达 83%，有序集合提升 74%，带 I/O 线程的管道化 MGET 提升 68%，单线程 MGET 提升 50%
+* **窗口计数器限流器**：内置限流功能，用于控制请求频率
+* **流功能增强**：支持消息 NACK（否定确认），改善消息处理和重新处理工作流
+* **哈希字段通知**：支持哈希字段的子键级通知，实现更精细的事件跟踪
+* **JSON 数值数组控制**：明确控制 JSON 数值数组的存储方式，提高灵活性
+* **时间序列多聚合器查询**：单个时间序列查询支持多个聚合器，实现更复杂的分析
+* **有序集合 COUNT 聚合器**：为 ZUNION 和 ZINTER 操作新增 COUNT 聚合器
+* **位图和 HyperLogLog 操作优化**：x86 架构上位图操作提升高达 28%，PFCOUNT 提升 18%
+
+**[Read Original / 阅读原文](https://redis.io/blog/announcing-redis-8-8/)**
+
+### CopilotKit - The Frontend Stack for Agents & Generative UI
+
+* **What it does**: CopilotKit is a TypeScript SDK that enables developers to build agent-native applications with generative UI, shared state, and human-in-the-loop workflows. It supports React and Angular frameworks and provides tools to integrate AI agents directly into frontend applications.
+
+* **Key features**: 
+  - Chat UI with message streaming and agent responses
+  - Backend tool rendering that returns UI components
+  - Generative UI allowing agents to dynamically create and update components at runtime
+  - Shared state layer synchronized between agents and UI in real time
+  - Human-in-the-loop workflows for user confirmation and input
+  - AG-UI Protocol (adopted by Google, LangChain, AWS, Microsoft)
+  - `useAgent` hook for programmatic agent control
+  - One-command setup with `npx copilotkit@latest create`
+
+* **Why it's notable**: Gaining 350 stars today, CopilotKit is the company behind the AG-UI Protocol, which has been adopted by major tech companies. It uniquely bridges the gap between AI agents and user interfaces, enabling developers to build stateful, interactive agentic applications with minimal setup. The framework provides three types of generative UI (static, declarative, and open-ended) and offers deployment-ready configurations out of the box.
+
+---
+
+### CopilotKit - AI 智能体与生成式 UI 的前端技术栈
+
+* **功能介绍**: CopilotKit 是一个 TypeScript SDK，让开发者能够构建具有生成式 UI、共享状态和人机协作工作流的智能体原生应用。支持 React 和 Angular 框架，提供将 AI 智能体直接集成到前端应用的工具。
+
+* **主要特点**:
+  - 支持消息流和智能体响应的聊天 UI
+  - 后端工具渲染可返回 UI 组件
+  - 生成式 UI 允许智能体在运行时动态创建和更新组件
+  - 智能体与 UI 之间实时同步的共享状态层
+  - 人机协作工作流，支持用户确认和输入
+  - AG-UI 协议(已被 Google、LangChain、AWS、Microsoft 采用)
+  - `useAgent` 钩子实现智能体的编程式控制
+  - 一键安装命令 `npx copilotkit@latest create`
+
+* **为何值得关注**: 今日获得 350 颗星，CopilotKit 是 AG-UI 协议背后的公司,该协议已被多家科技巨头采用。它独特地打通了 AI 智能体与用户界面之间的连接,让开发者能以最少的配置构建有状态、可交互的智能体应用。该框架提供三种生成式 UI 类型(静态、声明式和开放式),并提供开箱即用的部署就绪配置。
+
+**[View Repository / 查看仓库](https://github.com/CopilotKit/CopilotKit)**
+
+### Open Notebook - Privacy-Focused AI Research Assistant Alternative to Notebook LM
+
+* **What it does**: A self-hosted, open-source alternative to Google's Notebook LM that lets you organize multi-modal content (PDFs, videos, audio, web pages), chat with AI about your research, and generate professional multi-speaker podcasts from your notes
+* **Key features**: Supports 18+ AI providers (OpenAI, Anthropic, Ollama, etc.), generates 1-4 speaker podcasts with custom profiles, full REST API access, multi-language UI, Docker deployment, complete data sovereignty with local or cloud hosting
+* **Why it's notable**: Gained 1,142 stars today by offering what Notebook LM lacks - privacy control, AI provider flexibility, better podcast generation (vs Google's limited 2-speaker format), cost transparency, and unlimited customization through open source code
+
+---
+
+### Open Notebook - 开源隐私优先的 AI 研究助手,Notebook LM 替代方案
+
+* **功能介绍**: 自托管的开源工具,可替代 Google Notebook LM,支持组织多模态内容(PDF、视频、音频、网页),与 AI 对话研究内容,并从笔记生成专业的多人播客
+* **主要特点**: 支持 18+ AI 提供商(OpenAI、Anthropic、Ollama 等),生成 1-4 个说话人的播客并可自定义配置,提供完整 REST API,多语言界面,Docker 部署,通过本地或云端托管实现完全数据主权
+* **为何值得关注**: 今日获得 1,142 星标,提供了 Notebook LM 缺失的功能 - 隐私控制、AI 提供商灵活选择、更强大的播客生成(相比 Google 限制的双人格式)、成本透明化,以及通过开源代码实现的无限定制能力
+
+**[View Repository / 查看仓库](https://github.com/lfnovo/open-notebook)**
+
+### 🎬 Max Junestrand, CEO of Legora
+
+**Channel:** Y Combinator
+
+* What the video covers: The entrepreneurial journey of Max Junestrand, who turned down a prestigious McKinsey consulting offer to build Legora with two co-founders while still in college in Sweden
+* Key topics discussed: The decision-making process behind choosing startup life over corporate security, early-stage company building, and lessons from going through Y Combinator
+* Why it's worth watching: Offers insights into the mindset of young founders willing to take risks, provides a European perspective on startup building, and showcases the YC experience from a founder's point of view
+
+---
+
+### 🎬 Max Junestrand, Legora 首席执行官
+
+**频道:** Y Combinator
+
+* 视频内容概述: 讲述 Max Junestrand 的创业历程——他在瑞典读大学期间放弃麦肯锡的工作机会,与两位联合创始人一起创建了 Legora
+* 主要话题: 在企业高薪职位与创业之间的抉择、早期公司搭建经验、以及参加 Y Combinator 的收获
+* 为何值得观看: 展现年轻创始人敢于冒险的心态,提供欧洲视角下的创业实践,并从创始人角度分享 YC 孵化器的真实体验
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mjmswQurIU4)**
+
+### 🎬 Full Claude Code Tutorial for Beginners - Become A Pro Without Coding
+**Channel:** Vaibhav Sisinty
+
+* What the video covers: A comprehensive beginner-friendly tutorial on using Claude Code (Anthropic's AI coding assistant) to build projects without traditional coding knowledge
+* Key topics discussed: Step-by-step walkthrough of Claude Code's features, practical demonstrations of building applications using AI assistance, tips for effective prompting and workflow optimization
+* Why it's worth watching: Perfect for non-programmers wanting to leverage AI coding tools to create functional software, offers hands-on examples and best practices for maximizing Claude Code's capabilities
+
+### 🎬 Claude Code 完整新手教程 - 无需编程即可成为专家
+**频道:** Vaibhav Sisinty
+
+* 视频内容概述: 一套全面的 Claude Code(Anthropic 的 AI 编程助手)新手教程,教你如何在不具备传统编程知识的情况下构建项目
+* 主要话题: 逐步讲解 Claude Code 的功能特性、使用 AI 辅助构建应用的实际演示、有效提示词技巧和工作流程优化方法
+* 为何值得观看: 非常适合想要利用 AI 编程工具创建功能性软件的非程序员,提供实操案例和最大化发挥 Claude Code 能力的最佳实践
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cSOpT-vCXck)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* A short-form motivational video addressing common frustrations developers face while coding
+* Likely covers debugging challenges, learning curves, or common programming struggles with a reassuring message
+* Worth watching for beginner to intermediate developers who need encouragement that coding difficulties are normal and part of the learning process
+* Quick format (shorts) makes it easy to consume during a break
+
+---
+
+### 🎬 编程不是你的错... #编程 #开发 #Python短视频
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 一个关于开发者在编程过程中常见挫折感的励志短视频
+* 可能涵盖调试挑战、学习曲线或常见编程困境,传递安慰性信息
+* 适合初级到中级开发者观看,帮助理解编程困难是正常现象且是学习过程的一部分
+* 短视频格式便于在休息时快速观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
 
