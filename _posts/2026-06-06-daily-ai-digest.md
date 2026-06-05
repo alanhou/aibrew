@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 06, 2026"
 date: 2026-06-06
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -343,4 +343,252 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 为遭遇冒名顶替综合征或调试疲劳的开发者提供快速心理调节;通过将编程困难常态化来产生共鸣,适合需要短暂激励的程序员
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
+
+### Error: No Content Available
+
+* The provided HTML contains only an error page from X.com (Twitter)
+* The page displays a "Something went wrong" message with a retry button
+* No actual article content was found to analyze
+* A privacy extension warning is shown, suggesting browser extensions may be blocking content
+
+### 错误：无可用内容
+
+* 提供的 HTML 仅包含来自 X.com（推特）的错误页面
+* 页面显示"出错了"的消息和重试按钮
+* 未找到实际的文章内容进行分析
+* 显示隐私扩展警告，表明浏览器扩展可能阻止了内容
+
+---
+
+**Note:** Please provide the actual article content or a different URL to generate a proper summary.
+
+**注意：** 请提供实际的文章内容或不同的 URL 以生成正确的摘要。
+
+**[Read Original / 阅读原文](https://twitter.com/eastdakota/status/2062860530360959273)**
+
+### AI Agents and Test-Driven Development: A Practical Approach
+
+* AI agents currently struggle with writing quality tests, often producing vague, overcomplicated, or pointless test code that mirrors poor human examples
+* The author's solution uses Kent Beck's Canon TDD as foundational guidance, which alone provides approximately 60% improvement in agent test-writing capability
+* The **Specify-Encode-Fulfill (SEF)** loop replaces traditional red-green-refactor: (1) Define specifications, (2) Write automated tests encoding those specs, (3) Write code to fulfill the specifications
+* Canon TDD workflow: Write specification list → Encode as tests → Write minimal code to pass → Optionally refactor (separately from behavior changes) → Repeat until complete
+* The author uses two additional skills: **Test Design Review** (spawns separate agent to check for design violations) and **Software Design Review** (applies general software design principles)
+* Claude agents surprisingly embrace the "clean the kitchen before cooking" principle, frequently pausing to suggest refactoring before adding new features
+* While not 100% successful, the TDD skill approach has become the author's default development method, demonstrating that AI productivity gains maximize when combined with timeless, decades-old software engineering principles
+
+---
+
+### AI 智能体与测试驱动开发：实用方法
+
+* AI 智能体目前在编写高质量测试方面存在困难,常生成模糊、过度复杂或无意义的测试代码,这反映了人类编写的不良示例
+* 作者的解决方案以 Kent Beck 的 Canon TDD 为基础指导,仅此一项就能使智能体测试编写能力提升约 60%
+* **指定-编码-实现(SEF)循环**取代传统的红-绿-重构:(1)定义规范,(2)编写自动化测试来编码这些规范,(3)编写代码实现规范
+* Canon TDD 工作流程:编写规范列表 → 编码为测试 → 编写最少代码使测试通过 → 可选重构(与行为变更分离)→ 重复直到完成
+* 作者使用两个额外技能:**测试设计审查**(生成独立智能体检查设计违规)和**软件设计审查**(应用通用软件设计原则)
+* Claude 智能体意外地接受了"做饭前先清理厨房"原则,经常主动暂停并建议在添加新功能前进行重构
+* 虽然成功率未达 100%,但 TDD 技能方法已成为作者的默认开发方式,证明当 AI 与数十年前发现的永恒软件工程原则结合时,生产力提升最大
+
+**[Read Original / 阅读原文](https://www.saturnci.com/my-agent-skill-for-test-driven-development.html)**
+
+### Revolutionary Ocean Water Desalination Method Eliminates Brine Waste
+
+* **Novel solar-thermal technology** developed at University of Rochester converts ocean water to drinking water without producing harmful brine byproduct that damages marine ecosystems
+* **Laser-etched black metal panels** feature superwicking surfaces that pull thin water layers across, absorb solar radiation, and self-clean by directing salts to passive collection zones
+* **Coffee ring effect principle** prevents clogging from complex ocean minerals (magnesium, calcium) that plague conventional desalination systems using simulated seawater
+* **Successfully tested on real ocean water** from Pacific, Atlantic, and Indian Oceans, extracting nearly 100% of salts in solid form instead of liquid brine waste
+* **Dual benefit approach** produces both fresh drinking water and recoverable minerals including table salt and lithium for batteries—potentially transforming waste into valuable resources
+* **Energy-efficient and chemical-free** process requires no pre-treatment additives, addressing critical needs for 2.2 billion people lacking safe drinking water globally
+* **Lithium extraction capability** demonstrated by isolating ~50% lithium from Great Salt Lake samples using hydrogen titanate nanoparticles, offering sustainable alternative to environmentally taxing mining
+* **Scalable technology** shows promise for improving global water access and building sustainable mineral supply chains after successful small-scale proof of concept
+
+---
+
+### 突破性海水淡化新方法：零废弃盐水排放
+
+* **罗彻斯特大学研发的新型太阳能热淡化技术**将海水转化为饮用水，不产生危害海洋生态系统的有害盐水副产品
+* **激光蚀刻超吸水黑色金属面板**具有超强吸水表面，可拉动薄水层通过、吸收太阳辐射，并通过将盐分导向被动收集区实现自清洁
+* **利用"咖啡环效应"原理**防止复杂海洋矿物质（镁、钙）堵塞表面，解决了使用模拟海水的传统淡化系统面临的难题
+* **在真实海水中成功测试**，包括太平洋、大西洋和印度洋样本，以固体形式提取近100%的盐分，而非液体盐水废物
+* **双重效益方法**既生产淡水，又回收包括食盐和锂电池用锂在内的矿物质，将废物转化为宝贵资源
+* **高能效且无化学添加**过程无需预处理添加剂，解决全球22亿缺乏安全饮用水人口的关键需求
+* **锂提取能力**通过使用钛酸氢纳米颗粒从大盐湖样本中分离出约50%的锂，为环境负担重的采矿提供可持续替代方案
+* **可扩展技术**在小规模概念验证成功后，展现出改善全球水资源获取和构建可持续矿物供应链的前景
+
+**[Read Original / 阅读原文](https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/)**
+
+### Open Notebook - Open Source Privacy-Focused Alternative to Google Notebook LM
+
+* **What it does**: A self-hosted AI-powered research and knowledge management platform that lets you organize multi-modal content (PDFs, videos, audio, web pages), chat with your research using AI, and generate professional multi-speaker podcasts from your knowledge base.
+
+* **Key features**: 
+  * Support for 18+ AI providers (OpenAI, Anthropic, Ollama, LM Studio, etc.) with full control over model selection
+  * Advanced podcast generation with 1-4 customizable speakers vs Google's 2-speaker limitation
+  * Complete data sovereignty with Docker-based self-hosting or local deployment
+  * Multi-language UI support (English, Portuguese, Chinese, Japanese, Russian, Bengali)
+  * Full REST API for automation and custom integrations
+  * Intelligent search with full-text and vector capabilities across all content
+
+* **Why it's notable**: Rapidly trending with 1,142 stars today, this project addresses critical concerns about data privacy and vendor lock-in in AI research tools. Unlike Google's Notebook LM which keeps your data in their cloud and limits you to Google's models, Open Notebook gives you complete control—choose cheaper providers, run models locally for free with Ollama, or deploy anywhere. The enhanced podcast generation with multiple speakers and custom profiles, combined with unlimited customization as an open source project, makes it a compelling alternative for researchers, students, and professionals who want flexibility without sacrificing privacy.
+
+---
+
+### Open Notebook - Google Notebook LM 的开源隐私优先替代方案
+
+* **功能介绍**: 一个自托管的 AI 驱动研究和知识管理平台,可以组织多模态内容(PDF、视频、音频、网页),使用 AI 与您的研究对话,并从知识库生成专业的多人播客。
+
+* **主要特点**:
+  * 支持 18+ 个 AI 提供商(OpenAI、Anthropic、Ollama、LM Studio 等),完全控制模型选择
+  * 高级播客生成功能,支持 1-4 个可自定义说话人,而 Google 仅限 2 人
+  * 通过 Docker 自托管或本地部署实现完整数据主权
+  * 多语言界面支持(英语、葡萄牙语、中文、日语、俄语、孟加拉语)
+  * 完整的 REST API 用于自动化和自定义集成
+  * 跨所有内容的智能全文和向量搜索功能
+
+* **为何值得关注**: 今日快速增长 1,142 星标,该项目解决了 AI 研究工具中数据隐私和供应商锁定的关键问题。与将数据保留在云端并限制使用 Google 模型的 Google Notebook LM 不同,Open Notebook 让您完全掌控——选择更便宜的提供商、使用 Ollama 免费本地运行模型,或部署到任何地方。增强的多说话人播客生成和自定义配置文件功能,加上开源项目的无限定制能力,使其成为希望在不牺牲隐私的前提下获得灵活性的研究人员、学生和专业人士的有力选择。
+
+**[View Repository / 查看仓库](https://github.com/lfnovo/open-notebook)**
+
+### ECC - The Harness-Native Operator System for Agentic Work
+
+* **What it does**: A comprehensive performance optimization framework for AI coding agents (Claude Code, Cursor, Codex, etc.) that provides production-ready skills, memory persistence, security scanning, and continuous learning capabilities evolved from 10+ months of real-world engineering workflows.
+
+* **Key features**: 
+  - 63+ specialized agents, 251+ reusable skills, and 79 legacy command shims
+  - Cross-harness compatibility (works with Codex, Claude Code, Cursor, OpenCode, Gemini, Zed, GitHub Copilot)
+  - Memory optimization with automatic context save/load across sessions
+  - AgentShield security scanning with CVE detection and sanitization
+  - Selective install architecture with manifest-driven component management
+  - Token optimization, verification loops, and parallelization via git worktrees
+  - New v2.0.0-rc.1 includes GUI dashboard, operator workflows, and Rust control-plane prototype
+  - Support for 12+ programming languages (TypeScript, Python, Go, Java, Kotlin, etc.)
+
+* **Why it's notable**: Gained 1,368 stars today as one of the most comprehensive agent harness systems available. Goes beyond simple configurations to provide a complete production system with skills that self-improve, operator workflows for business tasks (billing, social media, brand voice), and security hardening. MIT-licensed open source with optional Pro tier ($19/mo) for private repos. Built by a single maintainer shipping weekly updates across 7 different AI harnesses, representing a mature approach to agentic development that emerged from actual product building rather than theoretical frameworks.
+
+---
+
+### ECC - AI 编码代理的性能优化框架
+
+* **功能介绍**: 为 AI 编码助手(Claude Code、Cursor、Codex 等)提供全面性能优化的框架系统,包含生产就绪的技能库、内存持久化、安全扫描和持续学习能力,经过 10 个月以上真实工程工作流验证。
+
+* **主要特点**:
+  - 内置 63+ 专业代理、251+ 可复用技能和 79 个传统命令适配器
+  - 跨平台兼容(支持 Codex、Claude Code、Cursor、OpenCode、Gemini、Zed、GitHub Copilot)
+  - 内存优化,自动跨会话保存/加载上下文
+  - AgentShield 安全扫描,包含 CVE 检测和输入清理
+  - 选择性安装架构,基于清单的组件管理
+  - Token 优化、验证循环和基于 git worktree 的并行化
+  - 最新 v2.0.0-rc.1 版本包含 GUI 仪表板、操作工作流和 Rust 控制平面原型
+  - 支持 12+ 种编程语言(TypeScript、Python、Go、Java、Kotlin 等)
+
+* **为何值得关注**: 今日获得 1,368 星标,是目前最全面的 AI 代理框架系统之一。不仅提供配置,而是包含完整的生产系统——具备自我改进能力的技能库、业务任务操作工作流(账单、社交媒体、品牌语调)以及安全加固。采用 MIT 开源协议,提供可选的 Pro 版本(19 美元/月)用于私有仓库。由单一维护者每周更新,支持 7 个不同 AI 开发平台,代表了从实际产品开发中演化而来的成熟代理开发方法,而非理论框架。
+
+**[View Repository / 查看仓库](https://github.com/affaan-m/ECC)**
+
+### Skylight - Real-time Aircraft Ceiling Projection with Live Sky Layer
+
+* **What it does**: Decodes ADS-B signals from an RTL-SDR radio to project a real-time map of overhead aircraft onto your ceiling, creating an "X-ray view" through your roof. Displays planes with their airline, type, and destination as they physically pass overhead, overlaid on an accurate sky layer showing the sun, moon, stars, constellations, and satellites including the ISS.
+
+* **Key features**: Type-aware aircraft glyphs (helicopters spin rotors, planes show wings), smooth 60fps interpolated motion from 1Hz GPS fixes, comet trails and altitude-coded colors, airport runway overlays at true positions, destination cities with local time and distance, live celestial objects computed for your exact location and time, phone-based control panel for all settings, and appliance-ready deployment on Raspberry Pi 5.
+
+* **Why it's notable**: Combines amateur radio (RTL-SDR), real-time flight tracking, and astronomical computation into a stunning ambient display. Works with cheap hardware (~$150 projector + $40 radio) or no hardware at all (free API mode). TypeScript/React stack with thoughtful UX details like pure-black backgrounds so only aircraft and stars are visible. Ready-made kit coming via crowdfunding.
+
+---
+
+### Skylight - 实时飞机天花板投影系统（含实时天空图层）
+
+* **功能介绍**: 通过 RTL-SDR 无线电解码 ADS-B 信号，将头顶飞过的飞机实时投影到天花板上，创造"透视屋顶"的效果。显示飞机的航空公司、机型、目的地，并叠加精确的天空图层，包含太阳、月亮、星座和国际空间站等卫星的真实位置。
+
+* **主要特点**: 根据机型显示不同的飞机图标（直升机旋翼旋转、飞机显示机翼），将 1Hz GPS 数据平滑插值至 60fps，带彗星尾迹和高度色彩编码，机场跑道按真实位置叠加，显示目的地城市及当地时间和距离，根据您的精确位置和时间计算天体位置，手机控制面板可调整所有设置，支持树莓派 5 一体化部署。
+
+* **为何值得关注**: 将业余无线电（RTL-SDR）、实时航班追踪和天文计算结合成令人惊艳的环境显示系统。可使用廉价硬件（约 150 美元投影仪 + 40 美元电台）或完全无硬件运行（免费 API 模式）。基于 TypeScript/React 技术栈，注重用户体验细节如纯黑背景使得仅飞机和星星可见。即将通过众筹推出成品套件。
+
+**[View Repository / 查看仓库](https://github.com/cpaczek/skylight)**
+
+### aBaiAutoplus - Multi-platform AI Account Auto-Registration & claude-sonnet-4-5 Plus Automation
+
+* **What it does**: Automates account registration across AI platforms (claude-sonnet-4-5, Cursor, Kiro, Windsurf, etc.) and provides automated ChatGPT Plus subscription activation through PayPal and GoPay payment protocols
+* **Key features**: Plugin-based architecture supporting 12+ platforms, multiple email/captcha/SMS providers, proxy pool management with success rate tracking, full lifecycle management (validity checks, token renewal), protocol-based GoPay payments (14-step Midtrans API flow), PayPal browser automation, concurrent registration with real-time SSE logs, Web UI + desktop client, Docker deployment
+* **Why it's notable**: Solves the pain point of bulk AI account creation and ChatGPT Plus subscription automation—particularly innovative for using Indonesian GoPay as a payment method. Extends the `any-auto-register` framework with production-ready payment automation. Strong traction with 1.5K+ stars for automating what's typically manual and tedious
+
+### aBaiAutoplus - 多平台 AI 账号自动注册与 ChatGPT Plus 自动开通
+
+* **功能介绍**: 自动化注册多个 AI 平台账号(ChatGPT、Cursor、Kiro、Windsurf 等),并通过 PayPal 和 GoPay 协议自动完成 ChatGPT Plus 订阅付款
+* **主要特点**: 插件化架构支持 12+ 平台,集成多种邮箱/验证码/接码服务商,代理池管理与成功率统计,账号全生命周期管理(有效性检测、token 续期),协议化 GoPay 付款(14 步 Midtrans API 流程),PayPal 浏览器自动化,并发注册与 SSE 实时日志,Web UI + 桌面客户端,支持 Docker 部署
+* **为何值得关注**: 解决了批量 AI 账号创建和 ChatGPT Plus 订阅自动化的痛点—特别是创新性地使用印尼 GoPay 作为付款方式。在 `any-auto-register` 框架基础上扩展了生产级付款自动化能力。获得 1.5K+ star,将原本繁琐的手动流程完全自动化
+
+**[View Repository / 查看仓库](https://github.com/asz798838958/aBaiAutoplus)**
+
+### 🎬 We just launched Paxel!
+**Channel:** Y Combinator
+
+* Paxel is a free tool designed to help developers understand their AI coding workflow and agent usage patterns
+* Analyzes coding sessions with AI tools like Claude, Codex, and Cursor to provide insights into development patterns
+* Worth watching for developers using AI coding assistants who want to optimize their workflow, understand their AI collaboration patterns, and improve productivity with these tools
+
+### 🎬 我们刚刚发布了 Paxel！
+**频道:** Y Combinator
+
+* Paxel 是一个免费工具，帮助开发者理解他们如何使用 AI 编码代理进行开发
+* 分析开发者与 Claude、Codex 和 Cursor 等 AI 工具的编码会话，提供开发模式洞察
+* 值得观看：适合正在使用 AI 编码助手的开发者，帮助优化工作流程、了解与 AI 协作的模式并提升生产力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ywS7Ytkx3A0)**
+
+### 🎬 The DOCTER !! #coding #programming #shorts #python
+
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A short-form coding demonstration or humorous take on programming, likely featuring Python code
+* Key topics discussed: Python programming concepts presented in an entertaining #shorts format
+* Why it's worth watching: Quick, digestible coding content from a web developer focused on code animations and visual demonstrations; ideal for bite-sized learning or entertainment
+
+---
+
+### 🎬 代码医生！！#编程 #程序设计 #短视频 #Python
+
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 一个简短的编程演示或关于编程的幽默内容，可能展示 Python 代码
+* 主要话题: 以娱乐性短视频形式呈现的 Python 编程概念
+* 为何值得观看: 来自专注于代码动画和视觉演示的网页开发者的快速、易消化的编程内容；适合快速学习或娱乐
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rn0bjXtk-Ug)**
+
+### 🎬 OpenAI Charges $200… This Tool Does It FREE 😳
+
+**Channel:** Keshav Krishnan
+
+* What the video covers: A Chinese startup's free Chrome extension called Kimmi WebBridge that offers capabilities similar to OpenAI's premium services
+* Key topics discussed: The features and functionality of Kimmi WebBridge, comparison with OpenAI's paid offerings, potential impact on the AI tools market
+* Why it's worth watching: Discover a free alternative to expensive AI tools that could save you $200, understand emerging competition in the AI space, and learn about accessible AI solutions for everyday users
+
+---
+
+### 🎬 OpenAI 收费 $200…这款工具却完全免费 😳
+
+**频道:** Keshav Krishnan
+
+* 视频内容概述: 中国初创公司推出的免费 Chrome 扩展程序 Kimmi WebBridge,提供类似 OpenAI 高级服务的功能
+* 主要话题: Kimmi WebBridge 的特性与功能、与 OpenAI 付费服务的对比、对 AI 工具市场的潜在影响
+* 为何值得观看: 了解可节省 $200 的免费 AI 工具替代方案,认识 AI 领域新兴竞争格局,探索普通用户也能使用的 AI 解决方案
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mkxx6ajazek)**
+
+### 🧠 Así se hace una barra de progreso en Excel en segundos
+**Channel:** Ofimatip
+
+* **What the video covers:** A quick tutorial on creating progress bars in Excel with a fast and simple method
+* **Key topics discussed:** Step-by-step instructions for building visual progress indicators in spreadsheets, likely using conditional formatting or formulas
+* **Why it's worth watching:** Perfect for users who want to add professional-looking progress tracking to their Excel dashboards or reports in just seconds, making data visualization more intuitive
+
+---
+
+### 🧠 几秒钟在 Excel 中制作进度条
+**频道:** Ofimatip
+
+* **视频内容概述:** 快速教程，教你用简单快速的方法在 Excel 中创建进度条
+* **主要话题:** 在电子表格中构建可视化进度指示器的分步说明，可能使用条件格式或公式
+* **为何值得观看:** 适合想要在 Excel 仪表板或报告中添加专业外观进度跟踪的用户，只需几秒钟即可让数据可视化更加直观
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vMnYgkHhDJc)**
 
