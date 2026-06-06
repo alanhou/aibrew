@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 06, 2026"
 date: 2026-06-06
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -684,4 +684,67 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 农民(占人口90%以上)与贵族之间的关系决定了如何提取和组织军事力量
 
 **[Read Original / 阅读原文](https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/)**
+
+### Privacy Strategy: Using a Separate Device for Identity Verification
+
+* **Dual-phone approach recommended**: Keep a cheap stock Android device exclusively for identity verification and mandatory government apps, while using GrapheneOS for all private activities
+* **Minimal data storage**: The verification phone should contain zero private data—no contacts, personal emails, or messaging apps
+* **Passport-like usage**: Treat the secondary device purely as an identity tool, similar to carrying a physical passport
+* **Consumer choice matters**: Users should reconsider purchasing products or services from companies requiring excessive identity verification
+* **Privacy over convenience**: Question whether entertainment services (gaming, streaming, adult content) are worth sacrificing privacy and dignity
+* **Mature decision-making**: If a company's verification requirements conflict with your privacy values, seek alternative hobbies or services
+
+### 隐私策略:使用独立设备进行身份验证
+
+* **建议双手机方案**:保留一部廉价的原生 Android 设备专门用于身份验证和强制性政府应用,同时使用 GrapheneOS 处理所有私人活动
+* **最小化数据存储**:验证手机应零私人数据——无联系人、个人邮箱或通讯应用
+* **护照式使用**:将备用设备纯粹作为身份工具,类似于携带实体护照
+* **消费者选择很重要**:用户应重新考虑是否购买要求过度身份验证的公司产品或服务
+* **隐私优于便利**:质疑娱乐服务(游戏、流媒体、成人内容)是否值得牺牲隐私和尊严
+* **成熟决策**:如果公司的验证要求与您的隐私价值观冲突,请寻找替代爱好或服务
+
+**[Read Original / 阅读原文](https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos)**
+
+<!-- [Title-Only] -->
+### Zig Zen Update
+
+* Based on the title, this appears to be an update to "Zig Zen" - likely referring to Zig's design principles or philosophy document (similar to Python's "Zen of Python")
+* The commit link suggests this is a code/documentation change in the Zig programming language repository
+* Why it might be interesting: Zig's guiding principles shape the language's direction and design decisions. Any updates to these core tenets could signal shifts in the project's priorities or clarifications of existing philosophy. For developers following Zig or considering adopting it, understanding these principles helps predict future language evolution and evaluate if Zig aligns with their values.
+
+### Zig Zen 更新
+
+* 根据标题推测，这是对"Zig Zen"的更新——可能是指 Zig 的设计原则或哲学文档（类似于 Python 的"Zen of Python"）
+* 提交链接表明这是 Zig 编程语言代码库中的代码/文档变更
+* 为何值得关注：Zig 的指导原则塑造了语言的发展方向和设计决策。对这些核心理念的任何更新都可能标志着项目优先级的转变或对现有哲学的澄清。对于关注 Zig 或考虑采用它的开发者来说，理解这些原则有助于预测语言的未来演进，并评估 Zig 是否符合他们的价值观。
+
+**[Read Original / 阅读原文](https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2)**
+
+### S&P 500 Rejects Fast-Track Entry for SpaceX and AI Giants
+
+* **S&P maintains strict eligibility criteria** - The S&P Dow Jones Indices rejected proposed rule changes that would have allowed mega-cap IPOs like SpaceX, OpenAI, and Anthropic to bypass the standard one-year seasoning period and profitability requirements for S&P 500 inclusion.
+
+* **Massive passive fund implications** - Fast-track entry would have triggered approximately $14 billion in passive fund buying for SpaceX, over $8 billion for OpenAI, and $4.6 billion for Anthropic, driven by $7.5 trillion in funds that track the S&P 500 index.
+
+* **Competitors offer easier access** - While S&P held firm, other major indexes adapted their rules: Nasdaq changed requirements to allow entry within 15 trading days (versus 3 months), and FTSE Russell enabled accelerated entry after just 5 trading days post-IPO.
+
+* **SpaceX valuation concerns** - Morningstar analysts recently valued SpaceX at $780 billion—less than half its $1.75 trillion IPO target—citing the company as "significantly overvalued" despite strong fundamentals in its Starlink satellite service and rocket launch businesses.
+
+* **Limited concessions made** - S&P did modify rules for lower-profile benchmarks like the S&P Total Market Index and Dow Jones US Total Stock Market Index, potentially allowing faster IPO entry into those indexes.
+
+---
+
+### 标普500拒绝SpaceX快速通道，同时阻挡OpenAI和Anthropic入场
+
+* **标普维持严格准入标准** - 标普道琼斯指数拒绝了拟议的规则变更，该变更本可让SpaceX、OpenAI和Anthropic等超大型IPO公司绕过标准的一年观察期和盈利能力要求，直接纳入标普500指数。
+
+* **被动基金购买规模巨大** - 快速通道准入将触发约140亿美元对SpaceX的被动基金购买，OpenAI超80亿美元，Anthropic 46亿美元。这源于追踪标普500指数的7.5万亿美元被动管理基金。
+
+* **竞争对手提供更便捷准入** - 虽然标普坚持原则，但其他主要指数调整了规则：纳斯达克将准入时间改为IPO后15个交易日(原为3个月)，富时罗素允许IPO后仅5个交易日即可加速准入。
+
+* **SpaceX估值存疑** - 晨星分析师近期将SpaceX估值定为7800亿美元——不到其1.75万亿美元IPO目标的一半——认为该公司"严重高估"，尽管其星链卫星服务和火箭发射业务基本面强劲。
+
+* **有限让步** - 标普确实修改了标普全市场指数和道琼斯美国全股票市场指数等较低知名度基准的规则，可能允许IPO更快进入这些指数。
+
+**[Read Original / 阅读原文](https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/)**
 
