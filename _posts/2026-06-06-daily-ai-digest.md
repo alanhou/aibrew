@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 06, 2026"
 date: 2026-06-06
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -591,4 +591,95 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看:** 适合想要在 Excel 仪表板或报告中添加专业外观进度跟踪的用户，只需几秒钟即可让数据可视化更加直观
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vMnYgkHhDJc)**
+
+### Sigma 45mm f/2.8 Lens Repair & Circuit Analysis
+
+* Photographer purchased a non-functioning Sigma 45mm f/2.8 I-series lens on eBay for less than 1/4 of market value as part of a self-imposed buying restriction
+* Lens appeared cosmetically perfect with zero mechanical damage but completely non-responsive electronically when mounted to camera
+* Disassembly revealed a blown SMT fuse (labeled "N") on the control PCB protecting the TI TPS62140RGTR buck converter DC-DC power supply
+* Repair involved tracing power delivery from lens mount contacts through flex cables to identify the faulty 0603-sized fuse in the input power stage
+* Author provides detailed teardown guide including proper tools (JIS screwdrivers, ESD mat, compressed air), screw orientation tracking, and PCB analysis methodology
+* Key lesson: Start PCB troubleshooting by tracing input power rails first, identifying DC-DC converters by their adjacent inductors, and checking fuses on voltage rails
+* Successfully identified replacement as Panasonic ERB-RE2R00V 2A 32V fast-blow fuse based on datasheet current ratings and experience with similar Lumix camera fuses
+
+### Sigma 45mm f/2.8 镜头维修与电路分析
+
+* 摄影师在 eBay 上以低于市场价 1/4 的价格购入一支无法正常工作的 Sigma 45mm f/2.8 I 系列镜头，作为自我限制购买计划的一部分
+* 镜头外观完美无损，无任何机械损伤，但安装到相机后电子系统完全无响应
+* 拆解后发现控制 PCB 板上保护 TI TPS62140RGTR 降压型 DC-DC 电源转换器的贴片保险丝（标记为"N"）已熔断
+* 维修过程包括从镜头卡口触点通过柔性电路板追踪供电路径，最终定位输入电源级的故障 0603 尺寸保险丝
+* 作者提供详细拆解指南，包括正确工具（JIS 螺丝刀、防静电垫、压缩空气）、螺丝方向记录和 PCB 分析方法论
+* 关键经验：PCB 故障排查应首先追踪输入电源轨，通过相邻电感识别 DC-DC 转换器，并检查电压轨上的保险丝
+* 根据数据手册电流额定值和 Lumix 相机保险丝使用经验，成功确定替换件为 Panasonic ERB-RE2R00V 2A 32V 快熔保险丝
+
+**[Read Original / 阅读原文](https://salvagedcircuitry.com/sigma-45mm.html)**
+
+### ABC Classic 100 Rankings Visualization (2001-2021)
+
+* ABC Classic FM has conducted annual Classic 100 listener voting events since 2001, where audiences vote for their favorite classical music pieces
+* This visualization tracks ranking changes across three years: 2001, 2010, and 2021, using dots and connecting lines to show movement
+* Interactive features allow users to click/tap dots to highlight specific pieces and see compositions by the same composer
+* Notable observation: "The Lark Ascending" ranked #2 in 2001, dropped in 2010, then rose again in 2021—literally descending before ascending
+* Created by Alex from Hobart, who personally favors Vivaldi's "La Follia" (though it didn't appear in the dataset)
+
+### ABC古典音乐百大排行榜可视化（2001-2021）
+
+* ABC古典音乐电台自2001年起每年举办古典百大活动，听众投票选出最喜爱的古典音乐作品
+* 该可视化追踪了三个年份（2001、2010、2021）的排名变化，用圆点和连线展示排名走势
+* 交互功能允许用户点击圆点高亮显示特定作品，并查看同一作曲家的其他作品
+* 有趣发现：《云雀高飞》在2001年排名第2，2010年下降，2021年又回升——恰好呼应了曲名的"下降再上升"
+* 作者Alex来自霍巴特，个人最爱维瓦尔第的《疯狂》（虽然该曲未进入数据集）
+
+**[Read Original / 阅读原文](https://classic100.gotski.workers.dev/)**
+
+<!-- [Title-Only] -->
+### Mouseless – keyboard-driven control of macOS/Linux/Windows
+
+* Based on the title, this article likely covers a tool or methodology for controlling your computer primarily through keyboard shortcuts and commands, eliminating or reducing mouse dependency across major operating systems (macOS, Linux, and Windows).
+* Why it might be interesting to readers: For developers and power users who want to increase productivity and reduce context switching, keyboard-driven workflows can significantly speed up common tasks. This cross-platform approach suggests a unified solution that works consistently regardless of your OS, making it valuable for those who work across multiple systems or want to maintain muscle memory when switching platforms.
+
+### Mouseless – 通过键盘驱动控制 macOS/Linux/Windows 系统
+
+* 根据标题推测，这篇文章可能介绍了一个工具或方法论，让用户主要通过键盘快捷键和命令来控制计算机，在主流操作系统（macOS、Linux 和 Windows）上减少或消除对鼠标的依赖。
+* 为何值得关注：对于希望提高生产力并减少上下文切换的开发者和高级用户来说，键盘驱动的工作流程可以显著加快常见任务的执行速度。这种跨平台的方案意味着无论使用哪个操作系统都能获得一致的体验，对于需要在多个系统间工作或希望在切换平台时保持肌肉记忆的用户特别有价值。
+
+**[Read Original / 阅读原文](https://mouseless.click)**
+
+### Memory OS - A 7-Layer Memory Operating System for AI Agents
+
+* **What it does**: Provides persistent, multi-layered memory infrastructure for Hermes Agent, enabling true long-term context retention across conversations. Runs entirely locally with vector search (Qdrant), structured fact storage, session history, and auto-curated knowledge wiki.
+
+* **Key features**: Seven memory layers from workspace files to vector database; surgical context injection with relevance gating; structured facts with trust scoring and feedback loops; semantic deduplication and decay scanning; Ground Truth hierarchy that forces the agent to use injected memory; provider-agnostic (works with OpenRouter, OpenAI, Anthropic, Ollama, local models); one-command installation; no cloud dependencies or memory subscriptions.
+
+* **Why it's notable**: Solves the fundamental problem of AI agent amnesia where agents forget previous conversations and decisions. Unlike cloud-first solutions (mem0, Zep, Letta), Memory OS runs completely locally with full privacy and provider flexibility. The critical innovation is Layer 7 (Ground Truth hierarchy) which ensures the agent actually *uses* the retrieved memory rather than re-querying it wastefully. Built by someone who hit every limitation of existing memory solutions in production use.
+
+---
+
+### Memory OS - Hermes 代理的 7 层记忆操作系统
+
+* **功能介绍**: 为 Hermes Agent 提供持久化的多层记忆基础设施,实现跨对话的真正长期上下文保留。完全本地运行,集成向量搜索(Qdrant)、结构化事实存储、会话历史和自动整理的知识库。
+
+* **主要特点**: 七层记忆架构,从工作区文件到向量数据库;通过相关性门控实现精准上下文注入;带信任评分和反馈循环的结构化事实存储;语义去重和衰减扫描;Ground Truth 层级强制代理使用注入的记忆;与服务商无关(支持 OpenRouter、OpenAI、Anthropic、Ollama、本地模型);一键安装;无云依赖或订阅费用。
+
+* **为何值得关注**: 解决了 AI 代理"健忘症"的根本问题——代理会忘记之前的对话和决策。与云优先的解决方案(mem0、Zep、Letta)不同,Memory OS 完全本地运行,保障隐私且灵活切换服务商。关键创新是第 7 层(Ground Truth 层级),确保代理真正*使用*检索到的记忆,而非浪费资源重复查询。由在生产环境中碰到所有现有记忆方案局限性的开发者打造。
+
+**[View Repository / 查看仓库](https://github.com/ClaudioDrews/memory-os)**
+
+### 🎬 Inviting THAT Guy to the Hackathon
+
+**Channel:** Kai Lentit
+
+* A programming humor sketch about organizing a robotics hackathon sponsored by a Defense Tech VC
+* Explores the comedic dynamics of hackathon team formation and "that guy" everyone knows—likely the overly competitive, intense, or controversial participant
+* Worth watching for developers and robotics enthusiasts who enjoy tech community satire and relatable hackathon culture humor, especially around the emerging Physical AI and defense tech space
+
+### 🎬 邀请"那个人"参加黑客松
+
+**频道:** Kai Lentit
+
+* 一部关于由国防科技风投赞助的机器人黑客松的编程幽默短剧
+* 探讨黑客松团队组建中的喜剧动态,以及每个人都认识的"那个人"——可能是过度竞争、强度过高或有争议的参与者
+* 适合喜欢科技社区讽刺和黑客松文化幽默的开发者和机器人爱好者观看,特别是围绕新兴的物理AI和国防科技领域的内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=EjIzL41eiKc)**
 
