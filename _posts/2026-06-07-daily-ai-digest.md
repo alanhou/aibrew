@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 07, 2026"
 date: 2026-06-07
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -308,4 +308,271 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看: 通过讽刺国防科技资金与创客文化交汇的方式，提供了既有娱乐性又有洞察力的编程幽默内容，展示风投参与如何影响机器人黑客松
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=EjIzL41eiKc)**
+
+<!-- [Title-Only] -->
+### Ntsc-rs – Open-Source Video Emulation of Analog TV and VHS Artifacts
+
+Based on the title, this article likely covers:
+* **Ntsc-rs**, a Rust-based open-source library or tool that simulates the visual characteristics of analog television (NTSC standard) and VHS tape playback
+* Technical implementation details of how it recreates authentic retro video artifacts like color bleeding, scanlines, signal noise, tracking errors, and tape degradation effects
+* Potential use cases for developers, digital artists, and content creators who want to add nostalgic analog aesthetics to modern digital video
+
+Why it might be interesting to readers:
+* Appeals to retro gaming enthusiasts and developers looking to add authentic CRT/VHS effects to their projects
+* Demonstrates practical applications of signal processing and video encoding knowledge
+* Part of the growing trend of "retrowave" aesthetics and digital preservation of analog media characteristics
+* Written in Rust, showcasing modern systems programming applied to vintage technology emulation
+
+---
+
+### Ntsc-rs – 模拟电视和VHS录像带效果的开源视频仿真工具
+
+根据标题推测的文章内容简介：
+* **Ntsc-rs** 是一个基于 Rust 语言开发的开源库或工具，用于模拟模拟电视（NTSC 制式）和 VHS 录像带播放的视觉特征
+* 可能介绍如何技术实现真实的复古视频伪影效果，如色彩溢出、扫描线、信号噪声、磁带追踪错误和磁带老化效果
+* 面向开发者、数字艺术家和内容创作者，帮助他们为现代数字视频添加怀旧的模拟美学效果
+
+为何值得关注：
+* 吸引复古游戏爱好者和希望为项目添加真实 CRT/VHS 效果的开发者
+* 展示了信号处理和视频编码知识的实际应用
+* 契合当前"蒸汽波"美学潮流和模拟媒体特性的数字保存趋势
+* 使用 Rust 编写，展现了现代系统编程语言在复古技术模拟中的应用
+
+**[Read Original / 阅读原文](https://ntsc.rs/)**
+
+### zeroserve: A Zero-Config Web Server You Can Script with eBPF
+
+* **What it is**: zeroserve is a fast, zero-config HTTPS server that serves websites from a single tarball, featuring hot reload and eBPF-based scripting for request middleware
+* **Key features**: Beats nginx on most workloads, runs eBPF scripts in userspace with JIT compilation, uses io_uring throughout, includes modern TLS (1.3, HTTP/2, Encrypted Client Hello), and supports atomic hot reloads via SIGHUP
+* **Novel architecture**: Eliminates traditional config files—eBPF programs ARE the configuration, handling routing, auth, rate limiting, and proxying in a single programmable pipeline
+* **Deployment model**: Entire site lives in one tar file indexed on load; files served via byte-range reads without unpacking to disk; deploys are atomic file swaps
+* **Scripting capabilities**: eBPF scripts run on every request with access to request inspection, crypto, JSON parsing, rate limiting, AWS SigV4, and OIDC login flows
+* **Performance**: On single-core benchmarks over HTTPS, zeroserve delivers 36,681 req/s for small files (17% faster than nginx), 782 MB/s for large files, and competitive throughput for scripted middleware
+* **Safety model**: Scripts run in a pointer-caged memory arena with preemptible execution to prevent one slow script from blocking other connections
+* **Design philosophy**: Collapses nginx's split between declarative config and scripting layers into one unified program-as-configuration model
+
+### zeroserve：可用 eBPF 编写脚本的零配置 Web 服务器
+
+* **产品定位**：zeroserve 是一个快速、零配置的 HTTPS 服务器，从单个 tarball 提供网站服务，具有热重载和基于 eBPF 的请求中间件脚本功能
+* **核心特性**：在大多数工作负载上超越 nginx，在用户态运行 eBPF 脚本并 JIT 编译，全程使用 io_uring，内置现代 TLS（1.3、HTTP/2、加密客户端问候），支持通过 SIGHUP 原子化热重载
+* **创新架构**：取消传统配置文件——eBPF 程序本身就是配置，在单一可编程管道中处理路由、认证、限流和反向代理
+* **部署模型**：整个站点存在于一个 tar 文件中，加载时建立索引；通过字节范围读取提供文件服务，无需解压到磁盘；部署即原子化文件替换
+* **脚本能力**：eBPF 脚本在每个请求上运行，可访问请求检查、加密、JSON 解析、限流、AWS SigV4 和 OIDC 登录流程
+* **性能表现**：在单核 HTTPS 基准测试中，zeroserve 小文件达到 36,681 req/s（比 nginx 快 17%），大文件达到 782 MB/s，脚本中间件吞吐量具有竞争力
+* **安全模型**：脚本在指针笼式内存沙箱中运行，支持可抢占执行以防止单个慢脚本阻塞其他连接
+* **设计理念**：将 nginx 的声明式配置和脚本层分离模式整合为统一的程序即配置模型
+
+**[Read Original / 阅读原文](https://su3.io/posts/introducing-zeroserve)**
+
+### Meta Confirms Thousands of Instagram Accounts Hacked Through AI Chatbot Exploit
+
+* **Breach Scale**: Meta notified at least 20,225 users whose Instagram accounts were compromised through abuse of its AI-assisted account recovery chatbot
+* **Attack Method**: Hackers exploited a vulnerability that allowed them to trick Meta's AI chatbot into sending password reset codes to attacker-controlled email addresses instead of the legitimate account holder's email
+* **Compromised Data**: Attackers gained full account access including contact information, dates of birth, profile data, posts, direct messages, and account activity
+* **Timeline**: The hacking campaign ran from approximately April 17, 2026 until early June when Meta secured the chatbot
+* **Root Cause**: A bug in Meta's code failed to verify that the email address requesting a password reset matched the account's registered email, despite the chatbot tool itself functioning as intended
+* **Target Accounts**: Only accounts without two-factor authentication enabled were vulnerable to this attack
+* **Meta's Response**: The company disabled the AI chatbot, removed the vulnerable code path, and is auditing other chatbots across its platforms to prevent similar incidents
+* **User Impact**: Meta instructed affected users to reset passwords and re-authenticate through secure channels, though the company claims it's "unaware" of what specific personal information was accessed
+* **Context**: The breach occurred amid Meta's mass layoffs of thousands of employees while simultaneously increasing AI investments and executive compensation
+
+### Meta 确认数千个 Instagram 账户因 AI 聊天机器人漏洞被黑
+
+* **泄露规模**: Meta 通知了至少 20,225 名用户,他们的 Instagram 账户因 AI 辅助账户恢复聊天机器人被滥用而遭到入侵
+* **攻击手法**: 黑客利用漏洞诱骗 Meta 的 AI 聊天机器人将密码重置验证码发送到攻击者控制的邮箱地址,而非合法账户持有人的邮箱
+* **泄露数据**: 攻击者获得了完整账户访问权限,包括联系信息、出生日期、个人资料数据、帖子、私信和账户活动记录
+* **时间线**: 黑客攻击活动从 2026 年 4 月 17 日左右持续到 6 月初,Meta 在此时修复了聊天机器人漏洞
+* **根本原因**: Meta 代码中的一个漏洞未能验证请求密码重置的邮箱地址是否与账户注册邮箱匹配,尽管聊天机器人工具本身按预期运行
+* **目标账户**: 只有未启用双因素认证的账户容易受到此类攻击
+* **Meta 的应对**: 公司已禁用该 AI 聊天机器人,移除了存在漏洞的代码路径,并正在审查其平台上的其他聊天机器人以防止类似事件
+* **用户影响**: Meta 指示受影响用户重置密码并通过安全验证渠道重新认证,但公司声称"不清楚"具体访问了哪些个人信息
+* **背景**: 此次泄露发生在 Meta 大规模裁员数千名员工的同时,公司还在增加 AI 投资和高管薪酬
+
+**[Read Original / 阅读原文](https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/)**
+
+### Personal AI Infrastructure - Your Life Operating System Powered by AI
+
+* **What it does**: PAI is a Life Operating System that captures who you are, your goals, and helps you reach your "ideal state" using AI that knows you. It combines three layers: PAI (the OS with skills, memory, and your identity), Pulse (a Life Dashboard at localhost:31337), and your Digital Assistant (DA) that you interact with.
+
+* **Key features**: Uses plain text/Markdown over opaque databases for transparency; context scaffolding that feeds AI the right information about you and your goals; filesystem-based memory without RAG complexity; ISA (Ideal State Artifact) system that defines what "done" looks like for any task; self-improvement loop that learns from outcomes; 45 skills, 171 workflows, and 37 hooks included.
+
+* **Why it's notable**: Released v5.0.0 as a complete Life Operating System (not just AI tooling). Built on the vision that everyone should have a single Digital Assistant as their AI interface. Uses the "current state → ideal state" transition as the core algorithm across all work types. Emphasizes human-first design where AI magnifies people's capabilities rather than replacing them. One-line installation available.
+
+---
+
+### Personal AI Infrastructure - 由 AI 驱动的个人生活操作系统
+
+* **功能介绍**: PAI 是一个生活操作系统,它捕捉你的身份、目标,并使用了解你的 AI 帮助你达到"理想状态"。它结合了三层:PAI(包含技能、记忆和身份的操作系统)、Pulse(本地生活仪表板)和你的数字助手(DA)。
+
+* **主要特点**: 使用纯文本/Markdown 而非不透明数据库,确保透明度;上下文脚手架向 AI 提供关于你和目标的正确信息;基于文件系统的记忆系统,无需 RAG 复杂性;ISA(理想状态工件)系统为任何任务定义"完成"标准;自我改进循环从结果中学习;包含 45 项技能、171 个工作流和 37 个钩子。
+
+* **为何值得关注**: 发布了 v5.0.0 作为完整的生活操作系统(而非仅仅是 AI 工具)。建立在每个人都应该拥有单一数字助手作为 AI 接口的愿景之上。使用"当前状态→理想状态"转换作为所有工作类型的核心算法。强调人类优先设计,AI 放大人的能力而非取代人。提供一键安装。
+
+**[View Repository / 查看仓库](https://github.com/danielmiessler/Personal_AI_Infrastructure)**
+
+### OpenAI Plugins - Curated Collection of Codex Plugin Examples
+
+* **What it does**: A repository containing official plugin examples for OpenAI's Codex development environment, demonstrating how to extend Codex with integrations for design tools, productivity apps, and development workflows.
+
+* **Key features**: 
+  - Rich plugin examples for Figma (design-to-code workflows), Notion (knowledge management), and mobile/web app development
+  - Structured plugin architecture with manifests, skills, MCP configurations, and companion surfaces
+  - Coverage of iOS/macOS/web/React Native development workflows including deployment, debugging, and performance optimization
+  - Integration examples for popular platforms like Netlify, Remotion, Expo, and Google Slides
+
+* **Why it's notable**: This is OpenAI's official showcase of how developers can extend their Codex AI development environment with third-party integrations. With 215 stars today, it's gaining attention as developers explore ways to connect AI coding assistants with their existing tools and workflows, representing the next evolution of AI-assisted development beyond simple code generation.
+
+---
+
+### OpenAI Plugins - Codex 插件示例精选集
+
+* **功能介绍**: OpenAI 官方的 Codex 插件示例仓库,展示如何通过集成设计工具、生产力应用和开发工作流来扩展 Codex 开发环境。
+
+* **主要特点**:
+  - 提供丰富的插件示例,包括 Figma(设计转代码)、Notion(知识管理)和移动端/Web 应用开发
+  - 结构化的插件架构,包含清单文件、技能配置、MCP 集成和配套界面
+  - 覆盖 iOS/macOS/Web/React Native 开发流程,包括部署、调试和性能优化
+  - 集成 Netlify、Remotion、Expo 和 Google Slides 等热门平台的示例
+
+* **为何值得关注**: 这是 OpenAI 官方展示开发者如何通过第三方集成扩展 Codex AI 开发环境的示例库。今日获得 215 star,反映出开发者正在积极探索将 AI 编程助手与现有工具和工作流程连接的方式,代表了 AI 辅助开发从简单代码生成向更深层次集成演进的趋势。
+
+**[View Repository / 查看仓库](https://github.com/openai/plugins)**
+
+### JoyAI-Echo - Pushing the Frontier of Long Audio-Visual Generation
+
+**What it does**
+* Generates minute-level, multi-shot videos (up to 5 minutes) with synchronized audio from text prompts
+* Uses a cross-modal memory bank to maintain character appearance and voice consistency across shots
+* Provides 7.5× speedup through DMD (Distribution Matching Distillation) for near-real-time inference
+* Produces coherent long-form narrative videos with story-level continuity
+
+**Key features**
+* **Paired cross-modal memory**: Preserves visual identity and voice timbre across the entire video sequence
+* **Joint audio-video generation**: Single pipeline produces synchronized video and audio output
+* **Multi-shot storytelling**: Creates sequences of coherent shots from structured JSON prompts
+* **Fast inference**: Distilled few-step generation dramatically reduces latency compared to traditional diffusion methods
+* **Detailed prompt structure**: Supports rich descriptions including roles, actions, dialogue, camera movement, style, and sound effects
+
+**Why it's notable**
+* Addresses critical challenges in long video generation: error accumulation, temporal coherence, and computational cost
+* Outperforms HappyOyster on long-form generation and surpasses Wan 2.6 on human-centric tasks in user studies
+* First system to simultaneously achieve long-range consistency, real-time inference, conversational interactivity, and high-resolution output
+* Built by JD.com's open-source team, targeting practical applications in interactive video creation
+* Released with full inference code and weights (46GB model + 24GB text encoder)
+
+---
+
+### JoyAI-Echo - 突破长视频音频生成的前沿技术
+
+**功能介绍**
+* 从文本提示生成分钟级多镜头视频(最长5分钟),配有同步音频
+* 使用跨模态记忆库在镜头间保持角色外观和声音音色的一致性
+* 通过DMD(分布匹配蒸馏)实现7.5倍加速,接近实时推理
+* 生成具有故事级连贯性的长篇叙事视频
+
+**主要特点**
+* **配对跨模态记忆**:在整个视频序列中保留视觉身份和声音特征
+* **联合音视频生成**:单一管道同时生成同步的视频和音频输出
+* **多镜头叙事**:从结构化JSON提示创建连贯的镜头序列
+* **快速推理**:蒸馏的少步生成大幅降低延迟
+* **详细提示结构**:支持丰富描述,包括角色、动作、对话、镜头运动、风格和音效
+
+**为何值得关注**
+* 解决长视频生成的关键挑战:误差累积、时间连贯性和计算成本
+* 在用户研究中,长视频生成优于HappyOyster,人物相关任务超越Wan 2.6
+* 首个同时实现长程一致性、实时推理、对话交互和高分辨率输出的系统
+* 由京东开源团队构建,针对交互式视频创作的实际应用
+* 完整发布推理代码和权重(46GB模型 + 24GB文本编码器)
+
+**[View Repository / 查看仓库](https://github.com/jd-opensource/JoyAI-Echo)**
+
+### chokepoint-atlas - AI Supply Chain Bottleneck Analysis for US Stocks
+
+* **What it does**: A research tool that systematically analyzes AI industry supply chains to identify critical bottlenecks and chokepoint companies in US equity markets. Instead of chasing meme stocks, it deconstructs complex systems (like NVIDIA AI factories, TPU pods, robotics actuators) layer by layer to find which companies control irreplaceable positions in the value chain.
+
+* **Key features**: Four-stage methodology: (1) select a real system to analyze, (2) decompose it into upstream/downstream components, (3) identify genuine chokepoints where demand could overwhelm supply, (4) extract evidence from earnings calls, filings, and research reports into structured research packs. Includes three workflow modes: single research lane analysis, multi-lane comparison for prioritization, and raw material processing into structured outputs.
+
+* **Why it's notable**: Transforms popular investment narratives into rigorous supply chain research rather than superficial stock picks. Particularly valuable for identifying "second-layer" and "third-layer" bottleneck opportunities with higher elasticity than obvious mega-cap plays. The structured output (evidence memos, supply chain graphs, scorecards, catalyst watches) makes it a proper research automation tool, not just a summarization assistant.
+
+---
+
+### chokepoint-atlas - AI 供应链瓶颈美股研究工具
+
+* **功能介绍**: 一个系统化分析 AI 产业链供应瓶颈的美股研究工具。不是追热门概念股,而是将复杂系统(如英伟达 AI 工厂、TPU 集群、机器人执行器)逐层拆解,找出哪些公司占据产业链中无法替代的卡脖子位置。
+
+* **主要特点**: 四步研究方法论:(1)选定真实系统,(2)拆解上下游组件,(3)识别真正的供需瓶颈点,(4)从财报电话会、监管文件、研报中提取证据并结构化输出。提供三种工作流:单条研究线深度分析、多条研究线横向比较排优先级、原始材料直接整理成研究包。
+
+* **为何值得关注**: 将投资叙事转化为严谨的供应链研究,而非表面选股。特别适合发掘"第二层""第三层"瓶颈机会,这些标的往往比明显的大盘股具有更高弹性。结构化产出(证据备忘录、供应链图谱、评分卡、催化剂监控)使其成为真正的研究自动化工具,而非简单的内容摘要助手。590 stars 反映了量化投资者和产业研究人员对系统化方法论的需求。
+
+**[View Repository / 查看仓库](https://github.com/qiuqiubuchongle-cloud/chokepoint-atlas)**
+
+### 🎬 A 10-mile ride turned into a 1,000-mile spiritual quest - Adam Brown
+**Channel:** Dwarkesh Patel
+
+* What the video covers: Adam Brown shares a transformative journey that began as a simple 10-mile ride but evolved into an epic 1,000-mile adventure with profound personal significance
+* Key topics discussed: The unexpected expansion of a modest goal into a life-changing expedition; the spiritual and philosophical insights gained through long-distance travel; how physical journeys can mirror inner transformation
+* Why it's worth watching: This conversation explores the intersection of physical endurance and personal growth, offering insights into how stepping outside comfort zones can lead to unexpected discoveries about ourselves and the world
+
+---
+
+### 🎬 从10英里骑行到1000英里的心灵之旅 - Adam Brown
+**频道:** Dwarkesh Patel
+
+* 视频内容概述: Adam Brown分享了一段变革性的旅程，最初只是一次简单的10英里骑行，却演变成了一场具有深刻个人意义的史诗般的1000英里冒险
+* 主要话题: 一个modest目标如何意外扩展为改变人生的远征；长途旅行中获得的精神和哲学洞见；身体旅程如何映射内在转变
+* 为何值得观看: 这次对话探讨了身体耐力与个人成长的交汇点，揭示了走出舒适区如何能够带来关于自我和世界的意外发现
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=zh0CuHT3fvc)**
+
+### 🎬 Best FREE AI Agent Tools That Actually Work in 2026 (I Tried All)
+**Channel:** Mikey No Code
+
+* What the video covers: A comprehensive hands-on review of free AI agent tools available in 2026, with real-world testing results
+* Key topics discussed: Comparison of multiple AI agent platforms, feature analysis, practical use cases, and performance testing across different free tools
+* Why it's worth watching: The creator personally tested all the tools instead of just listing them, providing authentic insights into which free AI agent solutions actually deliver value. Particularly useful for developers and no-code builders looking to implement AI agents without upfront costs.
+
+---
+
+### 🎬 2026年最佳免费AI智能体工具实测（我全都试过了）
+**频道:** Mikey No Code
+
+* 视频内容概述: 对2026年可用的免费AI智能体工具进行全面实测评测，提供真实使用结果
+* 主要话题: 多个AI智能体平台对比、功能分析、实际应用场景、以及不同免费工具的性能测试
+* 为何值得观看: 创作者亲自测试了所有工具而非仅仅罗列清单，提供了关于哪些免费AI智能体解决方案真正有价值的真实见解。特别适合希望零成本实现AI智能体的开发者和无代码构建者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2GOfWK5M3fg)**
+
+### 🎬 The DOCTER !! #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* A short-form coding video featuring Python programming
+* Likely demonstrates a quick coding trick, concept, or humorous take on programming (given the "DOCTER" title and shorts format)
+* Worth watching for: bite-sized Python content, quick learning moments, or entertainment for developers during short breaks
+
+---
+
+### 🎬 编程医生 !! #coding #programming #shorts #python
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘇
+
+* 一个关于 Python 编程的短视频
+* 可能展示了快速编程技巧、概念或编程相关的幽默内容(从"DOCTER"标题和短视频格式推测)
+* 为何值得观看:适合碎片时间学习 Python 知识点,或作为开发者的轻松娱乐内容
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=rn0bjXtk-Ug)**
+
+### 🎬 It's Not Your Fault... #coding #programming #shorts #python
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* What the video covers: A short-form motivational piece addressing common frustrations developers face while coding and programming
+* Key topics discussed: Developer struggles, coding challenges, mindset around programming difficulties (likely in Python context)
+* Why it's worth watching: Quick encouragement for developers feeling discouraged—reminds viewers that coding struggles are normal and not personal failures; especially relevant for beginners learning Python
+
+### 🎬 这不是你的错... #编程 #程序设计 #短视频 #Python
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+
+* 视频内容概述: 一个简短的励志内容,讨论开发者在编程过程中常遇到的挫折感
+* 主要话题: 开发者的困难、编程挑战、面对编程难题的心态(可能涉及Python相关内容)
+* 为何值得观看: 为感到沮丧的开发者提供快速鼓励——提醒观众编程遇到困难是正常现象,不是个人能力问题;特别适合正在学习Python的初学者
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lPLtspmfbGA)**
 
