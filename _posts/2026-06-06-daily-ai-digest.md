@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 06, 2026"
 date: 2026-06-06
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -583,78 +583,6 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 
 ---
 
-### 🧠 几秒钟在 Excel 中制作进度条
-**频道:** Ofimatip
-
-* **视频内容概述:** 快速教程，教你用简单快速的方法在 Excel 中创建进度条
-* **主要话题:** 在电子表格中构建可视化进度指示器的分步说明，可能使用条件格式或公式
-* **为何值得观看:** 适合想要在 Excel 仪表板或报告中添加专业外观进度跟踪的用户，只需几秒钟即可让数据可视化更加直观
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vMnYgkHhDJc)**
-
-### Sigma 45mm f/2.8 Lens Repair & Circuit Analysis
-
-* Photographer purchased a non-functioning Sigma 45mm f/2.8 I-series lens on eBay for less than 1/4 of market value as part of a self-imposed buying restriction
-* Lens appeared cosmetically perfect with zero mechanical damage but completely non-responsive electronically when mounted to camera
-* Disassembly revealed a blown SMT fuse (labeled "N") on the control PCB protecting the TI TPS62140RGTR buck converter DC-DC power supply
-* Repair involved tracing power delivery from lens mount contacts through flex cables to identify the faulty 0603-sized fuse in the input power stage
-* Author provides detailed teardown guide including proper tools (JIS screwdrivers, ESD mat, compressed air), screw orientation tracking, and PCB analysis methodology
-* Key lesson: Start PCB troubleshooting by tracing input power rails first, identifying DC-DC converters by their adjacent inductors, and checking fuses on voltage rails
-* Successfully identified replacement as Panasonic ERB-RE2R00V 2A 32V fast-blow fuse based on datasheet current ratings and experience with similar Lumix camera fuses
-
-### Sigma 45mm f/2.8 镜头维修与电路分析
-
-* 摄影师在 eBay 上以低于市场价 1/4 的价格购入一支无法正常工作的 Sigma 45mm f/2.8 I 系列镜头，作为自我限制购买计划的一部分
-* 镜头外观完美无损，无任何机械损伤，但安装到相机后电子系统完全无响应
-* 拆解后发现控制 PCB 板上保护 TI TPS62140RGTR 降压型 DC-DC 电源转换器的贴片保险丝（标记为"N"）已熔断
-* 维修过程包括从镜头卡口触点通过柔性电路板追踪供电路径，最终定位输入电源级的故障 0603 尺寸保险丝
-* 作者提供详细拆解指南，包括正确工具（JIS 螺丝刀、防静电垫、压缩空气）、螺丝方向记录和 PCB 分析方法论
-* 关键经验：PCB 故障排查应首先追踪输入电源轨，通过相邻电感识别 DC-DC 转换器，并检查电压轨上的保险丝
-* 根据数据手册电流额定值和 Lumix 相机保险丝使用经验，成功确定替换件为 Panasonic ERB-RE2R00V 2A 32V 快熔保险丝
-
-**[Read Original / 阅读原文](https://salvagedcircuitry.com/sigma-45mm.html)**
-
-### ABC Classic 100 Rankings Visualization (2001-2021)
-
-* ABC Classic FM has conducted annual Classic 100 listener voting events since 2001, where audiences vote for their favorite classical music pieces
-* This visualization tracks ranking changes across three years: 2001, 2010, and 2021, using dots and connecting lines to show movement
-* Interactive features allow users to click/tap dots to highlight specific pieces and see compositions by the same composer
-* Notable observation: "The Lark Ascending" ranked #2 in 2001, dropped in 2010, then rose again in 2021—literally descending before ascending
-* Created by Alex from Hobart, who personally favors Vivaldi's "La Follia" (though it didn't appear in the dataset)
-
-### ABC古典音乐百大排行榜可视化（2001-2021）
-
-* ABC古典音乐电台自2001年起每年举办古典百大活动，听众投票选出最喜爱的古典音乐作品
-* 该可视化追踪了三个年份（2001、2010、2021）的排名变化，用圆点和连线展示排名走势
-* 交互功能允许用户点击圆点高亮显示特定作品，并查看同一作曲家的其他作品
-* 有趣发现：《云雀高飞》在2001年排名第2，2010年下降，2021年又回升——恰好呼应了曲名的"下降再上升"
-* 作者Alex来自霍巴特，个人最爱维瓦尔第的《疯狂》（虽然该曲未进入数据集）
-
-**[Read Original / 阅读原文](https://classic100.gotski.workers.dev/)**
-
-<!-- [Title-Only] -->
-### Mouseless – keyboard-driven control of macOS/Linux/Windows
-
-* Based on the title, this article likely covers a tool or methodology for controlling your computer primarily through keyboard shortcuts and commands, eliminating or reducing mouse dependency across major operating systems (macOS, Linux, and Windows).
-* Why it might be interesting to readers: For developers and power users who want to increase productivity and reduce context switching, keyboard-driven workflows can significantly speed up common tasks. This cross-platform approach suggests a unified solution that works consistently regardless of your OS, making it valuable for those who work across multiple systems or want to maintain muscle memory when switching platforms.
-
-### Mouseless – 通过键盘驱动控制 macOS/Linux/Windows 系统
-
-* 根据标题推测，这篇文章可能介绍了一个工具或方法论，让用户主要通过键盘快捷键和命令来控制计算机，在主流操作系统（macOS、Linux 和 Windows）上减少或消除对鼠标的依赖。
-* 为何值得关注：对于希望提高生产力并减少上下文切换的开发者和高级用户来说，键盘驱动的工作流程可以显著加快常见任务的执行速度。这种跨平台的方案意味着无论使用哪个操作系统都能获得一致的体验，对于需要在多个系统间工作或希望在切换平台时保持肌肉记忆的用户特别有价值。
-
-**[Read Original / 阅读原文](https://mouseless.click)**
-
-### Memory OS - A 7-Layer Memory Operating System for AI Agents
-
-* **What it does**: Provides persistent, multi-layered memory infrastructure for Hermes Agent, enabling true long-term context retention across conversations. Runs entirely locally with vector search (Qdrant), structured fact storage, session history, and auto-curated knowledge wiki.
-
-* **Key features**: Seven memory layers from workspace files to vector database; surgical context injection with relevance gating; structured facts with trust scoring and feedback loops; semantic deduplication and decay scanning; Ground Truth hierarchy that forces the agent to use injected memory; provider-agnostic (works with OpenRouter, OpenAI, Anthropic, Ollama, local models); one-command installation; no cloud dependencies or memory subscriptions.
-
-* **Why it's notable**: Solves the fundamental problem of AI agent amnesia where agents forget previous conversations and decisions. Unlike cloud-first solutions (mem0, Zep, Letta), Memory OS runs completely locally with full privacy and provider flexibility. The critical innovation is Layer 7 (Ground Truth hierarchy) which ensures the agent actually *uses* the retrieved memory rather than re-querying it wastefully. Built by someone who hit every limitation of existing memory solutions in production use.
-
----
-
 ### Memory OS - Hermes 代理的 7 层记忆操作系统
 
 * **功能介绍**: 为 Hermes Agent 提供持久化的多层记忆基础设施,实现跨对话的真正长期上下文保留。完全本地运行,集成向量搜索(Qdrant)、结构化事实存储、会话历史和自动整理的知识库。
@@ -682,4 +610,78 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 适合喜欢科技社区讽刺和黑客松文化幽默的开发者和机器人爱好者观看,特别是围绕新兴的物理AI和国防科技领域的内容
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=EjIzL41eiKc)**
+
+### How LLMs Actually Work: A Deep Dive into Transformer Architecture
+
+* **Tokenization converts text to integers** - Models don't read text directly; tokenizers split text into subword pieces and map them to integer IDs from a fixed vocabulary (typically 10,000-100,000+ entries)
+* **Embeddings give meaning to tokens** - Each token ID looks up a learned vector from an embedding matrix, where semantically similar tokens cluster together in high-dimensional space
+* **Positional encoding adds sequence order** - Modern models use RoPE (Rotary Position Embeddings) to encode token positions by rotating vectors, enabling the model to understand word order and relative distances
+* **Attention enables information exchange** - Each token generates Query, Key, and Value vectors; tokens match queries against keys to determine which information to share
+* **Multi-head attention tracks multiple relationships** - Multiple attention heads run in parallel, allowing the model to track different semantic patterns simultaneously
+* **Feed-forward networks store knowledge** - Large multilayer perceptrons (MLPs) after attention layers contain much of the model's learned factual knowledge and patterns
+* **Residual connections and layer normalization enable deep stacks** - Skip connections preserve information flow and layer norm stabilizes training across dozens of transformer blocks
+* **Next-token prediction drives generation** - The model outputs probability distributions over vocabulary tokens, sampling or selecting the most likely next token iteratively
+* **Architecture vs weights separates design from learning** - Most modern LLMs share similar transformer architectures; differences come from training data, scale, configuration choices, and post-training refinement
+
+### 大语言模型的实际工作原理：Transformer架构深度解析
+
+* **分词将文本转换为整数** - 模型不直接读取文本；分词器将文本切分为子词片段，并映射到固定词汇表中的整数ID（通常包含1万到10万+条目）
+* **嵌入向量赋予token含义** - 每个token ID从嵌入矩阵中查找学习到的向量，语义相似的token在高维空间中聚类
+* **位置编码添加序列顺序信息** - 现代模型使用RoPE（旋转位置嵌入）通过旋转向量编码token位置，使模型理解词序和相对距离
+* **注意力机制实现信息交换** - 每个token生成查询、键和值向量；token通过匹配查询和键来决定共享哪些信息
+* **多头注意力追踪多种关系** - 多个注意力头并行运行，允许模型同时追踪不同的语义模式
+* **前馈网络存储知识** - 注意力层之后的大型多层感知器（MLP）包含模型学习到的大部分事实知识和模式
+* **残差连接和层归一化支持深度堆叠** - 跳跃连接保持信息流动，层归一化在数十个transformer块中稳定训练
+* **下一个token预测驱动生成** - 模型输出词汇表上的概率分布，通过采样或选择最可能的下一个token迭代生成
+* **架构与权重分离设计和学习** - 大多数现代LLM共享相似的transformer架构；差异来自训练数据、规模、配置选择和后训练调优
+
+**[Read Original / 阅读原文](https://www.0xkato.xyz/how-llms-actually-work/)**
+
+### Sigma 45mm f/2.8 Lens Repair & Analysis | PCB Troubleshooting Guide
+
+* A broken Sigma 45mm f/2.8 I-series lens was purchased on eBay for under 1/4 retail price with zero mechanical damage but non-functional electronic controls
+* Initial diagnosis revealed the lens mounted stiffly but displayed a live image, though no dials, switches, or electronic controls responded to input
+* Disassembly involved removing the rear beauty spacer, lens mount bayonet with shims, and C-shaped control PCB using standard tools including JIS screwdrivers and ESD-safe workspace
+* The control PCB features a main microcontroller, TI TPS62140RGTR buck DC-DC converter, motor controller, crystal oscillator, and connects via a fragile 10-terminal flexible polyimide cable
+* Power trace analysis revealed a blown SMT fuse (labeled "N") on the input voltage rail that protected the DC-DC converter from damage
+* The fuse was identified as a 0603-sized, 2A rated fast-blow fuse and replaced with a Panasonic ERB-RE2R00V (2A, 32V) based on similar components used in Lumix cameras
+* Key repair approach: trace input power from lens terminal block through flex cable to DC-DC converter, identifying the chunky inductor (2.2µH) as a telltale sign of the power stage
+* Disassembly tips include carefully handling the flex cable (prone to tearing), using double-sided tape to track screw orientation, and checking continuity before proceeding with diagnosis
+
+### Sigma 45mm f/2.8 镜头维修与分析 | PCB 故障排除指南
+
+* 在 eBay 上以低于零售价 1/4 的价格购买了一支损坏的 Sigma 45mm f/2.8 I 系列镜头，外观无机械损伤但电子控制功能完全失效
+* 初步诊断显示镜头安装困难但能显示实时图像，然而所有拨盘、开关和电子控制均无响应
+* 拆解过程包括拆除后部装饰环、带垫片的镜头卡口，以及 C 型控制 PCB，使用标准工具如 JIS 螺丝刀和防静电工作台
+* 控制 PCB 包含主微控制器、TI TPS62140RGTR 降压 DC-DC 转换器、电机控制器、晶振，并通过易损的 10 端子柔性聚酰亚胺排线连接
+* 电源走线分析发现输入电压轨上的 SMT 保险丝(标记为"N")已熔断，成功保护了 DC-DC 转换器免受损坏
+* 该保险丝被识别为 0603 封装、2A 额定快熔保险丝，根据 Lumix 相机中使用的类似元件，更换为松下 ERB-RE2R00V(2A, 32V)
+* 关键维修方法：从镜头端子座追踪输入电源，通过排线到达 DC-DC 转换器，识别大块电感器(2.2µH)作为电源级的明显标志
+* 拆解技巧包括小心处理易撕裂的排线、使用双面胶记录螺丝方向、在继续诊断前检查导通性
+
+**[Read Original / 阅读原文](https://salvagedcircuitry.com/sigma-45mm.html)**
+
+### Pre-Modern Military Systems: How Societies Shape Their Armies
+
+* Explores how pre-industrial societies develop military systems that fundamentally reflect their civilian social structures and hierarchies
+* Key factors include whether a society is agrarian, whether it has a centralized state, the nature of its aristocracy, and how farmers relate to elites
+* Distinguishes between "military aristocrats" (leadership-focused) and "warrior aristocrats" (personally fighting, usually mounted)
+* Emphasizes that armies cannot help but recreate civilian social structures on the battlefield
+* Pre-industrial armies show recurring organizational patterns across diverse societies, unlike the limited models in industrial warfare
+* Understanding military recruitment, financing, leadership, and cohesion requires first analyzing the underlying civilian society
+* Aristocratic wealth typically flows upward from landholdings rather than downward from bureaucratic employment
+* The relationship between peasant farmers (90%+ of population) and aristocracy determines how military force is extracted and organized
+
+### 前现代军事系统:社会如何塑造其军队
+
+* 探讨前工业社会如何发展出从根本上反映其民间社会结构和等级制度的军事系统
+* 关键因素包括社会是否以农业为主、是否有集中的国家、贵族的性质以及农民与精英的关系
+* 区分"军事贵族"(侧重领导)和"战士贵族"(亲自战斗,通常是骑兵)
+* 强调军队必然会在战场上重现民间社会结构
+* 前工业时代军队在不同社会中显示出反复出现的组织模式,不同于工业战争中有限的模式
+* 理解军事招募、融资、领导和凝聚力需要首先分析底层民间社会
+* 贵族财富通常从土地所有权向上流动,而非从官僚职位向下流动
+* 农民(占人口90%以上)与贵族之间的关系决定了如何提取和组织军事力量
+
+**[Read Original / 阅读原文](https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/)**
 
