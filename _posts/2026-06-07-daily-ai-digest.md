@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 07, 2026"
 date: 2026-06-07
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -729,4 +729,95 @@ Why it might be interesting to readers:
 * **为何值得观看:** 提供了 AI 辅助开发的真实规模化案例，展示现代 AI 编程工具如何显著加速软件开发。对想了解 AI 结对编程工具的开发者、探索快速原型开发的创业者，以及对软件产品实际经济效益感兴趣的人都很有价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Sxwlgph60Os)**
+
+<!-- [Title-Only] -->
+### The 29th International Obfuscated C Code Contest (IOCCC) 2025 Winners
+
+**Based on the title, this article likely covers:**
+* The winning entries from the 2025 International Obfuscated C Code Contest, showcasing the most creatively obscured yet functional C programs
+* Examples of ingeniously written code that pushes the boundaries of C language syntax while remaining compilable and executable
+* Categories and criteria used to judge submissions, such as most creative abuse of the C preprocessor, best one-liner, or most artistic layout
+
+**Why it might be interesting to readers:**
+* IOCCC is a legendary programming competition that celebrates creative coding and deep language knowledge
+* The winning entries often demonstrate surprising computer science concepts hidden within seemingly incomprehensible code
+* It's both educational and entertaining—readers can learn advanced C techniques while appreciating the artistry of code golf and obfuscation
+* Historical context: IOCCC has been running since 1984, making it one of the longest-running programming competitions
+
+---
+
+### 第29届国际C语言混乱代码大赛（IOCCC）2025年获奖作品
+
+**根据标题推测的文章内容：**
+* 2025年国际C语言混乱代码大赛的获奖作品展示，呈现最具创意的模糊化但功能完整的C程序
+* 巧妙编写的代码示例，在保持可编译和可执行的同时突破C语言语法的极限
+* 评审标准和分类，如最具创意的预处理器滥用、最佳单行代码或最具艺术性的代码布局
+
+**为何值得关注：**
+* IOCCC是传奇性的编程竞赛，颂扬创意编程和深厚的语言功底
+* 获奖作品常常在看似难以理解的代码中展示令人惊讶的计算机科学概念
+* 兼具教育性和娱乐性——读者既能学习高级C语言技巧，又能欣赏代码高尔夫和混淆技术的艺术性
+* 历史意义：IOCCC自1984年至今，是运行时间最长的编程竞赛之一
+
+**[Read Original / 阅读原文](https://www.ioccc.org/2025/)**
+
+### AI-Powered Design: From Figma Skeptic to Claude Advocate
+
+* **Initial skepticism overcome**: Designer was initially disappointed with LLMs (Copilot, Cursor, Gemini) when applying them to tasks they already excelled at, but found them indispensable when learning new technologies like OCaml and Bonsai at Jane Street.
+
+* **Revolutionary design workflow**: Instead of traditional spec docs and Figma mockups, now builds working prototypes directly in code—describing the problem, using Claude to implement, iterating freely, and submitting fully functional features.
+
+* **Prototype advantages**: Real working prototypes (like LLM-powered JSQL input) allow unlimited iteration without engineering back-and-forth, with all effort going into the actual artifact rather than ancillary documentation or mockup work.
+
+* **Designer empowerment**: Claude enables designers to create working proofs of concept independently, eliminating the need to convince engineers to build prototypes and making ideas easier for stakeholders to evaluate through direct use.
+
+* **Workflow challenges**: Presenting fully-baked features creates ambiguity around code review expectations; solution involves treating prototypes as "living proposal docs" with disposable code that reviewers critique for design/UX rather than implementation.
+
+* **Creative constraints concern**: Fear that designing with Claude may limit creative exploration to iterative improvements rather than breakthrough ideas, especially for new projects requiring fluid, unconstrained thinking.
+
+* **Full-circle journey**: Echoes the "should designers code" debate from 2011—after moving from coding to Figma specialization as frontend became complex, LLMs now enable return to "making the real thing" without deep technical expertise in OCaml/Bonsai.
+
+---
+
+### AI 驱动设计：从 Figma 怀疑者到 Claude 拥护者
+
+* **克服最初的怀疑**：设计师最初对 LLMs（Copilot、Cursor、Gemini）感到失望，因为在自己擅长的任务上它们表现不佳，但在 Jane Street 学习 OCaml 和 Bonsai 等新技术时发现 AI 不可或缺。
+
+* **革命性设计工作流**：不再使用传统的规格文档和 Figma 原型，而是直接用代码构建可用原型——描述问题、使用 Claude 实现、自由迭代、提交完全功能性的特性。
+
+* **原型优势**：真实可用的原型（如 LLM 驱动的 JSQL 输入）允许无限迭代而无需工程师来回沟通，所有精力都投入实际产物而非辅助文档或原型制作工作。
+
+* **设计师赋能**：Claude 使设计师能够独立创建可用的概念验证，无需说服工程师构建原型，通过直接使用让利益相关者更容易评估想法。
+
+* **工作流挑战**：呈现完全成型的功能会造成代码审查期望的模糊；解决方案是将原型视为"活文档提案"，代码可抛弃，审查者针对设计/用户体验而非实现提供反馈。
+
+* **创造性约束担忧**：担心用 Claude 设计可能限制创意探索为迭代改进，而非突破性想法，特别是在需要流畅、无约束思考的新项目中。
+
+* **回归本源之旅**：呼应 2011 年"设计师是否应该编码"的辩论——从编码到因前端复杂化专注 Figma，现在 LLMs 使其无需深入掌握 OCaml/Bonsai 技术就能回归"制作真实产品"。
+
+**[Read Original / 阅读原文](https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/)**
+
+### GameNetworkingSockets: Valve's Open-Source Game Transport Layer
+
+* **Purpose**: A sophisticated transport layer library for games, offering a connection-oriented API with message-oriented delivery (combining TCP-like reliability with UDP-like messaging)
+* **Key Features**: Supports both reliable and unreliable messages, handles fragmentation/reassembly, implements advanced reliability layer based on DCCP/QUIC "ack vector" model, includes AES-GCM-256 encryption with Curve25519 key exchange
+* **Network Capabilities**: Peer-to-peer networking with NAT traversal via WebRTC ICE, IPv6 support, packet latency/loss simulation tools, head-of-line blocking control with bandwidth sharing across multiple message streams ("lanes")
+* **Cross-Platform**: Ships on consoles, mobile platforms, and non-Steam stores with cross-platform connectivity support (contact Valve for platform-specific code)
+* **Not Included**: Does not handle higher-level serialization, entity delta encoding, or compression
+* **Language Support**: Written in C++ with plain C interface; third-party bindings available for C#, Go, and Rust
+* **Steam Integration**: Named after Steamworks SDK API but Steam is not required; can be used independently under permissive license, or with Steam Datagram Relay services when shipping on Steam
+* **Open Source**: Available on GitHub with CI/CD pipelines for Ubuntu, Windows, macOS, includes example chat application and P2P test code
+
+### GameNetworkingSockets: Valve 开源游戏传输层库
+
+* **项目定位**:面向游戏的高级传输层库,提供面向连接的 API 和面向消息的传输(结合了 TCP 的可靠性和 UDP 的消息特性)
+* **核心功能**:支持可靠和不可靠消息类型,处理消息分片/重组,实现基于 DCCP/QUIC "确认向量"模型的先进可靠性层,采用 AES-GCM-256 加密和 Curve25519 密钥交换
+* **网络能力**:点对点网络支持,通过 WebRTC ICE 实现 NAT 穿透,支持 IPv6,提供数据包延迟/丢失模拟工具,多消息流("通道")的队头阻塞控制和带宽共享
+* **跨平台支持**:已在游戏主机、移动平台和非 Steam 商店发布,支持跨平台连接(需联系 Valve 获取特定平台代码)
+* **不包含功能**:不处理高级序列化、实体增量编码或压缩
+* **语言支持**:C++ 编写,提供纯 C 接口;有 C#、Go 和 Rust 的第三方绑定
+* **Steam 集成**:命名源自 Steamworks SDK API 但不依赖 Steam;可独立使用(宽松许可证),在 Steam 发行时可使用 Steam Datagram Relay 服务
+* **开源项目**:托管在 GitHub,包含 Ubuntu、Windows、macOS 的 CI/CD 流程,提供聊天示例应用和 P2P 测试代码
+
+**[Read Original / 阅读原文](https://github.com/ValveSoftware/GameNetworkingSockets/issues/398)**
 
