@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 07, 2026"
 date: 2026-06-07
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -820,4 +820,83 @@ Why it might be interesting to readers:
 * **开源项目**:托管在 GitHub,包含 Ubuntu、Windows、macOS 的 CI/CD 流程,提供聊天示例应用和 P2P 测试代码
 
 **[Read Original / 阅读原文](https://github.com/ValveSoftware/GameNetworkingSockets/issues/398)**
+
+### Speculative KV Coding: Lossless Compression of LLM Cache Using a Predictor Model
+
+* **The Problem**: LLM context windows are growing rapidly, and KV caching trades compute for memory but storing/moving large caches dominates cost at scale
+* **Lossy vs Lossless**: Existing methods like TurboQuant use lossy compression (lower bit-width) with unpredictable quality degradation; lossless methods reconstruct the cache exactly
+* **Current Limits**: Bytewise entropy of bf16 cache is ~11 bits per scalar (30% smaller than raw); low-precision formats like FP4 are already near saturation (5-7% from limit)
+* **Speculative KV Coding**: New method compresses target model's KV cache by up to ~4× (on top of fp8, ~8× total) using a cheaper "predictor model" that forecasts the cache
+* **How It Works**: Inspired by speculative decoding—predictor model runs in parallel, arithmetic coder encodes true cache at bitrate determined by predictor accuracy
+* **Key Insight**: KV cache is deterministic output of forward pass, not random—true distribution is a delta function with zero entropy, so all bits spent are KL divergence
+* **Compression Formula**: Bitrate = -ln q(KV_true), directly measuring how much probability mass the predictor assigns to the actual cache values
+
+---
+
+### 推测式 KV 编码：使用预测模型实现 KV 缓存的无损压缩（最高约 4 倍）
+
+* **核心问题**：大语言模型的上下文窗口快速增长，KV 缓存虽以内存换算力，但在超长上下文场景下存储和传输缓存成为主要瓶颈
+* **有损 vs 无损**：现有方案如 TurboQuant 采用有损压缩（降低位宽），质量下降不可预测；无损方法可完全重建缓存
+* **当前压缩极限**：bf16 缓存的字节熵约为每标量 11 比特（比原始表示小 30%）；FP4 等低精度格式已接近饱和（距极限 5-7%）
+* **推测式 KV 编码**：新方法使用更廉价的"预测模型"预测目标模型缓存，实现最高约 4 倍压缩（叠加 fp8 后总计约 8 倍）
+* **工作原理**：借鉴推测解码思想——预测模型并行运行，算术编码器根据预测准确度对真实缓存编码
+* **关键洞察**：KV 缓存是前向传播的确定性输出而非随机源，真实分布是零熵的 delta 函数，所有比特开销均为 KL 散度
+* **压缩公式**：比特率 = -ln q(KV_true)，直接衡量预测模型对真实缓存值分配的概率质量
+
+**[Read Original / 阅读原文](https://fergusfinn.com/blog/kv-entropy-coder/)**
+
+### Win16 Memory Management: A Deep Dive into 16-bit Windows Architecture
+
+* **Historical Context**: Windows 1.x/2.x memory management rooted in 8086 real mode, with complexity persisting through Windows 3.1's protected mode era
+* **Core Concept**: Windows functioned as a sophisticated overlay manager, keeping active segments in RAM while discarding/reloading less-used segments on demand
+* **Segment-Based System**: Memory organized in up to 64KB contiguous blocks identified by handles (not direct addresses), similar to protected-mode selectors
+* **New Executable (NE) Format**: Segment-oriented format allowing individual segment loading and relocation, supporting imports/exports for dynamic linking
+* **Lock/Unlock Mechanism**: `GlobalLock` returns segment address and prevents movement; `GlobalUnlock` allows Windows to relocate segments dynamically
+* **Segment Types**: Fixed vs. movable (can be relocated when unlocked), discardable vs. non-discardable (code/resources vs. writable data)
+* **DLL Architecture**: Windows pioneered dynamic linking in mid-1980s, implementing core OS functionality (KERNEL, USER, GDI) as shared libraries
+* **Developer Challenge**: Documentation focused on UI programming while memory management details were under-documented despite being critical for robust applications
+
+### Win16 内存管理：深入解析 16 位 Windows 架构
+
+* **历史背景**：Windows 1.x/2.x 的内存管理源于 8086 实模式，其复杂性一直延续到 Windows 3.1 的保护模式时代
+* **核心概念**：Windows 作为精密的覆盖管理器运作，将活跃段保留在 RAM 中，按需丢弃/重新加载不常用的段
+* **段式系统**：内存组织为最大 64KB 的连续块，通过句柄（而非直接地址）标识，类似保护模式选择子
+* **新可执行格式 (NE)**：面向段的格式支持单独段加载和重定位，支持导入/导出实现动态链接
+* **锁定/解锁机制**：`GlobalLock` 返回段地址并防止移动；`GlobalUnlock` 允许 Windows 动态重定位段
+* **段类型**：固定 vs 可移动（解锁时可重定位），可丢弃 vs 不可丢弃（代码/资源 vs 可写数据）
+* **DLL 架构**：Windows 在 1980 年代中期率先实现动态链接，将核心操作系统功能（KERNEL、USER、GDI）实现为共享库
+* **开发者挑战**：文档侧重 UI 编程，而内存管理细节文档不足，尽管它对构建健壮应用至关重要
+
+**[Read Original / 阅读原文](http://www.os2museum.com/wp/win16-memory-management/)**
+
+<!-- [Title-Only] -->
+### Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering
+
+* Based on the title, this article likely presents research quantifying token usage patterns in AI-powered software development tools (agentic systems). It probably analyzes where computational resources (tokens) are consumed across different phases like code generation, debugging, testing, and refinement.
+* This is interesting because understanding token distribution helps optimize AI coding assistants for cost-efficiency and performance. As AI agents become more autonomous in software development, knowing where tokens are spent can inform better architecture decisions and resource allocation strategies.
+
+### Token经济学：量化AI智能体软件工程中的Token使用情况
+
+* 根据标题，这篇文章可能是一项研究，旨在量化AI驱动的软件开发工具（智能体系统）中的token使用模式。文章很可能分析了在代码生成、调试、测试和优化等不同阶段的计算资源（token）消耗情况。
+* 这项研究值得关注，因为理解token的分布有助于优化AI编码助手的成本效益和性能表现。随着AI智能体在软件开发中变得更加自主，了解token的消耗位置可以为更好的架构决策和资源分配策略提供依据。
+
+**[Read Original / 阅读原文](https://arxiv.org/abs/2601.14470)**
+
+### 🎬 How I Vibe Coded a $400K/mo App with Claude Code (Full Tutorial)
+**Channel:** Ashutosh Kumar
+
+* **What the video covers:** A complete walkthrough of rebuilding a highly successful $400K/month application using Claude Code (an AI-powered coding assistant)
+* **Key topics discussed:** "Vibe coding" methodology (AI-assisted development workflow), practical demonstration of using Claude Code for full-stack application development, reverse-engineering a profitable SaaS product, AI-driven development techniques and patterns
+* **Why it's worth watching:** Provides real-world validation of AI coding tools by recreating a proven, revenue-generating application; offers actionable tutorial content showing how modern developers can leverage AI assistants like Claude Code to build production-grade software; demonstrates the potential of AI-assisted development for solo developers and small teams looking to move fast and validate ideas
+
+---
+
+### 🎬 如何用 Claude Code "氛围编程"打造月入 40 万美元的应用(完整教程)
+**频道:** Ashutosh Kumar
+
+* **视频内容概述:** 完整演示如何使用 Claude Code(AI 驱动的编程助手)重建一个月收入 40 万美元的成功应用
+* **主要话题:** "氛围编程"(Vibe Coding)方法论(AI 辅助开发工作流)、使用 Claude Code 进行全栈应用开发的实战演示、逆向工程一个盈利的 SaaS 产品、AI 驱动的开发技术和模式
+* **为何值得观看:** 通过重建一个已被验证、能产生收益的应用来展示 AI 编程工具的实际价值;提供可操作的教程内容,展示现代开发者如何利用 Claude Code 等 AI 助手构建生产级软件;展示了独立开发者和小团队如何通过 AI 辅助开发快速行动并验证想法的潜力
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Sxwlgph60Os)**
 
