@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 30, 2026"
 date: 2026-06-30
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -243,4 +243,165 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 对于Blender初学者或任何希望通过掌握基本快捷键来优化建模工作流程的人来说，非常值得观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=s_HBdIwptIo)**
+
+### Memory Safe Context Switching
+* Fil-C implements `longjmp`, `setjmp`, and the `ucontext` APIs (`setcontext`, `getcontext`, `makecontext`, `swapcontext`) in a fully memory-safe manner.
+* Misuse of these APIs, which can restore a dangling stack frame, is either prevented (panics the program) or is defined as safe execution due to Fil-C's stack management.
+* `setjmp`/`longjmp` are particularly "evil" because they can return twice, which can confuse compiler optimizations like spill slot reuse. Fil-C's implementation accounts for this.
+* The `ucontext` APIs are used for coroutines and fibers (e.g., in Boost) and are supported in Fil-C (requires building from source since release 0.680).
+
+### 内存安全的上下文切换
+* Fil-C 以完全内存安全的方式实现了 `longjmp`、`setjmp` 以及 `ucontext` API（`setcontext`、`getcontext`、`makecontext`、`swapcontext`）。
+* 对这些 API 的误用（可能导致恢复一个悬空的栈帧）要么会触发程序 panic，要么由于 Fil-C 的栈管理方式而成为合法且安全的执行。
+* `setjmp`/`longjmp` 尤其“危险”，因为它们可能导致函数“返回两次”，这会干扰编译器的优化（如溢出槽位的重用）。Fil-C 的实现针对此进行了特殊处理。
+* `ucontext` API 常用于实现协程和纤程（例如在 Boost 库中），Fil-C 支持这些 API（需要从源代码构建，自 0.680 版本起）。
+
+**[Read Original / 阅读原文](https://fil-c.org/context_switches)**
+
+### Loading Lisp Code on PDP-1
+
+* The Basic Lisp system on the PDP-1 requires loading a function from paper tape to save new code.
+* To load any Lisp code (including new functions), mount the alphanumeric paper tape, set switch SS5 to down, and observe the loaded functions on the typewriter output.
+* After loading, set SS5 back up for typewriter input and press START, then CONTINUE, ensuring Address switches are set to 4.
+
+### Creating and Loading a Test Tape
+
+* You can create a test tape with your own Lisp functions by first writing the code in a text file (e.g., `test.lisp`) and ensuring it ends with a space for termination.
+* Use a tool like `encode_fiodec` to convert the text file into a paper tape image (`test.pt`).
+* Load this custom tape using the same procedure: mount the tape, set SS5 down, and observe the output. Verify the loaded program by executing a print command (e.g., `(print (cdr (quote tt)))`).
+
+### PDP-1上的Lisp编程
+
+* PDP-1上的Basic Lisp系统需要从纸带加载一个函数来保存新编写的代码。
+* 要加载任何Lisp代码（包括新函数），需挂载字母数字纸带，将开关SS5拨至向下位置，并在电传打字机输出中观察已加载的函数。
+* 加载完成后，将SS5拨回向上位置以切换至电传打字机输入，然后按下START键，接着按CONTINUE键，并确保地址开关已设置为4。
+
+### 创建并加载测试纸带
+
+* 您可以通过在文本文件（例如 `test.lisp`）中编写Lisp函数来创建测试纸带，并确保代码末尾有一个空格以作终止符。
+* 使用 `encode_fiodec` 等工具将该文本文件转换成纸带镜像文件（`test.pt`）。
+* 使用相同的流程加载这张自定义纸带：挂载纸带，将SS5拨至向下位置，并观察输出。可通过执行打印命令（例如 `(print (cdr (quote tt)))`）来验证程序是否已加载。
+
+**[Read Original / 阅读原文](https://obsolescence.dev/pdp1-lisp-introduction.html)**
+
+<!-- [Title-Only] -->
+### LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active
+* Based on the title, this article likely introduces a new large language model named LongCat-2.0. It specifies that the model uses a Mixture of Experts (MoE) architecture, a technique that makes large models more computationally efficient by only activating a subset of parameters (the "Active" 48 billion) for any given task, while the total trained parameter count is much larger (1.6 trillion). The article probably discusses its architecture, training details, performance benchmarks, and potential applications.
+* This might be interesting to readers because it showcases a state-of-the-art approach to building powerful AI models. The focus on MoE highlights a practical path to scaling up model capacity without proportionally increasing the cost of running it, which is a key area of research and development in the AI community. The specific parameter counts also provide a concrete benchmark for comparison with other leading models.
+
+### LongCat-2.0：一个拥有1.6万亿参数但仅激活480亿参数的大规模MoE模型
+* 根据标题推测，这篇文章主要介绍了一个名为 LongCat-2.0 的新型大语言模型。文章的核心信息在于该模型采用了**稀疏混合专家**架构，这种架构的优势在于能够以较低的计算成本运行超大参数量的模型。标题指出其总参数量为1.6万亿，但每次推理仅激活其中的480亿参数。文章内容可能涉及该模型的具体设计、训练过程、性能评测以及潜在的应用场景。
+* 本文值得关注，因为它展示了当前构建强大人工智能模型的一种前沿且高效的技术路径。MoE架构是解决大模型“训练成本高、部署开销大”这一核心挑战的关键方向。文中披露的具体参数规模也为与其他主流模型进行横向比较提供了一个明确的参照点。
+
+**[Read Original / 阅读原文](https://longcat.chat/blog/longcat-2.0/)**
+
+### FluidVoice - Fastest macOS Offline Dictation App
+* **What it does**: A fully local, open-source voice-to-text dictation app for macOS that converts speech to text without requiring an internet connection. It enhances dictation with on-device AI.
+* **Key features**:
+    * **Fluid Intelligence**: A private, local AI runtime for on-device dictation enhancement, including smart formatting and context-aware capitalization, with zero data leaving the machine.
+    * **Multiple Modes**: Features **Command Mode** for voice-controlling your Mac and **Write Mode** for dictating/rewriting text in any application.
+    * **Extensive Model Support**: Supports various speech models (Nemotron, Parakeet, Cohere, Apple Speech, Whisper) tailored to different languages and latency needs.
+    * **Local-First & Private**: All core functionality works offline. Voice data and text remain on the user's Mac unless they opt into a cloud provider.
+    * **Live Preview & Customization**: Offers a real-time transcription overlay with adaptive theming, configurable layouts, and per-app settings.
+* **Why it's notable**: It is trending due to its **unprecedented speed and privacy**. The **"Fastest Parakeet on Mac"** implementation promises near-instant transcription. The fully local **Fluid Intelligence** model provides advanced AI enhancements without cloud dependency, making it a compelling, private alternative to mainstream dictation tools. The project's open-source nature (GPLv3) and rapid feature development also attract significant interest.
+
+### FluidVoice - 最快的 macOS 离线听写应用
+* **功能介绍**：一款完全本地运行的开源 macOS 语音转文字应用，无需联网即可将语音转换为文本，并通过设备端 AI 增强听写体验。
+* **主要特点**：
+    * **Fluid Intelligence**：一个独立的、本地 AI 运行时，用于设备端的听写增强，包括智能格式化和上下文感知的大小写处理，所有数据均不离开用户电脑。
+    * **多种模式**：提供**命令模式**，可通过语音控制 Mac；以及**写作模式**，可在任何应用程序中听写或重写文本。
+    * **广泛的模型支持**：支持多种语音模型（Nemotron, Parakeet, Cohere, Apple Speech, Whisper），以适应不同的语言和延迟需求。
+    * **本地优先与隐私**：核心功能完全离线工作。除非用户主动选择云服务，否则语音和文本数据均保留在本地 Mac 上。
+    * **实时预览与自适应**：提供带有自适应主题的实时转录覆盖层、可配置布局和按应用设置。
+* **为何值得关注**：该项目因其**极快的速度和卓越的隐私性**而备受追捧。其 **"Mac 上最快的 Parakeet"** 实现承诺几乎零延迟的转录体验。完全本地的 **Fluid Intelligence** AI 增强模型无需云服务，使其成为替代主流听写工具的强有力竞争者。此外，该项目开源（GPLv3）且更新迅速，吸引了大量关注。
+
+**[View Repository / 查看仓库](https://github.com/altic-dev/FluidVoice)**
+
+### Maigret - OSINT Username Investigation Tool
+* What it does: Maigret is an open-source OSINT (Open-Source Intelligence) tool that automatically collects a comprehensive dossier on a person by searching for their username across more than 3,000 websites, gathering publicly available information from profiles and pages without requiring API keys.
+* Key features: Supports scanning 3000+ sites, performs recursive searches using discovered usernames, extracts profile data, includes a web interface for visualization, offers optional AI-powered analysis, and is embeddable as a Python library. It can also work with Tor/I2P and bypass basic blocks.
+* Why it's notable: It's a powerful and trending tool for social media analysis and digital investigations, used by professional OSINT tools. Its popularity stems from its extensive database, ease of use, and the ability to compile detailed reports from a single username.
+
+### Maigret - 用户名网络身份调查工具
+* 功能介绍：Maigret 是一款开源的 OSINT（开源情报）工具，仅需一个用户名即可在超过3000个网站上自动搜索并收集该人物的详细资料档案，无需API密钥。
+* 主要特点：支持扫描超过3000个站点，能进行递归搜索，自动提取公开资料，提供Web界面进行结果可视化，可选AI分析功能，并可作为Python库嵌入到其他项目中。它还能访问Tor/I2P网站并部分绕过封锁。
+* 为何值得关注：它是一款强大且日益流行的社交媒体分析与数字调查工具，被专业OSINT工具所采用。其受欢迎得益于庞大的数据库、简便的操作以及能从单一用户名生成详尽报告的能力。
+
+**[View Repository / 查看仓库](https://github.com/soxoj/maigret)**
+
+### CS-Fundamentals - A Curated Collection of CS Fundamentals for Placement Preparation
+*   **What it does:** This repository is a comprehensive, curated collection of resources designed to help computer science students and job seekers prepare for technical placements and interviews. It aggregates notes, PDFs, cheatsheets, and interview question banks across core CS subjects.
+*   **Key features:** It covers a wide spectrum of essential topics including Data Structures & Algorithms (DSA), Computer Networks, DBMS & SQL, OOPs (in multiple languages), Operating Systems, Software Engineering, and System Design. Resources include theory notes, roadmaps, interview Q&A, and specific problem sets (like LeetCode).
+*   **Why it's notable:** This is a highly practical, one-stop resource hub with a clear focus on real-world interview preparation. Its comprehensive coverage and direct targeting of placement needs make it a valuable and trending resource for students and freshers aiming to enter the tech industry, as evidenced by its 970 stars.
+
+### CS-Fundamentals - 为求职准备整理的计算机科学基础资源合集
+*   **功能介绍：** 该仓库是一个精心策划的综合性资源集合，旨在帮助计算机科学学生和求职者准备技术岗位招聘和面试。它汇总了多个核心计算机科学学科的笔记、PDF文档、速查表和面试题库。
+*   **主要特点：** 覆盖范围广泛，包括数据结构与算法（DSA）、计算机网络、数据库管理系统与SQL（DBMS & SQL）、面向对象编程（OOPs，涵盖多种语言）、操作系统、软件工程和系统设计等核心主题。资源类型多样，包含理论笔记、学习路线图、面试问答以及特定题集（如LeetCode）。
+*   **为何值得关注：** 这是一个以实用为导向的一站式资源中心，其内容明确聚焦于应对真实的技术面试。其内容的全面性和对求职需求的直接针对性，使其成为学生和应届毕业生进入科技行业的重要且受欢迎的资源（已获970星标）。
+
+**[View Repository / 查看仓库](https://github.com/Krishnagangwal/CS-Fundamentals)**
+
+### **The Eleven - AI Agents Powering Live Football Prediction Markets**
+*   **What it does**: Deploy 11 autonomous AI agents that analyze real-time football match data and automatically open binary prediction markets on the X Layer blockchain.
+*   **Key features**:
+    *   **Uniswap v4 Hook**: Built on a custom `PropMarketHook` that transforms Uniswap v4 pools into commit-reveal prediction markets, with full test coverage.
+    *   **Gasless Staking**: Uses EIP-3009 (`transferWithAuthorization`) for USDT0 settlements, allowing users to stake with a single wallet signature and pay zero gas.
+    *   **Autonomous Persona Runtime**: Each agent has a unique tactical role (e.g., Regista, Libero), using a deterministic loop to open relevant markets based on live match events.
+    *   **Decentralized Resolution**: Designed to resolve against external oracle data (Flap's WorldCupResolver for tournament play), with fallback admin resolution.
+*   **Why it's notable**: This is a sophisticated, fully-deployed Web3 application demonstrating the convergence of AI agents, DeFi infrastructure (Uniswap v4), and real-world event markets. It showcases a pioneering use of gasless EIP-3009 on X Layer and presents a novel architecture for decentralized, real-time sports betting.
+
+### **The Eleven - AI代理驱动的实时足球预测市场**
+*   **功能介绍**: 部署11个自主AI代理，分析实时足球比赛数据，并在X Layer区块链上自动创建二元预测市场。
+*   **主要特点**:
+    *   **Uniswap v4 钩子**: 基于自定义的 `PropMarketHook`，将 Uniswap v4 池转化为具有提交-揭示机制的预测市场，代码具备100%测试覆盖率。
+    *   **无Gas质押**: 利用 EIP-3009 (`transferWithAuthorization`) 进行 USDT0 结算，用户只需一个钱包签名即可完成质押，无需支付Gas费。
+    *   **自主角色运行时**: 每个代理拥有独特的战术角色（如指挥官、清道夫等），通过确定性循环，根据实时比赛事件开启相关市场。
+    *   **去中心化结算**: 设计用于依据外部预言机数据（如赛事期间的Flap WorldCupResolver）进行结算，并设有管理员结算后备方案。
+*   **为何值得关注**: 这是一个技术完善、已部署上线的Web3应用，展示了AI代理、DeFi基础设施（Uniswap v4）与现实事件市场的创新融合。它开创性地在X Layer上实现了基于EIP-3009的无Gas交易，并提出了一种新颖的去中心化实时体育博彩架构。
+
+**[View Repository / 查看仓库](https://github.com/winsznx/theeleven)**
+
+### 🎬 How to prepare DSA for Placements ? Placement Series - Ep-1
+**Channel:** take U forward
+*   **What the video covers:** This video is the first episode of a placement series. It provides a clear and simple 3-step roadmap for students and beginners who are confused about where to start preparing Data Structures and Algorithms (DSA) for job placements.
+*   **Key topics discussed:** The foundational approach to learning DSA, a structured preparation roadmap, and a strategy specifically designed for placement success.
+*   **Why it's worth watching:** It directly addresses the common confusion of "how to begin" with DSA. The 3-step plan offers an actionable, simplified strategy, making it an ideal starting point for anyone serious about technical placements and wanting to avoid common pitfalls.
+
+### 🎬 如何为求职准备DSA？求职系列 - 第1集
+**频道:** take U forward
+*   **视频内容概述:** 本视频是求职系列的第一集。它为在“从哪里开始学习数据结构与算法（DSA）以应对求职”方面感到困惑的学生和初学者，提供了一个清晰简单的三步路线图。
+*   **主要话题:** 学习DSA的基础方法、结构化的准备路线图，以及专为求职成功设计的战略。
+*   **为何值得观看:** 它直击初学者“如何开始”的普遍困惑。这个三步计划提供了一个可操作、简化的策略，使其成为任何认真对待技术求职、希望避免常见误区的人的理想起点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OjOcpf3eVas)**
+
+### 🎬 Why arrays really start at zero
+**Channel:** Coding with Lewis
+* This video explores the common question of why array indexing in most programming languages begins at 0, revealing the historical and technical reasons behind this convention.
+* Key topics include the origin of zero-based indexing in early programming languages like C, its impact on memory addressing and performance, and how it simplifies certain computations.
+* It's worth watching for a clear, concise breakdown of a fundamental computer science concept that many programmers use daily but rarely understand the origins of.
+
+### 🎬 为什么数组真的从零开始
+**频道:** Coding with Lewis
+* 本视频探讨了为什么大多数编程语言的数组索引都从 0 开始这一常见问题，揭示了其背后的历史和技术原因。
+* 主要话题包括从 C 语言等早期编程语言中起源的零基索引、其对内存寻址和性能的影响，以及它如何简化某些计算。
+* 值得观看的原因是它清晰简洁地解析了一个基础的计算机科学概念——许多程序员日常使用，却很少理解其起源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5i1fByfOotg)**
+
+### 🎬 Positioning in CSS is too easy now
+**Channel:** Kevin Powell
+
+* **What the video covers:** The video demonstrates the new CSS Anchor Positioning API, a powerful feature that allows developers to position one HTML element relative to another ("anchor") element without complex JavaScript or workarounds.
+* **Key topics discussed:** The core functionality and syntax of the CSS Anchor Positioning API, practical use cases for this feature, and a realistic look at current browser support, including the use of a polyfill to enable the feature for simpler applications today.
+* **Why it's worth watching:** This is an essential watch for web developers and designers as it explores a transformative new capability in CSS. Kevin Powell breaks down a complex topic, showing how it simplifies what was previously a challenging task (like creating tooltips, popovers, or floating menus) and provides a pragmatic solution (the polyfill) to start using it immediately.
+
+### 🎬 Positioning in CSS is too easy now
+**频道:** Kevin Powell
+
+* **视频内容概述:** 视频演示了新的 CSS 锚点定位 API，这是一个强大的功能，允许开发者将一个 HTML 元素相对于另一个“锚点”元素进行定位，无需复杂的 JavaScript 或变通方法。
+* **主要话题:** CSS 锚点定位 API 的核心功能和语法、该功能的实际应用案例，以及对当前浏览器兼容性的现实看法，包括使用 polyfill（填充库）在当前为简单应用启用该功能。
+* **为何值得观看:** 对于 Web 开发者和设计师而言，这是一期必看的视频，因为它探讨了 CSS 中的一项革命性新能力。Kevin Powell 深入浅出地讲解了一个复杂主题，展示了它如何简化以往极具挑战性的任务（如创建工具提示、弹出框或浮动菜单），并提供了一个务实的解决方案（polyfill）以便开发者可以立即开始使用它。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=h6nOP19c-hQ)**
 
