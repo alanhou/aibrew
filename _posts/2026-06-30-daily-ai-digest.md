@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: June 30, 2026"
 date: 2026-06-30
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Qwen 3.6 27B: The Sweet Spot for Local Development
@@ -383,6 +383,217 @@ The request was rejected because it was considered high risk
     *   复古计算机操作系统的界面模仿。
     *   快速编程技巧与可视化展示。
 *   **为何值得观看：** 对于编程爱好者，尤其是对GUI开发或复古科技感兴趣的观众，视频提供了快速实现特定风格界面的直观案例。它能激发学习Python可视化编程的兴趣，并展示代码如何直接转化为可视成果。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7XE-UU_qSKY)**
+
+### Reporting Incident Involving US Ambassador in Belgium
+* Journalists were removed from an event after attempting to question senior politicians, including the US ambassador to Belgium.
+* Belgian police confiscated IDs, questioned the reporters, and escorted them off the premises following instructions from the US embassy.
+* Officers were reportedly told that one journalist posed an "active threat," which was used to justify the removal.
+
+### 比利时事件：美国大使要求警方阻止记者采访
+* 记者试图向包括美国驻比利时大使比尔·怀特在内的高级政客提问后，被带离活动现场。
+* 比利时警方没收了记者的身份证件，进行问询，并在美国大使馆的要求下将他们完全驱逐出场。
+* 据悉，警方被告知其中一名记者是“主动威胁”，这一说法被用作驱逐的理由。
+
+**[Read Original / 阅读原文](https://europeancorrespondent.com/en/r/the-us-ambassador-had-belgian-police-stop-our-reporting)**
+
+### Digital ID Wallets: A Backdoor for Tech Giants in Europe
+*   The EU is rolling out digital ID wallets that rely on Google's Play Integrity API and Apple's attestation services for security.
+*   This creates a dependency on private tech giants for critical public infrastructure, contradicting EU goals of digital sovereignty and the Digital Market Act (DMA).
+*   The implementation excludes users of de-Googled operating systems (like GrapheneOS), forcing them into proprietary ecosystems to access public services.
+*   An open, hardware-based alternative (Android's Hardware Attestation API) exists but is being ignored by member states like the Netherlands and Italy.
+*   There is no unified EU approach, with some countries (e.g., Switzerland) rejecting the Google-dependent model due to data sovereignty and freedom concerns.
+*   Waag's research confirms that app compatibility with critical services is a major barrier for users seeking to adopt more open mobile ecosystems.
+
+### 欧洲数字身份证钱包：为科技巨头敞开大门
+*   欧盟推出的数字身份证钱包依赖于谷歌的 Play Integrity API 和苹果的认证服务来确保安全。
+*   这导致关键公共基础设施依赖于私营科技巨头，与欧盟数字主权及《数字市场法》（DMA）的目标相冲突。
+*   该实施方式排除了使用去谷歌化操作系统（如 GrapheneOS）的用户，迫使他们必须使用谷歌生态才能访问公共服务。
+*   一个更开放的替代方案（Android 的硬件认证 API）存在，但被荷兰和意大利等成员国忽视。
+*   欧盟内部缺乏统一方案，部分国家（如瑞士）因数据主权和自由选择权问题，拒绝采用依赖谷歌的模式。
+*   Waag 的研究证实，与支付和政府身份验证等关键服务应用的兼容性，是用户选择更开放移动生态系统时的主要障碍。
+
+**[Read Original / 阅读原文](https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/)**
+
+<!-- [Title-Only] -->
+### Building a custom octocopter from scratch with no prior hardware experience
+*   **What it likely covers:** This article almost certainly documents the author's personal journey of designing and building a complex eight-rotor drone (octocopter) without any previous background in hardware or electronics. It likely details the challenges encountered, the components chosen, the assembly process, software configuration, and the final testing.
+*   **Why it might be interesting to readers:** It's a classic maker/engineering story of tackling a daunting project head-on. Readers interested in DIY drones, robotics, embedded systems, or simply learning new skills from zero would find the practical lessons, problem-solving approaches, and the author's perseverance highly inspiring and informative.
+
+### 从零开始打造定制八轴飞行器：无硬件经验指南
+*   **根据标题推测的文章内容简介：** 这篇文章很可能记录了作者在没有任何硬件背景的情况下，从零开始设计和制作一个复杂的八轴无人机的全过程。内容预计会涵盖遇到的各种挑战、选择的硬件组件、组装步骤、软件调试以及最终的测试飞行。
+*   **为何值得关注：** 这是一个典型的创客/工程故事，展示了如何从零开始挑战一个复杂的项目。对于对DIY无人机、机器人、嵌入式系统感兴趣，或希望学习如何从头掌握新技能的读者来说，文章中关于实际问题解决的经验教训以及作者的毅力，将具有很高的启发性和实用价值。
+
+**[Read Original / 阅读原文](https://karolina.mgdubiel.com/drone/)**
+
+### usestrix/strix - Open-source AI penetration testing tool that autonomously finds and fixes application vulnerabilities.
+* **What it does**: An AI-powered tool that acts like a human hacker to automatically perform full-cycle penetration testing (recon, exploitation, validation) against applications and codebases. It dynamically runs code to find vulnerabilities and provides real proof-of-concept exploits, not just static scans.
+* **Key features**:
+    * **Full pentesting toolkit**: Includes proxy, browser automation, shell access, and exploit development.
+    * **Multi-agent orchestration**: Teams of specialized AI agents collaborate for scalable and comprehensive testing.
+    * **Real exploit validation**: Focuses on generating working PoCs to eliminate false positives.
+    * **Developer-first CLI**: Provides actionable findings with remediation guidance and auto-fix capabilities.
+    * **CI/CD & Platform integration**: Seamless integration with GitHub Actions, GitLab, and other DevSecOps tools; also offers a full-stack platform at app.strix.ai.
+* **Why it's notable**: It represents a trend towards **autonomous, AI-driven security testing** that integrates directly into development workflows. Its ability to validate real exploits, generate fixes, and run continuously in pipelines addresses key pain points of manual pentesting and unreliable static analysis, making advanced security testing more accessible and efficient.
+
+### usestrix/strix - 开源AI渗透测试工具，自主发现并修复应用漏洞。
+* **功能介绍**: 这是一款基于AI的工具，能够模拟人类黑客的行为，对应用和代码库执行全自动化的全周期渗透测试（侦察、利用、验证）。它能动态运行代码来发现漏洞，并提供真实的概念验证（PoC）攻击，而非仅进行静态扫描。
+* **主要特点**:
+    * **完整的渗透测试工具集**: 集成代理、浏览器自动化、Shell访问和漏洞利用开发环境。
+    * **多代理协作**: 多个专业化的AI代理协同工作，实现可扩展且全面的测试覆盖。
+    * **真实的漏洞利用验证**: 重点生成可工作的PoC，以消除误报。
+    * **开发者优先的命令行界面**: 提供可操作的漏洞发现、修复指导和自动修复功能。
+    * **CI/CD与平台集成**: 可与GitHub Actions、GitLab等DevSecOps工具无缝集成；同时在app.strix.ai提供全栈测试平台。
+* **为何值得关注**: 该工具反映了**AI驱动自动化安全测试**的发展趋势，它将自身直接嵌入开发工作流。其验证真实漏洞利用、生成修复代码以及在流水线中持续运行的能力，解决了传统手动渗透测试效率低下和静态分析工具误报率高的关键痛点，使高级安全测试变得更易用、更高效。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### FluidVoice - Fastest macOS Offline Dictation App (Voice to Text)
+*   **What it does:** A fully local, privacy-focused dictation app for macOS. It converts your speech into text directly on your Mac, with no data leaving your device. It features a "Command Mode" to control your Mac by voice and a "Write Mode" for direct text input.
+*   **Key features:**
+    *   **Fluid Intelligence:** On-device AI model for smart text formatting, capitalization, and context-aware post-processing.
+    *   **Command & Write Modes:** Control your Mac or dictate text into any application.
+    *   **Multiple Speech Engines:** Supports numerous fast local models like Parakeet, Nemotron, and Whisper, as well as Apple's native speech recognition.
+    *   **Privacy-First:** All core dictation happens offline. Optional AI enhancements can use cloud providers or stay local with Fluid Intelligence.
+    *   **Rich Feature Set:** Includes live preview, audio history, global hotkey, per-app configuration, and adaptive theming.
+*   **Why it's notable:** It's trending due to its promise of being the "fastest" offline dictation solution, combining robust privacy with advanced AI-enhanced features. The strong feature set and open-source nature (GPLv3) are attracting significant user interest, as evidenced by the **586 stars gained today**.
+
+### FluidVoice - 最快的 macOS 离线听写应用 (语音转文字)
+*   **功能介绍：** 一款完全本地化、注重隐私的 macOS 听写应用。它将您的语音直接转换为 Mac 上的文字，所有数据均保留在设备本地。应用包含“命令模式”（通过语音控制 Mac）和“书写模式”（直接在任意 App 中输入文本）。
+*   **主要特点：**
+    *   **Fluid Intelligence：** 本地 AI 模型，用于智能文本格式化、大小写处理和上下文感知的后处理。
+    *   **命令与书写模式：** 语音控制电脑或在任何应用中听写输入。
+    *   **多语音引擎支持：** 支持多种快速的本地模型，如 Parakeet、Nemotron 和 Whisper，以及 Apple 原生语音识别。
+    *   **隐私优先：** 核心听写功能完全离线运行。可选的 AI 增强功能既可使用云服务，也可通过 Fluid Intelligence 保持本地运行。
+    *   **功能丰富：** 提供实时预览、录音历史、全局热键、按应用配置和自适应主题等。
+*   **为何值得关注：** 该项目正因宣称提供“最快”的离线听写解决方案而备受关注。它将强大的隐私保护与先进的 AI 增强功能相结合。丰富的功能集和开源性质（GPLv3）吸引了大量用户，**今日获得 586 颗星**即是证明。
+
+**[View Repository / 查看仓库](https://github.com/altic-dev/FluidVoice)**
+
+### OmniRoute - Free AI Gateway for Coding Tools
+*   **What it does**: OmniRoute is a free, open-source gateway that acts as a single endpoint (API) to connect multiple AI coding tools (like Claude Code, Codex, Cursor, Copilot) with over 200 AI providers, including more than 50 with free tiers. It intelligently routes requests to the most cost-effective provider.
+*   **Key features**:
+    *   **Massive Free Tier Aggregation**: Aggregates and tracks the documented free tiers of 40+ providers, offering approximately 1.6 billion free tokens per month.
+    *   **Token Savings**: Employs RTK and Caveman stacked compression techniques to reduce token usage by 15-95%, extending the life of free quotas.
+    *   **Smart Auto-fallback**: Automatically switches between providers if one hits its limit, ensuring zero downtime.
+    *   **Universal Compatibility**: Works as an OpenAI API-compatible endpoint, making it easy to plug into existing tools without configuration changes.
+    *   **Production-Ready**: Includes circuit breakers, security features, support for protocols like MCP and A2A, and is available as a CLI, Docker image, or PWA/Desktop app.
+*   **Why it's notable**: It directly addresses the pain point of managing multiple AI provider accounts and limited free quotas for developers. By bundling a huge number of free tiers into a single, intelligent gateway with advanced compression, it promises to let developers "never stop coding" without worrying about hitting API limits or incurring unexpected costs. Its rapid star growth (617 stars today) indicates strong community interest in this cost-saving and simplification tool.
+
+### OmniRoute - 免费AI编程工具网关
+*   **功能介绍**: OmniRoute 是一个免费的开源网关，作为单一端点（API）连接多个AI编程工具（如 Claude Code、Codex、Cursor、Copilot）与超过200家AI提供商，其中50多家提供免费额度。它能智能地将请求路由到最具成本效益的提供商。
+*   **主要特点**:
+    *   **聚合海量免费额度**: 汇总并追踪40多家提供商的免费额度文档，每月可提供约16亿免费令牌。
+    *   **令牌压缩节省**: 采用 RTK 和 Caveman 堆叠压缩技术，可减少15-95%的令牌使用量，延长免费配额的使用时间。
+    *   **智能自动故障转移**: 当一个提供商达到限额时，会自动切换到另一个，确保零停机时间。
+    *   **广泛兼容性**: 作为兼容 OpenAI API 的端点运行，无需更改配置即可轻松集成到现有工具中。
+    *   **生产就绪**: 包含断路器、安全功能，支持 MCP 和 A2A 等协议，并提供 CLI、Docker 镜像、PWA 或桌面应用。
+*   **为何值得关注**: 它直接解决了开发者管理多个AI提供商账户和有限免费额度的痛点。通过将大量免费额度捆绑到一个具有先进压缩功能的智能网关中，它承诺让开发者“永不停止编码”，无需担心达到API限制或产生意外费用。其快速增长的星标数（今日617星）表明社区对这个节省成本和简化流程的工具抱有浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/diegosouzapw/OmniRoute)**
+
+### torlink - A sleek terminal-based torrent finder and downloader
+*   **What it does**: torlink is a command-line tool that allows you to search for and download torrents directly from your terminal. It aggregates results from a curated list of reputable sources for games, movies, TV, and anime, then downloads the selected files straight to your computer.
+*   **Key features**:
+    *   **Zero Setup**: Requires only Node.js and a single `npx` command to run. No complex configuration needed.
+    *   **Unified Search**: Searches multiple trusted sources (e.g., YTS, 1337x, Nyaa) simultaneously.
+    *   **Terminal UI**: Features a clean, keyboard-driven interface for browsing results, managing active downloads, and viewing completed ones.
+    *   **Background Downloads & Auto-Seeding**: Downloads continue in the background and automatically seed files after completion to support the network, with easy controls to pause or stop.
+    *   **Privacy-Focused**: All data stays on your local machine, and communication is directly with the torrent network.
+*   **Why it's notable**: It addresses the common frustrations of using torrent websites (fake buttons, ads, dead links) by providing a streamlined, secure, and efficient alternative right in the developer's native environment. Its curated source list and focus on usability make it a trustworthy and trending tool for the community.
+
+### torlink - 一款简洁的终端种子查找与下载器
+*   **功能介绍**: torlink 是一款命令行工具，允许您直接在终端中搜索和下载种子。它同时从精选的可靠来源（涵盖游戏、电影、电视和动漫）聚合搜索结果，并将选中的文件直接下载到您的电脑上。
+*   **主要特点**:
+    *   **零配置**: 仅需安装 Node.js 并运行一条 `npx` 命令，无需复杂设置。
+    *   **统一搜索**: 同时搜索多个信誉良好的源站（如 YTS、1337x、Nyaa）。
+    *   **终端界面**: 提供简洁的、基于键盘的操作界面，用于浏览结果、管理下载任务及查看已完成的文件。
+    *   **后台下载与自动做种**: 下载在后台持续运行，并在完成后自动做种以支持网络，同时提供便捷的暂停或停止控制。
+    *   **注重隐私**: 所有数据保留在本地，且直接与 BitTorrent 网络通信，不经过中央服务器。
+*   **为何值得关注**: 它解决了使用传统种子网站时常见的痛点（如虚假按钮、广告、失效链接），为用户提供了一个直接在终端内进行的高效、安全且流畅的替代方案。其精心筛选的源列表和出色的用户体验使其成为一个值得信赖的、正在流行的社区工具。
+
+**[View Repository / 查看仓库](https://github.com/baairon/torlink)**
+
+### Krishnagangwal/CS-Fundamentals - Curated CS Fundamentals for Placement Preparation
+*   **What it does**: This repository is a comprehensive, organized collection of study materials for computer science fundamentals, specifically aimed at helping students and job seekers prepare for technical interviews and placements.
+*   **Key features**: It provides a structured folder system covering core CS subjects: DSA, Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design, and Software Engineering. The resources include PDFs, notes, cheatsheets, and interview question banks for each topic, along with general interview prep materials like HR questions and cover letter templates.
+*   **Why it's notable**: It’s a valuable, one-stop resource for systematic revision, saving users the effort of gathering scattered materials. The repository’s popularity (1126 stars) indicates strong community recognition as a helpful tool for placement readiness.
+
+### Krishnagangwal/CS-Fundamentals - 面向求职准备的精选计算机科学基础
+*   **功能介绍**: 该仓库是一个为求职面试和校园招聘准备而精心整理的计算机科学基础学习资料集合，提供了系统化、结构化的复习材料。
+*   **主要特点**: 它以清晰的文件夹结构涵盖了DSA、计算机网络、DBMS与SQL、面向对象编程、操作系统、系统设计和软件工程等核心CS主题。每个主题下都包含PDF笔记、速查表、面试题集等多种形式的资源，并附带了HR面试题、求职信模板等通用准备材料。
+*   **为何值得关注**: 这是一个实用的一站式资源库，极大地简化了系统化复习的流程。其获得的众多Star（1126）反映了它在开发者社区中被广泛认可为高效的求职准备工具。
+
+**[View Repository / 查看仓库](https://github.com/Krishnagangwal/CS-Fundamentals)**
+
+### 🎬 Command Line Basics for Beginners - Full Course
+**Channel:** freeCodeCamp.org
+*   What the video covers: This is a comprehensive, beginner-friendly tutorial that introduces the fundamentals of using the command line interface (CLI). It starts from absolute scratch, explaining what the terminal is and guiding viewers through essential concepts.
+*   Key topics discussed: The video covers navigating the file system, creating, moving, and deleting files and directories, understanding permissions, using helpful utilities like `grep` and `find`, and basic bash scripting. It emphasizes practical, hands-on skills used daily by developers and sysadmins.
+*   Why it's worth watching: Mastering the command line is a foundational skill for anyone in tech. This full course provides a clear, structured, and free pathway to gaining confidence and efficiency with the terminal, making it an invaluable resource for true beginners.
+
+### 🎬 命令行基础教程 - 完整课程
+**频道:** freeCodeCamp.org
+*   视频内容概述：这是一个面向初学者的综合性教程，全面介绍命令行界面（CLI）的基础知识。课程从零开始，解释什么是终端，并引导观众掌握核心概念。
+*   主要话题：涵盖文件系统导航、创建/移动/删除文件与目录、理解权限、使用`grep`和`find`等实用工具以及基础Bash脚本编写。重点教授开发者和系统管理员日常所需的核心实践技能。
+*   为何值得观看：掌握命令行是所有技术人员的必备基础技能。这门免费的完整课程提供了清晰、结构化的学习路径，帮助初学者建立对终端使用的信心和效率，是真正入门者的宝贵资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mABpAI-pCw0)**
+
+### 🎬 How to prepare DSA for Placements ? Placement Series - Ep-1
+**Channel:** take U forward
+*   **What the video covers:** This video is the first episode in a "Placement Series." It addresses the common confusion students face when starting Data Structures and Algorithms (DSA) preparation for job placements. The presenter shares a straightforward, 3-step roadmap to guide learners from the very beginning.
+*   **Key topics discussed:** The core topic is a beginner-friendly DSA preparation strategy. The video likely breaks down the 3-step plan, which may include foundational concepts, problem-solving practice, and placement-specific strategies.
+*   **Why it's worth watching:** It's essential for anyone feeling lost about how to start their DSA journey for technical interviews. The video provides a clear, structured plan from a trusted educational channel, making it an ideal starting point for effective and focused preparation.
+
+### 🎬 如何为求职准备数据结构与算法？求职系列 - 第1集
+**频道:** take U forward
+*   **视频内容概述:** 本视频是“求职系列”的第一集。它针对学生在开始为求职准备数据结构与算法（DSA）时常见的迷茫状态，分享了一个简单明了的三步路线图，为初学者提供清晰指引。
+*   **主要话题:** 核心话题是面向初学者的DSA准备策略。视频详细阐述了这一三步计划，可能涵盖基础概念学习、问题解决实践以及针对求职面试的具体策略。
+*   **为何值得观看:** 对于任何对如何开始DSA求职准备感到困惑的人来说，这个视频都至关重要。它提供了来自知名教育频道的清晰、结构化的计划，是进行高效、专注准备的完美起点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OjOcpf3eVas)**
+
+### 🎬 Why arrays really start at zero
+**Channel:** Coding with Lewis
+*   **What the video covers:** This video delves into the historical and technical reasons behind zero-based indexing in arrays, moving beyond the common explanation of it being just an arbitrary convention.
+*   **Key topics discussed:** The origins of zero-based indexing in early programming languages (like C), memory addressing and pointer arithmetic, performance optimizations, and a comparison with one-based indexing systems.
+*   **Why it's worth watching:** It provides a fundamental computer science insight that clarifies a common "why" question for many programmers. Understanding the practical roots of zero-based indexing can deepen your knowledge of how programming languages interact with hardware.
+
+### 🎬 为什么数组真的从零开始
+**频道:** Coding with Lewis
+*   **视频内容概述:** 本视频深入探讨了数组从零开始索引的历史和技术原因，超越了它仅仅是一个随意约定的常见解释。
+*   **主要话题:** 零索引在早期编程语言（如C）中的起源、内存寻址与指针运算、性能优化，以及与以1为基准的索引系统的比较。
+*   **为何值得观看:** 它提供了一个基础的计算机科学见解，解答了众多程序员常见的“为什么”问题。理解零索引的实践根源，可以加深你对编程语言如何与硬件交互的认识。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5i1fByfOotg)**
+
+### 🎬 Positioning in CSS is too easy now
+**Channel:** Kevin Powell
+* What the video covers: This video explores CSS anchor positioning, demonstrating how it simplifies complex layouts and addresses browser support issues through the use of a polyfill.
+* Key topics discussed: Anchor positioning in CSS, challenges with browser compatibility, and practical steps for implementing polyfills to enhance functionality.
+* Why it's worth watching: It provides actionable insights into modern CSS techniques, offers solutions for cross-browser development, and is ideal for web developers looking to streamline their workflow with up-to-date tools.
+
+### 🎬 CSS定位现在太简单了
+**频道:** Kevin Powell
+* 视频内容概述：本视频深入探讨CSS锚点定位，展示其如何简化复杂布局，并通过polyfill解决浏览器支持问题。
+* 主要话题：CSS锚点定位技术、浏览器兼容性挑战以及polyfills的实际应用方法。
+* 为何值得观看：它提供了关于现代CSS技术的实用知识，帮助开发者应对跨浏览器兼容性难题，对提升Web开发效率和技能极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=h6nOP19c-hQ)**
+
+### 🎬 How Will Be Window (98) ?? #coding #programming #shorts #python
+**Channel:** Aziz Codex
+* **What the video covers:** A quick demonstration, likely using Python, showing how to recreate or stylize the classic Windows 98 user interface.
+* **Key topics discussed:** Python GUI programming, nostalgic UI design, coding for retro computing aesthetics, and possibly specific libraries like `tkinter`.
+* **Why it's worth watching:** It's a fun, fast-paced project that combines modern coding with a beloved retro aesthetic, perfect for coding enthusiasts interested in GUI design or nostalgic tech projects.
+
+### 🎬 复刻Windows 98界面？#编程 #Python #短视频
+**频道:** Aziz Codex
+* **视频内容概述:** 一个简短的演示视频，可能展示了如何使用Python来复刻或风格化经典的Windows 98用户界面。
+* **主要话题:** Python图形用户界面编程、复古UI设计、怀旧科技美学，以及可能涉及的特定库（如`tkinter`）。
+* **为何值得观看:** 这是一个将现代编程与经典复古美学结合的有趣且快节奏的项目，非常适合对GUI设计或怀旧科技项目感兴趣的编程爱好者。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=7XE-UU_qSKY)**
 
