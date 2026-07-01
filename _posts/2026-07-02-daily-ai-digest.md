@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 02, 2026"
 date: 2026-07-02
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -227,4 +227,148 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   值得所有使用本地AI工具的人观看，因为其研究结论挑战了固有认知，并为如何优化个人配置以获得更快的AI运行速度提供了实用建议。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=QeAHC1jGxck)**
+
+<!-- [Title-Only] -->
+### ZCode: Claude Code from the Makers of GLM
+*   This article likely introduces ZCode, a new AI coding tool or model developed by the team behind GLM (likely referring to the AI model series or company). It may position it as an alternative or evolution in the landscape of AI-powered coding assistants, potentially comparing it to Anthropic's Claude in functionality.
+*   It might be interesting to readers following developments in AI for software development, especially those curious about new players in the competitive market of code generation and assistance. The connection to GLM suggests potential integration or a different approach compared to dominant tools.
+
+### ZCode：由GLM团队打造的Claude编码工具
+*   根据标题推测，本文可能介绍了ZCode，这是一个由GLM（可能指GLM系列AI模型或相关公司）团队开发的新型AI编码工具或模型。文章可能会将其定位为AI编程助手领域的一个替代方案或新进展，或许会将其功能与Anthropic的Claude进行比较。
+*   为何值得关注：对于关注AI在软件开发领域应用的读者，尤其是对AI代码生成和辅助工具市场竞争格局感兴趣的开发者和技术爱好者来说，这篇文章可能揭示了来自GLM团队的新产品及其潜在的独特技术路径或整合方式。
+
+**[Read Original / 阅读原文](https://zcode.z.ai/cn)**
+
+### What To Learn To Be A Real-Time Graphics Programmer
+* Understand modern rendering is split into two main areas: the **CPU side** (learning explicit APIs like DirectX 12, Vulkan, or Metal) and the **GPU side** (mastering lighting, shading, and real-time rendering techniques).
+* Focus on one area at a time; use simpler tools like OpenGL or a game engine to isolate GPU shader work, or aim to get basic meshes rendering on screen first for CPU-side API learning.
+* Essential GPU knowledge includes writing a **path tracer** for offline photo realism and learning **Physically Based Rendering (PBR)**, which ensures assets look good under varied lighting.
+* Build a portfolio showcasing projects: a simple real-time renderer with PBR lighting and effects, and a path tracer. Bonus for integrating both to validate your real-time implementation.
+* Required math includes linear algebra, basic trigonometry, and calculus. Algorithmic fundamentals (like data structures and simple, efficient code) are crucial, with C++ being the standard language for development.
+* Shader languages primarily involve HLSL or GLSL, often transpiled for multi-platform use. While other languages exist, C++ remains dominant for CPU-side programming in game development.
+
+### 成为一名实时图形程序员需要学习什么？
+* 现代渲染分为两大核心部分：**CPU 端**（学习 DirectX 12、Vulkan、Metal 等现代显式 API）和 **GPU 端**（掌握光照、着色及实时渲染技术）。
+* 建议每次专注一个方向。若侧重 GPU 着色器，可使用 OpenGL、WebGL 或游戏引擎简化 CPU 端工作；若学习 CPU 端 API，则先实现基础网格渲染，无需追求画面效果。
+* GPU 核心技能包括编写**路径追踪器**（实现离线逼真渲染）和**基于物理的渲染（PBR）**，后者能确保资产在不同光照条件下保持视觉一致性。
+* 准备展示性作品集：一个集成 PBR 光照和特效的实时渲染器，以及一个路径追踪器。理想情况是将两者结合，用于验证实时渲染的准确性。
+* 必备数学基础为线性代数、基础三角函数及微积分。需掌握基础算法与数据结构（如数组优于链表），C++ 是游戏开发中 CPU 端编程的主流语言。
+* 着色器语言以 HLSL 和 GLSL 为主，常通过转译实现多平台支持。尽管存在其他语言选项，C++ 在 CPU 端开发中仍占绝对主导地位。
+
+**[Read Original / 阅读原文](https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/)**
+
+<!-- [Title-Only] -->
+### FFmpeg 9.1's new AAC encoder
+*   这篇文章很可能详细介绍了开源音视频框架 FFmpeg 的第 9.1 版本中引入的全新 AAC（高级音频编码）编码器。它可能会探讨新编码器的技术改进，例如音频质量、编码速度、资源占用率，或者相比旧版本（如 libfdk-aac 或内置编码器）的优势与适用场景。
+*   对于音视频开发者、内容创作者以及对音频编码技术感兴趣的读者来说，这篇文章可能很有价值。它提供了关于核心工具最新进展的第一手信息，有助于他们优化工作流程、提升产出质量或解决特定的编码难题。
+
+### FFmpeg 9.1的全新AAC编码器
+*   根据标题推测，这篇文章可能深入剖析了 FFmpeg 9.1 版本中新增加的 AAC 音频编码器。内容或涉及该编码器的设计目标、在音质与压缩效率上的性能提升、以及相较于传统方案的改进之处。
+*   此次更新值得关注，因为 FFmpeg 是许多软件和服务背后的核心引擎。新的内置编码器可能意味着更便捷的集成、更低的授权成本（相比某些商业编码器）以及对开发者和创作者更友好的工作环境。了解这一更新有助于把握音视频处理领域的最新动态。
+
+*注：以上介绍完全基于文章标题的推测，具体细节请参考原文。*
+
+**[Read Original / 阅读原文](https://hydrogenaudio.org/index.php/topic,129691.0.html)**
+
+### Exercises Dataset - Multilingual Fitness Exercise Data & Developer Wizard
+* **What it does**: Provides a comprehensive, structured dataset of 1,324 fitness exercises with metadata and step-by-step instructions in 6 languages. It also includes client-side HTML tools: an interactive exercise browser and a developer setup guide that helps scaffold a backend (DB schema, API, LLM prompt) for building fitness apps.
+* **Key features**:
+    * Structured data for 1,324 exercises, including name, body part, equipment, target muscle, and synergist muscles.
+    * Instructions available in English, Spanish, Italian, Turkish, Russian, and Chinese.
+    * Interactive browser (`index.html`) for searching and filtering exercises.
+    * Developer setup wizard (`setup.html`) offering SQL generation for multiple databases, API integration code in 7 languages, and a structured LLM prompt for quick API development.
+    * Clear attribution and handling of media rights (media is not included).
+* **Why it's notable**: It offers a ready-to-use, multilingual dataset that significantly lowers the barrier for developers and researchers to build fitness applications, workout planners, or AI/ML projects. The included interactive tools and backend scaffolding guide make it exceptionally practical for quick prototyping and development.
+
+### 健身数据集 - 多语言健身锻炼数据集与开发者配置向导
+* **功能介绍**：提供了一个结构化的、包含1,324项健身锻炼的综合数据集，每条记录包含锻炼名称、分类、目标肌群、所需设备和六种语言的分步说明。同时提供了客户端的HTML工具：一个交互式锻炼浏览器和一个开发者配置向导，用于快速搭建健身应用的后端（数据库Schema、API代码、LLM提示词）。
+* **主要特点**：
+    * 结构化数据涵盖1,324项锻炼的详细信息。
+    * 锻炼说明支持英语、西班牙语、意大利语、土耳其语、俄语和中文。
+    * 交互式浏览器 (`index.html`) 支持搜索和筛选锻炼。
+    * 开发者配置向导 (`setup.html`) 提供了适用于多种数据库的SQL生成、7种编程语言的API集成代码，以及用于快速生成REST API的结构化LLM提示词。
+    * 明确的媒体版权说明和处理方式（媒体文件未包含在内）。
+*   **为何值得关注**：该仓库提供了一个即用的、多语言数据集，极大降低了开发者和研究人员构建健身应用、训练计划工具或AI/ML项目的门槛。其附带的交互式工具和后端搭建指南对于快速原型设计和开发极具实用性。
+
+**[View Repository / 查看仓库](https://github.com/hasaneyldrm/exercises-dataset)**
+
+### Astryx - A Meta-scale, Agent-Ready Open Source Design System
+*   **What it does:** Astryx is a comprehensive, open-source UI design system with 150+ accessible React components, theming, and tooling. It originated at Meta, powering 13,000+ internal applications, and is now publicly available.
+*   **Key features:**
+    *   **Deeply Customizable:** Components are designed for composition and override. You can customize via CSS variables (for themes) or direct style overrides (like Tailwind), avoiding lock-in.
+    *   **Agent-Ready by Design:** Its API, documentation, and CLI are cohesively designed so that both human developers and AI assistants can use the system effectively with the same workflows and references.
+    *   **Comprehensive Tooling:** Ships with a CLI for scaffolding, documentation, and codemods, alongside core components and seven ready-made, customizable themes.
+    *   **No Build Overhead:** Uses pre-built CSS and typed React components, requiring no special build plugins or styling library adoption.
+*   **Why it's notable:** Astryx is notable for its proven scale (battle-tested in Meta for 8 years), its unique "agent-ready" philosophy aimed at harmonizing human and AI development, and its strong emphasis on developer experience through deep customizability without compromise. Its explosive growth (714 stars today) indicates significant community interest in this modern, flexible approach to design systems.
+
+### Astryx - 来自Meta的大规模、为AI代理准备的开源设计系统
+*   **功能介绍：** Astryx 是一个全面的开源 UI 设计系统，包含 150 多个可访问的 React 组件、主题系统和配套工具。它诞生于 Meta 内部，为超过 13,000 个应用提供支持，现已开源。
+*   **主要特点：**
+    *   **深度可定制化：** 组件专为组合和覆盖而设计。可以通过 CSS 变量（用于主题）或直接样式覆盖（如使用 Tailwind）进行定制，避免了技术锁定。
+    *   **为 AI 代理设计：** 其 API、文档和 CLI 被协同设计，使人开发人员和 AI 助手都能使用相同的工作流程和参考资料来高效构建。
+    *   **全面的工具链：** 提供用于项目搭建、文档生成和代码修改的 CLI 工具，以及核心组件库和七个开箱即用的可定制主题。
+    *   **无构建开销：** 提供预构建的 CSS 和带类型的 React 组件，无需特殊的构建插件或采用特定的样式库。
+*   **为何值得关注：** Astryx 的显著之处在于其经过验证的规模化能力（在 Meta 内部经历了 8 年的实战检验）、其独特的“为代理准备”的哲学（旨在协调人类与 AI 开发），以及它对开发者体验的强烈关注——在不妥协的前提下实现深度可定制化。其爆发式增长（今日新增 714 颗星）表明社区对这种现代化、灵活的系统设计方式抱有浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/facebook/astryx)**
+
+### 🎬 Gary Tan open-sources G-Stack, a Claude Code ops automation toolkit
+**Channel:** AI Honeycove
+*   This video introduces G-Stack, an open-source toolkit created by Gary Tan (YC President). It’s a “Claude Code setup” designed to automate software development workflows by integrating 23 different tools.
+*   **Key topics discussed:**
+    *   The concept and functionality of G-Stack as an all-in-one automation solution.
+    *   The 23 integrated tools that streamline development, from coding to deployment.
+    *   A significant focus on secure support for remote AI agents, a critical consideration for enterprise adoption.
+    *   The importance of open-sourcing such tools to foster community innovation.
+*   **Why it’s worth watching:** This video offers a first look at a practical, ambitious tool from a highly influential figure in the tech/VC space. It’s essential viewing for developers interested in AI-assisted coding, DevOps automation, and building secure, scalable systems for remote AI agents. It showcases a real-world application of LLMs in streamlining the entire development lifecycle.
+
+### 🎬 Gary Tan 开源 G-Stack，一个 Claude Code 操作自动化工具包
+**频道:** AI Honeycove
+*   本视频介绍了由 YC 总裁 Gary Tan 创建的开源工具包 G-Stack。这是一个“Claude Code 设置”，旨在通过集成 23 个不同的工具来自动化软件开发工作流。
+*   **主要话题：**
+    *   G-Stack 作为一体化自动化解决方案的概念和功能。
+    *   集成的 23 个工具如何简化从编码到部署的开发流程。
+    *   特别强调了为远程 AI 代理提供的安全支持，这是企业采用的关键考量。
+    *   开源此类工具以促进社区创新的重要性。
+*   **为何值得观看：** 本视频提供了对一个来自科技/风投领域极具影响力人物打造的实用且雄心勃勃的工具的初步观察。对于对 AI 辅助编码、DevOps 自动化以及为远程 AI 代理构建安全、可扩展系统感兴趣的开发者来说，这是必看内容。它展示了 LLM 在简化整个开发生命周期中的实际应用。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=85P6ygXB9AY)**
+
+### 🎬 How to prepare DSA for Placements ? Placement Series - Ep-1
+**Channel:** take U forward
+*   **What the video covers:** This is the first episode of a placement preparation series. It provides a clear, step-by-step guide for students and beginners who are unsure how to start their Data Structures and Algorithms (DSA) journey specifically for technical placement interviews.
+*   **Key topics discussed:** A simple 3-step roadmap for learning DSA, common pitfalls to avoid, and a strategic approach to building a strong foundation for coding interviews.
+*   **Why it's worth watching:** It offers a structured and actionable plan, saving beginners time and confusion. It's ideal for those starting from scratch or looking for a focused method to tackle DSA for placement exams.
+
+### 🎬 如何为校招准备DSA？系列求职指导 - 第1集
+**频道:** take U forward
+*   **视频内容概述:** 这是求职准备系列的第一集。它专门为对如何开始数据结构与算法（DSA）学习感到困惑的学生和初学者，提供了一份清晰、分步骤的指南，旨在帮助他们为技术面试做准备。
+*   **主要话题:** 学习DSA的简单三步路线图、应避免的常见误区，以及为编码面试打下坚实基础的战略性方法。
+*   **为何值得观看:** 它提供了结构化且可操作的计划，为初学者节省了时间和减少了困惑。非常适合零基础起步或希望用一种有策略的方法来攻克求职DSA的学习者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OjOcpf3eVas)**
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**Channel:** Matthew Berman
+
+*   **What the video covers:** This is a tutorial and overview of Hermes, a new and reportedly powerful AI model. The host explores its capabilities, performance, and how to use it, positioning it as a significant advancement ("the best thing since...").
+*   **Key topics discussed:**
+    *   Introduction to the Hermes AI model.
+    *   Demonstration of its features and practical applications.
+    *   A comparison to previous notable models (like "OpenClaw").
+    *   Includes a promotional segment for the video's sponsor, Hostinger.
+*   **Why it's worth watching:** If you are interested in the latest developments in AI models beyond the major commercial ones, this video provides a hands-on look at a promising new option. It's useful for developers, researchers, and tech enthusiasts wanting to stay updated on open-source or alternative AI tools.
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**频道:** Matthew Berman
+
+*   **视频内容概述：** 这是一个关于Hermes AI模型的教程和介绍视频。主持人深入探讨了这款新模型的功能、性能以及使用方法，并将其誉为一项重大进步（“自...以来最好的东西”）。
+*   **主要话题：**
+    *   新AI模型Hermes的介绍。
+    *   演示其功能和实际应用。
+    *   与此前知名模型（如“OpenClaw”）的比较。
+    *   包含对视频赞助商Hostinger的推广片段。
+*   **为何值得观看：** 如果您对主流商业模型之外的AI最新进展感兴趣，本视频提供了一个对这款备受瞩目的新选项的实践性观察。对于希望掌握AI工具最新动态的开发者、研究人员和技术爱好者来说，非常有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
 
