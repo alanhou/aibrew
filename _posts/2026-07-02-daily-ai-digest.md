@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 02, 2026"
 date: 2026-07-02
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -371,4 +371,186 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看：** 如果您对主流商业模型之外的AI最新进展感兴趣，本视频提供了一个对这款备受瞩目的新选项的实践性观察。对于希望掌握AI工具最新动态的开发者、研究人员和技术爱好者来说，非常有价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
+
+<!-- [Title-Only] -->
+### ZCode – Harness for GLM-5.2
+*   Based solely on the title, this article likely introduces **ZCode**, which appears to be a specialized tool, framework, or interface designed to work with **GLM-5.2**. A "harness" in software development typically refers to a set of tools for testing, developing, or operating a specific system (in this case, GLM-5.2). Therefore, ZCode is probably a development kit, testing environment, or orchestration layer aimed at making it easier to build, test, or deploy applications powered by the GLM-5.2 model.
+*   It might be interesting to readers who are developers, researchers, or AI practitioners working with large language models (LLMs), particularly the GLM series. The article could offer valuable insights into streamlining workflows, improving model integration, or accessing enhanced capabilities for GLM-5.2 through this specialized harness.
+
+### ZCode – 面向 GLM-5.2 的工具套件
+*   仅从标题推测，本文很可能介绍 **ZCode**，它应该是一个专为 **GLM-5.2** 模型设计的工具、框架或交互界面。在软件开发中，“Harness”（工具套件/测试台）通常指用于测试、开发或运行特定系统（此处为 GLM-5.2）的一系列工具。因此，ZCode 很可能是一个旨在简化基于 GLM-5.2 模型的应用程序构建、测试或部署的开发套件、测试环境或编排层。
+*   它可能引起开发者、研究人员或处理大型语言模型（LLM）的AI从业者（尤其是GLM系列用户）的兴趣。这篇文章可能会深入探讨如何通过此专用工具套件优化工作流程、提升模型集成效率，或解锁GLM-5.2的更强大功能。
+
+**[Read Original / 阅读原文](https://zcode.z.ai/en)**
+
+<!-- [Title-Only] -->
+### Show HN: Searchable directory of 22k+ products from worker-owned co-ops
+* This article likely introduces a new online platform or resource that provides a searchable database of over 22,000 products. The key differentiator is that these products all come from worker-owned cooperatives. The post is probably announcing this directory to the Hacker News community for feedback, support, or simply to share a tool built to promote ethical and cooperative business models.
+* It might be interesting to readers interested in ethical consumerism, alternative economic models, community-supported businesses, or those looking to shift spending toward worker-owned enterprises. The scale of the directory (22k+ products) suggests it could be a practical tool for finding specific goods and services from this niche market.
+
+### 展示 HN：可搜索的目录，收录超过2万2千件来自工人合作社的产品
+* 根据标题推测，这篇文章很可能介绍了一个新建的在线平台或资源，提供了一个包含超过22,000件产品的可搜索数据库。其核心特点是，所有产品均来自工人所有制合作社。这篇帖子的主要目的应该是向 Hacker News 社区宣布这个目录，以寻求反馈、支持，或者仅仅是分享一个旨在促进伦理与合作商业模式的工具。
+* 它可能对关注伦理消费、另类经济模式、社区支持型企业，或希望将支出转向工人合作社的读者感兴趣。目录的规模（2万2千件产品）表明，它可能成为寻找这一利基市场中特定商品和服务的实用工具。
+
+**[Read Original / 阅读原文](https://www.workerowned.info/)**
+
+### Building an Open-Source Robot Vacuum: Meet OOMWOO
+* Introduces **oomwoo**, a fully open-source home robot vacuum project, open in hardware, firmware, and software.
+* Key features include **affordable 2D LiDAR mapping**, **ROS 2 / Nav2 navigation**, and **native Home Assistant integration**, all operating **cloud-free**.
+* The project is in its **early public development stage**, starting with a basic v0 milestone (3D-printed chassis, ROS 2 simulation, manual SLAM).
+* Encourages **mass parallel community contribution** via modular development on GitHub, with modules ready for collaboration.
+* Offers **optional convenience parts kits** for sourcing components, but the project remains fully DIY-sourcing friendly.
+
+### 开源扫地机器人构建项目：认识 OOMWOO
+* 介绍 **oomwoo**，一个完全开源的家庭扫地机器人项目，其硬件、固件和软件皆为开放状态。
+* 核心特性包括**经济实惠的二维激光雷达建图**、**ROS 2 / Nav2 导航**以及**原生 Home Assistant 集成**，且**完全无需云服务**。
+* 项目处于**早期公开开发阶段**，首个里程碑（v0）聚焦于基本功能实现：3D打印外壳、ROS 2仿真与手动SLAM。
+* 鼓励社区通过 GitHub 进行**大规模并行模块化开发**，多个模块现已就绪可供协作。
+* 提供**可选的便利套件**用于采购零部件，但项目始终支持完全自主采购。
+
+**[Read Original / 阅读原文](https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/)**
+
+### agency-agents - A complete AI agency at your fingertips
+* **What it does**: Provides a curated collection of specialized AI agent "personalities" designed to act as experts in various fields (frontend development, DevOps, security, etc.). These agents can be installed into multiple AI coding assistants and tools to transform generic AI responses into focused, expert-like deliverables.
+* **Key features**:
+    * **Specialized Agents**: Over 16 divisions and dozens of agents, each with unique personality, workflows, and expertise (e.g., Frontend Developer, Incident Response Commander, Code Reviewer).
+    * **Multi-Tool Compatibility**: Installs and integrates seamlessly with Claude Code, Cursor, Gemini CLI, OpenCode, Codex, and many other popular AI development tools.
+    * **Easy Installation**: Offers a native desktop app (Agency Agents) for one-click browsing and installation, as well as robust shell scripts for command-line setup and customization.
+    * **Production-Ready & Customizable**: Agents provide concrete workflows, code examples, and success metrics, not just generic prompts.
+* **Why it's notable**: It represents a new paradigm of using "agentic teams" rather than single, general-purpose AI assistants. The project gained significant traction quickly (over 2,000 stars in a day) by solving the problem of making AI tools more effective through specialized, pre-configured personas. The accompanying desktop app significantly lowers the barrier to entry.
+
+### agency-agents - 触手可及的完整AI代理机构
+* **功能介绍**：提供一系列精心设计的专业化AI代理“角色”，涵盖前端开发、DevOps、安全等多个领域。这些代理可以被安装到多种AI编码助手和工具中，将通用的AI响应转化为专注、专家级的交付成果。
+* **主要特点**：
+    * **专业化代理**：拥有超过16个部门和数十个代理，每个代理都有独特的个性、工作流程和专业领域（如前端开发、事件响应指挥官、代码审查员）。
+    * **广泛工具兼容性**：可无缝安装并集成到Claude Code、Cursor、Gemini CLI、OpenCode、Codex等众多主流AI开发工具中。
+    * **简易安装方式**：提供原生桌面应用（Agency Agents）实现一键浏览和安装，同时也提供强大的Shell脚本用于命令行安装和自定义配置。
+    * **生产就绪与可定制**：代理提供了具体的工作流程、代码示例和成功衡量标准，而不仅仅是通用的提示词。
+*   **为何值得关注**：它代表了一种使用“代理团队”而非单一通用AI助手的新范式。该项目通过解决如何利用专业化、预配置的角色让AI工具更高效的问题，迅速获得了大量关注（一天内获得超过2000颗星）。配套的桌面应用极大地降低了使用门槛。
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### usestrix/strix - 开源的 AI 自动渗透测试工具
+*   **功能介绍**：这是一个基于AI的开源渗透测试工具，能够自主模拟黑客攻击，动态运行目标代码，发现应用漏洞并利用真实的概念验证（PoC）进行验证。它集成了完整的渗透测试工具链，旨在替代传统的人工测试和易产生误报的静态分析工具。
+*   **主要特点**：
+    *   **全栈攻击能力**：涵盖侦察、漏洞利用和验证的完整工具集。
+    *   **多智能体协作**：支持多个AI渗透测试员组成团队，并行协作以扩展测试规模。
+    *   **真实漏洞验证**：提供可工作的PoC，而非仅报告可疑问题，确保结果可靠。
+    *   **开发者友好**：通过命令行界面提供可操作的漏洞发现和修复指导，并支持自动生成补丁和合规报告。
+    *   **CI/CD集成**：可无缝集成到GitHub Actions等持续集成流程中，在代码合并前自动扫描漏洞。
+*   **为何值得关注**：
+    *   **趋势热度**：项目在GitHub上单日获得超过1,200颗星，增长迅猛。
+    *   **创新方法**：利用多智能体AI进行自主化的渗透测试，代表了自动化安全测试的前沿方向。
+    *   **实用性强**：解决了传统渗透测试耗时长、静态分析误报多的痛点，为开发和安全团队提供了高效、精准的解决方案。
+
+### usestrix/strix - 开源的 AI 自动渗透测试工具
+*   **功能介绍**：这是一个基于AI的开源渗透测试工具，能够自主模拟黑客攻击，动态运行目标代码，发现应用漏洞并利用真实的概念验证（PoC）进行验证。它集成了完整的渗透测试工具链，旨在替代传统的人工测试和易产生误报的静态分析工具。
+*   **主要特点**：
+    *   **全栈攻击能力**：涵盖侦察、漏洞利用和验证的完整工具集。
+    *   **多智能体协作**：支持多个AI渗透测试员组成团队，并行协作以扩展测试规模。
+    *   **真实漏洞验证**：提供可工作的PoC，而非仅报告可疑问题，确保结果可靠。
+    *   **开发者友好**：通过命令行界面提供可操作的漏洞发现和修复指导，并支持自动生成补丁和合规报告。
+    *   **CI/CD集成**：可无缝集成到GitHub Actions等持续集成流程中，在代码合并前自动扫描漏洞。
+*   **为何值得关注**：
+    *   **趋势热度**：项目在GitHub上单日获得超过1,200颗星，增长迅猛。
+    *   **创新方法**：利用多智能体AI进行自主化的渗透测试，代表了自动化安全测试的前沿方向。
+    *   **实用性强**：解决了传统渗透测试耗时长、静态分析误报多的痛点，为开发和安全团队提供了高效、精准的解决方案。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### Vibe-Trading - AI-Powered Personal Trading Agent Platform
+
+*   **What it does**: Vibe-Trading is an open-source platform that allows users to deploy and manage a personal, AI-driven trading agent with a single command. It aims to provide a comprehensive framework for building, backtesting, and executing trading strategies, integrating multiple market data sources and broker connections.
+*   **Key features**:
+    *   **One-Command Setup**: Simple `pip install` for quick deployment.
+    *   **Market Data Integration**: Connects to various financial data providers (like Tushare, Yahoo Finance, SEC EDGAR).
+    *   **Shadow Account**: A feature for rule extraction and strategy generation based on historical or simulated performance.
+    *   **Full Trading Capabilities**: From analysis and backtesting to live/paper trade execution (with broker connectors for platforms like Robinhood and Trading 212).
+    *   **Multi-Platform Messaging**: The agent can be attached to 16+ message adapters (Telegram, Slack, Discord, WeChat, etc.) for real-time notifications and research delivery.
+    *   **Active Development**: Features a responsive community and frequent updates focusing on security, platform compatibility, and new integrations.
+*   **Why it's notable**: It stands out for its strong focus on usability ("one command"), comprehensive feature set covering the entire trading workflow, and its ambitious goal of creating a highly integrated, cross-platform personal trading assistant. Its recent surge in stars (694 today) indicates significant and growing community interest in its vision of democratizing AI-powered trading tools.
+
+### Vibe-Trading - 您的个性化AI交易代理平台
+
+*   **功能介绍**：Vibe-Trading 是一个开源平台，允许用户通过一行命令部署和管理一个由AI驱动的个人交易代理。它旨在提供一个全面的框架，用于构建、回测和执行交易策略，集成了多种市场数据源和券商连接器。
+*   **主要特点**：
+    *   **一键部署**：通过简单的 `pip install` 即可快速安装。
+    *   **市场数据集成**：连接多种金融数据提供商（如 Tushare、Yahoo Finance、SEC EDGAR）。
+    *   **Shadow Account（影子账户）**：一项基于历史或模拟表现进行规则提取和策略生成的功能。
+    *   **全功能交易能力**：涵盖从分析、回测到实盘/模拟交易执行的完整流程（支持 Robinhood、Trading 212 等券商连接器）。
+    *   **跨平台即时通讯集成**：代理可以连接至 16+ 种消息适配器（Telegram、Slack、Discord、微信等），用于实时通知和研究推送。
+    *   **活跃的开发社区**：项目更新频繁，重点关注安全性、平台兼容性和新功能集成。
+*   **为何值得关注**：该项目的突出之处在于其对“一键式”易用性的强调、覆盖完整交易工作流的综合功能集，以及创建一个高度集成、跨平台个人交易助手的雄心愿景。其近期激增的星标数（今日694颗）表明社区对其将AI交易工具民主化的愿景产生了巨大且持续增长的兴趣。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/Vibe-Trading)**
+
+### 🎬 AI That Discovers Math Will Also Explain It Better Than Us - Grant Sanderson
+**Channel:** Dwarkesh Patel
+* This video features a deep conversation with Grant Sanderson, the creator of the beloved math YouTube channel 3Blue1Brown. It explores the fascinating intersection of artificial intelligence and mathematical discovery.
+* **Key topics discussed** likely include the potential for AI to formulate new mathematical theories and conjectures, the nature of mathematical intuition, how AI's explanatory methods might surpass human pedagogical techniques, and the future of creative discovery in science and math.
+* **Why it's worth watching:** Grant Sanderson is a master of mathematical communication. Hearing his perspective on how AI might not only solve but also *explain* complex concepts promises unique insights into the future of education, creativity, and the very definition of understanding.
+
+### 🎬 AI 发现数学的同时，也将比我们更好地解释它 - Grant Sanderson
+**频道:** Dwarkesh Patel
+* 本视频是与知名数学YouTube频道“3Blue1Brown”的创作者Grant Sanderson的深度对话。它探讨了人工智能与数学发现之间迷人的交集。
+* **讨论的主要话题** 可能包括：人工智能提出新数学理论和猜想的潜力、数学直觉的本质、AI的解释方法如何超越人类的教学技巧，以及科学与数学领域创造性发现的未来。
+* **为何值得观看：** Grant Sanderson是数学传播的大师。聆听他关于AI如何不仅解决问题，还能更好地“解释”复杂概念的观点，将为我们深入了解教育、创造力的未来，以及“理解”的真正定义带来独特见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kmv7ayxnE-Y)**
+
+### 🎬 The weird history of the internet...
+**Channel:** Fireship
+*   The video explores the bizarre, lesser-known events and milestones from the development of the internet.
+*   Key topics likely include early protocols, strange inventions, security flaws, and pivotal moments that shaped the web in unexpected ways.
+*   It's worth watching for its engaging, fast-paced delivery of fascinating trivia that gives context to the digital infrastructure we use daily.
+
+### 🎬 互联网的奇特历史...
+**频道:** Fireship
+*   视频探索了互联网发展过程中那些奇特且鲜为人知的事件和里程碑。
+*   主要话题可能包括早期的协议、奇怪的发明、安全漏洞以及以意想不到的方式塑造了网络的关键时刻。
+*   以其引人入胜、节奏明快的叙事风格，讲述塑造了我们日常使用的数字基础设施的迷人历史轶事，值得一看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7B0ydm64cV8)**
+
+### 🎬 Taste is more than aesthetics
+**Channel:** Lenny's Podcast
+*   This video explores the multifaceted concept of "taste" beyond mere visual appeal, particularly within the realms of technology and product development.
+*   Key topics include the role of taste in product decision-making, how AI (with references to models like ChatGPT) interacts with and challenges human taste, and the practical implications for building successful products.
+*   It's worth watching for its deep dive into a nuanced skill that is crucial for product leaders, designers, and creators. It offers valuable perspectives on balancing intuition, data, and emerging AI tools in the creative process.
+
+### 🎬 [Taste is more than aesthetics]
+**频道:** Lenny's Podcast
+*   本视频深入探讨了“品味”的多维度概念，它超越了单纯的美学范畴，尤其聚焦于技术和产品开发领域。
+*   主要话题涵盖品味在产品决策中的作用，人工智能（特别提及ChatGPT等模型）如何与人类品味互动并带来挑战，以及这对打造成功产品所具有的实际意义。
+*   它值得观看，因为它对产品负责人、设计师和创作者所必备的关键技能进行了深入剖析。内容提供了关于如何在创意过程中平衡直觉、数据以及新兴人工智能工具的宝贵见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=F4y64akVDjI)**
+
+### 🎬 Your OS Changes Everything for Local AI
+**Channel:** Alex Ziskind
+*   This video investigates how different operating systems (like Windows, Linux, macOS) can significantly impact the performance of running AI models locally on your own hardware.
+*   The core of the content is a comparative benchmark, where one surprising result prompted the creator to re-verify their data, leading to a deeper analysis that tells a "different story" from initial assumptions.
+*   It's worth watching for its practical, data-driven insights that go beyond hype, offering concrete advice for anyone setting up a local AI environment. It also introduces a tool, ChatLLM, for experimentation.
+
+### 🎬 操作系统如何彻底改变本地AI体验
+**频道:** Alex Ziskind
+*   视频深入探讨了不同操作系统（如Windows、Linux、macOS）在本地硬件上运行AI模型时，对其性能产生的截然不同的影响。
+*   内容核心是一组对比基准测试。其中一个出人意料的结果促使作者复核了所有数据，最终的分析结果讲述了与初始预期“截然不同”的故事。
+*   值得观看的原因在于它提供了基于实际测试的、超越炒作的实用洞察，为任何计划部署本地AI环境的用户提供了具体参考。视频还推荐了一个可用于实践的工具ChatLLM。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QeAHC1jGxck)**
+
+### 🎬 Ornith 1.0 Beats Claude Opus 4.7 — and It's Free
+**Channel:** DIY Smart Code
+* The video introduces Ornith-1.0, an open-source coding LLM that reportedly matches the performance of the proprietary model Claude Opus 4.7.
+* It discusses the model's open-weights architecture and its ability to run locally on a consumer laptop.
+* This is worth watching for developers and AI enthusiasts interested in high-performance, free, and self-hostable alternatives for coding assistance.
+
+### 🎬 Ornith 1.0 性能超越 Claude Opus 4.7 且完全免费
+**频道:** DIY Smart Code
+* 视频介绍了一款名为 Ornith-1.0 的开源编码大语言模型，其性能据称可匹敌商业模型 Claude Opus 4.7。
+* 内容涵盖了该模型的开源权重架构，以及它可以在个人笔记本电脑上本地运行的特点。
+* 对于寻求高性能、免费且可自托管编码辅助工具的开发者和AI爱好者而言，本视频值得观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8Cw1jX6o9w0)**
 
