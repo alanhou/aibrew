@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 02, 2026"
 date: 2026-07-02
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，12个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -553,4 +553,223 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 对于寻求高性能、免费且可自托管编码辅助工具的开发者和AI爱好者而言，本视频值得观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8Cw1jX6o9w0)**
+
+### The Broken Gauge: AI's Illusion of Speed in Developer Productivity
+
+* **Core Thesis**: There's a dangerous disconnect between how fast developers *feel* with AI tools and how fast they *actually* are, especially in experienced teams on large codebases.
+* **Key Evidence**: A controlled trial showed experienced developers *felt* ~20% faster while being *measured* at ~19% slower. This "broken gauge" inverts their own sense of velocity.
+* **Why It Happens**: AI accelerates typing (the old bottleneck) but adds new overhead in prompting, waiting, and reviewing subtly incorrect output at the verification stage.
+* **Broader Data Corroboration**: Large-scale metrics show increased code generation, larger pull requests, and more merging, but no net gain in delivery and increased instability/burnout downstream.
+* **Industry Signal**: Tool investment is shifting towards "agent-first" IDEs focused on reviewing AI output, acknowledging verification as the new primary bottleneck.
+* **Conclusion & Advice**: Teams must stop steering by feeling. Measure production output, re-staff review/verification processes, and treat productivity claims based solely on feeling as unproven until validated by objective data.
+
+### 仪表盘失灵：AI 在开发者生产力中的速度幻觉
+
+* **核心论点**: 开发者使用 AI 工具的 *感觉* 速度与 *实际* 速度之间存在危险脱节，尤其在经验丰富的团队处理大型代码库时尤为明显。
+* **关键证据**: 一项对照试验显示，经验丰富的开发者 *感觉* 快了约 20%，但 *实际测量* 慢了约 19%。这种“失灵的仪表盘”颠倒了他们对自身效率的认知。
+* **原因分析**: AI 加速了打字（旧的瓶颈），但在提示、等待和审查常常存在细微错误的输出这一新阶段，增加了额外负担。
+* **更广泛数据支撑**: 大规模指标显示代码生成量、拉取请求规模和合并量增加，但交付总量没有净增长，且下游的稳定性和开发者倦怠感加剧。
+* **行业信号**: 工具投资正转向专注于审查 AI 输出的“代理优先” IDE，这承认了验证阶段已成为新的主要瓶颈。
+* **结论与建议**: 团队必须停止凭感觉判断。应衡量生产环境中的实际产出，重新配置人员以加强审查/验证流程，并将任何仅基于感觉的生产力主张视为未经证实，直至得到客观数据的验证。
+
+**[Read Original / 阅读原文](https://intrepidkarthi.com/writing/the-gauge-broke/)**
+
+### Kimi K2.7 Code is Now Generally Available in GitHub Copilot
+* Kimi K2.7 Code, an open-weight model, is now a selectable option in the GitHub Copilot model picker, providing more choice and a lower-cost option.
+* It is hosted by GitHub on Microsoft Azure and billed based on usage at provider list pricing.
+* The rollout begins for Copilot Pro, Pro+, and Max plans, with gradual expansion to Business, Enterprise, and additional platforms in the coming weeks.
+* The model can be selected in multiple environments, including VS Code, Visual Studio, GitHub Mobile, JetBrains, Xcode, and others.
+* For Copilot Business and Enterprise, the model is **off by default** and must be enabled by a plan administrator after reviewing security and compliance requirements.
+
+### Kimi K2.7 Code 现在已在 GitHub Copilot 中全面发布
+* Kimi K2.7 Code 是一个开源权重模型，现已作为可选项加入 GitHub Copilot 模型选择器，提供更多选择和更低成本的编码工作流选项。
+* 该模型由 GitHub 托管在 Microsoft Azure 上，并按使用量以供应商列表价格计费。
+* 发布将逐步推进，首先面向 Copilot Pro、Pro+ 和 Max 计划，未来几周内将扩展到商业版、企业版及其他平台。
+* 用户可以在多个环境中选择该模型，包括 VS Code、Visual Studio、GitHub Mobile、JetBrains、Xcode 等。
+* 对于 Copilot 商业版和企业版，该模型**默认关闭**，计划管理员必须在审查安全和合规要求后，在 Copilot 设置中启用此模型策略。
+
+**[Read Original / 阅读原文](https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/)**
+
+<!-- [Title-Only] -->
+### ZCode – Harness for GLM-5.2
+*   This article likely introduces "ZCode," which appears to be a specialized tool, framework, or "harness" designed for working with a system or model named "GLM-5.2." Based on common naming conventions in tech, GLM could refer to a large language model (similar to GPT) or a specific generative model, and ZCode might be a development environment, testing suite, or integration toolkit to build, manage, or deploy applications using it.
+*   It would be interesting to developers, AI engineers, or researchers looking for efficient tools to interact with and leverage the capabilities of the GLM-5.2 model, potentially simplifying development workflows or enhancing performance.
+
+### ZCode – GLM-5.2 工具套件
+*   根据标题推测，本文很可能介绍“ZCode”，这是一个专门为“GLM-5.2”系统或模型设计的工具、框架或“套件”。在技术语境下，GLM 可能指代一个大型语言模型，而 ZCode 可能是用于构建、管理或部署相关应用的开发环境、测试工具集或集成套件。
+*   对于从事 AI 开发、研究或需要利用 GLM-5.2 模型能力的工程师与开发者而言，了解这样的专用工具可能非常有价值，因为它有望简化开发流程或提升工作效率。
+
+**[Read Original / 阅读原文](https://zcode.z.ai/en)**
+
+### agency-agents - An AI Agency with Specialized Agent Personas
+* **What it does**: This repository provides a complete "AI agency" in the form of a collection of meticulously crafted agent personalities. Each agent is a specialized expert with defined personality, workflows, and deliverables, designed to be integrated into AI coding assistants like Claude Code, Cursor, and Gemini CLI.
+* **Key features**: Includes a diverse roster of agents spanning multiple divisions (Engineering, Marketing, Design, Security, etc.), a native desktop app (macOS/Linux/Windows) for easy installation and updates, and shell scripts for manual integration with various AI tools. Agents are personality-driven and production-ready.
+* **Why it's notable**: It's trending rapidly (2,114 stars in a day) because it offers a novel way to augment AI assistants with deep, specialized expertise and consistent character. The project bridges the gap between generic AI prompts and having a "dream team" of AI specialists, making advanced workflows more accessible. The addition of a user-friendly native app significantly lowers the barrier to adoption.
+
+### agency-agents - 指尖上的AI专家团队
+* **功能介绍**：此仓库提供了一个完整的“AI代理机构”，其核心是一系列精心设计的AI代理角色。每个代理都是特定领域的专家，拥有独特的人格、工作流程和可交付成果，旨在集成到Claude Code、Cursor和Gemini CLI等AI编码助手中。
+* **主要特点**：包含涵盖工程、营销、设计、安全等多个部门的多元化代理阵容；提供原生桌面应用程序（支持macOS/Linux/Windows），便于安装和更新；提供Shell脚本，支持与多种AI工具手动集成。代理角色个性鲜明且已具备生产就绪状态。
+* **为何值得关注**：该项目正迅速获得关注（一天内获得2,114颗星），因为它提供了一种新颖的方式来增强AI助手，使其具备深厚的专业知识和稳定的角色一致性。它在通用AI提示与拥有一个“梦之队”AI专家之间架起了桥梁，使高级工作流变得更加易于使用。此外，易于使用的原生应用程序大幅降低了采用门槛。
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### Strix - Open-source AI Penetration Testing Tool
+*   **What it does**: Strix is an autonomous AI penetration testing tool that acts like a real hacker. It dynamically runs application code, identifies vulnerabilities, and validates them by generating actual proof-of-concept (PoC) exploits, moving beyond the false positives common in static analysis.
+*   **Key features**:
+    *   **Full pentesting toolkit**: Includes reconnaissance, exploitation, and validation capabilities out of the box.
+    *   **Multi-agent orchestration**: Utilizes teams of AI agents that collaborate to perform comprehensive, scalable security testing.
+    *   **Real exploit validation**: Provides working PoCs for vulnerabilities, ensuring findings are accurate and actionable.
+    *   **Developer-first CLI**: Delivers clear, actionable findings with integrated remediation guidance.
+    *   **Auto-fix & reporting**: Can generate security patches and compliance-ready pentest reports.
+    *   **CI/CD Integration**: Seamlessly works with GitHub Actions and other pipelines for continuous security scanning.
+*   **Why it's notable**: Strix is trending due to its powerful combination of AI-driven automation and developer-centric design. It drastically reduces the time and cost of penetration testing (from weeks to hours) while providing validated, high-confidence results. Its open-source nature, strong community presence (Discord), and easy integration into modern DevSecOps workflows make it a highly attractive option for both individual developers and security teams.
+
+### Strix - 开源AI渗透测试工具
+*   **功能介绍**: Strix 是一款自主的AI渗透测试工具，它能像真正的黑客一样工作。通过动态运行应用程序代码，识别漏洞并生成实际的概念验证（PoC）漏洞利用代码来验证发现，有效避免了传统静态分析工具常见的误报问题。
+*   **主要特点**:
+    *   **全套渗透测试工具包**: 开箱即用，包含侦察、渗透利用和验证能力。
+    *   **多智能体协作**: 使用多个AI智能体协同工作，执行全面、可扩展的安全测试。
+    *   **真实漏洞验证**: 为漏洞提供可工作的PoC，确保发现结果准确且可操作。
+    *   **开发者优先的命令行界面**: 提供清晰、可操作的修复建议。
+    *   **自动修复与报告**: 可生成安全补丁和合规的渗透测试报告。
+    *   **CI/CD集成**: 与GitHub Actions等流水线无缝协作，实现持续安全扫描。
+*   **为何值得关注**: Strix 因其将AI自动化与开发者友好设计相结合的强大能力而备受关注。它将渗透测试时间从数周缩短至数小时，同时提供高置信度的验证结果，显著降低了安全测试的成本和门槛。其开源属性、活跃的社区（Discord）以及与现代DevSecOps工作流的轻松集成，使其成为个人开发者和安全团队极具吸引力的选择。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### HKUDS/Vibe-Trading - Your Personal Trading Agent
+*   **What it does:** Vibe-Trading is an open-source, command-driven platform that equips an AI agent with comprehensive trading capabilities. It allows users to start with a single command to build, backtest, and potentially execute trading strategies across stocks, crypto, and other financial instruments.
+*   **Key features:**
+    *   **Comprehensive Agent Framework:** Provides a full-stack environment with a FastAPI backend, React frontend, and a Python SDK for AI-driven trading research and execution.
+    *   **Multi-Platform Connectivity:** Integrates with numerous brokers (e.g., Robinhood, Trading 212) and data sources. A major feature is its runtime for attaching to 16+ instant messaging channels (Telegram, Discord, WeChat, etc.) for research delivery.
+    *   **Advanced Development & Safety:** Includes a "Shadow Account" for strategy rule extraction, live advisory safety features, robust API security (CSRF hardening), and tools for rigorous backtesting and validation.
+*   **Why it's notable:** The project is highly active and trending (694 stars in a day), showcasing rapid development focused on a powerful, all-in-one solution for AI-powered trading. Its broad integration ecosystem, security-first updates, and the unique IM channel runtime make it a standout, community-driven tool for both algorithmic traders and developers building trading AI.
+
+### HKUDS/Vibe-Trading - 你的个人交易代理
+*   **功能介绍：** Vibe-Trading 是一个开源的、基于命令行的平台，旨在为AI代理提供全面的交易能力。用户只需一个命令，即可构建、回测并可能执行覆盖股票、加密货币等多种金融工具的交易策略。
+*   **主要特点：**
+    *   **一体化代理框架：** 提供了完整的全栈环境，包括FastAPI后端、React前端和Python SDK，用于AI驱动的交易研究与执行。
+    *   **多平台连接性：** 集成了众多经纪商（如Robinhood、Trading 212）和数据源。其一个核心特色是**IM通道运行时**，可将代理会话接入16+即时通讯平台（Telegram、Discord、微信等）用于研究投递。
+    *   **高级开发与安全特性：** 包含用于策略规则提取的“影子账户”、实盘顾问安全机制、强大的API安全防护（CSRF加固），以及用于严格回测和验证的工具。
+*   **为何值得关注：** 该项目活跃度极高且迅速获得关注（单日获694星），其开发聚焦于提供一个强大的、面向AI驱动交易的一体化解决方案。其广泛的集成生态系统、对安全性的重视以及创新的IM通道运行时，使其成为算法交易者和开发交易AI的开发者们一个突出且由社区驱动的工具。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/Vibe-Trading)**
+
+### DeepSpec - Full-Stack Codebase for Speculative Decoding Research
+*   **What it does**: DeepSpec is a complete toolkit from DeepSeek AI for training and evaluating "draft models" for speculative decoding—a technique to accelerate LLM inference by having a smaller model predict outputs for a larger "target" model. It covers the entire workflow from data preparation to model training and rigorous evaluation.
+*   **Key features**:
+    *   **End-to-End Pipeline**: Includes scripts for data preparation, draft model training (DSpark, DFlash, Eagle3), and evaluation on established benchmarks.
+    *   **Pre-trained Checkpoints**: Provides ready-to-use checkpoints for several algorithms and target models (Qwen3, Gemma-4), aligning with the results in its associated research paper.
+    *   **Optimized for Single-Node Training**: Configurations and scripts are designed for setups with multiple GPUs (e.g., 8 GPUs on one node).
+    *   **Benchmark Integration**: Evaluates draft model performance across a wide range of tasks (e.g., GSM8K, HumanEval, MT-Bench).
+*   **Why it's notable**: It is the official, production-grade implementation from a leading AI research lab (DeepSeek) for their speculative decoding algorithms (like DSpark). It significantly lowers the barrier for researchers and engineers to experiment with and build upon state-of-the-art techniques for speeding up LLM inference, backed by published results and open checkpoints.
+
+### DeepSpec - 推测解码算法训练与评估的全栈代码库
+*   **功能介绍**: DeepSpec 是由 DeepSeek AI 开发的完整工具包，用于训练和评估用于推测解码的“草稿模型”。推测解码是一种通过让较小模型预测较大“目标”模型的输出来加速大语言模型推理的技术。该工具包涵盖了从数据准备、模型训练到评估的完整工作流程。
+*   **主要特点**:
+    *   **端到端流程**: 提供数据准备、草稿模型训练（支持 DSpark、DFlash、Eagle3 算法）和基准测试评估的完整脚本。
+    *   **预训练检查点**: 提供多种算法和目标模型（如 Qwen3、Gemma-4）的预训练检查点，其性能与相关研究论文中的表格结果一致。
+    *   **为单节点训练优化**: 配置和脚本针对单节点多 GPU（例如 8 块 GPU）的环境进行设计。
+    *   **基准测试集成**: 在多种任务（如 GSM8K、HumanEval、MT-Bench）上评估草稿模型的性能。
+*   **为何值得关注**: 这是来自顶尖 AI 研究实验室（DeepSeek）的官方、可用于生产环境的其实现，集成了他们的推测解码算法（如 DSpark）。它极大地降低了研究人员和工程师实验和构建用于加速大语言模型推理的前沿技术的门槛，并有已发表的结果和开源检查点作为支持。
+
+**[View Repository / 查看仓库](https://github.com/deepseek-ai/DeepSpec)**
+
+### Krishnagangwal/CS-Fundamentals - Curated Computer Science Resources for Placement Preparation
+*   **What it does**: This repository is a comprehensive, curated collection of Computer Science fundamentals designed specifically for placement and interview preparation. It aggregates PDFs, notes, cheatsheets, and question banks covering all major CS subjects.
+*   **Key features**:
+    *   Organized folder structure covering **DSA, Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design, and Software Engineering**.
+    *   Includes topic-specific resources like notes, revision materials, and dedicated interview question banks for each subject.
+    *   Provides general resources such as **HR interview questions, a LeetCode problem set, a cover letter template, and a list of hiring companies**.
+    *   Content gathered from various sources, presented as a one-stop reference.
+*   **Why it's notable**: It serves as a highly valuable, centralized resource hub for CS students and freshers preparing for technical interviews. Its popularity (1364 stars) indicates strong community approval for its comprehensive coverage and practical utility in consolidating essential study materials in one place.
+
+### Krishnagangwal/CS-Fundamentals - 面试准备的计算机科学基础精选资源
+*   **功能介绍**: 该仓库是一个全面、精心策划的计算机科学基础知识集合，专为求职面试准备而设计。它整合了涵盖所有主要CS学科的PDF文件、笔记、速查表和题库。
+*   **主要特点**:
+    *   采用清晰的文件夹结构，涵盖**数据结构与算法（DSA）、计算机网络、数据库管理系统与SQL、面向对象编程（OOPs）、操作系统、系统设计和软件工程**。
+    *   为每个学科提供主题资源，包括笔记、复习材料和专门的面试题库。
+    *   提供通用资源，如**HR面试问题、LeetCode题库、求职信模板和招聘公司清单**。
+    *   资源来源于网络各处，是一个一站式参考平台。
+*   **为何值得关注**: 它为准备技术面试的CS学生和应届生提供了一个极其宝贵、中心化的资源中心。其高星标数（1364星）表明社区对其内容的全面性和实用性给予了高度认可，它能有效帮助学生将关键学习材料集中于一处，节省查找时间。
+
+**[View Repository / 查看仓库](https://github.com/Krishnagangwal/CS-Fundamentals)**
+
+### 🎬 AI That Discovers Math Will Also Explain It Better Than Us - Grant Sanderson
+**Channel:** Dwarkesh Patel
+*   What the video covers
+    A deep conversation with Grant Sanderson (3Blue1Brown) exploring the profound future of artificial intelligence within mathematics. The discussion moves beyond AI merely solving problems to a future where it discovers entirely new mathematical concepts and, crucially, develops a superior ability to explain them to humans.
+*   Key topics discussed
+    The evolving role of AI in mathematical research, the potential for AI to generate human-comprehensible intuition for complex ideas, the future of education in an AI-augmented world, and the philosophical implications of machines not just doing math but understanding and teaching it.
+*   Why it's worth watching
+    Featuring one of the most respected voices in math communication, Grant Sanderson, this interview offers a uniquely insightful and optimistic (yet thoughtful) perspective on how AI will transform our relationship with fundamental knowledge. It goes beyond the hype to discuss the practical and educational synergy between AI and human understanding.
+
+### 🎬 人工智能不仅将发现数学，还将比我们更擅长解释它 - Grant Sanderson
+**频道:** Dwarkesh Patel
+*   视频内容概述
+    本视频是对3Blue1Brown创作者Grant Sanderson的一次深度访谈，探讨了人工智能在数学领域的深远未来。讨论超越了AI仅仅解决现有问题的范畴，聚焦于一个AI将发现全新数学概念，并关键性地发展出向人类进行更优解释能力的未来。
+*   主要话题
+    人工智能在数学研究中的不断演变的角色、AI为复杂概念生成人类可理解直觉的潜力、在AI增强世界中教育的未来，以及机器不仅能做数学，还能理解和教授数学的哲学意义。
+*   为何值得观看
+    本对话邀请了数学传播领域最受尊敬的声音之一Grant Sanderson，他对AI将如何变革我们与基础知识的关系提供了独特、富有洞察力且积极（同时审慎）的视角。它超越了技术炒作，深入探讨了AI与人类理解之间的实践与教育协同。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=kmv7ayxnE-Y)**
+
+### 🎬 The weird history of the internet...
+**Channel:** Fireship
+*   What the video covers
+*   Key topics discussed
+*   Why it's worth watching
+
+### 🎬 互联网的奇葩历史...
+**频道:** Fireship
+*   视频内容概述
+*   主要话题
+*   为何值得观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7B0ydm64cV8)**
+
+### 🎬 Taste is more than aesthetics
+**Channel:** Lenny's Podcast
+* This video delves into the multifaceted concept of "taste," moving beyond a simple sense of aesthetics to explore it as a critical, compound skill for product leadership and innovation.
+* Key topics include defining taste as a blend of intuition, expertise, and pattern recognition; how it applies to product decisions beyond just design; and the potential role and limitations of AI (like ChatGPT) in developing or approximating taste.
+* It's worth watching for anyone in product, design, or tech leadership, as it offers a framework for understanding and cultivating this often-vague but crucial competency, especially in an era where AI tools are becoming more prevalent.
+
+### 🎬 品味远不止于审美
+**频道:** Lenny's Podcast
+* 视频深入探讨了“品味”这一多维概念，超越了单纯的审美范畴，将其视为一种对产品领导力和创新至关重要的复合能力。
+* 主要话题包括：将品味定义为直觉、专业知识和模式识别的结合；品味如何超越设计应用于产品决策；以及人工智能（如 ChatGPT）在培养或近似品味方面的潜力和局限性。
+* 对于产品、设计或科技领域的领导者来说，这是一次值得观看的讨论。它提供了一个理解并培养这种常显模糊但至关重要能力的框架，尤其是在AI工具日益普及的今天。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=F4y64akVDjI)**
+
+### 🎬 Your OS Changes Everything for Local AI
+**Channel:** Alex Ziskind
+
+*   This video investigates how the choice of operating system (Linux, Windows, macOS) dramatically impacts the performance and efficiency of running large language models locally on consumer hardware.
+*   The key topic is a detailed benchmark comparison across different OS environments, revealing surprising results that challenge common assumptions about local AI performance.
+*   It's worth watching because it provides practical, data-driven insights for anyone looking to set up a local AI workflow. The findings could save you time and frustration by guiding you to the most performant setup for your hardware.
+
+### 🎬 操作系统如何改变本地AI的一切
+**频道:** Alex Ziskind
+
+*   本视频深入研究了操作系统（Linux、Windows、macOS）的选择如何对消费级硬件上运行本地大语言模型的性能和效率产生巨大影响。
+*   主要话题是跨不同操作系统环境的详细基准测试对比，其揭示的意外结果挑战了人们对本地AI性能的常见假设。
+*   值得观看的原因在于，它为任何希望建立本地AI工作流的人提供了实用的、数据驱动的见解。其研究结果可以通过指导你选择最适合你硬件的高性能设置，来为你节省时间和避免挫折。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=QeAHC1jGxck)**
+
+### 🎬 How to prepare DSA for Placements ? Placement Series - Ep-1
+**Channel:** take U forward
+*   **What the video covers:** This is the first episode in a placement series, designed to provide a clear starting point for students confused about how to begin Data Structures and Algorithms (DSA) preparation for coding interviews. It outlines a simple 3-step roadmap.
+*   **Key topics discussed:** The foundational roadmap for DSA, the importance of a structured approach, and guidance on avoiding common pitfalls in the early stages of preparation.
+*   **Why it's worth watching:** It directly addresses the paralysis many beginners feel and offers a actionable, step-by-step plan. As the series opener, it sets a clear path forward, making it essential viewing for anyone starting their interview prep journey.
+
+### 🎬 如何为面试准备DSA？求职系列 - 第1集
+**频道:** take U forward
+*   **视频内容概述：** 作为求职系列的第一集，本视频专为对如何开始数据结构与算法（DSA）学习以应对编程面试感到困惑的学生设计。它提供了一个简单的三步准备路线图。
+*   **主要话题：** DSA学习的路线图框架、结构化学习方法的重要性，以及如何避免在准备初期的常见错误。
+*   **为何值得观看：** 它精准地解决了众多初学者面对的“不知从何下手”的困境，并提供了可操作的分步计划。作为系列的开篇，它为求职准备指明了清晰的方向，是任何刚开始准备面试的人不可或缺的观看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OjOcpf3eVas)**
 
