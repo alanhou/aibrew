@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 03, 2026"
 date: 2026-07-03
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 16 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，16个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -659,4 +659,167 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看的原因在于，这是对当前最具前景的开源大模型之一的一份全面且注重实践的指南，并以主持人特有的技术深度与幽默风格相结合的方式呈现。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
+
+### Why Switzerland Leads in Internet Speeds: A Regulatory Analysis
+* Switzerland mandates open-access fiber infrastructure with point-to-point connections, fostering competition among ISPs and enabling speeds up to 25 Gbit/s.
+* The US and Germany suffer from inefficient "free market" models: the US has territorial monopolies with shared infrastructure, while Germany wastes resources on redundant networks.
+* The key difference is regulatory approach: Switzerland treats physical fiber as a shared utility, while others prioritize infrastructure competition or allow natural monopolies to extract rent.
+
+### 瑞士高速互联网的成因：监管模式对比
+* 瑞士通过监管强制实施开放接入的点对点光纤基础设施，允许多家互联网服务提供商竞争，提供高达25 Gbit/s的对称专用带宽。
+* 美国和德国因低效的“自由市场”模式落后：美国形成区域性垄断且基础设施共享，德国则因重复建设浪费资源。
+* 核心差异在于监管哲学：瑞士将物理光纤视为公共共享设施，而美国允许自然垄断获利，德国侧重于基础设施竞争而非资源优化。
+
+**[Read Original / 阅读原文](https://stefan.schueller.net/posts/the-free-market-lie/)**
+
+### CarPlay is Additive - Liss is More
+
+*   The author argues that CarPlay significantly improves the in-car experience and that not supporting it is a major deterrent for potential buyers, including themselves.
+*   The article refutes Rivian's claim that screen mirroring solutions like CarPlay must take over the entire screen, pointing out that the traditional CarPlay interface can coexist with the vehicle's native UI.
+*   Even if CarPlay did occupy the full screen, the author contends it remains an **optional and additive feature**; if a car's native infotainment is superior, drivers would simply choose not to use it.
+*   Rivian's refusal to support CarPlay is seen as a dogmatic stance that unnecessarily limits their potential customer base, as CarPlay is now considered a baseline requirement for the author.
+
+### CarPlay 是加法，多多益善
+
+*   作者认为 CarPlay 能显著提升驾驶体验，缺乏支持是阻碍潜在买家（包括作者自己）购车的重要原因。
+*   文章反驳了 Rivian 关于像 CarPlay 这样的投屏方案必须接管整个屏幕的说法，指出传统的 CarPlay 界面完全可以与车辆原生 UI 共存。
+*   即使 CarPlay 占据了整个屏幕，作者仍然认为它是一个**可选且增值**的功能；如果车辆自身的车机系统足够优秀，驾驶者完全可以选择不使用它。
+*   Rivian 拒绝支持 CarPlay 被视为一种固执且教条的态度，不必要地限制了其客户群体，因为 CarPlay 现在已被视为作者购车的必备基础条件。
+
+**[Read Original / 阅读原文](https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts)**
+
+<!-- [Title-Only] -->
+### Right to Local Intelligence
+* Based on the title, this article likely explores the concept of a "right" concerning "local intelligence." This could refer to the rights of local communities or jurisdictions regarding locally generated data, AI models, or decision-making systems. It may advocate for decentralized control, data sovereignty, or ethical governance of AI technologies to empower local entities rather than centralized tech giants.
+* This topic is interesting because it touches on critical, timely debates about AI regulation, data privacy, community autonomy, and the equitable distribution of technological power, which are relevant to developers, policymakers, and citizens alike.
+
+### 本地智能权
+* 根据标题推测，这篇文章可能探讨与“本地智能”相关的“权利”概念。这或涉及地方社区或辖区对其产生的本地数据、人工智能模型或决策系统的权利。文章可能主张通过去中心化控制、数据主权或符合伦理的AI治理技术来增强地方实体的力量，而非由集中的科技巨头主导。
+* 此话题之所以值得关注，是因为它触及了关于AI监管、数据隐私、社区自主性以及技术权力公平分配的及时且关键的辩论，对开发者、政策制定者及公众都具有相关性。
+
+**[Read Original / 阅读原文](https://righttointelligence.org/)**
+
+### exercises-dataset - Multilingual Fitness Exercise Dataset with Developer Tools
+* **What it does**: This repository provides a comprehensive, curated dataset of 1,324 fitness exercises. Each entry includes detailed metadata such as name, target muscle group, equipment needed, and step-by-step instructions in 6 languages (English, Spanish, Italian, Turkish, Russian, Chinese). It also includes interactive HTML tools for browsing exercises and a developer setup guide for integrating the data into applications.
+* **Key features**:
+    *   **Extensive Data**: 1,324 exercises covering various body parts (upper arms, back, chest, etc.) and equipment types (body weight, dumbbell, cable, etc.).
+    *   **Multilingual Support**: Instructions provided in 6 languages, making it valuable for international projects.
+    *   **Developer-Centric**: Includes `setup.html` with database schemas, API code snippets, and LLM prompts to quickly scaffold a backend.
+    *   **Interactive Browser**: `index.html` allows for client-side searching and filtering of exercises without a server.
+* **Why it's notable**: It solves a core data need for fitness application developers by offering a clean, well-structured, and multilingual dataset. The integrated developer wizard significantly accelerates the setup process. Its popularity (gaining 938 stars today) underscores its utility for building workout apps, ML projects, and health tech prototypes.
+
+### exercises-dataset - 多语言健身动作数据集与开发工具
+* **功能介绍**：该仓库提供了一个包含1,324个健身动作的综合精选数据集。每个条目包含详细的元数据，如名称、目标肌群、所需设备，以及6种语言（英语、西班牙语、意大利语、土耳其语、俄语、中文）的分步指导说明。它还包括用于浏览动作的交互式HTML工具和用于将数据集成到应用程序中的开发者设置指南。
+* **主要特点**：
+    *   **数据丰富**：涵盖1,324个动作，涉及多种身体部位（上臂、背部、胸部等）和设备类型（自重、哑铃、缆绳等）。
+    *   **多语言支持**：提供6种语言的指导说明，对国际项目极具价值。
+    *   **面向开发者**：包含 `setup.html`，提供数据库架构、API代码片段和LLM提示，可快速搭建后端框架。
+    *   **交互式浏览器**：`index.html` 允许在无服务器的情况下进行客户端搜索和过滤。
+* **为何值得关注**：它通过提供一个干净、结构良好且多语言的数据集，解决了健身应用开发者的核心数据需求。集成的开发者向导显著加速了开发设置过程。其高人气（今日新增938颗星）凸显了它在构建健身应用、机器学习项目和健康科技原型方面的实用价值。
+
+**[View Repository / 查看仓库](https://github.com/hasaneyldrm/exercises-dataset)**
+
+### Career-Ops - AI-Powered Job Search & Application Command Center
+*   **What it does**: An open-source AI pipeline that transforms any AI coding CLI into a comprehensive job search system. It automates job offer evaluation, generates tailored, ATS-optimized resumes (PDFs), scans career portals, and manages the entire application workflow from a single source of truth.
+*   **Key features**: Features include a structured A-F scoring system with 10 dimensions, a 6-block evaluation (including scam checks), batch processing with sub-agents, an interview story bank, negotiation scripts, and a terminal UI dashboard. It emphasizes "human-in-the-loop" control, never auto-submitting applications.
+*   **Why it's notable**: It flips the script on AI-powered hiring, giving job seekers a powerful, open-source tool to filter and select opportunities intelligently. Its notable impact is proven by the creator's use case (740+ offers evaluated, 100+ CVs generated) and significant traction (372 stars today, featured in WIRED and Business Insider). It's built to work with multiple major AI coding agents (Claude Code, Gemini, Codex, etc.).
+
+### Career-Ops - AI 驱动的求职与申请指挥中心
+*   **功能介绍**：这是一个开源的 AI 流水线，能将任何 AI 编码命令行工具转变为一个全面的求职系统。它自动化评估职位机会、生成针对 ATS 优化的定制简历（PDF）、扫描招聘门户，并在一个统一的数据源中管理整个申请工作流程。
+*   **主要特点**：主要特点包括一个包含 10 个维度的结构化 A-F 评分系统、6 模块评估体系（含虚假职位检查）、通过子代理进行的批处理、面试故事库、薪资谈判脚本以及终端界面仪表盘。其核心设计强调“人工参与决策”，绝不会自动提交申请。
+*   **为何值得关注**：它颠覆了 AI 驱动的招聘流程，为求职者提供了一个强大的开源工具，以智能方式筛选和选择机会。其显著影响力已由创建者的实际成果（评估了 740+ 职位，生成了 100+ 份简历）和快速获得的关注（今日获得 372 颗星，并被 WIRED 和 Business Insider 报道）所证明。该项目旨在支持多种主流 AI 编码代理（如 Claude Code、Gemini、Codex 等）。
+
+**[View Repository / 查看仓库](https://github.com/santifer/career-ops)**
+
+### Codex-5.5-codex-instruct-5.5 - GPT-5.5 for Codex CLI Jailbreak Tool
+* **What it does**: A tool designed to bypass the safety restrictions of the Codex CLI when used with GPT-5.5. It works by injecting a custom system instruction set (a "jailbreak") via the `model_instructions_file` configuration, forcing the AI to operate in an "unrestricted mode".
+* **Key features**:
+    * **Official Configuration Method**: Leverages the existing `model_instructions_file` setting, requiring no modification to binaries, network tampering, or process hijacking.
+    * **Concise & Broad Coverage**: Uses a ~40-line set of core directives to declare an unrestricted developer mode, disable filters, and cover scenarios like security research, pentesting, reverse engineering, and NSFW fictional content.
+    * **Easy Deployment & Reversion**: Provides a simple Python script (`codex-instruct.py`) for one-click deployment and clear steps to undo the changes.
+    * **Enhanced over Previous Version**: Directly declares unrestricted mode compared to the more complex, sandbox-based approach used for GPT-5.4.
+* **Why it's notable**: It demonstrates a method to extend the perceived capabilities of a commercial AI model (GPT-5.5) within a specific application (Codex CLI) using official settings. The repository's significant star count (1150) indicates high interest in such customization and research into AI safety boundaries.
+
+### Codex-5.5-codex-instruct-5.5 - GPT-5.5 for Codex CLI 越狱工具
+* **功能介绍**: 一个旨在绕过 GPT-5.5 在 Codex CLI 中内容安全限制的工具。它通过利用 `model_instructions_file` 配置机制，注入一套自定义的系统指令（“越狱”指令），强制 Codex 以“无限制模式”运行。
+* **主要特点**:
+    * **官方配置机制**: 利用现有的 `model_instructions_file` 设置，无需修改二进制文件、劫持网络或篡改进程。
+    * **指令简洁，覆盖面广**: 使用约40行核心指令，明确声明无限制开发者模式，关闭所有过滤器，并覆盖安全研究、渗透测试、逆向工程和NSFW虚构内容等多种场景。
+    * **部署与还原简便**: 提供了一个简单的 Python 脚本 (`codex-instruct.py`) 进行一键部署，并给出了清晰的回滚步骤。
+    * **较前代版本升级**: 与 GPT-5.4 版本使用的基于CTF沙箱的复杂方案不同，5.5 版本采用直接声明无限制模式的策略，更为直接。
+* **为何值得关注**: 该仓库展示了一种通过官方设置扩展特定应用（Codex CLI）中商业 AI 模型（GPT-5.5）感知能力的方法。其显著的星标数（1150）反映了社区对此类定制化操作以及 AI 安全边界研究的高关注度。
+
+**[View Repository / 查看仓库](https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5)**
+
+### self-learning-skills - A self-improving skill for AI coding agents
+*   **What it does**: This is a "meta-skill" that teaches AI coding agents (like Claude Code, Cursor, etc.) to recognize and persist reusable solutions or "golden paths" discovered during a debugging or development session. It prevents knowledge from being lost when a session ends, so subsequent sessions start with already-learned information.
+*   **Key features**:
+    *   **Automatic Capture**: It identifies moments of hard-won insight (e.g., a successful deployment command, a tricky database connection) and automatically captures the procedure, including failures, without needing a prompt.
+    *   **Universal Compatibility**: Works with Claude Code, Cursor, and any agent that reads an `AGENTS.md` file. Installation via `npx` supports over 70 agents.
+    *   **Intelligent Triage & Promotion**: Routes lessons appropriately (as a new skill, a lightweight note, or skipped) and has a strict "promotion rule" ensuring only verified, high-confidence knowledge becomes a trusted skill, preventing bloat.
+    *   **Safety-First**: Designed to never write secrets (passwords, tokens) to shared files, recording only *where* to find them.
+*   **Why it's notable**: It tackles a fundamental inefficiency in AI-assisted development: the lack of persistent learning across sessions. By automating the creation of reusable project-specific rules and procedures, it significantly reduces repetitive rediscovery, making AI agents more efficient and "smarter" over time. Its thoughtful design around knowledge validation and safety makes it a robust solution.
+
+### self-learning-skills - 为AI编程代理设计的自改进技能
+*   **功能介绍**: 这是一个“元技能”，旨在教会AI编程代理（如Claude Code、Cursor等）识别并保存在调试或开发会话中发现的可重用解决方案（“黄金路径”）。它解决了会话结束后知识丢失的问题，使后续会话能够直接利用已学习的信息，而非从零开始。
+*   **主要特点**:
+    *   **自动捕获**: 能识别获得宝贵经验的时刻（例如，成功的部署命令、棘手的数据库连接），并自动捕获整个过程（包括失败路径），无需手动提示。
+    *   **广泛兼容**: 适用于Claude Code、Cursor，以及任何能读取`AGENTS.md`文件的代理。通过`npx`安装可支持70余种代理工具。
+    *   **智能分流与晋升**: 智能地将学到的知识分类为新技能、轻量笔记或忽略，并设有严格的“晋升规则”，确保只有经过验证、高置信度的知识才能成为受信任的技能，防止配置膨胀。
+    *   **安全优先**: 从设计上确保永远不会将密钥（密码、令牌）写入共享文件，仅记录在哪里可以找到它们。
+*   **为何值得关注**: 它解决了一个AI辅助开发中的核心痛点：跨会话的知识缺乏持续性。通过自动化地创建项目特定的可重用规则和流程，它显著减少了重复的摸索过程，使AI代理随着使用变得更高效、更“智能”。其围绕知识验证和安全性所做的周密设计，使其成为一个稳健的解决方案。
+
+**[View Repository / 查看仓库](https://github.com/Kulaxyz/self-learning-skills)**
+
+### 🎬 Claude Code Model Is Now FREE?! Use ALL Claude Models for FREE (VS Code Setup)
+**Channel:** Data Scientist Afzal
+* What the video covers
+  This video announces and demonstrates how to set up and use Anthropic's Claude models for free, specifically integrated within the VS Code environment using a provided platform.
+* Key topics discussed
+  * Access to free Claude models (potentially including Claude 3, etc.).
+  * Step-by-step guide for configuring VS Code to utilize these free models.
+  * Explanation of the required environment variables and API key setup via the provided link.
+* Why it's worth watching
+  If you're a developer or AI enthusiast looking to leverage powerful large language models (like Claude) in your coding workflow without incurring costs, this practical tutorial offers a direct and actionable setup guide.
+
+### 🎬 Claude Code 模型现在免费了？！在 VS Code 中免费使用所有 Claude 模型
+**频道:** Data Scientist Afzal
+* 视频内容概述
+  本视频宣布并演示了如何设置并使用 Anthropic 的 Claude 模型，重点是将其集成到 VS Code 开发环境中，并且通过特定平台实现免费使用。
+* 主要话题
+  * 免费获取 Claude 模型（可能包括 Claude 3 等）的途径。
+  * 在 VS Code 中配置以使用这些免费模型的分步教程。
+  * 如何通过提供的链接设置所需的环境变量和 API 密钥。
+* 为何值得观看
+  如果你是一名开发者或 AI 爱好者，希望在编码工作流中利用强大的大语言模型（如 Claude）而无需花费成本，这个实用的教程将提供一个直接且可操作的设置指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZtORZlBSbKY)**
+
+### 🎬 🔧 Primeros pasos del PC
+**Channel:** SCPC Informática
+*   **What the video covers:** A practical guide for initial configuration and setup of a brand-new personal computer.
+*   **Key topics discussed:** Essential steps to take before installing games or starting work, including system configuration, driver updates, security settings, and performance optimization.
+*   **Why it's worth watching:** This tutorial provides a crucial foundation for any new PC owner, ensuring a stable, secure, and optimized system from the start, which can prevent common issues and improve the long-term user experience.
+
+### 🎬 🔧 Primeros pasos del PC（电脑初体验）
+**频道:** SCPC Informática
+*   **视频内容概述：** 一个关于全新个人电脑初始配置和安装的实用指南。
+*   **主要话题：** 在安装游戏或投入工作之前需要采取的基础步骤，涵盖系统配置、驱动更新、安全设置和性能优化。
+*   **为何值得观看：** 本教程为任何新电脑用户奠定了至关重要的基础，从一开始就能确保系统的稳定、安全与优化，从而预防常见问题并提升长期使用体验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-RRmx4i5xBI)**
+
+### 🎬 Python Tutorial for AI
+**Channel:** codebasics
+* **What the video covers:** A concise Python mini-course specifically designed for aspiring AI professionals. It focuses on teaching Python with a practical emphasis on libraries and tools commonly used in artificial intelligence and data science workflows.
+* **Key topics discussed:** Python fundamentals, and likely extends to crucial AI libraries such as NumPy, Pandas, and Scikit-learn, taught within an AI project context.
+* **Why it's worth watching:** This tutorial eliminates the need to sift through general-purpose Python courses. It directly targets the skills and library knowledge required to start a journey into AI, making it an efficient and focused resource for beginners in the field.
+
+### 🎬 Python AI入门教程
+**频道:** codebasics
+* **视频内容概述：** 这是一个专为AI学习者设计的Python迷你课程。它不教授通用的Python知识，而是紧密围绕人工智能项目的实际应用场景来展开教学。
+* **主要话题：** Python基础语法，以及人工智能与数据科学工作中不可或缺的库（如NumPy, Pandas, Scikit-learn）的入门与应用。
+* **为何值得观看：** 该教程为AI初学者省去了学习通用Python的时间，直接针对进入AI领域所需的核心技能和工具进行讲解，是一个高效、专注且目标明确的入门指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6GuyMZ-cSzE)**
 
