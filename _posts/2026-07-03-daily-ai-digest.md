@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 03, 2026"
 date: 2026-07-03
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -439,4 +439,224 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   为何值得观看：它首次展示了一个实用的、可直接部署的框架，该框架旨在通过利用AI处理编码相关任务来大幅提升开发速度和效率，是关注AI增强工具的开发者和技术爱好者的必看内容。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=85P6ygXB9AY)**
+
+### Virginia Bans Sale of Geolocation Data
+*   **Law Signed:** On April 13, 2026, Virginia Governor Abigail Spanberger signed bill S.B. 388 into law, amending the Virginia Consumer Data Protection Act (VCDPA).
+*   **Effective Date:** The ban on the sale of geolocation data goes into effect on July 1, 2026.
+*   **Key Provision:** The law prohibits the "sale" of geolocation data. Virginia's VCDPA defines "sale" narrowly as "the exchange of personal data for monetary consideration."
+*   **Broader Trend:** Virginia joins Maryland and Oregon, which have already enacted similar bans with a broader definition of "sale." It also follows proposed legislation in California, Massachusetts, Vermont, and Washington State, reflecting increased regulatory scrutiny on the geolocation data industry.
+
+### 弗吉尼亚州禁止出售地理定位数据
+*   **法律签署：** 弗吉尼亚州州长阿比盖尔·斯潘伯格于2026年4月13日签署法案S.B. 388，修订《弗吉尼亚消费者数据保护法》（VCDPA）。
+*   **生效日期：** 出售地理定位数据的禁令于2026年7月1日生效。
+*   **核心条款：** 该法禁止“出售”地理定位数据。VCDPA对“出售”的定义较为狭窄，指“控制者出于金钱对价向第三方交换个人数据”。
+*   **广泛趋势：** 弗吉尼亚州加入了马里兰州和俄勒冈州（已实施更宽泛“出售”定义的类似禁令），并呼应了加利福尼亚、马萨诸塞、佛蒙特和华盛顿州的拟议立法，反映出对地理定位数据行业监管的加强。
+
+**[Read Original / 阅读原文](https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data)**
+
+### Privacy Emergency: Dwork et al. on the U.S. Census Directive
+
+*   A 2026 Commerce Department directive (DAO 216-26) mandates that U.S. Census and BEA publications revert to outdated 1970s-era data protection methods, banning modern techniques like differential privacy and noise infusion.
+*   The authors argue this political action compromises the dual federal mandate of data confidentiality and statistical usefulness, as illustrated by a "County Business Patterns" example where older "coarsening" methods fail to prevent re-identification of business data.
+*   Banning advanced privacy-preserving algorithms weakens legal confidentiality protections required by the Census Act and threatens the public's trust in federal statistics, risking less granular and less secure data for decades.
+
+### 隐私紧急事件：Dwork等人关于美国人口普查指令的评论
+
+*   美国商务部2026年发布的指令（DAO 216-26）要求人口普查局和经济分析局的出版物重新采用1970年代的过时数据保护方法，并禁止使用差分隐私和噪声注入等现代技术。
+*   作者认为，这一政治性举措损害了联邦法律要求的数据保密性与统计实用性的双重使命，正如“县商业模式”示例所示，旧式“粗化”方法未能防止商业数据被重新识别。
+*   禁止先进的隐私保护算法削弱了《人口普查法》规定的法定保密要求，并可能损害公众对联邦统计数据的信任，导致未来数十年数据的颗粒度和安全性下降。
+
+**[Read Original / 阅读原文](https://scottaaronson.blog/?p=9902)**
+
+### What is `crustc`? A Rust Compiler as 46 Million Lines of C
+*   It's a demonstration project that successfully converts the Rust compiler (`rustc 1.98.0-nightly`) into approximately 46 million lines of C code.
+*   This generated C code can be compiled with standard tools like `GCC` and `make` to produce a fully functional Rust compiler.
+*   This serves as a showcase for the author's upcoming Rust-to-C compiler toolchain called `cilly`.
+
+### Core Innovation of the `cilly` Toolchain
+*   The key feature is its ability to **adapt to the target C compiler**. It generates "witness" programs to probe compiler-specific features, type layouts, and platform assumptions at compile time.
+*   Its primary goal is to enable Rust development for **old, obscure, or unsupported hardware platforms** that lack LLVM or GCC backends but have a C compiler.
+*   It offers **network transparency**, allowing the Rust compilation to happen on a host machine while communicating with a C compiler server on a remote target, solving the bootstrap paradox.
+
+### Project Status and Details
+*   The `cilly` toolchain is currently a work-in-progress and not yet publicly available due to the developer's schedule and ongoing bug fixes.
+*   The demo `crustc` build shown targets ARM64 Linux specifically (the author's workstation architecture). The generated C code is compiler and target-specific.
+*   The project aims for ABI compatibility with normal `rustc` output, though some platform-specific nuances (like ARM64's struct return ABI) present challenges.
+
+### `cilly` 项目是什么？一个由 4600 万行 C 代码构成的 Rust 编译器
+*   这是一个演示项目，成功将 Rust 编译器 (`rustc 1.98.0-nightly`) 转换为约 4600 万行 C 代码。
+*   这些生成的 C 代码可以使用 `GCC` 和 `make` 等标准工具编译，从而产生一个功能完整的 Rust 编译器。
+*   这展示了作者即将推出的 Rust 到 C 编译器工具链 `cilly`。
+
+### `cilly` 工具链的核心创新
+*   其关键特性是能够**适应目标 C 编译器**。它在编译时生成“验证”程序，以探测编译器的特定功能、类型布局和平台假设。
+*   其主要目标是为 Rust 开发启用**老旧、冷门或不被支持的硬件平台**，这些平台缺少 LLVM 或 GCC 后端，但拥有 C 编译器。
+*   它支持**网络透明性**，允许 Rust 编译在主机上进行，同时通过 TCP 与远程目标上的 C 编译器服务器通信，从而解决引导悖论。
+
+### 项目状态与细节
+*   `cilly` 工具链目前仍在开发中，因开发者日程和持续的错误修复尚未公开发布。
+*   演示构建的 `crustc` 特定于 ARM64 Linux（作者的工作站架构）。生成的 C 代码与编译器及目标平台绑定。
+*   该项目旨在与普通 `rustc` 输出保持 ABI 兼容性，尽管一些平台特定的细节（如 ARM64 的结构体返回 ABI）带来了挑战。
+
+**[Read Original / 阅读原文](https://github.com/FractalFir/crustc)**
+
+### Strix - Open-Source AI Penetration Testing Tool
+*   **What it does:** Strix 是一个由 AI 驱动的自动化渗透测试工具。它能模拟黑客行为，自主地对应用程序进行动态代码分析、漏洞发现和利用验证，最终提供可操作的修复建议。
+*   **Key features:**
+    *   **全栈渗透测试能力：** 集成了侦察、漏洞利用和验证的完整工具链。
+    *   **多代理协作：** 支持多个 AI 渗透测试代理协同工作，可扩展并行测试。
+    *   **真实漏洞验证：** 提供可运行的概念验证代码，而非静态分析工具常见的误报。
+    *   **开发者友好 CLI：** 输出包含具体修复指导的可操作结果。
+    *   **自动化修复与报告：** 能自动生成补丁和符合合规要求的渗透测试报告。
+    *   **CI/CD 集成：** 可无缝集成到 GitHub Actions 等流水线中，在每次代码提交时自动扫描漏洞。
+*   **Why it's notable:** 它通过将 AI 代理团队与真实漏洞利用验证相结合，解决了传统安全测试（手动渗透测试耗时长、静态分析误报多）的痛点。其“一次修复”的体验和对 CI/CD 的原生支持，使其成为提升开发速度与安全性的热门工具，今日获得超过 2000 颗星标正体现了这一点。
+
+### Strix - 开源AI渗透测试工具
+*   **功能介绍：** Strix 是一款基于人工智能的自动化渗透测试工具。它能够模拟黑客行为，对应用程序进行动态代码分析，自主发现并利用安全漏洞，最终提供切实可行的修复方案。
+*   **主要特点：**
+    *   **全栈渗透测试工具集：** 内置侦察、漏洞利用和验证的全套工具。
+    *   **多代理协作：** 支持多个 AI 渗透测试代理协同工作，实现可扩展的并行测试。
+    *   **真实漏洞验证：** 提供可运行的概念验证代码，而非传统扫描器的高误报。
+    *   **开发者优先的命令行界面：** 提供包含修复指南的可操作发现结果。
+    *   **自动修复与报告：** 可自动生成安全补丁和符合合规要求的渗透测试报告。
+    *   **CI/CD 集成：** 可与 GitHub Actions 等流水线无缝集成，在每次代码提交时自动进行安全扫描。
+*   **为何值得关注：** 它通过 AI 代理团队与真实漏洞利用验证相结合，有效解决了传统安全测试中手动渗透测试耗时、静态分析工具误报率高的痛点。其“一键修复”的体验以及与 CI/CD 流水线的原生集成能力，使其成为在加速开发的同时提升应用安全性的热门选择，今日获得的高星标数也印证了其受欢迎程度。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### JuliusBrussee/caveman - A Skill That Makes AI Agents Talk Like a Caveman to Save Tokens
+*   **What it does**: This is a skill/plugin (compatible with Claude Code, Codex, Gemini, Cursor, and 30+ other AI coding agents) that instructs the AI to respond in a terse, "caveman-like" style. Its primary purpose is to dramatically reduce the number of output tokens used in replies while maintaining full technical accuracy and correctness.
+*   **Key features**:
+    *   **Token Reduction**: Achieves an average output token reduction of ~65% (with reductions up to 87% in benchmarks).
+    *   **Multiple Compression Levels**: Offers modes like `lite`, `full`, `ultra`, and even `wenyan` (classical Chinese) for different levels of verbosity reduction.
+    *   **Multilingual Support**: Compresses communication style but preserves the user's original language and exact technical terms (code, commands, errors).
+    *   **Additional Commands**: Includes utilities like `/caveman-commit` (for concise commit messages), `/caveman-review` (for one-line PR comments), `/caveman-stats` (to track token savings), and `/caveman-compress` (to shrink configuration files like `CLAUDE.md`).
+    *   **Broad Compatibility**: Installs via a simple script for numerous agents and includes a companion project (`caveman-code`) that creates a full coding agent optimized for minimal tokens.
+*   **Why it's notable**: It addresses a core practical and financial concern of using advanced AI models: token consumption. By enforcing brevity without sacrificing technical detail, it not only cuts costs but can also improve response speed and readability. The straightforward installation and wide compatibility make it an immediately useful tool for developers aiming to optimize their AI interaction workflows.
+
+### JuliusBrussee/caveman - 一个让AI代理像原始人说话以节省Token的技能
+*   **功能介绍**: 这是一个兼容Claude Code、Codex、Gemini、Cursor等30多种AI编程代理的技能插件。它通过指示AI以简短、“原始人”风格回复，旨在大幅减少输出回复所需的Token数量，同时确保技术准确性不受影响。
+*   **主要特点**:
+    *   **显著节省Token**: 在基准测试中平均减少约65%的输出Token，最高可达87%。
+    *   **多级压缩选项**: 提供`lite`、`full`、`ultra`，甚至`wenyan`（文言文）等不同级别的简洁模式。
+    *   **多语言支持**: 压缩沟通风格，但保留用户原始语言和精确的技术术语（代码、命令、错误信息）。
+    *   **丰富实用命令**: 包含`/caveman-commit`（生成简洁提交信息）、`/caveman-review`（一行PR评论）、`/caveman-stats`（查看节省的Token统计）和`/caveman-compress`（压缩`CLAUDE.md`等配置文件）等工具。
+    *   **广泛兼容性**: 通过简单脚本即可为多种代理安装，并提供配套项目`caveman-code`，打造一个为最小化Token而优化的完整编程代理。
+*   **为何值得关注**: 该工具直击使用先进AI模型时一个核心的实用性和成本问题——Token消耗。通过强制实现简洁回复且不牺牲技术细节，它不仅降低了成本，还提升了响应速度和可读性。简单的安装方式和广泛的兼容性，使其成为开发者优化AI交互工作流的立竿见影的实用工具。
+
+**[View Repository / 查看仓库](https://github.com/JuliusBrussee/caveman)**
+
+### agency-agents - A Complete AI Agency of Specialized Agents
+* **What it does**: This repository provides a comprehensive, installable collection of specialized AI agent personalities. Each agent is designed to act as an expert in a specific domain (e.g., frontend development, DevOps, security, community management) with unique traits, workflows, and deliverable outputs, effectively creating a "dream team" of AI assistants.
+* **Key features**:
+    * **Specialized & Personality-Driven**: Agents have deep domain expertise, distinct voices, and clear communication styles.
+    * **Deliverable-Focused**: Promotes real code, processes, and measurable outcomes, not generic prompts.
+    * **Multi-Tool Integration**: Includes installers for popular AI/development tools like Claude Code, Cursor, Codex, Gemini CLI, and more, with options to select specific divisions or agents.
+    * **Native App Available**: Offers a dedicated desktop app for macOS, Linux, and Windows to browse and manage the agent roster.
+* **Why it's notable**: It transforms generic AI assistance into a structured, role-based agency model. The project's rapid growth (3,032 stars in one day) highlights strong community interest in ready-to-use, personality-infused AI agents that can slot directly into existing workflows across various platforms.
+
+### agency-agents - 一个可安装的、专业化的完整 AI 代理团队
+* **功能介绍**：本仓库提供了一套全面且可安装的、专业化的 AI 代理合集。每个代理都被设计为特定领域的专家（如前端开发、DevOps、安全、社区管理），拥有独特的特质、工作流程和可交付成果，实质上创建了一支 AI 助手“梦之队”。
+* **主要特点**：
+    * **专业导向与人格驱动**：代理具有深厚的领域专业知识、独特的语调和明确的沟通风格。
+    * **成果导向**：侧重于生成真实代码、流程和可衡量的结果，而非通用提示。
+    * **多工具集成**：包含适用于多种主流 AI/开发工具（如 Claude Code、Cursor、Codex、Gemini CLI 等）的安装程序，并可选择特定部门或代理。
+    *   **提供原生应用**：提供了适用于 macOS、Linux 和 Windows 的专用桌面应用，用于浏览和管理代理名单。
+* **为何值得关注**：它将通用的 AI 辅助转变为一种结构化、基于角色的“代理”模式。项目一天内获得 3,032 星的快速增长，凸显了社区对即用型、具有个性化设定的 AI 代理的强烈兴趣，这些代理可以直接融入跨平台的现有工作流程中。
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### CS-Fundamentals - CS基础知识与面试准备合集
+* **功能介绍**：这是一个专门为计算机科学（CS）学生和求职者整理的“备战”资料库。它系统性地汇集了数据结构与算法（DSA）、计算机网络、数据库（DBMS & SQL）、面向对象编程（OOPs）、操作系统、系统设计以及软件工程等核心科目的学习笔记、速查表、面试题库和面试准备指南。
+* **主要特点**：内容覆盖全面，结构清晰，按照学科分文件夹组织；资料形式多样，包含PDF笔记、速查表、面试题集、学习路线图（Markdown）以及求职辅助模板（如求职信）；特别包含了LeetCode问题集、针对校招和非校招的招聘公司列表等实用资源。
+* **为何值得关注**：该仓库因其内容的全面性、针对性和良好的组织结构而受到欢迎（超过1.4k星标）。它为CS学生提供了一站式的面试准备解决方案，能高效帮助用户复习核心概念、练习经典问题，是求职阶段极具价值的参考资料集合。
+
+### CS-Fundamentals - CS基础知识与面试准备合集
+* **功能介绍**：这是一个为计算机科学（CS）学生和求职者精心整理的“备战”资源库。它系统地汇集了数据结构与算法（DSA）、计算机网络、数据库（DBMS与SQL）、面向对象编程（OOPs）、操作系统、系统设计以及软件工程等核心领域的学习笔记、速查表、面试题库和求职指南。
+* **主要特点**：内容覆盖核心CS学科，结构清晰，按主题分文件夹存放；资料形式丰富，包括PDF笔记、速查表、面试题、学习路线图（Markdown格式）以及求职辅助模板（如求职信）；特别收录了LeetCode题集、面向应届生的非校招招聘公司列表等实用资料。
+* **为何值得关注**：该仓库因其内容的全面性、组织性和实用性而备受关注（超过1.4k星标）。它为CS学子提供了一站式的面试准备方案，能高效帮助用户复习核心知识、演练高频问题，是求职阶段不可或缺的参考资料集合。
+
+**[View Repository / 查看仓库](https://github.com/Krishnagangwal/CS-Fundamentals)**
+
+### **mekos2772/ios-location-spoofer** - JavaScript GPS spoofer for iOS without jailbreak
+*   **What it does**: A standalone iOS application and configuration set that spoofs the device's GPS location by intercepting and modifying Apple Maps' location data using proxy software (Shadowrocket, Surge, etc.). It works without requiring a jailbreak.
+*   **Key features**: Supports five major proxy platforms (Shadowrocket, Surge, Loon, Quantumult X, Stash). Includes enhancements over the original project, such as spoofing cellular tower coordinates, handling multiple Apple response formats, and faking motion state data.
+*   **Why it's notable**: It democratizes iOS location spoofing by providing a no-compilation, no-developer-account solution adaptable to popular proxy apps. Its active community, comprehensive tutorial, and additional tools (like a map picker) make it a trending and practical utility for developers and power users.
+
+### **mekos2772/ios-location-spoofer** - 无需越狱的 iOS GPS 定位欺骗 JavaScript 工具
+*   **功能介绍**: 通过代理软件（如 Shadowrocket、Surge）的 HTTPS 解密功能，拦截 Apple 地图的定位请求，并将返回的坐标数据修改为任意指定位置，从而在不越狱的情况下欺骗 iPhone 的 GPS 定位。
+*   **主要特点**: 支持 Shadowrocket、Surge、Loon、Quantumult X、Stash 五大代理平台。在原项目基础上增加了蜂窝基站坐标修改、多响应格式兼容以及运动状态伪造等增强功能。
+*   **为何值得关注**: 它无需编译或开发者账号，通过导入配置文件即可使用，降低了使用门槛。项目提供了详细的图文教程和网页地图选点工具，并拥有活跃的社区支持（超过 1100 颗星），是当前实现 iOS 非越狱定位欺骗的流行解决方案。
+
+**[View Repository / 查看仓库](https://github.com/mekos2772/ios-location-spoofer)**
+
+### 🎬 Why Russia Never Stops Expanding - Sarah Paine
+**Channel:** Dwarkesh Patel
+* This video provides a historical and geopolitical analysis of Russia's persistent territorial expansion, tracing its roots from early Muscovy to the modern era.
+* Key topics include the strategic, cultural, and psychological drivers behind Russian expansionism, the concept of "buffer zones," and how geography shapes its foreign policy.
+* It's worth watching for its deep dive into a critical aspect of international relations, helping viewers understand the long-term patterns behind current global tensions.
+
+### 🎬 俄罗斯为何永不停止扩张 - 莎拉·佩恩
+**频道:** Dwarkesh Patel
+* 本视频从历史和地缘政治角度分析了俄罗斯持续领土扩张的现象，追溯其从早期莫斯科公国到现代的根源。
+* 主要话题包括俄罗斯扩张主义背后的战略、文化和心理驱动因素，“缓冲区”概念，以及地理环境如何影响其外交政策。
+* 通过深入探讨国际关系中的这一关键方面，该视频值得观看，有助于理解当前全球紧张局势背后的长期模式。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6-oXxHclchE)**
+
+### 🎬 How a violent conqueror became the most beloved man in the city - Ada Palmer
+**Channel:** Dwarkesh Patel
+*   This video features a conversation with historian Ada Palmer, exploring the surprising historical paradox of how a figure known for violent conquest became deeply cherished and beloved by the people of a city.
+*   Key topics include the methods of historical narrative, the construction of public memory, the complex relationship between power, violence, and cultural integration, and how society reconciles admiration with a brutal past.
+*   It's worth watching for its deep dive into a fascinating historical case study, offering sharp insights into how historical figures are remembered and the tools used to shape their legacy, all delivered through Ada Palmer's engaging scholarly perspective.
+
+### 🎬 暴力征服者如何成为城里最受爱戴的人 - Ada Palmer
+**频道:** Dwarkesh Patel
+*   视频内容概述：本期节目与历史学家艾达·帕尔默（Ada Palmer）展开对话，探讨一个令人惊讶的历史悖论——一个以暴力征服闻名的人物，是如何转变为深受城市人民爱戴与尊敬的对象的。
+*   主要话题：涵盖历史叙事的方法、公共记忆的构建、权力、暴力与文化融入之间的复杂关系，以及社会如何调和对其辉煌成就的赞赏与对其残酷过往的评价。
+*   为何值得观看：视频深入剖析了一个迷人的历史案例，通过艾达·帕尔默引人入胜的学术视角，深刻洞察历史人物如何被铭记，以及塑造其传奇所使用的各种工具，极具思考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=l69nxm9dFT4)**
+
+### 🎬 Why is AI so bad at design?
+**Channel:** Lenny's Podcast
+* This video features a deep dive into the current limitations of AI, particularly in the field of design. It explores why, despite its capabilities, AI often fails to produce truly effective or innovative designs.
+* Key topics include the inherent gaps in AI's understanding of human context, emotion, and intention; the challenges of replicating creative intuition; and a discussion on the evolving role of human designers in an AI-assisted workflow.
+* It's worth watching for anyone in tech, product, or design, as it offers a critical and nuanced perspective beyond the hype, helping professionals understand where to leverage AI and where human expertise remains irreplaceable.
+
+### 🎬 为什么AI在设计方面表现如此糟糕？
+**频道:** Lenny's Podcast
+* 本视频深入探讨了当前AI在设计领域的能力局限。它分析了为何尽管AI功能强大，却常常无法产出真正有效或创新的设计成果。
+* 主要话题涵盖：AI对人类情境、情感和意图理解上的根本缺失；模拟创造性直觉的挑战；以及在AI辅助工作流中，人类设计师角色的演变。
+* 对于科技、产品和设计领域的从业者来说，这期节目值得一观。它提供了超越表面热度的批判性与细微视角，帮助专业人士理解在何处可以善用AI，以及人类专业知识在何处依然不可替代。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TuXk2bNwT8o)**
+
+### 🎬 How to prepare DSA for Placements ? Placement Series - Ep-1
+**Channel:** take U forward
+*   A practical guide for students confused about where to begin their Data Structures & Algorithms (DSA) preparation for campus placements.
+*   Outlines a simple, actionable 3-step roadmap to structure your learning effectively.
+*   Provides foundational advice and a clear starting point to build confidence and a solid DSA skill set for technical interviews.
+
+### 🎬 如何为求职准备数据结构与算法（DSA）？求职系列 - 第1集
+**频道:** take U forward
+*   针对在求职（Placement）季对如何开始学习数据结构与算法（DSA）感到困惑的同学，提供明确指导。
+*   提出一个简单、可执行的3步学习路线图，帮助高效规划学习路径。
+*   提供基础建议和清晰的起点，旨在帮助构建扎实的DSA技能与应对技术面试的信心，非常值得初学者观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OjOcpf3eVas)**
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**Channel:** Matthew Berman
+* A deep-dive tutorial on the Hermes family of large language models, exploring its capabilities, architecture, and performance.
+* Key topics include the model's Mistral-based foundation, its performance on benchmarks, deployment options (via APIs, cloud services, or locally), and practical use cases.
+* It’s worth watching for a comprehensive, hands-on guide to one of the most promising open-source LLMs, delivered with the host's characteristic blend of technical detail and humor.
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**频道:** Matthew Berman
+* 本期视频是对Hermes系列大语言模型的深度教程，全面解析其功能、架构与性能。
+* 主要话题包括其基于Mistral的基础架构、基准测试表现、部署方式（通过API、云服务或本地部署）以及实际应用场景。
+* 值得观看的原因在于，这是对当前最具前景的开源大模型之一的一份全面且注重实践的指南，并以主持人特有的技术深度与幽默风格相结合的方式呈现。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
 
