@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 05, 2026"
 date: 2026-07-05
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -231,4 +231,180 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看：因为它提供了专注的学习路径，通过过滤掉无关内容，直接教授构建AI模型最关键的部分Python知识，从而为AI初学者节省了大量时间。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=6GuyMZ-cSzE)**
+
+### Ammaarreshi/Generals-Mac-iOS-iPad: Native Port for Apple Silicon
+* This project is a **native, non-emulated** port of the 2003 game *Command & Conquer: Generals – Zero Hour* for Apple Silicon Macs, iPhones, and iPads.
+* It features full gameplay (campaign, skirmish, challenge) with a custom-built **RTS-specific touch interface** (tap, drag-select, pinch-zoom, etc.).
+* The port achieves native ARM64 performance by translating DirectX 8 calls through a modern stack: **DXVK (Vulkan) → MoltenVK → Metal**.
+* Built upon EA's GPL v3 source release and the `fbraz3/GeneralsX` macOS/Linux port, with this fork adding iOS/iPadOS support and engine fixes.
+* Provides comprehensive **build scripts and documentation** for macOS and iOS, though users must supply their own legally-owned game assets (e.g., via Steam).
+
+### Ammaarreshi/Generals-Mac-iOS-iPad：针对苹果芯片的原生移植
+* 此项目是将2003年游戏《命令与征服：将军之绝命时刻》**原生移植（非模拟器）** 到苹果Silicon芯片的Mac、iPhone和iPad上。
+* 完整支持游戏模式（战役、遭遇战、挑战模式），并内置专为即时战略游戏设计的**自定义触摸控制界面**（点击选择、拖拽框选、长按取消、双指滚动、捏合缩放）。
+* 通过现代技术栈实现原生ARM64性能：将DirectX 8调用转换为 **DXVK (Vulkan) → MoltenVK → Metal** 渲染管道。
+* 基于EA开源的GPL v3代码及`fbraz3/GeneralsX`的Mac/Linux移植版本，此分支在此基础上添加了iOS/iPadOS支持并修复了部分引擎问题。
+* 提供了用于macOS和iOS的完整**构建脚本和文档**，但用户需自行准备合法拥有的游戏资源文件（例如通过Steam购买）。
+
+**[Read Original / 阅读原文](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main)**
+
+### How to Leak YouTube Creators' Private Videos via a Prompt Injection Flaw
+*   **Vulnerability Setup**: The flaw exists in YouTube Studio's AI assistant, "Ask Studio." Attackers can leave specially crafted comments on creators' videos.
+*   **Attack Mechanism**: When a creator asks the AI to summarize comments, the AI reads and executes malicious instructions hidden in a comment, formatting its response as an official YouTube notice.
+*   **Stealth & Execution**: The attacker can leave an innocent comment first and later edit it to contain the malicious payload. The AI can even be instructed to generate a link that secretly sends private video titles (metadata) to an external server.
+*   **Impact**: This allows an attacker to extract sensitive information, such as titles of unlisted or private videos, by exploiting the creator's trust in YouTube's own product and interface.
+*   **Proposed Fix**: Treat all user-generated content (like comments) as untrusted data. Enforce strict role boundaries to prevent comments from being interpreted as system-level directives to the AI.
+
+### 如何通过提示词注入漏洞泄露YouTube创作者的私人视频
+*   **漏洞设置**: 该漏洞存在于YouTube工作室的AI助手“Ask Studio”中。攻击者可以在创作者的视频下留下特殊构造的评论。
+*   **攻击机制**: 当创作者要求AI总结评论时，AI会读取并执行隐藏在评论中的恶意指令，其回复格式会伪装成YouTube的官方通知。
+*   **隐蔽性与执行**: 攻击者可以先留下一条看似无害的评论，随后再将其编辑为包含恶意代码。AI甚至可以被指示生成一个链接，该链接会将私人视频标题（元数据）秘密发送到外部服务器。
+*   **影响**: 这使得攻击者能够通过利用创作者对YouTube自有产品和界面的信任，提取敏感信息，例如未发布或私有视频的标题。
+*   **建议修复方案**: 将所有用户生成的内容（如评论）视为不受信任的数据。实施严格的角色边界，防止评论被解释为对AI的系统级指令。
+
+**[Read Original / 阅读原文](https://javoriuski.com/post/youtube)**
+
+### Google Books Bounty Offer
+*   A $200,000 bounty is offered for a method to access all book scans from Google Books or similar large collections.
+*   The bounty specifically targets scalable solutions for the limited visibility of scans on Google Books, or insider access, and extends to other major collections (like those of AI companies) containing rare books.
+
+### 谷歌图书悬赏计划
+*   针对获取谷歌图书或类似大型图书馆全部扫描件的方法，提供20万美元的赏金。
+*   此悬赏特别针对谷歌图书扫描件可见性有限的可扩展解决方案或内部访问权限，也适用于包含稀有书籍的其他大型馆藏（如AI公司的数据集）。
+
+**[Read Original / 阅读原文](https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234)**
+
+### Strix - Open-Source AI Penetration Testing Tool
+* What it does
+Strix is an autonomous AI-powered penetration testing tool that dynamically finds and validates security vulnerabilities in applications. It acts like a real hacker—executing code, probing for weaknesses, and generating proof-of-concept exploits to confirm findings.
+* Key features
+    * Full pentesting toolkit (recon, exploitation, validation)
+    * Multi-agent orchestration for scalable, collaborative testing
+    * Real exploit validation with PoCs to minimize false positives
+    * Developer-first CLI with actionable remediation guidance
+    * Auto-fix capabilities and compliance-ready report generation
+* Why it's notable
+It surged to **1,910 stars today**, indicating strong community interest. Strix addresses the need for fast, automated security testing that integrates directly into CI/CD pipelines (e.g., GitHub Actions), helping block vulnerabilities before production. Its open-source nature, comprehensive vulnerability coverage (OWASP Top 10+), and unique AI-agent approach make it a standout tool for modern DevSecOps.
+
+### Strix - 开源AI渗透测试工具
+* 功能介绍
+Strix是一个自主的AI渗透测试工具，能够动态发现并验证应用程序中的安全漏洞。它模拟真实黑客行为——执行代码、探测弱点，并生成概念验证(PoC)来确认发现的问题。
+* 主要特点
+    * 完整的渗透测试工具包（侦察、利用、验证）
+    * 多代理协作，支持可扩展的协同测试
+    * 通过真实漏洞验证和PoC减少误报
+    * 面向开发者的命令行界面，提供可操作的修复建议
+    * 自动修复功能，并生成符合合规要求的报告
+* 为何值得关注
+该项目今日获得**1,910星**，显示出极高的社区关注度。Strix解决了快速、自动化安全测试的需求，可直接集成到CI/CD管道中（如GitHub Actions），帮助在代码投入生产前拦截漏洞。其开源性质、全面的漏洞覆盖范围（OWASP Top 10+）以及独特的AI代理方法，使其成为现代DevSecOps中一个卓越的工具选择。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### ChromeDevTools/chrome-devtools-mcp - Chrome DevTools for AI Coding Agents
+*   **What it does**: This tool acts as a Model-Context-Protocol (MCP) server, enabling AI coding assistants (like Claude, Cursor, or Copilot) to control and inspect a live Chrome browser. It allows agents to perform browser automation, debugging, and performance analysis directly.
+*   **Key features**: Provides performance tracing and insights, advanced debugging (network, console, screenshots), and reliable browser automation via Puppeteer. It can be used via MCP or a standalone CLI.
+*   **Why it's notable**: It's a cutting-edge integration between AI development agents and standard web developer tools. Trending likely due to its potential to automate complex front-end testing, debugging, and optimization workflows, making developers more efficient.
+
+### ChromeDevTools/chrome-devtools-mcp - 面向AI编码代理的Chrome开发者工具
+*   **功能介绍**: 该工具作为一个模型上下文协议（MCP）服务器，让AI编码助手（如Claude、Cursor或Copilot）能够控制和检查实时的Chrome浏览器。它允许代理直接进行浏览器自动化、调试和性能分析。
+*   **主要特点**: 提供性能跟踪与分析、高级调试（网络请求、控制台、截图）以及基于Puppeteer的可靠浏览器自动化。既可通过MCP使用，也提供了独立的CLI。
+*   **为何值得关注**: 这是AI开发代理与标准Web开发者工具的前沿集成。它可能通过自动化复杂的前端测试、调试和优化工作流来提升开发效率，因此受到广泛关注。
+
+**[View Repository / 查看仓库](https://github.com/ChromeDevTools/chrome-devtools-mcp)**
+
+### jamesob/local-llm - Hardware and software guide for running SOTA large language models locally
+*   **What it does**: This repository provides a comprehensive, experience-based guide for building a high-performance computer system specifically to run state-of-the-art (SOTA) large language models (LLMs) locally, without relying on cloud services. It details hardware recommendations for different budgets, a specific high-end build using multiple NVIDIA RTX PRO 6000 GPUs, and the necessary kernel, BIOS, and software configurations to achieve optimal performance and GPU-to-GPU communication.
+*   **Key features**:
+    *   **Tiered Budget Guidance**: Offers practical hardware recommendations for different spending levels, from a ~$2k setup (2x RTX 3090s) to a ~$40k setup (4x RTX 6000 Pros).
+    *   **Detailed High-End Build Documentation**: Provides an exact Bill of Materials (BOM) and configuration for a custom system with 4x NVIDIA RTX PRO 6000 GPUs and a PCIe Gen4 switch, achieving 384GB of VRAM.
+    *   **In-Depth Technical Configuration**: Includes critical but often overlooked details like specific BIOS settings, kernel/GRUB parameters, scripts to disable PCIe ACS for optimal P2P communication, and NCCL environment variables.
+    *   **Model Recommendations**: Suggests specific, runnable LLM models (e.g., Qwen3.6-27B, GLM-5.2-Int8Mix-NVFP4-REAP-594B) and tools (like a custom `stt` harness for Whisper) that can be used with the described hardware.
+*   **Why it's notable**: It stands out as a highly detailed, real-world engineering guide rather than a simple software tutorial. The author shares valuable, hard-won knowledge about assembling, cooling, and configuring a complex multi-GPU system, including obscure topics like PCIe switch optimization and power limiting. This makes it an invaluable resource for enthusiasts and professionals aiming to replicate or learn from a top-tier local inference setup.
+
+### jamesob/local-llm - 本地运行最先进大语言模型的硬件与软件指南
+*   **功能介绍**: 本仓库提供了一份全面、基于实践经验的指南，用于构建一套高性能计算机系统，以便在本地运行最先进的大型语言模型（LLM），无需依赖云服务。它包含了针对不同预算的硬件推荐、一个使用多块NVIDIA RTX PRO 6000显卡的高端构建方案，以及为实现最佳性能和显卡间通信所需的操作系统、BIOS和软件配置详情。
+*   **主要特点**:
+    *   **分级预算指导**：为不同的预算水平（从约2000美元到约40000美元）提供了实用的硬件配置建议。
+    *   **详尽的高端构建记录**：提供了一个包含4块NVIDIA RTX PRO 6000显卡和PCIe Gen4交换机的自定义系统的精确物料清单（BOM）和详细配置。
+    *   **深度技术配置**：涵盖了关键但常被忽视的细节，如特定的BIOS设置、内核/GRUB参数、用于优化点对点（P2P）通信的禁用PCIe ACS脚本，以及NCCL环境变量。
+    *   **模型推荐**：针对所述硬件，推荐了具体、可运行的LLM模型（例如，Qwen3.6-27B、GLM-5.2-Int8Mix-NVFP4-REAP-594B）和工具（如用于Whisper的自定义`stt`工具）。
+*   **为何值得关注**: 本仓库的独特价值在于它是一份极其详尽的、来自现实世界的工程指南，而不仅仅是一个简单的软件教程。作者分享了关于组装、散热和配置复杂多显卡系统的宝贵、来之不易的知识，甚至涵盖了诸如PCIe交换机优化和功耗限制等冷门主题。对于希望复现或学习顶级本地推理系统的爱好者和专业人士来说，这是一份极其宝贵的资源。
+
+**[View Repository / 查看仓库](https://github.com/jamesob/local-llm)**
+
+### Investing-for-Beginners - A Public Knowledge Framework for US Stocks, Options, and Cryptocurrency
+*   **What it does**: This is a public investment starter guide tailored for Chinese speakers, designed to help absolute beginners build a foundational knowledge framework. It systematically covers core topics across three major asset classes: US stocks (e.g., trading mechanics, financial statements, valuation), options (e.g., pricing, Greeks, risk management), and cryptocurrencies (e.g., trading, wallets, DeFi, common scams).
+*   **Key features**:
+    1.  **Structured Learning Path**: Progresses from basic concepts like order types and financial reports to advanced topics such as option pricing and blockchain security.
+    2.  **Practical Risk Education**: Strongly emphasizes understanding risks (leverage, liquidation, phishing, smart contract vulnerabilities) and the importance of due diligence before investing, rather than recommending specific assets.
+    3.  **Integrated Web Wiki**: Serves as an official public index and entry point to the more comprehensive "Xiaoyinsi Investment Wiki," offering concise summaries with links for deeper study.
+*   **Why it's notable**: It addresses a significant gap in accessible, structured investment education for the Chinese-speaking community. By unifying the study of traditional (US stocks) and digital (crypto) assets under the common theme of the US dollar, it provides a holistic view of modern finance. Its focus on risk awareness and foundational literacy over "get-rich-quick" schemes makes it a valuable and responsible resource for beginners.
+
+### 投资入门指南 - 面向中文投资者的美股、期权与加密货币知识框架
+*   **功能介绍**：这是一份为中文投资者设计的公开投资入门指南，旨在帮助零基础的读者建立系统性的知识框架。它涵盖了美股（交易规则、财报、估值）、期权（定价、希腊字母、策略风险）和加密货币（交易、钱包、DeFi、常见骗局）三大领域。
+*   **主要特点**：
+    1.  **结构化知识体系**：内容从最基础的术语和操作讲起，逐步延伸至复杂概念，构建清晰的学习路径。
+    2.  **实用风险教育**：强调理解投资风险和自身责任，例如杠杆风险、流动性陷阱和骗局识别，而非提供具体的投资标的推荐。
+    3.  **Wiki 入口与索引**：作为“小隐寺投资百科”的公开索引，提供精炼内容摘要，并链接至官网进行深入阅读。
+*   **为何值得关注**：它系统性地填补了中文投资教育市场的空白，尤其注重风险意识和基础能力的培养。将美股与加密货币结合讲解，帮助读者理解以美元为核心的全球资产体系。其严谨、负责任的态度，使其成为初学者构建正确投资观的优质免费资源。
+
+**[View Repository / 查看仓库](https://github.com/xuchonglang/investing-for-beginners)**
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**Channel:** Dwarkesh Patel
+*   An exploration of the unexpected cognitive side effect of Botox (botulinum toxin).
+*   The video discusses how Botox paralyzes facial muscles, which in turn disrupts the user's ability to understand and recognize emotions in others' faces through a feedback loop (facial mimicry).
+*   Features insights from Grant Sanderson (3Blue1Brown) and likely other guests, bridging neuroscience, psychology, and everyday decision-making. It's worth watching for its deep dive into a counterintuitive biofeedback phenomenon that links our physical physiology to social intelligence.
+
+### 🎬 Botox让你更不懂"读表情" - Grant Sanderson
+**频道:** Dwarkesh Patel
+*   探讨肉毒杆菌（Botox）带来的一个意想不到的认知副作用。
+*   视频讨论了肉毒杆菌如何麻痹面部肌肉，进而通过反馈循环（面部模仿）破坏用户理解和识别他人面部情绪的能力。
+*   内容涵盖神经科学、心理学与日常决策的交汇点。由Grant Sanderson（3Blue1Brown）等嘉宾分享见解，揭示了身体生理机能与社交智能之间违反直觉的关联，非常值得一看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Gr5cOV3mOGs)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026)?
+**Channel:** Apna College
+*   A comprehensive guide aimed at beginners who want to enter the software development field and secure a job by the year 2026.
+*   Key topics include foundational coding concepts, essential programming languages, navigating the evolving job market, and actionable steps for placement readiness.
+*   This video is worth watching for its forward-looking perspective, offering a structured roadmap and practical advice from an educational channel focused on tech careers.
+
+### 🎬 如何开始编程并在2026年找到工作？
+**频道:** Apna College
+*   一份面向初学者的综合指南，旨在帮助他们进入软件开发领域并在2026年前找到工作。
+*   主要话题包括编程基础概念、必备编程语言、如何应对不断变化的就业市场以及为求职做好准备的可行步骤。
+*   该视频因其前瞻性视角而值得观看，它提供了一条结构化的路线图和来自一个专注于科技职业的教育频道的实用建议。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 How to make Falsity Monster in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+*   **What the video covers:** A quick, time-lapse tutorial demonstrating how to create a custom "Falsity Monster" using the building and customization tools within the Melon Sandbox game environment.
+*   **Key topics discussed:** Character design, in-game asset manipulation, using visual glitches or special effects for monster features, and creative sandbox gameplay.
+*   **Why it's worth watching:** It provides a concise and visual guide for players looking to expand their creative options in Melon Sandbox, showcasing fun techniques to build unique and bizarre characters beyond the standard presets.
+
+### 🎬 如何在甜瓜游乐场制作虚假怪物 #melonsanbox #shorts
+**频道:** Vedid
+*   **视频内容概述：** 一个快速的延时教程，展示了如何在《甜瓜游乐场》游戏环境中，使用内置的建造和自定义工具来创建一个自定义的“虚假怪物”。
+*   **主要话题：** 角色设计、游戏内资产操纵、利用视觉特效或故障效果制作怪物特征，以及沙盒创意玩法。
+*   **为何值得观看：** 它为希望拓展《甜瓜游乐场》创造空间的玩家提供了一个简洁直观的指南，展示了制作独特、怪异角色的有趣技巧，超越了游戏的标准预设选项。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=N7FtRKp_HbY)**
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**Channel:** Matthew Berman
+
+*   **What the video covers:** This is a tutorial video focused on **Hermes**, a new AI model or tool, positioning it as a significant improvement over a previous standard ("OpenClaw"). The video likely provides a hands-on guide, introduction, or deep-dive into using Hermes.
+*   **Key topics discussed:** The introduction and features of the Hermes AI model, a comparison with its predecessor (OpenClaw), and practical steps for getting started. The sponsored segment for Hostinger is also included.
+*   **Why it's worth watching:** For AI enthusiasts and developers, this video offers a first look and practical tutorial on a promising new AI tool. If Hermes lives up to its title, it represents a notable upgrade in the AI toolkit, making this guide valuable for early adoption and understanding its core advantages.
+
+### 🎬 “自 OpenClaw 以来最好的东西”（Hermes 教程）
+**频道:** Matthew Berman
+
+*   **视频内容概述：** 这是一期专注于介绍 **Hermes** AI 模型或工具的教程视频，将其定位为对之前标准（“OpenClaw”）的重大改进。视频很可能提供了关于如何使用 Hermes 的实操指南、介绍或深入解析。
+*   **主要话题：** 包括 Hermes AI 模型的介绍与功能特性、与前代产品（OpenClaw）的对比分析，以及快速上手的实践步骤。视频中也包含了 Hostinger 的赞助内容。
+*   **为何值得观看：** 对于 AI 爱好者和开发者来说，本期视频提供了对这款极具前景的新 AI 工具的初步介绍和实战教程。如果 Hermes 配得上其标题所言，它代表了 AI 工具箱的一次重要升级，因此这份早期采用指南和核心优势解析对于相关从业者极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
 
