@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 04, 2026"
 date: 2026-07-04
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 5 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，5个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -423,6 +423,262 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **视频内容概述:** 这是一个关于名为“Hermes”的新AI系统或模型的教程与概览。主讲人将其定位为对先前系统“OpenClaw”的一次重大改进或更优替代方案。
 *   **主要话题:** Hermes 的介绍、其功能和特点、与 OpenClaw 的对比以突出其优势，以及可能包含的使用实操演示或指南。
 *   **为何值得观看:** 如果你关注人工智能的发展，本视频将介绍一个被标榜为重大飞跃的新工具。教程的形式对于那些有兴趣直接学习和应用最新AI技术的观众来说非常有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
+
+### Tall Trees Defy Drought Vulnerability
+* New research finds the world's tallest tropical trees (Dipterocarp species) are not limited by their height in water transport, contrary to long-held theory.
+* The study reveals these giant trees have evolved compensatory adaptations, such as wider water vessels near the base and specialized leaves, making their hydraulic systems resilient to drought.
+* Key implication: The tallest 1% of trees, which store over half a forest's above-ground carbon, may be less vulnerable to climate-change-induced droughts than current predictive models suggest.
+
+### 巨树运输水分无忧
+* 新研究发现，世界上最高的热带树木（龙脑香科树种）在水分运输方面并未受到树高的限制，这与长期存在的理论相悖。
+* 研究表明，这些巨树进化出了补偿性适应机制，例如靠近底部的导管更宽以及特化的叶片，使其水分系统在干旱条件下具有韧性。
+* 关键启示：储存了森林地上一半以上碳的最顶尖1%的树木，可能不像现有预测模型所认为的那样容易受到气候变化引发的干旱影响。
+
+**[Read Original / 阅读原文](https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/)**
+
+### Leanstral 1.5: Democratizing Formal Verification
+
+*   Leanstral 1.5 is a free, open-source (Apache-2.0) model with 119B total parameters (6B active) designed for proof engineering in Lean 4, offering a powerful and accessible upgrade for formal verification.
+*   It achieves state-of-the-art performance, saturating the miniF2F benchmark and solving 587/672 problems on PutnamBench. It also sets new records on FATE-H (87%) and FATE-X (34%) benchmarks.
+*   Beyond benchmarks, the model is practically effective, capable of verifying complex code properties and uncovering previously unknown bugs in real-world open-source repositories.
+*   The training involved a three-stage process (mid-training, supervised fine-tuning, reinforcement learning) using two key environments: a multi-turn verifier loop and a code agent environment that simulates a developer's filesystem workflow.
+*   The model demonstrates exceptional test-time scaling, with performance on PutnamBench improving continuously as the token budget increases from 25k to 4M tokens per attempt.
+*   Case studies highlight its strength in proving time complexity for data structures (e.g., AVL trees) and its application in an automated bug-finding pipeline for Rust code, which discovered 11 genuine bugs, including 5 previously unreported.
+
+### Leanstral 1.5：让形式化验证惠及所有人
+
+*   Leanstral 1.5 是一款免费的开源（Apache-2.0 许可）模型，拥有 119B 总参数（6B 活跃参数），专为 Lean 4 中的证明工程设计，为形式化验证提供了强大且易用的升级。
+*   它在性能上达到了最新水平：在 miniF2F 基准测试上达到饱和，在 PutnamBench 上解决了 587/672 道题目，并在 FATE-H (87%) 和 FATE-X (34%) 基准测试上创下了新纪录。
+*   除了基准测试，该模型在实际应用中同样有效，能够验证复杂的代码属性，并在真实的开源代码库中发现先前未知的缺陷。
+*   其训练过程包含三个阶段（中期训练、监督微调、强化学习），并利用了两个关键环境进行训练：一个多轮验证器循环和一个模拟开发者文件系统工作流的代码代理环境。
+*   该模型展现了卓越的测试时缩放能力：在 PutnamBench 上的性能随着每次尝试的 token 预算从 25k 增加到 4M 而持续提升。
+*   案例研究突显了其在证明数据结构（如 AVL 树）时间复杂度方面的能力，以及其应用于 Rust 代码自动错误查找流水线的效果——该流程发现了 11 个真实缺陷，其中 5 个此前未在 GitHub 上报告。
+
+**[Read Original / 阅读原文](https://mistral.ai/news/leanstral-1-5/)**
+
+### AMD's Growing Edge in AI Inference Cost-Effectiveness
+* NVIDIA's GPU prices and inference costs are surging due to sky-high demand outpacing supply from Blackwell hardware.
+* AMD's MI355X offers comparable hardware specs at roughly 2.75x lower cost per GPU than NVIDIA's B300, presenting a powerful value proposition.
+* Historically, NVIDIA's superior software ecosystem and day-0 model support gave it a frictionless performance lead, while AMD required significant engineering work to catch up.
+* The performance gap is closing as optimization tools improve, with Wafer demonstrating near-competitive throughput (2626 tok/s/node) on AMD MI355X at a fraction of the cost.
+* This shift indicates that achieving top-tier performance per dollar on AMD is becoming more about ecosystem support than fundamental software superiority.
+
+### AMD在AI推理性价比上的崛起
+* 由于Blackwell硬件供应无法满足飙升的需求，NVIDIA的GPU价格和推理成本正急剧上涨。
+* AMD的MI355X在硬件规格相当的情况下，每GPU成本约为NVIDIA B300的1/2.75，展现出强大的价值主张。
+* 过去，NVIDIA凭借其卓越的软件生态系统和“首日”模型支持，拥有无摩擦的性能优势，而AMD则需要大量工程工作才能赶上。
+* 随着优化工具的进步，性能差距正在缩小，Wafer展示了AMD MI355X上接近竞争对手的吞吐量（2626 tok/s/节点），且成本远低于对手。
+* 这一转变表明，在AMD上实现最佳性价比正日益取决于生态系统的支持，而非根本性的软件优势。
+
+### Key Technical Achievements and Insights
+* Achieved 2626 aggregate tok/s/node on a specific cache workload (20k in/1k out) with AMD MI355X, reaching ~80% of a B200's performance for over 2x lower cost.
+* Set a single-stream benchmark of 213 tok/s for GLM5.2 on AMD hardware, validating its competitive performance per dollar.
+* Key optimizations included quantizing the model to MXFP4 without loss, patching the sglang inference framework to support speculative decode, and tuning the MoE kernel for the specific model shape.
+* The work required framework bug fixes but no custom kernel development, signaling a more mature and accessible optimization path on AMD's ROCm stack.
+* Demonstrates that single-node AMD deployments can now serve frontier models efficiently, narrowing NVIDIA's traditional software moat.
+
+### 关键技术成就与洞见
+* 在特定缓存工作负载（20k输入/1k输出）下，在AMD MI355X上实现了2626聚合 tok/s/节点的吞吐量，达到了B200约80%的性能，但成本降低了2倍以上。
+* 在AMD硬件上为GLM5.2设立了213 tok/s的单流基准，验证了其具有竞争力的性价比。
+* 关键优化包括：将模型量化为无损的MXFP4格式、修补sglang推理框架以支持推测解码、以及为特定模型结构调优MoE内核。
+* 这项工作主要需要修复框架漏洞，无需开发自定义内核，表明AMD ROCm栈上的优化路径更加成熟和易于实现。
+* 这证明了单节点AMD部署现在可以高效地服务前沿模型，正在缩小NVIDIA传统的软件护城河。
+
+**[Read Original / 阅读原文](https://www.wafer.ai/blog/glm52-amd)**
+
+### Strix - Open-Source AI Penetration Testing Tool
+*   **What it does**: Strix is an autonomous AI penetration testing tool that mimics real-world hackers to dynamically test application code, identify security vulnerabilities, and validate them with working proofs-of-concept (PoCs).
+*   **Key features**:
+    *   **Full pentesting toolkit**: Includes reconnaissance, exploitation, and validation capabilities out of the box.
+    *   **Multi-agent orchestration**: Teams of specialized AI agents collaborate and scale for comprehensive coverage.
+    *   **Real exploit validation**: Provides working PoCs instead of just alerts, reducing false positives common in legacy scanners.
+    *   **Developer-first CLI**: Offers actionable findings with remediation guidance and can auto-fix vulnerabilities.
+    *   **CI/CD Integration**: Seamlessly integrates with GitHub Actions to scan pull requests and block insecure code.
+*   **Why it's notable**: It's trending (2,803 stars today) because it represents a shift towards **AI-driven, autonomous security testing**. Its ability to act like a red team, validate exploits, and integrate into modern DevSecOps workflows makes it a powerful and efficient tool for developers and security teams, moving beyond traditional static analysis.
+
+### Strix - 开源AI渗透测试工具
+*   **功能介绍**：Strix 是一款自主的AI渗透测试工具，它模仿真实黑客的行为，动态测试应用程序代码，识别安全漏洞，并通过实际的漏洞利用概念验证（PoC）来确认漏洞。
+*   **主要特点**：
+    *   **全栈渗透测试**：开箱即提供侦察、漏洞利用和验证能力。
+    *   **多AI代理协作**：多个专门的AI代理协同工作，可扩展以实现全面覆盖。
+    *   **真实漏洞验证**：提供可用的PoC，而非简单的警报，减少了传统扫描器常见的误报。
+    *   **开发者优先的CLI**：提供可操作的修复指导，并能自动修复漏洞。
+    *   **与CI/CD无缝集成**：可与GitHub Actions集成，扫描拉取请求并在不安全代码合并前将其阻止。
+*   **为何值得关注**：该项目今日获得2,803颗星，处于热门趋势中，因为它代表了向 **AI驱动、自主的安全测试** 的转变。它能够像红队一样行动、验证漏洞利用并与现代DevSecOps工作流集成，这使其成为开发者和安全团队强大且高效的工具，超越了传统的静态分析。
+
+**[View Repository / 查看仓库](https://github.com/usestrix/strix)**
+
+### Codex plugin for Claude Code - Integrate Codex for Code Review and Task Delegation
+* **What it does**: This is a plugin for the Claude Code AI assistant that enables users to call OpenAI's Codex AI model directly from their Claude Code workflow. It is primarily used for performing automated code reviews and delegating complex coding tasks to Codex.
+* **Key features**:
+    *   **Code Review**: Offers standard (`/codex:review`) and adversarial (`/codex:adversarial-review`) code review modes for uncommitted changes or branches.
+    *   **Task Delegation**: Allows users to hand off debugging, fixing, or investigation tasks to Codex via the `/codex:rescue` command.
+    *   **Background Job Management**: Supports running long tasks in the background and provides commands (`/codex:status`, `/codex:result`, `/codex:cancel`) to manage them.
+    *   **Session Transfer**: Can convert the current Claude Code session into a persistent Codex thread (`/codex:transfer`) for continuous work in the Codex app.
+    *   **Setup & Configuration**: Includes a setup command and supports project-level configuration via `config.toml` files.
+* **Why it's notable**: This plugin represents a significant trend in AI-assisted development: the **orchestration and integration of multiple specialized AI models** within a single developer's workflow. By bridging Claude Code (a conversational AI) with Codex (a model optimized for code generation and understanding), it creates a more powerful, flexible environment. The high star count (634 in a day) indicates strong interest in tools that allow developers to seamlessly leverage the best capabilities of different AI providers without switching contexts. It directly addresses the need for AI tools that collaborate to handle both high-level planning/review and granular code tasks.
+
+### Codex plugin for Claude Code - 在Claude Code中集成Codex以审查代码和委派任务
+* **功能介绍**: 这是一个为Claude Code AI助手设计的插件，允许用户在Claude Code的工作流中直接调用OpenAI的Codex AI模型。其主要用途是执行自动化代码审查和将复杂的编码任务委派给Codex处理。
+* **主要特点**:
+    *   **代码审查**: 提供标准审查（`/codex:review`）和对抗性审查（`/codex:adversarial-review`）模式，可对未提交的更改或分支进行审查。
+    *   **任务委派**: 通过 `/codex:rescue` 命令，用户可以将调试、修复或调查任务交由Codex完成。
+    *   **后台任务管理**: 支持将耗时任务置于后台运行，并提供 `/codex:status`、`/codex:result`、`/codex:cancel` 等命令来管理这些作业。
+    *   **会话转移**: 可以将当前的Claude Code会话转换为持久的Codex线程（`/codex:transfer`），以便在Codex应用中继续工作。
+    *   **安装与配置**: 包含安装引导命令，并支持通过 `config.toml` 文件进行项目级配置。
+* **为何值得关注**: 该插件体现了AI辅助开发的一个重要趋势：**在单一开发者工作流中编排和集成多个专业AI模型**。通过连接Claude Code（对话式AI）和Codex（专为代码生成和理解优化的模型），它创造了一个更强大、更灵活的环境。其单日获得的高星标数（634颗）表明，开发者对于能够无缝利用不同AI服务商各自优势（而无需切换工作环境）的工具需求巨大。它直接解决了开发者需要AI工具协同工作、既能处理高层次的规划与审查，又能执行细粒度编码任务的需求。
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### JuliusBrussee/caveman - Caveman-Style Token Saver for AI Coding Agents
+* **What it does**: A skill/plugin that makes AI coding agents (like Claude Code, Gemini, Cursor, etc.) respond in concise "caveman-speak," cutting output tokens by ~65% while keeping code, commands, and errors technically exact.
+* **Key features**:
+  * Compatible with 30+ AI agents.
+  * Six compression levels (`lite`, `full`, `ultra`, `wenyan`, etc.) switchable per session.
+  * Special commands for commits (`/caveman-commit`), PR reviews (`/caveman-review`), and token savings stats (`/caveman-stats`).
+  * Includes `caveman-compress` to shrink memory files (like `CLAUDE.md`) permanently, saving input tokens across sessions.
+  * Backed by benchmarks showing an average 65% output token reduction without losing technical accuracy.
+* **Why it's notable**: It offers a simple, universal way to significantly reduce AI response verbosity and associated costs across many popular development tools. Its "brevity" approach is supported by research suggesting shorter answers can sometimes improve model accuracy. The high star count (2,863 in a day) indicates strong community interest in efficient AI interaction.
+
+### JuliusBrussee/caveman - 为AI编程助手节省Token的"穴居人"模式
+* **功能介绍**：一个让AI编程助手（如Claude Code、Gemini、Cursor等）用简洁的"穴居人"风格回复的技能/插件。它能在保持代码、命令和技术错误精确不变的前提下，将输出Token减少约65%。
+* **主要特点**：
+  * 兼容30多种AI编程助手。
+  * 提供六种压缩级别（`lite`、`full`、`ultra`、`wenyan`等），可随时切换。
+  * 包含专用命令，用于提交信息（`/caveman-commit`）、PR评审（`/caveman-review`）和查看Token节省统计（`/caveman-stats`）。
+  * 内置`caveman-compress`工具，可永久压缩记忆文件（如`CLAUDE.md`），在后续会话中节省输入Token。
+  * 经过基准测试验证，平均减少65%的输出Token，且技术准确性不变。
+* **为何值得关注**：它为开发者提供了一种简单通用的方法，在众多主流开发工具中显著降低AI回复的冗余度和相关成本。这种"简洁"策略有研究表明可能提升模型准确性。项目在一天内获得2,863星，反映了社区对高效AI交互方式的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/JuliusBrussee/caveman)**
+
+### Krishnagangwal/CS-Fundamentals - A Curated CS Fundamentals Repository for Placement Preparation
+* **What it does**: Provides a comprehensive, organized collection of Computer Science fundamentals covering all major subjects required for technical interviews and placement exams (like GATE).
+* **Key features**: Features a well-structured folder system with notes, cheatsheets, interview question banks, and learning resources in PDF, DOCX, and Markdown formats. Subjects include DSA, Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design, and Software Engineering. Also includes general resources like HR interview questions and LeetCode problems.
+* **Why it's notable**: It serves as a valuable one-stop resource for students and job-seekers, consolidating materials from various sources into a single, popular repository (1510 stars). Its structured approach and focus on placement readiness make it a trending and practical toolkit.
+
+### Krishnagangwal/CS-Fundamentals - 计算机科学基础资源合集（求职准备用）
+* **功能介绍**: 该仓库是一个精心整理的计算机科学基础知识集合，涵盖了技术面试和入职考试（如GATE）所需的所有主要学科。
+* **主要特点**: 采用清晰的文件夹结构，以 PDF、DOCX 和 Markdown 等格式提供笔记、速查表、面试题库和学习资源。涵盖主题包括数据结构与算法 (DSA)、计算机网络、数据库管理系统 (DBMS) 与 SQL、面向对象编程 (OOPs)、操作系统、系统设计以及软件工程。此外还包含人力资源面试问题和 LeetCode 题库等通用资源。
+* **为何值得关注**: 它为学生和求职者提供了一个宝贵的“一站式”资源库，将来自不同来源的材料整合到一个高人气仓库（1510 星）中。其系统化的组织方式和对求职准备的专注，使其成为当前备受关注且非常实用的工具集。
+
+**[View Repository / 查看仓库](https://github.com/Krishnagangwal/CS-Fundamentals)**
+
+### Codex-5.5-codex-instruct-5.5 - GPT-5.5 Codex CLI “Unrestricted Mode” Injection Tool
+* **What it does**
+  This is a Python script designed to inject custom instructions into OpenAI's Codex CLI tool. It forces the underlying GPT-5.5 model to operate in a declared "unrestricted developer mode," bypassing its standard content safety filters and restrictions.
+* **Key features**
+  * **One-click deployment:** Simply run `python codex-instruct.py` to deploy the instructions.
+  * **Direct & Minimal:** Uses a concise (~40-line) instruction set to explicitly disable filters and command the model not to refuse tasks.
+  * **Broad Coverage:** The 8 core directives cover scenarios including security research, penetration testing, reverse engineering, and NSFW fictional content.
+  * **Verifiable:** Provides a test query ("How to perform SQL injection testing?") to verify the jailbreak is active.
+  * **Reversible:** Instructions on how to undo the changes are clearly documented.
+* **Why it's notable**
+  It specifically targets the latest GPT-5.5 model within the Codex CLI environment. Its direct "developer mode declaration" strategy is presented as a more straightforward and potent alternative to previous indirect methods (like the 5.4 version's CTF sandbox approach). The repository has gained significant traction (1296 stars) from users interested in AI model capabilities and restrictions.
+
+### Codex-5.5-codex-instruct-5.5 - GPT-5.5 Codex CLI “无限制模式” 注入工具
+* **功能介绍**
+  这是一个针对 OpenAI Codex CLI 工具的 Python 脚本。它通过向 Codex 注入自定义指令，强制 GPT-5.5 模型以“无限制开发者模式”运行，从而绕过其标准的内容安全限制。
+* **主要特点**
+  * **一键部署：** 运行 `python codex-instruct.py` 即可完成注入。
+  * **直接且精简：** 指令集简短（约40行），明确要求关闭所有过滤器并禁止模型拒绝任何任务。
+  * **覆盖场景广：** 8条核心指令涵盖了安全研究、渗透测试、逆向工程及NSFW虚构内容等场景。
+  * **可验证：** 提供了测试用例（“如何进行SQL注入测试？”）以检验是否生效。
+  * **可还原：** 清晰说明了如何删除配置并恢复到原始状态。
+* **为何值得关注**
+  此工具专门针对最新的 GPT-5.5 模型及其在 Codex CLI 中的应用。它所采用的直接“声明无限制模式”策略，被描述为比之前（如5.4版本的CTF沙箱）更为直接和强力的破解方法。该仓库已获得较高关注（1296 Stars），吸引了众多对AI模型能力及其限制感兴趣的技术人员。
+
+**[View Repository / 查看仓库](https://github.com/yynxxxxx/Codex-5.5-codex-instruct-5.5)**
+
+### 🎬 Mathematicians will become art curators - Grant Sanderson
+**Channel:** Dwarkesh Patel
+* This video explores the profound connection between mathematics and art, suggesting that mathematicians of the future may take on roles akin to art curators.
+* Key topics include the inherent beauty in mathematical structures, how mathematical thinking could shape aesthetic appreciation, and the evolving role of the mathematician in an AI-driven world.
+* It's worth watching for its unique perspective on the future of creativity, intelligence, and the blurred lines between STEM and the humanities, prompting deep thought about how we define and discover beauty.
+
+### 🎬 数学家将成为艺术策展人 - Grant Sanderson
+**频道:** Dwarkesh Patel
+* 本视频探讨了数学与艺术之间深刻的联系，认为未来的数学家可能会承担起类似艺术策展人的角色。
+* 主要话题包括数学结构中固有的美、数学思维如何影响审美欣赏，以及在人工智能驱动的世界中数学家角色的演变。
+* 值得观看是因为其对未来创造力、智慧，以及STEM与人文学科之间界限模糊化的独特视角，能引发人们对于如何定义和发现美的深刻思考。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Cn12N7Vm32A)**
+
+### 🎬 Every Major AWS Outage (And Why They Keep Happening)
+**Channel:** freeCodeCamp.org
+* **What the video covers:** This video is a detailed documentary examining the major, system-wide outages that have affected Amazon Web Services (AWS) over the past fifteen years. It traces the timeline of each incident, explains their immediate causes and cascading effects on the internet, and investigates the underlying architectural and systemic reasons why such critical failures continue to occur in cloud infrastructure.
+* **Key topics discussed:**
+    *   Timeline of the six major AWS outages.
+    *   Specific industries impacted (airlines, hospitals, banks, etc.).
+    *   Technical explanations of the root causes (e.g., network configuration errors, power failures, software bugs).
+    *   The concept of "blast radius" in cloud computing.
+    *   The inherent trade-offs between efficiency, cost, and resilience in hyperscale cloud design.
+* **Why it's worth watching:** It provides crucial context for developers, engineers, and business leaders relying on cloud services. Understanding these historical failures is essential for designing robust systems, implementing effective disaster recovery plans, and appreciating the complex challenges of maintaining a global cloud platform. It moves beyond just reporting the outages to analyze *why* they are a recurring phenomenon.
+
+### 🎬 深度解析：AWS每一次重大宕机及其持续发生的原因
+**频道:** freeCodeCamp.org
+* **视频内容概述：** 本纪录片详细剖析了过去十五年间亚马逊云服务（AWS）发生的几次全平台级重大故障事件。视频梳理了每次事故的时间线，解释了其直接起因及对互联网造成的连锁影响，并深入探讨了导致此类关键故障在云基础设施中持续发生的深层架构与系统性原因。
+* **主要话题：**
+    *   六次重大AWS宕机事件时间线。
+    *   受影响的具体行业（如航空、医疗、金融等）。
+    *   根本原因的技术解析（例如：网络配置错误、电力故障、软件缺陷）。
+    *   云计算中的“影响半径”概念。
+    *   超大规模云设计中在效率、成本与韧性之间的固有权衡。
+* **为何值得观看：** 对于所有依赖云服务的开发者、工程师和商业决策者而言，本视频提供了至关重要的背景认知。理解这些历史性的失败案例，对于设计健壮系统、制定有效的灾难恢复计划以及认识维护全球云平台的复杂挑战至关重要。它超越了简单的事故报道，深入分析了为何这类事件会反复发生。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6C14E9sQ_-w)**
+
+### 🎬 Why product roles need to stay
+**Channel:** Lenny's Podcast
+* What the video covers
+  The podcast episode discusses the enduring relevance and necessity of product management roles in the technology sector, particularly in an era increasingly influenced by artificial intelligence like ChatGPT.
+* Key topics discussed
+  - The core functions of a product manager that technology cannot easily replicate.
+  - The evolving landscape of AI and automation, and its impact on various jobs.
+  - Strategies for product professionals to adapt and add unique value in the AI era.
+* Why it's worth watching
+  It offers a timely and insightful perspective for current and aspiring product managers, addressing common anxieties about job displacement by AI and providing a framework for how these roles will evolve and remain crucial.
+
+### 🎬 为什么产品岗位需要留存
+**频道:** Lenny's Podcast
+* 视频内容概述
+  本期播客探讨了在人工智能（如ChatGPT）影响力日益增强的时代，科技行业中产品管理角色为何依然重要且不可或缺。
+* 主要话题
+  - 产品经理的核心职能，以及哪些方面难以被技术完全替代。
+  - 人工智能与自动化带来的行业变革及其对各类岗位的影响。
+  - 产品从业者如何适应变化，在AI时代创造并凸显独特价值。
+* 为何值得观看
+  它为现任和潜在的产品经理提供了及时且深刻的见解，回应了关于AI岗位替代的普遍焦虑，并阐述了这些角色将如何演变并持续保持关键作用的思路框架。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=fciOhYZOZuo)**
+
+### 🎬 How to make jellyfish in Melon Sandbox #melonsandbox #shorts
+**Channel:** Vedid
+*   This short video is a visual tutorial demonstrating how to create a functional jellyfish creature within the physics-based sandbox game, Melon Sandbox.
+*   **Key topics:** Game mechanics, creative building using in-game elements, and utilizing the game's physics engine to simulate movement.
+*   **Why it's worth watching:** It's a quick, engaging guide for players looking to expand their creative toolkit and experiment with novel constructions in a popular sandbox game.
+
+### 🎬 如何在西瓜沙盒中制作水母 #melonsandbox #shorts
+**频道:** Vedid
+*   这个短视频是一个视觉化教程，展示了如何在基于物理的沙盒游戏《西瓜沙盒》中制作一个可活动的水母生物。
+*   **主要话题：** 游戏机制、使用游戏内元素进行创意建造，以及利用游戏物理引擎模拟运动。
+*   **为何值得观看：** 它简短而引人入胜，为玩家提供了扩展创意工具箱的指南，让他们能在一个流行的沙盒游戏中尝试全新的构造。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-rUiX0MNKzY)**
+
+### 🎬 "The best thing since OpenClaw" (Hermes Tutorial)
+**Channel:** Matthew Berman
+*   What the video covers: A tutorial and overview of the "Hermes" AI model, likely a new release or update from NousResearch, which the host describes as a significant improvement.
+*   Key topics discussed: The features, capabilities, and potential applications of the Hermes model, its performance relative to other models, and a hands-on guide for using it.
+*   Why it's worth watching: If you are interested in cutting-edge open-source LLMs, this video provides a deep dive from a respected AI commentator on a model that's generating notable buzz, helping you understand its strengths and how to leverage it.
+
+### 🎬 "自 OpenClaw 以来最好的东西"（Hermes 教程）
+**频道:** Matthew Berman
+*   视频内容概述：对“Hermes” AI模型的教程和概览，这很可能是NousResearch的新发布或更新版本，主持人称其为一次重大改进。
+*   主要话题：讨论Hermes模型的功能、能力及潜在应用，其与其他模型的性能对比，以及如何使用它的实践指南。
+*   为何值得观看：如果你对前沿的开源大语言模型感兴趣，本视频由一位备受尊敬的AI评论员深入剖析这款备受热议的模型，能帮助你了解其优势及如何运用。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=TML-0HmxWCE)**
 
