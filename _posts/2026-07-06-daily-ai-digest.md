@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 06, 2026"
 date: 2026-07-06
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -247,4 +247,159 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 为何值得观看：它提供了一个务实且结构清晰的学习计划，直指未来的就业市场需求。作为一家知名在线技术就业平台出品的指南，其建议具有高度的可操作性，对于希望高效入门和转行的初学者来说尤其有价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+<!-- [Title-Only] -->
+### New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]
+* This article likely reports on the results of a study testing a new AI tutoring system in a Dartmouth college course. The core finding is its measured effectiveness, showing a significant learning improvement with an effect size between 0.71 and 1.30 standard deviations.
+* It is interesting because such a reported effect size is notably high for an educational intervention, suggesting the AI tutor could be highly effective—potentially more so than many traditional teaching methods—and represents a significant advancement in AI-assisted learning.
+
+### 新型AI家教在达特茅斯课程中实现0.71-1.30个标准差效应量 [pdf]
+* 根据标题推测，这篇文章可能报告了一项关于在达特茅斯学院课程中测试新型AI辅导系统的研究结果。其核心发现是该系统经过测量的有效性，显示学习效果提升了0.71到1.30个标准差。
+* 之所以值得关注，是因为标题中报告的效应量对于教育干预来说相当高，这表明该AI家教可能非常有效——甚至可能优于许多传统教学方法——代表了AI辅助学习领域的一项重要进展。
+
+**[Read Original / 阅读原文](https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf)**
+
+### The Future of Flipper Zero Development
+
+*   **Firmware Maintenance Reaffirmed**: The team has allocated resources to maintain the Flipper Zero firmware and support community contributions, reversing the perception that development had stopped.
+*   **New Contribution Framework**: Community interaction will shift to asynchronous communication via GitHub Discussions, where feature requests will be voted on. Pull request guidelines will be stricter, and integration testing will become mandatory.
+*   **Historical Context & Achievements**: The team successfully delivered all Kickstarter promises, built a robust development platform with an SDK and apps ecosystem, and achieved global availability despite significant challenges.
+
+### Flipper Zero 固件开发的未来
+
+*   **重新确认固件维护**：团队已重新分配资源，用于维护 Flipper Zero 固件并支持社区贡献，澄清了开发已停止的误解。
+*   **新的贡献框架**：社区互动将转向通过 GitHub Discussions 进行异步沟通，功能请求将通过投票机制进行评估。合并请求（PR）的指南将更为严格，且集成测试将成为强制性要求。
+*   **历史背景与成就**：团队成功兑现了所有 Kickstarter 承诺，构建了一个拥有 SDK 和应用生态的强大开发平台，并在全球范围内实现了产品交付，尽管面临了诸多挑战。
+
+**[Read Original / 阅读原文](https://blog.flipper.net/future-of-flipper-zero-development/)**
+
+### English Summary of "Starring the Computer"
+*   **Acorn BBC Micro**: The most frequently appearing computer model, with notable roles in *Black Mirror: Bandersnatch*, *Loki*, and *The IT Crowd*.
+*   **Apple II Series (II, IIc)**: Iconic models featured extensively in 1980s films and series, including *WarGames* (referenced by title style), *First Blood*, and *Iron Man*.
+*   **Amstrad CPC & PCW**: Common in British TV of the late 80s/early 90s, appearing in *Red Dwarf*, *Only Fools and Horses*, and *Press Gang*.
+*   **Apple iBooks & iMacs**: Became staples of early 2000s media, frequently seen in romantic comedies and teen dramas like *Legally Blonde* and *The Princess Diaries*.
+*   **Recurring Title**: The 2009 film *Micro Men*, which dramatizes the Acorn vs. Sinclair rivalry, features multiple classic computer models.
+
+### 中文内容摘要："明星电脑"
+*   **Acorn BBC Micro**：出场频率最高的电脑型号，在《黑镜：潘达斯奈基》、《洛基》和《IT狂人》中均有重要戏份。
+*   **Apple II 系列（II, IIc）**：标志性的型号，在20世纪80年代的影视作品中广泛出现，例如《第一滴血》、《钢铁侠》及《3-2-1 Contact》。
+*   **Amstrad CPC 与 PCW**：常见于80年代末及90年代初的英国电视剧中，如《红矮星号》、《只蠢不惑》和《新闻陷阱》。
+*   **Apple iBooks 与 iMacs**：成为21世纪初影视作品的常见道具，频繁出现在《律政俏佳人》和《公主日记》等浪漫喜剧及青春剧中。
+*   **反复出现的标题**：2009年电影《Micro Men》（聚焦Acorn与Sinclair公司的竞争），该片中出现了多款经典电脑型号。
+
+**[Read Original / 阅读原文](https://www.starringthecomputer.com/computers.html)**
+
+### Leonxlnx/taste-skill - The Anti-Slop Frontend Framework for AI Agents
+*   **What it does**: Taste-Skill is a collection of portable "Agent Skills" (structured prompts/guidelines) that upgrade AI-built user interfaces. It provides rules and templates to steer AI models like ChatGPT, Codex, Cursor, and Claude Code towards generating well-designed, visually compelling frontends instead of generic, low-quality "slop."
+*   **Key features**:
+    *   **Core Skill**: A default `design-taste-frontend` skill (v2) that analyzes project briefs, infers a design language, and tunes "dials" for variance, motion, and density.
+    *   **Specialized Skills**: Includes modules for image-to-code workflows, redesigning existing projects, and distinct aesthetic directions (soft, minimalist, brutalist).
+    *   **Image Generation**: Dedicated skills (`imagegen-frontend-web/mobile`, `brandkit`) for creating reference designs (comps, flows, brand kits) using AI image generators, which can then be fed to coding AIs.
+    *   **Easy Integration**: Installable via a simple CLI command (`npx skills add`) or by directly pasting skill files into AI conversations.
+    *   **Tool Agnostic**: Compatible with major AI-powered coding tools (Codex, Cursor, Claude Code).
+*   **Why it's notable**: It directly addresses a common pain point in AI-assisted development—the lack of design sophistication in generated code. By codifying design principles into "skills," it empowers developers to get premium, production-ready UIs from AI. Its rapid star gain (850 in a day) and sponsorship from Vercel and prominent developers like Emil Kowalski highlight its novelty and perceived value in the community. The project is actively evolving (with a v2 rewrite) and offers a unique approach to guiding AI creativity.
+
+### Leonxlnx/taste-skill - 为AI智能体打造的“反粗制滥造”前端框架
+*   **功能介绍**：Taste-Skill 是一套可移植的“智能体技能”（结构化提示词/指南），旨在提升AI生成的用户界面质量。它提供一系列规则和模板，引导 ChatGPT、Codex、Cursor、Claude Code 等AI模型生成设计精良、视觉出色的前端代码，避免产出千篇一律、质量低下的“粗制滥造品”。
+*   **主要特点**：
+    *   **核心技能**：默认的 `design-taste-frontend` 技能（v2）可分析项目需求，推断设计语言，并调节布局、动效和视觉密度等“参数”。
+    *   **专项技能**：包含针对“图像转代码”工作流、现有项目重设计，以及多种独特美学风格（柔和、极简、粗野主义）的专用模块。
+    *   **图像生成**：提供专门技能（`imagegen-frontend-web/mobile`, `brandkit`），用于配合AI图像生成器创建设计参考（界面稿、交互流程、品牌套件），再将其结果交给编码AI。
+    *   **便捷集成**：可通过简单的CLI命令 (`npx skills add`) 安装，或直接将技能文件粘贴到AI对话中使用。
+    *   **工具兼容**：支持所有主流的AI编码工具（Codex, Cursor, Claude Code）。
+*   **为何值得关注**：它直击AI辅助开发中的一个普遍痛点——生成的代码缺乏设计美感。通过将设计原则“技能化”，它使开发者能够从AI手中获得具有高级感、可直接用于生产环境的用户界面。该项目在一天内获得850颗星，以及来自 Vercel 和 Emil Kowalski 等知名开发者的赞助，凸显了其创新性和在社区中的认可度。项目在积极迭代中（刚完成v2重写），提供了一种独特的方法来引导AI的创造力。
+
+**[View Repository / 查看仓库](https://github.com/Leonxlnx/taste-skill)**
+
+### Claude Skills - A Massive Multi-Tool Skill Library for AI Coding Agents
+*   **What it does:** This repository is a comprehensive, open-source collection of 354 modular "skills," "agents," and "personas" designed to give AI coding tools advanced domain expertise. It transforms generic AI assistants into specialized experts across engineering, marketing, product management, research, compliance, and daily productivity.
+*   **Key features:**
+    *   **Massive Scope:** Covers 18 domains with 354 skills, 96 agents, and 102 custom commands.
+    *   **Multi-Tool Compatibility:** Works natively with Claude Code and provides conversion scripts for 13+ tools including OpenAI Codex, Gemini CLI, Cursor, Aider, and Windsurf.
+    *   **Modular & Reusable:** Each skill includes structured instructions (`SKILL.md`), 593 pure-Python CLI tools, and 711 reference documents, all designed for reuse.
+    *   **Unique Offerings:** Features specialized skills like **AEO (Answer Engine Optimization)**, **PreToolUse security hooks**, a full **C-level advisory suite** (CFO, CMO, etc.), and an academic **Research Operations** stack.
+*   **Why it's notable:** It has seen explosive growth (5,200+ stars, 394 in one day) because it solves a key pain point: **providing deep, production-ready domain expertise to a wide array of AI coding agents**. Its "one repo, many platforms" approach and the sheer breadth and depth of its specialized skills make it an unprecedented resource for developers and teams leveraging AI.
+
+### Claude Skills - 面向多种AI编程智能体的大型技能插件库
+*   **功能介绍：** 这是一个综合性开源项目，收集了354个模块化的“技能”、“智能体”和“人格库”，旨在为AI编程工具注入高级领域专业知识，将通用AI助手转变为覆盖工程、营销、产品、研究、合规及日常生产力的专家。
+*   **主要特点：**
+    *   **内容全面：** 涵盖18个领域，包含354个技能、96个智能体及102个自定义命令。
+    *   **跨平台兼容：** 原生支持Claude Code，并提供转换脚本，可一键适配OpenAI Codex、Gemini CLI、Cursor、Aider等13+种主流编程工具。
+    *   **模块化与可复用：** 每个技能包含结构化指令(`SKILL.md`)、593个纯标准库Python工具及711份参考文档，设计为可即插即用的组件包。
+    *   **特色技能：** 包含**AEO（答案引擎优化）**、**PreToolUse安全钩子**、全套**C级高管顾问库**（CFO、CMO等）以及学术级的**研究运营套件**等独特内容。
+*   **为何值得关注：** 该项目在一天内获得394颗星，总星标超5200，原因在于它高效解决了一个核心痛点：**为广泛的AI编程智能体提供深度、可直接生产使用的领域专业知识**。其“一个仓库，适配多种平台”的设计理念以及技能内容的广度与深度，使其成为开发者和团队利用AI工具时一个史无前例的宝贵资源。
+
+**[View Repository / 查看仓库](https://github.com/alirezarezvani/claude-skills)**
+
+### claude-real-video - Local Video Processing for AI Models
+* **What it does**: A tool that locally processes videos from a URL or file by extracting scene-aware keyframes, deduplicating similar frames, and transcribing audio. It produces a clean output folder containing essential frames and a transcript that can be fed to any LLM (like Claude or GPT) for analysis.
+* **Key features**: Performs intelligent scene-change detection instead of fixed-interval sampling, uses a sliding-window algorithm to deduplicate shots, runs entirely locally for privacy, generates contact sheets for easier visual parsing, and optionally includes full audio transcription via Whisper.
+* **Why it's notable**: It solves the problem of inefficiently sampling video frames for LLM context. By only capturing meaningful visual changes and removing duplicates, it provides a much more accurate and token-efficient representation of a video, leading to better model understanding. Its local execution is a major differentiator for data privacy.
+
+### claude-real-video - 本地视频处理工具，专为AI模型设计
+* **功能介绍**：一个可在本地运行的工具，能从视频URL或本地文件中，通过检测场景变化提取关键帧，去除相似重复帧，并转录音频。最终生成一个包含关键帧和转录文本的输出文件夹，可直接供Claude、GPT等大语言模型进行分析。
+* **主要特点**：采用智能的场景变化检测（而非固定间隔抽帧），利用滑动窗口算法去除重复镜头，完全在本地运行以保护隐私，可生成联系表（contact sheet）方便视觉解析，可选集成Whisper进行完整音频转录。
+* **为何值得关注**：它解决了为LLM准备视频上下文时抽帧效率低下的核心问题。通过只捕获有意义的视觉变化并去除重复，它为视频提供了更准确、更节省token的表征，从而提升模型的理解效果。其本地执行模式是保护数据隐私的重要差异点。
+
+**[View Repository / 查看仓库](https://github.com/HUANGCHIHHUNGLeo/claude-real-video)**
+
+### [jamesob/local-llm] - 作者关于在本地运行最先进大语言模型的全部知识与实践
+* **它是什么**: 一份极其详尽的个人硬件配置指南，展示了作者如何搭建从2千美元入门级到4万美元顶级本地LLM运行环境，特别是使用多卡RTX 6000 Pro的高端配置。
+* **主要特点**:
+    * **硬件方案**: 提供了$2k（2x RTX 3090）和~$40k（4x RTX Pro 6000）两套预算方案，明确列出了硬件清单、价格和推荐模型。
+    * **深度优化**: 详细记录了为实现多GPU高性能P2P通信所做的底层优化，包括使用c-payne PCIe Gen4交换机、BIOS设置、内核参数调整、ACS禁用脚本等。
+    * **实践导向**: 包含大量实际操作脚本、配置示例和性能验证结果（如达到接近PCIe Gen4极限的P2P带宽），具有很强的可操作性。
+* **为何值得关注**: 这不是一个通用的软件教程，而是一个硬核玩家的“军火库”级实战记录。它揭示了构建一个没有厂商NVLink支持的多卡高性能推理平台所涉及的真实挑战与解决方案，对硬件发烧友、研究人员和希望完全本地化运行超大模型的团队极具参考价值。
+
+### [jamesob/local-llm] - 作者关于本地运行顶级大语言模型的全部知识与实践经验
+* **功能介绍**: 一份极为详尽的个人硬件配置手册，记录了作者如何搭建从2千美元入门级到4万美元顶级的大语言模型本地运行环境，核心是围绕使用4块RTX Pro 6000显卡的高性能配置。
+* **主要特点**:
+    * **硬件方案**: 提供了两种明确的预算方案（$2k与$40k级别），并附上了完整的硬件清单、价格和当时推荐的最佳模型。
+    * **深度优化**: 详细展示了为最大化多显卡点对点通信性能所采取的底层措施，包括采用c-payne PCIe Gen4交换机、关键的BIOS与内核参数配置、以及禁用ACS的定制脚本。
+    * **实战验证**: 提供了可直接复用的配置脚本、环境变量设置和性能测试结果（实测P2P带宽接近PCIe Gen4理论值），具有很强的实操指导意义。
+* **为何值得关注**: 这并非普通的软件使用指南，而是一个资深硬件玩家极其硬核的“搭建全记录”。它深入剖析了在没有原生NVLink支持的情况下，构建多卡高性能推理平台的真实技术挑战与解决方案，对于硬件爱好者、AI研究人员以及需要完全本地化运行超大模型的团队来说，是一份宝贵的实践参考。
+
+**[View Repository / 查看仓库](https://github.com/jamesob/local-llm)**
+
+### 🎬 How to make Falsity Monster in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+*   **What the video covers:** A short, step-by-step tutorial demonstrating how to construct a custom creature, the "Falsity Monster," within the sandbox physics game *Melon Sandbox*. It likely uses the game's tools for manipulating objects and characters.
+*   **Key topics discussed:** The video focuses on the specific build process for this unique entity, involving the placement, connection, or modification of in-game elements to achieve the desired "Falsity Monster" form.
+*   **Why it's worth watching:** It's a quick, actionable guide for players interested in creative building and modding within *Melon Sandbox*. It provides a concrete example of how to use the game's physics engine to design and bring a custom monster to life.
+
+### 🎬 如何在甜瓜沙盒中制作虚假怪物 #melonsanbox #shorts
+**频道:** Vedid
+*   **视频内容概述:** 这是一个简短的分步教程，演示如何在沙盒物理游戏《甜瓜沙盒》中构建一个自定义生物——“虚假怪物”。视频内容很可能展示了如何利用游戏内的工具来操纵物体和角色。
+*   **主要话题:** 视频核心在于制作这个独特实体的具体过程，涉及使用游戏内的元素进行放置、连接或修改，以完成预期的“虚假怪物”造型。
+*   **为何值得观看:** 对于对《甜瓜沙盒》内的创意建造和模组制作感兴趣的玩家来说，这是一个快速、可直接上手的指南。它提供了一个具体的实例，展示了如何运用游戏的物理引擎来设计并创造出自定义的怪物。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=N7FtRKp_HbY)**
+
+### 🎬 How to make jellyfish in Melon Sandbox #melonsandbox #shorts
+**Channel:** Vedid
+*   A short-form tutorial demonstrating the steps to create a jellyfish entity within the physics-based sandbox game *Melon Sandbox*.
+*   Key topics include using the game's objects and tools creatively, likely involving combining different elements to mimic the form and possibly movement of a jellyfish.
+*   It's worth watching for players of *Melon Sandbox* looking for creative inspiration, fun building ideas, or a quick guide on how to construct specific whimsical creatures in the game's freeform environment.
+
+### 🎬 How to make jellyfish in Melon Sandbox #melonsandbox #shorts
+**频道:** Vedid
+*   这是一个简短教程，展示了在基于物理的沙盒游戏《Melon Sandbox》中制作水母实体的步骤。
+*   主要话题包括如何富有创意地使用游戏内的物品和工具，可能涉及组合不同元素来模仿水母的外形和运动方式。
+*   对于《Melon Sandbox》的玩家来说，这值得一看，因为它能提供创作灵感、有趣的建造点子，或者一个关于如何在游戏自由的环境中构建特定奇幻生物的快速指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-rUiX0MNKzY)**
+
+### 🎬 Python Tutorial for AI
+**Channel:** codebasics
+* This is a concise Python mini-course specifically designed with AI applications in mind. It covers the essential Python fundamentals needed as a starting point for learning Artificial Intelligence.
+* Key topics include basic Python syntax, data structures, data manipulation with libraries like NumPy and Pandas, and foundational programming concepts tailored for AI workflows.
+* It's worth watching for beginners who want to learn Python directly in the context of AI, avoiding generic programming concepts that are less relevant for machine learning and data science tasks.
+
+### 🎬 面向AI的Python教程
+**频道:** codebasics
+* 这是一个简明扼要的Python迷你课程，专门针对人工智能应用案例而构建。它涵盖了作为学习人工智能起点所必需的Python核心基础。
+* 主要话题包括基础Python语法、数据结构、使用NumPy和Pandas等库进行数据操作，以及为人工智能工作流程量身定制的编程基础概念。
+* 值得观看是因为它专为希望直接在人工智能背景下学习Python的初学者设计，避免了那些与机器学习和数据科学任务关联度较低的通用编程概念。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6GuyMZ-cSzE)**
 
