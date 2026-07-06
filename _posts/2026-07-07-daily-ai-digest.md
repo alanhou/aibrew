@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 07, 2026"
 date: 2026-07-07
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -216,4 +216,216 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   为何值得观看：它为利用Claude AI促进业务增长提供了可操作、时间紧迫的策略。视频的紧迫性（“必须现在就使用”）表明，这些是当前能够带来先发优势的最佳实践。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
+### Bot Protection Notice for This Website
+*   This website uses a system called **Anubis** to protect against aggressive AI scraping that causes server downtime.
+*   It employs a **Proof-of-Work (PoW) scheme**, similar to Hashcash, which imposes a small cost on individual users but makes large-scale scraping expensive and impractical.
+*   This is a temporary measure; the ultimate goal is to develop fingerprinting techniques to automatically identify legitimate users versus automated bots.
+*   The challenge requires modern JavaScript; users must **disable browser plugins like JShelter** for this domain to proceed.
+
+### 本网站机器人防护说明
+*   本站点采用名为 **Anubis** 的系统，以防范导致服务器宕机的恶意AI爬取。
+*   该系统采用类似Hashcash的 **工作量证明（PoW）机制**，对个人用户造成的影响可忽略，但会极大增加大规模爬虫的成本。
+*   这是临时性解决方案；长远目标是通过浏览器指纹等技术自动识别合法用户，避免向其展示验证页面。
+*   该验证需要启用现代JavaScript功能；用户需为此域名**禁用JShelter等浏览器插件**。
+
+**[Read Original / 阅读原文](https://openwrt.org/toh/openwrt/one)**
+
+### Release 2026.06.05 Update Summary
+
+*   **Sortable Favorites Lists:** Android users can now manually sort their favorites lists or sort them alphabetically by name.
+*   **Improved Map Date Display:** The iOS app now shows the date of the map data, along with error and update messages.
+*   **Contact Picker:** A new button has been added to the Android search screen to pick a contact address.
+*   **OSM Editor Enhancement:** The OpenStreetMap editor now remembers recent category history.
+*   **New POI Information:** The iOS app displays organic options availability for points of interest like restaurants and supermarkets.
+*   **Wikipedia Improvements:** Android's Wikipedia article viewer now supports dark mode, right-to-left (RTL) text, and has better formatting.
+*   **Accessibility Updates:** Improved TalkBack support on Android and better app legibility settings for Android Auto.
+*   **New Subway Layers:** Subway maps have been added for Kiev, Charleroi, Nantes light rail, and the Paris Transilien network.
+*   **Data Updates:** Includes OpenStreetMap data as of June 3, with further weekly updates available via the "Check for updates" button.
+
+### 2026.06.05 版本更新摘要
+
+*   **收藏列表可排序：** Android 用户现在可以手动排序收藏列表，或按名称字母顺序排序。
+*   **显示地图日期：** iOS 应用现在会显示地图数据的日期，以及错误和更新消息。
+*   **联系人选择器：** Android 搜索界面新增了一个按钮，用于选取联系人地址。
+*   **OSM 编辑器增强：** OpenStreetMap 编辑器现在会保存最近使用的类别历史记录。
+*   **新增 POI 信息：** iOS 应用会显示餐厅、超市等兴趣点的有机选项可用信息。
+*   **维基百科改进：** Android 的维基百科文章查看器现在支持深色模式和从右到左 (RTL) 文本，并改善了格式。
+*   **无障碍更新：** 改进了 Android 上的 TalkBack 支持，并为 Android Auto 提升了应用的可读性设置。
+*   **新增地铁路线图：** 新增了基辅、沙勒罗瓦、南特轻轨和巴黎 Transilien 网络的地铁路线图。
+*   **数据更新：** 包含截至 6 月 3 日的 OpenStreetMap 数据，并可通过下载界面的“检查更新”按钮进行每周后续更新。
+
+**[Read Original / 阅读原文](https://www.comaps.app/)**
+
+### Why Learning to Code Remains Valuable
+* The motivation for learning to code has shifted from a vocational guarantee (like high-paying jobs) to its enduring educational value, similar to other academic disciplines.
+* It cultivates essential meta-skills—such as debugging, logical thinking, and problem-solving—and instills a core belief that anything can be learned.
+* Coding is a unique blend of creativity, precision, and instant feedback; it is a powerful and enjoyable form of expression, akin to "casting spells" to make ideas real.
+* Despite the capabilities of LLMs, the relevance of human understanding in code is not diminished, just as the humanities remain relevant. Code is a fundamental, elegant language that shapes our world.
+
+### 学习编程仍然值得
+* 学习编程的动机已从保证高薪职业转变为持久的教育价值，这与其他人文学科的益处类似。
+* 它培养关键的元技能，如调试、逻辑思维和解决问题的能力，并树立了一个核心信念：没有什么是学不会的。
+* 编程是创造力、精确性和即时反馈的独特结合；它是一种强大且愉快的表达形式，类似于用“咒语”将想法变为现实。
+* 尽管LLMs能力强大，但人类对代码的理解价值并未减损，就像人文学科的相关性依然存在一样。代码是一门基础而优美的语言，塑造着我们的世界。
+
+**[Read Original / 阅读原文](https://stevekrouse.com/learn-to-code)**
+
+### system_prompts_leaks - Leaked System Prompts for Major AI Models
+* **What it does**: This repository documents and publicly shares the "system prompts" or hidden instructions that govern the behavior of leading AI chatbots from Anthropic (Claude), OpenAI (ChatGPT), Google (Gemini), xAI (Grok), and others.
+* **Key features**: It provides a comprehensive, regularly updated catalog of these prompts across various model versions (e.g., Claude Fable 5, GPT-5.5) and integrations (e.g., Claude Code, VS Code Copilot). It includes raw prompts, readable versions, and even visual diffs between model updates.
+* **Why it's notable**: It offers rare, valuable transparency into the inner workings and guardrails of commercial AI systems. Its rapid accumulation of stars and feature in *The Washington Post* underscore strong public and developer interest in understanding AI behavior, safety protocols, and hidden capabilities. It's a living, community-driven reference for AI developers, researchers, and curious users.
+
+### system_prompts_leaks - 泄露的主要AI模型系统提示
+* **功能介绍**: 该仓库记录并公开分享了各大AI聊天机器人（包括Anthropic Claude、OpenAI ChatGPT、Google Gemini、xAI Grok等）的“系统提示”或隐藏指令。
+* **主要特点**: 它提供了一个全面且定期更新的目录，涵盖不同模型版本（如Claude Fable 5、GPT-5.5）和集成场景（如Claude Code、VS Code Copilot）的提示内容。仓库提供原始提示、易读版本，甚至包括模型更新前后的文本差异对比。
+* **为何值得关注**: 它罕见地揭示了商业AI系统内部工作原理和安全防护机制，具有极高的透明度价值。其迅速积累的星标和登上《华盛顿邮报》的报道，反映了开发者和公众对理解AI行为、安全规范及潜在能力的强烈兴趣。它是一个由社区驱动、持续更新的重要参考资料，对AI开发者、研究者和普通用户都极具参考意义。
+
+**[View Repository / 查看仓库](https://github.com/asgeirtj/system_prompts_leaks)**
+
+### addyosmani/agent-skills - Production-Grade Engineering Skills for AI Coding Agents
+* **What it does**: This repository provides a collection of 24 structured "skills" (workflows, quality gates, and best practices) designed to guide AI coding agents through a complete, production-ready software development lifecycle. It maps to key phases like defining, planning, building, testing, reviewing, and shipping code.
+* **Key features**: Offers 8 core slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/webperf`, `/code-simplify`, `/ship`) that activate specific skill sets. Features an autonomous `/build auto` mode for unattended task execution after plan approval. Skills are portable across 70+ AI coding tools (Claude Code, Cursor, Copilot, etc.) via a simple CLI or direct file integration.
+* **Why it's notable**: It encapsulates senior engineering practices into repeatable, AI-readable instructions, aiming to make AI agents more consistent and capable of handling complex, multi-stage projects. Its comprehensive compatibility and the focus on "production-grade" quality make it a trending resource for integrating AI into real-world development workflows.
+
+### addyosmani/agent-skills - 为AI编码代理打造的生产级工程技能
+* **功能介绍**：该仓库为AI编码代理提供了一套包含24项结构化“技能”（工作流、质量门禁和最佳实践），旨在指导AI代理完成从定义、规划、构建、测试、评审到部署的完整、可投入生产的软件开发生命周期。
+* **主要特点**：提供8个核心斜杠命令（如 `/spec`, `/plan`, `/build`），用于自动激活相应的技能集。支持 `/build auto` 自主模式，在人工审批计划后可无人值守地执行任务。技能可通过简洁的命令行工具或直接文件集成，跨平台兼容70多种AI编码工具（如Claude Code, Cursor, Copilot等）。
+* **为何值得关注**：它将高级工程师的实践固化为可重复、可被AI理解的指令，旨在提升AI代理在处理复杂、多阶段项目时的一致性和能力。其广泛的兼容性和对“生产级”质量的专注，使其成为将AI集成到实际开发工作流中的热门资源。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### Meetily - Privacy-First AI Meeting Assistant
+*   **What it does**: Meetily is a fully local, open-source meeting assistant that captures, transcribes, and summarizes meetings. It runs entirely on your device, ensuring data sovereignty and privacy by never sending information to the cloud.
+*   **Key features**:
+    *   **100% Local Processing**: All transcription and summarization happen on your machine using models like Parakeet/Whisper and Ollama.
+    *   **High-Performance Transcription**: Claims 4x faster live transcription compared to some alternatives.
+    *   **Multi-Platform Support**: Available for macOS, Windows, and Linux.
+    *   **Flexible AI Integration**: Supports local models via Ollama, as well as cloud providers like Claude and Groq for summaries.
+    *   **Enterprise-Ready**: Designed for compliance and control, targeting professionals and organizations.
+*   **Why it's notable**: It is currently **trending significantly** (2,493 stars in one day), highlighted by its strong privacy-first approach in a market dominated by cloud-based tools. Its open-source nature, combined with performance claims and a professional feature set (with a PRO version planned), makes it a notable solution for secure meeting intelligence.
+
+### Meetily - 注重隐私的本地AI会议助手
+*   **功能介绍**：Meetily 是一款完全本地化、开源的会议助手，用于捕捉、实时转录和总结会议内容。它在用户的设备上运行，确保数据主权和隐私，从不向云端发送任何信息。
+*   **主要特点**：
+    *   **100%本地处理**：所有转录和总结均在您的设备上完成，使用 Parakeet/Whisper 和 Ollama 等模型。
+    *   **高性能转录**：宣称实时转录速度比某些替代方案快4倍。
+    *   **多平台支持**：适用于 macOS、Windows 和 Linux。
+    *   **灵活的AI集成**：支持通过 Ollama 使用本地模型，也支持 Claude、Groq 等云提供商进行会议总结。
+    *   **面向企业**：专为合规性和控制需求设计，面向专业人士和组织。
+*   **为何值得关注**：该项目**正在迅速获得关注**（一天内获得2,493颗星），其核心卖点是在被云服务主导的市场中提供了强大的隐私优先解决方案。其开源属性，结合高性能的宣称和专业的功能集（并计划推出PRO版本），使其成为安全会议智能领域的一个引人注目的选择。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### T3MP3ST - An Autonomous Red Teaming Platform for AI Agents
+*   **What it does**: It transforms existing AI coding agents (like Claude, Codex) into autonomous, multi-agent security platforms for authorized offensive security testing. It provides a complete "kill chain" from reconnaissance to exploitation and reporting, operating within a "War Room" interface.
+*   **Key features**:
+    *   **Multi-Domain Coverage**: Targets Web apps, CTFs, Source code, Smart contracts, Cloud, Mobile, and Binary/RE.
+    *   **Keyless & Self-Hosted**: Leages the user's existing AI model (local or via API) without requiring additional cloud API keys.
+    *   **Verified Claims**: All benchmark scores (e.g., 90.1% pass@1 on the XBOW suite) are fully reproducible from committed data via a single command (`npm run verify-claims`).
+    *   **Strict Scope Control**: Built-in egress containment prevents attacks on unauthorized hosts.
+    *   **Real Tool Integration**: Uses real security tools (nmap, etc.) in its operational loops, not stubs.
+*   **Why it's notable**: It represents a significant step in democratizing advanced offensive security by making coordinated, agent-driven vulnerability hunting accessible. Its transparency with reproducible metrics and honest status reporting of features distinguishes it from hype-driven projects. The high benchmark scores on established security suites validate its practical efficacy.
+
+### T3MP3ST - 一个面向AI智能体的自主红队平台
+*   **功能介绍**：T3MP3ST 将现有的AI编码智能体（如Claude、Codex）转化为一个自主的多智能体攻击性安全平台，用于授权的安全测试。它通过一个“作战室”界面，提供了从侦察、漏洞利用到报告生成的完整攻击链。
+*   **主要特点**：
+    *   **多领域覆盖**：目标涵盖Web应用、CTF、源代码、智能合约、云、移动应用及二进制/逆向工程。
+    *   **无需密钥且可自托管**：利用用户现有的AI模型（本地或API调用），无需额外的云端API密钥。
+    *   **声称可验证**：所有基准测试分数（如在XBOW套件上90.1%的 pass@1）均可通过提交的数据，用单条命令 (`npm run verify-claims`) 完整重现。
+    *   **严格的范围控制**：内置出口遏制机制，防止攻击未授权主机。
+    *   **真实工具集成**：其操作循环中集成了真实的黑客工具（如nmap），而非模拟代码。
+*   **为何值得关注**：它通过使由智能体协调的漏洞狩猎变得触手可及，标志着将高级攻击性安全技术民主化的重要一步。其对可重现指标的透明度和特性状态的诚实报告，使其在众多炒作驱动的项目中脱颖而出。在权威安全套件上的高基准分数证实了其实际效能。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### Generals-Mac-iOS-iPad - Native Port of Command & Conquer Generals: Zero Hour for Apple Platforms
+* **What it does**: This is a native port of the classic 2003 RTS game *Command & Conquer Generals: Zero Hour*, originally for Windows. It allows the game's campaign, skirmish, and Generals Challenge modes to run directly on Apple Silicon Macs, iPhones, and iPads without emulation. The port utilizes EA's GPL v3 released source code, building upon a chain of community projects.
+* **Key features**: Runs the real 2003 game engine compiled for ARM64. Uses a modern rendering stack: DirectX 8 -> DXVK -> Vulkan -> MoltenVK -> Metal. Features custom-built RTS touch controls for iOS/iPadOS (tap-select, drag-box, long-press, two-finger scroll, pinch zoom). Includes extensive documentation on the porting process and bug fixes.
+* **Why it's notable**: It represents a significant technical achievement in overcoming major platform barriers (iOS's read-only filesystem, Metal rendering, process lifecycle, and mouse-driven RTS controls). The project highlights a notable human + AI collaborative development model and serves as a detailed case study for porting classic Windows games to modern Apple platforms.
+
+### Generals-Mac-iOS-iPad - 《命令与征服：将军之绝命时刻》原生移植至 macOS、iPhone 和 iPad
+* **功能介绍**: 这是经典2003年即时战略游戏《命令与征服：将军之绝命时刻》的原生移植版本。它允许游戏的战役、遭遇战和“将军挑战”模式在 Apple Silicon Mac、iPhone 和 iPad 上直接运行，无需模拟。移植基于EA发布的GPL v3源代码，并建立在一系列社区项目之上。
+* **主要特点**: 使用为ARM64架构编译的原始2003年游戏引擎。采用现代渲染管线：DirectX 8 -> DXVK -> Vulkan -> MoltenVK -> Metal。为 iOS/iPadOS 开发了专用于RTS游戏的触控操作方案（点击选择、拖拽框选、长按取消选择、双指滚动、捏合缩放）。提供了详尽的移植工程日志和错误修复记录。
+*   **为何值得关注**: 该项目成功克服了多个重大的平台技术障碍（iOS的只读文件系统、Metal渲染适配、应用生命周期管理以及基于鼠标的RTS操作适配），成就斐然。项目展示了一种值得注意的“人类+AI”协作开发模式，并为将经典Windows游戏移植到现代Apple平台提供了宝贵的案例研究方法。
+
+**[View Repository / 查看仓库](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad)**
+
+### 🎬 Britain turned its biggest weakness into the source of its power - Sarah Paine
+**Channel:** Dwarkesh Patel
+* This video features historian Sarah Paine exploring a pivotal historical strategy: how Britain transformed its geographical and economic vulnerability into its greatest geopolitical strength.
+* Key topics discussed likely include Britain's shift from a vulnerable island nation to a global maritime power, the strategic exploitation of trade networks, and the development of naval dominance as a direct response to earlier weaknesses.
+* It's worth watching for its insightful analysis of adaptive strategy in history, demonstrating how perceived flaws can be leveraged for monumental advantage. The conversation with a renowned historian promises depth and perspective on Britain's rise.
+
+### 🎬 英国如何将其最大的弱点转化为力量之源 - Sarah Paine
+**频道:** Dwarkesh Patel
+* 本期视频邀请历史学家Sarah·佩恩探讨一个关键的历史战略：英国如何将其地理和经济上的脆弱性转变为地缘政治上的最大优势。
+* 主要话题涵盖英国如何从一个脆弱的岛国转变为全球海上强国，对贸易网络的战略性利用，以及作为对早期弱点直接回应而建立的海军主导地位。
+* 值得观看是因为它对历史上的适应性战略进行了深刻分析，展示了如何将表面的缺陷转化为巨大的优势。与知名历史学家的对话保证了内容的深度与见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ymxAcpVIclA)**
+
+### 🎬 How Codex learnt to edit videos
+**Channel:** Lenny's Podcast
+*   **What the video covers:** The video explores the development and capabilities of OpenAI's Codex model in the context of video editing. It likely discusses the intersection of large language models (LLMs) and multimedia processing.
+*   **Key topics discussed:** Topics probably include the technical challenges of teaching an AI model about video, the potential of AI-assisted video editing workflows, and the implications of tools like Codex for content creators and developers.
+*   **Why it's worth watching:** It offers insights into cutting-edge AI applications beyond text, showcasing how foundational models are being adapted for complex creative tasks like video editing. This is valuable for anyone interested in the future of content creation tools and generative AI.
+
+### 🎬 Codex如何学会编辑视频
+**频道:** Lenny's Podcast
+*   **视频内容概述：** 本视频探讨了OpenAI的Codex模型在视频编辑领域的发展与能力，聚焦于大语言模型（LLM）与多媒体处理技术的交叉点。
+*   **主要话题：** 讨论的话题可能包括训练AI模型理解视频的技术挑战、AI辅助视频编辑工作流程的潜力，以及Codex等工具对内容创作者和开发者的影响。
+*   **为何值得观看：** 该视频提供了关于文本之外前沿AI应用的见解，展示了基础模型如何被适配用于视频编辑等复杂的创意任务。对于任何对内容创作工具和生成式AI未来感兴趣的人来说，都极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MBQLYAWhlO4)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+* This video appears to be a forward-looking guide aimed at aspiring programmers for the year 2026. It provides a roadmap for learning to code and securing a tech job, likely from an educational platform focused on placements.
+* Key topics discussed likely include foundational programming skills, modern tech stacks for 2026, portfolio building, interview preparation, and navigating the future job market.
+* It's worth watching for its specific focus on the 2026 employment landscape, offering potentially updated strategies and skills relevant to the tech industry's near future. The channel's emphasis on placements makes it a practical resource.
+
+### 🎬 如何开始学习编程并找到工作（2026版）？
+**频道:** Apna College
+* 本视频似乎是一个面向2026年有志于编程者的前瞻性指南。它提供了学习编码和获得技术岗位的学习路径，很可能来自一个专注于就业安置的教育平台。
+* 主要讨论的话题可能包括基础编程技能、2026年的现代技术栈、作品集构建、面试准备以及如何应对未来的就业市场。
+* 值得观看的原因在于其明确聚焦于2026年的就业形势，可能提供了针对未来科技行业更新后的策略和技能建议。该频道对就业安置的重视使其成为一个实用的资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+
+*   What the video covers
+    This video presents five immediate and practical use cases for Claude AI (specifically referring to a version or project named "Claude Fable"). The focus is on actionable strategies to leverage AI for business or client acquisition, promising significant value or competitive edge within a tight timeframe.
+*   Key topics discussed
+    The core topics likely include specific workflows or applications using Claude AI, such as automating tasks for agencies, client acquisition methods, and strategies for monetizing AI skills. It aims to provide a direct path from learning to earning.
+*   Why it's worth watching
+    It's valuable for anyone looking to quickly translate AI knowledge into tangible results, whether for starting an AI-focused agency or enhancing their current service offerings. The urgent tone and step-by-step cases offer a practical guide for immediate implementation.
+
+### 🎬 Claude Fable 5 必须立即执行的用例 (否则一周内损失数千元)
+**频道:** Chase AI
+
+*   视频内容概述
+    本视频介绍了五个针对Claude AI（此处特指名为"Claude Fable"的版本或项目）的立即可用且实用的用例。重点在于提供可操作的策略，以利用AI服务客户或拓展业务，并在短时间内带来显著价值或竞争优势。
+*   主要话题
+    核心话题包括使用Claude AI的具体工作流程，例如为代理机构实现任务自动化、客户获取方法以及将AI技能变现的策略。旨在提供从学习到收益的直接路径。
+*   为何值得观看
+    对于任何希望快速将AI知识转化为实际成果的人来说都值得关注，无论是为了开创AI相关的服务代理机构，还是提升现有服务的能力。视频中紧迫的语气和一步步的案例，为立即实施提供了实用指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
+### 🎬 How to make Falsity Monster in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+* This short tutorial video demonstrates the step-by-step process for creating a specific custom entity, the "Falsity Monster," within the popular physics sandbox game *Melon Sandbox*.
+* Key topics include the game's creative tools, the combination of specific in-game items or mechanics, and the exact formula to achieve this unique creation.
+* It's worth watching for players of *Melon Sandbox* looking for inspiration to expand their creative projects, learn a specific crafting trick, or simply enjoy the game's inventive and playful community content.
+
+### 🎬 How to make Falsity Monster in Melon Sandbox #melonsanbox #shorts
+**频道:** Vedid
+* 这个短视频教程在热门物理沙盒游戏《甜瓜游乐场》中，详细演示了创建特定自定义实体——“Falsity Monster”（虚假怪物）——的完整步骤。
+* 主要讨论的话题包括游戏的创造性工具、特定游戏内物品或机制的组合方式，以及制造这一独特造物的具体配方。
+* 对于《甜瓜游乐场》的玩家来说，这视频值得一看，因为它能为扩展自己的创意项目提供灵感，学习一个特定的制作技巧，或者纯粹享受游戏社区富有创意和趣味性的内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=N7FtRKp_HbY)**
 
