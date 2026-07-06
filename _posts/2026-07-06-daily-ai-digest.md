@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 06, 2026"
 date: 2026-07-06
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 16 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，16个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 21 fast-moving projects, 23 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，21个快速崛起项目，23个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -860,4 +860,247 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
     *   非常适合学生和转行者，希望获得一份清晰、循序渐进的计划来进入科技行业。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### What Emily Bender Really Meant by "Stochastic Parrots"
+
+*   The term "stochastic parrots" specifically describes **large language models (LLMs)** that generate text by predicting word sequences statistically, without understanding, likening them to parrots that mimic patterns without comprehension.
+*   A common misconception is that the metaphor was meant as a general insult for all "AI," but it was intended as a precise technical description for LLMs and a warning about risks like bias and environmental cost.
+*   Bender criticizes the umbrella term **"Artificial Intelligence"** for being misleading, grouping disparate technologies (e.g., protein folding models vs. chatbots) and overhyping their capabilities, which obscures critical discussion.
+*   The metaphor and related concepts (like the "octopus test") are aimed at clearly illustrating to the public **what these systems actually do**, not at disparaging the systems or their creators.
+
+### 艾米丽·本德所指的“随机鹦鹉”之真意
+
+*   “随机鹦鹉”一词特指通过统计预测词序生成文本、缺乏真正理解的**大型语言模型（LLMs）**，将其比作只模仿模式而不理解内容的鹦鹉。
+*   一个常见误解是认为该隐喻意在贬低所有“人工智能”，但本意是针对LLMs提出的技术性描述，并警示其偏见和环境成本等风险。
+*   本德批评“人工智能”这一笼统术语具有误导性，因为它将不同技术（如蛋白质折叠模型与聊天机器人）混为一谈并夸大其能力，从而模糊了批判性讨论。
+*   该隐喻及相关概念（如“章鱼测试”）旨在**向公众清晰阐释这些系统的实际运作原理**，而非贬低系统或其开发者。
+
+**[Read Original / 阅读原文](https://spectrum.ieee.org/stochastic-parrot)**
+
+### Aluminum Foil: Properties, Processing, and Potential
+*   Kitchen aluminum foil is an exceptionally thin (typically 10-30 μm), wide (400 mm) material with an extreme aspect ratio, making it impermeable, highly reflective, conductive, and very inexpensive.
+*   Its key mechanical property is rapid work-hardening when bent, especially at deep submillimeter scales, which allows it to be used to create stiff, work-hardened features like ribs.
+*   The author experimented by folding the foil into multi-layered points (cones and other shapes) that could dent, pierce, or form ribs in single-layer foil, demonstrating potential for self-replicating tooling.
+*   These work-hardened structures can act as masters for stamping, though with some springback, and suggest applications in low-cost material compilers or bootstrapping systems for fabrication.
+
+### 铝箔：特性、加工与潜力
+*   厨房铝箔是一种极薄（通常为10-30微米）、宽幅（400毫米）的材料，宽厚比极大，具有不透性、高反射率、高导电性且成本极低。
+*   其关键力学特性是弯曲时会迅速产生加工硬化，尤其在深亚毫米尺度下，这使其可用于制造坚硬的加工硬化结构，如肋条。
+*   作者通过实验将铝箔折叠成多层尖端（锥体等形状），这些尖端能够对单层铝箔进行压痕、刺穿或形成肋条，展示了潜在的自复制工具制造能力。
+*   这些加工硬化结构可作为冲压的母版（尽管存在回弹），并表明其在低成本材料编译器或自举式制造系统中具有应用前景。
+
+**[Read Original / 阅读原文](https://dernocua.github.io/notes/aluminum-foil.html)**
+
+<!-- [Title-Only] -->
+### Road to Elm 0.19.1
+* This article likely details the development progress, key changes, and new features leading up to the release of Elm 0.19.1, with a specific focus on achieving faster build times as highlighted in the URL.
+* It is interesting for Elm developers and enthusiasts because performance improvements like faster builds directly enhance the development experience and productivity.
+
+### Elm 0.19.1 之路
+* 根据标题推测，这篇文章可能介绍了 Elm 语言版本 0.19.1 的开发进程、主要变更及新功能，并特别关注如何通过优化提升构建速度。
+* 对于 Elm 开发者和技术爱好者来说值得关注，因为构建速度等性能改进能显著提升开发效率和用户体验。
+
+**[Read Original / 阅读原文](https://elm-lang.org/news/faster-builds)**
+
+### **system_prompts_leaks** - A Comprehensive Collection of Extracted AI System Prompts
+*   **What it does:** This repository serves as a living archive of "system prompts" – the hidden instructions that guide the behavior, personality, and capabilities of major AI chatbots and tools. It systematically extracts and documents these prompts from providers like Anthropic (Claude), OpenAI (ChatGPT, Codex), Google (Gemini), and others.
+*   **Key features:**
+    *   **Broad Coverage:** Includes prompts for numerous models (e.g., Claude Fable 5, GPT-5.5 Thinking, Gemini 3.5 Flash, Grok) and integrations (Claude Code, GitHub Copilot, VS Code Agent).
+    *   **Structured Organization:** Files are neatly categorized by company and model for easy navigation.
+    *   **Frequent Updates:** The repository is actively maintained, with recent additions and updates highlighted in the README.
+    *   **Comparative Insights:** Provides direct links for comparing changes between model versions (e.g., Claude Opus 4.8 to Fable 5).
+*   **Why it's notable:** This project is a unique transparency resource, revealing the operational directives behind popular AI interfaces. Its value lies in demystifying AI behavior, enabling users and researchers to understand the detailed rules, tool use, and safety policies baked into these systems. Its feature in *The Washington Post* underscores its cultural relevance in the ongoing conversation about AI transparency.
+
+### **system_prompts_leaks** - 一个全面的AI系统提示词泄露合集
+*   **功能介绍：** 该仓库是一个持续更新的归档，专门收集和整理主流AI聊天机器人及工具的“系统提示词”（System Prompts）——这些是指导AI行为、个性和能力的隐藏指令。它系统性地提取并记录了来自Anthropic（Claude）、OpenAI（ChatGPT, Codex）、Google（Gemini）及其他公司的提示词。
+*   **主要特点：**
+    *   **覆盖广泛：** 包含众多模型（如Claude Fable 5、GPT-5.5 Thinking、Gemini 3.5 Flash、Grok）和集成应用（Claude Code、GitHub Copilot、VS Code Agent）的提示词。
+    *   **结构清晰：** 文件按公司和模型分类，便于查找。
+    *   **更新频繁：** 仓库维护活跃，README中会高亮最近的新增和更新内容。
+    *   **提供对比：** 提供直接链接，可对比不同模型版本间提示词的变更（例如，从Claude Opus 4.8到Fable 5）。
+*   **为何值得关注：** 这是一个关于AI透明度的独特资源，揭示了流行AI界面背后的操作规则。其价值在于揭开AI行为的神秘面纱，让用户和研究者能理解这些系统内置的详细规则、工具使用方法和安全策略。曾被《华盛顿邮报》报道，凸显了其在当前AI透明度讨论中的重要文化意义。
+
+**[View Repository / 查看仓库](https://github.com/asgeirtj/system_prompts_leaks)**
+
+### [addosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills for AI coding agents.
+*   **What it does:** Provides a comprehensive set of 24 pre-packaged "skills" (structured workflows) that encode senior engineering best practices. These skills guide AI coding agents (like Claude, Cursor, Copilot) through a complete, disciplined software development lifecycle—from idea definition (`/spec`) to production deployment (`/ship`).
+*   **Key features:**
+    *   **Lifecycle Coverage:** 8 primary slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`, `/webperf`, `/code-simplify`) mapping to each phase of development.
+    *   **24 Specialized Skills:** Includes workflows for spec-driven development, test-driven development, API design, frontend engineering, code review, debugging, and more.
+    *   **Automation:** Supports fully autonomous builds (`/build auto`) where an AI can plan and implement an entire spec, pausing only for verification.
+    *   **Multi-Platform:** Designed to work with numerous AI tools including Claude Code, Cursor, Gemini CLI, Windsurf, GitHub Copilot, and Kiro IDE.
+*   **Why it's notable:** It's a high-effort, opinionated framework to standardize and elevate the output of AI coding assistants. It's trending because it solves a key problem: making AI agents follow reliable, production-ready engineering processes rather than generating ad-hoc code. It essentially codifies expert human judgment for AI consumption.
+
+### [addosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 面向AI编码代理的生产级工程技能集。
+*   **功能介绍：** 提供了一套包含24个预打包的“技能”（结构化工作流），将高级工程师的最佳实践编码化。这些技能引导AI编码代理（如Claude、Cursor、Copilot）遵循一套严谨的软件开发生命周期——从定义想法（`/spec`）到生产部署（`/ship`）。
+*   **主要特点：**
+    *   **覆盖完整生命周期：** 8个主要斜杠命令（`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`, `/webperf`, `/code-simplify`）对应开发的每个阶段。
+    *   **24项专项技能：** 包含规范驱动开发、测试驱动开发、API设计、前端工程、代码审查、调试等工作流。
+    *   **自动化能力：** 支持完全自主构建（`/build auto`），允许AI规划并实现整个规范，仅在验证时暂停。
+    *   **多平台兼容：** 设计适用于多种AI工具，包括Claude Code、Cursor、Gemini CLI、Windsurf、GitHub Copilot和Kiro IDE。
+*   **为何值得关注：** 这是一个高投入、有明确主张的框架，旨在标准化和提升AI编码助手的输出质量。它备受关注因为它解决了一个关键问题：让AI代理遵循可靠、生产就绪的工程流程，而非生成零散代码。它本质上将专家的人类判断编码化，供AI使用。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### Meetily - Privacy-First AI Meeting Assistant
+* **What it does**: A self-hosted, open-source assistant that captures, transcribes (in real-time with 4x faster models), diarizes speakers, and summarizes meetings entirely on your local machine using AI models like Parakeet/Whisper and Ollama. It ensures complete data privacy by keeping all processing local, with no cloud dependency.
+* **Key features**:
+    * **Absolute Privacy**: All data and processing remain on your device; no data ever leaves your computer.
+    * **High-Performance Local Transcription**: Leverages optimized models (Parakeet/Whisper) for fast, real-time live transcription.
+    * **AI-Powered Summaries**: Generates meeting summaries locally via Ollama, with optional support for other AI providers (Claude, Groq, etc.).
+    * **Speaker Diarization**: Identifies different speakers in the meeting.
+    * **Professional Audio Capture**: Simultaneously records microphone and system audio with intelligent mixing.
+    * **Hardware Acceleration**: Utilizes GPU (Metal, CUDA, Vulkan) for accelerated performance on macOS, Windows, and Linux.
+    * **Open Source & Self-Hostable**: MIT licensed, allowing full control, modification, and deployment on your own infrastructure.
+* **Why it's notable**: It directly addresses growing privacy and compliance concerns (like GDPR, data breaches) in corporate and professional settings by offering a robust, fully local alternative to cloud-based meeting tools. Its significant technical achievement is delivering enterprise-grade features (speed, diarization, summaries) without compromising on privacy, coupled with a strong open-source community and recent explosive popularity (2,493 stars in a day).
+
+### Meetily - 注重隐私的AI会议助手
+* **功能介绍**: 一款可自托管的开源AI会议助手，完全在您的本地设备上运行。它使用Parakeet/Whisper等AI模型进行快速实时转录、说话人分离，并利用Ollama生成会议摘要。所有处理均在本地完成，无需云端，确保了绝对的隐私和数据安全。
+* **主要特点**:
+    * **绝对隐私优先**: 所有数据和处理过程均保留在您的设备上，信息永不外泄。
+    * **高性能本地转录**: 采用优化模型，提供比同类快4倍的实时会议转录。
+    * **AI智能摘要**: 本地生成会议纪要，推荐使用Ollama，同时支持Claude、Groq等其他AI提供商。
+    * **说话人识别**: 能够区分会议中不同的发言人。
+    * **专业级音频录制**: 智能混音，同时清晰录制麦克风和系统声音。
+    * **硬件加速**: 支持GPU加速，在macOS、Windows和Linux上均可获得高性能体验。
+    * **开源且可自托管**: 采用MIT许可证，您可拥有完全的控制权、修改权并在自有基础设施上部署。
+* **为何值得关注**: 它直接应对了企业和专业人士对隐私与合规性（如GDPR、数据泄露）日益增长的担忧，通过提供一个功能强大且完全本地的替代方案，与云端会议工具形成鲜明对比。其突出的技术成就在于，在保证隐私的前提下，实现了企业级功能（速度、说话人分离、摘要生成），同时拥有活跃的开源社区，并在近期人气飙升（单日新增2,493星）。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### T3MP3ST - 自主红队测试平台；多智能体攻击性安全元框架
+
+**功能介绍**
+*   **做什么**: T3MP3ST 是一个自主的红队平台，旨在将用户已有的 AI 编码代理（如 Claude Code、Codex、Hermes 或本地模型）转化为零日漏洞猎手。它提供了一个从侦察、漏洞利用到报告的自动化攻击链，并通过浏览器“作战室”或命令行界面运行。
+*   **主要特点**:
+    *   **可复现性**: 所有基准数据均可通过 `npm run verify-claims` 命令从提交的数据中重新计算，确保透明度。
+    *   **无密钥/自托管**: 核心依赖用户已连接的 AI 代理，无需额外 API 密钥、云服务或账单，支持完全离线运行。
+    *   **真实工具驱动**: 侦察引擎等核心组件直接调用真实的安全工具（如 nmap），其发现可追溯到实际工具输出。
+    *   **多领域覆盖**: 支持 Web 应用、CTF 挑战、源代码分析（Python）、智能合约和嵌入式/物联网安全（通过协调披露流程）。
+    *   **可观测性与诚实**: 清晰说明了各功能模块的稳定、实验或规划状态，不夸大未验证的能力。
+*   **为何值得关注**:
+    *   它代表了利用 AI 自动化攻击性安全测试的前沿尝试，目标是将漏洞挖掘能力民主化。
+    *   其宣称的性能数据（如在 XBOW 基准上超过 90% 的通过率）是公开且可验证的，增加了项目可信度。
+    *   作为 AGPL-3.0 开源项目且支持完全本地运行，为安全研究人员和爱好者提供了一个强大且注重隐私的实验平台。
+
+### T3MP3ST - 自主红队测试平台；多智能体攻击性安全元框架
+
+**功能介绍**
+*   **是什么**: T3MP3ST 是一个自主红队平台，它将你现有的 AI 编码代理（如 Claude Code、Codex、Hermes 或本地模型）转变成零日漏洞猎手。它自动化执行从侦察、漏洞利用到报告的攻击链，可通过浏览器“作战室”或命令行运行。
+*   **主要特点**:
+    *   **可复现性**: 所有关键指标均可通过 `npm run verify-claims` 从提交的数据中重新生成，确保公开透明。
+    *   **无密钥/自托管**: 核心利用你已连接的 AI 代理，无需额外 API 密钥、云租户或账单，支持完全离线运行。
+    *   **真实工具驱动**: 核心组件（如侦察引擎）直接调用真实的网络安全工具（如 nmap），其发现可追溯至实际工具输出。
+    *   **多领域覆盖**: 支持 Web 应用、CTF 挑战、源代码分析（目前支持 Python）、智能合约安全以及嵌入式/物联网/工控设备安全（通过协调披露流程）。
+    *   **可观测性与诚实性**: 明确标注了各功能模块的状态（稳定、实验性或规划中），对未验证的“集群”能力保持坦诚。
+*   **为何值得关注**:
+    *   它是 AI 自动化攻击性安全测试领域的前沿项目，旨在使真正的漏洞挖掘对更多人变得可及。
+    *   其公布的性能基准数据（如在 XBOW 挑战套件上超过 90% 的 pass@1 分数）是公开且可独立验证的，建立了信任。
+    *   作为一个开源（AGPL-3.0）且支持完全本地运行的框架，它为安全研究人员和爱好者提供了一个功能强大且注重隐私的试验场。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### iOS Location Spoofer - JavaScript-based GPS spoofing for iOS via proxy tools
+*   **What it does:** It spoofs the GPS location of an iOS device without jailbreaking. It works by intercepting and modifying HTTPS responses from Apple's servers via supported proxy applications (like Shadowrocket or Surge), tricking the device's location services into reporting a false coordinate.
+*   **Key features:**
+    *   **Multi-platform support:** Works with five major iOS proxy apps (Shadowrocket, Surge, Loon, Quantumult X, Stash).
+    *   **Jailbreak-free:** Uses MITM/proxy decryption, requiring no developer account or compilation.
+    *   **Enhanced spoofing:** Modifies not just WiFi BSSID locations but also cell tower coordinates and motion activity data to appear more realistic.
+    *   **Comprehensive format handling:** Automatically detects and adapts to different Apple response formats.
+    *   **Advanced tools:** Includes an optional web-based location picker for easy coordinate selection.
+*   **Why it's notable:** It makes location spoofing highly accessible to non-technical users by integrating into popular proxy apps they may already use. Its enhancement over the original Go project, particularly cell tower spoofing and broad app support, makes it a trending and practical tool in the iOS customization community.
+
+### iOS Location Spoofer - 基于代理工具的iOS GPS定位伪装工具
+*   **功能介绍:** 这是一个无需越狱的iOS设备GPS定位伪装工具。它通过代理软件（如Shadowrocket、Surge）的HTTPS解密功能，拦截并修改苹果服务器返回的定位数据，从而欺骗设备上报虚假的地理位置。
+*   **主要特点:**
+    *   **多平台兼容:** 支持Shadowrocket、Surge、Loon、Quantumult X和Stash五款主流代理应用。
+    *   **免越狱:** 完全通过代理中间人攻击实现，无需越狱或苹果开发者账号。
+    *   **伪装更彻底:** 除了修改WiFi定位，还能篡改蜂窝基站坐标和运动状态数据，降低被系统检测的风险。
+    *   **格式自适应:** 能自动识别并适配苹果不同的定位数据封装格式。
+    *   **提供进阶工具:** 附带可选的网页地图选点工具，方便直观地设置坐标。
+*   **为何值得关注:** 它将原本技术门槛较高的定位伪装功能，无缝集成到用户可能已经在使用的代理软件中，极大地降低了使用难度。项目在原有基础上进行的增强（如基站定位）以及广泛的平台支持，使其成为iOS实用工具中一个备受关注且易于上手的选择。
+
+**[View Repository / 查看仓库](https://github.com/mekos2772/ios-location-spoofer)**
+
+### 🎬 Britain turned its biggest weakness into the source of its power - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   This video is an interview with historian Sarah Paine, exploring a pivotal historical paradox: how Britain, an island nation, transformed its primary geographical and resource weakness into the foundation of its global empire and power.
+*   The discussion likely covers topics such as Britain's reliance on naval power, the development of trade networks, the industrial revolution, and how these factors allowed a small, resource-limited nation to project influence worldwide.
+*   It's worth watching for its insightful analysis of history, strategy, and economics, offering a deeper understanding of how constraints can drive innovation and lead to unforeseen global dominance.
+
+### 🎬 英国如何将最大弱点转变为力量之源 - Sarah Paine
+**频道:** Dwarkesh Patel
+*   本视频是对历史学家莎拉·佩恩的访谈，探讨了一个关键的历史悖论：英国作为一个岛国，如何将其主要的地理和资源劣势转变为全球帝国和实力的基础。
+*   讨论可能涉及的主题包括：英国对海军力量的依赖、贸易网络的发展、工业革命，以及这些因素如何使一个资源有限的小国能够向全球投射影响力。
+*   值得观看的原因在于其对历史、战略和经济学的深刻分析，有助于理解限制条件如何驱动创新，并最终带来意想不到的全球主导地位。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ymxAcpVIclA)**
+
+### 🎬 How Codex learnt to edit videos
+**Channel:** Lenny's Podcast
+*   What the video covers
+    *   This podcast episode explores the development and capabilities of OpenAI's Codex model, specifically focusing on its newfound ability to edit videos. It delves into how this AI system, known for coding, is learning the complex, creative task of video manipulation.
+*   Key topics discussed
+    *   The evolution of Codex from a code-focused AI to a multimodal model.
+    *   The technical challenges and methods behind teaching AI to understand and edit video content.
+    *   The implications of tools like Codex for the future of video creation and editing workflows.
+    *   A discussion centered around OpenAI, ChatGPT, and the broader field of generative AI.
+*   Why it's worth watching
+    *   It provides a timely look into a cutting-edge application of AI, moving beyond text and code into the visual domain. Essential viewing for tech enthusiasts, creators, and anyone interested in the future of content creation and AI capabilities.
+
+### 🎬 [Codex如何学会编辑视频]
+**频道:** Lenny's Podcast
+*   视频内容概述
+    *   本期播客深入探讨了OpenAI的Codex模型的发展和能力，特别聚焦于其新近掌握的视频编辑能力。节目分析了这个以编码闻名的AI系统如何学习视频操作这一复杂的创意任务。
+*   主要话题
+    *   Codex从纯代码AI到多模态模型的演进。
+    *   教会AI理解并编辑视频内容所涉及的技术挑战与方法。
+    *   Codex这类工具对未来视频创作和编辑工作流程的影响。
+    *   围绕OpenAI、ChatGPT以及更广泛的生成式AI领域的讨论。
+*   为何值得观看
+    *   它及时展示了AI在前沿领域的应用，标志着AI能力从文本和代码拓展到视觉领域。对于科技爱好者、内容创作者以及任何关注AI未来和内容创作的人来说，这期节目都值得观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MBQLYAWhlO4)**
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**Channel:** Dwarkesh Patel
+*   **What the video covers:** This video features an interview with Grant Sanderson (3Blue1Brown) exploring the fascinating intersection of neuroscience, psychology, and everyday life. The central topic is how Botox injections, which paralyze facial muscles, can impair a person's ability to read and empathize with the emotions of others.
+*   **Key topics discussed:** The facial feedback hypothesis (how our own facial expressions influence our feelings), the neuroscience behind empathy and emotion recognition, the broader implications of disrupting the mind-body feedback loop, and how Grant Sanderson applies computational thinking to understand these human phenomena.
+*   **Why it's worth watching:** It provides a compelling, scientifically-grounded look at a non-obvious consequence of a common cosmetic procedure. The conversation bridges abstract neuroscience with tangible social experience, revealing how deeply our physical embodiment shapes our cognitive and social lives. Grant Sanderson's unique perspective makes complex ideas accessible and engaging.
+
+### 🎬 Botox让你更难读懂情绪 - Grant Sanderson
+**频道:** Dwarkesh Patel
+*   **视频内容概述：** 本期视频是对Grant Sanderson（3Blue1Brown）的访谈，探讨了神经科学、心理学与日常生活令人着迷的交汇点。核心话题是肉毒杆菌注射（Botox）如何通过麻痹面部肌肉，削弱一个人解读和共情他人情绪的能力。
+*   **主要话题：** 面部反馈假说（我们自己的面部表情如何影响情绪）、情绪识别与共情背后的神经科学、干扰身心反馈回路的广泛影响，以及Grant Sanderson如何运用计算思维来理解这些人类现象。
+*   **为何值得观看：** 本视频从科学角度深入探讨了一个常见美容手术的非显而易见的后果。对话将抽象的神经科学与切实的社交体验相连接，揭示了我们的身体体验如何深刻地塑造我们的认知与社会生活。Grant Sanderson独特的视角使得复杂的概念变得易于理解且引人入胜。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Gr5cOV3mOGs)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+*   This video provides a comprehensive guide for aspiring programmers on beginning their coding journey and securing a tech job, specifically looking ahead to the market in 2026.
+*   Key topics include: the essential roadmap for learning to code from scratch, strategies for building a strong portfolio, understanding the modern tech placement process, and tips to become "placement ready" for 2026.
+*   It's worth watching as it offers actionable, forward-looking advice from a top educational channel, breaking down a potentially daunting path into manageable steps for beginners.
+
+### 🎬 如何开始编程并找到工作（面向2026年）？
+**频道:** Apna College
+*   该视频为有志于成为程序员的人提供了全面指南，指导他们如何开始编码之旅并最终在科技行业找到工作，特别展望了2026年的市场趋势。
+*   主要话题包括：从零开始学习编程的必备路线图、如何构建扎实的作品集、理解现代科技招聘流程，以及为2026年的求职做好充分准备的策略。
+*   值得观看，因为它来自顶尖教育频道，提供了具有前瞻性且可操作的建议，为初学者将可能艰巨的路径分解为可管理的步骤。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+*   **What the video covers:** This is a guide focused on urgent, practical applications for the new Claude AI model (referred to as "Fable 5"), emphasizing immediate implementation to avoid financial pitfalls or missed opportunities.
+*   **Key topics discussed:** Likely includes specific, high-impact use cases for Claude in business, agency building, or client acquisition, with a strong emphasis on time-sensitive actions.
+*   **Why it's worth watching:** It provides a direct, actionable playbook for leveraging the latest AI capabilities to generate revenue or save costs, framed as a time-critical opportunity.
+
+### 🎬 Claude Fable 5 立刻执行的五大用例（否则一周内损失数千美元）
+**频道:** Chase AI
+*   **视频内容概述:** 本视频是一份关于最新 Claude AI 模型（被称为"Fable 5"）的紧急实用指南，重点在于如何立即应用以避免财务损失或错失机会。
+*   **主要话题:** 可能涵盖利用 Claude 在商业、代理机构建立或客户获取方面的具体、高影响力用例，并强烈强调需采取具有时间紧迫性的行动。
+*   **为何值得观看:** 它提供了一个直接、可操作的行动蓝图，教你如何利用最新的 AI 能力来创造收入或节省成本，并将这描述为一个时间紧迫的机遇。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
 
