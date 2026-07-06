@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 06, 2026"
 date: 2026-07-06
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，11个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 16 fast-moving projects, 18 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，16个快速崛起项目，18个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -625,6 +625,239 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 本视频为有志于编程的人士提供了一份全面的路线图，详细规划了到2026年进入科技行业并找到工作的战略路径。
 * 视频分解了所需的必要编程语言、技能和学习方法，同时涵盖了求职流程和面试准备。
 * 它之所以值得观看，是因为其清晰、具有前瞻性且实用的指导，来自一个以关注技术就业和行业准备而闻名的频道。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### When AI Costs More Than the Engineer
+*   **Anthropic’s cost structure is an outlier:** The company spends approximately 2.3 times its total payroll on computing, equating to about $2 million in compute per employee annually, compared to a fully-loaded compensation of around $500k.
+*   **The market average is far lower:** While the top 1% of companies spend about $89k (40% of a senior engineer's salary) on AI per engineer, the median company spends only $137, highlighting a vast disparity.
+*   **Future scenarios diverge significantly:** Three scenarios (Bear, Base, Bull) project AI bills per engineer from 2026 to 2029, ranging from a low of $106k to a high of $596k per engineer by 2029.
+*   **Revenue justifies high spending:** In the Bull case, the AI cost per engineer could match an entire median SaaS employee's revenue. Frontier AI companies like Anthropic and OpenAI already lead in revenue per employee.
+*   **Key drivers will determine the outcome:** Bull scenarios are driven by sustained high model prices and exploding token demand from agentic workflows, while Bear scenarios are pushed by rapid token price deflation and the rise of cost-effective open-weight models.
+
+### 当AI成本超过工程师工资时
+*   **Anthropic的成本结构是特例：** 该公司在计算方面的支出约为其工资总额的2.3倍，相当于每位员工每年约200万美元的计算成本，而全员平均薪酬约为50万美元。
+*   **市场平均水平低得多：** 虽然顶尖1%的公司为每位工程师支出约8.9万美元（相当于高级工程师薪资的40%）用于AI，但中位数公司仅支出137美元，显示出巨大差距。
+*   **未来情景分歧显著：** 三种情景（熊市、基准、牛市）预测了从2026年到2029年每位工程师的AI账单，到2029年，预测范围从低至10.6万美元到高达59.6万美元。
+*   **高支出背后有收入支撑：** 在牛市情景中，每位工程师的AI成本可能相当于一名中位数SaaS员工的全部收入。像Anthropic和OpenAI这样的前沿AI公司在人均收入上已经领先。
+*   **关键驱动因素决定最终走向：** 牛市情景由持续的高模型价格和智能体工作流程带来的Token需求激增推动，而熊市情景则由Token价格快速通缩和性价比高的开放权重模型的兴起所驱动。
+
+**[Read Original / 阅读原文](https://tomtunguz.com/ai-spend-breakeven-2029/)**
+
+<!-- [Title-Only] -->
+### GPT-5.6 Sol Ultra will be in Codex
+* Based on the title, this article likely discusses a future, hypothetical iteration of OpenAI's GPT language model series (labeled as "GPT-5.6 Sol Ultra") and reports on its planned integration into Codex, OpenAI's system for generating and understanding code.
+* It would be interesting to readers following AI development, especially in programming and software engineering, as it hints at significant future advancements in code generation capabilities and the evolution of AI coding assistants.
+
+### GPT-5.6 Sol Ultra 将整合到 Codex 中
+* 根据标题推测，这篇文章可能讨论了 OpenAI GPT 语言模型系列的一个未来、假想的迭代版本（标记为“GPT-5.6 Sol Ultra”），并报道了其计划整合到 Codex 中的消息，Codex 是 OpenAI 用于生成和理解代码的系统。
+* 对于关注人工智能发展，特别是编程和软件工程领域的读者来说，这可能会很有价值，因为它暗示了代码生成能力未来重大的进步以及人工智能编程助手的发展方向。
+
+**[Read Original / 阅读原文](https://twitter.com/thsottiaux/status/2073933490513752151)**
+
+### Art Institute of Chicago's "has_not_been_viewed_much" Field Explained
+* The Art Institute of Chicago's API includes a boolean field called `has_not_been_viewed_much` on artwork objects, indicating low visibility on their website.
+* According to the source code, this flag is true if an artwork has been viewed fewer than 200 times on the website since January 1, 2010.
+* The author prompts readers to explore these less-viewed artworks and ponders why they might not attract much attention.
+
+### 芝加哥艺术学院“has_not_been_viewed_much”字段解析
+* 芝加哥艺术学院的API在艺术品对象中包含一个名为`has_not_been_viewed_much`的布尔字段，用于标识在网站上访问量较低的艺术品。
+* 根据其源代码，如果一件艺术品自2010年1月1日在网站上的浏览次数少于200次，该标志将为真。
+* 作者呼吁读者花时间浏览这些较少被观看的艺术品，并思考它们为何可能不那么受关注。
+
+**[Read Original / 阅读原文](https://iamwillwang.com/notes/has-not-been-viewed-much/)**
+
+### Meetily - 隐私优先的本地AI会议助手
+*   **功能介绍**: Meetily是一款完全在本地运行的AI会议助手。它能实时捕获会议音频，利用优化过的Parakeet/Whisper模型进行4倍速转录，支持说话人分离（Diarization），并通过本地Ollama等模型生成会议摘要，所有处理均在用户设备上完成，无需云端。
+*   **主要特点**:
+    *   **极致隐私**：所有数据（录音、转录文本、模型）均留在本地，满足数据主权和合规要求。
+    *   **高性能转录**：基于Rust构建，声称转录速度比标准方案快4倍，支持GPU加速。
+    *   **全栈本地化**：集成Ollama进行本地摘要生成，支持导入音频文件，提供专业音频混合功能。
+    *   **开源与自托管**：完全开源，可自托管，支持macOS、Windows和Linux，是企业和个人可控的替代方案。
+*   **为何值得关注**: 在数据泄露和隐私法规日益严格的今天，Meetily提供了无需妥协隐私的强大会议记录解决方案。其“本地优先”的架构、高性能的Rust后端以及快速的社区增长（今日获得1409星）使其成为隐私计算领域一个值得关注的新兴开源项目。
+
+### Meetily - 隐私优先的本地AI会议助手
+*   **功能介绍**: Meetily是一款完全在本地设备上运行的AI会议助手。它能实时捕获会议音频，并利用优化的Parakeet/Whisper模型进行超高速转录，支持说话人分离，最终通过Ollama等本地大语言模型生成会议摘要。整个过程无需将任何数据发送至云端。
+*   **主要特点**:
+    *   **隐私至上**：所有处理均在本地完成，保障数据主权与合规性。
+    *   **高性能转录**：基于Rust开发，声称转录速度是标准方案的4倍，并支持硬件加速。
+    *   **全功能本地化**：集成Ollama进行本地摘要、支持导入音频文件、提供专业级音频混合功能。
+    *   **开源与自托管**：项目完全开源，支持自托管，适用于macOS、Windows和Linux系统，为个人与企业提供了可控的替代方案。
+*   **为何值得关注**：在数据泄露风险与隐私法规日益严峻的背景下，Meetily提供了一个在不牺牲功能与性能前提下保护隐私的完整会议记录解决方案。其“本地优先”的架构、高性能的Rust后端以及快速的社区增长（今日获得1409星）使其成为隐私计算领域一个极具潜力的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### [codex-plugin-cc] - Codex Integration for Claude Code
+*   **What it does:** This plugin integrates OpenAI's Codex tool directly into the Claude Code environment, allowing users to perform code reviews and delegate coding tasks to Codex without switching workflows. It enables read-only reviews and steerable, adversarial reviews, as well as background job management.
+*   **Key features:** Provides slash commands like `/codex:review` and `/codex:adversarial-review` for analysis, `/codex:rescue` for task delegation, and `/codex:status`/`/codex:result` to manage background jobs. Supports a review gate to block submissions until Codex approves. Works with both ChatGPT subscribers and API key users.
+*   **Why it's notable:** It bridges two powerful AI coding assistants (Claude Code and Codex), enhancing developer workflows by embedding advanced code analysis and delegation capabilities directly into an existing tool. Its recent surge in popularity (1,532 stars today) highlights the demand for integrated AI-assisted development environments.
+
+### [codex-plugin-cc] - 面向 Claude Code 的 Codex 集成插件
+*   **功能介绍：** 该插件将 OpenAI 的 Codex 工具直接集成到 Claude Code 环境中，允许用户在不切换工作流的情况下，使用 Codex 进行代码审查和任务委派。它支持只读审查和可引导的对抗性审查，并管理后台任务。
+*   **主要特点：** 提供 `/codex:review` 和 `/codex:adversarial-review` 等斜杠命令进行分析，使用 `/codex:rescue` 进行任务委派，并通过 `/codex:status` 和 `/codex:result` 管理后台作业。支持审查门禁功能，可在 Codex 通过前阻止代码提交。兼容 ChatGPT 订阅者和 API 密钥用户。
+*   **为何值得关注：** 它连接了两个强大的 AI 编码助手（Claude Code 和 Codex），通过将高级代码分析和任务委派功能直接嵌入现有工具，增强了开发者的工作流。其近期人气激增（今日获得 1,532 颗星），反映了市场对集成化 AI 辅助开发环境的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### system_prompts_leaks - Documentation of System Prompts for Major AI Models
+* **What it does:** This repository documents and archives the system prompt instructions used by a wide range of AI chatbots and coding assistants, including those from Anthropic, OpenAI, Google, xAI, and others.
+* **Key features:**
+    * Provides direct links to extracted system prompts for numerous models (e.g., Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash).
+    * Regularly updated with the latest leaks and changes (e.g., diffs between model versions).
+    * Organized by provider and model, with a comprehensive table of contents.
+    * Includes official, published versions and older prompts for comparison.
+* **Why it's notable:** It is a unique and popular resource for transparency, offering rare insight into the behavior rules and internal instructions of major AI systems. It has gained significant attention, as evidenced by features in The Washington Post and receiving nearly a thousand stars in a single day.
+
+### system_prompts_leaks - 主流AI模型系统提示词文档库
+* **功能介绍：** 该仓库收集并记录了来自Anthropic、OpenAI、Google、xAI等主要公司推出的各类AI聊天机器人和代码助手的系统提示词（System Prompt）指令。
+* **主要特点：**
+    * 提供大量模型（如 Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash）的系统提示词直接链接。
+    * 定期更新，追踪最新的泄露内容与版本间的差异。
+    * 按提供商和模型分类整理，索引清晰。
+    * 包含官方发布的版本以及早期历史版本的存档。
+*   **为何值得关注：** 这是一个极受欢迎的透明度资源，为公众提供了了解主流AI系统内部行为规则和指令的罕见视角。它引起了广泛关注，曾被《华盛顿邮报》报道，并在单日内获得了近千颗星。
+
+**[View Repository / 查看仓库](https://github.com/asgeirtj/system_prompts_leaks)**
+
+### T3MP3ST - Autonomous Multi-Agent Offensive Security Platform
+* What it does
+    - T3MP3ST is a multi-agent framework that transforms AI coding agents into autonomous red teams for security testing. It automates the full attack kill chain (recon → exploit → report) against authorized targets like web apps, CTFs, and open-source software.
+* Key features
+    - **Keyless Operation**: Uses the AI agent already running on your machine (Claude Code, Codex, etc.) or runs fully offline with local models (Ollama, vLLM).
+    - **Reproducible & Honest**: All performance metrics are verifiable via `npm run verify-claims`. A public status table clearly marks stable, experimental, and roadmap features.
+    - **Modular Kill Chain**: Features an 8-operator architecture, with a proven reconnaissance engine and tool-backed execution for exploitation, reporting, and coordinated disclosure.
+    - **Safety-First Design**: Includes built-in egress-scope containment to prevent attacks on unauthorized systems and emphasizes strict ethical use.
+* Why it's notable
+    - It's trending for enabling powerful, agent-driven security testing without requiring new API keys or cloud subscriptions. Its credibility is backed by impressive, publicly verifiable benchmarks (e.g., 90.1% pass@1 on the XBOW suite) and radical transparency about its capabilities and limitations.
+
+### T3MP3ST - 自主多代理进攻性安全平台
+* 功能介绍
+    - T3MP3ST是一个多代理框架，可将现有的AI编程代理转变为自主红队，用于安全测试。它能针对授权目标（如Web应用、CTF和开源软件）自动化执行完整的攻击杀伤链（侦察→利用→报告）。
+* 主要特点
+    - **无需密钥**：直接使用你本机已运行的AI代理（如Claude Code、Codex）或通过本地模型（Ollama、vLLM）完全离线运行。
+    - **可复现且透明**：所有性能指标可通过`npm run verify-claims`验证。公开的状态表清晰标注了稳定、实验性和规划中的功能。
+    - **模块化杀伤链**：采用八操作员架构，其中侦察引擎已验证，利用、报告和协调披露等功能均有实际工具支持。
+    - **安全优先设计**：内置出口范围控制，防止对未授权系统发起攻击，并严格强调伦理使用。
+* 为何值得关注
+    - 它因其能使强大的、代理驱动的安全测试无需新API密钥或云订阅而备受关注。其可信度建立在令人印象深刻且公开可验证的基准测试（例如，在XBOW套件上获得90.1%的pass@1）以及对自身能力和局限性完全透明的披露之上。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### **iOS Location Spoofer** - A standalone iOS GPS spoofing solution via proxy modules.
+*   **What it does**: This project allows users to spoof their iPhone's GPS location without jailbreaking. It works by intercepting HTTPS traffic from Apple's location services using compatible proxy apps (like Shadowrocket, Surge, etc.) and modifying the coordinate data sent back to the device, tricking it into reporting any desired location.
+*   **Key features**:
+    *   **Multi-platform Support**: Provides ready-to-use modules for five popular proxy platforms (Shadowrocket, Surge, Loon, Quantumult X, Stash), eliminating the need for a standalone app.
+    *   **Enhanced Spoofing**: Modifies not only Wi-Fi access point coordinates but also cellular tower data and motion activity types, making the spoofed location harder to detect.
+    *   **Automatic Format Handling**: Automatically detects and handles various Apple response formats to ensure compatibility.
+    *   **Configuration Tools**: Includes a `location-picker` web tool for easy coordinate selection and a server-side component for dynamic configuration updates.
+*   **Why it's notable**: It's a trending tool because it offers a powerful, accessible, and non-invasive method for location spoofing on iOS. Its key advantage is that it leverages existing, widely-used proxy applications, removing the need for complex compilation, developer accounts, or risky jailbreaks, making advanced location spoofing available to a broader user base.
+
+### **iOS Location Spoofer** - 一款通过代理模块实现的 iOS 无需越狱 GPS 位置伪装工具。
+*   **功能介绍**：本项目通过兼容的代理应用（如 Shadowrocket、Surge 等）拦截 Apple 地图服务的 HTTPS 流量，并篡改返回给设备的坐标数据，从而在不越狱的情况下将 iPhone 定位欺骗至世界任何地点。
+*   **主要特点**：
+    *   **多平台支持**：为 Shadowrocket、Surge、Loon、Quantumult X、Stash 五款主流代理软件提供即插即用的模块，无需单独编译 App。
+    *   **深度伪装**：不仅修改 Wi-Fi 热点坐标，还额外处理蜂窝基站坐标和运动状态信息，降低被系统识别的风险。
+    *   **格式自动兼容**：自动检测并适配 Apple 的多种响应格式，确保伪装后设备仍能正常工作。
+    *   **配套工具**：自带 `location-picker` 网页工具方便选点，并提供服务端组件以实现动态配置更新。
+*   **为何值得关注**：这是一个备受关注的工具，因为它提供了一种强大、便捷且非侵入性的 iOS 位置伪装方案。其最大优势在于依托于现有、广泛使用的代理应用，无需复杂的编译过程、开发者账号或有风险的越狱操作，使得高级位置伪装功能得以惠及更广泛的用户群体。
+
+**[View Repository / 查看仓库](https://github.com/mekos2772/ios-location-spoofer)**
+
+### 🎬 Britain turned its biggest weakness into the source of its power - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   This video explores a historical analysis of how Britain strategically converted its primary geopolitical disadvantage into a defining source of strength.
+*   Key topics likely include British naval strategy, empire building, economic advantages, and the strategic decisions that reshaped Britain's global position.
+*   It's worth watching for a unique perspective on historical resilience and strategy, presented by scholar Sarah Paine on a channel known for deep, analytical conversations.
+
+### 🎬 Britain turned its biggest weakness into the source of its power - Sarah Paine
+**频道:** Dwarkesh Patel
+*   视频内容概述：该视频探讨了一段历史分析，讲述了英国如何将其主要的地缘政治劣势转化为定义其力量的源泉。
+*   主要话题：核心讨论可能涵盖英国的海军建设、帝国扩张、经济优势以及重塑英国全球地位的战略决策。
+*   为何值得观看：学者莎拉·佩因的独到见解，深刻分析了历史上的韧性与战略思维。该频道以深度、分析性的对话闻名，值得对历史战略感兴趣的人观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ymxAcpVIclA)**
+
+### 🎬 How Codex learnt to edit videos
+**Channel:** Lenny's Podcast
+* This video explores the development and learning process behind OpenAI's Codex model and its application in automated video editing.
+* Key topics include the AI training methodology, the integration of ChatGPT capabilities, and practical use cases for AI-driven creative workflows.
+* It's worth watching for a behind-the-scenes look at how advanced AI models are being adapted for complex, creative tasks beyond traditional coding.
+
+### 🎬 Codex如何学会编辑视频
+**频道:** Lenny's Podcast
+* 本视频深入探讨了OpenAI的Codex模型的发展及其学习过程，特别是其在自动化视频编辑中的应用。
+* 主要话题涵盖AI的训练方法、ChatGPT功能的整合，以及AI驱动创意工作流程的实际应用案例。
+* 值得观看的原因在于，它提供了关于先进AI模型如何被改造以胜任超越传统编码的复杂创意任务的幕后见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MBQLYAWhlO4)**
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**Channel:** Dwarkesh Patel
+* What the video covers
+    * An interview-style discussion exploring the connection between facial expressions, neuroscience, and emotional cognition.
+    * Grant Sanderson (of 3Blue1Brown) discusses findings suggesting that Botox-induced paralysis of facial muscles can impair a person's ability to accurately perceive emotions in others.
+* Key topics discussed
+    * The "facial feedback hypothesis" and its empirical evidence.
+    * The role of motor systems in cognition and perception.
+    * Broader implications for understanding embodied cognition and the interplay between mind and body.
+* Why it's worth watching
+    * Features a deep, insightful conversation with a renowned educator (Grant Sanderson) on a fascinating intersection of biology, psychology, and everyday human experience.
+    * Challenges intuitive assumptions about how we think and perceive, offering a compelling case for the physical basis of mental processes.
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**频道:** Dwarkesh Patel
+* 视频内容概述
+    * 这是一期访谈式讨论，深入探讨了面部表情、神经科学与情绪认知之间的关联。
+    * 3Blue1Brown的创始人Grant Sanderson参与讨论，分析了相关研究如何表明，因肉毒杆菌（Botox）导致的面部肌肉麻痹，可能会削弱一个人准确识别他人情绪的能力。
+* 主要话题
+    * “面部反馈假说”及其相关实证研究。
+    * 运动系统在认知与感知中所扮演的角色。
+    * 该现象对理解“具身认知”（embodied cognition）以及身心相互作用的更广泛启示。
+* 为何值得观看
+    * 与著名教育科普创作者Grant Sanderson进行的一场深入且富有洞见的对话，内容涉及生物学、心理学和日常人类体验的迷人交叉点。
+    * 挑战了人们对思维与感知方式的直觉假设，为理解心智过程的生理基础提供了令人信服的案例。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Gr5cOV3mOGs)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+*   **What the video covers:** This video presents five advanced, practical use cases for "Claude Fable 5," which appears to be a powerful new feature or framework for the Claude AI, specifically focused on programming and code generation.
+*   **Key topics discussed:** Mastering AI-driven coding with Claude, building a tech agency or freelance business, optimizing development workflows, and leveraging specific techniques for tasks like code analysis, generation, and project management.
+*   **Why it's worth watching:** It offers actionable strategies for developers and entrepreneurs to immediately integrate advanced AI into their work, promising a significant efficiency boost and a competitive edge. The urgent title suggests these methods are critical for staying relevant and profitable in the fast-evolving AI tech space.
+
+### 🎬 Claude Fable 5：你必须立即使用的5个场景（否则一周内损失数千美元）
+**频道:** Chase AI
+*   **视频内容概述:** 本视频介绍了“Claude Fable 5”的五个高级实用场景。这似乎是Claude AI的一个强大新功能或框架，特别专注于编程和代码生成。
+*   **主要话题:** 精通Claude驱动的AI编程、建立科技机构或自由职业业务、优化开发工作流，以及利用特定技术进行代码分析、生成和项目管理等任务。
+*   **为何值得观看:** 它为开发者和企业家提供了可操作的策略，能立即将高级AI融入工作，有望大幅提升效率并获得竞争优势。视频紧迫的标题表明，在快速演变的AI技术领域，掌握这些方法对于保持相关性和盈利能力至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026)?
+**Channel:** Apna College
+*   What the video covers
+    *   A comprehensive roadmap for beginners to start a coding journey and secure a job in the tech industry, with a forward-looking perspective towards 2026.
+    *   Practical guidance on becoming "Placement Ready," likely covering skill development, project building, and interview preparation.
+*   Key topics discussed
+    *   Foundational steps for learning to code.
+    *   Strategies to align learning with future job market demands.
+    *   Preparation for tech placements and interviews.
+*   Why it's worth watching
+    *   Provides actionable, future-oriented advice from a popular and reputable educational channel.
+    *   Ideal for students and career-switchers seeking a clear, step-by-step plan to enter the tech field.
+
+### 🎬 如何开始编程并在2026年找到工作？
+**频道:** Apna College
+*   视频内容概述
+    *   为初学者提供从零开始学习编程并最终在科技行业找到工作的完整路线图，并特别展望了2026年的就业市场。
+    *   提供关于如何做好“就业准备”的实用指导，可能涵盖技能培养、项目实战和面试准备。
+*   主要话题
+    *   编程入门的初始步骤。
+    *   如何将学习内容与未来的市场需求相结合。
+    *   科技岗位就业与面试的准备策略。
+*   为何值得观看
+    *   来自一个广受欢迎且信誉良好的教育频道，提供了具有前瞻性、可操作的建议。
+    *   非常适合学生和转行者，希望获得一份清晰、循序渐进的计划来进入科技行业。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
 
