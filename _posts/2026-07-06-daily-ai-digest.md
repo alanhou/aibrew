@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 06, 2026"
 date: 2026-07-06
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，11个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -402,4 +402,229 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 值得观看是因为它专为希望直接在人工智能背景下学习Python的初学者设计，避免了那些与机器学习和数据科学任务关联度较低的通用编程概念。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=6GuyMZ-cSzE)**
+
+<!-- [Title-Only] -->
+### GPT-5.6 Sol Ultra will be in Codex
+*   **Brief description**: This article likely reports on a new, advanced version of a GPT model named "GPT-5.6 Sol Ultra" and its announced integration into **Codex**. Codex is OpenAI's AI system designed to understand and generate code, powering tools like GitHub Copilot. The title suggests an official announcement or leak about this specific model's deployment.
+*   **Why it might be interesting to readers**: For developers and tech enthusiasts, this is significant news. It indicates the next evolution of AI-powered coding assistance, promising potential improvements in code generation, comprehension, and problem-solving capabilities. It fuels discussions about the rapid pace of AI development and its practical implications for software engineering workflows.
+
+### GPT-5.6 Sol Ultra 将在 Codex 中推出
+*   **根据标题推测的文章内容简介**：本文很可能报道了一个名为"GPT-5.6 Sol Ultra"的全新高级GPT模型，以及其将集成到**Codex**中的消息。Codex是OpenAI开发的AI系统，旨在理解和生成代码，是GitHub Copilot等工具的动力核心。标题暗示了关于该特定模型部署的官方宣布或消息泄露。
+*   **为何值得关注**：对于开发者和技术爱好者而言，这是一个重要新闻。它预示着AI辅助编程工具的下一次进化，有望在代码生成、理解和解决问题能力方面带来显著提升。这也引发了关于AI发展迅猛步伐及其对软件工程工作流程实际影响的广泛讨论。
+
+**[Read Original / 阅读原文](https://twitter.com/thsottiaux/status/2073933490513752151)**
+
+### OpenTools/OpenPrinter Licensing & Protection
+*   OpenPrinter's technical architecture and design are protected by a patent, as well as design and model registrations.
+*   The project is distributed under the **Creative Commons BY-NC-SA 4.0** license, allowing free use, sharing, and modification.
+*   Users must credit the original author, share derivatives under the same license, and cannot use the project for commercial purposes.
+*   This approach aims to foster collaboration and innovation within an ethical framework.
+
+### OpenTools/OpenPrinter 许可与保护
+*   OpenPrinter 的技术架构和设计已获得专利以及外观设计和型号注册的保护。
+*   该项目采用 **CC BY-NC-SA 4.0** 许可证进行分发，允许自由使用、分享和修改。
+*   使用者必须署名原作者，并以相同许可证共享衍生作品，且不可将其用于商业目的。
+*   这种方式旨在促进协作和创新，同时确保项目传播的伦理与公平框架。
+
+**[Read Original / 阅读原文](https://www.opentools.studio/)**
+
+### Al Vigier: Canada's AI Strategy Should Not Include Secret Palantir Bills
+*   The Canadian government's new "AI for All" strategy promotes building a sovereign domestic AI industry, yet it is already a major customer of foreign AI systems, specifically purchasing data-fusion and decision-support platforms from U.S. firm Palantir.
+*   These foreign contracts, including one for the Department of National Defence that grew from an initial $14.4 million to over $44 million, were not disclosed to the public, highlighting a lack of transparency and contradiction with the strategy's stated goals.
+*   The strategy focuses on equity investments, compute funding, and certification programs rather than direct procurement from Canadian firms, which the author argues is the more effective way to build a sovereign AI base.
+*   Launching the key AI missions program in the slow-moving health sector is criticized as a choice likely to lead to delays, rather than proving the strategy's efficacy in areas with existing audit trails like defence or public safety.
+
+### Al Vigier：加拿大的人工智能战略不应包括秘密的Palantir账单
+*   加拿大政府的“人人享有AI”新战略旨在培育本土主权人工智能产业，但其本身已是外国AI系统的主要客户，特别是从美国公司Palantir购买数据融合与决策支持平台。
+*   这些未公开的外国合同（包括国防部一份从初始1440万美元增至逾4440万美元的合同）缺乏透明度，与战略所宣称的目标相悖。
+*   该战略侧重于股权投资、算力资金和认证计划，而非直接向加拿大公司采购。作者认为，后者才是建立主权AI基础更有效的方式。
+*   将核心的AI任务计划启动于行动迟缓的卫生部门，被批评为一种可能拖延的选择，而非在国防或公共安全等已有审计追踪的领域证明该战略的有效性。
+
+**[Read Original / 阅读原文](https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt)**
+
+### meetily - Privacy-First AI Meeting Assistant
+* What it does
+* A self-hosted, open-source meeting assistant that provides real-time transcription and AI-powered summaries entirely locally. It uses models like Parakeet/Whisper for transcription and Ollama for summarization, ensuring all processing happens on the user's machine without any cloud dependency.
+* Key features
+*   **4x Faster Local Transcription:** Optimized live transcription using Rust.
+*   **100% Local Processing & Privacy:** All data stays on-device; no cloud upload is required.
+*   **AI-Powered Summaries:** Leverages local Ollama models (or optional cloud providers) to generate meeting summaries.
+*   **Speaker Diarization:** Identifies different speakers in the recording.
+*   **Cross-Platform:** Supports macOS and Windows with Linux build instructions.
+*   **GPU Acceleration:** Utilizes Apple Silicon, NVIDIA CUDA, or Vulkan for enhanced performance.
+* Why it's notable
+* It's currently trending (#1 with 1,409 stars today) as a top solution for privacy-conscious users and enterprises needing a robust, self-hosted alternative to cloud-based meeting tools. Its focus on data sovereignty, combined with high-performance local AI processing built in Rust, makes it a standout open-source project in the productivity and AI space.
+
+### meetily - 隐私优先的 AI 会议助手
+* 功能介绍
+*   一个自托管的开源会议助手，完全在本地设备上提供实时转录和 AI 驱动的会议摘要。它使用 Parakeet/Whisper 等模型进行转录，使用 Ollama 生成摘要，确保所有处理均在用户设备上完成，无需任何云依赖。
+* 主要特点
+*   **本地转录速度提升 4 倍：** 基于 Rust 优化的实时转录功能。
+*   **100% 本地处理与隐私保护：** 所有数据保留在设备上，无需上传至云端。
+*   **AI 生成摘要：** 利用本地 Ollama 模型（或可选的云服务商）生成会议摘要。
+*   **说话人分离（Speaker Diarization）：** 可识别录音中的不同发言者。
+*   **跨平台支持：** 支持 macOS 和 Windows，并提供 Linux 构建指南。
+*   **GPU 加速：** 利用 Apple Silicon、NVIDIA CUDA 或 Vulkan 增强性能。
+*   **灵活部署：** 支持多种 AI 提供商，包括完全本地的 Ollama 以及 Claude、Groq 等。
+* 为何值得关注
+*   它目前是热门趋势项目（今日获得 1,409 星标，排名第一），是注重隐私的用户和企业寻求云端会议工具的强大开源替代方案的首选。其对数据主权的专注，结合基于 Rust 构建的高性能本地 AI 处理能力，使其成为生产力和 AI 领域一个突出的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### openai/codex-plugin-cc - A plugin to use OpenAI Codex directly from within Claude Code
+*   **What it does**: This plugin integrates OpenAI's Codex assistant into the Claude Code workflow. It allows users to run code reviews and delegate coding tasks (like bug fixing or investigation) to Codex without leaving their current Claude Code session.
+*   **Key features**: It provides slash commands such as `/codex:review` for standard code review, `/codex:adversarial-review` for challenging design choices, and `/codex:rescue` to hand off tasks. It supports background job management (`/status`, `/result`, `/cancel`) and session transfer to the Codex CLI.
+*   **Why it's notable**: It bridges two major AI coding assistants (Claude and Codex) into a single workflow, offering users flexible access to different models and capabilities. Its rapid star gain (1,532 stars today) indicates strong interest in tools that enhance and interconnect AI developer ecosystems.
+
+### openai/codex-plugin-cc - 一个用于在Claude Code中直接使用OpenAI Codex的插件
+*   **功能介绍**：该插件将OpenAI的Codex助手集成到Claude Code的工作流中。它允许用户在不离开当前Claude Code会话的情况下，运行代码审查并将编码任务（如修复bug或调查问题）委托给Codex执行。
+*   **主要特点**：提供了一系列斜杠命令，例如 `/codex:review` 进行标准代码审查，`/codex:adversarial-review` 用于挑战设计方案，以及 `/codex:rescue` 来移交任务。支持后台作业管理（`/status`, `/result`, `/cancel`）和将会话传输到Codex CLI。
+*   **为何值得关注**：它将两个主流的AI编码助手（Claude和Codex）连接在同一个工作流中，为用户提供了灵活访问不同模型和功能的能力。其迅速增长的星标数（今日新增1,532颗）表明，开发者社区对能够增强和互连AI开发生态系统的工具有着浓厚的兴趣。
+
+**[View Repository / 查看仓库](https://github.com/openai/codex-plugin-cc)**
+
+### system_prompts_leaks - A Repository Documenting Leaked System Prompts from Major AI Models
+* **What it does**: This repository systematically documents, collects, and organizes the internal system prompt instructions used by leading AI chatbots and developers, including models from Anthropic (Claude), OpenAI (ChatGPT, Codex), Google (Gemini), xAI (Grok), and others like Cursor and Perplexity.
+* **Key features**:
+    *   **Comprehensive Coverage**: Features prompts from numerous models across providers (Claude Fable 5, GPT-5.5, Gemini 3.5 Flash, Grok, etc.) and their various tools, API modes, and integrations.
+    *   **Actively Maintained**: Updated regularly with the latest prompts (e.g., Claude Sonnet 5, GPT-5.5 Codex) and version diffs (like Claude Opus 4.8 → Fable 5) to track changes.
+    *   **Well-Structured**: Organizes prompts by AI company and model, with dedicated sections for tools, official/published versions, and older models, making it easy to navigate.
+* **Why it's notable**: It provides unprecedented transparency into the "hidden rules" governing the behavior of mainstream AI assistants. This resource is invaluable for developers, researchers, and the curious public to understand AI safety guardrails, capabilities, and the differences between model versions. Its coverage of the latest models and citation in major media outlets like *The Washington Post* underscore its relevance and authority in the field.
+
+### system_prompts_leaks - 集合与文档化主流AI模型系统提示词的仓库
+* **功能介绍**：该仓库系统地收集、整理并记录了由主要AI聊天机器人和开发者使用的内部系统提示指令，涵盖来自Anthropic（Claude）、OpenAI（ChatGPT、Codex）、Google（Gemini）、xAI（Grok）以及Cursor、Perplexity等公司和产品的模型。
+* **主要特点**：
+    *   **覆盖全面**：收录了众多供应商和模型的提示词（如Claude Fable 5、GPT-5.5、Gemini 3.5 Flash、Grok等），及其各种工具、API模式和集成。
+    *   **持续维护**：定期更新最新的提示词（例如Claude Sonnet 5、GPT-5.5 Codex）和版本差异对比（如Claude Opus 4.8 → Fable 5），以跟踪变化。
+    *   **结构清晰**：按AI公司和模型组织内容，并设有专门部分存放工具、官方发布版本和历史版本，便于查阅。
+*   **为何值得关注**：它为了解主流AI助手的“隐藏规则”提供了前所未有的透明度。对于开发者、研究人员以及普通公众而言，这一资源对于理解AI的安全防护机制、能力边界以及不同模型版本间的差异都极具价值。其对最新模型的覆盖以及被《华盛顿邮报》等主流媒体报道的事实，进一步凸显了其在该领域的重要性和权威性。
+
+**[View Repository / 查看仓库](https://github.com/asgeirtj/system_prompts_leaks)**
+
+### T3MP3ST - Autonomous Multi-Agent Offensive Security Platform
+*   **What it does**: T3MP3ST is a framework that turns existing AI coding agents (like Claude Code, Codex, or local models via Ollama) into an autonomous "red team" for security testing. It orchestrates a multi-agent kill chain (recon, exploit, report) to hunt for vulnerabilities in authorized targets like web applications, CTF challenges, source code, and smart contracts.
+*   **Key features**:
+    *   **Keyless & Local-First**: Leverages the AI agent already on your machine; no new API keys or cloud dependency required. Can run fully offline.
+    *   **Reproducible Benchmarks**: All claimed scores (e.g., 90.1% on XBOW's XBEN suite) are derived from committed data and can be independently verified with `npm run verify-claims`.
+    *   **Broad Domain Coverage**: Includes stable pipelines for web app reconnaissance, CTF solving, and coordinated vulnerability disclosure for open-source/embedded software. Experimental support for source code analysis and DeFi exploitation.
+    *   **Comprehensive Tool Arsenal**: Ships with 35+ built-in tools, expandable to 83, including network scanners, exploit frameworks, and egress-scope containment to ensure safety.
+*   **Why it's notable**: It democratizes advanced offensive security by making sophisticated, agent-driven vulnerability hunting accessible. Its core differentiators are a strong emphasis on **reproducibility** (verifiable results), **practical autonomy** (using your existing agent), and **honesty about its development stage**, clearly marking what is stable versus experimental.
+
+### T3MP3ST - 自主多智能体攻击性安全平台
+*   **功能介绍**：T3MP3ST 是一个框架，它将现有的 AI 编码代理（如 Claude Code、Codex 或通过 Ollama 运行的本地模型）转变为一个自主的“红队”用于安全测试。它编排一个多智能体攻击链（侦察、利用、报告），在授权目标（如 Web 应用、CTF 挑战、源代码和智能合约）中搜索漏洞。
+*   **主要特点**：
+    *   **无密钥 & 本地优先**：利用您机器上已有的 AI 代理，无需新的 API 密钥或云依赖。可完全离线运行。
+    *   **可复现的评测**：所有宣称的分数（例如，在 XBOW 的 XBEN 套件上达到 90.1%）均基于提交的数据，并可通过 `npm run verify-claims` 独立验证。
+    *   **广泛的领域覆盖**：包含用于 Web 应用侦察、CTF 解题以及开源/嵌入式软件协调漏洞披露的稳定管道。实验性支持源代码分析和 DeFi 漏洞利用。
+    *   **全面的工具库**：内置 35 多种工具，可扩展至 83 种，包括网络扫描器、漏洞利用框架和出口范围控制以确保安全。
+*   **为何值得关注**：它通过使复杂的、由智能体驱动的漏洞挖掘变得易于实现，从而实现了攻击性安全的民主化。其核心差异点在于对**可复现性**（可验证的结果）、**实用的自主性**（使用您现有的代理）以及**对其开发阶段的诚实态度**（清晰标注哪些功能稳定、哪些仍在实验中）的强调。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### [mekos2772/ios-location-spoofer] - Standalone iOS location spoofer via proxy modules
+* **What it does**
+    * A collection of JavaScript modules for popular iOS proxy tools (Shadowrocket, Surge, Loon, Quantumult X, Stash).
+    * It spoofs the GPS location reported by iOS to Apple Maps and other apps **without jailbreaking**.
+    * It works by using HTTPS decryption (MITM) to intercept location-related requests to Apple and replace the received coordinate data with user-defined values.
+* **Key features**
+    * **Multi-platform support**: Ready-to-use modules for five major iOS proxy applications.
+    * **Enhanced spoofing**: Modifies both Wi-Fi hotspot and cellular tower (CellTower) coordinates.
+    * **Robust compatibility**: Automatically detects and handles different Apple response formats.
+    * **Motion state spoofing**: Can fake movement activity data to appear more legitimate.
+    * **Included tools**: Comes with a web-based `location-picker` tool for easy coordinate selection and supports remote configuration.
+* **Why it's notable**
+    * **No jailbreak required**: Makes location spoofing accessible to a wider user base.
+    * **Broad compatibility**: Covers the most popular proxy apps in the iOS ecosystem.
+    * **Active development**: Includes enhancements over its predecessor (Go-based app) and offers advanced features like a web-based location picker.
+    * **Highly configurable**: Allows fine-tuning of accuracy, altitude, and other location parameters.
+
+### [mekos2772/ios-location-spoofer] - 无需越狱的 iOS 位置欺骗工具（代理模块版）
+* **功能介绍**
+    * 一系列为 iOS 主流代理工具（Shadowrocket、Surge、Loon、Quantumult X、Stash）制作的 JavaScript 模块。
+    * 通过代理软件的 HTTPS 解密功能，拦截并篡改发往 Apple 的定位查询数据，从而将 iOS 设备的 GPS 位置**欺骗**到全球任意指定地点，且**无需越狱**。
+* **主要特点**
+    * **多平台支持**：提供覆盖五大流行代理应用的即用型模块文件。
+    * **增强的欺骗效果**：不仅能修改 Wi-Fi 热点坐标，还能修改蜂窝基站（CellTower）坐标。
+    * **健壮的兼容性**：能自动检测并处理 Apple 返回的不同数据封装格式。
+    * **运动状态伪造**：可一并修改运动活动数据，降低被系统识破的风险。
+    * **附带实用工具**：包含网页版 `location-picker` 工具方便选点，并支持远程配置。
+* **为何值得关注**
+    * **降低使用门槛**：无需复杂越狱操作，普通用户也能在合规代理软件中实现定位修改。
+    * **生态覆盖广**：支持 iOS 平台上最主流的几款代理应用，适用性强。
+    * **功能完善且在迭代**：在原版项目基础上进行了功能扩展（如支持基站），并提供了更便捷的网页选点方案。
+    * **高度可配置**：允许用户精细调整水平精度、垂直精度、海拔等位置参数。
+
+**[View Repository / 查看仓库](https://github.com/mekos2772/ios-location-spoofer)**
+
+### 🎬 Britain turned its biggest weakness into the source of its power - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   What the video covers: A historical analysis of how Britain, a small, vulnerable island nation, transformed its geographical and demographic "weaknesses" into the foundations of its global power and empire.
+*   Key topics discussed: Britain's early vulnerabilities (defensive geography, lack of resources, small population), strategic naval development, the rise of free trade and finance, and the creation of a global network of colonies and alliances.
+*   Why it's worth watching: It offers a compelling, contrarian perspective on the origins of British power, moving beyond simplistic "ruling the waves" narratives to explore the strategic and economic ingenuity that allowed a minor European power to dominate the globe.
+
+### 🎬 英国如何将自身最大弱点转化为力量之源 - 莎拉·佩恩
+**频道:** Dwarkesh Patel
+*   视频内容概述：一段深入的历史分析，探讨了英国——一个地理上脆弱的岛国——如何将其地理和人口上的“弱点”转变为全球力量和帝国的基础。
+*   主要话题：英国的早期脆弱性（防御性地理、资源匮乏、人口稀少）、战略海权的发展、自由贸易与金融的崛起，以及全球殖民地与联盟网络的建立。
+*   为何值得观看：影片提供了一个引人入胜、反直觉的视角来审视英国力量的起源，超越了简单的“统治海洋”叙事，深入探讨了让一个欧洲小国得以主宰全球的战略与经济智慧。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ymxAcpVIclA)**
+
+### 🎬 How Codex learnt to edit videos
+**Channel:** Lenny's Podcast
+* The video explores the development and learning process of Codex, likely an AI model or tool from OpenAI, specifically in the context of video editing capabilities.
+* Key topics include the intersection of AI (Codex, ChatGPT), generative media, and the technical evolution of automated video editing tools.
+* It’s worth watching for insights into the future of AI-driven content creation, particularly how advanced language models like Codex are being adapted for complex multimedia tasks beyond code generation.
+
+### 🎬 Codex 如何学会编辑视频
+**频道:** Lenny's Podcast
+* 视频探讨了 Codex（一个可能来自 OpenAI 的 AI 模型或工具）的开发和学习过程，重点关注其在视频编辑能力上的应用。
+* 主要话题涵盖人工智能（Codex, ChatGPT）、生成式媒体以及自动化视频编辑工具的技术演进。
+* 该视频值得关注，因为它提供了关于 AI 驱动内容创作未来的深刻见解，特别是像 Codex 这样的高级语言模型如何被调整以应对超越代码生成的复杂多媒体任务。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=MBQLYAWhlO4)**
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**Channel:** Dwarkesh Patel
+* What the video covers: This interview delves into the neuroscience and psychology behind facial feedback, specifically examining how the cosmetic use of Botox (which paralyzes facial muscles) can inadvertently impair a person's ability to accurately recognize and empathize with the emotions of others.
+* Key topics discussed: The "facial feedback hypothesis," the experimental evidence linking Botox use to reduced emotion recognition accuracy, the neuroscientific mechanisms involved (like the facial mimicry loop), and the broader implications for social interaction and empathy.
+* Why it's worth watching: Featuring Grant Sanderson (creator of 3Blue1Brown), this conversation elegantly bridges complex neuroscience with a common, relatable experience. It's a fascinating exploration of how our physical physiology directly influences our social cognition and emotional intelligence, making it highly relevant for anyone interested in psychology, human behavior, or self-awareness.
+
+### 🎬 Botox Makes You Worse at Reading Emotions - Grant Sanderson
+**频道:** Dwarkesh Patel
+* 视频内容概述：本期访谈深入探讨了面部反馈的神经科学和心理学机制，特别研究了肉毒素（一种麻痹面部肌肉的美容用途）的使用如何可能在无意中削弱个人准确识别和共情他人情绪的能力。
+* 主要话题：讨论了“面部反馈假说”，分析了将肉毒素使用与情绪识别能力下降联系起来的实验证据，探究了其中涉及的神经科学机制（如面部模仿环路），并讨论了这对社交互动和共情能力的广泛影响。
+* 为何值得观看：本次对话邀请到了Grant Sanderson（3Blue1Brown的创作者），他巧妙地将复杂的神经科学与普遍、相关的日常体验联系起来。这是一个关于我们的生理机能如何直接影响社会认知和情商的迷人探索，对于任何对心理学、人类行为或自我意识感兴趣的人来说都极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Gr5cOV3mOGs)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+*   What the video covers: This video presents five practical and urgent applications of Claude AI (specifically referencing "Claude Fable 5") designed for immediate implementation to generate value or avoid missed financial opportunities within a week.
+*   Key topics discussed: The core focus is on actionable business and productivity use cases for Claude, likely including workflows for tasks like coding (Claude Code), automation, content creation, and client acquisition strategies for building an AI agency.
+*   Why it's worth watching: It offers a direct, time-sensitive guide for entrepreneurs, freelancers, and professionals to leverage Claude AI for tangible results—potentially to kickstart an AI-driven business or service offering. The urgency emphasizes practicality over theory.
+
+### 🎬 Claude Fable 5 你必须现在就用的5个用法（一周内可能损失数千美元）
+**频道:** Chase AI
+*   视频内容概述：本视频介绍了五个Claude AI（具体指“Claude Fable 5”）的紧急且实用的应用案例，旨在指导观众立即实施，以在一周内创造价值或避免财务机会损失。
+*   主要话题：核心聚焦于Claude在商业和生产力方面的可操作性用例，可能涵盖编码（Claude Code）、自动化、内容创作以及建立AI代理机构的客户获取策略等工作流。
+*   为何值得观看：该视频为企业家、自由职业者和专业人士提供了一份直接、具有时间敏感性的指南，以利用Claude AI获得切实成果——可能用于启动AI驱动的业务或服务。其紧迫性强调了实用性而非理论。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+
+* This video serves as a comprehensive roadmap for aspiring programmers, outlining a strategic path to enter the tech industry and secure a job by 2026.
+* It breaks down the essential coding languages, skills, and learning methodologies needed, while also covering the job placement process and interview preparation.
+* It's worth watching for its clear, forward-looking, and practical guidance from a channel known for its focus on tech placements and industry readiness.
+
+### 🎬 如何开始编程并在2026年获得工作？
+**频道:** Apna College
+
+* 本视频为有志于编程的人士提供了一份全面的路线图，详细规划了到2026年进入科技行业并找到工作的战略路径。
+* 视频分解了所需的必要编程语言、技能和学习方法，同时涵盖了求职流程和面试准备。
+* 它之所以值得观看，是因为其清晰、具有前瞻性且实用的指导，来自一个以关注技术就业和行业准备而闻名的频道。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
 
