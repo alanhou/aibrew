@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 07, 2026"
 date: 2026-07-07
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### riddle: An Interactive Diary for reMarkable Paper Pro
@@ -428,4 +428,70 @@ pin: false### riddle: An Interactive Diary for reMarkable Paper Pro
 * 为何值得观看：因为它为AI方向的学习者提供了一条精简、目标明确的Python学习路径，避免不必要的细节，直接聚焦于开启AI学习之旅所需的核心技能。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=6GuyMZ-cSzE)**
+
+### Dolosse: A South African Invention for Global Coastal Protection
+*   Dolosse are large, pre-cast concrete structures used worldwide for coastal management, specifically to protect breakwaters, harbour walls, and coastal constructions from erosion by tides and rough seas.
+*   Their unique design, which allows water to flow through and around them, effectively dissipates wave force, making them more stable than simple concrete blocks.
+*   While used extensively along the South African coast (e.g., in Port Elizabeth's Coega harbour), their origin is often linked to inspiration from children's games like knucklebones or jacks.
+*   The dolos was invented in South Africa by engineers employed by the South African Railway & Harbour Services, who received no payment, recognition, or patent for their creation.
+
+### 防浪石（Dolosse）：一项享誉全球的南非发明
+*   防浪石是一种大型预制混凝土结构，被全球用于海岸防护，主要功能是保护防波堤、港口岸壁及沿岸建筑免受潮汐和汹涌海浪的侵蚀。
+*   其独特设计使水流能够穿透和绕过它们，从而有效消散波浪的力量，这比使用普通混凝土块更加稳固。
+*   这种结构广泛分布于南非海岸（例如伊丽莎白港的科加深水港），但其设计灵感常被认为来源于儿童游戏，如跳房子或抓子儿游戏。
+*   该发明源自南非，由当时受雇于南非铁路与港口服务公司的工程师们设计，但他们未因此获得任何报酬、认可或专利。
+
+**[Read Original / 阅读原文](https://thisbugslife.com/2021/11/21/dolosse-a-south-african-invention-used-over-the-world/)**
+
+### Microsoft's Global Device ID (GDID) Tracking Concerns
+*   A hacker's arrest revealed Microsoft can track Windows PCs and their online activity via a unique, persistent "Global Device ID" (GDID).
+*   The FBI used Microsoft's records linking the GDID to an IP address to identify the suspect, even while he was using a VPN.
+*   The GDID appears to have no easy opt-out and can associate activity with third-party services and precise timing, raising significant surveillance fears.
+*   Cybersecurity experts question if this capability is unique to Microsoft or common among tech giants like Apple, suggesting Linux or heavy use of anonymizing tools might be needed for true privacy.
+
+### 微软"全局设备ID"(GDID)追踪引发担忧
+*   一名黑客被捕后，揭露微软可通过唯一的、持久性的"全局设备ID"(GDID)追踪Windows电脑及其在线活动。
+*   联邦调查局利用微软记录，将GDID与IP地址关联，从而识别出嫌疑人，即使他使用了VPN。
+*   该GDID似乎没有简单的退出选项，并能将活动与第三方服务及精确时间相关联，引发了严重的监控担忧。
+*   网络安全专家质疑此能力是否为微软独有，或在苹果等科技巨头中也普遍存在，并建议要实现真正的隐私可能需要使用Linux系统或大量依赖匿名化工具。
+
+**[Read Original / 阅读原文](https://www.pcmag.com/news/a-hackers-arrest-reveals-microsoft-can-track-users-via-a-windows-device)**
+
+### Semantic Search Interface for React Documentation
+
+* The interface features a search input field with placeholder text "how do I run something when state changes" to guide user queries about React state management.
+* Predefined query suggestions are provided, such as "share state across components" and "skip a re-render," to help users quickly access relevant documentation on common development topics.
+
+### React 文档语义搜索界面
+
+* 搜索输入框带有提示文本“how do I run something when state changes”，指导用户查询 React 状态管理相关内容。
+* 提供预定义查询建议，如“share state across components”和“skip a re-render”，方便用户快速访问常见开发主题的文档。
+
+**[Read Original / 阅读原文](https://ternlight-demo.vercel.app/)**
+
+### riddle - The Diary of Tom Riddle for reMarkable Paper Pro
+* **What it does:** It's a creative application for the reMarkable Paper Pro tablet that simulates the magical diary from Harry Potter. Users write on the e-ink page with a stylus; after a pause, the writing fades ("is drunk by the ink"), and an AI-generated reply appears in a flowing handwritten style before also fading away.
+* **Key features:** Raw stylus input with pressure sensitivity, a unique "ink-drinking" and reply animation, low-latency direct control of the e-ink display ("takeover mode"), and integration with OpenAI-compatible vision LLMs to "read" the handwriting and generate responses. Supports multiple installation methods via `remagic`.
+* **Why it's notable:** It's a highly novel and immersive project that creatively blends physical hardware interaction (e-ink, stylus) with generative AI. It showcases impressive technical work in driving the e-ink display directly for instant ink and creating a fluid, "magical" user experience beyond a typical app, trending for its originality.
+
+### riddle - 汤姆·里德尔日记（reMarkable Paper Pro 版）
+* **功能介绍：** 这是一个为 reMarkable Paper Pro 电子墨水平板设计的创意应用，模拟了《哈利·波特》中具有魔力的日记。用户用触控笔在页面上书写，片刻后，字迹会“被墨水吸收”而淡去，随后AI生成的回复会以流畅的手写体显现，之后同样淡出。
+* **主要特点：** 原始触控笔输入（支持压感），独特的“墨水吸收”和回复动画，超低延迟的电子墨水屏直接控制（“接管模式”），以及与兼容OpenAI的视觉大语言模型集成以“阅读”手写内容并生成回复。支持通过 `remagic` 进行多种方式安装。
+* **为何值得关注：** 这是一个极具创新性和沉浸感的项目，巧妙地将物理硬件交互（电子墨水屏、触控笔）与生成式AI结合。它展示了直接驱动电子墨水屏以实现即时书写的卓越技术工作，并创造了超越常规应用的流畅、神奇用户体验，因其原创性而备受关注。
+
+**[View Repository / 查看仓库](https://github.com/MaximeRivest/riddle)**
+
+### 🎬 GLM-5.2: The Complete Guide to the Best Open-Source Model
+**Channel:** Matt Wolfe
+*   **What the video covers:** A comprehensive deep-dive into Z.ai's new open-source AI model, GLM-5.2. The video explains its architecture, key specifications (like the 1 million token context window and MIT license), and puts it through a practical series of tests to evaluate its real-world performance.
+*   **Key topics discussed:** The model's technical specs, its cost-effectiveness compared to proprietary "frontier" models, a hands-on demonstration of its capabilities across various tasks, and an assessment of its potential as a leading open-weight alternative.
+*   **Why it's worth watching:** For anyone interested in the evolving landscape of AI, this video provides a crucial first look at a potentially disruptive open-source model. It moves beyond theory to offer practical, hands-on insights into whether GLM-5.2 can truly deliver high performance at a fraction of the cost, making it essential viewing for developers, researchers, and tech enthusiasts.
+
+### 🎬 GLM-5.2：最佳开源模型完全指南
+**频道:** Matt Wolfe
+*   **视频内容概述：** 深入解析Z.ai发布的新一代开源AI模型GLM-5.2。视频详细介绍了其模型架构、关键技术参数（如百万级Token上下文窗口和MIT开源许可证），并通过一系列实际测试来评估其真实性能表现。
+*   **主要话题：** 模型的技术规格、相较于闭源前沿模型的成本优势、在各类任务上的实操演示，以及其作为顶级开源模型的潜力评估。
+*   **为何值得观看：** 对于关注AI技术发展的观众而言，本视频提供了对这款可能带来颠覆性影响的开源模型的关键首测。它不止于理论阐述，而是通过实际操作，深入探讨GLM-5.2是否真的能在大幅降低成本的同时提供高性能，是开发者、研究人员和科技爱好者的必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XbHeJL45USQ)**
 
