@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 07, 2026"
 date: 2026-07-07
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### riddle: An Interactive Diary for reMarkable Paper Pro
@@ -494,4 +494,90 @@ pin: false### riddle: An Interactive Diary for reMarkable Paper Pro
 *   **为何值得观看：** 对于关注AI技术发展的观众而言，本视频提供了对这款可能带来颠覆性影响的开源模型的关键首测。它不止于理论阐述，而是通过实际操作，深入探讨GLM-5.2是否真的能在大幅降低成本的同时提供高性能，是开发者、研究人员和科技爱好者的必看内容。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XbHeJL45USQ)**
+
+### StreetComplete: OpenStreetMap Surveyor App
+*   A mobile application designed to help improve OpenStreetMap (OSM).
+*   It identifies missing map data in the user's vicinity and presents them as simple "quests" on the map.
+*   Users solve these quests by visiting the location and answering an easy question, which directly updates the map data in their name.
+*   The contributions are added directly to OpenStreetMap, eliminating the need for a separate editor.
+
+### StreetComplete：OpenStreetMap 测量应用
+*   一款旨在帮助改善 OpenStreetMap (OSM) 的移动应用程序。
+*   该应用会查找用户附近缺失的地图数据，并将其以简单的“任务”形式显示在地图上。
+*   用户通过实地访问地点并回答一个简单问题来解决这些任务，从而直接以其名义更新地图数据。
+*   您输入的信息将直接添加至 OpenStreetMap，无需使用其他编辑器。
+
+**[Read Original / 阅读原文](https://streetcomplete.app/)**
+
+### YouTube Homepage Structure
+* The HTML content displays the fundamental navigation components of the YouTube web interface, including the search box container and a hamburger menu icon.
+* It outlines the footer navigation links, categorized into primary links (e.g., About, Creators) and secondary links (e.g., Terms, Privacy).
+
+### YouTube 主页结构
+* HTML内容展示了YouTube网页界面的基本导航组件，包括搜索框容器和汉堡菜单图标。
+* 它列出了页脚导航链接，这些链接分为主链接（例如“关于”、“创作者”）和辅助链接（例如“条款”、“隐私”）。
+
+**[Read Original / 阅读原文](https://www.youtube.com/watch?v=3R0Lp86GEBk)**
+
+### English Summary
+*   A study of 19,450 European company websites found that US-headquartered infrastructure vendors serve the majority in the UK (67.5%) and Netherlands (53.6%), and are the largest cluster in Italy, Spain, and France.
+*   Cloudflare is the single largest internet-facing vendor across all seven sampled countries (UK, NL, IT, ES, FR, DE, PL), surpassing all other US, European, and domestic providers.
+*   Germany and Poland are key exceptions with strong domestic hosting industries (e.g., Hetzner, IONOS in Germany; Home.pl, NetArt in Poland), where US vendors do not hold the largest share.
+*   The research is a vendor attribution study, identifying which company's infrastructure answers DNS queries, not the physical location of servers. It highlights the dominant role of US vendors at the public-facing web layer.
+
+### 中文摘要
+*   一项针对19,450个欧洲企业网站的分析表明，美国总部基础设施服务商在英国（占67.5%）和荷兰（53.6%）占据多数份额，并在意大利、西班牙和法国为最大类别。
+*   Cloudflare在七个被采样国家（英、荷、意、西、法、德、波）均是最大的面向互联网的基础设施服务商，超越了所有其他美国、欧洲及本土提供商。
+*   德国和波兰是明显的例外，两国拥有强大的本土托管产业（如德国的Hetzner、IONOS；波兰的Home.pl、NetArt），美国服务商并非最大份额持有者。
+*   本研究是一项供应商归因研究，旨在识别响应DNS查询的基础设施所属公司，而非服务器的物理位置。它强调了美国服务商在面向公众的网络层的主导地位。
+
+**[Read Original / 阅读原文](https://ciphercue.com/blog/european-web-hosting-vendor-share-2026)**
+
+### MadsLorentzen/ai-job-search - AI-Powered Job Application Framework
+* **What it does**: A structured workflow built on Claude Code that automates the job search and application process. It evaluates job postings against your profile, drafts tailored CVs and cover letters in LaTeX, and prepares you for interviews.
+* **Key features**:
+    * Core commands (`/setup`, `/scrape`, `/apply`) create a complete assistant pipeline.
+    * Includes a `drafter-reviewer` workflow for high-quality application documents.
+    * Ships with CLI tools for Danish job portals but is designed to be extensible to other markets via `/add-portal`.
+    * Supports profile enrichment (`/expand`), skill gap analysis (`/upskill`), and custom LaTeX templates (`/add-template`).
+* **Why it's notable**: It's a comprehensive, open-source toolkit that leverages AI to automate a tedious and personal process. Its trending status (2,400+ stars today) reflects high demand for AI-assisted career tools and its robust, ready-to-use implementation.
+
+### MadsLorentzen/ai-job-search - 基于AI的求职应用框架
+* **功能介绍**: 一个基于Claude Code构建的结构化工作流，可自动化求职和申请过程。它能根据你的个人资料评估职位信息，用LaTeX撰写量身定制的简历和求职信，并为你准备面试。
+* **主要特点**:
+    * 核心命令（`/setup`, `/scrape`, `/apply`）构成了完整的助手工作流。
+    * 包含“撰写-评审”流程以生成高质量的申请文档。
+    * 预置了针对丹麦求职门户的CLI工具，但设计上可通过 `/add-portal` 扩展到其他市场。
+    * 支持个人资料扩充（`/expand`）、技能差距分析（`/upskill`）和自定义LaTeX模板（`/add-template`）。
+* **为何值得关注**: 这是一个全面、开源的工具包，利用AI自动化了一项繁琐且高度个人化的任务。其迅速获得的关注度（今日获星2400+）反映了市场对AI辅助职业工具的强烈需求，以及该项目本身扎实、可用的实现。
+
+**[View Repository / 查看仓库](https://github.com/MadsLorentzen/ai-job-search)**
+
+### 🎬 AI Agents For Beginners – OpenClaw Case Study
+**Channel:** freeCodeCamp.org
+*   **What the video covers:** 这是一个面向初学者的、高度实践性的AI课程，旨在通过一个名为 **OpenClaw** 的具体案例项目，将AI代理（AI Agents）的概念变得通俗易懂、可操作且有趣。视频从AI的基础知识讲起，带领观众一步步构建一个实际的AI代理应用。
+*   **Key topics discussed:** AI代理的核心概念与工作原理；从零开始构建AI代理的实践步骤；通过OpenClaw案例进行实战演练；相关代码与架构讲解。
+*   **Why it's worth watching:** 对于希望了解AI代理但不知从何入手的初学者来说，这是绝佳的入门选择。视频由知名的免费编程学习平台freeCodeCamp制作，内容质量有保障，且完全免费。它避免了枯燥的理论堆砌，直接以动手项目为导向，能帮助你快速建立直观理解并获得成就感。
+
+### 🎬 AI Agents For Beginners – OpenClaw Case Study
+**频道:** freeCodeCamp.org
+*   **视频内容概述:** 这是一门面向初学者的实践课程，旨在通过 **OpenClaw** 这个具体案例项目，讲解AI代理（AI Agents）技术，使其变得简单、易上手且有趣。视频从AI基础入手，引导观众完成构建过程。
+*   **主要话题:** AI代理的核心概念与运作机制；构建AI代理的实践路径；OpenClaw项目实战详解；相关代码与技术架构。
+*   **为何值得观看:** 这是零基础了解AI代理的完美起点。由权威的免费编程社区freeCodeCamp出品，内容免费且高质量。课程以项目驱动，避免了纯理论讲解，能让你在动手实践中快速掌握AI代理的入门知识。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AZDSpS5v57w)**
+
+### 🎬 Why problem-solving is key for developers
+**Channel:** freeCodeCamp.org
+*   This video argues that effective problem-solving is a foundational, non-negotiable skill for software developers, extending far beyond just writing code.
+*   Key topics discussed likely include the structured approach to debugging, breaking down complex problems, the importance of a problem-solving mindset for career growth, and practical methods to hone this skill.
+*   It is worth watching because it reframes development as a cognitive process. It provides essential guidance for developers of all levels to improve their core competency, which is crucial for tackling real-world projects and advancing in their careers.
+
+### 🎬 为什么问题解决能力对开发者至关重要
+**频道:** freeCodeCamp.org
+*   本视频论述了高效的问题解决能力是软件开发人员的基础核心技能，其重要性远超单纯的编码本身。
+*   主要探讨的话题可能包括：系统化的调试思路、如何拆解复杂问题、拥有解决问题思维对职业发展的价值，以及锻炼这项技能的实用方法。
+*   值得观看的原因在于，它将开发工作重新定义为一种认知过程。视频为各级开发者提供了提升核心竞争力的关键指导，这对于应对实际项目和职业进阶都至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=heht1VB09fI)**
 
