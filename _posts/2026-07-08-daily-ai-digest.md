@@ -240,3 +240,230 @@ This video is essential for developers at any level seeking to strengthen their 
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
 
+<!-- [Title-Only] -->
+### How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)
+*   Based on the title, this article is a guide on setting up a do-it-yourself (DIY) Network-Attached Storage (NAS) system using the ZFS filesystem, while explicitly avoiding popular pre-configured hardware and software solutions from companies like Synology and QNAP, as well as dedicated OS platforms like TrueNAS.
+*   It is likely interesting for tech enthusiasts, Linux/Unix administrators, and hobbyists who desire more control, customization, and potentially lower costs than commercial solutions offer. The "minimal" and "2024" tags suggest a focus on a streamlined, modern setup process.
+
+### 如何搭建一个不依赖 Synology、QNAP 或 TrueNAS 的精简 ZFS NAS (2024)
+*   根据标题推测，本文是一篇关于如何自己动手搭建一个使用 ZFS 文件系统的网络附加存储（NAS）系统的指南，并且特意避开了 Synology、QNAP 等品牌的预配置硬件和软件方案，也未使用 TrueNAS 这类专用操作系统。
+*   这篇文章对于技术爱好者、Linux/Unix 系统管理员以及喜欢折腾的玩家可能很有吸引力，因为它提供了比商用方案更高的控制权、定制性和潜在的成本优势。“精简”和“2024”标签则暗示其内容聚焦于现代化的简洁部署流程。
+
+**[Read Original / 阅读原文](https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/)**
+
+### Tenda Firmware Hidden Authentication Backdoor (VU#213560)
+*   **Vulnerability**: Multiple Tenda router firmware versions contain an undocumented backdoor in the web interface authentication. Attackers can bypass normal password verification to gain full administrative access without valid credentials.
+*   **Affected Products**: Specific models and firmware versions are vulnerable, including certain FH1201, W15E, AC10, AC5, and AC6 devices.
+*   **Technical Details**: The backdoor exists in the `login()` function of the `/bin/httpd` web server binary. If standard authentication fails, it retrieves an alternate password from the configuration (`sys.rzadmin.password`) and performs a plain-text comparison. Any username is accepted with this password, granting admin (role=2) access.
+*   **Impact**: Successful exploitation allows an attacker to completely reconfigure the device, alter network settings, and disable security features, potentially compromising the entire local network.
+*   **Solution/Mitigation**: No vendor patch is currently available. Users are advised to disable remote management and change the default LAN IP address to reduce exposure.
+
+### 腾达路由器固件隐藏认证后门 (VU#213560)
+*   **漏洞概述**：多款腾达路由器固件版本在Web管理界面的认证机制中存在未记录的后门。攻击者可绕过正常的密码验证流程，在无需有效凭证的情况下获取设备的完全管理权限。
+*   **受影响版本**：包括特定型号及固件版本的FH1201、W15E、AC10、AC5和AC6设备受到影响。
+*   **技术细节**：后门存在于Web服务器程序 `/bin/httpd` 的 `login()` 函数中。若标准认证失败，该函数会调用 `GetValue("sys.rzadmin.password")` 从配置中获取一个备用密码，并进行明文比对。使用该密码配合任意用户名均可通过认证，并获得管理员角色（role=2）的访问权限。
+*   **安全影响**：成功利用该漏洞可使攻击者完全重新配置设备、更改网络设置并禁用安全功能，可能导致整个本地网络被渗透。
+*   **解决方案/缓解措施**：目前厂商尚未提供修复补丁。建议用户禁用设备的远程管理功能，并更改局域网默认IP地址，以减少暴露风险。
+
+**[Read Original / 阅读原文](https://kb.cert.org/vuls/id/213560)**
+
+### Floppy Disk Imaging Guide for Preservation
+*   This guide provides instructions for practitioners on how to create disk images from floppy disks for the purpose of long-term digital preservation.
+*   It specifically covers 8-inch, 5.25-inch, 3.5-inch, and 3-inch floppy disks, focusing solely on imaging (reading) and not writing data to disks.
+*   The guide is structured into five key sections: identifying the disk type, acquiring compatible hardware, cleaning and maintenance, the imaging process, and finding further help and resources.
+*   It assumes the reader has foundational knowledge of digital preservation concepts and is comfortable with tools like write-blockers, various software, and command-line interfaces.
+*   The core goal is to outline a foundational workflow for preserving the raw data from floppy disks, rather than extracting individual files.
+
+### 软盘长期保存镜像制作指南
+*   本指南为相关人员提供如何为长期数字保存目的从软盘创建磁盘镜像的说明。
+*   它专门涵盖8英寸、5.25英寸、3.5英寸和3英寸软盘，仅关注镜像制作（读取），而不涉及向磁盘写入数据。
+*   指南分为五个关键部分：识别磁盘类型、获取兼容硬件、清洁与维护、镜像制作过程，以及寻求进一步帮助和资源。
+*   它假定读者具备数字保存概念的基础知识，并能熟练使用写保护器、各种软件和命令行界面等工具。
+*   核心目标是概述从软盘保存原始数据的基础工作流程，而非提取单个文件。
+
+**[Read Original / 阅读原文](https://www.digipres.org/the-floppy-guide/)**
+
+### AI Job Search - AI驱动的求职申请框架
+* **功能介绍**: 这是一个基于 Claude Code 的 AI 求职助手框架。用户可以 Fork 该仓库，填写个人资料后，让 Claude 自动评估职位匹配度、定制简历、撰写求职信并准备面试。
+* **主要特点**: 核心工作流（个人资料设置、职位匹配评估、申请材料生成）与语言/国家无关；内置对丹麦多个招聘网站的搜索支持；提供 `/rank` 职位评分、`/expand` 技能扩展、`/upskill` 技能缺口分析等扩展命令；使用 LaTeX 生成专业排版的简历和求职信。
+* **为何值得关注**: 它极大地自动化了繁琐的求职流程，将 AI 直接应用于实际的申请工作流中，而不仅仅是信息检索。其模块化设计（如自定义模板、添加新的职位门户）使其具备高度可扩展性，为求职者提供了一个强大且可定制的 AI 辅助系统。
+
+### AI Job Search - AI驱动的求职申请框架
+* **功能介绍**: 这是一个基于 Claude Code 构建的 AI 求职助手框架。您只需 Fork 本仓库并填入个人资料，即可让 Claude 自动评估职位信息、定制简历、撰写求职信并帮您准备面试。
+* **主要特点**: 其核心工作流（个人资料建立、匹配度评估与申请材料生成）与具体语言和国家无关；内置了针对丹麦主流招聘网站（如 Jobindex、Jobnet）的搜索技能；提供职位批量评分 (`/rank`)、从公开信息扩展个人资料 (`/expand`)、技能差距分析 (`/upskill`) 等高级功能；使用 LaTeX 排版生成专业的简历与求职信。
+* **为何值得关注**: 它将 AI 深度集成到求职申请的具体环节中，实现了从职位筛选到材料准备的全流程自动化，解决了求职过程中的核心痛点。其开源、可扩展（支持自定义模板和新增招聘网站）的特性，使其成为一个强大且灵活的个人求职自动化引擎。
+
+**[View Repository / 查看仓库](https://github.com/MadsLorentzen/ai-job-search)**
+
+### Zackriya-Solutions/meetily - Privacy-first, local AI meeting assistant
+* What it does
+    * An open-source meeting assistant that runs entirely on your local machine. It captures, transcribes in real-time, and summarizes meetings using AI models (like Whisper/Parakeet and Ollama) without sending any data to the cloud.
+* Key features
+    * **100% Local Processing:** All transcription and summarization happen on your device for complete data privacy.
+    * **Fast & Accurate Transcription:** Utilizes 4x faster Parakeet/Whisper models and supports speaker diarization.
+    * **Flexible AI Summaries:** Integrates with Ollama for local summarization, with support for other providers.
+    * **Cross-Platform:** Works on macOS, Windows, and Linux, with GPU acceleration.
+* Why it's notable
+    * It is a top-trending open-source project (gaining 1,777 stars today) addressing a critical need for privacy-compliant meeting intelligence, allowing enterprises and individuals to self-host a powerful alternative to cloud-based services.
+
+### Zackriya-Solutions/meetily - 首重隐私的本地AI会议助手
+* 功能介绍
+    * 一款完全在本地设备上运行的开源会议助手。它能捕获会议、进行实时转录并利用AI模型（如Whisper/Parakeet和Ollama）生成摘要，所有处理均无需连接云端。
+* 主要特点
+    * **完全本地处理：** 所有转录和摘要生成均在您的设备上完成，确保数据绝对隐私。
+    * **快速准确的转录：** 采用4倍速的Parakeet/Whisper模型，并支持说话人识别。
+    * **灵活的AI摘要：** 集成本地Ollama进行摘要生成，也支持其他AI服务提供商。
+    * **跨平台支持：** 适用于macOS、Windows和Linux系统，并支持GPU加速。
+* 为何值得关注
+    * 该项目是当前热门的开源项目（今日获得1,777颗星），它解决了对符合隐私规范的会议智能的迫切需求，允许企业和个人自托管一个强大的替代方案，以取代基于云的服务。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### addyosmani/agent-skills - Production-grade engineering skills for AI coding agents.
+* **What it does**: Provides a collection of 24 structured, opinionated "skills" that encode senior engineering best practices, workflows, and quality gates for the entire software development lifecycle. These skills are designed to guide AI coding agents (like Claude Code, Cursor, Copilot) to produce consistent, high-quality, production-ready code.
+* **Key features**: Covers the full development lifecycle with specific slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`). Includes specialized skills like Test-Driven Development, Frontend UI Engineering, API Design, and Code Review. Offers an autonomous `/build auto` mode and integrates with over 70 AI agent platforms via a CLI or native plugins.
+* **Why it's notable**: Created by prominent engineer Addy Osmani, this repository rapidly gained over 1,300 stars in one day. It standardizes complex engineering workflows for AI agents, promoting reliability and quality in AI-assisted development. It represents a significant step in professionalizing and systematizing how AI tools are used in real-world software projects.
+
+### addyosmani/agent-skills - 面向AI编程代理的生产级工程技能库
+* **功能介绍**：提供一套包含24个结构化、体系化的“技能”包，将资深工程师的最佳实践、工作流程和质量控制点编码到软件开发的全生命周期中。旨在引导各类AI编程代理生成一致、高质量、可投产的代码。
+* **主要特点**：通过特定的斜杠命令（如 `/spec`、`/build`、`/test`）覆盖完整的开发生命周期。包含测试驱动开发、前端UI工程、API设计、代码审查等专项技能。提供自动化 `/build auto` 模式，并可通过CLI或原生插件与超过70种AI代理平台集成。
+* **为何值得关注**：由知名工程师Addy Osmani创建，该仓库在一天内迅速获得超过1,300颗星。它为AI代理标准化了复杂的工程工作流程，提升了AI辅助开发的可靠性和质量，是推动AI工具在实际软件项目中专业化、系统化应用的重要一步。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### T3MP3ST - Autonomous Red Teaming & Multi-Agent Offensive Security Framework
+*   **What it does**: It is an autonomous red teaming platform designed to transform existing AI coding agents (like Claude Code, Codex, or local models) into zero-day hunters. It orchestrates a full kill chain—reconnaissance, exploitation, and reporting—against authorized targets, either via a web-based "War Room" or CLI.
+*   **Key features**:
+    *   **Keyless & Agent-Centric**: Leverages the AI agent already running on your machine. No new API keys or cloud accounts are required; it can also run fully offline with local models.
+    *   **Verified & Reproducible**: All performance claims are derived from committed data and can be independently verified with a single command (`npm run verify-claims`), ensuring transparency.
+    *   **Multi-Domain Coverage**: Supports offensive testing across web apps, CTFs, smart contracts, source code, and embedded systems, with stable modules for recon and coordinated-disclosure pipelines.
+    *   **Scalable Arsenal**: Comes with 35 built-in security tools and can be expanded to over 80 with an optional full arsenal, including gated access to powerful post-exploitation tools.
+    *   **Scope Containment**: Features built-in egress controls to ensure testing only interacts with the authorized target scope.
+*   **Why it's notable**: It represents a significant step in democratizing advanced offensive security. By integrating with standard AI coding agents and emphasizing verifiable, keyless operation, it lowers the barrier to entry for authorized vulnerability hunting. Its high scores on public benchmarks (e.g., 90.1% on XBEN) and commitment to honest, reproducible claims make it a standout project in the AI-for-security space.
+
+### T3MP3ST - 自主红队平台与多代理攻击性安全框架
+*   **功能介绍**: 这是一个自主红队测试平台，旨在将现有的AI编码代理（如Claude Code、Codex或本地模型）转变为零日漏洞猎手。它针对授权目标，编排完整的攻击链——从侦察、利用到报告生成——可通过基于网页的“作战室”或命令行界面运行。
+*   **主要特点**:
+    *   **无密钥与代理中心**: 利用您机器上已运行的AI代理。无需新的API密钥或云账户；也支持使用本地模型完全离线运行。
+    *   **可验证与可复现**: 所有性能数据均源自提交的数据，并可通过单一命令（`npm run verify-claims`）独立验证，确保透明度。
+    *   **多领域覆盖**: 支持对Web应用、CTF、智能合约、源代码和嵌入式系统进行攻击性测试，并具备稳定的侦察模块和协调披露流程。
+    *   **可扩展的工具库**: 内置35种安全工具，通过可选的完整工具库可扩展至80余种，包括对强大后渗透工具的管控访问。
+    *   **范围控制**: 内置出口控制功能，确保测试仅与授权目标范围交互。
+*   **为何值得关注**: 该项目显著推动了高级攻击性安全的民主化。通过与标准AI编码代理集成，并强调可验证、无密钥的操作，它降低了授权漏洞挖掘的入门门槛。其在公开基准测试中的高分（如XBEN测试中90.1%的通过率）以及对诚实、可复现数据的承诺，使其成为AI安全领域的杰出项目。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### OpenScience - AI驱动的开源科研工作台
+
+*   **功能介绍**: 这是一个旨在自动化整个科学研究流程的AI工作台。用户提供一个科研目标，OpenScience即可模拟一位得力协作者的完整工作循环：阅读关键文献、形成假设、编写并运行代码、在真实计算资源上运行实验、查询主要科学数据库，并最终撰写研究报告。
+*   **主要特点**:
+    *   **全流程自动化**: 在一个连续会话中完成文献综述、假设、代码、实验、分析和报告撰写。
+    *   **多智能体架构**: 包含通用的`research`智能体，以及`biology`、`physics`、`ml`等专业子智能体，还设有批判性审核和文献综述子智能体。
+    *   **强大的工具与技能库**: 内置290多种技能，涵盖机器学习训练（如DeepSpeed、PEFT）、评估、数据集处理、分子/临床生物学、化学信息学、LaTeX论文生成、图表绘制以及云端计算（如Modal）。
+    *   **科学数据库无缝集成**: 智能体可直接查询UniProt、PDB、arXiv、OpenAlex等约30个主要科学数据库。
+    *   **完整的浏览器端工作空间**: 提供包含文件树、编辑器、终端、会话历史的浏览器UI，并支持分子、结构、基因组和图表的内联渲染。
+    *   **高度可扩展**: 支持LSP集成、MCP服务器、插件、自定义智能体与命令，并提供TypeScript SDK。
+*   **为何值得关注**:
+    *   **开源且模型无关**: 完全开源（Apache 2.0），支持Anthropic、OpenAI、Google等多家提供商的前沿或开源模型，用户使用自己的API密钥，无需账户，灵活性极高。
+    *   **面向真实科研**: 它不仅是一个演示，其设计目标是解决机器学习、生物学、物理学和化学等领域的实际研究问题，能够执行真实计算任务。
+    *   **趋势性项目**: 在GitHub上获得近1500星，表明其在利用AI推动科学研究自动化方面受到了社区的高度关注，代表了AI for Science工具链的一个重要发展方向。
+
+### OpenScience - 开源的AI科研工作台
+
+*   **功能介绍**: 这是一个用于科学研究的AI工作平台。用户为其设定一个研究目标，它便会像一位能力出众的协作者一样，完成整个研究循环：阅读相关文献、提出假设、编写并运行代码、执行实验、查询科学数据库，并最终撰写研究报告。
+*   **主要特点**:
+    *   **全流程自动化**: 在一个会话中完成从文献综述到报告撰写的完整研究闭环。
+    *   **多智能体系统**: 默认配备`research`智能体，以及`biology`、`physics`、`ml`等领域的专业智能体，并包含批判性分析和文献综述子智能体。
+    *   **丰富的技能与工具**: 内置超过290项技能，覆盖模型训练、数据处理、生物化学计算、论文排版及云计算等多个方面。
+    *   **科学数据库即工具**: 智能体可直接访问并查询UniProt、PDB、arXiv等数十个核心科学数据库。
+    *   **一体化的浏览器工作区**: 提供包含文件管理、编辑、终端和多种科学可视化渲染功能的浏览器界面。
+    *   **可扩展性设计**: 支持插件、MCP服务器、LSP集成，并提供TypeScript SDK以便定制开发。
+*   **为何值得关注**:
+    *   **开源与模型无关**: 完全开源，支持多种主流AI模型，用户使用自有API密钥，无需注册账户，保障了灵活性和隐私性。
+    *   **专为解决实际问题构建**: 专注于在机器学习、生物学、物理和化学等领域执行真实的、端到端的科研任务。
+    *   **代表AI for Science的趋势**: 作为一个备受关注的项目，它展示了利用AI自动化科研流程的巨大潜力，是当前AI辅助科学研究工具领域的一个标志性成果。
+
+**[View Repository / 查看仓库](https://github.com/synthetic-sciences/openscience)**
+
+### 🎬 How Geography Shapes Empire - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   The video features a deep conversation with historian Sarah Paine about the fundamental role of geography in the rise, function, and collapse of historical empires. It moves beyond simple narratives to explore how physical terrain, logistics, and supply lines dictate imperial strategy and longevity.
+*   **Key topics discussed:**
+    *   The critical concept of "geographical determinism" versus political and cultural agency in empire building.
+    *   In-depth analysis of case studies, including the unique challenges of the land-based Mongol Empire, the maritime British Empire, and the Roman Empire's logistical overstretch.
+    *   How modern nation-states (like China, India, and the U.S.) are still profoundly shaped by their geographical inheritance.
+    *   The often-overlooked importance of internal infrastructure (rivers, roads) over external conquest.
+*   **Why it's worth watching:** This is a masterclass in interdisciplinary history, blending geography, political science, and logistics. It offers a powerful, non-ideological framework for understanding global power structures, past and present. Sarah Paine's expertise provides compelling insights that are immediately applicable to understanding current geopolitics.
+
+### 🎬 地理如何塑造帝国 - 莎拉·佩恩
+**频道:** Dwarkesh Patel
+*   本视频是与历史学家莎拉·佩恩的一次深度对话，探讨了地理在历史帝国崛起、运作与衰亡中的核心作用。对话超越了简单的叙事，深入探究了地形、后勤和补给线如何决定帝国的战略和存续时间。
+*   **主要话题：**
+    *   关于帝国构建中“地理决定论”与政治、文化能动性关系的关键辩论。
+    *   对具体案例的深入分析，包括陆基蒙古帝国的独特挑战、海权大英帝国的运作，以及罗马帝国因后勤过度扩张而面临的困境。
+    *   现代民族国家（如中国、印度、美国）如何至今仍深刻受其地理禀赋的影响。
+    *   常被忽视的国内基础设施（河流、道路）相较于对外征服的重要性。
+*   **为何值得观看：** 这是一堂跨学科的历史大师课，融合了地理学、政治学和后勤学知识。它提供了一个强大且非意识形态化的框架，用以理解过去和现在的全球权力结构。莎拉·佩恩的专业洞见引人入胜，并且能直接应用于理解当代地缘政治。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RrHeqF5wy_E)**
+
+### 🎬 AI Agents For Beginners – OpenClaw Case Study
+**Channel:** freeCodeCamp.org
+*   This video provides a practical, beginner-friendly introduction to AI agents through a hands-on case study using the "OpenClaw" framework.
+*   Key topics include AI fundamentals, understanding what an AI agent is, and building a simple agent step-by-step to solve a real-world task.
+*   It's worth watching because it demystifies a complex topic, offers immediate coding practice, and empowers viewers to start building their own AI tools.
+
+### 🎬 面向初学者的AI智能体 – OpenClaw案例研究
+**频道:** freeCodeCamp.org
+*   本视频通过使用“OpenClaw”框架的实践案例研究，为初学者提供了一个实用且易于上手的AI智能体入门指南。
+*   主要话题涵盖AI基础知识、理解AI智能体的定义，以及通过分步构建一个简单智能体来解决实际任务。
+*   它值得观看是因为它将复杂概念简单化，提供即时的编程实践机会，并能让观众开始构建自己的AI工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AZDSpS5v57w)**
+
+### 🎬 Why problem-solving is key for developers
+**Channel:** freeCodeCamp.org
+* This video explores the foundational importance of problem-solving as a core competency, not just for coding, but for personal development. Mark emphasizes that technical skills alone are insufficient without the ability to logically dissect and address challenges.
+* Key topics discussed include the process of breaking down complex problems, the mindset required for effective debugging and development, and how honing this skill translates to becoming a more valuable and adaptable engineer.
+* It's worth watching because it shifts focus from specific technologies to a timeless, meta-skill. For developers at any stage, this perspective is crucial for career growth and tackling real-world projects that demand more than just syntax knowledge.
+
+### 🎬 为何问题解决能力对开发者至关重要
+**频道:** freeCodeCamp.org
+* 本视频深入探讨了问题解决能力作为核心素质的根本重要性——它不仅是编程技能，更是个人发展的关键。Mark 指出，仅凭技术能力是不够的，逻辑性拆解和应对挑战的能力至关重要。
+* 主要话题包括如何分解复杂问题、有效调试与开发所需的心态，以及提升这项技能如何让你成为一名更具价值和适应力的工程师。
+* 值得观看是因为它将焦点从具体技术转向了一项永恒的、元技能。对于任何阶段的开发者而言，这种视角对于职业成长和应对超越代码语法知识的真实项目需求都至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=heht1VB09fI)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+
+*   This video serves as a comprehensive guide for individuals starting their coding journey with the long-term goal of securing a job in the tech industry by 2026.
+*   Key topics likely include a roadmap for learning essential programming skills, selecting the right technologies, understanding the current job market, and effective strategies for placement preparation.
+*   It's worth watching for its practical, career-oriented advice, tailored especially for students and beginners in India, offering a clear path from foundational learning to professional readiness.
+
+### 🎬 如何开始编程并在2026年找到工作？
+**频道:** Apna College
+
+*   本视频为希望开启编程之旅并最终在科技行业找到工作的个人提供了一份全面指南，目标时间点为2026年。
+*   主要话题包括：学习核心编程技能的路线图、如何选择合适的技术方向、了解当前就业市场，以及有效的求职准备策略。
+*   值得观看的原因在于其实用的、以职业为导向的建议，尤其适合印度的学生和初学者，清晰地指明了从基础学习到具备职业能力的成长路径。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+
+*   **What the video covers:** This video introduces five high-impact, practical use cases for Claude AI (likely focusing on its coding capabilities, referred to as "Claude Code") that viewers are urged to implement immediately to avoid significant missed opportunities.
+*   **Key topics discussed:** The core of the video revolves around actionable AI applications, likely centered around coding, automation, and business growth. It positions mastering these tools as essential for building an agency and landing clients.
+*   **Why it's worth watching:** It offers a time-sensitive, practical guide to leveraging cutting-edge AI tools for tangible results. The urgent framing ("must do NOW") highlights the competitive advantage and potential financial benefits of early adoption, making it highly relevant for entrepreneurs, developers, and AI enthusiasts.
+
+### 🎬 Claude Fable 5个你必须立即执行的用例（否则一周内将损失数千美元）
+**频道:** Chase AI
+
+*   **视频内容概述:** 本视频介绍了五个关于Claude AI（可能重点在其编码能力“Claude Code”）的高效、实用用例。视频强烈建议观众立即实施这些方法，以避免错失重大的机会。
+*   **主要话题:** 视频核心围绕可执行的AI应用展开，可能集中于编码、自动化和业务增长领域。它强调掌握这些工具对于建立代理机构和获取客户至关重要。
+*   **为何值得观看:** 该视频提供了一份具有时效性的实用指南，帮助您利用前沿AI工具获得切实成果。其紧迫的框架（“必须立即执行”）凸显了早期采纳所带来的竞争优势和潜在财务收益，对企业家、开发者和AI爱好者具有极高的参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
