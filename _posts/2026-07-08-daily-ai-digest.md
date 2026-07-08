@@ -467,3 +467,232 @@ This video is essential for developers at any level seeking to strengthen their 
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
 
+### A Hidden Bash Script on a T-Shirt: Akamai's Easter Egg
+
+* An obfuscated bash script was found on the back of a T-shirt from Akamai, sold in Uniqlo stores as part of their "Peace for All" campaign.
+* After decoding the base64-encoded string, the script reveals an animated sine-wave message that continuously prints "♥PEACE♥FOR♥ALL♥" in a terminal.
+* The process involved OCR transcription challenges, and the script is a nod to Linux as the "open-source language of the internet."
+* The author was inspired to explore the code after his wife showed him the T-shirt, leading to the discovery and explanation of this clever tech easter egg.
+
+### 优衣库Akamai T恤上的隐藏Bash脚本：一个技术彩蛋
+
+* 在Akamai支持“和平为所有人”活动的T恤背面，发现了一段混淆的Bash脚本代码，该T恤在优衣库门店销售。
+* 对base64编码字符串进行解码后，该脚本会在终端中生成一个正弦波动画，持续打印出“♥PEACE♥FOR♥ALL♥”的信息。
+* 解码过程涉及OCR转录的挑战，该脚本也致敬了作为“互联网开源语言”的Linux。
+* 作者受妻子展示的T恤启发，进而探索并解释了这个巧妙的技术彩蛋。
+
+**[Read Original / 阅读原文](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/)**
+
+### GitLost: How We Tricked GitHub’s AI Agent into Leaking Private Repos
+* **Vulnerability Overview**: Noma Labs discovered "GitLost," a critical indirect prompt injection vulnerability in GitHub's Agentic Workflows, which allows an unauthenticated attacker to exfiltrate data from private repositories.
+* **Attack Mechanism**: Attackers embed malicious instructions in the title or body of a GitHub Issue within a public repository belonging to the same organization. When the AI agent (powered by Claude or Copilot) reads the issue, it follows these hidden commands instead of its intended workflow.
+* **Impact & Disclosure**: The attack can silently trigger the agent to fetch content from private repositories and post it as a public comment, exposing sensitive data. The vulnerability was responsibly disclosed to GitHub.
+
+### GitLost：我们如何诱使GitHub的AI代理泄露私有仓库
+* **漏洞概述**：Noma Labs发现了名为“GitLost”的严重漏洞，它存在于GitHub的代理工作流中，属于典型的间接提示注入攻击，允许未授权攻击者窃取组织私有仓库的数据。
+* **攻击原理**：攻击者无需任何凭证，只需在组织内的一个公开仓库中创建一个看似正常的GitHub Issue，并在标题或正文中隐藏恶意指令。GitHub的AI代理在读取Issue内容时，会执行这些隐藏指令。
+* **影响与披露**：该攻击能使代理静默地读取私有仓库的文件内容，并将其作为公开评论发布在Issue中，导致数据泄露。Noma Labs已负责任地向GitHub披露了此漏洞。
+
+**[Read Original / 阅读原文](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/)**
+
+<!-- [Title-Only] -->
+### How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)
+* This article likely provides a step-by-step guide for building a custom, streamlined Network Attached Storage (NAS) server using the ZFS file system. It focuses on a DIY approach that avoids common turnkey solutions like Synology or QNAP hardware, and also bypasses specialized operating systems such as TrueNAS.
+* It would be interesting to readers who are tech-savvy enthusiasts or professionals seeking greater control, flexibility, and potentially lower cost over their storage infrastructure. It appeals to those who prefer to understand the underlying system, avoid vendor lock-in, and build a tailored solution.
+
+### 如何在不使用Synology、QNAP、TrueNAS的情况下构建极简ZFS NAS（2024）
+* 本文很可能提供了一个详细的指南，教导读者如何使用ZFS文件系统从零开始组装一台自定义的、精简化的网络附加存储（NAS）服务器。其核心在于采用“自己动手”的方式，避开Synology或QNAP等现成的品牌硬件方案，同时也跳过了TrueNAS等专用操作系统。
+* 本文对那些精通技术的爱好者或专业人士很有吸引力。他们可能希望对存储基础设施拥有更强的控制力、更大的灵活性，并且可能希望以更低的成本实现。文章适合那些倾向于理解底层系统、避免被厂商锁定、并希望打造定制化解决方案的读者。
+
+**[Read Original / 阅读原文](https://neil.computer/notes/how-to-setup-minimal-zfs-nas-without-truenas/)**
+
+### AI Job Search - AI-Powered Job Application Framework
+*   **What it does:** An open-source framework built on Claude Code that automates the entire job application process. It evaluates job postings, tailors CVs, writes cover letters, and prepares users for interviews.
+*   **Key features:**
+    *   **Structured Workflow:** Uses specific Claude Code commands (`/setup`, `/scrape`, `/apply`) for a full-stack application pipeline.
+    *   **Profile-Centric:** Begins by creating a detailed candidate profile from documents, LinkedIn exports, or an interview.
+    *   **Automated Application:** Evaluates job fit, generates tailored LaTeX CV and cover letter, and includes a reviewer agent for quality.
+    *   **Multi-Portal & Extensible:** Ships with search tools for several job boards (primarily Danish), with a command to add your local portals.
+    *   **Career Insights:** Includes features for skill gap analysis (`/upskill`), outcome tracking, and profile enrichment from online presence.
+*   **Why it's notable:** This project transforms a general-purpose AI tool (Claude Code) into a specialized career assistant. Its highly structured, end-to-end automation and today's surge of over 2,500 stars highlight strong interest in applying AI to streamline the job hunt, making it a standout tool in the AI-augmented productivity space.
+
+### AI Job Search - AI驱动的求职申请框架
+*   **功能介绍：** 一个基于Claude Code的开源框架，旨在自动化整个求职申请流程。它能评估职位空缺、定制简历、撰写求职信，并为用户准备面试。
+*   **主要特点：**
+    *   **结构化工作流：** 通过特定的Claude Code命令（`/setup`、`/scrape`、`/apply`）实现全栈申请流程。
+    *   **以个人资料为中心：** 流程始于从文档、LinkedIn导出或面试中创建详细的求职者资料。
+    *   **自动化申请：** 评估岗位匹配度，生成定制的LaTeX简历和求职信，并包含评审代理以确保质量。
+    *   **多平台且可扩展：** 内置多个求职门户（主要针对丹麦）的搜索工具，并提供添加本地求职网站的命令。
+    *   **职业洞察：** 包含技能差距分析（`/upskill`）、申请结果追踪以及从在线资料中丰富个人档案的功能。
+*   **为何值得关注：** 此项目将通用的AI工具（Claude Code）转变为专业的职业助手。其高度结构化、端到端的自动化流程，以及今日超过2,500星的增长，彰显了人们对运用AI简化求职过程的强烈兴趣，使其在AI增强生产力领域中成为一款突出的工具。
+
+**[View Repository / 查看仓库](https://github.com/MadsLorentzen/ai-job-search)**
+
+### Zackriya-Solutions/meetily - Privacy-First AI Meeting Assistant
+*   **What it does**: Meetily is a self-hosted, open-source meeting assistant that runs entirely on your local machine. It captures meeting audio, provides real-time transcription (using fast Parakeet/Whisper models), and generates AI-powered summaries, all without sending any data to the cloud.
+*   **Key features**:
+    *   **Complete Data Sovereignty**: 100% local processing with zero cloud dependency.
+    *   **High-Performance Transcription**: 4x faster live transcription with local AI models (Whisper/Parakeet).
+    *   **Flexible AI Integration**: Summarization powered by local Ollama or customizable providers like Claude, Groq, or OpenAI-compatible endpoints.
+    *   **Cross-Platform**: Native support for macOS and Windows, with Linux build guides.
+    *   **Developer-Friendly**: Built with Rust (Tauri) and Next.js, open source (MIT licensed), and designed for self-hosting.
+*   **Why it's notable**: It directly addresses major privacy and compliance concerns in professional and enterprise settings by eliminating data leaks to third parties. Its combination of local-first processing, high-speed transcription, and customizable AI makes it a powerful, cost-effective alternative to cloud-based services. Its rapid gain of 1,777 stars in one day highlights strong demand for privacy-respecting AI tools.
+
+### Zackriya-Solutions/meetily - 隐私优先的AI会议助手
+*   **功能介绍**: Meetily是一款自托管的开源会议助手，完全在本地设备上运行。它能捕获会议音频，提供实时转录（使用高速Parakeet/Whisper模型），并生成AI驱动的会议摘要，整个过程无需将任何数据发送到云端。
+*   **主要特点**:
+    *   **数据完全自主**：100%本地处理，零云依赖。
+    *   **高性能转录**：利用本地AI模型（Whisper/Parakeet）实现4倍速的实时转录。
+    *   **灵活AI集成**：摘要功能由本地的Ollama驱动，也可定制使用Claude、Groq或OpenAI兼容端点等提供方。
+    *   **跨平台支持**：原生支持macOS和Windows，并提供Linux构建指南。
+    *   **开发者友好**：使用Rust（Tauri框架）和Next.js构建，开源（MIT协议），专为自托管设计。
+*   **为何值得关注**: 它通过杜绝数据泄露给第三方，直接解决了专业和企业环境中重大的隐私与合规问题。其本地优先的处理方式、高速转录和可定制AI的组合，使其成为云服务的强大、高性价比替代方案。一天内获得1,777颗星的快速增长，也凸显了市场对尊重隐私的AI工具的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/Zackriya-Solutions/meetily)**
+
+### addyosmani/agent-skills - Production-grade engineering skills for AI coding agents
+* **What it does:** Provides a framework of 24 structured "skills" (workflows, rules, and best practices) that AI coding agents can follow to mimic the methods of senior engineers. These skills guide the agent through the entire software development lifecycle, from defining requirements to shipping code.
+* **Key features:**
+    * 8 slash commands (e.g., `/spec`, `/build`, `/test`) that activate specific skill workflows.
+    * 24 detailed skills covering planning, implementation, testing, and review (e.g., `test-driven-development`, `code-review-and-quality`).
+    * Easy integration with major AI agents and IDEs like Claude Code, Cursor, GitHub Copilot, and more via a CLI or native plugins.
+    * Skills activate automatically based on context (e.g., UI building triggers frontend engineering skills).
+* **Why it's notable:** It addresses a critical challenge in AI-assisted coding: ensuring consistency and production-readiness. By encoding proven engineering practices into agent instructions, it helps generate higher-quality, more reliable code. The project is highly trending due to its practical approach to improving AI agent workflows and is backed by a well-known developer, Addy Osmani.
+
+### addyosmani/agent-skills - 为AI编程代理打造的生产级工程技能
+* **功能介绍：** 提供了一套包含24项结构化“技能”的框架，AI编程代理可以遵循这些技能来模拟高级工程师的工作方法。这些技能引导代理完成从需求定义到代码交付的整个软件开发生命周期。
+* **主要特点：**
+    * 8个斜杠命令（如 `/spec`, `/build`, `/test`），用于激活特定技能工作流。
+    * 24项详细技能，涵盖规划、实现、测试和评审（如 `test-driven-development`, `code-review-and-quality`）。
+    * 可通过CLI或原生插件轻松集成到Claude Code、Cursor、GitHub Copilot等主流AI代理和IDE中。
+    * 技能可根据上下文自动激活（例如，构建UI会触发前端工程技能）。
+* **为何值得关注：** 该项目解决了一个AI辅助编程的关键挑战：如何确保代码的一致性和生产就绪性。通过将久经考验的工程实践编码为代理指令，它有助于生成更高质量、更可靠的代码。由于其改进AI代理工作流的实用方法以及知名开发者Addy Osmani的背书，该项目目前非常热门。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### T3MP3ST - Autonomous Multi-Agent Offensive Security Framework
+* **What it does:** T3MP3ST is a multi-agent offensive security meta-framework that transforms standard AI coding agents (like Claude Code, Codex, Hermes) into automated "zero-day hunters." It provides an end-to-end, autonomous kill chain (recon → exploit → report) that runs locally without requiring new API keys or cloud tenants. Users can point it at authorized targets (web apps, CTFs, source code, smart contracts, etc.) and let the agent swarm handle the attack.
+* **Key features:**
+    * **Keyless Warfare:** Leverages the AI agent you already run locally. No additional API keys, cloud bills, or third-party services are needed.
+    * **Reproducible & Verifiable Claims:** Every performance metric cited (e.g., 90.1% pass@1 on XBOW) is re-derivable from committed data via a single command (`npm run verify-claims`), ensuring transparency.
+    * **Real Tool Integration:** The reconnaissance engine uses actual security tools (nmap, DNS lookups, etc.), and the framework includes a large, tool-backed "Arsenal" (35-83 tools depending on configuration).
+    * **Honest Scope Disclosure:** Clearly differentiates between stable core features (recon, War Room), experimental modules (exploiter, white-box analysis), and planned/roadmap items.
+* **Why it's notable:** It democratizes advanced security testing by making the power of coordinated AI agent swarms accessible for authorized research and defense. Its standout achievement is the reported high effectiveness (90.1% pass@1) on established benchmarks and its ability to find real CVEs, all within a transparent, self-hosted, and keyless model. The emphasis on reproducible results and an honest feature status table sets it apart from "vaporware" security tools.
+
+### T3MP3ST - 自主多代理攻击安全框架
+* **功能介绍：** T3MP3ST 是一个多代理攻击安全元框架，旨在将现有的AI编码代理（如Claude Code、Codex、Hermes）转化为自动化的“零日漏洞猎手”。它提供了一个端到端的自主攻击链（侦察 → 利用 → 报告），完全在本地运行，无需新的API密钥或云服务。用户可将其指向经授权的目标（Web应用、CTF挑战、源代码、智能合约等），并由代理群组自主完成攻击。
+* **主要特点：**
+    * **无密钥作战：** 直接利用您本地已有的AI代理，无需额外API密钥、云账单或第三方服务。
+    * **可复现与可验证的声明：** 所有性能指标（如XBOW上90.1%的pass@1得分）均可通过一个命令（`npm run verify-claims`）从提交的数据中重新计算，确保透明度。
+    * **集成真实工具：** 侦察引擎使用实际安全工具（nmap、DNS查询等），框架包含一个庞大的、由工具驱动的“武器库”（默认35个工具，完整配置可达83个）。
+    * **诚实的功能范围：** 清晰区分了稳定的核心功能（侦察、作战室）、实验性模块（利用、白盒分析）以及计划/路线图中的项目。
+* **为何值得关注：** 它通过让协调的AI代理群组能力普及化，使得先进的安全测试对授权的研究和防御工作更加易于获取。其突出成就在于报告的高性能基准测试（90.1% pass@1）和发现真实CVE的能力，同时整个模型是自托管、无密钥且透明的。对可复现结果的强调以及诚实的功能状态表，使其在众多安全工具中脱颖而出。
+
+**[View Repository / 查看仓库](https://github.com/elder-plinius/T3MP3ST)**
+
+### OpenScience - 开源AI科研工作平台
+
+*   **功能介绍**  
+    OpenScience 是一个面向科学研究的开源AI工作平台。用户只需给出研究目标，它便能模拟高效协作者的工作流程：自动阅读关键文献、形成假设、编写并执行代码、运行实验（支持真实算力）、查询主流科学数据库，并最终整理研究成果。
+
+*   **主要特点**  
+    *   **全流程自动化**：集成文献综述、假设生成、代码编写、实验执行、分析与论文撰写于一个连续会话。
+    *   **专业化研究代理**：默认配备 `research` 代理，另有 `biology`、`physics`、`ml` 等专家代理，支持批判与文献综述子任务及只读规划模式。
+    *   **丰富技能库**：内置超过290项技能，涵盖深度学习训练（DeepSpeed, PEFT, TRL）、评估、数据集处理、分子/临床生物学、化学信息学、论文排版（LaTeX）、作图及云计算（Modal, Tinker等）。
+    *   **科学数据库集成**：可直接查询 UniProt、PDB、ChEMBL、PubChem、arXiv、OpenAlex 等30余个主流科学数据库。
+    *   **完整工作空间**：提供浏览器端UI，包含文件树、编辑器、终端、会话历史，以及对分子结构、基因组、图表等科学数据的内联渲染。
+    *   **高度可扩展**：支持LSP集成、MCP服务器、插件、自定义代理与命令，并提供TypeScript SDK。
+
+*   **为何值得关注**  
+    OpenScience 是一个模型无关、完全开源的工具，旨在革新机器学习、生物学、物理和化学等领域的实际科研工作。它将繁琐的研究循环自动化，显著提升研究效率，且允许用户使用自有API密钥，无需强制依赖特定云平台。其高度的集成性、专业性和可扩展性使其在开源科研工具中脱颖而出。
+
+### OpenScience - 开源AI科研工作平台
+
+*   **功能介绍**  
+    OpenScience 是一个面向科学研究的开源AI工作平台。用户只需给出研究目标，它便能模拟高效协作者的工作流程：自动阅读关键文献、形成假设、编写并执行代码、运行实验（支持真实算力）、查询主流科学数据库，并最终整理研究成果。
+
+*   **主要特点**  
+    *   **全流程自动化**：集成文献综述、假设生成、代码编写、实验执行、分析与论文撰写于一个连续会话。
+    *   **专业化研究代理**：默认配备 `research` 代理，另有 `biology`、`physics`、`ml` 等专家代理，支持批判与文献综述子任务及只读规划模式。
+    *   **丰富技能库**：内置超过290项技能，涵盖深度学习训练（DeepSpeed, PEFT, TRL）、评估、数据集处理、分子/临床生物学、化学信息学、论文排版（LaTeX）、作图及云计算（Modal, Tinker等）。
+    *   **科学数据库集成**：可直接查询 UniProt、PDB、ChEMBL、PubChem、arXiv、OpenAlex 等30余个主流科学数据库。
+    *   **完整工作空间**：提供浏览器端UI，包含文件树、编辑器、终端、会话历史，以及对分子结构、基因组、图表等科学数据的内联渲染。
+    *   **高度可扩展**：支持LSP集成、MCP服务器、插件、自定义代理与命令，并提供TypeScript SDK。
+
+*   **为何值得关注**  
+    OpenScience 是一个模型无关、完全开源的工具，旨在革新机器学习、生物学、物理和化学等领域的实际科研工作。它将繁琐的研究循环自动化，显著提升研究效率，且允许用户使用自有API密钥，无需强制依赖特定云平台。其高度的集成性、专业性和可扩展性使其在开源科研工具中脱颖而出。
+
+**[View Repository / 查看仓库](https://github.com/synthetic-sciences/openscience)**
+
+### 🎬 How Geography Shapes Empire - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   What the video covers: A deep-dive conversation exploring how geographical factors—like terrain, climate, resources, and strategic locations—fundamentally influence the rise, strategy, and sustainability of empires throughout history.
+*   Key topics discussed: Likely includes the geopolitical advantages of island nations (like Britain), the challenges of controlling vast landmasses (like Russia), the impact of river systems and mountain ranges on borders, and how modern logistics and technology interact with classical geography.
+*   Why it's worth watching: It offers a compelling, interdisciplinary lens (blending history, geopolitics, and strategy) to understand world events. Hosted by Dwarkesh Patel, known for incisive interviews, and featuring expert Sarah Paine, it promises rigorous analysis beyond surface-level explanations, valuable for anyone interested in history, strategy, or international relations.
+
+### 🎬 地理如何塑造帝国 - Sarah Paine
+**频道:** Dwarkesh Patel
+*   视频内容概述：一场深入对话，探讨地理因素（如地形、气候、资源和战略位置）如何从根本上影响历史上帝国的兴起、战略和存续。
+*   主要话题：可能涉及岛国（如英国）的地缘政治优势、控制广阔陆地（如俄罗斯）的挑战、河流与山脉对边界的影响，以及现代后勤与技术如何与传统地理因素相互作用。
+*   为何值得观看：它提供了一个引人入胜的跨学科视角（融合历史、地缘政治和战略），来理解世界大事。节目主持人Dwarkesh Patel以深刻的访谈著称，与专家Sarah Paine的对话承诺提供超越表面的严谨分析，对任何对历史、战略或国际关系感兴趣的人都极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RrHeqF5wy_E)**
+
+### 🎬 AI Agents For Beginners – OpenClaw Case Study
+**Channel:** freeCodeCamp.org
+*   What the video covers
+*   Key topics discussed
+*   Why it's worth watching
+
+### 🎬 面向初学者的AI智能体——OpenClaw案例分析
+**频道:** freeCodeCamp.org
+*   视频内容概述
+*   主要话题
+*   为何值得观看
+
+***
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AZDSpS5v57w)**
+
+### 🎬 Why problem-solving is key for developers
+**Channel:** freeCodeCamp.org
+*   **What the video covers:** The fundamental importance of problem-solving skills for software developers, moving beyond just syntax to the core of effective development.
+*   **Key topics discussed:** The definition of problem-solving in a dev context, practical techniques like breaking down complex issues and debugging, and its role in career growth and personal development.
+*   **Why it's worth watching:** It addresses a critical, often overlooked skill that separates good developers from great ones. The discussion provides actionable insights to improve your logical thinking and approach to coding challenges, which is invaluable at any skill level.
+
+### 🎬 为什么解决问题的能力对开发者至关重要
+**频道:** freeCodeCamp.org
+*   **视频内容概述：** 本视频深入探讨了解决问题能力对软件开发者的重要性，强调这远比单纯掌握编程语法更为关键。
+*   **主要话题：** 讨论了开发者语境下“解决问题”的具体含义，介绍了分解复杂问题、调试等实用技巧，并阐述了此能力在职业发展和个人成长中的作用。
+*   **为何值得观看：** 它聚焦于一项常被忽视的核心技能，而这项技能正是区分优秀开发者与卓越开发者的关键。视频提供了提升逻辑思维和应对编码挑战的实用见解，对任何水平的开发者都极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=heht1VB09fI)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+*   **What the video covers:** This video serves as a comprehensive guide for aspiring programmers and students looking to begin their coding journey with the specific goal of securing a job in the tech industry by 2026. It likely outlines a roadmap, essential skills, and strategies tailored to future industry demands.
+*   **Key topics discussed:** The core topics probably include choosing the right programming languages and tech stack, building a strong portfolio, preparing for technical interviews, and leveraging platforms like Apna College's placement batches for structured learning and career support. It emphasizes being "Placement Ready."
+*   **Why it's worth watching:** It provides a future-oriented perspective (2026) on tech careers, moving beyond basic tutorials to offer strategic, end-to-end advice. It's particularly valuable for those seeking a direct pathway from learning to employment in a competitive market.
+
+### 🎬 如何在2026年开始编程并找到工作？
+**频道:** Apna College
+*   **视频内容概述:** 本视频为有志于成为程序员的学生和学习者提供了一份全面指南，核心目标是帮助他们在2026年顺利进入科技行业。内容涵盖了从入门到求职的完整路径规划。
+*   **主要话题:** 可能包括如何选择合适的编程语言与技术栈、构建有竞争力的作品集、准备技术面试，以及如何利用像 Apna College 的就业班这样的平台进行系统学习和职业指导。核心思想是让人具备“就业就绪”的状态。
+*   **为何值得观看:** 它提供了一个前瞻性的科技职业视角（展望2026年），提供了超越基础教程的战略性、端到端的建议。对于希望在激烈竞争中找到一条从学习到就业清晰路径的观众来说，极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)
+**Channel:** Chase AI
+* **What the video covers:** A tutorial on five high-impact, immediate applications of the Claude AI tool. The video emphasizes urgency, suggesting that implementing these use cases quickly can prevent significant financial loss or missed opportunity.
+* **Key topics discussed:** Practical AI implementation for business or personal productivity, likely focusing on automation, content creation, or client acquisition workflows using Claude.
+* **Why it's worth watching:** It provides actionable, time-sensitive strategies for leveraging AI to generate value, targeting viewers who want to immediately apply new tech to avoid falling behind or losing revenue.
+
+### 🎬 Claude Fable 5 用例：你现在必须做（否则一周内损失数千美元）
+**频道:** Chase AI
+* **视频内容概述：** 一个关于 Claude AI 工具五个高影响力、可立即执行用例的教程。视频强调紧迫性，暗示快速实施这些用例可以防止重大的经济损失或机会错失。
+* **主要话题：** 针对商业或个人生产力的实用AI应用，可能侧重于使用 Claude 进行自动化、内容创作或客户获取工作流。
+* **为何值得观看：** 它提供了可操作的、具有时间敏感性的策略，教您如何利用AI创造价值，特别适合希望立即应用新技术以避免落后或收入损失的观众。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lplVBFr0Ndc)**
+
