@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 09, 2026"
 date: 2026-07-09
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 14 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，14个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -434,4 +434,226 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   对于希望有效且合乎道德地采用 ChatGPT 或 GitHub Copilot 等 AI 工具的开发者来说，这是一部值得观看的视频。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=A4aLYwtpyes)**
+
+### John Deere Reaches Right-to-Repair Settlement with FTC
+* The Federal Trade Commission (FTC) and attorneys general from five states secured a settlement with agriculture equipment manufacturer Deere & Co. (John Deere).
+* The order requires John Deere to make its diagnostic and repair software and tools available to farmers and independent repair shops, not just its authorized dealers.
+* Deere must also cease retaliating against customers who choose independent repairs and will pay $1 million in penalties, subject to 10 years of compliance oversight.
+* This settlement is distinct from a separate $99 million class-action settlement reached with farmers earlier in 2025.
+
+### 约翰迪尔与美国联邦贸易委员会达成维修权和解
+* 美国联邦贸易委员会（FTC）与五个州的总检察长与农业设备制造商迪尔公司（John Deere）达成了一项和解协议。
+* 该命令要求约翰迪尔必须向农民和独立维修店开放其诊断和维修软件及工具，而不仅限于其授权经销商。
+* 迪尔公司还被禁止对选择独立维修的顾客进行报复，并将支付100万美元的罚款，同时在未来10年内接受严格的合规监督。
+* 此次和解不同于该公司于2025年初与农民达成的另一项价值9900万美元的集体诉讼和解。
+
+**[Read Original / 阅读原文](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02)**
+
+### I Think I Have LLM Burnout
+* The author's workflow has shifted from writing code to designing, describing to an LLM, reviewing its output, and then coding. They rely on LLMs for both work (Claude) and personal projects (Codex, Qwen).
+* A form of fatigue has set in from the repetitive nature of LLM-generated text: consistent patterns of false assumptions, hallucinations, emphatic fragments, and excessive emojis become collectively grating.
+* The author acknowledges LLMs increase productivity and value the learning process but identifies the core problem as the exhaustion of dealing with the same writing quirks and errors repeatedly.
+* They currently have no solution for this burnout and are simply enduring the frustration, hoping it doesn't worsen.
+
+### 我可能得了LLM倦怠症
+* 作者的日常工作已从编写代码转变为设计、向LLM描述设计、审查其输出，最后才是编码。他工作（使用Claude）和个人项目（使用Codex、Qwen）都高度依赖LLM。
+* 对LLM生成文本的重复模式产生了一种倦怠感：一致的虚假假设、幻觉、强调的断句碎片和过多的表情符号，这些单独看还好，但组合起来令人厌烦。
+* 作者承认LLM提升了生产力并重视学习过程，但将核心问题归结为与相同的写作风格和错误模式反复打交道所导致的精神消耗。
+* 目前他对此倦怠感没有解决方案，只能咬牙忍耐，希望情况不会恶化。
+
+**[Read Original / 阅读原文](https://www.alecscollon.com/blog/llm-burnout/)**
+
+### SWE-bench Pro Audit Findings
+*   A significant audit revealed that an estimated ~30% of tasks in the SWE-bench Pro benchmark are flawed, undermining its ability to accurately measure AI coding capabilities.
+*   The identified issues fall into four main categories: overly strict tests, underspecified prompts, low-coverage tests, and misleading prompts.
+*   OpenAI employed a multi-stage quality assurance pipeline for the audit, combining an automated flagging system with two deep-dive validation methods.
+*   The validation methods included human-supervised agent reviews and a human annotation campaign involving experienced software engineers.
+
+### SWE-bench Pro 评估基准审计发现
+*   一项重要审计估计，SWE-bench Pro 基准中约 30% 的任务存在缺陷，影响了其准确评估 AI 编程能力的有效性。
+*   发现的问题主要归为四类：过于严格的测试、提示信息不完整、测试覆盖率低以及误导性提示。
+*   OpenAI 为此次审计建立了一个多阶段的质量保证流程，结合了自动筛选系统和两种深度验证方法。
+*   验证方法包括人类监督的代理审查以及由经验丰富的软件工程师参与的人工标注活动。
+
+**[Read Original / 阅读原文](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)**
+
+### addyosmani/agent-skills - Production-Grade Engineering Skills for AI Coding Agents
+*   **What it does**: This repository provides a set of structured "skills" designed to teach AI coding agents how to follow professional, senior-level engineering workflows. These skills cover the entire software development lifecycle, from defining requirements to shipping code.
+*   **Key features**:
+    *   Encodes best practices, quality gates, and verification steps into reusable workflows.
+    *   Includes 24 distinct skills, such as `spec-driven-development`, `test-driven-development`, and `code-review-and-quality`.
+    *   Activates automatically based on context (e.g., designing an API triggers the relevant skill).
+    *   Provides 8 slash commands (`/spec`, `/plan`, `/build`, `/test`, etc.) that map to key phases of development.
+    *   Features an autonomous mode (`/build auto`) for streamlined implementation after initial approval.
+    *   Offers simple installation for 70+ AI agents (including Claude Code, Cursor, Copilot) via a CLI or native integrations.
+*   **Why it's notable**: It's a trending project (1,297 stars today) that directly addresses a core challenge in AI-assisted development: ensuring AI agents produce consistent, high-quality, and maintainable code. By codifying senior engineering judgment, it aims to make AI pair programming more reliable and effective across diverse tools and frameworks.
+
+### addyosmani/agent-skills - AI编码代理的生产级工程技能库
+*   **功能介绍**: 该仓库提供了一套结构化的“技能”，旨在教导AI编码代理遵循专业、高级别的工程工作流程。这些技能覆盖了从需求定义到代码部署的整个软件开发生命周期。
+*   **主要特点**:
+    *   将最佳实践、质量关卡和验证步骤编码为可复用的工作流。
+    *   包含24项不同的技能，如 `spec-driven-development`（规格驱动开发）、`test-driven-development`（测试驱动开发）和 `code-review-and-quality`（代码审查与质量）。
+    *   能根据上下文自动激活相关技能（例如，设计API时触发相应技能）。
+    *   提供8个斜杠命令（`/spec`、`/plan`、`/build`、`/test` 等），对应开发的关键阶段。
+    *   支持自主模式（`/build auto`），在初始批准后可简化实施流程。
+    *   通过CLI或原生集成，为70多种AI代理（包括Claude Code、Cursor、Copilot）提供简便的安装方式。
+*   **为何值得关注**: 这是一个快速发展的项目（今日获得1,297颗星），它直接应对了AI辅助开发中的一个核心挑战：确保AI代理能持续产出高质量、可维护的代码。通过将资深工程师的判断力编码化，它旨在使跨不同工具和框架的AI结对编程更加可靠和高效。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### [RuView](https://github.com/ruvnet/RuView) - 利用普通WiFi实现穿墙空间感知与生命体征监测
+* **它做什么**: RuView 是一个基于Rust的WiFi感知平台。它利用普通WiFi路由器发出的无线电信号，通过分析信号扰动（CSI）来检测人员存在、测量呼吸和心率、识别活动状态，且完全无需摄像头或可穿戴设备，可穿墙工作。
+* **关键特性**:
+    * **无视频感知**: 完全基于物理信号分析，保护隐私，可在黑暗或有遮挡的环境中工作。
+    * **全面感知能力**: 支持存在检测、呼吸/心率监测、姿态估计、跌倒检测、房间占用及睡眠分析等。
+    * **智能家居集成**: 原生支持Home Assistant、Apple Home、Google Home、Alexa及Matter协议。
+    * **边缘计算与低成本**: 运行在低功耗的ESP32硬件（节点成本可低至9美元）上，无需云服务，响应迅速。
+    * **先进模型与开源**: 使用自监督对比学习模型，核心模型在Hugging Face开源，小巧高效。
+* **为何值得注意**: RuView 将传统的无线信号转化为强大的感知能力，重新定义了智能家居和环境监测的边界。它在实现高级监测（如生命体征、跌倒检测）的同时，保障了隐私（无摄像头）、降低了部署成本（廉价硬件）、并提供了出色的边缘计算性能，展示了软件定义感知的巨大潜力。
+
+### [RuView](https://github.com/ruvnet/RuView) - 将普通WiFi变为穿墙空间智能与生命体征监测系统
+* **功能介绍**: RuView 是一个基于Rust的WiFi感知平台。它通过分析WiFi无线信号的扰动，来感知空间中的人员存在、生命体征（呼吸、心率）以及各种活动，整个过程无需摄像头或任何穿戴设备，且具备穿墙能力。
+* **主要特点**:
+    * **纯信号感知**: 完全依赖物理信号分析，保护用户隐私，适用于黑暗或视线受阻的场景。
+    * **丰富的感知功能**: 可实现存在检测、呼吸/心率测量、姿态识别、跌倒检测、房间占用状态及睡眠质量分析等。
+    * **广泛智能家居集成**: 可无缝接入Home Assistant、Apple Home、Google Home、Amazon Alexa等主流生态系统，并支持Matter协议。
+    * **边缘计算与低成本部署**: 运行在低功耗的ESP32硬件节点上（成本可低至9美元），无需云端支持，响应实时。
+    * **先进模型与开源生态**: 采用自监督对比学习技术，预训练模型在Hugging Face开源，模型轻量高效。
+* **为何值得关注**: RuView 创新性地利用无处不在的WiFi信号实现了高级环境感知。它在提供传统上需要摄像头或可穿戴设备才能实现的监测功能（如健康监测、跌倒警报）的同时，极大地保护了隐私、降低了硬件成本，并通过纯软件和边缘计算实现了高性能，代表了“无形感知”技术的一个重要发展方向。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### TencentDB Agent Memory - 全本地化AI代理长期记忆方案
+*   **功能介绍**：该项目提供了一个用于AI代理的完全本地化长期记忆系统，通过一个4层渐进式管道实现，无需任何外部API依赖。其核心是帮助AI代理学习用户工作流、保留任务上下文并复用过往经验，避免了暴力历史累积和不可逆的有损总结。
+*   **主要特点**：
+    *   **分层记忆架构**：摒弃扁平存储，采用异构存储与渐进式披露。短期上下文分为原始工具输出、步骤摘要和轻量级Mermaid状态画布；长期个性化记忆从原始对话构建语义金字塔（L0对话→L1原子事实→L2场景块→L3用户画像）。
+    *   **符号化短期记忆**：利用高密度的Mermaid语法图来编码任务状态，将冗长的工具日志卸载到外部文件，仅在上下文中保留轻量级符号图。代理可通过`node_id`快速追溯完整原始文本，大幅削减token消耗。
+    *   **显著性能提升**：与OpenClaw集成后，能将token使用量最多降低**61.38%**，相对提升任务通过率**51.52%**，并将PersonaMem准确率从48%提高到76%。
+*   **为何值得关注**：它通过创新的“分层+符号化”技术，有效解决了AI代理在长程任务中上下文累积压力大、记忆检索效率低的问题。性能数据表明其在降低计算成本的同时能显著提升任务成功率，为构建更高效、记忆持久的AI代理提供了强大的本地化解决方案。
+
+### TencentDB Agent Memory - 全本地化AI代理长期记忆方案
+*   **功能介绍**：此项目为AI代理提供了一套完全本地的长期记忆系统，通过四级渐进式管道实现，无需依赖任何外部API。其核心目标是帮助代理学习用户的工作流程、保留任务上下文并复用过往经验，从而避免了粗暴的历史信息堆积和不可逆的信息有损总结。
+*   **主要特点**：
+    *   **分层记忆架构**：拒绝扁平存储，采用异构存储与渐进式披露。短期上下文分为原始工具输出、步骤摘要和轻量级Mermaid状态画布；长期个性化记忆则构建从原始对话（L0）到原子事实（L1）、场景块（L2）再到用户画像（L3）的语义金字塔。
+    *   **符号化短期记忆**：使用高密度的Mermaid语法图来编码任务状态，将冗长的工具日志卸载到外部文件，仅在上下文中保留轻量符号图。代理可通过 `node_id` 快速追溯完整原始文本，大幅减少token消耗。
+    *   **显著的性能提升**：与OpenClaw集成后，最高可降低**61.38%**的token使用量，相对提升任务通过率**51.52%**，并将PersonaMem的准确率从48%提升至76%。
+*   **为何值得关注**：该项目通过创新的“分层+符号化”技术，有效解决了AI代理在长程任务中面临的上下文累积压力大、记忆检索效率低的问题。其基准测试数据表明，在显著降低计算成本的同时，任务成功率得到大幅提高，为构建更高效、记忆更持久的本地化AI代理提供了有力支持。
+
+**[View Repository / 查看仓库](https://github.com/TencentCloud/TencentDB-Agent-Memory)**
+
+### X4G - A Fast & Modern VLESS Gateway over WebSocket
+*   **What it does:** X4G is a modern and high-performance gateway tool for tunneling VLESS protocol traffic over WebSocket and XHTTP. It provides a beautiful management dashboard and allows for the creation of individual connection links with specific traffic quotas.
+*   **Key features:**
+    *   Core VLESS tunneling over WebSocket / XHTTP with built-in HTTP Proxy.
+    *   Full-featured management dashboard with statistics, traffic charts, and live connection monitoring.
+    *   Unlimited link creation, each with independent traffic limits (MB/GB) and real-time enable/disable toggles.
+    *   Advanced configuration per link: manual Fingerprint (uTLS), ALPN, custom connection ports (not just 443), and limits on concurrent IP/user connections.
+    *   QR code generation for easy client configuration import.
+*   **Why it's notable:** It simplifies the setup of a modern, secure tunneling gateway. The standout feature is the granular, per-link control over traffic, fingerprinting, and protocols, all managed via an intuitive web interface. Its one-click deployment process on platforms like Railway makes it highly accessible.
+
+### X4G - 高性能VLESS WebSocket隧道网关
+*   **功能介绍：** X4G 是一款现代化的高性能网关工具，用于在 WebSocket 和 XHTTP 协议上建立 VLESS 隧道。它提供了一个美观的管理仪表板，并允许创建带有独立流量配额的专属连接链接。
+*   **主要特点：**
+    *   核心功能是基于 WebSocket / XHTTP 的 VLESS 隧道，并集成 HTTP 代理。
+    *   完整的 Web 管理界面，提供流量统计、图表和实时连接监控。
+    *   支持创建无限数量的链接，每个链接可设置独立的流量限制（MB/GB）并支持实时启用/禁用。
+    *   提供高级自定义配置：可手动设置 Fingerprint（uTLS）、ALPN 协议、自定义连接端口（不限于443），并可限制每个配置的并发IP/用户数。
+    *   支持生成 QR 码，便于客户端快速导入配置。
+*   **为何值得关注：** 它极大地简化了现代安全隧道网关的部署流程。其突出优势在于通过一个直观的 Web 界面，实现了对链接级别的流量、指纹伪装和协议参数的精细化控制。配合 Railway 等平台的一键部署特性，使其非常易于上手和使用。
+
+**[View Repository / 查看仓库](https://github.com/x4gKing/X4G)**
+
+### OpenScience - AI Workbench for Scientific Research
+*   **What it does:** OpenScience is an autonomous AI research workbench that executes the entire scientific research loop. Given a goal, it can conduct literature reviews, formulate hypotheses, write and run code, perform experiments on real compute, query scientific databases, and generate a final report, all within a browser-based workspace.
+*   **Key features:**
+    *   **End-to-End Automation:** Handles literature review, hypothesis generation, coding, experimentation, analysis, and write-up in a continuous session.
+    *   **Specialist Agents:** Includes specialized agents for general research, biology, physics, and machine learning, supported by critique and review sub-agents.
+    *   **Vast Skill Library:** Over 290 skills covering ML training (DeepSpeed, PEFT), evaluation, bioinformatics, cheminformatics, LaTeX, and cloud compute.
+    *   **Scientific Database Integration:** Directly queries 30+ major databases like UniProt, PDB, ChEMBL, arXiv, and OpenAlex.
+    *   **Model Agnostic & Open Source:** Works with any frontier or open-weight model (Anthropic, OpenAI, Google, etc.) using your own API keys. Licensed under Apache 2.0.
+    *   **Full Workspace Environment:** Provides a browser UI with a file tree, code editor, terminal, and specialized renderers for molecules, genomes, and plots.
+*   **Why it's notable:** It represents a significant step towards fully autonomous scientific discovery by automating the complex, iterative research cycle. Its open-source nature, model flexibility, and deep integration with real scientific tools and databases make it a powerful and transparent platform for researchers. The project is trending as it provides a practical implementation of an AI "co-scientist."
+
+### OpenScience - 用于科学研究的AI工作台
+*   **功能介绍：** OpenScience 是一个自主的AI科学研究工作台，能够执行完整的研究循环。给定一个研究目标，它可以自动进行文献综述、提出假设、编写并运行代码、在真实计算资源上运行实验、查询科学数据库，并生成最终报告，所有操作都在基于浏览器的集成环境中完成。
+*   **主要特点：**
+    *   **端到端自动化：** 在一个连续会话中处理文献综述、假设生成、编程、实验、分析和报告撰写。
+    *   **专业智能体：** 提供通用研究、生物学、物理学和机器学习等专家智能体，并配备批判和文献综述子智能体。
+    *   **庞大的技能库：** 包含超过290项技能，涵盖机器学习训练（DeepSpeed, PEFT）、评估、生物信息学、化学信息学、LaTeX排版及云计算（如Modal）。
+    *   **科学数据库集成：** 可直接查询UniProt、PDB、ChEMBL、arXiv、OpenAlex等30多个主要科学数据库。
+    *   **模型无关与开源：** 兼容任何前沿或开放权重模型（Anthropic、OpenAI、Google等），使用用户自己的API密钥，采用Apache 2.0开源许可。
+    *   **完整的开发环境：** 在浏览器UI中提供文件树、代码编辑器、终端，以及分子、基因组和图表的专用渲染器。
+*   **为何值得关注：** 该项目通过自动化复杂迭代的研究流程，朝着完全自主的科学发现迈出了重要一步。其开源性质、模型灵活性以及与真实科学工具和数据库的深度集成，使其成为一个强大且透明的科研平台。因其作为AI“协同科学家”的实际应用而备受关注，是当前GitHub上的热门趋势项目。
+
+**[View Repository / 查看仓库](https://github.com/synthetic-sciences/openscience)**
+
+### 🎬 The Dutch-American who saw America's blind spot clearly - Sarah Paine
+**Channel:** Dwarkesh Patel
+* This video features historian Sarah Paine discussing her work on American grand strategy, its historical failures, and its "blind spots" in global conflicts.
+* Key topics include: the importance of understanding geography and logistics in warfare, critiques of U.S. foreign policy in the 20th century, and the often-overlooked role of smaller nations like the Netherlands in shaping American outcomes.
+* It's worth watching for its deep, contrarian analysis that challenges conventional narratives about American military and diplomatic power, offering a fresh perspective grounded in rigorous historical research.
+
+### 🎬 看清美国盲点的荷裔美国人——莎拉·佩因
+**频道:** Dwarkesh Patel
+* 视频深入探讨了历史学家莎拉·佩因对美国大战略的分析，揭示了其历史失败与关键“盲点”。
+* 主要话题包括：理解地理与后勤在战争中的核心作用、对20世纪美国外交政策的批判性审视，以及常被忽视的小国（如荷兰）在美国历史进程中的实际影响。
+* 本视频值得关注，因为它以严谨的历史研究为基础，提供了颠覆传统叙事、关于美国军事与外交力量的深刻而反向的见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vSBbXutmRg8)**
+
+### 🎬 Claude is definitely not conscious…
+**Channel:** Fireship
+*   **What the video covers:** The video explores the ongoing debate about AI consciousness, specifically addressing whether large language models like Claude exhibit true sentience or self-awareness. It likely analyzes the philosophical and technical arguments against AI consciousness while demonstrating the practical capabilities of such models.
+*   **Key topics discussed:** AI sentience/consciousness debate, characteristics of LLMs (like Claude), philosophy of mind in AI, and a demonstration of Traycer—a free, open-source desktop app for coordinating multiple coding agents within a single workspace.
+*   **Why it's worth watching:** Fireship delivers a concise and often humorous take on a hot-button topic in AI. This video is valuable for cutting through the hype, offering a clear perspective on AI's true nature, and introducing a practical open-source tool (Traycer) for developers looking to enhance their coding workflow with AI agents.
+
+### 🎬 Claude 绝对没有意识……
+**频道:** Fireship
+*   **视频内容概述：** 本视频探讨了关于AI意识的持续辩论，特别针对Claude等大型语言模型是否表现出真正的感知或自我意识进行分析。视频可能从哲学和技术角度阐述AI缺乏意识的论点，并同时展示此类模型的实际能力。
+*   **主要话题：** AI的感知/意识辩论、大语言模型（如Claude）的特性、AI领域中的心灵哲学，以及一款名为Traycer的免费开源桌面应用的演示，该应用可在单一工作区内协同管理多个编码AI代理。
+*   **为何值得观看：** Fireship以简洁幽默的方式解析AI领域的热点话题。该视频有助于拨开炒作迷雾，清晰理解AI的本质，同时为开发者介绍了一款实用的开源工具（Traycer），可用于提升AI辅助编程的工作流程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGtko3y2RXQ)**
+
+### 🎬 Solving the Blank Canvas Problem: Gusto's AI Co-Founder
+**Channel:** Y Combinator
+*   The video features Eddie Kim, Head of Technology and Co-Founder of Gusto, discussing how the company leverages AI to solve the "blank canvas problem" in product development.
+*   Key topics include the challenges of starting with a blank interface, using AI to generate initial designs and logic, and the shift from manual creation to AI-driven iteration and refinement.
+*   It's worth watching for a practical, insider perspective on integrating AI into core product workflows, moving beyond hype to real implementation at scale.
+
+### 🎬 解决“空白画布难题”：Gusto的AI联合创始人
+**频道:** Y Combinator
+*   视频聚焦于Gusto的首席技术官兼联合创始人Eddie Kim，分享该公司如何运用AI技术解决产品开发中“从零开始”的空白画布难题。
+*   主要话题涵盖了面对空白界面的挑战、利用AI生成初始设计方案与逻辑，以及工作流程如何从手动创建转向AI驱动的迭代与优化。
+*   该视频值得观看，因为它提供了将AI深度整合到核心产品流程中的实战经验，展示了领先企业如何超越概念炒作，实现规模化应用。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xpeRVyFFy_Q)**
+
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
+**Channel:** Apna College
+*   **What the video covers:** This video serves as a comprehensive career roadmap, specifically designed to guide individuals on how to begin their coding journey and successfully secure a tech job by the year 2026. It goes beyond basic tutorials to provide strategic, long-term planning.
+*   **Key topics discussed:** The likely topics include a structured learning path from absolute beginner to job-ready, in-demand skills and technologies for 2026, building a strong portfolio, preparing for placements (interviews, aptitude tests), and leveraging resources like Apna College's online placement batches.
+*   **Why it's worth watching:** It's highly valuable for its **future-focused approach (2026)** and practical, end-to-end guidance. Instead of just teaching a programming language, it maps out the entire process from learning to hiring, making it an essential watch for anyone serious about a career switch or entry into tech, especially in the competitive Indian job market.
+
+### 🎬 如何在2026年开始编程并找到工作？
+**频道:** Apna College
+*   **视频内容概述:** 本视频是一份全面的职业规划指南，专门指导个人如何在2026年之前开启编程学习之旅并成功获得技术职位。它超越了基础教程，提供了具有战略性的长期规划。
+*   **主要话题:** 可能涵盖的话题包括：从零基础到具备就业能力的结构化学习路径、2026年市场急需的技能与技术、如何打造一份强有力的项目作品集、如何准备校园招聘（面试、能力测试），以及如何利用像Apna College这样的在线就业指导班资源。
+*   **为何值得观看:** 本视频具有极高的观看价值，原因在于其**前瞻性的视角（聚焦2026年）**以及提供从头到尾的实用指导。它不仅仅教授一门编程语言，而是规划了从学习到被录用的完整过程。对于任何计划转行或希望进入科技行业（尤其是在竞争激烈的印度就业市场）的人来说，这都是一份必看的指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
+
+### 🎬 5 Insane Things You Can Build With Fable 5! (No Coding Required) 🤯
+**Channel:** Vaibhav Sisinty
+* What the video covers: A tutorial and showcase of five ambitious and powerful projects you can create using **Fable 5**, a no-code platform for building applications, websites, and automations. The video aims to demonstrate the platform's capabilities beyond basic use cases.
+* Key topics discussed: Introduction to Fable 5, its no-code interface, step-by-step guides for five distinct projects (e.g., custom SaaS tools, interactive websites, automated workflows), and tips for leveraging AI within the platform.
+* Why it's worth watching: It's an excellent resource for entrepreneurs, creators, and developers curious about no-code tools. It reveals how to rapidly prototype and launch complex digital products without writing code, potentially saving significant time and development costs.
+
+### 🎬 用Fable 5可以构建的5个超酷项目！（无需编码）🤯
+**频道:** Vaibhav Sisinty
+* 视频内容概述：一个关于如何使用无代码平台 **Fable 5** 来构建五个强大且创新项目的教程和展示。视频旨在打破观众对无代码工具的刻板印象，展示其构建复杂应用的潜力。
+* 主要话题：Fable 5平台介绍、其可视化操作界面、五个具体项目的创建流程（例如：定制化SaaS工具、交互式网站、自动化流程），以及如何在平台上集成AI功能。
+* 为何值得观看：对于希望快速实现创意的企业家、内容创作者和技术爱好者来说，这是一个绝佳的入门指南。它直观地展示了如何在不编写任何代码的情况下，高效地原型设计并上线复杂的数字产品，能有效节省开发时间和资金。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=W6eDisgJlSc)**
 
