@@ -1,175 +1,137 @@
----
-title: "Daily Tech Digest: July 09, 2026"
-date: 2026-07-09
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
-categories: [Daily Digest]
-tags: [HackerNews, GitHub, YouTube, HuggingFace]
-pin: false### John Deere Reaches Right-to-Repair Settlement with FTC and State Attorneys General
-* The FTC and attorneys general from five states (Arizona, Illinois, Michigan, Minnesota, Wisconsin) have secured a landmark settlement with agriculture equipment giant John Deere.
-* The agreement requires John Deere to make its full diagnostic and repair tools and software available to equipment owners and independent repair shops, ending its monopoly on repair services.
-* The company must pay $1 million to the states for enforcement costs and will be under strict compliance monitoring for the next 10 years.
-* This settlement addresses antitrust complaints that John Deere illegally restricted farmers by forcing them to use expensive authorized dealers for repairs.
-* The move follows a separate $99 million class-action settlement John Deere reached with farmers earlier in the year, but this FTC order mandates ongoing access to repair tools.
+### English Summary
+* The FTC and multiple state attorneys general secured a settlement with John Deere, requiring the company to provide farmers and independent repair shops with access to diagnostic and repair tools and software.
+* This settlement follows a previous $99 million class-action agreement and is part of a broader federal push to enforce "right-to-repair" laws, aiming to end anticompetitive practices that restrict independent maintenance.
 
-### 约翰迪尔与FTC就维修权达成和解
-* 美国联邦贸易委员会（FTC）与五个州（亚利桑那、伊利诺伊、密歇根、明尼苏达和威斯康星）的总检察长与农业设备巨头约翰迪尔达成了一项具有里程碑意义的和解协议。
-* 该协议要求约翰迪尔向设备所有者和独立维修店提供其完整的诊断、维修工具和软件，从而打破其对维修服务的垄断。
-* 该公司必须向各州支付100万美元作为执法费用，并将在未来10年内受到严格的合规监督。
-* 这项和解旨在解决针对约翰迪尔的反垄断投诉，该投诉指其非法限制农民，迫使他们只能通过昂贵的授权经销商进行维修。
-* 此次行动是在约翰迪尔今年早些时候与农民达成另一项9900万美元的集体诉讼和解之后进行的，但本次FTC的命令强制要求其持续开放维修工具。
+### 中文摘要
+* 美国联邦贸易委员会与多个州总检察长与约翰迪尔公司达成和解，要求该公司向农民和独立维修店提供诊断工具、维修软件及服务支持。
+* 此次和解继此前9900万美元的集体诉讼和解之后，是联邦政府推动“维修权”立法的关键一步，旨在终止限制独立维修的反竞争行为。
 
 **[Read Original / 阅读原文](https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02)**
 
 <!-- [Title-Only] -->
 ### Spider venom kills varroa mites without harming honeybees
-*   Based on the title, this article likely reports on a scientific discovery or research study where venom from spiders is used as a pesticide or treatment. Specifically, the venom is effective in killing *Varroa destructor* mites— a devastating parasite for honeybee colonies—while remaining non-toxic or harmless to the honeybees themselves.
-*   This might be interesting to readers because varroa mites are a leading cause of honeybee colony collapse worldwide, threatening both biodiversity and agricultural pollination. A targeted, non-harmful solution could represent a significant breakthrough in apiculture and sustainable farming, reducing reliance on conventional synthetic pesticides.
+* This article likely covers a scientific discovery where venom from a specific spider has been found to effectively eliminate the parasitic varroa mite—a major threat to honeybee colonies—while being non-toxic to the bees themselves.
+* It highlights a promising, targeted solution to a critical problem in beekeeping and agriculture, offering a potential path to saving vital pollinator populations without broad-spectrum pesticides.
 
-### 蜘蛛毒液能在不伤害蜜蜂的情况下杀死蜂螨
-*   根据标题推测，这篇文章很可能报道了一项科学研究发现，利用蜘蛛的毒液作为杀螨剂。该毒液能有效杀死对蜂群危害极大的蜂螨（大蜂螨），同时不会对蜜蜂本身造成伤害。
-*   这个话题值得关注，因为蜂螨是全球范围内导致蜂群崩溃的主要原因之一，直接威胁到生物多样性和农作物授粉。一种具有针对性且对蜜蜂安全的防治方法，可能意味着养蜂业和可持续农业的一项重大突破，有助于减少对传统化学农药的依赖。
+### 蜘蛛毒液可杀死瓦螨且不伤害蜜蜂
+* 根据标题推测，本文可能介绍了一项科学发现：某种蜘蛛的毒液能够有效杀灭危害蜂群的寄生虫——瓦螨，且对蜜蜂本身无害。
+* 这篇文章之所以值得关注，是因为它为解决全球养蜂业和农业面临的一个关键问题（瓦螨侵害）提供了一种精准、环保的新型生物防治思路，对保护授粉昆虫种群具有重要意义。
 
 **[Read Original / 阅读原文](https://connectsci.au/news/news-parent/9703/Spider-venom-kills-varroa-mites-without-harming)**
 
-### How AI Changes Software Rewrite Economics
-* AI output quality depends heavily on the codebase context, not just prompts.
-* Popular tech stacks have an AI advantage due to extensive training data.
-* Inconsistent, proprietary codebases force AI to spend tokens inferring patterns, reducing output quality.
-* Software rewrites can now strategically redesign codebases around clear patterns to maximize AI effectiveness.
+### Why Developers Are Abandoning GitHub for Alternatives
+*   Despite GitHub's immense popularity and scale, a growing number of developers and high-profile projects are leaving due to dissatisfaction.
+*   Key reasons cited include frequent technical outages, political controversies (such as GitHub's relationship with ICE), and strong concerns over the aggressive integration of AI tools like Copilot.
+*   Popular alternatives are gaining traction, including the non-profit Codeberg, other platforms like GitLab and Sourcehut, and fully self-hosted solutions using software like Gitea or Forgejo.
 
-### AI如何改变软件重写的经济学
-* AI输出质量主要取决于代码库的上下文，而不仅仅是提示词。
-* 主流技术栈因训练数据广泛而具备AI优势。
-* 不一致的专有代码库迫使AI花费标记推断模式，降低输出质量。
-* 软件重写可战略性地围绕清晰模式重建代码库，以最大化AI效能。
+### 为何开发者开始转向Codeberg和自托管替代方案
+*   尽管GitHub在规模和普及度上依然庞大，但越来越多的开发者和知名项目因不满而选择离开。
+*   主要原因包括频繁的技术服务中断、政治争议（例如GitHub与美国移民和海关执法局的关系），以及对Copilot等AI工具被强力整合的深切担忧。
+*   一系列替代方案正受到欢迎，包括非营利组织Codeberg、其他平台如GitLab和Sourcehut，以及使用Gitea或Forgejo等软件完全自托管的解决方案。
 
-**[Read Original / 阅读原文](https://thetruthasiseeitnow.com/ai-slop-starts-with-the-codebase-itself/)**
+**[Read Original / 阅读原文](https://www.howtogeek.com/why-developers-are-ditching-github-for-codeberg-and-self-hosting-alternatives/)**
 
 
 ## 🔥 GitHub Trending / GitHub 热门项目
 
-### ai-job-search - AI-Powered Job Application Assistant Framework
-*   **What it does**: This is a comprehensive, AI-driven framework that transforms Claude Code into a full-stack job application assistant. Users fork the repository, complete their profile, and then leverage AI to automatically search for jobs, evaluate fit, generate tailored CVs and cover letters, and prepare for interviews.
-*   **Key features**:
-    *   Structured workflow with commands like `/setup`, `/scrape`, `/apply`, `/rank`, and `/interview`.
-    *   Automated job portal searching and ranking (currently focused on Danish markets, but designed for easy adaptation).
-    *   AI-powered job fit evaluation and scoring.
-    *   Generation of professional, tailored CVs and cover letters using LaTeX templates.
-    *   Includes interview preparation with mock interviews and STAR-based question mapping.
-    *   Supports customizing templates and adding new job portal integrations.
-*   **Why it's notable**: It represents a highly practical application of AI (specifically Claude) to automate the tedious and complex process of job hunting. The repository is gaining massive traction quickly (5,079 stars today), indicating strong community interest in open-source tools that leverage AI for career development. Its modular design and focus on best practices make it a standout utility.
+### MadsLorentzen/ai-job-search - AI-Powered Job Application Framework Using Claude Code
+*   **What it does:** This is a comprehensive, open-source framework that turns Claude Code into an automated job application assistant. Users fork the repo, create their profile, and use simple commands to search jobs, evaluate fit, and generate tailored application materials.
+*   **Key features:**
+    *   **Structured Workflow:** Core commands (`/setup`, `/scrape`, `/apply`) guide you from profile creation to applying for a job with AI-drafted documents.
+    *   **AI-Powered Generation:** Leverages Claude to evaluate job fit scores, write tailored LaTeX CVs and cover letters, and prepare interview materials.
+    *   **Advanced Tools:** Includes commands for batch-scoring jobs (`/rank`), recording application outcomes (`/outcome`), conducting mock interviews (`/interview`), and enriching your profile (`/expand`).
+    *   **Customizable & Extensible:** Allows adding custom LaTeX templates (`/add-template`) and generating search tools for new job portals (`/add-portal`).
+*   **Why it's notable:** It represents a sophisticated application of AI (specifically Claude Code) to automate and optimize the tedious job search process. Its detailed, well-structured workflow, comprehensive command set, and focus on high-quality, tailored outputs make it a powerful tool, likely driving its significant trending popularity (5,079 stars today).
 
-### ai-job-search - AI驱动的求职申请助手框架
-*   **功能介绍**: 这是一个全面的、基于AI的框架，将Claude Code转变为全栈求职助手。用户通过Fork仓库并填写个人资料，即可利用AI自动搜索职位、评估匹配度、生成定制化的简历和求职信，并准备面试。
-*   **主要特点**:
-    *   包含 `/setup`、`/scrape`、`/apply`、`/rank`、`/interview` 等命令的结构化工作流程。
-    *   自动化搜索并排名多个求职门户（当前主要针对丹麦市场，但设计易于适配）。
-    *   AI驱动的职位匹配评估与评分。
-    *   使用LaTeX模板生成专业、定制化的简历和求职信。
-    *   包含面试准备功能，支持模拟面试和基于STAR原则的问题映射。
-    *   支持自定义模板和添加新的求职门户集成。
-*   **为何值得关注**: 该工具展示了AI（特别是Claude）在自动化复杂且繁琐的求职流程中的强大实用性。该仓库在短时间内获得巨大关注（今日5,079星），反映了社区对利用AI改善职业发展的开源工具的强烈兴趣。其模块化设计和对最佳实践的关注使其成为一个出色的实用项目。
+### MadsLorentzen/ai-job-search - 基于 Claude Code 的 AI 驱动求职框架
+*   **功能介绍：** 这是一个开源的综合框架，旨在将 Claude Code 转化为自动化的求职助手。用户可以 fork 仓库、创建个人资料，并使用简单的命令来搜索工作、评估匹配度并生成量身定制的申请材料。
+*   **主要特点：**
+    *   **结构化工作流：** 核心命令（`/setup`、`/scrape`、`/apply`）引导用户从资料创建到提交 AI 生成的申请文件。
+    *   **AI 驱动的内容生成：** 利用 Claude 来评估职位匹配度、撰写定制化的 LaTeX 简历和求职信，并准备面试材料。
+    *   **高级工具：** 包含批量评分职位（`/rank`）、记录申请结果（`/outcome`）、进行模拟面试（`/interview`）以及丰富个人资料（`/expand`）等命令。
+    *   **可定制与可扩展：** 允许添加自定义 LaTeX 模板（`/add-template`）并为新的招聘门户生成搜索工具（`/add-portal`）。
+*   **为何值得关注：** 该框架展示了如何应用 AI（特别是 Claude Code）来自动化和优化繁琐的求职流程。其详尽、结构清晰的工作流、全面的命令集以及对高质量、定制化输出的专注，使其成为一个强大的工具，这可能是其今日获得显著热度（5,079 颗星）的原因。
 
 **[View Repository / 查看仓库](https://github.com/MadsLorentzen/ai-job-search)**
 
-### Agent Skills - Production-grade engineering skills for AI coding agents.
-*   What it does: Provides a structured library of 24 skills that encode senior engineering workflows, quality gates, and best practices for AI coding agents. These skills guide agents through the entire development lifecycle, from defining requirements to shipping code.
-*   Key features:
-    *   **Complete Lifecycle Coverage:** Includes 8 core slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/webperf`, `/code-simplify`, `/ship`) and 24 total skills.
-    *   **Structured Methodologies:** Encapsulates practices like Test-Driven Development, incremental implementation, context engineering, and adversarial review.
-    *   **Broad Compatibility:** Integrates with 70+ agents (e.g., Claude Code, Cursor, Copilot, Codex) via a simple CLI or native setup guides.
-    *   **Autonomous Mode:** The `/build auto` command can generate a plan and implement tasks in a single, approved, autonomous pass.
-*   Why it's notable: It standardizes and scales expert engineering practices for AI, making AI agents more reliable and effective in complex, real-world software development. Its high star count (1,297 in one day) indicates strong community interest in tooling that improves AI coding outputs.
+### SmartlyDressedGames/U3-SDK - Official Source Code for the Unturned Game Engine & SDK
+* **What it does**: This repository contains the official source code for Unturned, a popular free-to-play, open-world zombie survival sandbox game. It serves as the development kit (SDK) for the game, built on the Unity engine.
+* **Key features**: It provides the core game scripts and architecture, enabling players and developers to understand, modify, and create mods for Unturned. The README includes a straightforward guide to setting up the development environment, requiring specific Unity and Steam installations.
+* **Why it's notable**: The massive spike in stars (541 today) indicates significant community interest and activity. Releasing the full source code is a major move that empowers the modding community, allows for greater transparency, and enables developers to learn from a popular, successful indie game's architecture.
 
-### Agent Skills - 面向AI编码代理的生产级工程技能集
-*   功能介绍：为AI编码代理提供了一套包含24个技能的结构化库，这些技能封装了资深工程师的工作流程、质量关卡和最佳实践，指导代理完成从需求定义到代码交付的全部开发阶段。
-*   主要特点：
-    *   **全生命周期覆盖**：包含8个核心斜杠命令（如`/spec`、`/plan`、`/build`等）和总计24个技能。
-    *   **结构化方法论**：集成了测试驱动开发、增量式实现、上下文工程、对抗性评审等实践方法。
-    *   **广泛兼容性**：可通过简单的CLI或原生设置指南，与70多种代理（如Claude Code、Cursor、Copilot、Codex）集成。
-    *   **自主模式**：`/build auto`命令能在一次获批的自主流程中生成计划并执行所有任务。
-*   为何值得关注：它为AI标准化和规模化了专家级工程实践，使AI代理在复杂、真实的软件开发中更加可靠和高效。其首日获得的1,297星标反映出社区对提升AI编码成果质量的工具有着强烈的需求。
+### SmartlyDressedGames/U3-SDK - 《Unturned》游戏引擎与SDK官方源代码
+* **功能介绍**: 该仓库包含了热门免费开放世界僵尸生存沙盒游戏《Unturned》的官方源代码。它作为基于Unity引擎的游戏开发套件（SDK）。
+* **主要特点**: 提供了游戏的核心脚本和架构，使玩家和开发者能够理解、修改并为《Unturned》制作模组。README中包含一个清晰的开发环境搭建指南，需要安装特定的Unity版本并依赖Steam客户端。
+* **为何值得关注**: 今日星标的大幅增长（541个）表明社区对此有极高的兴趣和活跃度。公开全部源代码是一个重要举措，它赋予了模组社区更大的权力，提升了透明度，并让开发者可以从一个受欢迎且成功的独立游戏架构中学习。
+
+**[View Repository / 查看仓库](https://github.com/SmartlyDressedGames/U3-SDK)**
+
+### addyosmani/agent-skills - Production-Grade Engineering Skills for AI Coding Agents
+* **What it does**: This repository provides a set of structured "skills" (workflows, quality gates, and best practices) designed to be used by AI coding agents (like Claude Code, Cursor, Copilot, etc.). These skills guide the AI through a professional software development lifecycle, from defining requirements to shipping to production.
+* **Key features**:
+    * **Complete Lifecycle Coverage**: Maps 8 slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`, etc.) to the phases of building software.
+    * **24 Structured Skills**: Includes detailed workflows for tasks like `spec-driven-development`, `test-driven-development`, `frontend-ui-engineering`, and `code-review-and-quality`.
+    * **Broad Compatibility**: Installable via a CLI into 70+ AI agents or through native integrations for popular tools like Claude Code, Cursor, Codex, and Copilot.
+    * **Automation & Quality Focus**: Includes a `/build auto` mode for autonomous implementation of approved plans and emphasizes principles like "spec before code," "tests are proof," and "measure before you optimize."
+* **Why it's notable**: It systematizes and packages the "tribal knowledge" of senior software engineers into a format that AI agents can follow consistently. This trending project aims to elevate AI-generated code from "functional" to "production-grade" by embedding best practices directly into the agent's workflow. Its rapid growth (1,297 stars today) signals strong interest in improving AI coding reliability and sophistication.
+
+### addyosmani/agent-skills - 面向AI编程代理的生产级工程技能集
+* **功能介绍**: 此仓库为AI编程代理（如Claude Code、Cursor、Copilot等）提供了一套结构化的“技能”（工作流、质量关卡和最佳实践）。它指导AI遵循专业的软件开发生命周期，从需求定义到最终部署。
+* **主要特点**:
+    * **完整生命周期覆盖**：通过8个斜杠命令（`/spec`、`/plan`、`/build`、`/test`、`/review`、`/ship`等）对应软件开发的各个阶段。
+    * **24个结构化技能模块**：包含如 `spec-driven-development`、`test-driven-development`、`frontend-ui-engineering` 和 `code-review-and-quality` 等详细工作流。
+    * **广泛兼容性**：可通过CLI安装到70多种AI代理中，或为Claude Code、Cursor、Codex、Copilot等主流工具提供原生集成。
+    * **自动化与质量导向**：提供 `/build auto` 模式以实现经批准计划的自主实施，并强调“规格先行”、“测试即证明”、“先度量后优化”等原则。
+*   **为何值得关注**: 它将资深软件工程师的“隐性知识”系统化并打包，使AI代理能够始终如一地遵循。这个迅速增长的项目旨在将AI生成的代码从“可用”提升至“生产级”，其核心在于将最佳实践直接嵌入代理的工作流程中。其快速增长（今日1,297星）反映了社区对提升AI编码可靠性和专业性的强烈需求。
 
 **[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
-
-### RuView - Turning WiFi into a Spatial Intelligence Platform
-* **What it does**: RuView is an open-source Rust-based platform that transforms standard WiFi router signals into real-time spatial intelligence. It can detect human presence, track movement, and monitor vital signs like breathing and heart rate through walls and without cameras.
-* **Key features**:
-    * **Contactless Sensing**: Uses WiFi Channel State Information (CSI) for presence detection, activity recognition, fall detection, and sleep analysis.
-    * **Vital Sign Monitoring**: Measures breathing rate (6-30 BPM) and heart rate (40-120 BPM) in real-time using radio wave disturbances.
-    * **Low-Cost Hardware**: Runs on affordable ESP32 microcontrollers (nodes as low as $9) in a mesh network, with optional edge AI via the Cognitum Seed.
-    * **Smart Home Integration**: Natively works with Home Assistant, Apple Home, Google Home, and Alexa via Matter bridges and MQTT.
-    * **Privacy-First**: Entirely camera-free and processed locally on the edge, requiring no internet or cloud services for core functionality.
-    * **Pre-trained Models**: Offers an 8KB quantized encoder for 128-dim CSI embeddings and 17-keypoint pose estimation models, available on Hugging Face.
-* **Why it's notable**: This is a cutting-edge application of wireless signals for non-invasive sensing. Its combination of affordability, strong privacy (no cameras), native smart home integration, and powerful edge-AI capabilities makes it a highly innovative project for home automation, healthcare, and security. The rapid gain in stars (799 today) highlights strong community interest in its unique approach to ambient intelligence.
-
-### RuView - 将WiFi变为空间智能感知平台
-* **功能介绍**：RuView是一个开源的Rust项目，能够将普通路由器的WiFi信号转化为实时空间感知数据。它无需摄像机，即可穿透墙壁检测人体存在、追踪活动并监测呼吸、心率等生命体征。
-* **主要特点**：
-    * **无感感知**：利用WiFi信道状态信息（CSI）实现存在检测、活动识别、跌倒检测和睡眠分析。
-    * **生命体征监测**：通过分析无线电波扰动，实时测量呼吸频率（6-30次/分）和心率（40-120次/分）。
-    * **低成本硬件**：运行在低成本的ESP32微控制器（节点低至9美元）组成的网络中，可通过Cognitum Seed进行边缘AI扩展。
-    * **智能家居集成**：通过Matter桥接器和MQTT，原生支持Home Assistant、Apple Home、Google Home和Alexa等主流生态系统。
-    * **隐私优先**：完全无摄像头，所有处理均在本地边缘设备进行，核心功能无需互联网或云服务。
-    * **预训练模型**：在Hugging Face上提供8KB的量化编码器模型，用于128维CSI嵌入，以及17关键点的姿态估计模型。
-* **为何值得关注**：这是将无线信号应用于非侵入式感知的前沿项目。其低成本、强隐私保护（无摄像头）、原生的智能家居集成以及强大的边缘AI能力相结合，使其成为智能家居、健康监护和安防领域的极具创新性的解决方案。该项目今日获得799颗星的快速增长，凸显了社区对其独特环境智能方案的高度兴趣。
-
-**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
 
 
 ## 🚀 Fast-Moving Repos / 快速崛起项目
 
-### X4G - Modern VLESS Gateway with Management Dashboard
-* What it does
-  X4G is a fast and modern gateway for creating VLESS tunnels over WebSocket and HTTP Proxy. It provides a web-based management dashboard to configure, monitor, and control access to the tunnel service.
-* Key features
-  - Supports VLESS protocol over WebSocket (XHTTP).
-  - Includes a full-featured management dashboard with statistics, traffic graphs, and live connection monitoring.
-  - Allows creation of unlimited user links with individual traffic quotas (MB/GB).
-  - Per-link real-time enable/disable control.
-  - QR code generation for each access link.
-  - Manual configuration of fingerprint (uTLS), ALPN, and connection ports for each config.
-  - Option to set a simultaneous IP/user limit per config.
-* Why it's notable
-  It simplifies the deployment and management of VLESS proxy tunnels with a user-friendly dashboard, making it a popular choice for users seeking an all-in-one solution with granular control over traffic and access.
+### X4G - A Modern VLESS Gateway with Management Dashboard
+* **What it does**: X4G is a gateway for tunneling VLESS connections over WebSocket or XHTTP, designed for easy deployment (e.g., on Railway). It features a built-in HTTP proxy and a web-based management dashboard for creating and controlling user links.
+* **Key features**:
+    * VLESS over WebSocket/XHTTP tunneling.
+    * Comprehensive management dashboard with traffic charts and live connection stats.
+    * Link management with per-link data (traffic) limits, enable/disable toggles, and QR code generation.
+    * Advanced manual configuration per config: custom fingerprint (uTLS), ALPN, and connection port.
+    * Limit on simultaneous IP/user connections per config.
+* **Why it's notable**: It combines a powerful VLESS gateway with a user-friendly dashboard for administration, making the setup and management of proxied connections accessible. The ability to generate individual links with traffic quotas is particularly useful for sharing controlled access.
 
-### X4G - 带有管理面板的现代 VLESS 隧道网关
-* 功能介绍
-  X4G 是一个快速、现代的网关工具，用于通过 WebSocket 和 HTTP 代理创建 VLESS 隧道。它提供了一个基于 Web 的管理面板，用于配置、监控和控制隧道服务的访问。
-* 主要特点
-  - 支持通过 WebSocket（XHTTP）的 VLESS 协议。
-  - 包含功能齐全的管理面板，提供统计数据、流量图表和实时连接监控。
-  - 可创建无限数量的用户链接，并为每个链接设置独立的流量配额（MB/GB）。
-  - 支持实时启用/禁用每个链接。
-  - 为每个链接生成二维码。
-  - 可手动配置每个配置的指纹（uTLS）、ALPN 和连接端口。
-  - 可设置每个配置的并发 IP/用户限制。
-* 为何值得关注
-  它通过一个用户友好的管理面板，简化了 VLESS 代理隧道的部署和管理。对于寻求一个集细粒度流量与访问控制于一体的综合解决方案的用户来说，这是一个热门选择。
+### X4G - 一个带管理仪表板的现代 VLESS 网关
+* **功能介绍**: X4G 是一个网关工具，用于在 WebSocket 或 XHTTP 协议上建立 VLESS 隧道连接。它设计为可轻松部署（例如在 Railway 平台上），内置 HTTP 代理，并提供一个基于网页的管理仪表板，用于创建和控制用户访问链接。
+* **主要特点**:
+    * 支持 VLESS over WebSocket/XHTTP 隧道。
+    * 功能齐全的管理仪表板，包含流量统计图表和实时连接状态。
+    * 链接管理功能，支持为每个链接设置独立的流量限制（MB/GB）、实时启用/禁用，并生成二维码。
+    * 强大的配置手动定制选项：可单独为每个配置设置浏览器指纹（uTLS）、ALPN 协议和连接端口。
+    * 可设置每个配置的并发 IP/用户连接数限制。
+*   **为何值得关注**: 它将功能强大的 VLESS 网关与直观的 Web 管理界面相结合，极大简化了代理隧道的部署和管理流程。尤其是能够生成带有独立流量配额的访问链接这一功能，在需要精细控制分享访问权限的场景下非常实用。
 
 **[View Repository / 查看仓库](https://github.com/x4gKing/X4G)**
 
 ### OpenScience - An Open-Source AI Workbench for Scientific Research
-* **What it does**: This is a browser-based AI workspace designed to automate the entire scientific research process. Given a goal, it can autonomously read relevant literature, form hypotheses, write and execute code, run experiments on real compute, query major scientific databases, and generate a final report.
-* **Key features**:
-    * **End-to-End Research Loop**: Automates literature review, hypothesis generation, coding, experimentation, analysis, and writing.
-    * **Specialized Research Agents**: Includes a core `research` agent along with specialists for biology, physics, and machine learning.
-    * **Extensive Toolset**: Over 290 skills for training (DeepSpeed, PEFT), molecular biology, cheminformatics, cloud compute, and more.
-    * **Integrated Scientific Databases**: Direct agent access to ~30 databases like UniProt, PDB, PubChem, and arXiv.
-    * **Browser Workspace**: A full IDE-like environment with a file tree, editor, terminal, and specialized renderers for scientific data (molecules, plots, genomes).
-    * **Model-Agnostic & Extensible**: Works with various frontier/open models via user-provided API keys. Features a TypeScript SDK, plugin system, and MCP server support.
-* **Why it's notable**: It represents a significant step towards automating complex scientific workflows with AI. Its open-source nature, model flexibility, and focus on real-world utility across multiple scientific disciplines (ML, biology, physics) make it a powerful and accessible tool for researchers, driving its growing popularity.
+*   **What it does:** OpenScience is a complete AI-powered research environment. You provide a scientific goal, and it autonomously manages the entire research workflow: reviewing literature, forming hypotheses, writing and running code, conducting experiments, querying scientific databases, and writing up the final report.
+*   **Key features:**
+    *   **End-to-end research loop:** Automates literature review, hypothesis generation, coding, experimentation, analysis, and report writing in a single session.
+    *   **Specialized agents:** Includes a general `research` agent and specialists for biology, physics, and machine learning, complete with sub-agents for critique and literature review.
+    *   **290+ skills:** Supports a wide range of scientific tasks, from machine learning (DeepSpeed, PEFT) to biology, cheminformatics, LaTeX document generation, and cloud compute orchestration.
+    *   **Direct scientific database access:** Integrates as tools with over 30 databases like UniProt, PDB, arXiv, OpenAlex, and ChEMBL.
+    *   **Browser-based workspace:** Features a full UI with a file tree, code editor, terminal, and inline visualization for molecules, plots, and genomes.
+    *   **Model-agnostic & extensible:** Works with any frontier or open-weight model from Anthropic, OpenAI, Google, etc., using your own API keys. Highly extensible via an SDK, plugins, and custom agents.
+*   **Why it's notable:** It represents a significant step towards fully automated, AI-driven scientific discovery. Being open-source and model-agnostic, it democratizes access to a powerful, all-in-one tool for researchers in ML, biology, physics, and chemistry, streamlining complex workflows from idea to publication-ready output. Its high star count (1854+) indicates strong community interest and validation.
 
-### OpenScience - 面向科学研究的开源AI工作台
-* **功能介绍**：这是一个基于浏览器的AI工作空间，旨在自动化整个科学研究流程。用户只需给出目标，它就能自主阅读相关文献、提出假设、编写并运行代码、执行真实计算实验、查询主要科学数据库，并最终生成报告。
-* **主要特点**：
-    * **端到端研究循环**：自动化文献综述、假设生成、编码、实验、分析和写作。
-    * **专业研究代理**：包含一个核心 `research` 代理，以及生物、物理和机器学习的专家代理。
-    * **丰富的工具集**：提供超过290项技能，涵盖训练（DeepSpeed, PEFT）、分子生物学、化学信息学、云计算等。
-    * **集成科学数据库**：支持直接从代理查询约30个数据库，如UniProt、PDB、PubChem和arXiv。
-    * **浏览器工作区**：提供类似IDE的完整环境，包含文件树、编辑器、终端以及用于科学数据（分子、图表、基因组）的专用渲染器。
-    * **模型无关与可扩展**：通过用户提供的API密钥，支持多种前沿/开源模型。具备TypeScript SDK、插件系统和MCP服务器支持。
-*   **为何值得关注**：它代表了利用AI自动化复杂科学研究流程的重大进展。其开源特性、模型灵活性以及面向多个科学学科（机器学习、生物学、物理学）的实用化设计，使其成为研究者强大且易用的工具，这也推动了其日益增长的受欢迎程度。
+### OpenScience - 开源的科学研究AI工作台
+*   **功能介绍：** OpenScience 是一个由 AI 驱动的完整科研环境。您提供一个科学目标，它就能自主管理整个研究流程：文献综述、提出假设、编写和运行代码、进行实验、查询科学数据库，并撰写最终报告。
+*   **主要特点：**
+    *   **端到端的研究循环：** 在单个会话中自动化文献综述、假设生成、编码、实验、分析和报告撰写。
+    *   **专业化智能体：** 包含通用的 `research` 智能体以及生物学、物理学和机器学习专家，还配有用于评审和文献综述的子智能体。
+    *   **290+ 种技能：** 支持广泛的研究任务，从机器学习（DeepSpeed, PEFT）到生物学、化学信息学、LaTeX文档生成以及云计算调度。
+    *   **直接访问科学数据库：** 作为工具集成了30多个数据库，如UniProt、PDB、arXiv、OpenAlex和ChEMBL。
+    *   **基于浏览器的工作区：** 提供完整的用户界面，包含文件树、代码编辑器、终端，以及用于分子、图表和基因组的内联可视化。
+    *   **模型无关且可扩展：** 可使用来自Anthropic、OpenAI、Google等任何前沿或开放权重模型，使用您自己的API密钥。通过SDK、插件和自定义智能体高度可扩展。
+*   **为何值得关注：** 它代表了实现完全自动化、AI驱动科学发现的重要一步。作为开源且模型无关的工具，它为机器学习、生物学、物理学和化学领域的研究者普及了强大的一体化研究平台，将从想法到可发表成果的复杂工作流大大简化。其高星标数（1854+）表明了社区的强烈兴趣和认可。
 
 **[View Repository / 查看仓库](https://github.com/synthetic-sciences/openscience)**
 
@@ -178,71 +140,83 @@ pin: false### John Deere Reaches Right-to-Repair Settlement with FTC and State A
 
 ### 🎬 The Dutch-American who saw America's blind spot clearly - Sarah Paine
 **Channel:** Dwarkesh Patel
-* This video features a deep-dive interview with historian Sarah Paine, exploring her unique perspective as a Dutch-American scholar on the evolution and blind spots of American grand strategy and foreign policy.
-* Key topics include the historical development of U.S. military and political power, comparative studies of other great powers (like China and historical empires), and a critical analysis of the assumptions underlying American global leadership.
-* Worth watching for Paine's distinctive comparative lens, which offers counterintuitive insights into current geopolitical challenges and the long-term structural factors that shape international conflicts, moving beyond standard Western-centric narratives.
+*   This video features an interview or discussion with historian Sarah Paine, focusing on her unique perspective as a Dutch-American scholar.
+*   The key topic is an analysis of America's strategic and historical "blind spot," likely examining a geopolitical or policy area where the US consistently fails to see reality clearly.
+*   It's worth watching for a deep, potentially contrarian historical insight into US foreign policy and strategic thinking, delivered through the lens of an outsider-insider (Dutch-American) and hosted by a channel known for rigorous intellectual conversations.
 
-### 🎬 《那个看清美国盲点的荷兰裔美国人——莎拉·佩恩》
+### 🎬 道明美国致命盲点的荷裔美国学者——莎拉·佩因
 **频道:** Dwarkesh Patel
-* 本视频是对历史学家莎拉·佩恩（Sarah Paine）的深度访谈，探讨她作为荷兰裔美国学者，对美国大战略和外交政策演变及其盲点的独特见解。
-* 主要话题涵盖美国军事与政治力量的历史发展、与其他大国（如中国及历史帝国）的比较研究，以及对美国全球领导地位背后假设的批判性分析。
-* 值得观看，因为佩恩提供了独特的比较视角，对当前的地缘政治挑战和塑造国际冲突的长期结构性因素提出了超越传统西方中心叙事的反直觉见解。
+*   本视频是对历史学家莎拉·佩因（Sarah Paine）的访谈或对谈，重点探讨她作为荷裔美国学者的独特视角。
+*   主要话题围绕美国在战略与历史上的“盲点”进行分析，很可能涉及美国在某个地缘政治或政策领域长期存在的认知偏差。
+*   值得观看是因为它提供了一个深刻且可能具有颠覆性的历史视角，剖析了美国外交政策与战略思维。由荷兰裔美国人带来的“局内人-局外人”观察，加上Dwarkesh Patel频道以深度知识对话著称，保证了内容的思想性。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vSBbXutmRg8)**
 
 ### 🎬 Claude is definitely not conscious…
 **Channel:** Fireship
-* This video critically examines the philosophical and practical implications of AI consciousness, specifically regarding Anthropic's Claude model. It argues against the notion that current large language models possess genuine sentience or subjective experience.
-* Key topics include the definitions of consciousness, the "Chinese Room" argument, the role of training data and algorithms in mimicking understanding, and the hype versus reality of AI development.
-* It's worth watching for its sharp, concise analysis of a highly debated topic in AI, providing a clear and entertaining perspective on the limitations of today's most advanced AI models and cautioning against anthropomorphism.
+* This video explores the question of AI consciousness, specifically examining whether Claude exhibits true sentience or self-awareness. It provides a technical and philosophical perspective on current AI limitations.
+* Key topics include the distinction between advanced language modeling and genuine consciousness, the behavior of AI under specific prompts, and the implications for AI development.
+* It's worth watching for a clear, insightful debunking of common misconceptions about AI, presented with Fireship's signature fast-paced and accessible style.
 
-### 🎬 Claude 肯定没有意识…
+### 🎬 Claude绝不是有意识的…
 **频道:** Fireship
-* 本视频深入探讨了 AI 意识的哲学与现实影响，特别针对 Anthropic 的 Claude 模型。视频明确反对当前大语言模型拥有真正感知或主观体验的观点。
-* 主要话题包括意识的定义、“中文房间”论证、训练数据和算法在模拟理解中的作用，以及 AI 发展中炒作与现实的对比。
-* 值得观看的原因在于它对 AI 领域最热门的辩论之一提供了清晰、犀利且趣味盎然的分析，帮助观众理解当今最先进 AI 模型的局限性，并警惕过度拟人化的倾向。
+* 视频探讨了AI意识的问题，具体分析了Claude是否展现出真正的感知或自我意识。它从技术和哲学角度阐述了当前AI的局限性。
+* 主要话题包括高级语言建模与真实意识之间的区别、AI在特定提示下的行为表现，以及对AI发展的影响。
+* 值得观看的原因是视频以Fireship标志性的快速、易懂的方式，清晰、深刻地破除了关于AI的常见误解。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=KGtko3y2RXQ)**
 
 ### 🎬 Solving the Blank Canvas Problem: Gusto's AI Co-Founder
 **Channel:** Y Combinator
-* This video features a talk by Eddie Kim, the co-founder and Head of Technology at Gusto (YC W12), a major payroll and HR platform serving over 500,000 small businesses.
-* Key topics include: the unique "blank canvas problem" faced by AI in complex, open-ended business software; strategies for integrating AI to augment human workflows rather than just automate tasks; and lessons from scaling a technology organization and AI initiatives at Gusto.
-* It's worth watching for a deep, practical perspective from a seasoned technical founder on how to build and integrate AI effectively in a large-scale SaaS product, moving beyond generic applications to solve core business challenges.
+*   The video features Eddie Kim, co-founder and Head of Technology at Gusto, discussing how he leverages AI as a strategic tool for product development and company scaling.
+*   It explores the "blank canvas problem" – the challenge of deciding what to build from scratch – and how AI can be used to generate insights, prototype ideas, and guide technical strategy.
+*   The conversation delves into the practical application of AI within an established tech company, offering lessons on innovation, engineering leadership, and maintaining a startup mindset.
+*   **Why it's worth watching:** This provides a rare, insider look from a successful founder and CTO on using AI not just as a feature, but as a core driver for solving fundamental business and product development challenges at scale.
 
-### 🎬 解决“空白画布问题”：Gusto的AI联合创始人
+### 🎬 解决“空白画布”难题：Gusto的AI联合创始人
 **频道:** Y Combinator
-* 本视频是Gusto（YC W12）联合创始人兼技术主管Eddie Kim的演讲。Gusto是一个服务于超过50万小型企业的薪资和人力资源平台。
-* 主要讨论的话题包括：AI在复杂、开放式企业软件中面临的独特“空白画布问题”；如何将AI整合到工作流中以增强（而不仅是自动化）人类工作；以及在Gusto扩展技术组织和AI项目的经验教训。
-* 为何值得观看：对于希望在大型SaaS产品中有效构建和集成AI的技术创始人来说，本视频提供了来自资深创始人的深入、实用的见解，展示了如何超越通用应用，以解决核心业务挑战。
+*   视频采访了薪资和HR平台Gusto的联合创始人兼技术主管Eddie Kim，探讨他如何将AI作为产品开发和公司规模扩张的战略工具。
+*   内容深入分析了“空白画布问题”——即从零开始决定构建什么的挑战——以及如何利用AI来生成洞察、制作原型和指导技术战略。
+*   对话深入探讨了在成熟科技公司中实际应用AI的案例，分享了关于创新、工程领导力以及保持创业思维的宝贵经验。
+*   **为何值得观看：** 本视频提供了一位成功创始人和CTO的独家视角，展示了如何不仅将AI视为一项功能，而是将其作为解决规模化过程中核心业务和产品开发挑战的根本驱动力。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=xpeRVyFFy_Q)**
 
-### 🎬 How to Start Coding & Get a Job (in 2026)?
+### 🎬 How to Start Coding & Get a Job (in 2026) ?
 **Channel:** Apna College
-*   The video serves as a forward-looking guide for aspiring programmers, outlining a clear path from beginner to employable in the tech job market by 2026.
-*   It likely covers essential tech stacks, learning resources (potentially from the creator's own platform), project-building strategies, and resume/interview tips tailored for future hiring trends.
-*   It's worth watching for a structured, actionable roadmap from an educational channel focused on placements, especially for those seeking a step-by-step plan for their career launch.
+*   What the video covers
+    This video is a comprehensive guide for beginners, outlining a clear roadmap to learn programming from scratch and secure a job in the tech industry by the year 2026.
+*   Key topics discussed
+    *   **Starting Point:** Choosing the first programming language (likely Python or Java) and foundational concepts.
+    *   **Learning Path:** Structured steps from basics (DSA, problem-solving) to advanced topics and project development.
+    *   **Job Preparation:** Essential skills for 2026, resume building, and strategies for technical interviews and placements.
+*   Why it's worth watching
+    It provides a structured, step-by-step plan tailored to future job market trends, making it a valuable resource for beginners aiming for a tech career in the coming years.
 
-### 🎬 如何开始编程并找到工作（展望2026）？
+### 🎬 如何开始编程并找到工作（到2026年）？
 **频道:** Apna College
-*   本视频为编程初学者提供了一份前瞻性指南，规划了从零基础到2026年具备就业能力的清晰路径。
-*   主要话题可能涵盖：必学的技术栈、学习资源推荐（可能包括其自有课程）、项目实践策略，以及针对未来招聘趋势的简历撰写与面试技巧。
-*   为何值得观看：这是一个专注于就业指导的教育频道，为计划进入科技行业的人士提供了具体、可操作的进阶蓝图，帮助明确学习目标与步骤。
+*   视频内容概述
+    本视频是一份面向初学者的综合指南，详细阐述了从零开始学习编程，并在2026年前在科技行业找到工作的清晰路线图。
+*   主要话题
+    *   **入门选择：** 选择第一门编程语言（可能是Python或Java）及基础概念。
+    *   **学习路径：** 从基础（数据结构与算法、问题解决）到高级主题和项目开发的结构化步骤。
+    *   **求职准备：** 2026年必备技能、简历构建策略以及技术面试与招聘的技巧。
+*   为何值得观看
+    它提供了一个结构化的、分步骤的计划，并契合未来的就业市场趋势，对于有志于在未来几年进入科技行业的初学者来说，是一份宝贵的学习资源。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=eer89oaT12I)**
 
 ### 🎬 Your Button Is Lying to Your Microcontroller...
 **Channel:** C Labs
-*   The video explains the common and frustrating problem of "switch bounce," where a single physical press of a mechanical button is registered by a microcontroller as multiple, erratic signals.
-*   It delves into the physical cause—imperfect electrical contact within the button—and provides practical solutions, such as software debouncing algorithms and simple hardware filtering circuits, to reliably detect a single press.
-*   It's worth watching because it tackles a fundamental issue in physical computing and embedded systems, offering clear explanations and actionable fixes that are essential for building reliable projects.
+*   **What the video covers:** This video explains the phenomenon of "button bounce" – why a single mechanical press can send multiple erratic signals to a microcontroller – and demonstrates practical software debouncing techniques to solve it.
+*   **Key topics discussed:** Mechanical switch construction, signal contact bounce, the concept of debouncing, and implementation of software-based debounce filters (like simple delay methods) in code.
+*   **Why it's worth watching:** It provides a clear, fundamental electronics lesson with a practical programming solution. Essential knowledge for anyone building projects with buttons, from beginners to experienced makers, to ensure reliable input detection.
 
-### 🎬 你的按钮正在欺骗你的微控制器...
+### 🎬 你的按键正在向微控制器“撒谎”...
 **频道:** C Labs
-*   视频解释了“开关抖动”这一常见且令人头疼的问题，即机械按钮的一次物理按压，可能会被微控制器识别为多次、不稳定的信号。
-*   它深入探讨了其物理原因——按钮内部不完美的电接触，并提供了解决此问题的实用方案，例如软件消抖算法和简单的硬件滤波电路，以实现可靠的一次按键检测。
-*   这个视频值得一看，因为它解决了物理计算和嵌入式系统中的一个基础问题，提供了清晰的解释和可操作的修复方法，对于构建可靠的项目至关重要。
+*   **视频内容概述：** 本视频解释了“按键抖动”现象——为什么单个机械按键的按下有时会给微控制器发送多次错误信号，并演示了实用的软件消抖技术来解决此问题。
+*   **主要话题：** 机械开关的内部结构、信号触点抖动、消抖的概念，以及在代码中实现软件消抖滤波器（如简单的延时方法）。
+*   **为何值得观看：** 它提供了清晰的电子基础知识课程，并附带了实用的编程解决方案。无论是初学者还是经验丰富的创客，凡是使用按键进行项目构建的人，都必须掌握这一核心知识，以确保输入信号的可靠检测。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=3b1QXhSeJKw)**
 
