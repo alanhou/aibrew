@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 10, 2026"
 date: 2026-07-10
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -255,4 +255,178 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看:** 随着 AI 成为标准工具，本视频提供了有效利用它的可操作策略。对于希望提升技能并提高工作效率的开发者来说，这是必看内容。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=A4aLYwtpyes)**
+
+### colibrì: Running 744B-Parameter MoE Model on Consumer Hardware
+
+*   **Core Idea:** Implements GLM-5.2, a 744B Mixture-of-Experts model, on machines with ~25 GB RAM by streaming only the activated expert parameters (~40B) from disk, while keeping the dense part (~9.9 GB at int4) resident.
+*   **Architecture & Implementation:** A single C file (~1,300 lines) with zero runtime dependencies. Features include faithful GLM-5.2 forward pass, MLA attention with compressed KV-cache, DeepSeek-V3-style routing, native MTP speculative decoding (int8 head), integer-dot kernels, and async expert readahead.
+*   **Performance:** In tests on humble hardware (12 cores, 25 GB RAM, NVMe via WSL2), it achieves ~0.05-0.1 tok/s cold, improving with warm caches. Predicted performance scales significantly with better RAM, disk speed, and CPU cores, reaching ~5-15 tok/s on high-end setups.
+*   **Practical Use:** Designed for Linux/WSL2 with gcc and AVX2. Includes an offline converter, learning cache to auto-pin hot experts, and benchmarks. Community measurements show ~0.11 tok/s on a fast disk with 24 GB RAM and ~1.06 tok/s on an Apple M5 Max.
+
+### colibri：在消费级硬件上运行744B参数混合专家模型
+
+*   **核心理念：** 通过仅从磁盘流式加载激活的专家参数（约40B），同时将密集部分（约9.9GB，int4量化）常驻内存，使得在约25GB内存的设备上运行744B参数的GLM-5.2混合专家模型成为可能。
+*   **架构与实现：** 引擎为单个C文件（约1300行），零运行时依赖。功能包括精确的GLM-5.2前向传播、带压缩KV缓存的MLA注意力、DeepSeek-V3风格的路由器、原生MTP推测解码（需int8头）、整数点积内核以及异步专家预读。
+*   **性能表现：** 在基础硬件（12核、25GB内存、通过WSL2的NVMe）上，冷启动速度约0.05-0.1 tok/s，随缓存升温而提升。预测性能随更好的内存、磁盘速度和CPU核心数显著提升，在高端配置下可达5-15 tok/s。
+*   **实际应用：** 适用于Linux/WSL2，需要gcc和AVX2支持。包含离线转换器、学习缓存以自动固定热门专家，以及基准测试工具。社区测试显示，在24GB内存搭配快速硬盘时速度约0.11 tok/s，在Apple M5 Max上可达约1.06 tok/s。
+
+**[Read Original / 阅读原文](https://github.com/JustVugg/colibri)**
+
+### EU Parliament Approves Chat Control 1.0 - Breyer: "Our Children Lose Out"
+* The European Parliament has approved the interim regulation allowing suspicionless mass scanning of private digital communications, known as "Chat Control 1.0," until 2028. This passed despite a majority of voting MEPs being opposed.
+* Civil rights activist Patrick Breyer criticizes the decision as undemocratic and damaging to children's genuine protection, arguing it perpetuates an ineffective mass surveillance approach.
+* Key changes include re-allowing US tech companies (e.g., Instagram, Gmail, iCloud) to scan private messages without a warrant. End-to-end encrypted chats (like WhatsApp) and scans by European providers remain unaffected.
+* The vote is a setback in negotiations for a permanent law ("Chat Control 2.0"). Core disputes continue over whether scanning should be targeted at suspects or indiscriminate.
+* Critics and survivors of abuse argue mass surveillance is ineffective, floods authorities with false reports, and violates privacy needed for victims to seek justice. They advocate for targeted, court-ordered measures and proactive removal of known abuse material.
+
+### 欧洲议会批准"聊天监控1.0" - 布雷耶："我们的孩子成了输家"
+* 欧洲议会已通过临时法规，允许在2028年前对私人数字通信进行无差别大规模扫描，即所谓的"聊天监控1.0"。尽管多数投票议员反对，该法规仍然获得通过。
+* 公民权利活动家帕特里克·布雷耶批评这一决定是反民主的，并损害了对儿童的真正保护，认为它延续了无效的大规模监控方式。
+* 主要变化包括重新允许美国科技公司（如Instagram、Gmail、iCloud）在无搜查令的情况下扫描私人信息。端到端加密聊天（如WhatsApp）以及欧洲服务提供商的扫描则不受影响。
+* 此次投票为制定永久性法律（"聊天监控2.0"）的谈判带来了挫折。核心争议仍在继续：扫描应该针对特定嫌疑人，还是进行无差别监控。
+* 批评者和性暴力幸存者认为大规模监控无效，导致当局收到大量错误报告，并侵犯了受害者寻求正义所需的隐私。他们呼吁采取有针对性的、经法院命令的措施，并主动删除已知的虐待材料。
+
+**[Read Original / 阅读原文](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/)**
+
+### Turning an iPhone into a Kids' Dumb Phone with Assistive Access
+*   Apple's **Assistive Access** (iOS 17) simplifies the iPhone interface with larger tiles and fewer options, originally designed for users with cognitive disabilities.
+*   Setup is done via Settings > Accessibility > Assistive Access, allowing caregivers to curate a specific set of allowed apps (like Messages, Calls, Camera).
+*   A key safety feature is that it can completely block internet browsing by omitting browsers like Safari; links in messages are also treated as plain text to prevent unintended web navigation.
+
+### 使用辅助访问功能将iPhone变成儿童简易手机
+*   苹果的**辅助访问**功能（iOS 17）通过提供更大的应用磁贴和更简化的选项来简化iPhone界面，最初是为有认知障碍的用户设计的。
+*   可通过“设置”>“辅助功能”>“辅助访问”进行设置，允许家长为孩子精选并限定可用的应用程序（如信息、电话、相机）。
+*   一项关键的安全功能是，它可以通过不添加浏览器（如Safari）来完全禁止网页浏览；信息中的链接也会被视为纯文本，以防止意外跳转至网页。
+
+**[Read Original / 阅读原文](https://www.wired.com/story/this-buried-apple-feature-turns-an-iphone-into-the-perfect-kids-dumb-phone/)**
+
+### Awesome DESIGN.md - Curated Design System Files for AI-Powered UI Generation
+* **What it does**: This repository provides a collection of 73+ analyzed `DESIGN.md` files extracted from popular tech and brand websites. These plain-text markdown files act as design system blueprints for AI coding agents, enabling them to generate visually consistent user interfaces that match the original brand's design language.
+* **Key features**: It includes deep analysis of design patterns, tokens, and rules for high-quality UI generation; spans numerous categories like AI platforms, developer tools, and e-commerce; requires no special tooling—simply drop a file into your project and instruct your AI agent.
+* **Why it's notable**: It leverages the new `DESIGN.md` concept introduced by Google Stitch, making design systems accessible to AI agents via simple markdown. The repository is trending due to its practical utility in AI-driven development, offering a bridge between human design systems and automated UI creation.
+
+### Awesome DESIGN.md - 面向AI的精选设计系统文件集合
+* **功能介绍**: 该仓库提供了73个以上从热门科技和品牌网站中分析提取的`DESIGN.md`文件。这些纯文本的Markdown文件是设计系统的蓝图，供AI编程代理使用，使其能够生成与原始品牌设计语言高度一致的可视化用户界面。
+* **主要特点**: 深度分析了设计模式、令牌和规则，以实现高质量UI生成；涵盖AI平台、开发者工具和电子商务等多个类别；无需特殊工具——只需将文件放入项目根目录，并指示你的AI代理即可。
+* **为何值得关注**: 它运用了由Google Stitch引入的新型`DESIGN.md`概念，通过简单的Markdown文件使设计系统能够被AI代理理解。该仓库因其在AI驱动开发中的实用价值而备受关注，为人类设计系统与自动化UI创建之间架起了桥梁。
+
+**[View Repository / 查看仓库](https://github.com/VoltAgent/awesome-design-md)**
+
+### iOfficeAI/OfficeCLI - AI-Powered Office Suite for Agents and Developers
+* **What it does:** OfficeCLI is an open-source, single-binary command-line tool designed specifically for AI agents and developers to fully control, read, edit, and create Microsoft Word, Excel, and PowerPoint files. It provides a simple, scriptable interface to automate Office document workflows.
+* **Key features:**
+    * **AI-First Design:** Built for AI agents to interact with Office files via natural language or single-line commands.
+    * **No Dependencies:** Single binary, no need to install Microsoft Office or complex libraries like Python's `python-pptx`.
+    * **Full Document Control:** Supports creating, reading, analyzing, modifying, and reorganizing content in .docx, .xlsx, and .pptx files.
+    * **High-Fidelity Rendering:** Includes an HTML rendering engine to view documents in the browser, enabling a "render → look → fix" loop for AI agents.
+    * **Broad Compatibility:** Works across macOS, Linux, and Windows, and integrates with popular AI coding agents.
+* **Why it's notable:** It dramatically simplifies Office file automation, reducing complex multi-line coding tasks into single commands. Its focus on AI agent integration and the "no-install" approach makes it a unique and trending tool (1,923 stars in one day) for developers and AI workflows.
+
+### iOfficeAI/OfficeCLI - 专为AI代理和开发者设计的Office套件
+* **功能介绍：** OfficeCLI是一个开源、单二进制文件的命令行工具，专为AI代理和开发者设计，用于全面控制、读取、编辑和创建Microsoft Word、Excel和PowerPoint文件。它提供了简单的、可脚本化的接口来自动化Office文档工作流。
+* **主要特点：**
+    * **AI优先设计：** 专为AI代理设计，可通过自然语言或单行命令与Office文件交互。
+    * **无依赖性：** 单一二进制文件，无需安装Microsoft Office或复杂的库（如Python的`python-pptx`）。
+    * **全面文档控制：** 支持对.docx、.xlsx和.pptx文件进行创建、读取、分析、修改和重组。
+    * **高保真渲染：** 包含HTML渲染引擎，可在浏览器中查看文档，为AI代理实现“渲染→查看→修复”的循环。
+    * **广泛兼容性：** 跨macOS、Linux和Windows运行，并能与流行的AI编码代理集成。
+* **为何值得关注：** 它极大地简化了Office文件自动化，将复杂的多行编码任务简化为单条命令。其对AI代理集成的专注和“无需安装”的方式，使其成为开发者和AI工作流中一个独特且备受关注的工具（一天内获得1,923颗星）。
+
+**[View Repository / 查看仓库](https://github.com/iOfficeAI/OfficeCLI)**
+
+### Generals-Mac-iOS-iPad - Native Port of Command & Conquer: Zero Hour for Apple Devices
+*   **What it does**: It is a native, non-emulated port of the 2003 real-time strategy game *Command & Conquer: Generals – Zero Hour* for Apple Silicon Macs, iPhones, and iPads. It runs the original game engine compiled for ARM64, with rendering adapted from DirectX 8 to Metal via DXVK and MoltenVK.
+*   **Key features**:
+    *   Native ARM64 compilation for macOS/iOS, supporting the full game (campaign, skirmish, Generals Challenge).
+    *   RTS-specific touch controls designed for mobile gameplay (tap-select, drag-box, long-press, two-finger scroll, pinch zoom).
+    *   Built on a chain of open-source community work (EA GPL source, GeneralsX, etc.).
+    *   Requires users to own a legitimate copy of the game assets (via Steam).
+    *   Includes detailed engineering documentation (`PORTING_PLAYBOOK.md`, `PORTING_PATTERNS.md`) for the complex porting process.
+*   **Why it's notable**: It's a significant technical achievement, porting a complex, legacy Windows game to modern Apple platforms without emulation. The project involved overcoming major iOS restrictions (read-only app bundles, process lifecycle, Metal renderer) and involved a documented human-AI collaborative development process. Its success and detailed logs make it a valuable resource for similar porting endeavors.
+
+### Generals-Mac-iOS-iPad - 《命令与征服：将军之零点危机》Apple设备原生移植版
+*   **功能介绍**：这是一个针对Apple Silicon Mac、iPhone和iPad的原生、非模拟移植版。它直接运行经过ARM64编译的2003年即时战略游戏《命令与征服：将军之零点危机》原版引擎，并通过DXVK和MoltenVK将DirectX 8渲染适配至Metal。
+*   **主要特点**：
+    *   针对macOS/iOS的原生ARM64编译，支持完整游戏内容（战役、遭遇战、将军挑战）。
+    *   专为移动端设计的RTS触控操作（点击选择、拖拽框选、长按、双指滚动、捏合缩放）。
+    *   基于一系列开源社区工作链构建（EA GPL源代码、GeneralsX等）。
+    *   要求用户拥有合法的游戏资产（通过Steam购买）。
+    *   包含详尽的工程移植文档（`PORTING_PLAYBOOK.md`、`PORTING_PATTERNS.md`），记录了复杂的移植过程。
+*   **为何值得关注**：这是一项重大的技术成就，在不使用模拟器的情况下，将一款复杂的经典Windows游戏成功移植到现代Apple平台。项目攻克了诸多iOS限制（只读应用包、进程生命周期、Metal渲染器），并采用了有记录的人机协作开发过程。其成功经验和详细的文档使其成为类似移植项目的宝贵资源。
+
+**[View Repository / 查看仓库](https://github.com/ammaarreshi/Generals-Mac-iOS-iPad)**
+
+### withmarbleapp/os-taxonomy - An Open Taxonomy of Children's Learning Topics
+* What it does: It provides a structured, interconnected graph of what children learn across primary/elementary years, decomposed into 1,590 fine-grained "micro-topics" with 3,221 prerequisite links, aligned to national curriculum standards.
+* Key features: It includes detailed topic data (descriptions, evidence criteria, age ranges), a prerequisite graph (with hard/soft links and reasons), curriculum standard alignment, and parent-friendly domain summaries. The data is provided as pure JSON files.
+* Why it's notable: It transforms traditionally flat or proprietary curriculum data into an open, explorable knowledge graph, offering a unique and detailed resource for education technology, research, and product development.
+
+### withmarbleapp/os-taxonomy - 一个开放的儿童学习主题分类法
+* 功能介绍: 它为小学阶段（primary/elementary）的孩子们所学的知识提供了一个结构化的、相互关联的知识图谱。该分类法将知识分解为1,590个精细的“微主题”，并建立了3,221条先决条件链接，同时与国家课程标准对齐。
+* 主要特点: 包含详细的主题数据（描述、掌握标准、适用年龄段）、先决条件图谱（有强弱链接及原因）、课程标准关联以及面向家长的领域摘要。所有数据以纯JSON文件形式提供。
+* 为何值得关注: 它将传统上扁平或封闭在产品内部的课程数据转变为一个开放的、可探索的知识图谱，为教育科技、研究和产品开发提供了一个独特而详尽的资源。
+
+**[View Repository / 查看仓库](https://github.com/withmarbleapp/os-taxonomy)**
+
+### 🎬 AI content will help Instagram
+**Channel:** Lenny's Podcast
+
+*   What the video covers: This episode likely explores the strategic integration of artificial intelligence within Instagram's platform to enhance content creation, discovery, and user engagement.
+*   Key topics discussed: Potential topics include AI-powered content recommendations, tools for creators, content moderation, the future of social media feeds, and how AI could combat creator burnout or democratize content production.
+*   Why it's worth watching: It offers insights from a tech perspective into how one of the world's largest social platforms is adapting to the AI revolution, which is crucial for understanding future digital trends, content strategy, and platform development.
+
+### 🎬 AI 内容将助力 Instagram
+**频道:** Lenny's Podcast
+
+*   视频内容概述：本期播客可能深入探讨了人工智能在 Instagram 平台内的战略整合，旨在提升内容创作、发现与用户互动体验。
+*   主要话题：潜在讨论议题包括 AI 驱动的内容推荐、创作者工具、内容审核、社交媒体动态的未来走向，以及 AI 如何缓解创作者倦怠或实现内容创作的大众化。
+*   为何值得观看：节目从科技视角剖析了全球最主要的社交平台之一如何适应 AI 浪潮，这对于理解未来的数字趋势、内容策略和平台发展至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=JzDuRXjU3V0)**
+
+### 🎬 Your Button Is Lying to Your Microcontroller...
+**Channel:** C Labs
+*   This video explains the common problem of "button bounce" or "contact bounce" in electronics, where a single physical press of a mechanical button is interpreted by a microcontroller as multiple presses.
+*   Key topics include the physical cause (imperfect mechanical contact), the effects on digital circuits (false triggers), and practical software and hardware debouncing solutions to create a clean, single signal.
+*   It's worth watching for anyone working with Arduino, Raspberry Pi, or any microcontroller project, as understanding and solving this fundamental issue is crucial for reliable button input and project stability.
+
+### 🎬 你的按钮在欺骗你的微控制器...
+**频道:** C Labs
+*   本视频深入探讨了电子项目中一个常见的问题——"按钮抖动"。它解释了为何按压一次机械按钮，在微控制器看来可能是多次输入。
+*   主要话题包括机械触点的物理特性（接触弹跳）、对数字电路的影响（误触发），以及如何通过软件或硬件方法进行"去抖动"，以获得干净、单一的触发信号。
+*   对于任何使用Arduino、树莓派或其他微控制器的开发者来说，这都是一个必看的视频。理解并解决这个基础问题，是确保项目输入可靠性和稳定性的关键。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3b1QXhSeJKw)**
+
+### 🎬 Claude Desktop Is Now FREE?! Use ALL Claude Models (Full Setup Guide)
+**Channel:** Data Scientist Afzal
+
+*   **What the video covers:** This video is a complete tutorial on how to access and utilize all of Claude's AI models (like Claude 3 Opus, Sonnet, etc.) through the Claude Desktop application for free, bypassing the need for a paid API subscription.
+*   **Key topics discussed:** The step-by-step process of downloading, installing, and configuring Claude Desktop, leveraging its built-in features to interact with various Claude models, and the practical implications of this free access for developers, students, and tech enthusiasts.
+*   **Why it's worth watching:** It reveals a significant and cost-effective method to experiment with state-of-the-art AI models, making advanced AI tools accessible to a broader audience without financial barriers. The guide is practical and immediately actionable.
+
+---
+
+### 🎬 Claude Desktop 免费了？！免费使用所有 Claude 模型（完整设置指南）
+**频道:** Data Scientist Afzal
+
+*   **视频内容概述：** 本视频是一个完整的教程，指导你如何通过 Claude 桌面应用程序，免费访问和使用所有 Claude AI 模型（如 Claude 3 Opus、Sonnet 等），无需付费 API 订阅。
+*   **主要话题：** 下载、安装和配置 Claude 桌面的详细步骤；如何利用其内置功能与不同的 Claude 模型交互；以及这种免费访问方式对开发者、学生和科技爱好者带来的实际影响。
+*   **为何值得观看：** 该视频揭示了一种重要且经济高效的方法，可以免费体验顶尖的 AI 模型，使得先进的 AI 工具能够无障碍地触达更广泛的用户群体。教程实用且可立即操作。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8NlxDB1VIyY)**
+
+### 🎬 The Ultimate Claude Code Tutorial for Mobile Apps - FULL COURSE
+**Channel:** Codesistency
+* This video provides a comprehensive, full-course tutorial on using **Claude Code**, Anthropic's AI coding tool, specifically for building and developing **mobile applications**. It likely walks through the entire workflow, from setup and basic commands to complex, real-world project implementation.
+* Key topics discussed would include integrating Claude Code into an iOS/Android development environment, prompt engineering for code generation, debugging with AI assistance, refactoring, and potentially deploying or testing the app. The description's sponsorship mentions suggest practical tools for monitoring and automation might also be covered.
+* It's worth watching for developers seeking to **dramatically accelerate their mobile app development cycle**. Instead of learning Claude Code in isolation, this "ultimate tutorial" offers a focused, end-to-end guide on applying the tool directly to a high-demand platform (mobile), making it a time-efficient resource for upgrading one's tech stack.
+
+### 🎬 Claude代码移动应用终极教程 - 完整课程
+**频道:** Codesistency
+* 本视频提供关于如何使用**Claude Code**（Anthropic公司的AI编程工具）来构建和开发**移动应用程序**的全面、完整课程教程。视频很可能涵盖了整个工作流程，从设置和基础命令到复杂的现实项目实践。
+* 主要讨论的关键话题包括将Claude Code集成到iOS/Android开发环境中、用于代码生成的提示词工程、利用AI辅助进行调试、代码重构，以及可能的应用部署或测试。视频描述中的赞助商信息表明，一些用于监控和自动化的实用工具也可能被涉及。
+* 对于寻求**大幅提升移动应用开发效率**的开发者而言，此视频非常值得观看。它并非孤立地教授Claude Code，而是提供了一个针对高需求平台（移动端）的、从零到一的专注指南，对于希望升级自身技术栈的开发者来说，是一个高效的学习资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=p80OV6kjIO8)**
 
