@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 11, 2026"
 date: 2026-07-11
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -251,4 +251,188 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   为何值得观看：来自资深开发者的切实可行的建议，教导你如何利用AI大幅提升工作效率，将其从新奇工具转变为核心编程工具。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=A4aLYwtpyes)**
+
+### NYC Mayor Announces Landmark "Click-to-Cancel" and "Junk Fees" Consumer Protection Rules
+*   Mayor Zohran Kwame Mamdani and DCWP Commissioner Samuel A.A. Levine announced two major rules: a proposed "Junk Fees" rule and a final "Click-to-Cancel" rule.
+*   The "Junk Fees" rule requires upfront, all-inclusive pricing, banning hidden mandatory charges and fines businesses $525 per violation.
+*   The "Click-to-Cancel" rule, effective October 1, 2026, mandates that subscription cancellations be as easy as signing up, projected to save New Yorkers up to $162.5 million annually.
+*   These measures aim to protect consumers from deceptive pricing and subscription traps, representing one of the nation's strongest municipal consumer protection efforts.
+
+### 纽约市市长宣布具有里程碑意义的"一键取消"与"垃圾费用"消费者保护规则
+*   市长佐赫兰·夸梅·马姆达尼和消费者与工人保护局局长塞缪尔·A·A·莱文宣布了两项重要规则：一项拟议的"垃圾费用"规则和一项最终的"一键取消"规则。
+*   "垃圾费用"规则要求商家提前公布包含所有强制性费用的全价，禁止隐性收费，违规企业将面临每次525美元的罚款。
+*   "一键取消"规则将于2026年10月1日生效，要求取消订阅服务的过程必须像订阅时一样简单方便，据估计每年可为纽约市民节省高达1.625亿美元。
+*   这些措施旨在保护消费者免受欺骗性定价和订阅陷阱的侵害，是全国范围内最有力的市政消费者保护行动之一。
+
+**[Read Original / 阅读原文](https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani-announces-landmark--click-to-cancel--consumer-prot)**
+
+<!-- [Title-Only] -->
+### GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]
+* This article likely presents a (fictional) paper claiming that a highly advanced, future version of an AI model named "GPT-5.6 Sol Ultra" has successfully produced a proof for the **Cycle Double Cover Conjecture**, a major unsolved problem in graph theory and combinatorics.
+* This would be intensely interesting to readers as it touches on two fascinating frontiers: the potential for superhuman mathematical reasoning by advanced AI and the resolution of a long-standing mathematical puzzle that has stumped human mathematicians for decades.
+
+### GPT-5.6 Sol Ultra 产生环双覆盖猜想的证明 [pdf]
+* 根据标题推测，这篇文章可能呈现了一篇（虚构的）论文，声称一个名为“GPT-5.6 Sol Ultra”的、高度先进的未来AI模型，成功地为图论和组合数学中一个重大的未解难题——**环双覆盖猜想**——给出了证明。
+* 这对读者可能极具吸引力，因为它触及了两个引人入胜的前沿领域：先进AI实现超人类数学推理的潜力，以及解决人类数学家数十年未能攻克的著名数学猜想。
+
+**[Read Original / 阅读原文](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf)**
+
+<!-- [Title-Only] -->
+### How the terrorist group Boko Haram uses frontier AI
+*   This article likely examines the potential or actual misuse of advanced artificial intelligence (frontier AI) capabilities by the militant Islamist group Boko Haram. It may discuss how AI tools for propaganda, radicalization, recruitment, operational planning, or drone-based attacks could be leveraged by such a non-state actor.
+*   This is interesting because it addresses a critical and evolving intersection of national security, counter-terrorism, and technology. It highlights the dual-use nature of cutting-edge AI and raises urgent questions about safety, security, and the governance of powerful AI systems.
+
+### 恐怖组织“博科圣地”如何利用前沿AI
+*   根据标题推测，这篇文章可能探讨了激进的伊斯兰组织“博科圣地”如何潜在或实际地滥用前沿人工智能技术。内容或涉及AI工具在宣传、激进化、招募、作战规划或无人机袭击等方面的潜在应用。
+*   为何值得关注：因为它涉及国家安全、反恐与科技之间一个关键且不断演变的交叉领域。文章凸显了尖端AI的双刃剑效应，并引发了关于强大人工智能系统的安全性、安保和治理等紧迫问题的思考。
+
+**[Read Original / 阅读原文](https://casp.ac/reports/ai-enabled-terrorism)**
+
+### Agent Skills - Production-Grade Engineering Skills for AI Coding Agents
+* **What it does**: Provides a collection of 24 structured, production-grade engineering workflows ("skills") for AI coding agents. These skills encode best practices, quality gates, and verification steps used by senior engineers across the entire software development lifecycle, from defining requirements to shipping to production.
+* **Key features**:
+    * Maps directly to 8 core lifecycle commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`, etc.).
+    * Each skill is a detailed Markdown workflow with steps, verification checkpoints, and anti-pattern guards.
+    * Designed for wide compatibility; installs into 70+ AI agents via a universal CLI or native integrations for tools like Claude Code, Cursor, Copilot, Codex, and more.
+    * Enables autonomous workflows (e.g., `/build auto`) while maintaining verification gates.
+* **Why it's notable**: This project directly addresses a key challenge in AI-assisted development: ensuring agents follow consistent, high-quality engineering practices. By codifying senior-level workflows into installable skills, it helps prevent common pitfalls and improves the reliability and maintainability of AI-generated code. Its rapid star growth (1,100+ in a day) and support for major coding agents make it a significant and trending tool in the AI development toolchain.
+
+### Agent Skills - 面向AI编码代理的生产级工程技能
+* **功能介绍**: 提供了一套包含24个结构化、生产级工程工作流（“技能”）的集合，专为AI编码代理设计。这些技能将资深工程师在软件开发生命周期各阶段（从需求定义到产品部署）使用的最佳实践、质量门限和验证步骤进行了编码化。
+* **主要特点**:
+    * 直接映射到8个核心生命周期命令（`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`等）。
+    * 每个技能都是详细的Markdown工作流，包含步骤、验证检查点和反模式防护。
+    * 兼容性设计广泛，可通过通用CLI安装到70多种AI代理中，或为Claude Code、Cursor、Copilot、Codex等工具提供原生集成。
+    * 支持自主化工作流（如`/build auto`），同时保持严格的验证门限。
+* **为何值得关注**: 该项目直接应对AI辅助开发中的一个核心挑战：确保代理遵循一致、高质量的工程实践。通过将高级工程工作流固化为可安装的技能，它有助于预防常见陷阱，并提升AI生成代码的可靠性与可维护性。其快速增长的星标（一天内超过1100颗）以及对主流编码代理的支持，使其成为AI开发工具链中一个具有重要影响力的热门项目。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### yaml-cpp - A YAML parser and emitter in C++
+*   What it does: A library for reading and writing YAML (YAML 1.2) files in C++ applications. It allows parsing YAML documents into C++ data structures and emitting C++ data into YAML format.
+*   Key features: Compliant with the YAML 1.2 specification, cross-platform build support via CMake (with options for static/shared libraries), and provides both a modern API (0.5.0+) and a legacy API (0.3.x). It includes a tutorial and wiki for usage guidance.
+*   Why it's notable: It is a mature, well-maintained, and widely-used C++ library for YAML handling. The recent release of version 0.9.0 and active development (evidenced by today's star activity) indicate ongoing relevance. Its cross-platform nature and comprehensive documentation make it a go-to choice for C++ projects needing YAML support, with integrations for frameworks like Qt and Unreal Engine.
+
+### yaml-cpp - C++ 的 YAML 解析与生成库
+*   功能介绍：一个用于在 C++ 应用程序中读写符合 YAML 1.2 规范文件的库。它支持将 YAML 文档解析为 C++ 数据结构，并将 C++ 数据序列化为 YAML 格式。
+*   主要特点：严格遵循 YAML 1.2 标准，支持通过 CMake 进行跨平台构建（可构建静态库或动态库），并提供新旧两套 API（0.5.0+版本为新 API）。项目提供了详细的教程和 Wiki 文档。
+*   为何值得关注：这是一个成熟、维护良好且被广泛使用的 C++ YAML 处理库。其持续活跃的开发（如今日获得大量星标）和最新的 0.9.0 版本发布证明了其持续的影响力。跨平台支持和完善文档使其成为 C++ 项目中处理 YAML 的首选库之一，并已出现 Qt、Unreal Engine 等框架的集成方案。
+
+**[View Repository / 查看仓库](https://github.com/jbeder/yaml-cpp)**
+
+### riddle - The Diary of Tom Riddle for reMarkable Paper Pro
+*   **What it does**: This is a Rust application that transforms a reMarkable Paper Pro tablet into the magical diary of Tom Riddle from Harry Potter. You write with the pen, and after a pause, the diary "drinks" your ink (your writing fades), thinks, and replies with a new, handwritten response in a flowing script.
+*   **Key features**:
+    *   **Magical Interaction**: Simulates a living diary with ink that fades and reappears.
+    *   **AI-Powered Oracle**: Uses a Vision LLM (like GPT-4o-mini) to read your handwriting via a PNG and generate thoughtful, streamed replies.
+    *   **Memory & Conversation**: The diary remembers past pages, allowing it to follow conversations, recall memories, and rewrite past entries when asked.
+    *   **Direct E-ink Control**: Features a "takeover" mode that directly drives the device's e-ink engine for the lowest latency ink experience.
+    *   **Rich Gesture Support**: Includes gestures for erasing, summoning help, viewing history, and exiting.
+*   **Why it's notable**: It's a creatively ambitious project that fully leverages the unique capabilities of an e-ink tablet (pen input, no backlight) to create an immersive, non-screen-glow experience. Technically, it's impressive for its cross-compilation in Rust, deep integration with the reMarkable hardware, and elegant solution for handwriting recognition and synthesis. Its trending status (1336 stars) reflects the community's fascination with this blend of fantasy, utility, and innovative hardware hacking.
+
+### riddle - Tom Riddle's Diary for reMarkable Paper Pro
+*   **功能介绍**: 这是一个Rust应用程序，可将reMarkable Paper Pro平板电脑转变为《哈利·波特》中汤姆·里德尔的神奇日记。你用笔书写，片刻后，日记会“饮下”你的墨水（你的笔迹淡化），思考片刻，然后以流畅的笔触亲手写回一条回复。
+*   **主要特点**:
+    *   **魔法交互**: 模拟一本会吸墨和重新显字的活日记。
+    *   **AI神谕**: 使用视觉大语言模型（如GPT-4o-mini）通过PNG图片阅读你的手写内容，并生成逐句流式回复。
+    *   **记忆与对话**: 日记能记住过去的页面，从而能延续对话、回忆往事，并在被要求时重写过去的记录。
+    *   **直接控制电子墨水**: 提供“接管”模式，可直接驱动设备的电子墨水引擎，实现极低延迟的书写体验。
+    *   **丰富手势**: 支持擦除、召唤帮助、查看历史和退出等多种手势操作。
+*   **为何值得关注**: 这是一个雄心勃勃的创意项目，充分利用了电子墨水平板的独特功能（笔输入、无背光），营造出一种沉浸式的、非屏幕发光体验。从技术角度看，它令人印象深刻，因为该项目使用Rust进行交叉编译，与reMarkable硬件深度集成，并实现了优雅的手写识别与合成解决方案。其热门状态（1336颗星）反映了社区对这种将幻想、实用性和创新硬件黑客技术相融合的项目的浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/MaximeRivest/riddle)**
+
+### [dnsglobe](https://github.com/514-labs/dnsglobe) - A Global DNS Propagation Checker TUI for Your Terminal
+*   **What it does:** dnsglobe is a Rust-based terminal user interface (TUI) tool that checks the global propagation of DNS records. It queries 34 public DNS resolvers from around the world in parallel and displays the results on an interactive world map directly in your terminal.
+*   **Key features:**
+    *   **Worldwide Coverage:** Queries a diverse set of resolvers from global anycast networks (Google, Cloudflare, Quad9), North America, Europe, Russia, the Middle East, Asia, and the Southern Hemisphere.
+    *   **Real-time Map Visualization:** On wide terminals (≥150 columns), it renders a world map with colored dots representing resolver locations and their status (green for agreement, magenta for difference).
+    *   **Watch Mode:** Continuously re-polls resolvers (every 30 seconds) until the DNS record has propagated to all queried servers, similar to web-based tools like dnschecker.org.
+    *   **Direct Queries & Smart Grouping:** Bypasses caches, uses EDNS0/TCP fallback, and groups resolvers with identical answers to accurately reflect propagation status, even with round-robin DNS.
+    *   **Customizable Resolvers:** Users can add their own private resolvers or replace the built-in list entirely via a TOML configuration file.
+    *   **Multi-record Support:** Checks A, AAAA, CNAME, MX, NS, TXT, and SOA records.
+*   **Why it's notable:** It brings the power and visibility of a web-based global DNS propagation checker into a fast, self-contained, and keyboard-driven terminal application. Its direct resolver querying, insightful map visualization, and "watch" mode make it a powerful tool for network administrators and developers troubleshooting DNS changes or monitoring propagation. The combination of a TUI, Rust performance, and unique features like resolver geolocation tracking makes it a standout project.
+
+### [dnsglobe](https://github.com/514-labs/dnsglobe) - 终端全局DNS传播检查工具
+*   **功能介绍：** dnsglobe 是一个基于 Rust 的终端用户界面（TUI）工具，用于检查 DNS 记录的全球传播状态。它并行查询全球 34 个公共 DNS 解析器，并将结果直接以交互式世界地图的形式呈现在你的终端中。
+*   **主要特点：**
+    *   **全球覆盖：** 查询来自全球任播网络（Google、Cloudflare、Quad9）、北美、欧洲、俄罗斯、中东、亚洲及南半球（如 Telstra AU, SafeSurfer NZ, UOL BR）的多样化解析器。
+    *   **实时地图可视化：** 在宽屏终端（≥150列）右侧显示世界地图，用彩色圆点表示解析器位置及其状态（绿色代表一致，品红色代表差异，红色代表错误，黄色代表查询中）。
+    *   **监控模式：** 类似 dnschecker.org 等网页工具，支持每 30 秒重新查询，直到记录在所有被查询的服务器上完成传播。
+    *   **直接查询与智能分组：** 绕过缓存，支持 EDNS0 和 TCP 回退，并对拥有相同答案的解析器进行分组，能更准确地反映传播状态（即使存在轮询 DNS）。
+    *   **自定义解析器：** 用户可通过 TOML 配置文件添加自有私有解析器，或完全替换内置的解析器列表。
+    *   **多类型记录支持：** 支持检查 A、AAAA、CNAME、MX、NS、TXT 和 SOA 记录。
+*   **为何值得关注：** 它将类似网页端全球 DNS 传播检查器的功能，整合进一个快速、独立且由键盘驱动的终端应用中。其直接查询解析器、直观的地图可视化以及实用的“监控”模式，使其成为网络管理员和开发者在排查 DNS 变更或监控传播状态时的强大工具。结合了 TUI 的高效交互、Rust 的高性能以及独特的解析器地理定位追踪等特色，使其成为一个非常出色且实用的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/514-labs/dnsglobe)**
+
+### 🎬 Your Button Is Lying to Your Microcontroller...
+**Channel:** C Labs
+*   This video explains the phenomenon of "button bounce" or "contact bounce," where a single physical press on a mechanical switch can be registered by a microcontroller as multiple, rapid, unintended signals.
+*   **Key topics discussed:**
+    *   The physical mechanics of how mechanical push buttons make imperfect electrical contact.
+    *   The problem this creates for digital systems and microcontrollers that read the button state.
+    *   Practical solutions, likely including hardware filters and software debouncing algorithms (like time-delay checks).
+*   It's a fundamental and practical lesson for anyone starting in electronics or embedded systems. Understanding and solving this problem is crucial for building reliable circuits and code that correctly interpret user input.
+
+### 🎬 你的按钮在欺骗你的微控制器...
+**频道:** C Labs
+*   视频解释了“按钮抖动”或“触点抖动”现象，即按压一次机械开关可能会被微控制器错误地识别为多次快速、无意的触发信号。
+*   **主要话题：**
+    *   机械按钮产生不完美电气接触的物理机制。
+    *   这种现象对读取按钮状态的数字系统和微控制器所造成的问题。
+    *   可能包括硬件滤波和软件消抖算法（如时间延迟检测）在内的实用解决方案。
+*   这是电子学或嵌入式系统入门者的基础且实用的一课。理解并解决这个问题对于构建能够准确解析用户输入的可靠电路和代码至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3b1QXhSeJKw)**
+
+### 🎬 Claude Desktop Is Now FREE?! Use ALL Claude Models (Full Setup Guide)
+**Channel:** Data Scientist Afzal
+*   **What the video covers:** This is a comprehensive, step-by-step guide on how to download, install, and set up the Claude Desktop application for free. It specifically focuses on unlocking and using all available Claude models (like Claude 3.5 Sonnet, Claude 3 Opus, etc.) through the app.
+*   **Key topics discussed:** The process of acquiring free access to Claude's official desktop client; navigating the setup process; using the application to interact with different Claude AI models; and likely a comparison or mention of its capabilities versus other tools like ChatGPT.
+*   **Why it's worth watching:** For anyone interested in AI assistants, this video reveals a highly valuable, free method to get official, direct access to powerful Claude models. It provides a practical, hands-on tutorial for a significant upgrade to AI workflows, bypassing API costs or limited chat interfaces.
+
+### 🎬 Claude桌面版现在免费了？！使用所有Claude模型（完整设置指南）
+**频道:** Data Scientist Afzal
+*   **视频内容概述：** 这是一个详尽的、一步步的教程，指导如何免费下载、安装和设置Claude桌面应用程序。视频的核心在于展示如何通过该应用解锁并使用所有可用的Claude模型（例如Claude 3.5 Sonnet、Claude 3 Opus等）。
+*   **主要话题：** 获取Claude官方桌面客户端免费访问权限的过程；设置步骤详解；使用该应用与不同Claude AI模型进行交互；以及可能涉及的与ChatGPT等工具的对比。
+*   **为何值得观看：** 对任何对AI助手感兴趣的人来说，这个视频揭示了一种极具价值的免费方法，可以直接访问强大的Claude模型。它提供了一个实用的、可操作的教程，代表了AI工作流的重大升级，无需支付API费用或使用受限的聊天界面。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8NlxDB1VIyY)**
+
+### 🎬 The Ultimate Claude Code Tutorial for Mobile Apps - FULL COURSE
+**Channel:** Codesistency
+*   **What the video covers:** A comprehensive, hands-on tutorial demonstrating how to build a complete mobile app using the Claude API for AI-powered features. It walks through the entire development process from setup to deployment.
+*   **Key topics discussed:**
+    *   Integration and usage of the Claude API for mobile development.
+    *   Building a functional mobile application from scratch.
+    *   Incorporating tools like Sentry (for error tracking) and Inngest (for background workflows).
+    *   Best practices for AI-powered mobile app architecture and development.
+*   **Why it's worth watching:** This is a valuable resource for developers looking to practically implement AI capabilities into mobile apps. It provides a full-course, step-by-step guide to building a real project with modern tools, making it ideal for learning by doing.
+
+### 🎬 Claude代码终极教程：构建移动应用 - 完整课程
+**频道:** Codesistency
+*   **视频内容概述:** 本视频是一份全面、实战的教程，演示如何利用Claude API为移动应用添加AI功能。它将引导你完成从环境搭建到应用发布的完整开发流程。
+*   **主要话题:**
+    *   如何在移动开发中集成和使用Claude API。
+    *   从零开始构建一个功能完整的移动应用。
+    *   集成Sentry（错误跟踪）和Inngest（后台工作流）等开发工具。
+    *   构建AI驱动移动应用的最佳实践和架构设计。
+*   **为何值得观看:** 对于希望将AI能力实际应用于移动应用的开发者来说，这是一份宝贵的资源。它以“完整课程”的形式，通过真实项目手把手教学，非常适合希望边做边学的开发者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=p80OV6kjIO8)**
+
+### 🎬 WHY His Python?
+**Channel:** CodingLern
+* This short video explores the reasons behind a developer's choice to use the Python programming language, likely in the context of debugging and error handling.
+* Key topics include Python's error handling capabilities, debugging techniques, and how it compares to other popular languages like JavaScript and Java in practical scenarios.
+* It's worth watching for developers seeking to understand the pragmatic advantages of Python for problem-solving, especially for beginners looking for coding tips and quick insights into language selection.
+
+### 🎬 为何他选择 Python？
+**频道:** CodingLern
+* 这个短视频探讨了一名开发者选择使用Python编程语言的原因，可能特别关注于调试和错误处理的情境。
+* 主要话题包括Python的错误处理能力、调试技巧，以及它与JavaScript和Java等其他流行语言在实际应用中的比较。
+* 对于想了解Python在解决问题方面的实用优势的开发者来说值得一看，特别是为寻求编码技巧和快速了解语言选择的初学者提供了见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=cR0YAtl8AUk)**
 
