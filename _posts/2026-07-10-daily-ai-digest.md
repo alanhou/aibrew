@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 10, 2026"
 date: 2026-07-10
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -404,114 +404,131 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **What the video covers:** This video is a complete tutorial on how to access and utilize all of Claude's AI models (like Claude 3 Opus, Sonnet, etc.) through the Claude Desktop application for free, bypassing the need for a paid API subscription.
 *   **Key topics discussed:** The step-by-step process of downloading, installing, and configuring Claude Desktop, leveraging its built-in features to interact with various Claude models, and the practical implications of this free access for developers, students, and tech enthusiasts.
 *   **Why it's worth watching:** It reveals a significant and cost-effective method to experiment with state-of-the-art AI models, making advanced AI tools accessible to a broader audience without financial barriers. The guide is practical and immediately actionable.
+### Solo Dev's Train Sim Created Is Being Called The Best Ever Made
+* A hyper-realistic train simulator, *Running Train*, created by solo developer Novatetsu Games is being praised as one of the best in its genre, despite being set in a fictional Japanese region.
+* The game features incredibly detailed environments, including logical placement of power lines, traffic, and temples, which can be explored via a free camera mode.
+* Steam reviews highlight its top-tier modeling and environment details, while the Early Access version includes 42 routes, with plans to expand to 100 km of track and add features like a passenger system.
 
----
-
-### 🎬 Claude Desktop 免费了？！免费使用所有 Claude 模型（完整设置指南）
-**频道:** Data Scientist Afzal
-
-*   **视频内容概述：** 本视频是一个完整的教程，指导你如何通过 Claude 桌面应用程序，免费访问和使用所有 Claude AI 模型（如 Claude 3 Opus、Sonnet 等），无需付费 API 订阅。
-*   **主要话题：** 下载、安装和配置 Claude 桌面的详细步骤；如何利用其内置功能与不同的 Claude 模型交互；以及这种免费访问方式对开发者、学生和科技爱好者带来的实际影响。
-*   **为何值得观看：** 该视频揭示了一种重要且经济高效的方法，可以免费体验顶尖的 AI 模型，使得先进的 AI 工具能够无障碍地触达更广泛的用户群体。教程实用且可立即操作。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8NlxDB1VIyY)**
-
-### 🎬 The Ultimate Claude Code Tutorial for Mobile Apps - FULL COURSE
-**Channel:** Codesistency
-* This video provides a comprehensive, full-course tutorial on using **Claude Code**, Anthropic's AI coding tool, specifically for building and developing **mobile applications**. It likely walks through the entire workflow, from setup and basic commands to complex, real-world project implementation.
-* Key topics discussed would include integrating Claude Code into an iOS/Android development environment, prompt engineering for code generation, debugging with AI assistance, refactoring, and potentially deploying or testing the app. The description's sponsorship mentions suggest practical tools for monitoring and automation might also be covered.
-* It's worth watching for developers seeking to **dramatically accelerate their mobile app development cycle**. Instead of learning Claude Code in isolation, this "ultimate tutorial" offers a focused, end-to-end guide on applying the tool directly to a high-demand platform (mobile), making it a time-efficient resource for upgrading one's tech stack.
-
-### 🎬 Claude代码移动应用终极教程 - 完整课程
-**频道:** Codesistency
-* 本视频提供关于如何使用**Claude Code**（Anthropic公司的AI编程工具）来构建和开发**移动应用程序**的全面、完整课程教程。视频很可能涵盖了整个工作流程，从设置和基础命令到复杂的现实项目实践。
-* 主要讨论的关键话题包括将Claude Code集成到iOS/Android开发环境中、用于代码生成的提示词工程、利用AI辅助进行调试、代码重构，以及可能的应用部署或测试。视频描述中的赞助商信息表明，一些用于监控和自动化的实用工具也可能被涉及。
-* 对于寻求**大幅提升移动应用开发效率**的开发者而言，此视频非常值得观看。它并非孤立地教授Claude Code，而是提供了一个针对高需求平台（移动端）的、从零到一的专注指南，对于希望升级自身技术栈的开发者来说，是一个高效的学习资源。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=p80OV6kjIO8)**
-
-### [Focus]
-*   Recalls the brutal but intensely focused early days at Facebook, where extreme resource constraints forced prioritization and made every engineer feel the weight of unchosen tasks.
-*   Illustrates the cost of "good" distractions with a cultural example: the slow abandonment of saying "no" to charitable initiatives, which, while locally positive, collectively drains focus and resources.
-*   Highlights the greater stakes in product development: accumulating small, reasonable features leads to clutter, bloat, and a loss of clear direction.
-*   Urges that the best time to stop a distraction is before it starts, and the second-best time is now, emphasizing the ongoing importance of deliberate prioritization.
-
-### [专注]
-*   回忆了在Facebook早期虽然工作艰苦但极其专注的状态，资源极度匮乏迫使团队必须进行优先级排序，让每位工程师都能感受到未被选择任务的压力。
-*   以公司文化为例，说明“有益”干扰的代价：逐渐放弃对慈善事业说“不”，虽然局部来看是好事，但整体上却消耗了专注力与资源。
-*   强调产品开发中风险更高：不断累积看似合理的小功能，会导致产品臃肿、团队庞大并失去清晰的发展方向。
-*   呼吁要在干扰开始之前阻止它，现在就是第二好的时机，强调了持续保持刻意优先级排序的重要性。
-
-**[Read Original / 阅读原文](https://boz.com/articles/focus)**
-
-<!-- [Title-Only] -->
-### Star Just Ate a Planet, and It's Not Done Yet
-* Based on this dramatic title, the article likely reports on a recently observed astronomical event where a star (possibly a red giant) has gravitationally captured and consumed a planet, a process known as planetary engulfment. The phrase "and it's not done yet" suggests the event may be ongoing or that the star is expected to engulf more planets in its system.
-* This is interesting to readers as it provides a direct, observable example of the violent final stages of planetary system evolution. It helps us understand the fate of solar systems like our own and offers a real-time look at cosmic-scale destruction and transformation.
-
-### 星星刚刚吞噬了一颗行星，而且它还没吃完
-* 根据这个引人注目的标题推测，文章很可能报道了一个最近观测到的天文事件：一颗恒星（可能是一颗红巨星）通过引力捕获并吞噬了一颗行星，这个过程被称为“行星吞并”。“而且它还没吃完”这句话暗示该事件可能仍在进行，或者该恒星预计会吞噬其系统中更多的行星。
-* 这对读者来说之所以值得关注，是因为它提供了一个直接观测到的、恒星系统演化末期的剧烈过程实例。这有助于我们理解类似太阳系的未来命运，并让我们得以实时观测这种宇宙尺度的破坏与转变。
-
-**[Read Original / 阅读原文](https://www.nytimes.com/2026/07/09/science/space/planetary-engulfment-hungry-star.html)**
-
-### Solo Developer's Train Sim Praised as 'Best Ever Made'
-* Developed by a single person, the game *Running Train* is set in a meticulously crafted, fictional region of Japan, with hyper-realistic train lines and terrain.
-* The simulation can be played traditionally or set to run autonomously, allowing players to use a free camera to appreciate the vast, detailed environment (including 40 km of track).
-* Gameplay involves managing speed, braking, and punctuality across 42 routes, with scoring rewards for disabling UI guides. Features include dynamic weather and seasonal changes.
-* Steam reviews are overwhelmingly positive, highlighting its stunning modeling, lighting, and attention to detail, even for elements not visible from the driver's seat.
-* Currently in Early Access, the developer plans to add passenger and conductor systems, with a goal of expanding the track to 100 km by next year.
-
-### 独立开发者打造的火车模拟游戏被誉为"有史以来最佳"
-* 这款由一人开发团队 Novatetsu Games 制作的游戏《Running Train》，其火车线路和日本地形极其写实，设定在一个虚构的日本地区。
-* 玩家既可以亲自操控，也可以让列车自动运行，并使用自由镜头欣赏庞大而细致的游戏环境（包含40公里轨道）。
-* 游戏玩法包括控制速度、刹车和准点率，目前提供42条路线。关闭UI引导可获得更高评分和信用点。游戏支持动态天气和季节变化（如晴天、暴雨、冬季暴雪）。
-* Steam上的评价高度赞誉，玩家称赞其顶级的建模、光照、云层和天气效果，甚至对驾驶座视角外不易察觉的细节也极为用心。
-* 游戏目前处于抢先体验阶段，开发者计划未来加入乘客系统和列车长模式，并期望在明年底前将轨道总长扩展至100公里。
+### 独立开发者制作的火车模拟器被评为有史以来最佳
+* 由独立开发者Novatetsu Games制作的高度真实的火车模拟器《Running Train》获得了极高评价，尽管故事背景设定在日本的虚构区域。
+* 游戏拥有极其细致的环境，包括逻辑合理的电力线、交通和寺庙，玩家可以通过自由相机模式进行探索。
+* Steam评价称赞其顶级的建模和环境细节，抢先体验版包含42条路线，并计划扩展至100公里轨道，并添加乘客系统等功能。
 
 **[Read Original / 阅读原文](https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429)**
 
-### riddle - The Diary of Tom Riddle for reMarkable Paper Pro
-* **What it does**: A native Rust application for the reMarkable Paper Pro tablet that simulates a magical diary. You write on the e-ink screen with the stylus, and after a pause, the app "drinks your ink" (your writing fades) and an AI "oracle" (like Tom Riddle) writes a reply back to you in a flowing, synthesized handwriting, stroke by stroke.
-* **Key features**: Uses raw pen input with pressure sensitivity. Features handwriting synthesis that converts AI text to animated pen strokes. Includes a memory system to recall past entries. Runs in a full "takeover" mode for instant, low-latency ink response by driving the e-ink engine directly. Offers two AI backends: any OpenAI-compatible API or a local `pi` process.
-* **Why it's notable**: It's a highly creative and technically impressive integration of generative AI with an e-ink device, creating a unique, immersive, and "magical" user experience. The project showcases deep hardware hacking (driving the e-ink display) and advanced software engineering in Rust, making it a trending project for its novelty, craftsmanship, and the way it reimagines human-AI interaction on a paper-like device.
+### “Mommy, do you love your phone more than me?”: Parental Device Use and the Adolescent-Caregiver Attachment Bond
+* The study explores "technoference" and "phubbing" (device-based distractions) in parent-child relationships, examining how adolescents perceive their caregivers' device-centric behaviors and how this relates to their emotional appraisal and attachment security.
+* Researchers validated the Device Attachment Interference Scale (DAIS) with a sample of 600 U.S. adolescents (ages 12–17) and found that higher DAIS scores, indicating greater perceived device interference, were consistently associated with higher levels of both anxious and insecure avoidant attachment to primary caregiver figures.
 
-### riddle - reMarkable Paper Pro 上的汤姆·里德尔日记
-* **功能介绍**: 这是一个为 reMarkable Paper Pro 平板电脑打造的原生 Rust 应用程序，模拟一本“魔法日记”。你用触控笔在电子墨水屏幕上书写，稍作停顿后，应用会“饮下你的墨水”（你的笔迹逐渐消失），随后由 AI “神谕”（宛如汤姆·里德尔）以流畅的手写体、一笔一划地为你书写回复。
-* **主要特点**: 利用原始的、具有压感灵敏度的笔迹输入。包含手写合成技术，可将AI文本转化为动画笔触。拥有记忆系统，可回忆过往条目。运行于全屏“接管”模式，通过直接驱动电子墨水引擎实现极低延迟的即时笔墨响应。提供两种AI后端选择：任何兼容OpenAI的API或本地的 `pi` 进程。
-* **为何值得关注**: 这是生成式AI与电子墨水设备的一次极具创意和高技术含量的整合，创造了一种独特、沉浸且充满“魔力”的用户体验。该项目展示了深度硬件破解（驱动电子墨水显示屏）和Rust语言的精湛软件工程，因其新颖性、精巧的工艺以及重新构想纸感设备上人机交互的方式而成为热门项目。
+### “妈妈，你爱手机胜过爱我吗？”：父母的电子设备使用与青少年-照料者的依恋关系
+* 本研究探讨了亲子关系中的“技术干扰”（technoference）和“低头族”（phubbing）现象，考察了青少年如何看待照料者以设备为中心的行为，以及这种看法如何与他们的情感评价和依恋安全感相关联。
+* 研究人员在美国600名青少年（12-17岁）中验证了《设备依恋干扰量表》（DAIS），并发现更高的DAIS分数（表明感知到的设备干扰更强）始终与他们对主要照料者形象（如父母）更高水平的焦虑型依恋和回避型不安全依恋相关联。
+
+**[Read Original / 阅读原文](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full)**
+
+### Pgrust: A Postgres Rewrite in Rust
+
+*   **Core Objective**: Pgrust is a reimplementation of PostgreSQL written in Rust, targeting compatibility with Postgres 18.3.
+*   **Compatibility & Performance**: It matches Postgres's expected output on over 46,000 regression queries and is disk-compatible, able to boot from an existing Postgres data directory. A new, unpublished version is 50% faster on transactional workloads and approximately 300x faster on analytical workloads than Postgres.
+*   **Development Approach**: The goal is to maintain Postgres's behavior and use its regression tests as an oracle, leveraging Rust and AI-assisted programming to explore deeper server architecture changes, like multithreading.
+*   **Current Status**: Not yet production-ready or performance-optimized. Existing Postgres extensions and procedural languages (PL/Python, PL/Perl, etc.) are not generally compatible yet.
+*   **Future Roadmap**: Plans include built-in connection pooling, better JSON workload support, storage experiments (like no-vacuum designs), and runtime guardrails for AI-generated SQL.
+*   **Availability**: Try a WebAssembly demo online or run it via Docker. It can also be built from source on macOS or Debian/Ubuntu.
+
+### Pgrust：一个使用 Rust 编写的 Postgres 重写项目
+
+*   **核心目标**：Pgrust 是一个使用 Rust 语言重新实现的 PostgreSQL 项目，目标是兼容 Postgres 18.3。
+*   **兼容性与性能**：它在超过 46,000 个回归查询上与 Postgres 的预期输出匹配，并且磁盘兼容，可以从现有的 Postgres 数据目录启动。一个尚未发布的最新版本在事务型工作负载上比 Postgres 快 50%，在分析型工作负载上快约 300 倍。
+*   **开发方法**：其目标是保持 Postgres 的行为，并将其回归测试作为基准，利用 Rust 和 AI 辅助编程来探索更深入的服务器架构变更（例如多线程化）。
+*   **当前状态**：尚未达到生产可用或性能优化阶段。现有的 Postgres 扩展和过程语言（如 PL/Python、PL/Perl 等）通常尚不兼容。
+*   **未来路线图**：计划包括内置连接池、更好的 JSON 工作负载支持、存储实验（如无清理设计）以及为 AI 生成的 SQL 设置运行时保护。
+*   **获取与使用**：可在线体验 WebAssembly 演示，或通过 Docker 运行。也可在 macOS 或 Debian/Ubuntu 系统上从源代码构建。
+
+**[Read Original / 阅读原文](https://github.com/malisper/pgrust)**
+
+### Desktop Commander MCP - AI-Powered Desktop Control for Claude
+*   **What it does:** This is a Model Context Protocol (MCP) server that allows Claude and other AI clients to directly control your computer. It enables the AI to execute terminal commands, manage processes, perform full filesystem operations (read, write, search, edit), and work with files like Excel, PDF, and DOCX through natural language.
+*   **Key features:**
+    *   **Terminal & Process Control:** Run commands, interact with processes (SSH, databases), manage long-running sessions, and stream output.
+    *   **Enhanced File Operations:** Beyond basic read/write, it offers recursive search/replace, negative offset file reading, native Excel/PDF/DOCX support, and a file preview UI.
+    *   **Code Execution:** Run code snippets in Python, Node.js, or R directly in memory without saving files.
+    *   **Security & Management:** Includes audit logging, command blocklists, Docker isolation options, and extensive configuration management.
+    *   **Multiple Installation Methods:** Offers easy setup via npx, bash scripts, Smithery, Docker, or manual configuration, with most supporting auto-updates.
+*   **Why it's notable:** It significantly expands Claude's capabilities from a chat assistant into a practical, automated desktop tool for developers and power users. The combination of deep system control, comprehensive file handling, and robust security features addresses a key need for AI-assisted development workflows. Its trending status (185 stars today) and numerous verification badges (AgentAudit, Trust Score, Smithery) highlight its growing recognition and trust in the MCP ecosystem.
+
+### Desktop Commander MCP - Claude的AI桌面控制工具
+*   **功能介绍：** 这是一个模型上下文协议（MCP）服务器，它允许 Claude 及其他 AI 客户端直接控制您的计算机。AI 可以通过自然语言执行终端命令、管理进程、进行完整的文件系统操作（读、写、搜索、编辑），并处理 Excel、PDF、DOCX 等文件。
+*   **主要特点：**
+    *   **终端与进程控制：** 运行命令、与进程交互（如SSH、数据库）、管理长时间运行的会话并流式传输输出。
+    *   **增强的文件操作：** 除了基本的读写，还提供递归搜索/替换、文件末尾负偏移读取、原生 Excel/PDF/DOCX 支持以及文件预览界面。
+    *   **代码执行：** 直接在内存中运行 Python、Node.js 或 R 的代码片段，无需保存文件。
+    *   **安全与管理：** 包含审计日志、命令黑名单、Docker 隔离选项以及全面的配置管理。
+    *   **多种安装方式：** 提供通过 npx、bash 脚本、Smithery、Docker 或手动配置的简便设置，大部分方式支持自动更新。
+*   **为何值得关注：** 它极大地扩展了 Claude 的能力，将其从聊天助手转变为开发者和高级用户的实用自动化桌面工具。其深度系统控制、全面的文件处理能力和稳健的安全特性组合，满足了 AI 辅助开发工作流的关键需求。其今日的热门状态（获得185颗星）以及众多的验证徽章（如AgentAudit、Trust Score、Smithery）突显了它在 MCP 生态中日益增长的认可度和可信度。
+
+**[View Repository / 查看仓库](https://github.com/wonderwhy-er/DesktopCommanderMCP)**
+
+### **riddle** - The diary of Tom Riddle for the reMarkable Paper Pro
+* **What it does:** A magic diary app for the reMarkable Paper Pro e-ink tablet. You write with the stylus, and after a pause, your ink fades into the paper. The diary then "thinks" and writes an AI-generated reply in a flowing handwriting script, which also eventually fades away.
+* **Key features:**
+    * **Direct e-ink control:** Uses a custom takeover mode for instant ink and lowest latency by driving the e-ink hardware directly.
+    * **Natural Interaction:** The entire interface is pen-on-paper. Gestures include writing, waiting, flipping the marker to erase, drawing a "?" for help, and five-finger tap to exit.
+    * **Persistent Memory:** Remembers past pages. You can ask it to recall previous conversations (e.g., "show me what I wrote about...") and the diary will rewrite that page in your own handwriting and Tom's old reply.
+    * **Multiple AI Backends:** Supports any OpenAI-compatible API or a local `pi` process for generating responses.
+    * **Handwriting Synthesis:** Converts typed text into realistic, stroke-by-stroke handwriting that is animated onto the e-ink display.
+* **Why it's notable:** It's a creative and technically impressive project that transforms a modern e-ink device into a magical, low-tech-feeling interface. By removing all screen glare and UI chrome, it creates a novel and immersive way to interact with AI, purely through the medium of ink on paper. The direct hardware control for ultra-low latency and the clever implementation of a "memory" feature make it stand out.
+
+### **riddle** - 用于 reMarkable Paper Pro 的汤姆·里德尔日记
+* **功能介绍:** 专为 reMarkable Paper Pro 电子墨水平板打造的神奇日记应用。您用笔书写，片刻之后，墨迹会“沉入”纸中消失。随后，日记会“思考”，并以流畅的手写字体写下由 AI 生成的回复，这些回复最终也会逐渐淡去。
+* **主要特点:**
+    * **直驱电子墨水：** 采用独特的接管模式，通过直接控制电子墨水硬件实现即时墨迹显示和最低延迟。
+    * **自然交互：** 整个界面就是纸上书写。支持的手势包括书写、等待、翻转笔帽擦除、画“？”获取帮助以及五指点击退出。
+    * **持久记忆：** 能记住过去的页面。您可以要求它回忆之前的对话（例如，“给我看看关于花园的那页”），日记会以您自己的笔迹和汤姆之前的回复重写那一页。
+    * **多 AI 后端支持：** 支持任何兼容 OpenAI 的 API 或本地 `pi` 进程来生成回复。
+    * **手写体合成：** 将文本转换为逼真的、逐笔绘制的手写字迹，并在电子墨水屏上动画显示。
+* **为何值得关注:** 这是一个富有创意且技术含量很高的项目，将现代电子墨水设备转变为一个充满魔法感、低科技感的界面。通过消除所有屏幕眩光和 UI 元素，它创造了一种新颖而沉浸式的 AI 交互方式，纯粹通过纸墨这一媒介实现。其为追求超低延迟而直接控制硬件，以及巧妙实现的“记忆”功能使其格外引人注目。
 
 **[View Repository / 查看仓库](https://github.com/MaximeRivest/riddle)**
 
 ### 🎬 The Real Effects of the Six Day War - Sarah Paine
 **Channel:** Dwarkesh Patel
+*   What the video covers: A deep historical analysis of the 1967 Six-Day War, moving beyond the military narrative to explore its profound and lasting consequences for the Middle East, global politics, and the participants themselves.
+*   Key topics discussed: The war's immediate geopolitical outcomes, its long-term impact on the Israeli-Palestinian conflict, shifts in global superpower dynamics, and the complex legacy for nations like Egypt, Jordan, and Syria.
+*   Why it's worth watching: Features historian Sarah Paine, providing expert insight into a pivotal event whose effects continue to shape modern international relations. It offers a nuanced understanding of history's ripple effects, crucial for comprehending current events.
 
-*   What the video covers
-*   Key topics discussed
-*   Why it's worth watching
-
-### 🎬 六日战争的真实影响 - Sarah Paine
+### 🎬 真实影响：六日战争 - 莎拉·佩恩
 **频道:** Dwarkesh Patel
-
-*   视频内容概述
-*   主要话题
-*   为何值得观看
+*   视频内容概述：深入剖析1967年六日战争，超越单纯的军事叙述，着重探讨其对中东、全球政治以及参战各方所产生的深远而持久的影响。
+*   主要话题：战争的直接地缘政治后果、其对以巴冲突的长期影响、全球超级大国力量动态的转变，以及对埃及、约旦和叙利亚等国的复杂遗产。
+*   为何值得观看：历史学家莎拉·佩恩提供专业洞见，解析这一塑造了当今国际关系的关键历史事件。视频提供了对历史连锁效应的细腻理解，是把握当前时局的重要视角。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=WQIdiMbpBVI)**
 
 ### 🎬 A proper guide to Fable 5
 **Channel:** Theo - t3․gg
+*   **What the video covers:** This appears to be an enthusiastic first-impressions guide and overview for the upcoming game, *Fable 5*. The creator shares their immediate, powerful reaction to the game, hinting it's an incredible experience.
+*   **Key topics discussed:** Likely includes initial gameplay impressions, core mechanics, world-building, and the creator's personal take on how the new entry compares to the legacy of the *Fable* series.
+*   **Why it's worth watching:** For fans anticipating the game, this offers a genuine, passionate first look from a prominent content creator. The description's strong language ("incredible," "might be better than...") suggests it's a compelling, must-watch preview for the *Fable* community.
 
-*   This video serves as an in-depth guide to the game *Fable 5*, created by a passionate fan who was deeply impressed by the game.
-*   The discussion likely covers essential gameplay strategies, key features, and perhaps a review of the game's world and mechanics based on the creator's personal experience.
-*   It's worth watching for players seeking a comprehensive walkthrough or for those interested in a heartfelt, expert opinion on why *Fable 5* stands out, with the creator stating it might surpass the original.
-
-### 🎬 《神鬼寓言5》完整游玩指南
+### 🎬 A proper guide to Fable 5
 **频道:** Theo - t3․gg
-
-*   本视频是对游戏《神鬼寓言5》的深度游玩指南，由一位对游戏感到惊叹的资深玩家制作。
-*   内容可能涵盖了核心的游戏策略、关键特色，以及基于创作者个人体验对游戏世界和机制的评测。
-*   值得观看的原因在于它为玩家提供了全面的攻略参考，同时也分享了创作者的真挚见解，其认为《神鬼寓言5》甚至可能超越前作，极具参考价值。
+*   **视频内容概述:** 这似乎是对即将推出的游戏《神鬼寓言5》的充满热情的首玩指南和概览。创作者分享了他们对游戏的即时、强烈的反应，暗示这是一款令人难以置信的体验。
+*   **主要话题:** 可能包括初始游戏印象、核心机制、世界构建，以及创作者个人对新作如何与《神鬼寓言》系列传统相比较的看法。
+*   **为何值得观看:** 对于期待这款游戏的粉丝来说，这是一次来自知名内容创作者的、真诚而充满热情的初体验展示。描述中强烈的用语（“难以置信”、“可能比…更好”）表明，这是《神鬼寓言》社区不容错过的一次精彩预览。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
+
+### 🎬 Claude Desktop Is Now FREE?! Use ALL Claude Models (Full Setup Guide)
+**Channel:** Data Scientist Afzal
+*   This video provides a complete setup guide for using the now-free Claude Desktop application.
+*   It demonstrates how to access and utilize all of Claude's available AI models through the desktop interface.
+*   The guide is worth watching for anyone looking for a powerful, cost-free alternative to web-based AI chats, especially for coding or complex tasks that benefit from local tool integration.
+
+### 🎬 Claude Desktop 现在免费了？！使用所有 Claude 模型（完整设置指南）
+**频道:** Data Scientist Afzal
+*   视频内容是指导观众如何免费使用Claude Desktop应用程序，并接入所有Claude模型。
+*   主要话题围绕免费获取途径、全模型支持以及详细的分步设置教程展开。
+*   该指南非常值得观看，它能帮助用户节省订阅费用，并充分利用Claude作为强大的本地AI助手，尤其适合需要结合本地工具进行编程或复杂任务的场景。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8NlxDB1VIyY)**
 
