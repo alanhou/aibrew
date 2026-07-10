@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 10, 2026"
 date: 2026-07-10
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -429,4 +429,89 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 对于寻求**大幅提升移动应用开发效率**的开发者而言，此视频非常值得观看。它并非孤立地教授Claude Code，而是提供了一个针对高需求平台（移动端）的、从零到一的专注指南，对于希望升级自身技术栈的开发者来说，是一个高效的学习资源。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=p80OV6kjIO8)**
+
+### [Focus]
+*   Recalls the brutal but intensely focused early days at Facebook, where extreme resource constraints forced prioritization and made every engineer feel the weight of unchosen tasks.
+*   Illustrates the cost of "good" distractions with a cultural example: the slow abandonment of saying "no" to charitable initiatives, which, while locally positive, collectively drains focus and resources.
+*   Highlights the greater stakes in product development: accumulating small, reasonable features leads to clutter, bloat, and a loss of clear direction.
+*   Urges that the best time to stop a distraction is before it starts, and the second-best time is now, emphasizing the ongoing importance of deliberate prioritization.
+
+### [专注]
+*   回忆了在Facebook早期虽然工作艰苦但极其专注的状态，资源极度匮乏迫使团队必须进行优先级排序，让每位工程师都能感受到未被选择任务的压力。
+*   以公司文化为例，说明“有益”干扰的代价：逐渐放弃对慈善事业说“不”，虽然局部来看是好事，但整体上却消耗了专注力与资源。
+*   强调产品开发中风险更高：不断累积看似合理的小功能，会导致产品臃肿、团队庞大并失去清晰的发展方向。
+*   呼吁要在干扰开始之前阻止它，现在就是第二好的时机，强调了持续保持刻意优先级排序的重要性。
+
+**[Read Original / 阅读原文](https://boz.com/articles/focus)**
+
+<!-- [Title-Only] -->
+### Star Just Ate a Planet, and It's Not Done Yet
+* Based on this dramatic title, the article likely reports on a recently observed astronomical event where a star (possibly a red giant) has gravitationally captured and consumed a planet, a process known as planetary engulfment. The phrase "and it's not done yet" suggests the event may be ongoing or that the star is expected to engulf more planets in its system.
+* This is interesting to readers as it provides a direct, observable example of the violent final stages of planetary system evolution. It helps us understand the fate of solar systems like our own and offers a real-time look at cosmic-scale destruction and transformation.
+
+### 星星刚刚吞噬了一颗行星，而且它还没吃完
+* 根据这个引人注目的标题推测，文章很可能报道了一个最近观测到的天文事件：一颗恒星（可能是一颗红巨星）通过引力捕获并吞噬了一颗行星，这个过程被称为“行星吞并”。“而且它还没吃完”这句话暗示该事件可能仍在进行，或者该恒星预计会吞噬其系统中更多的行星。
+* 这对读者来说之所以值得关注，是因为它提供了一个直接观测到的、恒星系统演化末期的剧烈过程实例。这有助于我们理解类似太阳系的未来命运，并让我们得以实时观测这种宇宙尺度的破坏与转变。
+
+**[Read Original / 阅读原文](https://www.nytimes.com/2026/07/09/science/space/planetary-engulfment-hungry-star.html)**
+
+### Solo Developer's Train Sim Praised as 'Best Ever Made'
+* Developed by a single person, the game *Running Train* is set in a meticulously crafted, fictional region of Japan, with hyper-realistic train lines and terrain.
+* The simulation can be played traditionally or set to run autonomously, allowing players to use a free camera to appreciate the vast, detailed environment (including 40 km of track).
+* Gameplay involves managing speed, braking, and punctuality across 42 routes, with scoring rewards for disabling UI guides. Features include dynamic weather and seasonal changes.
+* Steam reviews are overwhelmingly positive, highlighting its stunning modeling, lighting, and attention to detail, even for elements not visible from the driver's seat.
+* Currently in Early Access, the developer plans to add passenger and conductor systems, with a goal of expanding the track to 100 km by next year.
+
+### 独立开发者打造的火车模拟游戏被誉为"有史以来最佳"
+* 这款由一人开发团队 Novatetsu Games 制作的游戏《Running Train》，其火车线路和日本地形极其写实，设定在一个虚构的日本地区。
+* 玩家既可以亲自操控，也可以让列车自动运行，并使用自由镜头欣赏庞大而细致的游戏环境（包含40公里轨道）。
+* 游戏玩法包括控制速度、刹车和准点率，目前提供42条路线。关闭UI引导可获得更高评分和信用点。游戏支持动态天气和季节变化（如晴天、暴雨、冬季暴雪）。
+* Steam上的评价高度赞誉，玩家称赞其顶级的建模、光照、云层和天气效果，甚至对驾驶座视角外不易察觉的细节也极为用心。
+* 游戏目前处于抢先体验阶段，开发者计划未来加入乘客系统和列车长模式，并期望在明年底前将轨道总长扩展至100公里。
+
+**[Read Original / 阅读原文](https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429)**
+
+### riddle - The Diary of Tom Riddle for reMarkable Paper Pro
+* **What it does**: A native Rust application for the reMarkable Paper Pro tablet that simulates a magical diary. You write on the e-ink screen with the stylus, and after a pause, the app "drinks your ink" (your writing fades) and an AI "oracle" (like Tom Riddle) writes a reply back to you in a flowing, synthesized handwriting, stroke by stroke.
+* **Key features**: Uses raw pen input with pressure sensitivity. Features handwriting synthesis that converts AI text to animated pen strokes. Includes a memory system to recall past entries. Runs in a full "takeover" mode for instant, low-latency ink response by driving the e-ink engine directly. Offers two AI backends: any OpenAI-compatible API or a local `pi` process.
+* **Why it's notable**: It's a highly creative and technically impressive integration of generative AI with an e-ink device, creating a unique, immersive, and "magical" user experience. The project showcases deep hardware hacking (driving the e-ink display) and advanced software engineering in Rust, making it a trending project for its novelty, craftsmanship, and the way it reimagines human-AI interaction on a paper-like device.
+
+### riddle - reMarkable Paper Pro 上的汤姆·里德尔日记
+* **功能介绍**: 这是一个为 reMarkable Paper Pro 平板电脑打造的原生 Rust 应用程序，模拟一本“魔法日记”。你用触控笔在电子墨水屏幕上书写，稍作停顿后，应用会“饮下你的墨水”（你的笔迹逐渐消失），随后由 AI “神谕”（宛如汤姆·里德尔）以流畅的手写体、一笔一划地为你书写回复。
+* **主要特点**: 利用原始的、具有压感灵敏度的笔迹输入。包含手写合成技术，可将AI文本转化为动画笔触。拥有记忆系统，可回忆过往条目。运行于全屏“接管”模式，通过直接驱动电子墨水引擎实现极低延迟的即时笔墨响应。提供两种AI后端选择：任何兼容OpenAI的API或本地的 `pi` 进程。
+* **为何值得关注**: 这是生成式AI与电子墨水设备的一次极具创意和高技术含量的整合，创造了一种独特、沉浸且充满“魔力”的用户体验。该项目展示了深度硬件破解（驱动电子墨水显示屏）和Rust语言的精湛软件工程，因其新颖性、精巧的工艺以及重新构想纸感设备上人机交互的方式而成为热门项目。
+
+**[View Repository / 查看仓库](https://github.com/MaximeRivest/riddle)**
+
+### 🎬 The Real Effects of the Six Day War - Sarah Paine
+**Channel:** Dwarkesh Patel
+
+*   What the video covers
+*   Key topics discussed
+*   Why it's worth watching
+
+### 🎬 六日战争的真实影响 - Sarah Paine
+**频道:** Dwarkesh Patel
+
+*   视频内容概述
+*   主要话题
+*   为何值得观看
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WQIdiMbpBVI)**
+
+### 🎬 A proper guide to Fable 5
+**Channel:** Theo - t3․gg
+
+*   This video serves as an in-depth guide to the game *Fable 5*, created by a passionate fan who was deeply impressed by the game.
+*   The discussion likely covers essential gameplay strategies, key features, and perhaps a review of the game's world and mechanics based on the creator's personal experience.
+*   It's worth watching for players seeking a comprehensive walkthrough or for those interested in a heartfelt, expert opinion on why *Fable 5* stands out, with the creator stating it might surpass the original.
+
+### 🎬 《神鬼寓言5》完整游玩指南
+**频道:** Theo - t3․gg
+
+*   本视频是对游戏《神鬼寓言5》的深度游玩指南，由一位对游戏感到惊叹的资深玩家制作。
+*   内容可能涵盖了核心的游戏策略、关键特色，以及基于创作者个人体验对游戏世界和机制的评测。
+*   值得观看的原因在于它为玩家提供了全面的攻略参考，同时也分享了创作者的真挚见解，其认为《神鬼寓言5》甚至可能超越前作，极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
 
