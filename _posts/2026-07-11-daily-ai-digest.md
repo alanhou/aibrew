@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 11, 2026"
 date: 2026-07-11
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，11个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Relativistic Effects Alter Chemical Bonding in Heavy Elements
@@ -496,4 +496,184 @@ pin: false### Relativistic Effects Alter Chemical Bonding in Heavy Elements
 *   对于想快速了解Python为何在科技界持续占据主导地位，并与JavaScript和Java等巨头相媲美的初学者和开发者来说，本视频清晰易懂，值得观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=cR0YAtl8AUk)**
+
+### Networking and the Internet, from First Principles
+*   Explains the chain of physical conversions (radio, electricity, light) that enable instant global communication, highlighting the remarkable, decentralized operation of the internet without a central coordinator.
+*   Introduces the goal of building understanding from first principles (like packet switching, TCP, DNS) to demystify everyday internet behavior, from address bar padlocks to data rerouting.
+
+### 从第一性原理理解网络与互联网
+*   描述了支撑即时全球通信的物理转换链条（无线电、电、光），并强调互联网作为一个去中心化系统的非凡可靠运行。
+*   阐述了从第一性原理（如分组交换、TCP、DNS）构建理解框架的目标，旨在揭开地址栏锁图标、数据重新路由等日常互联网现象的神秘面纱。
+
+**[Read Original / 阅读原文](https://fazamhd.com/mental-models/networking/)**
+
+### Lucky Code: Faster Sorting Through Compiler-Friendly Styles
+* The article explores how modern compilers like Clang optimize loops into fast, branch-free instructions when given the right code structure.
+* A branchless quicksort implementation using sorting networks is presented, achieving 4.39 seconds to sort 50 million doubles on an M1 Mac (Clang, -O3).
+* This is contrasted with C++ `std::sort`, which takes 1.33 seconds for the same task.
+* A key optimization involves rewriting explicit pointer movement (`lwr++;`) into a more idiomatic C style (`*lwr++ = x;`), which aids compiler analysis and optimization.
+* The core idea is that writing code in a "compiler-friendly" way can unlock significant performance gains without changing the algorithm.
+
+### 幸运代码：通过编译器友好风格实现更快排序
+* 文章探讨了现代编译器（如Clang）如何在合适的代码结构下，将循环优化为快速、无分支的指令。
+* 展示了一个使用排序网络的无分支快速排序实现，在M1 Mac（Clang，-O3优化）上排序5000万双精度浮点数耗时4.39秒。
+* 这一性能与C++标准库的 `std::sort`（耗时1.33秒）形成了对比。
+* 一项关键优化是将显式的指针移动代码（`lwr++;`）重写为更地道的C风格（`*lwr++ = x;`），这有助于编译器分析和优化。
+* 核心思想是，以“编译器友好”的方式编写代码，可以在不改变算法的情况下，显著提升性能。
+
+**[Read Original / 阅读原文](https://tiki.li/blog/lucky_code.html)**
+
+### **Google Search Enhances Tools for Content Creators**
+*   Google is rolling out a new "platform properties" feature in its Search Console to help creators and website owners track their social media presence.
+*   The tool allows users to see which search terms lead people to their Instagram, TikTok, X (Twitter), and YouTube content, and how audiences interact with those posts.
+*   This update is part of Google's broader push to make Search a central hub for creators, complementing the dedicated Search profiles launched earlier.
+*   It provides valuable search discovery data, especially for creators who don't have their own dedicated website.
+*   The feature will be gradually rolled out over the coming weeks.
+
+### **谷歌搜索为内容创作者提供更全面的触达数据**
+*   谷歌在Search Console中推出一项名为“平台属性”的新功能，帮助内容创作者和网站所有者追踪其在社交媒体上的影响力。
+*   该工具让用户可以查看哪些搜索词会引导人们发现他们在Instagram、TikTok、X（推特）和YouTube上的内容，并了解受众如何与他们的帖子互动。
+*   此更新是谷歌将搜索打造为创作者内容中心战略的一部分，与其早前推出的个人搜索主页功能相辅相成。
+*   它为创作者（尤其是没有独立网站的创作者）提供了关于其内容如何被搜索发现的宝贵数据。
+*   该功能将在未来几周内逐步推出。
+
+**[Read Original / 阅读原文](https://www.theverge.com/tech/961955/google-search-console-reach-platform-properties)**
+
+### Catch2 - A Modern C++ Unit Testing Framework
+*   **What it does:** Catch2 is a feature-rich testing framework primarily for writing unit tests in C++. It also includes support for micro-benchmarking and simple Behavior-Driven Development (BDD) syntax.
+*   **Key features:** Designed for simplicity and natural C++ usage (e.g., test names can be arbitrary strings, assertions use boolean expressions). It supports modern C++ standards (C++14 and later) and now operates as a compiled library (in v3) instead of a single header. Offers sections for shared setup/teardown.
+*   **Why it's notable:** It is extremely popular (evidenced by the high star count and daily growth) due to its ease of use and developer-friendly design. The project is actively maintained, with a recent major version release (v3) and a clear migration path. It is used in both open-source and commercial software.
+
+### Catch2 - 一个现代的 C++ 单元测试框架
+*   **功能介绍:** Catch2 是一个功能强大的测试框架，主要用于编写 C++ 单元测试。它还提供了基础的微基准测试功能和简单的 BDD（行为驱动开发）宏支持。
+*   **主要特点:** 设计目标是简单且符合 C++ 自然习惯（例如，测试名称无需是合法标识符，断言形式类似普通布尔表达式，`SECTION` 提供了优雅的局部化共享设置/拆解机制）。支持现代 C++ 标准（C++14 及以上），v3 版本已改为编译型库（不再是单头文件）。
+*   **为何值得关注:** 由于其极高的易用性和开发者友好的设计，该框架非常流行（日增星数可观）。项目活跃维护，刚发布了重大版本 v3，并提供了清晰的迁移指南，被众多开源和商业项目采用。
+
+**[View Repository / 查看仓库](https://github.com/catchorg/Catch2)**
+
+### davila7/claude-code-templates - CLI tool for configuring and monitoring Claude Code
+* **What it does:** A comprehensive CLI tool and web dashboard for easily installing and managing ready-to-use configurations, AI agents, custom commands, and integrations for Anthropic's Claude Code.
+* **Key features:** Provides a catalog of 100+ components (agents, commands, MCPs, settings, hooks) via an interactive installer (`npx`), a web interface ([aitmpl.com](https://aitmpl.com)), and additional tools for analytics, real-time chat monitoring, health checks, and plugin management.
+* **Why it's notable:** It's trending (230 stars today) due to its utility in streamlining AI-assisted development workflows. The project is actively sponsored and recognized by major open-source programs (Claude, Neon, Vercel) and aggregates components from multiple community sources, creating a valuable, centralized resource for the Claude ecosystem.
+
+### davila7/claude-code-templates - 用于配置和监控 Claude Code 的命令行工具
+* **功能介绍:** 一个综合性的命令行工具和 Web 仪表板，用于轻松安装和管理面向 Anthropic Claude Code 的现成配置、AI 代理、自定义命令和集成。
+* **主要特点:** 通过交互式安装程序（`npx`）和 Web 界面（[aitmpl.com](https://aitmpl.com)）提供包含代理、命令、MCP、设置、钩子在内的 100+ 组件目录，并附带用于分析、实时聊天监控、健康检查和插件管理的额外工具。
+* **为何值得关注:** 该项目因对简化 AI 辅助开发工作流程的实用价值而正在获得关注（今日新增 230 星）。它获得了 Claude、Neon、Vercel 等主要开源项目的赞助和认可，并整合了来自多个社区来源的组件，为 Claude 生态系统创建了一个宝贵的、中心化的资源。
+
+**[View Repository / 查看仓库](https://github.com/davila7/claude-code-templates)**
+
+### Stitch Skills - Agent Skills Library for Google Stitch MCP Server
+*   **What it does**: Provides a collection of standardized "Agent Skills" and plugins designed to enhance coding agents (like Codex, Gemini CLI, Claude Code, Cursor) by integrating them with the Google Stitch design platform. These skills enable workflows that convert designs to code, manage design systems, and generate UI components directly from Stitch projects.
+*   **Key features**:
+    *   **Three Core Plugins**: `stitch-design` (design workflows), `stitch-build` (code/component generation), and `stitch-utilities` (supporting tools).
+    *   **Cross-Agent Compatibility**: Adheres to the Agent Skills open standard, working with multiple popular AI coding assistants.
+    *   **Comprehensive Toolset**: Includes specific skills for tasks like converting frontend code to Stitch designs, generating React/React Native components from designs, managing design systems via `DESIGN.md`, and creating design walkthrough videos.
+    *   **Flexible Installation**: Can be installed as a full plugin suite or selectively by individual skill.
+*   **Why it's notable**: This project is trending (338 stars today) as it represents a key bridge between AI-powered coding agents and design tools, standardizing how agents interact with design systems. It simplifies and automates the design-to-code pipeline, making it highly relevant for modern, agent-assisted development workflows.
+
+### Stitch Skills - 用于 Google Stitch MCP 服务器的代理技能库
+*   **功能介绍**：提供一系列标准化的“代理技能”和插件，旨在通过与 Google Stitch 设计平台的集成来增强编码代理（如 Codex、Gemini CLI、Claude Code、Cursor）的能力。这些技能支持将设计转换为代码、管理系统设计以及直接从 Stitch 项目生成 UI 组件的工作流。
+*   **主要特点**：
+    *   **三大核心插件**：`stitch-design`（设计工作流）、`stitch-build`（代码/组件生成）和 `stitch-utilities`（辅助工具）。
+    *   **跨代理兼容性**：遵循代理技能开放标准，与多种主流 AI 编码助手兼容。
+    *   **全面的工具集**：包含用于前端代码转 Stitch 设计、根据设计生成 React/React Native 组件、通过 `DESIGN.md` 管理设计系统以及创建设计演示视频等特定技能。
+    *   **灵活安装**：既可以作为完整的插件套件安装，也可以按需选择单个技能安装。
+*   **为何值得关注**：该项目今日获得大量关注（338 星），因为它代表了 AI 编码代理与设计工具之间的关键桥梁，标准化了代理与设计系统的交互方式。它简化并自动化了从设计到代码的流程，对于现代、由代理辅助的开发工作流极具实用价值。
+
+**[View Repository / 查看仓库](https://github.com/google-labs-code/stitch-skills)**
+
+### scroll-world - An AI-Powered "Fly-Through" Scroll Animation Skill
+*   **What it does**: An AI agent skill that generates an immersive, continuous 3D scroll-through landing page for any brand or industry. It creates a seamless "camera flight" animation where scrolling controls the progression through interconnected, AI-generated isometric scenes, similar to Apple's product pages.
+*   **Key features**:
+    *   **AI Asset Generation**: Uses the Higgsfield pipeline (GPT Image 2 + Seedance) to create cohesive diorama scenes and smooth camera flight videos between them.
+    *   **Seamless Scene Stitching**: Automatically generates "connector" clips between scenes using rendered frames for perfect, cut-free transitions.
+    *   **Portable Scrub Engine**: Includes a framework-agnostic, vanilla-JS scroll-scrubbing engine (`scrub-engine.js`) that works with plain HTML, Next.js, Vue, etc.
+    *   **Agent-Integrated**: Designed as a plugin/skill for coding agents like Claude Code and Codex, invoked via commands.
+*   **Why it's notable**: It democratizes a complex, high-end web design technique (like Apple's scroll animations) by leveraging AI to automate the creation of both the art and the motion. It merges generative AI with front-end animation into a single, agent-driven workflow, making immersive brand storytelling more accessible.
+
+### scroll-world - AI驱动的"飞越式"滚动动画技能
+*   **功能介绍**: 一个AI代理技能，能够为任何品牌或行业生成一个沉浸式、连续的3D滚动浏览着陆页。它创建了一个无缝的"摄像机飞行"动画，通过滚动来控制在相互连接的AI生成等距场景中的行进，类似于苹果产品页面的效果。
+*   **主要特点**:
+    *   **AI资产生成**: 使用Higgsfield技术栈（GPT Image 2 + Seedance）来生成风格统一的立体模型场景和流畅的场景间摄像机飞行动画。
+    *   **无缝场景拼接**: 自动使用已渲染帧生成场景间的"连接"片段，确保完美无剪辑的过渡。
+    *   **可移植的滚动引擎**: 包含一个与框架无关的、纯JavaScript的滚动播放控制引擎（`scrub-engine.js`），可应用于纯HTML、Next.js、Vue等技术栈。
+    *   **代理集成**: 专为Claude Code和Codex等编程代理设计，可通过命令调用。
+*   **为何值得关注**: 它利用AI自动化了艺术创作和动态生成过程，使一种复杂的高端网页设计技术（如苹果的滚动动画）变得人人可用。该技能将生成式AI与前端动画融合在一个由代理驱动的单一工作流中，使得沉浸式的品牌故事讲述变得更易实现。
+
+**[View Repository / 查看仓库](https://github.com/oso95/scroll-world)**
+
+### 🎬 The best product leaders aren't the ones with the most ideas.
+**Channel:** Lenny's Podcast
+*   **What the video covers:** This episode challenges the common misconception that the most innovative product leaders are defined by the sheer volume of their ideas. Instead, it explores the true hallmarks of exceptional product leadership, shifting the focus from ideation to execution, strategy, and team enablement.
+*   **Key topics discussed:**
+    *   The pitfalls of a "idea-centric" leadership model.
+    *   Core competencies of top-tier product leaders (e.g., prioritization, clear communication, decision-making, creating clarity).
+    *   How great leaders empower their teams to generate and execute on ideas effectively.
+    *   Real-world examples or frameworks for measuring impact beyond just idea generation.
+*   **Why it's worth watching:** This is a crucial listen for any product manager, founder, or tech leader. It provides a mindset shift that can fundamentally improve how you approach your role, moving from a bottleneck of ideas to an architect of outcomes and team success. Lenny's Podcast consistently features deep, actionable insights from industry leaders.
+
+### 🎬 最优秀的产品领导者并非是那些拥有最多点子的人
+**频道:** Lenny's Podcast
+*   **视频内容概述:** 本期播客挑战了一个常见误区：即最具创新性的产品领导者是由其点子的数量定义的。相反，它深入探讨了卓越产品领导力的真正标志，将焦点从构思（ideation）转移到执行、战略和团队赋能上。
+*   **主要话题:**
+    *   “以点子为中心”的领导模式所存在的陷阱。
+    *   顶尖产品领导者的核心能力（例如：优先级排序、清晰沟通、决策能力、创造清晰度）。
+    *   优秀的领导者如何赋能团队有效地生成和执行点子。
+    *   衡量影响力（超越单纯的点子生成）的真实案例或框架。
+*   **为何值得观看:** 这对任何产品经理、创始人或科技领导者来说都是必听内容。它提供了思维模式的转变，能从根本上改善你处理角色的方式，使你从一个“点子瓶颈”转变为成果和团队成功的“架构者”。Lenny's Podcast 一贯以提供来自行业领袖的深刻、可操作的见解而闻名。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vr13eFx8BEk)**
+
+### 🎬 Don't worship AI tools
+**Channel:** Lenny's Podcast
+*   The video presents a critical and balanced perspective on the current AI boom, advising against the uncritical adoption or "worship" of AI tools.
+*   Key topics include understanding the specific strengths and limitations of AI, focusing on problems rather than tools, and fostering a pragmatic, human-centric approach to leveraging AI effectively.
+*   It's worth watching for its counter-narrative to the pervasive AI hype, offering valuable guidance on how to thoughtfully evaluate and implement AI for real-world value without falling for empty promises.
+
+### 🎬 避免盲目追捧AI工具
+**频道:** Lenny's Podcast
+*   该视频对当前的AI热潮提出了批判性和平衡的观点，建议人们避免不加批判地采用或“盲目追捧”AI工具。
+*   主要话题包括理解AI的具体优势与局限性，关注问题本身而非工具，以及倡导一种务实、以人为中心的方法来有效利用AI。
+*   它之所以值得观看，是因为它提供了与普遍存在的AI炒作相反的叙事，为如何深思熟虑地评估和实施AI以实现真正的价值提供了宝贵的指导，避免陷入空洞的承诺。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=h_1x1UqI5ro)**
+
+### 🎬 Microsoft Just Open-Sourced a Cheat Code for AI Agents (SkillOpt)
+**Channel:** Better Stack
+
+* **What the video covers:** This video introduces SkillOpt, a new open-source framework from Microsoft designed to dramatically improve the development and performance of AI agents. It explains how SkillOpt acts as a "cheat code" by systematically optimizing an agent's ability to use skills (tools/APIs) to complete tasks.
+* **Key topics discussed:**
+    * The challenges AI agents face in reliably selecting and orchestrating multiple skills.
+    * An overview of the SkillOpt framework and its automated optimization process.
+    * How SkillOpt uses reinforcement learning to train agents to make better decisions.
+    * Access to the official repository and resources for developers to get started.
+* **Why it's worth watching:** It covers a cutting-edge, practical tool directly from Microsoft that addresses a core bottleneck in building capable AI agents. For developers and AI enthusiasts, it's a first look at a potential game-changer that could simplify and supercharge agent workflows.
+
+### 🎬 微软开源AI代理“作弊码”：SkillOpt 详解
+**频道:** Better Stack
+
+* **视频内容概述:** 本视频深入介绍了微软开源的新框架 SkillOpt。该框架旨在大幅提升 AI 代理（Agent）的开发效率与任务执行可靠性。视频将其比作“作弊码”，因为它能系统性地优化代理调用各类工具/技能的能力。
+* **主要话题:**
+    * 当前 AI 代理在可靠地选择与编排多个技能时所面临的挑战。
+    * SkillOpt 框架的核心概念及其自动化优化流程。
+    * 该框架如何利用强化学习技术来训练代理做出更优决策。
+    * 为开发者提供的官方仓库链接与快速入门资源。
+* **为何值得观看:** 视频聚焦于一个来自微软的、高度实用的前沿工具，直击构建强大 AI 代理过程中的核心痛点。对于开发者及 AI 技术爱好者而言，这是了解一个可能彻底改变并赋能代理工作流的革命性项目的绝佳机会。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jjze-8Wia38)**
+
+### 🎬 Create Mobile App Using AI — No Coding Required! Emergent AI
+**Channel:** Saddam Kassim
+*   What the video covers: This tutorial demonstrates how to build a functional mobile app entirely using the Emergent AI platform, with absolutely no coding skills required.
+*   Key topics discussed: The core features of the Emergent AI platform, the step-by-step process of app creation via a visual interface, and the capabilities of AI to generate app logic and design.
+*   Why it's worth watching: It's a practical guide for entrepreneurs, designers, or anyone with an app idea but no technical background, showcasing a powerful tool that democratizes app development and dramatically accelerates the creation process.
+
+### 🎬 使用AI创建移动应用 —— 无需编码！Emergent AI
+**频道:** Saddam Kassim
+*   视频内容概述：本教程将演示如何完全使用 Emergent AI 平台来构建一个功能性的移动应用程序，整个过程不需要任何编码技能。
+*   主要话题：Emergent AI 平台的核心功能、通过可视化界面进行应用创建的步骤，以及 AI 在生成应用逻辑和设计方面的能力。
+*   为何值得观看：对于有应用创意但缺乏技术背景的创业者、设计师或任何人来说，这是一个实用的指南。它展示了一个强大的工具，使应用开发更加普及化，并显著加速了创作流程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Zg3Z8QEqJeA)**
 
