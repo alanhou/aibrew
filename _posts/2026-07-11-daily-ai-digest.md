@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 11, 2026"
 date: 2026-07-11
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Relativistic Effects Alter Chemical Bonding in Heavy Elements
@@ -240,4 +240,166 @@ pin: false### Relativistic Effects Alter Chemical Bonding in Heavy Elements
 *   **为何值得观看:** 随着AI工具在软件开发中逐渐普及，本视频从一位经验丰富的开发者角度提供了务实且实用的见解。它帮助观众超越炒作，教会他们如何将AI作为强大的生产力工具，同时理解其边界，对现代程序员而言必不可少。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=A4aLYwtpyes)**
+
+### Building an iroh-Powered Smart Fan
+*   **Concept & Goal:** Create a simple, cloud-free smart fan using an ESP32 microcontroller and the iroh networking library, allowing remote control from anywhere via a WebAssembly-enabled browser.
+*   **Hardware Base:** The primary example uses an **ESP32-WROVER devkit** with 4 MiB of PSRAM, which is necessary for iroh's full networking capabilities, including relay connections.
+*   **Project Setup:** The project starts by copying and renaming an existing iroh echo server example (`server-esp32-psram` → `server-smart-fan`) and its corresponding client.
+*   **Stability & Identity:** The device's endpoint ID is made stable across reboots by generating and storing its secret key in non-volatile memory (NVM) on first boot, which is not erased during flashing.
+
+### 使用 iroh 构建智能风扇
+*   **概念与目标：** 使用 ESP32 微控制器和 iroh 网络库构建一个简单的、无需云服务的智能风扇，允许通过支持 WebAssembly 的浏览器从任何地方进行远程控制。
+*   **硬件基础：** 主要示例使用配备 4 MiB PSRAM 的 **ESP32-WROVER 开发板**，这对于 iroh 的全部网络功能（包括中继连接）是必需的。
+*   **项目设置：** 项目通过复制并重命名一个现有的 iroh 回显服务器示例 (`server-esp32-psram` → `server-smart-fan`) 及其对应的客户端来启动。
+*   **稳定性与标识：** 通过在首次启动时将其密钥生成并存储在非易失性存储器 (NVM) 中，该设备的端点 ID 在重启后保持稳定，NVM 在烧录时不会被擦除。
+
+**[Read Original / 阅读原文](https://www.iroh.computer/blog/an-iroh-powered-smart-fan)**
+
+### An update on the scraper situation [LWN.net]
+*   The problem of aggressive web scraping to obtain training data for AI models has intensified since early 2025, with traffic increasingly originating from residential and mobile networks via "residential proxies."
+*   These proxy networks are operated by various entities, including criminal groups using malware, companies offering "ethically sourced" IPs (like Bright Data via its VPN), and potentially undisclosed AI model developers.
+*   Website operators, including LWN, are deploying increasingly sophisticated defenses (like Anubis, optimizations, and data poisoning) to mitigate scraper traffic while trying to avoid impacting legitimate users, search engines, or the Internet Archive.
+*   While law enforcement actions (like those against IPIDEA and NetNut botnets) offer temporary relief, the underlying arms race continues, posing a significant threat to the open web's accessibility and sustainability.
+
+### [LWN.net] 关于网络爬虫问题的最新进展
+*   自2025年初以来，为获取AI训练数据而进行的激进网络爬取问题日益严重，其流量越来越多地通过“住宅代理”从住宅和移动网络发起。
+*   运营这些代理网络的实体多种多样，包括使用恶意软件的犯罪团伙、提供“道德来源IP”的公司（如Bright Data通过其VPN服务），以及可能未公开的AI模型开发者。
+*   包括LWN在内的网站运营者正部署日益复杂的防御措施（如Anubis、性能优化、数据投毒），以缓解爬虫流量，同时尽力避免对合法用户、搜索引擎或互联网档案馆造成影响。
+*   虽然执法行动（如针对IPIDEA和NetNut僵尸网络）带来了暂时的缓解，但潜在的军备竞赛仍在继续，对开放互联网的可访问性和可持续性构成了重大威胁。
+
+**[Read Original / 阅读原文](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/)**
+
+### SpaceX Plans 100,000 Gen3 Satellites for 100x Bandwidth
+* SpaceX has filed with the FCC to launch 100,000 new, heavier third-generation (Gen3) Starlink satellites into low Earth orbit (LEO).
+* The company promises the Gen3 network will deliver multi-gigabit symmetrical speeds and ultra-low latency (under 20 ms), representing a 100-fold increase in total bandwidth.
+* Current real-world Starlink speeds are much lower than advertised, but the service remains vital for users in areas without fiber internet.
+* The plan would dwarf all existing satellite constellations and further establish Starlink's dominance, as rivals like Amazon's Project Kuiper and Eutelsat-OneWeb are far behind.
+* FCC approval is not guaranteed due to potential interference issues and objections from astronomers, but approval would solidify Starlink as the primary choice for satellite internet.
+
+### SpaceX 计划发射10万颗第三代卫星，实现百倍带宽
+* SpaceX 已向美国联邦通信委员会（FCC）提交申请，计划向低地球轨道（LEO）发射10万颗更重的新一代（第三代）星链卫星。
+* 公司承诺，第三代网络将提供千兆级对称速度和超低延迟（低于20毫秒），使星链总带宽提升100倍。
+* 目前星链的实际速度远低于宣传值，但对于缺乏光纤覆盖地区的用户而言，它仍是至关重要的服务。
+* 该计划将使星链规模远超所有现有卫星星座，并进一步巩固其主导地位，因为亚马逊柯伊伯计划、欧洲一网等竞争对手远远落后。
+* FCC的批准并非板上钉钉，该计划可能面临干扰问题以及天文学界的反对。但一旦获批，将确立星链作为卫星互联网首选服务的地位。
+
+**[Read Original / 阅读原文](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/)**
+
+### Agent Skills - Production-Grade Engineering Skills for AI Coding Agents
+*   **What it does**: This repository provides a comprehensive set of 24 structured "skills" designed to encode senior engineering workflows, quality gates, and best practices into AI coding agents. These skills guide the AI through every phase of the development lifecycle, from defining an idea (`/spec`) and planning tasks (`/plan`) to building code (`/build`), testing (`/test`), review (`/review`), and shipping to production (`/ship`).
+*   **Key features**:
+    *   **Lifecycle Automation**: 8 slash commands (`/spec`, `/plan`, `/build`, etc.) that map to key development stages, automatically activating relevant skills.
+    *   **Comprehensive Skill Pack**: 24 skills covering meta-discovery, requirement definition (e.g., `interview-me`, `spec-driven-development`), planning, implementation (e.g., `test-driven-development`, `incremental-implementation`), and code quality.
+    *   **Broad Agent Compatibility**: Designed to work with numerous AI agents and IDEs, including Claude Code, Cursor, GitHub Copilot, Codex, and more, via a simple CLI installation (`npx skills add`) or native plugin integration.
+    *   **Autonomous Execution**: The `/build auto` command can autonomously generate a plan and implement all tasks in a single approved pass while maintaining verification gates.
+*   **Why it's notable**: Created by prominent engineer Addy Osmani, this project addresses a critical need in AI-assisted development: ensuring consistency and quality. It moves beyond simple code generation by providing AI agents with a structured, production-grade engineering methodology. Its rapid gain in stars (1,116 today) highlights strong community interest in tools that elevate AI agents from code writers to more reliable engineering collaborators. It standardizes best practices, making complex workflows manageable and repeatable for AI.
+
+### Agent Skills - 面向AI编码代理的生产级工程技能包
+*   **功能介绍**: 该仓库提供了一套包含24个结构化“技能”的完整方案，旨在将高级工程师的工作流程、质量关卡和最佳实践编码到AI编码代理中。这些技能引导AI贯穿软件开发生命周期的每一个阶段，从定义想法（`/spec`）、规划任务（`/plan`）到编写代码（`/build`）、测试（`/test`）、审查（`/review`）以及发布到生产环境（`/ship`）。
+*   **主要特点**:
+    *   **开发生命周期自动化**: 提供8个斜杠命令（如 `/spec`, `/plan`, `/build`），映射到关键开发阶段，并自动激活相应的技能。
+    *   **全面的技能库**: 包含24个技能，覆盖元认知发现、需求定义（如 `interview-me`, `spec-driven-development`）、规划、实施（如 `test-driven-development`, `incremental-implementation`）和代码质量保障。
+    *   **广泛的代理兼容性**: 可通过简单CLI安装 (`npx skills add`) 或原生插件集成，与包括 Claude Code、Cursor、GitHub Copilot、Codex 在内的多种AI代理和IDE协同工作。
+    *   **自主执行能力**: `/build auto` 命令可以在单次批准的流程中自动生成计划并实现所有任务，同时保持验证关卡。
+*   **为何值得关注**: 该项目由知名工程师 Addy Osmani 创建，它解决了AI辅助开发中的一个核心需求：确保一致性和质量。它超越了简单的代码生成，为AI代理提供了一套结构化的、生产级的工程方法论。其迅速增长的星标数（今日1116星）凸显了社区对于能够将AI代理从代码编写者提升为更可靠工程协作者的工具的强烈兴趣。它标准化了最佳实践，使复杂工作流对AI而言变得可管理且可重复。
+
+**[View Repository / 查看仓库](https://github.com/addyosmani/agent-skills)**
+
+### yaml-cpp - YAML Parser and Emitter in C++
+*   What it does: A C++ library for parsing and emitting YAML data, fully compliant with the YAML 1.2 specification.
+*   Key features: Cross-platform build support via CMake, options for static or shared libraries, well-documented API with tutorials, and compatibility with modern build systems like FetchContent.
+*   Why it's notable: It's a widely used, actively maintained solution for handling YAML in C++ projects, with recent releases (like v0.9.0) and clear migration paths from older APIs. The library's popularity is reflected in its steady acquisition of stars.
+
+### yaml-cpp - C++ 的 YAML 解析器与生成器
+*   功能介绍: 一个完全符合 YAML 1.2 规范的 C++ 库，用于解析和生成 YAML 格式的数据。
+*   主要特点: 通过 CMake 提供跨平台构建支持，可选择构建为静态库或动态库，拥有详尽的 API 文档和教程，并支持现代构建系统（如 CMake 的 FetchContent）进行集成。
+*   为何值得关注: 它是 C++ 生态中处理 YAML 文件的主流、活跃维护的解决方案。近期有版本更新（如 v0.9.0），并为从旧版 API 迁移提供了清晰路径。其在社区中的广泛采用和持续增长的星标数证明了其价值与可靠性。
+
+**[View Repository / 查看仓库](https://github.com/jbeder/yaml-cpp)**
+
+### riddle — The diary of Tom Riddle for the reMarkable Paper Pro
+*   **What it does**: A unique journaling app for the reMarkable Paper Pro e-ink tablet. It allows you to write entries with your pen. After a pause, your writing fades away, and a character named Tom Riddle "thinks" and writes back a response in a flowing, handwritten script directly on the page.
+*   **Key features**: Direct pen input; text disappearing effect ("ink drinks your ink"); AI-generated handwritten responses; gesture-based controls (erase, summon guide); a "memory" system that remembers past pages to enable follow-up conversations and recollection of past entries; two "oracle" backends (OpenAI API or local `pi`); direct e-ink hardware control for minimal latency.
+*   **Why it's notable**: It's a highly creative and immersive application that deeply integrates hardware control (pen pressure, e-ink engine) with LLM vision capabilities, creating a magical, "living" diary experience. The project is trending due to its innovative user interface, technical achievement in direct hardware interaction, and its connection to a viral demo.
+
+### riddle — reMarkable Paper Pro 上的汤姆·里德尔日记
+*   **功能介绍**: 一款专为 reMarkable Paper Pro 电子墨水平板设计的独特日记应用。你可以用笔在页面上书写。稍作停顿后，你的墨迹会逐渐消隐，名为“汤姆·里德尔”的角色会“思考”，并在页面上用流畅的手写体“墨水”回复你的内容。
+*   **主要特点**: 支持原生压感笔输入；具有文字淡出的“墨迹消隐”效果；由AI生成的手写风格回复；基于手势的操控（擦除、召唤指南）；具备“记忆”系统，能记住过往页面，从而支持对话延续和内容回顾；提供两种“神谕”后端（OpenAI API或本地`pi`）；直接控制电子墨水硬件引擎以实现极低延迟。
+*   **为何值得关注**: 这是一款极具创意和沉浸感的应用，它将硬件底层控制（笔压、电子墨水引擎）与LLM视觉能力深度结合，创造了一种神奇的“活日记”体验。该项目因其创新的用户界面、直接操控硬件的技术成就以及与病毒式传播演示的关联而备受关注。
+
+**[View Repository / 查看仓库](https://github.com/MaximeRivest/riddle)**
+
+### dnsglobe - Global DNS Propagation Checker TUI
+*   **What it does:** A terminal user interface (TUI) written in Rust that checks the global propagation of a DNS record by querying 34 public resolvers worldwide in parallel. It displays the status and results on a world map within your terminal.
+*   **Key features:**
+    *   Parallel querying of 34 global resolvers (including Google, Cloudflare, Quad9, etc.).
+    *   Visual world map display (in terminals ≥150 columns) with colored dots for each resolver's status.
+    *   Automatic "watch mode" that re-polls until 100% propagation.
+    *   Smart grouping of answers to handle round-robin DNS correctly.
+    *   Discovery and display of the actual anycast site answering queries (e.g., `→YUL`).
+    *   Supports custom resolver lists via a TOML configuration file.
+*   **Why it's notable:** It brings a popular web-based functionality (like dnschecker.org) directly into the terminal with enhanced features. The real-time, visual world map and watch mode make it a powerful and unique tool for developers, network engineers, and anyone managing DNS records to monitor propagation instantly and effectively.
+
+### dnsglobe - 全球DNS传播检查器终端工具
+*   **功能介绍:** 这是一个用Rust编写的终端用户界面(TUI)工具，它通过并行查询全球34个公共DNS解析器来检查DNS记录的传播情况，并在终端内的世界地图上展示结果。
+*   **主要特点:**
+    *   并行查询34个全球解析器（包括Google、Cloudflare、Quad9等）。
+    *   在宽终端（≥150列）中显示世界地图，用不同颜色圆点表示各解析器状态。
+    *   自动“监视模式”，每30秒轮询直至传播达到100%。
+    *   智能分组答案，正确处理轮询DNS（Round-robin DNS）。
+    *   发现并显示实际应答查询的任播站点（例如，`→YUL`）。
+    *   支持通过TOML配置文件自定义解析器列表。
+*   **为何值得关注:** 它将流行的网页功能（如dnschecker.org）直接带入终端，并增加了独特功能。实时的视觉世界地图和监视模式使其成为开发者、网络工程师以及任何DNS记录管理者即时、有效监控传播情况的强大且独特的工具。
+
+**[View Repository / 查看仓库](https://github.com/514-labs/dnsglobe)**
+
+### 🎬 Your Button Is Lying to Your Microcontroller...
+**Channel:** C Labs
+*   This video explores the common and frustrating issue of **"switch bounce"** in mechanical push buttons, where a single physical press registers as multiple erratic signals to a microcontroller.
+*   **Key topics discussed:**
+    *   The physics behind mechanical switch contact bounce.
+    *   Why this can cause unintended multiple triggers in digital circuits and code.
+    *   A clear explanation of software and hardware **debouncing** techniques.
+    *   Practical examples showing how to implement solutions to ensure one press equals one reliable action.
+*   It's a fantastic, essential watch for anyone learning electronics, Arduino, or microcontroller programming, as it demystifies a fundamental real-world problem that can make projects seem buggy and provides immediate, actionable fixes.
+
+### 🎬 你的按钮在对你的微控制器撒谎...
+**频道:** C Labs
+*   **视频内容概述:** 本视频深入探讨了一个常见且令人头疼的问题——机械按钮的 **“触点抖动”**。即一次物理按压，在微控制器看来却可能表现为一连串杂乱的信号。
+*   **主要话题:**
+    *   机械开关触点抖动的物理原理。
+    *   为什么这会导致数字电路和代码中出现意外的多次触发。
+    *   清晰的**软件与硬件消抖**技术讲解。
+    *   展示如何实现解决方案，以确保“一次按压等于一次可靠触发”的实际案例。
+*   **为何值得观看:** 这是所有学习电子学、Arduino或微控制器编程的人必看的视频。它清晰揭示了使项目看似不稳定的基本现实问题，并提供了立竿见影的实用解决方法。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=3b1QXhSeJKw)**
+
+### 🎬 Claude Desktop Is Now FREE?! Use ALL Claude Models (Full Setup Guide)
+**Channel:** Data Scientist Afzal
+*   The video provides a complete walkthrough for setting up Claude Desktop, which now apparently offers free access to the entire suite of Claude AI models.
+*   Key topics include the process of getting free access, navigating the desktop application, and utilizing the various Claude models (likely different versions like Claude 3 Haiku, Sonnet, Opus, etc.) for different tasks.
+*   It's worth watching for anyone interested in AI tools, as it offers a timely guide to accessing a powerful, professional-grade AI assistant platform without cost, which could be a significant resource for productivity, coding, and creative work.
+
+### 🎬 Claude桌面版现在免费了？！使用所有Claude模型（完整设置指南）
+**频道:** Data Scientist Afzal
+*   视频内容概述：本视频详细演示了如何设置和使用现已提供免费访问所有Claude模型的Claude桌面应用程序。
+*   主要话题：讲解获取免费权限的步骤、桌面应用的操作界面，以及如何针对不同任务使用各种Claude模型（如不同版本的Claude 3）。
+*   为何值得观看：对于AI工具爱好者和使用者来说，这是一个及时且实用的教程，指导人们免费使用一个强大的专业级AI助手平台，能极大提升生产力、编程和创意工作的效率。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8NlxDB1VIyY)**
+
+### 🎬 The Ultimate Claude Code Tutorial for Mobile Apps - FULL COURSE
+**Channel:** Codesistency
+*   This is a comprehensive, full-length tutorial focused on using **Claude Code** specifically for **mobile application development**.
+*   The video likely covers everything from setting up Claude Code in your environment, its core commands and workflows, to applying it in practical mobile app projects, possibly including both iOS and Android development.
+*   It's worth watching for developers or tech enthusiasts looking to master AI-powered coding tools to dramatically accelerate their mobile app development cycle, build features faster, and solve coding problems efficiently.
+
+### 🎬 Claude Code移动端应用完全教程 (完整课程)
+**频道:** Codesistency
+*   本视频是一个专注于如何使用 **Claude Code** 进行 **移动应用开发** 的完整教程。
+*   视频内容可能涵盖从在开发环境中配置Claude Code、掌握其核心命令与工作流，到在实际移动应用项目中的具体应用，可能同时涉及iOS和Android平台的开发。
+*   对于希望利用AI编程工具大幅提升移动应用开发效率、快速构建功能、高效解决编码问题的开发者或科技爱好者而言，本视频极具观看价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=p80OV6kjIO8)**
 
