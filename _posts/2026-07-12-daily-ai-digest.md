@@ -1,137 +1,154 @@
-### Discovery of Fracture in Simple Fluids
-* Simple fluids, such as hydrocarbon blends, were found to undergo brittle fracture under stress, challenging the long-held belief that only elastic complex fluids could fracture.  
-* Research reveals that fractures in simple fluids propagate at extremely high speeds (500–1,500 m/s) and occur at a critical stress threshold proportional to viscosity and strain rate, with potential applications in inkjet printing, brain injury protection, and soft robotics.
+### **Mindwalk: 3D Session Visualization Tool**
 
-### 简单流体的断裂发现
-* 研究发现，简单流体（如碳氢化合物混合物）在应力下会发生脆性断裂，颠覆了以往认为仅弹性复杂流体才能断裂的观点。  
-* 简单流体中的断裂传播速度极快（500–1,500米/秒），并发生在与粘度和应变率成正比的临界应力阈值处，为喷墨打印、脑损伤防护和软体机器人等领域带来新可能。
+*   **Purpose**: A visualization tool that replays coding-agent sessions (like those from Claude Code or Codex) as an interactive 3D "city map" of your codebase.
+*   **Problem Addressed**: Raw session logs (JSONL) don't reveal the agent's understanding, exploration paths, or true scope of work. Reading them line-by-line is ineffective.
+*   **Core Idea**: It renders your repository as a night map. During replay, the areas the agent searched, read, or edited are illuminated, making the agent's "understanding" and activity footprint instantly visible.
+*   **Key Features**:
+    *   **Visualization Modes**: Tree or Terrain views with "glow" intensity proportional to file interaction depth.
+    *   **Touch States**: Files are color-coded by their interaction level (seen, read, edited, unvisited).
+    *   **Playback Deck**: An interactive timeline histogram for scrubbing through the session. Colors distinguish observation (cool) vs. mutation (warm) activities.
+    *   **Local & Private**: A single Go binary that processes logs entirely locally; no data leaves your machine.
+    *   **Inspector**: Click files to see detailed visit histories and jump the playhead to specific moments.
 
-**[Read Original / 阅读原文](https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/)**
+*   **Technical Architecture**:
+    *   **Two Core Artifacts**: A `trace` (normalized stream of file-touch events) and a `citymap` (deterministic repo layout).
+    *   **Stack**: A local Go server (`internal/server`) that serves a React/Three.js frontend (`web`).
+    *   **Commands**: Provides CLI commands (`mindwalk serve`, `mindwalk open`) for scanning sessions, serving the UI, and building artifacts.
 
-### Mesh LLM: Distributed AI Computing on iroh
+### **Mindwalk: 三维会话可视化工具**
 
-*   **Problem with Centralized LLMs:** Traditional cloud-based LLM services force users to surrender control over model versions, data privacy, and hardware, while incurring escalating costs.
-*   **Mesh LLM Solution:** A system that pools existing GPU and memory resources across multiple machines (like office workstations) to create a single, OpenAI-compatible API endpoint.
-*   **Core Architecture:** Built on iroh, a peer-to-peer networking library, each node gets a secure identity via a public key. The system uses QUIC for authenticated, NAT-traversing connections without a central server.
-*   **Model Execution:** Requests are handled in three ways: locally on a peer's GPU, routed to a peer with the model loaded, or split across multiple machines in a pipeline ("Skippy" mode) for models too large for a single device.
-*   **Pluggable & Extensible:** Features a plugin architecture for capabilities, supports 40+ models, and aims to be an open alternative with plans for mobile support and the ACP agent standard.
+*   **目的**：一款将编码代理（如 Claude Code 或 Codex）的会话以交互式三维“城市地图”形式重播的可视化工具，直观展示你的代码库。
+*   **解决的问题**：原始的会话日志（JSONL）无法体现代理对任务的理解、探索路径或实际工作范围，逐行阅读效果甚微。
+*   **核心理念**：将代码仓库渲染为一张夜景地图。重播时，代理搜索、阅读或编辑过的区域会被“点亮”，使其对任务的“理解”和活动足迹一目了然。
+*   **主要特性**：
+    *   **可视化模式**：支持树形或地形视图，“发光”强度与文件交互深度成正比。
+    *   **触摸状态**：根据交互级别（已查看、已阅读、已编辑、未访问）为文件赋予不同颜色。
+    *   **回放控制面板**：交互式时间轴直方图，用于拖动浏览会话。颜色区分观察（冷色调）和修改（暖色调）活动。
+    *   **本地与私密**：一个独立的 Go 二进制文件，完全在本地处理日志；数据不会离开你的设备。
+    *   **检查器**：点击文件可查看详细访问历史，并将播放头跳转到特定时刻。
 
-### Mesh LLM：基于 iroh 的分布式 AI 计算
+*   **技术架构**：
+    *   **两个核心产物**：一个 `trace`（标准化的文件触摸事件流）和一个 `citymap`（确定性的仓库布局）。
+    *   **技术栈**：一个本地 Go 服务器（`internal/server`）驱动一个 React/Three.js 前端（`web`）。
+    *   **命令行工具**：提供 `mindwalk serve`、`mindwalk open` 等命令，用于扫描会话、启动 UI 并构建产物。
 
-*   **中心化大语言模型的问题：** 传统的云端 LLM 服务迫使用户放弃对模型版本、数据隐私和硬件的控制，同时费用不断增长。
-*   **Mesh LLM 解决方案：** 一个将现有 GPU 和内存资源（如办公室工作站）汇聚成单一 OpenAI 兼容 API 端点的系统。
-*   **核心架构：** 构建在点对点网络库 iroh 之上，每个节点通过公钥获得安全身份。系统使用 QUIC 协议实现经过认证、可穿越 NAT 的连接，无需中央服务器。
-*   **模型执行方式：** 请求通过三种方式处理：在本地节点的 GPU 上运行、路由到已加载该模型的对等节点，或在多台机器的流水线中拆分运行（“Skippy”模式），以支持超出单机容量的巨型模型。
-*   **可插拔与可扩展性：** 采用插件架构，支持 40 多种模型，旨在提供一个开放替代方案，并计划支持移动设备及 ACP 代理标准。
+**[Read Original / 阅读原文](https://github.com/cosmtrek/mindwalk)**
+
+### Mesh LLM: Distributed AI Computing on Iroh
+* Mesh LLM is a decentralized alternative to centralized LLM APIs, allowing users to pool existing GPU resources across multiple machines into a single, OpenAI-compatible API endpoint.
+* It operates as a peer-to-peer mesh network, using Iroh's networking library to handle NAT traversal and direct QUIC connections between nodes, eliminating the need for a central server.
+* The system intelligently routes requests: it can run a model locally, send it to a peer with the model loaded, or split a large model across several machines in a pipeline.
+* It features a pluggable architecture with a catalog of 40+ models and uses a custom gossip protocol over QUIC for peer discovery and management.
+* The ultimate goal is to provide more control, lower costs, and avoid vendor lock-in for teams and individuals running AI workloads.
+
+### Mesh LLM：基于 Iroh 的分布式 AI 计算
+* Mesh LLM 是一种去中心化的 LLM API 替代方案，允许用户将现有机器上的 GPU 资源汇集起来，形成一个单一的、兼容 OpenAI 标准的 API 端点。
+* 它作为一个点对点（P2P）网状网络运行，使用 Iroh 网络库来处理 NAT 穿透和节点间的直接 QUIC 连接，无需中心服务器。
+* 该系统能智能地路由请求：可以在本机运行模型、将其发送给已加载该模型的对等节点，或通过流水线方式将大模型拆分到多台机器上执行。
+* 它采用可插拔架构，内置超过 40 个模型目录，并基于 QUIC 运行自定义的八卦（Gossip）协议，用于节点发现和管理。
+* 其最终目标是为运行 AI 工作负载的团队和个人提供更多控制权、更低成本，并避免供应商锁定。
 
 **[Read Original / 阅读原文](https://www.iroh.computer/blog/mesh-llm)**
 
-<!-- [Title-Only] -->
-### Show HN: Ant – A JavaScript runtime and ecosystem
-*   **What it likely covers:** This article, presented on Hacker News with a "Show HN" tag, is most likely an introduction to a new open-source project. It probably showcases "Ant" as a personal or experimental alternative to established JavaScript runtimes like Node.js or Deno. The post would detail its core features, design philosophy, intended use cases, and the accompanying ecosystem (e.g., package manager, build tools). Given the title, it might emphasize specific improvements in performance, tooling, or developer experience.
-*   **Why it might be interesting:** Readers, especially JavaScript developers and tech enthusiasts, might find this interesting as a look into the evolution of the JS ecosystem. It represents a grassroots innovation, potentially solving pain points in current environments or exploring new architectural ideas. Being a "Show HN," it's also a direct insight into a creator's technical perspective and an opportunity to evaluate a novel tool firsthand.
+### The 'Father of the Internet' is Retiring
+*   Vinton Cerf, co-creator of the internet's foundational TCP/IP protocols and a longtime Google executive, is retiring at age 83 after a landmark career in technology.
+*   At a recent conference, Cerf predicted that the rise of multi-agent AI systems will force the industry back towards open, standardized communication protocols, much like the early internet.
+*   He argued that formal, precise standards (not natural language) will be necessary for reliable interaction between autonomous AI agents to avoid miscommunication.
 
-### Show HN: Ant – 一个JavaScript运行时与生态系统
-*   **内容简介（基于标题推测）：** 这篇在Hacker News上以"Show HN"标签发布的文章，很可能是一个新开源项目的介绍。它或许会展示"Ant"作为一个旨在与Node.js或Deno等成熟JavaScript运行时竞争的个人或实验性替代方案。文中可能详述其核心特性、设计理念、预期应用场景，以及配套的生态系统（例如包管理器、构建工具）。从标题看，它可能特别强调在性能、工具链或开发者体验方面的改进。
-*   **为何值得关注：** 尤其是JavaScript开发者和技术爱好者，可能会对这篇文章感兴趣，因为它透视了JavaScript生态系统的演进方向。这代表了一种自下而上的创新尝试，可能旨在解决现有环境中的痛点，或探索新的技术架构。作为"Show HN"帖子，它也直接提供了创建者的技术视角，为评估这一新工具提供了第一手机会。
+### “互联网之父”文特·瑟夫即将退休
+*   互联网奠基性TCP/IP协议的共同发明者、谷歌公司资深高管文特·瑟夫（Vinton Cerf）将于83岁高龄退休，结束了其在技术史上极具影响力的职业生涯。
+*   在近期一次会议上，瑟夫预测，多智能体AI系统的兴起将迫使行业回归开放、标准化的通信协议，这与早期互联网的发展轨迹相似。
+*   他主张，为了确保自主AI智能体之间可靠的交互，必须建立正式、精确的标准（而非自然语言），以避免误解和信息失真。
 
-**[Read Original / 阅读原文](https://antjs.org)**
+**[Read Original / 阅读原文](https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/)**
 
 
 ## 🔥 GitHub Trending / GitHub 热门项目
 
-### Catch2 - 现代化 C++ 原生测试框架
-*   **功能介绍**：Catch2 主要是一个用于 C++ 的单元测试框架，同时也提供基础的微基准测试功能和简洁的 BDD（行为驱动开发）宏。
-*   **主要特点**：
-    *   **简单自然**：使用起来直观，测试名称无需是有效标识符，断言就是普通的 C++ 布尔表达式，Section（段）机制可优雅地共享测试的设置和清理代码。
-    *   **现代化 C++**：原生支持 C++14、C++17 及更高标准（旧版本分支支持 C++11 和 C++03）。
-    *   **重要更新（v3）**：已发布 v3 版本，从单头文件库转变为标准库形式，包含多个头文件和单独编译的实现。
-*   **为何值得关注**：它是 C++ 社区中最流行和现代的测试框架之一，因其极低的入门门槛和强大的功能而广受欢迎。其架构在 v3 中的重大改进解决了以往的局限性，确保了更好的编译速度和维护性。今日获得 113 颗星也体现了其持续的活跃度和社区关注度。
+### Catch2 - Modern C++ Testing Framework
+*   **What it does**: Catch2 is a C++-native unit testing framework that also provides micro-benchmarking and simple BDD (Behavior-Driven Development) macros. It is designed for writing tests using C++14, C++17, and later.
+*   **Key features**: Its syntax is simple and natural, using valid identifiers for test names and normal C++ boolean expressions for assertions. It uses "sections" to share setup/teardown code locally within tests. v3 has moved from a single-header library to a traditional multi-header, compiled library.
+*   **Why it's notable**: It is widely popular for its developer-friendly approach that makes writing and reading tests straightforward. The recent v3 release represents a significant architectural evolution for the project, improving compilation and integration.
 
-### Catch2 - 现代化 C++ 原生测试框架
-*   **功能介绍**：Catch2 主要是一个用于 C++ 的单元测试框架，同时也提供基础的微基准测试功能和简洁的 BDD（行为驱动开发）宏。
-*   **主要特点**：
-    *   **简单自然**：使用起来直观，测试名称无需是有效标识符，断言就是普通的 C++ 布尔表达式，Section（段）机制可优雅地共享测试的设置和清理代码。
-    *   **现代化 C++**：原生支持 C++14、C++17 及更高标准（旧版本分支支持 C++11 和 C++03）。
-    *   **重要更新（v3）**：已发布 v3 版本，从单头文件库转变为标准库形式，包含多个头文件和单独编译的实现。
-*   **为何值得关注**：它是 C++ 社区中最流行和现代的测试框架之一，因其极低的入门门槛和强大的功能而广受欢迎。其架构在 v3 中的重大改进解决了以往的局限性，确保了更好的编译速度和维护性。今日获得 113 颗星也体现了其持续的活跃度和社区关注度。
+### Catch2 - 现代 C++ 测试框架
+*   **功能介绍**: Catch2 是一个 C++ 原生的单元测试框架，同时提供微基准测试功能和简单的 BDD（行为驱动开发）宏。它支持使用 C++14、C++17 及更高版本进行测试编写。
+*   **主要特点**: 语法简单自然，测试名称可以是有效的标识符，断言使用标准的 C++ 布尔表达式，并通过“sections”在测试内局部共享设置和清理代码。v3 版本已从单头文件库演变为标准的多头文件、分离编译的库。
+*   **为何值得关注**: 它因开发者友好的设计而广受欢迎，使测试的编写和阅读变得非常直观。最新的 v3 版本是该框架的重大架构升级，改善了编译和集成方式。
 
 **[View Repository / 查看仓库](https://github.com/catchorg/Catch2)**
 
-### abseil/abseil-cpp - Google's Open-Source C++ Library Collection
-*   **What it does:** An open-source collection of C++ code (C++17) designed to augment the C++ standard library. It provides fundamental utilities, abstractions, and implementations that have been extensively tested and used in production within Google's own codebase.
-*   **Key features:** Offers a wide range of modular libraries (e.g., `container`, `strings`, `status`, `synchronization`) that provide features missing from the standard library or specialized alternatives. Key components include high-performance Swiss Table containers, robust string utilities, error-handling abstractions (`absl::Status`), and time/random number manipulation tools.
-*   **Why it's notable:** It's the battle-tested foundation of many large-scale Google C++ services, ensuring reliability and performance. It fills practical gaps in the C++ standard and offers a cohesive, supported ecosystem. Its "live-at-head" development philosophy and Long-Term Support releases provide flexibility for production use.
+### Abseil C++ Common Libraries - Open-source collection of production-tested C++ utilities to augment the standard library
+* **What it does**: Provides a comprehensive set of C++ library components collected from Google's own codebase, designed to fill gaps in the C++ standard library and offer alternatives for specific needs.
+* **Key features**:  
+  * Covers a wide range of utilities: strings, containers (including high-performance "Swiss tables"), hashing, time, synchronization, status/error handling, flags, and more.  
+  * C++17 compliant, extensively tested, and battle-hardened in Google's production environment.  
+  * Officially supported by Google, following their C++ support policy.
+* **Why it's notable**: It's not just another utility library; it's a curated, production-grade toolkit from a major tech leader. It's gaining traction because it offers robust, well-maintained solutions for common C++ challenges, backed by Google's engineering rigor.
 
-### abseil/abseil-cpp - Google开源C++通用库集合
-*   **功能介绍:** 一个面向C++17标准的开源C++代码库，旨在补充和扩展C++标准库。它提供了一整套经过Google生产环境长期考验和验证的基础工具、抽象和实现。
-*   **主要特点:** 提供了大量模块化的库（如 `container`、`strings`、`status`、`synchronization`），填补了标准库的空白或提供了针对特定需求的优化方案。核心组件包括高性能的Swiss Table容器、健壮的字符串工具、错误处理抽象（`absl::Status`）以及时间处理、随机数生成等实用功能。
-*   **为何值得关注:** 作为众多大规模Google C++服务的底层基石，其可靠性和性能得到了充分保障。它解决了C++开发中许多实际痛点，构成了一个连贯、有支持的生态系统。其“跟随主干（live-at-head）”的开发模式和长期支持版本（LTS）发布策略，为生产环境的使用提供了灵活性与保障。
+### Abseil C++ 公共库 - 来自Google生产环境的、旨在增强C++标准库的开源C++工具集合
+* **功能介绍**：收集了大量源自Google自身C++代码库的组件，旨在补充C++标准库的缺失部分，并为特定需求提供替代方案。
+* **主要特点**：
+  * 涵盖广泛的工具：字符串处理、容器（包括高性能“Swiss table”）、哈希、时间、同步原语、状态/错误处理、命令行标志解析等。
+  * 符合C++17标准，经过广泛测试，并在Google生产环境中久经考验。
+  * 由Google官方提供支持，遵循其C++支持政策。
+* **为何值得关注**：它并非普通的工具库，而是一套来自科技巨头、经过生产验证的精良工具包。其日益增长的热度源于它为常见的C++开发挑战提供了健壮且维护良好的解决方案，并且有谷歌工程实力的背书。
 
 **[View Repository / 查看仓库](https://github.com/abseil/abseil-cpp)**
 
-### Claude Code Templates - CLI Tool for Configuring and Monitoring Claude Code
-*   **What it does:** A command-line interface (CLI) tool that provides ready-to-use configurations for Anthropic's Claude Code. It offers a comprehensive catalog of AI agents, custom commands, settings, hooks, external integrations (MCPs), and project templates to set up and enhance your AI-assisted development workflow.
+### [claude-code-templates](https://github.com/davila7/claude-code-templates) - CLI tool for configuring and monitoring Claude Code
+*   **What it does:** A comprehensive CLI tool and catalog that provides ready-to-use configurations for Anthropic's Claude Code. It allows users to quickly browse, install, and manage a collection of AI agents, custom commands, settings, hooks, and external service integrations (MCPs) to enhance AI-powered development workflows.
 *   **Key features:**
-    *   **Template Catalog:** Browse and install over 100 components (agents, commands, MCPs, settings, hooks, skills) via an interactive CLI or a web dashboard at [aitmpl.com](https://aitmpl.com).
-    *   **Comprehensive Integration:** Includes templates for specialized roles (e.g., security auditor), custom slash commands (e.g., `/generate-tests`), and integrations with services like GitHub, PostgreSQL, and AWS.
-    *   **Development Tools:** Provides additional utilities like real-time **Claude Code Analytics**, a **Conversation Monitor** for viewing responses, a **Health Check** for diagnostics, and a **Plugin Dashboard**.
-    *   **Easy Installation:** Install complete stacks or individual components with a single `npx` command, supporting both interactive and direct installation modes.
-*   **Why it's notable:** It acts as a centralized, community-driven hub for extending Claude Code's functionality. Its combination of a rich template library, web-based management interface, and built-in monitoring/management tools makes it a powerful and trending utility for developers seeking to efficiently configure and leverage AI agents in their projects.
+    *   **Template Catalog:** Access to 100+ components (agents, commands, MCPs, etc.) via an interactive web dashboard at [aitmpl.com](https://aitmpl.com).
+    *   **Quick Installation:** Simple `npx` commands to install complete stacks or specific components interactively or via command-line flags.
+    *   **Additional Development Tools:** Includes built-in utilities like a real-time session analytics dashboard, a conversation monitor, a system health check, and a plugin management interface.
+    *   **Extensive Attribution:** Integrates and credits works from the official Anthropic skills and various community open-source projects.
+*   **Why it's notable:** It significantly lowers the barrier to leveraging Claude Code's advanced features by providing a curated, one-stop shop for configurations and extensions. Its rapid star growth (232 stars today) indicates strong community interest in streamlining AI development setup and monitoring.
 
-### Claude Code Templates - 用于配置和监控 Claude Code 的 CLI 工具
-*   **功能介绍：** 一个命令行工具，为 Anthropic 的 Claude Code 提供即用型配置。它包含一个全面的 AI 代理、自定义命令、设置、钩子、外部集成（MCP）和项目模板集合，旨在建立和增强您的 AI 辅助开发工作流。
+### [claude-code-templates](https://github.com/davila7/claude-code-templates) - Claude Code 的配置与监控 CLI 工具
+*   **功能介绍：** 一个综合性的命令行工具和配置目录，为 Anthropic 的 Claude Code 提供即用型配置。它使用户能够快速浏览、安装和管理一系列 AI 代理、自定义命令、设置、钩子及外部服务集成（MCP），从而增强基于 AI 的开发工作流。
 *   **主要特点：**
-    *   **模板库：** 通过交互式命令行或 [aitmpl.com](https://aitmpl.com) 网站，浏览并安装超过 100 种组件（代理、命令、MCP、设置、钩子、技能）。
-    *   **广泛集成：** 涵盖专业角色模板（如安全审计员）、自定义斜杠命令（如 `/generate-tests`）以及与 GitHub、PostgreSQL、AWS 等服务的集成。
-    *   **开发工具：** 提供额外的实用程序，如实时 **Claude Code 分析**、用于查看响应的 **对话监控器**、**健康检查**诊断工具和统一的 **插件仪表板**。
-    *   **便捷安装：** 通过单条 `npx` 命令即可安装完整技术栈或单个组件，支持交互式和直接安装两种模式。
-*   **为何值得关注：** 它是扩展 Claude Code 功能的集中式、社区驱动的资源枢纽。丰富的模板库、基于网页的管理界面以及内置的监控/管理工具相结合，使其成为希望高效配置和利用 AI 代理的开发者所关注的强大且热门的工具。
+    *   **模板目录：** 通过 [aitmpl.com](https://aitmpl.com) 交互式网页界面，访问 100 多个组件（代理、命令、MCP 等）。
+    *   **快速安装：** 简单的 `npx` 命令，可交互式或通过命令行参数安装完整开发栈或特定组件。
+    *   **额外开发工具：** 内置实用工具，包括实时会话分析仪表板、对话监控器、系统健康检查和插件管理界面。
+    *   **广泛的致谢：** 整合并注明了来自 Anthropic 官方技能和多个社区开源项目的作品来源。
+*   **为何值得关注：** 它通过提供一个精选的、一站式的配置和扩展库，极大地降低了利用 Claude Code 高级功能的门槛。其快速的 star 增长（今日获得 232 颗星）表明了社区对简化 AI 开发环境搭建和监控流程的浓厚兴趣。
 
 **[View Repository / 查看仓库](https://github.com/davila7/claude-code-templates)**
 
 
 ## 🚀 Fast-Moving Repos / 快速崛起项目
 
-### [withmarbleapp/os-taxonomy] - An Open, Structured Taxonomy of Primary School Learning
-*   **What it does**: It provides a comprehensive, machine-readable dataset that models what children learn in primary/elementary school. The data is structured as a connected graph, decomposing the curriculum into 1,590 fine-grained "micro-topics" (like "Building sentences") and defining 3,221 prerequisite relationships between them.
-*   **Key features**:
-    *   **Graph-Based Structure**: Data is presented as a directed acyclic graph where each node is a teachable idea with descriptions, evidence criteria, and age ranges.
-    *   **Curriculum Alignment**: Topics are linked to standards from major curricula (NGSS, Common Core, UK National Curriculum, etc.).
-    *   **Rich Metadata**: Each topic includes type (e.g., conceptual, procedural), subject, domain, and assessment prompts.
-    *   **Pure Data**: It is a raw JSON dataset with no runtime dependencies, ready for analysis or application development.
-*   **Why it's notable**: It transforms typically flat or siloed curriculum data into an open, interconnected knowledge graph. This makes it a unique and valuable resource for educational technology, curriculum analysis, personalized learning path generation, and AI applications focused on education. Its clear licensing (ODbL/CC BY-SA) balances openness with commercial viability.
+### withmarbleapp/os-taxonomy - Marble Skill Taxonomy: A Structured Learning Graph
+* **What it does:** Provides an open, structured dataset of what children learn across primary/elementary school, decomposed into fine-grained "micro-topics" and wired into a prerequisite graph. It's a connected graph of learning aligned to national curriculum standards.
+* **Key features:**
+  - 1,590 distinct micro-topics (e.g., "Building sentences") with descriptions, evidence criteria, and age ranges.
+  - 3,221 prerequisite dependencies forming a directed acyclic graph, tagged with strength and reason.
+  - Curriculum alignment to standards like NGSS, Common Core, and UK National Curriculum.
+  - 183 parent-friendly domain cluster summaries.
+  - Provided as pure JSON data with no runtime dependencies.
+* **Why it's notable:** It transforms traditional, flat curriculum standards into a dynamic, connected graph of learning, enabling interactive exploration and application. Its open structure and rich metadata make it valuable for educational technology, research, and building learning platforms.
 
-### [withmarbleapp/os-taxonomy] - 一个开放的、结构化的小学学习主题分类法
-*   **功能介绍**：这是一个机器可读的数据集，系统性地建模了儿童在小学阶段的学习内容。数据以连接图的形式组织，将课程分解为1,590个精细的“微主题”（如“造句”），并定义了它们之间3,221条先修关系。
-*   **主要特点**：
-    *   **图结构**：数据表现为有向无环图，每个节点代表一个可教学的观点，包含描述、掌握标准和适用年龄。
-    *   **课程对齐**：主题与各大课程标准（如NGSS、共同核心州立标准、英国国家课程等）相关联。
-    *   **丰富元数据**：每个主题包含类型（概念性、过程性等）、学科、领域和评估提示。
-    *   **纯数据**：它是一个无需运行时依赖的原始JSON数据集，可直接用于分析或应用开发。
-*   **为何值得关注**：它将传统上扁平化或割裂的课程数据转化为一个开放、互联的知识图谱。这使其成为教育科技、课程分析、个性化学习路径生成以及专注于教育的人工智能应用的一个独特而宝贵的资源。其清晰的许可协议（ODbL/CC BY-SA）在开放性与商业可行性之间取得了平衡。
+### withmarbleapp/os-taxonomy - Marble技能分类法：一个结构化的学习知识图谱
+* **功能介绍:** 提供一个开放、结构化的数据集，描述儿童在小学阶段学习的内容，将其分解为精细的“微主题”并连接成先修知识图谱。它是一个与国家课程标准对齐的互联学习图谱。
+* **主要特点:**
+  - 1,590个独立的微主题（如“构建句子”），包含描述、掌握证据标准和年龄范围。
+  - 3,221条先修依赖关系构成有向无环图，每条边标注了依赖强度和原因。
+  - 与NGSS、共同核心标准、英国国家课程等多个课程标准对齐。
+  - 183条面向家长的领域摘要。
+  - 以纯JSON格式提供数据，无运行时依赖。
+* **为何值得关注:** 它将传统的、扁平的课程标准转化为动态的、互联的学习图谱，支持交互式探索和应用。其开放结构和丰富的元数据使其对教育技术、研究以及构建学习平台具有重要价值。
 
 **[View Repository / 查看仓库](https://github.com/withmarbleapp/os-taxonomy)**
 
-### Knockoff - Amazon 购物时过滤伪品牌商品的浏览器扩展
-*   **功能介绍**：这是一个 Chrome/Firefox/Safari 浏览器扩展，旨在过滤亚马逊购物页面上由“伪品牌”销售的商品。它自动检测并隐藏、淡化或标记那些名称可疑、背后无真实公司支持的品牌，帮助用户专注于购买由真正、成熟品牌生产的商品。
-*   **主要特点**：
-    *   **多级过滤**：提供“宽松”、“标准”（默认）、“严格”三种过滤级别，满足不同用户对商品筛选严格程度的需求。
-    *   **智能检测引擎**：结合数千个已知品牌名单与基于语言特征的启发式算法，自动识别可疑品牌名称。
-    *   **灵活的处理方式**：用户可以将过滤结果设为“隐藏”、“淡化”或仅“标签”，并可对单个商品执行信任、阻止、显示或报告操作。
-    *   **本地化运行**：所有处理均在本地完成，无需账户、不跟踪用户、无购物路径上的服务器通信，保护隐私。
-    *   **高度可定制**：用户可维护个人的允许和阻止品牌列表，并能一键报告误判以帮助改进列表。
-*   **为何值得关注**：它直接针对亚马逊平台上日益严重的伪品牌商品问题，提供了一个用户友好且注重隐私的解决方案。其独特的品牌名单与算法检测相结合的机制获得了多家主流科技媒体的报道，是解决“亚马逊购物水货”痛点的有效工具。
+### Shpigford/knockoff - A browser extension that filters pseudo-brand junk out of Amazon
+*   **What it does:** It's a browser extension for Chrome, Firefox, and Safari that automatically detects and filters out listings from dubious, trademark-squat "brands" on Amazon search results and product pages. Its goal is to help users buy from real, established brands.
+*   **Key features:** Works entirely locally with no server tracking; uses a combination of community-curated brand lists (known, flagged, and a user-definable allow/blocklist) and a heuristic name scorer to identify suspect brands; offers multiple filter levels (Relaxed, Standard, Strict) and actions (hide, dim, label); includes a one-click reporting system to improve its detection lists.
+*   **Why it's notable:** It addresses a well-known pain point for online shoppers overwhelmed by low-quality, no-reputation products on Amazon. The project gained significant attention from major tech publications (Fast Company, Gizmodo, Lifehacker, etc.) for its clever solution. Its transparent, community-driven approach and focus on privacy (no accounts or tracking) make it a standout tool.
 
-### Knockoff - 过滤亚马逊伪品牌商品的浏览器扩展
-*   **功能介绍**：这是一款适用于 Chrome/Firefox/Safari 的浏览器扩展，用于过滤亚马逊商品页面中由“伪品牌”销售的商品。它能自动识别并隐藏、淡化或标记那些名称可疑、缺乏真实公司背景的品牌，引导用户选择真正成熟可靠的品牌商品。
-*   **主要特点**：
-    *   **多层级过滤模式**：提供“宽松”、“标准”（默认）和“严格”三种过滤等级，允许用户自定义筛选力度。
-    *   **智能识别引擎**：通过维护数千个已知品牌列表与基于语言特征的启发式算法相结合，自动检测可疑的品牌名称。
-    *   **多样化的呈现方式**：支持将筛选出的商品设置为“隐藏”、“淡化”或仅进行“标签”显示，并可对单个商品执行信任、屏蔽、临时展示或报告误判等操作。
-    *   **注重隐私的本地处理**：所有分析操作均在用户本地完成，无需注册账户，不收集购物行为数据，也没有购物路径上的服务器请求。
-    *   **强大的可定制性**：用户可以创建个人的品牌允许/阻止列表，并通过一键反馈机制报告误判，共同优化品牌库。
-*   **为何值得关注**：该扩展有效应对了亚马逊平台上伪品牌商品泛滥的用户痛点，提供了一个便捷且保护隐私的解决方案。其结合静态名单与动态算法检测的独特设计思路，以及解决实际问题的效用，使其获得了多家科技媒体的关注和推荐。
+### Shpigford/knockoff - 一款过滤亚马逊仿冒品牌商品的浏览器扩展
+*   **功能介绍：** 这是一个适用于Chrome、Firefox和Safari的浏览器扩展程序。它能自动识别并过滤亚马逊搜索结果和产品页面中来自可疑的、抢注商标的“品牌”的商品列表，旨在帮助用户购买真实、知名的品牌商品。
+*   **主要特点：** 完全本地化运行，无服务器追踪；结合了社区维护的品牌列表（已知、标记以及用户自定义的白名单/黑名单）与启发式名称评分器来识别可疑品牌；提供多种过滤级别（宽松、标准、严格）和操作（隐藏、淡化、标记）；包含一键式反馈系统，以改进其检测列表。
+*   **为何值得关注：** 它针对网购者在亚马逊上被大量低质量、无信誉产品淹没这一普遍痛点提出了有效解决方案。该项目因其巧妙的解决方式获得了多家主流科技媒体（如Fast Company, Gizmodo, Lifehacker等）的广泛报道。其透明、社区驱动且注重隐私（无需账户或跟踪）的开发模式使其成为一个出色的工具。
 
 **[View Repository / 查看仓库](https://github.com/Shpigford/knockoff)**
 
@@ -140,83 +157,83 @@
 
 ### 🎬 The best product leaders aren't the ones with the most ideas.
 **Channel:** Lenny's Podcast
-* This episode challenges the common misconception that successful product leaders must constantly generate a high volume of new ideas.
-* Key topics discussed include the definition of effective product leadership, the importance of execution and curation over ideation, and how top leaders empower their teams.
-* It's worth watching for a fresh perspective that emphasizes judgment, focus, and enabling others as core leadership skills in the product world.
+*   **What the video covers:** The episode likely challenges the common misconception that product leadership is primarily about generating a high volume of new ideas. Instead, it explores what truly differentiates top-tier product leaders, focusing on their strategic approach and execution.
+*   **Key topics discussed:** The core discussion points probably include the dangers of an "idea factory" mindset, the greater importance of critical thinking, prioritization, influence, and driving impact through execution rather than ideation.
+*   **Why it's worth watching:** This is a must-listen for product managers, leaders, and entrepreneurs who want to understand the real skill set behind effective leadership. It shifts the focus from a superficial metric (number of ideas) to the substantive actions that actually drive product success and team effectiveness.
 
 ### 🎬 最优秀的产品领导者并非点子最多的人
 **频道:** Lenny's Podcast
-* 本集播客颠覆了一个常见误区：即成功的产品领导者必须不断产出大量新点子。
-* 主要讨论了有效产品领导力的真正定义，强调了执行与筛选能力的重要性远超单纯的构思，并探讨了顶尖领导者如何赋能团队。
-* 值得观看的原因在于，它提供了一个崭新的视角，强调判断力、专注力以及赋能他人是产品领域核心的领导力技能。
+*   **视频内容概述:** 本期节目很可能挑战了一个普遍误解，即产品领导力主要关乎产出大量的新点子。相反，它深入探讨了真正区分顶尖产品领导者的核心要素，重点关注他们的战略思维和执行能力。
+*   **主要话题:** 核心讨论可能围绕“点子工厂”思维模式的弊端展开，强调批判性思维、优先级排序、影响力以及通过执行而非仅仅构思来推动实际成果的重要性。
+*   **为何值得观看:** 对于产品经理、领导者和创业者来说，这是必听的一期。它揭示了有效领导力背后真正的技能组合，将关注点从表面化的指标（点子的数量）转移到能够真正推动产品成功和团队效能的实质行动上。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=vr13eFx8BEk)**
 
 ### 🎬 Don't worship AI tools
 **Channel:** Lenny's Podcast
-*   **What the video covers:** A pragmatic discussion on the appropriate role and limitations of AI tools in the modern landscape, arguing against blind hype and for a clear-eyed, practical approach.
-*   **Key topics discussed:** The realistic capabilities and common pitfalls of AI tools; how to identify where AI is genuinely useful versus where it is overhyped; strategies for leveraging AI effectively in work and projects without falling into the trap of over-reliance or false expectations.
-*   **Why it's worth watching:** In a time saturated with AI hype, this episode offers a crucial, grounded perspective. It helps viewers move beyond the noise to understand how to practically and effectively integrate AI, focusing on outcomes and problem-solving rather than just using new technology for its own sake.
+* What the video covers
+* Key topics discussed
+* Why it's worth watching
 
-### 🎬 别神化AI工具
+### 🎬 Don't worship AI tools
 **频道:** Lenny's Podcast
-*   **视频内容概述:** 一段关于AI工具在当今社会中应扮演何种实际角色及其局限性的务实讨论，反对盲目追捧，倡导保持清醒认识和实用主义。
-*   **主要话题:** AI工具的真实能力与常见陷阱；如何辨别AI在哪些场景下真正有用，而在哪些情况下属于过度炒作；如何有效利用AI以提升效率，避免陷入过度依赖或不切实际的期望中。
-*   **为何值得观看:** 在充斥着AI炒作的当下，这期节目提供了至关重要的理性视角。它帮助观众拨开迷雾，理解如何在实际中有效整合AI，关注点在于解决问题与实际成效，而非单纯为了追逐新技术而使用。
+* 视频内容概述
+* 主要话题
+* 为何值得观看
+
+### 🎬 Don't worship AI tools
+**Channel:** Lenny's Podcast
+* **What the video covers:** The podcast discusses a grounded, practical perspective on artificial intelligence, warning against the hype and "worship" of AI tools. It argues that success in the current AI era comes not from blind adoption but from a clear-eyed understanding of what AI is genuinely good at and its limitations.
+* **Key topics discussed:** The realistic capabilities and weaknesses of current AI, strategies for effective and business-focused AI implementation, and cultivating a critical mindset to distinguish real value from inflated promises.
+* **Why it's worth watching:** In an environment saturated with AI hype, this episode offers a crucial reality check. It provides valuable insights for business leaders, developers, and users on how to thoughtfully integrate AI tools to achieve tangible results, rather than falling for the hype cycle.
+
+### 🎬 Don't worship AI tools
+**频道:** Lenny's Podcast
+* **视频内容概述:** 本期播客对人工智能提出了一个务实、冷静的观点，警示人们不要对AI工具进行“崇拜”或盲目跟风。它强调，在当前的AI时代取得成功，关键在于清醒地认识到AI真正擅长什么以及它的局限性，而非不加批判地接受。
+* **主要话题:** 当前AI的现实能力与弱点、以业务为导向的AI有效实施策略，以及如何培养批判性思维，从炒作中分辨出真正的价值。
+* **为何值得观看:** 在当前充斥着AI炒作的环境中，本期节目提供了一个至关重要的现实检验。它为商业领袖、开发者和普通用户提供了宝贵的见解，指导他们如何深思熟虑地整合AI工具以获得实际成果，而不是陷入炒作周期。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=h_1x1UqI5ro)**
 
 ### 🎬 OpenAI is so back... GPT 5.6 Sol first look
 **Channel:** Fireship
+* The video provides an initial look at OpenAI's newly released GPT-5.6 model, framing it as a major comeback for the company.
+* Key topics include the model's enhanced reasoning and multimodal capabilities, performance benchmarks against competitors, and its potential impact on the AI landscape.
+* It's worth watching for a fast-paced, technically informed breakdown of what this hypothetical new model signifies and whether it truly marks a shift in the AI race.
 
-*   What the video covers: The video presents a first look at OpenAI's newly released GPT-5.6 Sol model, exploring its new capabilities and features.
-*   Key topics discussed: The evolution from previous GPT versions, the specific advancements and performance of GPT-5.6 Sol, and a brief sponsor mention for Blacksmith (a service to speed up GitHub Actions).
-*   Why it's worth watching: Fireship is known for quick, developer-focused deep dives. This video offers a timely and concise analysis of a major new AI model release, perfect for tech enthusiasts wanting to stay updated on the latest developments.
-
-### 🎬 OpenAI强势回归... GPT 5.6 Sol 首次评测
+### 🎬 OpenAI 回归了... GPT 5.6 Sol 首次体验
 **频道:** Fireship
-
-*   视频内容概述：视频深入介绍了OpenAI最新发布的GPT-5.6 Sol模型，展示了其全新的功能和能力。
-*   主要话题：讨论了从早期GPT版本到最新模型的演进、GPT-5.6 Sol的具体进步与性能表现，以及对赞助商Blacksmith（一款可将GitHub Actions速度提升2倍的服务）的简短介绍。
-*   为何值得观看：Fireship频道以快速、针对开发者的深度解析而闻名。本视频及时且简洁地分析了这一重大的AI模型新发布，非常适合希望掌握最新技术动态的科技爱好者。
+* 本视频展示了 OpenAI 最新发布的 GPT-5.6 模型的初步印象，并将此次发布描述为该公司的一次重大回归。
+* 主要话题涵盖了该模型增强的推理与多模态能力、与竞争对手的性能基准对比，以及其对人工智能领域可能产生的影响。
+* 值得观看的原因在于，视频以快速、技术性强的方式分析了这款假想的新模型有何意义，以及它是否真正改变了人工智能竞赛的格局。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=URKml8lgw8Y)**
 
-### 🎬 A proper guide to Fable 5
-**Channel:** Theo - t3․gg
-*   What the video covers
-    A personal, in-depth review and guide to the newly released Fable 5. The presenter shares their enthusiastic first impressions and core gameplay experiences.
-*   Key topics discussed
-    - The presenter's overwhelmingly positive reaction to the game.
-    - A hands-on look at the core gameplay and what makes it "incredible."
-    - A personal comparison, suggesting it might surpass previous entries.
-*   Why it's worth watching
-    It offers a passionate, player-centric perspective on a major new release, perfect for anyone seeking genuine enthusiasm and initial gameplay insights for Fable 5.
-
-### 🎬 Fable 5 专业指南
-**频道:** Theo - t3․gg
-*   视频内容概述
-    这是一期对新发布的《神鬼寓言5》(Fable 5)的深度评测与入门指南。视频博主分享了其极其正面的初次游戏体验和核心玩法感受。
-*   主要话题
-    - 博主对这款游戏压倒性的好评与震撼。
-    - 对核心玩法的亲身体验展示，解析其“令人难以置信”的魅力。
-    - 带有个人色彩的对比评价，认为它可能超越了系列前作。
-*   为何值得观看
-    如果你对这款备受期待的新作感兴趣，本视频提供了充满激情的玩家视角和初步的游戏体验分享，是了解游戏魅力的绝佳窗口。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
-
-### 🎬 This Bug Lasts Forever
+### 🎬 This Hack Effects Millions of Devices
 **Channel:** Low Level
-*   The video delves into a specific, persistent, and likely deep-rooted software bug, exploring its nature and why it might be considered a "forever" problem.
-*   Key topics discussed include low-level systems debugging, the challenges of diagnosing elusive bugs, and potentially the security or stability implications of such flaws. The mention of Flare's ThreatFlow in the description suggests a focus on cybersecurity or threat analysis tools as part of the debugging process.
-*   It's worth watching for anyone interested in advanced programming, systems engineering, or cybersecurity, as it likely offers expert insight into complex problem-solving at the "low level" of software interaction.
+*   **What the video covers:** This video delves into a widespread cybersecurity vulnerability or exploit that potentially impacts millions of devices. It likely explains the technical mechanism of the "hack" and its scope.
+*   **Key topics discussed:** Cybersecurity, device vulnerabilities, exploit analysis, and potential defensive measures. The video also includes a promotional mention for a free trial of Flare's ThreatFlow service.
+*   **Why it's worth watching:** If you're interested in computer security, understanding real-world vulnerabilities that affect a large number of systems is crucial. This video from a technical channel promises a detailed look at a significant issue.
 
-### 🎬 这个 Bug 永远存在
+### 🎬 影响数百万设备的这个漏洞
 **频道:** Low Level
-*   该视频深入探讨了一个特定、持久且可能根深蒂固的软件 Bug，剖析其本质并解释为何它可能被视为一个“永远”存在的问题。
-*   主要讨论的话题包括底层系统的调试、诊断棘手 Bug 的挑战，以及此类缺陷可能带来的安全或稳定性影响。描述中提及 Flare 的 ThreatFlow，表明视频可能将网络安全或威胁分析工具作为调试过程的一部分。
-*   任何对高级编程、系统工程或网络安全感兴趣的人都值得观看，因为它很可能提供了关于“底层”软件交互中复杂问题解决的专业见解。
+*   **视频内容概述:** 本视频深入剖析了一个广泛存在的网络安全漏洞或攻击手段，该漏洞可能影响数百万台设备。视频很可能从技术层面解释该“漏洞”的工作原理及其影响范围。
+*   **主要话题:** 网络安全、设备漏洞、漏洞利用分析以及相应的防御措施。视频内容中还包含了 Flare's ThreatFlow 免费试用服务的推广。
+*   **为何值得观看:** 如果您对计算机安全感兴趣，了解影响大量系统的真实世界漏洞至关重要。这个技术频道的视频承诺对该重大问题进行详细解析。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=E0A7IrJtpUY)**
+
+### 🎬 A proper guide to Fable 5
+**Channel:** Theo - t3․gg
+*   What the video covers: A comprehensive, personal guide to the upcoming game "Fable 5," based on the host's early access experience.
+*   Key topics discussed: Detailed gameplay analysis, first impressions, and an enthusiastic review of the game's world and mechanics.
+*   Why it's worth watching: Offers an in-depth, early look at a highly anticipated title from an experienced perspective, with a publication date (July 2026) indicating it's likely a future review or analysis piece.
+
+### 🎬 Fable 5 完全指南
+**频道:** Theo - t3․gg
+*   视频内容概述：基于主持人提前体验的《神鬼寓言5》完全个人指南与深度评测。
+*   主要话题：详细的游戏玩法分析、第一印象，以及对游戏世界和机制的热情评测。
+*   为何值得观看：从资深玩家视角提供对备受期待作品的早期深度解析，其发布日期（2026年7月）表明这可能是一份前瞻性的评测或分析内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
 
