@@ -237,3 +237,235 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
 
+### Reviving Old Mathematical Applets with Modern AI Coding Agents
+*   The author, Terry Tao, previously created educational math applets in Java 1.0 in 1999 to visualize complex objects like honeycombs and Besicovitch sets, but they became obsolete due to web standards changes.
+*   Using a modern AI coding agent, he successfully migrated these old applets to a functional JavaScript version in just a few hours, with minimal bugs introduced and even some graphical enhancements.
+*   Beyond restoration, the author used the AI agent to create entirely new visualization tools, including a "Minkowski space Inkscape" for special relativity and an interactive tool for the Gilbreath conjecture, demonstrating the potential of AI-assisted coding for developing educational mathematical supplements.
+
+### 利用现代AI编程代理复兴旧数学小程序
+*   特里·陶（Terry Tao）于1999年用Java 1.0编写了多个数学教学小程序，用于可视化蜂窝结构、贝西科维奇集等复杂数学对象，但因网络技术标准变更而失效。
+*   借助现代AI编程代理，他仅用数小时就将这些旧小程序成功移植到可用的JavaScript版本，引入的错误极少，甚至实现了部分图形升级。
+*   除旧程序修复外，他还利用AI代理创建了全新可视化工具，包括用于狭义相对论的“闵可夫斯基空间版Inkscape”和Gilbreath猜想交互工具，展示了AI辅助编码在开发数学教育补充材料方面的潜力。
+
+**[Read Original / 阅读原文](https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/)**
+
+### Ilograph Overview
+*   A web-based architecture diagramming tool for creating, viewing, and collaborating on visual documentation.
+*   Features a split-screen editor with a visual canvas, annotation notes, and presentation tools (like highlighting and drawing).
+*   Offers account management with options to log in, sign up, and manage team workspaces (including license notifications).
+*   Includes a library of example diagrams (e.g., "Serverless on AWS," "Distributed Load Testing on AWS") to demonstrate capabilities.
+*   Provides diagram versioning, error indicators, and specific notices for expiring or expired team licenses.
+
+### Ilograph 概述
+*   一个基于网页的架构图表工具，用于创建、查看和协作制定可视化文档。
+*   具有分屏编辑器，包含视觉画布、注释笔记和演示工具（如高亮显示和绘图）。
+*   提供账户管理功能，支持登录、注册和管理工作区（包括许可证通知）。
+*   包含示例图表库（例如 "Serverless on AWS"、"Distributed Load Testing on AWS"）以演示其功能。
+*   提供图表版本控制、错误指示器以及针对即将过期或已过期团队许可证的特定通知。
+
+**[Read Original / 阅读原文](https://app.ilograph.com/demo.ilograph.yt-dlp/Download%2520a%2520YouTube%2520Video)**
+
+### Understanding the Odin Programming Language
+*   This book is a guide to learning both basic and advanced concepts of the Odin programming language, such as procedures, manual memory management, parametric polymorphism, and data-oriented design.
+*   It is designed for anyone with some programming experience and serves as an excellent introduction to low-level programming due to Odin's simple yet powerful nature.
+*   The core philosophy is that understanding your tools makes you a better craftsperson, so the book explains not just *how* to write Odin code, but also *why* the language works the way it does.
+*   It is highly endorsed by the creator of Odin, Bill "gingerBill" Hall, and praised for its clear writing style and effectiveness in helping developers transition from garbage-collected languages.
+
+### 理解 Odin 编程语言
+*   本书教授 Odin 编程语言的基础和高级概念，包括过程、**手动内存管理**、参数多态、面向数据的设计等。
+*   它面向任何具备一些编程经验的开发者，由于 Odin 是一门简单而强大的语言，无论你的背景如何，本书都是**了解低级编程的绝佳入门读物**。
+*   核心理念是：理解你的工具能让你成为更优秀的匠人。因此，本书不仅解释如何编写 Odin 代码，还阐述了语言设计背后的 *原因*。
+*   本书得到了 Odin 创始人 Bill "gingerBill" Hall 的高度推荐，并因清晰的写作风格、以及帮助开发者从垃圾回收语言（如 Go）平滑过渡到 Odin 而广受好评。
+
+**[Read Original / 阅读原文](https://odinbook.com/)**
+
+### destructive_command_guard - High-performance hook to block destructive commands for AI coding agents
+* **What it does**: This is a high-performance hook tool written in Rust that intercepts and blocks destructive git and shell commands *before* they are executed by AI coding agents. It acts as a safety layer to prevent accidental deletions of work caused by commands like `git reset --hard`, `rm -rf`, or dangerous database operations.
+* **Key features**:
+  * **Broad Agent Compatibility**: Officially supports or has integration paths for Claude Code, OpenAI Codex CLI, Gemini CLI, GitHub Copilot, VS Code Copilot Chat, Cursor IDE, Hermes Agent, and Grok (xAI).
+  * **Zero-Config, High-Performance Protection**: Blocks common dangerous commands out of the box with sub-millisecond latency due to SIMD-accelerated filtering.
+  * **Extensive & Configurable Security**: Includes 50+ security packs for databases (PostgreSQL), Kubernetes, Docker, cloud providers (AWS/GCP/Azure), and more. Offers configurable agent profiles with trust levels.
+  * **Intelligent Detection**: Scans heredocs and inline scripts (e.g., `python -c "os.remove(...)"`) and uses context-aware detection to avoid false positives.
+* **Why it's notable**: It addresses a critical pain point in the AI-assisted development workflow—the risk of catastrophic, irreversible commands. Its recent surge in popularity (444 stars today) highlights the urgent need for such a safeguard. The tool stands out for its native support for multiple major AI coding agents, high performance, and thoughtful design that provides rich user feedback without disrupting agent workflows.
+
+### destructive_command_guard - 用于阻止AI编码代理执行危险命令的高性能钩子
+* **功能介绍**：这是一个用Rust编写的高性能钩子工具，能在AI编码代理执行前拦截并阻止破坏性的git和shell命令。它作为一个安全层，防止由 `git reset --hard`、`rm -rf` 或危险的数据库操作等命令导致的工作意外丢失。
+* **主要特点**：
+  * **广泛的代理兼容性**：官方支持或有集成路径支持 Claude Code、OpenAI Codex CLI、Gemini CLI、GitHub Copilot、VS Code Copilot Chat、Cursor IDE、Hermes Agent 和 Grok (xAI)。
+  * **零配置的高性能防护**：通过SIMD加速过滤，提供亚毫秒级延迟，开箱即用地阻止常见的危险命令。
+  * **广泛且可配置的安全规则**：包含50多个安全包，覆盖数据库（PostgreSQL）、Kubernetes、Docker、云服务提供商（AWS/GCP/Azure）等。提供基于信任等级的可配置代理配置文件。
+  * **智能检测**：扫描here文档和内联脚本（如 `python -c "os.remove(...)"`），并使用上下文感知检测以避免误报。
+* **为何值得关注**：它解决了AI辅助开发工作流中的一个关键痛点——灾难性、不可逆转命令的风险。其近期的人气激增（今日444星）凸显了市场对此类防护工具的迫切需求。该工具因其对多种主流AI编码代理的原生支持、高性能以及在不中断代理工作流程的前提下提供丰富用户反馈的周到设计而脱颖而出。
+
+**[View Repository / 查看仓库](https://github.com/Dicklesworthstone/destructive_command_guard)**
+
+### DesktopCommanderMCP - A powerful MCP server for Claude AI to control your desktop and files
+*   **What it does:** This is a Model Context Protocol (MCP) server designed to extend Claude's capabilities with direct control over your computer's terminal, file system, and development tools. It allows Claude to execute commands, manage files, search code, and perform complex development tasks within a secure, sandboxed environment.
+*   **Key features:**
+    *   **Interactive Terminal Control:** Execute and manage long-running terminal commands, with process control, output streaming, and pagination.
+    *   **Comprehensive File Operations:** Advanced file editing (surgical text replacements, full rewrites), native support for Excel, PDF, and DOCX files, plus robust search, metadata retrieval, and directory management.
+    *   **Enhanced Security & Management:** Security hardening with symlink prevention and command blocklists, automatic audit logging, Docker isolation option, and dynamic server configuration.
+    *   **Developer-Centric Tools:** Code execution in memory (Python, Node.js), instant data analysis (CSV/JSON), recursive search with `ripgrep`, and a file preview UI with markdown rendering for Claude Desktop.
+    *   **Remote & Extensible:** Offers remote access via [Remote MCP](https://mcp.desktopcommander.app) and is the core engine behind the more polished, multi-model **Desktop Commander App**.
+*   **Why it's notable:** It's trending rapidly (207 stars today) because it significantly supercharges Claude Desktop, transforming it into a powerful AI-driven development environment. Its value lies in bridging the gap between conversational AI and hands-on system control, enabling complex workflows that go far beyond simple text editing—all while using client subscriptions to avoid API costs. The robust feature set, focus on security, and multiple easy installation methods make it a standout tool for developers.
+
+### DesktopCommanderMCP - 为Claude AI提供桌面与文件控制的强大MCP服务器
+*   **功能介绍：** 这是一个模型上下文协议（MCP）服务器，旨在为Claude提供直接控制计算机终端、文件系统和开发工具的能力。它允许Claude在安全、沙盒化的环境中执行命令、管理文件、搜索代码并完成复杂的开发任务。
+*   **主要特点：**
+    *   **交互式终端控制：** 执行并管理长时间运行的终端命令，支持进程控制、输出流和分页。
+    *   **全面的文件操作：** 先进的文件编辑（精细文本替换、完整重写），原生支持Excel、PDF和DOCX文件，以及强大的搜索、元数据获取和目录管理。
+    *   **增强的安全与管理：** 具有符号链接预防和命令黑名单等安全加固功能，自动审计日志，Docker隔离选项，以及动态服务器配置。
+    *   **开发者友好工具：** 内存代码执行（Python、Node.js）、即时数据分析（CSV/JSON）、基于`ripgrep`的递归搜索，以及为Claude Desktop提供的带Markdown渲染的文件预览界面。
+    *   **远程与可扩展：** 通过[远程MCP](https://mcp.desktopcommander.app)提供远程访问，并且是功能更完善、支持多模型的**Desktop Commander应用程序**的核心引擎。
+*   **为何值得关注：** 该项目今日迅速增长（获得207星），因为它极大地增强了Claude Desktop，将其转变为一个强大的AI驱动开发环境。其价值在于弥合了对话式AI与实际系统控制之间的鸿沟，能够实现远超简单文本编辑的复杂工作流——同时利用客户端订阅来避免API成本。丰富的功能集、对安全的关注以及多种便捷的安装方法，使其成为开发者眼中的杰出工具。
+
+**[View Repository / 查看仓库](https://github.com/wonderwhy-er/DesktopCommanderMCP)**
+
+### Vibe-Trading - AI驱动的个人交易智能体
+*   **功能介绍**：Vibe-Trading是一个基于AI的开源交易平台，旨在通过一条命令为用户提供一个功能全面的个人交易代理（Agent）。它集成了海量市场数据接入、多资产交易执行、量化因子分析、策略回测和AI智能体交互等核心能力。
+*   **主要特点**：
+    *   **全能智能体**：提供CLI和React 19前端，内置强大的AI代理，能通过自然语言或API调用，自动完成从数据分析、策略研究到交易执行的复杂工作流。
+    *   **广泛的数据与市场覆盖**：通过370+适配器接入全球22个市场（如美股、加密货币、印度股市等）的金融数据，支持460个量化因子（Alpha），并包含强大的数据加载器和回测引擎。
+    *   **模块化与可扩展架构**：核心框架采用FastAPI后端，支持通过MCP（Model Context Protocol）扩展技能，并内置了“策略开发管理器”等高级模块，能够将研究论文或报告自动转化为可监控的交易策略。
+*   **为何值得关注**：
+    *   **AI赋能的交易革新**：项目深度整合AI能力（支持多种大模型），将交易自动化从简单的脚本执行提升到了智能体自主决策与执行的层面，代表了金融科技（FinTech）的一个新趋势。
+    *   **高活跃度与社区支持**：项目今日获得776颗星，表明其热度极高，且README显示有频繁的功能更新和社区贡献，生态正在快速发展。
+    *   **开箱即用与专业深度兼备**：既强调“一条命令”快速启动，又提供了专业级的因子库、回测环境和机构级的数据源集成，适合从初学者到量化研究者的广泛用户群体。
+
+### Vibe-Trading - AI驱动的个人交易智能体
+*   **功能介绍**：Vibe-Trading 是一个开源的AI交易代理，旨在通过单条命令为用户赋予全面的交易能力。它集成了海量市场数据源、多资产交易执行、量化因子分析、策略回测和AI智能体交互等核心功能。
+*   **主要特点**：
+    *   **全能型智能体**：提供命令行界面和React 19前端，内置强大的AI代理，能够通过自然语言或API调用，自动完成从数据分析、策略研究到交易执行的复杂工作流程。
+    *   **广泛的市场与数据覆盖**：通过370多个数据适配器接入全球22个市场（如美股、加密货币、印度股市等）的金融数据，支持460个量化因子（Alpha），并拥有强大的数据加载和回测引擎。
+    *   **模块化与可扩展架构**：采用FastAPI后端，支持通过MCP（模型上下文协议）扩展技能，内置了“策略开发管理器”等高级模块，能将学术论文或研报自动转化为可监控的交易策略。
+*   **为何值得关注**：
+    *   **AI交易的深度整合**：项目深度整合了AI能力（支持多种大模型），将交易自动化从简单的脚本执行提升到了智能体自主决策与执行的新高度，代表了金融科技的一个重要发展方向。
+    *   **高热度与快速演进**：项目当日获得776星，显示出极高的关注度，README显示其功能更新和社区贡献非常活跃，生态系统正在迅速成长。
+    *   **易用性与专业性兼备**：既强调“一条命令”的快速启动，又提供了专业级的因子库、回测环境和机构级的数据源集成，适合从新手到量化研究人员的广泛用户群体。
+
+**[View Repository / 查看仓库](https://github.com/HKUDS/Vibe-Trading)**
+
+### scroll-world - AI Agent Skill for Generating Scroll-Through 3D World Landing Pages
+*   **What it does**: An agent skill (for Claude Code, Codex, etc.) that generates an immersive, continuous "fly-through" landing page for any brand or industry. As the user scrolls, a virtual camera smoothly moves through interconnected, AI-generated 3D scenes without cuts, creating a dynamic, scroll-scrubbed animation similar to high-end product showcases.
+*   **Key features**:
+    *   Designed as a plugin for AI coding agents, activated via chat commands.
+    *   Leverages the **Higgsfield** pipeline to generate cohesive isometric scenes and camera flight videos.
+    *   Uses a clever "connector clip" generation method to ensure frame-perfect transitions between scenes.
+    *   Provides a portable, vanilla-JS scrub engine and an HTML template, making it **framework-agnostic**.
+    *   Manages the entire workflow from interactive brand intake to final asset generation and page wiring.
+*   **Why it's notable**: It represents a cutting-edge application of AI agents in creative development, enabling complex, high-production-value web experiences to be created through simple conversational instructions. It democratizes a visual style previously requiring significant 3D animation and frontend engineering expertise. Its trending status (1027 stars) highlights strong interest in AI-driven content generation and novel web interaction paradigms.
+
+### scroll-world - 用于生成滚动式3D世界着陆页的AI代理技能
+*   **功能介绍**：这是一个为AI编程代理（如Claude Code、Codex等）设计的技能插件，能够为任何品牌或行业生成沉浸式的、连续“飞越世界”的着陆页。当用户滚动页面时，虚拟摄像机将在AI生成的互联3D场景中平滑穿梭，没有剪辑中断，创造出类似苹果产品页面的、由滚动控制的动态视觉效果。
+*   **主要特点**：
+    *   作为插件为AI编码代理设计，可通过聊天指令激活。
+    *   依托**Higgsfield**工作流生成统一的等距场景和摄像机动画视频。
+    *   采用创新的“连接片段”生成方法，确保场景之间的过渡实现逐帧精准衔接。
+    *   提供一个可移植的纯JavaScript滚动控制引擎和HTML模板，实现**框架无关**。
+    *   管理从交互式品牌需求收集到最终资产生成和页面整合的全过程。
+*   **为何值得关注**：它代表了AI代理在创意开发领域的尖端应用，通过简单的对话指令就能创建出复杂、高品质的网页体验。它降低了实现这种需要高级3D动画和前端工程专业知识的视觉风格的门槛。其当前的热度（1027颗星）反映了社区对AI驱动的内容生成和新颖网页交互范式的浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/oso95/scroll-world)**
+
+### Robbyant/lingbot-world-v2 - Infinite Worlds with Versatile Interactions
+*   **What it does**: This is an advanced AI world model (named LingBot-World 2.0 or LingBot-World-Infinity) that generates interactive, infinite-duration video environments. It's designed to create dynamic, interactive worlds with real-time response capabilities.
+*   **Key features**:
+    *   **Unbounded Interaction Horizon**: Generates consistent, ongoing video content indefinitely.
+    *   **Rapid Response Time**: A distilled real-time variant can drive 720p video streams at 60 fps.
+    *   **Highly Diverse Interactive Elements**: Supports a wide range of actions (e.g., attacking, archery, spell-casting) and text-driven events.
+    *   **Agentic Harness**: Pioneers the use of a "pilot agent" for character behavior and a "director agent" for environment synthesis.
+*   **Why it's notable**: It pushes the boundaries of generative world models by focusing on real-time, interactive, and infinite content creation. Its combination of high frame rate, diverse interactivity, and an agent-based architecture makes it a significant step for applications in interactive media, gaming, and simulation. The project provides public models and inference code, fostering community experimentation.
+
+### Robbyant/lingbot-world-v2 - 具备多元交互能力的无限世界生成模型
+*   **功能介绍**: 这是LingBot-World 2.0（亦称LingBot-World-Infinity），一个先进的AI世界模型。它能够生成可交互的、无限时长的动态视频环境。
+*   **主要特点**:
+    *   **无限交互时长**: 能够持续、一致地生成无限长的视频内容。
+    *   **极速响应**: 经过蒸馏的实时版本可以720p分辨率、60帧每秒的速度驱动视频流。
+    *   **高度多元的交互元素**: 支持丰富的动作（如攻击、射箭、施法、射击）和文本驱动的事件。
+    *   **智能体驱动框架**: 率先在领域内集成智能体框架，由“领航智能体”负责角色行为规划与执行，“导演智能体”负责在场景演进中合成新的环境元素。
+*   **为何值得关注**: 该模型专注于实时、交互式无限内容的生成，在生成式世界模型领域取得了重要突破。其高帧率、强交互性和智能体架构的结合，使其在交互式媒体、游戏和模拟等应用领域具有巨大潜力。项目公开了模型和推理代码，便于社区研究与应用。
+
+**[View Repository / 查看仓库](https://github.com/Robbyant/lingbot-world-v2)**
+
+### 🎬 Why the tech workforce is quietly splitting in two | Annual AI sentiment survey
+**Channel:** Lenny's Podcast
+* This video features a discussion with Noam Segal, a seasoned research leader from companies like Airbnb and Meta, presenting findings from an annual AI sentiment survey.
+* Key topics include the emerging division within the tech workforce regarding AI adoption, the contrasting attitudes between "AI enthusiasts" and "AI skeptics," and how this split impacts team dynamics and career trajectories.
+* It's worth watching for a deep, data-driven insight into the human side of the AI revolution, offering crucial perspectives for tech professionals and leaders navigating the changing landscape.
+
+### 🎬 科技行业劳动力正悄然两极分化 | 年度AI情绪调查（Noam Segal）
+**频道:** Lenny's Podcast
+* 本视频是对资深研究专家Noam Segal的访谈，他分享了年度AI情绪调查的最新发现。
+* 主要话题包括科技行业劳动力中新兴的AI采用分化现象、"AI热衷者"与"AI怀疑论者"之间的对立态度，以及这种分化如何影响团队动力与职业发展路径。
+* 视频值得观看，因为它提供了基于数据的深刻分析，揭示了AI革命中人性的层面，对正在适应行业变革的科技专业人士和领导者具有重要参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=_cmpIveXnvE)**
+
+### 🎬 The head of Instagram on why AI content is a tailwind, not a headwind.
+**Channel:** Lenny's Podcast
+*   **What the video covers:** A deep-dive interview with Adam Mosseri, the head of Instagram, focusing on the platform's evolving strategy in the age of generative AI. The conversation centers on how Instagram views and integrates AI-generated content.
+*   **Key topics discussed:** The strategic perspective that AI is a "tailwind" (an empowering force) rather than a "headwind" (a threat) for social platforms; the future of creator tools and content discovery; maintaining authenticity and community in an AI-augmented landscape.
+*   **Why it's worth watching:** It offers rare, first-hand insight from the leader of a major social platform on one of the most pressing questions in tech and media today. Mosseri's framework of "tailwind vs. headwind" provides a compelling and optimistic lens to understand how AI might shape social media, moving beyond common fears to practical opportunities.
+
+### 🎬 Instagram负责人谈为何AI内容是推动力而非阻力
+**频道:** Lenny's Podcast
+*   **视频内容概述：** 本视频是Instagram负责人亚当·莫塞里（Adam Mosseri）的深度访谈，重点探讨在生成式AI时代，Instagram平台的战略演变。对话核心围绕Instagram如何看待并整合AI生成的内容。
+*   **主要话题：** AI是一项“推动力”（赋能因素）而非“阻力”（威胁）的战略视角；创作者工具和内容发现功能的未来走向；在AI增强的环境中如何保持真实性与社区感。
+*   **为何值得观看：** 该访谈提供了来自主流社交平台领导者的一手见解，直指当下科技与媒体领域最紧迫的议题之一。莫塞里提出的“推动力 vs. 阻力”框架，为人们理解AI将如何塑造社交媒体提供了一个引人深思且充满机遇的视角，超越了常见的恐惧，聚焦于实际应用可能。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=TNyVjLUy9ck)**
+
+### 🎬 Comment "HOW" and ill tell you how you can money using Al.
+**Channel:** ezCommit
+*   **What the video covers:** The video likely reveals unconventional methods for generating income using advanced AI tools, moving beyond basic applications like email automation. It promises to showcase powerful, less-known capabilities of AI for profit.
+*   **Key topics discussed:** Potential topics include AI-driven content creation, automation of complex tasks, leveraging AI for specific business niches, or unique monetization strategies that utilize AI's "crazy" capabilities.
+*   **Why it's worth watching:** It's positioned for viewers seeking non-traditional, potentially lucrative applications of AI technology. The promise to reveal "how" in exchange for a comment suggests an exclusive or detailed method shared via direct message, making it intriguing for those looking for an edge.
+
+### 🎬 评论"HOW"我会告诉你如何用AI赚钱
+**频道:** ezCommit
+*   **视频内容概述:** 该视频很可能揭示了利用先进AI工具获取收入的非常规方法，超越了电子邮件自动化等基础应用。它承诺将展示AI鲜为人知的强大功能及其盈利潜力。
+*   **主要话题:** 讨论的话题可能包括AI驱动的内容创作、复杂任务的自动化、针对特定商业领域的AI应用，或是利用AI"疯狂"功能的独特变现策略。
+*   **为何值得观看:** 这期视频面向那些寻求AI技术非常规、高利润应用的观众。通过评论即可换取"如何做"的详细信息，这种方式暗示可能通过私信分享独家或深入的方法，对任何寻求优势的人来说都颇具吸引力。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
+
+### 🎬 Microsoft Just Open-Sourced a Cheat Code for AI Agents (SkillOpt)
+**Channel:** Better Stack
+*   **What the video covers:** The video introduces SkillOpt, a newly open-sourced tool from Microsoft designed to dramatically simplify the creation and optimization of complex AI agents. It presents the tool as a "cheat code" for building more capable and efficient AI systems.
+*   **Key topics discussed:** The core problem of designing optimal plans for AI agents to solve tasks, the introduction of SkillOpt as a solution, its technical framework (using skills as modular building blocks), and its potential impact on the AI development community through its open-source release.
+*   **Why it's worth watching:** It provides a clear look at a cutting-edge, practical tool that addresses a major bottleneck in AI agent development. It’s valuable for developers and AI enthusiasts interested in the latest methodologies for building sophisticated AI, offering both a high-level overview and a direct link to the resource.
+
+### 🎬 微软开源AI智能体"作弊码"(SkillOpt)
+**频道:** Better Stack
+*   **视频内容概述：** 视频介绍了微软最新开源的工具 SkillOpt，该工具旨在极大简化复杂AI智能体的创建与优化过程，并被形象地称为构建AI系统的"作弊码"。
+*   **主要话题：** 深入探讨了当前AI智能体在任务规划设计上面临的难题、SkillOpt的提出如何解决这一难题、其技术框架（以"技能"作为模块化构建单元），以及通过开源发布对AI开发者社区可能产生的影响。
+*   **为何值得观看：** 该视频清晰展示了一项解决AI智能体开发主要瓶颈的前沿实用工具。对于关注AI最新方法论、希望构建更复杂AI系统的开发者和爱好者而言，它提供了高阶概述并直接指向了可获取的资源，极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jjze-8Wia38)**
+
+### 🎬 All About GitHub | Git And GitHub For Beginners Complete Guide😱 | Harsh Sir
+**Channel:** Vedantu Upskill Academy
+*   **What the video covers:** This is a comprehensive beginner's guide to Git and GitHub, presented by the popular instructor Harsh Sir. It aims to take you from knowing nothing to understanding the fundamental concepts and workflow of using these essential tools for version control and collaboration.
+*   **Key topics discussed:**
+    *   The core concepts of Git as a version control system.
+    *   Step-by-step guide to installing Git.
+    *   Essential Git commands (init, add, commit, push, pull, etc.).
+    *   The purpose and functionality of GitHub as a hosting platform.
+    *   How to create a repository, clone it, and manage your code between local and remote.
+    *   Collaborative workflows, including branches, pull requests, and merging.
+*   **Why it's worth watching:** This video is a perfect one-stop resource for absolute beginners. Harsh Sir's teaching style is clear and engaging, making complex topics digestible. It provides a solid, practical foundation for anyone starting a career in tech, as Git and GitHub are indispensable industry-standard tools. It's worth watching to build confidence and competence in a critical skill set.
+
+### 🎬 All About GitHub | Git And GitHub For Beginners Complete Guide😱 | Harsh Sir
+**频道:** Vedantu技能提升学院 (Vedantu Upskill Academy)
+*   **视频内容概述:** 这是由知名讲师哈维尔老师（Harsh Sir）带来的Git与GitHub全面入门指南。视频旨在带领零基础观众理解版本控制与协作的核心概念及基本工作流程。
+*   **主要话题:**
+    *   Git作为版本控制系统的核心理念。
+    *   安装Git的详细步骤。
+    *   基础Git命令实操（init, add, commit, push, pull等）。
+    *   GitHub作为代码托管平台的用途与功能。
+    *   如何创建仓库、克隆代码以及管理本地与远程的代码同步。
+    *   协作工作流，包括分支（branches）、拉取请求（pull requests）和合并（merging）。
+*   **为何值得观看:** 本视频是初学者的绝佳一站式资源。哈维尔老师讲解清晰生动，能将复杂概念变得易于理解。它为技术领域的入门者打下了坚实且实用的基础——Git和GitHub是当今行业不可或缺的工具。观看此视频能帮助你快速建立并掌握这一关键技能。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=dwEZ62JLTCo)**
+
