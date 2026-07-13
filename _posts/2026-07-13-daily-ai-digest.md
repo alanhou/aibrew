@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 13, 2026"
 date: 2026-07-13
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### **English Summary**
@@ -232,4 +232,226 @@ pin: false### **English Summary**
 *   如果你是这款游戏或该系列的新手，本视频非常值得观看。它由一位对游戏充满热情的创作者制作，能为你提供扎实的基础，帮助你更好地理解和享受《神鬼寓言5》。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8GRmLR__OGQ)**
+
+### Browser Math Functions Leak OS Identity
+*   **Math.tanh acts as an OS fingerprint**: Since Chrome 148, the V8 engine uses the host operating system's math library for `Math.tanh` instead of its own bundled code. This results in different last-place rounding errors across Linux (glibc), macOS (libsystem_m), and Windows (UCRT).
+*   **Divergent code paths for JS and CSS**: While most JavaScript `Math.*` functions are consistent across systems (bundled in V8), CSS trigonometric functions (`sin()`, `cos()`, etc.) in `calc()` call the host OS library directly, creating another reliable leakage vector.
+*   **macOS internal library conflicts**: Apple systems have both a scalar library (`libsystem_m`) and a vector Accelerate framework that produce different results. Correctly spoofing requires knowing which library the browser actually calls for a given operation (e.g., `Math.tanh` uses the scalar library).
+*   **Precise algorithm replication is required**: To patch this, one must replicate the exact algorithms, coefficients, and constants from the target OS's `libm` at a bit-for-bit level, rather than adding noise, which would create its own detectable pattern.
+
+### 浏览器数学指纹的平台差异性
+*   **Math.tanh 函数成为操作系统标识**：自 Chrome 148 起，V8 引擎对 `Math.tanh` 的计算从使用自带捆绑代码改为调用宿主操作系统的数学库。这导致该函数在 Linux (glibc)、macOS (libsystem_m) 和 Windows (UCRT) 上产生不同的末位舍入误差，形成可区分的指纹。
+*   **JavaScript 与 CSS 使用不同代码路径**：虽然大多数 JavaScript `Math.*` 函数在各平台表现一致（由 V8 捆绑），但 CSS `calc()` 中的三角函数（如 `sin()`、`cos()`）会直接调用宿主 OS 的数学库，从而泄露操作系统信息。
+*   **macOS 内部库的复杂性**：苹果系统同时包含标量库 (`libsystem_m`) 和矢量 Accelerate 框架，两者对相同计算可能产生不同结果。要正确模拟，必须明确浏览器在特定操作中实际调用的是哪个库（例如，`Math.tanh` 使用的是标量库）。
+*   **需要精确复现算法**：要修补此漏洞，必须以比特级精度精确复制目标操作系统 `libm` 的算法、系数和常数，而不是添加噪声，因为噪声本身会成为一种可被检测到的模式。
+
+**[Read Original / 阅读原文](https://scrapfly.dev/posts/browser-math-os-fingerprint/)**
+
+### GhostLock: A Long-Lived Stack-UAF Vulnerability in the Linux Kernel
+*   GhostLock (CVE-2026-43499) is a critical stack-based Use-After-Free (stack-UAF) vulnerability discovered by Nebula Security's VEGA team, affecting every major Linux distribution since 2011.
+*   The flaw allows a local, unprivileged attacker to gain arbitrary kernel read/write primitives and achieve a highly stable privilege escalation or container escape, as demonstrated by a successful kernelCTF exploit that earned a $92,337 reward from Google.
+*   The root cause is a function lifecycle bug in the kernel's rtmutex (real-time mutex) code, specifically in the `remove_waiter()` helper, which was incorrectly reused in a "proxy lock" path, leading to a dangling pointer to a stack-allocated `rt_mutex_waiter` object.
+*   Exploitation involves triggering a specific futex deadlock cycle with three threads, causing the dangling pointer, and then carefully spraying controlled data onto the freed kernel stack memory to hijack control flow.
+
+### GhostLock：存在于所有Linux发行版长达15年的栈上UAF漏洞
+*   GhostLock（CVE-2026-43499）是由Nebula Security的VEGA团队发现的一个关键栈上使用后释放漏洞，自2011年起影响所有主要的Linux发行版。
+*   该漏洞允许本地非特权攻击者获得任意内核读写原语，并实现高度稳定的权限提升或容器逃逸，其利用已在内核CTF计划中获得Google的92,337美元奖励。
+*   根本原因是内核rtmutex（实时互斥锁）代码中的一个函数生命周期错误，具体涉及`remove_waiter()`辅助函数在“代理锁”路径中被错误复用，导致一个指向栈上分配的`rt_mutex_waiter`对象的指针悬垂。
+*   利用过程涉及使用三个线程触发特定的futex死锁循环，从而造成悬垂指针，然后精心将受控数据喷射到已释放的内核栈内存中，以劫持控制流。
+
+**[Read Original / 阅读原文](https://nebusec.ai/research/ionstack-part-2/)**
+
+### Cyberpunk Illustrated Literature: A Chronological Overview
+*   **The Long Tomorrow (1975)**: A foundational graphic novel by Dan O’Bannon & Moebius, presenting a gritty film noir detective story that heavily inspired the cyberpunk genre.
+*   **Akira (1982-1990)**: Katsuhiro Otomo's landmark manga set in a dystopian 2019, renowned for its punk themes, anarchist narrative, and iconic depiction of urban decay.
+*   **Blade Runner (1982)**: An official comic adaptation of the classic film, expanding on its ambiguous scenes with narration and trivia, a must-read for original fans.
+*   **Shatter (1985-1988)**: The world's first digital comic, notable for its classic cyberpunk tropes, pixel art style, and surprisingly predictive take on technology and society.
+*   **Dominion (1986)**: Masamune Shirow's short manga prequel to *Ghost in the Shell*, blending comedy with themes of pollution, cybernetics, and corrupt governance.
+*   **Rebel (1986)**: A post-apocalyptic graphic novel by Pepe Moreno with a heavy punk aesthetic, set in a dystopian 2002 New York and featuring espionage themes reminiscent of *Metal Gear Solid*.
+*   **Ghost in the Shell (1989-1990)**: Masamune Shirow's seminal manga exploring artificial intelligence and cybernetics, serving as the direct source for the acclaimed film and franchise.
+
+### 赛博朋克图像文学：时间线概览
+*   **《漫长的明天》 (1975)**：由丹·欧班农与墨比斯创作的奠基性图像小说，讲述了一个硬核的黑色侦探故事，深刻影响了赛博朋克流派的诞生。
+*   **《阿基拉》 (1982-1990)**：大友克洋的里程碑式漫画，背景设定在反乌托邦的2019年，以其朋克主题、无政府主义叙事和标志性的城市衰败景象而闻名。
+*   **《银翼杀手》 (1982)**：经典电影的官方漫画改编，通过旁白和大量细节丰富了原作中模糊的场景，是原版影迷的必读之作。
+*   **《碎片》 (1985-1988)**：世界上第一部数字漫画，以其典型的赛博朋克套路、像素艺术风格和对技术与社会的预见性描绘而著称。
+*   **《机动警察：首都危机》 (1986)**：士郎正宗创作的短篇漫画，是《攻壳机动队》的前传，融合了喜剧元素，主题涉及污染、电子机械和腐败统治。
+*   **《反叛者》 (1986)**：佩佩·莫雷诺创作的后末日图像小说，具有强烈的朋克美学，设定在反乌托邦的2002年纽约，其谍战主题令人联想到《合金装备》系列。
+*   **《攻壳机动队》 (1989-1990)**：士郎正宗的开创性漫画，探讨人工智能与电子机械，是备受赞誉的电影及其系列作品的直接原著。
+
+**[Read Original / 阅读原文](https://shellzine.net/cyberpunk-comics/)**
+
+### PrefectHQ/prefect - Python workflow orchestration for data pipelines
+* What it does
+    Prefect is a Python framework designed to build and orchestrate resilient data pipelines. It allows developers to elevate simple Python scripts into production-ready workflows with minimal code changes.
+
+* Key features
+    * **Declarative Workflow Definition**: Use simple `@flow` and `@task` decorators to define workflows.
+    * **Resilient Execution**: Built-in support for retries, caching, and dynamic branching logic to handle failures and changing conditions.
+    * **Rich Monitoring & Observability**: Track and monitor all workflow activity through a self-hosted Prefect server UI or the managed Prefect Cloud dashboard.
+    * **Flexible Deployment**: Easily turn scripts into scheduled or event-driven deployments.
+    * **Scalable & Cloud-Native**: Features a lightweight client (`prefect-client`) and integrates with modern data tools.
+
+* Why it's notable
+    * **High Trending Activity**: Gained 66 stars in a single day, indicating strong and growing community interest.
+    * **Developer-Friendly**: Simplifies complex data workflow engineering with an intuitive API, making it accessible for teams of all sizes.
+    * **Proven at Scale**: Powers over 200 million monthly data tasks for major enterprises, demonstrating its reliability and scalability in production environments.
+    * **Vibrant Ecosystem**: Supported by a large community (25k+ practitioners), extensive documentation, and a commercial offering (Prefect Cloud).
+
+### PrefectHQ/prefect - Python数据管道工作流编排框架
+* 功能介绍
+    Prefect 是一个专为构建和编排弹性数据管道而设计的Python框架。它使开发者能够用最少的代码改动，将简单的Python脚本提升为生产就绪的工作流。
+
+* 主要特点
+    * **声明式工作流定义**：使用简洁的 `@flow` 和 `@task` 装饰器来定义工作流。
+    * **弹性执行**：内置重试、缓存和动态分支逻辑，以应对故障和不断变化的条件。
+    * **丰富的监控与可观测性**：可通过自托管的 Prefect 服务器UI或托管的 Prefect Cloud 仪表板跟踪和监控所有工作流活动。
+    * **灵活部署**：轻松将脚本转换为按计划或事件驱动运行的部署。
+    * **可扩展与云原生**：提供轻量级客户端 (`prefect-client`) 并与现代数据工具集成。
+
+* 为何值得关注
+    * **高热度趋势**：单日获得66颗星，显示出强劲且不断增长的社区兴趣。
+    * **开发者友好**：通过直观的API简化了复杂的数据工作流工程，使各类团队都易于上手。
+    * **经过大规模验证**：每月为大型企业处理超过2亿个数据任务，证明了其在生产环境中的可靠性和可扩展性。
+    * **活跃的生态系统**：拥有庞大的社区（超过25,000名实践者）、详尽的文档以及商业产品（Prefect Cloud）的支持。
+
+**[View Repository / 查看仓库](https://github.com/PrefectHQ/prefect)**
+
+### Awesome LLM Apps - 100+ ready-to-run AI agent and RAG templates
+* **What it does**: This repository is a comprehensive collection of over 100 self-contained, runnable templates for AI agents and Retrieval-Augmented Generation (RAG) applications. It covers a wide spectrum of modern use cases, from simple starter agents to advanced multi-agent teams, voice AI, always-on services, and specialized agent skills.
+* **Key features**:
+    * **Hand-built & Runnable**: Every template is original, end-to-end tested, and designed to run in just a few commands.
+    * **Broad Coverage**: Includes starter agents, advanced single/multi-agent apps, always-on agents, voice agents, RAG systems, MCP agents, fine-tuning tutorials, and more.
+    * **Provider-Agnostic**: Compatible with major LLM providers like Claude, Gemini, OpenAI, xAI, Qwen, and Llama, switchable via configuration.
+    * **Extensive Learning Resources**: Each featured template has a corresponding free step-by-step tutorial on the Unwind AI website.
+    * **Open Source**: Licensed under Apache-2.0, allowing free use, modification, and commercial deployment.
+* **Why it's notable**: It acts as a practical "cookbook" that eliminates the need to rebuild common AI infrastructure from scratch. It significantly lowers the barrier for developers to learn, prototype, and ship production-grade LLM applications. The repository's active community (as evidenced by today's 408 stars), comprehensive documentation, and continuous updates make it a go-to resource for the AI development community.
+
+### Awesome LLM Apps - 100多个可直接运行的AI代理与RAG应用模板
+* **功能介绍**：这是一个汇集了超过100个独立、可运行的AI代理和检索增强生成（RAG）应用模板的集合。它覆盖了从简单的入门代理、复杂的高级多代理团队，到语音AI、全天候服务、专业代理技能等广泛的现代应用场景。
+* **主要特点**：
+    * **原创且可运行**：每个模板均为原创作品，经过完整测试，可通过几条命令快速启动。
+    * **内容全面**：涵盖入门代理、高级单体/多代理应用、全天候代理、语音代理、RAG系统、MCP代理、微调教程等多个类别。
+    * **灵活兼容**：支持Claude、Gemini、OpenAI、xAI、Qwen、Llama等主流LLM提供商，通过配置即可切换。
+    * **丰富教程**：每个精选模板都配有Unwind AI网站上的免费分步教程。
+    * **开源许可**：采用Apache-2.0许可证，可自由使用、修改和商业化部署。
+* **为何值得关注**：该仓库是一个实用的“代码食谱”，让开发者无需从头开始构建常见的AI基础设施。它极大地降低了学习、原型设计和交付生产级LLM应用的门槛。活跃的社区（今日获408星）、详尽的文档以及持续的更新，使其成为AI开发者社区不可或缺的资源宝库。
+
+**[View Repository / 查看仓库](https://github.com/Shubhamsaboo/awesome-llm-apps)**
+
+### x4gKing/3x-ui-Upgrade - A single-port 3x-ui panel deployment for Railway
+*   **What it does**: This repository provides a pre-configured setup to deploy the "Heimdall" panel (an improved fork of 3x-ui) on the Railway platform. Its core function is to expose the management panel, subscription service, and VLESS/WebSocket inbound connection all through a single port allocated by Railway, using an Nginx reverse proxy.
+*   **Key features**:
+    *   **Single-port Architecture**: Consolidates all services (web panel, API, and VPN traffic) onto one port, perfectly suiting Railway's environment.
+    *   **Simplified Database**: Defaults to SQLite, eliminating the need for external database configuration for most use cases.
+    *   **Automated Deployment**: Uses a Dockerfile and a start script for a streamlined deployment process directly from GitHub.
+*   **Why it's notable**: It solves a specific deployment challenge for running a VPN panel on platform-as-a-service (PaaS) providers like Railway, which often restrict users to a single network port. The README provides clear, step-by-step instructions in Persian (Farsi) for quick setup, making it accessible for users in that linguistic community.
+
+### x4gKing/3x-ui-Upgrade - 面向Railway平台的单端口3x-ui面板部署方案
+*   **功能介绍**：本仓库提供了一套预配置环境，用于在Railway平台上部署"Heimdall"面板（3x-ui的一个改进分支）。其核心功能是通过Nginx反向代理，将管理面板、订阅服务和VLESS/WebSocket入站连接全部整合到Railway分配的**单一端口**上。
+*   **主要特点**：
+    *   **单端口架构**：将所有服务（Web面板、API和VPN流量）整合到单一端口，完美适配Railway的平台环境。
+    *   **简化数据库**：默认使用SQLite，对于大多数用户而言，无需配置外部数据库。
+    *   **自动化部署**：通过Dockerfile和启动脚本，支持从GitHub直接进行简洁的部署。
+*   **为何值得关注**：它解决了一个特定的部署难题，使得在像Railway这样限制用户只能使用单个网络端口的平台即服务（PaaS）上运行VPN面板成为可能。其README提供了清晰的、分步骤的波斯语（Farsi）部署指南，方便相关语言社区的用户快速上手。
+
+**[View Repository / 查看仓库](https://github.com/x4gKing/3x-ui-Upgrade)**
+
+### Robbyant/lingbot-video - 专为具身智能打造的混合专家视频生成模型
+*   **功能介绍**：LingBot-Video 是首个开源的、专注于**具身智能**的大规模**混合专家**视频生成模型。它旨在弥合视频合成与物理世界理解之间的鸿沟，能够执行文本到图像、文本到视频以及图像到视频等任务，并特别针对物理合理性和任务完成进行了优化。
+*   **主要特点**：
+    *   **高效的 MoE 架构**：从头扩展，在容量与成本间取得平衡，推理速度提升约**3倍**。
+    *   **海量数据引擎**：基于海量网络视频训练，并集成了超过 **7万小时**的具身交互数据。
+    *   **多重奖励系统**：生成结果在**高美学**、**物理合理性**和**任务完成度**方面接受多重奖励优化。
+    *   **丰富的模型套件**：提供 1.3B 密集模型和 30B-A3B MoE 模型（含 Refiner）及配套的提示词重写器。
+*   **为何值得关注**：作为专为**具身智能**设计的顶流开源视频模型，LingBot-Video 在 **RBench 机器人基准测试**中平均分排名第一，尤其在操作、长期视野和多实体等任务上表现卓越。其开源特性、创新的 MoE 架构和针对物理世界理解的特化训练，使其成为机器人、仿真和 AI 领域研究者与开发者的重要工具。
+
+### Robbyant/lingbot-video - 面向具身智能的大规模混合专家视频生成模型
+*   **功能介绍**：LingBot-Video 是一个专注于**具身智能**的首个开源大规模**混合专家**视频生成模型。它旨在连接视频合成与物理世界理解，能够执行文本到图像、文本到视频以及图像到视频生成任务，并特别优化了生成内容的物理合理性和任务完成能力。
+*   **主要特点**：
+    *   **高效的 MoE 架构**：从零开始扩展，在模型容量和计算成本之间实现了平衡，**推理速度提升约3倍**。
+    *   **数据引擎**：基于海量网络视频进行训练，并整合了超过 **7万小时**的具身数据。
+    *   **多重奖励系统**：针对生成的视频内容，在**美学质量**、**物理合理性**和**任务完成度**等多个维度进行奖励优化。
+    *   **完整的模型生态**：提供了从 1.3B 密集模型到 30B-A3B 混合专家模型（含 Refiner）的完整选择，以及配套的提示词重写模型。
+*   **为何值得关注**：LingBot-Video 是当前首个专为**具身智能**场景设计的开源顶级视频生成模型。其在权威的 **RBench 机器人视频基准测试**中总分排名第一，展示了在操作、空间理解和长期规划等方面的强大能力。它的开源、针对物理世界的专用架构以及卓越的性能，使其成为推动机器人学习、虚拟世界构建和人工智能研究的热点项目。
+
+**[View Repository / 查看仓库](https://github.com/Robbyant/lingbot-video)**
+
+### 🎬 China's Belt and Road Problem - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   **What the video covers:** The video appears to be a critical examination of China's Belt and Road Initiative (BRI), likely featuring an analysis by Sarah Paine. It would explore the economic, geopolitical, and debt-related challenges and criticisms associated with the BRI project.
+*   **Key topics discussed:** Anticipated topics include debt-trap diplomacy, the geopolitical implications of BRI infrastructure projects, case studies of participating nations, and the long-term sustainability and strategic goals of the initiative.
+*   **Why it's worth watching:** Given Dwarkesh Patel's channel often features in-depth conversations on technology, geopolitics, and economics, this video likely offers a substantive, critical perspective on one of China's most significant global strategies. It's valuable for viewers seeking to understand the complexities and controversies behind the BRI beyond surface-level reporting.
+
+### 🎬 中国的“一带一路”难题 - Sarah Paine
+**频道:** Dwarkesh Patel
+*   **视频内容概述:** 本视频疑似是对中国“一带一路”倡议的一次深度批判性审视，嘉宾/专家为 Sarah Paine。内容可能深入探讨该倡议所面临的经济、地缘政治及债务相关挑战与批评。
+*   **主要话题:** 预计讨论的关键话题包括“债务陷阱外交”、中国基建项目参与国的地缘政治影响、具体案例研究，以及该倡议的长期可持续性和战略目标。
+*   **为何值得观看:** 考虑到 Dwarkesh Patel 的频道常涉及科技、地缘政治和经济等领域的深度对话，本视频很可能提供了关于中国最重要全球战略之一的实质性批判视角。对于希望超越表面报道，理解“一带一路”倡议背后复杂性和争议的观众来说，具有很高的观看价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IO80MYGbJac)**
+
+### 🎬 Comment "HOW" and ill tell you how you can money using Al.
+**Channel:** ezCommit
+
+*   What the video covers: This video promises to reveal methods for earning money using AI technology, specifically highlighting applications that go beyond basic tools like simple email automation.
+*   Key topics discussed: Practical and potentially advanced AI applications for income generation, likely including specific use cases, tools, or strategies.
+*   Why it's worth watching: It targets viewers interested in monetizing AI skills or discovering unconventional AI tools for business, promising actionable insights beyond introductory-level tutorials.
+
+### 🎬 Comment "HOW" and I'll tell you how you can make money using AI
+**频道:** ezCommit
+
+*   视频内容概述：本视频旨在揭示利用人工智能（AI）技术赚钱的方法，特别强调了其应用超越了基础的电子邮件自动化等简单工具。
+*   主要话题：用于创收的实用且可能较为高级的人工智能应用，可能包括具体的案例、工具或策略。
+*   为何值得观看：该视频面向希望将AI技能变现或寻找非传统AI工具用于商业的观众，承诺提供超越入门级教程的可操作见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
+
+### 🎬 Git and Github Tutorial For Beginners (Full Course)
+**Channel:** CodeWithHarry
+
+*   **What the video covers:** This is a comprehensive, beginner-friendly course on Git and GitHub. It guides viewers from the absolute basics of version control to practical collaboration on GitHub, covering installation, command-line usage, and core workflows.
+*   **Key topics discussed:** Setting up Git, understanding repositories, the Git lifecycle (add, commit, push, pull), branching and merging, resolving merge conflicts, using GitHub for remote collaboration, pull requests, and project management basics.
+*   **Why it's worth watching:** As a "full course," it offers a structured, in-depth learning path rather than a quick overview. CodeWithHarry is known for clear explanations and hands-on demonstrations, making complex topics accessible. This is an ideal starting point for developers to master essential modern development tools.
+
+### 🎬 Git和Github入门教程（完整课程）
+**频道:** CodeWithHarry
+
+*   **视频内容概述：** 这是一套全面且面向初学者的Git与GitHub教程。它将带领观众从版本控制的基础知识开始，逐步学习使用GitHub进行协作，涵盖安装配置、命令行操作以及核心工作流程。
+*   **主要话题：** Git的安装、仓库概念理解、Git工作生命周期（add、commit、push、pull）、分支与合并、解决合并冲突、利用GitHub进行远程协作、拉取请求以及基础项目管理。
+*   **为何值得观看：** 作为一个“完整课程”，它提供了结构化的深入学习路径，而非浅尝辄止的概述。CodeWithHarry频道以清晰的讲解和实操演示著称，能将复杂概念变得通俗易懂。对于希望掌握必备现代开发工具的开发者而言，这是一个绝佳的起点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
+
+### 🎬 How I built an $80K/Mo mobile app with Claude Code (Full Vibe Code Tutorial)
+**Channel:** Jason Lee
+
+*   This video is a comprehensive, step-by-step tutorial on building a complete mobile application using Claude Code, an AI-powered coding tool.
+*   It covers the entire development workflow, from initial concept and using AI prompts (specifically referencing "Arcads Prompts") to generating functional code, integrating features, and potentially scaling the app to achieve significant revenue ($80K/month).
+*   It's worth watching for developers and entrepreneurs interested in rapid prototyping, AI-assisted development, and learning how to leverage tools like Claude Code to build and monetize software products efficiently.
+
+### 🎬 如何用Claude Code构建一个月入8万美元的移动应用（完整Vibe Code教程）
+**频道:** Jason Lee
+
+*   本视频是一个使用Claude Code（一款AI编程工具）构建完整移动应用程序的详尽分步教程。
+*   内容涵盖从初始概念、使用AI提示词（特别提到了“Arcads Prompts”），到生成功能代码、集成各项功能，并最终将应用扩展至实现可观收入（8万美元/月）的全过程。
+*   对于希望快速构建原型、使用AI辅助开发，以及学习如何利用Claude Code等工具高效开发和变现软件产品的开发者与创业者而言，本视频极具观看价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UMjeSU6C4qU)**
+
+### 🎬 SECRET Method to LEARN CODING FAST
+**Channel:** CynoHub
+
+*   This video addresses the common problem of spending long hours (6-7 hours daily) on learning to code without seeing significant improvement. It aims to reveal the biggest mistake students typically make and offers a "secret" method for more efficient learning.
+*   **Key topics discussed:** Identifying ineffective study habits in coding, strategies for focused and efficient learning, and a method to accelerate skill development.
+*   **Why it's worth watching:** If you feel stuck in your coding journey despite putting in the hours, this video could provide a crucial perspective shift. It promises to help you stop wasting time and start learning in a way that yields real, noticeable progress faster.
+
+### 🎬 学习编程的“秘密”高效方法
+**频道:** CynoHub
+
+*   本视频针对许多编程学习者的常见痛点：每天花费大量时间（6-7小时）学习，但进步甚微。视频旨在揭示学生常犯的最大错误，并分享一种能大幅提升学习效率的“秘密”方法。
+*   **主要话题：** 识别低效的编程学习习惯、专注高效的学习策略，以及加速技能成长的实践方法。
+*   **为何值得观看：** 如果你感觉在编程学习上投入了时间却停滞不前，这个视频或许能为你带来关键的思维转变。它承诺帮助你告别时间浪费，以更有效的方式实现快速且可见的进步。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RFKqta4A6pw)**
 
