@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 13, 2026"
 date: 2026-07-13
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### **English Summary**
@@ -454,4 +454,69 @@ pin: false### **English Summary**
 *   **为何值得观看：** 如果你感觉在编程学习上投入了时间却停滞不前，这个视频或许能为你带来关键的思维转变。它承诺帮助你告别时间浪费，以更有效的方式实现快速且可见的进步。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=RFKqta4A6pw)**
+
+### Beavis Ultrasound PnP ISA Sound Card Replication Project
+
+*   This is an open-source replica project for the Gravis Ultrasound PnP ISA sound card, notable for including the complete schematic and reverse-engineered source code for its GAL (Generic Array Logic) chip.
+*   The core of the design is the AMD InterWave chip (AM78C201), into which most sound card functionality is integrated, making the overall circuit relatively simple.
+*   The author provides all necessary design files but warns that the board has **not been fabricated or functionally tested** by them, so builders assume all risks.
+*   Key details cover PCB specifications (4-layer, 8.2"x4.2"), component substitution notes (e.g., dual op-amps, ferrite beads), and explanations for unused or alternative placements on the board.
+*   Programmable devices are required, including a 1MB sample ROM (U8) and a 93C66 EEPROM (U6/U60) for Plug-and-Play configuration, for which a specific binary file and programming notes are provided.
+*   The GAL (U14) is required primarily for the CD-ROM IDE interface functionality; its programming file is included.
+
+### Beavis Ultrasound PnP ISA 声卡复刻开源项目
+
+*   这是一个针对 Gravis Ultrasound PnP ISA 声卡的开源复刻项目，其独特之处在于提供了完整的原理图以及逆向工程获得的 GAL（通用阵列逻辑）芯片源代码。
+*   设计的核心是 AMD InterWave 芯片（AM78C201），绝大多数声卡功能都集成在此芯片内，因此整体电路设计较为简单。
+*   作者提供了所有必要的设计文件，但明确警告**未亲自制作和测试该电路板**，因此制作风险需自行承担。
+*   关键内容涵盖了 PCB 规格（4层板，8.2"x4.2"）、元件替代说明（如双运放、磁珠）以及对板上未使用或可选位置的解释。
+*   制作需要可编程器件，包括 1MB 的采样 ROM（U8）和用于即插即用配置数据的 93C66 EEPROM（U6/U60），并提供了相应的二进制文件和编程说明。
+*   GAL 芯片（U14）主要用于实现 CD-ROM IDE 接口功能；如果不需要此功能，则无需使用该芯片，其编程文件已包含在内。
+
+**[Read Original / 阅读原文](https://github.com/schlae/BeavisUltrasound)**
+
+<!-- [Title-Only] -->
+### Tiny Emulators
+* Based on the title and URL, this article likely introduces "tiny8bit," a project for creating minimalistic, browser-based emulators of classic 8-bit computer systems. It appears to be a technical preview or demonstration of such emulators.
+* It might be interesting to readers because it combines retro computing (emulating old systems like the Commodore 64, ZX Spectrum, etc.) with modern web technology (running in a browser). It appeals to enthusiasts of vintage hardware, programmers interested in emulation techniques, and developers looking for lightweight code examples.
+
+### 微型模拟器
+* 根据标题和链接推测，这篇文章很可能介绍了 "tiny8bit" 项目，该项目致力于创建极简化的、基于浏览器的经典 8 位计算机系统模拟器。文章内容可能是该模拟器的技术预览或演示。
+* 它可能引起读者兴趣的原因在于，它将复古计算（模拟诸如 Commodore 64、ZX Spectrum 等老式系统）与现代网络技术（在浏览器中运行）相结合。这吸引了复古硬件爱好者、对模拟技术感兴趣的程序员，以及寻找轻量级代码示例的开发者。
+
+**[Read Original / 阅读原文](https://floooh.github.io/tiny8bit-preview/index.html)**
+
+### Physics Learning Guide: Key Insights from Susan Rigetti
+* **Recommended Non-Speculative Popular Books:**  
+  Focus on books by authors like Frank Close or Richard Feynman that inspire without unrealistic speculation, helping maintain motivation by keeping the "big picture" in mind.
+* **Mathematical Prerequisites:**  
+  A solid foundation in high school mathematics (pre-algebra through pre-calculus) is essential. Calculus will be learned alongside undergraduate physics. Resources like Khan Academy or R.D. Driver's *Why Math?* can assist.
+* **Effective Study Strategies:**  
+  Identify your learning style (e.g., reading, note-taking) and emphasize solving problems—this is the core of understanding physics. Seek step-by-step solutions online after attempting problems independently.
+* **Textbook-Based Learning Emphasis:**  
+  Physics education primarily relies on textbooks, lectures, and homework, not laboratory work. Studying recommended textbooks replicates the curriculum of top undergraduate/graduate programs.
+
+### 物理学习指南：Susan Rigetti的核心建议
+* **推荐非推测性科普书籍：**  
+  优先选择Frank Close或Richard Feynman等作者的书籍，它们能在不提供不切实际观点的前提下激发学习兴趣，帮助把握“全局视角”。
+* **数学基础要求：**  
+  需掌握高中数学知识（从预备代数到预备微积分），微积分将在本科学习中逐步接触。可通过Khan Academy或《Why Math?》等资源巩固。
+* **高效学习方法：**  
+  明确个人学习风格（如阅读、笔记等），并注重解题实践——这是理解物理的关键。尝试独立解题后，可在线查找分步骤的解答。
+* **以教材为核心的学习模式：**  
+  物理教育主要依赖教材、课堂讲授和习题，而非实验室。研读推荐教材等同于接受全球顶尖本科/研究生项目的课程训练。
+
+**[Read Original / 阅读原文](https://www.susanrigetti.com/physics)**
+
+### Three.js Object Sculptor - A Codex Plugin for Image-to-Procedural-3D Modeling
+* **What it does:** This is a Codex plugin that uses AI to analyze a reference image of an object and guide the generation of a procedural, code-only Three.js model. It focuses on creating animation-ready geometry with a defined hierarchy, materials, and interaction points, rather than perfect mesh extraction.
+* **Key features:** Features a quality-gated, multi-stage build pipeline (from blockout to lighting). Generates structured `ObjectSculptSpec` documents for planning. Includes tools for visual comparison and AI vision review for self-correction. Can extract procedural PBR evidence (albedo, roughness, etc.) from the reference image.
+* **Why it's notable:** It addresses a specific challenge in AI 3D generation—maintaining recognisable detail beyond just a vague silhouette. By implementing a deliberate sculpting workflow with validation checkpoints, it produces higher-quality, more usable procedural assets for web, games, and interactive demos.
+
+### Three.js Object Sculptor - 面向图像转程序化三维建模的Codex插件
+* **功能介绍:** 这是一个Codex插件，能够分析物体的参考图片，引导AI生成一个纯代码、可动画的Three.js三维模型。它专注于创建具有明确层级结构、材质和交互点的程序化几何体，而非追求完美的网格提取。
+* **主要特点:** 拥有质量门控的多阶段构建流程（从轮廓搭建到光照渲染）。生成结构化的`ObjectSculptSpec`规划文档。包含视觉对比工具和AI视觉评审环节，实现自我修正。支持从参考图像中提取程序化PBR材质证据（如反照率、粗糙度等）。
+* **为何值得关注:** 它针对性地解决了AI三维生成中的一个常见问题——模型在保持整体形状时容易丢失识别性的细节。通过实施一套包含验证节点的、审慎的“雕刻”工作流程，该插件能够生成更高质量、更实用的程序化资产，适用于网页、游戏和交互式演示。
+
+**[View Repository / 查看仓库](https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin)**
 
