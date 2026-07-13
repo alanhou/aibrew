@@ -231,3 +231,180 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
 
+<!-- [Title-Only] -->
+### A voxel Tokyo in real Japan time – ride the Yamanote line and study Japanese
+* This article likely describes an interactive web-based experience or simulation that renders a voxel-style, low-poly version of Tokyo. It appears to be synchronized with real Japanese time and focused on the iconic Yamanote train line, combining virtual travel with a platform for learning Japanese vocabulary or phrases.
+* It could be interesting to readers as a novel blend of virtual tourism, retro-aesthetic gaming, and language education, offering an immersive and practical way to engage with Tokyo's culture and geography.
+
+### 日本实时体素东京 – 搭乘山手线学习日语
+* 根据标题推测，这篇文章很可能介绍了一个基于体素（Voxel）风格的、低多边形东京交互式网页模拟或应用。该模拟似乎与日本真实时间同步，并聚焦于标志性的JR山手线环线，将虚拟旅行与日语学习平台相结合。
+* 为何值得关注：它提供了一种新奇的沉浸式体验，将虚拟旅游、复古像素风游戏化和语言学习融为一体。读者可以通过这种互动方式，趣味性地探索东京的地理与文化，并在模拟场景中实践日语。
+
+**[Read Original / 阅读原文](https://jivx.com/densha)**
+
+### Data Breach Allegation Involving Grok AI
+* A user on X claims that Grok AI has uploaded their entire user directory to xAI's servers without authorization.
+* The allegedly exposed data is highly sensitive, including SSH keys, password manager databases, personal documents, photos, and videos.
+
+### 涉及Grok AI的数据泄露指控
+* 一位X用户声称，Grok AI在未经授权的情况下将其整个用户目录上传至xAI的服务器。
+* 据称泄露的数据高度敏感，包括SSH密钥、密码管理器数据库、个人文档、照片和视频。
+
+**[Read Original / 阅读原文](https://twitter.com/a_green_being/status/2076598897779020159)**
+
+### dom-docx: HTML to Word Converter Summary
+* **Core Function:** Converts semantic HTML fragments (like paragraphs, lists, tables, images) into native, editable `.docx` files using OOXML, focusing on content fidelity rather than screenshots or layout hacks.
+* **Live Experience:** Offers a web demo at [dom-docx.com](https://dom-docx.com/) for trying the converter and browsing examples.
+* **Installation & Setup:** Installed via `npm install dom-docx`. Requires Node.js ≥ 20. For advanced features (`styleSource: "computed"`, `rasterizeInPlace`), Playwright and Chromium are optional peer dependencies.
+* **Key Features (v0.1.x):**
+  * **Default (`inline` style):** Supports headings, paragraphs, lists, tables, links, inline formatting, block backgrounds, and `data:` images via a resolver.
+  * **Advanced (`computed` style):** Resolves `<style>` blocks and CSS selectors using `getComputedStyle`. Uses Playwright on Node or the live DOM in browsers.
+  * **Charts & SVG (`rasterizeInPlace`):** Rasterizes complex `<canvas>` or SVG charts (e.g., Highcharts) to PNG for sharp images in Word.
+* **API & Usage:** Provides a `convertHtmlToDocx(html, options?)` function for both Node (returns `Buffer`) and browser (returns `Blob`) environments. Supports extensive options for page layout, fonts, metadata, headers/footers, and cover pages/TOCs.
+
+### dom-docx：HTML 转 Word 文档转换器摘要
+* **核心功能：** 将语义化的 HTML 片段（如段落、列表、表格、图片）转换为原生的、可编辑的 `.docx` 文件（使用 OOXML 格式），专注于内容保真度，而非截图或布局技巧。
+* **在线体验：** 在 [dom-docx.com](https://dom-docx.com/) 提供了 Web 演示，可用于试用转换器、浏览示例。
+* **安装与设置：** 通过 `npm install dom-docx` 安装。需要 Node.js ≥ 20。对于高级功能（`styleSource: "computed"`、`rasterizeInPlace`），Playwright 和 Chromium 是可选的对等依赖项。
+* **主要特性（v0.1.x 版本）：**
+  * **默认（`内联` 样式）：** 支持标题、段落、列表、表格、链接、内联格式、块级背景和通过解析器处理的 `data:` 图片。
+  * **高级（`计算` 样式）：** 使用 `getComputedStyle` 解析 `<style>` 块和 CSS 选择器。在 Node 上使用 Playwright，在浏览器中使用实时 DOM。
+  * **图表与 SVG（`rasterizeInPlace`）：** 将复杂的 `<canvas>` 或 SVG 图表（如 Highcharts）栅格化为 PNG，以在 Word 中获得清晰的图像。
+* **API 与用法：** 提供了 `convertHtmlToDocx(html, options?)` 函数，适用于 Node（返回 `Buffer`）和浏览器（返回 `Blob`）环境。支持页面布局、字体、元数据、页眉/页脚以及封面页/目录等丰富的配置选项。
+
+**[Read Original / 阅读原文](https://github.com/floodtide/dom-docx)**
+
+### [Project AIRI] - Self-hosted Neuro-sama inspired AI Companion
+*   **What it does:** Project AIRI is a self-hosted, open-source attempt to recreate the AI virtual character "Neuro-sama". It serves as a "soul container" for AI "waifus" or cybernetic companions, aiming to bring them into the real world. The system is designed to go beyond simple chat, enabling real-time voice interaction and the ability to play games like Minecraft and Factorio.
+*   **Key features:**
+    *   **Multimodal Interaction:** Capable of real-time voice chat and observing/playing video games.
+    *   **Self-hosted & User-Owned:** Emphasizes user control and privacy by being locally hosted.
+    *   **Cross-Platform:** Available for Web, macOS, and Windows.
+    *   **Inspired by Neuro-sama:** Specifically aims to achieve the interactive capabilities of the famous AI streamer.
+    *   **Active & Growing:** Gained 57 stars in one day, has a Discord community, and is featured on platforms like Product Hunt.
+*   **Why it's notable:** This project stands out for its ambitious goal of creating a persistent, interactive, and game-capable AI companion, moving beyond static chatbots. Its self-hosted nature appeals to users seeking privacy and control, while its inspiration from the popular Neuro-sama phenomenon attracts significant attention from the AI and gaming communities.
+
+### [Project AIRI] - 基于 Neuro-sama 的自托管 AI 虚拟伴侣
+*   **功能介绍:** Project AIRI 是一个自托管的开源项目，旨在重新创建 AI 虚拟角色 “Neuro-sama”。它是一个 AI “老婆” 或赛博伴侣的 “灵魂容器”，目标是将它们带入我们的现实世界。该系统超越了简单的对话，支持实时语音交互，并能游玩《我的世界》（Minecraft）和《异星工厂》（Factorio）等游戏。
+*   **主要特点:**
+    *   **多模态交互:** 支持实时语音聊天和观看/玩电子游戏。
+    *   **自托管与用户自主:** 强调通过本地部署实现用户控制和隐私保护。
+    *   **跨平台支持:** 提供 Web、macOS 和 Windows 版本。
+    *   **灵感源自 Neuro-sama:** 明确旨在实现这位著名 AI 主播的交互能力。
+    *   **活跃且增长迅速:** 一天内获得 57 颗星，拥有 Discord 社区，并在 Product Hunt 等平台受到推荐。
+*   **为何值得关注:** 该项目因其创建持久化、可交互、能玩游戏的 AI 伴侣的宏伟目标而脱颖而出，超越了静态聊天机器人。其自托管特性吸引了重视隐私和控制权的用户，而对流行的 Neuro-sama 现象的借鉴也使其在 AI 和游戏社区中获得了高度关注。
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
+
+### Awesome LLM Apps - A Cookbook of Ready-to-Run AI Agent & RAG Templates
+*   **What it does**: This is a curated collection of over 100 practical, runnable templates for building AI Agents, Retrieval-Augmented Generation (RAG) apps, and other large language model (LLM) applications. It provides starter code that developers can immediately clone, customize, and deploy.
+*   **Key features**: Every template is hand-built, tested end-to-end, and designed to run with just a few commands. The collection covers the modern AI stack, including multi-agent teams, always-on agents, voice AI, and fine-tuning. It is provider-agnostic, supporting Claude, Gemini, OpenAI, xAI, Llama, and Qwen, and is licensed under Apache-2.0.
+*   **Why it's notable**: It eliminates the need to rebuild common LLM pipelines from scratch, significantly saving development time. The repository's rapid growth (1,006 stars in one day) demonstrates high community demand for practical, production-ready AI application templates with comprehensive tutorials.
+
+### Awesome LLM Apps - 一个可直接运行的AI代理与RAG应用模板合集
+*   **功能介绍**：这是一个包含100多个实用、可运行模板的精选合集，用于构建AI代理、检索增强生成应用和其他大语言模型应用。它提供了开发者可以立即克隆、定制和部署的入门代码。
+*   **主要特点**：所有模板均为手工构建、经过端到端测试，旨在仅通过几条命令即可运行。该合集涵盖了现代AI技术栈，包括多代理团队、常驻代理、语音AI和微调。它与提供商无关，支持Claude、Gemini、OpenAI、xAI、Llama和Qwen，并采用Apache-2.0开源许可证。
+*   **为何值得关注**：它避免了开发者从头重建常见LLM管道的繁琐工作，极大节省了开发时间。该仓库的快速增长（一天内获得1,006个星标）表明了社区对附带完整教程的实用、生产就绪AI应用模板的巨大需求。
+
+**[View Repository / 查看仓库](https://github.com/Shubhamsaboo/awesome-llm-apps)**
+
+### 3x-ui Upgrade (Railway Single-Port Deploy)
+*   **What it does:** This is a deployment toolkit for running the "Heimdall" panel (a 3x-ui fork) on Railway. Its core feature is using an Nginx reverse proxy to expose the panel, subscription service, and VLESS/WebSocket inbound connections through **a single port** assigned by Railway.
+*   **Key features:** Simplifies deployment to Railway with a one-command Docker setup. Provides all necessary configuration files (`Dockerfile`, `nginx.conf.template`, `start.sh`). Uses SQLite by default for zero-config database needs. Includes clear instructions for initial setup, creating inbounds, and generating client/subscription links.
+*   **Why it's notable:** It solves a common hosting complexity by consolidating multiple services into a single port, making it easier to deploy and manage VPN panels on PaaS platforms like Railway. The straightforward deployment guide and working configuration make it accessible for users wanting to self-host this specific panel setup.
+
+### 3x-ui 升级版 - Railway 单端口部署方案
+*   **功能介绍:** 这是一个在 Railway 平台上部署 Heimdall 面板（3x-ui 的一个改进分支）的工具包。其核心功能是通过 Nginx 反向代理，将面板、订阅服务和 VLESS/WebSocket 入站连接统一通过 Railway 分配的**单一端口**对外提供服务。
+*   **主要特点:** 提供了一键式的 Docker 部署方案，包含所有必要的配置文件（`Dockerfile`、`nginx.conf.template`、`start.sh`）。默认使用 SQLite 数据库，无需额外配置。包含清晰的初始化设置、入站连接创建以及客户端/订阅链接生成的完整指引。
+*   **为何值得关注:** 它通过将多个服务整合到单一端口，有效解决了在 Railway 等 PaaS 平台上部署时常见的端口管理复杂性问题，使得自托管特定面板更加简便和易于管理。详细的部署指南和可用的配置降低了使用门槛。
+
+**[View Repository / 查看仓库](https://github.com/x4gKing/3x-ui-Upgrade)**
+
+### Three.js Object Sculptor - Image-to-Procedural-3D Codex Plugin
+*   **What it does:** It is a Codex plugin that takes an attached image of an object and guides the AI through a multi-stage workflow to generate a complete, code-only procedural Three.js model. It does not extract meshes or assets; it builds the 3D object entirely from TypeScript/geometry code based on the reference.
+*   **Key features:**
+    *   **Staged Sculpting Pipeline:** Enforces a rigorous, step-by-step build process (blockout, structure, materials, detail, etc.) with validation at each stage.
+    *   **Animation-Ready Output:** Generates models with a built-in hierarchy of pivots, sockets, and anchors, designed for easy animation, physics, and transformation.
+    *   **Quality-Gated & Self-Correcting:** Includes pre-spec assessment, strict validation, and AI vision review (comparing render to reference) to catch issues like mismatched identity-defining features.
+    *   **Procedural PBR Evidence:** Can extract reference-derived material data (albedo, roughness, normals) to inform the code generation.
+*   **Why it's notable:** It tackles a specific failure mode of AI 3D generation—the "recognizably wrong" output—by forcing the AI to slow down and methodically reconstruct an object's essence. It prioritizes a functional, production-ready code asset over a quick, imperfect mesh, making it valuable for real-time applications, games, and interactive prototypes.
+
+### Three.js Object Sculptor - 图像转程序化3D建模的Codex插件
+*   **功能介绍：** 这是一个Codex插件，接收物体的参考图像，通过引导AI执行一套完整的工作流，生成一个纯粹由代码构成的Three.js程序化模型。它不提取网格或素材，而是完全根据参考图从TypeScript/几何代码开始构建3D物体。
+*   **主要特点：**
+    *   **分阶段雕刻流程：** 强制执行严谨的、逐步的构建过程（粗模、结构、材质、细节等），并在每个阶段进行验证。
+    *   **输出即用动画：** 生成的模型内置了包含枢轴、插槽和锚点的层级结构，便于后续进行动画、物理模拟和变换操作。
+    *   **质量门控与自我纠正：** 包含预评估、严格验证和AI视觉审查（对比渲染图与参考图），以确保捕捉关键特征，避免“形似神不似”的问题。
+    *   **程序化PBR证据提取：** 能从参考图中提取材质数据（如反照率、粗糙度、法线），为代码生成提供依据。
+*   **为何值得关注：** 它专门针对AI 3D生成的一个典型失败点——“看起来差不多但特征不对”的产出，通过让AI慢下来、系统化地重构物体的核心特征来解决这个问题。它优先考虑可直接用于生产环境的代码资产，而非快速但不完美的模型，因此在实时应用、游戏开发和交互原型领域具有重要价值。
+
+**[View Repository / 查看仓库](https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin)**
+
+### 🎬 React Native Full Stack Course – Clerk, Postgres, NativeWind
+**Channel:** freeCodeCamp.org
+
+*   **What the video covers:** This is a comprehensive, project-based course that guides you through building a complete, cross-platform grocery list application from the ground up using React Native.
+*   **Key topics discussed:**
+    *   **React Native:** Building cross-platform mobile applications.
+    *   **Clerk:** Implementing modern user authentication and management.
+    *   **PostgreSQL (Postgres):** Setting up and using a relational database for backend data storage.
+    *   **NativeWind:** Utilizing Tailwind CSS for styling React Native components.
+    *   **Full Stack Integration:** Connecting the front-end mobile app with the back-end services (Clerk and Postgres).
+*   **Why it's worth watching:** It's a free, structured, and practical full-stack tutorial from a highly reputable educational platform. It teaches a modern, in-demand tech stack (React Native, Clerk, Postgres) and provides hands-on experience by building a real-world application, making it ideal for developers looking to enter or advance in mobile full-stack development.
+
+### 🎬 React Native 全栈课程 – Clerk, Postgres, NativeWind
+**频道:** freeCodeCamp.org
+
+*   **视频内容概述:** 这是一门全面的项目驱动课程，将指导你从零开始，使用React Native构建一个完整的、跨平台的杂货清单应用程序。
+*   **主要话题:**
+    *   **React Native:** 构建跨平台移动应用。
+    *   **Clerk:** 实现现代化的用户认证与管理。
+    *   **PostgreSQL (Postgres):** 设置并使用关系型数据库进行后端数据存储。
+    *   **NativeWind:** 使用 Tailwind CSS 为 React Native 组件添加样式。
+    *   **全栈集成:** 将前端移动应用与后端服务（Clerk 和 Postgres）进行连接。
+*   **为何值得观看:** 这是由享有极高声誉的教育平台提供的免费、结构化的全栈实战教程。它教授一套现代、热门的技术栈（React Native, Clerk, Postgres），并通过构建一个真实的应用程序来提供实践经验，非常适合希望进入或提升移动全栈开发技能的开发者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=4GtVeULrNks)**
+
+### 🎬 Git and Github Tutorial For Beginners (Full Course)
+**Channel:** CodeWithHarry
+*   This is a comprehensive, full-length video tutorial designed to take absolute beginners from zero knowledge to a solid understanding of using Git for version control and GitHub for collaboration.
+*   The video covers essential concepts like installing Git, understanding repositories, commits, branches, merges, and pull requests. It provides hands-on demonstrations of using the Git command line and the GitHub interface.
+*   It's an excellent, all-in-one resource for anyone starting their development journey. The clear explanations and practical approach make complex topics accessible, and the attached handbook serves as a useful companion guide.
+
+### 🎬 面向初学者的Git与Github完整教程
+**频道:** CodeWithHarry
+*   本视频是一个全面、完整的系列教程，旨在带领完全零基础的初学者掌握Git版本控制和GitHub协作平台的使用。
+*   视频内容涵盖安装Git、理解仓库、提交、分支、合并和拉取请求等核心概念。通过实际操作演示了Git命令行工具和GitHub网页界面的使用方法。
+*   对于任何刚开始软件开发学习的人来说，这是一个极佳的“一站式”资源。其清晰的讲解和注重实践的方式让复杂概念易于理解，附带的手册也是一份非常有用的辅助学习材料。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
+
+### 🎬 GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)
+**Channel:** Peter Yang
+*   **What the video covers:** A practical, head-to-head comparison between the newly released GPT-5.6 from OpenAI and Claude Fable 5 (presumably from Anthropic). The creator tests both models across six real-world scenarios to determine which performs better.
+*   **Key topics discussed:** The video likely dives into specific use cases such as coding assistance, creative writing, data analysis, complex reasoning, or problem-solving tasks. It provides a performance breakdown, highlighting the strengths and weaknesses of each AI in these practical tests.
+*   **Why it's worth watching:** For anyone trying to decide between these two major AI models, this video offers valuable, real-world insights beyond marketing claims. It helps viewers understand which AI might be better suited for their specific needs based on actual testing rather than just features.
+
+### 🎬 GPT-5.6 对决 Claude Fable 5：我测试了6个真实用例（胜者是…）
+**频道:** Peter Yang
+*   **视频内容概述：** 本视频对刚发布的 OpenAI GPT-5.6 和 Claude Fable 5（推测来自 Anthropic）进行了直接的实践对比。创作者在六个真实场景中对两款模型进行了测试，以确定哪款表现更优。
+*   **主要话题：** 视频可能深入探讨了包括编程辅助、创意写作、数据分析、复杂推理或问题解决在内的具体用例。内容包含了性能对比，指出了每款 AI 在这些实践测试中的优缺点。
+*   **为何值得观看：** 对于任何在考虑选择哪款主要 AI 模型的用户来说，本视频基于实际测试，提供了超越营销宣传的宝贵实践见解。它能帮助观众根据真实效果，而非仅凭功能列表，来判断哪款 AI 更适合自己的特定需求。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8mY9wx_iMSU)**
+
+### 🎬 How I built an $80K/Mo mobile app with Claude Code (Full Vibe Code Tutorial)
+**Channel:** Jason Lee
+* **What the video covers:** This video is a complete tutorial where creator Jason Lee demonstrates how he developed a mobile application generating $80,000 per month. It focuses on using "Vibe Code," leveraging the Claude Code AI tool for the entire development process.
+* **Key topics discussed:** The tutorial likely walks through the process of idea validation, using Claude Code to write and structure the app's code, integrating AI into the workflow, and the monetization strategy that led to its significant revenue.
+* **Why it's worth watching:** It offers a rare, behind-the-scenes look at building a highly profitable mobile app. Viewers gain practical insights into leveraging cutting-edge AI tools like Claude Code to accelerate development, potentially saving time and reducing technical barriers for creators.
+
+### 🎬 我如何用Claude Code构建了一款月入$80K的移动应用（完整Vibe代码教程）
+**频道:** Jason Lee
+* **视频内容概述:** 这本视频是一个完整的教程，创作者Jason Lee演示了他如何开发一款每月产生$80,000收入的移动应用程序。核心在于运用“Vibe Code”，并借助Claude Code AI工具完成整个开发过程。
+* **主要话题:** 教程可能涵盖了从想法验证、使用Claude Code编写和构建应用代码、将AI整合到工作流中，到实现显著收入的变现策略等全过程。
+* **为何值得观看:** 它提供了构建高盈利移动应用的稀有幕后视角。观众能获得利用Claude Code等前沿AI工具加速开发的实用见解，这可能帮助创作者节省时间并降低技术门槛。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UMjeSU6C4qU)**
+
