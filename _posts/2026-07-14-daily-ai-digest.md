@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 14, 2026"
 date: 2026-07-14
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
@@ -558,4 +558,118 @@ pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
 * 对于有兴趣使用Claude等AI工具快速原型开发并推出高收入应用的开发者和创业者而言，即使没有深厚的传统编码背景，也极具观看价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=UMjeSU6C4qU)**
+
+### OpenAI Codex CLI: A Local Coding Agent
+*   Codex CLI is a locally-running coding agent developed by OpenAI.
+*   It offers flexible usage options: integration into IDEs (like VS Code), a standalone desktop application via `codex app`, and a separate cloud-based version called Codex Web.
+*   Installation is straightforward via a curl/PowerShell script, package managers (npm, Homebrew), or direct binary download from GitHub.
+*   It integrates with your ChatGPT subscription plan (Plus, Pro, Business, etc.) for access, with API key authentication as an alternative.
+
+### OpenAI Codex CLI：本地运行的编码助手
+*   Codex CLI 是 OpenAI 开发的可本地运行的编码代理。
+*   它提供多种使用方式：可集成到 IDE（如 VS Code）、通过 `codex app` 作为独立桌面应用运行，以及独立的云端版本 Codex Web。
+*   安装方式多样，可通过 curl/PowerShell 脚本、包管理器（npm、Homebrew）或从 GitHub 直接下载二进制文件进行。
+*   它可与你的 ChatGPT 订阅计划（如 Plus、Pro、Business 等）集成以获取访问权限，也可通过 API 密钥进行额外设置后使用。
+
+**[Read Original / 阅读原文](https://github.com/openai/codex/issues/28058)**
+
+### Leaked 2026 Fields Medal List: Peking University Alumni Honored
+* The 2026 Fields Medal winners list has been inadvertently leaked through the front-end code of the ICM 2026 official schedule, revealing four names: Yu Deng, John Pardon, Jacob Tsimerman, and Hong Wang.
+* Peking University alumni Yu Deng and Hong Wang are among the recipients, marking the historic first time two Chinese mathematicians will receive the prestigious award in the same edition, pending confirmation on July 23.
+* Hong Wang will become the third female mathematician in history to win the Fields Medal, highlighting a groundbreaking milestone for Chinese mathematics.
+
+### 泄露的2026年菲尔兹奖名单：北大校友获殊荣
+* 2026年菲尔兹奖获奖者名单通过ICM 2026官方日程的前端代码意外泄露，揭示了四位获奖者：邓煜、John Pardon、Jacob Tsimerman和王虹。
+* 北大校友邓煜和王虹位列其中，这将是首次两位中国数学家在同一届获得这一殊荣，具有历史意义，预计于7月23日确认。
+* 王虹将成为历史上第三位女性菲尔兹奖得主，标志着中国数学界的一项突破性成就。
+
+**[Read Original / 阅读原文](https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948)**
+
+### [English Title: The Future Worth Building Is Human]
+*   **Mission:** To create AI that extends human will and judgment, rather than replacing it.
+*   **Core Problem:** Current AI is often static and centralized, failing to incorporate the diverse, distributed knowledge of the people and organizations it serves.
+*   **Technical Directions:** Pursuing strong models, customization tools, interactive interfaces, and open research to empower users.
+*   **Key Philosophy:** Knowledge is tacit, local, and dynamic; AI should be cultivated alongside people within organizations to leverage this collective intelligence.
+*   **Technical Challenges:** Requires solving human-AI communication bottlenecks and developing evaluation methods that measure collaborative outcomes, not just autonomous AI capability.
+*   **Alignment Concern:** A single, centralized source of AI values is dangerous; true alignment should be decentralized, reflecting the diversity of human values.
+
+### [Chinese Title: 值得构建的未来是“以人为本”的]
+*   **核心使命：** 构建能够延伸人类意志与判断力的人工智能，而非取代人类。
+*   **核心问题：** 当前的AI大多是静态和集中化的，未能融入服务对象（个人与组织）所拥有的多元化、分布式的知识。
+*   **技术方向：** 致力于开发强大的模型、可定制的工具、交互式界面以及公开研究，以赋能用户。
+*   **核心理念：** 知识是隐性的、局部的、动态的；AI应与人一起在组织内部被共同培育，从而利用这种集体智慧。
+*   **技术挑战：** 需要解决人机通信的瓶颈，并开发新的评估标准来衡量人机协作的成果，而不仅仅是AI的自主能力。
+*   **关于对齐的担忧：** 将AI价值观的来源单一化、中心化是危险的；真正的对齐应当是去中心化的，以反映人类价值观的多样性。
+
+**[Read Original / 阅读原文](https://thinkingmachines.ai/blog/the-future-worth-building-is-human/)**
+
+### mattpocock/skills - Practical Skills for AI Coding Agents
+*   **What it does**: A collection of "agent skills" designed to improve how developers work with AI coding assistants like Claude Code and Codex. These skills focus on real engineering practices (not "vibe coding") to solve common AI agent failure modes, such as misalignment, verbosity, buggy output, and poor code architecture.
+*   **Key features**:
+    *   **Alignment & Grilling**: Skills like `/grill-me` and `/grill-with-docs` run a structured Q&A session to ensure the AI understands requirements before coding, reducing misalignment.
+    *   **Shared Language**: The `/grill-with-docs` skill helps create a project-specific domain model (via `CONTEXT.md`), allowing for concise communication between the developer and AI.
+    *   **Engineering Disciplines**: Includes skills for Test-Driven Development (`/tdd`), bug diagnosis (`/diagnosing-bugs`), and codebase architecture improvement (`/improve-codebase-architecture`).
+    *   **Easy Setup**: Can be quickly installed into a project via `skills.sh` (as editable files) or as a managed, auto-updating Claude Code plugin.
+*   **Why it's notable**: It's a highly practical, opinionated toolkit from a respected engineer (Matt Pocock) aimed at making AI-assisted development more reliable and effective. It treats AI agents as junior developers that need fundamental engineering guardrails and processes, which is a significant trend in optimizing human-AI collaboration for software development.
+
+### mattpocock/skills - 面向AI编程代理的实用技能集
+*   **功能介绍**: 这是一套旨在优化开发者与AI编程助手（如Claude Code和Codex）协作流程的“代理技能”。它专注于真正的工程实践（而非“氛围编程”），旨在解决AI代理常见的故障模式，如理解偏差、输出冗长、代码质量差和架构混乱。
+*   **主要特点**:
+    *   **对齐与质询**: 使用 `/grill-me` 或 `/grill-with-docs` 等技能进行结构化问答，确保AI在编码前充分理解需求，减少偏差。
+    *   **共享语言**: `/grill-with-docs` 技能帮助建立项目特定的领域模型（通过`CONTEXT.md`文件），实现开发者与AI之间的精炼沟通。
+    *   **工程纪律**: 内置了测试驱动开发 (`/tdd`)、诊断错误 (`/diagnosing-bugs`) 和改善代码库架构 (`/improve-codebase-architecture`) 等核心工程技能。
+    *   **便捷安装**: 可通过 `skills.sh` 快速安装到项目中（作为可编辑文件），或作为Claude Code的托管插件安装（自动更新）。
+*   **为何值得关注**: 这是来自知名工程师（Matt Pocock）的一套实用且具有明确理念的工具箱，旨在提升AI辅助开发的可靠性和有效性。它将AI代理视为需要基础工程规范和流程的初级开发者，这对于优化人机协作以进行软件开发是一个重要的趋势。
+
+**[View Repository / 查看仓库](https://github.com/mattpocock/skills)**
+
+### [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) - AI-Powered Hedge Fund Simulation
+*   **What it does**: This is a proof-of-concept for an AI-powered hedge fund. It uses a team of 19 specialized AI agents, each modeled after a famous investor (e.g., Warren Buffett, Charlie Munger, Cathie Wood) or a specific analytical role (e.g., Technicals, Sentiment, Risk Manager), to collaboratively analyze stocks and make simulated trading decisions. It is for **educational and research purposes only**.
+*   **Key features**:
+    *   **Multi-Agent System**: Employs a diverse team of agents with distinct investment philosophies to analyze opportunities.
+    *   **Comprehensive Analysis**: Agents cover valuation, fundamentals, technical analysis, market sentiment, and risk management.
+    *   **Multiple Interfaces**: Can be run via a **command-line interface (CLI)** for automation/scripting or through a user-friendly **web application**.
+    *   **Backtesting Capability**: Includes a backtester to evaluate the strategy's performance over historical data.
+    *   **Flexible LLM Support**: Can use APIs from OpenAI, Groq, Anthropic, or DeepSeek, or run locally with Ollama.
+*   **Why it's notable**: The project is trending (330 stars in one day) because it creatively applies AI to simulate a sophisticated hedge fund strategy. Its unique structure—using AI to mimic the thinking of legendary investors—is both educational and innovative. It provides a practical framework for learning about AI in finance, multi-agent systems, and investment strategies in a safe, simulated environment.
+
+### [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) - AI驱动的对冲基金模拟
+*   **功能介绍**: 这是一个AI驱动对冲基金的概念验证项目。它通过一个由19个专业AI代理组成的团队来协同工作，每个代理都模仿一位著名投资者（如沃伦·巴菲特、查理·芒格、凯茜·伍德）或担任特定的分析角色（如技术分析、情绪分析、风险经理），共同分析股票并做出模拟交易决策。**仅用于教育和研究目的**。
+*   **主要特点**:
+    *   **多代理系统**: 采用具有不同投资哲学的多元化代理团队进行机会分析。
+    *   **综合分析**: 代理覆盖估值、基本面、技术分析、市场情绪和风险管理。
+    *   **多种交互方式**: 可通过**命令行界面 (CLI)** 运行，便于自动化/脚本编写，也可通过用户友好的**Web应用程序**运行。
+    *   **回测功能**: 包含回测工具，可在历史数据上评估策略表现。
+    *   **灵活的LLM支持**: 支持使用来自OpenAI、Groq、Anthropic或DeepSeek的API，或通过Ollama在本地运行。
+*   **为何值得关注**: 该项目正引起热议（一天内获得330颗星），因为它创造性地应用AI来模拟复杂的对冲基金策略。其独特之处在于利用AI模仿传奇投资者的思维方式，这既具有教育意义又富有创新性。它为在一个安全的模拟环境中学习AI在金融领域的应用、多代理系统以及投资策略提供了一个实用的框架。
+
+**[View Repository / 查看仓库](https://github.com/virattt/ai-hedge-fund)**
+
+### 🎬 The 4 types of tech workers in 2026
+**Channel:** Lenny's Podcast
+*   **What the video covers:** This video presents a forward-looking analysis of how the technology workforce will evolve by the year 2026, heavily influenced by advancements in AI like Claude and ChatGPT. It forecasts a transformation in roles and skills.
+*   **Key topics discussed:** The impact of generative AI on tech jobs, the predicted classification of future tech workers into four distinct categories, required skill pivots, and the overall future landscape of the industry.
+*   **Why it's worth watching:** It offers a valuable, speculative framework for tech professionals to anticipate change, plan their career development, and understand the potential directions the industry is heading in the near future.
+
+### 🎬 2026年的四种科技工作者
+**频道:** Lenny's Podcast
+*   **视频内容概述:** 本视频前瞻性地分析了科技行业工作者在2026年可能发生的演变，重点探讨了以Claude和ChatGPT为代表的AI技术如何重塑职业角色与所需技能。
+*   **主要话题:** 生成式AI对科技职业的影响、未来科技工作者的四种类型划分、所需的技能转型以及行业未来格局的预测。
+*   **为何值得观看:** 它为科技从业者提供了一个有价值的预测性框架，帮助大家预见变化、规划职业发展，并理解行业短期内的潜在发展方向。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2De481hOI4g)**
+
+### 🎬 ChatGPT 5.6 & Codex Tutorial with Real Use Cases Explained
+**Channel:** The Cutting Edge School
+*   What the video covers: A deep dive into the newly released "ChatGPT Work" feature and the integrated Codex coding assistant. The tutorial moves beyond announcements to show practical, hands-on workflows.
+*   Key topics discussed: The capabilities and interface of ChatGPT Work, real-world use cases for Codex in coding and automation, and how these tools can boost productivity.
+*   Why it's worth watching: Provides concrete, practical examples instead of just theory, helping viewers understand exactly how to apply these powerful new AI tools in their own projects or work.
+
+### 🎬 ChatGPT 5.6 与 Codex 教程：详解真实用例
+**频道:** The Cutting Edge School
+*   视频内容概述：深入解析全新发布的“ChatGPT Work”功能及其集成的 Codex 编码助手。教程超越功能公告，展示了实际、动手操作的工作流程。
+*   主要话题：ChatGPT Work 的功能与界面，Codex 在编程和自动化中的真实应用案例，以及这些工具如何提升生产力。
+*   为何值得观看：提供具体的实际示例而非空谈理论，帮助观众明确了解如何将这些强大的新 AI 工具应用于自己的项目或工作中。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6cRiP9g90PY)**
 
