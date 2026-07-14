@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 14, 2026"
 date: 2026-07-14
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
@@ -474,4 +474,88 @@ pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
 *   **为何值得关注**: 该仓库获得了776颗星，是AI安全研究领域的热点项目。其 v35 提示词在针对 `gpt-5.6-sol` 模型的 `medium` 级别测试集中，在低、中、高三档推理等级下均达到了 120/120 的通过率，相比旧版提示词和上游基线有大幅提升（最高提升45个百分点）。该项目不仅展示了先进的提示词工程技术，也为评估和理解大模型的安全边界提供了宝贵的工具和方法论。
 
 **[View Repository / 查看仓库](https://github.com/MDX-Tom/gpt-5.6-instruct)**
+
+### Spectral Compute Aims to Set CUDA Free. Will It Succeed?
+*   Spectral Compute, founded by ex-Nvidia CUDA developers, has created SCALE, a compiler tool aimed at freeing CUDA code from Nvidia hardware lock-in.
+*   The company uses a "clean-room" re-implementation based on LLVM to provide a drop-in replacement for Nvidia's NVCC, with initial support for AMD GPUs and plans for other AI accelerators.
+*   Benchmarks show SCALE offers nearly a 6x performance boost on AMD GPUs compared to using AMD's own HIPIFY translation tool.
+*   The initiative aims to preserve CUDA's de-facto standard status (covering ~80% of HPC code) while enabling it to run on non-Nvidia hardware, which benefits the broader HPC and AI ecosystem.
+
+### Spectral Compute 旨在让 CUDA 获得自由。它会成功吗？
+*   由前 Nvidia CUDA 开发者创立的 Spectral Compute 公司创建了 SCALE，一款旨在将 CUDA 代码从 Nvidia 硬件锁定中解放出来的编译器工具。
+*   该公司基于 LLVM 采用“洁净室”重新实现的方式，提供了一款可直接替代 Nvidia NVCC 的工具，最初支持 AMD GPU，并计划扩展至其他 AI 加速器。
+*   基准测试显示，与使用 AMD 自身的 HIPIFY 转译工具相比，SCALE 在 AMD GPU 上提供了近 6 倍的性能提升。
+*   此举旨在维护 CUDA 的事实标准地位（涵盖约 80% 的 HPC 代码），同时使其能够在非 Nvidia 硬件上运行，从而惠及整个 HPC 和 AI 生态系统。
+
+**[Read Original / 阅读原文](https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/)**
+
+### Free Daytime Electricity Is Coming. How It Actually Works
+*   Starting 1 July 2026, energy retailers in NSW, South Australia, and South-East Queensland must offer households at least three hours of free daytime electricity per day.
+*   The **Solar Sharer Offer** passes the benefit of cheap midday solar power from the wholesale market directly to households; a smart meter and opt-in through your retailer are required.
+*   A significant post-consultation change is the addition of a **24 kWh daily reasonable use cap**, designed to ensure the scheme's financial sustainability and fairness.
+*   The free window aligns with peak solar output, typically around midday (e.g., 11am-2pm), and the exact hours vary by location.
+*   For most solar homes, the 24 kWh cap is unlikely to be a major constraint; it primarily affects scenarios like heavy EV or battery charging from the grid during the free period.
+*   Potential annual savings are modelled between **$100 and $1,100**, depending on the proportion of electricity shifted to the free window.
+
+### 免费日间电力即将到来：详解运作机制
+*   从2026年7月1日起，新南威尔士州、南澳大利亚州和昆士兰州东南部的能源零售商必须为家庭用户提供每天至少三小时的免费日间电力。
+*   该计划名为**太阳能共享优惠 (Solar Sharer Offer)**，旨在将批发电力市场上廉价甚至过剩的午间太阳能电力直接让利给家庭用户；用户只需拥有**智能电表**并通过零售商选择加入即可参与。
+*   在公众咨询后，该计划增加了一项重要变更：设定了每天**24千瓦时**的合理用电上限，以确保计划对零售商的财务可持续性及对电网用户的公平性。
+*   免费用电时段与太阳能发电高峰同步，通常在午间（例如上午11点至下午2点），具体时间根据地区情况调整。
+*   对于大多数已有太阳能板的家庭，24千瓦时的上限通常不会产生太大影响；该上限主要涉及在免费时段从电网为电动车或家庭电池大量充电等场景。
+*   根据家庭将多少用电量转移至免费时段，估计每年可节省**100至1,100澳元**不等。
+
+**[Read Original / 阅读原文](https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/)**
+
+### Singapore Court Orders Bloomberg to Pay Defamation Damages
+* A Singapore court ordered Bloomberg to pay $356,000 to ministers in a defamation case.
+* The case was filed because the ministers claimed a published article, which discussed their luxury bungalow deals, had damaged their reputation.
+
+### 新加坡法院判决彭博社在诽谤案中赔偿
+* 新加坡一家法院在一起诽谤案中，判决彭博社向相关部长支付35.6万美元赔偿金。
+* 该案源于部长们主张，一篇涉及他们豪华洋房交易的报道损害了他们的名誉。
+
+**[Read Original / 阅读原文](https://www.bbc.com/news/articles/cg53l737v1qo)**
+
+### destructive_command_guard - High-Performance Hook to Block Dangerous Commands from AI Agents
+*   **What it does**: A high-performance hook written in Rust that intercepts and blocks destructive git, shell, and system commands *before* they can be executed by AI coding agents (like Claude Code, Codex, Gemini CLI, Copilot, etc.). It protects users from accidental data loss or system damage caused by agents running catastrophic commands (e.g., `git reset --hard`, `rm -rf ./src`).
+*   **Key features**:
+    *   **Zero-Config Out-of-the-Box Protection**: Blocks common dangerous git and filesystem commands immediately.
+    *   **Extensive Security Packs**: Includes over 50 packs covering databases, Kubernetes, Docker, AWS/GCP/Azure, Terraform, and more.
+    *   **High Performance**: Uses SIMD-accelerated filtering and lazy regex for sub-millisecond latency.
+    *   **Advanced Command Scanning**: Detects dangerous commands within heredocs and inline scripts (e.g., `python -c "os.remove(...)"`).
+    *   **Smart Context Detection**: Differentiates between data and execution (e.g., won't block `grep "rm -rf"` but will block `rm -rf /`).
+    *   **Rich & Agent-Safe Output**: Provides detailed, human-readable explanations on stderr for debugging while keeping machine-readable hook output clean on stdout.
+    *   **Broad Agent Support**: Native or compatible integrations for a wide array of AI coding tools.
+    *   **Explain Mode & Scan Mode**: Offers `dcg explain` to understand blocks and a CI scan mode for pre-commit checks.
+*   **Why it's notable**: This project addresses a critical and growing pain point in AI-assisted development—the risk of agents executing irreversible, destructive commands. Its rapid rise in popularity (1,295 stars in one day) is due to its immediate utility, robust feature set (like the 50+ security packs), high-performance Rust implementation, and broad compatibility with the most popular AI coding assistants. It provides a crucial safety net for developers.
+
+### destructive_command_guard (dcg) - 用于阻止AI代理执行危险命令的高性能钩子
+*   **功能介绍**：这是一个用Rust编写的高性能钩子工具。它在AI编码代理（如Claude Code、Codex、Gemini CLI、Copilot等）执行危险的git、shell和系统命令之前进行拦截并阻止，从而防止用户因代理运行灾难性命令（例如 `git reset --hard`，`rm -rf ./src`）而导致的数据丢失或系统损坏。
+*   **主要特点**：
+    *   **零配置开箱即用保护**：立即阻止常见的危险git和文件系统命令。
+    *   **丰富的安全包**：包含50多个安全包，覆盖数据库、Kubernetes、Docker、AWS/GCP/Azure、Terraform等多个领域。
+    *   **高性能**：采用SIMD加速过滤和惰性编译的正则表达式，实现亚毫秒级延迟。
+    *   **高级命令扫描**：能检测heredoc和内联脚本中的危险命令。
+    *   **智能上下文检测**：能区分命令是作为数据还是执行（例如，不会阻止 `grep "rm -rf"`，但会阻止 `rm -rf /`）。
+    *   **丰富的终端输出与代理安全流**：在stderr上提供详细的人类可读解释和建议，同时保持stdout上的机器可读钩子输出清晰。
+    *   **广泛的代理支持**：为众多AI编码工具提供原生或兼容的集成。
+    *   **解释与扫描模式**：提供 `dcg explain` 命令以了解拦截原因，并提供CI扫描模式用于提交前检查。
+*   **为何值得关注**：该项目解决了一个在AI辅助开发中日益关键的痛点——AI代理执行不可逆的破坏性命令的风险。它在一天内获得1295颗星的迅速崛起，归功于其即时实用性、强大的功能集（如50多个安全包）、高性能的Rust实现，以及与主流AI编码助手广泛的兼容性。它为开发者提供了一个至关重要的安全网。
+
+**[View Repository / 查看仓库](https://github.com/Dicklesworthstone/destructive_command_guard)**
+
+### 🎬 How I built an $80K/Mo mobile app with Claude Code (Full Vibe Code Tutorial)
+**Channel:** Jason Lee
+* This video is a full tutorial on "vibe coding," demonstrating how to use Claude Code to build a profitable mobile app from scratch.
+* It covers the entire process of building an $80,000/month app using AI-assisted coding, focusing on practical implementation rather than just theory.
+* It's worth watching for developers and entrepreneurs interested in leveraging AI tools like Claude to rapidly prototype and launch high-revenue applications without deep traditional coding expertise.
+
+### 🎬 如何使用Claude Code打造月入8万美元的移动应用（完整Vibe编程教程）
+**频道:** Jason Lee
+* 本视频是一个关于"Vibe编程"的完整教程，展示了如何使用Claude Code从零开始构建一个盈利的移动应用。
+* 内容涵盖利用AI辅助编码打造月收入8万美元应用的全过程，重点是实际操作而非单纯理论。
+* 对于有兴趣使用Claude等AI工具快速原型开发并推出高收入应用的开发者和创业者而言，即使没有深厚的传统编码背景，也极具观看价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=UMjeSU6C4qU)**
 
