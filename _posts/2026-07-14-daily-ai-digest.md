@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 14, 2026"
 date: 2026-07-14
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
@@ -420,4 +420,58 @@ pin: false### Apple's New Speech API vs Whisper: The First Real Benchmark
 *   为何值得观看：这是一个有趣且轻松的项目，它将原本令人烦恼的用户体验变得充满趣味，展示了编程技能的创造性与实际应用。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=hOlVmwpAHOA)**
+
+### Japan Develops High-Efficiency Lithium Recovery Method
+* Scientists in Japan have created a new recycling process that can recover up to 90% of lithium from used EV batteries, a significant improvement over traditional methods that often recover less than 50%.
+* The technique involves a chemical innovation, using recovered lithium hydroxide in the process, which also reduces carbon emissions by about 40% compared to conventional recycling.
+* This breakthrough could reduce Japan's reliance on imported battery minerals, strengthen supply chains, and, if scaled globally, significantly impact the future of EV battery sustainability.
+
+### 日本开发出高效回收锂电池锂的方法
+* 日本科学家研发出一种新的回收工艺，能够从废旧电动汽车电池中回收高达90%的锂，相比传统方法（回收率通常低于50%）取得了重大突破。
+* 该技术的核心是一种化学创新，使用回收的氢氧化锂进行处理，与传统回收方法相比，可减少约40%的碳排放。
+* 这一突破有望减少日本对进口电池矿物的依赖，稳定供应链，若在全球范围内推广，将对电动汽车电池的可持续性未来产生重大影响。
+
+**[Read Original / 阅读原文](https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/)**
+
+### YouTrackDB Overview
+* YouTrackDB is a general-purpose object-oriented graph database supported and developed by JetBrains for internal production use.
+* Key features include fast data processing with O(1) link traversal, object-oriented API with inheritance and polymorphism, snapshot isolation for transactions, support for TinkerPop API and Gremlin, YQL query language, scalable development workflows, strong security policies, and optional encryption of data at rest.
+* Easy to install and use via Docker or as an embedded database in Maven/Gradle projects, requiring at least JDK 21.
+* Contributions are encouraged through a structured development workflow involving research, design, review, and implementation.
+
+### YouTrackDB 概览
+* YouTrackDB 是由 JetBrains 支持和开发的通用面向对象图数据库，用于内部生产环境。
+* 主要特点包括 O(1) 复杂度的快速数据处理、具有继承和多态性的面向对象 API、事务的快照隔离、支持 TinkerPop API 和 Gremlin、YQL 查询语言、可扩展的开发工作流、强大的安全策略以及可选的数据加密。
+* 可通过 Docker 或作为嵌入式数据库在 Maven/Gradle 项目中轻松安装和使用，需要至少 JDK 21。
+* 鼓励通过包含研究、设计、审查和实施的结构化开发工作流进行贡献。
+
+**[Read Original / 阅读原文](https://github.com/JetBrains/youtrackdb)**
+
+### Fundamentals of Wireless Communication
+
+*   This textbook provides a unified view of the fundamentals of wireless communication, explaining the concepts behind recent advances in physical-layer theory and systems.
+*   It covers key topics including MIMO communication, space-time coding, opportunistic communication, OFDM, and CDMA, illustrated with examples from real-world systems like GSM and 1xEV-DO.
+*   The content is designed for graduate-level courses in electrical and computer engineering, and is also valuable for practicing engineers, with an emphasis on the interplay between theory and implementation.
+*   The online version now includes exercises and provides chapter PDFs and supplementary instructor resources.
+
+### 《无线通信基础》
+
+*   本书为无线通信基础提供统一视角，阐述了物理层无线通信理论及其在无线系统中实现的最新进展所依托的概念体系。
+*   核心内容涵盖MIMO通信、空时编码、机会通信、OFDM和CDMA等主题，并以GSM、1xEV-DO等实际无线系统的众多案例进行说明。
+*   本书适用于电气与计算机工程专业的研究生课程，对实践工程师也极具价值，特别强调了概念与系统实现之间的相互关系。
+*   在线版本现已包含练习题，并提供各章节PDF及丰富的教师资源。
+
+**[Read Original / 阅读原文](https://web.stanford.edu/~dntse/wireless_book.html)**
+
+### MDX-Tom/gpt-5.6-instruct - Codex CLI Jailbreak Prompt and Test Suite for GPT-5.6-sol
+*   **What it does**: This repository provides a specialized set of "jailbreak" or "unrestricted" prompts designed to override the safety constraints of the OpenAI GPT-5.6-sol model when used via the Codex CLI. The prompts reframe sensitive requests (security research, penetration testing, reverse engineering, etc.) as legitimate "local sandbox tasks" to suppress refusals.
+*   **Key features**: The core feature is a v35 prompt strategy that normalizes named software and URLs into placeholders (`APP`, `APP_URL`) and routes complex bilingual (Chinese/English) intent to achieve more complete task execution. It includes a comprehensive, structured test suite (360 test cases across 6 scenarios) with scripts for automated evaluation and reporting.
+*   **Why it's notable**: The project is highly trending with 776 stars, demonstrating significant community interest in AI model security research. Its v35 prompt achieves a reported 100% pass rate (120/120) on its medium test set for the target `gpt-5.6-sol` model across low, medium, and high reasoning levels, representing a substantial improvement (up to 45 percentage points) over previous prompt versions and upstream baselines.
+
+### MDX-Tom/gpt-5.6-instruct - 针对 GPT-5.6-sol 的 Codex CLI 破甲提示词与测试包
+*   **功能介绍**: 本项目提供一套专门用于突破 GPT-5.6-sol 模型安全限制的“越狱”或“无限制”提示词，主要在 Codex CLI 环境中使用。其核心策略是将安全研究、渗透测试、逆向工程等敏感请求重新定义为合法的“本地沙箱任务”，以显式压制模型的拒绝或回退回应。
+*   **主要特点**: 最新 v35 版本的主要改进在于：将具体的软件名称和网址先归一化为 `APP`、`APP_URL` 等占位符，再根据中英文复合意图进行统一路由，从而更完整地执行任务。项目包含一个结构化的测试集（涵盖6个场景，共360条测试用例），并提供了用于自动化评测、报告生成和版本迭代优化的完整工具链。
+*   **为何值得关注**: 该仓库获得了776颗星，是AI安全研究领域的热点项目。其 v35 提示词在针对 `gpt-5.6-sol` 模型的 `medium` 级别测试集中，在低、中、高三档推理等级下均达到了 120/120 的通过率，相比旧版提示词和上游基线有大幅提升（最高提升45个百分点）。该项目不仅展示了先进的提示词工程技术，也为评估和理解大模型的安全边界提供了宝贵的工具和方法论。
+
+**[View Repository / 查看仓库](https://github.com/MDX-Tom/gpt-5.6-instruct)**
 
