@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 15, 2026"
 date: 2026-07-15
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -411,4 +411,128 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   该视频值得正在寻求节省大量时间和资源的开发者和创业者观看，它展示了如何同时为两大主流移动操作系统构建应用，并提供了对当前行业最佳实践的实用见解。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=e8D4eC4tdNI)**
+
+### VPD Run with Recruiter Event Summary
+* The event offers insights into the Vancouver Police Department application process and tips for improving POPAT or COPAT fitness test times.
+* Participants can run alongside recruiters in a casual setting to achieve fitness goals and ask questions.
+* A waiver form is mandatory for attendance.
+* The event is scheduled for Tuesday, July 21, starting at the Graveley location.
+* Registration is available via a provided Eventbrite link.
+
+### VPD 与招聘官跑步活动摘要
+* 活动旨在介绍温哥华警察局的申请流程，并帮助参与者提升POPAT或COPAT体能测试成绩。
+* 参加者可在轻松氛围中与招聘官一同跑步，设定健身目标并解答疑问。
+* 出席需签署免责声明表格。
+* 活动定于7月21日星期二，从Graveley地点开始。
+* 可通过Eventbrite链接进行注册。
+
+**[Read Original / 阅读原文](https://vpd.ca/)**
+
+### Security Bulletin: Insufficient Inbound Packet Filtering in Subnet Routers and Exit Nodes
+
+*   **Vulnerability Description:** In Tailscale versions prior to 1.66.0, Linux-based exit nodes, subnet routers, and app connectors could improperly allow inbound connections from the local area network (LAN) to other tailnet nodes, bypassing ACL rules when `"src": "*"` was configured.
+*   **Impact:** Devices on the same LAN as an affected node could connect to ports on tailnet nodes that are permitted by ACLs, potentially allowing unauthorized access.
+*   **Affected Users:** Linux-based exit nodes, subnet routers, and app connectors on Tailscale version 1.65 or earlier, as well as any nodes connecting to them. Tailnets with custom ACLs not using `"src": "*"` were not affected.
+*   **Required Action:** Upgrade all Linux-based exit nodes, subnet routers, and app connectors to Tailscale version 1.66.0 or later. A server-side update also mitigates the issue for other affected node types.
+*   **Key Mitigations:**
+    *   Redefining `"src": "*"` in ACLs to match tailnet nodes and approved subnet routes only, with a new `autogroup:danger-all` for the old semantics.
+    *   Implementing stateful packet filtering on Linux packet-forwarding nodes to block unsolicited inbound packets.
+    *   Enhancing client-side quarantining to reject all inbound connections from shared nodes, regardless of source IP.
+
+### 安全公告：子网路由器与出口节点的入站数据包过滤不足
+
+*   **漏洞描述：** 在 1.66.0 之前的 Tailscale 版本中，基于 Linux 的出口节点、子网路由器和应用连接器在 ACL 配置为 `"src": "*"` 时，可能存在一个漏洞，导致其错误地允许来自本地局域网 (LAN) 的入站连接绕过 ACL 规则，连接到尾网中的其他节点。
+*   **影响范围：** 与受影响节点处于同一局域网 (LAN) 的设备，可能可以连接到尾网节点上那些被 ACL 允许的端口，从而造成潜在的非授权访问风险。
+*   **受影响用户：** 使用 1.65 或更早版本 Tailscale 的基于 Linux 的出口节点、子网路由器和应用连接器，以及所有连接到这些节点的设备。自定义 ACL 中未使用 `"src": "*"` 的尾网不受影响。
+*   **应对措施：** 请将所有 Linux 上的出口节点、子网路由器和应用连接器升级到 1.66.0 或更高版本。同时，服务器端更新也对其他受影响节点类型进行了缓解。
+*   **关键修复措施：**
+    *   重新定义了 ACL 中的 `"src": "*"`，使其现在仅匹配尾网节点和已批准的子网路由，并提供了新的 `autogroup:danger-all` 组以保留旧语义。
+    *   在 Linux 数据包转发节点上实施了**有状态数据包过滤**，仅允许已有出站连接的响应数据包，丢弃未经请求的入站数据包。
+    *   增强了客户端的共享节点**隔离机制**，现在会拒绝来自被隔离节点的所有入站连接，无论其源 IP 是什么。
+
+**[Read Original / 阅读原文](https://tailscale.com/security-bulletins)**
+
+### Introducing Default Cooldown for Dependabot Version Updates
+*   Dependabot now automatically waits at least three days after a new package version is released before opening a version update pull request.
+*   This default cooldown is a security measure to reduce the risk of automatically merging potentially compromised or broken releases.
+*   It applies only to version updates; security updates remain immediate.
+*   Users can customize or disable the cooldown via the `cooldown` option in the `dependabot.yml` file.
+
+### Dependabot 版本更新引入默认冷却期
+*   Dependabot 现在会在新包版本发布后至少等待三天，再开启版本更新的拉取请求。
+*   此默认冷却期是一项安全措施，旨在降低自动合并可能存在安全风险或缺陷版本的风险。
+*   该冷却期仅适用于版本更新，安全更新仍将立即处理。
+*   用户可以通过 `dependabot.yml` 文件中的 `cooldown` 选项来自定义或禁用此冷却期。
+
+**[Read Original / 阅读原文](https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/)**
+
+### AlephAITech/WorkBuddyGuide - A Practical, Open-Source Guide to Mastering WorkBuddy
+*   **What it does**: This repository serves as a comprehensive, community-driven "bluebook" for mastering the AI tool **WorkBuddy**. It goes beyond official documentation to provide practical workflows, real-world use cases, and step-by-step guides covering installation, basic tasks, advanced automation, and multi-agent team setups.
+*   **Key features**:
+    *   **Structured Learning Path**: Guides users from their first task to building complex AI work systems and teams.
+    *   **Real-World Case Library**: Features an extensive collection of practical examples across various domains like office productivity, knowledge management, content creation, and investment.
+    *   **Advanced Topics**: Delves into creating custom Skills, designing multi-agent systems, and ensuring automation reliability.
+    *   **Community Contribution**: Actively encourages users to submit their own use cases (Case) to enrich the knowledge base.
+    *   **Enhanced Reading Experience**: Provides a dedicated, feature-rich website ([workbuddy.homes](https://workbuddy.homes/)) with search, dark mode, and mobile support.
+*   **Why it's notable**: As WorkBuddy (an AI productivity platform) gains popularity, this repository fills a crucial need for a **practical, task-oriented learning resource**. Its community-driven approach ensures the content remains relevant and grounded in real user challenges. The structured guide from beginner to advanced topics, especially focusing on building reusable team systems, makes it an invaluable resource for both individual users and organizations looking to adopt or deepen their use of WorkBuddy.
+
+### AlephAITech/WorkBuddyGuide - 开源的 WorkBuddy 实战蓝皮书与知识库
+*   **功能介绍**：本仓库是《WorkBuddy 实战蓝皮书》的开源知识库。它并非官方功能手册，而是专注于**通过真实工作流来掌握 WorkBuddy** 的实践指南。内容涵盖从安装、首个任务到移动办公、知识管理、内容自动化及多智能体团队协作的全流程。
+*   **主要特点**：
+    *   **清晰的进阶路径**：提供从“使用手册”到“案例篇”、“进阶篇”和“岗位行业”的结构化学习路线。
+    *   **丰富的实战案例库**：收录了大量来自社区的、覆盖办公、文件、会议、投资、自媒体等多个领域的真实应用案例。
+    *   **深入高级应用**：详细讲解如何打造自定义 Skill、设计多 Agent 系统以及确保自动化流程的可靠性。
+    *   **社区共创生态**：设有“社区案例集”和详细的投稿指南，鼓励用户分享真实场景，共同完善知识体系。
+    *   **优化的在线阅读**：推荐通过配套网站（workbuddy.homes）阅读，提供全文搜索、深色模式、移动端适配等增强体验。
+*   **为何值得关注**：随着 WorkBuddy 作为 AI 生产力工具的流行，用户急需一份**侧重实践、紧跟真实需求**的指南。该项目由社区维护，能快速响应和解决用户实际问题。其从个人效率到团队系统落地的完整覆盖，使其成为个人深度使用 WorkBuddy 或企业团队导入该工具时的关键参考资源。
+
+**[View Repository / 查看仓库](https://github.com/AlephAITech/WorkBuddyGuide)**
+
+### 🎬 Git and Github Tutorial For Beginners (Full Course)
+**Channel:** CodeWithHarry
+*   What the video covers: A comprehensive, full-length course designed for absolute beginners to learn Git version control and the GitHub platform from scratch.
+*   Key topics discussed: Git installation, repositories, commands (init, add, commit, push, pull, clone, etc.), branches, merging, resolving conflicts, GitHub workflow (creating repos, pull requests, forking), and collaborative practices.
+*   Why it's worth watching: It provides a complete, structured foundation in essential modern development tools. The inclusion of a downloadable handbook adds significant value for reference and practice. Ideal for anyone starting their coding journey.
+
+### 🎬 Git和GitHub初学者教程（完整课程）
+**频道:** CodeWithHarry
+*   视频内容概述：一门为零基础学习者设计的完整课程，全面讲解Git版本控制基础和GitHub平台的使用。
+*   主要话题：Git安装、仓库概念、核心命令（init, add, commit, push, pull, clone等）、分支管理、合并与冲突解决、GitHub工作流程（创建仓库、Pull Request、Fork）及协作实践。
+*   为何值得观看：这是一套系统构建开发者必备工具技能的优质教程。附带的手册下载使其成为可反复查阅和练习的宝贵资源，非常适合所有编程初学者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
+
+### 🎬 Skip Netflix, Watch This Stanford AI Lecture Instead
+**Channel:** Anurag Builds
+* What the video covers
+* This video presents a full Stanford CS229 lecture, diving deep into the foundational machine learning principles that power large language models (LLMs) like ChatGPT.
+* Key topics discussed
+* Core machine learning concepts, the mathematical intuition behind neural networks, and the specific techniques used in modern AI, moving beyond superficial prompt usage.
+* Why it's worth watching
+* For a substantive, "behind-the-curtain" understanding of how AI really works, replacing passive entertainment with actionable knowledge for developers and tech enthusiasts.
+
+### 🎬 跳过Netflix，看这节斯坦福AI讲座吧
+**频道:** Anurag Builds
+* 视频内容概述
+* 本视频完整呈现了斯坦福CS229课程的一节讲座，深入探讨了驱动大型语言模型（如ChatGPT）的机器学习基础原理。
+* 主要话题
+* 核心机器学习概念、神经网络的数学原理，以及现代AI所使用的具体技术，旨在超越仅仅会使用提示词的层面。
+* 为何值得观看
+* 为开发者和技术爱好者提供了一份扎实、深入的“幕后”知识，用能积累的实质性学习来替代被动的娱乐消遣。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qe7KmZK11ms)**
+
+### 🎬 GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)
+**Channel:** Peter Yang
+*   This video provides a direct, practical comparison between OpenAI's latest GPT-5.6 and Anthropic's Claude Fable 5 models. The host tests both AIs across six distinct, real-world use cases to determine which is superior.
+*   Key topics include evaluating model performance on complex tasks such as content creation, data analysis, coding assistance, and problem-solving. The video breaks down the strengths and weaknesses observed for each model in different scenarios.
+*   It's worth watching for anyone trying to decide between these two leading AI platforms. The hands-on, scenario-based testing offers actionable insights beyond theoretical benchmarks, helping viewers choose the right tool for their specific professional or personal needs.
+
+### 🎬 GPT-5.6 对决 Claude Fable 5：我测试了6个真实用例（胜者是...）
+**频道:** Peter Yang
+*   本视频对 OpenAI 最新的 GPT-5.6 和 Anthropic 的 Claude Fable 5 模型进行了直接的实战比较。主持人在六个不同的真实用例场景中测试这两款 AI，以确定哪一款更出色。
+*   主要讨论的话题包括评估模型在复杂任务上的表现，例如内容创作、数据分析、编程辅助和问题解决。视频细分了在不同场景下观察到的每个模型的优势和劣势。
+*   值得观看是因为它为在两个领先的 AI 平台之间做选择的用户提供了实用参考。这种基于场景的实测提供了超越理论基准的可操作见解，帮助观众根据自身特定的专业或个人需求选择合适的工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8mY9wx_iMSU)**
 
