@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 15, 2026"
 date: 2026-07-15
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 8 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，8个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -535,4 +535,77 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   值得观看是因为它为在两个领先的 AI 平台之间做选择的用户提供了实用参考。这种基于场景的实测提供了超越理论基准的可操作见解，帮助观众根据自身特定的专业或个人需求选择合适的工具。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=8mY9wx_iMSU)**
+
+### Jurassic Park Computers in Excruciating Detail
+*   The article meticulously identifies and describes the real-world computers and technology featured in the 1992 film *Jurassic Park*.
+*   Specific hardware includes an **Apple PowerBook 100**, **SGI R4000 Indigo** and **SGI IRIS Crimson** workstations, **PLI Mini Array** storage devices, a **Motorola Envoy** PDA, and **Thinking Machines CM-5** supercomputers.
+*   The Control Room set used over $1.7 million in real, loaned hardware (adjusted to ~$4 million in 2026 dollars) to achieve technical authenticity.
+*   The article notes technical specs, continuity errors, and historical context, such as the Motorola Envoy being a prototype at the time of filming.
+*   It concludes with a tribute to actor Sam Neill, who played Dr. Alan Grant.
+
+### 《侏罗纪公园》电脑设备的超详细解析
+*   本文详细考据并介绍了1992年电影《侏罗纪公园》中出现的真实电脑与技术设备。
+*   提及的具体硬件包括 **Apple PowerBook 100** 笔记本电脑、**SGI R4000 Indigo** 和 **SGI IRIS Crimson** 工作站、**PLI Mini Array** 存储阵列、**Motorola Envoy** 掌上电脑以及 **Thinking Machines CM-5** 超级计算机。
+*   为了追求真实感，电影控制室的布景使用了价值超过170万美元的真机（按2026年通胀调整约为400万美元）。
+*   文章探讨了设备的具体参数、电影中的连续性错误，以及历史背景（例如摩托罗拉Envoy在拍摄时还是原型机）。
+*   最后向饰演艾伦·格兰特博士的演员山姆·尼尔致敬。
+
+**[Read Original / 阅读原文](https://fabiensanglard.net/jurrasic_park_computers/index.html)**
+
+### Andon Manufacturing System
+*   **Definition**: An andon is an alerting system used in manufacturing to notify workers of quality or process problems. It can be manually activated by a worker via a pullcord or button, or automatically by production equipment.
+*   **Purpose**: The system provides a visual and/or auditory signal (like stack lights) to indicate an issue. It is designed to enable pausing production to correct problems, forming a core part of quality control.
+*   **Origin and History**: The term is a Japanese loanword meaning "paper lantern." The andon system is a principal element of the "Jidoka" quality control method pioneered by Toyota within the Toyota Production System (TPS), which is foundational to lean manufacturing.
+*   **How It Works**: Traditionally at Toyota, pulling the andon cord first signals a request for help without stopping the line. A team leader assesses the issue. If resolved, production continues; if not, a second pull stops the line until a solution is found.
+*   **Common Causes for Activation**: Part shortage, defects found or created, tool/machine malfunction, and safety issues.
+*   **Modern Evolution**: Toyota has been replacing physical andon cords with wireless "andon buttons" since 2014 to reduce cable clutter and improve safety on the production floor.
+
+### 生产中的“安灯”系统
+*   **定义**：安灯是一种用于制造业的警示系统，用于通知工作人员质量问题或流程问题。它可以通过工人拉动拉绳或按下按钮手动激活，也可以由生产设备自动激活。
+*   **目的**：该系统通过视觉和/或听觉信号（如报警灯）指示问题。其设计旨在暂停生产以纠正问题，是质量控制的核心组成部分。
+*   **起源与历史**：“安灯”一词源自日语，意为“纸灯笼”。安灯系统是由丰田公司在丰田生产系统中开创的“自働化”质量控制方法的核心要素，也是精益生产的基础。
+*   **工作原理**：在丰田的传统做法中，第一次拉动安灯绳是请求帮助的信号，不会立即停止生产线。团队主管会评估问题。如果问题能解决，生产继续；如果不能，则进行第二次拉动，停止生产线直至找到解决方案。
+*   **常见激活原因**：零件短缺、发现或产生缺陷、工具/机器故障、存在安全问题。
+*   **现代演变**：自2014年以来，丰田正在用无线的“安灯按钮”逐步取代物理安灯绳，以减少生产车间的线缆杂乱，提高安全性。
+
+**[Read Original / 阅读原文](https://en.wikipedia.org/wiki/Andon_(manufacturing))**
+
+<!-- [Title-Only] -->
+### Financing the AI boom: from cash flows to debt [pdf]
+*   **Description:** Based on the title and its source (Bank for International Settlements), this article likely analyzes the financial mechanisms fueling the rapid growth of the Artificial Intelligence sector. It probably examines the shift from relying on private equity/venture capital (cash flows) to the increasing use of corporate debt and other financial instruments to fund the massive infrastructure and R&D costs of the AI boom.
+*   **Why it's interesting:** It explores a critical but often overlooked aspect of technological revolutions: the financial plumbing. Understanding how AI growth is capitalized reveals potential systemic risks, sustainability challenges, and the broader economic impact beyond just the technology itself.
+
+### 为人工智能热潮融资：从现金流到债务 [pdf]
+*   **推测简介：** 根据标题及其来源（国际清算银行），本文可能分析了推动人工智能领域飞速增长的融资机制。文章或许探讨了资本来源从私募股权/风险资本（现金流）向使用公司债务和其他金融工具的转变，以应对人工智能热潮所需的巨额基础设施和研发成本。
+*   **为何值得关注：** 它揭示了技术革命中常被忽视的关键环节——金融基础。了解人工智能发展的资本构成，有助于洞察其潜在的系统性风险、可持续性挑战，以及技术之外更广泛的经济影响。
+
+***注意：** 以上介绍仅基于文章标题进行推测，具体内容需阅读原文。*
+
+**[Read Original / 阅读原文](https://www.bis.org/publ/bisbull120.pdf)**
+
+### [1c7/chinese-independent-developer] - Curated List of Projects by Chinese Independent Developers
+*   **What it does**: A meticulously maintained "portfolio" showcasing the side projects and products created by independent developers from China. It serves as a centralized hub to discover websites and applications that are ready for use, categorized by type (e.g., programmer tools, games) and status.
+*   **Key features**: Clearly defined submission criteria (must be a consumer-facing site/app), three project statuses (In Development, Live, Archived), structured sub-categories (Programmer Edition, Game Edition), and an emphasis on clear, value-driven one-line product descriptions.
+*   **Why it's notable**: With **1,196 stars gained today alone**, its explosive popularity indicates massive community interest. It provides unparalleled visibility for solo or small-team developers in the Chinese ecosystem and offers users a curated directory of innovative, often niche, tools and services built by their peers.
+
+### [1c7/chinese-independent-developer] - 中国独立开发者项目列表
+*   **功能介绍**: 这是一个精心维护的“中国独立开发者作品集”，专门聚合和展示独立开发者们创建的各类网站与应用程序。它作为一个中心化的发现平台，帮助用户和开发者找到那些“打开即用”的实用工具。
+*   **主要特点**: 入选标准明确（必须是面向用户的应用，非开发者工具），项目状态清晰（开发中、已上线、已维护不足），组织结构分明（设有程序员版面、游戏版面等子版面），并鼓励提交者用突出用户价值的语言来介绍项目。
+*   **为何值得关注**: 今日新增 **1,196 颗星**，其热度在开发者社区中极为罕见。它为独立开发者提供了一个绝佳的展示窗口，极大地提升了项目的曝光度；同时，也为普通用户发现国内独立开发者打造的各类有趣、实用的工具和服务提供了宝贵指南，有力地促进了独立开发生态的活力与创新。
+
+**[View Repository / 查看仓库](https://github.com/1c7/chinese-independent-developer)**
+
+### 🎬 The Ultimate Laptop Processor Buying Guide!
+**Channel:** Venom's Tech
+*   **What the video covers:** This is a comprehensive video guide designed to help viewers understand and navigate the complexities of choosing the right CPU for a new laptop.
+*   **Key topics discussed:** It breaks down the different types of processors, provides a step-by-step method for selection, and specifically deep-dives into Intel's product lines, explaining the meaning behind various generations and series (e.g., i3, i5, i7, i9).
+*   **Why it's worth watching:** Buying a laptop is a significant investment, and the processor is its brain. This guide demystifies technical jargon and offers clear, structured advice, empowering you to make an informed purchase decision that matches your performance needs and budget.
+
+### 🎬 📖 终极笔记本处理器选购指南！
+**频道:** Venom's Tech
+*   **视频内容概述:** 这是一期全面的笔记本处理器选购教学视频，旨在帮助观众理清选择合适笔记本CPU的复杂思路。
+*   **主要话题:** 视频系统讲解了处理器的不同类型，提供了详细的选购步骤，并特别聚焦于英特尔（Intel）的产品线，深入解读了各个代际与系列（如 i3, i5, i7, i9）命名的含义。
+*   **为何值得观看:** 购买笔记本是一笔重要投资，而处理器是其核心。本指南将专业术语转化为通俗易懂的建议，帮助你清晰地做出符合自身性能需求与预算的明智购买决定。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1KNyLwyTkQ0)**
 
