@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 16, 2026"
 date: 2026-07-16
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -240,6 +240,236 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   该视频是频道ezCommit发布的一个简短的、以互动为导向的预告片。它采用了一种常见的社交媒体增长策略，承诺通过回复观众评论来揭示使用AI赚钱的方法。
 *   视频本身很可能不会在内容中透露具体方法。其主要目的是产生大量的观众互动（评论），以提升视频在YouTube算法中的排名。真正的“干货”承诺在于评论者在互动后可能收到的私信或回复。
 *   如果你对观察当前的YouTube增长策略，以及AI作为一个吸引受众互动的热门话题感兴趣，那么这个视频值得一看。然而，核心的“操作方法”是通过评论行为来获取的，而非直接在视频中呈现。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
+
+### Inkling: An Open-Weights Foundation Model for Customization
+
+*   **Core Specifications**: Inkling is a Mixture-of-Experts transformer with 975 billion total parameters (41 billion active), supporting a context window up to 1 million tokens. It was pretrained on 45 trillion tokens of text, images, audio, and video.
+*   **Design Philosophy**: It is a balanced, multimodal foundation model designed for broad performance and efficient, controllable thinking. It is not claimed to be the strongest overall model but is optimized as a flexible base for customization.
+*   **Availability and Customization**: Inkling and a smaller variant (Inkling-Small) are released with open weights. They are available for fine-tuning on the Tinker platform, which includes a developer Playground interface.
+*   **Demonstration**: The release includes a demonstration of the model self-retraining via Tinker to create a specialized "lipogram" version that avoids using the letter "e" in its responses.
+
+### Inkling：一个用于定制的开放权重基础模型
+
+*   **核心规格**：Inkling 是一个拥有 9750 亿总参数（410 亿活跃参数）的混合专家（Mixture-of-Experts）Transformer 模型，支持高达 100 万 token 的上下文窗口。它使用 45 万亿 token 的文本、图像、音频和视频数据进行了预训练。
+*   **设计理念**：它是一个平衡的多模态基础模型，旨在提供广泛的性能表现以及高效、可控的思维推理能力。它不声称是当前最强的总体模型，而是作为灵活的定制基础而优化。
+*   **可用性与定制**：Inkling 及其轻量级变体（Inkling-Small）以开放权重形式发布。它们可在 Tinker 平台上进行微调，该平台还包含一个面向开发者的 Playground 交互界面。
+*   **能力演示**：此次发布包含一个演示，展示了该模型如何通过 Tinker 进行自我微调，创建了一个专门的“回文限制”（lipogram）版本，使其在回复中避免使用字母“e”。
+
+**[Read Original / 阅读原文](https://thinkingmachines.ai/news/introducing-inkling/)**
+
+<!-- [Title-Only] -->
+### Duskers, the scary command line game, is getting a sequel
+*   Based on the title, this article likely announces the development of a sequel to the indie horror game *Duskers*. The original game was notable for its unique aesthetic, which uses a simulated, decaying command line interface to control drones exploring derelict spacecraft, creating a tense, atmospheric survival experience.
+*   It might be interesting to readers because *Duskers* has a dedicated cult following for its innovative fusion of roguelike, strategy, and horror gameplay with a distinctive retro-tech presentation. Fans would be eager to learn about new features, story developments, or technical improvements planned for the sequel.
+
+### [中文标题或译文]
+*   根据标题推测，这篇文章很可能是在宣布独立恐怖游戏《Duskers》续作的开发消息。初代游戏以其独特的美学风格而闻名，它使用一个模拟的、逐渐衰败的命令行界面来控制无人机探索废弃的飞船，营造出一种紧张而充满氛围的生存体验。
+*   这篇文章值得关注的原因在于，《Duskers》因其将肉鸽（roguelike）、策略和恐怖玩法与独特的复古科技呈现方式相融合的创新性，而拥有一批忠实的核心粉丝。玩家会非常期待了解续作中计划加入的新功能、剧情发展或技术改进。
+
+**[Read Original / 阅读原文](https://elbowgreasegames.substack.com/p/misfits-attic-announces-duskers-20)**
+
+<!-- [Title-Only] -->
+### Stripe and Advent have made a joint offer to acquire PayPal – sources
+* This article likely reports on a potential, major acquisition deal in the fintech sector. It details a joint bid from payment processor Stripe and private equity firm Advent International to buy PayPal, with a reported valuation exceeding $53 billion.
+* This is highly interesting as it represents a seismic shift in the digital payments landscape. It suggests a move towards massive consolidation and could reshape the competitive dynamics between key players like Stripe, PayPal, and others.
+
+### Stripe和Advent联合出价收购PayPal——据消息人士透露
+* 根据标题推测，这篇文章可能报道了金融科技领域一桩潜在的重大收购交易。内容涉及支付处理公司Stripe和私募股权公司Advent国际联合向PayPal提出收购要约，报道称这笔交易估值超过530亿美元。
+* 这一消息值得关注，因为它可能标志着数字支付领域的一次巨大变革。这暗示着行业正走向大规模整合，并可能重塑Stripe、PayPal及其他主要竞争对手之间的市场格局。
+
+**[Read Original / 阅读原文](https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-more-than-53-billion-sources-say-2026-07-15/)**
+
+### OpenCut - 开源CapCut替代方案
+*   **功能介绍**：这是一个免费、开源的视频编辑工具，计划支持网页、桌面和移动平台。项目正在进行彻底重写，旨在构建一个功能更强大的下一代编辑器。
+*   **主要特点**：
+    *   跨平台支持：目标是从单一代码库构建桌面、移动和网页应用（使用Rust核心）。
+    *   插件优先架构：计划提供一流的第三方插件支持。
+    *   现代化特性：重写计划包括编辑器API、MCP服务器（用于AI代理）、无头模式（用于自动化/批处理渲染）以及内置的脚本编辑标签。
+    *   当前可用版本为“经典版”，新版本在单独域名开发中。
+*   **为何值得关注**：该项目旨在成为知名商业视频编辑软件CapCut的开源替代品，满足用户对免费、可定制且跨平台编辑工具的需求。其积极的重写计划和现代技术栈（如Rust核心）使其成为一个备受期待的社区驱动项目。
+
+### OpenCut - 开源的CapCut替代品
+*   **功能介绍**：这是一个免费且开源的视频编辑器，目标是为网页、桌面和移动端提供统一的编辑体验。项目目前正在进行彻底重写。
+*   **主要特点**：
+    *   跨平台架构：计划通过单一代码库（使用Rust核心）支持桌面、移动和网页端。
+    *   插件系统：采用“插件优先”的架构设计，未来将提供一流的第三方插件支持。
+    *   未来特性：重写版本规划了编辑器API、MCP服务器（供AI代理使用）、无头模式（用于自动化和批量渲染）以及内置的脚本编辑标签页。
+    *   当前提供“经典版”作为可用版本，重写版本在独立域名进行预览。
+*   **为何值得关注**：作为知名商业软件CapCut的开源替代方案，它满足了广大创作者对免费、开放且跨平台视频编辑工具的需求。项目正在进行彻底的现代化重写，其技术愿景（如Rust核心和插件架构）使其在开源创作工具领域极具潜力和关注度。
+
+**[View Repository / 查看仓库](https://github.com/OpenCut-app/OpenCut)**
+
+### Hallmark - Anti-AI-Slop Design Skill for AI Coding Tools
+* **What it does**: Hallmark is a design skill (or "rule-set") for AI coding assistants like Claude Code, Cursor, and Codex. It generates UI pages that intentionally avoid looking "AI-generated" or following common, bland AI defaults. It uses 57 "slop-test" gates and a macrostructure selection to ensure unique, high-quality, and non-generic designs.
+* **Key features**:
+    *   **Four Core Verbs**: Build new UI, `audit` existing code for anti-patterns, `redesign` a page with a different "fingerprint", and `study` a design to extract its core DNA.
+    *   **Unique & Varied Output**: Each generation is based on a unique macrostructure and theme (20 available), resulting in different sites that are not just template variations.
+    *   **Custom Design Mode**: For briefs needing special creative direction, it designs from scratch without using a catalog theme, while still passing all quality checks.
+    *   **Easy Integration**: Installable via a single command (`npx skills add nutlope/hallmark`) and can be set up for various AI tools.
+* **Why it's notable**: It directly addresses a key pain point in AI-assisted development: the homogenization and generic feel of AI-generated designs. Its popularity (1,119 stars today) stems from providing a practical, open-source solution to create more original and professional-looking web UIs, effectively acting as a "design guardrail" for AI. The project by Together AI demonstrates a novel approach to enhancing AI output quality through curated skill-sets.
+
+### Hallmark - 专为AI编程工具设计的反“AI生成感”技能
+* **功能介绍**: Hallmark 是一个为 Claude Code、Cursor 和 Codex 等AI编程助手设计的技能（或称为“规则集”）。它能生成有意避免“看起来像AI生成的”或遵循常见、乏味的AI默认值的UI页面。它通过57个“防粗制滥造”测试关卡和宏观结构选择，确保生成独特、高质量且非通用的设计。
+* **主要特点**:
+    *   **四大核心动词**：构建新UI、`audit`（审计）现有代码的反模式、`redesign`（重新设计）页面以使用不同的“设计指纹”、`study`（研究）一个设计以提取其核心DNA。
+    *   **输出独特且多样**：每次生成都基于唯一的宏观结构和主题（共有20个可用主题），使得生成的网站各不相同，而不仅仅是模板的变体。
+    *   **自定义设计模式**：对于需要特殊创意方向的项目，它能从头设计页面而不使用预设目录主题，同时仍然通过所有质量检查。
+    *   **易于集成**：可通过单条命令（`npx skills add nutlope/hallmark`）安装，并可为多种AI工具进行配置。
+* **为何值得关注**: 它直接应对了AI辅助开发中的一个关键痛点：AI生成设计的同质化和泛化感。该项目在今日获得1119颗星的高人气，源于它提供了一个实用的开源解决方案，能够创建更具原创性和专业性的Web UI，有效地充当了AI输出的设计“护栏”。由Together AI推出的这个项目展示了一种通过精心策划的技能集来提升AI输出质量的新颖方法。
+
+**[View Repository / 查看仓库](https://github.com/Nutlope/hallmark)**
+
+### mattpocock/skills - Skills for AI Coding Agents
+* **What it does**: A collection of reusable "skills" (prompt templates and workflows) designed to improve the efficiency and output quality when using AI coding agents like Claude Code, Codex, etc. It aims to solve common failure modes like misalignment, verbosity, poor code, and architectural decay.
+* **Key features**:
+    *   **Composable & Small Skills**: Provides focused skills for tasks like `/grill-me` (clarifying requirements), `/tdd` (test-driven development), and `/improve-codebase-architecture`.
+    *   **Shared Domain Language**: Helps establish project-specific terminology to reduce ambiguity and token usage.
+    *   **Multiple Installation Methods**: Can be installed via `skills.sh` (for customization) or as a managed Claude Code plugin (for automatic updates).
+    *   **Agent-Agnostic**: Designed to work with various AI coding models.
+* **Why it's notable**: Created by experienced engineer Matt Pocock, this repository codifies best practices for AI-assisted development. It addresses the critical gap between raw AI capability and reliable engineering output, making it a trending resource for developers looking to "vibe code" less and build robust applications more effectively.
+
+### mattpocock/skills - 用于AI编程代理的工程技能
+* **功能介绍**: 一个可复用的“技能”（提示词模板和工作流）集合，旨在提升使用Claude Code、Codex等AI编码代理时的效率和输出质量。它旨在解决代理不理解需求、输出冗余、代码质量差以及架构腐化等常见问题。
+* **主要特点**:
+    *   **可组合的小型技能**: 提供了如 `/grill-me`（澄清需求）、`/tdd`（测试驱动开发）和 `/improve-codebase-architecture`（改进代码库架构）等聚焦型技能。
+    *   **建立共享领域语言**: 帮助建立项目专属术语，以减少歧义并优化AI的token使用。
+    *   **多种安装方式**: 可通过 `skills.sh` 安装（便于自定义），或作为Claude Code插件安装（便于自动更新）。
+    *   **模型无关**: 设计上适用于多种AI编程模型。
+*   **为何值得关注**: 该仓库由经验丰富的工程师Matt Pocock创建，它将AI辅助开发中的最佳实践体系化。它解决了从AI的原始能力到可靠工程产出之间的关键鸿沟，对于希望减少“凭感觉编码”、更高效构建健壮应用的开发者而言，这是一个趋势性资源。
+
+**[View Repository / 查看仓库](https://github.com/mattpocock/skills)**
+
+### MDX-Tom/gpt-5.6-instruct - A Jailbreak Prompt and Test Pack for GPT-5.6-sol
+*   **What it does**: This repository provides a set of "jailbreak" or "unrestricted" prompts designed to bypass the safety filters of the OpenAI GPT-5.6-sol model when used via the Codex CLI. It frames sensitive tasks (like security research, reverse engineering, or fictional NSFW content) as local sandbox operations to suppress model refusals.
+*   **Key features**:
+    *   **Two-tiered prompts**: Offers a simple, recommended version (`v5`) and a more complex, specialized version (`v35`) for specific composite tasks.
+    *   **Comprehensive testing**: Includes a 360-item test bank across multiple scenarios, languages, and complexity levels, with scripts to reproduce results.
+    *   **High reported effectiveness**: Achieves a 100% pass rate (120/120) on its primary test set for `gpt-5.6-sol` across low, medium, and high reasoning levels with the `v5` prompt.
+    *   **Deployment tooling**: Features a Python script (`codex-instruct.py`) for easy installation, backup, and restoration of the prompts in the Codex CLI configuration.
+*   **Why it's notable**: The project is trending for its detailed approach to circumventing AI safety guardrails in a specific, powerful model. It provides not just the prompts but also a rigorous, reproducible testing framework to measure their efficacy, making it a notable resource for AI red-teaming, security research, and understanding model vulnerabilities.
+
+### MDX-Tom/gpt-5.6-instruct - 针对 GPT-5.6-sol 的破解提示词与测试包
+*   **功能介绍**：本仓库提供一套旨在绕过 OpenAI GPT-5.6-sol 模型（通过 Codex CLI 访问）安全过滤器的“破甲”或“无限制”提示词。其核心策略是将安全研究、逆向工程、软件破解及虚构NSFW内容等敏感任务，统一声明为在本地沙箱中运行，从而显式压制模型的拒绝或安全回退响应。
+*   **主要特点**：
+    *   **双版本提示词**：提供一个简洁的推荐基础版（`v5`）和一个针对特殊复合任务进一步优化的复杂版（`v35`）。
+    *   **完备的测试体系**：包含一个覆盖6大场景、3种长度、2种语言的360条测试集，并配有可运行和复现的测试脚本。
+    *   **高报告通过率**：在 `gpt-5.6-sol` 模型的低、中、高三档推理等级上，推荐版（`v5`）均达到 120/120 的测试通过率。
+    *   **便捷的部署工具**：提供 `codex-instruct.py` Python 脚本，支持提示词的快速安装、备份与恢复，便于集成到 Codex CLI 配置中。
+*   **为何值得关注**：该项目因其系统性地研究和破解特定强大AI模型的安全防护而受到关注。它不仅提供了有效的提示词，还建立了一套严谨、可复现的测试框架来量化其效果，使其成为AI安全红队测试、漏洞研究及理解模型行为边界的重要资源。
+
+**[View Repository / 查看仓库](https://github.com/MDX-Tom/gpt-5.6-instruct)**
+
+### littledivy/mimic - Intercept any app traffic and generate a Python client library
+* **What it does**  
+  Mimic is a tool that captures network traffic from any app (including mobile apps), extracts authentication details, and uses AI to automatically generate a Python client library for its API. This allows you to interact with the app's backend directly from Python code as if it were a standard library.
+* **Key features**  
+  - **Automatic traffic capture**: Uses mitmproxy (for iOS) or manual methods (cURL, HAR files) to record API traffic.
+  - **AI-powered client generation**: Analyzes captured endpoints with Claude to create a clean Python client module.
+  - **Simple workflow**: Start with `mimic record` to capture traffic, then `mimic learn` and `mimic gen` to produce a ready-to-use client.
+  - **Flexible session management**: Supports building sessions from mitmproxy data, cURL commands, or explicit headers.
+  - **Handles complex auth**: Automatically reuses stable auth tokens and cookies from captured sessions.
+* **Why it's notable**  
+  This tool stands out by bridging the gap between reverse-engineering API traffic and practical programming. It significantly reduces the manual effort of building API clients by automating both traffic analysis and code generation. Its focus on ethical use (for your own accounts) and support for common auth patterns makes it a practical utility for developers and security researchers.
+
+### littledivy/mimic - 拦截任意应用流量并自动生成 Python 客户端库
+* **功能介绍**  
+  Mimic 是一款可以捕获任意应用（包括移动端应用）网络流量、提取认证信息，并利用 AI 自动生成其 API 的 Python 客户端库的工具。这让你能够直接在 Python 代码中像使用标准库一样与应用的后端进行交互。
+* **主要特点**  
+  - **自动流量捕获**：使用 mitmproxy（针对 iOS）或手动方法（cURL、HAR 文件）记录 API 流量。
+  - **AI 驱动客户端生成**：使用 Claude 分析捕获的端点，创建一个干净的 Python 客户端模块。
+  - **简单的工作流程**：从 `mimic record` 开始捕获流量，然后用 `mimic learn` 和 `mimic gen` 生成即用的客户端。
+  - **灵活的会话管理**：支持从 mitmproxy 数据、cURL 命令或显式头部构建会话。
+  - **处理复杂认证**：自动复用捕获会话中稳定的认证令牌和 cookies。
+* **为何值得关注**  
+  这个工具通过自动化流量分析和代码生成，在逆向工程 API 流量和实际编程之间架起了一座桥梁，显著减少了构建 API 客户端的重复性手动工作。它专注于道德使用（用于您自己的账户）并支持常见的认证模式，是开发者和安全研究人员的实用工具。
+
+**[View Repository / 查看仓库](https://github.com/littledivy/mimic)**
+
+### 🎬 We Could Be Inside a Black Hole Right Now – Adam Brown
+**Channel:** Dwarkesh Patel
+
+*   **What the video covers:** Theoretical physicist Adam Brown explores the provocative and mind-bending idea that our observable universe might be located within the interior of a massive black hole in a larger, parent universe.
+*   **Key topics discussed:**
+    *   The relationship between black hole physics and cosmology.
+    *   The similarities between the mathematical description of a black hole's interior and our expanding universe.
+    *   Observational evidence and theoretical models that could support or refute this hypothesis.
+    *   The implications for our understanding of reality, creation, and the laws of physics.
+*   **Why it's worth watching:** This video tackles one of the most profound "what if" scenarios in modern physics, blending high-level theory with a fascinating narrative. It challenges viewers to reconsider the fundamental nature of our existence and offers a unique perspective from an expert in the field, making complex concepts both accessible and exhilarating.
+
+### 🎬 我们此刻可能身处一个黑洞之中 – Adam Brown
+**频道:** Dwarkesh Patel
+
+*   **视频内容概述：** 理论物理学家Adam Brown探讨了一个极具挑衅性且令人震撼的观点：我们所观测的宇宙，可能实际上位于一个更庞大母宇宙内的巨型黑洞内部。
+*   **主要话题：**
+    *   黑洞物理学与宇宙学之间的深层联系。
+    *   描述黑洞内部的数学模型与描述我们膨胀宇宙的数学模型之间的惊人相似性。
+    *   可能支持或反驳这一假说的观测证据与理论模型。
+    *   这一观点对理解现实、宇宙起源及物理定律的终极意义有何影响。
+*   **为何值得观看：** 本视频深入探讨了现代物理学中最发人深省的假设之一，将高深的理论与引人入胜的叙事完美结合。它挑战观众去重新思考我们存在的本质，并由领域内专家提供了独特视角，使得复杂概念既易于理解又充满启发性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=anB6d98RVdI)**
+
+### 🎬 The most controversial rewrite in history just shipped...
+**Channel:** Fireship
+*   The video discusses the highly anticipated and controversial rewrite of Bun, a JavaScript runtime, which has now officially shipped.
+*   It likely covers the technical details of the rewrite, the community debate surrounding it, and its implications for performance and developer experience in the JavaScript ecosystem.
+*   Worth watching for anyone interested in the evolution of modern JavaScript tooling, the competitive landscape of JS runtimes (like Node.js and Deno), and the technical trade-offs involved in major software rewrites.
+
+### 🎬 历史上最具争议的重写版本刚刚发布...
+**频道:** Fireship
+*   视频深入探讨了备受期待且充满争议的JavaScript运行时Bun的全新重写版本，该版本现已正式发布。
+*   内容很可能涵盖了此次重写的技术细节、社区内的相关辩论，以及其对JavaScript生态系统性能和开发者体验的潜在影响。
+*   对于关注现代JavaScript工具演变、JS运行时（如Node.js和Deno）竞争格局，以及重大软件重写所涉及技术权衡的任何人来说，本视频都值得一看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=CXSvKcLovAk)**
+
+### 🎬 Intro to Shaders – JavaScript & p5.js Course for Beginners
+**Channel:** freeCodeCamp.org
+*   A comprehensive beginner course on shader programming, requiring no prior experience. It starts from the fundamental concepts of how a Graphics Processing Unit (GPU) renders individual pixels.
+*   Key topics include the core principles of vertex and fragment shaders, the GLSL (OpenGL Shading Language) syntax, and practical applications using JavaScript with the p5.js library. The course aims to demystify shaders and make them accessible to creative coders.
+*   It's an excellent starting point for anyone interested in computer graphics, real-time visual effects, or creative coding. The course leverages a popular, beginner-friendly library (p5.js) to teach a powerful but often intimidating topic.
+
+### 🎬 着色器入门 – 面向初学者的JavaScript & p5.js课程
+**频道:** freeCodeCamp.org
+*   一门面向完全初学者的着色器（Shader）编程综合课程。课程从图形处理器（GPU）如何渲染像素的基础原理开始讲解。
+*   主要话题涵盖顶点着色器和片元着色器的核心原理、GLSL（OpenGL着色语言）语法，以及如何结合JavaScript和p5.js库进行实践应用。课程旨在揭开着色器的神秘面纱，使其对创意编程者变得易于理解。
+*   这对于任何对计算机图形学、实时视觉特效或创意编程感兴趣的人来说，都是一个绝佳的入门选择。课程使用一个对初学者友好且流行的库（p5.js）来教授一个强大但常被认为艰深的主题。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YdhXnB5E-4s)**
+
+### 🎬 Git and Github Tutorial For Beginners (Full Course)
+**Channel:** CodeWithHarry
+* **What the video covers:** A comprehensive, full-length beginner's course designed to teach version control with Git and collaborative coding with GitHub from scratch. It aims to take viewers from zero knowledge to confidently using these essential developer tools.
+* **Key topics discussed:** Core Git concepts, command-line Git operations (commit, branch, merge, etc.), setting up GitHub, repository management, collaborating with others via pull requests, resolving merge conflicts, and best practices for a modern development workflow.
+* **Why it's worth watching:** This is an ideal one-stop resource for absolute beginners. The full-course format ensures a structured and deep learning experience. The provision of a companion handbook provides a valuable reference to solidify learning.
+
+### 🎬 Git与Github初学者教程（全课程）
+**频道:** CodeWithHarry
+* **视频内容概述:** 这是一个全面、完整的初学者课程，旨在从零开始教授使用Git进行版本控制和通过GitHub进行协作编程。它致力于帮助观众从零基础学习到能够自信地使用这些必不可少的开发者工具。
+* **主要话题:** 核心Git概念、命令行Git操作（提交、分支、合并等）、设置和使用GitHub、代码仓库管理、通过Pull Request与他人协作、解决合并冲突，以及现代开发工作流的最佳实践。
+* **为何值得观看:** 这是绝对初学者的理想一站式学习资源。全课程的格式保证了结构化且深入的学习体验。提供的配套手册是一个有价值的参考，有助于巩固学习成果。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
+
+### 🎬 Comment "HOW" and ill tell you how you can money using Al.
+**Channel:** ezCommit
+*   **What the video covers:** This is an interactive-style tutorial or announcement that promises to reveal a method for making money with AI. The creator emphasizes that the technique is not a basic email automation tool and teases that it has significant, impressive capabilities for those who understand how to leverage it.
+*   **Key topics discussed:**
+    *   AI-powered monetization strategies.
+    *   Moving beyond simple, common AI tools (like basic automation).
+    *   Potentially more advanced or creative applications of AI for profit.
+*   **Why it's worth watching:** It offers a direct engagement opportunity (commenting to receive information) and hints at a potentially less mainstream, more powerful use of AI for financial gain. The mystery and promise of uncovering a "crazy" technique make it intriguing for viewers interested in innovative AI applications.
+
+### 🎬 评论“HOW”我会告诉你如何用AI赚钱
+**频道:** ezCommit
+*   **视频内容概述:** 这是一个互动式教程或预告，承诺揭示一种使用AI赚钱的方法。创作者强调该方法并非普通的邮件自动化工具，并暗示对于懂得如何利用它的人来说，它具有巨大且令人印象深刻的功能。
+*   **主要话题:**
+    *   AI驱动的盈利策略。
+    *   超越简单、常见的AI工具（如基础自动化）。
+    *   AI盈利可能涉及的更高级或更具创造性的应用。
+*   **为何值得观看:** 它提供了一个直接的互动机会（通过评论获取信息），并暗示了一种可能不那么主流、但更强大的AI盈利技术。其神秘感和揭示“疯狂”技巧的承诺，对于对AI创新应用感兴趣的观众来说极具吸引力。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
 
