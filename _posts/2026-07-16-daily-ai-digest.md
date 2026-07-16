@@ -208,3 +208,204 @@ It's trending due to its practical, opinionated approach to a pressing problem: 
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
 
+<!-- [Title-Only] -->
+### OnePlus halts operations in USA and Europe
+* This article likely covers the news that OnePlus, the popular smartphone and technology brand, is ceasing its business operations or significant activities within the United States and European markets.
+* It might be interesting to readers as OnePlus has a notable following in these regions, and this move could impact customer support, product availability, software updates, and the competitive landscape for consumer electronics.
+
+### OnePlus 中断在美国和欧洲的运营
+* 根据标题推测，本文内容可能主要报道 OnePlus 品牌决定停止其在美国和欧洲市场的主要业务活动或运营。
+* 这则消息值得关注的原因在于 OnePlus 在这些地区拥有相当数量的用户群体，其运营中断可能直接影响到产品销售、售后服务、软件更新支持，并对消费电子市场的竞争格局产生一定影响。
+
+**[Read Original / 阅读原文](https://community.oneplus.com/thread/2170715118587871237)**
+
+### SpaceX Stock Volatility Post-IPO
+*   SpaceX stock fell below its $135 IPO price for the first time, though it recovered to close near that level.
+*   The company's IPO was the largest in history, raising $86 billion and initially creating a $2.2 trillion market cap.
+*   Recent concerns involve high spending plans, debt, and the upcoming release of locked-up employee shares.
+*   SpaceX is expanding into AI, including a major acquisition of startup Cursor and the integration of Elon Musk's xAI company.
+
+### SpaceX上市后股价剧烈波动
+*   SpaceX股价首次跌破135美元的发行价，但收盘时已回升至该价位附近。
+*   该公司进行了史上最大规模的IPO，筹集了860亿美元，初始市值达2.2万亿美元。
+*   近期担忧集中在公司高支出计划、债务负担以及即将解禁的员工限售股上。
+*   SpaceX正积极扩张AI业务，包括高价收购初创公司Cursor以及与埃隆·马斯克的xAI公司合并。
+
+**[Read Original / 阅读原文](https://www.latimes.com/business/story/2026-07-16/spacex-stock-erases-gains-slides-below-ipo-price-in-intraday-trading)**
+
+### Let’s Build PlanetScale From Scratch: Infrastructure
+
+* The project introduces **Homescale**, a tool inspired by PlanetScale to create database clones and branches efficiently by separating storage from compute.
+* It uses a Docker-like model: **database images** are immutable snapshots, **containers** are writable clones, and **branches** are clones created from a container's state.
+* The core technology relies on **Copy-on-Write (COW)** to share unchanged data, implemented via **Ceph's RADOS Block Device (RBD)** for efficient, scalable snapshots and cloning.
+* The approach is database-agnostic, starting with Postgres, and aims to manage database lifecycle, snapshots, and lineage independently of the database engine itself.
+
+### 从头构建 PlanetScale：基础设施
+
+* 项目介绍了 **Homescale**，一个受 PlanetScale 启发的工具，旨在通过将存储与计算分离，高效地创建数据库克隆和分支。
+* 它采用了类似 Docker 的模型：**数据库镜像**是不可变的快照，**容器**是可写的克隆，**分支**是基于容器状态创建的克隆。
+* 核心技术依赖于**写时复制（COW）**来共享未更改的数据，通过 **Ceph 的 RADOS 块设备（RBD）**实现高效的可扩展快照和克隆。
+* 该方法与数据库引擎无关，首先支持 Postgres，目标是独立于数据库引擎本身来管理数据库的生命周期、快照和血缘关系。
+
+**[Read Original / 阅读原文](https://onatm.dev/2026/07/16/homescale-part-1/)**
+
+### **1c7/chinese-independent-developer - Curated List of Projects by Chinese Independent Developers**
+*   **What it does**: This repository serves as a curated directory, aggregating and showcasing projects built by Chinese independent developers. It aims to reveal what the community is working on, from side projects to potential products.
+*   **Key features**:
+    *   **Categorized Listings**: Projects are organized into main and sub-forums (e.g., Programmer Tools, Games) for easy browsing.
+    *   **Project Status Tracking**: Each entry has a clear status indicator (`:clock8:` In Development, `:white_check_mark:` Live, `:x:` Closed/Unmaintained).
+    *   **Community Contribution**: Open to submissions via Pull Requests or Issues, with guidelines on writing effective product descriptions.
+    *   **Diverse Portfolio**: Features a wide range of practical applications, including AI tools, productivity software, creative apps, utilities, and more.
+*   **Why it's notable**: It's a valuable hub for discovering innovative, often niche applications within the Chinese developer ecosystem. It highlights the creativity and technical skills of independent developers, providing inspiration and showcasing viable products. The high star count indicates strong community interest in tracking and supporting these endeavors.
+
+### **1c7/chinese-independent-developer - 中国独立开发者项目列表**
+*   **功能介绍**: 这是一个聚合和展示中国独立开发者项目的目录。它旨在汇集社区成员正在开发的各类项目，从业余尝试到成熟产品，让大家能看到彼此都在做什么。
+*   **主要特点**:
+    *   **分类清晰**: 项目分为主版面（开箱即用的产品）和子版面（如程序员工具、游戏）进行归档。
+    *   **状态标注**: 每个项目都有明确的状态标识（开发中、已上线、已关闭）。
+    *   **社区驱动**: 开放给所有开发者提交，可通过 Pull Request 或 Issue 参与，并附有如何撰写优秀介绍的指南。
+    *   **项目丰富多样**: 收录了大量实用工具，涵盖 AI 应用、效率软件、创意工具、实用程序等多个领域。
+*   **为何值得关注**: 该仓库是发现中国独立开发者生态中创新应用的重要窗口。它突显了开发者们的创造力和实践能力，为社区提供了灵感，并让许多优秀的小众项目得以被看见。其高星标数反映了社区对于关注和支持这些独立项目的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/1c7/chinese-independent-developer)**
+
+### Apache Ossie - A Standardized, Vendor-Neutral Specification for Semantic Metadata
+*   **What it does:** Apache Ossie provides an open-source specification to standardize the exchange of semantic models (e.g., definitions of KPIs, metrics, and business logic) across analytics, AI, and BI tools. It creates a single, consistent source of truth for semantic data.
+*   **Key features:**
+    *   A common JSON and YAML-based specification.
+    *   Aims to solve "semantic fragmentation" where the same metric is defined differently across tools.
+    *   Reference converters to translate between Ossie and other formats (like dbt).
+    *   Includes a core schema, validation tools, and example models.
+*   **Why it's notable:** This project addresses a critical interoperability problem in the modern data stack. By providing a neutral standard, it promises to improve consistency between AI agents, BI platforms, and other tools, reducing manual reconciliation work and errors. Its recent activity (34 new stars today) suggests growing industry interest in solving this fundamental challenge.
+
+### Apache Ossie - 面向语义元数据交换的开放标准化规范
+*   **功能介绍：** Apache Ossie 是一个开源项目，旨在为分析、AI 和 BI 工具之间的语义模型交换制定统一标准，提供跨平台的语义数据唯一真实来源。
+*   **主要特点：**
+    *   基于 JSON 和 YAML 的通用规范。
+    *   解决“语义碎片化”问题，即同一指标在不同工具中定义不一致。
+    *   提供参考转换器，用于将 Ossie 与其他格式（如 dbt）互相转换。
+    *   包含核心规范、验证工具和示例模型。
+*   **为何值得关注：** 该规范针对现代数据栈中的关键互操作性难题。通过建立中立标准，它有望显著提升 AI 代理、BI 平台和其他工具之间的一致性，减少人工协调成本和错误。其近期热度（单日增长34颗星）反映了行业对解决这一基础性问题的日益关注。
+
+**[View Repository / 查看仓库](https://github.com/apache/ossie)**
+
+### Hallmark - A Design Skill for Generating Unique, Non-AI-Looking UI
+* **What it does**: Hallmark is a design skill for AI coding tools (Claude Code, Cursor, Codex) that generates clean, professional web UI while actively avoiding the default, "AI-slop" look. It applies a strict rule-set and runs a series of "slop-test" gates to ensure the output looks distinct and manually crafted.
+* **Key features**:
+    *   **Four Core Verbs**: Commands to build new UI (`build`), audit existing code (`audit`), redesign pages while keeping content (`redesign`), and extract design DNA from inspiration (`study`).
+    *   **20 Themes + Custom Mode**: Offers a catalog of 20 design themes. When a brief doesn't fit, it switches to a **Custom** mode to design from scratch (unique palette, type, layout).
+    *   **Anti-Pattern Enforcement**: Uses 57 "slop-test" gates and a pre-emit self-critique to reject common, overused AI-generated design patterns, ensuring varied and authentic results.
+* **Why it's notable**: It directly addresses the common criticism of generic, homogeneous AI-generated designs. By codifying anti-patterns and providing a structured skill, it empowers developers to use AI tools for faster prototyping without sacrificing visual uniqueness or professional quality. Its high star count indicates strong interest in solving this specific problem.
+
+### Hallmark - 为 Claude Code, Cursor 和 Codex 打造的反AI设计技能
+* **功能介绍**：Hallmark 是一个面向AI编程工具的设计技能，它能生成简洁专业的网页UI，同时主动避免千篇一律的“AI味”。它应用一套严格的规则集，并在输出前运行多个“防陈词滥调”测试，确保生成的界面看起来独特且像手工打造。
+* **主要特点**：
+    *   **四大核心命令**：包括构建新界面（`build`）、审计现有代码（`audit`）、保留内容但重构设计（`redesign`）以及从优秀设计中提取DNA（`study`）。
+    *   **20个主题 + 自定义模式**：提供20种预设设计主题。当需求不符时，会切换到**Custom（自定义）模式**，从零开始设计配色、字体和布局。
+    *   **反AI模式强化**：通过57项“防陈词滥调”测试和输出前的自我批评，来拒绝那些AI生成中常见的、过度使用的默认设计模式，确保输出成果多样且真实。
+* **为何值得关注**：它直击了当前AI生成设计同质化、缺乏个性的痛点。通过将“反模式”规则化并封装成技能，它让开发者能够在使用AI工具加速开发的同时，确保产出的UI在视觉上保持独特性和专业度。其今日高增的星标数也表明，社区对解决这一问题的高度兴趣。
+
+**[View Repository / 查看仓库](https://github.com/Nutlope/hallmark)**
+
+### xai-org/grok-build - SpaceXAI's Terminal-Based AI Coding Agent
+*   **What it does**: Grok Build is a powerful, terminal-based AI coding agent. It runs as a full-screen, interactive Text User Interface (TUI) that can understand your codebase, edit files, execute shell commands, search the web, and manage complex, long-running tasks. It supports interactive, headless (for scripting/CI), and editor-embedded (via ACP) modes.
+*   **Key features**:
+    *   **Full-Screen, Mouse-Interactive TUI**: A modern and immersive terminal interface.
+    *   **Comprehensive Agent Capabilities**: Integrates file editing, command execution, web search, and task management.
+    *   **Multi-Mode Operation**: Designed for interactive use, automated headless scripts, and integration into development editors.
+    *   **Cross-Platform**: Provides pre-built binaries for macOS, Linux, and Windows, and can be built from source on supported platforms.
+    *   **Extensible & Well-Documented**: Features a clear repository structure, extensive documentation, and a user guide covering configuration, plugins, and more.
+*   **Why it's notable**: Backed by SpaceXAI (x.ai), this is a sophisticated and high-performance coding assistant built in Rust. Its significant community attention (9.7k+ stars) highlights its appeal as a modern, terminal-native AI tool for developers, blending advanced AI agent capabilities with the efficiency of a command-line workflow.
+
+### xai-org/grok-build - SpaceXAI 终端 AI 编程助手
+*   **功能介绍**：Grok Build 是一款强大的终端 AI 编程助手。它作为全屏交互式 TUI 运行，能够理解您的代码库、编辑文件、执行 Shell 命令、搜索网页，并管理复杂的长期任务。支持交互式、无头（用于脚本/CI）和编辑器嵌入（通过 ACP 协议）三种运行模式。
+*   **主要特点**：
+    *   **全屏鼠标交互 TUI**：提供现代、沉浸式的终端界面体验。
+    *   **全面的智能体能力**：集成文件编辑、命令执行、网页搜索和任务管理。
+    *   **多模式运行**：专为交互式使用、自动化无头脚本以及集成到开发编辑器中而设计。
+    *   **跨平台支持**：为 macOS、Linux 和 Windows 提供预编译二进制文件，并支持在主流平台从源码构建。
+    *   **可扩展与完善文档**：具有清晰的仓库结构、详尽的文档以及涵盖配置、插件、主题等内容的用户指南。
+*   **为何值得关注**：由 SpaceXAI (x.ai) 支持，这是一个用 Rust 构建的高性能、智能化的编码助手。其高达 9.7k+ 的星标数量彰显了社区的高度关注，它作为一款现代、原生终端的 AI 工具，为开发者融合了先进的 AI 智能体能力与命令行工作流的高效性。
+
+**[View Repository / 查看仓库](https://github.com/xai-org/grok-build)**
+
+### Codex Dream Skin - A Theming Tool for Codex Desktop
+
+* **What it does**: This is a tool that applies custom, visually engaging themes to the Codex desktop application. It achieves this by injecting styles via the Chrome DevTools Protocol (CDP) on the user's local machine, without modifying the official application binaries or installation packages.
+* **Key features**:
+    * **Interactive Themes**: Themes affect native UI elements like sidebars, suggestion cards, and input boxes, not just static background images.
+    * **Customizable**: Users can easily swap images to create personalized themes.
+    * **Reversible**: A one-click restore function reverts to the official Codex appearance.
+    * **Safe & Non-Invasive**: Uses a local CDP injection bound to `127.0.0.1`. It explicitly does not alter official code, code signatures, or API configurations, making it relatively secure.
+* **Why it's notable**: It has gained significant traction (4,356 stars) for offering a popular way to personalize the look and feel of Codex. It focuses on user experience ("coding with atmosphere") and provides a safe, non-destructive method for customization, which is a valuable alternative to modifying core application files.
+
+### Codex Dream Skin - 一款 Codex 桌面端的换肤工具
+
+* **功能介绍**：这是一个为 Codex 桌面应用更换个性化主题皮肤的工具。它通过本机回环的 Chrome DevTools Protocol (CDP) 注入方式来实现，不修改官方的安装包或二进制文件。
+* **主要特点**：
+    * **真·可交互**：主题效果覆盖原生控件（如侧栏、建议卡、输入框），而非简单的静态背景图。
+    * **高度自定义**：用户可轻松替换图片，打造属于自己的专属主题。
+    * **一键可逆**：提供一键恢复功能，随时回归 Codex 官方原貌。
+    * **相对安全**：注入仅绑定本地地址 `127.0.0.1`。项目承诺不改动官方文件与签名，且与 API 设置相互独立，安全性较高。
+* **为何值得关注**：该项目因其独特的“氛围感编程”理念和安全的换肤方案而广受欢迎（获得 4,356 颗星）。它为用户提供了一种不破坏应用完整性的方式来个性化编码环境，满足了开发者对工具美观性和个性化的追求。
+
+**[View Repository / 查看仓库](https://github.com/Fei-Away/Codex-Dream-Skin)**
+
+### 🎬 Python for Beginners with Hands-On Projects
+**Channel:** freeCodeCamp.org
+*   A comprehensive, free course designed for absolute beginners to learn Python programming from scratch.
+*   Covers fundamental Python syntax, core programming concepts, and culminates in several hands-on projects to apply the learned skills.
+*   This is worth watching because it offers a structured, project-based learning path on a renowned educational platform, making it an ideal starting point for anyone new to coding.
+
+### 🎬 面向初学者的Python实战项目教程
+**频道:** freeCodeCamp.org
+*   一门面向完全零基础学习者的免费完整Python课程，从编程基础开始系统教学。
+*   内容涵盖Python核心语法、基础编程概念，并通过多个动手实战项目巩固所学知识。
+*   值得观看的原因是：它来自知名的免费教育平台，提供结构化、注重实践的学习路径，是编程新手入门的绝佳选择。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oDOw5tB3Udw)**
+
+### 🎬 So I've been using gpt-5.6 for awhile...
+**Channel:** Theo - t3․gg
+*   **What the video covers:** The creator shares their exclusive, early access experience with GPT-5.6, detailing extensive usage that incurred a massive inference bill of $180K-$240K within a short period before its public release.
+*   **Key topics discussed:** Early access to unreleased AI models, the real-world costs and scale of running powerful AI systems, first-hand performance evaluation and capabilities of GPT-5.6, practical applications and potential limitations.
+*   **Why it's worth watching:** This offers a rare, high-stakes firsthand perspective on a next-generation AI model from a major industry insider. It provides invaluable insights into both the technical performance and the staggering economic realities of cutting-edge AI, crucial for developers and businesses evaluating future tools.
+
+### 🎬 我已经用上GPT-5.6一段时间了……
+**频道:** Theo - t3․gg
+*   **视频内容概述:** 视频作者分享了他们独家提前使用GPT-5.6的体验，详述了在模型公开发布前，因大规模使用而产生了高达18万至24万美元的推理费用。
+*   **主要话题:** 未发布AI模型的提前访问权，运行强大AI系统的实际成本与规模，对GPT-5.6性能和能力的第一手评测，实际应用与潜在局限性。
+*   **为何值得观看:** 这是一个来自重要行业内部人士的、关于下一代AI模型的罕见高风险第一手视角。它提供了关于最前沿AI技术性能和惊人经济现实的宝贵见解，对于正在评估未来工具的开发者和企业至关重要。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mHG7K7QmQyU)**
+
+### 🎬 This Hack Effects Millions of Devices
+**Channel:** Low Level
+
+*   **What the video covers:** This video is an in-depth technical explanation of a newly discovered, critical cybersecurity vulnerability or exploit. It likely details the mechanics of a specific hack or exploit chain, demonstrating how it works at a low-level or hardware/software interface level, and quantifies its massive scale by explaining how it impacts millions of devices globally.
+*   **Key topics discussed:** The core vulnerability (e.g., a firmware bug, a driver flaw, a hardware backdoor), the method of exploitation, potential attack vectors, the affected device categories (e.g., IoT, smartphones, computers), and the potential consequences of widespread compromise.
+*   **Why it's worth watching:** For tech enthusiasts and professionals, this video provides a crucial understanding of a real-world, large-scale security threat. It demystifies complex hacking techniques, highlights the importance of patch management and hardware/software security, and informs viewers about risks to their own devices. The "Low Level" channel is known for deep technical breakdowns, making this a valuable resource beyond a simple news report.
+
+### 🎬 此漏洞影响数百万设备
+**频道:** Low Level
+
+*   **视频内容概述:** 本视频深入剖析一个新近发现的严重网络安全漏洞或利用方法。它从底层技术层面（如硬件/软件接口）详细解释了某种特定黑客攻击或漏洞利用链的工作原理，并说明了该漏洞如何大规模地影响全球数百万设备。
+*   **主要话题:** 核心漏洞（例如，固件缺陷、驱动漏洞、硬件后门）、漏洞利用方法、潜在攻击途径、受影响的设备类别（如物联网设备、智能手机、电脑），以及大规模入侵可能带来的后果。
+*   **为何值得观看:** 对于科技爱好者和专业人士而言，本视频提供了对真实世界、大规模安全威胁的关键理解。它揭开了复杂黑客技术的面纱，强调了补丁管理和硬件/软件安全的重要性，并告知观众其自身设备可能面临的风险。“Low Level”频道以深度技术解析著称，因此本视频的价值远超普通的新闻报道。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=E0A7IrJtpUY)**
+
+### 🎬 GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here’s the Winner)
+**Channel:** Peter Yang
+* **What the video covers:** This video provides a hands-on, real-world comparison between the newly released GPT-5.6 from OpenAI and Claude's Fable 5 model. The creator, Peter Yang, moves beyond spec sheets to test both AIs on six practical tasks to determine a clear winner for everyday use.
+* **Key topics discussed:** The core of the video is a direct feature-by-feature and performance-by-performance comparison. Key topics likely include: code generation quality, data analysis and summarization, creative writing and ideation, complex knowledge-based Q&A, reasoning and problem-solving, and possibly multi-modal or tool-use capabilities.
+* **Why it's worth watching:** This video answers the most pressing question for tech enthusiasts and professionals after a major AI release: "Which one should I actually use?" It offers practical, actionable insights based on concrete examples, helping viewers decide which model is better suited for their specific workflow, be it development, content creation, or research.
+
+### 🎬 GPT-5.6 对决 Claude Fable 5：我测试了6个真实用例（获胜者揭晓）
+**频道:** Peter Yang
+* **视频内容概述:** 本视频对新发布的OpenAI GPT-5.6与Claude的Fable 5模型进行了基于实际操作的直接对比。博主Peter Yang跳过参数规格，通过六项真实任务测试，旨在决出一个日常使用的最佳选择。
+* **主要话题:** 视频核心是逐项功能与性能的比较。主要话题可能包括：代码生成质量、数据分析与摘要、创意写作与头脑风暴、基于复杂知识的问答、逻辑推理与解决问题，以及可能的多模态或工具使用能力。
+* **为何值得观看:** 在重大AI更新后，这为科技爱好者和专业人士解答了最紧迫的问题：“我到底该用哪一个？”。它基于具体案例提供实用、可操作的见解，帮助观众根据自己（无论是开发、内容创作还是研究）的特定工作流程，决定哪个模型更合适。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8mY9wx_iMSU)**
+
