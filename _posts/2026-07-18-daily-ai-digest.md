@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 18, 2026"
 date: 2026-07-18
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -219,4 +219,178 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看:** 如果你有兴趣探索AI领域中超出知名应用的、非标准的潜在盈利机会，那么这个视频值得关注。它面向那些渴望以创新方式利用AI赚钱的观众。**请注意：** 该视频计划在未来日期（2026年7月）发布。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
+
+### **The Zilog Z80's 50th Anniversary**
+
+*   **Historical Significance:** The Zilog Z80 processor was officially launched in July 1976, marking its 50th anniversary. Its release coincided with a period between major historical events, such as the last Moon landing and the fall of the Berlin Wall.
+*   **Technical Impact & Legacy:** The Z80 was enormously successful, powering numerous 8-bit microcomputers, including early personal and home computers, as well as industrial embedded systems. It, along with the Intel 8080/8085, established a de facto hardware and software standard (CP/M, Microsoft BASIC).
+*   **Architectural Evolution:** The article traces the CPU's lineage, starting from the Datapoint 2200 terminal's TTL-based CPU, leading to the Intel 8008, then the improved 8080, and finally the Z80. Key improvements included a larger address space (16-bit), an external stack, and enhanced instruction sets.
+*   **Enduring Use & Clones:** The Z80 spawned many derivatives, famously the Sharp LR35902 used in the original Game Boy. Zilog continues to develop related microcontrollers like the eZ80 for industrial applications. The original Z80 saw such long-term use that Zilog only discontinued it recently.
+
+### **Zilog Z80 五十周年纪念**
+
+*   **历史意义：** Zilog Z80 处理器于 1976 年 7 月正式推出，标志着其诞生 50 周年。其发布恰逢人类最后一次登月与柏林墙倒塌等重大历史事件之间的时期。
+*   **技术影响与遗产：** Z80 极为成功，为众多 8 位微型计算机（包括早期的个人电脑和家用电脑）以及工业嵌入式系统提供动力。它与 Intel 8080/8085 一起，建立了事实上的硬件和软件标准（CP/M 操作系统和 Microsoft BASIC）。
+*   **架构演进：** 本文追溯了该 CPU 的谱系，从 Datapoint 2200 终端基于 TTL 的 CPU 开始，发展到 Intel 8008，再改进至 8080，最终诞生 Z80。关键改进包括更大的地址空间（16位）、外部堆栈以及增强的指令集。
+*   **持久应用与衍生型号：** Z80 衍生出许多变体，其中最著名的是用于初代 Game Boy 的 Sharp LR35902。Zilog 继续为工业应用开发相关微控制器，如 eZ80。由于原版 Z80 被长期使用，Zilog 直到最近才将其停产。
+
+**[Read Original / 阅读原文](https://goliath32.com/blog/z80.html)**
+
+### Learning to Run SQLite: Key Takeaways
+* **SQLite in Production is Viable but Demands Care**: The author confirms SQLite is suitable for small Django sites but emphasizes that it's a full-fledged, complex database requiring operational knowledge, especially when Django's ORM pushes it harder.
+* **Performance Can Be Drastically Improved with Simple Steps**: A slow full-text search query (5 seconds) was resolved to near-instant (0.05 seconds) by running the `ANALYZE` command, which provides statistics for the query planner to avoid inefficient, possibly quadratic, plans.
+* **Workflow Challenges Arise from Single-Writer Concurrency**: Long-running cleanup operations (like mass deletes) can lock the database, causing other workers to time out and crash. The solution is to batch operations to stay within timeout limits, highlighting a key difference from multi-writer databases like PostgreSQL.
+* **Backup Strategies Include Both Snapshot and Streaming Methods**: Two methods are described: 1) Creating a manual snapshot with `VACUUM INTO`, compressing it, and uploading via `restic` (with pruning), and 2) Using `litestream` for simpler, incremental replication. Both are backed up to AWS S3.
+* **Database Organization and Long-Term Viability**: Splitting tables into separate `.db` files was a successful tactic for a different project. The author's personal experience shows SQLite can run stably for years (since 2022) on small datasets with the Django ORM.
+
+### 学习运行SQLite：关键要点
+* **在生产环境中使用SQLite是可行的，但需要谨慎**：作者确认SQLite适用于小型Django网站，但强调它是一个功能完整的复杂数据库，需要运维知识，尤其是当Django的ORM使其承担更多工作时。
+* **通过简单步骤可大幅提升性能**：一个缓慢的全文搜索查询（耗时5秒），通过运行`ANALYZE`命令（为查询规划器生成统计信息）得到了解决，查询时间降至约0.05秒，避免了可能的二次方复杂度问题。
+* **单写入并发特性带来了工作流挑战**：长时间运行的清理操作（如批量删除）可能会锁定数据库，导致其他工作者因超时（设置了5秒超时）而崩溃。解决方案是分批操作以避免超时，这凸显了与PostgreSQL等多写入数据库的关键区别。
+* **备份策略包括快照和流式两种方法**：介绍了两种方法：1）使用`VACUUM INTO`创建手动快照，压缩后通过`restic`上传（并修剪旧备份）；2）使用`litestream`进行更简单的增量复制。两者均备份到AWS S3。
+* **数据库组织与长期稳定性**：将表拆分到单独的`.db`文件中是另一个项目的成功策略。作者的个人经验表明，SQLite在小数据集和Django ORM环境下，可以稳定运行多年（自2022年起）。
+
+**[Read Original / 阅读原文](https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/)**
+
+### Frame: Custom Linux X Server in Assembly
+* The author developed "frame," a custom X server written entirely in Assembly, totaling ~20,000 lines of code.
+* It operates with no dependencies, libraries, or garbage collector, emphasizing minimal resource usage and idle efficiency.
+* The full software stack (kernel, frame, window manager, terminal, shell) is implemented in Assembly, replacing much larger conventional tools.
+* Performance tests show frame consumes significantly less CPU than the standard Xorg server while idle, contributing to better laptop battery life.
+* Despite being young, the project is stable enough for daily use, including web browsing and photo editing applications.
+
+### Frame：首个Linux汇编X服务器
+* 作者用纯汇编语言开发了名为"frame"的自定义X服务器，代码量约2万行。
+* 该程序无任何依赖项、库文件或垃圾回收器，专注于资源最小化和空闲状态下的高效运行。
+* 完整的软件栈（内核、frame、窗口管理器、终端、Shell）均采用汇编语言实现，替代了体积大得多的常规工具。
+* 性能测试表明，frame在空闲状态下的CPU消耗远低于标准Xorg服务器，显著延长了笔记本电池续航。
+* 虽然项目尚处初期阶段，但稳定性足以支持日常使用，包括网页浏览和图像编辑等应用。
+
+**[Read Original / 阅读原文](https://isene.org/2026/07/Frame.html)**
+
+### Nutlope/hallmark - Anti-AI-Slop Design Skill for AI Code Editors
+*   **What it does:** Hallmark is a design "skill" or rule-set for AI coding assistants (Claude Code, Cursor, Codex) that generates user interfaces and websites designed to look unique and human-made, actively avoiding common, recognizable "AI-generated" aesthetic patterns ("AI slop").
+*   **Key features:** It offers 20 distinct visual themes, four operational verbs (build, audit, redesign, study) for different tasks, a rigorous 57-point "slop-test" to filter out generic designs, and a "Custom" mode for creating entirely bespoke palettes, typography, and layouts from scratch.
+*   **Why it's notable:** It directly addresses a growing pain point—AI-generated UIs looking homogeneous and generic—by providing a tool for creators who want unique, authentic-feeling designs. Its rapid gain of nearly 1,500 stars in one day highlights its relevance and popularity in the developer and designer community seeking to move beyond default AI outputs.
+
+### Nutlope/hallmark - 用于AI编程工具的反AI套路设计技能
+*   **功能介绍：** Hallmark 是一个适用于Claude Code、Cursor、Codex等AI编程助手的“设计技能”或规则集。它能生成看起来独特、具有人类设计感的用户界面和网站，主动避免那些常见的、可识别的“AI生成”美学模式（即“AI套路”）。
+*   **主要特点：** 提供20种独特的视觉主题；包含构建、审计、重设计、研究四种操作模式；拥有严格的57点“反套路测试”以过滤掉泛泛的设计；以及支持“自定义”模式，从零开始创建完全定制的配色方案、字体和布局。
+*   **为何值得关注：** 它直接解决了一个日益凸显的痛点——AI生成的界面千篇一律、缺乏个性。该工具为希望获得独特、真实设计感的创作者提供了解决方案。其在一天内获得近1500颗星的快速增长，也凸显了它在开发者与设计师社群中的相关性和受欢迎程度，他们渴望突破AI的默认输出。
+
+**[View Repository / 查看仓库](https://github.com/Nutlope/hallmark)**
+
+### github/copilot-sdk - Multi-platform SDK for integrating GitHub Copilot Agent into apps and services
+*   **What it does**: It provides official, multi-language SDKs (for Python, TypeScript, Go, .NET, Java, Rust) that allow developers to embed the powerful GitHub Copilot AI agent directly into their applications. It acts as a client to the Copilot CLI, enabling programmatic control over agentic workflows like planning, tool invocation, and file editing.
+*   **Key features**: Supports integration with six popular programming languages. It encapsulates the production-tested Copilot CLI engine, automatically manages the CLI process lifecycle, and offers flexible authentication including "Bring Your Own Key" (BYOK) with third-party LLM providers. It exposes default tools and allows for custom agent and tool creation.
+*   **Why it's notable**: This SDK significantly lowers the barrier for developers to leverage advanced AI agent capabilities within their own software. By providing a managed, official interface to the Copilot runtime, it enables rapid integration of sophisticated AI-driven features without the need to build complex orchestration from scratch.
+
+### github/copilot-sdk - 用于将 GitHub Copilot Agent 集成到应用和服务中的多平台 SDK
+*   **功能介绍**: 提供官方的多语言SDK（支持Python、TypeScript、Go、.NET、Java、Rust），允许开发者将强大的GitHub Copilot AI代理直接嵌入到自己的应用中。它作为Copilot CLI的客户端，支持对规划、工具调用和文件编辑等代理工作流进行编程控制。
+*   **主要特点**: 支持六种主流编程语言的集成。封装了经过生产测试的Copilot CLI引擎，自动管理CLI进程生命周期，并提供灵活的认证方式，包括支持第三方LLM提供商的“自带密钥”（BYOK）。它暴露了默认工具集，并支持创建自定义代理和工具。
+*   **为何值得关注**: 该SDK极大地降低了开发者在自有软件中利用高级AI代理能力的门槛。通过提供一个托管的、官方的Copilot运行时接口，它使开发者能够快速集成复杂的AI驱动功能，而无需从头构建复杂的编排系统。
+
+**[View Repository / 查看仓库](https://github.com/github/copilot-sdk)**
+
+### AVAL - An Open Format for Interactive Web Video with State Machines
+* **What it does**: AVAL is a web format and runtime for creating short, prerendered motion graphics with seamless loops. It treats a single logical animation as a "codec bundle," providing an `<aval-player>` web component that manages multiple video codecs (AV1, VP9, H.265, H.264) and allows developers to programmatically control named animation states without media seeking.
+* **Key features**: Built-in deterministic state machine for named states and triggers, frame-accurate transitions, packed-alpha transparency, automatic multi-codec support with a priority-based source fallback system, and a comprehensive toolchain (compiler, runtime, player element).
+* **Why it's notable**: It solves a specific gap in web animation by providing a standard for interactive, stateful video loops, moving beyond simple `<video>` tags. Its approach to handling codecs and fallbacks elegantly, along with its focus on precise control and developer experience, makes it a significant and trending tool for creating high-quality, interactive web content.
+
+### AVAL - 一种具有状态机的交互式网络视频开源格式
+* **功能介绍**：AVAL 是一个用于在网络上创建短时预制动态图形并实现无缝循环的网络格式和运行时环境。它将单个逻辑动画发布为“编解码器包”，提供一个 `<aval-player>` Web 组件，该组件管理多种视频编解码器（AV1、VP9、H.265、H.264），并允许开发者通过编程方式控制命名动画状态，无需进行媒体搜索。
+* **主要特点**：内置确定性状态机，支持命名状态与触发器；具备帧级精度的过渡效果；支持打包Alpha透明通道；自动处理多编解码器支持，并基于优先级的源回退系统；提供完整的工具链（编译器、运行时、播放器组件）。
+* **为何值得关注**：它通过提供一个用于交互式、有状态视频循环的标准，填补了网络动画领域的特定空白，超越了简单的 `<video>` 标签。其优雅处理编解码器和回退问题的方式，以及对精确控制和开发者体验的关注，使其成为创建高质量交互式网络内容的重要且备受关注的工具。
+
+**[View Repository / 查看仓库](https://github.com/pixel-point/aval)**
+
+### **littledivy/mimic** - *Intercept app traffic and generate a Python API client automatically.*
+*   **What it does:** mimic is a tool that captures the network traffic of any application and uses an AI (Claude) to automatically generate a plain Python client library for that app's API. This allows you to interact with the app programmatically, as if you had written a client library yourself.
+*   **Key features:**
+    *   **Automated Client Generation:** Captures live traffic, extracts authentication, and generates a named, editable Python file.
+    *   **Multiple Capture Backends:** Supports iOS via `mitmproxy`, web apps via HAR files, and manual cURL requests.
+    *   **Simple Session Management:** Reuses captured sessions and handles authentication tokens, with built-in retry logic for token refresh on 401 errors.
+    *   **Standalone Library:** Provides a core `mimic.Session` for manual HTTP requests (`.get()`, `.post()`) without code generation.
+*   **Why it's notable:** It solves the tedious problem of reverse-engineering app APIs by automating both traffic capture and client code generation. This is a powerful shortcut for developers and power users who want to automate interactions with their own accounts on apps like Hinge (as shown in the example). Its trendiness comes from its clever use of AI to bridge the gap between network analysis and usable code.
+
+### **littledivy/mimic** - *拦截应用流量并自动生成 Python API 客户端库。*
+*   **功能介绍：** mimic 是一个工具，可以捕获任意应用程序的网络流量，并利用 AI（Claude）自动生成对应应用 API 的纯 Python 客户端库。这使你能够像调用库函数一样，通过代码与该应用进行交互。
+*   **主要特点：**
+    *   **自动生成客户端：** 捕获实时流量，提取认证信息，并生成一个可编辑的、带有命名方法的 Python 文件。
+    *   **多捕获后端：** 支持通过 `mitmproxy` 捕获 iOS 应用流量，通过 HAR 文件捕获 Web 应用流量，以及通过粘贴 cURL 命令。
+    *   **简易会话管理：** 复用已捕获的会话，处理认证令牌，并在遇到 401 错误时自动重试并刷新令牌。
+    *   **独立库：** 提供核心 `mimic.Session`，可手动发送 HTTP 请求（`.get()`, `.post()`），无需代码生成。
+*   **为何值得关注：** 它通过自动化流量捕获和客户端代码生成，解决了逆向工程应用 API 这一繁琐过程，是一个强大的捷径。开发者和高级用户可以利用它，以编程方式自动化操作自己在如 Hinge 等应用上的账户。其流行源于它巧妙地运用 AI，将网络分析与可用代码生成连接起来。
+
+**[View Repository / 查看仓库](https://github.com/littledivy/mimic)**
+
+### 🎬 OpenAI is being sued for stealing, again…
+**Channel:** Fireship
+*   The video dives into the latest legal battle where OpenAI is accused of using copyrighted data to train its models, marking another instance of the company facing intellectual property lawsuits.
+*   Key topics include the nature of the allegations, the legal arguments from both sides, and the broader implications for AI training data, copyright law, and the future of generative AI development.
+*   It's worth watching for a concise, up-to-date breakdown of a pivotal legal case shaping the AI industry, delivered with Fireship's characteristic wit and clarity.
+
+### 🎬 OpenAI又被起诉窃取数据了…
+**频道:** Fireship
+*   本视频深入探讨了OpenAI因被指控使用受版权保护的数据训练模型而再次面临诉讼的最新法律纠纷。
+*   主要话题包括指控的性质、双方的法律论点，以及此事对AI训练数据、版权法和生成式AI未来发展产生的广泛影响。
+*   值得观看，因为它以Fireship特有的简洁和犀利风格，对一场正在塑造AI行业的关键法律案件进行了清晰、及时的剖析。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5D4Zqp9GLSc)**
+
+### 🎬 Create An App Without Coding 😱 #factoholic #facts #factholic #replit
+**Channel:** What If Hub
+*   **What the video covers:** This video is a tutorial demonstrating how to build and launch a functional mobile or web application without writing a single line of traditional programming code. It focuses on using AI-powered platforms, likely featuring **Replit** (as indicated by the hashtag) and other no-code/low-code tools.
+*   **Key topics discussed:**
+    *   The concept of no-code/low-code development.
+    *   Leveraging AI (possibly AI assistants or generators) to design, code, and deploy an app.
+    *   A hands-on walkthrough of a specific platform (like Replit) to turn an idea into a working product.
+    *   The democratization of app creation for non-technical users.
+*   **Why it's worth watching:** It's a highly accessible guide for entrepreneurs, creators, and hobbyists who have app ideas but lack coding skills. It showcases the powerful and increasingly mainstream role of AI in software development, offering a practical shortcut from concept to deployment. This is a compelling look at the future of building technology.
+
+### 🎬 无需编码创建应用😱
+**频道:** What If Hub
+*   **视频内容概述:** 本视频是一个教程，旨在展示如何在不编写一行传统代码的情况下，构建并发布一个功能完整的移动或Web应用。它重点介绍了如何使用 **Replit**（如标签所示）等AI驱动的无代码/低代码平台来实现这一目标。
+*   **主要话题:**
+    *   无代码/低代码开发的概念。
+    *   利用AI（可能是AI助手或生成器）来设计、编码和部署应用。
+    *   使用特定平台（如Replit）将想法转化为可用产品的实践演示。
+    *   技术民主化，让非技术人员也能参与应用创造。
+*   **为何值得观看:** 对于有应用创意但缺乏编程技能的创业者、创作者和爱好者来说，这是一个极具实用价值的指南。它生动展示了AI在软件开发中日益主流化的强大作用，提供了一条从概念到部署的快捷途径。本视频是对未来技术构建方式的一次精彩呈现。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tNKAebAfm9Q)**
+
+### 🎬 The 3 WORST Programming Languages
+**Channel:** commonLuke
+*   The video presents a list and critical analysis of three programming languages that the creator considers the worst.
+*   It likely covers specific criticisms of each language, such as poor design, difficult syntax, limited use cases, or frustrating developer experience.
+*   It's worth watching for developers curious about language design pitfalls, to avoid tools with significant drawbacks, or simply for an engaging, opinionated tech discussion.
+
+### 🎬 最糟糕的三种编程语言
+**频道:** commonLuke
+*   视频盘点并批判性地分析了三种被创作者视为最糟糕的编程语言。
+*   可能涵盖对每种语言的具体批评，例如糟糕的设计、晦涩的语法、有限的应用场景或令人沮丧的开发体验。
+*   值得观看，尤其是对于对语言设计缺陷感兴趣的开发者，或想了解应避免哪些存在显著缺点的工具，亦或是为了享受一场观点鲜明的技术讨论。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=y_zOPiuEdYY)**
+
+### 🎬 I Built $10000 Website With Free AI Tools In 15 Minutes || No Coding || Free Resources
+**Channel:** Creativo
+*   **What the video covers:** A step-by-step tutorial on creating a professional, high-value (estimated $10,000) travel website featuring stunning scroll animations, all for the city of Paris.
+*   **Key topics discussed:**
+    *   Using 100% free AI-powered tools for website generation and design.
+    *   A no-code workflow that makes advanced web design accessible to beginners.
+    *   Efficiently building a complete, polished website in approximately 15 minutes.
+*   **Why it's worth watching:** This video is a powerful demonstration of the democratization of web development. It shows viewers how to leverage cutting-edge, free AI resources to bypass traditional technical barriers (coding) and create visually impressive digital projects quickly and cost-effectively.
+
+### 🎬 我用免费AI工具在15分钟内打造了价值1万美元的网站 || 无需编码 || 免费资源
+**频道:** Creativo
+*   **视频内容概述:** 本视频是一份分步教程，展示如何使用完全免费的AI工具，为巴黎这座旅游城市打造一个具有精美滚动动画的专业级高端网站（估值约1万美元）。
+*   **主要话题:**
+    *   如何利用100%免费的AI工具进行网站生成与设计。
+    *   无需任何编码知识的网站构建工作流程，让初学者也能轻松上手。
+    *   如何在约15分钟内高效地完成一个完整、精美的网站。
+*   **为何值得观看:** 本视频有力地展示了网站开发技术的民主化趋势。它向观众揭示了如何利用前沿的免费AI资源，绕过传统的技术门槛（编码），快速且低成本地创建出视觉效果惊艳的数字作品。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nPxMF2YV77I)**
 
