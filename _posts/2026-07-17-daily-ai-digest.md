@@ -1,214 +1,261 @@
-### English Summary: Roman Concrete's Remarkable Durability
-*   Roman concrete structures often last for millennia, unlike modern concrete which typically fails within about 100 years.
-*   New research on a sample from Hadrian's Villa suggests a key process called carbonation helps seal cracks and strengthen the material over time.
-*   This self-healing mechanism, forming calcite from atmospheric carbon dioxide, could inspire more sustainable and resilient modern building materials.
-
-### 中文摘要：罗马混凝土的卓越耐久性
-*   罗马混凝土建筑常能屹立千年，而现代混凝土通常在大约100年内就会损坏。
-*   对哈德良别墅样本的新研究表明，一种名为碳化作用的关键过程能随着时间的推移密封裂缝并增强材料强度。
-*   这种通过大气二氧化碳形成方解石的自愈机制，可能启发研发更可持续、更具韧性的现代建筑材料。
-
-**[Read Original / 阅读原文](https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/)**
-
 ### Kimi K3: Open Frontier Intelligence
-
-*   Kimi K3 is introduced as the most capable model to date, a 2.8-trillion-parameter open model designed for frontier intelligence.
-*   The model features a 1-million-token context window, native vision capabilities, and is built on new architectural innovations: Kimi Delta Attention (KDA) and Attention Residuals (AttnRes).
-*   While it trails the most powerful proprietary models, Kimi K3 demonstrates top-tier performance in evaluations, especially in long-horizon coding, knowledge work, and reasoning.
-*   It is available now on various platforms, with the full model weights scheduled for release by July 27, 2026, alongside a detailed technical report.
+*   Introducing Kimi K3, a 2.8-trillion parameter model featuring native vision and a 1-million token context window, designed for frontier intelligence in long-horizon coding, knowledge work, and reasoning.
+*   The model demonstrates frontier-level performance in its evaluation suite, though its overall performance currently trails the most powerful proprietary models like Claude Fable 5 and GPT 5.6 Sol.
+*   Built on architectural innovations like Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with a highly scaled Mixture of Experts (MoE) system, it achieves an estimated 2.5x improvement in scaling efficiency over its predecessor.
+*   It is the world's first open 3T-class model. Full model weights will be released by July 27, 2026, with a technical report to follow.
 
 ### Kimi K3：开放前沿智能
-
-*   Kimi K3 被定位为迄今最强大的模型，是一个 2.8 万亿参数的开放模型，旨在提供前沿智能。
-*   该模型具备 100 万 token 的上下文窗口、原生视觉能力，并基于两项新架构创新构建：Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes)。
-*   尽管整体性能仍落后于最强大的专有模型，但 Kimi K3 在评测套件中展示了顶级性能，特别是在长周期编码、知识工作和推理方面。
-*   模型现已在多个平台上线，完整的模型权重计划于 2026 年 7 月 27 日前发布，届时将一同发布详细的技术报告。
+*   介绍 Kimi K3，这是一个拥有 2.8 万亿参数的模型，具备原生视觉能力和 100 万 token 的上下文窗口，旨在为长程编码、知识工作和推理提供前沿智能。
+*   该模型在其评估套件中表现出前沿水平的性能，尽管其整体性能目前仍落后于 Claude Fable 5 和 GPT 5.6 Sol 等最强大的专有模型。
+*   基于 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 等架构创新构建，并采用高度扩展的专家混合（MoE）系统，与前代模型相比，实现了约 2.5 倍的扩展效率提升。
+*   这是全球首个开放的 3T 级模型。完整的模型权重将于 2026 年 7 月 27 日前发布，届时将同步发布技术报告。
 
 **[Read Original / 阅读原文](https://www.kimi.com/blog/kimi-k3)**
 
-<!-- [Title-Only] -->
-### An Engineer's Guide to USB Type-C (2024)
-*   **Brief description:** Based on the title, this article is likely a comprehensive technical guide from Texas Instruments (TI) focused on the USB Type-C standard as of 2024. It probably covers the latest specifications, electrical characteristics, protocol details (like USB4, Power Delivery), and practical implementation considerations for hardware engineers.
-*   **Why it might be interesting to readers:** For engineers and developers, USB Type-C is a complex and constantly evolving interface. A dedicated guide from a major semiconductor company like TI is valuable for understanding best practices, common pitfalls, and the state-of-the-art for designing robust USB-C connectivity in modern devices.
+### Roman Concrete's Enduring Secrets
+*   The durability of ancient Roman concrete, which lasts millennia, is now linked to a chemical process called **carbonation**, in addition to the known pozzolanic reaction.
+*   Researchers analyzed an original, undisturbed 1,900-year-old sample from a latrine at **Hadrian's Villa** in Italy, providing a unique look at the material's natural state.
+*   They discovered that **calcite**, formed when atmospheric CO₂ reacts with calcium compounds, acts as the primary binding agent, filling and sealing cracks over time.
+*   Understanding this process could lead to the development of more **sustainable and resilient modern concrete**, which is a major source of global carbon emissions.
 
-### 工程师的USB Type-C指南（2024年）
-*   **根据标题推测的文章内容简介：** 标题表明这是一份来自德州仪器（TI）的综合技术指南，专注于截至2024年的USB Type-C标准。内容很可能涵盖最新的规范、电气特性、协议细节（如USB4、Power Delivery），以及为硬件工程师提供的实际实施注意事项。
-*   **为何值得关注：** 对于工程师和开发者而言，USB Type-C是一个复杂且不断演进的接口。像TI这样的主要半导体公司发布的专门指南，对于理解在现代设备中设计稳健USB-C连接的最佳实践、常见陷阱和最新技术极具参考价值。
+### 罗马混凝土的千年秘密
+*   古罗马混凝土的非凡耐久性，现在被发现与一种名为**碳化作用**的化学过程密切相关，这与已知的火山灰反应相辅相成。
+*   研究人员从意大利**哈德良别墅**一处有1900年历史的厕所中提取了未经扰动的原始样本，这为研究材料的自然状态提供了难得的机会。
+*   分析发现，当大气二氧化碳与混凝土中的钙化合物反应时形成的**方解石**是主要粘结剂，它能随时间推移填补并密封微小裂缝。
+*   理解这一机制有望帮助研发出更**环保、更坚固的现代混凝土**，因为当前混凝土生产是全球主要的碳排放源之一。
 
-**[Read Original / 阅读原文](https://www.ti.com/lit/eb/slyy228/slyy228.pdf?ts=1759892558029)**
+**[Read Original / 阅读原文](https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/)**
+
+### Pebble Mega Update - July 2026
+
+*   Over 23,000 Pebble Time 2 watches have been built since mass production began in late March, fulfilling over 80% of pre-orders.
+*   Remaining pre-orders are scheduled to ship by the end of July: Grey and Blue on July 28, Black and Red on July 31.
+*   Current inventory will soon be in-stock with no wait; customers are encouraged to order soon as the stock is limited.
+*   Major software updates from the four-person team have focused on:
+    *   **Battery Life:** Optimizations have increased median battery life for Pebble 2 Duo to over 30 days and Pebble Time 2 to around 21 days. A new "Battery Saver" backlight mode is available.
+    *   **Apps and SDK:** New features developed with the Moddable team include a Touch Screen API, Speaker API, RGB Backlight API, Alloy (native JS apps with FFI), and a powerful JS debugger. The community has already created over 2,100 apps and watchfaces.
+    *   **Index 01:** The first version of Index 01 functionality is running in the Pebble mobile app, featuring syncing to services like iOS Reminders and Obsidian, webhook support, and optional encrypted cloud backup.
+    *   **Stability:** Hundreds of improvements have been made based on user bug reports, including a major technical effort to reverse PPoGATT to enable future features like Notification Forwarding on iOS.
+*   Thanks to community contributions for major improvements, including health integrations (Apple HealthKit, Google sync), better light sensor algorithms, and numerous bug fixes.
+
+### Pebble 2026年7月重大更新
+
+*   自三月底大规模生产以来，已制造超过23,000块Pebble Time 2手表，完成了超过80%的预订单。
+*   剩余的预订单计划在七月底前发货：灰色和蓝色款于7月28日，黑色和红色款于7月31日。
+*   当前库存很快将变为现货无需等待；建议有意向的客户尽快下单，因为库存有限。
+*   四人软件团队进行了重大更新，主要集中在：
+    *   **电池续航：** 优化使Pebble 2 Duo的中位电池续航时间提升至30天以上，Pebble Time 2约为21天。新增了“省电”背光模式。
+    *   **应用与SDK：** 与Moddable团队合作开发了新功能，包括触摸屏API、扬声器API、RGB背光API、Alloy（原生JS应用，支持FFI）以及强大的JS调试器。社区已创建超过2,100款应用和表盘。
+    *   **Index 01：** Index 01功能的第一个版本已在Pebble移动应用中运行，支持与iOS提醒事项、Obsidian等服务同步，通过Webhook发送录音或转录，并支持可选的加密云备份。
+    *   **稳定性：** 根据用户错误报告进行了数百项改进，包括一项重要的技术工作以反转PPoGATT，从而为未来在iOS上实现“通知转发”等功能铺平道路。
+*   感谢社区开发者的重大贡献，包括健康功能集成（Apple HealthKit、Google同步）、改进的光线传感器算法以及众多错误修复。
+
+**[Read Original / 阅读原文](https://repebble.com/blog/pebble-mega-update-july-2026)**
 
 
 ## 🔥 GitHub Trending / GitHub 热门项目
 
-### Apache Ossie - An industry initiative to standardize semantic model exchange for analytics, AI, and BI.
-* **What it does**: Apache Ossie provides a single, vendor-neutral specification (using JSON/YAML) for defining and exchanging semantic models (e.g., KPIs, business logic) across diverse data tools. This eliminates the "semantic fragmentation" where the same concept is defined differently across platforms.
+### Apache Ossie - A Vendor-Neutral Standard for Semantic Metadata Exchange
+* **What it does**: Apache Ossie is an open-source project that defines a single, machine-readable specification (in JSON and YAML) for exchanging semantic models across data analytics, AI, and BI platforms. It aims to create a single source of truth for metrics and business logic, eliminating inconsistencies between different tools.
 * **Key features**:
-    *   A core machine-readable specification (`spec.md`, `spec.yaml`).
-    *   Reference converters for formats like dbt, GoodData, Polaris, and Salesforce.
-    *   Example semantic models and validation tooling.
-    *   Aims to be the single source of truth for semantic data definitions.
-* **Why it's notable**: It tackles a critical interoperability problem in the modern data stack. By standardizing semantic metadata, it promises to improve efficiency (no more manual reconciliation), ensure consistency in business logic, and enhance the reliability of AI agents that depend on this context. Its rapid gain of 60 stars in one day indicates strong industry interest in solving this fundamental challenge.
+    * **Core Specification**: A standardized, open schema (`spec.yaml`, `osi-schema.json`) for semantic models.
+    * **Interoperability**: Reference converters to translate between Ossie and formats from dbt, GoodData, Polaris, and others.
+    * **Validation Tooling**: Tools to validate any semantic model against the Ossie specification.
+    * **Vendor Neutrality**: Designed to be agnostic to specific tools, promoting collaboration across the ecosystem.
+* **Why it's notable**: It tackles the critical industry problem of semantic fragmentation, where the same KPI is defined differently across tools, causing inefficiency and unreliable AI outputs. Its adoption as an Apache Software Foundation (ASF) incubating project and recent surge in popularity (60 new stars) indicate significant community momentum and recognition of its potential to streamline the modern data stack.
 
-### Apache Ossie - 一项旨在标准化分析、AI和商业智能平台间语义模型交换的行业倡议。
-* **功能介绍**: Apache Ossie 提供了一个单一、供应商中立的规范（使用JSON/YAML），用于在多样化数据工具间定义和交换语义模型（例如，KPI、业务逻辑）。这旨在解决当前数据工具中普遍存在的“语义碎片化”问题，即同一概念在不同平台上的定义不一致。
+### Apache Ossie - 一个用于语义元数据交换的厂商中立标准
+* **功能介绍**: Apache Ossie 是一个开源项目，为数据科学、人工智能和商业智能平台之间的语义模型交换定义了一个统一的、机器可读的规范（采用 JSON 和 YAML 格式）。它旨在为指标和业务逻辑建立一个单一的真实数据源，消除不同工具间的定义不一致问题。
 * **主要特点**:
-    *   提供核心的机器可读规范（`spec.md`, `spec.yaml`）。
-    *   包含针对 dbt, GoodData, Polaris, Salesforce 等格式的参考转换器。
-    *   提供示例语义模型和验证工具。
-    *   致力于成为语义数据定义的唯一事实来源。
-*   **为何值得关注**: 它直击现代数据栈中一个关键的互操作性难题。通过标准化语义元数据，它有望提升效率（消除手动调和工作）、确保业务逻辑的一致性，并增强依赖这些上下文的AI代理的可靠性。其一天内获得60颗星的增长速度，表明行业对解决这一根本性挑战有着强烈的兴趣。
+    * **核心规范**: 一个标准化的、开放的语义模型 schema（`spec.yaml`、`osi-schema.json`）。
+    * **互操作性**: 提供参考转换器，可在 Ossie 与 dbt、GoodData、Polaris 等其他格式之间进行转换。
+    * **验证工具**: 提供验证任何语义模型是否符合 Ossie 规范的工具。
+    * **厂商中立**: 设计上独立于特定工具，促进整个生态系统内的协作。
+* **为何值得关注**: 它直面并试图解决数据领域的核心痛点——语义碎片化（即同一个 KPI 在不同工具中定义不同），这会导致工作效率低下和人工智能输出不可靠。该项目被Apache软件基金会（ASF）接纳为孵化项目，以及近期人气的快速增长（新增 60 颗星），都标志着其巨大的社区发展潜力和被广泛认可的、能够简化现代数据技术栈的价值。
 
 **[View Repository / 查看仓库](https://github.com/apache/ossie)**
 
-### Hallmark - Anti-AI Design Skill for Code Editors
-*   **What it does**: Hallmark is a design skill for AI coding assistants like Claude Code, Cursor, and Codex. It generates user interface code (HTML/CSS) that is explicitly designed to avoid looking like typical AI-generated ("AI-slop") outputs.
-*   **Key features**: It includes 20 distinct visual themes, a "Custom" mode for bespoke designs, and a rigorous 57-point "slop-test" to reject common AI patterns. It provides four core functions: building new UI, auditing existing code, redesigning pages, and studying design DNA from screenshots.
-*   **Why it's notable**: It solves a growing problem of homogenized AI-generated aesthetics. Its rapid rise in stars (3,372 in a day) indicates strong community interest in tools that create more unique and human-feeling designs from AI workflows. It moves beyond basic templating to offer structured creativity.
+### Hallmark - Anti-AI-Slop Design Skill for AI Coding Assistants
+* **What it does**: Hallmark is a design skill that integrates with AI coding tools (Claude Code, Cursor, Codex) to generate web UI that deliberately avoids looking generic or "AI-generated." It selects unique macrostructures, applies a design theme, and runs a suite of quality checks to ensure the output is distinctive.
+* **Key features**:
+    * **Four core commands**: `build` (default), `audit`, `redesign`, and `study` for creating, analyzing, and learning from designs.
+    * **20+ built-in themes** and a **Custom** mode for fully bespoke designs based on creative briefs.
+    * **57 "slop-test" gates** and a self-critique process to filter out common AI design patterns.
+    * **Generates self-contained HTML/CSS files**, each with a unique structure and style.
+* **Why it's notable**: It directly tackles the prevalent problem of homogenous, template-like AI output. By enforcing variability and applying rigorous design standards, it enables developers to quickly produce professional, unique websites that don't rely on repetitive AI-generated patterns. Its integration with popular AI coding assistants makes it a practical tool for modern development workflows.
 
-### Hallmark - 面向代码编辑器的反AI设计技能
-*   **功能介绍**：Hallmark 是一个为 Claude Code、Cursor 和 Codex 等AI编程助手设计的设计技能。它能生成用户界面代码（HTML/CSS），其核心目标是避免产出具有典型AI生成（"AI烂俗"）风格的内容。
-*   **主要特点**：包含20种不同的视觉主题和一个用于定制化设计的“Custom”模式。具备严格的57项“防烂俗测试”以规避常见的AI设计模式。提供四种核心功能：构建新界面、审计现有代码、重新设计页面以及从截图中提取设计DNA。
-*   **为何值得关注**：它针对并解决了AI生成设计日益同质化的问题。其星标数量的急速增长（当日超过3,300）表明社区对这类能从AI工作流中创造出更独特、更具人文感的设计工具有着强烈的需求。它超越了基础模板，提供了结构化的创意方法。
+### Hallmark - 为AI编程助手打造的反AI同质化设计技能
+* **功能介绍**：Hallmark 是一款设计技能，可与 AI 编程工具（Claude Code、Cursor、Codex）集成，专门用于生成网页用户界面，旨在刻意避免设计看起来千篇一律或具有典型的“AI生成感”。它会为不同的设计简报选择独特的宏观结构，应用一套设计主题，并运行一系列质量检查以确保输出的独特性。
+* **主要特点**：
+    * **四项核心命令**：`build`（默认）、`audit`、`redesign` 和 `study`，用于创建、分析和学习设计。
+    * **超过20个内置主题**以及一个 **Custom**（自定义）模式，可根据创意简报进行完全定制设计。
+    * 包含 **57项“防同质化”测试门控**和一个自我批评流程，用于过滤常见的AI设计模式。
+    * 生成**独立自包含的HTML/CSS文件**，每个文件都拥有独特的结构和样式。
+* **为何值得关注**：它直接解决了当前AI输出普遍同质化、模板化的痛点。通过强制性的设计变化和严格的标准执行，使开发者能够快速产出专业且独特的网站，避免陷入重复的AI生成模式。由于其与主流AI编程助手紧密集成，使其成为现代开发工作流中的一个实用工具。
 
 **[View Repository / 查看仓库](https://github.com/Nutlope/hallmark)**
 
-### OpenCut - 开源视频编辑器，CapCut的替代品
-* **功能介绍**：OpenCut是一个正在全面重写中的免费、开源视频编辑器，旨在为Web、桌面和移动端提供一体化的创作工具。新版本将提供编辑器API、一等公民的第三方插件支持、基于Rust核心的跨平台能力（桌面、移动、浏览器）、用于AI代理的MCP服务器、无头自动化模式以及编辑器内的脚本标签。当前可用的“经典版”仍可通过原有网站访问。
-* **主要特点**：
-    * **完全开源**：采用MIT许可证，代码透明。
-    * **跨平台野心**：旨在通过同一代码库支持桌面、移动端和网页浏览器。
-    * **插件优先架构**：新版设计将第三方插件作为核心功能。
-    * **面向未来**：规划了AI集成（MCP服务器）和自动化（无头模式）等先进特性。
-* **为何值得关注**：它直接对标流行的闭源视频编辑器CapCut，承诺提供一个免费、强大且可自由定制的开源替代方案。其重写计划展现的宏大架构（如Rust核心、插件系统、AI支持）和快速获得的关注（单日超3500星）表明它有潜力成为创作者工具领域的一个重要开源项目。
+### OpenCut - Open-source CapCut alternative
+*   **What it does:** OpenCut is a free and open-source video editor designed to be a community-driven alternative to CapCut, offering editing capabilities for the web, desktop, and mobile platforms.
+*   **Key features:** It is currently being rewritten with a modern, scalable architecture. Key upcoming features include a plugin-first system for third-party extensions, a unified Rust core for cross-platform deployment, an MCP server for AI agent integration, headless automation, and a built-in scripting interface.
+*   **Why it's notable:** Its ambitious rewrite promises a professional-grade, fully extensible video editing platform built entirely in the open. The rapid star gain (over 3,500 in a day) indicates strong community interest in a truly open and powerful video editing tool, potentially democratizing access to advanced editing features.
 
-### OpenCut - 开源视频编辑器，CapCut的开源替代方案
-* **功能介绍**：OpenCut是一款正在从头重写的免费开源视频编辑器，目标是为网页、桌面和移动端提供一体化的解决方案。新版将引入编辑器API、原生的第三方插件支持、基于Rust核心的跨平台应用、用于AI代理的MCP服务器、无头自动化模式以及编辑器内置脚本功能。目前“经典版”仍可正常使用。
-* **主要特点**：
-    * **开源自由**：项目在MIT许可证下完全开源。
-    * **全平台覆盖**：旨在用一套代码库同时支持桌面、移动和浏览器端。
-    * **插件化设计**：新版架构以插件为核心，方便扩展。
-    * **前瞻性功能**：规划了AI集成和批处理自动化等前沿特性。
-* **为何值得关注**：该项目旨在挑战CapCut等闭源编辑器的市场地位，提供一个功能强大、可自由控制的开源替代品。其雄心勃勃的重写计划（如Rust跨平台内核、AI支持）以及社区的热烈反响（单日星标激增）预示着它可能成为开源创意工具生态中一颗重要的新星。
+### OpenCut - 开源视频编辑器（CapCut 替代品）
+*   **功能介绍：** OpenCut 是一个免费、开源的视频编辑器，旨在成为 CapCut 的社区驱动替代方案，支持网页、桌面和移动设备。
+*   **主要特点：** 项目正在从头进行现代化重写。核心亮点包括：插件优先的架构以支持第三方扩展、基于 Rust 的统一核心实现跨平台、用于 AI 代理集成的 MCP 服务器、无头自动化模式以及内置的脚本编辑功能。
+*   **为何值得关注：** 其重写计划旨在打造一个专业级、完全可扩展的开源视频编辑平台。单日获得超过 3,500 颗星的快速增长，反映了社区对强大且真正开放的视频编辑工具的巨大需求与期待，这可能使更多人能够使用高级编辑功能。
 
 **[View Repository / 查看仓库](https://github.com/OpenCut-app/OpenCut)**
 
 
 ## 🚀 Fast-Moving Repos / 快速崛起项目
 
-### Grok Build - Terminal-based AI Coding Agent by SpaceXAI
-* What it does: Grok Build is a full-screen, interactive AI coding agent that runs in your terminal. It understands codebases, edits files, executes shell commands, performs web searches, and manages long-running tasks. It can be used interactively, headlessly for automation/CI, or embedded into editors.
-* Key features: Built in Rust for performance. Provides a mouse-interactive TUI (Terminal User Interface). Extensible via skills, plugins, and hooks. Supports headless mode for scripting and the Agent Client Protocol (ACP) for editor integration. Includes comprehensive tools for file editing, search, and sandboxed execution.
-* Why it's notable: It is the official AI coding agent from SpaceXAI (the team behind Grok), demonstrating significant investment in AI-assisted development tooling. Its high star count (13k+) indicates strong community interest. The combination of a powerful TUI, headless capabilities, and deep integration options makes it a flexible and ambitious project in the AI coding assistant space.
+### Grok Build - AI Coding Agent & TUI from SpaceXAI
+* **What it does**: Grok Build is a terminal-based AI coding agent from SpaceXAI. It operates as a full-screen Text User Interface (TUI) that understands your codebase, edits files, executes shell commands, searches the web, and manages long-running tasks. It supports interactive use, headless/scripting mode, and editor integration via the Agent Client Protocol (ACP).
+* **Key features**:
+    * Full-screen, mouse-interactive TUI for real-time interaction.
+    * Can be embedded in editors or run headlessly for scripting/CI.
+    * Extensible architecture with support for tools, skills, plugins, hooks, and MCP servers.
+    * Comes with prebuilt binaries for macOS, Linux, and Windows.
+    * Extensive documentation for setup, theming, and advanced features.
+* **Why it's notable**: As the official CLI/TUI from a major AI company (SpaceXAI), it represents a high-profile, polished entry into the AI-assisted developer tooling space. Its comprehensive feature set, support for multiple usage modes, and focus on a terminal-native experience make it a significant project for developers interested in the intersection of AI and command-line workflows.
 
-### Grok Build - SpaceXAI 的终端 AI 编程代理
-* 功能介绍: Grok Build 是一个在终端运行的全屏 AI 编程代理。它能够理解代码库、编辑文件、执行 shell 命令、搜索网页并管理长时间运行的任务。支持交互式使用、无头模式（用于脚本/CI）或通过代理客户端协议（ACP）嵌入编辑器。
-* 主要特点: 使用 Rust 编写，性能优异。提供支持鼠标的交互式终端用户界面（TUI）。可扩展，支持技能（skills）、插件（plugins）和钩子（hooks）。支持无头模式用于自动化脚本。包含用于文件编辑、搜索和沙盒执行的综合工具集。
-* 为何值得关注: 它是 SpaceXAI（Grok 的开发团队）官方推出的 AI 编程代理，展现了在 AI 辅助开发工具上的重大投入。其超过 1.3 万的星标数表明了社区的强烈兴趣。强大的 TUI、无头模式能力与深度集成选项的结合，使其成为 AI 编程助手领域一个灵活且雄心勃勃的项目。
+### Grok Build - SpaceXAI 的编码智能体与终端界面工具
+* **功能介绍**: Grok Build 是 SpaceXAI 推出的基于终端的 AI 编码智能体。它以全屏终端用户界面（TUI）形式运行，能够理解你的代码库、编辑文件、执行 Shell 命令、搜索网页并管理长期任务。支持交互式使用、无头模式（用于脚本/CI）以及通过智能体客户端协议（ACP）集成到编辑器中。
+* **主要特点**:
+    * 全屏、支持鼠标交互的 TUI，实现实时操作。
+    * 可嵌入编辑器或以无头模式运行，适合脚本和持续集成。
+    * 架构可扩展，支持工具、技能、插件、钩子和 MCP 服务器。
+    * 提供适用于 macOS、Linux 和 Windows 的预编译二进制文件。
+    * 拥有详尽的文档，涵盖安装、主题配置及高级功能。
+* **为何值得关注**: 作为一家主要 AI 公司（SpaceXAI）的官方 CLI/TUI 项目，它是 AI 辅助开发者工具领域中一个高调且成熟的代表。其全面的功能集、对多种使用模式的支持以及对终端原生体验的专注，使其成为对 AI 与命令行工作流交叉领域感兴趣的开发者不容忽视的项目。
 
 **[View Repository / 查看仓库](https://github.com/xai-org/grok-build)**
 
-### Codex-Dream-Skin - A Theming Tool for the Codex Desktop App
-*   **What it does**: This is an unofficial, non-invasive theming tool for the OpenAI Codex desktop application. It uses local CDP (Chrome DevTools Protocol) injection to apply custom background skins and themes to the Codex interface without modifying the official application package (`.app`, `app.asar`, etc.).
-*   **Key features**:
-    *   **Native Interaction**: Applies skins as a true background layer, allowing all native Codex UI elements (sidebar, cards, input fields) to remain fully interactive.
-    *   **Cross-Platform**: Provides ready-to-use scripts and system tray/menu bar integrations for both macOS and Windows.
-    *   **Customization & Safety**: Users can easily swap between saved themes or import their own pure background images. It operates locally and only binds to `127.0.0.1`, avoiding modification of official binaries or code signatures.
-*   **Why it's notable**: It offers a highly personalized coding environment for Codex users, creating a more atmospheric or aesthetically pleasing workspace. Its clever technical approach of CDP injection ensures it doesn't conflict with official updates or security, which has likely contributed to its significant popularity (nearly 7,000 stars).
+### Codex Dream Skin - A Theming Tool for the Codex Desktop App
+*   **What it does:** It applies custom visual themes (background images and color schemes) to the official Codex desktop application by injecting CSS/JS via the local Chrome DevTools Protocol (CDP), without modifying the application's core files.
+*   **Key features:**
+    *   **True interactive themes:** The native Codex UI elements (sidebar, cards, input fields) remain fully functional on top of the custom background.
+    *   **One-click installation & switching:** Provides scripts for both macOS and Windows for easy setup, theme switching, and restoration of the default look.
+    *   **Safe & non-invasive:** Uses a local CDP connection on `127.0.0.1` and does not alter the official application binary, signature, or ASAR files. It also does not interfere with API key settings.
+    *   **Customizable:** Users can create and save their own themes using any 16:9 image.
+*   **Why it's notable:** With over 7,900 stars, it's a highly popular community tool addressing a common desire for personalizing development environments. It uniquely provides a "reskinnable" experience for Codex while maintaining a clean separation from the core app and its API configurations, making it both visually appealing and technically conscientious.
 
-### Codex-Dream-Skin - Codex 桌面端换肤工具
-*   **功能介绍**：这是一个为 OpenAI Codex 桌面客户端开发的非官方、无侵入式的皮肤主题工具。它通过本机 CDP 注入的方式，在不修改官方安装包（`.app`、`app.asar` 等）的前提下，为 Codex 界面应用自定义背景和主题。
-*   **主要特点**：
-    *   **真·可交互**：将皮肤作为真实的背景层应用，侧栏、卡片、输入框等所有原生 Codex UI 控件均可正常交互，非静态贴图。
-    *   **跨平台支持**：为 macOS 和 Windows 平台提供了现成的安装脚本、菜单栏/系统托盘切换功能。
-    *   **高度自定义与安全**：用户可轻松保存/切换本地主题，或导入自己的纯背景图。它在本机运行，仅绑定 `127.0.0.1`，不修改官方二进制文件和代码签名，安全可靠。
-*   **为何值得关注**：它为 Codex 用户提供了极高的个性化定制能力，能让开发者打造更具氛围感或符合个人审美的编码环境。其巧妙的技术方案实现了美观与安全的平衡，因此获得了社区的高度认可（近 7000 星标）。
+### Codex Dream Skin - 一款为 Codex 桌面端设计的换肤工具
+*   **功能介绍:** 通过本地 Chrome DevTools Protocol (CDP) 注入的方式，为官方 Codex 桌面端应用应用自定义视觉主题（背景图、配色方案），无需修改应用本身。
+*   **主要特点:**
+    *   **真·可交互主题:** 原生 Codex UI 元素（侧边栏、卡片、输入框）在自定义背景上完全可用，非静态贴图。
+    *   **一键安装与切换:** 提供 macOS 和 Windows 平台的脚本，方便安装、切换主题及一键恢复官方外观。
+    *   **安全无侵入:** 使用本地回环 CDP 连接 (`127.0.0.1`)，不修改官方二进制文件、代码签名或 `app.asar`，且不干扰 API 密钥配置。
+    *   **高度可定制:** 用户可使用任意 16:9 图片创建并保存自己的主题。
+*   **为何值得关注:** 该项目拥有超过 7,900 颗星，是一个广受欢迎的社区工具，满足了开发者个性化工作环境的普遍需求。它在提供丰富视觉自定义功能的同时，技术上做到了与核心应用及 API 设置的清晰分离，兼顾了美观性与安全性。
 
 **[View Repository / 查看仓库](https://github.com/Fei-Away/Codex-Dream-Skin)**
 
 
 ## 🎬 YouTube Tech Videos / YouTube 技术视频
 
+### 🎬 How an Apple Engineer Pranked Billion-Dollar Lawyers (and Won)
+**Channel:** freeCodeCamp.org
+*   What the video covers
+    *   This video narrates the entertaining true story of how the iconic Mac alert sound, **SOSUMI**, was created as an inside joke and act of playful defiance within Apple.
+*   Key topics discussed
+    *   The legal and corporate tension between Apple and **The Beatles' Apple Corps** over the use of the "Apple" name.
+    *   The creative rebellion by Apple engineer Jim Reek in response to legal constraints.
+    *   The clever wordplay behind the sound's name and its lasting cultural impact.
+*   Why it's worth watching
+    *   It reveals a fascinating and humorous piece of tech history that showcases corporate culture, creative problem-solving, and the human side of a major tech company. The story is both educational and highly entertaining.
+
+### 🎬 苹果工程师如何戏耍价值十亿美元的律师并大获全胜
+**频道:** freeCodeCamp.org
+*   视频内容概述
+    *   本视频讲述了苹果电脑上标志性的提示音 **SOSUMI** 背后真实的趣味故事。它最初是苹果公司内部一次安静的反叛行为和内部玩笑。
+*   主要话题
+    *   苹果公司与披头士乐队的 **Apple Corps** 之间关于“Apple”名称使用的法律与商业紧张关系。
+    *   苹果工程师 Jim Reek 为了应对法律限制而进行的创意反叛。
+    *   这个提示音名称背后的巧妙文字游戏及其持久的文化影响力。
+*   为何值得观看
+    *   它揭示了科技史上一个既迷人又幽默的片段，展现了企业文化、创造性解决问题的方式，以及大型科技公司人性化的一面。这个故事兼具知识性和极高的娱乐性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=PVAstrvWPkQ)**
+
 ### 🎬 Why Planes Don't Fly in a Straight Line - Adam Brown
 **Channel:** Dwarkesh Patel
-* What the video covers
-    * This video explores the counterintuitive reality that airplanes do not follow the shortest geometric path between two points on a map.
-    * It explains the reasons behind standard aviation routing, which is determined by factors like Earth's curvature, weather patterns, air traffic control, and fuel efficiency.
-* Key topics discussed
-    * The difference between a straight line on a flat map and a great circle route on a sphere.
-    * The impact of jet streams and prevailing winds on flight time and fuel consumption.
-    * The role of air traffic control and international flight corridors.
-* Why it's worth watching
-    * It demystifies a common travel observation with clear scientific and logistical reasoning, turning everyday curiosity into a lesson on global navigation and physics.
+*   This video explores the common misconception that airplanes travel in straight lines across the globe, delving into the true nature of great-circle routes.
+*   Key topics include the difference between straight lines on a flat map versus a sphere (geodesics), the principles of spherical geometry, and how navigation systems use this knowledge for efficiency.
+*   It's a fascinating and clear explanation that connects fundamental physics and mathematics to real-world technology, making complex concepts about navigation and the shape of the Earth easily understandable.
 
-### 🎬 为什么飞机不直线飞行 - Adam Brown
+### 🎬 为什么飞机不沿直线飞行 - 亚当·布朗
 **频道:** Dwarkesh Patel
-* 视频内容概述
-    * 本视频探讨了为什么飞机不会在地图上的两点之间遵循最短的几何直线飞行这一反直觉现象。
-    * 它解释了决定航空常规航线的因素，如地球曲率、天气模式、空中交通管制和燃油效率。
-* 主要话题
-    * 平面地图上的直线与球体上的大圆航线之间的区别。
-    * 急流和盛行风对飞行时间和燃油消耗的影响。
-    * 空中交通管制和国际航线的作用。
-* 为何值得观看
-    * 它用清晰的科学和逻辑解释揭开了一个常见的旅行观察现象，将日常好奇心转变为关于全球导航和物理的课程。
+*   本视频探讨了“飞机在地球上沿直线飞行”这一常见误解，深入讲解了“大圆航线”的真正原理。
+*   主要话题包括平面地图与球面上的“直线”区别（测地线）、球面几何的基本原理，以及导航系统如何利用这些知识实现高效飞行。
+*   这是一个引人入胜且清晰的科普，将关于导航和地球形状的基础物理与数学知识，与实际应用相结合，使复杂概念变得通俗易懂。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=dWEQIleX87o)**
 
 ### 🎬 Python for Beginners with Hands-On Projects
 **Channel:** freeCodeCamp.org
-*   **What the video covers:** An absolute beginner-friendly, comprehensive introduction to the Python programming language, delivered through structured lessons and practical coding exercises.
-*   **Key topics discussed:** Fundamental programming concepts like variables, data types, loops, functions, and object-oriented programming, all applied through hands-on projects to build real skills.
-*   **Why it's worth watching:** It's a complete, free course from a trusted educational source, designed for zero prior experience, emphasizing practical application to ensure learning is immediately useful and engaging.
 
-### 🎬 Python for Beginners with Hands-On Projects
+*   一个面向绝对编程初学者的系统性Python课程，旨在从零开始教授Python编程。
+*   涵盖Python核心语法、数据结构等基础知识，并通过动手项目进行巩固和应用。
+*   该课程非常适合完全零基础的初学者，提供了免费、高质量且注重实践的学习路径，是入门Python的可靠选择。
+
+---
+
+### 🎬 Python初学者实战项目课程
 **频道:** freeCodeCamp.org
-*   **视频内容概述：** 一套面向绝对初学者的、全面的Python编程入门课程，通过结构化讲解和实操编码练习进行传授。
-*   **主要话题：** 涵盖变量、数据类型、循环、函数、面向对象编程等基础编程概念，并通过动手项目将这些概念付诸实践，以培养真实技能。
-*   **为何值得观看：** 这是由知名教育机构提供的免费完整课程，专为零基础学员设计，强调实践应用，确保所学知识即时可用且充满趣味。
+
+*   一门专为编程零基础学员设计的系统性Python入门课程。
+*   内容从最基础的Python语法讲起，逐步深入，并穿插多个动手项目以加深理解。
+*   课程内容全面、讲解清晰且完全免费，通过项目驱动的学习方式能有效帮助初学者建立信心并掌握实用技能，是入门的绝佳资源。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=oDOw5tB3Udw)**
 
-### 🎬 We Could Be Inside a Black Hole Right Now – Adam Brown
-**Channel:** Dwarkesh Patel
-*   This video features a conversation with theoretical physicist Adam Brown, exploring the profound and speculative idea that our entire universe could exist inside a black hole.
-*   Key topics include the foundations of black hole theory, the concept of black hole interiors as separate universes, cosmological implications, and the nature of singularities.
-*   It is worth watching for its deep dive into cutting-edge theoretical physics, challenging conventional perceptions of reality and offering a mind-bending perspective on our place in the cosmos.
-
-### 🎬 我们可能正身处黑洞之中 – Adam Brown
-**频道:** Dwarkesh Patel
-*   本视频是与理论物理学家Adam Brown的对话，探讨了一个深刻且具推测性的观点：我们整个宇宙可能存在于一个黑洞内部。
-*   主要讨论的话题包括黑洞理论的基础、黑洞内部作为独立宇宙的概念、宇宙学影响以及奇点的本质。
-*   值得观看是因为它深入探讨了前沿的理论物理学，挑战了对现实的常规认知，并为我们宇宙中的位置提供了一种令人震撼的全新视角。
-
-**[Watch Video / 观看视频](https://www.youtube.com/watch?v=anB6d98RVdI)**
-
 ### 🎬 Git and Github Tutorial For Beginners (Full Course)
 **Channel:** CodeWithHarry
-*   **What the video covers:** This is a comprehensive, full-length beginner's guide to mastering Git and GitHub. It walks viewers from the absolute basics of installation and setup through to more advanced collaborative workflows, using a hands-on, project-based approach.
-*   **Key topics discussed:** Git fundamentals (commit, branch, merge, stash), Git workflow, understanding the GitHub platform, collaborating via Pull Requests, resolving merge conflicts, and a deep dive into using Git from the command line.
-*   **Why it's worth watching:** It is an incredibly thorough and accessible resource for anyone starting with version control. The complete course format, paired with a downloadable handbook, makes it an excellent one-stop shop for building a solid foundation in modern development practices.
+*   What the video covers
+    *   This is a comprehensive, full-length beginner's guide to using Git (the version control system) and GitHub (the online platform for code hosting and collaboration).
+    *   It covers everything from initial installation and basic command-line operations to understanding workflows, resolving conflicts, and contributing to open-source projects.
+*   Key topics discussed
+    *   Git fundamentals (`git init`, `git add`, `git commit`, etc.)
+    *   GitHub concepts (repositories, clones, forks, pull requests, issues)
+    *   Branching and merging strategies
+    *   Best practices for collaborative development.
+*   Why it's worth watching
+    *   It's an all-in-one, project-based tutorial ideal for absolute beginners who want a solid foundation.
+    *   CodeWithHarry is known for clear, practical explanations in Hinglish, making technical concepts accessible.
+    *   The included handbook (linked in the description) serves as a useful quick-reference guide.
 
-### 🎬 Git和GitHub初学者完全教程
+### 🎬 Git 和 Github 新手完整教程
 **频道:** CodeWithHarry
-*   **视频内容概述:** 这是一个为完全初学者设计的、全面的Git与GitHub入门到精通教程。它从最基础的安装和设置开始，通过实际项目演示，逐步引导观众掌握更高级的协作工作流。
-*   **主要话题:** Git基础命令（提交、分支、合并、贮存）、Git工作流、理解GitHub平台、通过拉取请求进行协作、解决合并冲突，以及命令行Git的深入使用。
-*   **为何值得观看:** 对于任何刚开始接触版本控制的人来说，这是一个极其详尽且易于理解的资源。其完整的课程结构，加上配套的下载手册，使其成为学习现代软件开发实践的绝佳一站式指南。
+*   视频内容概述
+    *   这是一个面向初学者的全面、完整的Git（版本控制系统）和GitHub（代码托管与协作平台）教程。
+    *   内容涵盖从安装、基本命令行操作，到工作流程理解、冲突解决以及参与开源项目的全过程。
+*   主要话题
+    *   Git 基础命令（`git init`, `git add`, `git commit` 等）
+    *   GitHub 核心概念（仓库、克隆、分叉、拉取请求、议题）
+    *   分支管理与合并策略
+    *   团队协作开发的最佳实践。
+*   为何值得观看
+    *   这是专为零基础学习者设计的综合性实战教程，帮助构建扎实的基础。
+    *   CodeWithHarry 以清晰、实用的印地语-英语混合讲解而闻名，使技术概念易于理解。
+    *   描述中附带的电子手册可作为实用的快速参考指南。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
 
-### 🎬 Comment "HOW" and ill tell you how you can money using Al.
+### 🎬 Comment "HOW" and I'll Tell You How You Can Make Money Using AI.
 **Channel:** ezCommit
 
-*   **What the video covers:** This video presents a method for making money using AI (Artificial Intelligence). The description explicitly states it is not about simple email automation, suggesting it involves more advanced or unconventional AI applications.
-*   **Key topics discussed:** Monetization strategies with AI, potentially showcasing specific tools, platforms, or business models that go beyond common automated tasks.
-*   **Why it's worth watching:** It's a direct call to action for viewers interested in practical AI-driven income streams. If you're looking for niche or less-discussed ways to leverage AI for profit, this video promises to reveal techniques beyond basic automation.
+*   What the video covers: The video promises to reveal methods for generating income using artificial intelligence, positioning itself as going beyond basic email automation tools to explore more advanced and "crazy" applications.
+*   Key topics discussed: Likely includes practical applications of AI for monetization, potentially covering tools, strategies, or unconventional use cases that go beyond common knowledge.
+*   Why it's worth watching: For anyone interested in the latest and more potent applications of AI for income generation, this video offers the potential for insightful, non-obvious strategies directly from the creator.
 
 ### 🎬 评论“HOW”，我将告诉你如何利用AI赚钱
 **频道:** ezCommit
 
-*   **视频内容概述:** 该视频介绍了一种利用AI（人工智能）赚钱的方法。描述中明确指出这不是关于简单的电子邮件自动化工具，暗示其涉及更高级或非常规的AI应用。
-*   **主要话题:** 使用AI的盈利策略，可能展示超越常规自动化任务的具体工具、平台或商业模式。
-*   **为何值得观看:** 这直接呼吁对实用AI驱动收入来源感兴趣的观众。如果你想了解如何利用AI赚钱的利基或非传统方法，该视频承诺揭示超越基础自动化的技巧。
+*   视频内容概述：该视频旨在揭示利用人工智能创造收入的方法，强调其内容超越了基础的电子邮件自动化工具，深入探讨更高级、更“疯狂”的应用。
+*   主要话题：可能涉及AI变现的实际应用，包括相关工具、策略或非常规用例，旨在分享超出常规认知的知识。
+*   为何值得观看：对于任何对利用AI生成收入的最新且更强大应用感兴趣的人来说，这个视频有望提供来自创作者的、具有洞察力且非显而易见的实用策略。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
 
