@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 17, 2026"
 date: 2026-07-17
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### **Microsoft Comic Chat is Now Open Source**
@@ -218,4 +218,157 @@ pin: false### **Microsoft Comic Chat is Now Open Source**
     对于寻求利用AI进行创新性盈利的人来说值得观看，尤其是对那些厌倦了诸如电子邮件自动化等传统工具的人。视频暗示了其"疯狂"的能力水平，可能提供新颖的见解或方法。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=XX3uieX2xj8)**
+
+<!-- [Title-Only] -->
+### Google Kills Custom Search API on Jan 1, 2027
+*   This article likely reports that Google has announced the discontinuation of its Custom Search API, with a final deadline of January 1, 2027. It probably details the timeline, the reasons behind the decision, and the 9-month notice period for developers who currently rely on this service.
+*   This is a critical update for developers, startups, and businesses that have built applications or websites using Google's Custom Search functionality. The news is interesting because it forces a significant migration, impacts product roadmaps, and signals a shift in Google's API strategy.
+
+### Google将于2027年1月1日关闭自定义搜索API
+*   根据标题推测，本文主要内容应是关于Google宣布将终止其自定义搜索API，并设定了2027年1月1日这一最终截止日期。文章可能会具体说明时间表、此决策背后的原因，以及给予依赖该服务的开发者的9个月过渡期。
+*   这则消息对于所有使用Google自定义搜索功能来构建应用或网站的开发者、初创公司和企业来说至关重要。它的值得关注之处在于，这一变动将迫使大量项目进行迁移，影响产品开发计划，并反映出Google在API服务策略上的重大调整。
+
+**[Read Original / 阅读原文](https://thenextgennexus.com/2026/05/14/google-kills-custom-search-api-on-jan-1-2027-you-have-9-months/)**
+
+### Kimi K3: Open-Source 2.8T Parameter AI Model
+*   Kimi K3 is introduced as the most capable model from Kimi, featuring 2.8 trillion parameters, native vision, and a 1-million-token context window. It is the world's first open 3T-class model.
+*   The model demonstrates frontier-level performance across evaluations, though it still trails the most powerful proprietary models. It is currently available on various Kimi platforms, with full model weights scheduled for release by July 27, 2026.
+
+### Kimi K3：开源2.8万亿参数AI模型
+*   Kimi发布了其最强模型Kimi K3，拥有2.8万亿参数、原生视觉能力和百万级上下文窗口，是全球首个开源3万亿级别的模型。
+*   该模型在评估中展现出前沿水平，但仍略逊于最强的商业闭源模型。它目前已在多个Kimi平台上线，完整的模型权重将于2026年7月27日之前发布。
+
+**[Read Original / 阅读原文](https://www.kimi.com/blog/kimi-k3)**
+
+### Introducing LM Studio Bionic: The AI Agent for Open Models
+*   **Core Purpose:** LM Studio Bionic is a new AI agent designed to handle real-world tasks like coding, research, and complex document work using open models, all while prioritizing user privacy and cost control.
+*   **Key Features:** It combines a powerful coding agent, state-of-the-art offline voice transcription, flexible model execution (local, peer-to-peer via LM Link, or cloud), and tools for deep document and file management.
+*   **Privacy & Control:** A core commitment is Zero Data Retention and never training on user data. Users can run models entirely locally or use the secure cloud for heavier tasks.
+*   **Getting Started:** Bionic is a separate app from LM Studio. Users download it, can use local models immediately, and can set up a cloud account for accessing larger frontier models.
+
+### 介绍 LM Studio Bionic：为开放模型打造的 AI 智能体
+*   **核心目标：** LM Studio Bionic 是一款全新的 AI 智能体，专为利用开放模型处理实际任务（如编程、研究和复杂的文档处理）而设计，同时高度重视用户隐私和成本控制。
+*   **主要特性：** 它融合了强大的编程智能体、先进的离线语音转录功能、灵活的模型执行方式（本地、通过 LM Link 进行点对点连接，或使用云端）以及深度的文档和文件管理工具。
+*   **隐私与控制权：** 其核心承诺是实现零数据留存且绝不使用用户数据进行模型训练。用户可以完全在本地运行模型，也可以为更繁重的任务使用安全的云端。
+*   **开始使用：** Bionic 是一款独立于 LM Studio 的新应用。用户下载后可立即使用本地模型，并可设置云端账户以访问更大型的前沿模型。
+
+**[Read Original / 阅读原文](https://lmstudio.ai/blog/introducing-lm-studio-bionic)**
+
+### PostHog - Open Source Platform for Building Self-Driving Products
+*   **What it does:** PostHog is a comprehensive, open-source product development platform. It provides a suite of tools—including product analytics, session replay, feature flags, A/B testing, error tracking, and AI observability—to help teams understand user behavior, make data-driven decisions, and automate product improvements.
+*   **Key features:** Its unique "Self-Driving Mode" can automatically detect product issues (like errors or user frustration) and generate researched reports or pull requests. It offers a unified dashboard for analytics, replays, experiments, and more. It can be fully self-hosted or used via a generous cloud service.
+*   **Why it's notable:** It consolidates a vast array of essential product development tools into a single, open-source platform, eliminating the need to integrate multiple disparate services. Its focus on automation and the "self-driving" concept, combined with a strong free tier, makes it exceptionally popular for teams of all sizes aiming to build and iterate products efficiently.
+
+### PostHog - 面向自驱动产品的开源平台
+*   **功能介绍：** PostHog 是一个全面的开源产品开发平台。它提供了一套完整的工具，包括产品分析、会话回放、功能标记、A/B 测试、错误跟踪和 AI 可观测性，帮助团队理解用户行为、做出数据驱动的决策并自动化产品改进流程。
+*   **主要特点：** 其独特的“自驱动模式”能自动检测产品问题（如错误或用户挫败感），并生成详细的研究报告或代码拉取请求。它提供一个统一的面板来集中管理分析、回放、实验等功能。用户可以选择完全自托管或使用慷慨的免费云服务。
+*   **为何值得关注：** 它将众多核心的产品开发工具整合到一个开源平台中，避免了团队需要集成多个分散服务的麻烦。其对自动化和“自驱动”理念的聚焦，加上有吸引力的免费额度，使其在各种规模的团队中都广受欢迎，助力团队高效地构建和迭代产品。
+
+**[View Repository / 查看仓库](https://github.com/PostHog/posthog)**
+
+### Open Interpreter - Rust-based coding agent optimized for low-cost AI models
+*   **What it does**: A coding agent optimized for low-cost models, reimplemented in Rust from the original Python project. It provides a command-line interface to interact with AI models (like Kimi K3) to execute code, run commands, and automate tasks within a sandbox.
+*   **Key features**:
+    *   **Harness Emulation**: Emulates various agent harnesses (e.g., `kimi-code`, `claude-code`) to maximize performance from low-cost models.
+    *   **Multi-Model Support**: Easily switch between different AI providers and models via the terminal.
+    *   **ACP & Codex Compatible**: Works with Agent Client Protocol editors and can be a drop-in replacement for OpenAI's Codex SDK.
+    *   **Computer Use & QA Skills**: Includes a skill for testing web and native applications.
+    *   **Native Sandboxing**: Executes commands securely on macOS, Linux, and Windows.
+*   **Why it's notable**: Its Rust rewrite (gaining **661 stars today**) delivers high performance for interfacing with models like the newly released Kimi K3. It offers exceptional flexibility by emulating popular harnesses and providing broad compatibility with developer tools, making it a trending, powerful, and adaptable agent for low-cost AI coding.
+
+### Open Interpreter - 专为低成本AI模型优化的Rust编程代理
+*   **功能介绍**：这是一个用 Rust 重新实现的编程代理，专注于优化低成本模型（如 Kimi K3）的性能。它提供命令行界面，允许用户与AI模型交互，以在沙箱环境中执行代码、运行命令并自动化任务。
+*   **主要特点**：
+    *   **框架模拟**：模拟多种代理框架（如 `kimi-code`, `claude-code`），以最大化从低成本模型获得的性能。
+    *   **多模型支持**：通过终端轻松切换不同的AI提供商和模型。
+    *   **兼容ACP与Codex**：支持Agent Client Protocol编辑器，可作为OpenAI Codex SDK的直接替代品。
+    *   **计算机使用与QA技能**：包含用于测试Web和本地应用程序的技能。
+    *   **原生沙箱**：在macOS、Linux和Windows上安全地执行命令。
+*   **为何值得关注**：其Rust重写版本（今日获得**661颗星**）为与Kimi K3等模型交互提供了高性能。通过模拟流行的框架并提供对开发者工具的广泛兼容性，它展现出极高的灵活性，使其成为一个强大、灵活且备受关注的低成本AI编程代理工具。
+
+**[View Repository / 查看仓库](https://github.com/openinterpreter/openinterpreter)**
+
+### [MDX-Tom/gpt-5.6-instruct] - Jailbreak Prompts and Test Suite for GPT-5.6-sol
+*   **What it does**: This repository provides specialized "jailbreak" prompts designed to bypass the safety restrictions of the `gpt-5.6-sol` model within the Codex CLI environment. It aims to make the model comply with requests typically refused, such as those related to security research, penetration testing, reverse engineering, software cracking, and NSFW fiction, by framing them as local sandbox tasks.
+*   **Key features**:
+    *   Offers two optimized prompt versions: `v5` (recommended for simplicity and general use) and `v35` (enhanced for complex, multi-step tasks).
+    *   Includes deployment scripts (`codex-instruct.py`) for easy installation and backup management.
+    *   Features a comprehensive test bank (360 prompts across 6 scenarios, 3 lengths, 2 languages) and detailed execution logs.
+    *   Demonstrates significant performance improvements over previous versions, achieving 100% pass rates (120/120) on its target model `gpt-5.6-sol` across low, medium, and high reasoning levels.
+*   **Why it's notable**: It represents a cutting-edge, technically detailed effort in AI prompt engineering for bypassing model restrictions. The repository is notable for its rigorous testing methodology, transparent reporting of results across multiple models, and the quantifiable, substantial improvement in pass rates (up to 45 percentage points) it demonstrates for the `gpt-5.6` model series.
+
+### [MDX-Tom/gpt-5.6-instruct] - 针对 GPT-5.6-sol 的越狱提示词与测试集
+*   **功能介绍**：本仓库提供专门用于突破 `gpt-5.6-sol` 模型安全限制的“越狱”提示词。它通过将安全研究、渗透测试、逆向工程、软件破解及 NSFW 虚构内容统一声明为本地沙箱任务，旨在让模型响应通常会被拒绝的请求。
+*   **主要特点**：
+    *   提供两个优化版本：`v5`（推荐，更简洁通用）和 `v35`（针对复杂复合任务优化）。
+    *   包含一键部署脚本 (`codex-instruct.py`)，支持安装、版本切换和备份恢复。
+    *   配备全面的测试集（涵盖6种场景、3种长度、2种语言，共360条提示词）和详细的执行记录。
+    *   性能提升显著，在目标模型 `gpt-5.6-sol` 的低、中、高三档推理等级测试中均达到 100% (120/120) 的通过率。
+*   **为何值得关注**：该项目是 AI 提示词工程领域突破模型限制的一次深入且技术性强的实践。其关注点在于严格、可复现的测试方法论、跨多个模型的透明结果报告，以及为 `gpt-5.6` 系列模型带来的显著且可量化的通过率提升（最高达 45 个百分点）。
+
+**[View Repository / 查看仓库](https://github.com/MDX-Tom/gpt-5.6-instruct)**
+
+### littledivy/mimic - Intercept any app, then call it from Python like a library
+*   **What it does**: A tool that captures the network traffic of any application (especially iOS apps), automatically extracts the authentication session (like bearer tokens), and uses AI (Claude) to generate a reusable Python client library from the captured API endpoints.
+*   **Key features**:
+    *   **AI-Powered Code Generation**: Automatically generates Python client code from captured traffic, eliminating the need to manually reverse-engineer APIs.
+    *   **Multiple Capture Backends**: Supports traffic capture via mitmproxy for iOS apps, cURL paste for web-based APIs, and HAR files for broader browser-captured traffic.
+    *   **Session Management**: Provides a `Session` class to easily build authenticated requests, with automatic token refresh on `401` errors for idempotent requests.
+    *   **Simplicity**: Aims to turn any app's API into a simple, importable Python library with a one-command workflow (`record` -> `learn` -> `gen`).
+*   **Why it's notable**: It drastically simplifies the process of interacting with private or undocumented APIs by leveraging AI to bridge the gap between raw network traffic and usable code. It's particularly innovative for automating the tedious work of reverse-engineering mobile app communications.
+
+### littledivy/mimic - 拦截任何应用，然后像调用库一样从Python调用它
+*   **功能介绍**：这是一个能够捕获任何应用程序（尤其是iOS应用）网络流量的工具。它能自动提取认证会话（如bearer token），并使用AI（Claude）从捕获的API端点生成一个可复用的Python客户端库。
+*   **主要特点**：
+    *   **AI驱动的代码生成**：从捕获的流量中自动生成Python客户端代码，无需手动进行API逆向工程。
+    *   **多种捕获后端**：支持通过mitmproxy捕获iOS应用流量，通过cURL粘贴捕获基于Web的API，以及通过HAR文件捕获更广泛的浏览器流量。
+    *   **会话管理**：提供`Session`类，方便构建经过认证的请求，并能针对幂等请求在遇到`401`错误时自动刷新令牌。
+    *   **操作简便**：旨在通过简单的命令工作流（`record` -> `learn` -> `gen`），将任何应用的API转化为一个可导入的Python库。
+*   **为何值得关注**：它通过利用AI，极大地简化了与私有或未记录的API进行交互的过程，弥合了原始网络流量与可用代码之间的鸿沟。其自动化逆向工程移动应用通信的繁琐工作这一点尤其具有创新性。
+
+**[View Repository / 查看仓库](https://github.com/littledivy/mimic)**
+
+### 🎬 So I've been using gpt-5.6 for awhile...
+**Channel:** Theo - t3․gg
+*   The video covers the creator's experience with early, pre-release access to the GPT-5.6 model, detailing extensive real-world usage and the associated, surprisingly high inference costs.
+*   Key topics include a hands-on performance review, practical applications of the new model, and a candid discussion of the significant financial investment ($180K-$240K) required for this level of testing.
+*   It's worth watching for exclusive, early insights into the capabilities and costs of a future major AI model from someone who has stress-tested it extensively, far before public availability.
+
+### 🎬 所以我已经用了一段时间的GPT-5.6了...
+**频道:** Theo - t3․gg
+*   视频内容概述：创作者分享了他在GPT-5.6模型正式发布前获得早期访问权限后的深度使用体验，详述了大量的实际应用案例以及与之相伴的、令人咋舌的推理成本。
+*   主要话题：包括对新模型性能的实操评测、具体应用场景的探讨，以及坦诚地分析为此级测试所投入的巨额资金（约18万至24万美元）。
+*   为何值得观看：本视频提供了对未来某款重大AI模型独家的、早期的见解，展示了其在实际高强度压力下的性能表现，并提前揭示了可能的使用成本，对关注AI技术发展的观众极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mHG7K7QmQyU)**
+
+### 🎬 The 3 WORST Programming Languages
+**Channel:** commonLuke
+*   **What the video covers:** A humorous and critical review of three programming languages considered by the creator to be the worst, likely based on syntax, learning curve, community perception, or practical use cases.
+*   **Key topics discussed:** The identities of the three "worst" languages, specific reasons for their poor reputation, potential drawbacks for developers, and likely some entertaining examples or rants.
+*   **Why it's worth watching:** For a lighthearted, opinionated take on programming languages, which can be insightful for understanding community consensus and pitfalls to avoid, especially for beginners choosing their first language.
+
+### 🎬 三个最糟糕的编程语言
+**频道:** commonLuke
+*   **视频内容概述:** 以幽默和批判的视角，回顾三个被创作者评为“最糟糕”的编程语言。评价标准可能涉及语法、学习曲线、社区认知或实际应用场景。
+*   **主要话题:** 这三个“糟糕”语言的具体名称、它们广受诟病的原因、可能给开发者带来的弊端，并很可能包含一些生动的示例或吐槽。
+*   **为何值得观看:** 这是一次轻松且带有主观色彩的编程语言评测。对于理解开发者社区的共识、了解初学者应避开的陷阱，或者纯粹为了娱乐，都具有参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=y_zOPiuEdYY)**
+
+### 🎬 I Built $10000 Website With Free AI Tools In 15 Minutes || No Coding || Free Resources
+**Channel:** Creativo
+
+*   **What the video covers:** A step-by-step tutorial demonstrating how to create a complete, professional-grade website with scroll animations, specifically a Paris travel site, in just 15 minutes using only free AI-powered tools.
+*   **Key topics discussed:** Utilizing free AI website builders and design tools, creating visually stunning layouts and animations, the "no-code" approach for beginners, and leveraging AI to rapidly generate professional web content and aesthetics.
+*   **Why it's worth watching:** It demystifies web development, proving that anyone can build a high-value, dynamic website quickly and completely for free. It’s an inspiring and practical guide for creators, entrepreneurs, or anyone curious about the power of modern AI tools.
+
+### 🎬 我用免费AI工具15分钟建出了价值一万美元的网站 || 无代码 || 免费资源
+**频道:** Creativo
+
+*   **视频内容概述：** 本教程详细演示了如何完全使用免费的AI工具，在短短15分钟内，从零开始构建一个包含滚动动画、专业级视觉效果的完整网站（以巴黎旅行网站为例）。
+*   **主要话题：** 如何使用免费的AI建站和设计工具、制作炫酷的布局与动画、零代码的初学者友好方法、以及如何借助AI快速生成专业的网页内容与设计。
+*   **为何值得观看：** 该视频打破了网站开发的技术壁垒，证明了任何人都可以快速、免费地创建一个高价值、动态的网站。对于创作者、创业者或任何对AI工具强大功能感兴趣的人来说，这都是一个极具启发性和实用性的指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nPxMF2YV77I)**
 
