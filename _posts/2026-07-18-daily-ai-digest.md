@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 18, 2026"
 date: 2026-07-18
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -545,4 +545,68 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看:** 对于预算有限的初级游戏开发者来说，这是一个宝贵的起点，它能快速为你指出那些可以用来启动项目的、易上手的免费工具。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=bNwAhngr7Ec)**
+
+### Regressive JPEGs: Unconventional Encoding Techniques
+
+* Progressive JPEG files can save low-frequency components first, allowing partial image rendering during download.
+* This technique uses multiple "scans" with varying DCT bin ranges and precision levels, starting from DC components (scan 0) to higher-frequency details (scans 1-9).
+* While concatenating images can create frame-switching effects during loading, most decoders limit scans to about 9 frames.
+* By restricting each frame to DC-only scans, up to 90 frames can be embedded, enabling a single JPEG to act as a primitive video without timing control.
+
+### 退行式JPEG：非常规编码技术
+
+* 渐进式JPEG文件可优先保存低频分量，使下载过程中能部分显示图像。
+* 该技术通过多个“扫描”实现，每个扫描包含不同的DCT频率范围和精度，从直流分量（扫描0）到更高频细节（扫描1-9）。
+* 虽然连接多张图片可在加载时切换画面，但大多数解码器会将扫描数量限制在9帧左右。
+* 通过将每帧限制为仅含DC分量的扫描，最多可嵌入90帧，使单个JPEG文件可作为原始视频播放，但无法控制播放时长。
+
+**[Read Original / 阅读原文](https://maurycyz.com/projects/bad_jpeg/)**
+
+### English Summary: nanochat-jax
+
+*   **Project Goal:** A JAX/Flax NNX port of Andrej Karpathy's `nanochat`, designed to replicate the original model's quality and performance, specifically optimized for Google TPUs.
+*   **Core Metric:** The primary benchmark is **"time-to-GPT-2"**, measuring wall-clock time to achieve the GPT-2 CORE score of 0.256525. The best result is **5.28 hours** on a v6e-8 TPU for the d24 model.
+*   **Key Optimizations:** Uses JAX/Flax NNX instead of PyTorch, Pallas Splash Attention kernels, bf16 embeddings, TPU mesh sharding, and supports the Muon optimizer. It intentionally preserves four small divergences from the upstream project for reproducibility.
+*   **Setup & Usage:** Requires Python 3.11+ and a standard venv. Includes public run scripts (`runs/speedrun.sh` for a full TPU run, `runs/runcpu.sh` for a CPU smoke test) and a chat CLI for interacting with the trained models.
+*   **Project Status:** Successfully matched upstream on a key TPU benchmark, with a full pipeline from training to evaluation (ChatCORE). Features like RL fine-tuning and FP8 training are not yet implemented.
+
+### 中文摘要：nanochat-jax
+
+*   **项目目标：** Andrej Karpathy 的 `nanochat` 项目的 JAX/Flax NNX 移植版本，旨在复现原模型的质量和性能，并专门针对 Google TPU 进行了优化。
+*   **核心指标：** 主要基准测试是 **“达到 GPT-2 水平所需时间”**，即达到 GPT-2 CORE 分数 0.256525 所需的挂钟时间。在 v6e-8 TPU 上，d24 模型的最佳成绩为 **5.28 小时**。
+*   **关键优化：** 使用 JAX/Flax NNX 而非 PyTorch，采用 Pallas Splash Attention 内核、bf16 嵌入存储、TPU 网格分片，并支持 Muon 优化器。项目故意保留了与上游项目的四个小差异以确保可复现性。
+*   **设置与使用：** 需要 Python 3.11+ 和标准的 Python 虚拟环境。包含公开的运行脚本（`runs/speedrun.sh` 用于完整的 TPU 运行，`runs/runcpu.sh` 用于 CPU 快速检测）以及用于与训练模型交互的聊天 CLI。
+*   **项目状态：** 已在关键的 TPU 基准测试上与上游项目表现匹配，并建立了从训练到评估（ChatCORE）的完整流程。强化学习微调和 FP8 训练等功能尚未实现。
+
+**[Read Original / 阅读原文](https://github.com/tucan9389/nanochat-jax/discussions/1)**
+
+### Hardware Security & Vulnerability Research Archive
+*   A centralized public repository for independent hardware vulnerability research, audits, and Coordinated Vulnerabilities Disclosures (CVD).
+*   All publications, including proof-of-concept scripts and hardware teardowns, are strictly for educational and defensive security research purposes.
+*   Disclosures adhere to standard industry timelines, such as 90-day embargoes or 45-day exceptions for unresponsive vendors.
+*   Research methodology focuses on bridging physical hardware flaws with systemic infrastructure risk through techniques like UART/JTAG audits, firmware analysis, and cloud infrastructure mapping.
+
+### 硬件安全与漏洞研究公共档案库
+*   一个集中公开独立硬件漏洞研究、审计与协调漏洞披露（CVD）的仓库。
+*   发布的所有内容，包括概念验证脚本、固件提取和硬件拆解，均严格用于教育与防御性安全研究目的。
+*   披露遵循标准行业时间线，例如90天禁运期或针对未响应厂商的45天例外期。
+*   研究方法论旨在通过UART/JTAG审计、固件分析和云基础设施映射等技术，将本地物理硬件缺陷与系统性基础设施风险联系起来。
+
+**[Read Original / 阅读原文](https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md)**
+
+### 🎬 Claude Code for Non-Coders (6 Hour Course)
+**Channel:** Nate Herk | AI Automation
+
+*   **What the video covers:** A comprehensive 6-hour course designed for beginners with no coding experience, teaching how to use "Claude Code" to build and automate AI-powered projects and workflows.
+*   **Key topics discussed:** The fundamentals of the Claude AI model, practical steps to generate and implement code through natural language prompts, and real-world examples of automating tasks without prior programming knowledge.
+*   **Why it's worth watching:** It serves as a valuable bridge for professionals and creators who want to leverage advanced AI development tools but are intimidated by traditional coding, offering a hands-on, playbook-style approach to building a functional AI agency or personal automations.
+
+### 🎬 面向非程序员的Claude代码课程（6小时完整教程）
+**频道:** Nate Herk | AI自动化
+
+*   **视频内容概述：** 这是一门长达6小时的零基础入门课程，专为没有编程经验的学习者设计，旨在指导如何使用“Claude Code”来构建和自动化AI驱动的项目与工作流程。
+*   **主要话题：** Claude AI模型的基础知识、通过自然语言提示生成及实现代码的实操步骤，以及无需编程背景即可自动化任务的真实案例。
+*   **为何值得观看：** 对于希望利用前沿AI开发工具但又对传统编程感到畏惧的专业人士和创作者而言，本课程提供了极具价值的桥梁。它以实用的“剧本”式方法，指导观众构建一个可运作的AI代理或实现个人自动化，非常值得关注。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=jdbOVepEtUE)**
 
