@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 18, 2026"
 date: 2026-07-18
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -393,4 +393,108 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看:** 本视频有力地展示了网站开发技术的民主化趋势。它向观众揭示了如何利用前沿的免费AI资源，绕过传统的技术门槛（编码），快速且低成本地创建出视觉效果惊艳的数字作品。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=nPxMF2YV77I)**
+
+### **AI and Surveillance in Healthcare: Kaiser Nurses Raise Concerns**
+*   Kaiser Permanente advice nurses report that workplace surveillance, including AI monitoring, is negatively impacting their jobs and patient care.
+*   Nurses face pressure to keep calls under 15 minutes, with this "average handle time" factored into performance evaluations. Calls exceeding this limit can lead to criticism or meetings with management.
+*   Kaiser uses AI systems to predict productivity and, previously, to rate nurse empathy and tone of voice. Nurses argue this undermines professional judgment and compassionate care.
+*   The issue is prominent as the California Nurses Association enters contract negotiations. Nurses staged a one-day strike against AI use earlier this year.
+*   Kaiser defends its practices, stating it uses AI responsibly for patient safety and does not use "average handle time" to assess performance.
+
+### **AI与监控：凯撒医疗护士的担忧**
+*   凯撒医疗健康（Kaiser Permanente）的咨询护士反映，工作场所监控，尤其是人工智能（AI）的运用，正在损害他们的工作和患者护理质量。
+*   护士们面临将通话时间控制在15分钟以内的压力，这一“平均处理时间”被纳入月度绩效评估。超时的通话可能导致他们受到管理层的批评或被要求参加绩效评估会议。
+*   凯撒使用AI系统来预测每日工作效率，并曾利用AI来评分护士的同理心和语调。护士们认为，这削弱了他们的专业判断和提供富有同情心护理的能力。
+*   该问题在加州护士协会本月与凯撒开始新合同谈判时备受关注。护士们今年早些时候已举行过为期一天的反对AI的罢工。
+*   凯撒为其做法辩护，称其负责任地使用AI以保障患者安全，并未使用“平均处理时间”来评估员工表现。
+
+**[Read Original / 阅读原文](https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/)**
+
+### The Isomorphic Labs Drug Design Engine (IsoDDE): A Leap Beyond AlphaFold for Drug Discovery
+*   **Unified Computational System**: IsoDDE is a unified computational drug-design system that represents a significant advancement beyond AlphaFold 3 (AF3), aiming to bridge the gap between structural prediction and real-world *in silico* drug discovery.
+*   **Enhanced Generalization**: On a challenging benchmark designed to test generalization to novel systems, IsoDDE more than doubles the predictive accuracy of AlphaFold 3 for the most dissimilar protein-ligand structures.
+*   **Accurate Binding Affinity Prediction**: It predicts small-molecule binding affinities with accuracy that surpasses gold-standard physics-based methods, but at a fraction of the time and cost.
+*   **Novel Pocket Identification**: IsoDDE can accurately identify novel, ligandable binding pockets on target proteins using only the amino acid sequence as input, without requiring prior knowledge of ligands.
+*   **Improved Complex Biologics Modeling**: The engine provides a major accuracy improvement for predicting antibody-antigen interfaces, outperforming AlphaFold 3 by 2.3x on a challenging dataset, which is crucial for designing complex biologics.
+*   **Foundation for AI-Driven Design**: It offers a scalable foundation for AI-driven drug design with the predictive fidelity needed to navigate novel biological systems with unprecedented accuracy.
+
+### 同构实验室药物设计引擎 (IsoDDE)：超越 AlphaFold，开启药物发现新前沿
+*   **统一计算系统**：IsoDDE 是一个统一的计算药物设计系统，它在 AlphaFold 3 (AF3) 的基础上实现了重大突破，旨在弥合结构预测与真实世界*计算机内*药物发现之间的鸿沟。
+*   **卓越的泛化能力**：在一个专门测试对新系统泛化能力的高难度基准测试中，对于与训练集最不相似的蛋白质-配体结构，IsoDDE 的预测准确率比 AlphaFold 3 提高了一倍以上。
+*   **精准的结合亲和力预测**：该系统能够以极高的速度和极低的成本，预测小分子结合亲和力，其准确率超越了基于物理的金标准方法。
+*   **新型口袋发现能力**：IsoDDE 仅使用氨基酸序列作为输入，就能准确识别靶蛋白上新型的、可成药的结合口袋，无需预先了解配体信息。
+*   **改进的复杂生物制剂建模**：该引擎在预测抗体-抗原界面方面的准确性显著提升，在一个具有挑战性的数据集上，其表现比 AlphaFold 3 高出 2.3 倍，这对设计复杂的生物制剂至关重要。
+*   **AI 驱动设计的基石**：它为 AI 驱动的药物设计提供了一个可扩展的基础，其预测保真度足以以前所未有的准确性探索和导航全新的生物系统。
+
+**[Read Original / 阅读原文](https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier)**
+
+### Vāgdhenu: Meter-Aware Sanskrit TTS System
+*   Vāgdhenu is a Sanskrit text-to-speech (TTS) system specifically designed to be aware of *vṛtta* (poetic meter) for chanting *ślokas*.
+*   The system demonstrates its capability through six different meters, providing both the Sanskrit verse and a corresponding audio rendering for each.
+*   Sample meters shown include *vasantatilakā*, *śārdūlavikrīḍita*, *anuṣṭubh*, *vaṃśastha*, *drutavilambita*, and *mālinī*.
+*   Verses are sourced from classical texts like the *Mahābhārata Tātparya Nirṇaya* and the *Śrīmad Bhāgavatam*, as well as a specific *Narasiṃha stuti*.
+
+### Vāgdhenu：具备韵律感知能力的梵文语音合成系统
+*   Vāgdhenu 是一个专为吟诵《颂歌》（ślokas）而设计的、能够感知*vṛtta*（诗律）的梵文文本转语音（TTS）系统。
+*   该系统通过六种不同的韵律来展示其功能，为每种韵律提供了对应的梵文偈颂文本和音频。
+*   示例中展示的韵律包括 *vasantatilakā*、*śārdūlavikrīḍita*、*anuṣṭubh*、*vaṃśastha*、*drutavilambita* 和 *mālinī*。
+*   所引用的偈颂来自经典文献，如《摩诃婆罗多要义抉择》（Mahābhārata Tātparya Nirṇaya）和《圣薄伽梵往世书》（Śrīmad Bhāgavatam），以及一首特定的《那罗辛哈赞》（Narasiṃha stuti）。
+
+**[Read Original / 阅读原文](https://prathosh.in/vagdhenu/)**
+
+### [CluvexStudio/Aether](https://github.com/CluvexStudio/Aether) - A modern censorship circumvention client for restricted networks
+*   What it does
+    *   Aether is a client designed to bypass internet censorship in heavily restricted environments. It automatically finds working routes, creates an encrypted tunnel, and provides a local SOCKS5 proxy for other applications to use.
+    *   It is specifically built to evade Deep Packet Inspection (DPI), protocol fingerprinting, and traffic throttling common in restrictive networks.
+*   Key features
+    *   **Automatic Route Discovery & Validation:** Finds and tests gateways to ensure they work before trusting them.
+    *   **Advanced Protocols:** Supports MASQUE (over HTTP/3 or HTTP/2) and WireGuard, with a nested WireGuard mode (`gool`) for extra security.
+    *   **Obfuscation & Resilience:** Includes traffic obfuscation and features for quick reconnection to known-good gateways.
+    *   **Cross-Platform:** Pre-built binaries for Linux, Windows, macOS, and Android (via Termux), plus Docker support.
+*   Why it's notable
+    *   Its focus on evading sophisticated censorship techniques like DPI and its use of the modern MASQUE protocol (building on Cloudflare's Quiche library) make it a technically advanced tool in this space.
+    *   The trend is driven by the growing need for robust circumvention tools, and Aether's automatic, user-friendly approach with strong security fundamentals makes it a notable open-source entry.
+
+### [CluvexStudio/Aether](https://github.com/CluvexStudio/Aether) - 为严格受限网络设计的审查规避客户端
+*   功能介绍
+    *   Aether 是一个专门用于绕过严重网络审查的客户端。它会自动发现可用的通信路径，建立加密隧道，并提供本地的 SOCKS5 代理供其他应用程序使用。
+    *   它专为规避常见的深度包检测（DPI）、协议指纹识别和流量限速等限制手段而构建。
+*   主要特点
+    *   **自动路由发现与验证**：在信任一个网关前，会先测试其实际连通性。
+    *   **先进协议支持**：支持 MASQUE（基于 HTTP/3 或 HTTP/2）和 WireGuard 协议，并提供嵌套 WireGuard 模式（`gool`）以增加安全性。
+    *   **流量混淆与重连**：具备流量混淆功能，可快速重连到已知可用的网关，跳过重新扫描。
+    *   **跨平台**：提供适用于 Linux、Windows、macOS 和 Android（通过 Termux）的预编译二进制文件，并支持 Docker。
+*   为何值得关注
+    *   该工具专注于规避 DPI 等复杂的审查技术，并采用了基于 Cloudflare Quiche 库的现代 MASQUE 协议，使其在该领域成为一个技术先进的解决方案。
+    *   在规避工具需求增长的趋势下，Aether 因其自动化、用户友好且具有坚实安全基础的特性，成为一个值得推荐的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/CluvexStudio/Aether)**
+
+### 🎬 Why Land Powers and Sea Powers Can Never Agree on World Order - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   This video features a discussion with historian Sarah Paine on the fundamental and enduring conflict in global geopolitics: the clash between land powers (e.g., Russia, Germany) and sea powers (e.g., Britain, the United States).
+*   Key topics include the historical origins of this dichotomy, the contrasting strategic logics and economic interests of each power type, and how this irreconcilable difference has shaped wars and international systems from the Napoleonic era to the modern day.
+*   It's worth watching for a profound understanding of the deep-seated structural forces that drive international conflicts. Sarah Paine's analysis provides a critical framework for interpreting current global tensions and understanding why a single, universally agreed-upon "world order" remains elusive.
+
+### 🎬 为何陆权与海权永远无法就世界秩序达成共识 - Sarah Paine
+**频道:** Dwarkesh Patel
+*   视频内容概述：本期视频对话历史学家莎拉·佩恩，深入探讨了地缘政治中一个根本且持久的冲突：陆权国家（如俄罗斯、德国）与海权国家（如英国、美国）之间的对抗。
+*   主要话题：讨论涵盖了这一二分法的历史根源、两类强权截然不同的战略逻辑与经济利益，以及这种不可调和的差异如何从拿破仑时代至今塑造了战争与国际体系。
+*   为何值得观看：观看本视频有助于深刻理解驱动国际冲突的深层结构性力量。莎拉·佩恩的分析为解读当前全球紧张局势提供了一个关键框架，并帮助理解为何一个举世公认、单一普适的“世界秩序”始终难以实现。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=HCTzwcMU6Nk)**
+
+### 🎬 Топ GitHub-репозиториев, которые должен знать каждые
+**Channel:** Kata Academy | Shorts
+* This video provides a quick, curated list of essential GitHub repositories that every developer or tech enthusiast should be aware of.
+* Key topics discussed include trending and foundational projects across various domains like development frameworks, tools, learning resources, and community utilities.
+* It's worth watching as a rapid guide to discovering high-quality, influential projects that can enhance your workflow, learning, and contribution to the open-source ecosystem.
+
+### 🎬 每个人都应该知道的热门 GitHub 仓库
+**频道:** Kata Academy | Shorts
+* 本视频快速介绍了一系列每个开发者或技术爱好者都应该了解的精选 GitHub 仓库。
+* 主要话题涵盖了多个领域的热门及基础项目，包括开发框架、工具、学习资源和社区实用工具。
+* 该视频值得观看，因为它是一份快速指南，帮助你发现高质量、有影响力的项目，从而提升你的工作效率、学习水平以及对开源生态的贡献。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=aSwvmdLlgqc)**
 
