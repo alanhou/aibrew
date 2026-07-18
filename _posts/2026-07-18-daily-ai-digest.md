@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 18, 2026"
 date: 2026-07-18
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，7个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -497,4 +497,52 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 该视频值得观看，因为它是一份快速指南，帮助你发现高质量、有影响力的项目，从而提升你的工作效率、学习水平以及对开源生态的贡献。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=aSwvmdLlgqc)**
+
+### Reviving a 15-year-old netbook with Arch Linux
+*   The author attempts to revive a 2009 ASUS Eee PC 1000HE netbook, which has severely limited hardware by modern standards (Intel Atom N280 CPU, 1GB RAM).
+*   They choose Arch Linux 32 (a community-maintained version for 32-bit systems) as the operating system for its minimalist, user-centric philosophy and low resource requirements.
+*   The post details the hands-on installation process, covering steps from verifying the ISO and creating boot media to manually connecting to Wi-Fi and partitioning the disk for a fresh install.
+
+### 用 Arch Linux 赋予十五年前的上网本新生命
+*   作者尝试复活一台 2009 年的华硕 Eee PC 1000HE 上网本，其硬件规格（Intel Atom N280 CPU，1GB RAM）在今天看来已非常落后。
+*   他们选择 Arch Linux 32（由社区维护的适用于32位系统的版本）作为操作系统，因其极简、以用户为中心的设计哲学和较低的资源需求。
+*   文章详细记录了手动的安装过程，涵盖了从验证ISO镜像、创建启动盘，到手动连接Wi-Fi以及为全新安装进行磁盘分区等步骤。
+
+**[Read Original / 阅读原文](https://parksb.github.io/en/article/41.html)**
+
+### Moonstone Interface Navigation
+*   The interface includes a bottom bar visible on larger screens, providing keyboard navigation guidance.
+*   Users can navigate with the up and down arrow keys, make selections with the Enter key, and close panels with the Escape key.
+
+### Moonstone 界面导航
+*   界面底部包含一个仅在较大屏幕上显示的导航栏，提供键盘操作指引。
+*   用户可以使用上下方向键进行导航，按回车键进行选择，按退出键关闭面板。
+
+**[Read Original / 阅读原文](https://moonstone.sh/)**
+
+### Dirt Notebook: Embracing the Messy Side of Note-Taking
+* The author loves taking notes but tends to overly cherish and organize notebooks, which eventually discourages further use, creating a vicious cycle.
+* To break this pattern, they created a dedicated "dirt notebook" nicknamed "The Drainage Channel," using an old, low-quality notebook to force messy, unstructured scribbles for random ideas and quotes.
+* The experiment has been liberating, allowing for free-form thought capture and the enjoyment of rediscovering forgotten ideas at the end of each week.
+
+### “脏笔记簿”：拥抱笔记中的杂乱一面
+* 作者热爱记笔记，但倾向于过度珍视和整理笔记本，这最终会抑制继续使用，形成恶性循环。
+* 为打破这一模式，他们创建了一本专属的“脏笔记簿”，戏称为“排水渠”，使用旧的、纸质低劣的笔记本，强制进行杂乱无章的涂写，用于记录随机想法和引语。
+* 这一实验令人感到解放，允许自由形式的思绪记录，并在每周结束时重新发现被遗忘的想法，从中获得乐趣。
+
+**[Read Original / 阅读原文](https://pinewind.bearblog.dev/i-started-a-dirt-notebook/)**
+
+### 🎬 Free Programs for Game Development! 🎮💯 MrLuchs.de
+**Channel:** MrLuchs Shorts
+*   **What the video covers:** The video is a concise guide to various free software tools and programs that can be used to create video games.
+*   **Key topics discussed:** It lists and likely briefly introduces multiple no-cost game development platforms, engines, or utilities suitable for different types of creators.
+*   **Why it's worth watching:** It provides a valuable starting point for aspiring game developers on a budget, quickly highlighting accessible tools to begin their projects.
+
+### 🎬 免费游戏制作软件大全！🎮💯 MrLuchs.de
+**频道:** MrLuchs Shorts
+*   **视频内容概述:** 本视频是一个简洁的指南，介绍了多款可以用来制作电子游戏的免费软件工具。
+*   **主要话题:** 视频列举并可能简要介绍了多种零成本的游戏开发平台、引擎或实用工具，这些工具适合不同类型的创作者。
+*   **为何值得观看:** 对于预算有限的初级游戏开发者来说，这是一个宝贵的起点，它能快速为你指出那些可以用来启动项目的、易上手的免费工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bNwAhngr7Ec)**
 
