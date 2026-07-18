@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 18, 2026"
 date: 2026-07-18
-description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 13 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，7个快速崛起项目，13个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 18 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：18篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -609,4 +609,114 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看：** 对于希望利用前沿AI开发工具但又对传统编程感到畏惧的专业人士和创作者而言，本课程提供了极具价值的桥梁。它以实用的“剧本”式方法，指导观众构建一个可运作的AI代理或实现个人自动化，非常值得关注。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=jdbOVepEtUE)**
+
+### LG Monitors Secretly Install Software via Windows Update
+* LG monitors automatically install software promoting McAfee subscriptions through Windows Update without user consent, as verified by Gamers Nexus with an LG UltraGear monitor.
+* The issue affects both new and older monitors, with privacy concerns raised due to the software's access to internet and system resources.
+* Dell also uses a similar method to install Alienware Command Center, and users can block this via a Windows Group Policy setting.
+
+### LG显示器通过Windows更新静默安装软件
+* LG显示器通过Windows更新自动安装推广McAfee订阅的软件，未经用户同意，Gamers Nexus已验证此问题。
+* 该问题影响新旧显示器，因软件需要互联网和系统资源访问而引发隐私担忧。
+* 戴尔也使用类似方法安装Alienware Command Center，用户可通过Windows组策略设置阻止此行为。
+
+**[Read Original / 阅读原文](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent)**
+
+### [English Title]
+*   **Problem Tested:** An unpublished NP-hard fiber-network optimization problem (KIRO) with a vast search space.
+*   **Models Compared:** Claude Fable 5 and GPT-5.6 Sol, with and without their native `/goal` mode.
+*   **Key Finding - Model Performance:** Fable 5 is significantly stronger, achieving the best solution and showing greater consistency than GPT-5.6 Sol.
+*   **Key Finding - `/goal` Mode:** The `/goal` feature is not a generic "try harder" switch. It had mixed results, winning some runs but often leading to a worse average performance by sometimes amplifying poor initial decisions.
+
+### [中文标题]
+*   **测试问题：** 一个未公开的NP难光纤网络优化问题（KIRO），搜索空间巨大。
+*   **比较模型：** 测试了Claude Fable 5和GPT-5.6 Sol在启用和未启用其原生`/goal`模式下的表现。
+*   **核心发现（模型表现）：** Fable 5表现远更出色，其产出的最佳解决方案和整体一致性均优于GPT-5.6 Sol。
+*   **核心发现（`/goal`模式）：** `/goal`模式并非通用的“更努力尝试”开关。其效果参差不齐，虽能赢下部分测试，但常常因过度优化初始的不良决策而导致平均结果更差。
+
+**[Read Original / 阅读原文](https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/)**
+
+### The Rekursiv: A Visionary Computer Lost in Time
+*   In 1988, Scottish hi-fi company Linn Products launched the "Rekursiv," a custom object-oriented CPU with revolutionary features like hardware-level memory management, automatic garbage collection, and unified memory-disk persistence.
+*   Its ideas were decades ahead of their time; similar concepts are now found in modern production chips like Arm's CHERI architecture.
+*   However, its design was eclipsed by the rapid rise of powerful, low-cost "killer micros" (like the 386/486 and SPARC), making its specialized hardware economically unviable.
+
+### Rekursiv：迷失在时光中的先驱计算机
+*   1988年，苏格兰音响公司Linn Products推出了名为“Rekursiv”的定制对象导向处理器，它具有革命性功能，如硬件级内存管理、自动垃圾回收以及统一的内存-磁盘持久化存储。
+*   它的理念超越时代数十年；类似的概念如今出现在现代量产芯片中，例如Arm的CHERI架构。
+*   然而，其设计被迅速崛起且低成本的“杀手级微处理器”（如386/486和SPARC）所超越，使其专业化的硬件在经济上难以为继。
+
+**[Read Original / 阅读原文](https://negroniventurestudios.com/2026/07/18/the-computer-at-the-bottom-of-a-canal/)**
+
+### LingBot-Map - Geometric Context Transformer for Streaming 3D Reconstruction
+* **What it does:** A feed-forward 3D foundation model for reconstructing detailed 3D scenes from streaming video data.
+* **Key features:**
+    * **Geometric Context Transformer:** Unifies coordinate grounding, dense geometric cues, and drift correction in a single streaming framework.
+    * **High-Efficiency Inference:** Achieves ~20 FPS streaming on 518×378 resolution via paged KV cache attention, supporting sequences over 10,000 frames.
+    * **State-of-the-Art Performance:** Outperforms existing streaming and iterative optimization methods on diverse benchmarks.
+* **Why it's notable:** It represents a significant advance in real-time 3D scene reconstruction, offering a powerful combination of architectural innovation, inference efficiency, and superior accuracy, as evidenced by its rapid accumulation of stars (827 today).
+
+### LingBot-Map - 用于流式3D重建的几何上下文Transformer
+* **功能介绍：** 一个用于从流式数据中重建场景的前馈3D基础模型。
+* **主要特点：**
+    * **几何上下文Transformer架构：** 在单一的流式框架内，通过锚点上下文、姿态参考窗口和轨迹记忆，统一了坐标定位、密集几何线索和长程漂移校正。
+    * **高效流式推理：** 基于分页KV缓存注意力机制的前馈架构，可在518×378分辨率下以约20 FPS的速度稳定处理超过10,000帧的长序列。
+    * **最先进的重建性能：** 在多个基准测试中，其性能优于现有的流式方法和基于迭代优化的方法。
+* **为何值得关注：** 它在实时3D场景重建领域取得了重大进展，通过架构创新、高效的推理能力和卓越的精度实现了强大的结合。其单日获得的827颗星充分证明了其技术影响力和社区关注度。
+
+**[View Repository / 查看仓库](https://github.com/Robbyant/lingbot-map)**
+
+### Apache Ossie - A Vendor-Neutral Standard for Semantic Metadata Exchange
+*   **What it does:** It defines an industry-wide, open-source specification for standardizing how semantic models (like KPI definitions and business logic) are exchanged between analytics, AI, and BI platforms.
+*   **Key features:** Provides a single JSON- and YAML-based specification (`spec.yaml`), includes reference converters for formats like dbt and Polaris, and offers validation tooling. It aims to eliminate semantic fragmentation.
+*   **Why it's notable:** As an Apache Software Foundation project (formerly Open Semantic Interchange), it tackles the critical problem of inconsistent business logic across different tools, creating a "single source of truth" to ensure data interoperability and reliable AI outputs. Its focus on standardization in the data stack is highly relevant.
+
+### Apache Ossie - 用于语义元数据交换的供应商中立标准
+*   **功能介绍:** 它定义了一项行业范围内的开源规范，旨在标准化分析、AI和BI平台之间语义模型（如KPI定义和业务逻辑）的交换方式。
+*   **主要特点:** 提供了一个统一的基于JSON和YAML的规范 (`spec.yaml`)，包含用于dbt、Polaris等格式的参考转换器，并提供验证工具。其核心目标是解决语义碎片化问题。
+*   **为何值得关注:** 作为Apache软件基金会的项目（前身为Open Semantic Interchange），它致力于解决不同工具间业务逻辑不一致这一关键痛点，为数据互操作性和可靠的AI输出创建了一个“单一事实来源”。其在数据技术栈中推动标准化的 focus 极具现实意义。
+
+**[View Repository / 查看仓库](https://github.com/apache/ossie)**
+
+### ibelick/ui-skills - Skills for Design Engineers
+* **What it does**: Provides a collection of UI/UX skills and resources, accessible via a command-line interface (CLI), to assist design engineers. It routes agents through the appropriate UI skill sets for specific tasks.
+* **Key features**: A CLI tool (`npx ui-skills`) with commands to start the service, list categories, and retrieve specific UI skill sets. It connects to a central resource hub at `ui-skills.com`.
+* **Why it's notable**: The project saw a significant surge in popularity (529 stars in one day), indicating strong interest from the developer/design community as a novel tool for design engineering workflows.
+
+### ibelick/ui-skills - 面向设计工程师的技能库
+* **功能介绍**: 为设计工程师提供一套UI/UX技能与资源集合，并通过命令行界面（CLI）进行访问。它能根据具体任务，将智能体引导至相应的UI技能集。
+* **主要特点**: 提供一个CLI工具（`npx ui-skills`），包含启动服务、列出技能类别和获取特定技能集等命令。它连接到 `ui-skills.com` 这一中心资源平台。
+* **为何值得关注**: 该项目在单日内获得了529颗星，人气激增，表明开发者与设计社区对这个旨在优化设计工程工作流的新工具抱有浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/ibelick/ui-skills)**
+
+### 🎬 FULL Claude Course for Beginners in 2026! (Become a PRO!)
+**Channel:** AI Master
+
+*   This video presents a complete, beginner-friendly course on Claude, an advanced AI model, designed for the year 2026. It's a sponsored tutorial that aims to take viewers from a novice to a proficient user.
+*   Key topics likely include foundational concepts of Claude, practical applications for 2026, effective prompt engineering, and leveraging its capabilities for professional tasks.
+*   It's worth watching for anyone looking to upskill in AI for the near future, offering a structured learning path from scratch to become highly competent with Claude's latest features.
+
+### 🎬 2026年初学者完整Claude课程！（成为高手！）
+**频道:** AI Master
+
+*   本视频为2026年设计，提供了一个面向初学者的完整Claude（一款先进的AI模型）课程。这是一个赞助教程，旨在帮助观众从零开始学习，最终成为熟练用户。
+*   主要话题可能涵盖Claude的基础概念、2026年的实际应用场景、有效的提示工程（Prompt Engineering），以及如何利用其能力完成专业任务。
+*   值得观看的原因是，它为希望提升未来AI技能的人士提供了系统的学习路径，帮助从基础开始，精通Claude在2026年的最新功能。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Fys4oHlXQmQ)**
+
+### 🎬 Claude Code Tutorial for Beginners: Build Website with AI (2026)
+**Channel:** Mikey Website
+* This video provides a beginner-friendly tutorial on using "Claude Code," an AI-powered tool designed to build websites. The tutorial walks viewers through the process of creating a functional website using this technology.
+* Key topics discussed include an introduction to the Claude Code platform, a step-by-step demonstration of building a website from scratch, and how to leverage AI for coding and design tasks to accelerate development.
+* It's worth watching for anyone interested in the no-code or AI-assisted development space, as it offers a practical look at a modern tool that aims to simplify and speed up website creation for beginners.
+
+### 🎬 Claude Code 初学者教程：用 AI 构建网站 (2026)
+**频道:** Mikey Website
+* 本视频是一个面向初学者的教程，介绍了名为“Claude Code”的AI工具，该工具专为构建网站而设计。教程将引导观众了解如何利用这项技术创建一个功能完整的网站。
+* 主要讨论的话题包括：Claude Code平台简介、从零开始构建网站的逐步演示，以及如何利用AI进行编码和设计任务以加速开发过程。
+* 值得观看的原因是，它为对无代码或AI辅助开发领域感兴趣的人提供了一个实用的案例，展示了一个旨在简化并加速网站创建过程的现代工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=OdSXY4YgmZA)**
 
