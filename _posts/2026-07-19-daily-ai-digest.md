@@ -386,3 +386,215 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Fys4oHlXQmQ)**
 
+### Configuration Guide
+* Install Qwen Code successfully.
+* Open Qwen Code and navigate to Settings.
+* Locate the provider section and select Qwen Cloud Coding Plan.
+* Sign in using your Qwen Cloud account credentials.
+* Confirm the selection and save the settings.
+* Begin coding with Qwen Cloud integrated within Qwen Code.
+
+### 配置指南
+* 成功安装 Qwen Code。
+* 打开 Qwen Code 并前往设置。
+* 找到服务商部分，选择 Qwen Cloud 编码计划。
+* 使用您的 Qwen Cloud 账户登录并确认。
+* 保存设置。
+* 在 Qwen Code 中开始使用 Qwen Cloud 进行编码。
+
+**[Read Original / 阅读原文](https://www.qwencloud.com/pricing/token-plan)**
+
+### Hardware Development Doesn't Have to Be Daunting
+*   Author Chip Weinberger shares his experience selling 2500 MIDI recorders, concluding that building hardware was surprisingly straightforward.
+*   Despite the common adage "hardware is hard," the process—from prototyping to assembly—went smoother than expected, especially when compared to the massive software effort involved.
+*   He attributes this to intentionally keeping the product simple and offers 10 key practical recommendations for successfully shipping hardware products at a medium scale.
+
+### 硬件开发并非想象中那么艰难
+*   作者奇普·温伯格分享了他销售2500台MIDI录音器的经验，得出结论：制作硬件的过程出乎意料地简单。
+*   尽管业界常说“硬件很难”，但与庞大的软件开发工作量相比，从原型设计到组装的整个硬件流程都异常顺利。
+*   他将此归因于有意保持产品设计的简单化，并提出了10条实现中等规模硬件成功出货的关键实用建议。
+
+**[Read Original / 阅读原文](https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard)**
+
+### Cozy Sidebar Update in Blender 5.2 LTS
+* Introduces a **Compact** mode to maximize sidebar space by converting tabs into squares.
+* Tab labels can display the first two letters of the name, the first two letters of each word, or an icon.
+* Supports custom icons via `bl_icon`, similar to how `bl_category` defines panel names.
+* Enhances usability with click-drag tab switching and maintains a visible sidebar even with a single tab.
+
+### Blender 5.2 LTS 侧边栏优化
+* 新增 **紧凑** 模式，将标签页转化为方形以优化侧边栏空间利用。
+* 标签可显示名称首两字母、单词首两字母或自定义图标。
+* 通过 `bl_icon` 属性支持图标设置，类似于 `bl_category` 定义面板名称的方式。
+* 优化交互体验：支持拖拽切换标签页，且单标签时侧边栏始终保持可见。
+
+**[Read Original / 阅读原文](https://www.blender.org/download/releases/5-2/)**
+
+### code-review-graph - Local-first Code Intelligence Graph for AI Tools
+* What it does: Builds a persistent, structural map of your codebase using Tree-sitter. It allows AI coding assistants (via MCP) to read only the minimal, relevant files for tasks like code reviews, drastically reducing token consumption and cost.
+* Key features: **Blast-radius analysis** to trace the impact of changes, **incremental updates** in under 2 seconds, **broad language coverage** (20+ languages, Jupyter notebooks), and **auto-configuration** for 15+ AI platforms (Copilot, Cursor, Claude Code, etc.).
+* Why it's notable: It directly solves the "token waste" problem where AI tools repeatedly scan entire repositories. It boasts **38x to 528x token reductions** on real-world projects, making large-repo workflows efficient. Its recent surge (551 stars today) indicates strong community interest in optimizing AI-assisted development.
+
+### code-review-graph - 面向AI工具的本地优先代码智能图谱
+* 功能介绍: 使用Tree-sitter构建代码库的持久化结构图谱，通过MCP协议为AI编程助手提供精确的上下文，使其仅读取完成任务（如代码审查）所必需的文件，从而大幅降低Token消耗和成本。
+* 主要特点: **影响域分析**追踪变更的连锁影响，**增量更新**速度快（2秒内），**广泛的语言支持**（20+种语言，含Jupyter），以及为**15+个AI平台**（如Copilot, Cursor, Claude Code等）提供一键自动配置。
+* 为何值得关注: 它从根本上解决了AI工具反复扫描整个仓库导致的“Token浪费”问题。基准测试显示其能实现**38至528倍的上下文缩减**，显著提升了大型代码库工作流的效率。今日获得551颗星，反映了社区对优化AI辅助开发的高度关注。
+
+**[View Repository / 查看仓库](https://github.com/tirth8205/code-review-graph)**
+
+### KTransformers - 用于大语言模型异构推理与微调的灵活框架
+
+*   **功能介绍**
+    KTransformers 是一个专注于通过 CPU-GPU 异构计算来实现高效大语言模型（LLM）推理和微调的研究项目。它提供两大核心能力：
+    1.  **高性能推理（Inference）**：利用针对 CPU 优化的内核（kt-kernel）进行异构服务，特别擅长处理专家混合（MoE）模型。
+    2.  **微调（SFT）**：与 LLaMA-Factory 框架深度集成，实现对超大规模 MoE 模型的高效微调。
+
+*   **主要特点**
+    *   **AMX/AVX 加速**：针对 Intel AMX、AVX512/AVX2 指令集优化的内核，支持 INT4/INT8 量化推理。
+    *   **MoE 优化**：采用 NUMA 感知内存管理的高效专家混合模型推理，支持将“热专家”置于 GPU、“冷专家”置于 CPU 的异构调度。
+    *   **全面的量化支持**：支持 CPU 端的 INT4/INT8 量化权重，以及 GPU 端的 GPTQ/FP8 等格式。
+    *   **简便集成**：提供清晰的 Python API，便于与 SGLang 等推理框架集成。
+    *   **超大模型微调**：在有限的 GPU 显存下（如单张 24GB 显卡）即可对 DeepSeek-V3/R1 等超大 MoE 模型进行微调，比 ZeRO-Offload 快 6-12 倍。
+    *   **多后端与硬件支持**：支持多种 GPU（NVIDIA、AMD ROCm、Intel Arc、华为昇腾 NPU）及 CPU 后端（包括仅支持 AVX2 的 CPU）。
+
+*   **为何值得关注**
+    *   **快速迭代与广泛模型支持**：更新非常频繁，能第一时间支持最新的大模型（如 DeepSeek-V4-Flash、GLM-5.2、MiniMax-M3 等），并提供详细教程。
+    *   **显著的性能提升**：在消费级硬件上显著提升大模型的推理速度和微调效率，例如在单卡 24GB 显存下将 DeepSeek-V3 的上下文长度从 4K 扩展到 139K。
+    *   **解决实际痛点**：有效解决了在有限硬件资源（尤其是 GPU 显存）上运行和微调超大规模模型的难题，降低了使用门槛。
+    *   **学术与社区背景**：由清华大学 MADSys Lab 等团队开发，并在操作系统顶会 SOSP 2025 发表了相关论文，具有坚实的学术基础和活跃的社区支持。
+
+### KTransformers - 面向大语言模型异构推理/微调的灵活优化框架
+
+*   **功能介绍**
+    KTransformers 是一个专注于通过 CPU-GPU 异构计算优化大语言模型（LLM）推理与微调效率的研究项目。它目前提供两个核心用户功能：
+    1.  **高性能推理**：利用专为 CPU 优化的内核（kt-kernel）进行异构服务，特别针对专家混合（MoE）模型进行了优化。
+    2.  **微调**：与 LLaMA-Factory 框架集成，实现对超大规模 MoE 模型的高效微调。
+
+*   **主要特点**
+    *   **AMX/AVX 加速**：针对 Intel AMX、AVX512/AVX2 指令集深度优化的内核，支持 INT4/INT8 量化推理。
+    *   **MoE 专家调度优化**：采用 NUMA 感知内存管理的高效专家混合模型推理，并支持将“热专家”置于 GPU、“冷专家”置于 CPU 的异构调度策略。
+    *   **全面的量化支持**：支持 CPU 端的 INT4/INT8 量化权重，以及 GPU 端的 GPTQ/FP8 等量化格式。
+    *   **简便的集成接口**：提供清晰的 Python API，方便与 SGLang 等主流推理框架集成。
+    *   **超大模型微调能力**：在有限的 GPU 显存下（如单卡 24GB）即可对 DeepSeek-V3/R1 等参数量巨大的 MoE 模型进行微调，基准测试速度比 ZeRO-Offload 快 6-12 倍。
+    *   **广泛的硬件兼容性**：支持多种 GPU（NVIDIA、AMD ROCm、Intel Arc、华为昇腾 NPU）以及包括仅支持 AVX2 指令集在内的多种 CPU 后端。
+
+*   **为何值得关注**
+    *   **更新迅速，模型支持广泛**：项目迭代非常快，能第一时间适配并支持最新的大模型（如 DeepSeek-V4-Flash、GLM-5.2、MiniMax-M3 等），且提供详尽的使用教程。
+    *   **显著的性能与成本优化**：在消费级硬件上显著提升了大模型推理和微调的速度与效率，例如在单卡 24GB 显存下将 DeepSeek-V3 的上下文长度从 4K 扩展到 139K，极大降低了硬件门槛。
+    *   **直击行业痛点**：有效解决了在有限硬件资源（特别是 GPU 显存紧张）情况下，高效运行和微调超大规模模型的难题，使得在普通硬件上进行前沿研究和开发成为可能。
+    *   **坚实的学术与社区基础**：由清华大学 MADSys Lab 等团队开发，并在操作系统领域顶会 SOSP 2025 发表了相关论文，项目具有很强的学术严谨性和活跃的社区支持。
+
+**[View Repository / 查看仓库](https://github.com/kvcache-ai/ktransformers)**
+
+### ai-engineering-from-scratch - 从零开始的AI工程学习课程
+* **What it does**
+这是一个全面、免费的开源AI工程学习课程，旨在帮助学习者从零开始系统性地掌握AI技术。它包含503节课、20个阶段，覆盖Python、TypeScript、Rust、Julia多种语言，从线性数学基础一直延伸到自主多智能体系统，预计学习时长约320小时。
+* **Key features**
+  * **结构化课程**：20个阶段层层递进，确保扎实的知识体系。
+  * **实践驱动**：每节课都遵循“构建-使用-发布”的循环，先从数学原理手写实现，再使用生产级库，并产出可复用的提示词、技能、智能体或MCP服务器。
+  * **内置AI助手技能**：提供如 `/find-your-level`（水平测试）和 `/check-understanding`（阶段性测验）等技能，可与Claude、Cursor等AI工具集成，实现个性化学习路径。
+  * **产出即资产**：学习结束时，你将拥有一个由503个可直接部署或集成的工具组成的个人作品集。
+* **Why it's notable**
+它直面当前AI教育的痛点：许多学习者会使用AI工具，但缺乏扎实的底层理解。此课程通过“亲手构建一切”的方式，让学习者真正理解AI的运作原理，而非仅仅调用API。它完全免费、开源（MIT协议），且内容高度结构化和实用，旨在培养具备端到端能力的AI工程师。
+
+### ai-engineering-from-scratch - 从零开始的AI工程学习课程
+* **功能介绍**
+这是一个系统性的AI工程学习课程，包含503节课和20个学习阶段。课程从数学基础开始，逐步深入机器学习、深度学习、大语言模型（LLM）、智能体工程及生产部署，覆盖Python、TypeScript、Rust、Julia等多门编程语言，总学习时长约320小时。
+* **主要特点**
+  * **体系化学习路径**：20个阶段环环相扣，确保知识连贯性，避免碎片化学习。
+  * **“构建、使用、发布”教学法**：每节课先从零实现核心算法（Build It），再用生产级框架复现（Use It），最后生成可复用的工具（Ship It）。
+  * **与AI开发工具深度集成**：内置`/find-your-level`（智能分班）和`/check-understanding`（阶段测验）等技能，可无缝对接主流AI编程助手，提升学习效率。
+  * **以产出为导向**：每节课都会生成一个实际可用的产物（如提示词模板、技能文件、智能体代码或MCP服务器），学习过程即积累作品集。
+* **为何值得关注**
+它精准地解决了“会用AI工具”与“理解AI原理”之间的鸿沟。课程强调从第一性原理出发动手构建，确保学习者不仅知其然，更知其所以然。作为一个完全免费、开源且结构严谨的资源，它为希望真正掌握AI工程技术、而非仅停留在应用层的学习者提供了一条清晰、实践性强的路径。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/ai-engineering-from-scratch)**
+
+### 🎬 Netflix CPTO on AI and the future of product and tech roles | Elizabeth Stone
+**Channel:** Lenny's Podcast
+* **What the video covers:** An in-depth interview with Elizabeth Stone, Netflix's Chief Product and Technology Officer (CPTO), discussing how artificial intelligence is fundamentally reshaping product development, engineering, and leadership within one of the world's largest tech companies.
+* **Key topics discussed:** The practical integration of AI into Netflix's product and technology stack, the evolving responsibilities of product managers and engineers in an AI-first world, how to build and lead effective teams in this new era, and the strategic thinking required for tech leadership.
+* **Why it's worth watching:** It offers rare, high-level insight from a top tech executive on implementing AI strategy at scale. It's essential viewing for product managers, engineers, and tech leaders trying to understand how their roles must adapt and what skills will be critical in the near future.
+
+### 🎬 Netflix CPTO 谈 AI 与产品技术职位的未来 | Elizabeth Stone
+**频道:** Lenny's Podcast
+* **视频内容概述：** 本视频是对 Netflix 首席产品与技术官（CPTO）Elizabeth Stone 的深度专访，探讨了人工智能如何从根本上重塑这家全球顶尖科技公司的产品开发、工程实践及领导力模式。
+* **主要话题：** AI 在 Netflix 产品与技术体系中的实际整合，产品经理和工程师在 AI 优先时代下的职责演变，如何在此新浪潮中组建并领导高效团队，以及技术领导者所需的战略思维。
+* **为何值得观看：** 本访谈从顶尖科技高管的视角，提供了在规模化实施 AI 战略方面的独到见解。对于产品经理、工程师和技术领导者而言，这是理解自身角色如何必须适应以及未来哪些技能将至关重要的必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=t0GiTyz4syY)**
+
+### 🎬 Why Industrialized Nations Rule the Modern World - Sarah Paine
+**Channel:** Dwarkesh Patel
+* This video features historian Sarah Paine exploring the historical and geopolitical foundations of why industrialized nations hold dominance in the contemporary global order.
+* Key topics include the transformative impact of the Industrial Revolution, the development of modern state systems, economic power dynamics, and the interplay between technological advancement and political authority.
+* It's worth watching for its deep, academic perspective that connects historical processes to current global hierarchies, moving beyond surface-level analysis to explain enduring power structures.
+
+### 🎬 为何工业化国家主导了现代世界 - 萨拉·佩恩
+**频道:** Dwarkesh Patel
+* 本视频邀请了历史学家萨拉·佩恩，深入探讨工业化国家在当今全球秩序中占据主导地位的历史与地缘政治根源。
+* 主要话题涵盖工业革命的变革性影响、现代国家体系的建立、经济权力动态，以及技术进步与政治权威之间的相互作用。
+* 值得观看是因为它提供了深刻的学术视角，将历史进程与当今全球等级体系联系起来，超越了表层分析，解释了持久的权力结构。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=dQPQOyljXLY)**
+
+### 🎬 Why Land Powers and Sea Powers Can Never Agree on World Order - Sarah Paine
+**Channel:** Dwarkesh Patel
+*   This video presents a lecture by Professor Sarah Paine on the fundamental and enduring geopolitical conflict between land-based powers (like Russia, China, Germany) and sea-based powers (like the US, UK, Japan).
+*   Key topics include the divergent security imperatives, economic interests, and strategic doctrines of these two categories of nations. It explores how geography dictates a state's grand strategy, leading to an inherent and likely irreconcilable clash over the structure of the international system.
+*   It's worth watching for its clear, historical analysis of a major fault line in international relations. The lecture provides a powerful framework for understanding current global tensions (e.g., in the Indo-Pacific or Europe) beyond simple ideology, grounding them in long-standing geopolitical realities.
+
+### 🎬 为何陆权国家与海权国家永远无法就世界秩序达成一致 - Sarah Paine
+**频道:** Dwarkesh Patel
+*   本视频是莎拉·佩恩教授的讲座，深入剖析了陆权国家（如俄罗斯、中国、德国）与海权国家（如美国、英国、日本）之间根本性的、持久的地缘政治冲突。
+*   主要话题涵盖这两类国家不同的安全需求、经济利益和战略学说。讲座探讨了地理环境如何决定了一个国家的大战略，从而导致在国际体系结构问题上产生固有且可能无法调和的冲突。
+*   值得观看是因为它清晰、富有历史纵深地分析了国际关系中的一条主要断层线。该讲座提供了一个强有力的框架，帮助我们超越简单的意识形态视角，去理解当前全球紧张局势（例如在印太或欧洲地区），将其根源植根于持久的地缘政治现实之中。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=HCTzwcMU6Nk)**
+
+### 🎬 Git and Github Tutorial For Beginners (Full Course)
+**Channel:** CodeWithHarry
+*   What the video covers
+    This is a comprehensive, full-length course designed to take absolute beginners from the very basics to a practical understanding of version control using Git and collaborative development on GitHub.
+*   Key topics discussed
+    *   The fundamental concepts of version control and why Git is essential.
+    *   Core Git commands: `init`, `add`, `commit`, `status`, `log`, `branch`, `merge`, `clone`, `push`, `pull`.
+    *   Setting up and navigating a local Git repository.
+    *   Understanding and using GitHub for remote repositories.
+    *   The workflow for collaborating with others: forking, pull requests, and resolving merge conflicts.
+    *   Best practices for writing commit messages and organizing project history.
+*   Why it's worth watching
+    This video is an all-in-one resource that methodically builds a solid foundation in Git and GitHub, which are indispensable tools for any developer or technical collaborator. CodeWithHarry's teaching style is known for being clear, practical, and engaging, making complex topics accessible. The inclusion of a downloadable handbook provides excellent supplementary material for revision and reference.
+
+### 🎬 Git 和 Github 初学者完整教程（完整课程）
+**频道:** CodeWithHarry
+*   视频内容概述
+    这是一门为绝对初学者设计的综合性完整课程，旨在引导学习者从最基本的版本控制概念出发，直至掌握在 GitHub 上进行协作开发的实际技能。
+*   主要话题
+    *   版本控制的基本概念以及 Git 的必要性。
+    *   核心 Git 命令：`init`, `add`, `commit`, `status`, `log`, `branch`, `merge`, `clone`, `push`, `pull`。
+    *   如何设置和操作本地 Git 仓库。
+    *   理解和使用 GitHub 来管理远程代码仓库。
+    *   团队协作工作流：Fork、Pull Request 以及如何解决合并冲突。
+    *   撰写提交信息和组织项目历史的最佳实践。
+*   为何值得观看
+    该视频是一个“一站式”资源，能够系统性地帮助开发者打下坚实的 Git 和 GitHub 基础——这两项工具对于任何开发者和技术协作者都至关重要。CodeWithHarry 以清晰、实用且引人入胜的教学风格著称，能将复杂的概念讲解得通俗易懂。视频附带的电子手册也为复习和参考提供了极好的补充材料。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AB3J8ufDYHQ)**
+
+### 🎬 Create An App Without Coding 😱 #factoholic #facts #factholic #replit
+**Channel:** What If Hub
+
+*   This video demonstrates how to build a fully functional application from scratch without writing any code.
+*   It showcases AI-powered no-code platforms like **Replit**, explaining their features, workflow, and how they leverage artificial intelligence to generate code based on natural language descriptions or visual interfaces.
+*   **Why it's worth watching:** It provides a practical, accessible guide for aspiring creators and entrepreneurs, showing that software development is no longer limited to those with technical coding skills. It highlights a significant shift in how technology is built.
+
+### 🎬 不用编程就能创建应用 😱 #factoholic #facts #factholic #replit
+**频道:** What If Hub
+
+*   视频演示了如何从零开始构建一个功能完整的应用程序，全程无需编写一行代码。
+*   主要介绍了 **Replit** 等由人工智能驱动的无代码平台，解释了它们的核心功能、工作流程，以及如何通过自然语言描述或可视化界面来生成代码。
+*   **为何值得观看：** 它为有抱负的创作者和创业者提供了一份实用且易于上手的指南，证明软件开发不再仅限于拥有技术编程能力的人。视频揭示了技术构建方式正在发生的重大变革。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tNKAebAfm9Q)**
+
