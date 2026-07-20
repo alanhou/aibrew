@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 21, 2026"
 date: 2026-07-21
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -217,4 +217,190 @@ The request was rejected because it was considered high risk
 *   这是一个真实的汽车诊断案例研究，展示了超越标准故障码扫描的高级汽车诊断工作。对于技术人员和汽车爱好者来说，它有助于理解现代汽车防盗系统的复杂性，以及当标准流程失败时所需的解决问题思维，非常值得观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IOEVfZqMcb8)**
+
+### Kimi Work: Next-Gen Desktop AI Agent for Knowledge Workers
+*   Demonstrates advanced file search and document processing capabilities within a user's local workspace.
+*   Executes complex, natural language commands to locate specific PDFs (e.g., those containing "quarterly report") and generates summaries while preserving the original files.
+*   Features a modern, responsive UI with dark mode support and intuitive prompt display for seamless interaction.
+
+### Kimi Work：面向知识工作者的下一代桌面AI智能体
+*   展示在用户本地工作区中进行高级文件搜索与文档处理的能力。
+*   可执行复杂的自然语言指令，定位特定PDF文件（例如包含“季度报告”的文件），并在保留原始文件的同时生成摘要。
+*   具备现代、响应式的用户界面，支持深色模式，并通过直观的提示展示实现无缝交互。
+
+**[Read Original / 阅读原文](https://www.kimi.com/products/kimi-work)**
+
+### Jelly UI - Soft Web Components
+*   A dependency-free Web Components library for creating soft, tactile product interfaces.
+*   Key features include dark mode, right-to-left (RTL) support, and built-in WCAG AA color tokens for accessibility.
+*   Offers 40 custom elements and can be implemented with a single script tag.
+
+### Jelly UI - 柔感网页组件库
+*   一个无依赖的网页组件库，用于打造柔和、富有触感的产品界面。
+*   核心特性包括暗色模式、从右到左（RTL）布局支持以及内置的符合WCAG AA标准的色彩令牌，确保无障碍访问。
+*   提供40个自定义元素，只需一个脚本标签即可引入使用。
+
+**[Read Original / 阅读原文](https://jelly-ui.com/)**
+
+### Nativ - Run AI locally on your Mac
+*   Contrasts with other "local AI" apps, criticizing them as proprietary shells over open-source engines with closed UIs, paywalls, and opaque data practices.
+*   Highlights Nativ's commitment to being fully open-source; the desktop app's code for the UI, model loading, and telemetry is publicly accessible for reading, forking, or contributing.
+*   States a mission of independence: no venture capital roadmap, no enterprise tier, and no dark patterns for training data, emphasizing it is software built by researchers and hackers for their peers.
+
+### Nativ - 在您的 Mac 上本地运行 AI
+*   与其他“本地AI”应用形成对比，批评它们是基于开源引擎构建的专有外壳，具有封闭的界面、付费墙和不透明的数据处理方式。
+*   强调 Nativ 完全开源的承诺；桌面应用的界面、模型加载和遥测图表等每一行代码都公开可访问，可供阅读、分支或提交拉取请求。
+*   阐明其独立使命：没有风险投资路线图，没有企业级版本，没有将您的提示转化为训练数据的“黑暗模式”，强调这是一款由研究人员和黑客为同行打造的软件。
+
+**[Read Original / 阅读原文](https://blaizzy.github.io/nativ/)**
+
+### AI Engineering From Scratch - A Complete Hands-On Curriculum for AI Mastery
+*   **What it does**: It is a comprehensive, end-to-end curriculum designed to teach AI engineering from foundational mathematics (like linear algebra and backpropagation) all the way to deploying advanced autonomous agent swarms. The learning path spans 20 phases and 503 lessons, covering Python, TypeScript, Rust, and Julia.
+*   **Key features**:
+    *   **Structured, Build-It-First Learning**: Each of the 503 lessons follows a "Problem -> Concept -> Build It (from scratch) -> Use It (with libraries) -> Ship It" methodology.
+    *   **Reusable Artifact Output**: Every single lesson produces a tangible tool for your workflow—a prompt, a skill, an agent, or an MCP server—creating a portfolio of 503 artifacts you understand because you built them.
+    *   **Integrated Agent Skills**: Comes with built-in interactive agent skills (like `/find-your-level`) for personalized learning paths and self-assessment within AI coding assistants.
+*   **Why it's notable**: It's a massive, trending open-source project (846 stars today, 150k+ readers) that addresses the critical gap between using AI tools and understanding them professionally. Its radical, code-first approach and the creation of immediately usable engineering artifacts distinguish it from traditional, theory-heavy courses.
+
+### AI工程实践指南 - 一个从零开始掌握AI的全面实战课程
+*   **功能介绍**：这是一个完整的AI工程课程体系，从基础数学（如线性代数、反向传播）教学到部署高级自主代理集群。学习路径包含20个阶段和503节课，涵盖Python、TypeScript、Rust和Julia等多种语言。
+*   **主要特点**：
+    *   **结构化、先构建后使用的教学法**：每节课都遵循“发现问题 -> 理解概念 -> 从零构建 -> 应用框架 -> 实战输出”的六步循环。
+    *   **输出可复用的工具化成果**：每节课都会产出一个可用于工作流的实体——提示词、技能、智能体或MCP服务器，最终形成一个由你亲手构建并理解的503件工具组成的工程集。
+    *   **内置智能体技能**：提供可直接在AI编程助手中使用的交互式技能（如`/find-your-level`），用于个性化学习路径规划和知识自测。
+*   **为何值得关注**：该项目是一个迅速崛起的大型开源项目（今日获846星，读者超15万），直面了大量使用者“会用AI工具”与“能专业运用AI”之间的巨大鸿沟。其彻底的“代码优先”实战路径和产出即用型工程成果的设计理念，使其有别于传统偏重理论的教程。
+
+**[View Repository / 查看仓库](https://github.com/rohitg00/ai-engineering-from-scratch)**
+
+### Agency Agents - A Complete AI Agency at Your Fingertips
+*   **What it does**: It is a comprehensive, curated collection of specialized AI agent personalities designed for specific professional roles. These agents, from "Frontend Developers" to "Reddit Community Ninjas," are equipped with unique personalities, workflows, and the ability to produce tangible deliverables like code, processes, and documentation.
+*   **Key features**: Includes over 100 specialized AI agents across divisions like Engineering, Security, and Marketing. Features easy installation via a native desktop app (macOS, Linux, Windows) or command-line scripts for tools like Claude Code, Cursor, and Gemini CLI. Each agent is defined in a Markdown file detailing its identity, mission, and success metrics.
+*   **Why it's notable**: It's trending for providing a plug-and-play "dream team" of AI experts, moving beyond generic prompts to create consistent, role-specific AI assistants. The project's popularity (744 stars in one day) and the availability of a dedicated application highlight its utility in streamlining complex, multi-disciplinary workflows.
+
+### Agency Agents - 手到擒来的完整AI代理团队
+*   **功能介绍**：这是一个精心策划的专业AI代理人格集合，每个代理都针对特定职业角色量身定制。从“前端开发者”到“Reddit社区忍者”，这些代理拥有独特的个性、工作流程，并能产出代码、流程和文档等切实成果。
+*   **主要特点**：包含超过100个专业AI代理，涵盖工程、安全、市场等部门。支持通过原生桌面应用（macOS、Linux、Windows）或命令行脚本轻松安装到Claude Code、Cursor、Gemini CLI等工具中。每个代理都由Markdown文件定义，详细说明了其身份、使命和成功指标。
+*   **为何值得关注**：该项目因提供了即插即用的AI“梦之队”而备受关注，超越了通用提示词，能够创建一致的、角色专用的AI助手。其快速获得的人气（一天内744星）以及专用应用程序的推出，凸显了它在简化复杂多学科工作流程方面的实用价值。
+
+**[View Repository / 查看仓库](https://github.com/msitarzewski/agency-agents)**
+
+### img2threejs - Image-to-3D Code Generator for Three.js
+*   **What it does:** This tool analyzes a single reference image of an object and automatically generates a procedural, code-based Three.js model that recreates the object. The output is not a mesh file, but a TypeScript factory function built from primitives, shaders, and generated geometry, ready for animation in the browser.
+*   **Key features:**
+    *   **Procedural Reconstruction-by-Code:** Builds 3D models from code (shapes, materials, geometry) rather than extracting meshes, ensuring token efficiency and scalability.
+    *   **Quality-Gated Pipeline:** Employs a multi-stage sculpting workflow (`blockout` → `structural` → `form` → `material` → etc.) where each pass requires agent-vision validation against the reference before proceeding.
+    *   **Animation-Ready Output:** The generated model includes a runtime hierarchy (pivots, sockets, colliders) for immediate use in interactive scenes.
+    *   **Agent-Agnostic:** Designed to work with various AI coding assistants (e.g., Claude Code, Codex) by using their provided vision tools.
+*   **Why it's notable:** It represents a novel approach to AI-assisted 3D modeling, focusing on generating lightweight, editable code instead of heavy 3D assets. Its strict quality gates and self-correction loop aim to produce reliable, high-fidelity results. The entire pipeline is implemented in zero-dependency Python scripts, making it easy to use and modify.
+
+### img2threejs - 图像转Three.js代码生成器
+*   **功能介绍：** 该工具能分析物体的单张参考图像，并自动生成一个基于程序化代码的 Three.js 模型来重建该物体。输出的不是一个网格文件，而是一个从基本形状、着色器和生成几何体构建的 TypeScript 工厂函数，可直接在浏览器中用于动画。
+*   **主要特点：**
+    *   **程序化代码重建：** 通过代码（形状、材质、几何体）构建3D模型，而非提取网格，确保了token的高效性和可扩展性。
+    *   **质量门控流程：** 采用多阶段雕刻流程（`基础形状` → `结构` → `形态` → `材质` 等），每个阶段都要求AI视觉代理根据参考图进行验证后才能继续。
+    *   **动画就绪输出：** 生成的模型包含运行时层级结构（枢轴、插槽、碰撞体），可直接用于交互式场景。
+    *   **代理无关性：** 设计上可与多种AI编程助手（如 Claude Code, Codex）协作，使用其提供的视觉工具。
+*   **为何值得关注：** 它代表了一种AI辅助3D建模的新颖方法，专注于生成轻量、可编辑的代码，而非沉重的3D资产。其严格的质量门控和自修正循环旨在产生可靠、高保真的结果。整个流程由零依赖的Python脚本实现，易于使用和修改。
+
+**[View Repository / 查看仓库](https://github.com/hoainho/img2threejs)**
+
+### Conversation Stenography - Hide secret messages in plain sight using LLMs
+*   **What it does**: This tool allows two people to conduct a completely private conversation through any messaging app (like WhatsApp or Telegram). It encrypts your secret messages and uses a local AI model to generate innocent, natural-sounding cover text that contains the hidden data. Recipients can then decode the cover text back into the original message.
+*   **Key features**:
+    *   **Covert Communication**: Messages are hidden within normal-looking chat text, making them indistinguishable from regular conversation.
+    *   **Strong Security**: Uses military-grade AES-SIV encryption with a conversation chain to detect tampering.
+    *   **Fully Local & Offline**: The AI model runs entirely on your device; no data is sent to the cloud.
+    *   **Ease of Use**: Features a setup wizard, supports multiple models (including GPT-2 and Llama), and provides commands for simulated testing.
+*   **Why it's notable**: In an era of increasing surveillance and scanning of private messages, this project offers a practical, open-source implementation of steganography using modern LLMs. It demonstrates how common AI technology can be repurposed for enhanced personal privacy.
+
+### Conversation Stenography - 利用大语言模型在普通对话中隐藏秘密信息
+*   **功能介绍**: 该工具允许两人通过任何即时通讯应用（如WhatsApp或Telegram）进行完全私密的对话。它将你的秘密消息加密，然后利用本地AI模型生成看似无害、自然流畅的“伪装文本”来承载这些隐藏数据。接收方则可以将伪装文本解码还原为原始信息。
+*   **主要特点**:
+    *   **隐蔽通信**: 信息隐藏在普通的聊天文本中，与正常对话无异。
+    *   **高强度安全**: 采用AES-SIV军用级加密算法，并引入会话链机制以检测任何篡改、删除或乱序操作。
+    *   **完全本地离线运行**: AI模型完全在本地设备上运行，不会向云端发送任何数据。
+    *   **使用便捷**: 提供设置向导，支持多种模型（包括GPT-2和Llama），并提供模拟测试命令。
+*   **为何值得关注**: 在政府监控和信息扫描日益普遍的背景下，该项目是一个具有实际意义的开源实现，它利用现代大语言模型技术为个人隐私保护提供了一种创新的“信息隐写术”方案。
+
+**[View Repository / 查看仓库](https://github.com/nethical6/conversation-steganography)**
+
+### 🎬 Codex just got better for developers
+**Channel:** OpenAI
+*   **What the video covers:** An update from OpenAI detailing the latest improvements and new features for Codex, their AI-powered tool designed to assist developers with coding tasks.
+*   **Key topics discussed:** The announcement highlights major enhancements, specifically mentioning the integration of new models like **GPT‑5.6** and **Ultra**, alongside other updates aimed at improving performance and developer experience.
+*   **Why it's worth watching:** For developers using or interested in AI coding assistants, this video is essential. It provides a direct look at how Codex is evolving, detailing new capabilities that could significantly boost productivity and code quality. Understanding these updates helps developers leverage the tool's latest potential.
+
+### 🎬 Codex开发者功能全新升级
+**频道:** OpenAI
+*   **视频内容概述:** OpenAI 官方视频，介绍其专为开发者设计的AI编程助手 Codex 的最新功能更新与改进。
+*   **主要话题:** 视频重点宣布了多项重大升级，特别提及了集成 **GPT‑5.6** 和 **Ultra** 等新型号模型，并带来其他旨在提升性能和优化开发者体验的新功能。
+*   **为何值得观看:** 对于正在使用或对AI编程助手感兴趣的开发者而言，本视频必看。它直接展示了 Codex 的演进方向，详细说明了可能大幅提升编码生产力和代码质量的新能力。了解这些更新有助于开发者充分利用该工具的最新潜力。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eiQgljOrkWU)**
+
+### 🎬 Programming Thinking
+**Channel:** Visual Kernel**
+*   A foundational course focusing on developing the essential **mindset and problem-solving skills** required for programming, rather than teaching a specific language or syntax.
+*   Key topics include breaking down complex problems, understanding logic flow, algorithmic thinking, and approaching code with a structured, analytical perspective.
+*   This video is worth watching as it addresses the crucial, often-overlooked **prerequisite to coding**. It's an excellent starting point for absolute beginners or anyone looking to solidify their core computational thinking skills before diving into technical tutorials.
+
+### 🎬 编程思维
+**频道:** Visual Kernel**
+*   这是一个基础课程，重点培养编程所需的**核心思维模式与问题解决能力**，而非教授特定的编程语言或语法。
+*   主要讨论的话题包括：分解复杂问题、理解逻辑流程、算法思维，以及如何以结构化和分析的视角来编写代码。
+*   本视频值得观看，因为它阐述了编程中一个至关重要却常被忽略的**先决条件**。对于编程初学者或希望在学习具体技术教程前巩固核心计算思维能力的人来说，这是一个绝佳的起点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KtBefDeECVU)**
+
+### 🎬 You’re Not Behind (Yet): How to Build Your First AI Agent (Full Guide)
+**Channel:** Dan Martell
+* **What the video covers:** A step-by-step, beginner-friendly guide to building your first AI agent, aimed at those who feel they're just getting started in AI.
+* **Key topics discussed:** The fundamentals of AI agents, a practical framework for development, and an invitation to access an AI Company Operating System.
+* **Why it's worth watching:** It offers a clear, actionable roadmap for non-experts to enter the AI agent space, demystifying the process and providing immediate resources for implementation.
+
+### 🎬 你还没落后（暂时）：如何构建你的第一个AI智能体（完整指南）
+**频道:** Dan Martell
+* **视频内容概述：** 为AI新手或认为自己尚未起步的人士提供一份全面、易懂的构建首个AI智能体的分步指南。
+* **主要话题：** 探讨AI智能体的核心概念、具体的开发实践框架，并介绍获取AI公司运营系统的资源。
+* **为何值得观看：** 该视频为非技术背景的观众提供了清晰、可行的路径，帮助他们理解和进入AI智能体开发领域，同时提供了可立即使用的实用工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Bm84BAtOfQw)**
+
+### 🎬 Python for Beginners with Hands-On Projects
+**Channel:** freeCodeCamp.org
+*   What the video covers: A comprehensive, beginner-friendly course teaching Python programming from absolute zero.
+*   Key topics discussed: Python fundamentals, core concepts, and applied learning through practical, hands-on projects.
+*   Why it's worth watching: It provides a solid foundation in Python with a practical, project-based approach, making it ideal for those who learn by doing and want to build functional skills.
+
+### 🎬 Python for Beginners with Hands-On Projects (Python入门与实战项目)
+**频道:** freeCodeCamp.org
+*   视频内容概述: 一门从零开始、面向绝对初学者的综合Python编程课程。
+*   主要话题: Python基础知识、核心概念，并通过实践项目进行应用学习。
+*   为何值得观看: 课程以实用的项目制方法打下坚实的Python基础，非常适合通过实践学习并希望构建实用技能的初学者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oDOw5tB3Udw)**
+
+### 🎬 AI Agents Explained - What Is an AI Agent and how to build one? (Real Examples, Not Hype)
+**Channel:** Tech With Tim
+
+*   **What the video covers:** This video provides a practical and grounded explanation of AI Agents. It moves beyond the hype to define what an AI agent truly is—beyond just an LLM with a system prompt. The core focus is on the architecture and engineering required to build a functional AI agent, demonstrated with real-world examples and actionable steps.
+*   **Key topics discussed:**
+    *   Clear definition and components of an AI Agent (e.g., LLM core, memory, tools).
+    *   The architecture and workflow of an agent (perception -> reasoning -> action).
+    *   Practical implementation strategies and code concepts for building an agent.
+    *   Analysis of real-world agent applications to illustrate how they work in practice.
+*   **Why it's worth watching:** It's an excellent resource for developers and tech enthusiasts tired of theoretical hype. The video delivers a clear, engineering-focused breakdown, making it a valuable starting point for anyone looking to understand and build their own AI agents using concrete methods. The description also points to curated learning resources (like DataCamp courses) for further study.
+
+### 🎬 AI 智能体详解 - 什么是AI智能体以及如何构建？（真实示例，拒绝炒作）
+**频道:** Tech With Tim
+
+*   **视频内容概述：** 本视频对“AI智能体”（AI Agent）进行了一次务实且透彻的讲解。它超越了概念炒作，深入定义了什么是真正的AI智能体——而不仅仅是一个带有系统提示词的大语言模型（LLM）。核心重点在于讲解构建一个功能性AI智能体所需的架构与工程实现，并通过真实案例和可操作的步骤进行演示。
+*   **主要话题：**
+    *   明确AI智能体的定义及其核心组件（如：LLM核心、记忆、工具）。
+    *   智能体的架构与工作流程（感知 -> 推理 -> 行动）。
+    *   构建智能体的实用实现策略与代码概念。
+    *   通过分析真实世界的智能体应用，阐释其实际工作原理。
+*   **为何值得观看：** 对于厌倦了理论炒作的开发者和技术爱好者而言，这是一份极佳的资源。视频提供了清晰、面向工程的深度解析，是希望了解并构建自己AI智能体的人士的绝佳入门指南。视频描述中还提供了进阶学习资源（如DataCamp的相关课程）以供深入学习。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZvDkJsKE80k)**
 
