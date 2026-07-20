@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 20, 2026"
 date: 2026-07-20
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 8 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，8个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### **Claude Code Uses Rust-Ported Bun in Production**
@@ -236,4 +236,174 @@ pin: false### **Claude Code Uses Rust-Ported Bun in Production**
 *   适合希望掌握先进AI助手的初学者观看，课程具有前瞻性，旨在帮助观众构建实际技能，高效利用Claude的功能。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Fys4oHlXQmQ)**
+
+### LoRA Speedrun: A Public Arena for Efficient Fine-tuning
+*   A speedrun competition for fine-tuning the Qwen2.5-1.5B model to ≥57% on GSM8K using LoRA, with all runs verified on identical Modal L40S hardware.
+*   Emphasizes wall-clock time as the key metric, creating a direct comparison for techniques like sequence packing, custom kernels, and learning rate schedules.
+*   Features a public, reproducible leaderboard where every record is re-run three times for verification, with free compute credits available for participants.
+*   Establishes a frozen, well-defined task (specific model, data, and goal) to ensure fair, apples-to-apples competition among different PEFT methods.
+*   Provides a clear contribution path and verification protocol, including security reviews and automated checks, to maintain integrity and prevent cheating.
+
+### LoRA Speedrun：一个公开的参数高效微调竞技场
+*   一项旨在使用LoRA技术快速微调Qwen2.5-1.5B模型的竞速挑战，目标是在GSM8K数据集上达到≥57%的准确率，所有训练均在统一的Modal L40S硬件上验证。
+*   以“墙钟时间”作为核心评价指标，鼓励参赛者在数据加载、自定义内核和算法层面进行全方位优化与创新。
+*   搭建了公开且完全可复现的排行榜，每条记录都会使用全新的随机种子重新运行三次以验证其真实性，参赛者可使用免费算力额度进行尝试。
+*   设定了冻结的、明确的任务基准（固定模型、数据和目标），确保不同参数高效微调（PEFT）技术之间能够在公平的条件下进行直接比拼。
+*   提供了详细的参与指南、代码审查和自动化安全检测流程，以确保竞赛的公正性并防止数据泄露或作弊行为。
+
+**[Read Original / 阅读原文](https://github.com/Saivineeth147/lora-speedrun)**
+
+### Moonshine: PC Game Streaming for Linux
+*   **Core Functionality**: Moonshine enables streaming games from a Linux PC to any device with the [Moonlight](https://moonlight-stream.org/) client, with input sent back to the host.
+*   **Key Features**:
+    *   Runs each streaming session in an isolated compositor, keeping the host PC usable.
+    *   Works on headless servers without a monitor.
+    *   Utilizes hardware video encoding (H.264, H.265, AV1) and supports HDR.
+    *   Provides full input support for keyboard, mouse, and gamepad, including audio streaming.
+*   **Requirements**: Requires a Linux system with systemd, a GPU supporting Vulkan video encoding (NVIDIA, AMD, Intel Arc), and Moonlight v6.0.0+.
+*   **Important Security Note**: Designed for local network use; internet streaming requires a VPN as the protocol is not fully encrypted.
+
+### Moonshine：面向 Linux 的 PC 游戏串流工具
+*   **核心功能**：Moonshine 允许你将 Linux PC 上的游戏串流到任何安装了 [Moonlight](https://moonlight-stream.org/) 客户端的设备，输入信号会回传至主机。
+*   **主要特性**：
+    *   在独立的合成器中运行每个串流会话，使主机在串流时仍可正常使用。
+    *   适用于无头服务器，无需显示器。
+    *   支持 H.264、H.265 和 AV1 硬件视频编码，并支持 HDR。
+    *   完整支持鼠标、键盘和游戏手柄输入，并包含音频串流。
+*   **系统要求**：需要运行 systemd 的 Linux 系统、支持 Vulkan 视频编码的 GPU（NVIDIA、AMD RDNA2+ 或 Intel Arc）以及 Moonlight v6.0.0 或更高版本。
+*   **重要安全提示**：设计用于本地网络；若需通过互联网串流，必须使用 VPN，因为其底层协议未在应用层完全加密。
+
+**[Read Original / 阅读原文](https://github.com/hgaiser/moonshine)**
+
+### Post-Training and Scaling in Xiaomi's Robotics
+*   Post-training aligns the model with real robots and natural-language instructions through **embodiment alignment** (using real-robot data) and **instruction alignment** (directly understanding commands).
+*   Evaluations show that scaling up pre-training data and model size leads to a steady and predictable increase in real-world robot success rates.
+
+### 后期训练与扩展在小米机器人技术中的应用
+*   后期训练通过**实体对齐**（使用真实机器人数据）和**指令对齐**（直接理解自然语言命令）使模型与真实机器人和自然语言指令保持一致。
+*   评估表明，增加预训练数据和模型规模会导致现实世界机器人任务成功率稳定且可预测地提升。
+
+**[Read Original / 阅读原文](https://robotics.xiaomi.com/xiaomi-robotics-1.html)**
+
+### bojieli/ai-agent-book - Open-source repository for the book "In-depth Understanding of AI Agents: Design Principles and Engineering Practices"
+* **What it does**: This is the open-source home for the book "深入理解 AI Agent：设计原理与工程实践" (In-depth Understanding of AI Agents). It provides the full text of the book, compiled PDFs, and chapter-by-chapter example code, covering the core formula Agent = LLM + Context + Tools.
+* **Key features**:
+    * **Comprehensive Book Content**: Includes all 10 chapters with detailed text on Agent fundamentals, context engineering, memory, tools, coding agents, evaluation, fine-tuning, self-evolution, multimodal interaction, and multi-agent collaboration.
+    * **Multi-language Support**: Offers the book in Chinese (original), English, Vietnamese, and Tamil.
+    * **Practical Code Demos**: Contains executable code examples for most chapters (e.g., tool servers, RAG pipelines, coding agents), serving as a hands-on learning path.
+    * **Structured Learning**: Organizes projects by chapter, with clear labels (✅ Runnable, 📖 Reproduction Guide, 🚧 Design Doc) to guide learners.
+* **Why it's notable**: It is a high-star, community-driven resource that bridges theory and practice for AI Agent development. Its combination of authoritative, in-depth textual content with directly runnable code makes it exceptionally valuable for engineers and researchers looking to build or understand modern AI Agents.
+
+### bojieli/ai-agent-book - 《深入理解 AI Agent：设计原理与工程实践》开源主仓库
+* **功能介绍**：这是书籍《深入理解 AI Agent：设计原理与工程实践》的开源仓库，提供全书正文、编译好的 PDF 以及与章节对应的配套示例代码，核心围绕公式“Agent = LLM + 上下文 + 工具”展开。
+* **主要特点**：
+    * **全面书籍内容**：包含全书十章，深入讲解了 Agent 基础、上下文工程、记忆与知识库、工具使用、编码 Agent、评估、模型后训练、自我进化、多模态交互与多 Agent 协作。
+    * **多语言版本**：提供中文（原版）、英文、越南语和泰米尔语的书籍版本。
+    * **丰富的实践代码**：包含大量可运行的章节配套项目（如工具服务器、RAG 流水线、编码 Agent），构成了完整的学习路径。
+    * **结构化学习路径**：项目按章节清晰组织，并标注了“可独立运行”、“复现指南”或“设计文档”，便于学习者循序渐进。
+* **为何值得关注**：这是一个高星标、社区活跃的优质资源，将权威深入的文字内容与可动手实践的代码紧密结合。对于希望构建或理解现代 AI Agent 的工程师和研究者来说，它兼具理论深度与工程实践价值，是极其宝贵的学习材料。
+
+**[View Repository / 查看仓库](https://github.com/bojieli/ai-agent-book)**
+
+### Voicebox - The Open-Source AI Voice Studio
+*   **What it does:** Voicebox is a local-first, open-source AI voice studio that combines voice input and output into a single application. It allows users to clone voices from short audio samples, generate speech in multiple languages using various TTS engines, dictate text via a global hotkey, and provide AI agents with a synthesized voice. The entire processing runs on the user's machine for privacy.
+*   **Key features:**
+    *   **7 TTS Engines:** Includes Qwen3-TTS, Chatterbox, HumeAI TADA, Kokoro, and others for diverse cloning and generation options.
+    *   **Multi-Language Support:** Generates speech in 23 languages.
+    *   **Voice Cloning & Presets:** Perform zero-shot cloning or choose from 50+ curated preset voices.
+    *   **Local & Private:** All models and data remain on-device.
+    *   **Agent Integration:** Works with MCP-aware AI agents (like Claude Code) to let them speak with your cloned voices.
+    *   **Audio Effects & Post-Processing:** Apply effects like pitch shift, reverb, and compression.
+    *   **Cross-Platform:** Runs natively on macOS (MLX), Windows (CUDA), Linux, and via Docker.
+*   **Why it's notable:** It's a comprehensive, privacy-focused alternative to commercial services like ElevenLabs (for TTS) and WisprFlow (for dictation), unifying them in one locally running app. Its trending status (610 stars in a day) highlights strong community interest in an open-source, full-stack voice tool that runs entirely on the user's hardware.
+
+### Voicebox - 开源 AI 语音工作室
+*   **功能介绍：** Voicebox 是一款本地优先的开源 AI 语音工作室，将语音输入和输出功能整合到一个应用程序中。它允许用户从短音频样本中克隆声音，使用多种 TTS 引擎生成多语言语音，通过全局热键进行文本听写，并为 AI 代理提供合成语音。所有处理均在用户本地机器上运行，确保隐私。
+*   **主要特点：**
+    *   **7 种 TTS 引擎：** 包括 Qwen3-TTS、Chatterbox、HumeAI TADA、Kokoro 等，提供多样化的克隆和生成选项。
+    *   **多语言支持：** 可生成 23 种语言的语音。
+    *   **语音克隆与预设：** 支持零样本克隆或从 50 多个精选预设语音中选择。
+    *   **本地化与隐私：** 所有模型和数据均保留在设备端。
+    *   **代理集成：** 可与支持 MCP 的 AI 代理（如 Claude Code）协作，让代理使用你克隆的声音说话。
+    *   **音频特效与后处理：** 可应用音高转换、混响、压缩等效果。
+    *   **跨平台运行：** 原生支持 macOS (MLX)、Windows (CUDA)、Linux，并可通过 Docker 部署。
+*   **为何值得关注：** 它是 ElevenLabs（用于 TTS）和 WisprFlow（用于听写）等商业服务的全面、注重隐私的开源替代方案，将两者统一在一个本地运行的应用程序中。其当日飙升的星标数（610 stars）反映了社区对这样一个完全在用户硬件上运行的开源、全栈语音工具的浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/jamiepine/voicebox)**
+
+### Aether - A Client for Circumventing Network Censorship
+*   **What it does**: Aether is a client designed to bypass heavy internet censorship. It automatically discovers reachable network paths, creates an encrypted tunnel, and provides a local SOCKS5 proxy that applications can use to access the open internet.
+*   **Key features**: It employs advanced protocols like MASQUE (over HTTP/3 or HTTP/2) and WireGuard, includes traffic obfuscation, automatic endpoint discovery with validation, and nested tunneling. It offers automatic reconnection and runs on Linux, Windows, macOS, and Android (via Termux).
+*   **Why it's notable**: Built specifically to defeat sophisticated censorship methods such as Deep Packet Inspection (DPI) and protocol fingerprinting, Aether provides a robust and user-friendly tool for users in heavily restricted networks. Its popularity (1300+ stars) and multi-platform support highlight its significance in this field.
+
+### Aether - 针对网络审查的客户端工具
+*   **功能介绍**：Aether 是一款专为突破严格网络审查而设计的客户端。它能自动探测可用的网络路由，建立加密隧道，并在本地提供一个 SOCKS5 代理，供应用程序连接以访问开放互联网。
+*   **主要特点**：支持多种对抗审查的协议，如 MASQUE（基于 HTTP/3 或 HTTP/2）和 WireGuard，具备流量混淆、自动路由发现与验证、嵌套隧道模式。支持自动重连，并覆盖 Linux、Windows、macOS 和 Android（通过 Termux）平台。
+*   **为何值得关注**：Aether 专为对抗深度包检测（DPI）、协议指纹识别等高级网络审查技术而构建，为处于严格限制网络环境中的用户提供了一个强大且易用的工具。其较高的关注度（1300+星标）和跨平台支持使其成为该领域一个重要的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/CluvexStudio/Aether)**
+
+### Wardrobe - 使用gpt-image提取并整理您的衣物
+*   **功能介绍**：这是一个个人衣物管理工具。它利用 OpenAI 的 GPT-4 Vision 和 DALL-E 3 (gpt-image) 模型，自动从用户的照片中检测、提取出每件衣物，生成干净的“产品图”单品抠图。用户可以通过一个本地的网页编辑器浏览、编辑、重新生成这些衣物图片，甚至生成穿着该衣物的模特预览图。所有数据（原图、抠图、数据库）都存储在本地。
+*   **主要特点**：
+    *   **AI驱动的衣物识别与提取**：使用 OpenAI Responses API 自动检测照片中的每一件衣物。
+    *   **交互式编辑与管理**：提供拖放、粘贴、编辑、审核、重新生成和批准等一系列操作，方便用户整理衣柜。
+    *   **模型化预览生成**：可选地根据衣物图片和用户提供的参考照片，生成穿着该衣物的模特造型图。
+    *   **完全本地化**：所有原始图片、生成的图像和 JSON 数据库均存储在本地 `data/` 目录，隐私性强。
+*   **为何值得关注**：该项目展示了如何将前沿的 AI 视觉识别与图像生成技术（GPT-4 Vision + DALL-E 3）应用于一个非常具体且实用的日常生活场景——个人衣物管理。它不仅仅是一个简单的相册，而是一个智能的“数字衣橱”构建工具，为个性化时尚管理和虚拟试衣等应用提供了有趣的技术原型和开源实现。
+
+### Wardrobe - 使用gpt-image提取并整理您的衣物
+*   **功能介绍**：这是一个个人衣物管理工具。它利用 OpenAI 的 GPT-4 Vision 和 DALL-E 3 (gpt-image) 模型，自动从用户的照片中检测、提取出每件衣物，生成干净的“产品图”单品抠图。用户可以通过一个本地的网页编辑器浏览、编辑、重新生成这些衣物图片，甚至生成穿着该衣物的模特预览图。所有数据（原图、抠图、数据库）都存储在本地。
+*   **主要特点**：
+    *   **AI驱动的衣物识别与提取**：使用 OpenAI Responses API 自动检测照片中的每一件衣物。
+    *   **交互式编辑与管理**：提供拖放、粘贴、编辑、审核、重新生成和批准等一系列操作，方便用户整理衣柜。
+    *   **模型化预览生成**：可选地根据衣物图片和用户提供的参考照片，生成穿着该衣物的模特造型图。
+    *   **完全本地化**：所有原始图片、生成的图像和 JSON 数据库均存储在本地 `data/` 目录，隐私性强。
+*   **为何值得关注**：该项目展示了如何将前沿的 AI 视觉识别与图像生成技术（GPT-4 Vision + DALL-E 3）应用于一个非常具体且实用的日常生活场景——个人衣物管理。它不仅仅是一个简单的相册，而是一个智能的“数字衣橱”构建工具，为个性化时尚管理和虚拟试衣等应用提供了有趣的技术原型和开源实现。
+
+**[View Repository / 查看仓库](https://github.com/tandpfun/wardrobe)**
+
+### 🎬 Codex just got better for developers
+**Channel:** OpenAI
+*   **What the video covers:** This video is an official update from OpenAI, detailing the latest improvements and new features for Codex, their AI-powered code generation tool designed for developers.
+*   **Key topics discussed:** The update includes the integration of more advanced models (like GPT-5.6), a new "Ultra" offering, and novel ways for developers to interact with and utilize Codex in their workflow.
+*   **Why it's worth watching:** It provides a direct, authoritative look at the cutting-edge tools OpenAI is rolling out. Developers and tech enthusiasts will gain insight into how these enhancements can boost coding efficiency, tackle more complex problems, and shape the future of AI-assisted software development.
+
+### 🎬 Codex 面向开发者再次升级
+**频道:** OpenAI
+*   **视频内容概述:** 本视频是 OpenAI 的官方更新说明，详细介绍了其面向开发者的 AI 代码生成工具 Codex 的最新改进和全新功能。
+*   **主要话题:** 更新内容包括集成更先进的模型（如 GPT-5.6）、全新的 "Ultra" 版本，以及让开发者能够在工作流程中以新方式与 Codex 交互和使用的功能。
+*   **为何值得观看:** 本视频直接、权威地展示了 OpenAI 正在推出的新锐工具。开发者和技术爱好者将深入了解这些增强功能如何提升编码效率、处理更复杂的问题，并塑造 AI 辅助软件开发的未来。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=eiQgljOrkWU)**
+
+### 🎬 Programming Thinking
+**Channel:** Visual Kernel
+
+*   This video likely delves into the fundamental mindset and problem-solving approaches essential for effective programming.
+*   Key topics probably include how to break down complex problems, logical reasoning, algorithmic thinking, and best practices for writing clean, maintainable code.
+*   It's worth watching because mastering "programming thinking" is more critical than memorizing syntax. It helps developers of all levels tackle challenges systematically and build a strong foundation for learning any language.
+
+### 🎬 编程思维 (Programming Thinking)
+**频道:** Visual Kernel
+
+*   本视频可能深入探讨了进行高效编程所需的基本思维模式和问题解决方法。
+*   主要话题可能包括如何分解复杂问题、逻辑推理、算法思维，以及编写整洁、可维护代码的最佳实践。
+*   之所以值得观看，是因为掌握“编程思维”比记忆语法更为关键。它能帮助各级开发者系统性地应对挑战，并为学习任何编程语言打下坚实基础。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KtBefDeECVU)**
+
+### 🎬 Tencent Hy3 Open Source AI Model is INSANE! Full Tutorial & Review
+**Channel:** 𝘈𝘋𝘋𝘠'𝘚 𝘞𝘖𝘙𝘓𝘋
+* This video provides a comprehensive tutorial and in-depth review of the Tencent Hy3 AI model, which is presented as a powerful, open-source, and free alternative for 2026.
+* Key topics include a step-by-step guide on how to access and use the model, demonstrations of its capabilities in coding assistance and creative writing, and an analysis of its performance compared to other tools.
+* It is worth watching for tech enthusiasts, developers, and writers who are looking for a high-performance, cost-effective AI tool to integrate into their workflow, especially for programming and content creation tasks.
+
+### 🎬 腾讯 Hy3 开源 AI 模型太强了！完整教程与评测
+**频道:** 𝘈𝘋𝘋𝘠'𝘚 𝘞𝘖𝘙𝘓𝘋
+* 本视频详细评测并完整演示了腾讯 Hy3 AI 模型。该模型被定位为 2026 年一款功能强大、开源且免费的 AI 工具。
+* 主要话题包括如何访问和使用该模型的教程、其在编程辅助和创意写作方面的实际应用演示，以及与其他同类工具的性能对比分析。
+* 为何值得观看：对于正在寻找高性能、低成本 AI 工具以提升工作效率的技术爱好者、开发者和内容创作者来说，本视频提供了极具价值的参考，尤其适用于编程和写作相关任务。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=7wWhj4hNQ-k)**
 
