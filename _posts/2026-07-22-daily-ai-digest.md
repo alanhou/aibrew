@@ -188,3 +188,182 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=M6mYodf0dJM)**
 
+<!-- [Title-Only] -->
+### Intel Starts Shipping High-NA EUV Silicon
+* Based on the title, this article likely reports on Intel beginning to ship silicon wafers processed using the next-generation **High-NA (High Numerical Aperture) Extreme Ultraviolet (EUV) lithography** technology. This is a major milestone in semiconductor manufacturing, as High-NA EUV is considered the future of chipmaking, enabling the creation of smaller, more powerful, and more efficient transistors.
+* This is highly interesting to readers in the tech industry because it signals a practical step towards the production of future chip generations (like 1.8nm and beyond). It showcases Intel's progress in adopting this cutting-edge tool and may influence the competitive landscape of advanced chip fabrication between companies like Intel, TSMC, and Samsung.
+
+### [根据标题推测的文章内容简介]
+* 根据标题，这篇文章很可能报道了英特尔开始出货使用下一代 **高数值孔径（High-NA）极紫外（EUV）光刻技术** 处理的硅晶圆。这是半导体制造领域的一个重大里程碑，因为 High-NA EUV 被认为是芯片制造的未来，能够创造出更小、更强大、更高效的晶体管。
+* 这对于科技行业的读者来说非常值得关注，因为它标志着向未来芯片世代（如1.8nm及以下）的生产迈出了一步。这展示了英特尔在采用这项尖端技术方面的进展，并可能影响英特尔、台积电和三星等公司在尖端芯片制造领域的竞争格局。
+
+**[Read Original / 阅读原文](https://morethanmoore.substack.com/p/intel-starts-shipping-high-na-euv)**
+
+### Apollo-11: The Source Code
+*   This repository contains the original source code for the Apollo 11 Guidance Computer (AGC), covering both the Command Module (Comanche055) and Lunar Module (Luminary099).
+*   The code has been digitized from original hardcopies by the Virtual AGC project and the MIT Museum.
+*   The project's goal is to be a definitive archive of this historic source code, welcoming pull requests to correct any transcription errors.
+*   The original AGC code is in the public domain. Key contributions were made by Margaret H. Hamilton and her team.
+
+### 阿波罗11号：源代码仓库
+*   此仓库包含阿波罗11号任务中指导计算机（AGC）的原始源代码，涵盖指令舱（Comanche055）与登月舱（Luminary099）。
+*   代码由“虚拟AGC项目”和麻省理工学院博物馆从原始硬拷贝数字化而来。
+*   本仓库旨在成为该历史性源代码的权威存档，欢迎通过合并请求来修正转录错误。
+*   该AGC源代码为公共领域。玛格丽特·H·汉密尔顿及其团队是其重要贡献者。
+
+**[Read Original / 阅读原文](https://github.com/chrislgarry/Apollo-11)**
+
+### Introduction to Formal Verification with Lean (Part 1)
+*   This tutorial introduces formal verification using Lean 4, specifically targeting cryptographic protocols.
+*   The goal is to translate formal definitions and proofs from cryptography textbooks into Lean code.
+*   It uses Dan Boneh and Victor Shoup's "A Graduate Course in Applied Cryptography" as the primary source.
+*   The tutorial focuses on verifying the correctness properties of the One-Time Pad (OTP) protocol.
+*   It is designed as a fun and practical introduction for cryptographic engineers new to formal methods.
+
+### Lean形式化验证入门教程（第一部分）
+*   本教程介绍如何使用Lean 4进行形式化验证，特别面向密码学协议。
+*   目标是将密码学教科书中的形式化定义和证明转化为Lean代码。
+*   主要参考资源为Dan Boneh和Victor Shoup的《应用密码学研究生教程》。
+*   本教程重点验证一次一密（OTP）协议的正确性属性。
+*   该教程专为刚接触形式化验证的密码学工程师设计，旨在提供有趣且实用的入门指导。
+
+**[Read Original / 阅读原文](https://hashcloak.com/blog/tutorial-introduction-to-formal-verification-with-lean-(part-1))**
+
+### i-have-adhd - A skill for coding agents to produce concise, actionable output.
+*   **What it does:** It's a plugin for AI coding assistants (like Claude Code and Codex) that enforces an "ADHD-friendly" output style, forcing the AI to be direct, structured, and action-oriented, preventing it from burying the answer in lengthy explanations.
+*   **Key features:** Provides a set of 10 clear rules (e.g., "Lead with the next action," "Number multi-step tasks," "No preamble"). Includes installation plugins and a simple, customizable skill file.
+*   **Why it's notable:** It directly addresses a common user frustration with verbose AI responses. By dramatically streamlining outputs to be immediately useful and scannable, it likely boosts productivity and user satisfaction, explaining its rapid star growth as a practical and well-targeted tool.
+
+### i-have-adhd - 为编码助手设计的技能，强制其输出简洁、可操作的内容。
+*   **功能介绍：** 这是一个适用于AI编码助手（如Claude Code和Codex）的插件，强制执行一种“ADHD友好”的输出风格，确保AI的回复直接、有条理且以行动为导向，避免将核心答案埋没在冗长的解释中。
+*   **主要特点：** 提供了10条清晰的规则（例如：“首先给出下一步行动”、“为多步骤任务编号”、“不要客套开场”），并包含易于安装的插件和一个可定制的技能配置文件。
+*   **为何值得关注：** 它直接解决了用户对AI回复过于冗长、重点不突出这一常见痛点。通过将输出极大精简为即时可用、易于浏览的内容，它很可能提升了工作效率和用户体验，这解释了它为何能迅速获得大量星标，是一个实用且针对性极强的工具。
+
+**[View Repository / 查看仓库](https://github.com/ayghri/i-have-adhd)**
+
+### text-to-cad - A Collection of Agent Skills for CAD, Robotics, and Hardware Design
+* **What it does**: This is a library that equips AI agents with specialized skills for hardware development. It can generate and edit 3D CAD models from natural language descriptions or images, create robot structure files (URDF), design 2D DXF drawings, slice models into 3D printer G-code, and perform related tasks like sourcing parts or previewing files in a browser.
+* **Key features**:
+    * **Text/Image-to-CAD**: Generate STEP files (exportable to STL, 3MF, GLB) from plain-language or image prompts.
+    * **Robotics & Simulation**: Write URDF, SRDF (for MoveIt2), and SDF files for robot description and simulation.
+    * **Design & Fabrication**: Create DXF profiles, find standard parts, slice meshes for 3D printing, and interface with printers.
+    * **Integrated Viewer**: Includes a CAD Viewer skill to preview various output files locally.
+    * **Multiple Integrations**: Installable as a plugin for agents like Codex and Claude Code.
+* **Why it's notable**: It represents a significant step in applying AI agents to the domain of physical hardware creation. By bridging natural language with standard engineering formats (STEP, URDF, DXF, G-code), it dramatically accelerates the workflow from concept to manufacturable design. Its breadth of skills—from modeling to simulation to fabrication—makes it a powerful toolkit for developers, engineers, and hobbyists exploring AI-assisted hardware design.
+
+### text-to-cad - 面向CAD、机器人与硬件设计的智能代理技能库
+* **功能介绍**：这是一个为AI代理提供硬件开发专用技能的技能库。它能够根据自然语言描述或图像生成和编辑3D CAD模型，创建机器人结构描述文件（URDF），设计2D DXF图纸，将模型切片为3D打印所需的G代码，并提供零件查询、文件预览等相关功能。
+* **主要特点**：
+    * **文本/图像转CAD**：从文本提示或图像生成STEP文件（可导出为STL、3MF、GLB）。
+    * **机器人与仿真**：编写用于机器人描述和仿真的URDF、SRDF（适配MoveIt2）和SDF文件。
+    * **设计与制造**：创建DXF轮廓文件，查找标准零件，为3D打印切片网格，并与打印机交互。
+    * **集成预览器**：包含CAD Viewer技能，可在本地预览多种输出文件。
+    * **多平台集成**：支持作为插件安装到Codex、Claude Code等AI代理平台。
+* **为何值得关注**：该项目标志着将AI代理应用于实体硬件创造领域的重要进展。通过打通自然语言与工程标准格式（STEP, URDF, DXF, G-code）的连接，它极大地加速了从概念到可制造设计的工作流程。其广泛的技能覆盖——从建模、仿真到制造——使其成为开发者、工程师和爱好者探索AI辅助硬件设计的强大工具包。
+
+**[View Repository / 查看仓库](https://github.com/earthtojake/text-to-cad)**
+
+### yoinks - A clean terminal-based video downloader
+* **What it does**: A command-line tool to download videos (or audio-only MP3s) from YouTube, X/Twitter, Instagram, TikTok, and over 1,800 other websites directly from your terminal.
+* **Key features**:
+    * Simple workflow: paste a URL, select a resolution/format via an interactive terminal UI.
+    * Ships with its own `yt-dlp` binary (no Python required) and uses `ffmpeg` for processing.
+    * Built with `Ink` (React for terminals), featuring a full-screen interface with mouse support, theme options (auto/light/dark), and clickable elements.
+    * Saves files to `~/Downloads` and provides the local file path upon completion.
+* **Why it's notable**: It eliminates the common pitfalls of online download services (ads, popups, sketchy redirects) by providing a direct, scriptable, and secure interface in the terminal. Its polished UI and extensive site support make it a convenient and trustworthy tool for personal media archiving.
+
+### yoinks - 一款简洁的命令行视频下载工具
+* **功能介绍**：一个命令行工具，可直接从终端从 YouTube、X/Twitter、Instagram、TikTok 等超过 1800 个网站下载视频或仅音频（MP3）。
+* **主要特点**：
+    * 简单的工作流：粘贴链接，通过交互式终端界面选择分辨率/格式。
+    * 自带 `yt-dlp` 二进制文件（无需 Python），并使用 `ffmpeg` 进行处理。
+    * 使用 `Ink`（适用于终端的 React）构建，具有全屏界面、鼠标支持、主题选项（自动/亮色/暗色）和可点击元素。
+    * 文件保存至 `~/Downloads`，完成后会在终端中打印本地文件路径。
+* **为何值得关注**：它通过提供终端中的直接、可编写脚本且安全的接口，消除了在线下载服务中常见的陷阱（广告、弹窗、可疑重定向）。其精致的界面和广泛的网站支持使其成为个人媒体归档的便捷且可信赖的工具。
+
+**[View Repository / 查看仓库](https://github.com/pablostanley/yoinks)**
+
+### Conversation Steganography - 隐藏对话中的秘密消息
+* **功能介绍**：这是一个基于 Go 语言的工具，它利用本地运行的大语言模型（LLM）和 AES 加密技术，允许两个人在任何普通的聊天应用（如 WhatsApp、Telegram 等）中，通过看似完全正常的对话文本传输加密的秘密信息。发送者的实际消息在设备上被加密，然后由 AI 模型转化为一段自然的“掩护文本”发送出去，接收方使用相同的工具和密钥解码。
+* **主要特点**：
+    * **端到端隐身**：聊天平台只能看到由 AI 生成的自然对话，无法察觉隐藏信息的存在。
+    * **强安全性**：采用 AES-SIV 加密，并建立了密码学上的“对话链”来防止消息篡改或乱序。
+    * **全本地运行**：AI 模型完全在用户设备上运行，不发送任何数据到云端，保障隐私。
+    * **易于设置和使用**：提供交互式设置向导，并支持通过模拟模式在单台设备上测试。
+    * **开源与跨平台**：使用 Go 编写，可在多种系统上构建，支持多种本地 AI 模型。
+* **为何值得关注**：该项目是一个新颖且实用的隐私保护工具，它巧妙地将成熟的隐写术（Steganography）理念与 LLM 技术相结合。在数字监控日益普遍的背景下，它提供了一种在公共平台上进行隐蔽通信的创意解决方案。其代码开源、设计清晰，作为一个概念验证（PoC）项目，展示了 LLM 在安全通信领域的有趣应用潜力。
+
+### Conversation Steganography - 将秘密消息隐藏于日常对话中
+* **功能介绍**：这是一个基于 Go 语言的工具，它使用本地运行的大语言模型和 AES 加密技术，使用户可以在任何常见的即时通讯软件中，通过看似完全普通的对话文本，传输经过加密的秘密信息。用户的实际消息在设备本地被加密后，由 AI 模型转化为一段自然、无害的“掩护文本”发出；接收方使用相同的工具和密钥进行解码，还原真实信息。
+* **主要特点**：
+    * **隐匿传输**：聊天平台仅能看到 AI 生成的自然对话，无法识别其中是否隐藏了秘密信息。
+    * **强加密安全**：使用军事级 AES-SIV 加密算法，并通过密码学方式链接每一条消息，可检测篡改、删除或乱序。
+    * **完全本地化**：所有 AI 模型的运行均在用户本地设备完成，不向云端发送任何数据，确保隐私安全。
+    * **易于上手**：提供引导式设置流程，并允许在单台设备上通过模拟模式进行测试。
+    * **开源且跨平台**：项目使用 Go 语言开发，可在不同系统上构建，支持多种本地 AI 模型。
+* **为何值得关注**：该项目是一个极具创意的隐私增强工具，它将经典的“隐写术”理念与现代 LLM 技术相结合，提供了一种新颖的隐蔽通信方案。在社会对数字隐私和监控日益关切的背景下，它展示了如何利用公开平台进行秘密交流的可能性。作为一个开源的概念验证项目，其设计思路清晰，对探索 LLM 在安全通信领域的应用具有启发意义。
+
+**[View Repository / 查看仓库](https://github.com/nethical6/conversation-steganography)**
+
+### 🎬 AI-Assisted Development – Multi-Agent Coding & Deployment with TRAE IDE
+**Channel:** freeCodeCamp.org
+*   What the video covers
+    This tutorial walks you through the entire process of building and deploying a full-stack habit tracker application using the TRAE IDE. It demonstrates a modern, AI-assisted development workflow where AI agents help with planning, coding, and deployment tasks.
+*   Key topics discussed
+    The key topics include leveraging AI for project planning, using AI agents for multi-file code generation and editing, integrating with version control, and employing AI to assist in the deployment process for a full-stack application.
+*   Why it's worth watching
+    It's an excellent practical introduction to cutting-edge AI-assisted coding tools and methodologies. Viewers can learn how AI is shifting from a simple code-completion tool to an active partner in the software development lifecycle, potentially increasing productivity and changing how developers approach building projects.
+
+### 🎬 AI辅助开发 – 使用TRAE IDE进行多智能体编码与部署
+**频道:** freeCodeCamp.org
+*   视频内容概述
+    本教程将指导你使用TRAE IDE完成一个全栈习惯追踪应用的规划、构建与部署全过程。它展示了一种现代化的AI辅助开发工作流，其中AI智能体协助处理规划、编码和部署任务。
+*   主要话题
+    主要话题包括利用AI进行项目规划、使用多智能体进行多文件代码生成与编辑、集成版本控制，以及运用AI辅助全栈应用的部署流程。
+*   为何值得观看
+    这是对尖端AI辅助编码工具和方法的绝佳实践入门。观众可以学习AI如何从简单的代码补全工具，转变为软件开发生命周期中的积极协作者，这可能大幅提升生产力并改变开发者构建项目的方式。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yVga-_gMfIM)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   **What the video covers:** The video provides a clear, educational explanation of the cybersecurity concept of "Session Hijacking." It breaks down how web sessions work (using session IDs, cookies) and demonstrates how attackers can potentially steal and impersonate a user's session to gain unauthorized access.
+*   **Key topics discussed:** The mechanics of HTTP sessions, the role of session cookies, common hijacking techniques (like sidejacking), and the importance of session security (e.g., using HTTPS) from both a user and developer perspective.
+*   **Why it's worth watching:** It's an excellent primer for anyone looking to understand a critical and common web security threat. The clear explanation helps viewers (both technical and non-technical) grasp how their daily browsing can be vulnerable and what principles protect them, making it essential for cybersecurity awareness.
+
+### 🎬 会话劫持解释 🔐 | 浏览器会话工作原理（网络安全意识）
+**频道:** ezCommit
+*   **视频内容概述:** 本视频清晰教育性地解释了网络安全概念“会话劫持”。它剖析了网络会话如何工作（使用会话ID、Cookie），并演示了攻击者如何可能窃取并模拟用户的会话，以进行未授权访问。
+*   **主要话题:** HTTP会话的机制、会话Cookie的作用、常见的劫持技术（如侧信道攻击），以及从用户和开发者角度出发，会话安全的重要性（例如使用HTTPS）。
+*   **为何值得观看:** 它是任何希望了解一个关键且常见Web安全威胁的人的优秀入门指南。清晰的解释帮助观众（无论技术或非技术背景）理解日常浏览可能存在的脆弱性，以及哪些原则能保护他们，是网络安全意识教育的必备内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 You’re Not Behind (Yet): How to Build Your First AI Agent (Full Guide)
+**Channel:** Dan Martell
+*   This video is a comprehensive, step-by-step guide designed for entrepreneurs and tech enthusiasts who want to build their first AI agent but feel overwhelmed or behind in the AI race. Dan Martell breaks down the entire process into accessible, actionable steps.
+*   Key topics include demystifying what an AI agent actually is, selecting the right foundational model (like those from OpenAI or Anthropic), designing the agent's logic and memory, choosing tools, and implementing it all within a practical software development workflow.
+*   It’s worth watching because it provides a clear, non-hype roadmap for turning an AI concept into a functional prototype. Dan’s actionable approach and the provided resources (like the "AI Company Operating System") are especially valuable for those who want to move from theory to building immediately.
+
+### 🎬 你还没落后：如何构建你的第一个AI代理（完整指南）
+**频道:** Dan Martell
+*   本视频是一份全面、分步的指南，旨在为那些想构建首个AI代理但感到力不从心或已落后于AI时代的企业家和技术爱好者扫清障碍。Dan Martell将复杂的构建过程拆解成易于理解和执行的步骤。
+*   主要话题涵盖：揭开AI代理的神秘面纱、选择合适的基础模型（如OpenAI或Anthropic的模型）、设计代理的逻辑与记忆系统、挑选工具，以及如何将其整合到实际的软件开发工作流中。
+*   它之所以值得观看，是因为它提供了一条清晰、务实的路径，将AI构想转化为可运行的原型。Dan的可操作性方法和视频提供的资源（如“AI公司操作系统”），对于那些希望立即将理论付诸实践的观众来说极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Bm84BAtOfQw)**
+
+### 🎬 Python for Beginners with Hands-On Projects
+**Channel:** freeCodeCamp.org
+*   This comprehensive course teaches Python programming from absolute zero, combining core concepts with practical application.
+*   **Key Topics Covered:** Python fundamentals, variables, data types, control flow, functions, data structures, object-oriented programming (OOP), and file handling. The course emphasizes learning by doing through guided, hands-on projects.
+*   **Why It's Worth Watching:** It offers a structured, complete path for true beginners, moving from theory directly into project-based learning. The free, in-depth format from a trusted educational channel makes it an ideal starting point for building a solid coding foundation.
+
+### 🎬 Python入门实战教程
+**频道:** freeCodeCamp.org
+*   本课程从零基础开始教授Python编程，将核心概念学习与实际项目操作紧密结合。
+*   **主要话题：** Python基础、变量、数据类型、流程控制、函数、数据结构、面向对象编程（OOP）以及文件处理。课程特色在于通过引导式的实战项目来巩固所学知识。
+*   **为何值得观看：** 这是一条为纯新手设计的完整学习路径，能帮助你平稳地从理论过渡到项目实践。该课程来自可信赖的教育频道，且内容免费深入，是构建扎实编程基础的理想起点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=oDOw5tB3Udw)**
+
