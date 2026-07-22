@@ -367,3 +367,240 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=oDOw5tB3Udw)**
 
+<!-- [Title-Only] -->
+### OverpAId – Fire your CEO. Hire the future
+* Based on the provocative title "OverpAId," this article likely critiques the high compensation of traditional corporate CEOs. The phrase "Fire your CEO. Hire the future" suggests it explores replacing conventional human leadership with innovative, decentralized, or AI-driven models, advocating for a fundamental shift in corporate governance and structure.
+* This topic could interest readers concerned with corporate governance, economic inequality, and the disruptive potential of AI or blockchain in business. It promises a bold, contrarian take on the future of leadership in the digital age.
+
+### OverpAId – 炒掉你的CEO，雇佣未来
+* 根据极具煽动性的标题“OverpAId（薪酬过高）”推测，本文可能旨在批判传统企业CEO的过高薪酬现象。而“炒掉你的CEO，雇佣未来”则暗示文章将探讨用创新的、去中心化的或AI驱动的模式来替代传统的人类领导层，倡导对企业治理结构和运营方式进行根本性变革。
+* 该话题可能会吸引关注公司治理、经济不平等以及AI或区块链技术在商业领域颠覆性潜力的读者。它承诺以大胆且非主流的视角，探讨数字时代的领导力未来。
+
+**[Read Original / 阅读原文](https://overpaid.lol)**
+
+### Returning to Kagi Search: A Superior Privacy-Focused Experience
+
+*   After a period of testing other search engines, the author re-subscribed to Kagi, finding it unmatched in quality and privacy focus.
+*   Alternatives like Google, DuckDuckGo, Brave Search, Qwant, and a self-hosted SearxNG instance failed to meet the author's needs due to poor result quality, intrusive AI/media features, rate-limiting, or lack of customization.
+*   Key missed features included Kagi's summarize and translate tools, along with unique CSS customization options not replicable elsewhere.
+*   The experience solidified a strong preference for Kagi's commitment to delivering high-quality, relevant text-based search results while prioritizing user privacy.
+
+### 重返 Kagi：一次对更优质隐私搜索体验的回归
+
+*   作者在尝试了多种其他搜索引擎后，重新订阅了 Kagi，并发现其在搜索质量和隐私保护方面无可替代。
+*   Google、DuckDuckGo、Brave Search、Qwant 以及自托管的 SearxNG 等替代品都未能满足作者的需求，原因包括搜索结果质量差、AI 和多媒体内容过度推送、速率限制问题或缺乏个性化定制。
+*   作者特别怀念 Kagi 的摘要与翻译功能，以及独特的 CSS 自定义选项，这些在其他搜索引擎上难以复制。
+*   这次对比体验强化了作者对 Kagi 的青睐，因为它坚持提供高质量、相关的纯文本搜索结果，并高度重视用户隐私。
+
+**[Read Original / 阅读原文](https://blog.melashri.net/micro/back-to-kagi/)**
+
+### Businesses with Ugly AI Menu Redesigns
+*   The author visited a Filipino restaurant that recently replaced its menu with AI-generated images of the food.
+*   They found the AI images to be "uncanny," disturbing, and aesthetically displeasing.
+*   Despite the food tasting authentic and comforting, the use of AI art created a major conflict.
+*   The author criticizes small businesses for using AI, stating a preference for poorly designed text menus over "sloppy" AI-generated visuals.
+
+### 商家使用丑陋的AI菜单重设计
+*   作者探访了一家最近用AI生成的食物图片替换了菜单的菲律宾餐厅。
+*   他们认为这些AI图片“怪异”、令人不安且审美糟糕。
+*   尽管食物吃起来正宗又令人舒适，但使用AI艺术引发了巨大的内心冲突。
+*   作者批评小企业使用AI，表示宁愿阅读用Comic Sans、Papyrus或Curlz MT字体设计的菜单，也不愿看这些“垃圾”般的AI生成图像。
+
+**[Read Original / 阅读原文](https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/)**
+
+### RuView - WiFi-based spatial intelligence and sensing platform
+* What it does
+    RuView transforms standard WiFi radio signals into a real-time spatial intelligence system using low-cost ESP32 sensors. It detects presence through walls, monitors vital signs (breathing and heart rate) without contact, recognizes activities like falls, and maps environments—all without cameras, wearables, or requiring an internet connection. The core analysis happens on edge hardware using Channel State Information (CSI) and pre-trained machine learning models.
+* Key features
+    * **Contactless Sensing:** Enables presence detection, multi-person counting, vital sign monitoring (breathing & heart rate), and fall detection purely from WiFi signal disturbances.
+    * **Edge-Native & Private:** Runs entirely on local ESP32 hardware (as low as $9 per node) with a pre-trained model small enough for a Raspberry Pi. No cloud, cameras, or user phones needed.
+    * **Smart Home Integration:** Features first-class support for major ecosystems like Home Assistant (via MQTT), Apple Home, Google Home, Amazon Alexa, and Matter, exposing numerous entities for automation.
+    * **Advanced Analytics:** Includes capabilities for sleep quality monitoring, 17-keypoint pose estimation, 3D point cloud fusion, and a world model for predicting future occupancy.
+    * **Comprehensive Edge Module Catalog:** Offers over 100 specialized modules ("cogs") for health, security, retail, and more, extending its functionality.
+* Why it's notable
+    RuView is notable for its innovative and privacy-preserving approach to pervasive sensing, leveraging ubiquitous WiFi infrastructure instead of invasive cameras. Its combination of extreme edge efficiency (running advanced AI models on inexpensive microcontrollers), deep integration with established smart home platforms, and a vast feature set for vital signs and activity recognition makes it a compelling, practical tool for home automation, elderly care, and occupancy analytics. The project demonstrates significant technical achievement in signal processing and on-device AI.
+
+### RuView - 基于WiFi的实时空间感知与监测平台
+* 功能介绍
+    RuView 利用低成本的 ESP32 传感器，将普通的 WiFi 无线电信号转化为实时空间智能系统。它能够穿透墙壁检测人员存在、无接触监测生命体征（呼吸和心率）、识别活动（如跌倒）并进行环境映射——整个过程无需摄像头、可穿戴设备或互联网连接。核心分析完全在边缘硬件上通过信道状态信息（CSI）和预训练机器学习模型完成。
+* 主要特点
+    * **无接触感知：** 仅通过WiFi信号扰动实现存在检测、多人计数、生命体征监测（呼吸与心率）和跌倒检测。
+    * **边缘计算与隐私保护：** 完全运行在本地 ESP32 硬件上（每个节点低至9美元），预训练模型足够轻量，可在树莓派上运行。无需云端、摄像头或用户手机。
+    * **智能家居集成：** 原生支持主流智能家居平台，如 Home Assistant（通过MQTT）、Apple Home、Google Home、Amazon Alexa 和 Matter，提供大量自动化实体。
+    * **高级分析能力：** 包含睡眠质量监测、17关键点姿态估计、3D点云融合以及用于预测未来占用情况的世界模型。
+    * **丰富的边缘模块库：** 提供超过100个专用模块（“cog”），涵盖健康、安防、零售等多个领域，可灵活扩展功能。
+* 为何值得关注
+    RuView 因其创新且保护隐私的泛在感知方案而备受关注，它利用无处不在的WiFi基础设施，而非侵入性摄像头。其在低成本微控制器上运行先进AI模型的极致边缘效率、与主流智能家居平台的深度集成，以及在生命体征和活动识别方面的丰富功能集，使其成为智能家居自动化、养老护理和空间占用分析领域一个实用且强大的工具。该项目在信号处理和设备端AI方面展现了卓越的技术成就。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### i-have-adhd - A Skill for Coding Agents to Deliver Concise, Actionable Answers
+* **What it does**: This is a plugin skill for coding assistants like Claude Code and Codex. It enforces a set of rules that prevent the AI from providing verbose, tangential explanations. The goal is to make the AI's output "ADHD-friendly" by delivering direct, numbered, and actionable steps without unnecessary preambles or closings.
+* **Key features**: 
+    * Transforms AI responses from long-winded explanations into clear, numbered action items.
+    * Defines 10 explicit rules for the AI, such as "Lead with the next action," "Number multi-step tasks," and "No preamble. No recap."
+    * Simple installation via plugin marketplaces for supported coding agents.
+    * Easily customizable by forking and editing the core `SKILL.md` file.
+* **Why it's notable**: It directly addresses a common frustration with AI assistants—burying the actual answer in verbose text. By making the output structure predictable and action-oriented, it significantly improves efficiency for developers who want quick, focused answers. Its rapid star growth (1,682 stars today) indicates strong resonance with the developer community.
+
+### i-have-adhd - 让编码助手输出直接答案的技能插件
+* **功能介绍**：这是一个为Claude Code和Codex等编码助手设计的插件技能。它通过一系列规则，强制AI避免提供冗长、离题的解释，旨在生成“ADHD友好”的输出，即提供直接、编号化、可操作的步骤，省略不必要的开场白和结束语。
+* **主要特点**：
+    * 将AI的回答从冗长的解释转化为清晰的编号行动项。
+    * 定义了10条明确的AI行为规则，例如“以下一步行动开头”、“多步骤任务使用编号”、“无开场白、无总结、无结束语”。
+    * 通过支持的编码助手插件市场即可轻松安装。
+    * 可通过Fork并编辑核心的`SKILL.md`文件进行自定义。
+* **为何值得关注**：它直接解决了AI助手的一个常见痛点——将实际答案埋没在冗长文本中。通过使输出结构变得可预测且面向行动，它显著提升了希望获得快速、聚焦答案的开发者的效率。其快速增长（今日1682颗星）表明它引起了开发者社区的强烈共鸣。
+
+**[View Repository / 查看仓库](https://github.com/ayghri/i-have-adhd)**
+
+### `schollz/croc` - Secure and easy cross-platform file transfer tool
+*   **What it does**: A command-line tool that enables secure, peer-to-peer file and folder transfers between any two computers using a relay server. It requires no complex network configuration (like port forwarding).
+*   **Key features**:
+    *   **End-to-end encryption** via Password-Authenticated Key Agreement (PAKE).
+    *   **Cross-platform support** for Windows, Linux, macOS, and more.
+    *   **Simple workflow** using a one-time code phrase for connection.
+    *   Supports multiple file transfers, resuming interrupted transfers, and transferring text.
+    *   IPv6-first with IPv4 fallback and proxy support (e.g., Tor).
+*   **Why it's notable**: It combines exceptional ease of use with strong security. Its trending status (737 stars today) highlights its appeal as a practical, modern solution for a common problem. The README claims it might be the only CLI tool offering all its listed features simultaneously.
+
+### `schollz/croc` - 安全便捷的跨平台文件传输工具
+*   **功能介绍**：一个命令行工具，允许任何两台计算机通过中继服务器安全地传输文件和文件夹。无需进行复杂的网络配置（如端口转发）。
+*   **主要特点**：
+    *   通过密码认证密钥协商（PAKE）提供**端到端加密**。
+    *   **跨平台支持**，适用于Windows、Linux、macOS等系统。
+    *   **操作简单**，使用一次性代码短语建立连接。
+    *   支持多文件传输、断点续传和文本传输。
+    *   优先使用IPv6，并支持IPv4回退和代理（如Tor）。
+*   **为何值得关注**：它将极高的易用性与强大的安全性完美结合。其热门趋势（今日737星）凸显了其作为解决常见问题的实用、现代工具的吸引力。其README声称，它可能是唯一同时具备所有列出功能的命令行工具。
+
+**[View Repository / 查看仓库](https://github.com/schollz/croc)**
+
+### yoinks - Download Videos Directly from Your Terminal
+*   **What it does**: It allows you to download videos from YouTube, X/Twitter, Instagram, TikTok, and over 1,800 other sites by simply pasting a URL into your terminal. It provides a clean, full-screen interface to select a download format (video resolution or audio-only MP3).
+*   **Key features**:
+    *   Simple, ad-free, and fast: paste a link, pick a format, and download.
+    *   Powerful backend powered by `yt-dlp`, with automatic dependency management (fetches `yt-dlp` and bundles `ffmpeg` as a fallback).
+    *   Beautiful, interactive terminal UI built with Ink (React for terminals), featuring light/dark/auto themes.
+    *   Cross-platform support for countless websites.
+*   **Why it's notable**: It tackles the common problem of downloading online videos cleanly and safely, avoiding shady ads and redirects. The polished terminal experience, automatic toolchain setup, and wide site support make it a convenient and trustworthy tool for personal archiving.
+
+### yoinks - 在终端中直接下载视频
+*   **功能介绍**：一款命令行工具，允许您通过粘贴URL，直接在终端中从YouTube、X/Twitter、Instagram、TikTok及1800多个其他网站下载视频。它提供一个干净的全屏界面，用于选择下载格式（视频分辨率或纯音频MP3）。
+*   **主要特点**：
+    *   简洁、无广告、速度快：粘贴链接，选择格式，即可下载。
+    *   强大的后端由 `yt-dlp` 驱动，并自动管理依赖项（自动获取 `yt-dlp` 并内置 `ffmpeg` 作为备选）。
+    *   使用 Ink（终端版React）构建的美观、交互式终端界面，支持亮色/暗色/自动主题切换。
+    *   广泛的平台兼容性，支持众多网站。
+*   **为何值得关注**：它巧妙地解决了在线视频下载中普遍存在的杂乱广告和重定向问题，提供了一个干净、安全的解决方案。其精致的终端体验、自动化的工具链部署以及广泛的支持站点，使其成为一款方便可靠的个人归档工具。
+
+**[View Repository / 查看仓库](https://github.com/pablostanley/yoinks)**
+
+### Conversation Steganography - Hiding Encrypted Messages in Natural-Looking Conversations
+* **What it does:** This Go-based tool allows two people to communicate secretly over any messaging platform (like WhatsApp, Telegram, or Signal). It encrypts a secret message and then uses a local AI model (like GPT-2 or Llama) to generate an innocent, natural-sounding cover text that encodes the encrypted data. The recipient's tool then decodes the cover text to retrieve the original message.
+* **Key features:**
+    * **Local AI Processing:** The language models run entirely on your device, ensuring no data is sent to the cloud.
+    * **Strong Encryption:** Uses military-grade AES-SIV encryption with authenticated conversation chains to detect tampering.
+    * **Cross-Platform:** The generated cover text can be sent through any text-based messaging app.
+    * **User-Friendly:** Includes a setup wizard, local simulation mode for testing, and simple in-chat commands.
+* **Why it's notable:** It demonstrates a practical application of LLMs for steganography, offering a method for private communication that avoids detection by automated message scanners. It's notable as an open-source, accessible proof-of-concept that highlights both the potential and current limitations of this technique.
+
+### 对话隐写术 - 在自然对话中隐藏加密信息
+* **功能介绍:** 这是一个基于Go语言的工具，允许两人通过任何消息平台（如WhatsApp、Telegram或Signal）进行秘密通信。它加密一条秘密信息，然后使用本地AI模型（如GPT-2或Llama）生成一段看似无辜、自然的对话文本，其中编码了加密数据。接收者的工具随后从这段对话文本中解码出原始信息。
+* **主要特点:**
+    * **本地AI处理:** 语言模型完全在本地设备上运行，确保没有数据发送到云端。
+    * **强加密:** 使用军事级AES-SIV加密和带认证的会话链，以检测篡改。
+    * **跨平台兼容:** 生成的对话文本可通过任何基于文本的消息应用发送。
+    * **用户友好:** 包含设置向导、用于测试的本地模拟模式和简单的聊天内命令。
+* **为何值得关注:** 它展示了大型语言模型在隐写术中的实际应用，提供了一种私密通信方法，可规避自动化消息扫描器的检测。作为一个开源、易获取的概念验证，它既凸显了该技术的潜力，也揭示了其当前面临的挑战。
+
+**[View Repository / 查看仓库](https://github.com/nethical6/conversation-steganography)**
+
+### 🎬 AI-Assisted Development – Multi-Agent Coding & Deployment with TRAE IDE
+**Channel:** freeCodeCamp.org
+* **What the video covers:** A tutorial on using the Trae IDE, an AI-assisted development environment, to plan, build, and deploy a complete full-stack habit tracker application from scratch.
+* **Key topics discussed:** Multi-agent AI coding, full-stack development workflow, AI-assisted debugging and deployment, and integrating modern tools for efficient software creation.
+* **Why it's worth watching:** It provides a practical, hands-on demonstration of cutting-edge AI tools that can significantly streamline the entire development lifecycle, from planning to deployment, making it valuable for developers interested in AI-powered productivity.
+
+### 🎬 AI辅助开发 – 使用TRAE IDE进行多智能体编码与部署
+**频道:** freeCodeCamp.org
+* **视频内容概述:** 本教程展示了如何使用AI辅助开发环境Trae IDE，从零开始规划、构建并部署一个全栈习惯追踪应用。
+* **主要话题:** 多智能体AI编码、全栈开发工作流、AI辅助的调试与部署，以及如何整合现代工具以实现高效软件开发。
+* **为何值得观看:** 它通过实践演示，展示了前沿AI工具如何有效简化从规划到部署的整个开发生命周期，对于希望利用AI提升生产力的开发者极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yVga-_gMfIM)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   **What the video covers:** This video provides a clear, beginner-friendly explanation of browser sessions and the cyber attack known as session hijacking. It uses visual diagrams to break down how your browser maintains a logged-in state with websites.
+*   **Key topics discussed:** The core concepts of HTTP sessions, session cookies, and how attackers can exploit vulnerabilities (like insecure networks or poor coding) to steal a user's active session, gaining unauthorized access to their accounts.
+*   **Why it's worth watching:** It’s an excellent primer for understanding a common cybersecurity threat that affects everyday internet users. The content demystifies technical jargon, making it valuable for both beginners looking to improve their online safety and aspiring ethical hackers.
+
+### 🎬 会话劫持详解 🔐 | 浏览器工作原理（网络安全意识）
+**频道:** ezCommit
+*   **视频内容概述：** 本视频以清晰易懂的方式，向观众解释浏览器会话（Session）的工作原理以及名为“会话劫持”的网络攻击手法。视频通过图解，直观地说明了浏览器如何保持你的网站登录状态。
+*   **主要话题：** 核心内容包括HTTP会话、会话Cookie的基本概念，以及攻击者如何利用网络漏洞（如不安全的Wi-Fi）或代码缺陷来窃取用户的活跃会话，从而未经授权访问他人账户。
+*   **为何值得观看：** 这是理解一个影响广大网民的常见网络安全威胁的绝佳入门视频。它将复杂的技术术语简单化，无论是希望提升自身网络安全意识的普通用户，还是有志于学习道德黑客知识的初学者，都能从中获益。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Introducing the Codex Micro
+**Channel:** OpenAI
+* What the video covers: A hands-on introduction to the Codex Micro, a customizable mechanical keyboard developed in collaboration with Work Louder specifically for use with OpenAI's Codex.
+* Key topics discussed: The keyboard's physical design, its customizability (likely including key mapping and macros), and how it is engineered to streamline and enhance the workflow when interacting with the Codex AI model for coding tasks.
+* Why it's worth watching: It showcases a unique hardware-software integration, demonstrating how specialized tools can be built to optimize the developer experience with cutting-edge AI like Codex. It's a look at the practical application of AI beyond just the software interface.
+
+### 🎬 介绍 Codex Micro
+**频道:** OpenAI
+* 视频内容概述：视频对 Codex Micro 进行了实机介绍。这是一款由 OpenAI 与 Work Louder 合作为 Codex 打造的可定制机械键盘。
+* 主要话题：探讨了该键盘的物理设计、其可定制功能（可能包括按键映射和宏命令），以及它如何被专门设计用来简化并增强用户在使用 Codex AI 模型进行编程任务时的工作流程。
+* 为何值得观看：它展示了一个独特的硬件与软件集成案例，体现了如何构建专用工具来优化开发者使用 Codex 等前沿人工智能的体验。这是对 AI 应用超越纯软件界面的一次前沿展望。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=m8uUUUsMD3Y)**
+
+### 🎬 mattpocock/skills: A complete AI Coding workflow, end-to-end
+**Channel:** Matt Pocock
+*   This video provides a comprehensive, step-by-step tutorial for Matt Pocock's highly popular `skills` repository, which has garnered 170,000 stars. It covers the entire process from the initial setup of the repository to utilizing its core AI-assisted coding workflow.
+*   **Key topics discussed include:**
+    *   How to install and configure the `skills` repository and its associated tools.
+    *   A detailed walkthrough of the main AI coding workflow, demonstrating how to leverage the system from start to finish.
+    *   Insights into the underlying concepts and best practices that make the workflow effective.
+    *   Practical examples and tips from the creator on maximizing productivity with this system.
+*   **Why it's worth watching:** This is the definitive, official guide to one of the most starred AI coding tools on GitHub. It offers immense value for developers looking to integrate structured AI assistance into their programming process, promising to streamline development and boost efficiency. Watching this saves you from piecing together information from various sources and gives you a masterclass directly from the tool's author.
+
+### 🎬 mattpocock/skills：完整的AI编码工作流，从入门到精通
+**频道:** Matt Pocock
+*   本视频是对Matt Pocock广受欢迎的 `skills` 仓库（已获17万星）进行全面、分步讲解的教程。内容涵盖从仓库的初始安装配置，到实际运用其核心AI辅助编码工作流的完整过程。
+*   **主要话题包括：**
+    *   `skills` 仓库及其相关工具的安装与配置方法。
+    *   详细演示主要的AI编码工作流，展示如何从头到尾使用该系统。
+    *   深入解析工作流背后的底层概念与最佳实践。
+    *   来自创建者的实用案例与技巧分享，以最大化使用效率。
+*   **为何值得观看：** 这是关于GitHub上最受关注的AI编码工具之一的权威、官方指南。对于希望将结构化AI辅助集成到编程流程中的开发者来说，它具有巨大的价值，承诺能简化开发过程并显著提升效率。观看此视频可以避免您从各种来源拼凑信息，并直接从工具作者那里获得大师级的指导。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=M6mYodf0dJM)**
+
+### 🎬 Inside a Japanese computer science class #japaneducation #robotics #coding #programming #japan
+**Channel:** The WEB Express
+* What the video covers
+    * This video provides a firsthand look inside a Japanese computer science classroom. It aims to give viewers an authentic glimpse into the educational environment, teaching methods, and the practical activities students engage in.
+* Key topics discussed
+    * **Japanese Education System:** The pedagogy and structure of tech education within the Japanese school context.
+    * **Robotics:** Likely hands-on projects involving the construction and programming of robots.
+    * **Coding & Programming:** The practical application of programming skills in the classroom, possibly using platforms or languages suitable for education.
+* Why it's worth watching
+    * For educators, tech enthusiasts, and those curious about international education standards, this video offers valuable insights. It showcases how a key pillar of Japanese education integrates modern technology like coding and robotics, moving beyond theory to demonstrate practical implementation.
+
+### 🎬 日本计算机科学课堂实录 #日本教育 #机器人 #编程 #编程 #日本
+**频道:** The WEB Express
+* 视频内容概述
+    * 本视频带领观众深入日本一间计算机科学课堂内部，旨在真实呈现其教学环境、教学方法以及学生们正在进行的实践活动。
+* 主要话题
+    * **日本教育体系**：探讨日本学校背景下科技教育的教学理念和课程结构。
+    * **机器人**：可能涉及学生亲手搭建和编程的机器人项目。
+    * **编程**：课堂中编程技能的实践应用，可能使用适合教学的平台或语言。
+* 为何值得观看
+    * 对于教育工作者、科技爱好者以及对国际教育标准感兴趣的人而言，本视频提供了宝贵的见解。它展示了日本教育的一个核心环节如何整合编程、机器人等现代技术，不仅停留在理论层面，更注重实际操作与应用。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=LU-YIKIhR4M)**
+
