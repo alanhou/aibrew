@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 23, 2026"
 date: 2026-07-23
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 17 fast-moving projects, 20 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，17个快速崛起项目，20个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 22 fast-moving projects, 25 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，22个快速崛起项目，25个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -923,6 +923,223 @@ This video provides a clear and practical explanation of session hijacking, a co
 *   本视频讲述了一次令人震惊的个人经历：用户通过AI聊天机器人，意外发现了自己本以为是私密或已被遗忘的照片。
 *   主要讨论了AI图像识别能力、网络图片抓取、数字足迹，以及个人数据被意外暴露的各种途径。
 *   通过这个真实案例，视频生动地揭示了数字时代潜在的隐私风险，是关于数据安全的重要警示，值得观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+### Emacs Eglot Setup for Scala and Kotlin
+* Eglot is a lightweight, built-in Language Server Protocol (LSP) client in Emacs 29, adhering to the Unix philosophy and Emacs' core principles of simplicity and extensibility.
+* The post details a production-ready Eglot configuration for developing JVM languages (Scala, Kotlin, Java) directly within Emacs, offering a high-performance alternative to monolithic IDEs like IntelliJ IDEA.
+* Key features of the setup include automatic language server initialization (`eglot-ensure`), custom keybindings under the `C-c i` prefix for IDE-like functions, and automatic code formatting on save.
+* Specific optimizations are provided for Scala (using the Metals server with tuned JVM flags) and Kotlin (using the IntelliJ-backed Kotlin Language Server), including advanced workarounds via JSON-RPC and advice functions.
+* Global workspace configurations allow for fine-grained control of server behavior (e.g., Metals settings, TypeScript/JavaScript formatting) to create a unified and seamless development experience across multiple languages.
+
+### 用于Scala和Kotlin的Emacs Eglot配置
+* Eglot 是 Emacs 29 内置的轻量级语言服务器协议（LSP）客户端，遵循 Unix 哲学和 Emacs 的核心原则（简洁与可扩展性）。
+* 本文详细阐述了一个可直接在 Emacs 中开发 JVM 语言（Scala、Kotlin、Java）的生产级 Eglot 配置，为开发者提供了一个高性能的方案，以替代 IntelliJ IDEA 等笨重的集成开发环境。
+* 该配置的关键特性包括：自动初始化语言服务器（`eglot-ensure`）、将 `C-c i` 前缀下的自定义快捷键用于 IDE 功能，以及保存时自动格式化代码。
+* 为 Scala（使用 Metals 服务器并优化 JVM 参数）和 Kotlin（使用基于 IntelliJ 的 Kotlin 语言服务器）提供了特定优化，并包含通过 JSON-RPC 和 advice 函数实现的高级变通方法。
+* 全局工作区配置允许对服务器行为进行精细控制（例如 Metals 设置、TypeScript/JavaScript 格式化），从而在多种语言间创建统一且无缝的开发体验。
+
+**[Read Original / 阅读原文](https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html)**
+
+<!-- [Title-Only] -->
+### Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample
+* This article likely presents and discusses a conversation between the renowned mathematician Terence Tao and ChatGPT concerning a purported counterexample to the famous, long-standing Jacobian Conjecture in algebra. It may include the AI's reasoning, Tao's critique or analysis, and the implications for the conjecture's validity.
+* It is interesting because it showcases a cutting-edge interaction between a top human mathematician and advanced AI in exploring a deep, unsolved problem in pure mathematics, potentially highlighting both the capabilities and limitations of current AI models in complex theoretical reasoning.
+
+### 陶哲轩（Terence Tao）关于雅可比猜想反例的ChatGPT对话
+* 根据标题推测，本文很可能呈现了著名数学家陶哲轩与ChatGPT之间的一段对话，内容涉及一个可能推翻长期悬而未决的雅可比猜想的所谓反例。文章或许会展示AI的推理过程、陶哲轩的分析或批评，以及该对话对猜想有效性的影响。
+* 值得关注的原因在于，它展示了顶尖数学家与先进AI在探索纯数学领域一个深刻未解问题时的前沿互动，可能揭示了当前AI模型在复杂理论推理方面的能力与局限。
+
+**[Read Original / 阅读原文](https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56)**
+
+### Cruller: Bun's Zig Runtime, Continued on Zig 0.16
+*   Cruller is a fork of the last Zig-based Bun release, stripped down to only the components needed to run pre-built production JavaScript servers and ported to vanilla Zig 0.16.
+*   It retains core runtime features like JavaScriptCore, `Bun.serve`, HTTP/1-3, WebSockets, `fetch`, streams, and the module resolver, while intentionally removing development-oriented tools like the package manager, bundler, shell, and test runner.
+*   The main design decision is to position Cruller as a focused runtime, not a general-purpose Bun replacement; it requires a pre-built entrypoint and does not support package installation or bundling.
+*   Performance measurements on Linux x64 show an ~18% reduction in binary size (73.0 MiB vs. 88.5 MiB for official Bun 1.3.14) with comparable V8 Crypto benchmark performance.
+*   Key technical achievements include separating the runtime from Bun's old build system, creating a native Zig 0.16 build graph with compatibility shims, and embedding generated code for portability.
+
+### Cruller：移植至 Zig 0.16 的 Bun 运行时
+*   Cruller 是对最后一个基于 Zig 的 Bun 版本的分支，精简为仅包含运行已构建的生产环境 JavaScript 服务器所需的部分，并移植至原生 Zig 0.16。
+*   它保留了核心运行时功能，如 JavaScriptCore、`Bun.serve`、HTTP/1-3、WebSockets、`fetch`、流、模块解析器，同时有意移除了包管理器、打包器、Shell、测试运行器等开发导向工具。
+*   主要设计决策是将 Cruller 定位为专注的运行时，而非通用的 Bun 替代品；它需要一个预构建的入口文件，不支持包安装或打包。
+*   在 Linux x64 上的性能测量显示，二进制文件大小减小约 18%（73.0 MiB 对比官方 Bun 1.3.14 的 88.5 MiB），V8 Crypto 基准测试性能相当。
+*   关键技术成就包括将运行时与 Bun 的旧构建系统分离、创建了原生 Zig 0.16 构建图及兼容性填充、并嵌入了生成的代码以保持可移植性。
+
+**[Read Original / 阅读原文](https://ziggit.dev/t/cruller-buns-zig-runtime-continued-on-zig-0-16/16734)**
+
+### World Monitor - AI-Powered Global Intelligence Dashboard
+*   **What it does**: A unified, real-time situational awareness platform that aggregates over 500 curated news feeds, monitors geopolitical events, and tracks infrastructure and economic signals. It synthesizes information using AI and presents it on a dual-engine map interface (3D globe and flat map) with multiple country-specific indices and market data.
+*   **Key features**: AI news synthesis, 56 map layer types, country instability scoring (CII v8), a comprehensive finance radar (29 stock exchanges, commodities, crypto), local AI capability via Ollama, 6 built-in site variants (world, tech, finance, etc.), native desktop apps (Tauri), and support for 25 languages.
+*   **Why it's notable**: It's a comprehensive, open-source intelligence dashboard built with a modern TypeScript/Vite stack, offering multiple deployment options (web, desktop, SDKs) from a single codebase. Its trend is driven by its ambitious scope, real-time multi-source data fusion, and extensive developer tooling (APIs, CLI, MCP server).
+
+### World Monitor - AI驱动的实时全球情报仪表板
+*   **功能介绍**: 一个统一的态势感知平台，实时聚合500多个精选新闻源，监控地缘政治事件，并追踪基础设施与经济信号。它利用AI对信息进行综合处理，并通过双引擎地图界面（3D地球与平面地图）呈现数据，同时提供多国稳定性指数和市场数据。
+*   **主要特点**: AI新闻综合处理、56种地图图层类型、国家不稳定性指数（CII v8）、全面的金融雷达（29个股票交易所、大宗商品、加密货币）、可通过Ollama运行本地AI、6个内置站点变体（世界、科技、金融等）、原生桌面应用（基于Tauri），并支持25种语言。
+*   **为何值得关注**: 这是一个功能全面、基于现代TypeScript/Vite技术栈构建的开源情报仪表板，能够从单一代码库发布多种部署形态（网页、桌面应用、SDK）。其热度源于其宏大的设计目标、实时的多源数据融合能力，以及强大的开发者工具链（API、CLI、MCP服务器）。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### RuView - WiFi Sensing Platform
+*   **What it does**: RuView transforms standard WiFi radio signals into real-time spatial intelligence using inexpensive ESP32 sensors. It detects people's presence, tracks movements, and monitors vital signs like breathing and heart rates through walls, without cameras, wearables, or relying on cloud services.
+*   **Key features**:
+    *   **Through-Wall Sensing**: Detects and counts people, tracks entries/exits, and maps rooms using RF signal disturbances.
+    *   **Contactless Vital Signs**: Monitors breathing rate (6-30 BPM) and heart rate (40-120 BPM) in real-time.
+    *   **AI on the Edge**: Utilizes a tiny, pretrained AI model (8KB) for presence/activity detection and supports a catalog of over 105 edge computing modules ("Cogs").
+    *   **Major Smart-Home Integration**: Natively works with Home Assistant, Apple Home, Google Home, and Alexa via a Matter bridge, exposing 21 entities for automation.
+    *   **Privacy-First Architecture**: Processes all data locally on low-power hardware, ensuring no video data is captured or transmitted.
+*   **Why it's notable**: It offers a radical, privacy-preserving approach to spatial awareness and health monitoring by repurposing ubiquitous WiFi infrastructure. The combination of low-cost hardware (nodes ~$9), powerful edge AI, and seamless integration with existing ecosystems makes it a significant and trending development in ambient intelligence and IoT sensing.
+
+### RuView - WiFi感知平台
+*   **功能介绍**: RuView利用廉价的ESP32传感器，将普通的WiFi无线电信号转化为实时的空间智能数据。它能够穿透墙壁检测人员存在、追踪移动轨迹并监测呼吸和心率等生命体征，全程无需摄像头、可穿戴设备或依赖云服务。
+*   **主要特点**:
+    *   **穿墙感知**: 利用射频信号干扰来检测、计数人员，追踪出入，并进行房间映射。
+    *   **非接触生命体征监测**: 实时监测呼吸频率（6-30次/分钟）和心率（40-120次/分钟）。
+    *   **边缘AI计算**: 使用一个微小（8KB）的预训练AI模型进行存在/活动检测，并支持超过105种边缘计算模块（"Cogs"）。
+    *   **主流智能家居集成**: 通过Matter网关原生支持Home Assistant、Apple Home、Google Home和Alexa，可暴露21个实体用于自动化控制。
+    *   **隐私优先架构**: 所有数据在低功耗硬件上本地处理，确保不拍摄或传输任何视频数据。
+*   **为何值得关注**: 它通过重新利用无处不在的WiFi基础设施，提供了一种全新的、注重隐私的空间感知和健康监测方案。结合低成本硬件（节点约9美元）、强大的边缘AI能力以及与现有生态系统的无缝集成，使其成为环境智能和物联网传感领域一个重要且迅速发展的项目。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### i-have-adhd - A skill for coding agents to provide direct, ADHD-friendly outputs
+* **What it does**: It is a skill/plugin for AI coding assistants (like Claude Code and Codex) that changes how the assistant structures its responses. It forces the AI to lead with the immediate next action, use numbered steps, and avoid verbose preambles or conclusions, making the output more direct and scannable.
+* **Key features**:
+    * **Action-oriented responses**: Forces the AI to start with the concrete next action.
+    * **Structured output**: Uses numbered lists for multi-step tasks and provides specific time estimates.
+    * **Clear rules**: Enforces 10 rules (e.g., suppress tangents, cap lists at 5 items, no filler phrases) for consistency.
+    * **Easy installation**: Available as a plugin for major AI coding tools.
+    * **Tunable**: Users can fork and edit the core rules (SKILL.md) to customize the behavior.
+* **Why it's notable**: It addresses a common frustration with verbose AI assistants by adopting an "ADHD-friendly" philosophy—prioritizing clarity and immediate utility over politeness or exposition. The dramatic "before/after" comparison in the README effectively demonstrates its value. Its rapid accumulation of stars (1,699 in one day) indicates strong resonance with developers tired of sifting through fluff in AI-generated answers.
+
+### i-have-adhd - 一个让编程代理提供直接、对注意力缺陷多动障碍友好的输出技能
+* **功能介绍**: 这是一个用于AI编程助手（如Claude Code和Codex）的技能/插件，旨在改变助手的响应结构。它强制AI以直接的下一步行动开头，使用编号步骤，并避免冗长的前言或总结，使输出更直接、易于快速浏览。
+* **主要特点**:
+    * **行动导向响应**: 强制AI以具体的下一步行动开始回答。
+    * **结构化输出**: 使用编号列表处理多步骤任务，并提供具体的时间预估。
+    * **明确的规则**: 执行10条规则（例如，抑制跑题、列表最多5项、无填充语）以确保一致性。
+    * **易于安装**: 可作为主要AI编程工具的插件轻松安装。
+    * **可定制**: 用户可以分叉并编辑核心规则文件（SKILL.md）来自定义行为。
+* **为何值得关注**: 它通过采用“对注意力缺陷多动障碍友好”的理念——优先考虑清晰度和即时实用性，而非礼节或长篇解释——解决了开发者对冗长AI助手的普遍不满。README中引人注目的“前后对比”有效展示了其价值。它在一天内迅速积累的星标（1,699颗）表明，它强烈地打动了那些厌倦于筛选AI生成答案中多余信息的开发者。
+
+**[View Repository / 查看仓库](https://github.com/ayghri/i-have-adhd)**
+
+### Harness Engineering - Improving Agent Output Through Environment Shaping
+* **What it does**: Provides a curated methodology and resource bundle ("harness") for improving AI coding agent outputs by optimizing the surrounding context, tools, and environment. It treats the core model/agent as a black box and focuses on providing recoverable organizational knowledge, constraints, and non-functional requirements as actionable inputs.
+* **Key features**: Frameworks for making organizational context (quality attributes, security, maintainability) retrievable; playbooks and agent context bundles (e.g., `AGENTS.md`); focus on cumulative learning and feedback loops; emphasizes "last-mile deployment" for injecting private process data into agent workflows.
+* **Why it's notable**: Addresses a critical pain point in AI-assisted development by systematizing how to bridge the gap between generic model capabilities and specific organizational needs. It offers a practical, systems-level approach to making AI agents more effective, reliable, and aligned with internal standards, garnering significant attention (2.2k+ stars) in the developer community.
+
+### Harness Engineering - 通过环境塑造提升代理输出效果
+* **功能介绍**: 提供一个经过策划的方法论和资源包（“harness”），通过优化AI编码代理周围的上下文、工具和环境来提升其输出质量。它将核心模型/代理视为黑箱，专注于提供可恢复的组织知识、约束条件和非功能性需求作为可操作的输入。
+* **主要特点**: 提供使组织上下文（质量属性、安全性、可维护性）可检索的框架；包含实战手册（playbooks）和代理上下文包（如 `AGENTS.md`）；强调累积学习和反馈循环；注重“最后一英里部署”，将私有流程数据注入代理工作流。
+* **为何值得关注**: 通过系统化地弥合通用模型能力与特定组织需求之间的差距，解决了AI辅助开发中的一个核心痛点。它提供了一种实用的系统级方法，使AI代理更有效、更可靠且更符合内部标准，在开发者社区中获得了广泛关注（2.2k+ stars）。
+
+**[View Repository / 查看仓库](https://github.com/lopopolo/harness-engineering)**
+
+### Conversation Stenography - Hide Secret Messages in Plain Sight
+
+*   **What it does**: This tool enables two people to have a private conversation through any messaging app (like WhatsApp, Telegram, or email) by hiding encrypted secret messages within innocent-looking, AI-generated cover text.
+*   **Key features**:
+    *   Uses local AI models (GPT-2, Llama) to generate natural-sounding cover text that encodes encrypted data.
+    *   Features military-grade AES-SIV encryption with a conversation chain to detect tampering.
+    *   Completely local operation; no data is sent to the cloud.
+    *   Includes a setup wizard and simulation mode for easy testing on a single device.
+    *   Designed to work over any text-based communication channel.
+*   **Why it's notable**: It's a practical and innovative application of LLMs focused on privacy and steganography. It addresses concerns about surveillance and the risks of using standard encrypted messaging, offering a way to communicate without raising suspicion. The high star count indicates significant interest in this privacy-preserving concept.
+
+### Conversation Stenography - 在普通对话中隐藏机密信息
+
+*   **功能介绍**: 该工具允许两人通过任何即时通讯软件（如 WhatsApp、Telegram 或邮件）进行私密对话，其方法是将加密的机密信息隐藏在由 AI 生成的、看似无辜的普通聊天文本中。
+*   **主要特点**:
+    *   使用本地 AI 模型（如 GPT-2、Llama）生成看似自然的文本，以编码加密数据。
+    *   采用军事级 AES-SIV 加密技术，并通过对话链来检测信息是否被篡改。
+    *   全程本地运行，不会向云端发送任何数据。
+    *   提供设置向导和模拟模式，方便用户在单机上进行测试。
+    *   可设计用于任何基于文本的通信渠道。
+*   **为何值得关注**: 这是大型语言模型（LLM）在隐私和隐写术领域一个实际且创新的应用。它针对人们对监控的担忧以及使用标准加密消息可能带来的风险，提供了一种在不引起怀疑的情况下进行通信的方式。其较高的星标数量表明，这一注重隐私的概念受到了广泛关注。
+
+**[View Repository / 查看仓库](https://github.com/nethical6/conversation-steganography)**
+
+### 🎬 How Supabase Became One Of The Fastest Growing DevTool Companies In The World
+**Channel:** Y Combinator
+*   This video is a talk from Startup School Paris featuring Supabase CEO Paul Copplestone. He details the origin story of Supabase, explaining how the deep frustration he experienced while trying to migrate a project off Firebase directly inspired the creation of a new open-source backend platform.
+*   Key topics include the specific technical pain points of vendor lock-in with Firebase, the strategic decision to build an open-source alternative, how to foster a developer community around a technical product, and the unique challenges of scaling a globally distributed engineering team.
+*   It's worth watching for anyone interested in startup origin stories, the open-source business model, or modern backend development. It offers a candid look at how solving a personal, widespread developer problem can become the foundation for a highly successful company, directly from the founder's perspective at a Y Combinator event.
+
+### 🎬 Supabase 是如何成为全球增长最快的开发工具公司之一的
+**频道:** Y Combinator
+*   本视频是 Y Combinator 的 Startup School Paris 活动中，Supabase 的首席执行官 Paul Copplestone 的演讲。他详细介绍了 Supabase 的起源故事，解释了一次令人沮丧的 Firebase 迁移经历如何直接启发了他创建一个新的开源后端平台。
+*   主要话题包括：使用 Firebase 时所面临的厂商锁定具体技术痛点、决定构建开源替代方案的战略思考、如何围绕技术产品构建开发者社区，以及扩展全球化分布式工程团队面临的独特挑战。
+*   对于任何对创业起源故事、开源商业模式或现代后端开发感兴趣的人来说，这个视频都值得观看。它坦诚地展示了如何从一个广泛存在的个人开发者痛点出发，奠定一家高成长公司的基础——这是创始人在 Y Combinator 活动上的亲口叙述。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sG5aB79TE44)**
+
+### 🎬 Compute at Sea
+**Channel:** Y Combinator
+* This video addresses the looming crisis of AI compute infrastructure running out of traditional resources (power and land) and explores a radical potential solution: building data centers at sea.
+* Key topics include the critical energy and land constraints facing the AI industry, the engineering and logistical challenges of offshore computing, and the potential environmental and economic implications of this approach.
+* It's worth watching because it presents a novel, high-stakes solution to a fundamental bottleneck in AI development. The concept is both ambitious and provocative, sparking important discussions on the future infrastructure that could power next-generation technology.
+
+### 🎬 海上算力
+**频道:** Y Combinator
+* 视频直面AI算力基础设施即将耗尽传统资源（电力与土地）的紧迫危机，并探讨了一个极具颠覆性的潜在解决方案：在海上建设数据中心。
+* 主要话题包括AI行业面临的关键能源与土地限制、海上计算的工程与物流挑战，以及这种模式可能带来的环境与经济影响。
+* 之所以值得观看，是因为它为AI发展的一个根本瓶颈提出了一种新颖且关键的解决方案。这一构想既雄心勃勃又引人深思，激发了关于未来技术发展所需基础设施的重要讨论。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xZW8fR9ediE)**
+
+### 🎬 Nuclear Power Is Still Incredibly Inefficient - Adam Brown
+**Channel:** Dwarkesh Patel
+*   **What the video covers:** A critical examination of the persistent inefficiencies of nuclear power, arguing that despite its potential as a clean energy source, it remains hindered by massive costs, lengthy construction times, and poor economic performance compared to alternatives.
+*   **Key topics discussed:** The historical and current economic challenges of building nuclear plants, the comparison of levelized cost of energy (LCOE) with solar, wind, and natural gas, and the structural reasons (like unique regulatory and construction hurdles) why nuclear power struggles to compete.
+*   **Why it's worth watching:** It offers a data-driven and contrarian perspective on a major topic in the clean energy debate, challenging the optimistic narratives around nuclear's role in decarbonization. It's essential viewing for anyone wanting to understand the real-world economics constraining the energy transition.
+
+### 🎬 核能依然极其低效 - 亚当·布朗
+**频道:** Dwarkesh Patel
+*   **视频内容概述:** 对核能持续存在的低效问题进行了批判性探讨，认为尽管它作为一种清洁能源具有潜力，但仍然受到巨额成本、漫长的建设时间以及与替代能源相比糟糕的经济表现所阻碍。
+*   **主要话题:** 建设核电站面临的历史与当前经济挑战、核能与太阳能、风能和天然气在平准化能源成本（LCOE）上的比较，以及阻碍核能竞争的独特监管和建设难题等结构性原因。
+*   **为何值得观看:** 本视频就清洁能源辩论中的重大议题提供了一个基于数据且反向的观点，挑战了围绕核能在脱碳进程中作用的乐观叙事。对于任何想了解制约能源转型的真实经济因素的人来说，都是必看的内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mJE5s8RmvRI)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   What the video covers
+    This video provides a clear, educational explanation of a common cybersecurity threat: session hijacking. It breaks down the fundamental concept of how web sessions (like when you log into a website) operate in your browser and then demonstrates the methods an attacker could use to steal and take over that active session.
+*   Key topics discussed
+    *   The definition and purpose of a browser session (e.g., session cookies).
+    *   Common session hijacking techniques (like sidejacking or cross-site scripting).
+    *   The risks and potential impact of a compromised session.
+    *   Practical cybersecurity awareness for users and developers.
+*   Why it's worth watching
+    This is an essential watch for anyone interested in digital security, from casual web users to budding ethical hackers. It demystifies a technical concept with practical relevance, helping viewers understand a major risk they face daily online and how such attacks work, which is the first step toward better protection.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+*   视频内容概述
+    本视频清晰、教育性地讲解了一种常见的网络安全威胁：会话劫持。它首先分解了浏览器中网络会话（例如您登录某个网站时）的基本工作原理，然后演示了攻击者可能用来窃取并接管该活动会话的方法。
+*   主要话题
+    *   会话劫持的定义与目的。
+    *   常见的会话劫持技术（如侧信道攻击或跨站脚本攻击）。
+    *   会话被泄露的风险及潜在影响。
+    *   面向用户和开发者的实用网络安全意识。
+*   为何值得观看
+    这对任何对数字安全感兴趣的人来说都是必看内容，无论是普通网络用户还是有志成为道德黑客的人。它用贴近实际的例子解释了一个技术概念，帮助观众理解他们日常上网时面临的一项主要风险及其攻击原理，这是加强自我防护的第一步。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+*   What the video covers: This video explores the concerning intersection of generative AI and personal privacy. The creator shares a personal experience or investigation where ChatGPT (or similar AI models) surfaced or revealed photos she had believed were private or hidden online.
+*   Key topics discussed: The potential for AI to scrape, analyze, and reconstruct digital footprints; the erosion of personal privacy in the age of large language models; practical examples of how publicly available data can be used against one's expectations; and likely, steps or considerations for digital privacy management.
+*   Why it's worth watching: It provides a firsthand, contemporary look at a critical and evolving tech privacy issue. This isn't a theoretical discussion; it's a tangible warning about how our digital data can be aggregated and exposed in unexpected ways by advanced AI systems, making it essential viewing for anyone concerned about online privacy.
+
+### 🎬 Chat GPT曝光了我的隐藏照片
+**频道:** TheCyborgGirl
+*   视频内容概述：本视频深入探讨了生成式AI与个人隐私之间令人担忧的交集。创作者分享了一次亲身经历或调查，内容涉及ChatGPT（或类似AI模型）发掘或暴露了她原本认为私密或已隐藏的在线照片。
+*   主要话题：大型AI模型抓取、分析和重构数字足迹的可能性；在AI时代个人隐私面临的侵蚀；公开可用数据如何以出人意料的方式被利用的实际案例；以及很可能包括的，针对数字隐私管理的实用建议与思考。
+*   为何值得观看：它通过一个亲身、实时的案例，审视了一个关键且不断演变的科技隐私议题。这并非空泛的理论探讨，而是一个切实的警示，提醒我们个人数字数据可能被先进的AI系统以意想不到的方式整合与暴露，对于任何关注在线隐私的人而言都极具观看价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
