@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 23, 2026"
 date: 2026-07-23
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 17 fast-moving projects, 20 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，17个快速崛起项目，20个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -709,6 +709,220 @@ This video provides a clear and practical explanation of session hijacking, a co
 *   **视频内容概述:** 本视频深入调查了像ChatGPT这样的AI模型是否在未经允许的情况下，使用了用户认为已经隐藏或私有的网络照片进行训练。视频很可能展示了一种具体方法，来检查个人图像是否已被网络抓取。
 *   **主要话题:** 人工智能时代的数字隐私问题、大型语言与多模态模型的训练数据来源、反向图片搜索或网络抓取检测方法，以及个人数据在未明确同意的情况下被AI系统吸收的潜在风险。
 *   **为何值得观看:** 对于任何关注在线隐私的观众来说，这是一个至关重要的深度分析。它超越了理论风险，展示了一次实际测试，赋予观众评估自身数字足迹的能力，并理解主要AI平台背后常不透明的数据收集实践。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+### Git `--end-of-options` Flag Explained
+*   The `--end-of-options` flag was introduced in Git 2.24.0 (November 2019) to properly terminate the option parsing for revision arguments, as the existing `--` separator was already used to distinguish revisions from path specifications.
+*   This flag is crucial for preventing argument injection vulnerabilities, where an untrusted string (like a revision name starting with a dash) could be misinterpreted as a command option. For safe usage with untrusted input, the recommended pattern is `git log --end-of-options "$rev" -- "$path"`.
+*   The article details the history of the flag's implementation across different Git subcommands and emphasizes that `--` and `--end-of-options` serve distinct purposes in Git and are not interchangeable.
+
+### Git `--end-of-options` 标志解析
+*   `--end-of-options` 标志在 Git 2.24.0（2019年11月）引入，用于正确终止修订版本（revision）参数的选项解析，因为现有的 `--` 分隔符已被用于区分修订版本和路径规范（pathspecs）。
+*   该标志对于防止参数注入漏洞至关重要，不信任的字符串（如以短横线开头的修订名称）可能被错误地解释为命令选项。使用不受信任输入的安全模式是：`git log --end-of-options "$rev" -- "$path"`。
+*   文章详细介绍了该标志在不同 Git 子命令中的实现历史，并强调在 Git 中 `--` 和 `--end-of-options` 用途不同，不能互换使用。
+
+### Argument Injection: The Core Vulnerability
+*   The article defines **argument injection (CWE-88)** as a distinct security flaw from command injection, where a malicious string is passed as an argument and misinterpreted as an option by the receiving program (e.g., Git, SSH, Mercurial), without involving a shell.
+*   It references major CVEs across version control systems (CVE-2017-1000117, etc.) and package managers (CVE-2021-43809, CVE-2022-24440, etc.), showing this as a recurring and dangerous pattern when tools fork the `git` binary and pass untrusted URLs or refs from manifests.
+*   The investigation found that of 17 package managers studied that fork `git`, only Go's `cmd/go` uses `--end-of-options` as a mitigation, highlighting a widespread gap in defensive practices.
+
+### 参数注入：核心漏洞
+*   文章定义了**参数注入（CWE-88）**，这是一种与命令注入不同的安全漏洞，恶意字符串作为参数传递并被接收程序（如 Git、SSH、Mercurial）错误解释为选项，且无需涉及 shell。
+*   文章引用了跨版本控制系统（如 CVE-2017-1000117）和包管理器（如 CVE-2021-43809、CVE-2022-24440）的重大 CVE 漏洞，表明当工具 fork `git` 二进制文件并传递来自清单文件（manifests）的不信任 URL 或引用时，这是一个反复出现的危险模式。
+*   调查发现，在研究的 17 个 fork `git` 的包管理器中，只有 Go 的 `cmd/go` 使用 `--end-of-options` 作为防御措施，凸显了防御实践中广泛存在的缺口。
+
+### Mitigation and the Role of `--end-of-options`
+*   While adding a `--` separator is a common initial hardening step, it is insufficient for revision parsers where `--` is already reserved. The correct mitigation for these cases is using `--end-of-options` to definitively end option parsing.
+*   The text concludes by noting that the Go team's commit adding `--end-of-options` suggests this flag should be considered a best practice for any tool that forks `git` to handle untrusted references from user-provided data.
+*   This approach provides a more robust defense against argument injection compared to merely validating input formats or relying solely on the overloaded `--` separator.
+
+### 缓解措施与 `--end-of-options` 的作用
+*   虽然添加 `--` 分隔符是一种常见的初步加固措施，但对于已保留 `--` 用途的修订解析器来说是不够的。在这些情况下，正确的缓解措施是使用 `--end-of-options` 来明确终止选项解析。
+*   文章最后指出，Go 团队添加 `--end-of-options` 的提交表明，对于任何 fork `git` 以处理来自用户提供数据的不信任引用的工具，该标志都应被视为最佳实践。
+*   与仅验证输入格式或完全依赖过载的 `--` 分隔符相比，这种方法为防止参数注入提供了更强大的防御。
+
+**[Read Original / 阅读原文](https://nesbitt.io/2026/07/21/end-of-options.html)**
+
+<!-- [Title-Only] -->
+### Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample
+* This article likely presents a transcript or summary of a conversation between Fields Medalist mathematician Terence Tao and ChatGPT, discussing a purported counterexample to the Jacobian Conjecture—a major open problem in mathematics. The conversation might involve Tao probing ChatGPT's mathematical reasoning, evaluating the validity of a proposed proof, or exploring the AI's limitations in advanced research.
+* It would be interesting to readers because it showcases a real-world interaction between a leading mathematician and a cutting-edge AI tool on a highly technical problem, raising questions about AI's role in mathematical discovery and verification.
+
+### 陶哲轩与ChatGPT关于雅可比猜想反例的对话
+* 这篇文章可能展示了菲尔兹奖得主数学家陶哲轩与ChatGPT之间的一段对话记录或摘要，讨论针对雅可比猜想（数学中一个重要的未解难题）的所谓反例。对话可能涉及陶哲轩质疑ChatGPT的数学推理能力、评估一个提出证明的有效性，或探讨AI在高级研究中的局限性。
+* 这对读者而言之所以值得关注，是因为它展现了一位顶尖数学家与前沿AI工具就一个高度技术性问题的实时互动，引发了关于AI在数学发现和验证中作用的思考。
+
+**[Read Original / 阅读原文](https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56)**
+
+<!-- [Title-Only] -->
+### Quality non-fiction books are the antithesis of AI slop
+*   This article likely argues that well-researched, thoughtfully written non-fiction books represent the opposite of the low-quality, generic, and volume-driven content often referred to as "AI slop." It probably contrasts the depth, credibility, and human insight found in quality books with the shallow, repetitive, and sometimes misleading outputs of AI content mills.
+*   It might be interesting to readers concerned with information quality, the value of human expertise, and the cultural impact of AI on knowledge dissemination and reading habits.
+
+### 精品非虚构书籍是AI垃圾内容的对立面
+*   根据标题推测，本文可能论证经过深入研究和精心撰写的非虚构书籍，与通常被称为“AI垃圾”的低质量、同质化、批量生成的内容截然相反。文章或许会对比优质书籍中蕴含的深度、可信度和人类洞见，与AI内容工厂产出的浅薄、重复甚至有时具有误导性的信息。
+*   该文可能引起关注信息质量、重视人类专业知识，以及担忧AI对知识传播和阅读习惯产生文化影响的读者的兴趣。
+
+**[Read Original / 阅读原文](https://resobscura.substack.com/p/quality-non-fiction-books-are-the)**
+
+### koala73/worldmonitor - Real-time Global Intelligence Dashboard
+* **What it does**: An AI-powered situational awareness interface that aggregates and synthesizes real-time news, monitors geopolitical events, and tracks global infrastructure and market signals on interactive maps.
+* **Key features**: 500+ AI-curated news feeds, dual 3D/flat map engines with 56 layer types, Country Instability Index (CII), comprehensive finance radar, local AI support via Ollama, 6 thematic site variants from a single codebase, native desktop app (Tauri), and support for 25 languages.
+* **Why it's notable**: It offers a powerful, open-source, and privacy-friendly (local AI) alternative to proprietary intelligence dashboards. Its broad feature set, multi-platform desktop client, and extensive programmatic access (MCP, REST, CLI, multi-language SDKs) make it highly attractive for developers and power users, driving its rapid trend in stars.
+
+### koala73/worldmonitor - 实时全球情报仪表板
+* **功能介绍**: 一个基于AI的情态势感知界面，能在交互式地图上聚合、合成实时新闻，监控地缘政治事件，并追踪全球基础设施与市场信号。
+* **主要特点**: 500+ AI筛选新闻源、双3D/平面地图引擎（含56种图层）、国家不稳定指数 (CII)、全面金融雷达、本地AI支持（Ollama）、单一代码库生成6个主题站点变体、原生桌面应用（Tauri）及25种语言支持。
+* **为何值得关注**: 它是开源且注重隐私（支持本地AI）的强大情报仪表板替代方案。其丰富的功能集、跨平台桌面客户端以及广泛的编程接口（MCP、REST、CLI、多语言SDK）使其对开发者和高级用户极具吸引力，从而推动了其星标数量的快速增长。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### RuView - See through walls with WiFi
+*   **What it does**: RuView is a WiFi sensing platform that transforms ordinary WiFi radio signals (CSI) from low-cost ESP32 sensors into real-time spatial intelligence. It enables contactless presence detection, vital sign monitoring (breathing & heart rate), activity recognition, and room occupancy analysis through walls and in complete darkness, without cameras or wearables.
+*   **Key features**:
+    *   **Camera-Free Sensing**: Uses physics of radio wave disturbance, not visual data, for high privacy.
+    *   **Comprehensive Integration**: Native support for Home Assistant, Apple Home, Google Home, and Alexa via MQTT/Matter bridges.
+    *   **Edge-AI Powered**: Runs lightweight, pretrained AI models (available on Hugging Face) directly on edge hardware (ESP32 mesh, Raspberry Pi) for sub-millisecond inference.
+    *   **Rich Data Output**: Provides both raw signals and inferred semantic states (e.g., "someone-sleeping", "possible-distress").
+    *   **Multi-Frequency Mesh**: Scans across 6 WiFi channels for robust, high-bandwidth sensing.
+*   **Why it's notable**: RuView represents a significant leap in ambient intelligence and IoT sensing. Its ability to "see" using existing WiFi infrastructure for health monitoring and smart home automation is a powerful and privacy-preserving innovation. The project is highly active, well-documented, integrates with major ecosystems, and is built on a compelling technical stack (Rust, ESP32, Spiking Neural Networks), making it a trending and impactful open-source project.
+
+### RuView - 透视之眼：用WiFi信号实现空间感知
+*   **功能介绍**: RuView 是一个WiFi感知平台，它将普通WiFi路由器发射的无线电波（通过低成本ESP32传感器采集的信道状态信息CSI）转化为实时的空间智能数据。无需摄像头或可穿戴设备，即可穿透墙壁、在全黑暗环境下实现非接触式人员存在检测、生命体征（呼吸和心率）监测、活动识别和房间占用分析。
+*   **主要特点**:
+    *   **无摄像头传感**: 基于无线电波扰动物理原理，而非视觉数据，隐私保护性极强。
+    *   **全面生态集成**: 通过 MQTT/Matter 协议原生支持 Home Assistant、Apple Home、Google Home 和 Alexa 等主流智能家居平台。
+    *   **边缘人工智能**: 在边缘硬件（ESP32网格、树莓派）上运行轻量级预训练AI模型（模型发布在 Hugging Face），实现亚毫秒级推理。
+    *   **丰富数据输出**: 提供原始信号和推断出的语义状态（例如，“有人入睡”、“疑似不适”）。
+    *   **多频段网格**: 在6个WiFi信道上扫描，确保感知带宽和鲁棒性。
+*   **为何值得关注**: RuView 代表了环境智能和物联网感知领域的重大飞跃。利用现有WiFi基础设施实现健康监测和智能家居自动化的能力，是一项强大且注重隐私的创新。该项目活跃度高、文档完善、与主要生态系统集成良好，并基于有吸引力的技术栈（Rust, ESP32, 脉冲神经网络）构建，使其成为一个正在兴起且具有重要影响的开源项目。
+
+**[View Repository / 查看仓库](https://github.com/ruvnet/RuView)**
+
+### i-have-adhd - A skill to make coding assistants output concise, actionable responses
+*   **What it does:** It's a customizable "skill" or plugin for AI coding assistants (like Claude Code or Codex) that forces them to provide direct, step-by-step answers, immediately stating the next action instead of burying it in conversational fluff.
+*   **Key features:** It implements 10 strict rules for output, such as leading with the action, numbering steps, ending with a concrete next step, and eliminating preamble. It's highly tunable via a configuration file.
+*   **Why it's notable:** It directly addresses a common pain point of verbose AI assistants, making interactions more efficient and ADHD-friendly. Its rapid gain of 1,699 stars in a single day demonstrates strong demand for more focused, productivity-oriented AI coding tools.
+
+### i-have-adhd - 一个让编码助手输出简洁、可操作回复的技能
+*   **功能介绍：** 这是一个为AI编码助手（如Claude Code或Codex）设计的可定制“技能”或插件，它强制助手提供直接、分步骤的答案，立即说明下一步操作，而不是将答案淹没在闲聊式的开场白中。
+*   **主要特点：** 它实现了10条严格的输出规则，例如以行动开头、步骤编号、以具体的下一步结尾，并去除所有前言。可通过配置文件进行高度调整。
+*   **为何值得关注：** 它直接解决了AI助手回答冗长这一常见痛点，使交互更高效，对注意力缺陷与多动障碍（ADHD）人群更友好。单日获得1,699颗星的快速增长证明了市场对更专注、以生产力为导向的AI编码工具的强烈需求。
+
+**[View Repository / 查看仓库](https://github.com/ayghri/i-have-adhd)**
+
+### [lopopolo/harness-engineering] - *An anthology and agent context bundle for harness engineering*
+*   **What it does**: This repository is a curated collection of essays, guides, and structured context designed to implement "harness engineering." This practice improves AI coding agent performance by shaping the environment (context and tools) around them, rather than just tuning the model itself. It aims to make an organization's non-functional requirements, local decisions, and process data retrievable as context for agents.
+*   **Key features**:
+    *   Provides a theoretical foundation and practical playbooks for shaping agent context.
+    *   Structures repositories to "teach agents" about requirements, authority, and quality standards.
+    *   Promotes a cumulative feedback loop where agent work improves the environment for future tasks.
+    *   Includes specific tools like `AGENTS.md` to route agent tasks to relevant context.
+*   **Why it's notable**: It formalizes and popularizes a crucial, often-overlooked aspect of working with AI agents. As models become capable, the bottleneck shifts to providing the right, private organizational context. This work is at the forefront of defining that practice, making it highly relevant for anyone building AI-assisted development workflows.
+
+### [lopopolo/harness-engineering] - *面向代理工程的文集与代理上下文包*
+*   **功能介绍**：本仓库是一个经过策划的文章、指南和结构化上下文集合，旨在实现“代理工程”（harness engineering）。这一实践通过塑造AI编程代理周围的环境（上下文和工具），而非仅仅调整模型本身，来提升其性能。其核心目标是使组织的非功能性需求、本地决策和流程数据能作为上下文被代理检索和利用。
+*   **主要特点**：
+    *   提供了塑造代理上下文的理论基础和实践手册。
+    *   设计了让仓库能够“教导代理”关于需求、权限和质量标准的方法。
+    *   倡导一种累积性反馈循环，使代理的工作成果能够改善后续任务的环境。
+    *   包含如 `AGENTS.md` 等具体工具，用于将代理任务引导至相关上下文。
+*   **为何值得关注**：它系统化地定义并推广了与AI代理协作时一个关键却常被忽视的实践层面。随着模型能力的增强，瓶颈正转向如何提供正确、私有且不断变化的组织上下文。这项工作处于定义该实践的前沿，对任何构建AI辅助开发工作流程的人都具有高度相关性。
+
+**[View Repository / 查看仓库](https://github.com/lopopolo/harness-engineering)**
+
+### Conversation Steganography - 用AI将机密信息隐藏于日常对话中
+* **功能介绍**：这是一个Go语言工具，允许用户通过任何消息应用（如WhatsApp、Telegram、Signal等）进行隐蔽通信。它使用本地AI模型将加密的秘密消息，编码生成一段看似完全正常、自然的聊天文本作为“伪装文本”发送。接收方使用相同的工具和密钥即可从伪装文本中解码还原出原始秘密信息。
+* **主要特点**：
+    * **AI驱动的信息隐藏**：利用LLM（如GPT-2、Llama等）的token选择来编码加密数据，生成的文本以假乱真。
+    * **强大的加密基础**：采用AES-SIV军事级认证加密，并引入“对话链”机制，确保消息的完整性与顺序性。
+    * **完全本地化**：AI模型在用户设备上运行，密钥通过交互式秘密短语生成，核心加密过程不依赖云服务。
+    * **极高的兼容性**：产出的伪装文本可直接在任何聊天平台间复制粘贴，无需专用通道。
+    * **易于测试**：提供单设备双用户模拟模式，方便快速验证功能。
+* **为何值得关注**：在数字监控和内容扫描日益普遍的背景下，该项目提供了一种创新且实用的隐私通信范例。它巧妙地将尖端的AI隐写术与成熟的加密技术结合，旨在规避因使用“明显加密”消息而可能引发的审查或监控，代表了隐私工具发展的一个有趣方向。其完全本地运行和开源的特性也增强了可信度。
+
+### 会话隐写术 - 利用大语言模型将机密信息隐藏于日常对话中
+* **功能介绍**：这是一款Go语言编写的工具，旨在让用户通过任意即时通讯应用（例如WhatsApp、Telegram、Signal等）实现隐蔽通信。它使用本地部署的大语言模型（LLM）将加密后的秘密信息，编码并生成为一段看似完全正常、自然的聊天文本（即“伪装文本”）进行发送。接收方使用相同的工具与密钥，即可从收到的伪装文本中解码还原出原始的秘密信息。
+* **主要特点**：
+    * **AI驱动的信息隐藏**：利用LLM（如GPT-2、Llama系列模型）生成文本时的token选择来编码加密数据，生成的伪装文本极为逼真。
+    * **坚固的加密基础**：采用AES-SIV军事级认证加密算法，并设计了“对话链”机制，可检测消息是否被篡改、删除或重排。
+    * **完全本地化运行**：AI模型在用户设备本地运行，共享的秘密短语用于派生密钥，核心加密与解密过程不依赖任何云服务。
+    * **卓越的平台兼容性**：生成的伪装文本为纯文本，可直接在任何社交或通讯平台间复制粘贴使用，无需专用应用。
+    * **便捷的测试验证**：提供单设备双用户模拟模式，允许用户快速测试和理解其工作流程。
+* **为何值得关注**：在政府和企业加强通信内容扫描与监控的背景下，该项目展示了一种极具创意且切实可行的隐私保护通信方案。它将前沿的AI隐写技术与成熟的加密学相结合，旨在解决“使用明显加密通信反而可能招致风险”的现实问题，为隐私保护工具提供了新的思路。其完全本地化、开源的特性，使其在可信度和透明度上更具优势，因此获得了社区的高度关注。
+
+**[View Repository / 查看仓库](https://github.com/nethical6/conversation-steganography)**
+
+### 🎬 How Supabase Became One Of The Fastest Growing DevTool Companies In The World
+**Channel:** Y Combinator
+*   The video features a conversation with Paul Copplestone, CEO and Co-founder of Supabase, recorded at Startup School Paris. It details the origin story of Supabase, tracing it back to the founder's personal frustration while migrating away from Firebase.
+*   Key topics include the limitations of existing Backend-as-a-Service (BaaS) platforms, the decision to build an open-source alternative, Supabase's technical architecture (Postgres, real-time, storage), and their unique, community-driven growth strategy.
+*   It's worth watching for a masterclass in developer-focused product building and marketing. The talk provides candid insights into how to turn a common developer pain point into a massively successful, open-source business, making it essential viewing for founders, developers, and anyone interested in the BaaS space.
+
+### 🎬 Supabase 如何成为全球增长最快的开发者工具公司之一
+**频道:** Y Combinator
+*   本视频是 Paul Copplestone（Supabase 的 CEO 及联合创始人）在 Startup School Paris 的一段对话记录。视频详细讲述了 Supabase 的创业故事，起源于创始人在从 Firebase 迁移时的挫败感和痛点。
+*   主要话题涵盖了现有 BaaS（后端即服务）平台的局限性、构建开源替代方案的决策、Supabase 的技术架构（包括 Postgres、实时功能、存储）以及他们独特的社区驱动增长策略。
+*   值得观看的原因在于，这是一堂关于开发者产品构建与营销的大师课。谈话深入剖析了如何将一个常见的开发者痛点，转化为一个极其成功的开源业务，对于创始人、开发者以及所有关注 BaaS 领域的人士都极具启发价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=sG5aB79TE44)**
+
+### 🎬 Compute at Sea
+**Channel:** Y Combinator
+*   The video addresses the critical bottleneck in AI advancement: the impending shortage of computing power, alongside the parallel crises of data centers exhausting electricity supplies and available land.
+*   It explores the innovative and ambitious solution of relocating compute infrastructure offshore, specifically onto platforms at sea, to leverage ocean cooling, vast space, and potentially renewable power sources.
+*   This is worth watching as it tackles a fundamental, looming infrastructure challenge for the entire AI industry, presenting a bold, futuristic, and potentially sustainable path forward that merges tech with maritime engineering.
+
+### 🎬 海上计算 (Compute at Sea)
+**频道:** Y Combinator
+*   视频探讨了人工智能发展面临的关键瓶颈：算力即将枯竭，同时数据中心面临电力供应和土地资源耗尽的双重危机。
+*   它介绍了一种创新且大胆的解决方案：将计算基础设施迁移至海上平台，利用海洋冷却、广阔空间以及潜在的可再生能源来解决上述问题。
+*   为何值得观看：因为它直指整个AI产业面临的根本性、迫在眉睫的基础设施挑战，展示了一条融合技术与海洋工程的、具有未来感且可能可持续发展的新路径。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=xZW8fR9ediE)**
+
+### 🎬 Nuclear Power Is Still Incredibly Inefficient - Adam Brown
+**Channel:** Dwarkesh Patel
+
+*   What the video covers: The video likely presents a technical or economic critique of modern nuclear power generation, arguing that it remains an inefficient energy source despite its potential.
+*   Key topics discussed: Expected topics include comparisons of nuclear energy's efficiency (cost, time, output) with other power sources, challenges in construction and operation, and possibly the future outlook for the industry.
+*   Why it's worth watching: It provides a contrarian and analytical perspective on a major energy source, offering valuable insights for those interested in energy policy, technology, and economics.
+
+### 🎬 核能效率依然低得惊人 - Adam Brown
+**频道:** Dwarkesh Patel
+
+*   视频内容概述：视频可能从技术或经济角度对现代核电进行批判，认为尽管核电潜力巨大，但它仍然是一种效率低下的能源。
+*   主要话题：预计会讨论核能与其他能源在效率（成本、时间、产出）上的比较，建设及运营中的挑战，以及该行业的未来展望。
+*   为何值得观看：它对一种主要能源提供了逆向而深入的分析视角，对于关注能源政策、技术和经济的人士极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=mJE5s8RmvRI)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   **What the video covers:** The video provides a foundational explanation of browser sessions, detailing how they function in web interactions, and then delves into the concept of "session hijacking," a critical cybersecurity threat.
+*   **Key topics discussed:** The mechanics of HTTP sessions and session cookies, common session hijacking techniques (like sidejacking and cross-site scripting), and essential methods for protecting sessions.
+*   **Why it's worth watching:** It offers essential cybersecurity awareness for both everyday users and IT professionals. Understanding how your online sessions can be compromised is the first step toward practicing safer browsing habits and securing web applications.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何运作（网络安全意识）
+**频道:** ezCommit
+*   **视频内容概述:** 本视频深入浅出地讲解了浏览器会话的基本工作原理，并聚焦于“会话劫持”这一重要的网络安全威胁，旨在提升观众的网络安全意识。
+*   **主要话题:** HTTP会话与会话Cookie的机制，常见的会话劫持手段（如数据包嗅探和跨站脚本攻击），以及保护会话安全的关键方法。
+*   **为何值得观看:** 无论对于普通网民还是IT从业者，这都是必学的网络安全知识。了解在线会话如何被窃取，是实践安全上网习惯和加固Web应用安全的第一步。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+*   This video explores a startling and personal discovery where the user's own photographs, which they believed were private or forgotten, were surfaced by an AI chatbot.
+*   Key topics discussed include AI image recognition capabilities, online photo scraping, digital footprints, and the unexpected ways personal data can be exposed.
+*   It's worth watching for a firsthand account that highlights the potential privacy risks of our increasingly connected digital lives, serving as a crucial wake-up call about data security.
+
+### 🎬 Chat GPT揭示了我的隐藏照片
+**频道:** TheCyborgGirl
+*   本视频讲述了一次令人震惊的个人经历：用户通过AI聊天机器人，意外发现了自己本以为是私密或已被遗忘的照片。
+*   主要讨论了AI图像识别能力、网络图片抓取、数字足迹，以及个人数据被意外暴露的各种途径。
+*   通过这个真实案例，视频生动地揭示了数字时代潜在的隐私风险，是关于数据安全的重要警示，值得观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
