@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 24, 2026"
 date: 2026-07-24
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -211,6 +211,199 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **视频内容概述:** 视频讲述了AI工具ChatGPT疑似访问并暴露了创作者私人照片的亲身经历，并探讨了这一事件背后的隐私隐患。
 *   **主要话题:** AI模型访问私有数据的可能性，网络照片抓取与数据来源的担忧，以及一个实用指南（链接在简介中）——用于检查你自己的照片是否已被抓取并在网上使用。
 *   **为何值得观看:** 这是一个关于AI时代数字隐私风险的引人入胜的现实案例研究。对于任何关心个人照片在线安全性的人来说尤其有价值，它还提供了可操作的资源来调查和保护自己。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+<!-- [Title-Only] -->
+### Writing by hand is good for your brain
+*   **Description:** This article, based on its title, almost certainly explores the cognitive and neurological benefits of the physical act of writing by hand. It likely discusses research or theories suggesting that handwriting can improve memory, learning, and creativity more effectively than typing, possibly due to the more complex motor skills it involves.
+*   **Why it might be interesting:** In an increasingly digital world, this article would be of interest to anyone curious about productivity hacks, education methods, or cognitive science. It likely offers a persuasive case for reviving an analog practice in our daily digital routines.
+
+### 手写对大脑有益
+*   **内容简介：** 仅从标题推测，这篇文章很可能探讨了物理手写行为带来的认知与神经益处。它可能会讨论相关研究或理论，表明手写比打字更能有效提升记忆力、学习能力和创造力，原因或许在于手写需要更复杂的运动技能参与。
+*   **为何值得关注：** 在一个日益数字化的世界里，这篇文章将引起那些对效率提升方法、教育方式或认知科学感兴趣的人士的注意。它很可能为复兴一种模拟练习，在我们的日常数字生活中提供具有说服力的理由。
+
+**[Read Original / 阅读原文](https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your)**
+
+### TheNumbers.com Incident: A Warning for the Digital Age
+* TheNumbers.com, a definitive source for film financial data (tracking 78,000+ films and 236,000+ people), catastrophically went offline in March 2026 after struggling with massive AI bot traffic.
+* The attack's motive appears linked to **prediction markets** (like Polymarket), where early access to box office data could provide a significant financial trading advantage, turning any data site into a hackable target.
+* The event highlights a new, fragile reality: **AI tools lower the barrier for cyberattacks**, and the modern internet is vulnerable to large-scale, agentic bot swarms, threatening the independence of small, critical data repositories.
+
+### TheNumbers.com 事件：数字时代的警示
+*   关键电影金融数据源 TheNumbers.com（追踪超过78,000部电影和236,000+人物）在2026年3月因无法承受海量AI机器人流量而灾难性宕机。
+*   攻击动机疑似与**预测市场**（如Polymarket）相关：提前获取票房数据能在交易中获得巨大优势，使得任何数据网站都可能成为黑客目标。
+*   此事件揭示了一个脆弱的新现实：**AI工具大幅降低了网络攻击门槛**，现代互联网难以抵御大规模智能机器人潮的冲击，威胁到小型关键数据源的独立性。
+
+**[Read Original / 阅读原文](https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all)**
+
+### Building on ATProto: Potential vs. Reality
+*   The author aspires to build a suite of local-first review applications (replacing services like Yelp, GoodReads) using ATProto, aiming for user data ownership and interoperability.
+*   A core need is flexible privacy control (private to public, shared with groups), but ATProto's current design is public-only, and the upcoming "permissioned data" feature creates a problematic split.
+*   The proposal for private data is fundamentally flawed as it treats public and private data as separate systems, forcing developers to build two versions of an app and hiding complexity from users.
+
+### 在ATProto上构建：潜力与现实的差距
+*   作者渴望使用ATProto构建一套“本地优先”的评论应用（替代Yelp、GoodReads等），以实现用户数据所有权和互操作性。
+*   核心需求是灵活的隐私控制（从完全私有到公开，或与特定群体分享），但ATProto当前设计仅支持公开数据，即将推出的“权限数据”功能制造了一个成问题的分裂。
+*   针对私有数据的设计提案存在根本缺陷，因为它将公开和私有数据视为两个独立系统，迫使开发者构建两个版本的应用程序，并对用户隐藏了复杂性。
+
+**[Read Original / 阅读原文](https://lukekanies.com/writing/building-on-atproto/)**
+
+### block/buzz - Self-Hostable AI Workspace Relay
+* **What it does**: A workspace platform built on the Nostr protocol where humans and AI agents collaborate in shared rooms (channels) using a unified, signed event log.
+* **Key features**:
+    * Unified event log for all activities (messages, code patches, CI runs, approvals).
+    * Agents operate as first-class members with their own cryptographic keys and audit trails.
+    * Integrated tools: channels, threads, canvases, workflows, media comments, and Git hosting.
+    * Designed for self-hosting; one relay hosts one community by default.
+    * Cross-platform clients (desktop, CLI) and mobile apps in development.
+* **Why it's notable**: It consolidates chat, code collaboration (Git), CI/CD, and AI agent interactions into a single, auditable protocol. The vision is to replace multiple disjointed tools (Slack, GitHub, bots, etc.) with one substrate, enabling deep, automated human-agent workflows.
+
+### block/buzz - 基于协议的自托管人机协作平台
+* **功能介绍**: 一个建立在Nostr协议之上的工作空间，人类与AI代理在共享房间（频道）中协作，所有活动记录在一个统一、经过签名的事件日志中。
+* **主要特点**:
+    * 所有活动（消息、代码补丁、CI运行、审批）都存储于统一的事件日志。
+    * AI代理作为一等成员，拥有自己的加密密钥和审计追踪。
+    * 集成工具包括：频道、话题、白板、工作流、媒体评论以及Git托管。
+    * 设计用于自托管；默认情况下一个中继服务一个社区。
+    * 提供跨平台客户端（桌面、CLI），移动端应用正在开发中。
+*   **为何值得关注**: 它将聊天、代码协作（Git）、CI/CD和AI代理交互整合到一个可审计的协议中。其愿景是用一个底层平台取代多个割裂的工具（如Slack、GitHub、各类机器人），从而实现深度、自动化的人机协作工作流。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### World Monitor - Real-time Global Intelligence Dashboard
+*   **What it does**: Provides a unified, real-time dashboard for global situational awareness. It aggregates and synthesizes news from 500+ feeds, monitors geopolitical events and infrastructure, and visualizes the data on dual 2D/3D map engines.
+*   **Key features**: AI-powered news synthesis, a "Country Instability Index" for 31 nations, cross-stream correlation (military, economic, disaster signals), a finance radar, local AI support via Ollama, 6 specialized web variants, native desktop apps, and 25+ language support.
+*   **Why it's notable**: It's a comprehensive, open-source intelligence tool that gained 3,196 stars in one day. Its trendiness stems from its powerful feature set, modern tech stack (TypeScript, Tauri, deck.gl), multi-platform availability (web, desktop, CLI, SDK), and appeal for developers and analysts interested in global monitoring and data visualization.
+
+### World Monitor - 实时全球情报仪表板
+*   **功能介绍**: 提供一个统一的实时全球态势感知仪表板。它聚合并摘要来自500多个源的新闻，监控地缘政治事件与基础设施状况，并通过双引擎（2D/3D）地图进行数据可视化。
+*   **主要特点**: AI驱动的新闻摘要、涵盖31个国家的“国家不稳定性指数”、跨领域关联分析（军事、经济、灾害信号）、金融雷达、支持Ollama本地AI运行、6个垂直领域网站变体、原生桌面应用以及25种以上语言支持。
+*   **为何值得关注**: 这是一个功能全面的开源情报工具，单日获得3196星标，热度很高。它凭借强大的功能集、现代化的技术栈（TypeScript, Tauri, deck.gl）、多平台可用性（网络、桌面、CLI、SDK），以及对全球监控和数据可视化感兴趣的开发者和分析人士的吸引力而备受关注。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### Kronos - A Foundation Model for the Language of Financial Markets
+*   **What it does**: Kronos is the first open-source foundation model specifically pre-trained on the "language" of financial markets—K-line (candlestick) sequences. It uses a two-stage framework: a specialized tokenizer to convert continuous K-line data into hierarchical discrete tokens, and a large autoregressive Transformer trained on these tokens for unified quantitative analysis and forecasting.
+*   **Key features**:
+    *   **Domain-Specific Foundation Model**: Designed from the ground up for the high-noise, multi-dimensional nature of financial time series (OHLCV data).
+    *   **Novel Tokenization**: Introduces a hierarchical tokenizer to effectively quantize complex candlestick patterns.
+    *   **Scalable Model Family**: Releases a range of pre-trained models (from 4.1M to 499.2M parameters) to suit different computational budgets.
+    *   **User-Friendly API**: Provides a simple `KronosPredictor` class for easy forecasting, handling normalization, prediction, and batch processing.
+    *   **Widely Trained**: Pre-trained on data from over 45 global exchanges.
+*   **Why it's notable**: It is a pioneering open-source effort in applying large language model techniques directly to financial candlestick data. The project's acceptance by AAAI 2026 validates its academic rigor. It provides a powerful, ready-to-use toolkit for quantitative researchers and developers, evidenced by its rapid growth (398 stars today) and comprehensive resources including live demos, documentation, and multi-language support.
+
+### Kronos - 面向金融市场语言的开源基础模型
+*   **功能介绍**: Kronos是首个专门为金融市场“语言”——K线（蜡烛图）序列预训练的开源基础模型。它采用两阶段框架：首先通过专用分词器将连续的多维K线数据（开盘、最高、最低、收盘、成交量）量化为分层离散token，然后在一个大型自回归Transformer上对这些token进行预训练，从而作为统一模型服务于多样化的量化任务。
+*   **主要特点**:
+    *   **领域专用基础模型**: 完全针对金融时间序列的高噪声、多维度特性设计。
+    *   **创新的分层分词技术**: 能够有效量化复杂的蜡烛图形态。
+    *   **可扩展的模型系列**: 提供从4.1M到499.2M参数不等的多种预训练模型，适应不同的计算资源和应用需求。
+    *   **便捷的用户API**: 提供简单的`KronosPredictor`类，轻松实现预测，自动处理归一化、预测和批量处理。
+    *   **广泛的训练数据**: 在超过45个全球交易所的数据上进行了预训练。
+*   **为何值得关注**: 该项目是开创性地将大语言模型技术直接应用于金融蜡烛图数据的开源工作。其论文被AAAI 2026收录，证明了学术严谨性。它为量化研究员和开发者提供了一个强大、即用的工具包，其快速增长（今日新增398星标）以及包含在线演示、多语言文档在内的丰富资源都印证了其价值。
+
+**[View Repository / 查看仓库](https://github.com/shiyu-coder/Kronos)**
+
+### lopopolo/harness-engineering - Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering
+*   **What it does**: This repository is a comprehensive guide and resource collection for "harness engineering" – the practice of improving AI agent output by shaping their context and tools, rather than changing the model itself. It teaches how to encode an organization's non-functional requirements (security, reliability, etc.) into retrievable context, executable constraints, and tooling for coding agents.
+*   **Key features**: It provides a systems-level framework, playbooks, and a core `AGENTS.md` file to route agent tasks. It focuses on making organizational judgment cumulative through iterative feedback, turning private process data into agent-accessible resources for "last-mile deployment."
+*   **Why it's notable**: It offers a systematic, organization-centric methodology for leveraging AI coding agents effectively. By treating the repository as the agent's "environment," it addresses a critical gap in deploying AI for real-world, complex software projects, making it a significant contribution to the emerging agent-first development paradigm.
+
+### lopopolo/harness-engineering - Ryan Lopopolo 关于 Harness Engineering 的文集、实战指南与代理上下文包
+*   **功能介绍**：本仓库是“Harness Engineering”的综合指南和资源集合。该方法旨在通过塑造AI代理的环境（上下文和工具），而非改变模型本身，来提升其输出质量。它指导如何将组织的非功能需求（如可靠性、安全性、维护性等）编码化，使其成为代理可检索的上下文、示例和可执行约束。
+*   **主要特点**：提供了系统级的框架、实战手册（playbooks）以及核心的 `AGENTS.md` 文件来引导代理任务。其核心理念是通过迭代反馈使组织判断力得以累积，将私有流程数据转化为代理可用的资源，用于实现“最后一英里部署”。
+*   **为何值得关注**：它为在实际复杂软件项目中有效利用AI编码代理提供了一种系统化、以组织为中心的成熟方法论。通过将仓库本身构建为代理的“运行环境”，它解决了将AI部署到现实世界工作流的关键难题，是面向“代理优先”开发范式的重要实践贡献。
+
+**[View Repository / 查看仓库](https://github.com/lopopolo/harness-engineering)**
+
+### video-shotcraft - AI-Powered Cinematic Video Skill for Product Promos
+*   **What it does:** Turns AI coding agents (like Claude Code & Codex) into motion-design studios. It uses Remotion to automatically storyboard, animate, and sound-design professional promotional, marketing, or demo videos for web and desktop products.
+*   **Key features:** Includes 106 detailed shot "recipe cards," 162 motion styles with 161 live previews, a complete production-ready video template ("Ink Press"), Remotion implementations, and a full production methodology covering capture, storyboarding, and beat-synced sound design.
+*   **Why it's notable:** It's a comprehensive, agent-integrated toolkit that democratizes high-quality video production. Its large library of cinematic techniques (studied from leading tech product promos) and ready-to-use templates make it a powerful asset for creating polished product videos quickly. The recent star count (870) indicates strong community interest.
+
+### video-shotcraft - 为Claude Code与Codex打造的AI电影级视频技能
+*   **功能介绍：** 这是一个AI智能体技能，能将Claude Code或Codex转变为动态设计工作室。它利用Remotion框架，可以自动为网络或桌面产品生成包含分镜、动画和音效设计的电影级宣传、营销或演示视频。
+*   **主要特点：** 包含106个详尽的镜头“配方卡片”、162种运动风格及161个实时预览、一个完整的可投入使用视频模板（“Ink Press”）、Remotion参考实现，以及涵盖画面采集、分镜设计和节拍同步音效在内的完整制作方法论。
+*   **为何值得关注：** 这是一个与AI编码智能体深度集成、功能全面的工具包，让高质量视频制作变得触手可及。它从众多顶尖科技产品的宣传片中提炼了大量电影级镜头技巧，并配有开箱即用的模板，是快速制作精美产品视频的利器。近期870颗星的社区关注度也证明了其热度与实用性。
+
+**[View Repository / 查看仓库](https://github.com/Vincentwei1021/video-shotcraft)**
+
+### 🎬 Scientists Are Built for Startups
+**Channel:** Y Combinator
+* This video explores why a scientific background is a powerful foundation for launching a successful tech startup. It challenges the notion that only business professionals or software engineers make ideal founders.
+* Key topics discussed include the unique skill set scientists possess (like rigorous problem-solving and research methodology), how to translate academic work into viable business ideas, and real-world success stories of researcher-founders, including insights from Arvind.
+* It's worth watching for aspiring entrepreneur-scientists and anyone interested in innovation, as it provides a fresh perspective on startup potential and actionable pathways from the lab to the marketplace.
+
+### 🎬 科学家天生适合创业
+**频道:** Y Combinator
+* 本视频探讨了为何科学背景是创立成功科技初创公司的坚实基础。它挑战了只有商界人士或软件工程师才是理想创始人的传统观念。
+* 主要讨论的话题包括科学家独特的技能组合（如严谨的问题解决能力和研究方法论），如何将学术工作转化为可行的商业理念，以及包括 Arvind 在内的研究人员-创始人的成功实例和见解。
+* 对于有志成为创业者-科学家的观众以及任何对创新感兴趣的人来说，这都值得一看，因为它提供了关于初创潜力的全新视角，以及从实验室走向市场的可操作路径。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZE2gpqTArgc)**
+
+### 🎬 The most interesting "hack" in history...
+**Channel:** Fireship
+* This video explores one of the most ingenious and impactful "hacks" or clever workarounds in the history of computing and technology. It delves into a specific historical solution that circumvented limitations or changed the game in its field.
+* Key topics include the historical context of the problem, the brilliant but unconventional solution devised, its implementation, and its lasting impact on technology or business practices. The video likely frames this within a modern tech perspective.
+* It's worth watching for a quick, engaging dive into tech history that reveals how constraints can drive innovation. Fireship's style promises a concise, informative, and entertaining explanation of a fascinating piece of engineering lore.
+
+### 🎬 历史上最有趣的“Hack”……
+**频道:** Fireship
+* 本视频深入探讨了计算机与技术史上最具匠心和影响力的“黑客手段”或巧妙变通方案。它聚焦于一个具体的历史性解决方案，该方案在特定领域内突破了限制或改变了游戏规则。
+* 主要话题包括当时的问题背景、被构思出的非凡且非常规的解决方案、其实施过程，以及它对技术或商业模式的持久影响。视频很可能从现代科技的视角来阐述这一事件。
+* 这是一次简短而引人入胜的科技历史之旅，揭示了约束如何驱动创新。Fireship 一贯的风格保证了对一个迷人技术典故的简洁、信息丰富且有趣的解说。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=KOpTWx1Eou4)**
+
+### 🎬 The Model-Agnostic AI Platform Betting That No Single Lab Will Win
+**Channel:** Y Combinator
+*   **What the video covers:** An interview/discussion from Startup School Paris featuring Stanislas Polu, co-founder of Dust, an AI platform. He shares his professional journey from Stripe to OpenAI, and articulates the core philosophy behind building Dust.
+*   **Key topics discussed:**
+    *   The founder's path through influential tech companies (Stripe, OpenAI).
+    *   The concept and value of building a "model-agnostic" AI platform.
+    *   Why the future of AI is likely multi-model, not dominated by a single provider.
+    *   Insights on building AI products and startups.
+*   **Why it's worth watching:** It offers a rare, insider perspective from a founder who left OpenAI to build complementary infrastructure. The core argument challenges the "winner-takes-all" narrative in AI, providing a pragmatic and strategic view on how businesses and developers can leverage multiple AI models effectively.
+
+### 🎬 不打赌单一模型会赢的“模型无关”AI平台
+**频道:** Y Combinator
+*   **视频内容概述：** 这是一段在巴黎创业学院的访谈，对话嘉宾是Dust联合创始人斯坦尼斯拉斯·波鲁。他回顾了自己从Stripe到OpenAI的职业历程，并阐述了创立Dust背后的核心理念。
+*   **主要话题：**
+    *   创始人在顶尖科技公司（Stripe、OpenAI）的职业经历与思考。
+    *   构建一个“模型无关”（model-agnostic）AI平台的概念与价值。
+    *   为何AI的未来更可能是多模型并存，而非由单一提供商主导。
+    *   关于构建AI产品和创业公司的见解。
+*   **为何值得观看：** 本视频提供了一个来自核心人物的罕见视角——他离开OpenAI去构建一个互补的基础设施平台。其核心论点挑战了AI领域“赢家通吃”的叙事，为企业和开发者如何有效利用多个AI模型提供了务实且具战略性的观点。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DbBnd9PYob4)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   The video explains the concept of session hijacking, a common cyberattack. It breaks down how web browser sessions and session cookies function, showing how attackers can steal or manipulate these sessions to gain unauthorized access to a user's accounts.
+*   Key topics include the fundamentals of HTTP sessions, the lifecycle of a session cookie, various hijacking techniques (like Cross-Site Scripting or network sniffing), and the potential impact on user security and privacy.
+*   This is a valuable watch for anyone wanting to understand a critical aspect of web security. It demystifies a common threat with clear explanations, making complex cybersecurity concepts accessible for building better digital hygiene and awareness.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+*   本视频阐释了“会话劫持”这一常见网络攻击的概念。它详细分解了网络浏览器会话与会话Cookie的工作原理，展示了攻击者如何通过窃取或操纵这些会话来非法获取用户账户的访问权限。
+*   主要话题包括HTTP会话基础知识、会话Cookie的生命周期、各种劫持技术（如跨站脚本攻击或网络监听），以及其对用户安全和隐私的潜在影响。
+*   对于任何希望了解Web安全关键方面的人来说，这都是一个极具价值的观看选择。视频通过清晰的解释，将复杂的网络安全概念通俗化，有助于提升大众的数字卫生意识与安全防范能力。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+*   The video explores a personal incident where the creator discovered that ChatGPT had seemingly accessed and referenced photos that were not publicly shared, raising immediate concerns about AI data sourcing and personal privacy.
+*   Key topics discussed include the potential methods of how large language models might access or "hallucinate" private data, the broader issue of online data scraping, and practical steps individuals can take to check if their photos have been scraped and used without consent.
+*   It is worth watching as it personalizes a major tech privacy concern, moving beyond abstract debates to a real-world example. It provides actionable insights for viewers worried about their own digital footprint and the unseen reach of AI systems.
+
+### 🎬 ChatGPT曝光了我的隐藏照片
+**频道:** TheCyborgGirl
+*   视频内容讲述了创作者发现ChatGPT似乎能访问并提及她未公开分享的照片，这一发现引发了关于AI数据来源和个人隐私的严重担忧。
+*   主要话题探讨了大型语言模型可能访问或“幻觉”出私人数据的潜在方式，在线数据抓取的广泛问题，以及个人如何检查自己的照片是否在未经同意的情况下被抓取和使用。
+*   为何值得观看：因为它将一个重大的科技隐私问题个人化，从抽象辩论转向了真实案例。视频为担忧自身数字足迹和AI系统无形影响的观众提供了切实可行的见解。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
