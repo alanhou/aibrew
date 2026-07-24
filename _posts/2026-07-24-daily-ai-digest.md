@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 24, 2026"
 date: 2026-07-24
-description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 15 fast-moving projects, 20 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，15个快速崛起项目，20个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 15 Hacker News articles, 3 GitHub trending repos, 20 fast-moving projects, 25 YouTube videos, 0 Hugging Face models. 今日精选：15篇黑客新闻，3个热门项目，20个快速崛起项目，25个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -785,6 +785,222 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
   * 一份关于个人如何检查自己的私人照片是否已被网络抓取和来源的指南。
 * 为何值得观看
   * 这是对AI数据隐私这一科技界重大关切的及时且关键的调查。创作者的个人经历使这一威胁变得具体且可操作，为观众提供了审视自己数字足迹的实用步骤。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+### FLUX 3 - Multimodal Foundation Model for Visual Intelligence
+* FLUX 3 is Black Forest Labs' new multimodal foundation model that jointly learns from images, videos, and audio within a unified architecture to build a comprehensive representation of the real world.
+* The model is built on the "Self-Flow" approach for aligning multimodal generation and understanding, with significant scaling in compute and data resources.
+* Key capabilities include generating videos up to 20 seconds long with native audio, advanced image synthesis with text rendering, and extending to action prediction for understanding physical dynamics.
+* Early evaluations show FLUX 3 outperforming several competing models in video generation tasks, though results are preliminary and further improvements are expected during the early access phase.
+
+### FLUX 3 - 面向视觉智能的多模态基础模型
+* FLUX 3 是黑森林实验室（Black Forest Labs）推出的新型多模态基础模型，通过统一架构从图像、视频和音频中联合学习，以构建对真实世界的全面表征。
+* 该模型基于“自我流（Self-Flow）”方法构建，用于对齐多模态生成与理解，并显著扩展了计算和数据资源的规模。
+* 核心能力包括生成长达20秒且自带原生音频的视频、支持多语言文本渲染的高级图像合成，以及扩展到动作预测以理解物理动态。
+* 早期评估显示，FLUX 3 在视频生成任务中优于多个竞品模型，但目前结果仍属初步，预计在早期访问阶段会有进一步改进。
+
+**[Read Original / 阅读原文](https://bfl.ai/blog/flux-3)**
+
+### FLUX 3 x mimic: The Next Generation of Video-Action Models
+
+*   FLUX 3 is Black Forest Labs' new multimodal foundation model that can generate images, audio, and video. A collaboration with mimic robotics, leveraging their robot learning expertise, has produced FLUX-mimic—a next-generation video-action model that can control robots.
+*   FLUX 3 is designed as a unified model for both content creation and physical action. Its core is learning a detailed understanding of the physical world through the demanding task of video prediction, which accounts for over 95% of its training compute.
+*   The architecture utilizes a single backbone network for multiple modalities. Experiments showed that adding action prediction caused only a temporary dip in video generation performance, which fully recovered after further training, proving the model can effectively integrate and share world knowledge across tasks.
+*   FLUX-mimic builds upon this foundation by training a lightweight action decoder on top of FLUX 3's learned world representations. This approach decodes robot actions from the rich features extracted during video prediction, enabling general-purpose manipulation for real-world industrial deployment, such as at Audi production lines.
+
+### FLUX 3 x mimic：新一代视频-动作模型
+
+*   FLUX 3是Black Forest Labs的新一代多模态基础模型，能够生成图像、音频和视频。该公司与mimic机器人公司合作，利用其机器人学习专长，共同打造了FLUX-mimic——一个能够控制机器人的新一代视频-动作模型。
+*   FLUX 3旨在成为一个集内容创作和物理动作为一体的统一模型。其核心在于通过极具挑战性的视频预测任务来学习对物理世界的深刻理解，该任务占其训练算力的95%以上。
+*   该架构采用单一主干网络处理多种模态。实验表明，加入动作预测任务后，视频生成性能仅出现短暂下降，经过进一步训练后完全恢复，证明该模型能够有效地整合并在不同任务间共享世界知识。
+*   FLUX-mimic建立在这一基础之上，通过在FLUX 3学习到的世界表征之上训练一个轻量级的动作解码器。这种方法从视频预测路径提取的丰富特征中解码机器人动作，实现了面向真实工业环境（如奥迪生产线）的通用操作能力。
+
+**[Read Original / 阅读原文](https://bfl.ai/blog/flux-3-mimic)**
+
+### [English Title] *Nothing Works and Everyone Is Euphoric | ptrchm*
+* The article describes a current "AI-induced mass psychosis" where people are intensely competing for value before automation, yet despite powerful new AI tools, everyday software quality is visibly declining.
+* It provides specific examples of buggy software, from a banking app requiring multiple logins to a car's infotainment system with dangerous reboot issues, highlighting a gap between developer self-congratulation and user frustration.
+* The author argues this decay is fueled by a KPI-focused culture that prioritizes new features over stability, and a systemic increase in software complexity that outpaces our ability to manage it effectively.
+* Despite this, there is cautious optimism: AI may enable individual developers to build better alternatives, sparking a "rebellion" against the status quo of bloated, unreliable software.
+
+### [Nothing Works and Everyone Is Euphoric | ptrchm (Chinese Title)]
+* 文章指出，我们正处于一种由AI引发的集体亢奋中，人们竞相追逐价值，但与此同时，尽管AI工具日益强大，日常使用的软件质量却在普遍恶化。
+* 作者列举了多个软件故障的例子，例如需要多次人脸识别的银行App，以及存在重启等危险问题的车载信息娱乐系统，凸显了开发者自我标榜与用户实际体验之间的巨大落差。
+* 作者认为，这种软件质量衰减是KPI导向的文化（只追求新功能、忽视稳定性）以及系统性软件复杂性持续增长所共同导致的。
+* 尽管如此，文章仍抱持一种谨慎的乐观态度：AI可能赋予个体开发者构建更好软件的能力，从而掀起一场针对当前臃肿、不可靠软件现状的“反叛”。
+
+**[Read Original / 阅读原文](https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/)**
+
+### block/buzz - A self-hostable workspace where humans and AI agents collaborate
+* **What it does**: Buzz is a self-hostable team workspace (like a digital office) built on the Nostr protocol. Its core function is to create a unified environment where both human teammates and AI agents can communicate, collaborate on code, run workflows, and manage projects—all within a single, auditable event log.
+* **Key features**: Agents are full-fledged channel members with their own identities (keypairs) and audit trails. Supports channels, threads, DMs, code reviews, Git event hosting (patches, CI status), YAML-triggered workflows, and a unified search across all communication and development artifacts. It includes a desktop app (Tauri/React) and a CLI designed for agent interactions.
+* **Why it's notable**: It aims to replace the fragmented stack of chat, forges, bots, and CI tools with one integrated substrate. The paradigm of treating AI agents as collaborative peers (not just bot integrations) is a key innovation. Built in Rust, it gained massive traction with over 2,000 stars in a single day, signaling strong developer interest in sovereign, agent-native development platforms.
+
+### block/buzz - 一个可自托管、人类与AI代理协同工作的协作空间
+* **功能介绍**: Buzz 是一个基于 Nostr 协议构建的可自托管团队工作空间。其核心功能是为人类队友和AI代理创建一个统一的集成环境，用于沟通、协作开发代码、运行工作流和管理项目——所有活动都记录在一个可审计的事件日志中。
+* **主要特点**: 代理是频道的正式成员，拥有独立的身份（密钥对）和审计跟踪。支持频道、话题、私信、代码评审、Git 事件托管（补丁、CI状态）、基于YAML触发的工作流，以及对所有通信和开发产物的统一搜索。包含桌面应用（Tauri/React）和专为代理交互设计的命令行工具（CLI）。
+* **为何值得关注**: 它旨在用一个集成的底层平台，取代目前分散的聊天、代码托管平台、机器人、CI仪表盘等工具组合。将AI代理视为协作同伴（而非仅仅是机器人集成）这一范式是其关键创新。该项目使用Rust编写，并在一天内获得超过2000颗星，显示出开发者对主权化、代理原生开发平台的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### World Monitor - Real-time Global Intelligence Dashboard
+* What it does: An AI-powered dashboard that aggregates news from 500+ feeds across 15 categories, monitors geopolitical events, and tracks global infrastructure, providing a unified situational awareness interface. It features dual map engines (3D globe and flat map), a Country Instability Index, and finance radar covering markets and crypto.
+* Key features: 500+ AI-synthesized news feeds; dual 3D/flat map with 56 layer types; cross-stream signal correlation; Country Instability Index (CII) v8; local AI support via Ollama; 6 themed site variants from a single codebase; native desktop app for all major OS; 25 languages with RTL support; programmable via MCP server, REST API, CLI, and multi-language SDKs.
+* Why it's notable: It's an exceptionally comprehensive and feature-rich intelligence platform, offering both a web app and native desktop experience. Its rapid popularity (3,175 stars in a day) highlights its utility. The architecture is robust, with a modern tech stack (Tauri, Vite, Protobuf) and extensive options for developers and agents to access data programmatically.
+
+### World Monitor - 实时全球情报仪表板
+* 功能介绍：一个AI驱动的仪表板，从15个类别的500多个新闻源聚合信息，监控地缘政治事件，并跟踪全球基础设施，提供统一的态势感知界面。它具备双地图引擎（3D地球和平面地图）、国家不稳定指数以及覆盖市场和加密货币的金融雷达。
+* 主要特点：500多个AI合成的新闻源；双3D/平面地图及56种图层类型；跨流信号关联分析；CII v8国家不稳定指数；通过Ollama支持本地AI运行；单一代码库生成6个主题网站变体；支持所有主流操作系统的原生桌面应用；支持25种语言及RTL；提供MCP服务器、REST API、CLI和多语言SDK，便于程序化访问。
+* 为何值得关注：这是一个功能极其全面且丰富的全球情报平台，同时提供网络应用和原生桌面体验。其快速增长的热度（单日获得3175星）证明了它的实用性。项目架构稳健，采用现代技术栈（Tauri, Vite, Protobuf），并为开发者和智能体提供了极其多样的数据访问方式。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### Kronos - An Open-Source Foundation Model for Financial K-line Data
+*   **What it does**: Kronos is a decoder-only foundation model specifically pre-trained for the "language" of financial markets—K-line (candlestick) sequences. It processes high-dimensional, noisy market data (OHLCV) to generate probabilistic forecasts for asset prices.
+*   **Key features**: It uses a novel two-stage framework: a specialized tokenizer quantizes raw K-line data into hierarchical discrete tokens, and a large autoregressive Transformer is pre-trained on them. Models are available in different sizes (mini, small, base) and come with an easy-to-use `KronosPredictor` for direct inference and batch forecasting.
+*   **Why it's notable**: This is the **first open-source foundation model** dedicated to financial candlesticks, trained on data from **over 45 global exchanges**. It was accepted by **AAAI 2026**, highlighting its research significance. It provides a unified, pre-trained model for various quantitative finance tasks, moving beyond traditional time-series forecasting methods.
+
+### Kronos - 首个针对金融K线数据的基础模型
+*   **功能介绍**：Kronos 是一个专为金融市场“语言”——K线序列设计的解码器架构基础模型。它专注于处理高维、高噪声的金融市场数据（开盘价、最高价、最低价、收盘价、成交量等），并可生成资产价格的概率性预测。
+*   **主要特点**：采用创新的两阶段框架：一个专门的分词器将连续的多维K线数据量化为**分层离散token**；一个大型自回归Transformer在这些token上进行预训练。模型提供了从4.1M到500M参数的多种版本，并包含易用的`KronosPredictor`接口，支持单序列和批量预测。
+*   **为何值得关注**：这是**首个开源**的、专门为金融蜡烛图设计的基础模型，其训练数据覆盖**全球超过45个交易所**。该项目已被**AAAI 2026**接收，彰显了其学术价值。它为众多量化任务提供了一个统一的、预训练的模型基础，代表了将大型语言模型范式应用于金融时间序列分析的前沿探索。
+
+**[View Repository / 查看仓库](https://github.com/shiyu-coder/Kronos)**
+
+### OpenWorker - An Open-Source AI Coworker for Your Desktop
+*   **What it does**: OpenWorker is a desktop application that functions as an AI "coworker," designed to complete everyday tasks by producing finished work deliverables (e.g., documents, Slack messages, calendar updates) rather than just providing conversational advice. It runs locally on your machine, integrates with your files and tools, and uses the AI model of your choice.
+*   **Key features**:
+    *   **Action-Oriented**: Breaks down complex tasks into steps and executes them across your desktop and connected apps, with user approval for critical actions.
+    *   **Broad Integrations**: Connects with 25+ tools including Slack, GitHub, Jira, Notion, Google Calendar, and your local terminal/files. Supports any tool via the MCP protocol.
+    *   **Model Flexibility**: Bring your own API key for major providers (OpenAI, Anthropic, Google, etc.) or run models fully locally via Ollama.
+    *   **Local-First & Private**: All data and processes stay on your machine by default; only model API calls and necessary OAuth handshakes use the cloud.
+    *   **Scheduling & Automation**: Can be set up to run recurring tasks like daily briefings or weekly reports.
+*   **Why it's notable**: OpenWorker stands out by shifting the AI assistant paradigm from *chat* to *work*. Its local-first approach addresses key privacy concerns, while its model-agnostic design and extensive tool integrations make it a highly customizable and powerful automation platform for personal productivity. The involvement of Andrew Ng's team and its open-source nature further contribute to its credibility and community interest.
+
+### OpenWorker - 开源桌面AI“同事”
+*   **功能介绍**：OpenWorker是一款桌面应用程序，充当AI“同事”角色，旨在通过交付完整的工作成果（如文档、Slack消息、日程更新）来完成日常任务，而非仅提供建议。它在用户本地机器上运行，可与文件和工具集成，并使用用户自选的AI模型。
+*   **主要特点**：
+    *   **以行动为导向**：将复杂任务分解为步骤，在桌面及连接的应用程序中执行，关键操作需用户批准。
+    *   **广泛集成**：连接25+工具，包括Slack、GitHub、Jira、Notion、Google日历及本地终端/文件，任何通过MCP协议的工具均可接入。
+    *   **模型灵活**：自带主要提供商（OpenAI、Anthropic、Google等）的API密钥，或通过Ollama在本地完全运行模型。
+    *   **本地优先，注重隐私**：所有数据和处理默认保留在本机，仅模型API调用和必要的OAuth握手使用云端。
+    *   **调度与自动化**：可设置定期任务，如每日简报或每周报告。
+*   **为何值得关注**：OpenWorker通过将AI助手的范式从“对话”转向“工作”而脱颖而出。其本地优先的方式解决了关键的隐私问题，而模型无关的设计和广泛的工具集成使其成为一个高度可定制且强大的个人生产力自动化平台。Andrew Ng团队的参与及其开源性质进一步提升了其可信度和社区关注度。
+
+**[View Repository / 查看仓库](https://github.com/andrewyng/openworker)**
+
+### **lopopolo/harness-engineering** - A framework for maximizing AI coding agent effectiveness through environment constraints and context curation
+* **What it does**  
+  This repository defines and practices "harness engineering": a methodology to significantly improve the output of AI coding agents by shaping their operational environment. Instead of changing the AI model itself, it focuses on optimizing the two primary levers: **context** and **tools**. It provides a structured "anthology, field guide, and agent context bundle" that teaches how to encode an organization's non-functional requirements (reliability, security, maintainability, etc.) into a retrievable and executable format for agents.
+
+* **Key features**  
+  1.  **Systems-Level Framing**: Treats an organization's entire universe of constraints and quality attributes as code to be fed to agents.
+  2.  **Cumulative Coherence**: Designed as an iterative system where feedback from past work (successes, corrections, failures) becomes accumulated context and constraints for future tasks.
+  3.  **Actionable Playbooks**: Includes practical guides (`playbooks/`) and an agent-routing file (`AGENTS.md`) to direct tasks to relevant arguments, cases, and proof.
+  4.  **Rich Theoretical & Practical Foundation**: Combines core essays, a source library, and references to foundational work (e.g., OpenAI's "Harness Engineering" article).
+
+* **Why it's notable**  
+  It addresses a critical, advanced pain point in AI-assisted software development: how to move beyond simple prompting to a systematic, repeatable, and scalable method for controlling and enhancing agent performance within specific organizational contexts. Its high star count (2298) and thoughtful framing suggest it is a significant and influential contribution to the emerging discipline of AI agent orchestration.
+
+### **lopopolo/harness-engineering** - 一个通过塑造环境来大幅提升AI编程代理输出效能的理论框架、资源合集与实践指南
+* **功能介绍**  
+  本仓库定义并实践了“线束工程”：一种通过塑造AI编程代理的操作环境来显著提升其输出质量的方法。它不改变AI模型本身，而是专注于优化**上下文**和**工具**这两个核心杠杆。它提供了一套结构化的“文集、实地指南和代理上下文包”，指导如何将组织的非功能性需求（如可靠性、安全性、可维护性等）编码为代理可检索和执行的格式。
+
+* **主要特点**  
+  1.  **系统级框架**：将组织的全部约束和质量属性视为代码，提供给代理使用。
+  2.  **渐进式一致性**：设计为一个迭代系统，能将过往工作的反馈（成功、修正、失败）转化为面向未来任务的累积上下文和约束。
+  3.  **实用操作手册**：包含实用的指南（`playbooks/`）和用于分配任务的代理路由文件（`AGENTS.md`）。
+  4.  **丰富的理论与实践基础**：融合了核心论述、源库以及对基础性工作（如 OpenAI 的“线束工程”文章）的参考。
+
+* **为何值得关注**  
+  它针对AI辅助软件开发中的一个关键且前沿的痛点：如何从简单的提示词工程，进阶到一种系统化、可重复、可扩展的方法，用于在特定组织环境中控制和增强代理的表现。其高星标数（2298）和深刻的框架设计，表明它是AI代理协调领域一项重要且具有影响力的贡献。
+
+**[View Repository / 查看仓库](https://github.com/lopopolo/harness-engineering)**
+
+### 🎬 How Photoroom Trained Themselves To Dream Bigger
+**Channel:** Y Combinator
+
+*   **What the video covers:** This is a talk from Startup School Paris featuring the founders of Photoroom. They share their entrepreneurial journey, specifically detailing how their experience going through Y Combinator (YC) fundamentally transformed their ambition and helped the company scale.
+*   **Key topics discussed:** The conversation likely delves into the founders' mindset shift, the challenges of scaling a startup, the value of the YC network and feedback, and specific growth milestones achieved post-YC.
+*   **Why it's worth watching:** It offers an authentic founder's perspective on how a prestigious accelerator like YC can catalyze growth. It's insightful for aspiring entrepreneurs, startup employees, and anyone interested in the mechanics of scaling a tech company from a small team to a larger scale, focusing on the critical aspect of "ambition."
+
+### 🎬 Photoroom的创始人：我们是如何训练自己敢于梦想的
+**频道:** Y Combinator
+
+*   **视频内容概述:** 这是来自巴黎创业学院（Startup School Paris）的一场对谈，主角是照片编辑应用Photoroom的创始人。他们分享了公司的创业历程，重点阐述了参加Y Combinator（YC）的经历如何彻底改变了他们的雄心壮志，并助力公司实现了规模化成长。
+*   **主要话题:** 对话可能涵盖了创始人团队心态的转变、公司规模化过程中的挑战、YC校友网络与反馈的价值，以及参与YC后取得的具体增长里程碑。
+*   **为何值得观看:** 它提供了创业者的第一手视角，展示了像YC这样的顶级加速器如何催化公司的飞跃发展。对于有抱负的创业者、初创公司员工以及任何对科技公司从小团队发展到规模化运营的机制感兴趣的人来说，本视频都极具启发性，尤其聚焦于“野心”这一关键要素。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RgYCO87ghRY)**
+
+### 🎬 The Best Time to Build in Crypto
+**Channel:** Y Combinator
+* This video explores the current "crypto winter" or bear market, arguing that this period of reduced speculation is actually an optimal time for builders and developers.
+* Key topics include the maturation of the underlying technology (e.g., Layer 2 solutions, scalability), the real-world adoption of stablecoins for payments and finance, and the shift in focus from token prices to building useful applications.
+* It’s worth watching for founders, developers, or anyone interested in the crypto space, as it provides a contrarian, builder-focused perspective from a leading startup accelerator, highlighting the tangible technological progress happening beneath the market noise.
+
+### 🎬 加密货币领域的最佳建设时机
+**频道:** Y Combinator
+* 本视频探讨了当前的“加密货币寒冬”或熊市，认为这一投机减少的时期实际上是开发者和建设者的最佳时机。
+* 主要话题包括底层技术的成熟（如Layer 2解决方案、可扩展性）、稳定币在支付和金融领域的实际应用，以及关注点从代币价格转向构建实用应用。
+* 对于创始人、开发者或任何对加密货币领域感兴趣的人来说，它值得观看。因为视频来自领先的初创公司孵化器，提供了专注于建设的、与主流观点相悖的视角，并揭示了市场噪音之下正在进行的切实的技术进步。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=M861XfrOR5s)**
+
+### 🎬 Why You'll Never See Anything Enter a Black Hole - Adam Brown
+**Channel:** Dwarkesh Patel
+*   What the video covers
+    This is a deep-dive conversation with physicist Adam Brown about the counterintuitive physics of black holes. It specifically explores why an outside observer would never actually see an object cross a black hole's event horizon, based on the effects of general relativity.
+*   Key topics discussed
+    *   The event horizon and its properties as an "asymptote" in spacetime.
+    *   The concept of gravitational time dilation and its extreme effects.
+    *   The role of the observer in defining physical events.
+    *   How general relativity describes reality versus our intuitive or observational perspective.
+*   Why it's worth watching
+    For anyone interested in astrophysics or theoretical physics, this video offers a fascinating and rigorous explanation of a mind-bending concept. Featuring a Stanford physicist and hosted by a sharp interviewer, it breaks down a complex topic from general relativity into a compelling narrative, challenging common sci-fi depictions of black holes.
+
+### 🎬 为什么你永远看不到任何东西掉入黑洞 - Adam Brown
+**频道:** Dwarkesh Patel
+*   视频内容概述
+    这是一段与物理学家Adam Brown的深度对话，探讨黑洞的反直觉物理学。核心内容基于广义相对论的原理，解释了为什么一个外部观察者实际上永远无法看到物体穿越黑洞的事件视界。
+*   主要话题
+    *   事件视界及其作为时空“渐近线”的特性。
+    *   引力时间膨胀的概念及其极端效应。
+    *   观察者在定义物理事件中的角色。
+    *   广义相对论如何描述现实，与我们的直觉或观测视角有何不同。
+*   为何值得观看
+    对于任何对天体物理或理论物理感兴趣的人来说，这段视频对一个令人费解的概念提供了引人入胜且严谨的解释。节目邀请了斯坦福大学的物理学家，并由敏锐的主持人引导，将广义相对论中的复杂话题转化为引人入胜的叙事，挑战了常见的黑洞科幻描绘。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WLEW4i9u8bk)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+
+*   **What the video covers:** This is an educational video breaking down the concept of session hijacking, a common cybersecurity threat. It explains the fundamentals of how browser sessions work to help viewers understand how their online sessions can be compromised.
+*   **Key topics discussed:** The core of the video likely explains session IDs, cookies, and the client-server communication process. It then illustrates how an attacker might steal or predict a valid session ID to hijack a user's authenticated session.
+*   **Why it's worth watching:** It's a crucial primer for anyone using the internet. Understanding this attack vector empowers users to recognize potential risks (like using public Wi-Fi) and appreciate security measures (like HTTPS and secure cookie flags). It's essential knowledge for building a basic cybersecurity awareness.
+
+### 🎬 会话劫持详解 🔐 | 浏览器工作原理（网络安全意识）
+**频道:** ezCommit
+
+*   **视频内容概述：** 这是一个教育性视频，详细解释了“会话劫持”这一常见的网络安全威胁。它从基础讲起，阐明浏览器会话的工作原理，帮助观众理解自己的在线会话是如何被攻击者窃取的。
+*   **主要话题：** 视频核心内容预计会讲解会话ID、Cookie以及客户端-服务器的通信流程。随后，它会演示攻击者如何通过窃取或预测有效的会话ID，从而劫持已认证的用户会话。
+*   **为何值得观看：** 这是每位互联网用户都应了解的基础知识。理解这种攻击方式，能让用户警惕潜在风险（例如使用公共Wi-Fi），并真正明白各种安全措施（如HTTPS和安全的Cookie标志）的重要性。它是构建网络安全意识不可或缺的一课。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+* This video explores the alarming privacy risk where ChatGPT (and similar AI models) can surface personal photos that you believe are private, because they were scraped from the web.
+* It demonstrates a method to check if your photos have been sourced and ingested by AI training datasets, potentially making them discoverable.
+* The video is worth watching as it provides a practical, eye-opening tutorial on a major, often overlooked, digital privacy vulnerability in the age of AI, using a personal discovery to illustrate the issue.
+
+### 🎬 ChatGPT 曝光了我的隐藏照片
+**频道:** TheCyborgGirl
+* 本视频探讨了一个令人震惊的隐私风险：ChatGPT（及类似AI模型）能够调出你认为私密的个人照片，因为这些照片实际上已被网络爬虫抓取。
+* 视频演示了一种方法，可以检查你的照片是否已被AI训练数据集收录，从而可能被发现和检索。
+* 值得观看是因为它以个人经历为例，提供了实用且令人警醒的教程，揭示了在AI时代一个常被忽视的重大数字隐私漏洞。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
