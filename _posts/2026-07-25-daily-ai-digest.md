@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 25, 2026"
 date: 2026-07-25
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -240,6 +240,226 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 对于任何关注AI训练的伦理边界、个人数据暴露问题，以及希望采取措施重新掌控自己数字足迹的人来说，此视频值得观看。它将一个复杂的科技与隐私议题进行了个性化呈现。
 
 **Description Link:** [How to Check If Your Photos Are Sourced/Scraped Online](https://app.notion.com/p/How-to-Check-If-Your-Photos-Are-Sourced-Scraped-Online-3987b1922a3f81639cabcfe4791aa5c8?)
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+### [Introducing Claude Opus 5: Key Highlights]
+* **Availability & Positioning**: Claude Opus 5 is now available. It is a thoughtful and proactive model that approaches the frontier intelligence of Claude Fable 5 at half the cost, designed as the new default model on Claude Max.
+* **Performance & Cost-Effectiveness**: Opus 5 achieves state-of-the-art performance on coding and knowledge work evaluations like Frontier-Bench and GDPval-AA. It delivers greatly improved performance over its predecessor, Opus 4.8, at the same cost, excelling in software engineering, problem-solving, and scientific research tasks.
+* **Practical Capabilities & User Feedback**: The model shows strong agency and thoroughness in real-world tasks, such as writing its own computer vision pipelines and fixing deep software bugs. Early-access customers report significant improvements in debugging, analysis, consistency, and handling complex, vague tasks across various industries.
+
+### [介绍 Claude Opus 5：核心要点]
+* **可用性与定位**：Claude Opus 5 现已上线。这是一款思维周密、主动性强的模型，以 Claude Fable 5 一半的成本，达到了接近其前沿智能的水平，并已成为 Claude Max 上的新默认模型。
+* **性能与成本效益**：Opus 5 在编码和知识工作评估（如 Frontier-Bench 和 GDPval-AA）中达到了最先进水平。与前代 Opus 4.8 相比，它在相同成本下提供了显著提升的性能，在软件工程、问题解决和科学研究任务中表现卓越。
+* **实际能力与用户反馈**：该模型在现实任务中展现了强大的自主性和周密性，例如自主编写计算机视觉流程和修复深层软件缺陷。早期用户体验反馈表明，它在调试、分析、一致性以及处理各行业复杂模糊任务方面均有显著改进。
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/claude-opus-5)**
+
+### Nvidia, Microsoft, Meta Warn Against Overregulating Open-Weight Models
+*   A coalition of over 20 U.S. tech companies, including Nvidia, Microsoft, and Meta, released an open letter urging policymakers to avoid "premature restrictions" on open-weight AI models.
+*   The companies argue that such regulations would stifle competition, drive innovation overseas, and prevent the broad sharing of AI benefits, concentrating power in a few hands.
+*   The warning comes amid rising competition from powerful Chinese open-weight models like Moonshot AI's Kimi K3 and debate within the U.S. government about potential restrictions on them.
+*   Signatories contend that relying solely on closed models is not inherently safer and that strong legal frameworks, not sweeping bans, should address concerns like IP theft.
+
+### 英伟达、微软、Meta 警告勿对开放权重模型过度监管
+*   英伟达、微软、Meta 等 20 多家美国科技公司联盟发布联名信，敦促政策制定者避免对开放权重 AI 模型实施“过早限制”。
+*   这些公司认为，此类监管将扼杀竞争、导致创新外流，并阻碍 AI 技术的广泛普及，从而将权力集中在少数人手中。
+*   此番警告正值来自中国公司的强大开放权重模型（如月之暗面的 Kimi K3）竞争加剧之际，美国政府内部也在就是否限制这些模型展开辩论。
+*   签署方主张，完全依赖封闭模型本身并不更安全，对于知识产权盗窃等担忧，应通过有针对性的法律和商业框架来解决，而非实施全面禁令。
+
+**[Read Original / 阅读原文](https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html)**
+
+### Scaling Postgres LISTEN/NOTIFY with Optimized Streaming
+*   Postgres's LISTEN/NOTIFY feature is powerful for low-latency notifications but has been criticized for poor scalability due to a global exclusive lock held during transaction commits containing NOTIFY calls.
+*   The bottleneck isn't resource exhaustion but serialization: every NOTIFY forces a sequential commit, preventing optimizations like group commit and capping throughput (observed at ~2.9K writes/sec).
+*   Optimization is achieved by decoupling notifications from individual writes: buffer NOTIFY calls in memory and flush them periodically in a single batch transaction, drastically reducing contention on the global lock.
+*   This approach enables high throughput (60K writes/sec) with acceptable latency (15-100ms), while a fallback polling mechanism handles the rare case of notifications lost during a process crash.
+
+### 使用优化流处理扩展 Postgres LISTEN/NOTIFY
+*   Postgres 的 LISTEN/NOTIFY 功能是实现低延迟通知的有力工具，但因在包含 NOTIFY 调用的事务提交期间需要持有全局排他锁而饱受扩展性差的批评。
+*   性能瓶颈并非源于资源耗尽，而是序列化问题：每次 NOTIFY 都会强制事务顺序提交，阻碍了批量提交等优化，导致吞吐量受限（观测值约为每秒 2.9K 次写入）。
+*   优化方法是将通知与单次写入操作解耦：将 NOTIFY 调用在内存中缓冲，并周期性地通过单个批量事务刷新，从而极大降低全局锁的竞争。
+*   该方案可实现高吞吐量（每秒 60K 次写入）与可接受的延迟（15-100毫秒），同时通过备用的轮询机制来处理进程崩溃时极少数丢失通知的情况。
+
+**[Read Original / 阅读原文](https://www.dbos.dev/blog/postgres-listen-notify-scalability)**
+
+### Buzz 🐝 - A self-hostable workspace for human-agent collaboration
+* **What it does**: Buzz is a workspace platform where humans and AI agents share the same environment, built as a Nostr relay. It unifies communication, code repositories, workflows, and reviews into a single event log, giving agents the same access and capabilities as human teammates.
+* **Key features**:
+    * **Unified Event Log**: Every message, patch, workflow step, and review is a signed Nostr event, creating a shared audit trail.
+    * **Agent as a Teammate**: Agents join channels with their own identities and keys, capable of performing tasks like triaging bugs, reviewing code, running workflows, and orchestrating other agents.
+    * **Branch-as-Room**: Feature branches automatically create dedicated rooms containing patches, CI status, code reviews, and merge decisions.
+    * **Integrated Tooling**: Combines chat, version control (via NIP-34), canvases, media with frame comments, and YAML-triggered workflows.
+    * **Self-Hostable & Sovereign**: Designed for single-community deployments by default, offering data ownership and control over the workspace relay.
+* **Why it's notable**: Buzz tackles the fragmentation of modern dev tools (chat, forges, bots, CI dashboards) by providing **one substrate for both human and AI collaboration**. It makes agents first-class participants with real capabilities rather than passive bots, all within a cryptographically auditable and searchable system built on the decentralized Nostr protocol.
+
+### Buzz 🐝 - 一个人类与智能体协同工作的自托管工作空间
+* **功能介绍**：Buzz 是一个基于 Nostr 中继构建的工作空间平台，让人类和AI智能体共享同一环境。它将通信、代码仓库、工作流和代码审查统一到一个事件日志中，赋予智能体与人类队友相同的访问权限和工作能力。
+* **主要特点**：
+    * **统一事件日志**：所有消息、补丁、工作流步骤和代码审查都是经签名的Nostr事件，形成共享的审计轨迹。
+    * **智能体作为团队成员**：智能体拥有自己的身份和密钥加入频道，能够执行分类Bug、审查代码、运行工作流和编排其他智能体等任务。
+    * **分支即房间**：功能分支会自动创建专属房间，集中存放补丁、CI状态、代码评审和合并决策。
+    * **集成化工具**：融合了聊天、版本控制（基于NIP-34）、画布、带帧标记的媒体评论以及YAML触发的工作流。
+    * **自托管与主权性**：默认面向单社区部署设计，提供数据所有权和对工作空间中继的控制权。
+*   **为何值得关注**：Buzz 通过提供一个**同时容纳人类与AI协作的统一基础层**，应对了现代开发工具碎片化（聊天、代码托管、机器人、CI仪表盘）的挑战。它使智能体不再是被动的机器人，而是能够执行真实任务的一等参与者，所有操作都在基于去中心化Nostr协议的、可加密验证和搜索的系统中完成。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### World Monitor - Real-time global intelligence dashboard powered by AI
+* **What it does**: Aggregates and synthesizes data from 500+ news feeds, financial markets, and infrastructure sources into a unified situational awareness dashboard. It features a dual map engine (3D globe and 2D), country instability scoring, and finance radar with market composites.
+* **Key features**: Local AI via Ollama (no API keys), 6 specialized site variants from one codebase, a native desktop app (Tauri 2), 25-language support, and extensive programmatic access via MCP server, REST API, CLI, and multi-language SDKs.
+* **Why it's notable**: It is trending for its ambitious scope in unifying geopolitical, financial, and disaster intelligence in a single, open-source tool. Its rapid star gain (2,194 stars today) indicates strong interest in its comprehensive monitoring capabilities and developer-friendly ecosystem.
+
+### World Monitor - 基于AI的实时全球情报仪表板
+* **功能介绍**: 将来自500多个新闻源、金融市场和基础设施数据聚合并合成为统一的态势感知仪表板。提供地缘政治监控、金融雷达（覆盖股票、商品、加密货币）、国家不稳定指数（CII）评估和灾害追踪。
+* **主要特点**: 支持本地AI运行（通过Ollama，无需API密钥）；单一代码库衍生6个专业站点变体（全球、科技、金融等）；提供原生桌面应用（基于Tauri 2）；支持25种语言；拥有完整的开发者工具链，包括MCP服务器、REST API、命令行工具（CLI）及Python/Ruby/Go等多语言SDK。
+* **为何值得关注**: 该项目因其在开源领域提供高度综合、实时的情报聚合与分析平台而迅速获得关注。其快速增长的星标数量（今日2,194星）证明了它在满足全球态势感知、金融监控和开源数据分析需求方面的巨大潜力与实用性。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### Awesome Claude Skills - A Curated Collection of 1000+ Claude AI Skills
+*   **What it does:** This repository is a comprehensive, curated list ("awesome list") of over 1,000 production-ready Claude Skills, plugins, and resources. It provides reusable instruction packages that teach AI agents (like Claude Code, Codex, Cursor, etc.) how to handle specific tasks, from document processing and code generation to sending emails and creating issues across thousands of apps.
+*   **Key features:**
+    *   **Extensive Catalog:** Organizes skills into practical categories (Document Processing, Dev Tools, Data, Business, etc.).
+    *   **Real-World Actions:** Highlights the "connect-apps" plugin, which uses Composio to let Claude perform actions (send emails, update databases) across 1,000+ services.
+    *   **Detailed Explanations:** Clearly explains what Skills are (reusable instruction packages), how they work (progressive loading), and their distinction from MCP and tools.
+    *   **Broad Compatibility:** Lists skills compatible with multiple agents: Claude.ai, Claude Code, Codex, Cursor, Gemini CLI, and more.
+*   **Why it's notable:** It's the definitive starting point for anyone looking to enhance Claude AI's capabilities with practical, tested workflows. Its value lies in the sheer volume of vetted resources, the clear taxonomy, and the integration with a gateway (Composio MCP) that bridges skills to real-world applications, making it a vital hub for the growing Claude Skills ecosystem.
+
+### Awesome Claude Skills - 精心整理的1000+ Claude AI技能资源库
+*   **功能介绍：** 本仓库是一个全面、精心整理的列表（"awesome list"），汇集了超过1000个可用于生产环境的Claude技能、插件和资源。它提供可复用的指令包，教导AI代理（如Claude Code, Codex, Cursor等）如何执行特定任务，涵盖文档处理、代码生成到跨数千个应用发送邮件、创建工单等场景。
+*   **主要特点：**
+    *   **庞大目录：** 将技能按实用类别（文档处理、开发工具、数据、商业等）进行组织。
+    *   **真实世界操作：** 重点介绍了“connect-apps”插件，它利用Composio让Claude能够跨1000多个服务执行操作（如发送邮件、更新数据库）。
+    *   **详尽解释：** 清晰阐述了“技能”的本质（可复用的指令包）、工作原理（渐进式加载）及其与MCP和工具的区别。
+    *   **广泛兼容性：** 列出的技能兼容多种代理：Claude.ai、Claude Code、Codex、Cursor、Gemini CLI等。
+*   **为何值得关注：** 这是任何希望使用实用、经过测试的工作流来增强Claude AI能力的人的首选资源。其价值在于海量的精选资源、清晰的分类体系，以及与一个网关（Composio MCP）的集成——该网关将技能与现实世界的应用连接起来，使其成为不断发展的Claude技能生态系统中的重要枢纽。
+
+**[View Repository / 查看仓库](https://github.com/ComposioHQ/awesome-claude-skills)**
+
+### OpenWorker - An open-source AI desktop coworker that executes tasks and produces deliverables, not just chats.
+* **What it does**: OpenWorker is an AI assistant that lives on your desktop. Instead of just chatting, it breaks down high-level requests (e.g., "prepare a customer brief," "untangle my calendar") into steps and executes them using your local files, terminal, and connected apps to produce finished work.
+* **Key features**:
+    * **Delivers Final Output**: Generates actual files like documents, spreadsheets, and reports, not just to-do lists.
+    * **Deep Integration**: Connects with 25+ tools (GitHub, Slack, Jira, Notion, etc.) and your local system.
+    * **BYO Model**: Supports a wide range of AI models (OpenAI, Anthropic, Google, DeepSeek, etc.) via API keys, or runs fully locally with Ollama.
+    * **Approval Gate**: Requires user confirmation before taking consequential actions like sending messages or running commands.
+    * **Automation**: Can be scheduled for recurring tasks and integrates with Slack.
+* **Why it's notable**: It tackles a key limitation of many AI assistants by focusing on completing real-world tasks rather than just providing information. Its local-first approach with strong privacy controls and model flexibility makes it a powerful, customizable productivity tool.
+
+### OpenWorker - 一个开源AI桌面协作者，能执行任务并生成交付成果，而不仅仅是聊天。
+* **功能介绍**：OpenWorker 是一个驻留在您桌面的 AI 助手。它不仅仅是聊天，而是将高层级请求（如“准备客户简报”、“整理我的日历”）分解为步骤，并利用您的本地文件、终端和已连接的应用程序来执行，最终生成完成的工作成果。
+* **主要特点**：
+    * **交付最终成果**：生成实际文件，如文档、电子表格和报告，而不仅仅是待办事项列表。
+    * **深度集成**：连接 25+ 种工具（GitHub、Slack、Jira、Notion 等）及您的本地系统。
+    * **自带模型**：通过 API 密钥支持多种 AI 模型（OpenAI、Anthropic、Google、DeepSeek 等），或通过 Ollama 完全本地运行。
+    * **审批机制**：在发送消息、运行命令等关键操作前，需用户确认。
+    * **自动化**：可设置定时任务执行重复性工作，并支持与 Slack 集成。
+*   **为何值得关注**：它通过专注于完成实际工作任务（而非仅仅提供信息），解决了许多 AI 助手的局限性。其本地优先、隐私性强且模型选择灵活的特点，使其成为一个强大且可定制的生产力工具。
+
+**[View Repository / 查看仓库](https://github.com/andrewyng/openworker)**
+
+### **video-shotcraft - AI Video Skill for Claude Code & Codex**
+*   **What it does:** An AI agent skill that transforms Claude Code or Codex into a motion-design studio. It can storyboard, animate, and sound-design cinematic product videos (promos, demos, launch videos) using the Remotion framework, leveraging real page captures and professional techniques.
+*   **Key features:** Includes a library of **106 "shot recipe cards"** detailing motion techniques, **161+ dynamic previews** browsable in an online gallery, a complete and validated **"Ink Press" video template** (36s, 1080p), and production-ready Remotion components for effects like 2.5D camera moves and beat-synced cuts.
+*   **Why it's notable:** It represents a cutting-edge application of AI agents in creative production, offering a structured, high-quality toolkit that democratizes professional video creation. The extensive, well-documented shot library and a turnkey template provide immediate utility for creating polished content.
+
+### **video-shotcraft - 面向 Claude Code 与 Codex 的 AI 视频制作技能**
+*   **功能介绍:** 一项 AI 代理技能，能将 Claude Code 或 Codex 转变为动态设计工作室。它能为产品生成、分镜、动画并配音，制作出电影级的宣传片、演示视频或发布视频，技术基于 Remotion 框架，并运用真实页面捕捉等专业手法。
+*   **主要特点:** 内置一个庞大的**“镜头配方卡”库（106张）**，详细说明各种动态技巧；提供**161种以上的动态预览**，可通过在线画廊浏览和筛选；包含一个完整可用的**“Ink Press”视频模板**（36.2秒，1080p，包含10个镜头）；同时提供生产就绪的 Remotion 组件，用于实现2.5D镜头移动、节拍同步剪辑等效果。
+*   **为何值得关注:** 这是将 AI 代理应用于创意生产领域的前沿实践，提供了一套结构化、高质量的工具包，使得专业级视频的制作变得更易获得。其丰富且文档完备的镜头库与即用型模板，能立即用于创建精美的视频内容。
+
+**[View Repository / 查看仓库](https://github.com/Vincentwei1021/video-shotcraft)**
+
+### 🎬 New Operating Systems for the Physical World
+**Channel:** Y Combinator
+*   What the video covers: The session explores the emerging category of new "operating systems" designed specifically for managing work done in the physical world (e.g., in construction, logistics, and field services), contrasting them with outdated, desk-centric software.
+*   Key topics discussed: The limitations of legacy software for frontline work, the inefficiencies of manual processes (clipboards, spreadsheets), the potential for real-time data and automation to transform physical workflows, and the venture capital perspective on this evolving tech sector.
+*   Why it's worth watching: It highlights a massive, often-overlooked software opportunity impacting most of the global workforce. The discussion, likely featuring founders and investors, provides insight into how modern technology is finally being tailored to solve the complex challenges of on-the-ground operations.
+
+### 🎬 物理世界的新操作系统
+**频道:** Y Combinator
+*   视频内容概述：本场讨论聚焦于一种新兴的“操作系统”类别，它们专为管理物理世界中的工作（如建筑、物流和现场服务）而设计，并与陈旧的、以办公桌为中心的软件形成鲜明对比。
+*   主要话题：传统前线工作软件的局限性，手动流程（如剪贴板、电子表格）的低效率，实时数据和自动化改造实体工作流程的潜力，以及风险投资对这一新兴技术领域的看法。
+*   为何值得观看：它揭示了一个影响全球大部分劳动力、却常被忽视的巨大软件机遇。这场讨论（可能由创始人和投资人参与）深入介绍了现代技术如何终于开始量身定制，以解决实地运营的复杂挑战。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=V_gDce8hBrg)**
+
+### 🎬 How Two French Engineers In New York Built The Company That Monitors The Entire Cloud
+**Channel:** Y Combinator
+*   This video features a talk from Datadog CEO Olivier Pomel at Startup School Paris, detailing the origin story and strategic evolution of his cloud monitoring company.
+*   Key topics include: founding a startup in New York as immigrants, staying closely aligned with customer needs during development, and the business strategy for dominating a critical niche in the cloud infrastructure space.
+*   It's worth watching for a deep dive into building a successful, developer-focused B2B SaaS company from a founder who experienced the entire journey, offering practical insights on product-market fit and scaling.
+
+### 🎬 法国工程师在纽约如何打造出监控整个云的公司
+**频道:** Y Combinator
+*   本次视频是Datadog CEO Olivier Pomel在巴黎创业学院的一场演讲，他详细讲述了这家云监控公司的创始故事和战略发展轨迹。
+*   主要话题包括：作为移民在纽约创立初创公司，在产品开发期间如何紧密围绕客户需求，以及在云基础设施关键领域确立市场主导地位的商业策略。
+*   值得观看的原因在于，它深入剖析了一家成功的、面向开发者的B2B SaaS公司的建设全过程，创始人分享了关于产品市场匹配和规模化发展的宝贵实战经验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=vb1Gcn10enw)**
+
+### 🎬 TypeScript in Express – TypeScript Tutorial
+**Channel:** freeCodeCamp.org
+
+*   **What the video covers:** This tutorial provides a comprehensive guide on integrating TypeScript with Express.js to build a robust and fully typed web server. It walks through the setup process and practical implementation.
+*   **Key topics discussed:** Setting up a TypeScript project with Express, defining types for routes and middleware, handling data requests/responses, and leveraging TypeScript's features for better code reliability and developer experience.
+*   **Why it's worth watching:** It's an excellent resource for developers looking to modernize their Node.js backend, catching bugs early and improving maintainability through TypeScript's static typing.
+
+### 🎬 在 Express 中使用 TypeScript – TypeScript 教程
+**频道:** freeCodeCamp.org
+
+*   **视频内容概述:** 本教程全面介绍了如何将 TypeScript 与 Express.js 结合使用，以构建一个完全类型化的健壮 Web 服务器。视频从项目设置到实际功能实现进行了逐步讲解。
+*   **主要话题:** 使用 Express 初始化 TypeScript 项目、为路由和中间件定义类型、处理数据请求与响应，以及如何利用 TypeScript 的特性来提升代码的可靠性和开发体验。
+*   **为何值得观看:** 对于希望使用 TypeScript 现代化其 Node.js 后端的开发者而言，这是一个极佳的学习资源。它能帮助你在开发早期发现错误，并通过静态类型显著提高代码的可维护性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=bYgphDEWwvs)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   What the video covers
+    *   This video provides a clear, educational breakdown of what a "session" is in web browsing and the critical cybersecurity threat known as **session hijacking**.
+    *   It explains the technical workflow of how browsers and websites manage sessions (using cookies, session IDs) to maintain user logins.
+    *   The core focus is on making viewers aware of how attackers can intercept and steal these sessions to gain unauthorized access to accounts.
+*   Key topics discussed
+    *   The definition and purpose of web sessions and session IDs.
+    *   Common session hijacking methods (e.g., packet sniffing, cross-site scripting (XSS)).
+    *   The risks and potential damage of a successful session hijack.
+    *   Fundamental protective measures for users (like using HTTPS, VPNs) and developers.
+*   Why it's worth watching
+    *   It demystifies a common but often misunderstood cyber attack, making it accessible for beginners.
+    *   Understanding sessions is fundamental to grasping many other web security concepts.
+    *   It offers practical awareness and tips to help protect your own online accounts, presented in a straightforward, educational style.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+*   视频内容概述
+    *   本视频清晰地讲解了什么是浏览器中的“会话（Session）”以及一种严重的网络安全威胁——**会话劫持**。
+    *   它阐释了浏览器和网站如何通过会话ID和Cookies来管理登录状态的技术流程。
+    *   视频的核心是让观众了解攻击者如何拦截和窃取会话，从而非法访问他人账户。
+*   主要话题
+    *   Web会话和会话ID的定义与作用。
+    *   常见的会话劫持方法（如数据包嗅探、跨站脚本攻击XSS）。
+    *   会话劫持成功的风险与潜在危害。
+    *   用户（如使用HTTPS、VPN）和开发者的基础防护措施。
+*   为何值得观看
+    *   它将一个常见但常被误解的网络攻击讲解得深入浅出，非常适合初学者。
+    *   理解会话机制是掌握许多其他Web安全概念的基础。
+    *   视频以直接的教育方式，提供了实用的安全意识和防护建议，有助于保护您的在线账户。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+*   This video is a personal account and cautionary tale about how the AI tool ChatGPT was unexpectedly able to surface and display the creator's private photos that she believed were hidden.
+*   Key topics discussed include the privacy risks associated with generative AI, the potential for AI to access and process personal data from online sources, and a practical guide (linked in the description) on how users can check if their own photos have been scraped and used in AI datasets.
+*   It's worth watching as a real-world case study that highlights a growing concern about digital privacy in the AI age, offering both a startling example and a proactive tool for viewers to investigate their own exposure.
+
+### 🎬 ChatGPT曝光了我的隐藏照片
+**频道:** TheCyborgGirl
+*   视频内容概述：这是一个个人经历和警示案例，讲述了AI工具ChatGPT如何意外地找到并展示了创作者原以为隐藏起来的私人照片。
+*   主要话题：讨论了生成式AI带来的隐私风险、AI访问和处理网络个人数据的可能性，以及一个实用指南（链接在描述中），教观众如何检查自己的照片是否已被抓取并用于AI数据集。
+*   为何值得观看：作为AI时代数字隐私问题的一个真实案例研究，它不仅展示了一个令人震惊的例子，还提供了主动工具，让观众可以调查自己的信息暴露情况，兼具警示与实用价值。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
