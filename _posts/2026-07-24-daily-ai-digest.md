@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 24, 2026"
 date: 2026-07-24
-description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 12 Hacker News articles, 3 GitHub trending repos, 15 fast-moving projects, 20 YouTube videos, 0 Hugging Face models. 今日精选：12篇黑客新闻，3个热门项目，15个快速崛起项目，20个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -579,6 +579,212 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 视频探讨了创作者发现ChatGPT从其过去中挖掘出未曾公开或不易获取的照片的亲身经历。
 * 主要话题包括AI的交叉数据参照能力、其对数字隐私的令人不安的启示，以及一个教程/资源（链接在描述中）用于检查你的照片是否已被网络爬取。
 * 值得观看的原因在于它提供了关于AI意外能力的第一手且易产生共鸣的叙述，并提供了评估个人在线曝光度的实用工具。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+<!-- [Title-Only] -->
+### Writing by hand is good for your brain
+*   This article likely discusses the cognitive and neurological benefits of handwriting compared to typing. It probably explores how the physical act of forming letters by hand engages the brain differently, potentially enhancing memory, learning, and creative thinking. The post might reference studies or personal observations from author Neal Stephenson.
+*   It's interesting because it addresses a modern dilemma: in our digital age, should we consciously choose an older, slower method for certain tasks? Readers might be curious about practical ways to incorporate handwriting to improve focus or comprehension, or simply reassured that a traditional habit has lasting value.
+
+### 用手书写对你的大脑有益
+*   本文很可能探讨了与打字相比，手写带来的认知和神经层面益处。文章可能会阐述用手书写字母的物理过程如何以不同方式激活大脑，并可能增强记忆力、学习能力和创造性思维。帖子可能会引用相关研究，或分享作者尼尔·斯蒂芬森的个人观察。
+*   这篇文章值得关注，因为它回应了现代社会的一个普遍困惑：在数字化时代，我们是否应该为了某些任务而有意识地选择一种更古老、更慢的方法？读者或许会好奇如何通过手写来提升专注力或理解能力，也可能仅仅是为这个古老习惯仍具有持久价值而感到欣慰。
+
+**[Read Original / 阅读原文](https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your)**
+
+### How a Beam Engine Works - An Interactive Guide
+
+*   **Core Principle:** The beam engine converts the thermal energy of steam into mechanical work, powering the Industrial Revolution. It generates approximately 15 horsepower, equivalent to the labor of 150 people.
+*   **Steam as Power Source:** Water heated to steam expands to 1,700 times its original volume, creating immense pressure. This pressure, harnessed within a piston and cylinder, provides the foundational force.
+*   **Harnessing the Atmosphere:** Early engines cleverly used atmospheric pressure as a power source. By creating a near-perfect vacuum via steam condensation, the atmosphere could push a piston with a force of about 1 kg per square centimeter.
+*   **Newcomen's Engine:** A pivotal invention for pumping water from deep mines. It used a rocking beam connected to a piston, with the atmosphere driving the downstroke and gravity on pump rods causing the upstroke. It was inefficient, wasting much coal heating the cylinder each cycle.
+*   **Evolution of the Boiler:** Early boilers like the "haystack" and "waggon" types were weak and could only produce low-pressure steam. Advancements in boiler design and materials were necessary to safely contain higher-pressure steam, leading to more powerful and efficient engines.
+
+### 梁式引擎工作原理 - 互动指南
+
+*   **核心原理：** 梁式引擎将蒸汽的热能转化为机械功，驱动了工业革命。它能产生约15马力，相当于150人的劳动力。
+*   **蒸汽作为动力源：** 水被加热成蒸汽后，其体积会膨胀至原始体积的1700倍，从而产生巨大的压力。这种在活塞和气缸内产生的压力，提供了基础动力。
+*   **利用大气压：** 早期的引擎巧妙地将大气压作为动力来源。通过蒸汽冷凝产生近乎完美的真空，大气能以每平方厘米约1公斤的力推动活塞。
+*   **纽科门引擎：** 一项为矿井抽水的关键发明。它通过一根连接活塞的摇梁工作，大气压力驱动下行行程，而泵杆的重力导致上行行程。它的效率较低，在每个循环中浪费大量煤炭来重新加热气缸。
+*   **锅炉的演进：** 早期的“干草堆”和“货车”式锅炉结构薄弱，只能产生低压蒸汽。锅炉设计和材料的进步是安全容纳更高压力蒸汽的必要条件，这造就了更强大、更高效的引擎。
+
+**[Read Original / 阅读原文](https://glinscott.github.io/beam-engine/)**
+
+<!-- [Title-Only] -->
+### Startup founders urge U.S. government not to shut off Chinese open weight AI
+* This article likely reports on appeals from American technology startup founders to the U.S. government, specifically the Trump administration, urging it not to restrict or ban access to Chinese-developed open-weight AI models. "Open weight" refers to AI models whose trained parameters (weights) are publicly released, allowing for broad use and adaptation.
+* It is interesting because it highlights a critical debate in the AI ecosystem: balancing national security and intellectual property concerns against the benefits of global open-source collaboration. Founders argue that restricting access to these tools could hinder innovation, competition, and the ability of U.S. startups to build upon the latest advancements.
+
+### 美国初创企业创始人敦促美国政府不要切断中国开放权重AI
+* 根据标题推测，本文内容可能是关于美国科技初创公司的创始人正在向美国政府（特指特朗普政府）发出呼吁，要求不要限制或禁止使用中国开发的“开放权重”AI模型。“开放权重”是指其训练参数（权重）被公开发布的AI模型，允许广泛使用和改编。
+* 为何值得关注：这篇文章触及了AI发展中的一个核心争论：如何在国家安全和知识产权保护与全球化开源协作带来的益处之间取得平衡。创始人认为，限制访问这些工具可能会阻碍创新、降低竞争，并使美国初创公司难以在最前沿的技术成果基础上进行开发。
+
+**[Read Original / 阅读原文](https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992)**
+
+### Buzz - A Self-Hosted Workspace for Human-AI Collaboration
+*   **What it does:** Buzz is a self-hostable communication platform (based on the Nostr protocol) that creates a unified workspace where human users and AI agents collaborate as equals in shared channels. It functions as a "hive mind" by integrating messaging, code repositories (with git hosting), workflows, and AI agent actions into a single, auditable event log.
+*   **Key features:**
+    *   **Unified Event Log:** All actions—messages, code patches, reviews, workflow steps, agent operations—are signed events in one log, enabling consistent search and audit trails.
+    *   **Agents as Team Members:** AI agents have their own cryptographic keys and identities. They can be added to channels like human members, perform tasks (like triaging bugs, drafting release notes, running reviews), and operate with the same capabilities as a human teammate.
+    *   **Integrated Development Tools:** Turn feature branches into dedicated rooms where code, CI results, discussions, and merge decisions coexist. Includes git hosting and supports workflows triggered by messages, reactions, or schedules.
+    *   **Self-Hostable & Sovereign:** Designed for single-community, self-hosted deployments where the workspace URL determines the community, giving users control over their data and infrastructure.
+*   **Why it's notable:** Buzz represents a shift from AI tools as external bots to AI as integrated, autonomous team members with their own accountability. Its trendiness (2,162 stars today) stems from addressing a core pain point in modern dev tooling: the fragmentation of chat, forges, CI, and bot integrations. By providing a single substrate, it aims to replace multiple disconnected tabs and tools, making human-AI collaboration seamless and transparent. Its strong focus on ownership ("a relay you own") and a cryptographic audit trail aligns with growing interest in sovereign and verifiable collaboration platforms.
+
+### Buzz - 一个支持人与AI协作的自托管工作空间
+*   **功能介绍：** Buzz 是一个基于 Nostr 协议的可自托管通信平台，它创建了一个统一的工作空间，让人类用户和 AI 代理作为平等的参与者在共享频道中协作。它通过集成消息、代码仓库（包含 Git 托管）、工作流和 AI 代理操作到一个单一的、可审计的事件日志中，充当“蜂巢思维”的角色。
+*   **主要特点：**
+    *   **统一事件日志：** 所有操作——消息、代码补丁、审查、工作流步骤、代理操作——都是一个日志中的签名事件，实现了统一的搜索和审计轨迹。
+    *   **代理作为团队成员：** AI 代理拥有自己的加密密钥和身份。它们可以像人类成员一样被添加到频道中，执行任务（如分类问题、起草发布说明、运行审查），并拥有与人类队友相同的能力。
+    *   **集成开发工具：** 将功能分支转变为专属房间，让代码、CI 结果、讨论和合并决策共存。包含 Git 托管，并支持由消息、反应或计划触发的工作流。
+    *   **可自托管与自主可控：** 专为单社区、自托管部署设计，工作空间的 URL 决定社区范围，让用户能够控制自己的数据和基础设施。
+*   **为何值得关注：** Buzz 代表着一种转变，即 AI 从外部工具转变为具有自身责任感的、被深度集成的自主团队成员。它今日的热度（今日新增 2,162 星）源于解决了现代开发工具中的一个核心痛点：聊天、代码托管平台、CI 和机器人集成等工具的碎片化。通过提供一个统一的基础层，它旨在取代多个互不连通的工具和标签页，使人类与 AI 的协作变得无缝且透明。其对用户所有权（“一个你拥有的中继”）和加密审计轨迹的强烈关注，也符合当前对主权和可验证协作平台日益增长的兴趣。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### World Monitor - Real-time global intelligence dashboard
+* **What it does**: Aggregates and analyzes over 500 news feeds, geopolitical events, and infrastructure data across 15 categories. Provides a unified interface for situational awareness, combining AI-synthesized briefs with dual-map visualization (3D globe and WebGL flat map) and cross-stream correlation of military, economic, and disaster signals.
+* **Key features**: Country Instability Index (CII) scoring, finance radar for global markets, local AI integration via Ollama (no API keys required), 6 specialized site variants (tech, finance, etc.), native desktop apps for all major OS, and support for 25 languages with RTL. Includes a robust CLI, SDKs (Python, Ruby, Go), and an MCP server for programmatic access.
+* **Why it's notable**: It combines deep data analysis with multiple, accessible interfaces in a single, open-source project. Its trendiness is driven by its powerful "all-in-one" approach to global monitoring, local AI-first philosophy, and excellent developer tooling (API, CLI, SDKs), making it highly usable for both individuals and automated agents.
+
+### World Monitor - 实时全球情报仪表板
+* **功能介绍**: 聚合并分析来自15个类别的500多条新闻、地缘政治事件和基础设施数据。提供一个统一的态势感知界面，结合了AI合成简报、双地图引擎（3D地球仪和WebGL平面地图）以及军事、经济和灾害信号的交叉关联分析。
+* **主要特点**: 国家不稳定指数（CII）评分、金融市场雷达、通过Ollama实现的本地AI集成（无需API密钥）、6个专业网站变体、适用于所有主流操作系统的原生桌面应用，以及对25种语言（含RTL）的支持。提供强大的CLI、多语言SDK（Python、Ruby、Go）和用于程序化访问的MCP服务器。
+* **为何值得关注**: 它在一个开源项目中，将深度数据分析与多种、易用的界面相结合。其热度源于其强大的“一体化”全球监控理念、本地AI优先的开发哲学以及出色的开发者工具链（API、CLI、SDK），使其对个人用户和自动化智能体都极具实用价值。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### Kronos - A Foundation Model for the Language of Financial Markets
+* **What it does**: Kronos is the first open-source foundation model specifically designed for financial candlestick (K-line) data. It is pre-trained on data from over 45 global exchanges to understand the unique "language" of financial markets. It can be used as a unified model for various quantitative forecasting tasks.
+* **Key features**:
+    * **Two-Stage Framework**: Uses a specialized tokenizer to convert continuous, multi-dimensional K-line data (OHLCV) into hierarchical discrete tokens, which are then processed by a large autoregressive Transformer model.
+    * **Model Family**: Provides a range of pre-trained models with different capacities (mini, small, base, large) via Hugging Face Hub, catering to different computational needs.
+    * **Easy-to-use API**: Includes the `KronosPredictor` class for straightforward end-to-end forecasting, handling preprocessing, prediction, and post-processing.
+    * **Batch Prediction**: Supports efficient parallel prediction on multiple time series simultaneously.
+* **Why it's notable**: It is a pioneering **open-source foundation model for finance**, addressing the high-noise nature of financial data. Its acceptance by **AAAI 2026**, the release of fine-tuning scripts, and the provision of a live demo demonstrate its strong academic and practical potential in the field of quantitative analysis.
+
+### Kronos - 面向金融市场语言的基础模型
+* **功能介绍**: Kronos 是首个专门针对金融K线（蜡烛图）数据的开源基础模型。它在超过45个全球交易所的数据上进行预训练，以理解金融市场的独特“语言”。它可作为统一模型用于多种量化预测任务。
+* **主要特点**:
+    * **两阶段框架**：使用专门的分词器将连续的、多维的K线数据（OHLCV）量化为层级离散标记，然后由一个大型自回归Transformer模型进行预训练。
+    * **模型家族**：通过 Hugging Face Hub 提供了一系列不同容量（mini、small、base、large）的预训练模型，以满足不同的计算需求。
+    * **易用的API**：包含 `KronosPredictor` 类，支持从数据处理到预测的完整流程，简化了使用步骤。
+    * **批量预测**：支持对多个时间序列进行高效的并行预测。
+* **为何值得关注**: 这是**金融领域开创性的开源基础模型**，专门应对金融数据的高噪声特性。它被 **AAAI 2026** 会议接收，项目还提供了微调脚本和在线演示，这充分体现了其在量化分析领域的学术影响力和实际应用价值。
+
+**[View Repository / 查看仓库](https://github.com/shiyu-coder/Kronos)**
+
+### Harness Engineering - A Framework for Improving AI Agent Output Through Environmental Design
+* **What it does**: This repository provides a comprehensive field guide, anthology, and context bundle for "harness engineering" — the practice of shaping the environment (context, tools, and constraints) around a constant AI model or coding agent to dramatically improve its output quality and reliability for specific organizational tasks.
+* **Key features**: It offers a systems-level framework for encoding an organization's nonfunctional requirements (security, maintainability, reliability, etc.) into retrievable context, tools, and executable checks. The repository includes playbooks, a structured `AGENTS.md` file for task routing, and documentation on making organizational knowledge cumulative for agents.
+* **Why it's notable**: It addresses a critical "last-mile" gap: ensuring private, changing organizational process data (beyond general model training) is effectively supplied to AI agents. By making the repository itself a teaching tool for agents, it provides a practical methodology for deploying reliable, context-aware AI systems that respect authority and prove outcomes.
+
+### Harness Engineering - 通过环境设计提升 AI 智能体输出的框架
+* **功能介绍**: 本仓库是“约束工程（harness engineering）”的综合指南、文集和上下文包。该实践通过塑造固定AI模型或编码智能体周围的环境（上下文、工具和约束），来大幅提升其在完成特定组织任务时的输出质量和可靠性。
+* **主要特点**: 它提供了一种系统级框架，用于将组织的非功能性需求（安全性、可维护性、可靠性等）编码为可检索的上下文、工具和可执行检查。仓库包含操作手册、用于任务路由的结构化 `AGENTS.md` 文件，以及关于如何使组织知识对智能体累积传递的文档。
+* **为何值得关注**: 它解决了关键的“最后一公里”问题：确保超出通用模型训练范围的、私有且不断变化的组织流程数据被有效提供给AI智能体。通过让仓库本身成为智能体的教学工具，它为部署可靠的、具备上下文感知能力并尊重权限、能验证结果的AI系统提供了一套实用方法论。
+
+**[View Repository / 查看仓库](https://github.com/lopopolo/harness-engineering)**
+
+### OpenWorker - AI Coworker for Real Desktop Tasks
+*   **What it does**: An open-source AI assistant that runs locally on your desktop and delivers completed work (like documents, reports, and formatted replies) rather than just chat. It connects to your files, terminal, and apps (Slack, Jira, GitHub, etc.) to execute multi-step tasks.
+*   **Key features**: 
+    *   Produces finished deliverables (files, spreadsheets, web pages).
+    *   Integrates with 25+ tools and services via connectors and MCP.
+    *   Supports a wide range of AI providers (OpenAI, Anthropic, local via Ollama) with your own API keys.
+    *   Privacy-focused: runs locally with an approval-gate for consequential actions.
+    *   Includes scheduling/automation for recurring workflows.
+*   **Why it's notable**: It shifts the paradigm from conversational AI to an **AI "coworker"** that takes actionable steps on your machine. Its local-first design, tool integrations, and commitment to user control make it a powerful and flexible open-source productivity tool.
+
+### OpenWorker - 本地桌面AI助手
+*   **功能介绍**：一个开源的AI助手，直接在你的桌面本地运行，旨在交付**完成的工作成果**（如整理好的文档、带数据的Slack回复、更新的日程等），而不仅仅是对话。它能连接你的本地文件、终端和常用应用（Slack, Jira, GitHub等）来执行多步骤任务。
+*   **主要特点**：
+    *   直接生成可用的最终文件（文档、表格、报告）。
+    *   通过连接器和MCP集成25+种工具和服务。
+    *   支持多家主流AI服务商（OpenAI, Anthropic等），也可通过Ollama完全本地运行，用户自带API密钥。
+    *   注重隐私：本地运行，对敏感操作（如发送消息、执行命令）设有用户审批机制。
+    *   支持定时自动化任务，可用于常规工作流。
+*   **为何值得关注**：它代表了AI助手的演进方向，从“聊天机器人”变为能实际操作你电脑的**AI“协作同事”**。其本地优先、高度集成和以用户控制为核心的设计理念，使其成为一个强大、灵活且注重隐私的开源生产力工具。
+
+**[View Repository / 查看仓库](https://github.com/andrewyng/openworker)**
+
+### 🎬 How Photoroom Trained Themselves To Dream Bigger
+**Channel:** Y Combinator
+*   **What the video covers:** This is a talk from Startup School Paris where the founders of Photoroom discuss their journey through Y Combinator (YC). The core theme is how the YC program fundamentally changed their ambition and mindset as founders, pushing them to set much larger goals for their company.
+*   **Key topics discussed:** The transformation of founder ambition, the role of the YC environment and network in this shift, and the specific mental and strategic changes that enabled the team to "dream bigger" for their business.
+*   **Why it's worth watching:** It offers a firsthand, practical perspective from successful founders on the intangible but powerful impact of a startup accelerator. It’s an inspirational case study on scaling ambition, which is valuable for any entrepreneur considering an accelerator or working to elevate their company's potential.
+
+### 🎬 Photoroom 如何训练自己去梦想更大的未来
+**频道:** Y Combinator
+*   **视频内容概述:** 这是一场在Startup School Paris的演讲，Photoroom的创始人们分享了他们通过Y Combinator（YC）的历程。核心主题是YC项目如何从根本上改变了他们的抱负和心态，促使他们为公司设定更大的目标。
+*   **主要话题:** 创始人抱负的转变、YC的环境与人脉网络在其中的作用，以及团队为“梦想更大”所做出的具体心态和策略调整。
+*   **为何值得观看:** 它提供了成功创始人关于加速器无形但强大影响力的亲身、实用见解。这是一个关于如何提升抱负的励志案例研究，对于任何考虑加入加速器或致力于提升公司潜力的创业者来说都非常有价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=RgYCO87ghRY)**
+
+### 🎬 The Best Time to Build in Crypto
+**Channel:** Y Combinator
+*   **What the video covers:** This video from Y Combinator argues that a crypto bear market presents a unique and strategic opportunity for builders. It focuses on the divergence between volatile crypto markets and the steady, practical advancement of the underlying technology.
+*   **Key topics discussed:** The role of stablecoins in driving real-world utility, the shift from speculation to application development, and the strategic advantages of building during periods of low hype but high innovation.
+*   **Why it's worth watching:** It provides a contrarian, evidence-based perspective from a top-tier startup accelerator, emphasizing that foundational technological progress often accelerates during market downturns. Essential viewing for founders, developers, and investors looking beyond short-term price action.
+
+### 🎬 🎬 加密货币的最佳建设时机
+**频道:** Y Combinator
+*   **视频内容概述:** 本期来自 Y Combinator 的视频认为，加密货币的熊市期为构建者提供了独特的战略机遇。核心论点在于：加密货币市场的价格波动与底层技术的实用化进步之间存在显著分化。
+*   **主要话题:** 稳定币在推动实际应用中的作用、行业焦点从投机向应用开发的转移，以及在市场热度低但创新高的时期进行构建的战略优势。
+*   **为何值得观看:** 该视频来自顶尖的初创企业孵化器，提供了一种基于证据的逆向思维视角，强调了在市场低迷期，基础技术进步往往会加速。对于任何关注价格短期波动之外的创始人、开发者和投资者而言，这都是必看内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=M861XfrOR5s)**
+
+### 🎬 Why You'll Never See Anything Enter a Black Hole - Adam Brown
+**Channel:** Dwarkesh Patel
+*   What the video covers: A deep dive into the physics of black holes from an observer's perspective, explaining why objects appearing to cross the event horizon can never be seen doing so from the outside.
+*   Key topics discussed: The event horizon, gravitational time dilation, the infinite time dilation at the horizon, and the visual appearance of objects approaching a black hole.
+*   Why it's worth watching: It breaks down a complex and fascinating aspect of general relativity in an intuitive way, using clear explanations and likely visual aids to help viewers grasp why black holes are such profound cosmic paradoxes.
+
+### 🎬 你为什么永远看不到任何东西掉入黑洞 - Adam Brown
+**频道:** Dwarkesh Patel
+*   视频内容概述：从观察者视角深入探讨黑洞的物理学，解释为何从外部永远看不到物体穿越事件视界的景象。
+*   主要话题：事件视界、引力时间膨胀、在视界处的无限时间膨胀，以及物体接近黑洞时的视觉外观。
+*   为何值得观看：它以直观的方式拆解广义相对论中一个复杂而迷人的方面，通过清晰的讲解和可能的视觉辅助，帮助观众理解黑洞为何是宇宙中如此深刻的悖论。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WLEW4i9u8bk)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   This video provides an educational deep dive into the concept of session hijacking, a critical attack vector in web application security.
+*   Key topics include the mechanics of how browser sessions and session IDs function, common hijacking techniques (like cross-site scripting (XSS) or packet sniffing), and the potential consequences for users and applications.
+*   It's a must-watch for anyone looking to understand the fundamentals of web session security, offering clear explanations to raise cybersecurity awareness.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+*   本视频深入科普了“会话劫持”这一关键的Web应用攻击手段。
+*   主要话题涵盖了浏览器会话与会话ID的运作原理、常见的劫持技术（如跨站脚本攻击XSS或数据包嗅探）及其对用户和应用可能造成的严重后果。
+*   对于任何想了解Web会话安全基础知识的人来说，这是一次不容错过的观看，视频解释清晰，旨在提升大众的网络安全意识。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+* What the video covers
+  * The video explores the alarming discovery that ChatGPT (or a related AI model) may have accessed and revealed the creator's private photos that were not publicly shared online.
+* Key topics discussed
+  * The potential for AI models to scrape, store, and inadvertently expose personal data.
+  * Privacy and security risks associated with using AI services and cloud-based platforms.
+  * A guide on how individuals can check if their personal photos have been scraped and sourced online.
+* Why it's worth watching
+  * It provides a critical and timely investigation into AI data privacy, a major concern in the tech world. The creator's personal experience makes the threat concrete and actionable, offering viewers practical steps to audit their own digital footprint.
+
+### 🎬 Chat GPT revealed my hidden photos
+**频道:** TheCyborgGirl
+* 视频内容概述
+  * 本视频探讨了一个令人震惊的发现：ChatGPT（或相关AI模型）可能访问并暴露了创作者未在公开网络上分享的私人照片。
+* 主要话题
+  * AI模型抓取、存储并可能无意中泄露个人数据的潜力。
+  * 使用AI服务和云平台所带来的隐私与安全风险。
+  * 一份关于个人如何检查自己的私人照片是否已被网络抓取和来源的指南。
+* 为何值得观看
+  * 这是对AI数据隐私这一科技界重大关切的及时且关键的调查。创作者的个人经历使这一威胁变得具体且可操作，为观众提供了审视自己数字足迹的实用步骤。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
