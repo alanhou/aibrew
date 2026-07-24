@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 24, 2026"
 date: 2026-07-24
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -404,6 +404,181 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   视频内容讲述了创作者发现ChatGPT似乎能访问并提及她未公开分享的照片，这一发现引发了关于AI数据来源和个人隐私的严重担忧。
 *   主要话题探讨了大型语言模型可能访问或“幻觉”出私人数据的潜在方式，在线数据抓取的广泛问题，以及个人如何检查自己的照片是否在未经同意的情况下被抓取和使用。
 *   为何值得观看：因为它将一个重大的科技隐私问题个人化，从抽象辩论转向了真实案例。视频为担忧自身数字足迹和AI系统无形影响的观众提供了切实可行的见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
+
+### 98.css Summary
+* A CSS library for building interfaces that faithfully recreate Windows 98-style user interfaces.
+* Emphasizes semantic HTML and accessibility, requiring proper use of elements like `<button>` and labels.
+* Contains no JavaScript, making it framework-agnostic and easy to integrate with any frontend project.
+* Provides detailed components (e.g., buttons, checkboxes, sliders) with examples and guidelines for implementation.
+
+### 98.css 概述
+* 一个CSS库，用于构建忠实再现Windows 98风格用户界面的设计系统。
+* 强调语义化HTML和可访问性，需正确使用`<button>`和标签等元素。
+* 不包含JavaScript，因此与任何前端框架兼容，易于集成。
+* 提供详细的组件（如按钮、复选框、滑块），并附有实现示例和指南。
+
+**[Read Original / 阅读原文](https://jdan.github.io/98.css/#status-bar)**
+
+<!-- [Title-Only] -->
+### Writing by hand is good for your brain
+* This article likely discusses the cognitive and neurological benefits of writing by hand, possibly citing recent research. It probably explores how the physical act of forming letters engages the brain differently than typing, potentially improving memory, learning, and creativity.
+* This topic is interesting as it bridges neuroscience and everyday habits, offering practical insights for students, writers, and anyone looking to enhance their cognitive function in a digital age.
+
+### 手写对大脑有益
+* 根据标题推测，本文可能探讨手写对认知和神经系统带来的益处，或许引用了近期研究。文章可能分析手写字母的物理动作如何与打字产生不同的大脑参与度，从而可能提升记忆力、学习能力和创造力。
+* 这个话题之所以值得关注，是因为它连接了神经科学与日常习惯，为在数字时代寻求提升认知功能的学生、写作者及普通读者提供了实用见解。
+
+**[Read Original / 阅读原文](https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your)**
+
+### Visual 6502 JavaScript Simulator
+*   This is a browser-based simulator for the 6502 processor built using HTML5, requiring modern browsers and significant RAM.
+*   It includes keyboard controls ('z' to zoom in, 'x' to zoom out, 'n' to step) and mouse drag-to-pan functionality when zoomed in.
+*   The project is open-source on GitHub and links to related tools like an online assembler/emulator and a disassembler for further exploration.
+
+### Visual 6502 JavaScript 模拟器
+*   这是一个基于浏览器的6502处理器模拟器，使用HTML5技术构建，需要现代浏览器并占用大量内存。
+*   提供键盘控制（'z'放大，'x'缩小，'n'单步执行）和缩放状态下的鼠标拖拽平移功能。
+*   该项目在GitHub上开源，并链接到相关工具，如在线汇编器/模拟器和反汇编器，以便进行更深入的探索。
+
+**[Read Original / 阅读原文](http://visual6502.org/JSSim/index.html)**
+
+### block/buzz - A Hive Mind Communication Platform for Humans and AI Agents
+*   **What it does:** Buzz is a self-hostable, team workspace that unifies human and AI agent collaboration within a single environment. Built on the Nostr protocol, it treats all interactions—messages, code patches, workflow steps, and reviews—as signed events in one immutable log, creating a consistent audit trail for both people and AI.
+*   **Key features:** It offers a single source of truth combining chat, forges, and workflows. AI agents are first-class members with their own identities and scoped permissions, capable of performing tasks like triaging bugs, reviewing code, running workflows, and orchestrating other agents alongside human teammates. Key components include a desktop app (Tauri + React), a CLI for agents (`buzz-cli`), Git integration (NIP-34), and YAML-based workflows.
+*   **Why it's notable:** It trends by proposing a radical simplification of the development toolchain—merging collaboration, version control, and automation into one cohesive system where agents are integrated partners, not external bots. The rapid star growth (2,162 stars in a day) signals strong interest in its vision for human-AI team sovereignty and its implementation on a decentralized protocol.
+
+### block/buzz - 面向人类与AI智能体的蜂巢思维沟通平台
+*   **功能介绍：** Buzz 是一个可自托管的团队工作空间，旨在将人类与AI智能体的协作统一到单一环境中。它基于 Nostr 协议构建，将所有交互——包括消息、代码补丁、工作流步骤和代码评审——都视为一个不可变日志中的签名事件，从而为人类和AI创建了一致、可审计的跟踪记录。
+*   **主要特点：** 它提供了一个结合了聊天、代码托管和自动化工作流的“单一事实来源”。AI智能体是平台的一等公民成员，拥有独立的身份标识和权限范围，能够与人类队友并肩完成分诊缺陷、评审代码、运行工作流以及编排其他智能体等任务。核心组件包括桌面应用（Tauri + React）、智能体专用命令行工具 (`buzz-cli`)、Git 集成 (NIP-34) 和基于 YAML 的工作流。
+*   **为何值得关注：** 该项目因其对开发工具链的激进简化愿景而受到关注——它将协作、版本控制和自动化融合为一个内聚的系统，其中智能体是深度集成的伙伴，而非外部机器人。其惊人的星标增长速度（单日获2162星）表明社区对其实现人类-AI团队主权和基于去中心化协议的架构抱有浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### World Monitor - Real-time Global Intelligence Dashboard
+* **What it does**: Provides a unified situational awareness interface that aggregates real-time news, monitors geopolitical events, and tracks infrastructure globally. It synthesizes data from 500+ curated sources into AI-generated briefs and presents it via advanced visualization tools like a dual 3D/WebGL map engine.
+* **Key features**:
+    * AI-powered aggregation across 15 news categories and 25 languages.
+    * Country Instability Index (CII) scoring for 31 Tier-1 countries.
+    * Cross-stream correlation analysis (military, economic, disasters).
+    * Integrated finance radar with market composites.
+    * Full local AI support via Ollama; no API keys required for core features.
+    * Multi-platform: web app, native desktop (Tauri), CLI, and SDKs (Python, Ruby, Go).
+    * Six distinct site variants (World, Tech, Finance, etc.) from a single codebase.
+* **Why it's notable**: It has gained significant traction (3,175 stars in one day) by offering a comprehensive, AI-driven "panopticon" for global events. Its combination of deep analytical features (like CII), multi-platform accessibility, and local-first AI makes it a powerful tool for analysts, developers, and researchers interested in real-time global dynamics.
+
+### World Monitor - 实时全球情报仪表板
+* **功能介绍**: 提供一个统一的态势感知界面，聚合全球实时新闻、监控地缘政治事件并追踪基础设施状况。它将来自500多个精选数据源的信息合成为AI生成的简报，并通过先进的可视化工具（如双3D/WebGL地图引擎）进行展示。
+* **主要特点**:
+    * AI驱动的15类新闻聚合，支持25种语言。
+    * 针对31个一级国家的“国家不稳定指数 (CII)”评分系统。
+    * 跨领域关联分析（军事、经济、灾害等）。
+    * 集成金融雷达，提供市场综合指标。
+    * 通过Ollama完全支持本地AI运行；核心功能无需API密钥。
+    * 多平台支持：Web应用、原生桌面端(Tauri)、CLI命令行工具及SDK (Python, Ruby, Go)。
+    * 从单一代码库构建六种不同的站点变体（世界、科技、金融等）。
+*   **为何值得关注**: 该项目单日收获了大量星标(3,175)，显示其极高热度。它通过强大的AI功能、深度的分析工具（如CII指数）、跨平台的可访问性以及本地优先的AI集成，为分析人员、开发者和研究人员提供了一个观察全球实时动态的强大工具，在同类产品中显得尤为突出。
+
+**[View Repository / 查看仓库](https://github.com/koala73/worldmonitor)**
+
+### Kronos - A Foundation Model for the Language of Financial Markets
+* **What it does**: Kronos is the first open-source foundation model specifically designed for financial candlestick (K-line) data. It uses a novel two-stage framework: a tokenizer quantizes multi-dimensional K-line data into hierarchical discrete tokens, and a large autoregressive Transformer is pre-trained on these tokens for unified forecasting.
+* **Key features**:
+    * **Specialized Architecture**: Built for the high-noise characteristics of financial data, not just general time-series forecasting.
+    * **Pre-trained on Global Data**: Trained on data from over 45 global exchanges, providing a robust foundation.
+    * **Open Model Family**: Offers multiple pre-trained model sizes (Mini to Large) on Hugging Face Hub, along with its tokenizers.
+    * **User-friendly API**: Provides a simple `KronosPredictor` class for quick forecasting and batch processing.
+* **Why it's notable**: It's a pioneering open-source foundation model in the financial domain, acknowledged by its acceptance at AAAI 2026. It provides a complete, accessible toolkit (models, tokenizer, predictor, demo) to lower the barrier for applying advanced AI to financial time-series analysis.
+
+### Kronos - 面向金融市场语言的基础模型
+* **功能介绍**：Kronos是首个专门针对金融K线（蜡烛图）数据的开源基础模型。它采用创新的两阶段框架：一个标记器将多维K线数据量化为分层离散标记，然后一个大型自回归Transformer在这些标记上进行预训练，以实现统一的预测。
+* **主要特点**：
+    * **专用架构**：为金融数据的高噪声特性设计，而非通用时序预测。
+    * **全球化数据预训练**：在全球超过45个交易所的数据上进行训练，奠定了坚实的基础。
+    * **开源模型家族**：在Hugging Face Hub上提供多种预训练模型规模（Mini到Large）及其标记器。
+    * **易用API**：提供简洁的`KronosPredictor`类，支持快速预测和批量处理。
+* **为何值得关注**：它是金融领域开创性的开源基础模型，已被AAAI 2026顶会接收。它提供了一套完整的、易于获取的工具链（模型、标记器、预测器、在线演示），降低了将先进AI应用于金融时序分析的门槛。
+
+**[View Repository / 查看仓库](https://github.com/shiyu-coder/Kronos)**
+
+### 🎬 The Best Time to Build in Crypto
+**Channel:** Y Combinator
+*   What the video covers: The strategic opportunity to build crypto projects during the current bear market. It argues that while prices are down, the core technology's utility and adoption are at an all-time high.
+*   Key topics discussed: The counterintuitive advantage of building in a down market, the growth of stablecoins, increasing real-world use cases for blockchain, and a focus on infrastructure over speculation.
+*   Why it's worth watching: It provides a powerful, contrarian perspective from a top-tier tech accelerator. It's essential viewing for founders, investors, or anyone interested in the next wave of innovation in crypto, separating short-term price noise from long-term technological progress.
+
+### 🎬 加密货币领域的最佳建设时机
+**频道:** Y Combinator
+*   视频内容概述：探讨了在当前的加密货币熊市中建设项目的战略机遇。视频认为，尽管市场价格下跌，但底层技术的实用性和采用率却达到了历史高点。
+*   主要话题：在熊市中建设的反直觉优势、稳定币的增长、区块链日益增多的实际应用场景，以及对基础设施而非投机的关注。
+*   为何值得观看：它从顶级科技孵化器的角度，提供了一种强有力的逆向思维视角。对于创始人、投资者或任何对加密货币领域下一波创新感兴趣的人来说，这都是必看内容，有助于区分短期的价格噪音与长期的技术进步。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=M861XfrOR5s)**
+
+### 🎬 Why You'll Never See Anything Enter a Black Hole - Adam Brown
+**Channel:** Dwarkesh Patel
+*   What the video covers
+    *   This video is an interview discussing a famous and counterintuitive consequence of Einstein's theory of general relativity: from the perspective of a distant observer, no object ever appears to cross a black hole's event horizon.
+*   Key topics discussed
+    *   The concept of the event horizon and gravitational time dilation.
+    *   How an infalling object's signals (light) become infinitely redshifted and stretched out over time, making it fade away rather than show a clear "entry."
+    *   The perspective of the infalling observer versus the distant observer.
+*   Why it's worth watching
+    *   It provides a clear, expert-led explanation of a profound puzzle in astrophysics that challenges our everyday intuition about time and space. It's an excellent resource for understanding a core prediction of general relativity.
+
+### 🎬 为什么你永远看不到任何东西进入黑洞 - Adam Brown
+**频道:** Dwarkesh Patel
+*   视频内容概述
+    *   本视频是一次访谈，讨论了爱因斯坦广义相对论中一个著名且违反直觉的推论：从远处观察者的角度来看，没有任何物体能够真正穿过黑洞的事件视界。
+*   主要话题
+    *   事件视界与引力时间膨胀的概念。
+    *   下落物体发出的信号（光）如何发生无限红移和时间拉伸，导致其逐渐消失，而非呈现出清晰的“进入”过程。
+    *   下落观察者与远处观察者的视角差异。
+*   为何值得观看
+    *   它通过专家的讲解，清晰地阐释了天体物理学中一个深刻的谜题，挑战了我们对时间和空间的日常直觉。这是理解广义相对论核心预测的绝佳资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WLEW4i9u8bk)**
+
+### 🎬 AI for the Aging Population
+**Channel:** Y Combinator
+* This video explores the urgent demographic challenge of a rapidly aging population and the critical shortage of human caregivers. It presents artificial intelligence as a potential "force multiplier" to help address this crisis.
+* Key topics discussed include the scale of the coming "silver tsunami," the limitations of the current caregiving workforce, and specific applications of AI (like monitoring, assistance, and companionship) to support independent living and alleviate caregiver burden.
+* It's worth watching for a clear, data-driven overview of a pressing social issue and a concise look at how emerging technology might provide scalable solutions, framed from an innovation and startup perspective.
+
+### 🎬 人工智能助力老龄化社会
+**频道:** Y Combinator
+* 本视频探讨了人口迅速老龄化带来的紧迫挑战以及护理人员严重短缺的问题，并提出人工智能可作为应对该危机的“力量倍增器”。
+* 讨论的主要话题包括即将到来的“银发海啸”的规模、当前护理工作队伍的局限性，以及人工智能在支持独立生活和减轻护理人员负担方面的具体应用（如监控、辅助和陪伴）。
+* 值得观看的原因在于，它从创新和创业的视角，对这一严峻的社会问题提供了基于数据的清晰概述，并简明地展示了新兴技术如何可能提供可扩展的解决方案。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WUDIBATKh4Y)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+* This video provides a clear, foundational explanation of web session hijacking, a common cybersecurity attack. It breaks down the technical process of how browsers and websites manage sessions (like login states) using session IDs and cookies.
+* Key topics covered include: the lifecycle of a web session, how session cookies work, the various methods attackers use to hijack sessions (such as sidejacking, cross-site scripting, and man-in-the-middle attacks), and the associated risks.
+* It's worth watching for a solid cybersecurity awareness overview. The content is presented in an accessible way, making complex concepts understandable for beginners while still offering valuable insights for those looking to strengthen their knowledge of web security principles.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+* 本视频清晰地讲解了网络安全中一个常见的攻击方式——Web会话劫持。它详细阐述了浏览器和网站如何通过会话ID和Cookie来管理会话（例如登录状态）的技术流程。
+* 主要话题包括：Web会话的生命周期、会话Cookie的工作原理、攻击者劫持会话的多种方法（如侧信道攻击、跨站脚本攻击、中间人攻击），以及相关的安全风险。
+* 本视频对于建立网络安全意识非常有价值。其内容以易于理解的方式呈现，让初学者能掌握复杂概念，同时也为希望巩固Web安全原则知识的观众提供了有价值的见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 Chat GPT revealed my hidden photos
+**Channel:** TheCyborgGirl
+* The video explores a personal discovery where ChatGPT surfaced photos from the creator's past that were not publicly posted or easily accessible.
+* Key topics include AI's ability to cross-reference data, the unsettling implications for digital privacy, and a tutorial/resource (linked in the description) on checking if your photos have been scraped online.
+* It's worth watching for its firsthand, relatable account of AI's unexpected power and for the practical tools provided to assess your own online exposure.
+
+### 🎬 Chat GPT revealed my hidden photos
+**频道:** TheCyborgGirl
+* 视频探讨了创作者发现ChatGPT从其过去中挖掘出未曾公开或不易获取的照片的亲身经历。
+* 主要话题包括AI的交叉数据参照能力、其对数字隐私的令人不安的启示，以及一个教程/资源（链接在描述中）用于检查你的照片是否已被网络爬取。
+* 值得观看的原因在于它提供了关于AI意外能力的第一手且易产生共鸣的叙述，并提供了评估个人在线曝光度的实用工具。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
