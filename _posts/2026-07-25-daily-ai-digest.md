@@ -245,3 +245,193 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=SqW03aaigPI)**
 
+### Android May Soon Restrict On-Device ADB, Affecting Shizuku, libadb and Developers
+*   **Early Warning:** Based on a Google IssueTracker feature request (not an official announcement), a core ADB maintainer proposed restricting on-device ADB connections to only the `wlan0` (Wi-Fi) interface for security reasons.
+*   **Developer Impact:** This change would break legitimate on-device ADB use cases, including tools like Shizuku and libadb, as well as ADB over VPN or Ethernet. Developers use this method to run ADB commands directly on a device without a computer.
+*   **Call to Action:** Developers with unique, constructive use cases are encouraged to provide detailed feedback on the issue tracker. Others can show support via the "+1" button without spamming.
+*   **Technical Context:** On-device ADB uses loopback connections (`127.0.0.1`), enabling apps to run with elevated privileges. The article argues this isn't easily exploited by malicious apps due to required user actions and permissions.
+
+### 安卓或将限制设备端ADB，影响Shizuku、libadb及开发者
+*   **早期预警：** 基于谷歌问题跟踪器的一个功能请求（非官方公告），一位核心ADB维护者出于安全原因，提议将设备端ADB连接仅限制在`wlan0`（Wi-Fi）接口上。
+*   **开发者影响：** 此变更将破坏包括Shizuku和libadb工具在内的合法设备端ADB使用场景，也会影响通过VPN或以太网的ADB连接。开发者使用此方法无需电脑即可直接在设备上执行ADB命令。
+*   **行动呼吁：** 鼓励拥有独特、建设性用例的开发者在问题跟踪器上提供详细反馈。其他人可以通过点击“+1”按钮表示支持，而无需刷屏。
+*   **技术背景：** 设备端ADB使用回环连接（`127.0.0.1`），使应用能以提升的权限运行。文章认为，由于需要用户操作和权限，恶意应用其实很难轻易利用此方式。
+
+**[Read Original / 阅读原文](https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/)**
+
+### Hannah Fry Awarded Leelavati Prize for Public Mathematics Outreach
+*   Professor Hannah Fry of Cambridge's Department of Applied Mathematics and Theoretical Physics (DAMTP) has received the prestigious Leelavati Prize from the International Congress of Mathematicians (ICM).
+*   The prize recognizes her outstanding contributions to increasing public awareness of mathematics through creative and engaging media, including books, TV series, podcasts, and a massive social media following.
+*   She is celebrated as a global ambassador for mathematical thinking, uniquely translating complex concepts into a "language of wonder and relevance" for the public.
+*   Fry's work is driven by a passion to share the "absolute joy" and "secrets" of mathematics, aiming to create motivation and curiosity rather than just presenting information.
+
+### 汉娜·弗莱教授因促进数学公众理解获Leelavati奖
+*   剑桥大学应用数学与理论物理系教授汉娜·弗莱在国际数学家大会上荣获著名的Leelavati奖。
+*   该奖项表彰她通过富有创造力和吸引力的媒介（包括书籍、电视节目、播客和庞大的社交媒体粉丝群）在提高公众数学意识方面所做出的杰出贡献。
+*   她被誉为数学思维的全球大使，能够以“充满惊奇且贴合实际的语言”将复杂的数学概念有效地传达给公众。
+*   弗莱教授致力于分享数学的“绝对乐趣”和奥秘，她的核心目标是激发公众的兴趣与好奇心，而不仅仅是传授知识。
+
+**[Read Original / 阅读原文](https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize)**
+
+### Apartment Aquaponics System Guide
+*   A comprehensive practical guide for setting up and maintaining a small-scale aquaponics system in a New York City apartment, based on lessons learned over two years.
+*   Details a vertical, media-based continuous-flow design optimized for limited space, utilizing a 20-gallon fish tank and a grow-bed of clay pebbles.
+*   Highlights key improvements made after initial setup, including enhanced drainage, a better pump, and strategic placement of the grow light.
+*   Shares crucial lessons learned about tank cycling, the risks of small tanks, choosing resilient aquatic life, and the importance of avoiding overfeeding.
+
+### 公寓水培系统指南
+*   这是一份基于两年实践经验的综合性实用指南，旨在帮助读者在纽约市的公寓等有限空间内建立和维护小型水培系统。
+*   详细介绍了一种为节省空间而优化的垂直式、介质基连续流系统设计，包含一个20加仑的鱼缸和一个填充了黏土砾的种植床。
+*   重点介绍了在初始安装后进行的关键改进，包括增强排水系统、更换更合适的水泵以及优化种植灯的位置。
+*   分享了关于建立硝化循环、小鱼缸的风险、选择适应性强的水生生物以及避免过度喂食等重要经验教训。
+
+**[Read Original / 阅读原文](https://erinmurphy.dev/projects/project-2/)**
+
+### Pumpkin - A High-Performance Minecraft Server Written in Rust
+* **What it does**: Pumpkin is a Minecraft server implementation built entirely in Rust. It aims to provide a fast, efficient, and customizable server experience for hosting Minecraft games, prioritizing performance and strict adherence to vanilla game mechanics.
+* **Key features**:
+    * **Performance**: Leverages Rust's capabilities and multi-threading for maximum speed and efficiency.
+    * **Cross-Platform Support**: Works with both Java and Bedrock editions of Minecraft.
+    * **Comprehensive Mechanics**: Implements a wide range of vanilla features including world loading, chunk management, player actions (inventory, combat, experience), entity handling, and server administration tools like RCON and permissions.
+    * **Flexibility**: Highly configurable via TOML files, with the ability to enable/disable features. It also supports proxy setups like Bungeecord and Velocity.
+    * **Extensibility**: Designed as a foundation for future plugin development.
+* **Why it's notable**: It represents a modern, high-performance alternative to traditional Java-based Minecraft servers. Its use of Rust promises superior speed and memory safety. The project is actively trending, indicating strong community interest, and is in active development towards a stable 1.0.0 release with an ambitious feature set aiming for full compatibility with the latest game versions.
+
+### Pumpkin - 使用 Rust 语言构建的高性能 Minecraft 服务器
+* **功能介绍**: Pumpkin 是一个完全使用 Rust 语言重写的 Minecraft 服务器。它旨在为玩家提供一个快速、高效且高度可定制的服务器托管体验，核心目标是追求极致性能并严格遵循原版游戏机制。
+* **主要特点**:
+    * **高性能**: 充分利用 Rust 语言的优势和多线程技术，以实现最佳的速度与效率。
+    * **跨平台支持**: 同时支持 Minecraft Java 版和基岩版。
+    * **丰富的原版机制**: 实现了大量游戏功能，包括世界加载、区块管理、玩家操作（如物品栏、战斗、经验值）、实体处理，以及 RCON、权限系统等服务器管理工具。
+    * **灵活配置**: 支持通过 TOML 文件进行深度配置，可按需启用或禁用功能。同时支持 BungeeCord 和 Velocity 等代理方案。
+    * **可扩展性**: 为未来的插件开发提供了基础架构。
+* **为何值得关注**: 该服务器是使用传统 Java 技术栈的 Minecraft 服务器的一个现代化、高性能替代方案。Rust 语言的采用承诺了卓越的速度和内存安全性。该项目当前热度很高，表明其受到了社区的广泛关注，且正处于活跃开发阶段，正朝着兼容最新游戏版本、功能完备的 1.0.0 稳定版迈进。
+
+**[View Repository / 查看仓库](https://github.com/Pumpkin-MC/Pumpkin)**
+
+### Kronos - A Foundation Model for the Language of Financial Markets
+*   **What it does:** Kronos is an open-source foundation model designed to understand the "language" of financial markets—specifically, K-line (candlestick) time series data. It pre-processes and learns from high-dimensional, noisy market data to perform unified quantitative forecasting.
+*   **Key features:**
+    *   **First-of-its-kind:** The first open-source foundation model trained specifically on financial candlestick data from over 45 global exchanges.
+    *   **Two-stage framework:** Uses a specialized tokenizer to convert continuous K-line data (OHLCV) into hierarchical discrete tokens, followed by pre-training a large autoregressive Transformer on this sequence.
+    *   **Diverse Model Zoo:** Provides a family of pre-trained models (Kronos-mini, small, base) with different parameter scales (4.1M to 102.3M) and context lengths, all accessible via Hugging Face.
+    *   **Easy Deployment:** Includes a simple `KronosPredictor` API for quick inference and a `predict_batch` method for efficient parallel forecasting on multiple time series.
+*   **Why it's notable:** It addresses the unique challenges of financial time series (high noise, non-stationarity) with a purpose-built architecture rather than general-purpose models. Its recent acceptance at AAAI 2026 and rapid star gain (499 stars in one day) highlight its significance in the AI for Finance community.
+
+### Kronos - 面向金融市场语言的基础模型
+*   **功能介绍：** Kronos是一个开源基础模型，旨在理解金融市场的“语言”——即K线（蜡烛图）时间序列数据。它通过对高维、高噪声的市场数据进行预处理和学习，来执行统一的量化预测任务。
+*   **主要特点：**
+    *   **开创性项目：** 首个专门基于全球45个以上交易所K线数据训练的开源基础模型。
+    *   **两阶段框架：** 采用专用分词器将连续的K线数据（开高低收量等）量化为层次化的离散标记，随后在自回归Transformer上对这些序列进行预训练。
+    *   **多样化的模型库：** 提供一系列预训练模型（Kronos-mini, small, base），具有不同的参数规模（4.1M到102.3M）和上下文长度，均可通过Hugging Face Hub获取。
+    *   **部署简便：** 提供了简单的 `KronosPredictor` API 用于快速推理，以及 `predict_batch` 方法，可高效并行地对多个时间序列进行预测。
+*   **为何值得关注：** 它通过专为金融时间序列设计的架构来解决该领域的独特挑战（高噪声、非平稳性），而非使用通用模型。其论文被AAAI 2026接收以及一天内获得499颗星的成绩，凸显了它在“AI+金融”领域的重要性。
+
+**[View Repository / 查看仓库](https://github.com/shiyu-coder/Kronos)**
+
+### thinking-orbs - Dotted thought-orb loading indicators for AI & agent UIs
+* **What it does**: Provides a React component (`<ThinkingOrb>`) that renders animated, dotted orb indicators to visually represent the activity state of an AI or agent (e.g., searching, solving, listening).
+* **Key features**: Features six hand-tuned animation states, two purpose-built sizes (for avatars and inline use), strict monochrome theming with automatic dark/light mode detection, and uses only plain 2D Canvas for maximum compatibility and performance.
+* **Why it's notable**: It is a lightweight, high-performance, and accessible solution specifically designed for modern AI interfaces. Its thoughtful details—like pausing offscreen, respecting `prefers-reduced-motion`, and broad browser support (Chrome, Safari, Firefox)—make it a robust and user-friendly choice for adding clear status feedback in agent UIs.
+
+### thinking-orbs - 用于AI与智能体界面的点状思维球加载指示器
+* **功能介绍**：提供一个 React 组件（`<ThinkingOrb>`），用于渲染动画化的点状球体指示器，直观地表示 AI 或智能体的活动状态（例如：搜索、解决、倾听）。
+* **主要特点**：包含六种精细调校的动画状态，两种专为不同场景（头像、内联文本）设计的尺寸，严格的单色主题并支持自动深色/浅色模式检测，且完全使用纯 2D Canvas 渲染，以确保极佳的兼容性和性能。
+* **为何值得关注**：这是一个专为现代 AI 界面设计的轻量级、高性能且注重可访问性的解决方案。其精细的考量——如自动暂停不在屏幕内的动画、遵循 `prefers-reduced-motion` 减弱动效设置、以及广泛的浏览器兼容性（Chrome、Safari、Firefox）——使其成为在智能体用户界面中添加清晰状态反馈的健壮且用户友好的选择。
+
+**[View Repository / 查看仓库](https://github.com/Jakubantalik/thinking-orbs)**
+
+### Nativ - 本地化 macOS AI 工作台
+*   **功能介绍**：Nativ 是一款专为 Apple Silicon Mac 设计的原生应用程序，它将运行、管理、与本地 AI 模型交互的所有流程整合到一个界面中。用户可以通过它与本地模型聊天、将其作为本地 API 服务器使用、管理模型库以及监控性能。
+*   **主要特点**：
+    *   **一体化工作台**：集成了聊天界面、模型库、性能仪表盘和本地 API 服务器功能。
+    *   **深度本地化**：模型完全在用户的 Mac 上运行，保护数据隐私，无需将数据发送至云端。
+    *   **强大兼容性**：提供与 OpenAI 和 Anthropic 兼容的 API 端点，可无缝对接现有工具；支持集成 Codex、Claude Code 等编程辅助工具。
+    *   **原生与高性能**：基于 SwiftUI 构建，充分利用 Apple Silicon 性能，并通过 MLX 框架进行优化推理。
+    *   **丰富的控制选项**：提供从采样参数到 KV-cache 量化等高级推理控制，并在菜单栏提供便捷的操作入口。
+*   **为何值得关注**：Nativ 解决了普通用户在本地运行和管理 AI 模型门槛高、流程分散的痛点。它将复杂的底层技术（如 MLX 服务器）封装在一个优雅、易用的原生 Mac 应用中，让隐私优先的本地 AI 体验变得触手可及。其全面的功能集和作为本地 API 网关的潜力，使其成为 Apple Silicon 用户探索本地 AI 的强大工具。
+
+### Nativ - 面向 Mac 的一体化本地 AI 工作台
+*   **功能介绍**：Nativ 是一款专为搭载 Apple Silicon 芯片的 Mac 设计的原生应用程序，集本地 AI 模型聊天、服务、监控与管理于一体。它是一个私密的聊天工具、模型管理器、性能监控仪表盘，也是一个兼容主流格式的本地推理服务器。
+*   **主要特点**：
+    *   **功能全面**：提供带流式输出和图片附件的聊天、模型发现与下载、详细的性能分析、兼容 OpenAI/Anthropic 的本地 API、以及多种编程工具集成。
+    *   **原生体验**：使用 SwiftUI 构建，深度集成 macOS 系统，具备菜单栏控制、应用内更新等特性，提供流畅的原生操作体验。
+    *   **本地优先**：所有推理均在本地 Mac 上完成，保障数据隐私安全。模型管理器能智能适配用户的 Hugging Face 缓存和内存。
+    *   **开发者友好**：提供可配置的本地 API 服务器、运行日志查看、详细的度量指标端点以及完整的项目构建流程。
+    *   **高度可控**：支持对采样、思考预算、结构化输出等高级推理参数进行细致调优。
+*   **为何值得关注**：该项目将运行本地 AI 所需的多个复杂环节（如服务器管理、模型下载、API 封装）整合进一个美观易用的原生应用，极大降低了使用门槛。它不仅是一个聊天客户端，更是一个强大的本地 AI 开发和运维平台，特别适合注重隐私、希望利用 Apple Silicon 性能进行本地 AI 实验和开发的用户。其清晰的架构和活跃的开发（有“即将推出”的功能）使其成为一个值得关注的项目。
+
+**[View Repository / 查看仓库](https://github.com/Blaizzy/nativ)**
+
+### 🎬 If Code Works Don't Touch It !! #coding #programming #python #shorts
+**Channel:** Aziz Codex
+*   This is a humorous programming short video, likely depicting a common scenario where a developer is tempted to refactor or modify code that is already functioning, despite the well-known principle of "if it works, don't touch it."
+*   Key topics include coding practices, the humor in over-engineering, and the relatable struggle between code perfectionism and pragmatic results.
+*   It's worth watching for a quick, relatable laugh that many programmers and developers will find familiar and entertaining. It serves as a light reminder of a common industry saying.
+
+### 🎬 如果代码能用就别动它！！ #编程 #代码 #Python #Shorts
+**频道:** Aziz Codex
+*   这是一个幽默的编程短片视频，很可能描绘了一个常见场景：程序员忍不住想要重构或修改一段已经能正常工作的代码，尽管业内广为流传着“能用就别动”的原则。
+*   主要话题包括编程习惯、过度工程化的幽默，以及程序员在追求代码完美与追求实用结果之间那种令人共鸣的挣扎。
+*   值得观看，因为它能为许多程序员和开发者带来快速、会心一笑的共鸣时刻，是对一个常见行业俗语的轻松提醒。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2xZJk8Vaxvk)**
+
+### 🎬 🛑 No escondas así tus archivos
+**Channel:** SCPC Informática
+* This video debunks a popular but flawed Windows "trick" for hiding files. It explains why creating a folder with a blank name (using ALT + 255) and a transparent icon is an insecure and easily reversible method.
+* Key topics discussed include the specific keystroke trick (ALT + 255), the use of transparent icons, and why these methods provide no real security and can be easily discovered by anyone with basic computer knowledge.
+* It's worth watching to understand a common but ineffective security practice and to avoid being misled into thinking your files are safely hidden using this simplistic method.
+
+### 🎬 🛑 No escondas así tus archivos
+**频道:** SCPC Informática
+* 视频内容概述：本视频揭露了Windows系统中一个流行但无效的文件“隐藏”技巧。它解释了为何通过使用ALT + 255创建空白文件夹名并搭配透明图标，这种方法既不安全又容易被撤销。
+* 主要话题：讨论了特定的按键技巧（ALT + 255）、透明图标的使用，以及为何这些方法无法提供真正的安全保护，任何具备基本计算机知识的人都能轻易发现这些文件。
+* 为何值得观看：帮助你了解一种常见但低效的安全实践，避免被误导，误以为使用这种简单方法就能安全地隐藏文件。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1a69pHBA6tE)**
+
+### 🎬 OmniRoute + OpenCode is INSANE (Why I Dropped Claude Code)
+**Channel:** Cloud Codes
+*   What the video covers
+    The video critically examines the practical limitations of using Anthropic's Claude Code, particularly its aggressive 5-hour rate limits, and presents a compelling alternative. It introduces the **OmniRoute** API router/proxy and the **OpenCode** AI coding assistant as a powerful, cost-effective, and flexible combination that outperforms the closed-source Claude Code for many developers.
+*   Key topics discussed
+    *   **The Problem:** The frustrations and workflow disruptions caused by Claude Code's rate limiting and subscription costs.
+    *   **The Solution Stack:**
+        *   **OmniRoute:** A tool that acts as a central hub to manage and route requests to various LLM APIs (like OpenAI, Anthropic, and local models).
+        *   **OpenCode:** An open-source, terminal-based AI coding assistant designed to be extensible and provider-agnostic.
+    *   **Performance & Cost:** Demonstrations showing the combined stack's impressive speed, capability, and the potential for significant cost savings by optimizing model usage and avoiding vendor lock-in.
+    *   **Flexibility & Control:** The advantage of an open-source ecosystem, allowing for customization, use of local models, and freedom from a single provider's constraints.
+*   Why it's worth watching
+    It's essential viewing for any developer feeling constrained by mainstream AI coding tools. It provides a practical, hands-on guide to building a more powerful, affordable, and autonomous developer workflow using leading open-source technologies. You'll learn about tools that put you back in control of your coding assistant experience.
+
+### 🎬 OmniRoute + OpenCode 封神之路（为何我弃用 Claude Code）
+**频道:** Cloud Codes
+*   视频内容概述
+    本视频深入剖析了使用 Anthropic 公司 Claude Code 的实际痛点，尤其是其严格的5小时速率限制，并推荐了一个极具吸引力的替代方案。视频重点介绍了 **OmniRoute**（一个API路由/代理）和 **OpenCode**（一个AI编码助手）的组合，论证了这套方案在性能、成本和灵活性上如何超越闭源的 Claude Code。
+*   主要话题
+    *   **核心问题：** 开发者在使用 Claude Code 时因速率限制和订阅费用导致的挫折感与工作流中断。
+    *   **解决方案组合：**
+        *   **OmniRoute：** 一个作为中心枢纽的工具，用于管理和路由到不同大语言模型API（如OpenAI、Anthropic及本地模型）的请求。
+        *   **OpenCode：** 一个开源的、基于终端的AI编码助手，设计上具有高度可扩展性和提供商无关性。
+    *   **性能与成本：** 通过演示展示该组合方案惊人的速度、能力，以及通过优化模型使用和避免厂商锁定所带来的显著的成本节约潜力。
+    *   **灵活性与控制力：** 开源生态系统的优势，允许定制化、使用本地模型，并摆脱单一提供商的限制。
+*   为何值得观看
+    对于任何受主流AI编码工具所限的开发者而言，这是必看的内容。它提供了一份实践指南，教你如何利用领先的开源技术，构建更强大、更经济、更自主的开发者工作流。你将了解如何重新夺回对编码助手体验的控制权。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=AQm1ig0GrP4)**
+
+### 🎬 (Pt 2) "Cadillac Expert"...has NO CLUE!! ('17 CTS: Key Fob Programming FIASCO)
+**Channel:** Pine Hollow Auto Diagnostics
+*   **What the video covers:** This is Part 2 of a diagnostic saga. After fixing a complex network fault in a 2017 Cadillac CTS, the technician tackles the customer's second request: programming a new key fob. The process reveals a series of confusing and frustrating failures with the dealership's procedure.
+*   **Key topics discussed:** Cadillac key fob programming, diagnosing and resolving CAN network communication faults, the limitations of OEM "expert" procedures, real-world automotive electrical troubleshooting, and the importance of understanding system fundamentals.
+*   **Why it's worth watching:** It’s a compelling, real-world case study that goes beyond a simple "how-to." It demonstrates advanced diagnostic logic, highlights the gap between theoretical service information and practical reality, and teaches viewers how to persistently troubleshoot when standard procedures fail.
+
+### 🎬 (Pt 2) "凯迪拉克专家"...竟是一无所知!! ('17款 CTS: 钥匙编程大乱斗)
+**频道:** Pine Hollow Auto Diagnostics
+*   **视频内容概述:** 这是诊断传奇的第二部分。在修复了一辆2017款凯迪拉克CTS极其复杂的网络故障后，技术人员开始处理客户的第二个要求：编程一把新钥匙。整个过程暴露了经销商提供的编程程序中一系列令人困惑和沮丧的失败。
+*   **主要话题:** 凯迪拉克钥匙编程、诊断和解决CAN网络通信故障、OEM“专家”程序的局限性、现实世界中的汽车电气系统故障排查、以及理解系统基础知识的重要性。
+*   **为何值得观看:** 这是一部引人入胜的真实案例研究，超越了简单的“操作指南”。它展示了高级诊断逻辑，突出了理论服务信息与实际现实之间的差距，并教会观众当标准程序失败时如何进行坚持不懈的故障排查。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=IOEVfZqMcb8)**
+
