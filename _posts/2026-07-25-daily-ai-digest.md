@@ -435,3 +435,153 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=IOEVfZqMcb8)**
 
+### Building a 3D Renderer for Playdate
+*   **Initial Testing with Raycaster**: The author began by writing a simple raycaster to benchmark the Playdate's performance for float math, memory operations, and screen drawing. The initial results were poor, setting realistic expectations.
+*   **Hardware Limitations & Strategy**: The Playdate lacks dedicated 3D hardware (GPU), so all rendering is CPU-bound. The goal was not to match 3D accelerator hardware but to achieve a visual feel similar to the 3DO/Sega Saturn era.
+*   **BSP Map Workflow**: The renderer loads Quake BSP files, allowing the use of existing level design (TrenchBroom) and compilation tools. This approach leverages pre-compiled visibility data (PVS) to skip rendering unseen geometry, which is critical for performance.
+*   **Key Technical Decisions**: A 16-bit z-buffer was implemented to solve depth sorting and handle dynamic objects/masks effectively. The author is also exploring perspective-correct texture mapping after testing simpler methods.
+
+### 为 Playdate 手持设备构建 3D 渲染器
+*   **使用光线投射器进行初始测试**：作者最初编写了一个简单的光线投射器来测试 Playdate 在浮点运算、内存操作和屏幕绘制方面的性能。初步结果较差，因此对项目难度有了现实的认识。
+*   **硬件限制与策略**：Playdate 没有专用 3D 硬件（GPU），所有渲染工作都由 CPU 完成。项目目标不是达到 3D 加速器硬件水平，而是实现类似 3DO/世嘉土星时代的视觉感受。
+*   **BSP 地图工作流**：渲染器加载 Quake BSP 文件，从而可以使用现有的关卡设计（TrenchBroom）和编译工具。这种方法利用预编译的可见性数据（PVS）在渲染前剔除不可见的几何体，这对性能至关重要。
+*   **关键技术决策**：为了解决深度排序和有效处理动态物体/遮罩纹理，实现了一个 16 位的深度缓冲区（Z-buffer）。作者在测试了更简单的方法后，正在研究透视校正纹理映射。
+
+**[Read Original / 阅读原文](https://saffroncr.itch.io/katavatis/devlog/1534514/building-a-tiny-3d-renderer-for-a-tiny-handheld)**
+
+### Leaderboard Overview
+* Displays only AI systems with operational costs under $10,000.
+* Models that failed to generate complete outputs have missing tasks marked as incorrect.
+* Results labeled "preview" are unofficial and may stem from incomplete test runs.
+* A footnote indicates the ARC-AGI-2 score is estimated from partial data and o1-pro pricing.
+* Another footnote notes provisional costs based on Gemini 3 Pro pricing, pending model retesting.
+
+### 排行榜概览
+* 仅展示运行成本低于10,000美元的AI系统。
+* 未能生成完整输出的模型，其未完成的任务被标记为不正确。
+* 标注为“预览”的结果属非正式数据，可能基于不完整的测试。
+* 脚注1说明ARC-AGI-2的评分是基于部分测试结果和o1-pro定价进行的估算。
+* 脚注2注明成本为基于Gemini 3 Pro定价的临时估算，模型待正式发布后重新测试。
+
+**[Read Original / 阅读原文](https://arcprize.org/leaderboard)**
+
+### Fedora 45 Build Process Overview
+*   **Dist-Git as the Starting Point**: Fedora packages begin in individual Git repositories (src.fedoraproject.org), containing spec files and patches. Packagers use `fedpkg` to push changes, which triggers builds by passing a specific Git commit to the build system.
+*   **Koji - The Build System**: Koji builds packages and images using a clean-room, hub-and-spoke architecture. It uses tags for organization, with build targets mapping requests to build and destination tags.
+*   **Bodhi - Update Gating**: For stable releases, updates go through Bodhi's testing cycle where they receive user/automated feedback (karma). Critical path packages have stricter requirements. Updates move between Koji tags (e.g., `updates-testing` to `updates`) to control distribution.
+*   **Pungi - Release Composition**: Pungi orchestrates the final release artifacts (ISOs, images). It freezes a set of packages from Koji, uses comps/variants XML to define package groups and products, and runs phases like Buildinstall (for boot.iso), Createiso, and coordinates image builds via Kiwi and Image Builder.
+
+### Fedora 45 构建流程概览
+*   **起点：Dist-Git**：Fedora 的软件包存储在独立的 Git 仓库（src.fedoraproject.org）中，包含 spec 文件和补丁。打包者使用 `fedpkg` 推送更改，该工具通过向构建系统传递特定的 Git 提交来触发构建。
+*   **Koji - 构建系统**：Koji 采用中心辐射架构，在隔离的干净环境中构建软件包和镜像。它使用“标签”进行组织，构建目标将请求映射到构建标签和目标标签。
+*   **Bodhi - 更新门控**：对于稳定发行版，更新需通过 Bodhi 的测试周期，期间会收到来自用户或自动化测试的反馈（Karma 评分）。关键路径软件包有更严格的要求。更新通过在 Koji 标签间移动（例如，从 `updates-testing` 到 `updates`）来控制分发。
+*   **Pungi - 发行版组合**：Pungi 负责编排最终的发行产物（ISO、镜像）。它从 Koji 冻结一组软件包，使用 comps/variants XML 定义软件包组和产品，并运行多个阶段，如 Buildinstall（用于生成 boot.iso）、Createiso，并通过 Kiwi 和 Image Builder 协调镜像构建。
+
+**[Read Original / 阅读原文](https://supakeen.com/weblog/the-fedora-45-sausage-factory/)**
+
+### OpenCodeReview - AI-powered code review CLI tool
+* What it does: A CLI tool that reads Git diffs, sends changed files to a configurable LLM via an agent, and generates structured, line-level review comments. It can also scan entire files for auditing.
+* Key features: Hybrid architecture (deterministic pipelines + LLM Agent), built-in fine-tuned ruleset (e.g., NPE, thread-safety, XSS, SQL injection), precise line-level comments, support for multiple LLM providers (OpenAI, Anthropic compatible), and high efficiency.
+* Why it's notable: Battle-tested at Alibaba's scale, it solves common pain points of general-purpose agents (incomplete coverage, position drift, unstable quality) by combining hard constraints with dynamic decision-making. It achieves higher precision and efficiency, consuming significantly fewer tokens than general-purpose agents.
+
+### OpenCodeReview - 基于AI的代码审查CLI工具
+* 功能介绍：一款命令行工具，能读取Git差异，通过具有工具使用能力的智能体将更改的文件发送至可配置的大语言模型，并生成精确到代码行的结构化审查评论。它也支持对整个文件进行扫描以审计不熟悉的代码库。
+* 主要特点：混合架构（确定性流水线 + LLM 智能体）、内置经过微调的规则集（如空指针、线程安全、XSS、SQL注入）、精确的行级评论、支持多种大语言模型（兼容 OpenAI 和 Anthropic）、高性能且token消耗低。
+* 为何值得关注：在阿里巴巴的大规模生产环境中经过实战检验，它通过结合硬约束与动态决策，解决了通用AI代理在代码审查中的常见痛点（覆盖不全、位置偏移、质量不稳定）。它实现了更高的精确度和效率，消耗的令牌数远少于通用代理。
+
+**[View Repository / 查看仓库](https://github.com/alibaba/open-code-review)**
+
+### ego-lite - The fastest browser for AI agents to run web automation
+*   **What it does**: ego-lite is a browser designed to allow you and an AI agent (like Codex or Claude Code) to work in parallel on the same machine. The agent operates in its own isolated "Spaces" within the browser, using your existing logged-in state and sessions without disturbing your active browsing.
+*   **Key features**:
+    *   **Zero-friction sharing**: Inherits your Chrome data (logins, cookies, extensions) so the agent has immediate access to your authenticated sessions.
+    *   **Parallel workspaces**: Provides isolated "Spaces" for each agent, allowing multiple AI tasks to run concurrently without interfering with your tabs.
+    *   **Optimized for agents**: Uses a code-based, not CLI-based, interface (`ego-browser` skill) that allows agents to control the browser via JavaScript functions, enabling faster execution and lower token usage.
+    *   **High-quality page snapshots**: Produces superior page snapshots for agents to "see" and interact with complex web elements like nested iframes.
+*   **Why it's notable**: It solves a core pain point in AI browser automation—sharing a live browser session with an agent without conflict. It's trending due to its promise of zero-cost, zero-config setup, significant performance improvements (up to 2.5x faster) over alternatives, and a novel architecture that treats the browser as a shared workspace for humans and AIs.
+
+### ego-lite - 最快的AI代理浏览器自动化工具
+*   **功能介绍**：ego-lite 是一款专为与 AI 代理（如 Codex 或 Claude Code）并行工作而设计的浏览器。AI 代理在浏览器内独立的“空间”中操作，可以访问你已登录的浏览器状态和会话，且不会干扰你当前的浏览活动。
+*   **主要特点**：
+    *   **无缝共享**：可迁移你的 Chrome 数据（登录状态、Cookie、扩展程序等），让 AI 代理直接继承你的已认证会话。
+    *   **并行工作空间**：为每个 AI 代理提供隔离的“空间”，支持多个 AI 任务同时运行，互不干扰你的浏览器标签页。
+    *   **为代理优化**：通过 `ego-browser` 技能提供基于代码（JavaScript 函数）的控制接口，而非命令行，使代理执行更快、消耗的 token 更少。
+    *   **高质量页面快照**：生成卓越的页面快照，帮助 AI 代理准确“看到”并与复杂的网页元素（如嵌套的 iframe）交互。
+*   **为何值得关注**：它有效解决了 AI 浏览器自动化中的一个核心痛点——如何让 AI 代理在不产生冲突的情况下共享一个活跃的浏览器会话。该项目今日获得近 1000 星标，热度很高，因其承诺零成本、零配置的启动方式，相比同类工具性能显著提升（最高快 2.5 倍），以及其新颖的将浏览器构建为人类与 AI 共享工作空间的设计理念。
+
+**[View Repository / 查看仓库](https://github.com/citrolabs/ego-lite)**
+
+### Claude Cookbooks - Official Cookbook for Building with Claude
+*   **What it does**: A collection of Jupyter Notebook "recipes" and guides providing copyable code snippets to help developers integrate and build with the Claude AI model.
+*   **Key features**:
+    *   Covers core capabilities like classification, summarization, and RAG.
+    *   Demonstrates advanced techniques including tool use, multimodal processing (vision), and PDF handling.
+    *   Showcases third-party integrations with services like Pinecone, Voyage AI, and Wikipedia.
+    *   Provides practical examples for specific use cases like customer service agents and SQL query generation.
+*   **Why it's notable**: It is an **official, curated resource from Anthropic**, offering practical, hands-on code examples. It's rapidly gaining traction (evidenced by the high daily star count) as a go-to reference for developers looking to move beyond basic API calls and implement sophisticated AI functionalities.
+
+### Claude Cookbooks - 官方的 Claude 应用实践指南
+*   **功能介绍**: 一个由 Jupyter Notebook 构成的“食谱”与指南集合，提供可直接复制的代码片段，旨在帮助开发者集成和构建基于 Claude AI 模型的应用。
+*   **主要特点**:
+    *   涵盖分类、摘要和检索增强生成（RAG）等核心能力。
+    *   演示工具使用、多模态处理（视觉）、PDF 处理等高级技术。
+    *   展示与 Pinecone、Voyage AI、Wikipedia 等第三方服务的集成示例。
+    *   提供针对客服代理、SQL 查询生成等具体用例的实践案例。
+*   **为何值得关注**: 这是由 **Anthropic 官方整理的权威资源**，提供了实用且可上手的代码范例。它正迅速获得关注（从每日星标数可以看出），已成为开发者寻求超越基础 API 调用、实现复杂 AI 功能的首选参考。
+
+**[View Repository / 查看仓库](https://github.com/anthropics/claude-cookbooks)**
+
+### Goutoujunshi - An AI relationship advisor that prioritizes emotional support over advice
+*   **What it does**: It acts as a Codex Skill (an AI tool) designed as a "relationship strategist." It first acknowledges and processes the user's emotions, then analyzes relationship dynamics and provides actionable, context-aware strategies for dating and relationships.
+*   **Key features**: Integrates a massive interdisciplinary knowledge base (psychology, law, sociology, philosophy, etc.), supports diverse relationship types, analyzes chat logs/screenshots, generates specific reply templates, designs first meetings, and prioritizes safety and ethical boundaries over manipulative tactics.
+*   **Why it's notable**: It stands out for its human-centric design ("catch the emotion first"), its comprehensive, evidence-informed knowledge base that avoids simplistic formulas, and its strong ethical framework that respects consent, autonomy, and safety. It's trending as a thoughtful, comprehensive alternative to generic dating advice bots.
+
+### 狗头军师 · Goutoujunshi - 一个先接住情绪、再分析关系并给出可执行策略的 AI 恋爱军师
+*   **功能介绍**：它是一个作为 Codex 技能包的“恋爱军师”AI。其核心工作流是先理解和安抚用户情绪，再基于事实进行关系分析，并最终提供可执行、分场景的下一步策略建议。
+*   **主要特点**：内置跨学科（心理、法律、社会、人文等）的庞大知识库；支持多元关系；能分析聊天截图和文本；生成具体话术与行动方案；强调伦理、安全和拒绝的权利，反对操控性套路。
+*   **为何值得关注**：它以其“以人为本”（先处理情绪）和“严谨跨学科”的设计理念脱颖而出，提供了比“大胆追”或“快分手”更细腻、更系统的分析框架。其明确的伦理边界和安全优先原则，使其在众多情感类工具中显得尤为可靠和负责任。
+
+**[View Repository / 查看仓库](https://github.com/powerycy/goutoujunshi)**
+
+### 🎬 AI won't necessarily displace skilled devs - it'll just move their value up the chain
+**Channel:** freeCodeCamp.org
+*   **What the video covers:** This is a discussion between Zubin and Quincy from freeCodeCamp.org, exploring the thesis that AI tools are unlikely to replace skilled developers. Instead, they argue AI will shift the developers' value from writing boilerplate code to higher-level tasks like system design, problem decomposition, and managing AI-assisted workflows.
+*   **Key topics discussed:** The evolving role of developers in the AI era, the impact of AI coding assistants, the enduring importance of software engineering fundamentals, and practical strategies for developers to adapt and increase their value.
+*   **Why it's worth watching:** It provides a calm, practical, and non-alarmist perspective on AI's impact on software development careers. It’s a valuable listen for any developer seeking to understand how to leverage AI tools effectively and future-proof their skillset by focusing on architectural thinking and complex problem-solving.
+
+### 🎬 AI 不一定会取代优秀的开发者——只会让他们的价值向更高层次迁移
+**频道:** freeCodeCamp.org
+*   **视频内容概述：** 这是 freeCodeCamp.org 的 Zubin 与 Quincy 之间的一场对话，探讨了核心观点：AI 工具不太可能取代优秀的开发者。相反，他们认为 AI 会将开发者的价值从编写样板代码，转移到更高层次的任务上，如系统设计、问题分解和管理 AI 辅助的工作流程。
+*   **主要话题：** AI 时代开发者角色的演变、AI 编程助手的影响、软件工程基础知识的持久重要性，以及开发者适应并提升自身价值的实用策略。
+*   **为何值得观看：** 它提供了一个冷静、实用且非恐慌视角的观点，探讨了 AI 对软件开发职业的影响。对于任何希望了解如何有效利用 AI 工具，并通过专注于架构思维和解决复杂问题来适应未来发展的开发者来说，这是一个极具价值的收听内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=O3foXkb1Zos)**
+
+### 🎬 Proving You’re Human
+**Channel:** Y Combinator
+* The video covers a recent and sophisticated financial fraud case where a worker was tricked into wiring $25 million after a video call with deepfaked colleagues.
+* Key topics discussed include the mechanics of deepfake technology used in real-time video, the vulnerabilities in corporate verification processes, and the emerging threat of AI-generated deception in finance.
+* It's worth watching as a critical warning about the evolving capabilities of AI fraudsters and the urgent need for new security protocols to verify human identity in the digital age.
+
+### 🎬 如何证明你是人类
+**频道:** Y Combinator
+* 视频概述了一起利用深度伪造技术进行的、手法复杂的金融欺诈案。一名员工在与伪装成其CFO和同事的视频通话后，错误地转账了2500万美元。
+* 主要话题包括：实时视频中深度伪造技术的实现方式、企业内部身份验证流程的脆弱性，以及人工智能生成的欺骗行为对金融安全构成的新威胁。
+* 为何值得观看：该视频是一个关键的警示，揭示了AI欺诈者不断进化的能力，并强调了在数字时代建立新的身份验证安全协议的紧迫性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=nB7QBdjrOwE)**
+
+### 🎬 Is Local AI Coding Actually Good?
+**Channel:** Tech With Tim
+*   This video provides a hands-on evaluation of using local AI tools (like the open-source MindsHub Cowork) for programming tasks, moving beyond theoretical hype to test practical performance.
+*   Key topics include setting up local AI models for coding assistance, comparing their effectiveness to cloud-based solutions, and analyzing trade-offs in speed, cost, and privacy.
+*   It's worth watching for a realistic, developer-focused perspective on a emerging technology, helping you decide if local AI fits your workflow and project needs.
+
+### 🎬 本地AI编程到底好不好用？
+**频道:** Tech With Tim
+*   视频对使用本地AI工具（如开源的MindsHub Cowork）进行编程进行了实战评测，超越理论炒作，实际测试其性能表现。
+*   主要话题包括搭建本地AI模型辅助编码、将其与云端方案对比，以及分析在速度、成本和隐私方面的权衡。
+*   值得观看的原因在于，它为开发者提供了一个关于新兴技术的务实视角，帮助你判断本地AI是否适合你的工作流程和项目需求。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=8JRJq4EEdik)**
+
