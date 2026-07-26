@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 27, 2026"
 date: 2026-07-27
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 0 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，0个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 4 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，4个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -216,4 +216,200 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * 它以轻松有趣的方式呈现了编码和面试这个通常严肃的领域。非常适合寻求短暂欢笑，并从不同角度体验编程社区的观众。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Vci5y4LSgr0)**
+
+### Decker: A Multimedia Platform for Interactive Documents
+*   Decker is a multimedia platform for creating interactive documents with sound, images, hypertext, and scripts, inspired by HyperCard and classic MacOS aesthetics.
+*   It offers deep undo, modern navigation (scroll/touch), and bulk editing, while retaining simplicity. Projects can be exported as standalone HTML files.
+*   The platform features a "ditherpunk" aesthetic and is used for e-zines, notes, presentations, games, and pixel art, encouraging a sketchy, prototyping approach.
+*   It includes a scripting language called Lil (influenced by Lua and Q) and a system for creating/sharing custom interactive widgets.
+*   Decker provides command-line tools like Lilt (a headless Lil interpreter) and stores decks in a line-oriented text format compatible with version control (Git/SVN).
+*   It is free, open-source (MIT licensed), and prioritizes user privacy by excluding ads, telemetry, or other intrusive elements.
+
+### Decker：一个用于交互式文档的多媒体平台
+*   Decker 是一个多媒体平台，用于创建包含声音、图像、超文本和脚本的交互式文档，其设计灵感来源于 HyperCard 和经典 MacOS 的视觉美学。
+*   它提供了深度撤销、现代化的导航（滚轮/触摸屏支持）和批量编辑功能，同时保持了易学易用的特点。项目可以导出为独立的 HTML 文件。
+*   该平台具有独特的“抖动朋克”美学，可用于制作电子杂志、整理笔记、制作演示文稿、构建冒险游戏，甚至绘制1位像素艺术，鼓励一种草图式、不完美的原型设计方法。
+*   它包含一个名为 Lil 的脚本语言（受 Lua 和 Q 影响），以及一个用于创建和共享自定义交互小部件的系统。
+*   Decker 提供命令行工具，例如 Lilt（一个无头的 Lil 解释器），并以一种易于阅读的行文格式存储 deck 文件，可与 Git 和 SVN 等版本控制工具很好地协作。
+*   它是免费开源的（采用 MIT 许可证），并且通过排除广告、遥测数据或其他侵入性内容，优先保障用户隐私和自主权。
+
+**[Read Original / 阅读原文](https://beyondloom.com/decker/)**
+
+<!-- [Title-Only] -->
+### Introduction to Data-Oriented Design [pdf]
+*   This article, as indicated by the title and source (gamedevs.org), likely provides a foundational overview of Data-Oriented Design (DOD), a software design methodology focused on optimizing performance by organizing data in a way that aligns with how computer processors actually access and process information.
+*   It might be interesting to readers, particularly programmers and game developers, because DOD is a paradigm shift from traditional object-oriented design, emphasizing data layout, memory access patterns (like cache friendliness), and parallelism to achieve high performance, which is critical in areas like game engines and real-time simulations.
+
+### 数据导向设计简介 [pdf]
+*   根据标题推测，这篇文章很可能介绍了数据导向设计（Data-Oriented Design, DOD）的基本概念。这是一种软件设计方法，核心思想是通过优化数据的内存布局和组织方式，使其更符合现代计算机硬件（尤其是CPU缓存）的访问模式，从而大幅提升程序运行效率。
+*   这篇文章可能引起读者，特别是程序员和游戏开发者的兴趣，因为它提出了一种与传统面向对象设计不同的思考范式。它更关注数据本身、内存访问模式和并行化，是开发高性能系统（如游戏引擎、实时模拟）的关键技术之一。
+
+**[Read Original / 阅读原文](https://www.gamedevs.org/uploads/introduction-to-data-oriented-design.pdf)**
+
+### CheapSecurity: Lightweight & Privacy-Focused Surveillance
+*   A self-hosted, open-source CCTV solution designed for Linux single-board computers (like Raspberry Pi) and USB webcams.
+*   Prioritizes privacy by storing all video data locally, eliminating cloud dependencies and subscription fees.
+*   Features include motion detection, live streaming, email/Telegram alerts, night mode enhancement, and easy web-based management.
+*   Licensed under GNU AGPLv3, promoting free software and user control.
+
+### CheapSecurity：轻量级且注重隐私的监控方案
+*   一个自托管的开源CCTV解决方案，专为Linux单板计算机（如树莓派）和USB网络摄像头设计。
+*   通过在本地存储所有视频数据来优先保障隐私，消除了对云服务的依赖和订阅费用。
+*   主要功能包括运动检测、实时流、电子邮件/Telegram警报、夜间模式增强以及便捷的Web管理界面。
+*   采用GNU AGPLv3许可，倡导自由软件和用户控制权。
+
+**[Read Original / 阅读原文](https://github.com/gmrandazzo/CheapSecurity)**
+
+### T3 Code - A Minimal Web GUI for AI Coding Agents
+* **What it does:** T3 Code provides a simple, unified web interface to interact with and manage multiple AI coding agents, currently supporting Codex, Claude, Cursor, and OpenCode, with plans for more providers.
+* **Key features:** It offers a lightweight, cross-platform experience available via `npx` or as a desktop app (Windows, macOS, Linux). The project integrates with existing authentication flows for each supported provider and includes documentation on setup and architecture.
+* **Why it's notable:** It's trending (159 stars in a day) as it solves the pain point of switching between different AI coding tools by offering a single, clean interface. The early-stage project from the team behind Ping.gg signals developer interest in standardized workflows for AI-assisted development.
+
+### T3 Code - 面向AI编码代理的最小化Web图形界面
+* **功能介绍：** T3 Code 为多个AI编码代理（目前支持Codex、Claude、Cursor和OpenCode，更多支持即将推出）提供了一个简洁、统一的Web交互界面。
+* **主要特点：** 提供轻量级的跨平台体验，可通过 `npx` 直接运行或安装为桌面应用（支持Windows、macOS、Linux）。项目整合了各支持提供商的现有认证流程，并提供了设置和架构相关的文档。
+* **为何值得关注：** 该项目在一天内获得159颗星，正在快速流行。它通过提供一个统一、干净的界面，解决了开发者在多个AI编码工具之间频繁切换的痛点。作为Ping.gg团队推出的早期项目，它反映了开发者对标准化AI辅助开发工作流的兴趣。
+
+**[View Repository / 查看仓库](https://github.com/pingdotgg/t3code)**
+
+### Instatic - Open-Source Alternative to Webflow & WordPress
+*   **What it does:** Instatic is a self-hosted, all-in-one visual CMS that runs on a single Bun server. It enables users to design, build, manage, and publish websites that output clean, semantic static HTML/CSS, eliminating the need for separate design, hosting, and headless CMS services.
+*   **Key features:**
+    *   **Unified Visual Editor:** A real canvas editor with responsive breakpoint editing and a built-in design token system (Core Framework).
+    *   **Full Content & Build System:** Includes visual components, templates, loops, forms, and an AI agent that generates editable page nodes directly on the canvas.
+    *   **Unified Data Store:** Uses a single data model (`data_tables` & `data_rows`) for all content (pages, posts, collections, form submissions), with a spreadsheet-like data workspace.
+    *   **Self-Hosted & MIT Licensed:** Can be deployed with one click (Railway, Render) or via Docker. Users retain full control over their data and site.
+    *   **Clean Output:** Generates plain HTML and compact CSS, free from framework runtimes or builder artifacts, resulting in fast-loading static pages.
+*   **Why it's notable:** It consolidates the entire website lifecycle—from visual design to content management and static site generation—into a single, self-hosted tool. Its trending status (892 stars today) reflects strong interest in a comprehensive, open-source alternative that prioritizes output quality and developer/user ownership over fragmented SaaS stacks.
+
+### Instatic - 开源的 Webflow 与 WordPress 替代方案
+*   **功能介绍：** Instatic 是一个自托管的一站式可视化内容管理系统（CMS），运行于单个 Bun 服务器之上。它让用户能够设计、构建、管理和发布网站，最终输出干净、语义化的静态 HTML/CSS 页面，从而免除了对独立设计工具、托管服务和无头 CMS 的依赖。
+*   **主要特点：**
+    *   **统一的可视化编辑器：** 提供真实的设计画布，支持响应式断点同步编辑，并内置了设计令牌系统（Core Framework）。
+    *   **完整的内容与构建系统：** 包括可视化组件、模板、循环、表单，以及一个可直接在画布上生成可编辑页面节点的 AI 智能体。
+    *   **统一的数据存储：** 采用单一数据模型（`data_tables` 与 `data_rows`）存储所有内容（页面、文章、集合、表单提交等），并提供类似电子表格的数据管理工作区。
+    *   **自托管与 MIT 许可：** 支持一键部署（Railway、Render）或通过 Docker 部署，用户拥有数据和网站的完全控制权。
+    *   **输出简洁：** 生成纯净的 HTML 和紧凑的 CSS，不含框架运行时或构建器痕迹，从而确保页面加载速度快。
+*   **为何值得关注：** 它将网站的整个生命周期——从可视化设计到内容管理和静态站点生成——整合到了一个自托管工具中。其当前的热度（今日新增 892 颗星）反映出开发者社区对这种能替代碎片化 SaaS 服务栈、同时强调输出质量和用户主权的开源全栈方案的强烈兴趣。
+
+**[View Repository / 查看仓库](https://github.com/CoreBunch/Instatic)**
+
+
+## 🚀 Fast-Moving Repos / 快速崛起项目
+
+### slvDev/esp32-ai - Running a 28.9M Parameter LLM on an ESP32 Microcontroller
+*   **What it does**: This project successfully runs a 28.9 million parameter language model (LLM) entirely on an ESP32-S3 microcontroller, a low-cost chip (~$8) with very limited memory. The model generates short, coherent stories and displays them on a wired screen.
+*   **Key features**:
+    *   **On-Device Execution**: All computation happens locally on the chip with zero server connectivity.
+    *   **Breakthrough Size**: Achieves a model with ~100x more parameters than previous attempts on similar hardware by storing most parameters (25M) in slow Flash memory.
+    *   **Novel Architecture**: Utilizes Google's "Per-Layer Embeddings" concept to dramatically reduce the need for fast RAM, allowing only the necessary data to be loaded per token.
+    *   **Measurable Speed**: Reaches an inference speed of approximately 9.5 tokens per second.
+*   **Why it's notable**: It represents a significant advancement in edge AI and TinyML, demonstrating that complex LLMs can be shrunk to run on ubiquitous, ultra-low-cost microcontrollers. This opens possibilities for private, offline AI applications in embedded systems, challenging the notion that large models require cloud connectivity or powerful hardware.
+
+### slvDev/esp32-ai - 在ESP32微控制器上运行28.9M参数大语言模型
+*   **功能介绍**：本项目成功在一个仅售约8美元、内存极为有限的ESP32-S3微控制器上运行了28.9M参数的大语言模型。该模型能生成连贯的短故事，并将结果输出到连接的屏幕上。
+*   **主要特点**：
+    *   **完全本地运行**：所有计算在芯片本地完成，无需任何网络或服务器连接。
+    *   **突破性模型规模**：通过将大部分参数（25M）存储在速度较慢的Flash闪存中，成功将模型参数量提升至此前同类硬件尝试的约100倍。
+    *   **创新架构**：采用源自Google Gemma模型的“Per-Layer Embeddings（逐层嵌入）”技术，大幅降低了对高速SRAM的依赖，使得每个词元只需加载极少量必要数据。
+    *   **可观测的速度**：推理速度可达约9.5 token/秒。
+*   **为何值得关注**：该项目在边缘AI和TinyML领域取得了重要突破，证明了复杂的大语言模型可以被“压缩”到广泛使用的超低成本微控制器上运行。这为嵌入式设备上的离线、私密AI应用开辟了新的可能性，挑战了“大模型必须依赖云端或强大硬件”的传统观念。
+
+**[View Repository / 查看仓库](https://github.com/slvDev/esp32-ai)**
+
+### thinking-orbs - Dotted thought-orb loading indicators for AI & agent UIs
+*   **What it does**: Provides six hand-tuned, animated "thought-orb" loading indicators designed specifically for AI and agent interfaces. Each orb represents a different agent state (e.g., searching, solving, listening) with a unique animation.
+*   **Key features**: Offers six distinct animated states, each available in two sizes (64px for avatars, 20px for inline text). It features automatic dark/light theme detection, strict monochrome styling, and is built with a plain 2D canvas for maximum performance and browser compatibility.
+*   **Why it's notable**: It's a specialized, performance-focused UI component for the growing AI agent space. Its standout features include meticulous state-specific animations, automatic theme adaptation (via DOM, OS settings, or SSR), built-in accessibility (reduced motion support, aria-labels), and smart performance optimizations like pausing animations when off-screen or in background tabs.
+
+### thinking-orbs - AI 与智能体界面的动态点状思维球加载指示器
+*   **功能介绍**：为人工智能和智能体界面提供六种精心设计的动态“思维球”加载指示器。每个思维球代表一种不同的智能体状态（如搜索、解决、倾听），并有其独特的动画效果。
+*   **主要特点**：提供六种不同的动画状态，每种状态有适配的两种尺寸（64像素用于头像，20像素用于内联文本）。支持自动检测深色/浅色主题，坚持单色设计风格，并基于原生 2D Canvas 构建，确保了卓越的性能和浏览器兼容性。
+*   **为何值得关注**：这是针对快速发展的 AI 智能体领域而设计的、注重性能的专用 UI 组件。其突出特点包括针对特定状态的精细动画、自动主题适配（通过 DOM、操作系统设置或 SSR）、内置的无障碍支持（减弱动效支持、aria-label）以及智能的性能优化（如在屏幕外或标签页隐藏时自动暂停动画）。
+
+**[View Repository / 查看仓库](https://github.com/Jakubantalik/thinking-orbs)**
+
+### 🎬 Jensen Huang: The Mindset That Built NVIDIA
+**Channel:** Y Combinator
+*   **What the video covers:** This video delves into the origin story of NVIDIA, focusing on CEO Jensen Huang's founding philosophy and critical early decisions. It highlights how the company pivoted from an initial, incorrect technology bet to mastering the fundamentals of graphics processing from textbooks, laying the groundwork for revolutionizing computing.
+*   **Key topics discussed:**
+    *   The early "wrong technology" approach and the pivotal learning curve at NVIDIA.
+    *   The acquisition of foundational knowledge from standard textbooks (bought at Fry's Electronics).
+    *   The mindset and principles that guided Jensen Huang in building NVIDIA into a giant that would invent and dominate the GPU market.
+*   **Why it's worth watching:** It offers a unique, inside look at the resilience and adaptability required for tech innovation. The story of learning "the right one from three textbooks" is a powerful lesson in fundamentals, pivoting, and the long-term vision that transforms a struggling startup into an industry-defining leader.
+
+### 🎬 黄仁勋：铸造英伟达的思维模式
+**频道:** Y Combinator
+*   **视频内容概述：** 本视频深入探讨了英伟达的起源故事，聚焦于首席执行官黄仁勋的创始哲学和早期关键决策。它揭示了公司如何从最初错误的技术选择，转向通过教科书掌握图形处理基础，最终为颠覆整个计算行业奠定了基础。
+*   **主要话题：**
+    *   早期的“错误技术”路径及英伟达关键的学习转折点。
+    *   从标准教科书（购于Fry's电子超市）中获取基础知识的过程。
+    *   黄仁勋在将英伟达打造成发明并主导GPU市场巨头的过程中所秉持的思维与原则。
+*   **为何值得观看：** 它提供了一个关于技术创新所需韧性与适应力的独特内部视角。这个“从三本教科书学到正确知识”的故事，有力地诠释了打好基础、及时转型和长远愿景的重要性——正是这些特质将一家挣扎的初创公司塑造成了定义行业的领导者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=I4B37S1dyQQ)**
+
+### 🎬 How to make a melon with an invisible head in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+*   This short video is a quick, step-by-step tutorial on how to use the game's tools and mechanics in *Melon Sandbox* to create a character model where the melon's head is invisible.
+*   Key topics include the use of the "invisible" material or tool within the game's editor, and the specific steps to apply it to a part of the character model.
+*   It's worth watching for players of *Melon Sandbox* who want to learn a neat, creative trick to customize their creations and achieve unique visual effects for their sandbox scenarios.
+
+### 🎬 《如何在西瓜游戏中制作一个没有头的西瓜》
+**频道:** Vedid
+*   这段短视频是一个简短的教程，展示了如何在游戏《Melon Sandbox》中使用游戏内的工具和机制，制作出头部看不见的西瓜角色模型。
+*   主要话题涉及游戏编辑器中“隐形”材质或工具的使用，以及将其应用到角色模型特定部位的具体步骤。
+*   对于《Melon Sandbox》的玩家来说，这很值得一看，因为它教授了一个有趣的创意技巧，可用于个性化定制他们的作品，并为沙盒场景实现独特的视觉效果。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WnAhgMRotr4)**
+
+### 🎬 Claude Certified Architect - Foundations – Prepare for and pass the exam!
+**Channel:** freeCodeCamp.org
+*   This video is a comprehensive study guide for the official "Claude Certified Architect – Foundations (CCA-F)" exam administered by Anthropic.
+*   Key topics include an overview of the CCA-F certification, a breakdown of the exam domains, practical demonstrations of designing with Claude, and strategies for exam preparation.
+*   It is worth watching because it provides a direct, authoritative pathway to earning a recognized credential in AI architecture, offering practical knowledge and exam-specific insights that are valuable for career development.
+
+### 🎬 Claude认证架构师 - 基础篇 – 备考与通关指南！
+**频道:** freeCodeCamp.org
+*   本视频是针对Anthropic官方“Claude认证架构师 - 基础（CCA-F）”考试的综合备考指南。
+*   主要话题涵盖CCA-F认证简介、考试领域详解、使用Claude进行架构设计的实践演示，以及备考策略与技巧。
+*   值得观看的原因在于，它提供了考取行业认可AI架构师证书的权威路径，其中包含的实践知识和针对性考试要点对职业发展极具价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=reDRM0tqhNs)**
+
+### 🎬 If Code Works Don't Touch It !! #coding #programming #python #shorts
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+*   **What the video covers:** A short, humorous skit illustrating a universal and often frustrating experience in software development: the dilemma of touching seemingly working but poorly written or mysterious legacy code.
+*   **Key topics discussed:**
+    *   The "If it ain't broke, don't fix it" mentality in programming.
+    *   The risks and potential chaos of refactoring or modifying undocumented, complex, or "spaghetti" code.
+    *   Relatable developer humor around code maintenance.
+*   **Why it's worth watching:** It's a highly relatable and entertaining 60-second clip that perfectly captures a common pain point for programmers of all levels. It serves as a quick, funny reminder of the hidden dangers in legacy codebases and why documentation and code clarity are crucial.
+
+### 🎬 代码能运行就别动它！！ #编程 #编程 #Python #短视频
+**频道:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+*   **视频内容概述:** 一个简短幽默的情景短剧，展现了软件开发中一个普遍且令人头疼的困境：面对一段能运行但质量堪忧、历史不明的“祖传代码”，究竟是该“别动它”还是该冒险重构。
+*   **主要话题:**
+    *   编程中的“没事别修”哲学。
+    *   修改或重构缺乏文档、结构混乱的复杂代码所带来的风险和潜在灾难。
+    *   开发者对代码维护工作普遍存在的共鸣与吐槽。
+*   **为何值得观看:** 这是一段极具共鸣、长达60秒的趣味短片，精准击中了各级程序员的痛点。它用幽默的方式提醒人们遗留代码库中隐藏的“陷阱”，同时也强调了编写清晰、有文档代码的重要性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2xZJk8Vaxvk)**
+
+### 🎬 🛑 No escondas así tus archivos
+**Channel:** SCPC Informática
+
+*   **What the video covers:** The video exposes a well-known but misleading "trick" for hiding files and folders in Windows by creating a seemingly invisible name (using ALT+255 for a non-breaking space) and a transparent folder icon.
+*   **Key topics discussed:** It demonstrates this common "hiding" method and likely explains why it provides only a false sense of security, as the files remain easily discoverable by other means.
+*   **Why it's worth watching:** It's a quick, practical guide for Windows users, especially beginners, to understand that this popular trick doesn't truly secure or hide sensitive data, encouraging better practices for file protection.
+
+### 🎬 🛑 别这样隐藏你的文件
+**频道:** SCPC Informática
+
+*   **视频内容概述:** 该视频揭示了一个常见但具有误导性的 Windows 文件/文件夹隐藏“技巧”，即通过使用 ALT+255 创建一个看似空白的名称（非断行空格）和一个透明的文件夹图标来伪装。
+*   **主要话题:** 视频演示了这一普遍的“隐藏”方法，并很可能解释了为什么它只提供了一种虚假的安全感——因为文件仍然很容易通过其他方式被发现。
+*   **为何值得观看:** 对于 Windows 用户，尤其是初学者来说，这是一个快速实用的指南，有助于理解这种流行的技巧并不能真正保护或隐藏敏感数据，从而鼓励采用更好的文件保护方法。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=1a69pHBA6tE)**
 
