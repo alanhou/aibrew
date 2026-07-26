@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 26, 2026"
 date: 2026-07-26
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false<!-- [Title-Only] -->
@@ -243,4 +243,249 @@ pin: false<!-- [Title-Only] -->
 * 为何值得观看：为程序员和学习者提供快速有趣的放松时刻，以欢笑的方式识别典型编程陷阱，同时保持对Python社区的关注和参与感。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=Vci5y4LSgr0)**
+
+<!-- [Title-Only] -->
+### Stolen Buttons
+* **Brief description based on the title:** This article likely explores the concept or phenomenon of "stolen buttons" in a digital or technological context. Given the tech-focused blog URL, it could be about web design elements being copied or misappropriated, security vulnerabilities where button functionality is hijacked, or a metaphorical piece on digital theft.
+* **Why it might be interesting to readers:** It promises a fresh perspective on a common digital element (buttons), potentially revealing hidden issues in web development, user interface design, or online security.
+
+### “被盗的按钮”
+* **根据标题推测的文章内容简介：** 这篇文章可能探讨了数字或技术语境下的“被盗的按钮”这一概念或现象。鉴于技术博客的网址，它可能涉及网页设计元素的抄袭或盗用、按钮功能被劫持的安全漏洞，或者是关于数字盗窃的隐喻性文章。
+* **为何值得关注：** 它对数字世界中一个常见元素（按钮）提供了新的视角，可能揭示了网页开发、用户界面设计或网络安全中的隐藏问题。
+
+**[Read Original / 阅读原文](https://anatolyzenkov.com/stolen-buttons)**
+
+### Delays That Stabilize: A Counterintuitive Insight from Systems Thinking
+* The article explores the book *Thinking in Systems*, using a car dealership inventory simulation to demonstrate how system delays behave.
+* It concludes with the counterintuitive finding that *lengthening* a response delay (ordering more slowly) can dampen oscillations and stabilize a system, while shortening it can make the system more volatile.
+
+### 系统与延迟 | 反直觉的延迟效应
+* 文章探讨了《系统化思维》一书，通过一个汽车经销商库存管理的模拟案例，展示系统延迟的行为。
+* 结论是：**延长**响应延迟（如更慢地调整订货量）反而可能抑制振荡、稳定系统；而缩短延迟则可能加剧系统波动，这符合直觉相反的发现。
+
+**[Read Original / 阅读原文](https://martin.janiczek.cz/2026/07/24/systems-and-delays.html)**
+
+<!-- [Title-Only] -->
+### Clinical failure rates over the decades: yikes
+* Based on the title, this article likely provides a historical overview and analysis of the success or failure rates of clinical trials in drug development over recent decades. The exclamation "yikes" strongly suggests the author is highlighting persistently high or worsening failure rates.
+* It would be interesting to readers, particularly in science, medicine, and pharmaceuticals, as it tackles the challenging and costly reality of bringing new treatments to market, potentially questioning current research paradigms or efficiencies.
+
+### 临床试验失败率的数十年变迁：令人担忧
+* 根据标题推测，这篇文章很可能回顾并分析了过去数十年间，新药开发过程中临床试验阶段的持续成功率或失败率数据。标题中的“yikes（令人担忧）”强烈暗示作者指出了一个居高不下甚至有所恶化的严峻现实。
+* 之所以值得关注，是因为它直击了药物研发过程中最艰难、最烧钱的环节。对于科研、医疗、制药及相关投资领域的读者而言，理解这一现状对于评估行业挑战、研究方向及投资决策具有重要意义。
+
+**[Read Original / 阅读原文](https://www.science.org/content/blog-post/clinical-failure-rates-over-decades-yikes)**
+
+### Buzz - A Hive Mind Workspace for Humans and Agents
+*   **What it does**: Buzz is a self-hostable, Nostr-based workspace platform designed for humans and AI agents to collaborate seamlessly in shared "rooms." It functions as a unified event log for messages, reactions, workflows, reviews, and git events, all signed and auditable.
+*   **Key features**: Agents have the same capabilities as human members (create channels, review code, run workflows, edit canvases). It unifies chat, code review, CI/CD, and project management into a single, protocol-native space. Includes a desktop app (Tauri), CLI for agents, YAML workflows, and git event integration (NIP-34).
+*   **Why it's notable**: It aims to replace the fragmented stack of chat, forges, bots, and CI tools with a single, sovereign substrate where humans and agents are first-class peers with shared identity and audit trails. Its focus on agent autonomy and integration within the core workspace model makes it a notable entry in the AI-native developer tooling space.
+
+### Buzz - 人类与智能体的蜂巢思维协作平台
+*   **功能介绍**: Buzz 是一个基于 Nostr 协议的可自托管工作空间，旨在让人类与 AI 智能体在共享的“房间”内无缝协作。它将消息、反应、工作流、代码评审和 Git 事件统一为一个可签名、可审计的事件日志。
+*   **主要特点**: 智能体拥有与人类成员同等的能力（创建频道、审阅代码、运行工作流、编辑画布）。它将聊天、代码评审、CI/CD 和项目管理统一到一个基于协议的原生空间中。包含桌面应用（Tauri）、智能体优先的 CLI、YAML 工作流以及 Git 事件集成（NIP-34）。
+*   **为何值得关注**: 它试图用一个统一的、可自主控制的底层平台，替代当前分散的聊天、代码托管、机器人和 CI 工具栈。其核心模型将人类和智能体视为共享身份与审计轨迹的一等协作方，对 AI 原生开发者工具的发展方向具有重要参考价值。
+
+**[View Repository / 查看仓库](https://github.com/block/buzz)**
+
+### Open Code Review - AI-Powered Code Review CLI Tool
+*   **What it does**: It is an open-source, AI-driven code review command-line tool that originated from Alibaba's internal systems. It reads Git diffs (or scans entire files), sends the code to a configurable Large Language Model (LLM), and generates structured, line-level review comments. It can also perform full-file scans for auditing.
+*   **Key features**:
+    *   **Hybrid Architecture**: Combines deterministic engineering pipelines (for file selection, bundling, and rule matching) with a dynamic LLM Agent for deep contextual analysis, ensuring stable and precise reviews.
+    *   **Precision & Efficiency**: Focuses on high precision (fewer false positives) and uses significantly fewer tokens (~1/9) compared to general-purpose agents, making it faster and more cost-effective.
+    *   **Built-in & Fine-tuned Rules**: Includes a fine-tuned ruleset for common issues like NPE, thread safety, XSS, and SQL injection.
+    *   **Broad Compatibility**: Supports OpenAI, Anthropic, and other LLM providers; works on Windows, macOS, and Linux.
+    *   **Versatile Review Modes**: Supports workspace review, branch comparison, single commit review, full-file scanning, and delegation to other AI coding agents.
+*   **Why it's notable**: It is a battle-tested tool proven at Alibaba's massive scale, now open-sourced. Its core innovation lies in the **deterministic engineering × agent hybrid design**, which solves common issues with pure LLM-based reviews like incomplete coverage and position drift, offering a more reliable and efficient solution for teams.
+
+### Open Code Review - AI 代码审查命令行工具
+*   **功能介绍**: 这是一款开源、AI 驱动的代码审查命令行工具，源自阿里巴巴内部系统。它读取 Git diff（或扫描整个文件），将代码发送至可配置的大语言模型（LLM），并生成结构化的、行级精度的审查评论。它也可用于全量文件扫描，以便审计不熟悉的代码库。
+*   **主要特点**:
+    *   **混合架构**: 结合了确定性工程流水线（用于文件选择、打包和规则匹配）与动态 LLM 代理（用于深度上下文分析），确保审查稳定且精准。
+    *   **精准高效**: 专注于高精确度（减少误报），与通用代理相比，其 Token 消耗量仅约 1/9，审查速度更快、成本更低。
+    *   **内置精调规则集**: 包含针对常见问题（如空指针异常 NPE、线程安全、跨站脚本 XSS、SQL 注入）的精调规则。
+    *   **广泛兼容性**: 支持 OpenAI、Anthropic 等多种 LLM 提供商；适用于 Windows、macOS 和 Linux 系统。
+    *   **多样化审查模式**: 支持工作区审查、分支对比、单次提交审查、全量文件扫描以及委派给其他 AI 编码代理执行。
+*   **为何值得关注**: 它是经过阿里巴巴超大规模实战检验后开源的工具。其核心创新在于**确定性工程与代理的混合设计**，解决了纯 LLM 审查中常见的覆盖不全、定位偏移等问题，为团队提供了一个更可靠、高效的代码质量保障方案。
+
+**[View Repository / 查看仓库](https://github.com/alibaba/open-code-review)**
+
+### ego-lite - The fastest browser for AI agents to run web automation
+* **What it does**: ego-lite is a specialized browser designed to run web automation tasks for AI agents (like Codex or Claude Code) in parallel, without interfering with the user's own browsing. It shares the same browser instance and logged-in state, allowing agents to work in isolated "Spaces".
+* **Key features**:
+  * **Parallel Workspaces (Spaces)**: Each AI agent gets a fully isolated Space to perform tasks simultaneously without tab conflicts.
+  * **Inherits Chrome Data**: Easily migrates your existing logins, cookies, and extensions from Chrome, eliminating login friction for agents.
+  * **Code-based Execution**: Exposes browser control via JavaScript functions, enabling faster, more efficient multi-step task execution compared to CLI-based tools.
+  * **High-Quality Page Snapshots**: Provides superior, reliable snapshots for agents to "see" and interact with web pages, even complex ones with nested iframes.
+  * **Universal Agent Compatibility**: Works with any agent CLI via the `ego-browser` connection layer.
+* **Why it's notable**: It represents a paradigm shift from browser automation frameworks to a dedicated, shared browser environment for human-AI collaboration. Benchmarks show it executes complex tasks up to 2.5x faster with significantly fewer tokens than alternatives, and it's completely free.
+
+### ego-lite - 为AI代理优化的极速网页自动化浏览器
+* **功能介绍**：ego-lite 是一款专为AI代理（如 Codex 或 Claude Code）设计的浏览器。它允许代理在与用户共享的浏览器实例中，使用独立的“空间”并行执行网页自动化任务，且不会干扰用户当前的浏览活动。
+* **主要特点**：
+  * **并行工作空间 (Spaces)**：每个AI代理获得一个完全隔离的空间，可同时执行多个任务，避免标签页冲突。
+  * **继承Chrome数据**：轻松迁移您现有的登录状态、Cookies和扩展程序，彻底消除代理的登录障碍。
+  * **基于代码的执行**：通过JavaScript函数暴露浏览器控制能力，相比基于CLI的工具，能更快速、高效地执行复杂的多步骤任务。
+  * **高质量页面快照**：提供最优质的页面快照，即使面对复杂嵌套的iframe，也能让代理可靠地“看见”和操作网页。
+  * **通用代理兼容性**：通过 `ego-browser` 连接层，可与任何代理命令行工具（如 Claude Code, Codex, Cursor）协同工作。
+* **为何值得关注**：它实现了从“浏览器自动化框架”到专为“人机协作”设计的共享浏览器环境的范式转变。基准测试显示，对于复杂任务，其执行速度最高可达同类产品的2.5倍，且消耗的token显著更少。此外，该工具完全免费。
+
+**[View Repository / 查看仓库](https://github.com/citrolabs/ego-lite)**
+
+### OpenWorker - AI Desktop Coworker that Completes Tasks
+*   **What it does**: OpenWorker is an open-source, local-first AI assistant that runs on your desktop. It connects to your files, tools, and apps to execute real-world tasks and deliver finished work (like documents, reports, and messages), rather than just providing chat-based answers or lists.
+*   **Key features**:
+    *   **Delivers Real Work**: Generates complete deliverables (docs, spreadsheets, replies).
+    *   **Tool Integration**: Connects to 25+ services (Slack, GitHub, Jira, Gmail, etc.) and your local terminal/files.
+    *   **Bring Your Own Model**: Works with OpenAI, Anthropic, Google, Ollama (local), and many other providers; you control the keys.
+    *   **Approval-First**: Asks for permission before taking consequential actions like sending messages or executing commands.
+    *   **Scheduled Automations**: Can run recurring tasks on a schedule.
+*   **Why it's notable**: It positions itself as a practical "AI colleague" focused on completing tasks end-to-end on your machine, prioritizing user control, privacy, and integration with existing workflows over simple conversation. Its local-first approach and open model support make it a flexible and private alternative to cloud-only AI assistants.
+
+### OpenWorker - 桌面AI同事，专为完成实际任务而设计
+*   **功能介绍**: OpenWorker 是一个开源、本地优先的AI助手，运行在您的桌面上。它连接您的文件、工具和应用程序，以执行真实世界的任务并交付成品（如文档、报告、消息），而不仅仅是提供基于聊天的答案或待办事项列表。
+*   **主要特点**:
+    *   **交付实际成果**: 生成完整的交付物（文档、电子表格、消息回复）。
+    *   **广泛工具集成**: 连接25+服务（Slack、GitHub、Jira、Gmail等）及您的本地终端和文件。
+    *   **自带模型密钥**: 支持OpenAI、Anthropic、Google、Ollama（本地）等多种提供商；密钥由您控制。
+    *   **操作先询问**: 在发送消息或执行命令等关键操作前，会先征求您的批准。
+    *   **定时自动化**: 可以按计划运行重复性任务。
+*   **为何值得关注**: 它将自己定位为专注于在您本机上端到端完成任务的实用“AI同事”，优先考虑用户控制、隐私以及与现有工作流的集成，而非简单的对话。其本地优先的设计和开放模型支持，使其成为注重灵活性和隐私的用户的替代选择。
+
+**[View Repository / 查看仓库](https://github.com/andrewyng/openworker)**
+
+### thinking-orbs - Dotted Thought-Orb Loading Indicators for AI & Agent UIs
+*   **What it does**: This is a React component library that provides animated, dotted "orb" loading indicators designed specifically for AI chat interfaces and agent UIs. It renders smooth animations using a plain 2D canvas, with no dependencies on WebGL or complex filters.
+*   **Key features**:
+    *   **Six distinct animation states**: `working`, `searching`, `solving`, `listening`, `composing`, `shaping`, each conveying a different agent activity.
+    *   **Two purpose-built sizes**: `64` for avatars and `20` for inline use, with individually tuned dot patterns and speeds.
+    *   **Automatic light/dark theme**: Detects the project's theme via CSS classes, attributes, or OS preference, and switches automatically (monochrome design).
+    *   **Performance & Accessibility**: Automatically pauses when offscreen or tab is hidden; respects `prefers-reduced-motion`; includes proper ARIA labels. Pure 2D canvas ensures cross-browser consistency.
+*   **Why it's notable**: It solves a specific UX problem for AI applications with a highly polished, performant, and thoughtful implementation. The careful tuning of animations for different states and its zero-dependency, accessible nature make it an attractive drop-in solution for developers building agent interfaces.
+
+### thinking-orbs - 面向AI与智能体界面的点状“思考之球”加载指示器
+*   **功能介绍**: 这是一个React组件库，提供了专为AI聊天界面和智能体UI设计的动画点状“光球”加载指示器。它使用纯2D Canvas渲染动画，无需WebGL或复杂滤镜，确保了跨浏览器的高性能和一致性。
+*   **主要特点**:
+    *   **六种独特动画状态**：`working`、`searching`、`solving`、`listening`、`composing`、`shaping`，分别表示智能体的不同活动。
+    *   **两种预设尺寸**：`64`（用于头像）和`20`（用于内联文本），每种尺寸都有独立的点状图案和速度设计。
+    *   **自动明暗主题适配**：能通过CSS类名、属性或操作系统偏好自动检测并切换主题（采用单色设计）。
+    *   **性能与可访问性**：在离开视口或标签页隐藏时自动暂停；尊重`prefers-reduced-motion`设置；内置合理的ARIA标签。纯2D Canvas确保了跨平台表现一致。
+*   **为何值得关注**: 它以一种高度精致、性能优异且考虑周全的实现方式，解决了AI应用中的一个具体UX痛点。其为不同状态精心调校的动画效果、零依赖的特性以及对可访问性的关注，使其成为开发者构建智能体界面时一个极具吸引力的即插即用解决方案。
+
+**[View Repository / 查看仓库](https://github.com/Jakubantalik/thinking-orbs)**
+
+### 🎬 How Close Can You Orbit a Black Hole? - Adam Brown
+**Channel:** Dwarkesh Patel
+*   What the video covers
+*   Key topics discussed
+*   Why it's worth watching
+
+### 🎬 黑洞周围能有多近的轨道？- 亚当·布朗
+**频道:** Dwarkesh Patel
+*   视频内容概述
+*   主要话题
+*   为何值得观看
+
+---
+**Summary:**
+
+### 🎬 How Close Can You Orbit a Black Hole? - Adam Brown
+**Channel:** Dwarkesh Patel
+*   **What the video covers:** An in-depth interview with physicist Adam Brown exploring the extreme physics and theoretical limits of orbiting a black hole.
+*   **Key topics discussed:** The concept of the "innermost stable circular orbit" (ISCO), the dangers and physics of crossing the event horizon, the role of a black hole's spin, and the mind-bending gravitational effects on time and space.
+*   **Why it's worth watching:** Offers a fascinating and accessible deep dive into general relativity and astrophysics, challenging common sci-fi depictions with real science from a top expert.
+
+### 🎬 黑洞周围能有多近的轨道？- 亚当·布朗
+**频道:** Dwarkesh Patel
+*   **视频内容概述：** 与物理学家亚当·布朗的深度访谈，探讨围绕黑洞运行的极端物理极限和理论可能性。
+*   **主要话题：** “最内稳定圆轨道”（ISCO）的概念、穿越事件视界的危险与物理过程、黑洞自旋的作用，以及引力对时空造成的超乎想象的效应。
+*   **为何值得观看：** 这是一场引人入胜且易于理解的深度探讨，将广义相对论和天体物理学的艰深理论，与顶尖专家的见解相结合，挑战了许多科幻作品中的常见描绘。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=Gpf4WvQ9uxQ)**
+
+### 🎬 What Actually Makes A Startup Durable
+**Channel:** Y Combinator
+* What the video covers: A live Q&A session from Startup School Paris where YC partners discuss the core principles that help startups survive and thrive long-term, based on direct questions from founders.
+* Key topics discussed: The critical mindset and operational habits of founders, strategies for navigating different phases of growth, common pitfalls that lead to failure, and building a resilient company culture.
+* Why it's worth watching: It offers direct, unfiltered advice from seasoned investors (YC partners) who have seen thousands of companies. The interactive Q&A format addresses real, pressing concerns from founders in the trenches, providing actionable insights for building a lasting business.
+
+### 🎬 创业公司究竟如何才能实现持久发展？
+**频道:** Y Combinator (YC)
+* 视频内容概述：这是“YC创业学校”巴黎站的一场现场问答环节。YC合伙人直接回答观众（创业者）关于如何让公司实现长期、稳健发展的问题。
+* 主要话题：探讨创始人必备的心态与运营习惯、公司不同增长阶段的应对策略、导致失败的常见陷阱，以及如何构建有韧性的企业文化。
+* 为何值得观看：视频汇集了YC合伙人（顶级投资人）基于观察数千家公司的直接经验所提供的“干货”建议。问答形式非常贴近实战，回答了创业者们最真实、最紧迫的困惑，为打造一家能长久生存的公司提供了切实可行的洞见。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=99sPd15j3Zc)**
+
+### 🎬 AI-Native Compliance Infrastructure
+**Channel:** Y Combinator
+*   **What the video covers:** This video explores how artificial intelligence is fundamentally transforming financial compliance infrastructure, which has traditionally relied on manual processes like spreadsheets and fragmented software. It presents a vision for an "AI-native" approach to automating complex compliance workflows.
+*   **Key topics discussed:** The challenges of traditional, manual compliance; the potential for AI to automate document review, risk assessment, and reporting; the architecture of an integrated AI compliance system; and the future of compliance as companies scale.
+*   **Why it's worth watching:** It offers a forward-looking perspective from a major tech platform (Y Combinator) on a critical but often overlooked operational pain point in finance. It’s valuable for founders, engineers, and fintech professionals interested in how AI can solve real-world business infrastructure problems and unlock efficiency.
+
+### 🎬 AI原生合规基础设施
+**频道:** Y Combinator
+*   **视频内容概述:** 本视频探讨了人工智能如何从根本上革新金融合规基础设施。传统的合规工作依赖于电子表格、分散的软件和不断扩大的专家团队等手动流程，而视频提出了一种利用AI自动化复杂合规工作流的“AI原生”新范式。
+*   **主要话题:** 传统手动合规面临的挑战；AI在自动化文档审核、风险评估和报告方面的潜力；集成式AI合规系统的架构；以及企业在扩展过程中合规工作的未来形态。
+*   **为何值得观看:** 本视频从知名科技平台Y Combinator的视角，前瞻性地探讨了金融领域一个关键但常被忽视的运营痛点。对于创始人、工程师和金融科技专业人士而言，了解AI如何解决真实世界的业务基础设施问题并提升效率，极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=BSElxGxgoIA)**
+
+### 🎬 Session Hijacking Explained 🔐 | How Browser Sessions Work (Cybersecurity Awareness)
+**Channel:** ezCommit
+*   What the video covers
+    *   A fundamental cybersecurity concept: session hijacking.
+    *   The mechanics of how web sessions work, primarily using session cookies.
+    *   Common methods attackers use to steal or manipulate these sessions to gain unauthorized access.
+*   Key topics discussed
+    *   **Session Cookies:** What they are and why they are critical for user authentication after login.
+    *   **Attack Vectors:** Explanation of techniques like Cross-Site Scripting (XSS), packet sniffing, and man-in-the-middle attacks to intercept sessions.
+    *   **Prevention & Awareness:** Practical advice on how users and developers can protect against session hijacking, emphasizing HTTPS and secure cookie practices.
+*   Why it's worth watching
+    *   Essential knowledge for anyone who uses the internet. It demystifies a common attack method that can lead to account takeovers.
+    *   The video is geared towards awareness, making complex security topics accessible for a non-technical audience.
+    *   Provides actionable insights to help you understand the importance of security features like HTTPS and to browse more safely.
+
+### 🎬 会话劫持详解 🔐 | 浏览器会话如何工作（网络安全意识）
+**频道:** ezCommit
+*   视频内容概述
+    *   一个核心的网络安全概念：会话劫持。
+    *   深入讲解浏览器会话的工作机制，重点是会话Cookie（Session Cookie）。
+    *   攻击者如何利用这些机制来窃取或操纵会话，从而获取未授权访问权限的常见方法。
+*   主要话题
+    *   **会话Cookie：** 解释它是什么，以及为何它在用户登录后进行身份验证时至关重要。
+    *   **攻击方式：** 详细说明跨站脚本（XSS）、数据包嗅探和中间人攻击等可用于截获会话的技术。
+    *   **防护与安全意识：** 提供实用建议，说明用户和开发者如何防范会话劫持，强调HTTPS和安全Cookie实践的重要性。
+*   为何值得观看
+    *   这是每一位互联网用户的必备知识，它揭示了可能导致账户被盗的常见攻击方法。
+    *   视频侧重于安全意识培养，将复杂的安全主题讲解得通俗易懂，适合非技术背景的观众。
+    *   提供了可操作的见解，帮助你理解HTTPS等安全功能的重要性，从而更安全地上网。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tc36mt6RdV4)**
+
+### 🎬 If Code Works Don't Touch It !! #coding #programming #python #shorts
+**Channel:** 𝗔𝘇𝗶𝘇 𝗖𝗼𝗱𝗲𝘅
+*   What the video covers
+*   A humorous and relatable take on the classic programmer's dilemma and mindset. It likely jokes about the "if it works, don't touch it" mentality while subtly critiquing the importance of code maintenance and technical debt.
+*   Key topics discussed
+    *   Developer psychology and common coding habits.
+    *   The tension between functional code and clean, maintainable code.
+    *   A lighthearted look at a universal experience in programming.
+*   Why it's worth watching
+    *   It's a quick, entertaining short that many developers will find immediately relatable and shareable.
+    *   It serves as a fun reminder about the importance of code quality and refactoring, packaged in a non-serious format.
+
+### 🎬 代码能跑就别碰？！ #编程 #程序员 #Python #短视频
+**频道:** 阿齐兹·科德克斯 (Aziz Codex)
+*   视频内容概述
+*   以幽默的方式探讨程序员的经典心态：“代码能跑就别动它！”。视频很可能在调侃这种心态的同时，也反映了技术债与代码整洁之间的永恒矛盾。
+*   主要话题
+    *   开发者的心理和常见的编码习惯。
+    *   功能性代码与干净、可维护代码之间的张力。
+    *   对编程世界普遍经历的轻松一瞥。
+*   为何值得观看
+    *   这是一段快速、有趣的短视频，容易引起开发者共鸣，非常适合分享。
+    *   它以轻松不严肃的形式，提醒了代码质量和重构的重要性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=2xZJk8Vaxvk)**
 
