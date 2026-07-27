@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 28, 2026"
 date: 2026-07-28
-description: "Today's digest: 3 Hacker News articles, 3 GitHub trending repos, 2 fast-moving projects, 5 YouTube videos, 0 Hugging Face models. 今日精选：3篇黑客新闻，3个热门项目，2个快速崛起项目，5个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -259,4 +259,168 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   为何值得观看：这是一个重要的安全提醒，适用于那些依赖这种简单却不安全的“隐藏”技巧的用户。它强调了使用加密等真正安全措施的重要性，而不是仅仅进行视觉伪装。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=1a69pHBA6tE)**
+
+<!-- [Title-Only] -->
+### Watching Go's new garbage collector move through the heap
+*   This article likely provides a technical deep-dive into the internals of the Go programming language's garbage collector (GC). Based on the title, it probably explains or demonstrates how the new, improved GC algorithm identifies, traverses, and cleans up unused objects ("moves through the heap"). It may include performance benchmarks, visualizations, or code-level analysis.
+*   This is interesting for Go developers and systems programmers because the garbage collector is a core component of runtime performance. Understanding how the new GC works can help developers write more efficient, low-latency applications and appreciate the ongoing improvements to the Go ecosystem.
+
+### 观察Go语言新垃圾回收器的堆内存活动
+*   根据标题推测，这篇文章很可能深入探讨了Go语言垃圾回收器（GC）的内部机制。它可能解释或展示了新的、改进后的GC算法如何在堆内存中识别、遍历和清理无用对象。文章内容可能包括性能基准测试、可视化图示或代码层面的分析。
+*   对于Go开发者和系统程序员来说，这篇文章值得关注，因为垃圾回收器是影响运行时性能的核心组件。了解新的GC工作原理有助于开发者编写出更高效、低延迟的应用程序，并理解Go生态系统的持续优化。
+
+**[Read Original / 阅读原文](https://theconsensus.dev/p/2026/07/19/observing-gos-garbage-collector-old-and-new.html)**
+
+<!-- [Title-Only] -->
+### Launch HN: Rise Reforming (YC S26) – Turning Waste Gases into Valuable Chemicals
+*   Based on the title, this article is a launch post for a startup called "Rise Reforming," which is part of the Y Combinator Summer 2026 batch. It likely introduces the company's core technology and business model.
+*   The central premise is taking **waste gases** (a broad and often polluting byproduct of industry) and using a reforming process to convert them into **valuable chemicals**. This points to a focus on industrial sustainability, carbon capture/utilization, and circular economy principles. It would be interesting to readers in cleantech, deep tech, and sustainable business, as it addresses a key environmental challenge while proposing a market-driven solution.
+
+### Launch HN：Rise Reforming (YC S26) – 将废气转化为有价值的化学品
+*   根据标题，这是一篇关于名为“Rise Reforming”的创业公司的发布文章，该公司属于 Y Combinator S26 批次。文章很可能介绍了公司的核心技术和商业模式。
+*   其核心理念是将**废气**（工业中广泛存在且常造成污染的副产品）通过一种重整工艺，转化为**有价值的化学品**。这表明该公司的业务聚焦于工业可持续发展、碳捕获/利用和循环经济原则。对于关注清洁科技、硬科技和可持续商业的读者而言，这个主题颇具吸引力，因为它直指一个关键的环境挑战，并提出了一种市场驱动的解决方案。
+
+**[Read Original / 阅读原文](https://www.rise-reforming.com)**
+
+### Python Standalone Builds
+*   This project creates self-contained, highly portable Python distributions that include a full-featured Python installation with most standard library extensions, and static or bundled dependencies.
+*   The builds are designed to minimize runtime dependencies and CPU requirements, aiming for compatibility across any system within the targeted architecture. Some distributions include build artifacts for downstream repackaging, and related projects like PyOxidizer and PyOxy extend this functionality for embedding and standalone use.
+
+### Python 独立构建版本
+*   此项目创建自包含、高度可移植的Python发行版，包含功能完整的Python安装，集成了大部分标准库扩展模块，并将依赖静态链接或随附打包。
+*   其构建目标是最小化运行时依赖并限制CPU指令集，旨在确保在目标架构的任何系统上都能运行。部分发行版附带构建产物供下游重新打包，并且相关项目如 PyOxidizer 和 PyOxy 基于此提供了嵌入式和独立运行的增强功能。
+
+**[Read Original / 阅读原文](https://gregoryszorc.com/docs/python-build-standalone/main/)**
+
+### GeoLibre - Lightweight, Cloud-Native GIS Platform
+*   **What it does:** A free, open-source GIS platform for visualizing, exploring, and analyzing geospatial data. It runs universally in web browsers, as native desktop/mobile apps, and within Jupyter notebooks, keeping all data local and private.
+*   **Key features:** Built with modern web tech (Tauri, React, TypeScript, MapLibre GL JS, DuckDB-WASM Spatial). Features 3D Tiles rendering, support for planetary bodies (Moon, Mars, etc.), responsive design, a SQL workspace, and 700+ geospatial processing tools accessible in the browser.
+*   **Why it's notable:** Its "run anywhere" architecture (browser, desktop, mobile, notebook) from a single codebase is highly flexible. The combination of being lightweight, cloud-native, completely local/private, and packed with powerful analysis tools (like in-browser SQL and geoprocessing) makes it a compelling, modern alternative to traditional GIS software.
+
+### GeoLibre - 轻量级云原生GIS平台
+*   **功能介绍:** 一款免费、开源的地理信息系统(GIS)平台，用于可视化、探索和分析地理空间数据。它可在网页浏览器、桌面应用、移动设备以及Jupyter笔记本中统一运行，同时确保所有数据保持本地和私密。
+*   **主要特点:** 基于Tauri v2、React、TypeScript、MapLibre GL JS和DuckDB-WASM Spatial等现代Web技术构建。核心功能包括3D Tiles渲染、对行星天体（如月球、火星）底图的支持、响应式界面设计、SQL工作空间，以及可在浏览器内使用的700多种地理处理工具。
+*   **为何值得关注:** 其“跨平台运行”（浏览器、桌面、移动端、笔记本）的统一代码库架构极具灵活性。它集轻量级、云原生、完全本地/私密，以及强大的分析工具（如浏览器内SQL和地理处理）于一身，使其成为传统GIS软件一个极具吸引力的现代替代方案。
+
+**[View Repository / 查看仓库](https://github.com/opengeos/GeoLibre)**
+
+### superfile - Pretty fancy and modern terminal file manager
+* What it does: A terminal-based file manager providing a graphical interface for navigating and performing file operations (like copy, paste, move) directly in your terminal, replacing traditional command-line file browsing.
+* Key features: Cross-platform support (macOS, Linux, Windows), plugin and theme systems, customizable hotkeys (with Vim-style config), and an auto-update check feature.
+* Why it's notable: It has gained significant traction today with 600 stars, likely due to its modern aesthetic, user-friendly interface, and rich functionality that appeals to terminal power users.
+
+### superfile - 美观且现代的终端文件管理器
+* 功能介绍：一个基于终端的文件管理器，提供图形化界面，让用户可以直接在终端中浏览文件并进行复制、粘贴、移动等操作，替代传统的命令行文件浏览方式。
+* 主要特点：跨平台支持（macOS、Linux、Windows），拥有插件和主题系统，可自定义热键（支持Vim风格配置），并具备自动更新检查功能。
+* 为何值得关注：该项目今日获得了600颗星，迅速升温，很可能是因为其现代化的视觉设计、用户友好的交互界面以及丰富的功能，深受终端高级用户的喜爱。
+
+**[View Repository / 查看仓库](https://github.com/yorukot/superfile)**
+
+### Kimi-K3 - 开放前沿智能模型
+*   **功能介绍**: Kimi K3 是一个开放权重的原生多模态智能体模型，总参数量达2.8万亿。它基于创新的Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 架构构建，支持原生视觉能力，并拥有高达100万token的上下文窗口，旨在为长期编码、知识工作和推理提供前沿智能。
+*   **主要特点**:
+    *   **创新架构**: 采用混合专家(MoE)架构，拥有896个专家，每次激活16个，实现了比前代显著提升的扩展效率。
+    *   **长程编码能力**: 能在极少人类监督下维持长时间的工程会话，处理大型代码库，并协调完成从GPU优化到游戏开发、芯片设计等多种复杂任务。
+    *   **智能体知识工作**: 支持端到端的知识工作，能生成深度研究报告、交互式可视化、小部件仪表盘，并进行运动设计和视频编辑。
+    *   **原生多模态与长上下文**: 统一理解文本、图像和视频，并支持超长上下文。
+    *   **开放权重**: 在Kimi K3许可证下完全开源，便于研究、部署和创新。
+*   **为何值得关注**: Kimi-K3是首个开源的3万亿参数级模型，其性能在多个基准测试中与GPT-5.5、Claude Opus 4.8等顶尖闭源模型竞争。它将前沿的多模态、长上下文和智能体能力以开放权重的形式提供，对推动AI研究和应用民主化具有重要意义。
+
+### Kimi-K3 - 开放前沿智能模型
+*   **功能介绍**: Kimi K3 是一个开放权重的原生多模态智能体模型，总参数量达2.8万亿。它基于创新的Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 架构构建，支持原生视觉能力，并拥有高达100万token的上下文窗口，旨在为长期编码、知识工作和推理提供前沿智能。
+*   **主要特点**:
+    *   **创新架构**: 采用混合专家(MoE)架构，拥有896个专家，每次激活16个，实现了比前代显著提升的扩展效率。
+    *   **长程编码能力**: 能在极少人类监督下维持长时间的工程会话，处理大型代码库，并协调完成从GPU优化到游戏开发、芯片设计等多种复杂任务。
+    *   **智能体知识工作**: 支持端到端的知识工作，能生成深度研究报告、交互式可视化、小部件仪表盘，并进行运动设计和视频编辑。
+    *   **原生多模态与长上下文**: 统一理解文本、图像和视频，并支持超长上下文。
+    *   **开放权重**: 在Kimi K3许可证下完全开源，便于研究、部署和创新。
+*   **为何值得关注**: Kimi-K3是首个开源的3万亿参数级模型，其性能在多个基准测试中与GPT-5.5、Claude Opus 4.8等顶尖闭源模型竞争。它将前沿的多模态、长上下文和智能体能力以开放权重的形式提供，对推动AI研究和应用民主化具有重要意义。
+
+**[View Repository / 查看仓库](https://github.com/MoonshotAI/Kimi-K3)**
+
+### Claude of Duty - A Browser FPS Built Entirely by AI from a Single Prompt
+*   **What it does:** A first-person shooter game rendered in the browser using Three.js and WebGL2. Its core premise is that the entire game, including all visual and audio assets, is procedurally generated at runtime from code—there are no pre-made 3D models, textures, or sound files.
+*   **Key features:** Features a complex, custom-built engine with 11 subsystems (including a full physics engine, procedural material generation, and AI). It demonstrates a novel development workflow using a fleet of orchestrated AI agents, with custom tooling for performance profiling and visual regression testing.
+*   **Why it's notable:** It's a technically ambitious showcase of procedural generation and AI-driven development, pushing the limits of what's possible in a web-based game. The project's transparency about its limitations and the documented optimization process (fixing a major 1200ms stall) provide valuable insights into game engine architecture and AI collaboration.
+
+### Claude of Duty - 由AI从单次提示构建的浏览器第一人称射击游戏
+*   **功能介绍:** 一款在浏览器中使用Three.js和WebGL2渲染的第一人称射击游戏。其核心前提是所有视觉和音频资产均由代码在运行时程序化生成，不使用任何预制的3D模型、纹理或音频文件。
+*   **主要特点:** 拥有一个复杂的、完全自定义的引擎，包含11个子系统（如完整的物理引擎、程序化材质生成和AI）。项目展示了一种新颖的工作流程，由AI代理团队协作开发，并配备了用于性能分析和视觉回归测试的自定义工具链。
+*   **为何值得关注:** 这是程序化生成和AI驱动开发的一个技术野心的展示，推动了基于Web的游戏的可能性边界。项目诚实地公开其局限性，并记录了性能优化过程（修复了高达1200毫秒的卡顿），为游戏引擎架构和AI协作提供了宝贵的见解。
+
+**[View Repository / 查看仓库](https://github.com/mshumer/Claude-of-Duty)**
+
+### 🎬 Why Time Runs Slower Near a Black Hole - Adam Brown
+**Channel:** Dwarkesh Patel
+
+*   **What the video covers:** An in-depth discussion with physicist Adam Brown about the fascinating phenomenon of gravitational time dilation, specifically exploring why and how time passes more slowly in the strong gravitational field near a black hole.
+*   **Key topics discussed:** The fundamental principles of General Relativity, the concept of spacetime curvature, the mechanics behind gravitational time dilation, and the extreme effects observed near event horizons.
+*   **Why it's worth watching:** Features a clear explanation from an expert on a mind-bending physics concept, making complex theory accessible. It connects a core prediction of Einstein's relativity to one of the universe's most extreme objects, perfect for anyone curious about astrophysics.
+
+### 🎬 为什么时间在黑洞附近变慢 - Adam Brown
+**频道:** Dwarkesh Patel
+
+*   **视频内容概述:** 与物理学家 Adam Brown 进行深入讨论，探讨引力时间膨胀这一迷人现象，具体解析为何以及如何在黑洞的强引力场附近时间流逝得更慢。
+*   **主要话题:** 广义相对论的基本原理、时空弯曲的概念、引力时间膨胀的机制，以及在事件视界附近观测到的极端效应。
+*   **为何值得观看:** 专家清晰讲解，将复杂的理论变得易于理解。它将爱因斯坦相对论的核心预言与宇宙中最极端的天体之一联系起来，非常适合所有对天体物理学感兴趣的人。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6oZZcWsBDK0)**
+
+### 🎬 I Built an AI Agent That Day Trades Crypto Using Claude Code (Tutorial)
+**Channel:** Austin Marcus
+
+*   **What the video covers:** This video is a practical tutorial where the creator, Austin Marcus, demonstrates how to build a functional AI agent for day-trading cryptocurrencies. The key innovation is that the project relies entirely on AI-powered development tools, specifically Claude Code, eliminating the need for traditional programming skills.
+*   **Key topics discussed:** The core topics are the intersection of AI and finance (DeFi), the concept of "vibe coding" (using natural language to build software), and a step-by-step guide on utilizing Claude's capabilities to generate, implement, and likely test a trading strategy or bot. The focus is on accessibility for non-programmers.
+*   **Why it's worth watching:** This tutorial is particularly valuable for tech enthusiasts, aspiring crypto traders, and those curious about the evolving landscape of AI-assisted development. It provides a tangible example of how generative AI is lowering barriers to entry in complex fields like algorithmic trading, showcasing a novel and practical application of tools like Claude.
+
+### 🎬 我用Claude代码创建了一个日内加密货币交易AI智能体（教程）
+**频道:** Austin Marcus
+
+*   **视频内容概述:** 本视频是一个实践教程，创作者Austin Marcus将演示如何构建一个用于日内加密货币交易的功能性AI智能体。其核心创新在于，整个项目完全依赖AI驱动的开发工具，特别是Claude代码，从而无需传统的编程技能。
+*   **主要话题:** 主要话题涵盖AI与金融（DeFi）的交叉应用、“氛围编程”的概念，以及如何利用Claude的能力来生成、实施并可能测试交易策略或机器人的分步指南。重点在于为非程序员群体降低参与门槛。
+*   **为何值得观看:** 本教程对于科技爱好者、有志于加密货币交易的人士以及对AI辅助开发演变感兴趣的人群特别有价值。它提供了一个切实的例子，展示了生成式AI如何降低进入算法交易等复杂领域的门槛，并突出了Claude等工具的新颖且实用的应用场景。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DkT6UzYX_UA)**
+
+### 🎬 You’re Not Behind (Yet): Master Claude Code in 31 Minutes
+**Channel:** Mikey Vibe Coding
+* A quick-start guide to learning and utilizing Claude Code, an AI-powered coding tool/framework, in under half an hour.
+* Focuses on demystifying AI-assisted development, providing a fast-track tutorial for beginners or those feeling left behind by the pace of AI tools.
+* Its primary value lies in its extreme conciseness, offering a practical, hands-on introduction to a modern AI development tool that could significantly accelerate a coding or no-code workflow.
+
+### 🎬 You’re Not Behind (Yet): Master Claude Code in 31 Minutes
+**频道:** Mikey Vibe Coding
+* 一个关于如何在半小时内快速上手并运用Claude Code（一个AI驱动的编码工具/框架）的入门指南。
+* 核心在于消除AI辅助开发的神秘感，为初学者或感觉自己在AI工具浪潮中落后的人提供一条快速学习的实践路径。
+* 其主要价值在于极高的时间效率，用极短的篇幅提供对一个现代AI开发工具的实用入门介绍，该工具有可能显著加速编码或无代码工作流程。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5v0ZYlje474)**
+
+### 🎬 Adobe Illustrator CC 2026 Tutorial
+**Channel:** SK Vidz
+*   **What the video covers:** A detailed tutorial on using Adobe Illustrator CC 2026, focusing on its integration with AI tools and design workflows to create assets for generating passive income.
+*   **Key topics discussed:** AI-assisted design techniques in Illustrator, modern vector creation, and practical applications for monetizing digital art and design skills.
+*   **Why it's worth watching:** This video bridges traditional design software with emerging AI capabilities, offering actionable strategies to enhance productivity and unlock new revenue streams. It's ideal for designers looking to future-proof their skills and explore the business side of digital creation.
+
+### 🎬 Adobe Illustrator CC 2026 教程
+**频道:** SK Vidz
+*   **视频内容概述：** 本视频提供了 Adobe Illustrator CC 2026 的详细教程，重点讲解如何将其与 AI 工具及设计工作流结合，以创作可带来被动收入的数字资产。
+*   **主要话题：** Illustrator 中的 AI 辅助设计技巧、现代矢量图形创作方法，以及将设计技能变现的实际应用。
+*   **为何值得观看：** 该视频将传统设计软件与前沿的 AI 能力相结合，提供了提升工作效率和开辟新收入来源的可行策略。对于希望更新技能并探索数字创作商业价值的设计师而言，极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=HCJRHWjWbaM)**
+
+### 🎬 AI-Assisted Development Tutorial – Multi-Agent Coding & Deployment with TRAE IDE
+**Channel:** freeCodeCamp.org
+* **What the video covers:** This tutorial provides a hands-on guide to using the TRAE IDE, an AI-powered development environment, for a complete software project lifecycle. It demonstrates how to plan, build, and deploy a full-stack habit tracker application.
+* **Key topics discussed:** Leveraging AI for code generation and assistance, multi-agent coding workflows, full-stack application development (frontend and backend), using modern deployment tools, and practical project management within an AI-integrated IDE.
+* **Why it's worth watching:** It offers a concrete, end-to-end example of how modern AI tools can significantly enhance developer productivity and streamline complex tasks like application architecture, coding, and deployment. It's ideal for developers looking to integrate AI into their practical workflow.
+
+### 🎬 AI辅助开发教程 – 使用TRAE IDE进行多智能体编码与部署
+**频道:** freeCodeCamp.org
+* **视频内容概述：** 本教程详细展示了如何使用AI驱动的开发环境 TRAE IDE 来完成一个完整软件项目的生命周期。视频将以一个全栈习惯追踪器应用为例，演示从规划、构建到部署的全过程。
+* **主要话题：** 利用AI进行代码生成与辅助、多智能体编码工作流、全栈应用开发（前端与后端）、使用现代部署工具，以及在AI集成IDE中进行实际项目管理。
+* **为何值得观看：** 本视频通过一个端到端的实际案例，具体展示了现代AI工具如何显著提升开发者效率，并简化应用架构、编码和部署等复杂任务。非常适合希望将AI融入实际工作流程的开发者观看。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=yVga-_gMfIM)**
 
