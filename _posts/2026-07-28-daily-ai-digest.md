@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 28, 2026"
 date: 2026-07-28
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 11 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，11个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -423,4 +423,223 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 * **为何值得观看：** 本视频通过一个端到端的实际案例，具体展示了现代AI工具如何显著提升开发者效率，并简化应用架构、编码和部署等复杂任务。非常适合希望将AI融入实际工作流程的开发者观看。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=yVga-_gMfIM)**
+
+The request was rejected because it was considered high risk
+
+**[Read Original / 阅读原文](https://www.anthropic.com/news/position-open-weights-models)**
+
+<!-- [Title-Only] -->
+### Benchmarking Opus 5 on SlopCodeBench
+*   Based on the title, this article likely presents a performance evaluation or benchmark test of an AI model called "Opus 5" (likely a version of an advanced language model like Claude) on a specific benchmark named "SlopCodeBench." This benchmark is probably designed to test the model's capabilities in code generation, understanding, or related programming tasks, possibly in a real-world or messy ("sloppy") coding context.
+*   This article might be interesting to readers who follow AI development, particularly in the coding assistant space, as it offers empirical data on how a leading-edge model performs on a targeted evaluation suite, helping to assess its practical utility for developers.
+
+### 在SlopCodeBench上对Opus 5进行基准测试
+*   根据标题推测，这篇文章很可能介绍了对一个名为“Opus 5”的AI模型（可能是一个先进的语言模型版本，如Claude）在名为“SlopCodeBench”的特定基准测试中进行的性能评估。该基准测试可能专门用于评估模型在代码生成、理解或相关编程任务上的能力，可能涉及真实场景或较为复杂（“sloppy”）的编码环境。
+*   这篇文章对于关注人工智能发展、特别是编程辅助领域的读者来说可能很有趣，因为它提供了前沿模型在特定评测套件上的实测数据，有助于开发者评估其实际应用价值。
+
+**[Read Original / 阅读原文](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md)**
+
+### The "Observer" Sensation in Returning Astronauts
+
+*   **Description:** Astronauts returning from six-month International Space Station missions often describe a persistent perceptual phenomenon where they feel like they are watching their own lives from a "half-step outside the frame," observing rather than fully participating.
+*   **Experiences:** Common experiences include feeling like a guest in their own home, having conversations with a slight delay, a "doubled awareness" (being present while watching themselves be present), and finding ordinary sensations like smells, gravity, and food to be overwhelmingly sharp or theatrical.
+*   **Neurological Cause:** The brain adapts to microgravity by rewiring sensory processing (e.g., relying more on vision, degrading proprioception). Returning to Earth requires a noisy and asymmetric recalibration, which the brain interprets as an extra layer of observation during basic tasks.
+*   **Psychological Cause:** The continuous self-monitoring and vigilance required for safety in the confined, consequential environment of the station does not switch off upon landing, extending into life on Earth.
+*   **"Overview Effect":** Seeing Earth from space shifts perspectives, often leading to a temporary emotional detachment from mundane terrestrial concerns, which can manifest as the observer sensation.
+*   **Operational Importance:** NASA takes this sensation seriously as it indicates a temporary degradation in reaction time and decision-making. Understanding it is critical for planning longer missions, like to Mars, where the readjustment period will be more severe.
+
+### 返回宇航员的“观察者”感受
+
+*   **现象描述：** 从国际空间站执行六个月任务返回地球的宇航员常描述一种持续的感知现象，感觉自己仿佛从“画框之外半步”的地方观察自己的生活，处于旁观而非完全参与的状态。
+*   **具体体验：** 常见体验包括在自己家中感觉像访客、对话时有轻微延迟、“双重觉知”（身处其中又仿佛在观察自己身处其中），以及觉得重力、气味、食物等平常感受异常强烈或带有“戏剧性”。
+*   **神经学原因：** 大脑为适应微重力会重新校准感官处理（如更依赖视觉、本体感觉减退）。返回地球后，这种校准过程剧烈且不对称，大脑将日常任务处理为需要额外观察的过程。
+*   **心理学原因：** 在空间站那种受限、操作后果重大的环境中保持的高度自我监控和警惕状态，在返回地球后不会立即关闭，从而延续到日常生活中。
+*   **“总观效应”：** 从太空看到地球改变了世界观，常导致对地球上日常琐事产生暂时的疏离感，这可能表现为观察者感受。
+*   **任务重要性：** 美国宇航局严肃对待这一现象，因为它表明反应时间和决策能力暂时下降。理解这一点对于规划火星等更长期的任务至关重要，因为在这些任务中，宇航员的适应期将更为漫长和艰难。
+
+**[Read Original / 阅读原文](https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/)**
+
+### bitchat - Decentralized Bluetooth Mesh & Nostr Chat App
+
+*   **What it does**: bitchat is a decentralized peer-to-peer messaging application that combines two communication layers: a local Bluetooth Low Energy (BLE) mesh network for offline, proximity-based chat, and the Nostr protocol for internet-connected, global communication. It requires no accounts, phone numbers, or central servers, embodying an "IRC vibes" ethos of simple, direct group communication.
+*   **Key features**:
+    *   **Dual Transport**: Seamlessly uses Bluetooth mesh for offline, multi-hop local messaging and falls back to Nostr relays for internet-based reach.
+    *   **Location-Based Channels**: Creates geographic chat rooms (e.g., by city block or neighborhood) using geohash coordinates over the Nostr network.
+    *   **Privacy-Focused**: No user accounts are required. Features end-to-end encryption using the Noise Protocol for mesh and a custom "private envelope" system for Nostr.
+    *   **IRC-Style Interface**: Offers familiar text commands like `/slap`, `/msg`, and `/who`.
+    *   **Cross-Platform**: Native Universal App for both iOS and macOS.
+    *   **Performance & Security**: Includes optimizations like LZ4 compression and an emergency wipe feature (triple-tap).
+*   **Why it's notable**: The app is notable for its innovative hybrid architecture that solves a practical problem: enabling both immediate, local communication (e.g., during protests, disasters, or in areas with no internet) and global community building. Its rapid gain of **2,346 stars in a day** likely stems from its strong appeal to privacy advocates, those interested in decentralized/peer-to-peer technologies, and users seeking resilient communication tools outside traditional centralized platforms. The explicit focus on verifiable builds and public domain licensing further underscores its commitment to transparency and anti-censorship principles.
+
+### bitchat - 去中心化蓝牙网格与Nostr聊天应用
+
+*   **功能介绍**: bitchat 是一个去中心化的点对点消息应用，融合了两种通信层：用于离线、近距离聊天的本地蓝牙低功耗（BLE）网格网络，以及用于互联网连接的全球通信的 Nostr 协议。它无需账户、电话号码或中央服务器，体现了类似 IRC 的简单、直接群组通信精神。
+*   **主要特点**:
+    *   **双重传输**：无缝使用蓝牙网格进行离线、多跳的本地消息传递，并在网络可用时回退到 Nostr 中继以实现全球互联。
+    *   **基于位置的频道**：使用地理哈希码坐标，在 Nostr 网络上创建地理聊天室（例如，按城市街区或邻里划分）。
+    *   **隐私优先**：无需用户账户。在网格网络中使用 Noise 协议，在 Nostr 中使用定制的“私信信封”系统实现端到端加密。
+    *   **IRC风格界面**：提供熟悉的文本命令，如 `/slap`、`/msg` 和 `/who`。
+    *   **跨平台支持**：为 iOS 和 macOS 提供原生通用应用。
+    *   **性能与安全**：包含 LZ4 压缩等优化，并设有紧急擦除功能（三击）。
+*   **为何值得关注**: 该应用因其创新的混合架构而备受瞩目，它解决了一个实际问题：既能支持即时、本地的通信（如在抗议活动、灾难期间或无网络地区），又能促进全球社区的建立。其 **一天内获得 2,346 颗星** 的快速增长，很可能源于它对隐私倡导者、对去中心化/点对点技术感兴趣的用户，以及寻求传统中心化平台之外弹性通信工具的用户具有强大吸引力。它对可验证构建和公共领域许可的明确关注，进一步强调了其对透明度和反审查原则的承诺。
+
+**[View Repository / 查看仓库](https://github.com/permissionlesstech/bitchat)**
+
+### Amnezia VPN Client - Self-Hosted VPN Client with Advanced Protocols
+* **What it does**: An open-source VPN client designed for easy self-hosted VPN deployment. It automates the installation and configuration of VPN server containers on your own server via SSH.
+* **Key features**:
+    * **Extremely easy setup**: Simply enter server IP, SSH credentials, and the client handles everything.
+    * **Broad protocol support**: Includes classic protocols (OpenVPN, WireGuard, IKEv2) and obfuscation/masking protocols (OpenVPN over Cloak/Shadowsocks, AmneziaWG, XRay).
+    * **Split tunneling**: Allows specific websites or apps to bypass the VPN.
+    * **Cross-platform**: Available for Windows, macOS, Linux, Android, and iOS.
+* **Why it's notable**: It's trending (515 stars today) due to its powerful combination of user-friendly automation for self-hosting and advanced privacy features through obfuscated protocols, making it a strong choice for users seeking control and security.
+
+### Amnezia VPN Client - 功能强大的自托管 VPN 客户端
+* **功能介绍**：一款开源的 VPN 客户端，核心功能是帮助用户轻松地在自己的服务器上搭建私有 VPN。它能通过 SSH 自动化安装和配置 VPN 服务器容器。
+* **主要特点**：
+    * **设置极其简单**：只需输入服务器 IP、SSH 登录信息，客户端将自动完成 VPN 的安装和连接。
+    * **丰富的协议支持**：涵盖 OpenVPN、WireGuard、IKEv2 等经典协议，以及 OpenVPN over Cloak/Shadowsocks、AmneziaWG、XRay 等具有流量混淆（伪装）功能的协议。
+    * **支持分流隧道**：可指定网站或应用单独使用或不使用 VPN。
+    * **全平台覆盖**：支持 Windows、macOS、Linux、Android 和 iOS 系统。
+* **为何值得关注**：该项目今日获得 515 颗星，热度很高。其优势在于将高度自动化的自托管部署与增强隐私的混淆协议相结合，为追求控制权和安全性的用户提供了一个强大且易用的选择。
+
+**[View Repository / 查看仓库](https://github.com/amnezia-vpn/amnezia-client)**
+
+### Project AIRI - A Self-Hosted, Open-Source Neuro-sama Companion
+*   **What it does:** It is an open-source project aiming to recreate Neuro-sama. It creates a self-hosted "soul container" for a cyber living companion or "AI waifu" that can not only chat but also interact with its environment.
+*   **Key features:** Capable of **real-time voice chat**, playing games like **Minecraft and Factorio**, and being accessed across **Web, macOS, and Windows**. It offers a self-hosted, user-owned experience.
+*   **Why it's notable:** It represents a push towards more capable, autonomous, and interactive AI companions beyond simple chatbots. Its open-source nature, rapid growth (572 stars in a day), and ambition to replicate a popular streaming AI personality make it a trending and notable project in the AI companion space.
+
+### Project AIRI - 自托管、开源的 Neuro-sama 伴侣
+*   **功能介绍：** 这是一个旨在重现 Neuro-sama 的开源项目。它构建了一个自托管的“灵魂容器”，用于创建一个能够不仅进行对话，还能与环境互动的赛博生命伴侣或“AI老婆”。
+*   **主要特点：** 具备**实时语音交互**能力，可以游玩《Minecraft》和《Factorio》等游戏，并支持**Web、macOS 和 Windows** 多平台访问。提供完全自托管、用户可控的体验。
+*   **为何值得关注：** 它推动了AI伴侣从简单聊天机器人向更强大、自主且能深度互动的方向发展。其开源特性、快速增长（单日获得572星）以及复刻热门流媒体AI形象的雄心，使其成为AI伴侣领域一个备受关注的热门项目。
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
+
+### scriptc - Zero-runtime TypeScript compiler
+* **What it does:** Compiles standard TypeScript code into small, self-contained native executables without requiring Node.js or any JavaScript runtime in the final binary.
+* **Key features:**
+    * Compiles TypeScript directly to native code with no code modifications required.
+    * Offers static analysis to show compilation coverage, with a three-tier system (static, dynamic, rejected).
+    * Supports a vast surface of TypeScript language features, standard library, and Node.js APIs (including `http`, `net`, `fs`).
+    * Achieves exceptional performance: ~2ms startup, tiny binary sizes (~200KB static), and low memory usage.
+    * Enforces correctness via extensive differential testing against Node.js and memory safety audits with AddressSanitizer.
+* **Why it's notable:** It represents a significant shift for TypeScript, enabling deployment as a lightweight, standalone native binary. Its focus on correctness, performance (rivaling Go/Rust/Zig on startups), and compatibility with existing Node.js code makes it a compelling tool for building fast, portable applications without the overhead of a JavaScript runtime.
+
+### scriptc - 零运行时TypeScript编译器
+* **功能介绍:** 将标准的TypeScript代码编译成小巧、自包含的本地可执行文件，最终二进制文件中无需包含Node.js或任何JavaScript运行时环境。
+* **主要特点:**
+    * 可直接将TypeScript编译为本地代码，无需修改源代码。
+    * 提供静态分析以展示代码可编译覆盖率，并采用三级编译策略（静态、动态、拒绝）。
+    * 支持广泛的TypeScript语言特性、标准库以及Node.js API（包括`http`、`net`、`fs`等）。
+    * 性能卓越：约2毫秒的启动时间、极小的二进制文件体积（静态约200KB）和低内存占用。
+    * 通过与Node.js的详尽差异测试和使用AddressSanitizer进行内存安全审计，确保正确性。
+* **为何值得关注:** 它为TypeScript生态带来了重要变革，使其能够作为轻量级的本地原生二进制文件进行部署。其对正确性、性能（启动速度可与Go/Rust/Zig媲美）的专注，以及与现有Node.js代码的兼容性，使其成为构建快速、可移植且无JavaScript运行时开销应用的强大工具。
+
+**[View Repository / 查看仓库](https://github.com/vercel-labs/scriptc)**
+
+### esp32-ai - 在$8微控制器上运行大型语言模型
+*   **功能介绍**: 这是一个在ESP32-S3微控制器（约$8）上本地运行的28.9M参数大型语言模型（LLM）。它无需连接服务器，可直接在设备上以每秒约9.5个token的速度生成文本。
+*   **主要特点**:
+    *   **超大参数量**: 相比此前类似芯片上运行的26万参数模型，参数量提升了约一百倍。
+    *   **创新内存架构**: 利用谷歌Gemma模型的“逐层嵌入”技术，将25M参数的大型嵌入表存放在慢速闪存中，仅在需要时少量读取，解决了微控制器SRAM内存极小的根本限制。
+    *   **完全离线运行**: 所有计算均在设备端完成，无需网络连接。
+*   **为何值得关注**: 该项目在极其有限且低成本的硬件上实现了LLM的本地推理，是对边缘计算和端侧AI的突破性探索。它展示了如何通过巧妙的架构设计，让强大的AI模型脱离对云服务器的依赖，为低功耗、离线设备开辟了新的可能性。
+
+### esp32-ai - 在$8微控制器上运行大语言模型
+*   **功能介绍**: 这是一个在ESP32-S3微控制器（售价约8美元）上本地运行的28.9M参数大语言模型。模型完全在设备端运行，无需服务器，并能以约9.5个token/秒的速度在连接的小屏幕上生成文本。
+*   **主要特点**:
+    *   **巨量参数**: 相较于此前在此类芯片上运行的26万参数模型，其参数量提升了约一百倍。
+    *   **突破性内存架构**: 采用了源自谷歌Gemma模型的“逐层嵌入”技术，将25M参数的大型嵌入表存储在慢速闪存中，仅按需加载每个token所需的少量数据（约450字节），从而在内存极其有限的微控制器上实现了大模型的运行。
+    *   **完全离线与端侧推理**: 所有计算均在芯片本地完成，无需任何网络连接。
+*   **为何值得关注**: 该项目在极其有限且低成本的硬件上实现了大语言模型的本地推理，是边缘AI领域的一项重要突破。它通过创新的架构设计解决了微控制器内存不足的瓶颈，证明了强大的AI能力可以脱离云端，在低成本的独立设备上运行，为低功耗和离线智能应用展示了巨大潜力。
+
+**[View Repository / 查看仓库](https://github.com/slvDev/esp32-ai)**
+
+### 🎬 Sam Altman: "Never a Better Time to Do a Startup"
+**Channel:** Y Combinator
+*   **What the video covers:** Sam Altman (CEO of OpenAI and former President of Y Combinator) delivers a talk arguing that the current era presents an unprecedentedly favorable environment for starting a technology company. He draws on his personal journey from a YC founder in 2005 to a leading figure in AI to analyze the factors creating this opportunity.
+*   **Key topics discussed:**
+    1.  The dramatic reduction in the cost and time required to build and launch a software product.
+    2.  The transformative and democratizing potential of AI (like large language models) as a platform for new startups.
+    3.  Strategic advice for founders on navigating the current landscape, focusing on building real, long-term value.
+    4.  The evolving role of capital and the "idea space" in the modern startup ecosystem.
+*   **Why it's worth watching:** This is a seminal talk from one of the most influential voices in Silicon Valley. Altman provides a concise, optimistic, and actionable framework for understanding *why now* is a unique moment for entrepreneurs. It's essential viewing for aspiring founders, tech enthusiasts, and anyone trying to grasp the impact of AI on innovation.
+
+### 🎬 Sam Altman：“创业从未像现在这样好”
+**频道:** Y Combinator
+*   **视频内容概述：** OpenAI首席执行官、Y Combinator前总裁山姆·奥特曼发表演讲，论述当前时代为创立科技公司提供了前所未有的有利环境。他结合自己从2005年YC首期学员到AI领域领军人物的个人经历，分析了创造这一机遇的关键因素。
+*   **主要话题：**
+    1.  构建和发布一款软件产品的成本与时间已大幅降低。
+    2.  人工智能（如大语言模型）作为新平台所具有的变革性与普惠性潜力。
+    3.  为创始人提供的战略建议，强调在当下环境中应专注于创造真实、长期的价值。
+    4.  资本和“创意空间”在现代创业生态系统中角色的演变。
+*   **为何值得观看：** 这是来自硅谷最具影响力的人物之一的一次重要演讲。奥特曼提供了一个简洁、乐观且具有操作性的框架，来理解为何现在是创业的独特时刻。对于有志于创业的人、科技爱好者以及任何希望理解AI对创新影响的人来说，这都是一次必看的内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=ZIaOBAjvc38)**
+
+### 🎬 Why Time Runs Slower Near a Black Hole - Adam Brown
+**Channel:** Dwarkesh Patel
+
+*   **What the video covers:** This video features a deep dive into the phenomenon of time dilation as predicted by Einstein's theory of general relativity, specifically in the extreme gravitational environment near a black hole.
+*   **Key topics discussed:** It explains how immense gravity warps spacetime, causing time to pass more slowly for an observer closer to a massive object like a black hole. The discussion likely touches on the science behind this, its implications for space travel or our understanding of the universe, and potential thought experiments.
+*   **Why it's worth watching:** It promises to make a complex and mind-bending concept of theoretical physics accessible and fascinating, using the dramatic example of a black hole. It's an excellent resource for anyone curious about the fundamental nature of time and gravity.
+
+### 🎬 为什么黑洞附近的时间会变慢 - 亚当·布朗
+**频道:** Dwarkesh Patel
+
+*   **视频内容概述:** 本视频深入探讨了爱因斯坦广义相对论所预言的时间膨胀现象，重点分析了在黑洞这样极端引力环境下的表现。
+*   **主要话题:** 视频解释了巨大的引力如何扭曲时空，导致靠近黑洞等巨大天体的观察者所经历的时间流逝得更慢。讨论可能涉及这一现象背后的科学原理、它对太空旅行或我们理解宇宙的影响，以及相关的思想实验。
+*   **为何值得观看:** 它有望将理论物理学中这个复杂而令人费解的概念，通过黑洞这一引人入胜的实例变得易于理解。对于任何对时间和引力基本本质感兴趣的人来说，这都是一个绝佳的科普资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=6oZZcWsBDK0)**
+
+### 🎬 Boris Cherny: Building Claude Code
+**Channel:** Y Combinator
+* Boris Cherny, the creator of Claude Code, discusses the development and philosophy behind the AI-powered coding tool.
+* Key topics include the launch of Opus 5, the technical decisions in building Claude Code, and insights into AI-assisted development.
+* Offers a behind-the-scenes look at building a cutting-edge AI product, providing valuable lessons for developers and startup founders on AI integration.
+
+### 🎬 Boris Cherny：构建Claude Code
+**频道:** Y Combinator
+* Claude Code的创始人Boris Cherny分享了这款AI驱动的编程工具的开发过程与设计理念。
+* 主要话题包括Opus 5的发布、构建Claude Code时的技术决策以及对AI辅助开发的见解。
+* 深入剖析尖端AI产品的构建过程，为开发者与创业者提供了关于AI集成的宝贵经验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=qyPCVqFUyDo)**
+
+### 🎬 How to make a melon with an invisible head in Melon Sandbox
+**Channel:** Vedid
+*   What the video covers
+*   This is a short tutorial demonstrating a specific character customization trick within the game *Melon Sandbox*.
+*   Key topics discussed
+*   A step-by-step guide to creating a melon character model with an invisible head.
+*   Why it's worth watching
+*   It provides a quick, actionable tip for players interested in creative customization and achieving unique, quirky character designs in the game.
+
+### 🎬 如何在西瓜沙盒中制作无头西瓜
+**频道:** Vedid
+*   视频内容概述
+*   这是一个简短的教程，展示了在游戏《西瓜沙盒》中进行特定角色自定义的技巧。
+*   主要话题
+*   一步一步指导如何创建一个头部隐形的西瓜角色模型。
+*   为何值得观看
+*   它为有兴趣进行创意自定义、并想在游戏中获得独特搞怪角色设计的玩家提供了一个快速、实用的小窍门。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WnAhgMRotr4)**
+
+### 🎬 I Built an AI Agent That Day Trades Crypto Using Claude Code (Tutorial)
+**Channel:** Austin Marcus
+*   What the video covers: A step-by-step tutorial on building a cryptocurrency day trading bot using the Claude AI model. The creator emphasizes a "vibe coding" approach, meaning no prior traditional programming experience is required.
+*   Key topics discussed: Using Claude AI for code generation, creating an automated trading agent, integrating with crypto markets, and the "vibe coding" methodology for rapid prototyping.
+*   Why it's worth watching: It demonstrates a cutting-edge application of AI as a coding partner, making complex financial automation accessible to beginners. It's a practical guide for leveraging AI to build functional software with minimal technical background.
+
+### 🎬 我用Claude Code构建了一个进行加密货币日内交易的AI代理（教程）
+**频道:** Austin Marcus
+*   视频内容概述：这是一个使用Claude AI模型构建加密货币日内交易机器人的分步教程。创作者强调了一种“氛围编程”方法，即完全不需要传统的编程经验。
+*   主要话题：使用Claude AI生成代码、创建自动化交易代理、与加密货币市场集成，以及用于快速原型开发的“氛围编程”方法论。
+*   为何值得观看：它展示了将AI作为编程伙伴的前沿应用，使复杂的金融自动化对初学者也变得触手可及。这是一份利用AI以最少技术背景构建功能型软件的实用指南。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=DkT6UzYX_UA)**
 
