@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 28, 2026"
 date: 2026-07-28
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 10 fast-moving projects, 12 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，10个快速崛起项目，12个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false### Our Position on Open-Weights Models: Anthropic
@@ -410,4 +410,168 @@ pin: false### Our Position on Open-Weights Models: Anthropic
 *   对任何畏惧 DSA 的学习者而言都值得观看，因为它在深入编程实践之前，提供了一个温和的、无需编码的切入点，帮助理解核心原理。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=4cm9PMNikXM)**
+
+### Formally Verified 3D Mesh Intersection: Trust the Specification, Not the Code
+*   **Core Innovation**: Presents a formally verified 3D constructive solid geometry (CSG) implementation for mesh intersection. The key claim is trust in a concise, human-readable specification, not the complex AI-generated implementation code.
+*   **Verification & Workflow**: Uses Lean 4 for verification. A human reviewer only needs to read **93 lines of formal specification** to certify the kernel's correctness, bypassing inspection of over 1,000 lines of intricate AI-written algorithm code and 60,000 lines of AI-generated proofs.
+*   **Demo & Performance**: Includes a browser-based web demo. The implementation prioritizes verifiability over speed, resulting in slower performance compared to state-of-the-art tools (e.g., 24 seconds for two 70k-triangle meshes).
+*   **Formal Foundation**: The specification is based on mathematical solids (signed ray intersection), guaranteeing that the output mesh's solid is the exact intersection of the inputs' solids, along with practical well-formedness conditions.
+*   **Development Process**: Guided the development iteratively by refining the specification and delegating implementation and proofs to AI agents (like Claude), using the formal checker at each milestone to ensure progress toward the final goal.
+
+### 经过形式化验证的3D网格求交：信任规范，而非代码
+*   **核心创新**：展示了一个用于网格求交的、经过形式化验证的3D构造实体几何（CSG）实现。其核心主张是信任一份简洁、人类可读的形式化规范，而不是复杂的AI生成实现代码。
+*   **验证与工作流**：使用Lean 4进行验证。评审人员只需阅读 **93行的形式化规范**，即可认证核心程序的正确性，从而免于审查超过1000行的复杂AI算法实现代码和60,000行的AI生成证明。
+*   **演示与性能**：提供了基于浏览器的在线演示。该实现优先考虑可验证性，因此性能比最先进的工具慢（例如，两个包含70k个三角形的网格求交需要24秒）。
+*   **形式化基础**：规范基于数学上的“实体”概念（带符号的射线相交测试），保证输出网格所定义的实体精确等于输入网格实体的交集，并满足实际的网格良好结构条件。
+*   **开发过程**：通过迭代优化规范、并将实现和证明工作委托给AI代理（如Claude）来引导开发。在每个里程碑阶段，都使用形式化检查器来验证进度是否符合最终目标。
+
+**[Read Original / 阅读原文](https://github.com/schildep/verified-3d-mesh-intersection)**
+
+### Breakthrough HIV Vaccine Achieves Unprecedented Success in Preclinical Trials
+
+*   **Novel Approach:** Scientists developed a vaccine using a "germline targeting" strategy, which trains naive B cells to produce rare, potent antibodies.
+*   **Mechanism:** The vaccine prompts the immune system to generate large quantities of "broadly neutralizing" antibodies, which are key to fighting HIV's evasive defenses.
+*   **Unprecedented Results:** In a study with primates, the vaccine elicited the most robust HIV-fighting antibody response ever recorded, leading to human clinical trials.
+
+### HIV疫苗在临床前研究中取得前所未有的成功
+
+*   **创新策略：** 科学家开发了一种采用“胚系靶向”策略的疫苗，该策略旨在训练初始B细胞产生罕见的高效抗体。
+*   **作用机制：** 该疫苗促使免疫系统产生大量“广谱中和”抗体，这是对抗HIV免疫逃逸防御机制的关键。
+*   **历史性成果：** 在灵长类动物研究中，该疫苗引发了有记录以来最强的抗HIV抗体反应，目前已进入人体临床试验阶段。
+
+**[Read Original / 阅读原文](https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/)**
+
+### Introducing tale.fyi: A Home for Fiction Online
+* The author created tale.fyi as a dedicated online space for fiction, starting with public domain literature.
+* The platform offers features like saving reading progress and seamless switching between reading and listening modes.
+* It is built on humanity's public domain library (like Project Gutenberg) and is completely free to use.
+* The author believes the internet currently favors non-fiction, and fiction is crucial for empathy and understanding others' perspectives.
+* A new tool, tale.fyi/tell, allows users to create and own their own stories and audience.
+
+### 介绍 tale.fyi：网络小说的新家园
+* 作者创建了 tale.fyi，作为一个专门的网络小说空间，首先从公共领域的文学作品开始。
+* 该平台提供保存阅读进度以及在阅读和听书模式间无缝切换等功能。
+* 它建立在人类公共领域图书馆（如古登堡计划）的基础上，完全免费使用。
+* 作者认为当前互联网偏向于非虚构内容，而小说对于培养共情和理解他人视角至关重要。
+* 一个新工具 tale.fyi/tell 允许用户创作并完全拥有自己的故事和受众。
+
+**[Read Original / 阅读原文](https://tale.fyi/@sam/announcing-tale-fyi-read-or-listen-to-an-entire-book-from-a-single-link)**
+
+### Pascal Editor - A Web-based 3D Architectural Design Tool
+*   **What it does**: It is a browser-based 3D building editor designed for architects and designers to create, edit, and share architectural projects directly in the web.
+*   **Key features**:
+    *   **Modern Web Stack**: Built with React Three Fiber, WebGPU, and Zustand for high-performance 3D rendering and state management.
+    *   **Modular Monorepo Architecture**: Separated into core packages (`@pascal-app/core`, `viewer`, `editor`, `nodes`) for clear separation of concerns, promoting reusability and maintainability.
+    *   **Node-Based Scene Graph**: Uses a hierarchical, flat-dictionary data model (`Site -> Building -> Level -> ...`) for flexible and efficient scene manipulation.
+    *   **Efficient Rendering Pipeline**: Implements a "dirty node" system with dedicated renderers and update loops (`useFrame`) to optimize geometry generation and performance.
+    *   **Full Editing Toolkit**: Includes specialized tools for drawing walls, creating slabs, placing items (furniture/fixtures), and managing zones, with built-in spatial validation.
+    *   **State Persistence**: Scene data is persisted to IndexedDB with undo/redo functionality (via Zundo).
+*   **Why it's notable**: This project stands out for its ambitious attempt to bring a professional-grade architectural CAD workflow into the modern web browser. It leverages cutting-edge web technologies like WebGPU and demonstrates a sophisticated, scalable architecture for building complex 3D applications. The clear separation between a rendering `viewer` and interactive `editor` components makes it a compelling reference for developing similar real-time collaborative or creative tools on the web.
+
+### Pascal Editor - 基于 Web 的 3D 建筑设计工具
+*   **功能介绍**: 这是一个基于浏览器的 3D 建筑编辑器，供建筑师和设计师直接在网页中创建、编辑和分享建筑项目。
+*   **主要特点**:
+    *   **现代 Web 技术栈**: 使用 React Three Fiber、WebGPU 和 Zustand 构建，实现了高性能的 3D 渲染和状态管理。
+    *   **模块化 Monorepo 架构**: 分为核心包（`@pascal-app/core`、`viewer`、`editor`、`nodes`），职责清晰，便于复用和维护。
+    *   **基于节点的场景图**: 采用层级化的扁平字典数据模型（`场地 -> 建筑 -> 楼层 -> ...`），实现灵活高效的场景操作。
+    *   **高效渲染管线**: 实现了“脏节点”更新系统，配合专用渲染器和更新循环（`useFrame`），优化了几何体生成与性能。
+    *   **全套编辑工具集**: 包含绘制墙体、创建楼板、放置构件（家具/设备）和管理功能区等专用工具，并内置空间验证。
+    *   **状态持久化**: 场景数据可持久化到 IndexedDB，并支持撤销/重做功能（通过 Zundo）。
+*   **为何值得关注**: 该项目尝试将专业级的建筑 CAD 工作流引入现代浏览器，极具雄心。它运用了 WebGPU 等前沿 Web 技术，并展示了一种构建复杂 Web 端实时 3D 应用的、可扩展的先进架构。其清晰的渲染 `viewer` 与交互式 `editor` 组件分离模式，使其成为开发类似 Web 端实时协作或创意工具的重要参考。
+
+**[View Repository / 查看仓库](https://github.com/pascalorg/editor)**
+
+### Jenkins - Leading Open-Source Automation Server
+*   **What it does**: Jenkins is a self-contained, open-source automation server used to automate all kinds of tasks related to building, testing, and deploying software, enabling continuous integration and continuous delivery (CI/CD).
+*   **Key features**:
+    *   **Extensible Plugin Ecosystem**: Offers over 2,000 plugins that support building, automating, and virtually any development workflow.
+    *   **Flexible Deployment**: Available as a WAR file, Docker image, native packages, or installers for various platforms.
+    *   **Two Release Lines**: Provides a **Weekly** release for cutting-edge features and a **Long-Term Support (LTS)** release for stability.
+    *   **Core Use Cases**: Automates building projects, running tests for early bug detection, static code analysis, and deployment.
+*   **Why it's notable**: Jenkins is the **leading and most established open-source automation server**, forming the backbone of CI/CD pipelines for **millions of users and thousands of companies** worldwide. Its massive plugin ecosystem and active community make it highly adaptable to nearly any software development process.
+
+### Jenkins - 领先的开源自动化服务器
+*   **功能介绍**: Jenkins 是一个独立的开源自动化服务器，用于自动化软件开发中的构建、测试和部署等各类任务，是实现持续集成和持续交付（CI/CD）的核心工具。
+*   **主要特点**:
+    *   **强大的插件生态系统**: 提供超过 2,000 个插件，支持构建、自动化以及几乎任何开发工作流。
+    *   **灵活的部署方式**: 支持 WAR 文件、Docker 镜像、原生软件包以及多种平台（包括 Linux 和 Windows）的安装程序。
+    *   **两种发布渠道**: 提供 **Weekly** 周更版以获取最新功能，以及 **LTS** 长期支持版以确保稳定性。
+    *   **核心用途**: 自动化项目构建、运行测试以尽早发现缺陷、进行静态代码分析以及执行部署。
+*   **为何值得关注**: Jenkins 是 **最领先且最成熟的开源自动化服务器**，为全球 **数百万用户和数千家企业** 的 CI/CD 流水线提供支撑。其庞大的插件生态系统和活跃的社区使其能够适应几乎任何软件开发流程。
+
+**[View Repository / 查看仓库](https://github.com/jenkinsci/jenkins)**
+
+### andrewyng/aisuite - Simple, unified interface to multiple Generative AI providers
+*   **What it does**: A lightweight Python library that provides a unified interface for interacting with multiple Large Language Model (LLM) providers like OpenAI, Anthropic, Google, and Ollama. It features a standard Chat Completions API and a higher-level Agents API for tool-use workflows.
+*   **Key features**:
+    *   **Unified Chat API**: Switch between AI providers (OpenAI, Anthropic, Google, Ollama, etc.) by changing a single string (`<provider>:<model-name>`). Supports streaming and all standard parameters.
+    *   **Agents API & Tool Calling**: Easily give models access to real Python functions as tools, with automated schema generation and execution loops (`max_turns`). Includes ready-made **toolkits** for files, git, and shell.
+    *   **MCP Support**: Natively works with the Model Context Protocol, allowing seamless integration of any MCP server's tools.
+    *   **Extensible**: New AI providers can be added with a simple adapter class following a naming convention.
+*   **Why it's notable**: It dramatically simplifies building applications that can leverage the best AI models from different companies without vendor lock-in. The project is notable for powering **OpenWorker** (a desktop AI coworker), its clean abstraction over complex provider differences, and strong community interest, as evidenced by **185 stars today**.
+
+### andrewyng/aisuite - 一个连接多个生成式AI提供商的简单统一接口
+*   **功能介绍**: 一个轻量级的Python库，提供统一的接口与多个大语言模型（LLM）提供商（如OpenAI、Anthropic、Google和Ollama）进行交互。它包含标准的聊天补全API和更高级的、用于工具调用工作流的代理API。
+*   **主要特点**:
+    *   **统一的聊天API**: 通过更改一个字符串（`<提供商>:<模型名>`）即可在AI提供商（OpenAI、Anthropic、Google、Ollama等）之间无缝切换。支持流式传输和所有标准参数。
+    *   **代理API与工具调用**: 可轻松将真实Python函数作为工具提供给模型，并实现自动的schema生成和执行循环（`max_turns`）。内置用于文件、git和shell的**工具包**。
+    *   **MCP支持**: 原生支持模型上下文协议（MCP），可无缝集成任何MCP服务器的工具。
+    *   **易于扩展**: 可通过遵循命名约定的简单适配器类来添加新的AI提供商。
+*   **为何值得关注**: 它极大地简化了开发能够利用不同公司最佳AI模型的应用程序，避免了厂商锁定。该项目因驱动**OpenWorker**（一个桌面AI助手）、其对复杂提供商差异的清晰抽象，以及强大的社区兴趣（今日获得**185星**）而备受关注。
+
+**[View Repository / 查看仓库](https://github.com/andrewyng/aisuite)**
+
+### Claude-of-Duty - A Call of Duty-Quality FPS in Three.js, Fully AI-Generated
+*   **What it does**: A complete first-person shooter built in the browser using Three.js. It features a 120x120 meter environment, enemy AI, weapons, and a full HUD.
+*   **Key features**: **100% procedural content** — no pre-made 3D models, textures, or sound files. Everything (geometry, materials, animations, audio) is generated by code at load time. It uses a sophisticated rendering pipeline with features like procedural materials, dynamic skies, and a custom-written physics engine.
+*   **Why it's notable**: It's a technical showcase demonstrating the power of AI-assisted development. Built from a single prompt by a fleet of AI agents, it highlights the potential (and current limitations) of generating complex, multi-system software. The project also includes a robust tooling chain for reproducible benchmarking and performance analysis.
+
+### Claude-of-Duty - 一个基于Three.js的浏览器端FPS游戏，所有内容完全由AI生成
+*   **功能介绍**：这是一款在浏览器中运行的第一人称射击游戏，基于 Three.js 构建。游戏包含一个约120×120米的市场街道环境、敌人AI、武器系统以及完整的HUD界面。
+*   **主要特点**：**100%程序化生成**——没有任何预制的3D模型、贴图或音频文件。所有内容（几何体、材质、动画、音效）均在加载时由代码实时生成。它采用了先进的渲染管线，具备程序化材质、动态天空、体积雾以及完全自研的物理引擎等复杂特性。
+*   **为何值得关注**：这是一个展示AI辅助开发能力的技术典范。它由一群AI代理根据单一提示构建，凸显了AI生成复杂多系统软件的潜力（及其当前局限）。该项目还包含一套强大的工具链，用于实现可复现的基准测试和性能分析。
+
+**[View Repository / 查看仓库](https://github.com/mshumer/Claude-of-Duty)**
+
+### 🎬 You need frontier products to feel the magic of frontier models
+**Channel:** Lenny's Podcast
+*   This episode explores the relationship between cutting-edge AI models (frontier models) and the products built to showcase their potential. It argues that to truly understand and leverage the capabilities of the most advanced AI, we need to move beyond simple "AI feature" integrations and design entirely new product experiences.
+*   The discussion covers product strategy in the age of advanced AI, the limitations of applying AI as a mere add-on, and the mindset required to build transformative applications that feel magical.
+*   It’s worth watching for product leaders, founders, and developers because it provides a forward-looking framework for innovation, emphasizing that the real value of frontier AI will be unlocked by rethinking core product paradigms, not just enhancing existing ones.
+
+### 🎬 你需要前沿产品才能感受前沿模型的魔力
+**频道:** Lenny's Podcast
+*   本期播客深入探讨了前沿AI模型与打造展示其潜力的产品之间的关系。节目认为，要真正理解并利用最先进AI的能力，我们需要超越简单的“AI功能”集成，转而设计全新的产品体验。
+*   讨论涵盖了AI时代的产品战略、将AI仅作为附加功能的局限性，以及构建能带来“魔力”般体验的变革性应用所需的产品思维。
+*   对于产品经理、创始人和开发者而言，它值得一看，因为它提供了一个面向未来的创新框架，强调前沿AI的真正价值将通过重新思考核心产品范式来释放，而不仅仅是改进现有产品。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=e_Su-bDcYSA)**
+
+### 🎬 Behind the popular AI tools lies a crucial bit of tech called a transformer.
+**Channel:** freeCodeCamp.org
+*   The video explains the core technology—**transformers**—that powers popular AI models like ChatGPT.
+*   It breaks down what transformers are, how they work (specifically the self-attention mechanism), and their foundational role in modern natural language processing and large language models.
+*   It's worth watching because it demystifies the complex tech behind AI hype, offering a clear and beginner-friendly explanation from Ania Kubów.
+
+### 🎬 背后热门AI工具的关键技术：Transformer架构详解
+**频道:** freeCodeCamp.org
+*   本视频深入浅出地讲解了**Transformer**这一核心技术，它是ChatGPT等热门AI模型的基石（ChatGPT中的“T”正代表Transformer）。
+*   主要话题包括Transformer是什么、其工作原理（特别是自注意力机制），以及它在自然语言处理和大型语言模型中的核心作用。
+*   值得观看的原因在于，它能够帮助观众清晰理解驱动当前AI浪潮的底层技术原理，内容讲解透彻，非常适合初学者入门。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=lFXt6mBEiTQ)**
+
+### 🎬 My NEW AI Terminal and Code Editor // Orca Review
+**Channel:** Christian Lempa
+*   The video provides a hands-on review and first impressions of **Orca**, a new "Agent Development Environment" that aims to merge an AI-powered terminal agent with a code editor.
+*   Key topics include Orca's core features: the AI terminal for command assistance, integrated code editing, support for Git worktrees, and a built-in browser environment.
+*   It's worth watching for developers and tech enthusiasts curious about the next evolution of development tools, specifically how AI is being deeply integrated into the coding workflow to potentially boost productivity.
+
+### 🎬 我的新AI终端与代码编辑器 // Orca 评测
+**频道:** Christian Lempa
+*   该视频通过实际操作，评测了新兴的“智能体开发环境”**Orca**，探讨其如何将AI终端助手与代码编辑器融为一体。
+*   主要讨论了Orca的核心功能：用于命令辅助的AI终端、集成代码编辑器、对Git工作树的支持，以及内置的浏览器环境。
+*   对于开发者和技术爱好者而言，此视频值得关注，因为它展示了AI如何深度融入编码工作流，代表了下一代开发工具的可能演进方向。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tzDDNWU21uQ)**
 
