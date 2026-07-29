@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 29, 2026"
 date: 2026-07-29
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 10 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，7个快速崛起项目，10个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 12 fast-moving projects, 15 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，12个快速崛起项目，15个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -480,6 +480,250 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
     *   **激发想象力**：以有趣且前瞻性的视角，呈现对未来技术发展的设想。
     *   **趋势灵感**：即使是概念性内容，也能启发观众思考当前技术（如AI编程助手）的潜在演进路径。
     *   **快速启发**：作为短视频，它能快速传递一个核心创意点，适合快速浏览以获取灵感。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=tXvIrtn84QM)**
+
+### OpenAI Codex Security Overview
+*   A command-line interface (CLI) and TypeScript SDK for identifying, validating, and fixing security vulnerabilities within codebases.
+*   Core functionality includes scanning repositories, reviewing code changes, tracking security findings, and integrating checks into CI/CD pipelines.
+*   Requires Node.js 22+ and Python 3.10+. Installation is via npm, with authentication handled through ChatGPT sign-in or an `OPENAI_API_KEY`.
+*   Provides a programmatic interface through its TypeScript SDK for embedding security scans into applications or scripts.
+
+### OpenAI Codex Security 工具简介
+*   一个用于在代码库中识别、验证和修复安全漏洞的命令行界面（CLI）和 TypeScript SDK。
+*   核心功能包括扫描代码仓库、审查代码变更、跟踪安全发现以及将安全检查集成到CI/CD流水线中。
+*   需要 Node.js 22 及以上和 Python 3.10 及以上版本。可通过 npm 安装，支持使用 ChatGPT 账户登录或提供 `OPENAI_API_KEY` 进行身份验证。
+*   通过其 TypeScript SDK 提供了编程接口，便于将安全扫描嵌入到应用程序或脚本中。
+
+**[Read Original / 阅读原文](https://github.com/openai/codex-security)**
+
+### Half-Life Ported to Mac OS 9
+* A community port finally brings *Half-Life* to PowerPC-based Macintosh computers 28 years after its original release, fulfilling a planned but cancelled 1999 Mac OS 9 version.
+* The port was created by GitHub user **doctashay** using a fork of the Xash3D FWGS engine, making it playable from start to finish with multiplayer and additional expansion support.
+* It is compatible with G3 and G4 PowerPC Macs running Mac OS 9.0 or later, but performance is heavily dependent on the GPU, requiring at least 8MB of VRAM for smoother gameplay.
+
+### 《半衰期》移植至 Mac OS 9
+* 社区移植项目终于在《半衰期》原版发布28年后，将其带到了基于PowerPC的Macintosh电脑上，实现了1999年计划但被取消的Mac OS 9版本。
+* 此移植由GitHub用户**doctashay**使用Xash3D FWGS引擎的分支完成，支持从头至尾的完整游玩、多人游戏，并包含额外的扩展内容下载。
+* 支持运行Mac OS 9.0或更高版本的G3和G4 PowerPC Mac电脑，但性能高度依赖于显卡，建议显存至少为8MB以获得更流畅的体验。
+
+**[Read Original / 阅读原文](https://mac-classic.com/news/half-life-ported-to-mac-os-9/)**
+
+### HNewhere
+* A lightweight userscript that integrates Hacker News discussions directly into article pages.
+* Automatically detects relevant HN stories and loads comments in a resizable sidebar.
+* Features include collapsible threads, link tracking, and preserved session settings.
+* Requires a userscript manager (e.g., Tampermonkey) and access to HN APIs.
+
+### HNewhere 介绍
+* 一个轻量级用户脚本，可在任何文章页面直接嵌入 Hacker News 讨论。
+* 自动识别相关 HN 帖子，并在可调整大小的侧边栏中加载评论。
+* 支持可折叠评论、链接追踪和保持侧边栏宽度设置。
+* 需要用户脚本管理器（如 Tampermonkey）并需要访问 HN API。
+
+**[Read Original / 阅读原文](https://github.com/twalichiewicz/HNewhere)**
+
+### Pascal Editor - Web-based 3D Architectural Design Tool
+*   **What it does**: An open-source, web-native 3D building editor built with React Three Fiber and WebGPU. It allows users to create, edit, and share detailed architectural projects (sites, buildings, levels, walls, slabs, items, etc.) directly in the browser.
+*   **Key features**:
+    *   **Node-Based Architecture**: Represents all scene elements (walls, slabs, items) as typed "nodes" in a flat, efficient dictionary structure.
+    *   **State-Driven Rendering**: Uses a Zustand store for scene state, with a "dirty node" system that triggers efficient, targeted geometry updates.
+    *   **Modular & Extensible**: Turborepo monorepo with separate packages for core logic, 3D rendering, editing tools, and built-in node definitions.
+    *   **Real-time 3D Editing**: Includes specialized tools for drawing walls, placing slabs, adding furniture, and creating zones with collision detection.
+    *   **Persistent State**: Scene data is saved to IndexedDB with undo/redo functionality.
+*   **Why it's notable**: It represents a sophisticated, modern approach to web-based CAD/BIM, leveraging cutting-edge web technologies like WebGPU. Its well-documented, scalable architecture and active development (341 stars today) make it a significant project in the open-source 3D graphics space.
+
+### Pascal Editor - 基于 Web 的 3D 建筑设计工具
+*   **功能介绍**：一个使用 React Three Fiber 和 WebGPU 构建的开源、基于网页的 3D 建筑编辑器。它允许用户直接在浏览器中创建、编辑和分享详细的建筑项目（包括场地、建筑、楼层、墙壁、楼板、家具等元素）。
+*   **主要特点**：
+    *   **基于节点的架构**：将所有场景元素（墙壁、楼板、物件）表示为扁平字典结构中的类型化“节点”，高效且易于管理。
+    *   **状态驱动渲染**：使用 Zustand 状态仓库管理场景状态，通过“脏节点”系统触发精确、高效的几何体更新。
+    *   **模块化与可扩展性**：采用 Turborepo 单体仓库，将核心逻辑、3D 渲染、编辑工具和内置节点定义分离到不同的包中。
+    *   **实时 3D 编辑**：包含用于绘制墙壁、放置楼板、添加家具和创建区域的专用工具，并支持碰撞检测。
+    *   **状态持久化**：场景数据保存到 IndexedDB，并提供撤销/重做功能。
+*   **为何值得关注**：该项目代表了基于 Web 的 CAD/BIM 领域一个先进且成熟的方向，利用了 WebGPU 等前沿 Web 技术。其结构清晰、架构可扩展且文档详尽，同时发展活跃（今日获得 341 颗星），使其成为开源 3D 图形领域一个重要的项目。
+
+**[View Repository / 查看仓库](https://github.com/pascalorg/editor)**
+
+### Jenkins - Leading Open-Source Automation Server
+*   **What it does**: Jenkins is a self-contained, open-source automation server that can be used to automate all sorts of tasks related to building, testing, and deploying software. It provides over 2,000 plugins to extend its functionality for almost any use case.
+*   **Key features**:
+    *   Extensible via a massive ecosystem of plugins (CI/CD, code quality, deployment, etc.).
+    *   Distributed architecture for parallel builds and scalability.
+    *   Offers both Weekly (feature-rich) and Long-Term Support (LTS - stable) release lines.
+    *   Available as WAR, Docker image, or native packages for various platforms.
+*   **Why it's notable**: It is one of the most established and widely adopted CI/CD tools, trusted by millions of users and thousands of companies globally. Its active development is evident (180 stars gained today), and it maintains a strong, governed open-source community.
+
+### Jenkins - 领先的开源自动化服务器
+*   **功能介绍**：Jenkins 是一个自包含的开源自动化服务器，可用于自动化构建、测试和部署软件的相关任务。它提供了超过 2,000 个插件，几乎可以扩展功能以支持任何用例。
+*   **主要特点**：
+    *   可通过庞大的插件生态系统进行扩展（CI/CD、代码质量、部署等）。
+    *   分布式架构，支持并行构建和可扩展性。
+    *   提供每周（功能丰富）和长期支持（LTS - 稳定）两种发布线。
+    *   提供 WAR 文件、Docker 镜像或适用于各平台的原生安装包。
+*   **为何值得关注**：它是业界最成熟、应用最广泛的 CI/CD 工具之一，被全球数百万用户和数千家公司所信赖。其活跃的开发状态明显（今日获得 180 个星标），并维护着一个强大且有组织的开源社区。
+
+**[View Repository / 查看仓库](https://github.com/jenkinsci/jenkins)**
+
+### Project AIRI - Self-hosted AI Virtual Companion
+*   **What it does:** AIRI is a self-hosted, user-owned AI companion platform inspired by Neuro-sama. It aims to be a "container of souls" for virtual characters (waifu), bringing them into the real world with capabilities beyond simple chat, including real-time voice interaction and gameplay in popular titles like Minecraft and Factorio.
+*   **Key features:**
+    *   **Self-hosted & User-Owned:** Users run the system themselves, maintaining control and privacy.
+    *   **Real-time Interaction:** Supports real-time voice chat for more natural conversation.
+    *   **Game Integration:** Demonstrates the ability to actively play games like Minecraft and Factorio.
+    *   **Multi-platform Support:** Available on Web, macOS, and Windows, with easy installation methods.
+    *   **Inspired by Neuro-sama:** Aims to replicate and expand upon the concept of a highly interactive, AI-driven virtual streamer.
+*   **Why it's notable:** AIRI represents an ambitious evolution of AI companions, moving beyond passive chatbots to active, game-playing entities. Its open-source nature and focus on user ownership are significant in the AI space. The rapid gain of **797 stars in one day** highlights strong community interest in creating more autonomous and engaging digital beings.
+
+### Project AIRI - 自托管、用户自主的AI虚拟伴侣
+*   **功能介绍：** AIRI 是一个受 Neuro-sama 启发的自托管、用户自主的AI伴侣平台。其目标是成为虚拟角色（waifu）的“灵魂容器”，将它们带入现实世界，并具备超越简单聊天的能力，包括实时语音交互以及在《Minecraft》和《Factorio》等热门游戏中进行游戏。
+*   **主要特点：**
+    *   **自托管与用户自主：** 用户自行运行和管理系统，从而掌控数据与隐私。
+    *   **实时交互：** 支持实时语音聊天，使对话更自然。
+    *   **游戏集成：** 能够实际操作并游玩《Minecraft》和《Factorio》等游戏。
+    *   **跨平台支持：** 可在 Web、macOS 和 Windows 上使用，并提供便捷的安装方式。
+    *   **灵感源于 Neuro-sama：** 致力于复现并扩展那个高度互动的、AI驱动的虚拟主播概念。
+*   **为何值得关注：** AIRI 代表了AI伴侣领域的一次雄心勃勃的进化，它从被动的聊天机器人转变为能主动玩游戏的实体。其开源属性和用户自主的理念在AI领域意义重大。项目在一天内**获得797颗星**的惊人增速，凸显了社区对于创建更自主、更具吸引力的数字生命的浓厚兴趣。
+
+**[View Repository / 查看仓库](https://github.com/moeru-ai/airi)**
+
+### Kimi-K3 - 开源前沿智能多模态模型
+
+*   **功能介绍**: Kimi K3 是由月之暗面（Moonshot AI）发布的开源、原生多模态智能体模型。它是一个拥有 **2.8万亿参数** 的混合专家模型（MoE），具备处理文本、图像和视频的能力，并支持高达 **100万 token** 的上下文窗口。该模型旨在实现跨长周期编程、知识工作和复杂推理的前沿智能。
+*   **关键特点**:
+    *   **创新架构**: 基于 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 构建，采用稀疏 MoE 架构，在每次前向传播中仅激活 896 个专家中的 16 个，实现了高效的参数扩展。
+    *   **长周期编程与智能体能力**: 能够在极少人类监督下进行长时间的工程任务，处理大型代码仓库，并协调使用终端工具，应用涵盖 GPU 内核优化、编译器开发到游戏开发和芯片设计。
+    *   **原生多模态与长上下文**: 在一个模型中统一理解文本和图像，并支持百万级别的上下文窗口，适用于需要处理海量信息的复杂任务。
+    *   **开源权重**: 在 Kimi K3 许可证下完全开放模型权重，促进了前沿技术的研究、部署和进一步创新。
+*   **为何值得关注**: Kimi-K3 是全球首个开源的 **3万亿参数级别** 模型，性能对标闭源顶尖模型（如 GPT-5.6）。它在多个复杂基准测试（如 GPQA, CritPt）中表现优异，其强大的代码、推理和多模态能力，结合其开源特性，使其成为当前 AI 领域极具影响力和实用价值的项目。
+
+### Kimi-K3 - 开源前沿智能多模态模型
+
+*   **功能介绍**: Kimi K3 是由月之暗面（Moonshot AI）发布的开源、原生多模态智能体模型。它是一个拥有 **2.8万亿参数** 的混合专家模型（MoE），具备处理文本、图像和视频的能力，并支持高达 **100万 token** 的上下文窗口。该模型旨在实现跨长周期编程、知识工作和复杂推理的前沿智能。
+*   **主要特点**:
+    *   **创新架构**: 基于 Kimi Delta Attention (KDA) 和 Attention Residuals (AttnRes) 构建，采用稀疏 MoE 架构，在每次前向传播中仅激活 896 个专家中的 16 个，实现了高效的参数扩展。
+    *   **长周期编程与智能体能力**: 能够在极少人类监督下进行长时间的工程任务，处理大型代码仓库，并协调使用终端工具，应用涵盖 GPU 内核优化、编译器开发到游戏开发和芯片设计。
+    *   **原生多模态与长上下文**: 在一个模型中统一理解文本和图像，并支持百万级别的上下文窗口，适用于需要处理海量信息的复杂任务。
+    *   **开源权重**: 在 Kimi K3 许可证下完全开放模型权重，促进了前沿技术的研究、部署和进一步创新。
+*   **为何值得关注**: Kimi-K3 是全球首个开源的 **3万亿参数级别** 模型，性能对标闭源顶尖模型（如 GPT-5.6）。它在多个复杂基准测试（如 GPQA, CritPt）中表现优异，其强大的代码、推理和多模态能力，结合其开源特性，使其成为当前 AI 领域极具影响力和实用价值的项目。
+
+**[View Repository / 查看仓库](https://github.com/MoonshotAI/Kimi-K3)**
+
+### esp32-ai - 在8美元微控制器上运行28.9M参数语言模型
+*   **它是什么：** 这是一个在ESP32-S3微控制器上本地运行一个拥有2890万参数的大语言模型（LLM）的项目。模型能够以约9.5个令牌/秒的速度在芯片上生成连贯的短篇故事，所有计算均在设备端完成，无需联网。
+*   **关键特性：**
+    *   **突破性的模型规模：** 模型参数量达到28.9M，比此前在同类芯片上运行的最大模型（26万参数）大了约100倍。
+    *   **高效的架构创新：** 采用源自Google Gemma的**Per-Layer Embeddings**技术，将高达2500万参数的嵌入表存储在较慢但容量大的闪存中，仅在计算时按需读取少量数据，使得大模型得以塞入资源极度受限的微控制器。
+    *   **完全离线运行：** 模型推理完全在ESP32-S3芯片上完成，无需服务器连接，实现了真正的边缘AI。
+*   **为何值得关注：**
+    *   **架构上的里程碑：** 此项目是首次尝试将先进的Per-Layer Embeddings架构应用于如此微小的计算平台（微控制器），展示了在极端资源限制下运行复杂AI模型的新可能性。
+    *   **极高的成本效益：** 使用成本仅约8美元的通用硬件实现了令人印象深刻的AI功能，为低成本、嵌入式AI应用开辟了新思路。
+    *   **启发性的开源资源：** 完整的固件、训练代码和实验记录被公开，为爱好者和研究者提供了在资源受限设备上探索和优化LLM的宝贵参考。
+
+### esp32-ai - 在8美元微控制器上运行28.9M参数语言模型
+*   **功能介绍：** 该项目展示了一个在ESP32-S3微控制器上本地运行的28.9M参数大语言模型（LLM）。模型能够在设备端以约9.5个令牌/秒的速度生成连贯的短篇故事，全程无需联网，计算完全在芯片上完成。
+*   **主要特点：**
+    *   **超大模型规模：** 模型参数量高达2890万，是此前同类芯片上运行的最大模型的约100倍。
+    *   **创新的内存优化：** 采用Google Gemma模型的**Per-Layer Embeddings**技术，将绝大部分（2500万）参数存放在闪存中，计算时仅读取所需数据，巧妙地解决了微控制器内存不足的难题。
+    *   **完全边缘计算：** 模型推理完全在设备本地执行，无任何数据需要发送到服务器，实现了完全的离线AI运行。
+*   **为何值得关注：**
+    *   **重要的架构探索：** 该项目首次将先进的Per-Layer Embeddings架构成功应用在微控制器上，验证了在资源极端受限的硬件上运行复杂AI模型的可行性，是一个技术上的重要突破。
+    *   **低成本的AI普及：** 证明了利用仅数美元的廉价硬件也能实现具有一定能力的本地AI推理，对推动低成本嵌入式AI应用具有重要意义。
+    *   **宝贵的实践参考：** 开源的固件、训练与量化代码以及详细的实验结果，为社区在受限环境下开发和优化语言模型提供了极具价值的实践案例。
+
+**[View Repository / 查看仓库](https://github.com/slvDev/esp32-ai)**
+
+### 🎬 Why Physicists Spent 50 Years Insisting Black Holes Were Impossible - Adam Brown
+**Channel:** Dwarkesh Patel
+*   **What the video covers:** A deep dive into the historical scientific skepticism and prolonged resistance from the physics community towards the theoretical acceptance of black holes.
+*   **Key topics discussed:** The timeline of theoretical black hole predictions, the objections and alternative theories that prevailed, the gradual shift in scientific consensus, and the eventual empirical confirmation.
+*   **Why it's worth watching:** It's a compelling narrative on how even the most revolutionary scientific ideas face institutional and intellectual inertia. It features expert insights (with physicist Adam Brown) that illuminate the often messy and human process of scientific discovery and paradigm shifts.
+
+### 🎬 为何物理学家坚持认为黑洞不可能存在长达50年 - Adam Brown
+**频道:** Dwarkesh Patel
+*   **视频内容概述:** 深入探讨了物理学界对黑洞理论的长期怀疑与抵制的历史过程。
+*   **主要话题:** 黑洞理论预测的时间线、当时占主导地位的反对观点和替代理论、科学共识的逐渐转变，以及最终的实证确认。
+*   **为何值得观看:** 这是一个引人入胜的故事，揭示了即使是最革命性的科学思想也会面临学术惯性和体制阻力。通过与物理学家Adam Brown的对话，视频深刻展现了科学发现和范式转移过程中复杂而人性化的一面。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=41BAsYfFM38)**
+
+### 🎬 Gary Gallagher: American Civil War, Slavery, Lincoln, Grant & Lee | Lex Fridman Podcast #499
+**Channel:** Lex Fridman
+*   What the video covers
+    *   An in-depth conversation with renowned historian Gary Gallagher about the American Civil War.
+    *   Explores the complex history through the lenses of key figures like Abraham Lincoln, Ulysses S. Grant, and Robert E. Lee.
+    *   Discusses the central role of slavery as the cause and context of the war.
+*   Key topics discussed
+    *   The causes, major figures, and pivotal moments of the Civil War.
+    *   The legacies of Lincoln, Grant, and Lee in shaping the nation.
+    *   Historiography: how the story of the war has been interpreted and remembered over time.
+*   Why it's worth watching
+    *   Provides authoritative, scholarly insight into a defining period of American history.
+    *   Offers nuanced perspectives on iconic leaders, moving beyond simple hero/villain narratives.
+    *   A rich, educational resource for understanding the war's enduring impact on American society and politics.
+
+### 🎬 加里·加拉格尔：美国内战、奴隶制、林肯、格兰特与李 | Lex Fridman 播客 #499
+**频道:** Lex Fridman
+*   视频内容概述
+    *   与著名历史学家加里·加拉格尔就美国内战进行的一场深度对话。
+    *   通过亚伯拉罕·林肯、尤利西斯·S·格兰特和罗伯特·E·李等关键人物的视角，探讨这场战争的复杂历史。
+    *   深入讨论了奴隶制作为战争起因和背景的核心作用。
+*   主要话题
+    *   美国内战的起因、主要人物和关键转折点。
+    *   林肯、格兰特和李在塑造国家进程中的历史遗产。
+    *   史学史：探讨人们如何随时间推移诠释和铭记这场战争。
+*   为何值得观看
+    *   为理解美国历史上的这一决定性时期提供了权威的学术洞见。
+    *   对标志性领袖提供了超越简单英雄/反派叙事的细致解读。
+    *   是深入理解内战对美国社会及政治的持久影响的丰富教育资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=XyXBwO5jYpw)**
+
+### 🎬 Blake Scholl: "The Future Was Supposed to Be Faster"
+**Channel:** Y Combinator
+*   **What the video covers:** This talk by Blake Scholl, founder of Boom Supersonic, challenges the narrative of technological stagnation in aerospace. It recounts how the mid-20th century promised a rapid future of supersonic travel and moon bases, only for progress to seemingly halt after the Concorde era and Apollo program.
+*   **Key topics discussed:** The history and decline of supersonic flight, the ambition of returning to faster-than-sound air travel, the technical and economic challenges of developing modern supersonic aircraft (like Boom's Overture), and the renewed venture capital interest in "hard tech" aerospace startups.
+*   **Why it's worth watching:** It's a compelling and passionate call to action, arguing that we lost our ambition but now have the tools and capital to reclaim it. For anyone interested in deep tech, aerospace, or the philosophy of innovation, it provides a clear, visionary perspective on how entrepreneurs are tackling monumental engineering challenges to accelerate the future.
+
+### 🎬 Blake Scholl：“未来本该更快”
+**频道:** Y Combinator
+*   **视频内容概述:** Boom Supersonic创始人布莱克·肖尔在此次演讲中，挑战了航空航天领域技术停滞的叙事。他回顾了二十世纪中叶所承诺的快速未来——超音速旅行和月球基地，却指出在协和式飞机与阿波罗计划时代之后，进步似乎停滞不前。
+*   **主要话题:** 超音速飞行的历史与衰落、重返超音速空中旅行的雄心、开发现代超音速飞机（如Boom的Overture）面临的技术与经济挑战，以及风险资本对“硬科技”航空航天初创公司重新燃起的兴趣。
+*   **为何值得观看:** 这是一次引人入胜且充满激情的行动号召。它论证了我们曾经失去了雄心，但如今拥有重拾雄心的工具和资本。对于任何对深度科技、航空航天或创新哲学感兴趣的人来说，这都提供了一个清晰、富有远见的视角，展示了企业家如何应对巨大的工程挑战，以加速未来的到来。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=byAj35QlGbs)**
+
+### 🎬 How to make a melon with an invisible head in Melon Sandbox #melonsanbox #shorts
+**Channel:** Vedid
+
+*   This short video is a quick tutorial demonstrating a specific gameplay trick within the physics-based sandbox game "Melon Sandbox."
+*   It shows the step-by-step process of creating a melon character that has a visible body but an invisible head, likely using in-game tools or exploits.
+*   It's worth watching for players of Melon Sandbox who are looking for creative building ideas, humorous character customization, or to learn a simple, fun glitch to experiment with in their own gameplay.
+
+### 🎬 在甜瓜沙盒中如何制作无头甜瓜 #melonsanbox #shorts
+**频道:** Vedid
+
+*   这段短视频是一个快速教程，演示了在基于物理的沙盒游戏《甜瓜沙盒》中的一个特定游戏技巧。
+*   它展示了创建一个身体可见但头部隐形的甜瓜角色的逐步过程，可能使用了游戏内的工具或漏洞。
+*   对于《甜瓜沙盒》的玩家来说，这值得一看，因为他们可以寻找创意构建灵感、有趣的自定义玩法，或者学习一个简单的有趣漏洞，在自己的游戏中进行实验。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=WnAhgMRotr4)**
+
+### 🎬 The 2030s Code Project Created !! #coding #programming #python #shorts
+**Channel:** Aziz Codex
+*   This short video teases a new, ambitious project named "The 2030s Code Project."
+*   The video highlights the creator, Ali Aziz, a web developer and coder, announcing the project's inception.
+*   It serves as an announcement and hype-builder for future content related to this long-term coding initiative.
+
+### 🎬 2030s代码项目已创建!! #coding #programming #python #shorts
+**频道:** Aziz Codex
+*   本短视频预告了一个名为“2030s代码项目”的新大型项目。
+*   视频中，创作者、网页开发者Ali Aziz宣布了该项目的启动。
+*   作为未来相关编程内容的预告和预热，激发观众兴趣。
+
+**为何值得观看 (英文):** For followers of programming channels and Python enthusiasts, this is a teaser for a potentially major, future-oriented coding project. It's worth watching to stay updated on the early stages of this initiative.
+
+**为何值得观看 (中文):** 对于编程频道和Python爱好者而言，这是一次关于未来大型编程项目的早期预告。值得观看以获取该计划的第一手动态。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=tXvIrtn84QM)**
 
