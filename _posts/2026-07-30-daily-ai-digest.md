@@ -224,3 +224,181 @@
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=q3AuP01daL4)**
 
+### VPNs as Lawful Technical Tools: EU Court Ruling
+
+*   The Court of Justice of the European Union (CJEU) ruled that publishers and VPN providers are not liable for copyright infringement caused by users bypassing geo-blocked content.
+*   The court stated that geo-blocking is the copyright holder's responsibility, not that of the VPN provider.
+*   This landmark ruling establishes VPNs as lawful technical tools and could set a precedent for other jurisdictions like the UK.
+
+### 欧洲法院关于版权的里程碑式裁决：VPN是合法的技术工具
+
+*   欧盟法院裁定，发布者和VPN提供商对用户绕过地理封锁访问版权内容所导致的侵权行为不承担责任。
+*   法院指出，地理封锁是版权所有者的问题，而非VPN提供商的责任。
+*   这一里程碑式的裁决确立了VPN作为合法技术工具的地位，并可能为英国等其他司法管辖区设定先例。
+
+**[Read Original / 阅读原文](https://remysharp.com/links/2026-07-23-35890312)**
+
+### OpenJDK Interim Policy on Generative AI
+
+*   The OpenJDK Community has adopted an interim policy restricting the use of generative AI (like large language models) for creating contributions (code, text, images) due to risks to reviewer workload, project security, and intellectual property.
+*   The policy prohibits contributing content that is generated in part or in full by generative AI tools to OpenJDK repositories, pull requests, emails, wikis, or issues.
+*   Contributors are permitted to use generative AI tools privately to help comprehend, debug, review code, and conduct research, as long as the generated content is not contributed.
+*   Key risks cited include increasing reviewer burden with plausible but incorrect code, jeopardizing the security of the critical Java Platform, and potential copyright/IP violations under the Oracle Contributor Agreement (OCA).
+*   Future enforcement will involve a new checkbox in GitHub pull requests via Skara, requiring contributors to affirm compliance with the policy.
+
+### OpenJDK 对生成式 AI 的临时政策
+
+*   由于对审查工作量、项目安全和知识产权构成风险，OpenJDK 社区通过了一项临时政策，限制使用生成式 AI（如大型语言模型）来创建贡献内容（代码、文本、图像）。
+*   该政策禁止将全部或部分由生成式 AI 工具生成的内容贡献到 OpenJDK 的代码库、拉取请求、电子邮件、维基或问题追踪系统中。
+*   贡献者可以私下使用生成式 AI 工具来帮助理解、调试、审查代码和进行研究，前提是不将此类工具生成的内容作为贡献提交。
+*   引用的主要风险包括：看似合理但错误的代码会增加审查员负担、危及关键 Java 平台的安全性，以及在 Oracle 贡献者协议（OCA）下可能侵犯版权/知识产权。
+*   未来的执行措施将包括通过 Skara 在 GitHub 拉取请求中添加一个新复选框，要求贡献者确认其贡献符合该政策。
+
+**[Read Original / 阅读原文](https://openjdk.org/legal/ai)**
+
+### RFC 8890 - The Internet is for End Users: Analysis
+
+*   **Core Issue & Context:** The Internet Architecture Board (IAB) published RFC 8890 to explicitly guide the Internet Engineering Task Force (IETF) in prioritizing the interests of end-users (actual people) when making standards decisions, acknowledging that technical choices often have political and societal consequences.
+*   **IETF's Process & Challenge:** The IETF operates on "rough consensus and running code," valuing technical merit. However, the RFC argues this model is insufficient in a world where protocol designs inherently affect power, privacy, and freedom, making decisions politically laden regardless of intent.
+*   **Principle-Driven Governance:** The article posits that to maintain legitimacy, the IETF must move beyond pure technical arguments and document explicit principles (like the end-to-end principle and the stance against pervasive monitoring) to navigate conflicts between stakeholders (e.g., privacy vs. network management).
+*   **A Call for Principled Stance:** RFC 8890 is presented not as a radical takeover by the IETF, but as a necessary clarification of its existing role as a guardian of Internet health. It asks the community to consciously favor the public good and end-user welfare when faced with trade-offs, thereby strengthening the Internet's foundational values.
+
+### RFC 8890 - 互联网为终端用户而生：分析
+
+*   **核心议题与背景：** 互联网架构委员会（IAB）发布 RFC 8890，旨在明确指导互联网工程任务组（IETF），要求其在制定标准决策时优先考虑终端用户（即实际的人）的利益，承认技术选择通常伴随着政治和社会后果。
+*   **IETF的流程与挑战：** IETF 以“粗略共识和可运行代码”为原则运作，重视技术优势。然而，该文章认为，在当今世界，协议设计本质上会影响权力、隐私和自由，这使得决策不可避免地带有政治色彩，因此该模式存在不足。
+*   **原则驱动的治理：** 文章指出，为维持其决策的合法性，IETF 必须超越纯粹的技术论证，记录明确的原则（如端到端原则和反对无处不在监控的立场），以应对利益相关方之间的冲突（例如，隐私与网络管理的权衡）。
+*   **对有原则立场的呼吁：** RFC 8890 被阐述为并非 IETF 的激进夺权，而是对其现有角色（作为互联网健康守护者）的必要澄清。它要求社区在面临权衡取舍时，有意识地倾向于公共利益和终端用户的福祉，从而强化互联网的基础价值。
+
+**[Read Original / 阅读原文](https://mnot.net/blog/2020/for_the_users)**
+
+### huggingface/speech-to-speech - Build local voice agents with open-source models
+*   **What it does**: Provides a low-latency, fully modular voice-agent pipeline (VAD -> STT -> LLM -> TTS) with an OpenAI Realtime-compatible WebSocket API, enabling the creation of local or cloud-based voice interaction systems using a mix of open-source and proprietary models.
+*   **Key features**:
+    *   **Fully Modular**: Every component (VAD, STT, LLM, TTS) is swappable via CLI flags, supporting numerous backends like Parakeet, Whisper, Qwen3-TTS, Kokoro, and OpenAI APIs.
+    *   **OpenAI Compatible**: The LLM backend speaks OpenAI-compatible protocols, allowing seamless switching between hosted providers, Hugging Face Inference, or self-hosted servers (vLLM, llama.cpp).
+    *   **Production-Ready**: Powers the conversation backend for thousands of Reachy Mini robots.
+    *   **Multi-Platform**: Supports deployment on various hardware including NVIDIA CUDA, Apple Silicon (MPS/MLX), and CPU-only setups.
+    *   **Flexible Run Modes**: Offers `realtime` (WebSocket API), `local` (mic/speaker), `websocket`, and `socket` modes for different integration needs.
+*   **Why it's notable**: It simplifies building advanced voice agents by providing a production-tested, flexible, and open-source stack that avoids vendor lock-in. The ability to run the entire pipeline locally with open models is a significant advantage for privacy and customization, driving its trend as a practical solution for real-world voice AI applications.
+
+### huggingface/speech-to-speech - 使用开源模型构建语音智能体
+*   **功能介绍**：一个低延迟、完全模块化的语音智能体管道（语音活动检测 -> 语音转文本 -> 大语言模型 -> 文本转语音），通过兼容 OpenAI Realtime 协议的 WebSocket API 对外提供服务，支持使用开源模型与商业 API 混合构建本地或云端语音交互系统。
+*   **主要特点**：
+    *   **完全模块化**：每个组件（VAD、STT、LLM、TTS）均可通过命令行参数自由切换，支持 Parakeet、Whisper、Qwen3-TTS、Kokoro 及 OpenAI API 等众多后端。
+    *   **OpenAI 兼容**：LLM 后端兼容 OpenAI 协议，可无缝切换至托管服务商、Hugging Face 推理服务或自建服务器（vLLM、llama.cpp）。
+    *   **生产就绪**：已作为对话后端在数千台 Reachy Mini 机器人上运行。
+    *   **跨平台支持**：可在 NVIDIA CUDA、Apple Silicon (MPS/MLX) 及纯 CPU 等多种硬件上部署。
+    *   **灵活运行模式**：提供 `realtime`（WebSocket API）、`local`（本机麦克风/扬声器）、`websocket` 和 `socket` 模式，满足不同集成需求。
+*   **为何值得关注**：该项目通过提供一个经过生产验证、灵活且开源的语音 AI 技术栈，极大地简化了高级语音智能体的构建过程。其支持全本地开源模型运行的能力，在隐私保护与定制化方面优势显著，使其成为当前语音 AI 应用领域一个切实可行的热门解决方案。
+
+**[View Repository / 查看仓库](https://github.com/huggingface/speech-to-speech)**
+
+### **Microsoft/AI-For-Beginners** - Microsoft's Official 12-Week, 24-Lesson AI Curriculum
+* **What it does**: Provides a comprehensive, beginner-friendly curriculum for learning Artificial Intelligence, structured as a 12-week course with 24 lessons. It covers core AI topics from symbolic AI and knowledge representation to modern neural networks and deep learning.
+* **Key features**: Features practical Jupyter Notebook-based lessons, quizzes, and lab exercises. It supports TensorFlow and PyTorch, offers extensive multi-language translation (50+ languages), and includes a supportive community via Discord.
+* **Why it's notable**: As an official Microsoft project, it is a high-quality, well-structured, and widely accessible open-source resource for AI education. Its rapid star growth (115 stars today) reflects strong community interest and its value as a definitive learning path for AI beginners globally.
+
+### **Microsoft/AI-For-Beginners** - 微软官方12周24课人工智能入门课程
+* **功能介绍**：提供了一套全面、适合初学者的人工智能学习课程体系，结构化为12周、24课时的学习路径。内容涵盖从符号AI、知识表示到现代神经网络与深度学习等核心AI主题。
+* **主要特点**：课程包含基于Jupyter Notebook的实践课程、测验与实验室练习。支持TensorFlow和PyTorch两大主流框架，提供超过50种语言的广泛翻译，并通过Discord提供活跃的社区支持。
+* **为何值得关注**：作为微软官方项目，它是一个高质量、结构清晰且高度易得的开源AI教育资源。其快速增长的星标数（今日新增115星）反映了社区的强烈兴趣，使其成为全球AI初学者公认的权威学习路径之一。
+
+**[View Repository / 查看仓库](https://github.com/microsoft/AI-For-Beginners)**
+
+### Awesome Systematic Trading - A Curated Resource Hub for Quantitative Trading
+* What it does: This repository is a comprehensive, community-curated list of resources for systematic (quantitative) trading. It aggregates tools, knowledge, and strategies across the entire workflow.
+* Key features: It provides a structured index of 97+ Python libraries and packages (for backtesting, data, ML, etc.), 40+ described trading strategies, 55 books, 23 videos, blogs, and courses. Resources are categorized for easy navigation.
+* Why it's notable: It has gained significant traction (628 stars in one day) due to its breadth and quality. It serves as a one-stop "awesome list" for both beginners and professionals in quant trading, linking to an ecosystem of open-source code and educational material.
+
+### Awesome Systematic Trading - 量化交易资源的精选集合
+* 功能介绍：这是一个全面的、由社区维护的系统化（量化）交易资源清单。它汇集了贯穿整个量化交易工作流程的工具、知识和策略。
+* 主要特点：它提供了97+个Python库和包的结构化索引（涵盖回测、数据、机器学习等），40+个详细描述的交易策略，55本书籍，23个视频，以及博客和课程。资源分类清晰，便于查找。
+* 为何值得关注：该仓库在一天内获得了628颗星，因其内容的广度和质量而备受瞩目。它成为量化交易新手和专业人士的一站式“awesome列表”，连接了一个庞大的开源代码和教育资源生态系统。
+
+**[View Repository / 查看仓库](https://github.com/paperswithbacktest/awesome-systematic-trading)**
+
+### 🎬 Project-based learning is a popular way to teach these days
+**Channel:** freeCodeCamp.org
+*   The video features an interview with educator Mark, who discusses his project-based learning approach with freeCodeCamp founder Quincy Larson.
+*   It explores Mark's teaching methods, how he structures projects for his students, and the practical implementation of this educational philosophy.
+*   It provides valuable insights for educators, students, and anyone interested in alternative, hands-on approaches to teaching and learning technical skills.
+
+### 🎬 Project-based learning is a popular way to teach these days
+**频道:** freeCodeCamp.org
+*   视频内容概述：视频中，教育者 Mark 与 freeCodeCamp 创始人 Quincy Larson 进行了访谈，深入探讨了 Mark 所采用的项目制学习方法。
+*   主要话题：讨论涵盖了 Mark 的具体教学方法、他如何为学生设计和组织项目，以及这种教育理念的实际应用。
+*   为何值得观看：对于教育工作者、学生，以及任何对动手实践型教学和技术技能培训新方法感兴趣的观众来说，本视频提供了宝贵的经验和见解。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=YHQWuLG78Hw)**
+
+### 🎬 How We Proved That Black Holes Exist - Adam Brown
+**Channel:** Dwarkesh Patel
+
+*   What the video covers: This video features an in-depth conversation with physicist Adam Brown exploring the historical and scientific journey toward proving the existence of black holes. It likely delves into the theoretical foundations laid by general relativity and the crucial observational evidence that confirmed these objects are real, not just mathematical constructs.
+*   Key topics discussed: The evolution of black hole theory, pivotal observational breakthroughs (like the Event Horizon Telescope image), the interplay between theory and experiment in astrophysics, and the implications of black holes for our understanding of gravity and the universe.
+*   Why it's worth watching: It offers a compelling, expert-driven narrative on one of the most profound discoveries in modern physics. The video promises to make complex scientific concepts accessible, highlighting the clever methodology and perseverance required to confirm the existence of these cosmic phenomena.
+
+### 🎬 我们如何证明黑洞存在 - Adam Brown
+**频道:** Dwarkesh Patel
+
+*   视频内容概述：本视频深入探讨了物理学家Adam Brown解释人类如何证明黑洞真实存在的历程。内容涵盖从广义相对论的理论预测到关键的天文观测证据，讲述了这一科学确认的完整故事。
+*   主要话题：黑洞理论的发展历史、决定性观测技术的突破（如事件视界望远镜成像）、理论与观测天体物理学的结合，以及黑洞发现对我们理解引力和宇宙的深刻影响。
+*   为何值得观看：该视频通过权威专家的讲解，将复杂的理论物理概念娓娓道来，清晰展示了从假说到证实的科学探究过程。它是了解这一现代物理学重大里程碑的绝佳资源，兼具教育性与启发性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5a7KVZQExRc)**
+
+### 🎬 Multi-GPU Kernels, Intelligence per Watt, Heterogeneous Inference, and More | YC Paper Club
+**Channel:** Y Combinator
+*   The video features presentations and discussions from the latest YC Paper Club, focusing on cutting-edge research and practical techniques for optimizing machine learning systems.
+*   Key topics include optimization techniques for multi-GPU kernels, the emerging concept of "intelligence per watt" for evaluating the efficiency of local and edge AI models, and strategies for implementing heterogeneous inference.
+*   It's worth watching for a concise, builder-focused update on key performance and efficiency frontiers in AI infrastructure, offering practical insights from researchers and developers.
+
+### 🎬 多GPU内核优化、每瓦智能、异构推理等 | YC 论文俱乐部
+**频道:** Y Combinator
+*   本视频汇集了最新一期YC论文俱乐部的演讲与讨论，核心聚焦于机器学习系统的前沿研究与实用优化技术。
+*   主要话题包括：多GPU内核的优化方法、用于评估本地及边缘AI模型效率的新概念“每瓦智能”，以及异构推理的实现策略。
+*   值得观看的原因在于，它为开发者和研究者提供了一个关于AI基础设施性能与能效前沿的、高度实用的更新，内容精炼且极具前瞻性。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=n8dz2FX0_uY)**
+
+### 🎬 Python Full Course for Beginners
+**Channel:** Apna College
+
+*   What the video covers
+    This video is a complete, end-to-end beginner's course for the Python programming language. It is designed to take you from absolute zero knowledge to being proficient in core Python concepts, making you ready for programming and placements.
+
+*   Key topics discussed
+    The course likely covers fundamental topics such as: Python syntax, variables, data types, operators, control flow (if-else, loops), functions, data structures (lists, tuples, dictionaries), object-oriented programming (OOP), file handling, and potentially introductory libraries.
+
+*   Why it's worth watching
+    It's a valuable resource for anyone starting their programming journey in Python. The "placement-ready" focus from Apna College suggests a practical, job-oriented approach. It provides a solid, structured foundation in a single video, which is ideal for learners who prefer comprehensive, linear tutorials.
+
+### 🎬 Python 完全初学者教程
+**频道:** Apna College
+
+*   视频内容概述
+    该视频是一套完整、从零开始的 Python 编程语言入门课程。旨在帮助你从无任何编程基础到熟练掌握 Python 核心概念，为编程学习和求职面试做好准备。
+
+*   主要话题
+    课程可能涵盖以下核心主题：Python 基础语法、变量、数据类型、运算符、流程控制（if-else、循环）、函数、数据结构（列表、元组、字典）、面向对象编程（OOP）、文件处理，以及可能的入门级库介绍。
+
+*   为何值得观看
+    对于任何开始 Python 编程学习之旅的人来说，这都是一个宝贵资源。Apna College 的“就业导向”特点表明其注重实践和应用。它以单个视频的形式提供了坚实、结构化的知识基础，非常适合喜欢全面、线性教程的学习者。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=q3AuP01daL4)**
+
+### 🎬 KIMI K3 ✨ TUTORIAL per fare VIBE CODING con AI
+**Channel:** Andrea Ciraolo
+*   **What the video covers:** This video is a tutorial on using the KIMI K3, a powerful Chinese AI model, for "Vibe Coding" – a concept of using AI to assist and streamline the coding process.
+*   **Key topics discussed:** It introduces the KIMI AI platform, explains its capabilities (comparable to leading AI models), and likely demonstrates how to use it effectively for coding tasks, project building, or development workflows.
+*   **Why it's worth watching:** It offers a practical guide to leveraging a potentially under-the-radar but powerful AI tool for software development. It's valuable for developers and tech enthusiasts looking to enhance their productivity with AI-driven coding assistants.
+
+### 🎬 KIMI K3 ✨ AI编程辅助教程
+**频道:** Andrea Ciraolo
+*   **视频内容概述:** 本视频是一份关于如何使用强大的中国AI模型KIMI K3进行“Vibe Coding”的教程，旨在展示如何利用AI来辅助和优化编程流程。
+*   **主要话题:** 介绍了KIMI AI平台，阐述了其强大的功能（可与顶级AI模型媲美），并可能演示了如何将其高效地应用于编码任务、项目构建或开发工作流中。
+*   **为何值得观看:** 该视频为开发者和科技爱好者提供了一份实用的指南，教你如何运用这款强大但可能尚未被广泛熟知的AI工具来提升软件开发效率，是探索AI辅助编程的绝佳入门资源。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=-RzPQSS3Bhw)**
+
