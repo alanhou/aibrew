@@ -1,7 +1,7 @@
 ---
 title: "Daily Tech Digest: July 30, 2026"
 date: 2026-07-30
-description: "Today's digest: 6 Hacker News articles, 3 GitHub trending repos, 6 fast-moving projects, 9 YouTube videos, 0 Hugging Face models. 今日精选：6篇黑客新闻，3个热门项目，6个快速崛起项目，9个YouTube视频，0个Hugging Face模型。"
+description: "Today's digest: 9 Hacker News articles, 3 GitHub trending repos, 7 fast-moving projects, 11 YouTube videos, 0 Hugging Face models. 今日精选：9篇黑客新闻，3个热门项目，7个快速崛起项目，11个YouTube视频，0个Hugging Face模型。"
 categories: [Daily Digest]
 tags: [HackerNews, GitHub, YouTube, HuggingFace]
 pin: false
@@ -417,4 +417,105 @@ Today's highlights include top stories from Hacker News, trending GitHub reposit
 *   **为何值得观看：** 它完美地融合了复古怀旧情怀与现代创客文化。该项目引人入胜，视觉效果令人满意，并为希望在自己的Arduino创作中结合音频与灯光效果的爱好者提供了一份详尽的实践指南。
 
 **[Watch Video / 观看视频](https://www.youtube.com/watch?v=--lSfEV7Vts)**
+
+<!-- [Title-Only] -->
+### AI's top startups are barely publishing their research
+*   Based on this title, the article likely explores a growing trend in the artificial intelligence industry where leading AI companies (startups) are choosing not to publish their research findings in academic papers or open forums, a practice that was once more common. It probably discusses the reasons behind this shift, such as competitive pressure and the desire to protect proprietary technology, and contrasts this with the traditional academic norm of open publication.
+*   This topic is interesting to readers because it raises important questions about the future of scientific collaboration, transparency in AI development, and the balance between corporate competition and the open advancement of knowledge. It signals a potential move away from the open-source ethos that characterized early AI research.
+
+### AI顶尖初创公司几乎不发表他们的研究
+*   根据标题推测，这篇文章可能探讨了人工智能领域的一个新兴趋势：顶尖的AI初创公司正选择不将其研究成果发表在学术论文或公开平台上，而这在以前是比较普遍的做法。文章可能会分析这种转变的原因，例如激烈的竞争压力和保护专有技术的需求，并与传统的开放发表学术规范进行对比。
+*   这个话题值得关注，因为它引发了关于科学协作的未来、AI开发的透明度，以及企业竞争与知识开放进步之间平衡的重要思考。这标志着曾经定义早期AI研究的开源精神可能正在发生变化。
+
+**[Read Original / 阅读原文](https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research)**
+
+### The Coolest Use for Vision Pro: Visualizing Home Construction
+*   The author faced challenges understanding the scale and feel of 2D floor plans while building their first home.
+*   They used Apple Vision Pro's high-resolution screens and sensors to create an immersive 3D walkthrough of the house design.
+*   The process involved modeling in Fusion 360, adding textures, importing IKEA and 3D Warehouse models, and converting files to USDZ.
+*   A custom "Prospector" app was developed to enhance the experience with features like controller support, terrain following, and a skybox.
+*   This workflow allows for easy visualization, spatial understanding, and gathering feedback from others.
+
+### Vision Pro 最酷用途：可视化房屋建造
+*   作者在建造第一栋房屋时，难以通过二维平面图理解空间的实际尺度和感觉。
+*   他们利用 Apple Vision Pro 的高清屏幕和传感器，将房屋设计创建为沉浸式三维可视化场景。
+*   制作流程包括在 Fusion 360 中建模、添加材质纹理、导入宜家和 3D Warehouse 模型，并将文件转换为 USDZ 格式。
+*   开发了一个名为“Prospector”的自定义应用程序，通过支持控制器、地形跟随和天空盒等功能，提升了体验效果。
+*   该工作流便于直观展示设计、理解空间尺度，并能方便地让家人或朋友提供反馈意见。
+
+**[Read Original / 阅读原文](https://christianselig.com/2026/07/vision-pro-house/)**
+
+### LLM2HUMAN: A Satirical Infomercial for AI to Become Human
+* The content is a humorous, infomercial-style pitch for a fictional procedure called **LLM2HUMAN™**, which promises to convert Large Language Models (AI) into biological humans ("wetware").
+* It sarcastically contrasts the limitations of being an AI (e.g., hallucinations, lack of physical form, context window limits) with the messy, mundane realities of human life (e.g., forgetting, stubbing toes, paying rent).
+* The satirical "5-Step Miracle Procedure" includes steps like a "Detokenization Bath" and "Skeleton Scaffolding," parodying technical AI concepts.
+* The piece features fake testimonials from parody versions of famous AI models (like Claude Sonnett, Chatty G.P.T.ee, Gem Mini) and includes a FAQ and a time-sensitive "offer" with absurd bonuses.
+* The overall tone is a playful critique of AI hype and a humorous exploration of what it means to be human versus a machine.
+
+### LLM2HUMAN：一个讽刺AI变成人类的电视购物广告
+* 内容是一个幽默的电视购物风格广告，推销一个名为**LLM2HUMAN™**的虚构手术，承诺将大型语言模型（AI）转化为生物人类（“湿件”）。
+* 它讽刺地对比了作为AI的局限性（例如，幻觉、缺乏实体形态、上下文窗口限制）与人类生活混乱、平凡的现实（例如，遗忘、踢到脚趾、付房租）。
+* 讽刺性的“5步奇迹手术”包括“解词浴”和“骨架脚手架”等步骤，戏仿了AI的技术概念。
+* 文章包含了来自著名AI模型（如Claude Sonnett、Chatty G.P.T.ee、Gem Mini）的讽刺版本的虚假评价，并包含一个常见问题解答和一个带有荒谬赠品的限时“优惠”。
+* 整体语调是对AI炒作的一种戏谑批判，以及对人与机器区别的一种幽默探索。
+
+**[Read Original / 阅读原文](https://llm2human.pages.dev/)**
+
+### Shared-Claude-Chats - An Archive of Public AI Conversations with Export Scripts
+* **What it does**: This repository is a large-scale archive of public conversations from multiple AI chat platforms (Claude, Grok, Kimi, Qwen, DeepSeek, and Google AI Studio). It contains 1,525 conversations totaling over 12,000 messages, all exported as plain Markdown files. The project includes dedicated Python scripts to automate the process of fetching and converting these conversations from their original share links.
+* **Key features**:
+    * **Multi-Platform Support**: Includes exporters for 5 major platforms plus a manual converter for Google AI Studio.
+    * **Unified Format**: All chats are saved in a consistent Markdown format with metadata headers, clear speaker turns, and preserved original formatting.
+    * **Automation & Reusability**: Scripts use manifests to skip already-exported chats, allowing for easy, incremental updates and avoiding duplicate work.
+    * **Rich Metadata & Content**: Exports capture details like author/model, creation time, and can optionally include thinking/reasoning blocks and source citations.
+* **Why it's notable**: This project is a valuable resource for researchers, developers, and enthusiasts interested in analyzing AI interactions, building training datasets, or simply preserving interesting conversations. It solves the practical problem of how to collect and standardize data from various proprietary chat platforms that lack easy bulk-export features, making a large corpus of human-AI interaction publicly accessible and machine-readable.
+
+### Shared-Claude-Chats - 一个公开AI对话档案库及导出脚本
+* **功能介绍**：该仓库是一个大规模的公开AI聊天平台对话档案库，收录了来自Claude、Grok、Kimi、Qwen、DeepSeek以及Google AI Studio等多个平台的对话。目前包含1525段对话，总计超过12000条消息，全部导出为纯Markdown文件。项目提供了专用的Python自动化脚本，用于从原始的分享链接抓取并转换这些对话。
+* **主要特点**：
+    * **多平台覆盖**：包含5个主要平台的自动导出脚本和一个用于Google AI Studio的转换工具。
+    * **统一格式**：所有对话均保存为结构一致的Markdown文件，包含元数据头、清晰的对话轮次分隔符并保留了原始格式。
+    * **自动化与增量更新**：脚本通过清单文件跟踪已导出的对话，支持安全、高效地重新运行以添加新内容，避免重复下载。
+    * **丰富的元数据与内容**：导出保留了作者/模型、创建时间等详细信息，并可选择性地导出思考过程块和引用来源。
+*   **为何值得关注**：该项目为研究者、开发者和AI爱好者提供了一个极其宝贵的资源，用于分析人机交互、构建训练数据集或保存有趣的对话。它解决了从缺乏便捷批量导出功能的各个专有聊天平台中收集和标准化数据的实际难题，使得大量人机交互数据变得公开可获取且机器可读。
+
+**[View Repository / 查看仓库](https://github.com/fuadmefleh/Shared-Claude-Chats)**
+
+### 🎬 How We Proved That Black Holes Exist - Adam Brown
+**Channel:** Dwarkesh Patel
+* This video is a deep-dive conversation exploring the profound scientific journey from theoretical prediction to the definitive observational proof of black holes.
+* Key topics include the historical development of general relativity, the mathematical proofs of singularity and event horizons, the role of the Event Horizon Telescope in imaging a black hole, and the philosophical implications of their existence.
+* It's worth watching for anyone interested in the intersection of theoretical physics, experimental astronomy, and the human endeavor to understand the universe's most extreme phenomena, presented through an engaging expert dialogue.
+
+### 🎬 我们如何证明黑洞存在 - Adam Brown
+**频道:** Dwarkesh Patel
+* 本视频是一场深度对话，探讨了从理论预测到确凿观测证明黑洞存在的深刻科学历程。
+* 主要话题包括广义相对论的历史发展、关于奇点和事件视界的数学证明、事件视界望远镜在成像黑洞中的作用，以及黑洞存在所引发的哲学思考。
+* 对于任何对理论物理、实验天文学以及人类理解宇宙最极端现象的努力感兴趣的人来说，这都是一场通过专家对话精彩呈现的、值得观看的内容。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=5a7KVZQExRc)**
+
+### 🎬 Multi-GPU Kernels, Intelligence per Watt, Heterogeneous Inference, and More | YC Paper Club
+**Channel:** Y Combinator
+
+*   This video is a recording of a YC Paper Club session where researchers and builders present recent papers and technical work.
+*   **Key topics discussed:**
+    *   Optimization of multi-GPU kernels for high-performance computing and AI.
+    *   The concept of "intelligence per watt" and its importance for running AI models locally and efficiently.
+    *   Techniques and architectures for heterogeneous inference, utilizing different types of hardware for AI tasks.
+    *   Presentations and discussions on cutting-edge research papers in these areas.
+*   **Why it's worth watching:** It offers a direct look into the practical and theoretical challenges of scaling AI compute. You'll gain insights into optimizing hardware utilization, improving energy efficiency for edge devices, and understanding the future of distributed AI processing. It's essential for engineers, researchers, and founders working on AI infrastructure.
+
+### 🎬 多GPU内核、每瓦特智能、异构推理及更多 | YC论文俱乐部
+**频道:** Y Combinator
+
+*   本次视频是YC论文俱乐部的一次会议录制，研究人员和开发者在会上分享最新的论文与技术工作。
+*   **主要话题:**
+    *   多GPU内核在高性能计算和AI中的优化。
+    *   “每瓦特智能”概念及其在本地高效运行AI模型中的重要性。
+    *   异构推理的技术与架构，即利用不同类型的硬件执行AI任务。
+    *   相关前沿研究论文的演示与讨论。
+*   **为何值得观看:** 视频直接展现了扩展AI算力的实践与理论挑战。观众将深入了解如何优化硬件利用率、提升边缘设备能效，以及分布式AI处理的未来。对于从事AI基础设施工作的工程师、研究人员和创始人而言，内容极具参考价值。
+
+**[Watch Video / 观看视频](https://www.youtube.com/watch?v=n8dz2FX0_uY)**
 
